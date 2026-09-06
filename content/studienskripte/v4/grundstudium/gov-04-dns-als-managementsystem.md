@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-04-dns-als-managementsystem.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-04-dns-als-managementsystem.md curriculum=4.0 sanitized=true -->
 # GOV-04 · DNS als Managementsystem: Prinzipien, Transformationsbereiche und Hebel
 
 **lecture_id:** `WOEK-G-GOV-DNS-01`  
@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die Deutsche Nachhaltigkeitsstrategie ist mehr als ein Zielpapier. Sie verbindet politische Leitprinzipien, Ziele und Indikatoren mit Zuständigkeiten, ressortübergreifender Steuerung, Monitoring und regelmäßiger Weiterentwicklung. Die DNS 2025 bündelt den besonderen Handlungsbedarf in sechs Transformationsbereichen und arbeitet mit fünf Hebeln. Für die Wirkungsökonomie ist sie deshalb eine wichtige staatliche Ziel-, Kontext- und Monitoringarchitektur – aber kein automatischer Kausalitätsbeweis für einzelne Maßnahmen.
+Die Deutsche Nachhaltigkeitsstrategie ist mehr als ein Zielpapier. Sie verbindet politische Leitprinzipien, Ziele und Indikatoren mit Zuständigkeiten, ressortübergreifender Steuerung, Monitoring und regelmäßiger Weiterentwicklung. Die DNS 2025 bündelt den besonderen Handlungsbedarf in sechs Transformationsbereichen und arbeitet mit fünf Hebeln. Für die Wirkungsökonomie ist sie deshalb eine wichtige staatliche Ziel-, Kontext- und Monitoringarchitektur - aber kein automatischer Kausalitätsbeweis für einzelne Maßnahmen.
 
 ## Lernziele
 
@@ -221,16 +221,16 @@ WÖk ergänzt:
 
 ### Primär-/amtliche Quellen
 
-1. **Bundesregierung – Steuerung der Deutschen Nachhaltigkeitsstrategie**  
+1. **Bundesregierung - Steuerung der Deutschen Nachhaltigkeitsstrategie**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776
 
-2. **Bundesregierung – Deutsche Nachhaltigkeitsstrategie 2025**  
+2. **Bundesregierung - Deutsche Nachhaltigkeitsstrategie 2025**  
    https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540
 
-3. **Statistisches Bundesamt – Nachhaltigkeitsindikatoren**  
+3. **Statistisches Bundesamt - Nachhaltigkeitsindikatoren**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html
 
-4. **Statistisches Bundesamt – Deutsche Nachhaltigkeitsstrategie / Monitoring**  
+4. **Statistisches Bundesamt - Deutsche Nachhaltigkeitsstrategie / Monitoring**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html
 
 ### Quellenfunktion
@@ -298,3 +298,19 @@ Sie sagt: Lasst uns die vorhandene Ziel- und Monitoringarchitektur mit einer kon
 Was ist das Problem? Passt das Ziel? Welche Maßnahme wirkt über welchen Mechanismus? Was passiert nebenbei? Wer trägt Kosten und Nutzen? Was wäre ohne die Maßnahme passiert? Und später: Was ist tatsächlich eingetreten und was können wir der Maßnahme zurechnen?
 
 So wird aus Strategie plus Monitoring eine tiefere Wirkungs- und Lernarchitektur.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Welcher staatliche Prüfrahmen passt zum Gegenstand?
+
+Der Prüfbedarf folgt der materiellen Wirkungsrelevanz. Neben Gesetzen können Verordnungen, Strategien, Programme, Förderungen, Garantien, Investitionen, Beschaffung, Infrastruktur und Verwaltungsentscheidungen relevant sein. Prüfe zuerst Zuständigkeit, Handlungsform und konkrete Rechtsgrundlage. Die Bundes-GGO und eNAP gelten nicht pauschal für Länder, Kommunen, EU oder jede staatliche Handlung. Fehlende Universalität bedeutet keine staatliche Prüfleere.
+
+Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm), DNS, Nachhaltigkeitsprüfung und eNAP/eGFA den bestehenden Rahmen. Bei finanzwirksamen Bundesmaßnahmen prüfe zusätzlich beziehungsweise gegenstandsbezogen [§ 7 BHO](https://www.gesetze-im-internet.de/bho/__7.html), [VV-BHO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm) und die [AAWU, Fassung vom 13. Januar 2026](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_13012026_IIA3H100500150006005DOKCOO7005100213785493.htm). Fachrechtliche Rahmen können hinzutreten.
+
+Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
+
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

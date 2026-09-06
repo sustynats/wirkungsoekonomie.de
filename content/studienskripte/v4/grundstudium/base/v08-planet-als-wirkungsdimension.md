@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v08-planet-als-wirkungsdimension.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v08-planet-als-wirkungsdimension.md curriculum=4.0 sanitized=true -->
 # V08 · Planet als Wirkungsdimension
 
 **lecture_id:** `WOEK-G-BASE-008`  
@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Auch „Planet“ ist kein einzelner Umweltpunkt. Klima, Biodiversität, Wasser, Boden, Ressourcen und Schadstoffe reagieren unterschiedlich. WÖk prüft konkrete ökologische Zustände, Zeiträume und Systemgrenzen – und behandelt irreversible oder harte Grenzen getrennt von gewöhnlichen Trade-offs.
+Auch „Planet“ ist kein einzelner Umweltpunkt. Klima, Biodiversität, Wasser, Boden, Ressourcen und Schadstoffe reagieren unterschiedlich. WÖk prüft konkrete ökologische Zustände, Zeiträume und Systemgrenzen - und behandelt irreversible oder harte Grenzen getrennt von gewöhnlichen Trade-offs.
 
 ## Lernziele
 
@@ -40,7 +40,7 @@ Systemgrenzen entscheiden den Befund. Bei Produkten gehören je nach Fragestellu
 
 ## 4. Beispiel: Batterie
 
-Eine Batterie kann erneuerbare Energien integrieren und fossile Nutzung vermeiden. Gleichzeitig entstehen Rohstoff-, Energie-, Wasser- und Recyclingwirkungen. Die richtige Analyse vergleicht Optionen über denselben Dienst – zum Beispiel gespeicherte nutzbare Energie unter einem definierten Systemgrenzen- und Lebenszyklusrahmen.
+Eine Batterie kann erneuerbare Energien integrieren und fossile Nutzung vermeiden. Gleichzeitig entstehen Rohstoff-, Energie-, Wasser- und Recyclingwirkungen. Die richtige Analyse vergleicht Optionen über denselben Dienst - zum Beispiel gespeicherte nutzbare Energie unter einem definierten Systemgrenzen- und Lebenszyklusrahmen.
 
 ## 5. Schwellen und Irreversibilität
 
@@ -62,10 +62,10 @@ Auch Umweltwirkungen brauchen Vergleich: Welche Technologie oder Praxis wäre oh
 
 ## Typische Fehlinterpretationen
 
-- „CO₂-arm = insgesamt nachhaltig.“ – Zu kurz.
-- Nationale Verbesserung beweist globale Verbesserung. – Nein.
-- Planetare Grenze beweist den Beitrag einer Einzelmaßnahme. – Nein.
-- Recycling macht Ressourcenwirkungen automatisch null. – Nein.
+- „CO₂-arm = insgesamt nachhaltig.“ - Zu kurz.
+- Nationale Verbesserung beweist globale Verbesserung. - Nein.
+- Planetare Grenze beweist den Beitrag einer Einzelmaßnahme. - Nein.
+- Recycling macht Ressourcenwirkungen automatisch null. - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -88,4 +88,8 @@ Prüfungsfähig sind Systemgrenze, Bestand/Fluss, Lebenszyklus, Leakage, Schwell
 
 ## Sprechertext
 
-Beim Wort Umwelt greifen wir schnell zu einer Zahl, meistens CO₂. Das ist wichtig, aber nicht die ganze Geschichte. Eine Batterie, ein Gebäude oder ein Verkehrssystem verändert mehrere Zustände zugleich. Deshalb fragen wir nach Klima, Biodiversität, Wasser, Boden, Rohstoffen und Schadstoffen – aber nur soweit sie für den Fall materiell sind. Und wir schauen auf den ganzen Wirkpfad. Sonst feiern wir vielleicht eine Verbesserung hier, die nur eine Belastung anderswo erzeugt. Die Kunst liegt nicht in möglichst vielen Umweltzahlen, sondern in der richtigen Systemgrenze und den richtigen Zuständen.
+Beim Wort Umwelt greifen wir schnell zu einer Zahl, meistens CO₂. Das ist wichtig, aber nicht die ganze Geschichte. Eine Batterie, ein Gebäude oder ein Verkehrssystem verändert mehrere Zustände zugleich. Deshalb fragen wir nach Klima, Biodiversität, Wasser, Boden, Rohstoffen und Schadstoffen - aber nur soweit sie für den Fall materiell sind. Und wir schauen auf den ganzen Wirkpfad. Sonst feiern wir vielleicht eine Verbesserung hier, die nur eine Belastung anderswo erzeugt. Die Kunst liegt nicht in möglichst vielen Umweltzahlen, sondern in der richtigen Systemgrenze und den richtigen Zuständen.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

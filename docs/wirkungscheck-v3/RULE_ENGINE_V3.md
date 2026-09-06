@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – deterministische Regelengine
+# Wirkungscheck Bundestag V3 - deterministische Regelengine
 
 ## Eingaben
 

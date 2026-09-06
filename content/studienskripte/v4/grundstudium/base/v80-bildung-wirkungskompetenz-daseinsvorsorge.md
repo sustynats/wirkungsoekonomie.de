@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v80-bildung-wirkungskompetenz-daseinsvorsorge.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v80-bildung-wirkungskompetenz-daseinsvorsorge.md curriculum=4.0 sanitized=true -->
 # V80 · Bildung und Wirkungskompetenz als Daseinsvorsorge
 
 **lecture_id:** `WOEK-G-BASE-080`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Bildung ist mehr als Unterrichtsstunden und Abschlüsse. Entscheidend ist, **welche Fähigkeiten entstehen**: lesen, rechnen, fachlich urteilen, Informationen prüfen, demokratisch handeln, Probleme lösen. WÖk nennt die Fähigkeit, Quellen, Ursachen, Folgen und Unsicherheit zu prüfen, „Wirkungskompetenz“. Das ist ein WÖk-Kompetenzrahmen – kein bestehender staatlicher Bildungsstandard. Er soll vorhandene Fach-, Medien-, Demokratie- und Systemkompetenzen verbinden.
+Bildung ist mehr als Unterrichtsstunden und Abschlüsse. Entscheidend ist, **welche Fähigkeiten entstehen**: lesen, rechnen, fachlich urteilen, Informationen prüfen, demokratisch handeln, Probleme lösen. WÖk nennt die Fähigkeit, Quellen, Ursachen, Folgen und Unsicherheit zu prüfen, „Wirkungskompetenz“. Das ist ein WÖk-Kompetenzrahmen - kein bestehender staatlicher Bildungsstandard. Er soll vorhandene Fach-, Medien-, Demokratie- und Systemkompetenzen verbinden.
 
 ## Lernziele
 
@@ -48,7 +48,7 @@ Outcomes:
 - Gesundheit,
 - demokratische/gesellschaftliche Fähigkeiten.
 
-`DEGREE != COMPETENCE` – auch wenn Abschlüsse wichtige Signale/Rechte eröffnen.
+`DEGREE != COMPETENCE` - auch wenn Abschlüsse wichtige Signale/Rechte eröffnen.
 
 ## 2. Lernzuwachs
 
@@ -217,7 +217,7 @@ Entwirf eine 90-Minuten-Lerneinheit „Korrelation ist nicht Kausalität“. Def
 
 Bildung wird oft in Stunden, Klassen und Abschlüssen gemessen.
 
-Das ist wichtig – aber noch nicht die ganze Wirkung.
+Das ist wichtig - aber noch nicht die ganze Wirkung.
 
 Am Ende zählt, was Menschen können.
 
@@ -233,4 +233,8 @@ Und auch die müssen wir selbst als Outcome messen.
 
 Der Merksatz lautet:
 
-**Bildung wirkt nicht, weil Unterricht stattfindet. Sie wirkt, wenn Fähigkeiten wachsen – und Menschen sie in neuen Situationen selbstständig anwenden können.**
+**Bildung wirkt nicht, weil Unterricht stattfindet. Sie wirkt, wenn Fähigkeiten wachsen - und Menschen sie in neuen Situationen selbstständig anwenden können.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

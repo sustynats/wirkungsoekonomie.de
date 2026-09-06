@@ -1,7 +1,1356 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T08:06:40.303Z",
+  "updated_at": "2026-09-06T17:59:56.588Z",
   "stories": [
+    {
+      "story_id": "wt-9bf2a4011a0e1751",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9bf2a4011a0e1751-631b9b64e4520816-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9bf2a4011a0e1751-358872486c839b22-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9bf2a4011a0e1751-cfb5ce7db759e121-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9bf2a4011a0e1751-7720706860d87231-source.png"
+        }
+      },
+      "slug": "newsblog-zur-landtagswahl-in-sachsen-anhalt-ministerprasident-schulze-cdu-raumt-niederla-0e1751",
+      "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Ministerpräsident Schulze (CDU) räumt Niederlage ein - Klingbeil (SPD) spricht von \"Signal an Berlin\"",
+      "source_summary": "Der Deutschlandfunk fasst einen Newsblog zur Landtagswahl in Sachsen-Anhalt zusammen. Darin heißt es, Ministerpräsident Schulze habe die Niederlage seiner Partei eingeräumt und der AfD zum Wahlsieg gratuliert. Zugleich werden Stimmen aus CDU und SPD sowie eine Analyse zur Wählerwanderung und zum Abschneiden der CDU bei jungen Wählerinnen und Wählern wiedergegeben.\n\nAußerdem wird berichtet, dass die Junge Union Sachsen-Anhalt aus einem Beschlusspapier den Rücktritt von Schulze und einen Neuanfang fordert. Klingbeil sieht in der Politik der Bundesregierung einen Grund für das Ergebnis und spricht von einem Signal an Berlin. Offene Punkte bleiben der weitere Umgang der CDU mit dem Ergebnis und die unabhängige Bestätigung einzelner Aussagen aus den zitierten Beiträgen.",
+      "summary": "Schulze hat laut dem Bericht die Niederlage seiner Partei eingeräumt und der AfD gratuliert. Klingbeil deutet das Ergebnis als Signal an Berlin.",
+      "detail_summary": "Gesichert ist, dass der Bericht einen klaren Wahlfolgeschritt beschreibt: Schulze räumt die Niederlage ein, gratuliert der AfD und lässt das weitere Vorgehen offen. Das ist politisch relevant, weil sich damit unmittelbar die Lage in Sachsen-Anhalt und die innerparteiliche Debatte der CDU verändert. Hinzu kommt die Forderung der Jungen Union nach Rücktritt und Neuwahl der Landesführung sowie Klingbeils Deutung als Signal an Berlin. Der Wirkpfad liegt vor allem in der parteipolitischen Neuordnung, möglichen Personalentscheidungen und der bundespolitischen Einordnung des Wahlergebnisses. Mögliche Folgen sind verschärfter Druck auf die Landes-CDU und Nachwirkungen auf den Reformkurs der Bundesregierung. Die Evidenz bleibt begrenzt, weil die Meldung auf einem einzelnen journalistischen Bericht beruht und mehrere Aussagen darin nur zitiert oder zusammengefasst werden.",
+      "why_relevant": "Die Meldung betrifft einen unmittelbaren Macht- und Kurswechsel nach einer Landtagswahl, mit möglichem Einfluss auf Personal, Koalitionsoptionen und bundespolitische Debatten.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Aussagen betreffen Wahlausgang, Parteiführung und mögliche politische Neuordnung in einem Bundesland."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter materieller Umweltbezug ist in den gelieferten Belegen nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Es geht um Wahlresultat, Regierungsfähigkeit, innerparteiliche Konsequenzen und politische Signalwirkung."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T17:59:56.588Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T17:35:05.000Z",
+      "last_updated": "2026-09-06T18:00:15.606Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-362672492a355b62c3fa",
+      "case_file": null,
+      "source_published_at": "2026-09-06T17:47:51.000Z",
+      "published_at": "2026-09-06T18:00:15.606Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/ministerpraesident-schulze-cdu-raeumt-niederlage-ein-klingbeil-spd-spricht-von-signal-an-berlin-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T17:47:51.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4b5d0962d323432a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-980c18f3dd96941c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-e308c1a6d31092c4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-2a6919d179539aba-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+      "source_summary": "Die Europäische Kommission teilt mit, sie habe einen für Deutschland vorgesehenen Kapazitätsmechanismus nach EU-Beihilfevorschriften geprüft und genehmigt. Die Maßnahme soll ab 2031 zur Verfügung stehen; die Kosten werden in der Mitteilung mit 15,6 Mrd. EUR bis 35,2 Mrd. EUR angegeben.\n\nDie Bundesregierung beschreibt das zugehörige Stromversorgungssicherheits- und Kapazitätengesetz als bereits verabschiedet und nennt den 22. Juli als Inkrafttretensdatum. Nach ihrer Darstellung soll ein Kapazitätsmarkt den Bedarf ab 2031 decken; in den nächsten zwölf Monaten seien Ausschreibungen über insgesamt elf Gigawatt vorgesehen, weitere im Jahr 2027 und 2029.",
+      "summary": "Die EU-Kommission hat den deutschen Kapazitätsmechanismus genehmigt. Die Bundesregierung beschreibt dazu ein bereits in Kraft getretenes Gesetz mit ersten Ausschreibungen und einem Start des Kapazitätsmarkts ab 2031.",
+      "detail_summary": "Gesichert ist damit eine regulatorische Entscheidung mit direktem Bezug zur Stromversorgung: Die EU-Kommission hat den deutschen Kapazitätsmechanismus genehmigt, während die Bundesregierung das zugrunde liegende Gesetz als in Kraft getreten beschreibt. Materiell relevant ist das vor allem, weil damit Investitionsanreize, die Bereitstellung flexibler Stromkapazitäten und spätere Zahlungsströme für Marktteilnehmer beeinflusst werden können. Der Wirkpfad verläuft über Ausschreibungen, Zuschläge und die Verpflichtung, Leistung zu halten oder neu zu errichten. Mögliche Folgen sind mehr gesicherte Kapazität für Dunkelflauten und damit mehr Versorgungssicherheit, zugleich aber auch Kostenwirkungen und Verteilungseffekte für Verbraucher und Wirtschaft. Offen bleibt, wie genau die Finanzierung, die Technologiekriterien und die tatsächliche Nutzung aussehen. Ebenfalls unbelegt sind hier die spätere Emissionswirkung und die konkrete Marktreaktion.",
+      "why_relevant": "Die Meldung betrifft eine verbindliche EU-Genehmigung und ein bereits in Kraft getretenes nationales Regelwerk für Stromkapazitäten. Das kann Regeln, Anreize und Kapitalflüsse im Energiesystem verändern und ist damit systemisch relevant.",
+      "topic": [
+        "Energie",
+        "Europa",
+        "Politik"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Maßnahme zielt auf Versorgungssicherheit und Investitionen im Stromsystem, also auf einen Bereich mit direkter Bedeutung für Haushalte und Betriebe."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Bundesregierung verknüpft das Gesetz mit Dekarbonisierung und Wasserstoff-Readiness; konkrete Klima- oder Emissionswirkungen sind aber noch offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Es geht um beihilferechtlich genehmigte staatliche Marktgestaltung und spätere Kostenzuordnung; die konkrete Ausgestaltung bleibt politisch kontrollierbar."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Geschätzte Kosten",
+            "value": "15,6",
+            "unit": "Mrd. EUR",
+            "context": "untere Kostenschätzung des Mechanismus",
+            "claim_id": "wt-4b5d0962d323432a-v3-claim-1"
+          },
+          {
+            "label": "Geschätzte Kosten",
+            "value": "35,2",
+            "unit": "Mrd. EUR",
+            "context": "obere Kostenschätzung des Mechanismus",
+            "claim_id": "wt-4b5d0962d323432a-v3-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "beschaeftigte",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "gemischt",
+          "democracy": "offen"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T17:52:07.787Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-0bfd0f9a3434",
+        "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
+        "title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
+        "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat - und was noch offen bleibt.",
+        "published_at": "2026-09-05T21:07:03.109Z",
+        "updated_at": "2026-09-05T21:07:03.109Z"
+      },
+      "first_seen": "2026-09-01T22:00:00.000Z",
+      "last_updated": "2026-09-06T17:53:28.215Z",
+      "version": 3,
+      "news_status": "confirmed",
+      "event_id": "event-657469d969e66b251ae7",
+      "case_file": null,
+      "source_published_at": "2026-09-01T22:00:00.000Z",
+      "published_at": "2026-09-03T11:15:45.293Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "eu-kommission-presse"
+          ],
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die ersten Ausschreibungen tatsächlich wie angekündigt starten und in welchem Umfang Kapazitäten bezuschlagt werden.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Ausschreibungen, Zuschlagsmengen und Termine",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9efbc37f6ede6e40",
+          "announced_at": "2026-09-03T11:00:00.000Z",
+          "follow_up_date": "2026-09-13T17:53:28.215Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Europäische Kommission - Press Corner",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T22:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T11:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b5ca8651ce7844db",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-f3b15b7c9de9675e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-ad24c75cd8211ecd-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-e21ebefaf9bff401-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "polizei-fahndet-nach-tatverdachtigem-am-hambacher-forst-7844db",
+      "title": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst",
+      "source_summary": "Die ZDFheute-Meldung berichtet über eine laufende Fahndung der Polizei am Hambacher Forst bei Kerpen westlich von Köln. Gesucht werde ein 48-jähriger Tatverdächtiger, dem Sabotageaktionen auf das Stromnetz zugeschrieben würden. Ein Sprecher der Kölner Polizei habe bestätigt, dass der Einsatz auch dazu diene, den Mann selbst oder Spuren zu finden.\n\nAls weiteres Indiz nennt die Redaktion ein Fahrrad; nach dem Rad werde ebenfalls gefahndet. Die Meldung verweist zudem auf frühere Ermittlungen zu Sabotage-Angriffen in mehreren Bundesländern, hält aber offen, wie weit die Taten und der gesuchte Mann zusammenhängen. Die Quelle ist ein journalistischer Bericht mit dpa-Bezug, keine Primärquelle.",
+      "summary": "Die Polizei sucht am Hambacher Forst nach einem 48-jährigen Tatverdächtigen. Als mögliches Indiz nennt die Meldung auch ein Fahrrad.",
+      "detail_summary": "Gesichert ist nach der gelieferten Quelle eine laufende Fahndung am Hambacher Forst nach einem 48-jährigen Mann, den die Polizei mit Sabotageaktionen gegen das Stromnetz in Verbindung bringt. Die Meldung nennt außerdem ein Fahrrad als Suchhinweis und beschreibt, dass die Ermittler auch nach dem mutmaßlich benutzten Rad fahnden. Für die Einordnung wichtig ist weniger die Reichweite der Berichterstattung als der mögliche Eingriff in die Sicherheit kritischer Energieinfrastruktur. Daraus ergibt sich ein Wirkpfad über Ermittlungsdruck, mögliche Festnahme und Klärung von Tatzusammenhängen; falls sich der Verdacht erhärtet, könnten weitere Schutzmaßnahmen für Stromanlagen folgen. Offen bleibt nach der Quelle, wie belastbar die Zuordnung der Taten zu dem Gesuchten ist und ob es bereits weitere unabhängige Bestätigungen gibt.",
+      "why_relevant": "Die Meldung betrifft mögliche Sabotage an kritischer Energieinfrastruktur und eine laufende Fahndung; beides kann für Sicherheit, Betrieb und staatliche Reaktion relevant sein.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Gefährdung kritischer Versorgung und laufende Fahndung mit potenziell breiten Folgen für Sicherheit und Ermittlungen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Indirekter Bezug über Strominfrastruktur und Energiewende-Kontext; unmittelbare Umweltwirkung ist nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind staatliche Sicherheits- und Ermittlungsstrukturen sowie die öffentliche Kontrolle über Schutz kritischer Infrastruktur."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "natur"
+        ],
+        "tendency": {
+          "human": "offen",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T14:21:20.533Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T13:43:00.000Z",
+      "last_updated": "2026-09-06T14:22:15.107Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-2863d76840aa042b6f5e",
+      "case_file": null,
+      "source_published_at": "2026-09-06T13:43:00.000Z",
+      "published_at": "2026-09-06T14:22:15.107Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der gesuchte Mann gefasst wird oder weitere Tatorte bestätigt werden",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimeldung oder bestätigte Festnahme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c9cffb5e592e4c60",
+          "announced_at": "2026-09-06T13:43:00.000Z",
+          "follow_up_date": "2026-09-13T14:22:15.107Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:43:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-06837a611e9459ce",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-cb830c830f11f3e0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-58e89b47d2e41923-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06837a611e9459ce-fa7f7be1594981b3-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+      "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+      "source_summary": "Der MDR meldet in einem Liveblog, dass die US-Sondergesandten Steve Witkoff und Jared Kushner in Kiew eingetroffen sind. Die Passage ordnet den Besuch als Fortsetzung ihrer Gespräche in Moskau über ein Ende des Ukraine-Krieges ein und nennt ihn als ersten Aufenthalt der beiden in der ukrainischen Hauptstadt.\n\nSpäter ergänzt der Liveblog eine Aussage von Präsident Wolodymyr Selenskyj, wonach an den Gesprächen in Kiew auch europäische Sicherheitsberater teilnehmen sollen. Offen bleibt in der Quelle, ob bereits konkrete Ergebnisse oder Vereinbarungen vorliegen.",
+      "summary": "Witkoff und Kushner sind nach Angaben des MDR in Kiew eingetroffen und führen dort Gespräche über den Ukraine-Krieg. Selenskyj kündigte zudem Beratungen mit europäischen Sicherheitsberatern an.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Ankunft der US-Gesandten Steve Witkoff und Jared Kushner in Kiew sowie der Bezug zu ihren vorherigen Gesprächen in Moskau. Der Bericht nennt den Besuch als ersten Aufenthalt der beiden in der ukrainischen Hauptstadt und verweist auf weitere Gespräche zur Beendigung des Ukraine-Kriegs. Zusätzlich zitiert der Liveblog Selenskyj mit dem Hinweis, dass auch europäische Sicherheitsberater teilnehmen sollen. Für die Lage ist das relevant, weil damit der diplomatische Prozess um einen möglichen Verhandlungsrahmen sichtbar weiterläuft. Mögliche Folge ist, dass sich der Gesprächskreis erweitert und dadurch neue Positionen, Bedingungen oder Vermittlungsansätze entstehen. Nicht belegt ist aber, ob daraus bereits eine Vereinbarung, eine Kursänderung oder ein messbarer politischer Effekt folgt.",
+      "why_relevant": "Die Meldung dokumentiert einen konkreten Schritt in einem laufenden, geopolitisch und sicherheitspolitisch wichtigen Verhandlungsprozess.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Die Gespräche betreffen den Krieg und damit Sicherheitslage, mögliche Flucht- und Schutzfolgen sowie politische Entscheidungen mit indirekten Folgen für Menschen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Bezug zu Umwelt- oder Klimawirkungen ist in der Quelle nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung betrifft diplomatische Verhandlungen zwischen Akteuren mit Einfluss auf Kriegsende, Sicherheitsordnung und politische Entscheidungsräume."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T13:36:20.439Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T11:05:30.000Z",
+      "last_updated": "2026-09-06T13:36:54.881Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-dfe7a7d9629460af52db",
+      "case_file": {
+        "case_id": "case-d42b2aebe63f3c",
+        "member_count": 6,
+        "publisher_count": 8,
+        "members": [
+          {
+            "story_id": "wt-06837a611e9459ce",
+            "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
+            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
+            "summary": "Witkoff und Kushner sind nach Angaben des MDR in Kiew eingetroffen und führen dort Gespräche über den Ukraine-Krieg. Selenskyj kündigte zudem Beratungen mit europäischen Sicherheitsberatern an.",
+            "updated_at": "2026-09-06T13:36:54.881Z",
+            "published_at": "2026-09-06T13:36:54.881Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-78b8df2827ab4527",
+            "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+            "summary": "Die Gespräche in Moskau sind beendet, und die US-Gesandten sollen nach Kiew weiterreisen. Über konkrete Ergebnisse ist in den gelieferten Quellen noch wenig belastbar belegt.",
+            "updated_at": "2026-09-06T10:53:50.820Z",
+            "published_at": "2026-09-06T10:53:50.820Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-166e870242fc37e6",
+            "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
+            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
+            "summary": "Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, die Gespräche sind laut Deutschlandfunk beendet. Parallel steht eine dreitägige Angriffspause auf Kyjiw im Raum.",
+            "updated_at": "2026-09-06T05:34:25.362Z",
+            "published_at": "2026-09-06T05:34:25.362Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-3d901522efd87e2d",
+            "slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
+            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
+            "summary": "In Moskau haben Gespräche zwischen Putin und den US-Unterhändlern begonnen. Zugleich wurde eine dreitägige Angriffspause auf Kyjiw angekündigt.",
+            "updated_at": "2026-09-05T18:38:03.533Z",
+            "published_at": "2026-09-05T14:17:03.422Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-4eb46eab6c6d9511",
+            "slug": "krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511",
+            "title": "Krieg in der Ukraine: Trump schickt mal wieder seinen Schwiegersohn",
+            "summary": "Trump hat laut taz neue Gesandte für Ukraine-Gespräche auf den Weg geschickt. Der Bericht nennt mögliche Treffen in Moskau und Kyjiw sowie eine vorgeschlagene Feuerpause.",
+            "updated_at": "2026-09-05T11:33:36.533Z",
+            "published_at": "2026-09-05T11:33:36.533Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-1633927424587a06",
+            "slug": "ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06",
+            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
+            "summary": "US-Unterhändler sollen nach Moskau reisen, ein Treffen mit Putin ist laut Meldung geplant. Danach ist erstmals auch ein Besuch in Kiew vorgesehen.",
+            "updated_at": "2026-09-05T11:13:44.645Z",
+            "published_at": "2026-09-05T11:13:44.645Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-06T11:05:30.000Z",
+      "published_at": "2026-09-06T13:36:54.881Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "mdr-nachrichten",
+              "mdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die US-Vermittler tatsächlich am Sonntag in Kiew eintreffen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder Bestätigungen zum tatsächlichen Eintreffen in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-cd96130eabd68579",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-13T05:29:46.602Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-06T05:29:46.602Z",
+          "last_check_result": "no_verified_material_update",
+          "origin_story_id": "wt-d7a0af1afc831caf"
+        },
+        {
+          "claim": "Die angekündigte Reise nach Kiew findet am Sonntag tatsächlich statt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": "2026-09-06",
+          "measurable_indicator": "Berichte oder offizielle Bestätigungen zur Ankunft der beiden Gesandten in Kiew",
+          "expected_by_evidence_hash": "5377e8a1494459dcb4b49a5fe75b3add0f7b90ea95f0ccc645724d6c00dff702",
+          "followup_id": "followup-251b04897a03035a",
+          "announced_at": "2026-09-04T20:13:08.000Z",
+          "follow_up_date": "2026-09-13T05:29:46.602Z",
+          "status": "scheduled",
+          "last_checked_at": "2026-09-06T05:29:46.602Z",
+          "last_check_result": "no_verified_material_update",
+          "origin_story_id": "wt-d7a0af1afc831caf"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T11:05:30.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:56:45.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-2b90423c6e7549bd",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2b90423c6e7549bd-2eb4d15a220bb202-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2b90423c6e7549bd-d686bc087fe66755-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2b90423c6e7549bd-bca4a89ad046f37a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "us-vermittler-in-der-ukraine-trumps-schwiegersohn-doch-nicht-so-wichtig-7549bd",
+      "title": "US-Vermittler in der Ukraine: Trumps Schwiegersohn doch nicht so wichtig",
+      "source_summary": "Die taz berichtet, dass die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kyjiw eingetroffen sind. Nach Darstellung des Artikels kamen sie aus Polen mit dem Zug, nachdem die ursprüngliche Reise per Flugzeug nicht zustande kam.\n\nDer Text ordnet den Besuch als Fortsetzung von Gesprächen über ein mögliches Ende des russischen Angriffskriegs ein. Am Vortag hatten Witkoff und Kushner demnach in Moskau fast drei Stunden mit Kremlchef Wladimir Putin gesprochen; ein Treffen mit Wolodymyr Selenskyj in Kyjiw war geplant.",
+      "summary": "Witkoff und Kushner sind laut taz erstmals in Kyjiw eingetroffen. Der Artikel stellt die Reise als Teil neuer US-Vermittlungsbemühungen im Ukrainekrieg dar.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Quelle, dass die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kyjiw angekommen sind und dort per Zug aus Polen anreisten. Der Bericht verbindet das mit Gesprächen vom Vortag in Moskau, bei denen beide nach Angaben des Textes fast drei Stunden mit Wladimir Putin über ein mögliches Ende des Kriegs sprachen. Politisch relevant ist das, weil damit ein neuer Gesprächskanal zwischen den Konfliktseiten sichtbar wird und ein möglicher Vermittlungsversuch konkretisiert ist. Ein direkter Wirkpfad wäre, dass persönliche Treffen Vertrauen, Gesprächsbereitschaft und Anschlussgespräche fördern. Als mögliche Folge nennt der Text keine Einigung, sondern zunächst nur weitere diplomatische Bewegung; offen bleibt, ob daraus tatsächlich belastbare Fortschritte oder bloß weitere Kontaktpflege entstehen. Die Evidenz ist aber bislang auf einen journalistischen Bericht beschränkt, daher bleibt die Lage vorläufig.",
+      "why_relevant": "Neue Reise- und Gesprächssignale im Ukrainekrieg können diplomatische Abläufe, Erwartungen und mögliche Verhandlungspfade verändern.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind mittelbar Kriegsopfer und Zivilbevölkerung, falls Gespräche zu einer Deeskalation oder zu neuen Risiken führen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "US-Vermittlungsversuche berühren Entscheidungswege, Außenpolitik und die öffentliche Nachvollziehbarkeit von Friedensgesprächen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T12:38:11.963Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T11:48:00.000Z",
+      "last_updated": "2026-09-06T12:40:37.043Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-ed2402fb68dcbc2c0733",
+      "case_file": null,
+      "source_published_at": "2026-09-06T11:48:00.000Z",
+      "published_at": "2026-09-06T12:40:37.043Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/US-Vermittler-in-der-Ukraine/!6210651",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T11:48:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b8204dba21ee4eea",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b8204dba21ee4eea-f09b9c98ae233c93-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b8204dba21ee4eea-edefebaf48f04f6c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b8204dba21ee4eea-8121c7971bbf131b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "blindganger-in-kiel-wird-heute-entscharft-evakuierung-lauft-ee4eea",
+      "title": "Blindgänger in Kiel wird heute entschärft - Evakuierung läuft",
+      "source_summary": "Der NDR berichtet über eine Bombenentschärfung in Kiel-Dietrichsdorf. Nach Angaben im Beitrag sind Spezialisten des Kampfmittelräumdienstes dort auf eine amerikanische Fliegerbombe gestoßen, die heute entschärft werden soll. Genannt wird ein 250 Kilogramm schwerer Blindgänger in der Insterburger Straße. Für die Maßnahme läuft ein großes Sperrgebiet, Straßen werden abgesperrt, und die Polizei bereitet den Einsatz vor.\n\nLaut Bericht müssen insgesamt 5.235 Personen bis 14 Uhr ihre Wohnungen und Häuser verlassen haben. Wer keine andere Unterkunft hat, kann sich ab 13 Uhr in der Andreas-Gayk-Schule aufhalten. Die Polizei nennt zudem eine Rufnummer für Hilfe beim Verlassen der Wohnung. Wie lange die Entschärfung dauern wird, sei noch offen; die Betroffenen müssten sich auf mehrere Stunden außerhalb ihrer Wohnungen einstellen.",
+      "summary": "In Kiel läuft heute die Evakuierung für eine Bombenentschärfung in Dietrichsdorf. Betroffen sind laut Bericht 5.235 Menschen bis 14 Uhr.",
+      "detail_summary": "Gesichert ist, dass in Kiel-Dietrichsdorf heute eine 250-Kilo-Fliegerbombe entschärft werden soll und dafür ein Sperrgebiet mit Evakuierung läuft. Der Bericht nennt als Umfang 5.235 zu räumende Personen und beschreibt vorbereitete Absperrungen sowie eine Ausweichunterkunft in der Andreas-Gayk-Schule. Relevanz hat das Ereignis vor allem wegen der kurzfristigen Zwangsverlagerung für viele Haushalte und der Eingriffe in lokale Mobilität und Alltag. Der Wirkpfad ist unmittelbar: Räumung, Verkehrsunterbrechungen und zeitweilige Nichtnutzbarkeit von Wohnungen. Mögliche Folgen sind Verzögerungen, Belastungen für Betroffene und temporäre Einschränkungen im Umfeld; ein längerfristiger Effekt ist aus der Quelle nicht belegt. Die Evidenz bleibt vorläufig, weil nur eine journalistische Quelle vorliegt und der genaue Verlauf der Entschärfung offen ist.",
+      "why_relevant": "Die Meldung betrifft kurzfristig tausende Menschen, Eingriffe in Mobilität und Nutzung von Wohnraum sowie die öffentliche Sicherheit vor Ort.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mehr als 5.000 Menschen müssen vorübergehend ihre Wohnungen verlassen; das betrifft Alltag, Sicherheit und Belastung direkt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus der Quelle ergibt sich kein direkter Umwelt- oder Klimabezug; es geht um eine lokale Gefahrenlage und Räumung."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein demokratischer Struktur- oder Regelungseffekt ist nicht erkennbar; es handelt sich um einen Einsatz der Gefahrenabwehr."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T12:21:25.690Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T11:59:59.000Z",
+      "last_updated": "2026-09-06T12:23:31.064Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-079280c3a232824df66a",
+      "case_file": null,
+      "source_published_at": "2026-09-06T11:59:59.000Z",
+      "published_at": "2026-09-06T12:23:31.064Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/kiel_neumuenster_ploen_rendsburg-eckernfoerde/blindgaenger-in-kiel-250-kilo-bombe-wird-sonntag-entschaerft,regionkielnews-2802.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T11:59:59.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a030a1d903caa413",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-1b800dd7a15376a4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-4e1074a75e5c42bb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-e8d9e5e4cea3f393-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-caa413",
+      "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+      "source_summary": "Der Deutschlandfunk berichtet über einen Großeinsatz der Polizei am Hambacher Forst in Nordrhein-Westfalen. Die Fahndung richtet sich nach Angaben des Berichts gegen einen Tatverdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz; vor Ort seien laut dpa bis zu 100 Polizeifahrzeuge gesehen worden.\n\nIm Bericht heißt es außerdem, die Polizei halte es für wahrscheinlich, dass der 48-Jährige aus Gevelsberg mit dem Fahrrad flüchte; gesucht werde ein Rad der Marke Trenoli. Zugleich sei ein Bekennerschreiben mit seinem Namen veröffentlicht worden, die tatsächliche Verantwortung für die beschriebenen Taten aber weiter unklar. Ergänzend verweist der Bericht auf Funde in Sachsen mit zwölf selbstgebauten Sprengvorrichtungen und auf mögliche Zusammenhänge mit Brandenburg und Nordrhein-Westfalen.",
+      "summary": "Die Polizei sucht am Hambacher Forst nach einem Verdächtigen im Umfeld von Sabotageaktionen gegen das Stromnetz. Vor Ort war laut dpa von bis zu 100 Polizeifahrzeugen die Rede.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Meldung ein laufender Großeinsatz am Hambacher Forst, der mit der Fahndung nach einem 48-Jährigen aus Gevelsberg im Zusammenhang steht. Der Bericht nennt außerdem ein Bekennerschreiben, dessen Zuordnung zu den Taten aber ausdrücklich offen bleibt. Relevant ist die Meldung, weil sie einen laufenden Eingriff in ein energie- und sicherheitsrelevantes System beschreibt und zugleich zeigt, dass die Ermittlungen über Nordrhein-Westfalen hinausreichen. Ein möglicher Wirkpfad liegt in kurzfristigen Sicherheitsmaßnahmen, Fahndungsaufwand und zusätzlicher Prüfung von Stromnetz-Risiken. Als Folge sind weitere Sperrungen, Ermittlungsverbindungen oder neue Fundorte möglich; ob sich daraus tatsächlich ein größerer Zusammenhang ergibt, bleibt nach der Quellenlage offen. Die Beleglage ist vorerst nur eine zugespitzte Sekundärquelle mit dpa-Zuschreibung.",
+      "why_relevant": "Die Meldung betrifft mögliche Sabotage an kritischer Energieinfrastruktur und damit einen sicherheits- und systemrelevanten Gegenstand mit potenziellen Folgen für Versorgung, Ermittlungen und öffentliche Schutzmaßnahmen.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mögliche Sicherheitslagen, Ermittlungsmaßnahmen und im Extremfall Versorgungssicherheit; direkte Folgen für Menschen sind noch offen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Verbindung zu Stromnetz, Braunkohlerevier und Energieinfrastruktur ist systemisch relevant, konkrete Umweltfolgen sind hier aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt staatliche Schutzfähigkeit, Ermittlungsarbeit und die öffentliche Nachvollziehbarkeit bei Sabotagevorwürfen."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "aeltere"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T12:21:25.690Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T12:02:39.000Z",
+      "last_updated": "2026-09-06T12:23:08.615Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-4b6252df6481b4c20d60",
+      "case_file": null,
+      "source_published_at": "2026-09-06T12:02:39.000Z",
+      "published_at": "2026-09-06T12:23:08.615Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:02:39.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-cf03acddb911d861",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cf03acddb911d861-a09da90f9cb3b445-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cf03acddb911d861-71d235eec2040c5a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cf03acddb911d861-fb22ccf82fd58816-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
+      "title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+      "source_summary": "Nach mehreren Angriffen und versuchten Sabotageakten gegen Umspannwerke sowie einem knapp gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle fordert Baden-Württembergs Ministerpräsident Cem Özdemir schnelleren Schutz für sicherheitsrelevante Infrastruktur. Er spricht von dramatisch veränderten Sicherheitserfordernissen und drängt auf engeres Zusammenarbeiten der Bundesländer.\n\nGleichzeitig beschreibt der Bericht konkrete Bundespläne: Ein nationaler Schutzschild mit einem „Cyberdome“, neue schnell verlegbare Einheiten zum Schutz wichtiger Orte sowie mehr rechtliche Möglichkeiten für Unternehmen, Drohnen selbst abzuwehren. Als Kontext werden Vorfälle in Reutlingen, Brandenburg, Nordrhein-Westfalen und Sachsen genannt.",
+      "summary": "Özdemir verlangt nach den Angriffen auf Umspannwerke schnelleren Schutz und engere Kooperation der Länder. Zugleich werden konkrete Bundespläne für digitale und physische Schutzmaßnahmen beschrieben.",
+      "detail_summary": "Gesichert ist, dass der Bericht mehrere Angriffe beziehungsweise versuchte Sabotageakte an Umspannwerken mit Özdemirs Forderung nach „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur verknüpft. Dazu kommen im gleichen Text konkrete Ankündigungen des Innenministeriums: ein nationaler Schutzschild, ein „Cyberdome“, schnell verlegbare Einheiten und mehr Befugnisse für Unternehmen zur Drohnenabwehr. Das ist relevant, weil es mögliche Änderungen an Zuständigkeiten, Schutztechnik und Reaktionsfähigkeit in kritischer Infrastruktur beschreibt. Der Wirkpfad wäre vor allem präventiv: bessere Detektion, schnellere Abwehr und geringere Verwundbarkeit könnten Ausfälle oder Folgeschäden begrenzen. Eine mögliche Folge ist, dass Betreiber und Behörden Schutzmaßnahmen und Rechtsrahmen beschleunigen. Offen bleibt aber, wie weit die Pläne bereits verbindlich, finanziert und praktisch umsetzbar sind.",
+      "why_relevant": "Die Meldung verbindet konkrete Sicherheitsvorfälle mit angekündigten Schutzmaßnahmen für kritische Infrastruktur. Das kann Regeln, Zuständigkeiten und Schutzkapazitäten berühren und damit für Versorgungssicherheit und staatliche Resilienz materiell sein.",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Es geht um Schutz kritischer Infrastruktur, mögliche Versorgungsstörungen und Abwehrfähigkeit gegenüber Sabotage."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind Energieanlagen und damit die Stabilität einer zentralen Infrastruktur; ein unmittelbarer Umweltfaktor ist aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Bericht berührt staatliche Sicherheitssteuerung, Zuständigkeiten zwischen Ländern und Bund sowie rechtliche Befugnisse."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "verbraucherinnen",
+          "europa"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T11:51:43.074Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-219f434ceb61",
+        "slug": "angriffe-auf-umspannwerke-warum-der-schutz-kritischer-infrastruktur-ein-systemthem-219f43",
+        "title": "Angriffe auf Umspannwerke: Warum der Schutz kritischer Infrastruktur ein Systemthema wird",
+        "teaser": "Mehrere Angriffe auf Umspannwerke und ein knapp vereitelter Drohnenangriff zeigen: Der Schutz kritischer Infrastruktur ist nicht nur Polizeifrage, sondern ein System aus Technik, Recht und Koordination.",
+        "published_at": "2026-09-06T11:53:33.246Z",
+        "updated_at": "2026-09-06T11:53:33.246Z"
+      },
+      "first_seen": "2026-09-05T22:49:44.000Z",
+      "last_updated": "2026-09-06T11:52:32.250Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-bae82494ff50b6e4ca6a",
+      "case_file": null,
+      "source_published_at": "2026-09-05T22:49:44.000Z",
+      "published_at": "2026-09-06T11:52:32.250Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wann die angekündigten Schutzmaßnahmen des Innenministeriums konkret umgesetzt oder rechtlich ermöglicht werden.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Benannte Maßnahmen, Verordnungen oder Gesetzesänderungen treten in Kraft oder werden öffentlich bestätigt.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-dcd243b000fd572d",
+          "announced_at": "2026-09-06T11:48:46.000Z",
+          "follow_up_date": "2026-09-13T11:52:32.250Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/oezdemir-fordert--hochdruck--beim-schutz-sicherheitsrelevanter-infrastruktur-38211938.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:49:44.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-draengt-auf-besseren-schutz-von-infrastruktur-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T11:48:46.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-7bd1d7f242af3f7b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-eabd7afdad730244-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-57349140780a769d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7bd1d7f242af3f7b-1929e578d1c32da2-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "seelze-elektro-rollstuhl-lost-grossbrand-in-sonderpostenmarkt-aus-af3f7b",
+      "title": "Großbrand zerstört Sonderpostenmarkt in Seelze",
+      "source_summary": "In Seelze (Region Hannover) ist am Samstag ein Sonderpostenmarkt in Brand geraten. Nach dem Bericht brannte der Laden laut Feuerwehrsprecher teilweise ein und wurde vollständig zerstört; die Löscharbeiten dauerten am Sonntagmorgen noch an. Eine schwarze Rauchwolke war kilometerweit zu sehen.\n\nDie Polizei geht nach dem Bericht davon aus, dass die Batterie eines elektrischen Rollstuhls eines Kunden Funken schlug und das Feuer in der Abteilung für Malbedarf auslöste. Der Schaden wird ersten Schätzungen zufolge auf etwa drei Millionen Euro beziffert. Der Rollstuhlfahrer wurde leicht verletzt, alle Kunden und Beschäftigten konnten rechtzeitig in Sicherheit gebracht werden.",
+      "summary": "In Seelze ist ein Sonderpostenmarkt bei einem Großbrand vollständig zerstört worden. Nach dem Bericht steht als Ursache eine funken schlagende Rollstuhl-Batterie im Raum.",
+      "detail_summary": "Gesichert ist nach dem vorliegenden Bericht ein Großbrand in einem Sonderpostenmarkt in Seelze, bei dem der Markt vollständig zerstört wurde und die Löscharbeiten bis Sonntagmorgen andauerten. Als mögliche Ursache nennt die Polizei die Batterie eines elektrischen Rollstuhls; sie soll Funken geschlagen und das Feuer in der Abteilung für Malbedarf ausgelöst haben. Der Schaden wird auf etwa drei Millionen Euro geschätzt, der Rollstuhlfahrer wurde leicht verletzt. Für die Einordnung ist vor allem relevant, dass hier ein einzelnes technisches Ereignis einen kompletten Betriebsverlust und damit einen klaren Sachschaden ausgelöst haben soll. Mögliche Folgen sind Betriebsunterbrechung, Versicherungs- und Wiederaufbaukosten sowie vorübergehende lokale Versorgungs- und Beschäftigungseffekte. Die Evidenz bleibt vorläufig, weil die Quelle ein journalistischer Bericht ist und die Ursache laut Formulierung noch auf Angaben der Polizei beruht.",
+      "why_relevant": "Der Brand zerstört einen Betrieb vollständig und verursacht laut Bericht einen Schaden in Millionenhöhe; das ist für lokale Versorgung, Beschäftigung und Versicherung relevant.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Ein Ladenbrand mit Vollzerstörung und Verletzung kann Beschäftigte, Kunden und lokale Versorgung kurzfristig beeinträchtigen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Es liegen nur Hinweise auf einen Brand vor; belastbare Umweltfolgen oder Folgeschäden sind in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Kein direkter demokratischer Wirkpfad ist aus der Quelle ersichtlich."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Originalüberschrift rückt eine technische Eigenschaft vor den konkreten Brandschaden. Zu prüfen sind kausale Zuschreibung und eine mögliche Verallgemeinerung über den Einzelfall hinaus.",
+        "factual_core": "Ein Sonderpostenmarkt in Seelze wurde laut NDR bei einem Brand zerstört. Der Bericht führt den Auslöser nach Polizeiangaben auf die Batterie eines Rollstuhls zurück.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der NDR berichtet über einen zerstörten Sonderpostenmarkt in Seelze."
+          ],
+          "actor_claims": [
+            "Die Ursachenangabe wird in der bisherigen Quellenprüfung der Polizei zugeschrieben."
+          ],
+          "open": [
+            "Eine eigenständig geprüfte technische Untersuchung und Daten zur Reaktion des Publikums liegen für diesen Check nicht vor."
+          ]
+        },
+        "attribution": {
+          "frame_source": "die NDR-Überschrift; die Ursachenangabe wird im Bericht der Polizei zugeschrieben",
+          "speaker": "Polizei, vermittelt durch NDR",
+          "original_term": "Elektro-Rollstuhl",
+          "usage_type": "editorial",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "late"
+        },
+        "speaker_statement": {
+          "present": true,
+          "speaker": "Polizei, nach dem NDR-Bericht",
+          "statement": "Die Batterie eines Rollstuhls soll Funken geschlagen und das Feuer ausgelöst haben.",
+          "status": "claim"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Elektro-Rollstuhl",
+          "origin_in_story": "NDR-Überschrift",
+          "media_usage": "headline",
+          "attribution_quality": "Attribution erst später sichtbar",
+          "factual_status": "Aussage eines Akteurs",
+          "frame_type": [
+            "technischer Frame"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Elektro-Rollstuhl",
+          "frame_type": [
+            "technischer Frame"
+          ],
+          "problem_definition": "Der technische Gegenstand steht sprachlich als Auslöser im Vordergrund. Der betroffene Markt und der konkrete Schaden folgen danach.",
+          "implied_cause": "Die Überschrift formuliert den Auslöser bestimmt; die Quellenakte ordnet diese Angabe der Polizei zu.",
+          "implied_responsibility": "Aus der technischen Ursachenangabe folgt keine persönliche Schuldzuweisung.",
+          "implied_threat": "Eine Übertragung auf eine ganze Technologie wäre eine zusätzliche Deutung, nicht Bestandteil des belegten Ereignisses.",
+          "implied_solution_space": "Welche Schutzmaßnahmen angemessen wären, hängt vom konkreten technischen Befund ab.",
+          "material_omissions": [
+            "Die Zuordnung der Ursachenangabe zur Polizei ist in der Originalüberschrift nicht sichtbar."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Eine politische Verwendungsgeschichte oder ein verbreitetes Narrativ ist mit dieser Einzelquelle nicht belegt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "Wiederholte Aussagen können unter bestimmten Bedingungen vertrauter und dadurch glaubwürdiger erscheinen. Eine solche Wiederholung und ein Illusory-Truth-Effekt sind für diesen Fall nicht nachgewiesen.",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Bei Menschen mit bestehenden Technikbefürchtungen kann die hervorgehobene Eigenschaft an diese Vorstellungen anschließen. Ob das hier geschieht, ist offen.",
+          "normalization_potential": "open",
+          "repetition_risk": "open",
+          "polarization_potential": "Eine gesellschaftliche Polarisierung ist aus dieser Einzelmeldung nicht ableitbar.",
+          "trust_effect_potential": "Eine sichtbare Quellenzuordnung kann helfen, Bericht und eigenständigen technischen Nachweis auseinanderzuhalten.",
+          "discourse_effect_potential": "Falls ein einzelner Defekt als allgemeines Technikrisiko verstanden wird, könnte die Diskussion um konkrete Schutzmaßnahmen in den Hintergrund geraten. Dies ist eine bedingte Analysehypothese."
+        },
+        "impact_path": {
+          "first_order": "Die Überschrift verbindet die technische Eigenschaft mit dem konkreten Schadensereignis. Ob Lesende daraus mehr ableiten, bleibt offen.",
+          "second_order": "Bei passenden Vorerfahrungen und wiederholter ähnlicher Vermittlung könnte ein Einzelfall zur Schablone für weitere Fälle werden. Eine solche Serie ist hier nicht belegt.",
+          "third_order": "Erst bei anhaltender breiter Verallgemeinerung wären veränderte Erwartungen an Technik und Schutzregeln ein möglicher weiterer Pfad. Dafür liegen hier keine Wirkungsdaten vor."
+        },
+        "evidence": {
+          "status": "open",
+          "level": "open",
+          "what_is_known": "Der vorliegende NDR-Bericht behandelt einen konkreten Brand in Seelze; die Ursachenangabe wird der Polizei zugeschrieben.",
+          "what_is_inferred": "Die prominente Eigenschaft könnte bei entsprechendem Vorwissen an weitergehende Technikbefürchtungen anschließen. Das ist eine Hypothese über mögliche Rezeption.",
+          "what_is_open": "Ein Rollstuhl ist kein Elektroauto. Der Einzelfall belegt weder deren allgemeines Brandrisiko noch eine vergleichende Brandhäufigkeit. Eine wiederkehrende Berichtsserie, Publikumsreaktionen und ein Illusory-Truth-Effekt sind hier nicht nachgewiesen. Die sachlich relevante Antriebsart darf weiterhin benannt werden.",
+          "facts": [
+            "Der vorliegende NDR-Bericht behandelt einen konkreten Brand in Seelze; die Ursachenangabe wird der Polizei zugeschrieben."
+          ],
+          "observations": [
+            "Die Originalüberschrift beginnt mit Ort und technischem Gegenstand und formuliert den Auslöser ohne sichtbare Quellenzuordnung."
+          ],
+          "inferences": [
+            "Die prominente Eigenschaft könnte bei entsprechendem Vorwissen an weitergehende Technikbefürchtungen anschließen. Das ist eine Hypothese über mögliche Rezeption."
+          ],
+          "impact_potentials": [
+            "Eine Verallgemeinerung könnte die Aufmerksamkeit vom konkreten Defekt auf eine ganze Technologie verschieben."
+          ],
+          "impact_risks": [
+            "Ein spezifischer Vorfall könnte fälschlich als Beleg für das Risiko anderer Geräte verstanden werden."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Ein Rollstuhl ist kein Elektroauto. Der Einzelfall belegt weder deren allgemeines Brandrisiko noch eine vergleichende Brandhäufigkeit.",
+            "Eine wiederkehrende Berichtsserie, Publikumsreaktionen und ein Illusory-Truth-Effekt sind hier nicht nachgewiesen. Die sachlich relevante Antriebsart darf weiterhin benannt werden."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Ein Sonderpostenmarkt in Seelze wurde laut NDR bei einem Brand zerstört. Die Originalüberschrift nennt die elektrische Antriebsart des Rollstuhls prominent als Teil der Ursachenbeschreibung. Das kann sachlich relevant sein: Der Bericht führt den Auslöser nach Polizeiangaben auf dessen Batterie zurück. Allein diese technische Angabe ist weder falsch noch ein Beleg für Manipulation.\n\nBei Menschen mit entsprechenden Vorerfahrungen könnte die Hervorhebung jedoch weitergehende Vorstellungen über Technikrisiken aufrufen. Eine Übertragung auf andere Geräte oder Fahrzeuge wäre durch diesen Einzelfall nicht gedeckt. Ob Lesende diese Verbindung tatsächlich herstellen, wissen wir nicht. Auch eine wiederkehrende Berichtsserie oder eine durch Wiederholung gestiegene Glaubwürdigkeit solcher Verallgemeinerungen ist hier nicht nachgewiesen. Der Ticker stellt deshalb den konkreten Schaden zuerst dar und hält die Ursachenangabe an die berichtete Quelle gebunden.",
+        "editorial_assessment": "Die technische Angabe kann informativ sein. Prüfbedürftig sind ihre Hervorhebung und mögliche Verallgemeinerungen, nicht das Medium oder die Antriebsart als solche.",
+        "fact_first_alternative": "Großbrand zerstört Sonderpostenmarkt in Seelze. Nach dem NDR-Bericht nennt die Polizei eine funken schlagende Rollstuhlbatterie als Auslöser.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Der eigene Titel übernimmt die technische Ursache prominent, ohne die Zuordnung zur berichteten Polizeiaussage sichtbar zu machen.",
+            "Unsicherer Frame-Einstieg in title"
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Großbrand zerstört Sonderpostenmarkt in Seelze",
+          "recommended_summary": "",
+          "recommended_meta_description": ""
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T11:34:59.053Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T10:03:10.000Z",
+      "last_updated": "2026-09-06T11:34:59.053Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-cddc4a44512169719de0",
+      "case_file": null,
+      "source_published_at": "2026-09-06T10:03:10.000Z",
+      "published_at": "2026-09-06T10:22:08.636Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T10:03:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-46e5c503d6322ccb",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-5cd5e226c2522829-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-6c296c5154d6b8c4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-a21db6575e67f29f-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e5c503d6322ccb-38c18c9de1ba27d2-source.png"
+        }
+      },
+      "slug": "inflationsrate-im-august-2026-voraussichtlich-2-9-322ccb",
+      "title": "Inflationsrate im August 2026 voraussichtlich +2,9 %",
+      "source_summary": "Das Statistische Bundesamt meldet vorläufige Ergebnisse zur Inflation in Deutschland für August 2026. Danach wird die Inflationsrate voraussichtlich bei +2,9 % liegen; gegenüber Juli 2026 steigen die Verbraucherpreise um 0,2 %. Ohne Nahrungsmittel und Energie liegt die Kerninflation voraussichtlich bei +2,4 %. Für Energie wird ein Anstieg von 10,5 % gegenüber dem Vorjahresmonat genannt, nach +8,3 % im Juli.\n\nDie Mitteilung verweist außerdem auf den Verbraucherpreisindex und den harmonisierten Verbraucherpreisindex als Messgrößen. Die endgültigen Ergebnisse für August 2026 sollen am 10. September 2026 veröffentlicht werden.",
+      "summary": "Destatis meldet für August 2026 vorläufig eine Inflationsrate von 2,9 Prozent. Auffällig ist der erneut starke Anstieg der Energiepreise gegenüber dem Vorjahr.",
+      "detail_summary": "Gesichert ist aus der amtlichen Vorabmitteilung: Für August 2026 wird in Deutschland eine Inflationsrate von +2,9 % erwartet, die Verbraucherpreise sollen gegenüber Juli um 0,2 % steigen. Gleichzeitig nennt Destatis eine Kerninflation von +2,4 % und einen Energiepreisanstieg von +10,5 % gegenüber dem Vorjahresmonat. Für die Einordnung ist das relevant, weil Preisentwicklung Kaufkraft, Kostenpositionen von Unternehmen und geldpolitische Erwartungen beeinflussen kann. Ein möglicher Wirkpfad führt über höhere Ausgabenbelastung bei Haushalten und Preisdruck in energieintensiven Branchen. Offen bleibt aber, wie stark und wie dauerhaft sich die vorläufigen Werte nach der endgültigen Veröffentlichung am 10. September bestätigen. Die Meldung belegt Preisbewegungen, nicht bereits deren wirtschaftliche oder soziale Folgewirkungen.",
+      "why_relevant": "Die Meldung liefert eine aktuelle, amtliche Zustandsinformation zu Inflation und Energiepreisen. Sie ist für Haushalte, Unternehmen und wirtschaftspolitische Einordnung materiell relevant, weil sie Preisniveaustendenzen und Kostenentwicklung sichtbar macht.",
+      "topic": [
+        "Energie",
+        "Finanzen"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die vorläufige Teuerung betrifft Kaufkraft, laufende Ausgaben und Preisplanung im Alltag."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Der starke Energiepreisanstieg ist für den Ressourcen- und Klimakontext relevant, die Meldung zeigt aber nur Preise, keine Emissionen oder Verhaltensänderungen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Inflationsdaten sind eine wichtige Grundlage für wirtschaftspolitische Debatten und geldpolitische Erwartungen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-06T10:36:30.507Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-08-31T12:00:00.000Z",
+      "last_updated": "2026-09-06T10:39:49.245Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-1f973d1f3c747fb944e6",
+      "case_file": null,
+      "source_published_at": "2026-08-31T12:00:00.000Z",
+      "published_at": "2026-09-06T10:39:49.245Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die endgültigen Ergebnisse für August 2026 werden veröffentlicht.",
+          "source_id": "destatis-aktuell",
+          "expected_by": "2026-09-10",
+          "measurable_indicator": "Veröffentlichung der endgültigen August-Zahlen",
+          "expected_by_evidence_hash": "d1d861d77a7f91c99e8974968916e62eb89657b54190c268e56c51e664ebacec",
+          "followup_id": "followup-7dc94bb7c2b2476d",
+          "announced_at": "2026-08-31T12:00:00.000Z",
+          "follow_up_date": "2026-09-10T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
+          "source_type": "official_rss",
+          "published_at": "2026-08-31T12:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3d9354235ee08f8f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-2d716d9225718651-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-2bdd6b3d75cb191f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-ac53acbe6d95edd4-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "iran-usa-krieg-us-militar-angegriffener-iranischer-oltanker-versenkt-e08f8f",
+      "title": "Iran-USA-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
+      "source_summary": "Die beiden vorliegenden Berichte melden übereinstimmend, dass das US-Militär einen iranischen Öltanker im Golf von Oman angegriffen habe und das Schiff danach gesunken sei. Nach Angaben des zuständigen Regionalkommandos Centcom sei der Tanker zum Zeitpunkt des Angriffs nicht mit Öl beladen gewesen. Beide Texte ordnen den Angriff als Reaktion auf iranische Angriffe auf US-Kriegsschiffe ein. Zugleich verweisen sie darauf, dass die Angaben des Militärs zunächst nicht unabhängig überprüft werden konnten. \n\nDie Berichte nennen außerdem, dass insgesamt drei iranische Öltanker angegriffen worden seien und dass die US-Seite die Maßnahme mit wirtschaftlichem Druck begründe. Einzelheiten zu Schäden, Lage und Folgen bleiben in der gelieferten Quellenlage offen.",
+      "summary": "US-Militärangaben zufolge ist ein angegriffener iranischer Öltanker im Golf von Oman gesunken. Die Berichte stützen sich dabei auf dieselbe militärische Quelle und lassen mehrere Punkte offen.",
+      "detail_summary": "Gesichert ist nach den gelieferten Quellen vor allem die US-Darstellung, dass ein iranischer Öltanker im Golf von Oman nach einem Angriff gesunken sei. Beide Berichte nennen Centcom als Quelle und halten zugleich fest, dass die Angaben zunächst nicht unabhängig überprüfbar waren. Für die Einordnung ist das wichtig, weil der Kern des Ereignisses zwar berichtet, aber noch nicht durch eine zweite, unabhängige Primärbestätigung abgesichert ist. Materiell relevant ist die Meldung, weil sie in einen bereits eskalierenden Konflikt um Schiffe, Öltransporte und wirtschaftlichen Druck passt. Ein möglicher Wirkpfad führt über höhere Sicherheits- und Versicherungskosten, weitere maritime Risiken und zusätzliche Belastungen für den Ölhandel in der Region. Offen bleibt, ob die geschilderten Schäden, die Zuordnung der Angriffe und die behauptete Reaktion tatsächlich so eingetreten sind.",
+      "why_relevant": "Die Meldung betrifft militärische Gewalt, maritime Sicherheit und potenzielle Folgen für Öltransporte im Golf von Oman.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Mögliche Folgen reichen von Schiffsverkehrsrisiken bis zu wirtschaftlichem Druck, betreffen aber zunächst einen einzelnen Vorfall."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Wenn Schifffahrt und Öltransporte gestört werden, kann das regionale Umwelt- und Energiesystem mittelbar belastet werden."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt staatliche Gewaltanwendung, Kriegsberichterstattung und die Nachprüfbarkeit offizieller Kriegsangaben."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.0",
+      "media_checked_at": "2026-09-06T09:06:22.155Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T08:39:00.000Z",
+      "last_updated": "2026-09-06T09:07:27.736Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-61ab7264eb7b5f04a941",
+      "case_file": null,
+      "source_published_at": "2026-09-06T08:39:00.000Z",
+      "published_at": "2026-09-06T09:07:27.736Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Tanker tatsächlich gesunken ist und welche Schäden entstanden sind, muss unabhängig bestätigt werden.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Bestätigung des Sinkens oder belastbare Gegendarstellung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9550395c35f25491",
+          "announced_at": "2026-09-06T08:39:00.000Z",
+          "follow_up_date": "2026-09-13T09:07:27.736Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/US-Militaer-Angegriffener-iranischer-Oeltanker-versenkt/!6210528",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:39:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:45:20.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-995822cc0b71a7f8",
       "title_image": {
@@ -28,9 +1377,9 @@
       },
       "slug": "statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannu-71a7f8",
       "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
-      "source_summary": "Die Bundesregierung veröffentlicht eine gemeinsame Erklärung von Dänemark, Deutschland, den Niederlanden, Österreich, Finnland und Schweden zum Mehrjährigen Finanzrahmen 2028–2034. Darin heißt es, die Verhandlungen seien in eine entscheidende Phase eingetreten. Die sechs Staaten wollen den EU-Haushalt modernisieren, Prioritäten neu setzen und die Mittelverteilung an Sicherheit und Verteidigung, Wettbewerbsfähigkeit, Migration und Souveränität ausrichten.\n\nZugleich wird gefordert, den Vorschlag der Kommission von nahezu 2 Billionen Euro in ausgewogener Weise um mehrere hundert Milliarden Euro zu reduzieren. Die Erklärung nennt außerdem eine ganzheitliche Betrachtung der Zahlungsströme, erwartet Arbeit mit bestehendem Personalbestand und macht Rechtsstaatlichkeit zur Bedingung für EU-Finanzierung. Ein Abschluss der Verhandlungen im Jahr 2026 wird unterstützt.",
-      "summary": "Sechs EU-Staaten legen eine gemeinsame Position zum MFR 2028–2034 vor. Sie verlangen Umbau, Priorisierung und Kürzungen bei einem Kommissionsvorschlag von nahezu 2 Billionen Euro.",
-      "detail_summary": "Die Quelle dokumentiert eine gemeinsame Erklärung von sechs Mitgliedstaaten zum EU-Mehrjahreshaushalt 2028–2034. Inhaltlich ist das zunächst eine politische Positionsbestimmung, keine beschlossene Haushaltsregel. Materiell relevant ist sie, weil sie die Verhandlungslogik für einen zentralen EU-Finanzrahmen skizziert und damit die Richtung möglicher Mittelverteilung beeinflussen kann. Besonders belastbar sind die Aussagen zu Prioritäten, Kürzungsforderung und Rechtsstaatskonditionalität. Mögliche Folgen sind Verschiebungen zugunsten von Sicherheit, Verteidigung und Wettbewerbsfähigkeit sowie Druck auf andere Ausgabenrubriken. Unklar bleibt, wie stark sich diese Linie im finalen Verhandlungsergebnis durchsetzt; die Quelle selbst belegt nur den gemeinsamen Vorstoß, nicht den späteren Ausgang.",
+      "source_summary": "Die Bundesregierung veröffentlicht eine gemeinsame Erklärung von Dänemark, Deutschland, den Niederlanden, Österreich, Finnland und Schweden zum Mehrjährigen Finanzrahmen 2028-2034. Darin heißt es, die Verhandlungen seien in eine entscheidende Phase eingetreten. Die sechs Staaten wollen den EU-Haushalt modernisieren, Prioritäten neu setzen und die Mittelverteilung an Sicherheit und Verteidigung, Wettbewerbsfähigkeit, Migration und Souveränität ausrichten.\n\nZugleich wird gefordert, den Vorschlag der Kommission von nahezu 2 Billionen Euro in ausgewogener Weise um mehrere hundert Milliarden Euro zu reduzieren. Die Erklärung nennt außerdem eine ganzheitliche Betrachtung der Zahlungsströme, erwartet Arbeit mit bestehendem Personalbestand und macht Rechtsstaatlichkeit zur Bedingung für EU-Finanzierung. Ein Abschluss der Verhandlungen im Jahr 2026 wird unterstützt.",
+      "summary": "Sechs EU-Staaten legen eine gemeinsame Position zum MFR 2028-2034 vor. Sie verlangen Umbau, Priorisierung und Kürzungen bei einem Kommissionsvorschlag von nahezu 2 Billionen Euro.",
+      "detail_summary": "Die Quelle dokumentiert eine gemeinsame Erklärung von sechs Mitgliedstaaten zum EU-Mehrjahreshaushalt 2028-2034. Inhaltlich ist das zunächst eine politische Positionsbestimmung, keine beschlossene Haushaltsregel. Materiell relevant ist sie, weil sie die Verhandlungslogik für einen zentralen EU-Finanzrahmen skizziert und damit die Richtung möglicher Mittelverteilung beeinflussen kann. Besonders belastbar sind die Aussagen zu Prioritäten, Kürzungsforderung und Rechtsstaatskonditionalität. Mögliche Folgen sind Verschiebungen zugunsten von Sicherheit, Verteidigung und Wettbewerbsfähigkeit sowie Druck auf andere Ausgabenrubriken. Unklar bleibt, wie stark sich diese Linie im finalen Verhandlungsergebnis durchsetzt; die Quelle selbst belegt nur den gemeinsamen Vorstoß, nicht den späteren Ausgang.",
       "why_relevant": "Die Erklärung betrifft den künftigen EU-Haushalt und damit potenziell Regeln, Prioritäten und Verteilung großer Finanzmittel.",
       "topic": [
         "Europa",
@@ -70,7 +1419,14 @@
       "media_impact": null,
       "media_analysis_version": "2.0",
       "media_checked_at": "2026-09-06T07:16:30.989Z",
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-2e9b2581831c",
+        "slug": "eu-haushalt-2028-2034-was-neue-prioritaten-fur-klima-wohlstand-und-zusammenhalt-be-2e9b25",
+        "title": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+        "teaser": "Der Streit um Europas nächsten Finanzrahmen reicht bis zu Stromnetzen, Hochwasserschutz und regionalen Chancen. Die Analyse prüft Klima- und SDG-Bezüge, mögliche Folgekosten und demokratische Kontrolle. Ein größeres Budget ist dabei ebenso wenig ein Wirkungsnachweis wie ein kleineres schon ein Schaden.",
+        "published_at": "2026-09-06T09:21:47.630Z",
+        "updated_at": "2026-09-06T09:21:47.630Z"
+      },
       "first_seen": "2026-08-27T12:05:00.000Z",
       "last_updated": "2026-09-06T07:18:26.547Z",
       "version": 1,
@@ -175,339 +1531,6 @@
         {
           "publisher": "Deutschlandfunk",
           "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T05:18:36.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-3d9354235ee08f8f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-82f3c286735c51a4-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-093aa6e5083e4866-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3d9354235ee08f8f-97e4b4696d568490-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "iran-krieg-us-militar-angegriffener-iranischer-oltanker-versenkt-e08f8f",
-      "title": "Iran-Krieg: US-Militär: Angegriffener iranischer Öltanker versenkt",
-      "source_summary": "Mehrere Medien melden übereinstimmend, dass das US-Militär einen iranischen Öltanker im Golf von Oman angegriffen und versenkt haben soll. Deutschlandfunk verweist dabei auf Angaben des zuständigen Regionalkommandos Centcom auf X und ergänzt, der Tanker sei zum Zeitpunkt der Attacke nicht mit Öl beladen gewesen.\n\nDie Berichte ordnen den Angriff als Reaktion auf einen iranischen Angriff ein. Zugleich heißt es, das US-Militär habe bereits zuvor mitgeteilt, insgesamt drei iranische Öltanker angegriffen zu haben; iranische Medien stellten dagegen dar, die US-Schiffe seien zur Flucht gezwungen worden. Unklar bleibt in den gelieferten Texten, wie der Vorfall unabhängig verifiziert werden kann und welche unmittelbaren Folgen er hat.",
-      "summary": "US-Militärangaben zufolge ist im Golf von Oman ein iranischer Öltanker nach einem Angriff gesunken. Die Berichte lassen offen, wie unabhängig der Vorfall bestätigt ist und wie sich die Lage weiter entwickelt.",
-      "detail_summary": "Gesichert aus den gelieferten Quellen ist vor allem die militärische Behauptung, ein angegriffener iranischer Öltanker sei im Golf von Oman gesunken. Die Meldung ist relevant, weil sie einen direkten militärischen Eingriff im Seegebiet und damit einen möglichen Eskalationsschritt im Iran-Konflikt beschreibt. Der Wirkpfad liegt weniger in einer unmittelbaren Binnenwirkung als in möglichen Folgen für Schifffahrt, Sicherheitslage, Versicherungsrisiken und weitere militärische Reaktionen. Als mögliche Folge kommen zusätzliche Zwischenfälle oder eine verschärfte Lage im Seeverkehr in Betracht. Die Evidenz bleibt aber begrenzt: In den gelieferten Texten dominieren sekundäre Berichte und die US-Darstellung; eine unabhängige Bestätigung des Vorfalls selbst fehlt hier.",
-      "why_relevant": "Die Meldung beschreibt einen militärischen Angriff auf ein ziviles oder zivil nutzbares Schiff in einer strategisch wichtigen Seeroute. Das kann Sicherheitslage, Risikoprämien und weitere Reaktionen beeinflussen.",
-      "topic": [
-        "Geopolitik",
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Schifffahrt, Besatzungen und Sicherheitslage in einer strategischen Route; mögliche Eskalationsfolgen reichen über den Einzelfall hinaus."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Ein Tankerangriff kann Umwelt- und Havarierisiken erhöhen; im gelieferten Material ist aber kein Ölaustritt oder Schaden an der Umwelt belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Vorfall betrifft sicherheits- und außenpolitische Entscheidungen, aber in den Quellen ist keine direkte demokratische Entscheidungsänderung belegt."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-06T05:34:08.658Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-06T02:15:41.000Z",
-      "last_updated": "2026-09-06T05:34:38.212Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-1b58b224158d7561b786",
-      "case_file": null,
-      "source_published_at": "2026-09-06T02:14:28.000Z",
-      "published_at": "2026-09-06T05:34:38.212Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "tagesspiegel-home",
-            "stern-schlagzeilen"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob weitere US- oder iranische Militärangaben den Vorfall bestätigen oder präzisieren.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue belastbare Angaben zu Ort, Zeit, Ziel und Folgen des Angriffs",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-ad86726168c48a73",
-          "announced_at": "2026-09-06T05:18:36.000Z",
-          "follow_up_date": "2026-09-13T05:34:38.212Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16021839.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T02:15:41.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/iran-krieg--us-militaer--angegriffener-iranischer-oeltanker-versenkt-38212054.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T02:14:28.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-militaer-angegriffener-iranischer-oeltanker-wurde-versenkt-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T05:18:36.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-166e870242fc37e6",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-166e870242fc37e6-303202d56aa3ee5d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-166e870242fc37e6-9a82d99641370054-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-166e870242fc37e6-67fc2ff248018abb-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
-      "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
-      "source_summary": "In Moskau sind die Gespräche zwischen dem russischen Präsidenten Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Deutschlandfunk nennt eine Dauer von rund drei Stunden und schreibt, Einzelheiten der Unterredung seien bisher nicht bekannt. Zugleich heißt es, nach Angaben des Weißen Hauses seien konkrete Pläne für die nächsten Schritte in den Gesprächen über ein mögliches Ende des Ukraine-Kriegs besprochen worden.\n\nDie Meldung verweist außerdem darauf, dass die US-Gesandten heute in der Ukraine erwartet werden. Russland habe angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Damit beschreibt die Quelle eine laufende diplomatische Phase mit offenem Verhandlungsergebnis und noch unklaren Details.",
-      "summary": "Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, die Gespräche sind laut Deutschlandfunk beendet. Parallel steht eine dreitägige Angriffspause auf Kyjiw im Raum.",
-      "detail_summary": "Gesichert ist, dass Putin in Moskau mit den US-Unterhändlern Witkoff und Kushner gesprochen hat und dass diese Runde laut Deutschlandfunk beendet ist. Die Meldung nennt für das Treffen rund drei Stunden und verweist darauf, dass Details der Unterredung noch offen sind. Politisch und strategisch relevant ist das, weil direkte Gespräche zwischen Moskau und Washington einen möglichen Verhandlungspfad im Ukraine-Krieg markieren. Ein möglicher Wirkpfad wäre, dass aus dem Treffen konkrete nächste Schritte, Zeitpläne oder weitere Kontaktkanäle entstehen; ebenso möglich ist aber, dass es bei Sondierungen ohne greifbare Folge bleibt. Als zusätzliche, noch nicht unabhängige Angabe nennt die Quelle eine dreitägige Einstellung der Angriffe auf Kyjiw. Die Evidenzlage reicht für eine vorsichtige Erstmeldung, nicht für eine endgültige Bewertung des Ergebnisses oder der Tragweite.",
-      "why_relevant": "Die Meldung beschreibt direkte Gespräche über den Ukraine-Krieg und eine angekündigte Unterbrechung von Angriffen; beides kann den weiteren Verhandlungspfad und die Sicherheitslage kurzfristig beeinflussen.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Betroffen sind unmittelbar Menschen in der Ukraine; ob daraus Schutz oder nur eine kurze Pause entsteht, bleibt offen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein unmittelbarer Umwelt- oder Klimabezug ist in den Quellen belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Gespräche betreffen diplomatische Entscheidungswege zwischen Staaten und damit indirekt kriegsbezogene politische Steuerung."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "aeltere",
-          "kinder_jugend",
-          "staat"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-06T05:34:08.658Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-05T17:11:39.000Z",
-      "last_updated": "2026-09-06T05:34:25.362Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-165020cd14b0b8c7db2e",
-      "case_file": {
-        "case_id": "case-7da001c5b23955",
-        "member_count": 6,
-        "publisher_count": 6,
-        "members": [
-          {
-            "story_id": "wt-166e870242fc37e6",
-            "slug": "verhandlungen-ukraine-krieg-putin-beginnt-gesprache-mit-us-unterhandlern-fc37e6",
-            "title": "Verhandlungen: Ukraine-Krieg: Putin beginnt Gespräche mit US-Unterhändlern",
-            "summary": "Putin hat in Moskau mit den US-Gesandten Witkoff und Kushner gesprochen, die Gespräche sind laut Deutschlandfunk beendet. Parallel steht eine dreitägige Angriffspause auf Kyjiw im Raum.",
-            "updated_at": "2026-09-06T05:34:25.362Z",
-            "published_at": "2026-09-06T05:34:25.362Z",
-            "kind": "Weitere Entwicklung",
-            "current": true
-          },
-          {
-            "story_id": "wt-3d901522efd87e2d",
-            "slug": "putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d",
-            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
-            "summary": "In Moskau haben Gespräche zwischen Putin und den US-Unterhändlern begonnen. Zugleich wurde eine dreitägige Angriffspause auf Kyjiw angekündigt.",
-            "updated_at": "2026-09-05T18:38:03.533Z",
-            "published_at": "2026-09-05T14:17:03.422Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-4eb46eab6c6d9511",
-            "slug": "krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511",
-            "title": "Krieg in der Ukraine: Trump schickt mal wieder seinen Schwiegersohn",
-            "summary": "Trump hat laut taz neue Gesandte für Ukraine-Gespräche auf den Weg geschickt. Der Bericht nennt mögliche Treffen in Moskau und Kyjiw sowie eine vorgeschlagene Feuerpause.",
-            "updated_at": "2026-09-05T11:33:36.533Z",
-            "published_at": "2026-09-05T11:33:36.533Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-86783bc04f815007",
-            "slug": "us-gesandte-kushner-und-witkoff-zu-gesprachen-uber-ukraine-krieg-in-moskau-815007",
-            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
-            "summary": "Kushner und Witkoff sind laut der Meldung in Moskau zu Gesprächen über den Ukraine-Krieg eingetroffen. Danach sollen weitere Gespräche in Kiew folgen.",
-            "updated_at": "2026-09-05T11:33:20.789Z",
-            "published_at": "2026-09-05T11:33:20.789Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-1633927424587a06",
-            "slug": "ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06",
-            "title": "Ukraine-Krieg: US-Unterhändler in Moskau - Treffen mit Putin geplant",
-            "summary": "US-Unterhändler sollen nach Moskau reisen, ein Treffen mit Putin ist laut Meldung geplant. Danach ist erstmals auch ein Besuch in Kiew vorgesehen.",
-            "updated_at": "2026-09-05T11:13:44.645Z",
-            "published_at": "2026-09-05T11:13:44.645Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-d7a0af1afc831caf",
-            "slug": "ukraine-krieg-selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-831caf",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Selenskyj kündigt einen Besuch der US-Vermittler Witkoff und Kushner in Kiew an. Trump bestätigt die Reise und spricht von einem Vorschlag zur Beendigung des Krieges.",
-            "updated_at": "2026-09-05T05:32:14.214Z",
-            "published_at": "2026-09-04T20:51:47.279Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-05T11:06:25.000Z",
-      "published_at": "2026-09-06T05:34:25.362Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob und mit welchem Inhalt die in den Gesprächen angekündigten nächsten Schritte in den kommenden Wochen tatsächlich bekanntgegeben werden.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Öffentliche Mitteilung konkreter Folgeschritte oder Absage derselben",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6ef0f3a9aeb66bfc",
-          "announced_at": "2026-09-06T05:18:36.000Z",
-          "follow_up_date": "2026-09-13T05:34:25.362Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--putin-beginnt-gespraeche-mit-us-unterhaendlern-38211192.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T17:11:39.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:06:25.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/verhandlungen--ukraine-krieg--gespraeche-von-putin-und-us-gesandten-beendet-38211192.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T20:39:53.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/gespraeche-im-kreml-von-putin-und-us-gesandten-beendet-106.html",
           "source_type": "media_rss",
           "published_at": "2026-09-06T05:18:36.000Z",
           "primary_source": false
@@ -913,99 +1936,6 @@
           "url": "https://www.ndr.de/nachrichten/schleswig-holstein/nach-sabotage-mehr-polizei-an-kritischer-infrastruktur-in-sh,kritischeinfrastruktur-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T16:31:44.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-ba90052729946ae3",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-b7731e34d04dd290-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-dfe61a8bbf389ad6-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ba90052729946ae3-ffb38514efffc00f-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "gesprache-uber-friedensabkommen-us-sondergesandte-in-moskau-eingetroffen-946ae3",
-      "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
-      "source_summary": "In Moskau haben am Abend kurzfristig angesetzte neue Gespräche zum Ukraine-Krieg begonnen. Nach der Meldung empfing Kremlchef Wladimir Putin die US-Unterhändler Witkoff und Kushner im Kreml; beide werden als Gesandte von US-Präsident Trump beschrieben.\n\nDer Bericht nennt zudem die Aussicht, dass die beiden nach dem Moskau-Besuch weiter in die Ukraine reisen. In Kiew würden dann zwei ranghohe US-Vertreter erwartet. Außerdem wird auf eine dreitägige Pause weiterer Angriffe auf Kiew verwiesen, die Putin angeordnet haben soll; Selenskyj habe eine spiegelbildliche Zurückhaltung bis Montag angeboten, falls Russland daran festhalte.",
-      "summary": "Putin hat in Moskau US-Unterhändler empfangen, die über den Ukraine-Krieg sprechen. Weitere Termine in Kiew und eine dreitägige Angriffspause werden in der Meldung ebenfalls genannt.",
-      "detail_summary": "Gesichert ist zunächst, dass in Moskau neue Gespräche zum Ukraine-Krieg begonnen haben und Putin die US-Unterhändler Witkoff und Kushner im Kreml empfing. Die Meldung ordnet sie als Gesandte von Präsident Trump ein und stellt einen möglichen Anschlussbesuch in der Ukraine in Aussicht. Politisch relevant ist das, weil der Vorgang die diplomatischen Kontakte zwischen den USA, Russland und der Ukraine direkt betrifft. Ein möglicher Wirkpfad liegt darin, dass solche Kontakte die Verhandlungsoptionen, die militärische Lage rund um Kiew und die öffentliche Erwartung an eine Feuerpause verändern. Als mögliche Folge nennt die Quelle weitere Gespräche in Kiew sowie eine befristete Reduktion von Angriffen. Offen bleibt, ob daraus belastbare Schritte zu einem Friedensabkommen entstehen und wie verlässlich die angekündigten oder behaupteten Pausen tatsächlich greifen.",
-      "why_relevant": "Die Meldung beschreibt direkte hochrangige Kontakte zwischen den Konfliktparteien und mögliche kurzfristige Änderungen im militärisch-diplomatischen Ablauf. Das kann Anreize, Sicherheitslage und Verhandlungsdynamik beeinflussen.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind mittelbar viele Menschen in der Ukraine und in Russland durch mögliche Änderungen bei Angriffen, Verhandlungen und Sicherheit."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Die Quelle nennt keine unmittelbaren Umweltfolgen; ein indirekter Zusammenhang ist hier nicht belastbar belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Gespräche berühren Kriegsverhandlungen und diplomatische Entscheidungswege, also einen relevanten Teil politischer Steuerung."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-05T17:51:35.693Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-05T17:17:47.000Z",
-      "last_updated": "2026-09-05T17:52:55.835Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-01e6cd4e390eda19a265",
-      "case_file": null,
-      "source_published_at": "2026-09-05T17:17:47.000Z",
-      "published_at": "2026-09-05T17:52:55.835Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob Kushner und Witkoff nach dem Moskau-Besuch tatsächlich in die Ukraine weiterreisen.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Reiseberichte oder bestätigte Termine in Kiew",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-e973b3fadf8627bc",
-          "announced_at": "2026-09-05T17:17:47.000Z",
-          "follow_up_date": "2026-09-12T17:52:55.835Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T17:17:47.000Z",
           "primary_source": false
         }
       ]
@@ -1936,109 +2866,10 @@
       ],
       "sources": [
         {
-          "publisher": "Deutscher Bundestag – Wirtschaft und Energie",
+          "publisher": "Deutscher Bundestag - Wirtschaft und Energie",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1209814",
           "source_type": "official_rss",
           "published_at": "2026-09-02T00:00:00.000Z",
-          "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4b5d0962d323432a",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-8b1b89c8a225853d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-2b014008dac1350e-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-98954ddbf0e0c693-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
-      "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
-      "source_summary": "Die Europäische Kommission hat einen deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften genehmigt. Er soll ab 2031 Kapazitäten für Stromerzeugung, Speicherung und flexiblen Verbrauch verfügbar machen; die Kommission beziffert die erwarteten Kosten auf 15,6 bis 35,2 Milliarden Euro. Die Bundesregierung berichtet ergänzend, dass Bundestag und Bundesrat das Strom-Versorgungssicherheits- und Kapazitätengesetz verabschiedet haben.\n\nNach der Regierungsdarstellung sollen in den nächsten zwölf Monaten elf Gigawatt steuerbare Kapazität ausgeschrieben werden; weitere Ausschreibungen sind für 2027 und 2029 vorgesehen. Anbieter sollen bereits für die Bereithaltung von Leistung vergütet werden und müssen zugesagte Kapazität zu relevanten Zeitpunkten nachweisen. Für erste Langzeitkapazitäten ist ein Resilienzkriterium zur Fertigung wesentlicher Bauteile im Europäischen Wirtschaftsraum genannt. Der Mechanismus soll Dunkelflauten bei wachsendem Anteil erneuerbarer Energien absichern.",
-      "summary": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus mit 15,6 Mrd. EUR bis 35,2 Mrd. EUR genehmigt. Materiell ist vor allem der mögliche Eingriff in Versorgungssicherheit, Flexibilität und Kapitalflüsse.",
-      "detail_summary": "Fakt ist die beihilferechtliche Genehmigung eines ab 2031 verfügbaren Mechanismus. Er soll Erzeugung, Speicherung und flexiblen Stromverbrauch absichern. Ex ante liegt Wirkungspotenzial vor, aber noch keine eingetretene Wirkung. Materiell sind Systemrelevanz, Dauer, Kostenhöhe und mögliche Kaskaden im Stromsystem. Offen bleiben konkrete Ausgestaltung, Verteilungseffekte und Klimaeffekte.",
-      "why_relevant": "Die Maßnahme kann Regeln, Anreize, Infrastruktur und Kapitalflüsse im deutschen Stromsystem verändern.",
-      "topic": [
-        "Energie",
-        "Europa"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Versorgungssicherheit betrifft Haushalte, Wirtschaft und kritische Dienste; konkrete Verteilungswirkungen sind noch offen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Speicher und Flexibilität können helfen; ohne Technologiemix bleiben Emissions- und Lock-in-Risiken offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Hohe öffentliche Kosten und Marktregeln berühren Kontrolle, Transparenz und spätere Korrekturfähigkeit."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": null,
-      "media_checked_at": null,
-      "editorial_analysis": {
-        "analysis_id": "woek-analysis-0bfd0f9a3434",
-        "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
-        "title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
-        "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat – und was noch offen bleibt.",
-        "published_at": "2026-09-05T21:07:03.109Z",
-        "updated_at": "2026-09-05T21:07:03.109Z"
-      },
-      "first_seen": "2026-09-01T22:00:00.000Z",
-      "last_updated": "2026-09-05T12:28:41.779Z",
-      "version": 2,
-      "news_status": null,
-      "event_id": null,
-      "case_file": null,
-      "source_published_at": "2026-09-01T22:00:00.000Z",
-      "published_at": "2026-09-03T11:15:45.293Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "eu-kommission-presse"
-          ],
-          [
-            "bundesregierung-kompakt"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Europäische Kommission – Press Corner",
-          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
-          "source_type": "official_rss",
-          "published_at": "2026-09-01T22:00:00.000Z",
-          "primary_source": true
-        },
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
-          "source_type": "official_rss",
-          "published_at": "2026-09-03T11:00:00.000Z",
           "primary_source": true
         }
       ]
@@ -2512,7 +3343,14 @@
       },
       "media_analysis_version": "1.0",
       "media_checked_at": "2026-09-05T11:31:43.777Z",
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-36e98d72ae20",
+        "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
+        "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
+        "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
+        "published_at": "2026-09-06T12:24:05.188Z",
+        "updated_at": "2026-09-06T12:24:05.188Z"
+      },
       "first_seen": "2026-09-04T15:15:00.000Z",
       "last_updated": "2026-09-05T12:28:41.779Z",
       "version": 4,
@@ -2683,7 +3521,7 @@
       ],
       "sources": [
         {
-          "publisher": "Deutscher Bundestag – Umwelt und Klimaschutz",
+          "publisher": "Deutscher Bundestag - Umwelt und Klimaschutz",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210184",
           "source_type": "official_rss",
           "published_at": "2026-09-04T00:00:00.000Z",
@@ -3838,7 +4676,14 @@
       },
       "media_analysis_version": "1.0",
       "media_checked_at": "2026-09-05T09:18:31.212Z",
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-dab9cdd59202",
+        "slug": "polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd",
+        "title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
+        "teaser": "Die eigentliche Wirkung liegt nicht im Schreiben selbst, sondern in der veränderten Lage: Ermittlungen, Schutz kritischer Infrastruktur und öffentliche Risikobewertung werden neu sortiert.",
+        "published_at": "2026-09-06T16:37:35.523Z",
+        "updated_at": "2026-09-06T16:37:35.523Z"
+      },
       "first_seen": "2026-09-04T10:06:18.000Z",
       "last_updated": "2026-09-05T09:18:31.212Z",
       "version": 2,
@@ -4338,8 +5183,7 @@
       "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur und mögliche weitere Angriffe; davon hängen Sicherheitslage, Ermittlungsrichtung und Schutzmaßnahmen ab.",
       "topic": [
         "Energie",
-        "Gesellschaft",
-        "Geopolitik"
+        "Gesellschaft"
       ],
       "status": "laufende Entwicklung",
       "analysis_type": "ex_ante",
@@ -4425,43 +5269,7 @@
       "version": 3,
       "news_status": "updated",
       "event_id": "event-f0b1482b8ce86ec1fab2",
-      "case_file": {
-        "case_id": "case-4dc00cde414b35",
-        "member_count": 3,
-        "publisher_count": 3,
-        "members": [
-          {
-            "story_id": "wt-f3d585eac14dec76",
-            "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-            "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-            "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
-            "updated_at": "2026-09-05T09:18:31.212Z",
-            "published_at": "2026-09-04T02:07:51.145Z",
-            "kind": "Ermittlungsstand",
-            "current": true
-          },
-          {
-            "story_id": "wt-7ae0b9f22404b684",
-            "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
-            "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
-            "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
-            "updated_at": "2026-09-04T14:13:53.288Z",
-            "published_at": "2026-09-03T23:06:38.718Z",
-            "kind": "Entscheidung oder Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-9812656e38b0d665",
-            "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
-            "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
-            "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
-            "updated_at": "2026-09-03T22:22:49.015Z",
-            "published_at": "2026-09-03T22:22:49.015Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          }
-        ]
-      },
+      "case_file": null,
       "source_published_at": "2026-09-03T16:21:00.000Z",
       "published_at": "2026-09-04T02:07:51.145Z",
       "evidence_groups": {
@@ -4916,7 +5724,7 @@
       "title": "Brücken-Neubau im Marburger Norden gestartet: Wieder Bahnsperrungen geplant",
       "source_summary": "Nach dem Abriss einer wichtigen Brücke im Marburger Norden haben die Arbeiten für den Neubau begonnen. Die Brücke über die Bahngleise in der Neuen Kasseler Straße verbindet Marburg Richtung Norden und Richtung Lahnberge; dort liegt unter anderem das Uni-Klinikum. Laut Hessenmobil ist der Spatenstich erfolgt, und die Geduld der Betroffenen werde weiter beansprucht.\n\nFür den Bahnverkehr kündigt die Quelle erneute Sperrpausen an, etwa für den Einhub neuer Brückenträger. Betroffen ist die Strecke zwischen Marburg und Cölbe; die genauen Zeitpunkte sollen noch gemeinsam mit der Bahn bekanntgegeben werden. Bereits genannt werden Sperrpausen im Oktober 2026 sowie im Mai 2027. Für Auto- und Radverkehr bleiben Umleitungen über die B3 beziehungsweise die Alte Kasseler Straße bestehen.",
       "summary": "Der Neubau einer wichtigen Brücke im Marburger Norden hat begonnen. Für Bahn, Auto- und Radverkehr sind weitere Einschränkungen angekündigt.",
-      "detail_summary": "Gesichert ist zunächst der Baustart für den Neubau der Brücke über die Bahngleise in der Neuen Kasseler Straße. Die Quelle nennt zugleich weitere Sperrpausen für die Bahnstrecke Marburg–Cölbe und hält die Umleitungen für Auto- und Radverkehr aufrecht. Für die Einordnung ist das relevant, weil damit ein zentraler Verkehrsweg im Norden Marburgs noch längere Zeit nur eingeschränkt funktioniert. Der Wirkpfad verläuft über Baustelle, Bahnunterbrechungen und Ausweichrouten direkt auf Pendel- und Lieferverkehre. Als mögliche Folge bleiben zusätzliche Reisezeiten, Umwege und Belastungen für Anwohnende und Betriebe bestehen; die Dauer hängt von der Bau- und Sperrplanung ab. Die Evidenz bleibt begrenzt, weil alle Kernaussagen hier aus einer einzelnen journalistischen Quelle stammen.",
+      "detail_summary": "Gesichert ist zunächst der Baustart für den Neubau der Brücke über die Bahngleise in der Neuen Kasseler Straße. Die Quelle nennt zugleich weitere Sperrpausen für die Bahnstrecke Marburg-Cölbe und hält die Umleitungen für Auto- und Radverkehr aufrecht. Für die Einordnung ist das relevant, weil damit ein zentraler Verkehrsweg im Norden Marburgs noch längere Zeit nur eingeschränkt funktioniert. Der Wirkpfad verläuft über Baustelle, Bahnunterbrechungen und Ausweichrouten direkt auf Pendel- und Lieferverkehre. Als mögliche Folge bleiben zusätzliche Reisezeiten, Umwege und Belastungen für Anwohnende und Betriebe bestehen; die Dauer hängt von der Bau- und Sperrplanung ab. Die Evidenz bleibt begrenzt, weil alle Kernaussagen hier aus einer einzelnen journalistischen Quelle stammen.",
       "why_relevant": "Die Meldung beschreibt den Beginn eines Infrastrukturvorhabens mit anhaltenden Sperrungen auf einer wichtigen Verkehrsachse und damit eine materielle Veränderung von Mobilität und Erreichbarkeit.",
       "topic": [
         "Arbeit"
@@ -4988,7 +5796,7 @@
           "claim": "Ob die angekündigten Sperrpausen wie genannt umgesetzt werden.",
           "source_id": "hr-hessenschau",
           "expected_by": "2026-10-31",
-          "measurable_indicator": "Tatsächliche Bahn-Sperrungen auf der Strecke Marburg–Cölbe",
+          "measurable_indicator": "Tatsächliche Bahn-Sperrungen auf der Strecke Marburg-Cölbe",
           "expected_by_evidence_hash": "c3ac3043a6cec1ff9ca3948c211144065638af979ea3ef27aa30f7ccebf555ef",
           "followup_id": "followup-a655157453ebcb4d",
           "announced_at": "2026-09-04T15:07:42.000Z",
@@ -5230,9 +6038,9 @@
       },
       "slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
       "title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
-      "source_summary": "Nach dem Angriff auf das Berliner Landesnetz sollen mutmaßlich gestohlene Daten im Darknet veröffentlicht worden sein. Der rbb berichtet, die Hackergruppe Rhysida habe nach Ablauf eines Ultimatums Datenpakete zugänglich gemacht; nach rbb-Informationen seien es rund 1,4 Millionen Datensätze gewesen. Die tatsächliche Beschaffenheit, Vollständigkeit und Aktualität der Dateien ist weiterhin nicht abschließend geklärt.\n\nDeutschlandfunk berichtet unter Berufung auf den Tagesspiegel, unter den abrufbaren Dateien könnten sich auch Zivilschutzdaten, Angaben zu im Verteidigungsfall besonders zu schützenden Objekten – darunter Krankenhäuser, Tanklager und Anlagen zur Notstromversorgung – sowie geheime Unterlagen mit Bezug zu Rüstungsunternehmen befinden. Diese konkreten Inhalte sind bislang weder vom Senat noch durch eine öffentlich zugängliche forensische Prüfung bestätigt.\n\nDie Berliner Sicherheitsbehörden prüfen die Veröffentlichung nach Angaben des Senats intensiv. Werden betroffene Personen identifiziert, sollen sie risikobasiert und nach gesetzlichen Vorgaben informiert werden. Nach rbb-Angaben verlangten die Erpresser 30 Bitcoin, etwa zwei Millionen Euro; der Senat habe nicht zahlen wollen.",
+      "source_summary": "Nach dem Angriff auf das Berliner Landesnetz sollen mutmaßlich gestohlene Daten im Darknet veröffentlicht worden sein. Der rbb berichtet, die Hackergruppe Rhysida habe nach Ablauf eines Ultimatums Datenpakete zugänglich gemacht; nach rbb-Informationen seien es rund 1,4 Millionen Datensätze gewesen. Die tatsächliche Beschaffenheit, Vollständigkeit und Aktualität der Dateien ist weiterhin nicht abschließend geklärt.\n\nDeutschlandfunk berichtet unter Berufung auf den Tagesspiegel, unter den abrufbaren Dateien könnten sich auch Zivilschutzdaten, Angaben zu im Verteidigungsfall besonders zu schützenden Objekten - darunter Krankenhäuser, Tanklager und Anlagen zur Notstromversorgung - sowie geheime Unterlagen mit Bezug zu Rüstungsunternehmen befinden. Diese konkreten Inhalte sind bislang weder vom Senat noch durch eine öffentlich zugängliche forensische Prüfung bestätigt.\n\nDie Berliner Sicherheitsbehörden prüfen die Veröffentlichung nach Angaben des Senats intensiv. Werden betroffene Personen identifiziert, sollen sie risikobasiert und nach gesetzlichen Vorgaben informiert werden. Nach rbb-Angaben verlangten die Erpresser 30 Bitcoin, etwa zwei Millionen Euro; der Senat habe nicht zahlen wollen.",
       "summary": "Nach dem Angriff auf das Berliner Landesnetz sollen gestohlene Daten im Darknet veröffentlicht worden sein. Der Senat prüft die Daten und will Betroffene bei Bedarf informieren.",
-      "detail_summary": "Der gesicherte Kern ist die Veröffentlichung mutmaßlich gestohlener Daten nach dem Angriff auf das Berliner Landesnetz und die laufende Prüfung durch die Berliner Stellen. Deutschlandfunk berichtet unter Berufung auf den Tagesspiegel zusätzlich, die Dateien könnten Zivilschutzdaten, Angaben zu im Verteidigungsfall besonders zu schützenden Objekten – darunter Krankenhäuser, Tanklager und Notstromanlagen – sowie geheime Unterlagen mit Bezug zu Rüstungsunternehmen enthalten. Diese konkreten Inhalte sind amtlich und forensisch noch nicht öffentlich bestätigt. Falls sie authentisch sind, reicht der Wirkpfad über den Verlust personenbezogener und verwaltungsinterner Vertraulichkeit hinaus: Informationen über Schutzbedarfe, Standorte oder Notfallvorsorge könnten die Vorbereitung gezielter Ausspähung, Sabotage oder weiterer Angriffe erleichtern. Kurzfristig entstehen Prüf-, Schutz- und Benachrichtigungslasten; längerfristig sind Anpassungen an Datentrennung, Zugriffsrechten und Krisenvorsorge plausibel. Die vorliegenden Quellen belegen jedoch keine konkrete nukleare Gefahrenlage. Echtheit, Vollständigkeit, Aktualität und tatsächliche Nutzung der Dateien bleiben offen.",
+      "detail_summary": "Der gesicherte Kern ist die Veröffentlichung mutmaßlich gestohlener Daten nach dem Angriff auf das Berliner Landesnetz und die laufende Prüfung durch die Berliner Stellen. Deutschlandfunk berichtet unter Berufung auf den Tagesspiegel zusätzlich, die Dateien könnten Zivilschutzdaten, Angaben zu im Verteidigungsfall besonders zu schützenden Objekten - darunter Krankenhäuser, Tanklager und Notstromanlagen - sowie geheime Unterlagen mit Bezug zu Rüstungsunternehmen enthalten. Diese konkreten Inhalte sind amtlich und forensisch noch nicht öffentlich bestätigt. Falls sie authentisch sind, reicht der Wirkpfad über den Verlust personenbezogener und verwaltungsinterner Vertraulichkeit hinaus: Informationen über Schutzbedarfe, Standorte oder Notfallvorsorge könnten die Vorbereitung gezielter Ausspähung, Sabotage oder weiterer Angriffe erleichtern. Kurzfristig entstehen Prüf-, Schutz- und Benachrichtigungslasten; längerfristig sind Anpassungen an Datentrennung, Zugriffsrechten und Krisenvorsorge plausibel. Die vorliegenden Quellen belegen jedoch keine konkrete nukleare Gefahrenlage. Echtheit, Vollständigkeit, Aktualität und tatsächliche Nutzung der Dateien bleiben offen.",
       "why_relevant": "Neben möglichen personenbezogenen Daten könnten nach einem zugeschriebenen, noch nicht amtlich bestätigten Medienbericht auch Informationen zu Zivilschutz, Notfallvorsorge und besonders schutzbedürftigen Einrichtungen betroffen sein. Das erhöht das mögliche Schutz- und Systemrisiko.",
       "topic": [
         "Energie",
@@ -5300,7 +6108,7 @@
         "analysis_id": "woek-analysis-061f61c466cf",
         "slug": "veroffentlichte-daten-aus-dem-berliner-landesnetz-was-der-vorfall-fur-verwaltung-u-061f61",
         "title": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
-        "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung – nicht der gesamte Inhalt oder ein Missbrauch.",
+        "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung - nicht der gesamte Inhalt oder ein Missbrauch.",
         "published_at": "2026-09-05T20:51:40.373Z",
         "updated_at": "2026-09-05T20:51:40.373Z"
       },
@@ -7206,7 +8014,7 @@
       "followups": [],
       "sources": [
         {
-          "publisher": "Europäische Kommission – Press Corner",
+          "publisher": "Europäische Kommission - Press Corner",
           "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
           "source_type": "official_rss",
           "published_at": "2026-09-01T16:09:08.000Z",
@@ -7575,63 +8383,63 @@
       ],
       "sources": [
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210250",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:16:00.000Z",
           "primary_source": true
         },
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210244",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:14:00.000Z",
           "primary_source": true
         },
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210340",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:46:00.000Z",
           "primary_source": true
         },
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210334",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:44:00.000Z",
           "primary_source": true
         },
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210328",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:42:00.000Z",
           "primary_source": true
         },
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210322",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:40:00.000Z",
           "primary_source": true
         },
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210316",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:38:00.000Z",
           "primary_source": true
         },
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210310",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:36:00.000Z",
           "primary_source": true
         },
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210304",
           "source_type": "official_rss",
           "published_at": "2026-09-04T15:34:00.000Z",
@@ -8151,6 +8959,103 @@
       ]
     },
     {
+      "story_id": "wt-7ae0b9f22404b684",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-3c99358aab8c11c0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-610a15ea7a976974-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-d04bfff4674d4459-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7ae0b9f22404b684-7a234ce31ca8915b-source.png"
+        }
+      },
+      "slug": "sabotage-akte-hessen-erhoht-schutz-fur-umspannwerke-04b684",
+      "title": "Sabotage-Akte: Hessen erhöht Schutz für Umspannwerke",
+      "source_summary": "Nach mutmaßlicher Sabotage an Stromnetzen in Brandenburg und bei Köln sagt Hessens Innenminister Roman Poseck, es gebe keine Hinweise auf vergleichbare Taten in Hessen. Dennoch würden die Sicherheitsvorkehrungen erhöht. Die Quelle nennt als Beispiel den Main-Kinzig-Kreis, wo der Schutz wichtiger Anlagen derzeit verstärkt werde.\n\nGenannt werden drei Umspannwerke in Gelnhausen, Wächtersbach und Hasselroth-Niedermittlau. Das Innenministerium will sich aus Sicherheitsgründen nicht zu konkreten Schutzkonzepten, einzelnen Vorkehrungen oder möglichen Szenarien äußern. Die Quelle verweist außerdem auf eine angespannte Sicherheitslage und auf weitere Vorfälle an kritischer Infrastruktur in Deutschland.",
+      "summary": "Hessen verschärft nach mutmaßlichen Sabotageakten den Schutz von Umspannwerken und anderen kritischen Anlagen. Konkrete Details zu den Maßnahmen nennt die Quelle nicht.",
+      "detail_summary": "Gesichert ist nach der Quelle vor allem, dass Hessen seine Schutzvorkehrungen für kritische Infrastruktur hochfährt, obwohl es laut Innenminister Poseck keine Hinweise auf vergleichbare Taten im Land gibt. Als konkretes Beispiel nennt die Meldung den Main-Kinzig-Kreis mit drei Umspannwerken. Der Vorgang ist für Energieversorgung und Krisenfestigkeit relevant, weil zusätzliche Sicherung die Verwundbarkeit einzelner Anlagen senken kann und zugleich auf erhöhte Gefahrenwahrnehmung in der Infrastruktursteuerung hinweist. Ein möglicher Folgeeffekt ist mehr personeller, organisatorischer und technischer Aufwand für Betreiber und Behörden. Ob dadurch tatsächlich Anschläge verhindert oder nur Risiken verlagert werden, bleibt offen; die Quelle nennt keine überprüfbaren Wirkungen oder belastbaren Details zu den Maßnahmen.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, also einen potenziell systemrelevanten Bereich mit möglichen Kaskaden für Versorgungssicherheit, Schutzpflichten und staatliche Sicherheitsarchitektur.",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "rationale": "Es geht um Schutz kritischer Infrastruktur, die bei Ausfällen Versorgung und Sicherheit vieler Menschen betreffen kann."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quelle stellt den Schutz staatlich und gesellschaftlich relevanter Infrastruktur sowie die Reaktion der Behörden in den Mittelpunkt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": null,
+      "media_checked_at": null,
+      "editorial_analysis": null,
+      "first_seen": "2026-09-03T09:36:10.000Z",
+      "last_updated": "2026-09-04T14:13:53.288Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-75bee49c92987065ab05",
+      "case_file": null,
+      "source_published_at": "2026-09-03T09:36:10.000Z",
+      "published_at": "2026-09-03T23:06:38.718Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/sabotage-akte-hessen-erhoeht-schutz-fuer-umspannwerke-v1,stromnetzwerke-sabotage-schutz-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T09:36:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
       "story_id": "wt-91d18230516d00b2",
       "title_image": {
         "mode": "editorial",
@@ -8607,7 +9512,7 @@
         }
       },
       "slug": "gardelegen-grossbrand-zerstort-jugendclub-und-vereinsheim-spendenaktion-gestartet-3ac3fc",
-      "title": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim – Spendenaktion gestartet",
+      "title": "Gardelegen: Großbrand zerstört Jugendclub und Vereinsheim - Spendenaktion gestartet",
       "source_summary": "In Gardelegen sind nach Angaben der Quelle in der Nacht zu Mittwoch ein Vereinsheim und ein Jugendclub im Osten der Stadt im Altmarkkreis Salzwedel komplett ausgebrannt. Die Löscharbeiten dauerten demnach bis gegen Mittag, und eine Feuerwehrfrau wurde leicht verletzt.\n\nAls Brandort nennt der Bericht das Vereinsheim des Kulturwerk-Ost; das Feuer habe sich von dort auf ein Nebengebäude und den Jugendclub „Mood“ ausgebreitet. Alle drei Gebäude seien vollständig ausgebrannt. Die Ursache sei noch unklar. Außerdem berichtet die Quelle, dass eine Spendenaktion gestartet wurde.",
       "summary": "In Gardelegen sind bei einem Großbrand ein Vereinsheim und ein Jugendclub zerstört worden. Die Ursache des Feuers ist nach der Quelle noch offen, zugleich wurde eine Spendenaktion gestartet.",
       "detail_summary": "Gesichert ist nach der vorliegenden Quelle vor allem die Zerstörung mehrerer Gebäude in Gardelegen: Ein Vereinsheim und ein Jugendclub brannten vollständig aus, die Löscharbeiten dauerten bis zum Mittag, und eine Feuerwehrfrau wurde leicht verletzt. Für die öffentliche Relevanz spricht weniger die Reichweite als die konkrete materielle Veränderung vor Ort: Räume für Vereine und Jugendarbeit fallen weg, vermutlich vorübergehend oder längerfristig. Daraus kann ein Wirkpfad über eingeschränkte Nutzung, Wiederaufbaukosten und Spendenbedarf entstehen. Ob sich daraus weitere Folgen für Nutzung, Finanzierung oder Ursachenklärung ergeben, bleibt offen. Eine belastbare Einordnung über Brandursache, Schadenshöhe oder Folgewirkungen ist mit der einen Quelle noch nicht möglich.",
@@ -9606,7 +10511,7 @@
       ],
       "sources": [
         {
-          "publisher": "Deutscher Bundestag – Heute im Bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
           "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210052",
           "source_type": "official_rss",
           "published_at": "2026-09-03T08:58:00.000Z",
@@ -10812,7 +11717,7 @@
       "followups": [],
       "sources": [
         {
-          "publisher": "Europäische Kommission – Press Corner",
+          "publisher": "Europäische Kommission - Press Corner",
           "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1769",
           "source_type": "official_rss",
           "published_at": "2026-09-02T22:00:00.000Z",
@@ -10928,6 +11833,115 @@
       ]
     },
     {
+      "story_id": "wt-9812656e38b0d665",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-d48bad746eead60a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-a2d45df5cf096c04-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-e60ffe161fe2bf90-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9812656e38b0d665-ef5cfaf8b2ac8157-source.png"
+        }
+      },
+      "slug": "brandenburg-plant-sicherheitszentrum-nach-stromnetz-sabotage-b0d665",
+      "title": "Brandenburg plant Sicherheitszentrum nach Stromnetz-Sabotage",
+      "source_summary": "Brandenburg reagiert laut Bericht auf eine Stromnetz-Sabotage nahe dem Kraftwerk Jänschwalde mit neuen Sicherheitsplänen. Innenminister Jan Redmann kündigt ein „360-Grad-Sicherheitszentrum“ an, in dem Erkenntnisse aus Verfassungsschutz, Polizei sowie Brand- und Katastrophenschutz gebündelt werden sollen.\n\nZugleich soll ein Beleihungsgesetz vorbereitet werden. Damit könnten Betreiber kritischer Infrastruktur den Schutz ihrer Anlagen selbst organisieren; bislang dürfen das laut Bericht nur Landes-, Bundespolizei und Bundeswehr. Außerdem nennt das Innenministerium weitere geplante Änderungen bei mehreren Sicherheitsgesetzen. Offene Fragen bleiben Zeitpunkt, genauer Inhalt und parlamentarischer Verlauf.",
+      "summary": "Brandenburg will nach der Stromnetz-Sabotage ein neues Sicherheitszentrum schaffen und weitere Sicherheitsgesetze vorziehen. Zugleich soll geprüft werden, ob Betreiber kritischer Infrastruktur ihre Anlagen selbst schützen dürfen.",
+      "detail_summary": "Gesichert ist zunächst die politische Reaktion auf die Sabotage an kritischer Infrastruktur: Brandenburg kündigt ein neues Sicherheitszentrum und weitere Gesetzesvorhaben an. Materiell relevant ist das, weil damit Zuständigkeiten, Schutzlogiken und mögliche Eingriffe in die Sicherung von Energieinfrastruktur verändert werden können. Der Wirkpfad läuft über zentralere Lagebilder, schnellere Koordination und neue rechtliche Befugnisse für Betreiber. Möglich sind dadurch höhere Resilienz und weniger Angriffsflächen, zugleich aber neue Abgrenzungsfragen zwischen Staat, Betreibern und Sicherheitsbehörden. Unklar bleibt, wie weit die Vorhaben tatsächlich gehen, ob sie beschlossen werden und welche Ressourcen sie binden. Belegt ist bisher nur die Ankündigung in einer einzelnen journalistischen Quelle; unabhängige Bestätigung oder amtliche Primärdokumente liegen hier nicht vor.",
+      "why_relevant": "Die Meldung betrifft den Schutz kritischer Infrastruktur und damit Regeln, Zuständigkeiten und Sicherheitsarchitektur mit möglicher Wirkung auf Versorgungssicherheit und staatliche Resilienz.",
+      "topic": [
+        "Energie",
+        "Geopolitik",
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Potenzielle Folgen für Versorgungssicherheit, Polizeiorganisation und den Schutz von Anlagen betreffen viele Haushalte und Betriebe indirekt."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Über den Schutz des Stromnetzes und der Energieinfrastruktur können Ausfälle, Störungen und Folgeschäden begrenzt oder verschärft werden."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Neue Befugnisse und Gesetzesänderungen berühren demokratische Korrekturfähigkeit, Zuständigkeiten und staatliche Kontrolle."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "haushalte"
+        ],
+        "tendency": {
+          "human": "chance",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": null,
+      "media_checked_at": null,
+      "editorial_analysis": null,
+      "first_seen": "2026-09-03T16:30:00.000Z",
+      "last_updated": "2026-09-03T22:22:49.015Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-f27aeef64f1f2b4c573e",
+      "case_file": null,
+      "source_published_at": "2026-09-03T16:30:00.000Z",
+      "published_at": "2026-09-03T22:22:49.015Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob das angekündigte Sicherheitszentrum und das Beleihungsgesetz formell beschlossen werden",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Kabinetts-, Landtags- oder Gesetzesbeschluss mit Text des Vorhabens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-11656929adb12c06",
+          "announced_at": "2026-09-03T16:30:00.000Z",
+          "follow_up_date": "2026-09-10T22:22:49.015Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-sabotage-umspannwerk-stromnetz-jaenschwalde-sicherheitszentrum.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:30:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
       "story_id": "wt-98ff7e403362fdf9",
       "title_image": {
         "mode": "impact_card",
@@ -10997,7 +12011,7 @@
         "analysis_id": "woek-analysis-39ddf0b6cc39",
         "slug": "kritis-dachgesetz-einheitliche-mindeststandards-fur-kritische-infrastrukturen-und--39ddf0",
         "title": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
-        "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt – die Wirkung bleibt vom Vollzug abhängig.",
+        "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt - die Wirkung bleibt vom Vollzug abhängig.",
         "published_at": "2026-09-05T14:02:11.302Z",
         "updated_at": "2026-09-05T14:02:11.302Z"
       },
@@ -11054,7 +12068,7 @@
           "primary_source": false
         },
         {
-          "publisher": "Deutschlandfunk – Gesellschaft",
+          "publisher": "Deutschlandfunk - Gesellschaft",
           "url": "https://www.deutschlandfunk.de/debatte-um-schutz-kritischer-infrastruktur-102.html",
           "source_type": "media_rss",
           "published_at": "2026-09-03T10:12:04.000Z",
@@ -11064,6 +12078,50 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-dab9cdd59202",
+      "story_id": "wt-7b385f58748f3d32",
+      "slug": "polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd",
+      "title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
+      "subtitle": "Warum die Meldung vor allem Ermittlungen, Schutzlogik und Risikowahrnehmung verschiebt",
+      "teaser": "Die eigentliche Wirkung liegt nicht im Schreiben selbst, sondern in der veränderten Lage: Ermittlungen, Schutz kritischer Infrastruktur und öffentliche Risikobewertung werden neu sortiert.",
+      "published_at": "2026-09-06T16:37:35.523Z",
+      "updated_at": "2026-09-06T16:37:35.523Z",
+      "reading_time_minutes": 6
+    },
+    {
+      "analysis_id": "woek-analysis-36e98d72ae20",
+      "story_id": "wt-60f4e4d7d43fad99",
+      "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
+      "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
+      "subtitle": "Die Ermittlungen berühren kritische Infrastruktur, staatliche Schutzfähigkeit und das Vertrauen in die Stabilität des Energiesystems - auch wenn Motiv und Täterlage offen bleiben.",
+      "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
+      "published_at": "2026-09-06T12:24:05.188Z",
+      "updated_at": "2026-09-06T12:24:05.188Z",
+      "reading_time_minutes": 8
+    },
+    {
+      "analysis_id": "woek-analysis-219f434ceb61",
+      "story_id": "wt-cf03acddb911d861",
+      "slug": "angriffe-auf-umspannwerke-warum-der-schutz-kritischer-infrastruktur-ein-systemthem-219f43",
+      "title": "Angriffe auf Umspannwerke: Warum der Schutz kritischer Infrastruktur ein Systemthema wird",
+      "subtitle": "Özdemirs Ruf nach Tempo trifft auf eine Lage, in der Stromversorgung, Sicherheit und Zuständigkeiten enger zusammenhängen als einzelne Vorfälle vermuten lassen.",
+      "teaser": "Mehrere Angriffe auf Umspannwerke und ein knapp vereitelter Drohnenangriff zeigen: Der Schutz kritischer Infrastruktur ist nicht nur Polizeifrage, sondern ein System aus Technik, Recht und Koordination.",
+      "published_at": "2026-09-06T11:53:33.246Z",
+      "updated_at": "2026-09-06T11:53:33.246Z",
+      "reading_time_minutes": 7
+    },
+    {
+      "analysis_id": "woek-analysis-2e9b2581831c",
+      "story_id": "wt-995822cc0b71a7f8",
+      "slug": "eu-haushalt-2028-2034-was-neue-prioritaten-fur-klima-wohlstand-und-zusammenhalt-be-2e9b25",
+      "title": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+      "subtitle": "Sechs Staaten wollen weniger ausgeben als die Kommission vorschlägt. Entscheidend ist, welche Vorsorge, Investitionen und Schutzbedingungen im Haushalt Platz finden.",
+      "teaser": "Der Streit um Europas nächsten Finanzrahmen reicht bis zu Stromnetzen, Hochwasserschutz und regionalen Chancen. Die Analyse prüft Klima- und SDG-Bezüge, mögliche Folgekosten und demokratische Kontrolle. Ein größeres Budget ist dabei ebenso wenig ein Wirkungsnachweis wie ein kleineres schon ein Schaden.",
+      "published_at": "2026-09-06T09:21:47.630Z",
+      "updated_at": "2026-09-06T09:21:47.630Z",
+      "reading_time_minutes": 8
+    },
     {
       "analysis_id": "woek-analysis-1b3323ad407f",
       "story_id": "wt-6c26e428b894e714",
@@ -11103,7 +12161,7 @@
       "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
       "title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
       "subtitle": "Zwischen Versorgungssicherheit, Investitionsanreizen und offenen Verteilungsfragen liegt der eigentliche Wirkungsraum der Entscheidung.",
-      "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat – und was noch offen bleibt.",
+      "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat - und was noch offen bleibt.",
       "published_at": "2026-09-05T21:07:03.109Z",
       "updated_at": "2026-09-05T21:07:03.109Z",
       "reading_time_minutes": 5
@@ -11114,7 +12172,7 @@
       "slug": "veroffentlichte-daten-aus-dem-berliner-landesnetz-was-der-vorfall-fur-verwaltung-u-061f61",
       "title": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
       "subtitle": "Der gesicherte Kern ist die Veröffentlichung mutmaßlich gestohlener Daten; der größere Zusammenhang liegt in Prüfungslasten, Vertrauensverlust und möglicher Verwundbarkeit sensibler Informationen.",
-      "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung – nicht der gesamte Inhalt oder ein Missbrauch.",
+      "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung - nicht der gesamte Inhalt oder ein Missbrauch.",
       "published_at": "2026-09-05T20:51:40.373Z",
       "updated_at": "2026-09-05T20:51:40.373Z",
       "reading_time_minutes": 6
@@ -11158,7 +12216,7 @@
       "slug": "kritis-dachgesetz-einheitliche-mindeststandards-fur-kritische-infrastrukturen-und--39ddf0",
       "title": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
       "subtitle": "Das Gesetz ordnet Schutz, Zuständigkeiten und Evaluierung neu. Ob daraus mehr Resilienz wird, hängt am Vollzug.",
-      "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt – die Wirkung bleibt vom Vollzug abhängig.",
+      "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt - die Wirkung bleibt vom Vollzug abhängig.",
       "published_at": "2026-09-05T14:02:11.302Z",
       "updated_at": "2026-09-05T14:02:11.302Z",
       "reading_time_minutes": 6

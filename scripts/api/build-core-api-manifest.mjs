@@ -237,7 +237,7 @@ function writeEndpoint(directory, data) {
   ensureDirFor(htmlPath);
   fs.writeFileSync(
     path.join(root, htmlPath),
-    `<!doctype html>\n<html lang="de">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>WÖk API · ${htmlEscape(data.title ?? data.registryId ?? "Daten")}</title>\n</head>\n<body>\n<pre>${htmlEscape(JSON.stringify(data, null, 2))}</pre>\n</body>\n</html>\n`,
+    `<!doctype html>\n<html lang="de">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>WÖk API · ${htmlEscape(data.title ?? data.registryId ?? "Daten")}</title>\n<meta name="robots" content="noindex, follow">\n</head>\n<body>\n<pre>${htmlEscape(JSON.stringify(data, null, 2))}</pre>\n</body>\n</html>\n`,
   );
 }
 

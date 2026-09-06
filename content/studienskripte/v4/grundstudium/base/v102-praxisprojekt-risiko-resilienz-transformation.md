@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v102-praxisprojekt-risiko-resilienz-transformation.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v102-praxisprojekt-risiko-resilienz-transformation.md curriculum=4.0 sanitized=true -->
 # V102 · Praxisprojekt: Risiko, Resilienz und Transformationshebel prüfen
 
 **lecture_id:** `WOEK-G-BASE-102`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine Option kann im Basisszenario gut aussehen und unter Stress versagen. Deshalb prüfst du vor jeder Empfehlung: **Welche Risiken sind material? Wie resilient ist die Option? Welche Lock-ins erzeugt sie? Und verändert sie nur Symptome – oder einen strukturellen Engpass?** Eine robuste Option muss nicht in jedem Szenario optimal sein. Sie sollte aber unter plausiblen Belastungen tragfähig bleiben oder rechtzeitig korrigierbar sein.
+Eine Option kann im Basisszenario gut aussehen und unter Stress versagen. Deshalb prüfst du vor jeder Empfehlung: **Welche Risiken sind material? Wie resilient ist die Option? Welche Lock-ins erzeugt sie? Und verändert sie nur Symptome - oder einen strukturellen Engpass?** Eine robuste Option muss nicht in jedem Szenario optimal sein. Sie sollte aber unter plausiblen Belastungen tragfähig bleiben oder rechtzeitig korrigierbar sein.
 
 ## Lernziele
 
@@ -249,4 +249,8 @@ Transformativ wird eine Maßnahme, wenn sie einen Engpass löst, neue Kapazität
 
 Der Merksatz lautet:
 
-**Eine gute Option ist nicht nur heute attraktiv. Sie bleibt unter Stress tragfähig – oder lässt sich korrigieren, bevor der Schaden groß wird.**
+**Eine gute Option ist nicht nur heute attraktiv. Sie bleibt unter Stress tragfähig - oder lässt sich korrigieren, bevor der Schaden groß wird.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

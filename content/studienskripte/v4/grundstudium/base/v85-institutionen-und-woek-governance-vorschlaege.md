@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v85-institutionen-und-woek-governance-vorschlaege.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v85-institutionen-und-woek-governance-vorschlaege.md curriculum=4.0 sanitized=true -->
 # V85 · Institutionen und Regeln: Bestehende Governance vs. WÖk-Vorschläge
 
 **lecture_id:** `WOEK-G-BASE-085`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Deutschland hat bereits viele Institutionen, die Ziele setzen, Daten erzeugen, Gesetze prüfen, evaluieren und kontrollieren: Bundesregierung/Bundeskanzleramt, Ressorts, StA NEZ, Destatis, PBnEZ, RNE, Rechnungshöfe, Gerichte, Fachbehörden und viele mehr. Ein **WÖk-Wirkungsrat** wäre deshalb keine „erste Wirkungsinstitution“, sondern ein WÖk-eigener Governance-Vorschlag. Bevor eine neue Institution erfunden wird, muss geprüft werden: Welche Funktion fehlt wirklich – und kann sie durch bessere Verknüpfung bestehender Institutionen erfüllt werden?
+Deutschland hat bereits viele Institutionen, die Ziele setzen, Daten erzeugen, Gesetze prüfen, evaluieren und kontrollieren: Bundesregierung/Bundeskanzleramt, Ressorts, StA NEZ, Destatis, PBnEZ, RNE, Rechnungshöfe, Gerichte, Fachbehörden und viele mehr. Ein **WÖk-Wirkungsrat** wäre deshalb keine „erste Wirkungsinstitution“, sondern ein WÖk-eigener Governance-Vorschlag. Bevor eine neue Institution erfunden wird, muss geprüft werden: Welche Funktion fehlt wirklich - und kann sie durch bessere Verknüpfung bestehender Institutionen erfüllt werden?
 
 ## Lernziele
 
@@ -29,7 +29,7 @@ Nach dieser Vorlesung kannst du:
 
 Ein häufiger Reformreflex lautet:
 
-> Es fehlt Wirkung – also brauchen wir eine neue Behörde.
+> Es fehlt Wirkung - also brauchen wir eine neue Behörde.
 
 Das ist keine ausreichende Problemprüfung.
 
@@ -128,7 +128,7 @@ Ein „Expertenrat“ ist nicht automatisch neutral.
 
 WÖk sollte für neue Governance dieselbe Additionalitätsfrage stellen wie für Förderprogramme:
 
-> Welche Funktion entsteht wirklich zusätzlich – und was würde ohne neue Institution durch bestehende Akteure ohnehin geleistet?
+> Welche Funktion entsteht wirklich zusätzlich - und was würde ohne neue Institution durch bestehende Akteure ohnehin geleistet?
 
 Wenn der Zusatz nur ein neues Logo ist, ist die institutionelle Wirkung gering.
 
@@ -245,3 +245,7 @@ Je mehr Macht eine Institution bekommt, desto wichtiger werden demokratische Leg
 Der Merksatz lautet:
 
 **Erst die fehlende Funktion finden. Dann die schlankste Institution bauen, die sie wirklich zusätzlich erfüllt.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

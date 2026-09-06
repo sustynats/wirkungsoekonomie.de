@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { normalizePublicPunctuation } from "./public-punctuation.mjs";
+import { isFrozenPublicationSource } from "../lib/public-typography.mjs";
 
 const repoRoot = process.cwd();
 const forbidden = String.fromCharCode(0x2014);
@@ -74,6 +75,7 @@ const offenders = [];
 let fixedFiles = 0;
 
 function scan(filePath) {
+  if (isFrozenPublicationSource(path.relative(repoRoot, filePath))) return;
   const stat = fs.statSync(filePath);
   if (stat.isDirectory()) {
     const name = path.basename(filePath);

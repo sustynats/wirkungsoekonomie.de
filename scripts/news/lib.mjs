@@ -1,4 +1,6 @@
 import { createHash } from "node:crypto";
+import { numberTokens, persistedNumericEvidence } from "./numeric-evidence.mjs";
+import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
@@ -32,7 +34,7 @@ const TOPIC_RULES = [
 ];
 
 const MATERIALITY_RULES = [
-  [16, "eingetretene Entscheidung oder Umsetzung", /\b(beschlossen|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|eingeführt|eingefuehrt|abgeschafft|eröffnet|eroeffnet|gestartet|stärkt|staerkt|senkt|erhöht|erhoeht)\w*/i],
+  [16, "eingetretene Entscheidung oder Umsetzung", /\b(beschlossen|beschließt|beschliesst|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|eingeführt|eingefuehrt|abgeschafft|eröffnet|eroeffnet|gestartet|stärkt|staerkt|senkt|erhöht|erhoeht)\w*/i],
   [14, "System-, Infrastruktur- oder Resilienzbezug", /\b(infrastruktur|marktstruktur|kapitalfluss|resilienz|versorgungssicherheit|kritische\s+infrastruktur|systemrelev|systemisch|transformation|kaskad|schutzgrenz)\w*/i],
   [12, "materieller Bezug zu Mensch, Planet oder Demokratie", /\b(arbeitslos|armut|inflation|gesundheit|pflege|klima|umwelt|emission|industrieemission|energieversorgung|gasspeicher|biodivers|bildung|schule|kind(?:er|ergeld)?|jugend|wohnen|miete|rente|migration|asyl|menschenrecht|grundrecht|transparenz|informationsfreiheit|rechtsstaat|justiz|gericht|verbraucher|rohstoff|lieferkette|landwirtschaft|ernährung|ernaehrung)\w*/i],
   [10, "Veränderung von Regeln, Programmen oder Vereinbarungen", /\b(?:\w*gesetz\w*|\w*verordnung\w*|richtlinie\w*|reform\w*|haushalt\w*|staatsvertrag\w*|abkommen\w*|vereinbarung\w*|programm\w*|maßnahme\w*|massnahme\w*|entwurf\w*|vorschlag\w*|umsetzung\w*|neuregelung\w*|förderung\w*|foerderung\w*)/i],
@@ -59,7 +61,7 @@ const EVENT_RELEVANCE_RULES = [
 ];
 
 const NEWS_VALUE_RULES = [
-  ["binding_decision", /\b(beschlossen|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|aufgehoben|eingeführt|eingefuehrt|abgeschafft)\w*/i],
+  ["binding_decision", /\b(beschlossen|beschließt|beschliesst|verabschiedet|in kraft|tritt\s+(?:am\s+\S+\s+)?in kraft|urteil|entschieden|genehmigt|untersagt|aufgehoben|eingeführt|eingefuehrt|abgeschafft)\w*/i],
   ["implementation", /\b(umgesetzt|vollzug|ausgezahlt|ausgeschrieben|eröffnet|eroeffnet|gestartet|nimmt\s+betrieb\s+auf|ab\s+sofort)\w*/i],
   ["material_proposal", /\b(referentenentwurf|gesetzentwurf|verordnungsentwurf|kabinett\s+(?:beschließt|beschliesst)|legt\s+(?:einen\s+)?entwurf\s+vor)\w*/i],
   ["new_evidence", /\b(evaluation|evaluiert|erste\s+daten|daten\s+(?:zeigen|belegen)|wirkungsbericht|abschlussbericht|signifikant|rekord(?:hoch|tief)?|stark\s+(?:gestiegen|gesunken))\w*/i],
@@ -534,6 +536,13 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
     score -= score >= 52 ? 8 : 28;
     drivers.push("technische Produkt- oder Routinemeldung ohne belegten Systembezug");
   }
+  if (source.selection_profile === "regional_materiality"
+    && /\b(?:sommerfest|empfang|gratulier\w*|jubilaeum|jubiläum|laudatio|verdienstkreuz|pressetermin|ortstermin|einladung|terminhinweis|besucht|auszeichnung|wuerdigt|würdigt)\b/i.test(originalText)
+    && !NEWS_VALUE_RULES.some(([, pattern]) => pattern.test(originalText))
+    && !/\b(?:gesetzentwurf|gesetz|urteil|insolvenz|stellenabbau|massenentlass\w*|cyberangriff\w*|hochwasser|korruption|ruecktritt|rücktritt|versorgungssicherheit|evakuierung|notlage|milliard\w*)\b/i.test(originalText)) {
+    score = Math.min(score, 24);
+    drivers.push("regionaler Repräsentations- oder Routinetermin ohne materiellen neuen Sachverhalt");
+  }
   const newsValueSignals = NEWS_VALUE_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
   const contextFormats = CONTEXT_FORMAT_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
   const topics = TOPIC_RULES.filter(([, pattern]) => pattern.test(text)).map(([topic]) => topic);
@@ -815,9 +824,10 @@ export function analysisInputFor(stories) {
 export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
   const input = analysisInputFor(stories);
   const lines = [
+    READER_COPY_RULE,
     "Du bist der bereits bestehende quellengebundene WÖk-Analysedienst. Analysiere die folgenden vorgefilterten Story-Cluster.",
     "Eigenständige Nachrichtenredaktion: Ereignis aus den verfügbaren Quellen rekonstruieren, Beiträge/Interessen prüfen, eigenen journalistischen Text schreiben. Keine Paywallrekonstruktion oder ungelieferte Quellenkenntnis.",
-    "Amtliche Stellen, Unternehmen und NGOs sind Primärquellen für eigene Erklärungen, nicht automatisch neutrale Wahrheitsinstanzen. Auch ohne amtliche Quelle kann ein belegtes Ereignis berichtenswert sein. Agenturabdrucke, gemeinsame Pressemitteilungen und gleiche Textpassagen zählen nicht als unabhängige Bestätigung. evidence_groups ist eine konservative Abhängigkeitsvorprüfung, kein Beweis für Unabhängigkeit. Bei strittigen oder schwerwiegenden Sachbehauptungen Originalbeleg plus unabhängige Recherche verlangen; ohne ausreichende Evidenz zurückstellen.",
+    "Quellenfunktion pro Claim: Amtliche Stellen, NGOs und Unternehmen belegen eigene Aussagen, nicht deren Wahrheit. Eine journalistische Einzelquelle kann eine zugeschriebene single_source_claim tragen; nicht pauschal insufficient_evidence. Täter/Motive/Folgen dürfen offen bleiben. Agenturabdrucke, Pressemitteilungen und gleiche Texte sind keine unabhängigen Belege; evidence_groups beweist keine Unabhängigkeit. Strittige/schwerwiegende Sachbehauptungen brauchen Originalbeleg plus unabhängige Recherche; 'laut Medium' ersetzt sie nicht. requires_corroboration gilt vorrangig.",
     "Sachverhalt zuerst. event_claims: 1 bis 6 zentrale Behauptungen, jeweils mit Status und gelieferten evidence_id-Referenzen. confirmed_claim verlangt unabhängig belegte Bestätigung, nicht zwei Mediennamen. primary_source_claim nur mit primary_source:true; ein Zeitungsbericht über ein Urteil ersetzt das Urteil nicht. Widersprüche in Zahlen, Zeitpunkt oder Zuschreibung offenhalten, nicht mitteln. Keine falsche Ausgewogenheit. Belegtexte nicht umschreiben oder zusammensetzen.",
     "news_status: developing/preliminary für begrenzte Erstmeldungen mit gesichertem Kern und offenen Fragen; confirmed nur bei entsprechend belegten zentralen Claims; disputed/corrected/updated je nach Lage. Reicht die Beleglage für eine kurze belastbare Erstmeldung, verlange keine abgeschlossene Langfrist-Wirkungsanalyse. Unsichere Folgen ausdrücklich als mögliche Folgen kennzeichnen. Alte Warteschlangenmeldungen anhand currentness und neuerer Quellen prüfen; überholte Zwischenstände nicht als aktuelle Nachricht veröffentlichen.",
     "publication_depth ist initial oder deepened. Bei initial darf source_summary 60 bis 180 Wörter in 2 bis 3 Absätzen und detail_summary 3 bis 7 Sätze mit 300 bis 1200 Zeichen haben. Noch unbelegte Folgenfelder kurz als offen begrenzen, nicht mit Scheingenauigkeit füllen. Bei deepened gelten die ausführlichen Längenregeln unten. Im Modus deepen_existing_initial_report nur bei neuer belastbarer Information oder substanziell besser belegter Einordnung aktualisieren; bloße Umformulierung ist no_new_information. Die Erstmeldung bleibt bei Ablehnung erhalten.",
@@ -1043,12 +1053,6 @@ function sentenceCount(value) {
   return protectedText.split(/[.!?]+(?:[”"'»)]*\s|$)/).filter((part) => part.trim()).length;
 }
 
-function numberTokens(value) {
-  return new Set((String(value).match(/\b\d+(?:[.,]\d+)?(?:\s?%|\s?(?:Millionen|Milliarden|Euro|EUR|USD))?\b/gi) || [])
-    .map((token) => token.match(/\d+(?:[.,]\d+)?/)?.[0].replace(".", ","))
-    .filter(Boolean));
-}
-
 export function maxSharedWordRun(a, b) {
   const left = String(a).toLowerCase().split(/\s+/).filter(Boolean);
   const right = String(b).toLowerCase().split(/\s+/).filter(Boolean);
@@ -1088,6 +1092,7 @@ export function validateAnalysis(analysis, story, options = {}) {
   for (const key of requiredStrings) if (typeof analysis?.[key] !== "string" || !analysis[key].trim()) errors.push(`AI_REQUIRED_STRING:${key}`);
   if (analysis?.story_id !== story.story_id) errors.push("AI_STORY_ID_MISMATCH");
   errors.push(...statusConsistencyErrors(analysis));
+  if (hasEditorialResidue(analysisReaderCopy(analysis))) errors.push("AI_PUBLIC_EDITORIAL_RESIDUE");
   if (!new Set(["angekündigt", "Entwurf", "beschlossen", "in Kraft", "laufende Umsetzung", "erste Daten", "evaluiert", "laufende Entwicklung", "offen"]).has(analysis?.status)) errors.push("AI_STATUS_INVALID");
   if (!new Set(["ex_ante", "monitoring", "ex_post"]).has(analysis?.analysis_type)) errors.push("AI_ANALYSIS_TYPE_INVALID");
   if (!new Set(["gering", "mittel", "hoch", "sehr hoch"]).has(analysis?.importance)) errors.push("AI_IMPORTANCE_INVALID");
@@ -1139,7 +1144,9 @@ export function validateAnalysis(analysis, story, options = {}) {
   }
   if (typeof analysis?.publication_recommendation !== "boolean") errors.push("AI_PUBLICATION_RECOMMENDATION_INVALID");
   else if (analysis.publication_recommendation === false) errors.push("AI_PUBLICATION_NOT_RECOMMENDED");
-  errors.push(...mediaImpactValidationErrors(analysis, story, story?.media_trigger || mediaTriggerForAnalysis(analysis, story)));
+  // A substantive finding can legitimately promote the cheap local trigger.
+  // Honour only the content-bound record; changed input falls back to detection.
+  errors.push(...mediaImpactValidationErrors(analysis, story, mediaTriggerForAnalysis(analysis, story)));
   if (filterVersion >= 4 && options.persisted !== true) errors.push(...validateNewsroomAnalysis(analysis, story));
   else if (filterVersion < 4 && !story.sources.some((source) => source.primary_source)) errors.push("PRIMARY_SOURCE_REQUIRED");
   if (!story.claims.length || story.claims.some((claim) => !claim.source_id)) errors.push("CLAIM_LEDGER_INCOMPLETE");
@@ -1152,13 +1159,17 @@ export function validateAnalysis(analysis, story, options = {}) {
   const sourceText = `${rawSourceText} ${story.source_summary || analysis?.source_summary || ""}`;
   const allowedNumbers = numberTokens(sourceText);
   const rawAllowedNumbers = numberTokens(rawSourceText);
+  if (options.persisted === true) for (const token of persistedNumericEvidence(story)) {
+    allowedNumbers.add(token);
+    rawAllowedNumbers.add(token);
+  }
   // Numeric publisher names (France 24, rbb24) are attribution, not an
   // unsupported quantity. Remove only the complete exact publisher name.
   const withoutPublisherNames = (value) => story.sources.reduce((text, source) => source.publisher ? text.split(source.publisher).join("Quelle") : text, value);
   // Visuals have their own source-bound sanitizer before this gate. Their
   // internal claim IDs and ISO date components are not journalistic numbers.
   const mediaForNumbers = analysis?.media_impact ? { ...analysis.media_impact, framing: { ...analysis.media_impact.framing, political_history_evidence: [] } } : null;
-  const textWithoutFrameworks = collectStrings({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null, media_impact: mediaForNumbers, media_analysis_version: "", media_checked_at: "", media_trigger_fingerprint: "", media_trigger: null }).join(" ");
+  const textWithoutFrameworks = collectStrings(analysisReaderCopy({ ...analysis, source_summary: "", reference_frameworks: [], event_claims: [], followups: [], visuals: null, media_impact: mediaForNumbers })).join(" ");
   for (const token of numberTokens(withoutPublisherNames(textWithoutFrameworks))) if (!allowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_UNSUPPORTED_NUMBER:${token}`);
   if (options.validateSourceSummaryNumbers !== false) {
     for (const token of numberTokens(withoutPublisherNames(analysis?.source_summary || ""))) if (!rawAllowedNumbers.has(token) && !/^[123]$/.test(token)) errors.push(`AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:${token}`);

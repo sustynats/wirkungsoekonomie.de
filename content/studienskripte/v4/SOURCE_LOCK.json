@@ -3,17 +3,17 @@
   "status": "PRE_CUTOVER_SOURCE_LOCK",
   "curriculum_version": "4.0",
   "source_repo": "sustynats/woek-akademie-app",
-  "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
+  "source_sha": "ee7fec6b8a738b78bda9b989eba252963a325daf",
   "source_root": "content/lehrgaenge/akademie/curriculum-v4",
   "source_manifest": "content/lehrgaenge/akademie/curriculum-v4/CURRICULUM_V4_MANIFEST.json",
   "source_endcontent_status": "content/lehrgaenge/akademie/curriculum-v4/ENDCONTENT_STATUS.json",
-  "source_manifest_git_blob_sha": "cb9c2d1c1053d2998919d881c660c17575fe011a",
+  "source_manifest_git_blob_sha": "f31ee16492b245b59c345b5c08b74ec8e0659f72",
   "state_sustainability_manifest_git_blob_sha": "7c418bfa4e94d911b956bfc6f483cd67680f12ec",
   "terminology_baseline": {
     "name": "Führender Begriffsleitfaden der Wirkungsökonomie",
-    "version": "1.6",
+    "version": "1.7",
     "main_repo": "sustynats/wirkungsoekonomie.de",
-    "main_sha_at_lock": "b79be1437b205954c942a90a11ee2b48ba22f641"
+    "main_sha_at_lock": "6d63927847c21ac90dac59617990e2840baa8617"
   },
   "study_projection": {
     "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures",
@@ -56,12 +56,11 @@
     "Geschützte Assessment-/Lösungsabschnitte sind kein Bestandteil des öffentlichen Public-Masters.",
     "v3.2 bleibt historische Version und wird durch diesen Lock nicht überschrieben."
   ],
-  "source_repo_main_observed_sha": "861a4f24ac97e386a55b5037913c5ad46545a022",
-  "source_pin_note": "Public-Master materialized from sanitized hash-verified transport artifact generated on exact private App source SHA ecee82cce60612332b4dc909b2fecfcb380b1a24; fach manifest blobs remain pinned and no assessment secrets are projected.",
+  "source_repo_main_observed_sha": "a654a8a428bad58fe253d6330d696d90293f13c5",
+  "source_pin_note": "Public-Master aus lokalem, exakt commitgebundenem Quellbestand; SHA256 je Skript und bereinigter Projektion, keine Prüfungsgeheimnisse. Fachlicher Stand 6. September 2026, Begriffsleitfaden 1.7.",
   "transport": {
-    "type": "SANITIZED_HASH_VERIFIED_GITHUB_ACTIONS_ARTIFACT",
-    "archive_sha256": "418137a171a07c50a8dbd2019f7bdcd19be127915f1fb9edabd1bbc763f95976",
+    "type": "LOCAL_COMMIT_HASH_VERIFIED",
     "source_repo": "sustynats/woek-akademie-app",
-    "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24"
+    "source_sha": "ee7fec6b8a738b78bda9b989eba252963a325daf"
   }
 }

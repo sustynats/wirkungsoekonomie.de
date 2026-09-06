@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v93-wirkungsklauseln-handel-kapital-entwicklung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v93-wirkungsklauseln-handel-kapital-entwicklung.md curriculum=4.0 sanitized=true -->
 # V93 · Wirkungsklauseln in Handel, Kapital und Entwicklung
 
 **lecture_id:** `WOEK-G-BASE-093`  
@@ -59,7 +59,7 @@ WÖk darf diese Vorgeschichte nicht als eigene Erfindung darstellen.
 
 ## 4. Beispiel: Sustainability-linked Loan
 
-Ein Zinsmechanismus kann an Kennzahlen gekoppelt sein. Wenn die Kennzahl leicht zu beeinflussen oder nur Output-nah ist, entsteht Gaming-Risiko. Ein gutes Design prüft Materialität, Baseline, ambitionierten Zielpfad, externe Faktoren und Konsequenzen – ohne die Kennzahl als vollständigen Impact-Beweis zu behandeln.
+Ein Zinsmechanismus kann an Kennzahlen gekoppelt sein. Wenn die Kennzahl leicht zu beeinflussen oder nur Output-nah ist, entsteht Gaming-Risiko. Ein gutes Design prüft Materialität, Baseline, ambitionierten Zielpfad, externe Faktoren und Konsequenzen - ohne die Kennzahl als vollständigen Impact-Beweis zu behandeln.
 
 ## 5. Handel
 
@@ -95,14 +95,14 @@ Eine spezifische „WÖk-Wirkungsklausel“ wäre ein **WÖk-eigener Vorschlag**
 
 ## Typische Fehlinterpretationen
 
-- „Nachhaltigkeitsklausel = nachhaltige Wirkung.“ – Nein.
-- „KPI-Erreichung beweist Attribution.“ – Nein.
-- „WÖk hat Sustainability-linked Finance erfunden.“ – Nein.
-- „Mehr Bedingungen sind immer fairer.“ – Nicht ohne Verteilungs-/Deliveryprüfung.
+- „Nachhaltigkeitsklausel = nachhaltige Wirkung.“ - Nein.
+- „KPI-Erreichung beweist Attribution.“ - Nein.
+- „WÖk hat Sustainability-linked Finance erfunden.“ - Nein.
+- „Mehr Bedingungen sind immer fairer.“ - Nicht ohne Verteilungs-/Deliveryprüfung.
 
 ## WÖk-Abgrenzung
 
-WÖk ersetzt Vertragsrecht, Handelsrecht, Entwicklungsstandards oder Sustainable-Finance-Rahmen nicht. Sie kann deren Bedingungen als institutionelle Wirkungsmechanismen prüfen und eigene Klauseldesigns vorschlagen – klar als WÖk-Designoption, mit Safeguards, Datenfunktion und Review.
+WÖk ersetzt Vertragsrecht, Handelsrecht, Entwicklungsstandards oder Sustainable-Finance-Rahmen nicht. Sie kann deren Bedingungen als institutionelle Wirkungsmechanismen prüfen und eigene Klauseldesigns vorschlagen - klar als WÖk-Designoption, mit Safeguards, Datenfunktion und Review.
 
 ## Quellen
 
@@ -121,4 +121,8 @@ Prüfungsfähig sind institutioneller Wirkpfad, Safeguard/KPI/Covenant, Gaming, 
 
 ## Sprechertext
 
-Ein Vertrag kann Verhalten verändern – aber nur weil „Nachhaltigkeit“ darin steht, ist noch nichts gewirkt. Wir müssen die Klausel wie eine kleine Policy behandeln: Welche Bedingung verändert welchen Anreiz? Welche Kennzahl wird beobachtet? Ist sie manipulierbar? Was passiert bei Nichterfüllung? Und wann prüfen wir, ob der gewünschte Zustand wirklich besser wurde? Viele solche Instrumente existieren längst in Handel, Finanzierung und Entwicklung. Die WÖk kann sie verbinden und verbessern, aber sie muss klar sagen, was bestehender Standard und was eigener Vorschlag ist.
+Ein Vertrag kann Verhalten verändern - aber nur weil „Nachhaltigkeit“ darin steht, ist noch nichts gewirkt. Wir müssen die Klausel wie eine kleine Policy behandeln: Welche Bedingung verändert welchen Anreiz? Welche Kennzahl wird beobachtet? Ist sie manipulierbar? Was passiert bei Nichterfüllung? Und wann prüfen wir, ob der gewünschte Zustand wirklich besser wurde? Viele solche Instrumente existieren längst in Handel, Finanzierung und Entwicklung. Die WÖk kann sie verbinden und verbessern, aber sie muss klar sagen, was bestehender Standard und was eigener Vorschlag ist.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

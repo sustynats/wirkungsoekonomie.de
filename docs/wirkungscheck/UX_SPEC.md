@@ -1,4 +1,4 @@
-# Wahlkreis-Wirkungscheck — UX-Spezifikation
+# Wahlkreis-Wirkungscheck - UX-Spezifikation
 
 Version 1.0 · Stand 2026-08-13 · Lane: Claude (Design/UX) · Umsetzung: Codex
 
@@ -843,7 +843,7 @@ unter diesen Annahmen · auf Basis Ihrer Angaben · die Datenlage lässt offen
 wissenschaftlich bewiesen (wenn nur Evidenz vorliegt) · optimal · beste Lösung ·
 dringend · alternativlos · Handlungsdruck
 
-**Formal:** Siezen durchgehend. Keine Gedankenstriche `–` oder `—` (Brand Guide §4).
+**Formal:** Siezen durchgehend. Keine Gedankenstriche `-` oder `-` (Brand Guide §4).
 Keine Ausrufezeichen. Keine Emojis. Zahlen mit deutschem Tausendertrennzeichen.
 Datumsangaben `TT.MM.JJJJ`.
 

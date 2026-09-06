@@ -829,7 +829,7 @@
       instrument.further_reading.forEach(function (reading) {
         var item = el("li");
         item.appendChild(el("a", { href: reading.href, target: "_blank", rel: "noopener noreferrer", text: reading.label }));
-        item.appendChild(el("span", { class: "wc-muted", text: " – " + reading.text }));
+        item.appendChild(el("span", { class: "wc-muted", text: " - " + reading.text }));
         readings.appendChild(item);
       });
       body.appendChild(readings);
@@ -1647,8 +1647,8 @@
       svg.appendChild(svgEl("circle", { cx: stage.x, cy: yPotential, r: 5, class: "wc-trajectory__potential-point" }));
       if (index) svg.appendChild(svgEl("circle", { cx: stage.x, cy: yRisk, r: 5, class: "wc-trajectory__risk-point" }));
     });
-    svg.appendChild(svgEl("text", { x: 408, y: 53, class: "wc-trajectory__potential-label" })).textContent = "Wirkungspotenzial – nur wenn Voraussetzungen erfüllt sind";
-    svg.appendChild(svgEl("text", { x: 408, y: 222, class: "wc-trajectory__risk-label" })).textContent = "Risikopfad – wenn Engpass oder Grenze unbehandelt bleiben";
+    svg.appendChild(svgEl("text", { x: 408, y: 53, class: "wc-trajectory__potential-label" })).textContent = "Wirkungspotenzial - nur wenn Voraussetzungen erfüllt sind";
+    svg.appendChild(svgEl("text", { x: 408, y: 222, class: "wc-trajectory__risk-label" })).textContent = "Risikopfad - wenn Engpass oder Grenze unbehandelt bleiben";
     return svg;
   }
 
@@ -1807,7 +1807,7 @@
     var topic = topPriority(baseline);
     var diagnostic = impactCard(
       "Getrennte Grundlage dieses Abschnitts",
-      "Die Diagnose bleibt bei Zielzustand, Bundesrolle, Engpass, Schutzgrenzen und Rückkopplung aus Teil 2. Die Antworten in diesem Abschnitt sind Ihre eigene Bewertung von methodischen Instrumenten – keine Punktzahl und keine Empfehlung.",
+      "Die Diagnose bleibt bei Zielzustand, Bundesrolle, Engpass, Schutzgrenzen und Rückkopplung aus Teil 2. Die Antworten in diesem Abschnitt sind Ihre eigene Bewertung von methodischen Instrumenten - keine Punktzahl und keine Empfehlung.",
       [el("p", { class: "wc-meta", text: "Neutraler Kern: " + (topic ? topic.label : "kein einzelner Schwerpunkt") + " · Zielzustand: " + selectedGoalLabel(baseline) + " · Modulreihenfolge: " + (state.instrumentOrderVersion || M.instrumentModuleVersion || "2026.1") + "." })]
     );
     box.appendChild(diagnostic);
@@ -1958,7 +1958,7 @@
     M.learningLinks.forEach(function (link) {
       var item = el("li");
       item.appendChild(el("a", { href: link.href, download: link.download ? "" : null, text: link.label }));
-      item.appendChild(el("span", { class: "wc-muted", text: " – " + link.text }));
+      item.appendChild(el("span", { class: "wc-muted", text: " - " + link.text }));
       learningList.appendChild(item);
     });
     learning.appendChild(learningList);
@@ -2238,7 +2238,7 @@
         if (!sourceUrl) return;
         var item = el("li");
         item.appendChild(el("a", { href: sourceUrl, target: "_blank", rel: "noopener noreferrer", text: safeText(source.title || sourceUrl, 200) }));
-        if (source.excerpt) item.appendChild(el("span", { class: "wc-meta", text: " – " + safeText(source.excerpt, 500) }));
+        if (source.excerpt) item.appendChild(el("span", { class: "wc-meta", text: " - " + safeText(source.excerpt, 500) }));
         sourceList.appendChild(item);
       });
       if (sourceList.children.length) {
@@ -2580,7 +2580,7 @@
         ["Verantwortung", "Wer hinter dem Werkzeug steht",
           "Fachlich herausgegeben wird der Wirkungscheck vom Institut für Wirkungsökonomie. Datenschutzrechtlich verantwortliche Stelle ist Natalie Weber, c/o IP-Management #6537, Ludwig-Erhard-Straße 18, 20459 Hamburg, impact@wirkungsoekonomie.org.", false, "Impressum öffnen", "../../impressum.html"],
         ["Im Browser", "Welche Angaben lokal gespeichert werden",
-          "Bis Sie sie löschen, speichert dieser Browser die gewählte Betrachtung (Bund oder Wahlkreis), Ihre Antworten, Ihren Report und – falls angefordert – die lokale Kopie einer KI-Auswertung. Die Daten liegen nur auf diesem Gerät unter dem Schlüssel wc_state_v1. Es gibt kein Konto, keine Anmeldung und keine Übertragung im Hintergrund.", true],
+          "Bis Sie sie löschen, speichert dieser Browser die gewählte Betrachtung (Bund oder Wahlkreis), Ihre Antworten, Ihren Report und - falls angefordert - die lokale Kopie einer KI-Auswertung. Die Daten liegen nur auf diesem Gerät unter dem Schlüssel wc_state_v1. Es gibt kein Konto, keine Anmeldung und keine Übertragung im Hintergrund.", true],
         ["Keine Veröffentlichung", "Was nicht mit Ihren Antworten geschieht",
           "Ihre Antworten werden nicht veröffentlicht, nicht an ein CRM übertragen, nicht für Versand oder Profilbildung verwendet und nicht zu einer Rangliste zusammengeführt. Ohne Ihre aktive Anforderung einer KI-Auswertung verlässt keine Antwort den Browser.", false],
         ["KI nur auf Wunsch", "Wann eine Übertragung stattfindet",
@@ -2590,7 +2590,7 @@
         ["Keine Personenbewertung", "Unabhängigkeit des Instruments",
           "Der Wirkungscheck fragt nicht nach Fraktion oder Partei. Er erstellt keine Wahlempfehlung, keine Rangliste und kein Profil von Abgeordneten. Unterschiedliche politische Ziele und Zielkonflikte bleiben politische Entscheidungen.", false],
         ["Daten und Regeln", "Wie der Report zustande kommt",
-          "Die Auswertung verbindet Ihre Antworten mit dem offen gelegten Regelwerk und – sofern gewählt – mit den verlinkten amtlichen Wahlkreisdaten. Bei jeder Datenquelle sind Institution, Jahr, räumliche Ebene und Lizenz sichtbar. Datenlücken werden benannt, nicht geschätzt. Die regelbasierte Auswertung ist nachvollziehbar: Gleiche Angaben führen zum gleichen Ergebnis.", false],
+          "Die Auswertung verbindet Ihre Antworten mit dem offen gelegten Regelwerk und - sofern gewählt - mit den verlinkten amtlichen Wahlkreisdaten. Bei jeder Datenquelle sind Institution, Jahr, räumliche Ebene und Lizenz sichtbar. Datenlücken werden benannt, nicht geschätzt. Die regelbasierte Auswertung ist nachvollziehbar: Gleiche Angaben führen zum gleichen Ergebnis.", false],
         ["Kontakt", "Fragen und Korrekturhinweise",
           "Für Hinweise zu Fragen, Daten oder Regeln erreichen Sie das Projekt unter wirkungscheck@wirkungsoekonomie.de. Für Datenschutzanliegen gelten die Kontaktdaten und Rechte in der Datenschutzerklärung.", false, "Datenschutzerklärung öffnen", "../../datenschutz.html"]
       ];

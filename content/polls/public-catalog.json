@@ -2,6 +2,72 @@
   "schema_version": 1,
   "polls": [
     {
+      "title": "In welcher Stadt möchtest Du leben?",
+      "slug": "stadtvergleich-bundestagswahl-2025",
+      "intro": "Eine Stadt, sieben mögliche Richtungen: Erkunde Stadt und Umland anhand ausgewählter Vorhaben aus den Bundestagswahlprogrammen 2025. Vergleiche Bilder und schriftliche Details, bevor Du Dich entscheidest. Die Darstellungen sind illustrative Szenarien, keine berechneten Zukunftsprognosen und keine Wahlempfehlung.",
+      "question": "Welche der dargestellten Städte würdest Du bevorzugen?",
+      "status": "active",
+      "starts_at": null,
+      "ends_at": null,
+      "results_visibility": "after_vote",
+      "image": "/assets/img/polls/wirkstadt/basis.webp",
+      "cta_text": "Zum Wirkungsportal Parlament",
+      "cta_url": "https://parlament.wirkungsoekonomie.de/",
+      "further_url": "",
+      "feedback_note": "Die Parteizuordnung und Originalquellen sind jetzt im Bildvergleich sichtbar. Deine Auswahl ist keine Wahlempfehlung und kein repräsentativer politischer Befund.",
+      "social_description": "Gleiche Stadt, sieben Szenarien: Vergleiche Energie, Mobilität, Wohnen, Bildung und Gesundheit – zunächst ohne Parteinamen. Illustrativer Vergleich, keine Zukunftsprognose.",
+      "feedback_enabled": 0,
+      "consent_required": 1,
+      "options": [
+        {
+          "id": "6fde91f6-0dac-4e19-a828-0351c5df2219",
+          "label": "Szenario A",
+          "sort_order": 0
+        },
+        {
+          "id": "55414ccb-b79c-4260-96e7-e07ff1ba218f",
+          "label": "Szenario B",
+          "sort_order": 1
+        },
+        {
+          "id": "f763ad0e-9151-4a40-b562-8c63df01c529",
+          "label": "Szenario C",
+          "sort_order": 2
+        },
+        {
+          "id": "a37f16a5-d8a7-4484-adbb-d821cda01aa4",
+          "label": "Szenario D",
+          "sort_order": 3
+        },
+        {
+          "id": "a89424ae-9880-42f4-bf40-bd28a4e742a9",
+          "label": "Szenario E",
+          "sort_order": 4
+        },
+        {
+          "id": "3ad0fc54-adb4-4da9-a31f-09f3063ac6a0",
+          "label": "Szenario F",
+          "sort_order": 5
+        },
+        {
+          "id": "406e4db2-2a9d-4a79-8f91-52228fc6687c",
+          "label": "Szenario G",
+          "sort_order": 6
+        },
+        {
+          "id": "c3804692-f2a1-4240-9e60-4dd55a0f7ed3",
+          "label": "Keines dieser Szenarien",
+          "sort_order": 7
+        }
+      ],
+      "id": "7f0dc2a0-05bb-4376-8b93-0e02febc2fb2",
+      "published_at": "2026-09-06T09:34:35.942Z",
+      "created_at": "2026-09-06T09:34:35.942Z",
+      "updated_at": "2026-09-06T15:41:56.533Z",
+      "revision": 3,
+      "effective_status": "active"
+    },
+    {
       "title": "Wie überzeugt Euch der neue Wirkungsticker?",
       "slug": "wirkungsticker-feedback",
       "intro": "Der Wirkungsticker ist live.\n\nAktuelle Nachrichten werden hier nicht einfach weitergereicht, sondern quellengebunden eingeordnet: Was ist Fakt? Was könnte daraus folgen? Und welche Wirkung betrifft Mensch, Planet und Demokratie?\n\nDazu kommen Faktencheck, Folgencheck und eine wirkungsökonomische Einordnung.\n\nJetzt interessiert mich Eure Einschätzung.",
@@ -17,6 +83,7 @@
       "feedback_note": "Was fehlt Euch noch oder was würdet Ihr verbessern? Schreibt mir gerne Euer Feedback.",
       "social_description": "Der Wirkungsticker ordnet aktuelle Nachrichten nach Fakten, möglichen Folgen und ihrer Wirkung auf Mensch, Planet und Demokratie ein. Wie überzeugt Euch das Konzept?",
       "feedback_enabled": 1,
+      "consent_required": 0,
       "options": [
         {
           "id": "c203bf9a-0ed2-4811-89dd-8614a785d5d9",

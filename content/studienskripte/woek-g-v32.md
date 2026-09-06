@@ -5,9 +5,7 @@
 **Vorlesungscode:** V32  
 **Modul/Abschnitt:** G3.3  
 **Titel:** Scorecards und Bewertungsprofile  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v32-scorecards-und-bewertungsprofile.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v32.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v32.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Scorecards und Bewertungsprofile** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V31 „Von Einzelwirkung zu Netto-Wirkung"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Wie wird ein Wirkungsprofil lesbar? Eine Scorecard ist wie ein gut beschriftetes
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Scorecards lesen – mehr als eine Punktzahl
+- **Titel:** Scorecards lesen - mehr als eine Punktzahl
 - **Länge:** ~15 Min
 - **Kernaussage in einem Satz:** Scorecards machen Wirkungsfelder, Datenqualität, Benchmarks und Begründungen sichtbar und verhindern, dass ein Gesamtwert die entscheidenden Schwachstellen verdeckt.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Was eine Scorecard ist.** Eine strukturierte Matrix aus Wirkungsfeldern, Indikatoren, Werten, Benchmarks und Datenqualität.
+**Abschnitt A - Was eine Scorecard ist.** Eine strukturierte Matrix aus Wirkungsfeldern, Indikatoren, Werten, Benchmarks und Datenqualität.
 
-**Abschnitt B – Bewertungsprofil statt Zahl.** Das Profil zeigt Stärken, Schwächen und Unsicherheiten.
+**Abschnitt B - Bewertungsprofil statt Zahl.** Das Profil zeigt Stärken, Schwächen und Unsicherheiten.
 
-**Abschnitt C – Felder und Skalen.** Skalen können von negativ bis positiv reichen; wichtig ist ihre Begründung.
+**Abschnitt C - Felder und Skalen.** Skalen können von negativ bis positiv reichen; wichtig ist ihre Begründung.
 
-**Abschnitt D – Datenqualität.** Jeder Score braucht Quellen- und Qualitätsangabe.
+**Abschnitt D - Datenqualität.** Jeder Score braucht Quellen- und Qualitätsangabe.
 
-**Abschnitt E – Entscheidung.** Scorecards dienen Rückkopplung: Was muss verbessert, gestoppt, gefördert oder geprüft werden?
+**Abschnitt E - Entscheidung.** Scorecards dienen Rückkopplung: Was muss verbessert, gestoppt, gefördert oder geprüft werden?
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -80,7 +76,7 @@ Die Skala muss transparent sein. Viele WÖk-Beispiele arbeiten mit Feldern von -
 
 Scorecards sind keine Selbstzweck-Tabellen. Sie sind Rückkopplungsinstrumente. Sie helfen zu entscheiden: Wo ist das kritische Feld? Welche Verbesserung hätte die größte Wirkung? Welche rote Linie wird berührt? Welche Daten fehlen? Welche Maßnahme ist förderfähig, prüfpflichtig oder abzulehnen?
 
-Damit eine Scorecard glaubwürdig bleibt, braucht sie Quellenklarheit, Datenqualität und Schutzlogik. Ein guter Wert in einem Feld darf einen sehr schlechten Wert in einem kritischen Feld nicht verdecken. Deshalb werden Scorecards in V34–V36 mit Reverse Merit Order und Nichtkompensation gelesen.
+Damit eine Scorecard glaubwürdig bleibt, braucht sie Quellenklarheit, Datenqualität und Schutzlogik. Ein guter Wert in einem Feld darf einen sehr schlechten Wert in einem kritischen Feld nicht verdecken. Deshalb werden Scorecards in V34-V36 mit Reverse Merit Order und Nichtkompensation gelesen.
 
 ## 5. Glossar der Kernbegriffe
 
@@ -128,7 +124,6 @@ Erstelle eine Vier-Felder-Scorecard für ein Beispiel: Klima, Ressourcen, Mensch
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -272,12 +267,11 @@ Die folgende Runde verdichtet V32 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V32. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Scorecards, Wirkungsmessung
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Scorecards, Wirkungsmessung
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/scorecard`, `begriffe/finalscore`, `begriffe/datenqualitaet`
 
@@ -370,7 +364,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 4
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -931,8 +924,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v32-scorecards-und-bewertungsprofile.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V2 – Regel-Engine
+# Wirkungscheck Bundestag V2 - Regel-Engine
 
 **Status:** verbindlicher Implementierungsentwurf.  
 **Modus:** deterministisch, inhaltsgesteuert, ohne generative KI im

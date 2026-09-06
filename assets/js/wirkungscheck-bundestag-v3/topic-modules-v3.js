@@ -1,4 +1,4 @@
-/* Wirkungscheck Bundestag V3 – fachlich versionierte Themenmodule.
+/* Wirkungscheck Bundestag V3 - fachlich versionierte Themenmodule.
  * Jede sichtbare Auswahl und jede unmittelbare Rückmeldung stammt aus dieser
  * Deklaration. Sie enthält keine Personen-, Partei- oder Fraktionsdaten. */
 (function () {
@@ -35,7 +35,7 @@
   var modules = {
     housing: {
       id: "housing", title: "Wohnen", short: "Zugang, Bezahlbarkeit und passender Wohnraum", version: "3.0.0",
-      intro: "Nicht die Zahl der Maßnahmen entscheidet, sondern ob Haushalte tatsächlich passenden und bezahlbaren Wohnraum finden – ohne andere Schutzgüter zu verschlechtern.",
+      intro: "Nicht die Zahl der Maßnahmen entscheidet, sondern ob Haushalte tatsächlich passenden und bezahlbaren Wohnraum finden - ohne andere Schutzgüter zu verschlechtern.",
       goals: [
         { id: "access", label: "Mehr Haushalte finden passenden und bezahlbaren Wohnraum.", questionForm: "mehr Haushalte passenden und bezahlbaren Wohnraum finden" },
         { id: "existing_use", label: "Vorhandener Wohnraum wird besser genutzt.", questionForm: "vorhandener Wohnraum besser genutzt wird" },

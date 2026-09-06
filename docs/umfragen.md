@@ -41,6 +41,13 @@ Der öffentliche Link wird anhand der tatsächlich ausgelieferten Umfrage-ID und
 Revision geprüft. Status, Abstimmung und Ergebnis-Sichtbarkeit kommen dagegen
 bei jedem Aufruf direkt von der API; Pausieren wirkt sofort auf die Stimmabgabe.
 
+Seit 6. September liest auch die Übersicht den Status ihrer veröffentlichten
+Umfragen direkt aus der öffentlichen API, zusätzlich beim Zurückkehren auf die
+Seite. Dafür werden keine Abstimmungskennungen oder Anmeldedaten übertragen.
+Bei API-Ausfall verweist die Anzeige zur Statusprüfung auf die Umfrageseite,
+statt einen veralteten Snapshot als aktuell auszugeben. Ohne JavaScript bleibt
+der zuletzt veröffentlichte Katalogstand lesbar.
+
 Ein API-Ausfall veröffentlicht weder Entwürfe noch einen leeren Ersatzbestand.
 Der letzte gültige öffentliche Snapshot bleibt erhalten; die Abstimmung zeigt
 eine Fehlermeldung und erfindet keine Ergebnisse. Die API ist nicht vom
@@ -54,7 +61,7 @@ GitHub-Publishing-Job abhängig. Stimmen überstehen Deployments und Neustarts.
 - `poll_options`: UUID, Poll-Fremdschlüssel, Beschriftung, Sortierung.
 - `votes`: UUID, Poll/Option-Fremdschlüssel, pro Umfrage gepepperte
   Abstimmungskennung, Zeitstempel. `UNIQUE(poll_id, anonymous_vote_identifier)`.
-- `poll_feedback`: UUID, Poll-/Vote-Fremdschlüssel, Kommentar (1–1.500 Zeichen),
+- `poll_feedback`: UUID, Poll-/Vote-Fremdschlüssel, Kommentar (1-1.500 Zeichen),
   Zeitstempel, Status `new`/`read`/`archived`. Höchstens ein Kommentar je Stimme;
   die gewählte Option ist ausschließlich in der geschützten Admin-Ansicht sichtbar.
 - `retired_slugs`: veröffentlichte und anschließend gelöschte URLs werden nicht
@@ -139,7 +146,7 @@ für eine konsistente Summe von 100 % bei vorhandenen Stimmen.
 - CORS nur Hauptdomain und www. HTTPS, kein Wildcard-Origin, kein Token im
   Client-Bundle. Admin: aktuelle Discord-Mitgliedschaft plus Server-Inhaberschaft
   oder Administrator-Berechtigung; optional engere explizite Benutzerliste.
-- Eingaben mit Größenlimits, 2–8 eindeutigen Optionen, sicheren Links;
+- Eingaben mit Größenlimits, 2-8 eindeutigen Optionen, sicheren Links;
   parametrisierte SQL-Abfragen und Textausgabe statt ungesichertem HTML.
 - `X-Real-IP` wird nur bei ausdrücklich aktiviertem Vertrauen und einer
   Loopback-Verbindung akzeptiert. Der eigene TLS-Proxy muss den Header ersetzen.
@@ -297,6 +304,11 @@ Backend-Konfiguration. Keine neue Benutzerverwaltung, keine zweite OAuth-App.
    Feedback-Umfrage mischen. Produktive Testdaten anschließend gezielt entfernen.
 
 ## Backup und Restore
+
+Für politische Szenario-Umfragen erweitert Schema 3 Einwilligung, eigene
+Stimmenlöschung und Restore-Schutz. Verbindliche Ergänzung für solche Umfragen:
+[Stadtvergleich und sensible Abstimmungen](wirkstadt.md). Insbesondere vor
+einem Restore `polls/restore.mjs` gegen den aktuellen Löschbestand verwenden.
 
 `node --env-file=.env polls/backup.mjs` erzeugt mit `VACUUM INTO` eine konsistente
 SQLite-Sicherung auch bei laufendem Dienst. Das Skript rotiert ausschließlich

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md curriculum=4.0 sanitized=true -->
 # GOV-02 · Von Agenda 21 zur deutschen Nachhaltigkeitsstrategie 2002
 
 **lecture_id:** `WOEK-G-GOV-HIST-02`  
@@ -29,7 +29,7 @@ Nach dieser Vorlesung kannst du:
 
 Agenda 21 forderte Staaten dazu auf, nachhaltige Entwicklung in nationale Politik zu übersetzen. Deutschland tat das nicht in einem einzigen Schritt. Über die 1990er Jahre wurden Nachhaltigkeitsfragen in Parlament, Regierung und gesellschaftlichen Debatten weiter konkretisiert. Ein wichtiger parlamentarischer Bezug war beispielsweise die Enquete-Kommission **„Schutz des Menschen und der Umwelt“**, die in den 1990er Jahren an der Konkretisierung des Nachhaltigkeitsleitbilds arbeitete.
 
-Im April 2002 beschloss die Bundesregierung schließlich die nationale Nachhaltigkeitsstrategie **„Perspektiven für Deutschland – Unsere Strategie für eine nachhaltige Entwicklung“**.
+Im April 2002 beschloss die Bundesregierung schließlich die nationale Nachhaltigkeitsstrategie **„Perspektiven für Deutschland - Unsere Strategie für eine nachhaltige Entwicklung“**.
 
 Die Strategie ist wichtig, weil sie Nachhaltigkeit als Querschnittsaufgabe des Regierungshandelns behandelte. Sie war nicht bloß ein Umweltpapier. In der amtlichen Darstellung wurden unter anderem Energie und Klima, Mobilität, Ernährung, demografischer Wandel, Innovation und globale Verantwortung als Schwerpunkte benannt.
 
@@ -90,7 +90,7 @@ und
 
 `Observation != Attribution`
 
-Ein DNS-Indikator kann für WÖk eine sehr wertvolle Datenquelle sein – etwa als `BASELINE`, `TARGET`, `OUTCOME`, `CONTEXT` oder `REALITY_CHECK`. Seine konkrete Datenfunktion muss aber im jeweiligen Wirkungsfall explizit bestimmt werden.
+Ein DNS-Indikator kann für WÖk eine sehr wertvolle Datenquelle sein - etwa als `BASELINE`, `TARGET`, `OUTCOME`, `CONTEXT` oder `REALITY_CHECK`. Seine konkrete Datenfunktion muss aber im jeweiligen Wirkungsfall explizit bestimmt werden.
 
 ## 6. Die Strategie wird weiterentwickelt
 
@@ -104,7 +104,7 @@ Für die WÖk ergibt sich daraus eine zweite methodische Konsequenz: Langfristig
 
 | Begriff | Bedeutung |
 |---|---|
-| Nationale Nachhaltigkeitsstrategie 2002 | Erste nationale Nachhaltigkeitsstrategie der Bundesregierung, Titel „Perspektiven für Deutschland – Unsere Strategie für eine nachhaltige Entwicklung“. |
+| Nationale Nachhaltigkeitsstrategie 2002 | Erste nationale Nachhaltigkeitsstrategie der Bundesregierung, Titel „Perspektiven für Deutschland - Unsere Strategie für eine nachhaltige Entwicklung“. |
 | Nachhaltigkeitsstrategie | Politischer Governance-/Managementrahmen; nicht identisch mit einem Gesetz. |
 | Ziel | Politisch gewünschter Zustand oder Zielwert. |
 | Indikator | Beobachtungsgröße, mit der Entwicklung oder Zielerreichung beschrieben wird. |
@@ -168,19 +168,19 @@ Das ist der fachlich faire Zusatznutzen.
 
 ### Primärquellen
 
-1. **Bundesregierung – „Perspektiven für Deutschland“, nationale Nachhaltigkeitsstrategie 2002**  
+1. **Bundesregierung - „Perspektiven für Deutschland“, nationale Nachhaltigkeitsstrategie 2002**  
    https://www.bundesregierung.de/resource/blob/974430/418646/be6b81966ddfbca3e8a79d486ac7f368/perspektiven-fuer-deutschland-langfassung-data.pdf?download=1
 
-2. **Bundesregierung – Überblick zur Deutschen Nachhaltigkeitsstrategie / historische Einordnung 2002**  
+2. **Bundesregierung - Überblick zur Deutschen Nachhaltigkeitsstrategie / historische Einordnung 2002**  
    https://www.bundesregierung.de/breg-de/service/newsletter-und-abos/bundesregierung-aktuell/die-deutsche-nachhaltigkeitsstrategie-1503292
 
-3. **Statistisches Bundesamt – Entstehung und Weiterentwicklung des DNS-Indikatorensets**  
+3. **Statistisches Bundesamt - Entstehung und Weiterentwicklung des DNS-Indikatorensets**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/entstehung-entwicklung.html
 
-4. **Statistisches Bundesamt – Monitoring der Deutschen Nachhaltigkeitsstrategie**  
+4. **Statistisches Bundesamt - Monitoring der Deutschen Nachhaltigkeitsstrategie**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html
 
-5. **Bundesregierung – Fortschrittsbericht 2008**  
+5. **Bundesregierung - Fortschrittsbericht 2008**  
    https://www.bundesregierung.de/resource/blob/974430/418604/08bf612003ad23a7847c6c3da5bba5af/2008-11-17-fortschrittsbericht-2008-data.pdf?download=1
 
 ### Quellenfunktion
@@ -223,7 +223,7 @@ Und Deutschland macht daraus 2002 eine nationale Nachhaltigkeitsstrategie. Der T
 
 Das Spannende daran ist nicht nur das Datum. Spannend ist, was damit passiert.
 
-Nachhaltigkeit wird zu einer Querschnittsaufgabe. Also nicht: Das Umweltministerium macht irgendetwas Grünes. Sondern: Energie, Verkehr, Wirtschaft, Ernährung, Demografie, Innovation, internationale Verantwortung – all das hängt zusammen.
+Nachhaltigkeit wird zu einer Querschnittsaufgabe. Also nicht: Das Umweltministerium macht irgendetwas Grünes. Sondern: Energie, Verkehr, Wirtschaft, Ernährung, Demografie, Innovation, internationale Verantwortung - all das hängt zusammen.
 
 Und dann kommen Ziele und Indikatoren dazu.
 
@@ -248,3 +248,19 @@ Was ist eigentlich das Problem? Was ist die Ursache? Passt das Ziel dazu? Welche
 Das ist der Unterschied zwischen einem Ziel- und Monitoringsystem und einer vollständigen Wirkungsanalyse.
 
 Beides gehört zusammen. Aber es ist nicht dasselbe.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Welcher staatliche Prüfrahmen passt zum Gegenstand?
+
+Der Prüfbedarf folgt der materiellen Wirkungsrelevanz. Neben Gesetzen können Verordnungen, Strategien, Programme, Förderungen, Garantien, Investitionen, Beschaffung, Infrastruktur und Verwaltungsentscheidungen relevant sein. Prüfe zuerst Zuständigkeit, Handlungsform und konkrete Rechtsgrundlage. Die Bundes-GGO und eNAP gelten nicht pauschal für Länder, Kommunen, EU oder jede staatliche Handlung. Fehlende Universalität bedeutet keine staatliche Prüfleere.
+
+Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm), DNS, Nachhaltigkeitsprüfung und eNAP/eGFA den bestehenden Rahmen. Bei finanzwirksamen Bundesmaßnahmen prüfe zusätzlich beziehungsweise gegenstandsbezogen [§ 7 BHO](https://www.gesetze-im-internet.de/bho/__7.html), [VV-BHO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm) und die [AAWU, Fassung vom 13. Januar 2026](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_13012026_IIA3H100500150006005DOKCOO7005100213785493.htm). Fachrechtliche Rahmen können hinzutreten.
+
+Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
+
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

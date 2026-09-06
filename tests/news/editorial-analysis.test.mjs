@@ -164,6 +164,13 @@ test("vollständige Analyse besteht Evidenz-, Self-Frame- und Langtextgate", () 
   assert.deepEqual(editorialAnalysisValidationErrors(analysis, item), []);
 });
 
+test("Redaktionsanweisungen in WÖk-Lesertexten scheitern am Veröffentlichungsgate", () => {
+  const item = highStory();
+  const analysis = sanitizeEditorialAnalysis(validEditorial(item), item);
+  analysis.sections[0].paragraphs[0] += " Vor Veröffentlichung noch prüfen.";
+  assert.ok(editorialAnalysisValidationErrors(analysis, item).includes("EDITORIAL_PUBLIC_EDITORIAL_RESIDUE"));
+});
+
 test("Fakten ohne Quelle, technische Interna und behauptete Medienwirkung werden gesperrt", () => {
   const item = highStory();
   const raw = validEditorial(item);

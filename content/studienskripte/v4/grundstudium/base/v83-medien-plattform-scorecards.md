@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v83-medien-plattform-scorecards.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v83-medien-plattform-scorecards.md curriculum=4.0 sanitized=true -->
 # V83 · Medien- und Plattform-Scorecards: zwei Bewertungsebenen, keine Gesinnungsnote
 
 **lecture_id:** `WOEK-G-BASE-083`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Bei Medien und Plattformen gibt es mindestens **zwei verschiedene Wirkungsfragen**. Erstens: Was bewirkt ein konkreter Text, Frame, Video oder Narrativ? Zweitens: Was bewirkt die Struktur des Mediums oder der Plattform – Ranking, Reichweite, Moderation, Geschäftsmodell, Eigentum, Nutzerkontrolle? Diese Ebenen dürfen nicht vermischt werden. WÖk-Scorecards zeigen deshalb Quellen, Mechanismen, Richtung, Evidenz, Reichweite und offene Punkte – **keine Gesinnungsnoten für Medien oder Parteien**.
+Bei Medien und Plattformen gibt es mindestens **zwei verschiedene Wirkungsfragen**. Erstens: Was bewirkt ein konkreter Text, Frame, Video oder Narrativ? Zweitens: Was bewirkt die Struktur des Mediums oder der Plattform - Ranking, Reichweite, Moderation, Geschäftsmodell, Eigentum, Nutzerkontrolle? Diese Ebenen dürfen nicht vermischt werden. WÖk-Scorecards zeigen deshalb Quellen, Mechanismen, Richtung, Evidenz, Reichweite und offene Punkte - **keine Gesinnungsnoten für Medien oder Parteien**.
 
 ## Lernziele
 
@@ -180,7 +180,7 @@ Aber auch hier gilt:
 
 ## 9. Beispiel: polarisierender Kurzclip
 
-Ebene A – Clip:
+Ebene A - Clip:
 
 - Originaltext sichern,
 - Frame analysieren,
@@ -189,7 +189,7 @@ Ebene A – Clip:
 - Reichweite,
 - Wiederholung.
 
-Ebene B – Plattform:
+Ebene B - Plattform:
 
 - wurde Clip aktiv empfohlen?
 - welcher Recommender-/Interaktionsmechanismus?
@@ -305,7 +305,7 @@ Eine für Content: Fakten, Frame, Ingroup/Outgroup, Normalisierung, Reichweite, 
 
 Und eine für die Struktur: Empfehlungssystem, Geschäftsmodell, Nutzerkontrolle, Moderation, Transparenz, Datenzugang, Medienpluralität.
 
-Dabei ist Reichweite wichtig – aber Reichweite ist noch keine Wirkung.
+Dabei ist Reichweite wichtig - aber Reichweite ist noch keine Wirkung.
 
 Und Moderation ist nicht automatisch gut oder schlecht. Sie kann Menschen vor Belästigung schützen und gleichzeitig legitime Rede fälschlich treffen.
 
@@ -318,3 +318,7 @@ Wir zeigen konkrete Fälle und strukturelle Profile.
 Der Merksatz lautet:
 
 **Bewerte den Inhalt als Inhalt. Die Plattform als Plattform. Und die Wirkung erst dort, wo ein Mechanismus und Evidenz beide Ebenen verbinden.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

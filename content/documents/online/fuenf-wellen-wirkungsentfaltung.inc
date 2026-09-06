@@ -21,7 +21,7 @@
 <p>Bezug: [I1], [I5], [I9], [E11], [E12].</p>
 <h2>Inhaltsübersicht</h2>
 <ul><li>0. Begriffliche Setzung und Abgrenzung</li><li>1. Warum das Wellenmodell nicht bei Kommunikation stehen bleiben muss</li><li>2. Von der öffentlichen Wirkung zur allgemeinen Wirkungsentfaltung</li><li>3. Die interne WÖk-Herleitung: Wirkung, Potenzial, Risiko, Raum, Rückkopplung</li><li>4. Externe Bezugslinien: Kommunikation, Öffentlichkeit, Systemtheorie, Diffusion, Risiko</li><li>5. Die fünf allgemeinen Wellen der Wirkungsentfaltung</li><li>6. Die Tiefe: Bedingungen unter der sichtbaren Wirkung</li><li>7. Übertragungen auf Produkte, Märkte, Kapital, Politik und Institutionen</li><li>8. Öffentliche Kommunikation als Sonderfall</li><li>9. Methodik: Wie das Modell praktisch genutzt werden kann</li><li>10. Grenzen, Missverständnisse und Forschungsprogramm</li><li>Anhang A. Mastertemplate für Wirkungsräume</li><li>Anhang B. Quellenapparat intern und extern</li></ul>
-<h2>Teil 0 – Begriffliche Setzung</h2>
+<h2>Teil 0 - Begriffliche Setzung</h2>
 <h3>0.1 Warum dieses Dossier eigenständig ist</h3>
 <p>Das Dossier ist nicht bloß eine Erweiterung des Kommunikationsmodells. Es prüft, ob die dort entwickelte Wellen-Tiefen-Logik eine allgemeinere wirkungsökonomische Bedeutung hat. Die Antwort lautet: ja, aber nur, wenn die Ebenen sauber getrennt werden. Aufmerksamkeit, Emotion, Deutung, Resonanz und Verschiebung sind keine universellen Begriffe für jeden Wirkungsraum. Sie sind die Kommunikationssprache einer tieferen Entfaltungslogik.</p>
 <p>Die allgemeine Logik lautet anders: Sichtbarkeit, Betroffenheit, Bewertung, Resonanz oder Anpassung sowie Struktur und Rückkopplung. Diese Begriffe können in verschiedenen Feldern anders erscheinen. In Produkten wird Sichtbarkeit etwa durch Produktpässe, Scorecards oder Preise hergestellt. In Kapitalmärkten zeigt sie sich in Risiko, Versicherbarkeit und Finanzierungskosten. In Politik erscheint sie als Agenda, Problemdefinition und Legitimitätsdruck. In Kommunikation erscheint sie als Aufmerksamkeit.</p>
@@ -47,7 +47,7 @@
 <p>Die zweite Fassung ist die Kommunikationsfassung: die fünf Wellen öffentlicher Wirkung. Sie beschreibt Aufmerksamkeit, Emotion, Deutung, Resonanz und Verschiebung. Diese Fassung ist kein beliebiger Sonderfall, sondern ein besonders anschaulicher Wirkungsraum, weil Sprache, Bilder und Narrative oft schon vor messbaren Zustandsveränderungen Wirkungspotenziale erzeugen.</p>
 <p>Beide Fassungen sollten künftig getrennt benannt werden. Das verhindert Überdehnung. Die Kommunikationsfassung darf nicht so tun, als sei jeder Markt eine Talkshow. Die allgemeine Fassung darf nicht so abstrakt werden, dass sie die Eigenlogik von Öffentlichkeit, Emotion und Deutung verliert.</p>
 <p>Quellenbezug: [I1], [I12], [E4]</p>
-<h2>Teil I – Interne Herleitung</h2>
+<h2>Teil I - Interne Herleitung</h2>
 <h3>1.1 Wirkung als Zustandsveränderung</h3>
 <p>Der Ausgangspunkt der Wirkungsökonomie ist nicht Kommunikation, sondern der Begriff der Wirkung. Wirkung bedeutet tatsächliche Veränderung von Zuständen. Sie ist nicht Absicht, nicht Symbolik, nicht Image, nicht Bericht und nicht bloßer Output. Diese Unterscheidung ist die Voraussetzung dafür, die fünf Wellen nicht als rhetorisches Bild, sondern als Prozess der Zustandsveränderung zu lesen.</p>
 <p>Ein Produkt wirkt nicht, weil es ein Nachhaltigkeitsversprechen trägt. Es wirkt durch Rohstoffe, Arbeit, Transport, Nutzung, Entsorgung, Preise, Nachfrage und Marktverschiebung. Eine politische Maßnahme wirkt nicht, weil sie gut gemeint ist. Sie wirkt durch Institutionen, Budgets, Verhalten, Vertrauen, Nebenfolgen und langfristige Anreize. Eine Aussage wirkt nicht, weil sie laut ist. Sie wirkt, wenn sie Aufmerksamkeit, Deutung, Zugehörigkeit, Vertrauen, Handlungsschwellen oder Entscheidungsstrukturen verändert.</p>
@@ -98,7 +98,7 @@
 <p>Deshalb kann dieselbe Maßnahme in verschiedenen Wirkungsräumen sehr unterschiedliche Wellen auslösen. Ein CO2-Preis kann in einem Raum als gerechte Korrektur falscher Preise wirken, in einem anderen als Belastungserfahrung und politischer Vertrauensbruch. Eine Debattenkarte kann in einem Milieu Orientierung schaffen, in einem anderen Abwehr erzeugen. Ein Produktlabel kann Konsumentscheidungen verändern oder ignoriert werden, wenn Preis, Verfügbarkeit und Vertrauen fehlen.</p>
 <p>Nichttrivialität bedeutet nicht Beliebigkeit. Sie bedeutet, dass Wirkungsanalyse die Bedingungen der Reaktion mitdenken muss. Genau dafür braucht es die Tiefe.</p>
 <p>Quellenbezug: [I5], [I14], [E11], [E12]</p>
-<h2>Teil II – Externe Bezugslinien</h2>
+<h2>Teil II - Externe Bezugslinien</h2>
 <h3>2.1 Kommunikationsmodelle: vom Sender-Empfänger-Bild zur Wirkungslogik</h3>
 <p>Klassische Kommunikationsmodelle haben Kommunikation zunächst stark als Übertragung verstanden. Shannon beschreibt Information mathematisch als Signalübertragung mit Störung und Kanal. Lasswells berühmte Formel fragt, wer was über welchen Kanal zu wem mit welcher Wirkung sagt. Diese Modelle sind historisch wichtig, aber für die Wirkungsökonomie zu schmal, wenn sie allein als lineare Übertragung gelesen werden.</p>
 <p>Die Wellenlogik verschiebt den Blick. Kommunikation ist nicht nur Sendung und Empfang. Sie tritt in einen Wirkungsraum ein, wird sichtbar oder ignoriert, erzeugt emotionale oder praktische Betroffenheit, wird gerahmt, findet Resonanz und kann schließlich politische oder soziale Strukturen verändern.</p>
@@ -169,7 +169,7 @@
 <p>In der Wirkungsökonomie werden solche Daten nicht als Selbstzweck verstanden. Sie sollen in Bewertung, Rückkopplung und Lenkung übergehen. Eine Emission, die im Bericht steht, aber keinen Preis, keine Beschaffung, kein Kapitalrisiko und keine Strategie verändert, bleibt Sichtbarkeit ohne ausreichende Strukturwelle.</p>
 <p>Das Wellenmodell hilft, den Übergang zu prüfen: Ist eine Wirkung nur dokumentiert? Hat sie Betroffenheit ausgelöst? Wurde sie bewertet? Haben Akteure reagiert? Hat sich die Struktur verändert?</p>
 <p>Quellenbezug: [E15], [E16], [E17], [E18], [I7]</p>
-<h2>Teil III – Die fünf allgemeinen Wellen</h2>
+<h2>Teil III - Die fünf allgemeinen Wellen</h2>
 <h3>3.1 Die Sichtbarkeitswelle</h3>
 <p>Die Sichtbarkeitswelle ist der Moment, in dem ein bisher unsichtbarer oder nicht handlungsrelevanter Zustand in den Wahrnehmungs-, Daten- oder Entscheidungsraum eintritt. Sichtbarkeit kann durch Medien entstehen, aber auch durch Messung, Audit, Produktpass, Gerichtsurteil, Rechnung, Risikoanalyse, Preisänderung, wissenschaftliche Studie oder Alltagserfahrung.</p>
 <p>Wirkungsökonomisch ist Sichtbarkeit ambivalent. Sie kann Wirklichkeit näher an Entscheidungen bringen. Sie kann aber auch verzerren, wenn nur das Sichtbare zählt und langsame, leise oder schwer messbare Wirkungen verdrängt werden. Gerade deshalb reicht Sichtbarkeit allein nicht aus. Sie ist die erste Welle, nicht das Ziel.</p>
@@ -195,7 +195,7 @@
 <p>Rückkopplung bedeutet, dass die Bewertung nicht im Bericht stehen bleibt. Sie wirkt in Entscheidungen zurück. Wenn negative Wirkung teurer wird, verliert sie ihren versteckten Vorteil. Wenn positive Wirkung leichter finanzierbar wird, verändert sich Innovation. Wenn demokratische Desinformation als Risiko behandelt wird, verändert sich Plattformverantwortung.</p>
 <p>Diese Welle ist die eigentliche Transformationsebene. Sie ist aber nicht endgültig. Rückkopplung muss wiederum geprüft werden. Wenn eine Lenkung Nebenwirkungen erzeugt, muss das System lernen.</p>
 <p>Quellenbezug: [I1], [I2], [I10]</p>
-<h2>Teil III – Prüffragen zu den Wellen</h2>
+<h2>Teil III - Prüffragen zu den Wellen</h2>
 <h3>3.x Prüffragen der Sichtbarkeit-Welle</h3>
 <p>Die Leitfrage dieser Welle lautet: Was muss sichtbar werden, damit Wirkung bearbeitbar wird? Diese Frage ist bewusst einfach formuliert, weil das Modell praktisch nutzbar bleiben muss. Es soll nicht nur in wissenschaftlichen Texten funktionieren, sondern in Redaktionen, Verwaltungen, Unternehmen, Bildungsformaten, Strategieworkshops und politischen Debatten.</p>
 <p>Der typische Fehler lautet: Sichtbarkeit kann durch Reichweite ersetzt werden; dann zählt, was laut ist, nicht was relevant ist. Dieser Fehler ist nicht randständig. Er ist häufig der Grund, warum gut gemeinte Interventionen geringe Wirkung entfalten oder warum destruktive Dynamiken stärker werden, obwohl ihre Faktenlage schwach ist.</p>
@@ -221,7 +221,7 @@
 <p>Der typische Fehler lautet: Rückkopplung kann Fehlanreize, Bürokratie oder Ausweichverhalten erzeugen. Dieser Fehler ist nicht randständig. Er ist häufig der Grund, warum gut gemeinte Interventionen geringe Wirkung entfalten oder warum destruktive Dynamiken stärker werden, obwohl ihre Faktenlage schwach ist.</p>
 <p>Der Qualitätsmaßstab lautet: Gute Rückkopplung macht Wirkung entscheidungsrelevant und bleibt korrigierbar. Damit bleibt die Welle wirkungsökonomisch und kippt nicht in bloße Kommunikation, bloße Kennzahlen oder bloße Moral.</p>
 <p>Quellenbezug: [I1], [I5], [E11]</p>
-<h2>Teil IV – Übertragung auf Wirkungsräume</h2>
+<h2>Teil IV - Übertragung auf Wirkungsräume</h2>
 <h3>4.1 Produkte und Preise</h3>
 <p>Der Produktbereich zeigt, dass die Wellen-Tiefen-Logik nicht auf Kommunikation beschränkt ist. Der Auslöser ist hier nicht zwingend eine Aussage, sondern ein Produkt, eine Scorecard, ein Preissignal oder ein digitaler Produktpass. Entscheidend ist, wie dieser Auslöser im jeweiligen Wirkungsraum verarbeitet wird.</p>
 <p>Erste Welle: Die Wirkung eines Produkts wird sichtbar: Emissionen, Wasser, Arbeit, Gesundheit, Lieferkette. Zweite Welle: Konsument:innen, Händler und Hersteller spüren Betroffenheit über Preis, Risiko, Nachfrage oder Reputation. Dritte Welle: Scorecards, SDG-Bezüge und Reverse Merit Order bewerten die Wirkung. Vierte Welle: Sortimente, Nachfrage, Einkauf und Produktentwicklung passen sich an. Fünfte Welle: Preise, Steuerklassen und Marktstandards verändern die Wettbewerbslogik.</p>
@@ -282,7 +282,7 @@
 <p>Erste Welle: Verwundbarkeiten werden sichtbar. Zweite Welle: Akteure spüren Betroffenheit durch Angst, Kosten, Ausfall, Knappheit oder Vertrauensbruch. Dritte Welle: Bewertet wird über Risiko, Prävention, Versorgung, Sicherheit, Freiheit und Solidarität. Vierte Welle: Staat, Wirtschaft, Zivilgesellschaft und Medien reagieren. Fünfte Welle: Resilienz entsteht, wenn Lehren in Infrastruktur, Regeln und Frühwarnsysteme zurückgeführt werden.</p>
 <p>Die Tiefe liegt in diesem Feld vor allem in Vorsorge, Redundanz, Daten, Institutionen, Vertrauen, soziale Ungleichheit und Zeitdruck. Ohne diese Tiefe wäre die Analyse oberflächlich: Man sähe nur eine Reaktion, aber nicht die Bedingungen, die diese Reaktion wahrscheinlich, unwahrscheinlich oder verzerrt machen.</p>
 <p>Quellenbezug: [I13], [I18], [E7], [E11]</p>
-<h2>Teil V – Kommunikationsfassung</h2>
+<h2>Teil V - Kommunikationsfassung</h2>
 <h3>5.1 Warum öffentliche Kommunikation der sichtbarste Sonderfall ist</h3>
 <p>Öffentliche Kommunikation zeigt die Wellen besonders deutlich, weil sie nicht erst über materielle Objekte oder institutionelle Verfahren vermittelt werden muss. Eine Aussage kann sofort Aufmerksamkeit erzeugen, Gefühle aktivieren, Deutungen anbieten, Resonanz finden und politische Möglichkeitsräume verschieben. Gerade deshalb war die Kommunikationsfassung der erste naheliegende Ausdruck des Modells.</p>
 <p>Dennoch wäre es zu eng, das Modell auf Kommunikation zu beschränken. Öffentliche Kommunikation ist ein Wirkungsraum unter anderen, allerdings ein besonders empfindlicher. In ihm entscheidet sich, welche Wirkungen anderer Räume überhaupt verstanden, bestritten, legitimiert oder verdrängt werden.</p>
@@ -313,7 +313,7 @@
 <p>Hier wird aus Kommunikationsanalyse Wirkungsökonomie. Eine Aussage ist nicht nur falsch oder richtig, klug oder dumm, freundlich oder aggressiv. Sie kann die Bedingungen künftiger Debatten verändern. Sie kann Normen normalisieren oder delegitimieren. Sie kann Vertrauen reparieren oder beschädigen.</p>
 <p>Die Verschiebungswelle entspricht der Struktur- und Rückkopplungswelle der allgemeinen Fassung. Sie zeigt, wann Kommunikation in gesellschaftliche Architektur übergeht.</p>
 <p>Quellenbezug: [I12], [I2], [E13]</p>
-<h2>Teil VI – Methodik</h2>
+<h2>Teil VI - Methodik</h2>
 <h3>6.1 Das Analyseverfahren in acht Schritten</h3>
 <p>Das Wellen-Tiefen-Modell kann praktisch in acht Schritten angewendet werden. Erstens wird der Auslöser bestimmt. Zweitens wird der Wirkungsraum abgegrenzt. Drittens wird die Sichtbarkeitswelle beschrieben. Viertens wird Betroffenheit analysiert. Fünftens wird die Bewertungslogik offengelegt. Sechstens wird Resonanz oder Anpassung geprüft. Siebtens werden Struktur- und Rückkopplungseffekte beschrieben. Achtens wird die Tiefe rekonstruiert.</p>
 <p>Diese Reihenfolge ist kein starres Verfahren. In der Praxis kann man mit der Welle beginnen, die gerade am sichtbarsten ist. In einer Debatte ist das oft Aufmerksamkeit oder Emotion. In einem Produktfall ist es häufig Sichtbarkeit oder Bewertung. In Kapitalmärkten beginnt es häufig mit Risiko. Entscheidend ist, dass keine Welle dauerhaft übersprungen wird.</p>
@@ -334,7 +334,7 @@
 <p>Die Quellenarbeit hat zwei Funktionen. Erstens schützt sie vor Überclaiming. Das Modell behauptet nicht, alle Bausteine neu erfunden zu haben. Zweitens zeigt sie die Eigenständigkeit: Die WÖk verbindet diese Bausteine zu einer Steuerungs- und Praxisarchitektur, nicht nur zu einer Beschreibung von Kommunikation oder Nachhaltigkeit.</p>
 <p>Für Website, Dossier und Akademie sollte die Quellenlage sichtbar, aber nicht dominant sein. Der Nutzen bleibt vorne; Herleitung und Quellen stützen die Tiefe.</p>
 <p>Quellenbezug: [I1], [I2], [E3], [E4], [E11], [E18]</p>
-<h2>Teil VII – Grenzen und Missverständnisse</h2>
+<h2>Teil VII - Grenzen und Missverständnisse</h2>
 <h3>7.1 Nicht alles ist eine Welle</h3>
 <p>Das Modell darf nicht inflationär verwendet werden. Nicht jede kleine Handlung braucht eine vollständige Wellenanalyse. Nicht jeder Messwert erzeugt gesellschaftliche Resonanz. Nicht jedes Produkt verschiebt Märkte. Nicht jede Aussage verändert Öffentlichkeit. Das Modell ist dort sinnvoll, wo ein Auslöser in einen relevanten Wirkungsraum eintritt und Anschlussreaktionen wahrscheinlich oder wichtig sind.</p>
 <p>Die Grenze schützt die Qualität. Ein Modell, das alles erklärt, erklärt am Ende nichts. Die Wellen-Tiefen-Logik sollte für Debatten, politische Maßnahmen, Produkte mit relevanter Wirkung, Kapital- oder Risikofragen, institutionelle Reformen, Plattformdynamiken, öffentliche Konflikte und Systemhebel eingesetzt werden.</p>
@@ -360,7 +360,7 @@
 <p>Die Kommunikationsforschung bietet Methoden für Aufmerksamkeit, Framing, Plattformdynamik und öffentliche Meinung. Die Nachhaltigkeitsforschung bietet Indikatoren, Standards und Interdependenzanalysen. Die Systemtheorie bietet Rückkopplung und Hebelpunkte. Die Wirkungsökonomie kann diese Linien in einer anwendungsorientierten Architektur verbinden.</p>
 <p>Das Ziel wäre kein theoretischer Alleinvertretungsanspruch, sondern eine überprüfbare, lernfähige Wirkungswissenschaft für konkrete Entscheidungsräume.</p>
 <p>Quellenbezug: [E3], [E4], [E7], [E8], [E10], [E11], [I2]</p>
-<h2>Teil VIII – Schluss</h2>
+<h2>Teil VIII - Schluss</h2>
 <h3>8.1 Ergebnis der Herleitung</h3>
 <p>Die Herleitung ergibt ein klares Bild: Die fünf Wellen öffentlicher Wirkung sind die Kommunikationsfassung eines allgemeineren wirkungsökonomischen Musters. Dieses Muster beschreibt, wie Wirkung in komplexen Systemen sichtbar wird, Betroffenheit erzeugt, bewertet wird, Resonanz oder Anpassung findet und schließlich als Struktur- und Rückkopplungswelle in künftige Entscheidungen zurückkehrt.</p>
 <p>Das Modell ist nicht neu, weil niemand vor ihm über Medienwirkung, Framing, Diffusion, Risiko oder Rückkopplung gesprochen hätte. Es ist neuartig in der Verbindung dieser Linien zu einer wirkungsökonomischen Praxisarchitektur. Es ist anschlussfähig an Forschung und zugleich nutzbar für Website, Akademie, Debattenkarten, Produktbewertung, politische Folgenabschätzung, Kapitalanalyse und institutionelle Strategie.</p>
@@ -376,7 +376,7 @@
 <p>Viertens: Jede Wellenanalyse braucht den normativen Bezug auf Mensch, Planet und Demokratie. Fünftens: Wellen sind nicht automatisch gut. Sie können positive Netto-Wirkung ermöglichen oder negative Wirkung verstärken. Sechstens: Die fünfte Welle ist der Prüfstein. Erst wenn Strukturen, Anreize, Routinen oder Rückkopplungen sich ändern, beginnt wirkliche Systemveränderung.</p>
 <p>Siebtens: Das Modell soll nicht nach KI-Schema wirken, sondern redaktionell, präzise, quellenbewusst und praktisch. Es soll Nutzer:innen Orientierung geben, ohne ihnen eine fertige Meinung aufzuzwingen.</p>
 <p>Quellenbezug: [I1], [I4], [I12]</p>
-<h2>Teil IV – Übertragung auf Wirkungsräume</h2>
+<h2>Teil IV - Übertragung auf Wirkungsräume</h2>
 <h3>4.13 Energie und Infrastruktur</h3>
 <p>Energieinfrastruktur zeigt, dass die Wellen-Tiefen-Logik nicht auf Kommunikation beschränkt ist. Der Auslöser ist hier nicht zwingend eine Aussage, sondern ein Strommix, ein Netzausbau, eine Preisregel, eine Speicherentscheidung oder ein Ausfallrisiko. Entscheidend ist, wie dieser Auslöser im jeweiligen Wirkungsraum verarbeitet wird.</p>
 <p>Erste Welle: Die ökologische und soziale Wirkung der Energieversorgung wird sichtbar. Zweite Welle: Haushalte, Industrie, Kommunen und Staat spüren Kosten, Versorgungssicherheit und Abhängigkeit. Dritte Welle: Bewertet wird über Emissionen, Resilienz, Bezahlbarkeit, Netzstabilität und Zukunftsfähigkeit. Vierte Welle: Investitionen, Tarifmodelle, Genehmigungen und Technologien passen sich an. Fünfte Welle: Das Energiesystem verschiebt sich von fossiler Pfadabhängigkeit zu regenerativer Versorgung, wenn Rückkopplung greift.</p>
@@ -427,7 +427,7 @@
 <p>Erste Welle: Destabilisierende Wirkungen auf Vertrauen, Wahrheit und Kohäsion werden sichtbar. Zweite Welle: Bürger:innen, Institutionen, Medien, Sicherheitsbehörden und Minderheiten werden betroffen. Dritte Welle: Bewertet wird über Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, Vertrauen und Schutz vulnerabler Gruppen. Vierte Welle: Zivilgesellschaft, Staat, Plattformen und Journalismus reagieren. Fünfte Welle: Demokratische Resilienz entsteht, wenn Angriffe nicht nur widerlegt, sondern als Rückkopplungsangriffe verstanden werden.</p>
 <p>Die Tiefe liegt in diesem Feld vor allem in Vertrauenslage, Bildung, Plattformlogik, geopolitische Interessen, soziale Unsicherheit und institutionelle Glaubwürdigkeit. Ohne diese Tiefe wäre die Analyse oberflächlich: Man sähe nur eine Reaktion, aber nicht die Bedingungen, die diese Reaktion wahrscheinlich, unwahrscheinlich oder verzerrt machen.</p>
 <p>Quellenbezug: [I2], [I4], [I12], [E7], [E13]</p>
-<h2>Teil VI – Methodik</h2>
+<h2>Teil VI - Methodik</h2>
 <h3>6.5 Verhältnis zu Scorecards</h3>
 <p>Das Wellenmodell ersetzt keine Scorecard. Eine Scorecard bewertet definierte Indikatoren, Benchmarks, Datenqualitäten und Mindestbedingungen. Das Wellenmodell erklärt, wie eine solche Bewertung in einem Wirkungsraum sichtbar wird, Betroffenheit auslöst, Anschluss findet und in Strukturveränderung übergeht. Beide Instrumente gehören zusammen, aber sie arbeiten auf unterschiedlichen Ebenen.</p>
 <p>Ohne Scorecards kann das Wellenmodell zu narrativ bleiben. Ohne Wellenlogik können Scorecards folgenlos bleiben, weil sie nicht zeigen, wie Daten in Wahrnehmung, Entscheidung, Anpassung und Rückkopplung übersetzt werden.</p>
@@ -458,7 +458,7 @@
 <p>Das verhindert Nutzerverwirrung. Wer eine Debattenkarte sucht, braucht keine Abhandlung über Kapitalmärkte. Wer das Modell theoretisch verstehen will, braucht die allgemeine Herleitung. Die Informationsarchitektur sollte diese Wege unterscheiden.</p>
 <p>Empfehlung: Öffentlicher Wirkungsraum = Praxis und Kommunikationsfassung. Dossier Wirkungsentfaltung = allgemeine Theorie. Akademie = Brücke zwischen beiden. Glossar = begriffliche Sicherung.</p>
 <p>Quellenbezug: [I1], [I12]</p>
-<h2>Teil VII – Grenzen und Missverständnisse</h2>
+<h2>Teil VII - Grenzen und Missverständnisse</h2>
 <h3>7.6 Gefahr der Überästhetisierung</h3>
 <p>Das Bild der Wellen ist anschaulich, aber es darf nicht poetisch an die Stelle der Analyse treten. Metaphern helfen beim Einstieg; sie ersetzen keine Wirkungspfadprüfung. Eine Welle klingt organisch und elegant. Tatsächlich können Wirkungsprozesse abrupt, gebrochen, verzögert, asymmetrisch, manipuliert oder widersprüchlich sein.</p>
 <p>Deshalb sollte das Modell immer mit Tiefe, Quellen und Prüffragen verbunden werden. Die Metapher öffnet den Zugang. Die Analyse trägt die Substanz.</p>
@@ -484,7 +484,7 @@
 <p>Eine schwache Wellenanalyse erkennt man daran, dass sie lediglich fünf Überschriften füllt. Dann wird aus dem Modell eine Checkliste. Eine starke Wellenanalyse zeigt Zusammenhang, Spannung, Unsicherheit und Entscheidungspunkt.</p>
 <p>Das Qualitätsziel lautet: Nach der Analyse soll klarer sein, welche Wirkung wahrscheinlich wird, warum sie wahrscheinlich wird, was offen bleibt und welche Rückkopplung verantwortbar wäre.</p>
 <p>Quellenbezug: [I1], [I10], [I12]</p>
-<h2>Teil VIII – Schluss</h2>
+<h2>Teil VIII - Schluss</h2>
 <h3>8.4 Forschungsfragen für Pilotprojekte</h3>
 <p>Für Pilotprojekte bieten sich mehrere Fragen an. Welche Debattenkarten erzeugen bei Nutzer:innen tatsächlich bessere Antwortfähigkeit? Welche Produktinformationen verändern Kaufentscheidungen nur oberflächlich, und welche verändern Sortiments- oder Beschaffungsentscheidungen? Welche Risikodaten verändern Kapitalflüsse? Welche Wirkungsberichte verändern Verwaltungsroutinen? Welche Narrative stärken demokratische Resilienz statt nur Empörung?</p>
 <p>Diese Fragen könnten qualitativ und quantitativ untersucht werden. Möglich wären Vorher-Nachher-Analysen, Resonanzanalysen, Nutzertests, Entscheidungsprotokolle, Netzwerkdaten, Fallstudien, Diskursanalysen und Wirkungsrad-Workshops.</p>
@@ -495,40 +495,40 @@
 <p>Für die Website sollte der öffentliche Wirkungsraum praktisch bleiben. Die Theorie muss kurz und orientierend eingeführt werden, aber der unmittelbare Nutzen steht oben: Was ist die Behauptung? Wie antworte ich? Was passiert im Diskurs? Welche Narrative wirken? Welche Tiefe liegt darunter?</p>
 <p>Das Dossier kann im Hintergrund die methodische Grundlage liefern. Es muss nicht jeder Nutzerin sofort alles erklären. Aber es gibt dem Projekt eine stabile Architektur.</p>
 <p>Quellenbezug: [I12], [I1]</p>
-<h2>Anhang A – Mastertemplate für Wirkungsräume</h2>
+<h2>Anhang A - Mastertemplate für Wirkungsräume</h2>
 <p>Dieses Template kann für Debattenkarten, Produktfälle, politische Maßnahmen, Kapitalentscheidungen, Verwaltungsprogramme, Forschungsvorhaben oder institutionelle Strategien genutzt werden. Es ist bewusst feldübergreifend formuliert und kann je nach Wirkungsraum übersetzt werden.</p>
 <div class="table-scroll"><table class="data-table"><thead><tr><th>Feld</th><th>Leitfrage</th><th>Hinweis</th></tr></thead><tbody><tr><td>Wirkungsraum</td><td>In welchem Raum entfaltet der Auslöser Folgen?</td><td>Produkt, Markt, Kapital, Öffentlichkeit, Verwaltung, Gesundheit, Bildung, Demokratie usw.</td></tr><tr><td>Auslöser</td><td>Welche Handlung, welches Unterlassen, welches Produkt, Narrativ, Gesetz oder Signal startet den Prozess?</td><td>Konkreter Anlass, nicht abstraktes Thema.</td></tr><tr><td>Sichtbarkeit</td><td>Was wird sichtbar oder entscheidungsrelevant?</td><td>Daten, Ereignis, Preis, Medienbild, Bericht, Urteil, Risiko.</td></tr><tr><td>Betroffenheit</td><td>Wer spürt Relevanz, Kosten, Risiko, Emotion oder Legitimitätsdruck?</td><td>Betroffene, Akteure, Institutionen, zukünftige Gruppen.</td></tr><tr><td>Bewertung</td><td>Nach welchem Maßstab wird eingeordnet?</td><td>SDG/SDG+, Mensch-Planet-Demokratie, Scorecard, Recht, Risiko, Frame.</td></tr><tr><td>Resonanz/Anpassung</td><td>Wer reagiert und wie?</td><td>Verstärkung, Widerspruch, Umstellung, Ausweichbewegung, Kopie.</td></tr><tr><td>Struktur/Rückkopplung</td><td>Was verändert künftige Entscheidungen?</td><td>Preise, Steuern, Regeln, Standards, Kapital, Routinen, Vertrauen.</td></tr><tr><td>Tiefe</td><td>Welche Ursachen, Anreize und Machtstrukturen liegen darunter?</td><td>Nicht bei Oberflächenreaktion stehen bleiben.</td></tr><tr><td>Risiko/Chance</td><td>Welche negativen oder positiven Wirkpfade werden wahrscheinlicher?</td><td>Wahrscheinlichkeit, Zeithorizont, Nebenfolgen.</td></tr><tr><td>Nächste Handlung</td><td>Welche Rückkopplung wäre wirkungsorientiert?</td><td>Nicht nur Diagnose, sondern bessere Entscheidung.</td></tr></tbody></table></div>
 <p>Quellenbezug: [I1], [I2], [I10], [I12].</p>
-<h2>Anhang B – Interne Quellen</h2>
+<h2>Anhang B - Interne Quellen</h2>
 <p>[I1] Weber, Natalie: Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, 21. Mai 2026. Maßgeblich für Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkungsraum, Resonanzraum, Netto-Wirkung, Wirkungslenkung und Wirkungsarchitektur.</p>
 <p>[I2] Weber, Natalie: Die neue Ordnung des Wohlstands. Begründung und Grundlagen der Wirkungsökonomie, Fassung 2026. Bezug vor allem auf Wirkung, Wirkungspotenzial, Wirkungsordnungen, Wirkungsrad, Wirkunglenkung, Medien, Öffentlichkeit und Rückkopplung.</p>
 <p>[I3] Weber, Natalie: Grundlagenpapier Wirkungsökonomie WÖk, 2025. Grundlegung von Wirkung als Steuerungsmaßstab, Paradigmenwechsel, Kommunikation und gesellschaftlicher Verankerung.</p>
-<p>[I4] Weber, Natalie: Systemmodell der Wirkungsökonomie. Die systemische Ordnungskarte Mensch–Planet–Demokratie, 2025. Bezug auf Staat, Wirtschaft, Kapital, Gesellschaft, Öffentlichkeit, Gesundheit, Kultur, Wissen und Digitalisierung.</p>
+<p>[I4] Weber, Natalie: Systemmodell der Wirkungsökonomie. Die systemische Ordnungskarte Mensch-Planet-Demokratie, 2025. Bezug auf Staat, Wirtschaft, Kapital, Gesellschaft, Öffentlichkeit, Gesundheit, Kultur, Wissen und Digitalisierung.</p>
 <p>[I5] Weber, Natalie: Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur, 2025/2026. Bezug auf Interdependenz, Nichtlinearität, Rückkopplung und interdependente Netto-Wirkung.</p>
 <p>[I6] Weber, Natalie: Working-Paper Wirkungssteuergesetz (WStG), Oktober 2025. Bezug auf Wirkung als steuerliche Bemessungs- und Lenkungslogik.</p>
 <p>[I7] Weber, Natalie: Technische Leitlinien zum Wirkungssteuergesetz (WUStG), Extended v2, August 2025. Bezug auf WÖk-IDs, Scorecards, Benchmarks und Archetypen.</p>
 <p>[I8] Weber, Natalie: Produktbesteuerung durch Wirkung, 2025. Bezug auf Produktwirkung, Preise, Datenflüsse und digitale Produktpässe.</p>
 <p>[I9] Weber, Natalie: Beispiel automatisierte Einstufung der Wirkungssteuer: Regionaler Apfel vs. Chile-Apfel, 2025. Bezug auf NACE, SDG-Zuordnung, Scorecard und Reverse Merit Order.</p>
-<p>[I10] Weber, Natalie: T-SROI – Der neue Standard für Impact-Controlling in der Wirkungsökonomie, 2025. Bezug auf Netto-Wirkung, Transformation und systemische Hebelwirkung.</p>
-<p>[I11] Weber, Natalie: Wirkungsrat – Institutionelle Verankerung der Wirkungsökonomie, 2025. Bezug auf Evaluation, Unabhängigkeit, Transparenz und Missbrauchsschutz.</p>
+<p>[I10] Weber, Natalie: T-SROI - Der neue Standard für Impact-Controlling in der Wirkungsökonomie, 2025. Bezug auf Netto-Wirkung, Transformation und systemische Hebelwirkung.</p>
+<p>[I11] Weber, Natalie: Wirkungsrat - Institutionelle Verankerung der Wirkungsökonomie, 2025. Bezug auf Evaluation, Unabhängigkeit, Transparenz und Missbrauchsschutz.</p>
 <p>[I12] Weber, Natalie: Die fünf Wellen öffentlicher Wirkung. Das wirkungsökonomische Modell öffentlicher Kommunikation und Debattenführung, Arbeitsfassung 2026.</p>
 <p>[I13] Weber, Natalie: Wenn Maschinen arbeiten. Warum wir ein neues System brauchen, 2025/2026. Bezug auf Wirkungseinkommen, Technologie, Automatisierung und gesellschaftliche Stabilität.</p>
 <p>[I14] Weber, Natalie: Wirkungsökonomie in der Lieferkette, 2025. Bezug auf Scorecards, Vorsteuerlogik, Lieferkettenwirkung und globale Anschlussfähigkeit.</p>
 <p>[I15] Weber, Natalie: Leitbild für Mensch, Planet und Demokratie, 2025. Bezug auf normative Trias und alltagsnahe Vermittlung.</p>
 <p>[I16] Weber, Natalie: Working-Paper Wohnungsmarkt. Bezahlbar, nachhaltig, gerecht, 2025. Bezug auf Wohnen als Wirkungsraum.</p>
-<p>[I17] Weber, Natalie: IllusionMaschine – Bürokratieabbau, 2025. Bezug auf nichttriviale Systeme, falsche Preise und Wirkungssteuerung.</p>
+<p>[I17] Weber, Natalie: IllusionMaschine - Bürokratieabbau, 2025. Bezug auf nichttriviale Systeme, falsche Preise und Wirkungssteuerung.</p>
 <p>[I18] Weber, Natalie: WÖK-Partei / Grundsatzprogramm, 2025. Bezug auf SDG+, Medien, Demokratie, Bürgerbeteiligung und systemische Steuerung.</p>
-<h2>Anhang C – Externe Quellen und Anschlussliteratur</h2>
-<p>[E1] Shannon, Claude E. (1948): A Mathematical Theory of Communication. Bell System Technical Journal, 27(3), 379–423; 27(4), 623–656. DOI: 10.1002/j.1538-7305.1948.tb01338.x und 10.1002/j.1538-7305.1948.tb00917.x.</p>
+<h2>Anhang C - Externe Quellen und Anschlussliteratur</h2>
+<p>[E1] Shannon, C. E. (1948): A Mathematical Theory of Communication. Bell System Technical Journal, 27(3), 379-423; 27(4), 623-656. DOI: 10.1002/j.1538-7305.1948.tb01338.x und 10.1002/j.1538-7305.1948.tb00917.x.</p>
 <p>[E2] Lasswell, Harold D. (1948): The Structure and Function of Communication in Society. In: Bryson (Hg.), The Communication of Ideas. Bezug: klassische Formel Who says what in which channel to whom with what effect.</p>
-<p>[E3] McCombs, Maxwell E.; Shaw, Donald L. (1972): The Agenda-Setting Function of Mass Media. Public Opinion Quarterly, 36(2), 176–187. DOI: 10.1086/267990.</p>
-<p>[E4] Entman, Robert M. (1993): Framing: Toward Clarification of a Fractured Paradigm. Journal of Communication, 43(4), 51–58. DOI: 10.1111/j.1460-2466.1993.tb01304.x.</p>
-<p>[E5] Noelle-Neumann, Elisabeth (1974): The Spiral of Silence: A Theory of Public Opinion. Journal of Communication, 24(2), 43–51. DOI: 10.1111/j.1460-2466.1974.tb00367.x.</p>
-<p>[E6] Downs, Anthony (1972): Up and Down with Ecology: The Issue-Attention Cycle. The Public Interest, 28, 38–50.</p>
-<p>[E7] Kasperson, Roger E. et al. (1988): The Social Amplification of Risk: A Conceptual Framework. Risk Analysis, 8(2), 177–187. DOI: 10.1111/j.1539-6924.1988.tb01168.x.</p>
-<p>[E8] Granovetter, Mark (1978): Threshold Models of Collective Behavior. American Journal of Sociology, 83(6), 1420–1443. DOI: 10.1086/226707.</p>
+<p>[E3] McCombs, Maxwell E.; Shaw, Donald L. (1972): The Agenda-Setting Function of Mass Media. Public Opinion Quarterly, 36(2), 176-187. DOI: 10.1086/267990.</p>
+<p>[E4] Entman, Robert M. (1993): Framing: Toward Clarification of a Fractured Paradigm. Journal of Communication, 43(4), 51-58. DOI: 10.1111/j.1460-2466.1993.tb01304.x.</p>
+<p>[E5] Noelle-Neumann, Elisabeth (1974): The Spiral of Silence: A Theory of Public Opinion. Journal of Communication, 24(2), 43-51. DOI: 10.1111/j.1460-2466.1974.tb00367.x.</p>
+<p>[E6] Downs, Anthony (1972): Up and Down with Ecology: The Issue-Attention Cycle. The Public Interest, 28, 38-50.</p>
+<p>[E7] Kasperson, Roger E. et al. (1988): The Social Amplification of Risk: A Conceptual Framework. Risk Analysis, 8(2), 177-187. DOI: 10.1111/j.1539-6924.1988.tb01168.x.</p>
+<p>[E8] Granovetter, Mark (1978): Threshold Models of Collective Behavior. American Journal of Sociology, 83(6), 1420-1443. DOI: 10.1086/226707.</p>
 <p>[E9] Rogers, Everett M. (2003): Diffusion of Innovations. 5. Auflage. New York: Free Press.</p>
-<p>[E10] Centola, Damon; Macy, Michael (2007): Complex Contagions and the Weakness of Long Ties. American Journal of Sociology, 113(3), 702–734. DOI: 10.1086/521848.</p>
+<p>[E10] Centola, Damon; Macy, Michael (2007): Complex Contagions and the Weakness of Long Ties. American Journal of Sociology, 113(3), 702-734. DOI: 10.1086/521848.</p>
 <p>[E11] Meadows, Donella H. (1999): Leverage Points: Places to Intervene in a System. Sustainability Institute / Academy for Systems Change.</p>
 <p>[E12] Maturana, Humberto R.; Varela, Francisco J. (1980): Autopoiesis and Cognition: The Realization of the Living. Boston Studies in the Philosophy and History of Science, Vol. 42. Springer.</p>
 <p>[E13] Habermas, Jürgen (1962/1991): The Structural Transformation of the Public Sphere. MIT Press, englische Ausgabe 1991.</p>
@@ -539,12 +539,12 @@
 <p>[E18] United Nations: Sustainable Development Goals / Agenda 2030. Offizieller Zielrahmen der 17 SDGs.</p>
 <p>[E19] European Commission: EU Taxonomy for Sustainable Activities. Klassifikationssystem für nachhaltige wirtschaftliche Aktivitäten.</p>
 <p>[E20] European Union / Council of the EU: Ecodesign for Sustainable Products Regulation (ESPR) und Digital Product Passport als Transparenzinfrastruktur.</p>
-<p>[E21] Kahneman, Daniel; Tversky, Amos (1979): Prospect Theory: An Analysis of Decision under Risk. Econometrica, 47(2), 263–291.</p>
-<p>[E22] Slovic, Paul (1987): Perception of Risk. Science, 236(4799), 280–285.</p>
-<p>[E23] Sunstein, Cass R.; Kuran, Timur (1999): Availability Cascades and Risk Regulation. Stanford Law Review, 51(4), 683–768.</p>
+<p>[E21] Kahneman, Daniel; Tversky, Amos (1979): Prospect Theory: An Analysis of Decision under Risk. Econometrica, 47(2), 263-291.</p>
+<p>[E22] Slovic, Paul (1987): Perception of Risk. Science, 236(4799), 280-285.</p>
+<p>[E23] Sunstein, Cass R.; Kuran, Timur (1999): Availability Cascades and Risk Regulation. Stanford Law Review, 51(4), 683-768.</p>
 <p>[E24] Sterman, John D. (2000): Business Dynamics: Systems Thinking and Modeling for a Complex World. McGraw-Hill.</p>
 <p>[E25] Beer, Stafford (1972/1981): Brain of the Firm. Bezug: Kybernetik, Viable System Model und Rückkopplungslogik in Organisationen.</p>
-<h2>Anhang D – Kurzglossar</h2>
+<h2>Anhang D - Kurzglossar</h2>
 <div class="table-scroll"><table class="data-table"><thead><tr><th>Begriff</th><th>Definition</th></tr></thead><tbody><tr><td>Wirkung</td><td>Tatsächliche Veränderung von Zuständen; positiv, negativ oder neutral; relational und bezugspunktabhängig.</td></tr><tr><td>Wirkungspotenzial</td><td>Möglichkeitsraum vor eingetretener Wirkung; Veränderung von Wahrscheinlichkeiten, Anschlussfähigkeit oder Handlungsschwellen.</td></tr><tr><td>Wirkungsrisiko</td><td>Möglichkeit negativer Zustandsveränderung, Folgekosten, Verwundbarkeit oder Systemschaden.</td></tr><tr><td>Wirkungsraum</td><td>Bereich, in dem eine Handlung, Entscheidung, ein Produkt, Kapitalfluss oder Kommunikationsereignis Folgen entfaltet.</td></tr><tr><td>Sichtbarkeitswelle</td><td>Erste allgemeine Welle: Wirkung wird sichtbar, messbar, erfahrbar oder entscheidungsrelevant.</td></tr><tr><td>Betroffenheitswelle</td><td>Zweite allgemeine Welle: Akteure spüren Relevanz über Kosten, Risiko, Emotion, Alltag, Legitimität oder Verantwortung.</td></tr><tr><td>Bewertungswelle</td><td>Dritte allgemeine Welle: Daten, Frames, Normen, Recht, Preise oder Modelle ordnen den sichtbaren Zustand.</td></tr><tr><td>Resonanz- und Anpassungswelle</td><td>Vierte allgemeine Welle: Akteure reagieren, verstärken, dämpfen, übernehmen, kopieren oder ändern Verhalten.</td></tr><tr><td>Struktur- und Rückkopplungswelle</td><td>Fünfte allgemeine Welle: Regeln, Preise, Routinen, Standards, Erwartungen oder Anreize verändern künftige Entscheidungen.</td></tr><tr><td>Tiefe</td><td>Bedingungsraum unter den Wellen: Macht, Infrastruktur, Anreize, Daten, Geschichte, Vertrauen, Knappheit, Kultur und Institutionen.</td></tr><tr><td>Fünf Wellen öffentlicher Wirkung</td><td>Kommunikationsfassung: Aufmerksamkeit, Emotion, Deutung, Resonanz, Verschiebung.</td></tr><tr><td>Wirkungsrad</td><td>Prozessarchitektur: Handlung/Unterlassen, Potenzial/Risiko, Zustandsveränderung, Wirkungsordnung, Bewertung, Lenkung, Anreiz, neue Handlung, Rückkopplung.</td></tr></tbody></table></div>
 <h2>Schlussformel</h2>
 <blockquote>Die fünf Wellen öffentlicher Wirkung sind die Kommunikationsfassung eines größeren Musters: Wirkung entfaltet sich in komplexen Systemen über Sichtbarkeit, Betroffenheit, Bewertung, Resonanz und strukturelle Rückkopplung. Die Tiefe erklärt, warum diese Wellen entstehen. Die Wirkungsökonomie fragt, wie daraus bessere Entscheidungen für Mensch, Planet und Demokratie werden.</blockquote>

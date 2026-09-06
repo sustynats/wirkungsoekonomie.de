@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0B1020">
+  <meta name="description" content="Download, Upload und Ping messen. Mit ungefährem Verbindungsort und Internet-Provider.">
+  <title>Speedtest | Internet-Verbindung prüfen</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Cpath d='M16 42a18 18 0 1 1 32 0M32 36l10-14' fill='none' stroke='%238de4b4' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/css/speedtest.css?v=20260906">
+  <script type="module" src="/assets/js/speedtest.js?v=20260906"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <span class="wordmark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9a14 14 0 0 1 18 0M6 12a9 9 0 0 1 12 0m-9 3a4 4 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/></svg> Speedtest<span class="wordmark-dot">.</span></span>
+      <span class="status-pill" id="badge"><i></i><span id="badge-text">Bereit zum Messen</span></span>
+    </header>
+    <main>
+      <div class="intro"><p class="eyebrow">DEINE VERBINDUNG. IN ZAHLEN.</p><h1>Wie schnell ist dein Internet?</h1><p>Ein Klick. Download, Upload und Reaktionszeit im Blick.</p></div>
+      <section class="test-panel" aria-label="Internet-Speedtest">
+        <div class="connection-grid">
+          <div><span class="label">Verbindungsort <span class="subtle">/ ungefähr</span></span><strong id="location">Wird beim Start ermittelt</strong><span class="detail" id="region">Standort anhand der IP-Adresse</span></div>
+          <div><span class="label">Internet-Provider</span><strong id="provider">Wird beim Start ermittelt</strong><span class="detail" id="network">Dein aktuell genutztes Netz</span></div>
+          <div class="server-info"><span class="label">Messnetz</span><strong>Cloudflare</strong><span class="detail">Messung direkt aus deinem Browser</span></div>
+        </div>
+        <div class="measurement-area">
+          <div class="dial-panel">
+            <div class="dial" aria-hidden="true">
+              <svg viewBox="0 0 300 240"><path class="dial-track" d="M45 210 A120 120 0 1 1 255 210" pathLength="100"/><path id="dial-fill" class="dial-fill" d="M45 210 A120 120 0 1 1 255 210" pathLength="100"/><g class="dial-labels"><text x="37" y="234">0</text><text x="8" y="117">1</text><text x="140" y="19">10</text><text x="267" y="117">100</text><text x="246" y="234">1.000+</text></g></svg>
+              <div class="dial-value"><span id="live-label">Startklar</span><strong id="live-value">-</strong><span id="live-unit">Mbit/s</span></div>
+            </div>
+            <button id="start" class="start-button" type="button">Speedtest starten <span aria-hidden="true">↗</span></button>
+            <p id="status" class="status-text" role="status" aria-live="polite">Dauert meist 30 bis 60 Sekunden.</p>
+          </div>
+          <div class="results-panel" aria-label="Messergebnisse">
+            <div class="metric" id="download-card"><div><span class="metric-icon" aria-hidden="true">↓</span><span class="label">Download</span></div><p><strong id="download">-</strong><span>Mbit/s</span></p><span class="detail">Daten empfangen</span></div>
+            <div class="metric" id="upload-card"><div><span class="metric-icon upload-color" aria-hidden="true">↑</span><span class="label">Upload</span></div><p><strong id="upload">-</strong><span>Mbit/s</span></p><span class="detail">Daten senden</span></div>
+            <div class="metric" id="latency-card"><div><span class="metric-icon ping-color" aria-hidden="true">↔</span><span class="label">Ping</span></div><p><strong id="latency">-</strong><span>ms</span></p><span class="detail">Reaktionszeit ohne Testlast</span></div>
+          </div>
+        </div>
+        <div class="test-footer"><ol class="steps" aria-label="Messphasen"><li data-stage="latency">1 <span>Ping</span></li><li data-stage="download">2 <span>Download</span></li><li data-stage="upload">3 <span>Upload</span></li><li data-stage="done">✓ <span>Fertig</span></li></ol><span id="elapsed">Noch keine Messung</span></div>
+      </section>
+      <p class="data-note">Ein Test kann etwa <strong>200 MB Testdaten</strong> übertragen, bei Wiederholungen auch mehr. Für eine möglichst genaue Messung andere Downloads und Streams pausieren und diesen Tab geöffnet lassen.</p>
+      <details class="info"><summary>Was wird gemessen? Was passiert mit meinen Daten?</summary><div><p>Die Werte zeigen deine aktuelle Verbindung zum Cloudflare-Messnetz. WLAN, VPN, andere Geräte und die Serverroute beeinflussen das Ergebnis. Die Messung ist eine Momentaufnahme; besonders schnelle Anschlüsse können unterschätzt werden.</p><p>Download und Upload werden in Megabit pro Sekunde (Mbit/s) angegeben: mehr ist schneller. Der Ping ist die HTTP-Reaktionszeit in Millisekunden (ms): weniger ist schneller. Er ist kein ICMP-Ping.</p><p>Mit dem Start werden Testanfragen an Cloudflare und eine IP-Standortabfrage an GeoJS gesendet. Beide Dienste erhalten dabei deine IP-Adresse. Cloudflare verarbeitet außerdem die Messergebnisse für aggregierte Netzstatistiken. Diese App speichert keine Ergebnisse und verwendet keine Analyse-Cookies.</p><p>WLAN-Name (SSID) und Routermodell kann diese Webseite nicht auslesen. Der Ort wird nur ungefähr aus der IP-Adresse abgeleitet. Bei VPN, Mobilfunk oder Satelliteninternet kann der angezeigte Ort bzw. Netzbetreiber von deinem tatsächlichen Standort oder Vertragspartner abweichen.</p><p><a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare-Datenschutz</a><span class="link-divider">·</span><a href="https://www.geojs.io/privacy/" target="_blank" rel="noopener noreferrer">GeoJS-Datenschutz</a></p></div></details>
+      <noscript><p class="no-script">Bitte JavaScript aktivieren, um deine Verbindung zu messen.</p></noscript>
+    </main>
+    <footer class="app-footer"><span>Speedtest <span class="subtle">/ Verbindung prüfen</span></span><div><a href="/impressum.html">Impressum</a><a href="/datenschutz.html">Datenschutz</a></div></footer>
+  </div>
+
+</body>
+</html>

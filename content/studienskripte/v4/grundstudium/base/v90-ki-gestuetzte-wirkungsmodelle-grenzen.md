@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v90-ki-gestuetzte-wirkungsmodelle-grenzen.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v90-ki-gestuetzte-wirkungsmodelle-grenzen.md curriculum=4.0 sanitized=true -->
 # V90 · KI-gestützte Wirkungsmodelle und ihre Grenzen
 
 **lecture_id:** `WOEK-G-BASE-090`  
@@ -8,11 +8,11 @@
 **migration_class:** `MATERIAL_REWRITE_REQUIRED`  
 **status:** `FACH_ENDCONTENT_REVIEWED_VERSION_SENSITIVE`  
 **reviewed_at:** 2026-08-21  
-**change_reason:** v3.2 hatte nur den geplanten Titel. v4.0 behandelt KI als Werkzeug für Suche, Extraktion, Strukturierung, Simulation und Hypothesengenerierung – nicht als autonome Quelle fachlicher Wahrheit. Aktuelle AI-Act-/Governancepflichten werden versionssensitiv behandelt.
+**change_reason:** v3.2 hatte nur den geplanten Titel. v4.0 behandelt KI als Werkzeug für Suche, Extraktion, Strukturierung, Simulation und Hypothesengenerierung - nicht als autonome Quelle fachlicher Wahrheit. Aktuelle AI-Act-/Governancepflichten werden versionssensitiv behandelt.
 
 ## 20-Sekunden-Einstieg
 
-KI kann tausende Seiten durchsuchen, Quellen strukturieren, Wirkpfade vorschlagen und Szenarien simulieren. Das macht sie für Wirkungsanalyse extrem nützlich. Aber ein Sprachmodell kann überzeugend falsch liegen, Quellen verwechseln oder Unsicherheit verstecken. Deshalb gilt in v4.0: **KI darf Wirkungsanalyse beschleunigen – sie darf Primärquellen, fachliche Evidenz, rechtliche Prüfung und verantwortete WÖk-Urteile nicht ersetzen.**
+KI kann tausende Seiten durchsuchen, Quellen strukturieren, Wirkpfade vorschlagen und Szenarien simulieren. Das macht sie für Wirkungsanalyse extrem nützlich. Aber ein Sprachmodell kann überzeugend falsch liegen, Quellen verwechseln oder Unsicherheit verstecken. Deshalb gilt in v4.0: **KI darf Wirkungsanalyse beschleunigen - sie darf Primärquellen, fachliche Evidenz, rechtliche Prüfung und verantwortete WÖk-Urteile nicht ersetzen.**
 
 ## Lernziele
 
@@ -25,7 +25,7 @@ Nach dieser Vorlesung kannst du:
 5. KI-Ergebnisse mit Provenienz, Version, Modellstand und Unsicherheit dokumentieren.
 6. aktuelle regulatorische AI-Act-Anforderungen als externe Governance-Schicht berücksichtigen.
 
-## 1. KI ist Werkzeug – kein Beweis
+## 1. KI ist Werkzeug - kein Beweis
 
 Eine KI-Ausgabe kann enthalten:
 
@@ -326,3 +326,13 @@ Denn ein anderes Modell kann morgen denselben Fall anders analysieren.
 Der Merksatz lautet:
 
 **KI skaliert Wirkungsanalyse. Verantwortung skaliert nicht automatisch mit. Deshalb brauchen wir Provenienz, Review und harte fachliche Gates.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zum AI Act · 6. September 2026
+
+Der AI Act ist seit 2. August 2026 grundsätzlich anwendbar, mit gestaffelten Ausnahmen. Verbote und KI-Kompetenzpflichten gelten bereits seit Februar 2025, GPAI-Regeln seit August 2025. Nach der aktualisierten Kommissionsübersicht und dem im Juli 2026 in Kraft getretenen AI Omnibus gelten verlängerte Fristen für bestimmte Hochrisikobereiche bis 2. Dezember 2027 und produktintegrierte Hochrisikosysteme bis 2. August 2028. Für den Einzelfall sind Rolle, Systemkategorie und konkrete Vorschrift zu bestimmen. KI-Ergebnisse bleiben überprüfungsbedürftig; Transparenz und menschliche Verantwortung ersetzen keinen Kausalitätsnachweis.
+
+Quelle: [Europäische Kommission, AI Act, aktualisiert am 3. August 2026, mit finalem Omnibus-Rechtstext](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai).

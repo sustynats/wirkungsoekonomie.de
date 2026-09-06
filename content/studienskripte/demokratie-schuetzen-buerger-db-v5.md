@@ -39,7 +39,7 @@ In dem Satz stecken verschiedene, noch nicht getrennte Dinge:
 
 Die Fahrerin, die für ihre gehbehinderte Mutter einen kurzen Weg braucht, hat nicht weniger Recht auf eine gute Lösung als das Kind, das die Straße sicher überqueren soll. Gerade deshalb wäre es falsch, die Interessen mit einem Schlagwort zu sortieren. Der Fall ist modellhaft. Er behauptet weder, dass jede Schulstraße gut ist, noch dass ein einzelner Chat eine Gemeinde verändert. Er macht sichtbar, wie ein Frame die Frage verschieben kann: von „Unter welchen Bedingungen schützt der Versuch Kinder, ohne Zugänge zu versperren?“ zu „Wer darf hier überhaupt noch sprechen?“
 
-## Was ein Frame tut – und was nicht
+## Was ein Frame tut - und was nicht
 
 Ein Frame ist ein Deutungsrahmen. Er verbindet einzelne Informationen zu einer vorläufigen Geschichte. Dazu gehören meist vier Bausteine:
 
@@ -126,7 +126,7 @@ Die Pfeile benennen Möglichkeiten, keine Gewissheit. **Wirkungspotenzial** best
 
 Reichweite bleibt dabei eine eigene Größe. Ein Beitrag mit 600 Aufrufen kann folgenlos bleiben. Eine ruhige Frage am Elternabend kann zur Änderung einer unklaren Ausnahme führen. Reichweite ist daher kein Ersatz für Wirkungsbeobachtung. Die [WÖk-Referenz zu Wirkungspotenzial](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-011-wirkungspotenzial-index-html/) trennt die begründete Möglichkeit einer Veränderung von der eingetretenen Zustandsveränderung.
 
-Auch die Absicht entscheidet nicht. Celine kann ausdrücklich mehr Beteiligung wollen und trotzdem mit ihrem Satz die Bereitschaft zu sachlicher Prüfung senken. Umgekehrt kann eine ungeschickte Formulierung eine notwendige Lücke sichtbar machen. Eine wirkungsorientierte Betrachtung fragt deshalb nach Beobachtungen nach dem Beitrag: Wer konnte sprechen? Welche Information wurde ergänzt? Welche Frage wurde beantwortet? Wurden Personen oder Gruppen ausgeschlossen? Welche Entscheidung änderte sich – und warum?
+Auch die Absicht entscheidet nicht. Celine kann ausdrücklich mehr Beteiligung wollen und trotzdem mit ihrem Satz die Bereitschaft zu sachlicher Prüfung senken. Umgekehrt kann eine ungeschickte Formulierung eine notwendige Lücke sichtbar machen. Eine wirkungsorientierte Betrachtung fragt deshalb nach Beobachtungen nach dem Beitrag: Wer konnte sprechen? Welche Information wurde ergänzt? Welche Frage wurde beantwortet? Wurden Personen oder Gruppen ausgeschlossen? Welche Entscheidung änderte sich - und warum?
 
 ## Schutz vor falschen Gegensätzen
 
@@ -211,7 +211,7 @@ Formulieren Sie danach einen Reframe in höchstens drei Sätzen. Er muss weder h
 - [WÖk-Referenz: Wirkungspotenzial](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-011-wirkungspotenzial-index-html/) sowie [Handlung, Unterlassen und Rückkopplung](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-012-handlung-unterlassen-und-rueckkopplung-index-html/): Begriffslogik für Möglichkeiten, Risiken und beobachtete Veränderungen.
 - [WÖk-Glossar: Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) und [Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/): Schutzlogik und Reihenfolge der Priorisierung.
 - [Grundgesetz](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0157/): Grundrechte und rechtliche Bindung staatlichen Handelns.
-- [JRC: Fractured Reality – Algorithms, Polarisation and Democracy](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0141/): digitale Verstärkung, Polarisierung und demokratische Willensbildung.
+- [JRC: Fractured Reality - Algorithms, Polarisation and Democracy](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0141/): digitale Verstärkung, Polarisierung und demokratische Willensbildung.
 - [OECD: Recommendation on Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) und [EDMO: Fact-checking](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0535/): Informationsintegrität, Quellenklarheit und Faktenprüfung.
 
 ## Kerngedanke

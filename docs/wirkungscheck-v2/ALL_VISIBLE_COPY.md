@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V2 – sichtbare Texte
+# Wirkungscheck Bundestag V2 - sichtbare Texte
 
 **Status:** Entwurf zur fachlichen und UX-seitigen Abnahme.  
 **Geltung:** Alle Texte des Pflichtpfads für Phase 1. Die fachliche Regel, aus
@@ -26,7 +26,7 @@ Prüffrage.
 **Nutzenkarten:**
 
 1. **In wenigen Minuten zum Prüfauftrag**  
-   Klären Sie zuerst Ziel, Engpass und rote Linie – nicht nur eine einzelne
+   Klären Sie zuerst Ziel, Engpass und rote Linie - nicht nur eine einzelne
    Maßnahme.
 2. **Bundesebene und Praxis verbinden**  
    Der Report trennt, was bundesweit sichtbar werden müsste, von dem, was Sie
@@ -84,7 +84,7 @@ damit der Report auf Ihre Angaben eingehen kann.
 **Hinweis zur Einordnung:** Ihre Auswahl beschreibt einen Arbeitsauftrag. Sie
 ist keine Bewertung Ihrer politischen Haltung.
 
-## Frage 1 – Thema
+## Frage 1 - Thema
 
 **Frage:** Welches bundespolitische Thema möchten Sie heute prüfen?
 
@@ -99,7 +99,7 @@ später getrennt durchspielen.
 **Hinweis zu weiteren Themen:** Weitere Themenfelder werden erst nach der
 Erprobung dieser ersten beiden Module ergänzt.
 
-## Frage 2 – gewünschte Veränderung
+## Frage 2 - gewünschte Veränderung
 
 **Frage:** Was soll sich durch Bundespolitik in diesem Bereich konkret
 verbessern?
@@ -133,7 +133,7 @@ verbessern?
 - Noch nicht eindeutig.
 - Andere Veränderung.
 
-## Frage 3 – Engpass
+## Frage 3 - Engpass
 
 **Frage:** Was blockiert diese Veränderung derzeit aus Ihrer Sicht am
 stärksten?
@@ -152,7 +152,7 @@ zusammenwirken, wählen Sie die entsprechende Antwort.
 - Noch nicht eindeutig.
 - Sonstiges.
 
-## Frage 4 – bundesweite Erfolgssignale
+## Frage 4 - bundesweite Erfolgssignale
 
 **Frage:** Woran müsste bundesweit erkennbar sein, dass die Veränderung
 tatsächlich eintritt?
@@ -186,7 +186,7 @@ Projektzahlen allein sind noch kein Erfolgssignal.
   leben.
 - Noch nicht beurteilbar.
 
-## Frage 5 – rote Linie
+## Frage 5 - rote Linie
 
 **Frage:** Was darf eine Lösung auf keinen Fall verschlechtern?
 
@@ -217,7 +217,7 @@ Bereich rechtfertigt keine Verschlechterung dieser Punkte.
 - Keine der genannten.
 - Anderer Punkt.
 
-## Frage 6 – politische Anforderungen
+## Frage 6 - politische Anforderungen
 
 **Frage:** Welche Anforderungen muss ein politischer Ansatz für Sie besonders
 erfüllen?
@@ -237,7 +237,7 @@ erfüllen?
 - leicht korrigierbar, wenn die Wirkung ausbleibt
 - andere Anforderung
 
-## Frage 7 – regionale Rückkopplung
+## Frage 7 - regionale Rückkopplung
 
 Die Frage erscheint nur mit Wahlkreis. Ohne Wahlkreis lautet sie:
 

@@ -1,13 +1,97 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-06T08:06:40.303Z",
+  "updated_at": "2026-09-06T17:53:42.092Z",
   "candidates": [
+    {
+      "story_id": "wt-4b5d0962d323432a",
+      "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+      "editorial_analysis_score": 82,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 2,
+        "cited_claim_count": 2,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "e1a3695100cfd89742bbb0067654fbaff5ab9e303d9a8f14e8a6ce5f29111790",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-0bfd0f9a3434"
+    },
+    {
+      "story_id": "wt-cf03acddb911d861",
+      "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
+      "story_title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+      "editorial_analysis_score": 73,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "2f2b82710b0f861b0a1ae02287680ad6f589dd63664b20ca92312f5602829f66",
+      "status": "published",
+      "analysis_id": "woek-analysis-219f434ceb61"
+    },
     {
       "story_id": "wt-995822cc0b71a7f8",
       "story_slug": "statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannu-71a7f8",
       "story_title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
-      "editorial_analysis_score": 69,
+      "editorial_analysis_score": 72,
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 14,
@@ -24,7 +108,7 @@
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -32,20 +116,18 @@
         "observed_impact": "not_established"
       },
       "evidence_gate": {
-        "passed": false,
+        "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 1,
+        "independent_origin_count": 7,
         "primary_source_count": 1,
         "cited_claim_count": 5,
         "primary_source_expected": true,
         "primary_source_satisfied": true,
-        "reasons": [
-          "fewer_than_two_source_origins"
-        ]
+        "reasons": []
       },
-      "fingerprint": "f1546cd64907c76ede83c2afdf58bfa673a30b41b1e5dc42db0710ba8d9be4ed",
-      "status": "research_pending",
-      "analysis_id": null
+      "fingerprint": "edd6ae7dd4bc2116c0a32bc24deb9909a5131506c69f8c4adf231ad77911bc57",
+      "status": "published",
+      "analysis_id": "woek-analysis-2e9b2581831c"
     },
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -135,48 +217,6 @@
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
-      "story_id": "wt-4b5d0962d323432a",
-      "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
-      "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
-      "editorial_analysis_score": 79,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 0,
-        "resilience_relevance": 8,
-        "macro_relevance": 9,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 8,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 8
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 2,
-        "cited_claim_count": 2,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
-      "status": "published",
-      "analysis_id": "woek-analysis-0bfd0f9a3434"
-    },
-    {
       "story_id": "wt-60f4e4d7d43fad99",
       "story_slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
       "story_title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
@@ -215,8 +255,8 @@
         "reasons": []
       },
       "fingerprint": "6889f6dcfa62649dc22a1dff7bca65fabd75a0cebd636d80d9eb25f668e81671",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-36e98d72ae20"
     },
     {
       "story_id": "wt-7b385f58748f3d32",
@@ -257,8 +297,8 @@
         "reasons": []
       },
       "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-dab9cdd59202"
     },
     {
       "story_id": "wt-f7d7115a53ff2c2f",
@@ -652,6 +692,701 @@
   ],
   "analyses": [
     {
+      "analysis_id": "woek-analysis-2e9b2581831c",
+      "story_id": "wt-995822cc0b71a7f8",
+      "related_story_ids": [
+        "wt-995822cc0b71a7f8"
+      ],
+      "related_case_id": null,
+      "slug": "eu-haushalt-2028-2034-was-neue-prioritaten-fur-klima-wohlstand-und-zusammenhalt-be-2e9b25",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "edd6ae7dd4bc2116c0a32bc24deb9909a5131506c69f8c4adf231ad77911bc57",
+      "candidate_score": 72,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 7,
+        "primary_source_count": 1,
+        "cited_claim_count": 5,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-06T09:21:47.630Z",
+      "updated_at": "2026-09-06T09:21:47.630Z",
+      "version": 1,
+      "editorial_question": "Welche Bedingungen entscheiden darüber, ob neue EU-Haushaltsprioritäten Klima, Wohlstand und Zusammenhalt stärken oder Risiken verlagern?",
+      "analysis_type": "system_analysis",
+      "title": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+      "subtitle": "Sechs Staaten wollen weniger ausgeben als die Kommission vorschlägt. Entscheidend ist, welche Vorsorge, Investitionen und Schutzbedingungen im Haushalt Platz finden.",
+      "teaser": "Der Streit um Europas nächsten Finanzrahmen reicht bis zu Stromnetzen, Hochwasserschutz und regionalen Chancen. Die Analyse prüft Klima- und SDG-Bezüge, mögliche Folgekosten und demokratische Kontrolle. Ein größeres Budget ist dabei ebenso wenig ein Wirkungsnachweis wie ein kleineres schon ein Schaden.",
+      "seo_description": "EU-Haushalt 2028-2034 im Wirkungscheck: Klimaziele, SDGs, regionale Chancen, Folgekosten und die Bedingungen wirksamer Investitionen.",
+      "additional_value": "Die Analyse verbindet die aktuelle Verhandlungsposition mit dem Kommissionsentwurf, der Gegenposition des Parlaments, Klimarisiken und der Kritik an früherer Ausgabenmessung. Sie leitet prüfbare Wirkungspfade und Bedingungen ab, statt aus der Haushaltssumme einen Erfolg oder Schaden abzuleiten.",
+      "research_summary": "Fallbezogene Recherche in acht öffentlichen institutionellen Originaldokumenten: Bundesregierung, Kommission, Rat, Europäisches Parlament, Europäische Umweltagentur, Europäischer Rechnungshof und UN. Die beiden Kommissionsdokumente zählen als ein Ursprung. Hintergrundquellen bestätigen nicht die aktuelle Erklärung, sondern tragen Verfahrens-, Risiko-, Gegen- und Zielkontext. WÖk-Begriffe folgen dem führenden Leitfaden 1.7.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Noch kein fertiger Haushalt, sondern konkurrierende Vorschläge",
+          "paragraphs": [
+            "Eine Gemeinde plant Hochwasserschutz, ein Unternehmen den Umbau seiner Produktion, eine Region bessere Verkehrsverbindungen. Ob solche Vorhaben Unterstützung erhalten können, hängt auch von Europas nächstem langfristigen Haushalt ab. Der Mehrjährige Finanzrahmen, kurz MFR, setzt für 2028 bis 2034 die finanziellen Grenzen. Welche Veränderungen daraus tatsächlich entstehen, entscheidet sich jedoch erst über Programme und ihre Umsetzung.",
+            "Dänemark, Deutschland, die Niederlande, Österreich, Finnland und Schweden verlangen in ihrer Erklärung vom 27. August 2026, den Kommissionsvorschlag von nahezu zwei Billionen Euro um mehrere hundert Milliarden zu reduzieren. Alle Haushaltsrubriken sollen beitragen. Zugleich befürworten sie moderates Wachstum des Finanzrahmens. Kürzung gegenüber dem Vorschlag bedeutet deshalb nicht automatisch Kürzung gegenüber dem bisherigen Haushalt. Konkrete Programmbeträge legt die Erklärung nicht fest.",
+            "Die Gegenposition gehört dazu: Das Europäische Parlament fordert seit April 2026 eine Aufstockung gegenüber dem Kommissionsentwurf und Schutz für Zusammenhalt und Landwirtschaft. Einen endgültigen Haushalt gibt es damit noch nicht. Der Rat muss die MFR-Verordnung einstimmig nach Zustimmung des Parlaments verabschieden. Die Position von sechs Regierungen ist nicht die Entscheidung aller Mitgliedstaaten."
+          ],
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+            "b2bb80ed1c9d03272ad8",
+            "d919dd2a49efeb01e0c4",
+            "960ac89138a6c934dcfb"
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Die eigentliche Frage: Was soll sich durch das Geld verändern?",
+          "paragraphs": [
+            "Der zusätzliche Erkenntnisgewinn liegt nicht im Vergleich zweier großer Summen. Ein Haushalt verbindet Ziele mit Förderregeln, Anreizen und späteren Investitionen. Wer Mittel umverteilt, kann zugleich beeinflussen, welche Probleme bearbeitet werden und welche zunächst ungelöst bleiben. Ausgabenhöhe, Ausgabenzweck und tatsächliche Zustandsveränderung sind dabei drei verschiedene Dinge.",
+            "Am Beispiel eines Stromnetzes wird das anschaulich: Eine Förderzusage ist zunächst eine Finanzierungsentscheidung. Ein fertiggestellter Anschluss ist eine bereitgestellte Leistung. Ob Strom zuverlässiger verfügbar ist, Kosten sinken oder Emissionen vermieden werden, muss anschließend beobachtet werden. Auch dann bleibt zu prüfen, welchen Anteil die EU-Förderung gegenüber ohnehin geplanten Investitionen, nationalen Mitteln und anderen Veränderungen hatte. Diese Unterscheidung gilt für zusätzliche Mittel ebenso wie für Einsparungen."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "klima",
+          "title": "Eine Klimaquote ist ein Versprechen, noch kein Ergebnis",
+          "paragraphs": [
+            "Die Kommission schlägt vor, 35 Prozent des Finanzrahmens für Klima und Umwelt einzusetzen, nach ihrer Darstellung über 700 Milliarden Euro. Gemeint sind beide Bereiche zusammen, nicht ausschließlich Klimaschutz. Auch ein Vergleich mit früheren Quoten verlangt Vorsicht: Die von der Kommission genannten über 34 Prozent für 2021 bis 2027 betreffen Klimafinanzierung einschließlich NextGenerationEU. Gegenstand und Haushaltsumfang sind somit nicht identisch.",
+            "Die spätere Prüfung muss tiefer reichen: Welche Projekte senken Emissionen zusätzlich? Welche vermindern die Verwundbarkeit gegenüber Hitze, Dürre oder Überschwemmungen? Was bleibt für Wasser, Böden und Biodiversität? Eine gleichbleibende Quote schützt nicht automatisch jeden dieser Zwecke. Umgekehrt wäre ein geringerer nomineller Ansatz allein noch kein Nachweis schlechterer Ergebnisse, wenn Maßnahmen gezielter, zusätzlich und zuverlässig umgesetzt würden.",
+            "Ein historischer Gegenbefund unterstreicht das: Der Europäische Rechnungshof bewertete die ausgewiesenen Klimaausgaben 2014 bis 2020 als deutlich überhöht. Das ist kein Urteil über den noch offenen Haushalt ab 2028. Es zeigt aber, warum eine Ausgabenmarkierung nicht die Prüfung des tatsächlichen Beitrags ersetzen darf."
+          ],
+          "source_ids": [
+            "d9ff1f25c3942ae3f8cf",
+            "520ff4746f4fb686ad14"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Klima, Lebensqualität und Handlungsfähigkeit hängen zusammen",
+          "paragraphs": [
+            "Die Europäische Umweltagentur beschreibt in ihrer europäischen Klimarisikobewertung Risiken unter anderem für Gesundheit, Wasser, Infrastruktur und finanzielle Stabilität. Damit ist Klimaanpassung nicht nur ein Umweltthema. Wenn kritische Versorgung ausfällt, können zugleich Haushalte, Betriebe und öffentliche Dienste betroffen sein. Der Forschungsstand begründet die Relevanz solcher Risiken; er beziffert nicht die Folgen einer bestimmten Haushaltskürzung.",
+            "Aus wirkungsökonomischer Sicht sind Mensch, Planet und Demokratie deshalb zusammen zu prüfen. Als plausibles Beispiel kann ein gut geplantes Wasserprojekt natürliche Rückhalteräume schützen und zugleich Siedlungen entlasten. Ob es gelingt, hängt von Standort, Planung, Wartung und örtlicher Beteiligung ab. Ein schlecht geplantes Projekt könnte dagegen Risiken flussabwärts verschieben. Das sind unterschiedliche mögliche Wirkungspfade, keine Befunde zu einem bereits ausgewählten Projekt.",
+            "Mögliche Kaskaden gehören ausdrücklich dazu: Eine Überschwemmung könnte Stromversorgung und Verkehr beeinträchtigen, dadurch Versorgung und Betriebe behindern und zusätzliche Ausgaben öffentlicher Haushalte auslösen. Eine solche Kette hängt von örtlicher Verwundbarkeit und vorhandenen Reserven ab; sie ist hier ein bedingtes Szenario. Öffentliche Kontrolle verbindet diese Ebenen: Menschen müssen nachvollziehen können, welche Risiken berücksichtigt werden und wie Fehlentwicklungen korrigiert werden."
+          ],
+          "source_ids": [
+            "2402ac651ee2beee3344",
+            "56971e99c08799ebde37"
+          ]
+        },
+        {
+          "id": "referenzen",
+          "title": "Wie die SDGs in die Prüfung eingehen",
+          "paragraphs": [
+            "Die Nachhaltigkeitsziele der UN, die SDGs, dienen hier als offengelegter Zielrahmen. Besonders relevant sind SDG 13.1 für Klimaanpassung und 13.2 für die Integration von Klimaschutz in Planung, SDG 9.1 und 9.4 für tragfähige Infrastruktur und ressourcenschonende Modernisierung sowie SDG 10.2 für Teilhabe. SDG 15 lenkt den Blick auf Ökosysteme, SDG 16.6 auf wirksame und transparente Institutionen und SDG 17.14 auf widerspruchsfreie Nachhaltigkeitspolitik.",
+            "Daraus wird keine Liste angeblich bereits erfüllter Ziele. Für ein konkretes Förderprogramm wäre zunächst zu fragen: Welcher Zustand soll sich bei wem verbessern, durch welchen Mechanismus und gegenüber welcher Ausgangslage? Erst danach helfen passende Daten bei der Prüfung. Ein SDG-Symbol an einem Budgetposten beantwortet diese Fragen nicht.",
+            "Auch die Zeiträume sind zu trennen. Der Finanzrahmen reicht über 2030 hinaus; Fristen einzelner SDG-Unterziele dürfen nicht still auf 2034 verschoben werden. Für Entscheidungen in der EU sind zudem die jeweils geltenden europäischen Rechts- und Prüfrahmen maßgeblich. Die deutsche Nachhaltigkeitsstrategie kann für deutsche Umsetzungsbeiträge relevant werden. Bundes-GGO und eNAP sind jedoch keine pauschalen Prüfpflichten für den EU-Haushalt."
+          ],
+          "source_ids": [
+            "56971e99c08799ebde37",
+            "d919dd2a49efeb01e0c4"
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Vom Förderbescheid zu langfristigen Entwicklungspfaden",
+          "paragraphs": [
+            "In erster Ordnung könnten andere Mittelansätze und Förderbedingungen verändern, welche Vorhaben starten können. Für die Erklärung der sechs Staaten ist eine solche Veränderung noch nicht festgestellt. Sie setzt zunächst eine Verhandlungsposition.",
+            "In zweiter Ordnung könnten sich daraus Anschlussentscheidungen ergeben: Unternehmen investieren mit, Kommunen stellen Personal bereit oder verschieben andere Aufgaben. Ebenso sind Verdrängungen möglich, wenn knappe Planungskapazität von einem Vorhaben zum anderen wandert. Ob zusätzliche öffentliche Förderung private Investitionen ermöglicht oder ohnehin Geplantes bezahlt, bleibt eine fallbezogene Frage.",
+            "In dritter Ordnung könnten wiederholte Förderentscheidungen technische Standards, regionale Wirtschaftsstrukturen und langfristige Abhängigkeiten prägen. Eine Infrastruktur kann Jahrzehnte genutzt werden. Deshalb muss der Vergleich auch Betrieb, Wartung, Anpassungsfähigkeit und spätere Umstellungskosten einbeziehen. Diese drei Ordnungen beschreiben mögliche Wege der Veränderung. Sie sind keine Prognose, dass die genannten Folgen zwangsläufig eintreten."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "makro",
+          "title": "Wohlstand, Folgekosten und die Frage, wer bezahlt",
+          "paragraphs": [
+            "Ein geringerer EU-Beitrag kann nationale Haushalte entlasten; weniger Förderung kann zugleich Projekte erschweren. Welche Seite überwiegt, lässt sich ohne konkrete Ausgestaltung nicht bestimmen. Für eine belastbare Einordnung sind reale Kaufkraft, Finanzierung, zusätzliche Investitionen und entgangene Alternativen zu betrachten. Auch mehr Geld kann wirkungslos gebunden bleiben, wenn Genehmigungen, Fachkräfte oder geeignete Projekte fehlen.",
+            "Verteilung ist mehr als der Saldo zwischen Staaten. Zu prüfen wäre, ob finanzschwächere Regionen Eigenanteile aufbringen können, kleine Träger Zugang haben und Haushalte mit niedrigen Einkommen profitieren oder zusätzliche Lasten tragen. Bei verschobener Vorsorge könnten spätere Reparaturkosten andere Haushalte treffen als die heutigen Einsparungen. Ob dies im Einzelfall geschieht, ist offen. Gerade deshalb braucht der Vergleich dieselben räumlichen Grenzen und einen ausreichend langen Zeitraum für alle Optionen."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Nicht Sicherheit gegen Klima ausspielen",
+          "paragraphs": [
+            "Die sechs Staaten betonen Sicherheit, Wettbewerbsfähigkeit, Migration und Souveränität. Sie nennen zugleich den ökologischen Wandel und Rechtsstaatlichkeit. Eine Darstellung, die nur die ersten Prioritäten herausgreift, ließe entscheidenden Kontext weg. Umgekehrt garantiert die Erwähnung des ökologischen Wandels nicht dessen Finanzierung.",
+            "Analytisch kann die Gegenüberstellung von Sicherheit und Klima den Blick auf gemeinsame Verwundbarkeiten verengen. Eine rein auf Einsparungen gerichtete Darstellung kann mögliche Folgekosten ausblenden; eine ausschließlich auf Investitionen gerichtete Darstellung kann Finanzierungs- und Umsetzungsprobleme verdecken. Das sind kommunikative Wirkungspotenziale. Eine tatsächliche Veränderung öffentlicher Einstellungen ist hier nicht belegt. Weder den Regierungen noch einem Medium wird eine Absicht zugeschrieben."
+          ],
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda"
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Drei mögliche Wege, keine Vorhersage",
+          "paragraphs": [
+            "Ein möglicher Weg wäre, wenig zusätzliche oder schlecht umsetzbare Ausgaben zu reduzieren und zugleich zentrale Vorsorgeprogramme abzusichern. Unter diesen Bedingungen könnte ein kleinerer Finanzrahmen tragfähige Leistungen erhalten. Dafür müsste der behauptete Effizienzgewinn konkret nachgewiesen werden; das Etikett Reform genügt nicht.",
+            "Ein zweiter Weg wären Kürzungen ohne ausreichende Prüfung von Folgekosten und regionalen Engpässen. Falls dadurch wirksame Vorsorge ausfiele und nicht anderweitig ersetzt würde, könnten spätere Schäden oder Ungleichheiten wahrscheinlicher werden. Ein dritter Weg wäre ein größerer Haushalt mit mehr Investitionsspielraum. Dessen positives Potenzial hinge ebenso an Zusätzlichkeit, Finanzierung, Umsetzung und Kontrolle. Die vorliegenden Dokumente erlauben keine robuste Rangfolge dieser Szenarien und keine seriöse Schadenssumme."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "schutz",
+          "title": "Priorisieren, ohne Schutzgrenzen wegzurechnen",
+          "paragraphs": [
+            "Die WÖk-Prüfung fragt zunächst nach dem belegten Problem und erst dann nach dem passenden Instrument. Ein Förderprogramm sollte nicht allein deshalb bestehen bleiben, weil es schon existiert. Ein neues Programm sollte nicht allein wegen seiner politischen Priorität Vorrang erhalten. Benötigt werden nachvollziehbare Alternativen, Schutzbedingungen und ein überprüfbarer Zusatznutzen.",
+            "Dabei gilt Nichtkompensation: Schwerwiegende Verletzungen vorab begründeter Rechte oder Schutzgrenzen dürfen nicht durch gute Ergebnisse anderswo verrechnet werden. Die WÖk-Bewertungslogik Reverse Merit Order lässt deshalb das kritischste zentrale Wirkungsfeld die Gesamtbewertung begrenzen. Sie ist keine amtliche Haushaltsregel und keine Rangliste der Staaten. Welche Grenze für ein konkretes Programm relevant ist, muss fachlich und rechtlich begründet werden; aus dem Gesamtbetrag lässt sie sich nicht ableiten.",
+            "Die EU beginnt bei Kontrolle und Ergebnisorientierung nicht bei null. Das Verfahren, die parlamentarische Zustimmung und die Prüfberichte des Rechnungshofs sind vorhandene institutionelle Bezugspunkte. Der WÖk-Zusatz ist die durchgängige Verbindung von Problem, Wirkmechanismus, Verteilung, Schutzgrenzen und späterer Korrektur."
+          ],
+          "source_ids": [
+            "d919dd2a49efeb01e0c4",
+            "520ff4746f4fb686ad14"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Was diese Analyse noch nicht sagen kann",
+          "paragraphs": [
+            "Offen sind die endgültigen Beträge, ihre Verteilung, konkrete Förderbedingungen und die spätere Umsetzung. Die Analyse schätzt deshalb weder einen Beschäftigungseffekt noch zusätzliche Emissionen oder vermiedene Schäden. Dafür wären Programme, Ausgangsdaten, Vergleichsannahmen und geeignete Untersuchungen erforderlich.",
+            "Die Quellen erfüllen verschiedene Aufgaben: Regierungen und EU-Organe dokumentieren Positionen und Verfahren. Umweltagentur und Rechnungshof liefern Risiko- beziehungsweise Prüfkontext. Die UN-Ziele begründen Referenzen. Diese Dokumente sind nicht acht unabhängige Bestätigungen einer späteren Wirkung. Eine umfassende Evaluation aller vorgeschlagenen Einzelprogramme liegt dieser Analyse nicht zugrunde. Offen bedeutet hier unzureichend bestimmbar, nicht neutral oder folgenlos."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "beobachtung",
+          "title": "Welche Informationen die Einschätzung verändern würden",
+          "paragraphs": [
+            "Als Nächstes sind belastbare Verhandlungszahlen und Programmentwürfe entscheidend. Vergleichbar sind sie nur mit gleicher Preisbasis, gleichem Zeitraum und klarer Behandlung des Schuldendienstes sowie von Mitteln außerhalb der Obergrenzen. Hinzukommen die endgültige Klima- und Umweltquote, ihre Berechnung und gesonderte Angaben für Anpassung und Naturschutz.",
+            "Danach wird der Blick praktisch: Wer erhält tatsächlich Mittel, welche Projekte werden umgesetzt, wo bleiben Zugangs- oder Kapazitätsprobleme? Bei einem Netzprojekt könnten Versorgungsausfälle, bei Anpassungsmaßnahmen die Gefährdung und Verwundbarkeit, bei regionalen Programmen Zugang und Teilhabe relevante Beobachtungsgrößen sein. Veränderungen solcher Größen sind noch nicht automatisch der Förderung zurechenbar. Werden Annahmen widerlegt, müssen Förderbedingungen oder Prioritäten angepasst werden. Erst dieser Rückweg von Erkenntnis zur Entscheidung macht aus Berichterstattung eine Lernschleife."
+          ],
+          "source_ids": []
+        },
+        {
+          "id": "synthese",
+          "title": "Entscheidend ist die Qualität der Verbindung",
+          "paragraphs": [
+            "Der EU-Haushaltsstreit ist eine Frage möglicher Systemveränderungen: Welche Investitionen werden möglich, welche Risiken bleiben bestehen und wer trägt sie? Klima, Wohlstand und Zusammenhalt lassen sich dabei nicht allein über getrennte Ausgabentöpfe verstehen.",
+            "Die wirkungsökonomische Einordnung bleibt ex ante. Sie befürwortet weder pauschal das größere noch das kleinere Budget. Ihr Maßstab ist positive Netto-Wirkung für Mensch, Planet und Demokratie unter offengelegten Schutzgrenzen. Die SDGs helfen, relevante Ziele und Konflikte sichtbar zu machen. Ob sich Zustände tatsächlich verbessern, muss an Umsetzung, Ergebnissen, Verteilung und belastbarer Zurechnung geprüft werden."
+          ],
+          "source_ids": []
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Für 2028-2034 liegen unterschiedliche Haushaltspositionen vor; ein endgültiger MFR ist damit nicht beschlossen.",
+          "type": "fact",
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+            "d919dd2a49efeb01e0c4",
+            "960ac89138a6c934dcfb"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Quellenstand 6. September 2026; weitere Verhandlungen können die Positionen ändern.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "Gezielte Förderung kann zusätzliche Vorsorge und langfristige Investitionen ermöglichen.",
+          "type": "impact_potential",
+          "source_ids": [],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Bedingt durch Zusätzlichkeit, geeignete Projekte und tatsächliche Umsetzung; keine beobachtete Wirkung.",
+          "date": null
+        },
+        {
+          "claim": "Entfällt wirksame Vorsorge ohne Ersatz, können Risiken und spätere Reparaturkosten verlagert werden.",
+          "type": "impact_risk",
+          "source_ids": [],
+          "evidence_level": "medium",
+          "data_status": "scenario",
+          "uncertainty": "Keine Aussage, dass eine konkrete MFR-Kürzung bereits solche Schäden ausgelöst hat.",
+          "date": null
+        },
+        {
+          "claim": "Die Kommission legte ihren Vorschlag im Juli 2025 vor. Der Rat beschreibt den Umfang als nahezu zwei Billionen Euro zu laufenden Preisen.",
+          "type": "fact",
+          "source_ids": [
+            "b2bb80ed1c9d03272ad8",
+            "d919dd2a49efeb01e0c4"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Vorschlag, kein final verabschiedeter Haushaltsbetrag.",
+          "date": "2025-07-16"
+        },
+        {
+          "claim": "Die sechs Staaten verlangen mehrere hundert Milliarden Euro weniger als im Kommissionsvorschlag, ohne konkrete Programmbeträge festzulegen.",
+          "type": "fact",
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Ihre Forderung ist keine schon beschlossene Kürzung einzelner Programme.",
+          "date": "2026-08-27"
+        },
+        {
+          "claim": "Das Parlament fordert eine Aufstockung gegenüber dem Kommissionsentwurf und Schutz für Kohäsion und Landwirtschaft.",
+          "type": "fact",
+          "source_ids": [
+            "960ac89138a6c934dcfb"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Verhandlungsposition des Parlaments, keine Haushaltseinigung.",
+          "date": "2026-04-28"
+        },
+        {
+          "claim": "Die vorgeschlagene Quote von 35 Prozent betrifft Klima und Umwelt gemeinsam; die ältere Vergleichsquote umfasst einen anderen Haushalts- und Zweckzuschnitt.",
+          "type": "fact",
+          "source_ids": [
+            "d9ff1f25c3942ae3f8cf"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Weder unmittelbarer Wirkungsvergleich noch Beleg tatsächlich erzielter Klimaverbesserungen.",
+          "date": "2025-10-09"
+        },
+        {
+          "claim": "Der Rechnungshof kritisierte die Verlässlichkeit ausgewiesener Klimaausgaben 2014-2020.",
+          "type": "fact",
+          "source_ids": [
+            "520ff4746f4fb686ad14"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Historischer Prüfgegenstand; kein Nachweis desselben Fehlers im MFR 2028-2034.",
+          "date": "2022-05-30"
+        },
+        {
+          "claim": "Die europäische Klimarisikobewertung beschreibt Risiken für Gesundheit, Wasser, Infrastruktur und finanzielle Stabilität.",
+          "type": "fact",
+          "source_ids": [
+            "2402ac651ee2beee3344"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Fachlicher Risikokontext, keine Zurechnung zu einer konkreten Haushaltsentscheidung.",
+          "date": "2024-03-11"
+        },
+        {
+          "claim": "SDG 9, 10, 13, 15, 16 und 17 liefern sachlich relevante Zielbezüge für diese Analyse.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "56971e99c08799ebde37"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Auswahl und Anwendung sind WÖk-Einordnung, keine UN-Bewertung des MFR.",
+          "date": null
+        },
+        {
+          "claim": "Wirkung ist tatsächliche Zustandsveränderung; ein Budgetansatz oder Zielbezug ist noch kein Wirkungsnachweis.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodischer Maßstab nach dem führenden WÖk-Begriffsleitfaden 1.7, keine zusätzliche empirische Feststellung.",
+          "date": "2026-08-21"
+        },
+        {
+          "claim": "Ein Vergleich der Haushaltsoptionen benötigt gleiche Preisbasis, Zeitraum und Abgrenzung sowie eine Prüfung von Zusätzlichkeit und Verteilung.",
+          "type": "analytical_inference",
+          "source_ids": [],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Ohne vollständige Programme und Gegenfaktum keine robuste Gesamtrangfolge.",
+          "date": null
+        },
+        {
+          "claim": "Nichtkompensation und Reverse Merit Order begrenzen eine positive Gesamtbewertung bei materiell verletzten Schutzgrenzen.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "WÖk-Bewertungslogik, keine amtliche EU-Haushaltsvorschrift; konkrete Grenzen sind gesondert zu begründen.",
+          "date": "2026-08-21"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Kürzungsforderung legt keine einzelnen Klimaprogramme fest.",
+          "source_ids": [
+            "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda"
+          ],
+          "effect_on_assessment": "Aus ihr lässt sich kein bestimmter Klimaschaden ableiten."
+        },
+        {
+          "finding": "Das Parlament befürwortet zusätzliche Mittel und warnt vor schwächerer Kontrolle.",
+          "source_ids": [
+            "960ac89138a6c934dcfb"
+          ],
+          "effect_on_assessment": "Eine vollständige Einordnung umfasst auch diese Gegenposition, ohne ihre Wirkungsannahmen als bewiesen zu behandeln."
+        },
+        {
+          "finding": "Historische Klimaausgaben waren nach dem Rechnungshof nicht so belastbar ausgewiesen wie berichtet.",
+          "source_ids": [
+            "520ff4746f4fb686ad14"
+          ],
+          "effect_on_assessment": "Auch das größere Budget muss sich an Ergebnissen messen lassen. Der frühere Prüfbericht beweist keinen Fehler im neuen Entwurf."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Eine Haushaltseinigung mit vergleichbaren Beträgen, Preisbasis und klarer Behandlung des Schuldendienstes.",
+        "Verbindliche Programmregeln und nachvollziehbare Ansätze für Klimaschutz, Anpassung, Biodiversität und sozialen Zusammenhalt.",
+        "Belege, welche Vorhaben durch EU-Mittel zusätzlich möglich werden und welche auch ohne sie entstanden wären.",
+        "Daten zu tatsächlicher Mittelvergabe, regionalem Zugang und Umsetzungsengpässen.",
+        "Geeignete Evaluationen beobachteter Zustandsveränderungen und ihrer Zurechnung; bei widerlegten Annahmen erneute Einordnung."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+        "recommended_summary": "Der Finanzrahmen wird verhandelt. Ob neue Prioritäten Klima, Wohlstand und Zusammenhalt stärken, hängt von konkreten Programmen, Umsetzung und Kontrolle ab.",
+        "recommended_meta_description": "EU-Haushalt 2028-2034 im Wirkungscheck: Klimaziele, SDGs, regionale Chancen, Folgekosten und die Bedingungen wirksamer Investitionen."
+      },
+      "reading_time_minutes": 8,
+      "source_snapshot": [
+        {
+          "source_id": "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+          "registry_source_id": "bundesregierung-presse",
+          "publisher_id": "bundesregierung",
+          "publisher": "Bundesregierung - gemeinsame Erklärung der sechs Staaten",
+          "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
+          "published_at": "2026-08-27T12:05:00.000Z",
+          "primary_source": true,
+          "source_function": "primary_evidence"
+        },
+        {
+          "publisher_id": "european-commission",
+          "publisher": "Europäische Kommission",
+          "title": "EU budget 2028-2034 for a stronger Europe",
+          "url": "https://commission.europa.eu/news-and-media/news/eu-budget-2028-2034-stronger-europe-2025-07-16_en",
+          "canonical_domain": "commission.europa.eu",
+          "published_at": "2025-07-16T00:00:00Z",
+          "source_function": "context",
+          "summary": "Die Kommission stellte am 16. Juli 2025 ihren Entwurf des MFR 2028–2034 vor. Sie will Programme vereinfachen, Investitionen ermöglichen und gemeinsame Prioritäten finanzieren. Der Vorschlag muss verhandelt werden.",
+          "source_id": "b2bb80ed1c9d03272ad8",
+          "source_item_id": "b2bb80ed1c9d03272ad8",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://commission.europa.eu/news-and-media/news/eu-budget-2028-2034-stronger-europe-2025-07-16_en",
+            "title": "EU budget 2028-2034 for a stronger Europe",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "effcb7b3c9d896dcfd7a90cf6dec967b3dd2264208cabe38d1cf6a1eba9c647e",
+            "relevance_note": "Originalentwurf zum selben Finanzrahmen, nicht weitere Bestätigung der Erklärung vom August 2026.",
+            "limitations": "Institutionelle Darstellung eigener Absichten, kein Nachweis tatsächlich erreichter Ergebnisse."
+          }
+        },
+        {
+          "publisher_id": "european-commission",
+          "publisher": "Europäische Kommission - Klimapolitik",
+          "title": "Supporting climate action through the EU budget",
+          "url": "https://climate.ec.europa.eu/areas-action/eu-funding-climate-action/supporting-climate-action-through-eu-budget_en",
+          "canonical_domain": "climate.ec.europa.eu",
+          "published_at": "2025-10-09T00:00:00Z",
+          "source_function": "context",
+          "summary": "Der Entwurf sieht 35 Prozent für Klima und Umwelt vor, laut Kommission über 700 Milliarden Euro. Die ältere Quote von über 34 Prozent betrifft Klimafinanzierung 2021–2027 einschließlich NextGenerationEU; die Abgrenzungen unterscheiden sich.",
+          "source_id": "d9ff1f25c3942ae3f8cf",
+          "source_item_id": "d9ff1f25c3942ae3f8cf",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://climate.ec.europa.eu/areas-action/eu-funding-climate-action/supporting-climate-action-through-eu-budget_en",
+            "title": "Supporting climate action through the EU budget",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "8fd2b6754132497f469221ce04e317ddcd4e8fbd595dd542be074b30cd114668",
+            "relevance_note": "Originalquelle zur Klima-/Umweltquote und zur Grenze eines Periodenvergleichs.",
+            "limitations": "Dokumentstand ist das ausgewiesene Aktualisierungsdatum. Beide Kommissionsseiten zählen als ein Ursprung; Ausgabenquote ist kein Wirkungsnachweis."
+          }
+        },
+        {
+          "publisher_id": "council-eu",
+          "publisher": "Rat der Europäischen Union",
+          "title": "The EU's long-term budget for 2028-2034",
+          "url": "https://www.consilium.europa.eu/en/policies/the-eu-s-long-term-budget-2028-2034/",
+          "canonical_domain": "consilium.europa.eu",
+          "published_at": "2026-07-15T00:00:00Z",
+          "source_function": "context",
+          "summary": "Der Rat erläutert den MFR-Entwurf und den Verhandlungsstand. Nahezu zwei Billionen Euro sind in laufenden Preisen angegeben. Die MFR-Verordnung erfordert Einstimmigkeit im Rat nach Zustimmung des Parlaments.",
+          "source_id": "d919dd2a49efeb01e0c4",
+          "source_item_id": "d919dd2a49efeb01e0c4",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://www.consilium.europa.eu/en/policies/the-eu-s-long-term-budget-2028-2034/",
+            "title": "The EU's long-term budget for 2028-2034",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "5ba4eb360b7539dcb4f27046c88915fb9f935829ad0f564b9ced84ac9875330e",
+            "relevance_note": "Verfahrens- und Abgrenzungsquelle zum selben Haushaltsgegenstand.",
+            "limitations": "Dokumentstand 15. Juli 2026, keine Bestätigung späterer Einigung und keine Anwendung deutscher GGO/eNAP auf EU-Verfahren."
+          }
+        },
+        {
+          "publisher_id": "european-parliament",
+          "publisher": "Europäisches Parlament",
+          "title": "EU-Haushalt 2028-2034: auf Erwartungen der Bürger und Herausforderungen reagieren",
+          "url": "https://www.europarl.europa.eu/news/de/press-room/20260423IPR41835/eu-long-term-budget-responding-to-citizens-expectations-and-major-challenges",
+          "canonical_domain": "europarl.europa.eu",
+          "published_at": "2026-04-28T11:01:00Z",
+          "source_function": "counter_source",
+          "summary": "Das Parlament beschloss eine Verhandlungsposition für mehr Mittel als im Kommissionsvorschlag. Es fordert Schutz für Kohäsion und Landwirtschaft sowie Transparenz und demokratische Kontrolle bei der Vereinfachung.",
+          "source_id": "960ac89138a6c934dcfb",
+          "source_item_id": "960ac89138a6c934dcfb",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://www.europarl.europa.eu/news/de/press-room/20260423IPR41835/eu-long-term-budget-responding-to-citizens-expectations-and-major-challenges",
+            "title": "EU-Haushalt 2028-2034: auf Erwartungen der Bürger und Herausforderungen reagieren",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "dd99d24d1978cad322846c15eaf693ded4a2066aefa2438b672d5f39061b37bb",
+            "relevance_note": "Eigenständige parlamentarische Gegenposition zur Reduzierung des MFR; kein Medienabdruck einer Regierungsaussage.",
+            "limitations": "Politische Position für denselben Finanzrahmen, keine verabschiedete Gesamteinigung und kein bewiesener Wirkungsgewinn."
+          }
+        },
+        {
+          "publisher_id": "european-environment-agency",
+          "publisher": "Europäische Umweltagentur",
+          "title": "European Climate Risk Assessment - EEA Report 01/2024",
+          "url": "https://www.eea.europa.eu/en/analysis/publications/european-climate-risk-assessment",
+          "canonical_domain": "eea.europa.eu",
+          "published_at": "2024-03-11T00:00:00Z",
+          "source_function": "research",
+          "summary": "Die europäische Bewertung beschreibt 36 Klimarisiken, unter anderem für Gesundheit, Wasser, Infrastruktur und finanzielle Stabilität. Zahlreiche Risiken haben nach dem Bericht kritische Niveaus erreicht.",
+          "source_id": "2402ac651ee2beee3344",
+          "source_item_id": "2402ac651ee2beee3344",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://www.eea.europa.eu/en/analysis/publications/european-climate-risk-assessment",
+            "title": "European Climate Risk Assessment - EEA Report 01/2024",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "9ba8aa875c88cabfd3e4edeb6ba8caee9acc7bb3535bdaff2b6c894c57697bba",
+            "relevance_note": "Fachlicher Risikokontext für die systemische Frage nach Vorsorge und Resilienz.",
+            "limitations": "Älterer Forschungsstand; weder Ereignisbericht zum Haushaltsstreit noch Quantifizierung der Folgen einer bestimmten Kürzung. Hier wurde die veröffentlichte Berichtszusammenfassung herangezogen, keine neue Vollauswertung des Berichts."
+          }
+        },
+        {
+          "publisher_id": "european-court-of-auditors",
+          "publisher": "Europäischer Rechnungshof",
+          "title": "Special report 09/2022: Climate spending in the 2014-2020 EU budget: Not as high as reported",
+          "url": "https://op.europa.eu/webpub/eca/special-reports/climate-mainstreaming-09-2022/en/",
+          "canonical_domain": "op.europa.eu",
+          "published_at": "2022-05-30T00:00:00Z",
+          "source_function": "counter_source",
+          "summary": "Der Rechnungshof kritisierte die Verlässlichkeit ausgewiesener Klimaausgaben 2014–2020. Die Erfassung potenzieller Beiträge ersetzte keine Prüfung des abschließenden Beitrags zu Klimazielen.",
+          "source_id": "520ff4746f4fb686ad14",
+          "source_item_id": "520ff4746f4fb686ad14",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://op.europa.eu/webpub/eca/special-reports/climate-mainstreaming-09-2022/en/",
+            "title": "Special report 09/2022: Climate spending in the 2014-2020 EU budget: Not as high as reported",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "bbc7d8f6a9c85f3d9bcaea51eb1c95f0c63da31cd1c247bae795689f4d4ba54e",
+            "relevance_note": "Historischer Prüfbericht als Gegenbefund zur Gleichsetzung von Ausgabenquote und Wirkungsnachweis.",
+            "limitations": "Autor ist der Rechnungshof; gehostet beim EU-Amt für Veröffentlichungen. Kein Beweis gleicher Mängel im Entwurf 2028-2034."
+          }
+        },
+        {
+          "publisher_id": "united-nations",
+          "publisher": "Vereinte Nationen",
+          "title": "Transforming our world: the 2030 Agenda for Sustainable Development",
+          "url": "https://sdgs.un.org/2030agenda",
+          "canonical_domain": "sdgs.un.org",
+          "published_at": "2015-09-25T00:00:00Z",
+          "source_function": "reference_framework",
+          "summary": "Die Agenda 2030 enthält Ziele zu Infrastruktur, Teilhabe, Klima, Ökosystemen, transparenten Institutionen und kohärenter Nachhaltigkeitspolitik. Die Analyse verwendet die einschlägigen Unterziele als Zielreferenzen.",
+          "source_id": "56971e99c08799ebde37",
+          "source_item_id": "56971e99c08799ebde37",
+          "primary_source": true,
+          "editorial_review": {
+            "status": "verified",
+            "story_id": "wt-995822cc0b71a7f8",
+            "url": "https://sdgs.un.org/2030agenda",
+            "title": "Transforming our world: the 2030 Agenda for Sustainable Development",
+            "checked_at": "2026-09-06T09:21:47.630Z",
+            "content_hash": "a01c0a65a7ed03ab965810ece48323074d0f2291415c1810f8835be7d65402af",
+            "relevance_note": "Originalquelle für SDG 9.1/9.4, 10.2, 13.1/13.2, 15, 16.6 und 17.14.",
+            "limitations": "Normativer Referenzrahmen, kein UN-Urteil über diesen MFR, keine Wirkungsevidenz. Unterschiedliche Zielfristen dürfen nicht pauschal auf 2034 verschoben werden."
+          }
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T09:21:47.630Z",
+          "source_fingerprint": "edd6ae7dd4bc2116c0a32bc24deb9909a5131506c69f8c4adf231ad77911bc57",
+          "title": "EU-Haushalt 2028-2034: Was neue Prioritäten für Klima, Wohlstand und Zusammenhalt bedeuten könnten",
+          "provider": "Codex editorial review",
+          "model": null,
+          "claim_ledger": [
+            {
+              "claim": "Für 2028-2034 liegen unterschiedliche Haushaltspositionen vor; ein endgültiger MFR ist damit nicht beschlossen.",
+              "type": "fact",
+              "source_ids": [
+                "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
+                "d919dd2a49efeb01e0c4",
+                "960ac89138a6c934dcfb"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Quellenstand 6. September 2026; weitere Verhandlungen können die Positionen ändern.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "Gezielte Förderung kann zusätzliche Vorsorge und langfristige Investitionen ermöglichen.",
+              "type": "impact_potential",
+              "source_ids": [],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Bedingt durch Zusätzlichkeit, geeignete Projekte und tatsächliche Umsetzung; keine beobachtete Wirkung.",
+              "date": null
+            },
+            {
+              "claim": "Entfällt wirksame Vorsorge ohne Ersatz, können Risiken und spätere Reparaturkosten verlagert werden.",
+              "type": "impact_risk",
+              "source_ids": [],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Keine Aussage, dass eine konkrete MFR-Kürzung bereits solche Schäden ausgelöst hat.",
+              "date": null
+            },
+            {
+              "claim": "Die Kommission legte ihren Vorschlag im Juli 2025 vor. Der Rat beschreibt den Umfang als nahezu zwei Billionen Euro zu laufenden Preisen.",
+              "type": "fact",
+              "source_ids": [
+                "b2bb80ed1c9d03272ad8",
+                "d919dd2a49efeb01e0c4"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Vorschlag, kein final verabschiedeter Haushaltsbetrag.",
+              "date": "2025-07-16"
+            },
+            {
+              "claim": "Die sechs Staaten verlangen mehrere hundert Milliarden Euro weniger als im Kommissionsvorschlag, ohne konkrete Programmbeträge festzulegen.",
+              "type": "fact",
+              "source_ids": [
+                "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Ihre Forderung ist keine schon beschlossene Kürzung einzelner Programme.",
+              "date": "2026-08-27"
+            },
+            {
+              "claim": "Das Parlament fordert eine Aufstockung gegenüber dem Kommissionsentwurf und Schutz für Kohäsion und Landwirtschaft.",
+              "type": "fact",
+              "source_ids": [
+                "960ac89138a6c934dcfb"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Verhandlungsposition des Parlaments, keine Haushaltseinigung.",
+              "date": "2026-04-28"
+            },
+            {
+              "claim": "Die vorgeschlagene Quote von 35 Prozent betrifft Klima und Umwelt gemeinsam; die ältere Vergleichsquote umfasst einen anderen Haushalts- und Zweckzuschnitt.",
+              "type": "fact",
+              "source_ids": [
+                "d9ff1f25c3942ae3f8cf"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Weder unmittelbarer Wirkungsvergleich noch Beleg tatsächlich erzielter Klimaverbesserungen.",
+              "date": "2025-10-09"
+            },
+            {
+              "claim": "Der Rechnungshof kritisierte die Verlässlichkeit ausgewiesener Klimaausgaben 2014-2020.",
+              "type": "fact",
+              "source_ids": [
+                "520ff4746f4fb686ad14"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Historischer Prüfgegenstand; kein Nachweis desselben Fehlers im MFR 2028-2034.",
+              "date": "2022-05-30"
+            },
+            {
+              "claim": "Die europäische Klimarisikobewertung beschreibt Risiken für Gesundheit, Wasser, Infrastruktur und finanzielle Stabilität.",
+              "type": "fact",
+              "source_ids": [
+                "2402ac651ee2beee3344"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Fachlicher Risikokontext, keine Zurechnung zu einer konkreten Haushaltsentscheidung.",
+              "date": "2024-03-11"
+            },
+            {
+              "claim": "SDG 9, 10, 13, 15, 16 und 17 liefern sachlich relevante Zielbezüge für diese Analyse.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "56971e99c08799ebde37"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Auswahl und Anwendung sind WÖk-Einordnung, keine UN-Bewertung des MFR.",
+              "date": null
+            },
+            {
+              "claim": "Wirkung ist tatsächliche Zustandsveränderung; ein Budgetansatz oder Zielbezug ist noch kein Wirkungsnachweis.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodischer Maßstab nach dem führenden WÖk-Begriffsleitfaden 1.7, keine zusätzliche empirische Feststellung.",
+              "date": "2026-08-21"
+            },
+            {
+              "claim": "Ein Vergleich der Haushaltsoptionen benötigt gleiche Preisbasis, Zeitraum und Abgrenzung sowie eine Prüfung von Zusätzlichkeit und Verteilung.",
+              "type": "analytical_inference",
+              "source_ids": [],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Ohne vollständige Programme und Gegenfaktum keine robuste Gesamtrangfolge.",
+              "date": null
+            },
+            {
+              "claim": "Nichtkompensation und Reverse Merit Order begrenzen eine positive Gesamtbewertung bei materiell verletzten Schutzgrenzen.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "WÖk-Bewertungslogik, keine amtliche EU-Haushaltsvorschrift; konkrete Grenzen sind gesondert zu begründen.",
+              "date": "2026-08-21"
+            }
+          ]
+        }
+      ],
+      "editorial_review": {
+        "status": "verified",
+        "reviewed_at": "2026-09-06T09:21:47.630Z",
+        "terminology_version": "1.7",
+        "scope": "Commission proposal, government position, Parliament counter-position, EU procedure, SDG reference, climate risks and historical audit; conditional systemic paths. No full programme evaluation.",
+        "event_source_count": 1,
+        "research_source_count": 7,
+        "distinct_research_origins": 7,
+        "news_api_calls": 0,
+        "news_api_cost_usd": 0,
+        "empirical_effect_of_mfr_established": false
+      }
+    },
+    {
       "analysis_id": "woek-analysis-39ddf0b6cc39",
       "story_id": "wt-98ff7e403362fdf9",
       "related_story_ids": [
@@ -683,11 +1418,11 @@
       "published_at": "2026-09-05T14:02:11.302Z",
       "updated_at": "2026-09-05T14:02:11.302Z",
       "version": 1,
-      "editorial_question": "Was verändert das KRITIS-Dachgesetz systemisch am Schutz kritischer Infrastrukturen – und wo endet der belegte Wirkungsanspruch der Regelung?",
+      "editorial_question": "Was verändert das KRITIS-Dachgesetz systemisch am Schutz kritischer Infrastrukturen - und wo endet der belegte Wirkungsanspruch der Regelung?",
       "analysis_type": "system_analysis",
       "title": "KRITIS-Dachgesetz: Einheitliche Mindeststandards für kritische Infrastrukturen und ihre Grenzen",
       "subtitle": "Das Gesetz ordnet Schutz, Zuständigkeiten und Evaluierung neu. Ob daraus mehr Resilienz wird, hängt am Vollzug.",
-      "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt – die Wirkung bleibt vom Vollzug abhängig.",
+      "teaser": "Das KRITIS-Dachgesetz setzt bundeseinheitliche Mindeststandards. Der zusätzliche Nutzen liegt im Systemzuschnitt - die Wirkung bleibt vom Vollzug abhängig.",
       "seo_description": "KRITIS-Dachgesetz im Wirkungscheck: bundeseinheitliche Mindeststandards, Zuständigkeiten, Resilienz und offene Vollzugsfragen im Systemvergleich.",
       "additional_value": "Der Mehrwert dieser Analyse liegt nicht in der Wiederholung des Gesetzesinhalts, sondern in der Einordnung des systemischen Zusatznutzens: Das Gesetz adressiert nicht nur einzelne Betreiber, sondern eine quer über Sektoren verlaufende Schutzarchitektur. Damit verschiebt sich der Blick von punktuellen Sicherheitsmaßnahmen zu einer staatlich gerahmten Resilienzordnung. Zugleich trennt die Analyse sauber zwischen dem normativen Ziel mehr Schutz und der noch nicht belegten tatsächlichen Wirkung im Alltag.",
       "research_summary": "Gesichert aus den gelieferten Quellen ist, dass das KRITIS-Dachgesetz bundesweit und sektorübergreifend Mindeststandards für den Schutz kritischer Infrastrukturen festlegt und seit März 2026 in Kraft ist. Die Bundesregierung nennt als betroffene Bereiche unter anderem Energie, Transport und Verkehr, Gesundheit und Trinkwasser. Im parlamentarischen Verfahren wurden Änderungen eingeführt: Länder können weitere kritische Anlagen identifizieren, das Bundesinnenministerium soll Kriterien und Verfahren per Rechtsverordnung mit Bundesratszustimmung festlegen, und eine Evaluierung ist bereits in zwei Jahren vorgesehen. Journalistische Begleitquellen beschreiben kritische Infrastruktur als verletzlich und verweisen auf Risiken wie Cyberangriffe, Sabotage und Drohnen; eine zweite Quelle kritisiert, das Gesetz sei bisher nur eine leere Hülle und die Umsetzung werde rasch benötigt. Belege für eingetretene Wirkungen, etwa sinkende Ausfallraten oder nachweislich höhere Sicherheit, liefern die Quelle",
@@ -993,7 +1728,7 @@
           "source_id": "f98ce2c91683bbdc26740ed46e97d2efcba70d1582da0697ffffd3508851f28f",
           "registry_source_id": "dlf-gesellschaft",
           "publisher_id": "deutschlandfunk",
-          "publisher": "Deutschlandfunk – Gesellschaft",
+          "publisher": "Deutschlandfunk - Gesellschaft",
           "title": "IT-Sicherheitsexperte Atug mahnt bei Schutz der Infrastruktur zur Eile",
           "url": "https://www.deutschlandfunk.de/debatte-um-schutz-kritischer-infrastruktur-102.html",
           "published_at": "2026-09-03T10:12:04.000Z",
@@ -1212,7 +1947,7 @@
       "title": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
       "subtitle": "Zwischen Verdachtslage, Fahndung und kritischer Infrastruktur ist der zusätzliche Zusammenhang wichtiger als die schnelle Zuschreibung.",
       "teaser": "In Dormagen steht ein Umspannwerk im Fokus der Ermittler. Der Fall zeigt, wie schnell ein Verdacht an kritischer Infrastruktur Schutzaufwand, Risikoerwartungen und öffentliche Aufmerksamkeit verschiebt.",
-      "seo_description": "Dormagen: Verdacht an Umspannwerk, Fahndung und Schutz kritischer Strominfrastruktur – die WÖK-Analyse zum systemischen Zusammenhang.",
+      "seo_description": "Dormagen: Verdacht an Umspannwerk, Fahndung und Schutz kritischer Strominfrastruktur - die WÖK-Analyse zum systemischen Zusammenhang.",
       "additional_value": "Die Analyse trennt belegte Tatsachen von Zuschreibungen und zeigt, wie ein einzelner Verdachtsfall an kritischer Infrastruktur Schutzlogiken, Resilienzfragen und Sicherheitswahrnehmung verschiebt, ohne Schaden oder Täterhypothesen zu überdehnen.",
       "research_summary": "Aus den gelieferten Quellen gesichert sind der Fund eines verdächtigen Gegenstands an einem Umspannwerk in Dormagen, die polizeiliche Einordnung als mögliches Sabotagedelikt nach Eingang eines Bekennerschreibens sowie eine Fahndung nach einem Mann aus Gevelsberg. Mehrere Berichte nennen außerdem weitere Vorfälle an anderen Umspannwerken und in späteren Meldungen weitere Ermittlungen in NRW, Brandenburg und Sachsen. Nicht belegt ist in den gelieferten Texten ein tatsächlich eingetretener Schaden am Dormagener Umspannwerk oder die unabhängige Echtheit des Bekennerschreibens.",
       "sections": [
@@ -1463,7 +2198,7 @@
         "issues": [],
         "recommended_title": "Dormagen: Was der Sabotageverdacht an einem Umspannwerk systemisch bedeutet",
         "recommended_summary": "Der Verdachtsfall an einem Dormagener Umspannwerk verändert vor allem Ermittlungs-, Schutz- und Wahrnehmungslogiken. Belegt sind Fund, Fahndung und polizeiliche Einordnung; ein Schaden nicht.",
-        "recommended_meta_description": "Dormagen: Verdachtsfall an einem Umspannwerk, Fahndung und Schutz kritischer Strominfrastruktur – die WÖK-Analyse zum systemischen Zusammenhang."
+        "recommended_meta_description": "Dormagen: Verdachtsfall an einem Umspannwerk, Fahndung und Schutz kritischer Strominfrastruktur - die WÖK-Analyse zum systemischen Zusammenhang."
       },
       "reading_time_minutes": 5,
       "source_snapshot": [
@@ -1662,7 +2397,7 @@
           "registry_source_id": "wiwo-schlagzeilen",
           "publisher_id": "wirtschaftswoche",
           "publisher": "WirtschaftsWoche",
-          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
+          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt - NRW-Verdächtiger flüchtig",
           "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
           "published_at": "2026-09-04T18:30:00.000Z",
           "primary_source": false
@@ -2021,7 +2756,7 @@
       "published_at": "2026-09-05T14:17:38.262Z",
       "updated_at": "2026-09-05T18:45:53.209Z",
       "version": 2,
-      "editorial_question": "Was bedeutet die angekündigte dreitägige Angriffspause auf Kyjiw im Zusammenhang mit den neu aufgenommenen Gesprächen zwischen Russland und den USA – als diplomatischer Vorgang, als Sicherheitsereignis und als möglicher Wirkungsraum?",
+      "editorial_question": "Was bedeutet die angekündigte dreitägige Angriffspause auf Kyjiw im Zusammenhang mit den neu aufgenommenen Gesprächen zwischen Russland und den USA - als diplomatischer Vorgang, als Sicherheitsereignis und als möglicher Wirkungsraum?",
       "analysis_type": "case_analysis",
       "title": "Drei Tage Angriffspause auf Kyjiw: Was die Gespräche in Moskau für Sicherheit und Verhandlungen bedeuten",
       "subtitle": "Zwischen diplomatischem Signal und realer Entlastung bleibt offen, ob die angekündigte Pause hält und ob daraus mehr als ein kurzer Verhandlungsmoment wird.",
@@ -2042,7 +2777,7 @@
           "id": "system",
           "title": "Systemischer Zusatznutzen: Warum dieser Vorgang über eine Einzelnachricht hinausgeht",
           "paragraphs": [
-            "Der systemische Zusatznutzen liegt darin, dass sich hier drei Ebenen überlagern: Kriegsgeschehen, Vermittlungspolitik und kurzfristige Sicherheitslage einer Großstadt. Eine angekündigte Unterbrechung der Angriffe kann, wenn sie tatsächlich eingehalten wird, das unmittelbare Gefährdungsniveau für Menschen in Kyjiw senken. Das wäre eine tatsächliche Zustandsveränderung – aber nur dann, wenn die Pause praktisch wirksam wird.",
+            "Der systemische Zusatznutzen liegt darin, dass sich hier drei Ebenen überlagern: Kriegsgeschehen, Vermittlungspolitik und kurzfristige Sicherheitslage einer Großstadt. Eine angekündigte Unterbrechung der Angriffe kann, wenn sie tatsächlich eingehalten wird, das unmittelbare Gefährdungsniveau für Menschen in Kyjiw senken. Das wäre eine tatsächliche Zustandsveränderung - aber nur dann, wenn die Pause praktisch wirksam wird.",
             "Zugleich erzeugt die Kombination aus Moskau-Gesprächen und geplanter Weiterreise nach Kyjiw einen Verhandlungsrahmen mit möglicher Signalwirkung. Das ist zunächst ein Wirkungs- oder Resonanzpotenzial, kein Wirkungsnachweis. Ob daraus Substanz entsteht, hängt daran, ob die Gesprächskanäle belastbare Zusagen hervorbringen und ob die Ankündigung auf dem Boden der militärischen Realität Bestand hat."
           ]
         },
@@ -3083,7 +3818,7 @@
           "registry_source_id": "wiwo-schlagzeilen",
           "publisher_id": "wirtschaftswoche",
           "publisher": "WirtschaftsWoche",
-          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
+          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt - NRW-Verdächtiger flüchtig",
           "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
           "published_at": "2026-09-04T18:30:00.000Z",
           "primary_source": false
@@ -3503,7 +4238,7 @@
       "published_at": "2026-09-05T14:51:51.466Z",
       "updated_at": "2026-09-05T14:51:51.466Z",
       "version": 1,
-      "editorial_question": "Was zeigt die Rettung zweier Wasserkraftarbeiter in Nepal über die Verwundbarkeit von Infrastruktur, Arbeitsschutz und Krisenkoordination in einer Flutlage – und was lässt sich daraus systemisch, aber quellengebunden, ableiten?",
+      "editorial_question": "Was zeigt die Rettung zweier Wasserkraftarbeiter in Nepal über die Verwundbarkeit von Infrastruktur, Arbeitsschutz und Krisenkoordination in einer Flutlage - und was lässt sich daraus systemisch, aber quellengebunden, ableiten?",
       "analysis_type": "case_analysis",
       "title": "Rettung in Nepal: Was der Tunnel-Fall über Infrastruktur, Arbeitsschutz und Krisenkoordination zeigt",
       "subtitle": "Zwei Arbeiter wurden lebend aus einem blockierten Wasserkrafttunnel geborgen; über die Zahl weiterer Betroffener gehen die Angaben auseinander.",
@@ -4067,7 +4802,7 @@
       "published_at": "2026-09-05T17:54:23.215Z",
       "updated_at": "2026-09-05T17:54:23.215Z",
       "version": 1,
-      "editorial_question": "Was verändert die Fahndung nach einem 48-jährigen Tatverdächtigen im Kontext möglicher Sabotage an Umspannwerken systemisch – über den Einzelfall hinaus für Sicherheit, Versorgung und Vertrauen in kritische Infrastruktur?",
+      "editorial_question": "Was verändert die Fahndung nach einem 48-jährigen Tatverdächtigen im Kontext möglicher Sabotage an Umspannwerken systemisch - über den Einzelfall hinaus für Sicherheit, Versorgung und Vertrauen in kritische Infrastruktur?",
       "analysis_type": "system_analysis",
       "title": "Fahndung nach Umspannwerk-Sabotage: Was der Fall für kritische Infrastruktur verändert",
       "subtitle": "Die Ermittlungen verdichten sich, doch der belastbare Wirkzusammenhang bleibt vorerst begrenzt",
@@ -4142,7 +4877,7 @@
         },
         {
           "id": "unsicherheit",
-          "title": "Unsicherheit: Was die Evidenz trägt – und was nicht",
+          "title": "Unsicherheit: Was die Evidenz trägt - und was nicht",
           "paragraphs": [
             "Die Quellenlage ist journalistisch brauchbar, aber begrenzt. Es liegen mehrere Berichte vor, doch kein mitgelieferter Behörden-Originalbeleg. Die Aussagen zur Rolle des 48-Jährigen, zur Verbindung zwischen den Vorfällen und zur rechtlichen Bewertung bleiben daher nur so stark, wie die Berichte sie tragen. Besonders wichtig: In mehreren Texten ist die Formulierung vorsichtig oder vorläufig, etwa mit möglicherweise, offenbar oder Verdacht.",
             "Nicht belegt sind eine gerichtliche Feststellung, eine abschließende Täterzuordnung oder ein tatsächlich eingetretener Versorgungs- oder Infrastrukturschaden. Belegt ist vor allem eine Verdichtung von Ermittlungen und Schutzmaßnahmen. Das reicht für eine systemische Analyse, aber nicht für eine harte Zurechnung von Schadenswirkung."
@@ -4646,7 +5381,7 @@
           "registry_source_id": "wiwo-schlagzeilen",
           "publisher_id": "wirtschaftswoche",
           "publisher": "WirtschaftsWoche",
-          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt – NRW-Verdächtiger flüchtig",
+          "title": "Umspannwerk: „Sprengvorrichtungen“ in Sachsen entdeckt - NRW-Verdächtiger flüchtig",
           "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
           "published_at": "2026-09-04T18:30:00.000Z",
           "primary_source": false
@@ -5047,11 +5782,11 @@
       "published_at": "2026-09-05T20:51:40.373Z",
       "updated_at": "2026-09-05T20:51:40.373Z",
       "version": 1,
-      "editorial_question": "Was verändert die Veröffentlichung mutmaßlich gestohlener Daten aus dem Berliner Landesnetz systemisch – für Verwaltung, Betroffene und die Schutzlogik öffentlicher Infrastruktur – und was bleibt dabei unbewiesen?",
+      "editorial_question": "Was verändert die Veröffentlichung mutmaßlich gestohlener Daten aus dem Berliner Landesnetz systemisch - für Verwaltung, Betroffene und die Schutzlogik öffentlicher Infrastruktur - und was bleibt dabei unbewiesen?",
       "analysis_type": "system_analysis",
       "title": "Veröffentlichte Daten aus dem Berliner Landesnetz: Was der Vorfall für Verwaltung und Schutzlogik verändert",
       "subtitle": "Der gesicherte Kern ist die Veröffentlichung mutmaßlich gestohlener Daten; der größere Zusammenhang liegt in Prüfungslasten, Vertrauensverlust und möglicher Verwundbarkeit sensibler Informationen.",
-      "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung – nicht der gesamte Inhalt oder ein Missbrauch.",
+      "teaser": "Nach dem Angriff auf das Berliner Landesnetz sollen Daten im Darknet veröffentlicht worden sein. Belegt sind Veröffentlichung und Prüfung - nicht der gesamte Inhalt oder ein Missbrauch.",
       "seo_description": "Berliner Landesnetz: Veröffentlichung mutmaßlich gestohlener Daten, was belegt ist, welche Risiken plausibel sind und was offen bleibt.",
       "additional_value": "Die Analyse trennt den belegten Vorgang von den noch offenen Fragen und ordnet ihn als Verwaltungs-, Sicherheits- und Demokratieproblem ein: nicht weil Reichweite schon Wirkung wäre, sondern weil veröffentlichte sensible Daten zusätzliche Prüf-, Schutz- und Informationspflichten auslösen können. Der Zusatznutzen liegt in der sauberen Trennung von Fakt, Risiko und möglicher Folgewirkung.",
       "research_summary": "Die Quellenlage ist schmal, aber konsistent in einem Punkt: Nach dem Angriff auf das Berliner Landesnetz sollen Daten veröffentlicht worden sein, der Senat prüft sie intensiv und will Betroffene bei Bedarf informieren. rbb nennt rund 1,4 Millionen Datensätze und ein Erpressungsbegehren über 30 Bitcoin. Deutschlandfunk berichtet unter Berufung auf den Tagesspiegel, unter den Dateien könnten sich sicherheitsrelevante Unterlagen zu Zivilschutz, besonders zu schützenden Objekten und Rüstungsunternehmen befinden; amtlich bestätigt ist das nicht. Eine tatsächliche Nutzung, Weiterverbreitung oder ein konkreter Missbrauch der Daten ist in den gelieferten Quellen nicht belegt.",
@@ -5069,7 +5804,7 @@
           "title": "Systemischer Zusatznutzen: Warum diese Veröffentlichung mehr ist als ein weiterer Cybervorfall",
           "paragraphs": [
             "Systemisch relevant wird der Fall nicht durch die bloße Schlagzahl der Meldung, sondern durch den möglichen Charakter der Daten. Wenn eine Veröffentlichung Verwaltungsdaten, Schutzbedarfe oder Notfallinformationen berührt, verschiebt sich das Problem von einem reinen Vertraulichkeitsbruch hin zu einer Frage der öffentlichen Schutzarchitektur. Dann geht es nicht nur um einzelne Datensätze, sondern um die Frage, welche Informationen im Ernstfall kriminell oder strategisch verwertet werden könnten.",
-            "Der zusätzliche systemische Nutzen einer Analyse liegt daher in der Trennung von drei Ebenen: erstens der belegten Veröffentlichung, zweitens dem noch ungesicherten Inhalt und drittens der möglichen Folgewirkung auf die Handlungsfähigkeit öffentlicher Stellen. Genau diese Trennung verhindert Überinterpretation. Reichweite ist nicht automatisch Wirkung; erst eine tatsächliche Zustandsveränderung – etwa Missbrauch, Erpressungserfolg oder operative Ausnutzung – wäre als Wirkung zu werten."
+            "Der zusätzliche systemische Nutzen einer Analyse liegt daher in der Trennung von drei Ebenen: erstens der belegten Veröffentlichung, zweitens dem noch ungesicherten Inhalt und drittens der möglichen Folgewirkung auf die Handlungsfähigkeit öffentlicher Stellen. Genau diese Trennung verhindert Überinterpretation. Reichweite ist nicht automatisch Wirkung; erst eine tatsächliche Zustandsveränderung - etwa Missbrauch, Erpressungserfolg oder operative Ausnutzung - wäre als Wirkung zu werten."
           ]
         },
         {
@@ -5100,7 +5835,7 @@
           "id": "verteilung",
           "title": "Verteilung: Wer trägt die Last des Vorfalls?",
           "paragraphs": [
-            "Die Last verteilt sich ungleich. Auf Seiten des Staates entstehen Prüf-, Schutz- und Kommunikationskosten. Auf Seiten möglicher Betroffener kann schon die bloße Unsicherheit über die Veröffentlichung persönlicher Daten Aufwand, Stress und Vorsorgeverhalten auslösen. Auf Seiten sicherheitsrelevanter Einrichtungen könnte – falls die kolportierten Inhalte stimmen – zusätzlicher Schutzbedarf entstehen.",
+            "Die Last verteilt sich ungleich. Auf Seiten des Staates entstehen Prüf-, Schutz- und Kommunikationskosten. Auf Seiten möglicher Betroffener kann schon die bloße Unsicherheit über die Veröffentlichung persönlicher Daten Aufwand, Stress und Vorsorgeverhalten auslösen. Auf Seiten sicherheitsrelevanter Einrichtungen könnte - falls die kolportierten Inhalte stimmen - zusätzlicher Schutzbedarf entstehen.",
             "Verteilungspolitisch wichtig ist hier die Unterscheidung zwischen allgemeinem Verwaltungsrisiko und besonders sensiblen Schutzgütern. Wenn in den Dateien tatsächlich Informationen zu Krankenhäusern, Tanklagern oder Notstromanlagen enthalten wären, wäre die Betroffenheit nicht gleichmäßig, sondern konzentriert bei Einrichtungen mit systemischer Funktion. Das ist jedoch nur als berichtetes, noch unbestätigtes Szenario zu behandeln."
           ]
         },
@@ -5528,12 +6263,12 @@
       "published_at": "2026-09-05T21:07:03.109Z",
       "updated_at": "2026-09-05T21:07:03.109Z",
       "version": 1,
-      "editorial_question": "Was bedeutet die von der EU-Kommission gemeldete Brandfläche von fast 700.000 Hektar in diesem Sommer für Belastung, Resilienz und Prioritäten in der EU – und was lässt sich daraus noch nicht ableiten?",
+      "editorial_question": "Was bedeutet die von der EU-Kommission gemeldete Brandfläche von fast 700.000 Hektar in diesem Sommer für Belastung, Resilienz und Prioritäten in der EU - und was lässt sich daraus noch nicht ableiten?",
       "analysis_type": "system_analysis",
       "title": "Fast 700.000 Hektar Brandfläche: Was die EU-Waldbrandsaison 2026 über Belastung und Resilienz zeigt",
       "subtitle": "Die Kommission meldet eine außergewöhnlich große verbrannte Fläche. Der zusätzliche Erkenntniswert liegt weniger in der Zahl selbst als in ihrem systemischen Wirkpfad.",
       "teaser": "Die EU-Kommission spricht von fast 700.000 Hektar verbrannter Fläche in diesem Sommer. Das zeigt vor allem, wie stark Brandereignisse Schutz, Anpassung und Krisenfähigkeit unter Druck setzen können.",
-      "seo_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt – was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt.",
+      "seo_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt - was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt.",
       "additional_value": "Der zusätzliche Wert dieser Analyse liegt darin, die gemeldete Brandfläche nicht als bloße Schlagzeile zu behandeln, sondern als Hinweis auf einen möglichen Belastungszustand des Systems aus Bevölkerungsschutz, Umwelt, Infrastruktur und öffentlicher Steuerung. Die Meldung ist ein Zustandsindikator, aber kein Wirkungsnachweis für Ursachen, Langfristtrends oder politische Wirksamkeit. Genau diese Trennung macht sichtbar, wo die Zahl belastbar ist und wo nicht.",
       "research_summary": "Im vorliegenden Material liegt als maßgebliche Quelle die Rede der Kommissarin Lahbib im Europäischen Parlament vor. Darin heißt es, in diesem Sommer seien in der EU bereits fast 700.000 Hektar verbrannt, mehr als der Jahresdurchschnitt der vergangenen zwei Jahrzehnte. Ergänzend liegen zwei weitere institutionelle Quellen vor, die jedoch keine zusätzlichen Angaben zur Waldbrandsaison enthalten. Der Kernbefund ist damit eng begrenzt: Es gibt eine amtliche Behauptung über eine große verbrannte Fläche und eine vergleichende Einordnung durch die Kommission. Nicht belegt sind im Material die genaue Methodik, die räumliche und zeitliche Abgrenzung, die Ursachen der Brände, regionale Verteilung, Folgeschäden oder eine längerfristige Veränderung des Brandgeschehens. Die Analyse bleibt deshalb strikt bei der Zustandsbeschreibung und dem systemischen Zusammenhang, ohne aus der Zahl eine weitergehende Kausalität abzuleiten.",
       "sections": [
@@ -5756,7 +6491,7 @@
         "issues": [],
         "recommended_title": "Fast 700.000 Hektar Brandfläche: Was die EU-Waldbrandsaison 2026 über Belastung und Resilienz zeigt",
         "recommended_summary": "Die EU-Kommission meldet fast 700.000 Hektar verbrannte Fläche. Die Zahl zeigt vor allem Belastung, aber noch keinen Beweis für Ursachen, Folgen oder langfristige Trends.",
-        "recommended_meta_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt – was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt."
+        "recommended_meta_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt - was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt."
       },
       "reading_time_minutes": 6,
       "source_snapshot": [
@@ -5764,7 +6499,7 @@
           "source_id": "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
           "registry_source_id": "eu-kommission-presse",
           "publisher_id": "eu-kommission-presse",
-          "publisher": "Europäische Kommission – Press Corner",
+          "publisher": "Europäische Kommission - Press Corner",
           "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
           "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
           "published_at": "2026-09-01T16:09:08.000Z",
@@ -5784,7 +6519,7 @@
           "source_id": "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6",
           "registry_source_id": "eu-kommission-presse",
           "publisher_id": "eu-kommission-presse",
-          "publisher": "Europäische Kommission – Press Corner",
+          "publisher": "Europäische Kommission - Press Corner",
           "title": "Tägliche Nachrichten 02 / 09 / 2026",
           "url": "https://ec.europa.eu/commission/presscorner/detail/de/mex_26_1789",
           "published_at": "2026-09-02T07:22:18.000Z",
@@ -5940,7 +6675,7 @@
       "analysis_type": "system_analysis",
       "title": "Deutscher Kapazitätsmechanismus: Was die EU-Genehmigung für Stromsicherheit und Systemrisiken bedeutet",
       "subtitle": "Zwischen Versorgungssicherheit, Investitionsanreizen und offenen Verteilungsfragen liegt der eigentliche Wirkungsraum der Entscheidung.",
-      "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat – und was noch offen bleibt.",
+      "teaser": "Die EU-Kommission hat einen deutschen Kapazitätsmechanismus genehmigt. Die Analyse ordnet ein, welche Systemwirkung das potenziell hat - und was noch offen bleibt.",
       "seo_description": "EU genehmigt deutschen Kapazitätsmechanismus: Einordnung zu Stromsicherheit, Kosten, Flexibilität, Risiken und offenen Wirkungen ab 2031.",
       "additional_value": "Die Analyse trennt Genehmigung, Wirkungspotenzial und tatsächliche Wirkung. Sie zeigt, dass die Entscheidung vor allem die Architektur der Stromversorgung betrifft, aber noch keine belegte Zustandsveränderung im System nachweist.",
       "research_summary": "Die EU-Kommission hat am 2. September 2026 einen ab 2031 verfügbaren deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften genehmigt. Laut Kommission soll die Maßnahme ausreichende Kapazitäten für Erzeugung, Speicherung und flexiblen Verbrauch von Strom absichern; die geschätzten Kosten liegen bei 15,6 bis 35,2 Milliarden Euro. Die Bundesregierung teilt ergänzend mit, dass das Gesetz für neue Stromkapazitäten am 22. Juli in Kraft getreten sei. Aus den Quellen ergibt sich damit eine klare regulatorische Weichenstellung, aber noch keine belegte tatsächliche Wirkung auf Versorgungslage, Emissionen, Marktpreise oder Verteilungseffekte.",
@@ -6216,7 +6951,7 @@
           "source_id": "206204ebc75209a89584",
           "registry_source_id": "eu-kommission-presse",
           "publisher_id": null,
-          "publisher": "Europäische Kommission – Press Corner",
+          "publisher": "Europäische Kommission - Press Corner",
           "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
           "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
           "published_at": "2026-09-01T22:00:00.000Z",
@@ -6227,7 +6962,7 @@
           "registry_source_id": "bundesregierung-kompakt",
           "publisher_id": null,
           "publisher": "Bundesregierung kompakt",
-          "title": "Für eine verlässliche Stromversorgung – auch in Zukunft",
+          "title": "Für eine verlässliche Stromversorgung - auch in Zukunft",
           "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
           "published_at": "2026-09-03T11:00:00.000Z",
           "primary_source": true
@@ -6414,12 +7149,12 @@
       "published_at": "2026-09-06T07:19:34.655Z",
       "updated_at": "2026-09-06T07:19:34.655Z",
       "version": 1,
-      "editorial_question": "Was bedeutet der Bericht über wachsende hybride Risiken für Unternehmen systemisch – jenseits der Schlagzeile?",
+      "editorial_question": "Was bedeutet der Bericht über wachsende hybride Risiken für Unternehmen systemisch - jenseits der Schlagzeile?",
       "analysis_type": "case_analysis",
       "title": "Wachsende hybride Risiken für Unternehmen: Was der Bericht über Resilienz und Versorgungssicherheit zeigt",
       "subtitle": "Cyberangriffe, Desinformation, Spionage und Sabotage werden als Bedrohungsbündel beschrieben; die Datengrundlage bleibt im Auszug offen.",
       "teaser": "Der Bericht verweist auf wachsende Risiken für Unternehmen und mögliche Folgen für Strom und Wasser. Systemisch interessant ist weniger die Reichweite als der Wirkpfad in Resilienz, Schutzaufwand und Informationsintegrität.",
-      "seo_description": "Hybride Risiken für Unternehmen: Der Bericht zeigt mögliche Folgen für Resilienz, Versorgung und Informationsintegrität – mit offener Datengrundlage.",
+      "seo_description": "Hybride Risiken für Unternehmen: Der Bericht zeigt mögliche Folgen für Resilienz, Versorgung und Informationsintegrität - mit offener Datengrundlage.",
       "additional_value": "Der Zusatznutzen liegt in der Trennung von Meldung, Risikobeschreibung und tatsächlicher Wirkung: Der Text macht sichtbar, dass die Aussage vor allem ein Wirkungspotenzial beschreibt, noch keine belegte Veränderung. So wird erkennbar, wo Unternehmen, kritische Versorgung und demokratische Informationsräume tatsächlich berührt sein könnten und wo die Evidenz im Material endet.",
       "research_summary": "Vorliegend sind zwei journalistische Berichte mit gleichem Kernbefund: Wirtschaftsforscher sehen wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage; genannt werden mögliche Folgen für Strom- und Wasserversorgung. Eine unabhängige Primärquelle, Methodik oder eine belastbare Datengrundlage zur Aussage „jedes fünfte Unternehmen“ liegen im Material nicht vor. Deshalb bleibt die Analyse bewusst eng an der Meldung und ordnet vor allem das systemische Wirkungspotenzial, nicht eine beobachtete Wirkung, ein.",
       "sections": [
@@ -6481,7 +7216,7 @@
         },
         {
           "id": "szenarien",
-          "title": "Szenarien: Was sich aus dem Befund ableiten lässt – und was nicht",
+          "title": "Szenarien: Was sich aus dem Befund ableiten lässt - und was nicht",
           "paragraphs": [
             "Wenn die beschriebenen Risiken verbreiteter sind als im Auszug erkennbar, könnten Unternehmen dauerhaft mehr in Schutzarchitektur investieren, Notfallprozesse anpassen und die Zusammenarbeit mit Infrastruktur- und Sicherheitsbehörden verstärken. Das wäre eine Transformationswirkung in Richtung mehr Resilienz. Es ist aber nur ein Szenario, kein Befund aus dem Material.",
             "Ein anderes Szenario ist eine Diskrepanz zwischen wahrgenommenem und tatsächlich gemessenem Risiko. Dann würde der Diskurs stärker wachsen als die Lage selbst. Auch das wäre relevant, weil Wahrnehmung Handlungen auslöst. Doch ohne methodische Angaben lässt sich nicht entscheiden, welches Szenario näherliegt. Die Analyse bleibt daher offen und vorsichtig."
@@ -6656,7 +7391,7 @@
         "issues": [],
         "recommended_title": "Wachsende hybride Risiken für Unternehmen: Was der Bericht über Resilienz und Versorgungssicherheit zeigt",
         "recommended_summary": "Der Bericht beschreibt Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage. Die Analyse trennt das berichtete Potenzial von belegter Wirkung.",
-        "recommended_meta_description": "Hybride Risiken für Unternehmen: Der Bericht zeigt mögliche Folgen für Resilienz, Versorgung und Informationsintegrität – mit offener Datengrundlage."
+        "recommended_meta_description": "Hybride Risiken für Unternehmen: Der Bericht zeigt mögliche Folgen für Resilienz, Versorgung und Informationsintegrität - mit offener Datengrundlage."
       },
       "reading_time_minutes": 6,
       "source_snapshot": [
@@ -6798,37 +7533,1510 @@
           ]
         }
       ]
+    },
+    {
+      "analysis_id": "woek-analysis-219f434ceb61",
+      "story_id": "wt-cf03acddb911d861",
+      "related_story_ids": [
+        "wt-cf03acddb911d861"
+      ],
+      "related_case_id": null,
+      "slug": "angriffe-auf-umspannwerke-warum-der-schutz-kritischer-infrastruktur-ein-systemthem-219f43",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "2f2b82710b0f861b0a1ae02287680ad6f589dd63664b20ca92312f5602829f66",
+      "candidate_score": 73,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-06T11:53:33.246Z",
+      "updated_at": "2026-09-06T11:53:33.246Z",
+      "version": 1,
+      "editorial_question": "Wie verändert die Reihe von Angriffen und Sabotagehinweisen gegen Umspannwerke und der politische Ruf nach schnellerem Schutz die Verwundbarkeit kritischer Infrastruktur im gekoppelten System aus Energieversorgung, Sicherheit, Wirtschaft un",
+      "analysis_type": "system_analysis",
+      "title": "Angriffe auf Umspannwerke: Warum der Schutz kritischer Infrastruktur ein Systemthema wird",
+      "subtitle": "Özdemirs Ruf nach Tempo trifft auf eine Lage, in der Stromversorgung, Sicherheit und Zuständigkeiten enger zusammenhängen als einzelne Vorfälle vermuten lassen.",
+      "teaser": "Mehrere Angriffe auf Umspannwerke und ein knapp vereitelter Drohnenangriff zeigen: Der Schutz kritischer Infrastruktur ist nicht nur Polizeifrage, sondern ein System aus Technik, Recht und Koordination.",
+      "seo_description": "Angriffe auf Umspannwerke: Systemische Analyse zu Schutz kritischer Infrastruktur, Versorgungssicherheit, Zuständigkeiten und Resilienz.",
+      "additional_value": "Die Analyse trennt die berichteten Vorfälle von der politischen Reaktion und ordnet sie als Sicherheits- und Resilienzfrage im gekoppelten System von Energieversorgung, Unternehmen, Behörden und Öffentlichkeit ein. Sie zeigt, wo tatsächlich Zustandsveränderungen belegt sind und wo nur Wirkpotenzial beschrieben werden kann.",
+      "research_summary": "Aus dem Material gesichert sind zwei Ebenen: Erstens mehrere Angriffe beziehungsweise versuchte Sabotageakte an Umspannwerken sowie ein knapp gescheiterter Drohnenangriff auf den Flughafen Leipzig/Halle, die in den Berichten als Anlass für Özdemirs Forderung nach schnellerem Schutz und engerer Länderkooperation genannt werden. Zweitens kündigt das Innenministerium laut Bericht einen nationalen Schutzschild mit Cyberdome, neue schnell verlegbare Einheiten und mehr rechtliche Möglichkeiten für Unternehmen zur Drohnenabwehr an. Belegt ist außerdem der Fall Reutlingen mit zeitweiligem Stromausfall für 7.600 Haushalte nach Bränden in zwei Umspannwerken sowie die Nennung von Vorfällen in Brandenburg, Nordrhein-Westfalen und Sachsen, dort mit zwölf Sprengstoffvorrichtungen. Eine tatsächliche Wirkung der angekündigten Maßnahmen ist nicht belegt; es lassen sich nur plausible Wirkpfade und Risiken beschreiben. Die systemische Relevanz liegt darin, dass Störungen an Umspannwerken nicht isoliert b",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: mehrere Vorfälle, ein politischer Beschleunigungsimpuls",
+          "paragraphs": [
+            "Der Auslöser der Debatte sind keine abstrakten Sicherheitsüberlegungen, sondern konkrete Vorfälle: In mehreren Bundesländern waren Umspannwerke Ziel von Angriffen oder versuchten Sabotageakten. Im Bericht wird außerdem ein knapp gescheiterter Drohnenangriff auf den Flughafen Leipzig/Halle genannt. Baden-Württembergs Ministerpräsident Cem Özdemir fordert deshalb Tempo beim Schutz sicherheitsrelevanter Infrastruktur und eine engere Zusammenarbeit der Länder.",
+            "Hinzu kommt ein konkreter Schadensfall aus Reutlingen: Nach Bränden in zwei Umspannwerken fiel dort Anfang Juni zeitweise die Stromversorgung für 7.600 Haushalte aus. Der Bericht nennt zudem Vorfälle in Brandenburg, Nordrhein-Westfalen und Sachsen; in Sachsen fanden Ermittler laut Quelle zwölf Sprengstoffvorrichtungen. Diese Angaben markieren noch nicht automatisch ein einheitliches Lagebild, zeigen aber eine Häufung von Ereignissen an einem besonders empfindlichen Infrastrukturschnittpunkt."
+          ],
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "system",
+          "title": "System: Stromnetze sind Knoten mit Kaskadenpotenzial",
+          "paragraphs": [
+            "Umspannwerke sind systemisch keine Randorte. Sie verbinden Erzeugung, Transport und regionale Verteilung von Strom. Wird an einem solchen Knoten gezielt Schaden verursacht, kann das nicht nur einen lokalen Ausfall auslösen, sondern Folgeeffekte in andere Sektoren tragen: Produktion, Logistik, Kommunikation, Verkehr und öffentliche Sicherheit hängen in unterschiedlicher Tiefe an einer stabilen Energieversorgung.",
+            "Die WÖk-Sicht fragt deshalb nicht nur, ob ein Angriff stattgefunden hat, sondern welche Zustandsänderungen er in der Kette auslösen kann. Der erste Ordnungseffekt ist die physische Störung am Ort des Angriffs. Der zweite Ordnungseffekt betrifft die Unterbrechung oder Umleitung von Versorgung. Der dritte Ordnungseffekt liegt in der Resilienzfrage: Werden Schutzstandards, Zuständigkeiten und Reaktionszeiten dauerhaft verbessert, verändert sich das System selbst. Genau dort liegt der zusätzliche Nutzen der Analyse gegenüber einem bloßen Lagebericht."
+          ],
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: drei Perspektiven auf denselben Sicherheitsfall",
+          "paragraphs": [
+            "Für Menschen ist der unmittelbare Bezug klar: Stromausfälle gefährden Alltag, Versorgung, Arbeit und im Einzelfall auch Sicherheit. Der Fall Reutlingen zeigt das greifbar. Für Unternehmen und Infrastrukturbetreiber entstehen Kosten durch Schutz, Reparatur und Ausfallrisiken. Für Behörden geht es um schnelle Lageerkennung, Einsatzfähigkeit und die Frage, wer wo eingreifen darf.",
+            "Die Planet-Perspektive bleibt in diesem Material nur indirekt sichtbar. Belegt ist kein Umwelt- oder Emissionseffekt der Vorfälle selbst, wohl aber die Bedeutung elektrischer Infrastruktur als Rückgrat moderner Versorgung. Die Demokratie-Perspektive ist stärker berührt, weil der Bericht staatliche Sicherheitssteuerung, föderale Zusammenarbeit und neue rechtliche Möglichkeiten für Unternehmen zur Drohnenabwehr erwähnt. Das ist eine klassische Abwägung zwischen Schutzauftrag und Eingriffsgrenzen. Noch ist daraus keine Wirkung auf Freiheitsrechte belegt; es gibt aber ein klares Wirkungsrisiko, wenn Schutzinstrumente ausgeweitet werden, ohne Zuständigkeiten und Kontrolle sauber zu klären."
+          ],
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen 1 bis 3: von der Tat bis zur Systemanpassung",
+          "paragraphs": [
+            "In der ersten Wirkungsordnung steht die konkrete Störung: Brand, Sabotageversuch oder Drohnenbedrohung an einem Umspannwerk oder Flughafen. In der zweiten Ordnung liegt die unmittelbare Folgewirkung: unterbrochene Versorgung, erhöhte Alarmbereitschaft, Mehrkosten, Einsatz von Polizei, Technik und Krisenmanagement. In der dritten Ordnung verlagert sich der Fokus auf die Architektur des Schutzes selbst: nationale Schutzkonzepte, schnell verlegbare Einheiten und neue Abwehrbefugnisse können die Spielregeln für künftige Sicherheitslagen verändern.",
+            "Wichtig ist die saubere Trennung: Das angekündigte Innenministeriumspaket ist noch kein Wirkungsnachweis, sondern ein Wirkpotenzial. Ebenso ist Özdemirs Forderung nach „Hochdruck“ zunächst eine politische Reaktion auf die Lage. Ob daraus tatsächlich eine belastbarere Schutzarchitektur wird, hängt an Umsetzung, Finanzierung, Zuständigkeiten und praktischer Erprobung. Die Analyse kann hier nur plausible Pfade beschreiben, keine vollzogene Wirkung behaupten."
+          ],
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Schutz hilft nur, wenn Reaktion und Reparatur mitwachsen",
+          "paragraphs": [
+            "Der eigentliche systemische Zusatznutzen liegt in der Resilienzfrage. Wenn kritische Infrastruktur schon bei einzelnen Anschlägen oder Brandstiftungen spürbar beeinträchtigt wird, dann sind Detektion, Redundanz, schnelle Reparatur und koordinierte Abwehr nicht Beiwerk, sondern Teil des Systems. Der Bericht verweist mit dem nationalen Schutzschild, dem Cyberdome und schnell verlegbaren Einheiten auf genau diese Logik.",
+            "Doch Resilienz entsteht nicht durch Schlagworte. Sie entsteht erst, wenn sich die reale Fähigkeit zur Verhinderung, Begrenzung und Bewältigung von Störungen erhöht. Die Quellen belegen bislang vor allem die politische Priorisierung. Ob daraus eine messbare Verringerung von Ausfallzeiten, Angriffserfolgen oder Folgeschäden folgt, bleibt offen. Für die Bewertung ist diese Offenheit wichtig: Reichweite ist noch keine Wirkung, und Ankündigung ist noch keine Rückkopplung."
+          ],
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "transformation",
+          "title": "Transformation: vom Einzelfall zur Schutzarchitektur",
+          "paragraphs": [
+            "Wenn ein Land oder der Bund aus solchen Vorfällen Konsequenzen zieht, kann das langfristig zu einer Transformation der Schutzarchitektur führen. Dann würden Zuständigkeiten zwischen Ländern, Betreibern und Bund enger verzahnt, technische Standards früher überprüft und rechtliche Befugnisse präziser gefasst. Das wäre eine strukturelle Veränderung, nicht nur eine kurzfristige Reaktion.",
+            "Die Transformationswirkung ist in diesem Material aber erst als Möglichkeit sichtbar. Gerade deshalb sollte man die Debatte nicht auf die Person Özdemir oder auf einzelne Vorfälle verkürzen. Entscheidend ist, ob aus dem Beschleunigungsruf ein belastbarer Prozess wird: mit klaren Schutzklassen, definierten Einsatzketten und einer Priorisierung, die dort zuerst ansetzt, wo Ausfälle die größten Kaskaden verursachen. Eine solche Priorisierung wäre kein Sozialranking, sondern eine funktionale Schutzlogik."
+          ],
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Schutzmaßnahmen verschieben Kosten und Nebenfolgen",
+          "paragraphs": [
+            "Mehr Schutz an kritischer Infrastruktur kostet Geld, Personal und organisatorische Aufmerksamkeit. Diese Kosten sind keine Nebensache, sondern Teil der materiellen Abhängigkeiten. Wenn Unternehmen zusätzliche Rechte zur Drohnenabwehr erhalten, kann das Schutzlücken schließen, aber auch neue Haftungs-, Kontroll- und Abgrenzungsfragen schaffen. Eine stärkere technische und rechtliche Abschirmung kann zudem dazu führen, dass Risiken an andere Orte oder Akteure verlagert werden, etwa in Randzonen ohne gleichen Schutz oder in digitale Gegenräume.",
+            "Umgekehrt erzeugen ungeschützte Infrastrukturschäden ebenfalls Externalitäten: Ausfälle treffen nicht nur Betreiber, sondern Haushalte, Betriebe und öffentliche Dienste. Die WÖk-Perspektive betrachtet deshalb beide Seiten der Bilanz. Nichtkompensation und Reverse Merit Order wären nur dann relevant, wenn es um eine materielle Schutzgrenze oder eine Priorisierung knapper Schutzressourcen geht; hier deutet das Material eher auf Priorisierung nach Kritikalität als nach symbolischer Sichtbarkeit."
+          ],
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Betroffen sind nicht alle gleich",
+          "paragraphs": [
+            "Störungen an Umspannwerken verteilen Schäden ungleich. Haushalte spüren Stromausfälle unmittelbar, während große Betreiber mit mehr Reservekapazität, Ersatztechnik oder Versicherungsstrukturen oft besser federn können. Regionen mit wenig Redundanz sind anfälliger als Ballungsräume mit dichterer Infrastruktur. Genau deshalb ist die Debatte nicht nur eine Frage von Sicherheit, sondern auch von Verteilungsgerechtigkeit im Versorgungsraum.",
+            "Auch die politischen Lasten verteilen sich ungleich: Länder, Kommunen, Betreiber und Bundesbehörden tragen unterschiedliche Teile des Schutz- und Reaktionsaufwands. Der Bericht nennt ausdrücklich die Zusammenarbeit der Bundesländer und Maßnahmen des Innenministeriums. Das zeigt einen föderalen Wirkpfad: Sicherheit wird nicht nur zentral verordnet, sondern muss zwischen Ebenen koordiniert werden. Ob diese Koordination gelingt, ist für die tatsächliche Wirkung entscheidender als die reine Ankündigung eines Schutzschilds."
+          ],
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Vieles ist berichtet, wenig ist schon belastbar umgesetzt",
+          "paragraphs": [
+            "Die Quellenlage erlaubt eine klare Aussage über die berichteten Vorfälle und die politische Reaktion, aber nicht über die Wirksamkeit der angekündigten Maßnahmen. Unklar bleibt, ob der nationale Schutzschild, der Cyberdome oder die schnell verlegbaren Einheiten bereits verbindlich beschlossen, finanziert und praktisch vorbereitet sind. Ebenfalls offen ist, wie groß der räumliche und sektorale Umfang der betroffenen Infrastruktur tatsächlich ist.",
+            "Diese Unsicherheit macht die Lage nicht harmlos, sondern analytisch anspruchsvoll. Hohe Unsicherheit bedeutet hier nicht Neutralität, sondern einen offenen Bewertungsstand. Deshalb ist die stärkste zulässige Aussage: Es gibt einen plausiblen Schutzbedarf und ein plausibles Wirkpotenzial der angekündigten Maßnahmen, aber keine beobachtete Wirkung im Sinne einer bereits eingetretenen Zustandsveränderung. Der Unterschied ist für die journalistische Einordnung zentral."
+          ],
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Lage in den nächsten Wochen messen lässt",
+          "paragraphs": [
+            "Beobachten sollte man zunächst die konkreten Folgeschritte: Kabinetts-, Gesetzes- oder Verordnungsschritte zum Schutz kritischer Infrastruktur, außerdem den Zeitplan für Cyberdome, Einheiten und Drohnenabwehr-Befugnisse. Erst daran lässt sich erkennen, ob aus dem politischen Druck echte Verwaltungs- und Rechtsänderungen werden.",
+            "Ebenso wichtig ist die Lageentwicklung an den Infrastrukturlagen selbst: Gibt es weitere Angriffe, verkürzte Ausfallzeiten, schnellere Wiederherstellung oder neue Kooperationsformen zwischen Ländern und Betreibern? Erst solche Veränderungen würden eine beobachtete Wirkung belegen. Bis dahin bleibt die Analyse bewusst vorsichtig und unterscheidet zwischen Gefährdung, Reaktion und tatsächlich veränderter Systemlage."
+          ],
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Der Fall zeigt, wie eng Sicherheit, Versorgung und Staatlichkeit zusammenhängen",
+          "paragraphs": [
+            "Der zusätzliche systemische Zusammenhang ist dieser: Ein Angriff auf ein Umspannwerk ist nicht nur ein Sachschaden und auch nicht nur eine Polizeimeldung. Er trifft einen Knoten, an dem Energieversorgung, Wirtschaftsabläufe und öffentliche Sicherheit zusammenlaufen. Darum hat die Debatte sofort eine zweite Ebene: den Umbau von Schutzarchitektur, Zuständigkeiten und Eingriffsbefugnissen.",
+            "Die Quellen belegen eine Lage mit mehreren Vorfällen, einen regionalen Stromausfall und politische Beschleunigungsforderungen. Sie belegen außerdem angekündigte Schutzinstrumente, aber noch keine deren Wirkung. Daraus folgt die journalistisch saubere Einordnung: Die Lage ist systemisch relevant, das Wirkpotenzial der angekündigten Maßnahmen ist plausibel, die tatsächliche Wirkung bleibt offen. Genau diese Trennung schützt vor Alarmismus und vor falscher Entwarnung zugleich."
+          ],
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "In mehreren Bundesländern waren Umspannwerke Ziel von Angriffen oder versuchten Sabotageakten; ein knapp gescheiterter Drohnenangriff auf den Flughafen Leipzig/Halle wird als Kontext genannt.",
+          "type": "fact",
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Die Vorfälle sind berichtet, die genaue Einordnung als Anschlag, versuchte Sabotage oder Brandstiftung variiert im Material.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "Özdemir fordert schnelleren Schutz sicherheitsrelevanter Infrastruktur und eine enge Zusammenarbeit der Bundesländer.",
+          "type": "fact",
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Forderung ist direkt zitiert bzw. berichtet.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Das Innenministerium kündigt einen nationalen Schutzschild mit Cyberdome, schnell verlegbaren Einheiten und mehr rechtlichen Möglichkeiten für Unternehmen zur Drohnenabwehr an.",
+          "type": "fact",
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Es handelt sich um angekündigte Maßnahmen im Bericht, nicht um bereits nachgewiesene Umsetzung.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "In Reutlingen fiel nach Bränden in zwei Umspannwerken Anfang Juni zeitweise die Stromversorgung für 7.600 Haushalte aus.",
+          "type": "fact",
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Der Bericht nennt die Zahl als Folge des Vorfalls.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "Umspannwerke sind systemische Knoten der Stromversorgung, sodass Störungen dort Kaskaden in andere Sektoren auslösen können.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Dies ist eine systemische Einordnung auf Basis des allgemein bekannten Funktionszusammenhangs, im Material aber nicht mit eigenständigen Messdaten belegt.",
+          "date": null
+        },
+        {
+          "claim": "Die Vorfälle erzeugen ein Wirkpotenzial für höhere Resilienz, wenn Schutzstandards, Koordination und Reaktionsfähigkeit tatsächlich verbessert werden.",
+          "type": "impact_potential",
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ],
+          "evidence_level": "medium",
+          "data_status": "scenario",
+          "uncertainty": "Der Pfad ist plausibel, aber die praktische Umsetzung ist offen.",
+          "date": null
+        },
+        {
+          "claim": "Mehr Abwehrbefugnisse und technische Schutzmaßnahmen können neue Abwägungen bei Grundrechten, Zuständigkeiten und Haftung erzeugen.",
+          "type": "impact_risk",
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Das Risiko folgt aus der Art der angekündigten Maßnahmen; ein eingetretener Konflikt ist nicht belegt.",
+          "date": null
+        },
+        {
+          "claim": "Eine tatsächliche Verbesserung der Resilienz ist im Material noch nicht belegt.",
+          "type": "observed_impact",
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ],
+          "evidence_level": "high",
+          "data_status": "open",
+          "uncertainty": "Es liegen nur Vorfälle und Ankündigungen vor, keine Wirkungsdaten zur Wirksamkeit der Schutzmaßnahmen.",
+          "date": null
+        },
+        {
+          "claim": "Die Analyse bewertet keine Personen, sondern die systemische Lage kritischer Infrastruktur.",
+          "type": "normative_assessment",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Dies ist eine methodische Festlegung der WÖk-Analyse.",
+          "date": null
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Im Material sind keine Daten enthalten, die bereits eine verminderte Angriffshäufigkeit, kürzere Ausfallzeiten oder eine messbar verbesserte Schutzwirkung belegen.",
+          "source_ids": [
+            "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ],
+          "effect_on_assessment": "Begrenzt die Aussage auf Wirkungspotenzial und verhindert eine Zurechnung tatsächlicher Resilienzgewinne."
+        },
+        {
+          "finding": "Die Quelle nennt angekündigte Maßnahmen, aber nicht ihre rechtsverbindliche Umsetzung oder Finanzierung.",
+          "source_ids": [
+            "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+          ],
+          "effect_on_assessment": "Erhöht die Unsicherheit und senkt die Stärke jeder Wirkungsaussage über die Zukunft."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Ein belastbarer Beschluss- oder Gesetzestext zu den angekündigten Schutzmaßnahmen",
+        "Konkrete Angaben zur Finanzierung, Zuständigkeit und Umsetzung der Einheiten, des Cyberdome und der Drohnenabwehr-Befugnisse",
+        "Daten zu weiteren Vorfällen, tatsächlichen Ausfallzeiten und Wiederherstellungszeiten",
+        "Belastbare Hinweise, dass die Maßnahmen Grundrechtskonflikte tatsächlich verschärfen oder entschärfen"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Angriffe auf Umspannwerke: Warum der Schutz kritischer Infrastruktur ein Systemthema wird",
+        "recommended_summary": "Mehrere Angriffe auf Umspannwerke und ein knapp vereitelter Drohnenangriff zeigen: Der Schutz kritischer Infrastruktur ist ein System aus Technik, Recht und Koordination.",
+        "recommended_meta_description": "Angriffe auf Umspannwerke: Systemische Analyse zu Schutz kritischer Infrastruktur, Versorgungssicherheit, Zuständigkeiten und Resilienz."
+      },
+      "reading_time_minutes": 7,
+      "source_snapshot": [
+        {
+          "source_id": "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+          "url": "https://www.stern.de/news/oezdemir-fordert--hochdruck--beim-schutz-sicherheitsrelevanter-infrastruktur-38211938.html",
+          "published_at": "2026-09-05T22:49:44.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e",
+          "registry_source_id": "swr-aktuell",
+          "publisher_id": "swr",
+          "publisher": "SWR Aktuell",
+          "title": "Özdemir fordert \"Hochdruck\" beim Schutz sicherheitsrelevanter Infrastruktur",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-draengt-auf-besseren-schutz-von-infrastruktur-100.html",
+          "published_at": "2026-09-06T11:48:46.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T11:53:33.246Z",
+          "source_fingerprint": "2f2b82710b0f861b0a1ae02287680ad6f589dd63664b20ca92312f5602829f66",
+          "title": "Angriffe auf Umspannwerke: Warum der Schutz kritischer Infrastruktur ein Systemthema wird",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "In mehreren Bundesländern waren Umspannwerke Ziel von Angriffen oder versuchten Sabotageakten; ein knapp gescheiterter Drohnenangriff auf den Flughafen Leipzig/Halle wird als Kontext genannt.",
+              "type": "fact",
+              "source_ids": [
+                "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+                "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Die Vorfälle sind berichtet, die genaue Einordnung als Anschlag, versuchte Sabotage oder Brandstiftung variiert im Material.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "Özdemir fordert schnelleren Schutz sicherheitsrelevanter Infrastruktur und eine enge Zusammenarbeit der Bundesländer.",
+              "type": "fact",
+              "source_ids": [
+                "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Forderung ist direkt zitiert bzw. berichtet.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Das Innenministerium kündigt einen nationalen Schutzschild mit Cyberdome, schnell verlegbaren Einheiten und mehr rechtlichen Möglichkeiten für Unternehmen zur Drohnenabwehr an.",
+              "type": "fact",
+              "source_ids": [
+                "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Es handelt sich um angekündigte Maßnahmen im Bericht, nicht um bereits nachgewiesene Umsetzung.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "In Reutlingen fiel nach Bränden in zwei Umspannwerken Anfang Juni zeitweise die Stromversorgung für 7.600 Haushalte aus.",
+              "type": "fact",
+              "source_ids": [
+                "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Der Bericht nennt die Zahl als Folge des Vorfalls.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "Umspannwerke sind systemische Knoten der Stromversorgung, sodass Störungen dort Kaskaden in andere Sektoren auslösen können.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Dies ist eine systemische Einordnung auf Basis des allgemein bekannten Funktionszusammenhangs, im Material aber nicht mit eigenständigen Messdaten belegt.",
+              "date": null
+            },
+            {
+              "claim": "Die Vorfälle erzeugen ein Wirkpotenzial für höhere Resilienz, wenn Schutzstandards, Koordination und Reaktionsfähigkeit tatsächlich verbessert werden.",
+              "type": "impact_potential",
+              "source_ids": [
+                "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+              ],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Der Pfad ist plausibel, aber die praktische Umsetzung ist offen.",
+              "date": null
+            },
+            {
+              "claim": "Mehr Abwehrbefugnisse und technische Schutzmaßnahmen können neue Abwägungen bei Grundrechten, Zuständigkeiten und Haftung erzeugen.",
+              "type": "impact_risk",
+              "source_ids": [
+                "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Das Risiko folgt aus der Art der angekündigten Maßnahmen; ein eingetretener Konflikt ist nicht belegt.",
+              "date": null
+            },
+            {
+              "claim": "Eine tatsächliche Verbesserung der Resilienz ist im Material noch nicht belegt.",
+              "type": "observed_impact",
+              "source_ids": [
+                "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+                "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e"
+              ],
+              "evidence_level": "high",
+              "data_status": "open",
+              "uncertainty": "Es liegen nur Vorfälle und Ankündigungen vor, keine Wirkungsdaten zur Wirksamkeit der Schutzmaßnahmen.",
+              "date": null
+            },
+            {
+              "claim": "Die Analyse bewertet keine Personen, sondern die systemische Lage kritischer Infrastruktur.",
+              "type": "normative_assessment",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Dies ist eine methodische Festlegung der WÖk-Analyse.",
+              "date": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-36e98d72ae20",
+      "story_id": "wt-60f4e4d7d43fad99",
+      "related_story_ids": [
+        "wt-60f4e4d7d43fad99"
+      ],
+      "related_case_id": null,
+      "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "6889f6dcfa62649dc22a1dff7bca65fabd75a0cebd636d80d9eb25f668e81671",
+      "candidate_score": 68,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-06T12:24:05.188Z",
+      "updated_at": "2026-09-06T12:24:05.188Z",
+      "version": 1,
+      "editorial_question": "Was verändert eine laufende Fahndung nach Angriffen auf das Stromnetz systemisch - jenseits der Tat selbst - für Versorgungssicherheit, Staatsschutz, politische Deutung und die Verteilung von Risiken?",
+      "analysis_type": "system_analysis",
+      "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
+      "subtitle": "Die Ermittlungen berühren kritische Infrastruktur, staatliche Schutzfähigkeit und das Vertrauen in die Stabilität des Energiesystems - auch wenn Motiv und Täterlage offen bleiben.",
+      "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
+      "seo_description": "Angriffe aufs Stromnetz: Die Fahndung zeigt Risiken für Versorgung, Sicherheit und Vertrauen - mit offenen Fragen zu Täterlage, Schutz und Folgen.",
+      "additional_value": "Der Zusatznutzen liegt darin, die Meldung nicht als isolierte Sicherheitsnachricht zu lesen, sondern als Stressprobe für ein gekoppeltes System aus kritischer Infrastruktur, staatlicher Abwehr, wirtschaftlicher Abhängigkeit und demokratischer Kommunikation. So wird sichtbar, wo tatsächliche Zustandsveränderungen belegt sind und wo nur ein Wirkungspotenzial oder ein Risiko vorliegt.",
+      "research_summary": "Die gelieferten Quellen berichten über eine laufende Fahndung nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. In der Wohnung des 48-Jährigen in Gevelsberg sollen sprengstoffverdächtige Gegenstände gefunden worden sein; sein Fahrzeug sei in Niederzier gestürmt worden. Die Berichte ordnen den Fall in Ermittlungen zu Sabotageakten an mehreren Umspannwerken in Nordrhein-Westfalen und Brandenburg ein. Innenminister Reul nennt als geprüfte Hypothesen einen möglichen linksextremistischen Hintergrund, eine mögliche fremdstaatlich gesteuerte Sabotage und Verbindungen zu Vorfällen in Brandenburg. Dobrindt äußert laut Quelle die Einschätzung, sehr wahrscheinlich handele es sich um einen Einzeltäter, verweist aber zugleich darauf, dass die Lage noch nicht abschließend geklärt sei.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Eine Fahndung, offene Ermittlungen und ein Angriff auf kritische Infrastruktur",
+          "paragraphs": [
+            "Ausgelöst wird die Debatte durch eine laufende Fahndung nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Nach den Quellen wurde das Fahrzeug des 48-Jährigen in Niederzier gestürmt, in seiner Wohnung in Gevelsberg fanden Ermittler sprengstoffverdächtige Gegenstände. Zugleich geht es um Sabotageakte an mehreren Umspannwerken in Nordrhein-Westfalen und Brandenburg. Das ist zunächst ein kriminalistischer Sachverhalt, aber keiner ohne systemische Reichweite: Strominfrastruktur ist keine beliebige Anlage, sondern Teil der Grundversorgung.",
+            "Für die Wirkungsökonomie ist entscheidend, was belegt ist und was offen bleibt. Belegt ist die Fahndung, der Zusammenhang mit Stromnetz-Angriffen und die laufende Ermittlungsarbeit. Nicht belegt ist in den gelieferten Quellen eine endgültige Täterzuschreibung, eine gesicherte Motivlage oder ein konkreter Ausfall von Versorgung. Gerade diese Unterscheidung ist wichtig, weil schon die Verdachtslage Schutz- und Reaktionsketten auslösen kann, ohne dass daraus automatisch eine eingetretene materielle Wirkung folgt."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ]
+        },
+        {
+          "id": "system",
+          "title": "System: Strom, Schutz und Vertrauensordnung sind gekoppelt",
+          "paragraphs": [
+            "Die eigentliche Systemfrage lautet: Was passiert, wenn kritische Infrastruktur nicht nur physisch angegriffen, sondern zugleich politisch gedeutet wird? Dann treffen drei Ebenen aufeinander. Erstens die materielle Ebene des Stromsystems mit Umspannwerken, Netzen und Schutzkonzepten. Zweitens die staatliche Ebene von Polizei, Innenpolitik und Krisenkommunikation. Drittens die soziale Ebene von Vertrauen in Versorgungssicherheit und Handlungsfähigkeit des Staates.",
+            "Diese Ebenen sind gekoppelt, aber nicht deckungsgleich. Ein Angriff auf einzelne Anlagen kann über Sicherheitsüberprüfungen, Alarmierungen und zusätzliche Schutzmaßnahmen in größere organisatorische Kreisläufe ausstrahlen. Die Meldung zeigt damit vor allem ein Risiko für Resilienz: Wie belastbar sind Infrastruktur, Ermittlungsbehörden und öffentliche Kommunikation, wenn ein Vorfall zugleich materiell und symbolisch aufgeladen ist? Eine solche Kopplung macht den Fall systemisch relevant, auch wenn die unmittelbare Schadenshöhe aus den Quellen nicht hervorgeht."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: unterschiedliche Betroffenheiten, unterschiedliche Belege",
+          "paragraphs": [
+            "Aus der Perspektive Mensch ist die Relevanz hoch, weil Stromversorgung unmittelbar alltägliche Sicherheit, Kommunikation, Gesundheitsversorgung und Wirtschaftstätigkeit berührt. Das ist noch keine Wirkung im engeren Sinn, aber ein plausibler Betroffenheitsraum. Aus der Perspektive Planet ist in den Quellen kein direkter Umweltbezug belegt; ein solcher wäre nur mittelbar denkbar, falls sich Schutz-, Reparatur- oder Ausfallfolgen ergeben. Aus der Perspektive Demokratie liegt der Schwerpunkt auf staatlicher Schutzfähigkeit, rechtsstaatlicher Aufklärung und der sauberen Attribution von Verdachtsmomenten.",
+            "Gerade hier ist Trennung wichtig: Politische Zuschreibungen sind noch keine gesicherte Ursache. Reul nennt mehrere Hypothesen, Dobrindt spricht zugleich von einem sehr wahrscheinlichen Einzeltäter, ohne dass die Lage abschließend geklärt wäre. Für die Demokratie ist deshalb nicht der Verdacht selbst das Problem, sondern der Umgang mit Unsicherheit: Wenn frühe Deutungen vorschnell verfestigt werden, kann das Vertrauen in Ermittlungen und politische Bewertung leiden. Die Quellen erlauben aber noch keine harte Aussage über tatsächliche Vertrauensveränderung."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen 1 bis 3: Von der Fahndung zur möglichen Umsteuerung von Schutzarchitekturen",
+          "paragraphs": [
+            "In der ersten Wirkungsordnung stehen die unmittelbaren Reaktionen: Fahndung, Ermittlungen, mögliche Sicherungsmaßnahmen an betroffenen oder vergleichbaren Anlagen. Das ist die naheliegende und am ehesten belegbare Folgeebene. In der zweiten Ordnung können höhere Schutzanforderungen, zusätzliche Kontrollen und mehr Abstimmung zwischen Behörden und Betreibern entstehen. Das wären keine automatisch positiven oder negativen Effekte, sondern tatsächliche Zustandsänderungen im Sicherheitsregime.",
+            "In der dritten Ordnung liegen mögliche politische und institutionelle Verschiebungen: Eine stärker priorisierte Debatte über Sabotageschutz, Extremismus, Zuständigkeiten und Ressourcen. Auch hier gilt die Trennung von Wirkung und Reichweite. Dass über den Fall öffentlich breit gesprochen wird, ist noch keine Wirkung auf das System, sondern nur Kommunikationsraum. Eine echte Transformationswirkung wäre erst dann plausibel, wenn aus dem Einzelfall dauerhaft veränderte Schutzstandards, Zuständigkeitsketten oder Investitionsentscheidungen folgen. Dafür liefern die Quellen noch kein Ergebnis, nur ein mögliches Wirkungspotenzial."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Der Fall ist ein Belastungstest, kein Beweis für den Ausfall des Systems",
+          "paragraphs": [
+            "Wirkungsökonomisch ist Resilienz die Fähigkeit eines Systems, Störungen aufzunehmen, ohne seine Grundfunktion zu verlieren. Die Meldung zeigt einen Belastungstest, aber keinen nachgewiesenen Systembruch. Es ist offen, ob die Infrastruktur tatsächlich beeinträchtigt wurde oder ob die Schutzmechanismen nur vorsorglich hochgefahren wurden. Schon die Vorsorge kann jedoch Ressourcen binden und Prioritäten verschieben, etwa bei Polizei, Energiebetreibern oder Innenministerien.",
+            "Daraus folgt ein zweifacher Blick: Erstens auf materielle Robustheit, also die Frage, ob Umspannwerke und Netze geschützt genug sind. Zweitens auf organisatorische Robustheit, also ob Behörden Verdachtslagen prüfen können, ohne durch politische Vorfestlegung oder Alarmismus ihre Handlungsfähigkeit zu schwächen. Die Quellen lassen beides offen. Für die Analyse heißt das: Resilienz ist hier nicht eingetretene Widerstandskraft, sondern ein beobachtbarer Prüfpunkt."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Sicherheitskosten, Verunsicherung und mögliche Folgekosten",
+          "paragraphs": [
+            "Wenn kritische Infrastruktur bedroht wird, entstehen externe Kosten oft nicht nur bei den unmittelbar Betroffenen. Betreiber müssen Schutzvorkehrungen prüfen, Behörden Ermittlungsressourcen einsetzen, und die öffentliche Hand reagiert mit zusätzlicher Kommunikation. Solche Kosten sind in den Quellen nicht beziffert, aber als Mechanismus plausibel. Sie sind noch keine gemessene Wirkung, sondern ein möglicher Verteilungseffekt des Ereignisses.",
+            "Auch die kommunikative Nebenwirkung ist wichtig: Je stärker Sabotage, Extremismus und fremdstaatliche Steuerung nebeneinander genannt werden, desto größer das Risiko, dass Unsicherheit in pauschale Bedrohungsdeutungen umschlägt. Das ist keine Medien- oder Personenbewertung, sondern ein Hinweis auf die Fragilität öffentlicher Einordnung. In Wirkungsbegriffen gesprochen: Die Meldung hat ein Wirkungspotenzial auf Wahrnehmung und Prioritätensetzung, aber die tatsächlich eingetretene Wirkung ist noch nicht belegt."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer trägt die Lasten, wer bekommt Schutz?",
+          "paragraphs": [
+            "Verteilungseffekte zeigen sich bei solchen Fällen meist ungleich. Die Allgemeinheit profitiert von stabiler Versorgung, trägt aber auch die Kosten für zusätzlichen Staatsschutz. Betreiber kritischer Infrastruktur haben direkte Aufwände, während betroffene Regionen oder Kommunen stärker von möglichen Störungen getroffen wären. Dass diese Verteilung im konkreten Fall bereits eingetreten ist, belegen die Quellen nicht; sie machen sie aber als Wirkpfad sichtbar.",
+            "Auch innerhalb des Staates können Lasten verschoben werden. Mehr Ermittlungsdruck, höhere Schutzanforderungen und politische Erwartungshaltung können zu einer Umpriorisierung führen. Solche Verschiebungen sind in der Wirkungsökonomie kein Nebenthema, sondern Teil der materiellen Folgenordnung. Sie sind jedoch nur dann als Wirkung zu werten, wenn sie tatsächlich umgesetzt werden. Die vorliegenden Quellen zeigen dafür bisher nur den Anlass, nicht die finale Anpassung."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame und Diskurs: Bedrohungsbegriffe sind Wirkungspotenzial, nicht Wirkungsbeweis",
+          "paragraphs": [
+            "In den Berichten tauchen starke Sicherheitsbegriffe auf: Sabotage, möglicher linksextremistischer Hintergrund, fremdstaatlich gesteuerte Tat, Einzeltäter. Solche Worte strukturieren den Resonanzraum, aber sie sind zunächst Attributionen von Akteuren, nicht die Wirklichkeit selbst. Für die Analyse heißt das: Der Diskurs kann sich schneller verfestigen als die Ermittlungslage. Genau deshalb muss der Sachverhalt vor dem Frame stehen.",
+            "Das kommunikative Wirkungspotenzial ist erkennbar: Die Öffentlichkeit kann den Fall als Beleg für ein generelles Bedrohungsszenario lesen, obwohl die Beweislage offen ist. Ein solcher Resonanzeffekt ist möglich, aber nicht als eingetretene Wirkung zu formulieren. Auch hier gilt die Nichtkompensation: Sicherheitsgewinn durch Aufklärung oder Schutz kann nicht einfach gegen Verunsicherung aufgerechnet werden, wenn die Betroffenheitslagen unterschiedlich sind. Der Fall bleibt deshalb analytisch offen und zugleich politisch folgenreich."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Szenarien: Was sich ändern würde, wenn sich die Lage bestätigt oder relativiert",
+          "paragraphs": [
+            "Drei Szenarien sind aus den Quellen ableitbar, ohne über sie hinauszugehen. Erstens: Die Fahndung führt zu einer Festnahme und die Tathypothese bleibt auf einen Einzelfall begrenzt. Dann wäre vor allem mit operativen Konsequenzen für Ermittlung und Schutz zu rechnen, aber nicht zwingend mit einer strukturellen Neubewertung. Zweitens: Es zeigen sich weitere Beteiligte oder eine koordinierte Sabotagelogik. Dann würden Schutzarchitektur, Zuständigkeiten und politische Prioritäten deutlich stärker angepasst. Drittens: Die frühen Verdachtsmomente relativieren sich. Dann wäre der wichtigste Effekt nicht technische, sondern kommunikative Korrektur: weniger Verfestigung von Fehlzuschreibungen.",
+            "Alle drei Pfade haben eines gemeinsam: Die aktuelle Evidenz reicht für kein hartes Urteil. Deshalb ist die angemessene Analyse kein Alarmismus, sondern ein kontrollierter Blick auf mögliche Wirkpfade. Die Wahrscheinlichkeit einzelner Szenarien lässt sich mit den gelieferten Quellen nicht belastbar quantifizieren. Sichtbar ist nur, dass der Fall in einem hochsensiblen Bereich liegt, in dem kleine Erkenntnisverschiebungen große institutionelle Folgen haben können."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was wir wissen, was wir nur vermuten, was offen bleibt",
+          "paragraphs": [
+            "Gesichert aus den Quellen sind die Fahndung, die genannten Fundorte und die Einordnung als Stromnetz-Sabotage im Umfeld mehrerer Umspannwerke. Ebenfalls gesichert ist, dass Reul mehrere Hypothesen prüfen lässt und Dobrindt eine Einzeltäterthese für wahrscheinlich hält. Offen bleiben Motiv, Beteiligtenkreis, konkrete Schäden und die Frage, ob sich die Mutmaßungen überhaupt bestätigen. Diese offene Lage ist analytisch zentral und darf nicht zugunsten einer schnellen Deutung zugedeckt werden.",
+            "Wirkungsökonomisch ist Unsicherheit nicht bloß ein Mangel, sondern selbst ein Faktor. Sie beeinflusst Schutzentscheidungen, Prioritäten und Kommunikation. Aber Unsicherheit ist keine Neutralität: Sie kann reale Vorsorge auslösen und reale Verunsicherung erzeugen. Deshalb sollte die nächste Beobachtung nicht auf Schlagworte, sondern auf Zustandsänderungen zielen: Festnahme, Bestätigung oder Verwerfung der Hypothesen, konkrete Infrastrukturfolgen und eventuell beschlossene Schutzanpassungen."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich tatsächliche Wirkung erkennen ließe",
+          "paragraphs": [
+            "Erst wenn die Ermittlungen sichtbare Konsequenzen haben, lässt sich die Wirkungsrichtung genauer bestimmen. Beobachtungspunkte wären etwa konkrete Ausfälle, nachweisbare Schutzverstärkungen, zusätzliche Aufwände bei Betreibern, neue Zuständigkeitsabsprachen oder eine belastbarere Täterzuschreibung. Dann ließe sich zwischen bloßem Potenzial und eingetretener Wirkung unterscheiden.",
+            "Bis dahin bleibt die Lage ein Fall für vorsichtige Relationierung: Der Angriff betrifft nicht nur Strom als Technik, sondern Strom als Voraussetzung für Alltag, Wirtschaft und staatliche Handlungsfähigkeit. Gerade weil die Quellen keine endgültige Auflösung liefern, ist die richtige journalistische Frage nicht nur, wer es war, sondern welche Systeme durch die Fahndung bereits unter Druck geraten und welche noch folgen könnten."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Der Fall ist eine Sicherheitsmeldung mit systemischer Reichweite, aber ohne gesicherte Endbewertung",
+          "paragraphs": [
+            "Die zusätzliche systemische Einsicht liegt darin, den Fall nicht auf eine Strafverfolgungsfrage zu verkürzen. Die Meldung berührt Versorgungssicherheit, staatliche Schutzfähigkeit, politische Deutung und die Verteilung von Sicherheitskosten. Das alles kann in Kaskaden wirken, muss es aber nicht. Für die Wirkungsökonomie zählt deshalb die saubere Trennung: Ereignis ist nicht gleich Wirkung, Verdacht ist nicht gleich Zurechnung, Reichweite ist nicht gleich Zustandsveränderung.",
+            "Der Fall zeigt vor allem die Empfindlichkeit eines gekoppelten Systems. Stromnetze, Behörden und Öffentlichkeit reagieren nicht getrennt voneinander, sondern in Rückkopplungen. Genau dort liegt der systemische Zusatznutzen der Analyse: sichtbar zu machen, wo schon eine Fahndung Schutzarchitekturen, Prioritäten und Debatten verschiebt, ohne daraus vorschnell eine endgültige Ursache oder eine abschließende Bewertung abzuleiten. Die belastbare Aussage lautet deshalb: systemisch relevant, aber in der Wirkung noch offen."
+          ],
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Die Polizei fahndet weiter nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Fahndung ist belegt; Motiv und endgültige Täterlage bleiben offen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "In der Wohnung des 48-Jährigen in Gevelsberg fanden Ermittler sprengstoffverdächtige Gegenstände.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quelle nennt sprengstoffverdächtige Gegenstände; eine weitere technische Einordnung liegt nicht vor.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Quelle ordnet den Fall in Sabotageakte an mehreren Umspannwerken in Nordrhein-Westfalen und Brandenburg ein.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Zuordnung als Zusammenhang der Ermittlungen ist belegt; die endgültige Bewertung bleibt offen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Reul sagt, die Polizei prüfe einen möglichen linksextremistischen Hintergrund, eine mögliche fremdstaatlich gesteuerte Sabotage und Verbindungen zu Vorfällen in Brandenburg.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Es handelt sich um geprüfte Hypothesen eines Akteurs, nicht um bestätigte Tatsachen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Dobrindt hält sehr wahrscheinlich einen Einzeltäter für verantwortlich.",
+          "type": "fact",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Dies ist eine Attribution aus der Quelle; die Lage sei noch nicht abschließend geklärt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Ein Angriff auf Strominfrastruktur kann Schutzmaßnahmen, Ermittlungen und politische Einordnung auslösen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Plausibler Wirkpfad aus der Systemrelevanz kritischer Infrastruktur, aber nicht als eingetretene Wirkung belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Der Fall hat ein Wirkungspotenzial auf Sicherheitsprioritäten und Schutzarchitekturen kritischer Infrastruktur.",
+          "type": "impact_potential",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "medium",
+          "data_status": "scenario",
+          "uncertainty": "Mögliche Folge; konkrete Umsteuerung ist in den Quellen noch nicht belegt.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Meldung belegt noch keine konkrete Versorgungsstörung oder tatsächliche Systemwirkung im Stromnetz.",
+          "type": "observation",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Keine in den Quellen benannte Ausfall- oder Schadenshöhe.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Lage ist für die Demokratie relevant, weil staatliche Schutzfähigkeit und saubere Attribution auf dem Prüfstand stehen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Relevanz folgt aus dem Gegenstand, nicht aus einer bereits belegten demokratischen Folgewirkung.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Kommunikativ kann die Nennung von Sabotage-, Extremismus- und Fremdstaatlichkeits-Hypothesen einen Resonanzraum für Bedrohungsdeutungen schaffen.",
+          "type": "impact_risk",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "evidence_level": "medium",
+          "data_status": "scenario",
+          "uncertainty": "Das ist ein Kommunikationsrisiko, keine eingetretene Wirkung.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Mensch, Planet, Wirtschaft und Institutionen sind hier als gekoppeltes System zu betrachten.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "open",
+          "data_status": "scenario",
+          "uncertainty": "Methodische WÖK-Setzung, kein Nachrichtenfakt.",
+          "date": null
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen nennen keine bestätigte Tätergruppe, kein abschließendes Motiv und keine gesicherte fremdstaatliche Steuerung.",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "effect_on_assessment": "Begrenzt harte Zurechnung; nur offene Hypothesen und Wirkungspotenziale sind belastbar."
+        },
+        {
+          "finding": "Es wird keine konkrete Stromausfall-, Schadens- oder Versorgungsstörung belegt.",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+            "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+          ],
+          "effect_on_assessment": "Reduziert die Aussage auf Systemrisiko, Fahndung und mögliche Schutzfolgen statt auf bereits eingetretene infrastrukturelle Wirkung."
+        },
+        {
+          "finding": "Die Quellen widersprechen sich nicht im Kern, unterscheiden aber in der Gewichtung: Dobrindt betont eher den Einzeltäter, Reul benennt mehrere geprüfte Hypothesen.",
+          "source_ids": [
+            "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+          ],
+          "effect_on_assessment": "Die Lage bleibt analytisch offen; politische Deutungen dürfen nicht als abgesicherte Feststellungen behandelt werden."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Bestätigung einer Festnahme mit belastbarer Tat- und Motivlage",
+        "Nachweis weiterer Beteiligter oder koordinierter Strukturen",
+        "Belegbarer Ausfall oder messbare Beeinträchtigung der Stromversorgung",
+        "Offizielle Beschlüsse zu verschärften Schutzstandards oder Zuständigkeitsänderungen",
+        "Widerspruch zu den bisherigen Verdachtsmomenten durch die Ermittlungen"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
+        "recommended_summary": "Die Fahndung nach einem Verdächtigen nach Angriffen aufs Stromnetz ist mehr als eine Kriminalmeldung: Sie berührt Versorgung, Schutz und Vertrauen, obwohl die Lage weiter offen bleibt.",
+        "recommended_meta_description": "Angriffe aufs Stromnetz: Die Fahndung zeigt Risiken für Versorgung, Sicherheit und Vertrauen - mit offenen Fragen zu Täterlage, Schutz und Folgen."
+      },
+      "reading_time_minutes": 8,
+      "source_snapshot": [
+        {
+          "source_id": "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Stromnetz-Sabotage: Polizei fahndet weiter nach Verdächtigem",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "published_at": "2026-09-04T16:49:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d",
+          "registry_source_id": "tagesschau-access",
+          "publisher_id": "tagesschau",
+          "publisher": "tagesschau / ARD",
+          "title": "Polizei fahndet weiter nach Verdächtigem",
+          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
+          "published_at": "2026-09-05T07:45:01.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T12:24:05.188Z",
+          "source_fingerprint": "6889f6dcfa62649dc22a1dff7bca65fabd75a0cebd636d80d9eb25f668e81671",
+          "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Die Polizei fahndet weiter nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Fahndung ist belegt; Motiv und endgültige Täterlage bleiben offen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "In der Wohnung des 48-Jährigen in Gevelsberg fanden Ermittler sprengstoffverdächtige Gegenstände.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle nennt sprengstoffverdächtige Gegenstände; eine weitere technische Einordnung liegt nicht vor.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Quelle ordnet den Fall in Sabotageakte an mehreren Umspannwerken in Nordrhein-Westfalen und Brandenburg ein.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Zuordnung als Zusammenhang der Ermittlungen ist belegt; die endgültige Bewertung bleibt offen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Reul sagt, die Polizei prüfe einen möglichen linksextremistischen Hintergrund, eine mögliche fremdstaatlich gesteuerte Sabotage und Verbindungen zu Vorfällen in Brandenburg.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Es handelt sich um geprüfte Hypothesen eines Akteurs, nicht um bestätigte Tatsachen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Dobrindt hält sehr wahrscheinlich einen Einzeltäter für verantwortlich.",
+              "type": "fact",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Dies ist eine Attribution aus der Quelle; die Lage sei noch nicht abschließend geklärt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ein Angriff auf Strominfrastruktur kann Schutzmaßnahmen, Ermittlungen und politische Einordnung auslösen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Plausibler Wirkpfad aus der Systemrelevanz kritischer Infrastruktur, aber nicht als eingetretene Wirkung belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Der Fall hat ein Wirkungspotenzial auf Sicherheitsprioritäten und Schutzarchitekturen kritischer Infrastruktur.",
+              "type": "impact_potential",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Mögliche Folge; konkrete Umsteuerung ist in den Quellen noch nicht belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Meldung belegt noch keine konkrete Versorgungsstörung oder tatsächliche Systemwirkung im Stromnetz.",
+              "type": "observation",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Keine in den Quellen benannte Ausfall- oder Schadenshöhe.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Lage ist für die Demokratie relevant, weil staatliche Schutzfähigkeit und saubere Attribution auf dem Prüfstand stehen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Relevanz folgt aus dem Gegenstand, nicht aus einer bereits belegten demokratischen Folgewirkung.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Kommunikativ kann die Nennung von Sabotage-, Extremismus- und Fremdstaatlichkeits-Hypothesen einen Resonanzraum für Bedrohungsdeutungen schaffen.",
+              "type": "impact_risk",
+              "source_ids": [
+                "fdb80da1ab907b063b84cbd4ba48b487170833ef3e35961151b86a9ba4f1f058",
+                "f93a2f3dff1d83a3f7da7ec179e1c7ef833045eeb2eb5c3e7503a7a1107ed77d"
+              ],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Das ist ein Kommunikationsrisiko, keine eingetretene Wirkung.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Mensch, Planet, Wirtschaft und Institutionen sind hier als gekoppeltes System zu betrachten.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "open",
+              "data_status": "scenario",
+              "uncertainty": "Methodische WÖK-Setzung, kein Nachrichtenfakt.",
+              "date": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "analysis_id": "woek-analysis-dab9cdd59202",
+      "story_id": "wt-7b385f58748f3d32",
+      "related_story_ids": [
+        "wt-7b385f58748f3d32"
+      ],
+      "related_case_id": null,
+      "slug": "polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
+      "candidate_score": 75,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-06T16:37:35.523Z",
+      "updated_at": "2026-09-06T16:37:35.523Z",
+      "version": 1,
+      "editorial_question": "Was verändert sich systemisch, wenn Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten und die Fahndung weiterläuft?",
+      "analysis_type": "system_analysis",
+      "title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
+      "subtitle": "Warum die Meldung vor allem Ermittlungen, Schutzlogik und Risikowahrnehmung verschiebt",
+      "teaser": "Die eigentliche Wirkung liegt nicht im Schreiben selbst, sondern in der veränderten Lage: Ermittlungen, Schutz kritischer Infrastruktur und öffentliche Risikobewertung werden neu sortiert.",
+      "seo_description": "Polizei hält Bekennerschreiben zu Sabotageakten an der Stromversorgung für authentisch. Was das für Ermittlungen, Schutz und Risiko bedeutet.",
+      "additional_value": "Die Analyse trennt berichteten Ermittlungsstand, mögliche Schutzfolgen und offene Zuschreibungen. Sie zeigt, warum die Meldung vor allem als Systemsignal für kritische Infrastruktur wirkt, ohne daraus schon eine bestätigte Folgewirkung abzuleiten.",
+      "research_summary": "Aus den gelieferten Quellen ergibt sich ein einheitlicher Kern: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch; die Fahndung läuft weiter. Der rbb24-Bericht nennt Jänschwalde und Bergheim bei Köln als Tatorte und beschreibt einen mutmaßlichen Alleintäter. Deutschlandfunk berichtet ebenfalls von einer bundesweiten Fahndung nach einem Tatverdächtigen aus Gevelsberg und davon, dass die Schreiben bei Medienhäusern eingegangen seien. ZDFheute meldet, dass Ermittler ein Bekennerschreiben prüfen und sich einem Medienbericht zufolge ein Einzeltäter bekannt habe. Die Quellen stützen damit die laufende Ermittlungs- und Authentizitätslage, aber keinen darüber hinausgehenden Beweis für Täter, Motiv, organisatorische Hintergründe oder systemische Langzeitfolgen.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Eine laufende Fahndung und eine neue Ermittlungsgrundlage",
+          "paragraphs": [
+            "Nach der vorliegenden Berichterstattung hat die Polizei Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch gehalten. Die Fahndung läuft weiter. rbb24 nennt Jänschwalde und Bergheim bei Köln als Tatorte; Deutschlandfunk berichtet von einer bundesweiten Fahndung nach einem Tatverdächtigen aus Gevelsberg und davon, dass die Briefe bei deutschen Medienhäusern eingegangen seien.",
+            "Für die Analyse ist wichtig: Die Meldung beschreibt nicht nur einen Vorfall, sondern einen veränderten Ermittlungszustand. Ein Bekennerschreiben ist kein Wirkungsnachweis, aber es verschiebt die Lage von einer einzelnen Beschädigung hin zu einer möglichen personalisierten Ermittlungs- und Schutzsituation. Genau an dieser Stelle beginnt die systemische Betrachtung."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "system",
+          "title": "Systemischer Zusatznutzen: Warum Stromsabotage mehr ist als ein Einzelfall",
+          "paragraphs": [
+            "Stromversorgung ist kritische Infrastruktur. Wenn in Berichten von Sabotage an Umspannwerken und Stromanlagen die Rede ist, betrifft das nicht nur den Tatort, sondern potenziell auch Netzbetreiber, Sicherheitsbehörden, Medien und die Öffentlichkeit. Die systemische Frage lautet daher nicht: Was steht in dem Schreiben? Sondern: Welche Handlungs- und Schutzlogiken werden dadurch ausgelöst?",
+            "Die Quellen erlauben einen begrenzten, aber belastbaren Pfad: Authentizitätszuschreibung und Fahndung können Ermittlungsressourcen bündeln, Schutzmaßnahmen verstärken und die Risikowahrnehmung in der Energieversorgung verändern. Das ist noch keine eingetretene breite Wirkung, aber ein plausibler Wirkpfad erster und zweiter Ordnung."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: unterschiedliche Betroffenheit im selben Ereignis",
+          "paragraphs": [
+            "Beim Referenzrahmen Mensch steht die unmittelbare Sicherheit im Vordergrund: Wer kritische Infrastruktur schützt, will Ausfälle, Gefährdungen und Folgeschäden vermeiden. Die Quellen nennen keine Verletzten oder Versorgungsausfälle in dieser Meldung, also bleibt eine beobachtete Wirkung auf Menschen offen. Gleichwohl kann schon die Fahndungslage Belastungen bei Polizei, Betreibern und Anwohnern erzeugen.",
+            "Für den Planeten ist aus der Meldung selbst kein direkter Umweltpfad belegt. Die einzige inhaltliche Nähe entsteht über die kritische Infrastruktur und die in den Schreiben erwähnte Kritik an fossilen Brennstoffen, wie der rbb24-Bericht sie wiedergibt. Daraus folgt aber kein Klimanutzen und keine ökologische Wirkung. Auf der Demokratieebene geht es um die Verlässlichkeit öffentlicher Information, die Funktionsfähigkeit von Ermittlungen und den Schutz gesellschaftlicher Grundversorgung. Das ist ein institutioneller Schutzraum, kein Beweis für eine politische Folge."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen 1 bis 3: vom Schreiben zur Sicherheitsarchitektur",
+          "paragraphs": [
+            "Erste Ordnung: Die Meldung verändert die unmittelbare Ermittlungs- und Informationslage. Polizei und Öffentlichkeit richten den Blick stärker auf die Authentizität der Schreiben und auf die Frage, wer dahintersteht. Das ist eine Zustandsänderung in der Lagebeschreibung, noch keine soziale Großwirkung.",
+            "Zweite Ordnung: Netzbetreiber, Sicherheitsbehörden und Medien können ihre Prioritäten anpassen. Daraus können mehr Schutzaufwand, intensivere Fahndung und eine neu sortierte Risikowahrnehmung folgen. Dritte Ordnung: Wenn solche Vorfälle häufiger würden oder als Teilmuster wahrgenommen würden, könnte sich die Schutzlogik für kritische Energieinfrastruktur langfristig verfestigen. Dieser dritte Schritt bleibt hier aber ausdrücklich nur ein bedingter Pfad, kein eingetretenes Ergebnis."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Schutz gewinnt, aber der Aufwand steigt",
+          "paragraphs": [
+            "Die Meldung berührt Resilienz in zwei Richtungen. Kurzfristig kann sie die Belastung erhöhen, weil Fahndung, Prüfung und Schutz kritischer Anlagen zusätzliche Ressourcen beanspruchen. Mittel- bis langfristig kann dieselbe Lage aber auch zu mehr Robustheit führen, wenn Betreiber und Behörden Routinen für Sabotageschutz, Lageabgleich und Krisenkommunikation nachschärfen.",
+            "Wichtig ist die Trennung von Reichweite und Wirkung: Dass über die Sache berichtet wird, bedeutet noch nicht, dass das System tatsächlich resilienter wird. Eine echte Resilienzsteigerung läge erst dann vor, wenn Schutzmaßnahmen, Koordination oder Wiederanlaufzeiten messbar besser würden. Dazu geben die gelieferten Quellen noch keinen Beleg."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "externalitaeten",
+          "title": "Externalitäten: Aufwand und Unsicherheit wandern mit",
+          "paragraphs": [
+            "Die möglichen Nebenfolgen liegen vor allem im Aufwand: Polizeiarbeit, Sicherheitsprüfungen, mögliche Schutzanpassungen und öffentliche Aufmerksamkeit. Das sind externe Kosten, die nicht beim Schreiben selbst enden. Wenn eine Infrastruktur als potenziell gezielt angreifbar wahrgenommen wird, verschiebt sich ein Teil der Last auf Betreiber und Sicherheitsinstitutionen.",
+            "Eine räumliche Verlagerung ist ebenfalls denkbar, aber hier nicht belegt: Schutz kann an einem Ort verschärft werden und an anderer Stelle weniger sichtbar bleiben. Solche Verschiebungen sind in der Wirkungsökonomie relevant, weil Nichtkompensation und Reverse Merit Order dort sichtbar werden, wo Schutz an einer Stelle nicht automatisch Schutz an anderer Stelle ersetzt. Im vorliegenden Material bleibt das jedoch eine analytische Möglichkeit, keine dokumentierte Folge."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Verteilung: Wer die Folgen trägt, ist ungleich",
+          "paragraphs": [
+            "Die direkte Last einer solchen Lage liegt zunächst bei Ermittlungsbehörden und Betreibern der betroffenen Infrastruktur. Indirekt trifft sie auch die Öffentlichkeit, wenn Unsicherheit zunimmt oder Schutzkosten auf Versorgungssysteme durchschlagen. Die Berichterstattung selbst zeigt diese Verteilung noch nicht als Kennzahl, aber sie macht die Adressaten der Belastung sichtbar.",
+            "Verteilung ist hier wichtiger als abstrakte Reichweite. Eine Sabotagespur bei der Stromversorgung trifft nicht alle gleich: Betreiber müssen sichern, Behörden prüfen, Medien ordnen ein, und Anwohner leben mit der Lage. Diese ungleiche Betroffenheit ist systemisch relevant, auch wenn die Quellen keine quantifizierten Folgen nennen."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ]
+        },
+        {
+          "id": "frame_diskurs",
+          "title": "Frame- und Diskurscheck: Bedrohungsrahmen ja, aber nicht mit Wirkung verwechseln",
+          "paragraphs": [
+            "Die Formulierung „Bekennerschreiben für authentisch“ lenkt die Wahrnehmung sofort auf Bedrohung, Täterwissen und Fahndung. Das ist ein kommunikativer Rahmen, aber noch keine materielle Wirkung. Die Berichterstattung kann den Eindruck einer akuten Gefährdung verstärken; ob daraus tatsächlich verändertes Verhalten, politische Entscheidungen oder zusätzliche Schutzmaßnahmen folgen, bleibt offen.",
+            "Die Quellen erlauben zudem eine saubere Attribution: Es handelt sich um einen Bericht über polizeiliche Einschätzungen, nicht um einen unabhängigen Beweis. Gerade deshalb darf die Analyse keine höhere Gewissheit behaupten als die Quelle trägt. Das ist kein Relativieren, sondern präzise Trennung von Meldung, Prüfung und bestätigter Folge."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "szenarien",
+          "title": "Szenarien: Was sich ändern könnte, wenn weitere Bestätigung folgt",
+          "paragraphs": [
+            "Wenn Polizei oder andere Ermittlungsstellen die Authentizität und die Täterzuordnung weiter absichern, dürfte sich die Fahndung noch stärker bündeln. Dann könnten Schutzmaßnahmen an weiteren Standorten wachsen und die Debatte über Sabotageschutz kritischer Infrastruktur zunehmen. Das wäre eine plausible zweite Ordnung, aber noch kein festgestellter Zustand.",
+            "Bleibt die Lage dagegen unklar oder relativiert sich die Zuschreibung, verschiebt sich der Schwerpunkt zurück auf die reine Ermittlungsarbeit. Dann wäre vor allem die kommunikative Wirkung groß: eine schnell erzeugte Bedrohungswahrnehmung ohne entsprechend belastbare Tat- oder Strukturzuschreibung. Auch dieses Gegenbild ist nur ein Szenario, das die Quellen nicht entscheiden."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was die Quellen nicht belegen",
+          "paragraphs": [
+            "Offen bleibt, ob die berichtete Täterzuschreibung unabhängig bestätigt ist. Offen bleibt auch, welche konkreten Schäden, Sicherheitsanpassungen oder Versorgungsfolgen tatsächlich eingetreten sind. Die Quellen sprechen von Authentizitätsprüfung, Fahndung und mutmaßlichem Alleintäter, nicht von einer abgeschlossenen Aufklärung.",
+            "Für die Wirkungseinschätzung heißt das: Die sichere Aussage betrifft die Lageverschiebung in den Ermittlungen. Alles darüber hinaus ist vorläufig, nur bedingt plausibel oder offen. Das ist in der Wirkungsökonomie zentral, weil hohe Unsicherheit nicht mit Neutralität verwechselt werden darf."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Wirkung später erkennen ließe",
+          "paragraphs": [
+            "Relevant wären in den nächsten Meldungen vor allem drei Dinge: Erstens, ob die Ermittler die Authentizität der Schreiben weiter bestätigen oder präzisieren. Zweitens, ob zusätzliche Tatorte, Beweismittel oder Festnahmen genannt werden. Drittens, ob Betreiber oder Behörden konkrete Schutzanpassungen öffentlich machen.",
+            "Erst wenn solche Angaben vorliegen, lässt sich von beobachteter Wirkung sprechen. Bis dahin bleibt die Meldung ein belastbares Ereignis im Ermittlungszusammenhang, aber noch keine dokumentierte Systemveränderung."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Das Ereignis wirkt vor allem als Systemsignal",
+          "paragraphs": [
+            "Die zusätzliche journalistische Erkenntnis dieser Meldung liegt nicht in einem neuen Tatdetail, sondern in der systemischen Verschiebung. Das Schreiben und seine Authentizitätsbewertung ziehen Polizei, Betreiber und Öffentlichkeit in einen gemeinsamen Schutz- und Prüfmodus. Damit wird kritische Infrastruktur als verletzlicher und zugleich schutzpflichtiger Raum markiert.",
+            "Die stärkste belastbare Aussage lautet deshalb: Die Meldung verändert den Zustand der Lage, nicht schon den Zustand des Systems im Ganzen. Sie kann Resilienzmaßnahmen anstoßen, Risiken neu sortieren und die Aufmerksamkeit auf Stromversorgung als kritischen Knoten lenken. Ob daraus dauerhafte Transformation folgt, ist offen und in den gelieferten Quellen nicht belegt."
+          ],
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch.",
+          "type": "fact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Aussage stammt aus einem journalistischen Bericht über Polizeieinschätzungen; eine eigene Primärquelle liegt im Material nicht vor.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Laut Bericht bekennt sich ein mutmaßlicher Alleintäter zu den Anschlägen in Jänschwalde und Bergheim bei Köln.",
+          "type": "fact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Täterzuschreibung bleibt berichtete Einschätzung und ist in den gelieferten Quellen nicht unabhängig verifiziert.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Fahndung nach der Person läuft weiter.",
+          "type": "fact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die genaue Reichweite und Intensität der Fahndung sind in den Quellen nicht näher beziffert.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Deutschlandfunk berichtet zusätzlich, die Briefe seien bei deutschen Medienhäusern eingegangen.",
+          "type": "fact",
+          "source_ids": [
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Der konkrete Inhalt der Briefe ist im Material nicht vollständig dokumentiert.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "ZDFheute meldet, Ermittler prüften ein Bekennerschreiben; einem Medienbericht zufolge habe sich ein Einzeltäter bekannt.",
+          "type": "fact",
+          "source_ids": [
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Der Befund ist medienvermittelt und nicht als Primärquelle im Material abgesichert.",
+          "date": "2026-09-03"
+        },
+        {
+          "claim": "Die Authentizitätszuschreibung kann Ermittlungsressourcen bündeln und Schutzmaßnahmen an kritischer Infrastruktur verstärken.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Plausibler Wirkpfad, aber in den Quellen nicht als eingetretene Maßnahme belegt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Ein direkter Umwelt- oder Klimawirkpfad ist aus den Quellen nicht belastbar ableitbar.",
+          "type": "observation",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Meldung nennt zwar Stromversorgung und fossile Brennstoffe, belegt aber keinen Umwelt- oder Klimafolgeeffekt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die Meldung kann die öffentliche Risikowahrnehmung erhöhen, ohne dass daraus schon eine eingetretene materielle Wirkung folgt.",
+          "type": "impact_potential",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Kommunikatives Wirkungspotenzial ist plausibel, aber keine beobachtete Zustandsveränderung.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Eine beobachtete Wirkung im Sinn einer nachweisbaren Systemveränderung ist in den gelieferten Quellen nicht belegt.",
+          "type": "observed_impact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "evidence_level": "high",
+          "data_status": "open",
+          "uncertainty": "Es liegen nur Berichte über laufende Ermittlungen vor, keine belastbaren Folgedaten zu Schutzmaßnahmen, Ausfällen oder Strukturänderungen.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Wirkung ist in der WÖK die tatsächliche Zustandsveränderung, nicht Reichweite, Potenzial oder bloße Berichterstattung.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische Arbeitsdefinition gemäß Auftrag; kein Nachrichtenfakt.",
+          "date": null
+        },
+        {
+          "claim": "Die Meldung verschiebt die Lage von einer isolierten Sabotagespur hin zu einem personalisierten Ermittlungs- und Schutzrahmen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Tragfähig als Deutung der Berichterstattung, nicht als nachgewiesene Systemfolge.",
+          "date": "2026-09-04"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen liefern keine bestätigten Angaben zu Verletzten, Versorgungsausfällen oder konkreten Schutzmaßnahmen.",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "effect_on_assessment": "Begrenzt die Zuschreibung von beobachteter Wirkung auf eine Lage- und Ermittlungsänderung; materielle Folgewirkungen bleiben offen."
+        },
+        {
+          "finding": "Die Täterzuschreibung wird nur berichtet und ist im Material nicht unabhängig bestätigt.",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+          ],
+          "effect_on_assessment": "Senkt die Sicherheit von Schlussfolgerungen über Motiv, Organisationsgrad und langfristige Sicherheitsfolgen."
+        },
+        {
+          "finding": "Der Umweltreferenzbezug über fossile Brennstoffe in einem Schreiben belegt keine ökologische Wirkung der Tat.",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+          ],
+          "effect_on_assessment": "Schützt vor einer überzogenen Planet-Interpretation; der Planet-Bezug bleibt ohne belastbaren Wirkpfad."
+        }
+      ],
+      "what_changes_the_assessment": [
+        "Eine offizielle Bestätigung der Täterzuschreibung oder der Authentizität durch Primärquellen würde die Evidenz für den Ermittlungsrahmen erhöhen.",
+        "Konkrete Angaben zu Ausfällen, Beschädigungen oder Schutzmaßnahmen würden eine beobachtete Wirkung auf Infrastruktur und Resilienz wahrscheinlicher machen.",
+        "Weitere Medienberichte allein würden die Faktenlage nur begrenzt verbessern; entscheidend wären unabhängig belastbare Primärangaben oder belastbar gleiche Sachverhalte aus mehreren voneinander unabhängigen Quellen."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
+        "recommended_summary": "Die Fahndung läuft weiter, doch die systemische Wirkung liegt vor allem in der neuen Lage für Ermittlungen, Schutz und Risikobewertung.",
+        "recommended_meta_description": "Polizei hält Bekennerschreiben zu Sabotageakten an der Stromversorgung für authentisch. Was das für Ermittlungen, Schutz und Risiko bedeutet."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+          "registry_source_id": "rbb24-nachrichten",
+          "publisher_id": "rbb",
+          "publisher": "rbb24",
+          "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "published_at": "2026-09-04T10:06:18.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - Fahndung läuft",
+          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-fahndung-laeuft-100.html",
+          "published_at": "2026-09-04T16:23:25.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+          "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+          "published_at": "2026-09-04T16:14:15.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Brandenburg: Polizei prüft Bekennerschreiben",
+          "url": "https://www.zdfheute.de/politik/deutschland/brandenburg-bekennerschreiben-sprengvorrichtung-stromnetz-umspannwerk-jaenschwalde-100.html",
+          "published_at": "2026-09-03T17:36:00.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T16:37:35.523Z",
+          "source_fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
+          "title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Aussage stammt aus einem journalistischen Bericht über Polizeieinschätzungen; eine eigene Primärquelle liegt im Material nicht vor.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Laut Bericht bekennt sich ein mutmaßlicher Alleintäter zu den Anschlägen in Jänschwalde und Bergheim bei Köln.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Täterzuschreibung bleibt berichtete Einschätzung und ist in den gelieferten Quellen nicht unabhängig verifiziert.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Fahndung nach der Person läuft weiter.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die genaue Reichweite und Intensität der Fahndung sind in den Quellen nicht näher beziffert.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Deutschlandfunk berichtet zusätzlich, die Briefe seien bei deutschen Medienhäusern eingegangen.",
+              "type": "fact",
+              "source_ids": [
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Der konkrete Inhalt der Briefe ist im Material nicht vollständig dokumentiert.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "ZDFheute meldet, Ermittler prüften ein Bekennerschreiben; einem Medienbericht zufolge habe sich ein Einzeltäter bekannt.",
+              "type": "fact",
+              "source_ids": [
+                "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Der Befund ist medienvermittelt und nicht als Primärquelle im Material abgesichert.",
+              "date": "2026-09-03"
+            },
+            {
+              "claim": "Die Authentizitätszuschreibung kann Ermittlungsressourcen bündeln und Schutzmaßnahmen an kritischer Infrastruktur verstärken.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Plausibler Wirkpfad, aber in den Quellen nicht als eingetretene Maßnahme belegt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ein direkter Umwelt- oder Klimawirkpfad ist aus den Quellen nicht belastbar ableitbar.",
+              "type": "observation",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Meldung nennt zwar Stromversorgung und fossile Brennstoffe, belegt aber keinen Umwelt- oder Klimafolgeeffekt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Meldung kann die öffentliche Risikowahrnehmung erhöhen, ohne dass daraus schon eine eingetretene materielle Wirkung folgt.",
+              "type": "impact_potential",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Kommunikatives Wirkungspotenzial ist plausibel, aber keine beobachtete Zustandsveränderung.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Eine beobachtete Wirkung im Sinn einer nachweisbaren Systemveränderung ist in den gelieferten Quellen nicht belegt.",
+              "type": "observed_impact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+              ],
+              "evidence_level": "high",
+              "data_status": "open",
+              "uncertainty": "Es liegen nur Berichte über laufende Ermittlungen vor, keine belastbaren Folgedaten zu Schutzmaßnahmen, Ausfällen oder Strukturänderungen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Wirkung ist in der WÖK die tatsächliche Zustandsveränderung, nicht Reichweite, Potenzial oder bloße Berichterstattung.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische Arbeitsdefinition gemäß Auftrag; kein Nachrichtenfakt.",
+              "date": null
+            },
+            {
+              "claim": "Die Meldung verschiebt die Lage von einer isolierten Sabotagespur hin zu einem personalisierten Ermittlungs- und Schutzrahmen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Tragfähig als Deutung der Berichterstattung, nicht als nachgewiesene Systemfolge.",
+              "date": "2026-09-04"
+            }
+          ]
+        }
+      ]
     }
   ],
   "retry_state": {
     "wt-1fbb056ccaaf351d": {
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-06T08:22:28.382Z",
-      "next_attempt_at": "2026-09-06T08:52:28.382Z",
+      "attempts": 6,
+      "last_attempt_at": "2026-09-06T16:37:35.523Z",
+      "next_attempt_at": "2026-09-07T00:37:35.523Z",
       "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "AI_PROVIDER_ERROR:503"
     },
-    "wt-7b385f58748f3d32": {
-      "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
+    "wt-4b5d0962d323432a": {
+      "fingerprint": "e1a3695100cfd89742bbb0067654fbaff5ab9e303d9a8f14e8a6ce5f29111790",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-06T08:22:28.382Z",
-      "next_attempt_at": "2026-09-06T08:52:28.382Z",
-      "quality_errors": [
-        "EDITORIAL_SELF_FRAME_FAILED"
-      ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
-    },
-    "wt-60f4e4d7d43fad99": {
-      "fingerprint": "6889f6dcfa62649dc22a1dff7bca65fabd75a0cebd636d80d9eb25f668e81671",
-      "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-06T08:22:28.382Z",
-      "next_attempt_at": "2026-09-06T08:52:28.382Z",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-06T17:53:42.092Z",
+      "next_attempt_at": "2026-09-06T18:08:42.092Z",
       "quality_errors": [
         "EDITORIAL_SELF_FRAME_FAILED"
       ],

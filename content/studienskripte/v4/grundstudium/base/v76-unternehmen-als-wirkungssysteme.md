@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v76-unternehmen-als-wirkungssysteme.md curriculum=4.0 sanitized=true -->
-# V76 · Unternehmen als Wirkungssysteme – Geschäftsmodell, Betrieb und Wertschöpfungskette
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v76-unternehmen-als-wirkungssysteme.md curriculum=4.0 sanitized=true -->
+# V76 · Unternehmen als Wirkungssysteme - Geschäftsmodell, Betrieb und Wertschöpfungskette
 
 **lecture_id:** `WOEK-G-BASE-076`  
 **display_code:** `V76`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Unternehmen wirkt nicht nur durch seinen eigenen Stromverbrauch. Entscheidend sind **Produkte und Dienstleistungen, Geschäftsmodell, Lieferkette, Beschäftigung, Kapitalallokation, Steuern, Innovation und Marktverhalten**. ESG-Berichte liefern dafür viele wichtige Daten, sind aber nicht automatisch eine Wirkungsbewertung des Geschäftsmodells. WÖk liest das Unternehmen als System: Wo entstehen reale Zustandsänderungen – und welche Entscheidungen können sie verbessern?
+Ein Unternehmen wirkt nicht nur durch seinen eigenen Stromverbrauch. Entscheidend sind **Produkte und Dienstleistungen, Geschäftsmodell, Lieferkette, Beschäftigung, Kapitalallokation, Steuern, Innovation und Marktverhalten**. ESG-Berichte liefern dafür viele wichtige Daten, sind aber nicht automatisch eine Wirkungsbewertung des Geschäftsmodells. WÖk liest das Unternehmen als System: Wo entstehen reale Zustandsänderungen - und welche Entscheidungen können sie verbessern?
 
 ## Lernziele
 
@@ -100,7 +100,7 @@ Besser:
 - Data Gaps,
 - Transitionpfad.
 
-## 6. Scope 1–3 und darüber hinaus
+## 6. Scope 1-3 und darüber hinaus
 
 Treibhausgas-Scopes sind wichtig, aber nur Klimadatenlogik.
 
@@ -111,7 +111,7 @@ Andere Wirkungen brauchen andere Systemgrenzen:
 - Ressourcen,
 - Demokratie/Informationssysteme.
 
-Keine Scope-1–3-Analogie unkritisch auf alle Wirkungen übertragen.
+Keine Scope-1-3-Analogie unkritisch auf alle Wirkungen übertragen.
 
 ## 7. Governance und Anreize
 
@@ -177,7 +177,7 @@ Falsch.
 ### „Grünes Büro = nachhaltiges Geschäftsmodell.“
 Falsch.
 
-### „Scope 1–3 deckt alle Wirkung ab.“
+### „Scope 1-3 deckt alle Wirkung ab.“
 Falsch.
 
 ### „Unternehmen braucht eine einzige Gesamtnote.“
@@ -217,7 +217,7 @@ Ein Unternehmen ist kein Gebäude mit Stromzähler.
 
 Seine größte Wirkung kann im Produkt stecken, in der Lieferkette oder im Geschäftsmodell.
 
-Deshalb ist ein guter Nachhaltigkeitsbericht wichtig – aber nicht das Ende der Analyse.
+Deshalb ist ein guter Nachhaltigkeitsbericht wichtig - aber nicht das Ende der Analyse.
 
 Wir fragen: Welche Entscheidungen erzeugen welche Zustandsänderung?
 
@@ -229,4 +229,14 @@ Und große Unternehmen brauchen Segmentprofile statt einer schönen Gesamtnote.
 
 Der Merksatz lautet:
 
-**Unternehmenswirkung entsteht dort, wo Geschäftsmodell, Produkte, Wertschöpfung und Entscheidungen reale Zustände verändern – nicht dort, wo der Bericht besonders dick ist.**
+**Unternehmenswirkung entsteht dort, wo Geschäftsmodell, Produkte, Wertschöpfung und Entscheidungen reale Zustände verändern - nicht dort, wo der Bericht besonders dick ist.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zu CSRD und Sorgfaltspflichten · 6. September 2026
+
+Ältere Reichweiten- und Terminangaben sind am Änderungsrecht zu prüfen: Der Rat hat am 24. Februar 2026 die Omnibus-I-Vereinfachung von CSRD und CS3D endgültig gebilligt. Sie verändert unter anderem die erfassten Unternehmen und Übergänge. Für ein konkretes Unternehmen sind die veröffentlichte Änderungsrichtlinie, ihre nationale Umsetzung und das Geschäftsjahr maßgeblich; die ursprüngliche CSRD-Zeitplanung darf nicht ungeprüft fortgeschrieben werden. Unabhängig von einer Berichtspflicht bleibt der Unterschied zwischen berichteter Kennzahl, Zustandsveränderung und kausaler Zurechnung bestehen.
+
+Quelle: [Rat der EU, Beschluss und Anschlussdokumente vom 24. Februar 2026](https://www.consilium.europa.eu/en/press/press-releases/2026/02/24/council-signs-off-simplification-of-sustainability-reporting-and-due-diligence-requirements-to-boost-eu-competitiveness/).

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v99-praxisprojekt-wirkungsfrage-wirkpfad.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v99-praxisprojekt-wirkungsfrage-wirkpfad.md curriculum=4.0 sanitized=true -->
 # V99 · Praxisprojekt: Wirkungsfrage, Goal Review und prüfbarer Wirkpfad
 
 **lecture_id:** `WOEK-G-BASE-099`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Nach dem Problem Review formulierst du nicht sofort „Wie gut ist Maßnahme X?“. Zuerst prüfst du den Zielzustand. Danach formulierst du eine **kausale Wirkungsfrage**: Welche konkrete Maßnahme verändert über welchen Mechanismus welchen Zustand – gegenüber welchem Gegenfaktum und gemessen an welcher Referenz? Aus dieser Frage entsteht dein Wirkpfad `A→M→ΔZ→R`.
+Nach dem Problem Review formulierst du nicht sofort „Wie gut ist Maßnahme X?“. Zuerst prüfst du den Zielzustand. Danach formulierst du eine **kausale Wirkungsfrage**: Welche konkrete Maßnahme verändert über welchen Mechanismus welchen Zustand - gegenüber welchem Gegenfaktum und gemessen an welcher Referenz? Aus dieser Frage entsteht dein Wirkpfad `A→M→ΔZ→R`.
 
 ## Lernziele
 
@@ -58,25 +58,25 @@ Schlecht:
 
 Besser:
 
-> „In welchem Ausmaß verändert Maßnahme A über Mechanismen M1–Mn die State Variables Z1–Zn gegenüber dem No-Action-/Alternativszenario, für welche Gruppen und unter welchen Bedingungen?“
+> „In welchem Ausmaß verändert Maßnahme A über Mechanismen M1-Mn die State Variables Z1-Zn gegenüber dem No-Action-/Alternativszenario, für welche Gruppen und unter welchen Bedingungen?“
 
 Diese Frage ist prüfbar.
 
 ## 3. A→M→ΔZ→R
 
-### A – Action
+### A - Action
 
 konkrete Maßnahme/Intervention.
 
-### M – Mechanismus
+### M - Mechanismus
 
 wie A Verhalten, Ressourcen, Preise, Rechte, Kapazitäten oder andere Zustände verändert.
 
-### ΔZ – Zustandsänderung
+### ΔZ - Zustandsänderung
 
 was sich bei Menschen, Ökosystemen, Unternehmen oder Institutionen tatsächlich ändert.
 
-### R – Referenz
+### R - Referenz
 
 woran diese Zustandsänderung bewertet wird.
 
@@ -207,7 +207,7 @@ Preisbarriere sinkt.
 
 ΔZ:
 
-ÖPNV-Nutzung steigt – aber entscheidend: kommt sie aus Pkw, Fuß/Rad oder zusätzlichen Wegen?
+ÖPNV-Nutzung steigt - aber entscheidend: kommt sie aus Pkw, Fuß/Rad oder zusätzlichen Wegen?
 
 R:
 
@@ -254,7 +254,7 @@ Falsch.
 ## 14. Quellen
 
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - BMJV Nachhaltige Gesetzgebung: https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html
 
 ## 15. Transferaufgabe
@@ -265,7 +265,7 @@ Für dein Projekt erstelle:
 - zentrale Wirkungsfrage,
 - A→M→ΔZ→R,
 - drei Conditions,
-- Folgen 1.–3. Ordnung,
+- Folgen 1.-3. Ordnung,
 - Gegenfaktum,
 - mindestens eine Alternative,
 - drei Falsifikationskriterien.
@@ -276,7 +276,7 @@ Für dein Projekt erstelle:
 - Wirkungsfrage,
 - A→M→ΔZ→R,
 - Conditions,
-- 1.–3. Ordnung,
+- 1.-3. Ordnung,
 - Gegenfaktum/Alternative,
 - State benchmark separation,
 - Falsifikation.
@@ -295,7 +295,7 @@ Das Ziel ist der Zustand, den wir verbessern wollen.
 
 Und erst danach kommt die Wirkungsfrage.
 
-Was verändert unsere konkrete Maßnahme – über welchen Mechanismus – bei wem und gegenüber welcher Alternative?
+Was verändert unsere konkrete Maßnahme - über welchen Mechanismus - bei wem und gegenüber welcher Alternative?
 
 Dafür nutzen wir A, M, Delta Z, R.
 
@@ -318,3 +318,7 @@ Denn ein Wirkungsmodell, das jedes Ergebnis nachträglich als Erfolg erklären k
 Der Merksatz lautet:
 
 **Formuliere deinen Wirkpfad so, dass die Realität später die Chance hat, dir zu widersprechen.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

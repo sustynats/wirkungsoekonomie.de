@@ -55,7 +55,7 @@ function storedToken(id, create=false) {
     return '';
   }
 }
-export function renderPoll(poll, mount, { voted=false, selected_option=null, results=null, feedback_submitted=false, preview=false, submit, sendFeedback }={}) {
+export function renderPoll(poll, mount, { voted=false, selected_option=null, results=null, feedback_submitted=false, preview=false, submit, sendFeedback, withdraw }={}) {
   mount.replaceChildren();
   if(preview) mount.append(el('p','Vorschau: Hier wird keine Stimme gespeichert.','poll-status'));
   const status=poll.effective_status || poll.status;
@@ -73,12 +73,17 @@ export function renderPoll(poll, mount, { voted=false, selected_option=null, res
   form.append(fieldset);
   const feedback=el('p','', 'poll-status');feedback.setAttribute('role','status');feedback.setAttribute('aria-live','polite');
   if(!voted&&(status==='active'||preview)) {
+    if(poll.consent_required){
+      const label=el('label',undefined,'poll-checkbox'),consent=el('input');consent.type='checkbox';consent.name='explicit_consent';consent.required=true;
+      label.append(consent,el('span','Ich willige ausdrücklich ein, dass meine Auswahl, aus der politische Ansichten hervorgehen können, mit einer zufälligen, nur hier gültigen Kennung für diese Umfrage gespeichert und statistisch ausgewertet wird. Die Teilnahme ist freiwillig. Ich kann meine Einwilligung hier jederzeit durch Löschen meiner Stimme widerrufen.'));
+      const privacy=el('a','Datenschutz und Einwilligung im Detail');privacy.href='#einwilligung';form.append(label,privacy);
+    }
     const vote=el('button',preview?'Abstimmen (Vorschau)':'Abstimmen','btn btn-primary');vote.type='submit';
     vote.disabled=preview;form.append(vote);
     form.addEventListener('submit',async event=>{
       event.preventDefault(); const value=new FormData(form).get('answer');if(!value)return;
       vote.disabled=true;feedback.className='poll-status';feedback.textContent='Deine Stimme wird gespeichert …';
-      try { await submit(value); }
+      try { await submit(value,poll.consent_required?'sensitive-choice-v1':undefined); }
       catch(error) { vote.disabled=false;feedback.className='poll-status poll-error';feedback.textContent=error.message; }
     });
   }
@@ -86,6 +91,12 @@ export function renderPoll(poll, mount, { voted=false, selected_option=null, res
   if(results) { const resultBox=el('section');resultBox.setAttribute('aria-label','Umfrageergebnisse');renderResults(results,resultBox);mount.append(resultBox); }
   else mount.append(el('p',poll.results_visibility==='after_end'?'Die Ergebnisse werden nach dem Ende der Umfrage sichtbar.':'Die Ergebnisse werden nach Deiner eigenen Abstimmung sichtbar.','poll-notice'));
   if(voted||preview) {
+    if(poll.consent_required&&!preview&&withdraw){
+      const controls=el('details');controls.append(el('summary','Einwilligung widerrufen / eigene Stimme löschen'),el('p','Deine Stimme und gegebenenfalls Dein zugehöriges Feedback werden entfernt. Das Ergebnis wird neu berechnet. Du brauchst dafür denselben Browser mit der Abstimmungskennung.'));
+      const confirmation=el('label',undefined,'poll-checkbox'),check=el('input');check.type='checkbox';confirmation.append(check,el('span','Ich möchte meine eigene Stimme unwiderruflich löschen.'));
+      const message=el('p','','poll-status');message.setAttribute('role','status');
+      const remove=button('Eigene Stimme jetzt löschen',async()=>{if(!check.checked){message.textContent='Bitte bestätige zuerst das Löschen.';return;}remove.disabled=true;try{await withdraw();}catch(error){remove.disabled=false;message.textContent=error.message;}},'btn btn-secondary');controls.append(confirmation,remove,message);mount.append(controls);
+    }
     if(poll.feedback_enabled){
       const section=el('section',undefined,'poll-feedback');
       section.append(el('h3','Was fehlt Euch noch oder was würdet Ihr verbessern?'));
@@ -114,23 +125,53 @@ export function renderPoll(poll, mount, { voted=false, selected_option=null, res
     if(poll.feedback_note&&!poll.feedback_enabled) mount.append(el('p',poll.feedback_note));
   }
   if(poll.further_url&&validLink(poll.further_url)) { const a=el('a','Weiterführende Informationen');a.href=validLink(poll.further_url);mount.append(a); }
+  document.dispatchEvent(new CustomEvent('woek:poll-render',{detail:{poll,voted,selected_option,results}}));
 }
-export function initSharing(container, title, url) {
+export function initSharing(container, title, url, {compact=false}={}) {
   const actions=el('div',undefined,'poll-actions'), status=el('p','','poll-notice');status.setAttribute('role','status');
   const input=el('input');input.value=url;input.readOnly=true;input.setAttribute('aria-label','Link zu dieser Umfrage');
+  input.hidden=compact;
   actions.append(button('Link kopieren',async()=>{
     try { await navigator.clipboard.writeText(url);status.textContent='Link kopiert.'; }
-    catch { input.focus();input.select();status.textContent='Bitte den markierten Link kopieren.'; }
+    catch { input.hidden=false;input.focus();input.select();status.textContent='Bitte den markierten Link kopieren.'; }
   }));
   if(navigator.share) actions.prepend(button('Umfrage teilen',async()=>{ try{await navigator.share({title,url});}catch(error){if(error.name!=='AbortError')status.textContent='Teilen nicht möglich. Du kannst den Link kopieren.';} }));
-  container.append(el('h2','Andere einladen'),actions,input,status);
+  if(!compact)container.append(el('h2','Andere einladen'));
+  container.append(actions,input,status);
+}
+export function renderIndexStatuses(cards, polls) {
+  const labels={active:'Aktiv',scheduled:'Geplant',paused:'Pausiert',ended:'Beendet',archived:'Archiviert'};
+  const current=new Map((polls||[]).map(p=>[p.slug,p]));
+  for(const card of cards){
+    const status=card.querySelector('[data-poll-list-status]');if(!status)continue;
+    const poll=current.get(card.dataset.pollListSlug);
+    status.textContent=polls===null?'Status auf der Umfrageseite prüfen':labels[poll?.effective_status||poll?.status]||'Nicht mehr verfügbar';
+  }
+}
+async function startIndex() {
+  const cards=document.querySelectorAll('[data-poll-list-slug]');if(!cards.length)return;
+  let loading=false;
+  async function refresh(){
+    if(loading)return;loading=true;
+    try{
+      const data=await request('/api/polls');
+      if(data.ok!==true||!Array.isArray(data.polls))throw new Error('Invalid public poll catalog');
+      renderIndexStatuses(cards,data.polls);
+    }catch{renderIndexStatuses(cards,null);}finally{loading=false;}
+  }
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
+  window.addEventListener('pageshow',event=>{if(event.persisted)refresh();});
+  await refresh();
 }
 async function start() {
-  const page=document.querySelector('[data-poll-slug]');if(!page)return;
+  const page=document.querySelector('[data-poll-slug]');if(!page){await startIndex();return;}
   const slug=page.dataset.pollSlug, id=page.dataset.pollId, mount=document.getElementById('poll-ui');
+  // Sharing never needs a vote, an anonymous identifier or a working API.
+  for(const share of document.querySelectorAll('#poll-share, [data-poll-share]'))initSharing(share,document.title,`https://wirkungsoekonomie.de/umfragen/${slug}/`,{compact:share.dataset.pollShare==='compact'});
   let current;
   async function load() {
     const data=await request(`/api/polls/${encodeURIComponent(slug)}`,{token:storedToken(id)});current=data;
+    if(document.getElementById('vp-data')&&!data.poll.consent_required)throw new Error('Diese Szenario-Umfrage ist für die Abstimmung noch nicht freigeschaltet. Der Bildvergleich bleibt verfügbar.');
     const questionContextChanged=page.dataset.pollResultsVisibility!==data.poll.results_visibility || page.dataset.pollFeedbackEnabled!==String([true,1].includes(data.poll.feedback_enabled));
     page.dataset.pollResultsVisibility=data.poll.results_visibility;
     page.dataset.pollFeedbackEnabled=String([true,1].includes(data.poll.feedback_enabled));
@@ -140,9 +181,13 @@ async function start() {
     renderPoll(data.poll,mount,{...data,sendFeedback:async text=>{
       await request(`/api/polls/${encodeURIComponent(slug)}/feedback`,{method:'POST',token:storedToken(id),body:JSON.stringify({text})});
       current.feedback_submitted=true;
-    },submit:async option=>{
+    },withdraw:async()=>{
+      await request(`/api/polls/${encodeURIComponent(slug)}/vote`,{method:'DELETE',token:storedToken(id),body:JSON.stringify({confirmation:'EIGENE STIMME LÖSCHEN'})});
+      try{localStorage.removeItem(`woek_poll_vote:${id}`);}catch{}
+      await load();const notice=el('p','Deine Stimme wurde gelöscht. Deine Einwilligung ist widerrufen.','poll-status');notice.setAttribute('role','status');mount.prepend(notice);
+    },submit:async (option,consentVersion)=>{
       const voteToken=storedToken(id,true);
-      try { current=await request(`/api/polls/${encodeURIComponent(slug)}/vote`,{method:'POST',token:voteToken,body:JSON.stringify({option_id:option})}); }
+      try { current=await request(`/api/polls/${encodeURIComponent(slug)}/vote`,{method:'POST',token:voteToken,body:JSON.stringify({option_id:option,...(consentVersion?{consent_version:consentVersion}:{})})}); }
       catch(error) {
         if(error.data?.code==='ALREADY_VOTED') current=error.data;
         else {
@@ -156,9 +201,8 @@ async function start() {
   }
   try { await load(); }
   catch(error) { mount.replaceChildren(el('p',error.status===404?'Diese Umfrage ist nicht mehr verfügbar.':`Die Umfrage konnte nicht geladen werden. ${error.message}`,'poll-status poll-error'),button('Erneut versuchen',()=>location.reload())); }
-  // Never destroy an in-progress optional comment when refreshing result counts.
-  const timer=setInterval(()=>{const feedbackInput=mount.querySelector('textarea');if(feedbackInput&&(feedbackInput.value||feedbackInput===document.activeElement))return;if(!document.hidden&&current&&(current.voted||current.poll.effective_status!=='active'))load().catch(()=>{});},60000);
+  // Never destroy an in-progress comment or withdrawal confirmation on refresh.
+  const timer=setInterval(()=>{const feedbackInput=mount.querySelector('textarea');if(mount.querySelector('details[open]')||mount.contains(document.activeElement))return;if(feedbackInput&&feedbackInput.value)return;if(!document.hidden&&current&&(current.voted||current.poll.effective_status!=='active'))load().catch(()=>{});},60000);
   window.addEventListener('pagehide',()=>clearInterval(timer),{once:true});
-  const share=document.getElementById('poll-share');if(share)initSharing(share,document.title,`https://wirkungsoekonomie.de/umfragen/${slug}/`);
 }
 if(typeof document!=='undefined') start();

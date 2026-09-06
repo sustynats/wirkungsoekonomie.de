@@ -12,7 +12,7 @@ Stand: 5. September 2026. Diese Datei dokumentiert das Erweiterungspaket, nicht 
 - Dauerhaftes privates Oracle-Kostenjournal reserviert 0,25 USD vor einer Anfrage; fehlgeschlagene/unterbrochene Aufrufe behalten die Reserve. Erfolgreiche Aufrufe ohne technische Wiederholung werden mit gemeldeten Tokenzahlen abgerechnet. September-Altkosten wurden mit 3 USD einschließlich Sicherheitsreserve übernommen. Der übergeordnete bestehende API-Kostenschutz bleibt wirksam.
 - Ein festes Budget begrenzt die Zahl bearbeitbarer Kandidaten. 40 Nachrichtenaufrufe in 60 Minuten sind die reservierte Spitzenkapazität, keine Zusage dauerhafter Vollauslastung oder vollständiger Berichterstattung. HTTP 429 wird als erwartbare Kapazitätsdrosselung eingeordnet und in der dauerhaften Queue erneut versucht, nicht als KI-Anbieterausfall gemeldet.
 
-## Umsetzung A–N
+## Umsetzung A-N
 
 | Bereich | Implementiert | Grenze / offener Ausbau |
 | --- | --- | --- |

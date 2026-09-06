@@ -1,3 +1,4 @@
+import {stripEditorialHtmlNotes} from "../lib/public-editorial-cleanup.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -517,19 +518,6 @@ function stripPrivateDocumentLinks(content) {
   );
 }
 
-function stripEditorialHtmlNotes(content) {
-  // Produktions- und Agentenhinweise sind weder Beleg noch Erklärung. Eine
-  // veröffentlichte Seite darf nur fachlichen Inhalt, Quellen- und
-  // Versionsinformationen für Leser:innen enthalten.
-  const editorialPhrase = "(?:Live-Reference|Import-?Version|Source-Hash|PDF-Fassung in Produktion|Codex(?:-Anweisung|-Fassung)?|Claude(?:-CI\\/CD)?|CI\\/CD(?:-Satzfreigabe|-Freigabe)?|Erstellt nach[^<]{0,180}Vorlesung-Template|Quell-?Dokument für (?:Claude|Codex))";
-  const block = new RegExp(`<(?:p|li|aside|section)\\b[^>]*>[\\s\\S]*?${editorialPhrase}[\\s\\S]*?<\\/(?:p|li|aside|section)>`, "gi");
-  return content
-    .replace(block, "")
-    // These are legacy production labels, not headings that help a reader.
-    // Keep the substantive section and give it a plain, meaningful label.
-    .replace(/Auszug aus der umfangreichen Korrekturfassung\.?/gi, "Fachliche Vertiefung")
-    .replace(/ergänzende\s+ergänzende/gi, "ergänzende");
-}
 
 function normalizePublicArtifactLinksAndText() {
   const textExtensions = new Set([
@@ -772,7 +760,7 @@ function validatePublicArtifactSafety() {
     /\bSource-Hash\b/i,
     /\bPDF-Fassung in Produktion\b/i,
     /\bCodex-Anweisung\b/i,
-    /\b(?:Claude|Codex)(?:-CI\/CD|-Fassung)?\b/i,
+    /\b(?:Claude|Codex)(?:-CI\/CD|-Fassung|-Anweisung)\b/i,
     /\bCI\/CD(?:-Satzfreigabe|-Freigabe)?\b/i,
     /\b(?:internalNotes?|editorialNotes?)\b/i,
     /\bdata-public-link-removed\b/i,

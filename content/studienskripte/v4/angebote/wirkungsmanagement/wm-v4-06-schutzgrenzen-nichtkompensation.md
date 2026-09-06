@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-06-schutzgrenzen-nichtkompensation.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-06-schutzgrenzen-nichtkompensation.md curriculum=4.0 sanitized=true -->
 # WM-V4-06 · Schutzgrenzen, Nichtkompensation und Zielkonflikte
 
 **lecture_id:** `WOEK-WB-WM-V4-006`  
@@ -83,10 +83,10 @@ Ein hoher Wasserverbrauch ist nicht automatisch eine harte Grenze. Wenn der Stan
 
 ## Typische Fehlinterpretationen
 
-- Jeder Zielkonflikt ist nichtkompensierbar. – Nein.
-- Jede negative Wirkung lässt sich mit positiver Wirkung ausgleichen. – Nein.
-- RMO = universelle Minimumformel. – Nein.
-- Eine rote Linie darf ohne Quellen-/Boundary-Begründung gesetzt werden. – Nein.
+- Jeder Zielkonflikt ist nichtkompensierbar. - Nein.
+- Jede negative Wirkung lässt sich mit positiver Wirkung ausgleichen. - Nein.
+- RMO = universelle Minimumformel. - Nein.
+- Eine rote Linie darf ohne Quellen-/Boundary-Begründung gesetzt werden. - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -115,3 +115,32 @@ Solche Konflikte müssen wir offen abwägen. Anders ist es bei begründeten Schu
 Genau hier greift Nichtkompensation. Die Reverse Merit Order kann helfen, diesen kritischen Bereich in der Bewertung festzuhalten. Aber v4 sagt ausdrücklich: Nicht der niedrigste Mikro-Score entscheidet immer. Erst kommen Materialität, Grenze und Evidenz.
 
 Und selbst dann ist die Managementfrage offen: Können wir die Option redesignen, absichern oder brauchen wir eine andere?
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Zwischen Abwägung und unzulässiger Aufrechnung unterscheiden
+
+Ein Zielkonflikt verlangt eine nachvollziehbare Entscheidung über konkurrierende legitime Ziele. Eine harte Schutzgrenze begrenzt dagegen den zulässigen Entscheidungsraum. Die Grenze braucht eine gegenstandsbezogene Begründung, etwa aus anwendbarem Recht oder einer belastbaren Sicherheitsanforderung. Ein internes Wunschziel darf nicht ohne Weiteres zur universellen roten Linie erklärt werden.
+
+Nichtkompensation greift dort, wo ein Vorteil an anderer Stelle die Grenzverletzung nicht rechtfertigen kann. Sie bedeutet nicht, dass jede noch so kleine negative Veränderung jede Maßnahme verbietet. Reverse Merit Order kann helfen, materiell kritische Felder in der Priorisierung wirksam werden zu lassen. Die Reihenfolge folgt dabei der begründeten Kritikalität und nicht einer beliebigen Skalenposition.
+
+### Durchgearbeiteter Fall: günstiger Prozess mit Zugangsbarriere
+
+Eine fiktive Einrichtung kann Verwaltungskosten senken, indem sie nur noch einen digitalen Zugangsweg anbietet. Die Entscheidung berührt jedoch eine für ihren konkreten Auftrag verbindliche Zugangsvorgabe. Diese Vorgabe und ihre Anwendbarkeit werden im Fall ausdrücklich angenommen; der Kurs behauptet keine identische Rechtsregel für jede Einrichtung.
+
+Zunächst wird geprüft, ob die digitale Gestaltung tatsächlich bestimmte Anspruchsberechtigte ausschließen würde und ob ein geeigneter alternativer Weg vorhanden ist. Eine günstigere Kostenbilanz ersetzt diese Prüfung nicht. Ist der Ausschluss belegt und verletzt er die maßgebliche Vorgabe, muss die Option angepasst werden. Ein anderer positiver Beitrag der Einrichtung kann diese Verletzung nicht einfach ausgleichen.
+
+Mögliche Reaktionen sind ein zusätzlicher Kontaktweg, eine andere Gestaltung oder eine alternative Option. Eine Erprobung ist nur dann vertretbar, wenn sie die einschlägigen Schutzbedingungen selbst einhält. „Pilot“ ist kein Freibrief, Grenzen vorübergehend zu ignorieren. Sind Ressourcen für einen erforderlichen Zugang nicht verfügbar, ist die ursprüngliche Empfehlung nicht ausführbar.
+
+### Lernarbeit mit Erwartungshorizont
+
+Schreibe eine Grenznotiz mit Quelle, Geltungsbereich, betroffenem Zustand, Evidenz und Managementfolge. Trenne eine verbindliche Mindestbedingung von einem zusätzlichen Verbesserungsziel. Eine gute Lösung zeigt, welche Option durch Redesign wieder vertretbar werden könnte und welche Information noch fehlt.
+
+Prüfe auch einen gewöhnlichen Zielkonflikt ohne harte Grenzverletzung, etwa zusätzliche Redundanz gegen höhere laufende Kosten. Er verlangt eine begründete Abwägung. Diese Unterscheidung verhindert sowohl eine beliebige Aufrechnung schwerwiegender Schäden als auch die pauschale Blockade jeder Entscheidung mit Nebenfolgen.

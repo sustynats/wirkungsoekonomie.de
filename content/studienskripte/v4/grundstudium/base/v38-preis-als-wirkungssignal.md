@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v38-preis-als-wirkungssignal.md curriculum=4.0 sanitized=true -->
-# V38 · Preis als Wirkungssignal – wann Preissignale wirken und wann nicht
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v38-preis-als-wirkungssignal.md curriculum=4.0 sanitized=true -->
+# V38 · Preis als Wirkungssignal - wann Preissignale wirken und wann nicht
 
 **lecture_id:** `WOEK-G-BASE-038`  
 **display_code:** `V38`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Preis kann Verhalten verändern – aber nicht immer. Wenn Strom teurer wird, spart ein Haushalt vielleicht Energie. Wenn er aber in einer schlecht gedämmten Mietwohnung ohne Alternative lebt, steigt vor allem die Belastung. **Preissignal ist Wirkmechanismus, kein Automatismus.** WÖk prüft deshalb: Wer sieht den Preis? Wer kann reagieren? Welche Alternative existiert? Wie schnell? Und welche Verteilungseffekte entstehen?
+Ein Preis kann Verhalten verändern - aber nicht immer. Wenn Strom teurer wird, spart ein Haushalt vielleicht Energie. Wenn er aber in einer schlecht gedämmten Mietwohnung ohne Alternative lebt, steigt vor allem die Belastung. **Preissignal ist Wirkmechanismus, kein Automatismus.** WÖk prüft deshalb: Wer sieht den Preis? Wer kann reagieren? Welche Alternative existiert? Wie schnell? Und welche Verteilungseffekte entstehen?
 
 ## Lernziele
 
@@ -61,7 +61,7 @@ Langfristig vielleicht durch:
 - Wohn-/Arbeitsort,
 - Lieferantenwechsel.
 
-Preissignal kann deshalb langfristig stärker wirken – wenn Investitions-/Alternativoptionen verfügbar sind.
+Preissignal kann deshalb langfristig stärker wirken - wenn Investitions-/Alternativoptionen verfügbar sind.
 
 ## 4. Salienz
 
@@ -243,4 +243,8 @@ Ein gefährliches Produkt wird nicht dadurch okay, dass es teurer wird.
 
 Der Merksatz lautet:
 
-**Preis kann Wirkung steuern – aber nur dort, wo Menschen und Märkte tatsächlich reagieren können.**
+**Preis kann Wirkung steuern - aber nur dort, wo Menschen und Märkte tatsächlich reagieren können.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v71-angriffe-auf-rueckkopplung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v71-angriffe-auf-rueckkopplung.md curriculum=4.0 sanitized=true -->
 # V71 · Angriffe auf die Rückkopplung: Desinformation, Einschüchterung und institutionelle Erosion
 
 **lecture_id:** `WOEK-G-BASE-071`  
@@ -126,7 +126,7 @@ Möglicher Wirkpfad:
 
 `Bedrohung -> wahrgenommenes persönliches Risiko -> Rückzug/Selbstzensur -> geringere Perspektivenvielfalt/Kontrolle -> schwächere Öffentlichkeit`.
 
-Das ist ein messbarer Wirkungsraum – etwa über Bedrohungsdaten, Rückzug, Umfragen oder institutionelle Fallstatistiken.
+Das ist ein messbarer Wirkungsraum - etwa über Bedrohungsdaten, Rückzug, Umfragen oder institutionelle Fallstatistiken.
 
 ## 8. Daten- und Beweismanipulation
 
@@ -225,7 +225,7 @@ WÖk übernimmt Konzepte aus Kommunikations-, Sozialpsychologie-, Demokratie- un
 - Reichweite/Kontext,
 - State Variables,
 - Evidenz,
-- 1.–3. Ordnung,
+- 1.-3. Ordnung,
 - Reality Check.
 
 Die Methode bewertet Wirkung, nicht Gesinnung.
@@ -274,7 +274,7 @@ Und genau diese Rückkopplung kann beschädigt werden.
 
 Zum Beispiel durch Desinformation.
 
-Aber schon beim Begriff müssen wir sauber sein: Nicht jede falsche Aussage ist Desinformation. Für Desinformation gehört Täuschungsabsicht dazu – und die müssen wir belegen.
+Aber schon beim Begriff müssen wir sauber sein: Nicht jede falsche Aussage ist Desinformation. Für Desinformation gehört Täuschungsabsicht dazu - und die müssen wir belegen.
 
 Oder nehmen wir Institutionskritik.
 
@@ -295,3 +295,7 @@ Wir sichern den Originaltext. Prüfen Kontext. Reichweite. Wirkmechanismus. Evid
 Der wichtigste Satz lautet:
 
 **Wir bewerten nicht, ob uns eine politische Aussage gefällt. Wir prüfen, ob und wie sie die Informations-, Kontroll- und Korrekturfähigkeit einer Gesellschaft verändert.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-01-rechte-regeln-korrekturfaehigkeit.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-buerger/lectures/db-v4-01-rechte-regeln-korrekturfaehigkeit.md curriculum=4.0 sanitized=true -->
 # DB-V4-01 · Demokratie: Rechte, Regeln und Korrekturfähigkeit
 
 **lecture_id:** `WOEK-WB-DB-V4-001`  
@@ -59,16 +59,47 @@ Ein demokratischer Befund wird nicht aus Zustimmung zur WÖk oder zu einer Sachp
 - WÖk Methodik: https://wirkungsoekonomie.de/methodik/
 
 ## Transferfrage / Praxisaufgabe
-Ordne fünf Akteure – Bundesregierung, Bundestag, Bundesverfassungsgericht, Bundesverwaltung, Bürger:innen – ihren Rollen zu. Nenne je einen Korrekturmechanismus.
+Ordne fünf Akteure - Bundesregierung, Bundestag, Bundesverfassungsgericht, Bundesverwaltung, Bürger:innen - ihren Rollen zu. Nenne je einen Korrekturmechanismus.
 
 ## Prüfungsrelevante Kernaussagen
 Institutionelle Rollen, Mehrheits-/Grundrechtsverhältnis, Korrekturfähigkeit und Kritik vs. Delegitimierung.
 
 ## Zusammenfassung
-Demokratie lebt von Regeln, Rechten, Machtbegrenzung und Korrektur – nicht von konfliktfreier Zustimmung.
+Demokratie lebt von Regeln, Rechten, Machtbegrenzung und Korrektur - nicht von konfliktfreier Zustimmung.
 
 ## Sprechertext
-Demokratie ist nicht das System, in dem niemand streitet. Sie ist das System, das Streit aushalten und Fehler korrigieren kann. Deshalb gehören Wahlen, Rechte, Gerichte, Parlament, Opposition, Medien und Bürgerinnen zusammen – aber mit unterschiedlichen Rollen.
+Demokratie ist nicht das System, in dem niemand streitet. Sie ist das System, das Streit aushalten und Fehler korrigieren kann. Deshalb gehören Wahlen, Rechte, Gerichte, Parlament, Opposition, Medien und Bürgerinnen zusammen - aber mit unterschiedlichen Rollen.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Demokratische Qualität an einem konkreten Vorgang prüfen
+
+Eine demokratische Entscheidung kann einem selbst missfallen und dennoch nach legitimen Regeln zustande kommen. Umgekehrt wird eine Entscheidung nicht schon dadurch demokratisch tragfähig, dass ihr Ergebnis den eigenen Zielen entspricht. Für die Prüfung werden Ergebnis, Verfahren und spätere Korrekturmöglichkeit deshalb getrennt betrachtet. Diese Trennung ermöglicht Kritik ohne die pauschale Abwertung aller Beteiligten.
+
+Ein praktischer Einstieg sind vier Fragen: Wer darf entscheiden? Wer kann vorher gehört werden? Welche Informationen und Alternativen liegen vor? Wie können Fehler oder neue Entwicklungen später berücksichtigt werden? Je nach Gegenstand gelten unterschiedliche Zuständigkeiten und Beteiligungsrechte. Eine Vereinsentscheidung, ein Gemeinderatsbeschluss und ein Bundesgesetz sind nicht dasselbe Verfahren. Der Kurs vermittelt eine Prüflogik, keine überall identische Verfahrensordnung.
+
+Auch Mehrheiten und Schutzrechte erfüllen verschiedene Funktionen. Eine Mehrheit entscheidet innerhalb des anwendbaren Rahmens; sie macht Schutzrechte nicht automatisch gegenstandslos. Zugleich ist nicht jeder Interessenkonflikt bereits eine harte Schutzverletzung. Eine sorgfältige Einordnung benennt das konkrete Schutzgut und den einschlägigen Maßstab, statt jeden unerwünschten Beschluss als undemokratisch zu bezeichnen.
+
+### Durchgearbeiteter Fall: neue Regeln für einen Gemeinschaftsraum
+
+Ein fiktiver Verein will die Öffnungszeiten seines Gemeinschaftsraums verkürzen. Die Mehrheit der anwesenden Mitglieder stimmt dafür. Einige Mitglieder waren wegen ihrer Arbeitszeiten nicht bei der Sitzung. Zunächst steht fest, dass diese Personen nicht teilnahmen; daraus folgt allein noch keine ungültige Entscheidung. Zu prüfen sind Einladung, Satzung, Zuständigkeit und tatsächliche Beteiligungsmöglichkeiten.
+
+Eine WÖk-Ergänzung fragt nach den erwarteten Zustandsveränderungen. Kürzere Öffnungszeiten könnten Betreuungskosten senken und gleichzeitig den Zugang bestimmter Mitglieder erschweren. Die Variante „alles unverändert lassen“ ist ebenso zu prüfen wie geänderte Öffnungszeiten, gemeinsame Betreuung oder ein zeitlich begrenzter Versuch. Der Optionsvergleich soll deutlich machen, wer jeweils Nutzen und Belastung trägt.
+
+Ein möglicher Beschluss verbindet eine begrenzte Erprobung mit einer dokumentierten Überprüfung. Vorher wird festgelegt, welche Daten benötigt werden: tatsächliche Nutzung zu verschiedenen Zeiten, verlässlicher Betreuungsbedarf und Rückmeldungen bislang nicht erreichter Mitglieder. Eine bloße Zufriedenheitsabfrage unter den Anwesenden würde die Ausgangslücke wiederholen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle für den Fall drei getrennte Prüfnotizen zu Zuständigkeit, Beteiligung und Folgen. Schreibe dann eine respektvolle Nachfrage an den Vorstand. Sie soll eine konkrete Information erbitten, ohne eine Täuschungsabsicht oder einen Verfahrensverstoß vorwegzunehmen. Diese Nachricht ist eine Schreibübung und wird im Kurs nicht automatisch versandt.
+
+Eine gute Lösung kann sowohl eine formal ordnungsgemäße Entscheidung als auch einen Verbesserungsbedarf bei der Beteiligung anerkennen. Sie verwechselt die Zahl abgegebener Stimmen nicht mit einem Wirkungsnachweis. Der spätere Reality Check bewertet tatsächliche Nutzung und Belastung anhand der festgelegten Fragen. Ob die Mitglieder das Verfahren dauerhaft als fairer erleben, ist eine zusätzliche Untersuchung und darf aus einer besseren Dokumentation allein nicht behauptet werden.

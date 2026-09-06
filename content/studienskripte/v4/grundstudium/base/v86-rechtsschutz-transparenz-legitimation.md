@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v86-rechtsschutz-transparenz-legitimation.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v86-rechtsschutz-transparenz-legitimation.md curriculum=4.0 sanitized=true -->
 # V86 · Rechtsschutz, Transparenz und demokratische Legitimation
 
 **lecture_id:** `WOEK-G-BASE-086`  
@@ -131,10 +131,10 @@ Das ist nicht nur eine UX-Regel, sondern Governance.
 
 Ein robustes WÖk-System braucht mindestens:
 
-1. Source Correction – falsche Ausgangsdaten korrigieren.
-2. Method Review – falsche Zuordnung/Regel prüfen.
-3. Fach Review – strittige Wirkungseinschätzung neu bewerten.
-4. Governance Appeal – Interessenkonflikt/Verfahrensfehler prüfen.
+1. Source Correction - falsche Ausgangsdaten korrigieren.
+2. Method Review - falsche Zuordnung/Regel prüfen.
+3. Fach Review - strittige Wirkungseinschätzung neu bewerten.
+4. Governance Appeal - Interessenkonflikt/Verfahrensfehler prüfen.
 5. rechtlichen Rechtsbehelf, wenn ein staatlicher Eingriff betroffen ist.
 
 Nicht jeder Streit gehört in dieselbe Instanz.
@@ -260,8 +260,12 @@ Und welche legitimen Ziele eine Demokratie priorisiert, bleibt politische Verant
 
 Deshalb trennen wir Daten-, Methoden-, Entscheidungs- und Governance-Transparenz.
 
-Und wenn ein System Fehler machen kann – was jedes System kann –, braucht es Korrektur.
+Und wenn ein System Fehler machen kann - was jedes System kann -, braucht es Korrektur.
 
 Der Merksatz lautet:
 
 **Je mehr Wirkungsmessung reale Macht bekommt, desto wichtiger werden Demokratie, Verfahren und Rechtsschutz.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

@@ -38,6 +38,24 @@ export function parseNewsSitemap(raw, source) {
 
 export function parseHtmlIndex(raw, source) {
   if (source.access?.html_index !== true) throw new Error("HTML_INDEX_NOT_AUTHORIZED");
+  if (source.html_layout === "bremen_press_table") {
+    const table = String(raw).match(/<table\b[^>]*class=["'][^"']*\bbildboxtable\b[^"']*["'][^>]*>([\s\S]*?)<\/table>/i)?.[1];
+    if (!table) throw new Error("PRESS_INDEX_SCHEMA_CHANGED");
+    const byUrl = new Map();
+    for (const match of table.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)) {
+      const cells = [...match[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map(cell => cell[1]);
+      const link = cells[1]?.match(/<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/i);
+      const date = text(cells[0], 20).match(/^(\d{2})\.(\d{2})\.(\d{4})$/);
+      if (!link || !date) continue;
+      const url = new URL(text(link[1], 2000), source.url);
+      if (url.origin !== new URL(source.url).origin || !/^bremen\d+\.c\.\d+\.de$/.test(url.searchParams.get("gsid") || "")) continue;
+      const day = `${date[3]}-${date[2]}-${date[1]}`;
+      if (!Number.isFinite(Date.parse(day)) || new Date(day).toISOString().slice(0, 10) !== day) continue;
+      const item = record(source, { title: link[2], url: url.href, published_at: day, published_precision: "day", authority: text(cells[2], 180) });
+      if (item) byUrl.set(item.url, item);
+    }
+    return [...byUrl.values()].slice(0, source.max_items || 20);
+  }
   if (source.html_layout === "berlin_press_table") {
     // The public Berlin press portal is an explicitly offered, robots-allowed
     // index. Read only date, title, authority and link from its result table.

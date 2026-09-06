@@ -10,8 +10,9 @@ const directory=fs.mkdtempSync(path.join(root,'outputs/poll-acceptance-'));
 const store=new PollStore({path:path.join(directory,'polls.sqlite'),pepper:'local-test-only-vote-pepper-not-a-secret'});
 const abuse=new PollAbuseStore({path:path.join(directory,'abuse.sqlite'),pepper:'local-test-only-abuse-pepper-not-a-secret'});
 store.create(JSON.parse(fs.readFileSync(path.join(root,'ops/polls/backend/first-poll.json'))));
+if(process.env.POLLS_VISUAL_FIXTURE==='true')store.create({...JSON.parse(fs.readFileSync(path.join(root,'ops/polls/backend/city-poll.json'))),status:'active'});
 const api=createPollHandler({store,abuse,origins:[origin],authorize:async req=>req.headers.authorization==='Bearer local-test-only'});
-const types={'.css':'text/css','.js':'text/javascript','.mjs':'text/javascript','.svg':'image/svg+xml','.png':'image/png','.woff2':'font/woff2'};
+const types={'.css':'text/css','.js':'text/javascript','.mjs':'text/javascript','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.woff2':'font/woff2'};
 const server=createServer(async(req,res)=>{
   try{
     if(await api(req,res))return;

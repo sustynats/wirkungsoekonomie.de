@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { fileSubject, namedSubjects, namedSubjectConflict } from "./living-files.mjs";
+import { fileSubject, namedSubjects, namedSubjectConflict, diplomaticVisit, delegationNames } from "./living-files.mjs";
 
 // A case file is a presentation layer above evidence-bound stories. It never
 // merges claims, sources, event IDs or publication histories. The same rules
@@ -26,9 +26,11 @@ const stamp = story => Date.parse(story.last_updated || story.updated_at || stor
 const firstStamp = story => Date.parse(story.first_seen || story.published_at || story.last_updated || "") || 0;
 const text = story => `${story.title || ""} ${String(story.source_summary || "").slice(0, 1200)}`;
 const stem = word => word.length >= 9 ? word.replace(/(?:ungen|ischen|licher|liche|liches|enden|ender|endes|ern|en|er|es|e|s)$/u, "") : word;
+const caseTerm = word => /^(?:kiew|kyiv|kyjiw)$/.test(word) ? "kyjiw"
+  : /^(?:unterhandler\w*|vermittler\w*|(?:sonder)?gesandt\w*)$/.test(word) ? "delegation" : stem(word);
 const tokens = story => new Set([
   ...(String(story.title || "").match(/\b[A-ZÄÖÜ]{3,6}\b/g) || []).map(normalize).filter(word => !STOPWORDS.has(word)),
-  ...(normalize(text(story)).match(/[a-z0-9äöüß]{5,}/g) || []).map(word => [word, stem(word)]).filter(([word, root]) => root.length >= 5 && !STOPWORDS.has(word) && !STOPWORDS.has(root)).map(([, root]) => root),
+  ...(normalize(text(story)).match(/[a-z0-9äöüß]{4,}/g) || []).map(word => [word, caseTerm(word)]).filter(([word, root]) => root.length >= 5 && !STOPWORDS.has(word) && !STOPWORDS.has(root)).map(([, root]) => root),
 ]);
 const topics = story => new Set((story.topic || []).map(normalize));
 const overlap = (left, right) => [...left].filter(value => right.has(value));
@@ -75,6 +77,14 @@ function compatible(left, right, frequency, total) {
     if (leftScope.length !== 1 || rightScope.length !== 1 || leftScope[0] !== rightScope[0]) return false;
   }
   const leftSubject = fileSubject(left), rightSubject = fileSubject(right);
+  // A sector-wide demand/decision is a separate policy object, not the next
+  // development at an individual incident site. Keep its own card and use
+  // related links for the systemic connection. Concrete case-bound reactions
+  // can still qualify through an explicit incident identity in both records.
+  const leftRole = caseContribution(left).role, rightRole = caseContribution(right).role;
+  if (leftRole !== rightRole && [leftRole, rightRole].includes("reaction")
+    && !(leftSubject.key && leftSubject.key === rightSubject.key)
+    && !(leftSubject.elections.length === 1 && leftSubject.elections[0] === rightSubject.elections[0])) return false;
   if (leftSubject.elections.length || rightSubject.elections.length) {
     if (leftSubject.elections.length !== 1 || rightSubject.elections.length !== 1 || leftSubject.elections[0] !== rightSubject.elections[0]) return false;
   }
@@ -90,6 +100,10 @@ function compatible(left, right, frequency, total) {
   const titleShared = overlap(titleLeft, titleRight);
   if (!firstStamp(left) || !firstStamp(right)) return false;
   const gap = Math.abs(firstStamp(left) - firstStamp(right));
+  const leftDelegates = delegationNames(left), rightDelegates = delegationNames(right);
+  const delegationChain = gap <= 4 * DAY && leftScope.length === 1 && leftScope[0] === rightScope[0]
+    && leftDelegates.length === 2 && rightDelegates.length === 2 && leftDelegates.every(name => rightDelegates.includes(name))
+    && overlap(new Set(leftSubject.places), new Set(rightSubject.places)).length > 0;
   const namedLeft = namedSubjects(left), namedRight = namedSubjects(right);
   const sameCompany = namedLeft.companies.length === 1 && namedRight.companies.length === 1 && namedLeft.companies[0] === namedRight.companies[0];
   const sameObject = Boolean(leftSubject.key && leftSubject.key === rightSubject.key);
@@ -99,8 +113,8 @@ function compatible(left, right, frequency, total) {
   // The headline itself must identify an unfolding case. This prevents a
   // background explainer that merely mentions the same words from swallowing
   // a concrete news file through graph transitivity.
-  const acute = ACUTE.test(left.title) && ACUTE.test(right.title);
-  return timely && acute && (rare.length >= 2 || (sameNamedSubject && titleShared.length >= 2)) && titleShared.length >= 1 && (shared.length >= 3 || titleShared.length >= 2);
+  const acute = (ACUTE.test(left.title) || diplomaticVisit(left)) && (ACUTE.test(right.title) || diplomaticVisit(right));
+  return timely && acute && (rare.length >= 2 || (sameNamedSubject && titleShared.length >= 2)) && (titleShared.length >= 1 || delegationChain) && (shared.length >= 3 || titleShared.length >= 2);
 }
 
 function kind(story) {
@@ -169,7 +183,7 @@ export function buildCaseFiles(stories, { minMembers = MIN_MEMBERS } = {}) {
       return caseFile ? { ...story, topic: caseFile.topics, case_file: caseFile } : story;
     })
     .sort((a, b) => stamp(b) - stamp(a) || a.story_id.localeCompare(b.story_id));
-  return { cases, caseByStory, visibleStories, diagnostics: { ambiguous_story_ids: ambiguous, method: "pairwise-case-integrity-v2" } };
+  return { cases, caseByStory, visibleStories, diagnostics: { ambiguous_story_ids: ambiguous, method: "pairwise-case-integrity-v3" } };
 }
 
 // Independent publication assertion over every pair, not just the links used

@@ -41,7 +41,7 @@ node tests/wirkungswahl-kompass/check-accessibility.mjs
 
 `build-preview.py` schreibt nur `werkzeuge/wirkungswahl-kompass/index.html`. Der Datensatz wird dabei erst nach Schema- und Integritätsprüfung in die eigenständige Seite eingebettet. Das verhindert eine Laufzeitabhängigkeit von nicht deployten `content/`-Dateien.
 
-Die Browser-Abnahme ist unter `tests/wirkungswahl-kompass/browser_audit.py` dokumentiert. Sie benötigt Playwright und Chromium und prüft Kernrouten, 360/485/768/1440 Pixel, Überlauf, Menüfokus, vollständiges Löschen des lokalen Zustands, A–G-Anonymisierung, alle 36 Vergleichsfragen, die lokale Wirkungsraum-Merkkarte, PNG/PDF/SVG-Downloads, das neutrale Teilen und fehlende Analytics-Requests im Kompass.
+Die Browser-Abnahme ist unter `tests/wirkungswahl-kompass/browser_audit.py` dokumentiert. Sie benötigt Playwright und Chromium und prüft Kernrouten, 360/485/768/1440 Pixel, Überlauf, Menüfokus, vollständiges Löschen des lokalen Zustands, A-G-Anonymisierung, alle 36 Vergleichsfragen, die lokale Wirkungsraum-Merkkarte, PNG/PDF/SVG-Downloads, das neutrale Teilen und fehlende Analytics-Requests im Kompass.
 
 ## Hosting und Sicherheit
 
@@ -58,8 +58,8 @@ Rollback: den Release-Commit auf `main` per neuem Revert-Commit zurücknehmen un
 ## Gegenüber dem Referenzprototyp ergänzt
 
 - vollständiges Wipe ohne erneutes Anlegen von Local Storage,
-- Vergleich zeigt über A–I alle 36 Fragen, auch ohne Antwort,
-- A–G bleiben auch in Routen und im Quellenregister verborgen, bis Namen bewusst eingeblendet werden,
+- Vergleich zeigt über A-I alle 36 Fragen, auch ohne Antwort,
+- A-G bleiben auch in Routen und im Quellenregister verborgen, bis Namen bewusst eingeblendet werden,
 - Fokus bleibt bei Antwort- und Wichtigkeitsauswahl erhalten,
 - 44-Pixel-Touchziele und kontraststärkere Link-Tokens,
 - lokale Merkkarte in Mein Wirkungsraum ohne Antwort- oder Parteidaten,

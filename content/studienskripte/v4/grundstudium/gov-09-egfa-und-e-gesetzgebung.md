@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-09-egfa-und-e-gesetzgebung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-09-egfa-und-e-gesetzgebung.md curriculum=4.0 sanitized=true -->
 # GOV-09 · eGFA und E-Gesetzgebung: digitale Prozessintegration und öffentliche Dokumentationsgrenzen
 
 **lecture_id:** `WOEK-G-GOV-EGFA-01`  
@@ -132,7 +132,7 @@ Darum ist `VERSION_DELTA` ein eigenes WÖk-Qualitätsfeld.
 
 Eine amtliche Arbeitshilfe zur gleichstellungsorientierten Gesetzesfolgenabschätzung ist als eigenes Modul in der E-Gesetzgebung vorgesehen.
 
-Sie führt zunächst durch eine Relevanzprüfung und danach – wenn nötig – eine vertiefte Prüfung unterschiedlicher Wirkungen auf Lebensbereiche und Personengruppen.
+Sie führt zunächst durch eine Relevanzprüfung und danach - wenn nötig - eine vertiefte Prüfung unterschiedlicher Wirkungen auf Lebensbereiche und Personengruppen.
 
 Das zeigt zwei Dinge:
 
@@ -216,13 +216,13 @@ Die Architektur kann deshalb technisch anschlussfähig gedacht werden: WÖk muss
 1. **E-Gesetzgebung / Cockpit**  
    https://plattform.egesetzgebung.bund.de/cockpit/
 
-2. **Bundeskanzleramt/BMJV – Empfehlungen zur Einbeziehung von Nachhaltigkeitszielen; eNAP als Teil der Plattform E-Gesetzgebung**  
+2. **Bundeskanzleramt/BMJV - Empfehlungen zur Einbeziehung von Nachhaltigkeitszielen; eNAP als Teil der Plattform E-Gesetzgebung**  
    https://plattform.egesetzgebung.bund.de/egesetzgebung-platform-backend/arbeitshilfen/download/37
 
-3. **BMBFSFJ – Arbeitshilfe gleichstellungsorientierte Gesetzesfolgenabschätzung; Einbettung in E-Gesetzgebung/eGFA**  
+3. **BMBFSFJ - Arbeitshilfe gleichstellungsorientierte Gesetzesfolgenabschätzung; Einbettung in E-Gesetzgebung/eGFA**  
    https://www.bmbfsfj.bund.de/resource/blob/186980/e5528c0b2ce90cdc9bc8aa54c6e198c2/arbeitshilfe-gleichstellungsorientierte-gesetzesfolgenabschaetzung-nach-2-ggo-data.pdf
 
-4. **Nationaler Normenkontrollrat – E-Gesetzgebung**  
+4. **Nationaler Normenkontrollrat - E-Gesetzgebung**  
    https://www.normenkontrollrat.bund.de/Webs/NKR/SharedDocs/Pressemitteilungen/DE/2024/2024-10-16-e-gesetzgebung.html
 
 ### Quellenfunktion
@@ -260,7 +260,7 @@ Das wäre aber so, als würden wir bei einem Auto nur das Navigationsgerät erkl
 
 eNAP steckt heute in einem größeren digitalen Rechtsetzungsprozess.
 
-Die Plattform heißt E-Gesetzgebung. Und darin gibt es die elektronische Gesetzesfolgenabschätzung – eGFA.
+Die Plattform heißt E-Gesetzgebung. Und darin gibt es die elektronische Gesetzesfolgenabschätzung - eGFA.
 
 Die eGFA ist der Rahmen für verschiedene Prüfanforderungen. Nachhaltigkeit ist also ein wichtiger Baustein, aber nicht der einzige.
 
@@ -295,3 +295,19 @@ Darum gehört für WÖk zum Wirkungswissen immer auch: Welche Version? Welches D
 Klingt technisch.
 
 Ist aber fachlich entscheidend.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Welcher staatliche Prüfrahmen passt zum Gegenstand?
+
+Der Prüfbedarf folgt der materiellen Wirkungsrelevanz. Neben Gesetzen können Verordnungen, Strategien, Programme, Förderungen, Garantien, Investitionen, Beschaffung, Infrastruktur und Verwaltungsentscheidungen relevant sein. Prüfe zuerst Zuständigkeit, Handlungsform und konkrete Rechtsgrundlage. Die Bundes-GGO und eNAP gelten nicht pauschal für Länder, Kommunen, EU oder jede staatliche Handlung. Fehlende Universalität bedeutet keine staatliche Prüfleere.
+
+Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm), DNS, Nachhaltigkeitsprüfung und eNAP/eGFA den bestehenden Rahmen. Bei finanzwirksamen Bundesmaßnahmen prüfe zusätzlich beziehungsweise gegenstandsbezogen [§ 7 BHO](https://www.gesetze-im-internet.de/bho/__7.html), [VV-BHO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm) und die [AAWU, Fassung vom 13. Januar 2026](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_13012026_IIA3H100500150006005DOKCOO7005100213785493.htm). Fachrechtliche Rahmen können hinzutreten.
+
+Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
+
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

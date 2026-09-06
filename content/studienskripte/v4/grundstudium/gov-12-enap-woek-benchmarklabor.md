@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-12-enap-woek-benchmarklabor.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-12-enap-woek-benchmarklabor.md curriculum=4.0 sanitized=true -->
 # GOV-12 · Staatliche GFA/eNAP vs. WÖk: Benchmarklabor mit realen Bundesfällen
 
 **lecture_id:** `WOEK-G-GOV-COMPARE-01`  
@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die faire Frage ist nicht „eNAP oder WÖk – wer gewinnt?“. Sie lautet: **Was dokumentiert die staatliche Folgen- und Nachhaltigkeitsprüfung bereits, und was ergänzt die WÖk?** Fünf reale Bundesvorhaben zeigen häufig Konvergenz bei der Grundrichtung. Der WÖk-Zusatz liegt vor allem in expliziten Kausalpfaden, Bedingungen, Gegenfaktum, Verteilung, Delivery, Rebound, Lock-in und späterem Reality Check. Ein Benchmark darf ausdrücklich zum Ergebnis kommen: **Die staatliche Prüfung war an dieser Stelle bereits gut.**
+Die faire Frage ist nicht „eNAP oder WÖk - wer gewinnt?“. Sie lautet: **Was dokumentiert die staatliche Folgen- und Nachhaltigkeitsprüfung bereits, und was ergänzt die WÖk?** Fünf reale Bundesvorhaben zeigen häufig Konvergenz bei der Grundrichtung. Der WÖk-Zusatz liegt vor allem in expliziten Kausalpfaden, Bedingungen, Gegenfaktum, Verteilung, Delivery, Rebound, Lock-in und späterem Reality Check. Ein Benchmark darf ausdrücklich zum Ergebnis kommen: **Die staatliche Prüfung war an dieser Stelle bereits gut.**
 
 ## Lernziele
 
@@ -86,7 +86,7 @@ source_refs
 
 **Harte Regel:** `public_enap_summary_available = false` bedeutet nur **keine öffentliche Zusammenfassung nachgewiesen**. Es bedeutet weder `NOT_ASSESSED` noch automatisch `eNAP not used`.
 
-## 3. Was verglichen wird – und was nicht
+## 3. Was verglichen wird - und was nicht
 
 Die staatliche Einschätzung bleibt ein eigenes Quellobjekt. WÖk kopiert sie nicht in das eigene Urteil.
 
@@ -110,12 +110,12 @@ Bei derselben abgegrenzten Frage ergeben sich unterschiedliche Ergebnisse. Dann 
 3. Separate öffentliche eNAP-Dokumentation suchen.
 4. Dokumentationsstatus und eNAP-Nutzungsstatus getrennt codieren.
 5. Staatliche Problem-, Ziel- und Wirkungsaussagen extrahieren.
-6. DNS-/SDG-Bezüge als Ziel-/Referenzbezug behandeln – nicht als Kausalitätsbeweis.
+6. DNS-/SDG-Bezüge als Ziel-/Referenzbezug behandeln - nicht als Kausalitätsbeweis.
 7. WÖk unabhängig durchführen:
-   `Problem Review -> Goal Review -> A→M→ΔZ→R -> 1.–3. Ordnung/Kaskaden -> Verteilung/Resilienz -> Gegenfaktum/Attribution -> Omissions/Delivery/Policy Coherence -> Optionsvergleich -> Reality Check`.
+   `Problem Review -> Goal Review -> A→M→ΔZ→R -> 1.-3. Ordnung/Kaskaden -> Verteilung/Resilienz -> Gegenfaktum/Attribution -> Omissions/Delivery/Policy Coherence -> Optionsvergleich -> Reality Check`.
 8. Konvergenz, Zusatzbefund und Widerspruch getrennt dokumentieren.
 
-## 5. Fall 1 – StromVKG, BT-Drs 21/6279
+## 5. Fall 1 - StromVKG, BT-Drs 21/6279
 
 **Öffentliche staatliche Dokumentation:** Regierungsentwurf/Begründung mit Nachhaltigkeitsdarstellung ist öffentlich.  
 **Öffentliche eNAP-Zusammenfassung:** sofern nicht separat als objektbezogene Primärquelle nachgewiesen, `NOT_PUBLICLY_ESTABLISHED`.  
@@ -138,7 +138,7 @@ Ein geeigneter Kapazitätsmechanismus kann Investitionsanreize für gesicherte L
 
 **Lernpunkt:** Versorgungssicherheitslogik kann konvergieren; Klimawirkung bleibt konditional und falsifizierbar.
 
-## 6. Fall 2 – IVSG, BT-Drs 21/2999
+## 6. Fall 2 - IVSG, BT-Drs 21/2999
 
 **Öffentliche staatliche Dokumentation:** öffentliches Regelungsvorhaben mit Nachhaltigkeitsdarstellung.  
 **Öffentliche eNAP-Zusammenfassung:** nur `true`, wenn separat objektbezogen belegt; sonst `NOT_PUBLICLY_ESTABLISHED`.  
@@ -159,7 +159,7 @@ Bessere Daten können Verkehrssteuerung und multimodale Dienste verbessern.
 
 **Lernpunkt:** staatlicher Wirkpfad kann bereits kausal formuliert sein; WÖk zerlegt Bedingungen und Zwischenschritte.
 
-## 7. Fall 3 – BRUBEG, BT-Drs 21/3058
+## 7. Fall 3 - BRUBEG, BT-Drs 21/3058
 
 **Öffentliche staatliche Dokumentation:** öffentlich; europarechtlicher Umsetzungskontext und Nachhaltigkeitsdarstellung sind Teil der Primärunterlagen.  
 **Öffentliche eNAP-Zusammenfassung:** separat prüfen; ohne Beleg `NOT_PUBLICLY_ESTABLISHED`.  
@@ -174,7 +174,7 @@ Besseres Risikomanagement und Aufsicht können die Resilienz des Finanzsystems s
 ### WÖk-Zusatz
 Lange Ketten wie `Bankenresilienz -> Finanzierung -> Wachstum -> Armutsminderung` werden nicht als ein gesicherter Effekt behandelt. Zwischenmechanismen, Alternativerklärungen und Attribution werden getrennt. Begrenzter nationaler Spielraum wird als `COMPETENCE/OPTION_SPACE` geführt.
 
-## 8. Fall 4 – Pflege, BT-Drs 21/1511
+## 8. Fall 4 - Pflege, BT-Drs 21/1511
 
 **Öffentliche staatliche Dokumentation:** öffentlich.  
 **Öffentliche eNAP-Zusammenfassung:** separat prüfen; ohne Beleg `NOT_PUBLICLY_ESTABLISHED`.  
@@ -196,7 +196,7 @@ Hohe plausible Konvergenz bei besserer Kompetenznutzung, Prävention und weniger
 
 **Lernpunkt:** Zusatznutzen kann in Systemtiefe und Monitoring liegen, auch wenn die staatliche Richtung überzeugt.
 
-## 9. Fall 5 – UWG, BT-Drs 21/1855
+## 9. Fall 5 - UWG, BT-Drs 21/1855
 
 **Öffentliche staatliche Dokumentation:** öffentlich.  
 **Öffentliche eNAP-Zusammenfassung:** separat prüfen; ohne Beleg `NOT_PUBLICLY_ESTABLISHED`.  
@@ -243,7 +243,7 @@ WÖk ist am stärksten, wenn sie nicht behauptet, Folgenprüfung erfunden zu hab
 - Problem Review
 - Goal Review
 - explizite Mechanismen
-- Wirkungen 1.–3. Ordnung/Kaskaden
+- Wirkungen 1.-3. Ordnung/Kaskaden
 - Verteilung/Resilienz
 - Gegenfaktum/Attribution
 - Omissions/Delivery/Policy Coherence
@@ -268,26 +268,26 @@ Wenn ein staatliches Verfahren diese Funktionen im Einzelfall bereits gut erfül
 
 ## 14. Typische Fehlinterpretationen
 
-**„Kein öffentliches eNAP-PDF = keine Nachhaltigkeitsprüfung.“** – Falsch.
+**„Kein öffentliches eNAP-PDF = keine Nachhaltigkeitsprüfung.“** - Falsch.
 
-**„GFA und eNAP sind dasselbe.“** – Falsch. eNAP ist ein Werkzeug innerhalb der Nachhaltigkeitsprüfung/GFA-Architektur.
+**„GFA und eNAP sind dasselbe.“** - Falsch. eNAP ist ein Werkzeug innerhalb der Nachhaltigkeitsprüfung/GFA-Architektur.
 
-**„Wenn DNS/SDGs passen, ist die Wirkung bewiesen.“** – Falsch. `Target Alignment != Causality`.
+**„Wenn DNS/SDGs passen, ist die Wirkung bewiesen.“** - Falsch. `Target Alignment != Causality`.
 
-**„WÖk muss im Benchmark anders urteilen.“** – Falsch. Konvergenz ist ein valides Ergebnis.
+**„WÖk muss im Benchmark anders urteilen.“** - Falsch. Konvergenz ist ein valides Ergebnis.
 
-**„Nur der Nachhaltigkeitsabschnitt ist staatliche Folgenprüfung.“** – Falsch. Die GFA umfasst weitere Folgen- und Prüffelder.
+**„Nur der Nachhaltigkeitsabschnitt ist staatliche Folgenprüfung.“** - Falsch. Die GFA umfasst weitere Folgen- und Prüffelder.
 
 ## 15. Primärquellen / Fallquellen
 
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
-- BMJV – Nachhaltige Gesetzgebung: https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- BMJV - Nachhaltige Gesetzgebung: https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html
 - E-Gesetzgebung/eGFA/eNAP: https://plattform.egesetzgebung.bund.de/cockpit/#/egfa
-- Bundestag Drucksache 21/6279 – StromVKG
-- Bundestag Drucksache 21/2999 – IVSG
-- Bundestag Drucksache 21/3058 – BRUBEG
-- Bundestag Drucksache 21/1511 – Pflege
-- Bundestag Drucksache 21/1855 – UWG
+- Bundestag Drucksache 21/6279 - StromVKG
+- Bundestag Drucksache 21/2999 - IVSG
+- Bundestag Drucksache 21/3058 - BRUBEG
+- Bundestag Drucksache 21/1511 - Pflege
+- Bundestag Drucksache 21/1855 - UWG
 
 **Freshness/Provenienz:** Für jede Fallmatrix müssen die konkrete Drucksache, der öffentliche Dokumentationsstatus und ein objektbezogener eNAP-Nutzungsbeleg separat versioniert werden. Keine Verfahrensvermutung darf als Objektbeweis erscheinen.
 
@@ -312,6 +312,44 @@ Ein fairer Vergleich beginnt mit einer überraschend einfachen Regel: Wir dürfe
 
 Erst danach beginnt der interessante Teil. Was erkennt die staatliche Prüfung bereits? Welche Wirkungsrichtung, Zielkonflikte oder Langfristfolgen nennt sie? Und was ergänzt die WÖk durch Problemprüfung, Zielprüfung, explizite Mechanismen, Gegenfaktum, Verteilung, Delivery oder Reality Check?
 
-Bei unseren fünf Bundesfällen sehen wir etwas Wichtiges: Oft ist die Grundrichtung gar nicht strittig. Bei Pflege, intelligenter Mobilität oder Verbraucherschutz gibt es viel Konvergenz. Das ist kein Problem für die WÖk – im Gegenteil. Es zwingt uns, ihren Zusatznutzen präzise zu benennen, statt den Staat künstlich kleinzureden.
+Bei unseren fünf Bundesfällen sehen wir etwas Wichtiges: Oft ist die Grundrichtung gar nicht strittig. Bei Pflege, intelligenter Mobilität oder Verbraucherschutz gibt es viel Konvergenz. Das ist kein Problem für die WÖk - im Gegenteil. Es zwingt uns, ihren Zusatznutzen präzise zu benennen, statt den Staat künstlich kleinzureden.
 
 Der Benchmark ist deshalb nicht nur eine Prüfung staatlicher Verfahren. Er ist eine Selbstprüfung der Wirkungsökonomie. Und genau so sollte Wissenschaft funktionieren.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Welcher staatliche Prüfrahmen passt zum Gegenstand?
+
+Der Prüfbedarf folgt der materiellen Wirkungsrelevanz. Neben Gesetzen können Verordnungen, Strategien, Programme, Förderungen, Garantien, Investitionen, Beschaffung, Infrastruktur und Verwaltungsentscheidungen relevant sein. Prüfe zuerst Zuständigkeit, Handlungsform und konkrete Rechtsgrundlage. Die Bundes-GGO und eNAP gelten nicht pauschal für Länder, Kommunen, EU oder jede staatliche Handlung. Fehlende Universalität bedeutet keine staatliche Prüfleere.
+
+Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm), DNS, Nachhaltigkeitsprüfung und eNAP/eGFA den bestehenden Rahmen. Bei finanzwirksamen Bundesmaßnahmen prüfe zusätzlich beziehungsweise gegenstandsbezogen [§ 7 BHO](https://www.gesetze-im-internet.de/bho/__7.html), [VV-BHO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm) und die [AAWU, Fassung vom 13. Januar 2026](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_13012026_IIA3H100500150006005DOKCOO7005100213785493.htm). Fachrechtliche Rahmen können hinzutreten.
+
+Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
+
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+
+### Drei Arten der Erfolgskontrolle
+
+Die [AAWU 2026, Abschnitt D.III](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_13012026_IIA3H100500150006005DOKCOO7005100213785493.htm) unterscheidet Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. Zielerreichung vergleicht Soll und Ist. Wirkungskontrolle untersucht, ob und wie die Maßnahme zur Veränderung beigetragen hat, einschließlich anderer Einflussfaktoren und unbeabsichtigter Wirkungen. Wirtschaftlichkeitskontrolle bezieht Ergebnis und Ressourceneinsatz aufeinander. Der bloße Zielerreichungsgrad beweist daher noch keinen ursächlichen Beitrag.
+
+Beispiel: Ein Förderprogramm finanziert 100 Beratungen. Das sind Leistungen. Eine sinkende Abbruchquote beschreibt zunächst eine beobachtete Zustandsänderung. Für die Wirkungskontrolle werden Ausgangslage, Wirkmodell, Vergleichsentwicklung, Mitnahmeeffekte und weitere Reformen untersucht. Die Wirtschaftlichkeitskontrolle betrachtet anschließend auch Vollzugs-, Folge- und Opportunitätskosten. Ein WÖk-Profil kann Verteilung, Resilienz, ausgelassene Wirkpfade und harte Schutzgrenzen ergänzen; es darf die staatliche Wirkungskontrolle nicht auf bloßes Reporting reduzieren.
+
+Arbeitsauftrag: Lege für das Programm je eine Frage, einen Nachweis und einen Prüftermin für alle drei Kontrollarten fest. Begründe außerdem, welche Frage bereits der staatliche Rahmen verlangt und welchen zusätzlichen Erkenntnisgewinn dein WÖk-Schritt liefern soll.
+
+### Nachprüfbare Fundstellen des Benchmarklabors · Stand 6. September 2026
+
+Verglichen werden die folgenden **datiertermaßen fixierten Gesetzentwürfe**, nicht pauschal der heutige konsolidierte Gesetzesstand. Seitenzahlen bezeichnen die gedruckte Drucksachenseite. Die Fundstelle belegt eine veröffentlichte Nachhaltigkeitsdarstellung; sie ersetzt weder einen eNAP-Rohexport noch eine Prüfung der tatsächlichen Umsetzung.
+
+| Fallobjekt | Primärquelle und Nachhaltigkeitsabschnitt |
+| --- | --- |
+| StromVKG | [BT-Drs. 21/6279, S. 80-81](https://dserver.bundestag.de/btd/21/062/2106279.pdf) |
+| IVSG | [BT-Drs. 21/2999, S. 22](https://dserver.bundestag.de/btd/21/029/2102999.pdf); ausdrückliche eNAP-Nennung im Text |
+| BRUBEG | [BT-Drs. 21/3058, S. 171 ff.](https://dserver.bundestag.de/btd/21/030/2103058.pdf); DNS-Fassung des Originaldokuments beibehalten |
+| Pflegebefugnisgesetz | [BT-Drs. 21/1511, S. 78 ff.](https://dserver.bundestag.de/btd/21/015/2101511.pdf) |
+| UWG | [BT-Drs. 21/1855, S. 14-15](https://dserver.bundestag.de/btd/21/018/2101855.pdf) |
+
+Für jeden Vergleich sind Dokumentdatum, Seitenfundstelle, staatliche Aussage, unabhängiger WÖk-Wirkpfad und Evidenzlücke getrennt zu dokumentieren. Eine ähnliche Bewertung beider Ansätze ist ein zulässiges Ergebnis. Gesetzesänderungen nach dem fixierten Entwurf sind bei einem neuen Fallvergleich gesondert nachzuführen.

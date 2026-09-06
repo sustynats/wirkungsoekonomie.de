@@ -24,7 +24,8 @@ SHOW_TITLE = os.environ.get("WOEK_PUBLICATION_SHOW_TITLE", "").strip().lower() i
 DOCX_SOURCE_VALUE = os.environ.get("WOEK_PUBLICATION_DOCX", "").strip()
 DOCX_SOURCE = ROOT / DOCX_SOURCE_VALUE if DOCX_SOURCE_VALUE else None
 IMAGE_BASE = os.environ.get("WOEK_PUBLICATION_IMAGE_BASE", "").strip()
-SKIP_PDF = os.environ.get("WOEK_PUBLICATION_SKIP_PDF", "").strip().lower() in {"1", "true", "yes"}
+SKIP_PDF = (os.environ.get("WOEK_PUBLICATION_SKIP_PDF", "").strip().lower() in {"1", "true", "yes"}
+            or os.environ.get("WOEK_PDF_BUILD_MODE") == "verify")
 
 
 def inline(value: str) -> str:
@@ -203,6 +204,9 @@ def build_pdf(items) -> None:
 
 
 def main() -> None:
+    if os.environ.get("WOEK_PDF_BUILD_MODE") == "verify":
+        if not PDF.is_file() or not PDF.read_bytes().startswith(b"%PDF-"):
+            raise RuntimeError(f"Published PDF missing or invalid: {PDF}")
     items = list(blocks(SOURCE.read_text(encoding="utf-8")))
     ONLINE.parent.mkdir(parents=True, exist_ok=True)
     ONLINE.write_text(build_html(items), encoding="utf-8")

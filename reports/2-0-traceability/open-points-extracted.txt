@@ -2,7 +2,7 @@
 # Wirkungsoekonomie_Offene_Punkteliste_Nachtrag_Content_Links.docx
 
 Nachtrag zur offenen Punkteliste: Content-Master und Quellenlinks
-Wirkungsoekonomie.de – Abnahmebaustein für die finale Umsetzung des Öffentlichen Wirkungsraums
+Wirkungsoekonomie.de - Abnahmebaustein für die finale Umsetzung des Öffentlichen Wirkungsraums
 Stand: 06. Juni 2026 · Ziel: CodeX-Abgleich der live umgesetzten Seiten gegen die zuvor erarbeiteten finalen Text- und Link-Master
 Kurzurteil
 Ja: Die perfekten Inhalte und die korrekten Quellenlinks sind kein Randthema, sondern ein eigener P0-Abnahmeblock. Die Website darf nicht nur strukturell online sein. Sie muss gegen die finalen Textmaster und die Quellen-/Link-Korrektur geprüft werden. Jede Abweichung muss entweder behoben oder begründet dokumentiert werden.
@@ -18,10 +18,10 @@ CodeX soll folgende bereits erstellte Dokumente als verbindliche Master heranzie
 Masterbereich
 Verbindliches Dokument
 Abnahmebedeutung
-Debattenkarten – finale Texte
+Debattenkarten - finale Texte
 Wirkungsoekonomie_Debattenkompass_Textmaster_Codex_v2.docx
 Jede Debattenkarte muss gegen den finalen Textmaster geprüft werden: Reihenfolge, Ton, Sofortantwort, Folgencheck, Wirkpfad, Faktenlage, Quellen, Methodik, verwandte Inhalte.
-Debattenkarten – Quellen und Deeplinks
+Debattenkarten - Quellen und Deeplinks
 Wirkungsoekonomie_Debattenkompass_Quellen_Link_Korrektur_Codex.docx
 Jede interne und externe Quelle muss als klickbarer Deeplink vorhanden sein. Textlich genannte, aber nicht verlinkte Quellen gelten als Fehler.
 Öffentlicher Wirkungsraum
@@ -37,21 +37,21 @@ Glossar-Korrektur
 Wirkungsoekonomie_Glossar_Korrektur_Codex.docx
 Alle Glossarseiten müssen ohne interne Metadaten, ohne „published“, ohne „defined“, ohne leere Blöcke und ohne .md-Quellen erscheinen.
 3. Neue P0-Punkte, die in die finale offene Punkteliste gehören
-P0-C01 – Content-Master-Abgleich aller Debattenkarten
+P0-C01 - Content-Master-Abgleich aller Debattenkarten
 Alle live sichtbaren Debattenkarten müssen feldweise gegen den finalen Textmaster geprüft werden. Fehlende, verkürzte, generische oder in alter Reihenfolge stehende Abschnitte sind zu ersetzen. Besonders zu prüfen: „Was wird behauptet?“ vor Sofortantwort, eigenständiger Einstieg, Folgencheck, Wirkpfad, kritische Fragen, Faktenlage und Methodik.
-P0-C02 – Kartenbestand klären: 88 vs. 89
+P0-C02 - Kartenbestand klären: 88 vs. 89
 Die Live-Übersicht nennt aktuell offenbar nicht dieselbe Kartenzahl wie die frühere Arbeitsbasis. CodeX muss eine Migrationsmatrix erstellen: Masterkarte → Live-URL → Status → vorhanden/fehlend/umbenannt/zusammengeführt/redirected. Keine Karte darf stillschweigend verschwinden.
-P0-C03 – Quellen-Link-Master gegen Live prüfen
+P0-C03 - Quellen-Link-Master gegen Live prüfen
 Jede Quelle, die im Quellenmaster steht, muss im Live-Quellenblock als klickbarer Link vorhanden sein. Quellen dürfen nicht nur textlich genannt werden. Jede Quelle braucht, wo sinnvoll: Belegt hier, Grenze, Datenstand, letzte Prüfung.
-P0-C04 – Interne WÖk-Quellen korrekt routen
+P0-C04 - Interne WÖk-Quellen korrekt routen
 Interne Quellen dürfen nicht auf .md-Dateien, Word-Dateien oder lokale Pfade verlinken. Sie müssen auf ein öffentliches Online-Kapitel, eine öffentliche Glossarseite oder ein geprüftes PDF mit Mehrwert führen.
-P0-C05 – Externe Quellen als Deeplinks
+P0-C05 - Externe Quellen als Deeplinks
 Externe Quellen müssen auf die konkrete Quelle, Publikation, Datentabelle oder Methodenseite führen, nicht nur auf die Startseite einer Institution. Allgemeine Institutionsnamen ohne Link gelten als Fehler.
-P0-C06 – Quellenblöcke als Vertrauenskomponente
+P0-C06 - Quellenblöcke als Vertrauenskomponente
 Quellenblöcke müssen redaktionell verständlich sein. Nicht nur Linkliste, sondern: Welche Quelle belegt welchen Teil? Was belegt sie nicht? Welcher Datenstand gilt? Wo bestehen Unsicherheiten?
-P0-C07 – Keine Rohdatei- und Arbeitsartefakt-Links
+P0-C07 - Keine Rohdatei- und Arbeitsartefakt-Links
 Automatisierter Linkcheck muss fehlschlagen bei .md, .doc, .docx, .rtf, .txt, lokalen Dateipfaden, Git-/Repo-Rohpfaden, internen Uploadpfaden ohne öffentliche Freigabe und Roh-Importdateien.
-P0-C08 – Live-Texte gegen Anti-KI-Standard prüfen
+P0-C08 - Live-Texte gegen Anti-KI-Standard prüfen
 Wenn Live-Texte mechanisch, generisch oder templatehaft klingen, sind die finalen redaktionellen Texte aus dem Master vorzuziehen. Keine 08/15-Formulierungen, keine künstliche Ausgewogenheit, keine Standardfloskeln.
 4. Verbindlicher Abnahmeprozess: Master-vs-Live-Diff
 1. Inventar erzeugen: Alle Live-URLs aus Debatten-Kompass, Resonanz-Kompass, Agenda-Radar, Ursachen-Navigator, Resilienz-Prinzipien, Glossar, Quellenblöcken und Bibliothek exportieren.
@@ -158,7 +158,7 @@ Online, aber ohne Detailtiefe / Crosslinks
 Glossar
 Stichprobe „Staat“ wirkt deutlich verbessert; keine sichtbaren published/defined-Artefakte in der Stichprobe.
 Full-Crawl weiter offen
-2. P0 – Sperrkritische offene Punkte vor breitem Launch
+2. P0 - Sperrkritische offene Punkte vor breitem Launch
 ID
 Offener Punkt
 Konkrete CodeX-Aufgabe
@@ -203,7 +203,7 @@ P0-10
 Public-Launch-Entscheidung noch nicht treffen, bevor QA-Bericht vorliegt.
 CodeX-Abschlussbericht erzwingen: geänderte Seiten, Kartenzahl, Quellenzahl, verbotene Links, Platzhalter-Treffer, offene redaktionelle Prüfungen.
 Finaler Bericht liegt vor. Kritische Treffer = 0.
-3. P1 – Qualitätsrelevante offene Punkte
+3. P1 - Qualitätsrelevante offene Punkte
 ID
 Bereich
 Offener Punkt / Aufgabe
@@ -252,7 +252,7 @@ Alte URLs aus der früheren Website-Version prüfen und sauber weiterleiten. Kei
 P1-15
 SEO / Social
 Titel, Meta-Descriptions, OG-Bilder und Canonicals für Öffentlicher Wirkungsraum, Debatten-, Resonanz-, Agenda-, Ursachen-, Resilienz-Seiten setzen.
-4. P2 – Optimierung nach technischer Stabilisierung
+4. P2 - Optimierung nach technischer Stabilisierung
 ID
 Optimierung
 Nutzen
@@ -335,13 +335,13 @@ Keine Platzhalter, keine internen Arbeitsbegriffe, keine KI-Anstriche, keine def
 Abschlussbericht
 CodeX gibt Bericht mit Crawl-Ergebnissen, Fehlern, behobenen Punkten und Restliste aus.
 8. Live-Stichproben, aus denen offene Punkte abgeleitet wurden
-https://wirkungsoekonomie.de/ – Startseite: gute Grundlogik, aber Journal-Ladezustand und ältere Wirkungsradar-Bezeichnung prüfen.
-https://wirkungsoekonomie.de/wirkungsradar/ – Debatten-Kompass-Übersicht: Kartenstatus und Zähler prüfen.
-https://wirkungsoekonomie.de/wirkungsradar/debattenkarten/ – Kartenbestand aktuell 88 sichtbar; Abgleich mit Textmaster erforderlich.
-https://wirkungsoekonomie.de/wirkungsradar/live/deutschland-nur-zwei-prozent/ – gute Detailstruktur, Quellenblock vorhanden.
-https://wirkungsoekonomie.de/oeffentlicher-wirkungsraum/ – Dachseite online.
-https://wirkungsoekonomie.de/wirkungsradar/resonanz-kompass/ – Resonanz-Übersicht online; Titel-/Quote-Fehler und Quellenlogik prüfen.
-https://wirkungsoekonomie.de/wirkungsradar/agenda-radar/ – Agenda-Radar online; Vertiefungs- und Quellenlogik ausbauen.
-https://wirkungsoekonomie.de/wirkungsradar/ursachen-navigator/ – Ursachen-Navigator online; Detailseiten ausbauen.
-https://wirkungsoekonomie.de/wirkungsradar/resilienz-prinzipien/ – Resilienz-Seite online; Wiederholungen ersetzen.
-https://wirkungsoekonomie.de/begriffe/staat/ – Glossar-Stichprobe verbessert; Full-Crawl weiterhin erforderlich.
+https://wirkungsoekonomie.de/ - Startseite: gute Grundlogik, aber Journal-Ladezustand und ältere Wirkungsradar-Bezeichnung prüfen.
+https://wirkungsoekonomie.de/wirkungsradar/ - Debatten-Kompass-Übersicht: Kartenstatus und Zähler prüfen.
+https://wirkungsoekonomie.de/wirkungsradar/debattenkarten/ - Kartenbestand aktuell 88 sichtbar; Abgleich mit Textmaster erforderlich.
+https://wirkungsoekonomie.de/wirkungsradar/live/deutschland-nur-zwei-prozent/ - gute Detailstruktur, Quellenblock vorhanden.
+https://wirkungsoekonomie.de/oeffentlicher-wirkungsraum/ - Dachseite online.
+https://wirkungsoekonomie.de/wirkungsradar/resonanz-kompass/ - Resonanz-Übersicht online; Titel-/Quote-Fehler und Quellenlogik prüfen.
+https://wirkungsoekonomie.de/wirkungsradar/agenda-radar/ - Agenda-Radar online; Vertiefungs- und Quellenlogik ausbauen.
+https://wirkungsoekonomie.de/wirkungsradar/ursachen-navigator/ - Ursachen-Navigator online; Detailseiten ausbauen.
+https://wirkungsoekonomie.de/wirkungsradar/resilienz-prinzipien/ - Resilienz-Seite online; Wiederholungen ersetzen.
+https://wirkungsoekonomie.de/begriffe/staat/ - Glossar-Stichprobe verbessert; Full-Crawl weiterhin erforderlich.

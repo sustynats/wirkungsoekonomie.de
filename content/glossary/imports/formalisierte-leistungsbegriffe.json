@@ -79,8 +79,8 @@
       "canonicalLabel": "Blindleistung",
       "formula": {
         "title": "WÖk-Modell für gebundenen Aufwand ohne Wirkleistung",
-        "expression": "B_WÖ = A_gesamt − A_wirksam",
-        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>B</mi><mtext>WÖ</mtext></msub><mo>=</mo><msub><mi>A</mi><mtext>gesamt</mtext></msub><mo>−</mo><msub><mi>A</mi><mtext>wirksam</mtext></msub></mrow></math>",
+        "expression": "B_WÖ = A_gesamt - A_wirksam",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><mi>B</mi><mtext>WÖ</mtext></msub><mo>=</mo><msub><mi>A</mi><mtext>gesamt</mtext></msub><mo>-</mo><msub><mi>A</mi><mtext>wirksam</mtext></msub></mrow></math>",
         "explanation": "Das Modell beschreibt den Anteil eines gleichartig gemessenen Aufwands A, der keine ausreichende geprüfte positive Zustandsveränderung auslöst. Aufwand kann zum Beispiel Zeit, Budget, Energie oder administrative Kapazität sein.",
         "note": "Die Formel ist keine Gleichsetzung mit der elektrotechnischen Blindleistung Q. Sie ist eine WÖk-Diagnose für Systemaufwand und darf notwendige Schutz-, Pflege- oder Reparaturarbeit nicht pauschal abwerten."
       },
@@ -103,8 +103,8 @@
       "canonicalLabel": "Scheinleistung",
       "formula": {
         "title": "Physikalische Referenz und WÖk-Modell",
-        "expression": "Physikalisch: S = U · I; WÖk-Modell: S_WÖ = L_behauptet − L_nachgewiesen",
-        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mtable columnalign=\"right center left\"><mtr><mtd><mtext>physikalisch</mtext></mtd><mtd><mi>S</mi><mo>=</mo><mi>U</mi><mo>·</mo><mi>I</mi></mtd><mtd><mtext></mtext></mtd></mtr><mtr><mtd><mtext>WÖk-Modell</mtext></mtd><mtd><msub><mi>S</mi><mtext>WÖ</mtext></msub><mo>=</mo><msub><mi>L</mi><mtext>behauptet</mtext></msub><mo>−</mo><msub><mi>L</mi><mtext>nachgewiesen</mtext></msub></mtd><mtd><mtext></mtext></mtd></mtr></mtable></math>",
+        "expression": "Physikalisch: S = U · I; WÖk-Modell: S_WÖ = L_behauptet - L_nachgewiesen",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mtable columnalign=\"right center left\"><mtr><mtd><mtext>physikalisch</mtext></mtd><mtd><mi>S</mi><mo>=</mo><mi>U</mi><mo>·</mo><mi>I</mi></mtd><mtd><mtext></mtext></mtd></mtr><mtr><mtd><mtext>WÖk-Modell</mtext></mtd><mtd><msub><mi>S</mi><mtext>WÖ</mtext></msub><mo>=</mo><msub><mi>L</mi><mtext>behauptet</mtext></msub><mo>-</mo><msub><mi>L</mi><mtext>nachgewiesen</mtext></msub></mtd><mtd><mtext></mtext></mtd></mtr></mtable></math>",
         "explanation": "In der Elektrotechnik ist S die Scheinleistung aus Spannung U und Strom I. Das WÖk-Modell nutzt den Begriff getrennt davon für die Differenz zwischen behaupteter oder sichtbarer Leistung und nachgewiesener Wirkung.",
         "note": "Die beiden Zeilen sind nicht dieselbe Messgröße und dürfen nicht ineinander umgerechnet werden. Die WÖk-Zeile ist ein formales Prüfmodell für Leistungsbehauptungen, keine physikalische Gleichung."
       },
@@ -128,7 +128,7 @@
       "formula": {
         "title": "WÖk-Modell für negative Zustandsveränderung",
         "expression": "V_WÖ = ΔZ⁻_bewertet / Δt",
-        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><msub><mi>V</mi><mtext>WÖ</mtext></msub><mtext>bewertet</mtext></msub><mo>=</mo><mfrac><mrow><mi>Δ</mi><msup><mi>Z</mi><mo>−</mo></msup></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac></mrow></math>",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><msub><msub><mi>V</mi><mtext>WÖ</mtext></msub><mtext>bewertet</mtext></msub><mo>=</mo><mfrac><mrow><mi>Δ</mi><msup><mi>Z</mi><mo>-</mo></msup></mrow><mrow><mi>Δ</mi><mi>t</mi></mrow></mfrac></mrow></math>",
         "explanation": "Das WÖk-Modell beschreibt bewertete negative Zustandsveränderung ΔZ⁻ pro Zeitraum. Es kann zum Beispiel Schäden, vermeidbare Verluste oder verschärfte Risiken sichtbar machen.",
         "note": "Die Formel ist eine Modellbeschreibung. Schwere negative Wirkungen werden nicht durch Wirkleistung in anderen Feldern verrechnet; Nichtkompensation und Wirkungsgrenzen bleiben vorrangig."
       },
@@ -151,8 +151,8 @@
       "canonicalLabel": "Netto-Wirkung",
       "formula": {
         "title": "Formalisierte Netto-Wirkungslogik",
-        "expression": "NW = Σᵢ wᵢ⁺·ΔZᵢ⁺ − Σⱼ wⱼ⁻·ΔZⱼ⁻, nur wenn G = 1; bei G = 0 keine positive Netto-Wirkung",
-        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>NW</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>w</mi><mi>i</mi><mo>+</mo></msubsup><mi>Δ</mi><msubsup><mi>Z</mi><mi>i</mi><mo>+</mo></msubsup><mo>−</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></munderover><msubsup><mi>w</mi><mi>j</mi><mo>−</mo></msubsup><mi>Δ</mi><msubsup><mi>Z</mi><mi>j</mi><mo>−</mo></msubsup><mo>,</mo><mtext> wenn </mtext><mi>G</mi><mo>=</mo><mn>1</mn></mrow></math>",
+        "expression": "NW = Σᵢ wᵢ⁺·ΔZᵢ⁺ - Σⱼ wⱼ⁻·ΔZⱼ⁻, nur wenn G = 1; bei G = 0 keine positive Netto-Wirkung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><mrow><mi>NW</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>w</mi><mi>i</mi><mo>+</mo></msubsup><mi>Δ</mi><msubsup><mi>Z</mi><mi>i</mi><mo>+</mo></msubsup><mo>-</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>m</mi></munderover><msubsup><mi>w</mi><mi>j</mi><mo>-</mo></msubsup><mi>Δ</mi><msubsup><mi>Z</mi><mi>j</mi><mo>-</mo></msubsup><mo>,</mo><mtext> wenn </mtext><mi>G</mi><mo>=</mo><mn>1</mn></mrow></math>",
         "explanation": "ΔZᵢ⁺ und ΔZⱼ⁻ sind bewertete positive und negative Zustandsveränderungen; w sind offengelegte Gewichte. G ist das Schutz-Gate: G = 1 nur, wenn relevante Wirkungsgrenzen und Nichtkompensation eingehalten sind.",
         "note": "Die Formel bildet die Verdichtung ab, nicht die gesamte Bewertung. Bei G = 0 darf das Ergebnis nicht als positive Netto-Wirkung ausgewiesen werden, auch wenn die Summe rechnerisch positiv wäre."
       },

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v07-mensch-als-wirkungsdimension.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v07-mensch-als-wirkungsdimension.md curriculum=4.0 sanitized=true -->
 # V07 · Mensch als Wirkungsdimension
 
 **lecture_id:** `WOEK-G-BASE-007`  
@@ -48,7 +48,7 @@ Diese Ebenen überlappen, sind aber nicht austauschbar.
 
 ## 3. Verteilung ist Teil des Befunds
 
-Ein positiver Durchschnitt kann einen Verlust einzelner Gruppen verdecken. Deshalb wird soweit materiell geprüft nach Einkommen, Alter/Generation, Region, Geschlecht oder anderen sachlich relevanten Expositionsmerkmalen – ohne Menschen in politische oder soziale Scores einzuteilen.
+Ein positiver Durchschnitt kann einen Verlust einzelner Gruppen verdecken. Deshalb wird soweit materiell geprüft nach Einkommen, Alter/Generation, Region, Geschlecht oder anderen sachlich relevanten Expositionsmerkmalen - ohne Menschen in politische oder soziale Scores einzuteilen.
 
 `GOOD_AVERAGE != GOOD_DISTRIBUTION`.
 
@@ -76,10 +76,10 @@ Wenn sich Gesundheit nach einer Maßnahme verbessert, reicht zeitliche Reihenfol
 
 ## Typische Fehlinterpretationen
 
-- „Mensch“ ist ein einheitlicher Score. – Nein.
-- Durchschnittlicher Nutzen bedeutet faire Wirkung. – Nein.
-- Ein sozialpolitisches Ziel beweist soziale Wirkung. – Nein.
-- Rechte können mit genügend positiven Punkten verrechnet werden. – Nein.
+- „Mensch“ ist ein einheitlicher Score. - Nein.
+- Durchschnittlicher Nutzen bedeutet faire Wirkung. - Nein.
+- Ein sozialpolitisches Ziel beweist soziale Wirkung. - Nein.
+- Rechte können mit genügend positiven Punkten verrechnet werden. - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -102,3 +102,7 @@ Prüfungsfähig sind State Variables, Distribution, Output/Outcome, Grundrechts-
 ## Sprechertext
 
 Wenn wir „Wirkung auf Menschen“ sagen, klingt das zunächst einfach. Aber Menschen haben nicht einen einzigen Zustand. Gesundheit kann besser werden, während Wohnkosten steigen. Einkommen kann wachsen, während Zeitdruck oder Unfallrisiko zunehmen. Darum zerlegen wir die große Überschrift in konkrete Zustände. Wir fragen außerdem nicht nur nach dem Durchschnitt: Wer profitiert? Wer trägt Lasten? Und gibt es Rechte oder Schutzgrenzen, die nicht einfach gegen Vorteile anderswo verrechnet werden dürfen? Genau so wird aus einem freundlichen Soziallabel eine prüfbare Wirkungsanalyse.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

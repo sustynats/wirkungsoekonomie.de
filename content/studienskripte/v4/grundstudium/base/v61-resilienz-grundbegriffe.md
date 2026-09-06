@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v61-resilienz-grundbegriffe.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v61-resilienz-grundbegriffe.md curriculum=4.0 sanitized=true -->
 # V61 · Resilienz verstehen: Robustheit, Redundanz, Diversität und Anpassungsfähigkeit
 
 **lecture_id:** `WOEK-G-BASE-061`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein effizientes System kann fragil sein. Ein resilientes System kann Störungen aufnehmen, wesentliche Funktionen erhalten, sich anpassen und sich erholen. Dafür gibt es unterschiedliche Fähigkeiten: **Robustheit** hält aus, **Redundanz** schafft Alternativen, **Diversität** vermeidet gemeinsame Ausfallursachen, **Anpassungsfähigkeit** verändert Verhalten und **Recovery** stellt Funktionen wieder her. WÖk integriert diese Fähigkeiten in Wirkungsentscheidungen – sie hat Resilienz nicht erfunden.
+Ein effizientes System kann fragil sein. Ein resilientes System kann Störungen aufnehmen, wesentliche Funktionen erhalten, sich anpassen und sich erholen. Dafür gibt es unterschiedliche Fähigkeiten: **Robustheit** hält aus, **Redundanz** schafft Alternativen, **Diversität** vermeidet gemeinsame Ausfallursachen, **Anpassungsfähigkeit** verändert Verhalten und **Recovery** stellt Funktionen wieder her. WÖk integriert diese Fähigkeiten in Wirkungsentscheidungen - sie hat Resilienz nicht erfunden.
 
 ## Lernziele
 
@@ -180,7 +180,7 @@ UNDRR, Resilience Engineering, Supply-Chain-/Infrastructure-Resilience und viele
 
 ## 14. Quellen
 
-- UNDRR Terminology – Resilience: https://www.undrr.org/terminology/resilience
+- UNDRR Terminology - Resilience: https://www.undrr.org/terminology/resilience
 - OECD Strategic Foresight: https://www.oecd.org/strategic-foresight/
 - WÖk Resilienz-Dossier: https://wirkungsoekonomie.de/wissen/systemresilienz-statt-nachhaltigkeit/
 
@@ -201,7 +201,7 @@ Wähle ein System und definiere kritische Funktion, fünf Resilienzkapazitäten,
 
 Resilienz heißt nicht, dass nie etwas kaputtgeht.
 
-Es heißt: Wenn etwas passiert, bleibt das Wichtige funktionsfähig – oder kommt schnell zurück.
+Es heißt: Wenn etwas passiert, bleibt das Wichtige funktionsfähig - oder kommt schnell zurück.
 
 Dafür brauchen Systeme unterschiedliche Fähigkeiten.
 
@@ -214,3 +214,7 @@ Denn ein Krankenhaus muss nicht in jedem Detail unverändert bleiben. Es muss kr
 Der Merksatz lautet:
 
 **Resilienz ist keine Reserve um der Reserve willen. Sie ist die Fähigkeit, das Wesentliche unter realen Störungen aufrechtzuerhalten und daraus zu lernen.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

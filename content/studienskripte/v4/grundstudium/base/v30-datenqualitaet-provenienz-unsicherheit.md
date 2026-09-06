@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v30-datenqualitaet-provenienz-unsicherheit.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v30-datenqualitaet-provenienz-unsicherheit.md curriculum=4.0 sanitized=true -->
 # V30 · Datenqualität, Provenienz, Audit und Unsicherheit
 
 **lecture_id:** `WOEK-G-BASE-030`  
@@ -39,7 +39,7 @@ Datenqualität hat mehrere Dimensionen:
 - **Unabhängigkeit:** welche Interessen/Institutionen stehen hinter der Quelle?
 - **Transparenz:** sind Methode, Definition und Datenzugang nachvollziehbar?
 
-„Amtlich“, „peer reviewed“ oder „Unternehmensbericht“ sind wichtige Eigenschaften – aber keine automatische Qualitätsgarantie für jede konkrete Fragestellung.
+„Amtlich“, „peer reviewed“ oder „Unternehmensbericht“ sind wichtige Eigenschaften - aber keine automatische Qualitätsgarantie für jede konkrete Fragestellung.
 
 ## 2. Provenienz: Woher kommt diese Aussage?
 
@@ -59,7 +59,7 @@ Das verhindert einen häufigen Fehler:
 
 Eine Zahl wird über mehrere Berichte weiterzitiert, bis niemand mehr weiß, wie sie ursprünglich gemessen wurde.
 
-## 3. Primärquelle vor Sekundärquelle – aber nicht dogmatisch
+## 3. Primärquelle vor Sekundärquelle - aber nicht dogmatisch
 
 Für Rechts-/Institutionenfragen gilt meist:
 
@@ -217,7 +217,7 @@ Ein reproduzierbarer Wirkungsbefund braucht mindestens:
 10. Bewertung/Recommendation-Version,
 11. spätere Reality-Check-Daten.
 
-So kann ein Dritter nachvollziehen, wie ein Urteil entstanden ist – und es später korrigieren.
+So kann ein Dritter nachvollziehen, wie ein Urteil entstanden ist - und es später korrigieren.
 
 ## 11. KI und Provenienz
 
@@ -317,7 +317,7 @@ Das nennen wir Provenienz.
 
 Und dann kommt eine zweite wichtige Trennung.
 
-Wie stark ist die Evidenz – und in welche Richtung zeigt die Wirkung?
+Wie stark ist die Evidenz - und in welche Richtung zeigt die Wirkung?
 
 Das sind zwei Achsen.
 
@@ -335,10 +335,14 @@ Das klingt wie Wortklauberei. Ist aber ein ziemlich großer Unterschied, wenn sp
 
 Und Provenienz geht bis ins Frontend.
 
-Wenn unsere Datenbank sagt „ambivalent, Evidenz niedrig, drei offene Punkte“ und die Webseite zeigt nur einen grünen Punkt, dann ist die Analyse technisch kaputt – auch wenn die Daten intern richtig sind.
+Wenn unsere Datenbank sagt „ambivalent, Evidenz niedrig, drei offene Punkte“ und die Webseite zeigt nur einen grünen Punkt, dann ist die Analyse technisch kaputt - auch wenn die Daten intern richtig sind.
 
 Darum gibt es Source-vs-View.
 
 Die wichtigste Idee für heute ist simpel:
 
-**Nicht nur fragen: Stimmt die Zahl? Sondern: Woher kommt sie, wofür taugt sie, welche Version gilt – und was darf ich daraus wirklich schließen?**
+**Nicht nur fragen: Stimmt die Zahl? Sondern: Woher kommt sie, wofür taugt sie, welche Version gilt - und was darf ich daraus wirklich schließen?**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

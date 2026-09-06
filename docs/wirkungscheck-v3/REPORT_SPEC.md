@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Reportspezifikation
+# Wirkungscheck Bundestag V3 - Reportspezifikation
 
 ## Zweck
 
@@ -12,7 +12,7 @@ Pseudoprognose noch eine Personen-, Partei- oder Wahlkreisbewertung.
 | --- | --- | --- |
 | A. Ziel | Gewählter Zustand | 1 Satz |
 | B. Ansatz | Gewählter politischer Ansatz | 1 Satz |
-| C. Wirkungscheck | Passung Ansatz–Engpass, mit kurzer Erklärung | 1 Karte |
+| C. Wirkungscheck | Passung Ansatz-Engpass, mit kurzer Erklärung | 1 Karte |
 | D. Bundeshebel | eine oder zwei abgeleitete Rollen, in Alltagssprache | 2 Karten |
 | E. Wirkpfad | Bundesentscheidung → unmittelbare Änderung → Umsetzung → Betroffene → Zustand | 5 Stationen |
 | F. Beobachtung | gewählte Erfolgssignale und jeweiliger Datenstatus | 3 Einträge |

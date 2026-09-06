@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v75-digitale-produktpaesse-wirkung-am-regal.md curriculum=4.0 sanitized=true -->
-# V75 · Digitale Produktpässe und Wirkung am Regal – Dateninfrastruktur statt Nachhaltigkeitssiegel
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v75-digitale-produktpaesse-wirkung-am-regal.md curriculum=4.0 sanitized=true -->
+# V75 · Digitale Produktpässe und Wirkung am Regal - Dateninfrastruktur statt Nachhaltigkeitssiegel
 
 **lecture_id:** `WOEK-G-BASE-075`  
 **display_code:** `V75`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Digital Product Passport kann Produktdaten digital auffindbar machen – etwa zu Material, Reparierbarkeit oder anderen regulatorisch festgelegten Eigenschaften. Das ist enorm wertvoll für Wirkungstransparenz. Aber ein DPP sagt nicht automatisch: **„Dieses Produkt ist nachhaltig.“** Welche Daten enthalten sind, hängt von Produktgruppe und EU-Regeln ab. WÖk kann daraus eine verständliche „Wirkung am Regal“-Ansicht bauen – aber nur als zusätzliche Interpretation, nicht als Ersatz oder Umdeutung des DPP.
+Ein Digital Product Passport kann Produktdaten digital auffindbar machen - etwa zu Material, Reparierbarkeit oder anderen regulatorisch festgelegten Eigenschaften. Das ist enorm wertvoll für Wirkungstransparenz. Aber ein DPP sagt nicht automatisch: **„Dieses Produkt ist nachhaltig.“** Welche Daten enthalten sind, hängt von Produktgruppe und EU-Regeln ab. WÖk kann daraus eine verständliche „Wirkung am Regal“-Ansicht bauen - aber nur als zusätzliche Interpretation, nicht als Ersatz oder Umdeutung des DPP.
 
 ## Lernziele
 
@@ -199,7 +199,7 @@ Falsch.
 
 ## 13. WÖk-Abgrenzung
 
-DPP ist EU-Daten-/Produktregulierungsarchitektur. WÖk kann diese Daten semantisch mit MasterItems, StateVariables, Indikatoren und Produktwirkungsprofilen verbinden. Der Zusatz liegt in Wirkpfad/Referenz/Boundary/Reality Check – nicht im Pass selbst.
+DPP ist EU-Daten-/Produktregulierungsarchitektur. WÖk kann diese Daten semantisch mit MasterItems, StateVariables, Indikatoren und Produktwirkungsprofilen verbinden. Der Zusatz liegt in Wirkpfad/Referenz/Boundary/Reality Check - nicht im Pass selbst.
 
 ## 14. Quellen
 
@@ -223,7 +223,7 @@ Entwirf eine Verbraucher- und eine Beschaffungsansicht für denselben hypothetis
 
 ## 18. Sprechertext
 
-Der Digital Product Passport ist für die Wirkungsökonomie spannend – gerade weil er **nicht** von der Wirkungsökonomie stammt.
+Der Digital Product Passport ist für die Wirkungsökonomie spannend - gerade weil er **nicht** von der Wirkungsökonomie stammt.
 
 Die EU baut damit eine Dateninfrastruktur für Produkte auf.
 
@@ -240,3 +240,13 @@ Reparierbar heißt noch nicht repariert. Repariert heißt noch nicht automatisch
 Der Merksatz lautet:
 
 **Der Produktpass liefert Bausteine. Die Wirkungsanalyse verbindet sie mit Mechanismus, Nutzung, Vergleich und Realität.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zum Digitalen Produktpass · 6. September 2026
+
+Der Digitale Produktpass wird nach der ESPR schrittweise nach Produktgruppen eingeführt. Rahmenverordnung, zentrale Registerinfrastruktur und konkrete Produktpflicht sind verschiedene Ebenen. Der Arbeitsplan ist noch keine unmittelbar für jedes Produkt geltende Passpflicht; maßgeblich sind der jeweilige delegierte Rechtsakt und gegebenenfalls besondere Produktvorschriften. Ein Produktpass macht Angaben zugänglich, er beweist für sich weder positive Netto-Wirkung noch Kausalität.
+
+Quelle: [Europäische Kommission, DPP-Fragen und Antworten, insbesondere Einführung nach Produktgruppen](https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/explore-our-faqs_en).

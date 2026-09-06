@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v36-profile-lesen-begruenden.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v36-profile-lesen-begruenden.md curriculum=4.0 sanitized=true -->
 # V36 · Scorecards lesen, begründen und Scheingenauigkeit vermeiden
 
 **lecture_id:** `WOEK-G-BASE-036`  
@@ -37,18 +37,18 @@ Sondern:
 
 > Unter den angenommenen Nutzungs- und Strommixbedingungen ist die Lebenszyklus-Klimawirkung gegenüber der Referenz voraussichtlich positiv; die Richtung ist durch vergleichende LCA-Evidenz mittel bis hoch gestützt, die Höhe bleibt wegen Nutzungs- und Herstellungsannahmen unsicher.
 
-Der Satz ist länger – aber jetzt wissen wir, **was** bewertet wurde.
+Der Satz ist länger - aber jetzt wissen wir, **was** bewertet wurde.
 
 ## 2. Die Sechs-Fragen-Regel
 
 Zu jedem materiellen Feld muss ein:e Wirkungsökonom:in sechs Fragen beantworten können:
 
-1. **Was verändert sich?** – State Variable.
-2. **Bei wem/wo/wann?** – Wirkungsempfänger, Raum, Zeit.
-3. **Gegen was?** – Baseline/Benchmark/Gegenfaktum.
-4. **Warum?** – Wirkmechanismus.
-5. **Wie sicher?** – Evidenz/Unsicherheit.
-6. **Welche Grenze/offene Frage?** – Boundary/Open Point.
+1. **Was verändert sich?** - State Variable.
+2. **Bei wem/wo/wann?** - Wirkungsempfänger, Raum, Zeit.
+3. **Gegen was?** - Baseline/Benchmark/Gegenfaktum.
+4. **Warum?** - Wirkmechanismus.
+5. **Wie sicher?** - Evidenz/Unsicherheit.
+6. **Welche Grenze/offene Frage?** - Boundary/Open Point.
 
 Wenn eine dieser Fragen nicht beantwortbar ist, muss das sichtbar werden.
 
@@ -104,7 +104,7 @@ Fragen:
 - Was passiert bei anderer Verteilung?
 - Was passiert, wenn ein unsicherer Mechanismus nicht eintritt?
 
-Eine robuste Entscheidung sollte nicht an einer einzigen fragilen Annahme hängen – oder diese Abhängigkeit muss explizit als Bedingung formuliert werden.
+Eine robuste Entscheidung sollte nicht an einer einzigen fragilen Annahme hängen - oder diese Abhängigkeit muss explizit als Bedingung formuliert werden.
 
 ## 7. Boundary schlägt Durchschnitt
 
@@ -206,7 +206,7 @@ Falsch. Materielle Unsicherheit ist entscheidungsrelevant.
 
 ## 13. WÖk-Abgrenzung
 
-WÖk ist dann besser, wenn sie **mehr prüfbare Information mit weniger Scheinsicherheit** liefert – nicht wenn sie möglichst viele Scores produziert.
+WÖk ist dann besser, wenn sie **mehr prüfbare Information mit weniger Scheinsicherheit** liefert - nicht wenn sie möglichst viele Scores produziert.
 
 Darum sind zulässige Endzustände auch:
 
@@ -284,3 +284,7 @@ Die Kunst ist nicht, Komplexität zu verstecken.
 Die Kunst ist, sie so zu verdichten, dass nichts Entscheidendes verloren geht.
 
 Genau das ist Wirkungskompetenz.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

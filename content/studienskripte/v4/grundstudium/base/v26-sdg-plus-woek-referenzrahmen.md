@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v26-sdg-plus-woek-referenzrahmen.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v26-sdg-plus-woek-referenzrahmen.md curriculum=4.0 sanitized=true -->
 # V26 · SDG+: WÖk-eigener Ergänzungsrahmen für demokratische und epistemische Resilienz
 
 **lecture_id:** `WOEK-G-BASE-026`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die 17 SDGs decken sehr viel ab – aber die Wirkungsökonomie will bestimmte demokratische, mediale, digitale und epistemische Voraussetzungen noch expliziter beobachten. Dafür gibt es **SDG+**. Ganz wichtig: SDG+ ist **kein offizielles UN-Ziel und kein deutsches Staatsziel**. Es ist eine WÖk-eigene Ergänzung, die unter anderem Rechtsstaatlichkeit, Medien-/Informationsqualität, Diskursstabilität, digitale Selbstbestimmung und gesellschaftliche Korrekturfähigkeit sichtbarer machen soll.
+Die 17 SDGs decken sehr viel ab - aber die Wirkungsökonomie will bestimmte demokratische, mediale, digitale und epistemische Voraussetzungen noch expliziter beobachten. Dafür gibt es **SDG+**. Ganz wichtig: SDG+ ist **kein offizielles UN-Ziel und kein deutsches Staatsziel**. Es ist eine WÖk-eigene Ergänzung, die unter anderem Rechtsstaatlichkeit, Medien-/Informationsqualität, Diskursstabilität, digitale Selbstbestimmung und gesellschaftliche Korrekturfähigkeit sichtbarer machen soll.
 
 ## Lernziele
 
@@ -44,7 +44,7 @@ Beispiele:
 
 Diese Themen sind teilweise bereits in SDGs, Menschenrechten und Verfassungsrecht enthalten. SDG+ behauptet nicht, sie seien dort „vergessen“. WÖk macht sie nur **operativ expliziter**.
 
-## 2. Was SDG+ ist – und was nicht
+## 2. Was SDG+ ist - und was nicht
 
 ### SDG+ ist
 
@@ -148,7 +148,7 @@ Deshalb gilt:
 - Richtung und Evidenz trennen,
 - Unsicherheit sichtbar machen.
 
-SDG+ ist ein Schutz gegen blinde Flecken – kein Lizenzschein für moralische Etikettierung.
+SDG+ ist ein Schutz gegen blinde Flecken - kein Lizenzschein für moralische Etikettierung.
 
 ## 7. Beispiel: Plattformdesign
 
@@ -289,3 +289,7 @@ Und SDG+ ist unser eigener Ergänzungsrahmen.
 Wenn wir das offen sagen, wird die WÖk nicht schwächer.
 
 Sie wird nachvollziehbarer.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

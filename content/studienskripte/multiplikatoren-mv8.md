@@ -3,7 +3,7 @@
 **Track / Kurscode:** Multiplikator:innen für Wirkungsökonomie · `multiplikatoren`
 **Vorlesungscode:** MV8
 **Empfohlene Lernzeit:** 75 Minuten · **Videolänge:** etwa 20 Minuten
-**Voraussetzung:** MV1 – Maßstabskrise und Wirkung statt Kapital; MV2 – Das Wirkungsvokabular sicher erklären; MV3 – Vom Messen zum Steuern; MV4 – Didaktik der Wirkung; MV5 – Wirkungskommunikation ohne Greenwashing; MV6 – Medien, Narrative und Gegenwind; MV7 – Rolle, Ethik und Autorisierung
+**Voraussetzung:** MV1 - Maßstabskrise und Wirkung statt Kapital; MV2 - Das Wirkungsvokabular sicher erklären; MV3 - Vom Messen zum Steuern; MV4 - Didaktik der Wirkung; MV5 - Wirkungskommunikation ohne Greenwashing; MV6 - Medien, Narrative und Gegenwind; MV7 - Rolle, Ethik und Autorisierung
 **Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-buch-html/) · [WÖk-Referenz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-index-html/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-glossar-html/) · [WÖMS 2.0](https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/)
 
 **Status:** Vollskript zur redaktionellen Korrektur. Der Fall ist modellhaft. Er ist keine Rechtsberatung, keine Zertifizierung, keine Personenbewertung und keine Anleitung, Menschen oder Organisationen nach einem Punktwert einzuordnen.
@@ -43,7 +43,7 @@ Die Gruppe baut den Fall als Wirkpfad auf. Sie startet nicht mit einer Farbe ode
 
 | Baustein | Frage im Bibliotheksfall | Vorläufiger Befund |
 |---|---|---|
-| Ausgangslage | Wer kann die Bibliothek heute nur schwer erreichen – und warum? | Wege, Treppen, Öffnungszeiten und digitale Bestellung können Hürden sein; genaue Bedarfe sind noch offen. |
+| Ausgangslage | Wer kann die Bibliothek heute nur schwer erreichen - und warum? | Wege, Treppen, Öffnungszeiten und digitale Bestellung können Hürden sein; genaue Bedarfe sind noch offen. |
 | Handlung | Was wird konkret getan? | Vorbestellte Medien werden in einem begrenzten Gebiet ausgeliefert. |
 | Wirkpfad | Wie könnte daraus eine Veränderung entstehen? | Eine Lieferung kann Wege und Zeitaufwand senken; erst dadurch kann Nutzung leichter werden. |
 | Erwünschte Veränderung | Welcher Zustand soll sich tatsächlich ändern? | Mehr Menschen können Medien nutzen und am Bibliotheksangebot teilhaben. |
@@ -52,7 +52,7 @@ Die Gruppe baut den Fall als Wirkpfad auf. Sie startet nicht mit einer Farbe ode
 
 Die Tabelle macht ein wichtiges Verhältnis sichtbar: Der Lieferdienst hat **Wirkungspotenzial**, wenn er unter passenden Bedingungen Barrieren senkt. Er hat zugleich **Wirkungsrisiken**, wenn er neue Ausschlüsse schafft oder Belastungen verlagert. [Wirkungspotenzial](https://wirkungsoekonomie.de/begriffe/wirkungspotenzial/) ist keine verkleidete Wirkung. [Wirkungsrisiko](https://wirkungsoekonomie.de/begriffe/wirkungsrisiko/) ist nicht der Beweis, dass Schaden eintreten wird. Beides sind Gründe, genau hinzusehen.
 
-Ein Beispiel zeigt, warum das praktisch zählt. Die Gruppe könnte nach vier Wochen verkünden: „120 Lieferungen – ein voller Erfolg.“ Die Zahl belegt eine Leistung: 120 Zustellungen wurden erbracht. Sie kann auch Reichweite beschreiben. Sie beantwortet aber nicht, ob jene Menschen erreicht wurden, für die der Weg vorher eine reale Hürde war, ob sie dadurch häufiger oder selbstbestimmter nutzen konnten, ob die Ausliefernden die Arbeit dauerhaft tragen können oder ob andere Personen ausgeschlossen blieben. Eine Zahl wird nicht unwichtig, weil sie begrenzt ist. Sie wird brauchbar, wenn ihre Reichweite ehrlich benannt wird.
+Ein Beispiel zeigt, warum das praktisch zählt. Die Gruppe könnte nach vier Wochen verkünden: „120 Lieferungen - ein voller Erfolg.“ Die Zahl belegt eine Leistung: 120 Zustellungen wurden erbracht. Sie kann auch Reichweite beschreiben. Sie beantwortet aber nicht, ob jene Menschen erreicht wurden, für die der Weg vorher eine reale Hürde war, ob sie dadurch häufiger oder selbstbestimmter nutzen konnten, ob die Ausliefernden die Arbeit dauerhaft tragen können oder ob andere Personen ausgeschlossen blieben. Eine Zahl wird nicht unwichtig, weil sie begrenzt ist. Sie wird brauchbar, wenn ihre Reichweite ehrlich benannt wird.
 
 ### Die Vergleichsfrage: Ohne Bezugsgröße kein Erfolgssatz
 
@@ -60,7 +60,7 @@ Nun fragt jemand: „Wenn das Lastenrad fährt statt ein Auto, ist das doch eind
 
 Manche Bestellungen würden ohne Dienst zu Fuß erledigt; manche würden mit dem Bus verbunden; manche würden gar nicht stattfinden; andere könnten eine zusätzliche Autofahrt auslösen. Auch die Beschaffung, Wartung und Nutzung der Räder sowie die Fahrten zu den Abholstellen liegen nicht automatisch außerhalb der Frage. Daraus folgt nicht, dass eine vollständige Bilanz vor dem Start verlangt wird. Es folgt, dass die Aussage begrenzt werden muss.
 
-Eine angemessene Formulierung wäre: „Wir testen einen Lieferdienst mit Lastenrädern und prüfen, ob er Wege zu Medienangeboten erleichtert und welche Verkehrs- und Ressourcenfolgen entstehen.“ Das ist weniger werblich als „klimaneutral“. Es ist aber wahrheitsfähiger. Es unterscheidet Handlung, Erwartung und offene Frage. [Wirkungskommunikation](https://wirkungsoekonomie.de/begriffe/wirkungskommunikation/) wird hier nicht zum Sprachverbot, sondern zur Disziplin, die Behauptung so groß zu machen wie ihre Evidenz – und nicht größer.
+Eine angemessene Formulierung wäre: „Wir testen einen Lieferdienst mit Lastenrädern und prüfen, ob er Wege zu Medienangeboten erleichtert und welche Verkehrs- und Ressourcenfolgen entstehen.“ Das ist weniger werblich als „klimaneutral“. Es ist aber wahrheitsfähiger. Es unterscheidet Handlung, Erwartung und offene Frage. [Wirkungskommunikation](https://wirkungsoekonomie.de/begriffe/wirkungskommunikation/) wird hier nicht zum Sprachverbot, sondern zur Disziplin, die Behauptung so groß zu machen wie ihre Evidenz - und nicht größer.
 
 Diese Sprachprüfung schützt auch vor Greenwashing. Ein grünes Symbol auf einer Tasche kann Aufmerksamkeit erzeugen. Es belegt keine positive Netto-Wirkung. Eine Spende für recyceltes Material kann sinnvoll sein. Sie beantwortet nicht die Frage, ob der Dienst zugänglich, datensparsam und für die Beteiligten tragfähig organisiert ist. Gute Kommunikation zeigt deshalb den Gegenstand, den Rahmen, die Evidenz und die Grenze. Sie versteckt nicht hinter einem hellen Detail, was noch ungeklärt ist.
 
@@ -74,7 +74,7 @@ Die [Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-or
 
 Das ist weder Planwirtschaft noch die Behauptung, eine Methode dürfe privaten oder öffentlichen Menschen jedes Handeln vorschreiben. Die Gruppe trifft weiterhin ihre Entscheidung in ihrem konkreten Auftrag und Rahmen. Die WÖk verschiebt nur die Reihenfolge der Aufmerksamkeit: Erst dort sichern und verbessern, wo eine relevante negative Folge droht; dann über Optimierung, Reichweite und Gestaltung sprechen. So werden gute Absichten nicht abgewertet. Sie werden an eine verantwortliche Praxis gebunden.
 
-### Wer spricht – und wie groß darf der Satz sein?
+### Wer spricht - und wie groß darf der Satz sein?
 
 Am Nachmittag ruft die Stadtteilzeitung an. Sie fragt Mara: „Können wir schreiben, dass die Bibliothek nach Wirkungsökonomie geprüft ist und klimaneutrale Bildung liefert?“ Das Anliegen klingt freundlich, enthält aber drei verschiedene Behauptungen: eine Prüfung, eine institutionelle Aussage und eine Wirkungsbehauptung.
 
@@ -101,7 +101,7 @@ In einer Lernstandsüberprüfung könnte dieser Fall als kurzer Text, Gespräch 
 Eine tragfähige Antwort hat fünf Schritte:
 
 1. **Befund abgrenzen:** Benenne, was tatsächlich vorliegt, was nur geplant ist und welche Daten fehlen. „120 Zustellungen“ ist nicht dasselbe wie „der Dienst baut Zugangsbarrieren ab“.
-2. **Wirkpfad erklären:** Beschreibe, wie eine Handlung zu einer möglichen Veränderung führen soll – und welche Bedingungen dafür erfüllt sein müssen.
+2. **Wirkpfad erklären:** Beschreibe, wie eine Handlung zu einer möglichen Veränderung führen soll - und welche Bedingungen dafür erfüllt sein müssen.
 3. **Schutzfrage priorisieren:** Benenne mindestens ein Wirkungsrisiko und erkläre, warum es nicht gegen einen Vorteil verrechnet werden darf.
 4. **Aussage und Rolle begrenzen:** Formuliere eine öffentliche Aussage so, dass sie Evidenz und Zuständigkeit nicht überdehnt.
 5. **Korrekturweg öffnen:** Zeige, welche Beobachtung die nächste Entscheidung verändern würde und wer dafür zuständig ist.
@@ -110,7 +110,7 @@ Die schlechte Kurzantwort lautet: „Das Lastenrad ist nachhaltig, weil es kein 
 
 Die bessere Antwort wirkt nicht spektakulär. Sie ist präzise genug, um kritisiert, verbessert und verantwortet zu werden. Genau darin liegt ihre Stärke.
 
-## 4. Skript / Folien – fachliche Sicherung
+## 4. Skript / Folien - fachliche Sicherung
 
 ### Die Fallkarte auf einer Seite
 
@@ -160,7 +160,7 @@ Die Übung verlangt kein Urteil über eine Person und keine perfekte Kennzahl. S
 2. Warum braucht die Aussage „klimaneutral“ eine Vergleichslage, einen Rahmen und Evidenz?
 3. Welche Zugangshürden können durch einen Lieferdienst neu entstehen, obwohl seine Absicht inklusiv ist?
 4. Warum dürfen viele Auslieferungen eine relevante Schutzfrage nicht kompensieren?
-5. Was bedeutet Reverse Merit Order für die Reihenfolge der Projektarbeit – und was bedeutet sie ausdrücklich nicht?
+5. Was bedeutet Reverse Merit Order für die Reihenfolge der Projektarbeit - und was bedeutet sie ausdrücklich nicht?
 6. Worin unterscheidet sich ein Projektbericht von Wirkungsrückkopplung?
 7. Welche Aussage darf Mara zur Presseanfrage sicher treffen, und welche darf sie ohne Auftrag nicht treffen?
 8. Wie würdest du eine öffentliche Aussage formulieren, die den Pilotdienst erklärt, ohne eine Wirkung vorwegzunehmen?

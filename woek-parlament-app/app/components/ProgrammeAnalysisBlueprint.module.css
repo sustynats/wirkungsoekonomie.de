@@ -514,7 +514,7 @@
 .proof[open] > summary::after,
 .nested[open] > summary::after,
 .communicationPattern[open] > summary::after {
-  content: "−";
+  content: "-";
 }
 
 .domain > summary,

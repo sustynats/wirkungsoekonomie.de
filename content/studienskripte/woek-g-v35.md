@@ -5,9 +5,7 @@
 **Vorlesungscode:** V35  
 **Modul/Abschnitt:** G3.4  
 **Titel:** Nichtkompensation gegen Greenwashing  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v35-nichtkompensation-gegen-greenwashing.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v35.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v35.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Nichtkompensation gegen Greenwashing** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V34 „Reverse Merit Order"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Kann man einen schweren Schaden mit einem guten Projekt an anderer Stelle ausgle
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Nichtkompensation – warum Freikaufen keine Wirkungslösung ist
+- **Titel:** Nichtkompensation - warum Freikaufen keine Wirkungslösung ist
 - **Länge:** ~15 Min
 - **Kernaussage in einem Satz:** Nichtkompensation verhindert, dass schwere negative Wirkungen durch positive Teilwirkungen, Spenden oder Zertifikate verdeckt werden.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Kompensationslogik.** Klassische Nachhaltigkeitskommunikation arbeitet oft mit Ausgleich: hier Schaden, dort Ausgleich.
+**Abschnitt A - Kompensationslogik.** Klassische Nachhaltigkeitskommunikation arbeitet oft mit Ausgleich: hier Schaden, dort Ausgleich.
 
-**Abschnitt B – WÖk-Grenze.** Schwere Schäden bleiben Schäden. Sie müssen vermieden, reduziert oder beendet werden.
+**Abschnitt B - WÖk-Grenze.** Schwere Schäden bleiben Schäden. Sie müssen vermieden, reduziert oder beendet werden.
 
-**Abschnitt C – Greenwashing.** Kompensation wird problematisch, wenn sie kritische Schäden unsichtbar macht.
+**Abschnitt C - Greenwashing.** Kompensation wird problematisch, wenn sie kritische Schäden unsichtbar macht.
 
-**Abschnitt D – Verhältnis zu Reverse Merit Order.** Nichtkompensation sagt: nicht wegverrechnen. Reverse Merit Order sagt: schwächstes Feld begrenzt.
+**Abschnitt D - Verhältnis zu Reverse Merit Order.** Nichtkompensation sagt: nicht wegverrechnen. Reverse Merit Order sagt: schwächstes Feld begrenzt.
 
-**Abschnitt E – Bessere Praxis.** Erst Schaden reduzieren, dann positive Zusatzwirkung transparent machen.
+**Abschnitt E - Bessere Praxis.** Erst Schaden reduzieren, dann positive Zusatzwirkung transparent machen.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Suche eine Kompensationsbehauptung. Trenne positive Zusatzwirkung, ursprünglich
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -264,12 +259,11 @@ Die folgende Runde verdichtet V35 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V35. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Nichtkompensation, Wirkungsmessung
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Nichtkompensation, Wirkungsmessung
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/nichtkompensation`, `begriffe/greenwashing`, `begriffe/impact-washing`
 
@@ -362,7 +356,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 5
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -1305,8 +1298,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v35-nichtkompensation-gegen-greenwashing.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

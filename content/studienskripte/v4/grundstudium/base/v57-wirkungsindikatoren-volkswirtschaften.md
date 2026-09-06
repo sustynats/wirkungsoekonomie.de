@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v57-wirkungsindikatoren-volkswirtschaften.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v57-wirkungsindikatoren-volkswirtschaften.md curriculum=4.0 sanitized=true -->
 # V57 · Wirkungsindikatoren für Volkswirtschaften: BIP, DNS, SDGs, Wohlfahrt und Resilienz
 
 **lecture_id:** `WOEK-G-BASE-057`  
@@ -32,7 +32,7 @@ Eine Volkswirtschaft ist gleichzeitig Produktions-, Einkommens-, Infrastruktur-,
 
 Darum gilt:
 
-> **Makro-Wirkung braucht ein mehrdimensionales Dashboard – nicht die Suche nach einer einzigen magischen Kennzahl.**
+> **Makro-Wirkung braucht ein mehrdimensionales Dashboard - nicht die Suche nach einer einzigen magischen Kennzahl.**
 
 ## 2. BIP / VGR: wichtige Aktivitätsmessung
 
@@ -46,7 +46,7 @@ Sie sagen aber nicht automatisch:
 - ob Infrastruktur resilient ist,
 - ob Aktivität nur Schäden repariert.
 
-BIP ist deshalb wichtig – aber nicht hinreichend als Wohlstands- oder Wirkungsmaß.
+BIP ist deshalb wichtig - aber nicht hinreichend als Wohlstands- oder Wirkungsmaß.
 
 ## 3. DNS-Indikatoren
 
@@ -194,15 +194,15 @@ So wird sichtbar, ob kurzfristige Krisenreaktion langfristige Resilienz erhöht 
 
 ## 14. Typische Fehlinterpretationen
 
-**„Das BIP muss abgeschafft werden.“** – Falsch. Es bleibt eine wichtige Aktivitätskennzahl.
+**„Das BIP muss abgeschafft werden.“** - Falsch. Es bleibt eine wichtige Aktivitätskennzahl.
 
-**„82 DNS-Indikatoren sind 82 politische Wirkungen.“** – Falsch.
+**„82 DNS-Indikatoren sind 82 politische Wirkungen.“** - Falsch.
 
-**„Ein Dashboard braucht am Ende eine Gesamtnote.“** – Nein.
+**„Ein Dashboard braucht am Ende eine Gesamtnote.“** - Nein.
 
-**„NWI ist in der WÖk der Netto-Wirkungs-Index.“** – Für öffentliche v4-Lehre falsch. `NWI` ist der Nationale Wohlfahrtsindex.
+**„NWI ist in der WÖk der Netto-Wirkungs-Index.“** - Für öffentliche v4-Lehre falsch. `NWI` ist der Nationale Wohlfahrtsindex.
 
-**„Ein positiver Makrotrend beweist Regierungserfolg.“** – Falsch; Attribution fehlt.
+**„Ein positiver Makrotrend beweist Regierungserfolg.“** - Falsch; Attribution fehlt.
 
 ## 15. WÖk-Abgrenzung
 
@@ -236,7 +236,7 @@ Prüfungsfähig sind BIP-vs.-Wohlstand, DNS-/SDG-Monitoring, Nationaler Wohlfahr
 
 ## 20. Sprechertext
 
-Wenn wir über Wohlstand sprechen, suchen wir gern nach einer Zahl. Das BIP ist dafür sehr bekannt. Es misst wirtschaftliche Aktivität – und das ist wichtig. Aber eine Volkswirtschaft kann gleichzeitig wachsen und trotzdem Bodenfruchtbarkeit verlieren, Menschen ungleich belasten oder kritische Infrastruktur fragiler machen.
+Wenn wir über Wohlstand sprechen, suchen wir gern nach einer Zahl. Das BIP ist dafür sehr bekannt. Es misst wirtschaftliche Aktivität - und das ist wichtig. Aber eine Volkswirtschaft kann gleichzeitig wachsen und trotzdem Bodenfruchtbarkeit verlieren, Menschen ungleich belasten oder kritische Infrastruktur fragiler machen.
 
 Darum schauen wir auf mehrere Ebenen: DNS-Indikatoren, europäische und globale SDG-Daten, Wohlfahrtsmaße, Verteilung und Resilienz.
 
@@ -245,3 +245,7 @@ Und hier gibt es eine wichtige sprachliche Falle. `NWI` steht in Deutschland ber
 Der eigentliche Punkt ist aber größer: Wir brauchen kein Duell der Kennzahlen. Wir brauchen ein gutes Dashboard, in dem jede Größe eine klare Funktion hat. Was ist Baseline? Was ist Target? Was ist Outcome? Was ist nur Kontext? Wo ist Verteilung? Wo liegt eine Schutzgrenze? Und was wissen wir über Ursache?
 
 So wird aus vielen Zahlen kein Zahlensalat, sondern eine belastbare Steuerungsgrundlage.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

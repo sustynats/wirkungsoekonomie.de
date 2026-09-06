@@ -14,7 +14,7 @@ Dienstag, 7:42 Uhr, vor der Grundschule am Mühlenweg in Karlsbrück. Vor dem To
 
 Die Verwaltung stellt einen Online-Fragebogen bereit. Nach zwei Tagen steht darunter: „1.146 Menschen haben abgestimmt: Die Stadt hat entschieden, was die Familien wollen.“ Dieser Satz ist bequemer, als der Fall erlaubt. Er sagt nicht, wer teilnehmen konnte, ob die Frage verständlich war, was überhaupt entschieden werden darf, welche Folgen für Kinder, Anwohnende, Beschäftigte oder Menschen mit Mobilitätseinschränkungen auftreten und was nach dem Test mit den Antworten geschieht. Ein Klick ist eine Rückmeldung. Er ist nicht automatisch ein Mandat.
 
-Diese Vorlesung fragt deshalb: **Wie wird aus einer Beteiligungsmöglichkeit ein fairer, begrenzter und lernfähiger Beitrag zu einer öffentlichen Entscheidung – ohne dass Zustimmung gespielt oder Menschen übergangen werden?** Die Wirkungsökonomie wertet keine Personen danach, ob sie teilnehmen, wie oft sie sprechen oder welche Position sie vertreten. Sie betrachtet die Gestaltung des Verfahrens: Macht es relevante Folgen und Gründe sichtbar? Schützt es Rechte und Zugänge? Kann es eine Entscheidung verbessern und später korrigieren?
+Diese Vorlesung fragt deshalb: **Wie wird aus einer Beteiligungsmöglichkeit ein fairer, begrenzter und lernfähiger Beitrag zu einer öffentlichen Entscheidung - ohne dass Zustimmung gespielt oder Menschen übergangen werden?** Die Wirkungsökonomie wertet keine Personen danach, ob sie teilnehmen, wie oft sie sprechen oder welche Position sie vertreten. Sie betrachtet die Gestaltung des Verfahrens: Macht es relevante Folgen und Gründe sichtbar? Schützt es Rechte und Zugänge? Kann es eine Entscheidung verbessern und später korrigieren?
 
 ## 2. Video-/Audio-Vorlesung
 
@@ -101,7 +101,7 @@ Das ist mehr als Reporting. Ein Bericht würde festhalten, wie viele Antworten e
 
 Die Formulierung bleibt absichtlich kleiner als eine Erfolgserzählung. Sie sagt nicht, die Maßnahme sei für alle gut. Sie sagt, welche Veränderung beobachtet wurde, welche Risiken weiter bestehen, welche Schutzgrenze gilt und wie Korrektur möglich bleibt. So wird Beteiligung weder zur Akklamation noch zur Endlosschleife. Sie wird zu einer Infrastruktur, durch die eine öffentliche Entscheidung mehr von ihren Folgen lernen kann.
 
-## 4. Skript / Folien – fachliche Sicherung
+## 4. Skript / Folien - fachliche Sicherung
 
 ### Der Beteiligungsauftrag in sechs Fragen
 

@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v64-kreislaufwirtschaft-regenerative-geschaeftsmodelle.md curriculum=4.0 sanitized=true -->
-# V64 · Kreislaufwirtschaft und regenerative Geschäftsmodelle – vom Materialkreislauf zur Systemwirkung
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v64-kreislaufwirtschaft-regenerative-geschaeftsmodelle.md curriculum=4.0 sanitized=true -->
+# V64 · Kreislaufwirtschaft und regenerative Geschäftsmodelle - vom Materialkreislauf zur Systemwirkung
 
 **lecture_id:** `WOEK-G-BASE-064`  
 **display_code:** `V64`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Kreislaufwirtschaft heißt nicht: „Am Ende wird recycelt.“ Die stärkeren Hebel liegen oft vorher: **weniger Materialbedarf, längere Nutzung, Reparatur, Wiederverwendung, Remanufacturing und erst dann hochwertiges Recycling**. Ein regeneratives Geschäftsmodell geht noch weiter und fragt, ob der Betrieb ökologische und soziale Systeme aktiv stabilisiert oder verbessert. WÖk prüft diese Behauptungen über Lebenszyklus, Rebound, Verteilung und tatsächliche Zustandsänderung – nicht über ein Kreislauf-Label.
+Kreislaufwirtschaft heißt nicht: „Am Ende wird recycelt.“ Die stärkeren Hebel liegen oft vorher: **weniger Materialbedarf, längere Nutzung, Reparatur, Wiederverwendung, Remanufacturing und erst dann hochwertiges Recycling**. Ein regeneratives Geschäftsmodell geht noch weiter und fragt, ob der Betrieb ökologische und soziale Systeme aktiv stabilisiert oder verbessert. WÖk prüft diese Behauptungen über Lebenszyklus, Rebound, Verteilung und tatsächliche Zustandsänderung - nicht über ein Kreislauf-Label.
 
 ## Lernziele
 
@@ -40,7 +40,7 @@ Aber ein geschlossener Materialstrom kann trotzdem:
 
 ## 2. Hierarchie der Hebel
 
-Typisch wirksam – je Produkt kontextspezifisch:
+Typisch wirksam - je Produkt kontextspezifisch:
 
 - Bedarf/Material vermeiden,
 - Produkt langlebig gestalten,
@@ -73,7 +73,7 @@ Wenn Produkte billiger/leichter verfügbar werden, kann Gesamtverbrauch steigen.
 
 Beispiel Sharing:
 
-Mehr Nutzung vorhandener Fahrzeuge kann Fahrzeugbestand senken – oder zusätzliche Fahrten erzeugen.
+Mehr Nutzung vorhandener Fahrzeuge kann Fahrzeugbestand senken - oder zusätzliche Fahrten erzeugen.
 
 Darum zählt Outcome, nicht Geschäftsmodell-Label.
 
@@ -90,7 +90,7 @@ Mögliche Modelle:
 
 Wirkung entsteht nur, wenn Anreize tatsächlich auf Langlebigkeit/Ressourcenschonung ausgerichtet sind.
 
-## 6. Regenerativ – hoher Anspruch
+## 6. Regenerativ - hoher Anspruch
 
 „Regenerativ“ sollte nicht einfach „weniger schlecht“ bedeuten.
 
@@ -212,9 +212,9 @@ Viel stärker kann sein, weniger Material zu brauchen, Produkte länger zu nutze
 
 Und selbst dann müssen wir aufpassen.
 
-Ein Sharing-Angebot kann Autos sparen – oder zusätzliche Fahrten erzeugen.
+Ein Sharing-Angebot kann Autos sparen - oder zusätzliche Fahrten erzeugen.
 
-Ein Leasingmodell kann Langlebigkeit fördern – oder häufigeren Austausch.
+Ein Leasingmodell kann Langlebigkeit fördern - oder häufigeren Austausch.
 
 Darum fragen wir nach der realen Zustandsänderung.
 
@@ -225,3 +225,7 @@ Wer ihn benutzt, sollte zeigen, was tatsächlich besser wird: Boden, Wasser, Bio
 Der Merksatz lautet:
 
 **Ein Kreis auf dem Papier ist noch keine positive Wirkung. Entscheidend ist, ob Ressourcen-, Umwelt- und soziale Zustände über den Lebenszyklus wirklich besser werden.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

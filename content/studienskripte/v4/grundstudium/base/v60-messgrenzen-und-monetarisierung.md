@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v60-messgrenzen-und-monetarisierung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v60-messgrenzen-und-monetarisierung.md curriculum=4.0 sanitized=true -->
 # V60 · Messgrenzen: Was sich nicht sinnvoll monetarisieren oder saldieren lässt
 
 **lecture_id:** `WOEK-G-BASE-060`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Nur weil etwas wichtig ist, lässt es sich nicht automatisch gut messen. Und nur weil wir etwas messen können, lässt es sich nicht sinnvoll in Euro umrechnen. **Messbarkeit, Monetarisierbarkeit und Kausalität sind drei verschiedene Fragen.** Wirkungsökonomie darf Unsichtbares nicht ignorieren – aber sie darf auch keine präzisen Geldwerte erfinden, wo nur unsichere Proxies existieren.
+Nur weil etwas wichtig ist, lässt es sich nicht automatisch gut messen. Und nur weil wir etwas messen können, lässt es sich nicht sinnvoll in Euro umrechnen. **Messbarkeit, Monetarisierbarkeit und Kausalität sind drei verschiedene Fragen.** Wirkungsökonomie darf Unsichtbares nicht ignorieren - aber sie darf auch keine präzisen Geldwerte erfinden, wo nur unsichere Proxies existieren.
 
 ## Lernziele
 
@@ -96,7 +96,7 @@ Darum gilt:
 
 ## 4. Einkommen verzerrt Zahlungsbereitschaft
 
-Wenn Zahlungsbereitschaft zur Bewertung genutzt wird, können wohlhabendere Gruppen höhere Geldwerte ausdrücken als ärmere – selbst bei gleicher Belastung.
+Wenn Zahlungsbereitschaft zur Bewertung genutzt wird, können wohlhabendere Gruppen höhere Geldwerte ausdrücken als ärmere - selbst bei gleicher Belastung.
 
 Das ist kein rein technisches Problem.
 
@@ -310,3 +310,7 @@ Oder NOT_ASSESSABLE.
 Das ist keine Schwäche.
 
 Die Schwäche wäre, aus Unsicherheit eine Fantasiezahl zu machen.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

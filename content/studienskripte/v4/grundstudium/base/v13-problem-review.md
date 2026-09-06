@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v13-problem-review.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v13-problem-review.md curriculum=4.0 sanitized=true -->
 # V13 · Problem Review: Vom behaupteten Problem zur belastbaren Ausgangslage
 
 **lecture_id:** `WOEK-G-BASE-013`  
@@ -51,7 +51,7 @@ Welche Primärdaten oder belastbaren Studien zeigen, dass der behauptete Zustand
 
 ### 2.2 Wie sieht die Baseline aus?
 
-Welcher Ausgangszustand liegt vor – zu welchem Zeitpunkt, in welchem Raum, für welche Gruppe?
+Welcher Ausgangszustand liegt vor - zu welchem Zeitpunkt, in welchem Raum, für welche Gruppe?
 
 ### 2.3 Wie entwickelt sich der Trend?
 
@@ -71,7 +71,7 @@ Ein sichtbarer Zustand kann Ergebnis tieferer Mechanismen sein.
 
 ### 2.7 Was ist der bindende Engpass?
 
-Von mehreren Ursachen kann eine diejenige sein, die Veränderung tatsächlich begrenzt. WÖk nennt sie – sofern belegt – `binding bottleneck`.
+Von mehreren Ursachen kann eine diejenige sein, die Veränderung tatsächlich begrenzt. WÖk nennt sie - sofern belegt - `binding bottleneck`.
 
 ### 2.8 Was passiert ohne Eingriff?
 
@@ -173,7 +173,7 @@ Erst danach kann ein sinnvolles Ziel entstehen.
 
 Vielleicht lautet das Ziel nicht einfach „mehr Pflegekräfte“, sondern beispielsweise „mehr tatsächlich verfügbare qualifizierte Pflegezeit je pflegebedürftiger Person bei gesicherter Qualität“.
 
-Das ist bereits Goal Review – und zeigt, warum die Reihenfolge wichtig ist.
+Das ist bereits Goal Review - und zeigt, warum die Reihenfolge wichtig ist.
 
 ## 8. Problem Review und staatliche Verfahren
 
@@ -224,7 +224,7 @@ Zu stark. Komplexe Systeme können mehrere Ursachen und Rückkopplungen haben.
 Falsch. Der Gegenfaktum-Pfad kann sich auch ohne Eingriff verändern.
 
 ### „Problem Review soll die politische Zielsetzung widerlegen.“
-Falsch. Es soll sie empirisch prüfen – Bestätigung ist ein valides Ergebnis.
+Falsch. Es soll sie empirisch prüfen - Bestätigung ist ein valides Ergebnis.
 
 ## 11. Quellen
 
@@ -283,7 +283,7 @@ Und was passiert, wenn wir nichts ändern? Wird die Lage automatisch schlimmer? 
 
 Genau das ist Problem Review.
 
-Wir nehmen die politische oder wirtschaftliche Problembeschreibung nicht einfach als Wahrheit – aber wir wollen sie auch nicht zwanghaft widerlegen.
+Wir nehmen die politische oder wirtschaftliche Problembeschreibung nicht einfach als Wahrheit - aber wir wollen sie auch nicht zwanghaft widerlegen.
 
 Wir fragen: Gibt es das Problem? Wie groß ist es? Wer ist betroffen? Was ist der Trend? Was ist Symptom, was Ursache? Gibt es mehrere plausible Erklärungen? Was ist vielleicht der bindende Engpass?
 
@@ -306,3 +306,7 @@ Sie macht daraus einen festen, transparenten Prüfvertrag und verbindet ihn spä
 Der wichtigste Satz für heute lautet deshalb:
 
 **Keine Wirkungsbewertung ohne belastbare Problembeschreibung.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

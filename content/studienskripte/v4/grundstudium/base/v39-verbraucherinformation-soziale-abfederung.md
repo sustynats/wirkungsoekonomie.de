@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v39-verbraucherinformation-soziale-abfederung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v39-verbraucherinformation-soziale-abfederung.md curriculum=4.0 sanitized=true -->
 # V39 · Verbraucherinformation und soziale Abfederung: Wahlfähigkeit statt Moralappell
 
 **lecture_id:** `WOEK-G-BASE-039`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Wirkungsetikett kann helfen – aber nur, wenn Menschen es verstehen, vertrauen und **überhaupt eine realistische Alternative haben**. Wer wenig Einkommen, Zeit oder Auswahl hat, kann nicht jede negative Wirkung „wegkaufen“. Deshalb verbindet v4.0 Verbraucherinformation mit Produktstandards, Preis-/Anreizdesign, Zugänglichkeit und sozialer Abfederung. Ziel ist Wahlfähigkeit, nicht moralische Überforderung.
+Ein Wirkungsetikett kann helfen - aber nur, wenn Menschen es verstehen, vertrauen und **überhaupt eine realistische Alternative haben**. Wer wenig Einkommen, Zeit oder Auswahl hat, kann nicht jede negative Wirkung „wegkaufen“. Deshalb verbindet v4.0 Verbraucherinformation mit Produktstandards, Preis-/Anreizdesign, Zugänglichkeit und sozialer Abfederung. Ziel ist Wahlfähigkeit, nicht moralische Überforderung.
 
 ## Lernziele
 
@@ -234,7 +234,7 @@ Definiere:
 
 Ein Wirkungsetikett klingt verführerisch.
 
-Wir zeigen einfach, welches Produkt besser ist – und dann kaufen die Menschen richtig.
+Wir zeigen einfach, welches Produkt besser ist - und dann kaufen die Menschen richtig.
 
 So einfach ist es nicht.
 
@@ -256,4 +256,8 @@ Manchmal braucht es Zugang zur besseren Technologie.
 
 Der Merksatz lautet:
 
-**Gute Verbraucherinformation sagt nicht: Du bist verantwortlich. Sie sorgt dafür, dass Wirkung sichtbar wird – und dass reale bessere Optionen überhaupt wählbar sind.**
+**Gute Verbraucherinformation sagt nicht: Du bist verantwortlich. Sie sorgt dafür, dass Wirkung sichtbar wird - und dass reale bessere Optionen überhaupt wählbar sind.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

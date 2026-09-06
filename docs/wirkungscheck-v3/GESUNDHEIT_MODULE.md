@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Themenmodul Gesundheit und Pflege
+# Wirkungscheck Bundestag V3 - Themenmodul Gesundheit und Pflege
 
 **Version:** 1.0.0 · **Status:** Entwurf zur fachlichen Freigabe.
 

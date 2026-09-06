@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
+import { SYSTEMIC_ANALYSIS_RULE } from "./analysis-principles.mjs";
 
-export const MEDIA_ANALYSIS_VERSION = "2.0";
+export const MEDIA_ANALYSIS_VERSION = "2.1";
 
 const SIGNALS = [
   ["politically_loaded_label", 4, /\b(?:[\p{L}-]*extremis\w*|[\p{L}-]*faschis\w*|[\p{L}-]*terroris\w*|radikal\w*|radical\w*|populis\w*|ideolog\w*|propagand\w*|[\p{L}-]*diktatur\w*|dictatorship\w*|totalit\w*)\b/giu],
@@ -22,6 +23,24 @@ const INTENT_ATTRIBUTION = /\b(?:will|wolle|möchte|moechte|beabsichtigt|versuch
 const OUTLET_SCORE = /\b(?:outlet|medium|redaktion|zeitung|sender|journalist\w*)\b.{0,50}(?:[-+]\s*\d+|\d+\s*%|score|punktzahl|note\s+[1-6])/i;
 const CERTAIN_MEDIA_EFFECT = /\b(?:die\s+(?:überschrift|ueberschrift|formulierung|wiederholung|wortwahl)|dieser\s+frame)\b.{0,90}\b(?:bewirkt|verursacht|führt\s+zu|fuehrt\s+zu|schwächt|schwaecht|zerstört|zerstoert|steigert)\b/i;
 const CONDITIONAL = /\b(?:kann|könnte|koennte|potenzial|risiko|unter\s+bestimmten\s+bedingungen|möglich|moeglich|plausibel)\b/i;
+
+// Descriptors are not a blacklist or a finding. Close headline juxtaposition
+// with harm is a cheap invitation to check relevance, attribution and scope.
+// Electric and combustion technology are deliberately treated alike.
+const TECHNOLOGY_DESCRIPTOR = /\b(?:elektro[-\s]?(?:rollstuhl|auto|bus|fahrzeug|mobil|antrieb)|e[-\s](?:rollstuhl|auto|bus|bike|scooter|mobil)|elektrisch\w*|batterie\w*|akku\w*|diesel\w*|benzin\w*|verbrenner\w*|wasserstoff\w*|wärmepump\w*|waermepump\w*|windkraft\w*|solaranlag\w*|atomkraft\w*|kernkraft\w*|impfstoff\w*|impfung\w*|ki[-\s](?:system|modell|chatbot)\w*|electric\s+(?:car|vehicle|wheelchair)|battery\w*|petrol\w*|hydrogen\w*|vaccine\w*)\b/giu;
+const HARM_EVENT = /\b(?:großbrand\w*|grossbrand\w*|brand(?!schutz|melde|warn|verhütung|verhuetung|bekämpf|bekaempf|wache|wand|tür|tuer|mauer)\w*|bränd\w*|braend\w*|feuer(?!wehr|melder|schutz|wache)\w*|brenn\w*|brann\w*|explosion\w*|explodier\w*|unfall\w*|unfälle\w*|töt\w*|toet\w*|todesf[aä]ll\w*|vergift\w*|erkrank\w*|fire\w*|crash\w*|death\w*)\b/giu;
+const CAUSAL_CLAIM = /\b(?:löst\b.{0,90}\baus|loest\b.{0,90}\baus|verursacht\w*|ausgelöst|ausgeloest|führt\s+zu|fuehrt\s+zu|verantwortlich\s+für|causes?|triggered)\b/i;
+const QUALIFIED_STATUS = /\b(?:möglich\w*|moeglich\w*|vermutlich|mutmaßlich|mutmasslich|offen|unklar|soll|laut|nach\s+angaben|nach\s+(?:ersten|bisherigen)\s+erkenntnissen|could|may|alleged\w*|reportedly|according\s+to)\b/i;
+
+function associativeHeadlineTerms(value) {
+  const title = plain(value, 300);
+  // Do not join separate sentences or independent source headlines.
+  return title.split(/[.!?;\n]+/u).flatMap((part) => {
+    const descriptors = [...part.matchAll(TECHNOLOGY_DESCRIPTOR)];
+    const events = [...part.matchAll(HARM_EVENT)];
+    return descriptors.flatMap((descriptor) => events.some((event) => Math.abs(event.index - descriptor.index) <= 100) ? [descriptor[0].toLowerCase()] : []);
+  });
+}
 
 const LEVELS = new Set(["low", "medium", "high", "very_high"]);
 const STATUSES = new Set(["fact", "claim", "interpretation", "hypothesis", "open"]);
@@ -63,12 +82,15 @@ export const MEDIA_IMPACT_SCHEMA = {
 };
 
 export const MEDIA_PROMPT_RULES = [
+  SYSTEMIC_ANALYSIS_RULE,
   "Leitregel: Sachverhalt vor Frame. Attribution sichtbar. Wirkungspotenzial und Wirkungsrisiko sind keine eingetretene Wirkung.",
   "media_trigger ist Vorprüfung, kein Befund: meist media_impact:null bei false; ein vollständiger, evidenzgetrennter Befund darf ergänzen. Bei true bleibt relevant:false möglich.",
   "Trenne zwingend A belegten Sachverhalt, B Akteursaussage, C mediale Vermittlung und D WÖk-Analyse. Politische Deutung ist kein amtlicher Fakt.",
   "Attribution: Quelle, Sprecher:in, Originalformulierung, Zitat/Paraphrase/Redaktion, Platzierung und Klarheit. Ein Zitat ist nicht automatisch Medienposition, kann aber durch Hervorhebung kommunikatives Potenzial besitzen.",
   "Faktenstatus: festgestellt/amtlich/juristisch/Ermittlung/politische Bewertung/Interpretation/Hypothese/Selbst- oder Fremdbezeichnung/unbestätigt/offen. Täter, Motiv, Ursache und Erfolg nicht hochstufen.",
   "Frame nur bei Substanz: Begriff, Problemdefinition, Ursache, Verantwortung, Bedrohung, Lösungsraum, Alternative und materielle Auslassung. Frame bedeutet nicht automatisch falsch oder manipulativ.",
+  "Auch implizite Assoziationen und Narrative prüfen: Merkmal neben Ereignis, sachliche Relevanz, mögliche Verallgemeinerung. Wortkombination allein ist kein Framebeleg; relevante Technikangaben behalten, relevant:false zulassen. Übertragung auf andere Geräte/Gruppen nur als Hypothese (evidence.inferences); kein Mythos ohne Beleg. Einzelfall belegt keine vergleichende Häufigkeit.",
+  "Assoziation ≠ Narrativ ≠ Illusory Truth (mögliches Wahrheitsurteil durch Vertrautheit/Wiederholung). Wiederholte Aussage und Belegbasis in evidence.observations/limitations und resonance.repetition_effect nennen; sonst repetition_risk:open. Feed/Cache/Artikel und Agenturkopien sind keine unabhängigen Bestätigungen; kein Publikumsnachweis daraus.",
   "Politisch symmetrisch prüfen: alle Lager, Regierung, Opposition, Wirtschaft, Verbände, NGOs, Gewerkschaften, Behörden und Medien. Keine Personen-, Parteien- oder Outlet-Scores.",
   "Kommunikationswirkung bleibt von Ereigniswirkung und MPD getrennt. Potenzial/Risiko ex ante und bedingt formulieren; Reichweite, Likes, Wiederholung oder Viralität beweisen keine Wirkung.",
   "observed_impact nur mit belastbarer experimenteller, repräsentativer Längsschnitt-, Diskurs- oder Verhaltens-Evidenz; sonst false und Potenzial/Resonanzrisiko nennen.",
@@ -202,6 +224,17 @@ export function detectMediaImpactTrigger(story = {}) {
     signals.push(id); score += weight;
     terms.push(...matches.slice(0, 3));
   }
+  const headlines = [...new Set([title, ...(story.sources || []).map((source) => plain(source.title, 300))].filter(Boolean))];
+  const associativeTerms = [...new Set(headlines.flatMap(associativeHeadlineTerms))];
+  if (associativeTerms.length) {
+    signals.push("technology_harm_association_review"); score += 4;
+    // Keep neutral descriptors out of loaded-label escalation below.
+  }
+  if ((story.sources || []).some((source) => CAUSAL_CLAIM.test(plain(source.title, 300))
+    && !QUALIFIED_STATUS.test(plain(source.title, 300))
+    && QUALIFIED_STATUS.test(plain([source.summary, source.article_excerpt].filter(Boolean).join(" "), 2200)))) {
+    signals.push("causal_certainty_gap_review"); score += 4;
+  }
   const titleHasQuote = QUOTE.test(title);
   if ((titleHasQuote || ACTOR_STATEMENT.test(title)) && /\b(?:minister\w*|regierung\w*|government\w*|partei\w*|party\w*|verband\w*|unternehmen\w*|company\w*|gewerkschaft\w*|union\w*|aktivist\w*|activist\w*|behörde\w*|behoerde\w*|authorit\w*|präsident\w*|praesident\w*|president\w*)\b/i.test(text)) {
     signals.push("actor_statement_in_prominent_position"); score += 3;
@@ -216,8 +249,9 @@ export function detectMediaImpactTrigger(story = {}) {
   const relevant = score >= 4;
   const level = score >= 12 ? "very_high" : score >= 8 ? "high" : score >= 4 ? "medium" : "low";
   const comparableSourceCount = new Set((story.sources || []).filter((source) => !source.primary_source).map((source) => source.provenance?.origin || source.publisher_id || source.publisher).filter(Boolean)).size;
-  const fingerprint = createHash("sha256").update(JSON.stringify({ title, sources: (story.sources || []).map((source) => [source.url, source.title, source.summary, source.content_hash]), signals: uniqueSignals, terms: [...new Set(terms)] })).digest("hex");
-  return { relevant, level, score, reasons: uniqueSignals, matched_terms: [...new Set(terms)].slice(0, 8), source_count: (story.sources || []).length, comparable_source_count: comparableSourceCount, fingerprint, version: MEDIA_ANALYSIS_VERSION };
+  const matchedTerms = [...new Set([...terms, ...associativeTerms])].slice(0, 8);
+  const fingerprint = createHash("sha256").update(JSON.stringify({ title, sources: (story.sources || []).map((source) => [source.url, source.title, source.summary, source.content_hash]), signals: uniqueSignals, terms: matchedTerms })).digest("hex");
+  return { relevant, level, score, reasons: uniqueSignals, matched_terms: matchedTerms, source_count: (story.sources || []).length, comparable_source_count: comparableSourceCount, fingerprint, version: MEDIA_ANALYSIS_VERSION };
 }
 
 function object(value) { return value && typeof value === "object" && !Array.isArray(value) ? value : {}; }
@@ -301,7 +335,7 @@ export function sanitizeMediaImpact(input, story = {}, trigger = detectMediaImpa
   const observedEvidence = referenceEvidence(observed.evidence, sourceRefs);
   let impactStatus = enumValue(discourse.impact_status, IMPACT_STATUSES, "potential");
   const observedPresent = Boolean(observed.present && impactStatus === "observed" && observedEvidence.length >= 2);
-  if (observed.present && !observedPresent) {
+  if ((observed.present || impactStatus === "observed") && !observedPresent) {
     dropped.push("MEDIA_OBSERVED_IMPACT_EVIDENCE_INSUFFICIENT");
     impactStatus = "potential";
   }
@@ -340,7 +374,7 @@ export function sanitizeMediaImpact(input, story = {}, trigger = detectMediaImpa
       status: enumValue(speaker.status, STATUSES, "open"),
     },
     framing: {
-      detected: Boolean(framing.detected), term: frameTerm, origin_in_story: plain(framing.origin_in_story || "offen", 180),
+      detected: frameDetected, term: frameTerm, origin_in_story: plain(framing.origin_in_story || attribution.frame_source || "offen", 180),
       media_usage: mediaUsage,
       attribution_quality: enumValue(framing.attribution_quality, ATTRIBUTION_QUALITY, "unklare Attribution"),
       factual_status: enumValue(framing.factual_status, FACTUAL_STATUSES, speaker.status === "fact" ? "amtlich festgestellt" : speaker.present ? "Aussage eines Akteurs" : "offen"),
@@ -510,6 +544,9 @@ export function mediaImpactValidationErrors(analysis, story = {}, trigger = medi
   if (INTENT_ATTRIBUTION.test(text)) errors.push("MEDIA_INTENT_ATTRIBUTION_NOT_ALLOWED");
   if (OUTLET_SCORE.test(text)) errors.push("MEDIA_OUTLET_SCORE_NOT_ALLOWED");
   if (mediaStrings.some((value) => CERTAIN_MEDIA_EFFECT.test(value) && !CONDITIONAL.test(value))) errors.push("MEDIA_EFFECT_OVERCLAIM");
+  if (!media.observed_impact?.present && mediaStrings.some((value) => value.split(/[.!?]+/u).some((sentence) =>
+    /(?:illusory[-\s]+truth(?:[-\s]+effekt)?|wahrheitseffekt)\b.{0,70}\b(?:eingetreten|nachgewiesen|belegt|beobachtet)\b/i.test(sentence)
+    && !/\b(?:nicht|kein\w*|ohne|offen)\b/i.test(sentence) && !CONDITIONAL.test(sentence)))) errors.push("MEDIA_REPETITION_EFFECT_OVERCLAIM");
   const term = media.frame_analysis?.frame_term || media.framing?.term;
   for (const [field, value] of [["title", story.title], ["source_summary", analysis.source_summary], ["summary", analysis.summary], ["detail_summary", analysis.detail_summary]]) {
     if (unsafeFrameLead(value, term)) errors.push(`MEDIA_SELF_FRAME_UNSAFE:${field}`);

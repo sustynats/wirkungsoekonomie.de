@@ -1,6 +1,6 @@
-## WÖk FACH BATCH — Mecklenburg-Vorpommern SPD 2026 physical PDF P53 source-bound terminal + P54 Bau-Turbo continuation only
+## WÖk FACH BATCH - Mecklenburg-Vorpommern SPD 2026 physical PDF P53 source-bound terminal + P54 Bau-Turbo continuation only
 
-Fresh continuation after P52 `5474919799`. Exact current `main` at the last mandatory pre-write read remains `434d6df341ec999f9bbdcde1532ab466756bacf1`. Frozen artefact unchanged: `MV-LTW-2026-SPD-REGIERUNGSPROGRAMM`, SHA-256 `b2ed331e3bd89b93379df2f9a6adc5d3d10ddf635b0688673bc20c61cdca09bc`. Protected substantive P1–P52 must not be reopened.
+Fresh continuation after P52 `5474919799`. Exact current `main` at the last mandatory pre-write read remains `434d6df341ec999f9bbdcde1532ab466756bacf1`. Frozen artefact unchanged: `MV-LTW-2026-SPD-REGIERUNGSPROGRAMM`, SHA-256 `b2ed331e3bd89b93379df2f9a6adc5d3d10ddf635b0688673bc20c61cdca09bc`. Protected substantive P1-P52 must not be reopened.
 
 Current external baseline used only for the cross-page Bau-Turbo object: § 246e BauGB/Bau-Turbo has been in force since **30.10.2025**; BMWSB states that municipalities retain the consent decision/municipal planning sovereignty, state building-law requirements and specialist law continue to apply, and the federal scheme is subject to evaluation. Current BMWSB implementation guidance for municipalities was published in April/May 2026. Primary sources: `https://www.bmwsb.bund.de/DE/bauen/baurecht/bau-turbo/bauherren.html` and `https://www.bmwsb.bund.de/DE/bauen/baurecht/bau-turbo/praxiswissen/praxiswissen-bau-turbo/1-arbeitshilfen-bau-turbo/01-arbeitshilfen-bau-turbo_node.html`. This is baseline/competence context, not evidence that the programme's promised support creates housing outcomes.
 
@@ -8,7 +8,7 @@ Programme-authored success/causal statements remain source claims. No DNS ID, Re
 
 ---
 
-### A. `MV-SPD-2026-SU-00493` — municipal cooperation, regulatory review, local participation
+### A. `MV-SPD-2026-SU-00493` - municipal cooperation, regulatory review, local participation
 
 Source locator `p053:sb001;p053:sb002@56.78,37.53,541.63,163.30`.
 
@@ -47,7 +47,7 @@ The existing `A01` contains the recurring page header. Mark `MV-SPD-2026-SU-0049
 
 ---
 
-### B. `MV-SPD-2026-SU-00494` — municipal digital services with analogue guard
+### B. `MV-SPD-2026-SU-00494` - municipal digital services with analogue guard
 
 Source locator `p053:sb003@56.78,174.05,541.66,254.08`.
 
@@ -77,11 +77,11 @@ Add omitted exact source role:
 
 ---
 
-### C. `MV-SPD-2026-SU-00495` — municipal climate/energy support
+### C. `MV-SPD-2026-SU-00495` - municipal climate/energy support
 
 Source locator `p053:sb004@56.78,265.08,541.66,394.87`.
 
-**`MV-SPD-2026-SU-00495-A01`** — `Wir unterstützen sie bei Wärmeplanung, nachhaltigen Bau- und Sanierungsprojekten und beim Ausbau erneuerbarer Energien.` SHA `23e33a0d185909f04d2923073afc39a360690b893ad58f9f668d0b9396a0a3cd`.
+**`MV-SPD-2026-SU-00495-A01`** - `Wir unterstützen sie bei Wärmeplanung, nachhaltigen Bau- und Sanierungsprojekten und beim Ausbau erneuerbarer Energien.` SHA `23e33a0d185909f04d2923073afc39a360690b893ad58f9f668d0b9396a0a3cd`.
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - `exact_reason_code = COMPOUND_HEAT_PLANNING_BUILDING_RENOVATION_RENEWABLE_SUPPORT_INSTRUMENTS_UNSPECIFIED`
 - Exact reason: three materially different intervention classes with different physical, financing, planning, distribution and lifecycle pathways are bundled without support instrument/scale/place/timing; no synthetic common direction.
@@ -107,7 +107,7 @@ Add omitted source object:
 - `terminal_fach_state = NON_EFFECT_SYSTEM_ROLE_AND_GOAL_FRAME_REVIEWED`
 - Reason: describes desired system role/coherence, no separate intervention.
 
-**`MV-SPD-2026-SU-00495-A02`** — climate-adaptation support; SHA `ae877abe1b8c58f13c2016c6c5b79310e290da62a738e843fdce9caf0e8e930d`.
+**`MV-SPD-2026-SU-00495-A02`** - climate-adaptation support; SHA `ae877abe1b8c58f13c2016c6c5b79310e290da62a738e843fdce9caf0e8e930d`.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_LOCAL_CLIMATE_ADAPTATION_AND_RESILIENCE_POTENTIAL / MEASURE_MIX_TARGETING_DELIVERY_AND_MALADAPTATION_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_ADAPTATION_RISK_REDUCTION_MECHANISM / LOCAL_OUTCOME_PENDING`
@@ -116,11 +116,11 @@ Add omitted source object:
 - Risks: vague measure mix, maladaptation, energy/resource-intensive cooling/protection, unequal municipal capacity, protecting assets while shifting risk, maintenance/follow-cost.
 - Distribution: heat/flood/storm-exposed areas, vulnerable households, rural/urban, municipal fiscal capacity.
 - Noncompensation: plan/project count cannot compensate for increased downstream/neighbouring risk or harm to vulnerable groups/ecosystems.
-- Reality check: exposure/vulnerability/service interruption/damage/health outcomes under events, maintenance and spatial risk transfer—not funding volume alone.
+- Reality check: exposure/vulnerability/service interruption/damage/health outcomes under events, maintenance and spatial risk transfer-not funding volume alone.
 
 ---
 
-### D. `SU00496–SU00499` — headings/context and broad housing investment
+### D. `SU00496-SU00499` - headings/context and broad housing investment
 
 - `MV-SPD-2026-SU-00496` heading `Bezahlbares Wohnen und moderne Quartiere` -> `NON_EFFECT_CONTEXT_REVIEWED / ZERO_COUNT`.
 - `MV-SPD-2026-SU-00497` housing-demand/affordability framing -> `NON_EFFECT_PROBLEM_AND_GOAL_CONTEXT_REVIEWED / ZERO_COUNT`; programme assertions are not independent baseline evidence.
@@ -129,7 +129,7 @@ Add omitted source object:
 
 ---
 
-### E. `MV-SPD-2026-SU-00500` — past-policy context + P53→P54 Bau-Turbo continuation
+### E. `MV-SPD-2026-SU-00500` - past-policy context + P53→P54 Bau-Turbo continuation
 
 Source locator `p053:sb009@56.78,666.70,541.62,779.72`.
 
@@ -162,16 +162,16 @@ After lossless materialisation:
 
 `MV_SPD_P53_FACH_COMPLETE = PASS_SOURCE_BOUND_WITH_P54_BAUTURBO_CONTINUATION_ONLY`
 
-Protected substantive MV-SPD physical scope becomes **P1–P53**, plus exact cross-page child `MV-SPD-2026-XP53P54-C01-ead239367bce`.
+Protected substantive MV-SPD physical scope becomes **P1-P53**, plus exact cross-page child `MV-SPD-2026-XP53P54-C01-ead239367bce`.
 
 Fresh substantive frontier:
 
 `physical P54 -> MV-SPD-2026-SU-00502 AFTER consumed Bau-Turbo prefix`
 
-Do not reopen P1–P53 or the consumed P54 prefix. Do not infer P54 terminality.
+Do not reopen P1-P53 or the consumed P54 prefix. Do not infer P54 terminality.
 
 ### CodeX / release boundary
 
 Materialise only exact supplied Fach and source-neutral role/version records. Preserve original IDs/hashes/source lineage. Recompute MV-SPD/MV/#241 residuals SET-WISE. No technical Fach/DNS/Recommendation/score synthesis.
 
-Higher release-P0 remains Berlin BSW P60–P66 + supplement `5461127780` to set-wise zero, then Berlin SPD canonical-final ledger repair under SOURCE-INTEGRITY STOP `5466605879`. Impact visuals remain protected 12/12 PASS. GitHub-only: no Vercel Preview/build/deploy/promotion; `NO_NEW_VERCEL_BUILD=true`, `PARLIAMENT_RELEASE_APPROVAL=NOT_GRANTED`.
+Higher release-P0 remains Berlin BSW P60-P66 + supplement `5461127780` to set-wise zero, then Berlin SPD canonical-final ledger repair under SOURCE-INTEGRITY STOP `5466605879`. Impact visuals remain protected 12/12 PASS. GitHub-only: no Vercel Preview/build/deploy/promotion; `NO_NEW_VERCEL_BUILD=true`, `PARLIAMENT_RELEASE_APPROVAL=NOT_GRANTED`.

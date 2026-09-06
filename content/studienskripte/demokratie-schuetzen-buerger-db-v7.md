@@ -1,6 +1,6 @@
 # Desinformation und Plattformlogik: Den eigenen Anteil am Informationsraum verstehen
 
-*Demokratie schützen – Bürger:innen · DB7 · Modellfall Hafenfeld*
+*Demokratie schützen - Bürger:innen · DB7 · Modellfall Hafenfeld*
 
 ## Worum es in dieser Lektion geht
 
@@ -23,7 +23,7 @@ Nach der Lektion können Sie
 
 ## Der Fall Hafenfeld: Ein Video, eine Behauptung, drei Abende
 
-Am Montagabend veröffentlicht ein anonymes Konto ein 22-sekündiges Video. Zu sehen ist eine lange Schlange vor dem Bürgerhaus von Hafenfeld. Darüber steht: „Einheimische werden jetzt hintenangestellt – das Rathaus verschweigt alles.“ Das Video wird mit Musik, roten Pfeilen und einem Ausschnitt aus einer Sitzung unterlegt. Im Familienchat von Nika erscheint es kurz darauf mit dem Satz: „Wenn das stimmt, ist das ja unfassbar.“
+Am Montagabend veröffentlicht ein anonymes Konto ein 22-sekündiges Video. Zu sehen ist eine lange Schlange vor dem Bürgerhaus von Hafenfeld. Darüber steht: „Einheimische werden jetzt hintenangestellt - das Rathaus verschweigt alles.“ Das Video wird mit Musik, roten Pfeilen und einem Ausschnitt aus einer Sitzung unterlegt. Im Familienchat von Nika erscheint es kurz darauf mit dem Satz: „Wenn das stimmt, ist das ja unfassbar.“
 
 Nika kennt das Bürgerhaus. Ihr Vater hat dort vor zwei Wochen einen Termin zur Wohnberatung gehabt. Sie spürt Ärger, weil sie sofort an ihn denkt. Noch in derselben Nacht sieht sie unter dem Video hunderte fast gleiche Kommentare: „Endlich sagt es jemand.“ Am nächsten Morgen hat der Clip 48.000 Aufrufe. Eine Nachbarin behauptet im Supermarkt, „alle“ seien empört. In der Sitzung des Bezirksrats wird am Mittwoch gefordert, die Beratungsstelle zu schließen.
 
@@ -55,7 +55,7 @@ Eine hilfreiche Pause besteht aus vier Schritten:
 1. **Den Satz festhalten:** Was wird genau behauptet? Nicht „Das ist schlimm“, sondern etwa: „Bei der Wohnberatung werden bestimmte Menschen absichtlich zurückgestellt.“
 2. **Bild und Behauptung trennen:** Was ist im Material unmittelbar zu sehen oder zu hören? Was wird nur darüber erzählt?
 3. **Kontext suchen:** Wann, wo und unter welchen Umständen entstand das Material? Was würde die behauptete Ursache unabhängig belegen?
-4. **Verteilungsentscheidung treffen:** Hilft mein Teilen beim Klären – oder verbreitet es eine ungesicherte Zuschreibung weiter?
+4. **Verteilungsentscheidung treffen:** Hilft mein Teilen beim Klären - oder verbreitet es eine ungesicherte Zuschreibung weiter?
 
 Das Vorgehen ist kein Aufruf, nichts mehr zu fühlen. Es ist eine Reihenfolge: erst Erfahrung ernst nehmen, dann eine konkrete Behauptung prüfbar machen. Wer sagt „Ich mache mir Sorgen um meinen Vater“, bringt eine Erfahrung ein. Wer sagt „Die Verwaltung bevorzugt absichtlich eine Gruppe“, formuliert eine Tatsachen- und Absichtsbehauptung, die Belege braucht.
 
@@ -167,7 +167,7 @@ Nicht jede Forderung wird erfüllt werden können. Eine demokratische Stelle mus
 Nehmen Sie einen aufwühlenden Beitrag aus einem privaten Chat oder Feed. Teilen oder kommentieren Sie ihn für 90 Sekunden nicht. Notieren Sie stattdessen:
 
 1. Den genauen Satz, der Sie überzeugt oder empört.
-2. Das Material, das diesen Satz tatsächlich belegt – und das, was nur Kontext behauptet.
+2. Das Material, das diesen Satz tatsächlich belegt - und das, was nur Kontext behauptet.
 3. Eine Quelle, die unabhängig vom ursprünglichen Post prüfen könnte.
 4. Den möglichen Schaden, falls der Satz falsch ist.
 5. Eine Handlung, die Klärung fördert, ohne die ungeprüfte Behauptung weiter zu verbreiten.
@@ -241,21 +241,21 @@ Ein einzelner Share beweist keine Wirkung. Er kann aber unter bestimmten Bedingu
 
 ## Quellen und Vertiefung
 
-- [WÖk-Referenz: Wirkungspotenzial](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-011-wirkungspotenzial-index-html/) – Möglichkeit und tatsächliche Veränderung sauber unterscheiden.
-- [WÖk-Referenz: Handlung, Unterlassen und Rückkopplung](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-012-handlung-unterlassen-und-rueckkopplung-index-html/) – Warum Information erst durch Anpassung zum Rückkopplungsprozess wird.
-- [WÖk-Referenz: Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-023-wirkungsrisiko-und-wirkungsresilienz-index-html/) – Risiken kontextbezogen analysieren.
-- [WÖk-Referenz: Öffentlichkeit als Wirkungsraum](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-074-oeffentlichkeit-als-wirkungsraum-index-html/) – Öffentlichkeit als Struktur von Sichtbarkeit, Schutz und Korrektur.
-- [WÖk-Referenz: Diskurskultur](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-079-diskurskultur-index-html/) – Bedingungen für Kritik, Gegenrede und Korrekturfähigkeit.
-- [WÖk-Begriff: Resonanzraum](https://wirkungsoekonomie.de/begriffe/resonanzraum/) – Kontextbedingungen möglicher Wirkpfade.
-- [WÖk-Begriff: Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) – Schutzverletzungen nicht verrechnen.
-- [WÖk-Begriff: Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) – Schutzfragen in der richtigen Reihenfolge prüfen.
-- [EU-Kommission: Digital Services Act](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0414/) – Regelungsrahmen für Vermittlungsdienste und Plattformen.
-- [European Commission: Code of Practice on Disinformation](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0486/) – Maßnahmen und Selbstverpflichtungen gegen Desinformation.
-- [OECD: Recommendation on Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) – Resilienz und Verantwortlichkeit im Informationsraum.
-- [European Digital Media Observatory: Fact-checking](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0535/) – Überblick zu Faktenprüfung und Forschung.
+- [WÖk-Referenz: Wirkungspotenzial](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-011-wirkungspotenzial-index-html/) - Möglichkeit und tatsächliche Veränderung sauber unterscheiden.
+- [WÖk-Referenz: Handlung, Unterlassen und Rückkopplung](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-012-handlung-unterlassen-und-rueckkopplung-index-html/) - Warum Information erst durch Anpassung zum Rückkopplungsprozess wird.
+- [WÖk-Referenz: Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-023-wirkungsrisiko-und-wirkungsresilienz-index-html/) - Risiken kontextbezogen analysieren.
+- [WÖk-Referenz: Öffentlichkeit als Wirkungsraum](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-074-oeffentlichkeit-als-wirkungsraum-index-html/) - Öffentlichkeit als Struktur von Sichtbarkeit, Schutz und Korrektur.
+- [WÖk-Referenz: Diskurskultur](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-kapitel-079-diskurskultur-index-html/) - Bedingungen für Kritik, Gegenrede und Korrekturfähigkeit.
+- [WÖk-Begriff: Resonanzraum](https://wirkungsoekonomie.de/begriffe/resonanzraum/) - Kontextbedingungen möglicher Wirkpfade.
+- [WÖk-Begriff: Nichtkompensationsprinzip](https://wirkungsoekonomie.de/begriffe/nichtkompensationsprinzip/) - Schutzverletzungen nicht verrechnen.
+- [WÖk-Begriff: Reverse Merit Order](https://wirkungsoekonomie.de/begriffe/reverse-merit-order/) - Schutzfragen in der richtigen Reihenfolge prüfen.
+- [EU-Kommission: Digital Services Act](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0414/) - Regelungsrahmen für Vermittlungsdienste und Plattformen.
+- [European Commission: Code of Practice on Disinformation](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0486/) - Maßnahmen und Selbstverpflichtungen gegen Desinformation.
+- [OECD: Recommendation on Information Integrity](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0490/) - Resilienz und Verantwortlichkeit im Informationsraum.
+- [European Digital Media Observatory: Fact-checking](https://wirkungsoekonomie.de/quellenarchiv/wok-q-0535/) - Überblick zu Faktenprüfung und Forschung.
 
 ## Schlussgedanke
 
-Demokratie schützen heißt nicht, alles zu glauben, nichts zu glauben oder Menschen wegen eines Posts abzuwerten. Es heißt, den Weg von einem Reiz zu einer möglichen Veränderung sichtbar zu machen. Ein Beitrag kann Gefühle auslösen, ein Bild kann echt sein, eine Kommentarspalte kann laut sein – und trotzdem kann die entscheidende Behauptung unbelegt bleiben.
+Demokratie schützen heißt nicht, alles zu glauben, nichts zu glauben oder Menschen wegen eines Posts abzuwerten. Es heißt, den Weg von einem Reiz zu einer möglichen Veränderung sichtbar zu machen. Ein Beitrag kann Gefühle auslösen, ein Bild kann echt sein, eine Kommentarspalte kann laut sein - und trotzdem kann die entscheidende Behauptung unbelegt bleiben.
 
 Nika kann in Hafenfeld nicht allein entscheiden, wie Plattformen sortieren. Sie kann aber an einer konkreten Weiche handeln: den Satz präzisieren, Kontext suchen, Schutz vor Verstärkung stellen und einen Korrekturweg offen halten. Das ist keine perfekte Immunität gegen Irrtum. Es ist eine demokratische Gewohnheit, die gemeinsame Wirklichkeit nicht leichtfertig gegen einen schnellen Impuls einzutauschen.

@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v106-praxisprojekt-wirkungsdossier-schreiben.md curriculum=4.0 sanitized=true -->
-# V106 · Praxisprojekt: Das Wirkungsdossier schreiben – reproduzierbar, prüfbar, versioniert
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v106-praxisprojekt-wirkungsdossier-schreiben.md curriculum=4.0 sanitized=true -->
+# V106 · Praxisprojekt: Das Wirkungsdossier schreiben - reproduzierbar, prüfbar, versioniert
 
 **lecture_id:** `WOEK-G-BASE-106`  
 **display_code:** `V106`  
@@ -31,7 +31,7 @@ Ein gutes Dossier dient zwei Gruppen:
 
 ### Entscheidungsebene
 
-Braucht in 1–3 Minuten:
+Braucht in 1-3 Minuten:
 
 - Gegenstand,
 - Gesamtbefund,
@@ -261,7 +261,7 @@ Dein Wirkungsdossier ist kein Aufsatz, den man einmal abgibt und dann vergisst.
 
 Es ist eine Fachakte.
 
-Vorne muss jemand in zwei Minuten verstehen: Worum geht es? Was wirkt wahrscheinlich wie? Was ist das größte Risiko? Wie sicher ist das? Was empfehlen wir – oder eben nicht?
+Vorne muss jemand in zwei Minuten verstehen: Worum geht es? Was wirkt wahrscheinlich wie? Was ist das größte Risiko? Wie sicher ist das? Was empfehlen wir - oder eben nicht?
 
 Und hinten muss eine andere Person alles nachprüfen können.
 
@@ -276,3 +276,7 @@ So entsteht institutionelles Gedächtnis.
 Der Merksatz lautet:
 
 **Ein gutes Dossier überzeugt nicht durch Länge. Es überzeugt dadurch, dass jeder wichtige Satz zurück zu Quelle, Annahme und Entscheidungspfad verfolgt werden kann.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-09-wirkungskommunikation.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-09-wirkungskommunikation.md curriculum=4.0 sanitized=true -->
 # WM-V4-09 · Evidenzgerechte Wirkungskommunikation
 
 **lecture_id:** `WOEK-WB-WM-V4-009`  
@@ -98,10 +98,10 @@ Die Wirkungsfrage und die Werberechtsfrage sind getrennt, aber beide relevant.
 
 ## Typische Fehlinterpretationen
 
-- Reichweite = Wirkung. – Nein.
-- Zielbezug = Outcome. – Nein.
-- „Plausibler Beitrag“ ist schwache Kommunikation. – Nein, wenn er dem Evidenzstand entspricht.
-- Wirkungsanalyse von Sprache = Absichtszuschreibung. – Nein.
+- Reichweite = Wirkung. - Nein.
+- Zielbezug = Outcome. - Nein.
+- „Plausibler Beitrag“ ist schwache Kommunikation. - Nein, wenn er dem Evidenzstand entspricht.
+- Wirkungsanalyse von Sprache = Absichtszuschreibung. - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -129,4 +129,33 @@ Zehntausend erreichte Menschen sind zunächst Reichweite. Ein verändertes Verha
 
 Deshalb prüfen wir Claims wie eine kleine Beweiskette. Quelle, Datenstatus, Scope, Zeitraum, Gegenfaktum, Attribution, Unsicherheit.
 
-Das macht Kommunikation nicht kleiner. Es macht sie belastbarer. Und es schützt vor Impact-Washing – also davor, aus einem Output oder Zielbezug eine Wirkung zu machen, die wir noch gar nicht gezeigt haben.
+Das macht Kommunikation nicht kleiner. Es macht sie belastbarer. Und es schützt vor Impact-Washing - also davor, aus einem Output oder Zielbezug eine Wirkung zu machen, die wir noch gar nicht gezeigt haben.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Eine Kommunikationsfreigabe als fachliche Prüfung gestalten
+
+Ein Wirkungsclaim braucht eine nachvollziehbare Verbindung zwischen Aussage und Evidenz. Die Freigabe prüft deshalb nicht nur Stil und Markenwirkung, sondern Gegenstand, Zeitraum, Systemgrenze, Datenstatus und Zurechnung. Eine positive Veränderung kann korrekt berichtet werden, auch wenn der eigene kausale Anteil offenbleibt. Problematisch wird die Aussage, wenn genau diese Grenze sprachlich verschwindet.
+
+Impact-Washing kann durch Übertreibung, wesentliche Auslassungen oder eine irreführende Zusammenfassung entstehen. Nicht jeder unpräzise Satz beweist eine Täuschungsabsicht. Die Korrektur setzt am konkreten Aussagefehler an. Eine pauschale Bewertung der beteiligten Personen ist keine fachliche Claim-Prüfung.
+
+### Durchgearbeiteter Fall: Weiterbildung als Erfolgsmeldung
+
+Eine fiktive Organisation möchte veröffentlichen: „Unser Kurs hat die Fehlerquote halbiert.“ Tatsächlich sank die gemessene Quote von acht auf vier Prozent, während gleichzeitig ein neuer Arbeitsablauf eingeführt wurde. Die Halbierung beschreibt zunächst die relative beobachtete Veränderung. Sie belegt noch nicht den alleinigen Beitrag des Kurses.
+
+Die Fachprüfung fordert daher die Angabe von Population, Zeitraum und Messverfahren sowie eine Prüfung alternativer Erklärungen. Die veröffentlichbare Aussage kann lauten: „Im untersuchten Zeitraum sank die erfasste Fehlerquote von acht auf vier Prozent. Weiterbildung und Prozessänderung wurden parallel umgesetzt; ihre jeweiligen Beiträge sind noch nicht getrennt bestimmt.“ Diese Fassung bleibt konkret und verständlich.
+
+Wenn eine spätere Evaluation den Beitrag genauer eingrenzt, kann die Aussage aktualisiert werden. Die frühere Fassung bleibt über einen Standhinweis nachvollziehbar. Eine besonders erfolgreiche Untergruppe darf nicht ohne Kennzeichnung als Ergebnis aller Teilnehmenden erscheinen. Auch nicht erfasste Abbrüche können eine materielle Auslassung sein.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle eine Freigabekarte für den Claim mit Originalaussage, belastbarem Kern, unzulässiger Erweiterung und korrigierter Formulierung. Ergänze eine offene Frage und die dafür benötigte Evidenz. Eine gute Lösung verwässert nicht alle Aussagen vorsorglich, sondern begrenzt sie präzise auf das Belegbare.
+
+Prüfe zuletzt, ob Überschrift, Grafik und Fließtext denselben Geltungsbereich haben. Ein methodisch sauberer Anhang kann eine irreführende Hauptaussage nicht automatisch heilen. Der Reality Check untersucht auch, ob neue Erkenntnisse zeitnah in die öffentliche Kommunikation zurückfließen.

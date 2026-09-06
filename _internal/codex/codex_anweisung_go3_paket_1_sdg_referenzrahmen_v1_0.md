@@ -1,4 +1,4 @@
-# CodeX-Anweisung: Go 3 – Paket 1 echte Detailkonzepte SDG-/SDG+-Referenzrahmen
+# CodeX-Anweisung: Go 3 - Paket 1 echte Detailkonzepte SDG-/SDG+-Referenzrahmen
 
 Du arbeitest im Repository von wirkungsoekonomie.de.
 

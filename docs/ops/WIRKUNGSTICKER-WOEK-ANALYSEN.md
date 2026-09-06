@@ -36,13 +36,25 @@ Nahezu identische Berichte zum selben Analysegegenstand erzeugen keinen zweiten 
 
 ## Daten und lebende Analysen
 
+### Fallbezogen geprüfte Hintergrundrecherche
+
+Zusätzlich zur Ereignisrecherche können explizit redaktionell geprüfte Hintergrunddokumente im vorhandenen `source_snapshot` erhalten bleiben. Die EU-Haushaltsanalyse ist der erste Anwendungsfall. `source_function` trennt Kontext, Gegenquelle, Forschung und Zielreferenz. `editorial_review` bindet die Prüfung an Story-ID, exakte URL, Publisher-Domain, Titel, Datum und den Hash der eigenen Quellenkurzfassung sowie Relevanzbegründung und Grenzen.
+
+`withEditorialResearch()` übernimmt nur diesen geprüften Bestand. Neue Modellantworten dürfen ihn nicht anlegen. Fehlerhafte Bindungen halten eine erneute Analyse zurück. Hintergrunddokumente landen nicht in den Quellen der Ursprungsmeldung, nicht im Ereigniscluster und nicht in einer neuen Polling-Liste. Das ursprüngliche Source-Integrity-Gate bleibt zwingend. Mehrere Dokumente desselben Urhebers zählen nur als ein Ursprung der **Analysebasis**, nicht als unabhängige Bestätigungen des Ereignisses.
+
+Der bestehende Analyseworker verwendet diese Quellen bei späteren Überarbeitungen wieder. Unveränderte Daten erzeugen keinen erneuten KI-Aufruf; neue geprüfte Kurzfassungen verändern den Fingerabdruck. Ältere Studien behalten ihren tatsächlichen Dokumentstand und ihre begrenzte Funktion. Abschnittsbezogene `source_ids` ergänzen die Quellenlinks im Lesetext; das Claim Ledger bleibt erhalten.
+
+### Systemische Betrachtung als Pflichtkern
+
+Die Root-AGENTS.md und `scripts/news/analysis-principles.mjs` verankern die gekoppelte Betrachtung dauerhaft. Die gemeinsame Regel fließt in Nachrichten-/Folgenanalyse, Mediencheck einschließlich Backfill und eigenständige WÖk-Analyse ein. Geprüft werden materielle Zusammenhänge, Rückkopplungen, Kaskaden, Verteilung, Resilienz, zeitliche Verzögerungen und Schadensverlagerung. Sie erzwingt keine erfundenen Wirkpfade, keine Vermischung von Ereignissen und keine zusätzliche kostenpflichtige Runde. Historische Texte werden bei erneuter Prüfung versioniert ergänzt, nicht still überschrieben.
+
 `data/news/editorial-analyses.json` erweitert den bestehenden Nachrichtenbestand. Eine zweite Datenbank oder KI-Schnittstelle existiert nicht. Gespeichert werden Kandidaten, Recherche-/Evidenzstatus, Analyse, Quellen-Snapshot, Claim Ledger, Gegenbefunde, Methodenversion, Kosten- und Versionsdaten.
 
 Beim unveränderten Quellenfingerabdruck ist der Prozess idempotent. Substanzielles neues Material aktualisiert dieselbe Analyse versioniert. Ein anderer Analysegegenstand kann später einen neuen Beitrag auslösen.
 
 ## Darstellung, Feed und Reihenfolge
 
-WÖK-Analysen werden als breite, zurückhaltend hervorgehobene Karten gleichmäßig zwischen die Meldungen gestreut – auch wenn mehr als drei gleichzeitig relevant sind. Die Streuung verändert kein Veröffentlichungsdatum. Im Feed stehen Meldungen und Analysen nach ihrem tatsächlichen Veröffentlichungs- beziehungsweise Aktualisierungszeitpunkt. Ursprungsgeschichte und Deep Dive verlinken gegenseitig. Seiten sind indexierbar, canonicalisiert, als `Article` strukturiert und WebApp-/RSS-kompatibel.
+WÖK-Analysen werden als breite, zurückhaltend hervorgehobene Karten gleichmäßig zwischen die Meldungen gestreut - auch wenn mehr als drei gleichzeitig relevant sind. Die Streuung verändert kein Veröffentlichungsdatum. Im Feed stehen Meldungen und Analysen nach ihrem tatsächlichen Veröffentlichungs- beziehungsweise Aktualisierungszeitpunkt. Ursprungsgeschichte und Deep Dive verlinken gegenseitig. Seiten sind indexierbar, canonicalisiert, als `Article` strukturiert und WebApp-/RSS-kompatibel.
 
 ## Automatik und Kosten
 

@@ -3,7 +3,16 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {uniqueContentIds,normalizeStaticNavigation,normalizePublicContent} from '../../scripts/quality/normalize-public-content.mjs';
+import {uniqueContentIds,normalizeStaticNavigation,normalizePublicContent,normalizeMachineMirror} from '../../scripts/quality/normalize-public-content.mjs';
+
+test('bare API mirrors retain exact escaped data and receive an idempotent noindex shell',()=>{
+ const input='<pre>{&quot;name&quot;:&quot;A &amp; B&quot;}</pre>';
+ const output=normalizeMachineMirror(input);
+ assert.ok(output.includes(input));
+ assert.match(output,/<head>.*<meta name="robots" content="noindex, follow">/);
+ assert.equal(normalizeMachineMirror(output),output);
+ assert.equal(normalizeMachineMirror('{"raw":"JSON response"}'),'{"raw":"JSON response"}');
+});
 
 test('only vanished frontmatter is removed from generated navigation',()=>{
   const item=(id,label)=>`<li class="toc-level-3"><a href="#${id}">${label}</a></li>`;
@@ -66,4 +75,11 @@ test('publication normalization preserves routes, self-linked fragments and dist
     const again=normalizePublicContent(root,{aliases:{},glossary:[],reportFile:path.join(root,'report.json')});
     assert.equal(again.fragmentAliases.length+again.duplicates.length+again.uniqueIds.length,0);
   } finally {fs.rmSync(root,{recursive:true,force:true});}
+});
+
+test('reader aliases resolve the full route before replacing a relative chapter link',async()=>{
+ const {resolveReaderAliases}=await import('../../scripts/library/resolve-reader-aliases.mjs');
+ const aliases=[{from:'/book-a/01-wirkung/',to:'/field/dossier/',mode:'retire'}];
+ assert.equal(resolveReaderAliases('<a href="../01-wirkung/">Next</a>','/book-b/00-intro/',aliases),'<a href="../01-wirkung/">Next</a>');
+ assert.equal(resolveReaderAliases('<a href="../01-wirkung/">Next</a>','/book-a/00-intro/',aliases),'<a href="/field/dossier/">Next</a>');
 });

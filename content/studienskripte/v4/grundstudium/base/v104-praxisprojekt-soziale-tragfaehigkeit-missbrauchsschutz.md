@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v104-praxisprojekt-soziale-tragfaehigkeit-missbrauchsschutz.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v104-praxisprojekt-soziale-tragfaehigkeit-missbrauchsschutz.md curriculum=4.0 sanitized=true -->
 # V104 · Praxisprojekt: soziale Tragfähigkeit und Missbrauchsschutz
 
 **lecture_id:** `WOEK-G-BASE-104`  
@@ -247,7 +247,7 @@ Erstelle für deine bevorzugte Option:
 
 ## 17. Sprechertext
 
-Eine Maßnahme kann im Durchschnitt hervorragend aussehen – und trotzdem Menschen unfair treffen.
+Eine Maßnahme kann im Durchschnitt hervorragend aussehen - und trotzdem Menschen unfair treffen.
 
 Deshalb schauen wir jetzt auf Verteilung.
 
@@ -265,8 +265,12 @@ Wir müssen nur verhindern, dass die Regel erfüllbar ist, ohne die eigentliche 
 
 Und Vorsicht: Auch Missbrauchsschutz hat Nebenwirkungen.
 
-Wenn wir zehn Nachweise verlangen, sinkt vielleicht Betrug – aber auch legitimer Zugang.
+Wenn wir zehn Nachweise verlangen, sinkt vielleicht Betrug - aber auch legitimer Zugang.
 
 Der Merksatz lautet:
 
-**Eine robuste Option wirkt nicht nur im Durchschnitt. Sie verteilt Nutzen und Lasten nachvollziehbar – und bleibt auch dann sinnvoll, wenn Menschen strategisch auf ihre Regeln reagieren.**
+**Eine robuste Option wirkt nicht nur im Durchschnitt. Sie verteilt Nutzen und Lasten nachvollziehbar - und bleibt auch dann sinnvoll, wenn Menschen strategisch auf ihre Regeln reagieren.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

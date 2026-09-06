@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-03-agenda2030-zur-dns-2025.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-03-agenda2030-zur-dns-2025.md curriculum=4.0 sanitized=true -->
 # GOV-03 · Von Agenda 2030 zur DNS 2025: Kontinuität und Neuaufstellung
 
 **lecture_id:** `WOEK-G-GOV-HIST-03`  
@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-2015 beschloss die UN-Generalversammlung die Agenda 2030 mit 17 SDGs und 169 Zielvorgaben. Deutschland hatte zu diesem Zeitpunkt bereits seit 2002 eine nationale Nachhaltigkeitsstrategie. Deshalb begann 2015 nicht „die deutsche Nachhaltigkeitspolitik“, sondern eine **Neuorientierung**: Die deutsche Strategie wurde 2016 grundlegend überarbeitet und Anfang 2017 neu beschlossen, auf die SDGs ausgerichtet und danach weiterentwickelt. Die DNS 2025 arbeitet heute mit sechs Transformationsbereichen und fünf Umsetzungshebeln. SDGs und DNS gehören zusammen – sind aber nicht dasselbe.
+2015 beschloss die UN-Generalversammlung die Agenda 2030 mit 17 SDGs und 169 Zielvorgaben. Deutschland hatte zu diesem Zeitpunkt bereits seit 2002 eine nationale Nachhaltigkeitsstrategie. Deshalb begann 2015 nicht „die deutsche Nachhaltigkeitspolitik“, sondern eine **Neuorientierung**: Die deutsche Strategie wurde 2016 grundlegend überarbeitet und Anfang 2017 neu beschlossen, auf die SDGs ausgerichtet und danach weiterentwickelt. Die DNS 2025 arbeitet heute mit sechs Transformationsbereichen und fünf Umsetzungshebeln. SDGs und DNS gehören zusammen - sind aber nicht dasselbe.
 
 ## Lernziele
 
@@ -57,7 +57,7 @@ Damit ist zugleich eine typische Fehlinterpretation geklärt: Die DNS ist **nich
 
 ## 3. Von den globalen Zielen zur nationalen Steuerung
 
-Ein globales Ziel wie SDG 7 – bezahlbare und saubere Energie – ist sehr breit. Nationale Politik muss daraus konkretere Fragen machen:
+Ein globales Ziel wie SDG 7 - bezahlbare und saubere Energie - ist sehr breit. Nationale Politik muss daraus konkretere Fragen machen:
 
 - Welche Ausgangslage hat Deutschland?
 - Welche Zielwerte setzt die Bundesregierung?
@@ -220,19 +220,19 @@ Der faire Anschluss lautet:
 
 ### Primärquellen
 
-1. **UN General Assembly – A/RES/70/1, Transforming our world: the 2030 Agenda for Sustainable Development**  
+1. **UN General Assembly - A/RES/70/1, Transforming our world: the 2030 Agenda for Sustainable Development**  
    https://digitallibrary.un.org/record/3923923
 
-2. **UN DESA – 2030 Agenda**  
+2. **UN DESA - 2030 Agenda**  
    https://sdgs.un.org/2030agenda
 
-3. **Bundesregierung – Deutsche Nachhaltigkeitsstrategie 2025**  
+3. **Bundesregierung - Deutsche Nachhaltigkeitsstrategie 2025**  
    https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540
 
-4. **Statistisches Bundesamt – Deutsche Nachhaltigkeitsstrategie / Neuauflage 2016/2017 und Monitoring**  
+4. **Statistisches Bundesamt - Deutsche Nachhaltigkeitsstrategie / Neuauflage 2016/2017 und Monitoring**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html
 
-5. **Bundesregierung – historische Berichte und DNS-Fassungen**  
+5. **Bundesregierung - historische Berichte und DNS-Fassungen**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/berichte-der-bundesrgierung-418550
 
 ### Quellenfunktion
@@ -272,7 +272,7 @@ Diese bunten SDG-Kacheln kennen heute viele. Aber für Deutschland ist wichtig: 
 
 Deutschland musste also nicht bei null anfangen.
 
-Stattdessen passiert etwas anderes. Die bestehende deutsche Strategie wird auf die Agenda 2030 ausgerichtet und grundlegend weiterentwickelt. 2016 wird sie neu aufgestellt, Anfang 2017 vom Kabinett beschlossen, danach weiter fortgeschrieben – bis zur aktuellen Weiterentwicklung 2025.
+Stattdessen passiert etwas anderes. Die bestehende deutsche Strategie wird auf die Agenda 2030 ausgerichtet und grundlegend weiterentwickelt. 2016 wird sie neu aufgestellt, Anfang 2017 vom Kabinett beschlossen, danach weiter fortgeschrieben - bis zur aktuellen Weiterentwicklung 2025.
 
 Und jetzt kommt eine wichtige Unterscheidung.
 
@@ -280,7 +280,7 @@ Die SDGs sind der globale Referenzrahmen. Die DNS ist die deutsche Governance- u
 
 Das ist ungefähr wie bei einer Landkarte und einer konkreten Route. Die Landkarte zeigt, welche großen Ziele und Räume existieren. Die nationale Strategie sagt, was Deutschland daraus macht, welche Ziele und Indikatoren es setzt und wie gesteuert und beobachtet wird.
 
-2025 bündelt die DNS den besonderen Handlungsbedarf in sechs Transformationsbereichen – zum Beispiel Energiewende und Klimaschutz, Kreislaufwirtschaft, nachhaltiges Bauen und Verkehr oder nachhaltige Agrar- und Ernährungssysteme.
+2025 bündelt die DNS den besonderen Handlungsbedarf in sechs Transformationsbereichen - zum Beispiel Energiewende und Klimaschutz, Kreislaufwirtschaft, nachhaltiges Bauen und Verkehr oder nachhaltige Agrar- und Ernährungssysteme.
 
 Dazu kommen fünf Hebel: Teilhabe, Finanzen, internationale Verantwortung, Forschung und Digitalisierung sowie Governance.
 
@@ -288,7 +288,7 @@ Das ist ziemlich weit weg von „ein paar schönen Nachhaltigkeitszielen“.
 
 Es ist eine echte Steuerungsarchitektur.
 
-Aber – und das ist für die Wirkungsökonomie entscheidend – sie beantwortet noch nicht automatisch jede Kausalfrage.
+Aber - und das ist für die Wirkungsökonomie entscheidend - sie beantwortet noch nicht automatisch jede Kausalfrage.
 
 Wenn ein Gesetz zu SDG 13 oder zu einem DNS-Ziel passt, wissen wir, in welchen Zielraum es gehört. Wir wissen noch nicht automatisch, ob es die gewünschte Klimawirkung wirklich verursacht.
 
@@ -299,3 +299,19 @@ Darum lautet die saubere Formel:
 Zielbezug ist wichtig. Aber Zielbezug ist noch keine Kausalität.
 
 Und genau so schließen DNS und WÖk sinnvoll aneinander an.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Welcher staatliche Prüfrahmen passt zum Gegenstand?
+
+Der Prüfbedarf folgt der materiellen Wirkungsrelevanz. Neben Gesetzen können Verordnungen, Strategien, Programme, Förderungen, Garantien, Investitionen, Beschaffung, Infrastruktur und Verwaltungsentscheidungen relevant sein. Prüfe zuerst Zuständigkeit, Handlungsform und konkrete Rechtsgrundlage. Die Bundes-GGO und eNAP gelten nicht pauschal für Länder, Kommunen, EU oder jede staatliche Handlung. Fehlende Universalität bedeutet keine staatliche Prüfleere.
+
+Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm), DNS, Nachhaltigkeitsprüfung und eNAP/eGFA den bestehenden Rahmen. Bei finanzwirksamen Bundesmaßnahmen prüfe zusätzlich beziehungsweise gegenstandsbezogen [§ 7 BHO](https://www.gesetze-im-internet.de/bho/__7.html), [VV-BHO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm) und die [AAWU, Fassung vom 13. Januar 2026](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_13012026_IIA3H100500150006005DOKCOO7005100213785493.htm). Fachrechtliche Rahmen können hinzutreten.
+
+Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
+
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

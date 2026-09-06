@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v58-wachstum-suffizienz-wohlstand.md curriculum=4.0 sanitized=true -->
-# V58 · Wachstum, Suffizienz und Wohlstand – empirische Fragen statt Lagerdenken
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v58-wachstum-suffizienz-wohlstand.md curriculum=4.0 sanitized=true -->
+# V58 · Wachstum, Suffizienz und Wohlstand - empirische Fragen statt Lagerdenken
 
 **lecture_id:** `WOEK-G-BASE-058`  
 **display_code:** `V58`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-„Wachstum ist gut“ und „Wachstum ist das Problem“ sind beide zu grob. Entscheidend ist: **Was wächst? Welche Ressourcen und Emissionen wachsen mit? Wer profitiert? Welche Zustände verbessern sich?** Wirtschaft kann in bestimmten Bereichen wachsen und gleichzeitig Material- oder Emissionsintensität senken. Ob die absolute Umweltbelastung schnell genug fällt, ist eine empirische Frage. Suffizienz – also weniger oder anders konsumieren – kann Teil der Lösung sein, ist aber kein universelles Moralgebot.
+„Wachstum ist gut“ und „Wachstum ist das Problem“ sind beide zu grob. Entscheidend ist: **Was wächst? Welche Ressourcen und Emissionen wachsen mit? Wer profitiert? Welche Zustände verbessern sich?** Wirtschaft kann in bestimmten Bereichen wachsen und gleichzeitig Material- oder Emissionsintensität senken. Ob die absolute Umweltbelastung schnell genug fällt, ist eine empirische Frage. Suffizienz - also weniger oder anders konsumieren - kann Teil der Lösung sein, ist aber kein universelles Moralgebot.
 
 ## Lernziele
 
@@ -56,7 +56,7 @@ Wirtschaftliche Aktivität steigt, während absolute Umweltbelastung sinkt.
 
 Beispiel:
 
-BIP +2 %, Emissionen −5 %.
+BIP +2 %, Emissionen -5 %.
 
 Für Klimaziele ist oft die **absolute** Entwicklung relevant, nicht nur Intensität.
 
@@ -112,7 +112,7 @@ Mögliche Felder:
 - Pflegequalität,
 - erneuerbare Infrastruktur,
 - Reparaturdienste,
-- digitale Effizienz – sofern Rebound/Ressourcen berücksichtigt.
+- digitale Effizienz - sofern Rebound/Ressourcen berücksichtigt.
 
 Wachstum kann also Teil positiver Transformation sein.
 
@@ -239,3 +239,7 @@ Eine Stadt, in der Wege kürzer sind, kann weniger Verkehr brauchen und gleichze
 Der Merksatz lautet:
 
 **Nicht Wachstum oder Verzicht ist die eigentliche Frage. Die Frage ist, welche realen Zustände wachsen, welche Schäden sinken und ob wir Schutzgrenzen rechtzeitig einhalten.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

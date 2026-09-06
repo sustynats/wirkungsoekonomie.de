@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v68-praeventionswert-und-krisen-bip.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v68-praeventionswert-und-krisen-bip.md curriculum=4.0 sanitized=true -->
 # V68 · Präventionswert und Krisen-BIP: vermiedene Schäden richtig einordnen
 
 **lecture_id:** `WOEK-G-BASE-068`  
@@ -112,7 +112,7 @@ Krisen können wirtschaftliche Aktivität erzeugen:
 - Notfalllogistik,
 - zusätzliche Sicherheitsausgaben.
 
-Das BIP erfasst reale Leistungen, die dabei produziert werden. Diese Aktivität ist ökonomisch real – aber sie ist nicht automatisch zusätzlicher Wohlstand.
+Das BIP erfasst reale Leistungen, die dabei produziert werden. Diese Aktivität ist ökonomisch real - aber sie ist nicht automatisch zusätzlicher Wohlstand.
 
 Der WÖk-Begriff **Krisen-BIP** soll genau diese Differenz sichtbar machen. Er ist **kein amtlicher VGR-Begriff** und keine alternative offizielle BIP-Komponente.
 
@@ -189,7 +189,7 @@ Nicht:
 
 Sondern:
 
-> „Unter den Szenarien A–C liegt der erwartete vermiedene Schaden im Bereich X–Y. Die größten Unsicherheiten sind …“
+> „Unter den Szenarien A-C liegt der erwartete vermiedene Schaden im Bereich X-Y. Die größten Unsicherheiten sind …“
 
 ## 11. Reality Check
 
@@ -220,17 +220,17 @@ Ein einzelnes ausgebliebenes Extremereignis beweist nicht, dass Prävention unn�
 
 ## 13. Typische Fehlinterpretationen
 
-**„Brutto-Präventionswert = Netto-Nutzen.“** – Falsch. Kosten und monetarisierbare negative Nebenwirkungen sind noch nicht abgezogen.
+**„Brutto-Präventionswert = Netto-Nutzen.“** - Falsch. Kosten und monetarisierbare negative Nebenwirkungen sind noch nicht abgezogen.
 
-**„Ein positiver monetärer Netto-Nutzen reicht für die Entscheidung.“** – Falsch. Rechte, Grenzen, Verteilung und Irreversibilität bleiben separat.
+**„Ein positiver monetärer Netto-Nutzen reicht für die Entscheidung.“** - Falsch. Rechte, Grenzen, Verteilung und Irreversibilität bleiben separat.
 
-**„Nicht eingetretener Schaden ist direkt beobachtete Wirkung.“** – Falsch. Er ist kontrafaktisch geschätzt.
+**„Nicht eingetretener Schaden ist direkt beobachtete Wirkung.“** - Falsch. Er ist kontrafaktisch geschätzt.
 
-**„Wiederaufbau-BIP ist Wohlstandsgewinn.“** – Zu stark. Es bildet reale Aktivität ab, kann aber verlorene Zustände nur teilweise wiederherstellen.
+**„Wiederaufbau-BIP ist Wohlstandsgewinn.“** - Zu stark. Es bildet reale Aktivität ab, kann aber verlorene Zustände nur teilweise wiederherstellen.
 
-**„Prävention ist immer günstiger.“** – Falsch. Kosten, Alternativen, Wahrscheinlichkeiten und Schutzwirkung müssen geprüft werden.
+**„Prävention ist immer günstiger.“** - Falsch. Kosten, Alternativen, Wahrscheinlichkeiten und Schutzwirkung müssen geprüft werden.
 
-**„Krisen-BIP ist amtliche Statistik.“** – Falsch.
+**„Krisen-BIP ist amtliche Statistik.“** - Falsch.
 
 ## 14. WÖk-Abgrenzung
 
@@ -238,7 +238,7 @@ Präventionsökonomik, Kosten-Nutzen-Analyse und Katastrophenrisikomanagement ex
 
 ## 15. Primär-/Referenzquellen
 
-- UNDRR – Disaster Risk Reduction: https://www.undrr.org/
+- UNDRR - Disaster Risk Reduction: https://www.undrr.org/
 - OECD Strategic Foresight / resilience: https://www.oecd.org/strategic-foresight/
 - Destatis VGR/BIP: https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/_inhalt.html
 - WÖk Referenz: https://wirkungsoekonomie.de/referenz/
@@ -267,10 +267,14 @@ Prüfungsfähig sind Brutto-vs.-Netto-Präventionswert, Gegenfaktum, Kosten/Nebe
 
 Prävention hat ein Sichtbarkeitsproblem. Wenn sie funktioniert, passiert oft gerade nichts: kein Hochwasserschaden, kein Hitzetoter, kein Ausbruch. Deshalb müssen wir den Nutzen kontrafaktisch denken.
 
-Der erste Schritt ist der Brutto-Präventionswert: Welchen Schaden erwarten wir ohne die Maßnahme – und welchen mit der Maßnahme? Die Differenz ist der erwartete vermiedene Schaden.
+Der erste Schritt ist der Brutto-Präventionswert: Welchen Schaden erwarten wir ohne die Maßnahme - und welchen mit der Maßnahme? Die Differenz ist der erwartete vermiedene Schaden.
 
 Aber das ist noch nicht der Netto-Nutzen. Danach kommen die Kosten der Prävention und monetarisierbare negative Nebenwirkungen. Und selbst dann ist die Entscheidung nicht fertig. Denn Grundrechte, harte ökologische Grenzen, Verteilung, Generationen oder irreversible Schäden dürfen nicht einfach in eine Euro-Summe gepresst und gegen andere Vorteile verrechnet werden.
 
-Genau deshalb unterscheidet WÖk zwischen einer monetären Rechenebene und einer breiteren Wirkungsentscheidung. Das schützt vor zwei Fehlern: Prävention kleinzurechnen, weil vermiedene Schäden unsichtbar sind – oder Prävention schönzurechnen, indem man Kosten und nicht kompensierbare Schäden ignoriert.
+Genau deshalb unterscheidet WÖk zwischen einer monetären Rechenebene und einer breiteren Wirkungsentscheidung. Das schützt vor zwei Fehlern: Prävention kleinzurechnen, weil vermiedene Schäden unsichtbar sind - oder Prävention schönzurechnen, indem man Kosten und nicht kompensierbare Schäden ignoriert.
 
-Und noch etwas: Wenn nach einer Katastrophe viel gebaut, repariert und behandelt wird, kann das BIP reale Aktivität erfassen. Das heißt aber nicht automatisch, dass der Wohlstand gestiegen ist. Genau dafür nutzen wir die Denkfigur „Krisen-BIP“ – nicht als amtliche Kennzahl, sondern als Erinnerung daran, Aktivität und Wohlfahrt auseinanderzuhalten.
+Und noch etwas: Wenn nach einer Katastrophe viel gebaut, repariert und behandelt wird, kann das BIP reale Aktivität erfassen. Das heißt aber nicht automatisch, dass der Wohlstand gestiegen ist. Genau dafür nutzen wir die Denkfigur „Krisen-BIP“ - nicht als amtliche Kennzahl, sondern als Erinnerung daran, Aktivität und Wohlfahrt auseinanderzuhalten.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

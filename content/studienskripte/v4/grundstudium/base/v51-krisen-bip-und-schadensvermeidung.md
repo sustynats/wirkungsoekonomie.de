@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v51-krisen-bip-und-schadensvermeidung.md curriculum=4.0 sanitized=true -->
-# V51 · Krisen-BIP und Kosten der Schadensvermeidung – Aktivität, Verlust und Wiederherstellung trennen
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v51-krisen-bip-und-schadensvermeidung.md curriculum=4.0 sanitized=true -->
+# V51 · Krisen-BIP und Kosten der Schadensvermeidung - Aktivität, Verlust und Wiederherstellung trennen
 
 **lecture_id:** `WOEK-G-BASE-051`  
 **display_code:** `V51`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Nach einer Flut, Pandemie oder Energiekrise kann viel Geld ausgegeben und viel produziert werden. Das erhöht teilweise wirtschaftliche Aktivität – obwohl zuvor Wohlstand zerstört wurde. Die WÖk nutzt **„Krisen-BIP“** als Denkbegriff für diese Reparatur-/Bewältigungsaktivität. Er ist keine amtliche Kennzahl. Entscheidend ist die Trennung: **Schaden, Bewältigung, Wiederherstellung, Prävention und echte zusätzliche Zustandsverbesserung sind verschiedene Dinge.**
+Nach einer Flut, Pandemie oder Energiekrise kann viel Geld ausgegeben und viel produziert werden. Das erhöht teilweise wirtschaftliche Aktivität - obwohl zuvor Wohlstand zerstört wurde. Die WÖk nutzt **„Krisen-BIP“** als Denkbegriff für diese Reparatur-/Bewältigungsaktivität. Er ist keine amtliche Kennzahl. Entscheidend ist die Trennung: **Schaden, Bewältigung, Wiederherstellung, Prävention und echte zusätzliche Zustandsverbesserung sind verschiedene Dinge.**
 
 ## Lernziele
 
@@ -44,11 +44,11 @@ Aber oft stellen sie verlorenen Zustand wieder her statt zusätzlichen Wohlstand
 
 Für WÖk sauber trennen:
 
-1. `DAMAGE` – verlorener Zustand/Bestand.
-2. `CRISIS_RESPONSE` – unmittelbare Bewältigungsaktivität.
-3. `RESTORATION` – Wiederherstellung.
-4. `PREVENTION` – Verringerung künftiger Eintritts-/Schadenswahrscheinlichkeit.
-5. `NET_NEW_BENEFIT` – zusätzliche Verbesserung über früheren Zustand hinaus.
+1. `DAMAGE` - verlorener Zustand/Bestand.
+2. `CRISIS_RESPONSE` - unmittelbare Bewältigungsaktivität.
+3. `RESTORATION` - Wiederherstellung.
+4. `PREVENTION` - Verringerung künftiger Eintritts-/Schadenswahrscheinlichkeit.
+5. `NET_NEW_BENEFIT` - zusätzliche Verbesserung über früheren Zustand hinaus.
 
 ## 3. BIP ist nicht schuld
 
@@ -239,3 +239,7 @@ Was hätten wir mit den Ressourcen gemacht, wenn wir nicht reparieren müssten?
 Der Merksatz lautet:
 
 **Wirtschaftliche Aktivität zeigt, was getan wird. Wirkungsanalyse zeigt, ob wir einen Schaden reparieren, einen neuen Nutzen schaffen oder einen künftigen Schaden verhindern.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

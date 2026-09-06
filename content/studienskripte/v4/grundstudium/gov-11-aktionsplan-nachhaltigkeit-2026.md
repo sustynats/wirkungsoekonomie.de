@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-11-aktionsplan-nachhaltigkeit-2026.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-11-aktionsplan-nachhaltigkeit-2026.md curriculum=4.0 sanitized=true -->
 # GOV-11 · Aktionsplan Nachhaltigkeit 2026: Missionen, Beteiligungsstand und Wirkungsfragen
 
 **lecture_id:** `WOEK-G-GOV-AP26-01`  
@@ -90,7 +90,7 @@ Sie sollen:
 - wo möglich eine Wirksamkeitsmessung erhalten,
 - mittelbar zur Erreichung der DNS-2025-Ziele beitragen.
 
-Das klingt wirkungsorientiert – und ist für WÖk interessant.
+Das klingt wirkungsorientiert - und ist für WÖk interessant.
 
 Aber auch hier gilt:
 
@@ -100,7 +100,7 @@ Eine Mission formuliert einen politisch gewünschten Veränderungsauftrag. Sie m
 
 ## 5. Ein bemerkenswerter WÖk-Anschluss: Wirksamkeitsmessung
 
-Die Beteiligungsfassung spricht ausdrücklich davon, Missionen – wo möglich – mit Wirksamkeitsmessung zu versehen und bis zum Ende der Legislatur konkrete messbare Ergebnisse umzusetzen.
+Die Beteiligungsfassung spricht ausdrücklich davon, Missionen - wo möglich - mit Wirksamkeitsmessung zu versehen und bis zum Ende der Legislatur konkrete messbare Ergebnisse umzusetzen.
 
 Das zeigt: Die staatliche Architektur bewegt sich selbst stärker in Richtung wirkungsorientierter Steuerung.
 
@@ -260,13 +260,13 @@ Nicht jede Mission muss zu einem anderen WÖk-Urteil führen. Konvergenz ist mö
 
 ### Amtliche Quellen
 
-1. **Bundesregierung – Aktionsplan Nachhaltigkeit, öffentliche Seite vom 16.07.2026**  
+1. **Bundesregierung - Aktionsplan Nachhaltigkeit, öffentliche Seite vom 16.07.2026**  
    https://www.bundesregierung.de/breg-de/aktuelles/aktionsplan-nachhaltigkeit-2392096
 
-2. **Bundesregierung – Aktionsplan Nachhaltigkeit, Beteiligungsfassung Stand 16.07.2026**  
+2. **Bundesregierung - Aktionsplan Nachhaltigkeit, Beteiligungsfassung Stand 16.07.2026**  
    https://www.bundesregierung.de/resource/blob/975228/2447318/ce245dd460c58c39c04a87878f68608a/2026-07-16-aktionsplan-nachhaltigkeit-data.pdf?download=1
 
-3. **Bundesregierung – DNS 2025 / Übergang zum Aktionsplan**  
+3. **Bundesregierung - DNS 2025 / Übergang zum Aktionsplan**  
    https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540
 
 ### Quellenfunktion
@@ -330,7 +330,7 @@ Und zweitens saubere Versionierung.
 
 Der Aktionsplan enthält 19 Missionen in fünf Handlungsfeldern. Die Idee ist: Aus der sehr breiten Deutschen Nachhaltigkeitsstrategie sollen ausgewählte, ressortübergreifende Veränderungsaufträge stärker in konkrete Umsetzung kommen.
 
-Die Missionen sollen Zielstellungen haben, später mit Maßnahmenpaketen und Meilensteinen ergänzt werden und – wo möglich – Wirksamkeitsmessung bekommen.
+Die Missionen sollen Zielstellungen haben, später mit Maßnahmenpaketen und Meilensteinen ergänzt werden und - wo möglich - Wirksamkeitsmessung bekommen.
 
 Das ist bemerkenswert, weil die Bundesregierung selbst die Nachhaltigkeitspolitik stärker in Richtung Wirkung und messbare Ergebnisse entwickeln will.
 
@@ -355,3 +355,23 @@ Sondern: Wir machen aus einer politischen Mission eine überprüfbare Wirkungshy
 Und wenn im September die Endfassung kommt, prüfen wir diese Vorlesung noch einmal.
 
 Denn auch das ist Wirkungskompetenz: Nicht so tun, als wäre ein Zwischenstand für immer die Wahrheit.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Welcher staatliche Prüfrahmen passt zum Gegenstand?
+
+Der Prüfbedarf folgt der materiellen Wirkungsrelevanz. Neben Gesetzen können Verordnungen, Strategien, Programme, Förderungen, Garantien, Investitionen, Beschaffung, Infrastruktur und Verwaltungsentscheidungen relevant sein. Prüfe zuerst Zuständigkeit, Handlungsform und konkrete Rechtsgrundlage. Die Bundes-GGO und eNAP gelten nicht pauschal für Länder, Kommunen, EU oder jede staatliche Handlung. Fehlende Universalität bedeutet keine staatliche Prüfleere.
+
+Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm), DNS, Nachhaltigkeitsprüfung und eNAP/eGFA den bestehenden Rahmen. Bei finanzwirksamen Bundesmaßnahmen prüfe zusätzlich beziehungsweise gegenstandsbezogen [§ 7 BHO](https://www.gesetze-im-internet.de/bho/__7.html), [VV-BHO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm) und die [AAWU, Fassung vom 13. Januar 2026](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_13012026_IIA3H100500150006005DOKCOO7005100213785493.htm). Fachrechtliche Rahmen können hinzutreten.
+
+Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
+
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+
+### Zeitabhängiger Status
+
+Die am 6. September 2026 geprüfte [Seite der Bundesregierung zum Aktionsplan](https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/aktionsplan-nachhaltigkeit-2392096) beschreibt weiter den Beteiligungsentwurf. Ein späterer Kabinettsbeschluss darf erst nach Prüfung von Datum und veröffentlichter Fassung als beschlossen gelehrt werden. Vor jeder Präsentationsproduktion erneut prüfen.

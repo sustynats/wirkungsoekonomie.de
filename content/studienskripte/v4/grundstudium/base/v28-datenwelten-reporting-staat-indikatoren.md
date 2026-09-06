@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v28-datenwelten-reporting-staat-indikatoren.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v28-datenwelten-reporting-staat-indikatoren.md curriculum=4.0 sanitized=true -->
 # V28 · Datenwelten trennen: Reportingstandards, staatliche Indikatoren und Datenfunktionen
 
 **lecture_id:** `WOEK-G-BASE-028`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-„Datenstandard“ ist kein einheitliches Ding. **ESRS** regeln Nachhaltigkeitsberichterstattung, **GRI** ist ein Berichtsstandard, **EU-Taxonomie** klassifiziert nachhaltigkeitsbezogene wirtschaftliche Aktivitäten, **NACE** klassifiziert Wirtschaftstätigkeiten, der **Digital Product Passport** strukturiert Produktinformationen, und **DNS-/Destatis-Indikatoren** beobachten nationale Nachhaltigkeitsentwicklung. Die WÖk darf diese Welten verbinden – aber nicht so tun, als hätten alle dieselbe Funktion oder als sei Reporting bereits Kausalitätsbeweis.
+„Datenstandard“ ist kein einheitliches Ding. **ESRS** regeln Nachhaltigkeitsberichterstattung, **GRI** ist ein Berichtsstandard, **EU-Taxonomie** klassifiziert nachhaltigkeitsbezogene wirtschaftliche Aktivitäten, **NACE** klassifiziert Wirtschaftstätigkeiten, der **Digital Product Passport** strukturiert Produktinformationen, und **DNS-/Destatis-Indikatoren** beobachten nationale Nachhaltigkeitsentwicklung. Die WÖk darf diese Welten verbinden - aber nicht so tun, als hätten alle dieselbe Funktion oder als sei Reporting bereits Kausalitätsbeweis.
 
 ## Lernziele
 
@@ -119,7 +119,7 @@ Aktuell wichtig: Die Europäische Kommission hat am **20. Juli 2026** das DPP-Re
 
 Für WÖk ist das ein möglicher Datenkanal.
 
-Ein DPP kann beispielsweise Material-, Reparatur-, Herkunfts- oder Nachhaltigkeitsinformationen transportieren – je nach produktspezifischen Vorgaben.
+Ein DPP kann beispielsweise Material-, Reparatur-, Herkunfts- oder Nachhaltigkeitsinformationen transportieren - je nach produktspezifischen Vorgaben.
 
 Aber:
 
@@ -221,7 +221,7 @@ Zu pauschal. Sie können makro-/kontextbezogene Referenzen liefern; Datenfunktio
 
 ## 11b. WÖk-Abgrenzung
 
-WÖk ersetzt weder ESRS/GRI noch amtliche Statistik, Taxonomie, NACE, DPP oder die staatliche GFA/eNAP. Der Zusatz besteht darin, quellengebundene Daten **fallbezogen** mit State Variables, Datenfunktionen, Wirkmechanismen, Gegenfaktum, Attribution, Schutzgrenzen und Reality Check zu verbinden. Offenlegung, Klassifikation oder Zielbezug bleiben dabei jeweils das, was sie sind – sie werden nicht still zu Kausalitätsbelegen umgedeutet.
+WÖk ersetzt weder ESRS/GRI noch amtliche Statistik, Taxonomie, NACE, DPP oder die staatliche GFA/eNAP. Der Zusatz besteht darin, quellengebundene Daten **fallbezogen** mit State Variables, Datenfunktionen, Wirkmechanismen, Gegenfaktum, Attribution, Schutzgrenzen und Reality Check zu verbinden. Offenlegung, Klassifikation oder Zielbezug bleiben dabei jeweils das, was sie sind - sie werden nicht still zu Kausalitätsbelegen umgedeutet.
 
 ## 12. Quellen
 
@@ -240,7 +240,7 @@ WÖk ersetzt weder ESRS/GRI noch amtliche Statistik, Taxonomie, NACE, DPP oder d
 ### Staatliche Nachhaltigkeitsdaten
 
 - Destatis DNS-Indikatoren: https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - BMJV Nachhaltige Gesetzgebung: https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html
 
 ## 13. Transferaufgabe
@@ -310,4 +310,14 @@ Gerade 2026 sind die ESRS ein gutes Beispiel. Die Kommission hat am 3. Juli revi
 
 Datenkompetenz heißt also nicht nur: viele Quellen kennen.
 
-Sie heißt: wissen, **welche Funktion** eine Quelle hat – und **welche Version** wirklich gilt.
+Sie heißt: wissen, **welche Funktion** eine Quelle hat - und **welche Version** wirklich gilt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Aktualisierung zu CSRD und Sorgfaltspflichten · 6. September 2026
+
+Ältere Reichweiten- und Terminangaben sind am Änderungsrecht zu prüfen: Der Rat hat am 24. Februar 2026 die Omnibus-I-Vereinfachung von CSRD und CS3D endgültig gebilligt. Sie verändert unter anderem die erfassten Unternehmen und Übergänge. Für ein konkretes Unternehmen sind die veröffentlichte Änderungsrichtlinie, ihre nationale Umsetzung und das Geschäftsjahr maßgeblich; die ursprüngliche CSRD-Zeitplanung darf nicht ungeprüft fortgeschrieben werden. Unabhängig von einer Berichtspflicht bleibt der Unterschied zwischen berichteter Kennzahl, Zustandsveränderung und kausaler Zurechnung bestehen.
+
+Quelle: [Rat der EU, Beschluss und Anschlussdokumente vom 24. Februar 2026](https://www.consilium.europa.eu/en/press/press-releases/2026/02/24/council-signs-off-simplification-of-sustainability-reporting-and-due-diligence-requirements-to-boost-eu-competitiveness/).

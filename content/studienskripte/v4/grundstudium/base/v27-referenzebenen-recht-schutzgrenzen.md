@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v27-referenzebenen-recht-schutzgrenzen.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v27-referenzebenen-recht-schutzgrenzen.md curriculum=4.0 sanitized=true -->
 # V27 · Referenzebenen, Rechte, Staatsziele, Schutzgrenzen und rote Linien
 
 **lecture_id:** `WOEK-G-BASE-027`  
@@ -88,7 +88,7 @@ Je nach Fall können betroffen sein:
 
 WÖk ersetzt keine juristische Prüfung. Sie muss aber erkennen, wenn ein Wirkungsobjekt grundrechtsrelevant ist und eine fachjuristische Prüfung erforderlich wird.
 
-## 6. Referenzebene 5: Staatsziele – Beispiel Art. 20a GG
+## 6. Referenzebene 5: Staatsziele - Beispiel Art. 20a GG
 
 Art. 20a GG verpflichtet den Staat, auch in Verantwortung für künftige Generationen die natürlichen Lebensgrundlagen und die Tiere im Rahmen der verfassungsmäßigen Ordnung zu schützen.
 
@@ -291,7 +291,7 @@ SDGs und DNS geben Zielbezüge.
 
 Grundrechte und Fachrecht setzen rechtliche Grenzen.
 
-Art. 20a ist ein Staatsziel im Grundgesetz – kein SDG und nicht SDG+.
+Art. 20a ist ein Staatsziel im Grundgesetz - kein SDG und nicht SDG+.
 
 Wissenschaft kann zusätzliche Schwellen zeigen.
 
@@ -299,8 +299,12 @@ Und SDG+ hilft uns, demokratische und epistemische Wirkungsräume sichtbarer zu 
 
 Wenn wir diese Ebenen sauber trennen, können wir echte Zielkonflikte viel besser sehen.
 
-Und wir erkennen, wann wir abwägen dürfen – und wann nicht.
+Und wir erkennen, wann wir abwägen dürfen - und wann nicht.
 
 Der Merksatz lautet:
 
 **Nicht alles, was wichtig ist, darf in einen Gesamtscore. Und harte Grenzen sind keine Verhandlungsmasse für gute Durchschnittswerte.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

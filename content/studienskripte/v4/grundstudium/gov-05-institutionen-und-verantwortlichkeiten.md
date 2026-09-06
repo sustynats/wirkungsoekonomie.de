@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-05-institutionen-und-verantwortlichkeiten.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/gov-05-institutionen-und-verantwortlichkeiten.md curriculum=4.0 sanitized=true -->
 # GOV-05 · Wer steuert Nachhaltigkeit? Kanzleramt, Ressorts, StA NEZ, RNE, Destatis und Bundestag
 
 **lecture_id:** `WOEK-G-GOV-INST-01`  
@@ -31,7 +31,7 @@ Eine Strategie kann gute Ziele haben und trotzdem wirkungslos bleiben, wenn niem
 
 Darum gehört zur Wirkungsanalyse auch eine institutionelle Frage:
 
-> Wer hat welchen Hebel – und wer kann welche Entscheidung tatsächlich verändern?
+> Wer hat welchen Hebel - und wer kann welche Entscheidung tatsächlich verändern?
 
 Für die Deutsche Nachhaltigkeitsstrategie ist die Antwort bewusst verteilt.
 
@@ -74,7 +74,7 @@ In jedem Ressort gibt es außerdem Nachhaltigkeitskoordinatorinnen und -koordina
 
 ## 4. Ressorts: fachliche Verantwortung bleibt dezentral
 
-Nachhaltigkeit ist ressortübergreifend – aber Politik wird fachlich in Ressorts vorbereitet und umgesetzt.
+Nachhaltigkeit ist ressortübergreifend - aber Politik wird fachlich in Ressorts vorbereitet und umgesetzt.
 
 Das erzeugt eine typische Governance-Spannung:
 
@@ -220,22 +220,22 @@ Damit lässt sich vermeiden, Empfehlungen an Institutionen zu richten, die den e
 
 ### Amtliche / Primärquellen
 
-1. **Bundesregierung – Steuerung der Deutschen Nachhaltigkeitsstrategie**  
+1. **Bundesregierung - Steuerung der Deutschen Nachhaltigkeitsstrategie**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776
 
-2. **Bundesregierung – Staatssekretärsausschuss für nachhaltige Entwicklung und Zukunftsfragen, 28.07.2026**  
+2. **Bundesregierung - Staatssekretärsausschuss für nachhaltige Entwicklung und Zukunftsfragen, 28.07.2026**  
    https://www.bundesregierung.de/breg-de/aktuelles/staatssekretaersausschuss-426412
 
-3. **Bundesregierung – Beschlüsse / Arbeit des Staatssekretärsausschusses**  
+3. **Bundesregierung - Beschlüsse / Arbeit des Staatssekretärsausschusses**  
    https://www.bundesregierung.de/breg-de/schwerpunkte/sts-ausschuss-nachhaltigkeit-418846
 
-4. **Rat für Nachhaltige Entwicklung – Über den Rat**  
+4. **Rat für Nachhaltige Entwicklung - Über den Rat**  
    https://www.nachhaltigkeitsrat.de/ueber-den-rat/
 
-5. **Statistisches Bundesamt – DNS-Monitoring**  
+5. **Statistisches Bundesamt - DNS-Monitoring**  
    https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html
 
-6. **Deutscher Bundestag – PBnEZ, 21. Wahlperiode**  
+6. **Deutscher Bundestag - PBnEZ, 21. Wahlperiode**  
    https://www.bundestag.de/ausschuesse/weitere_gremien/parlamentarischer-beirat-nachhaltige-entwicklung-zukunftsfragen
 
 ### Quellenfunktion
@@ -282,7 +282,7 @@ Das Kanzleramt baut also nicht selbst Windräder, macht keine Krankenhausplanung
 
 Es koordiniert die Strategie.
 
-Für die ressortübergreifende Steuerung gibt es 2026 den Staatssekretärsausschuss für nachhaltige Entwicklung und Zukunftsfragen – kurz StA NEZ. Dort sind alle Bundesministerien vertreten. Das ist das zentrale hochrangige Regierungsgremium für die Nachhaltigkeitsstrategie.
+Für die ressortübergreifende Steuerung gibt es 2026 den Staatssekretärsausschuss für nachhaltige Entwicklung und Zukunftsfragen - kurz StA NEZ. Dort sind alle Bundesministerien vertreten. Das ist das zentrale hochrangige Regierungsgremium für die Nachhaltigkeitsstrategie.
 
 Dann gibt es den Rat für Nachhaltige Entwicklung. Der ist etwas ganz anderes. Er berät die Bundesregierung unabhängig, setzt Impulse und führt eigene Projekte durch. Er ist weder Ministerium noch Bundestagsausschuss.
 
@@ -303,3 +303,19 @@ Die WÖk ergänzt deshalb eine einfache institutionelle Wirkungsfrage:
 Wer entscheidet? Wer setzt um? Wer beobachtet? Wer kontrolliert? Und wo kann Rückkopplung tatsächlich etwas verändern?
 
 Erst dann wird Governance zur echten Wirkungsarchitektur.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+### Welcher staatliche Prüfrahmen passt zum Gegenstand?
+
+Der Prüfbedarf folgt der materiellen Wirkungsrelevanz. Neben Gesetzen können Verordnungen, Strategien, Programme, Förderungen, Garantien, Investitionen, Beschaffung, Infrastruktur und Verwaltungsentscheidungen relevant sein. Prüfe zuerst Zuständigkeit, Handlungsform und konkrete Rechtsgrundlage. Die Bundes-GGO und eNAP gelten nicht pauschal für Länder, Kommunen, EU oder jede staatliche Handlung. Fehlende Universalität bedeutet keine staatliche Prüfleere.
+
+Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm), DNS, Nachhaltigkeitsprüfung und eNAP/eGFA den bestehenden Rahmen. Bei finanzwirksamen Bundesmaßnahmen prüfe zusätzlich beziehungsweise gegenstandsbezogen [§ 7 BHO](https://www.gesetze-im-internet.de/bho/__7.html), [VV-BHO](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm) und die [AAWU, Fassung vom 13. Januar 2026](https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_13012026_IIA3H100500150006005DOKCOO7005100213785493.htm). Fachrechtliche Rahmen können hinzutreten.
+
+Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
+
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

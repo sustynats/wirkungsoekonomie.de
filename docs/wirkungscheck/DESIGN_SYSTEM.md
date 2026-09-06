@@ -1,4 +1,4 @@
-# Wahlkreis-Wirkungscheck — Design System
+# Wahlkreis-Wirkungscheck - Design System
 
 Version 1.0 · Stand 2026-08-13 · Lane: Claude (Design/UX) · Umsetzung: Codex
 
@@ -334,7 +334,7 @@ Keine Schriftgrösse unter `0.75rem`. Keine gesperrten Versalien in Fliesstextl�
 - Überschriften `text-wrap: balance`, Fliesstext `text-wrap: pretty`.
 - `hyphens: auto` mit `lang="de"`, weil deutsche Komposita sonst reissen.
 - Zahlen in Tabellen `font-variant-numeric: tabular-nums`.
-- Keine Gedankenstriche in Form von `–` oder `—` (Brand Guide §4). Trennung über
+- Keine Gedankenstriche in Form von `-` oder `-` (Brand Guide §4). Trennung über
   Punkt, Komma, Doppelpunkt oder Mittelpunkt `·`.
 
 ### 4.5 Badges

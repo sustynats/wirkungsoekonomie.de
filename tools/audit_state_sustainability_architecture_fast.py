@@ -76,7 +76,7 @@ def tracked_html(root: Path) -> list[str]:
         stdout=subprocess.PIPE,
     )
     out = []
-    for line in proc.stdout.splitlines():
+    for line in sorted(set(proc.stdout.splitlines())):
         rel = line.strip()
         if not rel or rel.startswith(EXCLUDED_SOURCE_PREFIXES):
             continue

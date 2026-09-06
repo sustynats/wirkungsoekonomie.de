@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v37-externalitaeten-und-versteckte-folgekosten.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v37-externalitaeten-und-versteckte-folgekosten.md curriculum=4.0 sanitized=true -->
 # V37 · Externalitäten und versteckte Folgekosten
 
 **lecture_id:** `WOEK-G-BASE-037`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Preis kann zu niedrig wirken, obwohl die Gesellschaft längst bezahlt – nur eben anderswo. Luftverschmutzung kann Gesundheitskosten erzeugen, CO₂ heutige Preise von künftigen Schäden entkoppeln, Lärm Anwohner:innen belasten. Solche Effekte heißen **Externalitäten**. Die Idee ist älter als die WÖk. WÖk ergänzt: Wir betrachten nicht nur monetarisierbare externe Kosten, sondern auch Zustandsänderungen, Verteilung, Rechte, Resilienz und Grenzen, die sich nicht sinnvoll in Euro verrechnen lassen.
+Ein Preis kann zu niedrig wirken, obwohl die Gesellschaft längst bezahlt - nur eben anderswo. Luftverschmutzung kann Gesundheitskosten erzeugen, CO₂ heutige Preise von künftigen Schäden entkoppeln, Lärm Anwohner:innen belasten. Solche Effekte heißen **Externalitäten**. Die Idee ist älter als die WÖk. WÖk ergänzt: Wir betrachten nicht nur monetarisierbare externe Kosten, sondern auch Zustandsänderungen, Verteilung, Rechte, Resilienz und Grenzen, die sich nicht sinnvoll in Euro verrechnen lassen.
 
 ## Lernziele
 
@@ -84,7 +84,7 @@ Mögliche Instrumente:
 
 Welches Instrument passt, hängt von Messbarkeit, Recht, Marktstruktur, Verteilung und Delivery ab.
 
-## 5. Pigou und Coase – zwei historische Perspektiven
+## 5. Pigou und Coase - zwei historische Perspektiven
 
 Arthur Pigou steht klassisch für staatliche Korrektur externer Kosten über Steuern/Subventionen.
 
@@ -123,7 +123,7 @@ Wirkpfad:
 
 Ein Geldwert kann Gesundheitskosten sichtbar machen.
 
-Aber die primäre State Variable bleibt Gesundheit/Exposition – nicht Euro.
+Aber die primäre State Variable bleibt Gesundheit/Exposition - nicht Euro.
 
 ## 8. Positive Externalitäten
 
@@ -236,4 +236,8 @@ Und dann fragen wir: Welches Instrument passt wirklich? Steuer? Standard? Handel
 
 Der Merksatz lautet:
 
-**Wenn der Marktpreis die ganze Rechnung nicht zeigt, müssen wir die fehlende Wirkung sichtbar machen – aber nicht jede Wirkung gewaltsam in eine einzige Geldzahl pressen.**
+**Wenn der Marktpreis die ganze Rechnung nicht zeigt, müssen wir die fehlende Wirkung sichtbar machen - aber nicht jede Wirkung gewaltsam in eine einzige Geldzahl pressen.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

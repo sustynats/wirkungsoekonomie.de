@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v20-gesellschaftliche-resonanzfaktoren.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v20-gesellschaftliche-resonanzfaktoren.md curriculum=4.0 sanitized=true -->
 # V20 · Gesellschaftliche Resonanzfaktoren
 
 **lecture_id:** `WOEK-G-BASE-020`  
@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Dieselbe Maßnahme kann an zwei Orten unterschiedlich wirken, obwohl ihr Text gleich ist. Der Grund liegt oft im Kontext: Vertrauen, Infrastruktur, Ressourcen, soziale Normen, Marktstruktur oder Vollzug. WÖk nennt solche Bedingungen Resonanzfaktoren – aber sie müssen konkret und überprüfbar sein.
+Dieselbe Maßnahme kann an zwei Orten unterschiedlich wirken, obwohl ihr Text gleich ist. Der Grund liegt oft im Kontext: Vertrauen, Infrastruktur, Ressourcen, soziale Normen, Marktstruktur oder Vollzug. WÖk nennt solche Bedingungen Resonanzfaktoren - aber sie müssen konkret und überprüfbar sein.
 
 ## Lernziele
 
@@ -67,10 +67,10 @@ Eine Resonanzhypothese braucht eine Erwartung: Wenn Handwerkerknappheit der Engp
 
 ## Typische Fehlinterpretationen
 
-- „Resonanz = Stimmung.“ – Zu eng.
-- „Kultur erklärt es.“ – Ohne Operationalisierung unzureichend.
-- „Durchschnittseffekt gilt für alle.“ – Nicht zwingend.
-- „Kontext macht Kausalität unmöglich.“ – Nein; er macht sie bedingt.
+- „Resonanz = Stimmung.“ - Zu eng.
+- „Kultur erklärt es.“ - Ohne Operationalisierung unzureichend.
+- „Durchschnittseffekt gilt für alle.“ - Nicht zwingend.
+- „Kontext macht Kausalität unmöglich.“ - Nein; er macht sie bedingt.
 
 ## WÖk-Abgrenzung
 
@@ -91,4 +91,33 @@ Prüfungsfähig sind Resonanz/Mechanismus, Heterogenität, Engpass, Interaktion 
 
 ## Sprechertext
 
-Warum funktioniert dieselbe Idee nicht überall gleich? Weil Maßnahmen nicht im Vakuum landen. Sie treffen auf Gebäude, Preise, Vertrauen, Infrastruktur, Zeit, Institutionen und Alternativen. Diese Kontextbedingungen nennen wir Resonanzfaktoren. Aber der Begriff darf keine Nebelmaschine sein. „Die Kultur war schuld“ reicht nicht. Wir müssen sagen, welche konkrete Bedingung den Mechanismus verändert – und woran wir merken würden, dass unsere Erklärung falsch ist.
+Warum funktioniert dieselbe Idee nicht überall gleich? Weil Maßnahmen nicht im Vakuum landen. Sie treffen auf Gebäude, Preise, Vertrauen, Infrastruktur, Zeit, Institutionen und Alternativen. Diese Kontextbedingungen nennen wir Resonanzfaktoren. Aber der Begriff darf keine Nebelmaschine sein. „Die Kultur war schuld“ reicht nicht. Wir müssen sagen, welche konkrete Bedingung den Mechanismus verändert - und woran wir merken würden, dass unsere Erklärung falsch ist.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Kontextbedingungen konkret statt stereotyp beschreiben
+
+Resonanzfaktoren bezeichnen Bedingungen, unter denen eine Maßnahme oder Kommunikation anschlussfähig werden kann. Dazu können Zugang, Vorwissen, zeitliche Ressourcen, institutionelles Vertrauen und praktische Handlungsmöglichkeiten gehören. Diese Faktoren werden am konkreten Fall untersucht. Eine pauschale Eigenschaftszuschreibung an eine soziale Gruppe ist dafür kein Ersatz.
+
+Ein Mechanismus erklärt, wie eine Veränderung zustande kommen könnte. Ein Kontextfaktor beeinflusst, ob und wie dieser Mechanismus im untersuchten Umfeld greifen kann. Die Trennung ist analytisch hilfreich, auch wenn sich beide im realen Fall gegenseitig beeinflussen. Eine Hypothese muss so formuliert werden, dass widersprechende Beobachtungen möglich bleiben.
+
+### Durchgearbeiteter Fall: dasselbe Kursangebot an zwei Standorten
+
+Eine fiktive Organisation bietet denselben Kurs an zwei Standorten an. Am ersten ist die Teilnahme hoch, am zweiten niedrig. Eine vorschnelle Erklärung wäre, die Beschäftigten am zweiten Standort seien grundsätzlich weniger lernbereit. Tatsächlich finden die Termine dort während einer besonders belasteten Schicht statt, und Vertretungen sind kaum verfügbar.
+
+Die Prüfung betrachtet deshalb Zeitfenster, Freistellung, Bekanntheit des Angebots, Verständlichkeit der Einladung und tatsächlichen Bedarf. Eine mögliche Hypothese lautet: „Ein passendes Zeitfenster und gesicherte Vertretung erhöhen die reale Teilnahmemöglichkeit.“ Diese Aussage ist konkreter und prüfbarer als ein Charakterurteil über die Gruppe.
+
+Wird der Kurs anders terminiert und die Teilnahme steigt, ist eine Veränderung beobachtet. Die Zurechnung bleibt zu prüfen, etwa weil gleichzeitig eine neue Führungskraft das Angebot stärker erklärt hat. Der Reality Check fragt außerdem nach dem Lernergebnis und seiner Anwendung. Mehr Teilnahme ist noch kein vollständiger Kompetenz- oder Wirkungsnachweis.
+
+### Lernarbeit mit Erwartungshorizont
+
+Formuliere drei konkurrierende Kontext-Hypothesen und jeweils eine Beobachtung, die sie stützen oder schwächen würde. Eine gute Lösung enthält veränderbare Bedingungen und vermeidet unbelegte Aussagen über Wesenseigenschaften von Gruppen.
+
+Entwirf anschließend eine begrenzte Anpassung des Angebots. Begründe, welchen Engpass sie bearbeitet und welche Folge noch offenbleibt. Der Erwartungshorizont verlangt keine perfekte Isolation aller Einflüsse, wohl aber die transparente Trennung von Beobachtung, plausibler Erklärung und kausaler Zuschreibung. Unterschiedliche Reaktionen werden als Erkenntnis über Bedingungen genutzt, nicht als Rangliste der beteiligten Menschen.

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v94-lange-wellen-kondratieff-hypothese.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v94-lange-wellen-kondratieff-hypothese.md curriculum=4.0 sanitized=true -->
 # V94 · Lange Wellen und „6. Kondratieff“: historische Hypothese, kein Wirkungsbeweis
 
 **lecture_id:** `WOEK-G-BASE-094`  
@@ -8,11 +8,11 @@
 **migration_class:** `MATERIAL_REWRITE_REQUIRED`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
 **reviewed_at:** 2026-08-21  
-**change_reason:** v3.2 formulierte „WÖk als Steuerungslogik des 6. Kondratieff“ zu stark. v4.0 behandelt lange Wellen/Kondratieff als umstrittene historische/ökonomische Hypothese und nutzt sie höchstens als Heuristik für Transformationscluster – niemals als Beweis der Notwendigkeit oder historischen Unvermeidlichkeit der WÖk.
+**change_reason:** v3.2 formulierte „WÖk als Steuerungslogik des 6. Kondratieff“ zu stark. v4.0 behandelt lange Wellen/Kondratieff als umstrittene historische/ökonomische Hypothese und nutzt sie höchstens als Heuristik für Transformationscluster - niemals als Beweis der Notwendigkeit oder historischen Unvermeidlichkeit der WÖk.
 
 ## 20-Sekunden-Einstieg
 
-Die Idee langer Konjunktur- und Innovationswellen – oft „Kondratieff-Wellen“ genannt – ist ökonomisch interessant, aber wissenschaftlich **nicht als Naturgesetz gesichert**. Manche Autor:innen ordnen große Technologiecluster wie Dampfmaschine, Elektrifizierung oder Digitalisierung solchen langen Wellen zu. Die WÖk kann diese Perspektive als Heuristik nutzen: Entsteht gerade ein neuer Transformationscluster aus KI, Dekarbonisierung, Gesundheit und Resilienz? Aber daraus folgt nicht, dass ein „6. Kondratieff“ bewiesen ist oder die WÖk historisch unvermeidlich wäre.
+Die Idee langer Konjunktur- und Innovationswellen - oft „Kondratieff-Wellen“ genannt - ist ökonomisch interessant, aber wissenschaftlich **nicht als Naturgesetz gesichert**. Manche Autor:innen ordnen große Technologiecluster wie Dampfmaschine, Elektrifizierung oder Digitalisierung solchen langen Wellen zu. Die WÖk kann diese Perspektive als Heuristik nutzen: Entsteht gerade ein neuer Transformationscluster aus KI, Dekarbonisierung, Gesundheit und Resilienz? Aber daraus folgt nicht, dass ein „6. Kondratieff“ bewiesen ist oder die WÖk historisch unvermeidlich wäre.
 
 ## Lernziele
 
@@ -69,7 +69,7 @@ Als Denkwerkzeug kann man fragen:
 
 Damit wird aus „Welle“ eine Transformationsanalyse.
 
-## 4. „Sechster Kondratieff“ – Vorsicht mit dem Etikett
+## 4. „Sechster Kondratieff“ - Vorsicht mit dem Etikett
 
 Manche Autor:innen verbinden eine sechste Welle mit:
 
@@ -232,7 +232,7 @@ Es gibt Geschichten, die so gut klingen, dass man besonders vorsichtig werden so
 
 Eine davon ist der sechste Kondratieff.
 
-Die Idee: Wirtschaft entwickelt sich in langen Wellen. Erst Dampfmaschine, dann Eisenbahn, Elektrizität, Auto, Information – und jetzt vielleicht Gesundheit, Nachhaltigkeit oder KI.
+Die Idee: Wirtschaft entwickelt sich in langen Wellen. Erst Dampfmaschine, dann Eisenbahn, Elektrizität, Auto, Information - und jetzt vielleicht Gesundheit, Nachhaltigkeit oder KI.
 
 Das ist spannend.
 
@@ -259,3 +259,7 @@ Vielleicht auch nicht.
 Der Merksatz lautet:
 
 **Eine gute Geschichte darf Fragen erzeugen. Sie darf die Antwort nicht vorwegnehmen.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

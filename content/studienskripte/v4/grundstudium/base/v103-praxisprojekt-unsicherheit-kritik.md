@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v103-praxisprojekt-unsicherheit-kritik.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v103-praxisprojekt-unsicherheit-kritik.md curriculum=4.0 sanitized=true -->
 # V103 · Praxisprojekt: Unsicherheit, Gegenpositionen und Kritik einarbeiten
 
 **lecture_id:** `WOEK-G-BASE-103`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine gute Wirkungsanalyse versucht nicht, Recht zu behalten. Sie versucht herauszufinden, **wo sie falsch sein könnte**. Deshalb suchst du jetzt aktiv Gegenpositionen, Gegenevidenz und alternative Mechanismen. Du dokumentierst, welche Kritik dein Ergebnis verändert, welche nicht – und warum. Das Ziel ist nicht Ausgewogenheit um jeden Preis, sondern robuste Evidenz.
+Eine gute Wirkungsanalyse versucht nicht, Recht zu behalten. Sie versucht herauszufinden, **wo sie falsch sein könnte**. Deshalb suchst du jetzt aktiv Gegenpositionen, Gegenevidenz und alternative Mechanismen. Du dokumentierst, welche Kritik dein Ergebnis verändert, welche nicht - und warum. Das Ziel ist nicht Ausgewogenheit um jeden Preis, sondern robuste Evidenz.
 
 ## Lernziele
 
@@ -69,14 +69,14 @@ So werden echte Dissense sichtbar.
 
 ## 4. Kritiktypen
 
-- **Fact Error** – Tatsache/Quelle falsch.
-- **Scope Error** – Systemgrenze falsch.
-- **Mechanism Challenge** – Kausalpfad fraglich.
-- **Counterfactual Challenge** – Alternative Entwicklung plausibler.
-- **Distribution Challenge** – Durchschnitt verdeckt Betroffene.
-- **Legal/Boundary Challenge** – Grenze übersehen.
-- **Delivery Challenge** – Umsetzung unrealistisch.
-- **Normative Challenge** – andere legitime Zielgewichtung.
+- **Fact Error** - Tatsache/Quelle falsch.
+- **Scope Error** - Systemgrenze falsch.
+- **Mechanism Challenge** - Kausalpfad fraglich.
+- **Counterfactual Challenge** - Alternative Entwicklung plausibler.
+- **Distribution Challenge** - Durchschnitt verdeckt Betroffene.
+- **Legal/Boundary Challenge** - Grenze übersehen.
+- **Delivery Challenge** - Umsetzung unrealistisch.
+- **Normative Challenge** - andere legitime Zielgewichtung.
 
 Nicht jede Kritik verlangt dieselbe Reaktion.
 
@@ -187,7 +187,7 @@ Nicht für materielle Fachkritik.
 
 ## WÖk-Abgrenzung · Unsicherheit ist kein Fehlerrest
 
-WÖk beansprucht keine Sicherheit, die Daten und Kausalwissen nicht tragen. Unsicherheit, alternative Hypothesen und Gegenevidenz werden als Teil des Ergebnisses dokumentiert. Ein OPEN-Befund ist weder neutral noch null; er markiert fehlende Tragfähigkeit für eine stärkere Aussage. Der WÖk-Zusatz ist die versionierte Revisions- und Falsifikationslogik – nicht die Behauptung, andere Evaluationsmethoden zu ersetzen.
+WÖk beansprucht keine Sicherheit, die Daten und Kausalwissen nicht tragen. Unsicherheit, alternative Hypothesen und Gegenevidenz werden als Teil des Ergebnisses dokumentiert. Ein OPEN-Befund ist weder neutral noch null; er markiert fehlende Tragfähigkeit für eine stärkere Aussage. Der WÖk-Zusatz ist die versionierte Revisions- und Falsifikationslogik - nicht die Behauptung, andere Evaluationsmethoden zu ersetzen.
 
 ## 13. Quellen
 
@@ -247,3 +247,7 @@ Und wir machen keine künstliche 50/50-Ausgewogenheit, wenn die Evidenz deutlich
 Der Merksatz lautet:
 
 **Eine robuste Analyse erkennt man nicht daran, dass sie Kritik überlebt. Sondern daran, dass sie durch gute Kritik besser wird.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

@@ -1,4 +1,4 @@
-# AGENTS.md – Wirkungsportal Parlament
+# AGENTS.md - Wirkungsportal Parlament
 
 **Version:** 1.0  
 **Stand:** 16. August 2026  
@@ -53,13 +53,13 @@ Bei Konflikten gilt in dieser Reihenfolge:
 
 Zusätzlich gilt:
 
-> **Aktuelle Fachquelle vor älterer Fassung – tatsächliche Zustandsveränderung vor Absicht/Output – offene Unsicherheit vor Scheingenauigkeit – Wirkungsgrenze vor Durchschnittsscore – Source Fidelity vor redaktioneller Eleganz.**
+> **Aktuelle Fachquelle vor älterer Fassung - tatsächliche Zustandsveränderung vor Absicht/Output - offene Unsicherheit vor Scheingenauigkeit - Wirkungsgrenze vor Durchschnittsscore - Source Fidelity vor redaktioneller Eleganz.**
 
 Wenn zwei Fachquellen widersprechen, nicht stillschweigend „harmonisieren“. Konflikt markieren, zuständige Quelle bestimmen oder neue Version anlegen.
 
 ---
 
-# 2. Was das Portal ist – und was nicht
+# 2. Was das Portal ist - und was nicht
 
 Das Portal ist:
 
@@ -86,7 +86,7 @@ Das Portal ist nicht:
 
 ---
 
-# 3. Source Fidelity – wichtigste technische Publikationsregel
+# 3. Source Fidelity - wichtigste technische Publikationsregel
 
 ## 3.1 SOURCE_FIDELITY = 100 %
 
@@ -442,7 +442,7 @@ Monitoring allein erklärt keine Ursachen.
 
 ---
 
-# 11. Wahlprogramme und Koalitionsverträge – Bund
+# 11. Wahlprogramme und Koalitionsverträge - Bund
 
 ## 11.1 Dokumentebenen
 
@@ -842,7 +842,7 @@ Internationaler politischer Bezugsrahmen.
 
 WÖk-Erweiterung, keine offizielle UN-Kategorie.
 
-## Mensch – Planet – Demokratie
+## Mensch - Planet - Demokratie
 
 Gekoppelter WÖk-Bezugsraum.
 

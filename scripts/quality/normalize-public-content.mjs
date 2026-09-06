@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
+import {normalizePublicationTypography} from '../lib/public-typography.mjs';
 
 const SITE='https://wirkungsoekonomie.de';
 const esc=value=>String(value).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
@@ -12,6 +13,15 @@ const headingKey=value=>fold(value).replace(/^wgs-/,'').replace(/^(?:dossier-)+(
 const headingSlug=value=>fold(visible(value)).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 function walk(directory){return fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry=>entry.isDirectory()?walk(path.join(directory,entry.name)):entry.name.endsWith('.html')?[path.join(directory,entry.name)]:[]);}
 function outsideRaw(html,transform){return html.split(/(<(?:script|style)\b[^>]*>[\s\S]*?<\/(?:script|style)>)/gi).map((part,i)=>i%2?part:transform(part)).join('');}
+
+export function normalizeMachineMirror(html) {
+  if(!/<pre>/.test(html) || /<meta\b[^>]*name=["']robots["']/i.test(html))return html;
+  const metadata='<meta name="robots" content="noindex, follow">';
+  if(/<\/head>/i.test(html))return html.replace(/<\/head>/i,metadata+'\n</head>');
+  // Some older API mirrors consist only of a pre element. Keep its escaped
+  // data intact while adding the document shell needed by search engines.
+  return '<!doctype html>\n<html lang="de"><head><meta charset="utf-8"><title>WÖk API - Datenansicht</title>'+metadata+'</head><body>'+html+'</body></html>\n';
+}
 
 export function uniqueContentIds(html) {
   const seen=new Set();const reserved=new Set();const replacements=[];
@@ -56,10 +66,17 @@ export function normalizeStaticNavigation(html, ids) {
 }
 
 export function normalizePublicContent(root, options={}) {
+  const headingAnchors=options.headingAnchors ?? JSON.parse(fs.readFileSync('content/site/heading-anchors.json','utf8'));
   const pages=new Map();const report={reviewedAt:'2026-09-06',linkRewrites:[],fragmentAliases:[],uniqueIds:[],duplicates:[],headings:[],staleTocEntries:[],duplicateDownloadButtons:[]};
   for(const file of walk(root)){
     const rel=path.relative(root,file).replaceAll(path.sep,'/');const route=rel==='index.html'?'/':'/'+(rel.endsWith('/index.html')?rel.slice(0,-10):rel);
     const original=fs.readFileSync(file,'utf8');let html=original;
+    // JSON mirrors are machine access points, not duplicate editorial pages.
+    if(rel.startsWith('api/'))html=normalizeMachineMirror(html);
+    for(const [id,label] of Object.entries(headingAnchors[route] || {})){
+      if(html.includes(`id="${id}"`))continue;
+      html=html.replace(/<h([1-6])\b([^>]*)>([\s\S]*?)<\/h\1>/gi,(whole,level,attrs,body)=>!/(?:^|\s)id=/.test(attrs)&&visible(body)===label?`<h${level}${attrs} id="${id}">${body}</h${level}>`:whole);
+    }
     if(!rel.startsWith('api/') && !/name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html)) {
       const normalized=uniqueContentIds(html);html=normalized.html;
       if(normalized.changes.length)report.uniqueIds.push({route,changes:normalized.changes});
@@ -95,7 +112,18 @@ export function normalizePublicContent(root, options={}) {
     let target,fragment;try{target=decodeURIComponent(url.pathname);fragment=decodeURIComponent(url.hash.slice(1));}catch{return tag;}
     if(target.endsWith('/index.html'))target=target.slice(0,-10);
     let replacement;
-    if(target==='/glossar.html' && fragment.startsWith('begriff-'))replacement=terms.get(fragment.slice(8));
+    if(target==='/glossar.html' && fragment){
+      const legacy={
+        'wirkungspfad':'wirkpfad', 'kausalitaet-zurechnung':'kausalitaet-und-zurechnung',
+        'nicht-kompensation':'nichtkompensationsprinzip', 'medikamenten-analogie':'wirkstoff',
+        'transitionsrisiko':'transition-risk', 'physisches-klimarisiko':'klimarisiko',
+      };
+      const key=fragment.replace(/^begriff-/, '');
+      replacement=terms.get(legacy[key] || key);
+      if(['externe-quellen-glossar','daten-standards-glossar'].includes(fragment))replacement='/quellen/';
+    }
+    if(target==='/wirkungsradar/muster/' && fragment==='verantwortungsdiffusion')replacement='/begriffe/verantwortungsdiffusion/';
+    if(target==='/erleben/wirkungssteuer-beispiele/' && ['apfel','t-shirt'].includes(fragment))replacement=fragment==='apfel'?'/bibliothek/beispiel-apfel-wirkungssteuer/':'/bibliothek/apfel-t-shirt-wirkung-im-preis/';
     if(renamed.has(target))replacement=renamed.get(target);
     if(replacement && pages.has(replacement)){
       report.linkRewrites.push({from:page.route,previous:href,target:replacement});return `${start}${quote}${esc(replacement)}${quote}`;
@@ -126,7 +154,7 @@ export function normalizePublicContent(root, options={}) {
   for(const page of pages.values()){
     if(!/^(bibliothek\/|wirkungsradar\/)/.test(page.rel) || /noindex|http-equiv=["']refresh/i.test(page.html.slice(0,page.html.indexOf('</head>'))))continue;
     const main=page.html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1];if(!main || /<(input|form|textarea|canvas)\b/i.test(main))continue;
-    const text=visible(main);if(text.split(' ').length<100)continue;
+    const text=normalizePublicationTypography(visible(main));if(text.split(' ').length<100)continue;
     const key=crypto.createHash('sha256').update(text).digest('hex');const group=groups.get(key)||[];group.push(page);groups.set(key,group);
   }
   const excluded=new Set();

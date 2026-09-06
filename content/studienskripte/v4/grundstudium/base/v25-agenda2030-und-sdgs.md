@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v25-agenda2030-und-sdgs.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v25-agenda2030-und-sdgs.md curriculum=4.0 sanitized=true -->
 # V25 · Agenda 2030 und SDGs: globaler Referenzrahmen, Ziele und Grenzen
 
 **lecture_id:** `WOEK-G-BASE-025`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die 17 SDGs sind **globale Ziele der Agenda 2030**, keine WÖk-Erfindung und kein deutsches Gesetz. Sie helfen, Wirkungen in einen international vereinbarten Zielraum einzuordnen. Aber sie sagen noch nicht, ob eine konkrete Maßnahme tatsächlich wirkt. Für deutsche staatliche Fälle kommt außerdem die Deutsche Nachhaltigkeitsstrategie als nationaler Governance-, Ziel- und Monitoringrahmen hinzu. WÖk nutzt diese Referenzen – und hält Zielbezug, Recht und Kausalität strikt getrennt.
+Die 17 SDGs sind **globale Ziele der Agenda 2030**, keine WÖk-Erfindung und kein deutsches Gesetz. Sie helfen, Wirkungen in einen international vereinbarten Zielraum einzuordnen. Aber sie sagen noch nicht, ob eine konkrete Maßnahme tatsächlich wirkt. Für deutsche staatliche Fälle kommt außerdem die Deutsche Nachhaltigkeitsstrategie als nationaler Governance-, Ziel- und Monitoringrahmen hinzu. WÖk nutzt diese Referenzen - und hält Zielbezug, Recht und Kausalität strikt getrennt.
 
 ## Lernziele
 
@@ -249,7 +249,7 @@ Denn ein SDG-Bezug beweist keine Wirkung.
 
 Wenn ein Digitalprogramm zu SDG 4 Bildung passt, wissen wir noch nicht, ob Kinder dadurch tatsächlich besser lernen.
 
-Geräte können verteilt sein – das ist Output. Der Lernerfolg kann trotzdem ausbleiben.
+Geräte können verteilt sein - das ist Output. Der Lernerfolg kann trotzdem ausbleiben.
 
 Darum verwenden wir SDGs als Referenzrahmen und Vollständigkeitscheck.
 
@@ -262,3 +262,7 @@ Wer nur positive SDG-Kacheln sammelt, betreibt keine Wirkungsanalyse.
 Der Merksatz lautet:
 
 **SDGs zeigen, wohin wir gemeinsam wollen. Der Wirkpfad zeigt, ob eine konkrete Maßnahme uns wirklich dorthin bringt.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

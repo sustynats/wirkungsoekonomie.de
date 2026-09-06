@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V5  
 **Modul/Abschnitt:** WM  
 **Titel:** Wirkungspotenziale und Wirkungsrisiken analysieren  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v5-potenziale-risiken-analysieren.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v5.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v5.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungspotenziale und Wirkungsrisiken analysieren** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,32 +44,32 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-Ein Vorhaben verspricht viel Gutes – und birgt zugleich Risiken. **Wie analysiert man beide Seiten sauber, ohne die eine gegen die andere zu verrechnen?**
+Ein Vorhaben verspricht viel Gutes - und birgt zugleich Risiken. **Wie analysiert man beide Seiten sauber, ohne die eine gegen die andere zu verrechnen?**
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Chancen und Risiken sauber trennen – Potenzial- und Risikoanalyse
+- **Titel:** Chancen und Risiken sauber trennen - Potenzial- und Risikoanalyse
 - **Länge:** ~15 Min
-- **Kernaussage in einem Satz:** Wirkungspotenziale und Wirkungsrisiken werden getrennt analysiert und unter Nichtkompensation zusammengeführt – nicht gegeneinander aufgerechnet.
+- **Kernaussage in einem Satz:** Wirkungspotenziale und Wirkungsrisiken werden getrennt analysiert und unter Nichtkompensation zusammengeführt - nicht gegeneinander aufgerechnet.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Potenzial ist nicht Wirkung.** Wirkungspotenzial ist die Möglichkeit positiver (oder ambivalenter) Wirkung. Es rechtfertigt Hoffnung, aber keine Erfolgsmeldung.
+**Abschnitt A - Potenzial ist nicht Wirkung.** Wirkungspotenzial ist die Möglichkeit positiver (oder ambivalenter) Wirkung. Es rechtfertigt Hoffnung, aber keine Erfolgsmeldung.
 
-**Abschnitt B – Risiko ist die andere Seite.** Wirkungsrisiko ist die Möglichkeit negativer oder destabilisierender Wirkung. Beide gehören in jede seriöse Analyse.
+**Abschnitt B - Risiko ist die andere Seite.** Wirkungsrisiko ist die Möglichkeit negativer oder destabilisierender Wirkung. Beide gehören in jede seriöse Analyse.
 
-**Abschnitt C – Getrennt analysieren, dann zusammenführen.** Erst getrennt bewerten, dann unter Nichtkompensation zusammenführen: Ein hohes Potenzial hebt ein kritisches Risiko nicht auf.
+**Abschnitt C - Getrennt analysieren, dann zusammenführen.** Erst getrennt bewerten, dann unter Nichtkompensation zusammenführen: Ein hohes Potenzial hebt ein kritisches Risiko nicht auf.
 
-**Abschnitt D – Wirkmechanismus prüfen.** Für Potenzial wie Risiko fragt man nach dem Wirkmechanismus: Wie genau soll die Wirkung entstehen – und was könnte sie ins Negative kippen (Rebound, Nebenwirkung)?
+**Abschnitt D - Wirkmechanismus prüfen.** Für Potenzial wie Risiko fragt man nach dem Wirkmechanismus: Wie genau soll die Wirkung entstehen - und was könnte sie ins Negative kippen (Rebound, Nebenwirkung)?
 
-**Abschnitt E – Ergebnis.** Die Analyse liefert die Grundlage für die Behandlung von Zielkonflikten (V6) und die Strategie (V8).
+**Abschnitt E - Ergebnis.** Die Analyse liefert die Grundlage für die Behandlung von Zielkonflikten (V6) und die Strategie (V8).
 
 ## 4. Skript / Folien (Lernseite)
 
-**Zwei Fragen, getrennt gestellt.** *Wirkungspotenzial:* Welche positive Veränderung ist möglich – und über welchen Wirkmechanismus? *Wirkungsrisiko:* Welche negative/destabilisierende Wirkung ist möglich? Beide sind **Möglichkeiten** (Grundlagen V2), nicht schon eingetretene Wirkung. Sie sauber zu trennen verhindert Schönfärberei und blinde Flecken.
+**Zwei Fragen, getrennt gestellt.** *Wirkungspotenzial:* Welche positive Veränderung ist möglich - und über welchen Wirkmechanismus? *Wirkungsrisiko:* Welche negative/destabilisierende Wirkung ist möglich? Beide sind **Möglichkeiten** (Grundlagen V2), nicht schon eingetretene Wirkung. Sie sauber zu trennen verhindert Schönfärberei und blinde Flecken.
 
-**Zusammenführen unter Nichtkompensation.** Nach getrennter Analyse werden Potenzial und Risiko zusammengeführt – aber **nicht saldiert**. Ein großes Potenzial rechtfertigt kein kritisches Risiko an einer roten Linie. Damit bleibt die Analyse anschlussfähig an die Priorisierung aus V4.
+**Zusammenführen unter Nichtkompensation.** Nach getrennter Analyse werden Potenzial und Risiko zusammengeführt - aber **nicht saldiert**. Ein großes Potenzial rechtfertigt kein kritisches Risiko an einer roten Linie. Damit bleibt die Analyse anschlussfähig an die Priorisierung aus V4.
 
 **Ein einfaches Analyse-Raster je Vorhaben:**
 
@@ -132,7 +129,6 @@ Wähle ein aktuelles Vorhaben und fülle das Analyse-Raster aus: Wirkungspotenzi
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -300,12 +296,11 @@ Die folgende Runde verdichtet WM-V5 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V5. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §5
 - `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
 - Glossar: `begriffe/wirkungspotenzial`, `begriffe/wirkungsrisiko`, `begriffe/rebound-effekt`
 
@@ -398,7 +393,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -804,8 +798,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v5-potenziale-risiken-analysieren.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

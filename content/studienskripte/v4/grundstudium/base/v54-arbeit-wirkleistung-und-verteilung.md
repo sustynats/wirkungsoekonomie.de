@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v54-arbeit-wirkleistung-und-verteilung.md curriculum=4.0 sanitized=true -->
-# V54 · Arbeit, Wirkleistung und Verteilung – Wertschöpfung, Wirkung und Entlohnung auseinanderhalten
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v54-arbeit-wirkleistung-und-verteilung.md curriculum=4.0 sanitized=true -->
+# V54 · Arbeit, Wirkleistung und Verteilung - Wertschöpfung, Wirkung und Entlohnung auseinanderhalten
 
 **lecture_id:** `WOEK-G-BASE-054`  
 **display_code:** `V54`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Arbeit kann wirtschaftlichen Wert schaffen, gesellschaftlich wichtige Wirkung erzeugen – oder beides. Aber Lohn, Produktivität und Wirkung sind nicht dasselbe. Eine Pflegekraft kann große gesellschaftliche Wirkung haben, ohne hohen Marktlohn. Eine sehr profitable Tätigkeit kann zugleich externe Schäden erzeugen. WÖk nutzt **Wirkleistung** als Analysebegriff für den Beitrag einer Tätigkeit zu relevanten Zustandsänderungen – nicht als moralische Rangliste von Menschen.
+Arbeit kann wirtschaftlichen Wert schaffen, gesellschaftlich wichtige Wirkung erzeugen - oder beides. Aber Lohn, Produktivität und Wirkung sind nicht dasselbe. Eine Pflegekraft kann große gesellschaftliche Wirkung haben, ohne hohen Marktlohn. Eine sehr profitable Tätigkeit kann zugleich externe Schäden erzeugen. WÖk nutzt **Wirkleistung** als Analysebegriff für den Beitrag einer Tätigkeit zu relevanten Zustandsänderungen - nicht als moralische Rangliste von Menschen.
 
 ## Lernziele
 
@@ -98,7 +98,7 @@ Wenn Technologie Produktivität erhöht, können Gewinne fließen an:
 
 WÖk fragt:
 
-> Wer erhält welchen Anteil – und wie verändern sich Arbeitsbedingungen/Chancen?
+> Wer erhält welchen Anteil - und wie verändern sich Arbeitsbedingungen/Chancen?
 
 ## 6. Automatisierung und KI
 
@@ -221,8 +221,12 @@ Wir analysieren Tätigkeiten, Prozesse und Systeme.
 
 Und wir schauen auf Arbeitsqualität. Ein neuer Job ist nicht automatisch ein guter Job.
 
-Bei KI wird das besonders spannend: Produktivität kann steigen – aber wer bekommt die Gewinne? Werden gefährliche Routinen reduziert oder Menschen stärker überwacht?
+Bei KI wird das besonders spannend: Produktivität kann steigen - aber wer bekommt die Gewinne? Werden gefährliche Routinen reduziert oder Menschen stärker überwacht?
 
 Der Merksatz lautet:
 
 **Arbeit hat Marktwert, Produktivität und Wirkung. Gute Steuerung verwechselt diese Größen nicht, sondern bringt sie transparent zusammen.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

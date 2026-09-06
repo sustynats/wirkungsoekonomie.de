@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v34-reverse-merit-order.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v34-reverse-merit-order.md curriculum=4.0 sanitized=true -->
 # V34 · Reverse Merit Order als Priorisierungslogik
 
 **lecture_id:** `WOEK-G-BASE-034`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Bei einer normalen Merit Order gewinnt oft das günstigste Angebot zuerst. Die WÖk dreht die Frage um: **Welche Option fällt wegen der schlechtesten materiellen Wirkung oder einer harten Grenze zuerst heraus?** Das ist die Reverse Merit Order. Sie hilft, kritische Schwachstellen sichtbar zu machen – aber nur bei vergleichbaren Optionen und transparenten Regeln. Sie ist kein automatisches Ranking für Parteien, Regierungen oder ganze Gesellschaften.
+Bei einer normalen Merit Order gewinnt oft das günstigste Angebot zuerst. Die WÖk dreht die Frage um: **Welche Option fällt wegen der schlechtesten materiellen Wirkung oder einer harten Grenze zuerst heraus?** Das ist die Reverse Merit Order. Sie hilft, kritische Schwachstellen sichtbar zu machen - aber nur bei vergleichbaren Optionen und transparenten Regeln. Sie ist kein automatisches Ranking für Parteien, Regierungen oder ganze Gesellschaften.
 
 ## Lernziele
 
@@ -33,7 +33,7 @@ Das kann gefährlich sein, wenn eine Option in einem kritischen Feld sehr schlec
 
 Reverse Merit Order fragt deshalb:
 
-> Welche Option hat im **relevanten schwächsten Feld** den größten materiellen Nachteil – und ist dieser Nachteil tolerierbar oder ausschließend?
+> Welche Option hat im **relevanten schwächsten Feld** den größten materiellen Nachteil - und ist dieser Nachteil tolerierbar oder ausschließend?
 
 Das ist eine Priorisierungslogik für robuste Entscheidungen.
 
@@ -238,4 +238,8 @@ Die Reverse Merit Order ist also keine Weltrangliste.
 
 Sie ist eine robuste Entscheidungsfrage:
 
-**Welche Schwäche kann ich nicht ignorieren – und kann ich die Option so verbessern, dass sie verschwindet?**
+**Welche Schwäche kann ich nicht ignorieren - und kann ich die Option so verbessern, dass sie verschwindet?**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

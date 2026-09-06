@@ -1,12 +1,20 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { budgetStage } from '../../scripts/news/lib.mjs';
-import { aiDeferralReason, partitionAiQueue } from '../../scripts/news/run.mjs';
+import { aiDeferralReason, partitionAiQueue, queuePriority } from '../../scripts/news/run.mjs';
 import { NEWS_AI_BUDGET_EUR, newsBudget } from '../../scripts/news/budget.mjs';
 
 const candidates = () => Array.from({ length: 28 }, (_, index) => ({ story_id: `waiting-${index}`, fresh: false,
   existing_story: { published: false, pending_reason: 'AI_BUDGET_BLOCKED', updated_at: `2026-09-05T${String(index % 24).padStart(2, '0')}:00:00Z` },
   preanalysis: { internal_relevance_score: 30 + index % 18 } }));
+
+test('persisted fresh flags decay and cannot outrank new first publications indefinitely', () => {
+  const now = '2026-09-06T18:00:00Z';
+  const old = { fresh:true, content_hash:'new', existing_story:{published:true,content_hash:'old'}, sources:[{published_at:'2026-09-06T10:00:00Z'}],preanalysis:{internal_relevance_score:50} };
+  const fresh = { ...old, existing_story:null, sources:[{published_at:now}] };
+  assert.ok(queuePriority(fresh,now) > queuePriority(old,now));
+  assert.equal(queuePriority(old,now),queuePriority({...old,fresh:false},now));
+});
 
 test('setup spend throttles volume, not eligibility: all 28 candidates progress across bounded runs', () => {
   for (const [spend, cap] of [[13.42, 8], [16.1, 4]]) {

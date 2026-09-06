@@ -1,11 +1,12 @@
 import fs from "node:fs";
+import { readerHtmlHasEditorialResidue } from "./reader-copy.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { validateAnalysis } from "./lib.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { isMerged, relatedStories } from "./living-files.mjs";
 import { buildCaseFiles, caseIntegrityErrors } from "./case-files.mjs";
-import { editorialAnalysisValidationErrors } from "./editorial-analysis.mjs";
+import { editorialAnalysisValidationErrors, editorialResearchSourceErrors } from "./editorial-analysis.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const readJson = (relative) => JSON.parse(fs.readFileSync(path.join(ROOT, relative), "utf8"));
@@ -65,6 +66,7 @@ const readerOrder = [...index.matchAll(/data-news-href="\.\/([^"]+\/)"/g)].map((
 const detailReaderHref = (href) => href.startsWith("analyse/") ? `../${href}` : `../${href}`;
 for (const story of activeStories) {
   const detail = fs.readFileSync(path.join(ROOT, "wirkungsticker", story.slug, "index.html"), "utf8");
+  if (readerHtmlHasEditorialResidue(detail)) fail(`NEWS_PUBLIC_EDITORIAL_RESIDUE:${story.story_id}`);
   const caseFile = grouping.caseByStory.get(story.story_id);
   const sameCaseIds = new Set(caseFile?.members.map((member) => member.story_id) || []);
   const expectedRelated = relatedStories(story, activeStories.filter((item) => !sameCaseIds.has(item.story_id)));
@@ -90,7 +92,7 @@ for (const story of activeStories) {
   if (sourceSummaryAt < 0 || !detail.includes("Worum geht es?") || !detail.includes("Originalquelle ansehen") || !(sourceSummaryAt < factCheckAt && factCheckAt < analysisAt && analysisAt < consequenceAt)) fail(`NEWS_SOURCE_ANALYSIS_ORDER_INVALID:${story.story_id}`);
   const mediaAt = detail.indexOf('id="medienwirkung"');
   if (story.analysis.media_impact?.relevant) {
-    if (mediaAt < consequenceAt || !detail.includes("Medien- &amp; Sprachwirkung") || !detail.includes("Belegter Sachverhalt") || !detail.includes("Mögliches Resonanzrisiko") || !detail.includes('href="../../begriffe/frame/"') || !detail.includes('href="../../begriffe/wirkungspotenzial/"')) fail(`NEWS_MEDIA_IMPACT_UI_INVALID:${story.story_id}`);
+    if (mediaAt < consequenceAt || !detail.includes("Medien- &amp; Sprachwirkung") || !detail.includes("Belegter Sachverhalt") || !detail.includes("Mögliches Resonanzrisiko") || !detail.includes('href="../../begriffe/frame/"') || (!story.analysis.media_impact.observed_impact?.present && !detail.includes('href="../../begriffe/wirkungspotenzial/"'))) fail(`NEWS_MEDIA_IMPACT_UI_INVALID:${story.story_id}`);
   } else if (mediaAt >= 0 || detail.includes('href="#medienwirkung"')) fail(`NEWS_MEDIA_IMPACT_UI_UNTRIGGERED:${story.story_id}`);
   const renderedSummary = detail.match(/news-story-summary[\s\S]*?<p class="news-analysis-copy">([\s\S]*?)<\/p>/)?.[1]
     ?.replace(/<[^>]*>/g, " ")
@@ -101,7 +103,7 @@ for (const story of activeStories) {
   if (renderedSummary.length > 1200) fail(`NEWS_DETAIL_SUMMARY_TOO_LONG:${story.story_id}:${renderedSummary.length}`);
   const truthAt = detail.indexOf("Gesicherter Ausgangspunkt");
   const uncertaintyAt = detail.indexOf("Was dieser Stand nicht belegt");
-  if (!detail.includes("Wahrheit zuerst:") || truthAt < 0 || uncertaintyAt < 0 || truthAt > uncertaintyAt) fail(`NEWS_TRUTH_FIRST_INVALID:${story.story_id}`);
+  if (truthAt < factCheckAt || uncertaintyAt < truthAt || uncertaintyAt > analysisAt) fail(`NEWS_TRUTH_FIRST_INVALID:${story.story_id}`);
   if (!detail.includes("Ausgangsmeldung vom") || !detail.includes("WÖk-Einordnung:")) fail(`NEWS_SOURCE_DATE_MISSING:${story.story_id}`);
   if (!detail.includes("Erste Ordnung – unmittelbar") || !detail.includes("Risiken, Gegenläufe und Prüfgrenzen")) fail(`NEWS_CONSEQUENCE_PROSE_INVALID:${story.story_id}`);
 }
@@ -128,10 +130,16 @@ for (const analysis of editorialStore.analyses.filter((item) => item.status === 
   const errors = editorialAnalysisValidationErrors(analysis, story, { candidate: true, evidence_gate: { passed: Boolean(analysis.evidence_gate?.passed) } });
   if (errors.length) fail(`EDITORIAL_ANALYSIS_QUALITY_INVALID:${analysis.analysis_id}:${errors.join(",")}`);
   const sourceIds = new Set((analysis.source_snapshot || []).map((source) => source.source_id));
+  for (const source of (analysis.source_snapshot || []).filter(source => source.editorial_review)) {
+    const researchErrors = editorialResearchSourceErrors(source, story.story_id);
+    if (researchErrors.length) fail(`EDITORIAL_RESEARCH_INVALID:${analysis.analysis_id}:${researchErrors.join(",")}`);
+  }
+  if ((analysis.sections || []).some(section => (section.source_ids || []).some(id => !sourceIds.has(id)))) fail(`EDITORIAL_SECTION_SOURCE_INVALID:${analysis.analysis_id}`);
   if (sourceIds.size < 2 || (analysis.claim_ledger || []).some((claim) => (claim.source_ids || []).some((sourceId) => !sourceIds.has(sourceId)))) fail(`EDITORIAL_SOURCE_LEDGER_INVALID:${analysis.analysis_id}`);
   const analysisFile = path.join(ROOT, "wirkungsticker/analyse", analysis.slug, "index.html");
   if (!fs.existsSync(analysisFile)) fail(`EDITORIAL_PAGE_MISSING:${analysis.analysis_id}`);
   const html = fs.readFileSync(analysisFile, "utf8");
+  if (readerHtmlHasEditorialResidue(html)) fail(`EDITORIAL_PAGE_EDITORIAL_RESIDUE:${analysis.analysis_id}`);
   if (!html.includes("WÖk-Analyse") || !html.includes("Natalie Weber") || !html.includes("natalie-weber-woek-analyse.jpg") || !html.includes(analysis.transparency_note) || !html.includes(`wirkungsticker/analyse/${analysis.slug}/`) || !html.includes(`../../${story.slug}/`) || !html.includes('"@type":"Article"')) fail(`EDITORIAL_PAGE_INVALID:${analysis.analysis_id}`);
   const readerIndex = readerOrder.indexOf(`analyse/${analysis.slug}/`);
   const nextHref = readerOrder[readerIndex + 1];

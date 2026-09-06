@@ -13,7 +13,7 @@ function scoreTone(score) {
 }
 
 function scoreLabel(score) {
-  return Number.isFinite(Number(score)) ? Number(score).toFixed(1).replace(".", ",") : "–";
+  return Number.isFinite(Number(score)) ? Number(score).toFixed(1).replace(".", ",") : "-";
 }
 
 function scoreWord(score) {
@@ -84,7 +84,7 @@ function renderList() {
           <b>${item.name}</b>
           <small>${item.type} · ${item.sector}</small>
         </span>
-        <em class="${weak ? scoreTone(weak.value) : "tone-mid"}" title="Schwächstes Wirkungsfeld nach Reverse Merit Order">${weak ? scoreLabel(weak.value) : "–"}</em>
+        <em class="${weak ? scoreTone(weak.value) : "tone-mid"}" title="Schwächstes Wirkungsfeld nach Reverse Merit Order">${weak ? scoreLabel(weak.value) : "-"}</em>
       </button>
     `;
   }).join("") || `<p class="formula-note">Für diese Auswahl gibt es kein Beispielprofil.</p>`;
@@ -138,7 +138,7 @@ function renderDashboard() {
       `).join("")}
       <div class="core-field">
         <span>Datenqualität</span>
-        <strong class="${profile.dataQuality === null ? "tone-mid" : scoreTone(profile.dataQuality)}">${profile.dataQuality === null ? "–" : scoreLabel(profile.dataQuality)}</strong>
+        <strong class="${profile.dataQuality === null ? "tone-mid" : scoreTone(profile.dataQuality)}">${profile.dataQuality === null ? "-" : scoreLabel(profile.dataQuality)}</strong>
         <div class="score-axis"><i style="left:${profile.dataQuality === null ? 50 : dimensionWidth(profile.dataQuality)}%"></i></div>
         <small>Prüfbedingung, keine Wirkungsdimension</small>
       </div>
@@ -243,7 +243,7 @@ function renderScorecard(item) {
   return `
     <h3>Wirkungsprofil mit RMO-Gate</h3>
     <div class="pass-score-summary">
-      <span class="score-pill ${weak ? scoreTone(weak.value) : "tone-mid"}">${weak ? `${scoreLabel(weak.value)} / 3` : "–"}</span>
+      <span class="score-pill ${weak ? scoreTone(weak.value) : "tone-mid"}">${weak ? `${scoreLabel(weak.value)} / 3` : "-"}</span>
       <strong>${weak ? `Schwächstes Feld: ${weak.label}` : "Kernfelder unvollständig"}</strong>
     </div>
     <div class="impact-bars">${renderBars(profile.fields.map(({ label, value }) => [label, value]))}</div>
@@ -310,10 +310,10 @@ function renderDetail() {
   const weak = profile.weakest;
 
   dashboardRoot.querySelector("[data-kpi-gate]").textContent = "geschlossen";
-  dashboardRoot.querySelector("[data-kpi-weakest]").textContent = weak ? weak.label : "–";
+  dashboardRoot.querySelector("[data-kpi-weakest]").textContent = weak ? weak.label : "-";
   dashboardRoot.querySelector("[data-kpi-data]").textContent = "Beispieldaten";
   const scoreEl = dashboardRoot.querySelector("[data-kpi-score]");
-  scoreEl.textContent = weak ? scoreLabel(weak.value) : "–";
+  scoreEl.textContent = weak ? scoreLabel(weak.value) : "-";
   scoreEl.className = `score-pill ${weak ? scoreTone(weak.value) : "tone-mid"}`;
 
   dashboardRoot.querySelector("[data-pass-overview]").innerHTML = renderOverview(item);
@@ -328,11 +328,11 @@ function renderDetail() {
 
   dashboardRoot.querySelector("[data-source-table]").innerHTML = (item.indicators || []).map((indicator) => `
     <tr>
-      <td>${indicator.wokId || "–"}</td>
-      <td>${indicator.label || "–"}</td>
-      <td>${indicator.value || "–"}</td>
+      <td>${indicator.wokId || "-"}</td>
+      <td>${indicator.label || "-"}</td>
+      <td>${indicator.value || "-"}</td>
       <td><span class="score-pill ${scoreTone(Number(indicator.score))}">${scoreLabel(indicator.score)}</span></td>
-      <td>${indicator.source || "–"}</td>
+      <td>${indicator.source || "-"}</td>
       <td>${indicator.assessment || "Beispieldaten; nicht unabhängig verifiziert"}</td>
     </tr>
   `).join("");

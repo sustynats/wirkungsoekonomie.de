@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v101-praxisprojekt-scorecard-und-optionsvergleich.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v101-praxisprojekt-scorecard-und-optionsvergleich.md curriculum=4.0 sanitized=true -->
 # V101 · Praxisprojekt: Scorecard, Reverse Merit Order und Optionsvergleich anwenden
 
 **lecture_id:** `WOEK-G-BASE-101`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Jetzt vergleichst du **echte Optionen**. Nicht nur „Maßnahme vs. nichts“, sondern mindestens zwei realistische Wege zum Ziel. Jede Option bekommt dasselbe Wirkungsprofil: gleiche State Variables, gleiche Referenzen, getrennte Evidenz und Schutzgrenzen. Erst danach darf – wenn fachlich sinnvoll – Reverse Merit Order oder eine begründete Teilaggregation helfen. Wenn die Daten keine robuste Rangfolge tragen, ist `NO_ROBUST_RANKING` die richtige Antwort.
+Jetzt vergleichst du **echte Optionen**. Nicht nur „Maßnahme vs. nichts“, sondern mindestens zwei realistische Wege zum Ziel. Jede Option bekommt dasselbe Wirkungsprofil: gleiche State Variables, gleiche Referenzen, getrennte Evidenz und Schutzgrenzen. Erst danach darf - wenn fachlich sinnvoll - Reverse Merit Order oder eine begründete Teilaggregation helfen. Wenn die Daten keine robuste Rangfolge tragen, ist `NO_ROBUST_RANKING` die richtige Antwort.
 
 ## Lernziele
 
@@ -49,7 +49,7 @@ Nicht:
 
 Sondern:
 
-> Gleiche Problemdefinition, gleicher Zielzustand, gleiche Schutzgrenzen, gleiche State Variables – soweit sinnvoll.
+> Gleiche Problemdefinition, gleicher Zielzustand, gleiche Schutzgrenzen, gleiche State Variables - soweit sinnvoll.
 
 Damit wird Vergleich fair.
 
@@ -81,7 +81,7 @@ Eine Option mit ausgelöster nichtkompensierbarer Grenze kann aus dem zulässige
 
 Offene Rechts-/Schutzfrage:
 
-`BOUNDARY_OPEN` – nicht automatisch „minus Punkte“.
+`BOUNDARY_OPEN` - nicht automatisch „minus Punkte“.
 
 ## 5. Reverse Merit Order
 
@@ -116,7 +116,7 @@ Wenn nein:
 
 ## 7. Dominanz
 
-Option A dominiert B nur, wenn sie in relevanten Dimensionen mindestens gleich gut und in mindestens einer materiell besser ist – unter tragfähiger Evidenz und ohne neue Boundary.
+Option A dominiert B nur, wenn sie in relevanten Dimensionen mindestens gleich gut und in mindestens einer materiell besser ist - unter tragfähiger Evidenz und ohne neue Boundary.
 
 In der Praxis ist vollständige Dominanz selten.
 
@@ -153,7 +153,7 @@ Vergleich:
 - langfristige Resilienz,
 - Wasser/Flächenwirkung.
 
-Vielleicht ist D robust – vielleicht je Quartier eine andere Option.
+Vielleicht ist D robust - vielleicht je Quartier eine andere Option.
 
 Auch `SEGMENTED_RECOMMENDATION` ist zulässig.
 
@@ -266,3 +266,7 @@ Dann lautet das Ergebnis eben: keine robuste Präferenz.
 Der Merksatz lautet:
 
 **Gute Wirkungsentscheidung sucht nicht die schönste Option. Sie sucht die Option, die gegenüber realistischen Alternativen unter mehreren plausiblen Welten robust bleibt.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

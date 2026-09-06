@@ -1,9 +1,9 @@
 # Technical Capability Map
 
-> **Status: OFFEN — Codex-Auftrag.**
+> **Status: OFFEN - Codex-Auftrag.**
 > Diese Datei gehört laut Bootstrap-Prompt (Abschnitt 40) in die Codex-Lane.
 > Claude hat die Wissensbasis (Registries, Capabilities, Quellen) aus Repo-Inventur erstellt;
-> Codex verifiziert hier, was **tatsächlich implementiert** ist — im Unterschied zu **nur dokumentiert**.
+> Codex verifiziert hier, was **tatsächlich implementiert** ist - im Unterschied zu **nur dokumentiert**.
 
 ## Auftrag an Codex
 
@@ -12,7 +12,7 @@ Für jede Capability aus `TOOLS.md`, `INTEGRATIONS.md`, `WOEK_AI_CAPABILITIES.md
 1. Implementierungszustand präzise einordnen:
    `CONTENT_ONLY` | `FRONTEND_ONLY` | `BACKEND_AVAILABLE` | `API_AVAILABLE` | `FULLY_REUSABLE`
 2. Repository-Pfade, Services, Deployment-Ziel und Auth-Mechanik bestätigen oder korrigieren.
-3. `last_verified` mit Datum setzen (echter Funktionstest, nicht nur Code-Lektüre — insbesondere Oracle-Endpoints, Supabase-Funktionen, Zertifikats-API).
+3. `last_verified` mit Datum setzen (echter Funktionstest, nicht nur Code-Lektüre - insbesondere Oracle-Endpoints, Supabase-Funktionen, Zertifikats-API).
 4. Abweichungen von Claudes Einordnung in `CROSSCHECK.md` dokumentieren, nicht stillschweigend überschreiben.
 
 ## Erwartete Struktur (von Codex zu füllen)

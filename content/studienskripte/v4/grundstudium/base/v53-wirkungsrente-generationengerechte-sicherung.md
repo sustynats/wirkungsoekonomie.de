@@ -1,5 +1,5 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v53-wirkungsrente-generationengerechte-sicherung.md curriculum=4.0 sanitized=true -->
-# V53 · Wirkungsrente und generationengerechte Sicherung – WÖk-Policy-Modell, kein bestehender Rentenanspruch
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v53-wirkungsrente-generationengerechte-sicherung.md curriculum=4.0 sanitized=true -->
+# V53 · Wirkungsrente und generationengerechte Sicherung - WÖk-Policy-Modell, kein bestehender Rentenanspruch
 
 **lecture_id:** `WOEK-G-BASE-053`  
 **display_code:** `V53`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Die gesetzliche Rente basiert heute vor allem auf Beitragszeiten, versichertem Einkommen und gesetzlich geregelten Anrechnungs-/Ausgleichstatbeständen. Die WÖk-Idee einer **Wirkungsrente** fragt zusätzlich, ob gesellschaftlich relevante, heute schwach vergütete Leistungen – etwa Pflege- und Sorgearbeit – in Alterssicherung besser berücksichtigt werden könnten. Das ist ein Reformmodell, kein bestehender Anspruch. Und es darf niemals bedeuten: „Wer als Mensch mehr positive Wirkung hat, bekommt mehr Rente.“
+Die gesetzliche Rente basiert heute vor allem auf Beitragszeiten, versichertem Einkommen und gesetzlich geregelten Anrechnungs-/Ausgleichstatbeständen. Die WÖk-Idee einer **Wirkungsrente** fragt zusätzlich, ob gesellschaftlich relevante, heute schwach vergütete Leistungen - etwa Pflege- und Sorgearbeit - in Alterssicherung besser berücksichtigt werden könnten. Das ist ein Reformmodell, kein bestehender Anspruch. Und es darf niemals bedeuten: „Wer als Mensch mehr positive Wirkung hat, bekommt mehr Rente.“
 
 ## Lernziele
 
@@ -39,7 +39,7 @@ Nicht:
 
 Sondern:
 
-> „Werden bestimmte gesellschaftlich relevante Leistungen im Alterssicherungssystem angemessen berücksichtigt – und welche Reformoption hätte welche Wirkung?“
+> „Werden bestimmte gesellschaftlich relevante Leistungen im Alterssicherungssystem angemessen berücksichtigt - und welche Reformoption hätte welche Wirkung?“
 
 Das ist eine institutionelle Policy-Frage.
 
@@ -70,7 +70,7 @@ Prüfen:
 - Demografie,
 - Produktivität.
 
-`GENERATIONAL_EFFECT != ONLY_FISCAL_BALANCE` – auch Care-Verteilung, Erwerbschancen und Armutsrisiko zählen.
+`GENERATIONAL_EFFECT != ONLY_FISCAL_BALANCE` - auch Care-Verteilung, Erwerbschancen und Armutsrisiko zählen.
 
 ## 5. Finanzierung
 
@@ -214,8 +214,12 @@ Die WÖk-Frage ist deshalb konkreter: Werden bestimmte gesellschaftlich wichtige
 
 Dann schauen wir auf Finanzierung, Generationen, Care-Verteilung und Arbeitsmarkt.
 
-Mehr Anerkennung kann Altersarmut senken – aber vielleicht auch traditionelle Rollen stabilisieren, wenn Betreuung und Erwerbschancen nicht mitgedacht werden.
+Mehr Anerkennung kann Altersarmut senken - aber vielleicht auch traditionelle Rollen stabilisieren, wenn Betreuung und Erwerbschancen nicht mitgedacht werden.
 
 Der Merksatz lautet:
 
 **Wirkungsrente bedeutet nicht, Menschen zu bewerten. Sie bedeutet, Alterssicherung daraufhin zu prüfen, ob gesellschaftlich relevante Leistungen und Lasten fairer berücksichtigt werden können.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

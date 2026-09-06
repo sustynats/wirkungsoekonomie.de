@@ -58,7 +58,7 @@ Die öffentliche Demo verwendet zur Vereinfachung r = r_K. In einer Prüfung dü
 
 Die Kausalfaktoren begrenzen die beanspruchten Nutzen. S_t wird im Grundmodell nicht mit dem Nutzen-Kausalfaktor reduziert, weil es als bereits innerhalb der Bilanzgrenze angesetzter Schaden behandelt wird. Eine Reduktion eines Schadens ist nur zulässig, wenn für diesen Schaden eine eigene Gegenfaktik und Zurechnung belegt sind.
 
-Die konservative Szenario-Untergrenze PV_N^L ist ebenfalls genau bestimmt: Der Abschlag u_t wird pro Jahr nur auf den bereits kausal begrenzten Nutzen angewandt, vor der Abzinsung. Schäden bleiben unverändert im Abzug. Ein kleines Rechenbild: Bei 100 EUR beanspruchtem Nutzen, 60 EUR Schaden und u = 20 % lautet die Untergrenze 100 × 0,8 − 60 = 20 EUR; sie lautet ausdrücklich nicht (100 − 60) × 0,8 = 32 EUR. So wird nicht versehentlich auch ein Schaden kleiner gerechnet. PV_N^L ist eine dokumentierte Szenarioannahme, keine Konfidenzgrenze und kein Ersatz für eine Sensitivitätsanalyse mit mehreren plausiblen Parametern.
+Die konservative Szenario-Untergrenze PV_N^L ist ebenfalls genau bestimmt: Der Abschlag u_t wird pro Jahr nur auf den bereits kausal begrenzten Nutzen angewandt, vor der Abzinsung. Schäden bleiben unverändert im Abzug. Ein kleines Rechenbild: Bei 100 EUR beanspruchtem Nutzen, 60 EUR Schaden und u = 20 % lautet die Untergrenze 100 × 0,8 - 60 = 20 EUR; sie lautet ausdrücklich nicht (100 - 60) × 0,8 = 32 EUR. So wird nicht versehentlich auch ein Schaden kleiner gerechnet. PV_N^L ist eine dokumentierte Szenarioannahme, keine Konfidenzgrenze und kein Ersatz für eine Sensitivitätsanalyse mit mehreren plausiblen Parametern.
 
 ## Keine freie Multiplikatorlogik
 

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v06-zukunftsfaehigkeit-risiko-resilienz.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v06-zukunftsfaehigkeit-risiko-resilienz.md curriculum=4.0 sanitized=true -->
 # V06 · Zukunftsfähigkeit, Risiko und Resilienz
 
 **lecture_id:** `WOEK-G-BASE-006`  
@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein System kann heute effizient aussehen und morgen am ersten Schock scheitern. Zukunftsfähigkeit fragt deshalb nicht nur nach dem aktuellen Durchschnittsergebnis, sondern auch: **Was passiert unter Stress?** Resilienz meint die Fähigkeit, kritische Funktionen trotz Störungen zu erhalten, sich anzupassen und zu lernen – ohne Schäden einfach auf andere Gruppen oder die Zukunft zu verlagern.
+Ein System kann heute effizient aussehen und morgen am ersten Schock scheitern. Zukunftsfähigkeit fragt deshalb nicht nur nach dem aktuellen Durchschnittsergebnis, sondern auch: **Was passiert unter Stress?** Resilienz meint die Fähigkeit, kritische Funktionen trotz Störungen zu erhalten, sich anzupassen und zu lernen - ohne Schäden einfach auf andere Gruppen oder die Zukunft zu verlagern.
 
 ## Lernziele
 
@@ -28,7 +28,7 @@ Nach dieser Vorlesung kannst du:
 
 ## 1. Risiko ist nicht Resilienz
 
-**Risiko** beschreibt mögliche unerwünschte Ereignisse/Zustände unter Unsicherheit – häufig mit Wahrscheinlichkeit, Exposition und Schadensschwere.
+**Risiko** beschreibt mögliche unerwünschte Ereignisse/Zustände unter Unsicherheit - häufig mit Wahrscheinlichkeit, Exposition und Schadensschwere.
 
 **Resilienz** beschreibt Eigenschaften eines Systems, die bestimmen, wie es mit Störungen umgeht.
 
@@ -120,13 +120,13 @@ Resilienz durch Externalisierung ist keine vollständige Resilienzbewertung.
 
 ## 8. Typische Fehlinterpretationen
 
-**„Resilienz = maximale Reserve.“** – Falsch.
+**„Resilienz = maximale Reserve.“** - Falsch.
 
-**„Effizienz und Resilienz widersprechen sich immer.“** – Falsch; es gibt Trade-offs, aber auch Synergien.
+**„Effizienz und Resilienz widersprechen sich immer.“** - Falsch; es gibt Trade-offs, aber auch Synergien.
 
-**„Ein resilienter Staat braucht nur mehr Geld.“** – Zu kurz; Institutionen, Personal, Daten, Vielfalt und Lernfähigkeit können ebenso entscheidend sein.
+**„Ein resilienter Staat braucht nur mehr Geld.“** - Zu kurz; Institutionen, Personal, Daten, Vielfalt und Lernfähigkeit können ebenso entscheidend sein.
 
-**„Resilienz rechtfertigt jede Einschränkung.“** – Falsch; Rechte, Verhältnismäßigkeit und Schutzgrenzen bleiben eigenständig.
+**„Resilienz rechtfertigt jede Einschränkung.“** - Falsch; Rechte, Verhältnismäßigkeit und Schutzgrenzen bleiben eigenständig.
 
 ## 9. WÖk-Abgrenzung
 
@@ -140,7 +140,7 @@ WÖk hat Resilienz nicht erfunden. Sie übernimmt etablierte Risiko-/Resilienzko
 
 ## 11. Transferaufgabe
 
-Wähle ein System – Strom, Wasser, Pflege, Lieferkette oder digitale Verwaltung. Formuliere drei Stressszenarien und prüfe Robustheit, Redundanz, Diversität, Anpassungsfähigkeit, Verteilung und Reversibilität.
+Wähle ein System - Strom, Wasser, Pflege, Lieferkette oder digitale Verwaltung. Formuliere drei Stressszenarien und prüfe Robustheit, Redundanz, Diversität, Anpassungsfähigkeit, Verteilung und Reversibilität.
 
 ## 13. Prüfungsrelevanz
 
@@ -154,4 +154,8 @@ Dafür schauen wir auf vier Dinge. Robustheit: Hält das System Belastung aus? R
 
 Aber auch hier vermeiden wir einfache Parolen. Mehr Reserve ist nicht immer besser. Autarkie ist nicht automatisch resilient. Und ein System ist nicht gut, wenn es nur deshalb stabil bleibt, weil eine kleine Gruppe den gesamten Schaden trägt.
 
-Die WÖk verbindet Resilienz deshalb mit Wirkpfad, Verteilung, Schutzgrenzen und späterem Reality Check. Wir testen nicht nur, ob eine Option im Durchschnitt funktioniert, sondern auch, was sie unter Stress tut – und wie leicht wir korrigieren können, wenn unsere Annahmen falsch waren.
+Die WÖk verbindet Resilienz deshalb mit Wirkpfad, Verteilung, Schutzgrenzen und späterem Reality Check. Wir testen nicht nur, ob eine Option im Durchschnitt funktioniert, sondern auch, was sie unter Stress tut - und wie leicht wir korrigieren können, wenn unsere Annahmen falsch waren.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

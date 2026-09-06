@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v72-civic-shield-resilienzdesign.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v72-civic-shield-resilienzdesign.md curriculum=4.0 sanitized=true -->
 # V72 · Civic Shield: Resilienzdesign für Öffentlichkeit, Medien und digitale Räume
 
 **lecture_id:** `WOEK-G-BASE-072`  
@@ -36,7 +36,7 @@ Civic Shield fragt deshalb:
 
 > Welche **institutionellen und technischen Kapazitäten** machen diese Funktionen robuster?
 
-Das ist Resilienzdesign – kein Zensurmodell.
+Das ist Resilienzdesign - kein Zensurmodell.
 
 ## 2. Bestehende Architektur zuerst
 
@@ -62,13 +62,13 @@ WÖk-Civic-Shield darf diese Instrumente nicht vereinnahmen oder als eigene Erfi
 
 Ein mögliches Design besteht aus sieben Funktionsschichten:
 
-1. **Source Integrity** – Primärquellen, Archive, Provenienz, Versionierung.
-2. **Plurality** – Medien-/Informationsvielfalt und Zugang.
-3. **Transparency** – Eigentum, politische Werbung, institutionelle Entscheidungsgrundlagen, Plattformregeln.
-4. **Agency** – digitale Selbstbestimmung, Nutzerkontrollen, Wahlmöglichkeiten.
-5. **Safety** – Schutz vor Einschüchterung, Gewalt und koordinierten Angriffen.
-6. **Literacy/Research** – Medienkompetenz, unabhängige Forschung, Zugang für Forschende.
-7. **Feedback** – Frühwarnung, Evaluation, Korrektur und öffentliche Rechenschaft.
+1. **Source Integrity** - Primärquellen, Archive, Provenienz, Versionierung.
+2. **Plurality** - Medien-/Informationsvielfalt und Zugang.
+3. **Transparency** - Eigentum, politische Werbung, institutionelle Entscheidungsgrundlagen, Plattformregeln.
+4. **Agency** - digitale Selbstbestimmung, Nutzerkontrollen, Wahlmöglichkeiten.
+5. **Safety** - Schutz vor Einschüchterung, Gewalt und koordinierten Angriffen.
+6. **Literacy/Research** - Medienkompetenz, unabhängige Forschung, Zugang für Forschende.
+7. **Feedback** - Frühwarnung, Evaluation, Korrektur und öffentliche Rechenschaft.
 
 Keine Schicht entscheidet, welche politische Meinung „richtig“ ist.
 
@@ -217,7 +217,7 @@ Falsch.
 
 Civic Shield ist eine WÖk-eigene **Integrations-/Designhypothese**. Seine Einzelbausteine stammen aus bestehender Rechts-, Medien-, Sicherheits-, Plattform- und Demokratieforschung.
 
-Sein Mehrwert muss daran gemessen werden, ob es bessere, grundrechtskompatible und evaluierbare Kombinationen erzeugt – nicht an einem neuen Namen.
+Sein Mehrwert muss daran gemessen werden, ob es bessere, grundrechtskompatible und evaluierbare Kombinationen erzeugt - nicht an einem neuen Namen.
 
 ## 14. Quellen
 
@@ -271,7 +271,7 @@ Und dann gibt es Frühwarnung.
 
 Aber ein Alarm darf niemals lauten: Diese Meinung wird populärer.
 
-Er muss an konkrete Funktionsrisiken gebunden sein – zum Beispiel koordinierte Einschüchterung oder massive Deepfake-Manipulation.
+Er muss an konkrete Funktionsrisiken gebunden sein - zum Beispiel koordinierte Einschüchterung oder massive Deepfake-Manipulation.
 
 Und besonders wichtig: Demokratieschutz kann selbst Nebenwirkungen haben.
 
@@ -280,3 +280,7 @@ Zu harte Maßnahmen können legitime Rede abschrecken. Deshalb gelten Grundrecht
 Der Merksatz lautet:
 
 **Eine Demokratie wird nicht resilient, indem sie Streit abschafft. Sie wird resilient, indem sie Streit, Information und Korrektur auch unter Angriff funktionsfähig hält.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

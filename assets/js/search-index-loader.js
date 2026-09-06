@@ -4,14 +4,42 @@ const pending = new Map();
 
 async function checkedFetch(url, cache = 'default') {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 30000);
+  // A progressing download may take longer than 30 seconds on mobile links.
+  // Keep a short stall deadline and a separate bound for the whole request.
+  let idleTimeout;
+  const resetIdleTimeout = () => {
+    clearTimeout(idleTimeout);
+    idleTimeout = setTimeout(() => controller.abort(), 30000);
+  };
+  const totalTimeout = setTimeout(() => controller.abort(), 180000);
+  resetIdleTimeout();
   try {
     const response = await fetch(url, { cache, signal: controller.signal });
     if (!response.ok) throw new Error(`Search data: HTTP ${response.status}`);
-    // Consume inside the timeout: receiving headers is not a completed download.
-    return await response.arrayBuffer();
+    if (!response.body) return new ArrayBuffer(0);
+    const reader = response.body.getReader();
+    const chunks = [];
+    let length = 0;
+    resetIdleTimeout();
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      if (value.byteLength) {
+        chunks.push(value);
+        length += value.byteLength;
+        resetIdleTimeout();
+      }
+    }
+    const bytes = new Uint8Array(length);
+    let offset = 0;
+    for (const chunk of chunks) {
+      bytes.set(chunk, offset);
+      offset += chunk.byteLength;
+    }
+    return bytes.buffer;
   } finally {
-    clearTimeout(timeout);
+    clearTimeout(idleTimeout);
+    clearTimeout(totalTimeout);
   }
 }
 
@@ -23,7 +51,8 @@ export function loadBrowserSearchIndex(baseUrl) {
     let manifest;
     try {
       manifest = JSON.parse(new TextDecoder().decode(await checkedFetch(new URL('browser-index-manifest.json', base), 'no-cache')));
-    } catch {
+    } catch (error) {
+      if (error?.name === 'AbortError') throw error;
       // Compatibility for a locally served source checkout or an older release.
       return JSON.parse(new TextDecoder().decode(await checkedFetch(new URL('search-index.json', base))));
     }
@@ -33,7 +62,9 @@ export function loadBrowserSearchIndex(baseUrl) {
       try {
         const compressed = await checkedFetch(new URL(manifest.gzip, base));
         bytes = await new Response(new Blob([compressed]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
-      } catch {
+      } catch (error) {
+        // A stalled connection will not improve by downloading a larger file.
+        if (error?.name === 'AbortError') throw error;
         bytes = await checkedFetch(new URL(`${manifest.json}?v=${manifest.version}`, base));
       }
     } else bytes = await checkedFetch(new URL(`${manifest.json}?v=${manifest.version}`, base));

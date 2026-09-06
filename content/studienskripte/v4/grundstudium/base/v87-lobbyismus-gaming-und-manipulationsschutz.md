@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v87-lobbyismus-gaming-und-manipulationsschutz.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v87-lobbyismus-gaming-und-manipulationsschutz.md curriculum=4.0 sanitized=true -->
 # V87 · Schutz vor Lobbyismus, Score-Gaming und Wirkungsmanipulation
 
 **lecture_id:** `WOEK-G-BASE-087`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Sobald ein Score Geld, Reputation oder Regulierung beeinflusst, lernen Menschen, den Score zu optimieren. Das ist nicht automatisch Betrug – es ist ein normaler Anreizeffekt. Problematisch wird es, wenn **die Kennzahl besser wird, ohne dass der reale Zustand besser wird**. WÖk muss deshalb Goodhart-Risiken, Lobbyeinfluss, selektive Daten, Benchmark-Manipulation und Modell-Gaming von Anfang an mitdenken.
+Sobald ein Score Geld, Reputation oder Regulierung beeinflusst, lernen Menschen, den Score zu optimieren. Das ist nicht automatisch Betrug - es ist ein normaler Anreizeffekt. Problematisch wird es, wenn **die Kennzahl besser wird, ohne dass der reale Zustand besser wird**. WÖk muss deshalb Goodhart-Risiken, Lobbyeinfluss, selektive Daten, Benchmark-Manipulation und Modell-Gaming von Anfang an mitdenken.
 
 ## Lernziele
 
@@ -98,7 +98,7 @@ Mögliche Gegenmittel:
 - Datenprovenienz,
 - Whistleblower-/Beschwerdekanäle.
 
-Nicht jede Selbstauskunft ist wertlos – aber ihre Anreizlage muss bekannt sein.
+Nicht jede Selbstauskunft ist wertlos - aber ihre Anreizlage muss bekannt sein.
 
 ## 5. Benchmark-Governance
 
@@ -282,3 +282,7 @@ Wir versuchen selbst, das System zu knacken.
 Nicht weil wir allen misstrauen.
 
 Sondern weil gute Anreize erst dann robust sind, wenn sie auch unter strategischem Verhalten noch echte Wirkung belohnen.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

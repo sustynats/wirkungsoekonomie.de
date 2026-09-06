@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md curriculum=4.0 sanitized=true -->
 # V05 · Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung
 
 **lecture_id:** `WOEK-G-BASE-005`  
@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Eine Organisation kann sehr beschäftigt sein und trotzdem wenig vom gewünschten Zustand verändern. Um solche Fälle zu besprechen, nutzt WÖk vier **didaktische** Begriffe: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung. Sie sind kein amtlicher Standard und keine mathematisch exakten Klassen – sie helfen, Aktivität, nachgewiesenen Outcome, unbeachtete Folgen und vermeidbare Schäden auseinanderzuhalten.
+Eine Organisation kann sehr beschäftigt sein und trotzdem wenig vom gewünschten Zustand verändern. Um solche Fälle zu besprechen, nutzt WÖk vier **didaktische** Begriffe: Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung. Sie sind kein amtlicher Standard und keine mathematisch exakten Klassen - sie helfen, Aktivität, nachgewiesenen Outcome, unbeachtete Folgen und vermeidbare Schäden auseinanderzuhalten.
 
 ## Lernziele
 
@@ -28,7 +28,7 @@ Nach dieser Vorlesung kannst du:
 
 ## 1. Wirkleistung
 
-**Wirkleistung** nennen wir eine Aktivität, bei der ein relevanter Beitrag zu einer gewünschten Zustandsänderung fachlich plausibel und – soweit möglich – beobachtbar ist.
+**Wirkleistung** nennen wir eine Aktivität, bei der ein relevanter Beitrag zu einer gewünschten Zustandsänderung fachlich plausibel und - soweit möglich - beobachtbar ist.
 
 Wirkleistung braucht:
 
@@ -94,13 +94,13 @@ Sie sind Fragen an die Analyse:
 
 ## 8. Typische Fehlinterpretationen
 
-**„Keine Daten = Scheinleistung.“** – Falsch. Zunächst Datenlücke.
+**„Keine Daten = Scheinleistung.“** - Falsch. Zunächst Datenlücke.
 
-**„Blindleistung heißt, der Staat misst nichts.“** – Falsch.
+**„Blindleistung heißt, der Staat misst nichts.“** - Falsch.
 
-**„Verlustleistung ist alles, was Geld kostet.“** – Falsch.
+**„Verlustleistung ist alles, was Geld kostet.“** - Falsch.
 
-**„Die vier Kategorien ergeben automatisch einen Score.“** – Falsch.
+**„Die vier Kategorien ergeben automatisch einen Score.“** - Falsch.
 
 ## 9. WÖk-Abgrenzung
 
@@ -108,7 +108,7 @@ Die Begriffe sind eine WÖk-eigene didaktische Heuristik. Sie ersetzen weder Kos
 
 ## 10. Quellen
 
-- GGO §§43–44, Folgen/Alternativen/Überprüfung: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44, Folgen/Alternativen/Überprüfung: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - OECD, Policy Evaluation: https://www.oecd.org/gov/regulatory-policy/
 - WÖk Referenz: https://wirkungsoekonomie.de/referenz/
 
@@ -127,3 +127,7 @@ Manchmal sieht eine Organisation unglaublich fleißig aus: viele Projekte, viele
 Dafür nutzt die Wirkungsökonomie vier Bilder. Wirkleistung ist der Teil, der tatsächlich zum relevanten Outcome beiträgt. Scheinleistung ist Erfolg, der stärker dargestellt wird, als die Evidenz trägt. Blindleistung sind materielle Folgen, die das konkrete Steuerungssystem nicht sieht. Verlustleistung ist vermeidbar schlechtere Wirkung gegenüber einer tragfähigen Alternative.
 
 Wichtig: Das sind keine amtlichen Kategorien und keine moralischen Etiketten. Fehlen Daten, dürfen wir nicht einfach „Scheinleistung“ rufen. Dann heißt der Befund zunächst: offen. Genau diese Disziplin schützt das Modell vor der eigenen Rhetorik.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

@@ -9,6 +9,11 @@ on:
       - main
   workflow_dispatch:
     inputs:
+      speedtest_only:
+        description: Preserve the active live artifact byte-for-byte and publish only the five speedtest files
+        required: false
+        default: false
+        type: boolean
       ticker_only:
         description: Build and publish only the already committed Wirkungsticker update
         required: false
@@ -28,6 +33,7 @@ concurrency:
 
 jobs:
   build:
+    if: inputs.speedtest_only != true
     runs-on: ubuntu-latest
     outputs:
       ticker_only: ${{ steps.release-mode.outputs.ticker_only }}
@@ -55,7 +61,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Python build dependencies
-        if: steps.release-mode.outputs.ticker_only != 'true'
+        # Shared artifact checks import PDF libraries on both release paths.
         run: python -m pip install --upgrade pip openpyxl pymupdf pypdf python-docx reportlab
       - name: Verify committed #253 Wirkungswissenschaften generator source
         if: steps.release-mode.outputs.ticker_only != 'true'
@@ -85,6 +91,7 @@ jobs:
       - name: Build ticker and search for fast update
         if: steps.release-mode.outputs.ticker_only == 'true'
         run: |
+          npm run news:test
           npm run polls:test
           npm run polls:build
           npm run news:build
@@ -102,6 +109,161 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: _site
+
+  speedtest-only:
+    if: github.event_name == 'workflow_dispatch' && inputs.speedtest_only == true
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      actions: read
+      deployments: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.speedtest-deployment.outputs.page_url }}
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout only the standalone application sources
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /speedtest/
+            /content/apps/speedtest.html
+            /templates/standalone-app.html
+            /scripts/site/build-speedtest.mjs
+            /assets/css/speedtest.css
+            /assets/js/speedtest.js
+            /assets/js/vendor/cloudflare-speedtest-1.13.1.js
+            /assets/js/vendor/cloudflare-speedtest-LICENSE.txt
+      - name: Build and verify only the speedtest
+        run: |
+          node scripts/site/build-speedtest.mjs
+          git diff --exit-code -- speedtest/index.html
+          node --check assets/js/speedtest.js
+          node --check assets/js/vendor/cloudflare-speedtest-1.13.1.js
+      - name: Resolve the currently active production artifact
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          from pathlib import Path
+          repo = os.environ['GITHUB_REPOSITORY']
+          def api(route):
+              return json.loads(subprocess.check_output(['gh', 'api', f'repos/{repo}/{route}']))
+          active = None
+          for deployment in api('deployments?environment=github-pages&per_page=100'):
+              statuses = api(f"deployments/{deployment['id']}/statuses")
+              if statuses and statuses[0]['state'] == 'success':
+                  active = deployment
+                  match = re.search(r'/actions/runs/(\d+)/', statuses[0]['log_url'])
+                  if not match:
+                      raise SystemExit('Cannot establish the active deployment source run; refusing to publish.')
+                  source_run = int(match.group(1))
+                  break
+          if not active:
+              raise SystemExit('No active successful production deployment; refusing to guess a baseline.')
+          run = api(f'actions/runs/{source_run}')
+          if run['conclusion'] != 'success' or run['head_sha'] != active['sha']:
+              raise SystemExit('Deployment and artifact source provenance do not match.')
+          artifacts = [a for a in api(f'actions/runs/{source_run}/artifacts')['artifacts'] if a['name'] == 'github-pages' and not a['expired']]
+          if len(artifacts) != 1:
+              raise SystemExit('An unambiguous live artifact is unavailable; refusing to rebuild from source.')
+          baseline = {'deployment_id': active['id'], 'sha': active['sha'], 'run_id': source_run, 'artifact_id': artifacts[0]['id']}
+          proof = Path(os.environ['RUNNER_TEMP']) / 'speedtest-proof'
+          proof.mkdir()
+          (proof / 'baseline.json').write_text(json.dumps(baseline, indent=2))
+          subprocess.run(['gh', 'run', 'download', str(source_run), '-R', repo, '-n', 'github-pages', '-D', str(Path(os.environ['RUNNER_TEMP']) / 'speedtest-baseline')], check=True)
+          print(json.dumps(baseline))
+          PY
+      - name: Add only the five speedtest files and prove every other byte is unchanged
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, shutil, tarfile
+          from pathlib import Path
+          allowed = {
+              'speedtest/index.html',
+              'assets/css/speedtest.css',
+              'assets/js/speedtest.js',
+              'assets/js/vendor/cloudflare-speedtest-1.13.1.js',
+              'assets/js/vendor/cloudflare-speedtest-LICENSE.txt',
+          }
+          temp = Path(os.environ['RUNNER_TEMP'])
+          output = temp / 'speedtest-public'
+          output.mkdir()
+          with tarfile.open(temp / 'speedtest-baseline/artifact.tar') as archive:
+              if any(m.issym() or m.islnk() or not (m.isfile() or m.isdir()) for m in archive.getmembers()):
+                  raise SystemExit('Unexpected archive entries; refusing to change the live artifact.')
+              archive.extractall(output, filter='data')
+          def inventory():
+              return {str(p.relative_to(output)): hashlib.file_digest(p.open('rb'), 'sha256').hexdigest() for p in sorted(output.rglob('*')) if p.is_file()}
+          before = inventory()
+          if 'index.html' not in before or 'CNAME' not in before:
+              raise SystemExit('Baseline is not the complete production artifact.')
+          if (output / 'CNAME').read_text().strip() != 'wirkungsoekonomie.de':
+              raise SystemExit('Unexpected production domain.')
+          for name in sorted(allowed):
+              source = Path(name)
+              if not source.is_file() or source.is_symlink():
+                  raise SystemExit(f'Missing or unexpected speedtest input: {name}')
+              destination = output / name
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(source, destination)
+          html = (output / 'speedtest/index.html').read_text()
+          if 'content="noindex, nofollow, noarchive"' not in html or '{{' in html:
+              raise SystemExit('Standalone page metadata or template validation failed.')
+          after = inventory()
+          if set(after) != set(before) | allowed:
+              raise SystemExit('Unexpected added or removed files.')
+          changed = {name for name in set(before) | set(after) if before.get(name) != after.get(name)}
+          if not changed <= allowed or any(before[name] != after[name] for name in set(before) - allowed):
+              raise SystemExit('Files outside the speedtest changed; refusing to publish.')
+          proof = temp / 'speedtest-proof'
+          (proof / 'before-sha256.json').write_text(json.dumps(before, sort_keys=True))
+          (proof / 'after-sha256.json').write_text(json.dumps(after, sort_keys=True))
+          report = {'baseline': json.loads((proof / 'baseline.json').read_text()), 'unchanged_existing_files': len(set(before) - allowed), 'changed_files': sorted(changed), 'deleted_files': [], 'outside_allowlist_changes': [], 'speedtest_sha256': {name: after[name] for name in sorted(allowed)}}
+          (proof / 'report.json').write_text(json.dumps(report, indent=2))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('### Speedtest-only publication\n\nEvery existing file outside the five speedtest paths retains its SHA-256 checksum. No whole-site build was run.\n\n```json\n' + json.dumps(report, indent=2) + '\n```\n')
+          print(json.dumps(report, indent=2))
+          PY
+      - name: Save the unchanged-file proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: speedtest-release-proof
+          path: ${{ runner.temp }}/speedtest-proof
+          retention-days: 30
+      - name: Package the unchanged live site plus speedtest
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ${{ runner.temp }}/speedtest-public
+      - name: Refuse a stale release if production changed during preparation
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          repo = os.environ['GITHUB_REPOSITORY']
+          expected = json.loads((Path(os.environ['RUNNER_TEMP']) / 'speedtest-proof/baseline.json').read_text())['deployment_id']
+          def api(route):
+              return json.loads(subprocess.check_output(['gh', 'api', f'repos/{repo}/{route}']))
+          for deployment in api('deployments?environment=github-pages&per_page=100'):
+              statuses = api(f"deployments/{deployment['id']}/statuses")
+              if statuses and statuses[0]['state'] == 'success':
+                  if deployment['id'] != expected:
+                      raise SystemExit('Production changed; discard this candidate and start again from the current live artifact.')
+                  print(f'Active deployment {expected} is still the exact baseline.')
+                  break
+          else:
+              raise SystemExit('Cannot verify active production baseline.')
+          PY
+      - name: Publish the speedtest-only update
+        id: speedtest-deployment
+        uses: actions/deploy-pages@v5
 
   release-assets:
     needs: build

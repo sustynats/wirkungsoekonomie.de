@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v14-goal-review.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v14-goal-review.md curriculum=4.0 sanitized=true -->
 # V14 · Goal Review: Vom Problem zum problemadäquaten Ziel
 
 **lecture_id:** `WOEK-G-BASE-014`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein richtig beschriebenes Problem garantiert noch kein gutes Ziel. „Mehr bauen“, „mehr Wachstum“, „weniger Bürokratie“ oder „mehr Sicherheit“ können Ziele sein – oft sind sie aber schon Instrumente, Zwischenziele oder zu unscharfe Richtungswünsche. Goal Review fragt: **Welcher Zustand soll sich für wen verändern – und passt dieser Zielzustand wirklich zum Problem, zu Rechten, Schutzgrenzen, Zielkonflikten und langfristiger Resilienz?**
+Ein richtig beschriebenes Problem garantiert noch kein gutes Ziel. „Mehr bauen“, „mehr Wachstum“, „weniger Bürokratie“ oder „mehr Sicherheit“ können Ziele sein - oft sind sie aber schon Instrumente, Zwischenziele oder zu unscharfe Richtungswünsche. Goal Review fragt: **Welcher Zustand soll sich für wen verändern - und passt dieser Zielzustand wirklich zum Problem, zu Rechten, Schutzgrenzen, Zielkonflikten und langfristiger Resilienz?**
 
 ## Lernziele
 
@@ -199,7 +199,7 @@ Weil eine Berichtspflicht zugleich wichtige Schutzinformation liefern kann.
 
 > Notwendige Schutz-, Transparenz- und Vollzugsinformationen werden mit deutlich geringerem Erfüllungsaufwand erhoben, ohne materielle Schutzwirkung oder Kontrollfähigkeit zu verlieren.
 
-Jetzt ist der Zielkonflikt bereits sichtbar – und bessere Optionen werden möglich.
+Jetzt ist der Zielkonflikt bereits sichtbar - und bessere Optionen werden möglich.
 
 ## 9. Goal Review und Optionen
 
@@ -300,7 +300,7 @@ Wenn unser eigentliches Problem lautet, dass pflegebedürftige Menschen nicht zu
 
 Vielleicht fehlen nicht Ausbildungsplätze, sondern Menschen verlassen den Beruf. Vielleicht ist Teilzeit der Engpass. Vielleicht Bürokratie. Vielleicht regionale Verteilung.
 
-Darum fragt Goal Review: Welcher Zustand soll am Ende wirklich besser sein – für wen, wo und wann?
+Darum fragt Goal Review: Welcher Zustand soll am Ende wirklich besser sein - für wen, wo und wann?
 
 Und dann kommen Schutzbedingungen dazu.
 
@@ -314,7 +314,7 @@ Und genau das ist der Sinn.
 
 Ein gutes Goal Review öffnet den Lösungsraum, statt ihn zu früh zu schließen.
 
-Noch etwas ist wichtig: Bei öffentlichen Entscheidungen gibt es schon Ziele und Referenzen – Grundrechte, Fachrecht, die Deutsche Nachhaltigkeitsstrategie, SDGs.
+Noch etwas ist wichtig: Bei öffentlichen Entscheidungen gibt es schon Ziele und Referenzen - Grundrechte, Fachrecht, die Deutsche Nachhaltigkeitsstrategie, SDGs.
 
 Die nutzen wir. Aber wir werfen sie nicht in einen Topf.
 
@@ -323,3 +323,7 @@ Ein SDG ist kein Grundrecht. Die DNS ist kein Gesetz. Und ein Zielbezug beweist 
 Die Merkhilfe für heute lautet:
 
 **Erst Problem. Dann Ziel. Dann Optionen. Erst danach die Maßnahme.**
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

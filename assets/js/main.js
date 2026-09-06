@@ -3,7 +3,7 @@ const siteNav = document.querySelector(".site-nav");
 const mainScriptUrl =
   document.currentScript?.src || document.querySelector('script[src*="assets/js/main.js"]')?.src || "";
 window.loadWoekSearchIndex = async () => {
-  const loaderUrl = new URL('search-index-loader.js?v=20260905', mainScriptUrl || window.location.href);
+  const loaderUrl = new URL('search-index-loader.js?v=20260906-progress', mainScriptUrl || window.location.href);
   const { loadBrowserSearchIndex } = await import(loaderUrl.href);
   return loadBrowserSearchIndex(new URL('../search/', mainScriptUrl || window.location.href).href);
 };
@@ -966,13 +966,13 @@ function initRadarSearch() {
 
   const cleanTitle = (value) =>
     String(value || "")
-      .replace(/\s+[-–]\s+Wirkungsradar\s+Live\s*$/i, "")
+      .replace(/\s+[-\u2013]\s+Wirkungsradar\s+Live\s*$/i, "")
       .replace(/\s+\|\s+Wirkungsradar\s+Live\s*$/i, "")
-      .replace(/\s+[-–]\s+Wirkungsradar\s+Detail\s*$/i, "")
+      .replace(/\s+[-\u2013]\s+Wirkungsradar\s+Detail\s*$/i, "")
       .replace(/\s+\|\s+Wirkungsradar\s+Detail\s*$/i, "")
-      .replace(/\s+[-–]\s+Wirkungsradar\s*$/i, "")
+      .replace(/\s+[-\u2013]\s+Wirkungsradar\s*$/i, "")
       .replace(/\s+\|\s+Psychologie\s+im\s+Wirkungsradar\s*$/i, "")
-      .replace(/^Psychologie\s+im\s+Wirkungsradar\s+[-–]\s+/i, "")
+      .replace(/^Psychologie\s+im\s+Wirkungsradar\s+[-\u2013]\s+/i, "")
       .replace(/^Wirkungsradar$/i, "Folgencheck für öffentliche Aussagen")
       .trim();
 
@@ -1731,7 +1731,7 @@ function initGlossarySystem(terms) {
 }
 
 function initGlossaryCards() {
-  const card = document.createElement("aside");
+  const card = document.createElement("div");
   card.id = "glossary-card";
   card.className = "glossary-card";
   card.setAttribute("role", "tooltip");

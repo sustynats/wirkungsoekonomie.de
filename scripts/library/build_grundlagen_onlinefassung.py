@@ -15,6 +15,7 @@ Aufruf:  python3 scripts/library/build_grundlagen_onlinefassung.py <doc-key>
 Ausgabe: bibliothek/eintraege/<doc-key>/lesen/            (Übersicht + Kapitelseiten)
 """
 import sys, os, re, html, json, unicodedata
+from pdf_reader_sections import ReaderSections
 import fitz
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
@@ -145,12 +146,14 @@ def build_doc(key):
     for i, (lvl, title, page) in enumerate(toc):
         if lvl <= clvl:
             chapters.append({"idx": len(chapters), "lvl": lvl, "title": title.strip(),
-                             "page": page - 1, "subs": []})
+                             "page": page - 1, "toc_index": i, "subs": []})
         elif chapters:
-            chapters[-1]["subs"].append({"lvl": lvl, "title": title.strip(), "page": page - 1})
+            chapters[-1]["subs"].append({"lvl": lvl, "title": title.strip(), "page": page - 1, "toc_index": i})
     # Endseite je Kapitel = Startseite des nächsten Kapitels
     for i, ch in enumerate(chapters):
         ch["end"] = chapters[i + 1]["page"] if i + 1 < len(chapters) else npages
+
+    ReaderSections(pdf).partition(chapters)
 
     outdir = os.path.join(ROOT, "bibliothek", "eintraege", key, "lesen")
     os.makedirs(outdir, exist_ok=True)
@@ -158,39 +161,9 @@ def build_doc(key):
 
     made = []
     for ch in chapters:
-        # Rohtext des Kapitels (seitengranular)
-        raw = "\n".join(pdf[p].get_text() for p in range(ch["page"], max(ch["end"], ch["page"] + 1)))
         slug = f'{ch["idx"]:02d}-{slugify(ch["title"])[:60]}'
         ch["slug"] = slug
-
-        # In Unterabschnitte splitten anhand der Sub-Überschriften (verbatim im Text)
-        blocks = []
-        if ch["subs"]:
-            positions = []
-            for sub in ch["subs"]:
-                m = re.search(re.escape(sub["title"][:50]), raw)
-                positions.append((m.start() if m else None, sub))
-            # Intro vor erster Sub-Überschrift
-            first = next((p for p, _ in positions if p is not None), None)
-            if first is None or first > 0:
-                intro = raw[:first] if first else raw
-                # Teil-Trenner + wiederholte Kapitelüberschrift am Anfang entfernen
-                ti = intro.rfind(ch["title"])
-                if ti != -1:
-                    intro = intro[ti + len(ch["title"]):]
-                blocks.append((None, intro))
-            valid = [(p, s) for p, s in positions if p is not None]
-            for j, (pos, sub) in enumerate(valid):
-                nxt = valid[j + 1][0] if j + 1 < len(valid) else len(raw)
-                seg = raw[pos:nxt]
-                seg = seg.split("\n", 1)[1] if "\n" in seg else seg   # Überschriftzeile weg
-                blocks.append((sub["title"], seg))
-        else:
-            intro = raw
-            ti = intro.find(ch["title"])
-            if ti != -1:
-                intro = intro[ti + len(ch["title"]):]
-            blocks.append((None, intro))
+        blocks = ch['blocks']
 
         # HTML des Kapitelinhalts
         parts = []
