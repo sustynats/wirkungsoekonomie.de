@@ -561,6 +561,10 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
   }
   const newsValueSignals = NEWS_VALUE_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
   const contextFormats = CONTEXT_FORMAT_RULES.filter(([, pattern]) => pattern.test(text)).map(([value]) => value);
+  // Evergreen service/FAQ headlines are useful context, but not new events by
+  // themselves. A concrete new decision/evidence in the available text still
+  // overrides context_only through the existing news-value signals.
+  if (/\b(?:fragen\s+und\s+antworten|faq|was\s+passiert\s*,?\s*wenn|was\b[^.!?]{0,90}\bwissen\s+(?:muss|müssen|muessen))\b/i.test(item.title || '')) contextFormats.push('service_explainer');
   const topics = TOPIC_RULES.filter(([, pattern]) => pattern.test(text)).map(([topic]) => topic);
   if (!topics.length) topics.push(source.topic || item.source_topic || "Politik");
   const dimensions = [];
@@ -621,7 +625,7 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
   if (!mechanismHints.length) mechanismHints.push("Wirkmechanismus anhand der Primärquelle noch zu konkretisieren");
   return {
     filter_version: "4.0",
-    material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.sources || [], now),
+    material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.published ? story.existing_story.sources : [], now),
     internal_relevance_score: strongest.score,
     public_relevance: strongest.relevance,
     topics,

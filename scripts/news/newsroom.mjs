@@ -5,7 +5,7 @@ import { sourceAccess } from "./access-policy.mjs";
 const hash = (value) => createHash("sha256").update(String(value)).digest("hex").slice(0, 20);
 const ms = (value) => Date.parse(value || "") || 0;
 const words = (value) => String(value || "").normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase().match(/[\p{L}\d-]{3,}/gu) || [];
-const ignored = new Set("der die das dem den des eine einer eines und oder aber auch nach vor fuer mit von vom zum zur the and for with from this that says said will uber wird neue neuen einer ein ist sind haben hat mehr werden einer als bis auf bei durch nicht sich new into about auch noch seine ihrer dieser sowie news".split(" "));
+const ignored = new Set("der die das dem den des eine einer eines und oder aber auch nach vor fuer mit von vom zum zur the and for with from this that says said will uber wird neue neuen einer ein ist sind haben hat mehr werden einer als bis auf bei durch nicht sich new into about auch noch seine ihrer dieser sowie news was wie warum wann welche welcher welches what why when how".split(" "));
 const tokens = (value) => new Set(words(value).filter((word) => !ignored.has(word)));
 export const SOURCE_INTERVALS = Object.freeze({ realtime: 5, high_frequency: 15, regular: 60, slow_monitoring: 360 });
 

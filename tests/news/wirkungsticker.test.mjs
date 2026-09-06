@@ -512,6 +512,14 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
   assert.ok(errors.some((error) => error.startsWith("AI_UNSUPPORTED_NUMBER")));
 });
 
+test('service explainers need a concrete new development before the paid news check', () => {
+  for (const title of ['Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?', 'Was Verbraucher über Stromtarife wissen müssen', 'Fragen und Antworten zur Pflegeversicherung']) {
+    assert.equal(classifyItem({title,summary:'Ein Überblick über bestehende Regeln.'},{}).context_only,true);
+    assert.equal(classifyItem({title,summary:'Der Bundestag hat heute eine bundesweite Reform beschlossen.'},{}).context_only,false);
+  }
+  assert.equal(classifyItem({title:'Warum das Gericht die neue Verordnung aufgehoben hat',summary:'Das Urteil ist heute ergangen.'},{}).context_only,false);
+});
+
 test("missing or malformed publication decisions retry; explicit rejection is never promoted", () => {
   for (const value of [undefined, null, "true", "false", 0, 1]) {
     const analysis = { ...validAnalysis(), publication_recommendation: value };
@@ -730,6 +738,18 @@ test("Dauerhafter Nachrichtenzufluss lässt ältere technische Queue-Einträge n
   assert.equal(result.selected.length, 12);
   assert.equal(result.selected.filter(item => item.story_id.startsWith("queued-")).length, 3);
   assert.ok(result.selected.some(item => item.story_id === "queued-0"));
+});
+
+test('current unpublished evidence keeps freshness after a failed attempt and precedes generic reactions', () => {
+  const now='2026-09-06T19:00:00Z';
+  const base={...candidate(),sources:[{...candidate().sources[0],published_at:'2026-09-06T18:00:00Z'}],preanalysis:{internal_relevance_score:34},fresh:true};
+  const waiting={...base,fresh:false,existing_story:{published:false,updated_at:now},preanalysis:{...base.preanalysis,news_value_signals:['new_evidence']}};
+  assert.ok(queuePriority(waiting,now)>queuePriority(base,now));
+  assert.equal(queuePriority({...waiting,fresh:true},now),queuePriority(waiting,now));
+  const stale={...waiting,sources:[{...waiting.sources[0],published_at:'2026-09-05T18:00:00Z'}],fresh:true};
+  assert.ok(queuePriority(base,now)>queuePriority(stale,now));
+  const published={...waiting,existing_story:{published:true,updated_at:now}};
+  assert.ok(queuePriority(waiting,now)>queuePriority(published,now));
 });
 
 test("Monatskosten bleiben auch nach mehr als 400 automatischen Läufen erhalten", () => {

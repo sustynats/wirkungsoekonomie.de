@@ -235,7 +235,14 @@ export function repartitionOversizedSourceQueues(stories, now) {
     const pending = story.pending_update || story;
     const sources = pending.sources || [];
     const reason = pending.reason || pending.pending_reason;
-    if (reason !== 'AI_INPUT_TOO_LARGE' && !(reason === 'SOURCE_INTEGRITY_OPEN' && sources.length > 12)) continue;
+    const queuedDraft = !story.published && (new Set([
+      'AI_BUDGET_OR_BATCH_LIMIT', 'AI_HOURLY_CALL_LIMIT', 'AI_PROVIDER_UNAVAILABLE',
+      'AI_DISABLED', 'AI_BUDGET_BLOCKED', 'AI_RUN_TIME_LIMIT', 'SOURCE_INTEGRITY_OPEN',
+    ]).has(reason) || shouldRetryQualityGate(reason, pending.quality_errors || [], 0));
+    // Old unpublished queues must obey the same direct-event rule as new
+    // arrivals, even below the input-size limit. Final editorial rejections and
+    // normal published files are not silently reopened or rewritten.
+    if (!queuedDraft && reason !== 'AI_INPUT_TOO_LARGE' && !(reason === 'SOURCE_INTEGRITY_OPEN' && sources.length > 12)) continue;
     const originalLead = story.sources?.[0];
     if (!originalLead || sources.length < 2) continue;
     const leading = sources.find(source => source.url === originalLead.url);
@@ -591,7 +598,9 @@ function latestSourceDate(items) {
 export function queuePriority(candidate, now) {
   const existing = candidate.existing_story;
   const ageSinceEvidence = Math.max(0, Date.parse(now) - latestSourceDate(candidate.sources || []));
-  const fresh = candidate.fresh && ageSinceEvidence <= 3 * 60 * 60 * 1000;
+  // Ingestion is not publication: a current, unpublished fact must not lose
+  // its freshness merely because a previous provider attempt failed.
+  const fresh = (candidate.fresh || !existing?.published) && ageSinceEvidence <= 3 * 60 * 60 * 1000;
   const freshBonus = fresh ? 120 : 0;
   const publishedUpdateBonus = fresh && existing?.published && candidate.content_hash !== existing.content_hash ? 30 : 0;
   const firstPublicationBonus = !existing?.published ? 45 : 0;
@@ -600,7 +609,8 @@ export function queuePriority(candidate, now) {
   const ageHours = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / (60 * 60 * 1000)) : 0;
   const waitingBonus = Math.min(36, Math.floor(ageHours / 6));
   const urgentReviewBonus = candidate.preanalysis.material_development_review?.time_sensitive ? 72 : 0;
-  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + firstPublicationBonus + reassessmentPenalty + waitingBonus + urgentReviewBonus;
+  const concreteNewsBonus = candidate.preanalysis.news_value_signals?.length ? 24 : 0;
+  return candidate.preanalysis.internal_relevance_score + freshBonus + publishedUpdateBonus + firstPublicationBonus + reassessmentPenalty + waitingBonus + urgentReviewBonus + concreteNewsBonus;
 }
 
 function retryInputFingerprint(candidate) {
