@@ -104,7 +104,7 @@ test('catchup requires a complete recent provider-cost sample, never editorial c
 
 test('persisted fresh flags and rewritten updated_at cannot hide or starve old unpublished work', () => {
   const old = candidates().map(c => ({...c, fresh: true, first_seen: '2026-09-06T12:00:00Z',
-    existing_story: {...c.existing_story, first_seen: '2026-09-06T12:00:00Z', updated_at: catchupNow}}));
+    existing_story: {...c.existing_story, first_seen: '2026-09-06T12:00:00Z', event_detected_at: '2026-09-06T12:00:00Z', updated_at: catchupNow}}));
   const fresh = Array.from({length: 12}, (_, i) => ({story_id: `new-${i}`, fresh: true, preanalysis: {internal_relevance_score: 90}}));
   const queue = [...fresh, ...old];
   const plan = catchup(queue);
@@ -113,4 +113,14 @@ test('persisted fresh flags and rewritten updated_at cannot hide or starve old u
   assert.equal(selected.filter(c => c.existing_story).length, 2);
   assert.equal(queueSnapshot(old.map(c => c.existing_story), catchupNow).oldest_minutes, 480);
   assert.equal(queuePriority(old[0], catchupNow), queuePriority({...old[0], existing_story: {...old[0].existing_story, updated_at: '2026-09-06T13:00:00Z'}}, catchupNow));
+});
+
+test('an old source discovered just now is not an old queue entry', () => {
+  const oldArticle = {published: false, fresh: true, pending_reason: 'AI_BUDGET_OR_BATCH_LIMIT',
+    first_seen: '2026-09-03T10:00:00Z', event_detected_at: catchupNow, updated_at: catchupNow};
+  assert.equal(queueSnapshot([oldArticle], catchupNow).oldest_minutes, 0);
+  const queue = candidates().map(c => ({...c, fresh: true, existing_story: oldArticle}));
+  assert.equal(catchup(queue).control.enabled, false);
+  const {event_detected_at, ...legacy} = oldArticle;
+  assert.equal(queueSnapshot([legacy], catchupNow).oldest_minutes, 0);
 });

@@ -815,7 +815,7 @@ test("Queue- und Providerstatus unterscheiden Kapazität, Redaktion und Betriebs
 
 test('technical delay starts at the failed attempt, not the preceding capacity wait', () => {
   const now='2026-09-06T19:00:00Z';
-  const row={published:false,first_seen:'2026-09-06T10:00:00Z',pending_reason:'QUALITY_GATE_FAILED',quality_errors:['AI_PUBLICATION_RECOMMENDATION_INVALID'],ai_retry:{first_failed_at:'2026-09-06T18:55:00Z',failed_at:'2026-09-06T18:55:00Z'}};
+  const row={published:false,first_seen:'2026-09-06T10:00:00Z',event_detected_at:'2026-09-06T10:00:00Z',pending_reason:'QUALITY_GATE_FAILED',quality_errors:['AI_PUBLICATION_RECOMMENDATION_INVALID'],ai_retry:{first_failed_at:'2026-09-06T18:55:00Z',failed_at:'2026-09-06T18:55:00Z'}};
   const recent=queueSnapshot([row],now,1);
   assert.equal(recent.oldest_technical_minutes,5);
   assert.equal(recent.oldest_minutes,540);
