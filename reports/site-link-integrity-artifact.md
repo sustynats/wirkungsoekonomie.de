@@ -1,8 +1,8 @@
 # Site Link Integrity
 Stand: generiert aus dem aktuellen Arbeitsbaum
-- HTML-Seiten: 18846
+- HTML-Seiten: 18862
 - Interne Broken Links: 0
-- Waisenseiten ohne eingehende Links: 2002
+- Waisenseiten ohne eingehende Links: 2009
 - Doppelte Seitentitel: 1311
 ## Broken Links
 ## Waisenseiten
@@ -166,7 +166,7 @@ Stand: generiert aus dem aktuellen Arbeitsbaum
 - /bibliothek/agenda2030-sdg-esg-handout/
 - /bibliothek/beispiel-zange-sdg-esrs-fussnoten/
 - /bibliothek/beispiel-zange-sdg-esrs-mit-steuer-und-links/
-- ... 1842 weitere
+- ... 1849 weitere
 ## Doppelte Seitentitel
 - Weiterleitung: /afd-programm/, /akademie/, /anwendungen/, /ausprobieren/, /blog/, /buch/, /datenschutz/, /fa-qs-und-links/, /funktionsweise.html, /impressum/, /inhalt-und-strategie/, /leitbild/, /mitmachen/, /modell/, /natalie-weber.html, /scorecard-dashboard/, /sdg-und-sdg-plus/, /teil-i-grundlagen/, /teil-ii-methoden-and-instrumente/, /teil-iii-anwendung-and-praxis/, /teil-iv-transformation-and-zukunft/, /ueber-die-w-oek/, /ueber-die-woek/, /ueber/, /veroeffentlichungen/, /w-est-g-journal/, /wirkung-werte-journal/, /wirkungsoekonomie/
 - WÖk API · Daten: /api/, /api/v1/, /api/v1/capabilities/, /api/v1/glossary/, /api/v1/sdg-plus/, /api/v1/search/, /api/v1/wirkungsradar/

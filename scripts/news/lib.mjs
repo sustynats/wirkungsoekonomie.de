@@ -565,6 +565,10 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
   // themselves. A concrete new decision/evidence in the available text still
   // overrides context_only through the existing news-value signals.
   if (/\b(?:fragen\s+und\s+antworten|faq|was\s+passiert\s*,?\s*wenn|was\b[^.!?]{0,90}\bwissen\s+(?:muss|müssen|muessen))\b/i.test(item.title || '')) contextFormats.push('service_explainer');
+  if (contextFormats.includes('service_explainer') && !newsValueSignals.length && !politicalDevelopment.signals.length) {
+    score = Math.min(score, 24);
+    drivers.push('Service-Erklärung ohne neue Entscheidung, Evidenz oder politische Entwicklung');
+  }
   const topics = TOPIC_RULES.filter(([, pattern]) => pattern.test(text)).map(([topic]) => topic);
   if (!topics.length) topics.push(source.topic || item.source_topic || "Politik");
   const dimensions = [];

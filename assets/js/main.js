@@ -241,6 +241,30 @@ document.querySelectorAll(".site-nav .nav-more[data-nav-match]").forEach((detail
   details.classList.toggle("active", isCurrent || details.classList.contains("active"));
 });
 
+function ensureFooterDiscoveryLinks() {
+  if (siteLocale !== "de") return;
+  const group = Array.from(document.querySelectorAll(".footer-nav-group")).find(
+    (item) => item.querySelector("h3")?.textContent?.trim().toLowerCase() === "mitmachen",
+  );
+  const links = group?.querySelector(".footer-nav-links");
+  if (!links) return;
+  [
+    ["Presse", "w/natalie-weber/presse/"],
+    ["FAQ", "w/natalie-weber/faq/"],
+  ].forEach(([label, path]) => {
+    if (Array.from(links.querySelectorAll("a")).some((link) => link.textContent?.trim() === label)) return;
+    const link = document.createElement("a");
+    link.href = relativeSiteUrl(path);
+    link.dataset.navMatch = path;
+    link.dataset.footerDiscoveryLink = "true";
+    link.textContent = label;
+    const legalLink = Array.from(links.querySelectorAll("a")).find((item) => item.textContent?.trim() === "Impressum");
+    links.insertBefore(link, legalLink || null);
+  });
+}
+
+ensureFooterDiscoveryLinks();
+
 document.querySelectorAll(".footer-nav a, .footer-legal-nav a").forEach((link) => {
   if (!(link instanceof HTMLAnchorElement)) {
     return;
