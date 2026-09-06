@@ -25,6 +25,10 @@ on:
       - "woek-parlament-app/scripts/quality/materialize-berlin-spd-p25.mjs"
       - "woek-parlament-app/scripts/quality/check-berlin-spd-p25.mjs"
       - "woek-parlament-app/tests/berlin-spd-p25.test.mjs"
+      - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p26-*"
+      - "woek-parlament-app/scripts/quality/materialize-berlin-spd-p26.mjs"
+      - "woek-parlament-app/scripts/quality/check-berlin-spd-p26.mjs"
+      - "woek-parlament-app/tests/berlin-spd-p26.test.mjs"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-*.json"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-*-authoritative-handoff.md"
       - "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json"
@@ -192,3 +196,10 @@ jobs:
       - name: Require complete P25 source-bound authority before merge
         working-directory: woek-parlament-app
         run: node scripts/quality/check-berlin-spd-p25.mjs --require-terminal
+
+      - name: Require lossless P26 source-bound authority and complete coverage
+        working-directory: woek-parlament-app
+        run: |
+          node scripts/quality/materialize-berlin-spd-p26.mjs --check
+          node scripts/quality/check-berlin-spd-p26.mjs --require-terminal
+          node --test tests/berlin-spd-p26.test.mjs

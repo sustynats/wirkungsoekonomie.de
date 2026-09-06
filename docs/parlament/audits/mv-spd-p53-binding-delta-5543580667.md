@@ -1,6 +1,6 @@
-## WÖk FACH SOURCE-BINDING REPAIR DELTA - MV SPD P53 `SU00495-C02` + canonical heading identities - AUTHORITATIVE
+## WÖk FACH SOURCE-BINDING REPAIR DELTA — MV SPD P53 `SU00495-C02` + canonical heading identities — AUTHORITATIVE
 
-This is the finite source-binding delta required by #240 `5543340788` / #241 `5543349415`. It resolves only the confirmed P53 binding defect and the two heading-text identity mismatches. It does **not** reopen or re-author MV SPD P1-P54.
+This is the finite source-binding delta required by #240 `5543340788` / #241 `5543349415`. It resolves only the confirmed P53 binding defect and the two heading-text identity mismatches. It does **not** reopen or re-author MV SPD P1–P54.
 
 Fresh controller read immediately before this delta: `main = 394b0ccd35734ce5e0f9b8eefe01e4355b89e172`. This SHA is provenance only; CodeX must re-read/rebase exact-current `main` before continuing because independent commits may move it.
 
@@ -9,7 +9,7 @@ Frozen canonical programme remains:
 - SHA-256 `b2ed331e3bd89b93379df2f9a6adc5d3d10ddf635b0688673bc20c61cdca09bc`
 - 95 physical PDF pages.
 
-### 1. `MV-SPD-2026-SU-00495-C02` - exact source-binding repair
+### 1. `MV-SPD-2026-SU-00495-C02` — exact source-binding repair
 
 Parent identity remains:
 - parent: `MV-SPD-2026-SU-00495`
@@ -33,7 +33,7 @@ Bind **this exact source span/hash** to:
 
 CodeX may generate the stable replacement child ID mechanically under the repository’s existing deterministic child-ID convention. Preserve/version the stale wrong-source child as superseded/non-current if lineage requires it; **do not reuse its stale source hash/text as current** and do not generate any new Fach semantics.
 
-### 2. `MV-SPD-2026-SU-00496` - canonical heading identity only
+### 2. `MV-SPD-2026-SU-00496` — canonical heading identity only
 
 Use exact frozen-canonical heading:
 `Gutes und bezahlbares Wohnen`
@@ -43,7 +43,7 @@ SHA-256:
 
 Preserve intended reviewed role as structural/non-effect context, zero-count. The stale label `Bezahlbares Wohnen und moderne Quartiere` is not a current source identity and must not be written as source text. No new substantive Fach is created.
 
-### 3. `MV-SPD-2026-SU-00499` - canonical heading identity only
+### 3. `MV-SPD-2026-SU-00499` — canonical heading identity only
 
 Use exact frozen-canonical heading:
 `Wohnraum als Daseinsvorsorge in Stadt und Land`
@@ -53,24 +53,24 @@ SHA-256:
 
 Preserve intended reviewed structural-context role, zero-count. The stale label `Bezahlbares Wohnen und moderne Quartiere` is not a current source identity and must not be written as source text. No new substantive Fach is created.
 
-### 4. Early protected-scope authority-pointer gap - controller clarification
+### 4. Early protected-scope authority-pointer gap — controller clarification
 
-The preflight correctly found that literal object-ID references are absent in the searched #240/#241 snapshots for `SU00001-SU00028`, `SU00033`, `SU00034`, with particular unresolved authority pointers for `SU00010`, `SU00017-SU00022`, `SU00024`, `SU00025`, `SU00028`, `SU00033`.
+The preflight correctly found that literal object-ID references are absent in the searched #240/#241 snapshots for `SU00001–SU00028`, `SU00033`, `SU00034`, with particular unresolved authority pointers for `SU00010`, `SU00017–SU00022`, `SU00024`, `SU00025`, `SU00028`, `SU00033`.
 
-This absence is **not permission to reopen P1-P54, not a new Fach backlog, and not authority to consume generic delegated RNAA**. Controlling #241 `5542571686` defines the active transaction as reconciliation/materialisation of **already-authored protected P1-P54**; earlier #240 `5472678228` / #241 `5472679906` already protected source-order-authored P1-P38 and the subsequent explicit chain continued through P54.
+This absence is **not permission to reopen P1–P54, not a new Fach backlog, and not authority to consume generic delegated RNAA**. Controlling #241 `5542571686` defines the active transaction as reconciliation/materialisation of **already-authored protected P1–P54**; earlier #240 `5472678228` / #241 `5472679906` already protected source-order-authored P1–P38 and the subsequent explicit chain continued through P54.
 
 Required handling:
 1. continue backward semantic predecessor-chain recovery from protected P54 `5476819703`, preserving supersession/VOID/cross-page rules;
 2. use only recoverable explicit WÖk Fach authority for effect-bearing objects;
 3. do not convert a text/hash occurrence, delegated ledger classification, existing score or metadata into Fach authority;
-4. if after exhaustive predecessor-chain + approved-stock recovery an exact early object still lacks a recoverable authority pointer, report that **finite pointer set** back to #240/#241 as `PROTECTED_AUTHORED_REFERENCE_UNRESOLVED` in the controller narrative; do not invent a terminal decision, do not recast the whole protected scope as unreviewed, and do not advance the P1-P54 transaction or P56 on that basis.
+4. if after exhaustive predecessor-chain + approved-stock recovery an exact early object still lacks a recoverable authority pointer, report that **finite pointer set** back to #240/#241 as `PROTECTED_AUTHORED_REFERENCE_UNRESOLVED` in the controller narrative; do not invent a terminal decision, do not recast the whole protected scope as unreviewed, and do not advance the P1–P54 transaction or P56 on that basis.
 
 ### 5. Serial / release guard
 
-This delta clears the finite P53 source-text/Fach binding conflict identified in `5543340788` for `SU00495-C02` and gives exact canonical identities for `SU00496` / `SU00499`. It changes no other P1-P54 decision.
+This delta clears the finite P53 source-text/Fach binding conflict identified in `5543340788` for `SU00495-C02` and gives exact canonical identities for `SU00496` / `SU00499`. It changes no other P1–P54 decision.
 
 Active order remains:
-1. finish MV SPD protected-authored P1-P54 lossless technical reconciliation on fresh exact-current main;
+1. finish MV SPD protected-authored P1–P54 lossless technical reconciliation on fresh exact-current main;
 2. recompute MV-SPD/MV/#241/shared Golden residuals **SET-WISE** from the exact candidate;
 3. exact-head GitHub gates + fresh-main reconcile; merge only green exact head;
 4. read fresh merged-main MV residual; **P56 remains unauthorised unless that residual proves it**;

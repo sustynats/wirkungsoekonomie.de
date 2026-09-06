@@ -12,6 +12,14 @@ export function hasNonstandardDash(text) {
 
 // Preserve cryptographically bound input records; public artifacts are always formatted.
 export function isFrozenPublicationSource(relativePath) {
+  const normalizedPath = String(relativePath).replaceAll('\\', '/');
+  // Exact historical authority and hash-bound reference inventory: format
+  // rendered output, never these evidence bytes.
+  if ([
+    'docs/parlament/audits/mv-spd-p1-p54-reference-inventory-2026-09-04.json',
+    'docs/parlament/audits/mv-spd-p53-handoff-5474946653.md',
+    'docs/parlament/audits/mv-spd-p53-binding-delta-5543580667.md',
+  ].includes(normalizedPath)) return true;
   // News summaries and snapshots carry editorial/content hashes. Normalize
   // their rendered pages, never the source bytes those reviews approved.
   return ['audit-manifests/', 'content/audits/sachsen-anhalt/', 'woek-parlament-app/data/', 'data/news/']
