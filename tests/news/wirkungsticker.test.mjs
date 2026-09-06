@@ -740,6 +740,18 @@ test("Dauerhafter Nachrichtenzufluss lässt ältere technische Queue-Einträge n
   assert.ok(result.selected.some(item => item.story_id === "queued-0"));
 });
 
+test('current unpublished evidence keeps freshness after a failed attempt and precedes generic reactions', () => {
+  const now='2026-09-06T19:00:00Z';
+  const base={...candidate(),sources:[{...candidate().sources[0],published_at:'2026-09-06T18:00:00Z'}],preanalysis:{internal_relevance_score:34},fresh:true};
+  const waiting={...base,fresh:false,existing_story:{published:false,updated_at:now},preanalysis:{...base.preanalysis,news_value_signals:['new_evidence']}};
+  assert.ok(queuePriority(waiting,now)>queuePriority(base,now));
+  assert.equal(queuePriority({...waiting,fresh:true},now),queuePriority(waiting,now));
+  const stale={...waiting,sources:[{...waiting.sources[0],published_at:'2026-09-05T18:00:00Z'}],fresh:true};
+  assert.ok(queuePriority(base,now)>queuePriority(stale,now));
+  const published={...waiting,existing_story:{published:true,updated_at:now}};
+  assert.ok(queuePriority(waiting,now)>queuePriority(published,now));
+});
+
 test("Monatskosten bleiben auch nach mehr als 400 automatischen Läufen erhalten", () => {
   const previous = Array.from({ length: 450 }, () => ({ started_at: "2026-08-31T12:00:00Z" }));
   const current = Array.from({ length: 600 }, () => ({ started_at: "2026-09-03T12:00:00Z", ai: { estimated_cost_usd: 0.01 } }));
