@@ -27,7 +27,7 @@ auch ohne Teilnahme zugänglich. Freitext ist für diese sensible Umfrage aus.
 ## Bilder und Zoom
 
 Originale: `outputs/wirkstadt-originale/` (lokal, nicht öffentliches Stimmsystem).
-Optimierte WebP-Dateien: `assets/img/polls/wirkstadt/`, zusammen etwa 3,9 MB.
+Optimierte, versionierte WebP-Dateien: `assets/img/polls/wirkstadt/`.
 Bildmodus: eingebauter Bildgenerator, Bearbeitung desselben Ausgangsbildes.
 Promptprotokoll: `docs/wirkstadt-bildprompts.json`. Tatsächliche Bildauflösung
 1672 × 941 Pixel; kein behauptetes 4K und keine zusätzlichen Details durch Zoom.
@@ -64,8 +64,8 @@ als Validierungsfehler, 390-Pixel-Ansicht ohne horizontalen Überlauf, gleiche
 Zoomtransformation in beiden Vergleichsbildern, bewusste Quellenaufdeckung
 und fehlerfreie Browserkonsole.
 Die Energieansicht hat zwei gemeinsame Zoomziele: das nördliche Umland und
-den südöstlichen Energie-/Wärmestandort. So bleiben auch die in F und G rechts
-unten gezeichneten konventionellen Anlagen direkt auffindbar. Beide Ziele
+die Wärme-/Abwasserinfrastruktur im Südosten. Die Kläranlage ist kein
+Stromkraftwerk; sie gehört zum erhaltenen kommunalen Bestand. Beide Ziele
 verwenden beim Vergleich unverändert dieselben Koordinaten.
 
 Die Artefaktprüfung erkennt den gesonderten
@@ -162,9 +162,10 @@ Neue Poll-ID: `7f0dc2a0-05bb-4376-8b93-0e02febc2fb2`, stabiler Slug
 `stadtvergleich-bundestagswahl-2025`, Einwilligung erforderlich, keine
 Test-/Startstimmen, bis zur Frontend-Abnahme pausiert.
 
-Noch ausstehend: vollständiger Website-/Artefakt-Build, GitHub-Pages-Deployment,
-Aktivierung und Live-Abnahme. Der lokale Testserver ist **kein**
-Veröffentlichungsnachweis.
+Der vollständige Website-/Artefakt-Build und GitHub-Pages-Run 34037357928
+sind erfolgreich abgeschlossen. Vor Aktivierung werden die Bildrevisionen
+dieser Erstveröffentlichung abschließend geprüft und separat veröffentlicht.
+Der lokale Testserver ist **kein** Veröffentlichungsnachweis.
 
 ### Alltag, Verkehrsflächen und Stadtgrün (Erweiterung vor Erstveröffentlichung)
 
@@ -181,9 +182,21 @@ Fünf nichtdestruktiv gespeicherte Bildrevisionen `*-alltag-v2.webp` verdeutlich
 Radverbindungen, öffentlichen Verkehr, Bildungsorte und die Umwidmung von
 Parkraum zu Grün- und Aufenthaltsraum. Im BSW-Bild liegt das Gaswerk nun am
 nördlichen Umspannwerk; die Abwasserinfrastruktur bleibt erhalten. Das bestehende
-G-Bild wird beibehalten, weil der Korrekturentwurf die Erhaltungsbedingungen
-nicht vollständig erfüllte. Promptprotokoll: `wirkstadt-alltag-bildprompts.json`.
+G-Bild wurde zunächst beibehalten, weil der Korrekturentwurf die
+Erhaltungsbedingungen nicht vollständig erfüllte. Promptprotokoll dieser
+Zwischenstufe: `wirkstadt-alltag-bildprompts.json`.
 Verwendet wurde der eingebaute Bildgenerator, kein kostenpflichtiger API-Fallback.
+
+Die abschließende Bildrevision 1.3 ersetzt B/C/E/G durch `*-alltag-v3.webp`:
+B zeigt Regenwassergärten und einen erweiterten Busbahnhof bei erhaltenen
+Autostraßen; C einen breiten entsiegelten Uferkorridor mit geschütztem Radweg;
+E einen weitgehend autofreien öffentlichen Grünraum mit Gemeinschaftsgärten.
+G erhält seine ursprüngliche Kläranlage zurück; das Gaskraftwerk liegt nun
+im nördlichen Umland. Zwei fehlerhafte Zwischenbilder (zugeschütteter Fluss,
+verschobene Kläranlage) wurden verworfen und gezielt korrigiert. Kamera,
+Flussverlauf und wesentliche öffentliche Einrichtungen wurden visuell geprüft.
+Prompt- und Auswahlprotokoll: `docs/wirkstadt-bildkorrektur-v3-prompts.json`.
+Ähnliche Programmpunkte bleiben ähnlich; A/D/F wurden nicht künstlich verändert.
 
 Emissionen werden qualitativ nach Quellen und Mechanismen eingeordnet,
 nicht als erfundene Tonnenzahl, Rauchstärke oder manipulierte Wetterstimmung.
