@@ -12,6 +12,9 @@ const LEDGER = `${DIR}berlin-2026-spd-v1/`;
 export const OUTPUT = `${DIR}berlin-2026-spd-p25-explicit-v1.json`;
 export const SOURCE = `${DIR}berlin-2026-spd-p25-full-source-v1.json`;
 export const HANDOFF = `${DIR}berlin-2026-spd-p25-authoritative-handoff.md`;
+export const SUPPLEMENT = `${DIR}berlin-2026-spd-p25-su0299-supplement.md`;
+export const SUPPLEMENT_COMMENT = 5559328151;
+export const SUPPLEMENT_CHILD = 'BE-SPD-2026-SU-0299-C01-352663d0d94b';
 export const COMMENT = 5558175710;
 export const RNA = 'REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON';
 export const APPROVED = 'EXPLICIT_FACH_APPROVED';
@@ -152,13 +155,41 @@ export function buildP25() {
     records.push(row);
   }
   for (const row of records.filter(r => r.source_object_kind === 'SOURCE_ATOM' || [sid(293), sid(297), sid(300)].includes(r.object_id))) decide(row, excerpt(Number(row.source_unit_id.slice(-4)), row.source_text_sha256));
+  const supplement = read(SUPPLEMENT);
+  assert.equal(sha256(supplement), '287d2a729b664c96a51e0dbb281b8a4dd89d62baa8a9a1f9db49cc8fef9d9404');
+  const childText = supplement.match(/\*\*Exact child text:\*\* `([^`]+)`/)?.[1];
+  const childHash = supplement.match(/\*\*Exact child SHA-256:\*\* `([^`]+)`/)?.[1];
+  const parent = byId(sid(299));
+  assert.equal(sha256(childText), childHash);
+  assert.equal(childHash, '352663d0d94b92249f85d3d5476e3744ebbbe1a43d432ad54f35d5e054a1f0d5');
+  assert.ok(supplement.includes(parent.source_locator) && supplement.includes(parent.source_text_sha256));
+  assert.equal(parent.source_text.slice(128, 201), childText);
+  assert.ok(supplement.includes('`[128,201)`'));
+  const suppliedField = name => {
+    const value = supplement.match(new RegExp('`' + name + ' = ([^`]+)`'))?.[1];
+    assert.ok(value, `Missing supplied supplement field: ${name}`);
+    return value;
+  };
+  assert.equal(suppliedField('terminal_fach_state'), APPROVED);
+  assert.equal(suppliedField('counts_as_effect_object'), 'true');
+  records.push({
+    object_id: `${parent.object_id}-C01-${childHash.slice(0, 12)}`, source_unit_id: parent.object_id,
+    parent_object_ids: [parent.object_id], source_page: 25, pdf_pages: parent.pdf_pages,
+    source_locator: parent.source_locator, source_span_utf16: [128, 201], source_text: childText,
+    source_text_sha256: childHash, source_object_kind: 'DETERMINISTIC_EXACT_SPAN_CHILD',
+    terminal_fach_state: APPROVED, counts_as_effect_object: true,
+    batch_issue_comment_id: COMMENT, fach_issue_comment_id: SUPPLEMENT_COMMENT,
+    authoritative_fach_text: supplement, fach_source_sha256: sha256(supplement),
+    impact_direction: suppliedField('impact_direction'), materiality: suppliedField('materiality'), evidence_level: suppliedField('evidence'),
+  });
+  assert.equal(records.at(-1).object_id, SUPPLEMENT_CHILD);
   for (const parent of [aid(294, 1), aid(298, 1), aid(299, 6)]) byId(parent).superseded_by = records.filter(r => r.parent_object_ids?.includes(parent)).map(r => r.object_id);
   for (const unit of records.filter(r => r.source_object_kind === 'SOURCE_UNIT' && !r.terminal_fach_state)) Object.assign(unit, { terminal_fach_state: 'SOURCE_CONTAINER_ZERO_COUNT', counts_as_effect_object: false, batch_issue_comment_id: COMMENT, covered_by: records.filter(r => r.source_unit_id === unit.object_id && r.object_id !== unit.object_id).map(r => r.object_id) });
   const coverage = sourceCoverage(records);
   const active = records.filter(r => r.counts_as_effect_object);
   const result = {
-    schema_version: 'woek-explicit-fach-handoff-2.0', handoff_id: 'BE-SPD-P25-CANONICAL-EXPLICIT-FACH-2026-V1', base_main_commit: '989b903b866ad17b16b18cc0b5f04becaa7787ba', artifact: manifest.ledger_metadata.artifact,
-    authoritative_markdowns: [{ issue_comment_id: COMMENT, issue_comment_url: `https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-${COMMENT}`, ...pin(HANDOFF) }],
+    schema_version: 'woek-explicit-fach-handoff-2.0', handoff_id: 'BE-SPD-P25-CANONICAL-EXPLICIT-FACH-2026-V1', base_main_commit: 'd7f28c76c9642cb4fa6e8cf778b6b14059b02554', artifact: manifest.ledger_metadata.artifact,
+    authoritative_markdowns: [{ issue_comment_id: COMMENT, issue_comment_url: `https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-${COMMENT}`, ...pin(HANDOFF) }, { issue_comment_id: SUPPLEMENT_COMMENT, issue_comment_url: `https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-${SUPPLEMENT_COMMENT}`, ...pin(SUPPLEMENT) }],
     controller: { issue_comment_id: 5558179043, issue_comment_url: 'https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5558179043' },
     source_ledger: { ...pin(`${LEDGER}manifest.json`), disposition: 'SOURCE_SCAFFOLD_ONLY_NOT_FACH_AUTHORITY' }, full_source_proof: pin(SOURCE),
     protected_source_files: fs.readdirSync(path.join(APP_ROOT, LEDGER)).sort().map(name => pin(`${LEDGER}${name}`)),
@@ -170,6 +201,7 @@ export function buildP25() {
       source_unit_ids: units.map(r => r.source_unit_id), original_atom_ids: atoms.map(r => r.atom_id), generated_child_ids: records.filter(r => r.parent_object_ids).map(r => r.object_id), active_terminal_review_leaf_ids: active.map(r => r.object_id),
       explicit_fach_approved_ids: active.filter(r => r.terminal_fach_state === APPROVED).map(r => r.object_id), reviewed_not_assessable_ids: active.filter(r => r.terminal_fach_state === RNA).map(r => r.object_id), zero_count_ids: records.filter(r => !r.counts_as_effect_object).map(r => r.object_id),
       uncovered_source_spans: coverage.uncovered_source_spans,
+      remaining_p25_source_object_ids: coverage.uncovered_source_spans.map(r => r.source_unit_id),
       terminal_pages: coverage.uncovered_source_spans.length ? [] : [25],
       cross_page_objects_consumed_once: [sid(302)],
       gate: coverage.uncovered_source_spans.length ? 'BE_SPD_2026_P25_FACH_INCOMPLETE_SOURCE_AUTHORITY_GAP' : 'BE_SPD_2026_P25_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_LOSSLESS_MATERIALISATION',

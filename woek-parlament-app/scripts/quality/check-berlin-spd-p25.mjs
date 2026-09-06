@@ -2,11 +2,11 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { APP_ROOT, OUTPUT, HANDOFF, RNA, APPROVED, buildP25, sourceCoverage, sha256 } from './materialize-berlin-spd-p25.mjs';
+import { APP_ROOT, OUTPUT, HANDOFF, SUPPLEMENT, COMMENT, SUPPLEMENT_COMMENT, RNA, APPROVED, buildP25, sourceCoverage, sha256 } from './materialize-berlin-spd-p25.mjs';
 
 export function validateP25(result = JSON.parse(fs.readFileSync(path.join(APP_ROOT, OUTPUT), 'utf8')), { requireTerminal = false } = {}) {
   assert.deepEqual(result, buildP25(), 'Verbatim P25 authority/source serialization drift');
-  const authority = fs.readFileSync(path.join(APP_ROOT, HANDOFF), 'utf8');
+  const authorities = new Map([[COMMENT, fs.readFileSync(path.join(APP_ROOT, HANDOFF), 'utf8')], [SUPPLEMENT_COMMENT, fs.readFileSync(path.join(APP_ROOT, SUPPLEMENT), 'utf8')]]);
   const rows = result.terminal_records;
   const byId = new Map(rows.map(r => [r.object_id, r]));
   assert.equal(byId.size, rows.length);
@@ -15,9 +15,9 @@ export function validateP25(result = JSON.parse(fs.readFileSync(path.join(APP_RO
     assert.equal(row.counts_as_effect_object, [APPROVED, RNA].includes(row.terminal_fach_state));
     for (const field of ['dns_mapping', 'recommendation', 'score', 'party_judgement']) assert.ok(!(field in row));
     if (row.authoritative_fach_text) {
-      assert.ok(authority.includes(row.authoritative_fach_text));
+      assert.ok(authorities.get(row.fach_issue_comment_id)?.includes(row.authoritative_fach_text));
       assert.equal(sha256(row.authoritative_fach_text), row.fach_source_sha256);
-      for (const field of ['impact_direction', 'evidence_level', 'exact_reason_code', 'exact_reason']) if (row[field]) assert.ok(row.authoritative_fach_text.includes(row[field]), `Unsupplied ${field}: ${row.object_id}`);
+      for (const field of ['impact_direction', 'materiality', 'evidence_level', 'exact_reason_code', 'exact_reason']) if (row[field]) assert.ok(row.authoritative_fach_text.includes(row[field]), `Unsupplied ${field}: ${row.object_id}`);
     }
     if (row.terminal_fach_state === RNA) assert.ok(row.exact_reason && row.exact_reason_code && !row.impact_direction && !row.evidence_level);
     if (row.terminal_fach_state === APPROVED) assert.ok(row.impact_direction);

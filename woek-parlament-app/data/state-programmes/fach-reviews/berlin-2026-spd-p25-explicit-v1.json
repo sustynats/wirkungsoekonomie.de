@@ -1,7 +1,7 @@
 {
   "schema_version": "woek-explicit-fach-handoff-2.0",
   "handoff_id": "BE-SPD-P25-CANONICAL-EXPLICIT-FACH-2026-V1",
-  "base_main_commit": "989b903b866ad17b16b18cc0b5f04becaa7787ba",
+  "base_main_commit": "d7f28c76c9642cb4fa6e8cf778b6b14059b02554",
   "artifact": {
     "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
     "title": "Wahlprogramm Abgeordnetenhauswahl 2026",
@@ -20,6 +20,12 @@
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
       "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
       "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+    },
+    {
+      "issue_comment_id": 5559328151,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5559328151",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-su0299-supplement.md",
+      "file_sha256": "287d2a729b664c96a51e0dbb281b8a4dd89d62baa8a9a1f9db49cc8fef9d9404"
     }
   ],
   "controller": {
@@ -335,7 +341,8 @@
         "BE-SPD-2026-SU-0299-A05",
         "BE-SPD-2026-SU-0299-A06",
         "BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37",
-        "BE-SPD-2026-SU-0299-A06-C02-be577700ead3"
+        "BE-SPD-2026-SU-0299-A06-C02-be577700ead3",
+        "BE-SPD-2026-SU-0299-C01-352663d0d94b"
       ]
     },
     {
@@ -1459,6 +1466,34 @@
       "fach_source_sha256": "833433e2bec68eed9bd7b14dfe8dd8c5a6da13e8a7823ce2f7b2d10c259e5f5e",
       "exact_reason_code": "BRANDENBURG_SBAHN_BIKE_PARKING_EXTERNAL_ADOPTION_LOCATIONS_SCALE_FINANCE_AND_OPERATOR_UNSPECIFIED",
       "exact_reason": "external adoption, stations/quantity, operator, finance, land and implementation path are not bound; Berlin advocacy cannot be counted as Brandenburg infrastructure outcome."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0299-C01-352663d0d94b",
+      "source_unit_id": "BE-SPD-2026-SU-0299",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0299"
+      ],
+      "source_page": 25,
+      "pdf_pages": [
+        25
+      ],
+      "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+      "source_span_utf16": [
+        128,
+        201
+      ],
+      "source_text": "Wir sorgen dafür, dass sie nicht mehr auf Gehwegen genutzt werden können.",
+      "source_text_sha256": "352663d0d94b92249f85d3d5476e3744ebbbe1a43d432ad54f35d5e054a1f0d5",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5558175710,
+      "fach_issue_comment_id": 5559328151,
+      "authoritative_fach_text": "## WÖk AUTHORITATIVE FACH SUPPLEMENT — Berlin SPD P25 / SU0299 missing sidewalk-use clause\n\nThis is a **finite supplement only** to the existing authoritative P25 handoff #240 `5558175710`, triggered by the exact source-coverage stop #240 `5559103240`. **All existing P25 Fach decisions remain unchanged.** This comment authorises exactly one additional source-bound child object and no other re-authoring.\n\n### Exact source binding\n\n- Artifact: `BE-AGH-2026-SPD-WAHLPROGRAMM`\n- Canonical PDF SHA-256: `379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9`\n- Physical page: P25, right column, E-Scooter/Leihräder paragraph\n- Parent source unit: `BE-SPD-2026-SU-0299`\n- Parent locator: `p025:b013@304.72,336.55,548.79,559.73`\n- Parent source-unit SHA-256: `bc5f7f99e0c8f701477e4b534f07ca30b40582d17f97ca87e9f88553d3864d94`\n- Exact UTF-16 span in canonical SU0299: `[128,201)`\n- **Exact child text:** `Wir sorgen dafür, dass sie nicht mehr auf Gehwegen genutzt werden können.`\n- **Exact child SHA-256:** `352663d0d94b92249f85d3d5476e3744ebbbe1a43d432ad54f35d5e054a1f0d5`\n\n### Authoritative object-specific Fach decision\n\n`terminal_fach_state = EXPLICIT_FACH_APPROVED`\n\n`counts_as_effect_object = true`\n\n`impact_direction = POSITIVE_PEDESTRIAN_SAFETY_ACCESSIBILITY_AND_SIDEWALK_FUNCTION_POTENTIAL / EXISTING_LEGAL_BASELINE_ENFORCEMENT_TECHNICAL_IMPLEMENTATION_AND_FALSE_BLOCKING_DEPENDENT`\n\n`materiality = MEDIUM_LOCAL / POTENTIALLY_HIGH_FOR_VULNERABLE_PEDESTRIANS`\n\n`evidence = MEDIUM_HIGH_MECHANISM / IMPLEMENTATION_INSTRUMENT_UNSPECIFIED`\n\n### WÖk rationale\n\nRead in its exact paragraph context, `sie` refers to the immediately named E-Scooter and rental-bike sharing vehicles. The sentence therefore adds a distinct operational objective: prevent their use on ordinary pedestrian sidewalks. That has a direct plausible pathway to fewer pedestrian/vehicle conflicts and better usable sidewalk space, with particular relevance for people with visual or mobility impairments, older people, children and other pedestrians who depend on predictable unobstructed pedestrian space.\n\nThe positive direction is **potential, not an implementation claim**. The programme sentence does not state how the restriction will be made effective (for example operator permit conditions, technical no-ride/geofencing controls, enforcement, or another instrument), so delivery effectiveness must remain conditional.\n\n### Current-law / competence baseline\n\nThis is **not** treated as creating a wholly new substantive right or blanket prohibition. Under the current federal baseline, ordinary pedestrian sidewalks are already generally not lawful riding space for E-Scooters, and ordinary signed Gehwege are reserved for pedestrian traffic unless another traffic mode is expressly permitted. Relevant current rules include eKFV §10 and StVO Anlage 2, Zeichen 239. Therefore the incremental WÖk effect here is primarily **effective prevention/compliance/enforcement or technical implementation of an existing protection boundary**, not the mere existence of the legal rule.\n\nOfficial current-law references:\n- https://www.gesetze-im-internet.de/ekfv/__10.html\n- https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html\n\n### A → M → ΔZ → R\n\n`A` effective operational prevention of E-Scooter/rental-bike use on ordinary pedestrian sidewalks\n→ `M` fewer vehicle-pedestrian interactions/conflicts on pedestrian-only space and clearer behavioural boundaries\n→ `ΔZ` potentially fewer near-misses/incidents and more predictable independent pedestrian accessibility\n→ `R` Mensch: safety/accessibility; Demokratie/öffentliche Hand: enforceable public-space rules; environmental/mobility effects remain secondary and must not be inferred from this clause alone.\n\n### Distribution / risks / non-compensation\n\nPrimary beneficiaries: pedestrians, especially mobility-/vision-impaired people, older people and children. Potential burdens: sharing users and operators if technical controls are inaccurate or safe alternative routes/parking/service areas are inadequate.\n\nDo not compensate away pedestrian safety/accessibility with aggregate sharing usage, and do not count reduced sharing use automatically as a negative impact. Conversely, do not count the restriction as successful merely because a technical block exists.\n\nMaterial risks/guards:\n- false-positive geofencing or location error;\n- displacement onto unsafe carriageway/cycle-space conditions;\n- inconsistent enforcement between districts/operators;\n- accessibility/service loss where lawful alternatives are absent;\n- privacy/data-minimisation concerns if continuous location enforcement is used.\n\n### Reality / falsification\n\nReality indicators should distinguish this clause from the separately approved **parking/end-of-trip** rules in SU0299:\n- observed riding/use incidents on ordinary pedestrian sidewalks;\n- pedestrian conflict / near-miss / crash indicators where available;\n- accessibility/safety complaints, especially from vulnerable pedestrian groups;\n- operator compliance and enforcement outcomes;\n- technical false-block / false-allow rates if digital controls are used;\n- safe-route displacement effects and user burden.\n\n`FALSIFICATION_TRIGGER`: formal/technical restriction introduced but sidewalk-use violations/conflicts do not materially fall, or false blocking / unsafe displacement creates material new harms.\n\n### Exact child materialisation authority\n\nCodeX is explicitly authorised to materialise **this exact sentence only** as one deterministic child of `BE-SPD-2026-SU-0299`, using the existing stable child-ID convention derived mechanically from the exact text/hash above. Do **not** recycle an existing atom ID onto this text. Preserve parent/child lineage and the exact source locator/span/hash. No semantic splitting of this sentence is authorised.\n\nThis supplement closes only the finite missing-clause Fach authority identified in #240 `5559103240`. It does **not** reopen or alter any other P25 decision, does not authorise P26 / `SU0303+`, and adds no DNS mapping, Recommendation, score or party-wide judgement.\n\n`NO_NEW_VERCEL_BUILD=true`; `PARLIAMENT_RELEASE_APPROVAL=NOT_GRANTED`. No Vercel action is authorised by this Fach supplement.\n",
+      "fach_source_sha256": "287d2a729b664c96a51e0dbb281b8a4dd89d62baa8a9a1f9db49cc8fef9d9404",
+      "impact_direction": "POSITIVE_PEDESTRIAN_SAFETY_ACCESSIBILITY_AND_SIDEWALK_FUNCTION_POTENTIAL / EXISTING_LEGAL_BASELINE_ENFORCEMENT_TECHNICAL_IMPLEMENTATION_AND_FALSE_BLOCKING_DEPENDENT",
+      "materiality": "MEDIUM_LOCAL / POTENTIALLY_HIGH_FOR_VULNERABLE_PEDESTRIANS",
+      "evidence_level": "MEDIUM_HIGH_MECHANISM / IMPLEMENTATION_INSTRUMENT_UNSPECIFIED"
     }
   ],
   "grammar_separators": [
@@ -1551,7 +1586,8 @@
       "BE-SPD-2026-SU-0298-C03-92719a2584a7",
       "BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37",
       "BE-SPD-2026-SU-0299-A06-C02-be577700ead3",
-      "BE-SPD-2026-SU-0302-C01-40c8c940c381"
+      "BE-SPD-2026-SU-0302-C01-40c8c940c381",
+      "BE-SPD-2026-SU-0299-C01-352663d0d94b"
     ],
     "active_terminal_review_leaf_ids": [
       "BE-SPD-2026-SU-0292-A01",
@@ -1588,7 +1624,8 @@
       "BE-SPD-2026-SU-0298-C03-92719a2584a7",
       "BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37",
       "BE-SPD-2026-SU-0299-A06-C02-be577700ead3",
-      "BE-SPD-2026-SU-0302-C01-40c8c940c381"
+      "BE-SPD-2026-SU-0302-C01-40c8c940c381",
+      "BE-SPD-2026-SU-0299-C01-352663d0d94b"
     ],
     "explicit_fach_approved_ids": [
       "BE-SPD-2026-SU-0292-A01",
@@ -1616,7 +1653,8 @@
       "BE-SPD-2026-SU-0298-C02-a1655d8e931d",
       "BE-SPD-2026-SU-0298-C03-92719a2584a7",
       "BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37",
-      "BE-SPD-2026-SU-0299-A06-C02-be577700ead3"
+      "BE-SPD-2026-SU-0299-A06-C02-be577700ead3",
+      "BE-SPD-2026-SU-0299-C01-352663d0d94b"
     ],
     "reviewed_not_assessable_ids": [
       "BE-SPD-2026-SU-0292-A02",
@@ -1655,27 +1693,16 @@
       "BE-SPD-2026-SU-0294-C06-e62d80d5c5f6",
       "BE-SPD-2026-SU-0298-C01-71ae605b0875"
     ],
-    "uncovered_source_spans": [
-      {
-        "source_unit_id": "BE-SPD-2026-SU-0299",
-        "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
-        "source_unit_sha256": "bc5f7f99e0c8f701477e4b534f07ca30b40582d17f97ca87e9f88553d3864d94",
-        "source_span_utf16": [
-          128,
-          201
-        ],
-        "source_text": "Wir sorgen dafür, dass sie nicht mehr auf Gehwegen genutzt werden können.",
-        "source_text_sha256": "352663d0d94b92249f85d3d5476e3744ebbbe1a43d432ad54f35d5e054a1f0d5",
-        "status": "SOURCE_SPAN_WITHOUT_EXPLICIT_FACH_AUTHORITY",
-        "counts_as_effect_object": null
-      }
+    "uncovered_source_spans": [],
+    "remaining_p25_source_object_ids": [],
+    "terminal_pages": [
+      25
     ],
-    "terminal_pages": [],
     "cross_page_objects_consumed_once": [
       "BE-SPD-2026-SU-0302"
     ],
-    "gate": "BE_SPD_2026_P25_FACH_INCOMPLETE_SOURCE_AUTHORITY_GAP",
-    "release_or_residual_activation_allowed": false
+    "gate": "BE_SPD_2026_P25_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_LOSSLESS_MATERIALISATION",
+    "release_or_residual_activation_allowed": true
   },
   "constraints": {
     "fach_synthesized": false,
@@ -1687,5 +1714,5 @@
     "programme_terminal_claimed": false,
     "vercel_action_triggered": false
   },
-  "descriptor_sha256": "85ba79c02d9bb2a9b53b01356f4d5c1310691e2a25d14c04882464e69657b3a3"
+  "descriptor_sha256": "bbcd18b4f156ff2db418fe28a9c97a3cad882d324f4d22cf0284b59a32139369"
 }

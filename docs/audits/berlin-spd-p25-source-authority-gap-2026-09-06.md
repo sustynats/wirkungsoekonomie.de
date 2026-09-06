@@ -1,5 +1,7 @@
 # Berlin SPD P25 — lossless preparation, exact source-authority stop
 
+> Historical stop, now resolved by [#240/5559328151](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5559328151). The original evidence below remains unchanged. See [the P25 completion audit](berlin-spd-p25-canonical-materialisation-2026-09-06.md) for the supplemental child, strict coverage and current set-wise residual. This document is not the current gate result.
+
 ## Transaction and authority
 
 - Fresh clean base: `989b903b866ad17b16b18cc0b5f04becaa7787ba`.

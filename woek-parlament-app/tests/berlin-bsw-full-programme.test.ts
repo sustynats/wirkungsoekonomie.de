@@ -183,7 +183,7 @@ test("the former BSW atom ledger is retained only as rejected historical evidenc
     .every((atom: { atom_id: string }) => !currentIds.has(atom.atom_id)));
   assert.equal(residual.summary.programme_analysis_complete, 4);
   assert.equal(residual.summary.programme_analysis_open, 8);
-  assert.equal(residual.summary.remaining_page_review_envelopes, 1191);
+  assert.equal(residual.summary.remaining_page_review_envelopes, 1190);
   assert.equal(residual.summary.remaining_exact_effect_objects_identified, 0);
-  assert.equal(residual.summary.remaining_review_scope_count, 1191);
+  assert.equal(residual.summary.remaining_review_scope_count, 1190);
 });
