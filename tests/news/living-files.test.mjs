@@ -1,14 +1,61 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { documentKey, fileSubject, namedSubjects, subjectConflict, livingFileMatch, duplicateGroups, mergeLivingFiles, relatedStories, diplomaticVisit } from "../../scripts/news/living-files.mjs";
-import { clusterItems } from "../../scripts/news/lib.mjs";
+import { anchoredSources, clusterItems, existingStoryMatch } from "../../scripts/news/lib.mjs";
 import { renderRelatedStories } from "../../scripts/news/build.mjs";
-import { runWirkungsticker, publishedRecord } from "../../scripts/news/run.mjs";
+import { runWirkungsticker, publishedRecord, repartitionOversizedSourceQueues } from "../../scripts/news/run.mjs";
 
 const now = "2026-09-04T06:00:00Z";
 const source = (title, url = "https://example.org/a", more = {}) => ({ title, url, source_id: "test", publisher_id: "test", publisher: "Test", primary_source: true, published_at: now, ...more });
 const story = (id, title, more = {}) => ({ story_id: id, slug: id, title, source_summary: "", published: true, listed: true, published_at: now, last_updated: now, first_seen: now, sources: [source(title, `https://example.org/${id}`)], claims: [], analysis: { summary: title }, versions: [{ version: 1, analyzed_at: now }], current_version: 1, ...more });
 const dormagen = story("dormagen", "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen");
+
+test('an attached election background report cannot bridge polls into rallies', () => {
+  const poll = story('poll', 'Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen');
+  const rally = source('Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet', 'https://example.org/rally');
+  poll.sources.push(rally); // Previously polluted persisted cluster.
+  assert.deepEqual(anchoredSources(poll), [poll.sources[0]]);
+  assert.equal(existingStoryMatch(rally, {story:poll,last_updated:now}, now), 0);
+  assert.notEqual(clusterItems([rally], [poll], now)[0].story_id, poll.story_id);
+  for (const input of [[poll.sources[0],rally], [rally,poll.sources[0]]]) assert.equal(clusterItems(input, [], now).length, 2);
+});
+
+test('a reused article URL cannot turn polling into an election result', () => {
+  const poll = story('poll', 'Wahl in Sachsen-Anhalt: So stehen die Parteien in den Umfragen');
+  const result = source('Wahl Sachsen-Anhalt: Hochrechnungen und Ergebnisse', poll.sources[0].url);
+  assert.equal(subjectConflict(result,poll), true);
+  assert.equal(livingFileMatch(result,poll).score, 0);
+  assert.notEqual(clusterItems([result],[poll],now)[0].story_id, poll.story_id);
+});
+
+test('overgrown queue repair preserves publications, requeues every detached source and is idempotent', () => {
+  for (const published of [true,false]) {
+    const original = story('poll', 'Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen', {published});
+    const other = source('Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet', 'https://example.org/rally');
+    original.review_checkpoint = {sources:[...original.sources,other]};
+    if (published) original.pending_update = {reason:'AI_INPUT_TOO_LARGE',sources:[...original.sources,other],quality_errors:['AI_INPUT_TOO_LARGE']};
+    else { original.sources.push(other); original.pending_reason='AI_INPUT_TOO_LARGE'; }
+    const before = structuredClone(original);
+    const result = repartitionOversizedSourceQueues([original],now);
+    assert.equal(result.changes.length,1);
+    assert.deepEqual(result.requeued_sources,[other]);
+    assert.deepEqual(original.queue_source_repartitions[0].detached_sources,[other]);
+    assert.equal(original.review_checkpoint,undefined);
+    for (const key of ['title','analysis','versions','published_at','current_version']) assert.deepEqual(original[key],before[key]);
+    if (published) { assert.deepEqual(original.sources,before.sources); assert.deepEqual(original.claims,before.claims); }
+    assert.deepEqual(repartitionOversizedSourceQueues([original],now),{changes:[],requeued_sources:[]});
+    const rerouted = clusterItems(result.requeued_sources,[original],now);
+    assert.notEqual(rerouted[0].story_id,original.story_id);
+  }
+});
+
+test('a genuinely large single event is not split merely to fit the provider request', () => {
+  const s=story('incident','Sabotage an Umspannwerk in Dormagen: Ermittlungen laufen',{published:false,pending_reason:'AI_INPUT_TOO_LARGE'});
+  s.sources.push(...Array.from({length:40},(_,i)=>source(s.title,`https://example.org/incident-${i}`)));
+  const before=structuredClone(s);
+  assert.deepEqual(repartitionOversizedSourceQueues([s],now),{changes:[],requeued_sources:[]});
+  assert.deepEqual(s,before);
+});
 
 const visit = (id, title, summary, more = {}) => story(id, title, {
   source_summary: summary, topic: ["Geopolitik"],
