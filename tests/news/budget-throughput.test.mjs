@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { budgetStage } from '../../scripts/news/lib.mjs';
-import { aiDeferralReason, partitionAiQueue, queuePriority } from '../../scripts/news/run.mjs';
+import { aiDeferralReason, catchUpQueueStage, partitionAiQueue, queuePriority } from '../../scripts/news/run.mjs';
 import { NEWS_AI_BUDGET_EUR, newsBudget } from '../../scripts/news/budget.mjs';
 
 const candidates = () => Array.from({ length: 28 }, (_, index) => ({ story_id: `waiting-${index}`, fresh: false,
@@ -53,4 +53,51 @@ test('soft-budget runs reserve older work while fresh material keeps the majorit
   const result = partitionAiQueue([...fresh, ...candidates()], budgetStage(13.42, 18.9), 12);
   assert.equal(result.selected.length, 8);
   assert.equal(result.selected.filter(item => !item.fresh).length, 2);
+});
+
+const catchupNow = '2026-09-06T20:00:00Z';
+const cheapUsage = () => ({runs: Array.from({length: 3}, (_, i) => ({
+  run_id: `news-run-sample-${i}`, started_at: `2026-09-06T19:${i}0:00Z`, completed_at: `2026-09-06T19:${i}2:00Z`,
+  ai: {requests: 4, estimated_cost_usd: 0.032, token_source: 'provider_reported_usage'}
+}))});
+const catchup = (queue = candidates(), usage = cheapUsage(), spend = 16.8) =>
+  catchUpQueueStage(budgetStage(spend, 18.9), queue, usage, catchupNow, 18.9, spend);
+
+test('measured cheap checks unlock six bounded slots, with two reserved for older work', () => {
+  const fresh = Array.from({length: 12}, (_, i) => ({story_id: `fresh-${i}`, fresh: true, preanalysis: {internal_relevance_score: 90}}));
+  const queue = [...fresh, ...candidates()];
+  const result = catchup(queue);
+  assert.equal(result.control.enabled, true);
+  assert.equal(result.control.sample_calls, 12);
+  assert.equal(result.control.mean_check_cost_usd, 0.008);
+  const selected = partitionAiQueue(queue, result.stage, 12).selected;
+  assert.equal(selected.length, 6);
+  assert.equal(selected.filter(item => item.existing_story).length, 2);
+  for (const limit of [0, 1, 3, 4]) assert.equal(partitionAiQueue(queue, result.stage, limit).selected.length, limit);
+});
+
+test('catchup never overrides hard stop, request reserve, fresh/small queue or other budget stages', () => {
+  for (const spend of [0, 14, 17.6, 17.96, NaN, Infinity]) assert.equal(catchup(candidates(), cheapUsage(), spend).control.enabled, false);
+  assert.equal(catchup(candidates().slice(0, 11)).control.enabled, false);
+  assert.equal(catchup(candidates().map(c => ({...c, fresh: true}))).control.enabled, false);
+  assert.equal(catchup(candidates().map(c => ({...c, existing_story: {...c.existing_story, updated_at: catchupNow}}))).control.enabled, false);
+});
+
+test('catchup requires a complete recent provider-cost sample, never editorial costs or estimates', () => {
+  for (const change of [
+    r => {r.ai.estimated_cost_usd = 0.2;},
+    r => {delete r.ai.estimated_cost_usd;},
+    r => {r.ai.estimated_cost_usd = -1;},
+    r => {r.ai.token_source = 'conservative_reservation_usage_unavailable';},
+    r => {r.run_id = 'editorial-example';},
+    r => {r.completed_at = '2026-09-06T21:00:00Z';},
+    r => {r.started_at = '2026-09-06T17:00:00Z';},
+  ]) {
+    const usage = cheapUsage(); change(usage.runs[0]);
+    assert.equal(catchup(candidates(), usage).control.enabled, false);
+  }
+  const duplicate = cheapUsage(); duplicate.runs = Array(3).fill(duplicate.runs[0]);
+  assert.equal(catchup(candidates(), duplicate).control.enabled, false);
+  const conflict = cheapUsage(); conflict.runs.push({...conflict.runs[0], ai: {...conflict.runs[0].ai, estimated_cost_usd: 0}});
+  assert.equal(catchup(candidates(), conflict).control.enabled, false);
 });
