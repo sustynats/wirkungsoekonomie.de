@@ -6,6 +6,10 @@ export function zoomTransform(area) {
   return {scale,x:clamp(scale*(50-(area?.x??50))),y:clamp(scale*(50-(area?.y??50)))};
 }
 
+export function nextAreaId(currentId, requestedId, toggle=false) {
+  return toggle && currentId===requestedId ? '' : requestedId;
+}
+
 function startVisual() {
   const dataNode=document.getElementById('vp-data');if(!dataNode)return;
   const data=JSON.parse(dataNode.textContent),$=id=>document.getElementById(id);
@@ -19,7 +23,7 @@ function startVisual() {
     const category=data.comparison.categories.find(c=>c.id===contrast);
     $('vp-contrast-title').textContent=`${category.title}: sieben Richtungen im Vergleich`;
     $('vp-contrast-note').textContent=category.note;
-    document.querySelectorAll('[data-vp-contrast]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.vpContrast===contrast)));
+    updateContrastButtons();
     $('vp-contrast-cards').replaceChildren(...data.scenarios.map(s=>{
       const e=data.comparison.scenarios[s.id][contrast],card=el('article');card.dataset.selected=String(s.id===scenario.id);
       card.append(el('p',scenarioName(s),'poll-kicker'),el('h4',e.headline),el('p',e.text));
@@ -49,7 +53,7 @@ function startVisual() {
     });
     const zooms=el('div',undefined,'poll-actions');
     for(const [id,label] of [['energie','Energieanlagen im nördlichen Umland'],['energiesued','Wärme- und Abwasserinfrastruktur im Südosten']]){
-      if(focusAreas.some(a=>a.id===id))zooms.append(button(label,()=>{selectArea(id);stage.scrollIntoView({behavior:'auto',block:'center'});}));
+      if(focusAreas.some(a=>a.id===id))zooms.append(button(label,()=>{selectArea(id,{toggle:true});stage.scrollIntoView({behavior:'auto',block:'center'});}));
     }
     target.replaceChildren(...panels,zooms);
   }
@@ -63,6 +67,12 @@ function startVisual() {
     renderEnergy();
     renderContrast();
   }
+  function updateContrastButtons() {
+    document.querySelectorAll('[data-vp-contrast]').forEach(b=>{
+      const category=data.comparison?.categories.find(c=>c.id===b.dataset.vpContrast);
+      b.setAttribute('aria-pressed',String(b.dataset.vpContrast===contrast && !!area && area.id===category?.focus));
+    });
+  }
   function updateZoom() {
     const z=zoomTransform(area);
     stage.querySelectorAll('.vp-transform').forEach(layer=>{layer.style.transform=`translate(${z.x}%, ${z.y}%) scale(${z.scale})`;});
@@ -74,11 +84,13 @@ function startVisual() {
     });
     areaSelect.value=area?.id||'';
     $('vp-reset').disabled=!area;
+    updateContrastButtons();
     stage.setAttribute('aria-label',area?`Vergrößerter Vergleich: ${area.title}`:'Stadt und Umland in Gesamtansicht');
     if(stage.getAttribute('aria-busy')!=='true')$('vp-image-status').textContent=area?`${area.title} vergrößert. Gleicher Ausschnitt in beiden Bildern.`:'Illustrativer Vergleich. Anlagen- und Gebäudezahlen sind keine Prognose.';
   }
-  function selectArea(id,{focus=false}={}) {
-    area=focusAreas.find(d=>d.id===id)||null;updateZoom();
+  function selectArea(id,{focus=false,toggle=false}={}) {
+    const next=nextAreaId(area?.id,id,toggle);
+    area=focusAreas.find(d=>d.id===next)||null;updateZoom();
     if(area){const topic=$(`vp-topic-${area.domainId||area.id}`);topic.open=true;if(focus){const summary=topic.querySelector('summary');summary.focus({preventScroll:true});topic.scrollIntoView({behavior:'auto',block:'nearest'});}}
   }
   function renderTopics() {
@@ -93,7 +105,7 @@ function startVisual() {
       const proof=el('p',`Beleg: Programm von 2025, PDF-Seite${t.pages.length>1?'n':''} ${t.pages.join(', ')}. `,'poll-notice');
       if(revealed){const source=el('a',`${scenario.party}: Originalquelle öffnen`);source.href=`${scenario.source}#page=${t.pages[0]}`;source.target='_blank';source.rel='noopener noreferrer';proof.append(source);}
       else proof.append(document.createTextNode('Den Quellenlink und die Parteizuordnung kannst Du unten bewusst anzeigen.'));
-      details.append(proof,button('Diesen Bereich im Bild vergrößern',()=>{selectArea(d.id);if(view==='before')setView('after');stage.scrollIntoView({behavior:'auto',block:'center'});}));return details;
+      details.append(proof,button('Diesen Bereich im Bild vergrößern',()=>{selectArea(d.id,{toggle:true});if(view==='before')setView('after');stage.scrollIntoView({behavior:'auto',block:'center'});}));return details;
     });
     const finance=el('details');finance.append(el('summary','Finanzierung und Umsetzung'),el('p',scenario.funding));
     const note=el('p','Die Zeichnungen zeigen ausgewählte Umsetzungsmöglichkeiten, nicht alle Folgen. Die wichtigsten Risiken stehen bei jedem Bereich; es gibt keine verrechnete Gesamtnote.','poll-notice');
@@ -140,8 +152,8 @@ function startVisual() {
   compareSelect.addEventListener('change',()=>setView('pair'));
   areaSelect.addEventListener('change',()=>selectArea(areaSelect.value));
   document.querySelectorAll('[data-vp-view]').forEach(b=>b.addEventListener('click',()=>setView(b.dataset.vpView)));
-  document.querySelectorAll('[data-vp-area]').forEach(b=>b.addEventListener('click',()=>selectArea(b.dataset.vpArea)));
-  document.querySelectorAll('[data-vp-contrast]').forEach(b=>b.addEventListener('click',()=>{contrast=b.dataset.vpContrast;const category=data.comparison.categories.find(c=>c.id===contrast);selectArea(category.focus);if(view==='before')setView('after');else renderContrast();}));
+  document.querySelectorAll('[data-vp-area]').forEach(b=>b.addEventListener('click',()=>selectArea(b.dataset.vpArea,{toggle:true})));
+  document.querySelectorAll('[data-vp-contrast]').forEach(b=>b.addEventListener('click',()=>{const toggle=contrast===b.dataset.vpContrast;contrast=b.dataset.vpContrast;const category=data.comparison.categories.find(c=>c.id===contrast);selectArea(category.focus,{toggle});if(view==='before')setView('after');else renderContrast();}));
   $('vp-wipe').addEventListener('input',event=>{const value=Number(event.target.value);stage.style.setProperty('--vp-wipe',`${value}%`);event.target.setAttribute('aria-valuetext',`${value} Prozent Ausgangsbild, ${100-value} Prozent Szenario`);});
   $('vp-reset').addEventListener('click',()=>selectArea(''));
   $('vp-hotspot-toggle').addEventListener('click',()=>{hotspots=!hotspots;$('vp-hotspot-toggle').setAttribute('aria-expanded',String(hotspots));$('vp-hotspot-toggle').textContent=hotspots?'Markierungen ausblenden':'Details entdecken';if(hotspots&&view==='before')setView('after');document.querySelector('.vp-hotspots').hidden=!hotspots;});
