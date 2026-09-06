@@ -3,6 +3,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Umfragen verwalten | Wirkungsökonomie</title>
 <meta name="description" content="Geschützte Verwaltung der WÖk-Umfragen.">
+
 <meta name="search_title" content="Umfragen verwalten"><meta name="search_description" content="Geschützte Verwaltung der WÖk-Umfragen."><meta name="search_section" content="Umfragen"><meta name="search_type" content="Umfrage">
 <meta name="robots" content="noindex,nofollow">
 <link rel="canonical" href="https://wirkungsoekonomie.de/admin/umfragen/">
@@ -12,6 +13,7 @@
 
 <link rel="icon" href="/assets/img/brand/signet.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="/assets/css/polls.css">
+
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Umfragen verwalten","description":"Geschützte Verwaltung der WÖk-Umfragen.","url":"https://wirkungsoekonomie.de/admin/umfragen/","inLanguage":"de","isPartOf":{"@id":"https://wirkungsoekonomie.de/#website"}}</script>
 </head><body class="poll-page">
 <a class="sr-only" href="#poll-main">Zum Inhalt</a>
@@ -77,6 +79,7 @@
 <div class="poll-fields"><label>CTA-Text nach der Abstimmung<input name="cta_text" type="text" maxlength="100"></label><label>CTA-Link<small>Zum Beispiel /wirkungsticker/</small><input name="cta_url" type="text" maxlength="1500"></label></div>
 <label>Weiterführender Link (optional)<input name="further_url" type="text" maxlength="1500"></label><label>Hinweis nach der Abstimmung (optional)<input name="feedback_note" type="text" maxlength="400"></label>
 <label class="poll-checkbox"><input name="feedback_enabled" type="checkbox"> Optionales internes Feedback nach der Abstimmung erlauben</label><p class="poll-notice">Keine öffentliche Kommentarspalte. Maximal ein Kommentar je anonymer Stimme, 1.500 Zeichen.</p>
+<label class="poll-checkbox"><input name="consent_required" type="checkbox"> Ausdrückliche Einwilligung für politische Auswahl erforderlich</label><p class="poll-notice">Aktiviert Einwilligung, eigene Stimmenlöschung und eine einjährige Löschfrist. Nach der ersten Stimme nicht mehr änderbar.</p>
 <div class="poll-actions"><button id="poll-save" class="btn btn-primary" type="submit">Speichern</button><button id="poll-preview" class="btn btn-secondary" type="button">Vorschau öffnen</button></div>
 </form><div id="poll-lifecycle" class="poll-actions"></div><div id="poll-publication"></div>
 <section id="poll-admin-results" aria-label="Auswertung"></section>

@@ -8,6 +8,7 @@ export class PollError extends Error {
 }
 export const STATUSES = ['draft', 'scheduled', 'active', 'paused', 'ended', 'archived'];
 export const VISIBILITIES = ['always', 'after_vote', 'after_end'];
+export const CONSENT_VERSION = 'sensitive-choice-v1';
 const SITE = 'https://wirkungsoekonomie.de';
 const SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const RESERVED = new Set(['vorschau', 'admin', 'api', 'index', 'ergebnisse']);
@@ -54,8 +55,10 @@ export function validatePoll(input) {
     feedback_note: text(input.feedback_note ?? '', 'Hinweis nach Abstimmung', 400),
     social_description: text(input.social_description ?? '', 'Social-Beschreibung', 300),
     feedback_enabled: input.feedback_enabled === true || input.feedback_enabled === 1 ? 1 : 0,
+    consent_required: input.consent_required === true || input.consent_required === 1 ? 1 : 0,
   };
   if(input.feedback_enabled!==undefined&&![true,false,0,1].includes(input.feedback_enabled))throw new PollError('Ungültige Feedback-Einstellung.');
+  if(input.consent_required!==undefined&&![true,false,0,1].includes(input.consent_required))throw new PollError('Ungültige Einwilligungs-Einstellung.');
   if (!SLUG.test(value.slug) || RESERVED.has(value.slug)) throw new PollError('Slug: Kleinbuchstaben, Ziffern und einzelne Bindestriche verwenden.');
   if (!STATUSES.includes(value.status) || !VISIBILITIES.includes(value.results_visibility)) throw new PollError('Ungültiger Status oder Ergebnis-Modus.');
   if (!['ended','archived'].includes(value.status) && value.ends_at && value.starts_at && value.ends_at <= value.starts_at) throw new PollError('Das Enddatum muss nach dem Startdatum liegen.');
@@ -99,13 +102,13 @@ function openDb(path) {
   db.exec('PRAGMA foreign_keys=ON; PRAGMA busy_timeout=5000; PRAGMA journal_mode=WAL; PRAGMA synchronous=FULL; PRAGMA secure_delete=ON;');
   return db;
 }
-const COLS = ['slug', 'title', 'intro', 'question', 'status', 'starts_at', 'ends_at', 'results_visibility', 'image', 'cta_text', 'cta_url', 'further_url', 'feedback_note', 'social_description', 'feedback_enabled'];
+const COLS = ['slug', 'title', 'intro', 'question', 'status', 'starts_at', 'ends_at', 'results_visibility', 'image', 'cta_text', 'cta_url', 'further_url', 'feedback_note', 'social_description', 'feedback_enabled', 'consent_required'];
 export class PollStore {
   constructor({ path, pepper, now = () => Date.now() }) {
     if (typeof pepper !== 'string' || pepper.length < 32) throw new Error('POLLS_TOKEN_PEPPER must contain at least 32 characters.');
     this.db = openDb(path); this.pepper = pepper; this.now = now;
     const version = this.db.prepare('PRAGMA user_version').get().user_version;
-    if (version > 2) throw new Error('Poll database is newer than this release.');
+    if (version > 3) throw new Error('Poll database is newer than this release.');
     if (version < 1) this.db.exec(`BEGIN IMMEDIATE;
       CREATE TABLE polls (
         id TEXT PRIMARY KEY, slug TEXT NOT NULL UNIQUE, title TEXT NOT NULL, intro TEXT NOT NULL,
@@ -138,6 +141,11 @@ export class PollStore {
       ) STRICT;
       CREATE INDEX feedback_poll_created ON poll_feedback(poll_id,created_at DESC,id DESC);
       PRAGMA user_version=2; COMMIT;`);
+    if(version<3)this.db.exec(`BEGIN IMMEDIATE;
+      ALTER TABLE polls ADD COLUMN consent_required INTEGER NOT NULL DEFAULT 0 CHECK(consent_required IN (0,1));
+      ALTER TABLE votes ADD COLUMN consent_version TEXT;
+      CREATE TABLE vote_withdrawals (vote_id TEXT PRIMARY KEY, withdrawn_at TEXT NOT NULL) STRICT;
+      PRAGMA user_version=3; COMMIT;`);
   }
   close() { this.db.close(); }
   transaction(fn) {
@@ -208,6 +216,7 @@ export class PollStore {
       if (!old.published_at && ['paused', 'ended', 'archived'].includes(value.status) && value.status !== 'archived') throw new PollError('Dieser Status setzt eine veröffentlichte Umfrage voraus.');
       this.checkSlug(value.slug, id);
       const hasVotes = this.results(old).total > 0;
+      if(hasVotes&&value.consent_required!==old.consent_required)throw new PollError('Die Einwilligungsgrundlage bleibt nach der ersten Stimme unverändert. Bitte eine neue Umfrage anlegen.',409,'VOTES_EXIST');
       if (hasVotes && (value.question !== old.question || value.options.length !== old.options.length || value.options.some(o => !old.options.some(p => p.id === o.id && p.label === o.label)))) throw new PollError('Nach der ersten Stimme bleiben Frage und Antworten unverändert. Bitte duplizieren, um eine neue Version zu starten.', 409, 'VOTES_EXIST');
       const now = new Date(this.now()).toISOString();
       if (['ended', 'archived'].includes(value.status) && old.published_at && (!value.ends_at || value.ends_at > now)) value.ends_at = now;
@@ -227,16 +236,31 @@ export class PollStore {
     const suffix = randomUUID().slice(0, 8);
     return this.create({ ...old, title: `${old.title.slice(0, 165)} (Kopie)`, slug: `${old.slug.slice(0, 80)}-kopie-${suffix}`, status: 'draft', starts_at: null, ends_at: null, options: old.options.map(({label}) => ({label})) });
   }
-  vote(slug, optionId, token) {
+  vote(slug, optionId, token, consentVersion) {
     this.transaction(() => {
       const poll = this.get(slug, true);
       if (!poll.published_at || poll.effective_status !== 'active') throw new PollError('Diese Umfrage nimmt gerade keine Stimmen an.', 409, 'NOT_ACTIVE');
       if (!poll.options.some(o => o.id === optionId)) throw new PollError('Bitte eine gültige Antwort auswählen.', 400, 'INVALID_OPTION');
+      if(poll.consent_required&&consentVersion!==CONSENT_VERSION)throw new PollError('Für diese freiwillige Umfrage ist Deine ausdrückliche Einwilligung erforderlich.',400,'CONSENT_REQUIRED');
       const hash = this.tokenHash(poll.id, token);
       if (this.db.prepare('SELECT id FROM votes WHERE poll_id=? AND anonymous_vote_identifier=?').get(poll.id, hash)) throw new PollError('Deine Stimme wurde bereits gespeichert.', 409, 'ALREADY_VOTED');
-      this.db.prepare('INSERT INTO votes(id,poll_id,option_id,anonymous_vote_identifier,created_at) VALUES (?,?,?,?,?)').run(randomUUID(), poll.id, optionId, hash, new Date(this.now()).toISOString());
+      this.db.prepare('INSERT INTO votes(id,poll_id,option_id,anonymous_vote_identifier,created_at,consent_version) VALUES (?,?,?,?,?,?)').run(randomUUID(), poll.id, optionId, hash, new Date(this.now()).toISOString(),poll.consent_required?CONSENT_VERSION:null);
     });
     return this.view(slug, token);
+  }
+  withdraw(slug,token,{confirmation}={}) {
+    if(confirmation!=='EIGENE STIMME LÖSCHEN')throw new PollError('Bitte bestätige das Löschen Deiner eigenen Stimme.');
+    return this.transaction(()=>{
+      const poll=this.get(slug,true),hash=this.tokenHash(poll.id,token);
+      if(!poll.published_at)throw new PollError('Umfrage nicht veröffentlicht.',404);
+      const vote=this.db.prepare('SELECT id FROM votes WHERE poll_id=? AND anonymous_vote_identifier=?').get(poll.id,hash);
+      if(vote){
+        // No choice, token, poll or personal identity in the short-lived restore log.
+        this.db.prepare('INSERT OR IGNORE INTO vote_withdrawals VALUES (?,?)').run(vote.id,new Date(this.now()).toISOString());
+        this.db.prepare('DELETE FROM votes WHERE id=? AND poll_id=?').run(vote.id,poll.id);
+      }
+      return {withdrawn:true};
+    });
   }
   feedback(slug,token,input){
     const body=text(input?.text,'Feedback',1500,true);
@@ -277,6 +301,7 @@ export class PollStore {
       const poll = this.get(id);
       if (revision !== poll.revision || confirmation !== poll.title) throw new PollError('Zum Löschen bitte den aktuellen Titel bestätigen.', 409);
       if (poll.published_at) this.db.prepare('INSERT OR IGNORE INTO retired_slugs VALUES (?,?)').run(poll.slug, new Date(this.now()).toISOString());
+      this.db.prepare('INSERT OR IGNORE INTO vote_withdrawals SELECT id,? FROM votes WHERE poll_id=?').run(new Date(this.now()).toISOString(),id);
       this.db.prepare('DELETE FROM polls WHERE id=?').run(id);
       return { deleted: true };
     });
@@ -285,12 +310,22 @@ export class PollStore {
     return this.transaction(() => {
       const poll = this.get(id);
       if (revision !== poll.revision || confirmation !== 'STIMMEN LÖSCHEN' || !['paused','ended','archived'].includes(poll.effective_status)) throw new PollError('Stimmen nur bei unterbrochener/beendeter Umfrage und ausdrücklicher Bestätigung löschen.', 409);
+      this.db.prepare('INSERT OR IGNORE INTO vote_withdrawals SELECT id,? FROM votes WHERE poll_id=?').run(new Date(this.now()).toISOString(),id);
       const result = this.db.prepare('DELETE FROM votes WHERE poll_id=?').run(id);
       this.db.prepare('UPDATE polls SET revision=revision+1,updated_at=? WHERE id=?').run(new Date(this.now()).toISOString(), id);
       return { deleted_votes: Number(result.changes) };
     });
   }
   backup(path) { this.db.prepare('VACUUM INTO ?').run(path); chmodSync(path, 0o600); }
+  purgeSensitiveData() {
+    return this.transaction(()=>{
+      const now=this.now(),yearAgo=new Date(now-365*86400000).toISOString();
+      const rows=this.db.prepare('SELECT v.id FROM votes v JOIN polls p ON p.id=v.poll_id WHERE p.consent_required=1 AND v.created_at<=?').all(yearAgo);
+      for(const row of rows){this.db.prepare('INSERT OR IGNORE INTO vote_withdrawals VALUES (?,?)').run(row.id,new Date(now).toISOString());this.db.prepare('DELETE FROM votes WHERE id=?').run(row.id);}
+      this.db.prepare('DELETE FROM vote_withdrawals WHERE withdrawn_at<?').run(new Date(now-8*86400000).toISOString());
+      return rows.length;
+    });
+  }
 }
 
 // Separate database; no address, user agent, vote choice or voter token is recorded here.

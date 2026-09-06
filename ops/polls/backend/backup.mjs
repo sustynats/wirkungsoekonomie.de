@@ -7,6 +7,7 @@ if(!directory||!path.isAbsolute(directory)||['/','/opt','/home','/tmp'].includes
 mkdirSync(directory,{recursive:true,mode:0o700});
 const store=new PollStore({path:process.env.POLLS_DATABASE_PATH||'./data/polls/polls.sqlite',pepper:process.env.POLLS_TOKEN_PEPPER});
 try {
+  store.purgeSensitiveData();
   const stamp=new Date().toISOString().replace(/[:.]/g,'-');
   store.backup(path.join(directory,`polls-${stamp}.sqlite`));
   // Rotate only our own precisely named backup files, never another database.

@@ -36,6 +36,7 @@ function hasMainScript(html) {
 function shouldSkip(file, html) {
   const relative = path.relative(ROOT, file).replace(/\\/g, "/");
   if (excludedFiles.has(relative)) return true;
+  if (html.includes('name="woek-private-interaction"')) return true;
   if (!/<\/body>/i.test(html)) return true;
   if (/<template\b/i.test(html) && relative.startsWith("templates/")) return true;
   return false;

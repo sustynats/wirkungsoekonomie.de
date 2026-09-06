@@ -298,6 +298,11 @@ Backend-Konfiguration. Keine neue Benutzerverwaltung, keine zweite OAuth-App.
 
 ## Backup und Restore
 
+Für politische Szenario-Umfragen erweitert Schema 3 Einwilligung, eigene
+Stimmenlöschung und Restore-Schutz. Verbindliche Ergänzung für solche Umfragen:
+[Stadtvergleich und sensible Abstimmungen](wirkstadt.md). Insbesondere vor
+einem Restore `polls/restore.mjs` gegen den aktuellen Löschbestand verwenden.
+
 `node --env-file=.env polls/backup.mjs` erzeugt mit `VACUUM INTO` eine konsistente
 SQLite-Sicherung auch bei laufendem Dienst. Das Skript rotiert ausschließlich
 seine eigenen `polls-<UTC-Zeit>.sqlite`-Dateien nach sieben Tagen. Die

@@ -31,7 +31,8 @@ test('valid poll, zero votes, own vote visibility, duplicate and persistence', t
   assert.equal(store.view(p.slug, voter).selected_option, p.options[0].id);
   const raw = store.db.prepare('SELECT * FROM votes').get();
   assert.notEqual(raw.anonymous_vote_identifier, voter);
-  assert.deepEqual(Object.keys(raw).sort(), ['id','poll_id','option_id','anonymous_vote_identifier','created_at'].sort());
+  assert.deepEqual(Object.keys(raw).sort(), ['id','poll_id','option_id','anonymous_vote_identifier','created_at','consent_version'].sort());
+  assert.equal(raw.consent_version,null);
   store.close();
   const reopened = new PollStore(config);
   assert.equal(reopened.view(p.slug, voter).results.total, 1);
