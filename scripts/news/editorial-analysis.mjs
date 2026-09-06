@@ -1,6 +1,7 @@
 import crypto from "node:crypto";
 import { hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { SYSTEMIC_ANALYSIS_RULE } from "./analysis-principles.mjs";
+import { systemicValidationErrors } from "./systemic-analysis.mjs";
 
 export const EDITORIAL_ANALYSIS_VERSION = "1.0";
 export const EDITORIAL_ANALYSIS_MIN_SCORE = 66;
@@ -9,7 +10,7 @@ export const EDITORIAL_ANALYSIS_MIN_GAIN = 46;
 const LEVEL = { offen: 0, gering: 1, mittel: 2, hoch: 3, "sehr hoch": 4 };
 // media_impact uses an English enum; legacy German values remain compatible.
 const MEDIA_LEVEL = { ...LEVEL, open: 0, low: 1, medium: 2, high: 3, very_high: 4 };
-const CLAIM_TYPES = new Set(["fact", "observation", "woek_definition", "analytical_inference", "impact_potential", "impact_risk", "observed_impact", "attribution", "normative_assessment"]);
+const CLAIM_TYPES = new Set(["fact", "observation", "woek_definition", "analytical_inference", "impact_potential", "impact_risk", "observed_impact", "attribution", "normative_assessment", "program_statement", "scenario"]);
 const EVIDENCE_LEVELS = new Set(["high", "medium", "low", "open"]);
 const ANALYSIS_TYPES = new Set(["system_analysis", "macro_analysis", "case_analysis", "discourse_analysis", "resilience_analysis", "transformation_analysis"]);
 const REQUIRED_SECTIONS = new Set(["lage", "system", "mpd", "wirkungsordnungen", "unsicherheit", "beobachtung", "synthese"]);
@@ -71,7 +72,8 @@ export function editorialResearchSourceErrors(source, storyId) {
     || review.url !== source.url || review.title !== source.title
     || !Number.isFinite(Date.parse(review.checked_at)) || !review.relevance_note || !review.limitations
     || review.content_hash !== crypto.createHash("sha256").update(String(source.summary || "")).digest("hex")) errors.push("RESEARCH_REVIEW_OPEN");
-  if (!Number.isFinite(Date.parse(source.published_at)) || Date.parse(source.published_at) > Date.parse(review?.checked_at)) errors.push("RESEARCH_DATE_INVALID");
+  const dateExplicitlyOpen = source.published_at === null && source.document_date_status === "not_stated";
+  if (!dateExplicitlyOpen && (!Number.isFinite(Date.parse(source.published_at)) || Date.parse(source.published_at) > Date.parse(review?.checked_at))) errors.push("RESEARCH_DATE_INVALID");
   return errors;
 }
 
@@ -300,10 +302,12 @@ export function editorialAnalysisValidationErrors(analysis, story, assessment = 
   const sectionIds = new Set((analysis.sections || []).map((section) => section.id));
   for (const required of REQUIRED_SECTIONS) if (!sectionIds.has(required)) errors.push(`EDITORIAL_SECTION_MISSING_${required.toUpperCase()}`);
   const articleWords = wordCount((analysis.sections || []).flatMap((section) => section.paragraphs).join(" "));
-  if (articleWords < 800 || articleWords > 2100) errors.push("EDITORIAL_ARTICLE_LENGTH");
+  const systemic = analysis.analysis_variant === "systemic";
+  if (articleWords < (systemic ? 2200 : 800) || articleWords > (systemic ? 3900 : 2100)) errors.push("EDITORIAL_ARTICLE_LENGTH");
+  errors.push(...systemicValidationErrors(analysis));
   if ((analysis.claim_ledger || []).length < 5) errors.push("EDITORIAL_CLAIM_LEDGER_TOO_SHORT");
   for (const claim of analysis.claim_ledger || []) {
-    if (["fact", "observation", "observed_impact", "attribution"].includes(claim.type) && !claim.source_ids.length) errors.push("EDITORIAL_FACT_WITHOUT_SOURCE");
+    if (["fact", "observation", "observed_impact", "attribution", "program_statement"].includes(claim.type) && !claim.source_ids.length) errors.push("EDITORIAL_FACT_WITHOUT_SOURCE");
     if (claim.type === "observed_impact" && claim.evidence_level === "open") errors.push("EDITORIAL_OBSERVED_IMPACT_OPEN");
   }
   if (!(analysis.counter_evidence || []).length) errors.push("EDITORIAL_COUNTER_EVIDENCE_REQUIRED");

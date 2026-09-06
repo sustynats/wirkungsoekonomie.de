@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { commissionedReviewState, isCommissionedAnalysis } from "./systemic-analysis.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildNewsSite } from "./build.mjs";
@@ -36,7 +37,8 @@ function publicCandidate(assessment, story, existing) {
     factor_status: assessment.factor_status,
     evidence_gate: assessment.evidence_gate,
     fingerprint: assessment.fingerprint,
-    status: existing && existing.source_fingerprint === assessment.fingerprint ? "published" : assessment.status,
+    status: commissionedReviewState(existing, story)?.status || (existing && existing.source_fingerprint === assessment.fingerprint ? "published" : assessment.status),
+    ...(commissionedReviewState(existing, story) ? { review: commissionedReviewState(existing, story) } : {}),
     analysis_id: existing?.analysis_id || null,
   };
 }
@@ -199,7 +201,7 @@ export async function runEditorialAnalyses({
   const candidateRows = assessed.filter(({ assessment }) => assessment.candidate).map(({ story, assessment }) => publicCandidate(assessment, story, existingForStory(store, story.story_id)));
   const changedCandidateState = JSON.stringify(store.candidates || []) !== JSON.stringify(candidateRows);
   const ready = assessed
-    .filter(({ story, assessment }) => assessment.candidate && assessment.evidence_gate.passed && existingForStory(store, story.story_id)?.source_fingerprint !== assessment.fingerprint)
+    .filter(({ story, assessment }) => !isCommissionedAnalysis(existingForStory(store, story.story_id)) && assessment.candidate && assessment.evidence_gate.passed && existingForStory(store, story.story_id)?.source_fingerprint !== assessment.fingerprint)
     .sort((left, right) => right.assessment.editorial_analysis_score - left.assessment.editorial_analysis_score || right.assessment.analysis_gain - left.assessment.analysis_gain || Date.parse(right.story.last_updated || 0) - Date.parse(left.story.last_updated || 0));
   const runnable = ready.filter(({ story, assessment }) => !(Date.parse(retryFor(story, assessment)?.next_attempt_at) > Date.parse(now)));
   const researchPending = candidateRows.filter((candidate) => candidate.status === "research_pending");
