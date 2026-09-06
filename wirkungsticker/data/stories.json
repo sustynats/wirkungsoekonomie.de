@@ -1,7 +1,190 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T11:53:33.246Z",
+  "updated_at": "2026-09-06T12:24:05.188Z",
   "stories": [
+    {
+      "story_id": "wt-b8204dba21ee4eea",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b8204dba21ee4eea-f09b9c98ae233c93-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b8204dba21ee4eea-edefebaf48f04f6c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b8204dba21ee4eea-8121c7971bbf131b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "blindganger-in-kiel-wird-heute-entscharft-evakuierung-lauft-ee4eea",
+      "title": "Blindgänger in Kiel wird heute entschärft - Evakuierung läuft",
+      "source_summary": "Der NDR berichtet über eine Bombenentschärfung in Kiel-Dietrichsdorf. Nach Angaben im Beitrag sind Spezialisten des Kampfmittelräumdienstes dort auf eine amerikanische Fliegerbombe gestoßen, die heute entschärft werden soll. Genannt wird ein 250 Kilogramm schwerer Blindgänger in der Insterburger Straße. Für die Maßnahme läuft ein großes Sperrgebiet, Straßen werden abgesperrt, und die Polizei bereitet den Einsatz vor.\n\nLaut Bericht müssen insgesamt 5.235 Personen bis 14 Uhr ihre Wohnungen und Häuser verlassen haben. Wer keine andere Unterkunft hat, kann sich ab 13 Uhr in der Andreas-Gayk-Schule aufhalten. Die Polizei nennt zudem eine Rufnummer für Hilfe beim Verlassen der Wohnung. Wie lange die Entschärfung dauern wird, sei noch offen; die Betroffenen müssten sich auf mehrere Stunden außerhalb ihrer Wohnungen einstellen.",
+      "summary": "In Kiel läuft heute die Evakuierung für eine Bombenentschärfung in Dietrichsdorf. Betroffen sind laut Bericht 5.235 Menschen bis 14 Uhr.",
+      "detail_summary": "Gesichert ist, dass in Kiel-Dietrichsdorf heute eine 250-Kilo-Fliegerbombe entschärft werden soll und dafür ein Sperrgebiet mit Evakuierung läuft. Der Bericht nennt als Umfang 5.235 zu räumende Personen und beschreibt vorbereitete Absperrungen sowie eine Ausweichunterkunft in der Andreas-Gayk-Schule. Relevanz hat das Ereignis vor allem wegen der kurzfristigen Zwangsverlagerung für viele Haushalte und der Eingriffe in lokale Mobilität und Alltag. Der Wirkpfad ist unmittelbar: Räumung, Verkehrsunterbrechungen und zeitweilige Nichtnutzbarkeit von Wohnungen. Mögliche Folgen sind Verzögerungen, Belastungen für Betroffene und temporäre Einschränkungen im Umfeld; ein längerfristiger Effekt ist aus der Quelle nicht belegt. Die Evidenz bleibt vorläufig, weil nur eine journalistische Quelle vorliegt und der genaue Verlauf der Entschärfung offen ist.",
+      "why_relevant": "Die Meldung betrifft kurzfristig tausende Menschen, Eingriffe in Mobilität und Nutzung von Wohnraum sowie die öffentliche Sicherheit vor Ort.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mehr als 5.000 Menschen müssen vorübergehend ihre Wohnungen verlassen; das betrifft Alltag, Sicherheit und Belastung direkt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus der Quelle ergibt sich kein direkter Umwelt- oder Klimabezug; es geht um eine lokale Gefahrenlage und Räumung."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Ein demokratischer Struktur- oder Regelungseffekt ist nicht erkennbar; es handelt sich um einen Einsatz der Gefahrenabwehr."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "kommunen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "offen"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T12:21:25.690Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T11:59:59.000Z",
+      "last_updated": "2026-09-06T12:23:31.064Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-079280c3a232824df66a",
+      "case_file": null,
+      "source_published_at": "2026-09-06T11:59:59.000Z",
+      "published_at": "2026-09-06T12:23:31.064Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/kiel_neumuenster_ploen_rendsburg-eckernfoerde/blindgaenger-in-kiel-250-kilo-bombe-wird-sonntag-entschaerft,regionkielnews-2802.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T11:59:59.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a030a1d903caa413",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-1b800dd7a15376a4-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-4e1074a75e5c42bb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-e8d9e5e4cea3f393-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-caa413",
+      "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+      "source_summary": "Der Deutschlandfunk berichtet über einen Großeinsatz der Polizei am Hambacher Forst in Nordrhein-Westfalen. Die Fahndung richtet sich nach Angaben des Berichts gegen einen Tatverdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz; vor Ort seien laut dpa bis zu 100 Polizeifahrzeuge gesehen worden.\n\nIm Bericht heißt es außerdem, die Polizei halte es für wahrscheinlich, dass der 48-Jährige aus Gevelsberg mit dem Fahrrad flüchte; gesucht werde ein Rad der Marke Trenoli. Zugleich sei ein Bekennerschreiben mit seinem Namen veröffentlicht worden, die tatsächliche Verantwortung für die beschriebenen Taten aber weiter unklar. Ergänzend verweist der Bericht auf Funde in Sachsen mit zwölf selbstgebauten Sprengvorrichtungen und auf mögliche Zusammenhänge mit Brandenburg und Nordrhein-Westfalen.",
+      "summary": "Die Polizei sucht am Hambacher Forst nach einem Verdächtigen im Umfeld von Sabotageaktionen gegen das Stromnetz. Vor Ort war laut dpa von bis zu 100 Polizeifahrzeugen die Rede.",
+      "detail_summary": "Gesichert ist nach der vorliegenden Meldung ein laufender Großeinsatz am Hambacher Forst, der mit der Fahndung nach einem 48-Jährigen aus Gevelsberg im Zusammenhang steht. Der Bericht nennt außerdem ein Bekennerschreiben, dessen Zuordnung zu den Taten aber ausdrücklich offen bleibt. Relevant ist die Meldung, weil sie einen laufenden Eingriff in ein energie- und sicherheitsrelevantes System beschreibt und zugleich zeigt, dass die Ermittlungen über Nordrhein-Westfalen hinausreichen. Ein möglicher Wirkpfad liegt in kurzfristigen Sicherheitsmaßnahmen, Fahndungsaufwand und zusätzlicher Prüfung von Stromnetz-Risiken. Als Folge sind weitere Sperrungen, Ermittlungsverbindungen oder neue Fundorte möglich; ob sich daraus tatsächlich ein größerer Zusammenhang ergibt, bleibt nach der Quellenlage offen. Die Beleglage ist vorerst nur eine zugespitzte Sekundärquelle mit dpa-Zuschreibung.",
+      "why_relevant": "Die Meldung betrifft mögliche Sabotage an kritischer Energieinfrastruktur und damit einen sicherheits- und systemrelevanten Gegenstand mit potenziellen Folgen für Versorgung, Ermittlungen und öffentliche Schutzmaßnahmen.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind mögliche Sicherheitslagen, Ermittlungsmaßnahmen und im Extremfall Versorgungssicherheit; direkte Folgen für Menschen sind noch offen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Verbindung zu Stromnetz, Braunkohlerevier und Energieinfrastruktur ist systemisch relevant, konkrete Umweltfolgen sind hier aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt staatliche Schutzfähigkeit, Ermittlungsarbeit und die öffentliche Nachvollziehbarkeit bei Sabotagevorwürfen."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "aeltere"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T12:21:25.690Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T12:02:39.000Z",
+      "last_updated": "2026-09-06T12:23:08.615Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-4b6252df6481b4c20d60",
+      "case_file": null,
+      "source_published_at": "2026-09-06T12:02:39.000Z",
+      "published_at": "2026-09-06T12:23:08.615Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:02:39.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-cf03acddb911d861",
       "title_image": {
@@ -3331,7 +3514,14 @@
       },
       "media_analysis_version": "1.0",
       "media_checked_at": "2026-09-05T11:31:43.777Z",
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-36e98d72ae20",
+        "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
+        "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
+        "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
+        "published_at": "2026-09-06T12:24:05.188Z",
+        "updated_at": "2026-09-06T12:24:05.188Z"
+      },
       "first_seen": "2026-09-04T15:15:00.000Z",
       "last_updated": "2026-09-05T12:28:41.779Z",
       "version": 4,
@@ -11883,6 +12073,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-36e98d72ae20",
+      "story_id": "wt-60f4e4d7d43fad99",
+      "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
+      "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
+      "subtitle": "Die Ermittlungen berühren kritische Infrastruktur, staatliche Schutzfähigkeit und das Vertrauen in die Stabilität des Energiesystems – auch wenn Motiv und Täterlage offen bleiben.",
+      "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
+      "published_at": "2026-09-06T12:24:05.188Z",
+      "updated_at": "2026-09-06T12:24:05.188Z",
+      "reading_time_minutes": 8
+    },
     {
       "analysis_id": "woek-analysis-219f434ceb61",
       "story_id": "wt-cf03acddb911d861",
