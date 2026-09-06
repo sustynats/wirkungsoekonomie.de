@@ -3,16 +3,17 @@ import { renderDimensionMeters, renderStatusChip, renderAnalysisTypeChip } from 
 
 const escape = (value) => String(value || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-// Responsive HTML composition reuses the already generated original. No image
-// editing, rasterized headline, new provider call or hidden duplicate heading.
+// Responsive HTML composition optionally reuses a verified symbolic background.
+// The impact card itself is HTML/CSS and needs no generated image asset. Missing,
+// pending or rejected assets must never switch a published story to an old layout.
 export function renderStoryVisual(story, { href = "", detail = false, loading = "lazy", sourceLabel = "" } = {}) {
+  if (!story?.analysis || !story.title) return "";
   const image = publicTitleImage(story.title_image);
-  if (!image?.wide) return "";
   const heading = detail ? "h1" : "h2";
-  const label = image.background ? "KI-generiertes Symbolbild" : "Wirkungskarte · WÖk-Einordnung";
+  const label = image?.background ? "KI-generiertes Symbolbild" : "Wirkungskarte · WÖk-Einordnung";
   return `<div class="news-story-visual" data-news-story-visual>
     <figure class="news-story-visual__frame">
-      ${image.background ? `<img class="news-story-visual__background" src="${escape(image.background.url)}" alt="" width="1200" height="675" loading="${loading}" decoding="async">` : ""}
+      ${image?.background ? `<img class="news-story-visual__background" src="${escape(image.background.url)}" alt="" width="1200" height="675" loading="${loading}" decoding="async">` : ""}
       <p class="news-story-visual__brand" aria-hidden="true">Wirkungsökonomie <span>· Wirkungsticker</span></p>
       <div class="news-story-visual__content">
         <${heading} class="news-story-visual__headline">${href ? `<a href="${escape(href)}">${escape(story.title)}</a>` : escape(story.title)}</${heading}>

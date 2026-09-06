@@ -17,7 +17,7 @@ import { buildCaseFiles } from "./case-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260906-pull-refresh1";
+const PUBLIC_RELEASE = "20260906-visual-fallback1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -230,7 +230,7 @@ function caseFileBadge(story) {
   return `<span class="news-badge news-badge--case">Lageakte · ${escapeHtml(caseFile.member_count)} Entwicklungen</span>`;
 }
 
-function card(story, index) {
+export function storyCard(story, index) {
   const a = story.analysis;
   const topics = (story.topic || []).join(" ").toLowerCase();
   const dimensionKeys = Object.entries({ human: "mensch", planet: "planet", democracy: "demokratie" })
@@ -256,19 +256,20 @@ function card(story, index) {
   const publisherLabel = `${publishers.slice(0, 2).join(", ")}${publishers.length > 2 ? " u. a." : ""}`;
   const version = Number(story.current_version || 1);
   const href = storyHref(story);
-  return `<article class="news-card${publicTitleImage(story.title_image)?.wide ? " news-card--visual" : ""}${index === 0 ? " news-card--lead" : ""}" id="story-${escapeHtml(story.slug)}" data-news-card data-news-story-id="${escapeHtml(story.slug)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(story.last_updated)}">
+  const visual = renderStoryVisual(story, { href, loading: index === 0 ? "eager" : "lazy", sourceLabel: `${publisherLabel} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}` });
+  return `<article class="news-card${visual ? " news-card--visual" : ""}${index === 0 ? " news-card--lead" : ""}" id="story-${escapeHtml(story.slug)}" data-news-card data-news-story-id="${escapeHtml(story.slug)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topics)}" data-dimensions="${escapeHtml(dimensionKeys)}" data-high-impact="${high}" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(story.last_updated)}">
   <div class="news-card__topline">
     <span class="news-card__topic">${renderIcon(topicIcon(story.topic), "wt-icon--topic")}<span class="card-kicker">${escapeHtml((story.topic || []).slice(0, 3).join(" · "))}</span></span>
     <span class="news-card__flags"><span class="news-badge news-badge--new" data-news-new-badge hidden>Neu</span>${caseFileBadge(story)}${version > 1 ? `<span class="news-badge news-badge--update">Akte aktualisiert · v${version}</span>` : ""}${high ? '<span class="news-badge news-badge--high">Hohe systemische Relevanz</span>' : ""}</span>
   </div>
-  ${renderStoryVisual(story, { href, loading: index === 0 ? "eager" : "lazy", sourceLabel: `${publisherLabel} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}` })}
+  ${visual}
   <div class="news-card__body">
-    ${publicTitleImage(story.title_image)?.wide ? "" : `<h2><a href="${escapeHtml(href)}">${escapeHtml(story.title)}</a></h2>`}
+    ${visual ? "" : `<h2><a href="${escapeHtml(href)}">${escapeHtml(story.title)}</a></h2>`}
     ${story.case_file ? `<p class="news-case-card__meta"><strong>Aktueller Stand</strong> · ${escapeHtml(story.case_file.member_count)} Entwicklungen aus ${escapeHtml(story.case_file.publisher_count)} Medien und Institutionen werden gemeinsam fortgeführt.</p>` : ""}
     <p class="news-card__summary">${escapeHtml(a.summary)}</p>
     <p class="news-card__why"><strong>Warum relevant:</strong> ${escapeHtml(a.why_relevant)}</p>
   </div>
-  ${publicTitleImage(story.title_image)?.wide ? "" : `<div class="news-card__signals">
+  ${visual ? "" : `<div class="news-card__signals">
     <div class="news-card__chips">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}</div>
     ${renderDimensionMeters(a, { compact: index !== 0, tendency: visuals?.tendency || null })}
   </div>`}
@@ -313,7 +314,7 @@ function mixedFeedItems(stories, analyses) {
 function mixedCards(stories, analyses, storiesById) {
   return mixedFeedItems(stories, analyses).map((item, index) => item.type === "analysis"
     ? editorialCard(item.value, storiesById.get(item.value.story_id), index)
-    : card(item.value, index)).join("\n");
+    : storyCard(item.value, index)).join("\n");
 }
 
 function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null, publicUpdatedAt = "", ogType = "website" }) {
@@ -574,7 +575,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
   const nextLink = nextStory ? `<a class="news-story-pagination__link news-story-pagination__link--next" href="${escapeHtml(nextStory.href || `../${nextStory.slug}/`)}"><span><small>Nächster Beitrag</small><strong>${escapeHtml(nextStory.title)}</strong></span><span aria-hidden="true">→</span></a>` : "";
   const returnLink = `<a class="btn btn-secondary news-return-link" href="${escapeHtml(overviewHref(story))}" data-news-return-to-list><span aria-hidden="true">←</span><span>Zur Übersicht</span></a>`;
   const body = `<main id="main-content" data-search-content data-no-glossary data-news-reader="detail">
-  <section class="hero news-hero news-hero--story"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p>${titleImage?.wide ? renderStoryVisual(story, { detail: true, loading: "eager", sourceLabel: `${primary?.publisher || ""} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}` }) : `<h1 class="hero-title">${escapeHtml(story.title)}</h1>`}<div class="news-hero__meta">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Einordnung: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}${readerRefreshControl()}</div></div></section>
+  <section class="hero news-hero news-hero--story"><div class="hero-copy"><nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p>${renderStoryVisual(story, { detail: true, loading: "eager", sourceLabel: `${primary?.publisher || ""} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}` })}<div class="news-hero__meta">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Einordnung: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}${readerRefreshControl()}</div></div></section>
 
   ${renderNewsStatusNotice(story)}
   ${(story.corrections || []).map((correction) => `<aside class="notice" role="note"><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}:</strong> ${escapeHtml(correction.note)}</aside>`).join("")}

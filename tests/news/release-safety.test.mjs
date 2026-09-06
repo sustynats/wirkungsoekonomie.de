@@ -5,6 +5,7 @@ import { normalizePublicPunctuation } from "../../scripts/quality/public-punctua
 import { renderStoryVisual, renderEditorialClaimMap } from "../../scripts/news/story-visual.mjs";
 import { publicTitleImage } from "../../scripts/news/title-image/pipeline.mjs";
 import { editorialEvidenceGate, editorialAnalysisAssessment } from "../../scripts/news/editorial-analysis.mjs";
+import { storyCard, storyPage } from "../../scripts/news/build.mjs";
 
 test("Sprachnormalisierung verändert weder ausführbaren Code noch HTML-Skripte oder URLs", () => {
   const dash = String.fromCharCode(0x2014);
@@ -69,6 +70,34 @@ test("Symbolbild-Hintergründe lassen keine fremden Hosts oder Schema-Injection 
     const image = publicTitleImage({ ...source.title_image, source_visual: { url } });
     assert.equal(image.background, undefined);
   }
+});
+
+for (const [name, title_image] of [
+  ["fehlenden Bildmetadaten", undefined],
+  ["wartender Bildverarbeitung", { retry_after: "2026-09-07T10:00:00Z" }],
+  ["ungültigen Bildverweisen", { mode: "editorial", wide: { url: "https://untrusted.example/image.png" }, source_visual: { url: "javascript:alert(1)" } }],
+]) {
+  test(`Einheitliche Wirkungskarte bei ${name}, ohne Bildaufruf oder Textänderung`, () => {
+    const source = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories.find(s => s.slug.includes("91d490"));
+    const story = { ...structuredClone(source), title_image };
+    const before = JSON.stringify(story);
+    const card = storyCard(story, 1);
+    assert.match(card, /news-card--visual/);
+    assert.equal((card.match(/<h2\b/g) || []).length, 1);
+    assert.match(card, /news-story-visual__headline/);
+    assert.match(card, /Wirkungskarte · WÖk-Einordnung/);
+    assert.match(card, /wt-meter--open/);
+    assert.doesNotMatch(card, /news-card__signals|KI-generiertes Symbolbild|news-story-visual__background|untrusted\.example|javascript:/);
+    const detail = storyPage(story);
+    assert.equal((detail.match(/<h1\b/g) || []).length, 1);
+    assert.match(detail, /<h1 class="news-story-visual__headline">/);
+    assert.equal(JSON.stringify(story), before);
+  });
+}
+
+test("Ohne Story oder Analyse werden keine Werte für eine Wirkungskarte erfunden", () => {
+  assert.equal(renderStoryVisual(null), "");
+  assert.equal(renderStoryVisual({ title: "Noch ungeprüft" }), "");
 });
 
 test("Analyse-Gegenüberstellung entsteht nur mit Erklärgewinn und verändert keine Claims", () => {
