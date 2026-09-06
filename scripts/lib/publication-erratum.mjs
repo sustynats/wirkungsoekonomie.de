@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {escapeHtml as esc} from './explainer-components.mjs';
 
 const data = JSON.parse(fs.readFileSync('content/site/publication-erratum-2026-09-06.json', 'utf8'));
@@ -16,7 +17,8 @@ export function renderPublicationErratum() {
   return `<section class="section" id="erratum-20260906"><h2 id="erratum-20260906-title">Erratum vom 6. September 2026: Register, T-SROI und Sprache</h2><p>${esc(data.intro)}</p><p><a class="btn btn-secondary" href="${esc(pdf.url)}">PDF-Erratum öffnen (${pdf.pages} Seiten)</a></p>${data.groups.map(group => `<details class="card" id="erratum-${esc(group.id)}"><summary>${esc(group.title)}</summary><p>${esc(group.correction)}</p><p>${esc(group.example)}</p><h3>Betroffene Fundstellen</h3><ul>${group.documents.map(doc => `<li><a href="${esc(assets[doc.source])}">${esc(doc.title)}</a>, physische PDF-Seite ${esc(doc.pages)}. ${esc(doc.note)}</li>`).join('')}</ul><p><a href="${esc(group.reference)}">${esc(group.referenceLabel)}</a></p></details>`).join('')}<p>Die Seitenangaben zählen ab der ersten Seite der Originaldatei. Historische Originale bleiben erhalten; das Erratum ist bei heutiger Anwendung mitzulesen.</p></section>`;
 }
 
-export function applyPublicationErratumNotices() {
+export function applyPublicationErratumNotices(root = '.') {
+  root = path.resolve(root);
   const targets = new Map();
   const key = url => url.origin + decodeURIComponent(url.pathname);
   for (const group of data.groups) for (const doc of group.documents) for (const source of [doc.source, ...(doc.aliases || [])]) {
@@ -29,15 +31,16 @@ export function applyPublicationErratumNotices() {
     for (const entry of fs.readdirSync(dir, {withFileTypes:true})) {
       if (excluded.has(entry.name) || entry.name.startsWith('.')) continue;
       const file = path.join(dir, entry.name);
+      const relative = path.relative(root, file).replaceAll(path.sep, '/');
       if (entry.isDirectory()) { walk(file); continue; }
-      if (!entry.isFile() || !file.endsWith('.html') || file === 'referenz/aktualisierung/index.html') continue;
+      if (!entry.isFile() || !file.endsWith('.html') || relative === 'referenz/aktualisierung/index.html') continue;
       const original = fs.readFileSync(file, 'utf8');
-      let html = original.replace(new RegExp(`<!-- ${marker}:start -->[\\s\\S]*?<!-- ${marker}:end -->\\s*`, 'g'), '');
+      let html = original.replace(new RegExp(`<!-- ${marker}:start -->[\\s\\S]*?<!-- ${marker}:end -->`, 'g'), '');
       const groups = new Map();
       const urls = new Set();
       for (const match of html.matchAll(/<a\b[^>]*\bhref=["']([^"']+)["']/gi)) {
         try {
-          const url = new URL(match[1].replaceAll('&amp;', '&'), origin+'/'+file);
+          const url = new URL(match[1].replaceAll('&amp;', '&'), origin+'/'+relative);
           const group = targets.get(key(url));
           if (group) { groups.set(group.id, group); urls.add(key(url)); }
         } catch { /* Unrelated non-URL anchors remain untouched. */ }
@@ -52,10 +55,14 @@ export function applyPublicationErratumNotices() {
         const at = hero ? start+hero[0].length : start;
         html = html.slice(0, at)+note+html.slice(at);
       }
-      if (html !== original) { fs.writeFileSync(file, html); changed.push(file); }
+      if (html !== original) { fs.writeFileSync(file, html); changed.push(relative); }
     }
   }
-  walk('.');
+  walk(root);
   console.log(`Historical PDF erratum: ${changed.length} publication surfaces updated.`);
   return changed;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  applyPublicationErratumNotices(process.argv[2] || '.');
 }

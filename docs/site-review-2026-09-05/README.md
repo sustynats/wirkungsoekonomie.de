@@ -15,12 +15,12 @@ Die Prüfung umfasst den vollständigen erzeugten öffentlichen HTML-Bestand und
 - Veröffentlichungskorrekturen werden bei jedem Artefaktbau wieder angewendet: 118 direkte Linkkorrekturen, 96 wiederhergestellte Abschnittsziele und eindeutige Inhalts-IDs auf 56 Seiten im geprüften Lauf. `data-*-id`-Attribute und interaktive Formulare werden dabei nicht als Inhalts-IDs behandelt.
 - Zusätzlich 162 veraltete Vorspann-Einträge aus erzeugten Inhaltsverzeichnissen entfernt und 525 unmittelbar benachbarte identische Download-Schaltflächen auf 132 Seiten zusammengeführt. Unbekannte Abschnittstitel, fachliche Verweise und geskriptete Aktionen bleiben erhalten. Die ältere Suchadresse `/suche/` erhält beim Weiterleiten Suchbegriff und Sprungziel.
 - Die Journalfilter gleichen historisch unterschiedliche Umlaut-Schreibweisen anhand der vorhandenen Schlagwortbeschriftungen ab. `#tag-buergerenergie` und `#tag-burgerenergie` finden denselben Beitrag; Filterleiste, nachgeladene Karten, Aktivzustand und verständliche Statusmeldung bleiben zusammenhängend.
-- Das zusätzliche PDF-Erratum präzisiert Fundstellen zu WÖk-IDs, T-SROI und Sprache in neun Publikationen. Im geprüften Artefakt verweisen 281 Publikations- und Leseseiten darauf. Bei zehn verlinkten Originaldateien waren neun bytegleich mit den lokalen Prüfvorlagen; bei einer unterschieden sich die Bytes, während Seitenzahl und extrahierter Text auf allen 104 Seiten übereinstimmten. Die Seitenangaben wurden gegen die öffentlichen Dateien geprüft.
+- Das zusätzliche PDF-Erratum präzisiert Fundstellen zu WÖk-IDs, T-SROI und Sprache in neun Publikationen. Im geprüften Artefakt verweisen 283 Publikations- und Leseseiten darauf. Der abschließende Artefaktbau setzt die Hinweise nach allen Leseseiten-Generatoren erneut ein; ein Regressionstest prüft Wiederherstellung und Idempotenz einschließlich Leerraum. Bei zehn verlinkten Originaldateien waren neun bytegleich mit den lokalen Prüfvorlagen; bei einer unterschieden sich die Bytes, während Seitenzahl und extrahierter Text auf allen 104 Seiten übereinstimmten. Die Seitenangaben wurden gegen die öffentlichen Dateien geprüft.
 - PDF-Manifeste mit SHA-256, Seitenzahlen, Originalbezug und Hashes der Inhaltsquellen. Ein veränderter Erklärinhalt ohne angepasste PDF-Fassung blockiert die Veröffentlichung.
 
 ## Nachweise und Grenzen
 
-Der Inventarlauf erfasste 16.410 HTML-Seiten, davon 15.215 indexierbar. Es gab keine fehlenden internen Dateiziele im überprüften Artefakt. Der gesonderte Produktions-Linkcheck bestand ebenfalls. Navigationsprüfung, Quellenhierarchie, Glossarqualität, staatliche Prüfarchitektur, T-SROI-Rechenlogik, Wirkungsradar-Qualität, 13 gezielte Tests, Artefaktprüfung, Datenschutzprüfung und Größenlimit bestanden. Das Artefakt umfasst rund 784 MiB und bleibt unter dem bestehenden Limit von 950 MiB.
+Der Inventarlauf erfasste 16.410 HTML-Seiten, davon 15.215 indexierbar. Es gab keine fehlenden internen Dateiziele im überprüften Artefakt. Der gesonderte Produktions-Linkcheck bestand ebenfalls. Navigationsprüfung, Quellenhierarchie, Glossarqualität, staatliche Prüfarchitektur, T-SROI-Rechenlogik, Wirkungsradar-Qualität, 14 gezielte Tests, Artefaktprüfung, Datenschutzprüfung und Größenlimit bestanden. Das Artefakt umfasst rund 784 MiB und bleibt unter dem bestehenden Limit von 950 MiB.
 
 Desktop und Mobilansicht, Methodenkatalogfilter, Suche und Rechner wurden im Browser geprüft. Die Impact-Demo sperrt ohne dokumentierte Grenze/Zurechnung, öffnet bei vollständigen Beispielangaben und sperrt bei roter Linie wieder. Neue Erklär-PDFs und Addendum wurden seitenweise gerendert; bei den Lesefassungen wurden Ergänzung, Übergang zur Ausgangsfassung, Seitenlabels und repräsentative Originalseiten geprüft.
 
@@ -39,7 +39,7 @@ Die Umsetzung erfolgt auf dem vorhandenen GitHub-Pages-Hosting. Kein Vercel-Buil
 ## Wiederholbare Prüfungen
 
 ```sh
-node --test tests/site/browser-search.test.mjs tests/site/public-normalization.test.mjs
+node --test tests/site/browser-search.test.mjs tests/site/public-normalization.test.mjs tests/site/publication-erratum.test.mjs
 WOEK_PDF_BUILD_MODE=verify SOURCE_DATE_EPOCH=1787270400 npm run build
 npm run build:parlament-info
 npm run build:artifact
