@@ -1,0 +1,187 @@
+{
+  "schema_version": "woek-source-bound-full-text-1.0",
+  "artifact": {
+    "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+    "title": "Wahlprogramm Abgeordnetenhauswahl 2026",
+    "version": "v4.1",
+    "url": "https://spd.berlin/media/2026/08/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf",
+    "sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
+    "byte_length": 663059,
+    "page_count": 66,
+    "media_type": "application/pdf",
+    "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+    "publication_status": "PARTY_APPROVED_FINAL_ELECTION_PROGRAMME"
+  },
+  "extraction": {
+    "method": "Verbatim #240/5560493492 canonical source table, independently hash/locator-bound to frozen final PDF ledger",
+    "source_unit_count": 16,
+    "physical_scope": [
+      26
+    ],
+    "excluded_previously_consumed_cross_page_objects": [
+      "BE-SPD-2026-SU-0302"
+    ]
+  },
+  "source_units": [
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0303",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b004@42.52,211.34,269.99,243.45",
+      "source_text_sha256": "fb44e2a2b53ad77ca929ee0549196a3fd5738c17e0ca23ad3fd8708eb8eb4aa1",
+      "source_text": "Straßenverkehr – sichere Infrastruktur und klimafreundlich"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0304",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b005@42.52,252.45,283.19,356.83",
+      "source_text_sha256": "f1aac7d0d973d7a63f2ec2e64762b1f5947afa257239639aba25fa1c2e257091",
+      "source_text": "Das Straßennetz bleibt zentral für die Funktionsfähigkeit der Stadt. Busse, Rettungsdienste, Feuerwehr, Stadtreinigung und Gewerbeverkehr brauchen leistungsfähige und sichere Wege, einschließlich intakter Brücken. Den motorisierten Individualverkehr denken wir mit, ohne ihn zur unverhältnismäßigen Belastung für Sicherheit und Infrastruktur werden zu lassen."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0305",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b006@42.52,366.55,292.39,510.53",
+      "source_text_sha256": "b17a0565cfb65b13c1c7f03bcb05eb58f50f07389ad36e64e129b55dad4ebbb6",
+      "source_text": "Statt die A100 weiterzubauen, setzen wir auf den Erhalt unserer Straßen und Brücken sowie auf nachhaltige Mobilität. Wir setzen uns beim Bund dafür ein, dass Investitionsmittel stärker als bisher für die Sanierung von Straßen und Brücken sowie den Ausbau des Öffentlichen Nahverkehrs eingesetzt werden. Für den Anschluss Treptower Park entwickeln wir ein Verkehrskonzept, damit die Autobahn dort dauerhaft endet und das Verkehrschaos in den angrenzenden Kiezen beendet wird."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0306",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b007@42.52,520.26,288.87,598.24",
+      "source_text_sha256": "8825bd354fa32cf45a47d2ba602c2f2c26172653753dbed2e274fa8f04a2036b",
+      "source_text": "Wir bauen die Tangentialverbindung Ost als Straße, ohne einen späteren parallelen S-Bahn-Ausbau zu behindern. Neue Stadtteile planen wir autoarm, priorisieren Carsharingparkplätze und errichten Kiezparkhäuser – wo möglich auch in bestehenden Quartieren."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0307",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b008@42.52,607.96,281.66,646.34",
+      "source_text_sha256": "5a8397c8c20a28b0f662364cb2d26adaa5c7326538b19468e25f7154f0212176",
+      "source_text": "Für Pendler*innen werten wir Park-and-Ride- Anlagen mit Beleuchtung, Wetterschutz, Ladepunkten, Toiletten und Jelbi-Verknüpfung auf."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0308",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b009@42.52,657.06,263.98,689.17",
+      "source_text_sha256": "bddb932b99dcc99db41a9c18c545c37678927e3ce64997f57c76b3923fef7566",
+      "source_text": "Parkplätze – verlässliche, langfristige Reduzierung"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0309",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b010@42.52,698.17,285.91,749.75",
+      "source_text_sha256": "8b473c89b1cd2fd4f98a9f99582b21c8252d12f758625ebb87d1b9cacac323a2",
+      "source_text": "Wir weiten Parkraumbewirtschaftungszonen aus, entlasten Anwohnende bei der Parkplatzsuche und kontrollieren effizienter mit Scan-Cars. Die Gebühren für Anwohnerparkausweise erhöhen wir."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0310",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b011@304.73,69.84,550.20,108.22",
+      "source_text_sha256": "d1df1113b4f35aa12226990a3f23c81beb714d972bf0c4101b2b43a027cde74d",
+      "source_text": "Die Einnahmen verwenden wir zweckgebunden für den Umweltverbund (ÖPNV, Rad- und Fußverkehr) und für Kiezparkhäuser."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0311",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b012@304.73,117.94,548.55,182.72",
+      "source_text_sha256": "9850fedd0357b660876298fb7c396807866365d7def3b53814464987a80c0b44",
+      "source_text": "Wir ermöglichen außerdem, dass Anwohner*innen Stellplätze von Supermärkten, Behörden oder Parkhäusern außerhalb der Öffnungszeiten nutzen können. Ein digitales Parkleitsystem soll den Parksuchverkehr deutlich reduzieren."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0312",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b013@304.73,192.44,548.13,244.02",
+      "source_text_sha256": "7bea65f223e7446cecc7566c110232d9a5ae280889228b0665b7368c98f527e3",
+      "source_text": "Für den Wirtschaftsverkehr bauen wir Gewerbekurzzeitparkplätze und Ladezonen massiv aus, damit Lieferdienste, Handwerker*innen und Pflegekräfte sichere Stellflächen finden."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0313",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b014@304.72,254.74,478.76,270.06",
+      "source_text_sha256": "c6526d728fd90c730a2ef683c6d86cc91b8df80ab6c89cb3319a3f2102145c46",
+      "source_text": "Ausbau der Ladeinfrastruktur"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0314",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b015@304.72,279.06,543.83,343.84",
+      "source_text_sha256": "205d142222abe95f28ee3cbe028154e918979f9afd12a8ace0759a2987d4273b",
+      "source_text": "Für mehr Elektromobilität setzen wir den Ausbau öffentlicher Ladesäulen konsequent fort und regen zusätzliche Ladepunkte auf Parkplätzen des Einzelhandels an. Schnelles Laden beim Einkaufen soll zum neuen Standard werden."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0315",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b016@304.72,354.55,552.02,369.87",
+      "source_text_sha256": "833536294379b3c5041025383577a4011cd45da89cf442a4b41c475dcfda8dc5",
+      "source_text": "Verkehrssicherheit – Vision Zero umsetzen"
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0316",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b017@304.72,378.87,551.07,470.05",
+      "source_text_sha256": "53a85b03b88caa8759576864144570f6f3e8604069bbc852f91e4824eb3e2761",
+      "source_text": "Wir stehen zur Vision Zero: keine Toten und Schwerverletzten im Straßenverkehr. Verkehrsberuhigung in den Kiezen bleibt dafür das wirksamste Mittel. Wir unterstützen Initiativen der Anwohner*innen und wirken auf Navigationsanbieter ein, um Durchgangsverkehr zu vermeiden."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0317",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b018@304.72,479.77,553.28,544.55",
+      "source_text_sha256": "4b138ba1ce6c4603a05d839dee49593aa44c49b4139d1d91d66ab8895d3cf104",
+      "source_text": "Tempo 50 auf bisherigen Tempo-30-Strecken lehnen wir ab. Tempo 30 richten wir besonders rund um Kitas, Schulen, Spielplätze und Seniorenheime ein und nutzen die neuen Spielräume der Straßenverkehrsordnung konsequent."
+    },
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "pdf_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_text_sha256": "e3c5fc305f5fd4ace2b9fea898e1c29592106f44545520d815a6d7bb36204a2f",
+      "source_text": "Nach dem Pariser Modell der „temporären Schulstraßen“ werden wir die rechtlichen Voraussetzungen schaffen, geeignete Straßen vor Schulen und Kitas auch durch Absperrungen zu sichern. Kinder schützen wir mit abgegrenzten Radwegen, getrennten Abbiegespuren, temporären Spielstraßen und anderen baulichen Maßnahmen sowie speziellen Verkehrskonzepten, Lotsendiensten und Verkehrserziehung. Wir setzen auf konsequente Kontrollen sowie den Ausbau stationärer und mobiler Überwachung von Tempo, Lärm und Rotlichtverstößen. Die Einnahmen verwenden wir zweckgebunden. Die Fahrradstaffel der Polizei bauen wir aus und statten die Ordnungsämter besser aus."
+    }
+  ]
+}

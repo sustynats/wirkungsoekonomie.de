@@ -1,0 +1,1722 @@
+{
+  "schema_version": "woek-explicit-fach-handoff-2.0",
+  "handoff_id": "BE-SPD-P26-CANONICAL-EXPLICIT-FACH-2026-V1",
+  "base_main_commit": "7e9f676711af9cbfd6df7f8ddc3468e952c2ce00",
+  "artifact": {
+    "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+    "title": "Wahlprogramm Abgeordnetenhauswahl 2026",
+    "version": "v4.1",
+    "url": "https://spd.berlin/media/2026/08/SPD_Berlin_Wahlprogramm_20260521-v4-1.pdf",
+    "sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
+    "byte_length": 663059,
+    "page_count": 66,
+    "media_type": "application/pdf",
+    "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
+    "publication_status": "PARTY_APPROVED_FINAL_ELECTION_PROGRAMME"
+  },
+  "authoritative_markdowns": [
+    {
+      "issue_comment_id": 5560493492,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5560493492",
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p26-authoritative-handoff.md",
+      "file_sha256": "3a0b848ae9461bbd37b759ac001ac066f915f5a0bc9175d283af0cd6ad4601f6"
+    }
+  ],
+  "controller": {
+    "issue_comment_id": 5560496111,
+    "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241#issuecomment-5560496111",
+    "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p26-controller.md",
+    "file_sha256": "85583a565c4ff5cbc53863503c053f3d1800159f7d35f3e15294ee0abfbcb7a6"
+  },
+  "archive_encoding": "GitHub comment body preserved verbatim with one terminal LF",
+  "source_ledger": {
+    "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/manifest.json",
+    "file_sha256": "8711be87e5cc9965f78d799451e1c643422f512a4b2a5aa626caf9eb71b934d0",
+    "disposition": "SOURCE_SCAFFOLD_ONLY_NOT_FACH_AUTHORITY"
+  },
+  "full_source_proof": {
+    "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p26-full-source-v1.json",
+    "file_sha256": "7abc70904600c7fcdd2091eda3a743e52ecf877a9329945dd371ce691bd72b37"
+  },
+  "protected_source_files": [
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p01-p06.json",
+      "file_sha256": "f5d5a2475f5001712c288e0024f96b95313bdcd46f05ba1ca7745ebd0f26a9bf"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p07-p12.json",
+      "file_sha256": "71a533073c18e1a4280dd1727e8d5dfa3f93a31405260463bd92147729a52b03"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p13-p18.json",
+      "file_sha256": "7bd23c0dd1aeae69cc5a8ddbae8b8ba0913b3fa8f8f4c2a3d4a4655ff9bbae93"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p19-p24.json",
+      "file_sha256": "086b953103409f0036f4ad6cd3462782ca725288b132e49f1cec5ef3965a15cf"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p25-p30.json",
+      "file_sha256": "bb701248fedcb1d9b46fbb38767906483171eaae5029f78bcb875a15502d92cc"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p31-p36.json",
+      "file_sha256": "beb0d1ea1d1b9296a85677804a8030e14caf70d0293713462ab25f047b711d40"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p37-p42.json",
+      "file_sha256": "aa57d276cf65d0e6efb450e5a09ad622de5f22ba5c1316b3a09bdf493074d50a"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p43-p48.json",
+      "file_sha256": "1270f81a6a9ac1b5a82e3d83ecf3cfa9e264e6f1eeee18c659364f0a3f51f9cf"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p49-p54.json",
+      "file_sha256": "e8d02fdc2d7315daef0bb22ab5374f755aac1d0bfbaa23b02f36d3f6c1a9731d"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p55-p60.json",
+      "file_sha256": "34e9ba9b773f6adbcb8391f4a3cad9cf163ff61f62edb25253f2ea96ae3b4b00"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/effect-atoms-p61-p66.json",
+      "file_sha256": "9028b16f3d1f547b6f7b683236e538cef229087808214c42d91031d0d80e28f7"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/manifest.json",
+      "file_sha256": "8711be87e5cc9965f78d799451e1c643422f512a4b2a5aa626caf9eb71b934d0"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p01-p06.json",
+      "file_sha256": "c635a5f2815c486dde462fd592cae009216fa25d533171b42e1f6ac3a9ab418d"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p07-p12.json",
+      "file_sha256": "c4303ff6c157516697d48ddae95018f85aa1efa0b57cbb000d1cbf478396f2c6"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p13-p18.json",
+      "file_sha256": "449c459df51fb96bcd4eab671a0c417c5c41cc155826855ea3946a32b96bf3d2"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p19-p24.json",
+      "file_sha256": "31c6012ffc47c4b5512ed03b956737fd27cb125851f68e9906dab43efa0b3cce"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p25-p30.json",
+      "file_sha256": "61af99b516ffc79a896be76b8990726cb1207281bd3cf63bb5a6dca40a6feeab"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p31-p36.json",
+      "file_sha256": "b0eac910f85789a02627515ba32847a78dd50661793c8c42d7e4704f0ccfa994"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p37-p42.json",
+      "file_sha256": "d3e690ac1fab49d2dd922df767ca1e43185c67cb071108d03f62df25d6a101eb"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p43-p48.json",
+      "file_sha256": "78ec42faa3da5f009597c068e1aa27d2b9a5a0fa071ccb786bbec5ebbeb2bc27"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p49-p54.json",
+      "file_sha256": "4f4fa8aa443edf1cb74107987c0124b9d8d5cab90269840b1730863ea743efd9"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p55-p60.json",
+      "file_sha256": "c8153b37979c385897ef2ff4d9d772020a00ab7b795b022c74d2b9fe13fa603c"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-v1/source-units-p61-p66.json",
+      "file_sha256": "c2fdde8a25737cbf5b6018a3513a01865926138f633cba3e0325bbc61c5e707b"
+    }
+  ],
+  "protected_handoffs": [
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p22-explicit-v1.json",
+      "file_sha256": "e5c8f9d3b18aa4f055239156fd711d7a2daf021b2d25dd97ed2be60afdebce9e"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p23-explicit-v1.json",
+      "file_sha256": "95e2b0b205c53e80332652221de330d25e487e849b0e8f759b880a71f82a33a5"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p24-explicit-v1.json",
+      "file_sha256": "ae856310c8381fa2a5ba3cbfaee545616ce1deecfc47ab72c1a6043442bca5f5"
+    },
+    {
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-explicit-v1.json",
+      "file_sha256": "93dd558bf32982909bec90c0854f3b170458d28178e199c6e252c11fc4776720"
+    }
+  ],
+  "assessment_contract_verbatim": "### Current-law / current-delivery guards used for Additionality and competence only\n\n- A100 BA17 is not a zero-baseline Berlin-only project. The Bundesregierung reported it in 2026 as a **laufendes/fest disponiertes federal project** with the federal planning mandate to Autobahn GmbH; therefore a Berlin programme sentence cannot be treated as unilateral cancellation authority: https://www.bundestag.de/presse/hib/kurzmeldungen-1150816\n- TVO is an active Berlin road-planning project; route/design, approval, environmental, cost and traffic-redistribution effects remain project-specific rather than inferable from the programme sentence: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/infrastruktur/strassenbau/tangentiale-verbindung-ost/\n- Parkraumbewirtschaftung already exists; Berlin states that it influences parking supply/demand and is implemented by the districts. Current parking-data work supports measuring occupation/compliance rather than treating nominal zone expansion as outcome: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrsplanung/strassen-und-kfz-verkehr/parkraumbewirtschaftung/ and https://www.berlin.de/weniger-dicke-luft/projekte-und-massnahmen/parkdatenanalyse/\n- Scan-Car implementation remains dependent on adequate legal basis, digital permit/data infrastructure, error handling and rights safeguards; do not treat the instrument as settled merely because it is named: https://www.parlament-berlin.de/adosservice/19/Haupt/vorgang/h19-2496-v.pdf\n- Vision Zero is already a Berlin legal/policy baseline; the sentence is therefore a goal restatement, while concrete measures below may be effect-bearing: https://www.berlin.de/sen/uvk/mobilitaet-und-verkehr/verkehrspolitik/verkehrssicherheit/mobilitaetsgesetz/\n- Current StVO §45 contains specific scope for speed restrictions including areas around crossings, Kitas, schools, playgrounds, care facilities and other vulnerable-user sites; actual site/traffic-law application still matters: https://www.gesetze-im-internet.de/stvo_2013/__45.html\n- Berlin already has a school-mobility policy/delivery baseline and district school-zone/temporary-school-street practice; P26 is not analysed as creation from zero: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1706676.php and https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen/foerderung-des-fussverkehrs-1496456.php\n- Charging infrastructure is already expanding. Senate 23.06.2026 reports 3,700 public-road charge points at end-2025 plus about 3,400 publicly accessible points on private land. P26 therefore concerns continuation/expansion and spatial/service quality, not a zero baseline: https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1685004.php",
+  "cross_object_guards_verbatim": "## Batch-wide Fach guards\n\n- `DNS_REFERENCE = NOT_AUTHORIZED_FOR_P26`. No DNS/SDG registry mapping is created by this batch.\n- `RECOMMENDATION = NONE_PROVEN_FOR_P26`. No better-option record is authorised.\n- `NONCOMPENSATION`: do not offset safety/access gains in one object against induced traffic, land/public-space, privacy, fiscal, distribution or accessibility harms in another. Preserve each pathway separately.\n- Competence is object-specific: federal A100/budget advocacy is not treated as direct Berlin implementation; Berlin traffic-law/project actions are still conditioned on their applicable legal/design process.\n- Existing/current programmes and legal baselines are used only to establish Additionality/Lifecycle; programme claims are not converted into current facts.\n- Output ≠ Outcome throughout: installed chargers, zones, parking spaces, enforcement devices, concepts, patrol staff or expenditure are not themselves proof of improved system state.",
+  "terminal_records": [
+    {
+      "object_id": "BE-SPD-2026-SU-0303",
+      "source_unit_id": "BE-SPD-2026-SU-0303",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b004@42.52,211.34,269.99,243.45",
+      "source_text": "Straßenverkehr – sichere Infrastruktur und klimafreundlich",
+      "source_text_sha256": "fb44e2a2b53ad77ca929ee0549196a3fd5738c17e0ca23ad3fd8708eb8eb4aa1",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_SECTION_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "— section heading\n`terminal_fach_state = NON_EFFECT_SECTION_HEADING_REVIEWED` — zero-count.",
+      "fach_source_sha256": "f1c6319075671a61501a4a0d91f84be830c30fda388e07ea81f67daa7c8b8618"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0304",
+      "source_unit_id": "BE-SPD-2026-SU-0304",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b005@42.52,252.45,283.19,356.83",
+      "source_text": "Das Straßennetz bleibt zentral für die Funktionsfähigkeit der Stadt. Busse, Rettungsdienste, Feuerwehr, Stadtreinigung und Gewerbeverkehr brauchen leistungsfähige und sichere Wege, einschließlich intakter Brücken. Den motorisierten Individualverkehr denken wir mit, ohne ihn zur unverhältnismäßigen Belastung für Sicherheit und Infrastruktur werden zu lassen.",
+      "source_text_sha256": "f1aac7d0d973d7a63f2ec2e64762b1f5947afa257239639aba25fa1c2e257091",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_SYSTEM_PROBLEM_AND_GOAL_FRAME_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "— system context / proportionality goal\nWhole source unit: `NON_EFFECT_SYSTEM_PROBLEM_AND_GOAL_FRAME_REVIEWED` — zero-count.\n\nReason: the passage states the functional importance of roads and service users plus a proportionality goal for motorised individual traffic. It specifies no independent intervention. Do not convert claimed road-network importance into an effect object.",
+      "fach_source_sha256": "3d78997b40f5785d780821fdbd2509e61a83aa20884a630c9255d8d4bea1ee68"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0305",
+      "source_unit_id": "BE-SPD-2026-SU-0305",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b006@42.52,366.55,292.39,510.53",
+      "source_text": "Statt die A100 weiterzubauen, setzen wir auf den Erhalt unserer Straßen und Brücken sowie auf nachhaltige Mobilität. Wir setzen uns beim Bund dafür ein, dass Investitionsmittel stärker als bisher für die Sanierung von Straßen und Brücken sowie den Ausbau des Öffentlichen Nahverkehrs eingesetzt werden. Für den Anschluss Treptower Park entwickeln wir ein Verkehrskonzept, damit die Autobahn dort dauerhaft endet und das Verkehrschaos in den angrenzenden Kiezen beendet wird.",
+      "source_text_sha256": "b17a0565cfb65b13c1c7f03bcb05eb58f50f07389ad36e64e129b55dad4ebbb6",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0305-A01",
+        "BE-SPD-2026-SU-0305-C01-e520cce28451",
+        "BE-SPD-2026-SU-0305-C02-b84646243b7b",
+        "BE-SPD-2026-SU-0305-C03-b7dd37c3de2b",
+        "BE-SPD-2026-SU-0305-C04-71248cbe3563"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0306",
+      "source_unit_id": "BE-SPD-2026-SU-0306",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b007@42.52,520.26,288.87,598.24",
+      "source_text": "Wir bauen die Tangentialverbindung Ost als Straße, ohne einen späteren parallelen S-Bahn-Ausbau zu behindern. Neue Stadtteile planen wir autoarm, priorisieren Carsharingparkplätze und errichten Kiezparkhäuser – wo möglich auch in bestehenden Quartieren.",
+      "source_text_sha256": "8825bd354fa32cf45a47d2ba602c2f2c26172653753dbed2e274fa8f04a2036b",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0306-A01",
+        "BE-SPD-2026-SU-0306-A02",
+        "BE-SPD-2026-SU-0306-A03",
+        "BE-SPD-2026-SU-0306-C01-9d048a842783"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0307",
+      "source_unit_id": "BE-SPD-2026-SU-0307",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b008@42.52,607.96,281.66,646.34",
+      "source_text": "Für Pendler*innen werten wir Park-and-Ride- Anlagen mit Beleuchtung, Wetterschutz, Ladepunkten, Toiletten und Jelbi-Verknüpfung auf.",
+      "source_text_sha256": "5a8397c8c20a28b0f662364cb2d26adaa5c7326538b19468e25f7154f0212176",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0307-C01-5a8397c8c20a"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0308",
+      "source_unit_id": "BE-SPD-2026-SU-0308",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b009@42.52,657.06,263.98,689.17",
+      "source_text": "Parkplätze – verlässliche, langfristige Reduzierung",
+      "source_text_sha256": "bddb932b99dcc99db41a9c18c545c37678927e3ce64997f57c76b3923fef7566",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_SECTION_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "`NON_EFFECT_SECTION_HEADING_REVIEWED` — zero-count.",
+      "fach_source_sha256": "426472ac418a5283e182ed09ca2f4056275f4f616fd9c6b3b4f0a79c08daadd6"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0309",
+      "source_unit_id": "BE-SPD-2026-SU-0309",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b010@42.52,698.17,285.91,749.75",
+      "source_text": "Wir weiten Parkraumbewirtschaftungszonen aus, entlasten Anwohnende bei der Parkplatzsuche und kontrollieren effizienter mit Scan-Cars. Die Gebühren für Anwohnerparkausweise erhöhen wir.",
+      "source_text_sha256": "8b473c89b1cd2fd4f98a9f99582b21c8252d12f758625ebb87d1b9cacac323a2",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0309-A01",
+        "BE-SPD-2026-SU-0309-A02",
+        "BE-SPD-2026-SU-0309-A03",
+        "BE-SPD-2026-SU-0309-A04"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0310",
+      "source_unit_id": "BE-SPD-2026-SU-0310",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b011@304.73,69.84,550.20,108.22",
+      "source_text": "Die Einnahmen verwenden wir zweckgebunden für den Umweltverbund (ÖPNV, Rad- und Fußverkehr) und für Kiezparkhäuser.",
+      "source_text_sha256": "d1df1113b4f35aa12226990a3f23c81beb714d972bf0c4101b2b43a027cde74d",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0310-C01-d1df1113b4f3"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0311",
+      "source_unit_id": "BE-SPD-2026-SU-0311",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b012@304.73,117.94,548.55,182.72",
+      "source_text": "Wir ermöglichen außerdem, dass Anwohner*innen Stellplätze von Supermärkten, Behörden oder Parkhäusern außerhalb der Öffnungszeiten nutzen können. Ein digitales Parkleitsystem soll den Parksuchverkehr deutlich reduzieren.",
+      "source_text_sha256": "9850fedd0357b660876298fb7c396807866365d7def3b53814464987a80c0b44",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0311-A01",
+        "BE-SPD-2026-SU-0311-A02"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0312",
+      "source_unit_id": "BE-SPD-2026-SU-0312",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b013@304.73,192.44,548.13,244.02",
+      "source_text": "Für den Wirtschaftsverkehr bauen wir Gewerbekurzzeitparkplätze und Ladezonen massiv aus, damit Lieferdienste, Handwerker*innen und Pflegekräfte sichere Stellflächen finden.",
+      "source_text_sha256": "7bea65f223e7446cecc7566c110232d9a5ae280889228b0665b7368c98f527e3",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0312-C01-7bea65f223e7"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0313",
+      "source_unit_id": "BE-SPD-2026-SU-0313",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b014@304.72,254.74,478.76,270.06",
+      "source_text": "Ausbau der Ladeinfrastruktur",
+      "source_text_sha256": "c6526d728fd90c730a2ef683c6d86cc91b8df80ab6c89cb3319a3f2102145c46",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_SECTION_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "`NON_EFFECT_SECTION_HEADING_REVIEWED` — zero-count.",
+      "fach_source_sha256": "426472ac418a5283e182ed09ca2f4056275f4f616fd9c6b3b4f0a79c08daadd6"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0314",
+      "source_unit_id": "BE-SPD-2026-SU-0314",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b015@304.72,279.06,543.83,343.84",
+      "source_text": "Für mehr Elektromobilität setzen wir den Ausbau öffentlicher Ladesäulen konsequent fort und regen zusätzliche Ladepunkte auf Parkplätzen des Einzelhandels an. Schnelles Laden beim Einkaufen soll zum neuen Standard werden.",
+      "source_text_sha256": "205d142222abe95f28ee3cbe028154e918979f9afd12a8ace0759a2987d4273b",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0314-A01",
+        "BE-SPD-2026-SU-0314-C01-1c1dbffca069",
+        "BE-SPD-2026-SU-0314-C02-1a244eca44aa"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0315",
+      "source_unit_id": "BE-SPD-2026-SU-0315",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b016@304.72,354.55,552.02,369.87",
+      "source_text": "Verkehrssicherheit – Vision Zero umsetzen",
+      "source_text_sha256": "833536294379b3c5041025383577a4011cd45da89cf442a4b41c475dcfda8dc5",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "NON_EFFECT_SECTION_HEADING_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "`NON_EFFECT_SECTION_HEADING_REVIEWED` — zero-count.",
+      "fach_source_sha256": "426472ac418a5283e182ed09ca2f4056275f4f616fd9c6b3b4f0a79c08daadd6"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0316",
+      "source_unit_id": "BE-SPD-2026-SU-0316",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b017@304.72,378.87,551.07,470.05",
+      "source_text": "Wir stehen zur Vision Zero: keine Toten und Schwerverletzten im Straßenverkehr. Verkehrsberuhigung in den Kiezen bleibt dafür das wirksamste Mittel. Wir unterstützen Initiativen der Anwohner*innen und wirken auf Navigationsanbieter ein, um Durchgangsverkehr zu vermeiden.",
+      "source_text_sha256": "53a85b03b88caa8759576864144570f6f3e8604069bbc852f91e4824eb3e2761",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0316-A01",
+        "BE-SPD-2026-SU-0316-C01-f3345c3cec65",
+        "BE-SPD-2026-SU-0316-C02-05ed7c007adc",
+        "BE-SPD-2026-SU-0316-A01-C01-1f88162bfdb5",
+        "BE-SPD-2026-SU-0316-A01-C02-159c79f45670"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0317",
+      "source_unit_id": "BE-SPD-2026-SU-0317",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b018@304.72,479.77,553.28,544.55",
+      "source_text": "Tempo 50 auf bisherigen Tempo-30-Strecken lehnen wir ab. Tempo 30 richten wir besonders rund um Kitas, Schulen, Spielplätze und Seniorenheime ein und nutzen die neuen Spielräume der Straßenverkehrsordnung konsequent.",
+      "source_text_sha256": "4b138ba1ce6c4603a05d839dee49593aa44c49b4139d1d91d66ab8895d3cf104",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0317-A01",
+        "BE-SPD-2026-SU-0317-A02",
+        "BE-SPD-2026-SU-0317-A03"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_text": "Nach dem Pariser Modell der „temporären Schulstraßen“ werden wir die rechtlichen Voraussetzungen schaffen, geeignete Straßen vor Schulen und Kitas auch durch Absperrungen zu sichern. Kinder schützen wir mit abgegrenzten Radwegen, getrennten Abbiegespuren, temporären Spielstraßen und anderen baulichen Maßnahmen sowie speziellen Verkehrskonzepten, Lotsendiensten und Verkehrserziehung. Wir setzen auf konsequente Kontrollen sowie den Ausbau stationärer und mobiler Überwachung von Tempo, Lärm und Rotlichtverstößen. Die Einnahmen verwenden wir zweckgebunden. Die Fahrradstaffel der Polizei bauen wir aus und statten die Ordnungsämter besser aus.",
+      "source_text_sha256": "e3c5fc305f5fd4ace2b9fea898e1c29592106f44545520d815a6d7bb36204a2f",
+      "source_object_kind": "SOURCE_UNIT",
+      "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "covered_by": [
+        "BE-SPD-2026-SU-0318-A01",
+        "BE-SPD-2026-SU-0318-A02",
+        "BE-SPD-2026-SU-0318-A03",
+        "BE-SPD-2026-SU-0318-A02-C01-4f5e17fb2dee",
+        "BE-SPD-2026-SU-0318-A02-C02-942fe8b91970",
+        "BE-SPD-2026-SU-0318-A02-C03-68ab5039af41",
+        "BE-SPD-2026-SU-0318-A02-C04-fa5c51daeb15",
+        "BE-SPD-2026-SU-0318-A02-C05-2947179abeba",
+        "BE-SPD-2026-SU-0318-A02-C06-fa1ef0073bc4",
+        "BE-SPD-2026-SU-0318-A02-C07-e22c7a91870d",
+        "BE-SPD-2026-SU-0318-C01-70453721fea7",
+        "BE-SPD-2026-SU-0318-C02-2b13d789a769",
+        "BE-SPD-2026-SU-0318-A03-C01-55c6bb7d8e5b",
+        "BE-SPD-2026-SU-0318-A03-C02-6cfdb1c0bc2b"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0305-A01",
+      "source_unit_id": "BE-SPD-2026-SU-0305",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b006@42.52,366.55,292.39,510.53",
+      "source_text": "Für den Anschluss Treptower Park entwickeln wir ein Verkehrskonzept, damit die Autobahn dort dauerhaft endet und das Verkehrschaos in den angrenzenden Kiezen beendet wird.",
+      "source_text_sha256": "90f60ffaa7d94fe32a2ce477e0c0bf37d73f96a9b5e0f6ddec2b912011d47ccc",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "5. Existing exact atom `BE-SPD-2026-SU-0305-A01`\n   - text `Für den Anschluss Treptower Park entwickeln wir ein Verkehrskonzept, damit die Autobahn dort dauerhaft endet und das Verkehrschaos in den angrenzenden Kiezen beendet wird.`\n   - SHA-256 `90f60ffaa7d94fe32a2ce477e0c0bf37d73f96a9b5e0f6ddec2b912011d47ccc`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `TREPTOWER_PARK_TRAFFIC_CONCEPT_DESIGN_IMPLEMENTATION_AND_NETWORK_REDISTRIBUTION_UNRESOLVED`\n   - exact reason: a traffic concept is promised, but concrete street layout, access rules, public/active transport changes, traffic redistribution, implementation route and affected adjacent streets are not specified. The claimed end of `Verkehrschaos` is an expected outcome, not evidence.",
+      "fach_source_sha256": "77a4009ff20796e0f1b88a5a6572acb6accf2efab7aec315af5b280c0d7c5e30",
+      "exact_reason_code": "TREPTOWER_PARK_TRAFFIC_CONCEPT_DESIGN_IMPLEMENTATION_AND_NETWORK_REDISTRIBUTION_UNRESOLVED",
+      "exact_reason": "a traffic concept is promised, but concrete street layout, access rules, public/active transport changes, traffic redistribution, implementation route and affected adjacent streets are not specified. The claimed end of `Verkehrschaos` is an expected outcome, not evidence."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0306-A01",
+      "source_unit_id": "BE-SPD-2026-SU-0306",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b007@42.52,520.26,288.87,598.24",
+      "source_text": "Neue Stadtteile planen wir autoarm",
+      "source_text_sha256": "9d83894d248ffce7e3e2f00bdf8cec6876235ba6721c950a6797272d48f7fc1d",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "2. Existing `BE-SPD-2026-SU-0306-A01` / SHA `9d83894d248ffce7e3e2f00bdf8cec6876235ba6721c950a6797272d48f7fc1d` / `Neue Stadtteile planen wir autoarm`\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = POSITIVE_PUBLIC_SPACE_SAFETY_ACTIVE_AND_COLLECTIVE_MOBILITY_POTENTIAL / TRANSIT_SERVICE_ACCESSIBILITY_INCLUSION_AND_SPILLOVER_DEPENDENT`\n   - `evidence_level = MEDIUM_HIGH_SYSTEM_MECHANISM`\n   - Reality: private-car ownership/use, transit/active-mode accessibility, parking/road-space per resident, universal access, deliveries/care/emergency access, spillover parking/traffic in adjacent areas.",
+      "fach_source_sha256": "e1880d385a66a4aa1811650ef0aa4b855e1c8347486ecd92219d33cee876fd34",
+      "impact_direction": "POSITIVE_PUBLIC_SPACE_SAFETY_ACTIVE_AND_COLLECTIVE_MOBILITY_POTENTIAL / TRANSIT_SERVICE_ACCESSIBILITY_INCLUSION_AND_SPILLOVER_DEPENDENT",
+      "evidence_level": "MEDIUM_HIGH_SYSTEM_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0306-A02",
+      "source_unit_id": "BE-SPD-2026-SU-0306",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b007@42.52,520.26,288.87,598.24",
+      "source_text": "priorisieren Carsharingparkplätze",
+      "source_text_sha256": "7d0b467a8908a708d7ccdfb69fb1acda57f8f179a9c5e79f041231794cc9507f",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "3. Existing `BE-SPD-2026-SU-0306-A02` / SHA `7d0b467a8908a708d7ccdfb69fb1acda57f8f179a9c5e79f041231794cc9507f` / `priorisieren Carsharingparkplätze`\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = AMBIVALENT_POSITIVE_SHARED_MOBILITY_AND_CURB_EFFICIENCY_POTENTIAL / PRIVATE_CAR_SUBSTITUTION_UTILISATION_PRICING_AND_INDUCED_TRAVEL_DEPENDENT`\n   - `evidence_level = MEDIUM_MIXED_FOR_NET_MODE_EFFECT`\n   - Reality: private-car substitution vs induced vehicle-km, utilisation, prices/access, curb-space displacement, availability by district/user group.",
+      "fach_source_sha256": "58730550657de36e764ae541d0c34a3b9cbf4fcc32acff3e7071cf587c7e5f77",
+      "impact_direction": "AMBIVALENT_POSITIVE_SHARED_MOBILITY_AND_CURB_EFFICIENCY_POTENTIAL / PRIVATE_CAR_SUBSTITUTION_UTILISATION_PRICING_AND_INDUCED_TRAVEL_DEPENDENT",
+      "evidence_level": "MEDIUM_MIXED_FOR_NET_MODE_EFFECT"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0306-A03",
+      "source_unit_id": "BE-SPD-2026-SU-0306",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b007@42.52,520.26,288.87,598.24",
+      "source_text": "und errichten Kiezparkhäuser – wo möglich auch in bestehenden Quartieren.",
+      "source_text_sha256": "331ca2d282b82ffc18a8bea3353d9d903cb5841da4ccb8adf8d7b92c4f6e94c0",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "4. Existing `BE-SPD-2026-SU-0306-A03` / SHA `331ca2d282b82ffc18a8bea3353d9d903cb5841da4ccb8adf8d7b92c4f6e94c0` / `und errichten Kiezparkhäuser – wo möglich auch in bestehenden Quartieren.`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `KIEZ_PARKING_STRUCTURE_SITE_CAPACITY_PRICING_PUBLIC_COST_CURB_RELEASE_AND_INDUCED_DEMAND_UNRESOLVED`\n   - exact reason: site, capacity, price, public/private financing, surface-parking removal, accessibility, construction footprint and induced/rebound parking demand are not specified. A parking structure can either free public space or add parking supply; net direction is unresolved.",
+      "fach_source_sha256": "2cab57995566965dc68a2512aff4a8d8ba2cd8d6fff6e46e107a94084da4958a",
+      "exact_reason_code": "KIEZ_PARKING_STRUCTURE_SITE_CAPACITY_PRICING_PUBLIC_COST_CURB_RELEASE_AND_INDUCED_DEMAND_UNRESOLVED",
+      "exact_reason": "site, capacity, price, public/private financing, surface-parking removal, accessibility, construction footprint and induced/rebound parking demand are not specified. A parking structure can either free public space or add parking supply; net direction is unresolved."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0309-A01",
+      "source_unit_id": "BE-SPD-2026-SU-0309",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b010@42.52,698.17,285.91,749.75",
+      "source_text": "Wir weiten Parkraumbewirtschaftungszonen aus",
+      "source_text_sha256": "76ffdfbdcfbfb5435558376bae9c18720a5e950056c6d8ad15bf83e17769ac29",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "1. `BE-SPD-2026-SU-0309-A01` / SHA `76ffdfbdcfbfb5435558376bae9c18720a5e950056c6d8ad15bf83e17769ac29` / `Wir weiten Parkraumbewirtschaftungszonen aus`\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = POSITIVE_PARKING_TURNOVER_PUBLIC_SPACE_AND_SEARCH_TRAFFIC_POTENTIAL / ZONE_DESIGN_ENFORCEMENT_SPILLOVER_AND_DISTRIBUTION_DEPENDENT`\n   - `evidence_level = MEDIUM_HIGH_CURRENT_BERLIN_OBSERVATIONAL_PLUS_MECHANISM`\n   - Reality: occupancy/turnover, search time/km, illegal parking, mode/access effects, border-zone spillover, distribution by residents/businesses/visitors.",
+      "fach_source_sha256": "603b498416f4d811217f7c765ecbc7fb8eacf01054e28f03161e49f5606c8de4",
+      "impact_direction": "POSITIVE_PARKING_TURNOVER_PUBLIC_SPACE_AND_SEARCH_TRAFFIC_POTENTIAL / ZONE_DESIGN_ENFORCEMENT_SPILLOVER_AND_DISTRIBUTION_DEPENDENT",
+      "evidence_level": "MEDIUM_HIGH_CURRENT_BERLIN_OBSERVATIONAL_PLUS_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0309-A02",
+      "source_unit_id": "BE-SPD-2026-SU-0309",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b010@42.52,698.17,285.91,749.75",
+      "source_text": "entlasten Anwohnende bei der Parkplatzsuche",
+      "source_text_sha256": "e6875fe54f8b00679fa23aa221361fe50963357e777d7aaa81b7f61e1a247181",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "2. `BE-SPD-2026-SU-0309-A02` / SHA `e6875fe54f8b00679fa23aa221361fe50963357e777d7aaa81b7f61e1a247181` / `entlasten Anwohnende bei der Parkplatzsuche`\n   - `NON_EFFECT_EXPECTED_OUTCOME_CLAIM_REVIEWED` — zero-count; retain as Reality-Check target, not an independent intervention.",
+      "fach_source_sha256": "b494d255cc2b6ad52d755e5d76c4bbc138552a026f57b0f27dfe30b5d9554f1a"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0309-A03",
+      "source_unit_id": "BE-SPD-2026-SU-0309",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b010@42.52,698.17,285.91,749.75",
+      "source_text": "und kontrollieren effizienter mit Scan-Cars.",
+      "source_text_sha256": "0ee55aa8d42b91eb3ef6568aef74bca4146446e1af7b99a75363bda3fc7aa637",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "3. `BE-SPD-2026-SU-0309-A03` / SHA `0ee55aa8d42b91eb3ef6568aef74bca4146446e1af7b99a75363bda3fc7aa637` / `und kontrollieren effizienter mit Scan-Cars.`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `SCAN_CAR_LEGAL_BASIS_DIGITAL_PERMIT_DATA_GOVERNANCE_ERROR_AND_APPEAL_DESIGN_UNRESOLVED`\n   - exact reason: effectiveness and rights effects depend on sufficient legal basis, digital permit coverage, data collection/retention, false positives, human review/appeal, accessibility/exemptions, enforcement staffing and actual compliance response. These are unresolved at programme-object level.",
+      "fach_source_sha256": "367f7053fe0bc18b9973933cb806c2f80c4de34faecaf23f555f54482102741f",
+      "exact_reason_code": "SCAN_CAR_LEGAL_BASIS_DIGITAL_PERMIT_DATA_GOVERNANCE_ERROR_AND_APPEAL_DESIGN_UNRESOLVED",
+      "exact_reason": "effectiveness and rights effects depend on sufficient legal basis, digital permit coverage, data collection/retention, false positives, human review/appeal, accessibility/exemptions, enforcement staffing and actual compliance response. These are unresolved at programme-object level."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0309-A04",
+      "source_unit_id": "BE-SPD-2026-SU-0309",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b010@42.52,698.17,285.91,749.75",
+      "source_text": "Die Gebühren für Anwohnerparkausweise erhöhen wir.",
+      "source_text_sha256": "5b7e71a2a74685e0cb4bda27bde2dd451b17aaa364706a839d9f96acbe615cf0",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "4. `BE-SPD-2026-SU-0309-A04` / SHA `5b7e71a2a74685e0cb4bda27bde2dd451b17aaa364706a839d9f96acbe615cf0` / `Die Gebühren für Anwohnerparkausweise erhöhen wir.`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `RESIDENT_PARKING_PERMIT_FEE_LEVEL_EXEMPTIONS_INCIDENCE_REVENUE_AND_BEHAVIOURAL_RESPONSE_UNRESOLVED`\n   - exact reason: new fee level, exemptions/social safeguards, current eligible population, incidence, revenue use and behavioural/parking-supply response are unspecified; distribution and mobility effects cannot be assigned a net direction.",
+      "fach_source_sha256": "d744e6424cba03b9c87479f68869841afbbc1913c75fc7d05e37bde53628eade",
+      "exact_reason_code": "RESIDENT_PARKING_PERMIT_FEE_LEVEL_EXEMPTIONS_INCIDENCE_REVENUE_AND_BEHAVIOURAL_RESPONSE_UNRESOLVED",
+      "exact_reason": "new fee level, exemptions/social safeguards, current eligible population, incidence, revenue use and behavioural/parking-supply response are unspecified; distribution and mobility effects cannot be assigned a net direction."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0311-A01",
+      "source_unit_id": "BE-SPD-2026-SU-0311",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b012@304.73,117.94,548.55,182.72",
+      "source_text": "Wir ermöglichen außerdem, dass Anwohner*innen Stellplätze von Supermärkten, Behörden oder Parkhäusern außerhalb der Öffnungszeiten nutzen können.",
+      "source_text_sha256": "09589258e6daa8670739870edbc463efe03315b21c508d668eecbbc7f68fa5fd",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "1. `BE-SPD-2026-SU-0311-A01` / SHA `09589258e6daa8670739870edbc463efe03315b21c508d668eecbbc7f68fa5fd` / exact existing text\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = POSITIVE_EXISTING_PARKING_ASSET_UTILISATION_AND_CURB_PRESSURE_POTENTIAL / CONTRACT_ACCESS_SECURITY_PRICING_PROXIMITY_AND_AVAILABILITY_DEPENDENT`\n   - `evidence_level = MEDIUM_MECHANISM`\n   - Reality: additional usable spaces without new construction, actual take-up, curb-space/illegal-parking change, price/distance, security/accessibility and operator participation.",
+      "fach_source_sha256": "f44331e64478e4c5550a3ab29b3b6f1df21d7b357a7baa1972363c641dc975eb",
+      "impact_direction": "POSITIVE_EXISTING_PARKING_ASSET_UTILISATION_AND_CURB_PRESSURE_POTENTIAL / CONTRACT_ACCESS_SECURITY_PRICING_PROXIMITY_AND_AVAILABILITY_DEPENDENT",
+      "evidence_level": "MEDIUM_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0311-A02",
+      "source_unit_id": "BE-SPD-2026-SU-0311",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b012@304.73,117.94,548.55,182.72",
+      "source_text": "Ein digitales Parkleitsystem soll den Parksuchverkehr deutlich reduzieren.",
+      "source_text_sha256": "a414402368c2efb5bd4b49aa8a1ecfe7965bad7db98acef7c1b986804f032cf2",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "2. `BE-SPD-2026-SU-0311-A02` / SHA `a414402368c2efb5bd4b49aa8a1ecfe7965bad7db98acef7c1b986804f032cf2` / `Ein digitales Parkleitsystem soll den Parksuchverkehr deutlich reduzieren.`\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = POSITIVE_SEARCH_TRAFFIC_TIME_AND_LOCAL_EMISSIONS_POTENTIAL / DATA_COVERAGE_ROUTING_BEHAVIOUR_ACCESSIBILITY_AND_PRIVACY_DEPENDENT`\n   - `evidence_level = MEDIUM`\n   - Reality: search time/km, occupancy-data accuracy/coverage, routing changes, induced trips, user access without digital exclusion, privacy/data minimisation.",
+      "fach_source_sha256": "5dfed87161a3e6f4f633fcf8253e0b29534bc165a788a7e4a30d2fc59db23dc4",
+      "impact_direction": "POSITIVE_SEARCH_TRAFFIC_TIME_AND_LOCAL_EMISSIONS_POTENTIAL / DATA_COVERAGE_ROUTING_BEHAVIOUR_ACCESSIBILITY_AND_PRIVACY_DEPENDENT",
+      "evidence_level": "MEDIUM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0314-A01",
+      "source_unit_id": "BE-SPD-2026-SU-0314",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b015@304.72,279.06,543.83,343.84",
+      "source_text": "Schnelles Laden beim Einkaufen soll zum neuen Standard werden.",
+      "source_text_sha256": "588886b821b96e858a4ba0d0a4d771ee9f37cb309ac74e04dc415c1ac6aaa3cb",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "NON_EFFECT_TARGET_WITHOUT_INSTRUMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "3. Existing `BE-SPD-2026-SU-0314-A01` / SHA `588886b821b96e858a4ba0d0a4d771ee9f37cb309ac74e04dc415c1ac6aaa3cb` / `Schnelles Laden beim Einkaufen soll zum neuen Standard werden.`\n   - `NON_EFFECT_TARGET_WITHOUT_INSTRUMENT_REVIEWED` — zero-count.",
+      "fach_source_sha256": "f56e040a87f1e8e182c4004b71bb5f28a780f04ce2a14e69d2b19bb082c68236"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0316-A01",
+      "source_unit_id": "BE-SPD-2026-SU-0316",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b017@304.72,378.87,551.07,470.05",
+      "source_text": "Wir unterstützen Initiativen der Anwohner*innen und wirken auf Navigationsanbieter ein, um Durchgangsverkehr zu vermeiden.",
+      "source_text_sha256": "3ee918b3d7bf66280820dcef5a3a75f5cbcf9af721682bef8c880480744b1515",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "3. Existing compound `BE-SPD-2026-SU-0316-A01` / SHA `3ee918b3d7bf66280820dcef5a3a75f5cbcf9af721682bef8c880480744b1515` becomes `SOURCE_ATOM_VERSIONED_ZERO_COUNT`; authorise exactly two children:\n   - `Wir unterstützen Initiativen der Anwohner*innen` / SHA `1f88162bfdb5f14e825a3b0a6484e1cbf56ba5a30f47994399c3f408dc661452` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`, code `RESIDENT_INITIATIVE_SUPPORT_INSTRUMENT_SELECTION_RESOURCES_AND_EFFECT_ROUTE_UNRESOLVED`. Exact reason: support form, eligibility, decision authority, resources and the resulting concrete traffic measure are unspecified; citizen support itself is not an outcome.\n   - `und wirken auf Navigationsanbieter ein, um Durchgangsverkehr zu vermeiden.` / SHA `159c79f45670d29e1ee730a48fbe21569567f3652cc24012f9793d9f53a7b8d8` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`, code `NAVIGATION_PROVIDER_INSTRUMENT_PROVIDER_RESPONSE_ROUTING_SPILLOVER_AND_ACCESS_UNRESOLVED`. Exact reason: legal/contractual influence route, provider response, routing changes, destination access and displacement to adjacent streets are unresolved.",
+      "fach_source_sha256": "2d81ee1a0d8986d42200d8993512b48d637bcdb5282382d7eb4b40ac4fcc2a3f",
+      "superseded_by": [
+        "BE-SPD-2026-SU-0316-A01-C01-1f88162bfdb5",
+        "BE-SPD-2026-SU-0316-A01-C02-159c79f45670"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0317-A01",
+      "source_unit_id": "BE-SPD-2026-SU-0317",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b018@304.72,479.77,553.28,544.55",
+      "source_text": "Tempo 50 auf bisherigen Tempo-30-Strecken lehnen wir ab.",
+      "source_text_sha256": "19d678a711c8e14496ffedd49a3fb50ed79240d47af02d324315c25439f7adcb",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "1. `BE-SPD-2026-SU-0317-A01` / SHA `19d678a711c8e14496ffedd49a3fb50ed79240d47af02d324315c25439f7adcb` / `Tempo 50 auf bisherigen Tempo-30-Strecken lehnen wir ab.`\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = POSITIVE_AVOIDED_SPEED_INCREASE_SAFETY_AND_NOISE_POTENTIAL / SEGMENT_BASELINE_NETWORK_FUNCTION_COMPLIANCE_AND_DIVERSION_DEPENDENT`\n   - `evidence_level = HIGH_SPEED_SAFETY_MECHANISM`\n   - Reality: speed distribution, crashes/severity, noise, travel time, diversion and actual legal segment baseline. This is avoided deterioration relative to raising speed, not proof that every existing Tempo-30 segment is optimal.",
+      "fach_source_sha256": "5b242a7707c928321a1e0bf0b247ab15e05775537959518d73d7d0e3be874db0",
+      "impact_direction": "POSITIVE_AVOIDED_SPEED_INCREASE_SAFETY_AND_NOISE_POTENTIAL / SEGMENT_BASELINE_NETWORK_FUNCTION_COMPLIANCE_AND_DIVERSION_DEPENDENT",
+      "evidence_level": "HIGH_SPEED_SAFETY_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0317-A02",
+      "source_unit_id": "BE-SPD-2026-SU-0317",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b018@304.72,479.77,553.28,544.55",
+      "source_text": "Tempo 30 richten wir besonders rund um Kitas, Schulen, Spielplätze und Seniorenheime ein",
+      "source_text_sha256": "1c055d4c08a4531985917be5143591369649728a5b39ba03c7b8776f8e948cd6",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "2. `BE-SPD-2026-SU-0317-A02` / SHA `1c055d4c08a4531985917be5143591369649728a5b39ba03c7b8776f8e948cd6` / `Tempo 30 richten wir besonders rund um Kitas, Schulen, Spielplätze und Seniorenheime ein`\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = STRONG_POSITIVE_VULNERABLE_ROAD_USER_SAFETY_AND_NOISE_POTENTIAL / SITE_SELECTION_COMPLIANCE_NETWORK_AND_EMERGENCY_SERVICE_DEPENDENT`\n   - `evidence_level = HIGH_MECHANISM`\n   - Reality: actual speed/compliance, crashes/conflicts/severity, noise, crossing access, bus/emergency/travel-time and displacement by site.",
+      "fach_source_sha256": "1e7f983ef2caf6c658a17059f0d2fa23ff4ca01d7019a537c93b86a059eb8435",
+      "impact_direction": "STRONG_POSITIVE_VULNERABLE_ROAD_USER_SAFETY_AND_NOISE_POTENTIAL / SITE_SELECTION_COMPLIANCE_NETWORK_AND_EMERGENCY_SERVICE_DEPENDENT",
+      "evidence_level": "HIGH_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0317-A03",
+      "source_unit_id": "BE-SPD-2026-SU-0317",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b018@304.72,479.77,553.28,544.55",
+      "source_text": "und nutzen die neuen Spielräume der Straßenverkehrsordnung konsequent.",
+      "source_text_sha256": "391239e9b71240cd605682b239d128979510069a9a799ab1291f8570610919b9",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "NON_EFFECT_LEGAL_IMPLEMENTATION_REFERENCE_AND_A02_RESTATEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "3. `BE-SPD-2026-SU-0317-A03` / SHA `391239e9b71240cd605682b239d128979510069a9a799ab1291f8570610919b9` / `und nutzen die neuen Spielräume der Straßenverkehrsordnung konsequent.`\n   - `NON_EFFECT_LEGAL_IMPLEMENTATION_REFERENCE_AND_A02_RESTATEMENT_REVIEWED` — zero-count. Current StVO competence is a legal route/guard, not a second independent effect object.",
+      "fach_source_sha256": "1fa5e65a99d365736cfb652fd4e2fe52b30870bfa819da8fde30104fd55d841b"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A01",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_text": "Nach dem Pariser Modell der „temporären Schulstraßen“ werden wir die rechtlichen Voraussetzungen schaffen, geeignete Straßen vor Schulen und Kitas auch durch Absperrungen zu sichern.",
+      "source_text_sha256": "f850ea8b57ec9195194227909ee5044faf7d70dd159e80e9c08b838d27522d81",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "1. Existing `BE-SPD-2026-SU-0318-A01` / SHA `f850ea8b57ec9195194227909ee5044faf7d70dd159e80e9c08b838d27522d81` / full temporary-school-streets sentence\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = POSITIVE_CHILD_ROAD_SAFETY_ACTIVE_TRAVEL_AND_SCHOOL_FRONT_PUBLIC_SPACE_POTENTIAL / SITE_TIME_WINDOW_ACCESS_ENFORCEMENT_AND_TRAFFIC_DISPLACEMENT_DEPENDENT`\n   - `evidence_level = MEDIUM_HIGH_CURRENT_BERLIN_PRACTICE_PLUS_MECHANISM`\n   - Reality: conflicts/crashes/near-misses, motor traffic at school start/end, walking/cycling share, accessibility/special-needs and resident/service access, adjacent-street displacement, compliance and operational burden.",
+      "fach_source_sha256": "977c231cfc602d4731ced552af00444e509855c5566d32087bdb419eb2397020",
+      "impact_direction": "POSITIVE_CHILD_ROAD_SAFETY_ACTIVE_TRAVEL_AND_SCHOOL_FRONT_PUBLIC_SPACE_POTENTIAL / SITE_TIME_WINDOW_ACCESS_ENFORCEMENT_AND_TRAFFIC_DISPLACEMENT_DEPENDENT",
+      "evidence_level": "MEDIUM_HIGH_CURRENT_BERLIN_PRACTICE_PLUS_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A02",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_text": "Kinder schützen wir mit abgegrenzten Radwegen, getrennten Abbiegespuren, temporären Spielstraßen und anderen baulichen Maßnahmen sowie speziellen Verkehrskonzepten, Lotsendiensten und Verkehrserziehung.",
+      "source_text_sha256": "ace67f9160bf7edcfaca6fb7c10864630624e57c4c73fb27cdaf2032c4c7b0db",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "2. Existing compound `BE-SPD-2026-SU-0318-A02` / SHA `ace67f9160bf7edcfaca6fb7c10864630624e57c4c73fb27cdaf2032c4c7b0db` becomes `SOURCE_ATOM_VERSIONED_ZERO_COUNT`. Authorise exactly seven child spans:\n   - `Kinder schützen wir mit abgegrenzten Radwegen` / `4f5e17fb2dee8633b5284addf94cb4612baea5b6ad672aab3989b8f91d09aaf4` → `EXPLICIT_FACH_APPROVED`; `STRONG_POSITIVE_CYCLING_CONFLICT_SEPARATION_AND_CHILD_SAFETY_POTENTIAL / CONTINUITY_JUNCTION_GEOMETRY_WIDTH_MAINTENANCE_AND_ACCESS_DEPENDENT`; evidence `HIGH`.\n   - `getrennten Abbiegespuren` / `942fe8b919703c56e1757d3454aa0da292d8c647db7521794107cc89714411bb` → `EXPLICIT_FACH_APPROVED`; `POSITIVE_TURNING_CONFLICT_REDUCTION_POTENTIAL / SITE_GEOMETRY_SIGNAL_SPEED_AND_SPACE_TRADEOFF_DEPENDENT`; evidence `MEDIUM_HIGH`.\n   - `temporären Spielstraßen` / `68ab5039af418cfafa3c257f295b70d9bbb93b29276652d9ffa2a11f49f4d6ca` → `EXPLICIT_FACH_APPROVED`; `POSITIVE_CHILD_PUBLIC_SPACE_ACTIVITY_AND_LOCAL_TRAFFIC_SAFETY_POTENTIAL / SCHEDULE_ACCESS_SUPERVISION_AND_DISPLACEMENT_DEPENDENT`; evidence `MEDIUM`.\n   - `anderen baulichen Maßnahmen` / `fa5c51daeb157db946800013ee3a3bf50661a20c0c7c7fa2b16ec49a8a764abc` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `UNSPECIFIED_STRUCTURAL_ROAD_SAFETY_MEASURES_DESIGN_LOCATION_AND_MECHANISM_UNRESOLVED`; exact reason: no physical treatment, site, scale or conflict mechanism is specified.\n   - `sowie speziellen Verkehrskonzepten` / `2947179abeba90f68dbd0bb9efbdbbe1501b6dee47f3018d76dc57fd7be0fc41` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `UNSPECIFIED_TRAFFIC_CONCEPT_CONTENT_IMPLEMENTATION_AND_NETWORK_EFFECTS_UNRESOLVED`; exact reason: a concept may produce many different measures and redistribution effects; its content is absent.\n   - `Lotsendiensten` / `fa1ef0073bc4b4673a22d6141c153f8b8e313374b5877a9dddfc83633169bcda` → `EXPLICIT_FACH_APPROVED`; `POSITIVE_SCHOOL_CROSSING_SUPERVISION_AND_CHILD_SAFETY_POTENTIAL / STAFFING_TRAINING_LOCATION_COVERAGE_AND_SAFEGUARD_DEPENDENT`; evidence `MEDIUM`.\n   - `und Verkehrserziehung.` / `e22c7a91870d25b37d61cc6d2578dfd222b1838f0f3bb583871848d325901469` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `TRAFFIC_EDUCATION_TARGET_GROUP_CONTENT_DOSE_DELIVERY_AND_SAFETY_OUTCOME_UNRESOLVED`; exact reason: target group, content, intensity, delivery quality and causal contribution to real safety behaviour/outcomes are unspecified.\n\n   Common Reality Check for the A02 child set: crash/conflict/near-miss by mode/site, safe independent child travel, route continuity, junction conflict, accessibility, uptake and displacement; output counts do not compensate for unsafe gaps.",
+      "fach_source_sha256": "0bd08f5d6dadab336e781ee2882d013456298dac59c72a0e4e3e55ee7f995126",
+      "superseded_by": [
+        "BE-SPD-2026-SU-0318-A02-C01-4f5e17fb2dee",
+        "BE-SPD-2026-SU-0318-A02-C02-942fe8b91970",
+        "BE-SPD-2026-SU-0318-A02-C03-68ab5039af41",
+        "BE-SPD-2026-SU-0318-A02-C04-fa5c51daeb15",
+        "BE-SPD-2026-SU-0318-A02-C05-2947179abeba",
+        "BE-SPD-2026-SU-0318-A02-C06-fa1ef0073bc4",
+        "BE-SPD-2026-SU-0318-A02-C07-e22c7a91870d"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A03",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_text": "Die Fahrradstaffel der Polizei bauen wir aus und statten die Ordnungsämter besser aus.",
+      "source_text_sha256": "9f599625e4305847193bd31da59a353aebf037b0e953e5c3dd73cb09813f1bb7",
+      "source_object_kind": "SOURCE_ATOM",
+      "terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "5. Existing compound `BE-SPD-2026-SU-0318-A03` / SHA `9f599625e4305847193bd31da59a353aebf037b0e953e5c3dd73cb09813f1bb7` becomes `SOURCE_ATOM_VERSIONED_ZERO_COUNT`. Authorise two exact children:\n   - `Die Fahrradstaffel der Polizei bauen wir aus` / `55c6bb7d8e5b2d5c987477f695218a7eacc35d54fa0359d6cdfe7a0a64bd04ad` → `EXPLICIT_FACH_APPROVED`; `POSITIVE_VISIBLE_TRAFFIC_ENFORCEMENT_AND_CYCLING_NETWORK_RESPONSE_CAPACITY_POTENTIAL / STAFFING_DEPLOYMENT_POWERS_AND_OUTCOME_FOCUS_DEPENDENT`; evidence `MEDIUM`; Reality = active patrol hours/coverage, response and observed violations/safety rather than headcount alone.\n   - `und statten die Ordnungsämter besser aus.` / `6cfdb1c0bc2b50446f22cebdd3d7e1c54b17fae662518e2b375f0278afbce85a` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `ORDNUNGSAMT_EQUIPMENT_STAFFING_TECHNOLOGY_SCOPE_AND_DELIVERY_UNRESOLVED`; exact reason: equipment type, staffing, powers/use case, quantity, operating model and intended outcome are absent.",
+      "fach_source_sha256": "db59233dedf9b9ebff205c08f56d7e38dee0844d4a158f3e95433b7636b9607a",
+      "superseded_by": [
+        "BE-SPD-2026-SU-0318-A03-C01-55c6bb7d8e5b",
+        "BE-SPD-2026-SU-0318-A03-C02-6cfdb1c0bc2b"
+      ]
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0305-C01-e520cce28451",
+      "source_unit_id": "BE-SPD-2026-SU-0305",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0305"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b006@42.52,366.55,292.39,510.53",
+      "source_span_utf16": [
+        0,
+        28
+      ],
+      "source_text": "Statt die A100 weiterzubauen",
+      "source_text_sha256": "e520cce28451aadc96e75b1c67ddc033c608d2b38c14040b9991f3859551e36f",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "1. Exact child text `Statt die A100 weiterzubauen`\n   - SHA-256 `e520cce28451aadc96e75b1c67ddc033c608d2b38c14040b9991f3859551e36f`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `FEDERAL_MOTORWAY_STOP_COMPETENCE_COUNTERFACTUAL_AND_NETWORK_EFFECTS_UNRESOLVED`\n   - exact reason: BA17 is a current federal/fest-disponiertes project. The programme clause alone does not specify the legally effective federal cancellation/change route, treatment of already incurred/planned expenditure, substitute network strategy, or quantified traffic, land, emissions, safety and distribution counterfactual. A direction would therefore overclaim both Berlin competence and net system effect.",
+      "fach_source_sha256": "6e9f6fc6a74ef834f690ae207dcf5281c097437d6a6b38589e234de1bfbba625",
+      "exact_reason_code": "FEDERAL_MOTORWAY_STOP_COMPETENCE_COUNTERFACTUAL_AND_NETWORK_EFFECTS_UNRESOLVED",
+      "exact_reason": "BA17 is a current federal/fest-disponiertes project. The programme clause alone does not specify the legally effective federal cancellation/change route, treatment of already incurred/planned expenditure, substitute network strategy, or quantified traffic, land, emissions, safety and distribution counterfactual. A direction would therefore overclaim both Berlin competence and net system effect."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0305-C02-b84646243b7b",
+      "source_unit_id": "BE-SPD-2026-SU-0305",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0305"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b006@42.52,366.55,292.39,510.53",
+      "source_span_utf16": [
+        30,
+        83
+      ],
+      "source_text": "setzen wir auf den Erhalt unserer Straßen und Brücken",
+      "source_text_sha256": "b84646243b7b5264c401f5362cea9d74f300905cd4ab3dffda16c0d8599d6d4c",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "2. Exact child text `setzen wir auf den Erhalt unserer Straßen und Brücken`\n   - SHA-256 `b84646243b7b5264c401f5362cea9d74f300905cd4ab3dffda16c0d8599d6d4c`\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = POSITIVE_ASSET_CONDITION_SAFETY_RELIABILITY_AND_LIFECYCLE_POTENTIAL / NEED_PRIORITISATION_DELIVERY_CAPACITY_AND_CONSTRUCTION_DISRUPTION_DEPENDENT`\n   - `evidence_level = HIGH_MECHANISM`\n   - A→M→ΔZ: needs-based maintenance/renewal → fewer defects/restrictions/failures and lower deterioration → potentially safer, more reliable infrastructure and lower lifecycle failure/repair costs.\n   - Reality check: asset/bridge condition classes, restriction/closure hours, backlog, repair duration, disruption, lifecycle cost, spatial/service criticality. Money spent is output, not outcome.",
+      "fach_source_sha256": "d5e69f40c72bbcdc88e214f4e77f4e2fe7850dd5a31edd88fc7b1f4dd0295ae8",
+      "impact_direction": "POSITIVE_ASSET_CONDITION_SAFETY_RELIABILITY_AND_LIFECYCLE_POTENTIAL / NEED_PRIORITISATION_DELIVERY_CAPACITY_AND_CONSTRUCTION_DISRUPTION_DEPENDENT",
+      "evidence_level": "HIGH_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0305-C03-b7dd37c3de2b",
+      "source_unit_id": "BE-SPD-2026-SU-0305",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0305"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b006@42.52,366.55,292.39,510.53",
+      "source_span_utf16": [
+        84,
+        116
+      ],
+      "source_text": "sowie auf nachhaltige Mobilität.",
+      "source_text_sha256": "b7dd37c3de2b1b3400e0206dbe1515eb816ab606a3ee09b98abc0b27aaa299b3",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "NON_EFFECT_BROAD_MOBILITY_GOAL_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "3. Exact child text `sowie auf nachhaltige Mobilität.`\n   - SHA-256 `b7dd37c3de2b1b3400e0206dbe1515eb816ab606a3ee09b98abc0b27aaa299b3`\n   - `NON_EFFECT_BROAD_MOBILITY_GOAL_REVIEWED` — zero-count; no independent instrument.",
+      "fach_source_sha256": "493ca688875b58a9989b6258f92bf305288f5fbe6309e739c458c4a8b1e0fe59"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0305-C04-71248cbe3563",
+      "source_unit_id": "BE-SPD-2026-SU-0305",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0305"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b006@42.52,366.55,292.39,510.53",
+      "source_span_utf16": [
+        117,
+        302
+      ],
+      "source_text": "Wir setzen uns beim Bund dafür ein, dass Investitionsmittel stärker als bisher für die Sanierung von Straßen und Brücken sowie den Ausbau des Öffentlichen Nahverkehrs eingesetzt werden.",
+      "source_text_sha256": "71248cbe35631f6775ef7e3754599df3e7f593037dbcce6f7ea1d4c5e9c86403",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "4. Exact child text `Wir setzen uns beim Bund dafür ein, dass Investitionsmittel stärker als bisher für die Sanierung von Straßen und Brücken sowie den Ausbau des Öffentlichen Nahverkehrs eingesetzt werden.`\n   - SHA-256 `71248cbe35631f6775ef7e3754599df3e7f593037dbcce6f7ea1d4c5e9c86403`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `FEDERAL_BUDGET_REALLOCATION_ADOPTION_SCALE_ALLOCATION_AND_COUNTERFACTUAL_UNRESOLVED`\n   - exact reason: this is advocacy toward the federal budget/portfolio. Adoption probability, amount, source programme displaced, regional allocation, additionality and resulting road/bridge/ÖPNV project mix are unspecified; no net direction may be assigned from the advocacy sentence alone.",
+      "fach_source_sha256": "0bcbf43e7c7f12066d8a6858eaf916ef72f9c99b5d20ac3f31093c97f13c5a2c",
+      "exact_reason_code": "FEDERAL_BUDGET_REALLOCATION_ADOPTION_SCALE_ALLOCATION_AND_COUNTERFACTUAL_UNRESOLVED",
+      "exact_reason": "this is advocacy toward the federal budget/portfolio. Adoption probability, amount, source programme displaced, regional allocation, additionality and resulting road/bridge/ÖPNV project mix are unspecified; no net direction may be assigned from the advocacy sentence alone."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0306-C01-9d048a842783",
+      "source_unit_id": "BE-SPD-2026-SU-0306",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0306"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b007@42.52,520.26,288.87,598.24",
+      "source_span_utf16": [
+        0,
+        109
+      ],
+      "source_text": "Wir bauen die Tangentialverbindung Ost als Straße, ohne einen späteren parallelen S-Bahn-Ausbau zu behindern.",
+      "source_text_sha256": "9d048a84278390532948e0ba55a0f1605b4fb9ff30023056884bbcb0dd52fea6",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "1. Exact child text `Wir bauen die Tangentialverbindung Ost als Straße, ohne einen späteren parallelen S-Bahn-Ausbau zu behindern.`\n   - SHA-256 `9d048a84278390532948e0ba55a0f1605b4fb9ff30023056884bbcb0dd52fea6`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `TVO_ROUTE_DESIGN_DEMAND_REDISTRIBUTION_ENVIRONMENT_COST_AND_RAIL_SAFEGUARD_UNRESOLVED`\n   - exact reason: the current project is in active planning, but net effects depend on final route/design, induced/redistributed traffic, environmental/land impacts, cost, construction disruption, access/safety and whether rail-option safeguarding is technically effective. These project inputs are not fixed by the sentence.",
+      "fach_source_sha256": "d5aadc4bd9cbd46b7f8976f14544b4f8a95513fc0647aff22ea1744e74a14385",
+      "exact_reason_code": "TVO_ROUTE_DESIGN_DEMAND_REDISTRIBUTION_ENVIRONMENT_COST_AND_RAIL_SAFEGUARD_UNRESOLVED",
+      "exact_reason": "the current project is in active planning, but net effects depend on final route/design, induced/redistributed traffic, environmental/land impacts, cost, construction disruption, access/safety and whether rail-option safeguarding is technically effective. These project inputs are not fixed by the sentence."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0307-C01-5a8397c8c20a",
+      "source_unit_id": "BE-SPD-2026-SU-0307",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0307"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b008@42.52,607.96,281.66,646.34",
+      "source_span_utf16": [
+        0,
+        132
+      ],
+      "source_text": "Für Pendler*innen werten wir Park-and-Ride- Anlagen mit Beleuchtung, Wetterschutz, Ladepunkten, Toiletten und Jelbi-Verknüpfung auf.",
+      "source_text_sha256": "5a8397c8c20a28b0f662364cb2d26adaa5c7326538b19468e25f7154f0212176",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "— Park-and-Ride quality\nSource-unit container zero-count; exact whole-text child is authorised:\n- text `Für Pendler*innen werten wir Park-and-Ride- Anlagen mit Beleuchtung, Wetterschutz, Ladepunkten, Toiletten und Jelbi-Verknüpfung auf.`\n- SHA-256 `5a8397c8c20a28b0f662364cb2d26adaa5c7326538b19468e25f7154f0212176`\n- `EXPLICIT_FACH_APPROVED`\n- `impact_direction = AMBIVALENT_POSITIVE_INTERMODAL_ACCESS_SAFETY_AND_TRANSFER_QUALITY_POTENTIAL / PARKING_CAPACITY_TRANSIT_QUALITY_UTILISATION_AND_CAR_TRIP_INDUCTION_DEPENDENT`\n- `evidence_level = MEDIUM_MECHANISM`\n- Reality: occupancy, actual transfers to transit, transit quality, accessibility, lighting/toilet/charging uptime, incidents, car-distance driven before transfer and whether new capacity induces additional car trips.",
+      "fach_source_sha256": "b3e5cecec96eb8e86e87b55cfdc2c7041695dd9ba39b5df0ff4fac02ab6acbb6",
+      "impact_direction": "AMBIVALENT_POSITIVE_INTERMODAL_ACCESS_SAFETY_AND_TRANSFER_QUALITY_POTENTIAL / PARKING_CAPACITY_TRANSIT_QUALITY_UTILISATION_AND_CAR_TRIP_INDUCTION_DEPENDENT",
+      "evidence_level": "MEDIUM_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0310-C01-d1df1113b4f3",
+      "source_unit_id": "BE-SPD-2026-SU-0310",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0310"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b011@304.73,69.84,550.20,108.22",
+      "source_span_utf16": [
+        0,
+        115
+      ],
+      "source_text": "Die Einnahmen verwenden wir zweckgebunden für den Umweltverbund (ÖPNV, Rad- und Fußverkehr) und für Kiezparkhäuser.",
+      "source_text_sha256": "d1df1113b4f35aa12226990a3f23c81beb714d972bf0c4101b2b43a027cde74d",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "— earmark parking revenue\nSource-unit container zero-count; exact whole child:\n- text `Die Einnahmen verwenden wir zweckgebunden für den Umweltverbund (ÖPNV, Rad- und Fußverkehr) und für Kiezparkhäuser.`\n- SHA-256 `d1df1113b4f35aa12226990a3f23c81beb714d972bf0c4101b2b43a027cde74d`\n- `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n- reason code `PARKING_REVENUE_AMOUNT_LEGAL_EARMARK_ADDITIONALITY_ALLOCATION_SPLIT_AND_MIXED_USE_EFFECTS_UNRESOLVED`\n- exact reason: revenue amount, legal earmark mechanics, additionality vs existing budgets, allocation between ÖPNV/rad/foot and Kiezparkhäuser, project mix and the mixed impacts of parking structures are unspecified. Revenue earmarking is input allocation, not an outcome.",
+      "fach_source_sha256": "53acbe074904061254ad3f776a9780750b40812f663d3b64175b44449e5198bc",
+      "exact_reason_code": "PARKING_REVENUE_AMOUNT_LEGAL_EARMARK_ADDITIONALITY_ALLOCATION_SPLIT_AND_MIXED_USE_EFFECTS_UNRESOLVED",
+      "exact_reason": "revenue amount, legal earmark mechanics, additionality vs existing budgets, allocation between ÖPNV/rad/foot and Kiezparkhäuser, project mix and the mixed impacts of parking structures are unspecified. Revenue earmarking is input allocation, not an outcome."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0312-C01-7bea65f223e7",
+      "source_unit_id": "BE-SPD-2026-SU-0312",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0312"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b013@304.73,192.44,548.13,244.02",
+      "source_span_utf16": [
+        0,
+        172
+      ],
+      "source_text": "Für den Wirtschaftsverkehr bauen wir Gewerbekurzzeitparkplätze und Ladezonen massiv aus, damit Lieferdienste, Handwerker*innen und Pflegekräfte sichere Stellflächen finden.",
+      "source_text_sha256": "7bea65f223e7446cecc7566c110232d9a5ae280889228b0665b7368c98f527e3",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "— commercial short-stay/loading zones\nSource-unit container zero-count; exact whole child:\n- SHA-256 `7bea65f223e7446cecc7566c110232d9a5ae280889228b0665b7368c98f527e3`\n- `EXPLICIT_FACH_APPROVED`\n- `impact_direction = POSITIVE_LOGISTICS_ACCESS_SECOND_ROW_PARKING_AND_STREET_SAFETY_POTENTIAL / LOCATION_CAPACITY_TURNOVER_ENFORCEMENT_AND_CURB_TRADEOFF_DEPENDENT`\n- `evidence_level = MEDIUM_HIGH_MECHANISM`\n- A→M→ΔZ: more correctly located short-stay/loading space → less need for second-row/unsafe stopping and shorter service access → potentially safer, more reliable commercial/care deliveries with less blockage.\n- Reality: illegal/second-row stopping, dwell/turnover, delivery/service time, collision/conflict indicators, curb-space displacement and district distribution.",
+      "fach_source_sha256": "d4ea3df739664b0bb474e42babdbbb2c9a4cb4121c372cfb2ef1f9e0290df6f5",
+      "impact_direction": "POSITIVE_LOGISTICS_ACCESS_SECOND_ROW_PARKING_AND_STREET_SAFETY_POTENTIAL / LOCATION_CAPACITY_TURNOVER_ENFORCEMENT_AND_CURB_TRADEOFF_DEPENDENT",
+      "evidence_level": "MEDIUM_HIGH_MECHANISM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0314-C01-1c1dbffca069",
+      "source_unit_id": "BE-SPD-2026-SU-0314",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0314"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b015@304.72,279.06,543.83,343.84",
+      "source_span_utf16": [
+        0,
+        87
+      ],
+      "source_text": "Für mehr Elektromobilität setzen wir den Ausbau öffentlicher Ladesäulen konsequent fort",
+      "source_text_sha256": "1c1dbffca0699b45fee9fe4e2fd06d918a3f562dd056b8f42c0c30eb0823b0c9",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "1. Exact child `Für mehr Elektromobilität setzen wir den Ausbau öffentlicher Ladesäulen konsequent fort`\n   - SHA-256 `1c1dbffca0699b45fee9fe4e2fd06d918a3f562dd056b8f42c0c30eb0823b0c9`\n   - `EXPLICIT_FACH_APPROVED`\n   - `impact_direction = POSITIVE_ELECTRIFICATION_ENABLEMENT_AND_CHARGING_ACCESS_POTENTIAL / UTILISATION_GRID_LOCATION_ACCESSIBILITY_ENERGY_MIX_AND_LIFECYCLE_DEPENDENT`\n   - `evidence_level = HIGH_ENABLING_MECHANISM_CURRENT_ACTIVE_BASELINE`\n   - Guard: Berlin already has a substantial and expanding charging network; assess additional access/location/uptime and actual EV use, not installed-point count alone.\n   - Reality: utilisation, uptime, charging deserts, accessibility, grid constraints, renewable/electricity mix, parking-space effects and hardware lifecycle.",
+      "fach_source_sha256": "f0d578a2d1c24d65c6805d3b4514d77d68bd09f6f0c78eb4d5b3b7f1e77405c7",
+      "impact_direction": "POSITIVE_ELECTRIFICATION_ENABLEMENT_AND_CHARGING_ACCESS_POTENTIAL / UTILISATION_GRID_LOCATION_ACCESSIBILITY_ENERGY_MIX_AND_LIFECYCLE_DEPENDENT",
+      "evidence_level": "HIGH_ENABLING_MECHANISM_CURRENT_ACTIVE_BASELINE"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0314-C02-1a244eca44aa",
+      "source_unit_id": "BE-SPD-2026-SU-0314",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0314"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b015@304.72,279.06,543.83,343.84",
+      "source_span_utf16": [
+        88,
+        158
+      ],
+      "source_text": "und regen zusätzliche Ladepunkte auf Parkplätzen des Einzelhandels an.",
+      "source_text_sha256": "1a244eca44aadf5662fd2b7f4358198afb0519f0170de34db4905cb9f96c5c2a",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "2. Exact child `und regen zusätzliche Ladepunkte auf Parkplätzen des Einzelhandels an.`\n   - SHA-256 `1a244eca44aadf5662fd2b7f4358198afb0519f0170de34db4905cb9f96c5c2a`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `RETAIL_CHARGING_PRIVATE_ACTOR_INSTRUMENT_INCENTIVE_ADDITIONALITY_AND_DELIVERY_UNRESOLVED`\n   - exact reason: `regen ... an` does not specify the private-actor instrument, incentive/regulation, additionality, participating retailers, location/access rules, delivery volume or grid connection route.",
+      "fach_source_sha256": "514a312187020701b0e1ea59600a7fe516be2a55d259e10208ba767e9043691f",
+      "exact_reason_code": "RETAIL_CHARGING_PRIVATE_ACTOR_INSTRUMENT_INCENTIVE_ADDITIONALITY_AND_DELIVERY_UNRESOLVED",
+      "exact_reason": "`regen ... an` does not specify the private-actor instrument, incentive/regulation, additionality, participating retailers, location/access rules, delivery volume or grid connection route."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0316-C01-f3345c3cec65",
+      "source_unit_id": "BE-SPD-2026-SU-0316",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0316"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b017@304.72,378.87,551.07,470.05",
+      "source_span_utf16": [
+        0,
+        79
+      ],
+      "source_text": "Wir stehen zur Vision Zero: keine Toten und Schwerverletzten im Straßenverkehr.",
+      "source_text_sha256": "f3345c3cec6597577f43b1d02040c0fee2dede4fe431aef96b5b94209e746a9c",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "NON_EFFECT_EXISTING_LEGAL_POLICY_GOAL_RESTATEMENT_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "1. Exact child `Wir stehen zur Vision Zero: keine Toten und Schwerverletzten im Straßenverkehr.`\n   - SHA-256 `f3345c3cec6597577f43b1d02040c0fee2dede4fe431aef96b5b94209e746a9c`\n   - `NON_EFFECT_EXISTING_LEGAL_POLICY_GOAL_RESTATEMENT_REVIEWED` — zero-count. Vision Zero is already a Berlin policy/legal baseline; the goal sentence is not a new effect lever.",
+      "fach_source_sha256": "6b95e06aca380cdfceb41a6c15bad810864d697411eace8af554000631bfd319"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0316-C02-05ed7c007adc",
+      "source_unit_id": "BE-SPD-2026-SU-0316",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0316"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b017@304.72,378.87,551.07,470.05",
+      "source_span_utf16": [
+        80,
+        148
+      ],
+      "source_text": "Verkehrsberuhigung in den Kiezen bleibt dafür das wirksamste Mittel.",
+      "source_text_sha256": "05ed7c007adc8364b0fc676a1479de1548471281c29036ca324ef4857c727cbe",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "NON_EFFECT_CAUSAL_POLICY_CLAIM_REVIEWED",
+      "counts_as_effect_object": false,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "2. Exact child `Verkehrsberuhigung in den Kiezen bleibt dafür das wirksamste Mittel.`\n   - SHA-256 `05ed7c007adc8364b0fc676a1479de1548471281c29036ca324ef4857c727cbe`\n   - `NON_EFFECT_CAUSAL_POLICY_CLAIM_REVIEWED` — zero-count. The handoff does not endorse a universal `wirksamstes Mittel` ranking independent of site/risk context.",
+      "fach_source_sha256": "a2d1c94730778692738412f95667e0c7cf7a2088bc7a6c791cc5ffa7b640dc58"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0316-A01-C01-1f88162bfdb5",
+      "source_unit_id": "BE-SPD-2026-SU-0316",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0316-A01"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b017@304.72,378.87,551.07,470.05",
+      "source_span_utf16": [
+        149,
+        196
+      ],
+      "source_text": "Wir unterstützen Initiativen der Anwohner*innen",
+      "source_text_sha256": "1f88162bfdb5f14e825a3b0a6484e1cbf56ba5a30f47994399c3f408dc661452",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `Wir unterstützen Initiativen der Anwohner*innen` / SHA `1f88162bfdb5f14e825a3b0a6484e1cbf56ba5a30f47994399c3f408dc661452` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`, code `RESIDENT_INITIATIVE_SUPPORT_INSTRUMENT_SELECTION_RESOURCES_AND_EFFECT_ROUTE_UNRESOLVED`. Exact reason: support form, eligibility, decision authority, resources and the resulting concrete traffic measure are unspecified; citizen support itself is not an outcome.",
+      "fach_source_sha256": "7f9101343a18927a19825bbf612b4f3fc2047c3bc965c55083e0d2cbd3a58a2a",
+      "exact_reason_code": "RESIDENT_INITIATIVE_SUPPORT_INSTRUMENT_SELECTION_RESOURCES_AND_EFFECT_ROUTE_UNRESOLVED",
+      "exact_reason": "support form, eligibility, decision authority, resources and the resulting concrete traffic measure are unspecified; citizen support itself is not an outcome."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0316-A01-C02-159c79f45670",
+      "source_unit_id": "BE-SPD-2026-SU-0316",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0316-A01"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b017@304.72,378.87,551.07,470.05",
+      "source_span_utf16": [
+        197,
+        271
+      ],
+      "source_text": "und wirken auf Navigationsanbieter ein, um Durchgangsverkehr zu vermeiden.",
+      "source_text_sha256": "159c79f45670d29e1ee730a48fbe21569567f3652cc24012f9793d9f53a7b8d8",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `und wirken auf Navigationsanbieter ein, um Durchgangsverkehr zu vermeiden.` / SHA `159c79f45670d29e1ee730a48fbe21569567f3652cc24012f9793d9f53a7b8d8` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`, code `NAVIGATION_PROVIDER_INSTRUMENT_PROVIDER_RESPONSE_ROUTING_SPILLOVER_AND_ACCESS_UNRESOLVED`. Exact reason: legal/contractual influence route, provider response, routing changes, destination access and displacement to adjacent streets are unresolved.",
+      "fach_source_sha256": "a5cb9b9373f8a4538a0fe8fe5370de353224e3be040341189761655c3e534105",
+      "exact_reason_code": "NAVIGATION_PROVIDER_INSTRUMENT_PROVIDER_RESPONSE_ROUTING_SPILLOVER_AND_ACCESS_UNRESOLVED",
+      "exact_reason": "legal/contractual influence route, provider response, routing changes, destination access and displacement to adjacent streets are unresolved."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A02-C01-4f5e17fb2dee",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A02"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        183,
+        228
+      ],
+      "source_text": "Kinder schützen wir mit abgegrenzten Radwegen",
+      "source_text_sha256": "4f5e17fb2dee8633b5284addf94cb4612baea5b6ad672aab3989b8f91d09aaf4",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `Kinder schützen wir mit abgegrenzten Radwegen` / `4f5e17fb2dee8633b5284addf94cb4612baea5b6ad672aab3989b8f91d09aaf4` → `EXPLICIT_FACH_APPROVED`; `STRONG_POSITIVE_CYCLING_CONFLICT_SEPARATION_AND_CHILD_SAFETY_POTENTIAL / CONTINUITY_JUNCTION_GEOMETRY_WIDTH_MAINTENANCE_AND_ACCESS_DEPENDENT`; evidence `HIGH`.",
+      "fach_source_sha256": "ce121329db9a1f70c7c23ef554b6241e24a6cd770d87ea28913e5972193cc531",
+      "impact_direction": "STRONG_POSITIVE_CYCLING_CONFLICT_SEPARATION_AND_CHILD_SAFETY_POTENTIAL / CONTINUITY_JUNCTION_GEOMETRY_WIDTH_MAINTENANCE_AND_ACCESS_DEPENDENT",
+      "evidence_level": "HIGH",
+      "shared_reality_check_verbatim": "Common Reality Check for the A02 child set: crash/conflict/near-miss by mode/site, safe independent child travel, route continuity, junction conflict, accessibility, uptake and displacement; output counts do not compensate for unsafe gaps."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A02-C02-942fe8b91970",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A02"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        230,
+        254
+      ],
+      "source_text": "getrennten Abbiegespuren",
+      "source_text_sha256": "942fe8b919703c56e1757d3454aa0da292d8c647db7521794107cc89714411bb",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `getrennten Abbiegespuren` / `942fe8b919703c56e1757d3454aa0da292d8c647db7521794107cc89714411bb` → `EXPLICIT_FACH_APPROVED`; `POSITIVE_TURNING_CONFLICT_REDUCTION_POTENTIAL / SITE_GEOMETRY_SIGNAL_SPEED_AND_SPACE_TRADEOFF_DEPENDENT`; evidence `MEDIUM_HIGH`.",
+      "fach_source_sha256": "e4fecc4b25b64616202bd667ae88f9d5969bfd7c5e6e0d137c5865bb91d7aed2",
+      "impact_direction": "POSITIVE_TURNING_CONFLICT_REDUCTION_POTENTIAL / SITE_GEOMETRY_SIGNAL_SPEED_AND_SPACE_TRADEOFF_DEPENDENT",
+      "evidence_level": "MEDIUM_HIGH",
+      "shared_reality_check_verbatim": "Common Reality Check for the A02 child set: crash/conflict/near-miss by mode/site, safe independent child travel, route continuity, junction conflict, accessibility, uptake and displacement; output counts do not compensate for unsafe gaps."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A02-C03-68ab5039af41",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A02"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        256,
+        279
+      ],
+      "source_text": "temporären Spielstraßen",
+      "source_text_sha256": "68ab5039af418cfafa3c257f295b70d9bbb93b29276652d9ffa2a11f49f4d6ca",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `temporären Spielstraßen` / `68ab5039af418cfafa3c257f295b70d9bbb93b29276652d9ffa2a11f49f4d6ca` → `EXPLICIT_FACH_APPROVED`; `POSITIVE_CHILD_PUBLIC_SPACE_ACTIVITY_AND_LOCAL_TRAFFIC_SAFETY_POTENTIAL / SCHEDULE_ACCESS_SUPERVISION_AND_DISPLACEMENT_DEPENDENT`; evidence `MEDIUM`.",
+      "fach_source_sha256": "c1b1e164b9a4659b4fdbee25299577a1801f4139ccf17afd9b1d645facf079b9",
+      "impact_direction": "POSITIVE_CHILD_PUBLIC_SPACE_ACTIVITY_AND_LOCAL_TRAFFIC_SAFETY_POTENTIAL / SCHEDULE_ACCESS_SUPERVISION_AND_DISPLACEMENT_DEPENDENT",
+      "evidence_level": "MEDIUM",
+      "shared_reality_check_verbatim": "Common Reality Check for the A02 child set: crash/conflict/near-miss by mode/site, safe independent child travel, route continuity, junction conflict, accessibility, uptake and displacement; output counts do not compensate for unsafe gaps."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A02-C04-fa5c51daeb15",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A02"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        284,
+        311
+      ],
+      "source_text": "anderen baulichen Maßnahmen",
+      "source_text_sha256": "fa5c51daeb157db946800013ee3a3bf50661a20c0c7c7fa2b16ec49a8a764abc",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `anderen baulichen Maßnahmen` / `fa5c51daeb157db946800013ee3a3bf50661a20c0c7c7fa2b16ec49a8a764abc` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `UNSPECIFIED_STRUCTURAL_ROAD_SAFETY_MEASURES_DESIGN_LOCATION_AND_MECHANISM_UNRESOLVED`; exact reason: no physical treatment, site, scale or conflict mechanism is specified.",
+      "fach_source_sha256": "bc14ca2a1e98ba27097d86ed1b1c30588ef8cf7e293a59cbf5a1d6868ee6467d",
+      "exact_reason_code": "UNSPECIFIED_STRUCTURAL_ROAD_SAFETY_MEASURES_DESIGN_LOCATION_AND_MECHANISM_UNRESOLVED",
+      "exact_reason": "no physical treatment, site, scale or conflict mechanism is specified.",
+      "shared_reality_check_verbatim": "Common Reality Check for the A02 child set: crash/conflict/near-miss by mode/site, safe independent child travel, route continuity, junction conflict, accessibility, uptake and displacement; output counts do not compensate for unsafe gaps."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A02-C05-2947179abeba",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A02"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        312,
+        346
+      ],
+      "source_text": "sowie speziellen Verkehrskonzepten",
+      "source_text_sha256": "2947179abeba90f68dbd0bb9efbdbbe1501b6dee47f3018d76dc57fd7be0fc41",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `sowie speziellen Verkehrskonzepten` / `2947179abeba90f68dbd0bb9efbdbbe1501b6dee47f3018d76dc57fd7be0fc41` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `UNSPECIFIED_TRAFFIC_CONCEPT_CONTENT_IMPLEMENTATION_AND_NETWORK_EFFECTS_UNRESOLVED`; exact reason: a concept may produce many different measures and redistribution effects; its content is absent.",
+      "fach_source_sha256": "91fbe57a46babef8831ed75ae22588207842e4a0dc13a686de7b7e05e217ac9d",
+      "exact_reason_code": "UNSPECIFIED_TRAFFIC_CONCEPT_CONTENT_IMPLEMENTATION_AND_NETWORK_EFFECTS_UNRESOLVED",
+      "exact_reason": "a concept may produce many different measures and redistribution effects; its content is absent.",
+      "shared_reality_check_verbatim": "Common Reality Check for the A02 child set: crash/conflict/near-miss by mode/site, safe independent child travel, route continuity, junction conflict, accessibility, uptake and displacement; output counts do not compensate for unsafe gaps."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A02-C06-fa1ef0073bc4",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A02"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        348,
+        362
+      ],
+      "source_text": "Lotsendiensten",
+      "source_text_sha256": "fa1ef0073bc4b4673a22d6141c153f8b8e313374b5877a9dddfc83633169bcda",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `Lotsendiensten` / `fa1ef0073bc4b4673a22d6141c153f8b8e313374b5877a9dddfc83633169bcda` → `EXPLICIT_FACH_APPROVED`; `POSITIVE_SCHOOL_CROSSING_SUPERVISION_AND_CHILD_SAFETY_POTENTIAL / STAFFING_TRAINING_LOCATION_COVERAGE_AND_SAFEGUARD_DEPENDENT`; evidence `MEDIUM`.",
+      "fach_source_sha256": "9a34be6f10138c378b67a3345df2cb9c5598fa6c5f79af139caae5e748e33bbd",
+      "impact_direction": "POSITIVE_SCHOOL_CROSSING_SUPERVISION_AND_CHILD_SAFETY_POTENTIAL / STAFFING_TRAINING_LOCATION_COVERAGE_AND_SAFEGUARD_DEPENDENT",
+      "evidence_level": "MEDIUM",
+      "shared_reality_check_verbatim": "Common Reality Check for the A02 child set: crash/conflict/near-miss by mode/site, safe independent child travel, route continuity, junction conflict, accessibility, uptake and displacement; output counts do not compensate for unsafe gaps."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A02-C07-e22c7a91870d",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A02"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        363,
+        385
+      ],
+      "source_text": "und Verkehrserziehung.",
+      "source_text_sha256": "e22c7a91870d25b37d61cc6d2578dfd222b1838f0f3bb583871848d325901469",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `und Verkehrserziehung.` / `e22c7a91870d25b37d61cc6d2578dfd222b1838f0f3bb583871848d325901469` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `TRAFFIC_EDUCATION_TARGET_GROUP_CONTENT_DOSE_DELIVERY_AND_SAFETY_OUTCOME_UNRESOLVED`; exact reason: target group, content, intensity, delivery quality and causal contribution to real safety behaviour/outcomes are unspecified.",
+      "fach_source_sha256": "710791adaf6c7f6c75f5dbd9b27ea01e228b35c6f06e92700becfae233100c43",
+      "exact_reason_code": "TRAFFIC_EDUCATION_TARGET_GROUP_CONTENT_DOSE_DELIVERY_AND_SAFETY_OUTCOME_UNRESOLVED",
+      "exact_reason": "target group, content, intensity, delivery quality and causal contribution to real safety behaviour/outcomes are unspecified.",
+      "shared_reality_check_verbatim": "Common Reality Check for the A02 child set: crash/conflict/near-miss by mode/site, safe independent child travel, route continuity, junction conflict, accessibility, uptake and displacement; output counts do not compensate for unsafe gaps."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-C01-70453721fea7",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        386,
+        515
+      ],
+      "source_text": "Wir setzen auf konsequente Kontrollen sowie den Ausbau stationärer und mobiler Überwachung von Tempo, Lärm und Rotlichtverstößen.",
+      "source_text_sha256": "70453721fea7ca93fe8892019e2034afed63ff0f3b7ce79c5737ec1ce310617d",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "3. Exact whole child `Wir setzen auf konsequente Kontrollen sowie den Ausbau stationärer und mobiler Überwachung von Tempo, Lärm und Rotlichtverstößen.`\n   - SHA-256 `70453721fea7ca93fe8892019e2034afed63ff0f3b7ce79c5737ec1ce310617d`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `MIXED_SPEED_NOISE_REDLIGHT_ENFORCEMENT_TECHNOLOGY_LEGAL_DATA_SCOPE_AND_DELIVERY_UNRESOLVED`\n   - exact reason: the clause bundles distinct enforcement systems. Device types, legal bases, evidence thresholds, placement, staffing, data processing/retention, false-positive/appeal safeguards, noise-enforcement method and marginal enforcement level are not specified, so effectiveness and rights trade-offs cannot be assigned one net direction.",
+      "fach_source_sha256": "e73a1db9a6035825556a43659ec4bf1057ea736af5c9be48de620d871e423660",
+      "exact_reason_code": "MIXED_SPEED_NOISE_REDLIGHT_ENFORCEMENT_TECHNOLOGY_LEGAL_DATA_SCOPE_AND_DELIVERY_UNRESOLVED",
+      "exact_reason": "the clause bundles distinct enforcement systems. Device types, legal bases, evidence thresholds, placement, staffing, data processing/retention, false-positive/appeal safeguards, noise-enforcement method and marginal enforcement level are not specified, so effectiveness and rights trade-offs cannot be assigned one net direction."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-C02-2b13d789a769",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        516,
+        558
+      ],
+      "source_text": "Die Einnahmen verwenden wir zweckgebunden.",
+      "source_text_sha256": "2b13d789a7696e895f1e8e3561a6a46d87b5994cf885a022484ba7ccb9687d9f",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "4. Exact whole child `Die Einnahmen verwenden wir zweckgebunden.`\n   - SHA-256 `2b13d789a7696e895f1e8e3561a6a46d87b5994cf885a022484ba7ccb9687d9f`\n   - `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`\n   - reason code `ENFORCEMENT_REVENUE_SOURCE_AMOUNT_LEGAL_EARMARK_TARGET_AND_ADDITIONALITY_UNRESOLVED`\n   - exact reason: revenue source/amount, legal earmark route, beneficiary purpose and additionality are not named; earmarking itself is not an effect.",
+      "fach_source_sha256": "5c93998acf51bd65a762f181745a51a3bd4a71001927083cc6b7bbd5a6577dea",
+      "exact_reason_code": "ENFORCEMENT_REVENUE_SOURCE_AMOUNT_LEGAL_EARMARK_TARGET_AND_ADDITIONALITY_UNRESOLVED",
+      "exact_reason": "revenue source/amount, legal earmark route, beneficiary purpose and additionality are not named; earmarking itself is not an effect."
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A03-C01-55c6bb7d8e5b",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A03"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        559,
+        603
+      ],
+      "source_text": "Die Fahrradstaffel der Polizei bauen wir aus",
+      "source_text_sha256": "55c6bb7d8e5b2d5c987477f695218a7eacc35d54fa0359d6cdfe7a0a64bd04ad",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `Die Fahrradstaffel der Polizei bauen wir aus` / `55c6bb7d8e5b2d5c987477f695218a7eacc35d54fa0359d6cdfe7a0a64bd04ad` → `EXPLICIT_FACH_APPROVED`; `POSITIVE_VISIBLE_TRAFFIC_ENFORCEMENT_AND_CYCLING_NETWORK_RESPONSE_CAPACITY_POTENTIAL / STAFFING_DEPLOYMENT_POWERS_AND_OUTCOME_FOCUS_DEPENDENT`; evidence `MEDIUM`; Reality = active patrol hours/coverage, response and observed violations/safety rather than headcount alone.",
+      "fach_source_sha256": "e62aca50075d1f1d50faafc96adbb08a516c277ec7472737e6fa50732a000220",
+      "impact_direction": "POSITIVE_VISIBLE_TRAFFIC_ENFORCEMENT_AND_CYCLING_NETWORK_RESPONSE_CAPACITY_POTENTIAL / STAFFING_DEPLOYMENT_POWERS_AND_OUTCOME_FOCUS_DEPENDENT",
+      "evidence_level": "MEDIUM"
+    },
+    {
+      "object_id": "BE-SPD-2026-SU-0318-A03-C02-6cfdb1c0bc2b",
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "parent_object_ids": [
+        "BE-SPD-2026-SU-0318-A03"
+      ],
+      "source_page": 26,
+      "pdf_pages": [
+        26
+      ],
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        604,
+        645
+      ],
+      "source_text": "und statten die Ordnungsämter besser aus.",
+      "source_text_sha256": "6cfdb1c0bc2b50446f22cebdd3d7e1c54b17fae662518e2b375f0278afbce85a",
+      "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+      "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "counts_as_effect_object": true,
+      "batch_issue_comment_id": 5560493492,
+      "fach_issue_comment_id": 5560493492,
+      "authoritative_fach_text": "- `und statten die Ordnungsämter besser aus.` / `6cfdb1c0bc2b50446f22cebdd3d7e1c54b17fae662518e2b375f0278afbce85a` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `ORDNUNGSAMT_EQUIPMENT_STAFFING_TECHNOLOGY_SCOPE_AND_DELIVERY_UNRESOLVED`; exact reason: equipment type, staffing, powers/use case, quantity, operating model and intended outcome are absent.",
+      "fach_source_sha256": "a802ad835adc90820681caa6b90360e12afaa757ed6423ac731112eabdda5b73",
+      "exact_reason_code": "ORDNUNGSAMT_EQUIPMENT_STAFFING_TECHNOLOGY_SCOPE_AND_DELIVERY_UNRESOLVED",
+      "exact_reason": "equipment type, staffing, powers/use case, quantity, operating model and intended outcome are absent."
+    }
+  ],
+  "grammar_separators": [
+    {
+      "source_unit_id": "BE-SPD-2026-SU-0318",
+      "source_locator": "p026:b019@304.72,554.27,555.16,751.05",
+      "source_span_utf16": [
+        279,
+        284
+      ],
+      "source_text": " und ",
+      "source_text_sha256": "23cc156deffba94bf107f191ff88740b7832d2a40a26daa897c5a62663439176",
+      "disposition": "GRAMMATICAL_CONNECTOR_BETWEEN_EXPLICITLY_REVIEWED_CLAUSES_NOT_A_REVIEW_OBJECT"
+    }
+  ],
+  "coverage": {
+    "source_unit_ids": [
+      "BE-SPD-2026-SU-0303",
+      "BE-SPD-2026-SU-0304",
+      "BE-SPD-2026-SU-0305",
+      "BE-SPD-2026-SU-0306",
+      "BE-SPD-2026-SU-0307",
+      "BE-SPD-2026-SU-0308",
+      "BE-SPD-2026-SU-0309",
+      "BE-SPD-2026-SU-0310",
+      "BE-SPD-2026-SU-0311",
+      "BE-SPD-2026-SU-0312",
+      "BE-SPD-2026-SU-0313",
+      "BE-SPD-2026-SU-0314",
+      "BE-SPD-2026-SU-0315",
+      "BE-SPD-2026-SU-0316",
+      "BE-SPD-2026-SU-0317",
+      "BE-SPD-2026-SU-0318"
+    ],
+    "original_atom_ids": [
+      "BE-SPD-2026-SU-0305-A01",
+      "BE-SPD-2026-SU-0306-A01",
+      "BE-SPD-2026-SU-0306-A02",
+      "BE-SPD-2026-SU-0306-A03",
+      "BE-SPD-2026-SU-0309-A01",
+      "BE-SPD-2026-SU-0309-A02",
+      "BE-SPD-2026-SU-0309-A03",
+      "BE-SPD-2026-SU-0309-A04",
+      "BE-SPD-2026-SU-0311-A01",
+      "BE-SPD-2026-SU-0311-A02",
+      "BE-SPD-2026-SU-0314-A01",
+      "BE-SPD-2026-SU-0316-A01",
+      "BE-SPD-2026-SU-0317-A01",
+      "BE-SPD-2026-SU-0317-A02",
+      "BE-SPD-2026-SU-0317-A03",
+      "BE-SPD-2026-SU-0318-A01",
+      "BE-SPD-2026-SU-0318-A02",
+      "BE-SPD-2026-SU-0318-A03"
+    ],
+    "generated_child_ids": [
+      "BE-SPD-2026-SU-0305-C01-e520cce28451",
+      "BE-SPD-2026-SU-0305-C02-b84646243b7b",
+      "BE-SPD-2026-SU-0305-C03-b7dd37c3de2b",
+      "BE-SPD-2026-SU-0305-C04-71248cbe3563",
+      "BE-SPD-2026-SU-0306-C01-9d048a842783",
+      "BE-SPD-2026-SU-0307-C01-5a8397c8c20a",
+      "BE-SPD-2026-SU-0310-C01-d1df1113b4f3",
+      "BE-SPD-2026-SU-0312-C01-7bea65f223e7",
+      "BE-SPD-2026-SU-0314-C01-1c1dbffca069",
+      "BE-SPD-2026-SU-0314-C02-1a244eca44aa",
+      "BE-SPD-2026-SU-0316-C01-f3345c3cec65",
+      "BE-SPD-2026-SU-0316-C02-05ed7c007adc",
+      "BE-SPD-2026-SU-0316-A01-C01-1f88162bfdb5",
+      "BE-SPD-2026-SU-0316-A01-C02-159c79f45670",
+      "BE-SPD-2026-SU-0318-A02-C01-4f5e17fb2dee",
+      "BE-SPD-2026-SU-0318-A02-C02-942fe8b91970",
+      "BE-SPD-2026-SU-0318-A02-C03-68ab5039af41",
+      "BE-SPD-2026-SU-0318-A02-C04-fa5c51daeb15",
+      "BE-SPD-2026-SU-0318-A02-C05-2947179abeba",
+      "BE-SPD-2026-SU-0318-A02-C06-fa1ef0073bc4",
+      "BE-SPD-2026-SU-0318-A02-C07-e22c7a91870d",
+      "BE-SPD-2026-SU-0318-C01-70453721fea7",
+      "BE-SPD-2026-SU-0318-C02-2b13d789a769",
+      "BE-SPD-2026-SU-0318-A03-C01-55c6bb7d8e5b",
+      "BE-SPD-2026-SU-0318-A03-C02-6cfdb1c0bc2b"
+    ],
+    "active_terminal_review_leaf_ids": [
+      "BE-SPD-2026-SU-0305-A01",
+      "BE-SPD-2026-SU-0306-A01",
+      "BE-SPD-2026-SU-0306-A02",
+      "BE-SPD-2026-SU-0306-A03",
+      "BE-SPD-2026-SU-0309-A01",
+      "BE-SPD-2026-SU-0309-A03",
+      "BE-SPD-2026-SU-0309-A04",
+      "BE-SPD-2026-SU-0311-A01",
+      "BE-SPD-2026-SU-0311-A02",
+      "BE-SPD-2026-SU-0317-A01",
+      "BE-SPD-2026-SU-0317-A02",
+      "BE-SPD-2026-SU-0318-A01",
+      "BE-SPD-2026-SU-0305-C01-e520cce28451",
+      "BE-SPD-2026-SU-0305-C02-b84646243b7b",
+      "BE-SPD-2026-SU-0305-C04-71248cbe3563",
+      "BE-SPD-2026-SU-0306-C01-9d048a842783",
+      "BE-SPD-2026-SU-0307-C01-5a8397c8c20a",
+      "BE-SPD-2026-SU-0310-C01-d1df1113b4f3",
+      "BE-SPD-2026-SU-0312-C01-7bea65f223e7",
+      "BE-SPD-2026-SU-0314-C01-1c1dbffca069",
+      "BE-SPD-2026-SU-0314-C02-1a244eca44aa",
+      "BE-SPD-2026-SU-0316-A01-C01-1f88162bfdb5",
+      "BE-SPD-2026-SU-0316-A01-C02-159c79f45670",
+      "BE-SPD-2026-SU-0318-A02-C01-4f5e17fb2dee",
+      "BE-SPD-2026-SU-0318-A02-C02-942fe8b91970",
+      "BE-SPD-2026-SU-0318-A02-C03-68ab5039af41",
+      "BE-SPD-2026-SU-0318-A02-C04-fa5c51daeb15",
+      "BE-SPD-2026-SU-0318-A02-C05-2947179abeba",
+      "BE-SPD-2026-SU-0318-A02-C06-fa1ef0073bc4",
+      "BE-SPD-2026-SU-0318-A02-C07-e22c7a91870d",
+      "BE-SPD-2026-SU-0318-C01-70453721fea7",
+      "BE-SPD-2026-SU-0318-C02-2b13d789a769",
+      "BE-SPD-2026-SU-0318-A03-C01-55c6bb7d8e5b",
+      "BE-SPD-2026-SU-0318-A03-C02-6cfdb1c0bc2b"
+    ],
+    "explicit_fach_approved_ids": [
+      "BE-SPD-2026-SU-0306-A01",
+      "BE-SPD-2026-SU-0306-A02",
+      "BE-SPD-2026-SU-0309-A01",
+      "BE-SPD-2026-SU-0311-A01",
+      "BE-SPD-2026-SU-0311-A02",
+      "BE-SPD-2026-SU-0317-A01",
+      "BE-SPD-2026-SU-0317-A02",
+      "BE-SPD-2026-SU-0318-A01",
+      "BE-SPD-2026-SU-0305-C02-b84646243b7b",
+      "BE-SPD-2026-SU-0307-C01-5a8397c8c20a",
+      "BE-SPD-2026-SU-0312-C01-7bea65f223e7",
+      "BE-SPD-2026-SU-0314-C01-1c1dbffca069",
+      "BE-SPD-2026-SU-0318-A02-C01-4f5e17fb2dee",
+      "BE-SPD-2026-SU-0318-A02-C02-942fe8b91970",
+      "BE-SPD-2026-SU-0318-A02-C03-68ab5039af41",
+      "BE-SPD-2026-SU-0318-A02-C06-fa1ef0073bc4",
+      "BE-SPD-2026-SU-0318-A03-C01-55c6bb7d8e5b"
+    ],
+    "reviewed_not_assessable_ids": [
+      "BE-SPD-2026-SU-0305-A01",
+      "BE-SPD-2026-SU-0306-A03",
+      "BE-SPD-2026-SU-0309-A03",
+      "BE-SPD-2026-SU-0309-A04",
+      "BE-SPD-2026-SU-0305-C01-e520cce28451",
+      "BE-SPD-2026-SU-0305-C04-71248cbe3563",
+      "BE-SPD-2026-SU-0306-C01-9d048a842783",
+      "BE-SPD-2026-SU-0310-C01-d1df1113b4f3",
+      "BE-SPD-2026-SU-0314-C02-1a244eca44aa",
+      "BE-SPD-2026-SU-0316-A01-C01-1f88162bfdb5",
+      "BE-SPD-2026-SU-0316-A01-C02-159c79f45670",
+      "BE-SPD-2026-SU-0318-A02-C04-fa5c51daeb15",
+      "BE-SPD-2026-SU-0318-A02-C05-2947179abeba",
+      "BE-SPD-2026-SU-0318-A02-C07-e22c7a91870d",
+      "BE-SPD-2026-SU-0318-C01-70453721fea7",
+      "BE-SPD-2026-SU-0318-C02-2b13d789a769",
+      "BE-SPD-2026-SU-0318-A03-C02-6cfdb1c0bc2b"
+    ],
+    "zero_count_ids": [
+      "BE-SPD-2026-SU-0303",
+      "BE-SPD-2026-SU-0304",
+      "BE-SPD-2026-SU-0305",
+      "BE-SPD-2026-SU-0306",
+      "BE-SPD-2026-SU-0307",
+      "BE-SPD-2026-SU-0308",
+      "BE-SPD-2026-SU-0309",
+      "BE-SPD-2026-SU-0310",
+      "BE-SPD-2026-SU-0311",
+      "BE-SPD-2026-SU-0312",
+      "BE-SPD-2026-SU-0313",
+      "BE-SPD-2026-SU-0314",
+      "BE-SPD-2026-SU-0315",
+      "BE-SPD-2026-SU-0316",
+      "BE-SPD-2026-SU-0317",
+      "BE-SPD-2026-SU-0318",
+      "BE-SPD-2026-SU-0309-A02",
+      "BE-SPD-2026-SU-0314-A01",
+      "BE-SPD-2026-SU-0316-A01",
+      "BE-SPD-2026-SU-0317-A03",
+      "BE-SPD-2026-SU-0318-A02",
+      "BE-SPD-2026-SU-0318-A03",
+      "BE-SPD-2026-SU-0305-C03-b7dd37c3de2b",
+      "BE-SPD-2026-SU-0316-C01-f3345c3cec65",
+      "BE-SPD-2026-SU-0316-C02-05ed7c007adc"
+    ],
+    "uncovered_source_spans": [],
+    "remaining_p26_source_object_ids": [],
+    "terminal_pages": [
+      26
+    ],
+    "cross_page_objects_consumed_once": [],
+    "excluded_previously_consumed_cross_page_objects": [
+      "BE-SPD-2026-SU-0302"
+    ],
+    "gate": "BE_SPD_2026_P26_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_LOSSLESS_MATERIALISATION",
+    "release_or_residual_activation_allowed": true
+  },
+  "constraints": {
+    "fach_synthesized": false,
+    "protected_fach_or_source_overwritten": false,
+    "generic_delegated_rnaa_used_as_fach": false,
+    "dns_synthesized": false,
+    "recommendation_synthesized": false,
+    "score_synthesized": false,
+    "programme_terminal_claimed": false,
+    "vercel_action_triggered": false,
+    "p27_authorised": false
+  },
+  "descriptor_sha256": "1dd2420d8d15df34610a673f6a3c0d605958f1151d78f5e029d790830490515f"
+}
