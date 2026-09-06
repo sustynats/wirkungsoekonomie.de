@@ -47,6 +47,30 @@ test("current public explanation satisfies the legacy assessment contract withou
   assert.ok(mediaImpactValidationErrors({media_impact:missing,media_analysis_version:MEDIA_ANALYSIS_VERSION},item).includes('MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment'));
 });
 
+test("media explanation keeps every paragraph, including the closing evidence limitation", () => {
+  const item = story("Minister bezeichnet Protest als Klimaextremismus");
+  const input = validMedia();
+  delete input.editorial_assessment;
+  input.public_explanation = input.public_explanation.split(/(?<=[.!?])\s+/u).join("\n\n");
+  assert.ok(input.public_explanation.split("\n\n").length > 3);
+  assert.ok(input.public_explanation.split(/\s+/u).length >= 100);
+  const media = sanitizeMediaImpact(input, item).media_impact;
+  assert.equal(media.public_explanation, input.public_explanation);
+  assert.equal(media.editorial_assessment, input.public_explanation.replace(/\s+/gu, " "));
+  assert.equal(sanitizeMediaImpact(media, item).media_impact.public_explanation, media.public_explanation);
+  assert.ok(!mediaImpactValidationErrors({ media_impact: media, media_analysis_version: MEDIA_ANALYSIS_VERSION }, item).includes("MEDIA_PUBLIC_EXPLANATION_LENGTH"));
+});
+
+test("media explanation word gate sees the entire text, not a character-limited prefix", () => {
+  const item = story("Minister bezeichnet Protest als Klimaextremismus");
+  for (const words of [79, 80, 180, 200, 201, 240]) {
+    const explanation = Array(words).fill("Infrastrukturverantwortung").join(" ");
+    const media = sanitizeMediaImpact(validMedia({ public_explanation: explanation }), item).media_impact;
+    assert.equal(media.public_explanation, explanation);
+    assert.equal(mediaImpactValidationErrors({ media_impact: media, media_analysis_version: MEDIA_ANALYSIS_VERSION }, item).includes("MEDIA_PUBLIC_EXPLANATION_LENGTH"), words < 80 || words > 200, `${words} words`);
+  }
+});
+
 test("neutrales Ereignis löst keinen Mediencheck aus", () => {
   assert.equal(detectMediaImpactTrigger(story("Bund veröffentlicht Monatsbericht", "Der Bericht enthält neue Daten zur Verwaltung.")).relevant, false);
   assert.equal(detectMediaImpactTrigger(story("Nach Gefahrengut-Alarm läuft der Flugverkehr wieder", "Eine Frau meldete einen gefährlichen Stoff; laut Polizei bestand zu keinem Zeitpunkt eine Gefahr.")).relevant, false);

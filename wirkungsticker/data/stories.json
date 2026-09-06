@@ -1,7 +1,436 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T19:21:31.261Z",
+  "updated_at": "2026-09-06T20:54:14.336Z",
   "stories": [
+    {
+      "story_id": "wt-e10c23f5e37ed39e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e10c23f5e37ed39e-74a233e7c392016f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e10c23f5e37ed39e-40a1849d51abf3e4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e10c23f5e37ed39e-b0b0040e1c50b1a6-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
+      "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
+      "source_summary": "Der MDR meldet zur Landtagswahl in Sachsen-Anhalt eine aktuelle Hochrechnung von Infratest Dimap. Danach liegt die AfD mit rund 44,0 Prozent klar vorn, die CDU kommt auf 17,5 Prozent. Im Text wird außerdem genannt, dass das BSW mit 5,1 Prozent in den Landtag einziehen würde und die FDP mit 2,5 Prozent scheitert.\n\nOffen bleibt nach dem Bericht noch, ob die AfD die absolute Mehrheit der Sitze erreicht. Der Beitrag wurde am 6. September 2026 zuletzt aktualisiert; er verweist zugleich auf eine Audiofassung mit denselben Kernaussagen.",
+      "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
+      "detail_summary": "Der MDR berichtet über eine aktuelle Hochrechnung zur Landtagswahl in Sachsen-Anhalt und nennt die AfD mit rund 44,0 Prozent als stärkste Kraft. Für die CDU werden 17,5 Prozent genannt, zudem wird die Frage offengelassen, ob die AfD eine absolute Mehrheit der Sitze erreicht. Das ist politisch relevant, weil das Ergebnis die Macht- und Koalitionsoptionen im Landtag unmittelbar verändert. Der mögliche Wirkpfad betrifft damit die künftige Regierungsbildung, die Verhandlungsmacht der Parteien und die Zusammensetzung parlamentarischer Mehrheiten. Für eine belastbare Einordnung fehlt aber noch die amtliche Feststellung des Endergebnisses; die Quelle ist zudem eine einzelne journalistische Darstellung.",
+      "why_relevant": "Die Hochrechnung beschreibt eine mögliche Verschiebung der parlamentarischen Mehrheiten in einem Bundesland und damit eine unmittelbar demokratierelevante Zustandsänderung.",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Das Ergebnis kann die politische Vertretung, Koalitionsbildung und den Handlungsspielraum der Wählerstimmen im Landtag verändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus der Meldung ergibt sich kein direkter Bezug zu Umwelt-, Klima- oder Ressourcenzuständen."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "rationale": "Die Hochrechnung betrifft die Sitzverteilung, mögliche Mehrheiten und damit die demokratische Steuerungsfähigkeit im Landtag."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T20:51:30.652Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T20:22:40.000Z",
+      "last_updated": "2026-09-06T20:53:01.243Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-c34e678b7220e99b9eea",
+      "case_file": {
+        "case_id": "case-c3b7412b8f0f9d",
+        "member_count": 4,
+        "publisher_count": 13,
+        "members": [
+          {
+            "story_id": "wt-e10c23f5e37ed39e",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
+            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
+            "updated_at": "2026-09-06T20:53:01.243Z",
+            "published_at": "2026-09-06T20:53:01.243Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-12f9c680daba4f09",
+            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
+            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
+            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
+            "updated_at": "2026-09-06T20:07:20.597Z",
+            "published_at": "2026-09-06T20:07:20.597Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ebecf5b3f91d490",
+            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
+            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+            "updated_at": "2026-09-05T23:19:18.605Z",
+            "published_at": "2026-09-05T22:07:32.381Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-06476c6e980f5f47",
+            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-05T12:01:00.915Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-06T20:22:40.000Z",
+      "published_at": "2026-09-06T20:53:01.243Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wie viele Sitze erhält die AfD nach der amtlichen Feststellung des Endergebnisses?",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "amtlich festgestellte Sitzanzahl der AfD",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-49f72abce2075658",
+          "announced_at": "2026-09-06T20:22:40.000Z",
+          "follow_up_date": "2026-09-13T20:53:01.243Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/news-aktuelles-wahltag-wahlbeteiligung-114,ergebnisse-wahlkreise-gemeinden-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T20:22:40.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-2cf5f0c5e42720ec",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2cf5f0c5e42720ec-20e7c7d18645e36e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2cf5f0c5e42720ec-2e60734933f4c10a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2cf5f0c5e42720ec-d9e5c6c9392c853a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet--2720ec",
+      "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
+      "source_summary": "Die Meldung beschreibt einen Großeinsatz der Polizei am Hambacher Forst bei Kerpen westlich von Köln. Gesucht wurde nach einem Tatverdächtigen im Zusammenhang mit versuchten Sabotage-Angriffen auf das deutsche Stromnetz. Laut der zusammengefassten Quelle blieb die Suche ohne Erfolg; Hinweise auf den Gesuchten wurden nicht gefunden, die Fahndung geht aber weiter.\n\nIm selben Bericht heißt es, die Polizei halte es für wahrscheinlich, dass der 48-Jährige aus Gevelsberg mit dem Fahrrad auf der Flucht sei. Zudem verweist die Quelle auf Sachsen: Dort seien in den Landkreisen Bautzen und Görlitz zwölf selbstgebaute Sprengvorrichtungen entdeckt worden. Die Behörden prüfen nach eigenen Angaben einen Zusammenhang mit Funden in Brandenburg und Nordrhein-Westfalen.",
+      "summary": "Die Polizei hat am Hambacher Forst nach einem Tatverdächtigen gesucht, aber keine Hinweise gefunden. Die Fahndung läuft weiter, während in Sachsen weitere Sprengvorrichtungen gemeldet wurden.",
+      "detail_summary": "Der Bericht fasst einen Polizeieinsatz am Hambacher Forst zusammen, der ohne Festnahme oder belastbare Spur endete. Neu ist damit vor allem der Zwischenstand, dass die Suche trotz Großaufgebot erfolglos blieb und die Fahndung fortgesetzt wird. Materiell relevant ist das, weil es um mögliche Angriffe auf das Stromnetz und damit um Infrastruktur, Sicherheit und Kaskadenrisiken geht. Ein möglicher Wirkpfad wäre eine verstärkte Sicherung von Stromanlagen und eine Ausweitung der Ermittlungen über NRW hinaus. Als weitere, im Bericht genannte Entwicklung kommen die in Sachsen gefundenen zwölf selbstgebauten Sprengvorrichtungen hinzu. Die Evidenz bleibt aber begrenzt, weil die zentrale Lage hier nur über eine journalistische Einzelquelle und in zusammengefasster Form vorliegt.",
+      "why_relevant": "Der Bericht betrifft mögliche Sabotage an kritischer Energieinfrastruktur und damit ein System mit hohen Folgewirkungen für Versorgung, Sicherheit und staatliche Reaktionsfähigkeit.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Folgen betreffen Stromversorgung, öffentliche Sicherheit und Ermittlungsmaßnahmen; die Reichweite ist zwar noch offen, der potenzielle Schaden aber systemisch."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Indirekte Folgen können die Stabilität von Energie- und Industrienetzen betreffen; unmittelbare Umweltwirkungen sind in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und Vertrauen in Sicherheits- und Ermittlungsinstitutionen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T20:21:36.327Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-3f27f489cadb",
+        "slug": "grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4",
+        "title": "Großeinsatz am Hambacher Forst: Was die erfolglose Suche über Stromnetz-Resilienz und Sicherheitslasten zeigt",
+        "teaser": "Am Hambacher Forst blieb die Suche nach einem Verdächtigen ohne Erfolg. Systemisch relevant ist vor allem, wie ein Sabotageverdacht Schutz, Zuständigkeiten und Resilienz im Stromnetz berührt.",
+        "published_at": "2026-09-06T20:54:14.336Z",
+        "updated_at": "2026-09-06T20:54:14.336Z"
+      },
+      "first_seen": "2026-09-06T18:42:06.000Z",
+      "last_updated": "2026-09-06T20:22:49.164Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-3c4653692db94c9693bc",
+      "case_file": null,
+      "source_published_at": "2026-09-06T20:15:54.000Z",
+      "published_at": "2026-09-06T20:22:49.164Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T20:15:54.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3b184047d464b8b5",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3b184047d464b8b5-17097f5153ff654d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3b184047d464b8b5-39d2b8d6719e7c06-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3b184047d464b8b5-752508e832410744-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "zukunftsangst-dampft-kinderwunsch-64b8b5",
+      "title": "Warum Kinderwünsche unerfüllt bleiben und die Geburtenrate sinkt",
+      "source_summary": "Der MDR-Text berichtet über einen weiteren Rückgang der Geburtenrate in Deutschland auf rund 1,3 Kinder pro Frau. Zugleich verweist er auf eine Auswertung, nach der die ideale Kinderzahl bei 18- bis 39-Jährigen weiter bei 2,2 liegt, die realistisch erwartete Kinderzahl aber 2025 erstmals seit Jahren gesunken ist.\n\nAls mögliche Gründe nennt der Beitrag Unsicherheit, Sorgen vor Krieg, einer Schwächung der Demokratie und dem Klimawandel sowie regionale Unterschiede bei Lebensbedingungen und Kinderbetreuung. Die Angaben werden im Text Forschenden und einer BiB-Auswertung zugeschrieben; offene Fragen zur genauen Datengrundlage und zur Einordnung bleiben im Beitrag selbst nur begrenzt ausgeführt.",
+      "summary": "Die Quelle meldet einen Rückgang der Geburtenrate und einen gleichzeitigen Rückgang der realistisch erwarteten Kinderzahl. Als mögliche Erklärungen nennt sie Unsicherheit, Krisensorgen und Unterschiede bei den Lebensbedingungen.",
+      "detail_summary": "Gesichert ist nach der Quelle vor allem ein demografischer Stimmungs- und Erwartungskontrast: Die Geburtenrate liegt laut Beitrag bei rund 1,3 Kindern pro Frau, während der Wunsch nach Kindern nicht einfach verschwindet, aber die realistisch erwartete Zahl 2025 erstmals sinkt. Für die Einordnung ist das relevant, weil hier nicht nur ein einzelner Wert, sondern ein möglicher Vorlaufindikator für künftige Geburtenentscheidungen beschrieben wird. Der mögliche Wirkpfad verläuft über Unsicherheit, Zukunftserwartungen und konkrete Rahmenbedingungen wie Wohn- und Betreuungslage. Falls sich diese Muster verfestigen, könnte das Familienplanung, Arbeitsmarkt und soziale Infrastruktur mittelbar beeinflussen. Belastbare Aussagen zu tatsächlichen Folgen oder zur Stärke der Kausalität liefert der Text aber nicht; er verweist auf Forschung, ohne die vollständige Methodik im Auszug auszubreiten.",
+      "why_relevant": "Die Meldung betrifft einen strukturell wichtigen Zustand: sinkende Geburtenrate und veränderte Kinderwünsche können langfristig Familienpolitik, Arbeitsmarkt, Infrastruktur und soziale Sicherung berühren.",
+      "topic": [
+        "Arbeit",
+        "Soziales"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Entwicklung betrifft Familienplanung, Lebensverläufe und mögliche künftige Belastungen oder Entlastungen für Haushalte und soziale Infrastruktur."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Der Text nennt Klimawandel als Sorgefaktor, belegt aber keine direkte Umweltwirkung oder ökologische Zustandsänderung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Sorgen vor einer Schwächung der Demokratie werden als mit niedrigeren Kinderwünschen verbunden genannt; das ist gesellschaftlich relevant, aber nicht als Wirkung belegt."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T20:06:02.960Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-03T14:23:00.000Z",
+      "last_updated": "2026-09-06T20:07:54.819Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-42fd9997b279e1433a65",
+      "case_file": null,
+      "source_published_at": "2026-09-03T14:23:00.000Z",
+      "published_at": "2026-09-06T20:07:54.819Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T14:23:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-e28250d4074683af",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e28250d4074683af-cb45e8ba363ecb53-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e28250d4074683af-9174a8dbed9f1483-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e28250d4074683af-e48d8ca5eec0f2cc-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e28250d4074683af-05bf78c4cc0aba6d-source.png"
+        }
+      },
+      "slug": "ruhestandler-haushalte-verfugen-im-mittel-uber-2-330-euro-pro-monat-4683af",
+      "title": "Ruheständler-Haushalte verfügen im Mittel über 2 330 Euro pro Monat",
+      "source_summary": "Das Statistische Bundesamt meldet Zahlen zu Haushalten von Ruheständlerinnen und Ruheständlern ab 65 Jahren. Danach verfügen diese Haushalte im Mittel über 2 330 Euro pro Monat. Für die östlichen Bundesländer einschließlich Berlin nennt Destatis einen Median von 2 270 Euro, für die westlichen Länder 2 350 Euro.\n\nDie Angaben stammen aus EU-SILC 2025 und werden als Endergebnisse bezeichnet. Destatis erläutert außerdem, dass sich die Einkommensmessung auf das verfügbare Haushaltsnettoeinkommen des Vorjahres bezieht. Ergänzend nennt die Mitteilung eine Armutsgefährdungsquote von 18,9 % für Ruheständlerinnen und Ruheständler ab 65 Jahren.",
+      "summary": "Destatis meldet neue EU-SILC-2025-Ergebnisse zu Einkommen und Armutsgefährdung von Ruheständler-Haushalten. Die Zahlen sind amtlich und als Endergebnisse ausgewiesen.",
+      "detail_summary": "Die Mitteilung liefert eine aktuelle amtliche Zustandsbeschreibung: Ruheständler-Haushalte ab 65 Jahren haben im Mittel 2 330 Euro pro Monat, im Osten 2 270 Euro und im Westen 2 350 Euro. Zusätzlich weist Destatis eine Armutsgefährdungsquote von 18,9 % aus und erklärt die Messlogik über EU-SILC 2025. Materiell ist das, weil die Zahlen die Einkommenslage einer großen Bevölkerungsgruppe und regionale Unterschiede sichtbar machen. Ein möglicher Wirkpfad liegt in der Einordnung von Altersarmut, Mietbelastung, Transferbedarf und politischer Prioritätensetzung. Die Meldung zeigt noch keine Wirkung, sondern eine belastbare Referenz für künftige Debatten und Entscheidungen. Grenzen bleiben: Es sind Durchschnitts- und Medianwerte, keine Ursachenanalyse und keine Aussage zu Vermögen oder individuellen Haushalten.",
+      "why_relevant": "Die Meldung aktualisiert die amtliche Datengrundlage zur Einkommenslage älterer Haushalte und zur Armutsgefährdung. Das ist für Sozialpolitik, Renten- und Wohnkostenfragen sowie regionale Unterschiede relevant.",
+      "topic": [
+        "Europa",
+        "Finanzen"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Die Zahlen betreffen eine große Gruppe älterer Menschen und berühren Einkommen, Armutsrisiko und mögliche Sozialleistungen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Quelle enthält keine unmittelbaren Umwelt- oder Klimawirkungen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Als amtliche Sozialstatistik schafft die Meldung eine belastbare Grundlage für öffentliche Debatten und politische Kontrolle."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Durchschnitt pro Monat",
+            "value": "2 330",
+            "unit": "Euro",
+            "context": "Mittelwert für Ruheständler-Haushalte ab 65 Jahren",
+            "claim_id": "wt-e28250d4074683af-v1-claim-1"
+          },
+          {
+            "label": "Osten einschließlich Berlin",
+            "value": "2 270",
+            "unit": "Euro",
+            "context": "Median des Haushaltsnettoeinkommens",
+            "claim_id": "wt-e28250d4074683af-v1-claim-2"
+          },
+          {
+            "label": "Westen",
+            "value": "2 350",
+            "unit": "Euro",
+            "context": "Median des Haushaltsnettoeinkommens",
+            "claim_id": "wt-e28250d4074683af-v1-claim-2"
+          }
+        ],
+        "affected_groups": [
+          "aeltere",
+          "haushalte",
+          "staat"
+        ],
+        "tendency": {
+          "human": "gemischt",
+          "planet": "offen",
+          "democracy": "chance"
+        }
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T20:06:02.960Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-01T06:00:00.000Z",
+      "last_updated": "2026-09-06T20:07:42.987Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-31e248310551ae4377cf",
+      "case_file": null,
+      "source_published_at": "2026-09-01T06:00:00.000Z",
+      "published_at": "2026-09-06T20:07:42.987Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "destatis-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N061_63.html",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T06:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-06837a611e9459ce",
       "title_image": {
@@ -1890,316 +2319,6 @@
       ]
     },
     {
-      "story_id": "wt-7ebecf5b3f91d490",
-      "title_image": null,
-      "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-      "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
-      "source_summary": "Am Sonntag wird in Sachsen-Anhalt der Landtag gewählt. Vorher liegen unterschiedliche Berichte über die Regierungsbereitschaft von AfD-Spitzenkandidat Ulrich Siegmund bei knappster Mehrheit vor. n-tv schreibt ihm in einem am Samstag um 18:24 Uhr veröffentlichten Videobeitrag Bereitschaft auch bei einer Stimme Mehrheit zu. Geprüft sind Überschrift und Datum, nicht der vollständige Originalton.\n\nEin anderer BILD-Artikel erschien später, um 22:26 Uhr. Für Siegmunds eigene Antwort verweist er jedoch auf Freitag; zusätzliche Angaben über interne Widerstände sind nicht unabhängig bestätigt. Das neuere Artikeldatum belegt somit keinen erneuten Kurswechsel nach dem n-tv-Beitrag. Die früheren Berichte von BILD, FOCUS und n-tv/AFP teilen denselben Interviewursprung. ZDFheute dokumentierte bereits am Mittwoch den Vorbehalt einer stabilen Mehrheit.\n\nEine abschließende Auflösung anhand vollständig geprüfter Originaltöne liegt nicht vor. Gewählt wird der Landtag, nicht direkt der Ministerpräsident. Über dessen Wahl entscheiden anschließend die Abgeordneten geheim. Wahlergebnis, formelle Kandidatur und Regierungsbildung stehen noch aus.",
-      "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
-      "detail_summary": "Der n-tv-Beitrag um 18:24 Uhr und der BILD-Artikel um 22:26 Uhr dürfen nicht allein nach ihrem Veröffentlichungszeitpunkt als Abfolge neuer Kandidatenaussagen gelesen werden. BILD verweist für Siegmunds Antwort auf Freitag; die spätere Veröffentlichung beweist keinen erneuten Kurswechsel nach n-tv. Umgekehrt ersetzt die n-tv-Überschrift keine vollständige Prüfung des Originaltons und keine formelle Kandidatur. Bei der Landtagswahl entscheiden die Bürger über ihre parlamentarische Vertretung, nicht direkt über den Ministerpräsidenten. Bei knapper eigener Mehrheit können fehlende Stimmen im geheimen Wahlgang ausschlaggebend sein. Ob solche Ausfälle oder abweichende Stimmen auftreten, ist offen; zusätzliche Berichte über parteiinterne Widerstände sind nicht unabhängig bestätigt.",
-      "why_relevant": "Unmittelbar vor der Wahl sind Bedingungen einer Kandidatur und ihr tatsächlicher Aussagezeitpunkt besonders informationsrelevant. Ungeklärte Berichte dürfen weder als sicherer Verzicht noch als sichere Zusage erscheinen. Eine gesellschaftliche Wirkung ist damit nicht nachgewiesen.",
-      "topic": [
-        "Demokratie",
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "sehr hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "rationale": "Für Wahlberechtigte ist die Kenntnis der Bedingungen einer möglichen Regierungsbildung relevant. Konkrete Folgen für Gesundheit, Einkommen oder Teilhabe lassen sich aus der Interviewaussage allein nicht bestimmen."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus den Kandidaturaussagen folgt noch kein bestimmter Umweltzustand und kein belastbar bezifferbares Umweltrisiko."
-        },
-        "democracy": {
-          "relevance": "sehr hoch",
-          "rationale": "Die Unterscheidung zwischen Wahlwerbung, tatsächlicher Kandidatur und parlamentarischer Mehrheit ist unmittelbar vor der Wahl besonders informationsrelevant. Ein Einfluss auf Wahlverhalten oder Vertrauen ist damit nicht nachgewiesen."
-        }
-      },
-      "visuals": null,
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "high",
-        "reason": "Bedingte Kandidatur, grundsätzlicher Regierungswille und die zeitliche Reihenfolge unterschiedlicher Aussagen müssen getrennt bleiben.",
-        "factual_core": "Vor der Landtagswahl liegen unterschiedlich zugespitzte Berichte vor. Der später veröffentlichte BILD-Artikel verweist auf eine frühere Antwort; n-tv schreibt dem Kandidaten Bereitschaft auch bei knapper Mehrheit zu.",
-        "epistemic_status": {
-          "confirmed": [
-            "Die Wahl und das parlamentarische Verfahren sind amtlich dokumentiert."
-          ],
-          "actor_claims": [
-            "Der spätere n-tv-Beitrag schreibt dem Kandidaten Bereitschaft auch bei knapper Mehrheit zu; frühere Berichte gaben eine offene Antwort wieder."
-          ],
-          "open": [
-            "Vollständiger Kontext der neueren Aussage, formelle Kandidatur und gesellschaftliche Kommunikationsfolgen sind offen."
-          ]
-        },
-        "attribution": {
-          "frame_source": "BILD-Videoüberschrift",
-          "speaker": "Redaktionelle Frage",
-          "original_term": "gar nicht regieren",
-          "usage_type": "editorial",
-          "placement": [
-            "headline"
-          ],
-          "attribution_quality": "editorial"
-        },
-        "speaker_statement": {
-          "present": true,
-          "speaker": "Ulrich Siegmund, laut n-tv",
-          "statement": "Die Videoüberschrift schreibt ihm Regierungsbereitschaft auch bei knapper Mehrheit zu. Originalton, Aufnahmezeitpunkt und Interviewursprung bleiben zu prüfen.",
-          "status": "claim"
-        },
-        "framing": {
-          "detected": true,
-          "term": "gar nicht regieren",
-          "origin_in_story": "BILD-Videoüberschrift",
-          "media_usage": "headline",
-          "attribution_quality": "eindeutig attribuiert",
-          "factual_status": "Interpretation",
-          "frame_type": [
-            "Konflikt"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "frame_analysis": {
-          "frame_detected": true,
-          "frame_term": "gar nicht regieren",
-          "frame_type": [
-            "Konflikt"
-          ],
-          "problem_definition": "Eine bedingte Kandidatur wird als Frage nach grundsätzlicher Regierungsbereitschaft zugespitzt.",
-          "implied_cause": "Offen; keine Absicht unterstellt.",
-          "implied_responsibility": "Im Mittelpunkt steht die Kandidaturentscheidung, nicht eine belegte persönliche Absicht.",
-          "implied_threat": "Die Formulierung kann Zweifel an der Verbindlichkeit von Wahlwerbung nahelegen.",
-          "implied_solution_space": "Ein Abgleich der früheren Bedingungen mit der aktuellen Aussage ermöglicht eine sachlichere Beurteilung.",
-          "material_omissions": [
-            "Für die Einordnung ist der frühere Vorbehalt einer stabilen Mehrheit wesentlich."
-          ]
-        },
-        "political_context": {
-          "relevant": false,
-          "classification": "",
-          "evidence_based": false,
-          "evidence": [],
-          "uncertainty": "Keine politische Herkunftsgeschichte des Ausdrucks untersucht."
-        },
-        "resonance": {
-          "resonance_space": "",
-          "resonance_risk": "",
-          "normalization_potential": "",
-          "repetition_effect": "",
-          "trust_effect": "",
-          "polarization_potential": "",
-          "discourse_effect": ""
-        },
-        "discourse_effect": {
-          "impact_status": "potential",
-          "resonance_space": "Erwartungen an Wahlzusagen und Regierungsbildung.",
-          "normalization_potential": "open",
-          "repetition_risk": "open",
-          "polarization_potential": "Die zugespitzte Frage kann eine Personaldebatte verstärken.",
-          "trust_effect_potential": "Vertrauensfolgen sind denkbar, aber nicht gemessen.",
-          "discourse_effect_potential": "Eine Trennung von Bedingung und grundsätzlicher Bereitschaft kann das Verständnis verbessern."
-        },
-        "impact_path": {
-          "first_order": "Die Frage kann die Aufmerksamkeit auf den Regierungswillen lenken.",
-          "second_order": "Wiederholung könnte den Eindruck einer grundsätzlich fehlenden Bereitschaft verstärken.",
-          "third_order": "Folgen für institutionelles Vertrauen wären gesondert zu untersuchen."
-        },
-        "evidence": {
-          "status": "medium",
-          "level": "medium",
-          "what_is_known": "Beobachtbar sind die redaktionelle Frage und der frühere Mehrheitsvorbehalt.",
-          "what_is_inferred": "Ein möglicher Unterschied zwischen bedingter Kandidatur und wahrgenommenem vollständigem Verzicht.",
-          "what_is_open": "Eine tatsächliche Veränderung von Vertrauen oder Wahlentscheidung ist nicht nachgewiesen.",
-          "facts": [
-            "Ein früherer Mehrheitsvorbehalt ist dokumentiert."
-          ],
-          "observations": [
-            "Die Videoüberschrift stellt den Regierungswillen als Frage dar."
-          ],
-          "inferences": [
-            "Eine zugespitzte Frage kann weiter reichen als die bedingte Interviewantwort."
-          ],
-          "impact_potentials": [
-            "Lesende könnten Kandidaturbedingung und vollständigen Verzicht verwechseln."
-          ],
-          "impact_risks": [
-            "Möglicher Kontextverlust bei verkürzter Weiterverbreitung."
-          ],
-          "observed_impacts": [],
-          "limitations": [
-            "Keine Untersuchung tatsächlicher Rezeption oder des Wahlverhaltens."
-          ]
-        },
-        "observed_impact": {
-          "present": false,
-          "description": null,
-          "evidence": []
-        },
-        "public_explanation": "Die frühere BILD-Videoüberschrift stellt den Regierungswillen grundsätzlich infrage. Der ergänzte Abendartikel verschärft dies zu einer redaktionellen Täuschungsfrage; das ist kein belegter Täuschungsvorgang. n-tv stellt dagegen die Bereitschaft bei knapper Mehrheit heraus. Ein neuerer Artikel kann eine ältere Aussage aufgreifen: Veröffentlichung und Aussage sind deshalb getrennt zu datieren. Ohne diesen Kontext könnte dieselbe Person fälschlich als erneut widersprüchlich oder als abschließend festgelegt erscheinen. Das beschreibt ein kommunikatives Wirkungspotenzial, keine nachgewiesene Veränderung von Vertrauen oder Wahlverhalten. Weder eine politische Absicht noch eine Medienabsicht wird unterstellt. Die vollständigen Originaltöne und eine spätere formelle Kandidatur bleiben gesondert zu prüfen.",
-        "editorial_assessment": "Artikelzeit, Aussagezeit und redaktionelle Deutung getrennt halten. Ein unabhängiger Ursprung des n-tv-Videos ist nicht nachgewiesen. Keine nachgewiesene Täuschung und keine Absichtszuschreibung.",
-        "fact_first_alternative": "Vor der Landtagswahl berichtet n-tv über Bereitschaft auch bei knapper Mehrheit. Ein späterer BILD-Artikel greift eine frühere Antwort auf. Ohne vollständige Originaltöne ist daraus kein erneuter Kurswechsel abzuleiten.",
-        "fact_first_reframe": {
-          "title": "",
-          "source_summary": "",
-          "summary": "",
-          "detail_summary": ""
-        },
-        "self_frame_warning": false,
-        "self_frame_check": {
-          "problem_detected": false,
-          "problems": [],
-          "frame_repetition_count": 0,
-          "rewrite_required": false,
-          "recommended_title": "",
-          "recommended_summary": "",
-          "recommended_meta_description": ""
-        },
-        "source_comparison": {
-          "sufficient_basis": false,
-          "finding": ""
-        }
-      },
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-05T23:19:18.605Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-05T22:05:00Z",
-      "last_updated": "2026-09-05T23:19:18.605Z",
-      "version": 3,
-      "news_status": "corrected",
-      "event_id": "event-54b05b34eaf30592d8ab",
-      "case_file": null,
-      "source_published_at": "2026-09-05T05:15:00.000Z",
-      "published_at": "2026-09-05T22:07:32.381Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "ntv-case-research",
-            "bild-access",
-            "focus-case-research"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "landtag-sachsen-anhalt-context"
-          ],
-          [
-            "sachsen-anhalt-election-context"
-          ]
-        ],
-        "possible_independent_origins": 4,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "bild-access",
-              "bild-access"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "bild-access",
-              "focus-case-research"
-            ],
-            "reason": "shared_origin",
-            "document_pairs": 2
-          },
-          {
-            "source_ids": [
-              "ntv-case-research",
-              "ntv-case-research"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "bild-access",
-              "ntv-case-research"
-            ],
-            "reason": "shared_origin",
-            "document_pairs": 2
-          },
-          {
-            "source_ids": [
-              "focus-case-research",
-              "ntv-case-research"
-            ],
-            "reason": "shared_origin",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "n-tv",
-          "url": "https://www.n-tv.de/mediathek/videos/politik/Siegmund-Regieren-natuerlich-auch-mit-einer-Stimme-mehr-id31273399.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T16:24:00Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "BILD",
-          "url": "https://www.bild.de/politik/inland/afd-droht-in-sachsen-anhalt-die-grosse-wahl-verarsche-6a9b18eb3f723da3e680c586",
-          "source_type": "media_discovery",
-          "published_at": "2026-09-05T20:26:55.636Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "BILD",
-          "url": "https://www.bild.de/politik/inland/sachsen-anhalt-ulrich-siegmund-reichen-auch-drei-stimmen-mehrheit-nicht-6a9acf6908c763dcf81f4615",
-          "source_type": "media_discovery",
-          "published_at": "2026-09-05T06:23:00Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "FOCUS online",
-          "url": "https://www.focus.de/politik/deutschland/siegmund-will-mit-eigener-mehrheit-nicht-unbedingt-regieren_37468bfa-cf79-493c-b107-0f55fdd6cfba.html",
-          "source_type": "media_discovery",
-          "published_at": "2026-09-05T05:15:00Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "n-tv",
-          "url": "https://www.n-tv.de/politik/Siegmund-will-auch-bei-absoluter-Mehrheit-nicht-unbedingt-Ministerpraesident-werden-id31272045.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T01:20:00Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-cdu-afd-liveticker-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-02T13:45:00Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Landtag Sachsen-Anhalt",
-          "url": "https://www.landtag.sachsen-anhalt.de/fileadmin/Downloads/Broschueren/Verfassung_und_Grundgesetz_web_2025_10.pdf",
-          "source_type": "official_reference",
-          "published_at": null,
-          "primary_source": true
-        },
-        {
-          "publisher": "Landeswahlleiterin Sachsen-Anhalt",
-          "url": "https://wahlen.sachsen-anhalt.de/zu-den-wahlen/landtagswahl/faq-zur-landtagswahl-2026",
-          "source_type": "official_reference",
-          "published_at": null,
-          "primary_source": true
-        }
-      ]
-    },
-    {
       "story_id": "wt-6347f9739484a7d1",
       "title_image": {
         "mode": "impact_card",
@@ -2843,286 +2962,6 @@
           "url": "https://www.euronews.com/2026/09/05/at-least-two-killed-and-81-injured-after-explosions-at-bolivian-army-base",
           "source_type": "media_rss",
           "published_at": "2026-09-05T06:51:02.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-06476c6e980f5f47",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06476c6e980f5f47-a6a808b7771ac519-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06476c6e980f5f47-80d04bad15019dbe-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-06476c6e980f5f47-a1c00d75a17eb4e5-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
-      "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-      "source_summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt berichten mehrere Redaktionen über den Endspurt des Wahlkampfs. Genannt werden Abschlussveranstaltungen in Magdeburg und Halle, angemeldete Demonstrationen sowie Kundgebungen und Feste für Demokratie im ganzen Land. Mehrere Texte erwarten für den Wahltag tausende Teilnehmende. \n\nEinige Beiträge greifen außerdem die Umfragen auf und schreiben der AfD eine führende Position zu. Ein weiterer Bericht nennt einen Einsatz der Landespolizei mit allen verfügbaren Kräften und zusätzlich angeforderten Beamten aus anderen Bundesländern. Daneben erscheinen zugespitzte politische Einordnungen und Warnungen vor einem AfD-Erfolg.",
-      "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
-      "detail_summary": "Gesichert ist vor allem, dass der Wahlkampf in Sachsen-Anhalt am Wahltag endet und für denselben Tag Demonstrationen und Kundgebungen angekündigt sind. Mehrere Quellen erwarten tausende Teilnehmende, teils auch Demokratiefeste und weitere Veranstaltungen in mehreren Orten. Zusätzlich berichtet eine Quelle von einem umfassenden Polizeieinsatz mit Unterstützung aus anderen Bundesländern. Politisch relevant ist das, weil sich Wahlkampf, Protest und Sicherheitslage an einem Tag verdichten und damit die öffentliche Wahrnehmung der Wahl beeinflussen können. Als mögliche Folge kommen stärkere Mobilisierung, erhöhte Belastung für Einsatzkräfte und eine zugespitzte Debatte über das Abschneiden der AfD in Betracht. Offen bleibt, wie groß die tatsächlichen Teilnehmerzahlen und welche konkreten Auswirkungen der Tag vor Ort haben wird; dazu liefern die Quellen nur Ankündigungen und Prognosen.",
-      "why_relevant": "Die Meldung bündelt Wahlkampfende, angekündigte Großkundgebungen und Polizeieinsatz an einem Landtagswahltag. Das kann Anreize, öffentliche Sicherheit und die demokratische Auseinandersetzung vor Ort betreffen.",
-      "topic": [
-        "Demokratie",
-        "Politik",
-        "Wirtschaft"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Es geht um Wahlkampf, Proteste und Sicherheitsmaßnahmen vor einer Landtagswahl mit potenziell vielen Beteiligten."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Die Quellen enthalten keinen direkten Umwelt- oder Klimabezug."
-        },
-        "democracy": {
-          "relevance": "sehr hoch",
-          "rationale": "Wahlkampf, Demonstrationen und die mögliche Regierungsbildung betreffen unmittelbar den demokratischen Prozess."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "beschaeftigte",
-          "kinder_jugend"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "offen",
-          "democracy": "risiko"
-        }
-      },
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "high",
-        "reason": "Mehrere Texte arbeiten mit zugespitzten politischen Frames und Warnformeln rund um AfD und Demokratie.",
-        "factual_core": "Der Wahlkampf endet, Demonstrationen sind angekündigt, und mehrere Berichte verweisen auf ein mögliches starkes AfD-Ergebnis.",
-        "speaker_statement": {
-          "present": true,
-          "speaker": "Akteure in den Berichten",
-          "statement": "Die Wahl werde politisch zugespitzt und ein AfD-Erfolg sei folgenreich.",
-          "status": "claim"
-        },
-        "framing": {
-          "detected": true,
-          "term": "rechte Republik",
-          "origin_in_story": "Medium",
-          "media_usage": "headline",
-          "attribution_quality": "grundsätzlich attribuiert",
-          "factual_status": "Interpretation",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "resonance": {
-          "resonance_space": "Wahlkampf- und Demokratiedeutung",
-          "resonance_risk": "Der Frame kann die Wahl als existenzielle Bedrohung rahmen.",
-          "normalization_potential": "Wiederholung kann den Deutungsrahmen verfestigen.",
-          "repetition_effect": "Mehrfach ähnliche Zuspitzungen erhöhen den Wiedererkennungseffekt.",
-          "trust_effect": "Starke Frames können Vertrauen je nach Vorverständnis stärken oder schwächen.",
-          "polarization_potential": "Hoch, weil Lagerkonflikte betont werden.",
-          "discourse_effect": "Die Debatte kann vom Wahlverlauf auf Abwehr- und Warnnarrative verschoben werden."
-        },
-        "impact_path": {
-          "first_order": "Auffällige Schlagworte prägen die Erstwahrnehmung.",
-          "second_order": "Leserinnen und Leser ordnen die Wahl stärker als Gefahrenlage ein.",
-          "third_order": "Der Debattenrahmen kann politische Polarisierung und Illusory-Truth-Effekte begünstigen."
-        },
-        "evidence": {
-          "status": "medium",
-          "what_is_known": "Zugespitzte Titel und Formulierungen liegen vor; die Wahl ist real und umstritten.",
-          "what_is_inferred": "Die Frame-Wirkung auf Wahrnehmung und Debatte ist möglich, aber nicht direkt gemessen.",
-          "what_is_open": "Ob der Frame tatsächlich Einstellungen verändert, bleibt offen."
-        },
-        "editorial_assessment": "Die Formulierungen setzen auf starke politische Zuspitzung; sachlicher wäre eine klare Trennung von Wahlfakt und Warnung.",
-        "fact_first_reframe": {
-          "title": "Sachsen-Anhalt: Wahlkampfende, Kundgebungen und Polizeieinsatz am Wahltag",
-          "source_summary": "Mehrere Berichte beschreiben den Endspurt vor der Landtagswahl in Sachsen-Anhalt. Genannt werden angemeldete Demonstrationen, Kundgebungen und ein umfassender Polizeieinsatz.",
-          "summary": "Am Wahltag in Sachsen-Anhalt laufen Wahlkampfende, Proteste und Sicherheitsvorkehrungen zusammen. Mehrere Quellen erwarten tausende Teilnehmende und verweisen auf eine führende AfD in Umfragen.",
-          "detail_summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt enden die Wahlkampfaktivitäten, zugleich sind Demonstrationen und Demokratiefeste angekündigt. Mehrere Berichte nennen tausende erwartete Teilnehmende; eine Quelle berichtet zusätzlich von einem großen Polizeieinsatz mit Unterstützung aus anderen Bundesländern. Auch die Umfragen werden aufgegriffen, in denen die AfD vorn liegt. Das macht die Lage politisch bedeutsam, weil Mobilisierung, Sicherheitsaufwand und öffentliche Deutung an einem Tag zusammenfallen. Die tatsächlichen Folgen für Wahlverhalten und Ordnung sind aber offen und aus den Quellen nicht messbar."
-        },
-        "self_frame_warning": false,
-        "source_comparison": {
-          "sufficient_basis": true,
-          "finding": "Mehrere voneinander unabhängige Berichte greifen denselben Wahltag mit Kundgebungen und Sicherheitslage auf."
-        }
-      },
-      "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T11:59:56.834Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-04T07:02:30.000Z",
-      "last_updated": "2026-09-05T12:28:41.779Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-d0ea56670f7c42bbc7a0",
-      "case_file": null,
-      "source_published_at": "2026-09-01T14:38:55.000Z",
-      "published_at": "2026-09-05T12:01:00.915Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "tagesschau-access"
-          ],
-          [
-            "ndr-info"
-          ],
-          [
-            "swr-aktuell"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "dlf-nachrichten"
-          ],
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 7,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 3
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "tagesspiegel-home"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "swr-aktuell",
-              "swr-aktuell"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:02:30.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T05:30:02.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T04:07:55.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T04:09:22.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-01T14:38:55.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:06:15.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T13:33:07.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T08:39:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:34:28.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:54:53.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T07:41:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-demokratie-veranstaltungen-100,demonstrationen-110.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:30:00.000Z",
           "primary_source": false
         }
       ]
@@ -12430,6 +12269,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-3f27f489cadb",
+      "story_id": "wt-2cf5f0c5e42720ec",
+      "slug": "grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4",
+      "title": "Großeinsatz am Hambacher Forst: Was die erfolglose Suche über Stromnetz-Resilienz und Sicherheitslasten zeigt",
+      "subtitle": "Die Fahndung blieb ohne Treffer, doch der Fall verweist auf mögliche Schutz- und Koordinationsfolgen für kritische Infrastruktur.",
+      "teaser": "Am Hambacher Forst blieb die Suche nach einem Verdächtigen ohne Erfolg. Systemisch relevant ist vor allem, wie ein Sabotageverdacht Schutz, Zuständigkeiten und Resilienz im Stromnetz berührt.",
+      "published_at": "2026-09-06T20:54:14.336Z",
+      "updated_at": "2026-09-06T20:54:14.336Z",
+      "reading_time_minutes": 6
+    },
     {
       "analysis_id": "woek-analysis-0bfd0f9a3434",
       "story_id": "wt-4b5d0962d323432a",
