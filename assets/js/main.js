@@ -502,6 +502,23 @@ let blogCards = Array.from(document.querySelectorAll(".blog-card[data-category]"
 const blogFilterLinks = Array.from(document.querySelectorAll("[data-blog-filter]"));
 const blogTagLinks = Array.from(document.querySelectorAll("[data-blog-tag]"));
 const blogTypeLinks = Array.from(document.querySelectorAll("[data-blog-type-filter]"));
+// Static filter links and hydrated journal cards have historically used both
+// German transliteration (buergerenergie) and accent folding (burgerenergie).
+// Derive aliases from the actual labels, so unrelated tag names stay distinct.
+const blogTagAliases = new Map();
+blogTagLinks.forEach((link) => {
+  const canonical = link.dataset.blogTag;
+  const folded = link.textContent.trim().toLowerCase().normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "").replace(/ß/g, "ss")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  if (!canonical || !folded) return;
+  if (!blogTagAliases.has(canonical)) blogTagAliases.set(canonical, canonical);
+  if (!blogTagAliases.has(folded)) blogTagAliases.set(folded, canonical);
+});
+function canonicalBlogTag(value) {
+  return blogTagAliases.get(value) || value;
+}
+
 const blogFilterStatus = document.querySelector(".blog-filter-status");
 const blogLoadMoreButton = document.querySelector("[data-blog-load-more]");
 const blogSearchInputs = Array.from(document.querySelectorAll("[data-blog-search]"));
@@ -518,7 +535,8 @@ const blogFilterState = {
 
 function setPressedState(links, activeValue, dataKey) {
   links.forEach((link) => {
-    const value = link.dataset[dataKey] || "all";
+    const rawValue = link.dataset[dataKey] || "all";
+    const value = dataKey === "blogTag" ? canonicalBlogTag(rawValue) : rawValue;
     const isActive = value === activeValue;
     link.classList.toggle("active", isActive);
     link.setAttribute("role", "button");
@@ -545,7 +563,8 @@ function getBlogFilterSummary(matchedCount, visibleCount) {
     activeParts.push(`Kategorie: ${blogFilterState.category.replaceAll("-", " ")}`);
   }
   if (blogFilterState.tag !== "all") {
-    activeParts.push(`Tag: ${blogFilterState.tag}`);
+    const label = blogTagLinks.find((link) => canonicalBlogTag(link.dataset.blogTag) === blogFilterState.tag)?.textContent.trim();
+    activeParts.push(`Tag: ${label || blogFilterState.tag}`);
   }
   if (blogFilterState.type !== "all") {
     activeParts.push(`Texttyp: ${blogFilterState.type.replaceAll("-", " ")}`);
@@ -557,7 +576,7 @@ function getBlogFilterSummary(matchedCount, visibleCount) {
   const visibleText =
     matchedCount > visibleCount
       ? `${visibleCount} von ${matchedCount} Beiträgen werden angezeigt.`
-      : `${visibleCount} Beiträge gefunden.`;
+      : `${visibleCount} ${visibleCount === 1 ? "Beitrag" : "Beiträge"} gefunden.`;
 
   return activeParts.length ? `${visibleText} Aktive Filter: ${activeParts.join(" · ")}.` : visibleText;
 }
@@ -574,7 +593,7 @@ function applyBlogFilter({ scroll = false, hash = "" } = {}) {
   const hasSearch = blogFilterState.query.length >= 2;
 
   blogCards.forEach((card) => {
-    const tags = (card.dataset.tags || "").split(" ").filter(Boolean);
+    const tags = (card.dataset.tags || "").split(" ").filter(Boolean).map(canonicalBlogTag);
     const types = getBlogCardTypes(card);
     const categoryMatch = blogFilterState.category === "all" || card.dataset.category === blogFilterState.category;
     const tagMatch = blogFilterState.tag === "all" || tags.includes(blogFilterState.tag);
@@ -651,7 +670,7 @@ blogFilterLinks.forEach((link) => {
 blogTagLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    const value = link.dataset.blogTag;
+    const value = canonicalBlogTag(link.dataset.blogTag);
     blogFilterState.tag = blogFilterState.tag === value ? "all" : value || "all";
     blogFilterState.limit = blogInitialLimit;
     applyBlogFilter({ scroll: true, hash: blogFilterState.tag === "all" ? "#beitraege" : `#tag-${value}` });
@@ -686,7 +705,7 @@ document.addEventListener("click", (event) => {
     return;
   }
 
-  const value = link.dataset.blogTag;
+  const value = canonicalBlogTag(link.dataset.blogTag);
   blogFilterState.tag = blogFilterState.tag === value ? "all" : value || "all";
   blogFilterState.limit = blogInitialLimit;
   applyBlogFilter({ scroll: true, hash: blogFilterState.tag === "all" ? "#beitraege" : `#tag-${value}` });
@@ -728,7 +747,7 @@ if (blogCards.length) {
   if (categoryMatch) {
     blogFilterState.category = categoryMatch[1];
   } else if (tagMatch) {
-    blogFilterState.tag = tagMatch[1];
+    blogFilterState.tag = canonicalBlogTag(tagMatch[1]);
   } else if (typeMatch) {
     blogFilterState.type = typeMatch[1];
   }
