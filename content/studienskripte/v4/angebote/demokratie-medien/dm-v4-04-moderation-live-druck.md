@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-04-moderation-live-druck.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/demokratie-medien/lectures/dm-v4-04-moderation-live-druck.md curriculum=4.0 sanitized=true -->
 # DM-V4-04 · Moderation unter Live-Druck
 
 **lecture_id:** `WOEK-WB-DM-V4-004`  
@@ -71,3 +71,34 @@ Unter Live-Druck hilft kein perfekter Score. Hilfreich ist eine kleine Frage: Wa
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst nach Legacy-Reaudit B06; Medien-/Moderationsentscheidungen werden als evidenzgebundene Interventionen ohne Personen-/Intent-Score behandelt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Entscheidungen unter Zeitdruck vorbereiten
+
+Live-Moderation verbindet mehrere Aufgaben, die leicht miteinander verwechselt werden: Redezeit organisieren, Verständlichkeit sichern, konkrete Tatsachenbehauptungen prüfen und Beteiligte vor unmittelbaren Übergriffen schützen. Nicht jede dieser Aufgaben kann während einer Sendung abschließend erledigt werden. Eine vorbereitete Entscheidungshilfe legt deshalb fest, welche Eingriffe sofort möglich sind und welche Prüfung nachgelagert dokumentiert werden muss.
+
+Die Intervention sollte sich auf beobachtbares Verhalten oder eine konkrete Aussage beziehen. „Die angegebene Quelle liegt uns noch nicht vor“ ist eine andere Feststellung als „Sie wollen das Publikum täuschen“. Im ersten Satz wird ein prüfbarer Informationsstand benannt. Der zweite behauptet eine innere Absicht, die aus der Situation allein meist nicht belegt ist. Die Moderation kann einen Gesprächsrahmen durchsetzen, ohne eine Persönlichkeit zu diagnostizieren.
+
+Eine sinnvolle Abstufung umfasst Nachfragen, Zusammenfassen, Unterbrechen und gegebenenfalls Beenden eines Beitrags. Die passende Stufe hängt von der Situation ab. Eine unklare Zahl verlangt nicht dieselbe Reaktion wie eine konkrete Drohung. Nichtkompensation bedeutet hier, dass Reichweitenchancen keinen akzeptablen Tauschpreis für schwerwiegende Schutzverletzungen bilden. Die konkrete Schutzgrenze und der zuständige Entscheidungsweg müssen allerdings begründet werden.
+
+### Durchgearbeiteter Fall mit drei Entscheidungspunkten
+
+In einer fiktiven Live-Diskussion nennt ein Gast eine dramatische Zahl ohne Zeitraum. Die Moderation fragt zunächst: „Auf welches Jahr und welche Grundgesamtheit beziehen Sie sich?“ Damit wird die Behauptung präzisiert, ohne die unbelegte Zahl noch mehrfach auszuschmücken. Kann der Gast die Quelle nicht nennen, wird der Prüfstatus hörbar offen gehalten und eine spätere Quellenprüfung angekündigt.
+
+Im zweiten Schritt spricht der Gast der anderen Teilnehmerin wiederholt das Wort ab. Nun steht nicht die Zahl, sondern die Beteiligungsmöglichkeit im Vordergrund. Die Moderation benennt die Gesprächsregel und gibt die zugesagte Antwortzeit zurück. Diese Regel muss auch gegenüber Personen gelten, deren Position der Redaktion nähersteht.
+
+Im dritten Schritt wird eine private Adresse genannt. Die Redaktion folgt dem vorbereiteten Schutzprozess, unterbricht gegebenenfalls und prüft, ob die spätere Aufzeichnung gekürzt oder die Angabe unkenntlich gemacht werden muss. Ein bloßer Zusatz „Wir distanzieren uns“ beseitigt die Veröffentlichung der Adresse nicht. Der Nachbereitungsschritt gehört deshalb zum selben Vorgang wie die Intervention im Studio.
+
+### Nachbereitung und Selbstkontrolle
+
+Das Protokoll trennt Anlass, Eingriff und beobachtete Folge. „Moderation unterbrach um 12:14 Uhr“ ist ein dokumentierbarer Vorgang. „Teilnehmerin konnte anschließend ihren Satz beenden“ ist eine beobachtete Veränderung der Situation. „Das Publikum wurde dauerhaft resilienter“ wäre ohne weitere Untersuchung nicht gedeckt.
+
+Schreibe für die drei Entscheidungspunkte jeweils einen möglichen Moderationssatz und begründe die Eingriffstiefe. Eine gute Lösung verwendet überprüfbare Angaben, schützt die Möglichkeit zur Antwort und hält offene Tatsachenfragen offen. Ergänze einen Grenzfall, in dem dein Satz selbst eskalierend wirken könnte, und eine weniger eingriffsintensive Alternative. Der Erwartungshorizont belohnt die begründete Wahl einer Option; er verlangt weder möglichst häufiges Unterbrechen noch konsequentes Schweigen.

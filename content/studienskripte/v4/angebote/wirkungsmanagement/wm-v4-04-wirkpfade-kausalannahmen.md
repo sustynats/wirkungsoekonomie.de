@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-04-wirkpfade-kausalannahmen.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-04-wirkpfade-kausalannahmen.md curriculum=4.0 sanitized=true -->
 # WM-V4-04 · Wirkpfade und Kausalannahmen
 
 **lecture_id:** `WOEK-WB-WM-V4-004`  
@@ -115,3 +115,32 @@ A ist der Auslöser. M der Mechanismus. Delta Z die Zustandsänderung. R die Ref
 Danach schauen wir tiefer: Was passiert indirekt? Welche Rückkopplungen entstehen? Welche Pfade werden langfristig festgelegt?
 
 Das Diagramm beweist noch nichts. Aber es zeigt uns, welche Annahmen später geprüft werden müssen. Damit wird aus einer Managementstory eine testbare Wirkungshypothese.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Wirkpfade als überprüfbare Annahmen dokumentieren
+
+Eine Wirkungskette wird belastbarer, wenn jeder Pfeil eine konkrete Annahme enthält. Eine Schulung verändert Arbeitsabläufe beispielsweise nur dann, wenn die Inhalte verstanden werden, die Beschäftigten sie anwenden können und die Arbeitsbedingungen diese Anwendung zulassen. Die Maßnahme allein garantiert den Übergang zum Zielzustand nicht.
+
+Erste, zweite und dritte Wirkungsordnung ordnen unmittelbare und weiter vermittelte Veränderungen. Die Abgrenzung hängt vom untersuchten Gegenstand ab und muss erklärt werden. Sie ist keine naturgegebene Rangfolge des Wertes. Auch Kaskaden, Rückkopplungen und zeitliche Verzögerungen gehören in das Modell, soweit sie für die Entscheidung materiell sind.
+
+### Durchgearbeiteter Fall: energiesparende Technik
+
+Ein fiktives Unternehmen ersetzt eine Anlage durch ein effizienteres Modell. Der unmittelbare technische Wirkpfad lautet: geringerer Energiebedarf je produzierter Einheit bei vergleichbaren Betriebsbedingungen. Damit ist noch keine Senkung des gesamten Energieverbrauchs bewiesen. Wenn die Produktion stark ausgeweitet wird, kann der Gesamtverbrauch trotz höherer Effizienz steigen. Dieser mögliche Rebound wird als eigener Pfad modelliert.
+
+Ein weiterer Pfad betrifft Wartung und Ersatzteile. Muss ein wichtiger Teil ausschließlich von einem einzelnen Anbieter bezogen werden, kann ein Abhängigkeitsrisiko entstehen. Eine mögliche langfristige Bindung an eine Technologie ist ein Lock-in-Thema. Diese Aspekte dürfen weder pauschal als eingetretene Schäden noch als grundsätzlich vernachlässigbar behandelt werden.
+
+Für jeden Pfad werden Daten und Bedingungen festgehalten: Auslastung, Produktmix, Betriebsstunden, Wartungsfähigkeit und Vergleichsoption. Die Analyse trennt technische Effizienz, Gesamtverbrauch und den kausalen Beitrag des Austauschs. Ein günstiger Wert pro Stück kann eine relevante Erhöhung der Gesamtbelastung nicht unsichtbar machen.
+
+### Lernarbeit mit Erwartungshorizont
+
+Zeichne den Fall als drei verbundene Wirkpfade und schreibe zu jedem Übergang eine notwendige Bedingung. Ergänze eine Beobachtung, die den jeweiligen Pfad stützen würde, und eine, die ihn infrage stellen könnte. Eine gute Lösung behandelt den Rebound nicht als automatisch eintretend, sondern als zu prüfende Reaktion unter benannten Bedingungen.
+
+Leite daraus eine Managemententscheidung ab: Welche Daten werden vor der Investition benötigt, welche während des Betriebs und wann wird neu entschieden? Der Erwartungshorizont verbindet Modell und Handlung. Eine aufwendig gezeichnete Kette ohne Verantwortliche, Messmöglichkeit oder Konsequenz bei Abweichungen bleibt eine unvollständige Entscheidungsgrundlage.

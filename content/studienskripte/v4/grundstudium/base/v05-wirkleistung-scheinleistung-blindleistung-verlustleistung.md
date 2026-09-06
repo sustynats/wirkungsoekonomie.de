@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md curriculum=4.0 sanitized=true -->
 # V05 · Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung
 
 **lecture_id:** `WOEK-G-BASE-005`  
@@ -127,3 +127,7 @@ Manchmal sieht eine Organisation unglaublich fleißig aus: viele Projekte, viele
 Dafür nutzt die Wirkungsökonomie vier Bilder. Wirkleistung ist der Teil, der tatsächlich zum relevanten Outcome beiträgt. Scheinleistung ist Erfolg, der stärker dargestellt wird, als die Evidenz trägt. Blindleistung sind materielle Folgen, die das konkrete Steuerungssystem nicht sieht. Verlustleistung ist vermeidbar schlechtere Wirkung gegenüber einer tragfähigen Alternative.
 
 Wichtig: Das sind keine amtlichen Kategorien und keine moralischen Etiketten. Fehlen Daten, dürfen wir nicht einfach „Scheinleistung“ rufen. Dann heißt der Befund zunächst: offen. Genau diese Disziplin schützt das Modell vor der eigenen Rhetorik.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.

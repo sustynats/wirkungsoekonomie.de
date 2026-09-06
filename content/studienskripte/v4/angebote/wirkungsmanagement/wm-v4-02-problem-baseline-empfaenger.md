@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-02-problem-baseline-empfaenger.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungsmanagement/lectures/wm-v4-02-problem-baseline-empfaenger.md curriculum=4.0 sanitized=true -->
 # WM-V4-02 · Problem, Ausgangszustand und Wirkungsempfänger
 
 **lecture_id:** `WOEK-WB-WM-V4-002`  
@@ -126,3 +126,32 @@ Management springt gern von einem Problemwort direkt zur Lösung. Hohe Fluktuati
 Wirkungsmanagement bremst genau an dieser Stelle kurz ab. Was ist eigentlich der Ausgangszustand? Wer ist betroffen? Welche Ursache ist belegt? Und welcher Engpass begrenzt die Verbesserung wirklich?
 
 Das ist kein theoretischer Umweg. Es verhindert teure Lösungen für das falsche Problem. Erst wenn Problem und Baseline sauber sind, lohnt sich der nächste Schritt: ein Ziel, das wirklich dazu passt.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Einen Managementauftrag in ein prüfbares Problem übersetzen
+
+„Wir brauchen eine App“ beschreibt bereits ein Instrument. Ein Problem Review beginnt dagegen mit der Frage, welcher Zustand unbefriedigend ist und woran dies erkennbar wird. Ursachen, Symptome und Engpässe werden getrennt. Eine lange Bearbeitungszeit kann beispielsweise durch fehlende Unterlagen, unklare Zuständigkeiten oder zu geringe Kapazität entstehen. Dieselbe sichtbare Verzögerung kann deshalb unterschiedliche Maßnahmen erfordern.
+
+Die Baseline beschreibt den Ausgangszustand mit Population, Zeitraum und Messverfahren. Sie enthält nicht nur einen Durchschnitt, wenn dessen Verteilung für die Entscheidung wesentlich ist. Wirkungsempfänger sind diejenigen, deren Zustand sich durch die Entscheidung tatsächlich verändern kann. Eine Stakeholderliste kann beim Auffinden helfen, ersetzt aber nicht die Beschreibung dieser Veränderung. Auch indirekt Betroffene außerhalb der Organisation sind einzubeziehen, soweit ihre Betroffenheit materiell ist.
+
+### Durchgearbeiteter Fall: Verzögerungen in einer Servicestelle
+
+Eine fiktive Servicestelle misst über acht Wochen eine mittlere Bearbeitungszeit von zwölf Tagen. Eine Stichprobe zeigt: Vollständige Anträge brauchen im Mittel sechs Tage, unvollständige deutlich länger. Eine neue Software könnte die Dateneingabe erleichtern. Verständlichere Anforderungen könnten jedoch einen anderen Teil desselben Problems bearbeiten. Mehr Personal wäre eine dritte Option, deren Nutzen von der tatsächlichen Engpassursache abhängt.
+
+Die Problemformulierung lautet deshalb nicht „Die Stelle ist zu wenig digital“, sondern beispielsweise: „Ein erheblicher Teil der eingehenden Anträge muss wegen fehlender Angaben erneut bearbeitet werden; Ausmaß und Ursachen unterscheiden sich nach Zugangsweg.“ Dazu gehören die Kosten der Nacharbeit und die Belastung der Antragstellenden. Die genaue Häufigkeit wird aus der Stichprobe nicht unbesehen auf alle Fälle übertragen.
+
+Die Baseline erfasst Fallarten, Eingangswege, Vollständigkeit, Bearbeitungszeit und relevante Ausnahmen. Saisonale Schwankungen und parallel geplante Änderungen werden dokumentiert. Damit entsteht später eine Grundlage für die Frage, was sich verändert hat. Eine kausale Zuschreibung an die gewählte Maßnahme folgt daraus noch nicht automatisch.
+
+### Lernarbeit mit Erwartungshorizont
+
+Schreibe eine Problemnotiz mit Beobachtung, Datenquelle, Betroffenen, vermuteten Ursachen und drei noch offenen Fragen. Markiere jede Ursache als belegt oder als Hypothese. Eine gute Lösung lässt mindestens zwei unterschiedliche Handlungsoptionen zu und macht sichtbar, welche zusätzliche Information zwischen ihnen unterscheiden würde.
+
+Prüfe schließlich eine mögliche Auslassung: Werden etwa nur erfolgreich eingereichte Anträge erfasst, fehlen Menschen, die am Verfahren bereits vorher scheitern. Diese Lücke kann für den Problem Review wichtiger sein als eine zusätzliche Dezimalstelle im Durchschnitt. Der nächste Prüfschritt muss zur materiellen Lücke passen.
