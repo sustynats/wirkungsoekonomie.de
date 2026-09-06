@@ -625,7 +625,7 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
   if (!mechanismHints.length) mechanismHints.push("Wirkmechanismus anhand der Primärquelle noch zu konkretisieren");
   return {
     filter_version: "4.0",
-    material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.sources || [], now),
+    material_development_review: materialDevelopmentReview(story.sources, story.existing_story?.published ? story.existing_story.sources : [], now),
     internal_relevance_score: strongest.score,
     public_relevance: strongest.relevance,
     topics,
