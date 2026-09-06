@@ -8,7 +8,7 @@
 **migration_class:** `MATERIAL_REWRITE_REQUIRED`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
 **reviewed_at:** 2026-08-21  
-**change_reason:** v3.2 hatte nur den geplanten Titel. v4.0 behandelt Piloten/Sandboxes als kontrollierte Lerninstrumente mit Hypothese, Schutzgrenzen, Vergleichsdesign, Stop-Regeln und Skalierungskriterien – nicht als Freibrief zur Umgehung von Recht oder als Ersatz für Evaluation.
+**change_reason:** v3.2 hatte nur den geplanten Titel. v4.0 behandelt Piloten/Sandboxes als kontrollierte Lerninstrumente mit Hypothese, Schutzgrenzen, Vergleichsdesign, Stop-Regeln und Skalierungskriterien - nicht als Freibrief zur Umgehung von Recht oder als Ersatz für Evaluation.
 
 ## 20-Sekunden-Einstieg
 

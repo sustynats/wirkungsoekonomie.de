@@ -64,7 +64,7 @@ Baue für eine investigative Veröffentlichung einen positiven und einen möglic
 positive/negative Wirkpfade, False Balance, Verteilung, A→M→ΔZ→R.
 
 ## Zusammenfassung
-Öffentlichkeit ist ein Wirkungsraum mit Schutz- und Ermöglichungsfunktionen – nicht bloß ein Risikoobjekt.
+Öffentlichkeit ist ein Wirkungsraum mit Schutz- und Ermöglichungsfunktionen - nicht bloß ein Risikoobjekt.
 
 ## Sprechertext
 Medien schützen Demokratie nicht nur, indem sie Falsches stoppen. Sie schaffen auch etwas Positives: Information, Sichtbarkeit, Rechenschaft und Korrektur. Diese positiven Pfade gehören genauso in die Wirkungsanalyse.

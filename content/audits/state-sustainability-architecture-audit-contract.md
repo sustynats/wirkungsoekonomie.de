@@ -1,4 +1,4 @@
-# #253 State sustainability architecture — completion contract
+# #253 State sustainability architecture - completion contract
 
 Stand: 2026-08-21
 Status: binding audit/release contract
@@ -8,7 +8,7 @@ This file makes the fach and release invariants of issue #253 machine/discovery-
 ## Existing federal architecture that must be acknowledged
 
 - Deutsche Nachhaltigkeitsstrategie (DNS) as Germany's national Agenda-2030 target, governance and monitoring framework.
-- DNS indicators / Destatis monitoring as target, baseline, context and monitoring data — not automatic causal evidence.
+- DNS indicators / Destatis monitoring as target, baseline, context and monitoring data - not automatic causal evidence.
 - GGO § 43: target/necessity, factual basis/knowledge sources, alternative solutions and reasons for rejection in the bill justification.
 - GGO § 44: intended effects, unintended side effects, sustainability/long-term effects and provisions for later review.
 - Sustainability assessment as part of federal regulatory impact assessment.
@@ -20,7 +20,7 @@ This file makes the fach and release invariants of issue #253 machine/discovery-
 
 WÖk must not claim to invent impact assessment, alternatives analysis or ex-post review. Its specific addition is the connected object-level chain:
 
-`Fact/Source -> Problem Review -> Goal Review -> A→M→ΔZ→R -> 1st–3rd order/cascades -> distribution/resilience -> counterfactual/attribution -> material omissions/delivery/policy coherence -> comparable options under the same targets/protection spaces -> non-compensation -> Reality Check -> versioned learning`
+`Fact/Source -> Problem Review -> Goal Review -> A→M→ΔZ→R -> 1st-3rd order/cascades -> distribution/resilience -> counterfactual/attribution -> material omissions/delivery/policy coherence -> comparable options under the same targets/protection spaces -> non-compensation -> Reality Check -> versioned learning`
 
 ## Hard semantic gates
 

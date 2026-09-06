@@ -5,9 +5,7 @@
 **Vorlesungscode:** WC-V2  
 **Modul/Abschnitt:** WC  
 **Titel:** Wirkungsdaten & Rahmenwerke  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v2-wirkungsdaten-rahmenwerke.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v2.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v2.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungsdaten & Rahmenwerke** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,26 +44,26 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-CSRD, ESRS, GRI, EU-Taxonomie – Unternehmen ertrinken in Berichtspflichten. **Wie werden diese Datenrahmen zur Grundlage echter Wirkungssteuerung, statt nur Reporting zu erzeugen?**
+CSRD, ESRS, GRI, EU-Taxonomie - Unternehmen ertrinken in Berichtspflichten. **Wie werden diese Datenrahmen zur Grundlage echter Wirkungssteuerung, statt nur Reporting zu erzeugen?**
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Von der Berichtspflicht zum Wirkungsdatum – CSRD, ESRS, GRI, EU-Taxonomie, NACE, DPP
+- **Titel:** Von der Berichtspflicht zum Wirkungsdatum - CSRD, ESRS, GRI, EU-Taxonomie, NACE, DPP
 - **Länge:** ~16 Min
 - **Kernaussage in einem Satz:** Bestehende Rahmenwerke liefern die Rohdaten; Wirkungscontrolling übersetzt sie in KIIs und ordnet sie über WÖk-IDs der Bewertungslogik zu.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Anschluss statt Neuerfindung.** Die WÖk erfindet die Datenwelt nicht neu. CSRD, ESRS, GRI, EU-Taxonomie, NACE und der digitale Produktpass sind Anschlussbegriffe – sie liefern Daten.
+**Abschnitt A - Anschluss statt Neuerfindung.** Die WÖk erfindet die Datenwelt nicht neu. CSRD, ESRS, GRI, EU-Taxonomie, NACE und der digitale Produktpass sind Anschlussbegriffe - sie liefern Daten.
 
-**Abschnitt B – Was jedes Rahmenwerk beisteuert.** CSRD/ESRS: Berichtspflicht/Datenpunkte. GRI: etablierte Indikatoren. EU-Taxonomie: Klassifikation nachhaltiger Aktivitäten. NACE: Branchen-Codierung. DPP: Produktbezogene Daten.
+**Abschnitt B - Was jedes Rahmenwerk beisteuert.** CSRD/ESRS: Berichtspflicht/Datenpunkte. GRI: etablierte Indikatoren. EU-Taxonomie: Klassifikation nachhaltiger Aktivitäten. NACE: Branchen-Codierung. DPP: Produktbezogene Daten.
 
-**Abschnitt C – Reporting ≠ Rückkopplung.** Diese Rahmen erzeugen Reporting. Wirkungscontrolling macht daraus Steuerung, indem es Daten in KIIs und Scorecards überführt.
+**Abschnitt C - Reporting ≠ Rückkopplung.** Diese Rahmen erzeugen Reporting. Wirkungscontrolling macht daraus Steuerung, indem es Daten in KIIs und Scorecards überführt.
 
-**Abschnitt D – Übersetzung über WÖk-IDs.** WÖk-IDs verbinden Datenpunkte mit Wirkungsfeld und Bewertungslogik (V3).
+**Abschnitt D - Übersetzung über WÖk-IDs.** WÖk-IDs verbinden Datenpunkte mit Wirkungsfeld und Bewertungslogik (V3).
 
-**Abschnitt E – Grenzen.** Rahmenwerke messen oft Aktivität/Compliance, nicht Netto-Wirkung. Die Lücke schließt die WÖk-Bewertung.
+**Abschnitt E - Grenzen.** Rahmenwerke messen oft Aktivität/Compliance, nicht Netto-Wirkung. Die Lücke schließt die WÖk-Bewertung.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -80,11 +77,11 @@ CSRD, ESRS, GRI, EU-Taxonomie – Unternehmen ertrinken in Berichtspflichten. **
 | **NACE** | Branchen-/Aktivitätscodierung (Zuordnung, Vergleichbarkeit) |
 | **Digitaler Produktpass (DPP)** | produktbezogene Wirkungsdaten entlang des Lebenszyklus |
 
-**Die zentrale Übersetzungsleistung.** Diese Rahmen liefern vor allem **Daten und Compliance** – oft Aktivität, nicht Netto-Wirkung. Wirkungscontrolling übersetzt sie: Datenpunkte werden über **WÖk-IDs** (V3) einem Wirkungsfeld und einer Bewertungslogik zugeordnet und zu **KIIs** verdichtet. So wird aus Berichtspflicht steuerungsrelevante Wirkungsinformation.
+**Die zentrale Übersetzungsleistung.** Diese Rahmen liefern vor allem **Daten und Compliance** - oft Aktivität, nicht Netto-Wirkung. Wirkungscontrolling übersetzt sie: Datenpunkte werden über **WÖk-IDs** (V3) einem Wirkungsfeld und einer Bewertungslogik zugeordnet und zu **KIIs** verdichtet. So wird aus Berichtspflicht steuerungsrelevante Wirkungsinformation.
 
 **Reporting ist nicht Rückkopplung.** Der häufigste Fehler: CSRD-Reporting als Ziel zu behandeln. Für die Wirkungsökonomie ist es Rohstoff. Erst wenn die Daten über Scorecards (V4) bewertet und in Entscheidungen zurückgekoppelt werden, entsteht Wirkung.
 
-**Grenzen ehrlich benennen.** Datenlücken, unterschiedliche Bezugsjahre, Scope-Grenzen und Schätzungen gehören dokumentiert (Datenqualität, V9). Rahmenwerke schaffen Vergleichbarkeit, aber keine automatische Netto-Wirkung – die Bewertung bleibt WÖk-Aufgabe unter Reverse Merit Order.
+**Grenzen ehrlich benennen.** Datenlücken, unterschiedliche Bezugsjahre, Scope-Grenzen und Schätzungen gehören dokumentiert (Datenqualität, V9). Rahmenwerke schaffen Vergleichbarkeit, aber keine automatische Netto-Wirkung - die Bewertung bleibt WÖk-Aufgabe unter Reverse Merit Order.
 
 ## 5. Glossar der Kernbegriffe
 
@@ -134,7 +131,6 @@ Nimm einen realen Berichtsdatenpunkt (z. B. aus CSRD/ESRS oder GRI) deiner Organ
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -310,12 +306,11 @@ Die folgende Runde verdichtet WC-V2 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V2. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §6.1 Anschlussbegriffe
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §6.1 Anschlussbegriffe
 - `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md`
 - Glossar: `begriffe/csrd`, `begriffe/esrs`, `begriffe/eu-taxonomie`, `begriffe/digitaler-produktpass`
 
@@ -410,7 +405,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -816,8 +810,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v2-wirkungsdaten-rahmenwerke.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

@@ -13,7 +13,7 @@ Beispiele, Berechnungen, Datenquellen, Anreizlogik und politische Umsetzungsopti
 | Status | erweiterte öffentliche Ausarbeitung |
 | Stand | 24. Mai 2026 |
 
-„Kapital darf im Wohnungsmarkt wirken – aber es darf Wohnen nicht ersetzen.“
+„Kapital darf im Wohnungsmarkt wirken - aber es darf Wohnen nicht ersetzen.“
 
 ## Kurzprofil
 
@@ -84,8 +84,8 @@ Die Maßnahme kombiniert energetische Sanierung, erneuerbare Wärme, PV/Mieterst
 | --- | --- | --- | --- |
 | Kaltmiete | 900 Euro | 900 bis 950 Euro, je nach Fördermix | sozial stabil |
 | Nebenkosten | 300 Euro | 120 Euro | Entlastung |
-| Wirkungs-/Mieterstrombonus | 0 Euro | –30 Euro | positive Rückkopplung |
-| Warmbelastung | 1.200 Euro | 990 bis 1.040 Euro | –13 bis –17,5 % |
+| Wirkungs-/Mieterstrombonus | 0 Euro | -30 Euro | positive Rückkopplung |
+| Warmbelastung | 1.200 Euro | 990 bis 1.040 Euro | -13 bis -17,5 % |
 | Portfolio-Risiko | hoch | niedriger | Stranding-Prävention |
 
 ## 4. Fallstudie 2: Luxussanierung mit Verdrängungswirkung
@@ -97,9 +97,9 @@ Wirkungsökonomisch entsteht eine Zielkonfliktlage: Klimaeffekt positiv, soziale
 | Feld | Score | Begründung |
 | --- | --- | --- |
 | Klima & Energie | +2 | Energieverbrauch sinkt |
-| Bezahlbarkeit | –2 | Warmmiete steigt deutlich |
-| Soziale Stabilität | –3 | Verdrängung langjähriger Haushalte |
-| Governance | –1 | fehlende Beteiligung |
+| Bezahlbarkeit | -2 | Warmmiete steigt deutlich |
+| Soziale Stabilität | -3 | Verdrängung langjähriger Haushalte |
+| Governance | -1 | fehlende Beteiligung |
 | Gesamt | negativ trotz Klimawert | Schutzregel greift |
 
 ## 5. Fallstudie 3: spekulativer Leerstand
@@ -143,7 +143,7 @@ Die Musterrechnung zeigt eine positive Sanierung mit Warmmietenentlastung. Die W
 | Spekulationsrisiko | +3 | 5 % | +0,15 | kein Leerstand, Langfristigkeit |
 | Gesamt WIX-VI |  | 100 % | +1,48 | Bonus-/Förderkorridor |
 
-Formel: WIX-VI = Summe aus Score_i × Gewicht_i. Zusätzlich gilt eine Schutzregel: Ein kritischer Score von –3 in Verdrängung, Sicherheit, Leerstand oder Rechtsverstoß kann eine positive Durchschnittsbewertung begrenzen.
+Formel: WIX-VI = Summe aus Score_i × Gewicht_i. Zusätzlich gilt eine Schutzregel: Ein kritischer Score von -3 in Verdrängung, Sicherheit, Leerstand oder Rechtsverstoß kann eine positive Durchschnittsbewertung begrenzen.
 
 ## 9. Anreizmatrix
 
@@ -154,9 +154,9 @@ Die Anreizmatrix zeigt, wie der Score in wirtschaftliche Rückkopplungen überse
 | +2 bis +3 | vorbildliche Wohnwirkung | Steuer-/Förderbonus, günstiges Kapital, Positivlabel |
 | +1 | positive Entwicklung | Förderfähigkeit, zinsverbilligte Kredite |
 | 0 | neutral | Standardbehandlung, Beratung |
-| –1 | Korrekturbedarf | Sanierungs-/Sozialfahrplan |
-| –2 | schädlich | Malus, Monitoring, Förderausschluss |
-| –3 | hoch schädlich | Sanktion, Eingriff, Zweckentfremdungs-/Rechtsschutzverfahren |
+| -1 | Korrekturbedarf | Sanierungs-/Sozialfahrplan |
+| -2 | schädlich | Malus, Monitoring, Förderausschluss |
+| -3 | hoch schädlich | Sanktion, Eingriff, Zweckentfremdungs-/Rechtsschutzverfahren |
 
 ## 10. Datenquellen und Datenqualität
 
@@ -202,7 +202,7 @@ Diese Ausarbeitung nutzt vorhandene WÖk-Grundlagen und öffentliche Quellen. Si
 | Quelle | Nutzung |
 | --- | --- |
 | WÖk Working-Paper Wohnungsmarkt | Working-Paper Wohnungsmarkt: Bezahlbar, nachhaltig, gerecht, Natalie Weber, 2025. |
-| WÖk Buchanker | Die neue Ordnung des Wohlstands, insbesondere Kapitel 3.15, 70.2–70.4, 59, 70.3 und 70.4. |
+| WÖk Buchanker | Die neue Ordnung des Wohlstands, insbesondere Kapitel 3.15, 70.2-70.4, 59, 70.3 und 70.4. |
 | WÖk Begriffsleitfaden | Führender Begriffsleitfaden der Wirkungsökonomie, Version 1.0, 21. Mai 2026. |
 | EU EPBD | European Commission: Energy Performance of Buildings Directive, EU/2024/1275. |
 | GEG | Gebäudeenergiegesetz und BMWK-Informationen zur 65-Prozent-Erneuerbare-Energien-Regel. |
@@ -214,7 +214,7 @@ Diese Ausarbeitung nutzt vorhandene WÖk-Grundlagen und öffentliche Quellen. Si
 | EU Taxonomy Navigator | Taxonomie-Aktivitäten Neubau, Sanierung, Erwerb und Eigentum von Gebäuden. |
 | Destatis/BBSR/UBA | Wohnkostenüberbelastung, Wohnungsbedarf, Gebäudesektor-Emissionen. |
 
-## Anhang A – Formel- und Rechenlogik
+## Anhang A - Formel- und Rechenlogik
 
 Die Rechenlogik ist als Arbeitsmodell zu verstehen. Sie macht transparent, wie aus Daten, Scores und Gewichtungen eine Rückkopplung entstehen kann. Politisch festzulegen bleiben Schwellen, Gewichte, Bonus-/Malus-Sätze, Übergangsfristen und Schutzmechanismen.
 
@@ -222,12 +222,12 @@ Die Rechenlogik ist als Arbeitsmodell zu verstehen. Sie macht transparent, wie a
 | --- | --- | --- |
 | 1 Daten erfassen | Energie, Miete, Nebenkosten, Leerstand, Sanierung, Quartier | Energieausweis, Heizkosten, Mietdaten |
 | 2 Indikator bilden | Messwert in interpretierbare Kennzahl übersetzen | CO2/m², Warmmietenquote, Leerstandsdauer |
-| 3 Score ableiten | Kennzahl auf Skala –3 bis +3 übertragen | +2 bei deutlicher Entlastung, –2 bei starker Belastung |
+| 3 Score ableiten | Kennzahl auf Skala -3 bis +3 übertragen | +2 bei deutlicher Entlastung, -2 bei starker Belastung |
 | 4 Gewichten | Kernfelder nach Relevanz gewichten | Bezahlbarkeit 25 %, Energie 25 % |
-| 5 Schutzregel prüfen | kritische Negativwerte dürfen nicht verschwinden | Verdrängung –3 begrenzt Gesamtergebnis |
+| 5 Schutzregel prüfen | kritische Negativwerte dürfen nicht verschwinden | Verdrängung -3 begrenzt Gesamtergebnis |
 | 6 Rückkopplung | Score wirkt in Förderung, Steuer, Kapital, Auflagen | Bonus, Kredit, Sanierungsfahrplan, Malus |
 
-## Anhang B – Beispielportfolio
+## Anhang B - Beispielportfolio
 
 Ein institutioneller Investor hält 100 Gebäude. 20 Gebäude sind energetisch gut und sozial stabil. 50 Gebäude sind neutral bis leicht positiv. 20 Gebäude weisen hohen Sanierungsbedarf auf. 10 Gebäude zeigen spekulative oder soziale Negativmuster. Eine klassische Portfolioanalyse würde Durchschnittsrendite und Marktwert betrachten. Die WÖk ergänzt: Welche Gebäude erzeugen Wirkungsrisiken, und welche Gebäude tragen positive Stabilität?
 
@@ -235,10 +235,10 @@ Ein institutioneller Investor hält 100 Gebäude. 20 Gebäude sind energetisch g
 | --- | --- | --- | --- | --- |
 | Vorbildlich | 20 | +2 bis +3 | niedrig | Bonus, Positivlabel, günstiges Kapital |
 | Stabil | 50 | 0 bis +1 | mittel | Sanierungsfahrplan, Daten verbessern |
-| Sanierungsstau | 20 | –1 bis –2 | Energie/Stranding | Transformations-Capex, Fördermittel |
-| Spekulationsmuster | 10 | –2 bis –3 | sozial/demokratisch | Malus, Transparenz, Nutzungsauflagen |
+| Sanierungsstau | 20 | -1 bis -2 | Energie/Stranding | Transformations-Capex, Fördermittel |
+| Spekulationsmuster | 10 | -2 bis -3 | sozial/demokratisch | Malus, Transparenz, Nutzungsauflagen |
 
-## Anhang C – Annahmenboxen für Website-Rechner
+## Anhang C - Annahmenboxen für Website-Rechner
 
 Jeder Rechner muss unterscheiden zwischen Quellenwerten, Modellwerten und politischen Arbeitsannahmen. Nutzer:innen müssen erkennen, welche Werte belegt, geschätzt oder frei änderbar sind.
 
@@ -250,7 +250,7 @@ Jeder Rechner muss unterscheiden zwischen Quellenwerten, Modellwerten und politi
 | Politische Annahme | Bonus/Malus oder Steuersatz | als politisch festzulegen markieren |
 | Unsicherheit | fehlende Daten, Schätzung | Datenqualitätsstufe anzeigen |
 
-## Anhang D – Dossier-Checkliste für Vermieter:innen
+## Anhang D - Dossier-Checkliste für Vermieter:innen
 
 Liegt ein aktueller Energieausweis vor?
 
@@ -272,7 +272,7 @@ Ist die Eigentümerstruktur nachvollziehbar?
 
 Welche Quartierswirkung erzeugt das Gebäude?
 
-## Anhang E – Dossier-Checkliste für Politik und Verwaltung
+## Anhang E - Dossier-Checkliste für Politik und Verwaltung
 
 Welche vorhandenen Daten können ohne neue Bürokratie genutzt werden?
 

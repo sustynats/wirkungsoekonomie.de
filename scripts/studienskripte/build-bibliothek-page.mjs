@@ -175,7 +175,7 @@ function buildReaderPage(script) {
 
 function stripEditorialReaderResidue(html) {
   return String(html)
-    .replace(/<(p|li)\b[^>]*>[\s\S]*?\b(?:Codex|Claude|CI\/CD|Markdown-Master|Word-Rohfassung|woek-akademie-app|CODEX-HANDOFF|Vorlesung-Template)\b[\s\S]*?<\/\1>/gi, "")
+    .replace(/<(p|li)\b[^>]*>(?:(?!<\/?(?:p|li|section|aside|h[1-6]|div|ul|ol)\b)[\s\S])*?\b(?:Codex|Claude|CI\/CD|Markdown-Master|Word-Rohfassung|woek-akademie-app|CODEX-HANDOFF|Vorlesung-Template)\b(?:(?!<\/?(?:p|li|section|aside|h[1-6]|div|ul|ol)\b)[\s\S])*?<\/\1>/gi, "")
     .replace(/<ul>\s*<\/ul>/gi, "")
     .replace(/<p>\s*<\/p>/gi, "");
 }

@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – freiwillige WÖK-KI
+# Wirkungscheck Bundestag V3 - freiwillige WÖK-KI
 
 ## Position
 
@@ -9,7 +9,7 @@ nicht.
 ## Einstieg und Einwilligung
 
 > Die regelbasierte Analyse oben ist abgeschlossen. Wenn Sie möchten, kann die
-> WÖK-KI Ihren Fall anschließend vertiefen – etwa durch Gegenargumente,
+> WÖK-KI Ihren Fall anschließend vertiefen - etwa durch Gegenargumente,
 > alternative Wirkpfade oder parlamentarische Prüffragen.
 
 Vor dem Start ist eine ausdrückliche Einwilligung erforderlich. Erst danach

@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v45-wirkungsberichte-evaluation-reality-check.md curriculum=4.0 sanitized=true -->
-# V45 · Wirkungsberichte, Evaluation und Reality Check – Rückkopplung ohne Scheinkausalität
+# V45 · Wirkungsberichte, Evaluation und Reality Check - Rückkopplung ohne Scheinkausalität
 
 **lecture_id:** `WOEK-G-BASE-045`  
 **display_code:** `V45`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Bericht zeigt, **was dokumentiert wurde**. Monitoring zeigt, **wie sich Indikatoren entwickeln**. Evaluation untersucht systematisch, **ob und warum** ein Programm seine Ziele erreicht. Der WÖk-Reality-Check verbindet die ursprüngliche Wirkannahme mit späteren Beobachtungen und fragt: Was ist eingetreten, was ist zurechenbar, welche Annahme war falsch – und was ändern wir jetzt? Wichtig: Ex-post-Wissen darf die ursprüngliche Ex-ante-Bewertung nicht heimlich überschreiben.
+Ein Bericht zeigt, **was dokumentiert wurde**. Monitoring zeigt, **wie sich Indikatoren entwickeln**. Evaluation untersucht systematisch, **ob und warum** ein Programm seine Ziele erreicht. Der WÖk-Reality-Check verbindet die ursprüngliche Wirkannahme mit späteren Beobachtungen und fragt: Was ist eingetreten, was ist zurechenbar, welche Annahme war falsch - und was ändern wir jetzt? Wichtig: Ex-post-Wissen darf die ursprüngliche Ex-ante-Bewertung nicht heimlich überschreiben.
 
 ## Lernziele
 
@@ -42,7 +42,7 @@ Unterstützt Steuerung durch Soll-Ist-Vergleiche, Kennzahlen und Abweichungsanal
 
 ### Evaluation
 
-Untersucht systematisch Relevanz, Umsetzung, Zielerreichung und – je nach Design – Kausalität/Wirkung.
+Untersucht systematisch Relevanz, Umsetzung, Zielerreichung und - je nach Design - Kausalität/Wirkung.
 
 ### Reality Check
 
@@ -292,7 +292,7 @@ Reporting sagt: Das haben wir gemacht und dokumentiert.
 
 Monitoring sagt: So entwickeln sich unsere Indikatoren.
 
-Evaluation fragt: Haben wir unsere Ziele erreicht – und soweit möglich: warum?
+Evaluation fragt: Haben wir unsere Ziele erreicht - und soweit möglich: warum?
 
 Und der WÖk-Reality-Check verbindet das alles mit der ursprünglichen Wirkannahme.
 
@@ -322,7 +322,7 @@ Er ist institutionelles Lernen.
 
 Und die vielleicht wichtigste Regel lautet:
 
-**Wenn neue Evidenz unsere WÖk-Annahme widerlegt, ändern wir die WÖk – nicht die Realität.**
+**Wenn neue Evidenz unsere WÖk-Annahme widerlegt, ändern wir die WÖk - nicht die Realität.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
@@ -336,9 +336,9 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
 
 ### Drei Arten der Erfolgskontrolle
 

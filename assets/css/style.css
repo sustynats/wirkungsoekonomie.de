@@ -18261,7 +18261,7 @@ h1,.hero-title{letter-spacing:-0.022em;}
 }
 
 /* =====================================================================
-   Akademie – eigene Farbwelt (grün-geführt), SEITENSCOPED via body.theme-akademie.
+   Akademie - eigene Farbwelt (grün-geführt), SEITENSCOPED via body.theme-akademie.
    Ziel: Akademie optisch von Institut/Default (Navy/Ivory) unterscheiden.
    Reversibel: Block + Body-Klasse entfernen. Andere Seiten unberührt.
    ===================================================================== */
@@ -18290,7 +18290,7 @@ body.theme-akademie .btn-primary{
 body.theme-akademie .btn-primary:hover{ background:var(--green); border-color:var(--green); }
 body.theme-akademie .card{ border-top:3px solid var(--green); }
 
-/* Akademie – eigene Wortmarke/Logo im Hero (grün, seitenscoped) */
+/* Akademie - eigene Wortmarke/Logo im Hero (grün, seitenscoped) */
 body.theme-akademie .akademie-brand{
   display:flex; align-items:center; gap:clamp(.8rem,2vw,1.4rem);
   margin:0 0 .35rem;
@@ -18322,7 +18322,7 @@ h2, .section-title{ font-weight:600; }
   box-shadow:0 1px 2px rgba(11,16,32,.05), 0 12px 30px -16px rgba(11,16,32,.14);
 }
 
-/* === Hauptdomain – Richtung 1 "ruhig Navy/Ivory, weiße Boxen" (Institut-Vorbild, hoher Kontrast) === */
+/* === Hauptdomain - Richtung 1 "ruhig Navy/Ivory, weiße Boxen" (Institut-Vorbild, hoher Kontrast) === */
 /* Weiße Boxen mit klarer Kante - poppen auf Ivory/getönten Sektionen */
 .card{
   background:#ffffff;
@@ -18335,7 +18335,7 @@ h1, h2, h3, .hero-title, .section-title{ color:#0B1020; }
 .hero-kicker, .card-kicker{ color:#2F7D5C; font-weight:600; }
 /* getönte Sektionen etwas neutraler/ruhiger halten */
 .section-soft{ background:#F5F1E8; }
-/* === Akademie Farbwelt – Variante A "Grünes Band" (überschreibt frühere flaue Grün-Tönung) === */
+/* === Akademie Farbwelt - Variante A "Grünes Band" (überschreibt frühere flaue Grün-Tönung) === */
 /* Hero = kräftiges grünes Band, helle Schrift (max. Kontrast) */
 body.theme-akademie .hero{ background:#154A34; }
 body.theme-akademie .hero .hero-kicker{ color:#9FD8BB; }
@@ -18409,7 +18409,7 @@ h1, h2, h3 {
   text-wrap: balance;
 }
 
-/* b) Tablet-Zone 761–900px: 4/5-spaltige Card-Grids auf 2 Spalten begrenzen */
+/* b) Tablet-Zone 761-900px: 4/5-spaltige Card-Grids auf 2 Spalten begrenzen */
 @media (min-width: 761px) and (max-width: 900px) {
   .card-grid.four,
   .card-grid.five,
@@ -18597,7 +18597,7 @@ h1, h2, h3 {
 .wiwi-faq-item > summary { cursor: pointer; font-weight: 600; padding: .6rem 0; list-style: none; }
 .wiwi-faq-item > summary::-webkit-details-marker { display: none; }
 .wiwi-faq-item > summary::before { content: "＋"; margin-right: .6rem; color: var(--gold, #C9A227); font-weight: 700; }
-.wiwi-faq-item[open] > summary::before { content: "－"; }
+.wiwi-faq-item[open] > summary::before { content: "-"; }
 .wiwi-faq-item > div { padding: 0 0 .7rem; }
 
 /* --- Quellenarchiv: Autor:innen/Herausgeber unter dem Titel ---------------- */

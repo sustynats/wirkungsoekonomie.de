@@ -1,10 +1,10 @@
-# MV SPD — geschützter P1–P54-Bestand: Quellenbindung vor Materialisierung
+# MV SPD - geschützter P1-P54-Bestand: Quellenbindung vor Materialisierung
 
-Frischer sauberer Main-Ausgangspunkt: `66685e46d0acd9339935babab29bbe2116713143`. Auftrag #241/5542571686. Dies ist **kein** Abschluss der P1–P54-Materialisierung und kein neues Fachreview. P55 (#368), Berlin SPD P1–P23 (#369), der eingefrorene Quellenledger und alle bisherigen Fachentscheidungen bleiben bytegleich.
+Frischer sauberer Main-Ausgangspunkt: `66685e46d0acd9339935babab29bbe2116713143`. Auftrag #241/5542571686. Dies ist **kein** Abschluss der P1-P54-Materialisierung und kein neues Fachreview. P55 (#368), Berlin SPD P1-P23 (#369), der eingefrorene Quellenledger und alle bisherigen Fachentscheidungen bleiben bytegleich.
 
 ## Was vollständig mechanisch geprüft wurde
 
-Alle 509 Source Units und 456 ursprünglichen Atome auf physischen P1–P54 sind mit ID, Locator, Quellenpfad und verifiziertem Text-SHA im versionierten [Referenzinventar](audits/mv-spd-p1-p54-reference-inventory-2026-09-04.json) enthalten. Die vollständigen #240/#241-Snapshots umfassten 418 bzw. 496 Kommentare. 174 MV-bezogene Kandidatenkommentare sind gehasht und verlinkt. Es gibt keine Kürzung auf Stichproben.
+Alle 509 Source Units und 456 ursprünglichen Atome auf physischen P1-P54 sind mit ID, Locator, Quellenpfad und verifiziertem Text-SHA im versionierten [Referenzinventar](audits/mv-spd-p1-p54-reference-inventory-2026-09-04.json) enthalten. Die vollständigen #240/#241-Snapshots umfassten 418 bzw. 496 Kommentare. 174 MV-bezogene Kandidatenkommentare sind gehasht und verlinkt. Es gibt keine Kürzung auf Stichproben.
 
 Das ist eine vollständige **mechanische Referenzinventur**, keine Behauptung, sämtliche Vorgängerkommentare bereits semantisch gelesen oder ihre Fachentscheidungen materialisiert zu haben. Eine ID-/Hash-/Textfundstelle ist lediglich ein Kandidatenverweis; VOID-, historische und später ersetzte Kommentare können darin vorkommen. Das Inventar vergibt deshalb ausdrücklich keinen Terminal-Credit und setzt keine neuen Fachstatus.
 
@@ -36,7 +36,7 @@ Für **SU00495-C02** war ein externer Bindungsdelta erforderlich. Dieser wurde a
 
 ## Früher geschützter Bestand: Referenzlücke, kein pauschaler neuer Fach-Backlog
 
-Keine wörtliche Objekt-ID-Referenz wurde in den beiden vollständigen Issue-Snapshots für SU00001–SU00028, SU00033 und SU00034 gefunden. Das schließt Titel-/Kontextobjekte ein und bedeutet **nicht** 30 neue Wirkungsurteile. Besonders zu klären ist der bestehende objektgebundene Freigabeverweis für SU00010, SU00017–SU00022, SU00024, SU00025, SU00028 und SU00033. Ein Hash-/Texttreffer an einer anderen Stelle wird nicht automatisch zu einer freigegebenen Restatement- oder Parent/Child-Bindung.
+Keine wörtliche Objekt-ID-Referenz wurde in den beiden vollständigen Issue-Snapshots für SU00001-SU00028, SU00033 und SU00034 gefunden. Das schließt Titel-/Kontextobjekte ein und bedeutet **nicht** 30 neue Wirkungsurteile. Besonders zu klären ist der bestehende objektgebundene Freigabeverweis für SU00010, SU00017-SU00022, SU00024, SU00025, SU00028 und SU00033. Ein Hash-/Texttreffer an einer anderen Stelle wird nicht automatisch zu einer freigegebenen Restatement- oder Parent/Child-Bindung.
 
 Zusätzlich vollständig gelesen: Dropbox `/WOEK/WOEK-LAENDER-DAILY/FACHREVIEW/mecklenburg-vorpommern/INITIAL-PROGRAMME-IMPACT-REVIEW-2026-08-18.md` (Revision `6594d1674482e000a748b`) sowie der dortige Vollprogrammvertrag vom 26.08.2026 (Revision `659f3b0921ae1000a748b`). Der erste Text ist achtteiliger Materialitätsvorbestand; der zweite erklärt ausdrücklich, dass dieser kein Vollprogrammabschluss ist. Beide gezielt geprüften MV-Ordnerlisten und die MV-Suchläufe hatten `has_more=false`. Dies ist keine Behauptung eines vollständigen Audits der gesamten Dropbox.
 
@@ -46,7 +46,7 @@ Der generische Ledger wird nicht als Fachautorität verwendet. Beispiel: SU00018
 
 - Technische Quellen-/Referenzinventur: vollständig, alle 965 Originalobjekte.
 - Historische P53-Abweichungen: 3; durch den späteren autoritativen Bindungsdelta geklärt. Kein verbleibender externer P53-Bindungsblocker.
-- P1–P54-Fachmaterialisierung: **nicht vollständig**, keine neuen Terminal-Zähler.
+- P1-P54-Fachmaterialisierung: **nicht vollständig**, keine neuen Terminal-Zähler.
 - P56: **nicht autorisiert**. Kein Fortschritt aus Seitenarithmetik.
 - Berlin P24: autoritativer Handoff vorhanden; gemeinsame Residual-/Golden-Schreibtransaktion bleibt gemäß Controller hinter MV serialisiert.
 - Source-/Fach-/UI-/Release-Daten: unverändert.

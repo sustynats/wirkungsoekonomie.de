@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v44-oeffentliche-beschaffung-transformationshebel.md curriculum=4.0 sanitized=true -->
-# V44 · Öffentliche Beschaffung als Transformationshebel – Recht, Wirkung und Lebenszyklus
+# V44 · Öffentliche Beschaffung als Transformationshebel - Recht, Wirkung und Lebenszyklus
 
 **lecture_id:** `WOEK-G-BASE-044`  
 **display_code:** `V44`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Der Staat kauft jedes Jahr riesige Mengen an Bauleistungen, Fahrzeugen, IT, Lebensmitteln und Dienstleistungen. Vergaberecht erlaubt ausdrücklich, soziale und umweltbezogene Aspekte zu berücksichtigen. Nachhaltige Beschaffung ist also keine WÖk-Erfindung. Die WÖk ergänzt: **Welche Beschaffungsanforderung verändert über welchen Marktmechanismus welchen Zustand – und welche Nebenwirkungen, Lieferkettenrisiken, Lebenszykluskosten und Verteilungseffekte entstehen?**
+Der Staat kauft jedes Jahr riesige Mengen an Bauleistungen, Fahrzeugen, IT, Lebensmitteln und Dienstleistungen. Vergaberecht erlaubt ausdrücklich, soziale und umweltbezogene Aspekte zu berücksichtigen. Nachhaltige Beschaffung ist also keine WÖk-Erfindung. Die WÖk ergänzt: **Welche Beschaffungsanforderung verändert über welchen Marktmechanismus welchen Zustand - und welche Nebenwirkungen, Lieferkettenrisiken, Lebenszykluskosten und Verteilungseffekte entstehen?**
 
 ## Lernziele
 
@@ -183,7 +183,7 @@ WÖk prüft:
 - Restwert,
 - Netz-/Betriebsresilienz.
 
-Zuschlagskriterien sollten die tatsächlich relevanten State Variables abbilden – nicht bloß „grün“ heißen.
+Zuschlagskriterien sollten die tatsächlich relevanten State Variables abbilden - nicht bloß „grün“ heißen.
 
 ## 9. Reality Check nach Zuschlag
 
@@ -313,6 +313,6 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

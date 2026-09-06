@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Medikament wirkt nicht allein deshalb, weil es eingenommen wurde. Zwischen Auslöser und Ergebnis liegt ein Mechanismus – und Kontext verändert ihn. Diese Idee nutzt WÖk als Analogie. Aber Gesellschaft ist kein Körper und Politik kein Arzneimittelversuch. Die Analogie hilft beim Denken, sie ist kein Beweis.
+Ein Medikament wirkt nicht allein deshalb, weil es eingenommen wurde. Zwischen Auslöser und Ergebnis liegt ein Mechanismus - und Kontext verändert ihn. Diese Idee nutzt WÖk als Analogie. Aber Gesellschaft ist kein Körper und Politik kein Arzneimittelversuch. Die Analogie hilft beim Denken, sie ist kein Beweis.
 
 ## Lernziele
 
@@ -40,7 +40,7 @@ Ein Qualifizierungsprogramm kann Kompetenz steigern, wenn Teilnahme, Qualität, 
 
 ## 4. Resonanz
 
-Institutionen, Anreize, Vertrauen, Kultur, Infrastruktur und Ressourcen können Mechanismen verstärken oder abschwächen. Diese Faktoren heißen in WÖk Resonanzfaktoren – als heuristischer Sammelbegriff.
+Institutionen, Anreize, Vertrauen, Kultur, Infrastruktur und Ressourcen können Mechanismen verstärken oder abschwächen. Diese Faktoren heißen in WÖk Resonanzfaktoren - als heuristischer Sammelbegriff.
 
 ## 5. Beispiel: Tempo-30-Regel
 
@@ -62,10 +62,10 @@ Gesellschaftliche Systeme haben strategische Akteure, Rückkopplung, Recht, Mach
 
 ## Typische Fehlinterpretationen
 
-- „Gesellschaft funktioniert wie ein Medikament.“ – Nein.
-- „Auslöser = Mechanismus.“ – Nein.
-- „Potenzial = Garantie.“ – Nein.
-- „Dosis-Wirkung lässt sich ohne Evidenz auf Politik übertragen.“ – Nein.
+- „Gesellschaft funktioniert wie ein Medikament.“ - Nein.
+- „Auslöser = Mechanismus.“ - Nein.
+- „Potenzial = Garantie.“ - Nein.
+- „Dosis-Wirkung lässt sich ohne Evidenz auf Politik übertragen.“ - Nein.
 
 ## WÖk-Abgrenzung
 

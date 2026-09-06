@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Preis kann zu niedrig wirken, obwohl die Gesellschaft längst bezahlt – nur eben anderswo. Luftverschmutzung kann Gesundheitskosten erzeugen, CO₂ heutige Preise von künftigen Schäden entkoppeln, Lärm Anwohner:innen belasten. Solche Effekte heißen **Externalitäten**. Die Idee ist älter als die WÖk. WÖk ergänzt: Wir betrachten nicht nur monetarisierbare externe Kosten, sondern auch Zustandsänderungen, Verteilung, Rechte, Resilienz und Grenzen, die sich nicht sinnvoll in Euro verrechnen lassen.
+Ein Preis kann zu niedrig wirken, obwohl die Gesellschaft längst bezahlt - nur eben anderswo. Luftverschmutzung kann Gesundheitskosten erzeugen, CO₂ heutige Preise von künftigen Schäden entkoppeln, Lärm Anwohner:innen belasten. Solche Effekte heißen **Externalitäten**. Die Idee ist älter als die WÖk. WÖk ergänzt: Wir betrachten nicht nur monetarisierbare externe Kosten, sondern auch Zustandsänderungen, Verteilung, Rechte, Resilienz und Grenzen, die sich nicht sinnvoll in Euro verrechnen lassen.
 
 ## Lernziele
 
@@ -84,7 +84,7 @@ Mögliche Instrumente:
 
 Welches Instrument passt, hängt von Messbarkeit, Recht, Marktstruktur, Verteilung und Delivery ab.
 
-## 5. Pigou und Coase – zwei historische Perspektiven
+## 5. Pigou und Coase - zwei historische Perspektiven
 
 Arthur Pigou steht klassisch für staatliche Korrektur externer Kosten über Steuern/Subventionen.
 
@@ -123,7 +123,7 @@ Wirkpfad:
 
 Ein Geldwert kann Gesundheitskosten sichtbar machen.
 
-Aber die primäre State Variable bleibt Gesundheit/Exposition – nicht Euro.
+Aber die primäre State Variable bleibt Gesundheit/Exposition - nicht Euro.
 
 ## 8. Positive Externalitäten
 
@@ -236,7 +236,7 @@ Und dann fragen wir: Welches Instrument passt wirklich? Steuer? Standard? Handel
 
 Der Merksatz lautet:
 
-**Wenn der Marktpreis die ganze Rechnung nicht zeigt, müssen wir die fehlende Wirkung sichtbar machen – aber nicht jede Wirkung gewaltsam in eine einzige Geldzahl pressen.**
+**Wenn der Marktpreis die ganze Rechnung nicht zeigt, müssen wir die fehlende Wirkung sichtbar machen - aber nicht jede Wirkung gewaltsam in eine einzige Geldzahl pressen.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

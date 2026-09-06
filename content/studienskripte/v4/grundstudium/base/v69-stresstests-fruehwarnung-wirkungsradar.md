@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein Reality Check kommt nach einer Entscheidung. Ein **Stresstest** fragt vorher: Was passiert, wenn zentrale Annahmen schlechter ausfallen? Banken, Energiesysteme, Cybersecurity und Katastrophenschutz arbeiten längst mit solchen Logiken. Der WÖk-Wirkungsradar soll diese Denkweise auf Wirkungsrisiken übertragen: Signale sammeln, Schwellen beobachten, Szenarien testen und früh neu prüfen. Er ersetzt keine Fachaufsicht – er verbindet Wirkungsfelder und macht Recheck-Auslöser sichtbar.
+Ein Reality Check kommt nach einer Entscheidung. Ein **Stresstest** fragt vorher: Was passiert, wenn zentrale Annahmen schlechter ausfallen? Banken, Energiesysteme, Cybersecurity und Katastrophenschutz arbeiten längst mit solchen Logiken. Der WÖk-Wirkungsradar soll diese Denkweise auf Wirkungsrisiken übertragen: Signale sammeln, Schwellen beobachten, Szenarien testen und früh neu prüfen. Er ersetzt keine Fachaufsicht - er verbindet Wirkungsfelder und macht Recheck-Auslöser sichtbar.
 
 ## Lernziele
 
@@ -33,7 +33,7 @@ Ein Stresstest sagt nicht:
 
 Er fragt:
 
-> Wenn dieses plausible Belastungsszenario eintritt – hält unser System oder unsere Entscheidung?
+> Wenn dieses plausible Belastungsszenario eintritt - hält unser System oder unsere Entscheidung?
 
 Das Ziel ist **Robustheit**, nicht Wahrsagerei.
 
@@ -259,10 +259,10 @@ WÖk nutzt etablierte Stresstest-/Foresight-Prinzipien und ergänzt:
 ## 14. Quellen
 
 - OECD Strategic Foresight: https://www.oecd.org/strategic-foresight/
-- UNDRR – Risk/Resilience: https://www.undrr.org/
-- European Banking Authority – EU-wide stress testing: https://www.eba.europa.eu/risk-and-data-analysis/risk-analysis/eu-wide-stress-testing
-- ENTSO-E – European Resource Adequacy Assessment: https://www.entsoe.eu/outlooks/eraa/
-- BSI – Lageberichte zur IT-Sicherheit: https://www.bsi.bund.de/DE/Service-Navi/Publikationen/Lagebericht/lagebericht_node.html
+- UNDRR - Risk/Resilience: https://www.undrr.org/
+- European Banking Authority - EU-wide stress testing: https://www.eba.europa.eu/risk-and-data-analysis/risk-analysis/eu-wide-stress-testing
+- ENTSO-E - European Resource Adequacy Assessment: https://www.entsoe.eu/outlooks/eraa/
+- BSI - Lageberichte zur IT-Sicherheit: https://www.bsi.bund.de/DE/Service-Navi/Publikationen/Lagebericht/lagebericht_node.html
 - WÖk Wirkungsradar: https://wirkungsoekonomie.de/wirkungsradar/
 
 ## 15. Transferaufgabe
@@ -303,13 +303,13 @@ Die WÖk übernimmt diese Idee für Wirkungsentscheidungen.
 
 Nehmen wir eine Strategie, die stark auf günstigen Wasserstoff setzt.
 
-Dann fragen wir: Was, wenn Wasserstoff doppelt so teuer ist? Was, wenn Infrastruktur fünf Jahre später kommt? Kippt dann nur der Preis – oder auch Klima, Versorgungssicherheit und Verteilung?
+Dann fragen wir: Was, wenn Wasserstoff doppelt so teuer ist? Was, wenn Infrastruktur fünf Jahre später kommt? Kippt dann nur der Preis - oder auch Klima, Versorgungssicherheit und Verteilung?
 
 Und dann brauchen wir Frühwarnsignale.
 
 Manche Indikatoren laufen voraus. Ausbildungsabbrüche können zum Beispiel späteren Fachkräftemangel ankündigen.
 
-Andere zeigen Folgen erst, wenn sie da sind – etwa Bettensperrungen im Krankenhaus.
+Andere zeigen Folgen erst, wenn sie da sind - etwa Bettensperrungen im Krankenhaus.
 
 Ein Wirkungsradar verbindet solche Signale über Wirkungsfelder hinweg.
 

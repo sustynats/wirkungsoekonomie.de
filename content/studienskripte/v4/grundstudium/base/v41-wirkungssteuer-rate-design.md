@@ -4,21 +4,21 @@
 **lecture_id:** `WOEK-G-BASE-041`  
 **display_code:** `V41`  
 **curriculum_version:** `4.0`  
-**legacy_source:** `seed.ts` v3.2 / frühere 0–25-%-/FinalScore-WÖk-Modelle @ `ef4e627d746e6d61aaf4a0befc3ca8583f7883dc`  
+**legacy_source:** `seed.ts` v3.2 / frühere 0-25-%-/FinalScore-WÖk-Modelle @ `ef4e627d746e6d61aaf4a0befc3ca8583f7883dc`  
 **migration_class:** `MATERIAL_REWRITE_REQUIRED`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
 **reviewed_at:** 2026-08-21  
-**change_reason:** v4.0 korrigiert die ältere didaktische Verkürzung „FinalScore -> Steuerklasse/0–25 %“. Ein möglicher Tarifkorridor bleibt ein Policy-Designparameter, keine methodische Wahrheit. Tarifdesign muss dimensions-, rechts-, verteilungs- und boundary-sensitiv sein und darf heterogene Wirkungen nicht blind saldieren.
+**change_reason:** v4.0 korrigiert die ältere didaktische Verkürzung „FinalScore -> Steuerklasse/0-25 %“. Ein möglicher Tarifkorridor bleibt ein Policy-Designparameter, keine methodische Wahrheit. Tarifdesign muss dimensions-, rechts-, verteilungs- und boundary-sensitiv sein und darf heterogene Wirkungen nicht blind saldieren.
 
 ## 20-Sekunden-Einstieg
 
-Frühere WÖk-Modelle arbeiteten anschaulich mit einem möglichen **0–25-%-Korridor** und einem FinalScore. Das war didaktisch einfach, aber methodisch zu grob, wenn sehr unterschiedliche Wirkungen oder harte Grenzen betroffen sind. v4.0 sagt deshalb: **Kein automatischer Gesamtscore entscheidet den Steuersatz.** Ein Tarifmodell braucht erst zulässige Bemessungsgrößen, klare Wirkungsdimensionen, Schutzgrenzen, Verteilung, Datenqualität und Rechtsprüfung.
+Frühere WÖk-Modelle arbeiteten anschaulich mit einem möglichen **0-25-%-Korridor** und einem FinalScore. Das war didaktisch einfach, aber methodisch zu grob, wenn sehr unterschiedliche Wirkungen oder harte Grenzen betroffen sind. v4.0 sagt deshalb: **Kein automatischer Gesamtscore entscheidet den Steuersatz.** Ein Tarifmodell braucht erst zulässige Bemessungsgrößen, klare Wirkungsdimensionen, Schutzgrenzen, Verteilung, Datenqualität und Rechtsprüfung.
 
 ## Lernziele
 
 Nach dieser Vorlesung kannst du:
 
-1. historische WÖk-0–25-%-/FinalScore-Modelle als Designprototypen einordnen.
+1. historische WÖk-0-25-%-/FinalScore-Modelle als Designprototypen einordnen.
 2. Bemessungsgrundlage, Tarif, Bonus-Malus und Steuerklasse unterscheiden.
 3. erklären, warum multidimensionale Wirkung nicht blind in einen Steuersatz aggregiert werden darf.
 4. Boundary-, Evidenz- und Datenqualitätsregeln vor Tarifzuordnung anwenden.
@@ -120,9 +120,9 @@ Vorteil: kausal näher.
 
 Keine Familie ist universell beste.
 
-## 5. 0–25 % als Policy-Parameter, nicht Naturkonstante
+## 5. 0-25 % als Policy-Parameter, nicht Naturkonstante
 
-Ein Tarifkorridor wie 0–25 % kann als Simulationsbereich dienen.
+Ein Tarifkorridor wie 0-25 % kann als Simulationsbereich dienen.
 
 Aber seine Höhe muss geprüft werden gegen:
 
@@ -137,7 +137,7 @@ Aber seine Höhe muss geprüft werden gegen:
 
 Daraus folgt:
 
-`0–25 % = PROTOTYPE PARAMETER`, nicht „WÖk-Gesetz“.
+`0-25 % = PROTOTYPE PARAMETER`, nicht „WÖk-Gesetz“.
 
 ## 6. Evidenzabhängigkeit
 
@@ -224,7 +224,7 @@ Nicht nötig: ein Gesamt-MPD-Score für jede Verpackung.
 
 ## 12. Typische Fehlinterpretationen
 
-### „WÖk verlangt zwingend 0–25 %.“
+### „WÖk verlangt zwingend 0-25 %.“
 Falsch.
 
 ### „FinalScore bestimmt automatisch Steuerklasse.“
@@ -264,7 +264,7 @@ Vergleiche Transparenz, Datenlast, Gaming, Verteilung und Rechts-/Administrierba
 - FinalScore-Korrektur,
 - Tarif/Bemessung/Boundary trennen,
 - Designfamilien,
-- 0–25 % als Parameter,
+- 0-25 % als Parameter,
 - Evidenz/Cliff Effects,
 - Distribution/Data burden.
 
@@ -272,7 +272,7 @@ Vergleiche Transparenz, Datenlast, Gaming, Verteilung und Rechts-/Administrierba
 
 Früher war die Wirkungssteuer schön einfach erklärt.
 
-FinalScore rein – Steuerklasse raus. Vielleicht irgendwo zwischen null und 25 Prozent.
+FinalScore rein - Steuerklasse raus. Vielleicht irgendwo zwischen null und 25 Prozent.
 
 Das versteht jeder.
 
@@ -294,7 +294,7 @@ Es kann ein Simulationsbereich sein. Aber ein echter Tarif braucht Rechtsprüfun
 
 Der Merksatz lautet:
 
-**Ein guter Wirkungssteuertarif ist nicht der eleganteste Score. Er ist der einfachste rechtlich und praktisch tragfähige Anreiz, der die relevante Wirkung wirklich verändert – ohne kritische Grenzen zu verstecken.**
+**Ein guter Wirkungssteuertarif ist nicht der eleganteste Score. Er ist der einfachste rechtlich und praktisch tragfähige Anreiz, der die relevante Wirkung wirklich verändert - ohne kritische Grenzen zu verstecken.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

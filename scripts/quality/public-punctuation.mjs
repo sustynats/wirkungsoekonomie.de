@@ -1,6 +1,7 @@
 // Editorial normalization must never rewrite executable code, URLs or examples.
+import {normalizePublicationTypography} from '../lib/public-typography.mjs';
 export function normalizePublicPunctuation(text, extension) {
-  const replace = (part) => part.replaceAll(String.fromCharCode(0x2014), "-");
+  const replace = normalizePublicationTypography;
   if ([".html", ".inc"].includes(extension)) {
     return text.replace(/<!--[\s\S]*?-->|<(script|style|pre|code)\b[^>]*>[\s\S]*?<\/\1\s*>|<[^>]*>|[^<]+/gi,
       (part) => part.startsWith("<") ? part : replace(part));

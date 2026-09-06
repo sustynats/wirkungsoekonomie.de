@@ -1,4 +1,4 @@
-# Issue #284 — complete old dirty worktree safety audit
+# Issue #284 - complete old dirty worktree safety audit
 
 ## Outcome
 
@@ -10,7 +10,7 @@ The old worktree was not reset, cleaned, checked out, overwritten, stash-applied
 
 ## Identity and inventory
 
-- Old worktree: `/Users/hagen/Documents/New project`
+- Old worktree: `[lokales Arbeitsverzeichnis]/Documents/New project`
 - Branch: `codex/live-clean-20260628`
 - HEAD: `7e38fcb248c756fa6021cfdc87b3ef1eeb58b093`
 - Compared main: `b3477bb387978c11cee3bf866f7dc3a15516cb50`
@@ -110,7 +110,7 @@ The private archive is non-production review material. It creates no application
 
 ## Classification rationale highlights
 
-- Merged newsletter/English work from #228–#230 and later current-main shell changes supersede the broad static HTML/CSS/JS delta.
+- Merged newsletter/English work from #228-#230 and later current-main shell changes supersede the broad static HTML/CSS/JS delta.
 - The sanitized Academy v4 Public-Master plus v3.2 archive supersede old study-script drafts, Claude corrections and handoffs; no assessment keys or review secrets were projected.
 - The Parliament Golden State through #298 supersedes early release-1 data, drifted #257 CDU manifests and old technical/UI projections. The deterministic 0259→0251 work is already represented by the later completed CDU lane.
 - Static search/API/feed/registry/radar/Quellenarchiv/portal/journal-PDF outputs are reproducible from current versioned generators and canonical inputs.

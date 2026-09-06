@@ -247,7 +247,7 @@ Erstelle für deine bevorzugte Option:
 
 ## 17. Sprechertext
 
-Eine Maßnahme kann im Durchschnitt hervorragend aussehen – und trotzdem Menschen unfair treffen.
+Eine Maßnahme kann im Durchschnitt hervorragend aussehen - und trotzdem Menschen unfair treffen.
 
 Deshalb schauen wir jetzt auf Verteilung.
 
@@ -265,11 +265,11 @@ Wir müssen nur verhindern, dass die Regel erfüllbar ist, ohne die eigentliche 
 
 Und Vorsicht: Auch Missbrauchsschutz hat Nebenwirkungen.
 
-Wenn wir zehn Nachweise verlangen, sinkt vielleicht Betrug – aber auch legitimer Zugang.
+Wenn wir zehn Nachweise verlangen, sinkt vielleicht Betrug - aber auch legitimer Zugang.
 
 Der Merksatz lautet:
 
-**Eine robuste Option wirkt nicht nur im Durchschnitt. Sie verteilt Nutzen und Lasten nachvollziehbar – und bleibt auch dann sinnvoll, wenn Menschen strategisch auf ihre Regeln reagieren.**
+**Eine robuste Option wirkt nicht nur im Durchschnitt. Sie verteilt Nutzen und Lasten nachvollziehbar - und bleibt auch dann sinnvoll, wenn Menschen strategisch auf ihre Regeln reagieren.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

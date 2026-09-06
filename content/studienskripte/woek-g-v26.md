@@ -5,9 +5,7 @@
 **Vorlesungscode:** V26  
 **Modul/Abschnitt:** G3.1  
 **Titel:** SDG+: Warum die SDGs für offene Gesellschaften nicht reichen  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v26-sdg-plus-warum-sdgs-nicht-reichen.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v26.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v26.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **SDG+: Warum die SDGs für offene Gesellschaften nicht reichen** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V25 „SDGs und Agenda 2030 als globaler Konsens der 193 Staaten"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Die SDGs sind wichtig. Aber reichen sie aus, wenn Desinformation, Plattformmacht
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** SDG+ – der erweiterte Referenzrahmen für offene Gesellschaften
+- **Titel:** SDG+ - der erweiterte Referenzrahmen für offene Gesellschaften
 - **Länge:** ~14 Min
 - **Kernaussage in einem Satz:** SDG+ ergänzt die SDGs um demokratische Resilienz, Grundrechte, digitale Macht, Nichtkompensation und rote Linien.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Die SDGs als Mindestkompass.** Sie sind unverzichtbar, aber nicht vollständig.
+**Abschnitt A - Die SDGs als Mindestkompass.** Sie sind unverzichtbar, aber nicht vollständig.
 
-**Abschnitt B – Neue Wirkungsräume.** Digitale Plattformen, KI, Desinformation und Datenmacht verändern Demokratie, Öffentlichkeit und Teilhabe.
+**Abschnitt B - Neue Wirkungsräume.** Digitale Plattformen, KI, Desinformation und Datenmacht verändern Demokratie, Öffentlichkeit und Teilhabe.
 
-**Abschnitt C – Offene Gesellschaft.** Wirkung muss Grundrechte, Minderheitenschutz, Rechtsstaatlichkeit, Debattenfähigkeit und Vertrauen berücksichtigen.
+**Abschnitt C - Offene Gesellschaft.** Wirkung muss Grundrechte, Minderheitenschutz, Rechtsstaatlichkeit, Debattenfähigkeit und Vertrauen berücksichtigen.
 
-**Abschnitt D – SDG+ als Schärfung.** SDG+ ergänzt Mensch und Planet um Demokratie als gleichwertige Wirkungsdimension.
+**Abschnitt D - SDG+ als Schärfung.** SDG+ ergänzt Mensch und Planet um Demokratie als gleichwertige Wirkungsdimension.
 
-**Abschnitt E – Keine Ideologie.** SDG+ ist keine Sprachpolizei und kein Social Credit, sondern ein Schutzrahmen gegen verdeckte Schäden.
+**Abschnitt E - Keine Ideologie.** SDG+ ist keine Sprachpolizei und kein Social Credit, sondern ein Schutzrahmen gegen verdeckte Schäden.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -128,7 +124,6 @@ Nimm ein digitales Produkt. Prüfe neben SDG-Bezug drei SDG+-Fragen: Transparenz
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -294,12 +289,11 @@ Die folgende Runde verdichtet V26 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V26. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Demokratie, digitale Wirkung, SDG+
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Demokratie, digitale Wirkung, SDG+
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/sdg-plus`, `begriffe/demokratie-als-wirkungsdimension`, `begriffe/nichtkompensation`
 
@@ -392,7 +386,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 3
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -841,8 +834,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v26-sdg-plus-warum-sdgs-nicht-reichen.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

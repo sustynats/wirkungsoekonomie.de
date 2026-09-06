@@ -26,7 +26,7 @@ Zivilcourage muss nicht spektakulär sein. Einer betroffenen Person beistehen, e
 ## Fachliche Vertiefung
 1. Wahlen unterliegen verfassungs- und wahlrechtlichen Grundsätzen. Gleichheit der Wahl bedeutet eine rechtlich präzise Gleichheit des Zähl-/Erfolgswerts im jeweiligen Wahlsystem, nicht die triviale Aussage, jede politische Stimme habe in jeder Hinsicht exakt denselben Einfluss.
 2. Lokale Begegnung kann Kontakte und Perspektiven ermöglichen; Anti-Polarisationswirkung ist aber empirisch und kontextabhängig.
-3. Zivilcourage umfasst auch Unterstützung Dritter, Dokumentation und sichere Eskalation – nicht nur unmittelbaren Widerspruch.
+3. Zivilcourage umfasst auch Unterstützung Dritter, Dokumentation und sichere Eskalation - nicht nur unmittelbaren Widerspruch.
 4. Institutionenkritik kann Teil von Beteiligung sein, wenn sie fakten- und rechtsbezogen bleibt und Korrekturwege nutzt.
 
 ## Begriffe / Glossarbox
@@ -38,7 +38,7 @@ Zivilcourage muss nicht spektakulär sein. Einer betroffenen Person beistehen, e
 - **Sicherheitsgrenze**
 
 ## Konkretes Beispiel
-Bei diskriminierender Ansprache in der Öffentlichkeit kann Unterstützung der betroffenen Person, Hinzuholen weiterer Hilfe oder Dokumentation sinnvoller sein als direkte Konfrontation – abhängig von der Sicherheitslage.
+Bei diskriminierender Ansprache in der Öffentlichkeit kann Unterstützung der betroffenen Person, Hinzuholen weiterer Hilfe oder Dokumentation sinnvoller sein als direkte Konfrontation - abhängig von der Sicherheitslage.
 
 ## Gegenbeispiel / typische Fehlinterpretation
 „Begegnung baut Vorurteile automatisch ab.“ Zu stark; Wirkungen hängen von Bedingungen und Kontext ab.
@@ -65,10 +65,10 @@ Wähle ein lokales Thema und entwickle drei Beteiligungsoptionen. Vergleiche Wir
 Teilhabeformen, Wahl-/Rechtspräzision, Sicherheitslogik und keine Wirkungsgarantien.
 
 ## Zusammenfassung
-Teilhabe bietet viele Wege – Wirkungskompetenz hilft, den passenden, sicheren und überprüfbaren Weg zu wählen.
+Teilhabe bietet viele Wege - Wirkungskompetenz hilft, den passenden, sicheren und überprüfbaren Weg zu wählen.
 
 ## Sprechertext
-Demokratie ist nicht nur die große Wahl alle paar Jahre. Sie steckt auch in kleinen Wegen: informieren, unterstützen, nachfragen, widersprechen, eine Petition nutzen, lokal mitarbeiten. Aber die Frage bleibt immer: Was wollen wir verändern – und woran würden wir merken, ob es klappt?
+Demokratie ist nicht nur die große Wahl alle paar Jahre. Sie steckt auch in kleinen Wegen: informieren, unterstützen, nachfragen, widersprechen, eine Petition nutzen, lokal mitarbeiten. Aber die Frage bleibt immer: Was wollen wir verändern - und woran würden wir merken, ob es klappt?
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Vollständige Neufassung nach Legacy-Reaudit B05; deterministische Psychologie-, Intent-, Reichweiten- und Wirkungsclaims wurden durch evidenzgebundene Potenzial-/Observation-/Attributionslogik ersetzt.

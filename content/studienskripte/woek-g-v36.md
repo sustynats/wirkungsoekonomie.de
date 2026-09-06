@@ -5,9 +5,7 @@
 **Vorlesungscode:** V36  
 **Modul/Abschnitt:** G3.4  
 **Titel:** Scorecard lesen und begründen  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/woek-g-v36-scorecard-lesen-und-begruenden.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v36.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v36.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Scorecard lesen und begründen** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -45,7 +42,6 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Voraussetzung:** V35 „Nichtkompensation gegen Greenwashing"
 **Führende Quellen (Repo):** `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` · `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` · Glossar `begriffe/`
 
-> Erstellt nach `_vorlesung-template.md`. Quell-Dokument für Claude; keine Folien- oder TTS-Fassung.
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -53,22 +49,22 @@ Am Ende von G3 sollst du eine einfache Scorecard nicht nur anschauen, sondern be
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Scorecards begründen – vom Profil zur Entscheidung
+- **Titel:** Scorecards begründen - vom Profil zur Entscheidung
 - **Länge:** ~16 Min
 - **Kernaussage in einem Satz:** Eine Scorecard wird erst durch Begründung, Datenqualität, Reverse Merit Order und Nichtkompensation zur belastbaren Entscheidungsgrundlage.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Lesen statt nur schauen.** Eine Scorecard ist kein Ampelbild, sondern eine begründete Wirkungsanalyse.
+**Abschnitt A - Lesen statt nur schauen.** Eine Scorecard ist kein Ampelbild, sondern eine begründete Wirkungsanalyse.
 
-**Abschnitt B – Schrittfolge.** Felder prüfen, Datenqualität lesen, Benchmarks verstehen, rote Linien markieren, schwächstes Feld bestimmen.
+**Abschnitt B - Schrittfolge.** Felder prüfen, Datenqualität lesen, Benchmarks verstehen, rote Linien markieren, schwächstes Feld bestimmen.
 
-**Abschnitt C – Begründung.** Jeder Score braucht Quelle, Annahme, Wirkungsgrenze und Unsicherheitsnotiz.
+**Abschnitt C - Begründung.** Jeder Score braucht Quelle, Annahme, Wirkungsgrenze und Unsicherheitsnotiz.
 
-**Abschnitt D – Entscheidung.** Ergebnis kann Förderung, Verbesserung, Stopp, Nachprüfung oder Monitoring sein.
+**Abschnitt D - Entscheidung.** Ergebnis kann Förderung, Verbesserung, Stopp, Nachprüfung oder Monitoring sein.
 
-**Abschnitt E – Lernabschluss G3.** Studierende können eine einfache Wirkungsbewertung lesen und begründen.
+**Abschnitt E - Lernabschluss G3.** Studierende können eine einfache Wirkungsbewertung lesen und begründen.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -135,7 +131,6 @@ Nimm eine einfache Vier-Felder-Scorecard. Schreibe eine Begründung in fünf Sä
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -287,12 +282,11 @@ Die folgende Runde verdichtet V36 nicht durch neue Schlagworte, sondern durch wi
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V36. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` – Scorecards, NWI, Reverse Merit Order
+- `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` - Scorecards, NWI, Reverse Merit Order
 - `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md`
 - Glossar: `begriffe/scorecard`, `begriffe/reverse-merit-order`, `begriffe/nichtkompensation`
 
@@ -385,7 +379,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 5
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -946,8 +939,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/woek-g-v36-scorecard-lesen-und-begruenden.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

@@ -1,4 +1,4 @@
-# Wirkungscheck Bundestag V3 – Ablauf
+# Wirkungscheck Bundestag V3 - Ablauf
 
 ## Sichtbarer Ablauf
 
@@ -33,11 +33,11 @@ Absender, Nutzen, Wahlkreisrolle, Schutz und Dauer vollständig.
 | 3 | Welchen politischen Ansatz würden Sie zunächst prüfen? | genau eins | abhängig von Thema und Ziel |
 | 3a | Was verändert dieser Ansatz zunächst? | keine Auswahl | direkte Wirkung, offene Bedingung, nächste Frage |
 | 4 | Was blockiert diesen Weg derzeit am stärksten? | ein oder zwei Punkte | abhängig von Thema und Ansatz |
-| 4a | Was bedeutet diese Kombination? | keine Auswahl | Passung Ansatz–Engpass, möglicher zusätzlicher Bundeshebel |
+| 4a | Was bedeutet diese Kombination? | keine Auswahl | Passung Ansatz-Engpass, möglicher zusätzlicher Bundeshebel |
 | 5 | Was darf eine Lösung auf keinen Fall verschlechtern? | ein oder zwei Punkte | themenspezifische rote Linien |
 | 5a | Was folgt aus dieser Grenze? | keine Auswahl | Nichtkompensation in Alltagssprache |
 | 6 | Woran müsste bundesweit erkennbar sein, dass der Ansatz funktioniert? | bis zu drei | themenspezifische Zustandsindikatoren |
-| 6a | Was zeigen diese Daten – und was nicht? | keine Auswahl | Output–Wirkung-Erläuterung |
+| 6a | Was zeigen diese Daten - und was nicht? | keine Auswahl | Output-Wirkung-Erläuterung |
 | 7 | Woran zeigt sich das in Praxis oder Wahlkreis? | genau eins, optionaler Freitext | abhängig von Wahlkreiswahl und Thema |
 | 8 | Was ist Ihnen bei der Umsetzung besonders wichtig? | bis zu zwei | nur, wenn die Regelengine daraus eine relevante Differenzierung ableitet |
 

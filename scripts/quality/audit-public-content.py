@@ -8,9 +8,10 @@ ROOT=Path(sys.argv[1]); OUT=Path(sys.argv[2]); OUT.mkdir(parents=True,exist_ok=T
 SKIP={'.git','node_modules','_site','outputs','.next','woek-parlament-app','reports','audit-manifests','docs','source-assets','content','templates','tests','scripts','tools','assets','public'}
 class Page(HTMLParser):
  def __init__(self):
-  super().__init__(convert_charrefs=True);self.stack=[];self.ids=[];self.links=[];self.images=[];self.words=[];self.title=[];self.headings=[];self.meta={};self.canonical='';self.redirect=False;self.active=None;self.heading=None
+  super().__init__(convert_charrefs=True);self.stack=[];self.ids=[];self.links=[];self.images=[];self.words=[];self.title=[];self.headings=[];self.meta={};self.canonical='';self.redirect=False;self.active=None;self.heading=None;self.h1_count=0
  def handle_starttag(self,t,attrs):
   a=dict(attrs)
+  if t=='h1':self.h1_count+=1
   if t not in {'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}:self.stack.append(t)
   if a.get('id'):self.ids.append(a['id'])
   if t=='meta':
@@ -38,7 +39,7 @@ for base,dirs,files in os.walk(ROOT):
   route='/'+rel
   if route.endswith('/index.html'):route=route[:-10]
   text=re.sub(r'\s+',' ',' '.join(parser.words)).strip();indexable=not parser.redirect and 'noindex' not in parser.meta.get('robots','').lower()
-  pages[rel]={'path':rel,'url':route,'bytes':p.stat().st_size,'title':''.join(parser.title),'description':parser.meta.get('description',''),'indexable':indexable,'canonical':parser.canonical,'redirect':parser.redirect,'word_count':len(text.split()),'h1_count':sum(h['level']==1 for h in parser.headings),'headings':parser.headings,'duplicate_ids':[i for i,n in collections.Counter(parser.ids).items() if n>1],'missing_alt':[i['src'] for i in parser.images if i['alt'] is None],'placeholder_hits':re.findall(r'.{0,70}(?:wird ergänzt|folgt in Kürze|Coming soon|TODO|Onlinefassunge\b|Gesamtset nicht öffentlich|Es wird kein kaputter Downloadlink gesetzt).{0,90}',text,re.I),'main_digest':hashlib.sha256(text.encode()).hexdigest(),'links':parser.links,'ids':set(parser.ids),'text':text}
+  pages[rel]={'path':rel,'url':route,'bytes':p.stat().st_size,'title':''.join(parser.title),'description':parser.meta.get('description',''),'indexable':indexable,'canonical':parser.canonical,'redirect':parser.redirect,'word_count':len(text.split()),'h1_count':parser.h1_count,'headings':parser.headings,'duplicate_ids':[i for i,n in collections.Counter(parser.ids).items() if n>1],'missing_alt':[i['src'] for i in parser.images if i['alt'] is None],'placeholder_hits':re.findall(r'.{0,70}(?:wird ergänzt|folgt in Kürze|Coming soon|TODO|Onlinefassunge\b|Gesamtset nicht öffentlich|Es wird kein kaputter Downloadlink gesetzt).{0,90}',text,re.I),'main_digest':hashlib.sha256(text.encode()).hexdigest(),'links':parser.links,'ids':set(parser.ids),'text':text}
 print('Parsed',len(pages),'pages',flush=True)
 existing={p.relative_to(ROOT).as_posix() for p in ROOT.rglob('*') if p.is_file()}
 broken=[];anchors=[];incoming=collections.Counter(); selflinks=[]

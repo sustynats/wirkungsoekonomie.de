@@ -5,7 +5,7 @@
 **offering_id:** `WOEK-WB-WC`  
 **curriculum_version:** `4.0`  
 **status:** `FACH_ENDCONTENT_REVIEWED`  
-**subtitle:** Was betrachten wir – und womit beobachten wir es?  
+**subtitle:** Was betrachten wir - und womit beobachten wir es?  
 **legacy_source:** `content/lehrgaenge/wirkungscontrolling-wc-v3.md`  
 **migration_class:** `REWRITE_REQUIRED`  
 **reviewed_at:** 2026-08-21
@@ -19,7 +19,7 @@
 
 ## 20-Sekunden-Erklärung
 
-Das Masterregister sagt, was wir betrachten. Das Wirkindikatorenregister sagt, womit wir reale Zustände beobachten. Beides ist wichtig, aber nicht dasselbe. Eine WÖk-ID verbindet Daten und Bedeutung – sie ist kein Gütesiegel und keine automatische Bewertung.
+Das Masterregister sagt, was wir betrachten. Das Wirkindikatorenregister sagt, womit wir reale Zustände beobachten. Beides ist wichtig, aber nicht dasselbe. Eine WÖk-ID verbindet Daten und Bedeutung - sie ist kein Gütesiegel und keine automatische Bewertung.
 
 ## Einfach erklärt
 
@@ -58,7 +58,7 @@ Datenkataloge, statistische Klassifikationen, Ontologien und Metadatenstandards 
 
 ## WÖk-spezifische Einordnung
 
-Der WÖk-Zusatz ist die verbindliche Kette von Ontologie über Beobachtung zu Analyse, Schutzprüfung und Rückkopplung – nicht die Behauptung, Register oder Identifikatoren erfunden zu haben.
+Der WÖk-Zusatz ist die verbindliche Kette von Ontologie über Beobachtung zu Analyse, Schutzprüfung und Rückkopplung - nicht die Behauptung, Register oder Identifikatoren erfunden zu haben.
 
 ## Primär- und Anschlussquellen
 

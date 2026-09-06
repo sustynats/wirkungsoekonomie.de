@@ -54,7 +54,7 @@ GitHub-Publishing-Job abhängig. Stimmen überstehen Deployments und Neustarts.
 - `poll_options`: UUID, Poll-Fremdschlüssel, Beschriftung, Sortierung.
 - `votes`: UUID, Poll/Option-Fremdschlüssel, pro Umfrage gepepperte
   Abstimmungskennung, Zeitstempel. `UNIQUE(poll_id, anonymous_vote_identifier)`.
-- `poll_feedback`: UUID, Poll-/Vote-Fremdschlüssel, Kommentar (1–1.500 Zeichen),
+- `poll_feedback`: UUID, Poll-/Vote-Fremdschlüssel, Kommentar (1-1.500 Zeichen),
   Zeitstempel, Status `new`/`read`/`archived`. Höchstens ein Kommentar je Stimme;
   die gewählte Option ist ausschließlich in der geschützten Admin-Ansicht sichtbar.
 - `retired_slugs`: veröffentlichte und anschließend gelöschte URLs werden nicht
@@ -139,7 +139,7 @@ für eine konsistente Summe von 100 % bei vorhandenen Stimmen.
 - CORS nur Hauptdomain und www. HTTPS, kein Wildcard-Origin, kein Token im
   Client-Bundle. Admin: aktuelle Discord-Mitgliedschaft plus Server-Inhaberschaft
   oder Administrator-Berechtigung; optional engere explizite Benutzerliste.
-- Eingaben mit Größenlimits, 2–8 eindeutigen Optionen, sicheren Links;
+- Eingaben mit Größenlimits, 2-8 eindeutigen Optionen, sicheren Links;
   parametrisierte SQL-Abfragen und Textausgabe statt ungesichertem HTML.
 - `X-Real-IP` wird nur bei ausdrücklich aktiviertem Vertrauen und einer
   Loopback-Verbindung akzeptiert. Der eigene TLS-Proxy muss den Header ersetzen.

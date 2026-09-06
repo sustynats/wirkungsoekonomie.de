@@ -286,7 +286,7 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | alltag-2035 | Alltag 2035 | Register |
 | alltagsladen | Alltagsladen | Register |
 | alltagsrassismus | Alltagsrassismus | Register |
-| amartya-sen | Amartya Sen / Martha Nussbaum – Fähigkeitenansatz | Register |
+| amartya-sen | Amartya Sen / Martha Nussbaum - Fähigkeitenansatz | Register |
 | amathia | Amathia | Register |
 | ambiguitaetsintoleranz | Ambiguitätsintoleranz | Register |
 | america-first | America First | Register |
@@ -315,12 +315,12 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | archetyp | Archetyp | Register |
 | archetypen | Archetypen | Register |
 | architekturprinzipien-und-entscheidungsprotokolle | Architekturprinzipien und Entscheidungsprotokolle | Register |
-| art-11-aeuv-umweltintegrationsprinzip | Art. 11 AEUV – Umweltintegrationsprinzip | Register |
-| art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip | Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip | Register |
-| art-2-euv-werte-der-europaeischen-union | Art. 2 EUV – Werte der Europäischen Union | Register |
+| art-11-aeuv-umweltintegrationsprinzip | Art. 11 AEUV - Umweltintegrationsprinzip | Register |
+| art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip | Art. 191 AEUV - Vorsorge-, Präventions- und Verursacherprinzip | Register |
+| art-2-euv-werte-der-europaeischen-union | Art. 2 EUV - Werte der Europäischen Union | Register |
 | art-20a-gg | Art. 20a GG | Register |
-| art-3-euv-nachhaltige-entwicklung-europas | Art. 3 EUV – nachhaltige Entwicklung Europas | Register |
-| art-37-eu-grundrechtecharta-umweltschutz | Art. 37 EU-Grundrechtecharta – Umweltschutz | Register |
+| art-3-euv-nachhaltige-entwicklung-europas | Art. 3 EUV - nachhaltige Entwicklung Europas | Register |
+| art-37-eu-grundrechtecharta-umweltschutz | Art. 37 EU-Grundrechtecharta - Umweltschutz | Register |
 | artikel-20a-grundgesetz | Artikel 20a Grundgesetz / Art. 20a GG | Register |
 | assurance | Assurance | Register |
 | astroturfing | Astroturfing | Register |
@@ -369,7 +369,7 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | allokation | Allokation | Register |
 | alltagsladen | Alltagsladen | Register |
 | alltagsrassismus | Alltagsrassismus | Register |
-| amartya-sen | Amartya Sen / Martha Nussbaum – Fähigkeitenansatz | Register |
+| amartya-sen | Amartya Sen / Martha Nussbaum - Fähigkeitenansatz | Register |
 | amathia | Amathia | Register |
 | ambiguitaetsintoleranz | Ambiguitätsintoleranz | Register |
 | america-first | America First | Register |
@@ -396,12 +396,12 @@ Eine vollständige Glossar-Detailseite sollte enthalten:
 | arbitrageur | Arbitrageur / Arbitrageunternehmer | Register |
 | archetypen | Archetypen | Register |
 | architekturprinzipien-und-entscheidungsprotokolle | Architekturprinzipien und Entscheidungsprotokolle | Register |
-| art-11-aeuv-umweltintegrationsprinzip | Art. 11 AEUV – Umweltintegrationsprinzip | Register |
-| art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip | Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip | Register |
-| art-2-euv-werte-der-europaeischen-union | Art. 2 EUV – Werte der Europäischen Union | Register |
+| art-11-aeuv-umweltintegrationsprinzip | Art. 11 AEUV - Umweltintegrationsprinzip | Register |
+| art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip | Art. 191 AEUV - Vorsorge-, Präventions- und Verursacherprinzip | Register |
+| art-2-euv-werte-der-europaeischen-union | Art. 2 EUV - Werte der Europäischen Union | Register |
 | art-20a-gg | Art. 20a GG | Register |
-| art-3-euv-nachhaltige-entwicklung-europas | Art. 3 EUV – nachhaltige Entwicklung Europas | Register |
-| art-37-eu-grundrechtecharta-umweltschutz | Art. 37 EU-Grundrechtecharta – Umweltschutz | Register |
+| art-3-euv-nachhaltige-entwicklung-europas | Art. 3 EUV - nachhaltige Entwicklung Europas | Register |
+| art-37-eu-grundrechtecharta-umweltschutz | Art. 37 EU-Grundrechtecharta - Umweltschutz | Register |
 | artikel-20a-grundgesetz | Artikel 20a Grundgesetz / Art. 20a GG | Register |
 | assurance | Assurance | Register |
 | astroturfing | Astroturfing | Register |

@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Ein gutes Praxisprojekt beginnt nicht mit „Ich möchte Klima untersuchen“. Das ist zu groß. Du brauchst einen **konkreten Wirkungsgegenstand**: ein Produkt, eine Entscheidung, ein Gesetz, ein Programm, eine Investition oder eine Institution – mit Quelle, Version, Zeitraum und Systemgrenze. Erst wenn klar ist, *was* du wirklich analysierst, kannst du Problem, Ziel und Wirkung sauber prüfen.
+Ein gutes Praxisprojekt beginnt nicht mit „Ich möchte Klima untersuchen“. Das ist zu groß. Du brauchst einen **konkreten Wirkungsgegenstand**: ein Produkt, eine Entscheidung, ein Gesetz, ein Programm, eine Investition oder eine Institution - mit Quelle, Version, Zeitraum und Systemgrenze. Erst wenn klar ist, *was* du wirklich analysierst, kannst du Problem, Ziel und Wirkung sauber prüfen.
 
 ## Lernziele
 
@@ -105,7 +105,7 @@ Fragen:
 - welche Bevölkerungs-/Nutzergruppe?
 - direkte und indirekte Wirkung?
 
-Die Systemgrenze wird begründet – und später in der Sensitivitätsanalyse geprüft.
+Die Systemgrenze wird begründet - und später in der Sensitivitätsanalyse geprüft.
 
 ## 6. Stakeholder vs. Wirkungsempfänger
 
@@ -246,7 +246,7 @@ Und „die Wirkung eines Gesetzes“ ist noch zu unscharf, wenn wir nicht wissen
 
 Darum bauen wir zuerst einen Project Charter.
 
-Was ist das konkrete Objekt? Welche Primärquelle? Welche Version? Welcher Zeitraum? Wer ist betroffen? Was gehört zum Systemrand – und was ausdrücklich nicht?
+Was ist das konkrete Objekt? Welche Primärquelle? Welche Version? Welcher Zeitraum? Wer ist betroffen? Was gehört zum Systemrand - und was ausdrücklich nicht?
 
 Bei Politik kommt noch Lifecycle dazu.
 
@@ -274,6 +274,6 @@ Für Bundesregelungsvorhaben bilden unter anderem [§§ 43/44 GGO](https://www.v
 
 Führe den allgemeinen Layer `STATE_ASSESSMENT_BENCHMARK`. Für geeignete Bundesregelungsvorhaben ist `STATE_GFA_ENAP_BENCHMARK` dessen gesonderter Fachlayer. Staatlicher Befund und unabhängiges WÖk-Urteil bleiben getrennt; Konvergenz ist ein valides Ergebnis. Öffentliches Eigentum allein belegt keine Regierungsentscheidung: Eigentumsrolle, konkreter Steuerungseinfluss, öffentliches Mandat und politische Flankierung sind getrennt nachzuweisen. Ohne tragfähige Belege bleibt Attribution offen.
 
-Unterscheide fünf Nachweise: **vorgeschrieben – durchgeführt und dokumentiert – fachliche Qualität – beobachtete Veränderung – zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
+Unterscheide fünf Nachweise: **vorgeschrieben - durchgeführt und dokumentiert - fachliche Qualität - beobachtete Veränderung - zurechenbarer Beitrag**. Ein Soll-Prozess beweist keine Durchführung; ein öffentlich nicht auffindbares Dokument beweist keine unterbliebene Prüfung. Fehlende öffentliche eNAP-Dokumentation heißt `NOT_PUBLICLY_ESTABLISHED`, nicht `NOT_ASSESSED`.
 
-Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.–3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.
+Der additive WÖk-Arbeitsgang lautet: Problem Review → Goal Review → A→M→ΔZ→R → Wirkungen 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Material Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernschleife → Nichtkompensation harter Schutzgrenzen. Ob dies einen bestehenden Befund tatsächlich verbessert, muss am konkreten Fall gezeigt werden. Alternativenprüfung, Evaluation und Kausalprüfung sind keine WÖk-Erfindungen.

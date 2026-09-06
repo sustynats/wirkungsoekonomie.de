@@ -1,10 +1,10 @@
-# Release-QA-Checkliste – Wirkungsportal Parlament
+# Release-QA-Checkliste - Wirkungsportal Parlament
 
 **Geltung:** Jeder Produktions-Deploy. Der [Ökosystem-Vertrag](../../docs/ECOSYSTEM_PUBLICATION_AND_RELEASE_STANDARD.md) gilt ergänzend. Kein Punkt wird allein durch HTTP 200 als erfüllt betrachtet.
 
 **Abnahme:** Institut für Wirkungsökonomie.
 
-## P0 – unverzichtbare Release-Gates
+## P0 - unverzichtbare Release-Gates
 
 | Prüfung | Abnahmebedingung | Nachweis |
 | --- | --- | --- |
@@ -14,7 +14,7 @@
 | Fachliche Trennung | Fakt, Wirkungspotenzial, Wirkungsrisiko, Beobachtung und normative Einordnung sind sichtbar getrennt. | Sichtprüfung je Seitentyp. |
 | Faire Positionierung | Keine Seite suggeriert, Politik prüfe Folgen grundsätzlich nicht. Die WÖk wird als verbindende und erweiternde Wirkungsarchitektur neben bestehenden Fach-, Rechts- und Parlamentsverfahren erklärt. | `npm run check:positioning` und Sichtprüfung Startseite, Methodik, Transparenz. |
 | Feststellung vor Bewertung | Zustandsveränderung, Gegenfaktum und Zurechnung sind von der normativen Bewertung getrennt; SDGs werden nicht als Messmethode dargestellt. | Sichtprüfung Methodik, Transparenz und Fallseiten. |
-| Referenzrahmen | SDGs, SDG+ als WÖk-Erweiterung (nicht UN-Kategorie), Mensch – Planet – Demokratie und Recht sind getrennt erklärt. | `npm run check:positioning` und Referenzrahmen-Sichtprüfung. |
+| Referenzrahmen | SDGs, SDG+ als WÖk-Erweiterung (nicht UN-Kategorie), Mensch - Planet - Demokratie und Recht sind getrennt erklärt. | `npm run check:positioning` und Referenzrahmen-Sichtprüfung. |
 | Entscheidungsreife | „wirkungsbezogen noch nicht hinreichend entscheidungsreif“ wird nicht mit rechtlicher oder parlamentarischer Entscheidbarkeit verwechselt. | Komponenten- und Fallseitenprüfung. |
 | Schutz vor Scheingenauigkeit | Keine frei geschätzten Werte, Gewichte, Zurechnungen oder quantitative Wirkungen ohne belastbaren Rechenweg. | Fachprüfung und Berechnungstest. |
 | Nichtkompensation | Relevante Schutzgrenzen sind vor einer Gesamtbetrachtung sichtbar und können nicht weggerechnet werden. | Daten- und Seitentest. |
@@ -23,7 +23,7 @@
 | Barrierefreiheit | Automatischer WCAG-2.2-AA-Baselinecheck ist grün; Fokus, Tastatur, Namen/Rollen/Zustände und Textalternativen sind manuell geprüft. | `npm run check:accessibility` plus manuelle Stichprobe. |
 | Build | Typen, Linting, Tests und Produktions-Build sind erfolgreich. | `npm run typecheck`, `npm run lint`, `npm test`, `npm run build`. |
 
-## P1 – Seiten- und Nutzungstest
+## P1 - Seiten- und Nutzungstest
 
 ### Inhalt und Informationsarchitektur
 
@@ -32,7 +32,7 @@
 - [ ] Jede Fallseite beantwortet klar: Worum geht es? Was wird entschieden? Was soll erreicht werden? Was könnte sich verändern? Was bleibt offen?
 - [ ] Bei noch veränderbaren Vorhaben sind Verbesserungspunkte und Bedingungen sichtbar, ohne eine Wirkung als sicher auszugeben.
 - [ ] Historische Fälle trennen Wissen zum Entscheidungszeitpunkt von späteren Beobachtungen.
-- [ ] Wahlprogramme und Koalitionsvertrag werden als eigene Wirkungsakten dargestellt – nicht als bloße Quellenregister und nicht als Partei-Ranking.
+- [ ] Wahlprogramme und Koalitionsvertrag werden als eigene Wirkungsakten dargestellt - nicht als bloße Quellenregister und nicht als Partei-Ranking.
 - [ ] Profile zeigen ausschließlich amtlich belegte Abstimmungsdaten; keine Personenwertung und keine rekonstruierten Stimmen bei nicht namentlichen Abstimmungen.
 - [ ] Fachanalysen haben eine eindeutige Heimat, eine verständliche Einordnung, alle zugehörigen Visuals und einen geprüften Download.
 - [ ] Jeder Glossarbegriff ist beim ersten Auftreten verständlich oder verlinkt erklärt.
@@ -65,7 +65,7 @@
 - [ ] Namentliche Abstimmungen werden ausschließlich aus amtlichen Daten dargestellt; bei anderen Abstimmungen keine Individualzuordnung.
 - [ ] Bildrechte, Lizenzen, Quellenrechte und Alternativtexte sind je Bild oder Grafik dokumentiert.
 
-## P2 – technische Regression und Produktionsabnahme
+## P2 - technische Regression und Produktionsabnahme
 
 - [ ] Suchindex und Suchfilter enthalten neue öffentliche Seiten und Quellen.
 - [ ] Neue Seiten sind in Navigation, Sitemap, Footer und internen Querverweisen erreichbar.

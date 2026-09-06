@@ -1332,7 +1332,7 @@ Damit entsteht ein vollständiger Zyklus. Auslöser erzeugen Wirkungspotenziale.
 
 Endformel: Wirkung ist die Sprache. Wirkungsforschung ist die Methode. Wirkungswissenschaften sind der Rahmen. Wirkungsökonomie ist die Rückkopplungsordnung.
 
-## Teil II – Ausführliche systemische Vertiefung
+## Teil II - Ausführliche systemische Vertiefung
 
 Dieser zweite Teil erweitert das Dossier um ausführlichere Glossarartikel, eine Disziplinenlandkarte, methodische Standards, Anwendungsfelder, Einwände und eine redaktionelle Kanonisierung. Er ist als Materialpool für Buch, Glossar, Website und Akademie gedacht.
 

@@ -5,9 +5,7 @@
 **Vorlesungscode:** WM-V4  
 **Modul/Abschnitt:** WM  
 **Titel:** Wesentlichkeit & Priorisierung  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v4-wesentlichkeit-priorisierung.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungsmanagement-v4.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungsmanagement-v4.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wesentlichkeit & Priorisierung** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -51,28 +48,28 @@ Keine Organisation kann alles gleichzeitig steuern. **Woran erkennt man, welches
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Priorisieren mit Reverse Merit Order – das schwächste kritische Feld zuerst
+- **Titel:** Priorisieren mit Reverse Merit Order - das schwächste kritische Feld zuerst
 - **Länge:** ~15 Min
-- **Kernaussage in einem Satz:** Wesentlich ist im Wirkungsmanagement zuerst das schwächste kritische Wirkungsfeld – dort entscheidet sich, ob positive Netto-Wirkung überhaupt möglich ist.
+- **Kernaussage in einem Satz:** Wesentlich ist im Wirkungsmanagement zuerst das schwächste kritische Wirkungsfeld - dort entscheidet sich, ob positive Netto-Wirkung überhaupt möglich ist.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Wesentlichkeit neu gedacht.** Klassische Wesentlichkeitsanalysen gewichten nach Relevanz/Einfluss. Die Wirkungsökonomie ergänzt: Ein kritisch schwaches Feld kann nicht durch starke Felder ausgeglichen werden (Nichtkompensation).
+**Abschnitt A - Wesentlichkeit neu gedacht.** Klassische Wesentlichkeitsanalysen gewichten nach Relevanz/Einfluss. Die Wirkungsökonomie ergänzt: Ein kritisch schwaches Feld kann nicht durch starke Felder ausgeglichen werden (Nichtkompensation).
 
-**Abschnitt B – Reverse Merit Order im Management.** Priorisiere dort, wo das schwächste kritische Wirkungsfeld liegt. Ein sehr schlechter Wert an einer roten Linie begrenzt die Gesamtbewertung – also gehört er zuerst adressiert.
+**Abschnitt B - Reverse Merit Order im Management.** Priorisiere dort, wo das schwächste kritische Wirkungsfeld liegt. Ein sehr schlechter Wert an einer roten Linie begrenzt die Gesamtbewertung - also gehört er zuerst adressiert.
 
-**Abschnitt C – Kritische Felder erkennen.** Kritisch sind Felder nahe an Wirkungsgrenzen: Menschenrechte, ökologische Lebensgrundlagen, Rechtsstaatlichkeit. Hier gilt Vorrang vor Optimierung ohnehin guter Felder.
+**Abschnitt C - Kritische Felder erkennen.** Kritisch sind Felder nahe an Wirkungsgrenzen: Menschenrechte, ökologische Lebensgrundlagen, Rechtsstaatlichkeit. Hier gilt Vorrang vor Optimierung ohnehin guter Felder.
 
-**Abschnitt D – Fehler vermeiden.** Nicht: „Wir verbessern, wo es leichtfällt." Sondern: „Wir sichern zuerst, wo es kritisch schwach ist." Das ist der Kern gegen Greenwashing im Management.
+**Abschnitt D - Fehler vermeiden.** Nicht: „Wir verbessern, wo es leichtfällt." Sondern: „Wir sichern zuerst, wo es kritisch schwach ist." Das ist der Kern gegen Greenwashing im Management.
 
-**Abschnitt E – Anschluss.** Priorisierung steuert die folgende Potenzial-/Risikoanalyse (V5) und die Strategie (V8).
+**Abschnitt E - Anschluss.** Priorisierung steuert die folgende Potenzial-/Risikoanalyse (V5) und die Strategie (V8).
 
 ## 4. Skript / Folien (Lernseite)
 
-**Priorisierung ist die eigentliche Steuerungsentscheidung.** Weil Ressourcen begrenzt sind, entscheidet die Reihenfolge über die tatsächliche Netto-Wirkung. Die Wirkungsökonomie priorisiert nicht nach dem größten *Potenzial*, sondern nach dem **schwächsten kritischen Wirkungsfeld** – konsequent aus der **Reverse Merit Order** (Grundlagen V4).
+**Priorisierung ist die eigentliche Steuerungsentscheidung.** Weil Ressourcen begrenzt sind, entscheidet die Reihenfolge über die tatsächliche Netto-Wirkung. Die Wirkungsökonomie priorisiert nicht nach dem größten *Potenzial*, sondern nach dem **schwächsten kritischen Wirkungsfeld** - konsequent aus der **Reverse Merit Order** (Grundlagen V4).
 
-**Wesentlichkeit unter Nichtkompensation.** Ein Feld ist wesentlich, wenn es nahe an einer **Wirkungsgrenze** liegt oder ein kritisches Schutzgut betrifft (Menschenwürde, ökologische Lebensgrundlagen, Rechtsstaatlichkeit). Solche Felder lassen sich **nicht** durch gute Werte anderswo aufwiegen. Deshalb haben sie Vorrang – auch wenn andere Felder „mehr Punkte bringen" würden.
+**Wesentlichkeit unter Nichtkompensation.** Ein Feld ist wesentlich, wenn es nahe an einer **Wirkungsgrenze** liegt oder ein kritisches Schutzgut betrifft (Menschenwürde, ökologische Lebensgrundlagen, Rechtsstaatlichkeit). Solche Felder lassen sich **nicht** durch gute Werte anderswo aufwiegen. Deshalb haben sie Vorrang - auch wenn andere Felder „mehr Punkte bringen" würden.
 
 **Ein einfaches Priorisierungsraster:**
 
@@ -81,18 +78,18 @@ Keine Organisation kann alles gleichzeitig steuern. **Woran erkennt man, welches
 | 1 | Welche Wirkungsfelder berührt die Organisation (aus V2)? |
 | 2 | Welche liegen nahe an einer Wirkungsgrenze / sind kritisch? |
 | 3 | Wo ist der Wert aktuell am schwächsten? |
-| 4 | Dieses Feld zuerst sichern – vor Optimierung starker Felder |
+| 4 | Dieses Feld zuerst sichern - vor Optimierung starker Felder |
 
-**Der Managementfehler, den das verhindert.** Ohne Reverse Merit Order investieren Organisationen dort, wo Fortschritt leicht und sichtbar ist – und lassen kritische Schwachstellen liegen. Genau das ist Greenwashing im Kern: gute Teilwerte verdecken schwere Schäden. Wirkungsmanagement kehrt die Priorität um.
+**Der Managementfehler, den das verhindert.** Ohne Reverse Merit Order investieren Organisationen dort, wo Fortschritt leicht und sichtbar ist - und lassen kritische Schwachstellen liegen. Genau das ist Greenwashing im Kern: gute Teilwerte verdecken schwere Schäden. Wirkungsmanagement kehrt die Priorität um.
 
 ## 5. Glossar der Kernbegriffe
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wesentlichkeit | Bedeutung eines Wirkungsfelds; in der WÖk unter Nichtkompensation | _(noch keine Seite – ggf. anlegen)_ |
+| Wesentlichkeit | Bedeutung eines Wirkungsfelds; in der WÖk unter Nichtkompensation | _(noch keine Seite - ggf. anlegen)_ |
 | Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt die Bewertung | `begriffe/reverse-merit-order` |
 | Nichtkompensationsprinzip | schwere Negativwirkungen nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
-| Wirkungsgrenzen | nicht beliebig verrechenbare Schutzgüter | _(noch keine Seite – Begriffsleitfaden §4)_ |
+| Wirkungsgrenzen | nicht beliebig verrechenbare Schutzgüter | _(noch keine Seite - Begriffsleitfaden §4)_ |
 
 ## 6. Verständnisfragen (Mini-Quiz)
 
@@ -123,18 +120,17 @@ Keine Organisation kann alles gleichzeitig steuern. **Woran erkennt man, welches
 ## 7. Transferaufgabe
 
 Wende das Priorisierungsraster auf deine Organisation an:
-1. Liste 4–6 **Wirkungsfelder**.
+1. Liste 4-6 **Wirkungsfelder**.
 2. Markiere die **kritischen** (nahe an einer Wirkungsgrenze).
-3. Bestimme das **schwächste kritische Feld** – und begründe, warum es Vorrang hat, obwohl andere Felder „mehr bringen" könnten.
+3. Bestimme das **schwächste kritische Feld** - und begründe, warum es Vorrang hat, obwohl andere Felder „mehr bringen" könnten.
 
 ## 8. Praxisbeispiel
 
-**Der attraktive Nebenschauplatz.** Ein Konzern feiert seine Klima-Fortschritte, während in einem Zulieferland gravierende Arbeitsrechtsverletzungen bestehen. Nach Reverse Merit Order ist das Arbeitsrechtsfeld – das schwächste kritische Feld – zuerst zu sichern; die Klima-Optimierung kann die Menschenrechtslücke nicht aufwiegen. (Grundlage: Begriffsleitfaden §4; `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md`.)
+**Der attraktive Nebenschauplatz.** Ein Konzern feiert seine Klima-Fortschritte, während in einem Zulieferland gravierende Arbeitsrechtsverletzungen bestehen. Nach Reverse Merit Order ist das Arbeitsrechtsfeld - das schwächste kritische Feld - zuerst zu sichern; die Klima-Optimierung kann die Menschenrechtslücke nicht aufwiegen. (Grundlage: Begriffsleitfaden §4; `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md`.)
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -302,13 +298,12 @@ Die folgende Runde verdichtet WM-V4 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WM-V4. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §4
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` – Reverse Merit Order
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §4
+- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` - Reverse Merit Order
 - Glossar: `begriffe/reverse-merit-order`, `begriffe/nichtkompensationsprinzip`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -393,14 +388,13 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 | Begriff | Kurzdefinition | Glossar-Seite |
 |---|---|---|
-| Wesentlichkeit | Bedeutung eines Wirkungsfelds; in der WÖk unter Nichtkompensation | _(noch keine Seite – ggf. anlegen)_ |
+| Wesentlichkeit | Bedeutung eines Wirkungsfelds; in der WÖk unter Nichtkompensation | _(noch keine Seite - ggf. anlegen)_ |
 | Reverse Merit Order | schwächstes kritisches Wirkungsfeld begrenzt die Bewertung | `begriffe/reverse-merit-order` |
 | Nichtkompensationsprinzip | schwere Negativwirkungen nicht wegkompensierbar | `begriffe/nichtkompensationsprinzip` |
-| Wirkungsgrenzen | nicht beliebig verrechenbare Schutzgüter | _(noch keine Seite – Begriffsleitfaden §4)_ |
+| Wirkungsgrenzen | nicht beliebig verrechenbare Schutzgüter | _(noch keine Seite - Begriffsleitfaden §4)_ |
 
 ## 7. Tiefenskript-Erweiterung Sprint 8
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -774,8 +768,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungsmanagement-v4-wesentlichkeit-priorisierung.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

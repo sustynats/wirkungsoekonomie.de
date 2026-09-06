@@ -5,9 +5,7 @@
 **Vorlesungscode:** WC-V6  
 **Modul/Abschnitt:** WC  
 **Titel:** Wirkungsmonitoring und Wirkungsdatenräume  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v6-monitoring-wirkungsdatenraeume.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v6.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v6.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Wirkungsmonitoring und Wirkungsdatenräume** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -47,36 +44,36 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 
 ## 1. Einstieg / Wirkungsfrage
 
-Eine einmalige Bewertung veraltet sofort. **Wie wird Wirkung laufend beobachtet und rückkopplungsfähig – ohne in Dauer-Reporting zu ertrinken?**
+Eine einmalige Bewertung veraltet sofort. **Wie wird Wirkung laufend beobachtet und rückkopplungsfähig - ohne in Dauer-Reporting zu ertrinken?**
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Wirkung laufend beobachten – Monitoring und Datenräume
+- **Titel:** Wirkung laufend beobachten - Monitoring und Datenräume
 - **Länge:** ~15 Min
 - **Kernaussage in einem Satz:** Wirkungsmonitoring macht Bewertung dauerhaft und rückkopplungsfähig; Wirkungsdatenräume teilen dafür Daten strukturiert und auditierbar.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Warum Monitoring.** Wirkung verändert sich; eine Momentaufnahme reicht nicht. Monitoring beobachtet KIIs über die Zeit.
+**Abschnitt A - Warum Monitoring.** Wirkung verändert sich; eine Momentaufnahme reicht nicht. Monitoring beobachtet KIIs über die Zeit.
 
-**Abschnitt B – Reporting ≠ Rückkopplung, wieder.** Monitoring ist wertlos, wenn es nur berichtet. Es muss Entscheidungen auslösen.
+**Abschnitt B - Reporting ≠ Rückkopplung, wieder.** Monitoring ist wertlos, wenn es nur berichtet. Es muss Entscheidungen auslösen.
 
-**Abschnitt C – Wirkungsdatenräume.** Strukturierte, geteilte Datenräume (organisationsübergreifend), damit Wirkung entlang von Wertschöpfungsketten nachvollziehbar wird.
+**Abschnitt C - Wirkungsdatenräume.** Strukturierte, geteilte Datenräume (organisationsübergreifend), damit Wirkung entlang von Wertschöpfungsketten nachvollziehbar wird.
 
-**Abschnitt D – Schlank halten.** Wenige aussagekräftige KIIs statt Kennzahlenflut; Fokus auf kritische Felder (V5).
+**Abschnitt D - Schlank halten.** Wenige aussagekräftige KIIs statt Kennzahlenflut; Fokus auf kritische Felder (V5).
 
-**Abschnitt E – Anschluss.** Monitoring speist Investitions-/Einkaufsentscheidungen (V8) und Audit (V9).
+**Abschnitt E - Anschluss.** Monitoring speist Investitions-/Einkaufsentscheidungen (V8) und Audit (V9).
 
 ## 4. Skript / Folien (Lernseite)
 
-**Wirkungsmonitoring macht Bewertung dauerhaft.** Statt einer einmaligen Scorecard beobachtet Monitoring die relevanten **KIIs über die Zeit** – so werden Trends, Verschlechterungen an kritischen Feldern und Wirkung von Maßnahmen sichtbar (Begriffsleitfaden §5). Monitoring ist die laufende Form der Wirkungsbewertung.
+**Wirkungsmonitoring macht Bewertung dauerhaft.** Statt einer einmaligen Scorecard beobachtet Monitoring die relevanten **KIIs über die Zeit** - so werden Trends, Verschlechterungen an kritischen Feldern und Wirkung von Maßnahmen sichtbar (Begriffsleitfaden §5). Monitoring ist die laufende Form der Wirkungsbewertung.
 
-**Ohne Rückkopplung kein Nutzen.** Auch hier gilt streng: **Reporting ≠ Rückkopplung** (Grundlagen V5). Ein Monitoring, das nur Dashboards füllt, erzeugt keine Steuerung. Es muss an Entscheidungsroutinen gekoppelt sein: Verschlechtert sich ein kritisches Feld, folgt eine Maßnahme – nicht nur ein Eintrag.
+**Ohne Rückkopplung kein Nutzen.** Auch hier gilt streng: **Reporting ≠ Rückkopplung** (Grundlagen V5). Ein Monitoring, das nur Dashboards füllt, erzeugt keine Steuerung. Es muss an Entscheidungsroutinen gekoppelt sein: Verschlechtert sich ein kritisches Feld, folgt eine Maßnahme - nicht nur ein Eintrag.
 
-**Wirkungsdatenräume teilen Daten strukturiert.** Wirkung entsteht oft über Organisationsgrenzen (Lieferketten). **Wirkungsdatenräume** ermöglichen den strukturierten, auditierbaren Austausch von Wirkungsdaten zwischen Beteiligten – auf Basis von WÖk-IDs (V3), damit Daten vergleichbar und nachvollziehbar bleiben. So wird Wirkung entlang der Wertschöpfung steuerbar, nicht nur im eigenen Haus.
+**Wirkungsdatenräume teilen Daten strukturiert.** Wirkung entsteht oft über Organisationsgrenzen (Lieferketten). **Wirkungsdatenräume** ermöglichen den strukturierten, auditierbaren Austausch von Wirkungsdaten zwischen Beteiligten - auf Basis von WÖk-IDs (V3), damit Daten vergleichbar und nachvollziehbar bleiben. So wird Wirkung entlang der Wertschöpfung steuerbar, nicht nur im eigenen Haus.
 
-**Schlank statt überladen.** Gutes Monitoring nutzt **wenige, aussagekräftige KIIs** mit Fokus auf kritische Felder – keine Kennzahlenflut. Datensparsamkeit und Aussagekraft schlagen Vollständigkeit. Das hält Monitoring nutzbar und verhindert, dass wichtige Signale im Rauschen untergehen.
+**Schlank statt überladen.** Gutes Monitoring nutzt **wenige, aussagekräftige KIIs** mit Fokus auf kritische Felder - keine Kennzahlenflut. Datensparsamkeit und Aussagekraft schlagen Vollständigkeit. Das hält Monitoring nutzbar und verhindert, dass wichtige Signale im Rauschen untergehen.
 
 ## 5. Glossar der Kernbegriffe
 
@@ -115,16 +112,15 @@ Eine einmalige Bewertung veraltet sofort. **Wie wird Wirkung laufend beobachtet 
 
 ## 7. Transferaufgabe
 
-Definiere ein schlankes **Monitoring-Set** für ein Wirkungsziel: 2–3 KIIs (Fokus kritisches Feld), Beobachtungsrhythmus und **eine Rückkopplungsregel** („Wenn KII X sich verschlechtert, dann …").
+Definiere ein schlankes **Monitoring-Set** für ein Wirkungsziel: 2-3 KIIs (Fokus kritisches Feld), Beobachtungsrhythmus und **eine Rückkopplungsregel** („Wenn KII X sich verschlechtert, dann …").
 
 ## 8. Praxisbeispiel
 
-**Lieferkette im Datenraum.** Mehrere Zulieferer speisen Emissions- und Arbeitsbedingungsdaten über WÖk-IDs in einen gemeinsamen Wirkungsdatenraum. Das Monitoring erkennt früh eine Verschlechterung bei einem kritischen Lieferanten und löst eine Nachverhandlung aus – statt es erst im Jahresbericht zu bemerken.
+**Lieferkette im Datenraum.** Mehrere Zulieferer speisen Emissions- und Arbeitsbedingungsdaten über WÖk-IDs in einen gemeinsamen Wirkungsdatenraum. Das Monitoring erkennt früh eine Verschlechterung bei einem kritischen Lieferanten und löst eine Nachverhandlung aus - statt es erst im Jahresbericht zu bemerken.
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -300,12 +296,11 @@ Die folgende Runde verdichtet WC-V6 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V6. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §5
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §5
 - `docs/grundlagen/Wirkungsoekonomie_Kurzfassung_v1.1.md`
 - Glossar: `begriffe/wirkungsmonitoring`, `begriffe/wirkungsdatenraum`, `begriffe/wirkungsrueckkopplung`
 
@@ -398,7 +393,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -804,8 +798,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v6-monitoring-wirkungsdatenraeume.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

@@ -62,7 +62,7 @@ Gesundheit entsteht nicht allein in Kliniken, Arztpraxen oder Pflegeeinrichtunge
 
 Damit wird Gesundheit zu einem Querschnittsfeld der Wirkungsökonomie. Wohnpolitik ist Gesundheitspolitik, Ernährungspolitik ist Gesundheitspolitik, Arbeitsmarktpolitik ist Gesundheitspolitik, Medien- und Digitalpolitik ist Gesundheitspolitik, wenn digitale Gewalt, Vergleichsdruck, Schlaf, Aufmerksamkeit, Angst oder Einsamkeit betroffen sind.
 
-Der Maßstab bleibt dabei nicht moralische Selbstoptimierung, sondern positive Netto-Wirkung für Mensch, Planet und Demokratie. Krankheit ist kein persönliches Versagen. Bewertet werden Systeme, Anreize, Infrastrukturen, Zugang, Verteilung, Prävention und Rückkopplungen – nicht der Wert einzelner Menschen.
+Der Maßstab bleibt dabei nicht moralische Selbstoptimierung, sondern positive Netto-Wirkung für Mensch, Planet und Demokratie. Krankheit ist kein persönliches Versagen. Bewertet werden Systeme, Anreize, Infrastrukturen, Zugang, Verteilung, Prävention und Rückkopplungen - nicht der Wert einzelner Menschen.
 
 Alte Logik
 

@@ -28,6 +28,8 @@ const scannedPaths = [
 ];
 
 const blockedContentPatterns = [
+  { label: "unreviewed production name", pattern: /\b(?:Claude|ChatGPT)\b/i },
+  { label: "local home or temporary directory", pattern: /(?<![\w/.:])\/(?:home|var\/folders)\/|[A-Z]:[\\/]Users[\\/]/i },
   { label: "local macOS home path", pattern: /\/Users\// },
   { label: "local Linux Hagen path", pattern: /\/home\/hagen\//i },
   { label: "local volume path", pattern: /\/Volumes\/[A-Za-z0-9._ -]+\// },

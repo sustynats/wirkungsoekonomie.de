@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Wenn Produktion ins Ausland verlagert wird, können nationale Kennzahlen besser aussehen, ohne dass die globale Wirkung besser wird. Grenzausgleich kann solche Verzerrungen adressieren – aber nur für klar definierte Gegenstände. Der EU-CBAM ist ein konkretes Rechtsinstrument mit eigenem Scope, keine allgemeine WÖk-Wirkungssteuer.
+Wenn Produktion ins Ausland verlagert wird, können nationale Kennzahlen besser aussehen, ohne dass die globale Wirkung besser wird. Grenzausgleich kann solche Verzerrungen adressieren - aber nur für klar definierte Gegenstände. Der EU-CBAM ist ein konkretes Rechtsinstrument mit eigenem Scope, keine allgemeine WÖk-Wirkungssteuer.
 
 ## Lernziele
 
@@ -76,7 +76,7 @@ Ein Grenzinstrument ist selbst eine Policyoption. Zu prüfen sind:
 
 ## 7. Reality Check
 
-Nach Einführung sind nicht nur Einnahmen oder Zertifikatsmengen relevant. Beobachtet werden sollten unter anderem Handelsströme, Produktionsverlagerung, Emissionsintensität, Preise, Investitionen und Umgehungsreaktionen – ohne aus Korrelation automatisch Attribution zu machen.
+Nach Einführung sind nicht nur Einnahmen oder Zertifikatsmengen relevant. Beobachtet werden sollten unter anderem Handelsströme, Produktionsverlagerung, Emissionsintensität, Preise, Investitionen und Umgehungsreaktionen - ohne aus Korrelation automatisch Attribution zu machen.
 
 ## Begriffsbox
 
@@ -90,10 +90,10 @@ Nach Einführung sind nicht nur Einnahmen oder Zertifikatsmengen relevant. Beoba
 
 ## Typische Fehlinterpretationen
 
-- „Sinkende Inlandemissionen = sinkende globale Wirkung.“ – Nicht zwingend.
-- „CBAM bewertet alle Nachhaltigkeitswirkungen.“ – Falsch.
-- „Jede Regulierung verursacht Carbon Leakage.“ – Nicht belegt.
-- „Importwirkung kann vollständig dem Endkunden zugerechnet werden.“ – Nicht ohne Zurechnungslogik.
+- „Sinkende Inlandemissionen = sinkende globale Wirkung.“ - Nicht zwingend.
+- „CBAM bewertet alle Nachhaltigkeitswirkungen.“ - Falsch.
+- „Jede Regulierung verursacht Carbon Leakage.“ - Nicht belegt.
+- „Importwirkung kann vollständig dem Endkunden zugerechnet werden.“ - Nicht ohne Zurechnungslogik.
 
 ## WÖk-Abgrenzung
 
@@ -115,7 +115,7 @@ Prüfungsfähig sind territorial-vs.-footprint, Carbon Leakage, CBAM-Scope, Zure
 
 ## Sprechertext
 
-Eine Grenze kann Statistiken verändern, aber die Atmosphäre kennt keine Zollstation. Wenn Produktion ins Ausland wandert, kann eine nationale Bilanz besser aussehen und die globale Wirkung trotzdem kaum sinken. Genau hier setzt der europäische CBAM bei bestimmten CO₂-intensiven Importen an. Aber wichtig: CBAM ist ein konkretes EU-Instrument mit eigenem Rechtsrahmen. Die WÖk darf daraus keinen universellen Nachhaltigkeitszoll machen. Sie kann zusätzlich Lieferketten-, Verteilungs- und Resilienzwirkungen prüfen – und muss sauber markieren, wo CBAM endet und die eigene Analyse beginnt.
+Eine Grenze kann Statistiken verändern, aber die Atmosphäre kennt keine Zollstation. Wenn Produktion ins Ausland wandert, kann eine nationale Bilanz besser aussehen und die globale Wirkung trotzdem kaum sinken. Genau hier setzt der europäische CBAM bei bestimmten CO₂-intensiven Importen an. Aber wichtig: CBAM ist ein konkretes EU-Instrument mit eigenem Rechtsrahmen. Die WÖk darf daraus keinen universellen Nachhaltigkeitszoll machen. Sie kann zusätzlich Lieferketten-, Verteilungs- und Resilienzwirkungen prüfen - und muss sauber markieren, wo CBAM endet und die eigene Analyse beginnt.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
@@ -123,6 +123,6 @@ Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versi
 
 ### Aktualisierung zu CBAM · 6. September 2026
 
-Die Übergangsphase 2023–2025 ist beendet: Seit 1. Januar 2026 gilt das definitive CBAM-Regime. Konkrete Einfuhrpflichten sind nach Ware, Schwellen, Ausnahmen und dem geltenden Durchführungsrecht zu prüfen. CBAM adressiert eingebettete CO₂-Emissionen und Carbon Leakage; der WÖk-Modellvorschlag für breitere Importwirkungen darf damit weder gleichgesetzt noch als bereits geltendes Recht dargestellt werden.
+Die Übergangsphase 2023-2025 ist beendet: Seit 1. Januar 2026 gilt das definitive CBAM-Regime. Konkrete Einfuhrpflichten sind nach Ware, Schwellen, Ausnahmen und dem geltenden Durchführungsrecht zu prüfen. CBAM adressiert eingebettete CO₂-Emissionen und Carbon Leakage; der WÖk-Modellvorschlag für breitere Importwirkungen darf damit weder gleichgesetzt noch als bereits geltendes Recht dargestellt werden.
 
 Quelle: [Europäische Kommission, CBAM und definitives Regime](https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en).

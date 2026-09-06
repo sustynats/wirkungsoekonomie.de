@@ -1,4 +1,4 @@
-# Berlin SPD P25 — lossless preparation, exact source-authority stop
+# Berlin SPD P25 - lossless preparation, exact source-authority stop
 
 > Historical stop, now resolved by [#240/5559328151](https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5559328151). The original evidence below remains unchanged. See [the P25 completion audit](berlin-spd-p25-canonical-materialisation-2026-09-06.md) for the supplemental child, strict coverage and current set-wise residual. This document is not the current gate result.
 
@@ -14,7 +14,7 @@
 
 ## Completed preparation, not page terminality
 
-All 12 units SU0291–SU0302 and all 29 original atom identities are preserved. The 18 expressly authorised child spans use the established parent + ordinal + exact-text-hash convention. Every supplied clause hash matches. The deterministic JSON retains all authoritative object text and the assessment/quality layers verbatim.
+All 12 units SU0291-SU0302 and all 29 original atom identities are preserved. The 18 expressly authorised child spans use the established parent + ordinal + exact-text-hash convention. Every supplied clause hash matches. The deterministic JSON retains all authoritative object text and the assessment/quality layers verbatim.
 
 Set-wise prepared inventory:
 
@@ -60,11 +60,11 @@ Evidence already posted in [#240/5559103240](https://github.com/sustynats/wirkun
 - P22/P23/P24/P25 + Berlin residual/combined regressions: 25/25 PASS on Node 22.23.2.
 - Berlin Fach, #241 residual, shared current-Golden validators: PASS with the truthful pre-existing nonzero residual.
 - Same-page query navigation, cross-page scroll, hash traps and button semantics: PASS.
-- P25 terminal admission (`check-berlin-spd-p25.mjs --require-terminal`): **FAIL — SOURCE_AUTHORITY_GAP**, exit 1.
+- P25 terminal admission (`check-berlin-spd-p25.mjs --require-terminal`): **FAIL - SOURCE_AUTHORITY_GAP**, exit 1.
 
-The P25 JSON is deliberately **not admitted** to the public/current Berlin projection or shared Golden descriptors. Those files remain byte-identical. Berlin remains 4/12 programme-terminal with 1,191 physical page review envelopes. SPD retains P25–P66 and the current untouched frontier SU0291. Those envelopes are not a count of effect objects.
+The P25 JSON is deliberately **not admitted** to the public/current Berlin projection or shared Golden descriptors. Those files remain byte-identical. Berlin remains 4/12 programme-terminal with 1,191 physical page review envelopes. SPD retains P25-P66 and the current untouched frontier SU0291. Those envelopes are not a count of effect objects.
 
-Protected SPD P1–P24 projection SHA-256: `eca48473c061f00e17322363bb9b55f82a9bec756ec01f41e613a56c792fbf0f`.
+Protected SPD P1-P24 projection SHA-256: `eca48473c061f00e17322363bb9b55f82a9bec756ec01f41e613a56c792fbf0f`.
 All other Berlin programme projections SHA-256: `aebac94ba5b6fd510c65512fb49f5bc225d3e34e775a7ba55285643a7bd1842b`.
 Berlin current descriptor: `04e03864e35944488001b4af826c56e7881df822a2819871cd3453f49355cd8f`.
 Shared current-readiness descriptor: `73d6d2b90391153c095bd5ec7e9553178d5eb0a5e0f2a72518f4ca727a6252de`.
@@ -77,7 +77,7 @@ The exact-head GitHub workflow must reject terminal admission at the same source
 | --- | --- |
 | Fresh main and immutable source identity | PASS |
 | Lossless supplied Fach / authorised children | PASS for supplied set; exact one-span source gap disclosed |
-| Preserve SPD P1–P24, BSW, MV P1–P55 | PASS; no protected data changed |
+| Preserve SPD P1-P24, BSW, MV P1-P55 | PASS; no protected data changed |
 | P25 source terminal admission | EXTERNAL_BLOCKER: exact WÖk supplement absent |
 | Set-wise current residual proof | PASS; P25 remains open, no subtraction |
 | Full literal exact-head all-green matrix | NOT_COMPLETE; P25 admission must remain red |

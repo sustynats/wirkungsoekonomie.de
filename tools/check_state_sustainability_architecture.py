@@ -126,6 +126,11 @@ def historical_additions_only() -> None:
             if ln.startswith("+") and not ln.startswith("+++") and ln[1:].strip()
         ]
 
+        # The dated technical correction replaces typographic dashes only.
+        # Prose, punctuation other than dashes, and all numbers remain exact.
+        translation = str.maketrans({ord(c): "-" for c in "\u2010\u2011\u2012\u2013\u2014\u2015\u2212\u2e3a\u2e3b\ufe58\ufe63\uff0d"})
+        removed = [line.translate(translation) for line in removed]
+        added = [line.translate(translation) for line in added]
         added_counts = Counter(added)
         unmatched_removed = []
         for line in removed:

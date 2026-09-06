@@ -13,7 +13,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Dieselbe Maßnahme kann an zwei Orten unterschiedlich wirken, obwohl ihr Text gleich ist. Der Grund liegt oft im Kontext: Vertrauen, Infrastruktur, Ressourcen, soziale Normen, Marktstruktur oder Vollzug. WÖk nennt solche Bedingungen Resonanzfaktoren – aber sie müssen konkret und überprüfbar sein.
+Dieselbe Maßnahme kann an zwei Orten unterschiedlich wirken, obwohl ihr Text gleich ist. Der Grund liegt oft im Kontext: Vertrauen, Infrastruktur, Ressourcen, soziale Normen, Marktstruktur oder Vollzug. WÖk nennt solche Bedingungen Resonanzfaktoren - aber sie müssen konkret und überprüfbar sein.
 
 ## Lernziele
 
@@ -67,10 +67,10 @@ Eine Resonanzhypothese braucht eine Erwartung: Wenn Handwerkerknappheit der Engp
 
 ## Typische Fehlinterpretationen
 
-- „Resonanz = Stimmung.“ – Zu eng.
-- „Kultur erklärt es.“ – Ohne Operationalisierung unzureichend.
-- „Durchschnittseffekt gilt für alle.“ – Nicht zwingend.
-- „Kontext macht Kausalität unmöglich.“ – Nein; er macht sie bedingt.
+- „Resonanz = Stimmung.“ - Zu eng.
+- „Kultur erklärt es.“ - Ohne Operationalisierung unzureichend.
+- „Durchschnittseffekt gilt für alle.“ - Nicht zwingend.
+- „Kontext macht Kausalität unmöglich.“ - Nein; er macht sie bedingt.
 
 ## WÖk-Abgrenzung
 
@@ -91,7 +91,7 @@ Prüfungsfähig sind Resonanz/Mechanismus, Heterogenität, Engpass, Interaktion 
 
 ## Sprechertext
 
-Warum funktioniert dieselbe Idee nicht überall gleich? Weil Maßnahmen nicht im Vakuum landen. Sie treffen auf Gebäude, Preise, Vertrauen, Infrastruktur, Zeit, Institutionen und Alternativen. Diese Kontextbedingungen nennen wir Resonanzfaktoren. Aber der Begriff darf keine Nebelmaschine sein. „Die Kultur war schuld“ reicht nicht. Wir müssen sagen, welche konkrete Bedingung den Mechanismus verändert – und woran wir merken würden, dass unsere Erklärung falsch ist.
+Warum funktioniert dieselbe Idee nicht überall gleich? Weil Maßnahmen nicht im Vakuum landen. Sie treffen auf Gebäude, Preise, Vertrauen, Infrastruktur, Zeit, Institutionen und Alternativen. Diese Kontextbedingungen nennen wir Resonanzfaktoren. Aber der Begriff darf keine Nebelmaschine sein. „Die Kultur war schuld“ reicht nicht. Wir müssen sagen, welche konkrete Bedingung den Mechanismus verändert - und woran wir merken würden, dass unsere Erklärung falsch ist.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

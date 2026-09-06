@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v40-wirkungssteuergesetz-als-policy-modell.md curriculum=4.0 sanitized=true -->
-# V40 · Das Wirkungssteuergesetz als WÖk-Policy-Modell – keine bestehende Rechtslage
+# V40 · Das Wirkungssteuergesetz als WÖk-Policy-Modell - keine bestehende Rechtslage
 
 **lecture_id:** `WOEK-G-BASE-040`  
 **display_code:** `V40`  
@@ -44,7 +44,7 @@ Die WÖk-Frage lautet deshalb nicht:
 
 Sondern:
 
-> „Wo bleiben relevante Wirkungen systematisch außerhalb von Preisen/Entscheidungen – und welches Instrument internalisiert sie am robustesten?“
+> „Wo bleiben relevante Wirkungen systematisch außerhalb von Preisen/Entscheidungen - und welches Instrument internalisiert sie am robustesten?“
 
 ## 2. WUStG/WEStG sind Arbeitsnamen
 
@@ -119,7 +119,7 @@ Eine reale Wirkungssteuer müsste unter anderem prüfen:
 - WTO-/Handelsrecht bei Importbezug,
 - Datenschutz/Geschäftsgeheimnisse bei Datenpflichten.
 
-Das ist Fachjuristik – kein Scoreproblem.
+Das ist Fachjuristik - kein Scoreproblem.
 
 ## 7. Verwaltungsfähigkeit
 

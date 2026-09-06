@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v50-wirkungs-bip-modell-und-grenzen.md curriculum=4.0 sanitized=true -->
-# V50 · Wirkungs-BIP als WÖk-Modell – Nutzen, Grenzen und Abgrenzung zum Nationalen Wohlfahrtsindex
+# V50 · Wirkungs-BIP als WÖk-Modell - Nutzen, Grenzen und Abgrenzung zum Nationalen Wohlfahrtsindex
 
 **lecture_id:** `WOEK-G-BASE-050`  
 **display_code:** `V50`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Das Bruttoinlandsprodukt misst wirtschaftliche Wertschöpfung – nicht automatisch Wohlstand oder Wirkung. Aber daraus folgt nicht, dass das BIP „falsch“ ist. Es beantwortet nur eine andere Frage. Das WÖk-**Wirkungs-BIP** ist deshalb kein Ersatz für die Volkswirtschaftliche Gesamtrechnung, sondern ein eigenes ergänzendes Modell: wirtschaftliche Aktivität wird mit ihren relevanten Zustandsänderungen, Schäden, Präventionsleistungen und Resilienzbeiträgen gespiegelt. Wichtig: Deutschland hat bereits etablierte Beyond-GDP-Ansätze wie den **Nationalen Wohlfahrtsindex**; WÖk darf diese Vorgeschichte nicht ausblenden.
+Das Bruttoinlandsprodukt misst wirtschaftliche Wertschöpfung - nicht automatisch Wohlstand oder Wirkung. Aber daraus folgt nicht, dass das BIP „falsch“ ist. Es beantwortet nur eine andere Frage. Das WÖk-**Wirkungs-BIP** ist deshalb kein Ersatz für die Volkswirtschaftliche Gesamtrechnung, sondern ein eigenes ergänzendes Modell: wirtschaftliche Aktivität wird mit ihren relevanten Zustandsänderungen, Schäden, Präventionsleistungen und Resilienzbeiträgen gespiegelt. Wichtig: Deutschland hat bereits etablierte Beyond-GDP-Ansätze wie den **Nationalen Wohlfahrtsindex**; WÖk darf diese Vorgeschichte nicht ausblenden.
 
 ## Lernziele
 
@@ -269,7 +269,7 @@ Nach einer Überschwemmung kann Wiederaufbau das BIP erhöhen. Trotzdem sind wir
 
 Deshalb gibt es schon lange Beyond-GDP-Ansätze.
 
-In Deutschland zum Beispiel den Nationalen Wohlfahrtsindex – NWI.
+In Deutschland zum Beispiel den Nationalen Wohlfahrtsindex - NWI.
 
 Und hier haben wir in der WÖk sogar ein kleines Namensproblem: Wir haben NWI auch als Netto-Wirkungs-Index verwendet.
 
@@ -285,7 +285,7 @@ Und nicht alles gehört in Euro.
 
 Deshalb ist die wahrscheinlich stärkere Architektur nicht eine Wunderzahl, die alles ersetzt.
 
-Sondern: BIP behalten – und daneben robuste Wirkungs-, Wohlstands- und Resilienzindikatoren.
+Sondern: BIP behalten - und daneben robuste Wirkungs-, Wohlstands- und Resilienzindikatoren.
 
 Der Merksatz lautet:
 

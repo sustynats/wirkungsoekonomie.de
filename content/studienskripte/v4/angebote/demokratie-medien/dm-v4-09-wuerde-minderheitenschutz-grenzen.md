@@ -18,7 +18,7 @@
 - Nichtkompensation für begründete harte Grenzen anwenden
 
 ## 20-Sekunden-Erklärung
-Harte Kritik ist demokratisch möglich. Eine Gruppe pauschal als minderwertig oder außerhalb gleicher Würde zu markieren, ist etwas anderes. Solche Grenzen prüfen wir am konkreten Wortlaut, Kontext und Recht – nicht mit Keyword-Listen.
+Harte Kritik ist demokratisch möglich. Eine Gruppe pauschal als minderwertig oder außerhalb gleicher Würde zu markieren, ist etwas anderes. Solche Grenzen prüfen wir am konkreten Wortlaut, Kontext und Recht - nicht mit Keyword-Listen.
 
 ## Einfache Einführung
 Wörter allein reichen selten für eine belastbare Einordnung. Bedeutung entsteht aus Aussage, Zielgruppe, Metapher, Kontext, Wiederholung und Handlungskonsequenz. Deshalb verbietet v4 automatische Triggerwort-Scores.
@@ -67,7 +67,7 @@ Würde/Minderheitenschutz, Kontextanalyse, Recht vs. Redaktion, Nichtkompensatio
 Schutzgrenzen sind stark, gerade deshalb müssen sie präzise und kontextgebunden angewandt werden.
 
 ## Sprechertext
-Wenn wir harte Grenzen schützen wollen, dürfen wir sie nicht beliebig machen. Ein einzelnes Wort ist noch keine vollständige Analyse. Wir brauchen Kontext, Zielgruppe, Funktion und mögliche Folgen – und eine getrennte rechtliche Prüfung.
+Wenn wir harte Grenzen schützen wollen, dürfen wir sie nicht beliebig machen. Ein einzelnes Wort ist noch keine vollständige Analyse. Wir brauchen Kontext, Zielgruppe, Funktion und mögliche Folgen - und eine getrennte rechtliche Prüfung.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst nach Legacy-Reaudit B06; Medien-/Moderationsentscheidungen werden als evidenzgebundene Interventionen ohne Personen-/Intent-Score behandelt.

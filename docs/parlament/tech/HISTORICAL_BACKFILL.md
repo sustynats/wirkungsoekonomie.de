@@ -1,4 +1,4 @@
-# Historical Backfill — laufende Regierungszeit
+# Historical Backfill - laufende Regierungszeit
 
 Der historische WÖk-Backfill beginnt verbindlich am **6. Mai 2025**:
 
@@ -13,7 +13,7 @@ beiden anderen begrenzen die Wirkungsbilanz der laufenden Bundesregierung. Sie
 sind getrennte Datenfelder in `government_terms`, nicht austauschbare Labels.
 
 `HISTORICAL_WOEK_BACKFILL_START` steuert ausschließlich den einmaligen
-`BOOTSTRAP`-Import. Der tägliche Standardimport bleibt ein 7–14-Tage-Radar und
+`BOOTSTRAP`-Import. Der tägliche Standardimport bleibt ein 7-14-Tage-Radar und
 zieht nicht jedes Mal die gesamte Regierungszeit erneut.
 
 ## Vollständiger, fortsetzbarer Import
@@ -65,6 +65,6 @@ Calculation Engine rechnet anschließend ausschließlich mit dokumentierten,
 typisierten und freigegebenen Eingaben. Fehlende Werte bleiben `DATA_GAP`.
 
 Die öffentliche Überschrift lautet **„Wirkungsbilanz der laufenden
-Regierungszeit – seit 6. Mai 2025“**. Sie aggregiert keine Regierungspunktzahl;
+Regierungszeit - seit 6. Mai 2025“**. Sie aggregiert keine Regierungspunktzahl;
 zulässig sind nur nachvollziehbare Muster über freigegebene Einzelfälle, etwa
 beobachtbare Wirkpfade oder Vollzugsengpässe.

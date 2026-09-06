@@ -15,7 +15,7 @@ Ebenen:
 Ein Landesportal kann die SDGs deshalb nicht nur mit allgemeinen Kacheln
 zeigen. Es braucht zusätzlich die vom jeweiligen Land abgeleiteten Ziele und
 Indikatoren als versionierte Daten. Für Sachsen-Anhalt ist die führende Quelle
-die *Nachhaltigkeitsstrategie des Landes Sachsen-Anhalt – Neuauflage 2022*.
+die *Nachhaltigkeitsstrategie des Landes Sachsen-Anhalt - Neuauflage 2022*.
 
 Die Quelle erklärt 28 Nachhaltigkeitsziele, die durch das Land beeinflussbar
 sind. Diese Ziele sind eine **versionierte Landesstrategie**, nicht Teil der

@@ -18,14 +18,14 @@
 - Kontext, Wiederholung und Wirkpfad dokumentieren
 
 ## 20-Sekunden-Erklärung
-Ein Muster kann erkennbar sein, ohne dass wir wissen, warum jemand es verwendet. Deshalb analysieren wir Behauptungsballung, Ausweich-Gegenfrage, insinuierende Frage oder pauschales Etikett als Funktion im konkreten Gespräch – nicht als Diagnose der Person.
+Ein Muster kann erkennbar sein, ohne dass wir wissen, warum jemand es verwendet. Deshalb analysieren wir Behauptungsballung, Ausweich-Gegenfrage, insinuierende Frage oder pauschales Etikett als Funktion im konkreten Gespräch - nicht als Diagnose der Person.
 
 ## Einfache Einführung
 Funktionsanalyse ist stärker als Motive zu erraten. Sie fragt: Was passiert im Gespräch, welche Prüfung wird erschwert oder erleichtert und welches Wirkungspotenzial entsteht? Absicht bleibt eine eigene Evidenzfrage.
 
 ## Fachliche Vertiefung
 1. Musterbegriffe sind Heuristiken und dürfen nicht zu automatischen Keyword-Labels werden.
-2. Eine insinuierende Frage kann eine unbelegte Prämisse transportieren. Die passende Reaktion ist, diese Prämisse zu prüfen – nicht den Fragenden psychologisch zu bewerten.
+2. Eine insinuierende Frage kann eine unbelegte Prämisse transportieren. Die passende Reaktion ist, diese Prämisse zu prüfen - nicht den Fragenden psychologisch zu bewerten.
 3. Misinformation bezeichnet falsche/irreführende Information ohne zwingend nachgewiesene Täuschungsabsicht; Desinformation verlangt je Definitionsrahmen Intent/Koordination.
 4. Wiederholung, Reichweite und Plattformkontext können Wirkungsrisiken verändern, ersetzen aber keine Outcome-Evidenz.
 
@@ -64,10 +64,10 @@ Markiere in einem Interview zwei Muster und formuliere jeweils eine objektbezoge
 Funktionsanalyse, Intent-Guard, Misinformation/Desinformation, keine Personenklassifikation.
 
 ## Zusammenfassung
-Muster helfen beim Prüfen – nicht beim Etikettieren von Menschen.
+Muster helfen beim Prüfen - nicht beim Etikettieren von Menschen.
 
 ## Sprechertext
-Wenn du ein rhetorisches Muster erkennst, hast du eine gute Frage gewonnen – keine Diagnose. Was macht dieses Muster mit der Prüfbarkeit des Gesprächs? Genau dort setzt professionelle Moderation an.
+Wenn du ein rhetorisches Muster erkennst, hast du eine gute Frage gewonnen - keine Diagnose. Was macht dieses Muster mit der Prüfbarkeit des Gesprächs? Genau dort setzt professionelle Moderation an.
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst nach Legacy-Reaudit B06; Medien-/Moderationsentscheidungen werden als evidenzgebundene Interventionen ohne Personen-/Intent-Score behandelt.

@@ -68,10 +68,10 @@ Widersprechen sich Quellen, wird nicht still eine ausgewählt. Unterschiede in D
 
 ## Typische Fehlinterpretationen
 
-- „Quelle vorhanden = Claim bewiesen.“ – Nur wenn Quelle genau diesen Claim trägt.
-- „Nicht öffentlich gefunden = existiert nicht.“ – Falsch.
-- „Amtlich = kausal bewiesen.“ – Falsch.
-- „Eine spätere Fassung darf den alten Stand ersetzen.“ – Nicht ohne Versionierung.
+- „Quelle vorhanden = Claim bewiesen.“ - Nur wenn Quelle genau diesen Claim trägt.
+- „Nicht öffentlich gefunden = existiert nicht.“ - Falsch.
+- „Amtlich = kausal bewiesen.“ - Falsch.
+- „Eine spätere Fassung darf den alten Stand ersetzen.“ - Nicht ohne Versionierung.
 
 ## WÖk-Abgrenzung
 
@@ -93,7 +93,7 @@ Prüfungsfähig sind Claim-Typen, Beweislast, Provenienz, Version/Freshness und 
 
 ## Sprechertext
 
-Manchmal kippt eine Analyse durch ein einziges Verb. „Die Maßnahme wirkt“ klingt viel stärker als „die Maßnahme hat ein plausibles Wirkungspotenzial“. Darum behandeln wir Sprache wie ein Messinstrument. Ein Gesetz kann beweisen, was beschlossen wurde. Eine Statistik zeigt, was gemessen wurde. Eine Evaluation kann Kausalität stützen. Und wenn etwas öffentlich nicht auffindbar ist, sagen wir genau das – nicht mehr. Quellenklarheit ist keine Fußnote. Sie ist Teil der Methode.
+Manchmal kippt eine Analyse durch ein einziges Verb. „Die Maßnahme wirkt“ klingt viel stärker als „die Maßnahme hat ein plausibles Wirkungspotenzial“. Darum behandeln wir Sprache wie ein Messinstrument. Ein Gesetz kann beweisen, was beschlossen wurde. Eine Statistik zeigt, was gemessen wurde. Eine Evaluation kann Kausalität stützen. Und wenn etwas öffentlich nicht auffindbar ist, sagen wir genau das - nicht mehr. Quellenklarheit ist keine Fußnote. Sie ist Teil der Methode.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

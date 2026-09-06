@@ -1,4 +1,4 @@
-# Betriebsmonitor und wachsende Quellenpakete – 6. September 2026
+# Betriebsmonitor und wachsende Quellenpakete - 6. September 2026
 
 ## Bestätigte Ursachen
 

@@ -98,10 +98,10 @@ Die Wirkungsfrage und die Werberechtsfrage sind getrennt, aber beide relevant.
 
 ## Typische Fehlinterpretationen
 
-- Reichweite = Wirkung. – Nein.
-- Zielbezug = Outcome. – Nein.
-- „Plausibler Beitrag“ ist schwache Kommunikation. – Nein, wenn er dem Evidenzstand entspricht.
-- Wirkungsanalyse von Sprache = Absichtszuschreibung. – Nein.
+- Reichweite = Wirkung. - Nein.
+- Zielbezug = Outcome. - Nein.
+- „Plausibler Beitrag“ ist schwache Kommunikation. - Nein, wenn er dem Evidenzstand entspricht.
+- Wirkungsanalyse von Sprache = Absichtszuschreibung. - Nein.
 
 ## WÖk-Abgrenzung
 
@@ -129,7 +129,7 @@ Zehntausend erreichte Menschen sind zunächst Reichweite. Ein verändertes Verha
 
 Deshalb prüfen wir Claims wie eine kleine Beweiskette. Quelle, Datenstatus, Scope, Zeitraum, Gegenfaktum, Attribution, Unsicherheit.
 
-Das macht Kommunikation nicht kleiner. Es macht sie belastbarer. Und es schützt vor Impact-Washing – also davor, aus einem Output oder Zielbezug eine Wirkung zu machen, die wir noch gar nicht gezeigt haben.
+Das macht Kommunikation nicht kleiner. Es macht sie belastbarer. Und es schützt vor Impact-Washing - also davor, aus einem Output oder Zielbezug eine Wirkung zu machen, die wir noch gar nicht gezeigt haben.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

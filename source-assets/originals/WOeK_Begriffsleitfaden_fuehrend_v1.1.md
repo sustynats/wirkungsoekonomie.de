@@ -5,7 +5,7 @@
 **Status:** Führendes Referenzdokument für künftige Website-, Akademie-, Blog-, Buch- und Projektinhalte
 **Geltung:** Dieses Dokument ist für künftigen Content maßgeblich. Ältere Projektdateien können frühere, weniger präzise Begriffsverwendungen enthalten. Im Zweifel gilt dieser Leitfaden.
 
-**Changelog 1.1:** Nachhaltigkeit ist als langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie präzisiert. Resilienz, Systemresilienz und Wirkungsresilienz erhalten eine gemeinsame Systemfrage, Rückstell- und Regenerationsmechanismen, die Walker-Dimensionen sowie die Abgrenzung von Regimeresilienz. Version 1.0 bleibt als zitierfähige historische Fassung erhalten.
+**Changelog 1.1:** Nachhaltigkeit ist als langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie präzisiert. Resilienz, Systemresilienz und Wirkungsresilienz erhalten eine gemeinsame Systemfrage, Rückstell- und Regenerationsmechanismen, die Walker-Dimensionen sowie die Abgrenzung von Regimeresilienz. Version 1.0 bleibt als zitierfähige historische Fassung erhalten.
 
 ---
 
@@ -170,9 +170,9 @@ Diese Begriffe sollen künftig erkennbar mit der Wirkungsökonomie verbunden wer
 
 ### 6.4 Nachhaltigkeit, Resilienz, Systemresilienz und Wirkungsresilienz
 
-**Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie.** Sie ist kein Zusatzprogramm, kein bloßes Zielbild und kein Abfallprodukt. Nachhaltigkeit bezeichnet die Fähigkeit dieses Systems, Störungen innerhalb tragfähiger Grenzen aufzunehmen, lebensnotwendige und demokratische Grundfunktionen durch stabilisierende, korrektive und regenerative Rückkopplungen zu erhalten oder wiederherzustellen, ausreichenden Abstand zu kritischen Schwellen zu bewahren, Einflüsse anderer Systemebenen zu verarbeiten, aus Belastungen zu lernen und sich dort zu transformieren, wo bestehende Strukturen keine zukunftsfähige positive Netto-Wirkung mehr ermöglichen – ohne Schäden auf andere Menschen, Regionen, Ökosysteme oder kommende Generationen zu verlagern.
+**Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie.** Sie ist kein Zusatzprogramm, kein bloßes Zielbild und kein Abfallprodukt. Nachhaltigkeit bezeichnet die Fähigkeit dieses Systems, Störungen innerhalb tragfähiger Grenzen aufzunehmen, lebensnotwendige und demokratische Grundfunktionen durch stabilisierende, korrektive und regenerative Rückkopplungen zu erhalten oder wiederherzustellen, ausreichenden Abstand zu kritischen Schwellen zu bewahren, Einflüsse anderer Systemebenen zu verarbeiten, aus Belastungen zu lernen und sich dort zu transformieren, wo bestehende Strukturen keine zukunftsfähige positive Netto-Wirkung mehr ermöglichen - ohne Schäden auf andere Menschen, Regionen, Ökosysteme oder kommende Generationen zu verlagern.
 
-**Resilienz** ist zunächst beschreibend und wertneutral. Sie bezeichnet die Fähigkeit eines klar abgegrenzten Systems, Störungen zu verarbeiten, wesentliche Funktionen zu erhalten oder wiederherzustellen und – je nach Begriffsweite – Anpassungs-, Lern- und Transformationsfähigkeit zu bewahren. Jede Anwendung beantwortet ausdrücklich: **Resilienz wovon, gegenüber welcher Störung, für wen und zur Erhaltung welcher Funktionen?** Nicht jede Resilienz ist gut: Ein autoritärer oder faschistischer Machtapparat kann regimeresilient sein und zugleich Menschenwürde, Wahrheit, Rechtsstaatlichkeit und demokratische Korrekturfähigkeit zerstören. Regimeresilienz ist keine Nachhaltigkeit.
+**Resilienz** ist zunächst beschreibend und wertneutral. Sie bezeichnet die Fähigkeit eines klar abgegrenzten Systems, Störungen zu verarbeiten, wesentliche Funktionen zu erhalten oder wiederherzustellen und - je nach Begriffsweite - Anpassungs-, Lern- und Transformationsfähigkeit zu bewahren. Jede Anwendung beantwortet ausdrücklich: **Resilienz wovon, gegenüber welcher Störung, für wen und zur Erhaltung welcher Funktionen?** Nicht jede Resilienz ist gut: Ein autoritärer oder faschistischer Machtapparat kann regimeresilient sein und zugleich Menschenwürde, Wahrheit, Rechtsstaatlichkeit und demokratische Korrekturfähigkeit zerstören. Regimeresilienz ist keine Nachhaltigkeit.
 
 **Systemresilienz** bezeichnet diese Fähigkeit auf Ebene eines gekoppelten Systems. Systemarchitektur und Systemresilienz sind nicht gleichzusetzen: Systemarchitektur beschreibt Regeln, Daten, Institutionen, Rückkopplungen und Strukturen; Systemresilienz beschreibt das dynamische Verhalten dieser Architektur unter Belastung. Nachhaltigkeit bezeichnet ihre langfristig tragfähige Fähigkeit im MPD-Referenzrahmen.
 
@@ -634,7 +634,7 @@ Vor Veröffentlichung neuer Inhalte prüfen:
 11. Wird SDG+ transparent als WÖk-Erweiterung benannt?
 12. Sind Begriffe wie Wirkungsblindheit, Wirkungswahrheit und Wirkungsrückkopplung korrekt verwendet?
 13. Ist bei Resilienz die Systemgrenze, Störung, Betroffenheit und zu erhaltende Funktion benannt?
-14. Werden Rückstellung, Wiederherstellung, Regeneration, Lernen und Transformation sichtbar – und werden negative Rückkopplungen nicht mit negativer Wirkung verwechselt?
+14. Werden Rückstellung, Wiederherstellung, Regeneration, Lernen und Transformation sichtbar - und werden negative Rückkopplungen nicht mit negativer Wirkung verwechselt?
 15. Wird Regimeresilienz von Nachhaltigkeit abgegrenzt?
 
 ---
@@ -662,7 +662,7 @@ Diese Kurzdefinitionen sind für Hover, Suche, Karten und kurze Website-Texte zu
 - **Wirkungspfad:** plausibler Weg, wie Wirkung entstehen kann.
 - **Wirkungsnetz:** Darstellung vernetzter Wirkungen, Rückkopplungen und Resonanzräume.
 - **Wirkungsradar:** Spinnennetzdiagramm zur Ausprägung von Wirkungsfeldern oder Wirkungspotenzialen.
-- **Nachhaltigkeit:** langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie.
+- **Nachhaltigkeit:** langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie.
 - **Resilienz:** wertneutrale Fähigkeit eines klar abgegrenzten Systems, Störungen zu verarbeiten und wesentliche Funktionen zu erhalten oder wiederherzustellen.
 - **Systemresilienz:** dynamische Fähigkeit eines gekoppelten Systems, unter Belastung innerhalb tragfähiger Grenzen funktions- und lernfähig zu bleiben.
 - **Wirkungsresilienz:** lernfähige, normativ an Mensch, Planet und Demokratie gebundene Systemresilienz ohne Externalisierung von Schäden.

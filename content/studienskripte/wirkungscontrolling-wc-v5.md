@@ -5,9 +5,7 @@
 **Vorlesungscode:** WC-V5  
 **Modul/Abschnitt:** WC  
 **Titel:** Reverse Merit Order und Nichtkompensation (operativ)  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v5-reverse-merit-order-operativ.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/wirkungscontrolling-wc-v5.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/wirkungscontrolling-wc-v5.docx`  
+**Status:** Studienskript V1.
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
 
 ## Lernziele
@@ -29,7 +27,6 @@ Die Leitfrage lautet:
 
 > Welche tatsächlichen Zustandsveränderungen werden durch **Reverse Merit Order und Nichtkompensation (operativ)** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ## 2. Kernaussage
 
@@ -51,22 +48,22 @@ In den Grundlagen war Reverse Merit Order ein Prinzip. **Jetzt wird es operativ:
 
 ## 2. Video-/Audio-Vorlesung
 
-- **Titel:** Nichtkompensation in Zahlen – Reverse Merit Order operativ
+- **Titel:** Nichtkompensation in Zahlen - Reverse Merit Order operativ
 - **Länge:** ~15 Min
-- **Kernaussage in einem Satz:** Die Reverse Merit Order wird in der Verdichtung (FinalScore/NWI) so umgesetzt, dass das schwächste kritische Wirkungsfeld die Gesamtbewertung begrenzt – nicht der Durchschnitt.
+- **Kernaussage in einem Satz:** Die Reverse Merit Order wird in der Verdichtung (FinalScore/NWI) so umgesetzt, dass das schwächste kritische Wirkungsfeld die Gesamtbewertung begrenzt - nicht der Durchschnitt.
 - **Medienquelle:** [Platzhalter]
 
 ## 3. Transkript (Gerüst)
 
-**Abschnitt A – Wiederholung mit operativem Fokus.** Reverse Merit Order: schwächstes kritisches Feld begrenzt. Jetzt geht es um die Rechenlogik.
+**Abschnitt A - Wiederholung mit operativem Fokus.** Reverse Merit Order: schwächstes kritisches Feld begrenzt. Jetzt geht es um die Rechenlogik.
 
-**Abschnitt B – Warum kein Durchschnitt.** Ein Durchschnitt würde Kompensation erlauben. Die Verdichtung muss stattdessen das Minimum kritischer Felder respektieren.
+**Abschnitt B - Warum kein Durchschnitt.** Ein Durchschnitt würde Kompensation erlauben. Die Verdichtung muss stattdessen das Minimum kritischer Felder respektieren.
 
-**Abschnitt C – Kritische vs. nicht-kritische Felder.** Nur kritische Felder (nahe Wirkungsgrenzen) begrenzen hart; leichte Felder sind abwägbar.
+**Abschnitt C - Kritische vs. nicht-kritische Felder.** Nur kritische Felder (nahe Wirkungsgrenzen) begrenzen hart; leichte Felder sind abwägbar.
 
-**Abschnitt D – FinalScore/NWI unter Schutzlogik.** FinalScore verdichtet unter Nichtkompensation; NWI bildet die operative geprüfte Netto-Wirkung ab.
+**Abschnitt D - FinalScore/NWI unter Schutzlogik.** FinalScore verdichtet unter Nichtkompensation; NWI bildet die operative geprüfte Netto-Wirkung ab.
 
-**Abschnitt E – Fallen.** Aggregations-Tricks, die Kompensation durch die Hintertür einführen, sind zu vermeiden.
+**Abschnitt E - Fallen.** Aggregations-Tricks, die Kompensation durch die Hintertür einführen, sind zu vermeiden.
 
 ## 4. Skript / Folien (Lernseite)
 
@@ -74,9 +71,9 @@ In den Grundlagen war Reverse Merit Order ein Prinzip. **Jetzt wird es operativ:
 
 **Kritisch vs. nicht-kritisch trennen.** Nicht jedes schwache Feld begrenzt hart. Entscheidend sind **kritische Felder** nahe an **Wirkungsgrenzen** (Menschenrechte, ökologische Lebensgrundlagen, Rechtsstaatlichkeit). Ein kritisch schwaches Feld zieht den FinalScore nach unten und ist nicht durch starke andere Felder aufzuwiegen. Leichte, nicht-kritische Schwächen bleiben abwägbar und dokumentierbar.
 
-**FinalScore und NWI im Zusammenspiel.** Der **FinalScore** verdichtet die Scorecard **unter Schutzlogik**. Der **NWI (Netto-Wirkungs-Index)** bildet daraus die operative, geprüfte Netto-Wirkung ab – steuerbar und vergleichbar. Beide bleiben der Nichtkompensation unterworfen: Kein Kennzahlentrick hebt eine rote Linie auf.
+**FinalScore und NWI im Zusammenspiel.** Der **FinalScore** verdichtet die Scorecard **unter Schutzlogik**. Der **NWI (Netto-Wirkungs-Index)** bildet daraus die operative, geprüfte Netto-Wirkung ab - steuerbar und vergleichbar. Beide bleiben der Nichtkompensation unterworfen: Kein Kennzahlentrick hebt eine rote Linie auf.
 
-**Typische Aggregations-Fallen.** Kompensation schleicht sich oft durch die Hintertür ein: gewichtete Durchschnitte, „Ausgleich" über viele kleine Pluspunkte, selektive Scope-Grenzen. Wirkungscontrolling erkennt und verhindert diese Muster – das ist der praktische Kern des Antigreenwashings.
+**Typische Aggregations-Fallen.** Kompensation schleicht sich oft durch die Hintertür ein: gewichtete Durchschnitte, „Ausgleich" über viele kleine Pluspunkte, selektive Scope-Grenzen. Wirkungscontrolling erkennt und verhindert diese Muster - das ist der praktische Kern des Antigreenwashings.
 
 ## 5. Glossar der Kernbegriffe
 
@@ -110,7 +107,7 @@ In den Grundlagen war Reverse Merit Order ein Prinzip. **Jetzt wird es operativ:
    - ✅ **Richtig: B**
 
 6. **Sind alle schwachen Felder gleich zu behandeln?**
-   - A) Ja  B) Nein – nur kritische begrenzen hart, leichte sind abwägbar  C) Alle verboten  D) Alle erlaubt
+   - A) Ja  B) Nein - nur kritische begrenzen hart, leichte sind abwägbar  C) Alle verboten  D) Alle erlaubt
    - ✅ **Richtig: B**
 
 ## 7. Transferaufgabe
@@ -119,12 +116,11 @@ Nimm deine Scorecard aus V4. Bestimme das **schwächste kritische Feld** und bes
 
 ## 8. Praxisbeispiel
 
-**Der geschönte Gesamtwert.** Ein Bericht bildet einen gewichteten Durchschnitt über 20 Indikatoren; ein gravierender Menschenrechtsverstoß verschwindet im Mittel. Wirkungscontrolling ersetzt die Durchschnittslogik durch Reverse Merit Order: Das kritische Feld begrenzt den FinalScore sichtbar – die Schönung fällt auf. (Grundlage: T-SROI-Whitepaper §3.11; Begriffsleitfaden §4.)
+**Der geschönte Gesamtwert.** Ein Bericht bildet einen gewichteten Durchschnitt über 20 Indikatoren; ein gravierender Menschenrechtsverstoß verschwindet im Mittel. Wirkungscontrolling ersetzt die Durchschnittslogik durch Reverse Merit Order: Das kritische Feld begrenzt den FinalScore sichtbar - die Schönung fällt auf. (Grundlage: T-SROI-Whitepaper §3.11; Begriffsleitfaden §4.)
 
 
 ## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
 
-Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
 
 ### Finaler Leseauftrag
 
@@ -276,13 +272,12 @@ Die folgende Runde verdichtet WC-V5 nicht durch neue Schlagworte, sondern durch 
 
 ### V1-Abschlussnotiz
 
-Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V5. Offen bleibt nicht der fachliche Kern des Skripts, sondern der naechste Produktionsschritt: Claude setzt daraus die CI/CD-konforme Reader- und PDF-Fassung, prueft Satz, Umbrueche, Medienintegration und Lektorat und markiert erst danach die veroeffentlichte Fassung als freigegeben.
 
 
 ## 9. Quellen / Vertiefung
 
-- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` – §3.11 Reverse Merit Order
-- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` – §4
+- `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` - §3.11 Reverse Merit Order
+- `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.md` - §4
 - Glossar: `begriffe/reverse-merit-order`, `begriffe/nichtkompensationsprinzip`, `begriffe/finalscore`
 
 ## 4. Wirkungsökonomische Vertiefung
@@ -360,7 +355,7 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
    - ✅ **Richtig: B**
 
 6. **Sind alle schwachen Felder gleich zu behandeln?**
-   - A) Ja  B) Nein – nur kritische begrenzen hart, leichte sind abwägbar  C) Alle verboten  D) Alle erlaubt
+   - A) Ja  B) Nein - nur kritische begrenzen hart, leichte sind abwägbar  C) Alle verboten  D) Alle erlaubt
    - ✅ **Richtig: B**
 
 ## 6. Glossar der Kernbegriffe
@@ -374,7 +369,6 @@ source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
 
 ## 7. Tiefenskript-Erweiterung Sprint 9
 
-**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
 
 ### 7.1 Leitthese
 
@@ -1092,8 +1086,6 @@ Für den Fragenpool sind besonders geeignet:
 - `woek-akademie-app/docs/lehrgaenge/wirkungscontrolling-v5-reverse-merit-order-operativ.md` - unmittelbarer Akademie-Quelltext dieser V1-Fassung.
 - `assets/pdf/die-neue-ordnung-des-wohlstands.pdf` und `buch.html` - aktuelles Grundlagenwerk.
 - Website-Korpus: Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek und Journal.
-- `docs/CODEX-HANDOFF-studienskripte.md` - Produktionsstandard.
-- `docs/CODEX-HANDOFF-pruefungen.md` - geschützte Prüfungs- und Antwortlogik.
 
 ### Externe Quellen fuer die V1-Fassung
 

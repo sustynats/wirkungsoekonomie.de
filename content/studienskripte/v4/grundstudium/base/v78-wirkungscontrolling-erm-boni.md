@@ -1,5 +1,5 @@
 <!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/lectures/base/v78-wirkungscontrolling-erm-boni.md curriculum=4.0 sanitized=true -->
-# V78 · Wirkungscontrolling, ERM und Boni – Steuerung ohne KPI-Gaming
+# V78 · Wirkungscontrolling, ERM und Boni - Steuerung ohne KPI-Gaming
 
 **lecture_id:** `WOEK-G-BASE-078`  
 **display_code:** `V78`  
@@ -12,7 +12,7 @@
 
 ## 20-Sekunden-Einstieg
 
-Controlling fragt traditionell: Erreichen wir Ziele, Budgets und Kennzahlen? Enterprise Risk Management fragt: Welche Risiken gefährden unsere Ziele? Wirkungscontrolling ergänzt: **Welche realen Zustände verändern unsere Entscheidungen – positiv und negativ?** Wenn Boni daran gekoppelt werden, wird es sensibel: Menschen optimieren Kennzahlen. Deshalb braucht ein gutes System wenige relevante Outcome-/Boundary-Indikatoren, klare Verantwortlichkeit, Team-/Systemlogik und Anti-Gaming.
+Controlling fragt traditionell: Erreichen wir Ziele, Budgets und Kennzahlen? Enterprise Risk Management fragt: Welche Risiken gefährden unsere Ziele? Wirkungscontrolling ergänzt: **Welche realen Zustände verändern unsere Entscheidungen - positiv und negativ?** Wenn Boni daran gekoppelt werden, wird es sensibel: Menschen optimieren Kennzahlen. Deshalb braucht ein gutes System wenige relevante Outcome-/Boundary-Indikatoren, klare Verantwortlichkeit, Team-/Systemlogik und Anti-Gaming.
 
 ## Lernziele
 
@@ -221,13 +221,13 @@ Besonders vorsichtig müssen wir bei Boni sein.
 
 Sobald Geld an einer Kennzahl hängt, wird sie optimiert.
 
-Wenn wir „weniger gemeldete Unfälle“ belohnen, bekommen wir vielleicht weniger Meldungen – nicht weniger Unfälle.
+Wenn wir „weniger gemeldete Unfälle“ belohnen, bekommen wir vielleicht weniger Meldungen - nicht weniger Unfälle.
 
 Darum brauchen wir mehrere Signale, Attribution, längere Zeiträume und Anti-Gaming.
 
 Der Merksatz lautet:
 
-**Wirkungscontrolling misst nicht nur, ob wir Ziele melden. Es prüft, ob Entscheidungen reale Zustände verändern – und ob unsere Kennzahlen selbst neue Fehlanreize erzeugen.**
+**Wirkungscontrolling misst nicht nur, ob wir Ziele melden. Es prüft, ob Entscheidungen reale Zustände verändern - und ob unsere Kennzahlen selbst neue Fehlanreize erzeugen.**
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 

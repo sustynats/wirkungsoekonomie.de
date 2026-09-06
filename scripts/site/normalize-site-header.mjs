@@ -3,6 +3,8 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
+// Optional prefixes let partial content builds use the shared navigation rules.
+const prefixes = process.argv.slice(2).filter(arg => arg.startsWith("--prefix=")).map(arg => arg.slice(9));
 const CSS_VERSION = "20260628-radar-toc";
 const navigation = JSON.parse(fs.readFileSync(path.join(ROOT, "assets/data/navigation.json"), "utf8"));
 
@@ -121,6 +123,7 @@ function headerFiles() {
 
   return output
     .split("\n")
+    .filter((file) => !prefixes.length || prefixes.some(prefix => file.startsWith(prefix)))
     .map((file) => path.join(ROOT, file))
     .filter((file) => !path.relative(ROOT, file).replace(/\\/g, "/").startsWith("templates/"))
     .filter((file) => fs.existsSync(file))

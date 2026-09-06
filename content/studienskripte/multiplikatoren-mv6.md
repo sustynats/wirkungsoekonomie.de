@@ -3,7 +3,7 @@
 **Track / Kurscode:** Multiplikator:innen für Wirkungsökonomie · `multiplikatoren`
 **Vorlesungscode:** MV6
 **Empfohlene Lernzeit:** 70 Minuten · **Videolänge:** etwa 20 Minuten
-**Voraussetzung:** MV1 – Maßstabskrise und Wirkung statt Kapital; MV2 – Das Wirkungsvokabular sicher erklären; MV3 – Vom Messen zum Steuern; MV4 – Didaktik der Wirkung; MV5 – Wirkungskommunikation ohne Greenwashing
+**Voraussetzung:** MV1 - Maßstabskrise und Wirkung statt Kapital; MV2 - Das Wirkungsvokabular sicher erklären; MV3 - Vom Messen zum Steuern; MV4 - Didaktik der Wirkung; MV5 - Wirkungskommunikation ohne Greenwashing
 **Führende Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-buch-html/) · [WÖk-Referenz](https://wirkungsoekonomie.de/bibliothek/eintraege/online-version-referenz-index-html/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/bibliothek/eintraege/leading-reference-glossar-html/) · [WÖMS 2.0](https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/)
 
 **Status:** Vollskript zur redaktionellen Korrektur. Dieses Skript arbeitet mit einem modellhaften Lernfall. Es ist keine Anleitung zur Bewertung von Personen, kein Wahrheitsmonopol und kein Ersatz für journalistische, rechtliche oder fachliche Prüfung.

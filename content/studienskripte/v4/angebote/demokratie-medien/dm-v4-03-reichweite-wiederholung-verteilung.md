@@ -8,7 +8,7 @@
 **legacy_sources:** `content/lehrgaenge/demokratie-schuetzen-grundlagen.md`; `demokratie-schuetzen-medien-moderation-dm-v*.md`; `demokratie-medien-v*.md`  
 **reviewed_at:** 2026-08-21
 
-## Exposure ist Datenfunktion – nicht Wirkungsbeweis
+## Exposure ist Datenfunktion - nicht Wirkungsbeweis
 
 ## Lernziele
 - Exposure/Reichweite als Verteilungsvariable lesen
@@ -64,7 +64,7 @@ Erstelle für ein Video eine Datenfunktionskarte: Exposure, Implementation, Outp
 Datenfunktionen, Exposure != Impact, Wiederholung, Verteilung und Korrekturwirkung.
 
 ## Zusammenfassung
-Reichweite ist wichtig, aber sie bleibt eine Voraussetzung oder Verteilungsgröße – nicht die Wirkung selbst.
+Reichweite ist wichtig, aber sie bleibt eine Voraussetzung oder Verteilungsgröße - nicht die Wirkung selbst.
 
 ## Sprechertext
 Reichweite ist wie die Zahl der Türen, an denen eine Nachricht anklopft. Ob jemand öffnet, zuhört, glaubt oder handelt, wissen wir damit noch nicht. Das ist die einfache Grenze jeder Reichweitenmetrik.

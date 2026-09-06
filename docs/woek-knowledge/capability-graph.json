@@ -51,7 +51,7 @@
       "capability": "WOEK_AI_ASSISTANT",
       "implementedBy": ["oracle:/api/woek-ai", "akademie:/api/ki-beta(RAG+TogetherAI)"],
       "clients": ["assets/js/woek-ai-client.js", "woek-ki/", "app/", "akademie:/ki-beta"],
-      "sharedServiceStatus": "UNRESOLVED — zwei Backends, Kanonisierung offen",
+      "sharedServiceStatus": "UNRESOLVED - zwei Backends, Kanonisierung offen",
       "usedBy": ["website", "akademie", "wirkungscheck-v3(opt-in)", "parlament(geplant, votum-frei)"]
     },
     {

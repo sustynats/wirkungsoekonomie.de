@@ -1,4 +1,4 @@
-# Veröffentlichungsvertrag – Wirkungsportal Parlament
+# Veröffentlichungsvertrag - Wirkungsportal Parlament
 
 **Version:** 1.0  
 **Stand:** 16. August 2026  
@@ -42,7 +42,7 @@ Eine vollständige Fachakte enthält mindestens:
 8. Schutzgrenzen und Nichtkompensation, wenn sie berührt sein können;
 9. Berechnung oder den ehrlichen Status, warum eine Berechnung nicht belastbar möglich ist;
 10. Datenqualität, Evidenzgrad, Zurechnungsstatus, Unsicherheiten, Gegenargumente und offene Datenlücken;
-11. getrennte Zuordnung zu SDGs, WÖk-SDG+, Mensch–Planet–Demokratie und einschlägigem Recht bzw. anderen Kontextnormen;
+11. getrennte Zuordnung zu SDGs, WÖk-SDG+, Mensch-Planet-Demokratie und einschlägigem Recht bzw. anderen Kontextnormen;
 12. Quellen, Fundstellen, zeitliche Quellenklasse, Quellenfunktion und Kausalitätsgrenze;
 13. Fassung, Analyseversion, Referenzstand und Veröffentlichungsdatum;
 14. Rückkopplungs- bzw. Lernfrage: Was folgt aus dem aktuellen Wissensstand für die nächste Entscheidung?
@@ -286,7 +286,7 @@ Die öffentliche Darstellung hält mindestens vier Ebenen auseinander:
 
 1. **Agenda 2030 / SDGs:** internationaler politischer Bezugsrahmen.
 2. **SDG+:** transparente Erweiterung der Wirkungsökonomie; keine offizielle UN-Kategorie.
-3. **Mensch – Planet – Demokratie:** gekoppelter normativer und systemischer WÖk-Bezugsraum.
+3. **Mensch - Planet - Demokratie:** gekoppelter normativer und systemischer WÖk-Bezugsraum.
 4. **Recht und Kontextnormen:** Grundrechte, Verfassungsziele, Fachrecht, Staatsziele, technische oder institutionelle Standards.
 
 Eine Referenzzuordnung ist keine Wirkungsfeststellung und kein Wirkungsnachweis.

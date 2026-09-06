@@ -28,7 +28,7 @@ Nach dieser Vorlesung kannst du:
 
 ## 1. Was ist ein Maßstab?
 
-Ein Maßstab beantwortet eine konkrete Frage. Ein Thermometer misst Temperatur. Es misst nicht Gesundheit. Umsatz misst Erlöse. Er misst nicht automatisch Nutzen. Das BIP misst wirtschaftliche Aktivität. Es ist deshalb kein Fehler, dass es Biodiversität oder Verteilung nicht vollständig abbildet – dafür wurde es nicht gebaut.
+Ein Maßstab beantwortet eine konkrete Frage. Ein Thermometer misst Temperatur. Es misst nicht Gesundheit. Umsatz misst Erlöse. Er misst nicht automatisch Nutzen. Das BIP misst wirtschaftliche Aktivität. Es ist deshalb kein Fehler, dass es Biodiversität oder Verteilung nicht vollständig abbildet - dafür wurde es nicht gebaut.
 
 Der Fehler entsteht, wenn wir aus einer Teilinformation mehr ableiten, als sie trägt.
 
@@ -127,13 +127,13 @@ Ein gutes Entscheidungsbild zeigt mindestens:
 
 ## 8. Typische Fehlinterpretationen
 
-**„BIP ist falsch.“** – Nein. Es misst etwas anderes als vollständigen Wohlstand.
+**„BIP ist falsch.“** - Nein. Es misst etwas anderes als vollständigen Wohlstand.
 
-**„Es gibt keine staatliche Wirkungsprüfung.“** – Falsch. GFA, Nachhaltigkeitsprüfung, Monitoring und Evaluation existieren.
+**„Es gibt keine staatliche Wirkungsprüfung.“** - Falsch. GFA, Nachhaltigkeitsprüfung, Monitoring und Evaluation existieren.
 
-**„Viele Indikatoren ergeben automatisch gute Steuerung.“** – Nein. Daten brauchen Funktionen, Kausalmodell und Rückkopplung.
+**„Viele Indikatoren ergeben automatisch gute Steuerung.“** - Nein. Daten brauchen Funktionen, Kausalmodell und Rückkopplung.
 
-**„WÖk braucht immer einen FinalScore.“** – Nein. Profile und Nichtkompensation können fachlich richtiger sein.
+**„WÖk braucht immer einen FinalScore.“** - Nein. Profile und Nichtkompensation können fachlich richtiger sein.
 
 ## 9. WÖk-Abgrenzung
 
@@ -143,7 +143,7 @@ WÖk ersetzt BIP, DNS, GFA oder Evaluation nicht. Sie versucht, **Problem, Ziel,
 
 - Destatis, Volkswirtschaftliche Gesamtrechnungen: https://www.destatis.de/DE/Themen/Wirtschaft/Volkswirtschaftliche-Gesamtrechnungen-Inlandsprodukt/_inhalt.html
 - Bundesregierung, Deutsche Nachhaltigkeitsstrategie / Steuerung: https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776
-- GGO §§43–44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
+- GGO §§43-44: https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm
 - Umweltbundesamt, Nationaler Wohlfahrtsindex: https://www.umweltbundesamt.de/daten/umweltindikatoren/indikator-nationaler-wohlfahrtsindex
 
 ## 11. Transferaufgabe
@@ -160,7 +160,7 @@ Stell dir ein Armaturenbrett vor, auf dem nur eine Lampe leuchtet. Die Lampe kan
 
 Die Wirkungsökonomie sagt deshalb nicht: Vorher war alles blind. Deutschland hat Statistiken, Nachhaltigkeitsziele, Gesetzesfolgenabschätzung und Evaluation. Die bessere Frage lautet: Welche Informationen werden in diesem konkreten Entscheidungsprozess gesehen? Welche Kausalannahmen sind offen? Wer trägt Nutzen und Risiken? Was ist nicht kompensierbar? Und was passiert, wenn die Realität später anders aussieht als erwartet?
 
-Die Maßstabskrise ist also keine Krise fehlender Zahlen. Sie ist oft eine Krise falscher Zuständigkeit von Zahlen. Wir geben jeder Kennzahl die Aufgabe, die sie tatsächlich erfüllen kann – und verbinden die offenen Teile zu einer lernenden Wirkungsarchitektur.
+Die Maßstabskrise ist also keine Krise fehlender Zahlen. Sie ist oft eine Krise falscher Zuständigkeit von Zahlen. Wir geben jeder Kennzahl die Aufgabe, die sie tatsächlich erfüllen kann - und verbinden die offenen Teile zu einer lernenden Wirkungsarchitektur.
 
 ## Fachlicher Stand und Addendum · 6. September 2026
 
