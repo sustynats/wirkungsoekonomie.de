@@ -65,6 +65,8 @@ test("real git race regenerates pages with new renderer and preserves news data"
   cmd(local,['add','.']);cmd(local,['commit','-m','base']);cmd(local,['push','-u','origin','main']);
   cmd(root,['clone','--branch','main',remote,release]);identity(release);
   write(local,'data/news/stories.json','{"news":2}\n');write(local,'wirkungsticker/quellen/bild/index.html','old:2\n');cmd(local,['add','.']);cmd(local,['commit','-m','worker']);
+  // A previous bounded push retry can leave an additional generated commit.
+  write(local,'wirkungsticker/quellen/bild/index.html','rebuilt-old:2\n');cmd(local,['add','.']);cmd(local,['commit','-m','previous rebuild']);
   write(release,'scripts/renderer.txt','new\n');write(release,'wirkungsticker/quellen/bild/index.html','new:1\n');cmd(release,['add','.']);cmd(release,['commit','-m','release']);cmd(release,['push']);
   let builds=0;
   const result=await publishGitUpdate({run:async args=>cmd(local,args),rebuild:async()=>{builds++;const data=JSON.parse(fs.readFileSync(path.join(local,'data/news/stories.json')));const renderer=fs.readFileSync(path.join(local,'scripts/renderer.txt'),'utf8').trim();write(local,'wirkungsticker/quellen/bild/index.html',`${renderer}:${data.news}\n`);},sleep:async()=>{}});
@@ -72,6 +74,36 @@ test("real git race regenerates pages with new renderer and preserves news data"
   assert.equal(cmd(local,['show','origin/main:data/news/stories.json']),'{"news":2}\n');
   assert.equal(cmd(local,['show','origin/main:wirkungsticker/quellen/bild/index.html']),'new:2\n');
   assert.equal(cmd(local,['status','--porcelain']).trim(),'');
+});
+
+test("a later canonical conflict aborts the whole multi-commit recovery without publishing", async () => {
+  const calls = []; let conflicts = 0;
+  await assert.rejects(publishGitUpdate({ run: async args => {
+    calls.push(args);
+    if (args[0] === 'pull' || args.includes('--continue')) throw new Error('conflict');
+    if (args.includes('--diff-filter=U')) return ++conflicts === 1 ? 'reports/wirkungsticker-source-integrity.json\0' : 'scripts/news/lib.mjs\0';
+    if (args.includes('--cached')) return 'data/news/state.json\0';
+    return '';
+  }}), /PUBLISH_CANONICAL_CONFLICT:scripts\/news\/lib.mjs/);
+  assert.ok(calls.some(args => args.join(' ') === 'rebase --abort'));
+  assert.ok(!calls.some(args => args[0] === 'push'));
+  assert.ok(!calls.some(args => args[0] === 'restore' && args.includes('scripts/news/lib.mjs')));
+});
+
+test("repeated generated conflicts have a hard recovery bound and abort safely", async () => {
+  let continuations = 0, aborted = false, pushed = false;
+  await assert.rejects(publishGitUpdate({ run: async args => {
+    if (args[0] === 'pull') throw new Error('conflict');
+    if (args.includes('--continue')) { continuations++; throw new Error('next conflict'); }
+    if (args.includes('--diff-filter=U')) return 'reports/wirkungsticker-source-integrity.json\0';
+    if (args.includes('--cached')) return 'data/news/state.json\0';
+    if (args.includes('--abort')) aborted = true;
+    if (args[0] === 'push') pushed = true;
+    return '';
+  }}), /PUBLISH_REBASE_RECOVERY_LIMIT/);
+  assert.equal(continuations, 20);
+  assert.equal(aborted, true);
+  assert.equal(pushed, false);
 });
 
 test("real git race merges different stories and rebuilds their common publication report", async t => {
