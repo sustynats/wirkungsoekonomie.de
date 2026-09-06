@@ -109381,7 +109381,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-64f44981dbdcf924c97c",
+      "event_id": "event-d0ea56670f7c42bbc7a0",
       "first_seen_at": "2026-09-06T06:21:40.343Z"
     },
     "a15d3a7efe68ff889d148bdffbad84f6101e16ec03517cc2fecc31ca4ba35f5f": {
@@ -252178,7 +252178,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-64f44981dbdcf924c97c",
+      "event_id": "event-d0ea56670f7c42bbc7a0",
       "source_item_id": "7435e069dd716de781c511ed4112d65ae73ebd1ba9a4d3602c6f01eaefd19cc3",
       "source_id": "wiwo-schlagzeilen",
       "role": "journalistic_report"
@@ -377273,7 +377273,166 @@
         "AI_EVIDENCE_INSUFFICIENT"
       ],
       "rationale": "Nur ein journalistischer Kurztext ohne prüfbare Kernfakten; die angebliche neue Entwicklung zum Berlin-Hack bleibt zu vage und nicht unabhängig belegt."
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-06476c6e980f5f47",
+      "decision": "input_size_hold",
+      "reason": "AI_INPUT_TOO_LARGE"
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "mdr-nachrichten",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-7c349006073ab1be",
+      "event_id": "event-1f555b83ea164a1d5cf7",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine journalistische Sekundärquelle liegt vor; der zugrunde liegende Studienbefund und mögliche Gegenprüfungen sind nicht eigenständig belegt."
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-ddfba0a9d4cf3e62",
+      "event_id": "event-a1f3eecb6ecab0899028",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Meldung wiederholt bereits berichtete Gespräche Putins mit US-Unterhändlern und das für Sonntag genannte Treffen mit Selenskyj, ohne neue materielle Entwicklung."
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-78b8df2827ab4527",
+      "event_id": "event-33c99d9ec5432a4822d9",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "duplicate_without_new_information",
+      "errors": [
+        "AI_REQUIRED_STRING:source_summary",
+        "AI_REQUIRED_STRING:summary",
+        "AI_REQUIRED_STRING:why_relevant",
+        "AI_REQUIRED_STRING:status",
+        "AI_REQUIRED_STRING:analysis_type",
+        "AI_REQUIRED_STRING:importance",
+        "AI_REQUIRED_STRING:impact_potential",
+        "AI_REQUIRED_STRING:systemic_relevance",
+        "AI_REQUIRED_STRING:transformation_potential",
+        "AI_REQUIRED_STRING:resilience",
+        "AI_REQUIRED_STRING:evidence_level",
+        "AI_REQUIRED_STRING:attribution",
+        "AI_REQUIRED_STRING:detail_summary",
+        "AI_STATUS_INVALID",
+        "AI_ANALYSIS_TYPE_INVALID",
+        "AI_IMPORTANCE_INVALID",
+        "AI_PUBLICATION_GATE_REQUIRED",
+        "AI_DIMENSION_INVALID:human",
+        "AI_DIMENSION_INVALID:planet",
+        "AI_DIMENSION_INVALID:democracy",
+        "AI_ARRAY_REQUIRED:impact_risks",
+        "AI_ARRAY_REQUIRED:mechanisms",
+        "AI_ARRAY_REQUIRED:first_order",
+        "AI_ARRAY_REQUIRED:second_order",
+        "AI_ARRAY_REQUIRED:third_order",
+        "AI_ARRAY_REQUIRED:side_effects",
+        "AI_ARRAY_REQUIRED:uncertainties",
+        "AI_ARRAY_REQUIRED:watch_next",
+        "AI_ARRAY_REQUIRED:reference_frameworks",
+        "AI_UNCERTAINTY_REQUIRED",
+        "AI_WATCH_NEXT_REQUIRED",
+        "AI_SUMMARY_SENTENCE_COUNT",
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "NEWS_STATUS_REQUIRED",
+        "EVENT_CLAIMS_REQUIRED"
+      ],
+      "rationale": "Die verfügbaren Quellen wiederholen im Kern bereits gemeldete Gespräche Putin–US-Gesandte und die Weiterreise nach Kiew; keine neue materielle Entwicklung gegenüber der Vorgeschichte belegt."
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-f753f67023632451",
+      "event_id": "event-febfcf00118f47940594",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur zwei inhaltlich identische Sekundärquellen mit gleichem Abstract; keine Originalstudie, keine unabhängige Bestätigung und kein prüfbarer Kernbefund in den gelieferten Texten."
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-23e5db1c29a3986d",
+      "event_id": "event-2f21c5a1c223e3d2beee",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur Schlagzeile und Kurzabstract derselben Quelle liegen vor; der konkrete Sachverhalt bleibt zu unbestimmt und nicht unabhängig belegt."
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-7bcc37f8f790d7d3",
+      "event_id": "event-9b5c4f5804e758386be8",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "insufficient_evidence",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "rationale": "Nur eine journalistische Quelle desselben Verlags liegt vor; die zentrale Aussage zur möglichen AfD-Machtübernahme ist nicht unabhängig belegt."
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-ba90052729946ae3",
+      "event_id": "event-01e6cd4e390eda19a265",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die gelieferten Quellen bestätigen im Kern nur bereits veröffentlichte Angaben zu Putins Treffen mit den US-Gesandten und der angekündigten Kiew-Reise; keine substanziell neue materielle Entwicklung."
+    },
+    {
+      "at": "2026-09-06T06:36:18.253Z",
+      "story_id": "wt-4742476ae893311b",
+      "event_id": "event-28a661fe3f1acf4e79bb",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Quelle wiederholt den bereits veröffentlichten Kern: Fahndung nach dem 48-Jährigen, Sprengstofffund in seiner Wohnung und weiter offene Festnahme."
     }
   ],
-  "updated_at": "2026-09-06T06:21:40.343Z"
+  "updated_at": "2026-09-06T06:36:18.253Z"
 }
