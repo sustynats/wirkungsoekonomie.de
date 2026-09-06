@@ -425169,7 +425169,41 @@
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
       "rationale": "Die Kernmeldung, dass Witkoff und Kushner in Kiew angekommen sind, war bereits in der Vorgeschichte und in früheren Meldungen enthalten; es fehlt eine neue materielle Entwicklung."
+    },
+    {
+      "at": "2026-09-06T12:06:21.923Z",
+      "story_id": "wt-5072789df611867b",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "ndr-info",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        },
+        {
+          "source_id": "swr-aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T12:06:21.923Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "mdr-nachrichten",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
     }
   ],
-  "updated_at": "2026-09-06T11:51:43.074Z"
+  "updated_at": "2026-09-06T12:06:21.923Z"
 }
