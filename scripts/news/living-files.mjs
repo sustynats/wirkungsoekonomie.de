@@ -57,8 +57,31 @@ const ELECTION_JURISDICTIONS = [
 
 function electionJurisdictions(text) {
   const value = normal(text);
-  if (!/\b(?:wahl\w*|wahlkampf\w*|sonntagsfrage\w*)\b/.test(value)) return [];
+  if (!/\b(?:(?:bundestags|landtags|kommunal|europa|prasidentschafts|parlaments|regional|burgermeister|senats|neu)?wahl\w*|sonntagsfrage\w*)\b/.test(value)) return [];
   return ELECTION_JURISDICTIONS.filter(([, pattern]) => pattern.test(value)).map(([id]) => id);
+}
+
+// Named subjects, not shared actors or generic topic words. Used by both the
+// ingestion guard and the presentation-only case files. No country/company
+// allowlist; an ambiguous comparison must not bridge two different subjects.
+export function namedSubjects(item) {
+  // A sentence boundary prevents the final headline noun from becoming part
+  // of a company's name at the start of the lead.
+  const input = `${item.title || ""}. ${String(item.source_summary || item.summary || "").split(/\n\s*\n/)[0].slice(0, 650)}`;
+  const normalized = normal(input);
+  const conflicts = unique([
+    ...[...normalized.matchAll(/\b([\p{L}]+)[-–‑]krieg(?:s|es)?\b/gu)].map(match => match[1]),
+    ...[...normalized.matchAll(/(?<![-–‑\p{L}])\bkrieg(?:s|es)?\s+(?:in|gegen)\s+(?:(?:der|die|den|das|dem)\s+)?([\p{L}]+)\b/gu)].map(match => match[1]),
+  ]);
+  const companies = unique([...input.matchAll(/\b([A-ZÄÖÜ][\p{L}\d-]+(?:\s+[A-ZÄÖÜ][\p{L}\d-]+){0,5})\s+(GmbH|AG|SE|Ltd\.?|Inc\.?)\b/gu)]
+    .map(match => `${normal(match[1]).replace(/^(?:die|der|das|eine|ein)\s+/, "")}:${normal(match[2]).replace(/\./g, "")}`));
+  return { conflicts, companies };
+}
+
+export function namedSubjectConflict(a, b) {
+  const left = namedSubjects(a), right = namedSubjects(b);
+  return ["conflicts", "companies"].some(key => left[key].length && right[key].length
+    && (left[key].length !== 1 || right[key].length !== 1 || left[key][0] !== right[key][0]));
 }
 
 const PUBLIC_NETWORK = "(?:landes(?:it)?netz|verwaltungsnetz|it[- ]netz)";
@@ -109,6 +132,7 @@ export function fileSubject(item) {
 }
 
 export function subjectConflict(a, b) {
+  if (namedSubjectConflict(a, b)) return true;
   const left = fileSubject(a), right = fileSubject(b);
   if (left.recurrence !== right.recurrence && left.kind === "grid_incident" && right.kind === "grid_incident") return true;
   // A report about several attacks cannot become the update of just one site,
@@ -161,6 +185,10 @@ export function mergeLivingFiles(stories, groups, now) {
     for (const id of group.duplicate_ids) {
       const duplicate = byId.get(id);
       if (!duplicate || duplicate === canonical || isMerged(duplicate) || duplicate.listed === false) continue;
+      // Defense in depth: even a stale/precomputed merge plan may not bypass
+      // the current subject guard or create a conflict with retained members.
+      const retained = (canonical.living_file?.merged_story_ids || []).map(memberId => byId.get(memberId)).filter(Boolean);
+      if ([canonical, ...retained].some(member => subjectConflict(member, duplicate))) continue;
       const sources = mergeSourceVersions([...(canonical.pending_update?.sources || canonical.sources || []), ...(duplicate.sources || []), ...(duplicate.pending_update?.sources || [])]);
       // No claim/analysis/source is silently reinterpreted as already checked.
       canonical.pending_update = { detected_at: now, sources, reason: "AI_BUDGET_OR_BATCH_LIMIT", fresh: false, consolidation: true, quality_retry_count: 0 };

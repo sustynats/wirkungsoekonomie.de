@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { buildCaseFiles, caseContribution } from "../../scripts/news/case-files.mjs";
+import { buildCaseFiles, caseContribution, caseIntegrityErrors } from "../../scripts/news/case-files.mjs";
 import { renderCaseFile } from "../../scripts/news/build.mjs";
 
 const at = "2026-09-04T12:00:00Z";
@@ -158,4 +158,58 @@ test("conflict names in alternate syntax or the factual lead preserve a valid ca
     story("c", "Verhandlungen: US-Unterhändler beraten in Moskau", "Die Gespräche betreffen ein Ende des Ukraine-Kriegs.", { topic: ["Geopolitik"] }),
   ];
   assert.equal(buildCaseFiles(entries).cases[0].member_count, 3);
+});
+
+test("acute bridge reports cannot join different incident objects, even with identical vocabulary", () => {
+  const make = (id, place) => story(id, `Sabotage an Umspannwerk in ${place}: Fahndung läuft`, `Bekennerschreiben zum Angriff auf das Umspannwerk in ${place} beim Netzbetreiber ${place}werke; Ermittlungen und Fahndung laufen.`);
+  const left = [make("a1", "Nordstadt"), make("a2", "Nordstadt"), make("a3", "Nordstadt")];
+  const right = [make("b1", "Südstadt"), make("b2", "Südstadt"), make("b3", "Südstadt")];
+  const bridge = story("z-bridge", "Sabotage an Umspannwerken: Fahndung läuft", "Bekennerschreiben zu Angriffen auf Umspannwerke in Nordstadt und in Südstadt bei den Netzbetreibern Nordstadtwerke und Südstadtwerke; Ermittlungen laufen.", { first_seen: "2026-09-05T12:00:00Z" });
+  const entries = [...left, ...right, bridge], before = structuredClone(entries);
+  const result = buildCaseFiles(entries);
+  assert.equal(result.cases.length, 2);
+  assert.equal(result.caseByStory.has(bridge.story_id), false);
+  assert.ok(result.diagnostics.ambiguous_story_ids.includes(bridge.story_id));
+  assert.equal(result.visibleStories.length, 3);
+  assert.deepEqual(buildCaseFiles([...entries].reverse()).cases, result.cases);
+  assert.deepEqual(entries, before);
+  for (const group of result.cases) assert.deepEqual(caseIntegrityErrors(group, entries), []);
+  const invalid = { members: entries.map(s => ({ story_id: s.story_id })), member_count: entries.length };
+  assert.ok(caseIntegrityErrors(invalid, entries).some(error => error.startsWith("CASE_PAIR_INCOMPATIBLE")));
+});
+
+test("same case vocabulary cannot combine different companies or election jurisdictions", () => {
+  for (const titles of [
+    ["Nordstern GmbH: Insolvenzverfahren und Gläubigerversammlung", "Südstern GmbH: Insolvenzverfahren und Gläubigerversammlung"],
+    ["Nordstern Energie GmbH: Insolvenzverfahren und Gläubigerversammlung", "Südstern Energie GmbH: Insolvenzverfahren und Gläubigerversammlung"],
+    ["Landtagswahl in Sachsen-Anhalt: Regierungsbildung und Verhandlungen", "Landtagswahl in Sachsen: Regierungsbildung und Verhandlungen"],
+  ]) {
+    const entries = titles.flatMap((title, index) => [0, 1, 2].map(i => story(`${index}-${i}`, title, title, { topic: ["Politik", "Wirtschaft"] })));
+    const result = buildCaseFiles(entries);
+    assert.equal(result.cases.length, 2);
+    assert.notEqual(result.caseByStory.get("0-0").case_id, result.caseByStory.get("1-0").case_id);
+  }
+});
+
+test("time-window chains cannot silently extend a case beyond its maximum span", () => {
+  const entries = ["2026-01-01", "2026-03-01", "2026-05-01"].map((date, i) => story(`month-${i}`, "Nordstern GmbH: Insolvenzverfahren und Gläubigerversammlung", "Die Nordstern GmbH durchläuft das Insolvenzverfahren.", { first_seen: date }));
+  assert.equal(buildCaseFiles(entries).cases.length, 0);
+  assert.equal(buildCaseFiles(entries).visibleStories.length, 3);
+});
+
+test("missing dates and known different recurring incidents remain standalone", () => {
+  const entries = caseStories();
+  const undated = story("undated", entries[0].title, entries[0].source_summary, { first_seen: "invalid", published_at: "invalid", last_updated: "invalid" });
+  const repeat = story("repeat", "Weiterer Angriff an Umspannwerk in Jänschwalde", entries[0].source_summary);
+  const result = buildCaseFiles([...entries, undated, repeat]);
+  assert.equal(result.caseByStory.has("undated"), false);
+  assert.equal(result.caseByStory.has("repeat"), false);
+});
+
+test("publication membership assertion rejects unknown, duplicate and incompatible members", () => {
+  const entries = caseStories();
+  const valid = buildCaseFiles(entries).cases[0];
+  assert.deepEqual(caseIntegrityErrors(valid, entries), []);
+  assert.ok(caseIntegrityErrors({ ...valid, members: [...valid.members, valid.members[0]] }, entries).includes("CASE_MEMBERSHIP_INVALID"));
+  assert.ok(caseIntegrityErrors({ ...valid, members: [{ story_id: "missing" }] }, entries).includes("CASE_MEMBER_UNKNOWN:missing"));
 });

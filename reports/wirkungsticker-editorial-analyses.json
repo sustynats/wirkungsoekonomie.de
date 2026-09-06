@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-06T07:37:14.598Z",
+  "started_at": "2026-09-06T08:42:33.459Z",
   "scanned_stories": 93,
-  "scanned_subjects": 68,
-  "editorial_candidates": 12,
-  "ready_for_research": 0,
-  "research_pending": 7,
-  "retry_deferred": 0,
-  "editorial_research_sources_discovered": 9,
+  "scanned_subjects": 81,
+  "editorial_candidates": 15,
+  "ready_for_research": 3,
+  "research_pending": 6,
+  "retry_deferred": 3,
+  "editorial_research_sources_discovered": 12,
   "selected": 0,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
@@ -67,50 +67,6 @@
       "analysis_id": null
     },
     {
-      "story_id": "wt-86ea1ddfd89beabf",
-      "story_slug": "sabotage-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-fahndung-mit-foto-n-9beabf",
-      "story_title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
-      "editorial_analysis_score": 76,
-      "analysis_gain": 68,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 0,
-        "resilience_relevance": 8,
-        "macro_relevance": 3,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 3,
-        "discourse_relevance": 0,
-        "case_depth": 8,
-        "evidence_quality": 8
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": false,
-        "source_integrity": "open",
-        "independent_origin_count": 14,
-        "primary_source_count": 0,
-        "cited_claim_count": 89,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": [
-          "source_integrity_open"
-        ]
-      },
-      "fingerprint": "c24ca3c61f61aa0612861dd920f641eba6b95afc79adce89e63719c41d8789ad",
-      "status": "research_pending",
-      "analysis_id": null
-    },
-    {
       "story_id": "wt-6a7145e6dc679f95",
       "story_slug": "hitzeschutz-in-kitas-und-pflegeheimen-land-hessen-fordert-klimaanlagen-679f95",
       "story_title": "Hitzeschutz in Kitas und Pflegeheimen: Land Hessen fördert Klimaanlagen",
@@ -156,6 +112,48 @@
       "analysis_id": null
     },
     {
+      "story_id": "wt-6c26e428b894e714",
+      "story_slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
+      "story_title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
+      "editorial_analysis_score": 71,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 8,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "95b8bb2184beba0a6312d8a9020be9a349ab589a6db4d6c57531f6e5e956bbcb",
+      "status": "published",
+      "analysis_id": "woek-analysis-1b3323ad407f"
+    },
+    {
       "story_id": "wt-4b5d0962d323432a",
       "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
       "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
@@ -196,6 +194,90 @@
       "fingerprint": "692ec37ba57b489213b36cd736b0fe8371be569f545a74b84d3936b0c4bfa18d",
       "status": "published",
       "analysis_id": "woek-analysis-0bfd0f9a3434"
+    },
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "story_slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+      "story_title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "6889f6dcfa62649dc22a1dff7bca65fabd75a0cebd636d80d9eb25f668e81671",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-7b385f58748f3d32",
+      "story_slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+      "story_title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+      "editorial_analysis_score": 75,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
+      "status": "ready_for_research",
+      "analysis_id": null
     },
     {
       "story_id": "wt-f7d7115a53ff2c2f",
@@ -367,6 +449,48 @@
       "fingerprint": "031e49918d0d6a49b8108f9f992be324d092a20c1f2c8f06e6b6b4d265653c07",
       "status": "published",
       "analysis_id": "woek-analysis-852ebdd0a0aa"
+    },
+    {
+      "story_id": "wt-1fbb056ccaaf351d",
+      "story_slug": "anschlage-auf-umspannwerke-polizei-halt-bekennerschreiben-fur-authentisch-bundesweite-fa-af351d",
+      "story_title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+      "editorial_analysis_score": 80,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 4,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
+      "status": "ready_for_research",
+      "analysis_id": null
     },
     {
       "story_id": "wt-79a8fce4900e254f",

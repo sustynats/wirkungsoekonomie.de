@@ -13,6 +13,9 @@ on:
       - 'content/**'
       - '!content/taxonomy/site-map.json'
       - 'scripts/**'
+      # Parliament image candidates do not project state sustainability content.
+      # Keep this branch-writing audit off that isolated provider/QA lane.
+      - '!scripts/parliament/impact-visuals/**'
       - 'tools/apply_state_sustainability_architecture.py'
       - 'tools/apply_state_sustainability_sources.py'
       - 'tools/apply_state_sustainability_precision.py'
