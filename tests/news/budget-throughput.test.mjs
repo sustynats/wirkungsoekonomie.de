@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { budgetStage } from '../../scripts/news/lib.mjs';
-import { aiDeferralReason, catchUpQueueStage, partitionAiQueue, queuePriority } from '../../scripts/news/run.mjs';
+import { aiDeferralReason, catchUpQueueStage, partitionAiQueue, queuePriority, queueSnapshot } from '../../scripts/news/run.mjs';
 import { NEWS_AI_BUDGET_EUR, newsBudget } from '../../scripts/news/budget.mjs';
 
 const candidates = () => Array.from({ length: 28 }, (_, index) => ({ story_id: `waiting-${index}`, fresh: false,
@@ -79,7 +79,7 @@ test('measured cheap checks unlock six bounded slots, with two reserved for olde
 test('catchup never overrides hard stop, request reserve, fresh/small queue or other budget stages', () => {
   for (const spend of [0, 14, 17.6, 17.96, NaN, Infinity]) assert.equal(catchup(candidates(), cheapUsage(), spend).control.enabled, false);
   assert.equal(catchup(candidates().slice(0, 11)).control.enabled, false);
-  assert.equal(catchup(candidates().map(c => ({...c, fresh: true}))).control.enabled, false);
+  assert.equal(catchup(candidates().map(c => ({...c, fresh: true, existing_story: null}))).control.enabled, false);
   assert.equal(catchup(candidates().map(c => ({...c, existing_story: {...c.existing_story, updated_at: catchupNow}}))).control.enabled, false);
 });
 
@@ -100,4 +100,17 @@ test('catchup requires a complete recent provider-cost sample, never editorial c
   assert.equal(catchup(candidates(), duplicate).control.enabled, false);
   const conflict = cheapUsage(); conflict.runs.push({...conflict.runs[0], ai: {...conflict.runs[0].ai, estimated_cost_usd: 0}});
   assert.equal(catchup(candidates(), conflict).control.enabled, false);
+});
+
+test('persisted fresh flags and rewritten updated_at cannot hide or starve old unpublished work', () => {
+  const old = candidates().map(c => ({...c, fresh: true, first_seen: '2026-09-06T12:00:00Z',
+    existing_story: {...c.existing_story, first_seen: '2026-09-06T12:00:00Z', updated_at: catchupNow}}));
+  const fresh = Array.from({length: 12}, (_, i) => ({story_id: `new-${i}`, fresh: true, preanalysis: {internal_relevance_score: 90}}));
+  const queue = [...fresh, ...old];
+  const plan = catchup(queue);
+  assert.equal(plan.control.enabled, true);
+  const selected = partitionAiQueue(queue, plan.stage, 12, catchupNow).selected;
+  assert.equal(selected.filter(c => c.existing_story).length, 2);
+  assert.equal(queueSnapshot(old.map(c => c.existing_story), catchupNow).oldest_minutes, 480);
+  assert.equal(queuePriority(old[0], catchupNow), queuePriority({...old[0], existing_story: {...old[0].existing_story, updated_at: '2026-09-06T13:00:00Z'}}, catchupNow));
 });

@@ -597,6 +597,13 @@ function latestSourceDate(items) {
   }, 0);
 }
 
+function candidateQueuedAt(candidate) {
+  const existing = candidate.existing_story;
+  return existing?.pending_update?.detected_at
+    || (!existing?.published ? existing?.first_seen || candidate.first_seen : null)
+    || existing?.updated_at || candidate.first_seen;
+}
+
 export function queuePriority(candidate, now) {
   const existing = candidate.existing_story;
   const ageSinceEvidence = Math.max(0, Date.parse(now) - latestSourceDate(candidate.sources || []));
@@ -607,7 +614,7 @@ export function queuePriority(candidate, now) {
   const publishedUpdateBonus = fresh && existing?.published && candidate.content_hash !== existing.content_hash ? 30 : 0;
   const firstPublicationBonus = !existing?.published ? 45 : 0;
   const reassessmentPenalty = candidate.reassessment && !fresh ? -60 : 0;
-  const queuedAt = Date.parse(existing?.pending_update?.detected_at || existing?.updated_at || candidate.first_seen || now);
+  const queuedAt = Date.parse(candidateQueuedAt(candidate) || now);
   const ageHours = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / (60 * 60 * 1000)) : 0;
   const waitingBonus = Math.min(36, Math.floor(ageHours / 6));
   const urgentReviewBonus = candidate.preanalysis.material_development_review?.time_sensitive ? 72 : 0;
@@ -654,9 +661,8 @@ export function catchUpQueueStage(stage, ready, usage, now, budget, spend) {
   const nowMs = Date.parse(now);
   control.reason = "no_aged_backlog";
   const uniqueReady = [...new Map(ready.map(candidate => [candidate.story_id, candidate])).values()];
-  const aged = uniqueReady.filter(candidate => !candidate.fresh && candidate.existing_story
-    && nowMs - Date.parse(candidate.existing_story.pending_update?.detected_at
-      || candidate.first_seen || candidate.existing_story.first_seen || candidate.existing_story.updated_at) >= 90 * 60000);
+  const aged = uniqueReady.filter(candidate => candidate.existing_story
+    && nowMs - Date.parse(candidateQueuedAt(candidate)) >= 90 * 60000);
   if (!Number.isFinite(nowMs) || uniqueReady.length < 12 || aged.length < 2) return result();
   control.headroom_to_stop_usd = Number((budget * 0.95 - spend).toFixed(6));
   control.reason = "insufficient_budget_reserve";
@@ -688,7 +694,7 @@ export function catchUpQueueStage(stage, ready, usage, now, budget, spend) {
   return result();
 }
 
-export function partitionAiQueue(eligible, stage, maxStories) {
+export function partitionAiQueue(eligible, stage, maxStories, now = new Date().toISOString()) {
   const allowed = stage.stage >= 3 ? [] : eligible
     .filter((candidate) => candidate.reassessment || candidate.preanalysis.internal_relevance_score >= stage.threshold);
   const limit = Math.max(0, Math.min(maxStories, stage.max_stories_per_run ?? Infinity));
@@ -697,15 +703,15 @@ export function partitionAiQueue(eligible, stage, maxStories) {
   // Fresh material keeps the majority, but a continuous news stream can no
   // longer starve the durable queue indefinitely.
   if (limit >= 4 && allowed.length > limit) {
-    const queued = allowed.filter((candidate) => !candidate.fresh && candidate.existing_story)
+    const queued = allowed.filter((candidate) => candidate.existing_story
+      && (!candidate.fresh || Date.parse(now) - Date.parse(candidateQueuedAt(candidate)) >= 90 * 60000))
       .sort((left, right) => {
         const leftReason = left.existing_story?.pending_update?.reason || left.existing_story?.pending_reason;
         const rightReason = right.existing_story?.pending_update?.reason || right.existing_story?.pending_reason;
         const leftTechnical = TECHNICAL_HOLD_REASONS.has(leftReason) || leftReason === "QUALITY_GATE_FAILED";
         const rightTechnical = TECHNICAL_HOLD_REASONS.has(rightReason) || rightReason === "QUALITY_GATE_FAILED";
         return Number(rightTechnical) - Number(leftTechnical)
-          || Date.parse(left.existing_story?.pending_update?.detected_at || left.existing_story?.updated_at || left.first_seen || 0)
-            - Date.parse(right.existing_story?.pending_update?.detected_at || right.existing_story?.updated_at || right.first_seen || 0);
+          || Date.parse(candidateQueuedAt(left) || 0) - Date.parse(candidateQueuedAt(right) || 0);
       });
     const reserve = Math.min(queued.length, Math.max(1, Math.ceil(limit / 4)));
     const reserved = queued.slice(0, reserve);
@@ -756,7 +762,7 @@ export function queueSnapshot(stories = [], now = new Date().toISOString(), befo
     const errors = pending.quality_errors || story.quality_errors || [];
     const retryCount = pending.quality_retry_count ?? story.quality_retry_count ?? 0;
     const retryAfter = pending.quality_retry_after || story.quality_retry_after || null;
-    const queuedAt = Date.parse(pending.detected_at || story.updated_at || story.first_seen || now);
+    const queuedAt = Date.parse(pending.detected_at || (!story.published ? story.first_seen : null) || story.updated_at || story.first_seen || now);
     const ageMinutes = Number.isFinite(queuedAt) ? Math.max(0, (Date.parse(now) - queuedAt) / 60000) : 0;
     snapshot.oldest_minutes = Math.max(snapshot.oldest_minutes, ageMinutes);
     snapshot.by_reason[reason] = Number(snapshot.by_reason[reason] || 0) + 1;
@@ -1193,7 +1199,7 @@ export async function runWirkungsticker(options = {}) {
   report.catchup_control = catchUp.control;
   if (catchUp.control.enabled) report.budget_throttle = { ...report.budget_throttle,
     policy_version: "2.1", max_stories_per_run: 6, mode: "bounded_backlog_catchup" };
-  const { selected, deferred } = partitionAiQueue(ready, catchUp.stage, maxAiStories);
+  const { selected, deferred } = partitionAiQueue(ready, catchUp.stage, maxAiStories, now);
   for (const candidate of selected) bumpCandidateFunnel(sourceFunnel, candidate, "ai_selected");
   const aiBatchSize = Math.max(1, Math.min(maxAiStories || 1, Number(process.env.WOEK_NEWS_AI_BATCH_SIZE || 2)));
   report.ai_stories = selected.length;
