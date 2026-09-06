@@ -11,3 +11,9 @@ for(const edition of manifest.files) {
   if(!edition.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${manifest.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(edition.sha256) || edition.pages<1)throw new Error(`Invalid PDF release metadata: ${edition.filename}`);
 }
 console.log('Dated PDFs: 8 editions, source contents and immutable release metadata consistent.');
+const erratum=JSON.parse(fs.readFileSync('assets/data/publication-erratum-2026-09-06.json','utf8'));
+for(const [source,expected] of Object.entries({...erratum.sourceHashes,...erratum.originalHashes})) {
+  if(hash(source)!==expected)throw new Error(`Publication erratum source changed: ${source}. Publish a new dated erratum before deployment.`);
+}
+if(!erratum.url.startsWith(`https://github.com/sustynats/wirkungsoekonomie.de/releases/download/${erratum.releaseTag}/`) || !/^[a-f0-9]{64}$/.test(erratum.sha256) || erratum.pages<1)throw new Error('Invalid publication erratum metadata');
+console.log('Additional historical-paper erratum: source contents and original PDF hashes consistent.');

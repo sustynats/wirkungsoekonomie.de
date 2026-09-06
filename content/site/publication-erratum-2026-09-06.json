@@ -1,0 +1,95 @@
+{
+  "reviewedAt": "2026-09-06",
+  "title": "Erratum zu historischen Fachpapieren: Register, T-SROI und Sprache",
+  "intro": "Diese datierte Ergänzung präzisiert die unten benannten Stellen für die heutige Anwendung. Sie erhält die historischen Originale und deren Zitierbarkeit. Sie ist keine vollständige Neubegutachtung der jeweiligen Publikation und bestätigt keine empirische Validierung der Modellannahmen.",
+  "scope": "Agenda 2030 und die SDGs bleiben der globale Referenzrahmen; SDG+ ist eine WÖk-eigene Erweiterung. Referenzbezug allein beweist weder tatsächliche Veränderung noch Kausalität. Bei deutschen öffentlichen Fällen ist die jeweils einschlägige staatliche Prüfarchitektur mitzuberücksichtigen.",
+  "groups": [
+    {
+      "id": "register",
+      "title": "Kennung, Prüfgegenstand und Indikator trennen",
+      "correction": "Eine WÖk-ID ist eine eindeutige Kennung für einen Prüfgegenstand im WÖk-Register. Der adressierte MasterItem kann unterschiedliche fachliche Funktionen haben. Eine Kennung ist weder ein Messwert noch bereits ein validierter Wirkindikator. Eine verwendbare Messgröße benötigt eine dokumentierte Operationalisierung mit Zustandsbezug, Einheit, Messregel, Datenquelle, Systemgrenze und Qualität. Eine beobachtete Veränderung braucht zusätzlich eine gesonderte Zurechnungsprüfung.",
+      "example": "Beispiel: Die Kennung eines Prüfgegenstands „Erreichbarkeit“ ist noch kein Messergebnis. Erst „mittlere Tür-zu-Tür-Reisezeit in Minuten, für welche Bevölkerungsgruppe, zu welchem Zeitpunkt und nach welcher Messregel?“ beschreibt eine prüfbare Messgröße.",
+      "reference": "/werkzeuge/woek-ids/",
+      "referenceLabel": "Aktueller Registerzugang, Masterregister v1.5",
+      "documents": [
+        {
+          "title": "WStG 2.0 - Wirkungssteuerrahmengesetz, Entwurf",
+          "source": "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.pdf",
+          "pages": "6",
+          "note": "Präzisiert § 12 des WÖk-Modellentwurfs. Der Entwurf ist kein geltendes Gesetz."
+        },
+        {
+          "title": "WUStG - Technische Leitlinien v2.1, Entwurf",
+          "source": "docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.pdf",
+          "pages": "4",
+          "note": "Präzisiert Abschnitt 2.7 des Methodikentwurfs. Die Registerkennung ist nicht auf bereits operationalisierte Wirkungsindikatoren verengt."
+        }
+      ]
+    },
+    {
+      "id": "tsroi",
+      "title": "Transformationsnutzen belegen, keine freien Aufschläge rechnen",
+      "correction": "Für neue WÖk-T-SROI-Rechnungen gilt der Rechenstandard v1.1. Direkte und transformative Nettonutzenströme werden getrennt belegt, kausal abgegrenzt, monetarisiert und diskontiert. Ein frei gesetzter Transformations-, Resilienz- oder Datenqualitätsmultiplikator ist keine aktuelle T-SROI-Rechnung. Doppelzählungen, Gegenwirkungen, Gegenfaktum und Unsicherheit sind offenzulegen. Profilpunkte dürfen nicht ohne belastbare Bewertungsgrundlage in Geld umgerechnet werden. Nichtkompensation harter Schutzgrenzen und Reverse Merit Order gelten vor der positiven Priorisierung; eine rote Linie darf nicht durch positive Nutzenbeträge verrechnet werden.",
+      "example": "Beispiel: Ein erwarteter Systemnutzen wird nicht pauschal als 20-Prozent-Aufschlag angesetzt. Er benötigt einen eigenen Wirkpfad, eine nachvollziehbare Vergleichsentwicklung, einen Zeitraum und eine Bewertungsgrundlage. Fehlen diese, bleibt er ein separat ausgewiesenes Wirkungspotenzial oder Wirkungsrisiko.",
+      "reference": "/werkzeuge/t-sroi/",
+      "referenceLabel": "T-SROI-Rechenstandard v1.1",
+      "documents": [
+        {
+          "title": "Gesamtstudie Wirkungsdilemmata, Kooperation und SDG+ v2.0",
+          "source": "assets/downloads/woek_gesamtstudie_wirkungsdilemmata_kooperation_sdgplus_v2_0.pdf",
+          "pages": "17, 90",
+          "note": "Die Multiplikatorpassagen und die Formel zu „Integrität vor Multiplikation“ sind für neue Rechnungen durch die Einordnung dieses Erratums ersetzt."
+        },
+        {
+          "title": "Grundlagenstudie kooperative Wirkungsordnung v0.1",
+          "source": "assets/downloads/woek_grundlagenstudie_kooperative_wirkungsordnung_v0_1.pdf",
+          "pages": "9, 54, 55",
+          "note": "Ordnet die Quellenbeschreibung und die frühere Multiplikatorformel historisch ein."
+        },
+        {
+          "title": "Whitepaper T-SROI, September 2025",
+          "source": "public/downloads/originals/Whitepaper-T-SROI.pdf",
+          "pages": "6, 10",
+          "note": "Der damalige Multiplikator M ist keine aktuelle Rechenregel; führend ist v1.1."
+        },
+        {
+          "title": "Whitepaper Wirkung statt Kapital",
+          "source": "assets/pdf/whitepaper-wirkung-statt-kapital.pdf",
+          "pages": "14",
+          "note": "Der Transformationsfaktor ist bei heutigen Rechnungen durch gesondert belegte Transformationsnutzenströme zu ersetzen."
+        },
+        {
+          "title": "NATS/WÖk allgemein - Von Kapital zu Wirkung",
+          "source": "public/downloads/originals/NATS_WOeK_allgemein.pdf",
+          "pages": "35",
+          "note": "Der pauschale Transformationsaufschlag von 20 Prozent bleibt ein historisches Modellbeispiel und wird nicht als aktuelle Formel verwendet."
+        }
+      ]
+    },
+    {
+      "id": "sprache",
+      "title": "Wirkstoff bleibt eine Analogie; Reichweite ist noch keine Wirkung",
+      "correction": "Bei Sprache ist „Wirkstoff“ ausschließlich eine didaktische Analogie. Aussagen eröffnen Resonanzräume und können Wirkpfade anstoßen. Ob sie tatsächliche Zustandsveränderungen verursachen, ist anhand von Kontext, Mechanismus und Evidenz zu prüfen. Reichweite beschreibt die mögliche Verbreitung, nicht bereits die eingetretene Veränderung. „Wirkungskraft“ ist an den genannten Stellen entsprechend als Verstärkungs- oder Wirkungspotenzial zu lesen. Es folgt daraus weder eine Personenbewertung noch eine moralische Rangliste, Sprachpolizei oder ein Social-Credit-System.",
+      "example": "Beispiel: Ein Beitrag mit einer Million Aufrufen belegt zunächst Sichtbarkeit. Ob Vertrauen, Verhalten oder institutionelle Entscheidungen verändert wurden und welcher Anteil dem Beitrag zugerechnet werden kann, bleibt eine gesonderte empirische Frage.",
+      "reference": "/methodik/",
+      "referenceLabel": "Wirkung, Potenzial, Wirkpfad und Evidenz unterscheiden",
+      "documents": [
+        {
+          "title": "Folgencheck statt Faktencheck - Arbeitspapier v0.1",
+          "source": "assets/downloads/arbeitspapier_folgencheck_wirkungspolitische_sprache_v0_1.pdf",
+          "pages": "19",
+          "note": "Die Formulierung „Politische Sprache ist ein Wirkstoff“ ist ausschließlich als Analogie zu lesen."
+        },
+        {
+          "title": "Wirkungsräume gestalten - Dossier für wirkungsorientiertes Hosting",
+          "source": "assets/downloads/woek_medien_oeffentlichkeit_wirkungsraeume_gestalten_hosting_v1_0.pdf",
+          "aliases": [
+            "public/downloads/originals/Wirkungsraeume_gestalten_Dossier_wirkungsorientiertes_Hosting.pdf"
+          ],
+          "pages": "14",
+          "note": "Die Formulierung „Reichweite ist Wirkungskraft“ behauptet keinen Nachweis tatsächlicher Veränderung."
+        }
+      ]
+    }
+  ]
+}

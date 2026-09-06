@@ -3,7 +3,23 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {uniqueContentIds,normalizePublicContent} from '../../scripts/quality/normalize-public-content.mjs';
+import {uniqueContentIds,normalizeStaticNavigation,normalizePublicContent} from '../../scripts/quality/normalize-public-content.mjs';
+
+test('only vanished frontmatter is removed from generated navigation',()=>{
+  const item=(id,label)=>`<li class="toc-level-3"><a href="#${id}">${label}</a></li>`;
+  const result=normalizeStaticNavigation(item('kurzfassung','Kurzfassung')+item('inhalt','Inhaltsverzeichnis')+item('unbekannt','Eine Fachfrage')+'<p><a href="#inhalt">Inhaltsverzeichnis</a></p>',new Set(['kurzfassung']));
+  assert.equal(result.removedToc.length,1);
+  assert.match(result.html,/href="#kurzfassung"/);
+  assert.match(result.html,/href="#unbekannt"/);
+  assert.match(result.html,/<p><a href="#inhalt">/);
+});
+
+test('adjacent identical static download buttons are shown once; scripted actions stay intact',()=>{
+  const link='<a class="btn btn-secondary" href="/original.pdf" target="_blank" rel="noopener">PDF herunterladen</a>';
+  assert.deepEqual(normalizeStaticNavigation(link+'\n'+link,new Set()),{html:link,removedToc:[],duplicateButtons:1});
+  const action='<a class="btn" data-action="add" href="#">Hinzufügen</a>';
+  assert.equal(normalizeStaticNavigation(action+action,new Set()).html,action+action);
+});
 
 test('duplicate headings retain old links, update self-citations and reserve existing IDs',()=>{
   const result=uniqueContentIds('<h2 id="a">One</h2><h2 id="a"><a href="#a">Two</a></h2><p id="a--2">Existing</p><script>"<p id=\"a\">"</script>');
