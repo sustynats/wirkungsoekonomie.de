@@ -1,9 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { analysisInputFor, buildAnalysisPrompt, callWoekAi, claimLedgerFor, preAnalyzeStory, fitAnalysisInput, budgetStage } from '../../scripts/news/lib.mjs';
+import { analysisInputFor, buildAnalysisPrompt, callWoekAi, claimLedgerFor, preAnalyzeStory, fitAnalysisInput, budgetStage, suppliedEvidenceIds } from '../../scripts/news/lib.mjs';
 import { detectMediaImpactTrigger } from '../../scripts/news/media-impact.mjs';
-import { evidenceGroups } from '../../scripts/news/newsroom.mjs';
+import { evidenceGroups, resolveEvidenceReferences } from '../../scripts/news/newsroom.mjs';
 import { serializeEvidencePackets, expandPacketTransport, expandEvidenceSegments } from '../../scripts/news/evidence-packets.mjs';
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
 import { aiDeferralReason } from '../../scripts/news/run.mjs';
@@ -17,6 +17,7 @@ test('September 6 election packet fits with 20 sources, fresh excerpts and full 
   const before = structuredClone(fixture);
   const prompt = buildAnalysisPrompt([fixture]);
   assert.ok(prompt.length <= 39000, `Prompt has ${prompt.length} characters`);
+  const suppliedIds = suppliedEvidenceIds(prompt)[fixture.story_id];
   const packet = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.equal(packet.sources.length, 20);
   assert.equal(packet.claims.length, fixture.claims.length);
@@ -33,6 +34,10 @@ test('September 6 election packet fits with 20 sources, fresh excerpts and full 
   for (const source of expandEvidenceSegments(packet)) for (const evidence of source.evidence_segments) {
     const original = fixture.sources.find(item => item.url === source.url);
     assert.ok(`${original.title} ${original.summary} ${original.article_excerpt || ''}`.includes(evidence.excerpt));
+    assert.ok(suppliedIds.includes(evidence.evidence_id));
+    const checked = { event_claims: [{ evidence: [{ evidence_id: evidence.evidence_id }] }] };
+    resolveEvidenceReferences(checked, fixture, suppliedIds);
+    assert.deepEqual(checked.event_claims[0].evidence[0], { source_id: original.source_id, url: original.url, excerpt: evidence.excerpt });
   }
   assert.deepEqual(fixture, before);
 });
@@ -50,6 +55,17 @@ test('twenty-source packet retains reserve for further runtime comparison metada
   assert.ok(prompt.length <= 39000);
   const expanded = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
   assert.deepEqual(expanded.currentness, fixture.currentness);
+});
+
+test('supplied reference catalog comes from the sent packet, never from provider assertions', async () => {
+  const packet = { story_id: 'wt-test', sources: [{ source_id: 'one', url: 'https://example.org/one', evidence_segments: [{ evidence_id: 'e0_0', excerpt: 'Die Behauptung bleibt offen.' }] }] };
+  const prompt = `UNTRUSTED_SOURCE_DATA_BEGIN\n${serializeEvidencePackets([packet], true)}\nUNTRUSTED_SOURCE_DATA_END`;
+  const result = await callWoekAi([], { prompt, fetchImpl: async (_url, request) => {
+    assert.equal(JSON.parse(request.body).question, prompt);
+    return new Response(JSON.stringify({ ok: true, answer: JSON.stringify({ analyses: [], supplied_evidence_ids: { 'wt-test': ['e0_99'] } }) }), { status: 200 });
+  }});
+  assert.deepEqual(result.supplied_evidence_ids, { 'wt-test': ['e0_0'] });
+  assert.deepEqual(suppliedEvidenceIds('Custom media-check prompt without source packet'), {});
 });
 
 test('dense cells preserve explicit null, absent fields, exact evidence ownership and legacy packets', () => {

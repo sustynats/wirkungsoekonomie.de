@@ -284,10 +284,12 @@ export function promptEvidenceSegments(source, sourceIndex) {
   return sourceEvidenceSegments(source).map(({ excerpt }, index) => ({ evidence_id: `e${sourceIndex}_${index}`, excerpt }));
 }
 
-export function resolveEvidenceReferences(analysis, story) {
+export function resolveEvidenceReferences(analysis, story, suppliedIds = []) {
+  const supplied = new Set(suppliedIds);
   const catalog = new Map(story.sources.flatMap((source, sourceIndex) => sourceEvidenceSegments(source).flatMap(({ evidence_id, excerpt }, index) => {
     const proof = { source_id: source.source_id, url: source.url, excerpt };
-    return [[evidence_id, proof], [`e${sourceIndex}_${index}`, proof]];
+    const shortId = `e${sourceIndex}_${index}`;
+    return [[evidence_id, proof], ...(supplied.has(shortId) ? [[shortId, proof]] : [])];
   })));
   for (const claim of analysis?.event_claims || []) {
     if (!Array.isArray(claim.evidence)) continue;

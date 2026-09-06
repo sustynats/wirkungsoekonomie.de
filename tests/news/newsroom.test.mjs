@@ -104,18 +104,18 @@ test("short request references retain exact document identity, contradictions an
   const before = structuredClone(sources);
   const a = structuredClone(analysis);
   a.event_claims[0].evidence = sources.flatMap((source, sourceIndex) => promptEvidenceSegments(source, sourceIndex).map(({ evidence_id }) => ({ evidence_id })));
-  resolveEvidenceReferences(a, { sources });
+  resolveEvidenceReferences(a, { sources }, a.event_claims[0].evidence.map(proof => proof.evidence_id));
   assert.deepEqual(a.event_claims[0].evidence, sources.flatMap(source => sourceEvidenceSegments(source).map(({ excerpt }) => ({ source_id: source.source_id, url: source.url, excerpt }))));
   assert.deepEqual(sources, before);
   assert.match(sourceEvidenceSegments(sources[0])[0].evidence_id, /^ev-/);
   // Selection may leave gaps: segment numbers must not be renumbered.
   a.event_claims[0].evidence = [{ evidence_id: "e1_1" }];
-  resolveEvidenceReferences(a, { sources });
+  resolveEvidenceReferences(a, { sources }, ["e1_1"]);
   assert.equal(a.event_claims[0].evidence[0].excerpt, sources[1].summary);
   assert.equal(a.event_claims[0].evidence[0].url, sources[1].url);
 });
 test("unknown short references and mixed evidence objects never manufacture a valid proof", () => {
-  for (const proof of [{ evidence_id: "e9_0" }, { evidence_id: "e0_999" }, { evidence_id: "e-1_0" }, { evidence_id: "e0_0", url: "https://wrong.example/" }]) {
+  for (const proof of [{ evidence_id: "e9_0" }, { evidence_id: "e0_999" }, { evidence_id: "e-1_0" }, { evidence_id: "e0_0" }, { evidence_id: "e0_0", url: "https://wrong.example/" }]) {
     const a = structuredClone(analysis);
     a.event_claims[0].evidence = [proof];
     resolveEvidenceReferences(a, { sources: [item] });

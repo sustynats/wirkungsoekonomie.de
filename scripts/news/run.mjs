@@ -1077,7 +1077,7 @@ export async function runWirkungsticker(options = {}) {
             report.media_check_cost_usd = Number((report.media_check_cost_usd + mediaUsage.estimated_cost_usd).toFixed(6));
           } else if (analysisCandidate.media_trigger?.relevant) report.media_checks_triggered += 1;
           else report.media_checks_skipped += 1;
-          if (analysis) resolveEvidenceReferences(analysis, analysisCandidate);
+          if (analysis) resolveEvidenceReferences(analysis, analysisCandidate, aiResult.supplied_evidence_ids?.[candidate.story_id] || []);
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
           newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });

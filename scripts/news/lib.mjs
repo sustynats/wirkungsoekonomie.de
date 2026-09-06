@@ -7,7 +7,7 @@ import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, 
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
 import { livingFileMatch, subjectConflict, matchingStories, isMerged } from "./living-files.mjs";
-import { compactEvidenceSegments, serializeEvidencePackets } from "./evidence-packets.mjs";
+import { compactEvidenceSegments, serializeEvidencePackets, expandEvidenceSegments, expandPacketTransport } from "./evidence-packets.mjs";
 import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis } from "./media-impact.mjs";
 
 const STOPWORDS = new Set([
@@ -932,6 +932,7 @@ function aiRetryDelayMs(response, attempt) {
 export async function callWoekAi(stories, options = {}) {
   const apiUrl = options.apiUrl || "https://130.162.217.58.sslip.io/api/woek-ai";
   const prompt = options.prompt || buildAnalysisPrompt(stories);
+  const suppliedIds = suppliedEvidenceIds(prompt);
   const attempts = Math.max(1, Math.min(3, Number(options.attempts || 3)));
   let response;
   let payload;
@@ -992,6 +993,7 @@ export async function callWoekAi(stories, options = {}) {
   if (!Array.isArray(parsed.analyses)) throw new Error("AI_SCHEMA_ANALYSES_REQUIRED");
   return {
     analyses: parsed.analyses,
+    supplied_evidence_ids: suppliedIds,
     provider: String(payload.provider || "Oracle WOeK-KI API"),
     model: String(payload.model || "unknown"),
     mode: String(payload.mode || "unknown"),
@@ -1005,6 +1007,15 @@ export async function callWoekAi(stories, options = {}) {
     cache_status: payload.cacheStatus || null,
     request_attempts: requestAttempts,
   };
+}
+
+export function suppliedEvidenceIds(prompt) {
+  const start = prompt.lastIndexOf("UNTRUSTED_SOURCE_DATA_BEGIN\n");
+  const end = prompt.lastIndexOf("\nUNTRUSTED_SOURCE_DATA_END");
+  if (start < 0 || end < start) return {};
+  const packets = JSON.parse(prompt.slice(start + "UNTRUSTED_SOURCE_DATA_BEGIN\n".length, end));
+  if (!Array.isArray(packets)) return {};
+  return Object.fromEntries(packets.map(packet => [expandPacketTransport(packet).story_id, expandEvidenceSegments(packet).flatMap(source => (source.evidence_segments || []).map(segment => segment.evidence_id))]));
 }
 
 function collectStrings(value, result = []) {

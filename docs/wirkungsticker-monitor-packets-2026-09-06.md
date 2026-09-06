@@ -12,6 +12,7 @@
 - Belegstellen liegen in einer gemeinsamen Tabelle mit ausdrücklichem Quellenindex. Wortlaut, Reihenfolge und Zuordnung bleiben erhalten. Der erste produktive Versuch lag noch acht Zeichen über dem Datenbudget. Deshalb erhalten Belege für die Übertragung kurze, ausschließlich im jeweiligen Auftrag gültige Verweise. Vor Validierung und Speicherung werden sie aus dem exakten Eingang wieder in Quellenkennung, vollständige URL und unveränderten Wortlaut aufgelöst. Historische Hash-Kennungen bleiben gültig; unbekannte oder gemischte Verweise werden nicht repariert.
 - Vergleichshistorie wird ebenso verlustfrei tabellarisch transportiert. Wiederholte Herkunftsangaben, Daten und gleichlautende Hinweise zur begrenzten Belegauswahl werden nur einmal übermittelt; Abweichungen bleiben ausdrücklich bestehen.
 - Quellen, Claims, Herkunft, Widersprüche und bestehende Artikel werden nicht gelöscht. Die bereits vorhandene Auswahl unveränderter Textstellen bleibt transparent begrenzt; keine zusätzlichen Artikelabrufe oder KI-Dienste wurden eingeführt.
+- Kurze Verweise werden zusätzlich gegen die tatsächlich übertragene Belegauswahl geprüft. Die erlaubten Kennungen stammen lokal aus dem gesendeten Paket, niemals aus einer Behauptung des Modells. Ein zwar im ursprünglichen Dokument vorhandener, aber nicht übertragener Absatz wird durch einen geratenen Verweis nicht zum Beleg.
 - Die Paketversion wird angehoben, sodass alte Prüfcaches nicht versehentlich den korrigierten Eingang überspringen. Historische Pakete bleiben für Audits dekodierbar.
 
 ## Grenzen und Nachweis
