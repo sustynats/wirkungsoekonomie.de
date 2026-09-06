@@ -66,7 +66,8 @@ RELEVANT_PREFIXES = (
 
 def git_files(root: Path) -> list[str]:
     proc = subprocess.run(["git", "ls-files"], cwd=root, check=True, text=True, stdout=subprocess.PIPE)
-    return [p.strip() for p in proc.stdout.splitlines() if p.strip()]
+    # An unresolved merge index can list multiple stages for one path.
+    return sorted({p.strip() for p in proc.stdout.splitlines() if p.strip()})
 
 
 def public_url(rel: str) -> str | None:
