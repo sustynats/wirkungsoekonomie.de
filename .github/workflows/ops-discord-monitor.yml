@@ -28,10 +28,12 @@ jobs:
         with:
           ref: main
           sparse-checkout: |
+            .github/workflows/ops-discord-monitor.yml
             scripts/ops/discord-monitor.mjs
             scripts/news/case-files.mjs
             scripts/news/check-run-health.mjs
             scripts/news/source-funnel.mjs
+            scripts/news/operating-cost.mjs
             tests/ops/discord-monitor.test.mjs
             reports/wirkungsticker-latest-run.json
             data/news/stories.json

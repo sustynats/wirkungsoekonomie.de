@@ -1,11 +1,35 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { advanceState, berlinParts, evaluateChecks, summarizeNews, dailyReport, probe, sendDiscord, publicationFlow } from '../../scripts/ops/discord-monitor.mjs';
 
 const now = '2026-09-04T06:00:00Z';
 const fixture = () => ({ report: { status: 'ok', operational_status: 'ok', completed_at: now, source_failures: 0, monthly_budget_usd: 18.9, budget_policy: { status: 'ok', fx: { rate_date: '2026-09-03', rate_usd_per_eur: 1.16 } }, source_health: [], queue: { status: 'clear', total: 0, capacity: 0, technical: 0, editorial: 0 }, source_funnel: [] }, usage: { runs: [] }, stories: [], liveFeed: { items: [] }, probes: [] });
 const healthy = [{ id: 'main', name: 'Hauptseite', ok: true }];
 const failed = [{ id: 'main', name: 'Hauptseite', ok: false, reason: 'HTTP 503' }];
+
+test('monitor sparse checkout includes the complete local module dependency graph', () => {
+  const root = fileURLToPath(new URL('../../', import.meta.url));
+  const workflowPath = '.github/workflows/ops-discord-monitor.yml';
+  const workflow = fs.readFileSync(path.join(root, workflowPath), 'utf8');
+  const checkout = workflow.split('sparse-checkout: |')[1].split('sparse-checkout-cone-mode:')[0]
+    .trim().split('\n').map(line => line.trim());
+  assert.ok(checkout.includes(workflowPath));
+  const visited = new Set();
+  function visit(file) {
+    if (visited.has(file)) return;
+    visited.add(file);
+    assert.ok(checkout.includes(file), `Monitor checkout is missing ${file}`);
+    const code = fs.readFileSync(path.join(root, file), 'utf8');
+    for (const match of code.matchAll(/(?:from\s*|import\s*\(\s*|import\s*)['"](\.[^'"]+\.mjs)['"]/g)) {
+      visit(path.posix.normalize(path.posix.join(path.posix.dirname(file), match[1])));
+    }
+  }
+  visit('scripts/ops/discord-monitor.mjs');
+  visit('tests/ops/discord-monitor.test.mjs');
+});
 
 test('Berlin daily boundary honors winter, summer and DST transitions', () => {
   assert.equal(berlinParts(now).hour, 8);

@@ -8,6 +8,46 @@ import { serializeEvidencePackets, expandPacketTransport, expandEvidenceSegments
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
 import { aiDeferralReason } from '../../scripts/news/run.mjs';
 
+test('September 6 election packet fits with 20 sources, fresh excerpts and full comparison context', () => {
+  const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/input-limit-regression-20260906.json', import.meta.url)));
+  fixture.currentness = { ...fixture.currentness, compared_current_feed_items: 5000, matching_current_feed_items: 20, followups_due: [] };
+  fixture.sources.slice(0, 3).forEach((source, i) => {
+    source.article_excerpt = `Die Quelle ${i} nennt weitere Angaben, lässt Ursache und mögliche Folgen aber ausdrücklich offen. `.repeat(45);
+  });
+  const before = structuredClone(fixture);
+  const prompt = buildAnalysisPrompt([fixture]);
+  assert.ok(prompt.length <= 39000, `Prompt has ${prompt.length} characters`);
+  const packet = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
+  assert.equal(packet.sources.length, 20);
+  assert.equal(packet.claims.length, fixture.claims.length);
+  assert.deepEqual(packet.related_ticker_history, fixture.related_ticker_history);
+  assert.deepEqual(packet.currentness, fixture.currentness);
+  packet.sources.forEach((row, i) => {
+    const source = { ...packet.source_defaults, ...row };
+    assert.equal(source.url, fixture.sources[i].url);
+    assert.equal(source.source_id, fixture.sources[i].source_id);
+    assert.equal(source.published_at, fixture.sources[i].published_at);
+    assert.equal(source.primary_source, fixture.sources[i].primary_source);
+    assert.deepEqual(source.provenance ? { ...packet.provenance_defaults, ...source.provenance } : null, fixture.sources[i].provenance || null);
+  });
+  for (const source of expandEvidenceSegments(packet)) for (const evidence of source.evidence_segments) {
+    const original = fixture.sources.find(item => item.url === source.url);
+    assert.ok(`${original.title} ${original.summary} ${original.article_excerpt || ''}`.includes(evidence.excerpt));
+  }
+  assert.deepEqual(fixture, before);
+});
+
+test('dense cells preserve explicit null, absent fields, exact evidence ownership and legacy packets', () => {
+  const story = { sources: [
+    { url: 'https://example.org/one', provenance: null, evidence_segments: [{ evidence_id: 'a', excerpt: 'Die Aussage wird ausdrücklich nicht bestätigt.' }] },
+    { url: 'https://example.org/two', evidence_segments: [{ evidence_id: 'b', excerpt: 'Die Aussage wird ausdrücklich bestätigt.' }] },
+    { url: 'https://example.org/empty', evidence_segments: [] },
+  ], claims: [{ claim: null }, { claim_id: 'missing-claim' }], related_ticker_history: [{ story_id: 'prior', summary: null }] };
+  assert.deepEqual(expandPacketTransport(JSON.parse(serializeEvidencePackets([story], true))[0]), story);
+  assert.deepEqual(expandPacketTransport({ sources_table: { columns: ['url', 'provenance'], rows: [[['https://example.org/old'], [null]]] } }), { sources: [{ url: 'https://example.org/old', provenance: null }] });
+  assert.throws(() => expandPacketTransport({ sources: [], evidence_table: { format: 'cells-v2', columns: ['source_index'], rows: [[9]] } }), /PACKET_SOURCE_REFERENCE_INVALID/);
+});
+
 test('soft budget throttling remains retryable; only a budget stop blocks eligible stories',()=>{
   const candidate={preanalysis:{internal_relevance_score:34},reassessment:false};
   assert.equal(aiDeferralReason(candidate,budgetStage(13.42,18.9),25),'AI_BUDGET_OR_BATCH_LIMIT');
