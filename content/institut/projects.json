@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-06",
+  "note": "Rückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.",
+  "owner": "Natalie Weber",
+  "projects": [
+    {
+      "id": "7f090a9b-4a4d-4dd0-a0f0-202608180001",
+      "slug": "wirkungsportal-parlament",
+      "title": "Wirkungsportal Parlament: von der politischen Frage zur überprüfbaren Wirkungsakte",
+      "workspaceSlug": "politik-demokratie-wirkungsanalyse",
+      "summary": "Ein Institutsprojekt unter der Verantwortung von Natalie Weber. Das öffentliche Portal verbindet politische Entscheidungen mit Originalquellen, nachvollziehbaren Wirkpfaden, Wirkungspotenzialen, Risiken und späteren Reality Checks. Entwicklungsbelege ab 14.08.2026, öffentlicher Start laut Veröffentlichungsregister am 15.08.2026; Projektakte am 06.09.2026 ergänzt. Der Betrieb läuft, die fachliche Prüfung weiterer Fälle geht weiter.",
+      "goal": "Politische Folgen verständlich und überprüfbar machen, ohne amtliche Fakten, eigene Analyse und beobachtete Zustandsveränderungen zu vermischen.",
+      "liveUrl": "https://parlament.wirkungsoekonomie.de/",
+      "firstEvidenceDate": "2026-08-14",
+      "recordedAt": "2026-09-06",
+      "owner": "Natalie Weber",
+      "status": "aktualisiert",
+      "visibility": "public",
+      "projectType": "plattformprojekt",
+      "timeline": [
+        {
+          "date": "2026-08-14",
+          "title": "Technisches MVP und Redaktionsgrundlage",
+          "detail": "Portalgerüst, DIP-Importvorbereitung und anschließend redaktionelle Prüfwerkzeuge im Repository dokumentiert. Dies ist der früheste hier belegte Entwicklungsstand, kein nachträglich erfundener Ideen- oder Abnahmetermin.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/d18c389cd91bce9d4b912ebe6f60f57a947900c6"
+        },
+        {
+          "date": "2026-08-15",
+          "title": "Öffentlicher Portalstart im Veröffentlichungsregister",
+          "detail": "Die Veröffentlichungsübersicht der Website verzeichnet den Portalstart am 15.08.2026. Die minutengenaue Erstfreischaltung ist nicht separat belegt.",
+          "source": "https://wirkungsoekonomie.de/news/"
+        },
+        {
+          "date": "2026-08-18",
+          "title": "Portal 2.0 und Institutszuordnung",
+          "detail": "Release-Commit für das Regierungs-Wirkungsportal 2.0 sowie die vorhandene öffentliche Institutsakte dokumentieren Architektur, Aufgaben und die Länder-/EU-Erweiterung. Die exakte allererste öffentliche Freischaltung ist hier nicht gesondert nachgewiesen.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e"
+        },
+        {
+          "date": "2026-08-23",
+          "title": "Reproduzierbares Veröffentlichungsartefakt",
+          "detail": "Ein minimales, commitgebundenes Auslieferungsartefakt wurde in der Deploymentdokumentation verankert.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/1a1a3ffb723499bbf296a9e88aaecb9ad6fa4a39"
+        },
+        {
+          "date": "2026-09-06",
+          "title": "Laufende Länderarbeit und transparente Ergänzung",
+          "detail": "Länderanalysen und Quellenarbeit laufen weiter. Projektauftrag, Konzepte, Aufgaben und Verantwortlichkeiten werden im Institut rückblickend vervollständigt. Offene Fachprüfungen werden nicht als erledigt ausgewiesen.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/EDITORIAL_WORKFLOW.md"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "730c89ef-399a-5cff-a315-d8a55d55a2b3",
+          "code": "PAR-01",
+          "date": "2026-08-14",
+          "title": "Projektauftrag und Gegenstand des Portals klären",
+          "taskType": "entscheidung",
+          "status": "erledigt",
+          "description": "Eine nachvollziehbare öffentliche Wirkungsprüfung politischer Entscheidungen als Institutsvorhaben beschreiben.",
+          "result": "Technisches MVP und dokumentierte redaktionelle Architektur liegen vor; dieser Projektauftrag verdichtet die vorhandene Arbeit rückblickend.",
+          "acceptance": "Zielgruppe, Gegenstand, Grenzen und erwartete Ergebnisse sind benannt.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/d18c389cd91bce9d4b912ebe6f60f57a947900c6",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "89d4540e-9c1d-5290-8030-2cfea1f49934",
+          "code": "PAR-02",
+          "date": "2026-08-14",
+          "title": "DIP-Import und redaktionelle Werkstatt aufbauen",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Amtliche Vorgänge importieren und von eigenen Bewertungen trennen.",
+          "result": "Importvorbereitung und redaktionelles Backend wurden im Repository umgesetzt.",
+          "acceptance": "Importierte Metadaten sind keine automatisch freigegebenen Wirkungsurteile.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/5797941214",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "ae7b891a-7662-5228-a0a1-953c6b2f8997",
+          "code": "PAR-03",
+          "date": "2026-08-14",
+          "title": "Historische Prüfung und Berechnungsherkunft dokumentieren",
+          "taskType": "recherche",
+          "status": "erledigt",
+          "description": "Historische Fälle, Formeln, Annahmen und Datenstände nachvollziehbar halten.",
+          "result": "Historischer Review- und Berechnungslayer ist als Entwicklungsschritt dokumentiert.",
+          "acceptance": "Originalquelle, Referenzstand und offene Attribution bleiben erkennbar.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/f3d983a160",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "13191bcf-d451-5179-90e6-a4e7de8c7bf1",
+          "code": "PAR-04",
+          "date": "2026-08-18",
+          "title": "Portal 2.0 als Veröffentlichung bereitstellen",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Die geprüfte technische Fassung ausliefern und öffentlich erklären.",
+          "result": "Release-Commit vom 18.08.2026 und öffentlich erreichbares Portal liegen vor. Der Nachtrag behauptet kein gesondertes unabhängiges Fachgutachten.",
+          "acceptance": "Öffentlicher Einstieg, Methoden- und Quellenzugänge sind nachvollziehbar.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "cb6b8195-fbcb-51cf-81eb-db2b9cb09bd7",
+          "code": "PAR-05",
+          "date": "2026-08-23",
+          "title": "Veröffentlichungsartefakt reproduzierbar begrenzen",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Auslieferung von kanonischem Datenbestand und Arbeitsmaterial trennen.",
+          "result": "Minimales Artefakt und Release-Regeln sind dokumentiert.",
+          "acceptance": "Ein geprüfter Commit ist der Auslieferung zugeordnet; Kostenregeln bleiben verbindlich.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/1a1a3ffb723499bbf296a9e88aaecb9ad6fa4a39",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "00137c75-dbc7-559c-9c66-7486781782db",
+          "code": "PAR-06",
+          "date": "2026-09-06",
+          "title": "Laufende Länderanalysen fachlich prüfen",
+          "taskType": "review",
+          "status": "in_arbeit",
+          "description": "Quellen und objektspezifische Analysen unter anderem für aktuelle Länderfälle vervollständigen.",
+          "result": "Arbeit läuft; offene Prüf- und Freigabeschritte bleiben sichtbar.",
+          "acceptance": "Nur quellengebundene, fachlich begründete Fälle publizieren; negative Prüfergebnisse sperren die Freigabe.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/EDITORIAL_WORKFLOW.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 1
+        },
+        {
+          "id": "66ebad21-d67c-5341-94af-f6eafd62027b",
+          "code": "PAR-07",
+          "date": "2026-09-06",
+          "title": "Reality Checks mit neuer Evidenz fortschreiben",
+          "taskType": "recherche",
+          "status": "in_arbeit",
+          "description": "Beobachtungen nach Umsetzung mit Erwartung und Gegenfaktum abgleichen.",
+          "result": "Fortlaufende Aufgabe; ein veröffentlichter Analysegegenstand ist noch kein Wirkungsnachweis.",
+          "acceptance": "Änderung, Mechanismus, Unsicherheit und Zurechnung getrennt dokumentieren.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/MONITORING_ENGINE.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 1
+        },
+        {
+          "id": "c6be8d11-584b-53f3-9816-c77c8b96fb45",
+          "code": "PAR-08",
+          "date": "2026-09-06",
+          "title": "Projektakte und Lernschleife im Institut nachführen",
+          "taskType": "text",
+          "status": "erledigt",
+          "description": "Vorhandene Arbeit mit Auftrag, Konzept, Chronik und Zuständigkeiten nachvollziehbar machen.",
+          "result": "Retrospektive Dokumentation erstellt; alle Aufgaben Natalie Weber zugeordnet.",
+          "acceptance": "Historische Belege und heutiges Nachtragsdatum sind getrennt; bestehende Aufgaben bleiben erhalten.",
+          "source": "https://parlament.wirkungsoekonomie.de/methodik",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        }
+      ],
+      "documents": [
+        {
+          "id": "e6efa6f2-4036-5517-9f01-6832f5c4a9b4",
+          "kind": "auftrag",
+          "title": "Parlament · Projektauftrag und Leistungsbeschreibung",
+          "status": "final",
+          "body": "# Parlament · Projektauftrag und Leistungsbeschreibung\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Ausgangsfrage und Zielgruppe\nWie lassen sich die möglichen und später beobachteten Folgen politischer Entscheidungen für Bürger:innen, Medien, Forschung und Verwaltung verständlich prüfen? Der Auftrag ist ein internes Eigenvorhaben des Wirkungsinstituts unter der Verantwortung von Natalie Weber. Es wird kein externer Auftrag, Vertrag oder Drittmittelgeber behauptet.\n\n## Liefergegenstände\n- Öffentliches Portal mit stabilen Fallakten und verständlicher Orientierung.\n- Getrennte amtliche Sachverhalte, eigene Wirkungsanalyse und Quellenakten.\n- Dokumentierter Prüfprozess mit Veröffentlichungssperren und nachvollziehbaren Versionen.\n- Fortlaufende Beobachtung geeigneter Fälle nach Umsetzung.\n\n## Abnahme und Grenzen\nTechnische Veröffentlichung erfordert erreichbare Seiten und funktionierende Quellen- und Methodenwege. Fachliche Veröffentlichung verlangt eine konkrete Begründung je Fall. Ungeklärte Quellenlage, Identität oder Zurechnung darf nicht durch Standardtext verdeckt werden. Das Portal ist unabhängig und nicht amtlich; es erstellt keine Personen- oder Parteienranglisten.\n\n## Verantwortung und Steuerung\nNatalie Weber verantwortet Projekt, Aufgaben, Redaktion und Freigabe. Fachprüfung ist eine Tätigkeit, keine Behauptung einer externen oder personell unabhängigen Begutachtung. Vor Veröffentlichung werden Quellen, Kausalitätsgrenzen und Schutzgrenzen geprüft. Betrieb und weitere Facharbeit bleiben nach dem Livegang aktiv.\n## Quellen und Ergebniszugänge\n\n- [Technisches MVP, 14.08.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/d18c389cd91bce9d4b912ebe6f60f57a947900c6)\n- [Portal 2.0, 18.08.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e)\n- [Methodik des öffentlichen Portals](https://parlament.wirkungsoekonomie.de/methodik)\n- [Redaktioneller Prüfprozess](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/EDITORIAL_WORKFLOW.md)\n"
+        },
+        {
+          "id": "1a127cdb-daca-5379-a865-c8e8a1b73d67",
+          "kind": "konzept",
+          "title": "Parlament · Fachkonzept, Prüflogik und Betrieb",
+          "status": "final",
+          "body": "# Parlament · Fachkonzept, Prüflogik und Betrieb\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Vom Gegenstand zur Prüfung\nAmtliche Entscheidung und fachlicher Wirkungsgegenstand werden getrennt modelliert. Die Analyse verbindet Auslöser, Mechanismus, mögliche Zustandsveränderung und Referenzraum (A→M→ΔZ→R). Wirkung bezeichnet eine tatsächliche Zustandsveränderung; Wirkungspotenzial und Wirkungsrisiko sind davon zu unterscheiden.\n\n## Bestehende staatliche Architektur\nDie WÖk ergänzt vorhandene Verfahren. Für geeignete Bundesregelungsvorhaben sind GGO, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung, DNS und eNAP/eGFA relevant. Für finanzwirksame Maßnahmen sind § 7 BHO und die VV-BHO objektspezifisch zu berücksichtigen. Fehlende öffentliche eNAP-Unterlagen bedeuten, dass eine Prüfung öffentlich nicht belegt ist; daraus folgt nicht, dass keine Prüfung stattgefunden hat. DNS-/SDG-Bezug und Indikatoren sind kein Kausalitätsbeweis.\n\n## Zusätzliche Prüfschritte\nProblem- und Zielprüfung, Wirkungen erster bis dritter Ordnung, Verteilung und Resilienz, Gegenfaktum und Attribution, fehlende materielle Aspekte, Umsetzbarkeit, Kohärenz und vergleichbare Handlungsoptionen werden verbunden. Nichtkompensation schützt harte Grenzen; Reverse Merit Order priorisiert kritische negative Wirkungen. SDG+ ist eine WÖk-eigene Erweiterung.\n\n## Veröffentlichung und Rückkopplung\nImporte erzeugen Arbeitsstände. Nur begründete Prüfungen können öffentlich werden. Spätere Beobachtungen werden versioniert abgeglichen; Reporting beschreibt einen Stand, Rückkopplung verändert auf dieser Grundlage die nächste Entscheidung. Öffentliches Eigentum allein belegt keine Regierungsentscheidung. Zuständigkeit und Attribution bleiben zu begründen.\n\n## Quellen und Ergebniszugänge\n\n- [Technisches MVP, 14.08.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/d18c389cd91bce9d4b912ebe6f60f57a947900c6)\n- [Portal 2.0, 18.08.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e)\n- [Methodik des öffentlichen Portals](https://parlament.wirkungsoekonomie.de/methodik)\n- [Redaktioneller Prüfprozess](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/EDITORIAL_WORKFLOW.md)\n"
+        },
+        {
+          "id": "ee65553d-6cd8-5b93-8a4c-663af9f2df6c",
+          "kind": "chronik",
+          "title": "Wirkungsportal Parlament · Chronik, Aufgaben und Abnahmekriterien",
+          "status": "final",
+          "body": "# Wirkungsportal Parlament · Chronik, Aufgaben und Abnahmekriterien\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Belegter Verlauf\n\n### 2026-08-14 · Technisches MVP und Redaktionsgrundlage\nPortalgerüst, DIP-Importvorbereitung und anschließend redaktionelle Prüfwerkzeuge im Repository dokumentiert. Dies ist der früheste hier belegte Entwicklungsstand, kein nachträglich erfundener Ideen- oder Abnahmetermin.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/d18c389cd91bce9d4b912ebe6f60f57a947900c6\n\n### 2026-08-15 · Öffentlicher Portalstart\nDie Veröffentlichungsübersicht verzeichnet den Portalstart am 15.08.2026. Die minutengenaue Erstfreischaltung ist nicht gesondert belegt.\n\nBeleg: https://wirkungsoekonomie.de/news/\n\n### 2026-08-18 · Portal 2.0 und Institutszuordnung\nRelease-Commit für das Regierungs-Wirkungsportal 2.0 sowie die vorhandene öffentliche Institutsakte dokumentieren Architektur, Aufgaben und die Länder-/EU-Erweiterung. Die exakte allererste öffentliche Freischaltung ist hier nicht gesondert nachgewiesen.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e\n\n### 2026-08-23 · Reproduzierbares Veröffentlichungsartefakt\nEin minimales, commitgebundenes Auslieferungsartefakt wurde in der Deploymentdokumentation verankert.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/1a1a3ffb723499bbf296a9e88aaecb9ad6fa4a39\n\n### 2026-09-06 · Laufende Länderarbeit und transparente Ergänzung\nLänderanalysen und Quellenarbeit laufen weiter. Projektauftrag, Konzepte, Aufgaben und Verantwortlichkeiten werden im Institut rückblickend vervollständigt. Offene Fachprüfungen werden nicht als erledigt ausgewiesen.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/EDITORIAL_WORKFLOW.md\n\n## Aufgaben und Arbeitsstände\n\n### PAR-01 · Projektauftrag und Gegenstand des Portals klären\n- Arbeits-/Belegdatum: 2026-08-14\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Eine nachvollziehbare öffentliche Wirkungsprüfung politischer Entscheidungen als Institutsvorhaben beschreiben.\n- Ergebnis/Arbeitsstand: Technisches MVP und dokumentierte redaktionelle Architektur liegen vor; dieser Projektauftrag verdichtet die vorhandene Arbeit rückblickend.\n- Abnahmekriterium: Zielgruppe, Gegenstand, Grenzen und erwartete Ergebnisse sind benannt.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/d18c389cd91bce9d4b912ebe6f60f57a947900c6\n\n### PAR-02 · DIP-Import und redaktionelle Werkstatt aufbauen\n- Arbeits-/Belegdatum: 2026-08-14\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Amtliche Vorgänge importieren und von eigenen Bewertungen trennen.\n- Ergebnis/Arbeitsstand: Importvorbereitung und redaktionelles Backend wurden im Repository umgesetzt.\n- Abnahmekriterium: Importierte Metadaten sind keine automatisch freigegebenen Wirkungsurteile.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/5797941214\n\n### PAR-03 · Historische Prüfung und Berechnungsherkunft dokumentieren\n- Arbeits-/Belegdatum: 2026-08-14\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Historische Fälle, Formeln, Annahmen und Datenstände nachvollziehbar halten.\n- Ergebnis/Arbeitsstand: Historischer Review- und Berechnungslayer ist als Entwicklungsschritt dokumentiert.\n- Abnahmekriterium: Originalquelle, Referenzstand und offene Attribution bleiben erkennbar.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/f3d983a160\n\n### PAR-04 · Portal 2.0 als Veröffentlichung bereitstellen\n- Arbeits-/Belegdatum: 2026-08-18\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Die geprüfte technische Fassung ausliefern und öffentlich erklären.\n- Ergebnis/Arbeitsstand: Release-Commit vom 18.08.2026 und öffentlich erreichbares Portal liegen vor. Der Nachtrag behauptet kein gesondertes unabhängiges Fachgutachten.\n- Abnahmekriterium: Öffentlicher Einstieg, Methoden- und Quellenzugänge sind nachvollziehbar.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e\n\n### PAR-05 · Veröffentlichungsartefakt reproduzierbar begrenzen\n- Arbeits-/Belegdatum: 2026-08-23\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Auslieferung von kanonischem Datenbestand und Arbeitsmaterial trennen.\n- Ergebnis/Arbeitsstand: Minimales Artefakt und Release-Regeln sind dokumentiert.\n- Abnahmekriterium: Ein geprüfter Commit ist der Auslieferung zugeordnet; Kostenregeln bleiben verbindlich.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/1a1a3ffb723499bbf296a9e88aaecb9ad6fa4a39\n\n### PAR-06 · Laufende Länderanalysen fachlich prüfen\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: In Arbeit\n- Verantwortlich: Natalie Weber\n- Auftrag: Quellen und objektspezifische Analysen unter anderem für aktuelle Länderfälle vervollständigen.\n- Ergebnis/Arbeitsstand: Arbeit läuft; offene Prüf- und Freigabeschritte bleiben sichtbar.\n- Abnahmekriterium: Nur quellengebundene, fachlich begründete Fälle publizieren; negative Prüfergebnisse sperren die Freigabe.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/EDITORIAL_WORKFLOW.md\n\n### PAR-07 · Reality Checks mit neuer Evidenz fortschreiben\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: In Arbeit\n- Verantwortlich: Natalie Weber\n- Auftrag: Beobachtungen nach Umsetzung mit Erwartung und Gegenfaktum abgleichen.\n- Ergebnis/Arbeitsstand: Fortlaufende Aufgabe; ein veröffentlichter Analysegegenstand ist noch kein Wirkungsnachweis.\n- Abnahmekriterium: Änderung, Mechanismus, Unsicherheit und Zurechnung getrennt dokumentieren.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/MONITORING_ENGINE.md\n\n### PAR-08 · Projektakte und Lernschleife im Institut nachführen\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Vorhandene Arbeit mit Auftrag, Konzept, Chronik und Zuständigkeiten nachvollziehbar machen.\n- Ergebnis/Arbeitsstand: Retrospektive Dokumentation erstellt; alle Aufgaben Natalie Weber zugeordnet.\n- Abnahmekriterium: Historische Belege und heutiges Nachtragsdatum sind getrennt; bestehende Aufgaben bleiben erhalten.\n- Beleg: https://parlament.wirkungsoekonomie.de/methodik\n\n## Verbindungen\n\n- Öffentliches Angebot: https://parlament.wirkungsoekonomie.de/\n- Institutsprojekt: https://institut.wirkungsoekonomie.de/projekte/wirkungsportal-parlament\n- Projektwerkstatt mit Aufgaben: https://institut.wirkungsoekonomie.de/werkstatt/wirkungsportal-parlament\n\nDie sechs bereits am 18.08.2026 angelegten Aufgaben bleiben erhalten. Ihre historischen Statusangaben sind Bestandsdokumentation; die ergänzenden Aufgaben konkretisieren die laufende Arbeit am 06.09.2026.\n\n## Quellen und Ergebniszugänge\n\n- [Technisches MVP, 14.08.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/d18c389cd91bce9d4b912ebe6f60f57a947900c6)\n- [Portal 2.0, 18.08.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e)\n- [Methodik des öffentlichen Portals](https://parlament.wirkungsoekonomie.de/methodik)\n- [Redaktioneller Prüfprozess](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/EDITORIAL_WORKFLOW.md)\n"
+        }
+      ],
+      "openQuestions": [
+        "Welche Fälle besitzen eine hinreichende Primärquellen- und Evidenzbasis für die Veröffentlichung?",
+        "Welche Veränderungen lassen sich einer Maßnahme ursächlich zurechnen und welche bleiben offen?",
+        "Welche zusätzlichen Daten erlauben einen Reality Check nach der Umsetzung?"
+      ],
+      "nextSteps": [
+        "Natalie Weber: laufende Länder- und EU-Fälle fachlich prüfen und begründete Ergebnisse freigeben.",
+        "Natalie Weber: Reality-Check-Kandidaten anhand neuer Zustandsdaten und Gegenfakten prüfen.",
+        "Nachtrag 06.09.2026: Projektauftrag, Konzept, Chronik und Aufgaben sind in der Projekt- und Dokumentenwerkstatt dokumentiert."
+      ],
+      "sources": [
+        {
+          "title": "Technisches MVP, 14.08.2026",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/commit/d18c389cd91bce9d4b912ebe6f60f57a947900c6"
+        },
+        {
+          "title": "Portal 2.0, 18.08.2026",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e"
+        },
+        {
+          "title": "Methodik des öffentlichen Portals",
+          "url": "https://parlament.wirkungsoekonomie.de/methodik"
+        },
+        {
+          "title": "Redaktioneller Prüfprozess",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlament/tech/EDITORIAL_WORKFLOW.md"
+        }
+      ],
+      "shortTitle": "Wirkungsportal Parlament",
+      "publicStatus": "Live · laufende Weiterentwicklung"
+    },
+    {
+      "id": "2f5b7f9f-0509-5ed8-a022-c61aa9c3b5f0",
+      "slug": "wirkungsticker",
+      "title": "Wirkungsticker: aus Nachrichten werden nachvollziehbare Wirkungsakten",
+      "workspaceSlug": "medien-demokratie",
+      "summary": "Ein Institutsprojekt unter der Verantwortung von Natalie Weber, live seit 03.09.2026. Der Wirkungsticker trennt Quellenzusammenfassung, Faktencheck, Folgencheck und wirkungsökonomische Einordnung. Die Akten werden bei neuen materiellen Entwicklungen fortgeschrieben. Projektauftrag, Konzept, Aufgaben und Chronik wurden am 06.09.2026 nachgetragen.",
+      "goal": "Ausgewählte neue Entwicklungen quellengebunden einordnen und spätere Änderungen nachvollziehbar machen.",
+      "liveUrl": "https://wirkungsoekonomie.de/wirkungsticker/",
+      "firstEvidenceDate": "2026-09-03",
+      "recordedAt": "2026-09-06",
+      "owner": "Natalie Weber",
+      "status": "aktualisiert",
+      "visibility": "public",
+      "projectType": "plattformprojekt",
+      "timeline": [
+        {
+          "date": "2026-09-03",
+          "title": "Erste Implementierung und öffentlicher Start",
+          "detail": "Die erste Implementierung wurde am 02.09. um 23:19 UTC, also am 03.09. um 01:19 in Deutschland, versioniert. Die Veröffentlichungsübersicht führt den Start am 03.09.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b"
+        },
+        {
+          "date": "2026-09-03",
+          "title": "Lebende Akten, getrennte Prüfungen und App",
+          "detail": "Automatische Aktualisierungen, Quellenzusammenfassung, Fakten-/Folgencheck und App-Funktionen wurden schrittweise ergänzt.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/1f6ed47554"
+        },
+        {
+          "date": "2026-09-04",
+          "title": "Titelbilder und Rückmeldung",
+          "detail": "Titelbild- und App-Ausgabe wurden stabilisiert; die erste öffentliche Umfrage sammelt Rückmeldungen zum Ticker.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/6c88c6897a"
+        },
+        {
+          "date": "2026-09-05",
+          "title": "Quellenintegrität und Medienprüfung vertieft",
+          "detail": "Mehrquellenakten, belegte Medienbefunde und redaktionelle Analysen wurden erweitert; Ablehnungen und Korrekturen bleiben prüfbar.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/8c1018c55f"
+        },
+        {
+          "date": "2026-09-06",
+          "title": "Warteschlange und Betriebsbeobachtung",
+          "detail": "Technische Wiederholungen, fehlende KI-Entscheidungen und Budgetpriorisierung werden getrennt; die Institutsakte wird nachgetragen.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/4141e9b3c9"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "95469514-32b0-5b9e-a207-aea5c789b8d6",
+          "code": "TIC-01",
+          "date": "2026-09-03",
+          "title": "Projektidee und redaktionellen Auftrag strukturieren",
+          "taskType": "entscheidung",
+          "status": "erledigt",
+          "description": "Ausgewählte Nachrichten nach möglichen Zustandsveränderungen statt bloßer Aufmerksamkeit einordnen.",
+          "result": "Erste Implementierung und veröffentlichter Produkteinstieg liegen vor.",
+          "acceptance": "Auftrag, Zielgruppe und Aussagegrenzen sind dokumentiert.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "3d1220a0-1c36-536f-b540-c64079c5720c",
+          "code": "TIC-02",
+          "date": "2026-09-03",
+          "title": "Quellenregister, Import und Deduplizierung aufbauen",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Freigegebene Quellen erfassen, Einträge normalisieren und Wiederholungen erkennen.",
+          "result": "Versioniertes Register und automatische Verarbeitung vorhanden.",
+          "acceptance": "Quelle, Aktualität und Dublettenstatus sind nachvollziehbar.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "ca659307-acdb-592b-8e23-3d3ab143f2c4",
+          "code": "TIC-03",
+          "date": "2026-09-03",
+          "title": "Quellenzusammenfassung von Analyse trennen",
+          "taskType": "text",
+          "status": "erledigt",
+          "description": "Zuerst den Quelleninhalt erklären, danach Fakten- und Folgencheck.",
+          "result": "Eigenständige neutrale Zusammenfassung wurde implementiert.",
+          "acceptance": "Lesende erkennen, was Quelle, Behauptung und eigene Einordnung ist.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/e9e58e7ba8",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "6f8f6f30-5dea-52d5-afdd-e4c7661adaea",
+          "code": "TIC-04",
+          "date": "2026-09-03",
+          "title": "Relevanz-, Evidenz- und Publikationsgates umsetzen",
+          "taskType": "review",
+          "status": "erledigt",
+          "description": "Neuigkeit, materielle mögliche Zustandsveränderung und Primärquellenbasis prüfen.",
+          "result": "Publikationsgates und Ausschlussregeln sind dokumentiert und implementiert.",
+          "acceptance": "Ungestützte Aussagen, Personenrankings und Scheingenauigkeit blockieren eine Veröffentlichung.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "ea908782-4a5a-5541-b37c-5e41b1ff1680",
+          "code": "TIC-05",
+          "date": "2026-09-03",
+          "title": "Öffentliche Ausgabe, Feeds und lebende Akten bereitstellen",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Übersicht und Detailakten mit stabilen URLs, Feeds und Versionsfortschreibung erzeugen.",
+          "result": "Wirkungsticker veröffentlicht; neue Entwicklungen können bestehende Akten fortschreiben.",
+          "acceptance": "Historische Fassungen und Korrekturen werden nicht still überschrieben.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/1f6ed47554",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "4d50da49-2e94-5936-8001-f73167e9ae55",
+          "code": "TIC-06",
+          "date": "2026-09-03",
+          "title": "App-Aktualisierung und freiwillige Benachrichtigung ergänzen",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Installierbare App und Opt-in-Zustellung in den vorhandenen Betrieb einfügen.",
+          "result": "App- und Push-Funktionen sind dokumentiert; Betriebssystemgrenzen bleiben bestehen.",
+          "acceptance": "Einwilligung, Deaktivierung und Aktualisierung sind nachvollziehbar.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-PUSH-UND-CLOCK.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "581ed86a-c1e8-5b21-a227-03e2ee750643",
+          "code": "TIC-07",
+          "date": "2026-09-04",
+          "title": "Visuelle Orientierung und Titelbilder stabilisieren",
+          "taskType": "design",
+          "status": "erledigt",
+          "description": "Themen, mögliche Folgen und zeitliche Stände verständlich darstellen.",
+          "result": "Visuelle Anker und Titelbildausgabe wurden ergänzt.",
+          "acceptance": "Illustrationen und analytische Visuals gelten nicht als fotografischer Beweis; Zahlen brauchen Quellen.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/6c88c6897a",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "d97f59f6-5019-59e2-922e-9f4e0e6b79d9",
+          "code": "TIC-08",
+          "date": "2026-09-05",
+          "title": "Quellenintegrität und Medien-/Sprachprüfung vertiefen",
+          "taskType": "review",
+          "status": "erledigt",
+          "description": "Ereignis, Akteursaussage und mediale Vermittlung getrennt prüfen.",
+          "result": "Medienbefunde und Quellenrollen sind im Schema und den Prüfregeln verankert.",
+          "acceptance": "Nur konkrete kommunikative Handlungen prüfen; keine pauschale Medien- oder Personenbewertung.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/8c1018c55f",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "335fd9d5-26ad-565a-ad02-b273c7b834c6",
+          "code": "TIC-09",
+          "date": "2026-09-06",
+          "title": "Warteschlange und Kostensteuerung nachführen",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Technische Fehler, redaktionelle Ablehnung und Kapazitätsgrenzen unterscheiden.",
+          "result": "Reparatur-Commits trennen fehlende KI-Entscheidungen und steuern Wiederholungen.",
+          "acceptance": "Budgetgrenzen bleiben verbindlich; keine pauschale Zusage störungsfreien Betriebs.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/commit/4141e9b3c9",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "5468aa21-cd75-591b-b924-1a084d5ae11b",
+          "code": "TIC-10",
+          "date": "2026-09-06",
+          "title": "Redaktionelle Qualität und Korrekturen laufend prüfen",
+          "taskType": "review",
+          "status": "in_arbeit",
+          "description": "Neue Akten und Aktualisierungen auf Quellen, Wirkpfade und Unsicherheiten prüfen.",
+          "result": "Fortlaufende Institutsarbeit nach dem Produktstart.",
+          "acceptance": "Korrekturen begründen und falsche Zusammenführungen transparent auflösen.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-SOURCE-INTEGRITY.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 1
+        },
+        {
+          "id": "546bc560-74e4-587f-9159-cf29355c394f",
+          "code": "TIC-11",
+          "date": "2026-09-06",
+          "title": "Umfragefeedback in Verbesserungsentscheidungen überführen",
+          "taskType": "recherche",
+          "status": "bereit",
+          "description": "Rückmeldungen zum Ticker sichten und konkrete Änderungen begründen.",
+          "result": "Erste Umfrage ist live; eine abgeschlossene Auswertung wird nicht behauptet.",
+          "acceptance": "Auswertung als nicht repräsentativ einordnen; privates Freitextfeedback nicht veröffentlichen.",
+          "source": "https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "8865fd83-876a-550b-a3a8-3d694db1aa25",
+          "code": "TIC-12",
+          "date": "2026-09-06",
+          "title": "Projektauftrag, Konzept und Chronik im Institut dokumentieren",
+          "taskType": "text",
+          "status": "erledigt",
+          "description": "Bisherige Produktarbeit rückblickend in die Institutswerkstatt einordnen.",
+          "result": "Nachtrag mit belegbaren Terminen und Zuständigkeit Natalie Weber erstellt.",
+          "acceptance": "Entwicklung, Veröffentlichung und laufende Arbeit sind unterscheidbar.",
+          "source": "https://wirkungsoekonomie.de/news/",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        }
+      ],
+      "documents": [
+        {
+          "id": "85c6484d-7128-5f91-b635-8b11fe9b8982",
+          "kind": "auftrag",
+          "title": "Wirkungsticker · Projektauftrag und Leistungsbeschreibung",
+          "status": "final",
+          "body": "# Wirkungsticker · Projektauftrag und Leistungsbeschreibung\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Ausgangsfrage\nWie können Menschen aktuelle Nachrichten auf ihre mögliche Bedeutung für Mensch, Planet und Demokratie prüfen, ohne Quelleninhalt, Vermutung und Bewertung zu verwechseln? Das Projekt ist ein internes Eigenvorhaben des Wirkungsinstituts. Natalie Weber trägt die fachliche und redaktionelle Verantwortung; es wird kein bezahlter externer Auftrag behauptet.\n\n## Leistungsumfang\nEine überschaubare Auswahl quellengebundener Wirkungsnachrichten, stabile und fortschreibbare Akten, klar getrennte Zusammenfassung und Analyse, Quellenlinks, Versions- und Korrekturhinweise sowie eine nutzbare mobile Ausgabe. Installation und Benachrichtigungen bleiben freiwillig. Die fachliche Arbeit umfasst Quellenpflege, Auswahlregeln, Prüfmaßstäbe und verständliche Darstellung.\n\n## Qualitätskriterien\nNeue Entwicklung, materielle mögliche Zustandsveränderung und hinreichende Quellenbasis müssen gemeinsam vorliegen. Eine Meldung, Reichweite oder Zustimmung ist für sich genommen keine Wirkung. Es gibt keine Rangliste von Personen, Parteien oder Medienhäusern. Unbelegte Zahlen und ungestützte Kausalität sind keine zulässige Verdichtung.\n\n## Betrieb und Übergabe\nDie Veröffentlichung am 03.09.2026 beendet das Projekt nicht. Natalie Weber führt Quellenpflege, Qualitätskontrolle, Korrekturen und die Rückkopplung aus Nutzerhinweisen weiter.\n## Quellen und Ergebniszugänge\n\n- [Erste Implementierung, lokal 03.09.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b)\n- [Veröffentlichungsübersicht](https://wirkungsoekonomie.de/news/)\n- [Architektur und Betrieb](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER.md)\n- [Quellenintegrität](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-SOURCE-INTEGRITY.md)\n- [Medien- und Sprachwirkung](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md)\n"
+        },
+        {
+          "id": "4d666c78-6452-5961-8cd5-d690470a95d4",
+          "kind": "konzept",
+          "title": "Wirkungsticker · Redaktionskonzept und Lernschleife",
+          "status": "final",
+          "body": "# Wirkungsticker · Redaktionskonzept und Lernschleife\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Arbeitskette\nQuellenregister → Import → Normalisierung und Dublettenprüfung → Relevanz/Materialität → quellengebundene Analyse → Qualitätsgate → Veröffentlichung → Beobachtung und Korrektur. Bei neuer materieller Entwicklung wird eine bestehende Akte fortgeschrieben. Technisches Scheitern einer Analyse ist keine fachliche Ablehnung.\n\n## Inhaltliche Schichten\nDie Quellenzusammenfassung beschreibt den gesicherten Ausgangspunkt. Der Faktencheck trennt bestätigte Aussagen, Behauptungen und offene Punkte. Der Folgencheck erläutert Mechanismen, mögliche Folgen erster bis dritter Ordnung, Betroffene, Gegenläufe und Unsicherheiten. Medien- und Sprachwirkung betrachtet eine konkrete kommunikative Handlung mit Wirkungspotenzial, Resonanzraum und Wirkpfad.\n\n## Referenz und Schutz\nWirkung ist eine tatsächliche Zustandsveränderung. Potenzial und Risiko sind Erwartungen unter Unsicherheit. SDGs und gegebenenfalls DNS sind Referenzräume; ein Zielbezug beweist keine Wirkung. SDG+ ist eine eigene WÖk-Erweiterung. Nichtkompensation schützt harte Grenzen, Reverse Merit Order richtet Aufmerksamkeit zuerst auf kritische negative Wirkungen. Politische Prozesse werden unter Anerkennung vorhandener staatlicher Prüfverfahren eingeordnet.\n\n## Rückkopplung\nNeue Evidenz kann eine begründete Korrektur auslösen. Nutzerfeedback hilft, Darstellungen und Prüfbedarf zu verbessern. Es ersetzt weder Fachprüfung noch repräsentative Forschung. Reporting zeigt Veröffentlichungen und Betriebszustände; Rückkopplung bedeutet eine daraus abgeleitete, dokumentierte Änderung. Die erste Umfrage ist deshalb mit dem Tickerprojekt verbunden.\n\n## Technische Grenzen\nPersonenbezogene Umfrageantworten und Freitexte gehören nicht in öffentliche Projektakten. Dieser Nachtrag enthält ausschließlich öffentlich freigegebene Projektdokumentation.\n## Quellen und Ergebniszugänge\n\n- [Erste Implementierung, lokal 03.09.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b)\n- [Veröffentlichungsübersicht](https://wirkungsoekonomie.de/news/)\n- [Architektur und Betrieb](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER.md)\n- [Quellenintegrität](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-SOURCE-INTEGRITY.md)\n- [Medien- und Sprachwirkung](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md)\n"
+        },
+        {
+          "id": "8bc03e17-0107-5de3-af89-b8204f75b705",
+          "kind": "chronik",
+          "title": "Wirkungsticker · Chronik, Aufgaben und Abnahmekriterien",
+          "status": "final",
+          "body": "# Wirkungsticker · Chronik, Aufgaben und Abnahmekriterien\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Belegter Verlauf\n\n### 2026-09-03 · Erste Implementierung und öffentlicher Start\nDie erste Implementierung wurde am 02.09. um 23:19 UTC, also am 03.09. um 01:19 in Deutschland, versioniert. Die Veröffentlichungsübersicht führt den Start am 03.09.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b\n\n### 2026-09-03 · Lebende Akten, getrennte Prüfungen und App\nAutomatische Aktualisierungen, Quellenzusammenfassung, Fakten-/Folgencheck und App-Funktionen wurden schrittweise ergänzt.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/1f6ed47554\n\n### 2026-09-04 · Titelbilder und Rückmeldung\nTitelbild- und App-Ausgabe wurden stabilisiert; die erste öffentliche Umfrage sammelt Rückmeldungen zum Ticker.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/6c88c6897a\n\n### 2026-09-05 · Quellenintegrität und Medienprüfung vertieft\nMehrquellenakten, belegte Medienbefunde und redaktionelle Analysen wurden erweitert; Ablehnungen und Korrekturen bleiben prüfbar.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/8c1018c55f\n\n### 2026-09-06 · Warteschlange und Betriebsbeobachtung\nTechnische Wiederholungen, fehlende KI-Entscheidungen und Budgetpriorisierung werden getrennt; die Institutsakte wird nachgetragen.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/4141e9b3c9\n\n## Aufgaben und Arbeitsstände\n\n### TIC-01 · Projektidee und redaktionellen Auftrag strukturieren\n- Arbeits-/Belegdatum: 2026-09-03\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Ausgewählte Nachrichten nach möglichen Zustandsveränderungen statt bloßer Aufmerksamkeit einordnen.\n- Ergebnis/Arbeitsstand: Erste Implementierung und veröffentlichter Produkteinstieg liegen vor.\n- Abnahmekriterium: Auftrag, Zielgruppe und Aussagegrenzen sind dokumentiert.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b\n\n### TIC-02 · Quellenregister, Import und Deduplizierung aufbauen\n- Arbeits-/Belegdatum: 2026-09-03\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Freigegebene Quellen erfassen, Einträge normalisieren und Wiederholungen erkennen.\n- Ergebnis/Arbeitsstand: Versioniertes Register und automatische Verarbeitung vorhanden.\n- Abnahmekriterium: Quelle, Aktualität und Dublettenstatus sind nachvollziehbar.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER.md\n\n### TIC-03 · Quellenzusammenfassung von Analyse trennen\n- Arbeits-/Belegdatum: 2026-09-03\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Zuerst den Quelleninhalt erklären, danach Fakten- und Folgencheck.\n- Ergebnis/Arbeitsstand: Eigenständige neutrale Zusammenfassung wurde implementiert.\n- Abnahmekriterium: Lesende erkennen, was Quelle, Behauptung und eigene Einordnung ist.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/e9e58e7ba8\n\n### TIC-04 · Relevanz-, Evidenz- und Publikationsgates umsetzen\n- Arbeits-/Belegdatum: 2026-09-03\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Neuigkeit, materielle mögliche Zustandsveränderung und Primärquellenbasis prüfen.\n- Ergebnis/Arbeitsstand: Publikationsgates und Ausschlussregeln sind dokumentiert und implementiert.\n- Abnahmekriterium: Ungestützte Aussagen, Personenrankings und Scheingenauigkeit blockieren eine Veröffentlichung.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER.md\n\n### TIC-05 · Öffentliche Ausgabe, Feeds und lebende Akten bereitstellen\n- Arbeits-/Belegdatum: 2026-09-03\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Übersicht und Detailakten mit stabilen URLs, Feeds und Versionsfortschreibung erzeugen.\n- Ergebnis/Arbeitsstand: Wirkungsticker veröffentlicht; neue Entwicklungen können bestehende Akten fortschreiben.\n- Abnahmekriterium: Historische Fassungen und Korrekturen werden nicht still überschrieben.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/1f6ed47554\n\n### TIC-06 · App-Aktualisierung und freiwillige Benachrichtigung ergänzen\n- Arbeits-/Belegdatum: 2026-09-03\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Installierbare App und Opt-in-Zustellung in den vorhandenen Betrieb einfügen.\n- Ergebnis/Arbeitsstand: App- und Push-Funktionen sind dokumentiert; Betriebssystemgrenzen bleiben bestehen.\n- Abnahmekriterium: Einwilligung, Deaktivierung und Aktualisierung sind nachvollziehbar.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-PUSH-UND-CLOCK.md\n\n### TIC-07 · Visuelle Orientierung und Titelbilder stabilisieren\n- Arbeits-/Belegdatum: 2026-09-04\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Themen, mögliche Folgen und zeitliche Stände verständlich darstellen.\n- Ergebnis/Arbeitsstand: Visuelle Anker und Titelbildausgabe wurden ergänzt.\n- Abnahmekriterium: Illustrationen und analytische Visuals gelten nicht als fotografischer Beweis; Zahlen brauchen Quellen.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/6c88c6897a\n\n### TIC-08 · Quellenintegrität und Medien-/Sprachprüfung vertiefen\n- Arbeits-/Belegdatum: 2026-09-05\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Ereignis, Akteursaussage und mediale Vermittlung getrennt prüfen.\n- Ergebnis/Arbeitsstand: Medienbefunde und Quellenrollen sind im Schema und den Prüfregeln verankert.\n- Abnahmekriterium: Nur konkrete kommunikative Handlungen prüfen; keine pauschale Medien- oder Personenbewertung.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/8c1018c55f\n\n### TIC-09 · Warteschlange und Kostensteuerung nachführen\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Technische Fehler, redaktionelle Ablehnung und Kapazitätsgrenzen unterscheiden.\n- Ergebnis/Arbeitsstand: Reparatur-Commits trennen fehlende KI-Entscheidungen und steuern Wiederholungen.\n- Abnahmekriterium: Budgetgrenzen bleiben verbindlich; keine pauschale Zusage störungsfreien Betriebs.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/4141e9b3c9\n\n### TIC-10 · Redaktionelle Qualität und Korrekturen laufend prüfen\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: In Arbeit\n- Verantwortlich: Natalie Weber\n- Auftrag: Neue Akten und Aktualisierungen auf Quellen, Wirkpfade und Unsicherheiten prüfen.\n- Ergebnis/Arbeitsstand: Fortlaufende Institutsarbeit nach dem Produktstart.\n- Abnahmekriterium: Korrekturen begründen und falsche Zusammenführungen transparent auflösen.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-SOURCE-INTEGRITY.md\n\n### TIC-11 · Umfragefeedback in Verbesserungsentscheidungen überführen\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: Bereit\n- Verantwortlich: Natalie Weber\n- Auftrag: Rückmeldungen zum Ticker sichten und konkrete Änderungen begründen.\n- Ergebnis/Arbeitsstand: Erste Umfrage ist live; eine abgeschlossene Auswertung wird nicht behauptet.\n- Abnahmekriterium: Auswertung als nicht repräsentativ einordnen; privates Freitextfeedback nicht veröffentlichen.\n- Beleg: https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/\n\n### TIC-12 · Projektauftrag, Konzept und Chronik im Institut dokumentieren\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Bisherige Produktarbeit rückblickend in die Institutswerkstatt einordnen.\n- Ergebnis/Arbeitsstand: Nachtrag mit belegbaren Terminen und Zuständigkeit Natalie Weber erstellt.\n- Abnahmekriterium: Entwicklung, Veröffentlichung und laufende Arbeit sind unterscheidbar.\n- Beleg: https://wirkungsoekonomie.de/news/\n\n## Verbindungen\n\n- Öffentliches Angebot: https://wirkungsoekonomie.de/wirkungsticker/\n- Institutsprojekt: https://institut.wirkungsoekonomie.de/projekte/wirkungsticker\n- Projektwerkstatt mit Aufgaben: https://institut.wirkungsoekonomie.de/werkstatt/wirkungsticker\n\n## Quellen und Ergebniszugänge\n\n- [Erste Implementierung, lokal 03.09.2026](https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b)\n- [Veröffentlichungsübersicht](https://wirkungsoekonomie.de/news/)\n- [Architektur und Betrieb](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER.md)\n- [Quellenintegrität](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-SOURCE-INTEGRITY.md)\n- [Medien- und Sprachwirkung](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md)\n"
+        }
+      ],
+      "openQuestions": [
+        "Welche neuen Entwicklungen erfüllen Relevanz, Materialität und Quellenintegrität?",
+        "Welche Rückmeldungen verbessern Verständlichkeit und Nutzbarkeit tatsächlich?",
+        "Welche offenen oder zurückgestellten Akten benötigen neue Evidenz?"
+      ],
+      "nextSteps": [
+        "Natalie Weber: Quellenlage, laufende Veröffentlichungen und Korrekturen prüfen.",
+        "Natalie Weber: Rückmeldungen der Wirkungsticker-Umfrage auswerten und begründete Verbesserungen zurückführen.",
+        "Natalie Weber: Kosten, Warteschlange und technische Störungen beobachten; offene Prüfungen nicht als Ablehnungen ausgeben."
+      ],
+      "sources": [
+        {
+          "title": "Erste Implementierung, lokal 03.09.2026",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/commit/8090868b1b"
+        },
+        {
+          "title": "Veröffentlichungsübersicht",
+          "url": "https://wirkungsoekonomie.de/news/"
+        },
+        {
+          "title": "Architektur und Betrieb",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER.md"
+        },
+        {
+          "title": "Quellenintegrität",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-SOURCE-INTEGRITY.md"
+        },
+        {
+          "title": "Medien- und Sprachwirkung",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/ops/WIRKUNGSTICKER-MEDIEN-SPRACHWIRKUNG.md"
+        }
+      ],
+      "shortTitle": "Wirkungsticker",
+      "publicStatus": "Live · laufende Weiterentwicklung"
+    },
+    {
+      "id": "8274b6e3-edda-5f73-ba8c-ff4567ec003e",
+      "slug": "umfragen",
+      "title": "Umfragen: Rückmeldungen sammeln und Verbesserungen nachvollziehbar machen",
+      "workspaceSlug": "plattform-community",
+      "summary": "Ein Institutsprojekt unter der Verantwortung von Natalie Weber. Die erste Umfrage „Wie überzeugt Euch der neue Wirkungsticker?“ ist seit 04.09.2026 live. Die zweite Umfrage „In welcher Stadt möchtest Du leben?“ befindet sich in Umsetzung und Prüfung; die Abstimmung ist noch nicht freigegeben. Das Institut dokumentiert Konzept, Aufgaben, Qualitätsprüfung und die Rückführung von Feedback in Verbesserungen. Nachtrag: 06.09.2026.",
+      "goal": "Einen einfachen, transparenten Rückmeldekanal schaffen und begründete Verbesserungsentscheidungen dokumentieren.",
+      "liveUrl": "https://wirkungsoekonomie.de/umfragen/",
+      "firstEvidenceDate": "2026-09-04",
+      "recordedAt": "2026-09-06",
+      "owner": "Natalie Weber",
+      "status": "aktualisiert",
+      "visibility": "public",
+      "projectType": "plattformprojekt",
+      "timeline": [
+        {
+          "date": "2026-09-04",
+          "title": "Umfragemodul und erste Umfrage veröffentlicht",
+          "detail": "Der öffentliche Katalog dokumentiert 08:23:28 UTC als Veröffentlichungszeit der Wirkungsticker-Umfrage. Die Betriebsdokumentation hält Website- und API-Abnahme fest.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/content/polls/public-catalog.json"
+        },
+        {
+          "date": "2026-09-04",
+          "title": "Stabiler Betrieb und Auffindbarkeit abgesichert",
+          "detail": "Abstimmung, vertrauliche Freitextrückmeldung und öffentliche Auffindbarkeit sind dokumentiert.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md"
+        },
+        {
+          "date": "2026-09-06",
+          "title": "Zweite Umfrage in Umsetzung",
+          "detail": "Die zweite Umfrage „In welcher Stadt möchtest Du leben?“ vergleicht sieben illustrative Stadt- und Umlandszenarien anhand ausgewählter Vorhaben aus den Bundestagswahlprogrammen 2025. Der dokumentierte Katalogstand ist pausiert; Prüfung und Freigabe stehen noch aus. Die Bilder sind keine berechneten Zukunftsprognosen und keine Wahlempfehlung.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/09043a0653d4d2467aeeba34140f7a320a1c78f3/content/polls/public-catalog.json"
+        },
+        {
+          "date": "2026-09-06",
+          "title": "Institutsprojekt nachgetragen",
+          "detail": "Auftrag, Konzept, Chronik und Aufgaben sind der Projektinhaberin Natalie Weber zugeordnet. Die erste und die zweite Umfrage erhalten getrennte Arbeitsstände.",
+          "source": null
+        }
+      ],
+      "tasks": [
+        {
+          "id": "a9f09350-ca98-5c3e-935f-2ed927e0ed58",
+          "code": "UMF-01",
+          "date": "2026-09-04",
+          "title": "Auftrag und Zustandsmodell des Umfragemoduls definieren",
+          "taskType": "entscheidung",
+          "status": "erledigt",
+          "description": "Öffentliche Rückmeldungen ohne Konto ermöglichen und Status/Freigabe klar regeln.",
+          "result": "Umfragemodul mit Entwurf, Planung, Aktiv, Pause, Ende und Archiv implementiert.",
+          "acceptance": "Gespeicherter Entwurf und tatsächlich veröffentlichte Umfrage werden getrennt.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "8d2fe7c1-f4c9-5832-839c-b453620745b3",
+          "code": "UMF-02",
+          "date": "2026-09-04",
+          "title": "Umfrageverwaltung und dauerhafte Abstimmung umsetzen",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Umfragen verwalten und abgegebene Stimmen dauerhaft erhalten.",
+          "result": "Verwaltung, Abstimmung und Freigabe zur Veröffentlichung sind dokumentiert.",
+          "acceptance": "Abgegebene Stimmen bleiben erhalten; Entwürfe und private Angaben werden nicht veröffentlicht.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "08ddf7c2-398c-5772-8cb7-0684bc693f1e",
+          "code": "UMF-03",
+          "date": "2026-09-04",
+          "title": "Erste Wirkungsticker-Umfrage erstellen und veröffentlichen",
+          "taskType": "text",
+          "status": "erledigt",
+          "description": "Frage, vier Antwortoptionen und verständlichen Einstieg zum neuen Wirkungsticker bereitstellen.",
+          "result": "Umfrage seit 04.09.2026 öffentlich erreichbar.",
+          "acceptance": "Der veröffentlichte Katalog und die Live-Seite stimmen überein.",
+          "source": "https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "0124583e-45d3-500b-b7ab-fe41a1452527",
+          "code": "UMF-04",
+          "date": "2026-09-04",
+          "title": "Ergebnisregeln und internes Freitextfeedback prüfen",
+          "taskType": "review",
+          "status": "erledigt",
+          "description": "Ergebnisse erst entsprechend der konfigurierten Regel anzeigen; optionale Kommentare schützen.",
+          "result": "Erste Umfrage zeigt Ergebnisse nach eigener Abstimmung; Feedback ist nur intern einsehbar.",
+          "acceptance": "Keine öffentlichen Einzelantworten oder Kommentare; Stimme bleibt unabhängig vom Kommentar gespeichert.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "e11790d1-1b26-5722-83ce-6d676578fd9f",
+          "code": "UMF-05",
+          "date": "2026-09-04",
+          "title": "Live-Abnahme, mobile Ansicht und Mehrfachschutz durchführen",
+          "taskType": "review",
+          "status": "erledigt",
+          "description": "Öffentliche Seite, API, Mobilansicht und Persistenz prüfen.",
+          "result": "Betriebsdokumentation nennt bestandene automatisierte und Browser-Prüfungen mit separater Testumfrage.",
+          "acceptance": "Keine Teststimmen in echte Umfragen; Grenzen einfacher Mehrfachschutzmaßnahmen transparent machen.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "324f7ac6-fb09-5b59-b872-f38bca173fe3",
+          "code": "UMF-06",
+          "date": "2026-09-04",
+          "title": "Navigation und Suche integrieren",
+          "taskType": "plattform",
+          "status": "erledigt",
+          "description": "Öffentliche Umfragen über Navigation und Suche auffindbar machen.",
+          "result": "Footer-Verlinkung und Suche sind dokumentiert.",
+          "acceptance": "Veröffentlichte Umfragen sind über Footer und Suche erreichbar.",
+          "source": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "23b2835f-5794-5717-9191-b947a25641c8",
+          "code": "UMF-07",
+          "date": "2026-09-06",
+          "title": "Zweite Umfrage konzipieren und umsetzen",
+          "taskType": "text",
+          "status": "in_arbeit",
+          "description": "Fragestellung, Zielgruppe, Antwortoptionen, Erläuterung und Ergebnisregeln für die zweite Umfrage ausarbeiten.",
+          "result": "Laufende Umsetzung durch die Projektinhaberin bestätigt; Veröffentlichung noch offen.",
+          "acceptance": "Frage und Optionen sind verständlich, nicht suggestiv und vor Livegang geprüft.",
+          "source": null,
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 1
+        },
+        {
+          "id": "dad20f34-dedc-533b-bfe8-d34d623a6a20",
+          "code": "UMF-08",
+          "date": "2026-09-06",
+          "title": "Zweite Umfrage prüfen und freigeben",
+          "taskType": "review",
+          "status": "backlog",
+          "description": "Die konkrete zweite Umfrage nach Fertigstellung fachlich und technisch prüfen.",
+          "result": "Offener Folgeschritt, abhängig von UMF-07.",
+          "acceptance": "Live-Link, Status, Mobilansicht, Ergebnisregeln und Datenschutz prüfen; reales Veröffentlichungsdatum erst danach eintragen.",
+          "source": null,
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        },
+        {
+          "id": "77a705fa-5fcf-5a5c-a412-5c11e7293ee2",
+          "code": "UMF-09",
+          "date": "2026-09-06",
+          "title": "Erste Umfrage auswerten und Rückkopplung dokumentieren",
+          "taskType": "recherche",
+          "status": "bereit",
+          "description": "Aggregierte Antworten und vertrauliche Hinweise sichten; Verbesserungen des Wirkungstickers ableiten.",
+          "result": "Noch keine abgeschlossene Auswertung in dieser Akte belegt.",
+          "acceptance": "Keine Repräsentativität behaupten; veröffentlichte Schlussfolgerungen von privaten Freitexten trennen.",
+          "source": "https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/",
+          "owner": "Natalie Weber",
+          "recordedAt": "2026-09-06",
+          "priority": 2
+        }
+      ],
+      "documents": [
+        {
+          "id": "d54b141b-4ece-5dc7-b447-45599374441e",
+          "kind": "auftrag",
+          "title": "Umfragen · Projektauftrag und zwei Arbeitsstränge",
+          "status": "final",
+          "body": "# Umfragen · Projektauftrag und zwei Arbeitsstränge\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Zweck und Verantwortung\nDas interne Eigenvorhaben des Wirkungsinstituts schafft einen einfachen Rückmeldekanal zu seinen Angeboten. Natalie Weber verantwortet Konzept, Inhalt, Aufgaben, Veröffentlichung und Auswertung. Eine Umfrage misst zunächst Antworten der Teilnehmenden; sie beweist weder gesellschaftliche Wirkung noch Zustimmung der gesamten Bevölkerung.\n\n## Erster Arbeitsstrang: Wirkungsticker-Feedback\nDie Frage „Wie überzeugt Euch der neue Wirkungsticker?“ ist seit dem 04.09.2026 veröffentlicht. Vier Antwortoptionen bilden eine erste Einschätzung ab. Ergebnisse werden nach eigener Abstimmung angezeigt. Optionales Freitextfeedback bleibt ausschließlich bei der Betreiberin. Der nächste fachliche Schritt ist die nachvollziehbare Auswertung und eine begründete Entscheidung über Verbesserungen.\n\n## Zweiter Arbeitsstrang: Stadtvergleich\nDie zweite Umfrage „In welcher Stadt möchtest Du leben?“ vergleicht sieben illustrative Stadt- und Umlandszenarien anhand ausgewählter Vorhaben aus den Bundestagswahlprogrammen 2025. Der dokumentierte Katalogstand ist pausiert; Prüfung und Freigabe stehen noch aus. Die Bilder sind keine berechneten Zukunftsprognosen und keine Wahlempfehlung. Der Arbeitsauftrag umfasst Konzept, Umsetzung, Prüfung und dokumentierte Freigabe. Ein tatsächlicher Livegang wird erst nach der Abnahme eingetragen.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/09043a0653d4d2467aeeba34140f7a320a1c78f3/content/polls/public-catalog.json\n\n## Lieferumfang und Abnahme\nEine öffentliche Übersicht, stabile Detailseiten, Abstimmung ohne Registrierung, kontrollierte Ergebnisanzeige, geschützte Administration, optionale vertrauliche Rückmeldung und dauerhafte Speicherung. Vor Freigabe prüfen: klare Frage, faire Antwortmöglichkeiten, nicht repräsentative Einordnung, mobile Bedienbarkeit, Statuswechsel, Dublettenschutz und tatsächlich veröffentlichte Seite.\n## Quellen und Ergebniszugänge\n\n- [Architektur, Betrieb und dokumentierte Live-Abnahme](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md)\n- [Erste Umfrage](https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/)\n- [Erstes vollständiges Pages-Release](https://github.com/sustynats/wirkungsoekonomie.de/commit/caa7701c0b15ea6985bc17f577d68728463b8980)\n- [Öffentlicher Umfragekatalog](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/content/polls/public-catalog.json)\n"
+        },
+        {
+          "id": "c2bb973f-33fa-5671-aa01-4e466a2e166d",
+          "kind": "konzept",
+          "title": "Umfragen · Konzept, Datenschutz und Rückkopplung",
+          "status": "final",
+          "body": "# Umfragen · Konzept, Datenschutz und Rückkopplung\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Wie das Projekt arbeitet\nIdee und Forschungsfrage → verständliche Frage und Antwortoptionen → Entwurf in der Administration → fachliche und technische Prüfung → Freigabe → tatsächliche Veröffentlichung prüfen → Rückmeldungen auswerten → begründete Änderungen nachverfolgen. Neue inhaltliche Fragen erhalten eine eigene Fassung; abgegebene Stimmen dürfen nicht rückwirkend umgedeutet werden.\n\n## Technische Grundlage\nDer öffentliche Katalog enthält freigegebene Umfragemetadaten, keine Einzelstimmen. Die Verwaltung unterscheidet Speichern und tatsächliche Veröffentlichung.\n\n## Schutz der Teilnehmenden\nKeine Anmeldung für die Abstimmung. Die pro Umfrage erzeugte Browserkennung begrenzt einfache Mehrfachabstimmungen, bietet aber keine Garantie gegen Manipulation. Ergebnisse folgen der eingestellten Sichtbarkeit. Freitextfeedback und Einzelantworten gehören nicht in öffentliche Projektchroniken. Der Nachtrag veröffentlicht ausschließlich Projektarbeit, keine Rückmeldungen einzelner Menschen.\n\n## Einordnung der Ergebnisse\nDie Online-Umfrage ist nicht repräsentativ. Teilnahmezahl, Prozentwerte und Zustimmung sind keine Wirkung. Die Auswertung fragt nach nachvollziehbaren Hinweisen auf Verständlichkeit und Verbesserungsbedarf. Erst dokumentierte Änderungen und spätere Prüfung schaffen eine Lernschleife; Reporting allein genügt nicht. Nichtkompensation schützt Datenschutz und andere harte Grenzen, Reverse Merit Order priorisiert kritische Probleme vor Komfortverbesserungen.\n\n## Stadtvergleich als zweiter Arbeitsstrang\nDie Frage „In welcher Stadt möchtest Du leben?“ lädt zum Vergleich von sieben illustrierten Szenarien ein. Bildauswahl, schriftliche Erläuterungen und Originalquellen müssen nachvollziehbar zusammenpassen. Die Darstellungen bleiben als illustrative Modelle gekennzeichnet; sie belegen weder berechnete Zukunftszustände noch tatsächliche Wirkung. Die Auswahl ist keine Wahlempfehlung und kein repräsentativer politischer Befund. Vor Freigabe sind Verständlichkeit, eine ausgewogene Darstellung der Optionen und die Quellenzuordnung zu prüfen.\n\n## Offene Pflege\nDie zweite Umfrage braucht ihre eigene dokumentierte fachliche Freigabe. Diese Aufgabe bleibt Natalie Weber zugeordnet.\n## Quellen und Ergebniszugänge\n\n- [Architektur, Betrieb und dokumentierte Live-Abnahme](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md)\n- [Erste Umfrage](https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/)\n- [Erstes vollständiges Pages-Release](https://github.com/sustynats/wirkungsoekonomie.de/commit/caa7701c0b15ea6985bc17f577d68728463b8980)\n- [Öffentlicher Umfragekatalog](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/content/polls/public-catalog.json)\n"
+        },
+        {
+          "id": "11c76b6a-85b0-510b-9998-d3be3ca1b6d9",
+          "kind": "chronik",
+          "title": "Umfragen · Chronik, Aufgaben und Abnahmekriterien",
+          "status": "final",
+          "body": "# Umfragen · Chronik, Aufgaben und Abnahmekriterien\n\nVerantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.\n\nRückblickend dokumentiert am 6. September 2026. Die genannten historischen Daten bezeichnen belegte Arbeits- oder Veröffentlichungsstände, nicht das Erstellungsdatum dieser Akte. Ein früheres, genaues Ideendatum ist nicht belegt. Offene Aufgaben sind Arbeitsaufträge; eine unabhängige Abnahme wird dadurch nicht behauptet.\n\n## Belegter Verlauf\n\n### 2026-09-04 · Umfragemodul und erste Umfrage veröffentlicht\nDer öffentliche Katalog dokumentiert 08:23:28 UTC als Veröffentlichungszeit der Wirkungsticker-Umfrage. Die Betriebsdokumentation hält Website- und API-Abnahme fest.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/content/polls/public-catalog.json\n\n### 2026-09-04 · Stabiler Betrieb und Auffindbarkeit abgesichert\nAbstimmung, vertrauliche Freitextrückmeldung und öffentliche Auffindbarkeit sind dokumentiert.\n\nBeleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md\n\n### 2026-09-06 · Zweite Umfrage in Umsetzung\nDie zweite Umfrage „In welcher Stadt möchtest Du leben?“ vergleicht sieben illustrative Stadt- und Umlandszenarien anhand ausgewählter Vorhaben aus den Bundestagswahlprogrammen 2025. Der dokumentierte Katalogstand ist pausiert; Prüfung und Freigabe stehen noch aus. Die Bilder sind keine berechneten Zukunftsprognosen und keine Wahlempfehlung.\n\nBeleg des Arbeitsstands: https://github.com/sustynats/wirkungsoekonomie.de/blob/09043a0653d4d2467aeeba34140f7a320a1c78f3/content/polls/public-catalog.json\n\nBeleg: Projektauftrag der Inhaberin vom 06.09.2026.\n\n### 2026-09-06 · Institutsprojekt nachgetragen\nAuftrag, Konzept, Chronik und Aufgaben sind der Projektinhaberin Natalie Weber zugeordnet. Die erste und die zweite Umfrage erhalten getrennte Arbeitsstände.\n\nBeleg: Projektauftrag der Inhaberin vom 06.09.2026.\n\n## Aufgaben und Arbeitsstände\n\n### UMF-01 · Auftrag und Zustandsmodell des Umfragemoduls definieren\n- Arbeits-/Belegdatum: 2026-09-04\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Öffentliche Rückmeldungen ohne Konto ermöglichen und Status/Freigabe klar regeln.\n- Ergebnis/Arbeitsstand: Umfragemodul mit Entwurf, Planung, Aktiv, Pause, Ende und Archiv implementiert.\n- Abnahmekriterium: Gespeicherter Entwurf und tatsächlich veröffentlichte Umfrage werden getrennt.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md\n\n### UMF-02 · Umfrageverwaltung und dauerhafte Abstimmung umsetzen\n- Arbeits-/Belegdatum: 2026-09-04\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Umfragen verwalten und abgegebene Stimmen dauerhaft erhalten.\n- Ergebnis/Arbeitsstand: Verwaltung, Abstimmung und Freigabe zur Veröffentlichung sind dokumentiert.\n- Abnahmekriterium: Abgegebene Stimmen bleiben erhalten; Entwürfe und private Angaben werden nicht veröffentlicht.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md\n\n### UMF-03 · Erste Wirkungsticker-Umfrage erstellen und veröffentlichen\n- Arbeits-/Belegdatum: 2026-09-04\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Frage, vier Antwortoptionen und verständlichen Einstieg zum neuen Wirkungsticker bereitstellen.\n- Ergebnis/Arbeitsstand: Umfrage seit 04.09.2026 öffentlich erreichbar.\n- Abnahmekriterium: Der veröffentlichte Katalog und die Live-Seite stimmen überein.\n- Beleg: https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/\n\n### UMF-04 · Ergebnisregeln und internes Freitextfeedback prüfen\n- Arbeits-/Belegdatum: 2026-09-04\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Ergebnisse erst entsprechend der konfigurierten Regel anzeigen; optionale Kommentare schützen.\n- Ergebnis/Arbeitsstand: Erste Umfrage zeigt Ergebnisse nach eigener Abstimmung; Feedback ist nur intern einsehbar.\n- Abnahmekriterium: Keine öffentlichen Einzelantworten oder Kommentare; Stimme bleibt unabhängig vom Kommentar gespeichert.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md\n\n### UMF-05 · Live-Abnahme, mobile Ansicht und Mehrfachschutz durchführen\n- Arbeits-/Belegdatum: 2026-09-04\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Öffentliche Seite, API, Mobilansicht und Persistenz prüfen.\n- Ergebnis/Arbeitsstand: Betriebsdokumentation nennt bestandene automatisierte und Browser-Prüfungen mit separater Testumfrage.\n- Abnahmekriterium: Keine Teststimmen in echte Umfragen; Grenzen einfacher Mehrfachschutzmaßnahmen transparent machen.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md\n\n### UMF-06 · Navigation und Suche integrieren\n- Arbeits-/Belegdatum: 2026-09-04\n- Status: Erledigt\n- Verantwortlich: Natalie Weber\n- Auftrag: Öffentliche Umfragen über Navigation und Suche auffindbar machen.\n- Ergebnis/Arbeitsstand: Footer-Verlinkung und Suche sind dokumentiert.\n- Abnahmekriterium: Veröffentlichte Umfragen sind über Footer und Suche erreichbar.\n- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md\n\n### UMF-07 · Zweite Umfrage konzipieren und umsetzen\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: In Arbeit\n- Verantwortlich: Natalie Weber\n- Auftrag: Fragestellung, Zielgruppe, Antwortoptionen, Erläuterung und Ergebnisregeln für die zweite Umfrage ausarbeiten.\n- Ergebnis/Arbeitsstand: Laufende Umsetzung durch die Projektinhaberin bestätigt; Veröffentlichung noch offen.\n- Abnahmekriterium: Frage und Optionen sind verständlich, nicht suggestiv und vor Livegang geprüft.\n- Beleg: Projektauftrag vom 06.09.2026; Fertigstellung offen.\n\n### UMF-08 · Zweite Umfrage prüfen und freigeben\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: Backlog\n- Verantwortlich: Natalie Weber\n- Auftrag: Die konkrete zweite Umfrage nach Fertigstellung fachlich und technisch prüfen.\n- Ergebnis/Arbeitsstand: Offener Folgeschritt, abhängig von UMF-07.\n- Abnahmekriterium: Live-Link, Status, Mobilansicht, Ergebnisregeln und Datenschutz prüfen; reales Veröffentlichungsdatum erst danach eintragen.\n- Beleg: Projektauftrag vom 06.09.2026; Fertigstellung offen.\n\n### UMF-09 · Erste Umfrage auswerten und Rückkopplung dokumentieren\n- Arbeits-/Belegdatum: 2026-09-06\n- Status: Bereit\n- Verantwortlich: Natalie Weber\n- Auftrag: Aggregierte Antworten und vertrauliche Hinweise sichten; Verbesserungen des Wirkungstickers ableiten.\n- Ergebnis/Arbeitsstand: Noch keine abgeschlossene Auswertung in dieser Akte belegt.\n- Abnahmekriterium: Keine Repräsentativität behaupten; veröffentlichte Schlussfolgerungen von privaten Freitexten trennen.\n- Beleg: https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/\n\n\n## Verbindungen\n\n- Öffentliches Angebot: https://wirkungsoekonomie.de/umfragen/\n- Institutsprojekt: https://institut.wirkungsoekonomie.de/projekte/umfragen\n- Projektwerkstatt mit Aufgaben: https://institut.wirkungsoekonomie.de/werkstatt/umfragen\n\n## Quellen und Ergebniszugänge\n\n- [Architektur, Betrieb und dokumentierte Live-Abnahme](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md)\n- [Erste Umfrage](https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/)\n- [Erstes vollständiges Pages-Release](https://github.com/sustynats/wirkungsoekonomie.de/commit/caa7701c0b15ea6985bc17f577d68728463b8980)\n- [Öffentlicher Umfragekatalog](https://github.com/sustynats/wirkungsoekonomie.de/blob/main/content/polls/public-catalog.json)\n"
+        }
+      ],
+      "openQuestions": [
+        "Welche konkreten Verbesserungen werden aus den Rückmeldungen abgeleitet?",
+        "Welche Fragestellung, Antwortoptionen und Freigabekriterien gelten für die zweite Umfrage?"
+      ],
+      "nextSteps": [
+        "Natalie Weber: zweite Umfrage konzipieren, umsetzen und vor Veröffentlichung prüfen.",
+        "Natalie Weber: erste Umfrage auswerten; nicht repräsentative Ergebnisse und private Freitexte getrennt behandeln.",
+        "Natalie Weber: Verbesserungsentscheidungen samt Umsetzungsstatus dokumentieren."
+      ],
+      "sources": [
+        {
+          "title": "Architektur, Betrieb und dokumentierte Live-Abnahme",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md"
+        },
+        {
+          "title": "Erste Umfrage",
+          "url": "https://wirkungsoekonomie.de/umfragen/wirkungsticker-feedback/"
+        },
+        {
+          "title": "Erstes vollständiges Pages-Release",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/commit/caa7701c0b15ea6985bc17f577d68728463b8980"
+        },
+        {
+          "title": "Öffentlicher Umfragekatalog",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/blob/main/content/polls/public-catalog.json"
+        }
+      ],
+      "shortTitle": "Umfragen",
+      "publicStatus": "Erste Umfrage live · zweite in Umsetzung"
+    }
+  ]
+}
