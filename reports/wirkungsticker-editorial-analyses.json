@@ -2,26 +2,74 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-06T20:09:00.462Z",
-  "scanned_stories": 104,
+  "started_at": "2026-09-06T20:23:14.639Z",
+  "scanned_stories": 105,
   "scanned_subjects": 92,
-  "editorial_candidates": 16,
-  "ready_for_research": 1,
+  "editorial_candidates": 17,
+  "ready_for_research": 2,
   "research_pending": 5,
   "retry_deferred": 1,
   "editorial_research_sources_discovered": 12,
-  "selected": 0,
-  "editorial_research_started": 0,
+  "selected": 1,
+  "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
+  "research_calls": 2,
+  "research_tokens": 11089,
+  "analysis_tokens": 10357,
+  "estimated_cost_usd": 0.051295,
+  "quality_retries": 1,
   "publication_deferred": false,
-  "failed": [],
+  "failed": [
+    {
+      "story_id": "wt-2cf5f0c5e42720ec",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_SYSTEM,EDITORIAL_SECTION_MISSING_MPD,EDITORIAL_SECTION_MISSING_WIRKUNGSORDNUNGEN,EDITORIAL_SECTION_MISSING_UNSICHERHEIT,EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_SECTION_MISSING_SYNTHESE,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_CLAIM_LEDGER_TOO_SHORT,EDITORIAL_COUNTER_EVIDENCE_REQUIRED,EDITORIAL_WATCHLIST_REQUIRED",
+      "next_attempt_at": "2026-09-06T20:38:14.639Z"
+    }
+  ],
   "candidates": [
+    {
+      "story_id": "wt-2cf5f0c5e42720ec",
+      "story_slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet--2720ec",
+      "story_title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
+      "editorial_analysis_score": 70,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 8,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "25314d0d4b38a47a0529d89c3fe5c5f86cdb4f87809a4faaf4862dac9db8282e",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-4b5d0962d323432a",
       "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
@@ -708,5 +756,6 @@
       "status": "published",
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
-  ]
+  ],
+  "completed_at": "2026-09-06T20:25:14.007Z"
 }

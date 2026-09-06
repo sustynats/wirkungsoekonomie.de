@@ -1,7 +1,88 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-06T20:06:02.960Z",
+  "updated_at": "2026-09-06T20:21:36.327Z",
   "stories": [
+    {
+      "story_id": "wt-2cf5f0c5e42720ec",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2cf5f0c5e42720ec-20e7c7d18645e36e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2cf5f0c5e42720ec-2e60734933f4c10a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2cf5f0c5e42720ec-d9e5c6c9392c853a-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet--2720ec",
+      "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
+      "source_summary": "Die Meldung beschreibt einen Großeinsatz der Polizei am Hambacher Forst bei Kerpen westlich von Köln. Gesucht wurde nach einem Tatverdächtigen im Zusammenhang mit versuchten Sabotage-Angriffen auf das deutsche Stromnetz. Laut der zusammengefassten Quelle blieb die Suche ohne Erfolg; Hinweise auf den Gesuchten wurden nicht gefunden, die Fahndung geht aber weiter.\n\nIm selben Bericht heißt es, die Polizei halte es für wahrscheinlich, dass der 48-Jährige aus Gevelsberg mit dem Fahrrad auf der Flucht sei. Zudem verweist die Quelle auf Sachsen: Dort seien in den Landkreisen Bautzen und Görlitz zwölf selbstgebaute Sprengvorrichtungen entdeckt worden. Die Behörden prüfen nach eigenen Angaben einen Zusammenhang mit Funden in Brandenburg und Nordrhein-Westfalen.",
+      "summary": "Die Polizei hat am Hambacher Forst nach einem Tatverdächtigen gesucht, aber keine Hinweise gefunden. Die Fahndung läuft weiter, während in Sachsen weitere Sprengvorrichtungen gemeldet wurden.",
+      "detail_summary": "Der Bericht fasst einen Polizeieinsatz am Hambacher Forst zusammen, der ohne Festnahme oder belastbare Spur endete. Neu ist damit vor allem der Zwischenstand, dass die Suche trotz Großaufgebot erfolglos blieb und die Fahndung fortgesetzt wird. Materiell relevant ist das, weil es um mögliche Angriffe auf das Stromnetz und damit um Infrastruktur, Sicherheit und Kaskadenrisiken geht. Ein möglicher Wirkpfad wäre eine verstärkte Sicherung von Stromanlagen und eine Ausweitung der Ermittlungen über NRW hinaus. Als weitere, im Bericht genannte Entwicklung kommen die in Sachsen gefundenen zwölf selbstgebauten Sprengvorrichtungen hinzu. Die Evidenz bleibt aber begrenzt, weil die zentrale Lage hier nur über eine journalistische Einzelquelle und in zusammengefasster Form vorliegt.",
+      "why_relevant": "Der Bericht betrifft mögliche Sabotage an kritischer Energieinfrastruktur und damit ein System mit hohen Folgewirkungen für Versorgung, Sicherheit und staatliche Reaktionsfähigkeit.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Folgen betreffen Stromversorgung, öffentliche Sicherheit und Ermittlungsmaßnahmen; die Reichweite ist zwar noch offen, der potenzielle Schaden aber systemisch."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Indirekte Folgen können die Stabilität von Energie- und Industrienetzen betreffen; unmittelbare Umweltwirkungen sind in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und Vertrauen in Sicherheits- und Ermittlungsinstitutionen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-06T20:21:36.327Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T18:42:06.000Z",
+      "last_updated": "2026-09-06T20:22:49.164Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-3c4653692db94c9693bc",
+      "case_file": null,
+      "source_published_at": "2026-09-06T20:15:54.000Z",
+      "published_at": "2026-09-06T20:22:49.164Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T20:15:54.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3b184047d464b8b5",
       "title_image": {
