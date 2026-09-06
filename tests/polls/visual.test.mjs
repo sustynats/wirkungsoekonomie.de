@@ -25,6 +25,11 @@ test('seven scenarios use equal domains, valid sources and actual own images',()
  const bad=structuredClone(data);delete bad.scenarios[0].topics.energie;assert.throws(()=>validateExperience(bad),/unequal/);
  const wrong=structuredClone(data);wrong.domains[0].x=101;assert.throws(()=>validateExperience(wrong),/invalid area/);
  const tracking=structuredClone(data);tracking.scenarios[0].source+='?utm_source=chatgpt.com';assert.throws(()=>validateExperience(tracking),/source/);
+ for(const scenario of data.scenarios)assert.deepEqual(Object.keys(scenario.energy).sort(),['balancing','fossil','nuclear','renewables']);
+ const missingEnergy=structuredClone(data);delete missingEnergy.scenarios[0].energy.fossil;assert.throws(()=>validateExperience(missingEnergy),/energy supply/);
+ assert.ok(data.scenarios[3].image.endsWith('d-energy-v2.webp'));
+ assert.match(data.scenarios[3].energy.fossil,/Kohle/);
+ assert.match(data.scenarios[2].energy.fossil,/Wasserstoff/);
 });
 test('zoom is deterministic, centred and clamped without blank image edges',()=>{
  assert.deepEqual(zoomTransform(null),{scale:1,x:0,y:0});
@@ -34,7 +39,7 @@ test('zoom is deterministic, centred and clamped without blank image edges',()=>
 });
 test('sensitive HTML has zoom, sources, metadata, consent and no cross-page scripts',t=>{
  const {store}=fixture(t),poll=store.create({...seed,status:'active'}),html=pollPage(root,poll);
- for(const part of ['id="vp-area"','id="vp-wipe"','id="vp-compare"','id="vp-reveal"','id="einwilligung"','poll-visual.js','summary_large_image','no-referrer'])assert.ok(html.includes(part),part);
+ for(const part of ['id="vp-area"','id="vp-wipe"','id="vp-compare"','id="vp-reveal"','id="einwilligung"','poll-visual.js','summary_large_image','no-referrer','id="vp-energy-content"','keine Energieinsel'])assert.ok(html.includes(part),part);
  assert.ok(!/src="[^\"]*(?:main|newsletter)\.js/.test(html));
  assert.ok(html.includes('/wirkungsradar/newsletter/'));
  assert.ok(!html.includes('anonymous_vote_identifier'));

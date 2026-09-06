@@ -7,7 +7,9 @@ for(const file of ['assets/js/polls.js','assets/js/polls-admin.js','assets/css/p
 const pages=['umfragen/index.html','admin/umfragen/index.html',...catalog.polls.map(p=>`umfragen/${p.slug}/index.html`)];
 for(const page of pages){
   const html=fs.readFileSync(path.join(artifact,page),'utf8');
-  if(!html.includes('type="module" src="/assets/js/polls'))throw new Error(`Poll module missing: ${page}`);
+  const visual=html.includes('name="woek-private-interaction"');
+  const runtime=visual?'poll-visual.js':page.startsWith('admin/')?'polls-admin.js':'polls.js';
+  if(!html.includes(`type="module" src="/assets/js/${runtime}"`))throw new Error(`Poll module missing: ${page}`);
   if(html.includes('/assets/js/polls.mjs')||html.includes('/assets/js/polls-admin.mjs'))throw new Error('Private source suffix must not be used for public scripts.');
   for(const name of ['POLLS_TOKEN_PEPPER','POLLS_ABUSE_PEPPER','anonymous_vote_identifier','Bearer local-test-only'])if(html.includes(name))throw new Error(`Private poll value in ${page}`);
   const slug=page.match(/^umfragen\/([^/]+)\/index\.html$/)?.[1];

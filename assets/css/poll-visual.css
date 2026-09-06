@@ -28,6 +28,13 @@
 .vp-hotspots button { position:absolute; transform:translate(-50%,-50%); width:46px; height:46px; padding:0; border:3px solid white; border-radius:50%; background:var(--navy); color:white; font:700 1rem system-ui; cursor:pointer; pointer-events:auto; box-shadow:0 2px 12px #0009; }
 .vp-hotspots button[aria-pressed=true] { background:var(--green-dark); }
 .vp-written { margin-top:2rem; }
+.vp-energy { margin:1.5rem 0; padding:1.25rem; border:1px solid #c9d2cf; border-radius:10px; background:#f2f6f3; }
+.vp-energy h3 { margin-top:0; }
+.vp-energy h4 { margin:1.4rem 0 .7rem; font-size:1.15rem; }
+.vp-energy-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem; margin:0; }
+.vp-energy-grid>div { padding:1rem; background:white; border:1px solid #d9e0dc; border-radius:6px; }
+.vp-energy-grid dt { font-weight:750; color:var(--navy); margin-bottom:.5rem; }
+.vp-energy-grid dd { margin:0; line-height:1.6; }
 .vp-written details,#vp-method { border:1px solid #d9d1c2; background:var(--paper); border-radius:8px; padding:.65rem 1.1rem; }
 .vp-written summary,#vp-method summary { min-height:44px; line-height:1.5; }
 .vp-written p,#vp-method p { max-width:85ch; line-height:1.65; }
@@ -36,6 +43,8 @@
 .visual-poll-page .poll-checkbox { display:flex; gap:.8rem; align-items:flex-start; margin:1rem 0; line-height:1.6; }
 .visual-poll-page .poll-checkbox input { min-width:22px; min-height:22px; margin-top:.25rem; }
 @media(max-width:640px) {
+ .vp-energy-grid { grid-template-columns:1fr; }
+ .vp-energy { padding:1rem; }
  .vp-stage[data-view=pair] { grid-template-columns:1fr; }
  .vp-view-buttons button { flex:1 1 40%; }
  .vp-pane figcaption { font-size:.75rem; }

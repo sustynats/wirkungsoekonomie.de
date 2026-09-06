@@ -5,7 +5,13 @@ export function loadExperience(root, slug) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) return null;
   const file = path.join(root, 'content/polls/experiences', `${slug}.json`);
   if (!fs.existsSync(file)) return null;
-  return validateExperience(JSON.parse(fs.readFileSync(file, 'utf8')));
+  const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  if (data.energyData) {
+    if (!/^[a-z0-9-]+\.json$/.test(data.energyData)) throw new Error('Visual poll: invalid energy data path');
+    const energy = JSON.parse(fs.readFileSync(path.join(path.dirname(file), data.energyData), 'utf8'));
+    for (const scenario of data.scenarios) scenario.energy = energy[scenario.id];
+  }
+  return validateExperience(data);
 }
 export function validateExperience(data) {
   const fail = message => { throw new Error(`Visual poll: ${message}`); };
@@ -18,6 +24,7 @@ export function validateExperience(data) {
     for (const k of ['title','question','mechanism','check']) if (typeof d[k] !== 'string' || !d[k]) fail(`missing ${k}`);
   }
   for (const s of data.scenarios) {
+    if (data.energyData && (!s.energy || ['renewables','fossil','nuclear','balancing'].some(k => typeof s.energy[k] !== 'string' || !s.energy[k].trim()))) fail('missing energy supply explanation');
     if (!/^[a-z]+$/.test(s.id) || !ownImage(s.image) || !/^https:\/\//.test(s.source) || /utm_|chatgpt/i.test(s.source)) fail('invalid scenario source');
     if (Object.keys(s.topics || {}).sort().join() !== data.domains.map(d => d.id).sort().join()) fail('unequal topic coverage');
     for (const t of Object.values(s.topics)) if (!t.programme || !t.scene || !Array.isArray(t.pages) || !t.pages.length || !t.pages.every(p => Number.isInteger(p) && p > 0)) fail('missing evidence');
@@ -40,6 +47,7 @@ export function visualPanel(data, {esc, safeJson}) {
 <p id="vp-image-status" class="poll-notice" role="status" aria-live="polite"></p>
 <div class="poll-actions"><button id="vp-hotspot-toggle" type="button" class="btn btn-secondary" aria-expanded="false">Details entdecken</button><button id="vp-reset" type="button" class="btn btn-secondary">Gesamtansicht</button><a id="vp-image-link" class="btn btn-secondary" href="${esc(data.baseline)}" target="_blank" rel="noopener">Bild groß öffnen</a><a class="btn btn-primary" href="#poll-ui">Zur Abstimmung</a></div>
 <p class="poll-notice">Zoom: Wähle einen Bereich oder tippe auf eine nummerierte Markierung. Der Ausschnitt bleibt beim Szenariowechsel gleich. Auf dem Smartphone kannst Du zusätzlich die normale Browser-Vergrößerung nutzen.</p>
+${data.energyData ? `<section class="vp-energy" aria-labelledby="vp-energy-title"><h3 id="vp-energy-title">Woher kommt die Energie?</h3><p>Die Modellstadt ist <strong>keine Energieinsel</strong>. In jedem Szenario gehört das überregionale Stromnetz dazu. Nicht jede Anlage steht im Bildausschnitt; die Illustrationen zeigen weder einen vollständigen Kraftwerkspark noch einen berechneten Strommix.</p><div id="vp-energy-content"><p>Im Ausgangsbild ist links im Umland ein Umspannwerk zu sehen. Es verteilt Strom aus dem Verbundnetz und erzeugt selbst keinen. Wähle „Szenario“, um Erzeugung, Reserven und Kernenergieoptionen der jeweiligen Programmrichtung zu vergleichen.</p></div><p class="poll-notice">Die folgenden Angaben beschreiben Programmziele, keine bereits eingetretene Wirkung. Ein nicht gezeichnetes Kraftwerk bedeutet nicht „kein Kraftwerk“. Speicher liefern zuvor eingespeicherte Energie; sie sind keine zusätzliche Primärenergiequelle. Auch ein wolkenloses Bild beweist keine emissionsfreie Versorgung.</p></section>` : ''}
 <section class="vp-written" aria-labelledby="vp-written-title"><h3 id="vp-written-title">Was würde sich ändern?</h3><p>Die wichtigsten Programmpunkte, unsere bildliche Übersetzung und die offenen Wirkungsfragen. Zunächst ohne Parteinamen.</p><div id="vp-topics">${data.domains.map(d=>`<details id="vp-topic-${d.id}"><summary>${esc(d.title)}</summary><p><strong>Programmrichtung:</strong> ${esc(data.scenarios[0].topics[d.id].programme)}</p><p><strong>Illustrative Übersetzung:</strong> ${esc(data.scenarios[0].topics[d.id].scene)}</p><p>${esc(d.check)}</p></details>`).join('')}</div></section>
 <details id="vp-method"><summary>Wie belastbar ist dieser Vergleich?</summary>
 <p>Dies ist eine redaktionelle, qualitative Szenario-Umfrage zu sieben ausgewählten bundesweiten Wahlprogrammen von 2025, kein vollständiger Wahlprogrammvergleich, kein Parteienranking und keine Wahlempfehlung. CDU/CSU, SPD, Bündnis 90/Die Grünen, AfD, Die Linke, BSW und FDP werden mit denselben fünf Themen betrachtet. Andere Parteien und wichtige Themen wie Außenpolitik, Steuerverteilung, Migration und institutionelle Demokratie sind nicht vollständig abgebildet. Aus einer bevorzugten Illustration lässt sich deshalb keine belastbare Parteipräferenz ableiten.</p>

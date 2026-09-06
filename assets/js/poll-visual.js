@@ -12,6 +12,28 @@ function startVisual() {
   const stage=$('vp-stage'),scenarioSelect=$('vp-scenario'),areaSelect=$('vp-area'),compareSelect=$('vp-compare');
   let scenario=data.scenarios[0],area=null,view='before',revealed=false,hotspots=false,voted=false,requestNumber=0;
   const scenarioName=s=>`${s.label}${revealed?` · ${s.party}`:''}`;
+  function renderEnergy() {
+    const target=$('vp-energy-content');if(!target)return;
+    if(view==='before'){
+      target.replaceChildren(el('p','Im Ausgangsbild ist links im Umland ein Umspannwerk zu sehen. Es verteilt Strom aus dem Verbundnetz und erzeugt selbst keinen. Wähle „Szenario“, um Erzeugung, Reserven und Kernenergieoptionen der jeweiligen Programmrichtung zu vergleichen.'));
+      return;
+    }
+    const comparison=view==='pair'?data.scenarios.find(s=>s.id===compareSelect.value):null;
+    const selected=comparison?[comparison,scenario]:[scenario];
+    const panels=selected.map(s=>{
+      const panel=el('section'),title=el('h4',scenarioName(s));
+      const grid=el('dl',undefined,'vp-energy-grid');
+      for(const [key,label] of [['renewables','Erneuerbare Erzeugung'],['fossil','Kohle, Gas und regelbare Kraftwerke'],['nuclear','Kernenergie: Ziel oder Option?'],['balancing','Netze, Speicher und Wärme']]){
+        const row=el('div');row.append(el('dt',label),el('dd',s.energy[key]));grid.append(row);
+      }
+      const proof=el('p',`Programm von 2025 · PDF-Seiten ${s.topics.energie.pages.join(', ')}. `,'poll-notice');
+      if(revealed){const a=el('a','Energiepassagen in der Originalquelle');a.href=`${s.source}#page=${s.topics.energie.pages[0]}`;a.target='_blank';a.rel='noopener noreferrer';proof.append(a);}
+      else proof.append(document.createTextNode('Parteien und Quellen kannst Du unten bewusst anzeigen.'));
+      panel.append(title,grid,proof);return panel;
+    });
+    const zoom=button('Energieanlagen im Bild vergrößern',()=>{selectArea('energie');stage.scrollIntoView({behavior:'auto',block:'center'});});
+    target.replaceChildren(...panels,zoom);
+  }
   function refreshNames() {
     for(const select of [scenarioSelect,compareSelect])for(const option of select.options){const s=data.scenarios.find(s=>s.id===option.value);if(s)option.textContent=scenarioName(s);}
     $('vp-right-caption').textContent=`${scenarioName(scenario)} · illustrative Umsetzung`;
@@ -19,6 +41,7 @@ function startVisual() {
     $('vp-left-caption').textContent=view==='pair'&&comparison?`${scenarioName(comparison)} · illustrative Umsetzung`:'Gemeinsamer Ausgangszustand';
     $('vp-written-title').textContent=`${scenarioName(scenario)}: Was würde sich ändern?`;
     $('vp-legend').textContent=`Links: Ausgangsbild · Rechts: ${scenarioName(scenario)}`;
+    renderEnergy();
   }
   function updateZoom() {
     const z=zoomTransform(area);

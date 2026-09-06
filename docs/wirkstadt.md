@@ -40,6 +40,32 @@ Markierungen sind mindestens 44 Pixel groß; Dropdown, Buttons und Slider sind
 tastaturbedienbar. „Gesamtansicht“ setzt den Fokus zurück. Die natürliche
 Browser-Vergrößerung wird nicht gesperrt.
 
+### Energieversorgung: Präzisierung vor Erstveröffentlichung
+
+Auf Nutzerhinweis wurden am 6. September die Energiepassagen der sieben
+Originalprogramme erneut abgeglichen. Eine leere Erzeugungsfläche darf nicht
+als automatisch saubere oder gesicherte Versorgung verstanden werden.
+`stadtvergleich-energie.json` ergänzt deshalb für jedes Szenario dieselben
+vier Felder: erneuerbare Erzeugung, Kohle/Gas/regelbare Kraftwerke, Kernenergie
+und Netze/Speicher/Wärme. Im Zweiervergleich erscheinen beide Profile. Das
+Ausgangsbild erklärt ausdrücklich den Unterschied zwischen Umspannwerk und
+Erzeugung; ein regionales Verbundnetz wird in allen Szenarien vorausgesetzt.
+
+Szenario D verwendet jetzt `d-energy-v2.webp`: ein sichtbarer Kohle-/Gas-Komplex
+anstelle des unzureichenden kleinen Betriebsgebäudes. Das ursprüngliche Bild
+bleibt erhalten. Prompt und Herkunft: `docs/wirkstadt-energie-korrektur.json`.
+Es werden keine garantierten Kernkraftwerksneubauten aus bedingten
+Programmoptionen konstruiert. Auch erneuerbare Szenarien erläutern Reserven,
+regelbare Kraftwerke beziehungsweise Speicherbedarf und offene Kapazitäten.
+Keine Mengen-/Preis-/Versorgungssicherheitsprognose wird vorgetäuscht.
+
+Zusätzlich geprüft: alle sieben gleichartigen Energieprofile, fehlende Daten
+als Validierungsfehler, 390-Pixel-Ansicht ohne horizontalen Überlauf, gleiche
+Zoomtransformation in beiden Vergleichsbildern, bewusste Quellenaufdeckung
+und fehlerfreie Browserkonsole. Die Artefaktprüfung erkennt den gesonderten
+Einstieg `poll-visual.js`; sie kontrolliert weiterhin sämtliche Bilder und die
+unveränderten eingebetteten Szenariodaten.
+
 ## Datenschutz-Erweiterung (Schema 3)
 
 Da aus der Auswahl politische Ansichten hervorgehen könnten, gibt es ein
