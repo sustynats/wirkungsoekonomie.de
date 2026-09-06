@@ -13,6 +13,7 @@ export function hasNonstandardDash(text) {
 // Preserve cryptographically bound input records; public artifacts are always formatted.
 export function isFrozenPublicationSource(relativePath) {
   const normalizedPath = String(relativePath).replaceAll('\\', '/');
+  if (normalizedPath.startsWith('docs/parlament/audits/mv-spd-p1-p54-authorities/')) return true;
   // Exact historical authority and hash-bound reference inventory: format
   // rendered output, never these evidence bytes.
   if ([

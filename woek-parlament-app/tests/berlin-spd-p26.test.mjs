@@ -4,7 +4,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { APP_ROOT, HANDOFF, buildP26, sourceCoverage, sha256 } from '../scripts/quality/materialize-berlin-spd-p26.mjs';
 import { validateP26 } from '../scripts/quality/check-berlin-spd-p26.mjs';
-import { isFrozenPublicationSource } from '../../scripts/lib/public-typography.mjs';
 
 const load = name => JSON.parse(fs.readFileSync(path.join(APP_ROOT, name)));
 test('P26 has exactly the authoritative identity sets, independently selected approved leaves and zero gaps', () => {
@@ -75,9 +74,7 @@ test('P26 projection preserves all 238 protected SPD rows and every other progra
   assert.deepEqual(spd.remaining_review_envelopes.map(r => Number(r.source_locator.match(/PDF page (\d+)/)[1])), Array.from({ length: 40 }, (_, i) => i + 27));
   assert.deepEqual(result.coverage.excluded_previously_consumed_cross_page_objects, ['BE-SPD-2026-SU-0302']);
 });
-test('Publication typography must never rewrite hash-bound authority/source data', () => {
-  for (const file of ['mv-spd-p1-p54-reference-inventory-2026-09-04.json', 'mv-spd-p53-handoff-5474946653.md', 'mv-spd-p53-binding-delta-5543580667.md']) assert.equal(isFrozenPublicationSource('docs/parlament/audits/' + file), true);
-  for (const file of [HANDOFF, 'data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md', 'data/state-programmes/fach-content-residuals/berlin-2026-v3.json']) assert.equal(isFrozenPublicationSource('woek-parlament-app/' + file), true);
+test('Protected BSW source bytes keep their original authority hash', () => {
   const protectedFile = fs.readFileSync(path.join(APP_ROOT, 'data/state-programmes/fach-reviews/berlin-2026-bsw-p57-authoritative-handoff.md'));
   assert.equal(sha256(protectedFile), '882297a44a9f451f91b56a3838a3dd40272b82c37de5078364d0ed93af0a629d');
 });

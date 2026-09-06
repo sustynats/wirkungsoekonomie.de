@@ -47,13 +47,18 @@ approved predecessor bytes of:
 - mv-spd-p53-handoff-5474946653.md
 - mv-spd-p53-binding-delta-5543580667.md
 - mv-spd-p1-p54-reference-inventory-2026-09-04.json
+- 77 authority Markdown files in mv-spd-p1-p54-authorities/, each checked
+  against the unchanged authority index: old bytes match the approved hash,
+  damaged bytes equal only the typography-normalized original. The complete
+  archive is protected from normalization and checked by the P26 regression.
 
 Reproduction also restores 95 already-approved Berlin projected records
 whose source/Fach text had been normalized. Restored fields are
 source_excerpt, policy, source_text, correction_binding_text,
 authoritative_fach_text and exact_reason. There is zero Fach delta versus
-the approved predecessor. The typography helper now exempts precisely the
-three hash-bound MV audit files; existing Parliament data exemptions remain.
+the approved predecessor. The typography helper now exempts the frozen MV
+authority archive and three hash-bound MV audit files; existing Parliament
+data exemptions remain.
 Regression tests retain the original hashes, rather than weakening gates.
 MV P1-P55 decisions and frozen source ledger remain unchanged.
 

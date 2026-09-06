@@ -186,6 +186,8 @@ jobs:
         run: python3 tools/validate_parliament_current_golden_readiness.py
       - name: Validate lossless MV SPD P1-P54 authority archive
         run: node tools/build_mv_spd_p1_p54_authority_archive.mjs
+      - name: Protect frozen authority bytes from publication formatting
+        run: node --test tests/news/parliament-frozen-authority-typography.test.mjs
       - name: Assert immutable validation
         run: git diff --exit-code
       - name: Verify exact P25 serialization and fail-closed regression
