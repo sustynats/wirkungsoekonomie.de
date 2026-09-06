@@ -1,7 +1,484 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T07:22:55.137Z",
+  "updated_at": "2026-09-06T07:36:23.375Z",
   "stories": [
+    {
+      "story_id": "wt-39a3ae40381778f1",
+      "slug": "israel-baut-barriere-im-jordantal-krieg-gegen-die-felder-die-baume-und-die-menschen-1778f1",
+      "title": "Israel baut Barriere im Jordantal: Krieg gegen die Felder, die Bäume und die Menschen",
+      "first_seen": "2026-09-06T07:26:00.000Z",
+      "last_updated": "2026-09-06T07:26:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/israel-baut-barriere-im-jordantal-krieg-gegen-die-felder-die-baeume-und-die-menschen-a-4edbb938-801b-4bb8-8ddb-13e7f1017e1c",
+          "title": "Israel baut Barriere im Jordantal: Krieg gegen die Felder, die Bäume und die Menschen",
+          "summary": "Israelische Soldaten errichten nahe der Grenze zu Jordanien eine Barriere, die palästinensische Bauern von ihrem Land abschneidet. Vor Ort wird klar: Der Wall soll offenbar auch dazu dienen, das Jordantal komplett zu besiedeln.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:26:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "61e30f95609346e1daf0f2e307774cd782d48bfc01d081ea26436bb54306d626",
+          "source_item_id": "bccaefdf16c05597ccebaea144401e1252e556244e161c7876876b04a4998de0",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:26:00.000Z",
+          "ingested_at": "2026-09-06T07:36:23.375Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-39a3ae40381778f1-claim-01",
+          "story_id": "wt-39a3ae40381778f1",
+          "claim": "Israel baut Barriere im Jordantal: Krieg gegen die Felder, die Bäume und die Menschen: Israelische Soldaten errichten nahe der Grenze zu Jordanien eine Barriere, die palästinensische Bauern von ihrem Land abschneidet. Vor Ort wird klar: Der Wall soll offenbar auch dazu dienen, das Jordantal komplett zu besiedeln.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        }
+      ],
+      "content_hash": "d5cedd715e7446417556fd77fa1c3c7971bee495542b7efef78f3449c7d744a8",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:51:23.375Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:36:23.375Z",
+      "event_first_seen_at": "2026-09-06T07:36:23.375Z",
+      "event_detected_at": "2026-09-06T07:36:23.375Z",
+      "event_id": "event-1edde11a4c0d2dd94112",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 10.389583333333333,
+        "detection_delay_minutes": 10.389583333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:36:23.375Z",
+        "fingerprint": "9fe9f12e9ac1d697d11e19922e0f29c87a25e2f3cc80df2c3c6a73195b1a3fc9",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:36:23.375Z",
+      "rejection": {
+        "at": "2026-09-06T07:36:23.375Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-9978c0c66a7d9fcd",
+      "slug": "grossbrand-rollstuhlbatterie-lost-zerstorerisches-feuer-in-seelze-aus-7d9fcd",
+      "title": "Großbrand: Rollstuhlbatterie löst zerstörerisches Feuer in Seelze aus",
+      "first_seen": "2026-09-06T07:21:18.000Z",
+      "last_updated": "2026-09-06T07:21:18.000Z",
+      "topic": [
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/niedersachsen-bremen/grossbrand--rollstuhlbatterie-loest-zerstoererisches-feuer-in-seelze-aus-38212402.html",
+          "title": "Großbrand: Rollstuhlbatterie löst zerstörerisches Feuer in Seelze aus",
+          "summary": "Ein Rollstuhl sprüht Funken und plötzlich steht ein Sonderpostenmarkt vollständig in Brand. 3 Millionen Euro soll die Schadenshöhe betragen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:21:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4c626d53702b4d84ed7819fa78fa138ab51ebe9ee6891a381bba7c44621949c3",
+          "source_item_id": "365cbe0a71ca624e74248251933aa05afcc6df76eac0863239b6ebf5907b61db",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:21:18.000Z",
+          "ingested_at": "2026-09-06T07:36:23.375Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9978c0c66a7d9fcd-claim-01",
+          "story_id": "wt-9978c0c66a7d9fcd",
+          "claim": "Großbrand: Rollstuhlbatterie löst zerstörerisches Feuer in Seelze aus: Ein Rollstuhl sprüht Funken und plötzlich steht ein Sonderpostenmarkt vollständig in Brand. 3 Millionen Euro soll die Schadenshöhe betragen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        }
+      ],
+      "content_hash": "a4028e93d7f1a72fb019c23eec8c0a65de9251c3b73a9cf2507ff0267318b0ab",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:51:23.375Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:36:23.375Z",
+      "event_first_seen_at": "2026-09-06T07:36:23.375Z",
+      "event_detected_at": "2026-09-06T07:36:23.375Z",
+      "event_id": "event-1864707dd8cc5abda411",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.089583333333334,
+        "detection_delay_minutes": 15.089583333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:36:23.375Z",
+        "fingerprint": "d6b388917b432a8b8a149f791c392d0fa8da24500b233754cfd86ad3a6955eba",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:36:23.375Z",
+      "rejection": {
+        "at": "2026-09-06T07:36:23.375Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-cf03acddb911d861",
+      "slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
+      "title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+      "first_seen": "2026-09-05T22:49:44.000Z",
+      "last_updated": "2026-09-06T07:18:41.000Z",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/oezdemir-fordert--hochdruck--beim-schutz-sicherheitsrelevanter-infrastruktur-38211938.html",
+          "title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+          "summary": "Nach Angriffen auf Umspannwerke in mehreren Bundesländern und einem nur knapp gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle hat Baden-Württembergs Ministerpräsident Cem Özdemir (Grüne) Tempo beim Schutz der sicherheitsrelevanten Infrastruktur sowie eine enge Zusammenarbeit der Bundesländer gefordert. „Die Sicherheitserfordernisse haben sich dramatisch verändert“, sagte Özdemir dem Redaktionsnetzwerk Deutschland (Sonntag).",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T22:49:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5f1a04eafca6aaebe30dcf530227d08bd1b5d28f92e7eeb673bfb4e09ed686f0",
+          "source_item_id": "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T22:49:44.000Z",
+          "ingested_at": "2026-09-05T23:24:48.763Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-draengt-auf-besseren-schutz-von-infrastruktur-100.html",
+          "title": "Özdemir fordert \"Hochdruck\" beim Schutz sicherheitsrelevanter Infrastruktur",
+          "summary": "Im Juni war ein Umspannwerk in Reutlingen das Ziel von Brandstiftung. Ähnliche Vorfälle gab es nun in anderen Bundesländern. BW-Ministerpräsident Özdemir ruft zu schnellem Handeln auf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:18:41.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b6b09ce9edb47a864f66ecf173cdbf627dbafda5bc5718dc2c8b871e2fab9ad6",
+          "source_item_id": "f0dbc5b4f7b8c183dd4471a70d140531f853df053fccabb4ce05204c9ec0b27e",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:18:41.000Z",
+          "ingested_at": "2026-09-06T07:36:23.375Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-cf03acddb911d861-claim-01",
+          "story_id": "wt-cf03acddb911d861",
+          "claim": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur: Nach Angriffen auf Umspannwerke in mehreren Bundesländern und einem nur knapp gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle hat Baden-Württembergs Ministerpräsident Cem Özdemir (Grüne) Tempo beim Schutz der sicherheitsrelevanten Infrastruktur sowie eine enge Zusammenarbeit der Bundesländer gefordert. „Die Sicherheitserfordernisse haben sich dramatisch verändert“, sagte Özdemir dem Redaktionsnetzwerk Deutschland (Sonntag).",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-cf03acddb911d861-claim-02",
+          "story_id": "wt-cf03acddb911d861",
+          "claim": "Özdemir fordert \"Hochdruck\" beim Schutz sicherheitsrelevanter Infrastruktur: Im Juni war ein Umspannwerk in Reutlingen das Ziel von Brandstiftung. Ähnliche Vorfälle gab es nun in anderen Bundesländern. BW-Ministerpräsident Özdemir ruft zu schnellem Handeln auf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        }
+      ],
+      "content_hash": "92ef221653ac61ea3daf57ccd3f5abce3b3fd1be7701261d88e372e9da98aa96",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T07:51:23.375Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:36:23.375Z",
+      "event_first_seen_at": "2026-09-05T23:24:48.763Z",
+      "event_detected_at": "2026-09-05T23:24:48.763Z",
+      "event_id": "event-bae82494ff50b6e4ca6a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 68,
+        "public_relevance": "sehr hoch",
+        "topics": [
+          "Geopolitik",
+          "Politik",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.70625,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 491.57686666666666,
+        "target_publication_minutes": 30,
+        "news_freshness_score": 85,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:36:23.375Z",
+        "fingerprint": "9881c862abe36b83fefa8ae985cc29062854f9706eb8c6cfbcafa258a22d3307",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:36:23.375Z",
+      "rejection": {
+        "at": "2026-09-06T07:36:23.375Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "publication_decision_review": {
         "at": "2026-09-06T05:41:03.427Z",
@@ -607,6 +1084,1076 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T07:19:32.124Z",
         "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-5072789df611867b",
+      "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
+      "title": "Sachsen-Anhalt und die Tücken der Umfragen",
+      "first_seen": "2026-09-04T06:45:02.000Z",
+      "last_updated": "2026-09-06T07:18:00.000Z",
+      "topic": [
+        "Demokratie",
+        "Wirtschaft",
+        "Politik",
+        "Soziales",
+        "Gesundheit",
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "title": "Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen",
+          "summary": "2021 lagen die Umfragen ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Diese Faktoren könnten noch alles verändern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T09:11:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "8722661fa7fa0fbdb62199e95969b72c7556137f6f23bc88cdc9e0fba9969d79",
+          "source_item_id": "b20e8384202485f599911824807c6f1d09686974f856574883fb91e1a0504055",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T09:11:58.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--wer-in-den-umfragen-vor-der-landtagswahl-vorn-liegt-37619250.html",
+          "title": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da",
+          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:49:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b5c7279a12e92642d41f50cb20db9b1f07aeb97648cc37c4ddcce51021b7287b",
+          "source_item_id": "b685840711361e7155168098ae07f781d58099499e4fc1b1a32efef2a503c254",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:49:00.000Z",
+          "ingested_at": "2026-09-04T08:06:19.579Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+          "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
+          "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T07:06:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
+          "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T07:06:15.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-der-landtagswahl--bundestags-gruene-unterstuetzen-wahlkampf-in-sachsen-anhalt-38207472.html",
+          "title": "Vor der Landtagswahl: Bundestags-Grüne unterstützen Wahlkampf in Sachsen-Anhalt",
+          "summary": "Die Fraktionsklausur der Grünen sollte eigentlich den ganzen Tag dauern. Doch kurzfristig wurde beschlossen, die Tagung schon mittags zu beenden, um noch die Wahlkämpfer vor Ort zu unterstützen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T08:35:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8b678b8d0811f1c08e2a030c95a30f777c2e84344f90be061642f78f3810b49e",
+          "source_item_id": "b19eb88271966d2cf925274ccb7beb7809866d25130161326b763580172f0bda",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T08:35:25.000Z",
+          "ingested_at": "2026-09-04T08:51:38.320Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/fdp-spitzenkandidatin-in-sachsen-anhalt-wirbt-fuer-grossen-wurf-beim-buerokratieabbau-100.html",
+          "title": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau",
+          "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:15:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "878001e91520cd166fb2287f253f9117190d26f185a4e00dd6747f4ddeab38b9",
+          "source_item_id": "4847bb311e4cb61d1fd2fb83cc11208b73d2a46cb2f1e4072657cf48d633891d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:15:07.000Z",
+          "ingested_at": "2026-09-04T19:50:26.018Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bsw-spitzenkandidatin-in-sachsen-anhalt-bereit-zu-kooperation-mit-afd-100.html",
+          "title": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD",
+          "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:15:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1760069b997965bf09a9fee4cfcbbbc36f177ddbc5d6ae18a67252c2ddf46294",
+          "source_item_id": "527abf1c8cea937540267a7b4d655ff65cc6c3dd81a15bbdc7167af335920ccb",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:15:07.000Z",
+          "ingested_at": "2026-09-04T19:50:26.018Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/gruenen-spitzenkandidatin-in-sachsen-anhalt-betont-positive-auswirkungen-von-migration-afd-fordert-k-100.html",
+          "title": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende",
+          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:15:07.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "128b495a2010002ee50bf4942a3927464ecdbef04decff888a81641f3958356c",
+          "source_item_id": "91d582f92a00d320f17e46b7ebb10b35032f318a553432b126b7af1b0c9e83fd",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:15:07.000Z",
+          "ingested_at": "2026-09-04T19:50:26.018Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/vor-wahl-in-sachsen-anhalt--farin-urlaub-bestuerzt-wegen-afd-zustimmung-38205864.html",
+          "title": "Stimmen vor Landtagswahl: Die AfD ist stark in Sachsen-Anhalt. „Da haben wir als Land versagt“, meint Farin Urlaub",
+          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt bringt Musiker Farin Urlaub von den Ärzten ein Soloalbum heraus. Abseits von Kultur hat er auch eine politische Botschaft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:14:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "df113af137d01a52b3ea8ecd014dc92ee6e1562d4e57b17c33520939c3c4b7af",
+          "source_item_id": "56f2465ce746d3a8af55f713f93e1e410553fbc68524c6109da2129a033f9d58",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T10:14:00.000Z",
+          "ingested_at": "2026-09-04T10:42:21.689Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/wahl-sachsen-anhalt-2026--so-stehen-die-parteien-in-umfragen-dar-37619250.html",
+          "title": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar",
+          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:58:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "82c21e8f4f9939894c8d7b945253532476a8c35735e9455f902be694919493e2",
+          "source_item_id": "41e0651d1fa46d52a58ee7dd0706f8631f6c85554f68c3f42b92dec2b1eef178",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:58:00.000Z",
+          "ingested_at": "2026-09-04T12:21:52.190Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
+          "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
+          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T19:34:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
+          "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T19:34:28.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/politik/deutschland/landtagswahl-in-sachsen-anhalt-wie-die-afd-noch-vor-der-wahl-die-maer-vom-stimmenklau-verbreitet-a-6bcffeba-8054-49d4-9b7c-9cf6e2c7e8d9",
+          "title": "Landtagswahl in Sachsen-Anhalt: Wie die AfD noch vor der Wahl die Mär vom Stimmenklau verbreitet",
+          "summary": "AfD-Kandidat Siegmund ruft zur Wahlbeobachtung auf, Parteichef Chrupalla raunt von angeblichem Briefwahl-Betrug in Pflegeheimen. Die AfD baut für den Fall vor, dass sie ihr Wahlziel verfehlt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T18:10:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "7ca8e8ef6d4367da0cac4e844b930e4a1389bd846e6bdaa2a751bcc1963a9483",
+          "source_item_id": "53c764a3f5db8108838f1337490c613b68f8ebe10e4431b43c2e04a1da018ba3",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T18:10:00.000Z",
+          "ingested_at": "2026-09-05T04:36:15.220Z",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
+          "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
+          "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magedburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T05:49:36.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "fbbceebe971c2093a36cea4f1b36e265798323d52433084477828063d9eff3b6",
+          "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T05:49:36.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/landtagswahl-sachsen-anhalt--tausende-zu-kundgebung-vor-landtagswahl-erwartet-38210422.html",
+          "title": "Landtagswahl Sachsen-Anhalt: Tausende zu Kundgebung vor Landtagswahl erwartet",
+          "summary": "Am Sonntag wird in Sachsen-Anhalt ein neuer Landtag gewählt. Zahlreiche Bündnisse und die Zivilgesellschaft haben Demonstrationen angekündigt. Sie rechnen mit einem starken AfD-Ergebnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T01:30:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "10498b0ce9cd25db008cfcb4bf8f35f68b0008dca4c8b270cd6653213558c971",
+          "source_item_id": "cff03c4c225e2c726b06c3d3107fd8c0cf8eb5f66e1018769ff7d040d4824ce2",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T01:30:09.000Z",
+          "ingested_at": "2026-09-05T01:36:28.768Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
+          "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+          "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T04:07:55.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
+          "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T04:07:55.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
+          "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+          "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T04:09:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
+          "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T04:09:22.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+          "title": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt",
+          "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T05:30:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4ecffbf01167f40b3db26f6f52aaf0917fc5e9a7e0fa159589f2f79d534ff88e",
+          "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T05:30:02.000Z",
+          "ingested_at": "2026-09-05T06:06:13.174Z",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/wahl-sachsen-anhalt-2026--das-sind-die-aktuellen-umfrage-ergebnisse-37619250.html",
+          "title": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar",
+          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:18:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7d67298ce3db05c093bb85dd4458805bb3fbcd02ac88822feb5f5600212ba264",
+          "source_item_id": "81e07976084cffdb2b93e9952dd3e0a997ae75e69663e378afea05cb53722ed7",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:18:00.000Z",
+          "ingested_at": "2026-09-06T07:36:23.375Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/vor-der-wahl-in-sachsen-anhalt-ein-kilometer-in-magdeburg-trennt-zwei-welten-16021800.html",
+          "title": "Vor der Wahl in Sachsen-Anhalt: Ein Kilometer in Magdeburg trennt zwei Welten",
+          "summary": "Zum Wahlkampffinale stellen sich die AfD und die Zivilgesellschaft mit Prominenz, Musik und Sprechchören gegeneinander auf. Nicht wenige haben Angst. Szenen eines dramatischen Abends vor einem historischen Tag.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T20:52:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "88b74625ac7c076dc1d9d138c12296451fc16eaed3fa00fbdbb11eec310a242e",
+          "source_item_id": "1993aa01753006f7007bcba776e0e3b7da43941e4a88dd2ba24979685db6f336",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T20:52:04.000Z",
+          "ingested_at": "2026-09-06T07:36:23.375Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/vor-landtagswahl-ganz-deutschland-schaut-auf-sachsen-anhalt,nordmagazin-13810.html",
+          "title": "Vor Landtagswahl: Ganz Deutschland schaut auf Sachsen-Anhalt",
+          "summary": "Am Sonntag wird in dem Bundesland gewählt. Susann Reichenbach informiert aus Magdeburg über die Ausgangslage.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:32:23.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ebf50d80b1d134aff6f1813f91532dffa4a2efde7b3cc4500a9c0c64964749bf",
+          "source_item_id": "4e5d707a3f31ae7b62bdbdbb2a37b40dfad739d35143c28ca51b6620d780c8dd",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:32:23.000Z",
+          "ingested_at": "2026-09-06T07:36:23.375Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5072789df611867b-claim-01",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen: 2021 lagen die Umfragen ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Diese Faktoren könnten noch alles verändern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-02",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-03",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt: Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-04",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: Bundestags-Grüne unterstützen Wahlkampf in Sachsen-Anhalt: Die Fraktionsklausur der Grünen sollte eigentlich den ganzen Tag dauern. Doch kurzfristig wurde beschlossen, die Tagung schon mittags zu beenden, um noch die Wahlkämpfer vor Ort zu unterstützen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-05",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau: Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-06",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD: Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-07",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende: Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-08",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Stimmen vor Landtagswahl: Die AfD ist stark in Sachsen-Anhalt. „Da haben wir als Land versagt“, meint Farin Urlaub: Kurz vor der Landtagswahl in Sachsen-Anhalt bringt Musiker Farin Urlaub von den Ärzten ein Soloalbum heraus. Abseits von Kultur hat er auch eine politische Botschaft.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-09",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-10",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden: Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-11",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahl in Sachsen-Anhalt: Wie die AfD noch vor der Wahl die Mär vom Stimmenklau verbreitet: AfD-Kandidat Siegmund ruft zur Wahlbeobachtung auf, Parteichef Chrupalla raunt von angeblichem Briefwahl-Betrug in Pflegeheimen. Die AfD baut für den Fall vor, dass sie ihr Wahlziel verfehlt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-12",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet: In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magedburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-13",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahl Sachsen-Anhalt: Tausende zu Kundgebung vor Landtagswahl erwartet: Am Sonntag wird in Sachsen-Anhalt ein neuer Landtag gewählt. Zahlreiche Bündnisse und die Zivilgesellschaft haben Demonstrationen angekündigt. Sie rechnen mit einem starken AfD-Ergebnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-14",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet: Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-15",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet: Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-16",
+          "story_id": "wt-5072789df611867b",
+          "claim": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt: Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-17",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-18",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor der Wahl in Sachsen-Anhalt: Ein Kilometer in Magdeburg trennt zwei Welten: Zum Wahlkampffinale stellen sich die AfD und die Zivilgesellschaft mit Prominenz, Musik und Sprechchören gegeneinander auf. Nicht wenige haben Angst. Szenen eines dramatischen Abends vor einem historischen Tag.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-19",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Vor Landtagswahl: Ganz Deutschland schaut auf Sachsen-Anhalt: Am Sonntag wird in dem Bundesland gewählt. Susann Reichenbach informiert aus Magdeburg über die Ausgangslage.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        }
+      ],
+      "content_hash": "6e4eb2bfdada278c5bc7d413089cd6616ea1b0d8311dcf1ccf5200ba707950fc",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "SOURCE_PUBLISHER_URL_MISMATCH",
+        "SOURCE_PUBLISHER_URL_MISMATCH"
+      ],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "SOURCE_INTEGRITY_OPEN",
+      "versions": [],
+      "updated_at": "2026-09-06T07:36:23.375Z",
+      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
+      "event_detected_at": "2026-09-04T06:51:43.159Z",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Wirtschaft",
+          "Politik",
+          "Soziales",
+          "Gesundheit",
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Demokratie",
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.389583333333334,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 2924.6702666666665,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "open",
+        "publication_status": "hold",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:36:23.375Z",
+        "fingerprint": "acb2622cbfe8b90c3138498a6b58930e477f1cad89d89926095150d217f20721",
+        "issue_codes": [
+          "SOURCE_PUBLISHER_URL_MISMATCH"
+        ],
+        "warning_codes": []
       }
     },
     {
@@ -8457,148 +10004,6 @@
       }
     },
     {
-      "story_id": "wt-cf03acddb911d861",
-      "slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
-      "title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
-      "first_seen": "2026-09-05T22:49:44.000Z",
-      "last_updated": "2026-09-05T22:49:44.000Z",
-      "topic": [
-        "Geopolitik",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/oezdemir-fordert--hochdruck--beim-schutz-sicherheitsrelevanter-infrastruktur-38211938.html",
-          "title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
-          "summary": "Nach Angriffen auf Umspannwerke in mehreren Bundesländern und einem nur knapp gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle hat Baden-Württembergs Ministerpräsident Cem Özdemir (Grüne) Tempo beim Schutz der sicherheitsrelevanten Infrastruktur sowie eine enge Zusammenarbeit der Bundesländer gefordert. „Die Sicherheitserfordernisse haben sich dramatisch verändert“, sagte Özdemir dem Redaktionsnetzwerk Deutschland (Sonntag).",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T22:49:44.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "5f1a04eafca6aaebe30dcf530227d08bd1b5d28f92e7eeb673bfb4e09ed686f0",
-          "source_item_id": "40f818f1f33d4a78ba072c784d8943fb6cd339eeb79deed3fa2cd0a79e71ab02",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T22:49:44.000Z",
-          "ingested_at": "2026-09-05T23:24:48.763Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-cf03acddb911d861-claim-01",
-          "story_id": "wt-cf03acddb911d861",
-          "claim": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur: Nach Angriffen auf Umspannwerke in mehreren Bundesländern und einem nur knapp gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle hat Baden-Württembergs Ministerpräsident Cem Özdemir (Grüne) Tempo beim Schutz der sicherheitsrelevanten Infrastruktur sowie eine enge Zusammenarbeit der Bundesländer gefordert. „Die Sicherheitserfordernisse haben sich dramatisch verändert“, sagte Özdemir dem Redaktionsnetzwerk Deutschland (Sonntag).",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T23:24:48.763Z"
-        }
-      ],
-      "content_hash": "35a968a273c9651e2581deca7f7516b4e06e59cedfe9ab8b31a89d3fe4509405",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-05T23:39:48.763Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T23:24:48.763Z",
-      "event_first_seen_at": "2026-09-05T23:24:48.763Z",
-      "event_detected_at": "2026-09-05T23:24:48.763Z",
-      "event_id": "event-bae82494ff50b6e4ca6a",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 68,
-        "public_relevance": "sehr hoch",
-        "topics": [
-          "Geopolitik",
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Infrastruktur oder Versorgungskapazität"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 35.07938333333333,
-        "detection_delay_minutes": 35.07938333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 30,
-        "news_freshness_score": 71,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T23:24:48.763Z",
-        "fingerprint": "cdedf46796fe04350ff5eb6ee1799aa91aa75dfdb4e838e01943e229d41807bb",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T23:24:48.763Z",
-      "rejection": {
-        "at": "2026-09-05T23:24:48.763Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
       "story_id": "wt-ec4a8db423181dbb",
       "slug": "revolutionsgarden-iran-nimmt-nach-us-angriff-tanker-in-hormus-meerenge-ins-visier-181dbb",
       "title": "Revolutionsgarden: Iran nimmt nach US-Angriff Tanker in Hormus-Meerenge ins Visier",
@@ -11689,6 +13094,150 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-c73a87f1c224095d",
+      "slug": "sabotage-verdachtiger-weiter-fluchtig-24095d",
+      "title": "Sabotage-Verdächtiger weiter flüchtig",
+      "first_seen": "2026-09-05T18:00:05.000Z",
+      "last_updated": "2026-09-05T18:00:05.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/gesellschaft/fahndung-sabotage-stromnetz-102.html",
+          "title": "Sabotage-Verdächtiger weiter flüchtig",
+          "summary": "Ein 48-Jähriger hat sich in zwei Schreiben zu den versuchten Sabotageakten gegen das Stromnetz bekannt. Darin nennt er seinen Namen, er wurde aber noch nicht gefasst. Nun setzt di…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T18:00:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "2c9b68b3d01a4c96e205a36f30d9bbc82b5bea7d695ccc231ce79c346cdcfa94",
+          "source_item_id": "b347c617211506da62767181b47fb29c0a77a09a516b496a920fa019136e380a",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T18:00:05.000Z",
+          "ingested_at": "2026-09-06T07:36:23.375Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c73a87f1c224095d-claim-01",
+          "story_id": "wt-c73a87f1c224095d",
+          "claim": "Sabotage-Verdächtiger weiter flüchtig: Ein 48-Jähriger hat sich in zwei Schreiben zu den versuchten Sabotageakten gegen das Stromnetz bekannt. Darin nennt er seinen Namen, er wurde aber noch nicht gefasst. Nun setzt di…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T07:36:23.375Z"
+        }
+      ],
+      "content_hash": "121ad33ea83a24ae3072a1b2633eac6297a83b380cb21d98e0ee9e51069d4c01",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T07:51:23.375Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T07:36:23.375Z",
+      "event_first_seen_at": "2026-09-06T07:36:23.375Z",
+      "event_detected_at": "2026-09-06T07:36:23.375Z",
+      "event_id": "event-ee25b760c543f15492d3",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 816.30625,
+        "detection_delay_minutes": 816.30625,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 0,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T07:36:23.375Z",
+        "fingerprint": "b60d3c817713719a84c43c11815302a44fb6089d3bb9b1b1bb3cc97355615480",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T07:36:23.375Z",
+      "rejection": {
+        "at": "2026-09-06T07:36:23.375Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -21613,9 +23162,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "c601231694b343dabcfa5be2285f3420c48249d8e655a553f7d4c01bd0d1124c",
-        "checked_at": "2026-09-06T07:22:55.137Z",
-        "outcome": "input_too_large",
-        "expires_at": "2026-09-06T13:22:55.137Z",
+        "checked_at": "2026-09-06T07:36:23.375Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T13:36:23.375Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -22082,7 +23631,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
+            "ingested_at": "2026-09-06T07:36:23.375Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -22115,7 +23664,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
+            "ingested_at": "2026-09-06T07:36:23.375Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -22247,7 +23796,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
+            "ingested_at": "2026-09-06T07:36:23.375Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -22291,703 +23840,7 @@
           }
         ]
       },
-      "deepening_checks": 3,
-      "pending_update": {
-        "detected_at": "2026-09-06T06:06:35.353Z",
-        "content_hash": "dd6a64998c504a95f72d1fd87d834d185010de503bf820ee86b783737e2fa661",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
-            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-            "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T07:02:30.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
-            "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T07:02:30.000Z",
-            "ingested_at": "2026-09-04T07:21:13.294Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesschau-access",
-            "publisher": "tagesschau / ARD",
-            "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
-            "title": "Sachsen-Anhalt: So ist die Stimmung vor der Landtagswahl",
-            "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T05:58:02.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "a3a882ef2c9caf0802eb9c06a061a0b20942aa6aaecaa7bada5faccfce5da8df",
-            "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
-            "publisher_id": "tagesschau",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T05:58:02.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
-            "provenance": {
-              "origin": "publisher:tagesschau",
-              "basis": "publisher_resolved_from_registered_target_url",
-              "independence_established": false,
-              "collection_source_id": "wdr-nachrichten"
-            },
-            "collection_source_id": "wdr-nachrichten",
-            "collection_publisher_id": "wdr",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown"
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
-            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
-            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T04:07:55.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
-            "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T04:07:55.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
-            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
-            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T04:09:22.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
-            "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T04:09:22.000Z",
-            "ingested_at": "2026-09-05T10:23:53.587Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
-            "title": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht",
-            "summary": "Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-01T14:38:55.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "a2e4d8b52b9340ac784ec86e650c17dec22acac070fb481dd92fed8839dea886",
-            "source_item_id": "deeaaefab10d8d6be35c1a4de80f7e4de81e1ca2e130057b3b623d0c4f6aa226",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T14:38:55.000Z",
-            "ingested_at": "2026-09-05T06:06:13.174Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "ndr-info",
-            "publisher": "NDR",
-            "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
-            "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
-            "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T07:06:15.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
-            "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
-            "publisher_id": "ndr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Norddeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T07:06:15.000Z",
-            "ingested_at": "2026-09-05T10:23:53.587Z",
-            "provenance": {
-              "origin": "publisher:ndr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
-            "title": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt",
-            "summary": "Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T13:33:07.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c520b2fed8cbae3e888aab84b15115b053449540cb1ce16bbc5d6381f5c75a14",
-            "source_item_id": "aeb6e86149e7357797f2d2695a41a092f687a2b4fb1497c4f3f5e23d68e6dba2",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T13:33:07.000Z",
-            "ingested_at": "2026-09-05T22:23:21.567Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "publisher": "ZDFheute",
-            "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
-            "title": "Tausende auf der Straße: Zeichen setzen \"für unser Land\"",
-            "summary": "Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T18:47:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "87d3607ab26afbcab60aed3b95084bfa76b310ff98df25c7114d021cc3071a4d",
-            "source_item_id": "ae0f97241727cfd71284debe9442dad606085a254b21cae8bed1253441ee63b0",
-            "publisher_id": "zdfheute",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T18:47:00.000Z",
-            "ingested_at": "2026-09-05T20:36:36.343Z",
-            "provenance": {
-              "origin": "publisher:zdfheute",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "swr-aktuell",
-            "publisher": "SWR Aktuell",
-            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
-            "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
-            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T19:34:28.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
-            "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
-            "publisher_id": "swr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Südwestdeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T19:34:28.000Z",
-            "ingested_at": "2026-09-05T08:51:16.120Z",
-            "provenance": {
-              "origin": "publisher:swr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
-            "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
-            "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magdeburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:54:53.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "fdf3059172229772727d508a76d7d49f5ab40351e811e9d93893b38a9225db0c",
-            "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:54:53.000Z",
-            "ingested_at": "2026-09-05T11:59:56.834Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
-            "title": "Sachsen-Anhalt vor der Wahl: Ist Bitterfeld bald überall?",
-            "summary": "In Bitterfeld-Wolfen hat die AfD die Bedingungen für das größte Demokratieförderprogramm massiv verändert. Nun fließen gar keine Gelder mehr. Was das für die Stadt bedeutet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T07:41:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3dc55c55677f78a4eaf8236861b571b5ffa5c0b1e03a7614bfa0c572a173c429",
-            "source_item_id": "76a645c64c8f56c4bd49ee9b0dbb72c34b186507734c7a921433d8d29d9bea72",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T07:41:00.000Z",
-            "ingested_at": "2026-09-05T08:51:16.120Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-demokratie-veranstaltungen-100,demonstrationen-110.html",
-            "title": "Veranstaltungen und Demonstrationen vor der Wahl Sachsen-Anhalt – Aktuelle Entwicklungen",
-            "summary": "Einen Tag vor der Landtagswahl finden in ganz Sachsen-Anhalt Demonstrationen und Feste für Demokratie statt. Die aktuelle Lage – live im Ticker.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T13:08:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "7ef86881460778cf16a7074725e8d2283314b02c4e560be4fd25deb0c447ee60",
-            "source_item_id": "297b16c16b4e4ed43a455ef407b564000be2505ca4eda079f641c8bcfb365dff",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T13:08:14.000Z",
-            "ingested_at": "2026-09-05T13:54:59.667Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/mehrere-kundgebungen-vor-landtagswahl-parteien-schliessen-wahlkampf-ab-102.html",
-            "title": "Sachsen-Anhalt - Mehrere Kundgebungen vor Landtagswahl - Parteien schließen Wahlkampf ab",
-            "summary": "Einen Tag vor der Landtagswahl in Sachsen-Anhalt haben die Parteien ihren Wahlkampf abgeschlossen. An Veranstaltungen von AfD, Linke und SPD nahmen auch Bundespolitiker teil. CDU, Grüne, FDP und BSW beendeten ebenfalls ihren Wahlkampf.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T18:15:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "9dc8dda134bbd5a990a3bc89d6287eb507d4955f793142a83bf0f220ef4c9a7b",
-            "source_item_id": "0fc05a24b5b765bb48cdd02ccdf3b8afcbd3971e6d1c6c03a26e9310cf333ada",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T18:15:04.000Z",
-            "ingested_at": "2026-09-05T18:21:18.289Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/politik/deutschland/afd-maga-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
-            "title": "Vor Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
-            "summary": "„AFD über alles“ – mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T14:56:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "3945a9b29b190d3b3a725bb6b980ac39cec10dc15c8661960e89fe4b678e4b36",
-            "source_item_id": "93f9609fdaa127812d6085531b6225302a45705677d3b642070eb21a0eaa4e9f",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T14:56:00.000Z",
-            "ingested_at": "2026-09-06T06:06:35.353Z",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            },
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown"
-          },
-          {
-            "source_id": "ndr-info",
-            "publisher": "NDR",
-            "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/vor-landtagswahl-ganz-deutschland-schaut-auf-sachsen-anhalt,nordmagazin-13810.html",
-            "title": "Vor Landtagswahl: Ganz Deutschland schaut auf Sachsen-Anhalt",
-            "summary": "Am Sonntag wird in dem Bundesland gewählt. Susann Reichenbach informiert aus Magdeburg über die Ausgangslage.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T18:32:23.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ebf50d80b1d134aff6f1813f91532dffa4a2efde7b3cc4500a9c0c64964749bf",
-            "source_item_id": "4e5d707a3f31ae7b62bdbdbb2a37b40dfad739d35143c28ca51b6620d780c8dd",
-            "publisher_id": "ndr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Norddeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
-            "provenance": {
-              "origin": "publisher:ndr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            },
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown"
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/vor-der-wahl-in-sachsen-anhalt-ein-kilometer-in-magdeburg-trennt-zwei-welten-16021800.html",
-            "title": "Vor der Wahl in Sachsen-Anhalt: Ein Kilometer in Magdeburg trennt zwei Welten",
-            "summary": "Zum Wahlkampffinale stellen sich die AfD und die Zivilgesellschaft mit Prominenz, Musik und Sprechchören gegeneinander auf. Nicht wenige haben Angst. Szenen eines dramatischen Abends vor einem historischen Tag.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T20:52:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "88b74625ac7c076dc1d9d138c12296451fc16eaed3fa00fbdbb11eec310a242e",
-            "source_item_id": "1993aa01753006f7007bcba776e0e3b7da43941e4a88dd2ba24979685db6f336",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            },
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown"
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/liveblog/wir-holen-uns-unser-land-zuruck-afd-kandidat-siegmund-gibt-sich-vor-wahl-in-sachsen-anhalt-siegessicher-16008484.html",
-            "title": "„Wir holen uns unser Land zurück“: AfD-Kandidat Siegmund gibt sich vor Wahl in Sachsen-Anhalt siegessicher",
-            "summary": "Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht + IW-Chef warnt bei AfD-Erfolg vor „ruinöser“ Zuwanderungspolitik + Wahlforscher erwarten keine Überraschung wie 2021 + Der Newsblog.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T06:56:20.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "6486b93368b3cf9bacbeb0189c89b3926875ab5daf941525d1149a51d993f1f7",
-            "source_item_id": "cf9cd5a422422d15071b68becded9dec89077a4a6d88c225b1e493a3d91813ae",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T06:06:35.353Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            },
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown"
-          },
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Vor-der-Landtagswahl-in-Sachsen-Anhalt/!6206552",
-            "title": "Vor der Landtagswahl in Sachsen-Anhalt: Plattenverschiebung",
-            "summary": "In Halle-Neustadt wohnen Jüngere mit Migrationsgeschichte und Ältere mit DDR-Biografie. Wie schauen sie auf ihr Viertel und die Politik? mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T05:57:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "4a0b704d816bb10ce152dfd2a920b4f03599047bb4096ad5d1b803f79f4337d4",
-            "source_item_id": "3c97285946552732f23458fe4e6874824a2564fbe3ff73d41afe2b3f104f70c0",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/politik/deutschland/landtagswahl-2026-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
-            "title": "Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
-            "summary": "„AFD über alles“ – mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T06:08:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "69aff136a920ebf08003e827d4c23de738988afe5353a3c88024abd50861ae9a",
-            "source_item_id": "7435e069dd716de781c511ed4112d65ae73ebd1ba9a4d3602c6f01eaefd19cc3",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T06:08:00.000Z",
-            "ingested_at": "2026-09-06T06:45:32.071Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/liveblog/rund-169-millionen-menschen-durfen-abstimmendie-wahllokale-in-sachsen-anhalt-haben-geoffnet-16008484.html",
-            "title": "Rund 1,69 Millionen Menschen dürfen abstimmen: Die Wahllokale in Sachsen-Anhalt haben geöffnet",
-            "summary": "Wirtschaftsweise warnt vor wirtschaftlichen Folgen eines AfD-Siegs + AfD setzt auf einen Ministerpräsidenten Siegmund + Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht+ Der Newsblog.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T06:56:20.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ab1ee55a48566cbe2e25389a868922c9b611af1565c47762c73510e30977e3a9",
-            "source_item_id": "65161320947043465aea07f5f6928e2510e855616ea1a5d9fd0cb7312734be6e",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/Sachsen-Anhalt/!6210514",
-            "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
-            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: Das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T06:36:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "4bf0ae8999a493eb38a43523468d423c918dbf51763f69537bad330ddb2a6a66",
-            "source_item_id": "f363844a39f1eb4c8196fcc3e09e309040f6e7b42f9942bb90cf76341686c882",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_INPUT_TOO_LARGE",
-        "quality_errors": [
-          "AI_INPUT_TOO_LARGE"
-        ],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T07:22:55.137Z",
-          "fingerprint": "54b45b9fe0be67e87ad8dd3d3c9f95ee99b8ac46863a345cc68c03347c3ad0c6",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -53020,907 +53873,6 @@
         }
       ],
       "retirement_history": []
-    },
-    {
-      "story_id": "wt-5072789df611867b",
-      "slug": "sachsen-anhalt-und-die-tucken-der-umfragen-11867b",
-      "title": "Sachsen-Anhalt und die Tücken der Umfragen",
-      "first_seen": "2026-09-04T06:45:02.000Z",
-      "last_updated": "2026-09-05T05:49:36.000Z",
-      "topic": [
-        "Demokratie",
-        "Politik",
-        "Soziales",
-        "Gesundheit",
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
-          "title": "Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen",
-          "summary": "2021 lagen die Umfragen ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Diese Faktoren könnten noch alles verändern.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T09:11:58.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "8722661fa7fa0fbdb62199e95969b72c7556137f6f23bc88cdc9e0fba9969d79",
-          "source_item_id": "b20e8384202485f599911824807c6f1d09686974f856574883fb91e1a0504055",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T09:11:58.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--wer-in-den-umfragen-vor-der-landtagswahl-vorn-liegt-37619250.html",
-          "title": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da",
-          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:49:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "b5c7279a12e92642d41f50cb20db9b1f07aeb97648cc37c4ddcce51021b7287b",
-          "source_item_id": "b685840711361e7155168098ae07f781d58099499e4fc1b1a32efef2a503c254",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T07:49:00.000Z",
-          "ingested_at": "2026-09-04T08:06:19.579Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
-          "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
-          "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T07:06:15.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
-          "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T07:06:15.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-der-landtagswahl--bundestags-gruene-unterstuetzen-wahlkampf-in-sachsen-anhalt-38207472.html",
-          "title": "Vor der Landtagswahl: Bundestags-Grüne unterstützen Wahlkampf in Sachsen-Anhalt",
-          "summary": "Die Fraktionsklausur der Grünen sollte eigentlich den ganzen Tag dauern. Doch kurzfristig wurde beschlossen, die Tagung schon mittags zu beenden, um noch die Wahlkämpfer vor Ort zu unterstützen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T08:35:25.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "8b678b8d0811f1c08e2a030c95a30f777c2e84344f90be061642f78f3810b49e",
-          "source_item_id": "b19eb88271966d2cf925274ccb7beb7809866d25130161326b763580172f0bda",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T08:35:25.000Z",
-          "ingested_at": "2026-09-04T08:51:38.320Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/fdp-spitzenkandidatin-in-sachsen-anhalt-wirbt-fuer-grossen-wurf-beim-buerokratieabbau-100.html",
-          "title": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau",
-          "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:15:07.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "878001e91520cd166fb2287f253f9117190d26f185a4e00dd6747f4ddeab38b9",
-          "source_item_id": "4847bb311e4cb61d1fd2fb83cc11208b73d2a46cb2f1e4072657cf48d633891d",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:15:07.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/bsw-spitzenkandidatin-in-sachsen-anhalt-bereit-zu-kooperation-mit-afd-100.html",
-          "title": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD",
-          "summary": "Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:15:07.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "1760069b997965bf09a9fee4cfcbbbc36f177ddbc5d6ae18a67252c2ddf46294",
-          "source_item_id": "527abf1c8cea937540267a7b4d655ff65cc6c3dd81a15bbdc7167af335920ccb",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:15:07.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/gruenen-spitzenkandidatin-in-sachsen-anhalt-betont-positive-auswirkungen-von-migration-afd-fordert-k-100.html",
-          "title": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende",
-          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:15:07.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "128b495a2010002ee50bf4942a3927464ecdbef04decff888a81641f3958356c",
-          "source_item_id": "91d582f92a00d320f17e46b7ebb10b35032f318a553432b126b7af1b0c9e83fd",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:15:07.000Z",
-          "ingested_at": "2026-09-04T19:50:26.018Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/vor-wahl-in-sachsen-anhalt--farin-urlaub-bestuerzt-wegen-afd-zustimmung-38205864.html",
-          "title": "Stimmen vor Landtagswahl: Die AfD ist stark in Sachsen-Anhalt. „Da haben wir als Land versagt“, meint Farin Urlaub",
-          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt bringt Musiker Farin Urlaub von den Ärzten ein Soloalbum heraus. Abseits von Kultur hat er auch eine politische Botschaft.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:14:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "df113af137d01a52b3ea8ecd014dc92ee6e1562d4e57b17c33520939c3c4b7af",
-          "source_item_id": "56f2465ce746d3a8af55f713f93e1e410553fbc68524c6109da2129a033f9d58",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T10:14:00.000Z",
-          "ingested_at": "2026-09-04T10:42:21.689Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/wahl-sachsen-anhalt-2026--so-stehen-die-parteien-in-umfragen-dar-37619250.html",
-          "title": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar",
-          "summary": "In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T11:58:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "82c21e8f4f9939894c8d7b945253532476a8c35735e9455f902be694919493e2",
-          "source_item_id": "41e0651d1fa46d52a58ee7dd0706f8631f6c85554f68c3f42b92dec2b1eef178",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T11:58:00.000Z",
-          "ingested_at": "2026-09-04T12:21:52.190Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
-          "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
-          "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T19:34:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
-          "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T19:34:28.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "spiegel-schlagzeilen",
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/politik/deutschland/landtagswahl-in-sachsen-anhalt-wie-die-afd-noch-vor-der-wahl-die-maer-vom-stimmenklau-verbreitet-a-6bcffeba-8054-49d4-9b7c-9cf6e2c7e8d9",
-          "title": "Landtagswahl in Sachsen-Anhalt: Wie die AfD noch vor der Wahl die Mär vom Stimmenklau verbreitet",
-          "summary": "AfD-Kandidat Siegmund ruft zur Wahlbeobachtung auf, Parteichef Chrupalla raunt von angeblichem Briefwahl-Betrug in Pflegeheimen. Die AfD baut für den Fall vor, dass sie ihr Wahlziel verfehlt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:10:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "7ca8e8ef6d4367da0cac4e844b930e4a1389bd846e6bdaa2a751bcc1963a9483",
-          "source_item_id": "53c764a3f5db8108838f1337490c613b68f8ebe10e4431b43c2e04a1da018ba3",
-          "publisher_id": "spiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T18:10:00.000Z",
-          "ingested_at": "2026-09-05T04:36:15.220Z",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
-          "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
-          "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magedburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T05:49:36.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "fbbceebe971c2093a36cea4f1b36e265798323d52433084477828063d9eff3b6",
-          "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T05:49:36.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/landtagswahl-sachsen-anhalt--tausende-zu-kundgebung-vor-landtagswahl-erwartet-38210422.html",
-          "title": "Landtagswahl Sachsen-Anhalt: Tausende zu Kundgebung vor Landtagswahl erwartet",
-          "summary": "Am Sonntag wird in Sachsen-Anhalt ein neuer Landtag gewählt. Zahlreiche Bündnisse und die Zivilgesellschaft haben Demonstrationen angekündigt. Sie rechnen mit einem starken AfD-Ergebnis.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T01:30:09.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "10498b0ce9cd25db008cfcb4bf8f35f68b0008dca4c8b270cd6653213558c971",
-          "source_item_id": "cff03c4c225e2c726b06c3d3107fd8c0cf8eb5f66e1018769ff7d040d4824ce2",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T01:30:09.000Z",
-          "ingested_at": "2026-09-05T01:36:28.768Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
-          "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
-          "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T04:07:55.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
-          "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T04:07:55.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
-          "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
-          "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T04:09:22.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
-          "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T04:09:22.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "swr-aktuell",
-          "publisher": "SWR Aktuell",
-          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
-          "title": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt",
-          "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T05:30:02.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "4ecffbf01167f40b3db26f6f52aaf0917fc5e9a7e0fa159589f2f79d534ff88e",
-          "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
-          "publisher_id": "swr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Südwestdeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T05:30:02.000Z",
-          "ingested_at": "2026-09-05T06:06:13.174Z",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-5072789df611867b-claim-01",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen: 2021 lagen die Umfragen ungewöhnlich weit vom Wahlergebnis entfernt. Auch jetzt führt die AfD in Umfragen deutlich. Diese Faktoren könnten noch alles verändern.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-02",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor der Landtagswahl: So stehen die Parteien in Sachsen-Anhalt in den Umfragen da: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-03",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt: Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-04",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor der Landtagswahl: Bundestags-Grüne unterstützen Wahlkampf in Sachsen-Anhalt: Die Fraktionsklausur der Grünen sollte eigentlich den ganzen Tag dauern. Doch kurzfristig wurde beschlossen, die Tagung schon mittags zu beenden, um noch die Wahlkämpfer vor Ort zu unterstützen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-05",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl - FDP-Spitzenkandidatin in Sachsen-Anhalt wirbt für großen Wurf beim Bürokratieabbau: Wenige Tage vor der Landtagswahl in Sachsen-Anhalt wirbt die Spitzenkandidatin der FDP, Hüskens, für deutliche Schritte zum Abbau von Bürokratie.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-06",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl - BSW-Spitzenkandidatin in Sachsen-Anhalt: Bereit zu Kooperation mit AfD: Wenige Tage vor der Landtagswahl in Sachsen-Anhalt hat BSW-Spitzenkandidatin Wittig erneut ihre Bereitschaft signalisiert, mit der AfD zusammenzuarbeiten. Wittig sagte im ZDF, Politik müsse sich an Inhalten orientieren. Es gehe um gute Politik für das Land.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-07",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl - Grünen-Spitzenkandidatin in Sachsen-Anhalt betont positive Auswirkungen von Migration - AfD fordert Kehrtwende: Kurz vor der Landtagswahl in Sachsen-Anhalt hat Grünen-Spitzenkandidatin Sziborra-Seidlitz auf positive Auswirkungen von Migration hingewiesen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-08",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Stimmen vor Landtagswahl: Die AfD ist stark in Sachsen-Anhalt. „Da haben wir als Land versagt“, meint Farin Urlaub: Kurz vor der Landtagswahl in Sachsen-Anhalt bringt Musiker Farin Urlaub von den Ärzten ein Soloalbum heraus. Abseits von Kultur hat er auch eine politische Botschaft.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-09",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor der Landtagswahl: Wahl Sachsen-Anhalt 2026: So stehen die Parteien in Umfragen dar: In Sachsen-Anhalt wird im September ein neuer Landtag gewählt. Umfragen zeigen, welche Partei im Moment vorn liegt und welche Koalitionen rechnerisch möglich wären.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-10",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden: Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "swr-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-11",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Landtagswahl in Sachsen-Anhalt: Wie die AfD noch vor der Wahl die Mär vom Stimmenklau verbreitet: AfD-Kandidat Siegmund ruft zur Wahlbeobachtung auf, Parteichef Chrupalla raunt von angeblichem Briefwahl-Betrug in Pflegeheimen. Die AfD baut für den Fall vor, dass sie ihr Wahlziel verfehlt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "spiegel-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:spiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-12",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet: In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magedburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-13",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Landtagswahl Sachsen-Anhalt: Tausende zu Kundgebung vor Landtagswahl erwartet: Am Sonntag wird in Sachsen-Anhalt ein neuer Landtag gewählt. Zahlreiche Bündnisse und die Zivilgesellschaft haben Demonstrationen angekündigt. Sie rechnen mit einem starken AfD-Ergebnis.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-14",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet: Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-15",
-          "story_id": "wt-5072789df611867b",
-          "claim": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet: Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        },
-        {
-          "claim_id": "wt-5072789df611867b-claim-16",
-          "story_id": "wt-5072789df611867b",
-          "claim": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt: Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "swr-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:swr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T06:06:13.174Z"
-        }
-      ],
-      "content_hash": "6d3ec4d14bf393f57a6c1f3fbe8a02b8f7fd4ab63d12b0e03d2f51d91d6fc40c",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T06:06:13.174Z",
-      "event_first_seen_at": "2026-09-04T06:51:43.159Z",
-      "event_detected_at": "2026-09-04T06:51:43.159Z",
-      "event_id": "event-2a2bd81ddd672bb6a3a8",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie",
-          "Politik",
-          "Soziales",
-          "Gesundheit",
-          "Gesellschaft"
-        ],
-        "dimensions": [
-          "Demokratie",
-          "Mensch"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [
-          "binding_decision"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 16.619566666666667,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 1394.50025,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T06:06:13.174Z",
-      "rejection": {
-        "at": "2026-09-05T06:06:13.174Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
     },
     {
       "story_id": "wt-9c60f63153bc112e",
@@ -124739,7 +124691,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:22:55.137Z"
+          "checked_at": "2026-09-06T07:36:23.375Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -124754,7 +124706,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T07:22:55.137Z",
+      "updated_at": "2026-09-06T07:36:23.375Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -124790,11 +124742,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3899.91895,
+        "source_age_minutes": 3913.389583333333,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3421.63545,
+        "queue_age_minutes": 3435.106083333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -124803,7 +124755,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T07:22:55.137Z",
+        "checked_at": "2026-09-06T07:36:23.375Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
