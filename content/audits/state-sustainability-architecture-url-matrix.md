@@ -3863,8 +3863,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1159**
-- Combined matrix items (routes + extra HTML + support): **17773**
+- Tracked support text files inventoried: **1153**
+- Combined matrix items (routes + extra HTML + support): **17767**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3901,8 +3901,6 @@ Signals are review candidates, not automatic errors.
 | `assets/search/search-associations.json` | search_index_or_generator | ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung |
 | `assets/search/search-curated-entrypoints.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind |
 | `assets/search/search-dictionary.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
-| `assets/search/search-index.json` | search_index_or_generator | NO_CHANGE_REQUIRED | — |
-| `assets/search/search-index.json` | search_index_or_generator | NO_CHANGE_REQUIRED | — |
 | `assets/search/search-index.json` | search_index_or_generator | NO_CHANGE_REQUIRED | — |
 | `content/academy/academy-v4-main-domain-projection.json` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, dns, evaluation |
 | `content/academy/woek-g-curriculum-v4.json` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -4250,8 +4248,6 @@ Signals are review candidates, not automatic errors.
 | `public/data/tool-landscape-2-0.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | novelty_or_absence |
 | `public/data/woek-g-curriculum.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `public/data/woek-search-meta.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | — |
-| `public/data/woek-search-meta.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | — |
-| `public/data/woek-search-meta.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | — |
 | `public/data/woems-canvas.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, alternativen, evaluation |
 | `public/data/woems-methoden.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation |
 | `scripts/academy/build-v4-main-domain.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -4359,8 +4355,6 @@ Signals are review candidates, not automatic errors.
 | `scripts/wirkungswissenschaften/build-wirkungswissenschaften-hub.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `scripts/wirkungswissenschaften/build-wiwi-publications.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, alternativen, evaluation, novelty_or_absence |
-| `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, alternativen, evaluation, novelty_or_absence |
-| `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, alternativen, evaluation, novelty_or_absence |
 | `tools/apply_state_sustainability_architecture.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `tools/apply_state_sustainability_precision.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `tools/apply_state_sustainability_public_precision.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
@@ -4392,7 +4386,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17774**
+- Combined reviewed items: **17768**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
