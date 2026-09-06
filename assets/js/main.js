@@ -4309,6 +4309,24 @@ const WirkungsraumLayer = (() => {
   function actionTarget() {
     let row = document.querySelector("[data-wirkungsraum-actions-row]");
     if (row) return { container: row, panelAfter: row };
+    const learningMain = document.querySelector("main[data-learning-page]");
+    if (learningMain) {
+      const tools = document.createElement("section");
+      tools.className = "section";
+      tools.dataset.wirkungsraumPageTools = "true";
+      tools.dataset.searchExclude = "true";
+      const details = document.createElement("details");
+      details.className = "content-save-tools";
+      const summary = document.createElement("summary");
+      summary.textContent = i18n("Diese Seite merken und organisieren", "Save and organize this page");
+      row = document.createElement("div");
+      row.className = "wirkungsraum-save-row";
+      row.dataset.wirkungsraumActionsRow = "true";
+      details.append(summary, row);
+      tools.append(details);
+      learningMain.append(tools);
+      return { container: row, panelAfter: row };
+    }
     const actions = document.querySelector(".hero-actions");
     if (actions) {
       const details = document.createElement("details");
@@ -5441,6 +5459,8 @@ const WirkungsraumLayer = (() => {
       setNoteState(false);
     });
 
+    const learningTools = document.querySelector("[data-wirkungsraum-page-tools]");
+    if (learningTools) { learningTools.append(panel); return; }
     const isDebateCompassPage = /^\/wirkungsradar\/live\/[^/]+\/?/.test(path);
     if (isDebateCompassPage) {
       const lateAnchor = document.querySelector("[data-community-submission-block], #verwandte-inhalte, #warum-der-satz-zieht, #quellen");
@@ -7959,3 +7979,19 @@ document.addEventListener("DOMContentLoaded", () => {
     document.head.append(script);
   }
 });
+
+// Deep links into native disclosure widgets must expose their target on all pages.
+(function revealLinkedSection() {
+  function reveal() {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
+    if (!id) return;
+    const target = document.getElementById(id);
+    if (!target) return; // Filter hashes remain owned by their page controllers.
+    let parent = target.closest("details"), changed = false;
+    while (parent) { if (!parent.open) { parent.open = true; changed = true; } parent = parent.parentElement?.closest("details"); }
+    if (changed) requestAnimationFrame(() => target.scrollIntoView({behavior:"instant",block:"start"}));
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", reveal, {once:true}); else reveal();
+  window.addEventListener("hashchange", reveal);
+})();

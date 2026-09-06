@@ -275,7 +275,7 @@ const homeTeaser = `      <!-- parlament-info:start -->
 function updateHome() {
   let home = fs.readFileSync(HOME_FILE, "utf8");
   home = home.replace(/\s*<!-- parlament-info:start -->[\s\S]*?<!-- parlament-info:end -->\s*/g, "\n\n      ");
-  const anchor = '<section class="section next-step-block" id="journey" aria-labelledby="journey-title">';
+  const anchor = home.includes("<!-- home-parliament-slot -->") ? "<!-- home-parliament-slot -->" : '<section class="section next-step-block" id="journey" aria-labelledby="journey-title">';
   if (!home.includes(anchor)) throw new Error("Homepage anchor for Parliament teaser not found");
   home = home.replace(anchor, `${homeTeaser}${anchor}`);
   fs.writeFileSync(HOME_FILE, home);

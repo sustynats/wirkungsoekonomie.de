@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 
-export const EVIDENCE_PACKET_VERSION = "evidence-packet-2";
+export const EVIDENCE_PACKET_VERSION = "evidence-packet-3";
 const hash = value => createHash("sha256").update(JSON.stringify(value)).digest("hex");
 const text = value => String(value || "").replace(/\s+/g, " ").trim();
 
@@ -74,13 +74,27 @@ function packTransport(story) {
   }
   const result = replace(story);
   if (texts.length) result.text_pool = texts;
-  // Table cells use null only for an absent property, wrapped values distinguish
-  // a real null. No inference or source selection happens during transport.
-  for (const key of ['sources', 'claims']) {
+  // One shared evidence table avoids repeating evidence field names in every
+  // source row. Order and source ownership remain explicit and reversible.
+  const evidence = [];
+  for (const [source_index, source] of (result.sources || []).entries()) {
+    if (!Array.isArray(source.evidence_segments)) continue;
+    for (const segment of source.evidence_segments) evidence.push({ source_index, ...segment });
+    if (source.evidence_segments.length) delete source.evidence_segments;
+  }
+  if (evidence.length) result.evidence = evidence;
+  // Raw cells remove an unnecessary wrapper per value. Explicit nulls have a
+  // separate presence bitmap; absent and null never become interchangeable.
+  for (const key of ['sources', 'claims', 'evidence', 'related_ticker_history']) {
     if (!result[key]?.length) continue;
     const columns = [...new Set(result[key].flatMap(row => Object.keys(row)))];
-    const rows = result[key].map(row => columns.map(column => Object.hasOwn(row, column) ? [row[column]] : null));
-    result[`${key}_table`] = { columns, rows };
+    const present_nulls = [];
+    const rows = result[key].map((row, r) => columns.map((column, c) => {
+      if (!Object.hasOwn(row, column)) return null;
+      if (row[column] === null) present_nulls.push([r, c]);
+      return row[column];
+    }));
+    result[`${key}_table`] = { format: 'cells-v2', columns, rows, ...(present_nulls.length ? { present_nulls } : {}) };
     delete result[key];
   }
   return result;
@@ -98,11 +112,25 @@ export function expandPacketTransport(packed) {
   }
   const result = expand(packed);
   delete result.text_pool;
-  for (const key of ['sources', 'claims']) {
+  for (const key of ['sources', 'claims', 'evidence', 'related_ticker_history']) {
     const table = result[`${key}_table`];
     if (!table) continue;
-    result[key] = table.rows.map(row => Object.fromEntries(table.columns.flatMap((column,i) => row[i] === null ? [] : [[column, row[i][0]]])));
+    const explicitNulls = new Set((table.present_nulls || []).map(([r, c]) => `${r}:${c}`));
+    result[key] = table.rows.map((row, r) => Object.fromEntries(table.columns.flatMap((column, i) =>
+      table.format === 'cells-v2'
+        ? row[i] === null && !explicitNulls.has(`${r}:${i}`) ? [] : [[column, row[i]]]
+        : row[i] === null ? [] : [[column, row[i][0]]])));
     delete result[`${key}_table`];
+  }
+  if (result.evidence) {
+    for (const { source_index, ...segment } of result.evidence) {
+      if (!Number.isInteger(source_index) || !result.sources?.[source_index]) throw new Error('PACKET_SOURCE_REFERENCE_INVALID');
+      (result.sources[source_index].evidence_segments ||= []).push(segment);
+    }
+    delete result.evidence;
+  }
+  if (result.source_defaults?.evidence_selection) {
+    for (const source of result.sources || []) source.evidence_selection ??= structuredClone(result.source_defaults.evidence_selection);
   }
   return result;
 }

@@ -19019,3 +19019,48 @@ figure.impact-process { display: block; margin: var(--space-6) 0; }
 .explanation-hero > p, .explanation-hero > details { margin-inline: 0; max-width: 58rem; }
 .content-save-tools { margin-inline: 0; }
 .legacy-fragment-anchor { display: block; height: 0; scroll-margin-top: 6rem; }
+
+/* Guided explanations: readable first, optional calculation details second. */
+.course-section { max-width: 1120px; margin-inline: auto; }
+.course-section > p, .course-section > h2 { max-width: 78ch; }
+.course-toc { display: flex; flex-wrap: wrap; gap: .7rem 1.4rem; padding: 1.2rem max(1rem, calc((100% - 1080px) / 2)); border-block: 1px solid var(--border, #dedbd3); }
+.course-toc a { font-weight: 650; text-decoration: underline; text-underline-offset: .2em; }
+.course-model-note { padding: 1rem 1.2rem; border-left: 3px solid #817043; background: #f7f1e4; color: #342e23; }
+.course-comparison { margin: 1.5rem 0; padding: clamp(1rem, 3vw, 2rem); background: #f4f6f3; border: 1px solid #d8e0d5; border-radius: 16px; }
+.course-comparison figcaption { font-weight: 700; font-size: 1.15rem; margin-bottom: 1.25rem; }
+.course-bars { display: grid; gap: 1rem; }
+.course-bar-row { display: grid; grid-template-columns: minmax(170px, 1fr) 2fr; align-items: center; gap: 1rem; }
+.course-bar-track { background: #e5e9e1; border-radius: 5px; overflow: hidden; }
+.course-bar { width: var(--bar); background: #495769; padding: .7rem; color: #fff; white-space: nowrap; }
+.course-bar--comparison { background: #756748; }
+.course-bar--after { background: #215e45; }
+.indicator-grid { display: grid; gap: 1.3rem; grid-template-columns: repeat(2, minmax(0,1fr)); align-items: start; }
+.indicator-card { min-width: 0; }
+.indicator-card h3 { font-size: 1.25rem; line-height: 1.35; }
+.indicator-result { font-size: 1.15rem; font-weight: 750; color: #174f38; }
+.indicator-card details { margin-top: 1rem; }
+.indicator-card summary { cursor: pointer; padding-block: .65rem; font-weight: 650; }
+.formula-block, .course-calculation { font-variant-numeric: tabular-nums; overflow-wrap: anywhere; background: #f4f2ec; padding: 1rem; border-radius: 8px; color: #17231b; }
+.course-definitions { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem 2rem; }
+.course-definitions dt { font-weight: 750; }
+.course-definitions dd { margin: .35rem 0 0; }
+.course-calculator { max-width: 760px; margin-inline: auto; }
+.course-calculator fieldset { border: 0; padding: 0; margin: 0; }
+.course-calculator legend { font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+.course-input { display: block; font-weight: 650; margin-bottom: 1.4rem; }
+.course-input input { display: block; width: min(100%,320px); border: 1px solid #7b867a; border-radius: 8px; padding: .8rem; font: inherit; background: #fff; color: #122019; margin-top: .45rem; }
+.course-input small { display: block; font-weight: 400; margin-top: .35rem; }
+.course-progress { color: #215e45; font-weight: 700; border-bottom: 2px solid #d4dfd4; padding-bottom: 1rem; }
+.course-controls { display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+.course-calculator [hidden] { display: none !important; }
+.course-live-result { background: #eef4ed; padding: 1.3rem; border-radius: 12px; margin-top: 1.5rem; color: #142a1d; }
+.course-error { color: #9a271b; font-weight: 650; }
+.home-clear .hero { min-height: auto; padding-block: clamp(2.5rem,6vw,5rem); }
+.home-clear .hero-title { max-width: 20ch; font-size: clamp(2.3rem,5vw,4.3rem); }
+.home-clear .hero-subtitle { max-width: 66ch; font-size: clamp(1.1rem,2vw,1.35rem); }
+.home-clear .section { padding-block: clamp(2rem,4vw,3.5rem); }
+.home-clear .home-quiet-links { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; }
+.home-clear .home-details { padding: 1rem; border: 1px solid #d8d9d0; border-radius: 10px; margin-block: 1rem; }
+.home-clear .home-details summary { font-size: 1.1rem; font-weight: 650; cursor: pointer; padding: .6rem 0; }
+@media(max-width:700px) { .indicator-grid,.course-definitions { grid-template-columns: 1fr; } .course-bar-row { grid-template-columns: 1fr; gap: .3rem; } .course-controls .btn { flex: 1 1 auto; } }
+@media print { .course-controls,.course-form { display: none; } .course-comparison,.indicator-card { break-inside: avoid; } }

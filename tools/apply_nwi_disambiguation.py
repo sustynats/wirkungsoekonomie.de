@@ -38,7 +38,7 @@ HISTORICAL_EXACT_PATHS = {
     "werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html",
     "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html",
 }
-SKIP_DIRS = {".git", "node_modules", "_site"}
+SKIP_DIRS = {".git", "node_modules", "_site", "outputs"}
 LIVING_MACHINE_SURFACES = ("llms.txt",)
 
 NOTICE = f"""{MARKER_START}

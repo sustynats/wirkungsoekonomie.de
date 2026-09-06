@@ -223,7 +223,12 @@ def main() -> int:
     rel = "index.html"
     old = "Unsere Steuerung ist wirkungsblind. Was Entscheidungen bei Menschen, Ökosystemen und Institutionen wirklich anrichten oder aufbauen, fließt nicht in die Entscheidungen zurück."
     new = "Unsere Steuerung bleibt in einem wichtigen Sinn wirkungsblind: Nicht weil Folgen grundsätzlich ungeprüft wären - für Bundesregelungsvorhaben bestehen bereits Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung, DNS-Monitoring und eNAP/eGFA. Die Lücke liegt in der durchgängigen Rückkopplung: Welche Zustände Entscheidungen bei Menschen, Ökosystemen und Institutionen tatsächlich verändern, wie sich Alternativen unter denselben Ziel- und Schutzräumen unterscheiden und was spätere Beobachtungen für die nächste Entscheidung bedeuten."
-    if replace_once(rel, old, new):
+    if 'class="home-clear"' in read(rel):
+        # The data-driven homepage replaces the old diagnosis, while the full
+        # state reference blocks below remain projected and independently checked.
+        if 'Deutschland besitzt bereits eine Gesetzesfolgen- und Nachhaltigkeitsprüfungsarchitektur.' not in read(rel):
+            raise RuntimeError("New homepage must acknowledge existing state assessment")
+    elif replace_once(rel, old, new):
         changed.append(rel)
     if upsert_before_main(rel, STATE_BLOCK):
         changed.append(rel)
