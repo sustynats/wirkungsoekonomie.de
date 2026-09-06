@@ -61,6 +61,8 @@ export function normalizePublicContent(root, options={}) {
   for(const file of walk(root)){
     const rel=path.relative(root,file).replaceAll(path.sep,'/');const route=rel==='index.html'?'/':'/'+(rel.endsWith('/index.html')?rel.slice(0,-10):rel);
     const original=fs.readFileSync(file,'utf8');let html=original;
+    // JSON mirrors are machine access points, not duplicate editorial pages.
+    if(rel.startsWith('api/') && /<pre>/.test(html) && !/<meta\b[^>]*name=[\"']robots[\"']/i.test(html))html=html.replace('</head>','<meta name="robots" content="noindex, follow">\n</head>');
     for(const [id,label] of Object.entries(headingAnchors[route] || {})){
       if(html.includes(`id="${id}"`))continue;
       html=html.replace(/<h([1-6])\b([^>]*)>([\s\S]*?)<\/h\1>/gi,(whole,level,attrs,body)=>!/(?:^|\s)id=/.test(attrs)&&visible(body)===label?`<h${level}${attrs} id="${id}">${body}</h${level}>`:whole);
