@@ -1,8 +1,483 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-06T13:36:20.439Z",
-  "updated_at": "2026-09-06T14:06:24.915Z",
+  "public_updated_at": "2026-09-06T14:21:20.533Z",
+  "updated_at": "2026-09-06T14:21:20.533Z",
   "stories": [
+    {
+      "story_id": "wt-b5ca8651ce7844db",
+      "slug": "polizei-fahndet-nach-tatverdachtigem-am-hambacher-forst-7844db",
+      "title": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst",
+      "first_seen": "2026-09-06T13:43:00.000Z",
+      "last_updated": "2026-09-06T14:22:15.107Z",
+      "published_at": "2026-09-06T14:22:15.107Z",
+      "updated_at": "2026-09-06T14:22:15.107Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+          "title": "Polizei fahndet nach Verdächtigem am Hambacher Forst",
+          "summary": "Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:43:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "42a5a21c3ddfd6c0ca4fa0fa64094b9ca30818b49e3f9d0247a4298e12798745",
+          "source_item_id": "1e4be773f43481f8bf81c438e093fb41bb450bf5ed005840d53079ecedaf819c",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:43:00.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b5ca8651ce7844db-v1-claim-1",
+          "story_id": "wt-b5ca8651ce7844db",
+          "claim": "Die Polizei sucht am Hambacher Forst nach einem 48-jährigen Tatverdächtigen im Zusammenhang mit Sabotageakten gegen das Stromnetz.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+              "excerpt_hash": "328a303752e193699cdf",
+              "checked_at": "2026-09-06T14:22:15.107Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+              "excerpt_hash": "b64aa5c9a0d283fcac50",
+              "checked_at": "2026-09-06T14:22:15.107Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+              "excerpt_hash": "cdb948b8d88785ae3620",
+              "checked_at": "2026-09-06T14:22:15.107Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T14:22:15.107Z"
+        },
+        {
+          "claim_id": "wt-b5ca8651ce7844db-v1-claim-2",
+          "story_id": "wt-b5ca8651ce7844db",
+          "claim": "Die Ermittler nennen ein Fahrrad als mögliches Indiz und fahnden inzwischen auch nach dem mutmaßlich benutzten Rad.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+              "excerpt_hash": "e6a378c327cc8455051b",
+              "checked_at": "2026-09-06T14:22:15.107Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+              "excerpt_hash": "addc19f17935594571d8",
+              "checked_at": "2026-09-06T14:22:15.107Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+              "excerpt_hash": "5b6e25dbc1a8dbf8de56",
+              "checked_at": "2026-09-06T14:22:15.107Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-06T14:22:15.107Z"
+        }
+      ],
+      "event_id": "event-2863d76840aa042b6f5e",
+      "event_first_seen_at": "2026-09-06T13:51:15.545Z",
+      "event_detected_at": "2026-09-06T13:51:15.545Z",
+      "verification_started_at": "2026-09-06T14:22:02.249Z",
+      "publish_ready_at": "2026-09-06T14:22:15.107Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-06T18:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T14:21:20.533Z",
+        "fingerprint": "a2828573af4a5e57a0ff057cab18f8cbd6424b7e503c5956f2cdff0167352f1f",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der gesuchte Mann gefasst wird oder weitere Tatorte bestätigt werden",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimeldung oder bestätigte Festnahme",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c9cffb5e592e4c60",
+          "announced_at": "2026-09-06T13:43:00.000Z",
+          "follow_up_date": "2026-09-13T14:22:15.107Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "33451b4ed891f2d18ea06c5e029130c62a54f1de37cf46b9826bc1c1816cf1b7",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "source_summary": "Die ZDFheute-Meldung berichtet über eine laufende Fahndung der Polizei am Hambacher Forst bei Kerpen westlich von Köln. Gesucht werde ein 48-jähriger Tatverdächtiger, dem Sabotageaktionen auf das Stromnetz zugeschrieben würden. Ein Sprecher der Kölner Polizei habe bestätigt, dass der Einsatz auch dazu diene, den Mann selbst oder Spuren zu finden.\n\nAls weiteres Indiz nennt die Redaktion ein Fahrrad; nach dem Rad werde ebenfalls gefahndet. Die Meldung verweist zudem auf frühere Ermittlungen zu Sabotage-Angriffen in mehreren Bundesländern, hält aber offen, wie weit die Taten und der gesuchte Mann zusammenhängen. Die Quelle ist ein journalistischer Bericht mit dpa-Bezug, keine Primärquelle.",
+      "analysis": {
+        "story_id": "wt-b5ca8651ce7844db",
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Die Polizei sucht am Hambacher Forst nach einem 48-jährigen Tatverdächtigen. Als mögliches Indiz nennt die Meldung auch ein Fahrrad.",
+        "detail_summary": "Gesichert ist nach der gelieferten Quelle eine laufende Fahndung am Hambacher Forst nach einem 48-jährigen Mann, den die Polizei mit Sabotageaktionen gegen das Stromnetz in Verbindung bringt. Die Meldung nennt außerdem ein Fahrrad als Suchhinweis und beschreibt, dass die Ermittler auch nach dem mutmaßlich benutzten Rad fahnden. Für die Einordnung wichtig ist weniger die Reichweite der Berichterstattung als der mögliche Eingriff in die Sicherheit kritischer Energieinfrastruktur. Daraus ergibt sich ein Wirkpfad über Ermittlungsdruck, mögliche Festnahme und Klärung von Tatzusammenhängen; falls sich der Verdacht erhärtet, könnten weitere Schutzmaßnahmen für Stromanlagen folgen. Offen bleibt nach der Quelle, wie belastbar die Zuordnung der Taten zu dem Gesuchten ist und ob es bereits weitere unabhängige Bestätigungen gibt.",
+        "why_relevant": "Die Meldung betrifft mögliche Sabotage an kritischer Energieinfrastruktur und eine laufende Fahndung; beides kann für Sicherheit, Betrieb und staatliche Reaktion relevant sein.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "monitoring",
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Gefährdung kritischer Versorgung und laufende Fahndung mit potenziell breiten Folgen für Sicherheit und Ermittlungen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Indirekter Bezug über Strominfrastruktur und Energiewende-Kontext; unmittelbare Umweltwirkung ist nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Betroffen sind staatliche Sicherheits- und Ermittlungsstrukturen sowie die öffentliche Kontrolle über Schutz kritischer Infrastruktur."
+        },
+        "importance": "hoch",
+        "impact_potential": "Eine Bestätigung oder Festnahme könnte den Ermittlungsverlauf, Schutzmaßnahmen und die Bewertung von Angriffen auf Strominfrastruktur beeinflussen. Der unmittelbare Zustandswechsel liegt aber derzeit nur in der Fahndung und noch nicht in einer belegten Systemänderung.",
+        "impact_risks": [
+          "Weitere Vorfälle könnten die Resilienz des Stromsystems belasten.",
+          "Unklare Zuschreibung kann Ermittlungen, Kommunikation und Priorisierung verzerren."
+        ],
+        "mechanisms": [
+          "Fahndungsdruck kann zur Festnahme führen.",
+          "Ermittlungen können Schutz und Bewachung kritischer Infrastruktur verstärken."
+        ],
+        "first_order": [
+          "Polizei sucht den Verdächtigen und sichert mögliche Spuren."
+        ],
+        "second_order": [
+          "Bei Bestätigung des Verdachts könnten weitere Anlagen besser geschützt oder verlegt werden."
+        ],
+        "third_order": [
+          "Längere Folgen wären mögliche Änderungen bei Sicherheitskonzepten für Energieinfrastruktur."
+        ],
+        "systemic_relevance": "Die Meldung betrifft ein gekoppeltes System aus Strafverfolgung, Energieversorgung und öffentlicher Sicherheit. Materiell relevant ist vor allem die mögliche Störung von kritischer Infrastruktur und die Reaktion staatlicher Schutz- und Ermittlungsorgane.",
+        "transformation_potential": "Noch kein Transformationsbeleg; allenfalls ein möglicher Anlass für strengere Schutzarchitekturen an Stromanlagen, falls die Ermittlungen den Zusammenhang erhärten.",
+        "resilience": "Die Fahndung kann Resilienz stärken, wenn sie zur Aufklärung und Absicherung der Infrastruktur beiträgt; zugleich zeigt der Fall ein mögliches Verwundbarkeitsfenster.",
+        "side_effects": [
+          "Höhere Sicherheitskosten für Betreiber und Behörden.",
+          "Mögliche Verlagerung von Sabotagerisiken auf andere Standorte."
+        ],
+        "uncertainties": [
+          "Der tatsächliche Tatbeitrag des Gesuchten ist in der Quelle nicht juristisch belegt.",
+          "Weitere Tatorte und Zusammenhänge bleiben offen.",
+          "Unabhängige Bestätigung über den Bericht hinaus fehlt in den gelieferten Daten."
+        ],
+        "evidence_level": "medium",
+        "attribution": "ZDFheute berichtet unter Bezug auf die Polizei und dpa; der Sprecher der Kölner Polizei bestätigt die Fahndung, die Zuschreibung der Sabotage bleibt ermittlungsoffen.",
+        "watch_next": [
+          "Festnahme oder neue Fahndungsdetails",
+          "Amtliche Bestätigung des Tatvorwurfs",
+          "Neue Angaben zu betroffenen Anlagen oder Orten"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, SDG 9, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Neue Fahndung am Hambacher Forst mit Bezug zu kritischer Strominfrastruktur ist zeitnah, neu gegenüber dem Vorlauf und materiell relevant."
+        },
+        "visuals": {
+          "affected_groups": [
+            "staat",
+            "unternehmen",
+            "natur"
+          ],
+          "tendency": {
+            "human": "offen",
+            "planet": "offen",
+            "democracy": "gemischt"
+          }
+        },
+        "publication_recommendation": true,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-06T14:21:20.533Z",
+        "media_trigger_fingerprint": "ab98c8ed641af4ec297985b89b6bcbfe0383203fe8f1922063aa0ed40f7159ed",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "ab98c8ed641af4ec297985b89b6bcbfe0383203fe8f1922063aa0ed40f7159ed",
+          "content_fingerprint": "9bb4f2d3bcb4a5e8e27995f2c93cd7f3166987cb2337671b370776dd042a3f70",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-06T14:22:15.107Z",
+          "content_hash": "33451b4ed891f2d18ea06c5e029130c62a54f1de37cf46b9826bc1c1816cf1b7",
+          "source_summary": "Die ZDFheute-Meldung berichtet über eine laufende Fahndung der Polizei am Hambacher Forst bei Kerpen westlich von Köln. Gesucht werde ein 48-jähriger Tatverdächtiger, dem Sabotageaktionen auf das Stromnetz zugeschrieben würden. Ein Sprecher der Kölner Polizei habe bestätigt, dass der Einsatz auch dazu diene, den Mann selbst oder Spuren zu finden.\n\nAls weiteres Indiz nennt die Redaktion ein Fahrrad; nach dem Rad werde ebenfalls gefahndet. Die Meldung verweist zudem auf frühere Ermittlungen zu Sabotage-Angriffen in mehreren Bundesländern, hält aber offen, wie weit die Taten und der gesuchte Mann zusammenhängen. Die Quelle ist ein journalistischer Bericht mit dpa-Bezug, keine Primärquelle.",
+          "analysis": {
+            "story_id": "wt-b5ca8651ce7844db",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Polizei sucht am Hambacher Forst nach einem 48-jährigen Tatverdächtigen. Als mögliches Indiz nennt die Meldung auch ein Fahrrad.",
+            "detail_summary": "Gesichert ist nach der gelieferten Quelle eine laufende Fahndung am Hambacher Forst nach einem 48-jährigen Mann, den die Polizei mit Sabotageaktionen gegen das Stromnetz in Verbindung bringt. Die Meldung nennt außerdem ein Fahrrad als Suchhinweis und beschreibt, dass die Ermittler auch nach dem mutmaßlich benutzten Rad fahnden. Für die Einordnung wichtig ist weniger die Reichweite der Berichterstattung als der mögliche Eingriff in die Sicherheit kritischer Energieinfrastruktur. Daraus ergibt sich ein Wirkpfad über Ermittlungsdruck, mögliche Festnahme und Klärung von Tatzusammenhängen; falls sich der Verdacht erhärtet, könnten weitere Schutzmaßnahmen für Stromanlagen folgen. Offen bleibt nach der Quelle, wie belastbar die Zuordnung der Taten zu dem Gesuchten ist und ob es bereits weitere unabhängige Bestätigungen gibt.",
+            "why_relevant": "Die Meldung betrifft mögliche Sabotage an kritischer Energieinfrastruktur und eine laufende Fahndung; beides kann für Sicherheit, Betrieb und staatliche Reaktion relevant sein.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Mögliche Gefährdung kritischer Versorgung und laufende Fahndung mit potenziell breiten Folgen für Sicherheit und Ermittlungen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "rationale": "Indirekter Bezug über Strominfrastruktur und Energiewende-Kontext; unmittelbare Umweltwirkung ist nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Betroffen sind staatliche Sicherheits- und Ermittlungsstrukturen sowie die öffentliche Kontrolle über Schutz kritischer Infrastruktur."
+            },
+            "importance": "hoch",
+            "impact_potential": "Eine Bestätigung oder Festnahme könnte den Ermittlungsverlauf, Schutzmaßnahmen und die Bewertung von Angriffen auf Strominfrastruktur beeinflussen. Der unmittelbare Zustandswechsel liegt aber derzeit nur in der Fahndung und noch nicht in einer belegten Systemänderung.",
+            "impact_risks": [
+              "Weitere Vorfälle könnten die Resilienz des Stromsystems belasten.",
+              "Unklare Zuschreibung kann Ermittlungen, Kommunikation und Priorisierung verzerren."
+            ],
+            "mechanisms": [
+              "Fahndungsdruck kann zur Festnahme führen.",
+              "Ermittlungen können Schutz und Bewachung kritischer Infrastruktur verstärken."
+            ],
+            "first_order": [
+              "Polizei sucht den Verdächtigen und sichert mögliche Spuren."
+            ],
+            "second_order": [
+              "Bei Bestätigung des Verdachts könnten weitere Anlagen besser geschützt oder verlegt werden."
+            ],
+            "third_order": [
+              "Längere Folgen wären mögliche Änderungen bei Sicherheitskonzepten für Energieinfrastruktur."
+            ],
+            "systemic_relevance": "Die Meldung betrifft ein gekoppeltes System aus Strafverfolgung, Energieversorgung und öffentlicher Sicherheit. Materiell relevant ist vor allem die mögliche Störung von kritischer Infrastruktur und die Reaktion staatlicher Schutz- und Ermittlungsorgane.",
+            "transformation_potential": "Noch kein Transformationsbeleg; allenfalls ein möglicher Anlass für strengere Schutzarchitekturen an Stromanlagen, falls die Ermittlungen den Zusammenhang erhärten.",
+            "resilience": "Die Fahndung kann Resilienz stärken, wenn sie zur Aufklärung und Absicherung der Infrastruktur beiträgt; zugleich zeigt der Fall ein mögliches Verwundbarkeitsfenster.",
+            "side_effects": [
+              "Höhere Sicherheitskosten für Betreiber und Behörden.",
+              "Mögliche Verlagerung von Sabotagerisiken auf andere Standorte."
+            ],
+            "uncertainties": [
+              "Der tatsächliche Tatbeitrag des Gesuchten ist in der Quelle nicht juristisch belegt.",
+              "Weitere Tatorte und Zusammenhänge bleiben offen.",
+              "Unabhängige Bestätigung über den Bericht hinaus fehlt in den gelieferten Daten."
+            ],
+            "evidence_level": "medium",
+            "attribution": "ZDFheute berichtet unter Bezug auf die Polizei und dpa; der Sprecher der Kölner Polizei bestätigt die Fahndung, die Zuschreibung der Sabotage bleibt ermittlungsoffen.",
+            "watch_next": [
+              "Festnahme oder neue Fahndungsdetails",
+              "Amtliche Bestätigung des Tatvorwurfs",
+              "Neue Angaben zu betroffenen Anlagen oder Orten"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Neue Fahndung am Hambacher Forst mit Bezug zu kritischer Strominfrastruktur ist zeitnah, neu gegenüber dem Vorlauf und materiell relevant."
+            },
+            "visuals": {
+              "affected_groups": [
+                "staat",
+                "unternehmen",
+                "natur"
+              ],
+              "tendency": {
+                "human": "offen",
+                "planet": "offen",
+                "democracy": "gemischt"
+              }
+            },
+            "publication_recommendation": true,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-06T14:21:20.533Z",
+            "media_trigger_fingerprint": "ab98c8ed641af4ec297985b89b6bcbfe0383203fe8f1922063aa0ed40f7159ed",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "ab98c8ed641af4ec297985b89b6bcbfe0383203fe8f1922063aa0ed40f7159ed",
+              "content_fingerprint": "9bb4f2d3bcb4a5e8e27995f2c93cd7f3166987cb2337671b370776dd042a3f70",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-b5ca8651ce7844db-v1-claim-1",
+              "story_id": "wt-b5ca8651ce7844db",
+              "claim": "Die Polizei sucht am Hambacher Forst nach einem 48-jährigen Tatverdächtigen im Zusammenhang mit Sabotageakten gegen das Stromnetz.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+                  "excerpt_hash": "328a303752e193699cdf",
+                  "checked_at": "2026-09-06T14:22:15.107Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+                  "excerpt_hash": "b64aa5c9a0d283fcac50",
+                  "checked_at": "2026-09-06T14:22:15.107Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+                  "excerpt_hash": "cdb948b8d88785ae3620",
+                  "checked_at": "2026-09-06T14:22:15.107Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T14:22:15.107Z"
+            },
+            {
+              "claim_id": "wt-b5ca8651ce7844db-v1-claim-2",
+              "story_id": "wt-b5ca8651ce7844db",
+              "claim": "Die Ermittler nennen ein Fahrrad als mögliches Indiz und fahnden inzwischen auch nach dem mutmaßlich benutzten Rad.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+                  "excerpt_hash": "e6a378c327cc8455051b",
+                  "checked_at": "2026-09-06T14:22:15.107Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+                  "excerpt_hash": "addc19f17935594571d8",
+                  "checked_at": "2026-09-06T14:22:15.107Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+                  "excerpt_hash": "5b6e25dbc1a8dbf8de56",
+                  "checked_at": "2026-09-06T14:22:15.107Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-06T14:22:15.107Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+              "content_hash": "42a5a21c3ddfd6c0ca4fa0fa64094b9ca30818b49e3f9d0247a4298e12798745"
+            }
+          ]
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-06T14:22:15.107Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-f3b15b7c9de9675e-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "f3b15b7c9de9675e388dfe98b6ee88ae0eb039d39a209738a491cfbe7fb83577"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-ad24c75cd8211ecd-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "ad24c75cd8211ecd1f72e14c16c77e2f4855cfd7699adfec4e729c36c7a6e680"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b5ca8651ce7844db-e21ebefaf9bff401-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "e21ebefaf9bff4015bd6bebac0556b3f6541b0b246d5b9ebad9940f91692203b"
+        },
+        "source_visual": null,
+        "fingerprint": "2280155007bbe74500ae060f929c0a4127c2a1e6297cab9b1caf99d6f89c0340",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-06T14:23:31.959Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-7d7a59cf8e16cea9",
       "slug": "millionen-daten-geleakt-hackerangriff-konnte-grossere-folgen-haben-als-bisher-gedacht-16cea9",
@@ -680,7 +1155,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-ecf4b205df1ecac3-claim-02",
@@ -700,20 +1175,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         }
       ],
       "content_hash": "aa0a1ca0674541c69c79ffaa3f46feea6e018ac33bde9ffc32b5aff99961f924",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T14:36:20.533Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T14:06:24.915Z",
+      "updated_at": "2026-09-06T14:21:20.533Z",
       "event_first_seen_at": "2026-09-06T07:16:30.989Z",
       "event_detected_at": "2026-09-06T07:16:30.989Z",
       "event_id": "event-c1061c18db8a491c241b",
@@ -746,23 +1221,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 14.098583333333334,
+        "source_age_minutes": 29.02555,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 409.8987666666667,
+        "queue_age_minutes": 424.82573333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T14:06:24.915Z",
+        "checked_at": "2026-09-06T14:21:20.533Z",
         "fingerprint": "71e7ba38396d7583cc796cf8ab6405b424d37a44c44378eab0ef4b2c62457158",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T14:21:20.533Z",
+      "rejection": {
+        "at": "2026-09-06T14:21:20.533Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -1098,134 +1585,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-b5ca8651ce7844db",
-      "slug": "polizei-fahndet-nach-tatverdachtigem-am-hambacher-forst-7844db",
-      "title": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst",
-      "first_seen": "2026-09-06T13:43:00.000Z",
-      "last_updated": "2026-09-06T13:43:00.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
-          "title": "Polizei fahndet nach Verdächtigem am Hambacher Forst",
-          "summary": "Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:43:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "42a5a21c3ddfd6c0ca4fa0fa64094b9ca30818b49e3f9d0247a4298e12798745",
-          "source_item_id": "1e4be773f43481f8bf81c438e093fb41bb450bf5ed005840d53079ecedaf819c",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:43:00.000Z",
-          "ingested_at": "2026-09-06T14:06:24.915Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-b5ca8651ce7844db-claim-01",
-          "story_id": "wt-b5ca8651ce7844db",
-          "claim": "Polizei fahndet nach Verdächtigem am Hambacher Forst: Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "zdfheute-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
-        }
-      ],
-      "content_hash": "33451b4ed891f2d18ea06c5e029130c62a54f1de37cf46b9826bc1c1816cf1b7",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-06T14:06:24.915Z",
-      "event_first_seen_at": "2026-09-06T13:51:15.545Z",
-      "event_detected_at": "2026-09-06T13:51:15.545Z",
-      "event_id": "event-2863d76840aa042b6f5e",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 23.41525,
-        "detection_delay_minutes": 8.259083333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 15.156166666666667,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T14:06:24.915Z",
-        "fingerprint": "a2828573af4a5e57a0ff057cab18f8cbd6424b7e503c5956f2cdff0167352f1f",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -1934,7 +2293,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "423d55d844c3549d98d95d631efe3bdc8060a0df81cf9a4fdbd09eba7c2e81ea",
           "issue_codes": [],
           "warning_codes": []
@@ -3396,7 +3755,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-55bd06a2965313bb-claim-02",
@@ -3416,7 +3775,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-55bd06a2965313bb-claim-03",
@@ -3436,7 +3795,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-55bd06a2965313bb-claim-04",
@@ -3456,23 +3815,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         }
       ],
       "content_hash": "a023b5dcc12b35d8dcd5c6d16f88d8cbd3f085299188521d19c27b9a7a84237d",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_SUMMARY_SENTENCE_COUNT",
-        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-06T14:21:15.545Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-06T15:21:20.533Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T13:51:15.545Z",
+      "updated_at": "2026-09-06T14:21:20.533Z",
       "event_first_seen_at": "2026-09-06T10:51:35.145Z",
       "event_detected_at": "2026-09-06T10:51:35.145Z",
       "event_id": "event-d55562d813347a032496",
@@ -3505,23 +3861,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 19.27575,
+        "source_age_minutes": 49.35888333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 179.67333333333335,
+        "queue_age_minutes": 209.75646666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 90,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:51:15.545Z",
+        "checked_at": "2026-09-06T14:21:20.533Z",
         "fingerprint": "097d032076f954ef570cbbaf1e3a8d3491cbb865e7bf3cbb40edd8c3db788544",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T14:21:20.533Z",
+      "rejection": {
+        "at": "2026-09-06T14:21:20.533Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -4271,7 +4639,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "1b8d9b174df22264a08c74cf10b778040acd7881d73cc50c14da2a7e4c0b1724",
           "issue_codes": [],
           "warning_codes": []
@@ -4549,7 +4917,7 @@
       "verification_started_at": "2026-09-06T12:39:05.564Z",
       "publish_ready_at": "2026-09-06T12:39:39.313Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": "2026-09-06T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -5331,9 +5699,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "b75841e17eb2b6294ac12b54c14aaafba6c4e940ace7c1577b3fdc48e86134cf",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "f1423a90486dd4abf535913ce3309fef50e3593a7902138a0b01a3da6ac323f3",
+        "checked_at": "2026-09-06T14:21:20.533Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T20:21:20.533Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -5536,24 +5907,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
-          "fingerprint": "8b5ec3d091901b17e8f204c6ff0bb4a34c5dd582772c537f7b7c0a6aa1f1ccfe",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-9e3a2e21408b5561",
@@ -6498,8 +6854,8 @@
           "AI_SOURCE_SUMMARY_LENGTH",
           "CLAIM_NUMBER_NOT_IN_EVIDENCE"
         ],
-        "quality_retry_count": 3,
-        "quality_retry_after": "2026-09-06T15:06:24.915Z",
+        "quality_retry_count": 4,
+        "quality_retry_after": "2026-09-06T17:21:20.533Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -6507,7 +6863,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "63741470b2686d6df5e36659c6bc2f7644bb128949a9f596ee02741f844ccc37",
           "issue_codes": [],
           "warning_codes": []
@@ -7169,7 +7525,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "a170d0ae2e41c4209260012ffc7890113208f72819739c60567dae8c494cf075",
           "issue_codes": [],
           "warning_codes": []
@@ -8764,10 +9120,14 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_RECOMMENDATION_INVALID"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T14:36:20.533Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -8775,7 +9135,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "de6fc3991d4fea8798415a759023dac4333248ae76dc8fa2a384d50054b77515",
           "issue_codes": [],
           "warning_codes": []
@@ -10474,7 +10834,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "249f18fd4be1f1cc4705514dcda46b786b53e92f94f2d94531e96c099cb8580d",
           "issue_codes": [],
           "warning_codes": []
@@ -11984,7 +12344,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "73c5deb23dce081eb674967ac81cf472c0b4964d59e6f31c46f7cce602dce265",
           "issue_codes": [],
           "warning_codes": []
@@ -13766,7 +14126,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "1fc91e9d7e838095b8ac1a35749ca3e650f17e7a2d8f68f24d1752f3a5606811",
           "issue_codes": [],
           "warning_codes": []
@@ -14646,7 +15006,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "4b5cb8dbc32b33136f0c030b796f9b52a3a569289e64c3b6492d49951fce902e",
           "issue_codes": [],
           "warning_codes": []
@@ -15555,7 +15915,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -17563,7 +17923,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "98c998135335d0968bf5e0087414a452d3f9d6caf5770dc3e95471769288eee4",
           "issue_codes": [],
           "warning_codes": []
@@ -19318,7 +19678,7 @@
       "verification_started_at": "2026-09-06T07:18:12.568Z",
       "publish_ready_at": "2026-09-06T07:18:26.547Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": "2026-09-06T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -19742,48 +20102,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2835f0e2cff67049769223d00c02310dc4a67239fef91d59c52a1deeb0db32c8",
-        "checked_at": "2026-09-06T10:06:13.084Z",
+        "checked_at": "2026-09-06T14:21:20.533Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T16:06:13.084Z",
-        "sources": [
-          {
-            "source_id": "bundesregierung-presse",
-            "publisher": "Pressemitteilungen der Bundesregierung",
-            "url": "https://www.bundesregierung.de/breg-de/aktuelles/statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannual-financial-framework-2028-2034-2450768",
-            "title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
-            "summary": "The negotiations on the Multiannual Financial Framework (MFF) 2028-2034 have entered a decisive stage. Through the MFF, the EU determines how it will spend its common resources well into the next decade. In an increasingly uncertain world, the MFF provides the foundation for ensuring the EU's capacity to act as a strong and sovereign community, and to ensure security for Europeans. To deliver on this ambition, the MFF must be modernised and reformed, both in its architecture and in the way it allocates resources. Both should be guided by our shared priorities, which are set out, not least, in our Strategic Agenda: security and defence, competitiveness, migration and sovereignty. By endorsing the three core spending programmes, the Council has laid the foundation for an architecture that is fit for the challenges ahead. Based on an affordable and viable EU budget, we jointly support the ambition to conclude the negotiations in 2026. At a time when virtually all Member States are un...",
-            "source_type": "official_rss",
-            "published_at": "2026-08-27T12:05:00.000Z",
-            "primary_source": true,
-            "source_priority": 88,
-            "source_topic": "Politik",
-            "content_hash": "d67af2ea27ec2c599b84b9434724fb45993cc6c5c2b9d84220b4c2c4c8ee3feb",
-            "source_item_id": "dde18f25eedbc821b5e64192a8829c806c65df6eb262a5f122f52e8d1e83cdda",
-            "publisher_id": "bundesregierung",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-08-27T12:05:00.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:bundesregierung",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "b1bae7b04df34bc6338acd68295c03bcc78f251e2a1fb3d3bb0005b5ad402ce7",
+        "expires_at": "2026-09-06T20:21:20.533Z",
         "sources": [
           {
             "source_id": "bundesregierung-presse",
@@ -19817,24 +20138,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
-          "fingerprint": "6e342d5fd35d2293e28d3fbce951640b3384ddc6bf400910593ccb6dda8c0ecb",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-812148f3635566a6",
@@ -20847,7 +21153,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -20867,7 +21173,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -20887,7 +21193,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -20907,7 +21213,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -20927,7 +21233,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -20947,7 +21253,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -20967,7 +21273,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -20987,7 +21293,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -21007,7 +21313,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -21027,7 +21333,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -21047,7 +21353,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -21067,7 +21373,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -21087,7 +21393,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -21107,7 +21413,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -21127,7 +21433,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -21147,7 +21453,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -21167,7 +21473,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -21187,7 +21493,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -21207,7 +21513,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -21227,7 +21533,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -21247,7 +21553,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-22",
@@ -21267,7 +21573,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         }
       ],
       "content_hash": "d9745f0ba8831ddc9819bbcbe93c8d55d9c66bfc762db01991776a13e66c4a81",
@@ -21283,7 +21589,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T14:06:24.915Z",
+      "updated_at": "2026-09-06T14:21:20.533Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -21326,20 +21632,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 31.41525,
+        "source_age_minutes": 46.342216666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3314.6959333333334,
+        "queue_age_minutes": 3329.6229,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T14:06:24.915Z",
+        "checked_at": "2026-09-06T14:21:20.533Z",
         "fingerprint": "4f06e4e777914a41f6a4b1af1f2fb21ee1e17ce0b24ce5243efa948c106d68d1",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
@@ -23254,7 +23560,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
           "issue_codes": [],
           "warning_codes": []
@@ -24168,7 +24474,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
           "issue_codes": [],
           "warning_codes": []
@@ -29586,7 +29892,7 @@
       "verification_started_at": "2026-09-05T18:37:42.731Z",
       "publish_ready_at": "2026-09-05T18:38:03.533Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -30237,10 +30543,10 @@
       "retirement_history": [],
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "684fd00c8759bfb6ceaf5ea7199cc10edb41c7fab6c2c755ba7e64f2aa55b415",
-        "checked_at": "2026-09-06T10:06:13.084Z",
+        "fingerprint": "b5e4050faf1868a76ca57879024adc0d038e28fe8c4ef2c6869395203ee52876",
+        "checked_at": "2026-09-06T14:21:20.533Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T16:06:13.084Z",
+        "expires_at": "2026-09-06T20:21:20.533Z",
         "sources": [
           {
             "source_id": "dw-news",
@@ -30305,96 +30611,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "0570d96ba98468ebd8c1cda0293043a8fc73f1f04a96d6df5c7909aa823767a8",
-        "sources": [
-          {
-            "source_id": "dw-news",
-            "publisher": "Deutsche Welle",
-            "url": "https://www.dw.com/de/putin-drei-tage-angriffspause-w%C3%A4hrend-ukraine-verhandlungen/a-79047412?maca=de-rss-de-news-1089-xml-mrss",
-            "title": "Putin: Drei Tage Angriffspause während Ukraine-Verhandlungen",
-            "summary": "Die USA wollen ihre Vermittlung für ein Ende des Kriegs in der Ukraine wiederaufnehmen. Dazu sollen ihre Unterhändler in Moskau und Kyjiw Gespräche führen. Putins Ankündigung gilt allerdings nur für Kyjiw.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T13:01:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "2937cbc7832b70f800ca9e74dd1b483b1f3d65488d39858b60096081af35bfe1",
-            "source_item_id": "db30448a672e05b7cc6a7453a0aec2359070de6802c59e6562a178a36167930b",
-            "publisher_id": "deutsche-welle",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T13:01:00.000Z",
-            "ingested_at": "2026-09-05T14:13:45.805Z",
-            "provenance": {
-              "origin": "publisher:deutsche-welle",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-158.html",
-            "title": "Ukraine-News: Gespräche zwischen Putin und US-Unterhändlern begonnen",
-            "summary": "In Moskau haben am Abend die neuen Gespräche zwischen Russland und den USA über ein Ende des Ukraine-Kriegs begonnen. Zuvor US-Präsident Donald Trump angekündigt, dass die US-Gesandten einen neuen Vorschlag präsentieren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T18:33:12.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "e9c153f1d9d49c8343b05b13a925140e3cc39e3cf91016db796ebeb3dbafac1c",
-            "source_item_id": "8f21b8d3bf3e8a755af80c273b40d05bfa7922f975a254c7d116bb06084c5dc0",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T18:33:12.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED",
-          "FOLLOWUP_DATE_UNSUPPORTED",
-          "AI_UNSUPPORTED_FRAMEWORK_NUMBER:16,1",
-          "AI_UNSUPPORTED_FRAMEWORK_NUMBER:16,3"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-06T14:21:24.915Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
-          "fingerprint": "df5c463bf4ba3206744a71b032e64d92bd8f5b41f57854c37906335d6447629d",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-5f843f61cc5736d4",
@@ -40562,9 +40779,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "e1645d0399ea75237c36fad66c042559b6ee77c013fff68ba3bc4e80d389df5d",
-        "checked_at": "2026-09-06T14:06:24.915Z",
+        "checked_at": "2026-09-06T14:21:20.533Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T20:06:24.915Z",
+        "expires_at": "2026-09-06T20:21:20.533Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -42195,7 +42412,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:06:24.915Z",
+          "checked_at": "2026-09-06T14:21:20.533Z",
           "fingerprint": "4265575b343160024ed7ddab3c999be570db9f5dc8ee38cdb31aee53edf1e808",
           "issue_codes": [],
           "warning_codes": []
@@ -141953,7 +142170,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:06:24.915Z"
+          "checked_at": "2026-09-06T14:21:20.533Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -141968,7 +142185,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T14:06:24.915Z",
+      "updated_at": "2026-09-06T14:21:20.533Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -142004,11 +142221,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4303.41525,
+        "source_age_minutes": 4318.342216666667,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3825.13175,
+        "queue_age_minutes": 3840.0587166666664,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -142017,7 +142234,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T14:06:24.915Z",
+        "checked_at": "2026-09-06T14:21:20.533Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
