@@ -21,10 +21,6 @@ Release-Commit für das Regierungs-Wirkungsportal 2.0 sowie die vorhandene öffe
 
 Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e
 
-### 2026-08-23 · Reproduzierbares Veröffentlichungsartefakt
-Ein minimales, commitgebundenes Auslieferungsartefakt wurde in der Deploymentdokumentation verankert.
-
-Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/1a1a3ffb723499bbf296a9e88aaecb9ad6fa4a39
 
 ### 2026-09-06 · Laufende Länderarbeit und transparente Ergänzung
 Länderanalysen und Quellenarbeit laufen weiter. Projektauftrag, Konzepte, Aufgaben und Verantwortlichkeiten werden im Institut rückblickend vervollständigt. Offene Fachprüfungen werden nicht als erledigt ausgewiesen.
@@ -69,14 +65,6 @@ Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/parlamen
 - Abnahmekriterium: Öffentlicher Einstieg, Methoden- und Quellenzugänge sind nachvollziehbar.
 - Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/9a600f515e
 
-### PAR-05 · Veröffentlichungsartefakt reproduzierbar begrenzen
-- Arbeits-/Belegdatum: 2026-08-23
-- Status: Erledigt
-- Verantwortlich: Natalie Weber
-- Auftrag: Auslieferung von kanonischem Datenbestand und Arbeitsmaterial trennen.
-- Ergebnis/Arbeitsstand: Minimales Artefakt und Release-Regeln sind dokumentiert.
-- Abnahmekriterium: Ein geprüfter Commit ist der Auslieferung zugeordnet; Kostenregeln bleiben verbindlich.
-- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/1a1a3ffb723499bbf296a9e88aaecb9ad6fa4a39
 
 ### PAR-06 · Laufende Länderanalysen fachlich prüfen
 - Arbeits-/Belegdatum: 2026-09-06

@@ -1,4 +1,4 @@
-# Parlament · Fachkonzept, Prüflogik und Betrieb
+# Parlament · Fachkonzept, Prüflogik und Rückkopplung
 
 Verantwortlich: Natalie Weber. Öffentlich freigegebene Projektdokumentation.
 

@@ -5,7 +5,7 @@ const root = process.argv.includes('--artifact') ? '_site' : '.';
 const data = JSON.parse(fs.readFileSync('content/institut/projects.json', 'utf8'));
 // Der Institutsdiskurs führt Fachprojekte; private Betriebsaufträge dürfen
 // weder über die Datenquelle noch über einen separat eingefügten Teaser zurückkehren.
-const operational = /oracle|vercel|hosting|kostengate|serverumzug|produktivserver|externe sicherung/i;
+const operational = /oracle|vercel|hosting|kostengate|kostensteuerung|kostenregeln|budgetgrenzen|budgetpriorisierung|warteschlange|betriebsbeobachtung|serverumzug|produktivserver|externe sicherung|auslieferungsartefakt|veröffentlichungsartefakt/i;
 if (operational.test(JSON.stringify(data))) throw new Error('Private operational content in public institute project data.');
 const overview = fs.readFileSync(path.join(root, 'institut/projekte/index.html'), 'utf8');
 if (/oracle-always-free|Umzug des Instituts/.test(overview)) throw new Error('Private operational project linked in institute overview.');
@@ -28,6 +28,7 @@ let documents = 0, tasks = 0;
 for (const project of data.projects) {
   const file = path.join(root, 'institut/projekte', project.slug, 'index.html');
   const html = fs.readFileSync(file, 'utf8');
+  if (operational.test(text(html))) throw new Error(`${file}: private operational content in rendered project page.`);
   for (const doc of project.documents) {
     const id = `dokument-${doc.kind}`;
     const block = html.match(new RegExp(`<details\\b[^>]*\\bid="${id}"[^>]*>([\\s\\S]*?)<\\/details>`))?.[1];
