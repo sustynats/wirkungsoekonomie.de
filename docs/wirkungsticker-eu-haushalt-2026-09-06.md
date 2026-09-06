@@ -48,3 +48,7 @@ Die Tests prüfen Dokumentbindung, Publisher/URL, Datum, geänderte Kurzfassung,
 - Lokaler Browsercheck auf Desktop und bei 390 Pixel Breite: lesbare helle Headline, Autorenportrait geladen, kein horizontaler Überlauf, keine JavaScript-Seitenfehler.
 - Sichtbarer Analyse-Link in der Übersicht, gegenseitige Verlinkung mit der Ursprungsgeschichte, Inhaltsverzeichnis mit vollständigen Sprungzielen und Methodenlink tatsächlich geöffnet. SDG-Abschnitt mobil visuell geprüft.
 - Produktionsprüfung folgt nach dem regulären GitHub-Pages-Deployment; die vorstehenden Angaben bezeichnen keine bereits abgeschlossene Live-Prüfung.
+
+### Nachtrag: produktiv geprüft
+
+GitHub-Pages-Lauf 34025012002 war erfolgreich; der anschließende Design-Release 34025416186 ebenfalls. Die öffentliche Analyse-URL wurde danach im Browser geöffnet: korrekter Titel, Canonical und SDG-Inhalt, kein horizontaler Überlauf bei 320 Pixeln. Die Quellenportfolio-Erweiterung wurde erst in einem anschließenden Arbeitspaket vorgenommen.

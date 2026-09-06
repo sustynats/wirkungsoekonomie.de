@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { sourceAccess } from "./access-policy.mjs";
+import { FEDERAL_STATES } from "./regional-coverage.mjs";
 
 export const SOURCE_GOVERNANCE_ROLES = Object.freeze(["A", "B", "C", "D", "E", "F"]);
 
@@ -94,6 +95,9 @@ export function registryErrors(registry) {
     if (!/^[a-z0-9-]+$/.test(source.source_id || "") || !/^[a-z0-9-]+$/.test(source.publisher_id || "") || !source.name) errors.push(`SOURCE_INVALID:${source.source_id}`);
     if (ids.has(source.source_id)) errors.push(`SOURCE_ID_DUPLICATE:${source.source_id}`);
     ids.add(source.source_id);
+    if (source.federal_states && (!Array.isArray(source.federal_states)
+      || source.federal_states.some(code => !FEDERAL_STATES.some(([state]) => state === code))
+      || new Set(source.federal_states).size !== source.federal_states.length)) errors.push(`SOURCE_FEDERAL_STATES_INVALID:${source.source_id}`);
     if (!SOURCE_GOVERNANCE_ROLES.includes(source.role)) errors.push(`SOURCE_GOVERNANCE_ROLE_INVALID:${source.source_id}`);
     if (source.enabled && source.role !== "A") errors.push(`SOURCE_ACTIVE_ROLE_INVALID:${source.source_id}`);
     if (source.enabled) {
