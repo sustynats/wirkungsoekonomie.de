@@ -72,31 +72,44 @@ export async function publishGitUpdate({ run = git, rebuild = rebuildPublication
     try {
       await run(["pull", "--rebase", "origin", "main"]);
     } catch (error) {
-      const conflicts = stdout(await run(["diff", "--name-only", "--diff-filter=U", "-z"])).split("\0").filter(Boolean);
-      if (!conflicts.length) throw error;
-      let combinedStories;
-      if (conflicts.includes(STORY_STORE)) {
-        try {
-          // In a rebase: stage 1 = common base, 2 = upstream, 3 = worker.
-          const versions = await Promise.all([1, 2, 3].map(async stage => JSON.parse(stdout(await run(["show", `:${stage}:${STORY_STORE}`])))));
-          combinedStories = mergeDisjointStoryStores(...versions);
-        } catch { /* Malformed or overlapping records stay blocked. */ }
-      }
-      if (!conflicts.every(file => regeneratablePublicationPath(file) || (file === STORY_STORE && combinedStories))) {
-        // Restore our own pre-rebase state; canonical data, source code and
-        // history are never resolved by choosing a side or force-pushing.
-        await run(["rebase", "--abort"]);
-        throw new Error(`PUBLISH_CANONICAL_CONFLICT:${conflicts.join(",")}`, { cause: error });
-      }
+      const firstConflicts = stdout(await run(["diff", "--name-only", "--diff-filter=U", "-z"])).split("\0").filter(Boolean);
+      if (!firstConflicts.length) throw error;
+      let failure = error, finished = false;
       try {
-        if (combinedStories) {
-          await writeStoryStore(combinedStories);
-          await run(["add", "--", STORY_STORE]);
+        // A push retry can contain both a worker commit and a previous rebuild.
+        // Continue through each safe conflict, not only the first stopped commit.
+        for (let step = 0; step < 20; step++) {
+          const conflicts = step === 0 ? firstConflicts : stdout(await run(["diff", "--name-only", "--diff-filter=U", "-z"])).split("\0").filter(Boolean);
+          if (!conflicts.length) throw failure;
+          let combinedStories;
+          if (conflicts.includes(STORY_STORE)) {
+            try {
+              // In a rebase: stage 1 = common base, 2 = upstream, 3 = worker.
+              const versions = await Promise.all([1, 2, 3].map(async stage => JSON.parse(stdout(await run(["show", `:${stage}:${STORY_STORE}`])))));
+              combinedStories = mergeDisjointStoryStores(...versions);
+            } catch { /* Malformed or overlapping records stay blocked. */ }
+          }
+          if (!conflicts.every(file => regeneratablePublicationPath(file) || (file === STORY_STORE && combinedStories))) {
+            throw new Error(`PUBLISH_CANONICAL_CONFLICT:${conflicts.join(",")}`, { cause: failure });
+          }
+          if (combinedStories) {
+            await writeStoryStore(combinedStories);
+            await run(["add", "--", STORY_STORE]);
+          }
+          const generatedConflicts = conflicts.filter(regeneratablePublicationPath);
+          if (generatedConflicts.length) await run(["restore", "--source=HEAD", "--staged", "--worktree", "--", ...generatedConflicts]);
+          // A generated-only commit can become empty. Rebuild once from all
+          // retained canonical inputs after the complete rebase, before push.
+          const staged = stdout(await run(["diff", "--cached", "--name-only", "-z"])).trim();
+          try {
+            await run(staged ? ["-c", "core.editor=true", "rebase", "--continue"] : ["rebase", "--skip"]);
+            finished = true;
+            break;
+          } catch (next) { failure = next; }
         }
-        const generatedConflicts = conflicts.filter(regeneratablePublicationPath);
-        if (generatedConflicts.length) await run(["restore", "--source=HEAD", "--staged", "--worktree", "--", ...generatedConflicts]);
-        await run(["-c", "core.editor=true", "rebase", "--continue"]);
+        if (!finished) throw new Error("PUBLISH_REBASE_RECOVERY_LIMIT", { cause: failure });
       }
+      // Never choose a side for canonical overlap or leave a partial rebase.
       catch (failure) { await run(["rebase", "--abort"]); throw failure; }
       recovered = true;
     }
