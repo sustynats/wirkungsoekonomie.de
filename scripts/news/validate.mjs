@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { validateAnalysis } from "./lib.mjs";
 import { loadNewsRegistry, registryErrors } from "./registry.mjs";
 import { isMerged, relatedStories } from "./living-files.mjs";
-import { buildCaseFiles } from "./case-files.mjs";
+import { buildCaseFiles, caseIntegrityErrors } from "./case-files.mjs";
 import { editorialAnalysisValidationErrors } from "./editorial-analysis.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -82,6 +82,7 @@ for (const story of activeStories) {
   if (nextHref && (!detail.includes("Nächster Beitrag") || !detail.includes(`href="${detailReaderHref(nextHref)}"`))) fail(`NEWS_NEXT_NAVIGATION_INVALID:${story.story_id}`);
   if (caseFile && (!detail.includes(`data-news-case-id="${caseFile.case_id}"`) || !detail.includes("Einzelereignisse, Belege und Analysen bleiben getrennt")
     || caseFile.members.some((member) => !detail.includes(`../${member.slug}/`) && member.story_id !== story.story_id))) fail(`NEWS_CASE_FILE_UI_INVALID:${story.story_id}`);
+  if (!caseFile && detail.includes("data-news-case-id=")) fail(`NEWS_STALE_CASE_MEMBERSHIP:${story.story_id}`);
   const sourceSummaryAt = detail.indexOf("data-news-source-summary");
   const factCheckAt = detail.indexOf("news-fact-check");
   const analysisAt = detail.indexOf("news-story-summary");
@@ -105,6 +106,8 @@ for (const story of activeStories) {
   if (!detail.includes("Erste Ordnung – unmittelbar") || !detail.includes("Risiken, Gegenläufe und Prüfgrenzen")) fail(`NEWS_CONSEQUENCE_PROSE_INVALID:${story.story_id}`);
 }
 for (const caseFile of grouping.cases) {
+  const integrityErrors = caseIntegrityErrors(caseFile, activeStories);
+  if (integrityErrors.length) fail(integrityErrors.join(","));
   if (caseFile.member_count < 3 || !caseFile.members.some((member) => member.current) || caseFile.members.filter((member) => member.current).length !== 1) fail(`NEWS_CASE_FILE_INVALID:${caseFile.case_id}`);
   if (!index.includes(`story-${caseFile.representative_slug}`) || caseFile.members.filter((member) => index.includes(`story-${member.slug}`)).length !== 1) fail(`NEWS_CASE_FILE_INDEX_INVALID:${caseFile.case_id}`);
 }

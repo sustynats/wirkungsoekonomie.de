@@ -48,6 +48,22 @@ test("different German election jurisdictions never become one event", () => {
   assert.equal(subjectConflict(saxonyAnhalt, berlin), true);
   assert.equal(clusterItems([saxonyAnhalt, berlin], [], now).length, 2);
 });
+
+test("named company and conflict differences guard ingestion as well as stale merge plans", () => {
+  for (const [a, b] of [
+    ["Nordstern GmbH beantragt Insolvenzverfahren", "Südstern GmbH beantragt Insolvenzverfahren"],
+    ["Nordland-Krieg: US-Unterhändler beraten über Verhandlungen", "Südland-Krieg: US-Unterhändler beraten über Verhandlungen"],
+  ]) {
+    const canonical = story("canonical", a), other = story("other", b);
+    const entries = [canonical, other], before = structuredClone(entries);
+    assert.equal(subjectConflict(canonical, other), true);
+    assert.deepEqual(duplicateGroups(entries), []);
+    assert.equal(clusterItems([source(b)], [canonical], now).length, 1);
+    assert.notEqual(clusterItems([source(b)], [canonical], now)[0].story_id, canonical.story_id);
+    assert.deepEqual(mergeLivingFiles(entries, [{ canonical_id: "canonical", duplicate_ids: ["other"], reason: "stale_plan" }], now), []);
+    assert.deepEqual(entries, before);
+  }
+});
 test("consolidation is idempotent, preserves histories, queues review and routes aliases", () => {
   const canonical = structuredClone(dormagen);
   const duplicate = story("duplicate", "Polizei: Verdächtiger Gegenstand an Umspannwerk in Dormagen", { pending_update: { sources: [source("Sabotage in Dormagen", "https://example.org/pending")], reason: "AI_PROVIDER_UNAVAILABLE" }, followups: [{ followup_id: "f1", status: "scheduled" }] });

@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { fileSubject, namedSubjects, namedSubjectConflict } from "./living-files.mjs";
 
 // A case file is a presentation layer above evidence-bound stories. It never
 // merges claims, sources, event IDs or publication histories. The same rules
@@ -66,37 +67,40 @@ export function caseContribution(story) {
 
 function compatible(left, right, frequency, total) {
   if (caseContribution(left).role === "background" || caseContribution(right).role === "background") return false;
-  const leftScope = conflictScope(left), rightScope = conflictScope(right);
+  if (namedSubjectConflict(left, right)) return false;
+  const leftScope = namedSubjects(left).conflicts, rightScope = namedSubjects(right).conflicts;
   // Named conflicts cannot be connected by broad words, a shared mediator or
   // an unscoped bridge article. A cross-conflict comparison stays standalone.
   if (leftScope.length || rightScope.length) {
     if (leftScope.length !== 1 || rightScope.length !== 1 || leftScope[0] !== rightScope[0]) return false;
   }
+  const leftSubject = fileSubject(left), rightSubject = fileSubject(right);
+  if (leftSubject.elections.length || rightSubject.elections.length) {
+    if (leftSubject.elections.length !== 1 || rightSubject.elections.length !== 1 || leftSubject.elections[0] !== rightSubject.elections[0]) return false;
+  }
+  // A general multi-site investigation may be related, but cannot make two
+  // individually identified sites the same case by transitivity.
+  if (leftSubject.key && rightSubject.key && leftSubject.key !== rightSubject.key) return false;
+  if (leftSubject.recurrence !== rightSubject.recurrence && leftSubject.kind === rightSubject.kind && leftSubject.kind !== "other") return false;
+  if (left.event_geography?.length && right.event_geography?.length && !overlap(new Set(left.event_geography), new Set(right.event_geography)).length) return false;
   if (!overlap(topics(left), topics(right)).length) return false;
   const shared = overlap(tokens(left), tokens(right));
   const rare = shared.filter(token => (frequency.get(token) || total) <= Math.max(4, Math.ceil(total * 0.2)));
   const titleLeft = tokens({ title: left.title }), titleRight = tokens({ title: right.title });
   const titleShared = overlap(titleLeft, titleRight);
+  if (!firstStamp(left) || !firstStamp(right)) return false;
   const gap = Math.abs(firstStamp(left) - firstStamp(right));
-  const timely = gap <= CASE_WINDOW || (gap <= STRONG_CASE_WINDOW && rare.length >= 3 && titleShared.length >= 2);
+  const namedLeft = namedSubjects(left), namedRight = namedSubjects(right);
+  const sameCompany = namedLeft.companies.length === 1 && namedRight.companies.length === 1 && namedLeft.companies[0] === namedRight.companies[0];
+  const sameObject = Boolean(leftSubject.key && leftSubject.key === rightSubject.key);
+  const sameNamedSubject = sameCompany || sameObject || (leftScope.length === 1 && leftScope[0] === rightScope[0])
+    || (leftSubject.elections.length === 1 && leftSubject.elections[0] === rightSubject.elections[0]);
+  const timely = gap <= CASE_WINDOW || (gap <= STRONG_CASE_WINDOW && titleShared.length >= 2 && (rare.length >= 3 || sameCompany));
   // The headline itself must identify an unfolding case. This prevents a
   // background explainer that merely mentions the same words from swallowing
   // a concrete news file through graph transitivity.
   const acute = ACUTE.test(left.title) && ACUTE.test(right.title);
-  return timely && acute && rare.length >= 2 && titleShared.length >= 1 && (shared.length >= 3 || titleShared.length >= 2);
-}
-
-function conflictScope(story) {
-  // Extract the named object from the text, without a country/party allowlist.
-  // Prefer the headline; explanatory later paragraphs are not event identity.
-  for (const value of [story.title, String(story.source_summary || "").split(/\n\s*\n/)[0].slice(0, 650)]) {
-    const input = normalize(value);
-    const named = [...input.matchAll(/\b([\p{L}]+)[-–‑]krieg(?:s|es)?\b/gu)].map(match => match[1]);
-    const located = [...input.matchAll(/(?<![-–‑\p{L}])\bkrieg(?:s|es)?\s+(?:in|gegen)\s+(?:(?:der|die|den|das|dem)\s+)?([\p{L}]+)\b/gu)].map(match => match[1]);
-    const scopes = [...new Set([...named, ...located])];
-    if (scopes.length) return scopes;
-  }
-  return [];
+  return timely && acute && (rare.length >= 2 || (sameNamedSubject && titleShared.length >= 2)) && titleShared.length >= 1 && (shared.length >= 3 || titleShared.length >= 2);
 }
 
 function kind(story) {
@@ -118,7 +122,8 @@ function caseTopics(members, representative) {
 }
 
 export function buildCaseFiles(stories, { minMembers = MIN_MEMBERS } = {}) {
-  const active = stories.filter(story => story.published && story.analysis && story.listed !== false);
+  const active = stories.filter(story => story.published && story.analysis && story.listed !== false)
+    .sort((a, b) => firstStamp(a) - firstStamp(b) || a.story_id.localeCompare(b.story_id));
   const frequency = new Map();
   for (const story of active) for (const token of tokens(story)) frequency.set(token, (frequency.get(token) || 0) + 1);
   const edges = new Map(active.map(story => [story.story_id, []]));
@@ -127,16 +132,18 @@ export function buildCaseFiles(stories, { minMembers = MIN_MEMBERS } = {}) {
     edges.get(active[i].story_id).push(active[j].story_id);
     edges.get(active[j].story_id).push(active[i].story_id);
   }
-  const byId = new Map(active.map(story => [story.story_id, story]));
-  const visited = new Set(), cases = [];
+  const components = [], ambiguous = [], cases = [];
   for (const story of active) {
-    if (visited.has(story.story_id)) continue;
-    const queue = [story.story_id], component = [];
-    visited.add(story.story_id);
-    while (queue.length) {
-      const id = queue.shift(); component.push(byId.get(id));
-      for (const next of edges.get(id) || []) if (!visited.has(next)) { visited.add(next); queue.push(next); }
-    }
+    const neighbours = new Set(edges.get(story.story_id));
+    const candidates = components.filter(component => component.every(member => neighbours.has(member.story_id)));
+    // Complete-link, never connected-components: A↔B and B↔C do not prove A↔C.
+    // A report fitting two separate groups stays standalone instead of picking
+    // a winner by input order or serving as a bridge between those groups.
+    if (candidates.length > 1) { ambiguous.push(story.story_id); continue; }
+    if (candidates.length === 1) candidates[0].push(story);
+    else components.push([story]);
+  }
+  for (const component of components) {
     if (component.length < minMembers) continue;
     const members = component.sort((a, b) => stamp(b) - stamp(a) || a.story_id.localeCompare(b.story_id));
     const representative = members[0];
@@ -162,7 +169,24 @@ export function buildCaseFiles(stories, { minMembers = MIN_MEMBERS } = {}) {
       return caseFile ? { ...story, topic: caseFile.topics, case_file: caseFile } : story;
     })
     .sort((a, b) => stamp(b) - stamp(a) || a.story_id.localeCompare(b.story_id));
-  return { cases, caseByStory, visibleStories };
+  return { cases, caseByStory, visibleStories, diagnostics: { ambiguous_story_ids: ambiguous, method: "pairwise-case-integrity-v2" } };
+}
+
+// Independent publication assertion over every pair, not just the links used
+// to construct a group. A later implementation change cannot silently restore
+// graph transitivity. Unknown membership is an error; articles are preserved.
+export function caseIntegrityErrors(caseFile, stories) {
+  const active = stories.filter(story => story.published && story.analysis && story.listed !== false);
+  const byId = new Map(active.map(story => [story.story_id, story]));
+  const frequency = new Map();
+  for (const story of active) for (const token of tokens(story)) frequency.set(token, (frequency.get(token) || 0) + 1);
+  const ids = (caseFile.members || []).map(member => member.story_id), errors = [];
+  if (new Set(ids).size !== ids.length || ids.length !== caseFile.member_count) errors.push("CASE_MEMBERSHIP_INVALID");
+  for (const id of ids) if (!byId.has(id)) errors.push(`CASE_MEMBER_UNKNOWN:${id}`);
+  for (let i = 0; i < ids.length; i++) for (let j = i + 1; j < ids.length; j++) {
+    if (byId.has(ids[i]) && byId.has(ids[j]) && !compatible(byId.get(ids[i]), byId.get(ids[j]), frequency, active.length)) errors.push(`CASE_PAIR_INCOMPATIBLE:${ids[i]}:${ids[j]}`);
+  }
+  return errors;
 }
 
 export const caseFileInternals = { compatible, kind, tokens };
