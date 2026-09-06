@@ -16,6 +16,9 @@ Keine Anmeldung für die Abstimmung. Die pro Umfrage erzeugte Browserkennung beg
 ## Einordnung der Ergebnisse
 Die Online-Umfrage ist nicht repräsentativ. Teilnahmezahl, Prozentwerte und Zustimmung sind keine Wirkung. Die Auswertung fragt nach nachvollziehbaren Hinweisen auf Verständlichkeit und Verbesserungsbedarf. Erst dokumentierte Änderungen und spätere Prüfung schaffen eine Lernschleife; Reporting allein genügt nicht. Nichtkompensation schützt Datenschutz und andere harte Grenzen, Reverse Merit Order priorisiert kritische Probleme vor Komfortverbesserungen.
 
+## Stadtvergleich als zweiter Arbeitsstrang
+Die Frage „In welcher Stadt möchtest Du leben?“ lädt zum Vergleich von sieben illustrierten Szenarien ein. Bildauswahl, schriftliche Erläuterungen und Originalquellen müssen nachvollziehbar zusammenpassen. Die Darstellungen bleiben als illustrative Modelle gekennzeichnet; sie belegen weder berechnete Zukunftszustände noch tatsächliche Wirkung. Die Auswahl ist keine Wahlempfehlung und kein repräsentativer politischer Befund. Vor Freigabe sind Verständlichkeit, eine ausgewogene Darstellung der Optionen und die Quellenzuordnung zu prüfen.
+
 ## Offene Pflege
 Die zweite Umfrage braucht ihre eigene dokumentierte fachliche Freigabe. Diese Aufgabe bleibt Natalie Weber zugeordnet.
 ## Quellen und Ergebniszugänge

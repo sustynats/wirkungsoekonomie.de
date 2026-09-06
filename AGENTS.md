@@ -43,6 +43,14 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Modellhafte Inhalte bleiben als Modell, Demo, Entwurf oder Arbeitspapier gekennzeichnet.
 - Seiten sollen auch fuer Menschen verstaendlich sein, die die Wirkungsökonomie noch nie gehoert haben.
 
+### Verbindlicher Kern: systemische statt isolierter Betrachtung
+
+- Jede Wirkungsanalyse betrachtet den Gegenstand im gekoppelten System: relevante Abhaengigkeiten, Wechselwirkungen, Rueckkopplungen, Kaskaden sowie Wirkungsordnungen 1 bis 3 gehoeren zum Pruefkern, nicht zu einem optionalen Zusatz.
+- Das gilt fuer neue Analysen, Folgenchecks, Medien-/Diskurschecks, WÖk-Analysen und rueckwirkende Neupruefungen. Kommunikations- und Ereigniswirkung bleiben dabei getrennt; thematische Verwandtschaft allein rechtfertigt keine gemeinsame Lageakte.
+- Systemgrenze, Betroffene, Zeitverzug, Verteilung, Resilienz, Lock-ins und moegliche raeumliche, soziale oder zeitliche Schadensverlagerungen explizit pruefen. Nur materielle Zusammenhaenge darstellen; fehlende Belege als offen kennzeichnen, keine Kaskaden erfinden.
+- Plausible Wirkpfade sind keine eingetretene Wirkung und kein Kausalitaetsnachweis. Erstmeldungen duerfen knapp bleiben, wenn die systemischen Fragen und Wissensgrenzen sichtbar sind; die Regel erzwingt weder lange Texte noch zusaetzliche kostenpflichtige Analysen.
+- Historische Inhalte nicht still umschreiben. Bei erneuter Pruefung die Regel anwenden und materielle Ergaenzungen versionieren.
+
 ## Staatliche Nachhaltigkeits- und Gesetzesfolgenarchitektur
 
 - Deutschland besitzt bereits eine institutionalisierte Gesetzesfolgen- und Nachhaltigkeitspruefungsarchitektur. Die WÖk ersetzt sie nicht und darf nicht behaupten, Folgen- oder Nachhaltigkeitspruefung erstmals einzufuehren.

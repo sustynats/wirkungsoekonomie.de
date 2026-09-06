@@ -17,7 +17,9 @@ Abstimmung, vertrauliche Freitextrückmeldung und öffentliche Auffindbarkeit si
 Beleg: https://github.com/sustynats/wirkungsoekonomie.de/blob/main/docs/umfragen.md
 
 ### 2026-09-06 · Zweite Umfrage in Umsetzung
-Die Projektinhaberin bestätigt die laufende Umsetzung einer weiteren Umfrage. Sie bleibt ein Arbeitsstand; ein Veröffentlichungsdatum wird nicht vorweggenommen.
+Die zweite Umfrage „In welcher Stadt möchtest Du leben?“ vergleicht sieben illustrative Stadt- und Umlandszenarien anhand ausgewählter Vorhaben aus den Bundestagswahlprogrammen 2025. Der dokumentierte Katalogstand ist pausiert; Prüfung und Freigabe stehen noch aus. Die Bilder sind keine berechneten Zukunftsprognosen und keine Wahlempfehlung.
+
+Beleg des Arbeitsstands: https://github.com/sustynats/wirkungsoekonomie.de/blob/09043a0653d4d2467aeeba34140f7a320a1c78f3/content/polls/public-catalog.json
 
 Beleg: Projektauftrag der Inhaberin vom 06.09.2026.
 
