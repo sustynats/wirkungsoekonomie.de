@@ -3,7 +3,7 @@ import { PollStore } from './store.mjs';
 const store = new PollStore({ path: process.env.POLLS_DATABASE_PATH || './data/polls/polls.sqlite', pepper: process.env.POLLS_TOKEN_PEPPER });
 const [command, target] = process.argv.slice(2);
 try {
-  if (command === 'migrate') console.log('Poll schema version 2 ready (private optional feedback).');
+  if (command === 'migrate') console.log('Poll schema version 3 ready (explicit consent and self-service withdrawal).');
   else if (command === 'seed') {
     const input = JSON.parse(readFileSync(new URL('./first-poll.json', import.meta.url), 'utf8'));
     const existing = store.db.prepare('SELECT id FROM polls WHERE slug=?').get(input.slug);

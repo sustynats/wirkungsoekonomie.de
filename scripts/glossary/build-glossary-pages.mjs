@@ -478,6 +478,16 @@ for (const entry of searchIndex) {
   if (titleKey && !contentByTitle.has(titleKey)) contentByTitle.set(titleKey, entry);
 }
 
+// A link to a whole publication must resolve to its own entry, even when
+// search orders one of its individual headings before the document itself.
+for (const entry of searchIndex) {
+  const url = normalizeReferenceUrl(entry.url);
+  if (!url || url.includes("#")) continue;
+  contentByUrl.set(url, entry);
+  const slug = slugFromReference(url);
+  if (slug) contentBySlug.set(slug, entry);
+}
+
 for (const term of indexedTerms) {
   const url = `/begriffe/${term.slug}/`;
   const entry = {

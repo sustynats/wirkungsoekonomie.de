@@ -13,12 +13,15 @@ const searchEntries = JSON.parse(fs.readFileSync(path.join(root, 'assets/search/
 const searchRoute = value => {
   try {
     const url = new URL(value, 'https://wirkungsoekonomie.de');
-    return url.origin === 'https://wirkungsoekonomie.de' ? url.pathname.replace(/index\.html$/, '').replace(/\/$/, '') : null;
+    return url.origin === 'https://wirkungsoekonomie.de' && !url.hash ? url.pathname.replace(/index\.html$/, '').replace(/\/$/, '') : null;
   } catch { return null; }
 };
 const searchable = new Set(searchEntries.map(entry => searchRoute(entry.url)));
 for (const route of ['/institut/projekte', ...data.projects.map(project => `/institut/projekte/${project.slug}`)]) {
   if (!searchable.has(route)) throw new Error(`Institute project missing from public search: ${route}`);
+}
+if (searchEntries.some(entry => /\/institut\/projekte\/.*#footer-/i.test(entry.url))) {
+  throw new Error('Institute search results must not point to shared newsletter/footer sections.');
 }
 const text = value => value.replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
 let documents = 0, tasks = 0;

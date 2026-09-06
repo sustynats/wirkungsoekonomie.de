@@ -548,7 +548,10 @@ const isRegister = /woek-master-items-(?:final-)?v1-2|woek-master-items-v1-3/.te
   const body = clean(text).slice(0, bodyLimit);
   if (body.length < 80) return [];
   const pageSemanticTerms = semanticTermsForText(`${title} ${body}`);
-  const sectionMatches = Array.from(text.matchAll(/<h([2-3])[^>]*id=["']([^"']+)["'][^>]*>(.*?)<\/h\1>/gi));
+  // Section extraction must exclude the same shared page furniture as clean().
+  // Mask it to preserve offsets into the document while ignoring its headings.
+  const sectionText = text.replace(/<(header|footer|nav|aside)\b[\s\S]*?<\/\1>/gi, block => ' '.repeat(block.length));
+  const sectionMatches = Array.from(sectionText.matchAll(/<h([2-3])[^>]*id=["']([^"']+)["'][^>]*>(.*?)<\/h\1>/gi));
   const base = {
     documentType,
     status,
@@ -582,11 +585,11 @@ const isRegister = /woek-master-items-(?:final-)?v1-2|woek-master-items-v1-3/.te
     const sectionId = match[2];
     const sectionTitle = clean(match[3]);
     const matchStart = match.index || 0;
-    const nextHeading = text.slice(matchStart + match[0].length).search(/<h[2-3]\b/i);
+    const nextHeading = sectionText.slice(matchStart + match[0].length).search(/<h[2-3]\b/i);
     const sectionHtml =
       nextHeading >= 0
-        ? text.slice(matchStart, matchStart + match[0].length + nextHeading)
-        : text.slice(matchStart, matchStart + 9000);
+        ? sectionText.slice(matchStart, matchStart + match[0].length + nextHeading)
+        : sectionText.slice(matchStart, matchStart + 9000);
     const sectionBody = clean(sectionHtml).slice(0, SECTION_BODY_LIMIT);
     if (isSearchExcludedSection(sectionTitle, sectionBody)) continue;
     const sectionSemanticTerms = semanticTermsForText(`${sectionTitle} ${sectionBody}`);
@@ -627,7 +630,7 @@ for (const term of glossary) {
   };
 }
 
-const contentFiles = ["akademie", "lernen", "src/content/docs", "blog", "journal", "institut", "news", "wirkungsticker", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "quellenarchiv", "export", "werkstatt", "werkzeuge", "methodik", "wirkungsfelder/gesundheit-pflege/dossiers", "anwendungen", "verstehen", "wirkungswissenschaften", "fragen", "faq", "en"]
+const contentFiles = ["akademie", "lernen", "src/content/docs", "blog", "journal", "institut", "news", "wirkungsticker", "umfragen", "podcast", "referenz", "bibliothek", "dokumente", "instrumente", "beispiele", "quellen", "quellenarchiv", "export", "werkstatt", "werkzeuge", "methodik", "wirkungsfelder/gesundheit-pflege/dossiers", "anwendungen", "verstehen", "wirkungswissenschaften", "fragen", "faq", "en"]
   .flatMap((dir) => walk(dir));
 for (const rootPage of ["index.html", "blog.html", "akademie.html"]) {
   if (fs.existsSync(rootPage)) contentFiles.push(rootPage);

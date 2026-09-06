@@ -1,22 +1,25 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { loadExperience, visualPanel } from './visual.mjs';
+import { minimiseSensitivePollHtml } from './privacy.mjs';
 
 export const SITE='https://wirkungsoekonomie.de';
 export const DEFAULT_IMAGE='/assets/img/brand/app-icon-512.png';
 export const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const safeJson=value=>JSON.stringify(value).replace(/</g,'\\u003c').replace(/>/g,'\\u003e').replace(/&/g,'\\u0026');
 const disclaimer='Diese Online-Umfrage ist nicht repräsentativ. Das Ergebnis bildet die abgegebenen Stimmen der Teilnehmenden ab.';
-export function shell(root,{title,description,route,body,image=DEFAULT_IMAGE,admin=false,poll=null,script='polls.js'}){
+export function shell(root,{title,description,route,body,image=DEFAULT_IMAGE,admin=false,poll=null,script='polls.js',visual=false}){
   const nav=JSON.parse(fs.readFileSync(path.join(root,'assets/data/navigation.json'),'utf8'));
   const link=item=>`<a href="${esc(/^(https?:|mailto:)/.test(item.href)?item.href:`/${item.href}`)}">${esc(item.label)}</a>`;
   const header=fs.readFileSync(path.join(root,'templates/header.html'),'utf8').replaceAll('{{BASE}}','/');
   const footer=fs.readFileSync(path.join(root,'templates/footer.html'),'utf8').replaceAll('{{BASE}}','/').replace('{{FOOTER_NAV}}',nav.footerGroups.map(g=>`<div class="footer-nav-group"><h3>${esc(g.title)}</h3><div class="footer-nav-links">${g.items.map(link).join('\n')}</div></div>`).join('\n')).replace('{{FOOTER_LEGAL_NAV}}',nav.footerLegal.map(link).join('\n'));
   const canonical=`${SITE}${route}`,preview=new URL(image||DEFAULT_IMAGE,SITE).href;
-  return `<!doctype html>
+  const html=`<!doctype html>
 <html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)} | Wirkungsökonomie</title>
 <meta name="description" content="${esc(description)}">
+${visual?'<meta name="referrer" content="no-referrer"><meta name="woek-private-interaction" content="true">':''}
 <meta name="search_title" content="${esc(title)}"><meta name="search_description" content="${esc(description)}"><meta name="search_section" content="Umfragen"><meta name="search_type" content="Umfrage">
 ${admin?'<meta name="robots" content="noindex,nofollow">':''}
 <link rel="canonical" href="${canonical}">
@@ -26,26 +29,31 @@ ${admin?'<meta name="robots" content="noindex,nofollow">':''}
 ${poll?`<meta name="woek-poll-id" content="${esc(poll.id)}"><meta name="woek-poll-revision" content="${poll.revision}">`:''}
 <link rel="icon" href="/assets/img/brand/signet.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/css/style.css"><link rel="stylesheet" href="/assets/css/polls.css">
+${visual?'<link rel="stylesheet" href="/assets/css/poll-visual.css">':''}
 <script type="application/ld+json">${safeJson({'@context':'https://schema.org','@type':'WebPage',name:title,description,url:canonical,inLanguage:'de',...(poll?{datePublished:poll.published_at,dateModified:poll.updated_at}:{}),isPartOf:{'@id':`${SITE}/#website`}})}</script>
-</head><body class="poll-page">
+</head><body class="poll-page${visual?' visual-poll-page':''}">
 <a class="sr-only" href="#poll-main">Zum Inhalt</a>
 ${header}
 <main id="poll-main" class="poll-shell${admin?' poll-admin':''}" data-poll-api="https://130.162.217.58.sslip.io" ${poll?`data-poll-slug="${esc(poll.slug)}" data-poll-id="${esc(poll.id)}" data-poll-results-visibility="${esc(poll.results_visibility)}" data-poll-feedback-enabled="${[true,1].includes(poll.feedback_enabled)}"`:''}>
 <nav class="breadcrumb" aria-label="Brotkrumen"><a href="/">Start</a> / ${route==='/umfragen/'?'Umfragen':`<a href="/umfragen/">Umfragen</a> / ${admin?'Verwaltung':'Abstimmen'}`}</nav>
 ${body}
 </main>${footer}
-<script defer src="/assets/js/main.js"></script><script type="module" src="/assets/js/${script}"></script>
+${visual?'':'<script defer src="/assets/js/main.js"></script>'}<script type="module" src="/assets/js/${script}"></script>
 </body></html>\n`;
+  return visual?minimiseSensitivePollHtml(html):html;
 }
 export function pollPage(root,poll){
+  const experience=loadExperience(root,poll.slug);
+  if(experience && experience.scenarios.some(s=>!poll.options.some(o=>o.label===s.label)))throw new Error('Visual poll options no longer match the published scenario mapping.');
   const description=(poll.social_description||poll.intro||poll.question).slice(0,300);
-  return shell(root,{title:poll.title,description,route:`/umfragen/${poll.slug}/`,poll,image:poll.image||DEFAULT_IMAGE,body:`
+  return shell(root,{title:poll.title,description,route:`/umfragen/${poll.slug}/`,poll,image:poll.image||DEFAULT_IMAGE,visual:Boolean(experience),script:experience?'poll-visual.js':'polls.js',body:`
 <p class="poll-kicker">Deine Perspektive zählt · Online-Umfrage</p>
 <h1 id="poll-title">${esc(poll.title)}</h1><p id="poll-intro" class="poll-intro">${esc(poll.intro)}</p>
 <p class="poll-notice">Veröffentlicht am <time datetime="${esc(poll.published_at)}">${new Date(poll.published_at).toLocaleDateString('de-DE',{timeZone:'Europe/Berlin'})}</time>${poll.ends_at?` · Ende: <time datetime="${esc(poll.ends_at)}">${new Date(poll.ends_at).toLocaleString('de-DE',{timeZone:'Europe/Berlin'})} (Berlin)</time>`:''}</p>
-${poll.image?`<img class="poll-hero-image" src="${esc(poll.image)}" alt="Titelbild zur Umfrage: ${esc(poll.title)}">`:''}
+${experience?visualPanel(experience,{esc,safeJson}):poll.image?`<img class="poll-hero-image" src="${esc(poll.image)}" alt="Titelbild zur Umfrage: ${esc(poll.title)}">`:''}
 <section id="poll-ui" class="poll-card" aria-label="Abstimmung"><h2>${esc(poll.question)}</h2><ul>${poll.options.map(o=>`<li>${esc(o.label)}</li>`).join('')}</ul><p role="status">Abstimmung wird geladen …</p><noscript>Zum Abstimmen und Anzeigen der aktuellen Ergebnisse benötigst Du JavaScript.</noscript></section>
 <p class="poll-notice">${disclaimer}</p>
+${poll.consent_required?`<section id="einwilligung" class="poll-card"><h2>Deine Entscheidung über Deine Daten</h2><p>Du kannst alle Bilder, schriftlichen Details und Quellen ohne Abstimmung und ohne Registrierung ansehen. Nur wenn Du freiwillig abstimmst, speichern wir Deine Auswahl, den Zeitpunkt, die Fassung Deiner ausdrücklichen Einwilligung und eine zufällig abgeleitete Umfragekennung. Daraus können politische Ansichten hervorgehen. Die Verarbeitung zur Durchführung und statistischen Auswertung dieser Umfrage stützen wir auf Deine ausdrückliche Einwilligung (Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a DSGVO).</p><p>Die Stimme ist pseudonym, nicht nachweislich vollständig anonym. Wir führen sie nicht mit Newsletter, Konto oder anderen Umfragen zu einem Profil zusammen. Öffentlich erscheinen ausschließlich Summen. Auf dieser Vergleichsseite verwenden wir keine zusätzlichen Analyse- oder Werbetracker.</p><p>Nach Deiner Abstimmung kannst Du unter „Einwilligung widerrufen / eigene Stimme löschen“ Deine Stimme und zugehöriges Feedback löschen. Dazu muss die Kennung in diesem Browser noch vorhanden sein. Ohne sie können wir Deine Stimme nicht zuverlässig von anderen unterscheiden. Der Widerruf berührt die Rechtmäßigkeit der vorangegangenen Verarbeitung nicht. Die technische Kennung kannst Du anschließend im Browser löschen.</p><p>Stimmen dieser sensiblen Umfrage werden nach 365 Tagen beim täglichen Bereinigungslauf gelöscht, spätestens nach 366 Tagen bei planmäßigem Betrieb. In abgeschotteten täglichen Sicherungen können gelöschte Stimmen noch bis zur Rotation nach sieben Tagen zuzüglich des täglichen Bereinigungsintervalls enthalten sein; vor einer Wiederherstellung werden Widerrufe erneut angewandt. Ein gesondertes Löschprotokoll enthält nur die zufällige interne Datensatznummer und den Löschzeitpunkt, keine Auswahl oder Browserkennung, höchstens acht Tage zuzüglich des täglichen Bereinigungsintervalls. Allgemeine Betroffenenrechte, Verantwortliche und Beschwerdemöglichkeiten findest Du in den <a href="/datenschutz.html">Datenschutzhinweisen</a>.</p></section>`:''}
 <details id="datenschutz"><summary>Datenschutz und Mehrfachabstimmungen</summary><p>Du brauchst kein Konto und gibst weder Namen noch E-Mail-Adresse an. Beim Abstimmen speichert Dein Browser eine zufällige Kennung für diese Umfrage, höchstens ein Jahr lang. Auf unserem eigenen Server speichern wir die gewählte Antwort, den Zeitpunkt und eine nur für diese Umfrage gültige, verschlüsselt abgeleitete Kennung bis zur Löschung der Stimmen oder Umfrage.</p><p>Zum Schutz vor massenhaften Anfragen verarbeiten wir die IP-Adresse vorübergehend zu einem mit einem geheimen Schlüssel abgeleiteten Prüfwert. Im Umfragesystem speichern wir keine Klartext-IP und kein Geräteprofil. Diese technischen Prüfwerte laufen spätestens nach einer Stunde ab und werden spätestens fünf Minuten danach automatisch gelöscht. Sie werden getrennt von den Stimmen gespeichert und nicht gesichert.</p><p>Das verhindert einfache Mehrfachabstimmungen, ist aber keine Garantie gegen Manipulation: Andere Browser oder gelöschte Browserdaten können den Schutz umgehen. Die Umfrage ist keine Wahlplattform und nicht repräsentativ. <a href="/datenschutz.html">Allgemeine Datenschutzhinweise</a> · <a href="/impressum.html">Verantwortliche und Kontakt</a></p></details>
 <p class="poll-notice">Ein Projekt des Wirkungsinstituts: <a href="/institut/projekte/umfragen/">Auftrag, Konzept und Projektfortschritt</a>.</p>
 <section id="poll-share" class="poll-share" aria-label="Umfrage teilen"></section>`});
@@ -86,6 +94,7 @@ ${input('image','Titelbild (optional)',{max:1500,help:'Pfad eines eigenen Websit
 <div class="poll-fields">${input('cta_text','CTA-Text nach der Abstimmung',{max:100})}${input('cta_url','CTA-Link',{max:1500,help:'Zum Beispiel /wirkungsticker/'})}</div>
 ${input('further_url','Weiterführender Link (optional)',{max:1500})}${input('feedback_note','Hinweis nach der Abstimmung (optional)',{max:400})}
 <label class="poll-checkbox"><input name="feedback_enabled" type="checkbox"> Optionales internes Feedback nach der Abstimmung erlauben</label><p class="poll-notice">Keine öffentliche Kommentarspalte. Maximal ein Kommentar je anonymer Stimme, 1.500 Zeichen.</p>
+<label class="poll-checkbox"><input name="consent_required" type="checkbox"> Ausdrückliche Einwilligung für politische Auswahl erforderlich</label><p class="poll-notice">Aktiviert Einwilligung, eigene Stimmenlöschung und eine einjährige Löschfrist. Nach der ersten Stimme nicht mehr änderbar.</p>
 <div class="poll-actions"><button id="poll-save" class="btn btn-primary" type="submit">Speichern</button><button id="poll-preview" class="btn btn-secondary" type="button">Vorschau öffnen</button></div>
 </form><div id="poll-lifecycle" class="poll-actions"></div><div id="poll-publication"></div>
 <section id="poll-admin-results" aria-label="Auswertung"></section>

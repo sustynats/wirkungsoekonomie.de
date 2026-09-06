@@ -848,8 +848,8 @@
         "BE-SPD-2026-SU-0280"
       ],
       "next_source_order_frontier": {
-        "physical_page": 25,
-        "source_unit_from": "BE-SPD-2026-SU-0291"
+        "physical_page": 26,
+        "source_unit_from": "BE-SPD-2026-SU-0303"
       },
       "gate": "BE_SPD_2026_P23_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_LOSSLESS_MATERIALISATION"
     },
@@ -889,10 +889,51 @@
         "BE-SPD-2026-SU-0290"
       ],
       "next_source_order_frontier": {
-        "physical_page": 25,
-        "source_unit_from": "BE-SPD-2026-SU-0291"
+        "physical_page": 26,
+        "source_unit_from": "BE-SPD-2026-SU-0303"
       },
       "gate": "BE_SPD_2026_P24_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_LOSSLESS_MATERIALISATION"
+    },
+    {
+      "handoff_id": "BE-SPD-P25-CANONICAL-EXPLICIT-FACH-2026-V1",
+      "issue_comment_ids": [
+        5558175710,
+        5559328151
+      ],
+      "issue_comment_urls": [
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+        "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5559328151"
+      ],
+      "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-explicit-v1.json",
+      "file_sha256": "93dd558bf32982909bec90c0854f3b170458d28178e199c6e252c11fc4776720",
+      "authoritative_markdown_paths": [
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+        "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-su0299-supplement.md"
+      ],
+      "authoritative_markdown_file_sha256s": [
+        "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5",
+        "287d2a729b664c96a51e0dbb281b8a4dd89d62baa8a9a1f9db49cc8fef9d9404"
+      ],
+      "full_source_proof": {
+        "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-full-source-v1.json",
+        "file_sha256": "4183b54d4ccd54651449f57a91c344d1dbba8168140b126f364fa5916b9ad6ff"
+      },
+      "artifact_id": "BE-AGH-2026-SPD-WAHLPROGRAMM",
+      "artifact_sha256": "379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9",
+      "exact_terminal_object_count": 60,
+      "active_terminal_review_leaf_count": 36,
+      "exact_open_child_object_count": 0,
+      "physical_pdf_pages": [
+        25
+      ],
+      "cross_page_objects_consumed_once": [
+        "BE-SPD-2026-SU-0302"
+      ],
+      "next_source_order_frontier": {
+        "physical_page": 26,
+        "source_unit_from": "BE-SPD-2026-SU-0303"
+      },
+      "gate": "BE_SPD_2026_P25_FACH_COMPLETE_PASS_SOURCE_BOUND_AFTER_LOSSLESS_MATERIALISATION"
     }
   ],
   "rejected_predecessor": {
@@ -990,17 +1031,17 @@
       "CDU",
       "Die Linke"
     ],
-    "remaining_genuine_fach_review_required": 1191,
-    "remaining_review_scope_count": 1191,
-    "remaining_page_review_envelopes": 1191,
+    "remaining_genuine_fach_review_required": 1190,
+    "remaining_review_scope_count": 1190,
+    "remaining_page_review_envelopes": 1190,
     "remaining_exact_effect_objects_identified": 0,
     "remaining_exact_effect_object_count": null,
-    "terminal_source_objects": 1620,
+    "terminal_source_objects": 1680,
     "terminal_status_counts": {
-      "EXPLICIT_FACH_APPROVED": 503,
-      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 222,
-      "NON_EFFECT_CONTEXT_REVIEWED": 747,
-      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 148
+      "EXPLICIT_FACH_APPROVED": 530,
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 231,
+      "NON_EFFECT_CONTEXT_REVIEWED": 768,
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 151
     },
     "known_segmentation_defects": 2,
     "berlin_completion_gate": "FAIL_CLOSED_8_PROGRAMMES_REQUIRE_SOURCE_BOUND_FACH"
@@ -30746,16 +30787,16 @@
       "segmentation_state": "PARTIAL_TERMINAL_WITH_REVIEW_ENVELOPES_OPEN",
       "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
       "programme_analysis_complete": false,
-      "terminal_object_count": 178,
+      "terminal_object_count": 238,
       "terminal_status_counts": {
-        "EXPLICIT_FACH_APPROVED": 32,
-        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 56,
-        "NON_EFFECT_CONTEXT_REVIEWED": 76,
-        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 14
+        "EXPLICIT_FACH_APPROVED": 59,
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON": 65,
+        "NON_EFFECT_CONTEXT_REVIEWED": 97,
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED": 17
       },
-      "remaining_review_envelope_count": 42,
+      "remaining_review_envelope_count": 41,
       "remaining_exact_object_count": 0,
-      "remaining_review_scope_count": 42,
+      "remaining_review_scope_count": 41,
       "terminal_objects": [
         {
           "object_id": "BE-SPD-2026-SU-0248",
@@ -36636,20 +36677,2144 @@
             "file_sha256": "02ee24b108839b9a0a261c173f1b86331660898148e23a78f6bec1a968e0db5f"
           },
           "fach_handoff_locator": "Issue #240 comment 5555260265; exact object BE-SPD-2026-SU-0290-C05-5685ce889944"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0291",
+          "source_unit_id": "BE-SPD-2026-SU-0291",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b004@42.52,236.75,288.58,301.53",
+          "source_text": "Wir wollen die wachsenden Ortsteile und Kieze im Osten der Stadt strukturell besser miteinander und mit der Berliner Mitte verbinden. Daher beginnen wir auch mit der Planung einer U-Bahn-Verbindung vom Alexanderplatz nach Hohenschönhausen.",
+          "source_text_sha256": "78a84d531c2c34fa04869f54f0e1a59769d0e9a07f3ad52d9d077dfb0ac9eb02",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0291-A01",
+            "BE-SPD-2026-SU-0291-C01-c65cfe146a8d"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir wollen die wachsenden Ortsteile und Kieze im Osten der Stadt strukturell besser miteinander und mit der Berliner Mitte verbinden. Daher beginnen wir auch mit der Planung einer U-Bahn-Verbindung vom Alexanderplatz nach Hohenschönhausen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0291"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0292",
+          "source_unit_id": "BE-SPD-2026-SU-0292",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b005@42.52,311.25,290.28,376.03",
+          "source_text": "Den neuen schnellen Flughafen-Express Berlin Hbf – BER werden wir zum Bahnhof Gesundbrunnen verlängern. Das Schienenprojekt i2030 zur besseren Anbindung Berlins und Brandenburgs finanzieren wir aus und setzen es mit einem klaren Zeitplan um.",
+          "source_text_sha256": "4cc17a4eea9b5a334baeaaf2867209e7b8bac95d95d45624f8b760eea72d3915",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0292-A01",
+            "BE-SPD-2026-SU-0292-A02",
+            "BE-SPD-2026-SU-0292-A03"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Den neuen schnellen Flughafen-Express Berlin Hbf – BER werden wir zum Bahnhof Gesundbrunnen verlängern. Das Schienenprojekt i2030 zur besseren Anbindung Berlins und Brandenburgs finanzieren wir aus und setzen es mit einem klaren Zeitplan um.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0292"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0293",
+          "source_unit_id": "BE-SPD-2026-SU-0293",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b006@42.52,386.74,226.32,402.06",
+          "source_text": "Bezahlbarer und sicherer ÖPNV",
+          "source_text_sha256": "b691b610df6b45c93202418b2912eebeba6adf2dd81dd33198eec549310574e8",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "`Bezahlbarer und sicherer ÖPNV` / `b691b610df6b45c93202418b2912eebeba6adf2dd81dd33198eec549310574e8` → `NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED` (zero-count).",
+          "fach_source_sha256": "e01f6c3416fe86484bd96c2226438c97b3ae21d12fc6ffe0f80d2e3498317a53",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Bezahlbarer und sicherer ÖPNV",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0293"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_text": "Das Deutschlandticket zählt zu den erfolgreichsten Projekten der Verkehrspolitik. Es hat viele Menschen zurück in Bus und Bahn gebracht und den ÖPNV einfacher gemacht. Deshalb fordern wir von Bund und Ländern, den Preis wieder auf 49 Euro zu senken Für mehr Sicherheit und Sauberkeit setzen wir zusätzliches Personal, darunter Sozialteams, und ermöglichen flexible Nachtbushaltestellen. Die BVG konzentriert sich als öffentliches Unternehmen zunächst auf die Stabilisierung des Betriebs, etwa durch mehr Kapazitäten für Wartung und die kontinuierliche Fahrzeugbeschaffung. Dabei unterstützen wir die BVG, schnellstmöglich wieder in die Ausweitung des eigenen Angebots investieren zu können. Hierfür sichern wir die entsprechend notwendigen finanziellen Mittel. Die S-Bahn bleibt rechtlich und betrieblich eine Einheit. Zugleich wirken wir auf die Deutsche Bahn ein, damit Zuverlässigkeit und Pünktlichkeit wieder deutlich steigen.",
+          "source_text_sha256": "2d8907195fff280cc914b8fb175f084689176a10a1dbbf22c829324cc51b120c",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0294-A01",
+            "BE-SPD-2026-SU-0294-A02",
+            "BE-SPD-2026-SU-0294-A03",
+            "BE-SPD-2026-SU-0294-A04",
+            "BE-SPD-2026-SU-0294-C01-6e39c01ddd02",
+            "BE-SPD-2026-SU-0294-C02-35f58d70ed24",
+            "BE-SPD-2026-SU-0294-A01-C01-4c103cadf0f8",
+            "BE-SPD-2026-SU-0294-A01-C02-f22491ee0fe2",
+            "BE-SPD-2026-SU-0294-C03-3e720cb97491",
+            "BE-SPD-2026-SU-0294-C04-a4c616d3086e",
+            "BE-SPD-2026-SU-0294-C05-4fd848b27f3a",
+            "BE-SPD-2026-SU-0294-C06-e62d80d5c5f6",
+            "BE-SPD-2026-SU-0294-C07-61ef06f0fdbf"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Das Deutschlandticket zählt zu den erfolgreichsten Projekten der Verkehrspolitik. Es hat viele Menschen zurück in Bus und Bahn gebracht und den ÖPNV einfacher gemacht. Deshalb fordern wir von Bund und Ländern, den Preis wieder auf 49 Euro zu senken Für mehr Sicherheit und Sauberkeit setzen wir zusätzliches Personal, darunter Sozialteams, und ermöglichen flexible Nachtbushaltestellen. Die BVG konzentriert sich als öffentliches Unternehmen zunächst auf die Stabilisierung des Betriebs, etwa durch mehr Kapazitäten für Wartung und die kontinuierliche Fahrzeugbeschaffung. Dabei unterstützen wir die BVG, schnellstmöglich wieder in die Ausweitung des eigenen Angebots investieren zu können. Hierfür sichern wir die entsprechend notwendigen finanziellen Mittel. Die S-Bahn bleibt rechtlich und betrieblich eine Einheit. Zugleich wirken wir auf die Deutsche Bahn ein, damit Zuverlässigkeit und Pünktlichkeit wieder deutlich steigen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0295",
+          "source_unit_id": "BE-SPD-2026-SU-0295",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b009@42.52,705.26,277.75,770.04",
+          "source_text": "Wir schützen das Taxigewerbe vor unlauterem Wettbewerb und führen ein Mindestbeförderungsentgelt für appvermittelte Mietwagen ein. Alle Berliner Taxen sollen am BER Fahrgäste aufnehmen dürfen.",
+          "source_text_sha256": "5702b38529d4344444b08f0b43f2f6adc3a40bc1a2120be31022ea61e82b2037",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0295-A01",
+            "BE-SPD-2026-SU-0295-A02",
+            "BE-SPD-2026-SU-0295-A03"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir schützen das Taxigewerbe vor unlauterem Wettbewerb und führen ein Mindestbeförderungsentgelt für appvermittelte Mietwagen ein. Alle Berliner Taxen sollen am BER Fahrgäste aufnehmen dürfen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0295"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0296",
+          "source_unit_id": "BE-SPD-2026-SU-0296",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b010@304.73,69.84,546.04,134.62",
+          "source_text": "Wir entwickeln das Konzept zur Barrierefreien Alternativen Beförderung (BAV) weiter, sodass alle Menschen mit Mobilitätsbeeinträchtigung im Sinne des Landesgleichberechtigungsgesetzes den Öffentlichen Nahverkehr nutzen können.",
+          "source_text_sha256": "aee3e569fe41680379c6324ec228582cab8de995f6aa88f54524ca893552a49b",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0296-A01"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir entwickeln das Konzept zur Barrierefreien Alternativen Beförderung (BAV) weiter, sodass alle Menschen mit Mobilitätsbeeinträchtigung im Sinne des Landesgleichberechtigungsgesetzes den Öffentlichen Nahverkehr nutzen können.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0296"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0297",
+          "source_unit_id": "BE-SPD-2026-SU-0297",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b011@304.72,145.34,538.35,160.65",
+          "source_text": "Fußverkehr – sicher, barrierefrei, überall",
+          "source_text_sha256": "c0e480890027074898d158257e38c5fe41a550092f2e1b6bd86fbca22a5ebbe7",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "`Fußverkehr – sicher, barrierefrei, überall` / `c0e480890027074898d158257e38c5fe41a550092f2e1b6bd86fbca22a5ebbe7` → `NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED` (zero-count).",
+          "fach_source_sha256": "2bcb2a740c35f73aded9c03ea46faf72436d2aab5e0ff7276dd3c555cbd9a26a",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Fußverkehr – sicher, barrierefrei, überall",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0297"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0298",
+          "source_unit_id": "BE-SPD-2026-SU-0298",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b012@304.72,169.65,547.24,326.83",
+          "source_text": "Ein Drittel aller Wege legen die Berliner*innen zu Fuß zurück – kostenlos, umweltfreundlich und gesund. Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen. Auch die Instandhaltung der Fußwege einschließlich der Beleuchtung wird auskömmlich finanziert. Alle Ampeln rüsten wir mit taktilen und akustischen Signalen aus. Auch für Fußgänger*innen schaffen wir eine grüne Welle.",
+          "source_text_sha256": "7df247dc850f51a62b5225b0d2e8ddb22ff52cbe13e6bedfcbdf654a02ded15b",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0298-A01",
+            "BE-SPD-2026-SU-0298-A02",
+            "BE-SPD-2026-SU-0298-C01-71ae605b0875",
+            "BE-SPD-2026-SU-0298-A01-C01-dca48fc2047d",
+            "BE-SPD-2026-SU-0298-A01-C02-3c7adca98143",
+            "BE-SPD-2026-SU-0298-C02-a1655d8e931d",
+            "BE-SPD-2026-SU-0298-C03-92719a2584a7"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Ein Drittel aller Wege legen die Berliner*innen zu Fuß zurück – kostenlos, umweltfreundlich und gesund. Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen. Auch die Instandhaltung der Fußwege einschließlich der Beleuchtung wird auskömmlich finanziert. Alle Ampeln rüsten wir mit taktilen und akustischen Signalen aus. Auch für Fußgänger*innen schaffen wir eine grüne Welle.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0298"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_text": "Um das Chaos mit E-Scootern und Leihrädern zu beenden, richten wir verbindliche Abstellflächen ein, sogenannte Jelbi-Stationen. Wir sorgen dafür, dass sie nicht mehr auf Gehwegen genutzt werden können. Außerhalb dieser Flächen soll sich die Nutzung nicht beenden lassen. Wir stellen außerdem sicher, dass Sharing-Angebote nicht nur in der Innenstadt, sondern auch in den Außenbezirken verfügbar sind. Außerdem schaffen wir ein landeseigenes, allgemeinwohlorientiertes Car-Sharing-Angebot, welches berlinweit mit Elektrofahrzeugen betrieben werden soll. Wir verdoppeln die Sondernutzungsgebühr für die Nutzung des öffentlichen Straßenraums für E-Scooter Betreiberfirmen innerhalb des S-Bahn- Rings und weiten die Gebührenpflicht auf ganz Berlin aus.",
+          "source_text_sha256": "bc5f7f99e0c8f701477e4b534f07ca30b40582d17f97ca87e9f88553d3864d94",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0299-A01",
+            "BE-SPD-2026-SU-0299-A02",
+            "BE-SPD-2026-SU-0299-A03",
+            "BE-SPD-2026-SU-0299-A04",
+            "BE-SPD-2026-SU-0299-A05",
+            "BE-SPD-2026-SU-0299-A06",
+            "BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37",
+            "BE-SPD-2026-SU-0299-A06-C02-be577700ead3",
+            "BE-SPD-2026-SU-0299-C01-352663d0d94b"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Um das Chaos mit E-Scootern und Leihrädern zu beenden, richten wir verbindliche Abstellflächen ein, sogenannte Jelbi-Stationen. Wir sorgen dafür, dass sie nicht mehr auf Gehwegen genutzt werden können. Außerhalb dieser Flächen soll sich die Nutzung nicht beenden lassen. Wir stellen außerdem sicher, dass Sharing-Angebote nicht nur in der Innenstadt, sondern auch in den Außenbezirken verfügbar sind. Außerdem schaffen wir ein landeseigenes, allgemeinwohlorientiertes Car-Sharing-Angebot, welches berlinweit mit Elektrofahrzeugen betrieben werden soll. Wir verdoppeln die Sondernutzungsgebühr für die Nutzung des öffentlichen Straßenraums für E-Scooter Betreiberfirmen innerhalb des S-Bahn- Rings und weiten die Gebührenpflicht auf ganz Berlin aus.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0300",
+          "source_unit_id": "BE-SPD-2026-SU-0300",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b014@304.72,570.45,495.96,602.56",
+          "source_text": "Radverkehr – geschützt, schnell, verbindend",
+          "source_text_sha256": "2041297bf9137be6ddc5b6039cadc44f1d7be2cf82506e9c95cde53391b58b27",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "`Radverkehr – geschützt, schnell, verbindend` / `2041297bf9137be6ddc5b6039cadc44f1d7be2cf82506e9c95cde53391b58b27` → `NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED` (zero-count).",
+          "fach_source_sha256": "b234d6f8fc3da9a6883c59109349d03c9f4fff5082d06ef3b45eeb932a0d31c1",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Radverkehr – geschützt, schnell, verbindend",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_STRUCTURAL_HEADING_AND_GOAL_FRAME_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0300"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0301",
+          "source_unit_id": "BE-SPD-2026-SU-0301",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b015@304.72,611.56,516.85,689.54",
+          "source_text": "Für ein lückenloses und sicheres Netz setzen wir den Radverkehrsplan konsequent um und priorisieren das Radvorrangnetz. Bei den Radschnellverbindungen kehren wir zur vorgesehenen Planung zurück und schaffen verlässliche Finanzierungsbedingungen.",
+          "source_text_sha256": "c79b88fd3a8395b761b3c3d7d2015a500bac06c3905fb2cc8db17a712dd9f339",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0301-A01",
+            "BE-SPD-2026-SU-0301-A02",
+            "BE-SPD-2026-SU-0301-A03",
+            "BE-SPD-2026-SU-0301-A04"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Für ein lückenloses und sicheres Netz setzen wir den Radverkehrsplan konsequent um und priorisieren das Radvorrangnetz. Bei den Radschnellverbindungen kehren wir zur vorgesehenen Planung zurück und schaffen verlässliche Finanzierungsbedingungen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0301"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0302",
+          "source_unit_id": "BE-SPD-2026-SU-0302",
+          "source_page": 25,
+          "pdf_pages": [
+            25,
+            26
+          ],
+          "source_locator": "p025:b016@304.72,699.27,548.12,764.04;p026:b003@42.52,69.84,269.39,200.62",
+          "source_text": "Wir errichten mehr Radbügel, bauen Fahrradparkhäuser sowie Bike-and-Ride- Anlagen mit Beleuchtung und Wetterschutz an Mobilitätsknotenpunkten und entwickeln dafür serielle Typen und Standards. Auch in Brandenburg setzen wir uns für sichere Abstellanlagen an S-Bahnhöfen ein, damit Pendler*innen leichter umsteigen können. Wir fördern wieder ein Leihradsystem, da es Ordnung schafft und best-möglich moderne, nachhaltige und urbane Mobilität auch dort fördert, wo es sich wirtschaftlich nicht rechnet. Durch erfolgreiche Ermittlungen bei Fahrraddiebstahl reduzieren wir die Anzahl der Delikte und steigern die Aufklärungsrate.",
+          "source_text_sha256": "572d8206a04704290b24bd7e8aba36bbe95ef9905a89fc7e2d63470b7654d993",
+          "source_object_kind": "SOURCE_UNIT",
+          "terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "covered_by": [
+            "BE-SPD-2026-SU-0302-A01",
+            "BE-SPD-2026-SU-0302-A02",
+            "BE-SPD-2026-SU-0302-A03",
+            "BE-SPD-2026-SU-0302-A04",
+            "BE-SPD-2026-SU-0302-A05",
+            "BE-SPD-2026-SU-0302-C01-40c8c940c381"
+          ],
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir errichten mehr Radbügel, bauen Fahrradparkhäuser sowie Bike-and-Ride- Anlagen mit Beleuchtung und Wetterschutz an Mobilitätsknotenpunkten und entwickeln dafür serielle Typen und Standards. Auch in Brandenburg setzen wir uns für sichere Abstellanlagen an S-Bahnhöfen ein, damit Pendler*innen leichter umsteigen können. Wir fördern wieder ein Leihradsystem, da es Ordnung schafft und best-möglich moderne, nachhaltige und urbane Mobilität auch dort fördert, wo es sich wirtschaftlich nicht rechnet. Durch erfolgreiche Ermittlungen bei Fahrraddiebstahl reduzieren wir die Anzahl der Delikte und steigern die Aufklärungsrate.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "SOURCE_CONTAINER_ZERO_COUNT",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0302"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0291-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0291",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b004@42.52,236.75,288.58,301.53",
+          "source_text": "Wir wollen die wachsenden Ortsteile und Kieze im Osten der Stadt strukturell besser miteinander und mit der Berliner Mitte verbinden.",
+          "source_text_sha256": "0ac35f5dc871f98cf5c7d20ebea49d59b4c903f7484f4ac04fac9ef744ddc6ac",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_CONNECTIVITY_GOAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- Existing `BE-SPD-2026-SU-0291-A01` / `0ac35f5dc871f98cf5c7d20ebea49d59b4c903f7484f4ac04fac9ef744ddc6ac` / `Wir wollen die wachsenden Ortsteile und Kieze im Osten der Stadt strukturell besser miteinander und mit der Berliner Mitte verbinden.` → `NON_EFFECT_CONNECTIVITY_GOAL_FRAME_REVIEWED` (zero-count).",
+          "fach_source_sha256": "07789379983f39b91bb68e8a14f48f6a9c0b70146d22775f972064ed05832cc5",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir wollen die wachsenden Ortsteile und Kieze im Osten der Stadt strukturell besser miteinander und mit der Berliner Mitte verbinden.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_CONNECTIVITY_GOAL_FRAME_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0291-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0292-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0292",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b005@42.52,311.25,290.28,376.03",
+          "source_text": "Den neuen schnellen Flughafen-Express Berlin Hbf – BER werden wir zum Bahnhof Gesundbrunnen verlängern.",
+          "source_text_sha256": "e69aa36ca8a2882778f4e131e6ff390324e2cb95416162ec31fcc0d803e3b3bd",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0292-A01` / `e69aa36ca8a2882778f4e131e6ff390324e2cb95416162ec31fcc0d803e3b3bd` / `Den neuen schnellen Flughafen-Express Berlin Hbf – BER werden wir zum Bahnhof Gesundbrunnen verlängern.` → `EXPLICIT_FACH_APPROVED`.\n  - `POSITIVE_NETWORK_CONNECTIVITY_AND_TRANSFER_POTENTIAL / TIMETABLE_CAPACITY_INFRASTRUCTURE_OPERATING_RELIABILITY_AND_DISTRIBUTION_DEPENDENT`; evidence `MEDIUM_MECHANISM / PROJECT_OUTCOME_PENDING`.\n  - Reality: net travel time/transfers, reliability, crowding/capacity, affected stations/regions, operating and infrastructure cost, induced demand and accessibility; route extension itself is output.",
+          "fach_source_sha256": "aa2b02abae31ddaa14cff4a7b19891a12333a6888b8b631332467ebd95bae1b2",
+          "impact_direction": "POSITIVE_NETWORK_CONNECTIVITY_AND_TRANSFER_POTENTIAL / TIMETABLE_CAPACITY_INFRASTRUCTURE_OPERATING_RELIABILITY_AND_DISTRIBUTION_DEPENDENT",
+          "evidence_level": "MEDIUM_MECHANISM / PROJECT_OUTCOME_PENDING",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Den neuen schnellen Flughafen-Express Berlin Hbf – BER werden wir zum Bahnhof Gesundbrunnen verlängern.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0292-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0292-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0292",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b005@42.52,311.25,290.28,376.03",
+          "source_text": "Das Schienenprojekt i2030 zur besseren Anbindung Berlins und Brandenburgs finanzieren wir aus",
+          "source_text_sha256": "ebe023d6812bb1439393f9ee2bcb46a433d207f6ea1f15bcc7efee0923649c1b",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0292-A02` / `ebe023d6812bb1439393f9ee2bcb46a433d207f6ea1f15bcc7efee0923649c1b` / `Das Schienenprojekt i2030 zur besseren Anbindung Berlins und Brandenburgs finanzieren wir aus` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `I2030_FINANCE_PORTFOLIO_AMOUNT_SOURCE_ADDITIONALITY_AND_PROJECT_SCOPE_UNSPECIFIED`. Exact reason: neither the financed project set, amount/period/source, Berlin share, additionality/opportunity cost nor delivery constraints are fixed by this object, so net resource and mobility effects cannot be bounded.",
+          "fach_source_sha256": "d8170044682d964889e0e85a4c172724dc4444dcfdecf52e9402c0e011308130",
+          "exact_reason_code": "I2030_FINANCE_PORTFOLIO_AMOUNT_SOURCE_ADDITIONALITY_AND_PROJECT_SCOPE_UNSPECIFIED",
+          "exact_reason": "neither the financed project set, amount/period/source, Berlin share, additionality/opportunity cost nor delivery constraints are fixed by this object, so net resource and mobility effects cannot be bounded.",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Das Schienenprojekt i2030 zur besseren Anbindung Berlins und Brandenburgs finanzieren wir aus",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0292-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0292-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0292",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b005@42.52,311.25,290.28,376.03",
+          "source_text": "und setzen es mit einem klaren Zeitplan um.",
+          "source_text_sha256": "6b81036d4395d9ac4be941ef2fb5b2a45b1a728f7024076303c40954d7cd5236",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0292-A03` / `6b81036d4395d9ac4be941ef2fb5b2a45b1a728f7024076303c40954d7cd5236` / `und setzen es mit einem klaren Zeitplan um.` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `I2030_TIMELINE_MILESTONES_PROJECT_SET_AND_DELIVERY_DEPENDENCIES_UNSPECIFIED`. Exact reason: no dates, milestones, project allocation, responsible delivery chain or critical dependencies are specified; a promise of a clear schedule cannot be converted into delivery impact.",
+          "fach_source_sha256": "e58139d92c8f70e9d0aa92fea3a19eceac71c6c95fd9bc99bde1ee42e066faeb",
+          "exact_reason_code": "I2030_TIMELINE_MILESTONES_PROJECT_SET_AND_DELIVERY_DEPENDENCIES_UNSPECIFIED",
+          "exact_reason": "no dates, milestones, project allocation, responsible delivery chain or critical dependencies are specified; a promise of a clear schedule cannot be converted into delivery impact.",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "und setzen es mit einem klaren Zeitplan um.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0292-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_text": "Deshalb fordern wir von Bund und Ländern, den Preis wieder auf 49 Euro zu senken Für mehr Sicherheit und Sauberkeit setzen wir zusätzliches Personal, darunter Sozialteams",
+          "source_text_sha256": "843d5ed0d02ee718f77d3c792baa92d966a55b5c205641ed88be166983d4b21f",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- Existing compound `BE-SPD-2026-SU-0294-A01` / `843d5ed0d02ee718f77d3c792baa92d966a55b5c205641ed88be166983d4b21f` becomes `SOURCE_ATOM_VERSIONED_ZERO_COUNT`; it conflates an external ticket-price demand with a distinct local staffing action. Generate only the following exact children.",
+          "fach_source_sha256": "c30799d3262789fab6809640c088d2944bdb1355f05866ec4f500a9aba20be6d",
+          "superseded_by": [
+            "BE-SPD-2026-SU-0294-A01-C01-4c103cadf0f8",
+            "BE-SPD-2026-SU-0294-A01-C02-f22491ee0fe2"
+          ],
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_excerpt": "Deshalb fordern wir von Bund und Ländern, den Preis wieder auf 49 Euro zu senken Für mehr Sicherheit und Sauberkeit setzen wir zusätzliches Personal, darunter Sozialteams",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0294-A01-C01-4c103cadf0f8",
+            "BE-SPD-2026-SU-0294-A01-C02-f22491ee0fe2"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_text": "und ermöglichen flexible Nachtbushaltestellen.",
+          "source_text_sha256": "c1b21ecfa01a9ae7b2df32f2942172bb34bff799eeab9649bb9960d982e9f4fb",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- Existing `BE-SPD-2026-SU-0294-A02` / `c1b21ecfa01a9ae7b2df32f2942172bb34bff799eeab9649bb9960d982e9f4fb` / `und ermöglichen flexible Nachtbushaltestellen.` → `EXPLICIT_FACH_APPROVED`.\n  - `POSITIVE_FIRST_LAST_MILE_AND_PERSONAL_SAFETY_POTENTIAL / ROAD_SAFETY_DRIVER_RULE_ACCESSIBILITY_AND_OPERATIONAL_FEASIBILITY_DEPENDENT`; evidence `MEDIUM_MECHANISM`; reality = safe drop-off use, incidents/near-misses, access and added operating burden.",
+          "fach_source_sha256": "48ba7cf65f14797369e06c558f29a39f8483695d5bdecaff99cb4245d9412260",
+          "impact_direction": "POSITIVE_FIRST_LAST_MILE_AND_PERSONAL_SAFETY_POTENTIAL / ROAD_SAFETY_DRIVER_RULE_ACCESSIBILITY_AND_OPERATIONAL_FEASIBILITY_DEPENDENT",
+          "evidence_level": "MEDIUM_MECHANISM",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "und ermöglichen flexible Nachtbushaltestellen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_text": "Dabei unterstützen wir die BVG, schnellstmöglich wieder in die Ausweitung des eigenen Angebots investieren zu können.",
+          "source_text_sha256": "9dd18b39cd68ba22027476fda2b90e34e25b3c78df4e46ab4dcc833e6303f452",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- Existing `BE-SPD-2026-SU-0294-A03` / `9dd18b39cd68ba22027476fda2b90e34e25b3c78df4e46ab4dcc833e6303f452` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `BVG_OFFER_EXPANSION_SUPPORT_INSTRUMENT_AMOUNT_TARGET_CAPACITY_AND_TIMING_UNSPECIFIED`. Exact reason: `unterstützen` does not state the financing/governance instrument, service expansion quantity/geography, capacity constraint or timing.",
+          "fach_source_sha256": "a34e4a0470902bbaac37a0fd5d65559a9b3cd1db2ecc0393fbfc2d904f82cc5f",
+          "exact_reason_code": "BVG_OFFER_EXPANSION_SUPPORT_INSTRUMENT_AMOUNT_TARGET_CAPACITY_AND_TIMING_UNSPECIFIED",
+          "exact_reason": "`unterstützen` does not state the financing/governance instrument, service expansion quantity/geography, capacity constraint or timing.",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Dabei unterstützen wir die BVG, schnellstmöglich wieder in die Ausweitung des eigenen Angebots investieren zu können.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_text": "Hierfür sichern wir die entsprechend notwendigen finanziellen Mittel.",
+          "source_text_sha256": "b13b60739cae77e76446942ba92cb8c40a475b246b820ca230d8a5ed010b3e6f",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- Existing `BE-SPD-2026-SU-0294-A04` / `b13b60739cae77e76446942ba92cb8c40a475b246b820ca230d8a5ed010b3e6f` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `BVG_EXPANSION_FINANCE_AMOUNT_SOURCE_ADDITIONALITY_AND_OPPORTUNITY_COST_UNSPECIFIED`. Exact reason: required money is asserted but amount, source, period, allocation, additionality and competing uses are absent.",
+          "fach_source_sha256": "5042163daa5a7cb35b21b2d404fc01114a7ad4a7053273d2d9d99fa3f8171f05",
+          "exact_reason_code": "BVG_EXPANSION_FINANCE_AMOUNT_SOURCE_ADDITIONALITY_AND_OPPORTUNITY_COST_UNSPECIFIED",
+          "exact_reason": "required money is asserted but amount, source, period, allocation, additionality and competing uses are absent.",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Hierfür sichern wir die entsprechend notwendigen finanziellen Mittel.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0295-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0295",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b009@42.52,705.26,277.75,770.04",
+          "source_text": "Wir schützen das Taxigewerbe vor unlauterem Wettbewerb",
+          "source_text_sha256": "3eecbfad9c5bedb5dddfa8e58a76e84a57613470ff4e926c205fa798cb514a50",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_MARKET_ORDER_GOAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0295-A01` / `3eecbfad9c5bedb5dddfa8e58a76e84a57613470ff4e926c205fa798cb514a50` / `Wir schützen das Taxigewerbe vor unlauterem Wettbewerb` → `NON_EFFECT_MARKET_ORDER_GOAL_FRAME_REVIEWED` (zero-count).",
+          "fach_source_sha256": "71feb91f698d76f47681b9f8e0bcf5994d9982d400d59c20b97b473603f2728c",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Wir schützen das Taxigewerbe vor unlauterem Wettbewerb",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_MARKET_ORDER_GOAL_FRAME_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0295-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0295-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0295",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b009@42.52,705.26,277.75,770.04",
+          "source_text": "und führen ein Mindestbeförderungsentgelt für appvermittelte Mietwagen ein.",
+          "source_text_sha256": "db928d8f7734b634e19c6c653c1786a86ca71b1fe10589936d08bd009020094a",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0295-A02` / `db928d8f7734b634e19c6c653c1786a86ca71b1fe10589936d08bd009020094a` / `und führen ein Mindestbeförderungsentgelt für appvermittelte Mietwagen ein.` → `EXPLICIT_FACH_APPROVED`.\n  - `AMBIVALENT_MARKET_ORDER_LABOUR_AND_CONSUMER_ACCESS_EFFECT / FLOOR_LEVEL_ENFORCEMENT_PLATFORM_RESPONSE_AND_DISTRIBUTION_DEPENDENT`; evidence `MEDIUM_FOR_PRICE_FLOOR_MECHANISM / LOCAL_NET_WELFARE_PENDING`.\n  - Potential: reduce destructive undercutting and improve fair-competition/labour conditions; risks: higher passenger prices, lower availability, platform circumvention and distributional burden. Reality = fares, driver income/conditions, supply/wait times, mode substitution, enforcement and affected groups.",
+          "fach_source_sha256": "bbf8cee0390b1e5f983fd985f4122038384d81a09de49552e95c92653930461d",
+          "impact_direction": "AMBIVALENT_MARKET_ORDER_LABOUR_AND_CONSUMER_ACCESS_EFFECT / FLOOR_LEVEL_ENFORCEMENT_PLATFORM_RESPONSE_AND_DISTRIBUTION_DEPENDENT",
+          "evidence_level": "MEDIUM_FOR_PRICE_FLOOR_MECHANISM / LOCAL_NET_WELFARE_PENDING",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "und führen ein Mindestbeförderungsentgelt für appvermittelte Mietwagen ein.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0295-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0295-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0295",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b009@42.52,705.26,277.75,770.04",
+          "source_text": "Alle Berliner Taxen sollen am BER Fahrgäste aufnehmen dürfen.",
+          "source_text_sha256": "0bdfbde889c823e64f2351fe6cccff9d5facd5dbc753ccc64d7bb4df7134903b",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0295-A03` / `0bdfbde889c823e64f2351fe6cccff9d5facd5dbc753ccc64d7bb4df7134903b` / `Alle Berliner Taxen sollen am BER Fahrgäste aufnehmen dürfen.` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `BER_TAXI_PICKUP_MULTI_JURISDICTION_LEGAL_CONCESSION_CAPACITY_AND_DISTRIBUTION_UNSPECIFIED`. Exact reason: airport/Brandenburg/operating and concession authority, stand capacity, dispatch rules, reciprocal effects and passenger/driver distribution are not specified.",
+          "fach_source_sha256": "0acf97aaf361c9656115485b9f008e7ff2c95b7843260ba65bfdf3dfbdce608b",
+          "exact_reason_code": "BER_TAXI_PICKUP_MULTI_JURISDICTION_LEGAL_CONCESSION_CAPACITY_AND_DISTRIBUTION_UNSPECIFIED",
+          "exact_reason": "airport/Brandenburg/operating and concession authority, stand capacity, dispatch rules, reciprocal effects and passenger/driver distribution are not specified.",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "Alle Berliner Taxen sollen am BER Fahrgäste aufnehmen dürfen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0295-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0296-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0296",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b010@304.73,69.84,546.04,134.62",
+          "source_text": "Wir entwickeln das Konzept zur Barrierefreien Alternativen Beförderung (BAV) weiter, sodass alle Menschen mit Mobilitätsbeeinträchtigung im Sinne des Landesgleichberechtigungsgesetzes den Öffentlichen Nahverkehr nutzen können.",
+          "source_text_sha256": "aee3e569fe41680379c6324ec228582cab8de995f6aa88f54524ca893552a49b",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "`BE-SPD-2026-SU-0296-A01` / `aee3e569fe41680379c6324ec228582cab8de995f6aa88f54524ca893552a49b` → `EXPLICIT_FACH_APPROVED`.\n- `POSITIVE_ACCESSIBILITY_DESIGN_AND_SERVICE_INCLUSION_POTENTIAL / IMPLEMENTATION_COVERAGE_CAPACITY_BOOKING_AFFORDABILITY_AND_NONDISCRIMINATION_DEPENDENT`.\n- Evidence `MEDIUM_HIGH_FOR_ACCESS_BARRIER_REMOVAL_MECHANISM / ACTUAL_SERVICE_OUTCOME_PENDING`.\n- As written, concept development is an enabling step, not completed access. Reality = eligible users served, wait/refusal time, geographic/time coverage, accessible booking/non-digital fallback, cost and user-reported access; protect LGBG rights baseline from being treated as optional benefit.",
+          "fach_source_sha256": "f5e46cad5b7ffa6fc0d75aa93d729b8600383d9b7929745885f140bf9b6eef73",
+          "impact_direction": "POSITIVE_ACCESSIBILITY_DESIGN_AND_SERVICE_INCLUSION_POTENTIAL / IMPLEMENTATION_COVERAGE_CAPACITY_BOOKING_AFFORDABILITY_AND_NONDISCRIMINATION_DEPENDENT",
+          "evidence_level": "MEDIUM_HIGH_FOR_ACCESS_BARRIER_REMOVAL_MECHANISM / ACTUAL_SERVICE_OUTCOME_PENDING",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Wir entwickeln das Konzept zur Barrierefreien Alternativen Beförderung (BAV) weiter, sodass alle Menschen mit Mobilitätsbeeinträchtigung im Sinne des Landesgleichberechtigungsgesetzes den Öffentlichen Nahverkehr nutzen können.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0296-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0298-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0298",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b012@304.72,169.65,547.24,326.83",
+          "source_text": "Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.",
+          "source_text_sha256": "2ade99da642ceb49c6d5ed6f97c85e2a0a0f66553774f7445bf5dc2377e02f30",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- Existing compound `BE-SPD-2026-SU-0298-A01` / `2ade99da642ceb49c6d5ed6f97c85e2a0a0f66553774f7445bf5dc2377e02f30` becomes `SOURCE_ATOM_VERSIONED_ZERO_COUNT`; generate two exact children:\n  - `Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen` / `dca48fc2047df0bd09ea5e36bb6de0893a038025060d8850ea2b6aab93b3336d` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_PEDESTRIAN_ACCESS_SAFETY_AND_HEALTH_POTENTIAL / SITE_DESIGN_MAINTENANCE_SPACE_AND_UNIVERSAL_ACCESS_DEPENDENT`; evidence `HIGH_MECHANISM`; reality = accessible continuous width/condition, falls/crashes, lighting, route continuity, user access by disability/age and lifecycle maintenance.\n  - `sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.` / `3c7adca981431822c001ad287c9df6fbf8b8c35131bfe742bce78f52813002ea` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_CROSSING_SAFETY_AND_NETWORK_ACCESS_POTENTIAL / LOCATION_DESIGN_VISIBILITY_SPEED_AND_CONFLICT_DEPENDENT`; evidence `HIGH_MECHANISM`; reality = conflict/crash/near-miss and crossing delay/accessibility by location.",
+          "fach_source_sha256": "7c90b561f108ad194a49593161753c683e82411b7f0628dad8a16fc3d434d85d",
+          "superseded_by": [
+            "BE-SPD-2026-SU-0298-A01-C01-dca48fc2047d",
+            "BE-SPD-2026-SU-0298-A01-C02-3c7adca98143"
+          ],
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_excerpt": "Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0298-A01-C01-dca48fc2047d",
+            "BE-SPD-2026-SU-0298-A01-C02-3c7adca98143"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0298-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0298-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0298",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b012@304.72,169.65,547.24,326.83",
+          "source_text": "Auch für Fußgänger*innen schaffen wir eine grüne Welle.",
+          "source_text_sha256": "00dfcd49494bceeb417624f7c42c242ad35119def57b1eef4b0edd2068097934",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- Existing `BE-SPD-2026-SU-0298-A02` / `00dfcd49494bceeb417624f7c42c242ad35119def57b1eef4b0edd2068097934` / `Auch für Fußgänger*innen schaffen wir eine grüne Welle.` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_PEDESTRIAN_DELAY_AND_ROUTE_ATTRACTIVENESS_POTENTIAL / MULTIMODAL_SIGNAL_SAFETY_SITE_SPECIFIC_OPTIMISATION_REQUIRED`; evidence `MEDIUM`; reality = pedestrian waiting/travel time, crossings missed, safety and effects on buses/cyclists/cross traffic.",
+          "fach_source_sha256": "8eeb7bbdefa25eacab7d36a9a72466d67371bab9ac988ca0435d76f92318378d",
+          "impact_direction": "POSITIVE_PEDESTRIAN_DELAY_AND_ROUTE_ATTRACTIVENESS_POTENTIAL / MULTIMODAL_SIGNAL_SAFETY_SITE_SPECIFIC_OPTIMISATION_REQUIRED",
+          "evidence_level": "MEDIUM",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Auch für Fußgänger*innen schaffen wir eine grüne Welle.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0298-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_text": "Um das Chaos mit E-Scootern und Leihrädern zu beenden",
+          "source_text_sha256": "e30b5b4c8bf1bc66d66f88f531e685e5f1871948a640b928f073cc8088c98121",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_PROBLEM_AND_GOAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0299-A01` / `e30b5b4c8bf1bc66d66f88f531e685e5f1871948a640b928f073cc8088c98121` / `Um das Chaos mit E-Scootern und Leihrädern zu beenden` → `NON_EFFECT_PROBLEM_AND_GOAL_FRAME_REVIEWED` (zero-count).",
+          "fach_source_sha256": "fa6ff25b5a9cfff7bd9233941fddbd19b51b0b5c40890df363e3feeb3f46eda0",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Um das Chaos mit E-Scootern und Leihrädern zu beenden",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_PROBLEM_AND_GOAL_FRAME_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_text": "richten wir verbindliche Abstellflächen ein, sogenannte Jelbi-Stationen.",
+          "source_text_sha256": "6f4432ef4df9bcc87f6722c7e78e6073cbe9a602fe8334990c1e42aa3000d725",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0299-A02` / `6f4432ef4df9bcc87f6722c7e78e6073cbe9a602fe8334990c1e42aa3000d725` / `richten wir verbindliche Abstellflächen ein, sogenannte Jelbi-Stationen.` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_SIDEWALK_ORDER_ACCESSIBILITY_AND_PARKING_PREDICTABILITY_POTENTIAL / STATION_DENSITY_LOCATION_CAPACITY_AND_ENFORCEMENT_DEPENDENT`; evidence `MEDIUM_HIGH`; reality = sidewalk obstruction/accessibility, parking compliance, walk-to-station burden, availability and spatial distribution.",
+          "fach_source_sha256": "d50e9f3f3cfe3148aca87542701a3664ef7342a9ec5b8c849e69e0e36f41e7bd",
+          "impact_direction": "POSITIVE_SIDEWALK_ORDER_ACCESSIBILITY_AND_PARKING_PREDICTABILITY_POTENTIAL / STATION_DENSITY_LOCATION_CAPACITY_AND_ENFORCEMENT_DEPENDENT",
+          "evidence_level": "MEDIUM_HIGH",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "richten wir verbindliche Abstellflächen ein, sogenannte Jelbi-Stationen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_text": "Außerhalb dieser Flächen soll sich die Nutzung nicht beenden lassen.",
+          "source_text_sha256": "00be78638e07c3da0662746dd5c2d125b57d8e24c70844ecd995afee51633d52",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0299-A03` / `00be78638e07c3da0662746dd5c2d125b57d8e24c70844ecd995afee51633d52` / `Außerhalb dieser Flächen soll sich die Nutzung nicht beenden lassen.` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_PUBLIC_SPACE_COMPLIANCE_POTENTIAL_WITH_DIGITAL_AND_ACCESS_TRADEOFFS / GEOLOCATION_ACCURACY_STATION_CAPACITY_PRIVACY_AND_FAILURE_FALLBACK_DEPENDENT`; evidence `MEDIUM`; reality = obstruction reduction, failed-trip endings, false geofence events, accessibility and user burden.",
+          "fach_source_sha256": "f4b578f1a653d32d93e68e0c6e14ae432bcfdb6eb3362dea8142c3dedad8c092",
+          "impact_direction": "POSITIVE_PUBLIC_SPACE_COMPLIANCE_POTENTIAL_WITH_DIGITAL_AND_ACCESS_TRADEOFFS / GEOLOCATION_ACCURACY_STATION_CAPACITY_PRIVACY_AND_FAILURE_FALLBACK_DEPENDENT",
+          "evidence_level": "MEDIUM",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Außerhalb dieser Flächen soll sich die Nutzung nicht beenden lassen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_text": "Wir stellen außerdem sicher, dass Sharing-Angebote nicht nur in der Innenstadt, sondern auch in den Außenbezirken verfügbar sind.",
+          "source_text_sha256": "67075c7d31fea79fb3bec04fa8d0a1e8267a8e6285c8e46ad7102791591f3434",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0299-A04` / `67075c7d31fea79fb3bec04fa8d0a1e8267a8e6285c8e46ad7102791591f3434` / `Wir stellen außerdem sicher, dass Sharing-Angebote nicht nur in der Innenstadt, sondern auch in den Außenbezirken verfügbar sind.` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_SPATIAL_ACCESS_AND_SERVICE_EQUITY_POTENTIAL / SERVICE_FLOOR_SUBSIDY_OR_PERMIT_DESIGN_LOW_DENSITY_ECONOMICS_AND_USAGE_DEPENDENT`; evidence `MEDIUM`; reality = vehicle/service availability, trip completion, user groups and subsidy/cost by district, not nominal coverage.",
+          "fach_source_sha256": "66050e824964240db2f17269bdf28d7ca72438edb612ac826b9012621bba8ce6",
+          "impact_direction": "POSITIVE_SPATIAL_ACCESS_AND_SERVICE_EQUITY_POTENTIAL / SERVICE_FLOOR_SUBSIDY_OR_PERMIT_DESIGN_LOW_DENSITY_ECONOMICS_AND_USAGE_DEPENDENT",
+          "evidence_level": "MEDIUM",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Wir stellen außerdem sicher, dass Sharing-Angebote nicht nur in der Innenstadt, sondern auch in den Außenbezirken verfügbar sind.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-A05",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_text": "Außerdem schaffen wir ein landeseigenes, allgemeinwohlorientiertes Car-Sharing-Angebot, welches berlinweit mit Elektrofahrzeugen betrieben werden soll.",
+          "source_text_sha256": "ee6e2b71067af8949a3d646e67afb9f38947b7fa798923982ca8b16803090048",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0299-A05` / `ee6e2b71067af8949a3d646e67afb9f38947b7fa798923982ca8b16803090048` / `Außerdem schaffen wir ein landeseigenes, allgemeinwohlorientiertes Car-Sharing-Angebot, welches berlinweit mit Elektrofahrzeugen betrieben werden soll.` → `EXPLICIT_FACH_APPROVED`: `AMBIVALENT_POSITIVE_MOBILITY_ACCESS_AND_ELECTRIFICATION_POTENTIAL / OWNERSHIP_SUBSTITUTION_INDUCED_TRAVEL_PUBLIC_COST_UTILISATION_SPACE_AND_CHARGING_DEPENDENT`; evidence `MEDIUM_MIXED_FOR_NET_MODE_EFFECT`; reality = private-car ownership substitution, modal shift, vehicle utilisation, km, emissions/lifecycle, accessibility, public cost and parking/charging footprint.",
+          "fach_source_sha256": "e37281a398c8ee6c7963738879257c62374df32e0de167f851783f4138269122",
+          "impact_direction": "AMBIVALENT_POSITIVE_MOBILITY_ACCESS_AND_ELECTRIFICATION_POTENTIAL / OWNERSHIP_SUBSTITUTION_INDUCED_TRAVEL_PUBLIC_COST_UTILISATION_SPACE_AND_CHARGING_DEPENDENT",
+          "evidence_level": "MEDIUM_MIXED_FOR_NET_MODE_EFFECT",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Außerdem schaffen wir ein landeseigenes, allgemeinwohlorientiertes Car-Sharing-Angebot, welches berlinweit mit Elektrofahrzeugen betrieben werden soll.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299-A05"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-A06",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_text": "Wir verdoppeln die Sondernutzungsgebühr für die Nutzung des öffentlichen Straßenraums für E-Scooter Betreiberfirmen innerhalb des S-Bahn- Rings und weiten die Gebührenpflicht auf ganz Berlin aus.",
+          "source_text_sha256": "e1c58ce5c68b67c79bf5fcc593cf0429569796ae154a402d76f36f1741aab802",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- Existing compound `BE-SPD-2026-SU-0299-A06` / `e1c58ce5c68b67c79bf5fcc593cf0429569796ae154a402d76f36f1741aab802` becomes `SOURCE_ATOM_VERSIONED_ZERO_COUNT`; generate two exact children:\n  - `Wir verdoppeln die Sondernutzungsgebühr für die Nutzung des öffentlichen Straßenraums für E-Scooter Betreiberfirmen innerhalb des S-Bahn- Rings` / `ffb78ed16a37b7f8d9a8d519530445711066b0119f357dff5b200974865b0689` → `EXPLICIT_FACH_APPROVED`: `AMBIVALENT_PUBLIC_SPACE_COST_INTERNALISATION_AND_OPERATOR_INCENTIVE_EFFECT / PASS_THROUGH_SUPPLY_COMPLIANCE_AND_ACCESS_DEPENDENT`; evidence `MEDIUM_ECONOMIC_MECHANISM`; reality = operator supply, prices, parking compliance, public-space burden and affected low-income users.\n  - `und weiten die Gebührenpflicht auf ganz Berlin aus.` / `be577700ead30600c9e35d4e70fb20cf9f31bc2b7edb9ef0a0dcff0a44d63569` → `EXPLICIT_FACH_APPROVED`: `AMBIVALENT_SPATIAL_COST_INTERNALISATION_AND_RULE_EQUALISATION_EFFECT / OUTER_DISTRICT_SERVICE_VIABILITY_PASS_THROUGH_AND_BURDEN_DEPENDENT`; reality = same outcomes disaggregated inner/outer districts.",
+          "fach_source_sha256": "1dca732e43873b2fa8b717b7dae83fa3d11d95d18445fe124503944650346a6f",
+          "superseded_by": [
+            "BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37",
+            "BE-SPD-2026-SU-0299-A06-C02-be577700ead3"
+          ],
+          "object_kind": "SOURCE_VERSIONED_PARENT_OR_FRAGMENT_NON_COUNTING",
+          "source_excerpt": "Wir verdoppeln die Sondernutzungsgebühr für die Nutzung des öffentlichen Straßenraums für E-Scooter Betreiberfirmen innerhalb des S-Bahn- Rings und weiten die Gebührenpflicht auf ganz Berlin aus.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "SOURCE_OR_FRAGMENT_SUPERSEDED_NONCOUNTING",
+          "fach_state": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+          "authoritative_terminal_fach_state": "SOURCE_ATOM_VERSIONED_ZERO_COUNT",
+          "replacement_record_ids": [
+            "BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37",
+            "BE-SPD-2026-SU-0299-A06-C02-be577700ead3"
+          ],
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299-A06"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0301-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0301",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b015@304.72,611.56,516.85,689.54",
+          "source_text": "Für ein lückenloses und sicheres Netz setzen wir den Radverkehrsplan konsequent um",
+          "source_text_sha256": "282d30a1d0926473ceace5e8e12e8b6c68396d5b58c772cec4708ba3ff2cdc01",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0301-A01` / `282d30a1d0926473ceace5e8e12e8b6c68396d5b58c772cec4708ba3ff2cdc01` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_NETWORK_SAFETY_ACCESS_AND_MODE_SHIFT_POTENTIAL / PROJECT_SELECTION_DELIVERY_SPACE_CONFLICT_AND_MAINTENANCE_DEPENDENT`; evidence `HIGH_MECHANISM / PROGRAMME_DELIVERY_PENDING`; reality = network continuity, safe accessible routes, crashes/near-misses, use/modal share and delivery cost.",
+          "fach_source_sha256": "499af64e293bf75356dfe10690b3feb1f38173c312f2bda589e7de419a84e426",
+          "impact_direction": "POSITIVE_NETWORK_SAFETY_ACCESS_AND_MODE_SHIFT_POTENTIAL / PROJECT_SELECTION_DELIVERY_SPACE_CONFLICT_AND_MAINTENANCE_DEPENDENT",
+          "evidence_level": "HIGH_MECHANISM / PROGRAMME_DELIVERY_PENDING",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Für ein lückenloses und sicheres Netz setzen wir den Radverkehrsplan konsequent um",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0301-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0301-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0301",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b015@304.72,611.56,516.85,689.54",
+          "source_text": "und priorisieren das Radvorrangnetz.",
+          "source_text_sha256": "1b33dfd41028bec6cd4bac881effab255a4f9a3367e7590243e702550d712ab3",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0301-A02` / `1b33dfd41028bec6cd4bac881effab255a4f9a3367e7590243e702550d712ab3` / `und priorisieren das Radvorrangnetz.` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_NETWORK_COMPLETENESS_AND_RESOURCE_FOCUS_POTENTIAL / NEED_BENEFIT_SPATIAL_EQUITY_AND_DELIVERY_DEPENDENT`; evidence `MEDIUM_HIGH`; reality = missing-link closure, safety/access benefit per resource and geographic distribution.",
+          "fach_source_sha256": "b4e048e64ee9d1f54664bfac5769479ac518f00970e38af44200be34d2655b2d",
+          "impact_direction": "POSITIVE_NETWORK_COMPLETENESS_AND_RESOURCE_FOCUS_POTENTIAL / NEED_BENEFIT_SPATIAL_EQUITY_AND_DELIVERY_DEPENDENT",
+          "evidence_level": "MEDIUM_HIGH",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "und priorisieren das Radvorrangnetz.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0301-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0301-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0301",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b015@304.72,611.56,516.85,689.54",
+          "source_text": "Bei den Radschnellverbindungen kehren wir zur vorgesehenen Planung zurück",
+          "source_text_sha256": "9a23d09d25a4959d577c033c8a80d741936115b944e6e935c161268d5942659f",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0301-A03` / `9a23d09d25a4959d577c033c8a80d741936115b944e6e935c161268d5942659f` / `Bei den Radschnellverbindungen kehren wir zur vorgesehenen Planung zurück` → `EXPLICIT_FACH_APPROVED`: `AMBIVALENT_POSITIVE_PROJECT_OPTION_AND_FAST_CYCLING_NETWORK_POTENTIAL / DEMAND_ROUTE_SPACE_COST_ENVIRONMENT_AND_ALTERNATIVE_COMPARISON_REQUIRED`; evidence `MEDIUM`; planning is not built outcome; reality = demand/access, travel time, safety, lifecycle cost/land impacts and alternatives.",
+          "fach_source_sha256": "9f06b0900ebe0c3b9d0264f2558d4f50223739707917270d5cab931141fc15fd",
+          "impact_direction": "AMBIVALENT_POSITIVE_PROJECT_OPTION_AND_FAST_CYCLING_NETWORK_POTENTIAL / DEMAND_ROUTE_SPACE_COST_ENVIRONMENT_AND_ALTERNATIVE_COMPARISON_REQUIRED",
+          "evidence_level": "MEDIUM",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Bei den Radschnellverbindungen kehren wir zur vorgesehenen Planung zurück",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0301-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0301-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0301",
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b015@304.72,611.56,516.85,689.54",
+          "source_text": "und schaffen verlässliche Finanzierungsbedingungen.",
+          "source_text_sha256": "98557a070e3105b5763fe6bce0ac6a9024b7643924703a07d048e685167a4e68",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0301-A04` / `98557a070e3105b5763fe6bce0ac6a9024b7643924703a07d048e685167a4e68` / `und schaffen verlässliche Finanzierungsbedingungen.` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `RAD_FAST_ROUTE_FINANCE_AMOUNT_SOURCE_ADDITIONALITY_AND_PROJECT_SCOPE_UNSPECIFIED`. Exact reason: amount/source/period, project allocation, additionality, operating/maintenance provision and opportunity cost are absent.",
+          "fach_source_sha256": "cf94dfc3c5b07ea2f8106b9502f0a5e92b78c5f24901e831fe654253e4711ff4",
+          "exact_reason_code": "RAD_FAST_ROUTE_FINANCE_AMOUNT_SOURCE_ADDITIONALITY_AND_PROJECT_SCOPE_UNSPECIFIED",
+          "exact_reason": "amount/source/period, project allocation, additionality, operating/maintenance provision and opportunity cost are absent.",
+          "object_kind": "SOURCE_BOUND_EXACT_RNAA_OBJECT",
+          "source_excerpt": "und schaffen verlässliche Finanzierungsbedingungen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0301-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0302-A01",
+          "source_unit_id": "BE-SPD-2026-SU-0302",
+          "source_page": 25,
+          "pdf_pages": [
+            25,
+            26
+          ],
+          "source_locator": "p025:b016@304.72,699.27,548.12,764.04;p026:b003@42.52,69.84,269.39,200.62",
+          "source_text": "Wir errichten mehr Radbügel",
+          "source_text_sha256": "8cf824f834645fcbd59e2b2fd09f5e5303caf986493d4458fae2dd078a61c6a5",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0302-A01` / `8cf824f834645fcbd59e2b2fd09f5e5303caf986493d4458fae2dd078a61c6a5` / `Wir errichten mehr Radbügel` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_BICYCLE_ACCESS_PARKING_SECURITY_AND_ORDER_POTENTIAL / QUANTITY_LOCATION_SIDEWALK_CLEARANCE_AND_DEMAND_DEPENDENT`; evidence `MEDIUM_HIGH`; reality = secure usable parking, obstruction, theft exposure, occupancy and access by location.",
+          "fach_source_sha256": "01a576cc5abd9573c3e1eadaece9cd7d3893906d32b005ebd66ee2b537e5001d",
+          "impact_direction": "POSITIVE_BICYCLE_ACCESS_PARKING_SECURITY_AND_ORDER_POTENTIAL / QUANTITY_LOCATION_SIDEWALK_CLEARANCE_AND_DEMAND_DEPENDENT",
+          "evidence_level": "MEDIUM_HIGH",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Wir errichten mehr Radbügel",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0302-A01"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0302-A02",
+          "source_unit_id": "BE-SPD-2026-SU-0302",
+          "source_page": 25,
+          "pdf_pages": [
+            25,
+            26
+          ],
+          "source_locator": "p025:b016@304.72,699.27,548.12,764.04;p026:b003@42.52,69.84,269.39,200.62",
+          "source_text": "bauen Fahrradparkhäuser sowie Bike-and-Ride- Anlagen mit Beleuchtung und Wetterschutz an Mobilitätsknotenpunkten",
+          "source_text_sha256": "1c2d640638e6b3df3b57238265f601e8e05fe76dd19ad3d1188cce218d1fcd90",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0302-A02` / `1c2d640638e6b3df3b57238265f601e8e05fe76dd19ad3d1188cce218d1fcd90` / `bauen Fahrradparkhäuser sowie Bike-and-Ride- Anlagen mit Beleuchtung und Wetterschutz an Mobilitätsknotenpunkten` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_INTERMODAL_ACCESS_SECURITY_AND_WEATHER_RESILIENCE_POTENTIAL / LOCATION_CAPACITY_COST_MAINTENANCE_AND_USAGE_DEPENDENT`; evidence `MEDIUM_HIGH`; reality = occupancy, transfer trips, theft, accessibility, operating cost and spatial distribution.",
+          "fach_source_sha256": "021cb7fde77f1a1e9e834d6ba54c74d5ed0cb2bff22e7473f0cfc73ed7b7b990",
+          "impact_direction": "POSITIVE_INTERMODAL_ACCESS_SECURITY_AND_WEATHER_RESILIENCE_POTENTIAL / LOCATION_CAPACITY_COST_MAINTENANCE_AND_USAGE_DEPENDENT",
+          "evidence_level": "MEDIUM_HIGH",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "bauen Fahrradparkhäuser sowie Bike-and-Ride- Anlagen mit Beleuchtung und Wetterschutz an Mobilitätsknotenpunkten",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0302-A02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0302-A03",
+          "source_unit_id": "BE-SPD-2026-SU-0302",
+          "source_page": 25,
+          "pdf_pages": [
+            25,
+            26
+          ],
+          "source_locator": "p025:b016@304.72,699.27,548.12,764.04;p026:b003@42.52,69.84,269.39,200.62",
+          "source_text": "und entwickeln dafür serielle Typen und Standards.",
+          "source_text_sha256": "a652d2694b3b1fb5c1e826fe6add9ef5293067230b3666382efe8d6bae508d11",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0302-A03` / `a652d2694b3b1fb5c1e826fe6add9ef5293067230b3666382efe8d6bae508d11` / `und entwickeln dafür serielle Typen und Standards.` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_DELIVERY_SPEED_QUALITY_AND_LIFECYCLE_COST_POTENTIAL / LOCAL_FIT_ACCESSIBILITY_PROCUREMENT_COMPETITION_AND_LOCKIN_GUARDS_REQUIRED`; evidence `MEDIUM`; reality = lead time/cost/quality/maintenance and local fit, not number of standards.",
+          "fach_source_sha256": "4b620bda8fbf0438d3217e4248aab2d72ca9b5306cc6abdcd22b3a2199d092ce",
+          "impact_direction": "POSITIVE_DELIVERY_SPEED_QUALITY_AND_LIFECYCLE_COST_POTENTIAL / LOCAL_FIT_ACCESSIBILITY_PROCUREMENT_COMPETITION_AND_LOCKIN_GUARDS_REQUIRED",
+          "evidence_level": "MEDIUM",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "und entwickeln dafür serielle Typen und Standards.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0302-A03"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0302-A04",
+          "source_unit_id": "BE-SPD-2026-SU-0302",
+          "source_page": 25,
+          "pdf_pages": [
+            25,
+            26
+          ],
+          "source_locator": "p025:b016@304.72,699.27,548.12,764.04;p026:b003@42.52,69.84,269.39,200.62",
+          "source_text": "Wir fördern wieder ein Leihradsystem, da es Ordnung schafft und best-möglich moderne, nachhaltige und urbane Mobilität auch dort fördert, wo es sich wirtschaftlich nicht rechnet.",
+          "source_text_sha256": "3146a5fbb0a0dddd224ad4b35bbce9446e8eda12b6801da0a93b04c44531d947",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0302-A04` / `3146a5fbb0a0dddd224ad4b35bbce9446e8eda12b6801da0a93b04c44531d947` / `Wir fördern wieder ein Leihradsystem, da es Ordnung schafft und best-möglich moderne, nachhaltige und urbane Mobilität auch dort fördert, wo es sich wirtschaftlich nicht rechnet.` → `EXPLICIT_FACH_APPROVED`: `AMBIVALENT_POSITIVE_ACCESS_MODE_SHIFT_AND_SPATIAL_SERVICE_POTENTIAL / SUBSIDY_SERVICE_FLOOR_REBALANCING_USAGE_CLUTTER_AND_COUNTERFACTUAL_DEPENDENT`; evidence `MEDIUM_MIXED_NET_MODE_EFFECT`; reality = trips, substitution vs car/transit/walking, coverage, rebalancing, public cost, clutter and user distribution.",
+          "fach_source_sha256": "7be239622d7474281ca12cb76cf69a97a370cbcf8abb6414582c2bcec0bc86d3",
+          "impact_direction": "AMBIVALENT_POSITIVE_ACCESS_MODE_SHIFT_AND_SPATIAL_SERVICE_POTENTIAL / SUBSIDY_SERVICE_FLOOR_REBALANCING_USAGE_CLUTTER_AND_COUNTERFACTUAL_DEPENDENT",
+          "evidence_level": "MEDIUM_MIXED_NET_MODE_EFFECT",
+          "object_kind": "SOURCE_BOUND_EXPLICIT_FACH_OBJECT",
+          "source_excerpt": "Wir fördern wieder ein Leihradsystem, da es Ordnung schafft und best-möglich moderne, nachhaltige und urbane Mobilität auch dort fördert, wo es sich wirtschaftlich nicht rechnet.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0302-A04"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0302-A05",
+          "source_unit_id": "BE-SPD-2026-SU-0302",
+          "source_page": 25,
+          "pdf_pages": [
+            25,
+            26
+          ],
+          "source_locator": "p025:b016@304.72,699.27,548.12,764.04;p026:b003@42.52,69.84,269.39,200.62",
+          "source_text": "Durch erfolgreiche Ermittlungen bei Fahrraddiebstahl reduzieren wir die Anzahl der Delikte und steigern die Aufklärungsrate.",
+          "source_text_sha256": "e1648aea85704ce3ba47b4a4bb910525b81412a19b481de4da6c5368665bb9cf",
+          "source_object_kind": "SOURCE_ATOM",
+          "terminal_fach_state": "NON_EFFECT_EXPECTED_ENFORCEMENT_OUTCOME_AND_CAUSAL_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `BE-SPD-2026-SU-0302-A05` / `e1648aea85704ce3ba47b4a4bb910525b81412a19b481de4da6c5368665bb9cf` / `Durch erfolgreiche Ermittlungen bei Fahrraddiebstahl reduzieren wir die Anzahl der Delikte und steigern die Aufklärungsrate.` → `NON_EFFECT_EXPECTED_ENFORCEMENT_OUTCOME_AND_CAUSAL_CLAIM_REVIEWED` (zero-count). It specifies desired outcomes conditional on already-successful investigations, but no incremental investigative instrument/capacity change. Do not count lower theft or higher clearance as programme effect until a separate action and observations exist.",
+          "fach_source_sha256": "175843dda4bc6b922c3aa1acbd92a0eb9208016855cdbe60bbbc4bf6adc68755",
+          "object_kind": "SOURCE_CONTEXT_GOAL_OR_RATIONALE_OBJECT",
+          "source_excerpt": "Durch erfolgreiche Ermittlungen bei Fahrraddiebstahl reduzieren wir die Anzahl der Delikte und steigern die Aufklärungsrate.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_EXPECTED_ENFORCEMENT_OUTCOME_AND_CAUSAL_CLAIM_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0302-A05"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0291-C01-c65cfe146a8d",
+          "source_unit_id": "BE-SPD-2026-SU-0291",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0291"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b004@42.52,236.75,288.58,301.53",
+          "source_span_utf16": [
+            134,
+            239
+          ],
+          "source_text": "Daher beginnen wir auch mit der Planung einer U-Bahn-Verbindung vom Alexanderplatz nach Hohenschönhausen.",
+          "source_text_sha256": "c65cfe146a8def2653295dd64a5d6cea6dccc35bf33fc4f720ebf677102d27cb",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- New exact child from `SU0291`: `Daher beginnen wir auch mit der Planung einer U-Bahn-Verbindung vom Alexanderplatz nach Hohenschönhausen.` / `c65cfe146a8def2653295dd64a5d6cea6dccc35bf33fc4f720ebf677102d27cb` → `EXPLICIT_FACH_APPROVED`.\n  - WÖk: `AMBIVALENT_POSITIVE_OPTION_VALUE_AND_LONG_TERM_CONNECTIVITY_POTENTIAL / DEMAND_COST_NETWORK_INTEGRATION_CONSTRUCTION_CLIMATE_AND_ALTERNATIVE_COMPARISON_REQUIRED`.\n  - Evidence: `MEDIUM_FOR_PLANNING_TO_PROJECT_READINESS / LOW_FOR_FINAL_CORRIDOR_OUTCOME_AT_THIS_STAGE`.\n  - Chain: planning → project knowledge/option maturity → possible future accessibility/capacity gains; risks are sunk-cost/lock-in, construction/resource burden and crowding out better alternatives.\n  - Reality/falsification: demand, travel-time/accessibility gains, network effects, capex/opex, construction/lifecycle emissions, spatial distribution and an explicit bus/tram/other-alternative counterfactual; planning milestones alone are not outcome.",
+          "fach_source_sha256": "92885bbd4e6161f35a23344d39ce4817e343a6f27ab8d48d849dadea4ebb35a2",
+          "impact_direction": "AMBIVALENT_POSITIVE_OPTION_VALUE_AND_LONG_TERM_CONNECTIVITY_POTENTIAL / DEMAND_COST_NETWORK_INTEGRATION_CONSTRUCTION_CLIMATE_AND_ALTERNATIVE_COMPARISON_REQUIRED",
+          "evidence_level": "MEDIUM_FOR_PLANNING_TO_PROJECT_READINESS / LOW_FOR_FINAL_CORRIDOR_OUTCOME_AT_THIS_STAGE",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Daher beginnen wir auch mit der Planung einer U-Bahn-Verbindung vom Alexanderplatz nach Hohenschönhausen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0291-C01-c65cfe146a8d"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-C01-6e39c01ddd02",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            0,
+            81
+          ],
+          "source_text": "Das Deutschlandticket zählt zu den erfolgreichsten Projekten der Verkehrspolitik.",
+          "source_text_sha256": "6e39c01ddd02d2548fa83940648f19fcb1c4cf11dd25bc100c11a153b4b90f35",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_HISTORICAL_EVALUATIVE_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Das Deutschlandticket zählt zu den erfolgreichsten Projekten der Verkehrspolitik.` / `6e39c01ddd02d2548fa83940648f19fcb1c4cf11dd25bc100c11a153b4b90f35` → `NON_EFFECT_HISTORICAL_EVALUATIVE_CLAIM_REVIEWED`.",
+          "fach_source_sha256": "deb9ce8f322a9edce690be3bfd4418b69ffa68ff84cbbef44289ee07951504cb",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Das Deutschlandticket zählt zu den erfolgreichsten Projekten der Verkehrspolitik.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_HISTORICAL_EVALUATIVE_CLAIM_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-C01-6e39c01ddd02"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-C02-35f58d70ed24",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            82,
+            167
+          ],
+          "source_text": "Es hat viele Menschen zurück in Bus und Bahn gebracht und den ÖPNV einfacher gemacht.",
+          "source_text_sha256": "35f58d70ed242d8643ade01405f47a64c75f503e9b78a470508ea016508a8d73",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_HISTORICAL_CAUSAL_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Es hat viele Menschen zurück in Bus und Bahn gebracht und den ÖPNV einfacher gemacht.` / `35f58d70ed242d8643ade01405f47a64c75f503e9b78a470508ea016508a8d73` → `NON_EFFECT_HISTORICAL_CAUSAL_CLAIM_REVIEWED`.",
+          "fach_source_sha256": "33d19ac2b16c17e5b320e6aca91fffc05a2e08bc86ef9dfb9b94e440ab6aa370",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Es hat viele Menschen zurück in Bus und Bahn gebracht und den ÖPNV einfacher gemacht.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_HISTORICAL_CAUSAL_CLAIM_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-C02-35f58d70ed24"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-A01-C01-4c103cadf0f8",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294-A01"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            168,
+            248
+          ],
+          "source_text": "Deshalb fordern wir von Bund und Ländern, den Preis wieder auf 49 Euro zu senken",
+          "source_text_sha256": "4c103cadf0f8268ee15d9eb692b5644a7a5f04bba90fa9b60c46e795fa5e46a3",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Deshalb fordern wir von Bund und Ländern, den Preis wieder auf 49 Euro zu senken` / `4c103cadf0f8268ee15d9eb692b5644a7a5f04bba90fa9b60c46e795fa5e46a3` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `DEUTSCHLANDTICKET_49_EURO_EXTERNAL_ADOPTION_COMPENSATION_FINANCE_AND_SERVICE_RESPONSE_UNSPECIFIED`. Exact reason: Berlin does not alone determine the nationwide price; adoption, compensation/funding, operator revenue/service response, beneficiary distribution and counterfactual fare are unresolved.",
+          "fach_source_sha256": "1e83781997cfe048e9f67d47b3d22cc3e1fd7a700f7366faf4bbd0d654b983de",
+          "exact_reason_code": "DEUTSCHLANDTICKET_49_EURO_EXTERNAL_ADOPTION_COMPENSATION_FINANCE_AND_SERVICE_RESPONSE_UNSPECIFIED",
+          "exact_reason": "Berlin does not alone determine the nationwide price; adoption, compensation/funding, operator revenue/service response, beneficiary distribution and counterfactual fare are unresolved.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Deshalb fordern wir von Bund und Ländern, den Preis wieder auf 49 Euro zu senken",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-A01-C01-4c103cadf0f8"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-A01-C02-f22491ee0fe2",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294-A01"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            249,
+            338
+          ],
+          "source_text": "Für mehr Sicherheit und Sauberkeit setzen wir zusätzliches Personal, darunter Sozialteams",
+          "source_text_sha256": "f22491ee0fe2af91bcfb97cee8d63c4519a02149e6220fabb3d2c403c64054e4",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Für mehr Sicherheit und Sauberkeit setzen wir zusätzliches Personal, darunter Sozialteams` / `f22491ee0fe2af91bcfb97cee8d63c4519a02149e6220fabb3d2c403c64054e4` → `EXPLICIT_FACH_APPROVED`.\n  - `POSITIVE_SAFETY_CLEANLINESS_AND_SUPPORT_CAPACITY_POTENTIAL / ROLE_TRAINING_COVERAGE_WORKFORCE_AND_RIGHTS_GUARDS_DEPENDENT`; evidence `MEDIUM_MECHANISM`.\n  - Guard role separation, de-escalation, social support vs enforcement, accessibility and fair spatial allocation; reality = incidents, support resolution, cleanliness, perceived safety by group/location, staff retention and adverse displacement, not headcount alone.",
+          "fach_source_sha256": "af36a82e202b73f7097704523def5a7e6e718ebb89136e8fbbf57c49f731c925",
+          "impact_direction": "POSITIVE_SAFETY_CLEANLINESS_AND_SUPPORT_CAPACITY_POTENTIAL / ROLE_TRAINING_COVERAGE_WORKFORCE_AND_RIGHTS_GUARDS_DEPENDENT",
+          "evidence_level": "MEDIUM_MECHANISM",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Für mehr Sicherheit und Sauberkeit setzen wir zusätzliches Personal, darunter Sozialteams",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-A01-C02-f22491ee0fe2"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-C03-3e720cb97491",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            387,
+            486
+          ],
+          "source_text": "Die BVG konzentriert sich als öffentliches Unternehmen zunächst auf die Stabilisierung des Betriebs",
+          "source_text_sha256": "3e720cb974912ec011615d51b4be060319a9f347604dc852fbff8a192557196f",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_OPERATIONAL_GOAL_FRAME_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Die BVG konzentriert sich als öffentliches Unternehmen zunächst auf die Stabilisierung des Betriebs` / `3e720cb974912ec011615d51b4be060319a9f347604dc852fbff8a192557196f` → `NON_EFFECT_OPERATIONAL_GOAL_FRAME_REVIEWED` (zero-count).",
+          "fach_source_sha256": "6d27990eb5d95de800a19d09410a51e3cfdef2ba706f82d7dc796b68f4262d11",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Die BVG konzentriert sich als öffentliches Unternehmen zunächst auf die Stabilisierung des Betriebs",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_OPERATIONAL_GOAL_FRAME_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-C03-3e720cb97491"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-C04-a4c616d3086e",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            499,
+            527
+          ],
+          "source_text": "mehr Kapazitäten für Wartung",
+          "source_text_sha256": "a4c616d3086ea7f8ea094ae46d402015ab60fd1cdf68059905e6144921f170f2",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `mehr Kapazitäten für Wartung` / `a4c616d3086ea7f8ea094ae46d402015ab60fd1cdf68059905e6144921f170f2` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_RELIABILITY_AND_LIFECYCLE_ASSET_PERFORMANCE_POTENTIAL / SKILLED_WORKFORCE_WORKSHOP_SPARES_AND_ASSET_CONDITION_DEPENDENT`; evidence `MEDIUM_HIGH_MECHANISM`; reality = mean distance/time between failures, vehicle availability, maintenance backlog, cancellation hours and lifecycle cost.",
+          "fach_source_sha256": "d24a0c96b30a2be2e52b7b3e8eae4e0020f0271689b3742c1ed31c46ea9b52a0",
+          "impact_direction": "POSITIVE_RELIABILITY_AND_LIFECYCLE_ASSET_PERFORMANCE_POTENTIAL / SKILLED_WORKFORCE_WORKSHOP_SPARES_AND_ASSET_CONDITION_DEPENDENT",
+          "evidence_level": "MEDIUM_HIGH_MECHANISM",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "mehr Kapazitäten für Wartung",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-C04-a4c616d3086e"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-C05-4fd848b27f3a",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            532,
+            572
+          ],
+          "source_text": "die kontinuierliche Fahrzeugbeschaffung.",
+          "source_text_sha256": "4fd848b27f3a0191a702e1ddad3533d49b2770c8ea49afe95f21c58daa4f0f74",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `die kontinuierliche Fahrzeugbeschaffung.` / `4fd848b27f3a0191a702e1ddad3533d49b2770c8ea49afe95f21c58daa4f0f74` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_CAPACITY_RELIABILITY_AND_FLEET_RENEWAL_POTENTIAL / PROCUREMENT_DEPOT_INTEROPERABILITY_FINANCE_AND_LIFECYCLE_DEPENDENT`; evidence `MEDIUM_MECHANISM`; reality = usable fleet capacity/availability, accessibility, energy/lifecycle performance, procurement lead time and cost, not vehicles ordered.",
+          "fach_source_sha256": "ba74865c7eaaf63ff4ba401c456be2971c1fa693dae002431d56405d0cc895bc",
+          "impact_direction": "POSITIVE_CAPACITY_RELIABILITY_AND_FLEET_RENEWAL_POTENTIAL / PROCUREMENT_DEPOT_INTEROPERABILITY_FINANCE_AND_LIFECYCLE_DEPENDENT",
+          "evidence_level": "MEDIUM_MECHANISM",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "die kontinuierliche Fahrzeugbeschaffung.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-C05-4fd848b27f3a"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-C06-e62d80d5c5f6",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            761,
+            818
+          ],
+          "source_text": "Die S-Bahn bleibt rechtlich und betrieblich eine Einheit.",
+          "source_text_sha256": "e62d80d5c5f656e1834c0700154b368e8afa7d0bf250da709b30e9a22240a3e9",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_STATUS_QUO_SYSTEM_CONTINUITY_COMMITMENT_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Die S-Bahn bleibt rechtlich und betrieblich eine Einheit.` / `e62d80d5c5f656e1834c0700154b368e8afa7d0bf250da709b30e9a22240a3e9` → `NON_EFFECT_STATUS_QUO_SYSTEM_CONTINUITY_COMMITMENT_REVIEWED` (zero-count absent a specified change/counterfactual implementation object).",
+          "fach_source_sha256": "035e6f72744f4dc809af3105d9e556846a7341a7ca49a6a169f189e938d074f4",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Die S-Bahn bleibt rechtlich und betrieblich eine Einheit.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_STATUS_QUO_SYSTEM_CONTINUITY_COMMITMENT_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-C06-e62d80d5c5f6"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0294-C07-61ef06f0fdbf",
+          "source_unit_id": "BE-SPD-2026-SU-0294",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0294"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b007@42.52,411.06,291.59,489.04;p025:b008@42.52,498.76,292.97,695.54",
+          "source_span_utf16": [
+            819,
+            930
+          ],
+          "source_text": "Zugleich wirken wir auf die Deutsche Bahn ein, damit Zuverlässigkeit und Pünktlichkeit wieder deutlich steigen.",
+          "source_text_sha256": "61ef06f0fdbfe098b953c2e25d8df1643366fcbb978ab49fa4397ab22fc0a7d5",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Zugleich wirken wir auf die Deutsche Bahn ein, damit Zuverlässigkeit und Pünktlichkeit wieder deutlich steigen.` / `61ef06f0fdbfe098b953c2e25d8df1643366fcbb978ab49fa4397ab22fc0a7d5` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `DB_RELIABILITY_ADVOCACY_EXTERNAL_CONTROL_MECHANISM_TARGET_AND_DELIVERY_PATH_UNSPECIFIED`. Exact reason: the desired outcome is clear, but the Berlin lever, DB commitment, target metric/baseline, resources and implementation route are not.",
+          "fach_source_sha256": "097d7beb62b780f04b040c4a4cbdddbb44ee8a0e4db191182d005282a83e3aa5",
+          "exact_reason_code": "DB_RELIABILITY_ADVOCACY_EXTERNAL_CONTROL_MECHANISM_TARGET_AND_DELIVERY_PATH_UNSPECIFIED",
+          "exact_reason": "the desired outcome is clear, but the Berlin lever, DB commitment, target metric/baseline, resources and implementation route are not.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Zugleich wirken wir auf die Deutsche Bahn ein, damit Zuverlässigkeit und Pünktlichkeit wieder deutlich steigen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0294-C07-61ef06f0fdbf"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0298-C01-71ae605b0875",
+          "source_unit_id": "BE-SPD-2026-SU-0298",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0298"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b012@304.72,169.65,547.24,326.83",
+          "source_span_utf16": [
+            0,
+            103
+          ],
+          "source_text": "Ein Drittel aller Wege legen die Berliner*innen zu Fuß zurück – kostenlos, umweltfreundlich und gesund.",
+          "source_text_sha256": "71ae605b0875224a28e0685601c3ea58607474deaf74bcf69d4d03e3ce5a377c",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "NON_EFFECT_BASELINE_AND_BENEFIT_CLAIM_REVIEWED",
+          "counts_as_effect_object": false,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Ein Drittel aller Wege legen die Berliner*innen zu Fuß zurück – kostenlos, umweltfreundlich und gesund.` / `71ae605b0875224a28e0685601c3ea58607474deaf74bcf69d4d03e3ce5a377c` → `NON_EFFECT_BASELINE_AND_BENEFIT_CLAIM_REVIEWED` (zero-count).",
+          "fach_source_sha256": "aa2f4eabdb1030f53f9391f7833850bfb60cd97859e0297f3c12a114ff4c8984",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Ein Drittel aller Wege legen die Berliner*innen zu Fuß zurück – kostenlos, umweltfreundlich und gesund.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "NON_EFFECT_CONTEXT_REVIEWED",
+          "authoritative_terminal_fach_state": "NON_EFFECT_BASELINE_AND_BENEFIT_CLAIM_REVIEWED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0298-C01-71ae605b0875"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0298-A01-C01-dca48fc2047d",
+          "source_unit_id": "BE-SPD-2026-SU-0298",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0298-A01"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b012@304.72,169.65,547.24,326.83",
+          "source_span_utf16": [
+            104,
+            243
+          ],
+          "source_text": "Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen",
+          "source_text_sha256": "dca48fc2047df0bd09ea5e36bb6de0893a038025060d8850ea2b6aab93b3336d",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "  - `Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen` / `dca48fc2047df0bd09ea5e36bb6de0893a038025060d8850ea2b6aab93b3336d` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_PEDESTRIAN_ACCESS_SAFETY_AND_HEALTH_POTENTIAL / SITE_DESIGN_MAINTENANCE_SPACE_AND_UNIVERSAL_ACCESS_DEPENDENT`; evidence `HIGH_MECHANISM`; reality = accessible continuous width/condition, falls/crashes, lighting, route continuity, user access by disability/age and lifecycle maintenance.",
+          "fach_source_sha256": "99a3aba2d83769be9eabf859c83744330ce10fd22d832f03dd113808a2e4d6d5",
+          "impact_direction": "POSITIVE_PEDESTRIAN_ACCESS_SAFETY_AND_HEALTH_POTENTIAL / SITE_DESIGN_MAINTENANCE_SPACE_AND_UNIVERSAL_ACCESS_DEPENDENT",
+          "evidence_level": "HIGH_MECHANISM",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Das fördern wir mit breiten, gut beleuchteten, barrierefreien und sicheren Gehwegen zu jeder Jahreszeit und bei allen Witterungsbedingungen",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0298-A01-C01-dca48fc2047d"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0298-A01-C02-3c7adca98143",
+          "source_unit_id": "BE-SPD-2026-SU-0298",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0298-A01"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b012@304.72,169.65,547.24,326.83",
+          "source_span_utf16": [
+            244,
+            307
+          ],
+          "source_text": "sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.",
+          "source_text_sha256": "3c7adca981431822c001ad287c9df6fbf8b8c35131bfe742bce78f52813002ea",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "  - `sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.` / `3c7adca981431822c001ad287c9df6fbf8b8c35131bfe742bce78f52813002ea` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_CROSSING_SAFETY_AND_NETWORK_ACCESS_POTENTIAL / LOCATION_DESIGN_VISIBILITY_SPEED_AND_CONFLICT_DEPENDENT`; evidence `HIGH_MECHANISM`; reality = conflict/crash/near-miss and crossing delay/accessibility by location.",
+          "fach_source_sha256": "2ed179538537d6a0869573131484b524fef9ac8fbf9d503b00b3550985b94355",
+          "impact_direction": "POSITIVE_CROSSING_SAFETY_AND_NETWORK_ACCESS_POTENTIAL / LOCATION_DESIGN_VISIBILITY_SPEED_AND_CONFLICT_DEPENDENT",
+          "evidence_level": "HIGH_MECHANISM",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "sowie deutlich mehr sicheren Querungen, auch in Fahrradstraßen.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0298-A01-C02-3c7adca98143"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0298-C02-a1655d8e931d",
+          "source_unit_id": "BE-SPD-2026-SU-0298",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0298"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b012@304.72,169.65,547.24,326.83",
+          "source_span_utf16": [
+            308,
+            403
+          ],
+          "source_text": "Auch die Instandhaltung der Fußwege einschließlich der Beleuchtung wird auskömmlich finanziert.",
+          "source_text_sha256": "a1655d8e931dea92c7c1c4db58b32f0974354d1d2e405a7460519dc068c3e81a",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Auch die Instandhaltung der Fußwege einschließlich der Beleuchtung wird auskömmlich finanziert.` / `a1655d8e931dea92c7c1c4db58b32f0974354d1d2e405a7460519dc068c3e81a` → `EXPLICIT_FACH_APPROVED`: `POSITIVE_ASSET_CONDITION_SAFETY_AND_LIFECYCLE_COST_POTENTIAL / NEED_BASED_ALLOCATION_AMOUNT_AND_DELIVERY_DEPENDENT`; evidence `MEDIUM_HIGH_MECHANISM`; reality = defect backlog, repair times, accessibility and lighting availability, lifecycle cost, spatial equity.",
+          "fach_source_sha256": "fe067a2673bd70a5a035d6e85136c32151c106ff344c99280e53bf678d62bb47",
+          "impact_direction": "POSITIVE_ASSET_CONDITION_SAFETY_AND_LIFECYCLE_COST_POTENTIAL / NEED_BASED_ALLOCATION_AMOUNT_AND_DELIVERY_DEPENDENT",
+          "evidence_level": "MEDIUM_HIGH_MECHANISM",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Auch die Instandhaltung der Fußwege einschließlich der Beleuchtung wird auskömmlich finanziert.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0298-C02-a1655d8e931d"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0298-C03-92719a2584a7",
+          "source_unit_id": "BE-SPD-2026-SU-0298",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0298"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b012@304.72,169.65,547.24,326.83",
+          "source_span_utf16": [
+            404,
+            469
+          ],
+          "source_text": "Alle Ampeln rüsten wir mit taktilen und akustischen Signalen aus.",
+          "source_text_sha256": "92719a2584a720bd1212fc3775680c503e9c5eb517aad67713d64bb7b662cbc3",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- `Alle Ampeln rüsten wir mit taktilen und akustischen Signalen aus.` / `92719a2584a720bd1212fc3775680c503e9c5eb517aad67713d64bb7b662cbc3` → `EXPLICIT_FACH_APPROVED`: `STRONG_POSITIVE_ACCESSIBILITY_AND_CROSSING_SAFETY_POTENTIAL / STANDARD_COMPLIANCE_MAINTENANCE_AND_COMPLETE_COVERAGE_DEPENDENT`; evidence `HIGH_MECHANISM`; reality = functional coverage, outage/repair, safe independent crossings and user accessibility, not installations purchased.",
+          "fach_source_sha256": "28a5248cee63216b5e49f92ebcd1f740f793892e6c59ce60ab3ac25f2dd24e0f",
+          "impact_direction": "STRONG_POSITIVE_ACCESSIBILITY_AND_CROSSING_SAFETY_POTENTIAL / STANDARD_COMPLIANCE_MAINTENANCE_AND_COMPLETE_COVERAGE_DEPENDENT",
+          "evidence_level": "HIGH_MECHANISM",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Alle Ampeln rüsten wir mit taktilen und akustischen Signalen aus.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0298-C03-92719a2584a7"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0299-A06"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_span_utf16": [
+            553,
+            696
+          ],
+          "source_text": "Wir verdoppeln die Sondernutzungsgebühr für die Nutzung des öffentlichen Straßenraums für E-Scooter Betreiberfirmen innerhalb des S-Bahn- Rings",
+          "source_text_sha256": "ffb78ed16a37b7f8d9a8d519530445711066b0119f357dff5b200974865b0689",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "  - `Wir verdoppeln die Sondernutzungsgebühr für die Nutzung des öffentlichen Straßenraums für E-Scooter Betreiberfirmen innerhalb des S-Bahn- Rings` / `ffb78ed16a37b7f8d9a8d519530445711066b0119f357dff5b200974865b0689` → `EXPLICIT_FACH_APPROVED`: `AMBIVALENT_PUBLIC_SPACE_COST_INTERNALISATION_AND_OPERATOR_INCENTIVE_EFFECT / PASS_THROUGH_SUPPLY_COMPLIANCE_AND_ACCESS_DEPENDENT`; evidence `MEDIUM_ECONOMIC_MECHANISM`; reality = operator supply, prices, parking compliance, public-space burden and affected low-income users.",
+          "fach_source_sha256": "f927bb1f7699be35272ff0ffee7192746d475ab0d8dc00970f629490911c9aec",
+          "impact_direction": "AMBIVALENT_PUBLIC_SPACE_COST_INTERNALISATION_AND_OPERATOR_INCENTIVE_EFFECT / PASS_THROUGH_SUPPLY_COMPLIANCE_AND_ACCESS_DEPENDENT",
+          "evidence_level": "MEDIUM_ECONOMIC_MECHANISM",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Wir verdoppeln die Sondernutzungsgebühr für die Nutzung des öffentlichen Straßenraums für E-Scooter Betreiberfirmen innerhalb des S-Bahn- Rings",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299-A06-C01-ffb78ed16a37"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-A06-C02-be577700ead3",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0299-A06"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_span_utf16": [
+            697,
+            748
+          ],
+          "source_text": "und weiten die Gebührenpflicht auf ganz Berlin aus.",
+          "source_text_sha256": "be577700ead30600c9e35d4e70fb20cf9f31bc2b7edb9ef0a0dcff0a44d63569",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "  - `und weiten die Gebührenpflicht auf ganz Berlin aus.` / `be577700ead30600c9e35d4e70fb20cf9f31bc2b7edb9ef0a0dcff0a44d63569` → `EXPLICIT_FACH_APPROVED`: `AMBIVALENT_SPATIAL_COST_INTERNALISATION_AND_RULE_EQUALISATION_EFFECT / OUTER_DISTRICT_SERVICE_VIABILITY_PASS_THROUGH_AND_BURDEN_DEPENDENT`; reality = same outcomes disaggregated inner/outer districts.",
+          "fach_source_sha256": "b62fc8dbf3887ae0e1adc77a4640303e3cc1bfb38c8c3bfd43acf0bb9ab5d2cf",
+          "impact_direction": "AMBIVALENT_SPATIAL_COST_INTERNALISATION_AND_RULE_EQUALISATION_EFFECT / OUTER_DISTRICT_SERVICE_VIABILITY_PASS_THROUGH_AND_BURDEN_DEPENDENT",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "und weiten die Gebührenpflicht auf ganz Berlin aus.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0299-A06-C02-be577700ead3"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0302-C01-40c8c940c381",
+          "source_unit_id": "BE-SPD-2026-SU-0302",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0302"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25,
+            26
+          ],
+          "source_locator": "p025:b016@304.72,699.27,548.12,764.04;p026:b003@42.52,69.84,269.39,200.62",
+          "source_span_utf16": [
+            193,
+            321
+          ],
+          "source_text": "Auch in Brandenburg setzen wir uns für sichere Abstellanlagen an S-Bahnhöfen ein, damit Pendler*innen leichter umsteigen können.",
+          "source_text_sha256": "40c8c940c38149686a526329e7d64cee644cdf964bf38f513f0ef8a2c82f9f65",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5558175710,
+          "authoritative_fach_text": "- New exact child from `SU0302`: `Auch in Brandenburg setzen wir uns für sichere Abstellanlagen an S-Bahnhöfen ein, damit Pendler*innen leichter umsteigen können.` / `40c8c940c38149686a526329e7d64cee644cdf964bf38f513f0ef8a2c82f9f65` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; code `BRANDENBURG_SBAHN_BIKE_PARKING_EXTERNAL_ADOPTION_LOCATIONS_SCALE_FINANCE_AND_OPERATOR_UNSPECIFIED`. Exact reason: external adoption, stations/quantity, operator, finance, land and implementation path are not bound; Berlin advocacy cannot be counted as Brandenburg infrastructure outcome.",
+          "fach_source_sha256": "833433e2bec68eed9bd7b14dfe8dd8c5a6da13e8a7823ce2f7b2d10c259e5f5e",
+          "exact_reason_code": "BRANDENBURG_SBAHN_BIKE_PARKING_EXTERNAL_ADOPTION_LOCATIONS_SCALE_FINANCE_AND_OPERATOR_UNSPECIFIED",
+          "exact_reason": "external adoption, stations/quantity, operator, finance, land and implementation path are not bound; Berlin advocacy cannot be counted as Brandenburg infrastructure outcome.",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Auch in Brandenburg setzen wir uns für sichere Abstellanlagen an S-Bahnhöfen ein, damit Pendler*innen leichter umsteigen können.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "authoritative_terminal_fach_state": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5558175710",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-authoritative-handoff.md",
+            "file_sha256": "9889ee1ba703a4f9959fca5f249f9013b586a0f56335f222e5511fe3152d5fa5"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5558175710; exact object BE-SPD-2026-SU-0302-C01-40c8c940c381"
+        },
+        {
+          "object_id": "BE-SPD-2026-SU-0299-C01-352663d0d94b",
+          "source_unit_id": "BE-SPD-2026-SU-0299",
+          "parent_object_ids": [
+            "BE-SPD-2026-SU-0299"
+          ],
+          "source_page": 25,
+          "pdf_pages": [
+            25
+          ],
+          "source_locator": "p025:b013@304.72,336.55,548.79,559.73",
+          "source_span_utf16": [
+            128,
+            201
+          ],
+          "source_text": "Wir sorgen dafür, dass sie nicht mehr auf Gehwegen genutzt werden können.",
+          "source_text_sha256": "352663d0d94b92249f85d3d5476e3744ebbbe1a43d432ad54f35d5e054a1f0d5",
+          "source_object_kind": "DETERMINISTIC_EXACT_SPAN_CHILD",
+          "terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "counts_as_effect_object": true,
+          "batch_issue_comment_id": 5558175710,
+          "fach_issue_comment_id": 5559328151,
+          "authoritative_fach_text": "## WÖk AUTHORITATIVE FACH SUPPLEMENT — Berlin SPD P25 / SU0299 missing sidewalk-use clause\n\nThis is a **finite supplement only** to the existing authoritative P25 handoff #240 `5558175710`, triggered by the exact source-coverage stop #240 `5559103240`. **All existing P25 Fach decisions remain unchanged.** This comment authorises exactly one additional source-bound child object and no other re-authoring.\n\n### Exact source binding\n\n- Artifact: `BE-AGH-2026-SPD-WAHLPROGRAMM`\n- Canonical PDF SHA-256: `379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9`\n- Physical page: P25, right column, E-Scooter/Leihräder paragraph\n- Parent source unit: `BE-SPD-2026-SU-0299`\n- Parent locator: `p025:b013@304.72,336.55,548.79,559.73`\n- Parent source-unit SHA-256: `bc5f7f99e0c8f701477e4b534f07ca30b40582d17f97ca87e9f88553d3864d94`\n- Exact UTF-16 span in canonical SU0299: `[128,201)`\n- **Exact child text:** `Wir sorgen dafür, dass sie nicht mehr auf Gehwegen genutzt werden können.`\n- **Exact child SHA-256:** `352663d0d94b92249f85d3d5476e3744ebbbe1a43d432ad54f35d5e054a1f0d5`\n\n### Authoritative object-specific Fach decision\n\n`terminal_fach_state = EXPLICIT_FACH_APPROVED`\n\n`counts_as_effect_object = true`\n\n`impact_direction = POSITIVE_PEDESTRIAN_SAFETY_ACCESSIBILITY_AND_SIDEWALK_FUNCTION_POTENTIAL / EXISTING_LEGAL_BASELINE_ENFORCEMENT_TECHNICAL_IMPLEMENTATION_AND_FALSE_BLOCKING_DEPENDENT`\n\n`materiality = MEDIUM_LOCAL / POTENTIALLY_HIGH_FOR_VULNERABLE_PEDESTRIANS`\n\n`evidence = MEDIUM_HIGH_MECHANISM / IMPLEMENTATION_INSTRUMENT_UNSPECIFIED`\n\n### WÖk rationale\n\nRead in its exact paragraph context, `sie` refers to the immediately named E-Scooter and rental-bike sharing vehicles. The sentence therefore adds a distinct operational objective: prevent their use on ordinary pedestrian sidewalks. That has a direct plausible pathway to fewer pedestrian/vehicle conflicts and better usable sidewalk space, with particular relevance for people with visual or mobility impairments, older people, children and other pedestrians who depend on predictable unobstructed pedestrian space.\n\nThe positive direction is **potential, not an implementation claim**. The programme sentence does not state how the restriction will be made effective (for example operator permit conditions, technical no-ride/geofencing controls, enforcement, or another instrument), so delivery effectiveness must remain conditional.\n\n### Current-law / competence baseline\n\nThis is **not** treated as creating a wholly new substantive right or blanket prohibition. Under the current federal baseline, ordinary pedestrian sidewalks are already generally not lawful riding space for E-Scooters, and ordinary signed Gehwege are reserved for pedestrian traffic unless another traffic mode is expressly permitted. Relevant current rules include eKFV §10 and StVO Anlage 2, Zeichen 239. Therefore the incremental WÖk effect here is primarily **effective prevention/compliance/enforcement or technical implementation of an existing protection boundary**, not the mere existence of the legal rule.\n\nOfficial current-law references:\n- https://www.gesetze-im-internet.de/ekfv/__10.html\n- https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html\n\n### A → M → ΔZ → R\n\n`A` effective operational prevention of E-Scooter/rental-bike use on ordinary pedestrian sidewalks\n→ `M` fewer vehicle-pedestrian interactions/conflicts on pedestrian-only space and clearer behavioural boundaries\n→ `ΔZ` potentially fewer near-misses/incidents and more predictable independent pedestrian accessibility\n→ `R` Mensch: safety/accessibility; Demokratie/öffentliche Hand: enforceable public-space rules; environmental/mobility effects remain secondary and must not be inferred from this clause alone.\n\n### Distribution / risks / non-compensation\n\nPrimary beneficiaries: pedestrians, especially mobility-/vision-impaired people, older people and children. Potential burdens: sharing users and operators if technical controls are inaccurate or safe alternative routes/parking/service areas are inadequate.\n\nDo not compensate away pedestrian safety/accessibility with aggregate sharing usage, and do not count reduced sharing use automatically as a negative impact. Conversely, do not count the restriction as successful merely because a technical block exists.\n\nMaterial risks/guards:\n- false-positive geofencing or location error;\n- displacement onto unsafe carriageway/cycle-space conditions;\n- inconsistent enforcement between districts/operators;\n- accessibility/service loss where lawful alternatives are absent;\n- privacy/data-minimisation concerns if continuous location enforcement is used.\n\n### Reality / falsification\n\nReality indicators should distinguish this clause from the separately approved **parking/end-of-trip** rules in SU0299:\n- observed riding/use incidents on ordinary pedestrian sidewalks;\n- pedestrian conflict / near-miss / crash indicators where available;\n- accessibility/safety complaints, especially from vulnerable pedestrian groups;\n- operator compliance and enforcement outcomes;\n- technical false-block / false-allow rates if digital controls are used;\n- safe-route displacement effects and user burden.\n\n`FALSIFICATION_TRIGGER`: formal/technical restriction introduced but sidewalk-use violations/conflicts do not materially fall, or false blocking / unsafe displacement creates material new harms.\n\n### Exact child materialisation authority\n\nCodeX is explicitly authorised to materialise **this exact sentence only** as one deterministic child of `BE-SPD-2026-SU-0299`, using the existing stable child-ID convention derived mechanically from the exact text/hash above. Do **not** recycle an existing atom ID onto this text. Preserve parent/child lineage and the exact source locator/span/hash. No semantic splitting of this sentence is authorised.\n\nThis supplement closes only the finite missing-clause Fach authority identified in #240 `5559103240`. It does **not** reopen or alter any other P25 decision, does not authorise P26 / `SU0303+`, and adds no DNS mapping, Recommendation, score or party-wide judgement.\n\n`NO_NEW_VERCEL_BUILD=true`; `PARLIAMENT_RELEASE_APPROVAL=NOT_GRANTED`. No Vercel action is authorised by this Fach supplement.\n",
+          "fach_source_sha256": "287d2a729b664c96a51e0dbb281b8a4dd89d62baa8a9a1f9db49cc8fef9d9404",
+          "impact_direction": "POSITIVE_PEDESTRIAN_SAFETY_ACCESSIBILITY_AND_SIDEWALK_FUNCTION_POTENTIAL / EXISTING_LEGAL_BASELINE_ENFORCEMENT_TECHNICAL_IMPLEMENTATION_AND_FALSE_BLOCKING_DEPENDENT",
+          "materiality": "MEDIUM_LOCAL / POTENTIALLY_HIGH_FOR_VULNERABLE_PEDESTRIANS",
+          "evidence_level": "MEDIUM_HIGH_MECHANISM / IMPLEMENTATION_INSTRUMENT_UNSPECIFIED",
+          "object_kind": "DETERMINISTIC_SEGMENTATION_REPLACEMENT",
+          "source_excerpt": "Wir sorgen dafür, dass sie nicht mehr auf Gehwegen genutzt werden können.",
+          "source_state": "SOURCE_BOUND_VERIFIED",
+          "segmentation_state": "OBJECT_BOUNDARY_VERIFIED",
+          "fach_state": "EXPLICIT_FACH_APPROVED",
+          "authoritative_terminal_fach_state": "EXPLICIT_FACH_APPROVED",
+          "materialization_mode": "LOSSLESS_VERBATIM_HANDOFF_SNAPSHOT",
+          "fach_handoff": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5559328151",
+          "fach_handoff_snapshot": {
+            "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-spd-p25-su0299-supplement.md",
+            "file_sha256": "287d2a729b664c96a51e0dbb281b8a4dd89d62baa8a9a1f9db49cc8fef9d9404"
+          },
+          "fach_handoff_locator": "Issue #240 comment 5559328151; exact object BE-SPD-2026-SU-0299-C01-352663d0d94b"
         }
       ],
       "remaining_review_envelopes": [
-        {
-          "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_025",
-          "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
-          "source_locator": "PDF page 25 of 66",
-          "source_state": "FINAL_SOURCE_ARTIFACT_VERIFIED",
-          "segmentation_state": "SEGMENTATION_REVIEW_REQUIRED",
-          "fach_state": "GENUINE_FACH_REVIEW_REQUIRED",
-          "effect_bearing_status": "NOT_YET_CLASSIFIED",
-          "counts_as_effect_object": false,
-          "exact_reason": "No exhaustive source-bound atomic Fach ledger exists for this frozen page in issue #240, the canonical six-theme stock, or merged Berlin work; the six-theme review explicitly disclaims full-programme completeness. Fach must first classify the page's source units as effect-bearing or non-effect context and review every effect-bearing unit."
-        },
         {
           "object_id": "BE-AGH-2026-SPD-WAHLPROGRAMM:PDF_PAGE_026",
           "object_kind": "PHYSICAL_PDF_PAGE_REVIEW_ENVELOPE",
@@ -37104,24 +39269,27 @@
       ],
       "remaining_review_objects": [],
       "protected_fach_scope": {
-        "physical_pages": "P1-P24",
+        "physical_pages": "P1-P25",
         "predecessor_physical_pages": "P1-P21",
         "protected_cross_page_object": "BE-SPD-2026-SU-0247",
         "p22_materialized_terminal_records": 36,
         "p23_materialized_terminal_records": 74,
         "p24_materialized_terminal_records": 68,
+        "p25_materialized_terminal_records": 60,
         "materialized_page_set": [
           22,
           23,
-          24
+          24,
+          25
         ],
         "consumed_cross_page_objects": [
           "BE-SPD-2026-SU-0280",
-          "BE-SPD-2026-SU-0290"
+          "BE-SPD-2026-SU-0290",
+          "BE-SPD-2026-SU-0302"
         ],
         "next_unreviewed_source_order_frontier": {
-          "physical_page": 25,
-          "source_unit_from": "BE-SPD-2026-SU-0291"
+          "physical_page": 26,
+          "source_unit_from": "BE-SPD-2026-SU-0303"
         },
         "preservation_authority": {
           "path": "woek-parlament-app/data/state-programmes/source-integrity/berlin-2026-spd-fach-return-v1.json",
@@ -50788,5 +52956,5 @@
     "vercel_action_triggered": false
   },
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
-  "descriptor_sha256": "04e03864e35944488001b4af826c56e7881df822a2819871cd3453f49355cd8f"
+  "descriptor_sha256": "b7e969e52cab07580957500db5c91c95292cf95bf5067a1ae3638aff3184a0bc"
 }
