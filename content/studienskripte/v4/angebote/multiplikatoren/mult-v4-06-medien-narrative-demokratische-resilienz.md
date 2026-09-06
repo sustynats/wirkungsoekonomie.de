@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-06-medien-narrative-demokratische-resilienz.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/multiplikatoren/lectures/mult-v4-06-medien-narrative-demokratische-resilienz.md curriculum=4.0 sanitized=true -->
 # MULT-V4-06 · Medien, Narrative und demokratische Resilienz
 
 **lecture_id:** `WOEK-MP-V4-006`  
@@ -74,3 +74,34 @@ Sprache wirkt nicht magisch. Aber sie ist auch nicht folgenlos. Dazwischen liegt
 
 ## Version / Änderungsgrund
 Version 4.0 · Stand 21.08.2026. Neu gefasst auf Basis des vollständigen Legacy-Reaudits B04 und des WÖk-Begriffs-/Methodenstands v1.5.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Medienwirkung als Hypothese mit mehreren Übergängen betrachten
+
+Ein Narrativ kann Aufmerksamkeit lenken, Deutungen nahelegen und bestimmte Handlungsoptionen plausibler erscheinen lassen. Ob dies bei einem konkreten Publikum tatsächlich geschieht, hängt unter anderem von Vorerfahrungen, Situation, Vertrauen, konkurrierenden Informationen und Möglichkeiten zum Handeln ab. Deshalb wird von Wirkungspotenzial, Resonanzraum und Wirkpfad gesprochen, solange die tatsächliche Zustandsveränderung nicht hinreichend belegt ist.
+
+Reichweite ist dabei eine Größe der Verbreitung. Sie belegt weder Verständnis noch Überzeugung oder Verhalten. Eine hohe Interaktionszahl kann Zustimmung, Widerspruch, Neugier oder Empörung enthalten. Die WÖk darf daraus keinen automatischen Wirkungsnachweis und keine Bewertung des moralischen Wertes der erreichten Menschen ableiten.
+
+Demokratische Resilienz wird hier als Fähigkeit von Verfahren und Beteiligten betrachtet, Information zu prüfen, Widerspruch zu ermöglichen und Schutzrechte zu wahren. Der Kurs begründet keine Sprachpolizei und keinen Score für Personen, Parteien oder zulässige Meinungen. Prüfbar sind konkrete Aussagen, dokumentierte Praktiken und nachvollziehbare mögliche Folgen.
+
+### Durchgearbeiteter Fall: ein stark verbreiteter Ausschnitt
+
+Ein fiktiver kurzer Videoausschnitt verbreitet sich mit der Behauptung, eine öffentliche Stelle habe eine bestimmte Entscheidung bereits endgültig getroffen. Im vollständigen Mitschnitt wird jedoch nur eine noch zu prüfende Option erläutert. Die erste fachliche Aufgabe besteht darin, diese Kontextabweichung zu belegen. Dafür sind Originalmaterial, Zeitpunkt und die betreffende Passage entscheidend.
+
+Der Multiplikator kann eine verständliche Einordnung erstellen: Was wurde tatsächlich gesagt, welche Entscheidung steht noch aus und wo ist der vollständige Kontext zugänglich? Er muss keine unbelegte Aussage über die Absicht aller weiterleitenden Personen machen. Auch eine scharf formulierte Kritik an einer öffentlichen Entscheidung wird nicht allein wegen ihrer Schärfe als Manipulation eingestuft.
+
+Ob die Einordnung Fehlvorstellungen reduziert, wird gesondert geprüft. Zugriffe auf die Korrekturseite zeigen zunächst Nutzung. Eine kleine Verständnisabfrage könnte Hinweise liefern, hat aber Auswahl- und Messgrenzen. Eine gesamtgesellschaftliche Resilienzwirkung lässt sich aus diesen Daten allein nicht ableiten. Der Bericht unterscheidet daher Korrekturhandlung, beobachtete Reaktion und weitergehende Wirkungshypothese.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle eine Fallkarte mit Behauptung, Originalkontext, möglichem Wirkpfad, belastbarer Korrektur und offener Wirkungsfrage. Eine gute Karte enthält keine Personenrangliste und keinen Automatismus „viel Reichweite gleich viel Schaden“. Sie begründet, warum die konkret fehlende Information für die Interpretation wesentlich ist.
+
+Formuliere anschließend eine sachliche Kurzantwort, die auch ohne Zustimmung zur WÖk nachvollziehbar ist. Der Lernerfolg zeigt sich darin, dass Quellenprüfung, zulässige Kritik, Schutzgrenzen und Unsicherheit gleichzeitig berücksichtigt werden. Eine erfolgreiche Vermittlung muss nicht jede Meinungsverschiedenheit auflösen.

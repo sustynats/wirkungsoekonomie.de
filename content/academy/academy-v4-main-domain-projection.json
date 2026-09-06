@@ -6,14 +6,14 @@
   "public_master": {
     "manifest": "content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json",
     "source_repo": "sustynats/woek-akademie-app",
-    "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
+    "source_sha": "ee7fec6b8a738b78bda9b989eba252963a325daf",
     "curriculum_manifest_path": "content/lehrgaenge/akademie/curriculum-v4/CURRICULUM_V4_MANIFEST.json",
-    "curriculum_manifest_git_blob_sha": "cb9c2d1c1053d2998919d881c660c17575fe011a",
+    "curriculum_manifest_git_blob_sha": "f31ee16492b245b59c345b5c08b74ec8e0659f72",
     "assessment_blueprint_path": "content/lehrgaenge/akademie/curriculum-v4/ASSESSMENT_V4_BLUEPRINT.json",
     "assessment_blueprint_git_blob_sha": "6e8bd4f714f0dd0d6af65f3a10ee801c8bd2c856"
   },
   "terminology": {
-    "authored_baseline": "1.6",
+    "authored_baseline": "1.7",
     "current_release_reference": "1.7",
     "current_release_commit": "969a98bbe0f66023031e46470247d98324044422"
   },
@@ -37,127 +37,575 @@
       "part_order": 1,
       "title": "Grundverständnis",
       "modules": [
-        {"module_code":"G1.1","title":"Was ist Wirkungsökonomie?","lecture_codes":["V01","V02","V03"]},
-        {"module_code":"G1.2","title":"Erfolg und Zukunft","lecture_codes":["V04","V05","V06"]},
-        {"module_code":"G1.3","title":"Mensch, Planet und Demokratie","lecture_codes":["V07","V08","V09"]},
-        {"module_code":"G1.4","title":"Wirkung statt bloßer Absicht","lecture_codes":["V10","V11","V12"]}
+        {
+          "module_code": "G1.1",
+          "title": "Was ist Wirkungsökonomie?",
+          "lecture_codes": [
+            "V01",
+            "V02",
+            "V03"
+          ]
+        },
+        {
+          "module_code": "G1.2",
+          "title": "Erfolg und Zukunft",
+          "lecture_codes": [
+            "V04",
+            "V05",
+            "V06"
+          ]
+        },
+        {
+          "module_code": "G1.3",
+          "title": "Mensch, Planet und Demokratie",
+          "lecture_codes": [
+            "V07",
+            "V08",
+            "V09"
+          ]
+        },
+        {
+          "module_code": "G1.4",
+          "title": "Wirkung statt bloßer Absicht",
+          "lecture_codes": [
+            "V10",
+            "V11",
+            "V12"
+          ]
+        }
       ]
     },
     {
       "part_order": 2,
       "title": "Wirkungskompetenz: Problem, Ziel und Kausalität",
       "modules": [
-        {"module_code":"G2.1","title":"Problem, Ziel, Wirkpfad und Evidenz","lecture_codes":["V13","V14","V15"]},
-        {"module_code":"G2.2","title":"Wirkungsräume lesen","lecture_codes":["V16","V17","V18"]},
-        {"module_code":"G2.3","title":"Wirkmechanismus und Resonanz","lecture_codes":["V19","V20","V21"]},
-        {"module_code":"G2.4","title":"Verantwortlich kommunizieren","lecture_codes":["V22","V23","V24"]}
+        {
+          "module_code": "G2.1",
+          "title": "Problem, Ziel, Wirkpfad und Evidenz",
+          "lecture_codes": [
+            "V13",
+            "V14",
+            "V15"
+          ]
+        },
+        {
+          "module_code": "G2.2",
+          "title": "Wirkungsräume lesen",
+          "lecture_codes": [
+            "V16",
+            "V17",
+            "V18"
+          ]
+        },
+        {
+          "module_code": "G2.3",
+          "title": "Wirkmechanismus und Resonanz",
+          "lecture_codes": [
+            "V19",
+            "V20",
+            "V21"
+          ]
+        },
+        {
+          "module_code": "G2.4",
+          "title": "Verantwortlich kommunizieren",
+          "lecture_codes": [
+            "V22",
+            "V23",
+            "V24"
+          ]
+        }
       ]
     },
     {
       "part_order": 3,
       "title": "Referenzrahmen, Daten und Bewertung",
       "modules": [
-        {"module_code":"G3.1","title":"Referenzrahmen: Agenda 2030, SDGs, SDG+","lecture_codes":["V25","V26","V27"]},
-        {"module_code":"G3.2","title":"Indikatoren, Register und Daten","lecture_codes":["V28","V29","V30"]},
-        {"module_code":"G3.3","title":"Bewertungsprofile, NWI und T-SROI","lecture_codes":["V31","V32","V33"]},
-        {"module_code":"G3.4","title":"Reverse Merit Order und Nichtkompensation","lecture_codes":["V34","V35","V36"]}
+        {
+          "module_code": "G3.1",
+          "title": "Referenzrahmen: Agenda 2030, SDGs, SDG+",
+          "lecture_codes": [
+            "V25",
+            "V26",
+            "V27"
+          ]
+        },
+        {
+          "module_code": "G3.2",
+          "title": "Indikatoren, Register und Daten",
+          "lecture_codes": [
+            "V28",
+            "V29",
+            "V30"
+          ]
+        },
+        {
+          "module_code": "G3.3",
+          "title": "Bewertungsprofile, NWI und T-SROI",
+          "lecture_codes": [
+            "V31",
+            "V32",
+            "V33"
+          ]
+        },
+        {
+          "module_code": "G3.4",
+          "title": "Reverse Merit Order und Nichtkompensation",
+          "lecture_codes": [
+            "V34",
+            "V35",
+            "V36"
+          ]
+        }
       ]
     },
     {
       "part_order": 4,
       "title": "Staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur",
       "modules": [
-        {"module_code":"G4.1","title":"Historische Entwicklung","lecture_codes":["GOV-01","GOV-02","GOV-03"]},
-        {"module_code":"G4.2","title":"DNS-Governance und Monitoring","lecture_codes":["GOV-04","GOV-05","GOV-06"]},
-        {"module_code":"G4.3","title":"GFA, Nachhaltigkeitsprüfung und digitale Gesetzgebung","lecture_codes":["GOV-07","GOV-08","GOV-09"]},
-        {"module_code":"G4.4","title":"Parlament, Aktionsplan und Vergleichslabor","lecture_codes":["GOV-10","GOV-11","GOV-12"]}
+        {
+          "module_code": "G4.1",
+          "title": "Historische Entwicklung",
+          "lecture_codes": [
+            "GOV-01",
+            "GOV-02",
+            "GOV-03"
+          ]
+        },
+        {
+          "module_code": "G4.2",
+          "title": "DNS-Governance und Monitoring",
+          "lecture_codes": [
+            "GOV-04",
+            "GOV-05",
+            "GOV-06"
+          ]
+        },
+        {
+          "module_code": "G4.3",
+          "title": "GFA, Nachhaltigkeitsprüfung und digitale Gesetzgebung",
+          "lecture_codes": [
+            "GOV-07",
+            "GOV-08",
+            "GOV-09"
+          ]
+        },
+        {
+          "module_code": "G4.4",
+          "title": "Parlament, Aktionsplan und Vergleichslabor",
+          "lecture_codes": [
+            "GOV-10",
+            "GOV-11",
+            "GOV-12"
+          ]
+        }
       ]
     },
     {
       "part_order": 5,
       "title": "Steuerung und Rückkopplung",
       "modules": [
-        {"module_code":"G5.1","title":"Ehrliche Preise","lecture_codes":["V37","V38","V39"]},
-        {"module_code":"G5.2","title":"Wirkungssteuer","lecture_codes":["V40","V41","V42"]},
-        {"module_code":"G5.3","title":"Wirkungshaushalt und öffentliche Steuerung","lecture_codes":["V43","V44","V45"]},
-        {"module_code":"G5.4","title":"Kapital und Investitionen","lecture_codes":["V46","V47","V48"]}
+        {
+          "module_code": "G5.1",
+          "title": "Ehrliche Preise",
+          "lecture_codes": [
+            "V37",
+            "V38",
+            "V39"
+          ]
+        },
+        {
+          "module_code": "G5.2",
+          "title": "Wirkungssteuer",
+          "lecture_codes": [
+            "V40",
+            "V41",
+            "V42"
+          ]
+        },
+        {
+          "module_code": "G5.3",
+          "title": "Wirkungshaushalt und öffentliche Steuerung",
+          "lecture_codes": [
+            "V43",
+            "V44",
+            "V45"
+          ]
+        },
+        {
+          "module_code": "G5.4",
+          "title": "Kapital und Investitionen",
+          "lecture_codes": [
+            "V46",
+            "V47",
+            "V48"
+          ]
+        }
       ]
     },
     {
       "part_order": 6,
       "title": "Wohlstand und Wirkungsökonomik",
       "modules": [
-        {"module_code":"G6.1","title":"Was Wohlstand wirklich ist","lecture_codes":["V49","V50","V51"]},
-        {"module_code":"G6.2","title":"Einkommen und Sicherung nach Wirkung","lecture_codes":["V52","V53","V54"]},
-        {"module_code":"G6.3","title":"Makro-Steuerung","lecture_codes":["V55","V56","V57"]},
-        {"module_code":"G6.4","title":"Zielkonflikte der Wohlstandsordnung","lecture_codes":["V58","V59","V60"]}
+        {
+          "module_code": "G6.1",
+          "title": "Was Wohlstand wirklich ist",
+          "lecture_codes": [
+            "V49",
+            "V50",
+            "V51"
+          ]
+        },
+        {
+          "module_code": "G6.2",
+          "title": "Einkommen und Sicherung nach Wirkung",
+          "lecture_codes": [
+            "V52",
+            "V53",
+            "V54"
+          ]
+        },
+        {
+          "module_code": "G6.3",
+          "title": "Makro-Steuerung",
+          "lecture_codes": [
+            "V55",
+            "V56",
+            "V57"
+          ]
+        },
+        {
+          "module_code": "G6.4",
+          "title": "Zielkonflikte der Wohlstandsordnung",
+          "lecture_codes": [
+            "V58",
+            "V59",
+            "V60"
+          ]
+        }
       ]
     },
     {
       "part_order": 7,
       "title": "Resilienz und Systemstabilität",
       "modules": [
-        {"module_code":"G7.1","title":"Resilienz verstehen","lecture_codes":["V61","V62","V63"]},
-        {"module_code":"G7.2","title":"Resiliente Wertschöpfung","lecture_codes":["V64","V65","V66"]},
-        {"module_code":"G7.3","title":"Resilienz messen und steuern","lecture_codes":["V67","V68","V69"]},
-        {"module_code":"G7.4","title":"Epistemische und demokratische Resilienz","lecture_codes":["V70","V71","V72"]}
+        {
+          "module_code": "G7.1",
+          "title": "Resilienz verstehen",
+          "lecture_codes": [
+            "V61",
+            "V62",
+            "V63"
+          ]
+        },
+        {
+          "module_code": "G7.2",
+          "title": "Resiliente Wertschöpfung",
+          "lecture_codes": [
+            "V64",
+            "V65",
+            "V66"
+          ]
+        },
+        {
+          "module_code": "G7.3",
+          "title": "Resilienz messen und steuern",
+          "lecture_codes": [
+            "V67",
+            "V68",
+            "V69"
+          ]
+        },
+        {
+          "module_code": "G7.4",
+          "title": "Epistemische und demokratische Resilienz",
+          "lecture_codes": [
+            "V70",
+            "V71",
+            "V72"
+          ]
+        }
       ]
     },
     {
       "part_order": 8,
       "title": "Anwendung in Feldern",
       "modules": [
-        {"module_code":"G8.1","title":"Produktwirkung","lecture_codes":["V73","V74","V75"]},
-        {"module_code":"G8.2","title":"Unternehmen und Lieferketten","lecture_codes":["V76","V77","V78"]},
-        {"module_code":"G8.3","title":"Daseinsfelder","lecture_codes":["V79","V80","V81"]},
-        {"module_code":"G8.4","title":"Politik, Medien und Alltag","lecture_codes":["V82","V83","V84"]}
+        {
+          "module_code": "G8.1",
+          "title": "Produktwirkung",
+          "lecture_codes": [
+            "V73",
+            "V74",
+            "V75"
+          ]
+        },
+        {
+          "module_code": "G8.2",
+          "title": "Unternehmen und Lieferketten",
+          "lecture_codes": [
+            "V76",
+            "V77",
+            "V78"
+          ]
+        },
+        {
+          "module_code": "G8.3",
+          "title": "Daseinsfelder",
+          "lecture_codes": [
+            "V79",
+            "V80",
+            "V81"
+          ]
+        },
+        {
+          "module_code": "G8.4",
+          "title": "Politik, Medien und Alltag",
+          "lecture_codes": [
+            "V82",
+            "V83",
+            "V84"
+          ]
+        }
       ]
     },
     {
       "part_order": 9,
       "title": "Transformation, Institutionen und globale Ordnung",
       "modules": [
-        {"module_code":"G9.1","title":"Institutionen und Regeln","lecture_codes":["V85","V86","V87"]},
-        {"module_code":"G9.2","title":"Daten und Technologie","lecture_codes":["V88","V89","V90"]},
-        {"module_code":"G9.3","title":"Globale Wirkungsordnung","lecture_codes":["V91","V92","V93"]},
-        {"module_code":"G9.4","title":"Systeme gestalten","lecture_codes":["V94","V95","V96"]}
+        {
+          "module_code": "G9.1",
+          "title": "Institutionen und Regeln",
+          "lecture_codes": [
+            "V85",
+            "V86",
+            "V87"
+          ]
+        },
+        {
+          "module_code": "G9.2",
+          "title": "Daten und Technologie",
+          "lecture_codes": [
+            "V88",
+            "V89",
+            "V90"
+          ]
+        },
+        {
+          "module_code": "G9.3",
+          "title": "Globale Wirkungsordnung",
+          "lecture_codes": [
+            "V91",
+            "V92",
+            "V93"
+          ]
+        },
+        {
+          "module_code": "G9.4",
+          "title": "Systeme gestalten",
+          "lecture_codes": [
+            "V94",
+            "V95",
+            "V96"
+          ]
+        }
       ]
     },
     {
       "part_order": 10,
       "title": "Praxisprojekt und Abschluss",
       "modules": [
-        {"module_code":"G10.1","title":"Projektfrage und Problem Review","lecture_codes":["V97","V98","V99"]},
-        {"module_code":"G10.2","title":"Wirkungslogik und Daten","lecture_codes":["V100","V101","V102"]},
-        {"module_code":"G10.3","title":"Bewertung, Optionen und Reflexion","lecture_codes":["V103","V104","V105"]},
-        {"module_code":"G10.4","title":"Abschlussarbeit, Reality Check und Transfer","lecture_codes":["V106","V107","V108"]}
+        {
+          "module_code": "G10.1",
+          "title": "Projektfrage und Problem Review",
+          "lecture_codes": [
+            "V97",
+            "V98",
+            "V99"
+          ]
+        },
+        {
+          "module_code": "G10.2",
+          "title": "Wirkungslogik und Daten",
+          "lecture_codes": [
+            "V100",
+            "V101",
+            "V102"
+          ]
+        },
+        {
+          "module_code": "G10.3",
+          "title": "Bewertung, Optionen und Reflexion",
+          "lecture_codes": [
+            "V103",
+            "V104",
+            "V105"
+          ]
+        },
+        {
+          "module_code": "G10.4",
+          "title": "Abschlussarbeit, Reality Check und Transfer",
+          "lecture_codes": [
+            "V106",
+            "V107",
+            "V108"
+          ]
+        }
       ]
     }
   ],
   "active_offerings": [
-    {"slug":"grundlagen","offering_id":"WOEK-WB-G","title":"Grundlagen der Wirkungsökonomie","audience":"Einsteiger:innen / Pflicht-Einstieg für Fachlehrgänge","level":"ground","lecture_count":7,"app_path":"/kurse/grundlagen"},
-    {"slug":"wirkungsmanagement","offering_id":"WOEK-WB-WM","title":"Wirkungsmanagement","audience":"Führung, Strategie, Nachhaltigkeit, Transformation, Projekt- und Programmverantwortliche","level":"advanced","lecture_count":10,"app_path":"/kurse/wirkungsmanagement"},
-    {"slug":"wirkungscontrolling","offering_id":"WOEK-WB-WC","title":"Wirkungscontrolling / Impact-Controlling","audience":"Controlling, Finance, ESG/Nachhaltigkeit, Einkauf, Strategie, Risiko und Projektverantwortliche","level":"advanced","lecture_count":10,"app_path":"/kurse/wirkungscontrolling"},
-    {"slug":"multiplikatoren","offering_id":"WOEK-MP","title":"Multiplikator:innen für Wirkungsökonomie","audience":"Multiplikator:innen / Vermittlung / Moderation","level":"multiplier","lecture_count":8,"app_path":"/kurse/multiplikatoren"},
-    {"slug":"demokratie-buerger","offering_id":"WOEK-WB-DB","title":"Demokratie schützen – Bürger:innen","audience":"Bürger:innen / Selbststudium","level":"specialization","lecture_count":11,"app_path":"/kurse/demokratie-schuetzen-buerger"},
-    {"slug":"demokratie-medien","offering_id":"WOEK-WB-DM","title":"Demokratie schützen – Medien & Moderation","audience":"Medien / Journalismus / Moderation","level":"specialization","lecture_count":12,"app_path":"/kurse/demokratie-schuetzen-medien-moderation"}
+    {
+      "slug": "grundlagen",
+      "offering_id": "WOEK-WB-G",
+      "title": "Grundlagen der Wirkungsökonomie",
+      "audience": "Einsteiger:innen / Pflicht-Einstieg für Fachlehrgänge",
+      "level": "ground",
+      "lecture_count": 7,
+      "app_path": "/kurse/grundlagen"
+    },
+    {
+      "slug": "wirkungsmanagement",
+      "offering_id": "WOEK-WB-WM",
+      "title": "Wirkungsmanagement",
+      "audience": "Führung, Strategie, Nachhaltigkeit, Transformation, Projekt- und Programmverantwortliche",
+      "level": "advanced",
+      "lecture_count": 10,
+      "app_path": "/kurse/wirkungsmanagement"
+    },
+    {
+      "slug": "wirkungscontrolling",
+      "offering_id": "WOEK-WB-WC",
+      "title": "Wirkungscontrolling / Impact-Controlling",
+      "audience": "Controlling, Finance, ESG/Nachhaltigkeit, Einkauf, Strategie, Risiko und Projektverantwortliche",
+      "level": "advanced",
+      "lecture_count": 10,
+      "app_path": "/kurse/wirkungscontrolling"
+    },
+    {
+      "slug": "multiplikatoren",
+      "offering_id": "WOEK-MP",
+      "title": "Multiplikator:innen für Wirkungsökonomie",
+      "audience": "Multiplikator:innen / Vermittlung / Moderation",
+      "level": "multiplier",
+      "lecture_count": 8,
+      "app_path": "/kurse/multiplikatoren"
+    },
+    {
+      "slug": "demokratie-buerger",
+      "offering_id": "WOEK-WB-DB",
+      "title": "Demokratie schützen – Bürger:innen",
+      "audience": "Bürger:innen / Selbststudium",
+      "level": "specialization",
+      "lecture_count": 11,
+      "app_path": "/kurse/demokratie-schuetzen-buerger"
+    },
+    {
+      "slug": "demokratie-medien",
+      "offering_id": "WOEK-WB-DM",
+      "title": "Demokratie schützen – Medien & Moderation",
+      "audience": "Medien / Journalismus / Moderation",
+      "level": "specialization",
+      "lecture_count": 12,
+      "app_path": "/kurse/demokratie-schuetzen-medien-moderation"
+    }
   ],
   "interim_exams": [
-    {"assessment_id":"WOEK-V4-ZP1","after_part":1,"title":"Grundlagenprüfung","mode":"auto","question_count":18},
-    {"assessment_id":"WOEK-V4-ZP2","after_part":2,"title":"Problem-, Ziel- und Kausalitätsprüfung","mode":"auto_scenario","question_count":24},
-    {"assessment_id":"WOEK-V4-ZP3","after_part":3,"title":"Referenz-, Daten- und Bewertungsprüfung","mode":"auto_scenario","question_count":24},
-    {"assessment_id":"WOEK-V4-ZP4","after_part":4,"title":"Prüfung staatliche Nachhaltigkeits- und Folgenarchitektur","mode":"auto_scenario","question_count":30},
-    {"assessment_id":"WOEK-V4-ZP5","after_part":5,"title":"Steuerungs- und Rückkopplungsprüfung","mode":"auto_scenario","question_count":24},
-    {"assessment_id":"WOEK-V4-ZP6","after_part":6,"title":"Wohlstandsprüfung","mode":"auto_scenario","question_count":21},
-    {"assessment_id":"WOEK-V4-ZP7","after_part":7,"title":"Resilienzprüfung","mode":"auto_scenario","question_count":21},
-    {"assessment_id":"WOEK-V4-ZP8","after_part":8,"title":"Anwendungsprüfung","mode":"auto_scenario","question_count":24},
-    {"assessment_id":"WOEK-V4-ZP9","after_part":9,"title":"Systemdesignprüfung","mode":"auto_scenario","question_count":24},
-    {"assessment_id":"WOEK-V4-ZP10","after_part":10,"title":"Projektfreigabeprüfung","mode":"auto_scenario","question_count":30}
+    {
+      "assessment_id": "WOEK-V4-ZP1",
+      "after_part": 1,
+      "title": "Grundlagenprüfung",
+      "mode": "auto",
+      "question_count": 18
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP2",
+      "after_part": 2,
+      "title": "Problem-, Ziel- und Kausalitätsprüfung",
+      "mode": "auto_scenario",
+      "question_count": 24
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP3",
+      "after_part": 3,
+      "title": "Referenz-, Daten- und Bewertungsprüfung",
+      "mode": "auto_scenario",
+      "question_count": 24
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP4",
+      "after_part": 4,
+      "title": "Prüfung staatliche Nachhaltigkeits- und Folgenarchitektur",
+      "mode": "auto_scenario",
+      "question_count": 30
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP5",
+      "after_part": 5,
+      "title": "Steuerungs- und Rückkopplungsprüfung",
+      "mode": "auto_scenario",
+      "question_count": 24
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP6",
+      "after_part": 6,
+      "title": "Wohlstandsprüfung",
+      "mode": "auto_scenario",
+      "question_count": 21
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP7",
+      "after_part": 7,
+      "title": "Resilienzprüfung",
+      "mode": "auto_scenario",
+      "question_count": 21
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP8",
+      "after_part": 8,
+      "title": "Anwendungsprüfung",
+      "mode": "auto_scenario",
+      "question_count": 24
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP9",
+      "after_part": 9,
+      "title": "Systemdesignprüfung",
+      "mode": "auto_scenario",
+      "question_count": 24
+    },
+    {
+      "assessment_id": "WOEK-V4-ZP10",
+      "after_part": 10,
+      "title": "Projektfreigabeprüfung",
+      "mode": "auto_scenario",
+      "question_count": 30
+    }
   ],
   "final_assessments": [
-    {"assessment_id":"WOEK-V4-AP1","title":"Abschlussprüfung Wissen und Methoden","mode":"auto_scenario","question_count":48},
-    {"assessment_id":"WOEK-V4-AP2","title":"Abschlussprüfung Fallanalyse","mode":"mixed_auto_manual","question_count":20},
-    {"assessment_id":"WOEK-V4-AP3","title":"Praxisprojekt Wirkungsdossier","mode":"manual_rubric","question_count":null},
-    {"assessment_id":"WOEK-V4-AP4","title":"Verteidigung und Transfer","mode":"manual_rubric","question_count":null}
+    {
+      "assessment_id": "WOEK-V4-AP1",
+      "title": "Abschlussprüfung Wissen und Methoden",
+      "mode": "auto_scenario",
+      "question_count": 48
+    },
+    {
+      "assessment_id": "WOEK-V4-AP2",
+      "title": "Abschlussprüfung Fallanalyse",
+      "mode": "mixed_auto_manual",
+      "question_count": 20
+    },
+    {
+      "assessment_id": "WOEK-V4-AP3",
+      "title": "Praxisprojekt Wirkungsdossier",
+      "mode": "manual_rubric",
+      "question_count": null
+    },
+    {
+      "assessment_id": "WOEK-V4-AP4",
+      "title": "Verteidigung und Transfer",
+      "mode": "manual_rubric",
+      "question_count": null
+    }
   ]
 }

@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/04-scorecards-als-wirkungsprofile.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/wirkungscontrolling/lectures/04-scorecards-als-wirkungsprofile.md curriculum=4.0 sanitized=true -->
 # WC-V4-04 · Scorecards als Wirkungsprofile
 
 **lecture_id:** `WOEK-WB-WC-V4-004`  
@@ -95,3 +95,32 @@ Version 4.0 · Stand 21.08.2026. Legacy Scorecard->Gesamtwert-Automatismus aufge
 ## Sprechertext
 
 Scorecards sind praktisch, weil sie viele Informationen auf eine Seite bringen. Genau deshalb müssen wir aufpassen. Aus einer guten Übersicht wird schnell eine schlechte Gesamtnote. v4 dreht die Reihenfolge um: Erst das Profil verstehen, offene Daten sehen, Grenzen prüfen und Sensitivität testen. Wenn danach eine Einzahl sinnvoll ist, kann man sie bilden. Wenn nicht, ist das kein Fehler. Dann ist das Profil die bessere Antwort.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Eine Scorecard als lesbares Wirkungsprofil aufbauen
+
+Eine Scorecard verdichtet Information. Dabei darf sie zentrale Unterschiede nicht verschlucken: Richtung, Ausmaß, Evidenz, Datenstatus und Schutzgrenzen sind verschiedene Dimensionen. Ein Zahlenwert ohne diese Angaben kann präzise aussehen und dennoch eine falsche Vergleichbarkeit erzeugen.
+
+Aggregation ist nur vertretbar, wenn Größen fachlich vergleichbar gemacht werden können und die dafür erforderlichen Annahmen offengelegt werden. Harte Schutzgrenzen werden nicht durch günstige Werte anderer Felder aufgehoben. OPEN bezeichnet eine offene Beurteilung und wird nicht als mittlerer oder neutraler Zahlenwert verrechnet.
+
+### Durchgearbeiteter Fall: zwei Optionen mit unterschiedlicher Evidenz
+
+Eine fiktive Beschaffung vergleicht A und B. A hat belegte niedrigere Betriebskosten. Für ihre Reparierbarkeit fehlen belastbare Daten. B hat etwas höhere Kosten, aber dokumentierte Ersatzteilverfügbarkeit. Eine Gesamtnote, die fehlende Reparaturdaten als „durchschnittlich“ einträgt, würde A einen unbelegten Vorteil verschaffen.
+
+Die Scorecard zeigt deshalb Kosten mit Quelle und Zeitraum, Reparierbarkeit mit Datenstatus und die erwarteten Folgen längerer Ausfälle als getrennten Wirkpfad. Zusätzlich wird geprüft, ob Versorgungssicherheit für den konkreten Einsatz eine harte Mindestbedingung begründet. Eine bloße Produktpräferenz reicht dafür nicht.
+
+Sind die Unterschiede innerhalb der Mess- und Modellunsicherheit praktisch nicht belastbar, kann PRACTICAL_TIE angemessen sein. Sind wesentliche Felder nicht vergleichbar oder offen, kann NO_ROBUST_RANKING folgen. Beide Ergebnisse müssen erläutern, welche Information fehlt und welche Entscheidung trotzdem möglich ist, etwa eine begrenzte Nachprüfung oder die Wahl anhand anderer transparent begründeter Kriterien.
+
+### Lernarbeit mit Erwartungshorizont
+
+Erstelle eine Scorecard mit mindestens drei Feldern und getrennten Spalten für Befund, Evidenz, Datenstatus und Grenze. Formuliere danach eine Empfehlung in Worten. Eine gute Lösung erklärt, warum die Empfehlung aus der gesamten Fallprüfung folgt und nicht aus einer automatisch berechneten Summe.
+
+Prüfe die Sensitivität einer möglichen Rangfolge: Welche plausible Änderung einer Annahme würde sie umkehren? Wenn bereits kleine Änderungen das Ergebnis wechseln, muss diese Instabilität sichtbar werden. Mehr Nachkommastellen lösen das Problem nicht. Der Erwartungshorizont verlangt eine verständliche Darstellung der Entscheidungsunsicherheit, keine künstlich eindeutige Rangliste.

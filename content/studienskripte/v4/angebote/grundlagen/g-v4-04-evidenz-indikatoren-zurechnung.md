@@ -1,4 +1,4 @@
-<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ecee82cce60612332b4dc909b2fecfcb380b1a24 path=content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-04-evidenz-indikatoren-zurechnung.md curriculum=4.0 sanitized=true -->
+<!-- WOEK_PUBLIC_MASTER source=sustynats/woek-akademie-app@ee7fec6b8a738b78bda9b989eba252963a325daf path=content/lehrgaenge/akademie/curriculum-v4/offerings/grundlagen/lectures/g-v4-04-evidenz-indikatoren-zurechnung.md curriculum=4.0 sanitized=true -->
 # G-V4-04 · Evidenz, Indikatoren und Zurechnung
 
 **lecture_id:** `WOEK-WB-G-V4-004`  
@@ -168,3 +168,32 @@ Dafür trennen wir die Ebenen. Zuerst den relevanten Zustand. Dann den Indikator
 Und wir trennen noch etwas: Richtung und Sicherheit. Etwas kann wahrscheinlich positiv wirken, obwohl die Evidenz noch schwach ist. Oder wir wissen schlicht zu wenig. Dann lautet der Befund OPEN – nicht null, nicht neutral.
 
 Diese Trennung ist ein Kern der Wirkungskompetenz. Sie schützt uns davor, aus guten Zahlen vorschnell gute Geschichten zu machen.
+
+## Fachlicher Stand und Addendum · 6. September 2026
+
+Dieses Addendum ergänzt die Fassung vom August 2026 transparent. Frühere Versionsangaben dokumentieren deren Entstehung; für die aktuelle Einordnung gilt der [führende Begriffsleitfaden v1.7](https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/). Wirkung ist eine tatsächliche Zustandsveränderung. Zielbezug, Indikator, Reichweite und Beobachtung sind jeweils vom kausalen Nachweis zu unterscheiden. SDG+ ist eine WÖk-eigene Erweiterung; positive Netto-Wirkung bleibt an Nichtkompensation harter Schutzgrenzen gebunden.
+
+
+## Vertiefendes Lehrkapitel · 6. September 2026
+
+Die folgenden Fälle und Zahlen sind didaktische Konstruktionen. Sie ergänzen die historische Kurzfassung um Argumentation, Anwendung und einen Erwartungshorizont.
+
+### Eine Veränderung messen und ihre Ursache gesondert prüfen
+
+Eine Baseline hält den Ausgangszustand fest. Das Gegenfaktum beschreibt, was ohne die untersuchte Maßnahme plausibel geschehen wäre. Beide können voneinander abweichen, weil sich die Welt auch ohne die Maßnahme verändert. Deshalb ist ein Vorher-nachher-Vergleich allein häufig keine ausreichende Grundlage für einen Kausalclaim.
+
+Indikatoren zeigen beobachtbare Ausschnitte eines Zustands. Ihre Auswahl muss zur Frage passen. Wenn Zugänglichkeit untersucht wird, können Wartezeit, Verständlichkeit und praktisch nutzbare Kontaktwege unterschiedliche Aspekte abbilden. Eine einzelne Größe kann diese Dimensionen selten vollständig ersetzen.
+
+### Durchgearbeiteter Rechenfall: zwei Vergleichsgruppen
+
+Eine fiktive Einrichtung führt eine neue Terminorganisation ein. Ihre durchschnittliche Wartezeit sinkt von zwölf auf acht Tage. In einer geeigneten Vergleichseinrichtung ohne diese Änderung sinkt sie im selben Zeitraum von zehn auf acht Tage. Die einfache Veränderung beträgt in der ersten Einrichtung minus vier Tage. Die Differenz der Veränderungen beträgt minus zwei Tage: (8−12)−(8−10)=−2.
+
+Diese Differenz ist nicht automatisch ein gesicherter kausaler Effekt. Ein Difference-in-Differences-Ansatz benötigt unter anderem eine begründete Annahme über die vergleichbare Entwicklung ohne Maßnahme. Wenn sich Fallarten, Personal oder andere Bedingungen unterschiedlich ändern, kann die Zuschreibung verzerrt sein. Das Beispiel illustriert die Rechenlogik, keine tatsächliche Evaluation.
+
+Zusätzlich wird die Verteilung geprüft. Ein günstiger Durchschnitt kann mit längeren Wartezeiten einer kleinen Gruppe einhergehen. Diese Frage ist von der kausalen Identifikation zu unterscheiden und bleibt auch bei einem guten Vergleichsdesign relevant. Richtung und Evidenz werden deshalb getrennt dokumentiert.
+
+### Lernarbeit mit Erwartungshorizont
+
+Berechne Vorher-nachher-Veränderung und Differenz der Veränderungen. Formuliere anschließend eine vorsichtige Interpretation mit einer notwendigen Annahme und einer offenen Frage. Eine gute Lösung behauptet nicht, der Vergleich beweise seine eigene Eignung.
+
+Entwirf zwei zusätzliche Prüfungen: eine zur Vergleichbarkeit und eine zur Verteilung. Der Erwartungshorizont verlangt, Beobachtung, Modellannahme und Attribution auseinanderzuhalten. Die Gegenfaktumsfrage wird nicht durch einen SDG-Bezug oder eine größere Zahl von Nachkommastellen beantwortet. Zur methodischen Vertiefung dient das bereits angeführte Evaluationswissen, insbesondere die getrennte Begründung des Untersuchungsdesigns.
