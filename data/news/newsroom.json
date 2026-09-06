@@ -299140,7 +299140,7 @@
           "time_sensitive": false,
           "findings": []
         },
-        "internal_relevance_score": 36,
+        "internal_relevance_score": 30,
         "public_relevance": "mittel",
         "topics": [
           "Geopolitik",
@@ -515819,7 +515819,21 @@
           "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
         }
       ]
+    },
+    {
+      "at": "2026-09-06T22:21:22.849Z",
+      "story_id": "wt-4508f36323f93362",
+      "event_id": "event-87a4afb9eaf3c9eabc61",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "tagesschau-access",
+          "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
     }
   ],
-  "updated_at": "2026-09-06T22:06:36.245Z"
+  "updated_at": "2026-09-06T22:21:22.849Z"
 }
