@@ -2,39 +2,39 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-06T08:06:40.303Z",
+  "started_at": "2026-09-06T08:22:28.382Z",
   "scanned_stories": 93,
   "scanned_subjects": 81,
   "editorial_candidates": 15,
-  "ready_for_research": 4,
+  "ready_for_research": 3,
   "research_pending": 6,
   "retry_deferred": 0,
   "editorial_research_sources_discovered": 12,
-  "selected": 4,
-  "editorial_research_started": 8,
+  "selected": 3,
+  "editorial_research_started": 6,
   "editorial_analyses_published": 0,
-  "editorial_analyses_updated": 1,
-  "research_calls": 8,
-  "research_tokens": 48371,
-  "analysis_tokens": 42557,
-  "estimated_cost_usd": 0.227785,
-  "quality_retries": 4,
+  "editorial_analyses_updated": 0,
+  "research_calls": 6,
+  "research_tokens": 34636,
+  "analysis_tokens": 34151,
+  "estimated_cost_usd": 0.172398,
+  "quality_retries": 3,
   "publication_deferred": false,
   "failed": [
     {
       "story_id": "wt-1fbb056ccaaf351d",
       "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-06T08:21:40.303Z"
+      "next_attempt_at": "2026-09-06T08:52:28.382Z"
     },
     {
       "story_id": "wt-7b385f58748f3d32",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_TITLE_LENGTH,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-06T08:21:40.303Z"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-06T08:52:28.382Z"
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
       "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-06T08:21:40.303Z"
+      "next_attempt_at": "2026-09-06T08:52:28.382Z"
     }
   ],
   "candidates": [
@@ -166,7 +166,7 @@
         "reasons": []
       },
       "fingerprint": "95b8bb2184beba0a6312d8a9020be9a349ab589a6db4d6c57531f6e5e956bbcb",
-      "status": "ready_for_research",
+      "status": "published",
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
@@ -685,5 +685,5 @@
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
   ],
-  "completed_at": "2026-09-06T08:09:59.025Z"
+  "completed_at": "2026-09-06T08:26:16.212Z"
 }
