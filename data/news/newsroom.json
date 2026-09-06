@@ -68672,7 +68672,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-53de10df4f68e93ec96a",
+      "event_id": "event-95c25b4af98f082b4da0",
       "first_seen_at": "2026-09-04T17:21:09.783Z"
     },
     "4b9e044b88c5bf30f128efc949ba53dca33487a38becfe8fabdc922e1705486c": {
@@ -284275,7 +284275,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-53de10df4f68e93ec96a",
+      "event_id": "event-95c25b4af98f082b4da0",
       "source_item_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
       "source_id": "wdr-nachrichten",
       "role": "journalistic_report"
@@ -440116,7 +440116,116 @@
         "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
       ],
       "rationale": "Gegenüber den Vorakten liegt eine neue, zeitlich spätere Lagebeschreibung mit konkreterem Suchstatus vor; der Vorgang bleibt für kritische Infrastruktur und öffentliche Sicherheit materiell."
+    },
+    {
+      "at": "2026-09-06T13:36:20.439Z",
+      "story_id": "wt-5072789df611867b",
+      "event_id": "event-2a2bd81ddd672bb6a3a8",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "ndr-info",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-umfragen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        },
+        {
+          "source_id": "swr-aktuell",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+          "code": "SOURCE_PUBLISHER_URL_MISMATCH",
+          "detail": "URL-Host und registrierter Publisher stimmen nicht überein."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T13:36:20.439Z",
+      "story_id": "wt-3b184047d464b8b5",
+      "event_id": "event-42fd9997b279e1433a65",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "mdr-nachrichten",
+          "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0/0)."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-06T13:36:20.439Z",
+      "story_id": "wt-6886cb1013ce414d",
+      "event_id": "event-95c25b4af98f082b4da0",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Der neue WDR-Stand wiederholt im Kern nur den laufenden Polizeieinsatz und die Fahndung; gegenüber der bereits erfassten Vorberichterstattung ist keine neue materielle Entwicklung belegt."
+    },
+    {
+      "at": "2026-09-06T13:36:20.439Z",
+      "story_id": "wt-b5cb936943cafb8b",
+      "event_id": "event-e77cf87cba242f43ae12",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "not_material",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "rationale": "Die Quelle berichtet vor allem über scharfe Rhetorik Lawrows; daraus ergibt sich kein belastbar belegter materieller Zustandswechsel mit ausreichender Folgenrelevanz."
+    },
+    {
+      "at": "2026-09-06T13:36:20.439Z",
+      "story_id": "wt-fbe110331124b8b1",
+      "event_id": "event-da6ebd1a1f417412c77e",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "superseded",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Meldung wiederholt den bereits berichteten Fahndungskern ohne neu belegte materielle Entwicklung gegenüber den vorhandenen Vorberichten."
+    },
+    {
+      "at": "2026-09-06T13:36:20.439Z",
+      "story_id": "wt-06837a611e9459ce",
+      "event_id": "event-dfe7a7d9629460af52db",
+      "decision": "publish",
+      "publication_recommendation": true,
+      "rejection_code": null,
+      "errors": [],
+      "rationale": "Gegenüber der Vorlage ist die Ankunft in Kiew ein neuer, belastbar gemeldeter Verhandlungsschritt; er ist für den laufenden Ukraine-Diplomatieprozess materiell relevant, auch wenn noch kein Ergebnis belegt ist."
+    },
+    {
+      "at": "2026-09-06T13:36:20.439Z",
+      "story_id": "wt-ecf4b205df1ecac3",
+      "event_id": "event-c1061c18db8a491c241b",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die neue Meldung wiederholt den bereits erfassten Stand zur Kieler Evakuierung und Bombenentschärfung ohne belastbar neue Sachinformation."
+    },
+    {
+      "at": "2026-09-06T13:36:20.439Z",
+      "story_id": "wt-9e3a2e21408b5561",
+      "event_id": "event-deb374a1ef5febea601b",
+      "decision": "held_or_rejected",
+      "publication_recommendation": false,
+      "rejection_code": "no_new_information",
+      "errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "rationale": "Die Meldung wiederholt lediglich, dass Witkoff und Kushner in Kyjiw sind; gegenüber der bereits erfassten Vorgeschichte enthält sie keinen neuen materiellen Sachverhalt."
     }
   ],
-  "updated_at": "2026-09-06T13:21:40.973Z"
+  "updated_at": "2026-09-06T13:36:20.439Z"
 }
