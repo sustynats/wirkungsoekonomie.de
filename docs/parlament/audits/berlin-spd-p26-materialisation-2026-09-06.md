@@ -64,6 +64,23 @@ MV P1-P55 decisions and frozen source ledger remain unchanged.
 
 ## Verification and release boundary
 
+The build also exposed a stale public-PDF safety manifest after the earlier
+publication-hygiene change. The PDF itself is not changed by this lane.
+Renewed deep verification covers all 38 pages: full text is identical after
+the approved typography normalization; private paths, blocked production
+markers and non-ASCII dashes are all zero. Its current SHA-256 is
+`a5ba04847fea368d5755bf9cbf880330828aefce66f72916f28fd17b5036a048`.
+The manifest retains the previous verified hash and records the new check.
+Publisher remains Institut für Wirkungsökonomie; Author/Creator/Producer
+are Natalie Weber as explicitly required by current root AGENTS.
+Tests reject stale hashes, wrong authorship, publisher drift and missing files.
+
+Subsequent controller clarification #241/5560928102 and PR #408/5560926532
+separates technically green, truthfully scoped publication from full-Fach
+completion. Open Fach does not block this technical repair/merge. This P26
+data transaction still does not mark the portal fully reviewed or invoke
+Vercel; release readiness and budget validation are separate operations.
+
 Local checks: 307 application tests, 32 Berlin regression tests, typecheck,
 lint, exact PDF parity, Berlin residual, current #241 residual and current
 Golden-readiness checks passed. PR/merged-main workflow evidence is recorded

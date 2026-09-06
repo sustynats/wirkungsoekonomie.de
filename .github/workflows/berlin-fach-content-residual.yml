@@ -205,3 +205,4 @@ jobs:
           node scripts/quality/materialize-berlin-spd-p26.mjs --check
           node scripts/quality/check-berlin-spd-p26.mjs --require-terminal
           node --test tests/berlin-spd-p26.test.mjs
+          node --test tests/publication-manifest.test.mjs
