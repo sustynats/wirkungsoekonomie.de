@@ -7,9 +7,14 @@
     },
     "queue": {
       "firstSeen": "2026-09-06T19:20:48.017Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9b8676666395ac759bf3f820",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Warteschlange: 1 technisch blockierte Akte(n); älteste technische Blockade seit 120 Minuten. Kapazitätswarteschlange: 48; redaktionelle Ablehnungen: 0.\nSeit: 2026-09-06T19:20:48.017Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-06"
 }
