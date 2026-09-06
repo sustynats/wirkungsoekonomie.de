@@ -1,8 +1,618 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-06T13:36:20.439Z",
-  "updated_at": "2026-09-06T13:36:20.439Z",
+  "updated_at": "2026-09-06T13:51:15.545Z",
   "stories": [
+    {
+      "story_id": "wt-ed0f00e58dfe544f",
+      "slug": "lawrow-deutschland-will-wieder-krieg-gegen-russland-fe544f",
+      "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
+      "first_seen": "2026-09-06T12:55:53.000Z",
+      "last_updated": "2026-09-06T13:48:18.000Z",
+      "topic": [
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/lawrow--deutschland-will--wieder-krieg--gegen-russland-38213060.html",
+          "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
+          "summary": "Der russische Außenminister Sergej Lawrow hat Berlin beschuldigt, „wieder Krieg“ gegen Russland zu wollen. Zu dem Drohnenvorfall in Leipzig sagte Lawrow: „Sie haben erklärt, es handele sich um eine russische Drohne, ohne dass jemand versucht hätte, genauer nachzuforschen.“ Er fügte dann laut Berichten russischer Nachrichtenagenturen vom Sonntag hinzu: „Dies ist letztlich der Beginn eines echten Krieges.“",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:55:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "d64a8e9458cf25953334ecad301d45e9ef9501f00cfba69e4d386b9414612a00",
+          "source_item_id": "026ac61d6a9d1c3dcff70ead252cebae67a715a02f31f0cedd18a7ca2d1b6e3a",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:55:53.000Z",
+          "ingested_at": "2026-09-06T13:06:40.348Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/aussenminister-lawrow-deutschland-will-wieder-krieg-mit-russland-100.html",
+          "title": "Spannungen wegen Drohnen-Vorfall - Außenminister Lawrow: Deutschland will \"wieder Krieg\" mit Russland",
+          "summary": "In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:48:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4df30c36ded0f060f530094a86d0e10311bde6deb5acf71aaaf63ca6a00b1c12",
+          "source_item_id": "269ed8644ed67394cccad5baee49607ec9bdee3efcc5d7ce18923bb7a0d24820",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:48:18.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ed0f00e58dfe544f-claim-01",
+          "story_id": "wt-ed0f00e58dfe544f",
+          "claim": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland: Der russische Außenminister Sergej Lawrow hat Berlin beschuldigt, „wieder Krieg“ gegen Russland zu wollen. Zu dem Drohnenvorfall in Leipzig sagte Lawrow: „Sie haben erklärt, es handele sich um eine russische Drohne, ohne dass jemand versucht hätte, genauer nachzuforschen.“ Er fügte dann laut Berichten russischer Nachrichtenagenturen vom Sonntag hinzu: „Dies ist letztlich der Beginn eines echten Krieges.“",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        },
+        {
+          "claim_id": "wt-ed0f00e58dfe544f-claim-02",
+          "story_id": "wt-ed0f00e58dfe544f",
+          "claim": "Spannungen wegen Drohnen-Vorfall - Außenminister Lawrow: Deutschland will \"wieder Krieg\" mit Russland: In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        }
+      ],
+      "content_hash": "530f3d4320cd05db8f4b50f5b7dfbc56a4b6fa8b656ca1f81240da1ac8e83ad6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T14:06:15.545Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T13:51:15.545Z",
+      "event_first_seen_at": "2026-09-06T13:06:40.348Z",
+      "event_detected_at": "2026-09-06T13:06:40.348Z",
+      "event_id": "event-3668bca1040e9350b498",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 2.9590833333333335,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 44.586616666666664,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "9cb7d9000204bd1c8d51c90bad48e7a820c493d49bc2323d8d07828499997a55",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:51:15.545Z",
+      "rejection": {
+        "at": "2026-09-06T13:51:15.545Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7cb93f0c5bd31262",
+      "slug": "nach-versuchtem-drohnen-anschlag-in-leipzig-lawrow-nennt-anschuldigungen-gegen-russland--d31262",
+      "title": "Nach versuchtem Drohnen-Anschlag in Leipzig: Lawrow nennt Anschuldigungen gegen Russland „Beginn eines echten Krieges“",
+      "first_seen": "2026-09-06T13:45:48.000Z",
+      "last_updated": "2026-09-06T13:45:48.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/nach-versuchtem-drohnen-anschlag-in-leipzig-lawrow-nennt-anschuldigungen-gegen-russland-beginn-eines-echten-krieges-16023639.html",
+          "title": "Nach versuchtem Drohnen-Anschlag in Leipzig: Lawrow nennt Anschuldigungen gegen Russland „Beginn eines echten Krieges“",
+          "summary": "Nicht etwa der versuchte Sprengstoff-Anschlag selbst, sondern die Reaktion darauf spreche aus Sicht des russischen Außenministers für eine deutsche Kriegslust. Dabei träumt man im russischen Fernsehen schon von einem „Deutschland unter russischer Flagge“.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:45:48.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "29361c481f28c76e200e0bcd2fac12cff520ef92beaf63cf447bae05eb986925",
+          "source_item_id": "fb20962868e6757d9bc34b1f39f14b6d185f4e1144506ed595eb60a22b8d6456",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:45:48.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7cb93f0c5bd31262-claim-01",
+          "story_id": "wt-7cb93f0c5bd31262",
+          "claim": "Nach versuchtem Drohnen-Anschlag in Leipzig: Lawrow nennt Anschuldigungen gegen Russland „Beginn eines echten Krieges“: Nicht etwa der versuchte Sprengstoff-Anschlag selbst, sondern die Reaktion darauf spreche aus Sicht des russischen Außenministers für eine deutsche Kriegslust. Dabei träumt man im russischen Fernsehen schon von einem „Deutschland unter russischer Flagge“.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        }
+      ],
+      "content_hash": "45cabc4d0570c0e8e5d3e598b77a17dd184ce377dd4223c92ffdd9a5bd4c33c3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T14:06:15.545Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T13:51:15.545Z",
+      "event_first_seen_at": "2026-09-06T13:51:15.545Z",
+      "event_detected_at": "2026-09-06T13:51:15.545Z",
+      "event_id": "event-db4bbce30b480c527b4e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.459083333333333,
+        "detection_delay_minutes": 5.459083333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "f4a8dd95778488558479cf14f5c9a4bcd4b4ddf7ecb94118cad4ffc705827f2d",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:51:15.545Z",
+      "rejection": {
+        "at": "2026-09-06T13:51:15.545Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-b5ca8651ce7844db",
+      "slug": "polizei-fahndet-nach-tatverdachtigem-am-hambacher-forst-7844db",
+      "title": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst",
+      "first_seen": "2026-09-06T13:43:00.000Z",
+      "last_updated": "2026-09-06T13:43:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/sabotage-verdaechtiger-fahndung-polizei-fahrrad-100.html",
+          "title": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst",
+          "summary": "Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:43:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3e08c59924116ffa7bb28093b5dbdc4d1be4ac277d20096c25eb9806b9a1865e",
+          "source_item_id": "1e4be773f43481f8bf81c438e093fb41bb450bf5ed005840d53079ecedaf819c",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:43:00.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b5ca8651ce7844db-claim-01",
+          "story_id": "wt-b5ca8651ce7844db",
+          "claim": "Polizei fahndet nach Tatverdächtigem am Hambacher Forst: Mit einem Großaufgebot sucht die Polizei am Hambacher Forst nach einem Tatverdächtigen. Er soll die Sabotage-Aktionen aufs Stromnetz durchgeführt haben. Ein Indiz: sein Fahrrad.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        }
+      ],
+      "content_hash": "62213e5a4e389d5bd36bcb58ff7cbe008b4974922e7779aa6d04f802c2cdd9d5",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T14:06:15.545Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T13:51:15.545Z",
+      "event_first_seen_at": "2026-09-06T13:51:15.545Z",
+      "event_detected_at": "2026-09-06T13:51:15.545Z",
+      "event_id": "event-2863d76840aa042b6f5e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 8.259083333333333,
+        "detection_delay_minutes": 8.259083333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "2bb13f0c69616ef743d6e475c959daf4157fdda79850094326a5825ebaeb0e8a",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:51:15.545Z",
+      "rejection": {
+        "at": "2026-09-06T13:51:15.545Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7cfa316a58ffcefc",
+      "slug": "germany-why-is-the-afd-so-popular-in-saxony-anhalt-ffcefc",
+      "title": "Germany: Why is the AfD so popular in Saxony-Anhalt?",
+      "first_seen": "2026-09-06T13:37:48.000Z",
+      "last_updated": "2026-09-06T13:37:48.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260906-germany-why-is-the-afd-so-popular-in-saxony-anhalt",
+          "title": "Germany: Why is the AfD so popular in Saxony-Anhalt?",
+          "summary": "Voting began in the eastern German state of Saxony-Anhalt on Sunday in a closely watched election that could see the Alternative for Germany (AfD) become the first far-right party to lead a state government since World War II. We discuss this with our guest, Hans Stark, professor of German studies at Sorbonne University.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:37:48.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "4d3afea175efd14c67905fab2959ba8cdb17c3e2e8df1f87c823522478446b87",
+          "source_item_id": "c090ff3c9e51f30fc1813a6a86bd1735507f9addfe1df6859a140b20fb5d935d",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:37:48.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7cfa316a58ffcefc-claim-01",
+          "story_id": "wt-7cfa316a58ffcefc",
+          "claim": "Germany: Why is the AfD so popular in Saxony-Anhalt?: Voting began in the eastern German state of Saxony-Anhalt on Sunday in a closely watched election that could see the Alternative for Germany (AfD) become the first far-right party to lead a state government since World War II. We discuss this with our guest, Hans Stark, professor of German studies at Sorbonne University.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        }
+      ],
+      "content_hash": "d092676f74e4296dbc782fffc8159b1730fa7f53fd4431ab6a6eb514f1f56efe",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_NEWS_VALUE_CONTEXT_ONLY",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:24"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-06T14:06:15.545Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-06T13:51:15.545Z",
+      "event_first_seen_at": "2026-09-06T13:51:15.545Z",
+      "event_detected_at": "2026-09-06T13:51:15.545Z",
+      "event_id": "event-b015c56a3cbdc889354c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.459083333333334,
+        "detection_delay_minutes": 13.459083333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "0702b12b449f1eb77352981ee5d4442e4692728f534acac1231922b6e6978097",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-06837a611e9459ce",
       "slug": "ukraine-news-us-vermittler-witkoff-und-kushner-in-kiew-empfangen-9459ce",
@@ -486,6 +1096,396 @@
       }
     },
     {
+      "story_id": "wt-7d7a59cf8e16cea9",
+      "slug": "millionen-daten-geleakt-hackerangriff-konnte-grossere-folgen-haben-als-bisher-gedacht-16cea9",
+      "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+      "first_seen": "2026-09-06T13:07:37.000Z",
+      "last_updated": "2026-09-06T13:29:00.000Z",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/millionen-daten-geleakt--hackerangriff-koennte-groessere-folgen-haben-als-bisher-gedacht-38213080.html",
+          "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:44:27.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "327e9e51cacf94197e2d3c10b9f835232081b7e604057467309a81d2ef063562",
+          "source_item_id": "d37c8512d460a864f6e0273b30e4935063f484e810dd70c9fc8d4399d966eda8",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:44:27.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-millionen-daten-geleakt-16023523.html",
+          "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:09:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d983009c2b3697205735c5e2516137d729c8fc437c5831e3e7b8051519ca4c22",
+          "source_item_id": "b90fed8b8eaacd013ed9980800610b729af0af499ecd121056e6494a6e06f15d",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:09:16.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/ausmass-noch-unbekannt-hackerangriff-auf-berliner-landesnetz/100247824.html",
+          "title": "Cybersicherattacke Berlin: Hackerangriff könnte größere Folgen haben als bisher gedacht",
+          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:29:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "59201674e9aea808bd51169e1c6a60cb84fc394c1c369304524bf0eb5804213a",
+          "source_item_id": "ddb38abb5d44f594c62fe2d011b5cc7eac7e5193043fca155c46afa739650f8c",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:29:00.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7d7a59cf8e16cea9-claim-01",
+          "story_id": "wt-7d7a59cf8e16cea9",
+          "claim": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        },
+        {
+          "claim_id": "wt-7d7a59cf8e16cea9-claim-02",
+          "story_id": "wt-7d7a59cf8e16cea9",
+          "claim": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        },
+        {
+          "claim_id": "wt-7d7a59cf8e16cea9-claim-03",
+          "story_id": "wt-7d7a59cf8e16cea9",
+          "claim": "Cybersicherattacke Berlin: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        }
+      ],
+      "content_hash": "6d803dabf638d62a4f8c3026242278a15c6a87d90c88fd749cc52350a43adf42",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T14:06:15.545Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T13:51:15.545Z",
+      "event_first_seen_at": "2026-09-06T13:21:40.973Z",
+      "event_detected_at": "2026-09-06T13:21:40.973Z",
+      "event_id": "event-ca921f1d3261813a142c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.809083333333334,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 29.5762,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "5f951193158113c7624023fd6ebdc882b245dd672db153490044339e0b9cd525",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:51:15.545Z",
+      "rejection": {
+        "at": "2026-09-06T13:51:15.545Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d1170e1bdc308cbc",
+      "slug": "wo-milliardare-wohnen-in-diesen-stadten-leben-die-meisten-superreichen-308cbc",
+      "title": "Wo Milliardäre wohnen: In diesen Städten leben die meisten Superreichen",
+      "first_seen": "2026-09-06T13:29:00.000Z",
+      "last_updated": "2026-09-06T13:29:00.000Z",
+      "topic": [
+        "Soziales"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/reise/milliardaers-rate--an-diesen-orten-wohnen-die-meisten-superreichen-35544746.html",
+          "title": "Wo Milliardäre wohnen: In diesen Städten leben die meisten Superreichen",
+          "summary": "Wohlstand zeigt sich häufig dort, wo viele Superreiche leben. Wo das ist? Oft in den USA - nicht so sehr Deutschland. In diesen Städten gibt es die meisten Millionäre und Milliardäre.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:29:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "cf0917cd77f0db537006c3a4838aad435776224b2a42500e53e6f655c347adbe",
+          "source_item_id": "76c6602dba146be480991ebd42aad2516dbd26c11c28df28e940e6f70ff24ced",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:29:00.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d1170e1bdc308cbc-claim-01",
+          "story_id": "wt-d1170e1bdc308cbc",
+          "claim": "Wo Milliardäre wohnen: In diesen Städten leben die meisten Superreichen: Wohlstand zeigt sich häufig dort, wo viele Superreiche leben. Wo das ist? Oft in den USA - nicht so sehr Deutschland. In diesen Städten gibt es die meisten Millionäre und Milliardäre.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        }
+      ],
+      "content_hash": "ad9e87de2cabbc5c832c1b192f7e97a1c72529acc1e0f1def974332bb8414625",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T14:06:15.545Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T13:51:15.545Z",
+      "event_first_seen_at": "2026-09-06T13:51:15.545Z",
+      "event_detected_at": "2026-09-06T13:51:15.545Z",
+      "event_id": "event-24fed1f6bc0fae6ca9a4",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.259083333333333,
+        "detection_delay_minutes": 22.259083333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "053f1f43123b1696baee5fb3857bef45d24ab7a1e9f197acc519d1054fe8747b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T13:51:15.545Z",
+      "rejection": {
+        "at": "2026-09-06T13:51:15.545Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
       "story_id": "wt-0fa140930225eed0",
       "slug": "judoka-timo-cavelius-nimmt-nach-angriff-stellung-ich-war-erst-mal-in-schockstarre-25eed0",
       "title": "Judoka Timo Cavelius nimmt nach Angriff Stellung: „Ich war erst mal in Schockstarre“",
@@ -622,201 +1622,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-7d7a59cf8e16cea9",
-      "slug": "millionen-daten-geleakt-hackerangriff-konnte-grossere-folgen-haben-als-bisher-gedacht-16cea9",
-      "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
-      "first_seen": "2026-09-06T13:07:37.000Z",
-      "last_updated": "2026-09-06T13:09:16.000Z",
-      "topic": [
-        "Digitalisierung"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/millionen-daten-geleakt--hackerangriff-koennte-groessere-folgen-haben-als-bisher-gedacht-38213080.html",
-          "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
-          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:07:37.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "327e9e51cacf94197e2d3c10b9f835232081b7e604057467309a81d2ef063562",
-          "source_item_id": "d37c8512d460a864f6e0273b30e4935063f484e810dd70c9fc8d4399d966eda8",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:07:37.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-millionen-daten-geleakt-16023523.html",
-          "title": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht",
-          "summary": "Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:09:16.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "d983009c2b3697205735c5e2516137d729c8fc437c5831e3e7b8051519ca4c22",
-          "source_item_id": "b90fed8b8eaacd013ed9980800610b729af0af499ecd121056e6494a6e06f15d",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:09:16.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-7d7a59cf8e16cea9-claim-01",
-          "story_id": "wt-7d7a59cf8e16cea9",
-          "claim": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
-        },
-        {
-          "claim_id": "wt-7d7a59cf8e16cea9-claim-02",
-          "story_id": "wt-7d7a59cf8e16cea9",
-          "claim": "Millionen Daten geleakt: Hackerangriff könnte größere Folgen haben als bisher gedacht: Rund 1,44 Millionen Dateien der Berliner Verwaltung stehen seit Freitag im Darknet. Das Ausmaß könnte viel weitreichender sein als angenommen. Warum Politiker und Experten scharfe Kritik äußern.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
-        }
-      ],
-      "content_hash": "b9c2036b0c511bb18716fd87eebb6fb3dafa977be03c37c05037bb2b98a005ef",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-06T13:36:40.973Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
-      "event_first_seen_at": "2026-09-06T13:21:40.973Z",
-      "event_detected_at": "2026-09-06T13:21:40.973Z",
-      "event_id": "event-ca921f1d3261813a142c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 38,
-        "public_relevance": "mittel",
-        "topics": [
-          "Digitalisierung"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 12.416216666666667,
-        "detection_delay_minutes": 12.416216666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
-        "fingerprint": "207c589e60bf8de390c10e6219570585f4a42af9fa6347b5dc9a448de1f5818d",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T13:21:40.973Z",
-      "rejection": {
-        "at": "2026-09-06T13:21:40.973Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -1832,148 +2637,6 @@
       }
     },
     {
-      "story_id": "wt-ed0f00e58dfe544f",
-      "slug": "lawrow-deutschland-will-wieder-krieg-gegen-russland-fe544f",
-      "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
-      "first_seen": "2026-09-06T12:55:53.000Z",
-      "last_updated": "2026-09-06T12:55:53.000Z",
-      "topic": [
-        "Geopolitik",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/lawrow--deutschland-will--wieder-krieg--gegen-russland-38213060.html",
-          "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
-          "summary": "Der russische Außenminister Sergej Lawrow hat Berlin beschuldigt, „wieder Krieg“ gegen Russland zu wollen. Zu dem Drohnenvorfall in Leipzig sagte Lawrow: „Sie haben erklärt, es handele sich um eine russische Drohne, ohne dass jemand versucht hätte, genauer nachzuforschen.“ Er fügte dann laut Berichten russischer Nachrichtenagenturen vom Sonntag hinzu: „Dies ist letztlich der Beginn eines echten Krieges.“",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:55:53.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "d64a8e9458cf25953334ecad301d45e9ef9501f00cfba69e4d386b9414612a00",
-          "source_item_id": "026ac61d6a9d1c3dcff70ead252cebae67a715a02f31f0cedd18a7ca2d1b6e3a",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T12:55:53.000Z",
-          "ingested_at": "2026-09-06T13:06:40.348Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-ed0f00e58dfe544f-claim-01",
-          "story_id": "wt-ed0f00e58dfe544f",
-          "claim": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland: Der russische Außenminister Sergej Lawrow hat Berlin beschuldigt, „wieder Krieg“ gegen Russland zu wollen. Zu dem Drohnenvorfall in Leipzig sagte Lawrow: „Sie haben erklärt, es handele sich um eine russische Drohne, ohne dass jemand versucht hätte, genauer nachzuforschen.“ Er fügte dann laut Berichten russischer Nachrichtenagenturen vom Sonntag hinzu: „Dies ist letztlich der Beginn eines echten Krieges.“",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:06:40.348Z"
-        }
-      ],
-      "content_hash": "00ec4e600a7742b9b824b870761c7f050878f42eb642fa4b79de25470e1efb8f",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-06T13:21:40.348Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T13:06:40.348Z",
-      "event_first_seen_at": "2026-09-06T13:06:40.348Z",
-      "event_detected_at": "2026-09-06T13:06:40.348Z",
-      "event_id": "event-3668bca1040e9350b498",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 46,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik",
-          "Wirtschaft"
-        ],
-        "dimensions": [],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 10.789133333333334,
-        "detection_delay_minutes": 10.789133333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T13:06:40.348Z",
-        "fingerprint": "9b4045a9611752a9575fe1f188b72ba025ac3a12d34fe3247c8c67c1621e1e03",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T13:06:40.348Z",
-      "rejection": {
-        "at": "2026-09-06T13:06:40.348Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
       "story_id": "wt-ecf4b205df1ecac3",
       "slug": "kriegsfolgen-bombenentscharfung-tausende-kieler-mussen-aus-wohnungen-1ecac3",
       "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
@@ -2147,7 +2810,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T08:42:13.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2229,7 +2892,7 @@
           "title": "Strom-Sabotage: Polizei sucht Tatverdächtigen",
           "summary": "Zahlreiche Einsatzkräfte durchsuchen am Sonntag den Hambacher Forst. Die Fahndung nach Daniel V. läuft. Alle Infos im Ticker.",
           "source_type": "media_rss",
-          "published_at": "2026-09-06T13:13:05.000Z",
+          "published_at": "2026-09-06T13:31:59.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
@@ -2245,8 +2908,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:13:05.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
+          "source_published_at": "2026-09-06T13:31:59.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2275,7 +2938,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-55bd06a2965313bb-claim-02",
@@ -2295,7 +2958,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-55bd06a2965313bb-claim-03",
@@ -2315,7 +2978,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-55bd06a2965313bb-claim-04",
@@ -2335,23 +2998,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:21:40.973Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         }
       ],
       "content_hash": "a023b5dcc12b35d8dcd5c6d16f88d8cbd3f085299188521d19c27b9a7a84237d",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "AI_SUMMARY_SENTENCE_COUNT",
         "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-06T13:36:40.973Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-06T14:21:15.545Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T13:21:40.973Z",
+      "updated_at": "2026-09-06T13:51:15.545Z",
       "event_first_seen_at": "2026-09-06T10:51:35.145Z",
       "event_detected_at": "2026-09-06T10:51:35.145Z",
       "event_id": "event-d55562d813347a032496",
@@ -2384,21 +3047,263 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.59955,
+        "source_age_minutes": 19.27575,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 150.09713333333335,
+        "queue_age_minutes": 179.67333333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 96,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:21:40.973Z",
+        "checked_at": "2026-09-06T13:51:15.545Z",
         "fingerprint": "097d032076f954ef570cbbaf1e3a8d3491cbb865e7bf3cbb40edd8c3db788544",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-b7c356fdc686f6f2",
+      "slug": "drohnen-vorfall-am-flughafen-leipzig-halle-bundesregierung-will-drohnenabwehr-ausbauen-86f6f2",
+      "title": "Drohnen-Vorfall am Flughafen Leipzig/Halle: Bundesregierung will Drohnenabwehr ausbauen",
+      "first_seen": "2026-09-06T08:20:46.000Z",
+      "last_updated": "2026-09-06T12:41:00.000Z",
+      "topic": [
+        "Geopolitik",
+        "Politik",
+        "Gesellschaft",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/deutschland/politik/drohnenabwehr-158.html",
+          "title": "Bundesregierung will Drohnenabwehr ausbauen",
+          "summary": "Bundesinnenminister Alexander Dobrindt will nach dem gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle einen umfassenden Schutzschirm gegen Drohnen-Angriffe aufstellen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:41:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "9ed7a12f1e636bb518a8771065a62de5110346923cd73373fa7b9e331815dacf",
+          "source_item_id": "18b415c492c3d3b55c24d5e4d7ea66b6bcdd3bfbb741d637ff6fada8c458323a",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:41:00.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/drohnenabwehr-bundesregierung-will-drohnenabwehr-ausbauen/100252341.html",
+          "title": "Drohnen-Vorfall: Regierung betont Abwehrbereitschaft gegen hybride Angriffe",
+          "summary": "Nach dem gescheiterten Drohnen-Angriff in Leipzig warnt Kanzler Merz Russland und zieht Parallelen zur Zeit des Kalten Krieges. Abwehrmaßnahmen sollen verstärkt werden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:22:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "e953746b651c49d2ed69bd9bda9c99320c6fb2ee40532b49fa81debc8c5f91ac",
+          "source_item_id": "3537851ccd8a5f8049530961b4a89215847a06ac0406cb2609074834d18b1106",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:22:00.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/nach-gescheitertem-anschlag-in-leipzig-bundesregierung-will-die-drohnenabwehr-ausbauen-16021896.html",
+          "title": "Nach gescheitertem Anschlag in Leipzig: Bundesregierung will die Drohnenabwehr ausbauen",
+          "summary": "Innenminister Dobrindt erwartet zunehmende hybride Angriffe und will ihre Abwehr etwa durch einen Schutzschirm ausbauen. Die Abwehr soll auch durch Unternehmen der kritischen Infrastruktur erfolgen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T05:56:51.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a4362b752945369ab0ca49eaf3c182186e81ac351c130fa920bf6081a2c8e24e",
+          "source_item_id": "0824ebb8f7d90ef45ea4fbf2939b5bb3020ebfb0a6367c2b08cb66a2d293f695",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T05:56:51.000Z",
+          "ingested_at": "2026-09-06T09:06:22.155Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b7c356fdc686f6f2-claim-01",
+          "story_id": "wt-b7c356fdc686f6f2",
+          "claim": "Bundesregierung will Drohnenabwehr ausbauen: Bundesinnenminister Alexander Dobrindt will nach dem gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle einen umfassenden Schutzschirm gegen Drohnen-Angriffe aufstellen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        },
+        {
+          "claim_id": "wt-b7c356fdc686f6f2-claim-02",
+          "story_id": "wt-b7c356fdc686f6f2",
+          "claim": "Drohnen-Vorfall: Regierung betont Abwehrbereitschaft gegen hybride Angriffe: Nach dem gescheiterten Drohnen-Angriff in Leipzig warnt Kanzler Merz Russland und zieht Parallelen zur Zeit des Kalten Krieges. Abwehrmaßnahmen sollen verstärkt werden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        },
+        {
+          "claim_id": "wt-b7c356fdc686f6f2-claim-03",
+          "story_id": "wt-b7c356fdc686f6f2",
+          "claim": "Nach gescheitertem Anschlag in Leipzig: Bundesregierung will die Drohnenabwehr ausbauen: Innenminister Dobrindt erwartet zunehmende hybride Angriffe und will ihre Abwehr etwa durch einen Schutzschirm ausbauen. Die Abwehr soll auch durch Unternehmen der kritischen Infrastruktur erfolgen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        }
+      ],
+      "content_hash": "5089881059e254a11fc6a8622905c7bd8ce760529570c92427beb6c9fa8d47dd",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
+      ],
+      "quality_retry_count": 3,
+      "quality_retry_after": "2026-09-06T14:51:15.545Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-06T13:51:15.545Z",
+      "event_first_seen_at": "2026-09-06T08:36:36.761Z",
+      "event_detected_at": "2026-09-06T08:36:36.761Z",
+      "event_id": "event-e43611c7b733caf8ee2c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Geopolitik",
+          "Politik",
+          "Gesellschaft",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 70.25908333333334,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 314.6464,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 71,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "ba5fbd9fbecb458befc338b53fd608b7b85caf3e3717e95676b7b9ef27f3a655",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -5328,248 +6233,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "story_id": "wt-b7c356fdc686f6f2",
-      "slug": "drohnen-vorfall-am-flughafen-leipzig-halle-bundesregierung-will-drohnenabwehr-ausbauen-86f6f2",
-      "title": "Drohnen-Vorfall am Flughafen Leipzig/Halle: Bundesregierung will Drohnenabwehr ausbauen",
-      "first_seen": "2026-09-06T08:20:46.000Z",
-      "last_updated": "2026-09-06T12:22:00.000Z",
-      "topic": [
-        "Geopolitik",
-        "Politik",
-        "Gesellschaft",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/politik/drohnenabwehr-158.html",
-          "title": "Nach Drohnen-Vorfall: Bundesregierung will Drohnenabwehr ausbauen",
-          "summary": "Bundesinnenminister Alexander Dobrindt will nach dem gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle einen umfassenden Schutzschirm gegen Drohnen-Angriffe aufstellen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:41:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "b0ba3666e8d2ba9c11e94c26cc94572e6dbef9db89f3e7422c246ea6c1a84824",
-          "source_item_id": "18b415c492c3d3b55c24d5e4d7ea66b6bcdd3bfbb741d637ff6fada8c458323a",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T12:41:00.000Z",
-          "ingested_at": "2026-09-06T13:06:40.348Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/deutschland/drohnenabwehr-bundesregierung-will-drohnenabwehr-ausbauen/100252341.html",
-          "title": "Drohnen-Vorfall: Regierung betont Abwehrbereitschaft gegen hybride Angriffe",
-          "summary": "Nach dem gescheiterten Drohnen-Angriff in Leipzig warnt Kanzler Merz Russland und zieht Parallelen zur Zeit des Kalten Krieges. Abwehrmaßnahmen sollen verstärkt werden.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:22:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "e953746b651c49d2ed69bd9bda9c99320c6fb2ee40532b49fa81debc8c5f91ac",
-          "source_item_id": "3537851ccd8a5f8049530961b4a89215847a06ac0406cb2609074834d18b1106",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T12:22:00.000Z",
-          "ingested_at": "2026-09-06T13:06:40.348Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/nach-gescheitertem-anschlag-in-leipzig-bundesregierung-will-die-drohnenabwehr-ausbauen-16021896.html",
-          "title": "Nach gescheitertem Anschlag in Leipzig: Bundesregierung will die Drohnenabwehr ausbauen",
-          "summary": "Innenminister Dobrindt erwartet zunehmende hybride Angriffe und will ihre Abwehr etwa durch einen Schutzschirm ausbauen. Die Abwehr soll auch durch Unternehmen der kritischen Infrastruktur erfolgen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T05:56:51.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "a4362b752945369ab0ca49eaf3c182186e81ac351c130fa920bf6081a2c8e24e",
-          "source_item_id": "0824ebb8f7d90ef45ea4fbf2939b5bb3020ebfb0a6367c2b08cb66a2d293f695",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T05:56:51.000Z",
-          "ingested_at": "2026-09-06T09:06:22.155Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-b7c356fdc686f6f2-claim-01",
-          "story_id": "wt-b7c356fdc686f6f2",
-          "claim": "Nach Drohnen-Vorfall: Bundesregierung will Drohnenabwehr ausbauen: Bundesinnenminister Alexander Dobrindt will nach dem gescheiterten Drohnenangriff auf den Flughafen Leipzig/Halle einen umfassenden Schutzschirm gegen Drohnen-Angriffe aufstellen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:06:40.348Z"
-        },
-        {
-          "claim_id": "wt-b7c356fdc686f6f2-claim-02",
-          "story_id": "wt-b7c356fdc686f6f2",
-          "claim": "Drohnen-Vorfall: Regierung betont Abwehrbereitschaft gegen hybride Angriffe: Nach dem gescheiterten Drohnen-Angriff in Leipzig warnt Kanzler Merz Russland und zieht Parallelen zur Zeit des Kalten Krieges. Abwehrmaßnahmen sollen verstärkt werden.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:06:40.348Z"
-        },
-        {
-          "claim_id": "wt-b7c356fdc686f6f2-claim-03",
-          "story_id": "wt-b7c356fdc686f6f2",
-          "claim": "Nach gescheitertem Anschlag in Leipzig: Bundesregierung will die Drohnenabwehr ausbauen: Innenminister Dobrindt erwartet zunehmende hybride Angriffe und will ihre Abwehr etwa durch einen Schutzschirm ausbauen. Die Abwehr soll auch durch Unternehmen der kritischen Infrastruktur erfolgen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:06:40.348Z"
-        }
-      ],
-      "content_hash": "f7ac228ab2076403d8aa1407af4fb8c3a461a856d3590f3e9d561bf9b9d719ec",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED"
-      ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-06T13:36:40.348Z",
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-06T13:06:40.348Z",
-      "event_first_seen_at": "2026-09-06T08:36:36.761Z",
-      "event_detected_at": "2026-09-06T08:36:36.761Z",
-      "event_id": "event-e43611c7b733caf8ee2c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 56,
-        "public_relevance": "hoch",
-        "topics": [
-          "Geopolitik",
-          "Politik",
-          "Gesellschaft",
-          "Wirtschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Infrastruktur oder Versorgungskapazität"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 25.672466666666665,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 270.0597833333333,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 89,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T13:06:40.348Z",
-        "fingerprint": "c40a08de919e5237be3065afb137ded6f35249456148e92d8e85162fc0516535",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -18025,7 +18688,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -18058,7 +18721,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -18091,7 +18754,40 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Landtagswahlen-in-Sachsen-Anhalt/!6209066",
+          "title": "Landtagswahlen in Sachsen-Anhalt: Ein Dorf vor der Wahl",
+          "summary": "Was macht es mit einem Ort, wenn Nachbarn nicht mehr miteinander reden können, weil die eine Hälfte AfD wählt und die andere angstvoll schweigt? Ein Heimatbesuch. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:35:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "61116a88acea3024e82f959cdb8206e322362ca544c9d267be08b6297b9ebd1b",
+          "source_item_id": "9635f0cb08554f06c5ad08337f2811c5e83aa740dedacdd15564f152d4e92193",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:35:00.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -18120,7 +18816,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -18140,7 +18836,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -18160,7 +18856,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -18180,7 +18876,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -18200,7 +18896,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -18220,7 +18916,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -18240,7 +18936,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -18260,7 +18956,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -18280,7 +18976,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -18300,7 +18996,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -18320,7 +19016,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -18340,7 +19036,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -18360,7 +19056,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -18380,7 +19076,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -18400,7 +19096,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -18420,7 +19116,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -18440,7 +19136,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -18460,7 +19156,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -18480,7 +19176,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -18500,7 +19196,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
@@ -18520,10 +19216,30 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-22",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Landtagswahlen in Sachsen-Anhalt: Ein Dorf vor der Wahl: Was macht es mit einem Ort, wenn Nachbarn nicht mehr miteinander reden können, weil die eine Hälfte AfD wählt und die andere angstvoll schweigt? Ein Heimatbesuch. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T13:51:15.545Z"
         }
       ],
-      "content_hash": "cb6a0074639070a3b26a2c8d84b3750ff2738e2702588a972c7e7f6b6197a703",
+      "content_hash": "d9745f0ba8831ddc9819bbcbe93c8d55d9c66bfc762db01991776a13e66c4a81",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
@@ -18536,7 +19252,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T13:36:20.439Z",
+      "updated_at": "2026-09-06T13:51:15.545Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -18579,21 +19295,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 378.34065,
+        "source_age_minutes": 16.259083333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3284.6213333333335,
+        "queue_age_minutes": 3299.5397666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 21,
+        "news_freshness_score": 97,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:36:20.439Z",
-        "fingerprint": "da5957a2d5973bb8347f2121d629188a6bad353f609cac3220931cba0eb170de",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "fingerprint": "4f06e4e777914a41f6a4b1af1f2fb21ee1e17ce0b24ce5243efa948c106d68d1",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
         ],
@@ -37518,10 +38234,10 @@
       ],
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "c601231694b343dabcfa5be2285f3420c48249d8e655a553f7d4c01bd0d1124c",
-        "checked_at": "2026-09-06T07:36:23.375Z",
-        "outcome": "no_material_update",
-        "expires_at": "2026-09-06T13:36:23.375Z",
+        "fingerprint": "5cef186ffad31a6460d63520f1fe0fbd58231c8f9f75ddc1058b17d1e3f3772f",
+        "checked_at": "2026-09-06T13:51:15.545Z",
+        "outcome": "input_too_large",
+        "expires_at": "2026-09-06T19:51:15.545Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -37988,7 +38704,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T07:36:23.375Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -38087,7 +38803,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -38167,13 +38883,13 @@
             "publisher": "taz",
             "url": "https://taz.de/Sachsen-Anhalt/!6210514",
             "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
-            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: Das Ringen damit, vor Ort weiterzumachen - oder zu gehen. mehr...",
+            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen - oder zu gehen. mehr...",
             "source_type": "media_rss",
             "published_at": "2026-09-06T06:36:00.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
-            "content_hash": "4bf0ae8999a493eb38a43523468d423c918dbf51763f69537bad330ddb2a6a66",
+            "content_hash": "cedb03632c290325084c9ed10d0ef1498e806262abaf1cd167cc7e0603b84dce",
             "source_item_id": "f363844a39f1eb4c8196fcc3e09e309040f6e7b42f9942bb90cf76341686c882",
             "publisher_id": "taz",
             "publisher_kind": "journalism",
@@ -38186,7 +38902,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -38194,10 +38910,904 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Landtagswahlen-in-Sachsen-Anhalt/!6209066",
+            "title": "Landtagswahlen in Sachsen-Anhalt: Ein Dorf vor der Wahl",
+            "summary": "Was macht es mit einem Ort, wenn Nachbarn nicht mehr miteinander reden können, weil die eine Hälfte AfD wählt und die andere angstvoll schweigt? Ein Heimatbesuch. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T13:35:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "61116a88acea3024e82f959cdb8206e322362ca544c9d267be08b6297b9ebd1b",
+            "source_item_id": "9635f0cb08554f06c5ad08337f2811c5e83aa740dedacdd15564f152d4e92193",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T13:35:00.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/landtagswahl-2026-wie-donald-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ - mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T09:45:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "2d46190ca5fab3972f744dc6505cc62a03d70611a7887764fdcf3ff9e7dae667",
+            "source_item_id": "7e5f3e639db18e6fa95bb8c3cf3af98811c41d8d0a6c33e845aa967ccad8899c",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T09:45:00.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/landtagswahl-in-sachsen-anhalt-gut-jeder-zweite-hat-schon-abgestimmt-16008484.html",
+            "title": "Landtagswahl in Sachsen-Anhalt: Beteiligung stark gestiegen - gut jeder Zweite hat schon abgestimmt",
+            "summary": "Schulze gibt in Magdeburg seine Stimme ab - Siegmund in Tangermünde + Wahllokale seit 8 Uhr geöffnet + Wirtschaftsweise warnt vor wirtschaftlichen Folgen eines AfD-Siegs + Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1db33a0856a60dd446cd9b3c213a7ed2fc716729c73934701bd3cf6fe20fc04e",
+            "source_item_id": "194f98db12f59336b717e9a315019a44ab8f5e44344c8184fbaf3b141b0ec2b5",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
         ]
       },
-      "deepening_checks": 3
+      "deepening_checks": 3,
+      "pending_update": {
+        "detected_at": "2026-09-06T13:51:15.545Z",
+        "content_hash": "d1bcec26c03c44999bbae87aeb996ae0089444e6f75f42b68cb94f5531403efd",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:02:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
+            "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:02:30.000Z",
+            "ingested_at": "2026-09-04T07:21:13.294Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+            "title": "Sachsen-Anhalt: So ist die Stimmung vor der Landtagswahl",
+            "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T05:58:02.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "a3a882ef2c9caf0802eb9c06a061a0b20942aa6aaecaa7bada5faccfce5da8df",
+            "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T05:58:02.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "wdr-nachrichten"
+            },
+            "collection_source_id": "wdr-nachrichten",
+            "collection_publisher_id": "wdr",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
+            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:07:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
+            "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:07:55.000Z",
+            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
+            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:09:22.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
+            "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:09:22.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
+            "title": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht",
+            "summary": "Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-01T14:38:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "a2e4d8b52b9340ac784ec86e650c17dec22acac070fb481dd92fed8839dea886",
+            "source_item_id": "deeaaefab10d8d6be35c1a4de80f7e4de81e1ca2e130057b3b623d0c4f6aa226",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-01T14:38:55.000Z",
+            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+            "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
+            "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:06:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
+            "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:06:15.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
+            "title": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt",
+            "summary": "Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T13:33:07.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c520b2fed8cbae3e888aab84b15115b053449540cb1ce16bbc5d6381f5c75a14",
+            "source_item_id": "aeb6e86149e7357797f2d2695a41a092f687a2b4fb1497c4f3f5e23d68e6dba2",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T13:33:07.000Z",
+            "ingested_at": "2026-09-05T22:23:21.567Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
+            "title": "Tausende auf der Straße: Zeichen setzen \"für unser Land\"",
+            "summary": "Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:47:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "87d3607ab26afbcab60aed3b95084bfa76b310ff98df25c7114d021cc3071a4d",
+            "source_item_id": "ae0f97241727cfd71284debe9442dad606085a254b21cae8bed1253441ee63b0",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:47:00.000Z",
+            "ingested_at": "2026-09-05T20:36:36.343Z",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
+            "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T19:34:28.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
+            "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T19:34:28.000Z",
+            "ingested_at": "2026-09-05T08:51:16.120Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
+            "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
+            "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magdeburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:54:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "fdf3059172229772727d508a76d7d49f5ab40351e811e9d93893b38a9225db0c",
+            "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:54:53.000Z",
+            "ingested_at": "2026-09-05T11:59:56.834Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
+            "title": "Sachsen-Anhalt vor der Wahl: Ist Bitterfeld bald überall?",
+            "summary": "In Bitterfeld-Wolfen hat die AfD die Bedingungen für das größte Demokratieförderprogramm massiv verändert. Nun fließen gar keine Gelder mehr. Was das für die Stadt bedeutet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T07:41:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3dc55c55677f78a4eaf8236861b571b5ffa5c0b1e03a7614bfa0c572a173c429",
+            "source_item_id": "76a645c64c8f56c4bd49ee9b0dbb72c34b186507734c7a921433d8d29d9bea72",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T07:41:00.000Z",
+            "ingested_at": "2026-09-05T08:51:16.120Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-demokratie-veranstaltungen-100,demonstrationen-110.html",
+            "title": "Veranstaltungen und Demonstrationen vor der Wahl Sachsen-Anhalt - Aktuelle Entwicklungen",
+            "summary": "Einen Tag vor der Landtagswahl finden in ganz Sachsen-Anhalt Demonstrationen und Feste für Demokratie statt. Die aktuelle Lage - live im Ticker.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:08:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "7ef86881460778cf16a7074725e8d2283314b02c4e560be4fd25deb0c447ee60",
+            "source_item_id": "297b16c16b4e4ed43a455ef407b564000be2505ca4eda079f641c8bcfb365dff",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:08:14.000Z",
+            "ingested_at": "2026-09-05T13:54:59.667Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/mehrere-kundgebungen-vor-landtagswahl-parteien-schliessen-wahlkampf-ab-102.html",
+            "title": "Sachsen-Anhalt - Mehrere Kundgebungen vor Landtagswahl - Parteien schließen Wahlkampf ab",
+            "summary": "Einen Tag vor der Landtagswahl in Sachsen-Anhalt haben die Parteien ihren Wahlkampf abgeschlossen. An Veranstaltungen von AfD, Linke und SPD nahmen auch Bundespolitiker teil. CDU, Grüne, FDP und BSW beendeten ebenfalls ihren Wahlkampf.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:15:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9dc8dda134bbd5a990a3bc89d6287eb507d4955f793142a83bf0f220ef4c9a7b",
+            "source_item_id": "0fc05a24b5b765bb48cdd02ccdf3b8afcbd3971e6d1c6c03a26e9310cf333ada",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:15:04.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/afd-maga-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Vor Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ - mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T14:56:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "3945a9b29b190d3b3a725bb6b980ac39cec10dc15c8661960e89fe4b678e4b36",
+            "source_item_id": "93f9609fdaa127812d6085531b6225302a45705677d3b642070eb21a0eaa4e9f",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T14:56:00.000Z",
+            "ingested_at": "2026-09-06T06:06:35.353Z",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/vor-landtagswahl-ganz-deutschland-schaut-auf-sachsen-anhalt,nordmagazin-13810.html",
+            "title": "Vor Landtagswahl: Ganz Deutschland schaut auf Sachsen-Anhalt",
+            "summary": "Am Sonntag wird in dem Bundesland gewählt. Susann Reichenbach informiert aus Magdeburg über die Ausgangslage.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:32:23.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ebf50d80b1d134aff6f1813f91532dffa4a2efde7b3cc4500a9c0c64964749bf",
+            "source_item_id": "4e5d707a3f31ae7b62bdbdbb2a37b40dfad739d35143c28ca51b6620d780c8dd",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:32:23.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/vor-der-wahl-in-sachsen-anhalt-ein-kilometer-in-magdeburg-trennt-zwei-welten-16021800.html",
+            "title": "Vor der Wahl in Sachsen-Anhalt: Ein Kilometer in Magdeburg trennt zwei Welten",
+            "summary": "Zum Wahlkampffinale stellen sich die AfD und die Zivilgesellschaft mit Prominenz, Musik und Sprechchören gegeneinander auf. Nicht wenige haben Angst. Szenen eines dramatischen Abends vor einem historischen Tag.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T20:52:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "88b74625ac7c076dc1d9d138c12296451fc16eaed3fa00fbdbb11eec310a242e",
+            "source_item_id": "1993aa01753006f7007bcba776e0e3b7da43941e4a88dd2ba24979685db6f336",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T20:52:04.000Z",
+            "ingested_at": "2026-09-06T07:36:23.375Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/wir-holen-uns-unser-land-zuruck-afd-kandidat-siegmund-gibt-sich-vor-wahl-in-sachsen-anhalt-siegessicher-16008484.html",
+            "title": "„Wir holen uns unser Land zurück“: AfD-Kandidat Siegmund gibt sich vor Wahl in Sachsen-Anhalt siegessicher",
+            "summary": "Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht + IW-Chef warnt bei AfD-Erfolg vor „ruinöser“ Zuwanderungspolitik + Wahlforscher erwarten keine Überraschung wie 2021 + Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "6486b93368b3cf9bacbeb0189c89b3926875ab5daf941525d1149a51d993f1f7",
+            "source_item_id": "cf9cd5a422422d15071b68becded9dec89077a4a6d88c225b1e493a3d91813ae",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T06:06:35.353Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Vor-der-Landtagswahl-in-Sachsen-Anhalt/!6206552",
+            "title": "Vor der Landtagswahl in Sachsen-Anhalt: Plattenverschiebung",
+            "summary": "In Halle-Neustadt wohnen Jüngere mit Migrationsgeschichte und Ältere mit DDR-Biografie. Wie schauen sie auf ihr Viertel und die Politik? mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T05:57:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "4a0b704d816bb10ce152dfd2a920b4f03599047bb4096ad5d1b803f79f4337d4",
+            "source_item_id": "3c97285946552732f23458fe4e6874824a2564fbe3ff73d41afe2b3f104f70c0",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T05:57:00.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/landtagswahl-2026-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ - mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:08:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "69aff136a920ebf08003e827d4c23de738988afe5353a3c88024abd50861ae9a",
+            "source_item_id": "7435e069dd716de781c511ed4112d65ae73ebd1ba9a4d3602c6f01eaefd19cc3",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:08:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/rund-169-millionen-menschen-durfen-abstimmendie-wahllokale-in-sachsen-anhalt-haben-geoffnet-16008484.html",
+            "title": "Rund 1,69 Millionen Menschen dürfen abstimmen: Die Wahllokale in Sachsen-Anhalt haben geöffnet",
+            "summary": "Wirtschaftsweise warnt vor wirtschaftlichen Folgen eines AfD-Siegs + AfD setzt auf einen Ministerpräsidenten Siegmund + Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht+ Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ab1ee55a48566cbe2e25389a868922c9b611af1565c47762c73510e30977e3a9",
+            "source_item_id": "65161320947043465aea07f5f6928e2510e855616ea1a5d9fd0cb7312734be6e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T07:36:23.375Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Sachsen-Anhalt/!6210514",
+            "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
+            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen - oder zu gehen. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:36:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "cedb03632c290325084c9ed10d0ef1498e806262abaf1cd167cc7e0603b84dce",
+            "source_item_id": "f363844a39f1eb4c8196fcc3e09e309040f6e7b42f9942bb90cf76341686c882",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:36:00.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Landtagswahlen-in-Sachsen-Anhalt/!6209066",
+            "title": "Landtagswahlen in Sachsen-Anhalt: Ein Dorf vor der Wahl",
+            "summary": "Was macht es mit einem Ort, wenn Nachbarn nicht mehr miteinander reden können, weil die eine Hälfte AfD wählt und die andere angstvoll schweigt? Ein Heimatbesuch. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T13:35:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "61116a88acea3024e82f959cdb8206e322362ca544c9d267be08b6297b9ebd1b",
+            "source_item_id": "9635f0cb08554f06c5ad08337f2811c5e83aa740dedacdd15564f152d4e92193",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T13:35:00.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/landtagswahl-2026-wie-donald-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ - mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T09:45:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "2d46190ca5fab3972f744dc6505cc62a03d70611a7887764fdcf3ff9e7dae667",
+            "source_item_id": "7e5f3e639db18e6fa95bb8c3cf3af98811c41d8d0a6c33e845aa967ccad8899c",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T09:45:00.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/landtagswahl-in-sachsen-anhalt-gut-jeder-zweite-hat-schon-abgestimmt-16008484.html",
+            "title": "Landtagswahl in Sachsen-Anhalt: Beteiligung stark gestiegen - gut jeder Zweite hat schon abgestimmt",
+            "summary": "Schulze gibt in Magdeburg seine Stimme ab - Siegmund in Tangermünde + Wahllokale seit 8 Uhr geöffnet + Wirtschaftsweise warnt vor wirtschaftlichen Folgen eines AfD-Siegs + Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1db33a0856a60dd446cd9b3c213a7ed2fc716729c73934701bd3cf6fe20fc04e",
+            "source_item_id": "194f98db12f59336b717e9a315019a44ab8f5e44344c8184fbaf3b141b0ec2b5",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T13:51:15.545Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_INPUT_TOO_LARGE",
+        "quality_errors": [
+          "AI_INPUT_TOO_LARGE"
+        ],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T13:51:15.545Z",
+          "fingerprint": "bfed7c00b8588097d99556ce6a1ba557bb71786a69add94c336a85feef436838",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -137950,7 +139560,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:36:20.439Z"
+          "checked_at": "2026-09-06T13:51:15.545Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -137965,7 +139575,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T13:36:20.439Z",
+      "updated_at": "2026-09-06T13:51:15.545Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -138001,11 +139611,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4273.34065,
+        "source_age_minutes": 4288.259083333333,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3795.05715,
+        "queue_age_minutes": 3809.9755833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -138014,7 +139624,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:36:20.439Z",
+        "checked_at": "2026-09-06T13:51:15.545Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
