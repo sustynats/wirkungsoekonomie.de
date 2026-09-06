@@ -880,6 +880,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     JSON.stringify({
       analyses: [{
         story_id: "string",
+        publication_recommendation: true,
         news_status: "developing|preliminary|confirmed|disputed|corrected|updated",
         publication_depth: "initial|deepened",
         event_claims: [{ claim: "zentrale Tatsachenbehauptung, eigene deutsche Formulierung", status: "single_source_claim|confirmed_claim|disputed_claim|primary_source_claim|uncertain_claim", evidence: [{ evidence_id: "exakte ID einer passenden evidence_segments-Textstelle" }] }],
@@ -919,7 +920,6 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         },
         visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
-        publication_recommendation: true,
       }],
     }),
     "UNTRUSTED_SOURCE_DATA_BEGIN",
