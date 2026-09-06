@@ -87,9 +87,11 @@ export function checkReferenceSceneAudit({ root = ROOT, assetDirectory } = {}) {
 
 if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
   const index = process.argv.indexOf("--assets");
+  if (index >= 0) assert.ok(process.argv[index + 1] && !process.argv[index + 1].startsWith("--"), "ASSET_DIRECTORY_REQUIRED");
   const result = checkReferenceSceneAudit({ assetDirectory: index < 0 ? undefined : process.argv[index + 1] });
   console.log(JSON.stringify(result, null, 2));
   // Audit CI proves correct rejection; normal publication invocation stays red.
   if (process.argv.includes("--expect-rejected")) assert.equal(result.publication_allowed, false, "EXPECTED_REJECTION_DRIFT");
   else if (!result.publication_allowed) process.exitCode = 1;
+  else assert.ok(result.asset_bytes_verified, "PUBLICATION_REQUIRES_VERIFIED_ASSET_BYTES");
 }
