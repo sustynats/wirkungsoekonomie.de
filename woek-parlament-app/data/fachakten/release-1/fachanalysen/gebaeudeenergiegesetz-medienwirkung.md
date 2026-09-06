@@ -1,8 +1,8 @@
-# GEG - vollständige Publikationsquelle
+# GEG – vollständige Publikationsquelle
 
 > Diese Publikationsquelle erhält die vorhandene Langfassung vollständig und ergänzt sie um sämtliche Inhalte der reichhaltigeren strukturierten Fachanalyse. Die Markdown-Fassung allein wird ausdrücklich nicht als vollständige Gesamtanalyse ausgegeben.
 
-## Teil A - vorhandene Fachanalyse unverändert
+## Teil A – vorhandene Fachanalyse unverändert
 
 # Gebäudeenergiegesetz 2023: Medienwirkung und Umsetzung
 
@@ -103,9 +103,9 @@ Es wurde kein Endscore und keine aggregierte Netto-Wirkung berechnet. Vier Reche
 - **GEG-SRC-20 · Energiewirtschaftliches Institut an der Universität zu Köln: Update: Auswirkungen des Gebäudeenergiegesetzes auf Wohngebäude** (2023-09-01), Fundstelle: Szenarien auf Basis des Bundestagsbeschlusses vom 08.09.2023. Unterstützt: Zeigt modellierte Unterschiede zur April-Fassung und die Bedeutung von Wärmeplanung, Wärmenetzen und Wärmepumpen. Grenze: Ist keine Ex-post-Evaluation und keine kausale Messung. https://www.ewi.uni-koeln.de/de/publikationen/update-auswirkungen-des-gebaeudeenergiegesetzes-auf-wohngebaeude/
 
 
-## Teil B - vollständige strukturierte Ergänzung
+## Teil B – vollständige strukturierte Ergänzung
 
-# Strukturierte GEG-Fachanalyse - vollständige JSON-Inhalte
+# Strukturierte GEG-Fachanalyse – vollständige JSON-Inhalte
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 

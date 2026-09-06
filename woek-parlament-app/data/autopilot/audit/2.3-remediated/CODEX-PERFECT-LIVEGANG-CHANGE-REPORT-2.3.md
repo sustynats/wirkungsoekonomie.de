@@ -1,4 +1,4 @@
-# CodeX - Änderungsbericht „Perfekter Livegang“
+# CodeX – Änderungsbericht „Perfekter Livegang“
 
 Stand: 19. August 2026  
 Ausgangscommit: `23129c81d8da8bcaf21923684571bdd0ca2a0c72`  
@@ -8,7 +8,7 @@ Ziel: neuer, ausschließlich auf Staging zu prüfender Release Candidate
 
 Der öffentliche Portalstand ist technisch und gestalterisch für den externen WÖk-Endaudit vorbereitet. Production wurde nicht verändert. Die wiederkehrenden Writer und der Newsletter bleiben während des Audits deaktiviert.
 
-## P0-A - Regierungsakten ohne Laufzeitabbruch
+## P0-A – Regierungsakten ohne Laufzeitabbruch
 
 - Strukturierte amtliche Kennungen werden nicht mehr als React-Children gerendert.
 - Ein zentraler, typisierter Renderer bildet DIP-Dokumente sowie Kabinetts-/Tagesordnungskontexte in lesbare öffentliche Angaben ab.
@@ -16,7 +16,7 @@ Der öffentliche Portalstand ist technisch und gestalterisch für den externen W
 - Das Bestandsinventar umfasst 1.931 öffentliche GovernmentActions und 10.088 Kennungswerte in sechs unterstützten Formen; unbekannte Formen im aktuellen Public Store: 0.
 - Die beiden bekannten Regressionen sowie zwei weitere strukturierte Akten liefern HTTP 200 ohne Console-, Page- oder React-Fehler.
 
-## P0-B - WÖk-Kurzbewertung
+## P0-B – WÖk-Kurzbewertung
 
 - „WÖk-Kurzbewertung“ bleibt ein kleines Eyebrow-Label.
 - Die fachliche Einordnung darunter ist ein semantischer Absatz, kein Heading.
@@ -27,7 +27,7 @@ Der öffentliche Portalstand ist technisch und gestalterisch für den externen W
 
 - Bewertungsicons werden ausschließlich aus strukturierten, freigegebenen Richtungswerten und expliziten Präsentationsmodi abgeleitet. Freitext-Heuristiken und ein Positiv-Standardfall wurden entfernt; unbekannte Werte bleiben nicht-direktional.
 - `EU-IMPACT-2026-004` zeigt für seine gegenläufigen Potenziale und Risiken nun konsistent die ambivalente Pfad-Darstellung statt eines positiven Häkchens.
-- Wirkungsanalyse, Quellen und - sofern vorhanden - Handlungsoption stehen auf Government- und EU-Detailseiten vor dem politischen Prozess.
+- Wirkungsanalyse, Quellen und – sofern vorhanden – Handlungsoption stehen auf Government- und EU-Detailseiten vor dem politischen Prozess.
 - Detailseiten besitzen genau eine fachliche Hauptüberschrift; eingebettete Fachakten vermeiden Heading-Sprünge.
 - Öffentliche Systemwerte werden nur mit freigegebenen Klartextzuordnungen gezeigt; unbekannte Werte bleiben ausgeblendet bzw. werden als offen markiert.
 - Technische IDs, Hashes, Dateipfade und Schemawerte wurden aus nutzergerichteten Darstellungen entfernt.

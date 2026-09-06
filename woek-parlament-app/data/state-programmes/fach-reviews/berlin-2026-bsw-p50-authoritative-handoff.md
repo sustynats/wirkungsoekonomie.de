@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW physical PDF page 50 complete source-bound review
+## WÖk FACH BATCH — Berlin BSW physical PDF page 50 complete source-bound review
 
 Fresh continuation after P49 `5457760204`. Frozen artefact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. The P50 opening lines that merely complete the P49 freight-diagnosis paragraph are already classified under P49 and must not be reopened or double-counted. All remaining physical P50 objects are reviewed here. No DNS mapping, Recommendation, score or party-wide judgement.
 
@@ -19,7 +19,7 @@ Bind by exact frozen source text/hash if ordinal numbering differs because the P
 - heading `Baustellen besser koordinieren`, `b16d1dc8e79f`;
 - construction coordination/accountability paragraph, `11e598efb7a0`;
 - planning prioritisation / signals / diversions / TVO paragraph, `8cb3867d37b3`;
-- heading `Luftverkehrsstandort Berlin sichern - bezahlbare Mobilität erhalten`, `49a0173044a5`.
+- heading `Luftverkehrsstandort Berlin sichern – bezahlbare Mobilität erhalten`, `49a0173044a5`.
 
 ## A. Structural / source-claim / non-effect objects
 
@@ -33,7 +33,7 @@ Bind by exact frozen source text/hash if ordinal numbering differs because the P
 - claimed low space, logically excluded conflicts, manageable operating costs and low emissions → `NON_EFFECT_GENERIC_TECHNICAL_AND_OUTCOME_SOURCE_CLAIM_REVIEWED`; `Konflikte ... ausgeschlossen` is explicitly not accepted as fact.
 
 ### headings
-`Baustellen besser koordinieren` and `Luftverkehrsstandort Berlin sichern - bezahlbare Mobilität erhalten` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
+`Baustellen besser koordinieren` and `Luftverkehrsstandort Berlin sichern – bezahlbare Mobilität erhalten` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
 ### Construction/planning framing
 - `Zentrale Straßen- und Schienenprojekte müssen schneller und besser koordiniert umgesetzt werden.` → `NON_EFFECT_DELIVERY_GOAL_REVIEWED`.
@@ -46,22 +46,22 @@ Bind by exact frozen source text/hash if ordinal numbering differs because the P
 
 ### Inland-waterway + BEHALA compound atom
 If frozen atomisation keeps the sentence as one atom, parent becomes `SOURCE_UNIT_RECLASSIFIED_VERSIONED / ZERO_COUNT`; create exact children only:
-- `C01-b6292674d6f6` - `Wir unterstützen den Bund beim Ausbau und der Unterhaltung unserer Binnenwasserstraßen`
-- `C02-b0161509a7e5` - `befürworten eine Stärkung der BEHALA`
+- `C01-b6292674d6f6` — `Wir unterstützen den Bund beim Ausbau und der Unterhaltung unserer Binnenwasserstraßen`
+- `C02-b0161509a7e5` — `befürworten eine Stärkung der BEHALA`
 Different competence/mechanism: federal waterway infrastructure vs Berlin-owned logistics-company strengthening.
 
 ### Freight-centre / cooperation compound
 Parent becomes versioned/non-counting; create exact children with inherited action `Wir unterstützen die Errichtung von Güterverteilzentren ... / wollen ...`:
-- `C01-cf5598327a50` - `Errichtung von Güterverteilzentren am Stadtrand`
-- `C02-a6c9be87c825` - `Errichtung von Güterverteilzentren in Brandenburg`
-- `C03-eb66cad9c38d` - `stärker mit unseren Nachbarn zusammenarbeiten`
+- `C01-cf5598327a50` — `Errichtung von Güterverteilzentren am Stadtrand`
+- `C02-a6c9be87c825` — `Errichtung von Güterverteilzentren in Brandenburg`
+- `C03-eb66cad9c38d` — `stärker mit unseren Nachbarn zusammenarbeiten`
 C03 is terminal RNAA; C01/C02 are active freight-consolidation leaves.
 
 ### Planning/TVO A03 bundle
 Parent becomes versioned/non-counting; create exact children:
-- `C01-f9459550ad20` - `Optimierung von Ampelschaltungen`
-- `C02-15618d21bc3c` - `bessere Anpassung an Umleitungen und Baustellen`
-- `C03-38f3111522c2` - `Ausbau zentraler Verbindungen wie der Tangentialen Verbindung Ost (TVO)`
+- `C01-f9459550ad20` — `Optimierung von Ampelschaltungen`
+- `C02-15618d21bc3c` — `bessere Anpassung an Umleitungen und Baustellen`
+- `C03-38f3111522c2` — `Ausbau zentraler Verbindungen wie der Tangentialen Verbindung Ost (TVO)`
 C03 is a non-counting general-action parent/restatement for the more precise 7.2-km TVO gap-closure leaf on the same page.
 
 ## C. Exact `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
@@ -106,7 +106,7 @@ For each:
 - Cross-state child has additional `BERLIN_BRANDENBURG_PLANNING_LAND_AND_LOGISTICS_GOVERNANCE_DEPENDENCY`.
 - Reality check: origin/destination freight flows, consolidation rate, truck-km, load factors, rail/water share, last-mile mode, land/local impacts and lifecycle cost.
 
-### east/southeast ropeway corridor - exact route proposal
+### east/southeast ropeway corridor — exact route proposal
 Text connects `Friedrichshagen, Müggelheim, die Müggelberge, Wendenschloss und den Bahnhof Grünau`.
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_ROPEWAY_CROSS_RIVER_ACCESS_AND_TOURISM_POTENTIAL / VERY_HIGH_CORRIDOR_DEMAND_COST_ENVIRONMENTAL_AND_INTEGRATION_DEPENDENCE`
@@ -178,7 +178,7 @@ After exact materialisation and repairs:
 
 `BE_BSW_P50_FACH_COMPLETE = PASS_SOURCE_BOUND_OBJECT_LEVEL`
 
-Protected BSW physical Fach scope becomes **P1-P50**. P50 opening freight continuation remains linked to the P49 source unit and must not create a duplicate. Untouched physical BSW envelope becomes **P51-P66 = 16 pages**, unless a newer explicit #240 Fach handoff closes a subset before consumption.
+Protected BSW physical Fach scope becomes **P1–P50**. P50 opening freight continuation remains linked to the P49 source unit and must not create a duplicate. Untouched physical BSW envelope becomes **P51–P66 = 16 pages**, unless a newer explicit #240 Fach handoff closes a subset before consumption.
 
 Berlin remains `3/12 programme-terminal / 9/12 programme-open`; BSW remains programme-open.
 

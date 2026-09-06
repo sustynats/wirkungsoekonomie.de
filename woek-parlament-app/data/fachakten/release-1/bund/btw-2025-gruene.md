@@ -1,4 +1,4 @@
-# Vollständige Fachakte - btw-2025-gruene
+# Vollständige Fachakte – btw-2025-gruene
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -19,7 +19,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Zusammen wachsen - Regierungsprogramm zur Bundestagswahl 2025. Alle 292 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
+**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Zusammen wachsen – Regierungsprogramm zur Bundestagswahl 2025. Alle 292 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
 
 ### source_summary
 
@@ -1809,7 +1809,7 @@ _Leere Liste._
 
 **page:** 16
 
-**text:** Damit wir unseren Wohlstand erneuern und nicht nur verwalten, braucht es ein Land, das einfach funktioniert - einen Staat, der es den Menschen und Unternehmen leichter macht, ihre Ideen umzusetzen, und nicht schwerer: mit einem Klick zur Lösung statt mit einem Dutzend Formularen in den Papierkrieg.
+**text:** Damit wir unseren Wohlstand erneuern und nicht nur verwalten, braucht es ein Land, das einfach funktioniert – einen Staat, der es den Menschen und Unternehmen leichter macht, ihre Ideen umzusetzen, und nicht schwerer: mit einem Klick zur Lösung statt mit einem Dutzend Formularen in den Papierkrieg.
 
 **match_score:** 82.6
 
@@ -1844,7 +1844,7 @@ _Leere Liste._
 
 **source_page:** 16
 
-**source_text:** Damit wir unseren Wohlstand erneuern und nicht nur verwalten, braucht es ein Land, das einfach funktioniert - einen Staat, der es den Menschen und Unternehmen leichter macht, ihre Ideen umzusetzen, und nicht schwerer: mit einem Klick zur Lösung statt mit einem Dutzend Formularen in den Papierkrieg.
+**source_text:** Damit wir unseren Wohlstand erneuern und nicht nur verwalten, braucht es ein Land, das einfach funktioniert – einen Staat, der es den Menschen und Unternehmen leichter macht, ihre Ideen umzusetzen, und nicht schwerer: mit einem Klick zur Lösung statt mit einem Dutzend Formularen in den Papierkrieg.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -1858,7 +1858,7 @@ _Leere Liste._
 
 **measure:** Damit wir unseren Wohlstand erneuern und nicht nur verwalten, braucht es ein …
 
-**intended_change:** Vorgesehene Veränderung: Damit wir unseren Wohlstand erneuern und nicht nur verwalten, braucht es ein Land, das einfach funktioniert - einen Staat, der es den Menschen und Unternehmen leichter macht, ihre Ideen umzusetzen, und nicht schwerer: mit einem Klick zur Lösung statt mit einem Dutzend Formularen in den Papierkrieg.
+**intended_change:** Vorgesehene Veränderung: Damit wir unseren Wohlstand erneuern und nicht nur verwalten, braucht es ein Land, das einfach funktioniert – einen Staat, der es den Menschen und Unternehmen leichter macht, ihre Ideen umzusetzen, und nicht schwerer: mit einem Klick zur Lösung statt mit einem Dutzend Formularen in den Papierkrieg.
 
 ###### Eintrag 2
 
@@ -1976,7 +1976,7 @@ _Leere Liste._
 
 **source_location:** 16 BÜNDNIS 90 / DIE GRÜNEN
 
-**intended_change:** Vorgesehene Veränderung: Wir sorgen dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher macht - ob mit dem Bus, der Bahn oder dem E- Auto.
+**intended_change:** Vorgesehene Veränderung: Wir sorgen dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher macht – ob mit dem Bus, der Bahn oder dem E- Auto.
 
 **measure:** dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher …
 
@@ -2194,7 +2194,7 @@ _Leere Liste._
 
 **page:** 17
 
-**text:** Wir sorgen dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher macht - ob mit dem Bus, der Bahn oder dem E- Auto.
+**text:** Wir sorgen dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher macht – ob mit dem Bus, der Bahn oder dem E- Auto.
 
 **match_score:** 77.6
 
@@ -2217,7 +2217,7 @@ _Leere Liste._
 
 **source_page:** 17
 
-**source_text:** Wir sorgen dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher macht - ob mit dem Bus, der Bahn oder dem E- Auto.
+**source_text:** Wir sorgen dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher macht – ob mit dem Bus, der Bahn oder dem E- Auto.
 
 **topic:** MOBILITY_INFRASTRUCTURE
 
@@ -2231,7 +2231,7 @@ _Leere Liste._
 
 **measure:** dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher …
 
-**intended_change:** Vorgesehene Veränderung: Wir sorgen dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher macht - ob mit dem Bus, der Bahn oder dem E- Auto.
+**intended_change:** Vorgesehene Veränderung: Wir sorgen dafür, dass der Zugang zu elektrischer Mobilität die Fortbewegung komfortabler und erschwinglicher macht – ob mit dem Bus, der Bahn oder dem E- Auto.
 
 
 ##### component_topics
@@ -16142,7 +16142,7 @@ _Leere Liste._
 
 **page:** 26
 
-**text:** Die gestiegene Bedeutung der Raumfahrt für Geopolitik, Sicherheit und Nachhaltigkeit muss sich noch stärker in nötigen Investitionen, einer wettbewerbsfähigen europäischen Raumfahrtindustrie, NewSpace- Geschäftsmodellen sowie einem souveränen Zugang zum Weltraum - etwa für Satellitenkommunikation,-navigation und Erdbeobachtung - widerspiegeln.
+**text:** Die gestiegene Bedeutung der Raumfahrt für Geopolitik, Sicherheit und Nachhaltigkeit muss sich noch stärker in nötigen Investitionen, einer wettbewerbsfähigen europäischen Raumfahrtindustrie, NewSpace- Geschäftsmodellen sowie einem souveränen Zugang zum Weltraum – etwa für Satellitenkommunikation,-navigation und Erdbeobachtung – widerspiegeln.
 
 **match_score:** 98.5
 
@@ -16167,7 +16167,7 @@ _Leere Liste._
 
 **top_score:** 98.5
 
-**input_register_text:** Der Entfaltung dieser Kraft Die gestiegene Bedeutung der Raumfahrt wollen wir Rückenwind geben. für Geopolitik, Sicherheit und Nachhaltigkeit muss sich noch stärker in nötigen Das Handwerk bietet in einer nachhaltigen Investitionen, einer wettbewerbsfähigen Wirtschaft krisensichere Arbeitsplätze. europäischen Raumfahrtindustrie, New- Durch Bürokratieabbau, die Unterstüt- Space- Geschäftsmodellen sowie einem zung bei Nachfolgen und die gezielte souveränen Zugang zum Weltraum - etwa Förderung der Ausbildung im Handwerk für Satellitenkommunikation, -navigation wollen wir die Rahmenbedingungen und Erdbeobachtung - widerspiegeln. verbessern.
+**input_register_text:** Der Entfaltung dieser Kraft Die gestiegene Bedeutung der Raumfahrt wollen wir Rückenwind geben. für Geopolitik, Sicherheit und Nachhaltigkeit muss sich noch stärker in nötigen Das Handwerk bietet in einer nachhaltigen Investitionen, einer wettbewerbsfähigen Wirtschaft krisensichere Arbeitsplätze. europäischen Raumfahrtindustrie, New- Durch Bürokratieabbau, die Unterstüt- Space- Geschäftsmodellen sowie einem zung bei Nachfolgen und die gezielte souveränen Zugang zum Weltraum – etwa Förderung der Ausbildung im Handwerk für Satellitenkommunikation, -navigation wollen wir die Rahmenbedingungen und Erdbeobachtung – widerspiegeln. verbessern.
 
 ##### source_components
 
@@ -16177,7 +16177,7 @@ _Leere Liste._
 
 **source_page:** 26
 
-**source_text:** Die gestiegene Bedeutung der Raumfahrt für Geopolitik, Sicherheit und Nachhaltigkeit muss sich noch stärker in nötigen Investitionen, einer wettbewerbsfähigen europäischen Raumfahrtindustrie, NewSpace- Geschäftsmodellen sowie einem souveränen Zugang zum Weltraum - etwa für Satellitenkommunikation,-navigation und Erdbeobachtung - widerspiegeln.
+**source_text:** Die gestiegene Bedeutung der Raumfahrt für Geopolitik, Sicherheit und Nachhaltigkeit muss sich noch stärker in nötigen Investitionen, einer wettbewerbsfähigen europäischen Raumfahrtindustrie, NewSpace- Geschäftsmodellen sowie einem souveränen Zugang zum Weltraum – etwa für Satellitenkommunikation,-navigation und Erdbeobachtung – widerspiegeln.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -16191,7 +16191,7 @@ _Leere Liste._
 
 **measure:** Die gestiegene Bedeutung der Raumfahrt für Geopolitik, Sicherheit und Nachhaltigkeit muss sich …
 
-**intended_change:** Vorgesehene Veränderung: Die gestiegene Bedeutung der Raumfahrt für Geopolitik, Sicherheit und Nachhaltigkeit muss sich noch stärker in nötigen Investitionen, einer wettbewerbsfähigen europäischen Raumfahrtindustrie, NewSpace- Geschäftsmodellen sowie einem souveränen Zugang zum Weltraum - etwa für Satellitenkommunikation,-navigation und Erdbeobachtung - widerspiegeln.
+**intended_change:** Vorgesehene Veränderung: Die gestiegene Bedeutung der Raumfahrt für Geopolitik, Sicherheit und Nachhaltigkeit muss sich noch stärker in nötigen Investitionen, einer wettbewerbsfähigen europäischen Raumfahrtindustrie, NewSpace- Geschäftsmodellen sowie einem souveränen Zugang zum Weltraum – etwa für Satellitenkommunikation,-navigation und Erdbeobachtung – widerspiegeln.
 
 ###### Eintrag 2
 
@@ -17396,9 +17396,9 @@ _Leere Liste._
 
 **source_location:** 26 BÜNDNIS 90 / DIE GRÜNEN
 
-**intended_change:** Vorgesehene Veränderung: Preissteigerungen - wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die Ukraine ausgelöst - können dazu führen, dass das Leben für viele Menschen weniger bezahlbar ist.
+**intended_change:** Vorgesehene Veränderung: Preissteigerungen – wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die Ukraine ausgelöst – können dazu führen, dass das Leben für viele Menschen weniger bezahlbar ist.
 
-**measure:** Preissteigerungen - wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die …
+**measure:** Preissteigerungen – wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die …
 
 ##### decision_readiness
 
@@ -17608,7 +17608,7 @@ _Leere Liste._
 
 **page:** 27
 
-**text:** Preissteigerungen - wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die Ukraine ausgelöst - können dazu führen, dass das Leben für viele Menschen weniger bezahlbar ist.
+**text:** Preissteigerungen – wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die Ukraine ausgelöst – können dazu führen, dass das Leben für viele Menschen weniger bezahlbar ist.
 
 **match_score:** 73.9
 
@@ -17621,7 +17621,7 @@ _Leere Liste._
 
 **top_score:** 73.9
 
-**input_register_text:** Wir unterstützen auf die Ukraine ausgelöst - können dazu den Digital Fairness Act der EU-Kommisführen, dass das Leben für viele Menschen sion und setzen uns dafür ein, dass große weniger bezahlbar ist.
+**input_register_text:** Wir unterstützen auf die Ukraine ausgelöst – können dazu den Digital Fairness Act der EU-Kommisführen, dass das Leben für viele Menschen sion und setzen uns dafür ein, dass große weniger bezahlbar ist.
 
 ##### source_components
 
@@ -17631,7 +17631,7 @@ _Leere Liste._
 
 **source_page:** 27
 
-**source_text:** Preissteigerungen - wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die Ukraine ausgelöst - können dazu führen, dass das Leben für viele Menschen weniger bezahlbar ist.
+**source_text:** Preissteigerungen – wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die Ukraine ausgelöst – können dazu führen, dass das Leben für viele Menschen weniger bezahlbar ist.
 
 **topic:** ENERGY_CLIMATE
 
@@ -17643,9 +17643,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Preissteigerungen - wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die …
+**measure:** Preissteigerungen – wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die …
 
-**intended_change:** Vorgesehene Veränderung: Preissteigerungen - wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die Ukraine ausgelöst - können dazu führen, dass das Leben für viele Menschen weniger bezahlbar ist.
+**intended_change:** Vorgesehene Veränderung: Preissteigerungen – wie zuletzt im Energiesektor durch den russischen Angriffskrieg auf die Ukraine ausgelöst – können dazu führen, dass das Leben für viele Menschen weniger bezahlbar ist.
 
 
 ##### component_topics
@@ -19500,7 +19500,7 @@ _Leere Liste._
 
 **page:** 30
 
-**text:** Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten Bergrecht, das die Ziele Klimaschutz, Umweltschutz und Bürger*innenbeteiligung vereint, und mit beschleunigten und effektiveren Verwaltungsprozessen für den Rohstoffabbau, um - wo möglich - unabhängiger zu werden von Rohstoffimporten.
+**text:** Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten Bergrecht, das die Ziele Klimaschutz, Umweltschutz und Bürger*innenbeteiligung vereint, und mit beschleunigten und effektiveren Verwaltungsprozessen für den Rohstoffabbau, um – wo möglich – unabhängiger zu werden von Rohstoffimporten.
 
 **match_score:** 90.4
 
@@ -19525,7 +19525,7 @@ _Leere Liste._
 
 **top_score:** 90.4
 
-**input_register_text:** Drittens setzen wir auf heimischen Förderprogramme für den Kauf von Pro- und europäischen Bergbau, auch mit einem dukten wie E-Autos werden wir künftig für modernisierten Bergrecht, das die Ziele Produkte gewähren, die größtenteils auch Klimaschutz, Umweltschutz und Bürger*inin Europa mit seinen hohen sozialen und nenbeteiligung vereint, und mit beschleuökologischen Standards produziert wurden. nigten und effektiveren Verwaltungspro- Wir werden das IT-Sicherheitsgesetz um zessen für den Rohstoffabbau, um - wo Cybersicherheit im Energiesektor erweitern. möglich - unabhängiger zu werden von Rohstoffimporten.
+**input_register_text:** Drittens setzen wir auf heimischen Förderprogramme für den Kauf von Pro- und europäischen Bergbau, auch mit einem dukten wie E-Autos werden wir künftig für modernisierten Bergrecht, das die Ziele Produkte gewähren, die größtenteils auch Klimaschutz, Umweltschutz und Bürger*inin Europa mit seinen hohen sozialen und nenbeteiligung vereint, und mit beschleuökologischen Standards produziert wurden. nigten und effektiveren Verwaltungspro- Wir werden das IT-Sicherheitsgesetz um zessen für den Rohstoffabbau, um – wo Cybersicherheit im Energiesektor erweitern. möglich – unabhängiger zu werden von Rohstoffimporten.
 
 ##### source_components
 
@@ -19535,7 +19535,7 @@ _Leere Liste._
 
 **source_page:** 30
 
-**source_text:** Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten Bergrecht, das die Ziele Klimaschutz, Umweltschutz und Bürger*innenbeteiligung vereint, und mit beschleunigten und effektiveren Verwaltungsprozessen für den Rohstoffabbau, um - wo möglich - unabhängiger zu werden von Rohstoffimporten.
+**source_text:** Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten Bergrecht, das die Ziele Klimaschutz, Umweltschutz und Bürger*innenbeteiligung vereint, und mit beschleunigten und effektiveren Verwaltungsprozessen für den Rohstoffabbau, um – wo möglich – unabhängiger zu werden von Rohstoffimporten.
 
 **topic:** ENERGY_CLIMATE
 
@@ -19549,7 +19549,7 @@ _Leere Liste._
 
 **measure:** Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten …
 
-**intended_change:** Vorgesehene Veränderung: Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten Bergrecht, das die Ziele Klimaschutz, Umweltschutz und Bürger*innenbeteiligung vereint, und mit beschleunigten und effektiveren Verwaltungsprozessen für den Rohstoffabbau, um - wo möglich - unabhängiger zu werden von Rohstoffimporten.
+**intended_change:** Vorgesehene Veränderung: Drittens setzen wir auf heimischen und europäischen Bergbau, auch mit einem modernisierten Bergrecht, das die Ziele Klimaschutz, Umweltschutz und Bürger*innenbeteiligung vereint, und mit beschleunigten und effektiveren Verwaltungsprozessen für den Rohstoffabbau, um – wo möglich – unabhängiger zu werden von Rohstoffimporten.
 
 ###### Eintrag 2
 
@@ -19899,7 +19899,7 @@ _Leere Liste._
 
 **top_score:** 91.1
 
-**input_register_text:** Damit für Stromkund*in- und Normen für nachhaltige Finanzpronen schnell und einfach sichtbar wird, ob dukte, die sich auf Umwelt, Soziales und sie aufgrund eines überteuerten Altver- Unternehmensführung beziehen. trags Monat um Monat zu viel für ihren Strom bezahlen, machen wir die Strom- Die hohen Kosten des Zahlungsverkehrs rechnungen transparenter, unter anderem für deutsche Unternehmen und Verdurch die Angabe des mittleren Stromprei- braucher*innen, etwa bei der Nutzung ses und der Preisspanne für Neukund*in- von Kreditkarten, wollen wir senken - nen auf der Energierechnung.
+**input_register_text:** Damit für Stromkund*in- und Normen für nachhaltige Finanzpronen schnell und einfach sichtbar wird, ob dukte, die sich auf Umwelt, Soziales und sie aufgrund eines überteuerten Altver- Unternehmensführung beziehen. trags Monat um Monat zu viel für ihren Strom bezahlen, machen wir die Strom- Die hohen Kosten des Zahlungsverkehrs rechnungen transparenter, unter anderem für deutsche Unternehmen und Verdurch die Angabe des mittleren Stromprei- braucher*innen, etwa bei der Nutzung ses und der Preisspanne für Neukund*in- von Kreditkarten, wollen wir senken – nen auf der Energierechnung.
 
 ##### source_components
 
@@ -21698,7 +21698,7 @@ _Leere Liste._
 
 **page:** 34
 
-**text:** Wir setzen uns für eine Gesellschaft ohne digitale Gräben ein: Für Verwaltungsleistungen, aber auch für wesentliche Bereiche der Daseinsvorsorge sollten - wo es nötig ist - analoge Zugänge offen gehalten und Beratungsangebote ausgebaut werden.
+**text:** Wir setzen uns für eine Gesellschaft ohne digitale Gräben ein: Für Verwaltungsleistungen, aber auch für wesentliche Bereiche der Daseinsvorsorge sollten – wo es nötig ist – analoge Zugänge offen gehalten und Beratungsangebote ausgebaut werden.
 
 **match_score:** 100.0
 
@@ -21723,7 +21723,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Außerdem wollen wir die Vereinbarkeit Wir setzen uns für eine Gesellschaft ohne von digitaler Verwaltung in der EU stärken. digitale Gräben ein: Für Verwaltungsleistungen, aber auch für wesentliche Bereiche Für eine schnelle und umfassende der Daseinsvorsorge sollten - wo es nötig Digitalisierung ist - analoge Zugänge offen gehalten und Beratungsangebote ausgebaut werden.
+**input_register_text:** Außerdem wollen wir die Vereinbarkeit Wir setzen uns für eine Gesellschaft ohne von digitaler Verwaltung in der EU stärken. digitale Gräben ein: Für Verwaltungsleistungen, aber auch für wesentliche Bereiche Für eine schnelle und umfassende der Daseinsvorsorge sollten – wo es nötig Digitalisierung ist – analoge Zugänge offen gehalten und Beratungsangebote ausgebaut werden.
 
 ##### source_components
 
@@ -21733,7 +21733,7 @@ _Leere Liste._
 
 **source_page:** 34
 
-**source_text:** Wir setzen uns für eine Gesellschaft ohne digitale Gräben ein: Für Verwaltungsleistungen, aber auch für wesentliche Bereiche der Daseinsvorsorge sollten - wo es nötig ist - analoge Zugänge offen gehalten und Beratungsangebote ausgebaut werden.
+**source_text:** Wir setzen uns für eine Gesellschaft ohne digitale Gräben ein: Für Verwaltungsleistungen, aber auch für wesentliche Bereiche der Daseinsvorsorge sollten – wo es nötig ist – analoge Zugänge offen gehalten und Beratungsangebote ausgebaut werden.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -21747,7 +21747,7 @@ _Leere Liste._
 
 **measure:** eine Gesellschaft ohne digitale Gräben ein
 
-**intended_change:** Vorgesehene Veränderung: Wir setzen uns für eine Gesellschaft ohne digitale Gräben ein: Für Verwaltungsleistungen, aber auch für wesentliche Bereiche der Daseinsvorsorge sollten - wo es nötig ist - analoge Zugänge offen gehalten und Beratungsangebote ausgebaut werden.
+**intended_change:** Vorgesehene Veränderung: Wir setzen uns für eine Gesellschaft ohne digitale Gräben ein: Für Verwaltungsleistungen, aber auch für wesentliche Bereiche der Daseinsvorsorge sollten – wo es nötig ist – analoge Zugänge offen gehalten und Beratungsangebote ausgebaut werden.
 
 ###### Eintrag 2
 
@@ -26815,7 +26815,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Wir stellen uns der Abschwächung des Green Deal und des „Fit for … / Dabei setzen wir gezielt verschiedene Instrumente ein - von marktwirtschaftlichen Anreizen wie …
+**measure:** Wir stellen uns der Abschwächung des Green Deal und des „Fit for … / Dabei setzen wir gezielt verschiedene Instrumente ein – von marktwirtschaftlichen Anreizen wie …
 
 ##### decision_readiness
 
@@ -27163,7 +27163,7 @@ _Leere Liste._
 
 **page:** 38
 
-**text:** Dabei setzen wir gezielt verschiedene Instrumente ein - von marktwirtschaftlichen Anreizen wie dem Emissionshandel über eine gezielte Förderung für Wirtschaft und Haushalte bis hin zum Ordnungsrecht.
+**text:** Dabei setzen wir gezielt verschiedene Instrumente ein – von marktwirtschaftlichen Anreizen wie dem Emissionshandel über eine gezielte Förderung für Wirtschaft und Haushalte bis hin zum Ordnungsrecht.
 
 **match_score:** 75.6
 
@@ -27208,7 +27208,7 @@ _Leere Liste._
 
 **source_page:** 38
 
-**source_text:** Dabei setzen wir gezielt verschiedene Instrumente ein - von marktwirtschaftlichen Anreizen wie dem Emissionshandel über eine gezielte Förderung für Wirtschaft und Haushalte bis hin zum Ordnungsrecht.
+**source_text:** Dabei setzen wir gezielt verschiedene Instrumente ein – von marktwirtschaftlichen Anreizen wie dem Emissionshandel über eine gezielte Förderung für Wirtschaft und Haushalte bis hin zum Ordnungsrecht.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -27220,9 +27220,9 @@ _Leere Liste._
 
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** Dabei setzen wir gezielt verschiedene Instrumente ein - von marktwirtschaftlichen Anreizen wie …
+**measure:** Dabei setzen wir gezielt verschiedene Instrumente ein – von marktwirtschaftlichen Anreizen wie …
 
-**intended_change:** Vorgesehene Veränderung: Dabei setzen wir gezielt verschiedene Instrumente ein - von marktwirtschaftlichen Anreizen wie dem Emissionshandel über eine gezielte Förderung für Wirtschaft und Haushalte bis hin zum Ordnungsrecht.
+**intended_change:** Vorgesehene Veränderung: Dabei setzen wir gezielt verschiedene Instrumente ein – von marktwirtschaftlichen Anreizen wie dem Emissionshandel über eine gezielte Förderung für Wirtschaft und Haushalte bis hin zum Ordnungsrecht.
 
 
 ##### component_topics
@@ -32449,7 +32449,7 @@ _Leere Liste._
 
 **source_location:** 44 BÜNDNIS 90 / DIE GRÜNEN
 
-**intended_change:** Vorgesehene Veränderung: Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Mittel für Investitionen für Vorhaben sowie Personal für Klimaschutz und - anpassung in den Kommunen unterstützen.
+**intended_change:** Vorgesehene Veränderung: Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Mittel für Investitionen für Vorhaben sowie Personal für Klimaschutz und – anpassung in den Kommunen unterstützen.
 
 **measure:** Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr …
 
@@ -32668,7 +32668,7 @@ _Leere Liste._
 
 **page:** 45
 
-**text:** Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Mittel für Investitionen für Vorhaben sowie Personal für Klimaschutz und - anpassung in den Kommunen unterstützen.
+**text:** Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Mittel für Investitionen für Vorhaben sowie Personal für Klimaschutz und – anpassung in den Kommunen unterstützen.
 
 **match_score:** 100.0
 
@@ -32681,7 +32681,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Förderprogramme wie angerechnet wird. das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Für vorsorgende Anpassungen an Mittel für Investitionen für Vorhaben sowie ein verändertes Klima Personal für Klimaschutz und - anpassung in den Kommunen unterstützen.
+**input_register_text:** Förderprogramme wie angerechnet wird. das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Für vorsorgende Anpassungen an Mittel für Investitionen für Vorhaben sowie ein verändertes Klima Personal für Klimaschutz und – anpassung in den Kommunen unterstützen.
 
 ##### source_components
 
@@ -32691,7 +32691,7 @@ _Leere Liste._
 
 **source_page:** 45
 
-**source_text:** Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Mittel für Investitionen für Vorhaben sowie Personal für Klimaschutz und - anpassung in den Kommunen unterstützen.
+**source_text:** Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Mittel für Investitionen für Vorhaben sowie Personal für Klimaschutz und – anpassung in den Kommunen unterstützen.
 
 **topic:** ENERGY_CLIMATE
 
@@ -32705,7 +32705,7 @@ _Leere Liste._
 
 **measure:** Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr …
 
-**intended_change:** Vorgesehene Veränderung: Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Mittel für Investitionen für Vorhaben sowie Personal für Klimaschutz und - anpassung in den Kommunen unterstützen.
+**intended_change:** Vorgesehene Veränderung: Förderprogramme wie das Aktionsprogramm Natürlicher Klimaschutz wollen wir weiter stärken und mehr Mittel für Investitionen für Vorhaben sowie Personal für Klimaschutz und – anpassung in den Kommunen unterstützen.
 
 
 ##### component_topics
@@ -33141,7 +33141,7 @@ _Leere Liste._
 
 **page:** 46
 
-**text:** Dafür werden wir sorgen, da wir die Ideen und Konzepte dafür haben -etwa durch ein zuverlässiges Angebot an Bussen und Bahnen und mit dem klaren Signal hin zur klimafreundlichen E-Mobilität.
+**text:** Dafür werden wir sorgen, da wir die Ideen und Konzepte dafür haben –etwa durch ein zuverlässiges Angebot an Bussen und Bahnen und mit dem klaren Signal hin zur klimafreundlichen E-Mobilität.
 
 **match_score:** 90.0
 
@@ -33154,7 +33154,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Dafür werden Frischluftschneisen, Gebäudebegrünung, wir sorgen, da wir die Ideen und Konzepte Stadtgrün und öffentlichen Trinkbrunnen. dafür haben -etwa durch ein zuverlässiges Als Schwammstädte sollen sie künftig Angebot an Bussen und Bahnen und mit mehr Wasser aufnehmen, speichern und im dem klaren Signal hin zur klimafreundli- Sommer kühlend wirken.
+**input_register_text:** Dafür werden Frischluftschneisen, Gebäudebegrünung, wir sorgen, da wir die Ideen und Konzepte Stadtgrün und öffentlichen Trinkbrunnen. dafür haben –etwa durch ein zuverlässiges Als Schwammstädte sollen sie künftig Angebot an Bussen und Bahnen und mit mehr Wasser aufnehmen, speichern und im dem klaren Signal hin zur klimafreundli- Sommer kühlend wirken.
 
 ##### source_components
 
@@ -33186,7 +33186,7 @@ _Leere Liste._
 
 **source_page:** 46
 
-**source_text:** Dafür werden wir sorgen, da wir die Ideen und Konzepte dafür haben -etwa durch ein zuverlässiges Angebot an Bussen und Bahnen und mit dem klaren Signal hin zur klimafreundlichen E-Mobilität.
+**source_text:** Dafür werden wir sorgen, da wir die Ideen und Konzepte dafür haben –etwa durch ein zuverlässiges Angebot an Bussen und Bahnen und mit dem klaren Signal hin zur klimafreundlichen E-Mobilität.
 
 **topic:** MOBILITY_INFRASTRUCTURE
 
@@ -33200,7 +33200,7 @@ _Leere Liste._
 
 **measure:** Dafür werden wir sorgen, da wir die Ideen und Konzepte dafür haben …
 
-**intended_change:** Vorgesehene Veränderung: Dafür werden wir sorgen, da wir die Ideen und Konzepte dafür haben -etwa durch ein zuverlässiges Angebot an Bussen und Bahnen und mit dem klaren Signal hin zur klimafreundlichen E-Mobilität.
+**intended_change:** Vorgesehene Veränderung: Dafür werden wir sorgen, da wir die Ideen und Konzepte dafür haben –etwa durch ein zuverlässiges Angebot an Bussen und Bahnen und mit dem klaren Signal hin zur klimafreundlichen E-Mobilität.
 
 
 ##### component_topics
@@ -34123,7 +34123,7 @@ _Leere Liste._
 
 **page:** 47
 
-**text:** Verkehrswege wollen wir erhalten und sanieren, das Schienennetz spürbar ausbauen und stärker elektrifizieren, stillgelegte Bahntrassen - gerade in den ländlichen Räumen - reaktivieren und modernisieren sowie bundesweit den Ausbau eines guten Radwegenetzes dauerhaft und verlässlich finanzieren.
+**text:** Verkehrswege wollen wir erhalten und sanieren, das Schienennetz spürbar ausbauen und stärker elektrifizieren, stillgelegte Bahntrassen – gerade in den ländlichen Räumen – reaktivieren und modernisieren sowie bundesweit den Ausbau eines guten Radwegenetzes dauerhaft und verlässlich finanzieren.
 
 **match_score:** 71.9
 
@@ -34136,7 +34136,7 @@ _Leere Liste._
 
 **top_score:** 89.0
 
-**input_register_text:** Verkehrswege wollen wir Landekapazitäten im Flugverkehr sehen erhalten und sanieren, das Schienennetz wir nicht nur aus ökologischen, sondern spürbar ausbauen und stärker elektrifizie- auch aus wirtschaftlichen Gründen keinen ren, stillgelegte Bahntrassen - gerade in Bedarf.
+**input_register_text:** Verkehrswege wollen wir Landekapazitäten im Flugverkehr sehen erhalten und sanieren, das Schienennetz wir nicht nur aus ökologischen, sondern spürbar ausbauen und stärker elektrifizie- auch aus wirtschaftlichen Gründen keinen ren, stillgelegte Bahntrassen – gerade in Bedarf.
 
 ##### source_components
 
@@ -34168,7 +34168,7 @@ _Leere Liste._
 
 **source_page:** 47
 
-**source_text:** Verkehrswege wollen wir erhalten und sanieren, das Schienennetz spürbar ausbauen und stärker elektrifizieren, stillgelegte Bahntrassen - gerade in den ländlichen Räumen - reaktivieren und modernisieren sowie bundesweit den Ausbau eines guten Radwegenetzes dauerhaft und verlässlich finanzieren.
+**source_text:** Verkehrswege wollen wir erhalten und sanieren, das Schienennetz spürbar ausbauen und stärker elektrifizieren, stillgelegte Bahntrassen – gerade in den ländlichen Räumen – reaktivieren und modernisieren sowie bundesweit den Ausbau eines guten Radwegenetzes dauerhaft und verlässlich finanzieren.
 
 **topic:** MOBILITY_INFRASTRUCTURE
 
@@ -34183,7 +34183,7 @@ _Leere Liste._
 
 **measure:** Verkehrswege wollen wir erhalten und sanieren, das Schienennetz spürbar ausbauen und stärker …
 
-**intended_change:** Vorgesehene Veränderung: Verkehrswege wollen wir erhalten und sanieren, das Schienennetz spürbar ausbauen und stärker elektrifizieren, stillgelegte Bahntrassen - gerade in den ländlichen Räumen - reaktivieren und modernisieren sowie bundesweit den Ausbau eines guten Radwegenetzes dauerhaft und verlässlich finanzieren.
+**intended_change:** Vorgesehene Veränderung: Verkehrswege wollen wir erhalten und sanieren, das Schienennetz spürbar ausbauen und stärker elektrifizieren, stillgelegte Bahntrassen – gerade in den ländlichen Räumen – reaktivieren und modernisieren sowie bundesweit den Ausbau eines guten Radwegenetzes dauerhaft und verlässlich finanzieren.
 
 
 ##### component_topics
@@ -34621,7 +34621,7 @@ _Leere Liste._
 
 **page:** 48
 
-**text:** Um Verkehrsräume zu Stadträumen mit Aufenthaltsqualität zu entwickeln, werden wir öffentliche Räume attraktiver gestalten, Barrierefreiheit ausweiten und die Verkehrssicherheit - insbesondere von Schulwegen - erhöhen.
+**text:** Um Verkehrsräume zu Stadträumen mit Aufenthaltsqualität zu entwickeln, werden wir öffentliche Räume attraktiver gestalten, Barrierefreiheit ausweiten und die Verkehrssicherheit – insbesondere von Schulwegen – erhöhen.
 
 **match_score:** 77.6
 
@@ -34634,7 +34634,7 @@ _Leere Liste._
 
 **top_score:** 85.9
 
-**input_register_text:** Wir bringen wir öffentliche Räume attraktiver gestaldas Verkehrsrecht auf die Höhe der Zeit, ten, Barrierefreiheit ausweiten und die um allen Menschen in Stadt und Land Verkehrssicherheit - insbesondere von barrierefreie Mobilität, etwa mit E-Klein- Schulwegen - erhöhen.
+**input_register_text:** Wir bringen wir öffentliche Räume attraktiver gestaldas Verkehrsrecht auf die Höhe der Zeit, ten, Barrierefreiheit ausweiten und die um allen Menschen in Stadt und Land Verkehrssicherheit – insbesondere von barrierefreie Mobilität, etwa mit E-Klein- Schulwegen – erhöhen.
 
 ##### source_components
 
@@ -34666,7 +34666,7 @@ _Leere Liste._
 
 **source_page:** 48
 
-**source_text:** Um Verkehrsräume zu Stadträumen mit Aufenthaltsqualität zu entwickeln, werden wir öffentliche Räume attraktiver gestalten, Barrierefreiheit ausweiten und die Verkehrssicherheit - insbesondere von Schulwegen - erhöhen.
+**source_text:** Um Verkehrsräume zu Stadträumen mit Aufenthaltsqualität zu entwickeln, werden wir öffentliche Räume attraktiver gestalten, Barrierefreiheit ausweiten und die Verkehrssicherheit – insbesondere von Schulwegen – erhöhen.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -34680,7 +34680,7 @@ _Leere Liste._
 
 **measure:** Um Verkehrsräume zu Stadträumen mit Aufenthaltsqualität zu entwickeln, werden wir öffentliche Räume …
 
-**intended_change:** Vorgesehene Veränderung: Um Verkehrsräume zu Stadträumen mit Aufenthaltsqualität zu entwickeln, werden wir öffentliche Räume attraktiver gestalten, Barrierefreiheit ausweiten und die Verkehrssicherheit - insbesondere von Schulwegen - erhöhen.
+**intended_change:** Vorgesehene Veränderung: Um Verkehrsräume zu Stadträumen mit Aufenthaltsqualität zu entwickeln, werden wir öffentliche Räume attraktiver gestalten, Barrierefreiheit ausweiten und die Verkehrssicherheit – insbesondere von Schulwegen – erhöhen.
 
 
 ##### component_topics
@@ -35926,7 +35926,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Deshalb setzen wir - gerade auch in ländlichen Regionen - auf angepasste … / das Nahverkehrsangebot in Deutschland weiter verbessern, um die Fahrgastzahlen in klimaneutralen Bussen …
+**measure:** Deshalb setzen wir – gerade auch in ländlichen Regionen – auf angepasste … / das Nahverkehrsangebot in Deutschland weiter verbessern, um die Fahrgastzahlen in klimaneutralen Bussen …
 
 ##### decision_readiness
 
@@ -36247,7 +36247,7 @@ _Leere Liste._
 
 **page:** 49
 
-**text:** Deshalb setzen wir - gerade auch in ländlichen Regionen - auf angepasste klimafreundliche Konzepte wie mehr Co-Working, die unnötige Pendelfahrten vermeiden.
+**text:** Deshalb setzen wir – gerade auch in ländlichen Regionen – auf angepasste klimafreundliche Konzepte wie mehr Co-Working, die unnötige Pendelfahrten vermeiden.
 
 **match_score:** 92.3
 
@@ -36272,7 +36272,7 @@ _Leere Liste._
 
 **top_score:** 92.3
 
-**input_register_text:** Deshalb setzen wir - gerade auch in ländlichen Regionen - auf angepass- Wir werden das Nahverkehrsangebot in te klimafreundliche Konzepte wie mehr Deutschland weiter verbessern, um die Co-Working, die unnötige Pendelfahrten Fahrgastzahlen in klimaneutralen Busvermeiden.
+**input_register_text:** Deshalb setzen wir – gerade auch in ländlichen Regionen – auf angepass- Wir werden das Nahverkehrsangebot in te klimafreundliche Konzepte wie mehr Deutschland weiter verbessern, um die Co-Working, die unnötige Pendelfahrten Fahrgastzahlen in klimaneutralen Busvermeiden.
 
 ##### source_components
 
@@ -36282,7 +36282,7 @@ _Leere Liste._
 
 **source_page:** 49
 
-**source_text:** Deshalb setzen wir - gerade auch in ländlichen Regionen - auf angepasste klimafreundliche Konzepte wie mehr Co-Working, die unnötige Pendelfahrten vermeiden.
+**source_text:** Deshalb setzen wir – gerade auch in ländlichen Regionen – auf angepasste klimafreundliche Konzepte wie mehr Co-Working, die unnötige Pendelfahrten vermeiden.
 
 **topic:** ENERGY_CLIMATE
 
@@ -36294,9 +36294,9 @@ _Leere Liste._
 
 - Konkreter Entscheidungsgegenstand nach der Prüfung/Planung
 
-**measure:** Deshalb setzen wir - gerade auch in ländlichen Regionen - auf angepasste …
+**measure:** Deshalb setzen wir – gerade auch in ländlichen Regionen – auf angepasste …
 
-**intended_change:** Vorgesehene Veränderung: Deshalb setzen wir - gerade auch in ländlichen Regionen - auf angepasste klimafreundliche Konzepte wie mehr Co-Working, die unnötige Pendelfahrten vermeiden.
+**intended_change:** Vorgesehene Veränderung: Deshalb setzen wir – gerade auch in ländlichen Regionen – auf angepasste klimafreundliche Konzepte wie mehr Co-Working, die unnötige Pendelfahrten vermeiden.
 
 ###### Eintrag 2
 
@@ -38123,7 +38123,7 @@ _Leere Liste._
 
 **source_location:** Regierungsprogramm 2025 Kapitel 1
 
-**intended_change:** Vorgesehene Veränderung: Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen. Denn ler gefährdeter Arten - wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
+**intended_change:** Vorgesehene Veränderung: Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen. Denn ler gefährdeter Arten – wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
 
 **measure:** Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen
 
@@ -38318,7 +38318,7 @@ _Leere Liste._
 
 **page:** 52
 
-**text:** Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen. Denn ler gefährdeter Arten - wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
+**text:** Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen. Denn ler gefährdeter Arten – wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
 
 **match_score:** 100.0
 
@@ -38329,7 +38329,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Denn ler gefährdeter Arten - wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
+**input_register_text:** Denn ler gefährdeter Arten – wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
 
 ##### source_components
 
@@ -38339,7 +38339,7 @@ _Leere Liste._
 
 **source_page:** 52
 
-**source_text:** Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen. Denn ler gefährdeter Arten - wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
+**source_text:** Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen. Denn ler gefährdeter Arten – wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
 
 **topic:** NATURE_WATER_RESOURCES
 
@@ -38353,7 +38353,7 @@ _Leere Liste._
 
 **measure:** Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen
 
-**intended_change:** Vorgesehene Veränderung: Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen. Denn ler gefährdeter Arten - wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
+**intended_change:** Vorgesehene Veränderung: Unterstützung für die Zivilgesellschaft, Unsere Kulturlandschaft ist Lebensraum vieinsbesondere in ländlichen Räumen. Denn ler gefährdeter Arten – wir wollen Landnutder Erfolg des Aktionsprogramms zeigt: zung und Naturschutz in Einklang bringen.
 
 
 ##### component_topics
@@ -38794,7 +38794,7 @@ _Leere Liste._
 
 **page:** 52
 
-**text:** BÜNDNIS 90/ DIE GRÜNEN 52 Frei fließende Flüsse, naturnahe Wälder und Auen, Moore und extensiv genutzte Agrarlandschaft sowie wilde Weiden nehmen dabei eine zentrale Rolle ein und müssen - wo immer möglich - erhalten bleiben oder wiederhergestellt werden.
+**text:** BÜNDNIS 90/ DIE GRÜNEN 52 Frei fließende Flüsse, naturnahe Wälder und Auen, Moore und extensiv genutzte Agrarlandschaft sowie wilde Weiden nehmen dabei eine zentrale Rolle ein und müssen – wo immer möglich – erhalten bleiben oder wiederhergestellt werden.
 
 **match_score:** 83.2
 
@@ -38806,7 +38806,7 @@ _Leere Liste._
 
 **page:** 52
 
-**text:** Denn der Erfolg des Aktionsprogramms zeigt: Die Menschen, die Kommunen und viele Unternehmen wollen mehr Natur - es sind die Engagierten und Organisationen vor Ort, die sehr oft als Motor des Natur- und Artenschutzes agieren.
+**text:** Denn der Erfolg des Aktionsprogramms zeigt: Die Menschen, die Kommunen und viele Unternehmen wollen mehr Natur – es sind die Engagierten und Organisationen vor Ort, die sehr oft als Motor des Natur- und Artenschutzes agieren.
 
 **match_score:** 88.8
 
@@ -38819,7 +38819,7 @@ _Leere Liste._
 
 **top_score:** 83.2
 
-**input_register_text:** Frei fließende Flüsse, naturnahe Wälder Die Menschen, die Kommunen und viele und Auen, Moore und extensiv genutz- Unternehmen wollen mehr Natur - es sind te Agrarlandschaft sowie wilde Weiden die Engagierten und Organisationen vor nehmen dabei eine zentrale Rolle ein und Ort, die sehr oft als Motor des Natur- und müssen - wo immer möglich - erhalten Artenschutzes agieren.
+**input_register_text:** Frei fließende Flüsse, naturnahe Wälder Die Menschen, die Kommunen und viele und Auen, Moore und extensiv genutz- Unternehmen wollen mehr Natur – es sind te Agrarlandschaft sowie wilde Weiden die Engagierten und Organisationen vor nehmen dabei eine zentrale Rolle ein und Ort, die sehr oft als Motor des Natur- und müssen – wo immer möglich – erhalten Artenschutzes agieren.
 
 ##### source_components
 
@@ -38829,7 +38829,7 @@ _Leere Liste._
 
 **source_page:** 52
 
-**source_text:** BÜNDNIS 90/ DIE GRÜNEN 52 Frei fließende Flüsse, naturnahe Wälder und Auen, Moore und extensiv genutzte Agrarlandschaft sowie wilde Weiden nehmen dabei eine zentrale Rolle ein und müssen - wo immer möglich - erhalten bleiben oder wiederhergestellt werden.
+**source_text:** BÜNDNIS 90/ DIE GRÜNEN 52 Frei fließende Flüsse, naturnahe Wälder und Auen, Moore und extensiv genutzte Agrarlandschaft sowie wilde Weiden nehmen dabei eine zentrale Rolle ein und müssen – wo immer möglich – erhalten bleiben oder wiederhergestellt werden.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -38843,7 +38843,7 @@ _Leere Liste._
 
 **measure:** BÜNDNIS 90/ DIE GRÜNEN 52 Frei fließende Flüsse, naturnahe Wälder und Auen, …
 
-**intended_change:** Vorgesehene Veränderung: BÜNDNIS 90/ DIE GRÜNEN 52 Frei fließende Flüsse, naturnahe Wälder und Auen, Moore und extensiv genutzte Agrarlandschaft sowie wilde Weiden nehmen dabei eine zentrale Rolle ein und müssen - wo immer möglich - erhalten bleiben oder wiederhergestellt werden.
+**intended_change:** Vorgesehene Veränderung: BÜNDNIS 90/ DIE GRÜNEN 52 Frei fließende Flüsse, naturnahe Wälder und Auen, Moore und extensiv genutzte Agrarlandschaft sowie wilde Weiden nehmen dabei eine zentrale Rolle ein und müssen – wo immer möglich – erhalten bleiben oder wiederhergestellt werden.
 
 ###### Eintrag 2
 
@@ -38851,7 +38851,7 @@ _Leere Liste._
 
 **source_page:** 52
 
-**source_text:** Denn der Erfolg des Aktionsprogramms zeigt: Die Menschen, die Kommunen und viele Unternehmen wollen mehr Natur - es sind die Engagierten und Organisationen vor Ort, die sehr oft als Motor des Natur- und Artenschutzes agieren.
+**source_text:** Denn der Erfolg des Aktionsprogramms zeigt: Die Menschen, die Kommunen und viele Unternehmen wollen mehr Natur – es sind die Engagierten und Organisationen vor Ort, die sehr oft als Motor des Natur- und Artenschutzes agieren.
 
 **topic:** NATURE_WATER_RESOURCES
 
@@ -38865,7 +38865,7 @@ _Leere Liste._
 
 **measure:** Denn der Erfolg des Aktionsprogramms zeigt
 
-**intended_change:** Vorgesehene Veränderung: Denn der Erfolg des Aktionsprogramms zeigt: Die Menschen, die Kommunen und viele Unternehmen wollen mehr Natur - es sind die Engagierten und Organisationen vor Ort, die sehr oft als Motor des Natur- und Artenschutzes agieren.
+**intended_change:** Vorgesehene Veränderung: Denn der Erfolg des Aktionsprogramms zeigt: Die Menschen, die Kommunen und viele Unternehmen wollen mehr Natur – es sind die Engagierten und Organisationen vor Ort, die sehr oft als Motor des Natur- und Artenschutzes agieren.
 
 
 ##### component_topics
@@ -40002,7 +40002,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** ein differenziertes Vorgehen ein - mit dem Ziel, nach und nach ganz … / Private Feuerwerke stellen zunehmend eine unzumutbare Belastung für unsere Kommunen dar
+**measure:** ein differenziertes Vorgehen ein – mit dem Ziel, nach und nach ganz … / Private Feuerwerke stellen zunehmend eine unzumutbare Belastung für unsere Kommunen dar
 
 ##### decision_readiness
 
@@ -40305,7 +40305,7 @@ _Leere Liste._
 
 **page:** 54
 
-**text:** Wir setzen uns für ein differenziertes Vorgehen ein - mit dem Ziel, nach und nach ganz aus ihrer Verwendung auszusteigen.
+**text:** Wir setzen uns für ein differenziertes Vorgehen ein – mit dem Ziel, nach und nach ganz aus ihrer Verwendung auszusteigen.
 
 **match_score:** 94.8
 
@@ -40330,7 +40330,7 @@ _Leere Liste._
 
 **top_score:** 94.8
 
-**input_register_text:** Wir setzen uns für ein differenziertes Vorgehen ein - mit dem Private Feuerwerke stellen zunehmend Ziel, nach und nach ganz aus ihrer Verweneine unzumutbare Belastung für unsere dung auszusteigen.
+**input_register_text:** Wir setzen uns für ein differenziertes Vorgehen ein – mit dem Private Feuerwerke stellen zunehmend Ziel, nach und nach ganz aus ihrer Verweneine unzumutbare Belastung für unsere dung auszusteigen.
 
 ##### source_components
 
@@ -40340,7 +40340,7 @@ _Leere Liste._
 
 **source_page:** 54
 
-**source_text:** Wir setzen uns für ein differenziertes Vorgehen ein - mit dem Ziel, nach und nach ganz aus ihrer Verwendung auszusteigen.
+**source_text:** Wir setzen uns für ein differenziertes Vorgehen ein – mit dem Ziel, nach und nach ganz aus ihrer Verwendung auszusteigen.
 
 **topic:** FAMILY_EQUALITY
 
@@ -40352,9 +40352,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** ein differenziertes Vorgehen ein - mit dem Ziel, nach und nach ganz …
+**measure:** ein differenziertes Vorgehen ein – mit dem Ziel, nach und nach ganz …
 
-**intended_change:** Vorgesehene Veränderung: Wir setzen uns für ein differenziertes Vorgehen ein - mit dem Ziel, nach und nach ganz aus ihrer Verwendung auszusteigen.
+**intended_change:** Vorgesehene Veränderung: Wir setzen uns für ein differenziertes Vorgehen ein – mit dem Ziel, nach und nach ganz aus ihrer Verwendung auszusteigen.
 
 ###### Eintrag 2
 
@@ -42643,7 +42643,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Mit dem Sofortprogramm zur Munitionsbergung in Nord- und Ostsee ist uns ein … / die finanziellen und personellen Bedingungen schaffen, damit wir sie - gemeinsam mit …
+**measure:** Mit dem Sofortprogramm zur Munitionsbergung in Nord- und Ostsee ist uns ein … / die finanziellen und personellen Bedingungen schaffen, damit wir sie – gemeinsam mit …
 
 ##### decision_readiness
 
@@ -42941,7 +42941,7 @@ _Leere Liste._
 
 **page:** 55
 
-**text:** Wir wollen die finanziellen und personellen Bedingungen schaffen, damit wir sie - gemeinsam mit den Ländern, aber auch über unsere Landesgrenzen hinaus - effektiv umsetzen können.
+**text:** Wir wollen die finanziellen und personellen Bedingungen schaffen, damit wir sie – gemeinsam mit den Ländern, aber auch über unsere Landesgrenzen hinaus – effektiv umsetzen können.
 
 **match_score:** 79.2
 
@@ -42954,7 +42954,7 @@ _Leere Liste._
 
 **top_score:** 94.0
 
-**input_register_text:** Wir wollen die Mit dem Sofortprogramm zur Munitions- finanziellen und personellen Bedingunbergung in Nord- und Ostsee ist uns ein gen schaffen, damit wir sie - gemeinsam Meilenstein zum Schutz unserer Meere mit den Ländern, aber auch über unsere vor giftigen Kriegsaltlasten gelungen.
+**input_register_text:** Wir wollen die Mit dem Sofortprogramm zur Munitions- finanziellen und personellen Bedingunbergung in Nord- und Ostsee ist uns ein gen schaffen, damit wir sie – gemeinsam Meilenstein zum Schutz unserer Meere mit den Ländern, aber auch über unsere vor giftigen Kriegsaltlasten gelungen.
 
 ##### source_components
 
@@ -42986,7 +42986,7 @@ _Leere Liste._
 
 **source_page:** 55
 
-**source_text:** Wir wollen die finanziellen und personellen Bedingungen schaffen, damit wir sie - gemeinsam mit den Ländern, aber auch über unsere Landesgrenzen hinaus - effektiv umsetzen können.
+**source_text:** Wir wollen die finanziellen und personellen Bedingungen schaffen, damit wir sie – gemeinsam mit den Ländern, aber auch über unsere Landesgrenzen hinaus – effektiv umsetzen können.
 
 **topic:** TAX_FISCAL_BUDGET
 
@@ -42998,9 +42998,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** die finanziellen und personellen Bedingungen schaffen, damit wir sie - gemeinsam mit …
+**measure:** die finanziellen und personellen Bedingungen schaffen, damit wir sie – gemeinsam mit …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen die finanziellen und personellen Bedingungen schaffen, damit wir sie - gemeinsam mit den Ländern, aber auch über unsere Landesgrenzen hinaus - effektiv umsetzen können.
+**intended_change:** Vorgesehene Veränderung: Wir wollen die finanziellen und personellen Bedingungen schaffen, damit wir sie – gemeinsam mit den Ländern, aber auch über unsere Landesgrenzen hinaus – effektiv umsetzen können.
 
 
 ##### component_topics
@@ -47708,7 +47708,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Effizienzgewinne durch die Nutzung digital gestützter Arbeitsmethoden in der Landwirtschaft und setzen … / Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur - in Brachen, …
+**measure:** Effizienzgewinne durch die Nutzung digital gestützter Arbeitsmethoden in der Landwirtschaft und setzen … / Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur – in Brachen, …
 
 ##### decision_readiness
 
@@ -48075,7 +48075,7 @@ _Leere Liste._
 
 **page:** 59
 
-**text:** Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur - in Brachen, Feuchtgebieten, Feldhecken und anderen Strukturen der Agrarlandschaft.
+**text:** Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur – in Brachen, Feuchtgebieten, Feldhecken und anderen Strukturen der Agrarlandschaft.
 
 **match_score:** 85.7
 
@@ -48088,7 +48088,7 @@ _Leere Liste._
 
 **top_score:** 95.0
 
-**input_register_text:** Wir unterstützen schützte Rückzugsräume für die Natur - in Effizienzgewinne durch die Nutzung digital Brachen, Feuchtgebieten, Feldhecken und gestützter Arbeitsmethoden in der Land- anderen Strukturen der Agrarlandschaft. wirtschaft und setzen uns für EU-weite Kooperativer Naturschutz mit erfolgsab- Standardisierung ein.
+**input_register_text:** Wir unterstützen schützte Rückzugsräume für die Natur – in Effizienzgewinne durch die Nutzung digital Brachen, Feuchtgebieten, Feldhecken und gestützter Arbeitsmethoden in der Land- anderen Strukturen der Agrarlandschaft. wirtschaft und setzen uns für EU-weite Kooperativer Naturschutz mit erfolgsab- Standardisierung ein.
 
 ##### source_components
 
@@ -48121,7 +48121,7 @@ _Leere Liste._
 
 **source_page:** 59
 
-**source_text:** Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur - in Brachen, Feuchtgebieten, Feldhecken und anderen Strukturen der Agrarlandschaft.
+**source_text:** Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur – in Brachen, Feuchtgebieten, Feldhecken und anderen Strukturen der Agrarlandschaft.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -48133,9 +48133,9 @@ _Leere Liste._
 
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur - in Brachen, …
+**measure:** Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur – in Brachen, …
 
-**intended_change:** Vorgesehene Veränderung: Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur - in Brachen, Feuchtgebieten, Feldhecken und anderen Strukturen der Agrarlandschaft.
+**intended_change:** Vorgesehene Veränderung: Außerdem schaffen wir genügend geschützte Rückzugsräume für die Natur – in Brachen, Feuchtgebieten, Feldhecken und anderen Strukturen der Agrarlandschaft.
 
 
 ##### component_topics
@@ -67044,7 +67044,7 @@ _Leere Liste._
 
 **top_score:** 97.1
 
-**input_register_text:** Kinder sollen das gleiche Maß an finan- Wir werden mit einer Familienstartzeit zieller Unterstützung erhalten - egal wie entsprechend den Regelungen der Euroviel ihre Eltern verdienen. päischen Union (EU) Vätern und Co-Müttern die Möglichkeit geben, sich die ersten Familienplanung ist ein Menschenrecht. zwei Wochen nach der Geburt eines Kindes Damit alle Frauen und Männer frei ent- mit einer Lohnersatzleistung von der scheiden können, ob und wann sie Kinder Arbeit freizustellen.
+**input_register_text:** Kinder sollen das gleiche Maß an finan- Wir werden mit einer Familienstartzeit zieller Unterstützung erhalten – egal wie entsprechend den Regelungen der Euroviel ihre Eltern verdienen. päischen Union (EU) Vätern und Co-Müttern die Möglichkeit geben, sich die ersten Familienplanung ist ein Menschenrecht. zwei Wochen nach der Geburt eines Kindes Damit alle Frauen und Männer frei ent- mit einer Lohnersatzleistung von der scheiden können, ob und wann sie Kinder Arbeit freizustellen.
 
 ##### source_components
 
@@ -82425,7 +82425,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Betroffene wurden oft stigmatisiert - wir wollen eine bestmögliche Versorgung nach dem … / An dem Ziel des Verkaufs von Cannabis in lizenzierten Fachgeschäften halten wir …
+**measure:** Betroffene wurden oft stigmatisiert – wir wollen eine bestmögliche Versorgung nach dem … / An dem Ziel des Verkaufs von Cannabis in lizenzierten Fachgeschäften halten wir …
 
 ##### decision_readiness
 
@@ -82747,7 +82747,7 @@ _Leere Liste._
 
 **page:** 96
 
-**text:** Betroffene wurden oft stigmatisiert - wir wollen eine bestmögliche Versorgung nach dem Stand der wissenschaftlichen Erkenntnisse ermöglichen.
+**text:** Betroffene wurden oft stigmatisiert – wir wollen eine bestmögliche Versorgung nach dem Stand der wissenschaftlichen Erkenntnisse ermöglichen.
 
 **match_score:** 92.4
 
@@ -82772,7 +82772,7 @@ _Leere Liste._
 
 **top_score:** 92.4
 
-**input_register_text:** Betroffene sätzlich soll sich die Regulierung von Drowurden oft stigmatisiert - wir wollen eine gen an den tatsächlichen gesundheitlichen bestmögliche Versorgung nach dem Stand und gesellschaftlichen Risiken orientieren. der wissenschaftlichen Erkenntnisse er- An dem Ziel des Verkaufs von Cannabis möglichen. in lizenzierten Fachgeschäften halten wir weiter fest und setzen uns auf europäi- Besonders unterstützen möchten wir scher und internationaler Ebene dafür ein, Schwerstbetroffene, die keine therapeu- auch um damit den Schwarzmarkt und die tischen Einrichtungen aufsuchen können.
+**input_register_text:** Betroffene sätzlich soll sich die Regulierung von Drowurden oft stigmatisiert – wir wollen eine gen an den tatsächlichen gesundheitlichen bestmögliche Versorgung nach dem Stand und gesellschaftlichen Risiken orientieren. der wissenschaftlichen Erkenntnisse er- An dem Ziel des Verkaufs von Cannabis möglichen. in lizenzierten Fachgeschäften halten wir weiter fest und setzen uns auf europäi- Besonders unterstützen möchten wir scher und internationaler Ebene dafür ein, Schwerstbetroffene, die keine therapeu- auch um damit den Schwarzmarkt und die tischen Einrichtungen aufsuchen können.
 
 ##### source_components
 
@@ -82782,7 +82782,7 @@ _Leere Liste._
 
 **source_page:** 96
 
-**source_text:** Betroffene wurden oft stigmatisiert - wir wollen eine bestmögliche Versorgung nach dem Stand der wissenschaftlichen Erkenntnisse ermöglichen.
+**source_text:** Betroffene wurden oft stigmatisiert – wir wollen eine bestmögliche Versorgung nach dem Stand der wissenschaftlichen Erkenntnisse ermöglichen.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -82794,9 +82794,9 @@ _Leere Liste._
 
 - Eingriffsvoraussetzungen, Ausnahmen und Rechtsschutz
 
-**measure:** Betroffene wurden oft stigmatisiert - wir wollen eine bestmögliche Versorgung nach dem …
+**measure:** Betroffene wurden oft stigmatisiert – wir wollen eine bestmögliche Versorgung nach dem …
 
-**intended_change:** Vorgesehene Veränderung: Betroffene wurden oft stigmatisiert - wir wollen eine bestmögliche Versorgung nach dem Stand der wissenschaftlichen Erkenntnisse ermöglichen.
+**intended_change:** Vorgesehene Veränderung: Betroffene wurden oft stigmatisiert – wir wollen eine bestmögliche Versorgung nach dem Stand der wissenschaftlichen Erkenntnisse ermöglichen.
 
 ###### Eintrag 2
 
@@ -83257,7 +83257,7 @@ _Leere Liste._
 
 **source_location:** Regierungsprogramm 2025 Kapitel 2
 
-**intended_change:** Vorgesehene Veränderung: ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind. Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich - insbesondere in der Suchtbemäßige Katastrophenschutzübungen. Auch ratung - bundesweit ein Mindestangebot
+**intended_change:** Vorgesehene Veränderung: ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind. Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich – insbesondere in der Suchtbemäßige Katastrophenschutzübungen. Auch ratung – bundesweit ein Mindestangebot
 
 **measure:** ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind
 
@@ -83452,7 +83452,7 @@ _Leere Liste._
 
 **page:** 96
 
-**text:** ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind. Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich - insbesondere in der Suchtbemäßige Katastrophenschutzübungen. Auch ratung - bundesweit ein Mindestangebot
+**text:** ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind. Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich – insbesondere in der Suchtbemäßige Katastrophenschutzübungen. Auch ratung – bundesweit ein Mindestangebot
 
 **match_score:** 100.0
 
@@ -83463,7 +83463,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich - insbesondere in der Suchtbemäßige Katastrophenschutzübungen.
+**input_register_text:** Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich – insbesondere in der Suchtbemäßige Katastrophenschutzübungen.
 
 ##### source_components
 
@@ -83473,7 +83473,7 @@ _Leere Liste._
 
 **source_page:** 96
 
-**source_text:** ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind. Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich - insbesondere in der Suchtbemäßige Katastrophenschutzübungen. Auch ratung - bundesweit ein Mindestangebot
+**source_text:** ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind. Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich – insbesondere in der Suchtbemäßige Katastrophenschutzübungen. Auch ratung – bundesweit ein Mindestangebot
 
 **topic:** HEALTH_CARE
 
@@ -83487,7 +83487,7 @@ _Leere Liste._
 
 **measure:** ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind
 
-**intended_change:** Vorgesehene Veränderung: ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind. Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich - insbesondere in der Suchtbemäßige Katastrophenschutzübungen. Auch ratung - bundesweit ein Mindestangebot
+**intended_change:** Vorgesehene Veränderung: ten Monitorings, den Vorrat an Arzneimit- suchtkrank sind. Hierzu wollen wir prüfen, teln und Medizinprodukten sowie regel- wie sich – insbesondere in der Suchtbemäßige Katastrophenschutzübungen. Auch ratung – bundesweit ein Mindestangebot
 
 
 ##### component_topics
@@ -84285,7 +84285,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Dafür werden wir die Freibeträge für Kleinsparer*innen erhöhen, sie dynamisch an die … / in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung - und zwar ausschließlich mittels …
+**measure:** Dafür werden wir die Freibeträge für Kleinsparer*innen erhöhen, sie dynamisch an die … / in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung – und zwar ausschließlich mittels …
 
 ##### decision_readiness
 
@@ -84592,7 +84592,7 @@ _Leere Liste._
 
 **page:** 98
 
-**text:** Wir schaffen in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung - und zwar ausschließlich mittels Darlehen aus dem Bundeshaushalt und der Übertragung von Eigenmitteln vom Bund.
+**text:** Wir schaffen in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung – und zwar ausschließlich mittels Darlehen aus dem Bundeshaushalt und der Übertragung von Eigenmitteln vom Bund.
 
 **match_score:** 81.3
 
@@ -84605,7 +84605,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Dafür werden wir die versicherung eine ergänzende Kapital- Freibeträge für Kleinsparer*innen erhöhen, deckung - und zwar ausschließlich mittels sie dynamisch an die Inflation anpassen Darlehen aus dem Bundeshaushalt und der und die öffentliche Zulagenförderung auf Übertragung von Eigenmitteln vom Bund. niedrige und mittlere Einkommen fokus-
+**input_register_text:** Dafür werden wir die versicherung eine ergänzende Kapital- Freibeträge für Kleinsparer*innen erhöhen, deckung – und zwar ausschließlich mittels sie dynamisch an die Inflation anpassen Darlehen aus dem Bundeshaushalt und der und die öffentliche Zulagenförderung auf Übertragung von Eigenmitteln vom Bund. niedrige und mittlere Einkommen fokus-
 
 ##### source_components
 
@@ -84637,7 +84637,7 @@ _Leere Liste._
 
 **source_page:** 98
 
-**source_text:** Wir schaffen in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung - und zwar ausschließlich mittels Darlehen aus dem Bundeshaushalt und der Übertragung von Eigenmitteln vom Bund.
+**source_text:** Wir schaffen in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung – und zwar ausschließlich mittels Darlehen aus dem Bundeshaushalt und der Übertragung von Eigenmitteln vom Bund.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -84649,9 +84649,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung - und zwar ausschließlich mittels …
+**measure:** in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung – und zwar ausschließlich mittels …
 
-**intended_change:** Vorgesehene Veränderung: Wir schaffen in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung - und zwar ausschließlich mittels Darlehen aus dem Bundeshaushalt und der Übertragung von Eigenmitteln vom Bund.
+**intended_change:** Vorgesehene Veränderung: Wir schaffen in der gesetzlichen Rentenversicherung eine ergänzende Kapitaldeckung – und zwar ausschließlich mittels Darlehen aus dem Bundeshaushalt und der Übertragung von Eigenmitteln vom Bund.
 
 
 ##### component_topics
@@ -86050,7 +86050,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** die Einrichtung des „Forum Opposition und Widerstand 1945-1990“ und des „Zukunftszentrums für … / die deutsche Erinnerungskultur weiter für die Realität der Einwanderungsgesellschaft öffnen und tragen …
+**measure:** die Einrichtung des „Forum Opposition und Widerstand 1945–1990“ und des „Zukunftszentrums für … / die deutsche Erinnerungskultur weiter für die Realität der Einwanderungsgesellschaft öffnen und tragen …
 
 ##### decision_readiness
 
@@ -86396,7 +86396,7 @@ _Leere Liste._
 
 **page:** 107
 
-**text:** Wir unterstützen die Einrichtung des „Forum Opposition und Widerstand 1945-1990“ und des „Zukunftszentrums für Deutsche Einheit und Europäische Transformation“ in Halle als Orte des Austausches, der Forschung und der Aufarbeitung zur Stärkung eines gemeinsamen europäischen Verständnisses von Freiheit und Demokratie.
+**text:** Wir unterstützen die Einrichtung des „Forum Opposition und Widerstand 1945–1990“ und des „Zukunftszentrums für Deutsche Einheit und Europäische Transformation“ in Halle als Orte des Austausches, der Forschung und der Aufarbeitung zur Stärkung eines gemeinsamen europäischen Verständnisses von Freiheit und Demokratie.
 
 **match_score:** 92.0
 
@@ -86421,7 +86421,7 @@ _Leere Liste._
 
 **top_score:** 92.0
 
-**input_register_text:** Einrichtung des „Forum Opposition und Widerstand 1945-1990“ und des „Zu- Wir wollen die deutsche Erinnerungskultur kunftszentrums für Deutsche Einheit und weiter für die Realität der Einwanderungs- Europäische Transformation“ in Halle als gesellschaft öffnen und tragen dem bei Orte des Austausches, der Forschung und der Konzeption der erinnerungspolitischen der Aufarbeitung zur Stärkung eines ge- Maßnahmen Rechnung. meinsamen europäischen Verständnisses von Freiheit und Demokratie.
+**input_register_text:** Einrichtung des „Forum Opposition und Widerstand 1945–1990“ und des „Zu- Wir wollen die deutsche Erinnerungskultur kunftszentrums für Deutsche Einheit und weiter für die Realität der Einwanderungs- Europäische Transformation“ in Halle als gesellschaft öffnen und tragen dem bei Orte des Austausches, der Forschung und der Konzeption der erinnerungspolitischen der Aufarbeitung zur Stärkung eines ge- Maßnahmen Rechnung. meinsamen europäischen Verständnisses von Freiheit und Demokratie.
 
 ##### source_components
 
@@ -86431,7 +86431,7 @@ _Leere Liste._
 
 **source_page:** 107
 
-**source_text:** Wir unterstützen die Einrichtung des „Forum Opposition und Widerstand 1945-1990“ und des „Zukunftszentrums für Deutsche Einheit und Europäische Transformation“ in Halle als Orte des Austausches, der Forschung und der Aufarbeitung zur Stärkung eines gemeinsamen europäischen Verständnisses von Freiheit und Demokratie.
+**source_text:** Wir unterstützen die Einrichtung des „Forum Opposition und Widerstand 1945–1990“ und des „Zukunftszentrums für Deutsche Einheit und Europäische Transformation“ in Halle als Orte des Austausches, der Forschung und der Aufarbeitung zur Stärkung eines gemeinsamen europäischen Verständnisses von Freiheit und Demokratie.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -86443,9 +86443,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** die Einrichtung des „Forum Opposition und Widerstand 1945-1990“ und des „Zukunftszentrums für …
+**measure:** die Einrichtung des „Forum Opposition und Widerstand 1945–1990“ und des „Zukunftszentrums für …
 
-**intended_change:** Vorgesehene Veränderung: Wir unterstützen die Einrichtung des „Forum Opposition und Widerstand 1945-1990“ und des „Zukunftszentrums für Deutsche Einheit und Europäische Transformation“ in Halle als Orte des Austausches, der Forschung und der Aufarbeitung zur Stärkung eines gemeinsamen europäischen Verständnisses von Freiheit und Demokratie.
+**intended_change:** Vorgesehene Veränderung: Wir unterstützen die Einrichtung des „Forum Opposition und Widerstand 1945–1990“ und des „Zukunftszentrums für Deutsche Einheit und Europäische Transformation“ in Halle als Orte des Austausches, der Forschung und der Aufarbeitung zur Stärkung eines gemeinsamen europäischen Verständnisses von Freiheit und Demokratie.
 
 ###### Eintrag 2
 
@@ -93820,7 +93820,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Mit dem Digitale-Dienste-Gesetz (DSA) und dem Digitale-Märkte-Gesetz (DMA) haben wir wichtige Grundsteine … / KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung - unter Einhaltung aller datenschutzrechtlichen …
+**measure:** Mit dem Digitale-Dienste-Gesetz (DSA) und dem Digitale-Märkte-Gesetz (DMA) haben wir wichtige Grundsteine … / KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung – unter Einhaltung aller datenschutzrechtlichen …
 
 ##### decision_readiness
 
@@ -94167,7 +94167,7 @@ _Leere Liste._
 
 **page:** 115
 
-**text:** Wir wollen KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung - unter Einhaltung aller datenschutzrechtlichen Vorgaben - stärker nutzbar machen.
+**text:** Wir wollen KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung – unter Einhaltung aller datenschutzrechtlichen Vorgaben – stärker nutzbar machen.
 
 **match_score:** 86.8
 
@@ -94180,7 +94180,7 @@ _Leere Liste._
 
 **top_score:** 94.0
 
-**input_register_text:** Wir wollen KI-ge- Mit dem Digitale-Dienste-Gesetz (DSA) und stützte Analyseinstrumente der Polizei für dem Digitale-Märkte-Gesetz (DMA) haben die Strafverfolgung - unter Einhaltung wir wichtige Grundsteine für ein demo- aller datenschutzrechtlichen Vorgaben - kratisches Netz gelegt.
+**input_register_text:** Wir wollen KI-ge- Mit dem Digitale-Dienste-Gesetz (DSA) und stützte Analyseinstrumente der Polizei für dem Digitale-Märkte-Gesetz (DMA) haben die Strafverfolgung – unter Einhaltung wir wichtige Grundsteine für ein demo- aller datenschutzrechtlichen Vorgaben – kratisches Netz gelegt.
 
 ##### source_components
 
@@ -94212,7 +94212,7 @@ _Leere Liste._
 
 **source_page:** 115
 
-**source_text:** Wir wollen KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung - unter Einhaltung aller datenschutzrechtlichen Vorgaben - stärker nutzbar machen.
+**source_text:** Wir wollen KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung – unter Einhaltung aller datenschutzrechtlichen Vorgaben – stärker nutzbar machen.
 
 **topic:** DIGITAL_AI_DATA
 
@@ -94224,9 +94224,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung - unter Einhaltung aller datenschutzrechtlichen …
+**measure:** KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung – unter Einhaltung aller datenschutzrechtlichen …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung - unter Einhaltung aller datenschutzrechtlichen Vorgaben - stärker nutzbar machen.
+**intended_change:** Vorgesehene Veränderung: Wir wollen KI-gestützte Analyseinstrumente der Polizei für die Strafverfolgung – unter Einhaltung aller datenschutzrechtlichen Vorgaben – stärker nutzbar machen.
 
 
 ##### component_topics
@@ -94320,7 +94320,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-gruene-0222-dabei-setzen-lich-und-rechtsstaatlich-von-polizei-und-wir-neben-transpar
 
-**source_location:** wo nötig - für Verbesserungen in Europa durch automatisierte Analyse - unter
+**source_location:** wo nötig – für Verbesserungen in Europa durch automatisierte Analyse – unter
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
@@ -96162,7 +96162,7 @@ _Leere Liste._
 
 **page:** 117
 
-**text:** Wir setzen uns deshalb unter anderem dafür ein, dass Vielfalt und eine interkulturelle Öffnung - sowohl personell als auch strukturell - in Behörden strategisch und konsequent gefördert werden und schaffen dafür auch die rechtlichen Grundlagen.
+**text:** Wir setzen uns deshalb unter anderem dafür ein, dass Vielfalt und eine interkulturelle Öffnung – sowohl personell als auch strukturell – in Behörden strategisch und konsequent gefördert werden und schaffen dafür auch die rechtlichen Grundlagen.
 
 **match_score:** 71.6
 
@@ -96175,7 +96175,7 @@ _Leere Liste._
 
 **top_score:** 84.5
 
-**input_register_text:** Wir wollen die als auch strukturell - in Behörden strate- Deutsche Islam Konferenz weiterentwi- gisch und konsequent gefördert werden ckeln und in unserem politischen Handeln und schaffen dafür auch die rechtlichen auch progressive, liberale muslimische Grundlagen.
+**input_register_text:** Wir wollen die als auch strukturell – in Behörden strate- Deutsche Islam Konferenz weiterentwi- gisch und konsequent gefördert werden ckeln und in unserem politischen Handeln und schaffen dafür auch die rechtlichen auch progressive, liberale muslimische Grundlagen.
 
 ##### source_components
 
@@ -96207,7 +96207,7 @@ _Leere Liste._
 
 **source_page:** 117
 
-**source_text:** Wir setzen uns deshalb unter anderem dafür ein, dass Vielfalt und eine interkulturelle Öffnung - sowohl personell als auch strukturell - in Behörden strategisch und konsequent gefördert werden und schaffen dafür auch die rechtlichen Grundlagen.
+**source_text:** Wir setzen uns deshalb unter anderem dafür ein, dass Vielfalt und eine interkulturelle Öffnung – sowohl personell als auch strukturell – in Behörden strategisch und konsequent gefördert werden und schaffen dafür auch die rechtlichen Grundlagen.
 
 **topic:** CULTURE_RELIGION_SPORT
 
@@ -96221,7 +96221,7 @@ _Leere Liste._
 
 **measure:** Wir setzen uns deshalb unter anderem dafür ein, dass Vielfalt und eine …
 
-**intended_change:** Vorgesehene Veränderung: Wir setzen uns deshalb unter anderem dafür ein, dass Vielfalt und eine interkulturelle Öffnung - sowohl personell als auch strukturell - in Behörden strategisch und konsequent gefördert werden und schaffen dafür auch die rechtlichen Grundlagen.
+**intended_change:** Vorgesehene Veränderung: Wir setzen uns deshalb unter anderem dafür ein, dass Vielfalt und eine interkulturelle Öffnung – sowohl personell als auch strukturell – in Behörden strategisch und konsequent gefördert werden und schaffen dafür auch die rechtlichen Grundlagen.
 
 
 ##### component_topics
@@ -102469,7 +102469,7 @@ _Leere Liste._
 
 **page:** 124
 
-**text:** Gegen antidemokratische Bewegungen, die einen ideologischen Kampf gegen unsere offene Gesellschaft führen, arbeiten wir für die Unabhängigkeit und Freiheit der Kultur, der Künstler*innen und ihrer diversen Ausdrucksformen - ob Literatur, Film, Musik, Theater, Tanz oder bildende Kunst, ob Mode, Architektur oder Design, ob Club oder Oper, ob öffentliche Einrichtung oder Teil der großen Kultur- und Kreativwirtschaft.
+**text:** Gegen antidemokratische Bewegungen, die einen ideologischen Kampf gegen unsere offene Gesellschaft führen, arbeiten wir für die Unabhängigkeit und Freiheit der Kultur, der Künstler*innen und ihrer diversen Ausdrucksformen – ob Literatur, Film, Musik, Theater, Tanz oder bildende Kunst, ob Mode, Architektur oder Design, ob Club oder Oper, ob öffentliche Einrichtung oder Teil der großen Kultur- und Kreativwirtschaft.
 
 **match_score:** 75.1
 
@@ -102482,7 +102482,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Gegen antidemokratische Bewegunstärken das persönliche Budget als wichti- gen, die einen ideologischen Kampf gegen ges Instrument der Selbstbestimmung. unsere offene Gesellschaft führen, arbeiten wir für die Unabhängigkeit und Freiheit Wir wollen die Deutsche Gebärdensprache der Kultur, der Künstler*innen und ihrer besser verankern, weiter fördern und damit diversen Ausdrucksformen - ob Literatur, auch ihre Nutzer*innen stärken.
+**input_register_text:** Gegen antidemokratische Bewegunstärken das persönliche Budget als wichti- gen, die einen ideologischen Kampf gegen ges Instrument der Selbstbestimmung. unsere offene Gesellschaft führen, arbeiten wir für die Unabhängigkeit und Freiheit Wir wollen die Deutsche Gebärdensprache der Kultur, der Künstler*innen und ihrer besser verankern, weiter fördern und damit diversen Ausdrucksformen – ob Literatur, auch ihre Nutzer*innen stärken.
 
 ##### source_components
 
@@ -102514,7 +102514,7 @@ _Leere Liste._
 
 **source_page:** 124
 
-**source_text:** Gegen antidemokratische Bewegungen, die einen ideologischen Kampf gegen unsere offene Gesellschaft führen, arbeiten wir für die Unabhängigkeit und Freiheit der Kultur, der Künstler*innen und ihrer diversen Ausdrucksformen - ob Literatur, Film, Musik, Theater, Tanz oder bildende Kunst, ob Mode, Architektur oder Design, ob Club oder Oper, ob öffentliche Einrichtung oder Teil der großen Kultur- und Kreativwirtschaft.
+**source_text:** Gegen antidemokratische Bewegungen, die einen ideologischen Kampf gegen unsere offene Gesellschaft führen, arbeiten wir für die Unabhängigkeit und Freiheit der Kultur, der Künstler*innen und ihrer diversen Ausdrucksformen – ob Literatur, Film, Musik, Theater, Tanz oder bildende Kunst, ob Mode, Architektur oder Design, ob Club oder Oper, ob öffentliche Einrichtung oder Teil der großen Kultur- und Kreativwirtschaft.
 
 **topic:** CULTURE_RELIGION_SPORT
 
@@ -102528,7 +102528,7 @@ _Leere Liste._
 
 **measure:** Gegen antidemokratische Bewegungen, die einen ideologischen Kampf gegen unsere offene Gesellschaft führen, …
 
-**intended_change:** Vorgesehene Veränderung: Gegen antidemokratische Bewegungen, die einen ideologischen Kampf gegen unsere offene Gesellschaft führen, arbeiten wir für die Unabhängigkeit und Freiheit der Kultur, der Künstler*innen und ihrer diversen Ausdrucksformen - ob Literatur, Film, Musik, Theater, Tanz oder bildende Kunst, ob Mode, Architektur oder Design, ob Club oder Oper, ob öffentliche Einrichtung oder Teil der großen Kultur- und Kreativwirtschaft.
+**intended_change:** Vorgesehene Veränderung: Gegen antidemokratische Bewegungen, die einen ideologischen Kampf gegen unsere offene Gesellschaft führen, arbeiten wir für die Unabhängigkeit und Freiheit der Kultur, der Künstler*innen und ihrer diversen Ausdrucksformen – ob Literatur, Film, Musik, Theater, Tanz oder bildende Kunst, ob Mode, Architektur oder Design, ob Club oder Oper, ob öffentliche Einrichtung oder Teil der großen Kultur- und Kreativwirtschaft.
 
 
 ##### component_topics
@@ -103998,7 +103998,7 @@ _Leere Liste._
 
 **top_score:** 96.0
 
-**input_register_text:** Wir wollen den zen wir unsere Kulturlandschaft gemein- jüdischen Kulturfonds verstetigen, der die sam mit den Ländern auf ihrem Weg in den Arbeit jüdischer und israelischer Künstnachhaltigen Betrieb - mit Beratung und ler*innen unterstützt.
+**input_register_text:** Wir wollen den zen wir unsere Kulturlandschaft gemein- jüdischen Kulturfonds verstetigen, der die sam mit den Ländern auf ihrem Weg in den Arbeit jüdischer und israelischer Künstnachhaltigen Betrieb – mit Beratung und ler*innen unterstützt.
 
 ##### source_components
 
@@ -106596,7 +106596,7 @@ _Leere Liste._
 
 **page:** 130
 
-**text:** Für eine europäische und internationale Flucht- und Migrationspolitik Wir wollen eine gemeinsame europäische Migrationspolitik vorantreiben - mit einer fairen, verbindlichen und solidarischen Verteilung von Schutzsuchenden in Europa.
+**text:** Für eine europäische und internationale Flucht- und Migrationspolitik Wir wollen eine gemeinsame europäische Migrationspolitik vorantreiben – mit einer fairen, verbindlichen und solidarischen Verteilung von Schutzsuchenden in Europa.
 
 **match_score:** 79.2
 
@@ -106621,7 +106621,7 @@ _Leere Liste._
 
 **top_score:** 79.2
 
-**input_register_text:** Die Verfahren des Familiennachzugs Wir wollen eine gemeinsame europäische wollen wir beschleunigen und von Sprach- Migrationspolitik vorantreiben - mit einer nachweisen im Rahmen der Familienzu- fairen, verbindlichen und solidarischen sammenführung vor der Einreise absehen.
+**input_register_text:** Die Verfahren des Familiennachzugs Wir wollen eine gemeinsame europäische wollen wir beschleunigen und von Sprach- Migrationspolitik vorantreiben – mit einer nachweisen im Rahmen der Familienzu- fairen, verbindlichen und solidarischen sammenführung vor der Einreise absehen.
 
 ##### source_components
 
@@ -106631,7 +106631,7 @@ _Leere Liste._
 
 **source_page:** 130
 
-**source_text:** Für eine europäische und internationale Flucht- und Migrationspolitik Wir wollen eine gemeinsame europäische Migrationspolitik vorantreiben - mit einer fairen, verbindlichen und solidarischen Verteilung von Schutzsuchenden in Europa.
+**source_text:** Für eine europäische und internationale Flucht- und Migrationspolitik Wir wollen eine gemeinsame europäische Migrationspolitik vorantreiben – mit einer fairen, verbindlichen und solidarischen Verteilung von Schutzsuchenden in Europa.
 
 **topic:** DEFENCE_FOREIGN_EU
 
@@ -106645,7 +106645,7 @@ _Leere Liste._
 
 **measure:** Für eine europäische und internationale Flucht- und Migrationspolitik Wir wollen eine gemeinsame …
 
-**intended_change:** Vorgesehene Veränderung: Für eine europäische und internationale Flucht- und Migrationspolitik Wir wollen eine gemeinsame europäische Migrationspolitik vorantreiben - mit einer fairen, verbindlichen und solidarischen Verteilung von Schutzsuchenden in Europa.
+**intended_change:** Vorgesehene Veränderung: Für eine europäische und internationale Flucht- und Migrationspolitik Wir wollen eine gemeinsame europäische Migrationspolitik vorantreiben – mit einer fairen, verbindlichen und solidarischen Verteilung von Schutzsuchenden in Europa.
 
 ###### Eintrag 2
 
@@ -107988,7 +107988,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Grenzkontrollen an der Außengrenze sind eine EU-Gemeinschaftsaufgabe, die zunehmend von europäischen Beamt*innen … / Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme - …
+**measure:** Grenzkontrollen an der Außengrenze sind eine EU-Gemeinschaftsaufgabe, die zunehmend von europäischen Beamt*innen … / Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme – …
 
 ##### decision_readiness
 
@@ -108321,7 +108321,7 @@ _Leere Liste._
 
 **page:** 132
 
-**text:** Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme - auch auf Landesebene - unterstützen.
+**text:** Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme – auch auf Landesebene – unterstützen.
 
 **match_score:** 91.6
 
@@ -108334,7 +108334,7 @@ _Leere Liste._
 
 **top_score:** 96.2
 
-**input_register_text:** Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme Grenzkontrollen an der Außengrenze sind - auch auf Landesebene - unterstützen. eine EU-Gemeinschaftsaufgabe, die zu- Wir wollen weiterhin Verantwortung für Afnehmend von europäischen Beamt*innen ghan*innen übernehmen, die wegen ihrer übernommen werden sollte.
+**input_register_text:** Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme Grenzkontrollen an der Außengrenze sind – auch auf Landesebene – unterstützen. eine EU-Gemeinschaftsaufgabe, die zu- Wir wollen weiterhin Verantwortung für Afnehmend von europäischen Beamt*innen ghan*innen übernehmen, die wegen ihrer übernommen werden sollte.
 
 ##### source_components
 
@@ -108366,7 +108366,7 @@ _Leere Liste._
 
 **source_page:** 132
 
-**source_text:** Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme - auch auf Landesebene - unterstützen.
+**source_text:** Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme – auch auf Landesebene – unterstützen.
 
 **topic:** ADMINISTRATION_STATE
 
@@ -108378,9 +108378,9 @@ _Leere Liste._
 
 - Finanzierungsumfang und Förderkriterien
 
-**measure:** Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme - …
+**measure:** Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme – …
 
-**intended_change:** Vorgesehene Veränderung: Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme - auch auf Landesebene - unterstützen.
+**intended_change:** Vorgesehene Veränderung: Für besonders gefährdete Gruppen wollen wir deshalb humanitäre Aufnahme- und Resettlementprogramme – auch auf Landesebene – unterstützen.
 
 
 ##### component_topics
@@ -110988,7 +110988,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut - … / Auch internationale Kooperationen werden wir stärken, zum Beispiel durch gemeinsame Ermittlungen oder …
+**measure:** Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut – … / Auch internationale Kooperationen werden wir stärken, zum Beispiel durch gemeinsame Ermittlungen oder …
 
 ##### decision_readiness
 
@@ -111273,7 +111273,7 @@ _Leere Liste._
 
 **page:** 135
 
-**text:** Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut - beim Geld.
+**text:** Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut – beim Geld.
 
 **match_score:** 100.0
 
@@ -111298,7 +111298,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Kooperationen werden wir stärken, zum Beispiel durch gemeinsame Ermittlungen Wir müssen die Kriminellen dort treffen, wo oder den Einsatz von Kontaktbeamt*innen es ihnen weh tut - beim Geld.
+**input_register_text:** Kooperationen werden wir stärken, zum Beispiel durch gemeinsame Ermittlungen Wir müssen die Kriminellen dort treffen, wo oder den Einsatz von Kontaktbeamt*innen es ihnen weh tut – beim Geld.
 
 ##### source_components
 
@@ -111308,7 +111308,7 @@ _Leere Liste._
 
 **source_page:** 135
 
-**source_text:** Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut - beim Geld.
+**source_text:** Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut – beim Geld.
 
 **topic:** OTHER
 
@@ -111320,9 +111320,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut - …
+**measure:** Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut – …
 
-**intended_change:** Vorgesehene Veränderung: Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut - beim Geld.
+**intended_change:** Vorgesehene Veränderung: Wir müssen die Kriminellen dort treffen, wo es ihnen weh tut – beim Geld.
 
 ###### Eintrag 2
 
@@ -114419,7 +114419,7 @@ _Leere Liste._
 
 **page:** 138
 
-**text:** Wir wollen das Ehrenamt bei der Freiwilligen Feuerwehr, dem Technischen Hilfswerk und den Hilfsorganisationen unterstützen und fördern - zum Beispiel mit guten Freistellungsregelungen, der Gleichstellung der Ehrenamtlichen bei Einsätzen oder Ausbildung oder Erleichterungen für Ehrenamtliche.
+**text:** Wir wollen das Ehrenamt bei der Freiwilligen Feuerwehr, dem Technischen Hilfswerk und den Hilfsorganisationen unterstützen und fördern – zum Beispiel mit guten Freistellungsregelungen, der Gleichstellung der Ehrenamtlichen bei Einsätzen oder Ausbildung oder Erleichterungen für Ehrenamtliche.
 
 **match_score:** 70.3
 
@@ -114464,7 +114464,7 @@ _Leere Liste._
 
 **source_page:** 138
 
-**source_text:** Wir wollen das Ehrenamt bei der Freiwilligen Feuerwehr, dem Technischen Hilfswerk und den Hilfsorganisationen unterstützen und fördern - zum Beispiel mit guten Freistellungsregelungen, der Gleichstellung der Ehrenamtlichen bei Einsätzen oder Ausbildung oder Erleichterungen für Ehrenamtliche.
+**source_text:** Wir wollen das Ehrenamt bei der Freiwilligen Feuerwehr, dem Technischen Hilfswerk und den Hilfsorganisationen unterstützen und fördern – zum Beispiel mit guten Freistellungsregelungen, der Gleichstellung der Ehrenamtlichen bei Einsätzen oder Ausbildung oder Erleichterungen für Ehrenamtliche.
 
 **topic:** EDUCATION
 
@@ -114478,7 +114478,7 @@ _Leere Liste._
 
 **measure:** das Ehrenamt bei der Freiwilligen Feuerwehr, dem Technischen Hilfswerk und den Hilfsorganisationen …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen das Ehrenamt bei der Freiwilligen Feuerwehr, dem Technischen Hilfswerk und den Hilfsorganisationen unterstützen und fördern - zum Beispiel mit guten Freistellungsregelungen, der Gleichstellung der Ehrenamtlichen bei Einsätzen oder Ausbildung oder Erleichterungen für Ehrenamtliche.
+**intended_change:** Vorgesehene Veränderung: Wir wollen das Ehrenamt bei der Freiwilligen Feuerwehr, dem Technischen Hilfswerk und den Hilfsorganisationen unterstützen und fördern – zum Beispiel mit guten Freistellungsregelungen, der Gleichstellung der Ehrenamtlichen bei Einsätzen oder Ausbildung oder Erleichterungen für Ehrenamtliche.
 
 
 ##### component_topics
@@ -116027,7 +116027,7 @@ _Leere Liste._
 
 **page:** 139
 
-**text:** 139 Kapitel3 Regierungsprogramm 2025 Für die Verbindung von innerer und äußerer Sicherheit Damit unser Land sicher bleibt, damit unsere Stromnetze, Mobilfunkdienste oder Server geschützt sind - unsere Kritische Infrastruktur (KRITIS), die für unseren Wohlstand entscheidend ist -, müssen wir die innere und äußere Sicherheit stärker zusammendenken.
+**text:** 139 Kapitel3 Regierungsprogramm 2025 Für die Verbindung von innerer und äußerer Sicherheit Damit unser Land sicher bleibt, damit unsere Stromnetze, Mobilfunkdienste oder Server geschützt sind – unsere Kritische Infrastruktur (KRITIS), die für unseren Wohlstand entscheidend ist –, müssen wir die innere und äußere Sicherheit stärker zusammendenken.
 
 **match_score:** 72.5
 
@@ -116052,7 +116052,7 @@ _Leere Liste._
 
 **top_score:** 72.5
 
-**input_register_text:** Wir wollen, Wohlstand entscheidend ist -, müssen wir dass das BfV stärker wissenschaftliche, die innere und äußere Sicherheit stärker zivilgesellschaftliche und öffentliche zusammendenken.
+**input_register_text:** Wir wollen, Wohlstand entscheidend ist –, müssen wir dass das BfV stärker wissenschaftliche, die innere und äußere Sicherheit stärker zivilgesellschaftliche und öffentliche zusammendenken.
 
 ##### source_components
 
@@ -116062,7 +116062,7 @@ _Leere Liste._
 
 **source_page:** 139
 
-**source_text:** 139 Kapitel3 Regierungsprogramm 2025 Für die Verbindung von innerer und äußerer Sicherheit Damit unser Land sicher bleibt, damit unsere Stromnetze, Mobilfunkdienste oder Server geschützt sind - unsere Kritische Infrastruktur (KRITIS), die für unseren Wohlstand entscheidend ist -, müssen wir die innere und äußere Sicherheit stärker zusammendenken.
+**source_text:** 139 Kapitel3 Regierungsprogramm 2025 Für die Verbindung von innerer und äußerer Sicherheit Damit unser Land sicher bleibt, damit unsere Stromnetze, Mobilfunkdienste oder Server geschützt sind – unsere Kritische Infrastruktur (KRITIS), die für unseren Wohlstand entscheidend ist –, müssen wir die innere und äußere Sicherheit stärker zusammendenken.
 
 **topic:** ENERGY_CLIMATE
 
@@ -116076,7 +116076,7 @@ _Leere Liste._
 
 **measure:** 139 Kapitel3 Regierungsprogramm 2025 Für die Verbindung von innerer und äußerer Sicherheit …
 
-**intended_change:** Vorgesehene Veränderung: 139 Kapitel3 Regierungsprogramm 2025 Für die Verbindung von innerer und äußerer Sicherheit Damit unser Land sicher bleibt, damit unsere Stromnetze, Mobilfunkdienste oder Server geschützt sind - unsere Kritische Infrastruktur (KRITIS), die für unseren Wohlstand entscheidend ist -, müssen wir die innere und äußere Sicherheit stärker zusammendenken.
+**intended_change:** Vorgesehene Veränderung: 139 Kapitel3 Regierungsprogramm 2025 Für die Verbindung von innerer und äußerer Sicherheit Damit unser Land sicher bleibt, damit unsere Stromnetze, Mobilfunkdienste oder Server geschützt sind – unsere Kritische Infrastruktur (KRITIS), die für unseren Wohlstand entscheidend ist –, müssen wir die innere und äußere Sicherheit stärker zusammendenken.
 
 ###### Eintrag 2
 
@@ -120879,7 +120879,7 @@ _Leere Liste._
 
 **page:** 146
 
-**text:** Wir wollen unsere Zusammenarbeit mit Ländern in Asien, Afrika, Lateinamerika und Nahost gezielt ausbauen und um Partnerschaften - basierend auf gegenseitigem Vertrauen und Transparenz sowie gemeinsamen Interessen - werben.
+**text:** Wir wollen unsere Zusammenarbeit mit Ländern in Asien, Afrika, Lateinamerika und Nahost gezielt ausbauen und um Partnerschaften – basierend auf gegenseitigem Vertrauen und Transparenz sowie gemeinsamen Interessen – werben.
 
 **match_score:** 74.4
 
@@ -120924,7 +120924,7 @@ _Leere Liste._
 
 **source_page:** 146
 
-**source_text:** Wir wollen unsere Zusammenarbeit mit Ländern in Asien, Afrika, Lateinamerika und Nahost gezielt ausbauen und um Partnerschaften - basierend auf gegenseitigem Vertrauen und Transparenz sowie gemeinsamen Interessen - werben.
+**source_text:** Wir wollen unsere Zusammenarbeit mit Ländern in Asien, Afrika, Lateinamerika und Nahost gezielt ausbauen und um Partnerschaften – basierend auf gegenseitigem Vertrauen und Transparenz sowie gemeinsamen Interessen – werben.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -120938,7 +120938,7 @@ _Leere Liste._
 
 **measure:** unsere Zusammenarbeit mit Ländern in Asien, Afrika, Lateinamerika und Nahost gezielt ausbauen …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen unsere Zusammenarbeit mit Ländern in Asien, Afrika, Lateinamerika und Nahost gezielt ausbauen und um Partnerschaften - basierend auf gegenseitigem Vertrauen und Transparenz sowie gemeinsamen Interessen - werben.
+**intended_change:** Vorgesehene Veränderung: Wir wollen unsere Zusammenarbeit mit Ländern in Asien, Afrika, Lateinamerika und Nahost gezielt ausbauen und um Partnerschaften – basierend auf gegenseitigem Vertrauen und Transparenz sowie gemeinsamen Interessen – werben.
 
 
 ##### component_topics

@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW P43: Infrastruktur / kommunaler Wohnungsbau / Innovation / Wissenstransfer / Risikokapital - source-bound review + finite U08 repair
+## WÖk FACH BATCH — Berlin BSW P43: Infrastruktur / kommunaler Wohnungsbau / Innovation / Wissenstransfer / Risikokapital — source-bound review + finite U08 repair
 
 Disjoint continuation after P42 `5458602710`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P43/66. P23→P42 remain ahead in the source-order queue and must be consumed idempotently. Generic delegated/#313 RNAA is not Fach proof. No DNS mapping, Recommendation, score or programme-wide judgement.
 
@@ -6,7 +6,7 @@ Disjoint continuation after P42 `5458602710`. Frozen artefact unchanged: `BE-AGH
 
 P43 also cannot use a zero baseline:
 
-- Berlin’s 2025-2029 financial planning already raises investment expenditure substantially; from 2026 federal SVIK funds add around EUR 435m/year on average, around EUR 5.25bn over twelve years. Official: `https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1594365.php`.
+- Berlin’s 2025–2029 financial planning already raises investment expenditure substantially; from 2026 federal SVIK funds add around EUR 435m/year on average, around EUR 5.25bn over twelve years. Official: `https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1594365.php`.
 - Berlin’s public-building estate already has a prioritised renovation path: BIM reported around EUR 347m of SILB building renovation spending in 2025, with building scans and priority classes used to manage backlog. Official: `https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1667789.php`.
 - Berlin already has six large land-owned housing companies. They added 4,692 newly built homes in 2025; Roadmap 2.0 targets roughly another 56,000 land-owned homes by 2035. Official: `https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2026/pressemitteilung.1672180.php` and `https://www.berlin.de/rbmskzl/aktuelles/media/unterzeichnung-der-roadmap-2-0-1679508.php`.
 - Innovation/transfer/startup support also has an existing base: Berlin Partner reported 96 innovation projects in 2025; IBB Ventures already supplies public venture capital, including the B# pre-seed fund, and reported 39 deals in 2025 plus further transactions in 2026. Official: `https://www.berlin.de/sen/web/presse/pressemitteilungen/2026/pressemitteilung.1648340.php`, `https://www.ibb.de/de/ueber-uns/presse/ibb-ventures-staerkt-berlins-position-als-fuehrender-startup-standort.html`, `https://www.ibb.de/de/ueber-uns/presse/ibb-ventures-startet-neuen-pre-seed-fonds-fuer-berlins-deeptech-gruender-innen.html`.
@@ -14,7 +14,7 @@ P43 also cannot use a zero baseline:
 
 Portfolio guard: **capital spend, a plan, new housing units, grant volume or venture-capital volume are inputs/outputs. Outcome requires asset condition/service quality, affordability/access, lifecycle cost, actual innovation/productivity or resilient capacity.**
 
-### 1. U01 - generic tax/budget priority across government levels
+### 1. U01 — generic tax/budget priority across government levels
 
 #### `BE-BSW-P43-U01-A01-740d451f0b66`
 Source proposition: tax money should be shifted away from wars abroad toward own infrastructure.
@@ -26,7 +26,7 @@ Source proposition: tax money should be shifted away from wars abroad toward own
 ### 2. U02/U05/U07/U09/U11 headings; U03 umbrella sustainability concept
 
 #### `BE-BSW-P43-U02-833ba7087cc5`
-`NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING` - `Nachhaltig wirtschaften`.
+`NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING` — `Nachhaltig wirtschaften`.
 
 #### `BE-BSW-P43-U03-A01-cc4f162bfc1c`
 - `terminal_fach_state = NON_EFFECT_UMBRELLA_POLICY_PORTFOLIO_REVIEWED`
@@ -44,7 +44,7 @@ Source proposition: tax money should be shifted away from wars abroad toward own
 #### `BE-BSW-P43-U11-41b8138dc7e1`
 `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`; following policy content belongs to the next physical source scope, not this heading.
 
-### 3. U04 - proposed municipal construction company + serial/modular production
+### 3. U04 — proposed municipal construction company + serial/modular production
 
 #### `BE-BSW-P43-U04-A01-d40e43af68a5`
 
@@ -68,7 +68,7 @@ Source proposition: tax money should be shifted away from wars abroad toward own
 - Boundary: `seriell/modular` is a production method, not evidence of ecological performance or affordability. Lifecycle carbon/resources, quality, accessibility and real rents remain separate.
 - Reality check: delivery time/cost, defect rate, embodied/lifecycle impacts, actual reconfiguration events/cost, tenant satisfaction, maintenance and rent affordability.
 
-### 4. U06 - infrastructure backlog, federal funds, plan and resilience
+### 4. U06 — infrastructure backlog, federal funds, plan and resilience
 
 #### `BE-BSW-P43-U06-A01-e977b9370b02`
 - `terminal_fach_state = NON_EFFECT_PROBLEM_CLAIM_REVIEWED`
@@ -112,13 +112,13 @@ Source proposition: tax money should be shifted away from wars abroad toward own
 - `terminal_fach_state = NON_EFFECT_CRITICAL_INFRASTRUCTURE_OUTCOME_GOAL_REVIEWED`
 - Reason: stable, affordable and crisis-resilient electricity/water/district heat is a material target state/hard guard, but this atom specifies no independent generation/network/water/heat investment or regulatory mechanism. Preserve affordability, reliability and crisis resilience as separate non-compensable outcome dimensions for later measures.
 
-### 5. U08 - innovation frame + compound federal-tax/Land-funding atom
+### 5. U08 — innovation frame + compound federal-tax/Land-funding atom
 
 #### `BE-BSW-P43-U08-A01-dcb9cd7904c6`
 - `terminal_fach_state = NON_EFFECT_INNOVATION_POLICY_FRAME_REVIEWED`
 - Reason: `kluge und unabhängige Innovationspolitik` is a normative frame, not an independent instrument/outcome.
 
-#### `BE-BSW-P43-U08-A02-85c1f271a503` - **compound parent, deterministic split required**
+#### `BE-BSW-P43-U08-A02-85c1f271a503` — **compound parent, deterministic split required**
 The source atom combines at least two different competence/mechanism layers: a **Bundesratsinitiative for tax-based R&D support** and **Berlin-owned funding programmes for the science/technology location**, with an additional safeguard at the end of the current source sentence. Federal tax advocacy and Land programme funding cannot be one effect object.
 
 - parent → `SOURCE_UNIT_RECLASSIFIED_VERSIONED`
@@ -131,7 +131,7 @@ Expected later review layers only after exact children exist:
 - federal R&D-tax child: incentive/additionality/distribution/fiscal cost and Berlin’s Bundesrat contribution; current federal Forschungszulage is the baseline;
 - Land-programme child: additional research/transfer capacity versus subsidy deadweight/selection/crowd-out, with the exact source safeguard preserved.
 
-### 6. U10 - systematic knowledge transfer + start-up finance
+### 6. U10 — systematic knowledge transfer + start-up finance
 
 #### `BE-BSW-P43-U10-A01-58860316eac2`
 
@@ -139,7 +139,7 @@ Expected later review layers only after exact children exist:
 - `impact_direction = POSITIVE_KNOWLEDGE_TRANSFER_AND_SME_INNOVATION_DIFFUSION_POTENTIAL / GOVERNANCE_ADDITIONALITY_AND_ABSORPTIVE_CAPACITY_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_NETWORK_TRANSFER_MECHANISM / COMMERCIAL_PRODUCTIVITY_OUTCOME_PENDING`
 - Baseline: Berlin already has Berlin Partner/Adlershof/university transfer infrastructure, so the delta must be more effective systematic transfer, not creation from zero.
-- Mechanism: structured university/research/Adlershof-SME interfaces can reduce search/coordination/IP/prototyping barriers and increase applied collaboration.
+- Mechanism: structured university/research/Adlershof–SME interfaces can reduce search/coordination/IP/prototyping barriers and increase applied collaboration.
 - Omissions: exact transfer instrument, IP/data rules, staff/budget, SME selection/access, incentives for researchers, sector focus and existing-programme integration.
 - Risks: event/network output without projects, capture by already connected firms, subsidy/consulting duplication, IP conflicts, research agenda distortion.
 - Reality check: additional collaborations, SME reach/new entrants, licensing/prototypes, follow-on private R&D, productivity/revenue where attributable and repeat collaboration.
@@ -149,7 +149,7 @@ Expected later review layers only after exact children exist:
 - `related_to = BE-BSW-P43-U10-A01-58860316eac2`
 - Reason: this atom restates the same systematic knowledge-transfer target between higher education/research and medium-sized firms without a distinct additional instrument/budget/competence path. Preserve as reinforcing text; do not double-count.
 
-#### `BE-BSW-P43-U10-A03-115ca59122a7` - compound parent; exact two-clause Fach-bound repair
+#### `BE-BSW-P43-U10-A03-115ca59122a7` — compound parent; exact two-clause Fach-bound repair
 Parent combines unspecified `Rahmenbedingungen` with an identifiable risk-capital access lever.
 
 - parent → `SOURCE_UNIT_RECLASSIFIED_VERSIONED`

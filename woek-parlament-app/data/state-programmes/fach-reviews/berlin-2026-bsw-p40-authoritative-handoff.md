@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW P40: Schul-/Jugendgewalt, öffentlicher Raum, Messergewalt, Integration, häusliche Gewalt - source-bound review + compound repairs
+## WÖk FACH BATCH — Berlin BSW P40: Schul-/Jugendgewalt, öffentlicher Raum, Messergewalt, Integration, häusliche Gewalt — source-bound review + compound repairs
 
 Authoritative continuation after P39 `5455231227`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P40/66. Generic delegated/#313 RNAA is not Fach authority for this scope. No DNS mapping, Recommendation, score or programme-wide judgement.
 
@@ -10,13 +10,13 @@ Authoritative continuation after P39 `5455231227`. Frozen artifact unchanged: `B
 - The federal electronic-ankle-monitor framework for high-risk domestic-violence cases was approved in June 2026. Therefore P40's `spanisches Modell` is no longer assessable as if such a legal instrument did not exist nationally. Federal current-law source: `https://www.bundesregierung.de/breg-de/aktuelles/haeusliche-gewalt-fussfessel-2394530`.
 - Berlin's protection system is already expanding: the 10th women-and-children protection house opened in August 2026; Berlin reported 419 family places/921 beds across women's shelters/refuge apartments and an 11th house planned for September. Source: `https://www.berlin.de/sen/asgiva/presse/pressemitteilungen/2026/pressemitteilung.1706191.php`.
 
-### 2. U01 - school-violence diagnosis, prevention principle, school social work and generic prevention portfolio
+### 2. U01 — school-violence diagnosis, prevention principle, school social work and generic prevention portfolio
 
-- `BE-BSW-P40-U01-A01-b404e69c6dd4` - `An Berliner Schulen finden täglich mehrere Polizeieinsätze statt.` → `NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED`. Do not treat frequency as independently verified from the programme.
-- `BE-BSW-P40-U01-A02-985c7b10a4da` - claimed increase in severe assaults among minors → `NON_EFFECT_PROGRAMME_TREND_CLAIM_REVIEWED`. Requires independent youth/school-specific time series and recording-method control.
-- `BE-BSW-P40-U01-A03-7d36595ad840` - `Prävention vor Repression` → `NON_EFFECT_SECURITY_PREVENTION_POLICY_PRINCIPLE_REVIEWED`.
+- `BE-BSW-P40-U01-A01-b404e69c6dd4` — `An Berliner Schulen finden täglich mehrere Polizeieinsätze statt.` → `NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED`. Do not treat frequency as independently verified from the programme.
+- `BE-BSW-P40-U01-A02-985c7b10a4da` — claimed increase in severe assaults among minors → `NON_EFFECT_PROGRAMME_TREND_CLAIM_REVIEWED`. Requires independent youth/school-specific time series and recording-method control.
+- `BE-BSW-P40-U01-A03-7d36595ad840` — `Prävention vor Repression` → `NON_EFFECT_SECURITY_PREVENTION_POLICY_PRINCIPLE_REVIEWED`.
 
-#### `BE-BSW-P40-U01-A04-dcd5df70e9a7` - more school social workers
+#### `BE-BSW-P40-U01-A04-dcd5df70e9a7` — more school social workers
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_EARLY_SUPPORT_CONFLICT_PREVENTION_AND_REFERRAL_POTENTIAL / STAFFING_ROLE_CLARITY_AND_CASELOAD_DEPENDENT`
@@ -27,12 +27,12 @@ Authoritative continuation after P39 `5455231227`. Frozen artifact unchanged: `B
 - Distribution: schools by social burden/incident profile, pupils, families, disability/language/income, staff.
 - Reality check: net additional FTE/caseload, access/referrals/completion, absenteeism/conflict/escalation, safeguarding, school-climate and subgroup outcomes; staff count alone is input.
 
-#### `BE-BSW-P40-U01-A05-3c417002a8b8` - comprehensive prevention/anti-violence programmes
+#### `BE-BSW-P40-U01-A05-3c417002a8b8` — comprehensive prevention/anti-violence programmes
 
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: `Präventions- und Anti-Gewaltprogramme` is an unbounded programme class. The source specifies neither intervention model, age/target group, school setting, dosage, responsible provider, evidence basis, cost/additionality, safeguarding nor observable outcome. A generic positive direction would improperly collapse materially different programmes.
 
-### 3. U02 - `successful district programmes` is a compound scaling portfolio
+### 3. U02 — `successful district programmes` is a compound scaling portfolio
 
 `BE-BSW-P40-U02-A01-fe9936e8a91c` bundles four independently deliverable fields: network work, anti-violence training, parent work and school social work. The adjective `erfolgreiche` is a programme claim and not accepted as independent evaluation evidence.
 
@@ -41,7 +41,7 @@ Mark parent:
 
 Generate deterministic children from the exact listed programme fields and preserve any shared `ausbauen` relationship. No child Fach by CodeX. Later child review must identify the exact existing district programme/baseline, independent evaluation evidence, transferability, additional capacity, target group, delivery cost and outcome.
 
-### 4. U03 - temporary civilian school security at proven high risk
+### 4. U03 — temporary civilian school security at proven high risk
 
 #### `BE-BSW-P40-U03-A01-fcf725ee8ace`
 
@@ -55,11 +55,11 @@ Generate deterministic children from the exact listed programme fields and prese
 - Noncompensation: perceived safety cannot compensate for unlawful/discriminatory controls or substitution for underlying prevention/support.
 - Reality check: exact risk threshold, duration, incidents/injuries, response, complaints/profiling, pupil/staff safety perception, school-climate/attendance and exit criteria.
 
-### 5. U04 - cyberbullying/online-crime goal + professional training
+### 5. U04 — cyberbullying/online-crime goal + professional training
 
-`BE-BSW-P40-U04-A01-2464565529a9` - fight cyberbullying/online crime among youth → `NON_EFFECT_DIGITAL_SAFETY_POLICY_GOAL_REVIEWED`.
+`BE-BSW-P40-U04-A01-2464565529a9` — fight cyberbullying/online crime among youth → `NON_EFFECT_DIGITAL_SAFETY_POLICY_GOAL_REVIEWED`.
 
-#### `BE-BSW-P40-U04-A02-43031ac07487` - expand/improve training for teachers, social workers and police
+#### `BE-BSW-P40-U04-A02-43031ac07487` — expand/improve training for teachers, social workers and police
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_DIGITAL_HARM_RECOGNITION_RESPONSE_AND_REFERRAL_CAPABILITY_POTENTIAL / CURRICULUM_ROLE_AND_UPTAKE_DEPENDENT`
@@ -68,12 +68,12 @@ Generate deterministic children from the exact listed programme fields and prese
 - Risks: one-size-fits-all training across different professional powers; obsolete content; surveillance/privacy overreach; reporting without support capacity; training time/cost.
 - Reality check: role-specific competence, response/referral quality/time, victim support access, repeat harm, errors/rights incidents and retained competence.
 
-### 6. U05 - early intervention / intensive social support / anti-repression claim
+### 6. U05 — early intervention / intensive social support / anti-repression claim
 
-`BE-BSW-P40-U05-A01-b7ccca303e6c` - earlier intervention for school violence → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`.
+`BE-BSW-P40-U05-A01-b7ccca303e6c` — earlier intervention for school violence → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`.
 - Exact reason: `frühere Intervention` specifies timing preference but not who intervenes, threshold, service/tool, due-process/safeguarding rule, target group, duration or follow-up. Net effect cannot be evaluated until the actual intervention is bounded.
 
-#### `BE-BSW-P40-U05-A02-f6fbc9865295` - intensive social support for repeat offenders
+#### `BE-BSW-P40-U05-A02-f6fbc9865295` — intensive social support for repeat offenders
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_HIGH_RISK_YOUTH_CASE_MANAGEMENT_AND_REINTEGRATION_POTENTIAL / ASSESSMENT_CAPACITY_SAFEGUARDING_AND_SERVICE_AVAILABILITY_DEPENDENT`
@@ -83,13 +83,13 @@ Generate deterministic children from the exact listed programme fields and prese
 - Noncompensation: lower recorded incidents cannot compensate for rights violations or harmful coercion.
 - Reality check: assessment/service completion, school/education participation, wellbeing, repeat incidents/recidivism, safeguarding, family burden and subgroup outcomes.
 
-`BE-BSW-P40-U05-A03-e8ffda629869` - purely repressive measures are not considered effective → `NON_EFFECT_PROGRAMME_POLICY_AND_CAUSAL_JUDGEMENT_REVIEWED`. Do not treat as standalone empirical proof.
+`BE-BSW-P40-U05-A03-e8ffda629869` — purely repressive measures are not considered effective → `NON_EFFECT_PROGRAMME_POLICY_AND_CAUSAL_JUDGEMENT_REVIEWED`. Do not treat as standalone empirical proof.
 
-### 7. U06-U09 - public-space violence, hotspot patrols, lighting/CPTED, knife-attacks heading
+### 7. U06–U09 — public-space violence, hotspot patrols, lighting/CPTED, knife-attacks heading
 
 - `BE-BSW-P40-U06-d48e84030e3c` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
-#### `BE-BSW-P40-U07-A01-7169b6ccad53` - intensified patrol presence at hotspots
+#### `BE-BSW-P40-U07-A01-7169b6ccad53` — intensified patrol presence at hotspots
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_TARGETED_DETERRENCE_VISIBILITY_AND_RESPONSE_POTENTIAL / DISPLACEMENT_PROFILING_STAFFING_AND_RIGHTS_DEPENDENT`
@@ -99,9 +99,9 @@ Generate deterministic children from the exact listed programme fields and prese
 - Risks: geographic/ethnic profiling, repeated stops, displacement, opportunity cost from other districts/tasks, subjective safety vs actual harm divergence.
 - Reality check: marginal patrol hours, incident/victimisation/response by comparable time/place, displacement to adjacent areas, complaints/stops, subjective safety and resource trade-offs.
 
-`BE-BSW-P40-U08-A01-61cf6b65368c` - `Berlin ist eine der dunkelsten Großstädte der Welt.` → `NON_EFFECT_PROGRAMME_BENCHMARK_CLAIM_REVIEWED`. Do not render as verified fact without a comparable lighting metric/data source.
+`BE-BSW-P40-U08-A01-61cf6b65368c` — `Berlin ist eine der dunkelsten Großstädte der Welt.` → `NON_EFFECT_PROGRAMME_BENCHMARK_CLAIM_REVIEWED`. Do not render as verified fact without a comparable lighting metric/data source.
 
-#### `BE-BSW-P40-U08-A02-9237737a437e` - compound lighting + urban-design crime prevention
+#### `BE-BSW-P40-U08-A02-9237737a437e` — compound lighting + urban-design crime prevention
 
 Mark parent:
 `SOURCE_UNIT_RECLASSIFIED_VERSIONED / NONCOUNTING_COMPOUND_PARENT_PENDING_CHILD_IDS`.
@@ -115,11 +115,11 @@ Later child guards: actual location-specific safety problem; pedestrian/accessib
 
 - `BE-BSW-P40-U09-2c8f8f3721ce` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
-### 8. U10 - knife/severe-violence claim + asylum/residence/deportation compound
+### 8. U10 — knife/severe-violence claim + asylum/residence/deportation compound
 
-`BE-BSW-P40-U10-A01-01c152224111` - knife attacks/severe violence remain serious problem → `NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED`. Current Berlin knife data are material but recording changes and offence composition must remain visible.
+`BE-BSW-P40-U10-A01-01c152224111` — knife attacks/severe violence remain serious problem → `NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED`. Current Berlin knife data are material but recording changes and offence composition must remain visible.
 
-#### `BE-BSW-P40-U10-A02-8a8f6d0d9348` - compound immigration/criminal-law consequences
+#### `BE-BSW-P40-U10-A02-8a8f6d0d9348` — compound immigration/criminal-law consequences
 
 Stored atom combines at least: no right to remain for offenders in asylum proceedings; deportation; expulsion. These are legally distinct concepts/pathways with different thresholds, status, competence and safeguards.
 
@@ -128,35 +128,35 @@ Mark parent:
 
 Generate deterministic smallest children from exact clauses; preserve the exact scope `Straftäter im Asylverfahren`. No child Fach by CodeX. Later review must separately establish current federal/EU law baseline, offence/conviction threshold, asylum/protection/non-refoulement status, proportionality/family/private-life safeguards, competence, enforceability/receiving-state conditions and actual safety/recidivism effect. Do not infer that migration-status sanction itself causes lower knife violence.
 
-### 9. U11-U12 - integration/social infrastructure and targeted prevention
+### 9. U11–U12 — integration/social infrastructure and targeted prevention
 
-#### `BE-BSW-P40-U11-A01-c7b5e0716c25` - strengthen social infrastructure to support integration of young migrants
+#### `BE-BSW-P40-U11-A01-c7b5e0716c25` — strengthen social infrastructure to support integration of young migrants
 
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: an effect-bearing social-infrastructure target is identifiable, but no service type, location, baseline, additional budget/staffing, eligibility, delivery institution or integration outcome is specified. The sentence cannot support an undifferentiated positive effect because housing, youth work, education, advice and health infrastructure have different mechanisms.
 
-#### `BE-BSW-P40-U12-A01-1347c7c64261` - targeted prevention projects in `stark betroffenen Communities`
+#### `BE-BSW-P40-U12-A01-1347c7c64261` — targeted prevention projects in `stark betroffenen Communities`
 
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: project content, objective risk definition, community boundary, selection criteria, provider, voluntary/coercive status, safeguards, baseline, resource and outcome are unspecified. Targeting by `Community` creates additional stigma/profiling/equal-treatment risks that cannot be assessed without the exact design.
 
-#### `BE-BSW-P40-U12-A02-b6563e374ce6` - compound expansion of language courses, integration offers and youth-work offers
+#### `BE-BSW-P40-U12-A02-b6563e374ce6` — compound expansion of language courses, integration offers and youth-work offers
 
 Mark parent:
 `SOURCE_UNIT_RECLASSIFIED_VERSIONED / NONCOUNTING_COMPOUND_PARENT_PENDING_CHILD_IDS`.
 
 Generate one deterministic child for each independently fundable service class from exact text. No child Fach by CodeX. Each later child requires current Berlin/federal baseline, access/capacity, additionality, target group, outcome and competence; federal integration-course access constraints must not be conflated with Berlin youth-work/integration funding.
 
-### 10. U13-U14 - domestic violence / women protection
+### 10. U13–U14 — domestic violence / women protection
 
 `BE-BSW-P40-U13-5e45df7d43df` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
-#### `BE-BSW-P40-U14-A01-69db5559a098` - electronic proximity monitoring / victim warning, court ordered and proportionate
+#### `BE-BSW-P40-U14-A01-69db5559a098` — electronic proximity monitoring / victim warning, court ordered and proportionate
 
 - `terminal_fach_state = NON_EFFECT_CURRENT_FEDERAL_LAW_ALIGNMENT_OR_UNCLEAR_BERLIN_ADDITIONALITY_REVIEWED`
 - Exact reason: the programme supports a high-risk electronic-monitoring/warning model, but a federal legal framework for electronic ankle monitoring in domestic-violence high-risk cases was already approved in June 2026. The source specifies no additional Berlin implementation delta such as monitoring capacity, victim devices, court/service staffing, interoperability or rollout target. Preserve its high-risk/court/proportionality safeguards but do not count the current-law-aligned position as a new Berlin effect object.
 
-#### `BE-BSW-P40-U14-A02-197a8491041a` - compound: expand women shelters + multilingual help information
+#### `BE-BSW-P40-U14-A02-197a8491041a` — compound: expand women shelters + multilingual help information
 
 Berlin is already expanding the shelter system in August/September 2026, so exact additionality matters. The stored atom also joins two different levers.
 
@@ -182,7 +182,7 @@ After this handoff:
   - `BE-BSW-P40-U14-A02-197a8491041a`
 - the opaque P40 page envelope may be replaced by only those finite exact-child residuals.
 
-Untouched physical BSW envelope after P40 is `P41-P66 = 26 pages`. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
+Untouched physical BSW envelope after P40 is `P41–P66 = 26 pages`. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 
 ### 12. CodeX handoff
 

@@ -1,4 +1,4 @@
-# ltw-2026-st-spd - commitment-register - vollständige Darstellung
+# ltw-2026-st-spd – commitment-register – vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -625,9 +625,9 @@
 
 **commitment_key:** ltw-2026-st-spd-0020-dieses-engagement-wollen-wir-gezielt-unterstuetzen-durch-f
 
-**title:** Dieses Engagement wollen wir gezielt unterstützen - durch Förderung, Beratung und Zertifizierungen
+**title:** Dieses Engagement wollen wir gezielt unterstützen – durch Förderung, Beratung und Zertifizierungen
 
-**commitment_text:** Dieses Engagement wollen wir gezielt unterstützen - durch Förderung, Beratung und Zertifizierungen.
+**commitment_text:** Dieses Engagement wollen wir gezielt unterstützen – durch Förderung, Beratung und Zertifizierungen.
 
 ##### source_location
 
@@ -945,9 +945,9 @@
 
 **commitment_key:** ltw-2026-st-spd-0030-uebergaenge-auf-den-ersten-arbeitsmarkt-sollen-rechtlich-u
 
-**title:** Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden - …
+**title:** Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden – …
 
-**commitment_text:** Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden - insbesondere durch das Budget für Arbeit und Ausbildung.
+**commitment_text:** Übergänge auf den ersten Arbeitsmarkt sollen rechtlich und organisatorisch erleichtert werden – insbesondere durch das Budget für Arbeit und Ausbildung.
 
 ##### source_location
 
@@ -1300,7 +1300,7 @@
 
 **title:** Der Pakt für den Öffentlichen Gesundheitsdienst muss auf Bundesebene fortgesetzt werden, das …
 
-**commitment_text:** Der Pakt für den Öffentlichen Gesundheitsdienst muss auf Bundesebene fortgesetzt werden, das Land beteiligt 4. 16 17 Wie soziale Sicherheit, gute Gesundheitsversorgung und verlässliche Unterstützung im Alltag zusammengehören - in Stadt und Land, für alle Lebenslagen.
+**commitment_text:** Der Pakt für den Öffentlichen Gesundheitsdienst muss auf Bundesebene fortgesetzt werden, das Land beteiligt 4. 16 17 Wie soziale Sicherheit, gute Gesundheitsversorgung und verlässliche Unterstützung im Alltag zusammengehören – in Stadt und Land, für alle Lebenslagen.
 
 ##### source_location
 
@@ -1364,7 +1364,7 @@
 
 **title:** Wir unterstützen, dass Gesundheitsberufe künftig mehr Verantwortung u
 
-**commitment_text:** Wir unterstützen, dass Gesundheitsberufe künftig mehr Verantwortung u. a. durch Aufgabenverlagerung in der medizinischen Versorgung übernehmen - auch zur Entlastung von Ärztinnen und Ärzten.
+**commitment_text:** Wir unterstützen, dass Gesundheitsberufe künftig mehr Verantwortung u. a. durch Aufgabenverlagerung in der medizinischen Versorgung übernehmen – auch zur Entlastung von Ärztinnen und Ärzten.
 
 ##### source_location
 
@@ -2450,9 +2450,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-spd-0077-wir-wollen-die-unterrichtsqualitaet-und-die-leistungsdaten
 
-**title:** die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig - beginnend …
+**title:** die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig – beginnend …
 
-**commitment_text:** Wir wollen die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig - beginnend mit der Grundschule - ermitteln und vergleichen.
+**commitment_text:** Wir wollen die Unterrichtsqualität und die Leistungsdaten unserer Schülerinnen und Schüler regelmäßig – beginnend mit der Grundschule – ermitteln und vergleichen.
 
 ##### source_location
 
@@ -2612,7 +2612,7 @@ _Leere Liste._
 
 **title:** Zur Finanzierung von Anpassungsmaßnahmen setzen wir uns dafür ein, schrittweise einen Klimafonds …
 
-**commitment_text:** Zur Finanzierung von Anpassungsmaßnahmen setzen wir uns dafür ein, schrittweise einen Klimafonds aufzubauen. 6. 28 29 Wie Klimaschutz, Naturschutz und Lebensqualität zusammengehören - sozial gerecht, wirtschaftlich vernünftig und demokratisch getragen.
+**commitment_text:** Zur Finanzierung von Anpassungsmaßnahmen setzen wir uns dafür ein, schrittweise einen Klimafonds aufzubauen. 6. 28 29 Wie Klimaschutz, Naturschutz und Lebensqualität zusammengehören – sozial gerecht, wirtschaftlich vernünftig und demokratisch getragen.
 
 ##### source_location
 
@@ -3028,9 +3028,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-spd-0095-diese-staerke-soll-erhalten-bleiben-auch-bei-sinkenden-kin
 
-**title:** Diese Stärke soll erhalten bleiben - auch bei sinkenden Kinderzahlen
+**title:** Diese Stärke soll erhalten bleiben – auch bei sinkenden Kinderzahlen
 
-**commitment_text:** Diese Stärke soll erhalten bleiben - auch bei sinkenden Kinderzahlen.
+**commitment_text:** Diese Stärke soll erhalten bleiben – auch bei sinkenden Kinderzahlen.
 
 ##### source_location
 
@@ -3285,9 +3285,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-spd-0103-jede-betroffene-soll-schnell-sicher-und-ohne-huerden-unter
 
-**title:** Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden - überall …
+**title:** Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden – überall …
 
-**commitment_text:** Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden - überall im Land.
+**commitment_text:** Jede Betroffene soll schnell, sicher und ohne Hürden Unterstützung finden – überall im Land.
 
 ##### source_location
 
@@ -4151,9 +4151,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-spd-0130-mobilitaet-sichern-bus-und-bahn-fuer-das-ganze-land-mobili
 
-**title:** Mobilität sichern - Bus und Bahn für das ganze Land Mobilität darf …
+**title:** Mobilität sichern – Bus und Bahn für das ganze Land Mobilität darf …
 
-**commitment_text:** Mobilität sichern - Bus und Bahn für das ganze Land Mobilität darf nicht vom Wohnort abhängen.
+**commitment_text:** Mobilität sichern – Bus und Bahn für das ganze Land Mobilität darf nicht vom Wohnort abhängen.
 
 ##### source_location
 
@@ -4733,7 +4733,7 @@ _Leere Liste._
 
 **title:** Städte und Gemeinden sollen pro Einwohnerin und Einwohner Mittel erhalten, über deren …
 
-**commitment_text:** Städte und Gemeinden sollen pro Einwohnerin und Einwohner Mittel erhalten, über deren Verwendung die Menschen vor Ort gemeinsam entscheiden - zur Finanzierung freiwilliger Aufgaben und zur Stärkung demokratischer Teilhabe. 13. 58 59 Wie Städte, Gemeinden und Landkreise handlungsfähig bleiben.
+**commitment_text:** Städte und Gemeinden sollen pro Einwohnerin und Einwohner Mittel erhalten, über deren Verwendung die Menschen vor Ort gemeinsam entscheiden – zur Finanzierung freiwilliger Aufgaben und zur Stärkung demokratischer Teilhabe. 13. 58 59 Wie Städte, Gemeinden und Landkreise handlungsfähig bleiben.
 
 ##### source_location
 
@@ -4955,9 +4955,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-spd-0155-eu-vorgaben-sollen-in-sachsen-anhalt-sachgerecht-umgesetzt
 
-**title:** EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden - ohne nationale Draufsattlungen, die …
+**title:** EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden – ohne nationale Draufsattlungen, die …
 
-**commitment_text:** EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden - ohne nationale Draufsattlungen, die Bürokratie erhöhen und Praxis erschweren.
+**commitment_text:** EU-Vorgaben sollen in Sachsen-Anhalt sachgerecht umgesetzt werden – ohne nationale Draufsattlungen, die Bürokratie erhöhen und Praxis erschweren.
 
 ##### source_location
 
@@ -5499,9 +5499,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-spd-0172-bundeszuweisungen-duerfen-nicht-angerechnet-werden-sie-sin
 
-**title:** Bundeszuweisungen dürfen nicht angerechnet werden - sie sind zusätzliche Hilfen und kein …
+**title:** Bundeszuweisungen dürfen nicht angerechnet werden – sie sind zusätzliche Hilfen und kein …
 
-**commitment_text:** Bundeszuweisungen dürfen nicht angerechnet werden - sie sind zusätzliche Hilfen und kein Ersatz für eine solide Finanzausstattung.
+**commitment_text:** Bundeszuweisungen dürfen nicht angerechnet werden – sie sind zusätzliche Hilfen und kein Ersatz für eine solide Finanzausstattung.
 
 ##### source_location
 
@@ -5565,7 +5565,7 @@ _Leere Liste._
 
 **title:** eine gerechte Reform der Erbschaftsteuer, die die Länder stärkt und damit auch …
 
-**commitment_text:** eine gerechte Reform der Erbschaftsteuer, die die Länder stärkt und damit auch den Kommunen zugutekommt. Verlässlichkeit bei Aufgabenübertragung Neue Aufgaben dürfen Kommunen nur übertragen werden, wenn sie vollständig finanziert sind. Das Prinzip „Wer bestellt, bezahlt“ gilt uneingeschränkt. Zusätzliche Pflichten ohne ausreichende Finanzierung untergraben die kommunale Selbstverwaltung und gefährden die Erfüllung bestehender Aufgaben. Schwankungen abfedern, Investitionen sichern Krisen wie Wirtschaftseinbrüche oder Pandemien treffen Kommunen besonders hart. Um Einnahmeschwankungen abzufedern, setzt sich die SPD Sachsen-Anhalt für einen kommunalen Steuerschwankungsfonds ein. Er soll helfen, kurzfristige Einbrüche auszugleichen und Planungssicherheit zu schaffen. Darüber hinaus fordern wir ein dauerhaftes kommunales Infrastruktur- und Investitionsprogramm. Es soll unabhängig von akuten Krisen bestehen und Investitionen in Schulen, Kitas, Straßen und öffentliche Einrichtungen ermöglichen. So werden Arbeitsplätze vor Ort gesichert und die langfristige Handlungsfähigkeit der Kommunen gestärkt. Sachsen-Anhalt kann es besser - und SachsenAnhalt muss es besser machen.
+**commitment_text:** eine gerechte Reform der Erbschaftsteuer, die die Länder stärkt und damit auch den Kommunen zugutekommt. Verlässlichkeit bei Aufgabenübertragung Neue Aufgaben dürfen Kommunen nur übertragen werden, wenn sie vollständig finanziert sind. Das Prinzip „Wer bestellt, bezahlt“ gilt uneingeschränkt. Zusätzliche Pflichten ohne ausreichende Finanzierung untergraben die kommunale Selbstverwaltung und gefährden die Erfüllung bestehender Aufgaben. Schwankungen abfedern, Investitionen sichern Krisen wie Wirtschaftseinbrüche oder Pandemien treffen Kommunen besonders hart. Um Einnahmeschwankungen abzufedern, setzt sich die SPD Sachsen-Anhalt für einen kommunalen Steuerschwankungsfonds ein. Er soll helfen, kurzfristige Einbrüche auszugleichen und Planungssicherheit zu schaffen. Darüber hinaus fordern wir ein dauerhaftes kommunales Infrastruktur- und Investitionsprogramm. Es soll unabhängig von akuten Krisen bestehen und Investitionen in Schulen, Kitas, Straßen und öffentliche Einrichtungen ermöglichen. So werden Arbeitsplätze vor Ort gesichert und die langfristige Handlungsfähigkeit der Kommunen gestärkt. Sachsen-Anhalt kann es besser – und SachsenAnhalt muss es besser machen.
 
 ##### source_location
 

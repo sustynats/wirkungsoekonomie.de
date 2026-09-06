@@ -1,4 +1,4 @@
-# ltw-2026-st-afd - programme-review - vollständige Darstellung
+# ltw-2026-st-afd – programme-review – vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -13,7 +13,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Die Wirkungsakte prüft 466 quellengebundene programmatische Zusagen aus dem Dokument. Bewertet werden nicht Partei oder Personen, sondern mögliche Zustandsveränderungen, Risiken, Bedingungen, Schutzgrenzen, Datenbedarf und - wo materiell - kommunikative Vorwirkungen.
+**plain_language_summary:** Die Wirkungsakte prüft 466 quellengebundene programmatische Zusagen aus dem Dokument. Bewertet werden nicht Partei oder Personen, sondern mögliche Zustandsveränderungen, Risiken, Bedingungen, Schutzgrenzen, Datenbedarf und – wo materiell – kommunikative Vorwirkungen.
 
 ### programme_profile
 
@@ -10475,16 +10475,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 23: 4 Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
+**page:** Webabschnitt 23: 4 Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
 
-**section:** 4 Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
+**section:** 4 Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
 
-**source_text:** Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
+**source_text:** Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
 
 
-**decision_or_measure:** Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
+**decision_or_measure:** Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
 
-**intended_change:** Vorgesehene Veränderung: Kirchenasyl in Sachsen-Anhalt unterbinden - Kirchen finanziell zur Rechenschaft ziehen!
+**intended_change:** Vorgesehene Veränderung: Kirchenasyl in Sachsen-Anhalt unterbinden – Kirchen finanziell zur Rechenschaft ziehen!
 
 ##### decision_readiness
 
@@ -11979,9 +11979,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 33: 13 Asylanten und Flüchtlinge an Versorgungskosten beteiligen - Vermögensüberprüfungen durchführen!
+**page:** Webabschnitt 33: 13 Asylanten und Flüchtlinge an Versorgungskosten beteiligen – Vermögensüberprüfungen durchführen!
 
-**section:** 13 Asylanten und Flüchtlinge an Versorgungskosten beteiligen - Vermögensüberprüfungen durchführen!
+**section:** 13 Asylanten und Flüchtlinge an Versorgungskosten beteiligen – Vermögensüberprüfungen durchführen!
 
 **source_text:** Eine AfD-geführte Landesregierung wird dafür sorgen, dass Bargeldbestände, Kreditkarten und Vermögenswerte, die Asylantragsberechtigte bei ihrer Einreise mit sich führen, festgestellt, konfisziert und für die Finanzierung von Unterbringung und Verpflegung verwendet werden.
 
@@ -14571,9 +14571,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 43: 23 Einbürgerung braucht hohe Hürden - Kein deutscher Pass für kriminelle Ausländer!
+**page:** Webabschnitt 43: 23 Einbürgerung braucht hohe Hürden – Kein deutscher Pass für kriminelle Ausländer!
 
-**section:** 23 Einbürgerung braucht hohe Hürden - Kein deutscher Pass für kriminelle Ausländer!
+**section:** 23 Einbürgerung braucht hohe Hürden – Kein deutscher Pass für kriminelle Ausländer!
 
 **source_text:** Eine AfD-geführte Landesregierung wird dafür sorgen, dass deutsche Pässe in Sachsen-Anhalt nicht mehr wie Ramschware feilgeboten werden.
 
@@ -15781,9 +15781,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 51: 30 Ausreisepflichtige konsequent abschieben - Abschiebeoffensive einleiten!
+**page:** Webabschnitt 51: 30 Ausreisepflichtige konsequent abschieben – Abschiebeoffensive einleiten!
 
-**section:** 30 Ausreisepflichtige konsequent abschieben - Abschiebeoffensive einleiten!
+**section:** 30 Ausreisepflichtige konsequent abschieben – Abschiebeoffensive einleiten!
 
 **source_text:** Parallel dazu soll die Abschiebung weiterer Abschiebepflichtiger vorbereitet werden.
 
@@ -16083,9 +16083,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 52: 31 Verhinderung von Abschiebungen - Fördergelder entziehen, Täter bestrafen!
+**page:** Webabschnitt 52: 31 Verhinderung von Abschiebungen – Fördergelder entziehen, Täter bestrafen!
 
-**section:** 31 Verhinderung von Abschiebungen - Fördergelder entziehen, Täter bestrafen!
+**section:** 31 Verhinderung von Abschiebungen – Fördergelder entziehen, Täter bestrafen!
 
 **source_text:** Personen, die ausreisepflichtige Asylbewerber bei der Vereitelung ihrer Abschiebung tatkräftig helfen, müssen damit rechnen, dass der Rechtsstaat ihre Unterstützungshandlungen mit der vollen Härte des Gesetzes ahnden wird.
 
@@ -23799,9 +23799,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 73: 7 Patriotismus fördern - Kein Staatsgeld für antideutsche Kunst und Kultur!
+**page:** Webabschnitt 73: 7 Patriotismus fördern – Kein Staatsgeld für antideutsche Kunst und Kultur!
 
-**section:** 7 Patriotismus fördern - Kein Staatsgeld für antideutsche Kunst und Kultur!
+**section:** 7 Patriotismus fördern – Kein Staatsgeld für antideutsche Kunst und Kultur!
 
 **source_text:** Deshalb werden wir mit Staats- und Steuergeld vorwiegend solche Kunst fördern, die einen Beitrag zu deutscher Identitätsfindung leistet.
 
@@ -30079,16 +30079,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 86: 20 Christentum fördern - Kleine Kirchen fördern!
+**page:** Webabschnitt 86: 20 Christentum fördern – Kleine Kirchen fördern!
 
-**section:** 20 Christentum fördern - Kleine Kirchen fördern!
+**section:** 20 Christentum fördern – Kleine Kirchen fördern!
 
-**source_text:** Christentum fördern - Kleine Kirchen fördern!
+**source_text:** Christentum fördern – Kleine Kirchen fördern!
 
 
-**decision_or_measure:** Christentum fördern - Kleine Kirchen fördern!
+**decision_or_measure:** Christentum fördern – Kleine Kirchen fördern!
 
-**intended_change:** Vorgesehene Veränderung: Christentum fördern - Kleine Kirchen fördern!
+**intended_change:** Vorgesehene Veränderung: Christentum fördern – Kleine Kirchen fördern!
 
 ##### decision_readiness
 
@@ -31886,16 +31886,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 89: 2 Handwerk stärken - Talente früh entdecken!
+**page:** Webabschnitt 89: 2 Handwerk stärken – Talente früh entdecken!
 
-**section:** 2 Handwerk stärken - Talente früh entdecken!
+**section:** 2 Handwerk stärken – Talente früh entdecken!
 
-**source_text:** Wir setzen uns dafür ein, handwerkliche Bildung stärker in den Schulalltag zu integrieren - in Theorie und vor allem in der Praxis.
+**source_text:** Wir setzen uns dafür ein, handwerkliche Bildung stärker in den Schulalltag zu integrieren – in Theorie und vor allem in der Praxis.
 
 
 **decision_or_measure:** Wir setzen uns dafür ein, handwerkliche Bildung stärker in den Schulalltag zu …
 
-**intended_change:** Vorgesehene Veränderung: Wir setzen uns dafür ein, handwerkliche Bildung stärker in den Schulalltag zu integrieren - in Theorie und vor allem in der Praxis.
+**intended_change:** Vorgesehene Veränderung: Wir setzen uns dafür ein, handwerkliche Bildung stärker in den Schulalltag zu integrieren – in Theorie und vor allem in der Praxis.
 
 ##### decision_readiness
 
@@ -32188,9 +32188,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 89: 2 Handwerk stärken - Talente früh entdecken!
+**page:** Webabschnitt 89: 2 Handwerk stärken – Talente früh entdecken!
 
-**section:** 2 Handwerk stärken - Talente früh entdecken!
+**section:** 2 Handwerk stärken – Talente früh entdecken!
 
 **source_text:** Berufsorientierung darf nicht nur informieren, sie muss erlebbar sein.
 
@@ -32500,9 +32500,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 89: 2 Handwerk stärken - Talente früh entdecken!
+**page:** Webabschnitt 89: 2 Handwerk stärken – Talente früh entdecken!
 
-**section:** 2 Handwerk stärken - Talente früh entdecken!
+**section:** 2 Handwerk stärken – Talente früh entdecken!
 
 **source_text:** So fördern wir nicht nur den Nachwuchs im Handwerk, sondern geben jungen Menschen echte Chancen, ihren eigenen Weg zu finden.
 
@@ -35198,9 +35198,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 94: 7 Heimatkunde - Schulbildung nah am echten Leben!
+**page:** Webabschnitt 94: 7 Heimatkunde – Schulbildung nah am echten Leben!
 
-**section:** 7 Heimatkunde - Schulbildung nah am echten Leben!
+**section:** 7 Heimatkunde – Schulbildung nah am echten Leben!
 
 **source_text:** Zu diesem Zweck werden wir die sowohl die Heilpflanzenpädagogik als auch den Heimatkundeunterricht mit Praxisbezug stärker gewichten.
 
@@ -35500,9 +35500,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 94: 7 Heimatkunde - Schulbildung nah am echten Leben!
+**page:** Webabschnitt 94: 7 Heimatkunde – Schulbildung nah am echten Leben!
 
-**section:** 7 Heimatkunde - Schulbildung nah am echten Leben!
+**section:** 7 Heimatkunde – Schulbildung nah am echten Leben!
 
 **source_text:** Außerdem werden wir mit der Schutzgemeinschaft „Deutscher Wald" zusammenarbeiten, um der Jugend einen Praxisbezug zu land- und forstwirtschaftlichen Prozessen zu ermöglichen.
 
@@ -35805,9 +35805,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 95: 8 Mehr 1813 und 1871 - Geschichtslehrpläne überarbeiten!
+**page:** Webabschnitt 95: 8 Mehr 1813 und 1871 – Geschichtslehrpläne überarbeiten!
 
-**section:** 8 Mehr 1813 und 1871 - Geschichtslehrpläne überarbeiten!
+**section:** 8 Mehr 1813 und 1871 – Geschichtslehrpläne überarbeiten!
 
 **source_text:** Wir werden deshalb im Unterricht einen deutlichen Schwerpunkt auf die Entstehung und die Erfolgsgeschichte dieses Staates legen.
 
@@ -41066,9 +41066,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 110: 23 Lehrerberuf attraktiver machen - Lehrer gezielt anwerben!
+**page:** Webabschnitt 110: 23 Lehrerberuf attraktiver machen – Lehrer gezielt anwerben!
 
-**section:** 23 Lehrerberuf attraktiver machen - Lehrer gezielt anwerben!
+**section:** 23 Lehrerberuf attraktiver machen – Lehrer gezielt anwerben!
 
 **source_text:** Abgesehen von der Entlastung der Schule von sozialpolitischen Aufgaben, der Beendigung der Inklusion und der Bildung von Sonderklassen für Flüchtlingskinder werden wir den Schulbetrieb entbürokratisieren, so dass die Lehrer sich wieder ausschließlich ihrer eigentlichen Aufgabe, dem Unterricht, widmen können.
 
@@ -52870,16 +52870,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 140: 7 Qualifikation statt Quote - auch bei der Polizei!
+**page:** Webabschnitt 140: 7 Qualifikation statt Quote – auch bei der Polizei!
 
-**section:** 7 Qualifikation statt Quote - auch bei der Polizei!
+**section:** 7 Qualifikation statt Quote – auch bei der Polizei!
 
-**source_text:** Qualifikation statt Quote - auch bei der Polizei!
+**source_text:** Qualifikation statt Quote – auch bei der Polizei!
 
 
-**decision_or_measure:** Qualifikation statt Quote - auch bei der Polizei!
+**decision_or_measure:** Qualifikation statt Quote – auch bei der Polizei!
 
-**intended_change:** Vorgesehene Veränderung: Qualifikation statt Quote - auch bei der Polizei!
+**intended_change:** Vorgesehene Veränderung: Qualifikation statt Quote – auch bei der Polizei!
 
 ##### decision_readiness
 
@@ -58828,12 +58828,12 @@ _Leere Liste._
 
 **section:** 25 Feuerwehrführerscheine fördern!
 
-**source_text:** Diese landesrechtliche Fahrberechtigung ermöglicht es allen Angehörigen von Feuerwehr, Rettungsdienst und Katastrophenschutz, mit einem normalen PKW-Führerschein (Klasse B) auch größere Einsatzfahrzeuge bis 7,5 t zu fahren - ohne den teuren Lkw-Führerschein Klasse C1 machen zu müssen.
+**source_text:** Diese landesrechtliche Fahrberechtigung ermöglicht es allen Angehörigen von Feuerwehr, Rettungsdienst und Katastrophenschutz, mit einem normalen PKW-Führerschein (Klasse B) auch größere Einsatzfahrzeuge bis 7,5 t zu fahren – ohne den teuren Lkw-Führerschein Klasse C1 machen zu müssen.
 
 
 **decision_or_measure:** Diese landesrechtliche Fahrberechtigung ermöglicht es allen Angehörigen von Feuerwehr, Rettungsdienst und Katastrophenschutz, …
 
-**intended_change:** Vorgesehene Veränderung: Diese landesrechtliche Fahrberechtigung ermöglicht es allen Angehörigen von Feuerwehr, Rettungsdienst und Katastrophenschutz, mit einem normalen PKW-Führerschein (Klasse B) auch größere Einsatzfahrzeuge bis 7,5 t zu fahren - ohne den teuren Lkw-Führerschein Klasse C1 machen zu müssen.
+**intended_change:** Vorgesehene Veränderung: Diese landesrechtliche Fahrberechtigung ermöglicht es allen Angehörigen von Feuerwehr, Rettungsdienst und Katastrophenschutz, mit einem normalen PKW-Führerschein (Klasse B) auch größere Einsatzfahrzeuge bis 7,5 t zu fahren – ohne den teuren Lkw-Führerschein Klasse C1 machen zu müssen.
 
 ##### decision_readiness
 
@@ -60938,9 +60938,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
+**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
 
-**section:** 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
+**section:** 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
 
 **source_text:** Wir werden dafür sorgen, dass ausländische Gefangene regelmäßig zur Verbüßung ihrer Freiheitsstrafe an ihr Heimatland überstellt werden. Dazu werden wir eine Richtlinie erlassen, wonach die Staatsanwaltschaften des Landes zwingend regelmäßig nach strengen Vorgaben zu prüfen haben, ob die Strafvollstreckung eines ausländischen Strafgefangenen in seinem Heimatland rechtlich möglich und angezeigt ist.
 
@@ -61236,9 +61236,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
+**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
 
-**section:** 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
+**section:** 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
 
 **source_text:** Zudem werden wir Anreize schaffen, damit sich ausländische Gefangene freiwillig für eine Haftvollstreckung in ihren Heimatländern entscheiden.
 
@@ -61531,9 +61531,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
+**page:** Webabschnitt 160: 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
 
-**section:** 3 Entlastung des Strafvollzugs - Haftstrafen im Heimatland vollstrecken!
+**section:** 3 Entlastung des Strafvollzugs – Haftstrafen im Heimatland vollstrecken!
 
 **source_text:** Zur Umsetzung werden wir auf Ministerialebene ein Team zur Ausweisung und Überstellung krimineller Ausländer (TAÜkA) einrichten, welches mit Hochdruck die entsprechenden Verfahren vorantreiben wird.
 
@@ -62680,9 +62680,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 165: 8 Sogenannte „Hassverbrechen" hinterfragen - Meinungsfreiheit verteidigen!
+**page:** Webabschnitt 165: 8 Sogenannte „Hassverbrechen" hinterfragen – Meinungsfreiheit verteidigen!
 
-**section:** 8 Sogenannte „Hassverbrechen" hinterfragen - Meinungsfreiheit verteidigen!
+**section:** 8 Sogenannte „Hassverbrechen" hinterfragen – Meinungsfreiheit verteidigen!
 
 **source_text:** Wir werden uns diesem Problem mit allen Möglichkeiten einer Landesregierung widmen und uns für eine Entschlackung der bestehenden Meinungsstraftatbestände einsetzen.
 
@@ -63268,16 +63268,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 170: 12 Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
+**page:** Webabschnitt 170: 12 Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
 
-**section:** 12 Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
+**section:** 12 Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
 
-**source_text:** Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
+**source_text:** Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
 
 
-**decision_or_measure:** Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
+**decision_or_measure:** Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
 
-**intended_change:** Vorgesehene Veränderung: Justizwachtmeister aufwerten - einfachen Dienst abschaffen!
+**intended_change:** Vorgesehene Veränderung: Justizwachtmeister aufwerten – einfachen Dienst abschaffen!
 
 ##### decision_readiness
 
@@ -65336,9 +65336,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
+**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
 
-**section:** 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
+**section:** 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
 
 **source_text:** Die fortschreitende Digitalisierung darf nicht zur Entrechtung der Bürger führen.
 
@@ -65638,9 +65638,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
+**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
 
-**section:** 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
+**section:** 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
 
 **source_text:** Wir lehnen jede Form anlassloser Überwachung und Datenspeicherung strikt ab.
 
@@ -65934,9 +65934,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
+**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
 
-**section:** 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
+**section:** 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
 
 **source_text:** Stattdessen wollen wir den Bürger vor staatlicher Willkür schützen und ihm die Hoheit über seine Daten zurückgeben.
 
@@ -66236,9 +66236,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
+**page:** Webabschnitt 175: 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
 
-**section:** 2 Digitale Bürgerrechte schützen - Transparenz des Staates ausbauen!
+**section:** 2 Digitale Bürgerrechte schützen – Transparenz des Staates ausbauen!
 
 **source_text:** Wir werden daher die Transparenzpflichten für Regierung und Verwaltung deutlich verschärfen.
 
@@ -67437,9 +67437,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 178: 5 Gegendemonstrationen ja - Verhinderung angemeldeter Demonstrationen nein!
+**page:** Webabschnitt 178: 5 Gegendemonstrationen ja – Verhinderung angemeldeter Demonstrationen nein!
 
-**section:** 5 Gegendemonstrationen ja - Verhinderung angemeldeter Demonstrationen nein!
+**section:** 5 Gegendemonstrationen ja – Verhinderung angemeldeter Demonstrationen nein!
 
 **source_text:** Wir werden das Versammlungsrecht dahingehend ändern, dass entsprechend dem Erstanmelderprinzip an einem Ort nur eine Versammlung unter freiem Himmel und auf einer festgelegten Route nur ein Aufzug anmeldefähig ist.
 
@@ -79742,16 +79742,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 213: 10 Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**page:** Webabschnitt 213: 10 Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
-**section:** 10 Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**section:** 10 Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
-**source_text:** Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**source_text:** Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
 
-**decision_or_measure:** Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**decision_or_measure:** Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
-**intended_change:** Vorgesehene Veränderung: Vorsicht Energiewende - Blackout-Vorsorge für Sachsen-Anhalt treffen!
+**intended_change:** Vorgesehene Veränderung: Vorsicht Energiewende – Blackout-Vorsorge für Sachsen-Anhalt treffen!
 
 ##### decision_readiness
 
@@ -80637,16 +80637,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 216: 13 Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
+**page:** Webabschnitt 216: 13 Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
 
-**section:** 13 Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
+**section:** 13 Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
 
-**source_text:** Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
+**source_text:** Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
 
 
-**decision_or_measure:** Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
+**decision_or_measure:** Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
 
-**intended_change:** Vorgesehene Veränderung: Heimat, Umwelt und Bevölkerung schützen - Kein Fracking in Sachsen-Anhalt!
+**intended_change:** Vorgesehene Veränderung: Heimat, Umwelt und Bevölkerung schützen – Kein Fracking in Sachsen-Anhalt!
 
 ##### decision_readiness
 
@@ -81232,16 +81232,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 218: 15 Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
+**page:** Webabschnitt 218: 15 Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
 
-**section:** 15 Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
+**section:** 15 Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
 
-**source_text:** Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
+**source_text:** Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
 
 
-**decision_or_measure:** Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
+**decision_or_measure:** Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
 
-**intended_change:** Vorgesehene Veränderung: Kohleausstieg stoppen - Kohlestandort Sachsen-Anhalt erhalten!
+**intended_change:** Vorgesehene Veränderung: Kohleausstieg stoppen – Kohlestandort Sachsen-Anhalt erhalten!
 
 ##### decision_readiness
 
@@ -81526,9 +81526,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 219: 16 Neustart vornehmen - Wiedereinstieg in die Kernenergie einleiten!
+**page:** Webabschnitt 219: 16 Neustart vornehmen – Wiedereinstieg in die Kernenergie einleiten!
 
-**section:** 16 Neustart vornehmen - Wiedereinstieg in die Kernenergie einleiten!
+**section:** 16 Neustart vornehmen – Wiedereinstieg in die Kernenergie einleiten!
 
 **source_text:** Bis Deutschland wieder Kernkraft nutzt, werden Kohle und Gas eine sichere Stromversorgung gewährleisten müssen.
 
@@ -81820,16 +81820,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 220: 17 Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
+**page:** Webabschnitt 220: 17 Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
 
-**section:** 17 Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
+**section:** 17 Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
 
-**source_text:** Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
+**source_text:** Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
 
 
-**decision_or_measure:** Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
+**decision_or_measure:** Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
 
-**intended_change:** Vorgesehene Veränderung: Steuergeldvergeudung beenden - E-Auto-Subventionen streichen!
+**intended_change:** Vorgesehene Veränderung: Steuergeldvergeudung beenden – E-Auto-Subventionen streichen!
 
 ##### decision_readiness
 
@@ -82127,16 +82127,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 221: 18 Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
+**page:** Webabschnitt 221: 18 Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
 
-**section:** 18 Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
+**section:** 18 Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
 
-**source_text:** Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
+**source_text:** Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
 
 
-**decision_or_measure:** Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
+**decision_or_measure:** Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
 
-**intended_change:** Vorgesehene Veränderung: Energie- und Verkehrswendeirrsinn beenden - Verbrenner-Verbot stoppen!
+**intended_change:** Vorgesehene Veränderung: Energie- und Verkehrswendeirrsinn beenden – Verbrenner-Verbot stoppen!
 
 ##### decision_readiness
 
@@ -82430,16 +82430,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 222: 19 Autofahrer entlasten - Kraftstoffpreise senken!
+**page:** Webabschnitt 222: 19 Autofahrer entlasten – Kraftstoffpreise senken!
 
-**section:** 19 Autofahrer entlasten - Kraftstoffpreise senken!
+**section:** 19 Autofahrer entlasten – Kraftstoffpreise senken!
 
-**source_text:** Autofahrer entlasten - Kraftstoffpreise senken!
+**source_text:** Autofahrer entlasten – Kraftstoffpreise senken!
 
 
-**decision_or_measure:** Autofahrer entlasten - Kraftstoffpreise senken!
+**decision_or_measure:** Autofahrer entlasten – Kraftstoffpreise senken!
 
-**intended_change:** Vorgesehene Veränderung: Autofahrer entlasten - Kraftstoffpreise senken!
+**intended_change:** Vorgesehene Veränderung: Autofahrer entlasten – Kraftstoffpreise senken!
 
 ##### decision_readiness
 
@@ -83024,16 +83024,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 224: 21 Mikroklima schützen - Energiewende stoppen!
+**page:** Webabschnitt 224: 21 Mikroklima schützen – Energiewende stoppen!
 
-**section:** 21 Mikroklima schützen - Energiewende stoppen!
+**section:** 21 Mikroklima schützen – Energiewende stoppen!
 
-**source_text:** Mikroklima schützen - Energiewende stoppen!
+**source_text:** Mikroklima schützen – Energiewende stoppen!
 
 
-**decision_or_measure:** Mikroklima schützen - Energiewende stoppen!
+**decision_or_measure:** Mikroklima schützen – Energiewende stoppen!
 
-**intended_change:** Vorgesehene Veränderung: Mikroklima schützen - Energiewende stoppen!
+**intended_change:** Vorgesehene Veränderung: Mikroklima schützen – Energiewende stoppen!
 
 ##### decision_readiness
 
@@ -83614,16 +83614,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 227: 24 Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
+**page:** Webabschnitt 227: 24 Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
 
-**section:** 24 Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
+**section:** 24 Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
 
-**source_text:** Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
+**source_text:** Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
 
 
-**decision_or_measure:** Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
+**decision_or_measure:** Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
 
-**intended_change:** Vorgesehene Veränderung: Pariser Klimaabkommen und Green Deal aufkündigen - Bundesklimaschutzgesetz abschaffen!
+**intended_change:** Vorgesehene Veränderung: Pariser Klimaabkommen und Green Deal aufkündigen – Bundesklimaschutzgesetz abschaffen!
 
 ##### decision_readiness
 
@@ -83905,16 +83905,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 228: 25 Emissionshandel beenden - Heimische Unternehmen retten!
+**page:** Webabschnitt 228: 25 Emissionshandel beenden – Heimische Unternehmen retten!
 
-**section:** 25 Emissionshandel beenden - Heimische Unternehmen retten!
+**section:** 25 Emissionshandel beenden – Heimische Unternehmen retten!
 
-**source_text:** Emissionshandel beenden - Heimische Unternehmen retten!
+**source_text:** Emissionshandel beenden – Heimische Unternehmen retten!
 
 
-**decision_or_measure:** Emissionshandel beenden - Heimische Unternehmen retten!
+**decision_or_measure:** Emissionshandel beenden – Heimische Unternehmen retten!
 
-**intended_change:** Vorgesehene Veränderung: Emissionshandel beenden - Heimische Unternehmen retten!
+**intended_change:** Vorgesehene Veränderung: Emissionshandel beenden – Heimische Unternehmen retten!
 
 ##### decision_readiness
 
@@ -84200,16 +84200,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 229: 26 Verbraucher entlasten - CO₂-Steuer abschaffen!
+**page:** Webabschnitt 229: 26 Verbraucher entlasten – CO₂-Steuer abschaffen!
 
-**section:** 26 Verbraucher entlasten - CO₂-Steuer abschaffen!
+**section:** 26 Verbraucher entlasten – CO₂-Steuer abschaffen!
 
-**source_text:** Verbraucher entlasten - CO₂-Steuer abschaffen!
+**source_text:** Verbraucher entlasten – CO₂-Steuer abschaffen!
 
 
-**decision_or_measure:** Verbraucher entlasten - CO₂-Steuer abschaffen!
+**decision_or_measure:** Verbraucher entlasten – CO₂-Steuer abschaffen!
 
-**intended_change:** Vorgesehene Veränderung: Verbraucher entlasten - CO₂-Steuer abschaffen!
+**intended_change:** Vorgesehene Veränderung: Verbraucher entlasten – CO₂-Steuer abschaffen!
 
 ##### decision_readiness
 
@@ -85671,12 +85671,12 @@ _Leere Liste._
 
 **section:** 3 Agrarpolitik renationalisieren!
 
-**source_text:** Angesichts der schwierigen wirtschaftlichen Lage wollen wir die Bauern innerhalb der bestehenden agrarpolitischen Förderinstrumente entlasten und ihnen mehr Planungssicherheit geben - etwa dadurch, dass wir auf zusätzliche, strengere nationale Auslegungen von EU-Vorgaben verzichten.
+**source_text:** Angesichts der schwierigen wirtschaftlichen Lage wollen wir die Bauern innerhalb der bestehenden agrarpolitischen Förderinstrumente entlasten und ihnen mehr Planungssicherheit geben – etwa dadurch, dass wir auf zusätzliche, strengere nationale Auslegungen von EU-Vorgaben verzichten.
 
 
 **decision_or_measure:** Angesichts der schwierigen wirtschaftlichen Lage wollen wir die Bauern innerhalb der bestehenden …
 
-**intended_change:** Vorgesehene Veränderung: Angesichts der schwierigen wirtschaftlichen Lage wollen wir die Bauern innerhalb der bestehenden agrarpolitischen Förderinstrumente entlasten und ihnen mehr Planungssicherheit geben - etwa dadurch, dass wir auf zusätzliche, strengere nationale Auslegungen von EU-Vorgaben verzichten.
+**intended_change:** Vorgesehene Veränderung: Angesichts der schwierigen wirtschaftlichen Lage wollen wir die Bauern innerhalb der bestehenden agrarpolitischen Förderinstrumente entlasten und ihnen mehr Planungssicherheit geben – etwa dadurch, dass wir auf zusätzliche, strengere nationale Auslegungen von EU-Vorgaben verzichten.
 
 ##### decision_readiness
 
@@ -87493,9 +87493,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 238: 5 Ackerland in Bauernhand - Agrarstruktur stärken!
+**page:** Webabschnitt 238: 5 Ackerland in Bauernhand – Agrarstruktur stärken!
 
-**section:** 5 Ackerland in Bauernhand - Agrarstruktur stärken!
+**section:** 5 Ackerland in Bauernhand – Agrarstruktur stärken!
 
 **source_text:** Deshalb muss der Boden- und Agrarpolitik Vorrang vor Investoren, die nur auf Profit aus sind, eingeräumt werden.
 
@@ -87805,16 +87805,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 238: 5 Ackerland in Bauernhand - Agrarstruktur stärken!
+**page:** Webabschnitt 238: 5 Ackerland in Bauernhand – Agrarstruktur stärken!
 
-**section:** 5 Ackerland in Bauernhand - Agrarstruktur stärken!
+**section:** 5 Ackerland in Bauernhand – Agrarstruktur stärken!
 
-**source_text:** Deshalb fordern wir ein neues Agrarstrukturgesetz: Es soll den Zugang zu Land für ortsansässige bäuerliche Betriebe sichern, die Konzentration großer Flächen in wenigen Händen verhindern und Pacht- oder Kaufgeschäfte so regeln, dass regionale Familienbetriebe geschützt werden. Damit stellen wir sicher, dass Landwirtschaft, Heimat und Gemeinschaft erhalten bleiben - zugunsten einer lebendigen und nachhaltigen Agrarstruktur.
+**source_text:** Deshalb fordern wir ein neues Agrarstrukturgesetz: Es soll den Zugang zu Land für ortsansässige bäuerliche Betriebe sichern, die Konzentration großer Flächen in wenigen Händen verhindern und Pacht- oder Kaufgeschäfte so regeln, dass regionale Familienbetriebe geschützt werden. Damit stellen wir sicher, dass Landwirtschaft, Heimat und Gemeinschaft erhalten bleiben – zugunsten einer lebendigen und nachhaltigen Agrarstruktur.
 
 
 **decision_or_measure:** Deshalb fordern wir ein neues Agrarstrukturgesetz
 
-**intended_change:** Vorgesehene Veränderung: Deshalb fordern wir ein neues Agrarstrukturgesetz: Es soll den Zugang zu Land für ortsansässige bäuerliche Betriebe sichern, die Konzentration großer Flächen in wenigen Händen verhindern und Pacht- oder Kaufgeschäfte so regeln, dass regionale Familienbetriebe geschützt werden. Damit stellen wir sicher, dass Landwirtschaft, Heimat und Gemeinschaft erhalten bleiben - zugunsten einer lebendigen und nachhaltigen Agrarstruktur.
+**intended_change:** Vorgesehene Veränderung: Deshalb fordern wir ein neues Agrarstrukturgesetz: Es soll den Zugang zu Land für ortsansässige bäuerliche Betriebe sichern, die Konzentration großer Flächen in wenigen Händen verhindern und Pacht- oder Kaufgeschäfte so regeln, dass regionale Familienbetriebe geschützt werden. Damit stellen wir sicher, dass Landwirtschaft, Heimat und Gemeinschaft erhalten bleiben – zugunsten einer lebendigen und nachhaltigen Agrarstruktur.
 
 ##### decision_readiness
 
@@ -88118,9 +88118,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 238: 5 Ackerland in Bauernhand - Agrarstruktur stärken!
+**page:** Webabschnitt 238: 5 Ackerland in Bauernhand – Agrarstruktur stärken!
 
-**section:** 5 Ackerland in Bauernhand - Agrarstruktur stärken!
+**section:** 5 Ackerland in Bauernhand – Agrarstruktur stärken!
 
 **source_text:** Auch bezüglich der BVVG-Flächen werden wir uns auf allen Ebenen für den Verkauf an ortsansässige Landwirte einsetzen.
 
@@ -88429,9 +88429,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 239: 6 Düngung nach Fachwissen - Gülle regional nutzen!
+**page:** Webabschnitt 239: 6 Düngung nach Fachwissen – Gülle regional nutzen!
 
-**section:** 6 Düngung nach Fachwissen - Gülle regional nutzen!
+**section:** 6 Düngung nach Fachwissen – Gülle regional nutzen!
 
 **source_text:** Vorgaben, die faktisch zu einer Unterversorgung der Kulturen führen, lehnen wir ab.
 
@@ -88731,9 +88731,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 239: 6 Düngung nach Fachwissen - Gülle regional nutzen!
+**page:** Webabschnitt 239: 6 Düngung nach Fachwissen – Gülle regional nutzen!
 
-**section:** 6 Düngung nach Fachwissen - Gülle regional nutzen!
+**section:** 6 Düngung nach Fachwissen – Gülle regional nutzen!
 
 **source_text:** Stattdessen setzen wir auf die gute fachliche Praxis, nach der jeder verantwortungsbewusste Landwirt arbeitet.
 
@@ -89035,9 +89035,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 239: 6 Düngung nach Fachwissen - Gülle regional nutzen!
+**page:** Webabschnitt 239: 6 Düngung nach Fachwissen – Gülle regional nutzen!
 
-**section:** 6 Düngung nach Fachwissen - Gülle regional nutzen!
+**section:** 6 Düngung nach Fachwissen – Gülle regional nutzen!
 
 **source_text:** Ein Import von Gülle aus anderen Ländern lehnen wir ab.
 
@@ -89592,12 +89592,12 @@ _Leere Liste._
 
 **section:** 9 Nutztiere: Regeln auf den Prüfstand!
 
-**source_text:** Selbst das Land Sachsen-Anhalt ist seit Jahren nicht in der Lage, einen Versuchsstall nach aktuellen Vorschriften zu errichten - wie soll das der Landwirt schaffen?
+**source_text:** Selbst das Land Sachsen-Anhalt ist seit Jahren nicht in der Lage, einen Versuchsstall nach aktuellen Vorschriften zu errichten – wie soll das der Landwirt schaffen?
 
 
 **decision_or_measure:** Selbst das Land Sachsen-Anhalt ist seit Jahren nicht in der Lage, einen …
 
-**intended_change:** Vorgesehene Veränderung: Selbst das Land Sachsen-Anhalt ist seit Jahren nicht in der Lage, einen Versuchsstall nach aktuellen Vorschriften zu errichten - wie soll das der Landwirt schaffen?
+**intended_change:** Vorgesehene Veränderung: Selbst das Land Sachsen-Anhalt ist seit Jahren nicht in der Lage, einen Versuchsstall nach aktuellen Vorschriften zu errichten – wie soll das der Landwirt schaffen?
 
 ##### decision_readiness
 
@@ -91085,9 +91085,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 246: 13 Saatgutgewinnung sichern - Landesdarre stärken!
+**page:** Webabschnitt 246: 13 Saatgutgewinnung sichern – Landesdarre stärken!
 
-**section:** 13 Saatgutgewinnung sichern - Landesdarre stärken!
+**section:** 13 Saatgutgewinnung sichern – Landesdarre stärken!
 
 **source_text:** Um den Waldumbau in Sachsen-Anhalt zu sichern, muss die Landesdarre zukunftsorientiert ausgebaut werden.
 
@@ -91396,9 +91396,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 246: 13 Saatgutgewinnung sichern - Landesdarre stärken!
+**page:** Webabschnitt 246: 13 Saatgutgewinnung sichern – Landesdarre stärken!
 
-**section:** 13 Saatgutgewinnung sichern - Landesdarre stärken!
+**section:** 13 Saatgutgewinnung sichern – Landesdarre stärken!
 
 **source_text:** Zugleich soll die historische und forstwirtschaftliche Bedeutung der Landesdarre stärker in den öffentlichen und politischen Fokus rücken.
 
@@ -93223,9 +93223,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 250: 17 Vor Ort produziert - Vor Ort konsumiert!
+**page:** Webabschnitt 250: 17 Vor Ort produziert – Vor Ort konsumiert!
 
-**section:** 17 Vor Ort produziert - Vor Ort konsumiert!
+**section:** 17 Vor Ort produziert – Vor Ort konsumiert!
 
 **source_text:** Tiertransporte wollen wir nur unter strengen tierschutzgerechten Bedingungen mit kurzen Transportwegen und kontrollierter Einhaltung von Ruhezeiten und Versorgungspflichten zulassen.
 
@@ -93525,9 +93525,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 250: 17 Vor Ort produziert - Vor Ort konsumiert!
+**page:** Webabschnitt 250: 17 Vor Ort produziert – Vor Ort konsumiert!
 
-**section:** 17 Vor Ort produziert - Vor Ort konsumiert!
+**section:** 17 Vor Ort produziert – Vor Ort konsumiert!
 
 **source_text:** Exporte in Drittstaaten lehnen wir ab, solange die Einhaltung des Tierwohls nicht lückenlos gewährleistet ist.
 
@@ -93819,9 +93819,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 250: 17 Vor Ort produziert - Vor Ort konsumiert!
+**page:** Webabschnitt 250: 17 Vor Ort produziert – Vor Ort konsumiert!
 
-**section:** 17 Vor Ort produziert - Vor Ort konsumiert!
+**section:** 17 Vor Ort produziert – Vor Ort konsumiert!
 
 **source_text:** Die Auflagen für Hausschlachtungen hingegen dürfen nicht weiter erhöht werden.
 
@@ -97460,12 +97460,12 @@ _Leere Liste._
 
 **section:** 1 Kommunen gerecht finanzieren!
 
-**source_text:** Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein - das garantieren wir durch bedarfsgerechte Mittel des Landes und einen echten Finanzausgleich.
+**source_text:** Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein – das garantieren wir durch bedarfsgerechte Mittel des Landes und einen echten Finanzausgleich.
 
 
-**decision_or_measure:** Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein - das garantieren wir …
+**decision_or_measure:** Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein – das garantieren wir …
 
-**intended_change:** Vorgesehene Veränderung: Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein - das garantieren wir durch bedarfsgerechte Mittel des Landes und einen echten Finanzausgleich.
+**intended_change:** Vorgesehene Veränderung: Jedes Gemeindehaus und jeder Kindergarten muss sanierbar sein – das garantieren wir durch bedarfsgerechte Mittel des Landes und einen echten Finanzausgleich.
 
 ##### decision_readiness
 
@@ -99549,12 +99549,12 @@ _Leere Liste._
 
 **section:** 4 Infrastruktur verbessern!
 
-**source_text:** Unser Maßstab: Die Infrastruktur der Stadt darf nicht zur Maxime werden - kein Dorf wird zurückgelassen.
+**source_text:** Unser Maßstab: Die Infrastruktur der Stadt darf nicht zur Maxime werden – kein Dorf wird zurückgelassen.
 
 
 **decision_or_measure:** Unser Maßstab
 
-**intended_change:** Vorgesehene Veränderung: Unser Maßstab: Die Infrastruktur der Stadt darf nicht zur Maxime werden - kein Dorf wird zurückgelassen.
+**intended_change:** Vorgesehene Veränderung: Unser Maßstab: Die Infrastruktur der Stadt darf nicht zur Maxime werden – kein Dorf wird zurückgelassen.
 
 ##### decision_readiness
 
@@ -100505,12 +100505,12 @@ _Leere Liste._
 
 **section:** 6 Schluss mit der Bevorzugung der Städte!
 
-**source_text:** Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune - ob Dorf oder Stadt - ihre Pflichtaufgaben erfüllen kann. Es darf nicht sein, dass Städte auf Kosten der Dörfer profitieren, während die Landbevölkerung mit dem leeren Versprechen gleichwertiger Lebensverhältnisse abgespeist wird.
+**source_text:** Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune – ob Dorf oder Stadt – ihre Pflichtaufgaben erfüllen kann. Es darf nicht sein, dass Städte auf Kosten der Dörfer profitieren, während die Landbevölkerung mit dem leeren Versprechen gleichwertiger Lebensverhältnisse abgespeist wird.
 
 
-**decision_or_measure:** Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune - …
+**decision_or_measure:** Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune – …
 
-**intended_change:** Vorgesehene Veränderung: Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune - ob Dorf oder Stadt - ihre Pflichtaufgaben erfüllen kann. Es darf nicht sein, dass Städte auf Kosten der Dörfer profitieren, während die Landbevölkerung mit dem leeren Versprechen gleichwertiger Lebensverhältnisse abgespeist wird.
+**intended_change:** Vorgesehene Veränderung: Gleichzeitig werden wir den kommunalen Finanzausgleich neu gewichten, damit jede Kommune – ob Dorf oder Stadt – ihre Pflichtaufgaben erfüllen kann. Es darf nicht sein, dass Städte auf Kosten der Dörfer profitieren, während die Landbevölkerung mit dem leeren Versprechen gleichwertiger Lebensverhältnisse abgespeist wird.
 
 ##### decision_readiness
 
@@ -101112,12 +101112,12 @@ _Leere Liste._
 
 **section:** 8 Förderpolitik ohne Regenbogen!
 
-**source_text:** Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden - etwa, ob es dem tatsächlichen Bedarf dient.
+**source_text:** Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden – etwa, ob es dem tatsächlichen Bedarf dient.
 
 
-**decision_or_measure:** Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden - …
+**decision_or_measure:** Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden – …
 
-**intended_change:** Vorgesehene Veränderung: Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden - etwa, ob es dem tatsächlichen Bedarf dient.
+**intended_change:** Vorgesehene Veränderung: Stattdessen soll Fördergeld einzig und allein nach sinnvollen Kriterien vergeben werden – etwa, ob es dem tatsächlichen Bedarf dient.
 
 ##### decision_readiness
 
@@ -109824,9 +109824,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 279: 14 Wasserstraßen-Tourismus entdecken - Wasserstraßen ausbauen!
+**page:** Webabschnitt 279: 14 Wasserstraßen-Tourismus entdecken – Wasserstraßen ausbauen!
 
-**section:** 14 Wasserstraßen-Tourismus entdecken - Wasserstraßen ausbauen!
+**section:** 14 Wasserstraßen-Tourismus entdecken – Wasserstraßen ausbauen!
 
 **source_text:** Wir werden die Kommunen, die Binnenhäfen an der Elbe bewirtschaften, entlasten.
 
@@ -110120,9 +110120,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 279: 14 Wasserstraßen-Tourismus entdecken - Wasserstraßen ausbauen!
+**page:** Webabschnitt 279: 14 Wasserstraßen-Tourismus entdecken – Wasserstraßen ausbauen!
 
-**section:** 14 Wasserstraßen-Tourismus entdecken - Wasserstraßen ausbauen!
+**section:** 14 Wasserstraßen-Tourismus entdecken – Wasserstraßen ausbauen!
 
 **source_text:** Zu diesem Zweck werden wir nach dem Modell der Sächsischen Binnenhäfen Oberelbe GmbH (SBO) alle Häfen (Magdeburg, Aken, Roßlau, Wittenberg) in einer landeseigenen Gesellschaft zusammenführen.
 
@@ -111402,16 +111402,16 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 281: 16 In die Zukunft investieren - Digitale Infrastruktur ausbauen!
+**page:** Webabschnitt 281: 16 In die Zukunft investieren – Digitale Infrastruktur ausbauen!
 
-**section:** 16 In die Zukunft investieren - Digitale Infrastruktur ausbauen!
+**section:** 16 In die Zukunft investieren – Digitale Infrastruktur ausbauen!
 
-**source_text:** In die Zukunft investieren - Digitale Infrastruktur ausbauen!
+**source_text:** In die Zukunft investieren – Digitale Infrastruktur ausbauen!
 
 
-**decision_or_measure:** In die Zukunft investieren - Digitale Infrastruktur ausbauen!
+**decision_or_measure:** In die Zukunft investieren – Digitale Infrastruktur ausbauen!
 
-**intended_change:** Vorgesehene Veränderung: In die Zukunft investieren - Digitale Infrastruktur ausbauen!
+**intended_change:** Vorgesehene Veränderung: In die Zukunft investieren – Digitale Infrastruktur ausbauen!
 
 ##### decision_readiness
 
@@ -111696,9 +111696,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 282: 17 Zukunftstechnologien fördern - Rechenzentren ansiedeln!
+**page:** Webabschnitt 282: 17 Zukunftstechnologien fördern – Rechenzentren ansiedeln!
 
-**section:** 17 Zukunftstechnologien fördern - Rechenzentren ansiedeln!
+**section:** 17 Zukunftstechnologien fördern – Rechenzentren ansiedeln!
 
 **source_text:** Entscheidungen über den Einsatz neuer Technologien dürfen nicht allein privaten Konzernen oder internationalen Akteuren überlassen werden.
 
@@ -111990,9 +111990,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 282: 17 Zukunftstechnologien fördern - Rechenzentren ansiedeln!
+**page:** Webabschnitt 282: 17 Zukunftstechnologien fördern – Rechenzentren ansiedeln!
 
-**section:** 17 Zukunftstechnologien fördern - Rechenzentren ansiedeln!
+**section:** 17 Zukunftstechnologien fördern – Rechenzentren ansiedeln!
 
 **source_text:** Als Landesregierung wollen wir dazu beitragen, unser Bundesland als verlässlichen und wettbewerbsfähigen Standort für Rechenzentren und digitale Schlüsseltechnologien zu etablieren. Dazu gehören planungssichere Rahmenbedingungen, zügige Genehmigungsverfahren, eine leistungsfähige Energie- und Netzinfrastruktur sowie ein investitionsfreundliches Umfeld ohne ideologische Vorgaben.
 
@@ -113193,12 +113193,12 @@ _Leere Liste._
 
 **section:** 5 Unnötige Landesgesellschaften auflösen!
 
-**source_text:** Der Staat ist kein Ersatzkonzern - wir werden überflüssige Landesgesellschaften auflösen.
+**source_text:** Der Staat ist kein Ersatzkonzern – wir werden überflüssige Landesgesellschaften auflösen.
 
 
-**decision_or_measure:** Der Staat ist kein Ersatzkonzern - wir werden überflüssige Landesgesellschaften auflösen
+**decision_or_measure:** Der Staat ist kein Ersatzkonzern – wir werden überflüssige Landesgesellschaften auflösen
 
-**intended_change:** Vorgesehene Veränderung: Der Staat ist kein Ersatzkonzern - wir werden überflüssige Landesgesellschaften auflösen.
+**intended_change:** Vorgesehene Veränderung: Der Staat ist kein Ersatzkonzern – wir werden überflüssige Landesgesellschaften auflösen.
 
 ##### decision_readiness
 
@@ -116191,12 +116191,12 @@ _Leere Liste._
 
 **section:** 12 Fördermittel besser einsetzen!
 
-**source_text:** Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden - ohne bürokratische Labyrinthe und ohne ideologische Gängelung.
+**source_text:** Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden – ohne bürokratische Labyrinthe und ohne ideologische Gängelung.
 
 
-**decision_or_measure:** Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden - ohne bürokratische …
+**decision_or_measure:** Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden – ohne bürokratische …
 
-**intended_change:** Vorgesehene Veränderung: Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden - ohne bürokratische Labyrinthe und ohne ideologische Gängelung.
+**intended_change:** Vorgesehene Veränderung: Fördermittel sollen dort ankommen, wo sie wirklich gebraucht werden – ohne bürokratische Labyrinthe und ohne ideologische Gängelung.
 
 ##### decision_readiness
 
@@ -118899,9 +118899,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 300: 4 Genug GEZahlt - Zwangsabgabe abschaffen, Grundfunk einführen!
+**page:** Webabschnitt 300: 4 Genug GEZahlt – Zwangsabgabe abschaffen, Grundfunk einführen!
 
-**section:** 4 Genug GEZahlt - Zwangsabgabe abschaffen, Grundfunk einführen!
+**section:** 4 Genug GEZahlt – Zwangsabgabe abschaffen, Grundfunk einführen!
 
 **source_text:** Wir werden uns dafür einsetzen, den öffentlich-rechtlichen Rundfunk in ein verfassungskonformes Grundangebot zu überführen.
 
@@ -119201,9 +119201,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 300: 4 Genug GEZahlt - Zwangsabgabe abschaffen, Grundfunk einführen!
+**page:** Webabschnitt 300: 4 Genug GEZahlt – Zwangsabgabe abschaffen, Grundfunk einführen!
 
-**section:** 4 Genug GEZahlt - Zwangsabgabe abschaffen, Grundfunk einführen!
+**section:** 4 Genug GEZahlt – Zwangsabgabe abschaffen, Grundfunk einführen!
 
 **source_text:** Eine Finanzierung durch Haushaltsmittel oder Werbung soll hierfür geprüft werden.
 
@@ -125054,12 +125054,12 @@ _Leere Liste._
 
 **section:** 3 Keine neuen Abgaben und Steuererhöhungen!
 
-**source_text:** Außerdem werden wir uns auch auf Bundesebene für die generelle Senkung der Steuer- und Abgabenlast einsetzen - zum Wohle der hart arbeitenden Mitte der Bevölkerung und als Impuls für den heimischen Mittelstand.
+**source_text:** Außerdem werden wir uns auch auf Bundesebene für die generelle Senkung der Steuer- und Abgabenlast einsetzen – zum Wohle der hart arbeitenden Mitte der Bevölkerung und als Impuls für den heimischen Mittelstand.
 
 
 **decision_or_measure:** Außerdem werden wir uns auch auf Bundesebene für die generelle Senkung der …
 
-**intended_change:** Vorgesehene Veränderung: Außerdem werden wir uns auch auf Bundesebene für die generelle Senkung der Steuer- und Abgabenlast einsetzen - zum Wohle der hart arbeitenden Mitte der Bevölkerung und als Impuls für den heimischen Mittelstand.
+**intended_change:** Vorgesehene Veränderung: Außerdem werden wir uns auch auf Bundesebene für die generelle Senkung der Steuer- und Abgabenlast einsetzen – zum Wohle der hart arbeitenden Mitte der Bevölkerung und als Impuls für den heimischen Mittelstand.
 
 ##### decision_readiness
 
@@ -127456,9 +127456,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 314: 9 Haushaltsklarheit per Gesetz - Ehrliche und transparente Budgets!
+**page:** Webabschnitt 314: 9 Haushaltsklarheit per Gesetz – Ehrliche und transparente Budgets!
 
-**section:** 9 Haushaltsklarheit per Gesetz - Ehrliche und transparente Budgets!
+**section:** 9 Haushaltsklarheit per Gesetz – Ehrliche und transparente Budgets!
 
 **source_text:** Wir garantieren damit, dass der Landeshaushalt künftig den verfassungsrechtlichen Grundsätzen der Wahrheit und Klarheit strikt entspricht.
 
@@ -127766,9 +127766,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 314: 9 Haushaltsklarheit per Gesetz - Ehrliche und transparente Budgets!
+**page:** Webabschnitt 314: 9 Haushaltsklarheit per Gesetz – Ehrliche und transparente Budgets!
 
-**section:** 9 Haushaltsklarheit per Gesetz - Ehrliche und transparente Budgets!
+**section:** 9 Haushaltsklarheit per Gesetz – Ehrliche und transparente Budgets!
 
 **source_text:** Wir schaffen einen glasklaren, wahrheitsgetreuen Haushalt, der ehrlich finanziert ist und den Bürgern Rechenschaft über jeden Euro ablegt.
 
@@ -130748,12 +130748,12 @@ _Leere Liste._
 
 **section:** 4 Leistungsgruppen sinnvoll gestalten!
 
-**source_text:** Wir werden dafür sorgen, dass die Einführung von Leistungsgruppen nicht starr nach bundesweiten Maßstäben erfolgt, sondern an die besonderen Gegebenheiten unseres Landes angepasst wird - mit großen Entfernungen, dünner Besiedlung und einer ohnehin angespannten Krankenhauslandschaft.
+**source_text:** Wir werden dafür sorgen, dass die Einführung von Leistungsgruppen nicht starr nach bundesweiten Maßstäben erfolgt, sondern an die besonderen Gegebenheiten unseres Landes angepasst wird – mit großen Entfernungen, dünner Besiedlung und einer ohnehin angespannten Krankenhauslandschaft.
 
 
 **decision_or_measure:** dafür sorgen, dass die Einführung von Leistungsgruppen nicht starr nach bundesweiten Maßstäben …
 
-**intended_change:** Vorgesehene Veränderung: Wir werden dafür sorgen, dass die Einführung von Leistungsgruppen nicht starr nach bundesweiten Maßstäben erfolgt, sondern an die besonderen Gegebenheiten unseres Landes angepasst wird - mit großen Entfernungen, dünner Besiedlung und einer ohnehin angespannten Krankenhauslandschaft.
+**intended_change:** Vorgesehene Veränderung: Wir werden dafür sorgen, dass die Einführung von Leistungsgruppen nicht starr nach bundesweiten Maßstäben erfolgt, sondern an die besonderen Gegebenheiten unseres Landes angepasst wird – mit großen Entfernungen, dünner Besiedlung und einer ohnehin angespannten Krankenhauslandschaft.
 
 ##### decision_readiness
 
@@ -136255,9 +136255,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 327: 12 Pflegeberufe aufwerten - Pflegenotstand beheben!
+**page:** Webabschnitt 327: 12 Pflegeberufe aufwerten – Pflegenotstand beheben!
 
-**section:** 12 Pflegeberufe aufwerten - Pflegenotstand beheben!
+**section:** 12 Pflegeberufe aufwerten – Pflegenotstand beheben!
 
 **source_text:** Wir werden dafür sorgen, dass der zukünftige Pflegepersonalbedarf auf Basis der Ermittlung des individuellen Pflegebedarfs der Patienten und Bewohner abgeleitet wird.
 
@@ -136541,9 +136541,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 327: 12 Pflegeberufe aufwerten - Pflegenotstand beheben!
+**page:** Webabschnitt 327: 12 Pflegeberufe aufwerten – Pflegenotstand beheben!
 
-**section:** 12 Pflegeberufe aufwerten - Pflegenotstand beheben!
+**section:** 12 Pflegeberufe aufwerten – Pflegenotstand beheben!
 
 **source_text:** Danach werden wir Pflegepersonaluntergrenzen für alle medizinischen Bereiche festgelegen.
 
@@ -137458,9 +137458,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 330: 15 Pflege zuhause fördern - Familienzusammenhalt stärken!
+**page:** Webabschnitt 330: 15 Pflege zuhause fördern – Familienzusammenhalt stärken!
 
-**section:** 15 Pflege zuhause fördern - Familienzusammenhalt stärken!
+**section:** 15 Pflege zuhause fördern – Familienzusammenhalt stärken!
 
 **source_text:** Außerdem werden wir uns auf Bundesebene dafür einsetzen, dass Pflegeleistungen innerhalb der Familie in höherem Umfang als bislang auf die Rente angerechnet werden.
 
@@ -137762,9 +137762,9 @@ _Leere Liste._
 
 ###### location
 
-**page:** Webabschnitt 330: 15 Pflege zuhause fördern - Familienzusammenhalt stärken!
+**page:** Webabschnitt 330: 15 Pflege zuhause fördern – Familienzusammenhalt stärken!
 
-**section:** 15 Pflege zuhause fördern - Familienzusammenhalt stärken!
+**section:** 15 Pflege zuhause fördern – Familienzusammenhalt stärken!
 
 **source_text:** Zudem wollen wir Tagespflegeplätze ausbauen, damit Angehörige entlastet werden und pflegebedürftige Menschen länger zu Hause versorgt werden können.
 

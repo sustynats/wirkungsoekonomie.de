@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW P34: Zuwanderung / Integration / GEAS - source-bound clean closure + two compound-parent repairs
+## WÖk FACH BATCH — Berlin BSW P34: Zuwanderung / Integration / GEAS — source-bound clean closure + two compound-parent repairs
 
 Authoritative continuation after P33 `5454551001`. Frozen source artifact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P34/66. Exact source IDs below come from the frozen source-bound ledger. Generic delegated/#313 RNAA is **not** Fach proof and is superseded for this exact scope. No DNS mapping, Recommendation, score or programme-wide judgement is generated.
 
@@ -12,7 +12,7 @@ P34 must not be reviewed against a pre-GEAS or zero-integration baseline.
 
 **Competence guard:** asylum admission, safe-third-country rules, border rules and the BAMF integration-course framework are primarily EU/federal. Berlin has material implementation, reception, participation/integration, education, social, local-administration and Bundesrat/advocacy levers. Public projection must keep those levels separate.
 
-### 2. U01 - programme frame, equal-opportunity goal, compound migration/integration proposition
+### 2. U01 — programme frame, equal-opportunity goal, compound migration/integration proposition
 
 #### `BE-BSW-P34-U01-A01-ebaf6dc518f3`
 Source: `Zuwanderung und Integration Das BSW steht für eine gerechte und vernünftige Zuwanderungspolitik.`
@@ -38,38 +38,38 @@ Generate deterministic source-bound children from the **exact stored text**, wit
 
 Return exact child IDs/text spans to #240. **No child Fach decision from CodeX.** Fach will bind the child-level decisions once the exact deterministic spans exist. Required child review guards already fixed now: EU/federal/Land competence, status/eligibility definition, proportionality/hardship/due-process safeguards, actual course/service availability, sanctions/nonparticipation consequences, participation/language outcomes and distribution.
 
-### 3. U02 / U03 - source context
+### 3. U02 / U03 — source context
 
-- `BE-BSW-P34-U02-e0d8688ab58c` - party self-description / membership-background narrative → `NON_EFFECT_PARTY_SELF_DESCRIPTION_REVIEWED`.
-- `BE-BSW-P34-U03-1f3a0804b88f` - heading `Für die Zuwanderungspolitische Wende` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
+- `BE-BSW-P34-U02-e0d8688ab58c` — party self-description / membership-background narrative → `NON_EFFECT_PARTY_SELF_DESCRIPTION_REVIEWED`.
+- `BE-BSW-P34-U03-1f3a0804b88f` — heading `Für die Zuwanderungspolitische Wende` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
 Neither is an independent policy effect.
 
-### 4. U04 - rejection / causal-problem / partisan claims, no independent intervention
+### 4. U04 — rejection / causal-problem / partisan claims, no independent intervention
 
 The frozen U04 atoms are programme claims about `ungeregelte Zuwanderung`; they do not themselves specify a distinct implementable measure. Do not preserve the generic ledger's EFFECT_BEARING role merely because sentence tokenisation created atoms.
 
-- `BE-BSW-P34-U04-A01-390563286429` - rejection of current `ungeregelte Zuwanderung` practice → `NON_EFFECT_POLICY_POSITION_REVIEWED`.
-- `BE-BSW-P34-U04-A02-4368c5f97dcb` - `ungerecht und unvernünftig` → `NON_EFFECT_NORMATIVE_JUDGEMENT_REVIEWED`.
-- `BE-BSW-P34-U04-A03-d413794b7d2c` - claimed municipal overload → `NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED`.
-- `BE-BSW-P34-U04-A04-dc2373a52b8c` - claimed welfare-state / justice-authority overload → `NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED`.
-- `BE-BSW-P34-U04-A05-8d37f1dad8ed` - claimed worsening housing shortage → `NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED`.
-- `BE-BSW-P34-U04-A06-58e65f30cb45` - claimed crime / illegal-exploitation effect → `NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED`.
-- `BE-BSW-P34-U04-A07-63480e1a25e9` - claimed parallel-society / cohesion effect → `NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED`.
-- `BE-BSW-P34-U04-A08-7f596a9b4f60` - humanitarian/solidarity judgement → `NON_EFFECT_NORMATIVE_JUDGEMENT_REVIEWED`.
-- `BE-BSW-P34-U04-A09-81911a5a0ca4` - claimed contempt/indifference toward immigrants → `NON_EFFECT_PARTISAN_ATTRIBUTION_REVIEWED`.
-- `BE-BSW-P34-U04-A10-7662e1143dea` - rhetorical attribution to political elites/ideologues → `NON_EFFECT_PARTISAN_ATTRIBUTION_REVIEWED`.
+- `BE-BSW-P34-U04-A01-390563286429` — rejection of current `ungeregelte Zuwanderung` practice → `NON_EFFECT_POLICY_POSITION_REVIEWED`.
+- `BE-BSW-P34-U04-A02-4368c5f97dcb` — `ungerecht und unvernünftig` → `NON_EFFECT_NORMATIVE_JUDGEMENT_REVIEWED`.
+- `BE-BSW-P34-U04-A03-d413794b7d2c` — claimed municipal overload → `NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED`.
+- `BE-BSW-P34-U04-A04-dc2373a52b8c` — claimed welfare-state / justice-authority overload → `NON_EFFECT_PROGRAMME_PROBLEM_CLAIM_REVIEWED`.
+- `BE-BSW-P34-U04-A05-8d37f1dad8ed` — claimed worsening housing shortage → `NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED`.
+- `BE-BSW-P34-U04-A06-58e65f30cb45` — claimed crime / illegal-exploitation effect → `NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED`.
+- `BE-BSW-P34-U04-A07-63480e1a25e9` — claimed parallel-society / cohesion effect → `NON_EFFECT_PROGRAMME_CAUSAL_CLAIM_REVIEWED`.
+- `BE-BSW-P34-U04-A08-7f596a9b4f60` — humanitarian/solidarity judgement → `NON_EFFECT_NORMATIVE_JUDGEMENT_REVIEWED`.
+- `BE-BSW-P34-U04-A09-81911a5a0ca4` — claimed contempt/indifference toward immigrants → `NON_EFFECT_PARTISAN_ATTRIBUTION_REVIEWED`.
+- `BE-BSW-P34-U04-A10-7662e1143dea` — rhetorical attribution to political elites/ideologues → `NON_EFFECT_PARTISAN_ATTRIBUTION_REVIEWED`.
 
 **Evidence guard:** these are source-attributed programme problem/causal/partisan claims. None becomes independent evidence that the claimed causal effect exists. If later used as a problem hypothesis, baseline, counterfactual, distribution and attribution evidence must come from independent sources.
 
-### 5. U05 - programme-authored political/process account
+### 5. U05 — programme-authored political/process account
 
 `BE-BSW-P34-U05-55f865ba7a94` describes BSW MEP voting/political history and a claimed resulting EU asylum-procedure possibility.
 
 - `terminal_fach_state = NON_EFFECT_PROGRAMME_POLITICAL_PROCESS_CLAIM_REVIEWED`
 - Exact reason: retrospective party/process claim, not a Berlin intervention and not independent proof of legal causal attribution. Current EU law is referenced separately in the baseline above.
 
-### 6. U06 - federal/EU implementation demand + claimed system outcomes
+### 6. U06 — federal/EU implementation demand + claimed system outcomes
 
 `BE-BSW-P34-U06-A01-1f6271cf3efe` combines a demand to implement unspecified `notwendige Regelungen in Deutschland` with desired/claimed consequences for rule-based migration, deaths on flight routes and smuggling crime. This is not one coherent effect object.
 
@@ -85,10 +85,10 @@ Do **not** force a child count if exact syntax yields a different smallest valid
 
 Child-review guards fixed now: exact legal instrument(s) and EU/federal competence, legal-status/target-group scope, non-refoulement/vulnerability/hardship safeguards, implementation resources, displacement/rerouting effects, deaths/route-risk baseline, smuggling-market response and falsifiable outcome criteria.
 
-### 7. U07 / U08 - heading and geopolitical frame
+### 7. U07 / U08 — heading and geopolitical frame
 
-- `BE-BSW-P34-U07-2e7a303452f4` - heading `Die Ursachen von Flucht und Vertreibung bekämpfen` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
-- `BE-BSW-P34-U08-ff4884297f31` - geopolitical/causal framing about war, home and flight causes → `NON_EFFECT_GEOPOLITICAL_CAUSAL_FRAME_REVIEWED`.
+- `BE-BSW-P34-U07-2e7a303452f4` — heading `Die Ursachen von Flucht und Vertreibung bekämpfen` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
+- `BE-BSW-P34-U08-ff4884297f31` — geopolitical/causal framing about war, home and flight causes → `NON_EFFECT_GEOPOLITICAL_CAUSAL_FRAME_REVIEWED`.
 
 U08 may contextualise later foreign-/development-policy demands, but its general causal narrative is not an independent Berlin policy instrument and is not accepted as a complete causal model merely by appearing in the programme.
 
@@ -101,7 +101,7 @@ Original frozen P34 object set:
 
 P34 therefore changes from an opaque page-review envelope into a finite exact-object state. After technical materialisation, retain only the deterministic child residuals from the two compound parents. Do **not** mark P34 fully Fach-terminal until those exact children receive source-bound Fach decisions.
 
-Untouched physical BSW envelope after P34 is `P35-P66 = 32 pages`, subject to any newer authoritative #240 batch that lands before materialisation.
+Untouched physical BSW envelope after P34 is `P35–P66 = 32 pages`, subject to any newer authoritative #240 batch that lands before materialisation.
 
 BSW remains programme-open. Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 

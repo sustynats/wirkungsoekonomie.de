@@ -48,6 +48,8 @@ Die zusätzlichen Publikationsoriginale sind unter `/WOEK/Archiv-Website-2026-09
 
 ## Einordnung automatischer Prüfsignale
 
+Kryptografisch gebundene Quellen- und Prüfregister behalten ihre belegten Originalbytes. Diese maschinenlesbaren Eingaben werden bei der Formatbereinigung nicht verändert; ihre Prüfsummen und Quellenbindungen bleiben überprüfbar. Die öffentliche Website-Projektion durchläuft weiterhin die vollständige Typografie- und Datenschutzprüfung. Diese Abgrenzung betrifft keine PDF- oder Office-Publikation.
+
 Die Inventur unterscheidet redaktionelle Fehler von technisch beabsichtigten Strukturen. Blog-Filter verwenden URL-Hashes als Zustandsparameter. API-HTML-Dateien spiegeln maschinenlesbare Daten und erhalten `noindex`; eine Offline-Hilfsseite wird ebenfalls nicht als redaktioneller Suchtreffer geführt. Personenprofile können ihre Hauptüberschrift außerhalb eines `main`-Elements enthalten; der H1-Check erfasst deshalb das ganze Dokument. Gleichnamige Kapitel in verschiedenen Büchern sind nicht allein wegen des Titels doppelte Inhalte.
 
 Der Sprachscan meldet außerdem Fachbegriffe wie Input/Output, ausdrücklich bezeichnete historische Versionsnummern und Quellenrollen als „kanonisch“. Diese Signale sind kontextgeprüft; Begriffsdefinitionen, Versionsangaben und Quellenbeschreibungen werden nicht mechanisch entfernt.

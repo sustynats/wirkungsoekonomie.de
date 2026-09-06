@@ -1,8 +1,8 @@
-# Vollständige Fachakte - Gesetz über die Feststellung des Bundeshaushaltsplans für das Haushaltsjahr 2027 (Haushaltsgesetz 2027 - HG 2027)
+# Vollständige Fachakte – Gesetz über die Feststellung des Bundeshaushaltsplans für das Haushaltsjahr 2027 (Haushaltsgesetz 2027 - HG 2027)
 
 > Die ursprüngliche Review-Datei bleibt unverändert. Das nachträgliche Entscheidungsreife-/Abstimmungssupplement wird ergänzend vollständig dargestellt. Keine Verdichtung.
 
-## A. Ursprünglicher Review - vollständig
+## A. Ursprünglicher Review – vollständig
 
 **analysis_version:** 1.1.0
 
@@ -5949,7 +5949,7 @@ _Leere Liste._
 
 ###### Eintrag 1
 
-**institution:** Deutscher Bundestag - DIP
+**institution:** Deutscher Bundestag – DIP
 
 ###### relevant_locations
 
@@ -5965,7 +5965,7 @@ _Leere Liste._
 
 ###### Eintrag 2
 
-**institution:** Deutscher Bundestag - DIP
+**institution:** Deutscher Bundestag – DIP
 
 ###### relevant_locations
 
@@ -6029,7 +6029,7 @@ _Leere Liste._
 
 **source_type:** OTHER_PRIMARY_SOURCE
 
-**exact_location:** Gesamtbericht; insbesondere Finanzplan 2026-2030, Haushalt des Bundes und gesamtwirtschaftliche Ausgangslage.
+**exact_location:** Gesamtbericht; insbesondere Finanzplan 2026–2030, Haushalt des Bundes und gesamtwirtschaftliche Ausgangslage.
 
 **temporal_class:** AVAILABLE_AT_DECISION_TIME
 
@@ -6157,7 +6157,7 @@ _Leere Liste._
 
 **source_id:** CAND-BMF-IIB-SVIK-2026
 
-**title:** Startschuss für das SVIK - Ziele konkretisieren, Tempo gewinnen
+**title:** Startschuss für das SVIK – Ziele konkretisieren, Tempo gewinnen
 
 **institution:** Investitions- und Innovationsbeirat beim Bundesministerium der Finanzen
 
@@ -6185,7 +6185,7 @@ _Leere Liste._
 
 **source_id:** CAND-BMF-SVIK-FAQ-2026
 
-**title:** Sondervermögen für Infrastruktur und Klimaneutralität - Fragen und Antworten
+**title:** Sondervermögen für Infrastruktur und Klimaneutralität – Fragen und Antworten
 
 **institution:** Bundesministerium der Finanzen
 
@@ -6691,7 +6691,7 @@ _Leere Liste._
 
 **evidence_boundary:** Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung.
 
-## B. Entscheidungsreife und Abstimmungsverhalten - vollständige Ergänzung
+## B. Entscheidungsreife und Abstimmungsverhalten – vollständige Ergänzung
 
 **schema_version:** 1.0.0
 

@@ -1,4 +1,4 @@
-# Vollständige Fachakte - btw-2025-cdu-csu
+# Vollständige Fachakte – btw-2025-cdu-csu
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -19,7 +19,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Politikwechsel für Deutschland - Wahlprogramm zur Bundestagswahl 2025. Alle 168 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
+**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Politikwechsel für Deutschland – Wahlprogramm zur Bundestagswahl 2025. Alle 168 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
 
 ### source_summary
 
@@ -1874,7 +1874,7 @@ _Leere Liste._
 
 **source_location:** -1-
 
-**intended_change:** Vorgesehene Veränderung: Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der Ampel. Es braucht jetzt einen Politikwechsel: Mit den Menschen und nicht gegen sie - so funktioniert Energie- und Klimapolitik.
+**intended_change:** Vorgesehene Veränderung: Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der Ampel. Es braucht jetzt einen Politikwechsel: Mit den Menschen und nicht gegen sie – so funktioniert Energie- und Klimapolitik.
 
 **measure:** Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der …
 
@@ -2145,7 +2145,7 @@ _Leere Liste._
 
 **page:** 4
 
-**text:** Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der Ampel. Es braucht jetzt einen Politikwechsel: Mit den Menschen und nicht gegen sie - so funktioniert Energie- und Klimapolitik.
+**text:** Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der Ampel. Es braucht jetzt einen Politikwechsel: Mit den Menschen und nicht gegen sie – so funktioniert Energie- und Klimapolitik.
 
 **match_score:** 100.0
 
@@ -2166,7 +2166,7 @@ _Leere Liste._
 
 **source_page:** 4
 
-**source_text:** Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der Ampel. Es braucht jetzt einen Politikwechsel: Mit den Menschen und nicht gegen sie - so funktioniert Energie- und Klimapolitik.
+**source_text:** Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der Ampel. Es braucht jetzt einen Politikwechsel: Mit den Menschen und nicht gegen sie – so funktioniert Energie- und Klimapolitik.
 
 **topic:** ENERGY_CLIMATE
 
@@ -2180,7 +2180,7 @@ _Leere Liste._
 
 **measure:** Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der …
 
-**intended_change:** Vorgesehene Veränderung: Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der Ampel. Es braucht jetzt einen Politikwechsel: Mit den Menschen und nicht gegen sie - so funktioniert Energie- und Klimapolitik.
+**intended_change:** Vorgesehene Veränderung: Energie bezahlbar machen, Klima marktwirtschaftlich schützen Wir beenden die ideologiegetriebene Politik der Ampel. Es braucht jetzt einen Politikwechsel: Mit den Menschen und nicht gegen sie – so funktioniert Energie- und Klimapolitik.
 
 
 ##### component_topics
@@ -17477,9 +17477,9 @@ _Leere Liste._
 
 **source_location:** -7-
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen Planungs- und Genehmigungsverfahren beschleunigen - gerade bei Bau, Verkehr und digitalen Infrastrukturen.
+**intended_change:** Vorgesehene Veränderung: Wir wollen Planungs- und Genehmigungsverfahren beschleunigen – gerade bei Bau, Verkehr und digitalen Infrastrukturen.
 
-**measure:** Planungs- und Genehmigungsverfahren beschleunigen - gerade bei Bau, Verkehr und digitalen Infrastrukturen
+**measure:** Planungs- und Genehmigungsverfahren beschleunigen – gerade bei Bau, Verkehr und digitalen Infrastrukturen
 
 ##### decision_readiness
 
@@ -17679,7 +17679,7 @@ _Leere Liste._
 
 **page:** 10
 
-**text:** Wir wollen Planungs- und Genehmigungsverfahren beschleunigen - gerade bei Bau, Verkehr und digitalen Infrastrukturen.
+**text:** Wir wollen Planungs- und Genehmigungsverfahren beschleunigen – gerade bei Bau, Verkehr und digitalen Infrastrukturen.
 
 **match_score:** 100.0
 
@@ -17690,7 +17690,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen Planungs- und Genehmigungsverfahren beschleunigen - gerade bei Bau, Ver-
+**input_register_text:** Wir wollen Planungs- und Genehmigungsverfahren beschleunigen – gerade bei Bau, Ver-
 
 ##### source_components
 
@@ -17700,7 +17700,7 @@ _Leere Liste._
 
 **source_page:** 10
 
-**source_text:** Wir wollen Planungs- und Genehmigungsverfahren beschleunigen - gerade bei Bau, Verkehr und digitalen Infrastrukturen.
+**source_text:** Wir wollen Planungs- und Genehmigungsverfahren beschleunigen – gerade bei Bau, Verkehr und digitalen Infrastrukturen.
 
 **topic:** MOBILITY_INFRASTRUCTURE
 
@@ -17712,9 +17712,9 @@ _Leere Liste._
 
 - Konkreter Entscheidungsgegenstand nach der Prüfung/Planung
 
-**measure:** Planungs- und Genehmigungsverfahren beschleunigen - gerade bei Bau, Verkehr und digitalen Infrastrukturen
+**measure:** Planungs- und Genehmigungsverfahren beschleunigen – gerade bei Bau, Verkehr und digitalen Infrastrukturen
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen Planungs- und Genehmigungsverfahren beschleunigen - gerade bei Bau, Verkehr und digitalen Infrastrukturen.
+**intended_change:** Vorgesehene Veränderung: Wir wollen Planungs- und Genehmigungsverfahren beschleunigen – gerade bei Bau, Verkehr und digitalen Infrastrukturen.
 
 
 ##### component_topics
@@ -17809,9 +17809,9 @@ _Leere Liste._
 
 **source_location:** -7-
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen handeln und Vertrauen zurückgewinnen - schneller, effizienter, digital und mit schlankeren Strukturen.
+**intended_change:** Vorgesehene Veränderung: Wir wollen handeln und Vertrauen zurückgewinnen – schneller, effizienter, digital und mit schlankeren Strukturen.
 
-**measure:** handeln und Vertrauen zurückgewinnen - schneller, effizienter, digital und mit schlankeren Strukturen
+**measure:** handeln und Vertrauen zurückgewinnen – schneller, effizienter, digital und mit schlankeren Strukturen
 
 ##### decision_readiness
 
@@ -18018,7 +18018,7 @@ _Leere Liste._
 
 **page:** 10
 
-**text:** Wir wollen handeln und Vertrauen zurückgewinnen - schneller, effizienter, digital und mit schlankeren Strukturen.
+**text:** Wir wollen handeln und Vertrauen zurückgewinnen – schneller, effizienter, digital und mit schlankeren Strukturen.
 
 **match_score:** 100.0
 
@@ -18031,7 +18031,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen handeln und Vertrauen zurückgewinnen - schneller, effizienter, digital und mit schlankeren Strukturen.
+**input_register_text:** Wir wollen handeln und Vertrauen zurückgewinnen – schneller, effizienter, digital und mit schlankeren Strukturen.
 
 ##### source_components
 
@@ -18041,7 +18041,7 @@ _Leere Liste._
 
 **source_page:** 10
 
-**source_text:** Wir wollen handeln und Vertrauen zurückgewinnen - schneller, effizienter, digital und mit schlankeren Strukturen.
+**source_text:** Wir wollen handeln und Vertrauen zurückgewinnen – schneller, effizienter, digital und mit schlankeren Strukturen.
 
 **topic:** ECONOMY_INDUSTRY_TRADE
 
@@ -18053,9 +18053,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** handeln und Vertrauen zurückgewinnen - schneller, effizienter, digital und mit schlankeren Strukturen
+**measure:** handeln und Vertrauen zurückgewinnen – schneller, effizienter, digital und mit schlankeren Strukturen
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen handeln und Vertrauen zurückgewinnen - schneller, effizienter, digital und mit schlankeren Strukturen.
+**intended_change:** Vorgesehene Veränderung: Wir wollen handeln und Vertrauen zurückgewinnen – schneller, effizienter, digital und mit schlankeren Strukturen.
 
 
 ##### component_topics
@@ -19992,9 +19992,9 @@ _Leere Liste._
 
 **source_location:** 10 -
 
-**intended_change:** Vorgesehene Veränderung: Darauf können wir setzen, auch in schwieriger Zeit - und das müssen wir auch.
+**intended_change:** Vorgesehene Veränderung: Darauf können wir setzen, auch in schwieriger Zeit – und das müssen wir auch.
 
-**measure:** Darauf können wir setzen, auch in schwieriger Zeit - und das müssen …
+**measure:** Darauf können wir setzen, auch in schwieriger Zeit – und das müssen …
 
 ##### decision_readiness
 
@@ -20168,7 +20168,7 @@ _Leere Liste._
 
 **page:** 13
 
-**text:** Darauf können wir setzen, auch in schwieriger Zeit - und das müssen wir auch.
+**text:** Darauf können wir setzen, auch in schwieriger Zeit – und das müssen wir auch.
 
 **match_score:** 100.0
 
@@ -20181,7 +20181,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Darauf können wir setzen, auch in schwieriger Zeit - und das müssen wir auch.
+**input_register_text:** Darauf können wir setzen, auch in schwieriger Zeit – und das müssen wir auch.
 
 ##### source_components
 
@@ -20191,7 +20191,7 @@ _Leere Liste._
 
 **source_page:** 13
 
-**source_text:** Darauf können wir setzen, auch in schwieriger Zeit - und das müssen wir auch.
+**source_text:** Darauf können wir setzen, auch in schwieriger Zeit – und das müssen wir auch.
 
 **topic:** OTHER
 
@@ -20203,9 +20203,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Darauf können wir setzen, auch in schwieriger Zeit - und das müssen …
+**measure:** Darauf können wir setzen, auch in schwieriger Zeit – und das müssen …
 
-**intended_change:** Vorgesehene Veränderung: Darauf können wir setzen, auch in schwieriger Zeit - und das müssen wir auch.
+**intended_change:** Vorgesehene Veränderung: Darauf können wir setzen, auch in schwieriger Zeit – und das müssen wir auch.
 
 
 ##### component_topics
@@ -23564,7 +23564,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-cdu-csu-0074-wir-reduzieren-statistikpflichten-datenerhebungen-und-mel
 
-**source_location:** EU-Bürokratie kleinhalten. Mit einem Gesetz gegen Draufsatteln - „Anti-Gold-Plating-
+**source_location:** EU-Bürokratie kleinhalten. Mit einem Gesetz gegen Draufsatteln – „Anti-Gold-Plating-
 
 **intended_change:** Vorgesehene Veränderung: Wir reduzieren Statistikpflichten, Datenerhebungen und Meldungen durch ein Verweisungsrecht für Unternehmen.
 
@@ -23890,7 +23890,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-cdu-csu-0075-wir-stellen-alle-noch-bestehenden-arbeitsrechtli
 
-**source_location:** EU-Bürokratie kleinhalten. Mit einem Gesetz gegen Draufsatteln - „Anti-Gold-Plating-
+**source_location:** EU-Bürokratie kleinhalten. Mit einem Gesetz gegen Draufsatteln – „Anti-Gold-Plating-
 
 **intended_change:** Vorgesehene Veränderung: Wir stellen alle noch bestehenden arbeitsrechtlichen Erfordernisse der Niederschrift auf Papier mit eigenhändiger Unterschrift und persönlicher oder postalischer Übergabe auf den Prüfstand.
 
@@ -33906,9 +33906,9 @@ _Leere Liste._
 
 **source_location:** Lust auf Unternehmertum machen
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen diesen Unternehmergeist und Gründermut weiter stärken - quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
+**intended_change:** Vorgesehene Veränderung: Wir wollen diesen Unternehmergeist und Gründermut weiter stärken – quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
 
-**measure:** diesen Unternehmergeist und Gründermut weiter stärken - quer durch alle Regionen und …
+**measure:** diesen Unternehmergeist und Gründermut weiter stärken – quer durch alle Regionen und …
 
 ##### decision_readiness
 
@@ -34100,7 +34100,7 @@ _Leere Liste._
 
 **page:** 28
 
-**text:** Wir wollen diesen Unternehmergeist und Gründermut weiter stärken - quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
+**text:** Wir wollen diesen Unternehmergeist und Gründermut weiter stärken – quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
 
 **match_score:** 100.0
 
@@ -34113,7 +34113,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen diesen Unternehmergeist und Gründermut weiter stärken - quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
+**input_register_text:** Wir wollen diesen Unternehmergeist und Gründermut weiter stärken – quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
 
 ##### source_components
 
@@ -34123,7 +34123,7 @@ _Leere Liste._
 
 **source_page:** 28
 
-**source_text:** Wir wollen diesen Unternehmergeist und Gründermut weiter stärken - quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
+**source_text:** Wir wollen diesen Unternehmergeist und Gründermut weiter stärken – quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
 
 **topic:** SCIENCE_RESEARCH
 
@@ -34135,9 +34135,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** diesen Unternehmergeist und Gründermut weiter stärken - quer durch alle Regionen und …
+**measure:** diesen Unternehmergeist und Gründermut weiter stärken – quer durch alle Regionen und …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen diesen Unternehmergeist und Gründermut weiter stärken - quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
+**intended_change:** Vorgesehene Veränderung: Wir wollen diesen Unternehmergeist und Gründermut weiter stärken – quer durch alle Regionen und Branchen von sozialen Innovationen bis Hochtechnologie.
 
 
 ##### component_topics
@@ -37895,7 +37895,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-cdu-csu-0117-wir-schaffen-die-friedenswahlen-ab-und-sorgen-fur-echte-wahlmoglichkeite
 
-**source_location:** Altersvorsorge von Kindesbeinen an - Frühstart-Rente einführen. Junge Menschen sol-
+**source_location:** Altersvorsorge von Kindesbeinen an – Frühstart-Rente einführen. Junge Menschen sol-
 
 **intended_change:** Vorgesehene Veränderung: Wir schaffen die Friedenswahlen ab und sorgen für echte Wahlmöglichkeiten zwischen den Kandidaten.
 
@@ -39225,9 +39225,9 @@ _Leere Liste._
 
 **source_location:** Landwirtschaft entlasten
 
-**intended_change:** Vorgesehene Veränderung: Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit - damit ein Landwirt wieder Landwirt sein kann. • L La an nd dw wi ir rt ts sc ch ha af ft tl li ic ch he e B Be et tr ri ie eb be e e en nt tl la as st te en n. .
+**intended_change:** Vorgesehene Veränderung: Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit – damit ein Landwirt wieder Landwirt sein kann. • L La an nd dw wi ir rt ts sc ch ha af ft tl li ic ch he e B Be et tr ri ie eb be e e en nt tl la as st te en n. .
 
-**measure:** für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit - damit ein Landwirt wieder …
+**measure:** für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit – damit ein Landwirt wieder …
 
 ##### decision_readiness
 
@@ -39427,7 +39427,7 @@ _Leere Liste._
 
 **page:** 36
 
-**text:** Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit - damit ein Landwirt wieder Landwirt sein kann. • L La an nd dw wi ir rt ts sc ch ha af ft tl li ic ch he e B Be et tr ri ie eb be e e en nt tl la as st te en n. .
+**text:** Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit – damit ein Landwirt wieder Landwirt sein kann. • L La an nd dw wi ir rt ts sc ch ha af ft tl li ic ch he e B Be et tr ri ie eb be e e en nt tl la as st te en n. .
 
 **match_score:** 100.0
 
@@ -39440,7 +39440,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit - damit ein Landwirt wieder Landwirt sein kann.
+**input_register_text:** Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit – damit ein Landwirt wieder Landwirt sein kann.
 
 ##### source_components
 
@@ -39450,7 +39450,7 @@ _Leere Liste._
 
 **source_page:** 36
 
-**source_text:** Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit - damit ein Landwirt wieder Landwirt sein kann. • L La an nd dw wi ir rt ts sc ch ha af ft tl li ic ch he e B Be et tr ri ie eb be e e en nt tl la as st te en n. .
+**source_text:** Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit – damit ein Landwirt wieder Landwirt sein kann. • L La an nd dw wi ir rt ts sc ch ha af ft tl li ic ch he e B Be et tr ri ie eb be e e en nt tl la as st te en n. .
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -39462,9 +39462,9 @@ _Leere Liste._
 
 - Konkreter Entscheidungsgegenstand nach der Prüfung/Planung
 
-**measure:** für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit - damit ein Landwirt wieder …
+**measure:** für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit – damit ein Landwirt wieder …
 
-**intended_change:** Vorgesehene Veränderung: Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit - damit ein Landwirt wieder Landwirt sein kann. • L La an nd dw wi ir rt ts sc ch ha af ft tl li ic ch he e B Be et tr ri ie eb be e e en nt tl la as st te en n. .
+**intended_change:** Vorgesehene Veränderung: Wir sorgen für Entlastungen durch bessere Rahmenbedingungen und Planungssicherheit – damit ein Landwirt wieder Landwirt sein kann. • L La an nd dw wi ir rt ts sc ch ha af ft tl li ic ch he e B Be et tr ri ie eb be e e en nt tl la as st te en n. .
 
 
 ##### component_topics
@@ -44624,7 +44624,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-cdu-csu-0137-wir-wollen-sie-von-180-000-auf-203-000-soldatinnen-und-soldaten-erhohen
 
-**source_location:** Aufwachsende Wehrpflicht - Perspektive Gesellschaftsjahr, starke Verankerung der Bundeswehr in der Gesellschaft
+**source_location:** Aufwachsende Wehrpflicht – Perspektive Gesellschaftsjahr, starke Verankerung der Bundeswehr in der Gesellschaft
 
 **intended_change:** Vorgesehene Veränderung: Wir wollen sie von 180.000 auf 203.000 Soldatinnen und Soldaten erhöhen.
 
@@ -45926,9 +45926,9 @@ _Leere Liste._
 
 **source_location:** 55 -
 
-**intended_change:** Vorgesehene Veränderung: Wir setzen uns dafür ein, dass im öffentlichen Raum - an Schulen und Universitäten, im Rundfunk und der Verwaltung - auf die Gendersprache verzichtet wird.
+**intended_change:** Vorgesehene Veränderung: Wir setzen uns dafür ein, dass im öffentlichen Raum – an Schulen und Universitäten, im Rundfunk und der Verwaltung – auf die Gendersprache verzichtet wird.
 
-**measure:** Wir setzen uns dafür ein, dass im öffentlichen Raum - an Schulen …
+**measure:** Wir setzen uns dafür ein, dass im öffentlichen Raum – an Schulen …
 
 ##### decision_readiness
 
@@ -46144,7 +46144,7 @@ _Leere Liste._
 
 **page:** 58
 
-**text:** Wir setzen uns dafür ein, dass im öffentlichen Raum - an Schulen und Universitäten, im Rundfunk und der Verwaltung - auf die Gendersprache verzichtet wird.
+**text:** Wir setzen uns dafür ein, dass im öffentlichen Raum – an Schulen und Universitäten, im Rundfunk und der Verwaltung – auf die Gendersprache verzichtet wird.
 
 **match_score:** 100.0
 
@@ -46157,7 +46157,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir setzen uns dafür ein, dass im öffentlichen Raum - an Schulen und Universitäten, im Rundfunk und der Verwaltung - auf die Gendersprache verzichtet wird.
+**input_register_text:** Wir setzen uns dafür ein, dass im öffentlichen Raum – an Schulen und Universitäten, im Rundfunk und der Verwaltung – auf die Gendersprache verzichtet wird.
 
 ##### source_components
 
@@ -46167,7 +46167,7 @@ _Leere Liste._
 
 **source_page:** 58
 
-**source_text:** Wir setzen uns dafür ein, dass im öffentlichen Raum - an Schulen und Universitäten, im Rundfunk und der Verwaltung - auf die Gendersprache verzichtet wird.
+**source_text:** Wir setzen uns dafür ein, dass im öffentlichen Raum – an Schulen und Universitäten, im Rundfunk und der Verwaltung – auf die Gendersprache verzichtet wird.
 
 **topic:** MEDIA_COMMUNICATION
 
@@ -46179,9 +46179,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Wir setzen uns dafür ein, dass im öffentlichen Raum - an Schulen …
+**measure:** Wir setzen uns dafür ein, dass im öffentlichen Raum – an Schulen …
 
-**intended_change:** Vorgesehene Veränderung: Wir setzen uns dafür ein, dass im öffentlichen Raum - an Schulen und Universitäten, im Rundfunk und der Verwaltung - auf die Gendersprache verzichtet wird.
+**intended_change:** Vorgesehene Veränderung: Wir setzen uns dafür ein, dass im öffentlichen Raum – an Schulen und Universitäten, im Rundfunk und der Verwaltung – auf die Gendersprache verzichtet wird.
 
 
 ##### component_topics

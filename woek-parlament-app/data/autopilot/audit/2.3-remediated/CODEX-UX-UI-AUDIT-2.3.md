@@ -1,4 +1,4 @@
-# CodeX - UX-, UI-, Responsive- und Accessibility-Audit 2.3
+# CodeX – UX-, UI-, Responsive- und Accessibility-Audit 2.3
 
 Stand: 19. August 2026
 
@@ -70,16 +70,16 @@ Alle liefern HTTP 200; der Browser-Audit meldet weder White Screen noch React-Ob
 
 ## Icon-Richtungsregression
 
-- `EU-IMPACT-2026-004`: freigegebene Richtung `AMBIVALENT` → gerendert `data-woek-assessment-icon="ambivalent"` - PASS.
+- `EU-IMPACT-2026-004`: freigegebene Richtung `AMBIVALENT` → gerendert `data-woek-assessment-icon="ambivalent"` – PASS.
 - Positive, negative, ambivalente, offene, neutrale, bedingte, Schutz- und Portfoliozustände besitzen explizite technische Zuordnungen.
 - Unbekannte Richtung → `unknown` mit nicht-direktionaler Evidenzdarstellung; niemals positiver Default.
 - Die Browsermatrix vergleicht für jede gerenderte Bewertungsfläche `data-woek-assessment-direction` mit `data-woek-assessment-icon`.
 
 ## Source-vs.-View und Redaktion
 
-- Government: 53/53 Public ImpactCases, 1.622 öffentliche Felder - PASS
-- Recommendations: 6/6, 621 Felder und 22/22 Quellen-Zwischenseiten - PASS
-- EU: 16/16 Public ImpactCases, 224 öffentliche Felder - PASS
+- Government: 53/53 Public ImpactCases, 1.622 öffentliche Felder – PASS
+- Recommendations: 6/6, 621 Felder und 22/22 Quellen-Zwischenseiten – PASS
+- EU: 16/16 Public ImpactCases, 224 öffentliche Felder – PASS
 - Generic Public Editorial Scan: PASS
 
 ## Review des React-Codes

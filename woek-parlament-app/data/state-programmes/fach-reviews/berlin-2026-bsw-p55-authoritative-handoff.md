@@ -1,17 +1,17 @@
-## WÖk FACH BATCH - Berlin BSW physical PDF page 55 complete source-bound review
+## WÖk FACH BATCH — Berlin BSW physical PDF page 55 complete source-bound review
 
 Continuation after P54 `5457955882`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P55/66. Exact frozen P55 inventory: 7 source units / 14 atom IDs. Generic delegated RNAA is not Fach authority. No DNS mapping, Recommendation, score or party-wide judgement.
 
 ### Current tax-law / competence baseline guards
 
 1. **Inheritance/gift-tax personal allowances are currently materially below the P55 €1m proposal and can recur after ten years.** Current §16 ErbStG: spouses/life partners €500k, children €400k, grandchildren €200k; §14 aggregates acquisitions from the same person within ten years, so the statutory structure is not `once per lifetime`: https://www.gesetze-im-internet.de/erbstg_1974/__16.html and https://www.gesetze-im-internet.de/erbstg_1974/__14.html . Family-home relief already exists under defined conditions, including a 200m² cap for children and ten-year self-use rules: https://www.gesetze-im-internet.de/erbstg_1974/__13.html . The source phrase `übliches selbstgenutztes Wohneigentum` is therefore not a legally defined current category and must be treated as an open design parameter.
-2. **Business-asset inheritance relief is real and differentiated, not one simple exemption.** Current ErbStG includes 85% relief for qualifying business assets up to defined thresholds, optional full relief conditions, reduction for large acquisitions and a needs test, with thresholds including €26m and €90m in §§13a-13c/28a: https://www.gesetze-im-internet.de/erbstg_1974/BJNR109330974.html . Therefore `diese Begünstigungen beenden` is referentially meaningful but not sufficiently specific as to which relief mechanism/threshold/replacement.
+2. **Business-asset inheritance relief is real and differentiated, not one simple exemption.** Current ErbStG includes 85% relief for qualifying business assets up to defined thresholds, optional full relief conditions, reduction for large acquisitions and a needs test, with thresholds including €26m and €90m in §§13a–13c/28a: https://www.gesetze-im-internet.de/erbstg_1974/BJNR109330974.html . Therefore `diese Begünstigungen beenden` is referentially meaningful but not sufficiently specific as to which relief mechanism/threshold/replacement.
 3. **Wealth tax is not currently collected, but the constitutional issue was valuation/equality, not an eternal ban.** BVerfG held the prior unequal valuation incompatible with Art.3 GG and allowed old law only through 31.12.1996; BMF notes non-collection since 1997 and that a constitutionally compliant new design is possible: https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/1998/bvg98-037.html and https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Ministerium/Geschaeftsbereich/Wissenschaftlicher_Beirat/Gutachten_und_Stellungnahmen/Ausgewaehlte_Texte/Besteuerung-Vermoegen.pdf?__blob=publicationFile&v=1 . Revenue from wealth and inheritance tax is constitutionally assigned to Länder (Art.106(2) GG), while legislative competence remains a separate Art.105 question: https://www.bundestag.de/parlament/aufgaben/rechtsgrundlagen/grundgesetz .
 4. **Share Deals are already partly captured by current GrEStG, but gaps remain a live policy issue.** Current §1 GrEStG uses 90%/10-year thresholds for relevant partnership/corporation ownership changes and share concentration: https://www.gesetze-im-internet.de/grestg_1983/__1.html . Bundestag material from June 2026 records current proposals to close remaining avoidance routes: https://www.bundestag.de/presse/hib/kurzmeldungen-1192368 . Thus `Share Deals avoid tax in many cases` is plausible source context, not a claim that all share deals are tax-free; `stricter limitation` still lacks an exact legal delta.
 5. **The real-estate-company Gewerbesteuer rule is an extended reduction, not a blanket tax exemption.** §9 Nr.1 Satz2 GewStG allows qualifying companies that exclusively manage/use own real property to deduct the corresponding property-management portion of trade income under strict conditions: https://www.gesetze-im-internet.de/gewstg/__9.html and BMF guidance https://ao.bundesfinanzministerium.de/gewsth/2024/A-Gewerbesteuergesetz/II-Bemessung-der-Gewerbesteuer/Paragraf-9/paragraf-9.html . Public UI must not simplify this into `all property companies pay no Gewerbesteuer`.
 6. **Capital-income and private-sale baselines differ by asset class.** Current §32d EStG generally applies a 25% separate rate to qualifying capital income: https://www.gesetze-im-internet.de/estg/__32d.html . Current §23 EStG taxes private real-estate sale gains within ten years (with owner-occupation exception) and other private assets generally within one year: https://www.gesetze-im-internet.de/estg/__23.html . Therefore stock/securities capital income, rented-real-estate private sales, crypto/gold private sales and business assets must not be merged into one generic `capital gains` tax object.
 
-### A. U01 - large-inheritance relief + higher personal/family-home allowance package
+### A. U01 — large-inheritance relief + higher personal/family-home allowance package
 
 #### `BE-BSW-P55-U01-A01-da8a10b6eef8`
 `Berlin Bundesratsinitiative: diese Begünstigungen beenden.`
@@ -33,7 +33,7 @@ Package: personal inheritance/gift allowance for first-degree relatives to €1m
 - Noncompensation: preserving a family home does not automatically justify unlimited tax relief on other wealth; revenue/progressivity gains from a lifetime restriction do not compensate discriminatory or administratively unworkable definitions.
 - Reality check: number/value of newly exempt transfers, tax revenue delta, incidence by wealth/kinship, home-retention outcomes, inter vivos transfer timing and administrative/legal disputes.
 
-### B. U02 - wealth-tax reactivation and explicit schedule
+### B. U02 — wealth-tax reactivation and explicit schedule
 
 #### `BE-BSW-P55-U02-A01-71248b7e908c`
 Wealth tax not collected since 1997 because governing parties did not agree on a fair rule.
@@ -63,7 +63,7 @@ Net-wealth tax: debts deductible; allowance €5m; 1%, >€100m 2%, >€1bn 3%.
 - Noncompensation: gross revenue is not net welfare; distributional progressivity cannot compensate unconstitutional unequal valuation or destructive liquidity effects. Conversely compliance cost alone does not establish that the tax has no redistributive/revenue effect.
 - Reality check: assessed base, effective rates, gross/net revenue, valuation disputes/admin cost, avoidance/migration/restructuring, investment/employment where material and wealth-distribution incidence.
 
-### C. U03/U04 - Share Deals
+### C. U03/U04 — Share Deals
 
 - `BE-BSW-P55-U03-3df906bc9542` heading `Steuerschlupflöcher schließen` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
@@ -77,13 +77,13 @@ Claim that housing corporations often avoid Grunderwerbsteuer while other buyers
 - `terminal_fach_state = NON_EFFECT_DISTRIBUTIONAL_AND_TAX_AVOIDANCE_DIAGNOSIS_SOURCE_CLAIM_REVIEWED_WITH_CURRENT_LAW_GUARD`
 - Guard: Share Deal routes and remaining policy gaps are real; current law already taxes several ≥90% ownership-change/concentration cases. Do not render `Share Deal = tax-free` as categorical fact.
 
-### D. U05 - property-company Gewerbesteuer rule + unspecified replacement support
+### D. U05 — property-company Gewerbesteuer rule + unspecified replacement support
 
 #### `BE-BSW-P55-U05-A01-15a1ef848011`
 No housing speculation; promote housing construction.
 - `terminal_fach_state = NON_EFFECT_HOUSING_AND_TAX_POLICY_GOAL_REVIEWED`.
 
-#### `BE-BSW-P55-U05-A02-d9f919eabd56` - mandatory deterministic two-child repair
+#### `BE-BSW-P55-U05-A02-d9f919eabd56` — mandatory deterministic two-child repair
 The frozen atom contains two distinct mechanisms and may not remain one effect object:
 
 **Child 1 exact semantic clause:** abolish the Gewerbesteuer relief for qualifying asset-managing real-estate companies via Berlin Bundesrat initiative.
@@ -102,7 +102,7 @@ The frozen atom contains two distinct mechanisms and may not remain one effect o
 
 Parent `BE-BSW-P55-U05-A02-d9f919eabd56` → versioned zero-count `SOURCE_UNIT_RECLASSIFIED_VERSIONED / COMPOUND_TAX_AND_SUBSIDY_PARENT`; generate stable deterministic child IDs from exact clauses using existing convention and preserve source/hash/parent lineage.
 
-### E. U06 - capital-income tax schedule / status-quo securities rules
+### E. U06 — capital-income tax schedule / status-quo securities rules
 
 #### `BE-BSW-P55-U06-A01-dd0e871e218f`
 Capital income disclosed in tax return and subjected to personal income-tax rate instead of privileged separate treatment.
@@ -122,7 +122,7 @@ Securities gains remain taxable regardless holding period; existing capital-loss
 - `terminal_fach_state = NON_EFFECT_STATUS_QUO_POLICY_GUARD_REVIEWED`
 - Reason: this atom primarily specifies what should **remain**, rather than a new Berlin policy delta. Preserve it as a design guard on A01; verify exact current asset/rule scope at implementation because §20/§32d loss rules are not identical to §23 private-sale rules.
 
-### F. U07 - private-sale gains: rented real estate, crypto/gold
+### F. U07 — private-sale gains: rented real estate, crypto/gold
 
 #### `BE-BSW-P55-U07-A01-e5d08f11946e`
 Tax gains from sale of rented/non-owner-occupied real estate like other income.
@@ -158,7 +158,7 @@ After deterministic U05-A02 compound repair:
 
 `BE_BSW_P55_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_U05_COMPOUND_REPAIR`
 
-After lossless materialisation, untouched physical BSW Fach envelope begins **P56-P66 = 11 pages** unless newer explicit #240 Fach closes a subset. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
+After lossless materialisation, untouched physical BSW Fach envelope begins **P56–P66 = 11 pages** unless newer explicit #240 Fach closes a subset. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 
 ### CodeX boundary
 

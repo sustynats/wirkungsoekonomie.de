@@ -1,4 +1,4 @@
-# ltw-2026-st-linke - commitment-register - vollständige Darstellung
+# ltw-2026-st-linke – commitment-register – vollständige Darstellung
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -531,9 +531,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0017-eine-bundesratsinitiative-zur-wiedereinfuehrung-der-vermoe
 
-**title:** Eine Bundesratsinitiative zur Wiedereinführung der Vermögenssteuer - Große Vermögen müssen endlich wieder …
+**title:** Eine Bundesratsinitiative zur Wiedereinführung der Vermögenssteuer – Große Vermögen müssen endlich wieder …
 
-**commitment_text:** Eine Bundesratsinitiative zur Wiedereinführung der Vermögenssteuer - Große Vermögen müssen endlich wieder ihren gerechten Beitrag zur Finanzierung öffentlicher Aufgaben leisten. Eine Vermögenssteuer von 1 Prozent auf Vermögen über einer Million Euro würde Sachsen-Anhalt jedes Jahr bis zu 2,0 Milliarden Euro bringen - Geld, das unseren Städten, Gemeinden und der sozialen Infrastruktur zugutekommt.
+**commitment_text:** Eine Bundesratsinitiative zur Wiedereinführung der Vermögenssteuer – Große Vermögen müssen endlich wieder ihren gerechten Beitrag zur Finanzierung öffentlicher Aufgaben leisten. Eine Vermögenssteuer von 1 Prozent auf Vermögen über einer Million Euro würde Sachsen-Anhalt jedes Jahr bis zu 2,0 Milliarden Euro bringen – Geld, das unseren Städten, Gemeinden und der sozialen Infrastruktur zugutekommt.
 
 ##### source_location
 
@@ -565,7 +565,7 @@ _Leere Liste._
 
 **title:** Die Reform der Erbschafts- und Schenkungssteuer - Heute wächst der Reichtum in …
 
-**commitment_text:** Die Reform der Erbschafts- und Schenkungssteuer - Heute wächst der Reichtum in wenigen Händen, während viele Menschen kaum noch Vermögen aufbauen können. Wir setzen uns ein für gerechte Beiträge, damit Vermögenskonzentration abnimmt und Chancen wachsen - für ein Land, in dem Leistung zählt, nicht Erbe.
+**commitment_text:** Die Reform der Erbschafts- und Schenkungssteuer - Heute wächst der Reichtum in wenigen Händen, während viele Menschen kaum noch Vermögen aufbauen können. Wir setzen uns ein für gerechte Beiträge, damit Vermögenskonzentration abnimmt und Chancen wachsen – für ein Land, in dem Leistung zählt, nicht Erbe.
 
 ##### source_location
 
@@ -597,7 +597,7 @@ _Leere Liste._
 
 **title:** Die Weiterentwicklung der Gewerbesteuer zur Gemeindewirtschaftssteuer - Die heutige Gewerbesteuer erfasst nur …
 
-**commitment_text:** Die Weiterentwicklung der Gewerbesteuer zur Gemeindewirtschaftssteuer - Die heutige Gewerbesteuer erfasst nur einen Teil der selbstständigen wirtschaftlichen Tätigkeiten - viele Solo-Selbstständige und kleine Dienstleistungsunternehmen bleiben unberücksichtigt. Das führt zu ungerechten Belastungen zwischen unterschiedlichen Erwerbsformen und schwächt die Finanzkraft der Kommunen. Mit der Gemeindewirtschaftssteuer wollen wir diese Lücke schließen und das System fairer machen: Alle selbstständig erwirtschafteten Einkommen werden einbezogen - mit einem einheitlichen Freibetrag von 24.500 Euro, damit kleine Existenzen geschützt und Bürokratie minimiert wird. Durch gezielte Umverteilung schaffen wir Gerechtigkeit für die Region und Bevölkerung. Unser Ziel ist ein neues finanzielles Gleichgewicht zwischen Arm und Reich, zwischen Stadt und Land, zwischen Ost und West. Demokratische Investitionen für Sachsen-Anhalt Sachsen-Anhalt braucht eine Investitionsbank, die mehr ist als ein Verwalter von Fördermitteln und Fonds. Wir kämpfen für eine solche Bank, die Menschen, Regionen und Unternehmen zusammenbringt, die Kapital demokratisch steuert und es in nachhaltige Zukunftsinvestitionen und Innovation lenkt. Wir wollen:
+**commitment_text:** Die Weiterentwicklung der Gewerbesteuer zur Gemeindewirtschaftssteuer - Die heutige Gewerbesteuer erfasst nur einen Teil der selbstständigen wirtschaftlichen Tätigkeiten – viele Solo-Selbstständige und kleine Dienstleistungsunternehmen bleiben unberücksichtigt. Das führt zu ungerechten Belastungen zwischen unterschiedlichen Erwerbsformen und schwächt die Finanzkraft der Kommunen. Mit der Gemeindewirtschaftssteuer wollen wir diese Lücke schließen und das System fairer machen: Alle selbstständig erwirtschafteten Einkommen werden einbezogen – mit einem einheitlichen Freibetrag von 24.500 Euro, damit kleine Existenzen geschützt und Bürokratie minimiert wird. Durch gezielte Umverteilung schaffen wir Gerechtigkeit für die Region und Bevölkerung. Unser Ziel ist ein neues finanzielles Gleichgewicht zwischen Arm und Reich, zwischen Stadt und Land, zwischen Ost und West. Demokratische Investitionen für Sachsen-Anhalt Sachsen-Anhalt braucht eine Investitionsbank, die mehr ist als ein Verwalter von Fördermitteln und Fonds. Wir kämpfen für eine solche Bank, die Menschen, Regionen und Unternehmen zusammenbringt, die Kapital demokratisch steuert und es in nachhaltige Zukunftsinvestitionen und Innovation lenkt. Wir wollen:
 
 ##### source_location
 
@@ -888,7 +888,7 @@ _Leere Liste._
 
 **title:** in nachhaltiges Bauen und mehr Stadtgrün investieren
 
-**commitment_text:** in nachhaltiges Bauen und mehr Stadtgrün investieren. Mit der Linken als Pol der Hoffnung wird Sachsen-Anhalt zu einem Land, in dem Chancen, Gerechtigkeit und nachhaltige Lebensqualität für alle Wirklichkeit werden. Wir glauben an die Stärke unserer Regionen, unserer Menschen und unserer Solidarität - und wir handeln, damit Hoffnung greifbar wird. Eine kurzfristige höhere Verschuldung wird durch unsere steuerpolitischen Änderungen und die Förderung der Binnenwirtschaft langfristig kompensiert. Kürzungen in den Bereichen Soziales und Umwelt wird es mit uns nicht geben, ebenso wenig den Abbau öffentlicher Infrastruktur oder Personalabbau im öffentlichen Dienst. Grundlage unserer Finanzpolitik ist die bedingungslose Ablehnung der Privatisierung öffentlichen Eigentums. Wir setzen uns aktiv für die Rekommunalisierung strategischer Infrastruktur ein. Wir investieren in das, was wirklich zählt: Menschen, Chancen und Zusammenhalt. So schaffen wir ein SachsenAnhalt, das niemanden zurücklässt - solidarisch, gerecht und stark.
+**commitment_text:** in nachhaltiges Bauen und mehr Stadtgrün investieren. Mit der Linken als Pol der Hoffnung wird Sachsen-Anhalt zu einem Land, in dem Chancen, Gerechtigkeit und nachhaltige Lebensqualität für alle Wirklichkeit werden. Wir glauben an die Stärke unserer Regionen, unserer Menschen und unserer Solidarität – und wir handeln, damit Hoffnung greifbar wird. Eine kurzfristige höhere Verschuldung wird durch unsere steuerpolitischen Änderungen und die Förderung der Binnenwirtschaft langfristig kompensiert. Kürzungen in den Bereichen Soziales und Umwelt wird es mit uns nicht geben, ebenso wenig den Abbau öffentlicher Infrastruktur oder Personalabbau im öffentlichen Dienst. Grundlage unserer Finanzpolitik ist die bedingungslose Ablehnung der Privatisierung öffentlichen Eigentums. Wir setzen uns aktiv für die Rekommunalisierung strategischer Infrastruktur ein. Wir investieren in das, was wirklich zählt: Menschen, Chancen und Zusammenhalt. So schaffen wir ein SachsenAnhalt, das niemanden zurücklässt – solidarisch, gerecht und stark.
 
 ##### source_location
 
@@ -1273,9 +1273,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0040-dass-wir-weiterhin-auf-eine-diverse-forschungslandschaft-s
 
-**title:** dass wir weiterhin auf eine diverse Forschungslandschaft setzen können - dazu gehört …
+**title:** dass wir weiterhin auf eine diverse Forschungslandschaft setzen können – dazu gehört …
 
-**commitment_text:** dass wir weiterhin auf eine diverse Forschungslandschaft setzen können - dazu gehört auch, die geschlechtliche Vielfalt in der Wissenschaft zu fördern,
+**commitment_text:** dass wir weiterhin auf eine diverse Forschungslandschaft setzen können – dazu gehört auch, die geschlechtliche Vielfalt in der Wissenschaft zu fördern,
 
 ##### source_location
 
@@ -1340,7 +1340,7 @@ _Leere Liste._
 
 **title:** auch Frauen in Handwerksberufen und in der Ausbildung fördern, wo der Bedarf …
 
-**commitment_text:** auch Frauen in Handwerksberufen und in der Ausbildung fördern, wo der Bedarf besteht, denn Wissenschaft meint für uns nicht nur die reine Forschung, sondern auch die Umsetzung. Die Gewalt im eigenen Heim, in der Beziehung oder nach einer Trennung nimmt in Deutschland wieder zu. Frauen werden häufig aufgrund niederer Beweggründe Opfer einer Straftat. In den vergangenen Jahren ist der Begriff „Femizid“ Ausdruck der Handlung geworden, Frauen aufgrund ihres Frauseins zu töten. Dieser Begriff drückt aus, worin sich die extremste Form von Frauenfeindlichkeit zeigt - in der Tötung von Frauen aufgrund ihres Geschlechts. Diesen und weiteren Formen von Frauenfeindlichkeit setzt Die Linke entschieden politisches Handeln entgegen. Wir wollen:
+**commitment_text:** auch Frauen in Handwerksberufen und in der Ausbildung fördern, wo der Bedarf besteht, denn Wissenschaft meint für uns nicht nur die reine Forschung, sondern auch die Umsetzung. Die Gewalt im eigenen Heim, in der Beziehung oder nach einer Trennung nimmt in Deutschland wieder zu. Frauen werden häufig aufgrund niederer Beweggründe Opfer einer Straftat. In den vergangenen Jahren ist der Begriff „Femizid“ Ausdruck der Handlung geworden, Frauen aufgrund ihres Frauseins zu töten. Dieser Begriff drückt aus, worin sich die extremste Form von Frauenfeindlichkeit zeigt – in der Tötung von Frauen aufgrund ihres Geschlechts. Diesen und weiteren Formen von Frauenfeindlichkeit setzt Die Linke entschieden politisches Handeln entgegen. Wir wollen:
 
 ##### source_location
 
@@ -1565,7 +1565,7 @@ _Leere Liste._
 
 **title:** zur Kontrolle der Umsetzung der Istanbul-Konvention die Einrichtung einer staatlichen unabhängigen Monitoringstelle …
 
-**commitment_text:** zur Kontrolle der Umsetzung der Istanbul-Konvention die Einrichtung einer staatlichen unabhängigen Monitoringstelle vorschlagen sowie eines Runden Tisches, an dem alle relevanten NGOs vertreten sind. Die Gleichstellung von Frauen, Männern und Menschen ohne bzw. mit dem Eintrag divers zählt zu unseren Kernanliegen. Dass Frauen und Männer in bestimmten Bereichen tendenziell bevorzugt oder benachteiligt werden, ist eine der sichtbarsten Konfliktlinien in unserer Gesellschaft. Für Die Linke heißt das: Gleichstellung ist Querschnittsthema! Bei all unseren Anliegen werden wir Frauen nicht nur mitdenken, sondern unsere Politik gezielt auf sie abstimmen. Neben der Sichtweise und den Bedürfnissen von Männern werden Frauen immer ein gleichberechtigter Teil unserer Politik sein. Erwerbsarbeit, Familienarbeit und gesellschaftliches politisches Engagement sind gleichermaßen wichtige Bereiche gesellschaftlicher Arbeit. Insbesondere die - unbezahlte - Familienarbeit liegt zum übergroßen Teil immer noch bei den Frauen. Besonders im Bereich Gesundheit und Pflege wird Arbeit oft freiwillig und unbezahlt geleistet. Auch wenn wir auf dieses Engagement nicht verzichten wollen und können, gilt es doch zu verhindern, dass über diesen Weg bezahlte Arbeit verdrängt oder ersetzt wird. Wir wollen:
+**commitment_text:** zur Kontrolle der Umsetzung der Istanbul-Konvention die Einrichtung einer staatlichen unabhängigen Monitoringstelle vorschlagen sowie eines Runden Tisches, an dem alle relevanten NGOs vertreten sind. Die Gleichstellung von Frauen, Männern und Menschen ohne bzw. mit dem Eintrag divers zählt zu unseren Kernanliegen. Dass Frauen und Männer in bestimmten Bereichen tendenziell bevorzugt oder benachteiligt werden, ist eine der sichtbarsten Konfliktlinien in unserer Gesellschaft. Für Die Linke heißt das: Gleichstellung ist Querschnittsthema! Bei all unseren Anliegen werden wir Frauen nicht nur mitdenken, sondern unsere Politik gezielt auf sie abstimmen. Neben der Sichtweise und den Bedürfnissen von Männern werden Frauen immer ein gleichberechtigter Teil unserer Politik sein. Erwerbsarbeit, Familienarbeit und gesellschaftliches politisches Engagement sind gleichermaßen wichtige Bereiche gesellschaftlicher Arbeit. Insbesondere die – unbezahlte – Familienarbeit liegt zum übergroßen Teil immer noch bei den Frauen. Besonders im Bereich Gesundheit und Pflege wird Arbeit oft freiwillig und unbezahlt geleistet. Auch wenn wir auf dieses Engagement nicht verzichten wollen und können, gilt es doch zu verhindern, dass über diesen Weg bezahlte Arbeit verdrängt oder ersetzt wird. Wir wollen:
 
 ##### source_location
 
@@ -1788,9 +1788,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0056-einen-rechtsanspruch-auf-hilfe-fuer-gewaltopfer-der-allen
 
-**title:** einen Rechtsanspruch auf Hilfe für Gewaltopfer, der allen zur Verfügung steht - …
+**title:** einen Rechtsanspruch auf Hilfe für Gewaltopfer, der allen zur Verfügung steht – …
 
-**commitment_text:** einen Rechtsanspruch auf Hilfe für Gewaltopfer, der allen zur Verfügung steht - ganz unabhängig von Geschlecht, geografischer oder sozialer Herkunft, Gesundheitszustand oder Aufenthaltstitel,
+**commitment_text:** einen Rechtsanspruch auf Hilfe für Gewaltopfer, der allen zur Verfügung steht – ganz unabhängig von Geschlecht, geografischer oder sozialer Herkunft, Gesundheitszustand oder Aufenthaltstitel,
 
 ##### source_location
 
@@ -2559,7 +2559,7 @@ _Leere Liste._
 
 **title:** die beteiligten Fachkräfte kontinuierlich fortbilden, um die Zusammenarbeit und Kommunikation zu unterstützen
 
-**commitment_text:** die beteiligten Fachkräfte kontinuierlich fortbilden, um die Zusammenarbeit und Kommunikation zu unterstützen. Sozialarbeit in Kitas und Schulen dauerhaft verankern und stärken In unseren Bildungseinrichtungen haben sich Kita- und Schulsozialarbeit als unverzichtbar etabliert. Sozialarbeiter:innen begleiten und unterstützen die Lernund Entwicklungsprozesse in der Schule und sind ein wichtiges Bindeglied zwischen Schule, Familie und Jugendhilfe. Mit ihrer Hilfe können problematische Entwicklungen erkannt und angegangen werden. Zudem leisten sie einen unverzichtbaren Beitrag für den Übergang zwischen den einzelnen Bildungsphasen - von der Krippe bis zur Berufsausbildung.
+**commitment_text:** die beteiligten Fachkräfte kontinuierlich fortbilden, um die Zusammenarbeit und Kommunikation zu unterstützen. Sozialarbeit in Kitas und Schulen dauerhaft verankern und stärken In unseren Bildungseinrichtungen haben sich Kita- und Schulsozialarbeit als unverzichtbar etabliert. Sozialarbeiter:innen begleiten und unterstützen die Lernund Entwicklungsprozesse in der Schule und sind ein wichtiges Bindeglied zwischen Schule, Familie und Jugendhilfe. Mit ihrer Hilfe können problematische Entwicklungen erkannt und angegangen werden. Zudem leisten sie einen unverzichtbaren Beitrag für den Übergang zwischen den einzelnen Bildungsphasen – von der Krippe bis zur Berufsausbildung.
 
 ##### source_location
 
@@ -2688,7 +2688,7 @@ _Leere Liste._
 
 **title:** ein leistungsfähiges Internet wie auch digitale Geräte allen Kindern und Jugendlichen in …
 
-**commitment_text:** ein leistungsfähiges Internet wie auch digitale Geräte allen Kindern und Jugendlichen in ihren Bildungsorten - in Kita wie auch in Schule - für die eigenständige Nutzung zugänglich machen,
+**commitment_text:** ein leistungsfähiges Internet wie auch digitale Geräte allen Kindern und Jugendlichen in ihren Bildungsorten – in Kita wie auch in Schule – für die eigenständige Nutzung zugänglich machen,
 
 ##### source_location
 
@@ -2784,7 +2784,7 @@ _Leere Liste._
 
 **title:** Künstliche Intelligenz beim Lehren und Lernen so einsetzen, dass ihre Potenziale vor …
 
-**commitment_text:** Künstliche Intelligenz beim Lehren und Lernen so einsetzen, dass ihre Potenziale vor allem lernförderlich und nicht nur als schnelle Hilfen genutzt werden; künstliche Intelligenz darf nicht eigenes kritisches Denken und digitale Mündigkeit ersetzen. Bildung für alle - von Anfang an: Kitas stärken Frühkindliche Bildung legt die Grundlagen für spätere Bildungswege, Gesundheit und soziale Teilhabe. Kitas sind Bildungsorte, in denen Kinder in der Gemeinschaft spielen, lernen, sich ausprobieren, Fehler machen und Vertrauen in sich selbst entwickeln. Sie sind zugleich Orte der Familienunterstützung und der frühen Hilfen, gerade in sozialen Krisensituationen. Jedes Kind in SachsenAnhalt muss von Klein auf die bestmögliche Förderung und vor allem bestmögliche Bildung erfahren. Dafür wollen wir durchsetzen, dass:
+**commitment_text:** Künstliche Intelligenz beim Lehren und Lernen so einsetzen, dass ihre Potenziale vor allem lernförderlich und nicht nur als schnelle Hilfen genutzt werden; künstliche Intelligenz darf nicht eigenes kritisches Denken und digitale Mündigkeit ersetzen. Bildung für alle – von Anfang an: Kitas stärken Frühkindliche Bildung legt die Grundlagen für spätere Bildungswege, Gesundheit und soziale Teilhabe. Kitas sind Bildungsorte, in denen Kinder in der Gemeinschaft spielen, lernen, sich ausprobieren, Fehler machen und Vertrauen in sich selbst entwickeln. Sie sind zugleich Orte der Familienunterstützung und der frühen Hilfen, gerade in sozialen Krisensituationen. Jedes Kind in SachsenAnhalt muss von Klein auf die bestmögliche Förderung und vor allem bestmögliche Bildung erfahren. Dafür wollen wir durchsetzen, dass:
 
 ##### source_location
 
@@ -3007,9 +3007,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0094-dem-programm-bildung-elementar-bildung-von-anfang-an-ein-g
 
-**title:** dem Programm Bildung elementar - Bildung von Anfang an ein größerer Stellenwert …
+**title:** dem Programm Bildung elementar – Bildung von Anfang an ein größerer Stellenwert …
 
-**commitment_text:** dem Programm Bildung elementar - Bildung von Anfang an ein größerer Stellenwert in der Aus-, Fort- und Weiterbildung der pädagogischen Fachkräfte eingeräumt wird,
+**commitment_text:** dem Programm Bildung elementar – Bildung von Anfang an ein größerer Stellenwert in der Aus-, Fort- und Weiterbildung der pädagogischen Fachkräfte eingeräumt wird,
 
 ##### source_location
 
@@ -3330,7 +3330,7 @@ _Leere Liste._
 
 **title:** Labore und IT-Infrastruktur auf dem Stand der Technik zu halten
 
-**commitment_text:** Labore und IT-Infrastruktur auf dem Stand der Technik zu halten. Technische Hilfsmittel, die für die Ausbildung unverzichtbar sind - etwa Laptops oder Tablets, branchenspezifische Software, digitale Lernplattformen - sollen den Auszubildenden kostenlos zur Verfügung gestellt werden. So können u.a. in Phasen digitalen Lernens auch unnötig lange Fahrtwege in die Berufsbildenden Schulen (vor allem im ländlichen Raum) verringert werden. Den Auszubildenden müssen geeignete Selbstlernmaterialien zur Verfügung gestellt werden, damit sie Ausbildungsdefizite infolge von Unterrichtsausfall durch Selbstlernphasen kontinuierlich ausgleichen und so ihre individuelle Prüfungsvorbereitung sichern können. Außerdem brauchen Auszubildende insgesamt mehr Zeit, um sich auf Prüfungen vorzubereiten. Wir setzen uns dafür ein, dass alle Auszubildenden für mehrere Tage vor ihren Abschlussprüfungen freigestellt werden, ohne dass ihnen dadurch Nachteile entstehen. Auszubildende, deren Ausbildung gefährdet ist, müssen intensiver begleitet und beraten werden, um den zu hohen Anteil an Ausbildungsabbrüchen zu reduzieren. Jugendliche ohne Schulabschluss, junge Menschen mit Fluchterfahrung oder mit Behinderungen erfordern besondere Begleitung in der beruflichen Ausbildung. Für sie sollen Brückenangebote, Einstiegsqualifizierungen und assistierte Ausbildung ausgebaut werden. Rechte am Ausbildungsplatz müssen bekannt sein: Gewerkschaften sollen an Berufsschulen regelmäßig über Arbeitnehmer:innenrechte, Mitbestimmung, Schutzrechte und Tarifverträge informieren können. Schule als ganztätigen Lern- und Lebensortgestalten Horte ins Schulgesetz Für die ganztägige Bildung und Erziehung im Primarbereich sollen die Horte wieder im Schulgesetz verankert werden, wobei die bisherige Trägervielfalt erhalten bleiben soll. Außerdem wollen wir die personellen und finanziellen Voraussetzungen schaffen, um Ganztagsangebote an allen weiterführenden allgemeinbildenden Schulen bedarfsgerecht auszubauen und so u.a. auch eine systematische Förderung besonders begabter Schüler:innen ermöglichen. Bildungsräume sichern und gestalten In Sachsen-Anhalt ist inzwischen mehr als die Hälfte aller öffentlichen Schulen geschlossen worden. Gleichzeitig füllen immer mehr Privatschulen Lücken im staatlichen Schulnetz. Die Linke wird deshalb die Mindestjahrgangsstärken für die Bildung von Anfangsklassen an öffentlichen Schulen aufheben und durch globale Personalzuweisungen ersetzen, damit Schulstandorte nicht mehr durch schwankende Schüler:innenzahlen zur Disposition gestellt werden und Schul
+**commitment_text:** Labore und IT-Infrastruktur auf dem Stand der Technik zu halten. Technische Hilfsmittel, die für die Ausbildung unverzichtbar sind – etwa Laptops oder Tablets, branchenspezifische Software, digitale Lernplattformen – sollen den Auszubildenden kostenlos zur Verfügung gestellt werden. So können u.a. in Phasen digitalen Lernens auch unnötig lange Fahrtwege in die Berufsbildenden Schulen (vor allem im ländlichen Raum) verringert werden. Den Auszubildenden müssen geeignete Selbstlernmaterialien zur Verfügung gestellt werden, damit sie Ausbildungsdefizite infolge von Unterrichtsausfall durch Selbstlernphasen kontinuierlich ausgleichen und so ihre individuelle Prüfungsvorbereitung sichern können. Außerdem brauchen Auszubildende insgesamt mehr Zeit, um sich auf Prüfungen vorzubereiten. Wir setzen uns dafür ein, dass alle Auszubildenden für mehrere Tage vor ihren Abschlussprüfungen freigestellt werden, ohne dass ihnen dadurch Nachteile entstehen. Auszubildende, deren Ausbildung gefährdet ist, müssen intensiver begleitet und beraten werden, um den zu hohen Anteil an Ausbildungsabbrüchen zu reduzieren. Jugendliche ohne Schulabschluss, junge Menschen mit Fluchterfahrung oder mit Behinderungen erfordern besondere Begleitung in der beruflichen Ausbildung. Für sie sollen Brückenangebote, Einstiegsqualifizierungen und assistierte Ausbildung ausgebaut werden. Rechte am Ausbildungsplatz müssen bekannt sein: Gewerkschaften sollen an Berufsschulen regelmäßig über Arbeitnehmer:innenrechte, Mitbestimmung, Schutzrechte und Tarifverträge informieren können. Schule als ganztätigen Lern- und Lebensortgestalten Horte ins Schulgesetz Für die ganztägige Bildung und Erziehung im Primarbereich sollen die Horte wieder im Schulgesetz verankert werden, wobei die bisherige Trägervielfalt erhalten bleiben soll. Außerdem wollen wir die personellen und finanziellen Voraussetzungen schaffen, um Ganztagsangebote an allen weiterführenden allgemeinbildenden Schulen bedarfsgerecht auszubauen und so u.a. auch eine systematische Förderung besonders begabter Schüler:innen ermöglichen. Bildungsräume sichern und gestalten In Sachsen-Anhalt ist inzwischen mehr als die Hälfte aller öffentlichen Schulen geschlossen worden. Gleichzeitig füllen immer mehr Privatschulen Lücken im staatlichen Schulnetz. Die Linke wird deshalb die Mindestjahrgangsstärken für die Bildung von Anfangsklassen an öffentlichen Schulen aufheben und durch globale Personalzuweisungen ersetzen, damit Schulstandorte nicht mehr durch schwankende Schüler:innenzahlen zur Disposition gestellt werden und Schul
 
 ##### source_location
 
@@ -3680,9 +3680,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0115-kuerzungen-im-hochschulhaushalt-verhindern-auch-bei-sinken
 
-**title:** Kürzungen im Hochschulhaushalt verhindern - auch bei sinkenden Studierendenzahlen,
+**title:** Kürzungen im Hochschulhaushalt verhindern – auch bei sinkenden Studierendenzahlen,
 
-**commitment_text:** Kürzungen im Hochschulhaushalt verhindern - auch bei sinkenden Studierendenzahlen,
+**commitment_text:** Kürzungen im Hochschulhaushalt verhindern – auch bei sinkenden Studierendenzahlen,
 
 ##### source_location
 
@@ -4227,7 +4227,7 @@ _Leere Liste._
 
 **title:** einen landesweiten Fonds gründen, der die Entlohnung von Pflicht-praktika sowie die Unterstützung …
 
-**commitment_text:** einen landesweiten Fonds gründen, der die Entlohnung von Pflicht-praktika sowie die Unterstützung von Studierenden im Kontext eigenständiger akademischer Weiterbildung wie z.B. Summerschools, Tagungen, Auslandspraktika, Reisekosten etc. ermöglicht. Bezahlbarkeit öffnet Wege: Wohnen bleibt leistbar, Mensapreise sind stabil, Lernmittel kostenfrei, Verfahren kurz und verständlich, Mobilität ist bezahlbar. So wird aus Durchhalten gut studieren. Ein guter Anfang entscheidet. Frühzeitige leichte Orientierung, einfache Zugänge und Unterstützungsangebote helfen allen - besonders aber Erstakademiker:innen. Nach dem Prinzip „eine Tür - viele Hilfen“ werden Krisen abgefangen, Fachwechsel erleichtert und Barrieren abgebaut. Längere Regelstudienzeiten geben Luft. Wir wollen:
+**commitment_text:** einen landesweiten Fonds gründen, der die Entlohnung von Pflicht-praktika sowie die Unterstützung von Studierenden im Kontext eigenständiger akademischer Weiterbildung wie z.B. Summerschools, Tagungen, Auslandspraktika, Reisekosten etc. ermöglicht. Bezahlbarkeit öffnet Wege: Wohnen bleibt leistbar, Mensapreise sind stabil, Lernmittel kostenfrei, Verfahren kurz und verständlich, Mobilität ist bezahlbar. So wird aus Durchhalten gut studieren. Ein guter Anfang entscheidet. Frühzeitige leichte Orientierung, einfache Zugänge und Unterstützungsangebote helfen allen – besonders aber Erstakademiker:innen. Nach dem Prinzip „eine Tür – viele Hilfen“ werden Krisen abgefangen, Fachwechsel erleichtert und Barrieren abgebaut. Längere Regelstudienzeiten geben Luft. Wir wollen:
 
 ##### source_location
 
@@ -4258,9 +4258,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0133-unterstuetzungsangebote-ausbauen-krise-fachwechsel-studien
 
-**title:** Unterstützungsangebote ausbauen (Krise, Fachwechsel, Studienverlauf) - „eine Tür - viele Hilfen“,
+**title:** Unterstützungsangebote ausbauen (Krise, Fachwechsel, Studienverlauf) – „eine Tür – viele Hilfen“,
 
-**commitment_text:** Unterstützungsangebote ausbauen (Krise, Fachwechsel, Studienverlauf) - „eine Tür - viele Hilfen“,
+**commitment_text:** Unterstützungsangebote ausbauen (Krise, Fachwechsel, Studienverlauf) – „eine Tür – viele Hilfen“,
 
 ##### source_location
 
@@ -4388,7 +4388,7 @@ _Leere Liste._
 
 **title:** Barrierefreiheit ausbauen, Teilzeit ermöglichen
 
-**commitment_text:** Barrierefreiheit ausbauen, Teilzeit ermöglichen. Qualifikation erleichtern, ohne Qualität einzubüßen. Mit profilierter Unterstützung, weniger Bürokratie, echter Barrierefreiheit und schaffbaren Regelstudienzeiten. So kommen mehr Studierende sicher an - und gut voran. Das zentrale Anliegen unserer Bildungspolitik ist die Sicherung eines umfassenden Bildungsangebots und die Herstellung von Bildungsgerechtigkeit, damit alle Kinder und Jugendlichen, unabhängig von Geschlecht, familiärem Hintergrund oder sozialökonomischem Status, die gleichen Bildungschancen und
+**commitment_text:** Barrierefreiheit ausbauen, Teilzeit ermöglichen. Qualifikation erleichtern, ohne Qualität einzubüßen. Mit profilierter Unterstützung, weniger Bürokratie, echter Barrierefreiheit und schaffbaren Regelstudienzeiten. So kommen mehr Studierende sicher an – und gut voran. Das zentrale Anliegen unserer Bildungspolitik ist die Sicherung eines umfassenden Bildungsangebots und die Herstellung von Bildungsgerechtigkeit, damit alle Kinder und Jugendlichen, unabhängig von Geschlecht, familiärem Hintergrund oder sozialökonomischem Status, die gleichen Bildungschancen und
 
 ##### source_location
 
@@ -4418,9 +4418,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0138-willkommensketten-schaffen-begleitung-vom-ersten-semester
 
-**title:** Willkommensketten schaffen - Begleitung vom ersten Semester bis zum ersten Job in …
+**title:** Willkommensketten schaffen – Begleitung vom ersten Semester bis zum ersten Job in …
 
-**commitment_text:** Willkommensketten schaffen - Begleitung vom ersten Semester bis zum ersten Job in Sachsen-Anhalt,
+**commitment_text:** Willkommensketten schaffen – Begleitung vom ersten Semester bis zum ersten Job in Sachsen-Anhalt,
 
 ##### source_location
 
@@ -4450,9 +4450,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0139-internationale-studierende-unterstuetzen-sprache-anerkennu
 
-**title:** internationale Studierende unterstützen (Sprache, Anerkennung, Aufenthalt) - von Studienkolleg bis zum Berufseinstieg …
+**title:** internationale Studierende unterstützen (Sprache, Anerkennung, Aufenthalt) – von Studienkolleg bis zum Berufseinstieg …
 
-**commitment_text:** internationale Studierende unterstützen (Sprache, Anerkennung, Aufenthalt) - von Studienkolleg bis zum Berufseinstieg vor Ort,
+**commitment_text:** internationale Studierende unterstützen (Sprache, Anerkennung, Aufenthalt) – von Studienkolleg bis zum Berufseinstieg vor Ort,
 
 ##### source_location
 
@@ -4482,9 +4482,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0140-vernetzung-von-landkreisen-staedten-hochschulen-arbeitgebe
 
-**title:** Vernetzung von Landkreisen/Städten/Hochschulen/Arbeitgebern stärken - schnelle Wege in gute Beschäftigung,
+**title:** Vernetzung von Landkreisen/Städten/Hochschulen/Arbeitgebern stärken – schnelle Wege in gute Beschäftigung,
 
-**commitment_text:** Vernetzung von Landkreisen/Städten/Hochschulen/Arbeitgebern stärken - schnelle Wege in gute Beschäftigung,
+**commitment_text:** Vernetzung von Landkreisen/Städten/Hochschulen/Arbeitgebern stärken – schnelle Wege in gute Beschäftigung,
 
 ##### source_location
 
@@ -4548,7 +4548,7 @@ _Leere Liste._
 
 **title:** einen soziologischen Hochschulbildungsbericht beauftragen (Herkunft, Studienerfolg, Verbleib)
 
-**commitment_text:** einen soziologischen Hochschulbildungsbericht beauftragen (Herkunft, Studienerfolg, Verbleib). Willkommen lädt zum Bleiben ein: Sprache, Anerkennung und Jobwege greifen, Land und Hochschulen werben gemeinsam, eine Berichterstattung zeigt Herkunft, Verläufe und Verbleib. So werden aus Ankommenden Fachkräfte vor Ort. #IchbinHanna ernst nehmen - Gute Arbeit in der Wissenschaft Gute Arbeitsbedingungen sind eine Grundvoraussetzung für die Stärkung von Forschung und Lehre. Wir möchten das „hire and fire“-Prinzip durchbrechen und die Abhängigkeiten reduzieren. Hierzu sollen Befristungen zurückgefahren, Beschäftigungssicherheit garantiert und geleistete Arbeit im vollen Umfang entlohnt werden. Wir wollen:
+**commitment_text:** einen soziologischen Hochschulbildungsbericht beauftragen (Herkunft, Studienerfolg, Verbleib). Willkommen lädt zum Bleiben ein: Sprache, Anerkennung und Jobwege greifen, Land und Hochschulen werben gemeinsam, eine Berichterstattung zeigt Herkunft, Verläufe und Verbleib. So werden aus Ankommenden Fachkräfte vor Ort. #IchbinHanna ernst nehmen – Gute Arbeit in der Wissenschaft Gute Arbeitsbedingungen sind eine Grundvoraussetzung für die Stärkung von Forschung und Lehre. Wir möchten das „hire and fire“-Prinzip durchbrechen und die Abhängigkeiten reduzieren. Hierzu sollen Befristungen zurückgefahren, Beschäftigungssicherheit garantiert und geleistete Arbeit im vollen Umfang entlohnt werden. Wir wollen:
 
 ##### source_location
 
@@ -4578,9 +4578,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0143-daueraufgaben-mit-dauerstellen-unterlegen-in-lehre-forschu
 
-**title:** Daueraufgaben mit Dauerstellen unterlegen - in Lehre, Forschung und Verwaltung,
+**title:** Daueraufgaben mit Dauerstellen unterlegen – in Lehre, Forschung und Verwaltung,
 
-**commitment_text:** Daueraufgaben mit Dauerstellen unterlegen - in Lehre, Forschung und Verwaltung,
+**commitment_text:** Daueraufgaben mit Dauerstellen unterlegen – in Lehre, Forschung und Verwaltung,
 
 ##### source_location
 
@@ -4610,9 +4610,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0144-druck-machen-auf-die-bildungspolitik-im-bund-es-braucht-mi
 
-**title:** Druck machen auf die Bildungspolitik im Bund - es braucht mindestens eine …
+**title:** Druck machen auf die Bildungspolitik im Bund – es braucht mindestens eine …
 
-**commitment_text:** Druck machen auf die Bildungspolitik im Bund - es braucht mindestens eine Novellierung des WissZeitVG, um gute Arbeit in der Wissenschaft zu erreichen,
+**commitment_text:** Druck machen auf die Bildungspolitik im Bund – es braucht mindestens eine Novellierung des WissZeitVG, um gute Arbeit in der Wissenschaft zu erreichen,
 
 ##### source_location
 
@@ -4709,7 +4709,7 @@ _Leere Liste._
 
 **title:** vom Lehrstuhlprinzip abrücken, Fachbereichsstrukturen ausbauen
 
-**commitment_text:** vom Lehrstuhlprinzip abrücken, Fachbereichsstrukturen ausbauen. Planbarkeit schafft Qualität: Daueraufgaben werden zu Dauerstellen, Verträge passen zur Projektlaufzeit, Arbeit in der Wissenschaft wird fair und planbar. Der Generationswechsel ist Chance und Aufgabe: etablierte Karrierewege an Hochschulen für junge Wissenschaftler:innen, schnelle Berufungen, Willkommenskette und Familienfreundlichkeit ziehen Menschen an - und halten sie. Wir wollen den Praxisexpert:innen den Einstieg in die Hochschulen für angewandte Wissenschaften vereinfachen. In der Hochschulmedizin zählt das Zusammenspiel von Forschung, Lehre und Klinik. Wir werden:
+**commitment_text:** vom Lehrstuhlprinzip abrücken, Fachbereichsstrukturen ausbauen. Planbarkeit schafft Qualität: Daueraufgaben werden zu Dauerstellen, Verträge passen zur Projektlaufzeit, Arbeit in der Wissenschaft wird fair und planbar. Der Generationswechsel ist Chance und Aufgabe: etablierte Karrierewege an Hochschulen für junge Wissenschaftler:innen, schnelle Berufungen, Willkommenskette und Familienfreundlichkeit ziehen Menschen an – und halten sie. Wir wollen den Praxisexpert:innen den Einstieg in die Hochschulen für angewandte Wissenschaften vereinfachen. In der Hochschulmedizin zählt das Zusammenspiel von Forschung, Lehre und Klinik. Wir werden:
 
 ##### source_location
 
@@ -4872,7 +4872,7 @@ _Leere Liste._
 
 **title:** Tandem-Professuren an den Hochschulen für angewandte Wissenschaften ausbauen
 
-**commitment_text:** Tandem-Professuren an den Hochschulen für angewandte Wissenschaften ausbauen. Gute Berufungen binden Menschen: Laufbahnen sind verlässlich, die Willkommenskette greift, Familienfreundlichkeit und starke Lehre-/LaborTeams federn Übergänge ab. So entscheiden sich Fachkräfte für SachsenAnhalt - und bleiben. Qualifizierungsphasen dürfen kein Hürdenlauf sein. Faire Förderhöhen, anerkannte Stipendienzeiten, klare Informationen und überbrückte Übergänge machen Laufbahnen planbar. Betreuungsvereinbarungen und Mentoring geben Sicherheit. Wir wollen:
+**commitment_text:** Tandem-Professuren an den Hochschulen für angewandte Wissenschaften ausbauen. Gute Berufungen binden Menschen: Laufbahnen sind verlässlich, die Willkommenskette greift, Familienfreundlichkeit und starke Lehre-/LaborTeams federn Übergänge ab. So entscheiden sich Fachkräfte für SachsenAnhalt – und bleiben. Qualifizierungsphasen dürfen kein Hürdenlauf sein. Faire Förderhöhen, anerkannte Stipendienzeiten, klare Informationen und überbrückte Übergänge machen Laufbahnen planbar. Betreuungsvereinbarungen und Mentoring geben Sicherheit. Wir wollen:
 
 ##### source_location
 
@@ -5129,7 +5129,7 @@ _Leere Liste._
 
 **title:** verlässliche Karrierewege (Tenure Track) als Regel in der Wissenschaftskarriere etablieren
 
-**commitment_text:** verlässliche Karrierewege (Tenure Track) als Regel in der Wissenschaftskarriere etablieren. Perspektive statt Prekarität: Graduiertenförderung ist kein Feigenblatt, Stipendien fördern gute Forschung Tenure Track schafft Verlässlichkeit, wissenschaftliche Arbeit wird für alle Lebenswege ermöglicht. So wird Sachsen-Anhalt zum attraktiven Wissenschaftsstandort. Forschung, faire Kooperationen und digitale Souveränität Wirkungsvolle Forschung baut auf Grundfinanzierung und faire Kooperationen. Transparente Regeln und ein Projektverzeichnis schaffen Überblick. Digitale Souveränität - eigene Dienste, Landes-Cloud, Ausstiegsklauseln - vermeiden Abhängigkeiten, Open Access und offene Daten machen Wissen nutzbar. Wir wollen:
+**commitment_text:** verlässliche Karrierewege (Tenure Track) als Regel in der Wissenschaftskarriere etablieren. Perspektive statt Prekarität: Graduiertenförderung ist kein Feigenblatt, Stipendien fördern gute Forschung Tenure Track schafft Verlässlichkeit, wissenschaftliche Arbeit wird für alle Lebenswege ermöglicht. So wird Sachsen-Anhalt zum attraktiven Wissenschaftsstandort. Forschung, faire Kooperationen und digitale Souveränität Wirkungsvolle Forschung baut auf Grundfinanzierung und faire Kooperationen. Transparente Regeln und ein Projektverzeichnis schaffen Überblick. Digitale Souveränität – eigene Dienste, Landes-Cloud, Ausstiegsklauseln – vermeiden Abhängigkeiten, Open Access und offene Daten machen Wissen nutzbar. Wir wollen:
 
 ##### source_location
 
@@ -5257,9 +5257,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0164-ki-kompetenz-foerdern-chancen-nutzen-grenzen-klaeren
 
-**title:** KI-Kompetenz fördern - Chancen nutzen, Grenzen klären,
+**title:** KI-Kompetenz fördern – Chancen nutzen, Grenzen klären,
 
-**commitment_text:** KI-Kompetenz fördern - Chancen nutzen, Grenzen klären,
+**commitment_text:** KI-Kompetenz fördern – Chancen nutzen, Grenzen klären,
 
 ##### source_location
 
@@ -5323,7 +5323,7 @@ _Leere Liste._
 
 **title:** eine Zivilklausel im Landeshochschulgesetz verankern
 
-**commitment_text:** eine Zivilklausel im Landeshochschulgesetz verankern. Souverän forschen, fair kooperieren: Grundfinanzierung trägt, Verträge sind transparent, Landes-Cloud und Open Access machen unabhängig, zivile Forschung wird gestärkt. So bleibt Wissen frei, sicher und nutzbar. Wenn Campus und Region zusammenarbeiten, wird Forschung sichtbar: Reallabore, Praxissemester und klare Ansprechstellen bringen Lösungen in Kommunen, Kliniken, Schulen und Betriebe - in Stadt und Land. Standardwege und Verträge beschleunigen die Zusammenarbeit, Wege zurück in die Wissenschaft bleiben offen. Wir wollen:
+**commitment_text:** eine Zivilklausel im Landeshochschulgesetz verankern. Souverän forschen, fair kooperieren: Grundfinanzierung trägt, Verträge sind transparent, Landes-Cloud und Open Access machen unabhängig, zivile Forschung wird gestärkt. So bleibt Wissen frei, sicher und nutzbar. Wenn Campus und Region zusammenarbeiten, wird Forschung sichtbar: Reallabore, Praxissemester und klare Ansprechstellen bringen Lösungen in Kommunen, Kliniken, Schulen und Betriebe – in Stadt und Land. Standardwege und Verträge beschleunigen die Zusammenarbeit, Wege zurück in die Wissenschaft bleiben offen. Wir wollen:
 
 ##### source_location
 
@@ -5353,9 +5353,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0167-reallabore-unterstuetzen-und-direktverbindungen-zu-kommune
 
-**title:** Reallabore unterstützen und Direktverbindungen zu Kommunen/Kliniken/Schulen/Betrieben stärken - auch im ländlichen Raum,
+**title:** Reallabore unterstützen und Direktverbindungen zu Kommunen/Kliniken/Schulen/Betrieben stärken – auch im ländlichen Raum,
 
-**commitment_text:** Reallabore unterstützen und Direktverbindungen zu Kommunen/Kliniken/Schulen/Betrieben stärken - auch im ländlichen Raum,
+**commitment_text:** Reallabore unterstützen und Direktverbindungen zu Kommunen/Kliniken/Schulen/Betrieben stärken – auch im ländlichen Raum,
 
 ##### source_location
 
@@ -5451,7 +5451,7 @@ _Leere Liste._
 
 **title:** Matching, Standardverträge, Datenhinweise und Transfer-Ansprechstellen bereitstellen
 
-**commitment_text:** Matching, Standardverträge, Datenhinweise und Transfer-Ansprechstellen bereitstellen. Nähe macht Wirkung: Reallabore, Praxissemester und Standardwege verankern den Campus in der Region. Erkenntnisse erreichen den Ort, an dem sie benötigt werden. Forschung verliert nicht den Anschluss an die gesellschaftlichen Herausforderungen. So bleibt Wissenschaft dort, wo sie hingehört: mitten im Leben der Region. Wissenschaft und Hochschulen: Partizipativ - offen - transparent Freie Lehre und Forschung sind die Grundlage starker Hochschulen. Gegen politischen oder finanziellen Druck braucht es Schutz - rechtlich, institutionell und kulturell. Mehr Demokratie in Gremien, klare Rechte und offene Informationen stärken Vertrauen, Qualität und Vielfalt. Wir wollen:
+**commitment_text:** Matching, Standardverträge, Datenhinweise und Transfer-Ansprechstellen bereitstellen. Nähe macht Wirkung: Reallabore, Praxissemester und Standardwege verankern den Campus in der Region. Erkenntnisse erreichen den Ort, an dem sie benötigt werden. Forschung verliert nicht den Anschluss an die gesellschaftlichen Herausforderungen. So bleibt Wissenschaft dort, wo sie hingehört: mitten im Leben der Region. Wissenschaft und Hochschulen: Partizipativ – offen – transparent Freie Lehre und Forschung sind die Grundlage starker Hochschulen. Gegen politischen oder finanziellen Druck braucht es Schutz – rechtlich, institutionell und kulturell. Mehr Demokratie in Gremien, klare Rechte und offene Informationen stärken Vertrauen, Qualität und Vielfalt. Wir wollen:
 
 ##### source_location
 
@@ -5548,7 +5548,7 @@ _Leere Liste._
 
 **title:** studentische Gremien stärken (Zugang zu Informationen/Ressourcen), teilverfasste Studierendenschaft und allgemeinpolitisches Mandat verteidigen
 
-**commitment_text:** studentische Gremien stärken (Zugang zu Informationen/Ressourcen), teilverfasste Studierendenschaft und allgemeinpolitisches Mandat verteidigen. Freiheit und Mitbestimmung schützen Erkenntnis: Forschung und Lehre sind vor Druck gesichert, Gremien arbeiten demokratisch, alle Statusgruppen entscheiden mit, Informationen sind offen, Wissenschaft bleibt resilient. So erhält Selbstverwaltung ihren Sinn und Wissenschaft bekommt den Rückhalt, den sie verdient. Lehramt stark machen - Praxissemester und Schulkooperationen Guter Unterricht beginnt in der Ausbildung: Praxissemester mit Qualität, Partnerschulnetzwerke und genügend Dozierende verbinden Studium und Schulalltag - auch im ländlichen Raum. Sprachbildung, Inklusion und digitale Werkzeuge gehören selbstverständlich dazu. Wir werden:
+**commitment_text:** studentische Gremien stärken (Zugang zu Informationen/Ressourcen), teilverfasste Studierendenschaft und allgemeinpolitisches Mandat verteidigen. Freiheit und Mitbestimmung schützen Erkenntnis: Forschung und Lehre sind vor Druck gesichert, Gremien arbeiten demokratisch, alle Statusgruppen entscheiden mit, Informationen sind offen, Wissenschaft bleibt resilient. So erhält Selbstverwaltung ihren Sinn und Wissenschaft bekommt den Rückhalt, den sie verdient. Lehramt stark machen – Praxissemester und Schulkooperationen Guter Unterricht beginnt in der Ausbildung: Praxissemester mit Qualität, Partnerschulnetzwerke und genügend Dozierende verbinden Studium und Schulalltag – auch im ländlichen Raum. Sprachbildung, Inklusion und digitale Werkzeuge gehören selbstverständlich dazu. Wir werden:
 
 ##### source_location
 
@@ -5578,9 +5578,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0174-praxissemester-qualitativ-absichern-und-ausbildung-schulal
 
-**title:** Praxissemester qualitativ absichern und Ausbildung/Schulalltag verzahnen - in Uni-Städten und im ländlichen …
+**title:** Praxissemester qualitativ absichern und Ausbildung/Schulalltag verzahnen – in Uni-Städten und im ländlichen …
 
-**commitment_text:** Praxissemester qualitativ absichern und Ausbildung/Schulalltag verzahnen - in Uni-Städten und im ländlichen Raum,
+**commitment_text:** Praxissemester qualitativ absichern und Ausbildung/Schulalltag verzahnen – in Uni-Städten und im ländlichen Raum,
 
 ##### source_location
 
@@ -5674,9 +5674,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0177-sprachbildung-inklusion-digitale-werkzeuge-staerken-mit-ei
 
-**title:** Sprachbildung, Inklusion, digitale Werkzeuge stärken - mit einem landesweiten Qualitätsrahmen (Mentoring, Zeitfenster, …
+**title:** Sprachbildung, Inklusion, digitale Werkzeuge stärken – mit einem landesweiten Qualitätsrahmen (Mentoring, Zeitfenster, …
 
-**commitment_text:** Sprachbildung, Inklusion, digitale Werkzeuge stärken - mit einem landesweiten Qualitätsrahmen (Mentoring, Zeitfenster, Phasen-Zusammenarbeit) und jährlichen Fortschrittsberichten,
+**commitment_text:** Sprachbildung, Inklusion, digitale Werkzeuge stärken – mit einem landesweiten Qualitätsrahmen (Mentoring, Zeitfenster, Phasen-Zusammenarbeit) und jährlichen Fortschrittsberichten,
 
 ##### source_location
 
@@ -5740,7 +5740,7 @@ _Leere Liste._
 
 **title:** neue Modelle der Lehramtsausbildung einführen
 
-**commitment_text:** neue Modelle der Lehramtsausbildung einführen. Praxis schafft Sicherheit: Praxissemester sind abgesichert, Partnerschulnetzwerke tragen, Fachdidaktik und Bildungswissenschaften sind ausgebaut. So beginnt guter Unterricht - landesweit.
+**commitment_text:** neue Modelle der Lehramtsausbildung einführen. Praxis schafft Sicherheit: Praxissemester sind abgesichert, Partnerschulnetzwerke tragen, Fachdidaktik und Bildungswissenschaften sind ausgebaut. So beginnt guter Unterricht – landesweit.
 
 ##### source_location
 
@@ -5804,7 +5804,7 @@ _Leere Liste._
 
 **title:** die Erstellung und Umsetzung eines übergreifenden Landesaktionsplans zur Armutsbekämpfung, um Maßnahmen und …
 
-**commitment_text:** die Erstellung und Umsetzung eines übergreifenden Landesaktionsplans zur Armutsbekämpfung, um Maßnahmen und Zielstellungen - unabhängig vom Alter, von der Herkunft und dem Geldbeutel - für den Zugang zu den Bereichen Wohnen, Gesundheit, Pflege, Bildung, Kultur, Ausbildung, Tarifbindung und Arbeitsmarkt mitzudenken,
+**commitment_text:** die Erstellung und Umsetzung eines übergreifenden Landesaktionsplans zur Armutsbekämpfung, um Maßnahmen und Zielstellungen – unabhängig vom Alter, von der Herkunft und dem Geldbeutel – für den Zugang zu den Bereichen Wohnen, Gesundheit, Pflege, Bildung, Kultur, Ausbildung, Tarifbindung und Arbeitsmarkt mitzudenken,
 
 ##### source_location
 
@@ -5932,7 +5932,7 @@ _Leere Liste._
 
 **title:** städtebauliche Planungen mit einer wohnortnahen Versorgung für den täglichen Bedarf, Apotheken und …
 
-**commitment_text:** städtebauliche Planungen mit einer wohnortnahen Versorgung für den täglichen Bedarf, Apotheken und Arztpraxen - auf dem Land und allen Wohnquartieren,
+**commitment_text:** städtebauliche Planungen mit einer wohnortnahen Versorgung für den täglichen Bedarf, Apotheken und Arztpraxen – auf dem Land und allen Wohnquartieren,
 
 ##### source_location
 
@@ -5962,9 +5962,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0186-ein-verbot-jeglicher-diskriminierung-aus-altersgruenden-so
 
-**title:** ein Verbot jeglicher Diskriminierung aus Altersgründen - sowohl für junge als auch …
+**title:** ein Verbot jeglicher Diskriminierung aus Altersgründen – sowohl für junge als auch …
 
-**commitment_text:** ein Verbot jeglicher Diskriminierung aus Altersgründen - sowohl für junge als auch für ältere Menschen - und hierfür eine entsprechende Regelung im Grundgesetz. Soziale Teilhabe muss über Generations- und Altersgrenzen hinaus möglich sein. Nicht Armut, sondern sozialer Zusammenhalt muss zur politischen Priorität werden. Ein gutes Leben für alle ist möglich, wenn wir es gemeinsam einfordern und dafür kämpfen!
+**commitment_text:** ein Verbot jeglicher Diskriminierung aus Altersgründen – sowohl für junge als auch für ältere Menschen – und hierfür eine entsprechende Regelung im Grundgesetz. Soziale Teilhabe muss über Generations- und Altersgrenzen hinaus möglich sein. Nicht Armut, sondern sozialer Zusammenhalt muss zur politischen Priorität werden. Ein gutes Leben für alle ist möglich, wenn wir es gemeinsam einfordern und dafür kämpfen!
 
 ##### source_location
 
@@ -6382,7 +6382,7 @@ _Leere Liste._
 
 **title:** integrierte Versorgungszentren in kommunaler Trägerschaft, die ambulante, stationäre und Notfallleistungen aus einer …
 
-**commitment_text:** integrierte Versorgungszentren in kommunaler Trägerschaft, die ambulante, stationäre und Notfallleistungen aus einer Hand anbieten und eine bessere Anbindung an Krankenhäuser höherer Versorgungsstufen gewährleisten. Wir setzen auf eine stabile und verlässliche Gesundheitsversorgung der Menschen. Stand der Dinge - Herausforderungen Der andauernde Schrumpfungsprozess in der Krankenhauslandschaft ist für uns ein grundlegendes Problem. 1991 gab es im Land 72 Krankenhäuser, aktuell sind es noch 44. Die Zahl der Krankenhausbetten wurde um mehr als 11.200 reduziert, gut ein Drittel. Die vom Bund gesteuerte Krankenhausreform von 2025 setzt die seit Jahrzehnten laufende Standortreduzierung im Land durch Mindest- und Qualitätsvorgaben weiter fort. Mehr als die Hälfte der Krankenhäuser im Land sind in privater Hand und werden unter Gesichtspunkten maximaler Rendite geführt. Bleibt sie aus, kommt es zu kurzfristigen Schließungen von Häusern oder Abteilungen in den Landkreisen. Der Norden des Landes hat die größten Versorgungslücken, wie bereits das Krankenhausgutachten von 2023 zeigte. Besonders fragil ist die Versorgung von Kindern und Jugendlichen, Frauen, Schwangeren, von Neu- und Frühgeborenen sowie Notfällen und in der Neurochirurgie. Die bisherigen Landesregierungen unterliefen ihre Verantwortung bei der Finanzierung der Investitionskosten, die Krankenkassen sparen bei der Finanzierung der Betriebskosten. Viele Einrichtungen kämpfen deshalb mit der Insolvenz. Darunter leiden auch die Arbeitsbedingungen der Beschäftigten, was weiteren Fachkräftemangel zur Folge hat. Die Patienten sind verunsichert und brauchen eine stabile Gesundheitsversorgung. Auskömmliche kommunale Gesundheitsfinanzierung Die Finanznot von Kommunen und Landkreisen sowie die EU-Wettbewerbspolitik führen zur Zunahme von privaten Krankenhausbetreibern und unsicheren Perspektiven für eine langfristige und planbare Gesundheitsversorgung, besonders in den ländlichen Gebieten. Ameos und Helios müssen für ihre Aktionäre Gewinnausschüttungen realisieren und folgen deren Interessen. Es bedarf aus unserer Sicht der Prüfung von Rekommunalisierung der privatisierten Krankenhäuser, da wie im Falle von Halberstadt, Bernburg oder Zerbst letztlich die öffentliche Hand einspringt oder ausgleicht und die Daseinsvorsorge im Blick hat.
+**commitment_text:** integrierte Versorgungszentren in kommunaler Trägerschaft, die ambulante, stationäre und Notfallleistungen aus einer Hand anbieten und eine bessere Anbindung an Krankenhäuser höherer Versorgungsstufen gewährleisten. Wir setzen auf eine stabile und verlässliche Gesundheitsversorgung der Menschen. Stand der Dinge – Herausforderungen Der andauernde Schrumpfungsprozess in der Krankenhauslandschaft ist für uns ein grundlegendes Problem. 1991 gab es im Land 72 Krankenhäuser, aktuell sind es noch 44. Die Zahl der Krankenhausbetten wurde um mehr als 11.200 reduziert, gut ein Drittel. Die vom Bund gesteuerte Krankenhausreform von 2025 setzt die seit Jahrzehnten laufende Standortreduzierung im Land durch Mindest- und Qualitätsvorgaben weiter fort. Mehr als die Hälfte der Krankenhäuser im Land sind in privater Hand und werden unter Gesichtspunkten maximaler Rendite geführt. Bleibt sie aus, kommt es zu kurzfristigen Schließungen von Häusern oder Abteilungen in den Landkreisen. Der Norden des Landes hat die größten Versorgungslücken, wie bereits das Krankenhausgutachten von 2023 zeigte. Besonders fragil ist die Versorgung von Kindern und Jugendlichen, Frauen, Schwangeren, von Neu- und Frühgeborenen sowie Notfällen und in der Neurochirurgie. Die bisherigen Landesregierungen unterliefen ihre Verantwortung bei der Finanzierung der Investitionskosten, die Krankenkassen sparen bei der Finanzierung der Betriebskosten. Viele Einrichtungen kämpfen deshalb mit der Insolvenz. Darunter leiden auch die Arbeitsbedingungen der Beschäftigten, was weiteren Fachkräftemangel zur Folge hat. Die Patienten sind verunsichert und brauchen eine stabile Gesundheitsversorgung. Auskömmliche kommunale Gesundheitsfinanzierung Die Finanznot von Kommunen und Landkreisen sowie die EU-Wettbewerbspolitik führen zur Zunahme von privaten Krankenhausbetreibern und unsicheren Perspektiven für eine langfristige und planbare Gesundheitsversorgung, besonders in den ländlichen Gebieten. Ameos und Helios müssen für ihre Aktionäre Gewinnausschüttungen realisieren und folgen deren Interessen. Es bedarf aus unserer Sicht der Prüfung von Rekommunalisierung der privatisierten Krankenhäuser, da wie im Falle von Halberstadt, Bernburg oder Zerbst letztlich die öffentliche Hand einspringt oder ausgleicht und die Daseinsvorsorge im Blick hat.
 
 ##### source_location
 
@@ -6736,7 +6736,7 @@ _Leere Liste._
 
 **title:** weiterhin die selbstständige Auftragserfüllung durch die Universitätsklinika als Standorte der Forschung, Lehre …
 
-**commitment_text:** weiterhin die selbstständige Auftragserfüllung durch die Universitätsklinika als Standorte der Forschung, Lehre und Versorgung. Notaufnahmen an allen Standorten Für alle Standorte (mit Ausnahme der psychiatrischen Krankenhäuser) ist eine Notaufnahme vorzusehen. Bei der Planung der diagnostischen Geräte (Röntgen, MRT etc.) ist auch der um den Standort anzusiedelnden ambulanten Versorgungsstruktur Rechnung zu tragen. Daneben sollen sich die Standorte, je nach ihrem Auftrag, als Basis- oder Schwerpunktversorger auf ein oder mehrere Gebiete spezialisieren und mit den jeweils anderen Standorten vernetzen. Damit ist die Notfall- und Basisversorgung für jeden Standort gesichert, gleichzeitig können für anspruchsvolle Behandlungen und Operationen die erforderlichen Qualitätskriterien eingehalten werden. Mit dem Klinikverbund wollen wir zugleich dafür sorgen, dass die öffentlichen Krankenhäuser wirtschaftlich arbeiten können, ohne dabei auf Kosten der Patient:innenversorgung und zum Nachteil der Mitarbeiter:innen zu handeln. Versorgungssicherheit bei seltenen Erkrankungen stärken Auch Menschen mit seltenen Erkrankungen haben ein uneingeschränktes Recht auf eine fachlich sichere, respektvolle und im Ernstfall lebensrettende medizinische Versorgung. Was „selten“ genannt wird, ist für die Betroffenen tägliche Realität - geprägt von Unsicherheit, langen Diagnosewegen und der ständigen Sorge, im Notfall nicht richtig verstanden oder behandelt zu werden. Hinter unserem Gesundheitssystem steht der Wille nach Profit, den seltene Krankheiten nicht einfahren. Doch hinter jeder Diagnose steht ein Mensch mit Hoffnungen, Ängsten und dem Wunsch nach Sicherheit. Einige dieser Erkrankungen können in akuten Situationen lebensbedrohlich verlaufen und erfordern sofortiges, spezifisches Handeln. Wie etwa bei einer Addison-Krise. In solchen Momenten entscheidet nicht Seltenheit, sondern Wissen, Aufmerksamkeit und schnelles Handeln über Leben und Gesundheit. Seltene Erkrankungen dürfen niemals zu einer seltenen Priorität werden. Jeder Mensch verdient es, im entscheidenden Augenblick gesehen, ernst genommen und kompetent versorgt zu werden. Dafür wollen wir: • verpflichtende und regelmäßige Fortbildungen für Rettungssanitäter:innen, Notfallsanitäter:innen, Notärzt:innen sowie Personal in Notaufnahmen zu seltenen, notfallrelevanten Krankheitsbildern einführen, • landeseinheitliche Standards zur Anerkennung und Beachtung von Notfallausweisen verbindlich festlegen,
+**commitment_text:** weiterhin die selbstständige Auftragserfüllung durch die Universitätsklinika als Standorte der Forschung, Lehre und Versorgung. Notaufnahmen an allen Standorten Für alle Standorte (mit Ausnahme der psychiatrischen Krankenhäuser) ist eine Notaufnahme vorzusehen. Bei der Planung der diagnostischen Geräte (Röntgen, MRT etc.) ist auch der um den Standort anzusiedelnden ambulanten Versorgungsstruktur Rechnung zu tragen. Daneben sollen sich die Standorte, je nach ihrem Auftrag, als Basis- oder Schwerpunktversorger auf ein oder mehrere Gebiete spezialisieren und mit den jeweils anderen Standorten vernetzen. Damit ist die Notfall- und Basisversorgung für jeden Standort gesichert, gleichzeitig können für anspruchsvolle Behandlungen und Operationen die erforderlichen Qualitätskriterien eingehalten werden. Mit dem Klinikverbund wollen wir zugleich dafür sorgen, dass die öffentlichen Krankenhäuser wirtschaftlich arbeiten können, ohne dabei auf Kosten der Patient:innenversorgung und zum Nachteil der Mitarbeiter:innen zu handeln. Versorgungssicherheit bei seltenen Erkrankungen stärken Auch Menschen mit seltenen Erkrankungen haben ein uneingeschränktes Recht auf eine fachlich sichere, respektvolle und im Ernstfall lebensrettende medizinische Versorgung. Was „selten“ genannt wird, ist für die Betroffenen tägliche Realität – geprägt von Unsicherheit, langen Diagnosewegen und der ständigen Sorge, im Notfall nicht richtig verstanden oder behandelt zu werden. Hinter unserem Gesundheitssystem steht der Wille nach Profit, den seltene Krankheiten nicht einfahren. Doch hinter jeder Diagnose steht ein Mensch mit Hoffnungen, Ängsten und dem Wunsch nach Sicherheit. Einige dieser Erkrankungen können in akuten Situationen lebensbedrohlich verlaufen und erfordern sofortiges, spezifisches Handeln. Wie etwa bei einer Addison-Krise. In solchen Momenten entscheidet nicht Seltenheit, sondern Wissen, Aufmerksamkeit und schnelles Handeln über Leben und Gesundheit. Seltene Erkrankungen dürfen niemals zu einer seltenen Priorität werden. Jeder Mensch verdient es, im entscheidenden Augenblick gesehen, ernst genommen und kompetent versorgt zu werden. Dafür wollen wir: • verpflichtende und regelmäßige Fortbildungen für Rettungssanitäter:innen, Notfallsanitäter:innen, Notärzt:innen sowie Personal in Notaufnahmen zu seltenen, notfallrelevanten Krankheitsbildern einführen, • landeseinheitliche Standards zur Anerkennung und Beachtung von Notfallausweisen verbindlich festlegen,
 
 ##### source_location
 
@@ -7632,9 +7632,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0238-wir-verhindern-zahnaerztliche-und-kieferorthopaedische-unt
 
-**title:** Wir verhindern zahnärztliche und kieferorthopädische Unterversorgung - führen eine Landeszahnarztquote ein und …
+**title:** Wir verhindern zahnärztliche und kieferorthopädische Unterversorgung – führen eine Landeszahnarztquote ein und …
 
-**commitment_text:** Wir verhindern zahnärztliche und kieferorthopädische Unterversorgung - führen eine Landeszahnarztquote ein und entwickeln mehr Weiterbildungsangebote.
+**commitment_text:** Wir verhindern zahnärztliche und kieferorthopädische Unterversorgung – führen eine Landeszahnarztquote ein und entwickeln mehr Weiterbildungsangebote.
 
 ##### source_location
 
@@ -8788,9 +8788,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0274-erstkontakt-und-rueckmeldung-sichern-eine-erreichbare-erst
 
-**title:** Erstkontakt und Rückmeldung sichern - eine erreichbare erste Anlaufstelle (Telefon, online, vor …
+**title:** Erstkontakt und Rückmeldung sichern – eine erreichbare erste Anlaufstelle (Telefon, online, vor …
 
-**commitment_text:** Erstkontakt und Rückmeldung sichern - eine erreichbare erste Anlaufstelle (Telefon, online, vor Ort) mit klaren Fristen,
+**commitment_text:** Erstkontakt und Rückmeldung sichern – eine erreichbare erste Anlaufstelle (Telefon, online, vor Ort) mit klaren Fristen,
 
 ##### source_location
 
@@ -8820,9 +8820,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0275-die-uebergaben-verbindlich-regeln-zwischen-jugendhilfe-oeg
 
-**title:** die Übergaben verbindlich regeln - zwischen Jugendhilfe, ÖGD, Schule und, wo nötig, …
+**title:** die Übergaben verbindlich regeln – zwischen Jugendhilfe, ÖGD, Schule und, wo nötig, …
 
-**commitment_text:** die Übergaben verbindlich regeln - zwischen Jugendhilfe, ÖGD, Schule und, wo nötig, Familiengericht,
+**commitment_text:** die Übergaben verbindlich regeln – zwischen Jugendhilfe, ÖGD, Schule und, wo nötig, Familiengericht,
 
 ##### source_location
 
@@ -8852,9 +8852,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0276-oegd-zum-praeventionsknoten-machen-lotsenstellen-in-die-ps
 
-**title:** ÖGD zum Präventionsknoten machen - Lotsenstellen in die psychische Versorgung, frühe Hilfen …
+**title:** ÖGD zum Präventionsknoten machen – Lotsenstellen in die psychische Versorgung, frühe Hilfen …
 
-**commitment_text:** ÖGD zum Präventionsknoten machen - Lotsenstellen in die psychische Versorgung, frühe Hilfen inkl. Familienhebammen landesweit stärken,
+**commitment_text:** ÖGD zum Präventionsknoten machen – Lotsenstellen in die psychische Versorgung, frühe Hilfen inkl. Familienhebammen landesweit stärken,
 
 ##### source_location
 
@@ -8884,9 +8884,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0277-kindgerechte-verfahren-verankern-kinder-werden-gehoert-bes
 
-**title:** kindgerechte Verfahren verankern - Kinder werden gehört, Beschlüsse verständlich erklärt, Fristen eingehalten,
+**title:** kindgerechte Verfahren verankern – Kinder werden gehört, Beschlüsse verständlich erklärt, Fristen eingehalten,
 
-**commitment_text:** kindgerechte Verfahren verankern - Kinder werden gehört, Beschlüsse verständlich erklärt, Fristen eingehalten,
+**commitment_text:** kindgerechte Verfahren verankern – Kinder werden gehört, Beschlüsse verständlich erklärt, Fristen eingehalten,
 
 ##### source_location
 
@@ -8916,9 +8916,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0278-kinderschutz-konsequent-machen-bei-haeuslicher-gewalt-gilt
 
-**title:** Kinderschutz konsequent machen - bei häuslicher Gewalt gilt Schutz zuerst, Umgang wird …
+**title:** Kinderschutz konsequent machen – bei häuslicher Gewalt gilt Schutz zuerst, Umgang wird …
 
-**commitment_text:** Kinderschutz konsequent machen - bei häuslicher Gewalt gilt Schutz zuerst, Umgang wird sicher geregelt, bei Bedarf begleitet,
+**commitment_text:** Kinderschutz konsequent machen – bei häuslicher Gewalt gilt Schutz zuerst, Umgang wird sicher geregelt, bei Bedarf begleitet,
 
 ##### source_location
 
@@ -8980,9 +8980,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0280-erst-die-behandlung-dann-die-fragen-sicherstellen-versorgu
 
-**title:** erst die Behandlung, dann die Fragen sicherstellen - Versorgung von Kindern/Jugendlichen auch …
+**title:** erst die Behandlung, dann die Fragen sicherstellen – Versorgung von Kindern/Jugendlichen auch …
 
-**commitment_text:** erst die Behandlung, dann die Fragen sicherstellen - Versorgung von Kindern/Jugendlichen auch ohne Krankenversicherung, Kostenübernahme klären,
+**commitment_text:** erst die Behandlung, dann die Fragen sicherstellen – Versorgung von Kindern/Jugendlichen auch ohne Krankenversicherung, Kostenübernahme klären,
 
 ##### source_location
 
@@ -9044,9 +9044,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0282-zugaenge-ohne-huerden-garantieren-in-einfacher-sprache-tra
 
-**title:** Zugänge ohne Hürden garantieren - in einfacher Sprache, traumainformiert und mehrsprachig, statusunabhängig, …
+**title:** Zugänge ohne Hürden garantieren – in einfacher Sprache, traumainformiert und mehrsprachig, statusunabhängig, …
 
-**commitment_text:** Zugänge ohne Hürden garantieren - in einfacher Sprache, traumainformiert und mehrsprachig, statusunabhängig, auch in Unterkünften. Ein Land, in dem Hilfe antwortet, bevor es brennt: Kinder sind sicher, Eltern schlafen ruhiger, weil eine Nummer, ein Mensch, ein Weg trägt. Entscheidungen sind kindgerecht und verständlich - auch für neu zugewanderte Familien. So wird aus Angst wieder Alltag. Kinderrechte und Beteiligung verbindlich Kinderrechte wirken, wenn Beteiligung Standards hat und Antworten kommen. Vor wichtigen Vorhaben zeigen kurze, verständliche Folgenprüfungen, was Entscheidungen für Kinder bedeuten. Unabhängige Beschwerdewege sind sichtbar - telefonisch, online, vor Ort und auch in Unterkünften. Jugendparlamente mit Antrags-, Rede- und Budgetrechten sowie Heimräte geben Mitsprache dort, wo sie gebraucht wird; Politik ist jugendgerecht digital erreichbar. Informationen sind klar und inklusiv, Verfahren statusunabhängig. Wir wollen:
+**commitment_text:** Zugänge ohne Hürden garantieren – in einfacher Sprache, traumainformiert und mehrsprachig, statusunabhängig, auch in Unterkünften. Ein Land, in dem Hilfe antwortet, bevor es brennt: Kinder sind sicher, Eltern schlafen ruhiger, weil eine Nummer, ein Mensch, ein Weg trägt. Entscheidungen sind kindgerecht und verständlich – auch für neu zugewanderte Familien. So wird aus Angst wieder Alltag. Kinderrechte und Beteiligung verbindlich Kinderrechte wirken, wenn Beteiligung Standards hat und Antworten kommen. Vor wichtigen Vorhaben zeigen kurze, verständliche Folgenprüfungen, was Entscheidungen für Kinder bedeuten. Unabhängige Beschwerdewege sind sichtbar – telefonisch, online, vor Ort und auch in Unterkünften. Jugendparlamente mit Antrags-, Rede- und Budgetrechten sowie Heimräte geben Mitsprache dort, wo sie gebraucht wird; Politik ist jugendgerecht digital erreichbar. Informationen sind klar und inklusiv, Verfahren statusunabhängig. Wir wollen:
 
 ##### source_location
 
@@ -9076,9 +9076,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0283-landesweite-mindeststandards-fuer-beteiligung-festlegen-mi
 
-**title:** landesweite Mindeststandards für Beteiligung festlegen - mit verbindlichen Rückmeldefristen, öffentlich nachlesbar,
+**title:** landesweite Mindeststandards für Beteiligung festlegen – mit verbindlichen Rückmeldefristen, öffentlich nachlesbar,
 
-**commitment_text:** landesweite Mindeststandards für Beteiligung festlegen - mit verbindlichen Rückmeldefristen, öffentlich nachlesbar,
+**commitment_text:** landesweite Mindeststandards für Beteiligung festlegen – mit verbindlichen Rückmeldefristen, öffentlich nachlesbar,
 
 ##### source_location
 
@@ -9140,9 +9140,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0285-unabhaengige-beschwerdewege-telefon-online-vor-ort-sichtba
 
-**title:** unabhängige Beschwerdewege (Telefon, online, vor Ort) sichtbar machen - mit klaren Fristen, …
+**title:** unabhängige Beschwerdewege (Telefon, online, vor Ort) sichtbar machen – mit klaren Fristen, …
 
-**commitment_text:** unabhängige Beschwerdewege (Telefon, online, vor Ort) sichtbar machen - mit klaren Fristen, auch in Unterkünften,
+**commitment_text:** unabhängige Beschwerdewege (Telefon, online, vor Ort) sichtbar machen – mit klaren Fristen, auch in Unterkünften,
 
 ##### source_location
 
@@ -9172,9 +9172,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0286-jugendparlamente-staerken-antrags-rede-und-budgetrechte-he
 
-**title:** Jugendparlamente stärken - Antrags-, Rede- und Budgetrechte
+**title:** Jugendparlamente stärken – Antrags-, Rede- und Budgetrechte
 
-**commitment_text:** Jugendparlamente stärken - Antrags-, Rede- und Budgetrechte; Heimräte bis hin zum Landesheimrat,
+**commitment_text:** Jugendparlamente stärken – Antrags-, Rede- und Budgetrechte; Heimräte bis hin zum Landesheimrat,
 
 ##### source_location
 
@@ -9204,9 +9204,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0287-jugendgerechte-digitale-erreichbarkeit-sichern-information
 
-**title:** jugendgerechte digitale Erreichbarkeit sichern - Informationen einfach und mehrsprachig,
+**title:** jugendgerechte digitale Erreichbarkeit sichern – Informationen einfach und mehrsprachig,
 
-**commitment_text:** jugendgerechte digitale Erreichbarkeit sichern - Informationen einfach und mehrsprachig,
+**commitment_text:** jugendgerechte digitale Erreichbarkeit sichern – Informationen einfach und mehrsprachig,
 
 ##### source_location
 
@@ -9238,7 +9238,7 @@ _Leere Liste._
 
 **title:** Statusunabhängigkeit in allen Verfahren garantieren
 
-**commitment_text:** Statusunabhängigkeit in allen Verfahren garantieren. Kinderstimmen zählen sichtbar: Entscheidungen erklären sich, Rückmeldungen kommen, Beschwerde ist möglich ohne Hürde. Politik findet auf Augenhöhe statt - einfach, nachvollziehbar, zeitnah. So wächst Vertrauen und Beteiligung verändert die Dinge. Jugendarbeit strukturell sichern! Wir machen Jugendarbeit zu einem gesetzlichen Anspruch für alle jungen Menschen und erhöhen die Förderung, besonders im ländlichen Raum. Wir sorgen dafür, dass die Beschäftigten in der Jugendarbeit besser bezahlt werden und sichere Beschäftigungsverhältnisse vorfinden. Außerdem verbessern wir die Schutzstandards für Kinder und Jugendliche und verankern sie im Jugendhilfegesetz. Die Linke will:
+**commitment_text:** Statusunabhängigkeit in allen Verfahren garantieren. Kinderstimmen zählen sichtbar: Entscheidungen erklären sich, Rückmeldungen kommen, Beschwerde ist möglich ohne Hürde. Politik findet auf Augenhöhe statt – einfach, nachvollziehbar, zeitnah. So wächst Vertrauen und Beteiligung verändert die Dinge. Jugendarbeit strukturell sichern! Wir machen Jugendarbeit zu einem gesetzlichen Anspruch für alle jungen Menschen und erhöhen die Förderung, besonders im ländlichen Raum. Wir sorgen dafür, dass die Beschäftigten in der Jugendarbeit besser bezahlt werden und sichere Beschäftigungsverhältnisse vorfinden. Außerdem verbessern wir die Schutzstandards für Kinder und Jugendliche und verankern sie im Jugendhilfegesetz. Die Linke will:
 
 ##### source_location
 
@@ -9431,7 +9431,7 @@ _Leere Liste._
 
 **title:** verlässliche Öffnungszeiten (auch abends und in den Ferien), stabile Teams und sichere …
 
-**commitment_text:** verlässliche Öffnungszeiten (auch abends und in den Ferien), stabile Teams und sichere Räume gewährleisten - ohne Antragsstress,
+**commitment_text:** verlässliche Öffnungszeiten (auch abends und in den Ferien), stabile Teams und sichere Räume gewährleisten – ohne Antragsstress,
 
 ##### source_location
 
@@ -9493,9 +9493,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0296-leerstand-zu-freiraeumen-machen-mit-jugendlichen-gestalten
 
-**title:** Leerstand zu Freiräumen machen - mit Jugendlichen gestalten und nutzen, auch in …
+**title:** Leerstand zu Freiräumen machen – mit Jugendlichen gestalten und nutzen, auch in …
 
-**commitment_text:** Leerstand zu Freiräumen machen - mit Jugendlichen gestalten und nutzen, auch in engen Quartieren,
+**commitment_text:** Leerstand zu Freiräumen machen – mit Jugendlichen gestalten und nutzen, auch in engen Quartieren,
 
 ##### source_location
 
@@ -9525,9 +9525,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0297-schullandheime-und-ferien-als-feste-saeule-sichern-teilnah
 
-**title:** Schullandheime und Ferien als feste Säule sichern - Teilnahme unabhängig vom Geldbeutel,
+**title:** Schullandheime und Ferien als feste Säule sichern – Teilnahme unabhängig vom Geldbeutel,
 
-**commitment_text:** Schullandheime und Ferien als feste Säule sichern - Teilnahme unabhängig vom Geldbeutel,
+**commitment_text:** Schullandheime und Ferien als feste Säule sichern – Teilnahme unabhängig vom Geldbeutel,
 
 ##### source_location
 
@@ -9557,9 +9557,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0298-uebergangswohnen-und-beratung-bereitstellen-wo-wohnen-brue
 
-**title:** Übergangswohnen und Beratung bereitstellen, wo Wohnen brüchig ist - Anschluss an Schule/Ausbildung …
+**title:** Übergangswohnen und Beratung bereitstellen, wo Wohnen brüchig ist – Anschluss an Schule/Ausbildung …
 
-**commitment_text:** Übergangswohnen und Beratung bereitstellen, wo Wohnen brüchig ist - Anschluss an Schule/Ausbildung halten,
+**commitment_text:** Übergangswohnen und Beratung bereitstellen, wo Wohnen brüchig ist – Anschluss an Schule/Ausbildung halten,
 
 ##### source_location
 
@@ -9621,9 +9621,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0300-zugang-ohne-nachweispflichten-keine-id-pflicht-ermoegliche
 
-**title:** Zugang ohne Nachweispflichten (keine ID-Pflicht) ermöglichen - Teilnahme an offenen Angeboten ohne …
+**title:** Zugang ohne Nachweispflichten (keine ID-Pflicht) ermöglichen – Teilnahme an offenen Angeboten ohne …
 
-**commitment_text:** Zugang ohne Nachweispflichten (keine ID-Pflicht) ermöglichen - Teilnahme an offenen Angeboten ohne formale Kriterien; Bürokratie für Familien senken mit Unterstützung von mobilen „Bürokratie-Lotsen“,
+**commitment_text:** Zugang ohne Nachweispflichten (keine ID-Pflicht) ermöglichen – Teilnahme an offenen Angeboten ohne formale Kriterien; Bürokratie für Familien senken mit Unterstützung von mobilen „Bürokratie-Lotsen“,
 
 ##### source_location
 
@@ -9653,9 +9653,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0301-zugaenge-einfach-mehrsprachig-statusunabhaengig-machen-auc
 
-**title:** Zugänge einfach, mehrsprachig, statusunabhängig machen - auch für Kinder/Jugendliche in Unterkünften
+**title:** Zugänge einfach, mehrsprachig, statusunabhängig machen – auch für Kinder/Jugendliche in Unterkünften
 
-**commitment_text:** Zugänge einfach, mehrsprachig, statusunabhängig machen - auch für Kinder/Jugendliche in Unterkünften. In jedem Viertel geht eine Tür auf: Orte, an denen man gern bleibt, Teams, die verlässlich sind, Teilhabe ohne Nachweise. Ferien und Schullandheime enden nicht am Geldbeutel. So entsteht Zugehörigkeit - und aus Mitmachen wird Dabeibleiben. Materielle und digitale Teilhabe - mit Kindergrundsicherung und Landeshebel Teilhabe gelingt, wenn Kosten nicht trennen und Digitales keine neue Grenze bildet. Darum wird Grundausstattung zur Regel: Mittagessen, Beiträge, Fahrten, Materialien - und die digitale Basis aus geeignetem Gerät, verlässlicher Verbindung und Begleitung. Bibliotheken sind der kostenfreie Basiszugang; beim Schulessen gelten nachvollziehbare Qualitätsstandards. Zugänge sind einfach, ohne Stigma und statusunabhängig - auch für Kinder nach dem Asylbewerberleistungsgesetz. Gleichzeitig dringen wir im Bund auf eine armutsfeste, sanktionsfreie, einfache Kindergrundsicherung. Bis sie wirkt, schließt der Landes-Kinderteilhabe-Ausgleich die Lücke zur fachlich
+**commitment_text:** Zugänge einfach, mehrsprachig, statusunabhängig machen – auch für Kinder/Jugendliche in Unterkünften. In jedem Viertel geht eine Tür auf: Orte, an denen man gern bleibt, Teams, die verlässlich sind, Teilhabe ohne Nachweise. Ferien und Schullandheime enden nicht am Geldbeutel. So entsteht Zugehörigkeit – und aus Mitmachen wird Dabeibleiben. Materielle und digitale Teilhabe – mit Kindergrundsicherung und Landeshebel Teilhabe gelingt, wenn Kosten nicht trennen und Digitales keine neue Grenze bildet. Darum wird Grundausstattung zur Regel: Mittagessen, Beiträge, Fahrten, Materialien – und die digitale Basis aus geeignetem Gerät, verlässlicher Verbindung und Begleitung. Bibliotheken sind der kostenfreie Basiszugang; beim Schulessen gelten nachvollziehbare Qualitätsstandards. Zugänge sind einfach, ohne Stigma und statusunabhängig – auch für Kinder nach dem Asylbewerberleistungsgesetz. Gleichzeitig dringen wir im Bund auf eine armutsfeste, sanktionsfreie, einfache Kindergrundsicherung. Bis sie wirkt, schließt der Landes-Kinderteilhabe-Ausgleich die Lücke zur fachlich
 
 ##### source_location
 
@@ -9685,9 +9685,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0302-grundausstattung-zur-regel-machen-mittagessen-beitraege-fa
 
-**title:** Grundausstattung zur Regel machen - Mittagessen, Beiträge, Fahrten, Materialien unbürokratisch sichern
+**title:** Grundausstattung zur Regel machen – Mittagessen, Beiträge, Fahrten, Materialien unbürokratisch sichern
 
-**commitment_text:** Grundausstattung zur Regel machen - Mittagessen, Beiträge, Fahrten, Materialien unbürokratisch sichern.
+**commitment_text:** Grundausstattung zur Regel machen – Mittagessen, Beiträge, Fahrten, Materialien unbürokratisch sichern.
 
 ##### source_location
 
@@ -9717,9 +9717,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0303-die-digitale-basis-gewaehrleisten-geraet-verlaesslichen-in
 
-**title:** die digitale Basis gewährleisten - Gerät, verlässlichen Internetzugang und Begleitung im sicheren, …
+**title:** die digitale Basis gewährleisten – Gerät, verlässlichen Internetzugang und Begleitung im sicheren, …
 
-**commitment_text:** die digitale Basis gewährleisten - Gerät, verlässlichen Internetzugang und Begleitung im sicheren, klugen Umgang,
+**commitment_text:** die digitale Basis gewährleisten – Gerät, verlässlichen Internetzugang und Begleitung im sicheren, klugen Umgang,
 
 ##### source_location
 
@@ -9813,9 +9813,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0306-im-bund-eine-kindergrundsicherung-voranbringen-armutsfest
 
-**title:** im Bund eine Kindergrundsicherung voranbringen - armutsfest, sanktionsfrei, einfach, statusunabhängig, ohne Anrechnung, …
+**title:** im Bund eine Kindergrundsicherung voranbringen – armutsfest, sanktionsfrei, einfach, statusunabhängig, ohne Anrechnung, …
 
-**commitment_text:** im Bund eine Kindergrundsicherung voranbringen - armutsfest, sanktionsfrei, einfach, statusunabhängig, ohne Anrechnung, einschließlich Kinder nach dem Asylbewerberleistungsgesetz, Zugang niedrigschwellig, ohne Stigma,
+**commitment_text:** im Bund eine Kindergrundsicherung voranbringen – armutsfest, sanktionsfrei, einfach, statusunabhängig, ohne Anrechnung, einschließlich Kinder nach dem Asylbewerberleistungsgesetz, Zugang niedrigschwellig, ohne Stigma,
 
 ##### source_location
 
@@ -9845,9 +9845,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0307-den-kinderteilhabe-ausgleich-als-landeshebel-einfuehren-lu
 
-**title:** den Kinderteilhabe-Ausgleich als Landeshebel einführen - Lücke zur Bedarfsschwelle schließen, nicht anrechenbar, …
+**title:** den Kinderteilhabe-Ausgleich als Landeshebel einführen – Lücke zur Bedarfsschwelle schließen, nicht anrechenbar, …
 
-**commitment_text:** den Kinderteilhabe-Ausgleich als Landeshebel einführen - Lücke zur Bedarfsschwelle schließen, nicht anrechenbar, einschließlich Kinder nach dem Asylbewerberleistungsgesetz, degressiv mit Einführung der BundesKGS. Kosten trennen nicht mehr: Grundausstattung kommt an, Digitales ist selbstverständlich, ohne Stigma. Heute entlasten wir automatisch, morgen legt die Kindergrundsicherung das Fundament - und bis dahin schließt das Land die Lücke, für alle Kinder, auch in Unterkünften. Wege und Nähe - mobil und sicher erreichbar Wer mitmachen soll, muss gut hinkommen: Jugendorte in 15 Minuten erreichbar, Bus und Bahn passend zu Schule, Ausbildung und Freizeit - auch abends und am Wochenende. Sichere Rad- und Schulwege mit durchgehenden, geschützten Routen, guten Querungen, Beleuchtung, Winterdienst sowie Abstellplätzen schaffen Selbstständigkeit. Mobilität bleibt bezahlbar - mit dem Ziel eines günstigen Jugendtickets bzw. Nulltarifs. Unterkünfte am Rand werden mitgedacht, Informationen sind leicht zu finden und mehrsprachig. Wir wollen:
+**commitment_text:** den Kinderteilhabe-Ausgleich als Landeshebel einführen – Lücke zur Bedarfsschwelle schließen, nicht anrechenbar, einschließlich Kinder nach dem Asylbewerberleistungsgesetz, degressiv mit Einführung der BundesKGS. Kosten trennen nicht mehr: Grundausstattung kommt an, Digitales ist selbstverständlich, ohne Stigma. Heute entlasten wir automatisch, morgen legt die Kindergrundsicherung das Fundament – und bis dahin schließt das Land die Lücke, für alle Kinder, auch in Unterkünften. Wege und Nähe – mobil und sicher erreichbar Wer mitmachen soll, muss gut hinkommen: Jugendorte in 15 Minuten erreichbar, Bus und Bahn passend zu Schule, Ausbildung und Freizeit – auch abends und am Wochenende. Sichere Rad- und Schulwege mit durchgehenden, geschützten Routen, guten Querungen, Beleuchtung, Winterdienst sowie Abstellplätzen schaffen Selbstständigkeit. Mobilität bleibt bezahlbar – mit dem Ziel eines günstigen Jugendtickets bzw. Nulltarifs. Unterkünfte am Rand werden mitgedacht, Informationen sind leicht zu finden und mehrsprachig. Wir wollen:
 
 ##### source_location
 
@@ -9877,9 +9877,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0308-naehe-sichern-in-jedem-ortsteil-mindestens-einen-jugendort
 
-**title:** Nähe sichern - in jedem Ortsteil mindestens einen Jugendort in ca
+**title:** Nähe sichern – in jedem Ortsteil mindestens einen Jugendort in ca
 
-**commitment_text:** Nähe sichern - in jedem Ortsteil mindestens einen Jugendort in ca. 15 Minuten erreichbar, wo das fehlt: mobiles Angebot vor Ort,
+**commitment_text:** Nähe sichern – in jedem Ortsteil mindestens einen Jugendort in ca. 15 Minuten erreichbar, wo das fehlt: mobiles Angebot vor Ort,
 
 ##### source_location
 
@@ -9909,9 +9909,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0309-verlaessliche-verbindungen-schaffen-bus-bahn-auf-stundenpl
 
-**title:** verlässliche Verbindungen schaffen - Bus/Bahn auf Stundenplan und Vereinszeiten abstimmen, auch abends …
+**title:** verlässliche Verbindungen schaffen – Bus/Bahn auf Stundenplan und Vereinszeiten abstimmen, auch abends …
 
-**commitment_text:** verlässliche Verbindungen schaffen - Bus/Bahn auf Stundenplan und Vereinszeiten abstimmen, auch abends und am Wochenende, Schul-/ Praktikumswege ohne Auto ermöglichen,
+**commitment_text:** verlässliche Verbindungen schaffen – Bus/Bahn auf Stundenplan und Vereinszeiten abstimmen, auch abends und am Wochenende, Schul-/ Praktikumswege ohne Auto ermöglichen,
 
 ##### source_location
 
@@ -9941,9 +9941,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0310-bezahlbarkeit-garantieren-dauerhaft-guenstige-jugendmobili
 
-**title:** Bezahlbarkeit garantieren - dauerhaft günstige Jugendmobilität bis hin zum Jugendticket bzw
+**title:** Bezahlbarkeit garantieren – dauerhaft günstige Jugendmobilität bis hin zum Jugendticket bzw
 
-**commitment_text:** Bezahlbarkeit garantieren - dauerhaft günstige Jugendmobilität bis hin zum Jugendticket bzw. Nulltarif als Ziel,
+**commitment_text:** Bezahlbarkeit garantieren – dauerhaft günstige Jugendmobilität bis hin zum Jugendticket bzw. Nulltarif als Ziel,
 
 ##### source_location
 
@@ -9973,9 +9973,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0311-sichere-radwege-fuer-kinder-und-jugendliche-ausbauen-durch
 
-**title:** sichere Radwege für Kinder und Jugendliche ausbauen - durchgehende, geschützte Routen, gut …
+**title:** sichere Radwege für Kinder und Jugendliche ausbauen – durchgehende, geschützte Routen, gut …
 
-**commitment_text:** sichere Radwege für Kinder und Jugendliche ausbauen - durchgehende, geschützte Routen, gut sichtbare Querungen, Beleuchtung/Winterdienst, Abstellanlagen an Schule/Jugendort und Haltestelle,
+**commitment_text:** sichere Radwege für Kinder und Jugendliche ausbauen – durchgehende, geschützte Routen, gut sichtbare Querungen, Beleuchtung/Winterdienst, Abstellanlagen an Schule/Jugendort und Haltestelle,
 
 ##### source_location
 
@@ -10005,9 +10005,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0312-sichere-schulwege-staerken-tempo-30-gut-markierte-querunge
 
-**title:** sichere Schulwege stärken - Tempo 30, gut markierte Querungen, weniger Elterntaxis, mehr …
+**title:** sichere Schulwege stärken – Tempo 30, gut markierte Querungen, weniger Elterntaxis, mehr …
 
-**commitment_text:** sichere Schulwege stärken - Tempo 30, gut markierte Querungen, weniger Elterntaxis, mehr Selbstständigkeit,
+**commitment_text:** sichere Schulwege stärken – Tempo 30, gut markierte Querungen, weniger Elterntaxis, mehr Selbstständigkeit,
 
 ##### source_location
 
@@ -10037,9 +10037,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0313-unterkuenfte-mitdenken-haltepunkte-infos-zeiten-so-legen-d
 
-**title:** Unterkünfte mitdenken - Haltepunkte/Infos/Zeiten so legen, dass Kinder in Unterkünften ihre Ziele …
+**title:** Unterkünfte mitdenken – Haltepunkte/Infos/Zeiten so legen, dass Kinder in Unterkünften ihre Ziele …
 
-**commitment_text:** Unterkünfte mitdenken - Haltepunkte/Infos/Zeiten so legen, dass Kinder in Unterkünften ihre Ziele genauso gut erreichen, Hinweise mehrsprachig. Teilnahme ist der kürzeste Weg: Jugendorte in 15 Minuten, sichere Rad- und Schulwege, bezahlbare Tickets. Distanzen schrumpfen, Möglichkeiten wachsen - auch am Rand und in Unterkünften. So wird Mitmachen zur einfachsten Option. Transparenz, Präventionsketten und Kinderrechts-Budget Gute Politik zeigt, was wirkt, und steuert nach. Ein jährliches Teilhabe-Bild macht Angebote, Reichweiten, Lücken, Wegezeiten und Sprachzugänge sichtbar - ohne zu stigmatisieren, mit besonderem Blick auf Kinder in Unterkünften. Präventionsketten regeln Zuständigkeiten, Fristen und Ansprechstellen, damit Hilfe nicht im Kreis läuft. Mittel folgen Bedarf und Erreichbarkeit. Ein Kinderrechts-Budget macht im Haushalt erkennbar, wo Gelder Teilhabe verbessern. Wo Orte fehlen, sorgt ein Investitionspfad für Klarheit: benennen, finanzieren, terminieren - mit Tarifbindung für stabile Teams. Wir wollen:
+**commitment_text:** Unterkünfte mitdenken – Haltepunkte/Infos/Zeiten so legen, dass Kinder in Unterkünften ihre Ziele genauso gut erreichen, Hinweise mehrsprachig. Teilnahme ist der kürzeste Weg: Jugendorte in 15 Minuten, sichere Rad- und Schulwege, bezahlbare Tickets. Distanzen schrumpfen, Möglichkeiten wachsen – auch am Rand und in Unterkünften. So wird Mitmachen zur einfachsten Option. Transparenz, Präventionsketten und Kinderrechts-Budget Gute Politik zeigt, was wirkt, und steuert nach. Ein jährliches Teilhabe-Bild macht Angebote, Reichweiten, Lücken, Wegezeiten und Sprachzugänge sichtbar – ohne zu stigmatisieren, mit besonderem Blick auf Kinder in Unterkünften. Präventionsketten regeln Zuständigkeiten, Fristen und Ansprechstellen, damit Hilfe nicht im Kreis läuft. Mittel folgen Bedarf und Erreichbarkeit. Ein Kinderrechts-Budget macht im Haushalt erkennbar, wo Gelder Teilhabe verbessern. Wo Orte fehlen, sorgt ein Investitionspfad für Klarheit: benennen, finanzieren, terminieren – mit Tarifbindung für stabile Teams. Wir wollen:
 
 ##### source_location
 
@@ -10069,9 +10069,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0314-ein-jaehrliches-teilhabe-bild-in-jeder-kommune-jedem-landk
 
-**title:** ein jährliches Teilhabe-Bild in jeder Kommune/jedem Landkreis veröffentlichen - einfach und öffentlich …
+**title:** ein jährliches Teilhabe-Bild in jeder Kommune/jedem Landkreis veröffentlichen – einfach und öffentlich …
 
-**commitment_text:** ein jährliches Teilhabe-Bild in jeder Kommune/jedem Landkreis veröffentlichen - einfach und öffentlich (Angebote, Reichweite, Lücken, Wirkung, Wegezeiten, Kostenhürden, Sprachzugang, Erreichbarkeit von Unterkünften),
+**commitment_text:** ein jährliches Teilhabe-Bild in jeder Kommune/jedem Landkreis veröffentlichen – einfach und öffentlich (Angebote, Reichweite, Lücken, Wirkung, Wegezeiten, Kostenhürden, Sprachzugang, Erreichbarkeit von Unterkünften),
 
 ##### source_location
 
@@ -10101,9 +10101,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0315-praeventionsketten-verbindlich-machen-zustaendigkeiten-fri
 
-**title:** Präventionsketten verbindlich machen - Zuständigkeiten, Fristen, feste Ansprechstellen, spürbar weniger Hin-und-Her
+**title:** Präventionsketten verbindlich machen – Zuständigkeiten, Fristen, feste Ansprechstellen, spürbar weniger Hin-und-Her
 
-**commitment_text:** Präventionsketten verbindlich machen - Zuständigkeiten, Fristen, feste Ansprechstellen, spürbar weniger Hin-und-Her.
+**commitment_text:** Präventionsketten verbindlich machen – Zuständigkeiten, Fristen, feste Ansprechstellen, spürbar weniger Hin-und-Her.
 
 ##### source_location
 
@@ -10133,9 +10133,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0316-mittel-nach-bedarf-verteilen-nach-sozialer-lage-und-erreic
 
-**title:** Mittel nach Bedarf verteilen - nach sozialer Lage und Erreichbarkeit, jährliche Nachsteuerung …
+**title:** Mittel nach Bedarf verteilen – nach sozialer Lage und Erreichbarkeit, jährliche Nachsteuerung …
 
-**commitment_text:** Mittel nach Bedarf verteilen - nach sozialer Lage und Erreichbarkeit, jährliche Nachsteuerung begründen,
+**commitment_text:** Mittel nach Bedarf verteilen – nach sozialer Lage und Erreichbarkeit, jährliche Nachsteuerung begründen,
 
 ##### source_location
 
@@ -10165,9 +10165,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0317-ein-kinderrechts-budget-im-haushalt-kennzeichnen-nachvollz
 
-**title:** ein Kinderrechts-Budget im Haushalt kennzeichnen - nachvollziehbar, welche Mittel Teilhabe verbessern,
+**title:** ein Kinderrechts-Budget im Haushalt kennzeichnen – nachvollziehbar, welche Mittel Teilhabe verbessern,
 
-**commitment_text:** ein Kinderrechts-Budget im Haushalt kennzeichnen - nachvollziehbar, welche Mittel Teilhabe verbessern,
+**commitment_text:** ein Kinderrechts-Budget im Haushalt kennzeichnen – nachvollziehbar, welche Mittel Teilhabe verbessern,
 
 ##### source_location
 
@@ -10197,9 +10197,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0318-einen-investitionspfad-festlegen-fehlende-orte-z-b-jugendc
 
-**title:** einen Investitionspfad festlegen - fehlende Orte (z
+**title:** einen Investitionspfad festlegen – fehlende Orte (z
 
-**commitment_text:** einen Investitionspfad festlegen - fehlende Orte (z.B. Jugendclub, Jugendbildungsstätte) benennen, finanzieren, terminieren - mit Zeitleiste je Region,
+**commitment_text:** einen Investitionspfad festlegen – fehlende Orte (z.B. Jugendclub, Jugendbildungsstätte) benennen, finanzieren, terminieren – mit Zeitleiste je Region,
 
 ##### source_location
 
@@ -10229,9 +10229,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0319-gute-arbeit-sichern-tarifbindung-in-gefoerderten-angeboten
 
-**title:** Gute Arbeit sichern - Tarifbindung in geförderten Angeboten, stabile Teams,
+**title:** Gute Arbeit sichern – Tarifbindung in geförderten Angeboten, stabile Teams,
 
-**commitment_text:** Gute Arbeit sichern - Tarifbindung in geförderten Angeboten, stabile Teams,
+**commitment_text:** Gute Arbeit sichern – Tarifbindung in geförderten Angeboten, stabile Teams,
 
 ##### source_location
 
@@ -10261,9 +10261,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0320-luecken-schliessen-nichtinanspruchnahme-erheben-abbauen-we
 
-**title:** Lücken schließen - Nichtinanspruchnahme erheben/abbauen, Wegezeiten messen/verkürzen,
+**title:** Lücken schließen – Nichtinanspruchnahme erheben/abbauen, Wegezeiten messen/verkürzen,
 
-**commitment_text:** Lücken schließen - Nichtinanspruchnahme erheben/abbauen, Wegezeiten messen/verkürzen,
+**commitment_text:** Lücken schließen – Nichtinanspruchnahme erheben/abbauen, Wegezeiten messen/verkürzen,
 
 ##### source_location
 
@@ -10293,9 +10293,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0321-migrationssensibel-und-ohne-stigma-auswerten-kinder-in-unt
 
-**title:** migrationssensibel und ohne Stigma auswerten - Kinder in Unterkünften ausdrücklich erfassen, ohne …
+**title:** migrationssensibel und ohne Stigma auswerten – Kinder in Unterkünften ausdrücklich erfassen, ohne …
 
-**commitment_text:** migrationssensibel und ohne Stigma auswerten - Kinder in Unterkünften ausdrücklich erfassen, ohne zu stigmatisieren. Klarheit schafft Vertrauen: Jährlich wird sichtbar, was wirkt und wo nachzulegen ist, Mittel fließen dorthin, wo sie am meisten helfen. Lücken schließen wir Schritt für Schritt, ohne Stigma - nachvollziehbar und gerecht.
+**commitment_text:** migrationssensibel und ohne Stigma auswerten – Kinder in Unterkünften ausdrücklich erfassen, ohne zu stigmatisieren. Klarheit schafft Vertrauen: Jährlich wird sichtbar, was wirkt und wo nachzulegen ist, Mittel fließen dorthin, wo sie am meisten helfen. Lücken schließen wir Schritt für Schritt, ohne Stigma – nachvollziehbar und gerecht.
 
 ##### source_location
 
@@ -10487,7 +10487,7 @@ _Leere Liste._
 
 **title:** Betroffene sollen mitbestimmen
 
-**commitment_text:** Betroffene sollen mitbestimmen. Barrierefreiheit ist kein Luxus und keine Gefälligkeit. Sie ist eine Frage der Menschenwürde und des Grundgesetzes. Artikel 3 Absatz 3 Satz 2 des Grundgesetzes „Niemand darf wegen seiner Behinderung benachteiligt werden.“ Wir nehmen den Verfassungsauftrag ernst. Kein Mensch bleibt zurück. Für ein attraktives und aktives Sportland Sachsen-Anhalt Sport ist mehr als Freizeitbeschäftigung. Er stärkt Gesundheit, Zusammenhalt und Demokratie, verbindet Stadt und Land und schafft Begegnungsorte für Menschen aller Generationen. Schon fast ein Fünftel der Bevölkerung des Landes treibt in einem der mehr als 3.000 Vereinen unter dem Dach des Landesportbundes regelmäßig Sport. Dieser Anteil soll möglichst weiter steigen. Deshalb wollen wir gemeinsam mit dem Landessportbund und den Sportvereinen die Möglichkeiten, aktiv Sport zu treiben, weiter verbessern und erweitern - vor allem auch in den ländlichen Regionen. Stand der Dinge - Herausforderungen Viele Sportstätten in Sachsen-Anhalt sind in die Jahre gekommen. Allein der Investitionsstau bei Hallen- und Freibädern beläuft sich auf fast 300 Millionen Euro. Wenn Land und Kommunen nicht handeln, drohen hier weitere
+**commitment_text:** Betroffene sollen mitbestimmen. Barrierefreiheit ist kein Luxus und keine Gefälligkeit. Sie ist eine Frage der Menschenwürde und des Grundgesetzes. Artikel 3 Absatz 3 Satz 2 des Grundgesetzes „Niemand darf wegen seiner Behinderung benachteiligt werden.“ Wir nehmen den Verfassungsauftrag ernst. Kein Mensch bleibt zurück. Für ein attraktives und aktives Sportland Sachsen-Anhalt Sport ist mehr als Freizeitbeschäftigung. Er stärkt Gesundheit, Zusammenhalt und Demokratie, verbindet Stadt und Land und schafft Begegnungsorte für Menschen aller Generationen. Schon fast ein Fünftel der Bevölkerung des Landes treibt in einem der mehr als 3.000 Vereinen unter dem Dach des Landesportbundes regelmäßig Sport. Dieser Anteil soll möglichst weiter steigen. Deshalb wollen wir gemeinsam mit dem Landessportbund und den Sportvereinen die Möglichkeiten, aktiv Sport zu treiben, weiter verbessern und erweitern – vor allem auch in den ländlichen Regionen. Stand der Dinge – Herausforderungen Viele Sportstätten in Sachsen-Anhalt sind in die Jahre gekommen. Allein der Investitionsstau bei Hallen- und Freibädern beläuft sich auf fast 300 Millionen Euro. Wenn Land und Kommunen nicht handeln, drohen hier weitere
 
 ##### source_location
 
@@ -10613,9 +10613,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0331-soziale-barrieren-abbauen-sport-darf-keine-geldfrage-sein
 
-**title:** Soziale Barrieren abbauen - Sport darf keine Geldfrage sein Für Kinder und …
+**title:** Soziale Barrieren abbauen – Sport darf keine Geldfrage sein Für Kinder und …
 
-**commitment_text:** Soziale Barrieren abbauen - Sport darf keine Geldfrage sein Für Kinder und Jugendliche aus einkommensschwachen Familien wollen wir dafür sorgen, dass die Aufwendungen für Beiträge, Ausrüstung und Fahrkosten kein Hinderungsgrund für sportliche Betätigung sind. Dafür setzen wir auf Zuschüsse für Mitgliedsbeiträge, auf die bessere Verzahnung von Bildungs- und Teilhabeleistungen mit dem Vereinssport und auf die Unterstützung der Kooperationen von Schulen, Kitas und Vereinen. Außerdem sollen erfolgreiche Projekte, wie z.B. die Talentsichtung und -förderung, fortgeführt werden.
+**commitment_text:** Soziale Barrieren abbauen – Sport darf keine Geldfrage sein Für Kinder und Jugendliche aus einkommensschwachen Familien wollen wir dafür sorgen, dass die Aufwendungen für Beiträge, Ausrüstung und Fahrkosten kein Hinderungsgrund für sportliche Betätigung sind. Dafür setzen wir auf Zuschüsse für Mitgliedsbeiträge, auf die bessere Verzahnung von Bildungs- und Teilhabeleistungen mit dem Vereinssport und auf die Unterstützung der Kooperationen von Schulen, Kitas und Vereinen. Außerdem sollen erfolgreiche Projekte, wie z.B. die Talentsichtung und -förderung, fortgeführt werden.
 
 ##### source_location
 
@@ -11702,9 +11702,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0365-dass-uebertragene-aufgaben-ausfinanziert-werden-wer-bestel
 
-**title:** dass übertragene Aufgaben ausfinanziert werden - wer bestellt, der zahlt die ganze …
+**title:** dass übertragene Aufgaben ausfinanziert werden – wer bestellt, der zahlt die ganze …
 
-**commitment_text:** dass übertragene Aufgaben ausfinanziert werden - wer bestellt, der zahlt die ganze Rechnung,
+**commitment_text:** dass übertragene Aufgaben ausfinanziert werden – wer bestellt, der zahlt die ganze Rechnung,
 
 ##### source_location
 
@@ -11864,7 +11864,7 @@ _Leere Liste._
 
 **title:** Bewährtes bewahren und Aufgaben von morgen schon jetzt angehen
 
-**commitment_text:** Bewährtes bewahren und Aufgaben von morgen schon jetzt angehen. Unser Ziel ist eine starke kommunale Selbstverwaltung und eine lebendige Demokratie, in der Menschen unmittelbar Einfluss nehmen können und damit ein friedliches und solidarisches Miteinander vor Ort fördern. Mehr Beteiligung der Kommunen im Gesetzgebungsprozess Eine gute Demokratie beginnt vor Ort. Kommunen sind der direkte Ort, an dem Staat und Bürger:innen zusammenkommen. Damit Politik gut funktioniert, müssen Kommunen mitreden dürfen - nicht nur zuhören. Es braucht echte Mitbestimmung im Gesetzgebungsprozess, vor allem, wenn auf Landesebene Aufgaben formuliert werden, die kommunal umgesetzt werden sollen. Verbindliche Grundsätze für alle:
+**commitment_text:** Bewährtes bewahren und Aufgaben von morgen schon jetzt angehen. Unser Ziel ist eine starke kommunale Selbstverwaltung und eine lebendige Demokratie, in der Menschen unmittelbar Einfluss nehmen können und damit ein friedliches und solidarisches Miteinander vor Ort fördern. Mehr Beteiligung der Kommunen im Gesetzgebungsprozess Eine gute Demokratie beginnt vor Ort. Kommunen sind der direkte Ort, an dem Staat und Bürger:innen zusammenkommen. Damit Politik gut funktioniert, müssen Kommunen mitreden dürfen – nicht nur zuhören. Es braucht echte Mitbestimmung im Gesetzgebungsprozess, vor allem, wenn auf Landesebene Aufgaben formuliert werden, die kommunal umgesetzt werden sollen. Verbindliche Grundsätze für alle:
 
 ##### source_location
 
@@ -11896,7 +11896,7 @@ _Leere Liste._
 
 **title:** Verantwortung behalten
 
-**commitment_text:** Verantwortung behalten: Entscheidungen sollen dort getroffen werden, wo sie am besten wirken - in der Kommune.
+**commitment_text:** Verantwortung behalten: Entscheidungen sollen dort getroffen werden, wo sie am besten wirken – in der Kommune.
 
 ##### source_location
 
@@ -12120,7 +12120,7 @@ _Leere Liste._
 
 **title:** Transparenz und Rechenschaft
 
-**commitment_text:** Transparenz und Rechenschaft: Stellungnahmen, Begründungen und Umsetzungsschritte sollen öffentlich sichtbar sein - für Kommunen, Unternehmen und Einwohner:innen gleichermaßen. Echte Beteiligung auf der Kommunalebene ist kein Zusatz, sondern eine Notwendigkeit für robuste, gerechte und zukunftsfähige Politik. Denn sie stärkt von unten nach oben das Gemeinwesen, reduziert Konflikte und erhöht die Lebensqualität der Menschen vor Ort. Lebendige Demokratie durch echte Bürgerbeteiligung Eine starke Demokratie beginnt dort, wo Menschen leben und arbeiten: in unseren Städten, Gemeinden und Vierteln. Um Politik wirksam, gerecht und zukunftsfähig zu gestalten, brauchen wir echte Beteiligung vor Ort - Mitsprache, Mitgestaltung und Mitverantwortung. Dafür wollen wir:
+**commitment_text:** Transparenz und Rechenschaft: Stellungnahmen, Begründungen und Umsetzungsschritte sollen öffentlich sichtbar sein – für Kommunen, Unternehmen und Einwohner:innen gleichermaßen. Echte Beteiligung auf der Kommunalebene ist kein Zusatz, sondern eine Notwendigkeit für robuste, gerechte und zukunftsfähige Politik. Denn sie stärkt von unten nach oben das Gemeinwesen, reduziert Konflikte und erhöht die Lebensqualität der Menschen vor Ort. Lebendige Demokratie durch echte Bürgerbeteiligung Eine starke Demokratie beginnt dort, wo Menschen leben und arbeiten: in unseren Städten, Gemeinden und Vierteln. Um Politik wirksam, gerecht und zukunftsfähig zu gestalten, brauchen wir echte Beteiligung vor Ort – Mitsprache, Mitgestaltung und Mitverantwortung. Dafür wollen wir:
 
 ##### source_location
 
@@ -12150,9 +12150,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0379-beteiligung-auf-augenhoehe-regionale-foren-buergerraete-au
 
-**title:** Beteiligung auf Augenhöhe - Regionale Foren, Bürgerräte auf allen Ebenen, Werkstattgespräche in …
+**title:** Beteiligung auf Augenhöhe – Regionale Foren, Bürgerräte auf allen Ebenen, Werkstattgespräche in …
 
-**commitment_text:** Beteiligung auf Augenhöhe - Regionale Foren, Bürgerräte auf allen Ebenen, Werkstattgespräche in betroffenen Gemeinden, Bürgerbudgets, Bürgerhaushalte, und partizipative Projekte erhalten Unterstützung und finanzielle Förderung. Kommunen, die neue und innovative Formen der Beteiligung erproben, sollen dabei ausdrücklich als Modellkommunen unterstützt werden.
+**commitment_text:** Beteiligung auf Augenhöhe – Regionale Foren, Bürgerräte auf allen Ebenen, Werkstattgespräche in betroffenen Gemeinden, Bürgerbudgets, Bürgerhaushalte, und partizipative Projekte erhalten Unterstützung und finanzielle Förderung. Kommunen, die neue und innovative Formen der Beteiligung erproben, sollen dabei ausdrücklich als Modellkommunen unterstützt werden.
 
 ##### source_location
 
@@ -12182,9 +12182,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0380-lernen-und-anpassen-regionale-beteiligungsteams-aus-verwal
 
-**title:** Lernen und Anpassen - Regionale Beteiligungsteams aus Verwaltung, Politik, Zivilgesellschaft und Wissenschaft …
+**title:** Lernen und Anpassen – Regionale Beteiligungsteams aus Verwaltung, Politik, Zivilgesellschaft und Wissenschaft …
 
-**commitment_text:** Lernen und Anpassen - Regionale Beteiligungsteams aus Verwaltung, Politik, Zivilgesellschaft und Wissenschaft werden gebildet, die messbare Ziele überprüfen (Zufriedenheit, Schnelligkeit, Kosten) und Hinweise für korrigierende Maßnahmen an die Kommunen und das Land geben.
+**commitment_text:** Lernen und Anpassen – Regionale Beteiligungsteams aus Verwaltung, Politik, Zivilgesellschaft und Wissenschaft werden gebildet, die messbare Ziele überprüfen (Zufriedenheit, Schnelligkeit, Kosten) und Hinweise für korrigierende Maßnahmen an die Kommunen und das Land geben.
 
 ##### source_location
 
@@ -12215,9 +12215,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0381-staerkung-und-teilhabe-aller-kommunalen-ebenen-vom-ortscha
 
-**title:** Stärkung und Teilhabe aller kommunalen Ebenen - Vom Ortschaftsrat über den Gemeinderat …
+**title:** Stärkung und Teilhabe aller kommunalen Ebenen – Vom Ortschaftsrat über den Gemeinderat …
 
-**commitment_text:** Stärkung und Teilhabe aller kommunalen Ebenen - Vom Ortschaftsrat über den Gemeinderat und Stadtrat bis hin zum Kreistag: Ortschaftsräte sollen innerhalb der kommunalen Familie wieder gestärkt werden. Sie
+**commitment_text:** Stärkung und Teilhabe aller kommunalen Ebenen – Vom Ortschaftsrat über den Gemeinderat und Stadtrat bis hin zum Kreistag: Ortschaftsräte sollen innerhalb der kommunalen Familie wieder gestärkt werden. Sie
 
 ##### source_location
 
@@ -12441,7 +12441,7 @@ _Leere Liste._
 
 **title:** besondere Investitionsbedarfe bzw
 
-**commitment_text:** besondere Investitionsbedarfe bzw. strukturelle Herausforderungen wie etwa ein regionaler Strukturwandel oder besondere Umwelt- bzw. Klimafolgen einzukalkulieren. Kommunale Pauschalförderung heißt: Wir vertrauen den Menschen vor Ort statt auf Misstrauen und Bürokratie von oben! Mit einer solidarischen Pauschalförderung geben wir ihnen die Freiheit und die Mittel, Probleme direkt anzupacken - ohne endlose Anträge, Formulare und Gänge durch Behördenlabyrinthe. So stärken wir die kommunale Selbstverwaltung, schaffen Planungssicherheit und bauen bürokratische Hürden ab. Gleichzeitig sorgen wir dafür, dass soziale und strukturelle Unterschiede nicht weiterwachsen, sondern ausgeglichen werden. Kurz gesagt: Eine kommunale Pauschalförderung macht das Leben in unseren Städten und Gemeinden besser. Stärkung der kommunalen Finanzen Eine Stärkung der kommunalen Finanzen bedeutet zugleich die Stärkung der lokalen Demokratie: Nur wenn die Kommunen über ausreichende Mittel verfügen, können sie nicht nur gesetzliche Verpflichtungen umsetzen, sondern auch eigene, auf die Bedürfnisse der Menschen vor Ort zugeschnittene Akzente setzen. Denn nur so entsteht Raum für kreative Lösungen, bürgerschaftliches Engagement und ein solidarisches Miteinander, das den gesellschaftlichen Frieden und das Vertrauen in politische Prozesse festigt. Wir setzen uns ein für:
+**commitment_text:** besondere Investitionsbedarfe bzw. strukturelle Herausforderungen wie etwa ein regionaler Strukturwandel oder besondere Umwelt- bzw. Klimafolgen einzukalkulieren. Kommunale Pauschalförderung heißt: Wir vertrauen den Menschen vor Ort statt auf Misstrauen und Bürokratie von oben! Mit einer solidarischen Pauschalförderung geben wir ihnen die Freiheit und die Mittel, Probleme direkt anzupacken – ohne endlose Anträge, Formulare und Gänge durch Behördenlabyrinthe. So stärken wir die kommunale Selbstverwaltung, schaffen Planungssicherheit und bauen bürokratische Hürden ab. Gleichzeitig sorgen wir dafür, dass soziale und strukturelle Unterschiede nicht weiterwachsen, sondern ausgeglichen werden. Kurz gesagt: Eine kommunale Pauschalförderung macht das Leben in unseren Städten und Gemeinden besser. Stärkung der kommunalen Finanzen Eine Stärkung der kommunalen Finanzen bedeutet zugleich die Stärkung der lokalen Demokratie: Nur wenn die Kommunen über ausreichende Mittel verfügen, können sie nicht nur gesetzliche Verpflichtungen umsetzen, sondern auch eigene, auf die Bedürfnisse der Menschen vor Ort zugeschnittene Akzente setzen. Denn nur so entsteht Raum für kreative Lösungen, bürgerschaftliches Engagement und ein solidarisches Miteinander, das den gesellschaftlichen Frieden und das Vertrauen in politische Prozesse festigt. Wir setzen uns ein für:
 
 ##### source_location
 
@@ -12568,9 +12568,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0392-das-land-konsolidiert-seinen-haushalt-auch-auf-kosten-der
 
-**title:** Das Land konsolidiert seinen Haushalt auch auf Kosten der Kommunen - durch …
+**title:** Das Land konsolidiert seinen Haushalt auch auf Kosten der Kommunen – durch …
 
-**commitment_text:** Das Land konsolidiert seinen Haushalt auch auf Kosten der Kommunen - durch Unterfinanzierung des kommunalen Finanzausgleichs (KFA), insbesondere bei Schlüsselzuweisungen und Sonderbedarfsergänzungszuweisungen. Dies hat dazu geführt, dass die Umlagefinanzierung der Landkreise und Verbandsgemeinden für ihre eigene Haushaltskonsolidierung zunehmend die Finanzen ihrer Mitgliedsgemeinden beeinträchtigt und deren Rechte verletzt. Dieser Umstand ist seit Jahren bekannt, weil immer mehr Gemeinden erfolgreich gegen die Umlagen klagen.
+**commitment_text:** Das Land konsolidiert seinen Haushalt auch auf Kosten der Kommunen – durch Unterfinanzierung des kommunalen Finanzausgleichs (KFA), insbesondere bei Schlüsselzuweisungen und Sonderbedarfsergänzungszuweisungen. Dies hat dazu geführt, dass die Umlagefinanzierung der Landkreise und Verbandsgemeinden für ihre eigene Haushaltskonsolidierung zunehmend die Finanzen ihrer Mitgliedsgemeinden beeinträchtigt und deren Rechte verletzt. Dieser Umstand ist seit Jahren bekannt, weil immer mehr Gemeinden erfolgreich gegen die Umlagen klagen.
 
 ##### source_location
 
@@ -12602,7 +12602,7 @@ _Leere Liste._
 
 **title:** Die Kommunen Sachsen-Anhalts haben real weniger Handlungsspielraum aufgrund von Inflation, Tarifsteigerungen und …
 
-**commitment_text:** Die Kommunen Sachsen-Anhalts haben real weniger Handlungsspielraum aufgrund von Inflation, Tarifsteigerungen und Energiepreisen - trotz nominell stabiler Einnahmen.
+**commitment_text:** Die Kommunen Sachsen-Anhalts haben real weniger Handlungsspielraum aufgrund von Inflation, Tarifsteigerungen und Energiepreisen – trotz nominell stabiler Einnahmen.
 
 ##### source_location
 
@@ -12890,7 +12890,7 @@ _Leere Liste._
 
 **title:** Die Tilgung kommunaler Altschulden, über Jahrzehnte angehäuft, belastet heutige und künftige Generationen …
 
-**commitment_text:** Die Tilgung kommunaler Altschulden, über Jahrzehnte angehäuft, belastet heutige und künftige Generationen - ohne, dass sie je über die Ursachen mitentscheiden konnten. Ein Schuldenschnitt ist sozial gerecht.
+**commitment_text:** Die Tilgung kommunaler Altschulden, über Jahrzehnte angehäuft, belastet heutige und künftige Generationen – ohne, dass sie je über die Ursachen mitentscheiden konnten. Ein Schuldenschnitt ist sozial gerecht.
 
 ##### source_location
 
@@ -12922,7 +12922,7 @@ _Leere Liste._
 
 **title:** Finanzschwache Kommunen müssen Leistungsangebote kürzen, während wohlhabende Kommunen weiter investieren können
 
-**commitment_text:** Finanzschwache Kommunen müssen Leistungsangebote kürzen, während wohlhabende Kommunen weiter investieren können. Ein Schuldenschnitt wäre ein Schritt zur Angleichung der Lebensverhältnisse - gemäß Grundgesetz und Landesverfassungen.
+**commitment_text:** Finanzschwache Kommunen müssen Leistungsangebote kürzen, während wohlhabende Kommunen weiter investieren können. Ein Schuldenschnitt wäre ein Schritt zur Angleichung der Lebensverhältnisse – gemäß Grundgesetz und Landesverfassungen.
 
 ##### source_location
 
@@ -13019,7 +13019,7 @@ _Leere Liste._
 
 **title:** In vielen Kommunen fließt ein erheblicher Teil der laufenden Haushaltsmittel in die …
 
-**commitment_text:** In vielen Kommunen fließt ein erheblicher Teil der laufenden Haushaltsmittel in die Entschuldung statt in Infrastruktur. Ein Schuldenschnitt würde finanzielle Spielräume für die kommunale Identität freimachen - ohne neue Schulden.
+**commitment_text:** In vielen Kommunen fließt ein erheblicher Teil der laufenden Haushaltsmittel in die Entschuldung statt in Infrastruktur. Ein Schuldenschnitt würde finanzielle Spielräume für die kommunale Identität freimachen – ohne neue Schulden.
 
 ##### source_location
 
@@ -13051,7 +13051,7 @@ _Leere Liste._
 
 **title:** Mehr finanzielle Haushaltsmittel bedeuten auch mehr Mittel zur Gewinnung und zur Ausbildung …
 
-**commitment_text:** Mehr finanzielle Haushaltsmittel bedeuten auch mehr Mittel zur Gewinnung und zur Ausbildung von qualifiziertem Personal, so dass die Kommunen ihre Aufgaben effizienter erfüllen, die Qualität von Dienst-leistungen erhöhen und langfristig die Versorgung und Betreuung der Bürger:innen sichern können. Durch einen Schuldenschnitt, eine faire Gemeindewirtschaftssteuer und durch gezielte Umverteilung stärken wir die Kommunen und sorgen für ein friedliches, solidarisches Miteinander und eine gute Zukunft für alle. Wir stehen für finanziell starke Kommunen, die gestalten können, statt nur verwalten müssen. Die Kommune der Zukunft - lebendig, gerecht und zukunftsfähig Wir richten den Blick schon heute auf die Kommune von morgen. Die Kommune der Zukunft muss ein Ort sein, an dem Menschen gern leben, arbeiten und sich engagieren. Sie verbindet moderne Infrastruktur, soziale Gerechtigkeit und ökologisches Bewusstsein. Damit Kommunen zukunftsfähig werden, müssen wir schon jetzt gemeinsam mit ihnen die richtigen Weichen stellen und die vielfältigen Herausforderungen entschlossen annehmen. Wir wollen daher:
+**commitment_text:** Mehr finanzielle Haushaltsmittel bedeuten auch mehr Mittel zur Gewinnung und zur Ausbildung von qualifiziertem Personal, so dass die Kommunen ihre Aufgaben effizienter erfüllen, die Qualität von Dienst-leistungen erhöhen und langfristig die Versorgung und Betreuung der Bürger:innen sichern können. Durch einen Schuldenschnitt, eine faire Gemeindewirtschaftssteuer und durch gezielte Umverteilung stärken wir die Kommunen und sorgen für ein friedliches, solidarisches Miteinander und eine gute Zukunft für alle. Wir stehen für finanziell starke Kommunen, die gestalten können, statt nur verwalten müssen. Die Kommune der Zukunft – lebendig, gerecht und zukunftsfähig Wir richten den Blick schon heute auf die Kommune von morgen. Die Kommune der Zukunft muss ein Ort sein, an dem Menschen gern leben, arbeiten und sich engagieren. Sie verbindet moderne Infrastruktur, soziale Gerechtigkeit und ökologisches Bewusstsein. Damit Kommunen zukunftsfähig werden, müssen wir schon jetzt gemeinsam mit ihnen die richtigen Weichen stellen und die vielfältigen Herausforderungen entschlossen annehmen. Wir wollen daher:
 
 ##### source_location
 
@@ -13276,7 +13276,7 @@ _Leere Liste._
 
 **title:** Interkommunale Zusammenarbeit
 
-**commitment_text:** Interkommunale Zusammenarbeit: Kommunen der Zukunft arbeiten nicht mehr isoliert, sondern kooperieren strategisch. Sie teilen Ressourcen und entwickeln digitale Lösungen gemeinsam. Interkommunale Skalierung, Open-Source-Software und nachnutzbare digitale Werkzeuge werden zum Standard. So entstehen effiziente Strukturen, sinkende Kosten, mehr Fachwissen - und Lösungen, die über einzelne Kommunen hinaus für ganze Regionen wirken. Die Kommune der Zukunft ist also kein abstraktes Ziel, sondern ein fortlaufender Prozess: Sie verlangt Investitionen, Kreativität, Mut zur Veränderung und die Bereitschaft, Bürger:innen in alle Entscheidungen einzubeziehen. Sie braucht ebenso Fürsorglichkeit und Wertschätzung, um ein gesellschaftliches Miteinander zu gewährleisten. Als starker Partner an der Seite der kommunalen Familie wollen wir uns dieser Aufgaben kraftvoll anpacken und gemeinsam Orte schaffen, an denen Menschen nicht nur wohnen, sondern zu Hause sind.
+**commitment_text:** Interkommunale Zusammenarbeit: Kommunen der Zukunft arbeiten nicht mehr isoliert, sondern kooperieren strategisch. Sie teilen Ressourcen und entwickeln digitale Lösungen gemeinsam. Interkommunale Skalierung, Open-Source-Software und nachnutzbare digitale Werkzeuge werden zum Standard. So entstehen effiziente Strukturen, sinkende Kosten, mehr Fachwissen – und Lösungen, die über einzelne Kommunen hinaus für ganze Regionen wirken. Die Kommune der Zukunft ist also kein abstraktes Ziel, sondern ein fortlaufender Prozess: Sie verlangt Investitionen, Kreativität, Mut zur Veränderung und die Bereitschaft, Bürger:innen in alle Entscheidungen einzubeziehen. Sie braucht ebenso Fürsorglichkeit und Wertschätzung, um ein gesellschaftliches Miteinander zu gewährleisten. Als starker Partner an der Seite der kommunalen Familie wollen wir uns dieser Aufgaben kraftvoll anpacken und gemeinsam Orte schaffen, an denen Menschen nicht nur wohnen, sondern zu Hause sind.
 
 ##### source_location
 
@@ -14461,7 +14461,7 @@ _Leere Liste._
 
 **title:** Schaffung und Erhalt von Inklusionsarbeitsplätzen (bspw
 
-**commitment_text:** Schaffung und Erhalt von Inklusionsarbeitsplätzen (bspw. für Menschen mit geistiger Beeinträchtigung) Tarifbindung stärken - faire Löhne sichern Wo Tarif gilt, geht es den Menschen besser. Doch immer weniger Betriebe zahlen ihn noch - das drückt Löhne und mindert Lebensqualität. Wir wollen die Tarifbindung wieder zur Regel machen. Dafür fordern wir:
+**commitment_text:** Schaffung und Erhalt von Inklusionsarbeitsplätzen (bspw. für Menschen mit geistiger Beeinträchtigung) Tarifbindung stärken - faire Löhne sichern Wo Tarif gilt, geht es den Menschen besser. Doch immer weniger Betriebe zahlen ihn noch – das drückt Löhne und mindert Lebensqualität. Wir wollen die Tarifbindung wieder zur Regel machen. Dafür fordern wir:
 
 ##### source_location
 
@@ -14555,9 +14555,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0454-die-allgemeinverbindlichkeit-von-tarifvertraegen-zu-erleic
 
-**title:** die Allgemeinverbindlichkeit von Tarifverträgen zu erleichtern - Blockaden der Arbeitgeber zu beenden
+**title:** die Allgemeinverbindlichkeit von Tarifverträgen zu erleichtern – Blockaden der Arbeitgeber zu beenden
 
-**commitment_text:** die Allgemeinverbindlichkeit von Tarifverträgen zu erleichtern - Blockaden der Arbeitgeber zu beenden.
+**commitment_text:** die Allgemeinverbindlichkeit von Tarifverträgen zu erleichtern – Blockaden der Arbeitgeber zu beenden.
 
 ##### source_location
 
@@ -14717,7 +14717,7 @@ _Leere Liste._
 
 **title:** ein Landesprogramm zur Unterstützung von betrieblicher Mitbestimmung in kleinen und mittleren Unternehmen …
 
-**commitment_text:** ein Landesprogramm zur Unterstützung von betrieblicher Mitbestimmung in kleinen und mittleren Unternehmen (KMU). Demokratische Wirtschaft - Zukunft gemeinsam gestalten Sachsen-Anhalt darf kein Land der billigen Arbeit und schwachen Mitbestimmung sein. Wir wollen eine Wirtschaft, die den Menschen dient - nicht nur Konzernzentralen und Profiten. Transformation, Investitionen und Innovation müssen von unten mitgestaltet werden: durch Beschäftigte, Gewerkschaften, Wissenschaft und Kommunen. Unsere Perspektive:
+**commitment_text:** ein Landesprogramm zur Unterstützung von betrieblicher Mitbestimmung in kleinen und mittleren Unternehmen (KMU). Demokratische Wirtschaft - Zukunft gemeinsam gestalten Sachsen-Anhalt darf kein Land der billigen Arbeit und schwachen Mitbestimmung sein. Wir wollen eine Wirtschaft, die den Menschen dient – nicht nur Konzernzentralen und Profiten. Transformation, Investitionen und Innovation müssen von unten mitgestaltet werden: durch Beschäftigte, Gewerkschaften, Wissenschaft und Kommunen. Unsere Perspektive:
 
 ##### source_location
 
@@ -14974,7 +14974,7 @@ _Leere Liste._
 
 **title:** klare Regeln für faire Arbeit
 
-**commitment_text:** klare Regeln für faire Arbeit: konsequente Kontrolle von Leiharbeit, Werkverträgen und Subunternehmen in Landwirtschaft, Bau und Logistik - mit Schwerpunktprüfungen durch „Finanzkontrolle Schwarzarbeit“ und Landesbehörden,
+**commitment_text:** klare Regeln für faire Arbeit: konsequente Kontrolle von Leiharbeit, Werkverträgen und Subunternehmen in Landwirtschaft, Bau und Logistik – mit Schwerpunktprüfungen durch „Finanzkontrolle Schwarzarbeit“ und Landesbehörden,
 
 ##### source_location
 
@@ -15039,7 +15039,7 @@ _Leere Liste._
 
 **title:** schnelle Anerkennung von Berufsabschlüssen
 
-**commitment_text:** schnelle Anerkennung von Berufsabschlüssen: Das Land investiert in Anerkennungsstellen, digitale Verfahren, Sprachförderung und Beratung - damit Fähigkeiten schnell zum Tragen kommen und Fachkräfte nicht in prekäre Jobs gedrängt werden. Das stärkt Wirtschaft, Verwaltung, Gesundheit und Industrie gleichermaßen.
+**commitment_text:** schnelle Anerkennung von Berufsabschlüssen: Das Land investiert in Anerkennungsstellen, digitale Verfahren, Sprachförderung und Beratung – damit Fähigkeiten schnell zum Tragen kommen und Fachkräfte nicht in prekäre Jobs gedrängt werden. Das stärkt Wirtschaft, Verwaltung, Gesundheit und Industrie gleichermaßen.
 
 ##### source_location
 
@@ -15071,7 +15071,7 @@ _Leere Liste._
 
 **title:** Rechte stärken, Missbrauch stoppen
 
-**commitment_text:** Rechte stärken, Missbrauch stoppen: härtere Sanktionen bei Ausbeutung sowie landesweite Beratungsstellen für Arbeitsmigrant:innen, unterstützt von Gewerkschaften - damit Betroffene ihre Rechte kennen und durchsetzen können
+**commitment_text:** Rechte stärken, Missbrauch stoppen: härtere Sanktionen bei Ausbeutung sowie landesweite Beratungsstellen für Arbeitsmigrant:innen, unterstützt von Gewerkschaften – damit Betroffene ihre Rechte kennen und durchsetzen können
 
 ##### source_location
 
@@ -15103,7 +15103,7 @@ _Leere Liste._
 
 **title:** Integration in Betriebe und Regionen
 
-**commitment_text:** Integration in Betriebe und Regionen: Förderprogramme für Betriebe, die Migrant:innen qualifizieren, weiterbilden und langfristig übernehmen - statt rotierender Ausbeutungsmodelle durch Leiharbeitsfirmen. Sachsen-Anhalt braucht Arbeitsmigration - nicht trotz, sondern wegen des demografischen Wandels. Wenn Menschen hier arbeiten wollen, verdienen sie Respekt, Sicherheit und echte Zukunftschancen. Faire Regeln schützen nicht nur die Beschäftigten, sondern auch die regionalen Betriebe, Handwerksbetriebe und die Tarifstandards, die unser Land tragen.
+**commitment_text:** Integration in Betriebe und Regionen: Förderprogramme für Betriebe, die Migrant:innen qualifizieren, weiterbilden und langfristig übernehmen – statt rotierender Ausbeutungsmodelle durch Leiharbeitsfirmen. Sachsen-Anhalt braucht Arbeitsmigration – nicht trotz, sondern wegen des demografischen Wandels. Wenn Menschen hier arbeiten wollen, verdienen sie Respekt, Sicherheit und echte Zukunftschancen. Faire Regeln schützen nicht nur die Beschäftigten, sondern auch die regionalen Betriebe, Handwerksbetriebe und die Tarifstandards, die unser Land tragen.
 
 ##### source_location
 
@@ -15231,7 +15231,7 @@ _Leere Liste._
 
 **title:** und hohe Umwelt- und Menschenrechtsstandards
 
-**commitment_text:** und hohe Umwelt- und Menschenrechtsstandards. Wir setzen auf eine resiliente, regional verankerte Wirtschaft, die Wohlstand und soziale Stabilität schafft - nicht nur Profite für einige Wenige. SachsenAnhalt braucht dafür eine aktive, demokratische Industriepolitik, die Beschäftigung sichert, Transformation gestaltet und regionale Wertschöpfung stärkt - statt Abhängigkeiten zu vertiefen. Stand der Dinge - Herausforderungen Sachsen-Anhalt steht vor tiefgreifenden wirtschaftlichen Herausforderungen: Alte Strukturen brechen weg, die Chemie- und Automobilzulieferindustrie stehen unter Druck durch steigende Energiepreise, internationale Konkurrenz und den Klimawandel. Viele kleine und mittlere Unternehmen sowie das Handwerk kämpfen um ihre Existenz, Fachkräfte fehlen, und Regionen drohen abgehängt zu werden. Die bisherigen Landesregierungen haben oft auf Großprojekte gesetzt und die soziale und ökologische Zukunft der Wirtschaft aus dem Blick verloren. Auch bei der Unterstützung der betroffenen Regionen versagt das Land. Weniger als die Hälfte der Landesmittel für den Strukturwandel gehen an betroffene Landkreise und wenn, haben die geförderten Projekte wenig bis gar nichts mit dem Strukturwandel zu tun. Stillstand und Abhängigkeit von einzelnen Konzernen gefährden Arbeitsplätze, Wertschöpfung und die Perspektiven der Menschen vor Ort. Eine aktive Industriepolitik für Sachsen-Anhalt verbindet deshalb regionale Wertschöpfung mit einer verantwortungsvollen, ressourcenschonenden und kreislauforientierten Wirtschaft, die ökologische Belastungen reduziert und die natürlichen Lebensgrundlagen schützt.
+**commitment_text:** und hohe Umwelt- und Menschenrechtsstandards. Wir setzen auf eine resiliente, regional verankerte Wirtschaft, die Wohlstand und soziale Stabilität schafft – nicht nur Profite für einige Wenige. SachsenAnhalt braucht dafür eine aktive, demokratische Industriepolitik, die Beschäftigung sichert, Transformation gestaltet und regionale Wertschöpfung stärkt – statt Abhängigkeiten zu vertiefen. Stand der Dinge – Herausforderungen Sachsen-Anhalt steht vor tiefgreifenden wirtschaftlichen Herausforderungen: Alte Strukturen brechen weg, die Chemie- und Automobilzulieferindustrie stehen unter Druck durch steigende Energiepreise, internationale Konkurrenz und den Klimawandel. Viele kleine und mittlere Unternehmen sowie das Handwerk kämpfen um ihre Existenz, Fachkräfte fehlen, und Regionen drohen abgehängt zu werden. Die bisherigen Landesregierungen haben oft auf Großprojekte gesetzt und die soziale und ökologische Zukunft der Wirtschaft aus dem Blick verloren. Auch bei der Unterstützung der betroffenen Regionen versagt das Land. Weniger als die Hälfte der Landesmittel für den Strukturwandel gehen an betroffene Landkreise und wenn, haben die geförderten Projekte wenig bis gar nichts mit dem Strukturwandel zu tun. Stillstand und Abhängigkeit von einzelnen Konzernen gefährden Arbeitsplätze, Wertschöpfung und die Perspektiven der Menschen vor Ort. Eine aktive Industriepolitik für Sachsen-Anhalt verbindet deshalb regionale Wertschöpfung mit einer verantwortungsvollen, ressourcenschonenden und kreislauforientierten Wirtschaft, die ökologische Belastungen reduziert und die natürlichen Lebensgrundlagen schützt.
 
 ##### source_location
 
@@ -15261,9 +15261,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0476-langfristige-investitionen-statt-subventionen-kredite-und
 
-**title:** langfristige Investitionen statt Subventionen - Kredite und Beteiligungen zur klimaneutralen Umstellung, Modernisierung …
+**title:** langfristige Investitionen statt Subventionen – Kredite und Beteiligungen zur klimaneutralen Umstellung, Modernisierung …
 
-**commitment_text:** langfristige Investitionen statt Subventionen - Kredite und Beteiligungen zur klimaneutralen Umstellung, Modernisierung und Transformation von Unternehmen,
+**commitment_text:** langfristige Investitionen statt Subventionen – Kredite und Beteiligungen zur klimaneutralen Umstellung, Modernisierung und Transformation von Unternehmen,
 
 ##### source_location
 
@@ -15293,9 +15293,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0477-sozial-oekologische-transformation-investitionen-werden-an
 
-**title:** Sozial-ökologische Transformation - Investitionen werden an Tarifbindung, Standortgarantie und gemeinwohlorientierte Produktionsverfahren gekoppelt,
+**title:** Sozial-ökologische Transformation – Investitionen werden an Tarifbindung, Standortgarantie und gemeinwohlorientierte Produktionsverfahren gekoppelt,
 
-**commitment_text:** Sozial-ökologische Transformation - Investitionen werden an Tarifbindung, Standortgarantie und gemeinwohlorientierte Produktionsverfahren gekoppelt,
+**commitment_text:** Sozial-ökologische Transformation – Investitionen werden an Tarifbindung, Standortgarantie und gemeinwohlorientierte Produktionsverfahren gekoppelt,
 
 ##### source_location
 
@@ -15325,9 +15325,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0478-beteiligung-statt-abhaengigkeit-unternehmen-koennen-sich-a
 
-**title:** Beteiligung statt Abhängigkeit - Unternehmen können sich am Fonds beteiligen - finanziell …
+**title:** Beteiligung statt Abhängigkeit – Unternehmen können sich am Fonds beteiligen – finanziell …
 
-**commitment_text:** Beteiligung statt Abhängigkeit - Unternehmen können sich am Fonds beteiligen - finanziell oder projektbezogen -, um so gemeinsam die wirtschaftliche Entwicklung zu gestalten,
+**commitment_text:** Beteiligung statt Abhängigkeit – Unternehmen können sich am Fonds beteiligen – finanziell oder projektbezogen –, um so gemeinsam die wirtschaftliche Entwicklung zu gestalten,
 
 ##### source_location
 
@@ -15390,9 +15390,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0480-demokratische-mitbestimmung-die-bewirtschaftung-des-fonds
 
-**title:** Demokratische Mitbestimmung - die Bewirtschaftung des Fonds und Investitionsentscheidungen erfolgen gemeinsam mit …
+**title:** Demokratische Mitbestimmung – die Bewirtschaftung des Fonds und Investitionsentscheidungen erfolgen gemeinsam mit …
 
-**commitment_text:** Demokratische Mitbestimmung - die Bewirtschaftung des Fonds und Investitionsentscheidungen erfolgen gemeinsam mit Beschäftigten, Gewerkschaften, Wissenschaft und Kommunen,
+**commitment_text:** Demokratische Mitbestimmung – die Bewirtschaftung des Fonds und Investitionsentscheidungen erfolgen gemeinsam mit Beschäftigten, Gewerkschaften, Wissenschaft und Kommunen,
 
 ##### source_location
 
@@ -15425,7 +15425,7 @@ _Leere Liste._
 
 **title:** Weiterbildung und Zukunftskompetenzen
 
-**commitment_text:** Weiterbildung und Zukunftskompetenzen: Jede Förderung wird mit Qualifizierungsprogrammen verbunden - damit niemand im Wandel zurückbleibt. So entsteht eine Industriepolitik, die nicht Subventionen verteilt, sondern Zukunft gestaltet - mit Planung, Beteiligung und Innovation. Strukturwandel demokratisch gestalten Wir engagieren uns für sozial gerechten und demokratisch und planvoll gestalteten Strukturwandel - gemeinsam mit den Menschen vor Ort. SachsenAnhalt steht im Zentrum eines gewaltigen Umbruchs. Der Abschied von fossilen Rohstoffen und das Ende überholter Exportmodelle sind unausweichlich.
+**commitment_text:** Weiterbildung und Zukunftskompetenzen: Jede Förderung wird mit Qualifizierungsprogrammen verbunden – damit niemand im Wandel zurückbleibt. So entsteht eine Industriepolitik, die nicht Subventionen verteilt, sondern Zukunft gestaltet - mit Planung, Beteiligung und Innovation. Strukturwandel demokratisch gestalten Wir engagieren uns für sozial gerechten und demokratisch und planvoll gestalteten Strukturwandel – gemeinsam mit den Menschen vor Ort. SachsenAnhalt steht im Zentrum eines gewaltigen Umbruchs. Der Abschied von fossilen Rohstoffen und das Ende überholter Exportmodelle sind unausweichlich.
 
 ##### source_location
 
@@ -15489,7 +15489,7 @@ _Leere Liste._
 
 **title:** Starke Industrie, starke Netze
 
-**commitment_text:** Starke Industrie, starke Netze: Wir sichern Schlüsselbranchen und investieren in Zukunftsinfrastruktur - leistungsfähige Strom- und Wasserstoffnetze, flächendeckende Ladepunkte und digitale Anbindungen. So bleibt Sachsen-Anhalt Industrieland mit Zukunft.
+**commitment_text:** Starke Industrie, starke Netze: Wir sichern Schlüsselbranchen und investieren in Zukunftsinfrastruktur – leistungsfähige Strom- und Wasserstoffnetze, flächendeckende Ladepunkte und digitale Anbindungen. So bleibt Sachsen-Anhalt Industrieland mit Zukunft.
 
 ##### source_location
 
@@ -15521,7 +15521,7 @@ _Leere Liste._
 
 **title:** Regionale Wertschöpfung statt verlängerter Werkbank
 
-**commitment_text:** Regionale Wertschöpfung statt verlängerter Werkbank: Industriepolitik soll die Wertschöpfung in Sachsen-Anhalt halten, Mitbestimmung stärken und regionale Wirtschaftskreisläufe fördern - statt Abhängigkeit von internationalen Konzernen zu vertiefen.
+**commitment_text:** Regionale Wertschöpfung statt verlängerter Werkbank: Industriepolitik soll die Wertschöpfung in Sachsen-Anhalt halten, Mitbestimmung stärken und regionale Wirtschaftskreisläufe fördern – statt Abhängigkeit von internationalen Konzernen zu vertiefen.
 
 ##### source_location
 
@@ -15618,7 +15618,7 @@ _Leere Liste._
 
 **title:** Mobilitätswende als Innovationsmotor
 
-**commitment_text:** Mobilitätswende als Innovationsmotor: Wir machen Sachsen-Anhalt zum Herzstück nachhaltiger Mobilität - mit klimaneutraler Produktion, Leichtbau und Elektromobilität „Made in Sachsen-Anhalt“. Der Ausbau von Lade- und Gleisinfrastruktur schafft neue Industriearbeitsplätze und stärkt regionale Wertschöpfung.
+**commitment_text:** Mobilitätswende als Innovationsmotor: Wir machen Sachsen-Anhalt zum Herzstück nachhaltiger Mobilität – mit klimaneutraler Produktion, Leichtbau und Elektromobilität „Made in Sachsen-Anhalt“. Der Ausbau von Lade- und Gleisinfrastruktur schafft neue Industriearbeitsplätze und stärkt regionale Wertschöpfung.
 
 ##### source_location
 
@@ -15650,7 +15650,7 @@ _Leere Liste._
 
 **title:** Demokratische Gestaltung des Wandels
 
-**commitment_text:** Demokratische Gestaltung des Wandels: Bürger:innen sollen mitgestalten, mitbestimmen und Verantwortung tragen. Wo Demokratie den Umbau lenkt, wächst Vertrauen - und aus Wandel entsteht Zukunft.
+**commitment_text:** Demokratische Gestaltung des Wandels: Bürger:innen sollen mitgestalten, mitbestimmen und Verantwortung tragen. Wo Demokratie den Umbau lenkt, wächst Vertrauen – und aus Wandel entsteht Zukunft.
 
 ##### source_location
 
@@ -15682,7 +15682,7 @@ _Leere Liste._
 
 **title:** Soziale Sicherheit im Wandel
 
-**commitment_text:** Soziale Sicherheit im Wandel: Überleitungsgesellschaften sichern Beschäftigung, Weiterbildung und neue Perspektiven, damit niemand im Strukturwandel zurückbleibt. Unser Ziel: Industrielle Transformation als Chance - für Beschäftigte, Regionen und Klimaschutz. Arbeitsplätze bleiben erhalten, Industrie wird grün, innovativ und demokratisch gesteuert. Automobilbranche stärken - Innovation und Arbeit sichern Wir engagieren uns für den Aufbau einer regionalen, nachhaltigen und sozial gerechten Automobilbranche. Die Automobilbranche in Sachsen-Anhalt beschäftigen rund 30.000 Menschen. Doch steigende Energie- und Produktionskosten, fehlender Kurs bei der Elektromobilität und wachsende internationale Konkurrenz setzen viele Betriebe massiv unter Druck. CDU, SPD, Grüne und FDP haben hier lange auf Planlosigkeit und Abwarten gesetzt, statt eine klare Strategie für Transformation und Arbeitsplatzsicherung zu
+**commitment_text:** Soziale Sicherheit im Wandel: Überleitungsgesellschaften sichern Beschäftigung, Weiterbildung und neue Perspektiven, damit niemand im Strukturwandel zurückbleibt. Unser Ziel: Industrielle Transformation als Chance – für Beschäftigte, Regionen und Klimaschutz. Arbeitsplätze bleiben erhalten, Industrie wird grün, innovativ und demokratisch gesteuert. Automobilbranche stärken – Innovation und Arbeit sichern Wir engagieren uns für den Aufbau einer regionalen, nachhaltigen und sozial gerechten Automobilbranche. Die Automobilbranche in Sachsen-Anhalt beschäftigen rund 30.000 Menschen. Doch steigende Energie- und Produktionskosten, fehlender Kurs bei der Elektromobilität und wachsende internationale Konkurrenz setzen viele Betriebe massiv unter Druck. CDU, SPD, Grüne und FDP haben hier lange auf Planlosigkeit und Abwarten gesetzt, statt eine klare Strategie für Transformation und Arbeitsplatzsicherung zu
 
 ##### source_location
 
@@ -15843,7 +15843,7 @@ _Leere Liste._
 
 **title:** regionale Wertschöpfung durch kurze Lieferketten, lokale Produktion und den Ausbau von Zuliefernetzwerken …
 
-**commitment_text:** regionale Wertschöpfung durch kurze Lieferketten, lokale Produktion und den Ausbau von Zuliefernetzwerken innerhalb Sachsen-Anhalts, um Abhängigkeiten von internationalen Konzernen zu reduzieren. Mit diesen Maßnahmen kann Sachsen-Anhalt seine Automobilindustrie nicht nur sichern, sondern zu einem Leuchtturm für nachhaltige, innovative und sozial verantwortliche Produktion machen - ein Ort, an dem Beschäftigte, Betriebe und Regionen gemeinsam eine starke und zukunftsfähige Wirtschaft gestalten. Chemie- und Grundstoffindustrie - Transformation sichern, Zukunft gestalten Wir engagieren uns für eine klare Linie: Klimaschutz, Versorgungssicherheit und industrielle Stärke gemeinsam denken. Die chemische und energieintensive Industrie ist das industrielle Herz Sachsen-Anhalts - von Leuna bis Schkopau. Doch hohe Energiepreise, globale Konkurrenz und drohende Standortverlagerungen gefährden Betriebe und Beschäftigung. Die Landesregierung hat bislang nur kurzfristig reagiert, statt langfristig zu planen. Wir wollen:
+**commitment_text:** regionale Wertschöpfung durch kurze Lieferketten, lokale Produktion und den Ausbau von Zuliefernetzwerken innerhalb Sachsen-Anhalts, um Abhängigkeiten von internationalen Konzernen zu reduzieren. Mit diesen Maßnahmen kann Sachsen-Anhalt seine Automobilindustrie nicht nur sichern, sondern zu einem Leuchtturm für nachhaltige, innovative und sozial verantwortliche Produktion machen – ein Ort, an dem Beschäftigte, Betriebe und Regionen gemeinsam eine starke und zukunftsfähige Wirtschaft gestalten. Chemie- und Grundstoffindustrie - Transformation sichern, Zukunft gestalten Wir engagieren uns für eine klare Linie: Klimaschutz, Versorgungssicherheit und industrielle Stärke gemeinsam denken. Die chemische und energieintensive Industrie ist das industrielle Herz Sachsen-Anhalts – von Leuna bis Schkopau. Doch hohe Energiepreise, globale Konkurrenz und drohende Standortverlagerungen gefährden Betriebe und Beschäftigung. Die Landesregierung hat bislang nur kurzfristig reagiert, statt langfristig zu planen. Wir wollen:
 
 ##### source_location
 
@@ -15875,9 +15875,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0495-faire-energiepreise-fuer-den-wandel-energie-und-co-kosten
 
-**title:** faire Energiepreise für den Wandel - Energie- und CO₂-Kosten in Umbauphasen senken …
+**title:** faire Energiepreise für den Wandel – Energie- und CO₂-Kosten in Umbauphasen senken …
 
-**commitment_text:** faire Energiepreise für den Wandel - Energie- und CO₂-Kosten in Umbauphasen senken - gekoppelt an gute Arbeit, Klimaschutz und sichere Standorte,
+**commitment_text:** faire Energiepreise für den Wandel – Energie- und CO₂-Kosten in Umbauphasen senken – gekoppelt an gute Arbeit, Klimaschutz und sichere Standorte,
 
 ##### source_location
 
@@ -15907,9 +15907,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0496-klimaneutral-produzieren-zukunft-sichern-unterstuetzung-be
 
-**title:** klimaneutral produzieren, Zukunft sichern - Unterstützung beim Umstieg auf saubere, kreislauforientierte Verfahren …
+**title:** klimaneutral produzieren, Zukunft sichern – Unterstützung beim Umstieg auf saubere, kreislauforientierte Verfahren …
 
-**commitment_text:** klimaneutral produzieren, Zukunft sichern - Unterstützung beim Umstieg auf saubere, kreislauforientierte Verfahren - mit starker öffentlicher Hand und Forschung an der Seite der Betriebe,
+**commitment_text:** klimaneutral produzieren, Zukunft sichern – Unterstützung beim Umstieg auf saubere, kreislauforientierte Verfahren – mit starker öffentlicher Hand und Forschung an der Seite der Betriebe,
 
 ##### source_location
 
@@ -15939,9 +15939,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0497-gruene-wasserstoffinfrastruktur-aufbauen-und-sichern-aufba
 
-**title:** grüne Wasserstoffinfrastruktur aufbauen und sichern - Aufbau einer landesweiten Wasserstoffinfrastruktur, die verlässlich, …
+**title:** grüne Wasserstoffinfrastruktur aufbauen und sichern – Aufbau einer landesweiten Wasserstoffinfrastruktur, die verlässlich, …
 
-**commitment_text:** grüne Wasserstoffinfrastruktur aufbauen und sichern - Aufbau einer landesweiten Wasserstoffinfrastruktur, die verlässlich, bezahlbar und - wenn nötig - in öffentlicher Hand bleibt,
+**commitment_text:** grüne Wasserstoffinfrastruktur aufbauen und sichern – Aufbau einer landesweiten Wasserstoffinfrastruktur, die verlässlich, bezahlbar und – wenn nötig – in öffentlicher Hand bleibt,
 
 ##### source_location
 
@@ -15971,9 +15971,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0498-verbindliche-transformationsvertraege-planungssicherheit-d
 
-**title:** verbindliche Transformationsverträge - Planungssicherheit durch klare Investitions- und Beschäftigungsgarantien, neue Wertschöpfung im …
+**title:** verbindliche Transformationsverträge – Planungssicherheit durch klare Investitions- und Beschäftigungsgarantien, neue Wertschöpfung im …
 
-**commitment_text:** verbindliche Transformationsverträge - Planungssicherheit durch klare Investitions- und Beschäftigungsgarantien, neue Wertschöpfung im Bereich grüner Grundstoffe und die aktive Förderung der Elektrochemie,
+**commitment_text:** verbindliche Transformationsverträge – Planungssicherheit durch klare Investitions- und Beschäftigungsgarantien, neue Wertschöpfung im Bereich grüner Grundstoffe und die aktive Förderung der Elektrochemie,
 
 ##### source_location
 
@@ -16003,9 +16003,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0499-keine-werksschliessung-ohne-perspektive-arbeitsplaetze-wis
 
-**title:** keine Werksschließung ohne Perspektive - Arbeitsplätze, Wissen und Strukturen für kommende Generationen …
+**title:** keine Werksschließung ohne Perspektive – Arbeitsplätze, Wissen und Strukturen für kommende Generationen …
 
-**commitment_text:** keine Werksschließung ohne Perspektive - Arbeitsplätze, Wissen und Strukturen für kommende Generationen sichern. Mit diesen Maßnahmen kann Sachsen-Anhalt seine Chemie- und Grundstoffindustrie nicht nur sichern, sondern zu einem Leuchtturm für nachhaltige, klimafreundliche Produktion machen - ein Ort, an dem Arbeitsplätze, regionale Stärke und die Leistungen der Industrie Hand in Hand gehen. Handwerk - Rückgrat der Transformation, Herz der Regionen Wir engagieren uns für ein starkes, modernes Handwerk, das gute Arbeit schafft und die Energiewende mitgestaltet - in Werkstätten, auf Baustellen und in unseren Städten und Dörfern. Das Handwerk ist das Rückgrat unserer Wirtschaft - regional verwurzelt, unverzichtbar für Klimaschutz, Alltag und Zusammenhalt. Doch viele Betriebe kämpfen mit steigenden Kosten, Fachkräftemangel und fehlender Perspektive. Zu lange haben CDU, SPD und FDP auf Marktkräfte vertraut, statt das Handwerk als Schlüssel für die sozialökologische Transformation zu stärken. Wir wollen:
+**commitment_text:** keine Werksschließung ohne Perspektive – Arbeitsplätze, Wissen und Strukturen für kommende Generationen sichern. Mit diesen Maßnahmen kann Sachsen-Anhalt seine Chemie- und Grundstoffindustrie nicht nur sichern, sondern zu einem Leuchtturm für nachhaltige, klimafreundliche Produktion machen – ein Ort, an dem Arbeitsplätze, regionale Stärke und die Leistungen der Industrie Hand in Hand gehen. Handwerk – Rückgrat der Transformation, Herz der Regionen Wir engagieren uns für ein starkes, modernes Handwerk, das gute Arbeit schafft und die Energiewende mitgestaltet – in Werkstätten, auf Baustellen und in unseren Städten und Dörfern. Das Handwerk ist das Rückgrat unserer Wirtschaft – regional verwurzelt, unverzichtbar für Klimaschutz, Alltag und Zusammenhalt. Doch viele Betriebe kämpfen mit steigenden Kosten, Fachkräftemangel und fehlender Perspektive. Zu lange haben CDU, SPD und FDP auf Marktkräfte vertraut, statt das Handwerk als Schlüssel für die sozialökologische Transformation zu stärken. Wir wollen:
 
 ##### source_location
 
@@ -16036,9 +16036,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0500-ein-landesprogramm-handwerk-2035-investitionen-in-klimaneu
 
-**title:** ein Landesprogramm „Handwerk 2035“ - Investitionen in klimaneutrale Produktion, Energieeffizienz und digitale …
+**title:** ein Landesprogramm „Handwerk 2035“ – Investitionen in klimaneutrale Produktion, Energieeffizienz und digitale …
 
-**commitment_text:** ein Landesprogramm „Handwerk 2035“ - Investitionen in klimaneutrale Produktion, Energieeffizienz und digitale Werkzeuge,
+**commitment_text:** ein Landesprogramm „Handwerk 2035“ – Investitionen in klimaneutrale Produktion, Energieeffizienz und digitale Werkzeuge,
 
 ##### source_location
 
@@ -16068,9 +16068,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0501-fruehzeitige-berufsorientierung-praxisbezogener-unterricht
 
-**title:** frühzeitige Berufsorientierung - praxisbezogener Unterricht und verpflichtende Schüler
+**title:** frühzeitige Berufsorientierung – praxisbezogener Unterricht und verpflichtende Schüler
 
-**commitment_text:** frühzeitige Berufsorientierung - praxisbezogener Unterricht und verpflichtende Schüler:innenpraktika, damit junge Menschen das Handwerk erleben und erlernen,
+**commitment_text:** frühzeitige Berufsorientierung – praxisbezogener Unterricht und verpflichtende Schüler:innenpraktika, damit junge Menschen das Handwerk erleben und erlernen,
 
 ##### source_location
 
@@ -16100,9 +16100,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0502-betriebe-in-beschaeftigtenhand-unterstuetzung-bei-nachfolg
 
-**title:** Betriebe in Beschäftigtenhand - Unterstützung bei Nachfolge und genossenschaftlicher Übernahme, um Arbeitsplätze …
+**title:** Betriebe in Beschäftigtenhand – Unterstützung bei Nachfolge und genossenschaftlicher Übernahme, um Arbeitsplätze …
 
-**commitment_text:** Betriebe in Beschäftigtenhand - Unterstützung bei Nachfolge und genossenschaftlicher Übernahme, um Arbeitsplätze und Wissen zu sichern,
+**commitment_text:** Betriebe in Beschäftigtenhand – Unterstützung bei Nachfolge und genossenschaftlicher Übernahme, um Arbeitsplätze und Wissen zu sichern,
 
 ##### source_location
 
@@ -16132,9 +16132,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0503-regionale-wertschoepfung-oeffentliche-auftraege-an-lokale
 
-**title:** regionale Wertschöpfung - öffentliche Aufträge an lokale Betriebe - fair, transparent und …
+**title:** regionale Wertschöpfung – öffentliche Aufträge an lokale Betriebe – fair, transparent und …
 
-**commitment_text:** regionale Wertschöpfung - öffentliche Aufträge an lokale Betriebe - fair, transparent und zukunftsorientiert,
+**commitment_text:** regionale Wertschöpfung – öffentliche Aufträge an lokale Betriebe – fair, transparent und zukunftsorientiert,
 
 ##### source_location
 
@@ -16164,9 +16164,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0504-ausbildung-staerken-kostenfreie-meisterqualifikation-weite
 
-**title:** Ausbildung stärken - kostenfreie Meisterqualifikation, Weiterbildung in Zukunftsbranchen wie Gebäudesanierung, Photovoltaik und …
+**title:** Ausbildung stärken – kostenfreie Meisterqualifikation, Weiterbildung in Zukunftsbranchen wie Gebäudesanierung, Photovoltaik und …
 
-**commitment_text:** Ausbildung stärken - kostenfreie Meisterqualifikation, Weiterbildung in Zukunftsbranchen wie Gebäudesanierung, Photovoltaik und Wärmetechnik. Ein starkes Handwerk bedeutet starke Regionen, sichere Arbeit und Zukunft zum Anpacken. Sachsen-Anhalt wächst dort, wo Menschen mit ihren Händen und Herzen gestalten - gemeinsam, solidarisch und zuversichtlich. Maschinenbau als Innovationsmotor - Regional, souverän, gerecht Wir engagieren uns für eine klare Strategie: Produktion diversifizieren, technologische Souveränität sichern und gute Arbeit schützen. Der Maschinenbau hat nicht nur im Umland von Magdeburg eine lange Tradition, nein, er bildet seit Jahrzehnten das Rückgrat der Industrie in Sachsen-Anhalt.
+**commitment_text:** Ausbildung stärken – kostenfreie Meisterqualifikation, Weiterbildung in Zukunftsbranchen wie Gebäudesanierung, Photovoltaik und Wärmetechnik. Ein starkes Handwerk bedeutet starke Regionen, sichere Arbeit und Zukunft zum Anpacken. Sachsen-Anhalt wächst dort, wo Menschen mit ihren Händen und Herzen gestalten – gemeinsam, solidarisch und zuversichtlich. Maschinenbau als Innovationsmotor - Regional, souverän, gerecht Wir engagieren uns für eine klare Strategie: Produktion diversifizieren, technologische Souveränität sichern und gute Arbeit schützen. Der Maschinenbau hat nicht nur im Umland von Magdeburg eine lange Tradition, nein, er bildet seit Jahrzehnten das Rückgrat der Industrie in Sachsen-Anhalt.
 
 ##### source_location
 
@@ -16196,9 +16196,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0505-diversifizierung-der-produktion-foerderung-von-betrieben-b
 
-**title:** Diversifizierung der Produktion - Förderung von Betrieben bei der Umstellung auf die …
+**title:** Diversifizierung der Produktion – Förderung von Betrieben bei der Umstellung auf die …
 
-**commitment_text:** Diversifizierung der Produktion - Förderung von Betrieben bei der Umstellung auf die Produktion von Batteriespeichern, Wärmepumpen oder Anlagen für Rechenzentren der KI-Wirtschaft,
+**commitment_text:** Diversifizierung der Produktion – Förderung von Betrieben bei der Umstellung auf die Produktion von Batteriespeichern, Wärmepumpen oder Anlagen für Rechenzentren der KI-Wirtschaft,
 
 ##### source_location
 
@@ -16228,9 +16228,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0506-technologische-staerke-ausbauen-investitionen-in-moderne-f
 
-**title:** technologische Stärke ausbauen - Investitionen in moderne Fertigungsverfahren, Energiespeicher und Automatisierung werden …
+**title:** technologische Stärke ausbauen – Investitionen in moderne Fertigungsverfahren, Energiespeicher und Automatisierung werden …
 
-**commitment_text:** technologische Stärke ausbauen - Investitionen in moderne Fertigungsverfahren, Energiespeicher und Automatisierung werden direkt gefördert,
+**commitment_text:** technologische Stärke ausbauen – Investitionen in moderne Fertigungsverfahren, Energiespeicher und Automatisierung werden direkt gefördert,
 
 ##### source_location
 
@@ -16260,9 +16260,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0507-lieferketten-widerstandsfaehig-machen-kritische-komponente
 
-**title:** Lieferketten widerstandsfähig machen - kritische Komponenten regional und europäisch absichern und produzieren …
+**title:** Lieferketten widerstandsfähig machen – kritische Komponenten regional und europäisch absichern und produzieren …
 
-**commitment_text:** Lieferketten widerstandsfähig machen - kritische Komponenten regional und europäisch absichern und produzieren und dadurch weniger Abhängigkeit und mehr Stabilität schaffen. So kann Sachsen-Anhalt seine Maschinenbau-Tradition zu neuem Leben erwecken: als Ort innovativer Technologien, gesicherter Arbeitsplätze und nachhaltiger, regionaler Wertschöpfung. Tourismus und Gastronomie - Stark, resilient und regional verwurzelt Wir engagieren uns für eine Politik, die Tourismus nachhaltig, krisenfest und sozial gestaltet. Tourismus und Gastronomie sind für Sachsen-Anhalt mehr als Ferien: Sie schaffen Arbeitsplätze, beleben Städte und Dörfer und machen unsere kulturelle Vielfalt sichtbar und das Land attraktiv. Doch die Branche ist verwundbar: Klimawandel, Fachkräftemangel, steigende Kosten und unsichere Rahmenbedingungen belasten viele Betriebe. Zugleich zeigt der Trend klar: Menschen suchen regionale Erlebnisse, Natur, Kultur und Authentizität. Wir wollen diese Zukunft aktiv ermöglichen: durch starke Regionen und gute Arbeitsbedingungen, die junge Menschen wieder für das Gastgewerbe begeistern. Tourismus und Gastronomie müssen widerstandsfähig, lokal eingebettet und sozial gerecht werden. Klimaresilienz, regionale Kreisläufe und faire Arbeit bilden dafür das Fundament. Wir verbinden Förderung mit klaren sozialen Standards und einer Strategie, die Menschen, Regionen und Natur schützt. Wir wollen:
+**commitment_text:** Lieferketten widerstandsfähig machen – kritische Komponenten regional und europäisch absichern und produzieren und dadurch weniger Abhängigkeit und mehr Stabilität schaffen. So kann Sachsen-Anhalt seine Maschinenbau-Tradition zu neuem Leben erwecken: als Ort innovativer Technologien, gesicherter Arbeitsplätze und nachhaltiger, regionaler Wertschöpfung. Tourismus und Gastronomie – Stark, resilient und regional verwurzelt Wir engagieren uns für eine Politik, die Tourismus nachhaltig, krisenfest und sozial gestaltet. Tourismus und Gastronomie sind für Sachsen-Anhalt mehr als Ferien: Sie schaffen Arbeitsplätze, beleben Städte und Dörfer und machen unsere kulturelle Vielfalt sichtbar und das Land attraktiv. Doch die Branche ist verwundbar: Klimawandel, Fachkräftemangel, steigende Kosten und unsichere Rahmenbedingungen belasten viele Betriebe. Zugleich zeigt der Trend klar: Menschen suchen regionale Erlebnisse, Natur, Kultur und Authentizität. Wir wollen diese Zukunft aktiv ermöglichen: durch starke Regionen und gute Arbeitsbedingungen, die junge Menschen wieder für das Gastgewerbe begeistern. Tourismus und Gastronomie müssen widerstandsfähig, lokal eingebettet und sozial gerecht werden. Klimaresilienz, regionale Kreisläufe und faire Arbeit bilden dafür das Fundament. Wir verbinden Förderung mit klaren sozialen Standards und einer Strategie, die Menschen, Regionen und Natur schützt. Wir wollen:
 
 ##### source_location
 
@@ -16293,9 +16293,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0508-klimaresiliente-tourismusentwicklung-landesprogramm-fuer-h
 
-**title:** klimaresiliente Tourismusentwicklung - Landesprogramm für Hitzeund Hochwasserschutz, nachhaltige Rad- und Wanderwege und …
+**title:** klimaresiliente Tourismusentwicklung – Landesprogramm für Hitzeund Hochwasserschutz, nachhaltige Rad- und Wanderwege und …
 
-**commitment_text:** klimaresiliente Tourismusentwicklung - Landesprogramm für Hitzeund Hochwasserschutz, nachhaltige Rad- und Wanderwege und Naturrauminfrastruktur, klimaangepasste Besucherlenkung,
+**commitment_text:** klimaresiliente Tourismusentwicklung – Landesprogramm für Hitzeund Hochwasserschutz, nachhaltige Rad- und Wanderwege und Naturrauminfrastruktur, klimaangepasste Besucherlenkung,
 
 ##### source_location
 
@@ -16325,9 +16325,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0509-regionale-angebote-staerken-foerderung-an-lokale-anbieter
 
-**title:** regionale Angebote stärken - Förderung an lokale Anbieter binden, Kultur- und Naturtourismus …
+**title:** regionale Angebote stärken – Förderung an lokale Anbieter binden, Kultur- und Naturtourismus …
 
-**commitment_text:** regionale Angebote stärken - Förderung an lokale Anbieter binden, Kultur- und Naturtourismus ganzjährig unterstützen, Jugend- und Schüler:innenangebote ausbauen,
+**commitment_text:** regionale Angebote stärken – Förderung an lokale Anbieter binden, Kultur- und Naturtourismus ganzjährig unterstützen, Jugend- und Schüler:innenangebote ausbauen,
 
 ##### source_location
 
@@ -16357,9 +16357,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0510-gastronomie-sichern-zielgerichtete-investitionshilfen-fuer
 
-**title:** Gastronomie sichern - zielgerichtete Investitionshilfen für Energieeffizienz und die Modernisierung von Großküchengeräten …
+**title:** Gastronomie sichern – zielgerichtete Investitionshilfen für Energieeffizienz und die Modernisierung von Großküchengeräten …
 
-**commitment_text:** Gastronomie sichern - zielgerichtete Investitionshilfen für Energieeffizienz und die Modernisierung von Großküchengeräten und Gebäuden, auch im ländlichen Raum,
+**commitment_text:** Gastronomie sichern – zielgerichtete Investitionshilfen für Energieeffizienz und die Modernisierung von Großküchengeräten und Gebäuden, auch im ländlichen Raum,
 
 ##### source_location
 
@@ -16389,9 +16389,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0511-nachwuchs-gewinnen-verpflichtende-schueler-innenpraktika-p
 
-**title:** Nachwuchs gewinnen - verpflichtende Schüler
+**title:** Nachwuchs gewinnen – verpflichtende Schüler
 
-**commitment_text:** Nachwuchs gewinnen - verpflichtende Schüler:innenpraktika, praxisnahe Schulmodule und regionale Ausbildungsoffensiven in Hotellerie und Gastronomie,
+**commitment_text:** Nachwuchs gewinnen – verpflichtende Schüler:innenpraktika, praxisnahe Schulmodule und regionale Ausbildungsoffensiven in Hotellerie und Gastronomie,
 
 ##### source_location
 
@@ -16421,9 +16421,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0512-nachhaltige-mobilitaet-bessere-oepnv-anbindung-touristisch
 
-**title:** Nachhaltige Mobilität - bessere ÖPNV-Anbindung touristischer Orte, Rad- und Wanderwege modernisieren und …
+**title:** Nachhaltige Mobilität – bessere ÖPNV-Anbindung touristischer Orte, Rad- und Wanderwege modernisieren und …
 
-**commitment_text:** Nachhaltige Mobilität - bessere ÖPNV-Anbindung touristischer Orte, Rad- und Wanderwege modernisieren und verstetigen. Ein widerstandsfähiger, an der Bevölkerung orientierter und klimafester Tourismus stärkt Sachsen-Anhalt und seine Menschen. Wenn Regionen profitieren, Beschäftigte geschützt sind und Natur bewahrt wird, entsteht ein Tourismus, der Zukunft gibt - für das Land und die, die hier leben.
+**commitment_text:** Nachhaltige Mobilität – bessere ÖPNV-Anbindung touristischer Orte, Rad- und Wanderwege modernisieren und verstetigen. Ein widerstandsfähiger, an der Bevölkerung orientierter und klimafester Tourismus stärkt Sachsen-Anhalt und seine Menschen. Wenn Regionen profitieren, Beschäftigte geschützt sind und Natur bewahrt wird, entsteht ein Tourismus, der Zukunft gibt – für das Land und die, die hier leben.
 
 ##### source_location
 
@@ -16776,7 +16776,7 @@ _Leere Liste._
 
 **title:** Rettung des ländlichen Raums
 
-**commitment_text:** Rettung des ländlichen Raums: In den ländlichen Räumen Sachsen-Anhalts droht der Zusammenbruch wichtiger Strukturen (Schulen, Kitas, Kultur und Vereine). Mit ernsthafter Integration und neuen Perspektiven können wir dem gemeinsam entgegenwirken. Integration als Schlüssel Nicht Ausgrenzung, sondern Willkommen. Nicht Diskriminierung, sondern Qualifizierung. Nicht Abschottung, sondern aktive Gestaltung der Integration. Vielfalt statt Anpassung ist unser Motto. Sachsen-Anhalt macht aus Zuwanderung bewusst Ankommen - durch Struktur, Unterstützung und echte Chancen. Menschen brauchen Perspektive. Das erreichen wir über klare Regelungen verlässliche Zusagen, was flächendeckende Angebote an Sprachkursen, auch im ländlichen Raum, die Anerkennung von Qualifikationen und die Möglichkeit des Familiennachzuges angeht. Jede gut integrierte Person fördert das Gemeinwesen und die demografische Erneuerung. Studien zeigen bereits seit Jahren, dass gute Integration der Gemeinschaft mehr bringt als sie kostet. Sofortmaßnahmen für gelungene Integration: Wir wollen Strukturen schaffen, um Integration für alle zugewanderten Menschen zu vereinfachen. Dazu werden wir das Aufnahmegesetz reformieren und
+**commitment_text:** Rettung des ländlichen Raums: In den ländlichen Räumen Sachsen-Anhalts droht der Zusammenbruch wichtiger Strukturen (Schulen, Kitas, Kultur und Vereine). Mit ernsthafter Integration und neuen Perspektiven können wir dem gemeinsam entgegenwirken. Integration als Schlüssel Nicht Ausgrenzung, sondern Willkommen. Nicht Diskriminierung, sondern Qualifizierung. Nicht Abschottung, sondern aktive Gestaltung der Integration. Vielfalt statt Anpassung ist unser Motto. Sachsen-Anhalt macht aus Zuwanderung bewusst Ankommen – durch Struktur, Unterstützung und echte Chancen. Menschen brauchen Perspektive. Das erreichen wir über klare Regelungen verlässliche Zusagen, was flächendeckende Angebote an Sprachkursen, auch im ländlichen Raum, die Anerkennung von Qualifikationen und die Möglichkeit des Familiennachzuges angeht. Jede gut integrierte Person fördert das Gemeinwesen und die demografische Erneuerung. Studien zeigen bereits seit Jahren, dass gute Integration der Gemeinschaft mehr bringt als sie kostet. Sofortmaßnahmen für gelungene Integration: Wir wollen Strukturen schaffen, um Integration für alle zugewanderten Menschen zu vereinfachen. Dazu werden wir das Aufnahmegesetz reformieren und
 
 ##### source_location
 
@@ -17193,7 +17193,7 @@ _Leere Liste._
 
 **title:** Bildung in Vielfalt
 
-**commitment_text:** Bildung in Vielfalt: Lehrpläne greifen die Vielfalt der Kulturen auch sprachlich im Unterricht auf und schaffen so gegenseitige Lern- und Integrationseffekte. Integration und Arbeitsmarkt Eine Arbeit ist für uns nicht der Schlüssel zur Integration, sondern ein Bestandteil mit dem Ziel der Selbstverwirklichung und Teilhabe. In vielen systemrelevanten Bereichen des Alltags arbeiten Menschen mit Einwanderungsgeschichte und sichern die Daseinsvorsorge. Das wollen wir würdigen: gleiche Arbeit heißt gleiche Arbeitnehmerrechte, für notwendige rechtliche Anpassungen werden wir streiten. Auch diese Aspekte befördern Integration und letztlich profitieren alle! Potenziale werden verschwendet 20,3 Prozent der Menschen mit ausländischem Pass sind arbeitslos - das ist mehr als doppelt so viel wie in der Gesamtbevölkerung (9 Prozent). Das liegt nicht am Willen der Menschen, sondern an den Bedingungen des Systems: das ist strukturelle Diskriminierung. Denn gleichzeitig berichten Unternehmen von massivem Fachkräftemangel. Das ist keine Ungereimtheit, sondern Versagen von Integrationspolitik. Menschen, deren Qualifikationen nicht anerkannt werden, landen in unterbezahlten Niedriglohn-Jobs und tauchen nicht im offiziellen Fachkräftemangel-Bericht auf.
+**commitment_text:** Bildung in Vielfalt: Lehrpläne greifen die Vielfalt der Kulturen auch sprachlich im Unterricht auf und schaffen so gegenseitige Lern- und Integrationseffekte. Integration und Arbeitsmarkt Eine Arbeit ist für uns nicht der Schlüssel zur Integration, sondern ein Bestandteil mit dem Ziel der Selbstverwirklichung und Teilhabe. In vielen systemrelevanten Bereichen des Alltags arbeiten Menschen mit Einwanderungsgeschichte und sichern die Daseinsvorsorge. Das wollen wir würdigen: gleiche Arbeit heißt gleiche Arbeitnehmerrechte, für notwendige rechtliche Anpassungen werden wir streiten. Auch diese Aspekte befördern Integration und letztlich profitieren alle! Potenziale werden verschwendet 20,3 Prozent der Menschen mit ausländischem Pass sind arbeitslos – das ist mehr als doppelt so viel wie in der Gesamtbevölkerung (9 Prozent). Das liegt nicht am Willen der Menschen, sondern an den Bedingungen des Systems: das ist strukturelle Diskriminierung. Denn gleichzeitig berichten Unternehmen von massivem Fachkräftemangel. Das ist keine Ungereimtheit, sondern Versagen von Integrationspolitik. Menschen, deren Qualifikationen nicht anerkannt werden, landen in unterbezahlten Niedriglohn-Jobs und tauchen nicht im offiziellen Fachkräftemangel-Bericht auf.
 
 ##### source_location
 
@@ -17289,7 +17289,7 @@ _Leere Liste._
 
 **title:** Brückenqualifizierung
 
-**commitment_text:** Brückenqualifizierung: zwölfmonatige Programme für ausländische Fachkräfte (z.B. Ärzt:innen, Ingenieur:innen, Handwerker:innen), um ggf. unterschiedliche Qualifizierungen an die hier im Land geltenden Standards in der Ausbildung anzugleichen. Migration ist kein abstraktes Phänomen und keine rein ökonomische Frage, sondern immer Ausdruck konkreter Lebensrealitäten. Niemand verlässt leichtfertig sein Zuhause, seine Sprache, seine sozialen Beziehungen. Menschen fliehen vor Krieg, Gewalt, politischer Verfolgung, autoritären Regimen, existenzieller Armut oder den Folgen der Klimakrise. Diese Fluchtursachen sind vielfältig, haben aber eines gemeinsam: Sie sind Ausdruck von Zwang und fehlenden Alternativen. Wir stehen an der Seite derjenigen, die Schutz suchen. Das Recht auf Asyl, der Schutz vor Abschiebung und das Recht auf Familien-nachzug sind für uns nicht verhandelbar. Familien gehören zusammen - das gilt für alle Menschen gleichermaßen. Eine linke Migrationspolitik verbindet Solidarität, Schutz und Teilhabe mit dem Einsatz für gute Arbeitsbedingungen, soziale Sicherheit und gleiche Rechte und Chancen für alle, die hier leben. Unsere Politik stellt sich nicht die Frage, welchen Nutzen migrantische Menschen für uns haben und was sie für uns tun können, sondern wie wir die gesellschaftlichen Strukturen aufbauen können, in welchen Menschen, egal welcher Herkunft, ein selbstbestimmtes Leben führen können. Denn mit Blick auf die Fluchtursachen liegt es auch in unser aller Verantwortung, dies umzusetzen.
+**commitment_text:** Brückenqualifizierung: zwölfmonatige Programme für ausländische Fachkräfte (z.B. Ärzt:innen, Ingenieur:innen, Handwerker:innen), um ggf. unterschiedliche Qualifizierungen an die hier im Land geltenden Standards in der Ausbildung anzugleichen. Migration ist kein abstraktes Phänomen und keine rein ökonomische Frage, sondern immer Ausdruck konkreter Lebensrealitäten. Niemand verlässt leichtfertig sein Zuhause, seine Sprache, seine sozialen Beziehungen. Menschen fliehen vor Krieg, Gewalt, politischer Verfolgung, autoritären Regimen, existenzieller Armut oder den Folgen der Klimakrise. Diese Fluchtursachen sind vielfältig, haben aber eines gemeinsam: Sie sind Ausdruck von Zwang und fehlenden Alternativen. Wir stehen an der Seite derjenigen, die Schutz suchen. Das Recht auf Asyl, der Schutz vor Abschiebung und das Recht auf Familien-nachzug sind für uns nicht verhandelbar. Familien gehören zusammen – das gilt für alle Menschen gleichermaßen. Eine linke Migrationspolitik verbindet Solidarität, Schutz und Teilhabe mit dem Einsatz für gute Arbeitsbedingungen, soziale Sicherheit und gleiche Rechte und Chancen für alle, die hier leben. Unsere Politik stellt sich nicht die Frage, welchen Nutzen migrantische Menschen für uns haben und was sie für uns tun können, sondern wie wir die gesellschaftlichen Strukturen aufbauen können, in welchen Menschen, egal welcher Herkunft, ein selbstbestimmtes Leben führen können. Denn mit Blick auf die Fluchtursachen liegt es auch in unser aller Verantwortung, dies umzusetzen.
 
 ##### source_location
 
@@ -17705,7 +17705,7 @@ _Leere Liste._
 
 **title:** Die Beschäftigten der Verkehrsbetriebe fair entlohnen, um den Personalmangel zu beenden
 
-**commitment_text:** Die Beschäftigten der Verkehrsbetriebe fair entlohnen, um den Personalmangel zu beenden. Schienenverkehr - Revitalisierung und Ausbau statt weiterer Stilllegungen Der seit 30 Jahren laufende Abbau von Haltepunkten, Bahnhöfen, Gleisen und Anschlüssen im Güter- und Personenverkehr auf der Schiene konterkariert die Maßnahmen für Mobilität und Klimaschutz im Land und droht weitere Teile des ländlichen Raumes abzuhängen. Die an vielen Stellen sanierungsbedürftige Bahninfrastruktur darf nicht zur Gefährdung der Sicherheit der Menschen führen. Die andauernden Probleme mit Verspätungen und Zugausfällen bei gleichzeitig stetigen Preissteigerungen für die Tickets, vertreiben immer mehr Bahnkunden und belasten die Menschen im Land, die auf tägliche Mobilität angewiesen sind. Wir wollen:
+**commitment_text:** Die Beschäftigten der Verkehrsbetriebe fair entlohnen, um den Personalmangel zu beenden. Schienenverkehr – Revitalisierung und Ausbau statt weiterer Stilllegungen Der seit 30 Jahren laufende Abbau von Haltepunkten, Bahnhöfen, Gleisen und Anschlüssen im Güter- und Personenverkehr auf der Schiene konterkariert die Maßnahmen für Mobilität und Klimaschutz im Land und droht weitere Teile des ländlichen Raumes abzuhängen. Die an vielen Stellen sanierungsbedürftige Bahninfrastruktur darf nicht zur Gefährdung der Sicherheit der Menschen führen. Die andauernden Probleme mit Verspätungen und Zugausfällen bei gleichzeitig stetigen Preissteigerungen für die Tickets, vertreiben immer mehr Bahnkunden und belasten die Menschen im Land, die auf tägliche Mobilität angewiesen sind. Wir wollen:
 
 ##### source_location
 
@@ -18281,7 +18281,7 @@ _Leere Liste._
 
 **title:** die Wiedereröffnung des Bahnmuseums in Halle
 
-**commitment_text:** die Wiedereröffnung des Bahnmuseums in Halle. Gütertransporte von der Straße auf die Schiene - für Umwelt und Verkehrssicherheit Um den Güterverkehr von LKWs auf alternative Transportmöglichkeiten und die Schiene zu verlagern, bedarf es einer großen Kraftanstrengung und innovativer Projekte. Wir wollen:
+**commitment_text:** die Wiedereröffnung des Bahnmuseums in Halle. Gütertransporte von der Straße auf die Schiene – für Umwelt und Verkehrssicherheit Um den Güterverkehr von LKWs auf alternative Transportmöglichkeiten und die Schiene zu verlagern, bedarf es einer großen Kraftanstrengung und innovativer Projekte. Wir wollen:
 
 ##### source_location
 
@@ -18793,7 +18793,7 @@ _Leere Liste._
 
 **title:** die Erarbeitung einer Landes-Fußverkehrsstrategie und eine Finanzierung für den barrierefreien Ausbau der …
 
-**commitment_text:** die Erarbeitung einer Landes-Fußverkehrsstrategie und eine Finanzierung für den barrierefreien Ausbau der Gehwege bereitstellen. Verkehrssicherheit erhöhen - Verkehrswachten unterstützen Das Land hat sich zur Vision Zero bekannt. Ziel ist es, dass auf unseren Straßen keine Menschen durch Verkehrsunfälle sterben. Wir wollen:
+**commitment_text:** die Erarbeitung einer Landes-Fußverkehrsstrategie und eine Finanzierung für den barrierefreien Ausbau der Gehwege bereitstellen. Verkehrssicherheit erhöhen – Verkehrswachten unterstützen Das Land hat sich zur Vision Zero bekannt. Ziel ist es, dass auf unseren Straßen keine Menschen durch Verkehrsunfälle sterben. Wir wollen:
 
 ##### source_location
 
@@ -19369,7 +19369,7 @@ _Leere Liste._
 
 **title:** regionale Wertschöpfung, ländliche Räume und Kommunen stärken
 
-**commitment_text:** regionale Wertschöpfung, ländliche Räume und Kommunen stärken. Stand der Dinge - Herausforderungen Sachsen-Anhalt ist Vorreiterin bei den erneuerbaren Energien. Trotzdem leiden viele Menschen unter hohen Energiepreisen. Der Ausbau von Wind- und Solarenergie kommt voran, aber Genehmigungen, Umweltverträglichkeit und Beteiligung vor Ort sind weiterhin zentrale Herausforderungen. Beim Stromnetz fehlen Kapazitäten und Speicher, das bremst die Energiewende aus. Besonders groß sind die Lücken im Wärmesektor: Abwärme, Großwärmepumpen und Nahwärmelösungen sollen vermehrt genutzt werden, weil sie langfristig bezahlbare und klimafreundliche Wärme bieten können. Zudem hinkt die Digitalisierung hinterher und Debatten über eine Rückkehr zur Atomkraft schaffen falsche Erwartungen, statt echte nachhaltige Lösungen zu bieten. All diese Herausforderungen zeigen: Sachsen-Anhalt braucht eine Energiepolitik, die Versorgungssicherheit, Klimaschutz und soziale Gerechtigkeit zusammen denkt. Energiepreise senken und öffentliche Verantwortung stärken Hohe Energiepreise treffen vor allem Menschen mit kleinen Einkommen, aber auch Vereine, Kommunen und Betriebe. Energiearmut bedeutet kalte Wohnungen, vermehrte Krankheit und wachsenden finanziellen Druck. Für uns ist klar: Energie gehört zur Daseinsvorsorge und eine gerechte Energiezukunft gelingt nur, wenn Strom und Wärme für alle bezahlbar sind. Sachsen-Anhalt hat die Chance, durch eine Anpassung des Beteiligungsgesetzes mit erneuerbarem Strom vor Ort die Preise zu senken und Menschen konkret zu entlasten. Wir wollen:
+**commitment_text:** regionale Wertschöpfung, ländliche Räume und Kommunen stärken. Stand der Dinge – Herausforderungen Sachsen-Anhalt ist Vorreiterin bei den erneuerbaren Energien. Trotzdem leiden viele Menschen unter hohen Energiepreisen. Der Ausbau von Wind- und Solarenergie kommt voran, aber Genehmigungen, Umweltverträglichkeit und Beteiligung vor Ort sind weiterhin zentrale Herausforderungen. Beim Stromnetz fehlen Kapazitäten und Speicher, das bremst die Energiewende aus. Besonders groß sind die Lücken im Wärmesektor: Abwärme, Großwärmepumpen und Nahwärmelösungen sollen vermehrt genutzt werden, weil sie langfristig bezahlbare und klimafreundliche Wärme bieten können. Zudem hinkt die Digitalisierung hinterher und Debatten über eine Rückkehr zur Atomkraft schaffen falsche Erwartungen, statt echte nachhaltige Lösungen zu bieten. All diese Herausforderungen zeigen: Sachsen-Anhalt braucht eine Energiepolitik, die Versorgungssicherheit, Klimaschutz und soziale Gerechtigkeit zusammen denkt. Energiepreise senken und öffentliche Verantwortung stärken Hohe Energiepreise treffen vor allem Menschen mit kleinen Einkommen, aber auch Vereine, Kommunen und Betriebe. Energiearmut bedeutet kalte Wohnungen, vermehrte Krankheit und wachsenden finanziellen Druck. Für uns ist klar: Energie gehört zur Daseinsvorsorge und eine gerechte Energiezukunft gelingt nur, wenn Strom und Wärme für alle bezahlbar sind. Sachsen-Anhalt hat die Chance, durch eine Anpassung des Beteiligungsgesetzes mit erneuerbarem Strom vor Ort die Preise zu senken und Menschen konkret zu entlasten. Wir wollen:
 
 ##### source_location
 
@@ -20622,7 +20622,7 @@ _Leere Liste._
 
 **title:** landwirtschaftliche Betriebe fair für gemeinwohlorientierte Leistungen bezahlt
 
-**commitment_text:** landwirtschaftliche Betriebe fair für gemeinwohlorientierte Leistungen bezahlt. So entsteht eine Landwirtschaft, die soziale Gerechtigkeit, ökologische Verantwortung und gute Arbeit verbindet. Unsere Ziele sind eine sichere Versorgung mit guten Lebensmitteln, eine vielfältige und artenreiche Kulturlandschaft und lebendige Dörfer, in denen Landwirtschaft fest verankert ist. Stand der Dinge Die Landwirtschaft in Sachsen-Anhalt steht unter Druck. Steigende Kosten und gleichbleibende oder sinkende Erzeugerpreise sind eine Herausforderung für viele Betriebe. Gleichzeitig gefährdet die Klimakrise unsere Ernten durch Hochwasser, Starkregenereignisse oder Dürren. Zudem verschärft sich der Wettbewerb um Flächen: Außerlandwirtschaftliche Investoren sichern sich über Share Deals landwirtschaftliche Flächen, während Junglandwirt:innen immer schwieriger Zugang zu Flächen erhalten, um neue und innovative Konzepte in die Betriebe zu bringen. Die großen vier Konzerne im Lebensmitteleinzelhandel (Edeka, Rewe, SchwarzGruppe, Aldi) setzen eigene Standards in der Tierhaltung, während sie zugleich für niedrige Erzeugerpreise sorgen. Das erschwert artgerechte Haltung und Investitionen in zukunftsfähige Ställe. Biodiversität und Artenvielfalt nehmen weiter ab. Ausgeräumte Landschaften, fehlende Strukturen und neue invasive Arten gefährden Bestäuber und Nützlinge. Gleichzeitig wächst der Flächenverbrauch für Siedlungen und Infrastruktur, wodurch immer mehr wertvolle Böden verlorengehen. Auf dem Land leiden Dörfer unter Abwanderung, schwacher Infrastruktur und dem Fehlen aktiver Strukturen. Ehrenamt, Imkerei, Angeln und Vereine leisten viel für Natur, Gewässer und Gemeinschaft, brauchen jedoch ausreichende Unterstützung. Doch Sachsen-Anhalt kann seine Landwirtschaft und ländlichen Räume gestalten. Hierfür braucht es eine Politik, die Lösungen für die zahlreichen Nutzungskonflikte liefert. So blüht Sachsen-Anhalt auf. Zugang zu Land für die Menschen, die es bewirtschaften Wir wollen die Menschen stärken, die Landwirtschaft vor Ort betreiben, regionale Wertschöpfung sichern und Landkonzentration begrenzen. Wer Böden bearbeitet, muss Zugang zu Land haben - nicht Investorengruppen, die über Share Deals Betriebe aufkaufen, Bodenpreise weiter in die Höhe treiben und anschließend die Flächen kontrollieren.
+**commitment_text:** landwirtschaftliche Betriebe fair für gemeinwohlorientierte Leistungen bezahlt. So entsteht eine Landwirtschaft, die soziale Gerechtigkeit, ökologische Verantwortung und gute Arbeit verbindet. Unsere Ziele sind eine sichere Versorgung mit guten Lebensmitteln, eine vielfältige und artenreiche Kulturlandschaft und lebendige Dörfer, in denen Landwirtschaft fest verankert ist. Stand der Dinge Die Landwirtschaft in Sachsen-Anhalt steht unter Druck. Steigende Kosten und gleichbleibende oder sinkende Erzeugerpreise sind eine Herausforderung für viele Betriebe. Gleichzeitig gefährdet die Klimakrise unsere Ernten durch Hochwasser, Starkregenereignisse oder Dürren. Zudem verschärft sich der Wettbewerb um Flächen: Außerlandwirtschaftliche Investoren sichern sich über Share Deals landwirtschaftliche Flächen, während Junglandwirt:innen immer schwieriger Zugang zu Flächen erhalten, um neue und innovative Konzepte in die Betriebe zu bringen. Die großen vier Konzerne im Lebensmitteleinzelhandel (Edeka, Rewe, SchwarzGruppe, Aldi) setzen eigene Standards in der Tierhaltung, während sie zugleich für niedrige Erzeugerpreise sorgen. Das erschwert artgerechte Haltung und Investitionen in zukunftsfähige Ställe. Biodiversität und Artenvielfalt nehmen weiter ab. Ausgeräumte Landschaften, fehlende Strukturen und neue invasive Arten gefährden Bestäuber und Nützlinge. Gleichzeitig wächst der Flächenverbrauch für Siedlungen und Infrastruktur, wodurch immer mehr wertvolle Böden verlorengehen. Auf dem Land leiden Dörfer unter Abwanderung, schwacher Infrastruktur und dem Fehlen aktiver Strukturen. Ehrenamt, Imkerei, Angeln und Vereine leisten viel für Natur, Gewässer und Gemeinschaft, brauchen jedoch ausreichende Unterstützung. Doch Sachsen-Anhalt kann seine Landwirtschaft und ländlichen Räume gestalten. Hierfür braucht es eine Politik, die Lösungen für die zahlreichen Nutzungskonflikte liefert. So blüht Sachsen-Anhalt auf. Zugang zu Land für die Menschen, die es bewirtschaften Wir wollen die Menschen stärken, die Landwirtschaft vor Ort betreiben, regionale Wertschöpfung sichern und Landkonzentration begrenzen. Wer Böden bearbeitet, muss Zugang zu Land haben – nicht Investorengruppen, die über Share Deals Betriebe aufkaufen, Bodenpreise weiter in die Höhe treiben und anschließend die Flächen kontrollieren.
 
 ##### source_location
 
@@ -21749,7 +21749,7 @@ _Leere Liste._
 
 **title:** vollständig digitale, einfache und transparente Antragsverfahren ermöglichen
 
-**commitment_text:** vollständig digitale, einfache und transparente Antragsverfahren ermöglichen. Ländliche Räume, Imkerei, Angler und Kleingärten fördern Der ländliche Raum ist für die meisten Menschen in Sachsen-Anhalt ihre Heimat: Hier entsteht Gemeinschaft durch ehrenamtliches Engagement und lokale Strukturen. Imker:innen, Angelvereine, Feuerwehren, Höfe und Vereine tragen viel zur Lebensqualität bei und leisten wichtige Beiträge für die Gemeinschaft, den Natur- und Gewässerschutz und die Sicherheit. Wir wollen die Menschen stärken, die in Dörfern Verantwortung übernehmen, biologische Vielfalt fördern und Naturerleben ermöglichen. Imkerei und Angeln sind dabei unverzichtbare Bestandteile einer lebendigen Dorfkultur. Zudem wollen wir Kleingärten gezielt fördern - in Stadt und Land. Wir wollen:
+**commitment_text:** vollständig digitale, einfache und transparente Antragsverfahren ermöglichen. Ländliche Räume, Imkerei, Angler und Kleingärten fördern Der ländliche Raum ist für die meisten Menschen in Sachsen-Anhalt ihre Heimat: Hier entsteht Gemeinschaft durch ehrenamtliches Engagement und lokale Strukturen. Imker:innen, Angelvereine, Feuerwehren, Höfe und Vereine tragen viel zur Lebensqualität bei und leisten wichtige Beiträge für die Gemeinschaft, den Natur- und Gewässerschutz und die Sicherheit. Wir wollen die Menschen stärken, die in Dörfern Verantwortung übernehmen, biologische Vielfalt fördern und Naturerleben ermöglichen. Imkerei und Angeln sind dabei unverzichtbare Bestandteile einer lebendigen Dorfkultur. Zudem wollen wir Kleingärten gezielt fördern – in Stadt und Land. Wir wollen:
 
 ##### source_location
 
@@ -22104,7 +22104,7 @@ _Leere Liste._
 
 **title:** Wildtierhilfe und Unterstützung von Wildtierauffangstationen fördern
 
-**commitment_text:** Wildtierhilfe und Unterstützung von Wildtierauffangstationen fördern. Unser Ziel ist ein lebendiger Wald, der Arten schützt und zugleich ein Ort bleibt, an dem wir Menschen Natur erleben können. Stand der Dinge - Herausforderungen Dürre, Hitze und Borkenkäfer haben große Waldflächen geschädigt und ganze Bestände zerstört. Besonders Monokulturen sind anfällig, unser Ziel sind deshalb klimaresiliente Mischwälder. Die Landesforstverwaltung trägt große Verantwortung: Sie soll wiederaufforsten, naturnah bewirtschaften und den Wald an den Klimawandel anpassen. Dafür braucht es gute Arbeitsbedingungen und ausreichend Personal. Gleichzeitig entstehen neue Konflikte zwischen Naturschutz, nachhaltiger Holznutzung und der Nutzung von Waldflächen für Windkraftanlagen. Die Klimakrise erhöht zudem das Risiko von Waldbränden. Wege, Löschwasserstellen und technische Ausstattung müssen verbessert werden, um schnell reagieren und Schäden begrenzen zu können. Unsere Wälder - klimafit und artenreich Wir wollen Sachsen-Anhalts Wälder widerstandsfähig machen: gegen Dürre, Hitze, Schädlinge und die Folgen der Klimakrise. Dafür setzen wir auf Mischwälder, die Wasser speichern, CO₂ binden und Lebensräume für Arten bieten. Wir wollen:
+**commitment_text:** Wildtierhilfe und Unterstützung von Wildtierauffangstationen fördern. Unser Ziel ist ein lebendiger Wald, der Arten schützt und zugleich ein Ort bleibt, an dem wir Menschen Natur erleben können. Stand der Dinge – Herausforderungen Dürre, Hitze und Borkenkäfer haben große Waldflächen geschädigt und ganze Bestände zerstört. Besonders Monokulturen sind anfällig, unser Ziel sind deshalb klimaresiliente Mischwälder. Die Landesforstverwaltung trägt große Verantwortung: Sie soll wiederaufforsten, naturnah bewirtschaften und den Wald an den Klimawandel anpassen. Dafür braucht es gute Arbeitsbedingungen und ausreichend Personal. Gleichzeitig entstehen neue Konflikte zwischen Naturschutz, nachhaltiger Holznutzung und der Nutzung von Waldflächen für Windkraftanlagen. Die Klimakrise erhöht zudem das Risiko von Waldbränden. Wege, Löschwasserstellen und technische Ausstattung müssen verbessert werden, um schnell reagieren und Schäden begrenzen zu können. Unsere Wälder – klimafit und artenreich Wir wollen Sachsen-Anhalts Wälder widerstandsfähig machen: gegen Dürre, Hitze, Schädlinge und die Folgen der Klimakrise. Dafür setzen wir auf Mischwälder, die Wasser speichern, CO₂ binden und Lebensräume für Arten bieten. Wir wollen:
 
 ##### source_location
 
@@ -23133,7 +23133,7 @@ _Leere Liste._
 
 **title:** Frieden als Voraussetzung für globale Nachhaltigkeit, denn Kriege zerstören Menschen, Klima und …
 
-**commitment_text:** Frieden als Voraussetzung für globale Nachhaltigkeit, denn Kriege zerstören Menschen, Klima und Ressourcen. Stand der Dinge - Herausforderungen Die Klimakrise verschärft sich sichtbar: Die 1,5-Grad-Marke wird voraussichtlich überschritten, und Extremwetter trifft auch Sachsen-Anhalt immer häufiger. Die Folgen sind ungleich verteilt. Menschen mit geringem Einkommen, ältere Menschen und Kinder tragen die größten Risiken, während die Hauptverursacher die extrem Reichen sind. Unsere natürlichen Lebensgrundlagen geraten zugleich durch das globale Artensterben unter Druck. Mit jeder verlorenen Art schrumpft die Stabilität unserer Ökosysteme, die wir zum Überleben brauchen, weil sie beispielsweise für saubere Luft und Wasser und unsere Ernährung sorgen. Kriege und Aufrüstung gehören weltweit zu den größten Treibern der globalen Erwärmung. Der militärisch-industrielle Komplex bindet enorme finanzielle Mittel, Rohstoffe und Energien, die für sozialen Ausgleich, Klimaschutz und ökologische Erneuerung dringend gebraucht würden. Ohne Frieden gibt es keinen wirksamen globalen Klimaschutz.
+**commitment_text:** Frieden als Voraussetzung für globale Nachhaltigkeit, denn Kriege zerstören Menschen, Klima und Ressourcen. Stand der Dinge – Herausforderungen Die Klimakrise verschärft sich sichtbar: Die 1,5-Grad-Marke wird voraussichtlich überschritten, und Extremwetter trifft auch Sachsen-Anhalt immer häufiger. Die Folgen sind ungleich verteilt. Menschen mit geringem Einkommen, ältere Menschen und Kinder tragen die größten Risiken, während die Hauptverursacher die extrem Reichen sind. Unsere natürlichen Lebensgrundlagen geraten zugleich durch das globale Artensterben unter Druck. Mit jeder verlorenen Art schrumpft die Stabilität unserer Ökosysteme, die wir zum Überleben brauchen, weil sie beispielsweise für saubere Luft und Wasser und unsere Ernährung sorgen. Kriege und Aufrüstung gehören weltweit zu den größten Treibern der globalen Erwärmung. Der militärisch-industrielle Komplex bindet enorme finanzielle Mittel, Rohstoffe und Energien, die für sozialen Ausgleich, Klimaschutz und ökologische Erneuerung dringend gebraucht würden. Ohne Frieden gibt es keinen wirksamen globalen Klimaschutz.
 
 ##### source_location
 
@@ -23549,7 +23549,7 @@ _Leere Liste._
 
 **title:** eine friedensorientierte Politik stärken, die auf Diplomatie, Abrüstung und internationale Zusammenarbeit setzt …
 
-**commitment_text:** eine friedensorientierte Politik stärken, die auf Diplomatie, Abrüstung und internationale Zusammenarbeit setzt als Voraussetzung für eine sichere, klimastabile Zukunft. Natur und Arten schützen Ob Elbe oder Harz, Drömling oder Grünes Band - unser Bundesland SachsenAnhalt ist reich an Natur. Doch dieser Reichtum muss gepflegt werden. Es braucht ausreichende Finanzierung und Strukturen, die Ehrenamt und Hauptamt zusammenbringen, statt Aufgaben auf Freiwillige abzuwälzen. Eine intakte Natur ist für uns ein fundamentaler Bestandteil der öffentlichen Daseinsvorsorge. Wir wollen:
+**commitment_text:** eine friedensorientierte Politik stärken, die auf Diplomatie, Abrüstung und internationale Zusammenarbeit setzt als Voraussetzung für eine sichere, klimastabile Zukunft. Natur und Arten schützen Ob Elbe oder Harz, Drömling oder Grünes Band – unser Bundesland SachsenAnhalt ist reich an Natur. Doch dieser Reichtum muss gepflegt werden. Es braucht ausreichende Finanzierung und Strukturen, die Ehrenamt und Hauptamt zusammenbringen, statt Aufgaben auf Freiwillige abzuwälzen. Eine intakte Natur ist für uns ein fundamentaler Bestandteil der öffentlichen Daseinsvorsorge. Wir wollen:
 
 ##### source_location
 
@@ -23805,7 +23805,7 @@ _Leere Liste._
 
 **title:** gebietsfremde invasive Arten bekämpfen, wenn sie heimische Arten und Lebensräume gefährden
 
-**commitment_text:** gebietsfremde invasive Arten bekämpfen, wenn sie heimische Arten und Lebensräume gefährden. Recyclingwirtschaft als Zukunftsmotor - regional, souverän, nachhaltig Wir engagieren uns für eine klare Strategie: Rohstoffe sichern, Wertschöpfung im Land halten und gute, zukunftsfeste Arbeitsplätze schaffen. Sachsen-Anhalt braucht eine Wirtschaft, die Abfall vermeidet, Rohstoffe zurückgewinnt und Umweltbelastungen konsequent reduziert. Eine funktionierende Abfallwirtschaft
+**commitment_text:** gebietsfremde invasive Arten bekämpfen, wenn sie heimische Arten und Lebensräume gefährden. Recyclingwirtschaft als Zukunftsmotor – regional, souverän, nachhaltig Wir engagieren uns für eine klare Strategie: Rohstoffe sichern, Wertschöpfung im Land halten und gute, zukunftsfeste Arbeitsplätze schaffen. Sachsen-Anhalt braucht eine Wirtschaft, die Abfall vermeidet, Rohstoffe zurückgewinnt und Umweltbelastungen konsequent reduziert. Eine funktionierende Abfallwirtschaft
 
 ##### source_location
 
@@ -23836,9 +23836,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0743-sachsen-anhalt-zum-zentrum-und-vorreiter-der-recyclingwirt
 
-**title:** Sachsen-Anhalt zum Zentrum und Vorreiter der Recyclingwirtschaft entwickeln - mit einer klaren …
+**title:** Sachsen-Anhalt zum Zentrum und Vorreiter der Recyclingwirtschaft entwickeln – mit einer klaren …
 
-**commitment_text:** Sachsen-Anhalt zum Zentrum und Vorreiter der Recyclingwirtschaft entwickeln - mit einer klaren Industrie- und Innovationsstrategie für Rohstoffrückgewinnung und Kreislaufproduktion,
+**commitment_text:** Sachsen-Anhalt zum Zentrum und Vorreiter der Recyclingwirtschaft entwickeln – mit einer klaren Industrie- und Innovationsstrategie für Rohstoffrückgewinnung und Kreislaufproduktion,
 
 ##### source_location
 
@@ -23869,9 +23869,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0744-technologische-kompetenz-staerken-den-hochschulstandort-an
 
-**title:** technologische Kompetenz stärken - den Hochschulstandort Anhalt und Merseburg ausbauen, Forschung im …
+**title:** technologische Kompetenz stärken – den Hochschulstandort Anhalt und Merseburg ausbauen, Forschung im …
 
-**commitment_text:** technologische Kompetenz stärken - den Hochschulstandort Anhalt und Merseburg ausbauen, Forschung im Bereich Recycling und Rückgewinnung seltener Erden gezielt fördern und eng mit der Industrie und KMUs vernetzen,
+**commitment_text:** technologische Kompetenz stärken – den Hochschulstandort Anhalt und Merseburg ausbauen, Forschung im Bereich Recycling und Rückgewinnung seltener Erden gezielt fördern und eng mit der Industrie und KMUs vernetzen,
 
 ##### source_location
 
@@ -24061,9 +24061,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0750-rohstoffkreislaeufe-schliessen-eine-bundesratsinitiative-a
 
-**title:** Rohstoffkreisläufe schließen - eine Bundesratsinitiative auf den Weg bringen, die die verpflichtende …
+**title:** Rohstoffkreisläufe schließen – eine Bundesratsinitiative auf den Weg bringen, die die verpflichtende …
 
-**commitment_text:** Rohstoffkreisläufe schließen - eine Bundesratsinitiative auf den Weg bringen, die die verpflichtende Rückgabe von Altgeräten mit seltenen Erden vorsieht und so systematisch Recycling ermöglicht. So kann Sachsen-Anhalt Vorreiter einer deutsch-europäischen Recyclingwirtschaft werden: als Standort technologischer Souveränität, ökologischer Verantwortung und tausender neuer, zukunftsfester Arbeitsplätze.
+**commitment_text:** Rohstoffkreisläufe schließen – eine Bundesratsinitiative auf den Weg bringen, die die verpflichtende Rückgabe von Altgeräten mit seltenen Erden vorsieht und so systematisch Recycling ermöglicht. So kann Sachsen-Anhalt Vorreiter einer deutsch-europäischen Recyclingwirtschaft werden: als Standort technologischer Souveränität, ökologischer Verantwortung und tausender neuer, zukunftsfester Arbeitsplätze.
 
 ##### source_location
 
@@ -27075,9 +27075,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0844-eine-verpflichtende-ki-folgenabschaetzung-vor-jedem-einsat
 
-**title:** eine verpflichtende KI-Folgenabschätzung vor jedem Einsatz in öffentlich finanzierten Landeseinrichtungen - analog …
+**title:** eine verpflichtende KI-Folgenabschätzung vor jedem Einsatz in öffentlich finanzierten Landeseinrichtungen – analog …
 
-**commitment_text:** eine verpflichtende KI-Folgenabschätzung vor jedem Einsatz in öffentlich finanzierten Landeseinrichtungen - analog zur Datenschutz-Folgenabschätzung, mit halbjährlicher Überprüfung aller eingesetzten Systeme,
+**commitment_text:** eine verpflichtende KI-Folgenabschätzung vor jedem Einsatz in öffentlich finanzierten Landeseinrichtungen – analog zur Datenschutz-Folgenabschätzung, mit halbjährlicher Überprüfung aller eingesetzten Systeme,
 
 ##### source_location
 
@@ -27171,9 +27171,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0847-den-einsatz-quelloffener-ki-modelle-keine-proprietaeren-bl
 
-**title:** den Einsatz quelloffener KI-Modelle - keine proprietären Black-Box-Systeme ohne überprüfbare Funktionsweise
+**title:** den Einsatz quelloffener KI-Modelle – keine proprietären Black-Box-Systeme ohne überprüfbare Funktionsweise
 
-**commitment_text:** den Einsatz quelloffener KI-Modelle - keine proprietären Black-Box-Systeme ohne überprüfbare Funktionsweise. Wo KI in der Verwaltung eingesetzt wird, setzen wir auf europäische Dienstleister oder eigenes Hosting durch das Land,
+**commitment_text:** den Einsatz quelloffener KI-Modelle – keine proprietären Black-Box-Systeme ohne überprüfbare Funktionsweise. Wo KI in der Verwaltung eingesetzt wird, setzen wir auf europäische Dienstleister oder eigenes Hosting durch das Land,
 
 ##### source_location
 
@@ -27237,7 +27237,7 @@ _Leere Liste._
 
 **title:** Transparenzpflichten für den Energieverbrauch von KI-Systemen sowie ökologische Kriterien bei öffentlichen Vergaben
 
-**commitment_text:** Transparenzpflichten für den Energieverbrauch von KI-Systemen sowie ökologische Kriterien bei öffentlichen Vergaben. KI im Sozialstaat - Automatisierung darf nicht Entrechtung bedeuten Die Bundesregierung plant den massiven Einsatz von KI in der Sozialverwaltung und die Einschränkung des Vier-Augen-Prinzips. Für Sachsen-Anhalt - ein Land mit überdurchschnittlich vielen Sozialleistungsempfänger:innen - birgt das besondere Risiken. Algorithmische Systeme können diskriminieren, wenn ihre Trainingsdaten historische Ungleichheiten widerspiegeln. Gleichzeitig droht digitale Ausgrenzung, wenn Sozialleistungen nur noch über Portale beantragt werden können, die viele, besonders ältere, Menschen nicht nutzen können. Denn Algorithmen können durch das unwidersprochene Wiederholen von Ungleichheiten diskriminieren. Gleichzeitig droht die Ausgrenzung von vielen, besonders älteren Menschen im ländlichen Raum, wenn Sozialleistungen nur noch digital beantragt werden können. Wir wollen:
+**commitment_text:** Transparenzpflichten für den Energieverbrauch von KI-Systemen sowie ökologische Kriterien bei öffentlichen Vergaben. KI im Sozialstaat – Automatisierung darf nicht Entrechtung bedeuten Die Bundesregierung plant den massiven Einsatz von KI in der Sozialverwaltung und die Einschränkung des Vier-Augen-Prinzips. Für Sachsen-Anhalt – ein Land mit überdurchschnittlich vielen Sozialleistungsempfänger:innen – birgt das besondere Risiken. Algorithmische Systeme können diskriminieren, wenn ihre Trainingsdaten historische Ungleichheiten widerspiegeln. Gleichzeitig droht digitale Ausgrenzung, wenn Sozialleistungen nur noch über Portale beantragt werden können, die viele, besonders ältere, Menschen nicht nutzen können. Denn Algorithmen können durch das unwidersprochene Wiederholen von Ungleichheiten diskriminieren. Gleichzeitig droht die Ausgrenzung von vielen, besonders älteren Menschen im ländlichen Raum, wenn Sozialleistungen nur noch digital beantragt werden können. Wir wollen:
 
 ##### source_location
 
@@ -27333,7 +27333,7 @@ _Leere Liste._
 
 **title:** ein Recht auf menschliche Überprüfung und verständliche Begründung bei jeder KI-gestützten Verwaltungsentscheidung …
 
-**commitment_text:** ein Recht auf menschliche Überprüfung und verständliche Begründung bei jeder KI-gestützten Verwaltungsentscheidung - Widerspruch muss einfach und kostenfrei möglich sein,
+**commitment_text:** ein Recht auf menschliche Überprüfung und verständliche Begründung bei jeder KI-gestützten Verwaltungsentscheidung – Widerspruch muss einfach und kostenfrei möglich sein,
 
 ##### source_location
 
@@ -27365,7 +27365,7 @@ _Leere Liste._
 
 **title:** eine Beweislastumkehr
 
-**commitment_text:** eine Beweislastumkehr: Wenn ein Algorithmus eine Leistung verweigert, muss die Behörde nachweisen, dass die Entscheidung korrekt war - nicht die betroffene Person,
+**commitment_text:** eine Beweislastumkehr: Wenn ein Algorithmus eine Leistung verweigert, muss die Behörde nachweisen, dass die Entscheidung korrekt war – nicht die betroffene Person,
 
 ##### source_location
 
@@ -27427,9 +27427,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0855-den-erhalt-und-ausbau-physischer-anlaufstellen-in-allen-la
 
-**title:** den Erhalt und Ausbau physischer Anlaufstellen in allen Landkreisen - verbindlich finanziert, …
+**title:** den Erhalt und Ausbau physischer Anlaufstellen in allen Landkreisen – verbindlich finanziert, …
 
-**commitment_text:** den Erhalt und Ausbau physischer Anlaufstellen in allen Landkreisen - verbindlich finanziert, nicht unter Haushaltsvorbehalt,
+**commitment_text:** den Erhalt und Ausbau physischer Anlaufstellen in allen Landkreisen – verbindlich finanziert, nicht unter Haushaltsvorbehalt,
 
 ##### source_location
 
@@ -27461,7 +27461,7 @@ _Leere Liste._
 
 **title:** einen proaktiven Sozialstaat
 
-**commitment_text:** einen proaktiven Sozialstaat: Wer Anspruch hat, wird automatisch informiert - Digitalisierung muss verdeckte Armut bekämpfen, nicht mit Formularen abschrecken. Digitalisierung für Menschen - nicht gegen Beschäftigte Mit Blick auf die deutsche Verwaltungslandschaft wissen wir mittlerweile, dass Maßnahmen zur Digitalisierung und zum Bürokratieabbau in umfangreichen Maßstäben nötig sind. Jedoch darf dies nicht zu Forderungen nach dem Abbau
+**commitment_text:** einen proaktiven Sozialstaat: Wer Anspruch hat, wird automatisch informiert – Digitalisierung muss verdeckte Armut bekämpfen, nicht mit Formularen abschrecken. Digitalisierung für Menschen – nicht gegen Beschäftigte Mit Blick auf die deutsche Verwaltungslandschaft wissen wir mittlerweile, dass Maßnahmen zur Digitalisierung und zum Bürokratieabbau in umfangreichen Maßstäben nötig sind. Jedoch darf dies nicht zu Forderungen nach dem Abbau
 
 ##### source_location
 
@@ -28099,9 +28099,9 @@ _Leere Liste._
 
 **commitment_key:** ltw-2026-st-linke-0876-die-abloesung-von-microsoft-office-durch-souveraene-open-s
 
-**title:** die Ablösung von Microsoft Office durch souveräne Open-Source Alternativen, Geld sparen - …
+**title:** die Ablösung von Microsoft Office durch souveräne Open-Source Alternativen, Geld sparen – …
 
-**commitment_text:** die Ablösung von Microsoft Office durch souveräne Open-Source Alternativen, Geld sparen - Bestehende Lösungen nachnutzen Deutschlands digitale Verwaltung ist ein Flickenteppich. Jedes Bundesland entwickelt eigene Lösungen, jede Kommune kauft andere Software, nichts passt zusammen. Das ist ineffizient, teuer und führt dazu, dass Bürger:innen je nach Wohnort völlig unterschiedliche digitale Services erleben, sofern sie vorhanden sind. Daten können nicht zwischen Behörden ausgetauscht werden, weil die Systeme nicht kompatibel sind. Es mangelt bei den Entwicklungen an Interoperabilität. Gemeinsame Standards, offene Schnittstellen, zentrale Plattformen Wir brauchen einen Paradigmenwechsel: Weg vom digitalen Flickenteppich, hin zu interoperablen Lösungen, die miteinander harmonieren. Das geht nur, wenn Bund, Länder und Kommunen bei der Entwicklung souveräner digitaler Lösungen zusammenarbeiten. Es geht um die Entwicklung gemeinsamer Plattformen und Fachverfahren, die überall funktionieren und miteinander kommunizieren können. Aufträge müssen an Unternehmen gehen, die nutzerfreundliche und durchdachte Lösungen entwickeln. Wirtschaftliche Partikularinteressen und Silolösungen müssen zurückgestellt werden für das Allgemeinwohl. Sachsen-Anhalt setzt sich auf Bundesebene noch stärker für verbindliche Interoperabilitätsstandards ein. Wir nutzen und entwickeln gemeinsame OpenSource-Plattformen mit anderen Ländern, statt eigene Insellösungen zu bauen. Wir nutzen bereits entwickelte Lösungen anderer Länder nach. Bei Ausschreibungen bevorzugen wir Anbieter, die offene Schnittstellen und Interoperabilität garantieren. Die Anschlussfähigkeit an die deutschlandweite Cloud-Infrastruktur (den sogenannten Deutschland-Stack) und die Deutschlandarchitektur muss gewährleistet sein. Digitale Teilhabe für alle Digitalisierung der Daseinsvorsorge bedeutet mehr als eine Digitalstrategie auf dem Papier. Schnelles Internet allein reicht nicht, wenn Menschen es sich nicht leisten können oder nicht wissen, wie sie es nutzen können. Eine alleinerziehende Mutter mit drei Kindern braucht nicht nur einen Internetanschluss, sondern auch Tablets für die Hausaufgaben und Hilfe beim Einrichten. Ältere Menschen brauchen niederschwellige Unterstützung, um digitale Behördengänge zu bewältigen. Menschen mit Behinderungen stoßen auf digitale Barrieren. Menschen, die nicht digital affin sind, benötigen Unterstützung vor Ort, ohne dafür in die nächste große Stadt fahren zu müssen. Digitale Daseins
+**commitment_text:** die Ablösung von Microsoft Office durch souveräne Open-Source Alternativen, Geld sparen – Bestehende Lösungen nachnutzen Deutschlands digitale Verwaltung ist ein Flickenteppich. Jedes Bundesland entwickelt eigene Lösungen, jede Kommune kauft andere Software, nichts passt zusammen. Das ist ineffizient, teuer und führt dazu, dass Bürger:innen je nach Wohnort völlig unterschiedliche digitale Services erleben, sofern sie vorhanden sind. Daten können nicht zwischen Behörden ausgetauscht werden, weil die Systeme nicht kompatibel sind. Es mangelt bei den Entwicklungen an Interoperabilität. Gemeinsame Standards, offene Schnittstellen, zentrale Plattformen Wir brauchen einen Paradigmenwechsel: Weg vom digitalen Flickenteppich, hin zu interoperablen Lösungen, die miteinander harmonieren. Das geht nur, wenn Bund, Länder und Kommunen bei der Entwicklung souveräner digitaler Lösungen zusammenarbeiten. Es geht um die Entwicklung gemeinsamer Plattformen und Fachverfahren, die überall funktionieren und miteinander kommunizieren können. Aufträge müssen an Unternehmen gehen, die nutzerfreundliche und durchdachte Lösungen entwickeln. Wirtschaftliche Partikularinteressen und Silolösungen müssen zurückgestellt werden für das Allgemeinwohl. Sachsen-Anhalt setzt sich auf Bundesebene noch stärker für verbindliche Interoperabilitätsstandards ein. Wir nutzen und entwickeln gemeinsame OpenSource-Plattformen mit anderen Ländern, statt eigene Insellösungen zu bauen. Wir nutzen bereits entwickelte Lösungen anderer Länder nach. Bei Ausschreibungen bevorzugen wir Anbieter, die offene Schnittstellen und Interoperabilität garantieren. Die Anschlussfähigkeit an die deutschlandweite Cloud-Infrastruktur (den sogenannten Deutschland-Stack) und die Deutschlandarchitektur muss gewährleistet sein. Digitale Teilhabe für alle Digitalisierung der Daseinsvorsorge bedeutet mehr als eine Digitalstrategie auf dem Papier. Schnelles Internet allein reicht nicht, wenn Menschen es sich nicht leisten können oder nicht wissen, wie sie es nutzen können. Eine alleinerziehende Mutter mit drei Kindern braucht nicht nur einen Internetanschluss, sondern auch Tablets für die Hausaufgaben und Hilfe beim Einrichten. Ältere Menschen brauchen niederschwellige Unterstützung, um digitale Behördengänge zu bewältigen. Menschen mit Behinderungen stoßen auf digitale Barrieren. Menschen, die nicht digital affin sind, benötigen Unterstützung vor Ort, ohne dafür in die nächste große Stadt fahren zu müssen. Digitale Daseins
 
 ##### source_location
 

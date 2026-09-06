@@ -1,4 +1,4 @@
-# Vollständige Fachakte - btw-2025-linke
+# Vollständige Fachakte – btw-2025-linke
 
 > Vollständige, automatisch strukturierte Darstellung der zugrunde liegenden Fachquelle. Kein Inhaltsfeld wurde redaktionell verdichtet.
 
@@ -19,7 +19,7 @@
 
 **review_status:** COMPLETE
 
-**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Alle wollen regieren. Wir wollen verändern. - Wahlprogramm 2025. Alle 200 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
+**plain_language_summary:** Vollständige Ex-ante-Wirkungsakte für Alle wollen regieren. Wir wollen verändern. – Wahlprogramm 2025. Alle 200 gelieferten Zusageschlüssel wurden gegen die Originalquelle gegengeprüft. Mehrspalten-/Layoutkollisionen werden nicht verdichtet oder still korrigiert, sondern als getrennte Source Components unter dem bestehenden Schlüssel analysiert.
 
 ### source_summary
 
@@ -28,7 +28,7 @@
 #### declared_objectives
 
 - Materielle Schwerpunkte nach quellenrekonstruierten Komponenten: WORK_SOCIAL_SECURITY, TAX_FISCAL_BUDGET, HOUSING, SECURITY_POLICE_JUSTICE, ENERGY_CLIMATE, EDUCATION, DEFENCE_FOREIGN_EU.
-- Beispiel: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
+- Beispiel: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
 - Beispiel: Liebe Wähler*innen, wir sind verschieden, aber die meisten von uns wollen das … / Wir wollen, dass niemand mehr Angst haben muss, bei der nächsten Mieterhöhung …
 - Beispiel: Darum möchten wir mehr Busse und Bahnen zu möglichst niedrigen Preisen / Wer nicht weiß, wie er die nächste Mieterhöhung zahlen oder sein Kind … / Reichtum für uns alle heißt auch, dass wir unsere Liebsten sehen können, …
 - Beispiel: Aber wir müssen genau darüber sprechen
@@ -66,9 +66,9 @@
 
 **source_location:** Leben bezahlbar machen 6
 
-**intended_change:** Vorgesehene Veränderung: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise - gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
+**intended_change:** Vorgesehene Veränderung: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise – gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
 
-**measure:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
+**measure:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
 
 ##### decision_readiness
 
@@ -274,7 +274,7 @@ _Leere Liste._
 
 **page:** 2
 
-**text:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise - gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
+**text:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise – gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
 
 **match_score:** 100.0
 
@@ -287,7 +287,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll���������������������������������������������������������������������������������������� 6 Wir senken die Energiepreise - gerecht und klimafreundlich ���������������������������������������������������������������������������������������������� 6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7
+**input_register_text:** Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll���������������������������������������������������������������������������������������� 6 Wir senken die Energiepreise – gerecht und klimafreundlich ���������������������������������������������������������������������������������������������� 6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7
 
 ##### source_components
 
@@ -297,7 +297,7 @@ _Leere Liste._
 
 **source_page:** 2
 
-**source_text:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise - gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
+**source_text:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise – gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
 
 **topic:** ENERGY_CLIMATE
 
@@ -309,9 +309,9 @@ _Leere Liste._
 
 _Leere Liste._
 
-**measure:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
+**measure:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
 
-**intended_change:** Vorgesehene Veränderung: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise - gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
+**intended_change:** Vorgesehene Veränderung: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise – gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
 
 
 ##### component_topics
@@ -2503,9 +2503,9 @@ _Leere Liste._
 
 **source_location:** Leben bezahlbar machen
 
-**intended_change:** Vorgesehene Veränderung: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise - gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
+**intended_change:** Vorgesehene Veränderung: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise – gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
 
-**measure:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
+**measure:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
 
 ##### decision_readiness
 
@@ -2711,7 +2711,7 @@ _Leere Liste._
 
 **page:** 2
 
-**text:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise - gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
+**text:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise – gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
 
 **match_score:** 100.0
 
@@ -2724,7 +2724,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir senken die Lebenshaltungskosten - Wir senken die Energiepreise - gerecht sofort und wirkungsvoll und klimafreundlich
+**input_register_text:** Wir senken die Lebenshaltungskosten – Wir senken die Energiepreise – gerecht sofort und wirkungsvoll und klimafreundlich
 
 ##### source_components
 
@@ -2734,7 +2734,7 @@ _Leere Liste._
 
 **source_page:** 2
 
-**source_text:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise - gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
+**source_text:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise – gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
 
 **topic:** ENERGY_CLIMATE
 
@@ -2746,9 +2746,9 @@ _Leere Liste._
 
 _Leere Liste._
 
-**measure:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
+**measure:** Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 …
 
-**intended_change:** Vorgesehene Veränderung: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten - sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise - gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
+**intended_change:** Vorgesehene Veränderung: Leben bezahlbar machen 6 Wir senken die Lebenshaltungskosten – sofort und wirkungsvoll����������������������������������������������������������������������������������������6 Wir senken die Energiepreise – gerecht und klimafreundlich ����������������������������������������������������������������������������������������������6 Wir sorgen für stabile Preise und verhindern zukünftige Krisen������������������������������������������������������������������������������������������ 7 2.
 
 
 ##### component_topics
@@ -3159,7 +3159,7 @@ _Leere Liste._
 
 **page:** 6
 
-**text:** Wir stellen gesetzlich sicher, dass sich die Mehrwertsteuersenkung in den Preisen niederschlägt - und nicht die Profite der Unternehmen füttert.
+**text:** Wir stellen gesetzlich sicher, dass sich die Mehrwertsteuersenkung in den Preisen niederschlägt – und nicht die Profite der Unternehmen füttert.
 
 **match_score:** 76.0
 
@@ -3204,7 +3204,7 @@ _Leere Liste._
 
 **source_page:** 6
 
-**source_text:** Wir stellen gesetzlich sicher, dass sich die Mehrwertsteuersenkung in den Preisen niederschlägt - und nicht die Profite der Unternehmen füttert.
+**source_text:** Wir stellen gesetzlich sicher, dass sich die Mehrwertsteuersenkung in den Preisen niederschlägt – und nicht die Profite der Unternehmen füttert.
 
 **topic:** TAX_FISCAL_BUDGET
 
@@ -3218,7 +3218,7 @@ _Leere Liste._
 
 **measure:** Wir stellen gesetzlich sicher, dass sich die Mehrwertsteuersenkung in den Preisen niederschlägt …
 
-**intended_change:** Vorgesehene Veränderung: Wir stellen gesetzlich sicher, dass sich die Mehrwertsteuersenkung in den Preisen niederschlägt - und nicht die Profite der Unternehmen füttert.
+**intended_change:** Vorgesehene Veränderung: Wir stellen gesetzlich sicher, dass sich die Mehrwertsteuersenkung in den Preisen niederschlägt – und nicht die Profite der Unternehmen füttert.
 
 
 ##### component_topics
@@ -3316,7 +3316,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Preise - wo nötig -regulieren und begrenzen, damit die Konzerne ihre Profite … / Genießbare Lebensmittel sind an gemeinnützige Organisationen weiterzugeben oder direkt kostenfrei abzugeben
+**measure:** Preise – wo nötig –regulieren und begrenzen, damit die Konzerne ihre Profite … / Genießbare Lebensmittel sind an gemeinnützige Organisationen weiterzugeben oder direkt kostenfrei abzugeben
 
 ##### decision_readiness
 
@@ -3625,7 +3625,7 @@ _Leere Liste._
 
 **page:** 6
 
-**text:** Wir wollen Preise - wo nötig -regulieren und begrenzen, damit die Konzerne ihre Profite nicht beliebig erhöhen können.
+**text:** Wir wollen Preise – wo nötig –regulieren und begrenzen, damit die Konzerne ihre Profite nicht beliebig erhöhen können.
 
 **match_score:** 95.5
 
@@ -3650,7 +3650,7 @@ _Leere Liste._
 
 **top_score:** 95.5
 
-**input_register_text:** Wir wollen Preise - wo nötig -regulieren und Genießbare Lebensmittel sind an gemeinnützige Organibegrenzen, damit die Konzerne ihre Profite nicht beliebig sationen weiterzugeben oder direkt kostenfrei erhöhen können.
+**input_register_text:** Wir wollen Preise – wo nötig –regulieren und Genießbare Lebensmittel sind an gemeinnützige Organibegrenzen, damit die Konzerne ihre Profite nicht beliebig sationen weiterzugeben oder direkt kostenfrei erhöhen können.
 
 ##### source_components
 
@@ -3660,7 +3660,7 @@ _Leere Liste._
 
 **source_page:** 6
 
-**source_text:** Wir wollen Preise - wo nötig -regulieren und begrenzen, damit die Konzerne ihre Profite nicht beliebig erhöhen können.
+**source_text:** Wir wollen Preise – wo nötig –regulieren und begrenzen, damit die Konzerne ihre Profite nicht beliebig erhöhen können.
 
 **topic:** MIGRATION_ASYL
 
@@ -3672,9 +3672,9 @@ _Leere Liste._
 
 _Leere Liste._
 
-**measure:** Preise - wo nötig -regulieren und begrenzen, damit die Konzerne ihre Profite …
+**measure:** Preise – wo nötig –regulieren und begrenzen, damit die Konzerne ihre Profite …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen Preise - wo nötig -regulieren und begrenzen, damit die Konzerne ihre Profite nicht beliebig erhöhen können.
+**intended_change:** Vorgesehene Veränderung: Wir wollen Preise – wo nötig –regulieren und begrenzen, damit die Konzerne ihre Profite nicht beliebig erhöhen können.
 
 ###### Eintrag 2
 
@@ -3791,7 +3791,7 @@ _Leere Liste._
 
 **source_location:** Leben bezahlbar machen
 
-**intended_change:** Vorgesehene Veränderung: und Familien. Wir wollen der Teuerung entgegenwirken: - brauchen aber die Entlastung nicht. Für eine sozial
+**intended_change:** Vorgesehene Veränderung: und Familien. Wir wollen der Teuerung entgegenwirken: – brauchen aber die Entlastung nicht. Für eine sozial
 
 **measure:** und Familien
 
@@ -3986,7 +3986,7 @@ _Leere Liste._
 
 **page:** 6
 
-**text:** und Familien. Wir wollen der Teuerung entgegenwirken: - brauchen aber die Entlastung nicht. Für eine sozial
+**text:** und Familien. Wir wollen der Teuerung entgegenwirken: – brauchen aber die Entlastung nicht. Für eine sozial
 
 **match_score:** 100.0
 
@@ -3997,7 +3997,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen der Teuerung entgegenwirken: - brauchen aber die Entlastung nicht.
+**input_register_text:** Wir wollen der Teuerung entgegenwirken: – brauchen aber die Entlastung nicht.
 
 ##### source_components
 
@@ -4007,7 +4007,7 @@ _Leere Liste._
 
 **source_page:** 6
 
-**source_text:** und Familien. Wir wollen der Teuerung entgegenwirken: - brauchen aber die Entlastung nicht. Für eine sozial
+**source_text:** und Familien. Wir wollen der Teuerung entgegenwirken: – brauchen aber die Entlastung nicht. Für eine sozial
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -4021,7 +4021,7 @@ _Leere Liste._
 
 **measure:** und Familien
 
-**intended_change:** Vorgesehene Veränderung: und Familien. Wir wollen der Teuerung entgegenwirken: - brauchen aber die Entlastung nicht. Für eine sozial
+**intended_change:** Vorgesehene Veränderung: und Familien. Wir wollen der Teuerung entgegenwirken: – brauchen aber die Entlastung nicht. Für eine sozial
 
 
 ##### component_topics
@@ -6063,7 +6063,7 @@ _Leere Liste._
 
 **page:** 8
 
-**text:** Die Mietpreisbremse ist weitgehend wirkungslos und befördert unverschämte Praktiken: Wer klagt, hat schnell das „Vertrauen“ des Vermieters verloren - dann dauert die nächste Reparatur in der Wohnung eben länger.
+**text:** Die Mietpreisbremse ist weitgehend wirkungslos und befördert unverschämte Praktiken: Wer klagt, hat schnell das „Vertrauen“ des Vermieters verloren – dann dauert die nächste Reparatur in der Wohnung eben länger.
 
 **match_score:** 82.4
 
@@ -6076,7 +6076,7 @@ _Leere Liste._
 
 **top_score:** 92.2
 
-**input_register_text:** Das wollen wir unter Strafe stellen. unverschämte Praktiken: Wer klagt, hat schnell das „Vertrauen“ des Vermieters verloren - dann dauert die ▪ Wir fordern sozial gestaffelte Heizungs- und Stromnächste Reparatur in der Wohnung eben länger.
+**input_register_text:** Das wollen wir unter Strafe stellen. unverschämte Praktiken: Wer klagt, hat schnell das „Vertrauen“ des Vermieters verloren – dann dauert die ▪ Wir fordern sozial gestaffelte Heizungs- und Stromnächste Reparatur in der Wohnung eben länger.
 
 ##### source_components
 
@@ -6108,7 +6108,7 @@ _Leere Liste._
 
 **source_page:** 8
 
-**source_text:** Die Mietpreisbremse ist weitgehend wirkungslos und befördert unverschämte Praktiken: Wer klagt, hat schnell das „Vertrauen“ des Vermieters verloren - dann dauert die nächste Reparatur in der Wohnung eben länger.
+**source_text:** Die Mietpreisbremse ist weitgehend wirkungslos und befördert unverschämte Praktiken: Wer klagt, hat schnell das „Vertrauen“ des Vermieters verloren – dann dauert die nächste Reparatur in der Wohnung eben länger.
 
 **topic:** HOUSING
 
@@ -6122,7 +6122,7 @@ _Leere Liste._
 
 **measure:** Die Mietpreisbremse ist weitgehend wirkungslos und befördert unverschämte Praktiken
 
-**intended_change:** Vorgesehene Veränderung: Die Mietpreisbremse ist weitgehend wirkungslos und befördert unverschämte Praktiken: Wer klagt, hat schnell das „Vertrauen“ des Vermieters verloren - dann dauert die nächste Reparatur in der Wohnung eben länger.
+**intended_change:** Vorgesehene Veränderung: Die Mietpreisbremse ist weitgehend wirkungslos und befördert unverschämte Praktiken: Wer klagt, hat schnell das „Vertrauen“ des Vermieters verloren – dann dauert die nächste Reparatur in der Wohnung eben länger.
 
 
 ##### component_topics
@@ -16840,7 +16840,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Führungspersonal und -gremien der EZB - wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in - … / Wir wollen, dass alle deutschen Staatsangehörigen in Deutschland besteuert werden, unabhängig davon, …
+**measure:** Führungspersonal und -gremien der EZB – wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in – … / Wir wollen, dass alle deutschen Staatsangehörigen in Deutschland besteuert werden, unabhängig davon, …
 
 ##### decision_readiness
 
@@ -17159,7 +17159,7 @@ _Leere Liste._
 
 **page:** 13
 
-**text:** Führungspersonal und -gremien der EZB - wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in - sollen vom Europäischen Parlament gewählt werden.
+**text:** Führungspersonal und -gremien der EZB – wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in – sollen vom Europäischen Parlament gewählt werden.
 
 **match_score:** 93.2
 
@@ -17184,7 +17184,7 @@ _Leere Liste._
 
 **top_score:** 93.2
 
-**input_register_text:** Wir wollen, dass -gremien der EZB - wie EZB-Rat, EZB-Direktorium und alle deutschen Staatsangehörigen in Deutschland EZB-Präsident*in - sollen vom Europäischen Parlament besteuert werden, unabhängig davon, wo sie ihre gewählt werden.
+**input_register_text:** Wir wollen, dass -gremien der EZB – wie EZB-Rat, EZB-Direktorium und alle deutschen Staatsangehörigen in Deutschland EZB-Präsident*in – sollen vom Europäischen Parlament besteuert werden, unabhängig davon, wo sie ihre gewählt werden.
 
 ##### source_components
 
@@ -17194,7 +17194,7 @@ _Leere Liste._
 
 **source_page:** 13
 
-**source_text:** Führungspersonal und -gremien der EZB - wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in - sollen vom Europäischen Parlament gewählt werden.
+**source_text:** Führungspersonal und -gremien der EZB – wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in – sollen vom Europäischen Parlament gewählt werden.
 
 **topic:** DEFENCE_FOREIGN_EU
 
@@ -17206,9 +17206,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Führungspersonal und -gremien der EZB - wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in - …
+**measure:** Führungspersonal und -gremien der EZB – wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in – …
 
-**intended_change:** Vorgesehene Veränderung: Führungspersonal und -gremien der EZB - wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in - sollen vom Europäischen Parlament gewählt werden.
+**intended_change:** Vorgesehene Veränderung: Führungspersonal und -gremien der EZB – wie EZB-Rat, EZB-Direktorium und EZB-Präsident*in – sollen vom Europäischen Parlament gewählt werden.
 
 ###### Eintrag 2
 
@@ -19456,7 +19456,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Kinderarmut bekämpfen - Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, … / Der Rechtsanspruch auf Ganztagsbetreuung muss umgesetzt werden, dazu gehört die Schaffung von …
+**measure:** Kinderarmut bekämpfen – Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, … / Der Rechtsanspruch auf Ganztagsbetreuung muss umgesetzt werden, dazu gehört die Schaffung von …
 
 ##### decision_readiness
 
@@ -19774,7 +19774,7 @@ _Leere Liste._
 
 **page:** 16
 
-**text:** Kinderarmut bekämpfen - Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.
+**text:** Kinderarmut bekämpfen – Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.
 
 **match_score:** 92.1
 
@@ -19809,7 +19809,7 @@ _Leere Liste._
 
 **source_page:** 16
 
-**source_text:** Kinderarmut bekämpfen - Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.
+**source_text:** Kinderarmut bekämpfen – Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -19821,9 +19821,9 @@ _Leere Liste._
 
 _Leere Liste._
 
-**measure:** Kinderarmut bekämpfen - Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, …
+**measure:** Kinderarmut bekämpfen – Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, …
 
-**intended_change:** Vorgesehene Veränderung: Kinderarmut bekämpfen - Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.
+**intended_change:** Vorgesehene Veränderung: Kinderarmut bekämpfen – Kinder und Jugendliche beteiligen Um Kinderarmut wirksam zu bekämpfen, wollen wir eine eigenständige Kindergrundsicherung einführen, von der alle Kinder und Jugendlichen profitieren.
 
 ###### Eintrag 2
 
@@ -27111,9 +27111,9 @@ _Leere Liste._
 
 **source_location:** Kommunale Versorgungszentren mit kurzen Wegen und
 
-**intended_change:** Vorgesehene Veränderung: Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren - bei besseren Arbeitsbedingungen. ▪ Die Berufsausbildung für Kranken- und Altenpflege ist zusammengelegt worden.
+**intended_change:** Vorgesehene Veränderung: Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren – bei besseren Arbeitsbedingungen. ▪ Die Berufsausbildung für Kranken- und Altenpflege ist zusammengelegt worden.
 
-**measure:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren - bei besseren …
+**measure:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren – bei besseren …
 
 ##### decision_readiness
 
@@ -27322,7 +27322,7 @@ _Leere Liste._
 
 **page:** 20
 
-**text:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren - bei besseren Arbeitsbedingungen. ▪ Die Berufsausbildung für Kranken- und Altenpflege ist zusammengelegt worden.
+**text:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren – bei besseren Arbeitsbedingungen. ▪ Die Berufsausbildung für Kranken- und Altenpflege ist zusammengelegt worden.
 
 **match_score:** 78.0
 
@@ -27335,7 +27335,7 @@ _Leere Liste._
 
 **top_score:** 78.0
 
-**input_register_text:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf ▪ Wir wollen eine vollständige Legalisierung von Cannabis zurückzukehren - bei besseren Arbeitsbedingungen. und die dafür notwendigen Änderungen auf EU- und UN-Ebene durchsetzen.
+**input_register_text:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf ▪ Wir wollen eine vollständige Legalisierung von Cannabis zurückzukehren – bei besseren Arbeitsbedingungen. und die dafür notwendigen Änderungen auf EU- und UN-Ebene durchsetzen.
 
 ##### source_components
 
@@ -27345,7 +27345,7 @@ _Leere Liste._
 
 **source_page:** 20
 
-**source_text:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren - bei besseren Arbeitsbedingungen. ▪ Die Berufsausbildung für Kranken- und Altenpflege ist zusammengelegt worden.
+**source_text:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren – bei besseren Arbeitsbedingungen. ▪ Die Berufsausbildung für Kranken- und Altenpflege ist zusammengelegt worden.
 
 **topic:** EDUCATION
 
@@ -27357,9 +27357,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren - bei besseren …
+**measure:** Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren – bei besseren …
 
-**intended_change:** Vorgesehene Veränderung: Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren - bei besseren Arbeitsbedingungen. ▪ Die Berufsausbildung für Kranken- und Altenpflege ist zusammengelegt worden.
+**intended_change:** Vorgesehene Veränderung: Hunderttausende Pflegekräfte können sich vorstellen, in den Beruf zurückzukehren – bei besseren Arbeitsbedingungen. ▪ Die Berufsausbildung für Kranken- und Altenpflege ist zusammengelegt worden.
 
 
 ##### component_topics
@@ -36314,7 +36314,7 @@ _Leere Liste._
 
 **page:** 25
 
-**text:** Sie ist solidarisch mit allen Ländern, die sich wie Kuba auf einen sozialistischen Entwicklungsweg begeben haben, sie ist solidarisch mit progressiven politischen Entwicklungsprozessen in Lateinamerika, im Globalen Süden und in der ganzen Welt - mit allen, die eine Politik des Friedens, der Völkerverständigung, der solidarischen ökonomischen Zusammenarbeit verfolgen, mit allen, die sich in ihren Ländern für Armutsbekämpfung, die Verringerung der sozialen Ausgrenzung und der Ungleichheit, für Umweltschutz und für die Rechte von Indigenen einsetzen.
+**text:** Sie ist solidarisch mit allen Ländern, die sich wie Kuba auf einen sozialistischen Entwicklungsweg begeben haben, sie ist solidarisch mit progressiven politischen Entwicklungsprozessen in Lateinamerika, im Globalen Süden und in der ganzen Welt – mit allen, die eine Politik des Friedens, der Völkerverständigung, der solidarischen ökonomischen Zusammenarbeit verfolgen, mit allen, die sich in ihren Ländern für Armutsbekämpfung, die Verringerung der sozialen Ausgrenzung und der Ungleichheit, für Umweltschutz und für die Rechte von Indigenen einsetzen.
 
 **match_score:** 75.1
 
@@ -36327,7 +36327,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Globalen Süden und in der ganzen Welt - mit allen, die eine Patente für lebenswichtige Medikamente müssen (auch Politik des Friedens, der Völkerverständigung, der solidari- international) überwunden werden, um monopolartige schen ökonomischen Zusammenarbeit verfolgen, mit allen, Preisbildungen zu verhindern. die sich in ihren Ländern für Armutsbekämpfung, die Verringerung der sozialen Ausgrenzung und der ▪ Das Lieferkettengesetz wollen wir stärken, statt es Ungleichheit, für Umweltschutz und für die Rechte von aufzuweichen.
+**input_register_text:** Globalen Süden und in der ganzen Welt – mit allen, die eine Patente für lebenswichtige Medikamente müssen (auch Politik des Friedens, der Völkerverständigung, der solidari- international) überwunden werden, um monopolartige schen ökonomischen Zusammenarbeit verfolgen, mit allen, Preisbildungen zu verhindern. die sich in ihren Ländern für Armutsbekämpfung, die Verringerung der sozialen Ausgrenzung und der ▪ Das Lieferkettengesetz wollen wir stärken, statt es Ungleichheit, für Umweltschutz und für die Rechte von aufzuweichen.
 
 ##### source_components
 
@@ -36359,7 +36359,7 @@ _Leere Liste._
 
 **source_page:** 25
 
-**source_text:** Sie ist solidarisch mit allen Ländern, die sich wie Kuba auf einen sozialistischen Entwicklungsweg begeben haben, sie ist solidarisch mit progressiven politischen Entwicklungsprozessen in Lateinamerika, im Globalen Süden und in der ganzen Welt - mit allen, die eine Politik des Friedens, der Völkerverständigung, der solidarischen ökonomischen Zusammenarbeit verfolgen, mit allen, die sich in ihren Ländern für Armutsbekämpfung, die Verringerung der sozialen Ausgrenzung und der Ungleichheit, für Umweltschutz und für die Rechte von Indigenen einsetzen.
+**source_text:** Sie ist solidarisch mit allen Ländern, die sich wie Kuba auf einen sozialistischen Entwicklungsweg begeben haben, sie ist solidarisch mit progressiven politischen Entwicklungsprozessen in Lateinamerika, im Globalen Süden und in der ganzen Welt – mit allen, die eine Politik des Friedens, der Völkerverständigung, der solidarischen ökonomischen Zusammenarbeit verfolgen, mit allen, die sich in ihren Ländern für Armutsbekämpfung, die Verringerung der sozialen Ausgrenzung und der Ungleichheit, für Umweltschutz und für die Rechte von Indigenen einsetzen.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -36373,7 +36373,7 @@ _Leere Liste._
 
 **measure:** Sie ist solidarisch mit allen Ländern, die sich wie Kuba auf einen …
 
-**intended_change:** Vorgesehene Veränderung: Sie ist solidarisch mit allen Ländern, die sich wie Kuba auf einen sozialistischen Entwicklungsweg begeben haben, sie ist solidarisch mit progressiven politischen Entwicklungsprozessen in Lateinamerika, im Globalen Süden und in der ganzen Welt - mit allen, die eine Politik des Friedens, der Völkerverständigung, der solidarischen ökonomischen Zusammenarbeit verfolgen, mit allen, die sich in ihren Ländern für Armutsbekämpfung, die Verringerung der sozialen Ausgrenzung und der Ungleichheit, für Umweltschutz und für die Rechte von Indigenen einsetzen.
+**intended_change:** Vorgesehene Veränderung: Sie ist solidarisch mit allen Ländern, die sich wie Kuba auf einen sozialistischen Entwicklungsweg begeben haben, sie ist solidarisch mit progressiven politischen Entwicklungsprozessen in Lateinamerika, im Globalen Süden und in der ganzen Welt – mit allen, die eine Politik des Friedens, der Völkerverständigung, der solidarischen ökonomischen Zusammenarbeit verfolgen, mit allen, die sich in ihren Ländern für Armutsbekämpfung, die Verringerung der sozialen Ausgrenzung und der Ungleichheit, für Umweltschutz und für die Rechte von Indigenen einsetzen.
 
 
 ##### component_topics
@@ -36471,7 +36471,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch … / eine weltweite Milliardärsteuer, eine Regulierung der Finanzmärkte und die Einführung einer Finanztransaktionssteuer, …
+**measure:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch … / eine weltweite Milliardärsteuer, eine Regulierung der Finanzmärkte und die Einführung einer Finanztransaktionssteuer, …
 
 ##### decision_readiness
 
@@ -36775,7 +36775,7 @@ _Leere Liste._
 
 **page:** 25
 
-**text:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
+**text:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
 
 **match_score:** 77.2
 
@@ -36810,7 +36810,7 @@ _Leere Liste._
 
 **source_page:** 25
 
-**source_text:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
+**source_text:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -36822,9 +36822,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch …
+**measure:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch …
 
-**intended_change:** Vorgesehene Veränderung: Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
+**intended_change:** Vorgesehene Veränderung: Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
 
 ###### Eintrag 2
 
@@ -36944,7 +36944,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** diese Entwicklung umkehren / Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch …
+**measure:** diese Entwicklung umkehren / Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch …
 
 ##### decision_readiness
 
@@ -37241,7 +37241,7 @@ _Leere Liste._
 
 **page:** 25
 
-**text:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
+**text:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
 
 **match_score:** 76.3
 
@@ -37286,7 +37286,7 @@ _Leere Liste._
 
 **source_page:** 25
 
-**source_text:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
+**source_text:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -37298,9 +37298,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch …
+**measure:** Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch …
 
-**intended_change:** Vorgesehene Veränderung: Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden - auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
+**intended_change:** Vorgesehene Veränderung: Unternehmen, die gegen diese Standards verstoßen, müssen stärker sanktioniert werden – auch auf internationaler Ebene. ▪ Die Rohstoffabkommen Deutschlands mit anderen Ländern müssen demokratisch, sozial und ökologisch gestaltet sein und sollen zum Aufbau einer nachhaltigen Wertschöpfung vor Ort beitragen. 25
 
 
 ##### component_topics
@@ -37611,7 +37611,7 @@ _Leere Liste._
 
 **top_score:** 100.0
 
-**input_register_text:** Wir wollen soziale Gerechtigkeit werden - auch auf internationaler Ebene. weltweit und nehmen die UN-Ziele für eine nachhaltige Entwicklung (SDG) zum Maßstab.
+**input_register_text:** Wir wollen soziale Gerechtigkeit werden – auch auf internationaler Ebene. weltweit und nehmen die UN-Ziele für eine nachhaltige Entwicklung (SDG) zum Maßstab.
 
 ##### source_components
 
@@ -37730,7 +37730,7 @@ _Leere Liste._
 
 **source_location:** Arbeit, die zum Leben passt
 
-**intended_change:** Vorgesehene Veränderung: Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen Niedriglohn, mit dem man kaum über den Monat kommt - in Ostdeutschland fast jede*r Vierte.
+**intended_change:** Vorgesehene Veränderung: Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen Niedriglohn, mit dem man kaum über den Monat kommt – in Ostdeutschland fast jede*r Vierte.
 
 **measure:** Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen …
 
@@ -37939,7 +37939,7 @@ _Leere Liste._
 
 **page:** 26
 
-**text:** Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen Niedriglohn, mit dem man kaum über den Monat kommt - in Ostdeutschland fast jede*r Vierte.
+**text:** Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen Niedriglohn, mit dem man kaum über den Monat kommt – in Ostdeutschland fast jede*r Vierte.
 
 **match_score:** 76.8
 
@@ -37962,7 +37962,7 @@ _Leere Liste._
 
 **source_page:** 26
 
-**source_text:** Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen Niedriglohn, mit dem man kaum über den Monat kommt - in Ostdeutschland fast jede*r Vierte.
+**source_text:** Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen Niedriglohn, mit dem man kaum über den Monat kommt – in Ostdeutschland fast jede*r Vierte.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -37976,7 +37976,7 @@ _Leere Liste._
 
 **measure:** Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen …
 
-**intended_change:** Vorgesehene Veränderung: Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen Niedriglohn, mit dem man kaum über den Monat kommt - in Ostdeutschland fast jede*r Vierte.
+**intended_change:** Vorgesehene Veränderung: Doch jede*r Sechste in Deutschland bekommt für die eigene Arbeit nur einen Niedriglohn, mit dem man kaum über den Monat kommt – in Ostdeutschland fast jede*r Vierte.
 
 
 ##### component_topics
@@ -38277,7 +38277,7 @@ _Leere Liste._
 
 **top_score:** 72.0
 
-**input_register_text:** Sachgründe für Befristungen über den Monat kommt - in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens der Vierte.
+**input_register_text:** Sachgründe für Befristungen über den Monat kommt – in Ostdeutschland fast jede*r werden wir deutlich enger begrenzen, spätestens der Vierte.
 
 ##### source_components
 
@@ -39064,7 +39064,7 @@ _Leere Liste._
 
 **source_location:** Um Beschäftigte und ehrliche Betriebe besser zu gleichen oder besseren Bedingungen übernommen
 
-**intended_change:** Vorgesehene Veränderung: Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden - Gender Pay Gap und Migration Pay Gap überwinden!
+**intended_change:** Vorgesehene Veränderung: Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden – Gender Pay Gap und Migration Pay Gap überwinden!
 
 **measure:** Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen …
 
@@ -39289,7 +39289,7 @@ _Leere Liste._
 
 **page:** 27
 
-**text:** Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden - Gender Pay Gap und Migration Pay Gap überwinden!
+**text:** Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden – Gender Pay Gap und Migration Pay Gap überwinden!
 
 **match_score:** 94.9
 
@@ -39302,7 +39302,7 @@ _Leere Liste._
 
 **top_score:** 94.9
 
-**input_register_text:** Alle Auszubil- Frauen, Beschäftigten mit Migrationsgeschichte und denden sollen mindestens 80 Prozent der tariflichen unabhängig von der geschlechtlichen Identität müssen Ausbildungsvergütung erhalten. endlich gewährleistet werden - Gender Pay Gap und Migration Pay Gap überwinden!
+**input_register_text:** Alle Auszubil- Frauen, Beschäftigten mit Migrationsgeschichte und denden sollen mindestens 80 Prozent der tariflichen unabhängig von der geschlechtlichen Identität müssen Ausbildungsvergütung erhalten. endlich gewährleistet werden – Gender Pay Gap und Migration Pay Gap überwinden!
 
 ##### source_components
 
@@ -39312,7 +39312,7 @@ _Leere Liste._
 
 **source_page:** 27
 
-**source_text:** Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden - Gender Pay Gap und Migration Pay Gap überwinden!
+**source_text:** Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden – Gender Pay Gap und Migration Pay Gap überwinden!
 
 **topic:** FAMILY_EQUALITY
 
@@ -39326,7 +39326,7 @@ _Leere Liste._
 
 **measure:** Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen …
 
-**intended_change:** Vorgesehene Veränderung: Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden - Gender Pay Gap und Migration Pay Gap überwinden!
+**intended_change:** Vorgesehene Veränderung: Gleiche Bezahlung von Frauen, Beschäftigten mit Migrationsgeschichte und unabhängig von der geschlechtlichen Identität müssen endlich gewährleistet werden – Gender Pay Gap und Migration Pay Gap überwinden!
 
 
 ##### component_topics
@@ -40941,7 +40941,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-linke-0106-die-grenzen-des-fossilen-kapitalismus-sind-erreicht-trotzdem-halten-konz
 
-**source_location:** Wirtschaft für alle -
+**source_location:** Wirtschaft für alle –
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
@@ -41598,7 +41598,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-linke-0107-wir-wollen-eine-wirtschaft-fur-bescheidene-klimaschutzgesetz-der-vorgang
 
-**source_location:** Wirtschaft für alle -
+**source_location:** Wirtschaft für alle –
 
 **intended_change:** Vorgesehene Veränderung: lität und politische Stabilität. Wir wollen eine Wirtschaft für bescheidene Klimaschutzgesetz der Vorgängerregierung alle, die nicht nur auf ein paar ausgewählte Leuchtturmpro- noch aufgeweicht. Alle kosmetischen Maßnahmen haben
 
@@ -41939,7 +41939,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-linke-0108-investitionsprogramm-fur-den-industrieumbau-offentliche-steuerung-von-sc
 
-**source_location:** Wirtschaft für alle -
+**source_location:** Wirtschaft für alle –
 
 **intended_change:** Vorgesehene Veränderung: Dividendenausschüttungen müssen bei der Inanspruchnahme von Krisenhilfen für in Notlage geratene Unternehmen untersagt werden. ▪ Öffentliche Steuerung von Schlüsselbranchen durch die Gründung von Industriestiftungen und anderen öffentliche Beteiligungsformen neben dem Investitionsfonds.
 
@@ -42288,7 +42288,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-linke-0109-mithilfe-von-klimaschutzvertragen-wollen-wir-klimafreundliche-technologi
 
-**source_location:** Wirtschaft für alle -
+**source_location:** Wirtschaft für alle –
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
@@ -42811,7 +42811,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-linke-0110-wir-wollen-gute-arbeit-schaffen-das-klima-schutzen-sowie-fur-einen-rettu
 
-**source_location:** Wirtschaft für alle -
+**source_location:** Wirtschaft für alle –
 
 **intended_change:** Vorgesehene Veränderung: Wir wollen gute Arbeit schaffen, das Klima schützen sowie nachhaltig öffentliche bzw. kollektive Eigentumsformen wie Genossenschaften oder Belegschaftseigentum sowie Mitbestimmung stärken.
 
@@ -43169,7 +43169,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-linke-0111-wir-wollen-dass-investitionsfonds
 
-**source_location:** Wirtschaft für alle -
+**source_location:** Wirtschaft für alle –
 
 **intended_change:** Vorgesehene Veränderung: Mithilfe von Klimaschutzverträgen wollen wir klimafreundliche Technologie bei der Um- und Ausrüstung von Produktionsanlagen fördern, zusätzlich zu Aktivitäten des Investitionsfonds.
 
@@ -49553,7 +49553,7 @@ _Leere Liste._
 
 **top_score:** 83.1
 
-**input_register_text:** Zusätzlich fordern eine ökologische Katastrophe und befördert Gentrifiwir Werbeverbote für besonders klimaschädliche zierung - wir wollen das verbieten.
+**input_register_text:** Zusätzlich fordern eine ökologische Katastrophe und befördert Gentrifiwir Werbeverbote für besonders klimaschädliche zierung – wir wollen das verbieten.
 
 ##### source_components
 
@@ -50178,9 +50178,9 @@ _Leere Liste._
 
 **source_location:** Um Lösungen auf Quartiers- und Siedlungsebene statt
 
-**intended_change:** Vorgesehene Veränderung: Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden - und hat das Recht, nein zu sagen.
+**intended_change:** Vorgesehene Veränderung: Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden – und hat das Recht, nein zu sagen.
 
-**measure:** Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden - …
+**measure:** Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden – …
 
 ##### decision_readiness
 
@@ -50381,7 +50381,7 @@ _Leere Liste._
 
 **page:** 35
 
-**text:** Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden - und hat das Recht, nein zu sagen.
+**text:** Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden – und hat das Recht, nein zu sagen.
 
 **match_score:** 87.6
 
@@ -50394,7 +50394,7 @@ _Leere Liste._
 
 **top_score:** 87.6
 
-**input_register_text:** Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden - und hat das Recht, ▪ Müllexporte aus der EU wollen wir verbieten.
+**input_register_text:** Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden – und hat das Recht, ▪ Müllexporte aus der EU wollen wir verbieten.
 
 ##### source_components
 
@@ -50404,7 +50404,7 @@ _Leere Liste._
 
 **source_page:** 35
 
-**source_text:** Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden - und hat das Recht, nein zu sagen.
+**source_text:** Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden – und hat das Recht, nein zu sagen.
 
 **topic:** ADMINISTRATION_STATE
 
@@ -50416,9 +50416,9 @@ _Leere Liste._
 
 - Ausgestaltung und Vollzug sind für die Wirkungsrichtung mitentscheidend.
 
-**measure:** Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden - …
+**measure:** Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden – …
 
-**intended_change:** Vorgesehene Veränderung: Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden - und hat das Recht, nein zu sagen.
+**intended_change:** Vorgesehene Veränderung: Die lokale Bevölkerung muss bei Bergbauprojekten und der Wertschöpfung beteiligt werden – und hat das Recht, nein zu sagen.
 
 
 ##### component_topics
@@ -52498,7 +52498,7 @@ _Leere Liste._
 
 **page:** 36
 
-**text:** Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor - mit klaren mehrjährigen Budgets für die einzelnen Verkehrsträger.
+**text:** Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor – mit klaren mehrjährigen Budgets für die einzelnen Verkehrsträger.
 
 **match_score:** 90.7
 
@@ -52511,7 +52511,7 @@ _Leere Liste._
 
 **top_score:** 93.6
 
-**input_register_text:** Um den großen Investitionsbedarf der Verkehrsinf- deshalb keine Illusionen, dass autonomes Fahren rastruktur vom jährlichen Bundeshaushalt unabhängig und absehbar die Mobilitätsprobleme lösen kann. damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastruk- ▪ Um die Fahrgastzahlen bis 2030 zu verdoppeln, werden turfonds nach Schweizer Vorbild vor - mit klaren mehrjäh- 150 000 Fahrer*innen im ÖPNV benötigt, weitere rigen Budgets für die einzelnen Verkehrsträger.
+**input_register_text:** Um den großen Investitionsbedarf der Verkehrsinf- deshalb keine Illusionen, dass autonomes Fahren rastruktur vom jährlichen Bundeshaushalt unabhängig und absehbar die Mobilitätsprobleme lösen kann. damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastruk- ▪ Um die Fahrgastzahlen bis 2030 zu verdoppeln, werden turfonds nach Schweizer Vorbild vor – mit klaren mehrjäh- 150 000 Fahrer*innen im ÖPNV benötigt, weitere rigen Budgets für die einzelnen Verkehrsträger.
 
 ##### source_components
 
@@ -52543,7 +52543,7 @@ _Leere Liste._
 
 **source_page:** 36
 
-**source_text:** Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor - mit klaren mehrjährigen Budgets für die einzelnen Verkehrsträger.
+**source_text:** Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor – mit klaren mehrjährigen Budgets für die einzelnen Verkehrsträger.
 
 **topic:** TAX_FISCAL_BUDGET
 
@@ -52557,7 +52557,7 @@ _Leere Liste._
 
 **measure:** Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit …
 
-**intended_change:** Vorgesehene Veränderung: Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor - mit klaren mehrjährigen Budgets für die einzelnen Verkehrsträger.
+**intended_change:** Vorgesehene Veränderung: Um den großen Investitionsbedarf der Verkehrsinfrastruktur vom jährlichen Bundeshaushalt unabhängig und damit längerfristig verlässlich zu machen, schlagen wir die Schaffung eines verkehrsträgerübergreifenden Infrastrukturfonds nach Schweizer Vorbild vor – mit klaren mehrjährigen Budgets für die einzelnen Verkehrsträger.
 
 
 ##### component_topics
@@ -53643,7 +53643,7 @@ _Leere Liste._
 
 **source_location:** Während sich die einen den Besuch bei den Verwandten
 
-**intended_change:** Vorgesehene Veränderung: Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen (Kapitel 1 und 3). ▪ Dafür braucht jede Großstadt stündliche Fern- und Nachtzuganbindungen - quer durch Europa!
+**intended_change:** Vorgesehene Veränderung: Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen (Kapitel 1 und 3). ▪ Dafür braucht jede Großstadt stündliche Fern- und Nachtzuganbindungen – quer durch Europa!
 
 **measure:** Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen …
 
@@ -53861,7 +53861,7 @@ _Leere Liste._
 
 **page:** 37
 
-**text:** Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen (Kapitel 1 und 3). ▪ Dafür braucht jede Großstadt stündliche Fern- und Nachtzuganbindungen - quer durch Europa!
+**text:** Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen (Kapitel 1 und 3). ▪ Dafür braucht jede Großstadt stündliche Fern- und Nachtzuganbindungen – quer durch Europa!
 
 **match_score:** 76.1
 
@@ -53884,7 +53884,7 @@ _Leere Liste._
 
 **source_page:** 37
 
-**source_text:** Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen (Kapitel 1 und 3). ▪ Dafür braucht jede Großstadt stündliche Fern- und Nachtzuganbindungen - quer durch Europa!
+**source_text:** Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen (Kapitel 1 und 3). ▪ Dafür braucht jede Großstadt stündliche Fern- und Nachtzuganbindungen – quer durch Europa!
 
 **topic:** TAX_FISCAL_BUDGET
 
@@ -53898,7 +53898,7 @@ _Leere Liste._
 
 **measure:** Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen …
 
-**intended_change:** Vorgesehene Veränderung: Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen (Kapitel 1 und 3). ▪ Dafür braucht jede Großstadt stündliche Fern- und Nachtzuganbindungen - quer durch Europa!
+**intended_change:** Vorgesehene Veränderung: Trassenpreise und Bahnstromsteuer wollen wir senken und die Mehrwertsteuer für den öffentlichen Nah- und Fernverkehr abschaffen (Kapitel 1 und 3). ▪ Dafür braucht jede Großstadt stündliche Fern- und Nachtzuganbindungen – quer durch Europa!
 
 
 ##### component_topics
@@ -56137,7 +56137,7 @@ _Leere Liste._
 
 **page:** 38
 
-**text:** Wir fordern daher ein Kitaqualitätsgesetz, das Kinder und Beschäftigte in den Mittelpunkt stellt und den Rechtsanspruch auf einen Kita-Platz umsetzt. ▪ Bessere Betreuungsschlüssel: mindestens eine*n Erzieher*in für maximal 3 Kinder unter 3 Jahren und für 7,5 Kinder ab 3 Jahren - unter Berücksichtigung von Ausfall- und Vorbereitungszeiten und Elternarbeit. ▪ Gebührenfreie Kitas: Alle Kinder müssen Zugang zu einem Platz haben, unabhängig vom Einkommen in den Familien. ▪ Gesundes Essen: Kostenloses, gutes Mittagessen in allen Kitas und Schulen. ▪ Die Löhne in den Sozial- und Erziehungsdiensten müssen steigen!
+**text:** Wir fordern daher ein Kitaqualitätsgesetz, das Kinder und Beschäftigte in den Mittelpunkt stellt und den Rechtsanspruch auf einen Kita-Platz umsetzt. ▪ Bessere Betreuungsschlüssel: mindestens eine*n Erzieher*in für maximal 3 Kinder unter 3 Jahren und für 7,5 Kinder ab 3 Jahren – unter Berücksichtigung von Ausfall- und Vorbereitungszeiten und Elternarbeit. ▪ Gebührenfreie Kitas: Alle Kinder müssen Zugang zu einem Platz haben, unabhängig vom Einkommen in den Familien. ▪ Gesundes Essen: Kostenloses, gutes Mittagessen in allen Kitas und Schulen. ▪ Die Löhne in den Sozial- und Erziehungsdiensten müssen steigen!
 
 **match_score:** 70.9
 
@@ -56172,7 +56172,7 @@ _Leere Liste._
 
 **source_page:** 38
 
-**source_text:** Wir fordern daher ein Kitaqualitätsgesetz, das Kinder und Beschäftigte in den Mittelpunkt stellt und den Rechtsanspruch auf einen Kita-Platz umsetzt. ▪ Bessere Betreuungsschlüssel: mindestens eine*n Erzieher*in für maximal 3 Kinder unter 3 Jahren und für 7,5 Kinder ab 3 Jahren - unter Berücksichtigung von Ausfall- und Vorbereitungszeiten und Elternarbeit. ▪ Gebührenfreie Kitas: Alle Kinder müssen Zugang zu einem Platz haben, unabhängig vom Einkommen in den Familien. ▪ Gesundes Essen: Kostenloses, gutes Mittagessen in allen Kitas und Schulen. ▪ Die Löhne in den Sozial- und Erziehungsdiensten müssen steigen!
+**source_text:** Wir fordern daher ein Kitaqualitätsgesetz, das Kinder und Beschäftigte in den Mittelpunkt stellt und den Rechtsanspruch auf einen Kita-Platz umsetzt. ▪ Bessere Betreuungsschlüssel: mindestens eine*n Erzieher*in für maximal 3 Kinder unter 3 Jahren und für 7,5 Kinder ab 3 Jahren – unter Berücksichtigung von Ausfall- und Vorbereitungszeiten und Elternarbeit. ▪ Gebührenfreie Kitas: Alle Kinder müssen Zugang zu einem Platz haben, unabhängig vom Einkommen in den Familien. ▪ Gesundes Essen: Kostenloses, gutes Mittagessen in allen Kitas und Schulen. ▪ Die Löhne in den Sozial- und Erziehungsdiensten müssen steigen!
 
 **topic:** FAMILY_EQUALITY
 
@@ -56186,7 +56186,7 @@ _Leere Liste._
 
 **measure:** daher ein Kitaqualitätsgesetz, das Kinder und Beschäftigte in den Mittelpunkt stellt und …
 
-**intended_change:** Vorgesehene Veränderung: Wir fordern daher ein Kitaqualitätsgesetz, das Kinder und Beschäftigte in den Mittelpunkt stellt und den Rechtsanspruch auf einen Kita-Platz umsetzt. ▪ Bessere Betreuungsschlüssel: mindestens eine*n Erzieher*in für maximal 3 Kinder unter 3 Jahren und für 7,5 Kinder ab 3 Jahren - unter Berücksichtigung von Ausfall- und Vorbereitungszeiten und Elternarbeit. ▪ Gebührenfreie Kitas: Alle Kinder müssen Zugang zu einem Platz haben, unabhängig vom Einkommen in den Familien. ▪ Gesundes Essen: Kostenloses, gutes Mittagessen in allen Kitas und Schulen. ▪ Die Löhne in den Sozial- und Erziehungsdiensten müssen steigen!
+**intended_change:** Vorgesehene Veränderung: Wir fordern daher ein Kitaqualitätsgesetz, das Kinder und Beschäftigte in den Mittelpunkt stellt und den Rechtsanspruch auf einen Kita-Platz umsetzt. ▪ Bessere Betreuungsschlüssel: mindestens eine*n Erzieher*in für maximal 3 Kinder unter 3 Jahren und für 7,5 Kinder ab 3 Jahren – unter Berücksichtigung von Ausfall- und Vorbereitungszeiten und Elternarbeit. ▪ Gebührenfreie Kitas: Alle Kinder müssen Zugang zu einem Platz haben, unabhängig vom Einkommen in den Familien. ▪ Gesundes Essen: Kostenloses, gutes Mittagessen in allen Kitas und Schulen. ▪ Die Löhne in den Sozial- und Erziehungsdiensten müssen steigen!
 
 ###### Eintrag 2
 
@@ -69017,7 +69017,7 @@ _Leere Liste._
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
-**measure:** Sicherheitskonzepte - insbesondere im öffentlichen Raum - müssen umfassend, nachvollziehbar und wirkungsvoll … / Wir setzen auf mehr direkte Demokratie, auf Maßnahmen gegen Lobbyismus und auf …
+**measure:** Sicherheitskonzepte – insbesondere im öffentlichen Raum – müssen umfassend, nachvollziehbar und wirkungsvoll … / Wir setzen auf mehr direkte Demokratie, auf Maßnahmen gegen Lobbyismus und auf …
 
 ##### decision_readiness
 
@@ -69337,7 +69337,7 @@ _Leere Liste._
 
 **page:** 48
 
-**text:** Sicherheitskonzepte - insbesondere im öffentlichen Raum - müssen umfassend, nachvollziehbar und wirkungsvoll sein.
+**text:** Sicherheitskonzepte – insbesondere im öffentlichen Raum – müssen umfassend, nachvollziehbar und wirkungsvoll sein.
 
 **match_score:** 97.2
 
@@ -69362,7 +69362,7 @@ _Leere Liste._
 
 **top_score:** 97.2
 
-**input_register_text:** Wir setzen auf mehr direkte Demokratie, Sicherheitskonzepte - insbesondere im öffentlichen Raum auf Maßnahmen gegen Lobbyismus und auf mehr Trans- - müssen umfassend, nachvollziehbar und wirkungsvoll parenz.
+**input_register_text:** Wir setzen auf mehr direkte Demokratie, Sicherheitskonzepte – insbesondere im öffentlichen Raum auf Maßnahmen gegen Lobbyismus und auf mehr Trans- – müssen umfassend, nachvollziehbar und wirkungsvoll parenz.
 
 ##### source_components
 
@@ -69372,7 +69372,7 @@ _Leere Liste._
 
 **source_page:** 48
 
-**source_text:** Sicherheitskonzepte - insbesondere im öffentlichen Raum - müssen umfassend, nachvollziehbar und wirkungsvoll sein.
+**source_text:** Sicherheitskonzepte – insbesondere im öffentlichen Raum – müssen umfassend, nachvollziehbar und wirkungsvoll sein.
 
 **topic:** SECURITY_POLICE_JUSTICE
 
@@ -69384,9 +69384,9 @@ _Leere Liste._
 
 - Konkreter Entscheidungsgegenstand nach der Prüfung/Planung
 
-**measure:** Sicherheitskonzepte - insbesondere im öffentlichen Raum - müssen umfassend, nachvollziehbar und wirkungsvoll …
+**measure:** Sicherheitskonzepte – insbesondere im öffentlichen Raum – müssen umfassend, nachvollziehbar und wirkungsvoll …
 
-**intended_change:** Vorgesehene Veränderung: Sicherheitskonzepte - insbesondere im öffentlichen Raum - müssen umfassend, nachvollziehbar und wirkungsvoll sein.
+**intended_change:** Vorgesehene Veränderung: Sicherheitskonzepte – insbesondere im öffentlichen Raum – müssen umfassend, nachvollziehbar und wirkungsvoll sein.
 
 ###### Eintrag 2
 
@@ -72900,7 +72900,7 @@ _Leere Liste._
 
 **commitment_key:** btw-2025-linke-0189-wir-wollen-dagegen-eine-gesellschaft-in-der-alle-menschen-gleichberechti
 
-**source_location:** Inklusion und Teilhabe -
+**source_location:** Inklusion und Teilhabe –
 
 **intended_change:** Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.
 
@@ -73251,7 +73251,7 @@ _Leere Liste._
 
 **page:** 54
 
-**text:** Wir wollen dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt zusammenleben und an den demokratischen Entscheidungen teilhaben können - unabhängig von ihren individuellen Fähigkeiten, ihrer körperlichen Verfassung, ihrer Herkunft und sozialen Stellung, ihrem Geschlecht, Alter oder ihrer sexuellen Orientierung. ▪ Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten.
+**text:** Wir wollen dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt zusammenleben und an den demokratischen Entscheidungen teilhaben können – unabhängig von ihren individuellen Fähigkeiten, ihrer körperlichen Verfassung, ihrer Herkunft und sozialen Stellung, ihrem Geschlecht, Alter oder ihrer sexuellen Orientierung. ▪ Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten.
 
 **match_score:** 74.2
 
@@ -73264,7 +73264,7 @@ _Leere Liste._
 
 **top_score:** 87.4
 
-**input_register_text:** Wir wollen dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt ▪ Mindestlohn auch in den Werkstätten: Die Europäische zusammenleben und an den demokratischen Entschei- Mindestlohnrichtlinie schreibt vor, dass auch in dungen teilhaben können - unabhängig von ihren individu- Werkstätten für Menschen mit Behinderung der ellen Fähigkeiten, ihrer körperlichen Verfassung, ihrer Mindestlohn gezahlt werden muss.
+**input_register_text:** Wir wollen dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt ▪ Mindestlohn auch in den Werkstätten: Die Europäische zusammenleben und an den demokratischen Entschei- Mindestlohnrichtlinie schreibt vor, dass auch in dungen teilhaben können – unabhängig von ihren individu- Werkstätten für Menschen mit Behinderung der ellen Fähigkeiten, ihrer körperlichen Verfassung, ihrer Mindestlohn gezahlt werden muss.
 
 ##### source_components
 
@@ -73296,7 +73296,7 @@ _Leere Liste._
 
 **source_page:** 54
 
-**source_text:** Wir wollen dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt zusammenleben und an den demokratischen Entscheidungen teilhaben können - unabhängig von ihren individuellen Fähigkeiten, ihrer körperlichen Verfassung, ihrer Herkunft und sozialen Stellung, ihrem Geschlecht, Alter oder ihrer sexuellen Orientierung. ▪ Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten.
+**source_text:** Wir wollen dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt zusammenleben und an den demokratischen Entscheidungen teilhaben können – unabhängig von ihren individuellen Fähigkeiten, ihrer körperlichen Verfassung, ihrer Herkunft und sozialen Stellung, ihrem Geschlecht, Alter oder ihrer sexuellen Orientierung. ▪ Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten.
 
 **topic:** WORK_SOCIAL_SECURITY
 
@@ -73310,7 +73310,7 @@ _Leere Liste._
 
 **measure:** dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt zusammenleben und an den …
 
-**intended_change:** Vorgesehene Veränderung: Wir wollen dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt zusammenleben und an den demokratischen Entscheidungen teilhaben können - unabhängig von ihren individuellen Fähigkeiten, ihrer körperlichen Verfassung, ihrer Herkunft und sozialen Stellung, ihrem Geschlecht, Alter oder ihrer sexuellen Orientierung. ▪ Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten.
+**intended_change:** Vorgesehene Veränderung: Wir wollen dagegen eine Gesellschaft, in der alle Menschen gleichberechtigt zusammenleben und an den demokratischen Entscheidungen teilhaben können – unabhängig von ihren individuellen Fähigkeiten, ihrer körperlichen Verfassung, ihrer Herkunft und sozialen Stellung, ihrem Geschlecht, Alter oder ihrer sexuellen Orientierung. ▪ Wir wollen Barrierefreiheit umfassend herstellen und (auch) die Privatwirtschaft dazu verpflichten.
 
 
 ##### component_topics

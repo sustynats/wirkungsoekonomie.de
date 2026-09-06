@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW physical PDF page 58 complete source-bound review + U05-A03 semantic split
+## WÖk FACH BATCH — Berlin BSW physical PDF page 58 complete source-bound review + U05-A03 semantic split
 
 Authoritative continuation after P57 `5458103067`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P58/66. Exact frozen inventory: 10 source units; U01/U02/U03/U05/U06/U10 carry 28 atom IDs; U04/U07/U09 are structural headings and U08 is diagnosis/rationale context. Generic delegated RNAA is not Fach authority and is superseded below. No DNS mapping, Recommendation, score or party-wide judgement.
 
@@ -11,35 +11,35 @@ Authoritative continuation after P57 `5458103067`. Frozen artifact unchanged: `B
 5. **`Berlin räumt auf` already exists.** In April 2026 the citywide rbb 88.8/BSR/nebenan.de action involved schools, associations, neighbourhoods and private participants across all boroughs. Current official examples: https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1662672.php and https://www.berlin.de/ba-spandau/aktuelles/pressemitteilungen/2026/pressemitteilung.1659703.php . U06-A04 is therefore continuation/strengthening, not creation.
 6. **Animal-alternative research and 3R are also not zero baseline.** LAGeSo states that many alternative/replacement methods already exist but some animal experiments still cannot currently be dispensed with; Berlin approvals apply 3R. Charité 3R actively develops/researches replacement/reduction/refinement methods, while Bf3R/Bund programmes already fund and validate alternatives nationally. References: https://www.berlin.de/lageso/gesundheit/veterinaerwesen/tierschutz/alternativmethoden/ , https://charite3r.charite.de/ and https://www.bfr.bund.de/fragen-und-antworten/thema/fragen-und-antworten-zu-tierversuchen-alternativmethoden-und-versuchstierzahlen/ . Therefore an absolute `Ausstieg` target cannot be treated as immediately implementable; the concrete assessable P58 lever is the public-funding priority for validated animal-free methods.
 
-### A. U01 - fragmentation/public-ownership framing
+### A. U01 — fragmentation/public-ownership framing
 
-`BE-BSW-P58-U01-A01-a13f434ceb40` - `Die Zersplitterung der Müllentsorgung hat versagt.`
+`BE-BSW-P58-U01-A01-a13f434ceb40` — `Die Zersplitterung der Müllentsorgung hat versagt.`
 - `terminal_fach_state = NON_EFFECT_SOURCE_DIAGNOSIS_AND_VALUE_JUDGEMENT_REVIEWED`
 - Exact reason: retrospective judgement without a distinct policy action; no blanket factual acceptance that all fragmentation/private participation caused observed cleanliness outcomes.
 
-`BE-BSW-P58-U01-A02-3aa78bf6684b` - private providers/different responsibilities/weak control cause waste to remain.
+`BE-BSW-P58-U01-A02-3aa78bf6684b` — private providers/different responsibilities/weak control cause waste to remain.
 - `terminal_fach_state = NON_EFFECT_CAUSAL_SOURCE_CLAIM_REVIEWED`
 - Exact reason: causal diagnosis, not an independent intervention. Attribution among private providers, public responsibilities, enforcement, service design and user behaviour is not established by the source.
 
-`BE-BSW-P58-U01-A03-51966982ab0d` - only a strong public city-cleaning service can assure reliability/quality.
+`BE-BSW-P58-U01-A03-51966982ab0d` — only a strong public city-cleaning service can assure reliability/quality.
 - `terminal_fach_state = NON_EFFECT_PUBLIC_OWNERSHIP_AND_CAPACITY_GOAL_REVIEWED_WITH_CURRENT_BASELINE_GUARD`
 - Exact reason: BSR is already public; this atom states a governance preference/outcome claim but no additional function transfer, staffing, budget or service standard.
 
-`BE-BSW-P58-U01-A04-e5a00a5fb430` - waste management `aus einer Hand`, common-good rather than profit oriented.
+`BE-BSW-P58-U01-A04-e5a00a5fb430` — waste management `aus einer Hand`, common-good rather than profit oriented.
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: an integrated governance target is identifiable, but the source does not define which currently separate waste/cleanliness functions, assets, contracts, borough tasks or private services would transfer, by which legal vehicle, at what cost, or with what performance/accountability regime. BSR's existing public baseline prevents interpreting this as a simple public-vs-private switch.
 
-### B. U02 - winter-service centralisation and owner cost recovery
+### B. U02 — winter-service centralisation and owner cost recovery
 
-`BE-BSW-P58-U02-A01-170ef19fc5e0` - 2026 ice crisis characterised by responsibility ping-pong.
+`BE-BSW-P58-U02-A01-170ef19fc5e0` — 2026 ice crisis characterised by responsibility ping-pong.
 - `terminal_fach_state = NON_EFFECT_SOURCE_DIAGNOSIS_REVIEWED_WITH_2026_DELIVERY_STRESS_CONTEXT`
 - Preserve as programme framing; current official records do support serious coordination/capacity stress, but the phrase itself is not an intervention.
 
-`BE-BSW-P58-U02-A02-f43ae2db4683` - owner responsibility did not clear paths/prevent many accidents.
+`BE-BSW-P58-U02-A02-f43ae2db4683` — owner responsibility did not clear paths/prevent many accidents.
 - `terminal_fach_state = NON_EFFECT_SOURCE_CAUSAL_AND_OUTCOME_CLAIM_REVIEWED`
 - Exact reason: crisis-related hazard is real, but the source does not establish an exact counterfactual accident count or isolate allocation-of-duty as the sole cause.
 
-#### `BE-BSW-P58-U02-A03-dd937ebf181a` - BSR to take central responsibility for clearing sidewalks and cycle paths
+#### `BE-BSW-P58-U02-A03-dd937ebf181a` — BSR to take central responsibility for clearing sidewalks and cycle paths
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_COORDINATION_ACCOUNTABILITY_AND_PEDESTRIAN_CYCLE_SAFETY_POTENTIAL / LEGAL_CAPACITY_COST_AND_ENVIRONMENTAL_CONSTRAINT_DEPENDENT`
@@ -52,17 +52,17 @@ Authoritative continuation after P57 `5458103067`. Frozen artifact unchanged: `B
 - Noncompensation: administrative simplicity cannot compensate slower response or unsafe paths; safety improvement cannot justify unlawful/environmentally harmful treatment methods where alternatives exist.
 - Reality check: treated network share/time-to-safe-condition, slip/fall incidents, accessibility, complaint/gap rates, staff/equipment utilisation, cost per service area, environmental inputs and performance under citywide stress.
 
-`BE-BSW-P58-U02-A04-62c12c0cac46` - recover additional city costs from owners who fail clearing duty.
+`BE-BSW-P58-U02-A04-62c12c0cac46` — recover additional city costs from owners who fail clearing duty.
 - `terminal_fach_state = NON_EFFECT_EXISTING_ENFORCEMENT_AND_COST_RECOVERY_BASELINE_REVIEWED`
 - Exact reason: current Berlin law/practice already allows cost-charged Ersatzvornahme plus enforcement for non-performance. The source does not specify a new threshold, procedure, surcharge, liability rule or collection mechanism beyond that baseline. Do not double-count an existing instrument as new policy.
 
-### C. U03 - bulky-waste access / mobile recycling
+### C. U03 — bulky-waste access / mobile recycling
 
-`BE-BSW-P58-U03-A01-65442046dc8c` - illegal dumping arises because disposal is complicated/expensive.
+`BE-BSW-P58-U03-A01-65442046dc8c` — illegal dumping arises because disposal is complicated/expensive.
 - `terminal_fach_state = NON_EFFECT_CAUSAL_PROBLEM_CLAIM_REVIEWED`
 - Preserve as plausible friction hypothesis, not proven single-cause attribution; enforcement, norms, housing/transience and service awareness may also matter.
 
-#### `BE-BSW-P58-U03-A02-86314c55d859` - fixed free bulky-waste collection in all boroughs at least twice per year for every household
+#### `BE-BSW-P58-U03-A02-86314c55d859` — fixed free bulky-waste collection in all boroughs at least twice per year for every household
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_LOW_BARRIER_DISPOSAL_REUSE_AND_ILLEGAL_DUMPING_PREVENTION_POTENTIAL / ADDITIONALITY_LOGISTICS_AND_WASTE_PREVENTION_DEPENDENT`
@@ -74,7 +74,7 @@ Authoritative continuation after P57 `5458103067`. Frozen artifact unchanged: `B
 - Boundary: `kostenlos` = no direct user price, not zero social cost; tonnes collected are output, not proof of reduced illegal dumping or waste generation.
 - Reality check: incremental participation by underserved groups, illegal-dumping reports/tonnage/cost, reuse/recycling share, cost per captured tonne/household, service reliability and waste-generation/rebound.
 
-#### `BE-BSW-P58-U03-A03-218fafbb63aa` - mobile recycling stations regularly through neighbourhoods
+#### `BE-BSW-P58-U03-A03-218fafbb63aa` — mobile recycling stations regularly through neighbourhoods
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_PROXIMITY_REUSE_RECYCLING_ACCESS_POTENTIAL / ROUTE_ADDITIONALITY_AND_OPERATIONAL_EFFICIENCY_DEPENDENT`
@@ -83,15 +83,15 @@ Authoritative continuation after P57 `5458103067`. Frozen artifact unchanged: `B
 - Risks: fleet/emission/operating cost, low utilisation, duplicative routes, poor waste separation, traffic/public-space conflicts.
 - Reality check: additional underserved-area coverage, utilisation, material capture/reuse quality, illegal-dumping change, operating cost/emissions and complementarity with Kieztage/recycling yards.
 
-### D. U04 / U05 - neighbourhood cleaning, enforcement, service standard
+### D. U04 / U05 — neighbourhood cleaning, enforcement, service standard
 
-`BE-BSW-P58-U04-c7d4652444e5` - heading `Kiezreiniger und Soforteinsätze`.
+`BE-BSW-P58-U04-c7d4652444e5` — heading `Kiezreiniger und Soforteinsätze`.
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 
-`BE-BSW-P58-U05-A01-b049cc3abf46` - `Sauberkeit darf kein Zufall sein.`
+`BE-BSW-P58-U05-A01-b049cc3abf46` — `Sauberkeit darf kein Zufall sein.`
 - `terminal_fach_state = NON_EFFECT_CLEANLINESS_GOAL_REVIEWED`
 
-`BE-BSW-P58-U05-A02-3e3cfe611d57` - responsibility/sanction with proportionality.
+`BE-BSW-P58-U05-A02-3e3cfe611d57` — responsibility/sanction with proportionality.
 - `terminal_fach_state = NON_EFFECT_ENFORCEMENT_PRINCIPLE_REVIEWED`
 - Exact reason: proportional enforcement principle without a changed sanction, evidentiary rule, control frequency or process in this atom.
 
@@ -110,10 +110,10 @@ Preserve original A03 ID/text/hash as versioned **zero-count parent** and create
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: a low-barrier/access target is identifiable but no additional service, price, frequency, eligible materials, location or capacity is specified in this clause. Concrete U03-A02/A03 carry the assessable disposal-access levers; link as goal/restatement without double-counting.
 
-`BE-BSW-P58-U05-A04-db5644a987af` - prevention via easy solutions/fair rules rather than punishment alone.
+`BE-BSW-P58-U05-A04-db5644a987af` — prevention via easy solutions/fair rules rather than punishment alone.
 - `terminal_fach_state = NON_EFFECT_PREVENTION_AND_PROPORTIONALITY_RATIONALE_REVIEWED`
 
-#### `BE-BSW-P58-U05-A05-673ba574f3ab` - fixed neighbourhood cleaning teams assigned to clear areas with regular control
+#### `BE-BSW-P58-U05-A05-673ba574f3ab` — fixed neighbourhood cleaning teams assigned to clear areas with regular control
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_LOCAL_ACCOUNTABILITY_RESPONSE_AND_CLEANLINESS_POTENTIAL / STAFFING_BASELINE_AND_TASK_DESIGN_DEPENDENT`
@@ -123,7 +123,7 @@ Preserve original A03 ID/text/hash as versioned **zero-count parent** and create
 - Risks: staffing cost, duplicate BSR/borough functions, uneven workload, metric gaming, displacement from other cleaning tasks.
 - Reality check: response/closure time, repeat hotspots, cleanliness indicators, complaints, staff workload, cost and cross-district equity.
 
-#### `BE-BSW-P58-U05-A06-f969a7bf199c` - respond to illegal deposits/contamination within 24 hours
+#### `BE-BSW-P58-U05-A06-f969a7bf199c` — respond to illegal deposits/contamination within 24 hours
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_RAPID_HAZARD_AND_CLEANLINESS_RESPONSE_POTENTIAL / SCOPE_PRIORITY_AND_CAPACITY_DEPENDENT`
@@ -134,24 +134,24 @@ Preserve original A03 ID/text/hash as versioned **zero-count parent** and create
 - Boundary: 24h closure is service output; durable prevention requires recurrence/source metrics.
 - Reality check: median/percentile removal time, recurrence, safety/cleanliness, unresolved backlog, cost and spatial distribution.
 
-`BE-BSW-P58-U05-A07-55450af49415` - `Berlin braucht ein sichtbares Signal: Wir kümmern uns.`
+`BE-BSW-P58-U05-A07-55450af49415` — `Berlin braucht ein sichtbares Signal: Wir kümmern uns.`
 - `terminal_fach_state = NON_EFFECT_SYMBOLIC_STATE_CAPACITY_FRAME_REVIEWED`
 - Exact reason: rhetorical desired signal, not an independent service/action or measured trust outcome.
 
-### E. U06 - employment / civic cleanup campaign
+### E. U06 — employment / civic cleanup campaign
 
-`BE-BSW-P58-U06-A01-dd2f348d9757` - employment plus cleanliness dual goal.
+`BE-BSW-P58-U06-A01-dd2f348d9757` — employment plus cleanliness dual goal.
 - `terminal_fach_state = NON_EFFECT_DUAL_POLICY_GOAL_REVIEWED`
 - Exact reason: no employment instrument, target group, wage, contracting model or cleaning task specified in this atom.
 
-`BE-BSW-P58-U06-A02-8f61a4dd9af5` - cleanliness as social responsibility.
+`BE-BSW-P58-U06-A02-8f61a4dd9af5` — cleanliness as social responsibility.
 - `terminal_fach_state = NON_EFFECT_NORMATIVE_RATIONALE_REVIEWED`
 
-`BE-BSW-P58-U06-A03-acebad2b34ab` - cleanliness begins with awareness.
+`BE-BSW-P58-U06-A03-acebad2b34ab` — cleanliness begins with awareness.
 - `terminal_fach_state = NON_EFFECT_BEHAVIOURAL_CAUSAL_RATIONALE_REVIEWED`
 - Do not individualise a system that also depends on professional service design, access and enforcement.
 
-#### `BE-BSW-P58-U06-A04-56f6b79bb780` - permanently strengthen `Berlin räumt auf` with schools/associations/neighbourhoods + BSR material/logistics
+#### `BE-BSW-P58-U06-A04-56f6b79bb780` — permanently strengthen `Berlin räumt auf` with schools/associations/neighbourhoods + BSR material/logistics
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_CIVIC_PARTICIPATION_AND_LOCAL_CLEANUP_POTENTIAL / ADDITIONALITY_VOLUNTEER_BOUNDARY_AND_PROFESSIONAL_SERVICE_GUARD`
@@ -162,36 +162,36 @@ Preserve original A03 ID/text/hash as versioned **zero-count parent** and create
 - Risks: eventism, unpaid substitution, unequal neighbourhood mobilisation, safety/manual-handling hazards, collected-waste logistics, symbolic activity without hotspot prevention.
 - Reality check: participation diversity/repeat, safely collected material, incremental cleaned areas, recurrence, professional-service substitution indicators and cost/logistics; bag/event counts alone are not durable outcome.
 
-### F. U07-U10 - animal-welfare context and research without animal suffering
+### F. U07–U10 — animal-welfare context and research without animal suffering
 
-`BE-BSW-P58-U07-2528f001c120` - heading `Tierschutz`.
+`BE-BSW-P58-U07-2528f001c120` — heading `Tierschutz`.
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 
-`BE-BSW-P58-U08-b45ad54bd32b` - animal-welfare diagnosis/history/rationale (animal shelters/organisations, Verbandsklagerecht etc.).
+`BE-BSW-P58-U08-b45ad54bd32b` — animal-welfare diagnosis/history/rationale (animal shelters/organisations, Verbandsklagerecht etc.).
 - `terminal_fach_state = NON_EFFECT_SOURCE_DIAGNOSIS_HISTORY_AND_RATIONALE_REVIEWED`
 - Preserve source claims as programme context only; do not treat workload/financial/legal-state assertions as independently verified by this page. Concrete measures follow on P59+ and must carry effect assessment.
 
-`BE-BSW-P58-U09-a2efcb52a0ce` - heading `Forschung ohne Tierleid - Wissenschaft mit Verantwortung`.
+`BE-BSW-P58-U09-a2efcb52a0ce` — heading `Forschung ohne Tierleid – Wissenschaft mit Verantwortung`.
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED`
 
-`BE-BSW-P58-U10-A01-5fc236b715c2` - animals must not be tools for research.
+`BE-BSW-P58-U10-A01-5fc236b715c2` — animals must not be tools for research.
 - `terminal_fach_state = NON_EFFECT_NORMATIVE_ANIMAL_WELFARE_PRINCIPLE_REVIEWED`
 
-`BE-BSW-P58-U10-A02-02794e903a6c` - science should respect ethical limits/responsibility.
+`BE-BSW-P58-U10-A02-02794e903a6c` — science should respect ethical limits/responsibility.
 - `terminal_fach_state = NON_EFFECT_RESEARCH_ETHICS_PRINCIPLE_REVIEWED`
 
-`BE-BSW-P58-U10-A03-2cef6d87a95b` - Berlin is a major research location with especially many animal experiments.
+`BE-BSW-P58-U10-A03-2cef6d87a95b` — Berlin is a major research location with especially many animal experiments.
 - `terminal_fach_state = NON_EFFECT_SOURCE_BASELINE_CLAIM_REVIEWED_REQUIRING_INDEPENDENT_COUNTS`
 - Exact reason: context/diagnosis, not action; `especially many` requires denominator/time/species/purpose/current official statistics before public factual use.
 
-`BE-BSW-P58-U10-A04-e3b5ba2e467f` - `Das darf nicht so bleiben.`
+`BE-BSW-P58-U10-A04-e3b5ba2e467f` — `Das darf nicht so bleiben.`
 - `terminal_fach_state = NON_EFFECT_NORMATIVE_CHANGE_GOAL_REVIEWED`
 
-`BE-BSW-P58-U10-A05-e122f3eb9b60` - Berlin as pioneer in `Ausstieg aus dem Tierversuch` / modern research without animal suffering.
+`BE-BSW-P58-U10-A05-e122f3eb9b60` — Berlin as pioneer in `Ausstieg aus dem Tierversuch` / modern research without animal suffering.
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: the target state is clear, but no legal scope, research domain, timeline, transition, validation pathway, mandatory-vs-incentive mechanism or treatment of cases without currently accepted replacement methods is specified. LAGeSo explicitly states that some animal experiments still cannot currently be dispensed with. Preserve as target, not as an immediately implementable blanket instrument or as proof that all scientific questions have validated replacements.
 
-#### `BE-BSW-P58-U10-A06-40fdbe99937c` - prioritise public funding toward animal-free methods
+#### `BE-BSW-P58-U10-A06-40fdbe99937c` — prioritise public funding toward animal-free methods
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_REPLACEMENT_METHOD_RESEARCH_VALIDATION_AND_ADOPTION_POTENTIAL / FUNDING_SCOPE_SCIENTIFIC_VALIDITY_AND_ADDITIONALITY_DEPENDENT`
@@ -217,7 +217,7 @@ After the U05-A03 two-child semantic repair:
 
 `BE_BSW_P58_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_U05_A03_REPAIR`
 
-After lossless materialisation, protected BSW physical Fach scope becomes **P1-P58** and the untouched physical Fach envelope becomes **P59-P66 = 8 pages**, unless a newer authoritative #240 handoff closes a subset before CodeX consumes this batch. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open` until the true nine-programme residual is zero.
+After lossless materialisation, protected BSW physical Fach scope becomes **P1–P58** and the untouched physical Fach envelope becomes **P59–P66 = 8 pages**, unless a newer authoritative #240 handoff closes a subset before CodeX consumes this batch. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open` until the true nine-programme residual is zero.
 
 ### CodeX boundary
 

@@ -1,6 +1,6 @@
-## WÖk FACH BATCH - Berlin BSW physical PDF page 56 complete source-bound review + P56→P57 fragment repair
+## WÖk FACH BATCH — Berlin BSW physical PDF page 56 complete source-bound review + P56→P57 fragment repair
 
-Continuation after P55 `5457994484`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P56/66. Exact frozen P56 inventory: 11 source units; U05-U09/U11 carry 18 atom IDs. Generic delegated RNAA is not Fach authority. No DNS mapping, Recommendation, score or party-wide judgement.
+Continuation after P55 `5457994484`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P56/66. Exact frozen P56 inventory: 11 source units; U05–U09/U11 carry 18 atom IDs. Generic delegated RNAA is not Fach authority. No DNS mapping, Recommendation, score or party-wide judgement.
 
 ### Current Berlin baseline / additionality guards
 
@@ -12,7 +12,7 @@ Continuation after P55 `5457994484`. Frozen artifact unchanged: `BE-AGH-2026-BSW
 6. **Public drinking-water infrastructure also has a current operating baseline.** Berliner Wasserbetriebe maintain the public drinking-fountain network and announced further additions during the 2026 season: https://www.bwb.de/de/pressemitteilungen_30026.php . `Mehr Trinkwasserstellen` is therefore an expansion object; placement, seasonal availability, hygiene, maintenance and heat-vulnerability coverage are the relevant outcome dimensions.
 7. **The 2026 Berlin climate-risk analysis explicitly identifies finance/personnel as major implementation bottlenecks for urban green.** This supports a delivery mechanism for adequate tree/green maintenance funding but does not prove any unspecified budget amount is optimal: https://www.berlin.de/sen/uvk/_assets/klimaschutz/anpassung-an-den-klimawandel/klimaanpassungsstrategie/klimarisikoanalyse-berlin-2026.pdf .
 
-### A. U01-U05 - environmental framing / ecosystem-benefit claims
+### A. U01–U05 — environmental framing / ecosystem-benefit claims
 
 - `BE-BSW-P56-U01-5a454a999b21` → `NON_EFFECT_SECTION_CONTEXT_REVIEWED`.
 - `BE-BSW-P56-U02-0c2da50b5b95` → `NON_EFFECT_MULTI_PROBLEM_AND_NORMATIVE_ENVIRONMENTAL_FRAME_REVIEWED`.
@@ -30,7 +30,7 @@ Green spaces lower temperature/store water/enable recreation and encounter.
 #### `BE-BSW-P56-U05-A03-82897ddbd285`
 `Berlin seine grüne Seele behält.` → `NON_EFFECT_NORMATIVE_END_STATE_AND_RHETORICAL_FRAME_REVIEWED`.
 
-### B. U06 - green-space protection / binding building greening / desealing
+### B. U06 — green-space protection / binding building greening / desealing
 
 #### `BE-BSW-P56-U06-A01-69da8dccb525`
 Permanent protection of green spaces and allotments.
@@ -38,7 +38,7 @@ Permanent protection of green spaces and allotments.
 - Exact reason: current Berlin law already materially protects Land-owned allotments and numerous green areas have different planning/ownership statuses. The source gives no affected inventory, legal instrument, private/public ownership scope, exception/compensation rule, housing/social-infrastructure conflict rule or ecological quality criterion. `Dauerhaft schützen` is not one bounded additional legal delta.
 
 #### `BE-BSW-P56-U06-A02-e817079f604c`
-Binding greening duties for new buildings - roofs, façades and courtyards as the rule.
+Binding greening duties for new buildings — roofs, façades and courtyards as the rule.
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_BUILDING_GREEN_INFRASTRUCTURE_ADAPTATION_AND_HABITAT_POTENTIAL / TECHNICAL_SITE_LIFECYCLE_COST_AND_HOUSING_DELIVERY_DEPENDENT`
@@ -62,7 +62,7 @@ Deseal asphalt wherever feasible for rainwater/shade/life.
 - Omissions/trade-offs: which asphalt areas, contaminated soils, utilities, accessibility, mobility/logistics/emergency function, replacement materials/vegetation, maintenance and opportunity costs.
 - Reality check: net m² de-sealed (not merely resurfaced), infiltration/storage, surface temperature, ecological soil function, accessibility/mobility impacts and lifecycle maintenance.
 
-### C. U07 - Baumgesetz/current implementation / financing and care
+### C. U07 — Baumgesetz/current implementation / financing and care
 
 #### `BE-BSW-P56-U07-A01-26fe49e6c5a3`
 Baumbegehren core demands now broadly adopted.
@@ -93,7 +93,7 @@ Reliable budget finance + clear priority for new planting and care.
 #### `BE-BSW-P56-U07-A05-96a2abc8b9b8`
 Heat/air/particulate/comfort benefits → `NON_EFFECT_EXPECTED_TREE_ECOSYSTEM_AND_WELLBEING_OUTCOME_CLAIM_REVIEWED`; magnitude depends on species/canopy/site/exposure and is evaluated through U07-A03 implementation outcomes.
 
-### D. U08 - Schwammstadt as planning principle
+### D. U08 — Schwammstadt as planning principle
 
 #### `BE-BSW-P56-U08-A01-ef852abf6e1c`
 Schwammstadt as guideline for all planning; rainwater infiltrate/store/reuse rather than drain.
@@ -101,7 +101,7 @@ Schwammstadt as guideline for all planning; rainwater infiltrate/store/reuse rat
 - `terminal_fach_state = NON_EFFECT_CURRENT_POLICY_DIRECTION_RESTATEMENT_REVIEWED_WITH_ADDITIONALITY_GUARD`
 - Exact reason: as of 28.08.2026 Berlin's Klimaanpassungsgesetz and June Senate Schwammstadt implementation already establish local rainwater retention and surface measures as a current policy direction. The atom does not specify an additional binding planning standard, legal amendment, threshold or project portfolio beyond that baseline. Preserve its hydrological target as a coherence/implementation guard; do not credit a duplicate new effect.
 
-### E. U09 - drinking water / blue-green plazas / broader rainwater use
+### E. U09 — drinking water / blue-green plazas / broader rainwater use
 
 #### `BE-BSW-P56-U09-A01-a8fd3c50a880`
 More public drinking-water points.
@@ -131,14 +131,14 @@ Desealing + increased rainwater use across private/public/commercial sectors.
 - `terminal_fach_state = NON_EFFECT_BROADER_SCOPE_RESTATEMENT_AND_POLICY_DIRECTION_REVIEWED`
 - Reason: repeats U06-A03/U08 mechanisms without an additional incentive, obligation, funding instrument, threshold or project scope. Preserve cross-sector scope as a future delivery dimension, not a second effect count.
 
-### F. U10/U11 - biodiversity + mandatory compound/cross-page repairs
+### F. U10/U11 — biodiversity + mandatory compound/cross-page repairs
 
 - `BE-BSW-P56-U10-dbfd711bcfa0` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
 #### `BE-BSW-P56-U11-A01-bc8687a59195`
 `Berlin kann mehr als Rasenflächen und Kiesbeete.` → `NON_EFFECT_RHETORICAL_LANDSCAPE_FRAME_REVIEWED`.
 
-#### `BE-BSW-P56-U11-A02-dbffc3ebd2c7` - mandatory deterministic four-child repair
+#### `BE-BSW-P56-U11-A02-dbffc3ebd2c7` — mandatory deterministic four-child repair
 Frozen compound source: `Wir wollen Blühwiesen, Streuobstbestände, urbane Landwirtschaft und ökologische Pflege statt kahler Flächenpflege.`
 
 Version parent zero-count `SOURCE_UNIT_RECLASSIFIED_VERSIONED / FOUR_DISTINCT_LAND_USE_AND_MAINTENANCE_LEVERS`. Generate exactly four deterministic semantic children:
@@ -189,7 +189,7 @@ After the U11 compound repair and P56→P57 cross-page repair:
 
 `BE_BSW_P56_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_U11_COMPOUND_AND_P57_FRAGMENT_REPAIRS`
 
-After lossless materialisation, untouched physical BSW Fach envelope begins **P57-P66 = 10 pages**, but **P57-U01 is already structurally consumed** and must be skipped. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
+After lossless materialisation, untouched physical BSW Fach envelope begins **P57–P66 = 10 pages**, but **P57-U01 is already structurally consumed** and must be skipped. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 
 ### CodeX boundary
 

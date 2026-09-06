@@ -1,8 +1,8 @@
-## WÖk FACH BATCH - Berlin BSW P30: ÖRR/rbb, Beitrag, Struktur, Vergütung, Regionalität, journalistischer Zugang - source-bound review + P30→P31 repair
+## WÖk FACH BATCH — Berlin BSW P30: ÖRR/rbb, Beitrag, Struktur, Vergütung, Regionalität, journalistischer Zugang — source-bound review + P30→P31 repair
 
 Fresh continuation after P29 `5454011541`. Frozen source artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`. Scope is **physical PDF page 30**, except for the mechanically necessary final-sentence continuation into P31. Generic #313 RNAA is superseded for this exact scope. No DNS mapping, Recommendation, score or programme-wide judgment.
 
-### 1. Current legal/system baseline - material for additionality and competence
+### 1. Current legal/system baseline — material for additionality and competence
 
 The rbb baseline is already materially reformed. Berlin states that the comprehensively revised rbb-Staatsvertrag took effect on 01.01.2024; it added stronger transparency/compliance, professionalised oversight, new duties/liability rules, **capped the Intendant salary and slimmed the management structure**. The Federal Constitutional Court confirmed the Länder's reform position in August 2025:
 `https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1591610.php`
@@ -23,7 +23,7 @@ The Electronic Media School (ems) is active and 100% owned by rbb; its 15th jour
 `https://ems-babelsberg.de/die-ems/`
 `https://ems-babelsberg.de/volontariat/`
 
-### 2. U01/U02 - heading + historical/diagnostic frame
+### 2. U01/U02 — heading + historical/diagnostic frame
 
 `BE-BSW-P30-U01-d17b190b07e3`
 - current atom `BE-BSW-P30-U01-A01-d17b190b07e3`
@@ -33,9 +33,9 @@ The Electronic Media School (ems) is active and 100% owned by rbb; its 15th jour
 `BE-BSW-P30-U02-ec91462741eb`
 - `terminal_fach_state = NON_EFFECT_HISTORICAL_DIAGNOSIS_AND_PROGRAMME_RATIONALE_REVIEWED`
 - `counts_as_effect_object = false`
-- Guard: claims about trust, waste, pay, political proximity, control failure, opinion diversity and precarious work are programme diagnoses/context. The 2024-2026 reform baseline must be displayed separately; the paragraph is not a bundle of independent measures.
+- Guard: claims about trust, waste, pay, political proximity, control failure, opinion diversity and precarious work are programme diagnoses/context. The 2024–2026 reform baseline must be displayed separately; the paragraph is not a bundle of independent measures.
 
-### 3. U03 - pluralism/value frame, no independent lever
+### 3. U03 — pluralism/value frame, no independent lever
 
 Parent `BE-BSW-P30-U03-7361c6bb4141` remains source-bound but all four existing atoms count zero:
 - `A01-77883df5c9e9` → `NON_EFFECT_PUBLIC_SERVICE_PLURALISM_GOAL_REVIEWED`
@@ -45,7 +45,7 @@ Parent `BE-BSW-P30-U03-7361c6bb4141` remains source-bound but all four existing 
 
 No programme- or household-level pluralism outcome is inferred from contribution payment alone.
 
-### 4. U04 - contribution-increase rejection / efficiency causal claim
+### 4. U04 — contribution-increase rejection / efficiency causal claim
 
 `BE-BSW-P30-U04-dafa23588998`
 
@@ -55,7 +55,7 @@ No programme- or household-level pluralism outcome is inferred from contribution
 
 A03 states a causal expectation without defining the efficiency intervention or savings baseline. Do not count it separately from concrete later structure/pay measures.
 
-### 5. U05 - contribution reform / €10 target
+### 5. U05 — contribution reform / €10 target
 
 `BE-BSW-P30-U05-21f409b08def`
 
@@ -63,7 +63,7 @@ A03 states a causal expectation without defining the efficiency intervention or 
 - `terminal_fach_state = NON_EFFECT_CONTRIBUTION_REFORM_AND_DISTRIBUTION_GOAL_REVIEWED`
 
 Canonical effect object:
-`BE-BSW-P30-U05-A02-c1eec7535aeb` - contribution reduced rapidly to €10 for lower/middle household incomes.
+`BE-BSW-P30-U05-A02-c1eec7535aeb` — contribution reduced rapidly to €10 for lower/middle household incomes.
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_DIRECT_HOUSEHOLD_RELIEF_VS_PUBLIC_MEDIA_FINANCING_AND_SERVICE_CAPACITY / TARGET_DEFINITION_AND_COMPENSATING_FINANCE_DEPENDENT`
@@ -75,18 +75,18 @@ Canonical effect object:
 - Noncompensation: household relief cannot by itself justify impairment of legally required public-service functionality/pluralism; conversely institutional budget preservation does not erase material household affordability.
 - Reality check: eligible households, net relief/take-up, administrative burden, revenue delta, service/output/quality/pluralism effects and constitutional financing outcome.
 
-### 6. U06/U07 - broad ARD/ZDF and administration slimming
+### 6. U06/U07 — broad ARD/ZDF and administration slimming
 
-`BE-BSW-P30-U06-A01-162d265b7191` - `echte Verschlankung der Senderstruktur von ARD und ZDF`
+`BE-BSW-P30-U06-A01-162d265b7191` — `echte Verschlankung der Senderstruktur von ARD und ZDF`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: no exact organisations/functions to merge/remove, decision level, target operating model, savings baseline, pluralism/regionality/resilience safeguards, staff transition or Länder/treaty delta is specified. `Schlanker` alone does not identify the net effect.
 - `exact_reason_code = BROADCAST_STRUCTURE_SLIMMING_TARGET_MODEL_AND_GOVERNANCE_MISSING`
 
-`BE-BSW-P30-U06-A02-b939a3b89c28` - discussion including contributors
+`BE-BSW-P30-U06-A02-b939a3b89c28` — discussion including contributors
 - `terminal_fach_state = NON_EFFECT_PARTICIPATION_PROCESS_GOAL_REVIEWED`
 - no participation design/decision right specified.
 
-`BE-BSW-P30-U07-A01-3a458fb5a6b6` - drastically reduce broadcaster administration
+`BE-BSW-P30-U07-A01-3a458fb5a6b6` — drastically reduce broadcaster administration
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: no administrative functions, baseline cost, cut target, duplication map, service consequences or legal/governance instrument is defined. Current rbb treaty already contains management-slimming reforms, so additionality is also unknown.
 - `exact_reason_code = ADMINISTRATION_CUT_SCOPE_BASELINE_SERVICE_GUARD_AND_ADDITIONALITY_MISSING`
@@ -95,9 +95,9 @@ Canonical effect object:
 - `terminal_fach_state = NON_EFFECT_RHETORICAL_OR_OPTION_QUESTION_REVIEWED`
 - Questions about director positions/partial administrative mergers do not yet specify a decision-ready independent measure.
 
-### 7. U08 - leadership pay / high-paid posts / TVöD alignment
+### 7. U08 — leadership pay / high-paid posts / TVöD alignment
 
-#### `BE-BSW-P30-U08-A01-688e734e30a9` - reduce leadership pay
+#### `BE-BSW-P30-U08-A01-688e734e30a9` — reduce leadership pay
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = CONDITIONAL_POSITIVE_COST_CONTROL_AND_INTERNAL_PAY_EQUITY_POTENTIAL / CURRENT_CAP_ADDITIONALITY_RECRUITMENT_AND_INDEPENDENCE_DEPENDENT`
 - `evidence_level = HIGH_FOR_DIRECT_PAY_COST_MECHANISM / LOW_FOR_NET_ORGANISATIONAL_PERFORMANCE`
@@ -105,7 +105,7 @@ Canonical effect object:
 - Trade-offs: cost/fairness vs recruitment/retention and governance independence; symbolic executive cuts may be fiscally small relative to total financing.
 - Reality check: exact posts/rates, additional annual savings, recruitment/turnover, governance quality and displacement into other compensation.
 
-#### `BE-BSW-P30-U08-A02-2f89ae455b55` - review all highly paid positions for necessity
+#### `BE-BSW-P30-U08-A02-2f89ae455b55` — review all highly paid positions for necessity
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = CONDITIONAL_POSITIVE_GOVERNANCE_AND_COST_REVIEW_POTENTIAL / INDEPENDENCE_AND_FUNCTIONAL_NEED_GUARD_REQUIRED`
 - `evidence_level = MEDIUM_FOR_REVIEW_TO_INFORMATION_MECHANISM / SAVINGS_AND_PERFORMANCE_OUTCOME_PENDING`
@@ -113,7 +113,7 @@ Canonical effect object:
 - Hard guard: no political content-control or personnel purge through a nominal cost review.
 - Reality check: transparent criteria, functions retained/changed, validated savings, service/independence effects and due process.
 
-#### `BE-BSW-P30-U08-A03-84a5a7bd1034` - align broadcaster pay structure with TVöD
+#### `BE-BSW-P30-U08-A03-84a5a7bd1034` — align broadcaster pay structure with TVöD
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_PAY_STANDARDISATION_COST_CONTROL_AND_INTERNAL_EQUITY_POTENTIAL / TARIFF_AUTONOMY_RECRUITMENT_AND_MEDIA_INDEPENDENCE_DEPENDENT`
 - `evidence_level = HIGH_FOR_PAY_RULE_TO_COMPENSATION_MECHANISM / LOW_FOR_NET_ORGANISATIONAL_OUTCOME`
@@ -121,7 +121,7 @@ Canonical effect object:
 - Missing: exact comparator/pay bands, covered groups, transition/vested rights, collective-bargaining path, market-role exceptions.
 - Reality check: pay distribution/cost, recruitment/retention, staff equity, litigation/tariff effects and organisational performance.
 
-### 8. U09/U10 - regionality and current treaty implementation
+### 8. U09/U10 — regionality and current treaty implementation
 
 `BE-BSW-P30-U09-30d27cf30465` (`Programm: ausgewogen und regional`)
 - `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
@@ -134,9 +134,9 @@ U10:
 
 Current-baseline guard: rbb regional reporting is already being expanded in 2026 and the revised treaty has been legally effective since 2024. A04 is therefore a lifecycle/compliance demand, not a new independent effect object unless a specific unmet treaty duty/action is identified.
 
-### 9. U11 - journalism access/training; split compound access instruments
+### 9. U11 — journalism access/training; split compound access instruments
 
-`BE-BSW-P30-U11-A01-e334663797b2` - strengthen EMS to broaden access
+`BE-BSW-P30-U11-A01-e334663797b2` — strengthen EMS to broaden access
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = CONDITIONAL_POSITIVE_JOURNALISM_TRAINING_CAPACITY_AND_ACCESS_POTENTIAL / ACTIVE_BASELINE_ADDITIONALITY_AND_SELECTION_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_TRAINING_CAPACITY_MECHANISM / REPRESENTATION_AND_JOURNALISM_OUTCOME_PENDING`
@@ -146,18 +146,18 @@ Current-baseline guard: rbb regional reporting is already being expanded in 2026
 
 Parent `BE-BSW-P30-U11-A02-61fb194bc250` is compound and must be versioned to zero-count. Create three deterministic children:
 
-#### A02-C1 - `Übernahmegarantien für rbb-Azubis`
+#### A02-C1 — `Übernahmegarantien für rbb-Azubis`
 - `EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_EARLY_CAREER_SECURITY_AND_RETENTION_POTENTIAL / WORKFORCE_FLEXIBILITY_PERFORMANCE_AND_EMPLOYER_AUTONOMY_DEPENDENT`
 - direct job-security mechanism; missing eligibility/duration/performance/position-budget rule.
 
-#### A02-C2 - `Sozial-Stipendien für Volontariate`
+#### A02-C2 — `Sozial-Stipendien für Volontariate`
 - `EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_SOCIOECONOMIC_ACCESS_TO_JOURNALISM_TRAINING_POTENTIAL / TARGETING_AND_SELECTION_DEPENDENT`
 - `evidence_level = HIGH_FOR_COST_BARRIER_MECHANISM / OCCUPATIONAL_AND_EDITORIAL_OUTCOME_PENDING`
 - Reality check: applicants/admissions/completion by socioeconomic background, financial barrier reduction and later employment; stipend count alone is input.
 
-#### A02-C3 - `bezahlte Praktika`
+#### A02-C3 — `bezahlte Praktika`
 - `EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_FAIR_WORK_AND_ACCESS_POTENTIAL / PAY_LEVEL_QUALITY_AND_ADDITIONALITY_DEPENDENT`
 - direct mechanism: reduce unpaid-labour barrier/exploitation risk and widen feasible participation.

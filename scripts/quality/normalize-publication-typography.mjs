@@ -13,6 +13,9 @@ const files=source?execFileSync('git',['ls-files','-z'],{cwd:root,encoding:'utf8
 let changed=0;
 for(const file of files){
   if(!extensions.has(path.extname(file)) || !fs.existsSync(file))continue;
+  // Frozen source/audit records retain their signed bytes. Formatting belongs
+  // to their public projection; the artifact pass below has no such exemption.
+  if(source && ['audit-manifests/','content/audits/sachsen-anhalt/','woek-parlament-app/data/'].some(prefix=>path.relative(root,file).startsWith(prefix)))continue;
   if(source && ['.mjs','.js','.py'].includes(path.extname(file)) && !path.relative(root,file).startsWith('assets/js/'))continue;
   // Test fixtures and the normalizer encode the very characters being tested.
   if(source && /(?:^|\/)(?:tests|test)\//.test(path.relative(root,file)))continue;

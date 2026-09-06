@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW P53: Konnexität/Föderalfinanzen · Verwaltung/Steuervollzug · Förderkonditionalität · Olympia-Opportunity-Cost - source-bound terminal review
+## WÖk FACH BATCH — Berlin BSW P53: Konnexität/Föderalfinanzen · Verwaltung/Steuervollzug · Förderkonditionalität · Olympia-Opportunity-Cost — source-bound terminal review
 
 Continuation after P52 `5459304496`. Fresh complete #240 re-read immediately before authoring found **no existing P53 Fach handoff**. Frozen artefact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P53/66. Exact IDs/text remain bound to `woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json`. Generic delegated/#313 RNAA is not Fach authority.
 
@@ -12,23 +12,23 @@ Berlin's tax-enforcement baseline has already moved in 2026: on **24.02.2026** t
 
 Berlin also runs ongoing tax-administration digitalisation/KONSENS and mandatory AI-skills training announced 24.03.2026. `Digitalisierung` cannot therefore be rendered as a new-from-zero state, and efficiency/revenue effects require observed process/compliance outcomes. `https://www.berlin.de/sen/finanzen/presse/pressemitteilungen/pressemitteilung.1655491.php`.
 
-**Olympia baseline:** the Senate approved the BERLIN+ concept on **05.05.2026**; the application is therefore an active current policy path, not a hypothetical proposal. The central application project group's approved total budget for 2025-2027 is **up to €6m**. Programme claims of `€10m for the application` and `~€16bn for actual hosting` are not imported as current official facts without a matching scope/accounting basis. Official sources: `https://www.berlin.de/rbmskzl/aktuelles/media/senat-beschliesst-konzept-zur-olympia-bewerbung-1668153.php`, `https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1602515.php`.
+**Olympia baseline:** the Senate approved the BERLIN+ concept on **05.05.2026**; the application is therefore an active current policy path, not a hypothetical proposal. The central application project group's approved total budget for 2025–2027 is **up to €6m**. Programme claims of `€10m for the application` and `~€16bn for actual hosting` are not imported as current official facts without a matching scope/accounting basis. Official sources: `https://www.berlin.de/rbmskzl/aktuelles/media/senat-beschliesst-konzept-zur-olympia-bewerbung-1668153.php`, `https://www.berlin.de/rbmskzl/aktuelles/pressemitteilungen/2025/pressemitteilung.1602515.php`.
 
-### 2. Structural/context units - zero count
+### 2. Structural/context units — zero count
 
-- **`BE-BSW-P53-U01-1a61f5118cb8`** - heading `Wer bestellt, bezahlt`
+- **`BE-BSW-P53-U01-1a61f5118cb8`** — heading `Wer bestellt, bezahlt`
   - `terminal_fach_state = NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
 
-- **`BE-BSW-P53-U02-4b618e882c97`** - Bund allegedly shifts statutory tasks to Berlin without cost-covering financing, causing discretionary cuts
+- **`BE-BSW-P53-U02-4b618e882c97`** — Bund allegedly shifts statutory tasks to Berlin without cost-covering financing, causing discretionary cuts
   - `terminal_fach_state = NON_EFFECT_FEDERAL_LAND_COST_ATTRIBUTION_FRAME_REVIEWED`.
   - Exact guard: the sentence bundles different tasks, execution models and financing rules. It is programme diagnosis/causal framing, not a proved universal Konnexität deficit. Art. 104a/84 GG and measure-specific federal financing must be checked per later action.
 
-- **`BE-BSW-P53-U05-bd44b0d263cd`** - heading `Vereinfachung, mehr Effizienz, Verzicht auf Prestigeprojekte`
+- **`BE-BSW-P53-U05-bd44b0d263cd`** — heading `Vereinfachung, mehr Effizienz, Verzicht auf Prestigeprojekte`
   - `terminal_fach_state = NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
 
-### 3. U03 - full-cost rule + migration/refugee cost claim
+### 3. U03 — full-cost rule + migration/refugee cost claim
 
-#### `BE-BSW-P53-U03-A01-7005c1666d35` - statutory full cost assumption by Bund when transferring tasks
+#### `BE-BSW-P53-U03-A01-7005c1666d35` — statutory full cost assumption by Bund when transferring tasks
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_FISCAL_RESPONSIBILITY_ALIGNMENT_POTENTIAL / COST_DEFINITION_INCENTIVE_AND_FEDERAL_COMPETENCE_DEPENDENT`
@@ -40,19 +40,19 @@ Berlin also runs ongoing tax-administration digitalisation/KONSENS and mandatory
 - Noncompensation: more federal reimbursement does not by itself prove service quality, efficiency or equity; it only changes fiscal incidence/capacity.
 - Reality check: ex-ante vs actual cost coverage by task, Länder/borough unfunded shares, budget volatility, offsetting-cut pressure, service outcomes and administrative transaction cost.
 
-#### `BE-BSW-P53-U03-A02-fe7442232551` - `€2bn` migration/refugee costs / `€1bn more than planned`
+#### `BE-BSW-P53-U03-A02-fe7442232551` — `€2bn` migration/refugee costs / `€1bn more than planned`
 
 - `terminal_fach_state = NON_EFFECT_QUANTITATIVE_MIGRATION_COST_CLAIM_REVIEWED`
 - Exact reason: this is a source-authored aggregate cost/budget-deviation claim, not an intervention. It lacks a reconciled fiscal perimeter (which benefits/services, federal reimbursements, investment vs operating, gross vs net, year/budget version) and must not be translated into per-person causal blame or an impact direction.
 - If shown publicly, mark as programme claim until matched to exact final Berlin budget/accounting evidence.
 
-### 4. U04 - fiscal federalism / Bundesrat / counterfinancing
+### 4. U04 — fiscal federalism / Bundesrat / counterfinancing
 
-**`BE-BSW-P53-U04-A01-f8f9541ecfe1`** - `Finanzreform zur Entlastung der Kommunen`
+**`BE-BSW-P53-U04-A01-f8f9541ecfe1`** — `Finanzreform zur Entlastung der Kommunen`
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: action-shaped but no revenue source, transfer formula, tax share, expenditure assignment, eligible municipalities, scale or legal instrument. `Financial reform` can represent materially opposite redistributive/fiscal mechanisms; no direction may be invented.
 
-**`BE-BSW-P53-U04-A02-5c990692eb07`** - strengthen Länder/Bundesrat rights for bills with financial effects on Länder/municipalities
+**`BE-BSW-P53-U04-A02-5c990692eb07`** — strengthen Länder/Bundesrat rights for bills with financial effects on Länder/municipalities
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_POSITIVE_VERTICAL_FISCAL_VOICE_AND_ACCOUNTABILITY_POTENTIAL / LEGISLATIVE_FRICTION_AND_DESIGN_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_VETO_BARGAINING_MECHANISM / POLICY_OUTCOME_DESIGN_DEPENDENT`
@@ -60,7 +60,7 @@ Berlin also runs ongoing tax-administration digitalisation/KONSENS and mandatory
 - Mechanism: stronger consent/participation can internalise subnational fiscal effects earlier, but can also increase veto points/delay and enable bargaining unrelated to the specific cost burden.
 - Reality check: exact constitutional/statutory rule delta, number/type of newly consent-requiring laws, fiscal-incidence accuracy, legislative time, negotiated cost-sharing and downstream service outcomes.
 
-**`BE-BSW-P53-U04-A03-e167f10fba95`** - no relevant federal laws without counterfinancing and prior financial coordination with Länder
+**`BE-BSW-P53-U04-A03-e167f10fba95`** — no relevant federal laws without counterfinancing and prior financial coordination with Länder
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_EX_ANTE_FISCAL_IMPACT_ALIGNMENT_POTENTIAL / DEFINITION_RIGIDITY_AND_DELAY_RISK`
 - `evidence_level = MEDIUM_FOR_COST_INTERNALISATION_MECHANISM / NET_POLICY_OUTCOME_PENDING`
@@ -70,16 +70,16 @@ Berlin also runs ongoing tax-administration digitalisation/KONSENS and mandatory
 - Trade-offs: better cost internalisation vs slower legislation, strategic cost forecasts and risk of underprovision if fiscal agreement becomes precondition for urgent measures.
 - Reality check: forecast/actual cost error, unfunded mandate incidence, legislative delay, service continuity and distribution of fiscal burdens.
 
-### 5. U06 - bureaucracy/digital coordination/tax enforcement
+### 5. U06 — bureaucracy/digital coordination/tax enforcement
 
-**`BE-BSW-P53-U06-A01-c98fb85c037a`** - bureaucracy reduction and tax-law lump-sum rules free staff capacity
+**`BE-BSW-P53-U06-A01-c98fb85c037a`** — bureaucracy reduction and tax-law lump-sum rules free staff capacity
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: neither the procedures/rules to remove nor the proposed lump-sum tax provisions, affected taxpayers, error/fraud safeguards, administrative workload baseline or competence are specified. Simplification can reduce burden but can also reduce accuracy/equity/control. No generic `bureaucracy reduction = positive` Fach.
 
-**`BE-BSW-P53-U06-A02-f218bec02860`** - external-consulting/inefficient-administration spending rose
+**`BE-BSW-P53-U06-A02-f218bec02860`** — external-consulting/inefficient-administration spending rose
 - `terminal_fach_state = NON_EFFECT_EXPENDITURE_AND_EFFICIENCY_DIAGNOSIS_REVIEWED`; needs exact spending time series/definition and does not itself define a cut.
 
-**`BE-BSW-P53-U06-A03-3034e53b9cd5`** - `erhebliches Einsparpotenzial`
+**`BE-BSW-P53-U06-A03-3034e53b9cd5`** — `erhebliches Einsparpotenzial`
 - `terminal_fach_state = NON_EFFECT_EXPECTED_SAVINGS_CLAIM_REVIEWED`; savings must be evidenced after exact measures and cannot be double-counted as an action.
 
 **`BE-BSW-P53-U06-A04-a6ca6ad2c99e`** is a compound source atom combining three distinct mechanisms and one claimed revenue result. It is **versioned/non-counting** and must be deterministically repaired into these exact semantic children (stable IDs generated mechanically from exact clause text/hash):
@@ -106,12 +106,12 @@ Berlin also runs ongoing tax-administration digitalisation/KONSENS and mandatory
 
 The parent’s `deutliche Mehreinnahmen` remains a **non-count expected outcome claim**, not guaranteed revenue.
 
-### 6. U07 - economic-support conditionality / subsidy reallocation
+### 6. U07 — economic-support conditionality / subsidy reallocation
 
-**`BE-BSW-P53-U07-A01-58c0f9bbccbe`** - current business support allegedly favours large companies without sufficient social return
+**`BE-BSW-P53-U07-A01-58c0f9bbccbe`** — current business support allegedly favours large companies without sufficient social return
 - `terminal_fach_state = NON_EFFECT_DISTRIBUTION_AND_ADDITIONALITY_DIAGNOSIS_REVIEWED`; requires programme/beneficiary/outcome data and is not accepted wholesale.
 
-**`BE-BSW-P53-U07-A02-5241be2c0ea5`** - condition public support more strongly on collective-agreement coverage, fair wages and regional value creation
+**`BE-BSW-P53-U07-A02-5241be2c0ea5`** — condition public support more strongly on collective-agreement coverage, fair wages and regional value creation
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_FAIR_WORK_AND_REGIONAL_VALUE_CONDITIONALITY_POTENTIAL / ADDITIONALITY_COMPETITION_AND_ADMIN_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_CONDITIONALITY_TO_RECIPIENT_INCENTIVE_MECHANISM / EMPLOYMENT_AND_VALUE_ADDED_OUTCOME_PENDING`
@@ -136,26 +136,26 @@ The parent’s `deutliche Mehreinnahmen` remains a **non-count expected outcome 
    - Risks: training without demand, displacement/creaming, short-lived placements, stigma, support service gaps and financing that depends on unproven prior subsidy savings.
    - Reality check: completion is output; use durable employment/retention, earnings, qualification match, employer demand, distribution and net fiscal/resource cost.
 
-### 7. U08 - administration efficiency / district digital services
+### 7. U08 — administration efficiency / district digital services
 
-**`BE-BSW-P53-U08-A01-54781cef7a08`** - efficiency improvement in Berlin administration as fiscal-strategy component
+**`BE-BSW-P53-U08-A01-54781cef7a08`** — efficiency improvement in Berlin administration as fiscal-strategy component
 - `terminal_fach_state = NON_EFFECT_EFFICIENCY_TARGET_REVIEWED`; no independent mechanism in this atom.
 
-**`BE-BSW-P53-U08-A02-41ec9e666fd8`** - process optimisation + digitalisation of district services could save resources
+**`BE-BSW-P53-U08-A02-41ec9e666fd8`** — process optimisation + digitalisation of district services could save resources
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_ADMIN_SERVICE_EFFICIENCY_AND_ACCESS_POTENTIAL / DIGITAL_EXCLUSION_SECURITY_AND_REALISATION_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_PROCESS_REDESIGN_DIGITAL_SERVICE_MECHANISM / NET_SAVINGS_AND_SERVICE_OUTCOME_PENDING`
 - `A→M→ΔZ`: redesign/digitise suitable workflows -> fewer manual handoffs/duplicate entry and lower transaction time -> potentially faster/more reliable service and lower unit resource use.
 - Current-baseline guard: many Berlin services are already digital/part-digital; the measure is incremental redesign/completion/interoperability, not `digitisation from zero`.
 - Noncompensation: budget savings cannot compensate inaccessible service, exclusion of non-digital users, cybersecurity/data-protection failures or worsening decision quality.
-- Reality check: end-to-end completion rate, processing/wait time, errors/rework, user accessibility, non-digital fallback, staff workload, IT lifecycle cost and realised-not forecast-net savings.
+- Reality check: end-to-end completion rate, processing/wait time, errors/rework, user accessibility, non-digital fallback, staff workload, IT lifecycle cost and realised—not forecast—net savings.
 
-### 8. U09 - tax avoidance / finance-office staffing
+### 8. U09 — tax avoidance / finance-office staffing
 
-**`BE-BSW-P53-U09-A01-93fa76750cf9`** - consistent fight against tax avoidance
+**`BE-BSW-P53-U09-A01-93fa76750cf9`** — consistent fight against tax avoidance
 - `terminal_fach_state = NON_EFFECT_COMPLIANCE_GOAL_REVIEWED`; no exact anti-avoidance rule or enforcement instrument in this atom.
 
-**`BE-BSW-P53-U09-A02-2111bb2b256f`** - strengthen and better staff Berlin tax offices
+**`BE-BSW-P53-U09-A02-2111bb2b256f`** — strengthen and better staff Berlin tax offices
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_TAX_COMPLIANCE_ENFORCEMENT_AND_SERVICE_CAPACITY_POTENTIAL / TARGETING_WORKFORCE_AND_PROCESS_DEPENDENT`
 - `evidence_level = MEDIUM_HIGH_FOR_CAPACITY_TO_ENFORCEMENT_MECHANISM / MARGINAL_REVENUE_AND_COMPLIANCE_OUTCOME_PENDING`
@@ -165,31 +165,31 @@ The parent’s `deutliche Mehreinnahmen` remains a **non-count expected outcome 
 - Rights/noncompensation: gross tax yield cannot compensate unlawful/disproportionate enforcement, error or procedural-rights violations.
 - Reality check: vacancies/qualified FTE, throughput/case age, risk-adjusted additional assessments/collections net cost, compliance gap, objections/litigation/error, taxpayer service time and distribution.
 
-### 9. U10 - Olympia bid, alternative spending and cross-page fragment repair
+### 9. U10 — Olympia bid, alternative spending and cross-page fragment repair
 
-**`BE-BSW-P53-U10-A01-4af6868e9c7a`** - stop/forego `Prestigeprojekte`, example Berlin Olympic bid, to relieve budget
+**`BE-BSW-P53-U10-A01-4af6868e9c7a`** — stop/forego `Prestigeprojekte`, example Berlin Olympic bid, to relieve budget
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_FISCAL_OPPORTUNITY_COST_AVOIDANCE / SUNK_COST_FORGONE_OPTION_AND_BENEFIT_DEPENDENT`
 - `evidence_level = HIGH_FOR_AVOIDING_FUTURE_BID_EXPENDITURE_IF_STOPPED / LOW_FOR_NET_CITY_WELFARE_EFFECT`
-- Current-baseline guard: BERLIN+ is an active Senate-approved application path since 05.05.2026; current official project-group budget 2025-2027 is up to €6m. Stopping now can avoid only **future uncommitted** application expenditure and downstream hosting commitments, not sunk cost.
+- Current-baseline guard: BERLIN+ is an active Senate-approved application path since 05.05.2026; current official project-group budget 2025–2027 is up to €6m. Stopping now can avoid only **future uncommitted** application expenditure and downstream hosting commitments, not sunk cost.
 - Competence: Berlin can choose its continued participation/application spending subject to commitments/partners/DOSB process; hosting selection itself is not Berlin unilateral.
 - Trade-offs: budget/resource release vs lost option value, potential sports/infrastructure/visitor/branding benefits; also avoids potential cost overruns, displacement, security/infrastructure burdens and event-related externalities.
 - Reality check: cancellable remaining commitments, sunk vs avoided costs, alternative use actually funded, hosting-probability/counterfactual benefits, venue/public-space/infrastructure and distribution effects.
 
-**`BE-BSW-P53-U10-A02-892d7d2279c6`** - `€10m` application / `~€16bn` hosting cost claim
+**`BE-BSW-P53-U10-A02-892d7d2279c6`** — `€10m` application / `~€16bn` hosting cost claim
 - `terminal_fach_state = NON_EFFECT_QUANTITATIVE_COST_CLAIM_REVIEWED`
-- Current source guard: official project-group budget is up to **€6m for 2025-2027**, not €10m. The programme's €16bn hosting estimate is not accepted as a settled full lifecycle cost without scope/accounting/counterfactual proof. Different official/public concepts may use different cost/revenue perimeters; do not compare numbers without boundary equivalence.
+- Current source guard: official project-group budget is up to **€6m for 2025–2027**, not €10m. The programme's €16bn hosting estimate is not accepted as a settled full lifecycle cost without scope/accounting/counterfactual proof. Different official/public concepts may use different cost/revenue perimeters; do not compare numbers without boundary equivalence.
 
-**`BE-BSW-P53-U10-A03-df2463a8b007`** - redirect more money to refurbishing existing sports facilities / improve provision
+**`BE-BSW-P53-U10-A03-df2463a8b007`** — redirect more money to refurbishing existing sports facilities / improve provision
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_EXISTING_SPORT_ASSET_CONDITION_AND_ACCESS_POTENTIAL / NEEDS_PRIORITISATION_CAPEX_AND_OPERATING_CAPACITY_DEPENDENT`
 - `evidence_level = MEDIUM_FOR_CAPITAL_MAINTENANCE_TO_ASSET_SERVICE_MECHANISM / PARTICIPATION_HEALTH_OUTCOME_PENDING`
 - Mechanism: needs-prioritised rehabilitation can reduce closure/safety/condition barriers and restore usable capacity.
 - Omissions: exact reallocation amount, facilities/condition baseline, user demand, accessibility, operating/maintenance funding and alternative-project opportunity cost.
 - Noncompensation: construction spend or m² renovated is input; unsafe/inaccessible/underused or unfunded operation is not positive outcome.
-- Reality check: usable facility-hours, closures/safety, accessibility, utilisation/distribution, lifecycle cost/energy and actual redirected-not merely announced-funds.
+- Reality check: usable facility-hours, closures/safety, accessibility, utilisation/distribution, lifecycle cost/energy and actual redirected—not merely announced—funds.
 
-**`BE-BSW-P53-U10-A04-9ef7985bba8d`** - schools, Kitas, social housing, public transport have priority
+**`BE-BSW-P53-U10-A04-9ef7985bba8d`** — schools, Kitas, social housing, public transport have priority
 - `terminal_fach_state = NON_EFFECT_MULTI_DOMAIN_BUDGET_PRIORITY_GOAL_REVIEWED`; no amounts/projects/selection mechanism; assess linked exact actions separately.
 
 **`BE-BSW-P53-U10-A05-8d70f09c8667`** is the broken fragment `Eine`; **`BE-BSW-P54-U01-a226a5a2869e`** is its continuation `Umschichtung zugunsten dieser Bereiche verbessert die Lebensqualität breiter Bevölkerungsschichten unmittelbar.` These two storage fragments must be versioned/non-counting and replaced by one deterministic cross-page semantic repair object with exact full sentence:

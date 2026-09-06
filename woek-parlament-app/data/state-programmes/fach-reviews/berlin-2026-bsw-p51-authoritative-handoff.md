@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW P51: Ryanair/BER · Standort-/Kostenursachen · Konnektivität/Bezahlbarkeit · industrie-/verkehrspolitische Gesamtstrategie - source-bound review
+## WÖk FACH BATCH — Berlin BSW P51: Ryanair/BER · Standort-/Kostenursachen · Konnektivität/Bezahlbarkeit · industrie-/verkehrspolitische Gesamtstrategie — source-bound review
 
 Authoritative continuation after P50 `5457793475`. Fresh complete #240 re-read immediately before authoring found **no existing P51 Fach handoff**. Frozen artefact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P51/66. Exact IDs/text are bound to `woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-bsw-v1.json`. Generic delegated/#313 RNAA is not Fach authority and is superseded only for this exact P51 scope. No DNS mapping, Recommendation, score or programme-wide judgement.
 
@@ -16,15 +16,15 @@ Aviation connectivity also has a hard environmental/system boundary. UBA identif
 
 ### 2. Exact P51 object decisions
 
-#### A. U01 - planned Ryanair base closure / diagnosis / transparency
+#### A. U01 — planned Ryanair base closure / diagnosis / transparency
 
-**`BE-BSW-P51-U01-A01-d75632cf632c`** - `Die Schließung des Ryanair-Standortes am Flughafen Berlin Brandenburg muss politisch ernst genommen werden.`
+**`BE-BSW-P51-U01-A01-d75632cf632c`** — `Die Schließung des Ryanair-Standortes am Flughafen Berlin Brandenburg muss politisch ernst genommen werden.`
 
 - `terminal_fach_state = NON_EFFECT_CURRENT_EVENT_AND_POLICY_ATTENTION_FRAME_REVIEWED`
 - Exact reason: this atom names/frames a current commercial event but specifies no independent policy lever. Current factual guard: as of this review the base closure is **announced/planned for 24.10.2026**, not already completed; Ryanair says Berlin will still be served from non-Berlin bases.
 - Do not count the event, carrier statement or political-attention demand as an impact intervention.
 
-**`BE-BSW-P51-U01-A02-be55471feb8c`** - `Wir fordern, die Ursachen dieser Entscheidung umfassend offenzulegen und zu bewerten.`
+**`BE-BSW-P51-U01-A02-be55471feb8c`** — `Wir fordern, die Ursachen dieser Entscheidung umfassend offenzulegen und zu bewerten.`
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_DIAGNOSTIC_TRANSPARENCY_AND_DECISION_QUALITY_POTENTIAL / ACCESS_AND_COMPETENCE_DEPENDENT`
@@ -37,16 +37,16 @@ Aviation connectivity also has a hard environmental/system boundary. UBA identif
 - Noncompensation: transparency/output cannot compensate for a substantively poor policy choice; carrier-seat growth cannot by itself compensate climate/noise/health burdens or fiscal opportunity cost.
 - Reality check: published causal decomposition with attributable evidence, decision/action deltas by competent actor, post-action fares/connectivity/traffic/employment and airport-finance effects, plus climate/noise/local-health boundary metrics.
 
-**`BE-BSW-P51-U01-A03-3ce05439f314`** - `Hohe Abgaben, steigende Gebühren und falsche politische Rahmenbedingungen dürfen nicht dazu führen, dass sich Unternehmen aus Deutschland zurückziehen und der Standort Berlin geschwächt wird.`
+**`BE-BSW-P51-U01-A03-3ce05439f314`** — `Hohe Abgaben, steigende Gebühren und falsche politische Rahmenbedingungen dürfen nicht dazu führen, dass sich Unternehmen aus Deutschland zurückziehen und der Standort Berlin geschwächt wird.`
 
 - `terminal_fach_state = NON_EFFECT_CAUSAL_AND_COMPETITIVENESS_FRAME_REVIEWED`
 - Exact reason: this is a normative causal/avoidance frame, not a separately specified intervention. It also bundles several alleged causes without causal identification.
 - Current-baseline guard: federal aviation tax was reduced from 01.07.2026; do not render the programme sentence as if all named burdens were unchanged or as if they alone proved the Ryanair decision.
 - Preserve as evaluation hypothesis/guard for concrete later tax, fee, ownership or connectivity actions; zero-counting here.
 
-#### B. U02 - competitiveness / flight connectivity / affordability goals
+#### B. U02 — competitiveness / flight connectivity / affordability goals
 
-**`BE-BSW-P51-U02-A01-e4b6e182ca45`** - `Wir setzen uns dafür ein, die Wettbewerbsfähigkeit des Standortes Deutschland wiederherzustellen, den Rückgang von Flugverbindungen zu verhindern und bezahlbare Mobilität für breite Bevölkerungsschichten zu sichern.`
+**`BE-BSW-P51-U02-A01-e4b6e182ca45`** — `Wir setzen uns dafür ein, die Wettbewerbsfähigkeit des Standortes Deutschland wiederherzustellen, den Rückgang von Flugverbindungen zu verhindern und bezahlbare Mobilität für breite Bevölkerungsschichten zu sichern.`
 
 - `terminal_fach_state = NON_EFFECT_COMPOUND_TARGET_STATE_REVIEWED`
 - Exact reason: the atom names three desired outcomes (national competitiveness, preservation of flight connectivity, affordable mobility) but no concrete legal, fiscal, airport, service or investment instrument. Do not invent one and do not score the target state as achieved effect.
@@ -54,21 +54,21 @@ Aviation connectivity also has a hard environmental/system boundary. UBA identif
 - Required later outcome dimensions if a concrete action is linked: total/origin-destination connectivity rather than one airline alone; generalized travel cost rather than ticket price alone; income/disability/spatial accessibility; airport/public-budget effects; substitution with rail/other modes; aviation CO2 + non-CO2, noise and local-air-quality effects.
 - Competence spans federal tax/regulation, Berlin/Brandenburg/FBB shareholder/airport levers, airlines and European/international rules; the sentence itself does not allocate them.
 
-#### C. U03 - integrated industry/transport strategy + rhetorical loser frame
+#### C. U03 — integrated industry/transport strategy + rhetorical loser frame
 
-**`BE-BSW-P51-U03-A01-e5f4fa2a1a56`** - `Dafür braucht es eine industrie- und verkehrspolitische Gesamtstrategie, die wirtschaftliche Vernunft, gute Erreichbarkeit und soziale Teilhabe miteinander verbindet.`
+**`BE-BSW-P51-U03-A01-e5f4fa2a1a56`** — `Dafür braucht es eine industrie- und verkehrspolitische Gesamtstrategie, die wirtschaftliche Vernunft, gute Erreichbarkeit und soziale Teilhabe miteinander verbindet.`
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_CROSS_POLICY_COHERENCE_AND_OPTION_APPRAISAL_POTENTIAL / CONTENT_IMPLEMENTATION_AND_BOUNDARY_DEPENDENT`
 - `evidence_level = MEDIUM_LOW_FOR_COORDINATION_MECHANISM / REAL_ECONOMIC_MOBILITY_AND_DISTRIBUTIONAL_OUTCOME_PENDING`
-- Why assessable: unlike the U02 goals alone, this specifies an institutional planning/coordination lever - an integrated industry/transport strategy.
+- Why assessable: unlike the U02 goals alone, this specifies an institutional planning/coordination lever — an integrated industry/transport strategy.
 - `A→M→ΔZ`: common strategy + explicit cross-sector appraisal -> airport/connectivity, rail/ground access, industrial-location, affordability and environmental decisions can be compared under shared objectives rather than isolated portfolios -> potentially fewer contradictory investments/incentives and more coherent accessibility/competitiveness/social outcomes.
 - Competence: `MIXED_BERLIN_LAND_POLICY_COORDINATION_WITH_BRANDENBURG_FBB_FEDERAL_EU_DEPENDENCIES`.
 - Material omissions: responsible body, binding force, alternatives/counterfactual framework, budget, project prioritisation, measurable targets, rail/aviation substitution, climate/noise boundaries and distribution criteria.
 - Policy-coherence hard guard: `economic rationality`, accessibility and social participation are not interchangeable scores; a gain in one cannot silently offset hard safety, climate, health, rights or fiscal-sustainability constraints.
 - Reality check: strategy changes real project/fiscal/regulatory choices; measured connectivity/accessibility, generalized travel cost, distribution, investment/productivity/location indicators and environmental/noise outcomes; publication of a strategy alone is output.
 
-**`BE-BSW-P51-U03-A02-c486a100cbed`** - `Berlin darf nicht weiter zum Verlierer einer Politik werden, die Mobilität verteuert und den Wirtschaftsstandort schwächt.`
+**`BE-BSW-P51-U03-A02-c486a100cbed`** — `Berlin darf nicht weiter zum Verlierer einer Politik werden, die Mobilität verteuert und den Wirtschaftsstandort schwächt.`
 
 - `terminal_fach_state = NON_EFFECT_NORMATIVE_CAUSAL_FRAME_REVIEWED`
 - Exact reason: rhetorical outcome/causal framing without a separate instrument or measurable comparator. `Verlierer`, `verteuert` and `schwächt` need defined baseline/counterfactual and cannot be imported as Fach findings from the programme text.
@@ -80,7 +80,7 @@ All **3 physical P51 source units / 6 frozen source atoms** are now explicitly s
 
 `BE_BSW_P51_FACH_COMPLETE = PASS_SOURCE_BOUND_OBJECT_LEVEL`
 
-If authoritative P1→P50 are preserved/materialised correctly, protected BSW Fach scope now extends through **P51** and the next untouched physical Fach envelope becomes **P52-P66 = 15 pages**, unless a newer explicit #240 handoff closes a subset before materialisation. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`; MV and combined Parliament Golden State remain fail-closed.
+If authoritative P1→P50 are preserved/materialised correctly, protected BSW Fach scope now extends through **P51** and the next untouched physical Fach envelope becomes **P52–P66 = 15 pages**, unless a newer explicit #240 handoff closes a subset before materialisation. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`; MV and combined Parliament Golden State remain fail-closed.
 
 ### 4. CodeX handoff
 

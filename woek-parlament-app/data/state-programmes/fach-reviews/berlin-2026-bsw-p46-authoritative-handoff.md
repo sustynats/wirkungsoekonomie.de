@@ -1,10 +1,10 @@
-## WÖk FACH BATCH - Berlin BSW P46: CO₂-Preis / Netze & Speicher / PCK & Nord Stream / Wärmeplanung / Fossil-Exit / GASAG / Wasserstoff - source-bound review + two segmentation repairs
+## WÖk FACH BATCH — Berlin BSW P46: CO₂-Preis / Netze & Speicher / PCK & Nord Stream / Wärmeplanung / Fossil-Exit / GASAG / Wasserstoff — source-bound review + two segmentation repairs
 
 Authoritative continuation after P45 `5458688301`. Fresh complete #240 re-read immediately before authoring found **no existing P46 Fach handoff**. Frozen artefact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P46/66. Exact source IDs/text below come from the frozen source-bound ledger. Generic delegated/#313 RNAA is not Fach authority and is superseded for this exact scope. No DNS mapping, Recommendation, score or party-wide judgement.
 
 ### 1. Current legal/system baseline and source-claim guards
 
-**CO₂ pricing is not a single Berlin-controlled instrument.** Germany's national emissions trading system has a 2026 auction corridor of **€55-65/t CO₂**; it directly prices fossil fuels placed on the market. At EU level, ETS2 for buildings/road transport/additional sectors is being prepared for full operation in **2028**. Sources:
+**CO₂ pricing is not a single Berlin-controlled instrument.** Germany's national emissions trading system has a 2026 auction corridor of **€55–65/t CO₂**; it directly prices fossil fuels placed on the market. At EU level, ETS2 for buildings/road transport/additional sectors is being prepared for full operation in **2028**. Sources:
 - UBA national nEHS 2026: `https://www.umweltbundesamt.de/presse/pressemitteilungen/erstmals-versteigerungen-im-nationalen`
 - Council ETS2 / full launch 2028: `https://www.consilium.europa.eu/en/press/press-releases/2026/06/11/ets2-market-stability-reserve-council-and-parliament-reach-provisional-agreement/`
 
@@ -18,9 +18,9 @@ Authoritative continuation after P45 `5458688301`. Fresh complete #240 re-read i
 
 For every energy object below: installed capacity, infrastructure spend, ownership label or legal acceleration is **input/governance**, not outcome. Relevant Reality Checks are system cost, reliability, energy poverty/distribution, emissions/lifecycle, security/dependency, curtailment/congestion, usable capacity and lock-in/stranded assets.
 
-### 2. U01 - abolish the CO₂ price + two rationale claims
+### 2. U01 — abolish the CO₂ price + two rationale claims
 
-#### `BE-BSW-P46-U01-A01-3b0a665ac407` - `Wir wollen eine Abschaffung des CO2-Preises.`
+#### `BE-BSW-P46-U01-A01-3b0a665ac407` — `Wir wollen eine Abschaffung des CO2-Preises.`
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_DIRECT_FOSSIL_COST_RELIEF_VS_WEAKER_DECARBONISATION_PRICE_SIGNAL / LEGAL_SCOPE_REPLACEMENT_AND_REVENUE_USE_DEPENDENT`
@@ -31,28 +31,28 @@ For every energy object below: installed capacity, infrastructure spend, ownersh
 - Trade-offs/noncompensation: affordability relief cannot by itself compensate for higher emissions, imported-fuel exposure or loss of financing for compensatory/climate measures; conversely climate-price efficiency cannot erase hardship/energy-poverty effects.
 - Reality check: actual legal instrument removed, fuel-price pass-through, demand/emissions, household expenditure by income/heating/transport pattern, firm cost incidence, public revenue/recycling, alternative climate instruments.
 
-`BE-BSW-P46-U01-A02-7dc86840e180` - CO₂ price affects fossil-fuel costs:
+`BE-BSW-P46-U01-A02-7dc86840e180` — CO₂ price affects fossil-fuel costs:
 - `terminal_fach_state = NON_EFFECT_CAUSAL_PRICE_MECHANISM_CLAIM_REVIEWED`
 - `counts_as_effect_object = false`
 - Reason: rationale/consequence of A01, not a second action. The direct cost mechanism is plausible and already incorporated in A01; no double count.
 
-`BE-BSW-P46-U01-A03-2471cbe08cdb` - burden on economy/citizens:
+`BE-BSW-P46-U01-A03-2471cbe08cdb` — burden on economy/citizens:
 - `terminal_fach_state = NON_EFFECT_AGGREGATE_DISTRIBUTIONAL_CLAIM_REVIEWED`
 - `counts_as_effect_object = false`
 - Source-claim guard: incidence is heterogeneous by fuel exposure, pass-through, income/sector and revenue recycling; do not render `Wirtschaft und Bürger werden belastet` as a uniform measured outcome.
 
-### 3. U02 - infrastructure cost distribution, industrial relief, grid/storage/digital investment
+### 3. U02 — infrastructure cost distribution, industrial relief, grid/storage/digital investment
 
-`BE-BSW-P46-U02-A01-536ddb5be356` - fair distribution of transformation-infrastructure costs:
+`BE-BSW-P46-U02-A01-536ddb5be356` — fair distribution of transformation-infrastructure costs:
 - `terminal_fach_state = NON_EFFECT_DISTRIBUTIONAL_GOAL_REVIEWED`
 - `counts_as_effect_object = false`
 - Reason: material equity criterion, but no allocation/tariff/tax/subsidy instrument or incidence rule is specified.
 
-`BE-BSW-P46-U02-A02-26546604a1cb` - electricity-price relief also for less energy-intensive industry:
+`BE-BSW-P46-U02-A02-26546604a1cb` — electricity-price relief also for less energy-intensive industry:
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: the source specifies neither price-relief instrument, eligibility/threshold, amount/duration, funding source, state-aid/legal pathway nor additionality. These choices determine fiscal cost, windfalls, competitiveness, demand and distribution, so one effect direction would be invented.
 
-#### `BE-BSW-P46-U02-A03-aa7cbe821f7f` - investment in grids, storage and digitalisation to reduce structural system costs
+#### `BE-BSW-P46-U02-A03-aa7cbe821f7f` — investment in grids, storage and digitalisation to reduce structural system costs
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_SYSTEM_FLEXIBILITY_INTEGRATION_AND_COST_REDUCTION_POTENTIAL / PROJECT_SELECTION_REGULATION_AND_DEMAND_DEPENDENT`
@@ -62,18 +62,18 @@ For every energy object below: installed capacity, infrastructure spend, ownersh
 - Risks: overbuild/stranded assets, cybersecurity/vendor lock-in, network-charge distribution, rebound/new demand, storage lifecycle/resource impacts.
 - Reality check: congestion/curtailment, connection queues, storage cycles/usefulness, outages/reliability, total system/lifecycle cost and tariff incidence, incremental renewable integration, emissions.
 
-### 4. U03/U04/U05 - supply framing, PCK and Nord Stream
+### 4. U03/U04/U05 — supply framing, PCK and Nord Stream
 
-`BE-BSW-P46-U03-dd84466dfa6d` - heading `Für eine sichere Energieversorgung`:
+`BE-BSW-P46-U03-dd84466dfa6d` — heading `Für eine sichere Energieversorgung`:
 - `terminal_fach_state = NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`
 - zero-count.
 
-`BE-BSW-P46-U04-A01-54e6b9cad917` - PCK Schwedt should receive a long-term perspective:
+`BE-BSW-P46-U04-A01-54e6b9cad917` — PCK Schwedt should receive a long-term perspective:
 - `terminal_fach_state = NON_EFFECT_TARGET_STATE_AND_CURRENT_BASELINE_CLAIM_REVIEWED`
 - `counts_as_effect_object = false`
 - Reason: this atom specifies no Berlin/federal ownership, investment, crude-supply or transformation instrument; moreover the current federal baseline already explicitly claims longer-term planning security. Preserve PCK supply/employment/transformation relevance as context, but do not count `Perspektive bekommen` as an additional intervention.
 
-#### `BE-BSW-P46-U05-A01-17bec11747b0` - support reopening the still-usable Nord Stream strand
+#### `BE-BSW-P46-U05-A01-17bec11747b0` — support reopening the still-usable Nord Stream strand
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_ADDITIONAL_PIPELINE_SUPPLY_OPTION_VS_LEGAL_GEOPOLITICAL_AND_FOSSIL_LOCKIN_RISK / CURRENT_EU_PHASEOUT_CONSTRAINT`
@@ -84,9 +84,9 @@ For every energy object below: installed capacity, infrastructure spend, ownersh
 - Risks/noncompensation: renewed supplier/geopolitical dependency, fossil infrastructure lock-in, methane/CO₂ lifecycle emissions, sunk recommissioning cost and conflict with transition plans. A possible short-run price/supply benefit cannot erase those risks; climate/geopolitical arguments cannot erase real security-of-supply stress either.
 - Reality check: legal permission, technical integrity/certification, source/counterparty, incremental deliverable volume, delivered full cost versus alternatives, dependency concentration, emissions/methane, duration/stranding.
 
-### 5. U06/U07 - energy infrastructure / curtailment / reserve + malformed example list
+### 5. U06/U07 — energy infrastructure / curtailment / reserve + malformed example list
 
-#### `BE-BSW-P46-U06-A01-e589e9472c2e` - infrastructure investment to reduce renewable curtailment and improve reserve capability
+#### `BE-BSW-P46-U06-A01-e589e9472c2e` — infrastructure investment to reduce renewable curtailment and improve reserve capability
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_FLEXIBILITY_RELIABILITY_AND_RENEWABLE_INTEGRATION_POTENTIAL / PORTFOLIO_AND_NEED_DEPENDENT`
@@ -102,14 +102,14 @@ For every energy object below: installed capacity, infrastructure spend, ownersh
 - semantic record: `terminal_fach_state = NON_EFFECT_IMPLEMENTATION_EXAMPLE_PORTFOLIO_REVIEWED`, zero-count, child/rationale of U06-A01;
 - guard: grid lines, heat networks, substations, storage, electrolysers, power-to-heat and reserve plants have different mechanisms/lifecycle effects; the list is **not** a blanket positive technology judgement.
 
-`BE-BSW-P46-U07-A01-2b71c19daba9` - PV build-out should be coordinated with energy-infrastructure expansion:
+`BE-BSW-P46-U07-A01-2b71c19daba9` — PV build-out should be coordinated with energy-infrastructure expansion:
 - `terminal_fach_state = NON_EFFECT_SYSTEM_COHERENCE_DESIGN_GUARD_REVIEWED`
 - `counts_as_effect_object = false`
 - Reason: coordination criterion for generation/infrastructure planning, not a separately specified investment/resource shift. Preserve as coherence guard for PV/grid/flexibility objects.
 
-### 6. U08 - district heating + current Berlin Wärmeplan + priority/approval rules
+### 6. U08 — district heating + current Berlin Wärmeplan + priority/approval rules
 
-#### `BE-BSW-P46-U08-A01-945bde3bbbc3` - consistent expansion of district-heating installations
+#### `BE-BSW-P46-U08-A01-945bde3bbbc3` — consistent expansion of district-heating installations
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_NETWORK_HEAT_DECARBONISATION_AND_SCALE_POTENTIAL / HEAT_SOURCE_DENSITY_FULL_COST_AND_LOCKIN_DEPENDENT`
@@ -119,20 +119,20 @@ For every energy object below: installed capacity, infrastructure spend, ownersh
 - Risks: fossil/biomass or other high-impact heat-source lock-in, monopoly/tariff power, high capital cost, construction disruption, stranded extensions where decentralised options are cheaper/cleaner.
 - Reality check: connection/use, heat-source carbon intensity/lifecycle, network losses, full customer/system cost, affordability, reliability, alternative-system counterfactual and spatial distribution.
 
-`BE-BSW-P46-U08-A02-e7124d02b0a5` - municipal heat planning should steer the process:
+`BE-BSW-P46-U08-A02-e7124d02b0a5` — municipal heat planning should steer the process:
 - `terminal_fach_state = NON_EFFECT_EXISTING_GOVERNANCE_BASELINE_AND_COHERENCE_GUARD_REVIEWED`
 - `counts_as_effect_object = false`
 - Reason: Berlin's citywide heat plan was already adopted 16.06.2026 under the statutory framework. Using it as a steering basis is a current governance baseline/coherence condition, not a new independent effect unless a concrete plan delta/action is specified.
 
-`BE-BSW-P46-U08-A03-1cc17816d759` - give such projects priority:
+`BE-BSW-P46-U08-A03-1cc17816d759` — give such projects priority:
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: `Vorrang` does not say priority in funding, planning, permitting, land, procurement or network connection, nor state the decision criteria/exception rule. Those distinctions determine opportunity costs and whether superior decentralised solutions are displaced.
 
-`BE-BSW-P46-U08-A04-8242f3d8bd99` - adjust legal framework to simplify/accelerate permitting:
+`BE-BSW-P46-U08-A04-8242f3d8bd99` — adjust legal framework to simplify/accelerate permitting:
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: no law/procedure/competent actor or safeguard being changed is identified. Speed can be beneficial only after separating avoidable process friction from substantive safety, environment, property, participation and legal-protection functions.
 
-### 7. U09 - mandatory segmentation repair + coal retirement condition + gas-grid preservation
+### 7. U09 — mandatory segmentation repair + coal retirement condition + gas-grid preservation
 
 `BE-BSW-P46-U09-A01-13208906d601` (`Wir werden Energieanlagen, wie z.B.`) and `BE-BSW-P46-U09-A02-7eb61e4a771f` (`Kohlekraftwerke, erst dann ...`) are one sentence fragmented by the extractor.
 
@@ -149,7 +149,7 @@ Semantic child:
 - Missing hard definition: `ausreichend`, `wettbewerbsfähig`, `sicher` need measurable adequacy, reliability, full-cost, emissions and time criteria.
 - Reality check: residual-load/adequacy metrics, reserve/reliability, full system cost, plant emissions, actual substitute capacity/flexibility, retirement date and stranded/lock-in cost.
 
-#### `BE-BSW-P46-U09-A03-3103f7bf89c9` - reject dismantling the current gas network
+#### `BE-BSW-P46-U09-A03-3103f7bf89c9` — reject dismantling the current gas network
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_NETWORK_OPTION_VALUE_AND_TRANSITION_RESILIENCE_VS_STRANDED_ASSET_AND_FOSSIL_LOCKIN / AREA_FUTURE_USE_AND_HEAT_PLAN_DEPENDENT`
@@ -159,9 +159,9 @@ Semantic child:
 - Noncompensation: sunk cost alone cannot justify indefinite fossil operation; climate target alone cannot justify unsafe/poorly sequenced decommissioning that strands dependent users without alternatives.
 - Reality check: customer/load trajectory, alternative-fuel technical compatibility/availability, maintenance/fixed cost per user, safety, heat-plan area path, transition timetable, emissions and decommission/reuse options.
 
-### 8. U10 - GASAG ownership
+### 8. U10 — GASAG ownership
 
-#### `BE-BSW-P46-U10-A01-aa039fcae982` - support remunicipalisation of GASAG AG
+#### `BE-BSW-P46-U10-A01-aa039fcae982` — support remunicipalisation of GASAG AG
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = AMBIVALENT_PUBLIC_CONTROL_AND_TRANSITION_COORDINATION_POTENTIAL / ACQUISITION_COST_GOVERNANCE_AND_PERFORMANCE_DEPENDENT`
@@ -171,9 +171,9 @@ Semantic child:
 - Noncompensation: public ownership cannot compensate for poor cost/reliability/climate performance; a cheap private alternative cannot erase public-control/coordination value without comparison.
 - Reality check: acquisition full lifecycle cost, tariffs/service/reliability, investment/decarbonisation pace, governance transparency and fiscal opportunity cost.
 
-### 9. U11/U12 - hydrogen targeting + production relocation
+### 9. U11/U12 — hydrogen targeting + production relocation
 
-#### `BE-BSW-P46-U11-A01-eba398e44626` - hydrogen network expansion aligned with demand for green hydrogen
+#### `BE-BSW-P46-U11-A01-eba398e44626` — hydrogen network expansion aligned with demand for green hydrogen
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_DEMAND_ALIGNED_HYDROGEN_INFRASTRUCTURE_AND_STRANDED_ASSET_AVOIDANCE_POTENTIAL / GREEN_SUPPLY_AND_HARD_TO_ELECTRIFY_USE_DEPENDENT`
@@ -182,22 +182,22 @@ Semantic child:
 - Risks: demand overforecast, supply scarcity/import dependency, conversion losses, competing direct-electric uses, repurposing assumptions and network socialisation of cost.
 - Reality check: contracted/credible demand, green-H₂ supply/additional renewable electricity, utilisation, full delivered €/MWh and abatement cost, alternative electrification comparison, network lifecycle/stranding.
 
-`BE-BSW-P46-U11-A02-a9008b5b4b6c` - prioritise energetic H₂ use in energy-intensive industry/high-temperature processes/gas plants:
+`BE-BSW-P46-U11-A02-a9008b5b4b6c` — prioritise energetic H₂ use in energy-intensive industry/high-temperature processes/gas plants:
 - `terminal_fach_state = NON_EFFECT_USE_CASE_PRIORITISATION_RATIONALE_REVIEWED`
 - `counts_as_effect_object = false`
 - Reason: identifies intended use domains for A01 but specifies no allocation, quota, subsidy or legal instrument. Preserve as targeting criterion; each later use needs direct-electrification/efficiency/cost/emissions counterfactual.
 
-`BE-BSW-P46-U12-A01-633dd9f532e4` - oppose relocation of energy-technology component production abroad:
+`BE-BSW-P46-U12-A01-633dd9f532e4` — oppose relocation of energy-technology component production abroad:
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: no affected component/firm, anti-relocation instrument, trade/state-aid/procurement rule, fiscal envelope or counterfactual is specified. Domestic retention can affect employment/resilience and also cost/trade/resource footprints; direction depends on the missing mechanism.
 
-### 10. U13/U14 - heading + economic-design criterion
+### 10. U13/U14 — heading + economic-design criterion
 
-`BE-BSW-P46-U13-53ce8855139b` - `Umstieg auf erneuerbare Energien sozial verträglich und technologieoffen gestalten`:
+`BE-BSW-P46-U13-53ce8855139b` — `Umstieg auf erneuerbare Energien sozial verträglich und technologieoffen gestalten`:
 - `terminal_fach_state = NON_EFFECT_CONTEXT_AND_DESIGN_GOAL_REVIEWED / STRUCTURAL_HEADING`
 - zero-count; `technologieoffen` is not an assumption of technology equivalence.
 
-`BE-BSW-P46-U14-A01-e86a4c8a4bf7` - new heating systems should be conceived/built/operated by economic criteria:
+`BE-BSW-P46-U14-A01-e86a4c8a4bf7` — new heating systems should be conceived/built/operated by economic criteria:
 - `terminal_fach_state = NON_EFFECT_ECONOMIC_DESIGN_GUARD_REVIEWED`
 - `counts_as_effect_object = false`
 - Reason: lifecycle-economic assessment is a legitimate design criterion but this atom creates no concrete technology, standard, funding or decision rule. `wirtschaftlich` must mean transparent lifecycle/system/consumer cost, not capex alone; climate, safety, reliability and distribution remain noncompensable guards.

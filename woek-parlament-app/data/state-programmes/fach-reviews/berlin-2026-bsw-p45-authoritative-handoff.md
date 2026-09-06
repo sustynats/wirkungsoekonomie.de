@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW P45: Energiepreise / Russland-US-Importmix / Versorgungssperren - source-bound review with sanctions/source-claim guards
+## WÖk FACH BATCH — Berlin BSW P45: Energiepreise / Russland-US-Importmix / Versorgungssperren — source-bound review with sanctions/source-claim guards
 
 Disjoint continuation after P44 `5458652090`. Frozen artefact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P45/66. This page contains strong causal/political claims about sanctions and energy prices. **Party-authored causal claims are not evidence.** No DNS mapping, Recommendation, score or party-wide judgement.
 
@@ -10,7 +10,7 @@ Disjoint continuation after P44 `5458652090`. Frozen artefact unchanged: `BE-AGH
 
 Boundary: **lower import price or lower household bill is not the only effect dimension.** Supply diversification/security, geopolitical/fiscal exposure, infrastructure compatibility, lifecycle methane/CO2, local air/environmental effects, lock-in and distribution are separate, non-compensable where material.
 
-### 1. U01/U02 - programme background claims only
+### 1. U01/U02 — programme background claims only
 
 #### `BE-BSW-P45-U01-9935641d55d4`
 - `terminal_fach_state = NON_EFFECT_PROGRAMME_CAUSAL_BACKGROUND_CLAIMS_REVIEWED`
@@ -20,7 +20,7 @@ Boundary: **lower import price or lower household bill is not the only effect di
 - `terminal_fach_state = NON_EFFECT_PROGRAMME_POLICY_BACKGROUND_CLAIMS_REVIEWED`
 - Guard: statements about the federal industrial electricity-price response, cost, beneficiaries and burden are background/political assessment here, not a Berlin P45 action. If later used as evidence, bind to the actual federal instrument and observed incidence rather than this characterisation.
 
-### 2. U03 - PCK/sanction assertions + political position
+### 2. U03 — PCK/sanction assertions + political position
 
 #### `BE-BSW-P45-U03-A01-02924e54b860`
 - `terminal_fach_state = NON_EFFECT_CAUSAL_DISTRIBUTIONAL_CLAIM_REVIEWED`
@@ -66,7 +66,7 @@ Boundary: **lower import price or lower household bill is not the only effect di
 - `terminal_fach_state = NON_EFFECT_COMPETITIVENESS_CARBON_LEAKAGE_SAFEGUARD_REVIEWED`
 - Reason: avoiding industrial loss and leakage to dirtier production is a material policy guard, but this atom contains no independent energy-price, border-adjustment, subsidy, efficiency or industrial-transition instrument. Measure leakage with actual production/import/lifecycle emissions rather than assume it.
 
-### 4. U07 - blanket prohibition of electricity/heat disconnection
+### 4. U07 — blanket prohibition of electricity/heat disconnection
 
 #### `BE-BSW-P45-U07-A01-987d6eb564cd`
 
@@ -81,13 +81,13 @@ Boundary: **lower import price or lower household bill is not the only effect di
 - Noncompensation: collection efficiency cannot justify life/health-dangerous disconnection; conversely universal service access does not erase the need for sustainable debt/funding design.
 - Reality check: disconnections avoided, arrears/debt trajectory, household health/housing crises, repayment/support take-up, tariff/fiscal incidence, supplier bad debt and vulnerable-household reach.
 
-### 5. U08 - energy-price goal + compound import-source proposal
+### 5. U08 — energy-price goal + compound import-source proposal
 
 #### `BE-BSW-P45-U08-A01-e48a27ff925b`
 - `terminal_fach_state = NON_EFFECT_ENERGY_AFFORDABILITY_GOAL_REVIEWED`
 - Reason: price damping is a target state; the instrument is in A02 and must be separately reviewed.
 
-#### `BE-BSW-P45-U08-A02-5d5cdb0b4f43` - compound parent, deterministic split required
+#### `BE-BSW-P45-U08-A02-5d5cdb0b4f43` — compound parent, deterministic split required
 Parent combines two distinct import-source changes and embeds unverified adjectives about price/environmental performance.
 
 - parent → `SOURCE_UNIT_RECLASSIFIED_VERSIONED`
@@ -110,7 +110,7 @@ Create deterministic children from these exact clauses:
 
 CodeX may generate stable child IDs/hashes and bind these exact RNAA decisions directly.
 
-### 6. U09 - `Preistreiberei` at filling stations
+### 6. U09 — `Preistreiberei` at filling stations
 
 #### `BE-BSW-P45-U09-A01-7b3b738f7b7e`
 
@@ -122,9 +122,9 @@ CodeX may generate stable child IDs/hashes and bind these exact RNAA decisions d
 
 After deterministic U08-A02 child generation:
 - U01/U02: background claims terminal non-effect;
-- U03 A01-A04: source/factual/causal/foreign-policy positions terminal non-effect;
+- U03 A01–A04: source/factual/causal/foreign-policy positions terminal non-effect;
 - U04/U06 headings terminal;
-- U05 A01-A05 terminal goals/frames/safeguards, non-effect;
+- U05 A01–A05 terminal goals/frames/safeguards, non-effect;
 - U07: **1 EXPLICIT_FACH_APPROVED**;
 - U08 A01 goal terminal non-effect; A02 parent zero-count + **2 exact RNAA children**;
 - U09: **1 exact RNAA**.

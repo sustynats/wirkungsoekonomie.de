@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW P48: Mobilitätsrahmen · ÖPNV-Ausbau · Seilbahnen · Netzoptimierung/Rufbus · Berlin-Brandenburg-Tarif · Schülerticket · P+R - source-bound review + atomic repairs
+## WÖk FACH BATCH — Berlin BSW P48: Mobilitätsrahmen · ÖPNV-Ausbau · Seilbahnen · Netzoptimierung/Rufbus · Berlin-Brandenburg-Tarif · Schülerticket · P+R — source-bound review + atomic repairs
 
 Authoritative continuation after P47 `5458802801`. Fresh complete #240 re-read immediately before authoring found **no existing P48 Fach handoff**. Frozen artefact remains `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P48/66. Exact source IDs/text are bound to `berlin-2026-bsw-v1.json`. Generic delegated/#313 RNAA is not Fach authority and is superseded only for this exact P48 scope. No DNS mapping, Recommendation, score or programme-wide judgement.
 
@@ -12,28 +12,28 @@ Berlin school students already have a **free VBB Berlin AB student ticket**. A f
 
 For all P48 transport objects: infrastructure length, vehicles, ticket counts or spending are inputs. Relevant outcomes are door-to-door travel time/reliability, accessibility, safety, induced/suppressed demand, mode shift, capacity/crowding, operating cost/subsidy, land use, local pollution/noise and lifecycle emissions. A benefit for one mode must not silently compensate safety/access losses or material burdens on other users.
 
-### 2. U01 - programme framing / modal-coexistence goals, zero-count
+### 2. U01 — programme framing / modal-coexistence goals, zero-count
 
-- `BE-BSW-P48-U01-A01-284b755466f4` - `Verkehrspolitik darf nicht spalten`: `NON_EFFECT_NORMATIVE_POLICY_FRAME_REVIEWED`, zero-count.
-- `BE-BSW-P48-U01-A02-f5a7ad8b6e2e` - no ideological opposition between car/bike/transit, `vernünftiges Miteinander`: `NON_EFFECT_MODAL_COHERENCE_GOAL_REVIEWED`, zero-count.
-- `BE-BSW-P48-U01-A03-eb1521ca39b7` - safe walking + strong transit + reliable cycle network + good car conditions `gehören zusammen`: `NON_EFFECT_MULTI_MODAL_TARGET_STATE_REVIEWED`, zero-count. Preserve safety, reliability, access and cross-mode interactions as evaluation dimensions; do not assume all modal claims can be simultaneously maximised on scarce street space.
-- `BE-BSW-P48-U01-A04-06cdde67f23f` - car often indispensable for named groups/outer districts: `NON_EFFECT_ACCESS_AND_DEPENDENCY_DIAGNOSIS_CLAIM_REVIEWED`, zero-count. The statement is plausible for some trips/groups but not promoted to a universal measured baseline; disaggregate by time, trip purpose, disability, household/work pattern and available alternatives.
+- `BE-BSW-P48-U01-A01-284b755466f4` — `Verkehrspolitik darf nicht spalten`: `NON_EFFECT_NORMATIVE_POLICY_FRAME_REVIEWED`, zero-count.
+- `BE-BSW-P48-U01-A02-f5a7ad8b6e2e` — no ideological opposition between car/bike/transit, `vernünftiges Miteinander`: `NON_EFFECT_MODAL_COHERENCE_GOAL_REVIEWED`, zero-count.
+- `BE-BSW-P48-U01-A03-eb1521ca39b7` — safe walking + strong transit + reliable cycle network + good car conditions `gehören zusammen`: `NON_EFFECT_MULTI_MODAL_TARGET_STATE_REVIEWED`, zero-count. Preserve safety, reliability, access and cross-mode interactions as evaluation dimensions; do not assume all modal claims can be simultaneously maximised on scarce street space.
+- `BE-BSW-P48-U01-A04-06cdde67f23f` — car often indispensable for named groups/outer districts: `NON_EFFECT_ACCESS_AND_DEPENDENCY_DIAGNOSIS_CLAIM_REVIEWED`, zero-count. The statement is plausible for some trips/groups but not promoted to a universal measured baseline; disaggregate by time, trip purpose, disability, household/work pattern and available alternatives.
 
 `BE-BSW-P48-U02-2b263d920996` is already a context unit. Preserve as `NON_EFFECT_PROBLEM_DIAGNOSIS_REVIEWED`: programme claims about slow infrastructure build/congestion/unreliability require corridor-specific evidence and do not themselves count as effects.
 
-`BE-BSW-P48-U03-381203f1f6b4` - heading `Öffentlichen Nahverkehr gezielt ausbauen`: `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
+`BE-BSW-P48-U03-381203f1f6b4` — heading `Öffentlichen Nahverkehr gezielt ausbauen`: `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
-### 3. U04 A01/A02 - priority and deficit diagnosis, not independent levers
+### 3. U04 A01/A02 — priority and deficit diagnosis, not independent levers
 
-`BE-BSW-P48-U04-A01-99aec02f9c87` - strengthen public transport, especially outer districts:
+`BE-BSW-P48-U04-A01-99aec02f9c87` — strengthen public transport, especially outer districts:
 - `terminal_fach_state = NON_EFFECT_POLICY_PRIORITY_AND_SPATIAL_GOAL_REVIEWED`
 - zero-count; actual route/service/investment decisions below carry effects.
 
-`BE-BSW-P48-U04-A02-dfec33084059` - frequency/access/reliability often insufficient as car alternative:
+`BE-BSW-P48-U04-A02-dfec33084059` — frequency/access/reliability often insufficient as car alternative:
 - `terminal_fach_state = NON_EFFECT_SERVICE_DEFICIT_DIAGNOSIS_CLAIM_REVIEWED`
 - zero-count; current Senate baseline says outer-district coverage is broadly dense, so the programme claim must be tested corridor/time-of-day specifically, not accepted or rejected wholesale.
 
-### 4. U04 A03 - compound `U-Bahn, S-Bahn, Straßenbahn und Bus` expansion requires four children
+### 4. U04 A03 — compound `U-Bahn, S-Bahn, Straßenbahn und Bus` expansion requires four children
 
 Parent `BE-BSW-P48-U04-A03-e81f62d9b934`:
 - `terminal_fach_state = SOURCE_UNIT_RECLASSIFIED_VERSIONED`
@@ -50,7 +50,7 @@ Competence guards:
 
 Minimum later Reality Check per project: incremental door-to-door accessibility/travel-time/reliability, ridership/capacity/crowding, mode shift, safety/barrier-free access, capex/opex/lifecycle cost, construction/displacement, land/environment and emissions.
 
-### 5. U04 A04 - two named cable-car projects must be split
+### 5. U04 A04 — two named cable-car projects must be split
 
 Parent `BE-BSW-P48-U04-A04-21a1989ffc91` combines two independent build projects: one cable-car line in **Treptow-Köpenick**, one in **Pankow Nord**.
 
@@ -62,9 +62,9 @@ Each child:
 - Exact reason: district name alone does not define endpoints/alignment/stations, catchment demand, interchange, capacity/frequency, land/visual/privacy/resident effects, weather/reliability, evacuation/accessibility, capex/opex or comparison with bus/tram/rail. Cable cars can be useful in specific barrier/corridor geometries, but `Seilbahn` is not itself evidence of net benefit.
 - Reality check if specified later: time/cost versus best alternative, riders/hour, access/interchanges, reliability/weather, safety/evacuation/barrier-free use, land/visual/privacy impact, energy/lifecycle footprint.
 
-### 6. U04 A05 - integrate cable cars into Berlin public-transport fare/network system
+### 6. U04 A05 — integrate cable cars into Berlin public-transport fare/network system
 
-`BE-BSW-P48-U04-A05-104c39b0ec69` - integrate proposed lines and, if possible, existing Gärten-der-Welt cable car into Berlin ÖPNV network:
+`BE-BSW-P48-U04-A05-104c39b0ec69` — integrate proposed lines and, if possible, existing Gärten-der-Welt cable car into Berlin ÖPNV network:
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_FARE_NETWORK_INTEGRATION_AND_TRANSFER_FRICTION_REDUCTION_POTENTIAL / SERVICE_EXISTENCE_CONTRACT_AND_OPERATING_COST_DEPENDENT`
 - `evidence_level = HIGH_FOR_TICKET_NETWORK_INTEGRATION_MECHANISM / RIDERSHIP_AND_NET_COST_OUTCOME_PENDING`
@@ -74,19 +74,19 @@ Each child:
 - Distribution: regular commuters, low-income/ticket holders, visitors, nearby residents, people requiring barrier-free interchange.
 - Reality check: actual VBB acceptance, fare/subsidy/settlement cost, operating hours/frequency, incremental everyday ridership, interchange time, accessibility and fiscal cost.
 
-### 7. U04 A06/A07 - project-selection principles, not defined projects
+### 7. U04 A06/A07 — project-selection principles, not defined projects
 
-`BE-BSW-P48-U04-A06-58a443380aaf` - U-Bahn extensions/gap closures where `klarer Nutzen`/quarter connection:
+`BE-BSW-P48-U04-A06-58a443380aaf` — U-Bahn extensions/gap closures where `klarer Nutzen`/quarter connection:
 - `terminal_fach_state = NON_EFFECT_PROJECT_SELECTION_AND_BENEFIT_TEST_GUARD_REVIEWED`
 - zero-count. This is a sensible selection condition but names no project; define `klarer Nutzen` through demand, time/access, alternatives, full cost, delivery and externalities before any route gets a Fach direction.
 
-`BE-BSW-P48-U04-A07-68bf517c3fd0` - tram extensions where access improves/gaps close:
+`BE-BSW-P48-U04-A07-68bf517c3fd0` — tram extensions where access improves/gaps close:
 - `terminal_fach_state = NON_EFFECT_PROJECT_SELECTION_AND_NETWORK_GAP_GUARD_REVIEWED`
 - zero-count for the same reason; no specific corridor/resource shift.
 
-### 8. U05 - service design, on-demand and trolleybus options
+### 8. U05 — service design, on-demand and trolleybus options
 
-#### `BE-BSW-P48-U05-A01-00098694378e` - reorder bus/tram frequencies, routes and transfers to simplify journeys/avoid duplication
+#### `BE-BSW-P48-U05-A01-00098694378e` — reorder bus/tram frequencies, routes and transfers to simplify journeys/avoid duplication
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_NETWORK_SIMPLIFICATION_TRANSFER_AND_OPERATING_EFFICIENCY_POTENTIAL / SERVICE_LOSS_AND_DEMAND_DISTRIBUTION_DEPENDENT`
@@ -95,10 +95,10 @@ Each child:
 - Risks: `Doppelstruktur` may actually provide resilience, capacity or distinct catchments; simplification can worsen access for low-volume/shift/vulnerable users. Optimise passenger journeys, not route-count minimisation.
 - Reality check: door-to-door travel/wait/transfer time, missed connections, service kilometres/operating cost, crowding, coverage, reliability and distribution by district/time/user group before/after redesign.
 
-`BE-BSW-P48-U05-A02-7f53a793d737` - flexible complements can play a role:
+`BE-BSW-P48-U05-A02-7f53a793d737` — flexible complements can play a role:
 - `terminal_fach_state = NON_EFFECT_OPTION_SPACE_AND_RATIONALE_REVIEWED`, zero-count; concrete Rufbus/trolleybus objects below carry effects.
 
-#### `BE-BSW-P48-U05-A03-16ed75cf3524` - Rufbus/on-demand for poorly served districts
+#### `BE-BSW-P48-U05-A03-16ed75cf3524` — Rufbus/on-demand for poorly served districts
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_LOW_DENSITY_ACCESS_AND_FIRST_LAST_MILE_POTENTIAL / DEMAND_POOLING_COST_AND_ACCESSIBILITY_DEPENDENT`
@@ -108,27 +108,27 @@ Each child:
 - Risks: expensive low occupancy, digital/booking exclusion, unreliable pickup windows, competition with useful fixed services, labour/vehicle costs.
 - Reality check: requests served/refused, wait/detour, passengers/vehicle-hour, cost/passenger-km, accessible booking/vehicles, connection success, fixed-route counterfactual and car-trip substitution.
 
-`BE-BSW-P48-U05-A04-dbab479d21f7` - secure/develop such models:
+`BE-BSW-P48-U05-A04-dbab479d21f7` — secure/develop such models:
 - `terminal_fach_state = NON_EFFECT_RESTATEMENT_AND_CONTINUATION_GOAL_REVIEWED`, zero-count; child of A03/option-space, no separate instrument.
 
-`BE-BSW-P48-U05-A05-40a7121a76db` - trolleybuses `können geprüft werden`:
+`BE-BSW-P48-U05-A05-40a7121a76db` — trolleybuses `können geprüft werden`:
 - `terminal_fach_state = NON_EFFECT_TECHNOLOGY_OPTION_APPRAISAL_REVIEWED`
 - zero-count; requesting comparison is not deployment. Future appraisal must compare overhead infrastructure, battery/e-bus alternatives, demand, reliability, street/visual impacts and lifecycle cost/emissions.
 
-`BE-BSW-P48-U05-A06-12f6965a428d` - `nicht Symbolpolitik, sondern bessere Erreichbarkeit`:
+`BE-BSW-P48-U05-A06-12f6965a428d` — `nicht Symbolpolitik, sondern bessere Erreichbarkeit`:
 - `NON_EFFECT_NORMATIVE_OUTCOME_PRIORITY_FRAME_REVIEWED`, zero-count. Preserve accessibility as outcome criterion, not party rhetoric as evidence.
 
-`BE-BSW-P48-U06-152396dd78db` - heading `Berlin und Brandenburg besser vernetzen`: `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
+`BE-BSW-P48-U06-152396dd78db` — heading `Berlin und Brandenburg besser vernetzen`: `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`.
 
-### 9. U07 A01/A02 - cooperation/rationale, zero-count
+### 9. U07 A01/A02 — cooperation/rationale, zero-count
 
-`BE-BSW-P48-U07-A01-a0e5c7f0fef9` - Berlin/Brandenburg closer cooperation:
+`BE-BSW-P48-U07-A01-a0e5c7f0fef9` — Berlin/Brandenburg closer cooperation:
 - `NON_EFFECT_INTERGOVERNMENTAL_COHERENCE_GOAL_REVIEWED`, zero-count; cooperation alone is not outcome.
 
-`BE-BSW-P48-U07-A02-2fa72e8f675f` - shared metropolitan living/work area:
+`BE-BSW-P48-U07-A02-2fa72e8f675f` — shared metropolitan living/work area:
 - `NON_EFFECT_SPATIAL_DEMAND_CONTEXT_CLAIM_REVIEWED`, zero-count.
 
-### 10. U07 A03 - compound tariff/commuter/student-ticket atom requires three children
+### 10. U07 A03 — compound tariff/commuter/student-ticket atom requires three children
 
 Parent `BE-BSW-P48-U07-A03-ad2e2b61d926` contains three distinct actions/criteria:
 1. reorganise Berlin-Brandenburg tariff structure;
@@ -138,16 +138,16 @@ Parent `BE-BSW-P48-U07-A03-ad2e2b61d926` contains three distinct actions/criteri
 - parent `SOURCE_UNIT_RECLASSIFIED_VERSIONED`, zero-count;
 - generate three deterministic exact semantic children preserving wording/lineage.
 
-**Child 1 - tariff-structure reorganisation**
+**Child 1 — tariff-structure reorganisation**
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
 - Exact reason: no zones/products/prices/caps/transition/revenue settlement/funding or affected passenger groups are specified. Tariff simplification can reduce friction but changes revenue and distribution; direction depends on missing design.
 - Competence: joint Berlin/Brandenburg/VBB contracting/funding architecture.
 
-**Child 2 - commuter flows more strongly considered**
+**Child 2 — commuter flows more strongly considered**
 - `terminal_fach_state = NON_EFFECT_DEMAND_PLANNING_AND_DISTRIBUTION_GUARD_REVIEWED`
 - zero-count; use OD/time/capacity data and do not privilege commuters at the expense of non-work trips without evidence.
 
-**Child 3 - free student ticket across the entire Berlin-Brandenburg region**
+**Child 3 — free student ticket across the entire Berlin-Brandenburg region**
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_YOUTH_MOBILITY_AFFORDABILITY_AND_REGIONAL_ACCESS_POTENTIAL / FISCAL_CAPACITY_CAPACITY_EFFECT_AND_TARGETING_DEPENDENT`
 - `evidence_level = HIGH_FOR_DIRECT_FARE_BARRIER_MECHANISM / NET_MOBILITY_AND_DISTRIBUTION_OUTCOME_PENDING`
@@ -156,7 +156,7 @@ Parent `BE-BSW-P48-U07-A03-ad2e2b61d926` contains three distinct actions/criteri
 - Risks/trade-offs: subsidy/fare-revenue replacement, crowding/capacity, benefit to trips that would occur anyway, eligibility/admin and unequal benefit by residence/travel need.
 - Reality check: eligible/use/take-up, new cross-border access/trips, education/social participation where measurable, crowding/capacity, foregone revenue/public subsidy and distribution by income/place/school.
 
-### 11. U07 A04 - Park-and-Ride at city edges
+### 11. U07 A04 — Park-and-Ride at city edges
 
 `BE-BSW-P48-U07-A04-08e54cbed207`:
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`

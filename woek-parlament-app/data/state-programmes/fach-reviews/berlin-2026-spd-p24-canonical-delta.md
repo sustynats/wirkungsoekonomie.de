@@ -1,6 +1,6 @@
-## WÖk AUTHORITATIVE SOURCE-BINDING CORRECTION - Berlin SPD P24 canonical-final delta
+## WÖk AUTHORITATIVE SOURCE-BINDING CORRECTION — Berlin SPD P24 canonical-final delta
 
-This is the finite Fach repair required by #241 `5555017859`. It supersedes #240 `5542647318` **only where that handoff's source identity/text/hash differs from the frozen canonical final programme**. Exact hash-identical atom-level Fach decisions from `5542647318` are reaffirmed below and retain their substantive WÖk fields. No P1-P23 Fach is reopened.
+This is the finite Fach repair required by #241 `5555017859`. It supersedes #240 `5542647318` **only where that handoff's source identity/text/hash differs from the frozen canonical final programme**. Exact hash-identical atom-level Fach decisions from `5542647318` are reaffirmed below and retain their substantive WÖk fields. No P1–P23 Fach is reopened.
 
 Fresh exact-current main before this handoff: `77e67ba08e034ef104c6b02ca9dccd6ee28a105a`.
 
@@ -11,7 +11,7 @@ Canonical party-primary identity:
 - canonical ledger shard on current main: `source-units-p19-p24.json`, blob `0eec05f7a0315147d05026ebf81ccb0bac5d4148`
 - current atom shard: `effect-atoms-p19-p24.json`, blob `bda35c544259042f4eabf19713ee19c165949183`
 
-Scope is **physical P24 only, `BE-SPD-2026-SU-0281` through `BE-SPD-2026-SU-0290` inclusive**. `SU0290` crosses P24→P25 and is consumed exactly once here. `SU0291+` is not authorised. P1-P23 remain protected terminal.
+Scope is **physical P24 only, `BE-SPD-2026-SU-0281` through `BE-SPD-2026-SU-0290` inclusive**. `SU0290` crosses P24→P25 and is consumed exactly once here. `SU0291+` is not authorised. P1–P23 remain protected terminal.
 
 ### 1. Required old→current source relation
 
@@ -43,12 +43,12 @@ Canonical locators are binding:
 ### 2. Structural/current-source zero-count parents
 
 These canonical-final objects are now authoritatively reviewed zero-count:
-- `SU0281` - `Das Sperrmüllproblem endlich lösen` / `71af5cd3...` → `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
-- `SU0285` - `Sichere Mobilität für alle Berliner*innen` / `7ebef20d...` → `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
-- `SU0287` - `Öffentlicher Nahverkehr - das Rückgrat unserer Stadt` / `5629b48c...` → `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
+- `SU0281` — `Das Sperrmüllproblem endlich lösen` / `71af5cd3...` → `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
+- `SU0285` — `Sichere Mobilität für alle Berliner*innen` / `7ebef20d...` → `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
+- `SU0287` — `Öffentlicher Nahverkehr – das Rückgrat unserer Stadt` / `5629b48c...` → `NON_EFFECT_STRUCTURAL_HEADING_REVIEWED`.
 - `SU0282`, `SU0283`, `SU0284`, `SU0286`, `SU0288`, `SU0289`, `SU0290` remain exact source/version containers. Where exact leaves below replace malformed/compound atoms, the container/version parent is zero-count and never an additional effect object.
 
-### 3. `SU0282` - canonical cleanliness block
+### 3. `SU0282` — canonical cleanliness block
 
 Reviewed zero-count source frames:
 - `Berlin ist zu dreckig.` / `43b9cfa19d54b5ab2f93b6647e92d19727e8d0f05e670fcda48f92b45698c3b4` → `NON_EFFECT_PROBLEM_FRAME_REVIEWED`.
@@ -70,10 +70,10 @@ New canonical-final leaf:
   - Evidence: `MEDIUM_FOR_RESOURCE_TO_SERVICE_CAPACITY_MECHANISM / CLEANLINESS_OUTCOME_PENDING`.
   - Guards: waste burden must not collapse into reporting bias; preserve minimum service across districts; account for workforce/travel/collective-agreement constraints and dynamic reassessment. Reality = condition/clearance/service quality by geography plus staff/travel burden, not reallocated headcount alone.
 
-### 4. `SU0283` - Kieztage, doorstep collection, organisation/finance
+### 4. `SU0283` — Kieztage, doorstep collection, organisation/finance
 
 Reaffirm exact hash-identical leaves from `5542647318`:
-- `SU0283-A01` `Sperrmüll-Kieztage weiten wir deutlich aus: In jedem Kiez soll es einmal pro Quartal einen Kieztag geben.` / `29ef221b94efe677641e838288ecb18c3d99c96f849b501cf737aa1414293a4c` → `EXPLICIT_FACH_APPROVED`; existing Kieztage are baseline, only denser/standardised coverage is additional.
+- `SU0283-A01` `Sperrmüll‑Kieztage weiten wir deutlich aus: In jedem Kiez soll es einmal pro Quartal einen Kieztag geben.` / `29ef221b94efe677641e838288ecb18c3d99c96f849b501cf737aa1414293a4c` → `EXPLICIT_FACH_APPROVED`; existing Kieztage are baseline, only denser/standardised coverage is additional.
 - `SU0283-A02` `mit Initiativen entwickeln wir die Kieztage zu Nachbarschaftstagen mit Tauschmöglichkeiten weiter.` / `eba375042a59fdef05afddaf2b03372fc8796cc603d4cc369df31051df0215e2` → `EXPLICIT_FACH_APPROVED`; actual reuse/material recirculation is outcome, not branding/event count.
 - `SU0283-A03` `Wir werden für jeden Haushalt zweimal im Jahr eine Sperrmüllabholung vor der Haustür anbieten.` / `6979e9c8b971a4e0c60bdbdcae75ff61e4d34e4886ef09a62ebe3895b3ddbac2` → `EXPLICIT_FACH_APPROVED`; access/barrier-reduction potential subject to routing/capacity/misuse and reuse design.
 
@@ -88,13 +88,13 @@ New canonical-final spans:
   - code `HOUSEHOLD_WASTE_FEE_FINANCING_COST_INCIDENCE_TARIFF_AND_ADDITIONALITY_UNSPECIFIED`.
   - Exact reason: service cost, tariff/fee change, payer incidence, cross-subsidy, existing fee baseline and budget incidence are absent; net affordability/distribution and financing additionality cannot be bounded.
 
-### 5. `SU0284` - recycling access, enforcement, app/management
+### 5. `SU0284` — recycling access, enforcement, app/management
 
 Reaffirm exact leaves:
 - `SU0284-A01` `Wir verlängern die Öffnungszeiten der BSR- Recyclinghöfe und Sammelstellen` / `7407afb0f125088663fd2b908700d1b2242614adfd8fe10f2ff880a15af73300` → `EXPLICIT_FACH_APPROVED`.
 - `SU0284-A02` `und wollen für stark belastete Bezirke auch neue schaffen.` / `38a27d067747774bdd9e5b3e515c3d859132ce55009bc24a644f849a145ca070` → `EXPLICIT_FACH_APPROVED`.
 - `SU0284-A03` + `A04` become non-counting version fragments; source-exact combined child `Illegale Ablagerungen klären wir schneller auf und verfolgen sie konsequent.` / `3c7da2651418fa3faeb3f4eec421b3424d83c427976a169ff554046c820f6025` → reaffirm `EXPLICIT_FACH_APPROVED`, preserving due-process/proportionality/non-discrimination guards.
-- `SU0284-A05` `Zur besseren Umsetzung setzen wir „Müll-Sheriffs“ in den Ordnungsämtern ein` / `aaec85c53b52191b5f0c21ba421091f35bb1dad87e9b3b625bfa4df72b560c44` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `NEW_ENFORCEMENT_ROLE_POWERS_STAFFING_PROCEDURE_AND_TARGETING_UNSPECIFIED`.
+- `SU0284-A05` `Zur besseren Umsetzung setzen wir „Müll‑Sheriffs“ in den Ordnungsämtern ein` / `aaec85c53b52191b5f0c21ba421091f35bb1dad87e9b3b625bfa4df72b560c44` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `NEW_ENFORCEMENT_ROLE_POWERS_STAFFING_PROCEDURE_AND_TARGETING_UNSPECIFIED`.
 - `SU0284-A06` `und verbessern die Zusammenarbeit mit Polizei und BSR.` / `48702b2615750207e5530ce4b853f0b3008fd5a098dc9588fdff5913cfd9e571` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `INTERAGENCY_COOPERATION_MECHANISM_RESPONSIBILITY_AND_DATA_SHARING_UNSPECIFIED`.
 
 Additional current spans:
@@ -106,7 +106,7 @@ Additional current spans:
   - code `TRANSPARENCY_STEERING_MANAGEMENT_MODEL_DECISION_RIGHTS_DATA_AND_ACCOUNTABILITY_UNSPECIFIED`.
   - Exact reason: model specification, competencies, metrics, data, escalation, staffing and safeguards are absent; it could reduce handoff failures or add coordination overhead.
 
-### 6. `SU0286` - mobility framework
+### 6. `SU0286` — mobility framework
 
 Reviewed zero-count current source frames:
 - `Die aktuelle von den Konservativen geführte Mobilitäts- und Verkehrspolitik in Berlin ist lückenhaft und rückwärtsgewandt.` / `1378cddf27950085476a45f7beba1c8cfa3c9f84a48e40e97aa940ccf1bdd852` → `NON_EFFECT_PARTY_BASELINE_NARRATIVE_REVIEWED`.
@@ -119,7 +119,7 @@ Reviewed zero-count current source frames:
 Current `SU0286-A02` + `A03` become non-counting version fragments. Generate exact child:
 - `Dabei bekennen wir uns ausdrücklich zu den Vorgaben des Mobilitätsgesetzes, vervollständigen und sichern es.` / `c2c5dfe3215bec10f436fc80d8f3f36f33b842ae901ad553ea8151d928d1cfaf` → reaffirm `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `MOBILITY_ACT_COMPLETION_OR_AMENDMENT_PROVISIONS_NOT_SPECIFIED`. Existing law is baseline; no provision/amendment/implementation/funding/enforcement change is named.
 
-### 7. `SU0288` - public transport service standards
+### 7. `SU0288` — public transport service standards
 
 Use **current exact atom text/hash**, not the stale text label in `5542647318`:
 - `SU0288-A01` / `b13bdd3d4544be8ca649b226c886aac9cbc4e0d1c91682ffbf10ffe6286aa6ef` → reaffirm `EXPLICIT_FACH_APPROVED` (300/400 m stop-access standard).
@@ -129,7 +129,7 @@ Use **current exact atom text/hash**, not the stale text label in `5542647318`:
 - `SU0288-A05` / `938c3b5d1bf8410cf43caeaf1a085251f198ad1d6751a799429366f5c29c1c65` → reaffirm `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `AUTONOMOUS_MINIBUS_AUTOMATION_SAFETY_OPERATOR_SERVICE_AND_FALLBACK_DESIGN_UNSPECIFIED`.
 - `SU0288-A06` / `d3c1d6787322d0433f338a169956d49876eee7e21b6a731266f43cffcadd0a27` → `NON_EFFECT_POSITIONING_GOAL_REVIEWED`, zero-count.
 
-### 8. `SU0289` - network accessibility + bus electrification
+### 8. `SU0289` — network accessibility + bus electrification
 
 New canonical-final first sentence:
 - `Die Sanierung und Modernisierung des Netzes, barrierefreie Haltestellen mit Sitzgelegenheiten sowie Zugänge an allen Stationen haben für uns Priorität.` / `957f5713684ad847fcea1db6e93f3003666e79adec56392e007082089ef2367c` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`.
@@ -140,7 +140,7 @@ Reaffirm exact current leaves:
 - `SU0289-A01` `Die Elektrifizierung des Busverkehrs setzen wir fort` / `2cf47093178a26cc9205a65ca4ec6061ab8f66db6f78658b0fbb414d2fbe606f` → `EXPLICIT_FACH_APPROVED`; preserve `CONTINUATION_OF_INHERITED_IMPLEMENTATION` and only attribute additional delivery beyond the inherited BVG path.
 - `SU0289-A02` `und senken damit zugleich den Lärm in der Stadt.` / `3c2eebfc14487ab0461aed21bc3188c6e02169d2c62a691146517798868087d5` → `NON_EFFECT_EXPECTED_OUTCOME_REVIEWED`, zero-count; claimed effect is tested under A01.
 
-### 9. `SU0290` - tram/U-Bahn portfolio; cross-page consumed once
+### 9. `SU0290` — tram/U-Bahn portfolio; cross-page consumed once
 
 Reaffirm current `SU0290-A01`:
 - `Wir treiben den Ausbau der Straßenbahn in allen Bezirken voran` / `50f08fcefb18c43613b2c04ee4ec84439f7c64a21b78bf59ff2d7ff180520178` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `CITYWIDE_TRAM_EXPANSION_ROUTES_DEMAND_COST_SPACE_AND_DELIVERY_UNSPECIFIED`.
@@ -151,8 +151,8 @@ Current `SU0290-A02` becomes a non-counting lifecycle/version parent. Generate e
 
 New canonical tram-portfolio content:
 - `Vorrang hat der Bau der Straßenbahnstrecken` / `020da75857420806cb68400ce213331d5308c1342a8f319c36fa3b3ef1393fdc` → `NON_EFFECT_PORTFOLIO_PRIORITY_FRAME_REVIEWED`, zero-count.
-- `Turmstraße - Urban Tech Republic - Schumacherquartier und die Verlängerung nach Spandau` / `e358a2cd4b627637ea54c9e615247f11fb22667a566f73f32af7700eb6f8a42c` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `TRAM_TURMSTRASSE_UTR_SCHUMACHERQUARTIER_SPANDAU_CURRENT_BUSINESS_CASE_COST_STAGE_AND_COUNTERFACTUAL_NOT_BOUND_IN_SOURCE`. Named geography alone does not bind current stage/design/demand/capacity/cost/finance/street-space/construction effects or alternatives.
-- `die Strecken Warschauer Straße - Hermannplatz` / `e2e47a38699588dba3c656bd5ed0bd04531a7bc3d57a0acabb8d5544fc47cfe2` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `TRAM_WARSCHAUER_STRASSE_HERMANNPLATZ_CURRENT_BUSINESS_CASE_COST_STAGE_AND_COUNTERFACTUAL_NOT_BOUND_IN_SOURCE`, for the same route-specific missing inputs.
+- `Turmstraße – Urban Tech Republic – Schumacherquartier und die Verlängerung nach Spandau` / `e358a2cd4b627637ea54c9e615247f11fb22667a566f73f32af7700eb6f8a42c` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `TRAM_TURMSTRASSE_UTR_SCHUMACHERQUARTIER_SPANDAU_CURRENT_BUSINESS_CASE_COST_STAGE_AND_COUNTERFACTUAL_NOT_BOUND_IN_SOURCE`. Named geography alone does not bind current stage/design/demand/capacity/cost/finance/street-space/construction effects or alternatives.
+- `die Strecken Warschauer Straße – Hermannplatz` / `e2e47a38699588dba3c656bd5ed0bd04531a7bc3d57a0acabb8d5544fc47cfe2` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `TRAM_WARSCHAUER_STRASSE_HERMANNPLATZ_CURRENT_BUSINESS_CASE_COST_STAGE_AND_COUNTERFACTUAL_NOT_BOUND_IN_SOURCE`, for the same route-specific missing inputs.
 - `Alexanderplatz - Kulturforum.` / `cdb685c5704aecce6fe469ddf29294bbd6da3ca03bd0b4527ecff721f4c0398c` → `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`; `TRAM_ALEXANDERPLATZ_KULTURFORUM_CURRENT_BUSINESS_CASE_COST_STAGE_AND_COUNTERFACTUAL_NOT_BOUND_IN_SOURCE`, for the same route-specific missing inputs.
 
 Current `SU0290-A03` becomes a non-counting multi-project version parent. Reaffirm source-exact mechanically split children from `5542647318`:
@@ -174,7 +174,7 @@ These old handoff objects/phrases are **not in the frozen canonical-final P24 pa
 - generic outer-district mobility-offer sentence.
 - `Oberleitungen, Doppelgelenkbusse auf stark nachgefragten Linien und moderne Straßenbeleuchtung ...` sentence.
 - generic `wirtschaftlich attraktive` route-extension option.
-- U9 Rathaus Steglitz-Lankwitz-Waldsassener Straße feasibility sentence.
+- U9 Rathaus Steglitz–Lankwitz–Waldsassener Straße feasibility sentence.
 - separate U7-to-BER claimed-outcome sentence.
 
 If an archived old deterministic child ID is bound to any of these non-source phrases, mark it stale/void in the current-source projection; do not recycle the ID for current text.

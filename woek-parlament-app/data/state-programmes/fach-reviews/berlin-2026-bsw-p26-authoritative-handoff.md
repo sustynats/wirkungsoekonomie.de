@@ -1,4 +1,4 @@
-## WÖk FACH BATCH - Berlin BSW physical PDF page 26: Sport für alle / Breitensport - source-bound closure + one source-unit repair
+## WÖk FACH BATCH — Berlin BSW physical PDF page 26: Sport für alle / Breitensport — source-bound closure + one source-unit repair
 
 Disjoint Fach continuation after P25 `5452761537`. Frozen artifact unchanged: `BE-AGH-2026-BSW-WAHLPROGRAMM`, SHA-256 `fd6fe2b9fbb69fc5a34451989c2a75feb14e893c172a20d7840bbe94f2161675`, physical PDF P26/66. I re-read the actual rendered P26, not only the generic delegated ledger. The page contains one material source-classification defect: `BE-BSW-P26-U03-0c15cb6fe6cf` is **not wholly NON_EFFECT_CONTEXT**; its final four sentences contain three independent policy constraints/actions plus one outcome/access goal. Generic #313 RNAA/non-effect classification is therefore superseded for this source unit.
 
@@ -6,7 +6,7 @@ Current official baseline guard: Berlin already operates a Sportstättensanierun
 
 No DNS mapping, Recommendation, score or party-wide judgement is generated.
 
-### A. Clean source records - terminal non-counting / de-duplicated
+### A. Clean source records — terminal non-counting / de-duplicated
 
 #### `BE-BSW-P26-U01-A01-7482105f1d59`
 Text: `Sport für alle Sport verbindet Menschen, hält gesund, fördert Integration und schenkt Kindern, Jugendlichen und Erwachsenen Lebensfreude.`
@@ -28,7 +28,7 @@ Keep `NON_EFFECT_CONTEXT_REVIEWED`, but with an explicit source-claim guard.
 The unit is diagnosis/history: alleged neglect, cuts, renovation backlog, annual budget and waiting-list claims. No independent intervention is specified. Do not render its numeric claims as verified baseline. The current Senate SSP figures above differ materially in scope/value.
 
 #### `BE-BSW-P26-U04-8741862a3121`
-`NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING` - `Breitensport fördern`.
+`NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING` — `Breitensport fördern`.
 
 #### `BE-BSW-P26-U05-A01-3637237b5a0c`
 Text: `Das BSW will den Breitensport gezielt und nachhaltig fördern, damit aus Berlin wieder Spitzensportler hervorgehen können, die sich international behaupten.`
@@ -38,17 +38,17 @@ Text: `Das BSW will den Breitensport gezielt und nachhaltig fördern, damit aus 
 Exact reason: broad funding/promotion goal without a distinct instrument; it overlaps the concrete club-support action in repaired U03 and the neighbourhood-offer expansion in U06-A03. The claimed elite-sport pipeline is an expected outcome, not a separate effect object.
 
 #### `BE-BSW-P26-U05-A02-d77913a6c675`
-Text: `Eine starke Basis schafft starke Spitze - durch gute Trainingsbedingungen, qualifizierte Trainer und moderne Anlagen wachsen Talente natürlich heran und erhalten echte Chancen.`
+Text: `Eine starke Basis schafft starke Spitze – durch gute Trainingsbedingungen, qualifizierte Trainer und moderne Anlagen wachsen Talente natürlich heran und erhalten echte Chancen.`
 
 `terminal_fach_state = NON_EFFECT_CAUSAL_RATIONALE_AND_EXPECTED_OUTCOME_CLAIM_REVIEWED`
 
 Exact reason: describes a causal theory/desired conditions but does not add a separate budget, programme, staffing, facility or allocation lever beyond surrounding actions. Do not count `Spitzensportler`/talent emergence as proven outcome.
 
 #### `BE-BSW-P26-U06-A01-47375e22a79d`
-`NON_EFFECT_TARGET_GROUP_AND_BEHAVIOURAL_GOAL_REVIEWED` - children/youth should move more and spend less time at screens; goal, no independent instrument.
+`NON_EFFECT_TARGET_GROUP_AND_BEHAVIOURAL_GOAL_REVIEWED` — children/youth should move more and spend less time at screens; goal, no independent instrument.
 
 #### `BE-BSW-P26-U06-A02-c2a89e31519d`
-`NON_EFFECT_PROBLEM_AND_ACTIVITY_GOAL_REVIEWED` - more movement outdoors/in halls; desired state, no independent intervention.
+`NON_EFFECT_PROBLEM_AND_ACTIVITY_GOAL_REVIEWED` — more movement outdoors/in halls; desired state, no independent intervention.
 
 #### `BE-BSW-P26-U06-A04-f796c6ca6d99`
 Text: `So fördern wir Gesundheit, Disziplin und Gemeinschaft von klein auf.`
@@ -59,7 +59,7 @@ Exact reason: claimed consequence of the neighbourhood-offer action U06-A03. Pre
 
 ### B. Explicit clean effect object
 
-#### `BE-BSW-P26-U06-A03-2cde8d500033` - expand low-threshold neighbourhood sport offers (football/swimming/athletics)
+#### `BE-BSW-P26-U06-A03-2cde8d500033` — expand low-threshold neighbourhood sport offers (football/swimming/athletics)
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_PHYSICAL_ACTIVITY_ACCESS_AND_YOUTH_PARTICIPATION_POTENTIAL / CAPACITY_ACCESS_AND_UPTAKE_DEPENDENT`
@@ -73,7 +73,7 @@ Exact reason: claimed consequence of the neighbourhood-offer action U06-A03. Pre
 - Reality check: additional usable participant-hours, take-up/retention by underserved groups, waitlists, travel/fee barriers, facility utilisation, safeguarding/incidents, activity/health indicators where proportionate and privacy-safe.
 - `time_horizon = SHORT_TO_MEDIUM_EX_ANTE_WITH_RECHECK`.
 
-### C. Required deterministic source repair - `BE-BSW-P26-U03-0c15cb6fe6cf`
+### C. Required deterministic source repair — `BE-BSW-P26-U03-0c15cb6fe6cf`
 
 Current ledger marks the whole 1,076-character paragraph `NON_EFFECT_CONTEXT`. Actual rendered source contains policy-bearing final sentences. Reclassify original U03 as:
 
@@ -122,7 +122,7 @@ Once the U03 sentence children are materialised exactly:
 
 Clean records on P26 are already Fach-terminal by this comment. The only P26 residual before CodeX materialisation is the deterministic U03 parent→child repair, with **4 explicitly Fach-decided final clauses plus non-counting diagnostic children**.
 
-Protected BSW physical envelope can advance through P26 only after P22-P25 pending handoffs and this P26 repair are losslessly materialised. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
+Protected BSW physical envelope can advance through P26 only after P22–P25 pending handoffs and this P26 repair are losslessly materialised. BSW remains programme-open; Berlin remains `3/12 programme-terminal / 9/12 programme-open`.
 
 ### CodeX handoff
 

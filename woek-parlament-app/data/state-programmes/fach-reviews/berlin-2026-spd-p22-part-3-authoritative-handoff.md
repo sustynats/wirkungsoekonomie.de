@@ -1,13 +1,13 @@
-## WÖk FACH BATCH - Berlin SPD canonical-final P22 / Teil 3: öffentlicher Raum · Wasser · Hitzevorsorge + page closure
+## WÖk FACH BATCH — Berlin SPD canonical-final P22 / Teil 3: öffentlicher Raum · Wasser · Hitzevorsorge + page closure
 
-Disjoint continuation after `5477750046` and `5477758987`. Same canonical final artefact `BE-AGH-2026-SPD-WAHLPROGRAMM`, SHA-256 `379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9`. This closes the remaining physical P22 scope `SU0262-SU0265` and repairs the incorrect non-effect role on canonical `SU0265`.
+Disjoint continuation after `5477750046` and `5477758987`. Same canonical final artefact `BE-AGH-2026-SPD-WAHLPROGRAMM`, SHA-256 `379f8cfe51309c2782c88a74ef06777d9ef0c07d7c256ddf1d9f361111e6ffc9`. This closes the remaining physical P22 scope `SU0262–SU0265` and repairs the incorrect non-effect role on canonical `SU0265`.
 
 ### 1. Public-space roles
 
-- `BE-SPD-2026-SU-0262` - heading `Faire Nutzung des öffentlichen Raums` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`; zero-count.
+- `BE-SPD-2026-SU-0262` — heading `Faire Nutzung des öffentlichen Raums` → `NON_EFFECT_CONTEXT_REVIEWED / STRUCTURAL_HEADING`; zero-count.
 
-#### `BE-SPD-2026-SU-0263-A01` - public-space design for stay/safety plus urban nature
-Source: `Wir gestalten Plätze und Straßen so, dass Menschen dort gern verweilen und sich sicher fühlen - und dass zugleich Lebensräume für Stadtnatur und Tiere entstehen.`
+#### `BE-SPD-2026-SU-0263-A01` — public-space design for stay/safety plus urban nature
+Source: `Wir gestalten Plätze und Straßen so, dass Menschen dort gern verweilen und sich sicher fühlen – und dass zugleich Lebensräume für Stadtnatur und Tiere entstehen.`
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
 - `impact_direction = POSITIVE_INCLUSIVE_PUBLIC_SPACE_AND_URBAN_NATURE_POTENTIAL / SITE_DESIGN_CONFLICT_AND_DELIVERY_DEPENDENT`
@@ -19,7 +19,7 @@ Source: `Wir gestalten Plätze und Straßen so, dass Menschen dort gern verweile
 - Distribution: gender/age/disability, children/older people, low-income and unhoused users, neighbours, active mobility users and urban species/habitats.
 - Reality check: use diversity/dwell time, accessibility, incidents/safety perception by groups, heat/shade where relevant, habitat/ecological indicators and displacement/conflict signals; redesign expenditure is input.
 
-#### `BE-SPD-2026-SU-0264-A01` - expand paddling pools/fountains and central maintenance via Berliner Wasserbetriebe
+#### `BE-SPD-2026-SU-0264-A01` — expand paddling pools/fountains and central maintenance via Berliner Wasserbetriebe
 Source: `Den Zugang zu Wasser verbessern wir mit Planschen und Brunnen, die die Berliner Wasserbetriebe zentral ausbauen und instandhalten.`
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -32,14 +32,14 @@ Source: `Den Zugang zu Wasser verbessern wir mit Planschen und Brunnen, die die 
 - Distribution: heat-exposed neighbourhoods, children, older people, people without private cooling/green access, disability/accessibility and nearby residents.
 - Reality check: uptime, water/hygiene/safety, use, heat-exposure coverage, spatial equity, lifecycle resource/maintenance cost; installation count is input.
 
-### 2. `BE-SPD-2026-SU-0265` - mandatory source-role repair: effect-bearing heat-adaptation portfolio
+### 2. `BE-SPD-2026-SU-0265` — mandatory source-role repair: effect-bearing heat-adaptation portfolio
 
 Canonical source text:
 `Wir stellen eine planvolle Technik der Hitzevorsorge sicher: automatische Bewässerung, Bodensensoren, Bewässerungsmanagement, Verschattung und Hitzeschutzmaßnahmen an Hotspots gehören für uns fest zur Infrastrukturplanung.`
 
 The current delegated classification as `NON_EFFECT_CONTEXT` is substantively wrong: this sentence contains concrete intervention classes. Version the old whole-unit role zero-count and materialise deterministic exact-span children. Do **not** turn the introductory/closing portfolio frame into an additional effect.
 
-#### Child A - adaptive irrigation package
+#### Child A — adaptive irrigation package
 Exact source span: `automatische Bewässerung, Bodensensoren, Bewässerungsmanagement`
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -50,7 +50,7 @@ Exact source span: `automatische Bewässerung, Bodensensoren, Bewässerungsmanag
 - Boundary/noncompensation: automation is not itself water efficiency; total withdrawals and ecological/green survival outcomes must be observed together.
 - Reality check: water use per viable site/tree, soil moisture/vegetation condition, mortality, outage/manual intervention, total system water/energy and hotspot/district distribution.
 
-#### Child B - shading
+#### Child B — shading
 Exact source span: `Verschattung`
 
 - `terminal_fach_state = EXPLICIT_FACH_APPROVED`
@@ -61,7 +61,7 @@ Exact source span: `Verschattung`
 - Distribution: people outdoors, children/older people, people with chronic illness, outdoor workers, low-private-cooling groups and high-heat districts.
 - Reality check: shaded area/time at heat-relevant hours, measured thermal exposure where feasible, use/heat-health contribution, spatial equity and lifecycle cost.
 
-#### Child C - unspecified hotspot heat-protection measures
+#### Child C — unspecified hotspot heat-protection measures
 Exact source span: `Hitzeschutzmaßnahmen an Hotspots`
 
 - `terminal_fach_state = REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`
@@ -81,7 +81,7 @@ Together with P22 Fach batches `5477750046` and `5477758987`, every canonical ph
 
 `BE_SPD_2026_P22_FACH_COMPLETE = PASS_SOURCE_BOUND_AFTER_CANONICAL_FINAL_LEDGER_REPAIR`
 
-Protected SPD physical Fach scope may advance to **P1-P22 only after lossless technical materialisation and SET-WISE residual recomputation**. Fresh source-order Fach frontier then becomes **physical P23, beginning `BE-SPD-2026-SU-0266+`**. Do not reopen P1-P21 or the P21→P22 protected cross-page record.
+Protected SPD physical Fach scope may advance to **P1–P22 only after lossless technical materialisation and SET-WISE residual recomputation**. Fresh source-order Fach frontier then becomes **physical P23, beginning `BE-SPD-2026-SU-0266+`**. Do not reopen P1–P21 or the P21→P22 protected cross-page record.
 
 ### 4. CodeX guard
 
