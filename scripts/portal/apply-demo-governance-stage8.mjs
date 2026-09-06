@@ -8,6 +8,8 @@ import {
 
 const root = process.cwd();
 const skipDemoGovernance = new Set([
+  // Guided course explains assumptions and protection where each result appears.
+  "erleben/impact-controlling-rechner/index.html",
   "erleben/unternehmens-wirkungsprofil/index.html",
   "erleben/wirkungskompass/index.html",
   "erleben/laender-wirkungskompass/index.html",

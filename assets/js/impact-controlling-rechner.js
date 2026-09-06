@@ -7,6 +7,13 @@
   if (!calculations) return;
 
   const presets = {
+    schulkueche: {
+      name: "Schulküche", investment: 6000, annualDirectBenefit: 16200,
+      annualTransformativeBenefit: 0, annualHarm: 1000, annualOperatingCost: 2000,
+      years: 1, discountRate: 5, attribution: 100, deadweight: 0, displacement: 0,
+      uncertainty: 20, dataQuality: 0.8, scores: {mensch: 0, planet: 2, demokratie: 0}, redLine: false,
+      explanation: "Erfundenes Küchenbeispiel: 5.400 kg bereits vergleichsbereinigte Jahresvermeidung × 3 EUR/kg. Keine erneute Deadweight-Bereinigung. Preise, Schäden, Datenqualität und Scores sind Modellannahmen; ein Häkchen liefert keinen unabhängigen Nachweis.",
+    },
     praevention: {
       name: "Präventionsprojekt",
       investment: 1000000,
@@ -110,7 +117,8 @@
   }
 
   function formatScore(valueToFormat) {
-    return valueToFormat > 0 ? `+${valueToFormat}` : String(valueToFormat);
+    const formatted = Number(valueToFormat).toLocaleString("de-DE", {maximumFractionDigits: 2});
+    return valueToFormat > 0 ? `+${formatted}` : formatted;
   }
 
   function applyPreset(preset) {
