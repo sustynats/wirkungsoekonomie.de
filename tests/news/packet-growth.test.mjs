@@ -68,6 +68,30 @@ test('supplied reference catalog comes from the sent packet, never from provider
   assert.deepEqual(suppliedEvidenceIds('Custom media-check prompt without source packet'), {});
 });
 
+test('another real source and growing context yield to evidence before optional new diagrams', () => {
+  const fixture = JSON.parse(fs.readFileSync(new URL('./fixtures/input-limit-regression-20260906.json', import.meta.url)));
+  const arrivals = JSON.parse(fs.readFileSync(new URL('./fixtures/input-limit-growth-20260906.json', import.meta.url)));
+  fixture.sources.push(...arrivals);
+  fixture.claims = claimLedgerFor(fixture.sources, fixture.story_id, '2026-09-06T07:19:32Z');
+  fixture.preanalysis = preAnalyzeStory(fixture);
+  fixture.media_trigger = detectMediaImpactTrigger(fixture);
+  fixture.currentness = { ...fixture.currentness, comparison_limits: 'Neuere Quellen können noch offene Fragen nicht abschließend klären. '.repeat(18) };
+  const before = structuredClone(fixture);
+  const prompt = buildAnalysisPrompt([fixture]);
+  assert.ok(prompt.length <= 39000);
+  assert.match(prompt, /In diesem Durchlauf visuals:null/);
+  assert.match(prompt, /media_impact/);
+  assert.match(prompt, /Politisch symmetrisch prüfen/);
+  assert.match(prompt, /drei voneinander unabhängige Pflichtgates/);
+  const packet = expandPacketTransport(JSON.parse(prompt.split('UNTRUSTED_SOURCE_DATA_BEGIN\n')[1].split('\nUNTRUSTED_SOURCE_DATA_END')[0])[0]);
+  assert.equal(packet.sources.length, 21);
+  assert.deepEqual(packet.sources.map(source => source.url), fixture.sources.map(source => source.url));
+  assert.equal(packet.claims.length, fixture.claims.length);
+  assert.deepEqual(packet.related_ticker_history, fixture.related_ticker_history);
+  assert.deepEqual(packet.currentness, fixture.currentness);
+  assert.deepEqual(fixture, before);
+});
+
 test('dense cells preserve explicit null, absent fields, exact evidence ownership and legacy packets', () => {
   const story = { sources: [
     { url: 'https://example.org/one', provenance: null, evidence_segments: [{ evidence_id: 'a', excerpt: 'Die Aussage wird ausdrücklich nicht bestätigt.' }] },

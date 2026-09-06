@@ -1049,6 +1049,7 @@ export async function runWirkungsticker(options = {}) {
         report.model ||= aiResult.model;
         report.ai_calls += Number(aiResult.request_attempts || 1);
         report.prompt_chars_sent += Number(aiResult.prompt_chars || 0);
+        report.optional_visuals_deferred = Number(report.optional_visuals_deferred || 0) + Number(Boolean(aiResult.optional_visuals_deferred));
         report.ai_batches_completed += 1;
         const estimated = costFromUsage(aiResult, estimateUsage(aiResult.prompt_chars, aiResult.answer_chars, aiResult.model, modelRates(aiResult.model)));
         report.input_tokens += estimated.input_tokens;

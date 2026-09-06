@@ -13,6 +13,7 @@
 - Vergleichshistorie wird ebenso verlustfrei tabellarisch transportiert. Wiederholte Herkunftsangaben, Daten und gleichlautende Hinweise zur begrenzten Belegauswahl werden nur einmal übermittelt; Abweichungen bleiben ausdrücklich bestehen.
 - Quellen, Claims, Herkunft, Widersprüche und bestehende Artikel werden nicht gelöscht. Die bereits vorhandene Auswahl unveränderter Textstellen bleibt transparent begrenzt; keine zusätzlichen Artikelabrufe oder KI-Dienste wurden eingeführt.
 - Kurze Verweise werden zusätzlich gegen die tatsächlich übertragene Belegauswahl geprüft. Die erlaubten Kennungen stammen lokal aus dem gesendeten Paket, niemals aus einer Behauptung des Modells. Ein zwar im ursprünglichen Dokument vorhandener, aber nicht übertragener Absatz wird durch einen geratenen Verweis nicht zum Beleg.
+- Im Lauf `34018660229` war die Wahlakte auf 21 Quellen angewachsen und überschritt die Datengrenze erneut. Für solche Fälle baut die Pipeline den Prompt einmal lokal ohne die umfangreichen Vorgaben für **neue optionale Diagramme** auf (`visuals:null`). Alle Quellen, Claims, Vergleichshistorie, Fakten-, Folgen-, Mediencheck und Pflichtgates bleiben erhalten. Es entsteht kein zweiter kostenpflichtiger Aufruf. Passt auch dieser quellenpriorisierte Auftrag nicht, bleibt der bisherige sichere Hold bestehen. Normale Aufträge behalten ihre Diagrammlogik.
 - Die Paketversion wird angehoben, sodass alte Prüfcaches nicht versehentlich den korrigierten Eingang überspringen. Historische Pakete bleiben für Audits dekodierbar.
 
 ## Grenzen und Nachweis

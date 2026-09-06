@@ -812,7 +812,7 @@ export function analysisInputFor(stories) {
   }));
 }
 
-export function buildAnalysisPrompt(stories) {
+export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
   const input = analysisInputFor(stories);
   const lines = [
     "Du bist der bereits bestehende quellengebundene WÖk-Analysedienst. Analysiere die folgenden vorgefilterten Story-Cluster.",
@@ -845,8 +845,9 @@ export function buildAnalysisPrompt(stories) {
     "Verbindliches Belegformat: Quellen enthalten evidence_segments mit unveränderlichem evidence_id und excerpt. In event_claims.evidence gib ausschließlich {evidence_id:...} mit einer tatsächlich gelieferten ID aus. Kein Zitat abschreiben, keine URLs oder IDs erfinden. Bei Bedarf mehrere Textstellen-IDs auswählen, die zusammen die konkrete Behauptung tragen. Der Server löst sie vor der Prüfung exakt auf. evidence_segments ersetzen article_excerpt als bereitgestellten Quellentext. Sämtliche Lesertexte einschließlich event_claims.claim auf Deutsch; fremdsprachige Originalbelege nicht übersetzen.",
     "evidence_selection.incomplete kennzeichnet eine begrenzte Textstellenauswahl, keinen vollständig gelesenen Artikel. Keine Vollständigkeit behaupten; fehlt Beleg oder Kontext für eine Kernbehauptung, insufficient_evidence statt Ergänzen aus Vermutung.",
     ...MEDIA_PROMPT_RULES,
-    ...VISUALS_PROMPT_RULES,
-    "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar.",
+    ...(includeVisuals ? [...VISUALS_PROMPT_RULES,
+      "Wenn ein Visual einen belegten Fakt aus article_excerpt nutzt, muss derselbe Fakt auch in source_summary stehen. So bleibt die Belegkette nach dem absichtlich flüchtigen Artikelabruf prüfbar."]
+      : ["Quellenumfang: In diesem Durchlauf visuals:null; keine neue optionale Grafik erzeugen. Quellen, Sachverhalt, Fakten-, Folgen- und Mediencheck sowie sämtliche Evidenz- und Qualitätsregeln bleiben vollständig verbindlich."]),
     "Gib ausschließlich valides JSON ohne Markdown aus. Schema:",
     "Auch Ablehnungen bleiben IMMER innerhalb des äußeren Objekts {analyses:[...]}. Bei genau einer Story enthält analyses genau einen Eintrag; niemals den einzelnen Eintrag als Wurzelobjekt zurückgeben.",
     JSON.stringify({
@@ -889,7 +890,7 @@ export function buildAnalysisPrompt(stories) {
           duplicate_status: "new_story|material_update|duplicate_without_new_information",
           rationale: "string",
         },
-        visuals: VISUALS_SCHEMA,
+        visuals: includeVisuals ? VISUALS_SCHEMA : null,
         media_impact: MEDIA_IMPACT_SCHEMA,
         publication_recommendation: true,
       }],
@@ -898,7 +899,15 @@ export function buildAnalysisPrompt(stories) {
     "",
     "UNTRUSTED_SOURCE_DATA_END",
   ];
-  lines[lines.length - 2] = fitAnalysisInput(input, 39000 - lines.join("\n").length);
+  try {
+    lines[lines.length - 2] = fitAnalysisInput(input, 39000 - lines.join("\n").length);
+  } catch (error) {
+    // Optional new illustrations must not crowd out a complete source catalog.
+    // Retry prompt assembly locally, never the provider. No required rule or
+    // source record is removed, and genuinely oversized input still fails safe.
+    if (includeVisuals && error.message === "AI_INPUT_TOO_LARGE") return buildAnalysisPrompt(stories, { includeVisuals: false });
+    throw error;
+  }
   return lines.join("\n");
 }
 
@@ -994,6 +1003,7 @@ export async function callWoekAi(stories, options = {}) {
   return {
     analyses: parsed.analyses,
     supplied_evidence_ids: suppliedIds,
+    optional_visuals_deferred: prompt.slice(0, prompt.indexOf("UNTRUSTED_SOURCE_DATA_BEGIN")).includes("Quellenumfang: In diesem Durchlauf visuals:null"),
     provider: String(payload.provider || "Oracle WOeK-KI API"),
     model: String(payload.model || "unknown"),
     mode: String(payload.mode || "unknown"),
