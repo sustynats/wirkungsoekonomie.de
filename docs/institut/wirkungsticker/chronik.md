@@ -26,10 +26,6 @@ Mehrquellenakten, belegte Medienbefunde und redaktionelle Analysen wurden erweit
 
 Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/8c1018c55f
 
-### 2026-09-06 · Warteschlange und Betriebsbeobachtung
-Technische Wiederholungen, fehlende KI-Entscheidungen und Budgetpriorisierung werden getrennt; die Institutsakte wird nachgetragen.
-
-Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/4141e9b3c9
 
 ## Aufgaben und Arbeitsstände
 
@@ -105,14 +101,6 @@ Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/4141e9b3c9
 - Abnahmekriterium: Nur konkrete kommunikative Handlungen prüfen; keine pauschale Medien- oder Personenbewertung.
 - Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/8c1018c55f
 
-### TIC-09 · Warteschlange und Kostensteuerung nachführen
-- Arbeits-/Belegdatum: 2026-09-06
-- Status: Erledigt
-- Verantwortlich: Natalie Weber
-- Auftrag: Technische Fehler, redaktionelle Ablehnung und Kapazitätsgrenzen unterscheiden.
-- Ergebnis/Arbeitsstand: Reparatur-Commits trennen fehlende KI-Entscheidungen und steuern Wiederholungen.
-- Abnahmekriterium: Budgetgrenzen bleiben verbindlich; keine pauschale Zusage störungsfreien Betriebs.
-- Beleg: https://github.com/sustynats/wirkungsoekonomie.de/commit/4141e9b3c9
 
 ### TIC-10 · Redaktionelle Qualität und Korrekturen laufend prüfen
 - Arbeits-/Belegdatum: 2026-09-06

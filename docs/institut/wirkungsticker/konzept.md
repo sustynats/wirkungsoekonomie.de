@@ -14,9 +14,9 @@ Die Quellenzusammenfassung beschreibt den gesicherten Ausgangspunkt. Der Faktenc
 Wirkung ist eine tatsächliche Zustandsveränderung. Potenzial und Risiko sind Erwartungen unter Unsicherheit. SDGs und gegebenenfalls DNS sind Referenzräume; ein Zielbezug beweist keine Wirkung. SDG+ ist eine eigene WÖk-Erweiterung. Nichtkompensation schützt harte Grenzen, Reverse Merit Order richtet Aufmerksamkeit zuerst auf kritische negative Wirkungen. Politische Prozesse werden unter Anerkennung vorhandener staatlicher Prüfverfahren eingeordnet.
 
 ## Rückkopplung
-Neue Evidenz kann eine begründete Korrektur auslösen. Nutzerfeedback hilft, Darstellungen und Prüfbedarf zu verbessern. Es ersetzt weder Fachprüfung noch repräsentative Forschung. Reporting zeigt Veröffentlichungen und Betriebszustände; Rückkopplung bedeutet eine daraus abgeleitete, dokumentierte Änderung. Die erste Umfrage ist deshalb mit dem Tickerprojekt verbunden.
+Neue Evidenz kann eine begründete Korrektur auslösen. Nutzerfeedback hilft, Darstellungen und Prüfbedarf zu verbessern. Es ersetzt weder Fachprüfung noch repräsentative Forschung. Reporting zeigt Veröffentlichungen und Arbeitsstände; Rückkopplung bedeutet eine daraus abgeleitete, dokumentierte Änderung. Die erste Umfrage ist deshalb mit dem Tickerprojekt verbunden.
 
-## Technische Grenzen
+## Schutz privater Rückmeldungen
 Personenbezogene Umfrageantworten und Freitexte gehören nicht in öffentliche Projektakten. Dieser Nachtrag enthält ausschließlich öffentlich freigegebene Projektdokumentation.
 ## Quellen und Ergebniszugänge
 
