@@ -5,7 +5,17 @@ import {instituteProjects as data,projectLabels,statusLabels,dateLabel,renderIns
 const revisions=JSON.parse(fs.readFileSync('content/institut/source-revisions.json','utf8')).references;
 const referenceUrl = url => revisions[url]?.url || url;
 const list = values => `<ul>${values.map(v=>`<li>${e(v)}</li>`).join('')}</ul>`;
-const inline = text => e(text).replace(/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g,(_,label,url)=>`<a href="${referenceUrl(url)}">${label}</a>`).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+function inline(text) {
+  const format=value=>e(value).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+  const pattern=/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)|(https:\/\/[^\s)<]+)/g;
+  let html='',cursor=0;
+  for(const match of text.matchAll(pattern)) {
+    const url=match[2]||match[3];
+    html+=format(text.slice(cursor,match.index))+`<a href="${e(referenceUrl(url))}">${e(match[1]||'Quelle öffnen')}</a>`;
+    cursor=match.index+match[0].length;
+  }
+  return html+format(text.slice(cursor));
+}
 function markdown(text) {
   return text.replace(/\n(#{1,6} )/g,'\n\n$1').split(/\n\n+/).map(block=>{
     if(block.startsWith('# ')) return '';
