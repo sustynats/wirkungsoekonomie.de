@@ -41,6 +41,13 @@ Der öffentliche Link wird anhand der tatsächlich ausgelieferten Umfrage-ID und
 Revision geprüft. Status, Abstimmung und Ergebnis-Sichtbarkeit kommen dagegen
 bei jedem Aufruf direkt von der API; Pausieren wirkt sofort auf die Stimmabgabe.
 
+Seit 6. September liest auch die Übersicht den Status ihrer veröffentlichten
+Umfragen direkt aus der öffentlichen API, zusätzlich beim Zurückkehren auf die
+Seite. Dafür werden keine Abstimmungskennungen oder Anmeldedaten übertragen.
+Bei API-Ausfall verweist die Anzeige zur Statusprüfung auf die Umfrageseite,
+statt einen veralteten Snapshot als aktuell auszugeben. Ohne JavaScript bleibt
+der zuletzt veröffentlichte Katalogstand lesbar.
+
 Ein API-Ausfall veröffentlicht weder Entwürfe noch einen leeren Ersatzbestand.
 Der letzte gültige öffentliche Snapshot bleibt erhalten; die Abstimmung zeigt
 eine Fehlermeldung und erfindet keine Ergebnisse. Die API ist nicht vom

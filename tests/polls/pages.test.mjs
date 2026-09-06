@@ -37,6 +37,12 @@ test('catalog sanitizes counts/identifiers and never publishes drafts',()=>{
   assert.throws(()=>sanitizeCatalog({ok:false,polls:[]}));
   const removed=sanitizeCatalog({ok:true,schema_version:1,polls:[]},{polls:[poll]});assert.deepEqual(removed.retired_slugs,[poll.slug]);
 });
+test('overview exposes stable slugs for live status without vote identifiers',()=>{
+  const html=indexPage(root,[poll]);
+  assert.match(html,/data-poll-list-slug="wirkungsticker-feedback"/);
+  assert.match(html,/data-poll-list-status aria-live="polite">Aktiv/);
+  assert.doesNotMatch(html,/anonymous_vote_identifier|X-Poll-Vote-Token/);
+});
 test('deleted public surveys leave an empty noindex tombstone, archives leave index',()=>{
   assert.doesNotMatch(retiredPage(root,poll.slug),new RegExp(seed.title));
   assert.doesNotMatch(indexPage(root,[{...poll,status:'archived',effective_status:'archived'}]),/wirkungsticker-feedback/);
