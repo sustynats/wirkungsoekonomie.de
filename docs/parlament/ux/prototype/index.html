@@ -4,132 +4,178 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Wirkungsportal Parlament — Prototyp Portalstart</title>
+<title>Wirkungsportal Parlament — Prototyp</title>
 <link rel="stylesheet" href="prototype.css">
 </head>
 <body>
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
-<div class="demo-banner">Design-Prototyp (Claude-Lane) · Alle Fallinhalte sind synthetische Demonstrationsbeispiele, keine echten Analysen.</div>
+<div class="demo-banner">Gestaltungsprototyp — alle Fälle synthetisch, keine realen parlamentarischen Vorgänge.</div>
 
 <div class="trust-band">
   <div class="container">
-    <span><strong>Herausgegeben vom Institut für Wirkungsökonomie</strong> · Fachliche Leitung: Natalie Weber</span>
-    <span>Parteiunabhängig · <a href="#unabhaengigkeit">Methodik offen</a> · Quellen prüfbar</span>
+    <span><strong>Institut für Wirkungsökonomie</strong> · Herausgeber</span>
+    <span>Parteiunabhängig · Methodik öffentlich · Quellen prüfbar</span>
   </div>
 </div>
 
 <header class="site-head">
   <div class="container">
-    <a class="brand" href="index.html">Wirkungsportal Parlament
-      <small>Bundespolitik verstehen · Wirkungen prüfen · Entscheidungen rückkoppeln</small>
-    </a>
+    <a class="brand" href="index.html">Wirkungsportal<small>Parlament</small></a>
     <nav class="main-nav" aria-label="Hauptnavigation">
-      <a href="#diese-woche" aria-current="page">Anstehend</a>
+      <a href="#anstehend" aria-current="page">Bevorstehend</a>
       <a href="entscheidung-beispiel.html">Entscheidungen</a>
-      <a href="#" aria-disabled="true">Historie</a>
-      <a href="#" aria-disabled="true">Monitor</a>
-      <a href="#" aria-disabled="true">Dialog</a>
-      <a href="#unabhaengigkeit">Methodik &amp; Transparenz</a>
+      <a href="rueckblick-beispiel.html#historie">Historie</a>
+      <a href="rueckblick-beispiel.html#monitor">Monitor</a>
+      <a href="dialog-beispiel.html">Dialog</a>
+      <a href="#methodik">Methodik</a>
     </nav>
   </div>
 </header>
 
 <main id="main">
 
+  <!-- Bühne -->
   <section class="hero">
     <div class="container">
-      <p class="kicker">Deutscher Bundestag · Wirkungsradar</p>
-      <h1>Politik entscheidet über Maßnahmen. Wir schauen darauf, was sie bewirken.</h1>
-      <p class="lede">Im Bundestag werden Gesetze, Haushalte und Anträge beraten. Der Wirkungscheck betrachtet nicht nur, was beschlossen werden soll, sondern welche Zustände sich dadurch verändern könnten, welche Risiken bestehen — und woran später erkennbar wäre, ob die Annahme trägt.</p>
-      <p class="norm">Bewertet wird anhand der SDGs, der Agenda 2030 und der transparent ausgewiesenen WÖk-Erweiterung SDG+ im Wirkungsraum Mensch, Planet und Demokratie. SDG+ ist keine offizielle UN-Kategorie.</p>
-      <p style="margin-top:1.4rem"><a class="btn btn--gold" href="#diese-woche">Was steht als Nächstes an?</a>
-         <a class="btn" style="border-color:var(--ivory);color:var(--ivory)" href="entscheidung-beispiel.html">Beispiel ansehen: eine Entscheidungsseite</a></p>
-    </div>
-  </section>
-
-  <section class="section" id="diese-woche">
-    <div class="container">
-      <p class="kicker">Diese Woche im Bundestag</p>
-      <h2>Entscheidungen mit hoher Wirkungsrelevanz</h2>
-      <p>Nicht jede Abstimmung erhält einen vollständigen Wirkungscheck. Welche Vorgänge wir vertieft prüfen, entscheidet ein veröffentlichter Wirkungsrelevanz-Standard — <a href="#unabhaengigkeit">warum prüfen wir dieses Vorhaben?</a></p>
-
-      <div class="decision-grid">
-        <article class="card decision-card">
-          <span class="chip chip--demo">Synthetischer Beispielfall</span>
-          <h3>Verwaltungsleistungen digital beantragen</h3>
-          <p class="orig">Beispielentwurf eines Gesetzes zur digitalen Antragstellung (fiktiv)</p>
-          <div class="meta">
-            <span class="chip chip--phase">Im Ausschuss</span>
-            <span class="chip">2. Beratung erwartet: KW 38</span>
-            <span class="chip chip--relevanz">Sehr hohe Wirkungsrelevanz</span>
-          </div>
-          <p style="font-size:.9rem">Vollständiger Wirkungscheck freigegeben · <span class="rec rec--bedingungen">Wirkungslogik unter Bedingungen tragfähig</span></p>
-          <div class="cta-row">
-            <a class="btn btn--primary" href="entscheidung-beispiel.html#sechzig">60 Sekunden</a>
-            <a class="btn" href="entscheidung-beispiel.html#interaktiv">Interaktiv prüfen</a>
-            <a class="btn" href="entscheidung-beispiel.html#dossier">Fachdossier</a>
-          </div>
-        </article>
-
-        <article class="card decision-card">
-          <span class="chip chip--demo">Synthetischer Beispielfall</span>
-          <h3>Förderprogramm für kommunale Klimaanpassung</h3>
-          <p class="orig">Beispielantrag zur Aufstockung eines Förderprogramms (fiktiv)</p>
-          <div class="meta">
-            <span class="chip chip--phase">1. Beratung</span>
-            <span class="chip">Termin: noch nicht angesetzt</span>
-            <span class="chip chip--relevanz">Hohe Wirkungsrelevanz</span>
-          </div>
-          <p style="font-size:.9rem">Wirkungsbrief in Arbeit · <span class="chip">Analyse-Status: FACT_CHECK</span></p>
-          <div class="cta-row">
-            <a class="btn btn--primary" href="#" aria-disabled="true">60 Sekunden — folgt</a>
-            <a class="btn" href="#" aria-disabled="true">Radarhinweis</a>
-          </div>
-        </article>
-
-        <article class="card decision-card">
-          <span class="chip chip--demo">Synthetischer Beispielfall</span>
-          <h3>Berichtspflichten für Plattform-Empfehlungssysteme</h3>
-          <p class="orig">Beispielentwurf zu Transparenzpflichten (fiktiv)</p>
-          <div class="meta">
-            <span class="chip chip--phase" data-status="unverified">Status wird verifiziert</span>
-            <span class="chip chip--neu">Neu im Radar</span>
-            <span class="chip chip--relevanz">Wirkungsrelevanz: wird geprüft</span>
-          </div>
-          <p style="font-size:.9rem">Radarhinweis · noch keine Analyse</p>
-          <div class="cta-row"><a class="btn" href="#" aria-disabled="true">Beobachten</a></div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--ivory">
-    <div class="container">
-      <p class="kicker">Eine Lernschleife, fünf Säulen</p>
-      <h2>Vorher verstehen. Entscheidung prüfen. Nachher messen. Aus Wirkung lernen.</h2>
-      <div class="grid-2" style="margin-top:1.2rem">
-        <div class="card"><h3>1 · Wirkungsradar</h3><p style="font-size:.9rem;margin:0">Was steht parlamentarisch an — und warum ist es wirkungsrelevant?</p></div>
-        <div class="card"><h3>2 · Wirkungscheck</h3><p style="font-size:.9rem;margin:0">Was könnte eine Entscheidung bewirken? Wirkpfade, Risiken, Evidenz, Empfehlung.</p></div>
-        <div class="card"><h3>3 · Wirkungsdialog</h3><p style="font-size:.9rem;margin:0">Was halten Parlament und Öffentlichkeit für wichtig? Präferenzen — kein Wirkungsnachweis.</p></div>
-        <div class="card"><h3>4 · Historische Checks</h3><p style="font-size:.9rem;margin:0">Was wurde früher entschieden — was war damals bekannt, was wissen wir heute?</p></div>
-        <div class="card"><h3>5 · Wirkungsmonitor</h3><p style="font-size:.9rem;margin:0">Was ist nach der Entscheidung tatsächlich eingetreten? Erwartung, Beobachtung, Abweichung.</p></div>
-        <div class="card" style="background:var(--navy-ink);border-color:var(--navy)"><h3 style="color:var(--ivory)">→ zurück ins Radar</h3><p style="font-size:.9rem;margin:0;color:#cfd3e2">Erkenntnisse fließen in die nächste Analyse. Politische Systeme können lernen.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--navy" id="unabhaengigkeit">
-    <div class="container">
-      <p class="kicker">Unabhängigkeit</p>
-      <h2>Parteiunabhängig. Methodisch offen. Quellenbasiert.</h2>
-      <div class="grid-2">
+      <div class="stage">
         <div>
-          <p>Das Institut für Wirkungsökonomie bewertet keine Parteien und keine Abgeordneten. Wir untersuchen politische Entscheidungen anhand derselben veröffentlichten Wirkungslogik — unabhängig davon, wer sie eingebracht hat oder unterstützt.</p>
-          <p>Parteiunabhängig heißt nicht wertfrei: Unsere normative Grundlage ist transparent — SDGs, Agenda 2030 und die WÖk-Erweiterung SDG+ für Mensch, Planet und Demokratie. Keine versteckten Werte, keine wechselnden Maßstäbe von Fall zu Fall.</p>
+          <p class="kicker kicker--light">Bundestag · 21. Wahlperiode</p>
+          <h1>Was verändert eine Entscheidung wirklich?</h1>
+          <p class="lead">Politik beschreibt, was ein Vorhaben erreichen soll. Wir prüfen, was sich dadurch für Menschen, Umwelt und demokratisches Zusammenleben verändern könnte — nachvollziehbar, mit offenen Quellen und benannten Unsicherheiten.</p>
+          <div class="stage-actions">
+            <a class="btn btn--primary" href="#anstehend">Bevorstehende Entscheidungen</a>
+            <a class="btn btn--ghost" href="#methodik">So arbeiten wir</a>
+          </div>
         </div>
+
+        <div class="stage-card">
+          <h3>Nicht nur Ziele — sondern Folgen</h3>
+          <p>Wir trennen, was beabsichtigt ist, was plausibel eintreten kann und was später tatsächlich messbar wird.</p>
+          <p><a href="#methodik">Methodik ansehen</a></p>
+          <hr class="hr" style="margin:1.25rem 0">
+          <h3 style="font-size:1.125rem">Hinweise per E-Mail</h3>
+          <p>Vor wichtigen Abstimmungen ein kurzer Hinweis. Freiwillig, jederzeit kündbar, ohne Öffnungs- oder Klickmessung.</p>
+          <p><a class="btn" href="#" style="width:100%; justify-content:center">Hinweise abonnieren</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Anstehend -->
+  <section class="section" id="anstehend">
+    <div class="container">
+      <p class="kicker kicker--ink">Diese Sitzungswoche</p>
+      <h2>Bevorstehende Entscheidungen</h2>
+      <p class="small muted" style="margin-bottom:1.75rem">Nach Wirkungsrelevanz sortiert — nicht nach politischer Prominenz.</p>
+
+      <article class="decision">
+        <div class="decision__meta">
+          <span class="chip chip--depth">Vollständiger Wirkungscheck</span>
+          <span class="chip chip--phase">Zweite Beratung</span>
+          <span class="chip chip--date">Abstimmung erwartet: Donnerstag</span>
+        </div>
+        <h3>Reform der Verfahren im Wohnungsbau</h3>
+        <p>Verkürzt Genehmigungsschritte und verlagert Prüfungen. Die Wirkung hängt daran, ob Kommunen die Kapazität für die verkürzten Fristen haben — dort liegt die kritischste Annahme.</p>
+        <div class="decision__foot">
+          <span class="verdict verdict--cond">Unter Bedingungen tragfähig</span>
+          <span class="small muted">· Zwei rote Linien geprüft, eine offen</span>
+          <a class="btn" href="entscheidung-beispiel.html">Analyse öffnen</a>
+        </div>
+      </article>
+
+      <article class="decision">
+        <div class="decision__meta">
+          <span class="chip chip--depth">Wirkungsbrief</span>
+          <span class="chip chip--phase">Im Ausschuss</span>
+          <span class="chip chip--date">Termin offen</span>
+        </div>
+        <h3>Finanzierung der Pflegeausbildung</h3>
+        <p>Erhöht Mittel und ändert den Verteilschlüssel. Ob daraus mehr Ausbildungsplätze entstehen, hängt an Trägerkapazität und Praxisanleitung — dazu fehlen belastbare Zahlen.</p>
+        <div class="decision__foot">
+          <span class="verdict verdict--open">Belastbare Empfehlung noch nicht möglich</span>
+          <span class="small muted">· Datenlücke ausgewiesen</span>
+          <a class="btn" href="entscheidung-beispiel.html">Zwischenstand ansehen</a>
+        </div>
+      </article>
+
+      <article class="decision">
+        <div class="decision__meta">
+          <span class="chip chip--depth">Radarhinweis</span>
+          <span class="chip chip--phase">Erste Beratung</span>
+          <span class="chip chip--date">Nächste Woche</span>
+        </div>
+        <h3>Digitale Nachweise im Sozialrecht</h3>
+        <p>Führt digitale Nachweisverfahren ein. Beobachtet wird vor allem, ob ein zugänglicher Weg für Menschen ohne digitale Mittel erhalten bleibt.</p>
+        <div class="decision__foot">
+          <span class="small muted">Noch keine Analyse veröffentlicht — im Radar beobachtet</span>
+          <a class="btn" href="entscheidung-beispiel.html">Warum beobachtet?</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Methodik -->
+  <section class="section section--paper" id="methodik">
+    <div class="container">
+      <p class="kicker">Wie ein Wirkungscheck entsteht</p>
+      <h2>Vorher verstehen. Entscheidung prüfen. Nachher messen.</h2>
+      <p class="lead" style="margin-bottom:2rem">Jede Analyse trennt drei Ebenen — damit erkennbar bleibt, was Tatsache ist, was Annahme und was Bewertung.</p>
+
+      <div class="grid grid--3">
+        <div class="card card--line">
+          <p class="kicker kicker--ink" style="margin-bottom:.4rem">Ebene 1</p>
+          <h3>Sachverhalt</h3>
+          <p>Was genau zur Entscheidung steht, in welcher Fassung — mit Quelle und Datum.</p>
+        </div>
+        <div class="card card--line">
+          <p class="kicker kicker--ink" style="margin-bottom:.4rem">Ebene 2</p>
+          <h3>Wirkungsanalyse</h3>
+          <p>Über welchen Weg Folgen entstehen könnten, wo dieser Weg bricht und welche Evidenz trägt.</p>
+        </div>
+        <div class="card card--line">
+          <p class="kicker kicker--ink" style="margin-bottom:.4rem">Ebene 3</p>
+          <h3>Einordnung</h3>
+          <p>Bewertung am veröffentlichten Referenzrahmen — mit Gegenargument und offenen Fragen.</p>
+        </div>
+      </div>
+
+      <hr class="hr">
+
+      <div class="split">
         <div>
-          <p>Jede zentrale Aussage, Unsicherheit und Empfehlung soll nachvollziehbar und überprüfbar sein: Quellen auf Behauptungsebene, sichtbare Fassungs- und Korrekturhistorie, Gegenprüfung vor Veröffentlichung.</p>
-          <p style="margin:0"><a href="#" style="color:#d8c99a">Wer finanziert das Portal?</a> · <a href="#" style="color:#d8c99a">Wie entsteht ein Wirkungscheck?</a> · <a href="#" style="color:#d8c99a">Korrekturen</a> · <a href="#" style="color:#d8c99a">Fehler melden</a></p>
+          <h3 style="font-family:var(--f-display); font-size:1.375rem; margin-bottom:.75rem">Was nicht einfließt</h3>
+          <ul class="ticks">
+            <li>Partei oder Fraktion der einbringenden Seite</li>
+            <li>Regierungs- oder Oppositionsstatus</li>
+            <li>Erwartete Mehrheiten und Umfragewerte</li>
+            <li>Persönliche Präferenzen einzelner Nutzerinnen und Nutzer</li>
+          </ul>
+          <p class="small muted" style="margin-top:1rem">Dieselbe Sachlage führt zur selben Einordnung — unabhängig davon, wer ein Vorhaben eingebracht hat.</p>
+        </div>
+        <div class="card">
+          <h3>Wir bewerten keine Menschen</h3>
+          <p>Das Portal erstellt keine Ranglisten von Abgeordneten, Fraktionen oder Parteien. Geprüft werden Entscheidungen und ihre Folgen — nicht Personen.</p>
+          <p style="margin-top:.875rem"><a href="#">Unabhängigkeit und Finanzierung</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lernschleife -->
+  <section class="section">
+    <div class="container">
+      <p class="kicker kicker--ink">Nach der Abstimmung</p>
+      <h2>Die Prüfung endet nicht mit dem Beschluss</h2>
+      <div class="grid grid--2" style="margin-top:1.5rem">
+        <div class="card">
+          <h3>Wirkungsmonitor</h3>
+          <p>Für jede Erwartung ist vorab festgelegt, woran sie später erkennbar wäre. Weicht die Beobachtung ab, wird das ausgewiesen — auch wenn es der eigenen Einschätzung widerspricht.</p>
+          <p style="margin-top:.875rem"><a href="rueckblick-beispiel.html#monitor">Monitor ansehen</a></p>
+        </div>
+        <div class="card">
+          <h3>Historische Checks</h3>
+          <p>Was war damals bekannt, was wissen wir heute? Beide Wissensstände bleiben getrennt, damit späteres Wissen nicht rückwirkend als Versäumnis erscheint.</p>
+          <p style="margin-top:.875rem"><a href="rueckblick-beispiel.html#historie">Rückblick ansehen</a></p>
         </div>
       </div>
     </div>
@@ -139,10 +185,32 @@
 
 <footer class="site-foot">
   <div class="container">
-    <div><h4>Wirkungsportal Parlament</h4>Herausgegeben vom Institut für Wirkungsökonomie.<br>Kontakt: wirkungscheck@wirkungsoekonomie.de</div>
-    <div><h4>Transparenz</h4><a href="#unabhaengigkeit">Unabhängigkeit</a><br><a href="#">Methodik &amp; Entscheidungsstandard</a><br><a href="#">Auswahl der Vorgänge</a><br><a href="#">Korrekturen</a></div>
-    <div><h4>Ökosystem</h4><a href="https://wirkungsoekonomie.de">wirkungsoekonomie.de</a><br><a href="https://institut.wirkungsoekonomie.de">Institut</a><br><a href="https://akademie.wirkungsoekonomie.de">Akademie</a></div>
-    <div class="legal">Prototyp — Impressum &amp; Datenschutz folgen der Hauptdomain. Keine Parteifarben, keine Personenbewertung, keine politischen Profile.</div>
+    <div>
+      <p class="claim">Vorher verstehen. Nachher messen.</p>
+      <p class="small" style="color:#8FA0B4; margin:0">Herausgegeben vom Institut für Wirkungsökonomie</p>
+    </div>
+    <div>
+      <h4>Analyse</h4>
+      <a href="#anstehend">Bevorstehend</a>
+      <a href="entscheidung-beispiel.html">Entscheidungen</a>
+      <a href="rueckblick-beispiel.html#historie">Historie</a>
+      <a href="rueckblick-beispiel.html#monitor">Monitor</a>
+    </div>
+    <div>
+      <h4>Transparenz</h4>
+      <a href="#methodik">Methodik</a>
+      <a href="#">Quellen und Evidenz</a>
+      <a href="#">Unabhängigkeit</a>
+      <a href="#">Korrekturen</a>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <a href="dialog-beispiel.html">Wirkungsdialog</a>
+      <a href="mailto:wirkungscheck@wirkungsoekonomie.de">E-Mail schreiben</a>
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+    </div>
+    <p class="legal">Gestaltungsprototyp der Claude-Lane. Synthetische Beispiele, keine realen parlamentarischen Vorgänge. Das Portal ersetzt keine Rechtsberatung und trifft keine politischen Entscheidungen.</p>
   </div>
 </footer>
 </body>
