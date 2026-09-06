@@ -7,3 +7,5 @@ Die responsive Wirkungskarte besteht bereits aus HTML und CSS. Ihr Titel und ihr
 Übersicht und Detailseite verwenden denselben Renderer. Keine doppelte Überschrift, keine duplizierten Kartenbalken; „offen“ bleibt offen. Ein neuer öffentlicher Versionsmarker macht die aktualisierte Darstellung für die Web-App erkennbar. Die Regel greift beim normalen Seitenbuild rückwirkend und für neue Akten, ohne zusätzliche KI-Aufrufe, Bildgenerierung oder Eingriff in Nachrichteninhalt, Bewertungswerte, Versionen und Quellen.
 
 Vier Regressionstests ergänzen die bestehenden Bild-/Overlaytests: fehlende Metadaten, wartende Verarbeitung, ungültige Bild-URLs sowie fehlende Analyse. Sie prüfen echte Überschriften auf beiden Oberflächen und unveränderte Eingangsdaten.
+
+Produktionsprüfung: GitHub-Pages-Lauf 34025416186 erfolgreich. Die öffentliche Sachsen-Anhalt-Detailseite wurde anschließend im Browser geöffnet: neue `.news-story-visual` vorhanden, korrekter Titel, bei 320 Pixeln kein horizontaler Überlauf. Übersicht und Detailseite waren zuvor bei 390 Pixeln visuell geprüft; Planet bleibt offen. Keine Artikeltexte oder Werte verändert.

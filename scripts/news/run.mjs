@@ -35,6 +35,7 @@ import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityFo
 import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
 import { sourceCoverageDegraded } from "./check-run-health.mjs";
 import { operatingCostSummary } from "./operating-cost.mjs";
+import { regionalCoverage } from "./regional-coverage.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const RELEVANCE_FILTER_VERSION = "4.0";
@@ -1240,6 +1241,7 @@ export async function runWirkungsticker(options = {}) {
   report.status = report.operational_status;
   if (report.status === "ok") state.last_successful_run = now;
   report.coverage = coverageReport(enabledSources, [...byId.values()]);
+  report.regional_coverage = regionalCoverage(registry, state, now);
   report.freshness = [...byId.values()].filter((story) => story.listed !== false).map((story) => ({ story_id: story.story_id, published: Boolean(story.published), ...freshnessFor(story, now) }));
   report.freshness_warnings = report.freshness.filter((story) => story.freshness_warning);
   report.followups_due = dueFollowups([...byId.values()].filter((story) => !isMerged(story)), now);

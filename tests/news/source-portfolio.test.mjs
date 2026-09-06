@@ -60,7 +60,7 @@ test("portfolio audit covers all required fields and never recommends a big-bang
   assert.equal(audit.coverage.length, 40);
   assert.ok(audit.coverage.some((entry) => entry.topic === "Biodiversität" && entry.coverage === "critical_gap"));
   assert.ok(audit.changes.length <= 20);
-  assert.equal(audit.changes.filter((entry) => entry.new_role === "A").length, 3);
+  assert.equal(audit.changes.filter((entry) => entry.new_role === "A").length, 5);
   assert.ok(audit.do_not_activate.some((entry) => entry.source === "National Geographic" && entry.role === "E"));
   assert.ok(audit.core_network.length > 0);
   assert.ok(audit.blindspot_network.some((entry) => entry.source_id === "heise-security"));
