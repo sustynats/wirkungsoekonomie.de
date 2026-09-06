@@ -1,8 +1,1390 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-06T14:21:20.533Z",
-  "updated_at": "2026-09-06T14:21:20.533Z",
+  "updated_at": "2026-09-06T15:06:13.347Z",
   "stories": [
+    {
+      "story_id": "wt-2b6f795594997352",
+      "slug": "wohnungsbrand-in-hoyerswerda-akku-von-bohrschrauber-moglicherweise-brandursache-997352",
+      "title": "Wohnungsbrand in Hoyerswerda: Akku von Bohrschrauber möglicherweise Brandursache",
+      "first_seen": "2026-09-06T15:00:51.000Z",
+      "last_updated": "2026-09-06T15:00:51.000Z",
+      "topic": [
+        "Soziales",
+        "Europa",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/bautzen/bautzen-hoyerswerda-kamenz/news-akku-ladestation-,brand-feuerwehr-158.html",
+          "title": "Wohnungsbrand in Hoyerswerda: Akku von Bohrschrauber möglicherweise Brandursache",
+          "summary": "Bei einem Wohnungsbrand in Hoyerswerda ist ein Schaden von rund 120.000 Euro entstanden. Als mögliche Ursache gilt der Akku eines Bohrschraubers. Verletzt wurde niemand. Der Mieter der Wohnung war nicht zu Hause.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T15:00:51.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "456492a05d5ba515a809ee3f9d3bf39f83b405350a88751c25d19ca467da0074",
+          "source_item_id": "745f32d880802354fa195f75e2e414785b865295d27ae2a858508feecfbf7363",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T15:00:51.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2b6f795594997352-claim-01",
+          "story_id": "wt-2b6f795594997352",
+          "claim": "Wohnungsbrand in Hoyerswerda: Akku von Bohrschrauber möglicherweise Brandursache: Bei einem Wohnungsbrand in Hoyerswerda ist ein Schaden von rund 120.000 Euro entstanden. Als mögliche Ursache gilt der Akku eines Bohrschraubers. Verletzt wurde niemand. Der Mieter der Wohnung war nicht zu Hause.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "35ec6bbd8f24be6e487e30fd266ed55448363ba1b7c90b71718b9f4e36e8637b",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-06T15:06:13.347Z",
+      "event_detected_at": "2026-09-06T15:06:13.347Z",
+      "event_id": "event-69ea064495300a0db8f4",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Europa",
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.37245,
+        "detection_delay_minutes": 5.37245,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "19cf4de30a37b93852d6b635d5b1d21076670a240ff018335f3aa5438f18fe8b",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-ecf4b205df1ecac3",
+      "slug": "kriegsfolgen-bombenentscharfung-tausende-kieler-mussen-aus-wohnungen-1ecac3",
+      "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
+      "first_seen": "2026-09-06T07:01:51.000Z",
+      "last_updated": "2026-09-06T14:55:35.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-muessen-aus-wohnungen-38212366.html",
+          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
+          "summary": "In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen. Die Polizei appelliert zur Mithilfe.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:55:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "33c8adea58d1a7159a9d9b19c0af32e917c89c409a0cfc2fece066dd8a61bde1",
+          "source_item_id": "ece9a49829da72c11fef3a399f12cf12fdd576e742a8a144eda9c2bcab100c88",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:55:40.000Z",
+          "ingested_at": "2026-09-06T13:21:40.973Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-aus-sperrgebiet-heraus-38212366.html",
+          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler aus Sperrgebiet heraus",
+          "summary": "In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:52:19.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "202644329857e5dee81ddadb4287ed9a7955f7cf7dfb43d7b7d889ee5da51032",
+          "source_item_id": "c946db1932c185504f03ddedb971240bb53862b58f8f453a6537d35658786e14",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:52:19.000Z",
+          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung-in-kiel-beendet--anwohner-koennen-zurueck-38212366.html",
+          "title": "Kriegsfolgen: Bombenentschärfung in Kiel beendet: Anwohner können zurück",
+          "summary": "In Kiel ist eine Fliegerbombe aus dem Zweiten Weltkrieg entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen mussten ihre Häuser räumen. Nun gibt es Entwarnung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:55:35.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b59bb1e19f2e5d9b672ae4acdf0592b5e0cc7d33881da5ffc906997b8dfb586a",
+          "source_item_id": "653656a949b00ed9e42c323ae6868937447c81fd21b473954801cc16564c7021",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:55:35.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ecf4b205df1ecac3-claim-01",
+          "story_id": "wt-ecf4b205df1ecac3",
+          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen: In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen. Die Polizei appelliert zur Mithilfe.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-ecf4b205df1ecac3-claim-02",
+          "story_id": "wt-ecf4b205df1ecac3",
+          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler aus Sperrgebiet heraus: In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-ecf4b205df1ecac3-claim-03",
+          "story_id": "wt-ecf4b205df1ecac3",
+          "claim": "Kriegsfolgen: Bombenentschärfung in Kiel beendet: Anwohner können zurück: In Kiel ist eine Fliegerbombe aus dem Zweiten Weltkrieg entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen mussten ihre Häuser räumen. Nun gibt es Entwarnung.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "85b8238e18977d0792c22bdb93d9d367c44f554c39ee36e2a1d2e757cf4bdc70",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
+      "event_detected_at": "2026-09-06T07:16:30.989Z",
+      "event_id": "event-c1061c18db8a491c241b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 10.639116666666666,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 469.70596666666665,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "1d352f85432f0def429be00f2b9333e9c20529b523690bf84824e3f38be457f6",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-ed0f00e58dfe544f",
+      "slug": "lawrow-deutschland-will-wieder-krieg-gegen-russland-fe544f",
+      "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
+      "first_seen": "2026-09-06T12:55:53.000Z",
+      "last_updated": "2026-09-06T14:50:00.000Z",
+      "topic": [
+        "Geopolitik",
+        "Wirtschaft",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/lawrow--deutschland-will--wieder-krieg--gegen-russland-38213060.html",
+          "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
+          "summary": "Der russische Außenminister Sergej Lawrow hat Berlin beschuldigt, „wieder Krieg“ gegen Russland zu wollen. Zu dem Drohnenvorfall in Leipzig sagte Lawrow: „Sie haben erklärt, es handele sich um eine russische Drohne, ohne dass jemand versucht hätte, genauer nachzuforschen.“ Er fügte dann laut Berichten russischer Nachrichtenagenturen vom Sonntag hinzu: „Dies ist letztlich der Beginn eines echten Krieges.“",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:55:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "d64a8e9458cf25953334ecad301d45e9ef9501f00cfba69e4d386b9414612a00",
+          "source_item_id": "026ac61d6a9d1c3dcff70ead252cebae67a715a02f31f0cedd18a7ca2d1b6e3a",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:55:53.000Z",
+          "ingested_at": "2026-09-06T13:06:40.348Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/aussenminister-lawrow-deutschland-will-wieder-krieg-mit-russland-100.html",
+          "title": "Spannungen wegen Drohnen-Vorfall - Außenminister Lawrow: Deutschland will \"wieder Krieg\" mit Russland",
+          "summary": "In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:48:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4df30c36ded0f060f530094a86d0e10311bde6deb5acf71aaaf63ca6a00b1c12",
+          "source_item_id": "269ed8644ed67394cccad5baee49607ec9bdee3efcc5d7ce18923bb7a0d24820",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:48:18.000Z",
+          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/lawrow-drohne-leipzig-krieg-russland-100.html",
+          "title": "Lawrow: Deutschland will \"wieder Krieg\" mit Russland",
+          "summary": "Nachdem die Bundesregierung Russland hinter dem versuchten Anschlag am Leipziger Flughafen sieht, reagiert der russische Außenminister: Merz steuere auf eine Kriegserklärung zu.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:50:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "63a193ee3467053cd0c7cfb0f57b18e37967e548a33211afa345afbf10864fc3",
+          "source_item_id": "877bcc90b28b747f61c789104841048e4eedcf80d8ce0de5e985181864df002e",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:50:00.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/europa/lawrow-deutschland-drohnen-100.html",
+          "title": "Lawrow wirft Deutschland vor, Krieg gegen Russland zu führen",
+          "summary": "Die deutschen Vorwürfe im Zusammenhang mit dem versuchten Drohnenangriff am Flughafen Leipzig/Halle hat Russland bereits zurückgewiesen. Nun legt Außenminister Lawrow nach - mit m…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:45:03.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d619bded4c6b597827cc8b1b50d57262f3958544ae45f3d44a9187351daa5ae8",
+          "source_item_id": "c81fd21b860d487b2aecd0bbdacc338c2878ee1c0bc3d0f0f61b5a3fe5c19722",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:45:03.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ed0f00e58dfe544f-claim-01",
+          "story_id": "wt-ed0f00e58dfe544f",
+          "claim": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland: Der russische Außenminister Sergej Lawrow hat Berlin beschuldigt, „wieder Krieg“ gegen Russland zu wollen. Zu dem Drohnenvorfall in Leipzig sagte Lawrow: „Sie haben erklärt, es handele sich um eine russische Drohne, ohne dass jemand versucht hätte, genauer nachzuforschen.“ Er fügte dann laut Berichten russischer Nachrichtenagenturen vom Sonntag hinzu: „Dies ist letztlich der Beginn eines echten Krieges.“",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-ed0f00e58dfe544f-claim-02",
+          "story_id": "wt-ed0f00e58dfe544f",
+          "claim": "Spannungen wegen Drohnen-Vorfall - Außenminister Lawrow: Deutschland will \"wieder Krieg\" mit Russland: In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-ed0f00e58dfe544f-claim-03",
+          "story_id": "wt-ed0f00e58dfe544f",
+          "claim": "Lawrow: Deutschland will \"wieder Krieg\" mit Russland: Nachdem die Bundesregierung Russland hinter dem versuchten Anschlag am Leipziger Flughafen sieht, reagiert der russische Außenminister: Merz steuere auf eine Kriegserklärung zu.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-ed0f00e58dfe544f-claim-04",
+          "story_id": "wt-ed0f00e58dfe544f",
+          "claim": "Lawrow wirft Deutschland vor, Krieg gegen Russland zu führen: Die deutschen Vorwürfe im Zusammenhang mit dem versuchten Drohnenangriff am Flughafen Leipzig/Halle hat Russland bereits zurückgewiesen. Nun legt Außenminister Lawrow nach - mit m…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "32949f7bfd97f20c68819ae4196d12fe882aef8ffd3933b657013b148eb90706",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-06T13:06:40.348Z",
+      "event_detected_at": "2026-09-06T13:06:40.348Z",
+      "event_id": "event-3668bca1040e9350b498",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Wirtschaft",
+          "Finanzen"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.22245,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 119.54998333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "49d7b43a85a32ffaeb9362a7a83230614e87bc38bc37a153ab47714e5d36692a",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-289bcd0083d5984c",
+      "slug": "germany-what-could-change-in-saxony-anhalt-if-the-afd-wins-d5984c",
+      "title": "Germany: What could change in Saxony-Anhalt if the AfD wins?",
+      "first_seen": "2026-09-06T14:44:02.000Z",
+      "last_updated": "2026-09-06T14:44:02.000Z",
+      "topic": [
+        "Soziales",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260906-germany-what-could-change-in-saxony-anhalt-if-the-afd-wins",
+          "title": "Germany: What could change in Saxony-Anhalt if the AfD wins?",
+          "summary": "Voting began in the eastern German state of Saxony-Anhalt on Sunday in a closely watched election. Recent surveys place the AfD at just over 40%, followed by Merz's Christian Democrats (CDU) at 23%. If the AfD wins, \"one of the main things they want to change is the education system. They say they want to reset education,\" our journalist Shirli Stibon explains.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:44:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "fe1c4015c0a7deecdb89e7ee7b13a92bd6fbc0fec72e160b5ad1a7faf706faac",
+          "source_item_id": "06a1a616dfdf1246861b69499c23bde1db463dec0d7fbeac7136bb7761ea6885",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:44:02.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-289bcd0083d5984c-claim-01",
+          "story_id": "wt-289bcd0083d5984c",
+          "claim": "Germany: What could change in Saxony-Anhalt if the AfD wins?: Voting began in the eastern German state of Saxony-Anhalt on Sunday in a closely watched election. Recent surveys place the AfD at just over 40%, followed by Merz's Christian Democrats (CDU) at 23%. If the AfD wins, \"one of the main things they want to change is the education system. They say they want to reset education,\" our journalist Shirli Stibon explains.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "a05e370211cfb9f234faaa5589ce6c1a21ff45d72cc5eb75b266a9eaa79e1cda",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-06T15:06:13.347Z",
+      "event_detected_at": "2026-09-06T15:06:13.347Z",
+      "event_id": "event-4af2e5042adafe6a0fb7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.189116666666667,
+        "detection_delay_minutes": 22.189116666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "31f7be568cae499c5b54f36709a0329498ab8f59f9a1f9f530cbb4a9752c8a52",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-c73edcf9866f078d",
+      "slug": "radikales-regieren-das-sind-die-projekte-der-afd-in-sachsen-anhalt-6f078d",
+      "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+      "first_seen": "2026-09-04T14:25:00.000Z",
+      "last_updated": "2026-09-06T14:39:00.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--das-plant-die-partei-38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T14:25:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "2082ca9531ba29532f8c5a5ef3ca50a475a2412f2ce4b9ee04227279fa380f94",
+          "source_item_id": "71d58d845f32fa965e5cbc74915a41340d0f10de654e54729543f233c5ba4c3b",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T14:25:00.000Z",
+          "ingested_at": "2026-09-04T14:36:55.366Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--was-plant-die-partei--38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T10:20:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1eb77858a97af40626e73ef146ed5373b7e613b5844833e40182cc4e0ac97220",
+          "source_item_id": "3d4f926e1c6d2b8b853bd915faa842a64f4251c0bf645affae0e805c729c8fb5",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T10:20:00.000Z",
+          "ingested_at": "2026-09-05T10:57:29.473Z",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--was-plant-die-partei----uebersicht-38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:01:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "39d98b30b4d9669a8fd6591605ebd4629cb094621461289dd098b2ccc5d01b3f",
+          "source_item_id": "7a615eb592f8806727ecc7bbea6d84f0285c54a3e9eb03af87b75976657c2fd8",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:01:00.000Z",
+          "ingested_at": "2026-09-06T07:16:30.989Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/sachsen-anhalt-wahl-2026--was-plant-afd----das-wahlprogramm-38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:11:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "212afa36f1f92f5c7b80dc4f4a0433dc494776137883c9394ee62a6f6b9aec71",
+          "source_item_id": "34fb4721fce116c206a54602b35d1a8682f8bb171a6197f4428fbc14600d9b75",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T08:11:00.000Z",
+          "ingested_at": "2026-09-06T08:20:56.093Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/sachsen-anhalt-wahl-2026--wahlprogramm-der-afd---was-plant-die-partei--38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T12:14:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "943048b1fd3a81077891a1c8dde9c63e95bcdae649338ece5b6e9d4b512dc3b8",
+          "source_item_id": "51a7dbe190aa301378b2794886326338951b1d420e9b860a33a4d3523fcbb0a2",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T12:14:00.000Z",
+          "ingested_at": "2026-09-06T12:21:25.690Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/wahl-sachsen-anhalt-heute--wahlprogramm-der-afd---was-plant-die-partei--38154750.html",
+          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
+          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:39:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7c1bcd09e3d73fdd58a81af3256f7f49ca181f121d6aea8addcfa7d50bb1fad3",
+          "source_item_id": "bf6b291d0476d700a4c917825ae68e9c551f21ee0069d5573743abebf3e12fe5",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:39:00.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-01",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-02",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-03",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-04",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-05",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-c73edcf9866f078d-claim-06",
+          "story_id": "wt-c73edcf9866f078d",
+          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend – und teilweise rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "cfe478438cf8be43e88d7e5769ee089911b963002b395c6a9fc019d008237dd4",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-04T14:36:55.366Z",
+      "event_detected_at": "2026-09-04T14:36:55.366Z",
+      "event_id": "event-a1b8a516baff70dece5b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 27.22245,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 2909.299683333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "56272d759419f76055bcad32bd8016b7bfb0aa86b5baf314317436fa1973a4c7",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-f64f31247bfc1aa1",
+      "slug": "wahl-sachsen-anhalt-was-passiert-wenn-ich-nicht-wahlen-gehe-fc1aa1",
+      "title": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?",
+      "first_seen": "2026-09-06T14:31:09.000Z",
+      "last_updated": "2026-09-06T14:31:09.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/folgen-konsequenzen-110,nicht-waehlen-100.html",
+          "title": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?",
+          "summary": "Nicht wählen zu gehen ist erlaubt, beeinflusst das Wahlergebnis aber trotzdem. Das sind die Folgen für die Landtagswahl in Sachsen-Anhalt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:31:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "75f771918ccbff6fec30536a1f54aaa12b6fb0e01f4e407054fa902cdf2de6ed",
+          "source_item_id": "8d98ae413ab6232b9a97efabd2ccd8b81913f715ac247fbc7e6ebb355dba5708",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:31:09.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-fragen-antworten-100.html",
+          "title": "Was zur Wahl in Sachsen-Anhalt wichtig ist",
+          "summary": "Wer wird in Sachsen-Anhalt künftig regieren? Das Land wird seit mehr als 20 Jahren von der CDU geführt. Doch nun liegt die AfD in Umfragen mit großem Vorsprung vorne. Sie möchte d…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T03:15:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "79b59b669d9b9db4f5c7cb51b10c69a5b703ead598802e81697ccf28402d8630",
+          "source_item_id": "4bdb99248ca4ae43fca010fae65546489ea59d04cf112d39bcc7cbf314ba3e29",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T03:15:02.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f64f31247bfc1aa1-claim-01",
+          "story_id": "wt-f64f31247bfc1aa1",
+          "claim": "Wahl Sachsen-Anhalt: Was passiert, wenn ich nicht wählen gehe?: Nicht wählen zu gehen ist erlaubt, beeinflusst das Wahlergebnis aber trotzdem. Das sind die Folgen für die Landtagswahl in Sachsen-Anhalt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-f64f31247bfc1aa1-claim-02",
+          "story_id": "wt-f64f31247bfc1aa1",
+          "claim": "Was zur Wahl in Sachsen-Anhalt wichtig ist: Wer wird in Sachsen-Anhalt künftig regieren? Das Land wird seit mehr als 20 Jahren von der CDU geführt. Doch nun liegt die AfD in Umfragen mit großem Vorsprung vorne. Sie möchte d…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "d3d2a912fb0c8674480733d721008a35c3b9f8a1b19a847367368de6f4f519f8",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-06T15:06:13.347Z",
+      "event_detected_at": "2026-09-06T15:06:13.347Z",
+      "event_id": "event-046c7c0934d7305129df",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/folgen-konsequenzen-110,nicht-waehlen-100.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 35.07245,
+        "detection_delay_minutes": 35.07245,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "22849e89c9b7903e13e267072b127111cfcfb3f265ad5b49bc6c38ed4cd94e81",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-b5ca8651ce7844db",
       "slug": "polizei-fahndet-nach-tatverdachtigem-am-hambacher-forst-7844db",
@@ -476,6 +1858,275 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-06T14:23:31.959Z",
         "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-b08e47227870c21a",
+      "slug": "the-week-in-pictures-nepal-rescue-operations-world-nomad-games-and-russian-strikes-on-ky-70c21a",
+      "title": "The week in pictures: Nepal rescue operations, World Nomad Games and Russian strikes on Kyiv",
+      "first_seen": "2026-09-06T14:21:52.000Z",
+      "last_updated": "2026-09-06T14:21:52.000Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/europe/20260906-the-week-in-pictures-nepal-rescue-operations-world-nomad-games-and-russian-strikes-on-kyiv",
+          "title": "The week in pictures: Nepal rescue operations, World Nomad Games and Russian strikes on Kyiv",
+          "summary": "From the desperate search for workers trapped in the hydropower tunnels buried by the catastrophic flooding in Nepal to crowds of women mourning the victims of a US bombardment of a wedding in southern Iran, FRANCE 24 looks back at the week's most striking pictures.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:21:52.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "877b7f3811674572e24fb392982c30732b049c40f1f25591c29e779d53d53fb9",
+          "source_item_id": "d0868f737f26efa6983fa4ff1e1448c2cc6247c815008fc43113255b05ec4790",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:21:52.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b08e47227870c21a-claim-01",
+          "story_id": "wt-b08e47227870c21a",
+          "claim": "The week in pictures: Nepal rescue operations, World Nomad Games and Russian strikes on Kyiv: From the desperate search for workers trapped in the hydropower tunnels buried by the catastrophic flooding in Nepal to crowds of women mourning the victims of a US bombardment of a wedding in southern Iran, FRANCE 24 looks back at the week's most striking pictures.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "18c8fd7dbbd73a3494702c093da7882c8e5c783769fa7a3239f41501c0ab07db",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T15:21:13.347Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-06T15:06:13.347Z",
+      "event_detected_at": "2026-09-06T15:06:13.347Z",
+      "event_id": "event-4fee38a463e9e8a82870",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 52,
+        "public_relevance": "hoch",
+        "topics": [
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 44.355783333333335,
+        "detection_delay_minutes": 44.355783333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 82,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "3bfc08b7beacfdfcc9ad64495962cfccd7c36d0f9d4008d512b5bfa57b54b3f6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T15:06:13.347Z",
+      "rejection": {
+        "at": "2026-09-06T15:06:13.347Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-02e08e934b389dd0",
+      "slug": "ifa-roboter-fur-schwere-lasten-kleine-kinder-und-grosse-sorgen-389dd0",
+      "title": "IFA: Roboter für schwere Lasten, kleine Kinder und große Sorgen",
+      "first_seen": "2026-09-06T14:13:00.000Z",
+      "last_updated": "2026-09-06T14:13:00.000Z",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "sources": [
+        {
+          "source_id": "heise-wirtschaft",
+          "publisher": "heise online - Wirtschaft",
+          "url": "https://www.heise.de/news/Roboter-fuer-schwere-Lasten-kleine-Kinder-und-grosse-Sorgen-11442532.html?wt_mc=rss.red.ho.beitrag.atom.beitrag.beitrag",
+          "title": "IFA: Roboter für schwere Lasten, kleine Kinder und große Sorgen",
+          "summary": "Humanoide Roboter führen auf der IFA witzige Boxkämpfe auf, spielen Fußball und wollen digitale Begleiter sein, an der Intelligenz hapert es aber noch.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T14:13:00.000Z",
+          "primary_source": false,
+          "source_priority": 78,
+          "source_topic": "Wirtschaft",
+          "content_hash": "97d6f1024dd57b2a8da98208d5301e31792c18e60dbd7b6695a2dc499c267be7",
+          "source_item_id": "f714ec8d6a3151855daf84211e1adf33abd0edf042d2ab323a2e6691d9bc9064",
+          "publisher_id": "heise",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T14:13:00.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-02e08e934b389dd0-claim-01",
+          "story_id": "wt-02e08e934b389dd0",
+          "claim": "IFA: Roboter für schwere Lasten, kleine Kinder und große Sorgen: Humanoide Roboter führen auf der IFA witzige Boxkämpfe auf, spielen Fußball und wollen digitale Begleiter sein, an der Intelligenz hapert es aber noch.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "heise-wirtschaft",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "dbe5789dda08508c44aa95097826812c745ef9bec542537f2b6056ddea0508e4",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-06T15:06:13.347Z",
+      "event_detected_at": "2026-09-06T15:06:13.347Z",
+      "event_id": "event-ebe6c86d6ed509757bfc",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 53.22245,
+        "detection_delay_minutes": 53.22245,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 89,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "92ca19f6a98833287fa2fc457d0ac0ec625381fb799a70784a4a467da3a9cf0b",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -1060,394 +2711,6 @@
       }
     },
     {
-      "story_id": "wt-ecf4b205df1ecac3",
-      "slug": "kriegsfolgen-bombenentscharfung-tausende-kieler-mussen-aus-wohnungen-1ecac3",
-      "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
-      "first_seen": "2026-09-06T07:01:51.000Z",
-      "last_updated": "2026-09-06T13:52:19.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-muessen-aus-wohnungen-38212366.html",
-          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen",
-          "summary": "In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen. Die Polizei appelliert zur Mithilfe.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:55:40.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "33c8adea58d1a7159a9d9b19c0af32e917c89c409a0cfc2fece066dd8a61bde1",
-          "source_item_id": "ece9a49829da72c11fef3a399f12cf12fdd576e742a8a144eda9c2bcab100c88",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T12:55:40.000Z",
-          "ingested_at": "2026-09-06T13:21:40.973Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriegsfolgen--bombenentschaerfung---tausende-kieler-aus-sperrgebiet-heraus-38212366.html",
-          "title": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler aus Sperrgebiet heraus",
-          "summary": "In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:52:19.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "202644329857e5dee81ddadb4287ed9a7955f7cf7dfb43d7b7d889ee5da51032",
-          "source_item_id": "c946db1932c185504f03ddedb971240bb53862b58f8f453a6537d35658786e14",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:52:19.000Z",
-          "ingested_at": "2026-09-06T14:06:24.915Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-ecf4b205df1ecac3-claim-01",
-          "story_id": "wt-ecf4b205df1ecac3",
-          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler müssen aus Wohnungen: In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen. Die Polizei appelliert zur Mithilfe.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
-        },
-        {
-          "claim_id": "wt-ecf4b205df1ecac3-claim-02",
-          "story_id": "wt-ecf4b205df1ecac3",
-          "claim": "Kriegsfolgen: Bombenentschärfung - Tausende Kieler aus Sperrgebiet heraus: In Kiel ist eine 250-Kilogramm-Fliegerbombe entdeckt worden. Zahlreiche Anwohner und Anwohnerinnen können ihren Nachmittag nicht zu Hause verbringen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
-        }
-      ],
-      "content_hash": "aa0a1ca0674541c69c79ffaa3f46feea6e018ac33bde9ffc32b5aff99961f924",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-06T14:36:20.533Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T14:21:20.533Z",
-      "event_first_seen_at": "2026-09-06T07:16:30.989Z",
-      "event_detected_at": "2026-09-06T07:16:30.989Z",
-      "event_id": "event-c1061c18db8a491c241b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 29.02555,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 424.82573333333335,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 94,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T14:21:20.533Z",
-        "fingerprint": "71e7ba38396d7583cc796cf8ab6405b424d37a44c44378eab0ef4b2c62457158",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T14:21:20.533Z",
-      "rejection": {
-        "at": "2026-09-06T14:21:20.533Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-ed0f00e58dfe544f",
-      "slug": "lawrow-deutschland-will-wieder-krieg-gegen-russland-fe544f",
-      "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
-      "first_seen": "2026-09-06T12:55:53.000Z",
-      "last_updated": "2026-09-06T13:48:18.000Z",
-      "topic": [
-        "Geopolitik",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/lawrow--deutschland-will--wieder-krieg--gegen-russland-38213060.html",
-          "title": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland",
-          "summary": "Der russische Außenminister Sergej Lawrow hat Berlin beschuldigt, „wieder Krieg“ gegen Russland zu wollen. Zu dem Drohnenvorfall in Leipzig sagte Lawrow: „Sie haben erklärt, es handele sich um eine russische Drohne, ohne dass jemand versucht hätte, genauer nachzuforschen.“ Er fügte dann laut Berichten russischer Nachrichtenagenturen vom Sonntag hinzu: „Dies ist letztlich der Beginn eines echten Krieges.“",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:55:53.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "d64a8e9458cf25953334ecad301d45e9ef9501f00cfba69e4d386b9414612a00",
-          "source_item_id": "026ac61d6a9d1c3dcff70ead252cebae67a715a02f31f0cedd18a7ca2d1b6e3a",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T12:55:53.000Z",
-          "ingested_at": "2026-09-06T13:06:40.348Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/aussenminister-lawrow-deutschland-will-wieder-krieg-mit-russland-100.html",
-          "title": "Spannungen wegen Drohnen-Vorfall - Außenminister Lawrow: Deutschland will \"wieder Krieg\" mit Russland",
-          "summary": "In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T13:48:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "4df30c36ded0f060f530094a86d0e10311bde6deb5acf71aaaf63ca6a00b1c12",
-          "source_item_id": "269ed8644ed67394cccad5baee49607ec9bdee3efcc5d7ce18923bb7a0d24820",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T13:48:18.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-ed0f00e58dfe544f-claim-01",
-          "story_id": "wt-ed0f00e58dfe544f",
-          "claim": "Lawrow: Deutschland will „wieder Krieg“ gegen Russland: Der russische Außenminister Sergej Lawrow hat Berlin beschuldigt, „wieder Krieg“ gegen Russland zu wollen. Zu dem Drohnenvorfall in Leipzig sagte Lawrow: „Sie haben erklärt, es handele sich um eine russische Drohne, ohne dass jemand versucht hätte, genauer nachzuforschen.“ Er fügte dann laut Berichten russischer Nachrichtenagenturen vom Sonntag hinzu: „Dies ist letztlich der Beginn eines echten Krieges.“",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
-        },
-        {
-          "claim_id": "wt-ed0f00e58dfe544f-claim-02",
-          "story_id": "wt-ed0f00e58dfe544f",
-          "claim": "Spannungen wegen Drohnen-Vorfall - Außenminister Lawrow: Deutschland will \"wieder Krieg\" mit Russland: In der Auseinandersetzung nach dem Drohnenvorfall auf dem Flughafen Leipzig/Halle hat der russische Außenminister Lawrow den Ton weiter verschärft.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
-        }
-      ],
-      "content_hash": "530f3d4320cd05db8f4b50f5b7dfbc56a4b6fa8b656ca1f81240da1ac8e83ad6",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-06T14:06:15.545Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T13:51:15.545Z",
-      "event_first_seen_at": "2026-09-06T13:06:40.348Z",
-      "event_detected_at": "2026-09-06T13:06:40.348Z",
-      "event_id": "event-3668bca1040e9350b498",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 46,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik",
-          "Wirtschaft"
-        ],
-        "dimensions": [],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 2.9590833333333335,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 44.586616666666664,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T13:51:15.545Z",
-        "fingerprint": "9cb7d9000204bd1c8d51c90bad48e7a820c493d49bc2323d8d07828499997a55",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T13:51:15.545Z",
-      "rejection": {
-        "at": "2026-09-06T13:51:15.545Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
       "story_id": "wt-7cb93f0c5bd31262",
       "slug": "nach-versuchtem-drohnen-anschlag-in-leipzig-lawrow-nennt-anschuldigungen-gegen-russland--d31262",
       "title": "Nach versuchtem Drohnen-Anschlag in Leipzig: Lawrow nennt Anschuldigungen gegen Russland „Beginn eines echten Krieges“",
@@ -1585,6 +2848,134 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
+      }
+    },
+    {
+      "story_id": "wt-572b16aa303c6bfd",
+      "slug": "russlands-aussenminister-lawrow-deutschland-will-erneut-den-krieg-3c6bfd",
+      "title": "Russlands Außenminister Lawrow: Deutschland will „erneut den Krieg“",
+      "first_seen": "2026-09-06T13:42:00.000Z",
+      "last_updated": "2026-09-06T13:42:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Pendeldiplomatie-der-USA/!6210566",
+          "title": "Russlands Außenminister Lawrow: Deutschland will „erneut den Krieg“",
+          "summary": "Zum ersten Mal besuchen Kushner und Witkoff die Hauptstadt der Ukraine. Russlands Außenminister Lawrow eskaliert rhetorisch nach Drohnenanschlägen in Leipzig. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T13:42:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "3cb7d018bec22a664e1ee0a1c5051a60b6cdfd15744b913b25f588ed073be14e",
+          "source_item_id": "bcc090fbf6d6832ea72d90d0d3695086ead225d9a4464b7a1c57ca1feb59f34e",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T13:42:00.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-572b16aa303c6bfd-claim-01",
+          "story_id": "wt-572b16aa303c6bfd",
+          "claim": "Russlands Außenminister Lawrow: Deutschland will „erneut den Krieg“: Zum ersten Mal besuchen Kushner und Witkoff die Hauptstadt der Ukraine. Russlands Außenminister Lawrow eskaliert rhetorisch nach Drohnenanschlägen in Leipzig. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        }
+      ],
+      "content_hash": "ea6802364fb7b1f7afeec0eba4ccf6ec06b4d7794891e41d6f8bf377b500230f",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-06T15:06:13.347Z",
+      "event_first_seen_at": "2026-09-06T15:06:13.347Z",
+      "event_detected_at": "2026-09-06T15:06:13.347Z",
+      "event_id": "event-64852789bb2f6fedc4eb",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 84.22245,
+        "detection_delay_minutes": 84.22245,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 82,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "3f3e84f99c8bac0dbaa9be18b61ca55690fee9b8a69ca4390eaa96db693bebf2",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -1874,7 +3265,7 @@
       "verification_started_at": "2026-09-06T13:36:42.910Z",
       "publish_ready_at": "2026-09-06T13:36:54.881Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": "2026-09-06T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -2211,9 +3602,12 @@
         "generated_at": "2026-09-06T13:37:12.475Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "f2555281f53c4ec1d712e566528c5f63acd1cfe7eb2812b659ab54ea769163f5",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "fb97c6a252cac55cc56b356d669837d58fa77111ad7d6d3df0158da764e4853c",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-06T21:06:13.347Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -2252,14 +3646,14 @@
             "source_id": "mdr-nachrichten",
             "publisher": "MDR",
             "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
-            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
-            "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
+            "title": "Ukraine-News: US-Vermittler in Kiew – auch Gespräche mit Europäern geplant",
+            "summary": "Erst waren die US-Sondergesandten Witkoff und Kushner in Moskau, jetzt sind sie in Kiew. Nach ukrainischen Angaben sind auch Gespräche mit europäischen Sicherheitsberatern geplant.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T13:35:27.000Z",
+            "published_at": "2026-09-06T14:16:29.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
-            "content_hash": "b37dc0f2a85bb05f2368e0c3b99aab5c59d5e955280157f3552fef7686d747fd",
+            "content_hash": "d27ba0cb9b8f5275c23985c2c9b9a53bbcd9a2903206e51c517cf197faeea81d",
             "source_item_id": "af75b6323e78549a2abcaa2a01049a838569ff8727ae93504700c98cf302b7cb",
             "publisher_id": "mdr",
             "publisher_kind": "public_broadcasting",
@@ -2271,8 +3665,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T13:35:27.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "source_published_at": "2026-09-06T14:16:29.000Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -2281,24 +3675,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
-          "fingerprint": "423d55d844c3549d98d95d631efe3bdc8060a0df81cf9a4fdbd09eba7c2e81ea",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-d1170e1bdc308cbc",
@@ -3929,7 +5308,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T12:41:00.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3962,7 +5341,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T12:22:00.000Z",
-          "ingested_at": "2026-09-06T13:51:15.545Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4024,7 +5403,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-b7c356fdc686f6f2-claim-02",
@@ -4044,7 +5423,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-b7c356fdc686f6f2-claim-03",
@@ -4064,22 +5443,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T13:51:15.545Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         }
       ],
       "content_hash": "5089881059e254a11fc6a8622905c7bd8ce760529570c92427beb6c9fa8d47dd",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED_STRING:editorial_assessment"
+        "MEDIA_IMPACT_REQUIRED"
       ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-06T14:51:15.545Z",
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-06T18:06:13.347Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T13:51:15.545Z",
+      "updated_at": "2026-09-06T15:06:13.347Z",
       "event_first_seen_at": "2026-09-06T08:36:36.761Z",
       "event_detected_at": "2026-09-06T08:36:36.761Z",
       "event_id": "event-e43611c7b733caf8ee2c",
@@ -4115,20 +5494,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 70.25908333333334,
+        "source_age_minutes": 145.22245,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 314.6464,
+        "queue_age_minutes": 389.60976666666664,
         "target_publication_minutes": 60,
-        "news_freshness_score": 71,
+        "news_freshness_score": 39,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T13:51:15.545Z",
+        "checked_at": "2026-09-06T15:06:13.347Z",
         "fingerprint": "ba5fbd9fbecb458befc338b53fd608b7b85caf3e3717e95676b7b9ef27f3a655",
         "issue_codes": [],
         "warning_codes": []
@@ -4639,7 +6018,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
+          "checked_at": "2026-09-06T15:06:13.347Z",
           "fingerprint": "1b8d9b174df22264a08c74cf10b778040acd7881d73cc50c14da2a7e4c0b1724",
           "issue_codes": [],
           "warning_codes": []
@@ -6780,7 +8159,7 @@
       },
       "pending_update": {
         "detected_at": "2026-09-06T13:06:40.348Z",
-        "content_hash": "b62f30c39f9d5e55d711f4ef253335c22b38d83d3734540dae8cd07b094a97a3",
+        "content_hash": "bcb7c95c80e760caaeda6c1921fa29f12f9dbb4887c61a424e8aa0ea1f19b1df",
         "sources": [
           {
             "source_id": "ndr-info",
@@ -6847,15 +8226,49 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.ndr.de/nachrichten/schleswig-holstein/kiel_neumuenster_ploen_rendsburg-eckernfoerde/blindgaenger-in-kiel-bombe-erfolgreich-entschaerft,regionkielnews-2802.html",
+            "title": "Blindgänger in Kiel: Bombe erfolgreich entschärft",
+            "summary": "Der Kampfmittelräumdienst hat am Sonntagnachmittag eine Weltkriegsbombe im Stadtteil Dietrichdorf unschädlich gemacht.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T14:33:40.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "07d43cf40aa05628c8b7411d9740d4b2134f42fadfe48b2ae4013e96dd5e6bb0",
+            "source_item_id": "c3a11af745e9b977fd262994782e76c8374c6f926bbf3f226fe47a900b59d83f",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T14:33:40.000Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_PUBLICATION_RECOMMENDATION_INVALID",
           "CLAIM_NUMBER_NOT_IN_EVIDENCE"
         ],
-        "quality_retry_count": 4,
-        "quality_retry_after": "2026-09-06T17:21:20.533Z",
+        "quality_retry_count": 5,
+        "quality_retry_after": "2026-09-06T21:06:13.347Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -6863,8 +8276,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
-          "fingerprint": "63741470b2686d6df5e36659c6bc2f7644bb128949a9f596ee02741f844ccc37",
+          "checked_at": "2026-09-06T15:06:13.347Z",
+          "fingerprint": "31ee4fd4bf82ecdb017b8703375bd4da9b112f12c110d712ff10a2cf3f91f65d",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -7027,7 +8440,7 @@
       "verification_started_at": "2026-09-06T12:22:53.916Z",
       "publish_ready_at": "2026-09-06T12:23:08.615Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T14:00:00.000Z",
+      "deepening_due_at": "2026-09-06T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -7436,10 +8849,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "060f8f111b209405bb33c305aa23ba077c3e5e7c914b86a042fc65cbf2ef693c",
-        "checked_at": "2026-09-06T13:06:40.348Z",
+        "fingerprint": "79f76e643a8a8c7a104ba0eac7d3482d4eaa6fb4a6b9721583aa3df9c9519487",
+        "checked_at": "2026-09-06T15:06:13.347Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T19:06:40.348Z",
+        "expires_at": "2026-09-06T21:06:13.347Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -7448,7 +8861,7 @@
             "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
             "summary": "Auf der Suche nach dem Tatverdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz läuft ein Großeinsatz der Polizei am Hambacher Forst. Ein Reporter der Deutschen Presse-Agentur berichtet von bis zu 100 Polizeifahrzeugen vor Ort.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T12:55:05.000Z",
+            "published_at": "2026-09-06T15:04:56.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -7464,8 +8877,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T12:55:05.000Z",
-            "ingested_at": "2026-09-06T13:06:40.348Z",
+            "source_published_at": "2026-09-06T15:04:56.000Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "dpa",
             "agency_origin_confidence": "high",
             "provenance": {
@@ -7476,411 +8889,7 @@
           }
         ]
       },
-      "pending_update": {
-        "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "a97bc042099f3f991e815ee278ec2b622ea82eed41f3b2acc155a781619c2d5a",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
-            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
-            "summary": "Auf der Suche nach dem Tatverdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz läuft ein Großeinsatz der Polizei am Hambacher Forst. Ein Reporter der Deutschen Presse-Agentur berichtet von bis zu 100 Polizeifahrzeugen vor Ort.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T13:55:12.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "9d812be6208cdb25d5279142f4527709a7c5c46b2024dad0418355d9f5a6823c",
-            "source_item_id": "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T13:55:12.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
-            "agency_origin": "dpa",
-            "agency_origin_confidence": "high",
-            "provenance": {
-              "origin": "agency:dpa",
-              "basis": "agency_attribution_in_available_text",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
-          "fingerprint": "a170d0ae2e41c4209260012ffc7890113208f72819739c60567dae8c494cf075",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
-    },
-    {
-      "story_id": "wt-c73edcf9866f078d",
-      "slug": "radikales-regieren-das-sind-die-projekte-der-afd-in-sachsen-anhalt-6f078d",
-      "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-      "first_seen": "2026-09-04T14:25:00.000Z",
-      "last_updated": "2026-09-06T12:14:00.000Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--das-plant-die-partei-38154750.html",
-          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T14:25:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "2082ca9531ba29532f8c5a5ef3ca50a475a2412f2ce4b9ee04227279fa380f94",
-          "source_item_id": "71d58d845f32fa965e5cbc74915a41340d0f10de654e54729543f233c5ba4c3b",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-04T14:25:00.000Z",
-          "ingested_at": "2026-09-04T14:36:55.366Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--was-plant-die-partei--38154750.html",
-          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T10:20:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "1eb77858a97af40626e73ef146ed5373b7e613b5844833e40182cc4e0ac97220",
-          "source_item_id": "3d4f926e1c6d2b8b853bd915faa842a64f4251c0bf645affae0e805c729c8fb5",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T10:20:00.000Z",
-          "ingested_at": "2026-09-05T10:57:29.473Z",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/afd-wahlprogramm-zur-wahl-sachsen-anhalt-2026--was-plant-die-partei----uebersicht-38154750.html",
-          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T07:01:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "39d98b30b4d9669a8fd6591605ebd4629cb094621461289dd098b2ccc5d01b3f",
-          "source_item_id": "7a615eb592f8806727ecc7bbea6d84f0285c54a3e9eb03af87b75976657c2fd8",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T07:01:00.000Z",
-          "ingested_at": "2026-09-06T07:16:30.989Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/sachsen-anhalt-wahl-2026--was-plant-afd----das-wahlprogramm-38154750.html",
-          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T08:11:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "212afa36f1f92f5c7b80dc4f4a0433dc494776137883c9394ee62a6f6b9aec71",
-          "source_item_id": "34fb4721fce116c206a54602b35d1a8682f8bb171a6197f4428fbc14600d9b75",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T08:11:00.000Z",
-          "ingested_at": "2026-09-06T08:20:56.093Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/sachsen-anhalt-wahl-2026--wahlprogramm-der-afd---was-plant-die-partei--38154750.html",
-          "title": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt",
-          "summary": "Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:14:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "943048b1fd3a81077891a1c8dde9c63e95bcdae649338ece5b6e9d4b512dc3b8",
-          "source_item_id": "51a7dbe190aa301378b2794886326338951b1d420e9b860a33a4d3523fcbb0a2",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T12:14:00.000Z",
-          "ingested_at": "2026-09-06T12:21:25.690Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-c73edcf9866f078d-claim-01",
-          "story_id": "wt-c73edcf9866f078d",
-          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T12:21:25.690Z"
-        },
-        {
-          "claim_id": "wt-c73edcf9866f078d-claim-02",
-          "story_id": "wt-c73edcf9866f078d",
-          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T12:21:25.690Z"
-        },
-        {
-          "claim_id": "wt-c73edcf9866f078d-claim-03",
-          "story_id": "wt-c73edcf9866f078d",
-          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T12:21:25.690Z"
-        },
-        {
-          "claim_id": "wt-c73edcf9866f078d-claim-04",
-          "story_id": "wt-c73edcf9866f078d",
-          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T12:21:25.690Z"
-        },
-        {
-          "claim_id": "wt-c73edcf9866f078d-claim-05",
-          "story_id": "wt-c73edcf9866f078d",
-          "claim": "Radikales Regieren: Das sind die Projekte der AfD in Sachsen-Anhalt: Schulpflicht weg, Migration runter, Patriotismus hoch: Das Programm der AfD in Sachsen-Anhalt ist umfassend - und teilweise rechtswidrig.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T12:21:25.690Z"
-        }
-      ],
-      "content_hash": "8fa5af50ffad998e221b9f9bf370ee37bc96ce363b36446167f19345b91f3273",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-06T12:36:25.690Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T12:21:25.690Z",
-      "event_first_seen_at": "2026-09-04T14:36:55.366Z",
-      "event_detected_at": "2026-09-04T14:36:55.366Z",
-      "event_id": "event-a1b8a516baff70dece5b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 7.428166666666667,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 2744.5054,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T12:21:25.690Z",
-        "fingerprint": "93b65424fd816eaf5208b76dd7338e89f85e0a24e13266a5c982982204190088",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T12:21:25.690Z",
-      "rejection": {
-        "at": "2026-09-06T12:21:25.690Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-297b3a17bd6e22ae",
@@ -9110,7 +10119,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T11:48:46.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -9122,12 +10131,10 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "AI_PUBLICATION_RECOMMENDATION_INVALID"
+          "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-06T14:36:20.533Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-06T15:36:13.347Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -9135,7 +10142,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
+          "checked_at": "2026-09-06T15:06:13.347Z",
           "fingerprint": "de6fc3991d4fea8798415a759023dac4333248ae76dc8fa2a384d50054b77515",
           "issue_codes": [],
           "warning_codes": []
@@ -10834,7 +11841,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
+          "checked_at": "2026-09-06T15:06:13.347Z",
           "fingerprint": "249f18fd4be1f1cc4705514dcda46b786b53e92f94f2d94531e96c099cb8580d",
           "issue_codes": [],
           "warning_codes": []
@@ -12142,7 +13149,7 @@
       "retirement_history": [],
       "pending_update": {
         "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "d729b8c1f06f08f7f3b7470a21fc041ccf3d10cdeeb67f2d05ddc16ed8218916",
+        "content_hash": "4fb25ea1f5c3110a39cbfb336362d65003e21e294e80f2ecf64478c48278309f",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -12304,13 +13311,13 @@
             "publisher": "ZDFheute",
             "url": "https://www.zdfheute.de/politik/ausland/us-vermittler-putin-moskau-kiew-ukraine-krieg-russland-100.html",
             "title": "US-Vermittler treffen Selenskyj in Kiew",
-            "summary": "Nach einem Treffen mit Kremlchef Putin in Moskau sind die US-Vermittler Kushner und Witkoff weiter in die Ukraine gereist. Dort empfängt sie heute Präsident Selenskyj.",
+            "summary": "Nach einem Treffen mit Kremlchef Putin in Moskau sind die US-Vermittler Kushner und Witkoff weiter in die Ukraine gereist. Dort wurden sie von Präsident Selenskyj empfangen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T10:58:00.000Z",
+            "published_at": "2026-09-06T14:34:00.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "c91e17e43ff46595eea56e62994723f8f62e9408293fc6cfd45f8fead427bdce",
+            "content_hash": "2384f05d896464d882222a71532cc252c30d552176e15f07965f1bc7ff31c081",
             "source_item_id": "9ad001726f59c5ef3ff4bc395560f9438257b4d897d29a3ba3b09a9738ec9a58",
             "publisher_id": "zdfheute",
             "publisher_kind": "public_broadcasting",
@@ -12322,8 +13329,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T10:58:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "source_published_at": "2026-09-06T14:34:00.000Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -12333,19 +13340,21 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T15:21:13.347Z",
         "reassessment": false,
-        "fresh": false,
+        "fresh": true,
         "consolidation": false,
         "source_integrity": {
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
-          "fingerprint": "73c5deb23dce081eb674967ac81cf472c0b4964d59e6f31c46f7cce602dce265",
+          "checked_at": "2026-09-06T15:06:13.347Z",
+          "fingerprint": "6d6d3d07ddc52bda0c2ae1ca2bdb7fdfd3bffb8e14004ae9622aac85022cba9c",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -14126,7 +15135,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
+          "checked_at": "2026-09-06T15:06:13.347Z",
           "fingerprint": "1fc91e9d7e838095b8ac1a35749ca3e650f17e7a2d8f68f24d1752f3a5606811",
           "issue_codes": [],
           "warning_codes": []
@@ -14824,7 +15833,7 @@
       },
       "pending_update": {
         "detected_at": "2026-09-06T14:06:24.915Z",
-        "content_hash": "71741ca9586225aa2b404b8f560305a17386cbebfff158834c98f50bae84b3d7",
+        "content_hash": "163e9982a9c9272f7972dbec3d7b1f2abc8bdb61c555ce3649fbc4ab72244bf3",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -14919,7 +15928,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T10:50:59.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14952,7 +15961,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T12:54:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14966,13 +15975,13 @@
             "publisher": "Deutschlandfunk",
             "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-erstmals-in-kiew-100.html",
             "title": "Ukraine-Krieg - US-Gesandte Witkoff und Kushner erstmals in Kiew",
-            "summary": "Die US-Unterhändler Witkoff und Kushner sind zu einem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew eingetroffen. Dabei sollen neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert werden. Selenskyj erklärte, sein Land wolle den Krieg mit Russland beenden. Dafür seien aber umfassende Sicherheitsgarantien nötig.",
+            "summary": "Die US-Unterhändler Witkoff und Kushner befinden sich für ein Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew. Dabei sollen neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert werden. Selenskyj erklärte, sein Land wolle den Krieg mit Russland beenden. Dafür seien aber umfassende Sicherheitsgarantien nötig.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T13:55:12.000Z",
+            "published_at": "2026-09-06T15:04:56.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "8b2da4da58fe2d34197e271d22f163e4708aa048c38fe44c0938d82cd84370f4",
+            "content_hash": "73bf38aab1c165418619b58baa57f325a0009ffbb2bcfdcbffbec2bbe0cb25d1",
             "source_item_id": "698439e992203b1770ab824b31ce9a684666226412d174313abea16116405976",
             "publisher_id": "deutschlandfunk",
             "publisher_kind": "public_broadcasting",
@@ -14984,8 +15993,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T13:55:12.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "source_published_at": "2026-09-06T15:04:56.000Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14995,19 +16004,22 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T15:21:13.347Z",
         "reassessment": false,
-        "fresh": false,
+        "fresh": true,
         "consolidation": false,
         "source_integrity": {
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
-          "fingerprint": "4b5cb8dbc32b33136f0c030b796f9b52a3a569289e64c3b6492d49951fce902e",
+          "checked_at": "2026-09-06T15:06:13.347Z",
+          "fingerprint": "64cff839a80dee5f14115970c3f032ef180ae25b26866c12db8e7c00ab487094",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -15894,7 +16906,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T12:00:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -15915,7 +16927,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
+          "checked_at": "2026-09-06T15:06:13.347Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -17869,7 +18881,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T08:39:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17885,7 +18897,7 @@
             "title": "Golf von Oman - US-Militär: Angegriffener iranischer Öltanker wurde versenkt",
             "summary": "Im Golf von Oman ist nach amerikanischen Angaben ein vom US-Militär angegriffener iranischer Öltanker gesunken.",
             "source_type": "media_rss",
-            "published_at": "2026-09-06T13:55:12.000Z",
+            "published_at": "2026-09-06T15:04:56.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -17901,8 +18913,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-06T13:55:12.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "source_published_at": "2026-09-06T15:04:56.000Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17923,7 +18935,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
+          "checked_at": "2026-09-06T15:06:13.347Z",
           "fingerprint": "98c998135335d0968bf5e0087414a452d3f9d6caf5770dc3e95471769288eee4",
           "issue_codes": [],
           "warning_codes": []
@@ -21025,7 +22037,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T18:32:23.000Z",
-          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -21058,7 +22070,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:57:00.000Z",
-          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -21072,7 +22084,7 @@
           "publisher": "taz",
           "url": "https://taz.de/Sachsen-Anhalt/!6210514",
           "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
-          "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen - oder zu gehen. mehr...",
+          "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
           "source_type": "media_rss",
           "published_at": "2026-09-06T06:36:00.000Z",
           "primary_source": false,
@@ -21091,7 +22103,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T06:36:00.000Z",
-          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -21124,7 +22136,40 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T13:35:00.000Z",
-          "ingested_at": "2026-09-06T14:06:24.915Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Landtagswahl-live-Wie-braun-wird-Sachsen-Anhalt/!6210219",
+          "title": "Wahl in Sachsen-Anhalt: Magdeburg bereitet sich auf Proteste vor",
+          "summary": "Bei der Landtagswahl in Sachsen-Anhalt schielt die rechtsextreme AfD auf eine absolute Mehrheit. Ob das was wird? Alle News am Wahltag im Überblick. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:14:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ea9f70f17a82a6a97dac7cb542f97223ce47877ce3cd60deb94a18662fd02117",
+          "source_item_id": "fa6c1227bc62f221d9b090337bed0f42c594866c250bbbadd2b963413fb900df",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:14:00.000Z",
+          "ingested_at": "2026-09-06T15:06:13.347Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -21153,7 +22198,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-02",
@@ -21173,7 +22218,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-03",
@@ -21193,7 +22238,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-04",
@@ -21213,7 +22258,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-05",
@@ -21233,7 +22278,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-06",
@@ -21253,7 +22298,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-07",
@@ -21273,7 +22318,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-08",
@@ -21293,7 +22338,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-09",
@@ -21313,7 +22358,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-10",
@@ -21333,7 +22378,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-11",
@@ -21353,7 +22398,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-12",
@@ -21373,7 +22418,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-13",
@@ -21393,7 +22438,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-14",
@@ -21413,7 +22458,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-15",
@@ -21433,7 +22478,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-16",
@@ -21453,7 +22498,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-17",
@@ -21473,7 +22518,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-18",
@@ -21493,7 +22538,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-19",
@@ -21513,7 +22558,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-20",
@@ -21533,12 +22578,12 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-21",
           "story_id": "wt-5072789df611867b",
-          "claim": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße: Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen - oder zu gehen. mehr...",
+          "claim": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße: Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "taz-aktuell",
           "source_function": "journalistic_report",
@@ -21553,7 +22598,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         },
         {
           "claim_id": "wt-5072789df611867b-claim-22",
@@ -21573,10 +22618,30 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
+        },
+        {
+          "claim_id": "wt-5072789df611867b-claim-23",
+          "story_id": "wt-5072789df611867b",
+          "claim": "Wahl in Sachsen-Anhalt: Magdeburg bereitet sich auf Proteste vor: Bei der Landtagswahl in Sachsen-Anhalt schielt die rechtsextreme AfD auf eine absolute Mehrheit. Ob das was wird? Alle News am Wahltag im Überblick. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T15:06:13.347Z"
         }
       ],
-      "content_hash": "d9745f0ba8831ddc9819bbcbe93c8d55d9c66bfc762db01991776a13e66c4a81",
+      "content_hash": "cf13afcc8330c319ee59c6352a7453c89727c7e6def34bae69e4abe09f9ff745",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
@@ -21589,7 +22654,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T14:21:20.533Z",
+      "updated_at": "2026-09-06T15:06:13.347Z",
       "event_first_seen_at": "2026-09-04T06:51:43.159Z",
       "event_detected_at": "2026-09-04T06:51:43.159Z",
       "event_id": "event-2a2bd81ddd672bb6a3a8",
@@ -21632,21 +22697,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 46.342216666666666,
+        "source_age_minutes": 91.22245,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3329.6229,
+        "queue_age_minutes": 3374.503133333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 81,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T14:21:20.533Z",
-        "fingerprint": "4f06e4e777914a41f6a4b1af1f2fb21ee1e17ce0b24ce5243efa948c106d68d1",
+        "checked_at": "2026-09-06T15:06:13.347Z",
+        "fingerprint": "3c0c97e8059c98cc47d39390060a0c85d0463048d4f0648ab40c5452ded6cf42",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
         ],
@@ -23560,7 +24625,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
+          "checked_at": "2026-09-06T15:06:13.347Z",
           "fingerprint": "20ec72e346525c63f8474fbcd94da184d73a481404448b65fa1266ba70c27fca",
           "issue_codes": [],
           "warning_codes": []
@@ -24474,7 +25539,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
+          "checked_at": "2026-09-06T15:06:13.347Z",
           "fingerprint": "c1a364a34891c91d9752f3c32ba5d0e0e011e3d3af0137cbe60516934bcc438c",
           "issue_codes": [],
           "warning_codes": []
@@ -40778,10 +41843,10 @@
       ],
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "e1645d0399ea75237c36fad66c042559b6ee77c013fff68ba3bc4e80d389df5d",
-        "checked_at": "2026-09-06T14:21:20.533Z",
+        "fingerprint": "a4b6667ccf2d50c81ce9c934137a1a2acae8b3a8f6cfcaf17ce6c6587f2fb6dd",
+        "checked_at": "2026-09-06T15:06:13.347Z",
         "outcome": "input_too_large",
-        "expires_at": "2026-09-06T20:21:20.533Z",
+        "expires_at": "2026-09-06T21:06:13.347Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -41248,7 +42313,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -41347,7 +42412,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41427,7 +42492,7 @@
             "publisher": "taz",
             "url": "https://taz.de/Sachsen-Anhalt/!6210514",
             "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
-            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen - oder zu gehen. mehr...",
+            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
             "source_type": "media_rss",
             "published_at": "2026-09-06T06:36:00.000Z",
             "primary_source": false,
@@ -41446,7 +42511,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41479,7 +42544,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T13:35:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41578,7 +42643,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T02:32:15.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42059,7 +43124,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -42158,7 +43223,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T05:57:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42238,7 +43303,7 @@
             "publisher": "taz",
             "url": "https://taz.de/Sachsen-Anhalt/!6210514",
             "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
-            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen - oder zu gehen. mehr...",
+            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
             "source_type": "media_rss",
             "published_at": "2026-09-06T06:36:00.000Z",
             "primary_source": false,
@@ -42257,7 +43322,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T06:36:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42290,7 +43355,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T13:35:00.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42389,7 +43454,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-06T02:32:15.000Z",
-            "ingested_at": "2026-09-06T14:06:24.915Z",
+            "ingested_at": "2026-09-06T15:06:13.347Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42412,8 +43477,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T14:21:20.533Z",
-          "fingerprint": "4265575b343160024ed7ddab3c999be570db9f5dc8ee38cdb31aee53edf1e808",
+          "checked_at": "2026-09-06T15:06:13.347Z",
+          "fingerprint": "09835ef7b16fcbf396ab8fc410cdc72ad0d33ac7a5161cbf63eb97880d13ddb3",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -142170,7 +143235,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T14:21:20.533Z"
+          "checked_at": "2026-09-06T15:06:13.347Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -142185,7 +143250,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T14:21:20.533Z",
+      "updated_at": "2026-09-06T15:06:13.347Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -142221,11 +143286,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4318.342216666667,
+        "source_age_minutes": 4363.22245,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3840.0587166666664,
+        "queue_age_minutes": 3884.93895,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -142234,7 +143299,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T14:21:20.533Z",
+        "checked_at": "2026-09-06T15:06:13.347Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
