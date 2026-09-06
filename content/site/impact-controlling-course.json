@@ -1,0 +1,341 @@
+{
+  "version": "2026-09-06",
+  "title": "Impact Controlling: vom Küchenalltag zur Entscheidung",
+  "definition": "Impact Controlling heißt: regelmäßig prüfen, was eine Maßnahme tatsächlich verändert, und mit diesen Erkenntnissen die nächsten Entscheidungen verbessern. Controlling bedeutet hier unterstützen und nachsteuern, nicht Menschen kontrollieren.",
+  "case": {
+    "title": "Weniger Essen im Abfall. Alle Kinder gut versorgt.",
+    "intro": "Stell dir eine Schulküche vor. Jeden Tag gehen 1.000 Essen über die Theke. Danach landen 100 Kilogramm essbare Lebensmittel im Abfall. Die Küche ändert ihre Mengenplanung und bietet kleinere Erstportionen mit kostenlosem Nachschlag an. Nach der Umstellung sind es noch 60 Kilogramm. Klingt gut. Aber was hat sich durch die Umstellung verändert?",
+    "status": "Vollständig erfundenes Lernbeispiel. Alle Mengen, Preise, Faktoren, Schwellen und Befunde sind Modellannahmen, keine Messdaten einer realen Schule und keine allgemeinen Standards.",
+    "boundary": "Zwei vergleichbare Schulküchen, gleiche Jahreszeit, gleiche Erfassung essbarer Abfälle und jeweils 1.000 Essen pro Öffnungstag. Die Werte sind Tagesmittel über vergleichbare Messwochen. Eine Küche stellt um; die Vergleichsküche zunächst nicht. 180 Öffnungstage bilden das Rechenjahr. Wetter, Speiseplan, Zahl der Essen, Erfassungsfehler und andere Änderungen müssen in einem echten Fall geprüft werden.",
+    "problem": "Essbare Lebensmittel werden unnötig eingekauft und weggeworfen. Erst Wiegen und Nachfragen klären, ob Mengenplanung, Geschmack oder Ausgabe die Ursache sind.",
+    "goal": "Im Modell sollen jährlich 6.000 kg essbare Abfälle zusätzlich vermieden werden. Ausreichende, gesunde Mahlzeiten, Zugang und Lebensmittelhygiene bleiben verbindliche Anforderungen. Weniger Abfall durch hungrige Kinder wäre ein Scheinerfolg.",
+    "options": "Vor einer Entscheidung werden bessere Planung und Nachschlag mit anderen Speiseplänen, veränderter Ausgabe sowie Fortführung des bisherigen Ablaufs verglichen. Portionen pauschal zu kürzen ist keine gleichwertige Lösung, wenn die Versorgung leidet.",
+    "before": 100,
+    "after": 60,
+    "comparisonBefore": 100,
+    "comparisonAfter": 90,
+    "meals": 1000,
+    "days": 180,
+    "target": 6000,
+    "price": 3,
+    "investment": 6000,
+    "operating": 2000,
+    "harm": 1000,
+    "discountRate": 0.05,
+    "uncertainty": 0.2,
+    "causality": "Die Vergleichsküche reduziert ihren Abfall ebenfalls: von 100 auf 90 kg. Deshalb rechnen wir 10 kg der beobachteten Verringerung zunächst der gemeinsamen Entwicklung zu. Der zusätzliche Unterschied beträgt 30 kg. Diese Differenz-von-Differenzen ist nur unter begründeten Annahmen kausal interpretierbar: vergleichbare Entwicklung ohne Umstellung, keine Übertragung des Programms auf die Vergleichsküche, keine anderen unterschiedlich wirkenden Eingriffe und vergleichbare Gruppen und Messungen. Zwei Vorher-Nachher-Werte beweisen das nicht. Mehrere frühere Messperioden, Kontrollgruppen und eine passende Unsicherheitsanalyse sind nötig.",
+    "mechanism": [
+      {
+        "symbol": "A",
+        "title": "Handlung",
+        "text": "Mengen besser planen und Nachschlag anbieten."
+      },
+      {
+        "symbol": "M",
+        "title": "Warum das helfen könnte",
+        "text": "Die Küche produziert bedarfsgerechter; Kinder wählen passende Portionen."
+      },
+      {
+        "symbol": "ΔZ",
+        "title": "Veränderung prüfen",
+        "text": "Abfall, Einkauf, Versorgung und Nebenfolgen beobachten und vergleichen."
+      },
+      {
+        "symbol": "R",
+        "title": "Maßstäbe offenlegen",
+        "text": "SDGs, Ernährung, Hygiene, fairer Zugang und begründete Ziele heranziehen."
+      }
+    ],
+    "orders": [
+      [
+        "Direkte Folgen · 1. Ordnung",
+        "Weniger essbarer Abfall in der Küche; Umfang und Zurechnung werden gemessen."
+      ],
+      [
+        "Weitere Folgen · 2. Ordnung",
+        "Weniger Bestellungen können Produktion und Transport verändern. Das folgt nicht automatisch aus weniger Tellerresten."
+      ],
+      [
+        "Systemische Folgen · 3. Ordnung",
+        "Andere Küchen könnten Standards übernehmen; Lieferverträge könnten sich ändern. Ohne eigene Beobachtung und Gegenhypothese bleibt dies Wirkungspotenzial."
+      ]
+    ],
+    "decision": "Die Modellrechnung spricht dafür, den Pilotversuch weiterzuprüfen. Die Küchenleitung kontrolliert wöchentlich Abfälle und Versorgung; nach vier Wochen werden die Befunde gemeinsam mit Schulträger und Beteiligten besprochen. Sinkt die Versorgung, wird die Ausgabe sofort angepasst. Ein Schulhalbjahr später werden Vergleich, Kosten und Folgewirkungen erneut geprüft. Eine Ausweitung setzt belastbare Befunde und erfüllte Schutzanforderungen voraus."
+  },
+  "terms": [
+    [
+      "KPI",
+      "Key Performance Indicator: wichtige Leistungskennzahl. Hier etwa die Zahl ausgegebener Essen. Sie bleibt für Betrieb und Einordnung nötig."
+    ],
+    [
+      "KII",
+      "Key Impact Indicator: eine für die Entscheidung wichtige Wirkungskennzahl. Sie beschreibt relevante Zustandsveränderungen mit Einheit, Zeitraum, Vergleich und Grenzen. Welche KII gebraucht werden, hängt vom Fall ab."
+    ],
+    [
+      "Output / Outcome",
+      "Output ist die erbrachte Leistung, etwa ein ausgegebenes Essen. Outcome bezeichnet eine Veränderung bei den Betroffenen oder im betrachteten System. Deren Zurechnung zur Maßnahme ist eine weitere Prüffrage."
+    ],
+    [
+      "Baseline",
+      "Der dokumentierte Ausgangswert vor der Maßnahme. Hier 100 kg essbarer Abfall pro Tag."
+    ],
+    [
+      "Gegenfaktum",
+      "Die begründete Schätzung dessen, was ohne die Maßnahme passiert wäre. Hier liefert die Vergleichsküche einen Anhaltspunkt."
+    ],
+    [
+      "Attribution",
+      "Kausale Zurechnung: Welcher Teil der Veränderung geht auf die untersuchte Maßnahme zurück? Ein zeitliches Nacheinander reicht als Beleg nicht."
+    ],
+    [
+      "Netto-Wirkung",
+      "Die Bilanz relevanter günstiger und ungünstiger Veränderungen innerhalb einer klaren Grenze. Nur vergleichbare Größen lassen sich verrechnen. Harte Schutzgrenzen bleiben nicht kompensierbar."
+    ],
+    [
+      "Schutz-Gate",
+      "Eine Freigabeprüfung. Ungeklärte oder verletzte Schutzbedingungen blockieren eine positive Gesamtbehauptung. Ein Häkchen ersetzt keine fachliche Prüfung."
+    ],
+    [
+      "WÖk-ID",
+      "Die Adresse eines Prüfgegenstands im Register. Sie hilft beim Wiederfinden und Verknüpfen. Die ID selbst ist weder Messwert noch KII oder Wirkungsbeweis."
+    ],
+    [
+      "Datenqualität",
+      "Wie verlässlich sind Herkunft, Messung, Vollständigkeit und Aktualität der Daten? Der Fachrechner verwendet 0,8 als gesetzte Lernannahme auf einer Skala von 0 bis 1; 0,6 ist seine Mindestschwelle. Das ist keine berechnete Wahrscheinlichkeit. Reale Qualitätsurteile brauchen dokumentierte Kriterien."
+    ],
+    [
+      "Scorecard",
+      "Eine strukturierte Übersicht von Einzelbefunden, Maßstäben und Prüfstatus. Die Profilpunkte im Fachrechner sind beispielhafte Einordnungen, keine automatisch aus Kilogramm abgeleiteten Messwerte."
+    ],
+    [
+      "Barwert / Diskontierung",
+      "Ein künftiger Geldbetrag wird mit einem begründeten Zinssatz auf heute umgerechnet: Betrag im Jahr t geteilt durch (1 + r) hoch t. Der Fachrechner setzt im Beispiel 5 %; das ist kein allgemein gültiger Satz."
+    ],
+    [
+      "Deadweight und Verdrängung",
+      "Deadweight ist der Anteil, der auch ohne Maßnahme entstanden wäre. Verdrängung bezeichnet eine Verlagerung oder einen entfallenden Nutzen anderswo. Bereits durch einen Vergleich bereinigte Nutzen dürfen nicht noch einmal um dieselbe Gegenfaktik reduziert werden."
+    ]
+  ],
+  "indicators": [
+    {
+      "id": "leistung",
+      "title": "Wie viele Essen wurden ausgegeben?",
+      "role": "KPI · Bezugsgröße",
+      "question": "Vergleichen wir dieselbe Leistung?",
+      "formula": "Q = Summe der ausgegebenen Essen",
+      "variables": "Q: Essen im betrachteten Zeitraum.",
+      "calculation": "1.000 Essen/Tag × 180 Tage",
+      "result": "180.000 Essen/Jahr",
+      "meaning": "Die Küche versorgt täglich gleich viele Menschen. Dadurch lassen sich die Abfallmengen besser vergleichen.",
+      "importance": "Bei weniger Essen könnte weniger Abfall allein an weniger Leistung liegen.",
+      "limit": "Die Menge sagt nichts über Ernährung, Zugang oder Wirkung aus.",
+      "measurement": "Ausgabenzählung täglich; gleiche Definition in beiden Küchen."
+    },
+    {
+      "id": "abfallintensitaet",
+      "title": "Wie viel Essen landet pro Mahlzeit im Abfall?",
+      "role": "KII · beobachteter Zustand",
+      "question": "Wird bei gleicher Leistung weniger weggeworfen?",
+      "formula": "w = W / Q × 1.000",
+      "variables": "W: essbarer Abfall in kg/Tag; Q: Essen/Tag; 1.000: g pro kg.",
+      "calculation": "Vorher: 100 / 1.000 × 1.000 = 100; nachher: 60 / 1.000 × 1.000 = 60",
+      "result": "100 → 60 g je Essen",
+      "meaning": "40 g weniger essbarer Abfall pro ausgegebenem Essen; beobachtete Verringerung 40 %.",
+      "importance": "Eine alltagsnahe Kernkennzahl für SDG 12.3. Sie zeigt Ressourcenverluste bei vergleichbarer Versorgung.",
+      "limit": "Noch kein kausal der Umstellung zugerechneter Erfolg. Essbarer und unvermeidbarer Abfall sind zu trennen.",
+      "measurement": "Getrennt wiegen, gleiche Waage und Messwochen; essbare Abfälle und Essen täglich protokollieren."
+    },
+    {
+      "id": "zusaetzliche-veraenderung",
+      "title": "Welcher Unterschied bleibt nach dem Vergleich?",
+      "role": "KII · bedingte Wirkungsschätzung",
+      "question": "Wie viel wäre ohne die Umstellung vermutlich auch passiert?",
+      "formula": "E = (W_vor − W_nach) − (V_vor − V_nach)",
+      "variables": "W: Abfall der umgestellten Küche; V: Abfall der Vergleichsküche; jeweils kg/Tag bei gleicher Essenzahl.",
+      "calculation": "(100 − 60) − (100 − 90) = 40 − 10",
+      "result": "30 kg zusätzlich vermiedener Abfall/Tag",
+      "meaning": "Die beobachtete Verringerung von 40 kg wird um 10 kg gemeinsame Entwicklung bereinigt.",
+      "importance": "Verhindert, dass der gesamten Veränderung vorschnell die eigene Maßnahme zugeschrieben wird.",
+      "limit": "Kausale Interpretation nur bei tragfähigem Vergleich. Der Vergleich ist kein pauschaler Beweis und das Modell enthält keinen statistischen Vertrauensbereich.",
+      "measurement": "Mehrere Messwochen vor und nach Beginn in beiden Küchen; Trends, Speisepläne, Erfassung und mögliche Übertragung prüfen."
+    },
+    {
+      "id": "jahreswirkung",
+      "title": "Was bedeutet das für ein Jahr?",
+      "role": "KII · hochgerechnetes Potenzial",
+      "question": "Wie groß wäre die zusätzliche Verringerung bei dauerhaft gleichem Tageswert?",
+      "formula": "E_Jahr = E × D",
+      "variables": "E: zusätzlich vermiedener Abfall in kg/Tag; D: Öffnungstage/Jahr.",
+      "calculation": "30 × 180",
+      "result": "5.400 kg/Jahr",
+      "meaning": "Unter der Annahme eines stabilen Tageswerts wären das 5,4 Tonnen pro Jahr.",
+      "importance": "Hilft bei Jahresplanung, Einkauf und Vergleich mit dem Projektziel.",
+      "limit": "Die Hochrechnung ist Wirkungspotenzial. Erst ganzjährig beobachtete, angemessen zugerechnete Daten ergeben einen Jahresbefund. Ferien und Saisonalität beachten.",
+      "measurement": "Jahreskalender, wöchentliche Messung und saisonale Vergleichsdaten; Hochrechnung später durch Messung ersetzen."
+    },
+    {
+      "id": "zielerreichung",
+      "title": "Reicht das für das gesetzte Ziel?",
+      "role": "KII · Zielvergleich",
+      "question": "Wie weit sind wir vom sachlich begründeten Ziel entfernt?",
+      "formula": "Z = E_Jahr / Ziel × 100",
+      "variables": "Ziel: zusätzlich 6.000 kg/Jahr vermeiden; E_Jahr: Modellhochrechnung.",
+      "calculation": "5.400 / 6.000 × 100",
+      "result": "90 % des Modellziels",
+      "meaning": "Zur Zielgröße fehlen rechnerisch 600 kg/Jahr.",
+      "importance": "Macht Nachsteuerung konkret. Zielprüfung fragt zusätzlich, ob 6.000 kg zum Problem und den Möglichkeiten passen.",
+      "limit": "Ein leicht gesetztes Ziel kann hohe Zielerreichung vortäuschen. Zielbezug ersetzt weder Kausalität noch Schutzprüfung.",
+      "measurement": "Ziel vorab begründen und versionieren; monatlicher Soll-Ist-Abgleich bei gleicher Systemgrenze."
+    },
+    {
+      "id": "klimabilanz",
+      "title": "Welche Klimafolge wäre damit verbunden?",
+      "role": "KII · modellierte Teilbilanz",
+      "question": "Werden Emissionen tatsächlich vermieden oder nur verlagert?",
+      "formula": "C_netto = E_Jahr × f − C_zusatz",
+      "variables": "f: angenommene vermiedene kg CO₂e je kg Lebensmittel; C_zusatz: zusätzliche Emissionen in kg CO₂e/Jahr.",
+      "calculation": "5.400 × 2 − 800",
+      "result": "10.000 kg CO₂e/Jahr rechnerisch vermieden",
+      "meaning": "Im Modell verbleiben 10 Tonnen weniger Treibhausgasemissionen nach Abzug zusätzlicher Emissionen, etwa aus Reinigung oder Logistik.",
+      "importance": "Verbindet die Abfallfrage mit SDG 13 und macht Nebenfolgen sichtbar.",
+      "limit": "2 kg CO₂e/kg und 800 kg sind reine Lernannahmen. Echte Faktoren hängen von Lebensmitteln und Bilanzgrenze ab. Weniger Abfall muss Einkauf und Produktion verändern. Kein allgemeiner Klimafaktor.",
+      "measurement": "Lebensmittelmengen und Herkunft, veränderte Bestellungen, passende Lebenszyklusdaten und zusätzliche Energie/Logistik erfassen."
+    },
+    {
+      "id": "versorgung",
+      "title": "Bleiben die Kinder ausreichend versorgt?",
+      "role": "KII · Schutz und Verteilung",
+      "question": "Entsteht der Abfallerfolg auf Kosten der Versorgung?",
+      "formula": "S = ausreichend versorgte Essen / erfasste Essen × 100",
+      "variables": "Für die Lernrechnung: 980 von 1.000 anonym erfassten Mahlzeiten erfüllen das vorab definierte Versorgungskriterium; vor und nach der Umstellung.",
+      "calculation": "980 / 1.000 × 100",
+      "result": "98 % vorher und nachher",
+      "meaning": "Der betrachtete Versorgungsindikator sinkt im Modell nicht. Auch die verbleibenden 2 % müssen geklärt werden.",
+      "importance": "Schützt davor, weniger Abfall durch zu wenig Essen zu erreichen. Zugang, Nährstoffqualität, Allergien und Hygiene brauchen eigene Prüfungen.",
+      "limit": "98 % sind keine zulässige Unterversorgungsquote. Ein Durchschnitt verdeckt Unterschiede. Eine einfache Rückmeldung allein beweist keine ernährungsphysiologische Angemessenheit.",
+      "measurement": "Anonyme Rückmeldungen plus fachliche Ernährungsprüfung; nach relevanten Gruppen prüfen, keine Bewertung einzelner Kinder."
+    },
+    {
+      "id": "verteilung",
+      "title": "Wer profitiert, wer bleibt zurück?",
+      "role": "KII · Verteilungsbefund",
+      "question": "Verbirgt ein guter Durchschnitt eine Benachteiligung?",
+      "formula": "L = S_GruppeA − S_GruppeB",
+      "variables": "S: gleicher Versorgungsindikator in Prozent; gleich große anonym ausgewertete Gruppen im Lernbeispiel.",
+      "calculation": "99 % − 97 %",
+      "result": "2 Prozentpunkte Abstand",
+      "meaning": "Der Durchschnitt von 98 % enthält einen Unterschied zwischen zwei Gruppen. Ursachen, Unsicherheit und Zugangsbarrieren sind zu prüfen.",
+      "importance": "Eine Gesamtverbesserung reicht nicht, wenn einzelne Gruppen schlechter gestellt werden.",
+      "limit": "Prozentpunkte sind nicht Prozent. Der Abstand allein beweist keine Benachteiligung durch die Maßnahme; Vorwerte und Gruppenzusammensetzung fehlen. Kleine Gruppen nicht identifizierbar veröffentlichen.",
+      "measurement": "Aggregierte, datensparsame Erfassung vor und nach der Maßnahme; Gruppendefinition und ausreichende Fallzahlen fachlich begründen."
+    },
+    {
+      "id": "kosteneffizienz",
+      "title": "Wie viel kostet ein zusätzlich vermiedenes Kilogramm?",
+      "role": "Steuerungskennzahl · Kosteneffektivität",
+      "question": "Wie viele Ressourcen braucht die Maßnahme für diese Veränderung?",
+      "formula": "K_E = (I + K) / E_Jahr",
+      "variables": "I: 6.000 EUR Einrichtung; K: 2.000 EUR zusätzliche Jahreskosten; E_Jahr: 5.400 kg.",
+      "calculation": "(6.000 + 2.000) / 5.400",
+      "result": "1,48 EUR je kg im ersten Jahr",
+      "meaning": "Undiskontierte Bruttokosten je zusätzlich vermiedenem kg im Modelljahr. Einsparungen werden hier nicht abgezogen.",
+      "importance": "Hilft beim Vergleich von Alternativen mit derselben Einheit, Zeitgrenze und Schutzqualität.",
+      "limit": "Kein IOI und kein gesellschaftlicher Gesamtnutzen. Bei null Wirkung nicht berechenbar; bei negativer Wirkung kein sinnvoller Vermeidungspreis. Folgejahre getrennt rechnen.",
+      "measurement": "Rechnungen und zusätzliche Arbeitszeit; Kosten abgrenzen und Doppelerfassung vermeiden."
+    },
+    {
+      "id": "ioi",
+      "title": "Welcher direkte Nettonutzen entsteht je Kosteneuro?",
+      "role": "Aggregat · IOI",
+      "question": "Stehen die bewerteten direkten Folgen in einem günstigen Verhältnis zum Ressourceneinsatz?",
+      "formula": "IOI = PV_direkt,netto / PV_R; nur bei offenem Schutz-Gate",
+      "variables": "PV: Barwert, also auf heute umgerechneter Betrag. Im Modell 1 Jahr, r = 5 %; vermiedener Einkauf: 5.400 kg × 3 EUR/kg; weitere monetarisierte Schäden: 1.000 EUR; I = 6.000 EUR heute, K = 2.000 EUR am Jahresende.",
+      "calculation": "PV_direkt,netto = (16.200 − 1.000) / 1,05 = 14.476,19 EUR; PV_R = 6.000 + 2.000 / 1,05 = 7.904,76 EUR; Quotient = 14.476,19 / 7.904,76",
+      "result": "1,83 EUR/EUR als bedingter Modellquotient",
+      "meaning": "1 EUR abgezinste Ressourcen steht 1,83 EUR direktem Nutzen nach den angesetzten Schäden gegenüber. Ressourcen werden im Zähler nicht nochmals abgezogen.",
+      "importance": "Verknüpft Wirkung und Ressourcen mit sichtbarer Preisbasis. Ein Verhältnis über 1 ist allein noch keine Freigabe.",
+      "limit": "3 EUR/kg und 1.000 EUR Schaden sind Lernannahmen, keine Bewertung realer Lebensmittel oder Gesundheit. Einkauf muss tatsächlich sinken. Klima wird hier nicht zusätzlich monetarisiert. Keine doppelte Gegenfaktik: 5.400 kg sind bereits um den Vergleich bereinigt.",
+      "measurement": "Einkaufsbelege und separate Schadensbewertung, identische Preisbasis; Abgrenzung der Kosten und Nutzen dokumentieren."
+    },
+    {
+      "id": "tsroi",
+      "title": "Kommt ein belegter Systemnutzen hinzu?",
+      "role": "Aggregat · T-SROI v1.1",
+      "question": "Ändert sich über die direkte Einsparung hinaus etwas an Regeln oder Handlungsmöglichkeiten?",
+      "formula": "T-SROI = (PV_direkt,netto + PV_transformativ) / PV_R; nur bei offenem Schutz-Gate",
+      "variables": "PV_transformativ: separat belegter, kausal begrenzter und monetarisierter zusätzlicher Nutzenstrom. Allgemein wird jeder Jahresstrom durch (1 + r)^t geteilt.",
+      "calculation": "Für zusätzliche Systemfolgen liegt im Lernfall kein Beleg vor: 0 EUR werden angesetzt. (14.476,19 + 0) / 7.904,76",
+      "result": "1,83 : 1 als bedingter Modellquotient",
+      "meaning": "T-SROI entspricht hier dem IOI. Dass andere Küchen später das Verfahren übernehmen könnten, rechtfertigt keinen Aufschlag.",
+      "importance": "Prüft den systemischen Anspruch an eigenen Belegen, statt ihn mit einem frei gewählten Faktor zu belohnen.",
+      "limit": "Ansatz von 0 bedeutet keinen belegten Zusatznutzen in der Rechnung, nicht bewiesene Wirkungslosigkeit. Für weitere Jahre braucht es eigene Zeitreihen, Gegenfaktik und Prüfung von Doppelzählungen.",
+      "measurement": "Eigenen Wirkpfad für Übernahme, Regeln, Infrastruktur oder Lieferverträge und getrennte Begünstigte dokumentieren. Fachlich führend: T-SROI-Rechenstandard v1.1."
+    },
+    {
+      "id": "unsicherheit",
+      "title": "Bleibt die Rechnung bei vorsichtigeren Annahmen tragfähig?",
+      "role": "Prüfkennzahl · Szenario",
+      "question": "Was passiert, wenn der angesetzte Nutzen niedriger ausfällt?",
+      "formula": "PV_N_unten = [B × (1 − u) − S] / (1 + r)",
+      "variables": "B: bereits kausal begrenzter Nutzen 16.200 EUR; u: beispielhafter Abschlag 20 %; S: Schaden 1.000 EUR; r: 5 %.",
+      "calculation": "[16.200 × 0,80 − 1.000] / 1,05",
+      "result": "11.390,48 EUR konservativer Netto-Nutzenbarwert",
+      "meaning": "Der beanspruchte Nutzen wird kleiner gerechnet, der Schaden bleibt vollständig enthalten. Die Untergrenze bleibt im Modell positiv.",
+      "importance": "Zeigt eine Bedingung des Schutz-Gates und macht die Rechnung weniger abhängig vom günstigsten Szenario.",
+      "limit": "20 % sind eine Lernannahme, kein statistisches Konfidenzintervall. Auch Mengen, Kausalannahmen, Preise und Dauer müssen einzeln variiert werden.",
+      "measurement": "Plausible obere und untere Annahmen mit Quellen; Sensitivität und verbleibende Wissenslücken ausweisen."
+    },
+    {
+      "id": "nwi",
+      "title": "Wie werden verschiedene Wirkungsfelder eingeordnet?",
+      "role": "Aggregat · WÖk-Netto-Wirkungsindex",
+      "question": "Was zeigt ein zusammengefasstes Profil, und was verbirgt es?",
+      "formula": "NWI_roh = Summe(w_i × s_i); Summe(w_i) = 1",
+      "variables": "s_i: begründete Profilwerte auf derselben Modellskala von −3 bis +3; w_i: offengelegte Gewichte. Beispiel: Mensch 0, Planet +2, Demokratie 0; alle Gewichte 1/3.",
+      "calculation": "(0 + 2 + 0) / 3",
+      "result": "+0,67 Profilpunkte vor Schutzprüfung",
+      "meaning": "Ein illustrativer Profilwert. Er ist weder kg, Euro noch die gemessene Gesamtwirkung. Die Skala ist eine zusätzliche, normativ begründungsbedürftige Übersetzung.",
+      "importance": "Kann einen Überblick geben, sofern Einzelbefunde, Skalen, Gewichte und Schutzprüfung sichtbar bleiben.",
+      "limit": "Die gesetzten Scores sind Lernannahmen, nicht aus 5.400 kg ableitbar. Fehlende Daten dürfen nie als 0 eingesetzt werden. Ordinale Skalen werden nicht ohne Begründung wie metrische Daten verrechnet. Kein Nationaler Wohlfahrtsindex.",
+      "measurement": "Benchmark und Skalenanker vorab dokumentieren; Rohdaten, Gewichtung, fehlende Werte und Prüfurteil getrennt speichern."
+    },
+    {
+      "id": "schutz",
+      "title": "Welche Grenze darf ein Durchschnitt nicht verdecken?",
+      "role": "Prüfregel · Reverse Merit Order",
+      "question": "Darf eine gute Zahl eine kritische negative Wirkung überdecken?",
+      "formula": "FinalScore = min(s_Mensch, s_Planet, s_Demokratie); harte Grenze → Freigabe gesperrt",
+      "variables": "FinalScore ist in dieser Demo der schwächste Kernprofilwert. Harte Schutzgrenzen gelten zusätzlich und unabhängig von der Punkteskala.",
+      "calculation": "min(0, +2, 0) = 0; bei Mensch −1: min(−1, +2, 0) = −1",
+      "result": "Schwächstes Kernfeld: 0; im Gegenbeispiel −1",
+      "meaning": "Ein gutes Planetergebnis hebt einen negativen Menschenbefund nicht auf. Nichtkompensation schützt harte Grenzen; Reverse Merit Order lenkt die Bearbeitung zuerst auf kritische negative Wirkungen.",
+      "importance": "Verhindert Schönrechnung durch Mittelwerte. Die konkrete Entscheidung bleibt fachlich und gegebenenfalls rechtlich zu begründen.",
+      "limit": "Kein amtlicher Standard und keine Personenbewertung. Ein rechnerisch nichtnegatives Profil beweist nicht, dass alle relevanten Folgen geprüft wurden. Bei offener Datenlage bleibt die Freigabe offen.",
+      "measurement": "Schutzanforderungen und Zuständigkeit vor Beginn festlegen; schwere Befunde unmittelbar bearbeiten, übrige Evidenz nachvollziehbar prüfen."
+    }
+  ],
+  "integration": "Die WÖk verbindet bestehende Ansätze: SDGs geben den globalen Zielrahmen, SDG+ ergänzt WÖk-eigene Schutz- und Referenzräume. Theory of Change kann den Wirkpfad erklären, Evaluation die Zurechnung untersuchen, Lebenszyklusanalysen Umweltfolgen einordnen und Reporting die Daten bereitstellen. Impact Controlling verbindet die Befunde mit Verantwortung, Optionsvergleich und späterer Nachsteuerung. Die WÖk beansprucht eine systematische Verbindung dieser Aufgaben; eine empirisch bewiesene Überlegenheit folgt daraus nicht.",
+  "publicContext": "Bei einer kommunalen Schulküche gelten die jeweils einschlägigen kommunalen Haushalts-, Vergabe- und Fachregeln. Bundes-GGO oder eNAP gelten hier nicht automatisch. Für Bundesregelungsvorhaben bestehen bereits Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO, eNAP/eGFA sowie die Deutsche Nachhaltigkeitsstrategie (DNS); bei finanzwirksamen Bundesmaßnahmen ist § 7 BHO mit den VV-BHO zu prüfen. Die WÖk führt Alternativenprüfung oder spätere Erfolgskontrolle nicht erstmals ein.",
+  "sources": [
+    [
+      "Agenda 2030 und SDG 12.3: Lebensmittelverluste und -verschwendung",
+      "https://sdgs.un.org/goals/goal12"
+    ],
+    [
+      "World Bank: Differenz-von-Differenzen und die Grenzen von Trendtests",
+      "https://blogs.worldbank.org/en/impactevaluations/revisiting-difference-differences-parallel-trends-assumption-part-i-pre-trend"
+    ],
+    [
+      "Deutsche Nachhaltigkeitsstrategie 2025",
+      "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540"
+    ],
+    [
+      "WÖk: T-SROI-Rechenstandard v1.1",
+      "/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/"
+    ],
+    [
+      "WÖk: Methodik und Integration",
+      "/methodik/"
+    ]
+  ]
+}

@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import {escapeHtml as e} from '../lib/explainer-components.mjs';
+const file='fragen/index.html';
+let html=fs.readFileSync(file,'utf8');
+const questions=JSON.parse(fs.readFileSync('content/site/core-questions.json','utf8'));
+const start='<!-- core-questions-20260906:start -->',end='<!-- core-questions-20260906:end -->';
+html=html.replace(new RegExp(`${start}[\\s\\S]*?${end}\\s*`,'g'),'');
+const block=`${start}<section class="section" aria-labelledby="anwendung-fragen-title"><h2 id="anwendung-fragen-title">Referenzrahmen und konkrete Anwendung</h2><div class="card-grid three">${questions.map(x=>`<article class="card" id="${e(x.id)}"><h3 class="card-title">${e(x.question)}</h3><p>${e(x.answer)}</p><a class="text-link" href="${e(x.href)}">${e(x.label)}</a></article>`).join('')}</div></section>${end}`;
+html=html.replace('</main>',block+'\n</main>');fs.writeFileSync(file,html);
+console.log(`Core FAQ: ${questions.length} linked answers rendered.`);

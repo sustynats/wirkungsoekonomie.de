@@ -1,0 +1,39 @@
+{
+  "reviewedAt": "2026-09-06",
+  "releaseTag": "woek-lernweg-2026-09-06",
+  "supersedesSources": [
+    "scripts/portal/build-impact-controlling.mjs"
+  ],
+  "sourceHashes": {
+    "content/site/home-explainer.json": "f6114f537f6e88192534fa03853d1f3157e13a3f8444a3095ba2a64be6faaca5",
+    "content/site/impact-controlling-course.json": "575489ee9b62cf77ca381173e086dba2a9f0ea0bfa8174a59e86d0f8aa2d5b9f",
+    "scripts/lib/impact-course.mjs": "5eea0a3d227f05bb0e43757111f26ef97ffe3a8f33c2b6ecb2422f3702d65e61",
+    "scripts/site/build-home-explainer.mjs": "91a011b4c0720d1549628b807a439a11b73452f27be621b2dbd3a486367fe46e",
+    "scripts/portal/build-impact-controlling.mjs": "c2fbc2af754bb5a2c89633db11bf7b8c18d9e136959146e7a81d5be260d21f28",
+    "assets/js/kitchen-impact.js": "d83f2f8bcee23252df3bb04da0b932b3ba4899d4a3f304a33a985cb69fe73343",
+    "assets/js/impact-controlling-rechner.js": "3040407d73422420133b556d95bd38907c3b5518217f7e9c17c371140f48d61a",
+    "scripts/publications/build-learning-editions.py": "f5ae0b0542b7ef20573b25f1689555c68624366a459a17a565bd711d7a0fdccd"
+  },
+  "files": [
+    {
+      "filename": "woek-einfach-erklaert-2026-09-06.pdf",
+      "title": "Wirkungsökonomie einfach erklärt",
+      "kind": "explainer",
+      "supersedes": null,
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-lernweg-2026-09-06/woek-einfach-erklaert-2026-09-06.pdf",
+      "sha256": "39d5ab681db53553022c6ab1acd79be678b62eca69a3f7d6de5bc6d8435b0542",
+      "pages": 2,
+      "bytes": 46882
+    },
+    {
+      "filename": "woek-impact-controlling-lernweg-2026-09-06.pdf",
+      "title": "Impact Controlling: vollständiger Lernweg",
+      "kind": "explainer",
+      "supersedes": "woek-impact-controlling-erklaerung-2026-09-05.pdf",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/woek-lernweg-2026-09-06/woek-impact-controlling-lernweg-2026-09-06.pdf",
+      "sha256": "40f1e480a6eb667038aad55302d0a6ea77e62411af4560c585954ec78a77d477",
+      "pages": 21,
+      "bytes": 80742
+    }
+  ]
+}

@@ -6,6 +6,7 @@ import { ImpactProcess, ExampleCards, FeedbackLoop } from "../lib/explainer-comp
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const impactExplanation = JSON.parse(fs.readFileSync(path.join(ROOT, "content/site/impact-controlling.json"), "utf8"));
+import { course, renderCourse, renderSimpleCalculator, indicatorCard } from "../lib/impact-course.mjs";
 const SITE = "https://wirkungsoekonomie.de";
 const DATE = "2026-09-05";
 const CSS_VERSION = "20260525-result-interpretation";
@@ -212,7 +213,7 @@ const go10ToolCards = [
 ];
 
 const dossierPages = [
-  ["impact-of-investment", "Impact-of-Investment (IOI)", "Kennzahl für positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz.", "IOI verbindet NWI, Investitionssumme und Entscheidungsvorlage: Er zeigt, ob Kapital in reale Zustandsverbesserung übersetzt wird, ohne rote Linien, Datenqualität oder demokratische Abwägung zu ersetzen."],
+  ["impact-of-investment", "Impact-of-Investment (IOI)", "Kennzahl für positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz.", "IOI vergleicht direkt monetarisierten, kausal begrenzten Nettonutzen mit der Ressourcenbasis. NWI-Profilpunkte werden nicht in Euro umgerechnet; Schutzgrenzen und Datenprüfung gelten zusätzlich."],
   ["t-sroi", "T-SROI", "Transformational Social Return on Investment als Instrument für Investitionswirkung, Prävention, Transformation und systemische Rendite.", "T-SROI macht sichtbar, welche gesellschaftlichen, ökologischen und demokratischen Zustandsveränderungen durch Investitionen entstehen und wie sie im Verhältnis zum Ressourceneinsatz bewertet werden können."],
   ["nwi", "Netto-Wirkungs-Index", "Operative Kennzahl für positive, negative und neutrale Wirkung im WÖk-Rahmen.", "Der NWI verdichtet Wirkung nicht zu einer moralischen Behauptung, sondern ordnet geprüfte positive und negative Zustandsveränderungen transparent ein."],
   ["woek-ids", "WÖk-IDs", "Indikatorenarchitektur für SDGs, SDG+, Standards, Datenquellen und Prüfstatus.", "WÖk-IDs schaffen die methodische Adresse jedes Wirkungsindikators und verhindern Dopplung, Beliebigkeit und unklare Quellen."],
@@ -332,7 +333,7 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation"><a href="${base}index.html">Start</a></nav>
     </header>
-    <main>
+    <main${["werkzeuge/impact-controlling/index.html", "erleben/impact-controlling-rechner/index.html"].includes(rel) ? ' data-learning-page' : ''}>
       <p class="print-meta">Wirkungsökonomie · ${escapeHtml(title.replace(/\s+\|.*$/, ""))} · ${canonical} · Onlinefassung · Druckdatum siehe Druckdialog</p>
 ${rel === "werkzeuge/impact-controlling/index.html" ? body(base, route).replaceAll('<p class="card-text">', '<p class="card-text" data-publication-abstract>').replaceAll('<p>Kausal begrenzte', '<p data-publication-abstract>Kausal begrenzte').replaceAll('<p>621 IDs', '<p data-publication-abstract>621 IDs').replaceAll('<p>Wie Nachhaltigkeitsberichterstattung', '<p data-publication-abstract>Wie Nachhaltigkeitsberichterstattung') : body(base, route)}
     </main>
@@ -715,49 +716,21 @@ function overviewPage() {
   page({
     rel: "werkzeuge/impact-controlling/index.html",
     title: "Impact Controlling: Wirkung prüfen und Entscheidungen verbessern | Wirkungsökonomie",
-    description: "Impact Controlling verständlich erklärt: vom Schulungsbeispiel zur Entscheidung, mit Wirkpfad, Evidenz, Schutzgrenzen, WÖk-Netto-Wirkungsindex, IOI und T-SROI. Demo und aktuelle Methodenpapiere.",
+    description: "Impact Controlling einfach erklärt: ein durchgängiges Küchenbeispiel mit Kennzahlen, Formeln, Rechnungen, Messweisen und Grenzen. Vom Vergleich zur Entscheidung.",
     searchSection: "Werkzeuge",
     searchType: "Methodenübersicht",
     body: (base) => `${hero(base, {
       kicker: "Methodenübersicht · mit interaktiver Demo",
       title: "Impact Controlling",
-      subtitle: "Nicht nur zählen, was getan wurde. Prüfen, was sich dadurch verändert.",
-      text: "Impact Controlling verbindet Wirkungsfragen, Daten und Entscheidungen: Was verändert sich für wen, wie sicher wissen wir das, und was muss deshalb angepasst werden? Die Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
+      subtitle: "Was verändert unsere Maßnahme, und was lernen wir daraus?",
+      text: course.definition,
       action: `<a class="btn btn-primary" href="${href(base, "erleben/impact-controlling-rechner/")}">Mit einem Beispiel ausprobieren</a><a class="btn btn-secondary" href="#logic">Zuerst die Logik verstehen</a><a class="hero-secondary-link" href="#methodenpapiere">Aktuelle Fachgrundlagen</a>`,
     })}
-    <section class="section" aria-labelledby="logic">
-      <div class="section-header"><p class="hero-kicker">Gedankenexperiment · keine gemessene Fallstudie</p><h2 id="logic">Eine Schulung ist noch kein Lernerfolg</h2><p>Ein Unternehmen bietet eine Sicherheitsschulung an. Die Teilnahmeliste ist vollständig. Aber arbeiten die Menschen anschließend sicherer? Und liegt eine Veränderung an der Schulung oder etwa an neuen Maschinen?</p></div>
-      ${ExampleCards([
-        {label: "Leistung", title: "100 Menschen nehmen teil", text: "Teilnehmende und Schulungsstunden beschreiben den Output. Sie zeigen, dass eine Leistung stattgefunden hat."},
-        {label: "Veränderung", title: "Gefahren werden früher erkannt", text: "Beobachtete Veränderungen von Wissen, Verhalten oder Unfallhäufigkeit können Wirkungsbefunde sein. Messmethode, Zeitraum und Ausgangszustand gehören dazu."},
-        {label: "Entscheidung", title: "Was soll sich als Nächstes ändern?", text: "Ein Vergleich mit der Entwicklung ohne Schulung hilft bei der Zurechnung. Vielleicht braucht es andere Arbeitsabläufe oder technische Sicherungen statt mehr Unterricht."},
-      ])}
-      <p>Wirkung ist neutral und relational: eine tatsächliche Zustandsveränderung. Eine erwartete Verbesserung ist Wirkungspotenzial; eine mögliche unerwünschte Folge ist Wirkungsrisiko. Erst begründete Evidenz und Referenzen erlauben eine Bewertung.</p>
-      ${ImpactProcess(impactExplanation.process)}
-    </section>
-    <section class="section section-soft" aria-labelledby="iooi-evidenz"><h2 id="iooi-evidenz">Erst die Frage, dann das Instrument</h2>
-      <p>Die WÖk beginnt mit Problem- und Zielprüfung. Theory of Change und IOOI können Wirkungspfade als optionale Anschlussmethoden strukturieren. Sie sind keine Voraussetzung für jede WÖk-Analyse und keine automatische Evidenz für Kausalität.</p>
-      <div class="table-wrap" role="region" aria-label="Kennzahlen unterscheiden" tabindex="0"><table class="data-table"><caption>Welche Frage beantwortet welches Instrument?</caption><thead><tr><th scope="col">Frage</th><th scope="col">Instrument</th><th scope="col">Grenze</th></tr></thead><tbody>
-        <tr><th scope="row">Welche Aspekte müssen geprüft werden?</th><td>WÖk-IDs und Register</td><td>Eine ID adressiert einen Prüfgegenstand. Ein MasterItem ist nicht automatisch ein messbarer oder validierter Indikator.</td></tr>
-        <tr><th scope="row">Wie unterscheiden sich nichtmonetäre Folgen?</th><td>Scorecard und WÖk-Netto-Wirkungsindex</td><td>Gewichte, Skalen und Datenqualität müssen begründet sein. Fehlende Daten sind kein neutraler Wert.</td></tr>
-        <tr><th scope="row">Welcher direkte Nettonutzen entsteht je Kosteneuro?</th><td>Impact-of-Investment (IOI)</td><td>Nur belegte und kausal begrenzte monetäre Ströme innerhalb einer offengelegten Bilanzgrenze.</td></tr>
-        <tr><th scope="row">Welcher zusätzliche transformative Nutzen ist belegbar?</th><td>T-SROI nach Rechenstandard v1.1</td><td>Direkte und transformative Nutzenreihen getrennt belegen und diskontieren. Keine freien Transformationsmultiplikatoren und keine Umrechnung von Profilpunkten in Euro.</td></tr>
-      </tbody></table></div>
-      <p><strong>Nichtkompensation und Reverse Merit Order:</strong> Harte Schutzgrenzen werden vor einer Freigabe geprüft. Schwere unzulässige Schäden werden nicht durch positive Teilwerte aufgewogen; kritische negative Wirkungen erhalten Vorrang in der Bearbeitung. Ein guter Quotient hebt ein gesperrtes Schutz-Gate nicht auf.</p>
-      ${FeedbackLoop({title: "Reporting wird durch Reaktion zur Rückkopplung", text: "Daten werden mit Ausgangszustand, Gegenfaktum und Unsicherheit geprüft. Verantwortliche legen fest, wann eine Maßnahme fortgesetzt, geändert oder beendet wird. Ein Dashboard allein trifft diese Entscheidung nicht.", action: "Prüffrage → Befund → begründete Entscheidung → spätere Überprüfung."})}
-      <p><a href="${href(base, "methodik/")}">Wie die WÖk bestehende Ansätze integriert</a> · <a href="${href(base, "verstehen/iooi-und-wirkungsoekonomie/")}">IOOI und WÖk genauer unterscheiden</a></p>
-    </section>
-    <section class="section" aria-labelledby="context-tools"><h2 id="context-tools">Passend weiterarbeiten</h2>
-      ${cardGrid(base, [
-        {title: "Die Logik ausprobieren", text: "Die interaktive Demo zeigt Eingaben, Kennzahlen, Datenqualität und Schutz-Gates anhand modellhafter Annahmen.", href: "erleben/impact-controlling-rechner/", label: "Demo öffnen"},
-        {title: "Eine reale Prüfung vorbereiten", text: "Datenbasis, Systemgrenze, Wirkpfad, Gegenfaktum und Verantwortung festlegen, bevor gerechnet wird.", href: "methodik/datenbasis.html", label: "Datenanforderungen lesen"},
-        {title: "Im Management anwenden", text: "Die Prüfung mit Planung, Umsetzung, Verantwortlichkeiten und Lernen im Unternehmen verbinden.", href: "fuer/unternehmen/impact-controlling/", label: "Unternehmensanwendung ansehen"},
-      ])}
-      <p>Die Demo ist keine validierte Bewertung eines Unternehmens oder einer Person. Für einen realen Fall müssen Quellen, Annahmen, Schwellen und Zuständigkeiten zusätzlich geprüft werden.</p>
-    </section>
+    <div id="logic" data-no-glossary>${renderCourse()}</div>
+    <section class="section"><h2>Mit dem Beispiel selbst rechnen</h2><p>Der einfache Rechner führt in drei Schritten von der Beobachtung über den Vergleich zur Jahresplanung. Die fachliche Geldrechnung ist eine optionale Vertiefung.</p><a class="btn btn-primary" href="${href(base, "erleben/impact-controlling-rechner/")}">Den einfachen Rechner öffnen</a></section>
     <section class="section section-soft" id="vertiefung-arbeitsmaterial" data-publication-hub="curated" aria-labelledby="vertiefung-arbeitsmaterial-title">
       <h2 id="vertiefung-arbeitsmaterial-title">Fachgrundlagen und Materialien</h2>
-      <p data-pdf-exclude>${editionLink("woek-impact-controlling-erklaerung-2026-09-05.pdf", "Diese Erklärung als PDF")}</p>
+      <p data-pdf-exclude>${editionLink("woek-impact-controlling-lernweg-2026-09-06.pdf", "Den vollständigen Lernweg als PDF lesen")}</p>
       <p>Für aktuelle Rechnungen ist der T-SROI-Rechenstandard v1.1 maßgeblich. Frühere konzeptionelle Papiere bleiben nachvollziehbar, begründen aber keine abweichende aktuelle Rechenregel.</p>
       <div id="methodenpapiere" class="card-grid three">
         <article class="card"><p class="card-kicker">Führende Rechenfassung · v1.1</p><h3 class="card-title">T-SROI: Nutzen, Kosten und Schutz-Gate</h3><p>Kausal begrenzte und diskontierte Netto-Nutzenrechnung. Profilwerte, Geldströme und Schutzentscheidung bleiben getrennt.</p><div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div></article>
@@ -768,10 +741,9 @@ function overviewPage() {
       <details class="explanation-details" id="dossiers"><summary>Konzeptionelle Dossiers und ergänzende Downloads</summary><p>Die Dossiers vertiefen einzelne Begriffe und Anwendungsfragen. Bei abweichender älterer Rechenlogik gilt die oben genannte aktuelle Fachreferenz.</p>${cardGrid(base, dossierPages.map(([slug,title,text]) => ({title,text,href: `werkzeuge/impact-controlling/dossiers/${slug}/`,label: "Dossier lesen"})))}<p><a href="${href(base, "werkzeuge/impact-controlling/dossier/")}">Zusammenhängendes Gesamtdossier lesen</a></p>${downloadBlock(base, impactDownloads)}</details>
     </section>
     <section class="section" id="impact-crosslinks"><h2>Von der Analyse zur Anwendung</h2><p id="political-implementation">Bei öffentlichen Entscheidungen werden DNS, Gesetzesfolgenabschätzung, eNAP und die jeweils anwendbare Haushaltsprüfung einbezogen. Die WÖk führt Folgenprüfung nicht erstmals ein. Ihr Zusatzbefund muss für das konkrete Vorhaben gezeigt werden.</p><p><a href="${href(base, "methodik/#staatliche-nachhaltigkeitsarchitektur")}">Staatliche Prüfarchitektur und WÖk</a> · <a href="${href(base, "werkzeuge/")}">Alle Methoden und Werkzeuge</a></p></section>
-    ${sdgBlock()}
-    ${bookBlock(base)}
+    <details class="section explanation-details"><summary>SDGs, SDG+ und Kapitel im Grundlagenwerk</summary>${sdgBlock()}${bookBlock(base)}</details>
     <details class="section explanation-details" id="external-sources"><summary>Externe Fachquellen</summary>${externalSourcesBlock().replace('id="external-sources"', 'id="external-sources-liste"')}</details>
-    <p class="meta-line">Erläuterung geprüft am <time datetime="2026-09-05">5. September 2026</time>. <a href="${href(base, "referenz/aktualisierung/")}">Stand und Präzisierungen der Grundlagen</a>.</p>`,
+    <p class="meta-line">Erläuterung geprüft am <time datetime="2026-09-06">6. September 2026</time>. <a href="${href(base, "referenz/aktualisierung/")}">Stand und Präzisierungen der Grundlagen</a>.</p>`,
   });
 }
 
@@ -852,7 +824,7 @@ function methodPaperOverviewPage() {
   page({
     rel: "werkzeuge/impact-controlling/methodenpapiere/index.html",
     title: "Methodenpapiere Impact Controlling | Wirkungsökonomie",
-    description: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI, IOI und T-SROI als Online-Volltext mit DOCX- und PDF-Downloads.",
+    description: "Ausführliche Methodenpapiere zu WÖk-IDs, Scorecards, NWI, IOI und T-SROI als Online-Volltext mit PDF-Downloads.",
     searchSection: "Werkzeuge",
     searchType: "Methodenpapier",
     body: (base, route) => `${hero(base, {
@@ -1086,6 +1058,8 @@ function tsroiInteractiveExample() {
 function toolExplanationPages() {
   for (const [rel, title, subtitle, description, dossier, glossaryTerm] of toolPages) {
     const relatedPapers = methodPapersForTool(title);
+    const exampleId = ({"Impact-of-Investment (IOI)":"ioi", "T-SROI":"tsroi", "Netto-Wirkungs-Index":"nwi", "Scorecards":"nwi", "Reverse Merit Order":"schutz", "KII statt KPI":"zusaetzliche-veraenderung"})[title];
+    const example = course.indicators.find(item => item.id === exampleId);
     const isPublicTSROIPage = rel === "werkzeuge/t-sroi/index.html";
     const resourceLabel = dossier.includes("methodenpapiere/") ? "Rechenstandard lesen" : "Dossier lesen";
     const supporting = glossaryTerm
@@ -1109,6 +1083,7 @@ function toolExplanationPages() {
         action: `<a class="btn btn-primary" href="${href(base, dossier)}">${resourceLabel}</a>`,
         supporting,
       })}
+      ${example ? `<section class="section course-section" data-no-glossary><h2>Am selben Küchenbeispiel nachvollziehen</h2><p>Die Zahlen sind erfundene Lernannahmen. Hier ist der Rechenweg für diese Methode; im vollständigen Lernweg stehen Ausgangsdaten, Vergleich und alle Nebenfolgen zusammen.</p>${indicatorCard({...example, id: example.id+'-beispiel'})}<p><a class="text-link" href="/werkzeuge/impact-controlling/#beispiel">Das vollständige Impact Controlling Schritt für Schritt</a></p></section>` : ""}
       <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
       <section class="section narrow">${statusMeta("Methodenseite / Webfassung")}</section>
       <section class="section">
@@ -1123,7 +1098,7 @@ function toolExplanationPages() {
         <div class="section-header">
           <p class="hero-kicker">Methodenpapier</p>
           ${sectionTitle("methodenpapier", "Ausführliches Methodenpapier")}
-          <p>Die kurze Toolseite bleibt Einstieg. Das Methodenpapier ist die ausführliche fachliche Grundlage mit DOCX- und PDF-Download.</p>
+          <p>Die kurze Toolseite bleibt Einstieg. Das Methodenpapier ist die ausführliche fachliche Grundlage mit PDF-Download.</p>
         </div>
         <div class="card-grid three">${relatedPapers.map((paper) => `<article class="card">
           <p class="card-kicker">Methodenpapier ${paper.number}</p>
@@ -1167,7 +1142,7 @@ function tsroiLegacyAliasPage() {
 }
 
 function calculatorPage() {
-  const description = "Einfache Demo für Scorecard, Netto-Wirkungs-Index, IOI und T-SROI. Modellhaft, keine Prüfung und keine Beratung.";
+  const description = "Impact Controlling Schritt für Schritt: Abfallmengen vergleichen und eine Jahresgröße berechnen. Einfache Lernrechnung mit optionaler Geld- und Profilbewertung.";
 
   page({
     rel: "erleben/impact-controlling-rechner/index.html",
@@ -1176,18 +1151,19 @@ function calculatorPage() {
     searchSection: "Erleben",
     searchType: "Demo",
     extraScripts: [
+      "assets/js/kitchen-impact.js?v=20260906",
       "assets/js/impact-calculations.js?v=20260802-fail-closed-v2",
       "assets/js/impact-controlling-rechner.js?v=20260802-fail-closed-v2",
     ],
     body: (base, route) => `${hero(base, {
       kicker: "Demo",
       title: "Impact-Controlling-Rechner",
-      subtitle: "Scorecard, NWI, IOI und T-SROI modellhaft ausprobieren.",
-      text: "Die Demo zeigt die Grundlogik der Methoden. Sie ist keine Prüfung, keine Beratung und keine amtliche Einstufung.",
+      subtitle: "Zwei Zahlen eingeben. Den Vergleich verstehen. Weiterdenken.",
+      text: "Eine Schulküche möchte weniger Essen wegwerfen. Rechne mit, was sich nach einer Umstellung verändert. Alle Werte sind erfundene Lernannahmen.",
       action: `<a class="btn btn-primary" href="${href(base, "werkzeuge/impact-controlling/")}">Methodik öffnen</a>`,
     })}
-    <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
-    <section class="section narrow">${statusMeta("Demo")}</section>
+    ${renderSimpleCalculator()}
+    <details class="section explanation-details" id="fachrechner"><summary>Vertiefung: Geldrechnung und Schutzprofil im selben Küchenbeispiel</summary><p>Dieser Fachrechner verwendet eigene, unten sichtbare Modellannahmen. Änderungen im einfachen Mengenrechner werden bewusst nicht automatisch in Euro oder Profilpunkte übersetzt: Dafür müssten Preise, Zurechnung und Schutzbedingungen erneut begründet werden. <a href="/werkzeuge/impact-controlling/#ioi">Alle Formeln am Küchenbeispiel erklärt</a>.</p>
     <section class="section product-calculator-section" aria-labelledby="impact-calculator-title">
       <div class="product-calculator" data-impact-controlling-calculator>
         <div class="section-header">
@@ -1199,7 +1175,8 @@ function calculatorPage() {
           <form class="card calculator-form">
             <label>Beispiel
               <select name="preset">
-                <option value="praevention">Präventionsprojekt</option>
+                <option value="schulkueche">Schulküche (gemeinsames Lernbeispiel)</option>
+                <option value="praevention">Weiteres Beispiel: Präventionsprojekt</option>
                 <option value="produkt">Produkttransformation</option>
                 <option value="lieferkette">Lieferkettenprogramm</option>
               </select>
@@ -1295,11 +1272,8 @@ function calculatorPage() {
         </div>
       </div>
     </section>
-    ${toolGrid(base)}
-    ${politicalBlock(base)}
-    ${sdgBlock()}
-    ${bookBlock(base)}
-    ${downloadBlock(base, [{ label: "Methodik und Grenzen lesen", href: "werkzeuge/impact-controlling/dossier/#methodik-demo" }])}`,
+    </details>
+    <section class="section course-section"><h2>Verstehen, was hinter den Zahlen steht</h2><p><a href="/werkzeuge/impact-controlling/#indikatoren">Jede Kennzahl mit Formel und Beispiel</a> · <a href="/werkzeuge/impact-controlling/#entscheidung">Schutzgrenzen und nächste Entscheidung</a> · <a href="/werkzeuge/">Weitere Werkzeuge</a></p></section>`,
   });
 }
 
