@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { editorialLabel } from "./systemic-analysis.mjs";
 import { readerHtmlHasEditorialResidue } from "./reader-copy.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -140,7 +141,7 @@ for (const analysis of editorialStore.analyses.filter((item) => item.status === 
   if (!fs.existsSync(analysisFile)) fail(`EDITORIAL_PAGE_MISSING:${analysis.analysis_id}`);
   const html = fs.readFileSync(analysisFile, "utf8");
   if (readerHtmlHasEditorialResidue(html)) fail(`EDITORIAL_PAGE_EDITORIAL_RESIDUE:${analysis.analysis_id}`);
-  if (!html.includes("WÖk-Analyse") || !html.includes("Natalie Weber") || !html.includes("natalie-weber-woek-analyse.jpg") || !html.includes(analysis.transparency_note) || !html.includes(`wirkungsticker/analyse/${analysis.slug}/`) || !html.includes(`../../${story.slug}/`) || !html.includes('"@type":"Article"')) fail(`EDITORIAL_PAGE_INVALID:${analysis.analysis_id}`);
+  if (!html.includes(editorialLabel(analysis)) || !html.includes("Natalie Weber") || !html.includes("natalie-weber-woek-analyse.jpg") || !html.includes(analysis.transparency_note) || !html.includes(`wirkungsticker/analyse/${analysis.slug}/`) || !html.includes(`../../${story.slug}/`) || !html.includes('"@type":"Article"')) fail(`EDITORIAL_PAGE_INVALID:${analysis.analysis_id}`);
   const readerIndex = readerOrder.indexOf(`analyse/${analysis.slug}/`);
   const nextHref = readerOrder[readerIndex + 1];
   const analysisNextHref = nextHref?.startsWith("analyse/") ? `../${nextHref.slice("analyse/".length)}` : nextHref ? `../../${nextHref}` : null;

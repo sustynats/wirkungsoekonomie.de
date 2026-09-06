@@ -93,6 +93,25 @@ test('the existing 95 percent budget reserve is observable as a budget stop', ()
   data.report.budget_stage = 1;
   assert.equal(evaluateChecks(data, now).checks.find(c => c.id === 'budget').ok, true);
 });
+
+test('budget stops are explicit and cannot hide overdue technical holds', () => {
+  const data = fixture();
+  data.report.budget_blocked = true;
+  data.report.queue = {status:'budget_blocked', after:4, capacity:3, technical:1, oldest_technical_minutes:120};
+  let checks = evaluateChecks(data, now).checks;
+  assert.equal(checks.find(c=>c.id==='queue').ok, false);
+  assert.equal(checks.find(c=>c.id==='budget').ok, false);
+  assert.equal(checks.find(c=>c.id==='provider').ok, true);
+  data.report.queue.technical = 0;
+  data.report.queue.status = 'draining'; // older stored report
+  assert.equal(summarizeNews(data, now).queue.status, 'budget_blocked');
+  assert.equal(data.report.queue.status, 'draining', 'historical report is not mutated');
+  checks = evaluateChecks(data, now).checks;
+  assert.match(checks.find(c=>c.id==='queue').reason, /wartet auf Budgetfreigabe/);
+  assert.equal(checks.find(c=>c.id==='queue').ok, true, 'the separate budget check carries the budget alert');
+  data.report.budget_blocked = false;
+  assert.equal(summarizeNews(data, now).queue.status, 'draining');
+});
 test('worker queue after-count is not misreported as zero in Discord',()=>{
   const data=fixture();
   data.report.queue={status:'draining',before:21,after:17,capacity:2,technical:15,editorial:0};

@@ -758,7 +758,7 @@ export function aiProviderCoverageDegraded(report = {}) {
   return failures >= 3 || (failures >= 2 && failures / (failures + successes) >= 0.2);
 }
 
-export function queueSnapshot(stories = [], now = new Date().toISOString(), before = 0) {
+export function queueSnapshot(stories = [], now = new Date().toISOString(), before = 0, { budgetBlocked = false } = {}) {
   const rows = stories.filter((story) => !isMerged(story) && ((!story.published && story.listed !== false) || story.pending_update));
   const snapshot = { before: Number(before || 0), after: rows.length, retryable: 0, capacity: 0, technical: 0, editorial: 0, oldest_minutes: 0, oldest_technical_minutes: 0, by_reason: {} };
   for (const story of rows) {
@@ -787,7 +787,10 @@ export function queueSnapshot(stories = [], now = new Date().toISOString(), befo
       snapshot.editorial += 1;
     }
   }
-  snapshot.status = snapshot.technical && snapshot.oldest_technical_minutes >= 90
+  snapshot.budget_blocked = Boolean(budgetBlocked && snapshot.retryable);
+  snapshot.status = snapshot.budget_blocked
+    ? "budget_blocked"
+    : snapshot.technical && snapshot.oldest_technical_minutes >= 90
     ? "technical_delay"
     : snapshot.retryable
       ? "draining"
@@ -1473,7 +1476,7 @@ export async function runWirkungsticker(options = {}) {
   report.pending_story_count = state.pending_story_ids.length;
   const remainingPendingIds = new Set(state.pending_story_ids);
   report.queue_completed = [...pendingStoryIdsBefore].filter(id => !remainingPendingIds.has(id)).length;
-  report.queue = queueSnapshot([...byId.values()], now, pendingStoryCountBefore);
+  report.queue = queueSnapshot([...byId.values()], now, pendingStoryCountBefore, { budgetBlocked: report.budget_blocked || report.budget_stage >= 3 });
   report.queue_status = report.queue.status;
   report.source_funnel = finalizeSourceFunnel(sourceFunnel);
   report.source_health = registry.sources.map((source) => sourceHealth(source, state, now));
