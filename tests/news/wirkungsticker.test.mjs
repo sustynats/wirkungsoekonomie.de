@@ -485,6 +485,19 @@ test("Qualitätsgate akzeptiert saubere Analyse und sperrt Überbehauptung", () 
   assert.ok(errors.some((error) => error.startsWith("AI_UNSUPPORTED_NUMBER")));
 });
 
+test("missing or malformed publication decisions retry; explicit rejection is never promoted", () => {
+  for (const value of [undefined, null, "true", "false", 0, 1]) {
+    const analysis = { ...validAnalysis(), publication_recommendation: value };
+    const errors = validateAnalysis(analysis, candidate());
+    assert.ok(errors.includes("AI_PUBLICATION_RECOMMENDATION_INVALID"));
+    assert.ok(!errors.includes("AI_PUBLICATION_NOT_RECOMMENDED"));
+    assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", errors, 0), true);
+  }
+  const errors = validateAnalysis({ ...validAnalysis(), publication_recommendation: false }, candidate());
+  assert.deepEqual(errors, ["AI_PUBLICATION_NOT_RECOMMENDED"]);
+  assert.equal(shouldRetryQualityGate("QUALITY_GATE_FAILED", errors, 0), false);
+});
+
 test("Visual-Sanitizer entfernt unbelegte Kennzahlen vor dem Qualitätsgate und protokolliert sie", () => {
   const story = candidate();
   story.sources[0].article_excerpt = "Der Zuschuss beträgt 5,5 Milliarden Euro.";

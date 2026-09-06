@@ -1094,7 +1094,8 @@ export function validateAnalysis(analysis, story, options = {}) {
       errors.push("AI_DETAIL_SUMMARY_LENGTH");
     }
   }
-  if (analysis?.publication_recommendation !== true) errors.push("AI_PUBLICATION_NOT_RECOMMENDED");
+  if (typeof analysis?.publication_recommendation !== "boolean") errors.push("AI_PUBLICATION_RECOMMENDATION_INVALID");
+  else if (analysis.publication_recommendation === false) errors.push("AI_PUBLICATION_NOT_RECOMMENDED");
   errors.push(...mediaImpactValidationErrors(analysis, story, story?.media_trigger || mediaTriggerForAnalysis(analysis, story)));
   if (filterVersion >= 4 && options.persisted !== true) errors.push(...validateNewsroomAnalysis(analysis, story));
   else if (filterVersion < 4 && !story.sources.some((source) => source.primary_source)) errors.push("PRIMARY_SOURCE_REQUIRED");

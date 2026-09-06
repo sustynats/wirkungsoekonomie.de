@@ -60,3 +60,20 @@ grünen Läufen, leere Queue, Kostennenner, Fehlversuche, Deep-Dive-Trennung,
 Einrichtungsabgrenzung ohne Mutation, Duplikate und fehlende Kostendaten.
 
 Diese Tests belegen den Ablauf, nicht die Veröffentlichungsfähigkeit aller Kandidaten.
+
+## Eindeutige KI-Entscheidung
+
+Eine fehlende, als Text gelieferte oder anderweitig nicht boolesche
+`publication_recommendation` ist ein wiederholbarer Formatfehler, keine
+redaktionelle Ablehnung. Nur ein ausdrücklich boolesches `false` zählt als
+Veröffentlichungsablehnung. Es wird niemals automatisch zu `true` geändert.
+Das bestehende Entscheidungsprotokoll speichert die boolesche Empfehlung oder
+`null` sowie den Ablehnungscode. Alte Protokolle ohne diese Unterscheidung
+werden nicht nachträglich als Zustimmung interpretiert.
+
+Ein einmaliger lokaler Scan nimmt nur nie veröffentlichte Altentscheidungen mit
+dem alleinigen, früher mehrdeutigen Fehlercode und ohne dokumentiertes boolesches
+Nein erneut in die normale begrenzte Queue auf. Die frühere Ablehnung bleibt in
+der Historie; der Scan selbst veröffentlicht nichts. Explizite Ablehnungen,
+zusätzliche fachliche Ablehnungsgründe und historische Veröffentlichungen werden
+nicht wieder geöffnet. Die Prüfung läuft unter denselben Kosten- und Quellengates.
