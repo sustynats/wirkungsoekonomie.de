@@ -1,7 +1,1260 @@
 {
   "schema_version": "1.1",
-  "updated_at": "2026-09-06T05:44:56.956Z",
+  "updated_at": "2026-09-06T06:45:32.071Z",
   "stories": [
+    {
+      "story_id": "wt-6951ba30f7175a2a",
+      "slug": "sachsisches-gericht-stoppt-kiesabbau-bei-meissen-175a2a",
+      "title": "Sächsisches Gericht stoppt Kiesabbau bei Meißen",
+      "first_seen": "2026-09-06T06:30:00.000Z",
+      "last_updated": "2026-09-06T06:30:00.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/dresden/meissen/news-urteil-olg-verbot,kies-abbau-zeithain-100.html",
+          "title": "Sächsisches Gericht stoppt Kiesabbau bei Meißen",
+          "summary": "Eine international tätige Baustofffirma darf vorerst keinen Kies in Zeithain abbauen. Das ordnet das Oberverwaltungsgericht in Bautzen an.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:30:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "da2fd1a0f1d2e82d656aa4039143fcbd1ee64096bbc661d4ac200c94516c582d",
+          "source_item_id": "c1a90eafb051571ce1150050d7b82408d7912d6ff3663d5dcfaf04cbc02e7871",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:30:00.000Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6951ba30f7175a2a-claim-01",
+          "story_id": "wt-6951ba30f7175a2a",
+          "claim": "Sächsisches Gericht stoppt Kiesabbau bei Meißen: Eine international tätige Baustofffirma darf vorerst keinen Kies in Zeithain abbauen. Das ordnet das Oberverwaltungsgericht in Bautzen an.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:45:32.071Z"
+        }
+      ],
+      "content_hash": "21f740a477d9a9df81b73f9e6e4092f1fcf7a1291ed8d23b062e9faf0c1b6399",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T07:00:32.071Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:45:32.071Z",
+      "event_first_seen_at": "2026-09-06T06:45:32.071Z",
+      "event_detected_at": "2026-09-06T06:45:32.071Z",
+      "event_id": "event-2f23e0fd6be2523e74bb",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.534516666666667,
+        "detection_delay_minutes": 15.534516666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:45:32.071Z",
+        "fingerprint": "03f4ce655f885673755897be42bf9e586bf9977ccf5c602288f45c706a7ca6bc",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:45:32.071Z",
+      "rejection": {
+        "at": "2026-09-06T06:45:32.071Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-a1d32125e25a690c",
+      "slug": "vermittlungsmission-us-unterhandler-fur-gesprache-uber-ukraine-krieg-in-moskau-5a690c",
+      "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
+      "first_seen": "2026-09-05T14:11:00.000Z",
+      "last_updated": "2026-09-06T06:29:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
+          "title": "Vermittlungsmission: Putin trifft Trump-Gesandte – Kreml spricht von „konstruktiven“ Gesprächen",
+          "summary": "Putin verhandelt mit Trumps Gesandten über ein Ende des Ukraine-Kriegs. Vertreter des Weißen Hauses nennen die Gespräche „gehaltsvoll“.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:29:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "74013739ed4cedf44241149b2a30dc076843818e65cacdcdf73b756e1d3c51f5",
+          "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:29:00.000Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown"
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-vermittlungsmission-16021136.html",
+          "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
+          "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:06:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "fb2063b12c54c8182ea3290e02b8d2c4f6fe3a1ec6223203a40b7a77d3dd2fed",
+          "source_item_id": "fe587cdcea84c8d97d7c81fea7485553d20c89a379bca2ab8c36e26e0fd99479",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T11:06:25.000Z",
+          "ingested_at": "2026-09-05T16:36:34.186Z",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021136.html",
+          "title": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet",
+          "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:06:25.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "aa8002fb305244364b5dc556e7ac4c2b7ec7cccda58eecf09e84b72da02ab154",
+          "source_item_id": "235b4021196e08f1d60c8a911f608ba014fa851de581b8c9f4817f0dc07b9c51",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T11:06:25.000Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a1d32125e25a690c-claim-01",
+          "story_id": "wt-a1d32125e25a690c",
+          "claim": "Vermittlungsmission: Putin trifft Trump-Gesandte – Kreml spricht von „konstruktiven“ Gesprächen: Putin verhandelt mit Trumps Gesandten über ein Ende des Ukraine-Kriegs. Vertreter des Weißen Hauses nennen die Gespräche „gehaltsvoll“.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:45:32.071Z"
+        },
+        {
+          "claim_id": "wt-a1d32125e25a690c-claim-02",
+          "story_id": "wt-a1d32125e25a690c",
+          "claim": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau: Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:45:32.071Z"
+        },
+        {
+          "claim_id": "wt-a1d32125e25a690c-claim-03",
+          "story_id": "wt-a1d32125e25a690c",
+          "claim": "Verhandlungen: Ukraine-Krieg: Gespräche von Putin und US-Gesandten beendet: Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er mit den US-Gesandten Witkoff und Kushner in Moskau.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:45:32.071Z"
+        }
+      ],
+      "content_hash": "1e17504f91d9d10a4905a6bb060c651109a376dd6acf6dd1130b209fe63b9ecf",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T07:00:32.071Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:45:32.071Z",
+      "event_first_seen_at": "2026-09-05T14:51:17.850Z",
+      "event_detected_at": "2026-09-05T14:51:17.850Z",
+      "event_id": "event-503f6ca19ad2a3cf9a88",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.534516666666665,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 954.2370166666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:45:32.071Z",
+        "fingerprint": "c3d8f30a00a1dacd98e907649c9557c2d1325c1b04de8b47f14ed121a049254e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:45:32.071Z",
+      "rejection": {
+        "at": "2026-09-06T06:45:32.071Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-1bd2afdf147b3ca5",
+      "slug": "krisenkommunikation-wie-unternehmen-auf-plotzliche-angriffe-reagieren-sollten-7b3ca5",
+      "title": "Krisenkommunikation: Wie Unternehmen auf plötzliche Angriffe reagieren sollten",
+      "first_seen": "2026-09-05T11:00:00.000Z",
+      "last_updated": "2026-09-06T06:17:00.000Z",
+      "topic": [
+        "Energie",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/erfolg/management/krisenkommunikation-wie-unternehmen-auf-sabotage-reagiere/100252115.html",
+          "title": "Krisenkommunikation: Wie Unternehmen auf plötzliche Angriffe reagieren sollten",
+          "summary": "Nach den Attacken auf mehrere Umspannwerke steht die Resilienz deutscher Energiefirmen zur Debatte. Wie widerstandsfähig sind sie aufgestellt?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:00:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "efbbd51a7d3957b5bce01e0bf77dc91281edf4f6011f36eac077272872e07b08",
+          "source_item_id": "492d6e3030e808b5e73521adbae0aceb1542a9c0d3c665d59605794a021ccbd3",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T11:00:00.000Z",
+          "ingested_at": "2026-09-05T11:12:42.527Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/erfolg/management/angriffe-auf-umspannwerke-wie-unternehmen-auf-sabotage-reagieren/100252115.html",
+          "title": "Krisenkommunikation: Wie Unternehmen auf plötzliche Angriffe reagieren sollten",
+          "summary": "Nach den Attacken auf mehrere Umspannwerke steht die Resilienz deutscher Energiefirmen zur Debatte. Wie widerstandsfähig sind sie aufgestellt?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:17:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "099b6170d288272db59a87f634d35ee3af95fdcf9938f5fbb1d047fb9b65142d",
+          "source_item_id": "c7348d8425906e7daddbc672b699cd6d0eae7ecd20050078d6d1234a64ccfd8f",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:17:00.000Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-1bd2afdf147b3ca5-claim-01",
+          "story_id": "wt-1bd2afdf147b3ca5",
+          "claim": "Krisenkommunikation: Wie Unternehmen auf plötzliche Angriffe reagieren sollten: Nach den Attacken auf mehrere Umspannwerke steht die Resilienz deutscher Energiefirmen zur Debatte. Wie widerstandsfähig sind sie aufgestellt?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:21:40.343Z"
+        },
+        {
+          "claim_id": "wt-1bd2afdf147b3ca5-claim-02",
+          "story_id": "wt-1bd2afdf147b3ca5",
+          "claim": "Krisenkommunikation: Wie Unternehmen auf plötzliche Angriffe reagieren sollten: Nach den Attacken auf mehrere Umspannwerke steht die Resilienz deutscher Energiefirmen zur Debatte. Wie widerstandsfähig sind sie aufgestellt?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:21:40.343Z"
+        }
+      ],
+      "content_hash": "5e903acbcc3dbb6688f8db0e0c7b29e09b8ec71c7855b7249c74019a00d802d1",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T06:36:40.343Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:21:40.343Z",
+      "event_first_seen_at": "2026-09-05T11:12:42.527Z",
+      "event_detected_at": "2026-09-05T11:12:42.527Z",
+      "event_id": "event-073763b145296870fd8d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 54,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.672383333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 1148.9636,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 98,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:21:40.343Z",
+        "fingerprint": "83d4263e18d61d279e843a79d55d4939b7d09d364ff900de997ec288a7953cc9",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:21:40.343Z",
+      "rejection": {
+        "at": "2026-09-06T06:21:40.343Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7c349006073ab1be",
+      "slug": "klimawandel-pflanzenwelt-im-gebirge-verandert-sich-3ab1be",
+      "title": "Klimawandel - Pflanzenwelt im Gebirge verändert sich",
+      "first_seen": "2026-09-06T06:12:27.000Z",
+      "last_updated": "2026-09-06T06:12:27.000Z",
+      "topic": [
+        "Klima",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/pflanzenwelt-im-gebirge-veraendert-sich-102.html",
+          "title": "Klimawandel - Pflanzenwelt im Gebirge verändert sich",
+          "summary": "Als Folge steigender Temperaturen hat sich die Pflanzenwelt auf europäischen Berggipfeln erweitert – gleichzeitig verschwinden auf Hochgebirge spezialisierte Arten. Forscher führen dieses Phänomen auf den Klimawandel zurück.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:12:27.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "f660598707d244d94314b2bc763626414b3a04fd14d28c5b3866f313f7c80edf",
+          "source_item_id": "6ae09773f92ce96236ace62d4fb7d34fa2ce37290654dced35fa5323734e9fe2",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:12:27.000Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7c349006073ab1be-claim-01",
+          "story_id": "wt-7c349006073ab1be",
+          "claim": "Klimawandel - Pflanzenwelt im Gebirge verändert sich: Als Folge steigender Temperaturen hat sich die Pflanzenwelt auf europäischen Berggipfeln erweitert – gleichzeitig verschwinden auf Hochgebirge spezialisierte Arten. Forscher führen dieses Phänomen auf den Klimawandel zurück.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:36:18.253Z"
+        }
+      ],
+      "content_hash": "1429c51be054fdad9b86f6f68a9346e0241c3695d6758b82c911888800718ab1",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T06:51:18.253Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:36:18.253Z",
+      "event_first_seen_at": "2026-09-06T06:21:40.343Z",
+      "event_detected_at": "2026-09-06T06:21:40.343Z",
+      "event_id": "event-1f555b83ea164a1d5cf7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima",
+          "Europa"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 23.854216666666666,
+        "detection_delay_minutes": 9.222383333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 14.631833333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:36:18.253Z",
+        "fingerprint": "df34522b655a104146412c361ce3012e9f98d26fcebeabe7c46f1c3364d5bc74",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:36:18.253Z",
+      "rejection": {
+        "at": "2026-09-06T06:36:18.253Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-23e5db1c29a3986d",
+      "slug": "uniper-unipers-kritische-rolle-beim-auffullen-der-gasspeicher-a3986d",
+      "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+      "first_seen": "2026-09-05T10:12:00.000Z",
+      "last_updated": "2026-09-06T06:12:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/deutschlands-gasspeicher-warum-uniper-wieder-unverzichtbar-wird/100251801.html",
+          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T10:12:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "1172b6a6b4bc98615131c7e212317c25611ea201af7024a93bc91e01f79e1a18",
+          "source_item_id": "c025f627707b43b240e1038defd2f2668a845f6e95227f0623d577c5a202d8ea",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T10:12:00.000Z",
+          "ingested_at": "2026-09-05T10:57:29.473Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/gasspeicher-warum-uniper-wieder-unverzichtbar-wird/100251801.html",
+          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:12:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "cdc4820f6e3251c6795cb14794b77a99c6ce7f51d8fb4df48e5acb7dbbe3d9d7",
+          "source_item_id": "78b5f511b22f02d4dce93a10343fb740425a48b6d8a3ce8952ea1ba8cfac72b9",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:12:00.000Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-23e5db1c29a3986d-claim-01",
+          "story_id": "wt-23e5db1c29a3986d",
+          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:36:18.253Z"
+        },
+        {
+          "claim_id": "wt-23e5db1c29a3986d-claim-02",
+          "story_id": "wt-23e5db1c29a3986d",
+          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:36:18.253Z"
+        }
+      ],
+      "content_hash": "b676c80ea877bba5cfea57d3b194b2f6e3610d13b363e51080338cdccd9797e3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T06:51:18.253Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:36:18.253Z",
+      "event_first_seen_at": "2026-09-05T10:57:29.473Z",
+      "event_detected_at": "2026-09-05T10:57:29.473Z",
+      "event_id": "event-2f21c5a1c223e3d2beee",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.304216666666665,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 1178.813,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:36:18.253Z",
+        "fingerprint": "9249f659f43a6a7bc7f157e6b577a66991233772ea4de132bbdbc6a44daa0f33",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:36:18.253Z",
+      "rejection": {
+        "at": "2026-09-06T06:36:18.253Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-ddfba0a9d4cf3e62",
+      "slug": "krieg-in-der-ukraine-kreml-lobt-friedensgesprache-mit-us-unterhandlern-cf3e62",
+      "title": "Krieg in der Ukraine: Kreml lobt Friedensgespräche mit US-Unterhändlern",
+      "first_seen": "2026-09-06T06:09:00.000Z",
+      "last_updated": "2026-09-06T06:09:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/krieg-in-der-ukraine-kreml-lobt-friedensgespraeche-mit-us-unterhaendlern-a-4e052bc8-1c9e-424f-be10-b94084eb4c89",
+          "title": "Krieg in der Ukraine: Kreml lobt Friedensgespräche mit US-Unterhändlern",
+          "summary": "Jared Kushner, der Schwiegersohn von US-Präsident Trump, und Steve Witkoff haben mit Wladimir Putin gesprochen, diesen Sonntag treffen sie Wolodymyr Selenskyj. Die russische Seite zeigt sich angetan.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:09:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e13eab0d7d1df1ee7e24b01e83465d633f18f4d49f63f314a2ae2d86419c2be7",
+          "source_item_id": "641972ea2cec5d16220af870d18e4f5fd87889e9028823bd1d4016082a9a902f",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:09:00.000Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ddfba0a9d4cf3e62-claim-01",
+          "story_id": "wt-ddfba0a9d4cf3e62",
+          "claim": "Krieg in der Ukraine: Kreml lobt Friedensgespräche mit US-Unterhändlern: Jared Kushner, der Schwiegersohn von US-Präsident Trump, und Steve Witkoff haben mit Wladimir Putin gesprochen, diesen Sonntag treffen sie Wolodymyr Selenskyj. Die russische Seite zeigt sich angetan.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:36:18.253Z"
+        }
+      ],
+      "content_hash": "1aea89a6135aba04e08718ffb9680578e15704b47ab1d74de0d08e0f5cc7ae6c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-06T06:51:18.253Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:36:18.253Z",
+      "event_first_seen_at": "2026-09-06T06:21:40.343Z",
+      "event_detected_at": "2026-09-06T06:21:40.343Z",
+      "event_id": "event-a1f3eecb6ecab0899028",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 27.304216666666665,
+        "detection_delay_minutes": 12.672383333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 14.631833333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:36:18.253Z",
+        "fingerprint": "a8d5072bf075d29c8bec1d3a8e3c1240273ffcf5ef1adf53b33899cc9f6cd363",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:36:18.253Z",
+      "rejection": {
+        "at": "2026-09-06T06:36:18.253Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7bcc37f8f790d7d3",
+      "slug": "germany-s-far-right-afd-eyes-historic-state-victory-in-saxony-anhalt-election-90d7d3",
+      "title": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election",
+      "first_seen": "2026-09-06T05:52:06.000Z",
+      "last_updated": "2026-09-06T05:52:06.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/europe/20260906-germany-s-far-right-afd-eyes-historic-state-victory-in-saxony-anhalt-election",
+          "title": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election",
+          "summary": "Germany's anti-immigrant Alternative for Germany (AfD) party is aiming to become the first far-right party to take power at a state level since World War II as voters in the eastern German state of Saxony-Anhalt head to the polls Sunday. While AfD remains comfortably ahead in the polls, a failure to secure an absolute majority may see the politically isolated party struggle to form a government.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T05:52:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "e8119e111c442a266b02cf012a170970eb4b18240dd5819103bfae0e0d059ff2",
+          "source_item_id": "d84eb1b6b42783b2c1086c6509925e9fc9206e15d7b0321a725db53cef9d685f",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T05:52:06.000Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260905-germany-afd-eyes-historic-state-election-win",
+          "title": "Germany: AfD eyes historic state election win",
+          "summary": "In Saxony-Anhalt, AfD – Germany's far-right party – is polling at 40% or more of voting intentions, just days ahead of the regional election on 6 September 2026. If the AfD wins an absolute majority of seats, it could soon be in charge here. It would be the first time since 1945 that a far-right party has led a German region. To get there, the party is banking on the promise of a return to \"the Germany of old\", leaning on East German symbols such as Simson mopeds and retro aesthetics. It is a well-established strategy that draws on a gnawing sense of decline for decades and increasing distrust of traditional parties.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T09:58:46.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "c2886d318493d4576f43f4143452fab48a8bc5eb4df6807e108105ca8aaf9428",
+          "source_item_id": "ec43bc77d6df93d0f4a8a5cd7a8b44f756ab897feb3a59b6851282fa82b1ba5e",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T09:58:46.000Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7bcc37f8f790d7d3-claim-01",
+          "story_id": "wt-7bcc37f8f790d7d3",
+          "claim": "Germany's far-right AfD eyes historic state victory in Saxony-Anhalt election: Germany's anti-immigrant Alternative for Germany (AfD) party is aiming to become the first far-right party to take power at a state level since World War II as voters in the eastern German state of Saxony-Anhalt head to the polls Sunday. While AfD remains comfortably ahead in the polls, a failure to secure an absolute majority may see the politically isolated party struggle to form a government.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:36:18.253Z"
+        },
+        {
+          "claim_id": "wt-7bcc37f8f790d7d3-claim-02",
+          "story_id": "wt-7bcc37f8f790d7d3",
+          "claim": "Germany: AfD eyes historic state election win: In Saxony-Anhalt, AfD – Germany's far-right party – is polling at 40% or more of voting intentions, just days ahead of the regional election on 6 September 2026. If the AfD wins an absolute majority of seats, it could soon be in charge here. It would be the first time since 1945 that a far-right party has led a German region. To get there, the party is banking on the promise of a return to \"the Germany of old\", leaning on East German symbols such as Simson mopeds and retro aesthetics. It is a well-established strategy that draws on a gnawing sense of decline for decades and increasing distrust of traditional parties.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:36:18.253Z"
+        }
+      ],
+      "content_hash": "fc3d5f804990c239b7f8b0e010a6e38a624c4c911347a43e9e2dec39f875f406",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T06:51:18.253Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:36:18.253Z",
+      "event_first_seen_at": "2026-09-06T06:06:35.353Z",
+      "event_detected_at": "2026-09-06T06:06:35.353Z",
+      "event_id": "event-9b5c4f5804e758386be8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie",
+          "Finanzen"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 44.20421666666667,
+        "detection_delay_minutes": 14.489216666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 29.715,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 91,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:36:18.253Z",
+        "fingerprint": "b82b977d83f79456d53c70b3d1778c84dc73dfbceb27039c930ebdfaf97a9ade",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:36:18.253Z",
+      "rejection": {
+        "at": "2026-09-06T06:36:18.253Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-85bd6954b5bc23ad",
       "slug": "nationaler-schutzschild-geplant-unternehmen-sollen-rechtliche-moglichkeit-zur-abwehr-von-bc23ad",
@@ -1840,7 +3093,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T05:20:39.000Z",
-          "ingested_at": "2026-09-06T05:41:03.427Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1869,20 +3122,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:44:56.956Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "dea12df3333d634d0437b5419abdc9a893feee3a0685a8076a61fc86617b9b34",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-06T07:00:32.071Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:44:56.956Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-06T05:41:03.427Z",
       "event_detected_at": "2026-09-06T05:41:03.427Z",
       "event_id": "event-5c32834238cf73e016df",
@@ -1919,23 +3172,187 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 24.299266666666668,
+        "source_age_minutes": 84.88451666666667,
         "detection_delay_minutes": 20.407116666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3.89215,
+        "queue_age_minutes": 64.4774,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 82,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:44:56.956Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "b270a2c94b46efd86ff64458b8aca2fec56ae4999b91673066b517cbafe2ea93",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:45:32.071Z",
+      "rejection": {
+        "at": "2026-09-06T06:45:32.071Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7ef054e52c11bf21",
+      "slug": "reiches-fossiler-lock-in-das-robuste-stromsystem-und-die-demokratisierung-der-energiewen-11bf21",
+      "title": "Reiches fossiler Lock‑in, das robuste Stromsystem und die Demokratisierung der Energiewende",
+      "first_seen": "2026-09-06T05:07:22.000Z",
+      "last_updated": "2026-09-06T05:07:22.000Z",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Soziales",
+        "Finanzen",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "klimareporter-news",
+          "publisher": "Klimareporter°",
+          "url": "https://klimareporter.de/deutschland/reiches-fossiler-lock-in-das-robuste-stromsystem-und-die-demokratisierung-der-energiewende",
+          "title": "Reiches fossiler Lock‑in, das robuste Stromsystem und die Demokratisierung der Energiewende",
+          "summary": "Kalenderwoche 36: Sozial gerechter Klimaschutz ist nicht weniger, sondern besser gemachter Klimaschutz, sagt Claudia Kemfert , Energieökonomin und Mitglied im Herausgeberrat von Klimareporter° . Dazu zählt sie günstige Finanzierungen und gezielte Förderung für Haushalte mit kleinen und mittleren Einkommen, Mieterstrom und Energy Sharing, faire Kosten bei Wärmepumpen und einen attraktiven ÖPNV.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T05:07:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Klima",
+          "content_hash": "b3408732508ac6466f8231aa1cc122c4270971af948bb1ec4475c2794e6a6c8f",
+          "source_item_id": "eff7683cb50ce78b0beb432f90ff20733e27b9276dd88331f07d7401339d7ded",
+          "publisher_id": "klimareporter",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T05:07:22.000Z",
+          "ingested_at": "2026-09-06T06:06:35.353Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:klimareporter",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7ef054e52c11bf21-claim-01",
+          "story_id": "wt-7ef054e52c11bf21",
+          "claim": "Reiches fossiler Lock‑in, das robuste Stromsystem und die Demokratisierung der Energiewende: Kalenderwoche 36: Sozial gerechter Klimaschutz ist nicht weniger, sondern besser gemachter Klimaschutz, sagt Claudia Kemfert , Energieökonomin und Mitglied im Herausgeberrat von Klimareporter° . Dazu zählt sie günstige Finanzierungen und gezielte Förderung für Haushalte mit kleinen und mittleren Einkommen, Mieterstrom und Energy Sharing, faire Kosten bei Wärmepumpen und einen attraktiven ÖPNV.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "klimareporter-news",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:klimareporter",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-06T06:06:35.353Z"
+        }
+      ],
+      "content_hash": "47954a84d528870236bf4543808b8086efa7927f70ab365690b4aee4cb216f4e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-06T06:21:35.353Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-06T06:06:35.353Z",
+      "event_first_seen_at": "2026-09-06T06:06:35.353Z",
+      "event_detected_at": "2026-09-06T06:06:35.353Z",
+      "event_id": "event-9bf752b7a49199b24fcf",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 54,
+        "public_relevance": "hoch",
+        "topics": [
+          "Klima",
+          "Energie",
+          "Soziales",
+          "Finanzen",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Planet",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 59.22255,
+        "detection_delay_minutes": 59.22255,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 75,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:06:35.353Z",
+        "fingerprint": "7a4544dc37b00a6e99fd994e10f9c4534932d9b82318fcd223f43c953dad4c3b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:06:35.353Z",
+      "rejection": {
+        "at": "2026-09-06T06:06:35.353Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2983,7 +4400,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T03:02:01.000Z",
-          "ingested_at": "2026-09-06T05:41:03.427Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3045,7 +4462,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-f753f67023632451-claim-02",
@@ -3065,23 +4482,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         }
       ],
       "content_hash": "5e7b181e88116d742080b64c862c4b5d402effcfae194ba6e7aeee804f5fa97a",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
-        "AI_PUBLICATION_RECOMMENDATION_INVALID"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-06T05:56:03.427Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-06T07:06:18.253Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T06:36:18.253Z",
       "event_first_seen_at": "2026-09-06T03:06:22.960Z",
       "event_detected_at": "2026-09-06T03:06:22.960Z",
       "event_id": "event-febfcf00118f47940594",
@@ -3117,23 +4531,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 159.04045,
+        "source_age_minutes": 214.28755,
         "detection_delay_minutes": 4.366,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 154.67445,
+        "queue_age_minutes": 209.92155,
         "target_publication_minutes": 120,
-        "news_freshness_score": 67,
+        "news_freshness_score": 55,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T06:36:18.253Z",
         "fingerprint": "bec97247573ddf7ac43246134c2f49a09ee34b788d1baec6223bb3056cdfe398",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-06T06:36:18.253Z",
+      "rejection": {
+        "at": "2026-09-06T06:36:18.253Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -3515,7 +4941,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T22:33:21.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3581,7 +5007,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T04:59:50.000Z",
-          "ingested_at": "2026-09-06T05:21:43.058Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3610,7 +5036,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-02",
@@ -3630,7 +5056,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-03",
@@ -3651,7 +5077,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-04",
@@ -3671,7 +5097,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-05",
@@ -3691,7 +5117,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-06",
@@ -3711,7 +5137,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-07",
@@ -3731,7 +5157,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-08",
@@ -3751,7 +5177,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         },
         {
           "claim_id": "wt-78b8df2827ab4527-claim-09",
@@ -3771,22 +5197,58 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:34:08.658Z"
+          "checked_at": "2026-09-06T06:36:18.253Z"
         }
       ],
       "content_hash": "2e64a906205a79b782ff029f6fce8bfe1ffcaf2ff9e7c92d56787ca98fd7d442",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        "AI_REQUIRED_STRING:source_summary",
+        "AI_REQUIRED_STRING:summary",
+        "AI_REQUIRED_STRING:why_relevant",
+        "AI_REQUIRED_STRING:status",
+        "AI_REQUIRED_STRING:analysis_type",
+        "AI_REQUIRED_STRING:importance",
+        "AI_REQUIRED_STRING:impact_potential",
+        "AI_REQUIRED_STRING:systemic_relevance",
+        "AI_REQUIRED_STRING:transformation_potential",
+        "AI_REQUIRED_STRING:resilience",
+        "AI_REQUIRED_STRING:evidence_level",
+        "AI_REQUIRED_STRING:attribution",
+        "AI_REQUIRED_STRING:detail_summary",
+        "AI_STATUS_INVALID",
+        "AI_ANALYSIS_TYPE_INVALID",
+        "AI_IMPORTANCE_INVALID",
+        "AI_PUBLICATION_GATE_REQUIRED",
+        "AI_DIMENSION_INVALID:human",
+        "AI_DIMENSION_INVALID:planet",
+        "AI_DIMENSION_INVALID:democracy",
+        "AI_ARRAY_REQUIRED:impact_risks",
+        "AI_ARRAY_REQUIRED:mechanisms",
+        "AI_ARRAY_REQUIRED:first_order",
+        "AI_ARRAY_REQUIRED:second_order",
+        "AI_ARRAY_REQUIRED:third_order",
+        "AI_ARRAY_REQUIRED:side_effects",
+        "AI_ARRAY_REQUIRED:uncertainties",
+        "AI_ARRAY_REQUIRED:watch_next",
+        "AI_ARRAY_REQUIRED:reference_frameworks",
+        "AI_UNCERTAINTY_REQUIRED",
+        "AI_WATCH_NEXT_REQUIRED",
+        "AI_SUMMARY_SENTENCE_COUNT",
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "NEWS_STATUS_REQUIRED",
+        "EVENT_CLAIMS_REQUIRED"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-06T05:49:08.658Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-06T07:06:18.253Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T05:34:08.658Z",
+      "updated_at": "2026-09-06T06:36:18.253Z",
       "event_first_seen_at": "2026-09-05T18:21:18.289Z",
       "event_detected_at": "2026-09-05T18:21:18.289Z",
       "event_id": "event-33c99d9ec5432a4822d9",
@@ -3821,20 +5283,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 34.310966666666666,
+        "source_age_minutes": 96.47088333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 672.8394833333333,
+        "queue_age_minutes": 734.9994,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 80,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:34:08.658Z",
+        "checked_at": "2026-09-06T06:36:18.253Z",
         "fingerprint": "bd605fb94dcf5a6bec790ea76451cdbf342a2d3e0aceb53a1a6995c416f07e60",
         "issue_codes": [],
         "warning_codes": []
@@ -9084,7 +10546,7 @@
       "verification_started_at": "2026-09-05T17:52:36.037Z",
       "publish_ready_at": "2026-09-05T17:52:55.835Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -9480,10 +10942,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "5e5b6fa64eb5fc1dc54479c41754b07ec3acb888afca7ac7a9918d710d190d31",
-        "checked_at": "2026-09-05T18:21:18.289Z",
+        "fingerprint": "36b35832271ee61b3be327892387078065e2f8e73f95b31b43be80fd8cfbf45e",
+        "checked_at": "2026-09-06T06:36:18.253Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T00:21:18.289Z",
+        "expires_at": "2026-09-06T12:36:18.253Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -9518,60 +10980,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "e8791ab952453e52d6703e23d1d2dc97b6e9286997a30dbaf166b61a949c4ed3",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
-            "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
-            "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T17:17:47.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
-            "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T17:17:47.000Z",
-            "ingested_at": "2026-09-05T17:51:35.693Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T05:44:56.956Z",
-          "fingerprint": "a983d6c3fbf2106a3a1d9f5de0dd20addd25782e704d208025279b7f0345a453",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-6a7145e6dc679f95",
@@ -11014,7 +12423,7 @@
       "verification_started_at": "2026-09-05T16:51:47.534Z",
       "publish_ready_at": "2026-09-05T16:52:06.230Z",
       "news_status": "updated",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -11432,10 +12841,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-2",
-        "fingerprint": "6eb1a62e2de3039a81e6031e64f4b1ec2285005b24255e23079b2d527b4e2ab1",
-        "checked_at": "2026-09-05T18:21:18.289Z",
+        "fingerprint": "9720552c293b20043bb90ba6e917e29d0ba6334c086f63d6651b32f5734c8f39",
+        "checked_at": "2026-09-06T06:36:18.253Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T00:21:18.289Z",
+        "expires_at": "2026-09-06T12:36:18.253Z",
         "sources": [
           {
             "source_id": "rbb24-nachrichten",
@@ -11461,45 +12870,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T16:53:46.000Z",
-            "ingested_at": "2026-09-05T18:21:18.289Z",
-            "provenance": {
-              "origin": "publisher:rbb",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "77af0c70e4ee5ad9d95b6a4d9a8d82d53d7e87bd4ec3fc13a747723a529cbeb0",
-        "sources": [
-          {
-            "source_id": "rbb24-nachrichten",
-            "publisher": "rbb24",
-            "url": "https://www.rbb24.de/politik/beitrag/2026/09/brandenburg-jaenschwalde-sabotage-umspannwerk-polizei-fahndung.html",
-            "title": "Sabotage: Polizei und Staatsanwaltschaft fahnden nach Tatverdächtigem",
-            "summary": "Die Polizei Brandenburg und die Staatsanwaltschaft Cottbus bitten um Mithilfe aus der Bevölkerung – gesucht wird nach einem 48-jährigem Tatverdächtigem. Der Mann soll Sabotageakte auf Umspannwerke in Brandenburg und NRW verübt haben.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T16:53:46.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "42ef51fdf99dcd2e18cd8255487700f023a1df737db60a7ad47db6a2b8a07180",
-            "source_item_id": "9f009a7b0da257e11dad8a4f82b1daf74760fbd507b61c1f9ae805ec010eef7d",
-            "publisher_id": "rbb",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin-Brandenburg"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T16:53:46.000Z",
-            "ingested_at": "2026-09-06T05:41:03.427Z",
+            "ingested_at": "2026-09-06T06:21:40.343Z",
             "provenance": {
               "origin": "publisher:rbb",
               "basis": "publisher_only_origin_unverified",
@@ -11508,24 +12879,9 @@
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown"
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T05:44:56.956Z",
-          "fingerprint": "48283262f5d1a537152d48a72d316403c329a5e38c93e715b11044341ba0e9c6",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-eefb978e3155ecf0",
@@ -14346,7 +15702,7 @@
       "verification_started_at": "2026-09-05T14:15:24.286Z",
       "publish_ready_at": "2026-09-05T14:15:41.958Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": "2026-09-06T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -14798,11 +16154,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "1dab9d972969df251d66a6e02bba9ed6affe052ab90ec295720e678e9f8a9768",
-        "checked_at": "2026-09-05T19:21:39.490Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "50b25b6a8b538ca1382339906b0d266573b1ec68acbe97b7ea0fbca47c25095f",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T01:21:39.490Z",
+        "expires_at": "2026-09-06T12:45:32.071Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -14930,336 +16286,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "8720cec8c5e80188937c37932d96ffa03bb1e69170a6dc83ab3c43e14324abb1",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--angriffe-aufs-stromnetz--einsatz-in-sachsen-geht-weiter-38210826.html",
-            "title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
-            "summary": "In Ostsachsen geht die Polizei weiter Hinweisen zu versuchten Angriffen aufs Stromnetz nach. Einsatzkräfte sichern Spuren, neue Details wurden nicht bekannt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T07:36:46.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "d561294661b0e0f397c7777a873d3acf73c2361f64264078362d74e9d6b5c028",
-            "source_item_id": "31956f373f2af864294a6ed7ef73cd9a292526763a0d9797c4882f4f2817486b",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T07:36:46.000Z",
-            "ingested_at": "2026-09-05T08:06:46.297Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020817.html",
-            "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
-            "summary": "Nach dem Fund mehrerer Sprengvorrichtungen an Stromleitungen in Ostsachsen setzt die Polizei ihre Suche fort. Die Ermittler hoffen auch auf Hinweise aus der Bevölkerung.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T07:38:13.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "f307fa3a57282625ca961ba650578b4ade4a035f539c4fa0dcddfd62d2d05cda",
-            "source_item_id": "762d99958d3be2ada54750b3a4fd6e6866ff7ed281d697aca889ba5a511b7a37",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T07:38:13.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-38210826.html",
-            "title": "Anschläge auf Stromleitungen: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
-            "summary": "Nach dem Fund mehrerer Sprengvorrichtungen an Stromleitungen in Ostsachsen setzt die Polizei ihre Suche fort. Die Ermittler hoffen auch auf Hinweise aus der Bevölkerung.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T13:26:55.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "6567168e6a377eb09775c9b6535b185b258bcbe3512aba8e6dec328b86bff0d8",
-            "source_item_id": "4b7c40559d2668c6a06642eefef60337c29e7ac8e75dceede57b2a9bc30371f5",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T13:26:55.000Z",
-            "ingested_at": "2026-09-05T14:13:45.805Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/gesellschaft/panorama/dpa-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-16021488.html",
-            "title": "Nach Anschlägen in NRW und Brandenburg: Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen",
-            "summary": "Spezialisten konnten die Sprengvorrichtungen entschärfen. Nach dem Fund suchen die Ermittler die elektrische Infrastruktur in der Region weiter ab – und bitten um Hinweise aus der Bevölkerung.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T13:58:18.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "1c858ca06ea96cc5d529644dae8e8bc019a9a1e1cfe903b7264f202fedd48f1d",
-            "source_item_id": "b634c2db9953e8e061a84f18ae3406b0ebafaa935aa8992475a978dbfbc21854",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T13:58:18.000Z",
-            "ingested_at": "2026-09-05T19:21:39.490Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T05:44:56.956Z",
-          "fingerprint": "149b7fa7ca0dcfd76e7a397555d5805e931a1468e471daf2147c018703d2105e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
-    },
-    {
-      "story_id": "wt-a1d32125e25a690c",
-      "slug": "vermittlungsmission-us-unterhandler-fur-gesprache-uber-ukraine-krieg-in-moskau-5a690c",
-      "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
-      "first_seen": "2026-09-05T14:11:00.000Z",
-      "last_updated": "2026-09-05T14:11:00.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
-          "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
-          "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T14:11:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "78cdc8faeafb7d55e851651f10b1529d8d2cd78d8bbe0a79f26168bf48618b82",
-          "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T14:11:00.000Z",
-          "ingested_at": "2026-09-05T16:36:34.186Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-vermittlungsmission-16021136.html",
-          "title": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau",
-          "summary": "Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:06:25.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "fb2063b12c54c8182ea3290e02b8d2c4f6fe3a1ec6223203a40b7a77d3dd2fed",
-          "source_item_id": "fe587cdcea84c8d97d7c81fea7485553d20c89a379bca2ab8c36e26e0fd99479",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T11:06:25.000Z",
-          "ingested_at": "2026-09-05T16:36:34.186Z",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-a1d32125e25a690c-claim-01",
-          "story_id": "wt-a1d32125e25a690c",
-          "claim": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau: Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:51:14.960Z"
-        },
-        {
-          "claim_id": "wt-a1d32125e25a690c-claim-02",
-          "story_id": "wt-a1d32125e25a690c",
-          "claim": "Vermittlungsmission: US-Unterhändler für Gespräche über Ukraine-Krieg in Moskau: Nach einer monatelangen Pause kümmern sich die USA wieder um den Krieg in der Ukraine. Trumps Gesandte wollen mit beiden Seiten sprechen. Doch die sehen auch Gründe, weiterzukämpfen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:51:14.960Z"
-        }
-      ],
-      "content_hash": "a8750e0bb981f9f92bd27f4a352cca27e4b8f18d060149058114d4148e9be9a8",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T16:51:14.960Z",
-      "event_first_seen_at": "2026-09-05T14:51:17.850Z",
-      "event_detected_at": "2026-09-05T14:51:17.850Z",
-      "event_id": "event-503f6ca19ad2a3cf9a88",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 160.24933333333334,
-        "detection_delay_minutes": 40.2975,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 119.95183333333334,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 67,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-05T16:51:14.960Z",
-        "fingerprint": "1bed52aae020ff7a71bdd5ec023cf4cf5acd367025827feca20e02a70b7aa928",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T16:51:14.960Z",
-      "rejection": {
-        "at": "2026-09-05T16:51:14.960Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-cc110770aabd8a39",
@@ -16663,13 +17690,13 @@
           "publisher": "Der Tagesspiegel",
           "url": "https://www.tagesspiegel.de/berlin/berliner-hackerangriff-beschaftigt-jetzt-auch-die-bundeswehr-fuhrung-linken-politiker-sieht-schwersten-it-sicherheitsfall-in-der-geschichte-der-bundesrepublik-16021348.html",
           "title": "Bundesregierung zieht Zusammenhang zur Berlin-Wahl: Der Hackerangriff beschäftigt jetzt auch die Bundeswehr-Führung",
-          "summary": "Die Bundesregierung prüft die Folgen des Datenabflusses aus der Berliner Verwaltung. Zugleich machen Experten Bund und Land schwere Vorwürfe.",
+          "summary": "Die Bundesregierung prüft die Folgen des Datenabflusses aus der Berliner Verwaltung. Zugleich machen Experten dem Bund und dem Land Berlin schwere Vorwürfe.",
           "source_type": "media_rss",
           "published_at": "2026-09-05T13:26:33.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "a1ea33e89d382887d1679f91627c606174456a7a347a2705814a3d3baef96875",
+          "content_hash": "a437060c971056adbd3f3766a1eb3b1d2f9822a3505fedd482a9b53d5a210604",
           "source_item_id": "aaf26837b69532bca16bf820a868849af4d62d896574ebbb2835ea6549653384",
           "publisher_id": "tagesspiegel",
           "publisher_kind": "journalism",
@@ -16682,19 +17709,21 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-05T13:26:33.000Z",
-          "ingested_at": "2026-09-05T16:36:34.186Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
-          }
+          },
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown"
         }
       ],
       "claims": [
         {
           "claim_id": "wt-cfab7f71dce825fc-claim-01",
           "story_id": "wt-cfab7f71dce825fc",
-          "claim": "Bundesregierung zieht Zusammenhang zur Berlin-Wahl: Der Hackerangriff beschäftigt jetzt auch die Bundeswehr-Führung: Die Bundesregierung prüft die Folgen des Datenabflusses aus der Berliner Verwaltung. Zugleich machen Experten Bund und Land schwere Vorwürfe.",
+          "claim": "Bundesregierung zieht Zusammenhang zur Berlin-Wahl: Der Hackerangriff beschäftigt jetzt auch die Bundeswehr-Führung: Die Bundesregierung prüft die Folgen des Datenabflusses aus der Berliner Verwaltung. Zugleich machen Experten dem Bund und dem Land Berlin schwere Vorwürfe.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesspiegel-home",
           "source_function": "journalistic_report",
@@ -16709,24 +17738,30 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T16:51:14.960Z"
+          "checked_at": "2026-09-06T06:21:40.343Z"
         }
       ],
-      "content_hash": "f2848779135c304a0d1cf3d521ab97a54e033f3e6b4f954028802f8925360001",
+      "content_hash": "15b34cf4d30a9349a74422d9efacb3c0fd78fa4fe024d5562631c551d4fa04e0",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
+      "quality_retry_after": "2026-09-06T06:36:40.343Z",
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-05T16:51:14.960Z",
+      "updated_at": "2026-09-06T06:21:40.343Z",
       "event_first_seen_at": "2026-09-05T14:51:17.850Z",
       "event_detected_at": "2026-09-05T14:51:17.850Z",
       "event_id": "event-1a9faeb9b5f3564015f0",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
         "topics": [
@@ -16753,34 +17788,34 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 204.69933333333333,
+        "source_age_minutes": 1015.1223833333333,
         "detection_delay_minutes": 84.7475,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.95183333333334,
+        "queue_age_minutes": 930.3748833333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 57,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-05T16:51:14.960Z",
-        "fingerprint": "b1be12eae09a7084f4058ed65509a93bce4936711e6a2733ebe388c410672ddd",
+        "checked_at": "2026-09-06T06:21:40.343Z",
+        "fingerprint": "7d55a857c093f779892a6ddad52416bca08f44dfa4a73c4c9cc7f4625142cda8",
         "issue_codes": [],
         "warning_codes": []
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T16:51:14.960Z",
+      "rejected_at": "2026-09-06T06:21:40.343Z",
       "rejection": {
-        "at": "2026-09-05T16:51:14.960Z",
+        "at": "2026-09-06T06:21:40.343Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
+          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -19276,11 +20311,11 @@
         }
       ],
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "2f59e37295ad171b2fefacc67dce82b34f954158b5899117eaeda8fcbef315bc",
-        "checked_at": "2026-09-06T05:24:43.333Z",
-        "outcome": "no_material_update",
-        "expires_at": "2026-09-06T11:24:43.333Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "c601231694b343dabcfa5be2285f3420c48249d8e655a553f7d4c01bd0d1124c",
+        "checked_at": "2026-09-06T06:45:32.071Z",
+        "outcome": "input_too_large",
+        "expires_at": "2026-09-06T12:45:32.071Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -19317,14 +20352,14 @@
             "source_id": "tagesschau-access",
             "publisher": "tagesschau / ARD",
             "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
-            "title": "So ist die Stimmung vor der Wahl in Sachsen-Anhalt",
-            "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Die AfD führt in Umfragen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen. Von K…",
+            "title": "Sachsen-Anhalt: So ist die Stimmung vor der Landtagswahl",
+            "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-05T05:30:02.000Z",
+            "published_at": "2026-09-05T05:58:02.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "4ecffbf01167f40b3db26f6f52aaf0917fc5e9a7e0fa159589f2f79d534ff88e",
+            "content_hash": "a3a882ef2c9caf0802eb9c06a061a0b20942aa6aaecaa7bada5faccfce5da8df",
             "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
             "publisher_id": "tagesschau",
             "publisher_kind": "public_broadcasting",
@@ -19336,16 +20371,16 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-05T05:30:02.000Z",
-            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "source_published_at": "2026-09-05T05:58:02.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:tagesschau",
               "basis": "publisher_resolved_from_registered_target_url",
               "independence_established": false,
-              "collection_source_id": "swr-aktuell"
+              "collection_source_id": "wdr-nachrichten"
             },
-            "collection_source_id": "swr-aktuell",
-            "collection_publisher_id": "swr",
+            "collection_source_id": "wdr-nachrichten",
+            "collection_publisher_id": "wdr",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown"
           },
@@ -19714,7 +20749,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T14:56:00.000Z",
-            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "ingested_at": "2026-09-06T06:06:35.353Z",
             "provenance": {
               "origin": "publisher:wirtschaftswoche",
               "basis": "publisher_only_origin_unverified",
@@ -19747,7 +20782,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T18:32:23.000Z",
-            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:ndr",
               "basis": "publisher_only_origin_unverified",
@@ -19780,7 +20815,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T20:52:04.000Z",
-            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -19813,7 +20848,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-06T05:21:43.058Z",
+            "ingested_at": "2026-09-06T06:06:35.353Z",
             "provenance": {
               "origin": "publisher:tagesspiegel",
               "basis": "publisher_only_origin_unverified",
@@ -19821,10 +20856,838 @@
             },
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Vor-der-Landtagswahl-in-Sachsen-Anhalt/!6206552",
+            "title": "Vor der Landtagswahl in Sachsen-Anhalt: Plattenverschiebung",
+            "summary": "In Halle-Neustadt wohnen Jüngere mit Migrationsgeschichte und Ältere mit DDR-Biografie. Wie schauen sie auf ihr Viertel und die Politik? mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T05:57:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "4a0b704d816bb10ce152dfd2a920b4f03599047bb4096ad5d1b803f79f4337d4",
+            "source_item_id": "3c97285946552732f23458fe4e6874824a2564fbe3ff73d41afe2b3f104f70c0",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T05:57:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/landtagswahl-2026-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ – mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:08:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "69aff136a920ebf08003e827d4c23de738988afe5353a3c88024abd50861ae9a",
+            "source_item_id": "7435e069dd716de781c511ed4112d65ae73ebd1ba9a4d3602c6f01eaefd19cc3",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:08:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/rund-169-millionen-menschen-durfen-abstimmendie-wahllokale-in-sachsen-anhalt-haben-geoffnet-16008484.html",
+            "title": "Rund 1,69 Millionen Menschen dürfen abstimmen: Die Wahllokale in Sachsen-Anhalt haben geöffnet",
+            "summary": "Wirtschaftsweise warnt vor wirtschaftlichen Folgen eines AfD-Siegs + AfD setzt auf einen Ministerpräsidenten Siegmund + Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht+ Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ab1ee55a48566cbe2e25389a868922c9b611af1565c47762c73510e30977e3a9",
+            "source_item_id": "65161320947043465aea07f5f6928e2510e855616ea1a5d9fd0cb7312734be6e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Sachsen-Anhalt/!6210514",
+            "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
+            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: Das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:36:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "4bf0ae8999a493eb38a43523468d423c918dbf51763f69537bad330ddb2a6a66",
+            "source_item_id": "f363844a39f1eb4c8196fcc3e09e309040f6e7b42f9942bb90cf76341686c882",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:36:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
         ]
       },
-      "deepening_checks": 3
+      "deepening_checks": 3,
+      "pending_update": {
+        "detected_at": "2026-09-06T06:06:35.353Z",
+        "content_hash": "dd6a64998c504a95f72d1fd87d834d185010de503bf820ee86b783737e2fa661",
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/vor-wahl-in-sachsen-anhalt--cdu-kandidat---keine-koalition-mit-links-oder-afd--38206810.html",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Sven Schulze bleibt vage: Wird er notfalls mit Stimmen der Linken Ministerpräsident? Er betont klare Grenzen, will aber das Wahlergebnis abwarten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:02:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "ec0bd8d9fe259c10fd8612c69d1d7c77636c351d9d65261c8a2ab2d5e733339d",
+            "source_item_id": "55dfc0af3fc3bdc6b45aa5be8f0d3d8e143a752d41c6493573795418465c6092",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:02:30.000Z",
+            "ingested_at": "2026-09-04T07:21:13.294Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-stimmung-themen-100.html",
+            "title": "Sachsen-Anhalt: So ist die Stimmung vor der Landtagswahl",
+            "summary": "Vor der Landtagswahl in Sachsen-Anhalt dominieren Unzufriedenheit und Misstrauen. Integration, Bildung und Wirtschaft sind die wichtigsten Themen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T05:58:02.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "a3a882ef2c9caf0802eb9c06a061a0b20942aa6aaecaa7bada5faccfce5da8df",
+            "source_item_id": "080839448004e48131057372b1985fb7c1fbf1fb10ea36830696006f0ee3ce45",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T05:58:02.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "wdr-nachrichten"
+            },
+            "collection_source_id": "wdr-nachrichten",
+            "collection_publisher_id": "wdr",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/landtagswahl--tausende-zu-kundgebungen-vor-wahl-in-sachsen-anhalt-erwartet-38210616.html",
+            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:07:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "11aa1f261c683a305cd9729ff480129153c880380d331d1a7878a4fd4eef7f71",
+            "source_item_id": "2d84c6550f9a3f98c65a680c3a12270a853df058800f1c7cc31dcec236d232e9",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:07:55.000Z",
+            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-16020673.html",
+            "title": "Landtagswahl: Tausende zu Kundgebungen vor Wahl in Sachsen-Anhalt erwartet",
+            "summary": "Viele Menschen sind noch unentschlossen, wem sie am Sonntag ihre Stimme geben sollen. Zahlreiche Bündnisse haben Demonstrationen angekündigt. Nicht nur sie rechnen mit einem starken AfD-Ergebnis.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T04:09:22.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "136ad0bae76512f7a204b6d4562b1c7933b8fdcd8a0f6e908e67f51a4de5029b",
+            "source_item_id": "9b595a32873e3dcdeed26b2f66720c564829a39ca0d8993b934c9c6e98f0724e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T04:09:22.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/sport/die-afd-fordert-ein-patriotismusbekenntnis-was-fur-den-sport-in-sachsen-anhalt-vor-der-wahl-auf-dem-spiel-steht-16004778.html",
+            "title": "„Die AfD fordert ein Patriotismusbekenntnis“: Was für den Sport in Sachsen-Anhalt vor der Wahl auf dem Spiel steht",
+            "summary": "Vor der Landtagswahl bangen Sportvereine um Fördermittel. Christian Schreiber vom Landessportbund erklärt, was ein Wahlsieg der AfD für den Sport bedeuten würde und warum er beim Thema Inklusion Sorgen hat.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-01T14:38:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "a2e4d8b52b9340ac784ec86e650c17dec22acac070fb481dd92fed8839dea886",
+            "source_item_id": "deeaaefab10d8d6be35c1a4de80f7e4de81e1ca2e130057b3b623d0c4f6aa226",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-01T14:38:55.000Z",
+            "ingested_at": "2026-09-05T06:06:13.174Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.ndr.de/nachrichten/info/landtagswahl-so-ist-die-stimmung-in-sachsen-anhalt,audio-3457326.html",
+            "title": "Vor Landtagswahl: So ist die Stimmung in Sachsen-Anhalt",
+            "summary": "Jüngere Männer tendieren vor der Wahl in Sachsen-Anhalt eher zum rechten Spektrum, junge Frauen eher zum Linken.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T07:06:15.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "3b06c7b46fd1c545849d87ffa739b10c8f98e6f296421858c36f81f7fd6df7b7",
+            "source_item_id": "fccba61232f9a53d7d7cc382aa46b4e834f2c0e79ef225ad99c3aea110547b39",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T07:06:15.000Z",
+            "ingested_at": "2026-09-05T10:23:53.587Z",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell-radio/rechte-republik-wahl-sachsen-anhalt-100.html",
+            "title": "Rechte Republik? Vor der Wahl in Sachsen-Anhalt",
+            "summary": "Was bedeutet die Wahl in Sachsen-Anhalt für den Rest der Republik? Antworten in SWR Aktuell-Kontext mit Marion Theis",
+            "source_type": "media_rss",
+            "published_at": "2026-09-03T13:33:07.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c520b2fed8cbae3e888aab84b15115b053449540cb1ce16bbc5d6381f5c75a14",
+            "source_item_id": "aeb6e86149e7357797f2d2695a41a092f687a2b4fb1497c4f3f5e23d68e6dba2",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-03T13:33:07.000Z",
+            "ingested_at": "2026-09-05T22:23:21.567Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-wahlkampf-endspurt-schulze-siegmund-liveticker-100.html",
+            "title": "Tausende auf der Straße: Zeichen setzen \"für unser Land\"",
+            "summary": "Der Wahlkampf in Sachsen-Anhalt ist im Endspurt: Am Sonntag werden dort neue Abgeordnete für den Landtag gewählt. Aktuelle Entwicklungen sowie Hintergründe im Blog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:47:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "87d3607ab26afbcab60aed3b95084bfa76b310ff98df25c7114d021cc3071a4d",
+            "source_item_id": "ae0f97241727cfd71284debe9442dad606085a254b21cae8bed1253441ee63b0",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:47:00.000Z",
+            "ingested_at": "2026-09-05T20:36:36.343Z",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "swr-aktuell",
+            "publisher": "SWR Aktuell",
+            "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-exklusivinterview-forderung-afd-verbot-100.html",
+            "title": "Özdemir vor der Landtagswahl in Sachsen-Anhalt: Magdeburg darf nicht Vorort von Moskau werden",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt fordert Özdemir, dass ein AfD-Ministerpräsident verhindert werden müsse. In Vorwahl-Umfragen liegt die AfD seit Wochen vorne.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-04T19:34:28.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c57f82553ed2b3d766c6a7b0e62c896a0b0a9c1fcfbcbe443dfcd611fcf7c5c5",
+            "source_item_id": "8ec23cd24f19c6b95321b42da05da16d62de94b4135bd686d604a54666ff4515",
+            "publisher_id": "swr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Südwestdeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-04T19:34:28.000Z",
+            "ingested_at": "2026-09-05T08:51:16.120Z",
+            "provenance": {
+              "origin": "publisher:swr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/parteien-in-sachsen-anhalt-beenden-heute-wahlkampf-demonstrationen-angemeldet-102.html",
+            "title": "Vor Landtagswahl am Sonntag - Parteien in Sachsen-Anhalt beenden heute Wahlkampf - Demonstrationen angemeldet",
+            "summary": "In Sachsen-Anhalt beenden die Parteien heute ihren Landtagswahlkampf. Vor allem in der Hauptstadt Magdeburg sowie in Halle werden zu den Abschlussveranstaltungen prominente Vertreter erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:54:53.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "fdf3059172229772727d508a76d7d49f5ab40351e811e9d93893b38a9225db0c",
+            "source_item_id": "891cc7b694848903095aa1b177deb145ee177f92cd8b8c8aa93fb475b0da779d",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:54:53.000Z",
+            "ingested_at": "2026-09-05T11:59:56.834Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/panorama/in-bitterfeld-wolfen-liegt-die-demokratiefoerderung-auf-eis-38121574.html",
+            "title": "Sachsen-Anhalt vor der Wahl: Ist Bitterfeld bald überall?",
+            "summary": "In Bitterfeld-Wolfen hat die AfD die Bedingungen für das größte Demokratieförderprogramm massiv verändert. Nun fließen gar keine Gelder mehr. Was das für die Stadt bedeutet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T07:41:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3dc55c55677f78a4eaf8236861b571b5ffa5c0b1e03a7614bfa0c572a173c429",
+            "source_item_id": "76a645c64c8f56c4bd49ee9b0dbb72c34b186507734c7a921433d8d29d9bea72",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T07:41:00.000Z",
+            "ingested_at": "2026-09-05T08:51:16.120Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-demokratie-veranstaltungen-100,demonstrationen-110.html",
+            "title": "Veranstaltungen und Demonstrationen vor der Wahl Sachsen-Anhalt – Aktuelle Entwicklungen",
+            "summary": "Einen Tag vor der Landtagswahl finden in ganz Sachsen-Anhalt Demonstrationen und Feste für Demokratie statt. Die aktuelle Lage – live im Ticker.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T13:08:14.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "7ef86881460778cf16a7074725e8d2283314b02c4e560be4fd25deb0c447ee60",
+            "source_item_id": "297b16c16b4e4ed43a455ef407b564000be2505ca4eda079f641c8bcfb365dff",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T13:08:14.000Z",
+            "ingested_at": "2026-09-05T13:54:59.667Z",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/mehrere-kundgebungen-vor-landtagswahl-parteien-schliessen-wahlkampf-ab-102.html",
+            "title": "Sachsen-Anhalt - Mehrere Kundgebungen vor Landtagswahl - Parteien schließen Wahlkampf ab",
+            "summary": "Einen Tag vor der Landtagswahl in Sachsen-Anhalt haben die Parteien ihren Wahlkampf abgeschlossen. An Veranstaltungen von AfD, Linke und SPD nahmen auch Bundespolitiker teil. CDU, Grüne, FDP und BSW beendeten ebenfalls ihren Wahlkampf.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:15:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9dc8dda134bbd5a990a3bc89d6287eb507d4955f793142a83bf0f220ef4c9a7b",
+            "source_item_id": "0fc05a24b5b765bb48cdd02ccdf3b8afcbd3971e6d1c6c03a26e9310cf333ada",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:15:04.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/afd-maga-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Vor Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ – mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T14:56:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "3945a9b29b190d3b3a725bb6b980ac39cec10dc15c8661960e89fe4b678e4b36",
+            "source_item_id": "93f9609fdaa127812d6085531b6225302a45705677d3b642070eb21a0eaa4e9f",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T14:56:00.000Z",
+            "ingested_at": "2026-09-06T06:06:35.353Z",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "ndr-info",
+            "publisher": "NDR",
+            "url": "https://www.ndr.de/fernsehen/sendungen/nordmagazin/vor-landtagswahl-ganz-deutschland-schaut-auf-sachsen-anhalt,nordmagazin-13810.html",
+            "title": "Vor Landtagswahl: Ganz Deutschland schaut auf Sachsen-Anhalt",
+            "summary": "Am Sonntag wird in dem Bundesland gewählt. Susann Reichenbach informiert aus Magdeburg über die Ausgangslage.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:32:23.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ebf50d80b1d134aff6f1813f91532dffa4a2efde7b3cc4500a9c0c64964749bf",
+            "source_item_id": "4e5d707a3f31ae7b62bdbdbb2a37b40dfad739d35143c28ca51b6620d780c8dd",
+            "publisher_id": "ndr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Norddeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:32:23.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "provenance": {
+              "origin": "publisher:ndr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/vor-der-wahl-in-sachsen-anhalt-ein-kilometer-in-magdeburg-trennt-zwei-welten-16021800.html",
+            "title": "Vor der Wahl in Sachsen-Anhalt: Ein Kilometer in Magdeburg trennt zwei Welten",
+            "summary": "Zum Wahlkampffinale stellen sich die AfD und die Zivilgesellschaft mit Prominenz, Musik und Sprechchören gegeneinander auf. Nicht wenige haben Angst. Szenen eines dramatischen Abends vor einem historischen Tag.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T20:52:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "88b74625ac7c076dc1d9d138c12296451fc16eaed3fa00fbdbb11eec310a242e",
+            "source_item_id": "1993aa01753006f7007bcba776e0e3b7da43941e4a88dd2ba24979685db6f336",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T20:52:04.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/wir-holen-uns-unser-land-zuruck-afd-kandidat-siegmund-gibt-sich-vor-wahl-in-sachsen-anhalt-siegessicher-16008484.html",
+            "title": "„Wir holen uns unser Land zurück“: AfD-Kandidat Siegmund gibt sich vor Wahl in Sachsen-Anhalt siegessicher",
+            "summary": "Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht + IW-Chef warnt bei AfD-Erfolg vor „ruinöser“ Zuwanderungspolitik + Wahlforscher erwarten keine Überraschung wie 2021 + Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "6486b93368b3cf9bacbeb0189c89b3926875ab5daf941525d1149a51d993f1f7",
+            "source_item_id": "cf9cd5a422422d15071b68becded9dec89077a4a6d88c225b1e493a3d91813ae",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T06:06:35.353Z",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Vor-der-Landtagswahl-in-Sachsen-Anhalt/!6206552",
+            "title": "Vor der Landtagswahl in Sachsen-Anhalt: Plattenverschiebung",
+            "summary": "In Halle-Neustadt wohnen Jüngere mit Migrationsgeschichte und Ältere mit DDR-Biografie. Wie schauen sie auf ihr Viertel und die Politik? mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T05:57:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "4a0b704d816bb10ce152dfd2a920b4f03599047bb4096ad5d1b803f79f4337d4",
+            "source_item_id": "3c97285946552732f23458fe4e6874824a2564fbe3ff73d41afe2b3f104f70c0",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T05:57:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/landtagswahl-2026-wie-trumps-nachwuchs-sachsen-anhalt-nutzt/100252237.html",
+            "title": "Landtagswahl: Wie Trumps MAGA-Bewegung im Wahlkampf in Sachsen-Anhalt mitmischt",
+            "summary": "„AFD über alles“ – mit diesem Satz werben junge Republikaner für die Partei. Nach Sachsen-Anhalt haben sie besonders intensive Beziehungen aufgebaut.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:08:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "69aff136a920ebf08003e827d4c23de738988afe5353a3c88024abd50861ae9a",
+            "source_item_id": "7435e069dd716de781c511ed4112d65ae73ebd1ba9a4d3602c6f01eaefd19cc3",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:08:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/liveblog/rund-169-millionen-menschen-durfen-abstimmendie-wahllokale-in-sachsen-anhalt-haben-geoffnet-16008484.html",
+            "title": "Rund 1,69 Millionen Menschen dürfen abstimmen: Die Wahllokale in Sachsen-Anhalt haben geöffnet",
+            "summary": "Wirtschaftsweise warnt vor wirtschaftlichen Folgen eines AfD-Siegs + AfD setzt auf einen Ministerpräsidenten Siegmund + Prien kritisiert AfD-Plan zur Abschaffung der Schulpflicht+ Der Newsblog.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T06:56:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ab1ee55a48566cbe2e25389a868922c9b611af1565c47762c73510e30977e3a9",
+            "source_item_id": "65161320947043465aea07f5f6928e2510e855616ea1a5d9fd0cb7312734be6e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T06:56:20.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Sachsen-Anhalt/!6210514",
+            "title": "Sachsen-Anhalt: Tausende vor der Wahl auf der Straße",
+            "summary": "Am Vorabend der Wahl ziehen Tausende Antifas durch Halle und Magdeburg. Immer dabei: Das Ringen damit, vor Ort weiterzumachen – oder zu gehen. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T06:36:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "4bf0ae8999a493eb38a43523468d423c918dbf51763f69537bad330ddb2a6a66",
+            "source_item_id": "f363844a39f1eb4c8196fcc3e09e309040f6e7b42f9942bb90cf76341686c882",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T06:36:00.000Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_INPUT_TOO_LARGE",
+        "quality_errors": [
+          "AI_INPUT_TOO_LARGE"
+        ],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-06T06:45:32.071Z",
+          "fingerprint": "54b45b9fe0be67e87ad8dd3d3c9f95ee99b8ac46863a345cc68c03347c3ad0c6",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -29785,18 +31648,58 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T11:18:00.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
-            }
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_REQUIRED_STRING:source_summary",
+          "AI_REQUIRED_STRING:summary",
+          "AI_REQUIRED_STRING:why_relevant",
+          "AI_REQUIRED_STRING:status",
+          "AI_REQUIRED_STRING:analysis_type",
+          "AI_REQUIRED_STRING:importance",
+          "AI_REQUIRED_STRING:impact_potential",
+          "AI_REQUIRED_STRING:systemic_relevance",
+          "AI_REQUIRED_STRING:transformation_potential",
+          "AI_REQUIRED_STRING:resilience",
+          "AI_REQUIRED_STRING:evidence_level",
+          "AI_REQUIRED_STRING:attribution",
+          "AI_REQUIRED_STRING:detail_summary",
+          "AI_STATUS_INVALID",
+          "AI_ANALYSIS_TYPE_INVALID",
+          "AI_IMPORTANCE_INVALID",
+          "AI_PUBLICATION_GATE_REQUIRED",
+          "AI_DIMENSION_INVALID:human",
+          "AI_DIMENSION_INVALID:planet",
+          "AI_DIMENSION_INVALID:democracy",
+          "AI_ARRAY_REQUIRED:impact_risks",
+          "AI_ARRAY_REQUIRED:mechanisms",
+          "AI_ARRAY_REQUIRED:first_order",
+          "AI_ARRAY_REQUIRED:second_order",
+          "AI_ARRAY_REQUIRED:third_order",
+          "AI_ARRAY_REQUIRED:side_effects",
+          "AI_ARRAY_REQUIRED:uncertainties",
+          "AI_ARRAY_REQUIRED:watch_next",
+          "AI_ARRAY_REQUIRED:reference_frameworks",
+          "AI_UNCERTAINTY_REQUIRED",
+          "AI_WATCH_NEXT_REQUIRED",
+          "AI_SUMMARY_SENTENCE_COUNT",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "NEWS_STATUS_REQUIRED",
+          "EVENT_CLAIMS_REQUIRED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-06T07:00:32.071Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -29804,7 +31707,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:44:56.956Z",
+          "checked_at": "2026-09-06T06:45:32.071Z",
           "fingerprint": "6f04dd8161dcb232034e0be8f96d4203c2443126c1bc4d3eec87d47d884fe6e7",
           "issue_codes": [],
           "warning_codes": []
@@ -29914,7 +31817,7 @@
       "verification_started_at": "2026-09-05T11:33:09.252Z",
       "publish_ready_at": "2026-09-05T11:33:20.789Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-06T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -30225,11 +32128,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-2",
-        "fingerprint": "382976f7c5f087c492c30938dc8493657ea1760854cbde5b0372b60dc8442515",
-        "checked_at": "2026-09-05T19:21:39.490Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "75cd1f7bb7eaf961c84783c1315a1cd53e2370eab6af2623667b42d972aea50f",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-06T01:21:39.490Z",
+        "expires_at": "2026-09-06T12:45:32.071Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -30264,60 +32167,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-06T05:06:39.571Z",
-        "content_hash": "4e538b6870bba573e71ebe4b674b6ff2dbc2fb46dd5f6b00de8440d532972b4e",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
-            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
-            "summary": "Die US-Gesandten Jared Kushner und Steve Witkoff sind zu Gesprächen über eine Beendigung des Ukraine-Kriegs in der russischen Hauptstadt Moskau eingetroffen. Ihr Flugzeug landete am Samstagmittag auf dem Flughafen Wnukowo, wie die russischen Nachrichtenagenturen Ria Nowosti und Tass meldeten. In der Folge wollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:25:11.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3df5cd824d6e715dc545dee0a6465e5528a0510cf96dfebd0addca1cce08269c",
-            "source_item_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:25:11.000Z",
-            "ingested_at": "2026-09-05T11:31:43.777Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-06T05:44:56.956Z",
-          "fingerprint": "7ba43ef82ae3ba9c033c993999a12aba353829e379025ba8bf310d9c05b7ca41",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-eb6e7bfa7e906259",
@@ -32758,133 +34608,6 @@
       "deepening_checks": 3
     },
     {
-      "story_id": "wt-1bd2afdf147b3ca5",
-      "slug": "krisenkommunikation-wie-unternehmen-auf-plotzliche-angriffe-reagieren-sollten-7b3ca5",
-      "title": "Krisenkommunikation: Wie Unternehmen auf plötzliche Angriffe reagieren sollten",
-      "first_seen": "2026-09-05T11:00:00.000Z",
-      "last_updated": "2026-09-05T11:00:00.000Z",
-      "topic": [
-        "Energie",
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/erfolg/management/krisenkommunikation-wie-unternehmen-auf-sabotage-reagiere/100252115.html",
-          "title": "Krisenkommunikation: Wie Unternehmen auf plötzliche Angriffe reagieren sollten",
-          "summary": "Nach den Attacken auf mehrere Umspannwerke steht die Resilienz deutscher Energiefirmen zur Debatte. Wie widerstandsfähig sind sie aufgestellt?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:00:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "efbbd51a7d3957b5bce01e0bf77dc91281edf4f6011f36eac077272872e07b08",
-          "source_item_id": "492d6e3030e808b5e73521adbae0aceb1542a9c0d3c665d59605794a021ccbd3",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T11:00:00.000Z",
-          "ingested_at": "2026-09-05T11:12:42.527Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-1bd2afdf147b3ca5-claim-01",
-          "story_id": "wt-1bd2afdf147b3ca5",
-          "claim": "Krisenkommunikation: Wie Unternehmen auf plötzliche Angriffe reagieren sollten: Nach den Attacken auf mehrere Umspannwerke steht die Resilienz deutscher Energiefirmen zur Debatte. Wie widerstandsfähig sind sie aufgestellt?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T11:12:42.527Z"
-        }
-      ],
-      "content_hash": "1b710ac0250ec3efa78df475af01e558d7616b75044e05e0121e5beabbc6b9be",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T11:12:42.527Z",
-      "event_first_seen_at": "2026-09-05T11:12:42.527Z",
-      "event_detected_at": "2026-09-05T11:12:42.527Z",
-      "event_id": "event-073763b145296870fd8d",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 54,
-        "public_relevance": "hoch",
-        "topics": [
-          "Energie",
-          "Wirtschaft"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 12.708783333333333,
-        "detection_delay_minutes": 12.708783333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 95,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T11:12:42.527Z",
-      "rejection": {
-        "at": "2026-09-05T11:12:42.527Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
       "story_id": "wt-aaa7e98d9c993988",
       "slug": "anschlage-auf-umspannwerke-dobrindt-geht-von-klimaextremismus-aus-fahndung-nach-tatverda-993988",
       "title": "Anschläge auf Umspannwerke - Dobrindt geht von \"Klimaextremismus\" aus - Fahndung nach Tatverdächtigem läuft",
@@ -35026,131 +36749,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-23e5db1c29a3986d",
-      "slug": "uniper-unipers-kritische-rolle-beim-auffullen-der-gasspeicher-a3986d",
-      "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
-      "first_seen": "2026-09-05T10:12:00.000Z",
-      "last_updated": "2026-09-05T10:12:00.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/deutschlands-gasspeicher-warum-uniper-wieder-unverzichtbar-wird/100251801.html",
-          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
-          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T10:12:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "1172b6a6b4bc98615131c7e212317c25611ea201af7024a93bc91e01f79e1a18",
-          "source_item_id": "c025f627707b43b240e1038defd2f2668a845f6e95227f0623d577c5a202d8ea",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T10:12:00.000Z",
-          "ingested_at": "2026-09-05T10:57:29.473Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-23e5db1c29a3986d-claim-01",
-          "story_id": "wt-23e5db1c29a3986d",
-          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-05T10:57:29.473Z"
-        }
-      ],
-      "content_hash": "1a85f1440149b6494e08a283e497475638bbfa815c425940be370eaf51aff9e4",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-05T10:57:29.473Z",
-      "event_first_seen_at": "2026-09-05T10:57:29.473Z",
-      "event_detected_at": "2026-09-05T10:57:29.473Z",
-      "event_id": "event-2f21c5a1c223e3d2beee",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 45.491216666666666,
-        "detection_delay_minutes": 45.491216666666666,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 91,
-        "freshness_warning": null
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-05T10:57:29.473Z",
-      "rejection": {
-        "at": "2026-09-05T10:57:29.473Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -48962,7 +50560,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:44:56.956Z",
+          "checked_at": "2026-09-06T06:45:32.071Z",
           "fingerprint": "fd8b6023c6f76934f3232ffa3430c47f7573f4f99866be1834f75d857e9ce743",
           "issue_codes": [],
           "warning_codes": []
@@ -65517,12 +67115,14 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T17:51:00.000Z",
-            "ingested_at": "2026-09-05T18:36:52.497Z",
+            "ingested_at": "2026-09-06T06:45:32.071Z",
             "provenance": {
               "origin": "publisher:taz",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
-            }
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
           }
         ],
         "reason": "AI_BUDGET_OR_BATCH_LIMIT",
@@ -65536,7 +67136,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-06T05:44:56.956Z",
+          "checked_at": "2026-09-06T06:45:32.071Z",
           "fingerprint": "3ccb8aee8d9a3c48f12a071054d9835f6733c44388be923d0ddd201dc8dfab85",
           "issue_codes": [],
           "warning_codes": []
@@ -91851,14 +93451,14 @@
           "source_id": "tagesspiegel-home",
           "publisher": "Der Tagesspiegel",
           "url": "https://www.tagesspiegel.de/sport/handball-prasident-im-bsw-wahlkampf-ich-weiss-nicht-ob-man-das-so-trennen-kann-16018794.html",
-          "title": "Handball-Präsident macht BSW-Wahlkampf: „Ich weiß nicht, ob man das so trennen kann“",
+          "title": "Mit Friedenstaube auf Wagenknecht-Kurs: Der deutsche Handball-Präsident kämpft für das BSW",
           "summary": "Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
           "source_type": "media_rss",
           "published_at": "2026-09-04T11:43:21.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "d232611ef99d9b02c3aa0de2b541015a98f46da8cf26470a01251eb48b982677",
+          "content_hash": "ed2d5fde3df34221b4fa1871744a62f78475f8b79b3e9852d6e4cdae0c33ef1f",
           "source_item_id": "6aefedd2b8be1f22afb3b71b00de34d881a39fc9c6c53de8354f4a7acd6612da",
           "publisher_id": "tagesspiegel",
           "publisher_kind": "journalism",
@@ -91871,19 +93471,21 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-04T11:43:21.000Z",
-          "ingested_at": "2026-09-04T12:51:34.068Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "provenance": {
             "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
-          }
+          },
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown"
         }
       ],
       "claims": [
         {
           "claim_id": "wt-05a85d44e21491c4-claim-01",
           "story_id": "wt-05a85d44e21491c4",
-          "claim": "Handball-Präsident macht BSW-Wahlkampf: „Ich weiß nicht, ob man das so trennen kann“: Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
+          "claim": "Mit Friedenstaube auf Wagenknecht-Kurs: Der deutsche Handball-Präsident kämpft für das BSW: Andreas Michelmann spricht in sozialen Medien von „Kriegstreibern“ und einer verfehlten Russlandpolitik. Der Handballbund sieht darin keinen Widerspruch zu seinem Ehrenamt. Andere im Verband sind skeptischer.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesspiegel-home",
           "source_function": "journalistic_report",
@@ -91898,24 +93500,30 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T12:51:34.068Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
-      "content_hash": "0054ee0086a078438af0144efeb9928747879cb71977641a4acf3cb205c7b190",
+      "content_hash": "39018d16daf9aad9a847e0a80e089f607adf89a211d3b5fb495452c2ad5eeb20",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "AI_MATERIALITY_TOO_LOW"
       ],
+      "quality_retry_after": "2026-09-06T07:00:32.071Z",
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-04T12:51:34.068Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-04T12:06:38.422Z",
       "event_detected_at": "2026-09-04T12:06:38.422Z",
       "event_id": "event-72e073be247cfa5d7570",
       "preanalysis": {
         "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
         "internal_relevance_score": 40,
         "public_relevance": "mittel",
         "topics": [
@@ -91943,25 +93551,34 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 68.2178,
+        "source_age_minutes": 2582.1845166666667,
         "detection_delay_minutes": 23.290366666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.92743333333333,
+        "queue_age_minutes": 2558.89415,
         "target_publication_minutes": 120,
-        "news_freshness_score": 86,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-06T06:45:32.071Z",
+        "fingerprint": "34dffa23645d8f454fd67a1d0dedaeb51c55a2fed6888184f110dbbaee148a81",
+        "issue_codes": [],
+        "warning_codes": []
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T12:51:34.068Z",
+      "rejected_at": "2026-09-06T06:45:32.071Z",
       "rejection": {
-        "at": "2026-09-04T12:51:34.068Z",
+        "at": "2026-09-06T06:45:32.071Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
+          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -122194,7 +123811,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:44:56.956Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
@@ -122209,7 +123826,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-06T05:44:56.956Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-42fd9997b279e1433a65",
@@ -122245,11 +123862,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3801.9492666666665,
+        "source_age_minutes": 3862.5345166666666,
         "detection_delay_minutes": 478.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3323.6657666666665,
+        "queue_age_minutes": 3384.2510166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -122258,7 +123875,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:44:56.956Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
         "issue_codes": [
           "SOURCE_SEMANTIC_FIT_OPEN"
@@ -130867,7 +132484,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-01T06:00:00.000Z",
-          "ingested_at": "2026-09-06T05:41:03.427Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -130896,7 +132513,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:44:56.956Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
@@ -130909,7 +132526,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:44:56.956Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-31e248310551ae4377cf",
@@ -130943,11 +132560,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7184.9492666666665,
+        "source_age_minutes": 7245.534516666667,
         "detection_delay_minutes": 3861.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3323.6657666666665,
+        "queue_age_minutes": 3384.2510166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -130956,7 +132573,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:44:56.956Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
         "issue_codes": [],
         "warning_codes": []
@@ -131396,7 +133013,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-31T12:00:00.000Z",
-          "ingested_at": "2026-09-06T05:41:03.427Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "provenance": {
             "origin": "publisher:destatis-aktuell",
             "basis": "publisher_only_origin_unverified",
@@ -131425,7 +133042,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:44:56.956Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
@@ -131438,7 +133055,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-06T05:44:56.956Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-09-03T22:21:17.010Z",
       "event_detected_at": "2026-09-03T22:21:17.010Z",
       "event_id": "event-1f973d1f3c747fb944e6",
@@ -131475,11 +133092,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8264.949266666667,
+        "source_age_minutes": 8325.534516666667,
         "detection_delay_minutes": 4941.2835,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 3323.6657666666665,
+        "queue_age_minutes": 3384.2510166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -131488,7 +133105,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:44:56.956Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
         "issue_codes": [],
         "warning_codes": []
@@ -132335,7 +133952,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-08-27T12:05:00.000Z",
-          "ingested_at": "2026-09-06T05:41:03.427Z",
+          "ingested_at": "2026-09-06T06:45:32.071Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -132364,7 +133981,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T05:41:03.427Z"
+          "checked_at": "2026-09-06T06:45:32.071Z"
         }
       ],
       "content_hash": "b1bae7b04df34bc6338acd68295c03bcc78f251e2a1fb3d3bb0005b5ad402ce7",
@@ -132373,13 +133990,13 @@
       "quality_errors": [
         "AI_PUBLICATION_RECOMMENDATION_INVALID"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-06T05:56:03.427Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-06T07:15:32.071Z",
       "reassessment": false,
       "fresh": false,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-06T05:41:03.427Z",
+      "updated_at": "2026-09-06T06:45:32.071Z",
       "event_first_seen_at": "2026-08-27T12:05:00.000Z",
       "event_detected_at": "2026-08-27T12:05:00.000Z",
       "event_id": "event-387b5558f67e204de308",
@@ -132414,11 +134031,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 14016.057116666667,
+        "source_age_minutes": 14080.534516666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14016.057116666667,
+        "queue_age_minutes": 14080.534516666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -132427,7 +134044,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-06T05:41:03.427Z",
+        "checked_at": "2026-09-06T06:45:32.071Z",
         "fingerprint": "6e342d5fd35d2293e28d3fbce951640b3384ddc6bf400910593ccb6dda8c0ecb",
         "issue_codes": [],
         "warning_codes": []
