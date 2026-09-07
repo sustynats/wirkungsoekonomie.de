@@ -160859,7 +160859,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-aa183e2ce4e9109ded28",
+      "event_id": "event-ae3d4b273922de048bb3",
       "first_seen_at": "2026-09-07T08:37:06.801Z"
     },
     "9728d306dd76730317339d9e4efff5fd06991880e37f288a14d4d47a95e1cf1b": {
@@ -277046,10 +277046,11 @@
           "time_sensitive": false,
           "findings": []
         },
-        "internal_relevance_score": 32,
+        "internal_relevance_score": 40,
         "public_relevance": "mittel",
         "topics": [
-          "Energie"
+          "Energie",
+          "Geopolitik"
         ],
         "dimensions": [],
         "status": "laufende Entwicklung",
@@ -314978,7 +314979,7 @@
           "time_sensitive": false,
           "findings": []
         },
-        "internal_relevance_score": 36,
+        "internal_relevance_score": 30,
         "public_relevance": "mittel",
         "topics": [
           "Geopolitik",
@@ -388259,7 +388260,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-aa183e2ce4e9109ded28",
+      "event_id": "event-ae3d4b273922de048bb3",
       "source_item_id": "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0",
       "source_id": "stern-schlagzeilen",
       "role": "journalistic_report"
@@ -572571,7 +572572,21 @@
           "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
         ]
       }
+    },
+    {
+      "at": "2026-09-07T08:51:51.042Z",
+      "story_id": "wt-86ea1ddfd89beabf",
+      "event_id": "event-ae3d4b273922de048bb3",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "url": "https://www.stern.de/news/sabotageversuche-an-stromversorgung--weitere-sprengvorrichtungen-in-sachsen-gefunden-38214880.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0.143/0.172)."
+        }
+      ]
     }
   ],
-  "updated_at": "2026-09-07T08:37:06.801Z"
+  "updated_at": "2026-09-07T08:51:51.042Z"
 }
