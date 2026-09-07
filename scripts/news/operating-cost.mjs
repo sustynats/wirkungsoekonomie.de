@@ -29,12 +29,16 @@ export function operatingCostSummary(usage, startedAt, fx, now) {
   };
   const news = summarize(runs.filter(isImmediateNewsCostRun));
   const batchRuns = runs.filter(isBatchCostRun);
-  const settled = batchRuns.filter(run => run.ai?.token_source === 'batch_provider_usage');
-  const reserved = batchRuns.filter(run => run.ai?.token_source !== 'batch_provider_usage');
+  // A local refusal records zero provider requests and zero cost. Keep its row
+  // in the funnel, but do not count it as a completed provider job. Missing
+  // request/cost values are not zero, and anomalous positive costs remain paid.
+  const zeroRequest = run => run.ai?.requests === 0 && run.ai?.estimated_cost_usd === 0;
+  const settled = batchRuns.filter(run => !zeroRequest(run) && run.ai?.token_source === 'batch_provider_usage');
+  const reserved = batchRuns.filter(run => !zeroRequest(run) && run.ai?.token_source !== 'batch_provider_usage');
   // An applied background check is not a newly published news story. Pending
   // reservations and paid quality rejections still belong to the total cost.
   const batch = { ...summarize(batchRuns),
-    settled_jobs: settled.length, reserved_jobs: reserved.length,
+    settled_jobs: settled.length, reserved_jobs: reserved.length, zero_request_jobs: batchRuns.filter(zeroRequest).length,
     settled_cost_usd: summarize(settled).estimated_cost_usd,
     reserved_cost_usd: summarize(reserved).estimated_cost_usd,
     applied_jobs: batchRuns.filter(run => Number.isFinite(Date.parse(run.publication_applied_at))).length,

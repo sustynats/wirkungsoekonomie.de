@@ -2,12 +2,13 @@ import { renderDimensionMeters, renderIcon, renderPathDirection } from "./visual
 import { AXES, renderAssessmentAxes, renderEditorialBalance } from "./editorial-judgment.mjs";
 
 export const isEditorialCommentary = analysis => analysis?.editorial_genre === "commentary";
-export const editorialLabel = analysis => isEditorialCommentary(analysis) ? "WÖk-Analyse / Kommentar" : analysis?.analysis_variant === "systemic" ? "WÖk-Sonderanalyse" : "WÖk-Analyse";
+export const EDITORIAL_TRANSPARENCY_NOTE = "Dieser Beitrag verbindet recherchierte Fakten mit wirkungswissenschaftlicher Analyse und persönlicher Einordnung. Tatsachenbehauptungen sind belegt; Bewertungen geben die Einschätzung der Autorin wieder.";
+export const editorialLabel = () => "Meinung & Analyse";
 export const isCommissionedAnalysis = analysis => (analysis?.analysis_variant === "systemic" || isEditorialCommentary(analysis)) && analysis?.editorial_mode === "commissioned_review";
 const escape = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[char]));
 const STATES = { open: "Offen", announced: "Angekündigt", introduced: "Eingebracht", adopted: "Beschlossen", implemented: "Umgesetzt", measured: "Wirkung gemessen" };
 const STATUS = { fact: "Belegt", program_statement: "Programmaussage", analytical_inference: "Plausibler Wirkpfad", scenario: "Bedingtes Szenario", impact_risk: "Bedingtes Risiko" };
-const TYPES = new Set(["cards", "cascade", "timeline", "references", "network", "power", "federal", "comparison"]);
+const TYPES = new Set(["cards", "cascade", "timeline", "references", "network", "power", "federal", "comparison", "feedback"]);
 
 export const EDITORIAL_VISUAL_SCHEMA = { type: "cascade", caption: "Wirkpfad in Alltagssprache", items: [{ title: "Schritt", text: "konkrete Veränderung", status: "fact|program_statement|analytical_inference|scenario|impact_risk", relation: "scope|impact_path", direction: "positive|negative|mixed|open", condition: "Bedingung des Wirkpfads; scope zeigt nur Zuständigkeit/Bezug", source_ids: ["string"] }] };
 
@@ -31,6 +32,7 @@ export function editorialVisualErrors(analysis) {
     if (!visual) continue;
     if (!TYPES.has(visual.type) || !visual.caption || !visual.items?.length) errors.push("SYSTEMIC_VISUAL_INVALID");
     if (["network", "power", "federal"].includes(visual.type) && !visual.hub) errors.push("SYSTEMIC_VISUAL_HUB_REQUIRED");
+    if (visual.type === "feedback" && (!Array.isArray(visual.items) || visual.items.length < 3 || !["closed", "broken"].includes(visual.loop_status) || typeof visual.return_label !== "string" || !visual.return_label.trim() || visual.return_label.length > 240)) errors.push("EDITORIAL_FEEDBACK_INVALID");
     if (visual.type === "comparison") {
       const lanes = Array.isArray(visual.lanes) ? visual.lanes : [];
       const items = Array.isArray(visual.items) ? visual.items : [];
@@ -85,6 +87,13 @@ export function commissionedReviewState(analysis, story) {
 
 export function renderSystemicVisual(visual, sources) {
   if (!visual || !TYPES.has(visual.type)) return "";
+  if (visual.type === "feedback") {
+    if (!Array.isArray(visual.items) || visual.items.length < 3 || !["closed", "broken"].includes(visual.loop_status) || !visual.return_label) return "";
+    // Reuse the ordered, evidence-labelled path; the return channel makes the
+    // feedback relationship explicit without implying a measured causal loop.
+    const path = renderSystemicVisual({ ...visual, type: "cascade", outcome: undefined }, sources);
+    return `<div class="news-feedback news-feedback--${visual.loop_status}">${path}<p class="news-feedback__return"><span aria-hidden="true">${visual.loop_status === "closed" ? "↺" : "↛"}</span><span><strong>${visual.loop_status === "closed" ? "Rückkopplung zum Anfang" : "Rückkopplung unterbrochen"}</strong> ${escape(visual.return_label)}</span></p>${visual.outcome ? `<p class="news-method-note">${escape(visual.outcome)}</p>` : ""}</div>`;
+  }
   if (visual.type === "comparison") {
     const laneHtml = (visual.lanes || []).map(lane => `<section class="news-comparison-lane"><h3>${escape(lane.title)}</h3><p class="news-method-note">${escape(lane.summary)}</p><ol>${visual.items.filter(item => item.lane === lane.id).map(item => `<li class="news-systemic-node news-systemic-node--${escape(item.status)}"><span class="news-systemic-status">${escape(STATUS[item.status])}</span>${item.relation === "impact_path" ? renderPathDirection(item.direction) : ""}<h4>${item.icon ? renderIcon(item.icon) : ""}${escape(item.title)}</h4><p>${escape(item.text)}</p>${item.condition ? `<p class="news-method-note"><strong>Bedingung / Grenze:</strong> ${escape(item.condition)}</p>` : ""}${(item.source_ids || []).length ? `<p class="news-method-note">${item.source_ids.map(id => sources.get(id)).filter(Boolean).map(source => `<a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.publisher)}</a>`).join(" · ")}</p>` : ""}</li>`).join("")}</ol></section>`).join("");
     return `<figure class="news-systemic-visual news-systemic-visual--comparison"><figcaption>${escape(visual.caption)}</figcaption><div class="news-comparison-grid">${laneHtml}</div>${visual.outcome ? `<p class="news-systemic-outcome">${escape(visual.outcome)}</p>` : ""}</figure>`;

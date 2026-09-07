@@ -405,6 +405,7 @@ export function renderIconSprite() {
 }
 
 export function renderIcon(name, className = "") {
+  if (name === "menschen") name = "soziales";
   const key = ICON_PATHS[name] ? name : "meldung";
   return `<svg class="wt-icon${className ? ` ${className}` : ""}" aria-hidden="true" focusable="false"><use href="#wt-i-${key}"/></svg>`;
 }

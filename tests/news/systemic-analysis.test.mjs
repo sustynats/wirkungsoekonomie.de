@@ -71,9 +71,9 @@ test("monitoring never promotes a headline into measured impact", () => {
 
 test("special renderer reuses article, labels and author without changing standard variant", () => {
   const record=prepared(); const html=editorialAnalysisPage(record,story);
-  for(const marker of ["WÖk-Sonderanalyse","Natalie Weber","Das Wichtigste in 90 Sekunden","reality-check","versionsverlauf","news-systemic-visual--cascade",'"@type":"Article"',"2032","Art. 20a","Gleichberechtigung","18 Min."]) assert.ok(html.includes(marker),marker);
+  for(const marker of ["Meinung &amp; Analyse","Systemische Sonderanalyse","Natalie Weber","Das Wichtigste in 90 Sekunden","reality-check","versionsverlauf","news-systemic-visual--cascade",'"@type":"Article"',"2032","Art. 20a","Gleichberechtigung","18 Min."]) assert.ok(html.includes(marker),marker);
   assert.ok(html.includes('href="../../origin/"'));
-  assert.equal(editorialLabel({}),"WÖk-Analyse");
+  assert.equal(editorialLabel({}),"Meinung & Analyse");
   const standard={...record,analysis_variant:"standard"};
   assert.ok(!editorialAnalysisPage(standard,story).includes('class="news-editorial-article news-editorial-article--systemic"'));
   assert.ok(!editorialAnalysisPage(standard,story).includes('id="reality-check"'));

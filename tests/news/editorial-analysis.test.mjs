@@ -354,8 +354,8 @@ test("Generator bindet Portrait, eigenständige Route, Rücklink, RSS und gemisc
   assert.match(html, /Methodik hinter dieser Analyse/);
   assert.match(html, /So arbeitet der Wirkungsticker/);
   assert.doesNotMatch(html, /WÖK-Analyse/);
-  assert.match(html, /"articleSection":"WÖk-Analyse"/);
+  assert.match(html, /"articleSection":"Meinung & Analyse"/);
   assert.match(html, /Vom Ereignis zur systemischen Folge/);
   assert.match(html, /Erste Ordnung – unmittelbar/);
-  assert.match(storyPage(story, { editorialAnalysis: analysis }), /WÖk-Analyse zu diesem Thema/);
+  assert.match(storyPage(story, { editorialAnalysis: analysis }), /Meinung &amp; Analyse zu diesem Thema/);
 });

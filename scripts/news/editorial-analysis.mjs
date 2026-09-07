@@ -1,6 +1,6 @@
 import crypto from "node:crypto";
 import { hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
-import { SYSTEMIC_ANALYSIS_RULE, JOURNALISTIC_STYLE_RULE, IMPACT_DIRECTION_RULE } from "./analysis-principles.mjs";
+import { SYSTEMIC_ANALYSIS_RULE, JOURNALISTIC_STYLE_RULE, IMPACT_DIRECTION_RULE, AUTHOR_ANALYSIS_RULE } from "./analysis-principles.mjs";
 import { systemicValidationErrors, editorialVisualErrors, sanitizeEditorialVisual, EDITORIAL_VISUAL_SCHEMA } from "./systemic-analysis.mjs";
 import { EDITORIAL_JUDGMENT_SCHEMA, EDITORIAL_JUDGMENT_RULE, sanitizeEditorialJudgment, editorialJudgmentErrors } from "./editorial-judgment.mjs";
 
@@ -227,7 +227,8 @@ export function buildEditorialResearchPacket(story, assessment) {
 export function buildEditorialAnalysisPrompt(story, assessment, qualityErrors = []) {
   const packet = buildEditorialResearchPacket(story, assessment);
   return [
-    "Du erstellst eine eigenständige journalistische WÖK-ANALYSE nach der Methodik der Wirkungsökonomie. Sie ist kein längeres Nachrichtenreferat, sondern erklärt den zusätzlichen systemischen Zusammenhang.",
+    "Du erstellst einen eigenständigen Beitrag MEINUNG & ANALYSE nach der Methodik der Wirkungsökonomie. Kein längeres Nachrichtenreferat: Er erklärt den zusätzlichen systemischen Zusammenhang und trennt Fakten, methodische Analyse und persönliche Einordnung.",
+    AUTHOR_ANALYSIS_RULE,
     SYSTEMIC_ANALYSIS_RULE,
     JOURNALISTIC_STYLE_RULE,
     IMPACT_DIRECTION_RULE,

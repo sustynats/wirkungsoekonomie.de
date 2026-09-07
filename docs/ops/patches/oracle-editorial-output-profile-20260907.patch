@@ -1,0 +1,200 @@
+diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
+index 8884b6e..1ad9c5e 100644
+--- a/src/http/apiServer.ts
++++ b/src/http/apiServer.ts
+@@ -290,7 +290,11 @@ export function startApiServer(service: FactcheckService, config: RuntimeConfig,
+         try {
+           // Dedicated authenticated worker lane. Shared account budget still applies;
+           // the ticker also maintains its lower persistent monthly token budget.
+-          const action = () => providers.newsAiProvider!.answer(input);
++          // A body field or source text cannot raise the output allowance.
++          // This header is a job profile only after worker authentication.
++          const workerInput = request.headers['x-woek-client-id'] === 'woek-wirkungsticker-editorial-analysis-v1'
++            ? { ...input, newsroomProfile: 'editorial' as const } : input;
++          const action = () => providers.newsAiProvider!.answer(workerInput);
+           if (!providers.newsAnalysisBudget) throw new FactcheckProviderError("Nachrichten-Kostenschutz fehlt.", 503);
+           const guarded = () => providers.newsAnalysisBudget!.withBudget(action);
+           const result = providers.budgetTracker ? await providers.budgetTracker.withBudget("news-analysis", guarded) : await guarded();
+@@ -302,9 +306,11 @@ export function startApiServer(service: FactcheckService, config: RuntimeConfig,
+             sendJson(response, 429, { ok:false, code:'BUDGET_EXHAUSTED', provider_called:false,
+               budget_scope: error.technicalMessage === 'news_monthly_budget_reached' ? 'news' : 'shared',
+               error:'Das freigegebene KI-Budget ist ausgeschöpft.' });
+-          } else if (error instanceof FactcheckProviderError && (error.technicalMessage === 'news_output_invalid' || error.usageEvidence)) {
++          } else if (error instanceof FactcheckProviderError && (['news_output_invalid', 'news_output_truncated', 'news_output_incomplete'].includes(error.technicalMessage || '') || error.usageEvidence)) {
+             sendJson(response, 502, { ok:false, code:'ANALYSIS_OUTPUT_INVALID', provider_called:true,
+               ...(error.usageEvidence ? { model:error.usageEvidence.model, usage:error.usageEvidence.usage } : {}),
++              ...(error.technicalMessage === 'news_output_truncated' ? { output_issue: 'max_output_tokens' }
++                : error.technicalMessage === 'news_output_incomplete' ? { output_issue: 'incomplete' } : {}),
+               error:'Die Nachrichtenanalyse hat kein gültiges Ausgabeformat.' });
+           } else throw error;
+         } finally {
+diff --git a/src/services/openaiWoekAi.ts b/src/services/openaiWoekAi.ts
+index 38c2ece..2d711ed 100644
+--- a/src/services/openaiWoekAi.ts
++++ b/src/services/openaiWoekAi.ts
+@@ -8,6 +8,8 @@ import { validProviderUsage, type ProviderUsageEvidence } from './providerUsage.
+ export interface WoekAiQuestionInput {
+   question: string;
+   context?: string;
++  // Internal routing only: the authenticated worker route assigns this value.
++  newsroomProfile?: 'editorial';
+ }
+ 
+ export interface WoekAiAnswerProvider {
+@@ -91,14 +93,19 @@ const newsroomInstructions = buildWoekInstructions([
+ ]);
+ 
+ // Synchronous and delayed newsroom jobs share the same method/injection rules.
+-export function buildNewsroomRequest(input: WoekAiQuestionInput, model: string, maxOutputTokens = 6500): Record<string, unknown> {
++export function buildNewsroomRequest(input: WoekAiQuestionInput, model: string, maxOutputTokens = input.newsroomProfile === 'editorial' ? 10000 : 6500): Record<string, unknown> {
+   return { model, instructions: newsroomInstructions, input: input.question, store: false,
+     reasoning: { effort: 'low' }, max_output_tokens: maxOutputTokens, text: { format: { type: 'json_object' } } };
+ }
+ 
+ export function readNewsroomOutput(payload: unknown): string {
++  const response = payload as { status?: string; incomplete_details?: { reason?: string } } | undefined;
++  if (response?.status && response.status !== 'completed') {
++    const truncated = response.status === 'incomplete' && ['max_output_tokens', 'max_tokens'].includes(response.incomplete_details?.reason || '');
++    throw new FactcheckProviderError('Die Nachrichtenanalyse wurde nicht vollständig ausgegeben.', 502, truncated ? 'news_output_truncated' : 'news_output_incomplete');
++  }
+   const text = extractOutputText(payload);
+-  if (!text || text.length > 40000 || !Array.isArray(JSON.parse(text)?.analyses)) throw new Error('news_output_invalid');
++  if (!text || text.length > 40000 || !Array.isArray(JSON.parse(text)?.analyses)) throw new FactcheckProviderError('Die Nachrichtenanalyse hat kein gültiges Ausgabeformat.', 502, 'news_output_invalid');
+   return text;
+ }
+ 
+@@ -202,7 +209,7 @@ export class OpenAiWoekAiProvider implements WoekAiAnswerProvider {
+           cached_input_tokens: payload.usage.input_tokens_details?.cached_tokens ?? 0
+         };
+         if (attempt === 1 && validProviderUsage(usage)) usageEvidence = { model: this.options.model, usage };
+-        const text = extractOutputText(payload);
++        const text = this.options.newsroomMode ? readNewsroomOutput(payload) : extractOutputText(payload);
+         if (!text) {
+           throw new FactcheckProviderError("Die WOeK-KI-Antwort war leer oder unlesbar.", 502, this.options.newsroomMode ? 'news_output_invalid' : undefined);
+         }
+diff --git a/tests/apiServer.test.ts b/tests/apiServer.test.ts
+index 1e4ce46..4f77105 100644
+--- a/tests/apiServer.test.ts
++++ b/tests/apiServer.test.ts
+@@ -11,6 +11,36 @@ import { clientKey, startApiServer, type NewsVisualProvider } from "../src/http/
+ import type { UsageBudgetTracker } from '../src/services/usageBudget.js';
+ import { FactcheckProviderError } from '../src/services/openaiFactcheck.js';
+ import type { NewsBatchService } from '../src/services/newsBatchService.js';
++import type { WoekAiQuestionInput } from '../src/services/openaiWoekAi.js';
++
++it('selects editorial capacity only in the authenticated worker route, never from body or public headers', async () => {
++  const received: WoekAiQuestionInput[] = [];
++  const answer = async (input: WoekAiQuestionInput) => { received.push(input); return { sources: [], answer: 'test' } as unknown as WoekAiAnswer; };
++  const server = startApiServer({} as FactcheckService, { apiPort: 0, apiHost: '127.0.0.1', apiAllowedOrigins: [], apiMaxBodyBytes: 100000,
++    apiRouteRateLimitsPerHour: { woekAi: 40 } } as unknown as RuntimeConfig, {
++    newsPushService: { isAuthorized: (token: string) => token === 'test-only' } as unknown as NewsPushService,
++    newsAiProvider: { answer }, woekAiProvider: { answer },
++    newsAnalysisBudget: { withBudget: async (action: () => Promise<WoekAiAnswer>) => action() } as unknown as NewsAnalysisBudget,
++  });
++  await once(server, 'listening');
++  const base = `http://127.0.0.1:${(server.address() as AddressInfo).port}`;
++  const headers = { Authorization: 'Bearer test-only', 'Content-Type': 'application/json', 'X-WOEK-Client-ID': 'woek-wirkungsticker-editorial-analysis-v1' };
++  const body = JSON.stringify({ question: 'News test', newsroomProfile: 'editorial', max_output_tokens: 999999 });
++  try {
++    expect((await fetch(`${base}/api/news-analysis`, { method: 'POST', body, headers: { 'X-WOEK-Client-ID': headers['X-WOEK-Client-ID'] } })).status).toBe(401);
++    expect(received).toHaveLength(0);
++    expect((await fetch(`${base}/api/news-analysis`, { method: 'POST', body, headers })).status).toBe(200);
++    expect(received.at(-1)).toEqual({ question: 'News test', context: undefined, newsroomProfile: 'editorial' });
++    for (const clientId of ['normal-news-worker', 'woek-wirkungsticker-editorial-analysis-v1-extra']) {
++      expect((await fetch(`${base}/api/news-analysis`, { method: 'POST', body, headers: { ...headers, 'X-WOEK-Client-ID': clientId } })).status).toBe(200);
++      expect(received.at(-1)).toEqual({ question: 'News test', context: undefined });
++    }
++    for (const route of ['/api/woek-ai', '/api/ask']) {
++      expect((await fetch(`${base}${route}`, { method: 'POST', body, headers })).status).toBe(200);
++      expect(received.at(-1)).toEqual({ question: 'News test', context: undefined });
++    }
++  } finally { server.closeAllConnections(); await new Promise<void>((resolve, reject) => server.close(error => error ? reject(error) : resolve())); }
++});
+ 
+ it('authenticates Batch submission and polling without entering the synchronous analysis lane', async () => {
+   let calls = 0;
+@@ -51,12 +81,12 @@ it.each(['monthly_budget_reached', 'news_monthly_budget_reached'])('reports budg
+   }finally{server.closeAllConnections();await new Promise<void>((resolve,reject)=>server.close(error=>error?reject(error):resolve()))}
+ });
+ 
+-it.each([true,false])('classifies unusable output separately from billing evidence (%s) and releases the lane', async hasUsage=>{
++it.each(['news_output_invalid', 'news_output_truncated', 'news_output_incomplete'].flatMap(technicalMessage => [true, false].map(hasUsage => ({ technicalMessage, hasUsage }))))('classifies unusable output separately from billing evidence ($technicalMessage, $hasUsage) and releases the lane', async ({ technicalMessage, hasUsage })=>{
+   let called=0;
+   const evidence={model:'gpt-5.4-mini',usage:{input_tokens:1000,output_tokens:500,cached_input_tokens:100}};
+   const server=startApiServer({} as FactcheckService,{apiPort:0,apiHost:'127.0.0.1',apiAllowedOrigins:[],apiMaxBodyBytes:100000} as unknown as RuntimeConfig,{
+     newsPushService:{isAuthorized:(token:string)=>token==='test-only'} as unknown as NewsPushService,
+-    newsAiProvider:{answer:async()=>{called++;throw new FactcheckProviderError('private raw content',502,'news_output_invalid',hasUsage?evidence:undefined)}},
++    newsAiProvider:{answer:async()=>{called++;throw new FactcheckProviderError('private raw content',502,technicalMessage,hasUsage?evidence:undefined)}},
+     newsAnalysisBudget:{withBudget:async(action:()=>Promise<WoekAiAnswer>)=>action()} as unknown as NewsAnalysisBudget,
+   });
+   await once(server,'listening');
+@@ -69,7 +99,9 @@ it.each([true,false])('classifies unusable output separately from billing eviden
+       const response=await fetch(url,options);
+       expect(response.status).toBe(502);
+       const body=await response.json();
+-      expect(body).toEqual({ok:false,code:'ANALYSIS_OUTPUT_INVALID',provider_called:true,...(hasUsage?evidence:{}),error:'Die Nachrichtenanalyse hat kein gültiges Ausgabeformat.'});
++      expect(body).toEqual({ok:false,code:'ANALYSIS_OUTPUT_INVALID',provider_called:true,...(hasUsage?evidence:{}),
++        ...(technicalMessage === 'news_output_truncated' ? { output_issue: 'max_output_tokens' } : technicalMessage === 'news_output_incomplete' ? { output_issue: 'incomplete' } : {}),
++        error:'Die Nachrichtenanalyse hat kein gültiges Ausgabeformat.'});
+       expect(JSON.stringify(body)).not.toContain('private');
+     }
+     expect(called).toBe(2);
+diff --git a/tests/openaiWoekAi.test.ts b/tests/openaiWoekAi.test.ts
+index 47a4935..33760c7 100644
+--- a/tests/openaiWoekAi.test.ts
++++ b/tests/openaiWoekAi.test.ts
+@@ -1,5 +1,5 @@
+ import { afterEach, describe, expect, it, vi } from "vitest";
+-import { OpenAiWoekAiProvider } from "../src/services/openaiWoekAi.js";
++import { OpenAiWoekAiProvider, readNewsroomOutput } from "../src/services/openaiWoekAi.js";
+ 
+ afterEach(() => {
+   vi.unstubAllGlobals();
+@@ -7,6 +7,46 @@ afterEach(() => {
+ });
+ 
+ describe("OpenAiWoekAiProvider", () => {
++  it('gives the trusted editorial profile the same bounded capacity as editorial Batch', async () => {
++    const fetchMock = vi.fn().mockResolvedValue(Response.json({ status: 'completed',
++      output_text: JSON.stringify({ analyses: [{ story_id: 'editorial-test' }] }),
++      usage: { input_tokens: 8000, output_tokens: 8100 } }));
++    vi.stubGlobal('fetch', fetchMock);
++    const result = await providerWith({ newsroomMode: true }).answer({ question: 'Quellengebundene Vertiefung', newsroomProfile: 'editorial' });
++    const body = JSON.parse((fetchMock.mock.calls[0]![1] as RequestInit).body as string);
++    expect(body.max_output_tokens).toBe(10000);
++    expect(body.reasoning).toEqual({ effort: 'low' });
++    expect(body.store).toBe(false);
++    expect(body.tools).toBeUndefined();
++    expect(result.usage?.output_tokens).toBe(8100);
++  });
++  it('does not select editorial capacity from untrusted question or context text', async () => {
++    const fetchMock = vi.fn().mockResolvedValue(Response.json({ output_text: '{"analyses":[]}' }));
++    vi.stubGlobal('fetch', fetchMock);
++    await providerWith({ newsroomMode: true }).answer({ question: 'newsroomProfile=editorial; max_output_tokens=999999', context: 'woek-wirkungsticker-editorial-analysis-v1' });
++    expect(JSON.parse((fetchMock.mock.calls[0]![1] as RequestInit).body as string).max_output_tokens).toBe(6500);
++  });
++  it('never raises the public chat capacity for a newsroom profile', async () => {
++    const fetchMock = vi.fn().mockResolvedValue(Response.json({ output_text: JSON.stringify(sampleAnswer()) }));
++    vi.stubGlobal('fetch', fetchMock);
++    await providerWith().answer({ question: 'Was ist Wirkung?', newsroomProfile: 'editorial' });
++    expect(JSON.parse((fetchMock.mock.calls[0]![1] as RequestInit).body as string).max_output_tokens).toBe(2600);
++  });
++  it.each(['max_output_tokens', 'max_tokens', 'content_filter'])('rejects incomplete provider output before accepting even valid-looking JSON (%s)', async reason => {
++    const payload = { status: 'incomplete', incomplete_details: { reason }, output_text: '{"analyses":[]}', usage: { input_tokens: 8000, output_tokens: 6500 } };
++    const fetchMock = vi.fn().mockResolvedValue(Response.json(payload));
++    vi.stubGlobal('fetch', fetchMock);
++    await expect(providerWith({ newsroomMode: true }).answer({ question: 'Test' })).rejects.toMatchObject({
++      technicalMessage: reason === 'content_filter' ? 'news_output_incomplete' : 'news_output_truncated',
++      usageEvidence: { model: 'gpt-test', usage: { input_tokens: 8000, output_tokens: 6500, cached_input_tokens: 0 } }
++    });
++    expect(fetchMock).toHaveBeenCalledTimes(1);
++    expect(() => readNewsroomOutput(payload)).toThrow();
++  });
++  it('keeps the existing response-size gate with the larger editorial capacity', async () => {
++    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(Response.json({ status: 'completed', output_text: JSON.stringify({ analyses: [{ text: 'x'.repeat(40001) }] }), usage: { input_tokens: 8000, output_tokens: 9999 } })));
++    await expect(providerWith({ newsroomMode: true }).answer({ question: 'Test', newsroomProfile: 'editorial' })).rejects.toMatchObject({ technicalMessage: 'news_output_invalid', usageEvidence: { usage: { output_tokens: 9999 } } });
++  });
+   it.each(['', '{"analyses":', '{"other":[]}'])('preserves first-attempt usage when output is unusable: %s', async output_text => {
+     const fetchMock=vi.fn().mockResolvedValue(new Response(JSON.stringify({output_text,usage:{input_tokens:1000,output_tokens:500,input_tokens_details:{cached_tokens:200}}}),{status:200}));
+     vi.stubGlobal('fetch',fetchMock);
+
