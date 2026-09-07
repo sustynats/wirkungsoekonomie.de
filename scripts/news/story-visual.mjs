@@ -17,7 +17,7 @@ export function renderStoryVisual(story, { href = "", detail = false, loading = 
       <p class="news-story-visual__brand" aria-hidden="true">Wirkungsökonomie <span>· Wirkungsticker</span></p>
       <div class="news-story-visual__content">
         <${heading} class="news-story-visual__headline">${href ? `<a href="${escape(href)}">${escape(story.title)}</a>` : escape(story.title)}</${heading}>
-        <div class="news-story-visual__panel"><p class="news-story-visual__kicker">Relevanz für</p>${renderDimensionMeters(story.analysis, { compact: true })}<div class="news-story-visual__chips">${renderStatusChip(story.analysis.status)}${renderAnalysisTypeChip(story.analysis.analysis_type, { note: false })}</div></div>
+        <div class="news-story-visual__panel"><p class="news-story-visual__kicker">Relevanz &amp; Richtung</p>${renderDimensionMeters(story.analysis, { compact: true })}<p class="news-story-visual__legend">Balken: Relevanz · Zeichen: Potenzial / Risiko.<br>Die Kennzeichnung ist kein Wirkungsnachweis.</p><div class="news-story-visual__chips">${renderStatusChip(story.analysis.status)}${renderAnalysisTypeChip(story.analysis.analysis_type, { note: false })}</div></div>
       </div>
       <figcaption class="news-story-visual__caption"><span>${escape(sourceLabel)}</span><span>${escape(label)}</span><span class="sr-only">Darstellung, kein Beleg des Ereignisses. Balken zeigen Relevanz, nicht positive oder negative Wirkung.</span></figcaption>
     </figure>

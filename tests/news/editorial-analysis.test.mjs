@@ -216,6 +216,44 @@ test("fehlgeschlagene Deep Dives behalten Korrekturhinweise und werden nach Paus
   assert.equal(Object.keys(JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json'))).retry_state).length,0);
 });
 
+test('Deep-Dive-Formatfehler werden bezahlt verbucht; Budgetablehnungen zählen nicht als Qualitätsversuch', async t => {
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-editorial-cost-'));
+  t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+  fs.mkdirSync(path.join(root,'data/news'),{recursive:true});
+  const stories=[highStory('cost')];
+  fs.writeFileSync(path.join(root,'data/news/stories.json'),JSON.stringify({stories}));
+  fs.writeFileSync(path.join(root,'data/news/state.json'),JSON.stringify({budget_fx:{rate_usd_per_eur:1.1,rate_date:'2026-09-05'}}));
+  let mode='format',calls=0;
+  const callAiImpl=async()=>{calls++;throw mode==='format'
+    ? Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'),{requestAttempts:1,billingEvidence:{model:'gpt-5.4-mini',reported_usage:{input_tokens:1000,output_tokens:500,cached_input_tokens:200}}})
+    : Object.assign(new Error('AI_BUDGET_EXHAUSTED'),{requestAttempts:1,providerNotCalled:true,budgetScope:'shared'});};
+  const opts={root,registry:registryFor(stories),execute:true,callAiImpl,build:()=>assert.fail('No unverified publication')};
+  const first=await runEditorialAnalyses({...opts,now:'2026-09-05T10:00:00Z'});
+  assert.equal(first.estimated_cost_usd,0.002865);
+  assert.equal(first.research_calls,1);
+  assert.equal(first.editorial_analyses_published,0);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(root,'data/news/usage.json'))).runs[0].ai.estimated_cost_usd,0.002865);
+  mode='budget';
+  const next=await runEditorialAnalyses({...opts,now:'2026-09-05T10:16:00Z'});
+  assert.equal(next.estimated_cost_usd,0);
+  assert.equal(next.budget_block_scope,'shared');
+  const retry=JSON.parse(fs.readFileSync(path.join(root,'data/news/editorial-analyses.json'))).retry_state[stories[0].story_id];
+  assert.equal(retry.attempts,1);
+  assert.equal(retry.next_attempt_at,'2026-09-05T10:31:00.000Z');
+  assert.equal(calls,2);
+  const file=path.join(root,'data/news/editorial-analyses.json');
+  const legacy=JSON.parse(fs.readFileSync(file));
+  Object.assign(legacy.retry_state[stories[0].story_id],{attempts:7,next_attempt_at:'2026-09-05T22:16:00.000Z'});
+  fs.writeFileSync(file,JSON.stringify(legacy));
+  const early=await runEditorialAnalyses({...opts,now:'2026-09-05T10:20:00Z'});
+  assert.equal(early.retry_deferred,1);
+  const recovered=await runEditorialAnalyses({...opts,now:'2026-09-05T10:32:00Z'});
+  assert.equal(recovered.retry_deferred,0);
+  assert.equal(recovered.budget_blocked,true);
+  assert.equal(calls,3);
+  assert.equal(JSON.parse(fs.readFileSync(file)).retry_state[stories[0].story_id].attempts,7);
+});
+
 test("Backfill publiziert jeden relevanten Kandidaten bis zur technischen Batchgrenze und ist idempotent", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-editorial-"));
   fs.mkdirSync(path.join(root, "data/news"), { recursive: true });

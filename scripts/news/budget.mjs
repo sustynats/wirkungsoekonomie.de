@@ -33,11 +33,26 @@ export function modelRates(model = "gpt-5.5") {
   return { inputUsdPerMillion: 5, outputUsdPerMillion: 30, cachedInputUsdPerMillion: 0.5 };
 }
 
-export function costFromUsage(result, estimated) {
+export function validReportedUsage(usage) {
+  return Boolean(usage && Number.isSafeInteger(usage.input_tokens) && usage.input_tokens >= 0
+    && Number.isSafeInteger(usage.output_tokens) && usage.output_tokens >= 0
+    && (usage.cached_input_tokens === undefined || Number.isSafeInteger(usage.cached_input_tokens)
+      && usage.cached_input_tokens >= 0 && usage.cached_input_tokens <= usage.input_tokens));
+}
+
+export function costFromUsage(result, estimated = {}) {
   const usage = result.reported_usage;
-  if (result.cache_status === "hit") return { ...estimated, input_tokens: 0, output_tokens: 0, estimated_cost_usd: 0, token_source: "provider_cache_hit" };
-  if (!Number.isFinite(usage?.input_tokens) || !Number.isFinite(usage?.output_tokens) || usage.input_tokens < 0 || usage.output_tokens < 0) return { ...estimated, estimated_cost_usd: Math.max(NEWS_REQUEST_RESERVATION_USD, estimated.estimated_cost_usd), token_source: "conservative_reservation_usage_unavailable" };
+  const attempts = Number.isSafeInteger(result.request_attempts) && result.request_attempts > 0 ? result.request_attempts : 1;
+  const priorReserve = (attempts - 1) * NEWS_REQUEST_RESERVATION_USD;
+  if (result.cache_status === "hit") return { ...estimated, input_tokens: 0, output_tokens: 0, estimated_cost_usd: priorReserve, token_source: priorReserve ? "cache_hit_with_prior_attempt_reservations" : "provider_cache_hit" };
+  if (!validReportedUsage(usage) || !/^gpt-5\.(?:4-mini|5)(?:-|$)/.test(result.model || '')) return { input_tokens: 0, output_tokens: 0, ...estimated, estimated_cost_usd: Number((priorReserve + Math.max(NEWS_REQUEST_RESERVATION_USD, Number(estimated.estimated_cost_usd) || 0)).toFixed(6)), token_source: "conservative_reservation_usage_unavailable" };
   const rates = modelRates(result.model);
-  const cached = Math.min(usage.input_tokens, Math.max(0, Number(usage.cached_input_tokens || 0)));
-  return { ...estimated, input_tokens: usage.input_tokens, output_tokens: usage.output_tokens, estimated_cost_usd: Number(((usage.input_tokens - cached) * rates.inputUsdPerMillion / 1e6 + cached * rates.cachedInputUsdPerMillion / 1e6 + usage.output_tokens * rates.outputUsdPerMillion / 1e6).toFixed(6)), token_source: "provider_reported_usage" };
+  const cached = usage.cached_input_tokens ?? 0;
+  return { ...estimated, input_tokens: usage.input_tokens, output_tokens: usage.output_tokens, estimated_cost_usd: Number((priorReserve + (usage.input_tokens - cached) * rates.inputUsdPerMillion / 1e6 + cached * rates.cachedInputUsdPerMillion / 1e6 + usage.output_tokens * rates.outputUsdPerMillion / 1e6).toFixed(6)), token_source: priorReserve ? "provider_usage_with_prior_attempt_reservations" : "provider_reported_usage" };
+}
+
+export function failedRequestCost(error) {
+  const attempts = Number.isSafeInteger(error?.requestAttempts) && error.requestAttempts >= 0 ? error.requestAttempts : 1;
+  if (attempts === 0 || error?.providerNotCalled === true && attempts === 1) return { input_tokens: 0, output_tokens: 0, estimated_cost_usd: 0, token_source: "provider_not_called" };
+  return costFromUsage({ ...error?.billingEvidence, request_attempts: attempts });
 }
