@@ -1,8 +1,136 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-07T16:10:55.661Z",
+  "updated_at": "2026-09-07T17:55:23.680Z",
   "candidates": [
+    {
+      "story_id": "wt-a030a1d903caa413",
+      "story_slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-caa413",
+      "story_title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+      "editorial_analysis_score": 69,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 8,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "3fea231ac7ff3b3e8940c80c748eab1bccc21dc3b1e980ca578eb653d50073c9",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-cf03acddb911d861",
+      "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
+      "story_title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+      "editorial_analysis_score": 78,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-219f434ceb61"
+    },
+    {
+      "story_id": "wt-cd001726db438d2d",
+      "story_slug": "arbeitsmarkt-fachkraftemangel-konnte-bis-2029-auf-723-000-steigen-438d2d",
+      "story_title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
+      "editorial_analysis_score": 81,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 6,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "910a5e1f96e4f59f4bec24ac97f8d9e17f69e97963b19393a6e62179f6b21005",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-8f7ac0654a780960",
       "story_slug": "witkoff-fordert-russland-und-ukraine-zu-kompromissen-fur-kriegsende-auf-780960",
@@ -130,48 +258,6 @@
       "analysis_id": "woek-analysis-36e98d72ae20"
     },
     {
-      "story_id": "wt-2cf5f0c5e42720ec",
-      "story_slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet--2720ec",
-      "story_title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
-      "editorial_analysis_score": 70,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 3,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 8,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "25314d0d4b38a47a0529d89c3fe5c5f86cdb4f87809a4faaf4862dac9db8282e",
-      "status": "published",
-      "analysis_id": "woek-analysis-3f27f489cadb"
-    },
-    {
       "story_id": "wt-4b5d0962d323432a",
       "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
       "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
@@ -212,48 +298,6 @@
       "fingerprint": "e1a3695100cfd89742bbb0067654fbaff5ab9e303d9a8f14e8a6ce5f29111790",
       "status": "published",
       "analysis_id": "woek-analysis-0bfd0f9a3434"
-    },
-    {
-      "story_id": "wt-cf03acddb911d861",
-      "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
-      "story_title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
-      "editorial_analysis_score": 73,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 4,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "2f2b82710b0f861b0a1ae02287680ad6f589dd63664b20ca92312f5602829f66",
-      "status": "published",
-      "analysis_id": "woek-analysis-219f434ceb61"
     },
     {
       "story_id": "wt-995822cc0b71a7f8",
@@ -17469,13 +17513,18 @@
     "wt-f7d7115a53ff2c2f": {
       "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
       "method_version": "1.0",
-      "attempts": 3,
-      "last_attempt_at": "2026-09-07T16:55:22.139Z",
-      "next_attempt_at": "2026-09-07T17:55:22.139Z",
+      "attempts": 4,
+      "last_attempt_at": "2026-09-07T17:55:23.680Z",
+      "next_attempt_at": "2026-09-07T19:55:23.680Z",
       "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_ARTICLE_LENGTH"
+        "EDITORIAL_FINDING_REQUIRED",
+        "EDITORIAL_MPD_REQUIRED",
+        "EDITORIAL_AUTHOR_PERSPECTIVE_REQUIRED",
+        "EDITORIAL_JOURNALISTIC_REVIEW_REQUIRED",
+        "EDITORIAL_POSITIVE_PATH_UNGROUNDED",
+        "EDITORIAL_CLAIM_LEDGER_TOO_SHORT",
+        "EDITORIAL_COUNTER_EVIDENCE_REQUIRED",
+        "EDITORIAL_WATCHLIST_REQUIRED"
       ],
       "reason": "AI_PROVIDER_OUTPUT_INVALID"
     },
@@ -17489,6 +17538,30 @@
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG"
       ],
       "reason": "AI_PROVIDER_OUTPUT_INVALID"
+    },
+    "wt-cf03acddb911d861": {
+      "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
+      "method_version": "1.0",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-07T17:48:42.333Z",
+      "next_attempt_at": "2026-09-07T18:03:42.333Z",
+      "quality_errors": [
+        "EDITORIAL_SELF_FRAME_FAILED"
+      ],
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
+    },
+    "wt-a030a1d903caa413": {
+      "fingerprint": "3fea231ac7ff3b3e8940c80c748eab1bccc21dc3b1e980ca578eb653d50073c9",
+      "method_version": "1.0",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-07T17:55:23.680Z",
+      "next_attempt_at": "2026-09-07T18:10:23.680Z",
+      "quality_errors": [
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_SELF_FRAME_FAILED"
+      ],
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
