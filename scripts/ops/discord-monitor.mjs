@@ -5,7 +5,7 @@ import { createHash } from 'node:crypto';
 import { buildCaseFiles } from '../news/case-files.mjs';
 import { reportOperationallyHealthy, sourceCoverageDegraded } from '../news/check-run-health.mjs';
 import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
-import { operatingCostSummary } from '../news/operating-cost.mjs';
+import { operatingCostSummary, isImmediateNewsCostRun } from '../news/operating-cost.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const MINUTE = 60_000;
@@ -31,7 +31,10 @@ const money = value => Number.isFinite(value) ? value.toFixed(2) : 'nicht verfü
 const merged = story => story.retirement?.reason_code === 'MERGED_INTO_LIVING_FILE';
 
 export function publicationFlow(usage, report, now) {
-  const rows = uniqueRuns(usage).filter(run => age(run.started_at, now) >= 0
+  // Background enrichments and deep dives cannot prove that the immediate
+  // news queue is progressing. Ordinary news updates/rejections still can.
+  const rows = uniqueRuns(usage).filter(run => isImmediateNewsCostRun(run)
+    && !String(run.run_id).startsWith('media-backfill-') && age(run.started_at, now) >= 0
     && age(run.started_at, now) <= 180 && age(run.completed_at, now) >= 0
     && Number.isFinite(Date.parse(run.completed_at))).sort((a, b) => Date.parse(a.started_at) - Date.parse(b.started_at));
   const observedMinutes = rows.length ? (Date.parse(rows.at(-1).completed_at) - Date.parse(rows[0].started_at)) / MINUTE : 0;
@@ -55,9 +58,17 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
   const costs = list => list.reduce((sum, r) => sum + (Number.isFinite(r.ai?.estimated_cost_usd) ? r.ai.estimated_cost_usd : 0), 0);
   const published = (date) => stories.filter(s => s.published_at && berlinParts(s.published_at).date === date).length;
   const todayRuns = period(today);
+  const newsTodayRuns = todayRuns.filter(isImmediateNewsCostRun);
   const monthRuns = period(today.slice(0, 7));
   const fx = report?.budget_policy?.fx;
   const fxValid = Number.isFinite(fx?.rate_usd_per_eur) && fx.rate_usd_per_eur > 0 && age(fx.rate_date, now) >= 0 && age(fx.rate_date, now) <= 7 * 1440;
+  // Display the worker's actual authorization, not a second budget policy.
+  // A report from a previous UTC billing month cannot extend an exception.
+  const sameBudgetMonth = Number.isFinite(Date.parse(report?.completed_at))
+    && age(report.completed_at, now) >= 0
+    && new Date(report.completed_at).toISOString().slice(0, 7) === new Date(now).toISOString().slice(0, 7);
+  const authorizedBudgetEur = sameBudgetMonth && Number.isFinite(report?.budget_policy?.authorized_eur)
+    && report.budget_policy.authorized_eur >= 0 ? report.budget_policy.authorized_eur : null;
   const underlyingActive = stories.filter(s => s.published && s.listed !== false && !merged(s));
   const caseState = buildCaseFiles(underlyingActive);
   // The public feeds intentionally expose only the current representative of
@@ -77,7 +88,7 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
   const updatesToday = todayRuns.reduce((n, r) => n + Number(r.counts?.updated_stories || 0), 0);
   const newToday = published(today);
   const usdToday = costs(todayRuns);
-  const newsActionsToday = newToday + updatesToday;
+  const newsActionsToday = newToday + newsTodayRuns.reduce((n, r) => n + Number(r.counts?.updated_stories || 0), 0);
   const pendingTotal = stories.filter(s => !merged(s) && (s.pending_update || (!s.published && s.listed !== false))).length;
   const legacyHolds = report?.quality_holds || [];
   const legacyCapacity = legacyHolds.filter(hold => /BUDGET|LIMIT|DISABLED|RUN_TIME/.test(hold.reason || '')).length;
@@ -99,9 +110,9 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     queue.status = 'budget_blocked';
     queue.budget_blocked = true;
   }
-  const dailySourceFunnel = summarizeSourceFunnel(todayRuns.flatMap(run => run.source_funnel || []));
+  const dailySourceFunnel = summarizeSourceFunnel(newsTodayRuns.flatMap(run => run.source_funnel || []));
   const latestSourceFunnel = summarizeSourceFunnel(report?.source_funnel || []);
-  const dailyPipeline = todayRuns.reduce((total, run) => {
+  const dailyPipeline = newsTodayRuns.reduce((total, run) => {
     const counts = run.counts || {};
     total.feedItems += Number(counts.feed_entries_fetched || 0);
     total.changedItems += Number(counts.feed_entries_new || 0) + Number(counts.feed_entries_updated || 0) + Number(counts.feed_entries_backfilled || 0);
@@ -120,7 +131,8 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
     caseCount: caseState.cases.length, live: liveFeed?.items?.length ?? null,
     newToday, newYesterday: published(yesterday), updatesToday, newsActionsToday,
     usdToday, usdYesterday: costs(period(yesterday)), usdMonth: costs(monthRuns),
-    usdPerNewsAction: newsActionsToday ? usdToday / newsActionsToday : null,
+    usdPerNewsAction: newsActionsToday ? costs(newsTodayRuns) / newsActionsToday : null,
+    authorizedBudgetEur,
     eurMonthWithTaxReserve: fxValid ? costs(monthRuns) / fx.rate_usd_per_eur * 1.19 : null,
     missingCostRuns: monthRuns.filter(r => Number(r.counts?.ai_requests ?? r.counts?.ai_stories ?? 0) > 0 && !Number.isFinite(r.ai?.estimated_cost_usd)).length,
     runCompleted: report?.completed_at || null, runAgeMinutes: age(report?.completed_at, now),
@@ -191,14 +203,15 @@ export function dailyReport(summary, checks) {
     `Queue: ${summary.queue.total || 0} offen (${summary.queue.capacity || 0} Kapazität · ${summary.queue.technical || 0} technisch · ${summary.queue.editorial || 0} redaktionell); Status ${summary.queue.status || 'unbekannt'}.`,
     `Quellen-Funnel heute: ${funnel.feedItems || 0} Feed-Einträge → ${funnel.changedItems || 0} neu/aktualisiert → ${funnel.candidates || 0} Story-Kandidaten → ${funnel.eligibleKnown ? funnel.eligible : 'noch nicht historisch erfasst'} geeignet → ${funnel.aiSelected || 0} KI → ${funnel.publicationActions || 0} Veröffentlichungen/Aktualisierungen. Lokal verworfen: ${funnel.localRejections || 0}; redaktionelle Quellenbeiträge: ${sourceTotals.editorial_rejections || 0}.`,
     `Produktive Quellen im letzten Lauf: ${productive}.`,
-    `KI-Schätzung: gestern $${money(summary.usdYesterday)} · heute $${money(summary.usdToday)} · Monat $${money(summary.usdMonth)}.`,
+    `KI-Gesamtschätzung inkl. offener Reserven: gestern $${money(summary.usdYesterday)} · heute $${money(summary.usdToday)} · Monat $${money(summary.usdMonth)}.`,
     ...(operating ? [
-      `Betriebsmessung seit ${operating.started_at}: ${operating.news.first_publications} Erstveröffentlichungen · ${operating.news.updates} Aktualisierungen · ${operating.news.ai_requests} KI-Anfragen, inklusive Ablehnungen und Wiederholungen.`,
+      `Direkte Nachrichtenverarbeitung seit ${operating.started_at}: ${operating.news.first_publications} Erstveröffentlichungen · ${operating.news.updates} Aktualisierungen · ${operating.news.ai_requests} KI-Anfragen, inklusive Ablehnungen und Wiederholungen.`,
       unit !== null ? `KI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt ${(unit * 100).toFixed(2)} Cent inkl. Steuerreserve; Ziel unter 4 Cent. ${operating.news.fallback_estimate_runs} Läufe mit Ersatzschätzung.` : 'KI-Kosten je Erstveröffentlichung noch nicht bestimmbar: keine Erstveröffentlichung oder unvollständige Kostendaten.',
       `WÖk-Analysen separat: ${operating.editorial.first_publications} neu · ${operating.editorial.updates} aktualisiert · $${money(operating.editorial.estimated_cost_usd)} geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.`,
+      ...(operating.batch ? [`Batch-Hintergrundjobs separat im Messfenster: ${operating.batch.settled_jobs} abgeglichen · ${operating.batch.applied_jobs} angewendet · $${operating.batch.settled_cost_usd.toFixed(3)} nach Anbieter-Nutzungsdaten; $${operating.batch.reserved_cost_usd.toFixed(3)} für ${operating.batch.reserved_jobs} Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.`] : []),
     ] : []),
-    summary.usdPerNewsAction !== null ? `Geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung: $${summary.usdPerNewsAction.toFixed(3)}.` : 'Heute noch keine veröffentlichte oder aktualisierte Akte für eine Kostenquote.',
-    summary.eurMonthWithTaxReserve !== null ? `Monat umgerechnet inkl. 19 % Steuerreserve: ca. €${money(summary.eurMonthWithTaxReserve)} (Limit €25).` : 'Euro-Umrechnung: kein ausreichend aktueller Kurs verfügbar.',
+    summary.usdPerNewsAction !== null ? `Direkte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $${summary.usdPerNewsAction.toFixed(3)}; WÖk-Analysen und Batch separat.` : 'Heute noch keine veröffentlichte oder aktualisierte Akte für eine Kostenquote.',
+    summary.eurMonthWithTaxReserve !== null ? `Monat umgerechnet inkl. 19 % Steuerreserve: ca. €${money(summary.eurMonthWithTaxReserve)} (${Number.isFinite(summary.authorizedBudgetEur) ? `Limit €${money(summary.authorizedBudgetEur)}` : 'Limit im aktuellen Monatsbericht nicht verfügbar'}).` : 'Euro-Umrechnung: kein ausreichend aktueller Kurs verfügbar.',
     `Kosten ohne Higgsfield-Abo/Bildcredits und Hosting; ${summary.missingCostRuns} KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.`,
     'Besucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.',
     ...checks.filter(c => !c.ok && !TARGETS.some(t => t.id === c.id)).map(c => `⚠ ${c.name}: ${c.reason}`),
@@ -252,16 +265,36 @@ export async function probe(target, fetchImpl = fetch) {
   }
 }
 
+function discordParts(content) {
+  if (typeof content !== 'string' || !content.length) throw new Error('MONITOR_DM_CONTENT_MISSING');
+  const parts = [];
+  let remaining = content;
+  while (remaining.length > 1950) {
+    let end = remaining.lastIndexOf('\n', 1949) + 1 || 1950;
+    // A long individual line may need splitting, but never through an icon.
+    if (/[\uD800-\uDBFF]/u.test(remaining[end - 1]) && /[\uDC00-\uDFFF]/u.test(remaining[end])) end--;
+    parts.push(remaining.slice(0, end));
+    remaining = remaining.slice(end);
+  }
+  if (remaining) parts.push(remaining);
+  return parts;
+}
+
 export async function sendDiscord(event, { token, recipient, fetchImpl = fetch }) {
   if (!token || !/^\d{15,22}$/.test(recipient || '')) throw new Error('MONITOR_DM_CONFIGURATION_MISSING');
+  const parts = discordParts(event.content);
   const headers = { authorization: `Bot ${token}`, 'content-type': 'application/json' };
   const channelResponse = await fetchImpl('https://discord.com/api/v10/users/@me/channels', { method: 'POST', headers, body: JSON.stringify({ recipient_id: recipient }), signal: AbortSignal.timeout(12_000) });
   if (!channelResponse.ok) throw new Error(`MONITOR_DM_CHANNEL_HTTP_${channelResponse.status}`);
   const channel = await channelResponse.json();
   if (!/^\d{15,22}$/.test(channel.id || '')) throw new Error('MONITOR_DM_CHANNEL_INVALID');
-  // Stable Discord nonce limits duplicates after an ambiguous network response.
-  const response = await fetchImpl(`https://discord.com/api/v10/channels/${channel.id}/messages`, { method: 'POST', headers, body: JSON.stringify({ content: event.content.slice(0, 1950), nonce: event.id, enforce_nonce: true, allowed_mentions: { parse: [] } }), signal: AbortSignal.timeout(12_000) });
-  if (!response.ok) throw new Error(`MONITOR_DM_SEND_HTTP_${response.status}`);
+  // Keep the outbox event until every part succeeds. Stable per-part nonces
+  // limit duplicates on retry; do not silently cut off final costs/warnings.
+  for (const [index, content] of parts.entries()) {
+    const nonce = index === 0 ? event.id : eventId(`${event.id}:part:${index}`);
+    const response = await fetchImpl(`https://discord.com/api/v10/channels/${channel.id}/messages`, { method: 'POST', headers, body: JSON.stringify({ content, nonce, enforce_nonce: true, allowed_mentions: { parse: [] } }), signal: AbortSignal.timeout(12_000) });
+    if (!response.ok) throw new Error(`MONITOR_DM_SEND_HTTP_${response.status}`);
+  }
 }
 
 export async function main() {
