@@ -2,31 +2,25 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-07T15:24:20.633Z",
+  "started_at": "2026-09-07T15:38:08.728Z",
   "scanned_stories": 112,
   "scanned_subjects": 96,
   "editorial_candidates": 17,
   "ready_for_research": 2,
   "research_pending": 5,
-  "retry_deferred": 1,
+  "retry_deferred": 2,
   "editorial_research_sources_discovered": 12,
-  "selected": 1,
-  "editorial_research_started": 2,
+  "selected": 0,
+  "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 2,
-  "research_tokens": 16486,
-  "analysis_tokens": 12147,
-  "estimated_cost_usd": 0.065817,
-  "quality_retries": 1,
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
+  "quality_retries": 0,
   "publication_deferred": false,
-  "failed": [
-    {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_IMPACT_OPEN",
-      "next_attempt_at": "2026-09-07T15:54:20.633Z"
-    }
-  ],
+  "failed": [],
   "candidates": [
     {
       "story_id": "wt-60f4e4d7d43fad99",
@@ -759,12 +753,11 @@
   ],
   "batch": {
     "submitted": 0,
-    "pending": 1,
+    "pending": 2,
     "completed": 0,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
     "attention_required": []
-  },
-  "completed_at": "2026-09-07T15:25:55.660Z"
+  }
 }
