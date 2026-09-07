@@ -19,7 +19,7 @@ import { buildCaseFiles } from "./case-files.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260907-longread2";
+const PUBLIC_RELEASE = "20260907-mpd-direction1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -489,8 +489,10 @@ export function renderRelatedStories(story, stories) {
   return `<section class="section news-related" data-news-related data-search-exclude aria-labelledby="news-related-title"><div class="section-header"><p class="hero-kicker">Im Zusammenhang</p><h2 id="news-related-title">Weitere Nachrichten zum Thema</h2><p>Andere Vorgänge und Hintergründe mit konkretem Themenbezug. Neue Entwicklungen zu diesem Vorgang werden in dieser Akte fortgeschrieben.</p></div><ul class="news-related__list">${related.map(({ story: item, reason }) => `<li><article class="news-story-section"><p class="news-method-note">${escapeHtml(reason)}</p><h3><a class="text-link" href="../${escapeHtml(item.slug)}/">${escapeHtml(item.title)}</a></h3><p>${escapeHtml(item.analysis.summary)}</p><p class="news-method-note">WÖk-Einordnung aktualisiert ${escapeHtml(formatDate(item.last_updated))}</p></article></li>`).join("")}</ul></section>`;
 }
 
-function renderConsolidations(story) {
-  const entries = story.living_file?.consolidations || [];
+export function renderConsolidations(story, publicStorySlugs = new Set()) {
+  // A merged discovery candidate may never have had a public page. Retain
+  // history links only for actual publications, including archived ones.
+  const entries = (story.living_file?.consolidations || []).filter(entry => publicStorySlugs.has(entry.slug));
   if (!entries.length) return "";
   return `<aside class="notice news-consolidation" role="note"><strong>Zusammengeführte Berichterstattung:</strong> Frühere Meldungen zum selben Vorgang werden in dieser Akte fortgeführt. Die Zusammenführung selbst ist keine neue Nachricht. Frühere Stände bleiben nachvollziehbar:<ul>${entries.map((entry) => `<li><a class="text-link" href="../${escapeHtml(entry.slug)}/">${escapeHtml(entry.title)}</a> · zusammengeführt ${escapeHtml(formatDate(entry.at))}</li>`).join("")}</ul>${story.pending_update?.consolidation ? "<p>Zusätzliche Quellen aus der Zusammenführung stehen zur erneuten Prüfung an. Der angezeigte Nachrichten- und Analysestand bleibt bis dahin unverändert.</p>" : ""}</aside>`;
 }
@@ -554,7 +556,7 @@ function readerRefreshControl() {
   return `<div class="news-reader-refresh" data-search-exclude><button class="btn btn-secondary" type="button" data-news-refresh-button hidden>${renderIcon("aktualisieren")}<span>Aktualisieren</span></button><span class="news-app-status" data-news-refresh-status role="status"></span></div>`;
 }
 
-export function storyPage(story, { newerStory = null, nextStory = null, allStories = [], caseFile = null, editorialAnalysis = null } = {}) {
+export function storyPage(story, { newerStory = null, nextStory = null, allStories = [], caseFile = null, editorialAnalysis = null, publicStorySlugs = new Set() } = {}) {
   const titleImage = publicTitleImage(story.title_image);
   const a = story.analysis;
   const detailSummary = expandedDetailSummary(a);
@@ -592,10 +594,10 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     ${renderCaseFile(story, caseFile)}
     ${renderNewsroomEvidence(story)}
     <article class="news-story-section news-fact-check" id="faktencheck"><p class="hero-kicker">${renderIcon("wahrheit")}<span>Quellenprüfung</span></p><h2>Faktencheck</h2><div class="news-check-prose"><section><h3>${renderIcon("check")}Gesicherter Ausgangspunkt</h3><p>${escapeHtml(truthOpening)}</p><p>Quellenbasis: ${primarySourceCount ? `${primarySourceCount} ${primarySourceCount === 1 ? "Primärquelle" : "Primärquellen"}${primarySourceNames ? ` von ${escapeHtml(primarySourceNames)}` : ""}` : `Berichterstattung von ${escapeHtml([...new Set(story.sources.map(source => source.publisher))].join(", "))}`}. Beleglage: ${escapeHtml(evidenceLevelLabel(a.evidence_level))}</p></section><section><h3>${renderIcon("offen")}Was dieser Stand nicht belegt</h3><p>${escapeHtml(a.attribution)} ${escapeHtml(story.claims[0]?.uncertainty || "Vollständiger Kontext und spätere Wirkungsdaten bleiben zu prüfen.")}</p></section></div></article>
-    ${renderConsolidations(story)}
+    ${renderConsolidations(story, publicStorySlugs)}
     ${renderAtAGlance(story, { formatDate })}
     <article class="news-story-section news-story-summary" id="analyse"><p class="hero-kicker">${renderIcon("systemisch")}<span>Wirkungsökonomische Analyse</span></p><h2>Einordnung im Überblick</h2><p class="news-analysis-copy">${escapeHtml(detailSummary)}</p>${renderAffectedGroups(visuals)}</article>
-    <article class="news-story-section" id="einordnung"><p class="hero-kicker">${renderIcon("folgen")}<span>Einordnung</span></p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p>${renderDimensionMeters(a, { tendency: visuals?.tendency || null })}${visuals?.tendency ? '<p class="news-method-note">Tendenz je Dimension: analytische Einschätzung, ob Wirkungspotenzial oder Wirkungsrisiko überwiegt. Kein Nachweis eingetretener Wirkung.</p>' : ""}</article>
+    <article class="news-story-section" id="einordnung"><p class="hero-kicker">${renderIcon("folgen")}<span>Einordnung</span></p><h2>Warum diese Meldung relevant ist</h2><p class="news-analysis-copy">${escapeHtml(a.why_relevant)}</p>${renderDimensionMeters(a, { tendency: visuals?.tendency || null })}</article>
     <article class="news-story-section news-consequence-check" id="folgencheck"><p class="hero-kicker">${renderIcon("folgen")}<span>Folgencheck</span></p><h2>Wirkpfad und mögliche Folgen</h2><p class="news-method-note">Die folgenden möglichen Entwicklungen sind keine nachgewiesenen Folgen.</p><p class="news-lead"><strong>Wirkungspotenzial:</strong> ${escapeHtml(a.impact_potential)}</p>${renderImpactPath(a, prose, visuals)}<h3>Risiken, Gegenläufe und Prüfgrenzen</h3>${riskList}</article>
     <article class="news-story-section" id="bedeutung"><p class="hero-kicker">${renderIcon("transformation")}<span>Systemische Bedeutung</span></p><h2>Was die Meldung für das System bedeutet</h2><div class="wt-meaning"><div class="wt-meaning__item"><h3>${renderIcon("systemisch")}Systemrelevanz</h3><p>${escapeHtml(a.systemic_relevance)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("transformation")}Transformationspotenzial</h3><p>${escapeHtml(a.transformation_potential)}</p></div><div class="wt-meaning__item"><h3>${renderIcon("resilienz")}Resilienz</h3><p>${escapeHtml(a.resilience)}</p></div></div></article>
     ${renderMediaImpact(story)}
@@ -809,6 +811,7 @@ export function buildNewsSite() {
   const editorialStore = fs.existsSync(EDITORIAL_ANALYSES_FILE) ? readJson(EDITORIAL_ANALYSES_FILE) : { analyses: [] };
   const publicationUpdatedAt = [data.public_updated_at || data.updated_at, editorialStore.updated_at].filter(Boolean).sort((left, right) => Date.parse(right) - Date.parse(left))[0];
   const activeStories = (data.stories || []).filter((story) => story.published && story.analysis && story.listed !== false).sort((a, b) => Date.parse(b.last_updated) - Date.parse(a.last_updated));
+  const publicStorySlugs = new Set((data.stories || []).filter(story => story.published && story.analysis).map(story => story.slug));
   const grouping = buildCaseFiles(activeStories);
   const stories = grouping.visibleStories;
   const pageStories = activeStories.map((story) => {
@@ -849,6 +852,7 @@ export function buildNewsSite() {
       newerStory: representativeIndex >= 0 ? readerNeighbor(sequenceItem, -1) : null,
       nextStory: representativeIndex >= 0 ? readerNeighbor(sequenceItem, 1) : null,
       allStories: pageStories.filter((item) => !sameCaseIds.has(item.story_id)),
+      publicStorySlugs,
       caseFile: story.case_file || null,
       editorialAnalysis: editorialByStory.get(story.story_id) || null,
     }));

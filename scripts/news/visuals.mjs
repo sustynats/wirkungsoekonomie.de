@@ -43,11 +43,24 @@ export const AFFECTED_GROUPS = {
 };
 
 export const TENDENCIES = {
-  chance: { label: "Potenzial überwiegt", icon: "tendenz-chance" },
-  risiko: { label: "Risiko überwiegt", icon: "tendenz-risiko" },
-  gemischt: { label: "Potenzial und Risiko", icon: "tendenz-gemischt" },
-  offen: { label: "Tendenz offen", icon: "offen" },
+  chance: { label: "Positiv", qualifier: "Potenzial", direction: "positive", icon: "tendenz-chance" },
+  risiko: { label: "Negativ", qualifier: "Risiko", direction: "negative", icon: "tendenz-risiko" },
+  gemischt: { label: "Gemischt", qualifier: "Chancen / Risiken", direction: "mixed", icon: "tendenz-gemischt" },
+  offen: { label: "Richtung offen", qualifier: "", direction: "open", icon: "offen" },
 };
+
+export const DIMENSION_TENDENCY_RULE = "MPD tendency auch bei visuals:null: chance=positives Potenzial, risiko=negatives Risiko, gemischt=beides ohne Verrechnung, offen=unklar. In rationale mechanistisch begründen, unabhängig von Relevanz; kein Wirkungsnachweis.";
+
+const tendencyKey = value => typeof value === "string" && Object.hasOwn(TENDENCIES, value.trim().toLowerCase()) ? value.trim().toLowerCase() : "offen";
+
+// New assessments keep this small field in the base MPD record. Historical
+// visual tendencies remain readable, without rewriting articles or inferring
+// a new judgment from headlines, relevance levels or individual pathways.
+export function dimensionTendencies(analysis = {}, legacyTendency = analysis.visuals?.tendency) {
+  return Object.fromEntries(Object.keys(DIMENSIONS).map(key => [key,
+    tendencyKey(analysis[key]?.tendency !== undefined ? analysis[key].tendency : legacyTendency?.[key])
+  ]));
+}
 
 export const MATERIALITY_FACTORS = {
   affected_scope: "Betroffenenkreis", intensity: "Intensität", duration: "Dauer", reversibility: "Reversibilität",
@@ -84,13 +97,12 @@ export const VISUALS_SCHEMA = {
   }],
   affected_groups: ["haushalte|unternehmen|beschaeftigte|kommunen|staat|patientinnen|verbraucherinnen|kinder_jugend|aeltere|investoren|natur|europa"],
   timeline: [{ date: "YYYY, YYYY-MM oder YYYY-MM-DD, nur wenn der zugehörige Claim den Termin nennt", label: "Ereignisbezeichnung mit Worten aus dem Claim, höchstens 80 Zeichen", claim_id: "claim_id aus dem Claim-Ledger" }],
-  tendency: { human: "chance|risiko|gemischt|offen", planet: "chance|risiko|gemischt|offen", democracy: "chance|risiko|gemischt|offen" },
   chart: { type: "bar", title: "höchstens 80 Zeichen", measure: "dieselbe konkret benannte Messgröße für alle Punkte", unit: "konkrete gemeinsame Einheit samt Größenordnung", points: [{ label: "Kategorie oder Zeitpunkt wörtlich im Beleg", value: 0, claim_id: "claim_id aus dem Claim-Ledger", evidence_quote: "kurzer wörtlicher Belegausschnitt mit Messgröße, Kategorie, Zahl und Einheit, höchstens 240 Zeichen" }] },
 };
 
 export const VISUALS_PROMPT_RULES = [
   "Ergänze optional ein Objekt visuals für visuelle Anker. Jedes Element ist freiwillig: Liefere es nur, wenn die gelieferten Claims oder Quelltexte es unmittelbar tragen; sonst lasse den Schlüssel weg oder setze null. Visuals sind Darstellung, kein zusätzlicher Wirkungsbeleg.",
-  "key_figures (höchstens 3): nur Zahlen, die wörtlich im Claim oder Quelltext stehen, Schreibweise unverändert (Zahlwort bleibt Zahlwort); keine Umrechnung, Summe, Schätzung oder Ableitung. chart (nur type bar, 3 bis 8 Punkte): nur wenn die Quelle mindestens drei vergleichbare Zahlen derselben Einheit nennt. timeline (höchstens 4): nur Termine oder Fristen, die die Quelle nennt. affected_groups (höchstens 4) ausschließlich aus der festen Liste. tendency je Dimension als analytische Tendenz: chance = Wirkungspotenzial überwiegt, risiko = Wirkungsrisiko überwiegt, gemischt, offen; ex ante nie als eingetretene Wirkung.",
+  "key_figures (höchstens 3): nur Zahlen, die wörtlich im Claim oder Quelltext stehen, Schreibweise unverändert (Zahlwort bleibt Zahlwort); keine Umrechnung, Summe, Schätzung oder Ableitung. chart (nur type bar, 3 bis 8 Punkte): nur wenn die Quelle mindestens drei vergleichbare Zahlen derselben Einheit nennt. timeline (höchstens 4): nur Termine oder Fristen, die die Quelle nennt. affected_groups (höchstens 4) ausschließlich aus der festen Liste. tendency steht bereits in human/planet/democracy; nicht unter visuals doppelt ausgeben.",
   "Für jeden Diagrammpunkt sind claim_id und evidence_quote Pflicht. Der kurze unveränderte Ausschnitt muss im zugehörigen Claim oder dessen konkretem Quellenauszug stehen und genau diesen Punkt tragen: dieselbe Messgröße (measure), Kategorie (label) sowie Zahl unmittelbar mit Einheit. Keine Währungen, Mengen oder Größenordnungen vermischen; keine Jahreszahl als Messwert. Generische Einheiten wie 'Einheit' reichen nicht. Wenn dieser Nachweis fehlt, chart weglassen. Keine zusätzlichen Quellenaufrufe nur für ein Diagramm.",
   "path_directions: Richtung je materiellem Einzelpfad, höchstens 12. path exakt aus first_order/second_order/third_order übernehmen; Bedingung und Ledger-Belege für Ausgangspunkt nennen. Richtung analytisch begründen, nicht aus Relevanz ableiten. Unbeurteilbar = open, nicht neutral. Kein neuer KI-Aufruf für fehlende Visuals.",
 ];
@@ -288,8 +300,8 @@ export function sanitizeVisuals(input, story = {}) {
     const tendency = {};
     for (const key of Object.keys(DIMENSIONS)) {
       const value = String(input.tendency[key] || "").trim().toLowerCase();
-      tendency[key] = TENDENCIES[value] ? value : "offen";
-      if (value && !TENDENCIES[value]) dropped.push(`TENDENCY_INVALID:${key}`);
+      tendency[key] = tendencyKey(value);
+      if (value && !Object.hasOwn(TENDENCIES, value)) dropped.push(`TENDENCY_INVALID:${key}`);
     }
     if (Object.values(tendency).some((value) => value !== "offen")) output.tendency = tendency;
   }
@@ -439,23 +451,25 @@ export function renderStatusTrack(status) {
 }
 
 export function renderTendency(value) {
-  const tendency = TENDENCIES[value];
-  if (!tendency || value === "offen") return "";
-  return `<span class="wt-tendency wt-tendency--${escapeHtml(value)}" title="analytische Tendenz, kein Wirkungsnachweis">${renderIcon(tendency.icon)}<span>${escapeHtml(tendency.label)}</span></span>`;
+  const key = tendencyKey(value);
+  const tendency = TENDENCIES[key];
+  return `<span class="wt-tendency wt-tendency--${key}" data-direction="${tendency.direction}" title="Analytische Richtung: Potenzial und Risiko, kein Nachweis eingetretener Wirkung">${renderIcon(tendency.icon)}<span><strong>${tendency.label}</strong>${tendency.qualifier ? `<span class="wt-tendency__qualifier"> · ${tendency.qualifier}</span>` : ""}</span></span>`;
 }
 
-export function renderDimensionMeters(analysis = {}, { compact = false, tendency = null } = {}) {
+export function renderDimensionMeters(analysis = {}, { compact = false, tendency } = {}) {
+  const directions = dimensionTendencies(analysis, tendency === undefined ? analysis.visuals?.tendency : tendency);
   const items = Object.entries(DIMENSIONS).map(([key, meta]) => {
     const value = analysis[key] || { relevance: "offen", rationale: "Noch nicht belastbar eingeordnet." };
     const level = relevanceLevel(value.relevance);
     const label = value.relevance || "offen";
     return `<div class="wt-dim wt-dim--${key}" data-level="${level}">
-      <div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong><span class="wt-dim__level">${escapeHtml(label)}</span>${tendency ? renderTendency(tendency[key]) : ""}</div>
+      <div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong><span class="wt-dim__level">${escapeHtml(label)}</span></div>
       ${meter(level, `Relevanz für ${meta.label}: ${label}`, { className: "wt-dim__track" })}
+      ${renderTendency(directions[key])}
       <p class="wt-dim__note${compact ? " sr-only" : ""}">${escapeHtml(value.rationale || "")}</p>
     </div>`;
   }).join("");
-  return `<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>`;
+  return `<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>${compact ? "" : '<p class="wt-dims__legend">Balken: Relevanz. Zeichen und Text: positives Potenzial, negatives Risiko, gemischt oder offen. Kein Nachweis eingetretener Wirkung; gemischt bedeutet nicht ausgeglichen.</p>'}`;
 }
 
 export function renderImpactPath(analysis = {}, prose = (items) => (items || []).map(escapeHtml).join(" "), visuals = null) {
