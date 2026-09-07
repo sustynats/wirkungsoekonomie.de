@@ -1,8 +1,50 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-07T05:38:16.141Z",
+  "updated_at": "2026-09-07T14:54:44.127Z",
   "candidates": [
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "story_slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+      "story_title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "f68e99ac37a8b6579dd16fe4bca19cb8fe88ce840c7370004d3e4896b72b5653",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-36e98d72ae20"
+    },
     {
       "story_id": "wt-2cf5f0c5e42720ec",
       "story_slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet--2720ec",
@@ -257,48 +299,6 @@
       "fingerprint": "95b8bb2184beba0a6312d8a9020be9a349ab589a6db4d6c57531f6e5e956bbcb",
       "status": "published",
       "analysis_id": "woek-analysis-1b3323ad407f"
-    },
-    {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "story_slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
-      "story_title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-      "editorial_analysis_score": 68,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 9,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 0,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 4,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 6,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "6889f6dcfa62649dc22a1dff7bca65fabd75a0cebd636d80d9eb25f668e81671",
-      "status": "published",
-      "analysis_id": "woek-analysis-36e98d72ae20"
     },
     {
       "story_id": "wt-7b385f58748f3d32",
@@ -15759,6 +15759,15 @@
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
+      "reason": "AI_PROVIDER_OUTPUT_INVALID"
+    },
+    "wt-60f4e4d7d43fad99": {
+      "fingerprint": "f68e99ac37a8b6579dd16fe4bca19cb8fe88ce840c7370004d3e4896b72b5653",
+      "method_version": "1.0",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-07T14:54:44.127Z",
+      "next_attempt_at": "2026-09-07T15:09:44.127Z",
+      "quality_errors": [],
       "reason": "AI_PROVIDER_OUTPUT_INVALID"
     }
   }
