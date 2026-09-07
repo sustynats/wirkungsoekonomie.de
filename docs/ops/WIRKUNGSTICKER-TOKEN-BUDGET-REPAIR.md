@@ -129,6 +129,8 @@ Exakte bekannte Schema-Fehlercodes werden bei der Protokollbereinigung nicht meh
 
 Für Deep Dives erhöht eine belegte Budgetablehnung ohne Anbieterzugriff nicht mehr den Qualitätsfehlversuchszähler und damit nicht die exponentielle Wartezeit. Ein begrenzter Wiederanlauf ist nach 15 Minuten möglich; eine weiter bestehende Budgetsperre bleibt wirksam. Nach der ersten solchen Ablehnung endet der bezahlte Teil des Laufs, weitere Kandidaten bleiben erhalten. Keine zusätzliche Analysequote und keine automatische Budgeterhöhung.
 
+Ein gespeicherter Altkandidat hatte bereits sieben solche Ablehnungen und deshalb zwölf Stunden Wartezeit angesammelt. Die Wiederanlaufprüfung begrenzt auch bei diesen exakt als `AI_BUDGET_EXHAUSTED` ausgewiesenen Altständen die effektive Kapazitätspause auf 15 Minuten nach dem belegten letzten Versuch. Historische Zähler, Qualitätsbefunde und Artikeltexte bleiben erhalten. Tatsächliche Qualitätsfehler erhalten weiterhin ihren regulären Abstand.
+
 #### Separates Oracle-Release erforderlich
 
 Das getestete Service-Patch `patches/oracle-news-output-usage-20260907.patch` basiert auf dem dokumentierten Service-Commit `036e955` und ist als lokaler Release Candidate `29cb18d` geprüft: 60 Tests, TypeScript und Build erfolgreich. Das Ablegen des Patches oder ein Pages-Deployment installiert es **nicht** auf Oracle.

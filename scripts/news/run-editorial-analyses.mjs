@@ -204,7 +204,15 @@ export async function runEditorialAnalyses({
   const ready = assessed
     .filter(({ story, assessment }) => !isCommissionedAnalysis(existingForStory(store, story.story_id)) && assessment.candidate && assessment.evidence_gate.passed && existingForStory(store, story.story_id)?.source_fingerprint !== assessment.fingerprint)
     .sort((left, right) => right.assessment.editorial_analysis_score - left.assessment.editorial_analysis_score || right.assessment.analysis_gain - left.assessment.analysis_gain || Date.parse(right.story.last_updated || 0) - Date.parse(left.story.last_updated || 0));
-  const runnable = ready.filter(({ story, assessment }) => !(Date.parse(retryFor(story, assessment)?.next_attempt_at) > Date.parse(now)));
+  const runnable = ready.filter(({ story, assessment }) => {
+    const retry = retryFor(story, assessment);
+    let next = Date.parse(retry?.next_attempt_at);
+    const last = Date.parse(retry?.last_attempt_at);
+    // Legacy budget refusals accumulated the quality backoff up to 12 hours.
+    // Keep their history, but do not let capacity masquerade as a quality fault.
+    if (retry?.reason === 'AI_BUDGET_EXHAUSTED' && Number.isFinite(last) && last <= Date.parse(now)) next = Math.min(next, last + 15 * 60000);
+    return !(next > Date.parse(now));
+  });
   const researchPending = candidateRows.filter((candidate) => candidate.status === "research_pending");
   const report = {
     schema_version: "1.0", execute, bootstrap, started_at: now, scanned_stories: activeStories.length, scanned_subjects: subjects.length,

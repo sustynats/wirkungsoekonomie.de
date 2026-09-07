@@ -241,6 +241,17 @@ test('Deep-Dive-Formatfehler werden bezahlt verbucht; Budgetablehnungen zählen 
   assert.equal(retry.attempts,1);
   assert.equal(retry.next_attempt_at,'2026-09-05T10:31:00.000Z');
   assert.equal(calls,2);
+  const file=path.join(root,'data/news/editorial-analyses.json');
+  const legacy=JSON.parse(fs.readFileSync(file));
+  Object.assign(legacy.retry_state[stories[0].story_id],{attempts:7,next_attempt_at:'2026-09-05T22:16:00.000Z'});
+  fs.writeFileSync(file,JSON.stringify(legacy));
+  const early=await runEditorialAnalyses({...opts,now:'2026-09-05T10:20:00Z'});
+  assert.equal(early.retry_deferred,1);
+  const recovered=await runEditorialAnalyses({...opts,now:'2026-09-05T10:32:00Z'});
+  assert.equal(recovered.retry_deferred,0);
+  assert.equal(recovered.budget_blocked,true);
+  assert.equal(calls,3);
+  assert.equal(JSON.parse(fs.readFileSync(file)).retry_state[stories[0].story_id].attempts,7);
 });
 
 test("Backfill publiziert jeden relevanten Kandidaten bis zur technischen Batchgrenze und ist idempotent", async () => {
