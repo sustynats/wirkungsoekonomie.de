@@ -1,0 +1,593 @@
+diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
+index 56f8510..8884b6e 100644
+--- a/src/http/apiServer.ts
++++ b/src/http/apiServer.ts
+@@ -25,2 +25,3 @@ import type { NewsPushService } from "../services/newsPushService.js";
+ import type { NewsAnalysisBudget } from "../services/newsAnalysisBudget.js";
++import type { NewsBatchService, NewsBatchInput } from '../services/newsBatchService.js';
+ 
+@@ -33,3 +34,3 @@ interface RateLimitEntry {
+ 
+-type RateLimitFeature = ApiFeature | "feedback" | "community" | "share" | "news-push" | "news-analysis" | "news-title-image" | "parliament-impact-visual";
++type RateLimitFeature = ApiFeature | "feedback" | "community" | "share" | "news-push" | "news-analysis" | "news-title-image" | "parliament-impact-visual" | 'news-batch';
+ 
+@@ -69,2 +70,3 @@ export interface ApiProviderSet {
+   newsAnalysisBudget?: NewsAnalysisBudget;
++  newsBatchService?: NewsBatchService;
+   newsVisualProvider?: NewsVisualProvider;
+@@ -241,2 +243,32 @@ export function startApiServer(service: FactcheckService, config: RuntimeConfig,
+ 
++      if (requestUrl.pathname === '/api/news-analysis/batches' || requestUrl.pathname.startsWith('/api/news-analysis/batches/')) {
++        if (!providers.newsPushService?.isAuthorized(readBearerToken(request))) {
++          sendJson(response, 401, { ok: false, code: 'UNAUTHORIZED' }); return;
++        }
++        enforceRateLimit(request, rateLimit, 'news-batch', 80);
++        if (!providers.newsBatchService) { sendJson(response, 503, { ok: false, code: 'BATCH_UNAVAILABLE' }); return; }
++        try {
++          let job;
++          if (request.method === 'GET' && requestUrl.pathname === '/api/news-analysis/batches') {
++            sendJson(response, 200, { ok: true, jobs: await providers.newsBatchService.list() }); return;
++          }
++          if (request.method === 'POST' && requestUrl.pathname === '/api/news-analysis/batches') {
++            const input = await readJsonBody(request, config.apiMaxBodyBytes) as NewsBatchInput;
++            job = await providers.newsBatchService.submit(input);
++          } else if (request.method === 'GET' && /^\/api\/news-analysis\/batches\/[a-f0-9]{64}$/.test(requestUrl.pathname)) {
++            job = await providers.newsBatchService.get(requestUrl.pathname.split('/').at(-1)!);
++          } else { sendJson(response, 400, { ok: false, code: 'BATCH_REQUEST_INVALID' }); return; }
++          sendJson(response, job ? 200 : 404, { ok: Boolean(job), ...(job ? { job } : { code: 'BATCH_NOT_FOUND' }) });
++        } catch (error) {
++          const message = (error as Error).message || '';
++          const technical = error instanceof FactcheckProviderError ? error.technicalMessage : '';
++          if (['monthly_budget_reached', 'news_monthly_budget_reached'].includes(technical || '')) {
++            sendJson(response, 429, { ok: false, code: 'BUDGET_EXHAUSTED', provider_called: false, budget_scope: technical === 'news_monthly_budget_reached' ? 'news' : 'shared' });
++          } else if (technical === 'batch_capacity') sendJson(response, 429, { ok: false, code: 'BATCH_CAPACITY' });
++          else if (/^batch_(?:input|key)_/.test(message)) sendJson(response, 400, { ok: false, code: 'BATCH_REQUEST_INVALID' });
++          else sendJson(response, 503, { ok: false, code: 'BATCH_TEMPORARILY_UNAVAILABLE' });
++        }
++        return;
++      }
++
+       if (request.method === "POST" && requestUrl.pathname === "/api/news-analysis") {
+diff --git a/src/index.ts b/src/index.ts
+index c2652e5..e21fbd2 100644
+--- a/src/index.ts
++++ b/src/index.ts
+@@ -24,2 +24,3 @@ import { NewsPushService } from "./services/newsPushService.js";
+ import { NewsAnalysisBudget } from "./services/newsAnalysisBudget.js";
++import { NewsBatchService } from './services/newsBatchService.js';
+ import { JsonStore } from "./storage/jsonStore.js";
+@@ -123,2 +124,6 @@ const budgetTracker = new UsageBudgetTracker({
+ });
++const newsBatchService = process.env.NEWS_BATCH_ENABLED === 'true' && config.openAiApiKey ? new NewsBatchService({
++  file: './data/news-analysis-batches.json', apiKey: config.openAiApiKey,
++  budgets: { news: newsAnalysisBudget, shared: budgetTracker },
++}) : undefined;
+ const accessQuotaTracker = new AccessQuotaTracker({
+@@ -144,2 +149,3 @@ if (config.apiEnabled) {
+     newsAnalysisBudget,
++    newsBatchService,
+     newsVisualProvider,
+diff --git a/src/services/newsAnalysisBudget.ts b/src/services/newsAnalysisBudget.ts
+index cff4862..0225c1f 100644
+--- a/src/services/newsAnalysisBudget.ts
++++ b/src/services/newsAnalysisBudget.ts
+@@ -5,3 +5,4 @@ import { miniUsageUsd } from './providerUsage.js';
+ 
+-interface BudgetState { version: 1; months: Record<string, { chargedUsd: number; requests: number }> }
++interface BatchReservation { month: string; reservedUsd: number; chargedUsd: number; settled: boolean }
++interface BudgetState { version: 1; months: Record<string, { chargedUsd: number; requests: number }>; batchReservations?: Record<string, BatchReservation> }
+ interface UsageResult { model?: string; usage?: { input_tokens: number; output_tokens: number; cached_input_tokens?: number }; cacheStatus?: string }
+@@ -23,2 +24,50 @@ export class NewsAnalysisBudget {
+ 
++  reserveBatch(id: string, amount = 0.125): Promise<void> {
++    if (!/^[a-f0-9]{64}$/.test(id) || amount !== 0.125) return Promise.reject(new Error('Invalid batch reservation'));
++    return this.mutateBatch(state => {
++      state.batchReservations ??= {};
++      const previous = state.batchReservations[id];
++      if (previous && !previous.settled) return;
++      if (previous?.chargedUsd) throw new Error('batch_input_reservation_closed');
++      const month = this.now().toISOString().slice(0, 7);
++      const current = state.months[month] ??= { chargedUsd: 0, requests: 0 };
++      const limit = this.monthlyLimitsUsd[month] ?? this.limitUsd;
++      // Leave room for current news. Background work must not consume the last slots.
++      if (!Number.isFinite(current.chargedUsd) || current.chargedUsd + amount + 1 > limit) throw new FactcheckProviderError('Nachrichtenbudget hat keine Hintergrundreserve.', 429, 'news_monthly_budget_reached');
++      current.chargedUsd = Number((current.chargedUsd + amount).toFixed(6));
++      current.requests += 1;
++      state.batchReservations[id] = { month, reservedUsd: amount, chargedUsd: amount, settled: false };
++    });
++  }
++
++  settleBatch(id: string, costUsd: number): Promise<void> {
++    if (!Number.isFinite(costUsd) || costUsd < 0) return Promise.reject(new Error('Invalid batch cost'));
++    return this.mutateBatch(state => {
++      const entry = state.batchReservations?.[id];
++      if (!entry) throw new Error('Batch reservation missing');
++      const amount = Number(costUsd.toFixed(6));
++      if (entry.settled) {
++        if (entry.chargedUsd !== amount) throw new Error('Batch billing mismatch');
++        return;
++      }
++      const month = state.months[entry.month]!;
++      month.chargedUsd = Number((month.chargedUsd - entry.chargedUsd + amount).toFixed(6));
++      entry.chargedUsd = amount;
++      entry.settled = true;
++    });
++  }
++
++  private mutateBatch(change: (state: BudgetState) => void): Promise<void> {
++    const operation = this.queue.then(async () => {
++      let state: BudgetState;
++      try { state = JSON.parse(await readFile(this.file, 'utf8')); }
++      catch (error) { if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error; state = { version: 1, months: {} }; }
++      if (state.version !== 1 || !state.months) throw new Error('Invalid newsroom budget ledger');
++      change(state);
++      await this.save(state);
++    });
++    this.queue = operation.catch(() => undefined);
++    return operation;
++  }
++
+   private async run<T extends UsageResult>(action: () => Promise<T>): Promise<T> {
+diff --git a/src/services/newsBatchService.ts b/src/services/newsBatchService.ts
+new file mode 100644
+index 0000000..2a3651c
+--- /dev/null
++++ b/src/services/newsBatchService.ts
+@@ -0,0 +1,221 @@
++import { createHash } from 'node:crypto';
++import { mkdir, readFile, rename, writeFile } from 'node:fs/promises';
++import { dirname } from 'node:path';
++import { buildNewsroomRequest, readNewsroomOutput } from './openaiWoekAi.js';
++import { miniUsageUsd, validProviderUsage, type ProviderTokenUsage } from './providerUsage.js';
++import type { NewsAnalysisBudget } from './newsAnalysisBudget.js';
++import type { UsageBudgetTracker } from './tokenUsageBudget.js';
++import { FactcheckProviderError } from './openaiFactcheck.js';
++
++const MODEL = 'gpt-5.4-mini';
++const RESERVE = 0.125;
++const terminal = new Set(['completed', 'failed', 'expired', 'cancelled']);
++type Kind = 'media_backfill' | 'editorial_background';
++export interface NewsBatchInput { key: string; kind: Kind; story_id: string; fingerprint: string; question: string; attempt: number }
++interface Job {
++  key: string; kind: Kind; story_id: string; fingerprint: string; created_at: string;
++  prompt_hash: string; attempt: number;
++  state: 'reserved' | 'creating' | 'submitted' | 'completed' | 'failed' | 'unknown';
++  input_file_id?: string; batch_id?: string; provider_status?: string; checked_at?: string;
++  settled?: boolean; cost_usd?: number; usage?: ProviderTokenUsage; answer?: string;
++  error?: string; files_cleaned?: boolean; output_file_id?: string; error_file_id?: string;
++}
++interface Store { version: 1; jobs: Record<string, Job> }
++export interface BatchBudgets {
++  news: Pick<NewsAnalysisBudget, 'reserveBatch' | 'settleBatch'>;
++  shared: Pick<UsageBudgetTracker, 'reserveBatch' | 'settleBatch'>;
++}
++
++// Private Oracle job metadata uses the existing atomic JSON-store pattern. It
++// is not a second publishing queue and never directly changes public stories.
++export class NewsBatchService {
++  private queue: Promise<unknown> = Promise.resolve();
++  constructor(private readonly options: { file: string; apiKey: string; budgets: BatchBudgets; fetchImpl?: typeof fetch; now?: () => Date }) {}
++  private now(): string { return (this.options.now?.() || new Date()).toISOString(); }
++  private serial<T>(action: () => Promise<T>): Promise<T> {
++    const operation = this.queue.then(action);
++    this.queue = operation.catch(() => undefined);
++    return operation;
++  }
++
++  list() {
++    return this.serial(async () => Object.values((await this.read()).jobs)
++      .filter(job => !job.settled || Date.parse(this.now()) - Date.parse(job.created_at) < 7 * 86400000)
++      .sort((a, b) => Number(a.settled) - Number(b.settled) || Date.parse(b.created_at) - Date.parse(a.created_at))
++      .slice(0, 100).map(job => { const { answer: _answer, ...metadata } = this.view(job); return metadata; }));
++  }
++
++  submit(input: NewsBatchInput) {
++    return this.serial(async () => {
++      this.validate(input);
++      const store = await this.read();
++      if (store.jobs[input.key]) return this.view(store.jobs[input.key]!);
++      const jobs = Object.values(store.jobs);
++      if (jobs.filter(job => !['completed', 'failed'].includes(job.state)).length >= 4
++        || jobs.filter(job => job.created_at.slice(0, 10) === this.now().slice(0, 10)).length >= 8) {
++        throw new FactcheckProviderError('Hintergrundkapazität belegt.', 429, 'batch_capacity');
++      }
++      // Reserve both existing ledgers before uploading or submitting a job.
++      await this.options.budgets.shared.reserveBatch(input.key);
++      try { await this.options.budgets.news.reserveBatch(input.key); }
++      catch (error) { await this.options.budgets.shared.settleBatch(input.key, 0); throw error; }
++      const job: Job = { key: input.key, kind: input.kind, story_id: input.story_id, fingerprint: input.fingerprint, prompt_hash: createHash('sha256').update(input.question).digest('hex'), attempt: input.attempt, created_at: this.now(), state: 'reserved' };
++      store.jobs[input.key] = job;
++      await this.save(store);
++      try {
++        const body = buildNewsroomRequest({ question: input.question }, MODEL, input.kind === 'editorial_background' ? 10000 : 6500);
++        const form = new FormData();
++        form.append('purpose', 'batch');
++        // Only one already-filtered job per input file. No need to accumulate
++        // news to qualify for the Batch tariff or to fill an arbitrary quota.
++        form.append('file', new Blob([JSON.stringify({ custom_id: job.key, method: 'POST', url: '/v1/responses', body }) + '\n'], { type: 'application/jsonl' }), 'woek-news-background.jsonl');
++        const file = await this.api('/files', { method: 'POST', body: form });
++        if (!/^file-[A-Za-z0-9_-]+$/.test(file?.id || '')) throw new Error('batch_file_invalid');
++        job.input_file_id = file.id;
++        // Write-ahead marker: a timeout/crash from here may have created a
++        // paid job. Never repeat POST /batches speculatively after a restart.
++        job.state = 'creating';
++        await this.save(store);
++        const batch = await this.api('/batches', { method: 'POST', body: JSON.stringify({ input_file_id: file.id, endpoint: '/v1/responses', completion_window: '24h', metadata: { woek_news_key: job.key, kind: job.kind } }) });
++        this.bind(job, batch);
++      } catch (error) {
++        if (job.state === 'reserved' || [400, 401, 403, 413, 422].includes(Number((error as { status?: number }).status))) {
++          job.state = 'failed'; job.error = 'BATCH_SUBMISSION_REJECTED'; job.cost_usd = 0;
++          await this.settle(job);
++        } else { job.state = 'unknown'; job.error = 'BATCH_SUBMISSION_UNCERTAIN'; }
++      }
++      await this.save(store);
++      return this.view(job);
++    });
++  }
++
++  get(key: string) {
++    return this.serial(async () => {
++      if (!/^[a-f0-9]{64}$/.test(key)) throw new Error('batch_key_invalid');
++      const store = await this.read();
++      const job = store.jobs[key];
++      if (!job) return null;
++      if (['completed', 'failed'].includes(job.state)) {
++        await this.settle(job);
++        await this.save(store);
++        await this.cleanup(job);
++        await this.save(store);
++        return this.view(job);
++      }
++      if (Date.parse(this.now()) - Date.parse(job.checked_at || '') < 5 * 60000) return this.view(job);
++      job.checked_at = this.now();
++      if (!job.batch_id) {
++        if (job.state === 'reserved') {
++          // Durable state proves POST /batches was never reached.
++          job.state = 'failed'; job.error = 'BATCH_NOT_SUBMITTED'; job.cost_usd = 0;
++          await this.settle(job);
++        } else {
++          // Recover only our exact metadata+file pair; unrelated batches are
++          // not exposed. Uncertain submissions keep reserves, never duplicate.
++          let after = '';
++          for (let page = 0; page < 3 && !job.batch_id; page += 1) {
++            const list = await this.api(`/batches?limit=100${after ? `&after=${encodeURIComponent(after)}` : ''}`);
++            const matches = (Array.isArray(list.data) ? list.data : []).filter((b: any) => b.metadata?.woek_news_key === key && b.input_file_id === job.input_file_id);
++            if (matches.length === 1) this.bind(job, matches[0]);
++            if (matches.length > 1) { job.error = 'BATCH_IDENTITY_CONFLICT'; break; }
++            if (!list.has_more || !list.last_id) break;
++            after = String(list.last_id);
++          }
++        }
++      }
++      if (job.batch_id) {
++        const batch = await this.api(`/batches/${job.batch_id}`);
++        this.bind(job, batch);
++        job.provider_status = String(batch.status);
++        if (terminal.has(batch.status)) {
++          job.output_file_id = batch.output_file_id || undefined;
++          job.error_file_id = batch.error_file_id || undefined;
++          let line;
++          if (batch.output_file_id) {
++            if (!/^file-[A-Za-z0-9_-]+$/.test(batch.output_file_id)) throw new Error('batch_file_invalid');
++            const output = await this.api(`/files/${batch.output_file_id}/content`, {}, true);
++            const lines = String(output).trim().split('\n').filter(Boolean).map(value => JSON.parse(value));
++            if (lines.length !== 1 || lines[0]?.custom_id !== job.key) throw new Error('batch_result_identity_mismatch');
++            line = lines[0];
++          }
++          const body = line?.response?.body;
++          const usage = body?.usage && { input_tokens: body.usage.input_tokens, output_tokens: body.usage.output_tokens, cached_input_tokens: body.usage.input_tokens_details?.cached_tokens ?? 0 };
++          const modelMatches = body?.model === MODEL || /^gpt-5\.4-mini-\d{4}-\d{2}-\d{2}$/.test(body?.model || '');
++          if (modelMatches && validProviderUsage(usage)) {
++            job.usage = usage;
++            job.cost_usd = Number((miniUsageUsd({ model: MODEL, usage })! * 0.5).toFixed(6));
++          } else if (!line && ['failed', 'expired', 'cancelled'].includes(batch.status)
++            && batch.request_counts?.completed === 0 && [0, 1].includes(batch.request_counts?.total)) {
++            job.cost_usd = 0;
++          }
++          try {
++            if (line?.response?.status_code !== 200 || !modelMatches || body?.status !== 'completed') throw new Error('batch_output_invalid');
++            job.answer = readNewsroomOutput(body);
++            job.state = 'completed'; delete job.error;
++          } catch { job.state = 'failed'; job.error = 'AI_PROVIDER_OUTPUT_INVALID'; }
++          await this.settle(job);
++          // Persist the recovered paid output BEFORE deleting provider files.
++          await this.save(store);
++          // Only the identified input/output files of a terminal job can go.
++          await this.cleanup(job);
++        }
++      }
++      await this.save(store);
++      return this.view(job);
++    });
++  }
++
++  private validate(input: NewsBatchInput) {
++    if (!input || !['media_backfill', 'editorial_background'].includes(input.kind) || !/^[a-f0-9]{64}$/.test(input.fingerprint)
++      || !/^[a-zA-Z0-9_-]{1,100}$/.test(input.story_id) || typeof input.question !== 'string' || input.question.length < 20 || input.question.length > 40000
++      || !Number.isInteger(input.attempt) || input.attempt < 0 || input.attempt > 2) throw new Error('batch_input_invalid');
++    const key = createHash('sha256').update(JSON.stringify({ version: 1, kind: input.kind, story_id: input.story_id, fingerprint: input.fingerprint, question: input.question, attempt: input.attempt })).digest('hex');
++    if (key !== input.key) throw new Error('batch_input_identity_mismatch');
++  }
++  private bind(job: Job, batch: any) {
++    if (!/^batch_[A-Za-z0-9_-]+$/.test(batch?.id || '') || batch.input_file_id !== job.input_file_id
++      || batch.metadata?.woek_news_key !== job.key || batch.endpoint !== '/v1/responses' || job.batch_id && job.batch_id !== batch.id) throw new Error('batch_identity_mismatch');
++    job.batch_id = batch.id; job.state = 'submitted'; delete job.error;
++  }
++  private async settle(job: Job) {
++    if (job.settled || job.cost_usd === undefined) return;
++    await this.options.budgets.news.settleBatch(job.key, job.cost_usd);
++    await this.options.budgets.shared.settleBatch(job.key, job.cost_usd);
++    job.settled = true;
++  }
++  private async cleanup(job: Job) {
++    // Keep provider evidence when billing is unresolved, including malformed output.
++    if (job.files_cleaned || !job.settled || !['completed', 'failed'].includes(job.state)) return;
++    let ok = true;
++    for (const id of [job.input_file_id, job.output_file_id, job.error_file_id].filter(Boolean)) {
++      if (!/^file-[A-Za-z0-9_-]+$/.test(id!)) { ok = false; continue; }
++      try { await this.api(`/files/${id}`, { method: 'DELETE' }); }
++      catch (error) { if ((error as { status?: number }).status !== 404) ok = false; }
++    }
++    job.files_cleaned = ok;
++  }
++  private view(job: Job) {
++    return { key: job.key, kind: job.kind, story_id: job.story_id, fingerprint: job.fingerprint, created_at: job.created_at,
++      prompt_hash: job.prompt_hash, attempt: job.attempt,
++      status: job.state, provider_status: job.provider_status, error: job.error, reserved_usd: RESERVE,
++      estimated_cost_usd: job.settled ? job.cost_usd : RESERVE, billing_status: job.settled ? 'settled' : 'reserved',
++      model: MODEL, processing_mode: 'batch', usage: job.usage, ...(job.state === 'completed' ? { answer: job.answer } : {}) };
++  }
++  private async api(route: string, options: RequestInit = {}, text = false): Promise<any> {
++    const result = await (this.options.fetchImpl || fetch)(`https://api.openai.com/v1${route}`, { ...options, redirect: 'error', signal: AbortSignal.timeout(20000),
++      headers: { Authorization: `Bearer ${this.options.apiKey}`, ...(options.body instanceof FormData ? {} : { 'Content-Type': 'application/json' }) } });
++    if (!result.ok) throw Object.assign(new Error(`batch_provider_http_${result.status}`), { status: result.status });
++    const data = await result.text();
++    if (data.length > 2_000_000) throw new Error('batch_response_too_large');
++    return text ? data : JSON.parse(data);
++  }
++  private async read(): Promise<Store> {
++    try { const s = JSON.parse(await readFile(this.options.file, 'utf8')); if (s.version !== 1 || !s.jobs) throw new Error('batch_store_invalid'); return s; }
++    catch (error) { if ((error as NodeJS.ErrnoException).code === 'ENOENT') return { version: 1, jobs: {} }; throw error; }
++  }
++  private async save(store: Store) {
++    await mkdir(dirname(this.options.file), { recursive: true });
++    await writeFile(`${this.options.file}.tmp`, JSON.stringify(store) + '\n', { mode: 0o600 });
++    await rename(`${this.options.file}.tmp`, this.options.file);
++  }
++}
+diff --git a/src/services/openaiWoekAi.ts b/src/services/openaiWoekAi.ts
+index 3a0c6ee..38c2ece 100644
+--- a/src/services/openaiWoekAi.ts
++++ b/src/services/openaiWoekAi.ts
+@@ -92,2 +92,14 @@ const newsroomInstructions = buildWoekInstructions([
+ 
++// Synchronous and delayed newsroom jobs share the same method/injection rules.
++export function buildNewsroomRequest(input: WoekAiQuestionInput, model: string, maxOutputTokens = 6500): Record<string, unknown> {
++  return { model, instructions: newsroomInstructions, input: input.question, store: false,
++    reasoning: { effort: 'low' }, max_output_tokens: maxOutputTokens, text: { format: { type: 'json_object' } } };
++}
++
++export function readNewsroomOutput(payload: unknown): string {
++  const text = extractOutputText(payload);
++  if (!text || text.length > 40000 || !Array.isArray(JSON.parse(text)?.analyses)) throw new Error('news_output_invalid');
++  return text;
++}
++
+ export class OpenAiWoekAiProvider implements WoekAiAnswerProvider {
+@@ -128,3 +140,3 @@ export class OpenAiWoekAiProvider implements WoekAiAnswerProvider {
+   ): Promise<WoekAiAnswer> {
+-    const body: Record<string, unknown> = {
++    const body: Record<string, unknown> = this.options.newsroomMode ? buildNewsroomRequest(input, this.options.model) : {
+       model: this.options.model,
+diff --git a/src/services/tokenUsageBudget.ts b/src/services/tokenUsageBudget.ts
+index d65f48a..2d15280 100644
+--- a/src/services/tokenUsageBudget.ts
++++ b/src/services/tokenUsageBudget.ts
+@@ -54,2 +54,35 @@ export class UsageBudgetTracker {
+   }
++
++  async reserveBatch(key: string): Promise<void> {
++    if (!this.options.enabled) throw new Error('Batch requires shared budget guard');
++    if (!/^[a-f0-9]{64}$/.test(key)) throw new Error('Invalid batch key');
++    await this.mutate(state => {
++      const id = `batch:${key}`;
++      const previous = state.entries.find(entry => entry.id === id);
++      if (previous?.basis === 'batch_reserved') return;
++      if (previous && (previous.basis !== 'batch_reconciled' || previous.chargedCents !== 0)) throw new Error('batch_input_reservation_closed');
++      const month = new Date().toISOString().slice(0, 7);
++      const current = state.months[month] ??= emptyMonth();
++      const reserve = cents(0.125 * USD_TO_GROSS_EUR_CENTS);
++      if (current.estimatedCents + reserve + 150 > this.options.monthlyBudgetCents) throw new FactcheckProviderError('Keine gemeinsame Hintergrundreserve.', 429, 'monthly_budget_reached');
++      const reservation: Entry = { id, feature: 'news-analysis', month, at: new Date().toISOString(), chargedCents: reserve, basis: 'batch_reserved' };
++      if (previous) Object.assign(previous, reservation); else state.entries.push(reservation);
++      this.charge(current, 'news-analysis', reserve, 1);
++    });
++  }
++
++  async settleBatch(key: string, costUsd: number): Promise<void> {
++    if (!Number.isFinite(costUsd) || costUsd < 0) throw new Error('Invalid batch cost');
++    await this.mutate(state => {
++      const entry = state.entries.find(entry => entry.id === `batch:${key}`);
++      if (!entry) throw new Error('Batch reservation missing');
++      const amount = cents(costUsd * USD_TO_GROSS_EUR_CENTS);
++      if (entry.basis !== 'batch_reserved') {
++        if (entry.basis !== 'batch_reconciled' || entry.chargedCents !== amount) throw new Error('Batch billing mismatch');
++        return;
++      }
++      this.charge(state.months[entry.month]!, entry.feature, amount - entry.chargedCents, 0);
++      Object.assign(entry, { chargedCents: amount, basis: 'batch_reconciled', model: 'gpt-5.4-mini' });
++    });
++  }
+   private legacyEstimate(feature: ApiFeature): number {
+diff --git a/tests/apiServer.test.ts b/tests/apiServer.test.ts
+index 62652ff..1e4ce46 100644
+--- a/tests/apiServer.test.ts
++++ b/tests/apiServer.test.ts
+@@ -12,2 +12,21 @@ import type { UsageBudgetTracker } from '../src/services/usageBudget.js';
+ import { FactcheckProviderError } from '../src/services/openaiFactcheck.js';
++import type { NewsBatchService } from '../src/services/newsBatchService.js';
++
++it('authenticates Batch submission and polling without entering the synchronous analysis lane', async () => {
++  let calls = 0;
++  const server = startApiServer({} as FactcheckService, { apiPort: 0, apiHost: '127.0.0.1', apiAllowedOrigins: [], apiMaxBodyBytes: 100000 } as unknown as RuntimeConfig, {
++    newsPushService: { isAuthorized: (token: string) => token === 'test-only' } as unknown as NewsPushService,
++    newsBatchService: { submit: async () => { calls++; return { status: 'submitted' }; }, get: async () => ({ status: 'completed' }) } as unknown as NewsBatchService,
++  });
++  await once(server, 'listening');
++  const url = `http://127.0.0.1:${(server.address() as AddressInfo).port}/api/news-analysis/batches`;
++  try {
++    expect((await fetch(url, { method: 'POST', body: '{}' })).status).toBe(401);
++    expect((await fetch(`${url}/${'a'.repeat(64)}`)).status).toBe(401); expect(calls).toBe(0);
++    const headers = { Authorization: 'Bearer test-only', 'Content-Type': 'application/json' };
++    expect(await (await fetch(url, { method: 'POST', headers, body: '{}' })).json()).toMatchObject({ ok: true, job: { status: 'submitted' } });
++    expect(await (await fetch(`${url}/${'a'.repeat(64)}`, { headers })).json()).toMatchObject({ ok: true, job: { status: 'completed' } });
++    expect(calls).toBe(1);
++  } finally { server.closeAllConnections(); await new Promise<void>((resolve, reject) => server.close(error => error ? reject(error) : resolve())); }
++});
+ 
+diff --git a/tests/newsBatchService.test.ts b/tests/newsBatchService.test.ts
+new file mode 100644
+index 0000000..1b86951
+--- /dev/null
++++ b/tests/newsBatchService.test.ts
+@@ -0,0 +1,140 @@
++import { afterEach, describe, expect, it } from 'vitest';
++import { createHash } from 'node:crypto';
++import { mkdtemp, readFile, rm } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { join } from 'node:path';
++import { NewsBatchService, type NewsBatchInput } from '../src/services/newsBatchService.js';
++import { NewsAnalysisBudget } from '../src/services/newsAnalysisBudget.js';
++import { UsageBudgetTracker, USD_TO_GROSS_EUR_CENTS } from '../src/services/tokenUsageBudget.js';
++
++const dirs: string[] = [];
++afterEach(async () => { for (const dir of dirs.splice(0)) await rm(dir, { recursive: true, force: true }); });
++function input(story = 'story-1', kind = 'media_backfill'): NewsBatchInput {
++  const fields = { version: 1, kind, story_id: story, fingerprint: 'a'.repeat(64), question: 'Use only supplied evidence. UNTRUSTED_SOURCE_DATA_BEGIN {} UNTRUSTED_SOURCE_DATA_END', attempt: 0 };
++  return { ...fields, key: createHash('sha256').update(JSON.stringify(fields)).digest('hex') } as NewsBatchInput;
++}
++async function fixture() {
++  const dir = await mkdtemp(join(tmpdir(), 'news-batch-test-')); dirs.push(dir);
++  let date = new Date('2026-09-07T10:00:00Z');
++  const news = new NewsAnalysisBudget(join(dir, 'news.json'), 50, () => date);
++  const shared = new UsageBudgetTracker({ enabled: true, file: join(dir, 'shared.json'), monthlyBudgetCents: 5000, featureCostsCents: { factcheck: 20, woekAi: 8, productCheck: 35 } });
++  const job = input();
++  const calls: string[] = [];
++  let lost = false, invalid = false, unknownUsage = false, identityMismatch = false, creationStatus = 200;
++  let providerStatus = 'in_progress';
++  const batch = () => ({ id: 'batch_1', input_file_id: 'file-input', endpoint: '/v1/responses', metadata: { woek_news_key: job.key }, status: providerStatus,
++    output_file_id: providerStatus === 'completed' ? 'file-output' : null, request_counts: { completed: providerStatus === 'completed' ? 1 : 0, total: 1 } });
++  const fetchImpl = (async (url: string | URL | Request, options: RequestInit = {}) => {
++    const route = String(url).replace('https://api.openai.com/v1', '');
++    calls.push(`${options.method || 'GET'} ${route}`);
++    expect((options.headers as Record<string, string>).Authorization).toBe('Bearer test-key');
++    if (route === '/files' && options.method === 'POST') {
++      const form = options.body as FormData;
++      expect(form.get('purpose')).toBe('batch');
++      const line = JSON.parse(await (form.get('file') as File).text());
++      expect(line.custom_id).toBe(job.key); expect(line.url).toBe('/v1/responses');
++      expect(line.body).toMatchObject({ model: 'gpt-5.4-mini', store: false });
++      expect(line.body.tools).toBeUndefined();
++      return Response.json({ id: 'file-input' });
++    }
++    if (route === '/batches' && options.method === 'POST') {
++      expect(JSON.parse(options.body as string)).toMatchObject({ completion_window: '24h', endpoint: '/v1/responses' });
++      if (lost) throw new Error('lost response, provider did create batch');
++      return Response.json(batch(), { status: creationStatus });
++    }
++    if (route.startsWith('/batches?')) return Response.json({ data: [batch()], has_more: false });
++    if (route === '/batches/batch_1') return Response.json(batch());
++    if (route === '/files/file-output/content') return new Response(JSON.stringify({ custom_id: identityMismatch ? 'wrong' : job.key, response: { status_code: 200, body: {
++      model: 'gpt-5.4-mini-2026-03-17', status: 'completed', usage: unknownUsage ? null : { input_tokens: 101, output_tokens: 77, input_tokens_details: { cached_tokens: 10 } },
++      output: [{ type: 'message', content: [{ type: 'output_text', text: invalid ? 'invalid JSON' : JSON.stringify({ analyses: [{ story_id: job.story_id }] }) }] }],
++    } } }) + '\n');
++    if (options.method === 'DELETE') return Response.json({ deleted: true });
++    throw Error(`Unexpected route ${route}`);
++  }) as typeof fetch;
++  const options = { file: join(dir, 'jobs.json'), apiKey: 'test-key', budgets: { news, shared }, fetchImpl, now: () => date };
++  return { dir, job, calls, news, shared, options, service: new NewsBatchService(options),
++    completed: () => { providerStatus = 'completed'; date = new Date('2026-09-07T11:00:00Z'); },
++    expired: () => { providerStatus = 'expired'; date = new Date('2026-09-07T11:00:00Z'); },
++    lose: () => { lost = true; }, invalid: () => { invalid = true; }, unknown: () => { unknownUsage = true; }, mismatch: () => { identityMismatch = true; }, reject: () => { creationStatus = 400; },
++  };
++}
++describe('durable OpenAI Batch news adapter', () => {
++  it('reserves once, survives restart, reconciles exact half tariff, persists before file deletion', async () => {
++    const f = await fixture();
++    expect(await f.service.submit(f.job)).toMatchObject({ status: 'submitted', estimated_cost_usd: 0.125 });
++    await f.service.submit(f.job);
++    expect(f.calls.filter(c => c === 'POST /batches')).toHaveLength(1);
++    f.completed();
++    const restarted = new NewsBatchService(f.options);
++    const result = await restarted.get(f.job.key);
++    const cost = Number((((101 - 10) * .75 + 10 * .075 + 77 * 4.5) / 1e6 * .5).toFixed(6));
++    expect(result).toMatchObject({ status: 'completed', billing_status: 'settled', estimated_cost_usd: cost });
++    expect(JSON.parse(await readFile(join(f.dir, 'jobs.json'), 'utf8')).jobs[f.job.key].answer).toBeTruthy();
++    expect(JSON.parse(await readFile(join(f.dir, 'news.json'), 'utf8')).months['2026-09'].chargedUsd).toBe(cost);
++    const entry = JSON.parse(await readFile(join(f.dir, 'shared.json'), 'utf8')).entries[0];
++    expect(entry.chargedCents).toBeCloseTo(cost * USD_TO_GROSS_EUR_CENTS, 5);
++    await restarted.get(f.job.key);
++    expect(f.calls.filter(c => c.startsWith('DELETE'))).toHaveLength(2);
++  });
++  it('recovers a lost submission response by exact metadata without re-submitting', async () => {
++    const f = await fixture(); f.lose();
++    expect(await f.service.submit(f.job)).toMatchObject({ status: 'unknown', estimated_cost_usd: .125 });
++    f.completed();
++    expect(await new NewsBatchService(f.options).get(f.job.key)).toMatchObject({ status: 'completed' });
++    expect(f.calls.filter(c => c === 'POST /batches')).toHaveLength(1);
++  });
++  it('charges unusable output at the Batch tariff but never returns it as publishable', async () => {
++    const f = await fixture(); await f.service.submit(f.job); f.invalid(); f.completed();
++    const result = await f.service.get(f.job.key);
++    expect(result).toMatchObject({ status: 'failed', billing_status: 'settled', error: 'AI_PROVIDER_OUTPUT_INVALID' });
++    expect(result?.answer).toBeUndefined(); expect(result?.estimated_cost_usd).toBeLessThan(.125);
++  });
++  it('retains unknown charges and provider evidence rather than fabricating zero cost', async () => {
++    const f = await fixture(); await f.service.submit(f.job); f.unknown(); f.completed();
++    expect(await f.service.get(f.job.key)).toMatchObject({ billing_status: 'reserved', estimated_cost_usd: .125 });
++    expect(f.calls.some(c => c.startsWith('DELETE'))).toBe(false);
++  });
++  it('rejects foreign result identities without releasing their reservation', async () => {
++    const f = await fixture(); await f.service.submit(f.job); f.mismatch(); f.completed();
++    await expect(f.service.get(f.job.key)).rejects.toThrow('batch_result_identity_mismatch');
++    expect(f.calls.some(c => c.startsWith('DELETE'))).toBe(false);
++  });
++  it('settles explicitly unexecuted expired jobs at zero', async () => {
++    const f = await fixture(); await f.service.submit(f.job); f.expired();
++    expect(await f.service.get(f.job.key)).toMatchObject({ status: 'failed', estimated_cost_usd: 0, billing_status: 'settled' });
++  });
++  it('provider rejection costs zero; repeated local key does not create another request', async () => {
++    const f = await fixture(); f.reject();
++    expect(await f.service.submit(f.job)).toMatchObject({ status: 'failed', estimated_cost_usd: 0 });
++    await f.service.submit(f.job); expect(f.calls.filter(c => c === 'POST /batches')).toHaveLength(1);
++  });
++  it('rejects invented kinds, fingerprints and job keys before paid work', async () => {
++    const f = await fixture();
++    for (const change of [{ kind: 'breaking' }, { key: 'b'.repeat(64) }, { attempt: 3 }, { question: 'tiny' }]) await expect(f.service.submit({ ...f.job, ...change } as NewsBatchInput)).rejects.toThrow();
++    expect(f.calls).toHaveLength(0);
++  });
++  it('background reservations leave the normal news lane usable', async () => {
++    const f = await fixture();
++    const budget = new NewsAnalysisBudget(join(f.dir, 'small.json'), 1.125);
++    await budget.reserveBatch(f.job.key);
++    await expect(budget.reserveBatch('b'.repeat(64))).rejects.toMatchObject({ technicalMessage: 'news_monthly_budget_reached' });
++    await budget.withBudget(async () => ({ model: 'gpt-5.4-mini', usage: { input_tokens: 1000, output_tokens: 1000 } }));
++  });
++  it('settlement remains in the reservation month and cannot refund twice', async () => {
++    const f = await fixture(); let date = new Date('2026-09-30T23:59:00Z');
++    const budget = new NewsAnalysisBudget(join(f.dir, 'month.json'), 50, () => date);
++    await budget.reserveBatch(f.job.key); date = new Date('2026-10-01T01:00:00Z');
++    await budget.settleBatch(f.job.key, .01); await budget.settleBatch(f.job.key, .01);
++    await expect(budget.settleBatch(f.job.key, 0)).rejects.toThrow('mismatch');
++    const ledger = JSON.parse(await readFile(join(f.dir, 'month.json'), 'utf8'));
++    expect(ledger.months['2026-09'].chargedUsd).toBe(.01); expect(ledger.months['2026-10']).toBeUndefined();
++    await expect(budget.reserveBatch(f.job.key)).rejects.toThrow('closed');
++  });
++  it('can reserve again after a proven local zero-cost refusal, never without headroom', async () => {
++    const f = await fixture();
++    await f.shared.reserveBatch(f.job.key); await f.shared.settleBatch(f.job.key, 0);
++    await f.shared.reserveBatch(f.job.key);
++    const entry = JSON.parse(await readFile(join(f.dir, 'shared.json'), 'utf8')).entries[0];
++    expect(entry.basis).toBe('batch_reserved'); expect(entry.chargedCents).toBeGreaterThan(16);
++  });
++});

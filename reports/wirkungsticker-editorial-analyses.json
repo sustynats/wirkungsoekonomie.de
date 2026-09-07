@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-07T13:45:09.081Z",
-  "scanned_stories": 109,
-  "scanned_subjects": 93,
-  "editorial_candidates": 17,
-  "ready_for_research": 1,
-  "research_pending": 5,
-  "retry_deferred": 1,
-  "editorial_research_sources_discovered": 12,
+  "started_at": "2026-09-07T20:56:07.328Z",
+  "scanned_stories": 127,
+  "scanned_subjects": 109,
+  "editorial_candidates": 20,
+  "ready_for_research": 3,
+  "research_pending": 7,
+  "retry_deferred": 3,
+  "editorial_research_sources_discovered": 22,
   "selected": 0,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
@@ -23,17 +23,62 @@
   "failed": [],
   "candidates": [
     {
-      "story_id": "wt-2cf5f0c5e42720ec",
-      "story_slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet--2720ec",
-      "story_title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
+      "story_id": "wt-aa6c2b7b8a381223",
+      "story_slug": "eu-to-boost-greenland-investment-amid-trump-annexation-claims-381223",
+      "story_title": "EU to boost Greenland investment amid Trump annexation claims",
       "editorial_analysis_score": 70,
+      "analysis_gain": 48,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 9,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "a5048fb060872143207b7ea8c81f06964c48cbc3b31c97fa61679adb3da22246",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-a030a1d903caa413",
+      "story_slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-caa413",
+      "story_title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+      "editorial_analysis_score": 69,
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
         "impact_potential": 0,
         "impact_risk": 0,
         "editorial_priority": 8,
-        "mpd_relevance": 10,
+        "mpd_relevance": 9,
         "observed_impact": 0,
         "third_order_relevance": 10,
         "transformation_relevance": 8,
@@ -60,9 +105,221 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "25314d0d4b38a47a0529d89c3fe5c5f86cdb4f87809a4faaf4862dac9db8282e",
+      "fingerprint": "3fea231ac7ff3b3e8940c80c748eab1bccc21dc3b1e980ca578eb653d50073c9",
       "status": "published",
-      "analysis_id": "woek-analysis-3f27f489cadb"
+      "analysis_id": "woek-analysis-340bd54aa1fd"
+    },
+    {
+      "story_id": "wt-cf03acddb911d861",
+      "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
+      "story_title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+      "editorial_analysis_score": 78,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-219f434ceb61"
+    },
+    {
+      "story_id": "wt-cd001726db438d2d",
+      "story_slug": "arbeitsmarkt-fachkraftemangel-konnte-bis-2029-auf-723-000-steigen-438d2d",
+      "story_title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
+      "editorial_analysis_score": 81,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 6,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "910a5e1f96e4f59f4bec24ac97f8d9e17f69e97963b19393a6e62179f6b21005",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-8f7ac0654a780960",
+      "story_slug": "witkoff-fordert-russland-und-ukraine-zu-kompromissen-fur-kriegsende-auf-780960",
+      "story_title": "Witkoff fordert Russland und Ukraine zu „Kompromissen“ für Kriegsende auf",
+      "editorial_analysis_score": 71,
+      "analysis_gain": 51,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "78522ed7a608806cb3fb963a0a4eea1577746ec2d5d1136d08c1010801b11adc",
+      "status": "published",
+      "analysis_id": "woek-analysis-7c4918d1134c"
+    },
+    {
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "story_slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
+      "story_title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
+      "editorial_analysis_score": 71,
+      "analysis_gain": 48,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 6,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-17508db58ecc"
+    },
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "story_slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+      "story_title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "f68e99ac37a8b6579dd16fe4bca19cb8fe88ce840c7370004d3e4896b72b5653",
+      "status": "published",
+      "analysis_id": "woek-analysis-36e98d72ae20"
     },
     {
       "story_id": "wt-4b5d0962d323432a",
@@ -105,48 +362,6 @@
       "fingerprint": "e1a3695100cfd89742bbb0067654fbaff5ab9e303d9a8f14e8a6ce5f29111790",
       "status": "published",
       "analysis_id": "woek-analysis-0bfd0f9a3434"
-    },
-    {
-      "story_id": "wt-cf03acddb911d861",
-      "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
-      "story_title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
-      "editorial_analysis_score": 73,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 4,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "2f2b82710b0f861b0a1ae02287680ad6f589dd63664b20ca92312f5602829f66",
-      "status": "published",
-      "analysis_id": "woek-analysis-219f434ceb61"
     },
     {
       "story_id": "wt-995822cc0b71a7f8",
@@ -278,48 +493,6 @@
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "story_slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
-      "story_title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-      "editorial_analysis_score": 68,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 9,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 0,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 4,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 6,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "6889f6dcfa62649dc22a1dff7bca65fabd75a0cebd636d80d9eb25f668e81671",
-      "status": "published",
-      "analysis_id": "woek-analysis-36e98d72ae20"
-    },
-    {
       "story_id": "wt-7b385f58748f3d32",
       "story_slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
       "story_title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
@@ -360,48 +533,6 @@
       "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
       "status": "published",
       "analysis_id": "woek-analysis-dab9cdd59202"
-    },
-    {
-      "story_id": "wt-f7d7115a53ff2c2f",
-      "story_slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
-      "story_title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
-      "editorial_analysis_score": 73,
-      "analysis_gain": 48,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 4,
-        "mpd_relevance": 7,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 3,
-        "MPD_interdependence": 0,
-        "distribution_relevance": 6,
-        "discourse_relevance": 6,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 2,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "bece0de0467f9ec9824b0ae47475c565fa1771d782ec154e3dc65e2e52c28a3c",
-      "status": "published",
-      "analysis_id": "woek-analysis-17508db58ecc"
     },
     {
       "story_id": "wt-f2edeab46d126d83",
@@ -750,5 +881,14 @@
       "status": "published",
       "analysis_id": "woek-analysis-39ddf0b6cc39"
     }
-  ]
+  ],
+  "batch": {
+    "submitted": 0,
+    "pending": 0,
+    "completed": 0,
+    "failed": 0,
+    "applied": 0,
+    "polling_errors": 0,
+    "attention_required": []
+  }
 }

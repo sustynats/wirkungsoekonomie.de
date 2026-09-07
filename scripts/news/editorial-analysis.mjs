@@ -1,6 +1,6 @@
 import crypto from "node:crypto";
 import { hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
-import { SYSTEMIC_ANALYSIS_RULE, JOURNALISTIC_STYLE_RULE, IMPACT_DIRECTION_RULE } from "./analysis-principles.mjs";
+import { SYSTEMIC_ANALYSIS_RULE, JOURNALISTIC_STYLE_RULE, IMPACT_DIRECTION_RULE, AUTHOR_ANALYSIS_RULE } from "./analysis-principles.mjs";
 import { systemicValidationErrors, editorialVisualErrors, sanitizeEditorialVisual, EDITORIAL_VISUAL_SCHEMA } from "./systemic-analysis.mjs";
 import { EDITORIAL_JUDGMENT_SCHEMA, EDITORIAL_JUDGMENT_RULE, sanitizeEditorialJudgment, editorialJudgmentErrors } from "./editorial-judgment.mjs";
 
@@ -59,7 +59,7 @@ function uniqueOrigins(story) {
 // Reviewed background documents belong to the analysis, never to the event
 // cluster. This cache is maintained in the existing editorial source snapshot;
 // it cannot be populated by an article or by a model response.
-const RESEARCH_FUNCTIONS = new Set(["context", "counter_source", "research", "reference_framework"]);
+const RESEARCH_FUNCTIONS = new Set(["context", "journalistic_context", "counter_source", "research", "reference_framework"]);
 export function editorialResearchSourceErrors(source, storyId) {
   if (!source || typeof source !== "object") return ["RESEARCH_METADATA_INCOMPLETE"];
   const errors = [];
@@ -227,7 +227,8 @@ export function buildEditorialResearchPacket(story, assessment) {
 export function buildEditorialAnalysisPrompt(story, assessment, qualityErrors = []) {
   const packet = buildEditorialResearchPacket(story, assessment);
   return [
-    "Du erstellst eine eigenständige journalistische WÖK-ANALYSE nach der Methodik der Wirkungsökonomie. Sie ist kein längeres Nachrichtenreferat, sondern erklärt den zusätzlichen systemischen Zusammenhang.",
+    "Du erstellst einen eigenständigen Beitrag MEINUNG & ANALYSE nach der Methodik der Wirkungsökonomie. Kein längeres Nachrichtenreferat: Er erklärt den zusätzlichen systemischen Zusammenhang und trennt Fakten, methodische Analyse und persönliche Einordnung.",
+    AUTHOR_ANALYSIS_RULE,
     SYSTEMIC_ANALYSIS_RULE,
     JOURNALISTIC_STYLE_RULE,
     IMPACT_DIRECTION_RULE,
@@ -301,6 +302,8 @@ export function editorialAnalysisValidationErrors(analysis, story, assessment = 
   if (!assessment.candidate) errors.push("EDITORIAL_NOT_A_CANDIDATE");
   if (!assessment.evidence_gate.passed) errors.push("EDITORIAL_EVIDENCE_GATE_OPEN");
   if (!analysis) return [...errors, "EDITORIAL_ANALYSIS_REQUIRED"];
+  if (analysis.editorial_genre && (analysis.editorial_genre !== "commentary" || analysis.editorial_mode !== "commissioned_review" || analysis.analysis_variant !== "standard")) errors.push("EDITORIAL_GENRE_INVALID");
+  if (analysis.lead_statement && (typeof analysis.lead_statement !== "string" || analysis.lead_statement.length > 180)) errors.push("EDITORIAL_LEAD_STATEMENT_INVALID");
   if (analysis.title.length < 20 || analysis.title.length > 120) errors.push("EDITORIAL_TITLE_LENGTH");
   if (analysis.subtitle.length < 40 || analysis.subtitle.length > 240) errors.push("EDITORIAL_SUBTITLE_LENGTH");
   if (analysis.teaser.length < 80 || analysis.teaser.length > 380) errors.push("EDITORIAL_TEASER_LENGTH");
@@ -321,7 +324,7 @@ export function editorialAnalysisValidationErrors(analysis, story, assessment = 
   if (!(analysis.counter_evidence || []).length && !(analysis.counter_evidence_search?.checked === true && analysis.counter_evidence_search?.result?.length >= 40)) errors.push("EDITORIAL_COUNTER_EVIDENCE_REQUIRED");
   if (!(analysis.what_changes_the_assessment || []).length) errors.push("EDITORIAL_WATCHLIST_REQUIRED");
   if (!analysis.self_frame_check?.passed || analysis.self_frame_check?.issues?.length) errors.push("EDITORIAL_SELF_FRAME_FAILED");
-  const publicText = strings({ title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, seo: analysis.seo_description, sections: analysis.sections, finding: analysis.executive_finding, perspective: analysis.author_perspective?.paragraphs, dimensions: analysis.subject_dimensions }).join(" ");
+  const publicText = strings({ title: analysis.title, subtitle: analysis.subtitle, teaser: analysis.teaser, seo: analysis.seo_description, sections: analysis.sections, finding: analysis.executive_finding, lead: analysis.lead_statement, perspective: analysis.author_perspective?.paragraphs, dimensions: analysis.subject_dimensions }).join(" ");
   if (hasEditorialResidue([publicText, analysis.claim_ledger, analysis.counter_evidence, analysis.what_changes_the_assessment])) errors.push("EDITORIAL_PUBLIC_EDITORIAL_RESIDUE");
   if (/\b(?:Oracle|Higgsfield|API|JSON|Prompt|Pipeline|Variable|Token(?:s)?|LLM)\b/i.test(publicText)) errors.push("EDITORIAL_INTERNAL_LANGUAGE");
   if (/\b(?:will manipulieren|will täuschen|will spalten|bewusst eingesetzt,? um)\b/i.test(publicText)) errors.push("EDITORIAL_INTENT_ATTRIBUTION");

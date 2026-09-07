@@ -1,12 +1,14 @@
 import { renderDimensionMeters, renderIcon, renderPathDirection } from "./visuals.mjs";
 import { AXES, renderAssessmentAxes, renderEditorialBalance } from "./editorial-judgment.mjs";
 
-export const editorialLabel = analysis => analysis?.analysis_variant === "systemic" ? "WÖk-Sonderanalyse" : "WÖk-Analyse";
-export const isCommissionedAnalysis = analysis => analysis?.analysis_variant === "systemic" && analysis?.editorial_mode === "commissioned_review";
+export const isEditorialCommentary = analysis => analysis?.editorial_genre === "commentary";
+export const EDITORIAL_TRANSPARENCY_NOTE = "Dieser Beitrag verbindet recherchierte Fakten mit wirkungswissenschaftlicher Analyse und persönlicher Einordnung. Tatsachenbehauptungen sind belegt; Bewertungen geben die Einschätzung der Autorin wieder.";
+export const editorialLabel = () => "Meinung & Analyse";
+export const isCommissionedAnalysis = analysis => (analysis?.analysis_variant === "systemic" || isEditorialCommentary(analysis)) && analysis?.editorial_mode === "commissioned_review";
 const escape = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[char]));
 const STATES = { open: "Offen", announced: "Angekündigt", introduced: "Eingebracht", adopted: "Beschlossen", implemented: "Umgesetzt", measured: "Wirkung gemessen" };
 const STATUS = { fact: "Belegt", program_statement: "Programmaussage", analytical_inference: "Plausibler Wirkpfad", scenario: "Bedingtes Szenario", impact_risk: "Bedingtes Risiko" };
-const TYPES = new Set(["cards", "cascade", "timeline", "references", "network", "power", "federal"]);
+const TYPES = new Set(["cards", "cascade", "timeline", "references", "network", "power", "federal", "comparison", "feedback"]);
 
 export const EDITORIAL_VISUAL_SCHEMA = { type: "cascade", caption: "Wirkpfad in Alltagssprache", items: [{ title: "Schritt", text: "konkrete Veränderung", status: "fact|program_statement|analytical_inference|scenario|impact_risk", relation: "scope|impact_path", direction: "positive|negative|mixed|open", condition: "Bedingung des Wirkpfads; scope zeigt nur Zuständigkeit/Bezug", source_ids: ["string"] }] };
 
@@ -21,12 +23,22 @@ export function editorialVisualErrors(analysis) {
   const ids = new Set((analysis.source_snapshot || []).map(source => source.source_id));
   const sections = new Set((analysis.sections || []).map(section => section.id));
   for (const section of analysis.sections || []) {
+    for (const link of section.links || []) {
+      if (!link.label || !/^\/(?!\/)[a-z0-9/_-]+(?:\.html)?(?:#[a-z0-9_-]+)?$/.test(link.href || "")) errors.push("EDITORIAL_RELATED_LINK_INVALID");
+    }
     if (section.placement && !["lead", "hero"].includes(section.placement)) errors.push("EDITORIAL_SECTION_PLACEMENT_INVALID");
     if (section.anchor && (!section.anchor.thesis || !section.anchor.affected || !section.anchor.condition || Object.entries(AXES).some(([axis, labels]) => !Object.hasOwn(labels, section.anchor.assessment?.[axis])))) errors.push("EDITORIAL_SECTION_ASSESSMENT_REQUIRED");
     const visual = section.visual;
     if (!visual) continue;
     if (!TYPES.has(visual.type) || !visual.caption || !visual.items?.length) errors.push("SYSTEMIC_VISUAL_INVALID");
     if (["network", "power", "federal"].includes(visual.type) && !visual.hub) errors.push("SYSTEMIC_VISUAL_HUB_REQUIRED");
+    if (visual.type === "feedback" && (!Array.isArray(visual.items) || visual.items.length < 3 || !["closed", "broken"].includes(visual.loop_status) || typeof visual.return_label !== "string" || !visual.return_label.trim() || visual.return_label.length > 240)) errors.push("EDITORIAL_FEEDBACK_INVALID");
+    if (visual.type === "comparison") {
+      const lanes = Array.isArray(visual.lanes) ? visual.lanes : [];
+      const items = Array.isArray(visual.items) ? visual.items : [];
+      const laneIds = new Set(lanes.map(lane => lane?.id));
+      if (lanes.length !== 2 || laneIds.size !== 2 || !items.length || lanes.some(lane => !/^[a-z][a-z0-9_-]*$/.test(lane?.id) || !lane?.title || !lane?.summary || !items.some(item => item?.lane === lane.id)) || items.some(item => !laneIds.has(item?.lane))) errors.push("EDITORIAL_COMPARISON_INVALID");
+    }
     for (const item of visual.items || []) {
       if (!item.title || !item.text || !STATUS[item.status]) errors.push("SYSTEMIC_VISUAL_EVIDENCE_REQUIRED");
       if (item.href && !/^#[a-z][a-z0-9_-]*$/.test(item.href)) errors.push("SYSTEMIC_VISUAL_LINK_INVALID");
@@ -41,7 +53,7 @@ export function editorialVisualErrors(analysis) {
 }
 
 export function systemicValidationErrors(analysis) {
-  if (analysis.analysis_variant !== "systemic") return [];
+  if (analysis.analysis_variant !== "systemic" && !isEditorialCommentary(analysis)) return [];
   const errors = editorialVisualErrors(analysis);
   if (!isCommissionedAnalysis(analysis)) errors.push("SYSTEMIC_EDITORIAL_REVIEW_REQUIRED");
   const ids = new Set((analysis.source_snapshot || []).map(source => source.source_id));
@@ -75,6 +87,17 @@ export function commissionedReviewState(analysis, story) {
 
 export function renderSystemicVisual(visual, sources) {
   if (!visual || !TYPES.has(visual.type)) return "";
+  if (visual.type === "feedback") {
+    if (!Array.isArray(visual.items) || visual.items.length < 3 || !["closed", "broken"].includes(visual.loop_status) || !visual.return_label) return "";
+    // Reuse the ordered, evidence-labelled path; the return channel makes the
+    // feedback relationship explicit without implying a measured causal loop.
+    const path = renderSystemicVisual({ ...visual, type: "cascade", outcome: undefined }, sources);
+    return `<div class="news-feedback news-feedback--${visual.loop_status}">${path}<p class="news-feedback__return"><span aria-hidden="true">${visual.loop_status === "closed" ? "↺" : "↛"}</span><span><strong>${visual.loop_status === "closed" ? "Rückkopplung zum Anfang" : "Rückkopplung unterbrochen"}</strong> ${escape(visual.return_label)}</span></p>${visual.outcome ? `<p class="news-method-note">${escape(visual.outcome)}</p>` : ""}</div>`;
+  }
+  if (visual.type === "comparison") {
+    const laneHtml = (visual.lanes || []).map(lane => `<section class="news-comparison-lane"><h3>${escape(lane.title)}</h3><p class="news-method-note">${escape(lane.summary)}</p><ol>${visual.items.filter(item => item.lane === lane.id).map(item => `<li class="news-systemic-node news-systemic-node--${escape(item.status)}"><span class="news-systemic-status">${escape(STATUS[item.status])}</span>${item.relation === "impact_path" ? renderPathDirection(item.direction) : ""}<h4>${item.icon ? renderIcon(item.icon) : ""}${escape(item.title)}</h4><p>${escape(item.text)}</p>${item.condition ? `<p class="news-method-note"><strong>Bedingung / Grenze:</strong> ${escape(item.condition)}</p>` : ""}${(item.source_ids || []).length ? `<p class="news-method-note">${item.source_ids.map(id => sources.get(id)).filter(Boolean).map(source => `<a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.publisher)}</a>`).join(" · ")}</p>` : ""}</li>`).join("")}</ol></section>`).join("");
+    return `<figure class="news-systemic-visual news-systemic-visual--comparison"><figcaption>${escape(visual.caption)}</figcaption><div class="news-comparison-grid">${laneHtml}</div>${visual.outcome ? `<p class="news-systemic-outcome">${escape(visual.outcome)}</p>` : ""}</figure>`;
+  }
   const tag = ["cascade", "timeline"].includes(visual.type) ? "ol" : "ul";
   return `<figure class="news-systemic-visual news-systemic-visual--${visual.type}"><figcaption>${escape(visual.caption)}</figcaption>${visual.hub ? `<div class="news-systemic-hub">${renderIcon("politik")}<strong>${escape(visual.hub)}</strong>${visual.levers ? `<span>${escape(visual.levers)}</span>` : ""}</div>` : ""}<${tag}>${visual.items.map(item => `<li class="news-systemic-node news-systemic-node--${escape(item.status)}"><span class="news-systemic-status">${escape(item.relation === "scope" && item.status === "analytical_inference" ? "Wirkungsfeld / Bezug" : STATUS[item.status])}</span>${item.relation === "impact_path" ? renderPathDirection(item.direction) : ""}<h3>${item.icon ? renderIcon(item.icon) : ""}${item.href ? `<a href="${escape(item.href)}">${escape(item.title)}</a>` : escape(item.title)}</h3><p>${escape(item.text)}</p>${item.condition ? `<p class="news-method-note"><strong>Bedingung / Grenze:</strong> ${escape(item.condition)}</p>` : ""}${(item.source_ids || []).length ? `<p class="news-method-note">${item.source_ids.map(id => sources.get(id)).filter(Boolean).map(source => `<a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.publisher)}</a>`).join(" · ")}</p>` : ""}</li>`).join("")}</${tag}>${visual.outcome ? `<div class="news-systemic-outcome">${renderIcon("systemisch")}<p>${escape(visual.outcome)}</p></div>` : ""}</figure>`;
 }
@@ -93,7 +116,7 @@ export function renderSectionAnchor(section) {
 
 export function renderEditorialContents(analysis) {
   const sections = new Map((analysis.sections || []).map(section => [section.id, section]));
-  const extra = `${analysis.author_perspective?.paragraphs?.length ? '<li><a href="#meine-einordnung">Meine Einordnung</a></li>' : ""}${analysis.analysis_variant === "systemic" ? '<li><a href="#reality-check">Reality Check</a></li><li><a href="#versionsverlauf">Versionsverlauf</a></li>' : ""}<li><a href="#quellen">Quellen und Belege</a></li>`;
+  const extra = `${analysis.author_perspective?.paragraphs?.length ? '<li><a href="#meine-einordnung">Meine Einordnung</a></li>' : ""}${isCommissionedAnalysis(analysis) ? '<li><a href="#reality-check">Reality Check</a></li><li><a href="#versionsverlauf">Versionsverlauf</a></li>' : ""}<li><a href="#quellen">Quellen und Belege</a></li>`;
   if (analysis.navigation_groups?.length) {
     return `<nav class="news-editorial-toc news-editorial-toc--grouped" aria-label="Inhaltsverzeichnis der Analyse"><h2>Dein Weg durch die Analyse</h2><ol>${analysis.navigation_groups.map((group, index) => `<li><a href="#${escape(group.section_ids[0])}"><span>${index + 1}</span>${escape(group.title)}</a><details><summary>Kapitel öffnen</summary><ul>${group.section_ids.map(id => `<li><a href="#${escape(id)}">${escape(sections.get(id)?.title)}</a></li>`).join("")}${index === analysis.navigation_groups.length - 1 ? extra : ""}</ul></details></li>`).join("")}</ol></nav>`;
   }

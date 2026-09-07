@@ -87,6 +87,59 @@ test('green runs without queue progress trigger a distinct flow warning, not a p
   assert.equal(publicationFlow(quiet.usage, quiet.report, now).stalled, false);
   assert.equal(publicationFlow({ runs: data.usage.runs.slice(0, 2) }, data.report, now).stalled, false);
 });
+
+test('background Batch, synchronous backfills and deep dives cannot mask a stalled immediate news queue', () => {
+  const rows = [0, 60, 125].map((minutes, i) => ({ run_id: `news-run-${i}`,
+    started_at: new Date(Date.parse(now) - minutes * 60000 - 1000).toISOString(),
+    completed_at: new Date(Date.parse(now) - minutes * 60000).toISOString(), counts: {} }));
+  const report = { queue: { capacity: 20, oldest_minutes: 900 } };
+  for (const [run_id, ai] of [['media-backfill-batch-paid', { processing_mode: 'batch' }],
+    ['media-backfill-sync-paid', {}], ['editorial-paid', {}]]) {
+    const background = { run_id, ai, started_at: now, completed_at: now, counts: { updated_stories: 1 } };
+    const result = publicationFlow({ runs: [...rows, background] }, report, now);
+    assert.equal(result.stalled, true, run_id);
+    assert.equal(result.observed_runs, 3);
+    assert.equal(result.publication_actions, 0);
+  }
+});
+
+test('daily report separates Batch reserves and uses the current reported budget, never a fixed 25 EUR', () => {
+  const at = '2026-09-07T16:00:00Z';
+  const d = fixture();
+  d.report.completed_at = at;
+  d.report.budget_policy.authorized_eur = 50;
+  d.report.budget_policy.fx = { rate_date: '2026-09-04', rate_usd_per_eur: 1.19 };
+  d.report.cost_monitoring = { started_at: at };
+  d.stories = [{ published: true, story_id: 'one', slug: 'one', published_at: at, last_updated: at, sources: [] }];
+  d.usage.runs = [
+    { run_id: 'news-run-paid', started_at: at, counts: { published_stories: 1 }, ai: { requests: 1, estimated_cost_usd: .03, token_source: 'provider_reported_usage' } },
+    { run_id: 'editorial-paid', started_at: at, counts: {}, ai: { requests: 1, estimated_cost_usd: .5 } },
+    { run_id: 'media-backfill-batch-open', started_at: at, counts: {}, ai: { requests: 1, processing_mode: 'batch', estimated_cost_usd: .125, token_source: 'batch_reserved_pending' } },
+    { run_id: 'media-backfill-batch-applied', started_at: at, counts: { updated_stories: 1 }, ai: { requests: 0, processing_mode: 'batch', estimated_cost_usd: 0, token_source: 'batch_provider_usage' }, publication_applied_at: at },
+  ];
+  let summary = summarizeNews(d, at);
+  assert.equal(summary.usdMonth, .655, 'reserves and deep dives remain in the budget total');
+  assert.equal(summary.usdPerNewsAction, .03, 'background costs do not change the immediate-news unit cost');
+  assert.equal(summary.authorizedBudgetEur, 50);
+  assert.equal(summary.newsActionsToday, 1);
+  assert.equal(summary.dailyPipeline.publicationActions, 1, 'background updates have their own funnel');
+  let text = dailyReport(summary, healthy);
+  assert.match(text, /Limit €50\.00/);
+  assert.match(text, /Batch.*separat/);
+  assert.match(text, /\$0\.125.*reserviert/);
+  assert.doesNotMatch(text, /Limit €25/);
+  assert.equal(summarizeNews(d, '2026-10-01T01:00:00Z').authorizedBudgetEur, null,
+    'a stale September report cannot authorize the October exception');
+  d.report.completed_at = '2026-10-01T01:00:00Z';
+  d.report.budget_policy.authorized_eur = 25;
+  d.report.budget_policy.fx.rate_date = '2026-09-30';
+  assert.equal(summarizeNews(d, d.report.completed_at).authorizedBudgetEur, 25);
+  delete d.report.budget_policy.authorized_eur;
+  assert.equal(summarizeNews(d, d.report.completed_at).authorizedBudgetEur, null);
+  d.report.budget_policy.authorized_eur = 50;
+  d.report.completed_at = '2026-10-02T01:00:00Z';
+  assert.equal(summarizeNews(d, '2026-10-01T01:00:00Z').authorizedBudgetEur, null, 'future reports are not evidence of authorization');
+});
 test('the existing 95 percent budget reserve is observable as a budget stop', () => {
   const data = fixture(); data.report.budget_stage = 3;
   assert.equal(evaluateChecks(data, now).checks.find(c => c.id === 'budget').ok, false);
@@ -265,4 +318,34 @@ test('DM sends only to explicit recipient, with stable nonce and no public menti
   assert.equal(calls[0].body.recipient_id, '123456789012345679');
   assert.equal(calls[1].body.enforce_nonce, true);
   assert.deepEqual(calls[1].body.allowed_mentions, { parse: [] });
+});
+
+test('long daily reports keep their final budget and warnings, with stable per-part retry identities', async () => {
+  const calls = [];
+  let failSecond = true;
+  const fetchImpl = async (url, options) => {
+    if (!url.endsWith('/messages')) return Response.json({ id: '123456789012345678' });
+    const body = JSON.parse(options.body);
+    calls.push(body);
+    if (calls.length === 2 && failSecond) { failSecond = false; return new Response('', { status: 503 }); }
+    return Response.json({ id: '123456789012345680' });
+  };
+  const event = { id: '123456789012345678901234',
+    content: `${'x'.repeat(1949)}🌍\n${'Kosten und Quellen\n'.repeat(120)}Limit €50.00\n⚠ Offene Störung\nhttps://wirkungsoekonomie.de/wirkungsticker/` };
+  const options = { token: 'test', recipient: '123456789012345679', fetchImpl };
+  await assert.rejects(sendDiscord(event, options), /MONITOR_DM_SEND_HTTP_503/);
+  const firstAttempt = calls.splice(0);
+  await sendDiscord(event, options);
+  assert.equal(calls.map(call => call.content).join(''), event.content, 'no silent truncation');
+  assert.equal(calls[0].nonce, event.id, 'the existing first-part identity stays stable');
+  assert.equal(calls[0].nonce, firstAttempt[0].nonce);
+  assert.equal(calls[1].nonce, firstAttempt[1].nonce);
+  assert.equal(new Set(calls.map(call => call.nonce)).size, calls.length);
+  for (const call of calls) {
+    assert.ok(call.content.length > 0 && call.content.length <= 1950);
+    assert.ok(call.nonce.length <= 25);
+    assert.equal(call.enforce_nonce, true);
+    assert.deepEqual(call.allowed_mentions, { parse: [] });
+    assert.doesNotMatch(call.content, /[\uD800-\uDBFF]$/u, 'do not split an icon surrogate pair');
+  }
 });

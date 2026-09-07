@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { backgroundBatchEligibility, batchWorkPriority, createNewsBatchClient, BATCH_RESERVATION_USD } from './batch.mjs';
 import { editorialContentSnapshot } from "./editorial-judgment.mjs";
 import { commissionedReviewState, isCommissionedAnalysis } from "./systemic-analysis.mjs";
 import path from "node:path";
@@ -170,6 +171,7 @@ export async function runEditorialAnalyses({
   root = DEFAULT_ROOT, limit = 1, execute = false, bootstrap = false, now = new Date().toISOString(),
   callAiImpl = callWoekAi, build = buildNewsSite,
   registry = null,
+  batchEnabled = process.env.WOEK_NEWS_BATCH_ENABLED === 'true', batchFetchImpl,
   apiUrl = process.env.WOEK_NEWS_API_URL, authToken = process.env.WOEK_NEWS_ANALYSIS_TOKEN,
 } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 20) throw new Error("EDITORIAL_ANALYSIS_LIMIT_INVALID");
@@ -224,6 +226,14 @@ export async function runEditorialAnalyses({
     publication_deferred: false, failed: [], candidates: candidateRows,
   };
   if (!execute) return report;
+  const budget = newsBudget(state.budget_fx, now, process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR);
+  const batchClient = batchEnabled ? createNewsBatchClient({ state, usage, apiUrl, authToken, now, fetchImpl: batchFetchImpl,
+    canSubmit: () => budget.status === 'ok' && monthlyUsage(usage, now.slice(0, 7)) + report.estimated_cost_usd + BATCH_RESERVATION_USD + 1 <= budget.technical_limit_usd,
+    save: () => { writeAtomic(usageFile, usage); writeAtomic(stateFile, state); } }) : null;
+  if (batchClient) { await batchClient.reconcile(); report.batch = batchClient.report; }
+  if (batchClient) for (const record of store.analyses || []) for (const version of record.versions || []) {
+    if (version.batch_key) batchClient.applied(version, { [version.version === 1 ? 'editorial_analyses_published' : 'editorial_analyses_updated']: 1 });
+  }
   if (changedCandidateState) {
     store.candidates = candidateRows;
     store.method_version = EDITORIAL_ANALYSIS_VERSION;
@@ -231,20 +241,20 @@ export async function runEditorialAnalyses({
     writeAtomic(analysesFile, store);
   }
   if (!runnable.length) return report;
-  const budget = newsBudget(state.budget_fx, now, process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR);
-  if (budget.status !== "ok") {
+  if (budget.status !== "ok" && !batchClient) {
     report.failed.push({ reason: "EDITORIAL_BUDGET_FX_UNAVAILABLE" });
     return report;
   }
   let spend = monthlyUsage(usage, now.slice(0, 7));
   // `limit` protects one worker run from provider/time exhaustion. It is not an
   // editorial quota: every remaining relevant candidate stays in the queue.
-  const selected = runnable.slice(0, limit);
+  const selected = (batchClient ? [...runnable].sort((a, b) => batchWorkPriority(state, a.story, 'editorial_background') - batchWorkPriority(state, b.story, 'editorial_background')) : runnable).slice(0, limit);
   report.selected = selected.length;
   for (const { story, assessment } of selected) {
-    if (spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) {
+    const batchEligible = batchClient && backgroundBatchEligibility(story, { kind: 'editorial_background', now, state }).eligible;
+    if (!batchEligible && (budget.status !== 'ok' || spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd)) {
       report.failed.push({ story_id: story.story_id, reason: "EDITORIAL_AI_BUDGET_BLOCKED" });
-      break;
+      continue;
     }
     const existing = existingForStory(store, story.story_id);
     let result;
@@ -254,10 +264,10 @@ export async function runEditorialAnalyses({
     let requestPending = false;
     try {
       for (let qualityAttempt = 0; qualityAttempt < 2; qualityAttempt += 1) {
-        if (qualityAttempt && spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) throw new Error("EDITORIAL_AI_BUDGET_BLOCKED");
+        if (!batchEligible && qualityAttempt && spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) throw new Error("EDITORIAL_AI_BUDGET_BLOCKED");
         const prompt = buildEditorialAnalysisPrompt(story, assessment, errors);
-        requestPending = true;
-        result = await callAiImpl([story], {
+        requestPending = !batchEligible;
+        result = batchEligible ? await batchClient.call(story, { kind: 'editorial_background', methodVersion: EDITORIAL_ANALYSIS_VERSION, prompt }) : await callAiImpl([story], {
           apiUrl, authToken, attempts: 2, timeoutMs: 180000,
           clientId: "woek-wirkungsticker-editorial-analysis-v1",
           context: "Wirkungsticker: eigenständige, quellengebundene WÖK-Analyse mit Claim Ledger, Gegenbefund und Self-Frame-Check",
@@ -265,8 +275,9 @@ export async function runEditorialAnalyses({
         });
         requestPending = false;
         report.editorial_research_started += 1;
-        report.research_calls += Number(result.request_attempts || 1);
-        const callUsage = costFromUsage(result, estimateUsage(result.prompt_chars, result.answer_chars, result.model, modelRates(result.model)));
+        report.research_calls += result.batch_key ? 0 : Number(result.request_attempts || 1);
+        // Batch usage is already durably booked once under its job key.
+        const callUsage = result.batch_key ? { input_tokens: 0, output_tokens: 0, estimated_cost_usd: 0 } : costFromUsage(result, estimateUsage(result.prompt_chars, result.answer_chars, result.model, modelRates(result.model)));
         spend += callUsage.estimated_cost_usd;
         report.research_tokens += callUsage.input_tokens;
         report.analysis_tokens += callUsage.output_tokens;
@@ -293,7 +304,7 @@ export async function runEditorialAnalyses({
         ...analysis,
         reading_time_minutes: Math.max(5, Math.ceil([analysis.executive_finding || "", ...(analysis.sections || []).flatMap(section => [...(section.paragraphs || []), ...(section.visual?.items || []).map(item => `${item.title} ${item.text}`)]), ...(analysis.author_perspective?.paragraphs || [])].join(" ").split(/\s+/).filter(Boolean).length / 210)),
         source_snapshot: editorialSources(story).map((source) => ({ source_id: editorialSourceRef(source), registry_source_id: source.registry_source_id || source.source_id, publisher_id: source.publisher_id || null, publisher: source.publisher, title: source.title, url: source.url, published_at: source.published_at, primary_source: Boolean(source.primary_source), ...(source.editorial_review ? { source_item_id: editorialSourceRef(source), summary: source.summary, canonical_domain: source.canonical_domain, source_function: source.source_function, editorial_review: source.editorial_review } : {}) })),
-        versions: [...(existing?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, provider: result.provider, model: result.model, claim_ledger: analysis.claim_ledger, ...(existing ? { previous_content: editorialContentSnapshot(existing) } : {}) }],
+        versions: [...(existing?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, provider: result.provider, model: result.model, ...(result.batch_key ? { batch_key: result.batch_key, processing_mode: 'batch' } : {}), claim_ledger: analysis.claim_ledger, ...(existing ? { previous_content: editorialContentSnapshot(existing) } : {}) }],
       };
       const index = (store.analyses || []).findIndex((item) => item.analysis_id === analysisId);
       delete store.retry_state[story.story_id];
@@ -307,8 +318,18 @@ export async function runEditorialAnalyses({
       store.candidates = assessed.filter(({ assessment: item }) => item.candidate).map(({ story: item, assessment: itemAssessment }) => publicCandidate(itemAssessment, item, existingForStory(store, item.story_id)));
       store.updated_at = now;
       writeAtomic(analysesFile, store);
+      if (result.batch_key) batchClient.applied(result, { [existing ? 'editorial_analyses_updated' : 'editorial_analyses_published']: 1 });
     } catch (error) {
       const reason = String(error?.message || error).slice(0, 700);
+      if (error.batchDeferred) {
+        report.publication_deferred = true;
+        report.batch_deferred = Number(report.batch_deferred || 0) + 1;
+        store.retry_state[story.story_id] = { fingerprint: assessment.fingerprint, method_version: EDITORIAL_ANALYSIS_VERSION,
+          attempts: Number(previousRetry?.attempts || 0), last_attempt_at: now, next_attempt_at: new Date(Date.parse(now) + 15 * 60000).toISOString(), quality_errors: errors, reason };
+        writeAtomic(analysesFile, store);
+        spend = monthlyUsage(usage, now.slice(0, 7)) + report.estimated_cost_usd;
+        continue;
+      }
       if (requestPending) {
         const cost = failedRequestCost(error);
         report.research_calls += Number(error?.requestAttempts ?? 1);

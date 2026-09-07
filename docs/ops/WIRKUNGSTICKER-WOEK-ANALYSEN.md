@@ -1,4 +1,12 @@
-# Wirkungsticker: eigenständige WÖK-Analysen
+# Wirkungsticker: Meinung & Analyse
+
+Seit 7. September 2026 heißt die sichtbare Beitragsart der eigenständigen Ticker-Analysen **Meinung & Analyse**. WÖk bleibt die Methodik; das systemische Sonderformat bleibt als sekundärer Hinweis erkennbar. Technische Analyse-IDs, Varianten, `/wirkungsticker/analyse/`-URLs, Veröffentlichungsdaten und historische Texte ändern sich dadurch nicht.
+
+Bei Autorin/Metadaten steht zentral der Transparenzhinweis aus `EDITORIAL_TRANSPARENCY_NOTE`. Fakten, wirkungswissenschaftliche Analyse und persönliche Einordnung sind drei getrennte Ebenen. Das Label wird auf Karten, Detailseiten, Ursprungs-CTAs, in Article-Metadaten sowie RSS/Atom/JSON einheitlich ausgegeben. Historische Beiträge ohne `author_perspective` erhalten keine erfundene persönliche Schlusssektion.
+
+`AUTHOR_ANALYSIS_RULE` ist Bestandteil des vorhandenen Generierungsprompts: konkretes Beispiel, Mechanismus, System; natürliche Autorenstimme, faktische Belegpflicht auch in Meinungsabschnitten, keine pauschale Wählerabwertung. Kein zusätzlicher KI-Aufruf. Beauftragte Entwürfe nutzen weiterhin `commissioned_review` und `commissioned_author_draft`.
+
+Der generische Visualtyp `feedback` ergänzt die vorhandene Kaskade um einen expliziten Rückkanal (`loop_status: closed|broken`, `return_label`). Funktionale Modelle sind als solche bezeichnet. Tatsächliche Wirkpfade benötigen weiterhin Richtung, Bedingung und Evidenzstatus. Die zusätzliche Darstellung erzeugt keine numerischen Wirkungswerte.
 
 ## Format und Abgrenzung
 
