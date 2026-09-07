@@ -2,37 +2,79 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-07T15:55:26.355Z",
-  "scanned_stories": 113,
-  "scanned_subjects": 97,
-  "editorial_candidates": 17,
-  "ready_for_research": 3,
+  "started_at": "2026-09-07T16:10:55.661Z",
+  "scanned_stories": 114,
+  "scanned_subjects": 98,
+  "editorial_candidates": 18,
+  "ready_for_research": 4,
   "research_pending": 5,
-  "retry_deferred": 1,
-  "editorial_research_sources_discovered": 12,
+  "retry_deferred": 2,
+  "editorial_research_sources_discovered": 18,
   "selected": 2,
   "editorial_research_started": 3,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
   "research_calls": 3,
-  "research_tokens": 23274,
-  "analysis_tokens": 18927,
-  "estimated_cost_usd": 0.096061,
+  "research_tokens": 20558,
+  "analysis_tokens": 19265,
+  "estimated_cost_usd": 0.094681,
   "quality_retries": 1,
   "publication_deferred": false,
   "failed": [
     {
-      "story_id": "wt-f7d7115a53ff2c2f",
+      "story_id": "wt-8f7ac0654a780960",
       "reason": "AI_PROVIDER_OUTPUT_INVALID",
-      "next_attempt_at": "2026-09-07T16:10:26.355Z"
+      "next_attempt_at": "2026-09-07T16:25:55.661Z"
     },
     {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_IMPACT_OPEN",
-      "next_attempt_at": "2026-09-07T16:55:26.355Z"
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "reason": "AI_PROVIDER_OUTPUT_INVALID",
+      "next_attempt_at": "2026-09-07T16:40:55.661Z"
     }
   ],
   "candidates": [
+    {
+      "story_id": "wt-8f7ac0654a780960",
+      "story_slug": "witkoff-fordert-russland-und-ukraine-zu-kompromissen-fur-kriegsende-auf-780960",
+      "story_title": "Witkoff fordert Russland und Ukraine zu „Kompromissen“ für Kriegsende auf",
+      "editorial_analysis_score": 71,
+      "analysis_gain": 51,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "78522ed7a608806cb3fb963a0a4eea1577746ec2d5d1136d08c1010801b11adc",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-f7d7115a53ff2c2f",
       "story_slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
@@ -764,12 +806,12 @@
   ],
   "batch": {
     "submitted": 0,
-    "pending": 0,
+    "pending": 2,
     "completed": 0,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-07T15:57:49.768Z"
+  "completed_at": "2026-09-07T16:12:49.873Z"
 }
