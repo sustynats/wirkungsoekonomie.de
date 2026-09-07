@@ -1006,7 +1006,13 @@ export async function callWoekAi(stories, options = {}) {
         const error = new Error('AI_BUDGET_EXHAUSTED');
         error.requestAttempts = requestAttempts;
         error.providerNotCalled = requestAttempts === 1;
+        error.budgetScope = ['news', 'shared'].includes(payload.budget_scope) ? payload.budget_scope : 'unknown';
         throw error;
+      }
+      if (response.status === 502 && payload?.code === 'ANALYSIS_OUTPUT_INVALID' && payload.provider_called === true) {
+        // A completed but unusable answer belongs in the bounded output-retry
+        // queue, not in an immediate transport retry. Keep billing separate.
+        throw attachResponseBilling(new Error('AI_PROVIDER_OUTPUT_INVALID'), payload, requestAttempts, prompt.length);
       }
       if (attempt < attempts && (response.status === 429 || response.status >= 500)) {
         await (options.retryDelayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))))(
@@ -1033,9 +1039,14 @@ export async function callWoekAi(stories, options = {}) {
     error.requestAttempts = requestAttempts;
     throw error;
   }
-  if (String(payload.answer || "").length > 40000) throw new Error("AI_RESPONSE_TOO_LARGE");
-  const parsed = extractJsonObject(payload.answer);
-  if (!Array.isArray(parsed.analyses)) throw new Error("AI_SCHEMA_ANALYSES_REQUIRED");
+  let parsed;
+  try {
+    if (String(payload.answer || "").length > 40000) throw new Error("AI_RESPONSE_TOO_LARGE");
+    parsed = extractJsonObject(payload.answer);
+    if (!Array.isArray(parsed.analyses)) throw new Error("AI_SCHEMA_ANALYSES_REQUIRED");
+  } catch (error) {
+    throw attachResponseBilling(error, payload, requestAttempts, prompt.length);
+  }
   return {
     analyses: parsed.analyses,
     supplied_evidence_ids: suppliedIds,
@@ -1053,6 +1064,22 @@ export async function callWoekAi(stories, options = {}) {
     cache_status: payload.cacheStatus || null,
     request_attempts: requestAttempts,
   };
+}
+
+function attachResponseBilling(error, payload, attempts, promptChars) {
+  error.requestAttempts = attempts;
+  error.promptChars = promptChars;
+  // Read only the transport envelope, never usage asserted inside model text.
+  // Token validation and conservative fallback are owned by budget.mjs.
+  error.billingEvidence = {
+    model: typeof payload.model === 'string' ? payload.model : 'unknown',
+    reported_usage: payload.usage && {
+      input_tokens: payload.usage.input_tokens,
+      output_tokens: payload.usage.output_tokens,
+      cached_input_tokens: payload.usage.cached_input_tokens,
+    },
+  };
+  return error;
 }
 
 export function suppliedEvidenceIds(prompt) {

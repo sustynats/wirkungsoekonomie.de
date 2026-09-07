@@ -361,6 +361,31 @@ test("Backfill ist idempotent, versioniert und protokolliert reale Nutzung", asy
   assert.equal(logged.ai.requests, 2);
 });
 
+test('Medien-Backfill protokolliert verworfene Antwortkosten, ohne einen Artikel zu verändern', async t => {
+  for (const budgetBlocked of [false,true]) {
+    const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-media-cost-'));
+    t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+    fs.mkdirSync(path.join(root,'data/news'),{recursive:true});
+    const production=JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json',import.meta.url),'utf8'));
+    const climate=structuredClone(production.stories.find(entry=>entry.slug.includes('klimaextremismus')));
+    for(const key of ['media_impact','media_analysis_version','media_checked_at','media_trigger_fingerprint']) delete climate.analysis[key];
+    const store={schema_version:'1.1',stories:[climate]};
+    fs.writeFileSync(path.join(root,'data/news/stories.json'),JSON.stringify(store));
+    fs.writeFileSync(path.join(root,'data/news/usage.json'),JSON.stringify({runs:[]}));
+    fs.writeFileSync(path.join(root,'data/news/state.json'),JSON.stringify({budget_fx:{rate_usd_per_eur:1.1,rate_date:'2026-09-05'}}));
+    const error=budgetBlocked
+      ? Object.assign(new Error('AI_BUDGET_EXHAUSTED'),{requestAttempts:1,providerNotCalled:true,budgetScope:'news'})
+      : Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'),{requestAttempts:1,billingEvidence:{model:'gpt-5.4-mini',reported_usage:{input_tokens:1000,output_tokens:500,cached_input_tokens:200}}});
+    const result=await backfillMediaImpact({root,dryRun:false,now:'2026-09-05T10:00:00Z',callAiImpl:async()=>{throw error},build:()=>assert.fail('No unverified publication')});
+    assert.equal(result.completed,0);
+    assert.equal(result.ai_requests,1);
+    assert.equal(result.media_check_cost_usd,budgetBlocked?0:0.002865);
+    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(root,'data/news/stories.json'))),store);
+    assert.equal(JSON.parse(fs.readFileSync(path.join(root,'data/news/usage.json'))).runs[0].ai.estimated_cost_usd,budgetBlocked?0:0.002865);
+    if(budgetBlocked) assert.equal(result.budget_block_scope,'news');
+  }
+});
+
 test("bestehende Legacy-Akten bleiben bis zum selektiven Backfill gültig", () => {
   const item = story("Klimaextremismus bedroht die Stromversorgung");
   assert.deepEqual(mediaImpactValidationErrors({ source_summary: item.source_summary }, item), []);

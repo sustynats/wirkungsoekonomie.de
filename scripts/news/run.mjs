@@ -27,7 +27,7 @@ import { loadNewsRegistry, normalizeNewsRegistry, registryErrors } from "./regis
 import { sourceAccess } from "./access-policy.mjs";
 import { annotateSourceItem, sourceDue, eventFingerprint, eventCompatibility, evidenceGroups, freshnessFor, sourceHealth, coverageReport, dueFollowups, discoveryCandidates, persistClaimEvidence, nextDeepeningCheckpoint, normalizeEvidenceExcerpts, resolveEvidenceReferences } from "./newsroom.mjs";
 import { duplicateGroups, mergeLivingFiles, isMerged, subjectConflict, livingFileMatch } from "./living-files.mjs";
-import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
+import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
 import { IMAGE_CONFIG } from "./title-image/policy.mjs";
@@ -44,7 +44,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 const RELEVANCE_FILTER_VERSION = "4.0";
 const RELEVANCE_BACKFILL_DAYS = 7;
 const AI_PROCESSING_VERSION = "2026-09-06-throughput-3";
-const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE"]);
+const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE", "AI_PROVIDER_OUTPUT_INVALID"]);
 const CAPACITY_HOLD_REASONS = new Set(["AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
 const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
 const RETRYABLE_QUALITY_ERRORS = [
@@ -802,6 +802,9 @@ export function queueSnapshot(stories = [], now = new Date().toISOString(), befo
 
 function sanitizeError(error) {
   const message = error instanceof Error ? error.message : String(error);
+  // These exact internal codes are not credentials. Redacting their length
+  // would turn a retryable schema error into an unknown provider outage.
+  if (OUTPUT_FORMAT_ERRORS.has(message)) return message;
   return message.replace(/[A-Za-z0-9_-]{24,}/g, "[redacted]").slice(0, 240);
 }
 
@@ -902,6 +905,7 @@ export async function runWirkungsticker(options = {}) {
     ai_provider_failures: 0,
     ai_provider_errors: [],
     ai_output_invalid: 0,
+    ai_output_failure_cost_usd: 0,
     budget_blocked: false,
     quality_holds: [],
     article_excerpts_fetched: 0,
@@ -1245,6 +1249,8 @@ export async function runWirkungsticker(options = {}) {
         }
         break;
       }
+      let aiCostRecorded = false;
+      let aiRequestStarted = false;
       try {
         if (offset > 0) await (options.aiBatchDelayImpl || ((milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))))(
           Number(process.env.WOEK_NEWS_AI_BATCH_DELAY_MS || 2500),
@@ -1272,6 +1278,7 @@ export async function runWirkungsticker(options = {}) {
           enriched.media_trigger = detectMediaImpactTrigger(enriched);
           return enriched;
         }));
+        aiRequestStarted = true;
         const aiResult = await (options.callAiImpl || callWoekAi)(analysisBatch, {
           apiUrl: process.env.WOEK_NEWS_API_URL,
           authToken: process.env.WOEK_NEWS_ANALYSIS_TOKEN,
@@ -1290,6 +1297,7 @@ export async function runWirkungsticker(options = {}) {
         report.output_tokens += estimated.output_tokens;
         report.estimated_cost_usd = Number((report.estimated_cost_usd + estimated.estimated_cost_usd).toFixed(6));
         report.token_source = estimated.token_source;
+        aiCostRecorded = true;
         for (const candidate of batch) {
           bumpCandidateFunnel(sourceFunnel, candidate, "items_full_analyzed");
           const sourceCount = Math.max(1, new Set((candidate.sources || []).map((source) => source.source_id).filter(Boolean)).size);
@@ -1368,9 +1376,24 @@ export async function runWirkungsticker(options = {}) {
           report.reactivated_stories += wasPublished && !wasListed ? 1 : 0;
         }
       } catch (error) {
-        report.ai_calls += Number(error?.requestAttempts ?? 1);
-        report.estimated_cost_usd = Number((report.estimated_cost_usd + (error.providerNotCalled ? 0 : NEWS_REQUEST_RESERVATION_USD * Number(error?.requestAttempts ?? 1))).toFixed(6));
-        if (!error.providerNotCalled) report.token_source = "includes_conservative_failed_request_reservations";
+        if (!aiCostRecorded) {
+          const cost = failedRequestCost(aiRequestStarted ? error : { requestAttempts: 0 });
+          report.ai_calls += aiRequestStarted ? Number(error?.requestAttempts ?? 1) : 0;
+          report.prompt_chars_sent += Number(error?.promptChars || 0);
+          report.input_tokens += cost.input_tokens;
+          report.output_tokens += cost.output_tokens;
+          report.estimated_cost_usd = Number((report.estimated_cost_usd + cost.estimated_cost_usd).toFixed(6));
+          if (cost.token_source !== 'provider_not_called') report.token_source = cost.token_source === 'provider_reported_usage' ? 'includes_reported_output_failure_usage' : 'includes_conservative_failed_request_reservations';
+          if (error.billingEvidence) report.model ||= error.billingEvidence.model;
+          if (OUTPUT_FORMAT_ERRORS.has(sanitizeError(error))) report.ai_output_failure_cost_usd = Number((report.ai_output_failure_cost_usd + cost.estimated_cost_usd).toFixed(6));
+          for (const candidate of batch) {
+            const sourceCount = Math.max(1, new Set((candidate.sources || []).map(source => source.source_id).filter(Boolean)).size);
+            const share = 1 / Math.max(1, batch.length) / sourceCount;
+            bumpCandidateFunnel(sourceFunnel, candidate, 'ai_input_tokens', cost.input_tokens * share);
+            bumpCandidateFunnel(sourceFunnel, candidate, 'ai_output_tokens', cost.output_tokens * share);
+            bumpCandidateFunnel(sourceFunnel, candidate, 'estimated_ai_cost', cost.estimated_cost_usd * share);
+          }
+        }
         const reason = sanitizeError(error);
         if (reason === "AI_INPUT_TOO_LARGE" && error?.requestAttempts === 0) {
           for (const candidate of batch) {
@@ -1393,7 +1416,10 @@ export async function runWirkungsticker(options = {}) {
         const providerRateLimited = /AI_PROVIDER_ERROR:429/.test(reason);
         const rateLimited = budgetBlocked || providerRateLimited;
         const deferred = rateLimited ? selected.slice(offset) : batch;
-        if (budgetBlocked) report.budget_blocked = true;
+        if (budgetBlocked) {
+          report.budget_blocked = true;
+          report.budget_block_scope = ['news', 'shared'].includes(error.budgetScope) ? error.budgetScope : 'unknown';
+        }
         else {
           report.ai_provider_failures += 1;
           report.ai_provider_errors.push({ batch_offset: offset, error: reason });
@@ -1541,11 +1567,13 @@ export async function runWirkungsticker(options = {}) {
       input_tokens: report.input_tokens,
       output_tokens: report.output_tokens,
       estimated_cost_usd: report.estimated_cost_usd,
+      output_failure_cost_usd: report.ai_output_failure_cost_usd,
       token_source: report.token_source || "unavailable",
       media_check_tokens: report.media_check_tokens,
       media_check_cost_usd: report.media_check_cost_usd,
     } : null,
     source_failures: report.source_failures,
+    budget_block_scope: report.budget_block_scope || null,
     quality_holds: report.quality_holds.length,
     queue: report.queue,
     source_funnel: report.source_funnel,
