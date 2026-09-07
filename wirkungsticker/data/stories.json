@@ -1,7 +1,110 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T16:22:55.918Z",
+  "updated_at": "2026-09-07T17:21:31.323Z",
   "stories": [
+    {
+      "story_id": "wt-12227eeecd48c0b9",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-b077abe7ae401c71-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-af34e59ca8dbbc0e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-28a1212dc72ef812-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "die-caritas-bottrop-arbeitet-gewaltvorfalle-auf-48c0b9",
+      "title": "Die Caritas Bottrop arbeitet Gewaltvorfälle auf",
+      "source_summary": "Die Caritas Bottrop hat nach eigenen Angaben mit der Aufarbeitung möglicher Gewaltvorfälle in einem früheren Kinderheim begonnen. Auslöser war ein anonymer Hinweis einer betroffenen Person, die über sexualisierte, körperliche und psychische Gewalt berichtet haben soll. Die Caritas hat daraufhin weitere Recherchen angestoßen und eine Studie in Auftrag gegeben.\n\nUntersucht werden soll, in welchem Ausmaß Kinder und Jugendliche damals Gewalt ausgesetzt waren und welche strukturellen Bedingungen Übergriffe begünstigt haben könnten. Laut Bericht geht es um das frühere Kindervollheim St. Konrad, heute Kinderdorf am Köllnischen Wald. Die Caritas sagt zugleich, die Vorwürfe beträfen die 1960er und 1970er Jahre; für aktuelle Fälle gebe es keine Hinweise. Im Heim leben derzeit rund 100 Kinder und Jugendliche.",
+      "summary": "Die Caritas Bottrop hat eine historische Aufarbeitung zu Gewaltvorwürfen in einem früheren Kinderheim gestartet. Der Bericht nennt zugleich offene Punkte und schließt aktuelle Fälle nach Caritas-Angaben aus.",
+      "detail_summary": "Auslöser ist ein anonymer Hinweis aus dem Januar, nach dem in dem früheren Kinderheim St. Konrad Gewalt erfahren worden sein soll. Die Caritas reagiert darauf mit weiterer Recherche und einer beauftragten Studie der Universität Ulm. Für die öffentliche Bedeutung zählt vor allem, dass damit ein institutioneller Aufarbeitungsprozess beginnt, der mögliche Betroffene und heutige Schutzkonzepte berühren kann. Der Wirkpfad liegt nicht in unmittelbarer Wirkung, sondern in möglicher Anerkennung, Dokumentation und späteren Folgerungen für Prävention und Schutzstrukturen. Zugleich bleibt die Beleglage begrenzt: Gesichert ist bisher der Start der Aufarbeitung und der Vorwurfskontext, nicht aber das Ausmaß der Vorfälle oder spätere Konsequenzen.",
+      "why_relevant": "Die Meldung zeigt eine neue institutionelle Reaktion auf historische Gewaltvorwürfe und kann Folgewirkungen für Aufarbeitung, Schutzkonzepte und Vertrauen in eine soziale Einrichtung haben.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind mögliche ehemalige Heimkinder sowie die heute dort lebenden rund 100 Kinder und Jugendliche. Die Aufarbeitung kann Anerkennung und Prävention stärken, zugleich zeigt der Bericht einen schweren Gewaltkontext als mögliches Risiko."
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "rationale": "Aus den Quellen ergibt sich kein eigenständiger Umwelt- oder Klimabezug."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "rationale": "Der Vorgang betrifft institutionelle Aufarbeitung, Transparenz und die öffentliche Nachprüfbarkeit von Schutzversagen. Das stärkt demokratische Korrekturfähigkeit, ohne dass daraus schon ein Wirkungsnachweis folgt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "beschaeftigte",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T17:21:31.323Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T11:21:08.000Z",
+      "last_updated": "2026-09-07T17:24:29.900Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-bbc2a8844af90a5446d1",
+      "case_file": null,
+      "source_published_at": "2026-09-07T16:45:02.000Z",
+      "published_at": "2026-09-07T17:24:29.900Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Mit den Ergebnissen der Studie wird im Herbst 2027 gerechnet.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": "2027-09-30",
+          "measurable_indicator": "Veröffentlichung oder belastbar angekündigte Vorlage der Studie",
+          "expected_by_evidence_hash": "f2477c4caa3a3aa0c161fe0955be855898af886d44e5c8fefd7f0247fd131e59",
+          "followup_id": "followup-8e8739b3a6722b06",
+          "announced_at": "2026-09-07T16:45:02.000Z",
+          "follow_up_date": "2027-09-30T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:45:02.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-edd4484465895b46",
       "title_image": {
