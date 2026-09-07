@@ -63,7 +63,7 @@ export function prepareReviewedStory(review, registry, stories, now) {
   candidate.source_integrity = sourceIntegrityForStory(candidate, registry, stories, now);
   const analysis = { ...structuredClone(review.analysis), story_id: id };
   sanitizeAnalysisMediaImpact(analysis, candidate, {}, now);
-  if (analysis.visuals) analysis.visuals = sanitizeVisuals(analysis.visuals, candidate).visuals;
+  if (analysis.visuals) analysis.visuals = sanitizeVisuals(analysis.visuals, { ...candidate, analysis }).visuals;
   const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate)];
   if (errors.length) return { errors, candidate };
   const record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);

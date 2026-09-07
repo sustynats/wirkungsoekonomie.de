@@ -130,6 +130,21 @@ test('one transient source throttle stays observable without a false outage alar
   assert.equal(degraded.find(c => c.id === 'run').ok, false);
   assert.equal(degraded.find(c => c.id === 'sources').ok, false);
 });
+
+test('a lone throttled retry with fresh portfolio evidence does not hide the separate budget alarm', () => {
+  const d = fixture();
+  Object.assign(d.report, { started_at: now, sources_scheduled: 1, sources_not_due: 8,
+    source_successes: 0, source_failures: 1, budget_blocked: true,
+    source_errors: [{source_id:'retry',error:'ROBOTS_UNAVAILABLE_429'}],
+    source_health: [{source_id:'retry',status:'governance_hold',last_error:'ROBOTS_UNAVAILABLE_429'},
+      ...['a','b','c'].map(id=>({source_id:id,publisher_id:id,status:'active',last_success:'2026-09-04T05:50:00Z',interval_minutes:15,last_error:null}))] });
+  const checks = evaluateChecks(d, now).checks;
+  assert.equal(checks.find(c=>c.id==='run').ok, true);
+  assert.equal(checks.find(c=>c.id==='sources').ok, true);
+  assert.match(checks.find(c=>c.id==='sources').reason, /1 fehlgeschlagene/);
+  assert.equal(checks.find(c=>c.id==='budget').ok, false);
+  assert.equal(d.report.source_health[0].status, 'governance_hold');
+});
 test('image-provider outages and exhausted retries are monitored, deliberate cards and safety rejections are not outages', () => {
   const d=fixture();
   d.stories=[{published:true,title_image:{mode:'impact_card',fallback_reason:'IMAGE_CONTAINS_TEXT'}}];
