@@ -8,12 +8,13 @@
     "budget": {
       "firstSeen": "2026-09-06T21:20:50.904Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-07T09:50:22.279Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "41330999a32115c87f8dfbaf",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-07T10:35:29.315Z"
+    }
+  ],
   "dailyDate": "2026-09-07"
 }
