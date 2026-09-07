@@ -1,8 +1,1429 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-07T22:09:38.263Z",
-  "updated_at": "2026-09-07T22:22:04.144Z",
+  "updated_at": "2026-09-07T22:37:09.924Z",
   "stories": [
+    {
+      "story_id": "wt-c00a3ccf1d9c40e7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "16267f1f0010be0d20f2cc9f970aadc2213927eea636976bcec369a0f8b55d2b",
+        "first_failed_at": "2026-09-07T21:52:05.137Z",
+        "failed_at": "2026-09-07T21:52:05.137Z",
+        "retry_after": "2026-09-07T22:07:05.137Z",
+        "retry_count": 1
+      },
+      "slug": "nach-der-landtagswahl-in-sachsen-anhalt-bas-kritisiert-arbeitnehmerfeindliche-rhetorik-a-9c40e7",
+      "title": "Landtagswahl Sachsen-Anhalt - Bas kritisiert arbeitnehmerfeindliche Rhetorik als \"schädlich\", erwähnt Bundeskanzler Merz aber nicht namentlich",
+      "first_seen": "2026-09-07T16:32:01.000Z",
+      "last_updated": "2026-09-07T22:12:58.000Z",
+      "topic": [
+        "Arbeit",
+        "Soziales",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bas-kritisiert-arbeitnehmerfeindliche-rhetorik-als-schaedlich-erwaehnt-bundeskanzler-merz-aber-nicht-100.html",
+          "title": "Landtagswahl Sachsen-Anhalt - Bas kritisiert arbeitnehmerfeindliche Rhetorik als \"schädlich\", erwähnt Bundeskanzler Merz aber nicht namentlich",
+          "summary": "Die SPD-Vorsitzende Bas hat nach der Landtagswahl in Sachsen-Anhalt inhaltliche Konsequenzen für die Bundespolitik angekündigt. Bas sagte in Berlin, die Menschen hätten offene Fragen bei Gesundheit, Rente und Pflege.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T21:33:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ae28e7c339366dd4d2ca499e23b40b1e02f8736fdce4c7921cde405e1f2d5d10",
+          "source_item_id": "50260980a8a01cc156c6e0557e111f1c3f42160b10377a72c85bf67056b94172",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T21:33:15.000Z",
+          "ingested_at": "2026-09-07T21:52:05.137Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bas-kritisiert-arbeitnehmerfeindliche-rhetorik-als-schaedlich-erwaehnt-bundeskanzler-merz-aber-nicht-102.html",
+          "title": "Nach der Landtagswahl in Sachsen-Anhalt - Bas kritisiert arbeitnehmerfeindliche Rhetorik als \"schädlich\", erwähnt Bundeskanzler Merz aber nicht namentlich",
+          "summary": "Die SPD-Vorsitzende Bas hat nach der Landtagswahl in Sachsen-Anhalt inhaltliche Konsequenzen für die Bundespolitik angekündigt. Bas sagte in Berlin, die Menschen hätten offene Fragen bei Gesundheit, Rente und Pflege.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:12:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e61792b7db123df0a587649b523fe314531a4c1f68346bfc28b2d487d9c484fe",
+          "source_item_id": "d3c4318ff4a56136ab8af8cf4ac26ff0881f9ccb9e0fc961888cf20c2dad1275",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:12:58.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c00a3ccf1d9c40e7-claim-01",
+          "story_id": "wt-c00a3ccf1d9c40e7",
+          "claim": "Landtagswahl Sachsen-Anhalt - Bas kritisiert arbeitnehmerfeindliche Rhetorik als \"schädlich\", erwähnt Bundeskanzler Merz aber nicht namentlich: Die SPD-Vorsitzende Bas hat nach der Landtagswahl in Sachsen-Anhalt inhaltliche Konsequenzen für die Bundespolitik angekündigt. Bas sagte in Berlin, die Menschen hätten offene Fragen bei Gesundheit, Rente und Pflege.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        },
+        {
+          "claim_id": "wt-c00a3ccf1d9c40e7-claim-02",
+          "story_id": "wt-c00a3ccf1d9c40e7",
+          "claim": "Nach der Landtagswahl in Sachsen-Anhalt - Bas kritisiert arbeitnehmerfeindliche Rhetorik als \"schädlich\", erwähnt Bundeskanzler Merz aber nicht namentlich: Die SPD-Vorsitzende Bas hat nach der Landtagswahl in Sachsen-Anhalt inhaltliche Konsequenzen für die Bundespolitik angekündigt. Bas sagte in Berlin, die Menschen hätten offene Fragen bei Gesundheit, Rente und Pflege.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "448b6b2a9d9965fd9f3cd8d4f15de5f795c2783e52a7c55642b65e01b173e4e9",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T16:36:37.497Z",
+      "event_detected_at": "2026-09-07T16:36:37.497Z",
+      "event_id": "event-816bda5295741011ec52",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Soziales",
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.198733333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 360.54045,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "2297e3af04ce35625d2ec750a3fcdef0ce2b1836ad4a8e7567c8c157558834e2",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-46e6bd810843b8fe",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c704132253d6db9127ac7004216ccdba02bfa37e834d176e2797c24aa94a46a3",
+        "first_failed_at": "2026-09-07T20:36:52.379Z",
+        "failed_at": "2026-09-07T20:36:52.379Z",
+        "retry_after": "2026-09-07T20:51:52.379Z",
+        "retry_count": 1
+      },
+      "slug": "ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe",
+      "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+      "first_seen": "2026-09-07T20:26:58.000Z",
+      "last_updated": "2026-09-07T22:12:58.000Z",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-100.html",
+          "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+          "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T20:26:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "88146a54259d618f27d2659242c4279d8900fa364f9560219470bcd6449dd850",
+          "source_item_id": "80cb140d5a33a85570a70e86955af1cf65dc0b9f0b84ea80d61288becc30c1a1",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T20:26:58.000Z",
+          "ingested_at": "2026-09-07T20:36:52.379Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+          "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+          "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:12:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e64aa8b4b7c40e052e58990bd9deb2fc08295fa397756fd3f5daae72c8983cbe",
+          "source_item_id": "6d7bc09c941f1e97772cba56c8f98d1abad8e9fc35a7342fe69d2f33ea5024c5",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:12:58.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-46e6bd810843b8fe-claim-01",
+          "story_id": "wt-46e6bd810843b8fe",
+          "claim": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen: Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        },
+        {
+          "claim_id": "wt-46e6bd810843b8fe-claim-02",
+          "story_id": "wt-46e6bd810843b8fe",
+          "claim": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen: Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "583bd8e43e7af59e698f7433ff9c5c3ae9dd39cf2052673fe0cd332a2e48c492",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T20:36:52.379Z",
+      "event_detected_at": "2026-09-07T20:36:52.379Z",
+      "event_id": "event-5e80ce591f52469f8da2",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.198733333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 120.29241666666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-b10575d1c95b9e06",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e3204d747aeceec11f7d58259e801100209b7a938fcfe2ad8384959ca98678fb",
+        "first_failed_at": "2026-09-07T16:36:37.497Z",
+        "failed_at": "2026-09-07T16:36:37.497Z",
+        "retry_after": "2026-09-07T16:51:37.497Z",
+        "retry_count": 1
+      },
+      "slug": "serbien-feierliche-beisetzung-von-kriegsverbrecher-mladic-in-belgrad-hat-begonnen-5b9e06",
+      "title": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen",
+      "first_seen": "2026-09-07T08:19:11.000Z",
+      "last_updated": "2026-09-07T22:12:58.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/feierliche-beisetzung-von-kriegsverbrecher-mladi-in-belgrad-hat-begonnen-102.html",
+          "title": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen",
+          "summary": "In Serbien hat die feierliche Beisetzung des bosnisch-serbischen Kriegsverbrechers Mladić begonnen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "34c39d388b330a7554e4c17dcaf2e5976e97882dc5ca0d66abfbc8dd5e3c41d2",
+          "source_item_id": "d0a0f74c43632919c1612eca9437cb7455322c867b29b83e896af6dcec824b3f",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T16:32:01.000Z",
+          "ingested_at": "2026-09-07T16:36:37.497Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-100.html",
+          "title": "Serbien - Kriegsverbrecher Mladić in Belgrad beigesetzt",
+          "summary": "In Serbien ist der bosnisch-serbische Kriegsverbrecher Mladić mit militärischen Ehren beigesetzt worden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d69c70d5ad19fb47c54acf2822331d7a9fd215e6a522a803ad689026b2150685",
+          "source_item_id": "090e71d29241a3c81bc1c937db0d250f82638c4f8f2d945700e7f8c98caf6639",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T16:32:01.000Z",
+          "ingested_at": "2026-09-07T16:36:37.497Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-106.html",
+          "title": "Serbien - Kriegsverbrecher Mladić in Belgrad beigesetzt",
+          "summary": "In Serbien ist der bosnisch-serbische Kriegsverbrecher Mladić mit militärischen Ehren beigesetzt worden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:12:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a134086596ced8d660de23b1897ba62f7761d7e1bf3b7722ac6150db35dc4f0f",
+          "source_item_id": "579ee9e99d755da69dd611d88c6dc2b7e5aed70fff7cfeef0fd0ff0032e0e586",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:12:58.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b10575d1c95b9e06-claim-01",
+          "story_id": "wt-b10575d1c95b9e06",
+          "claim": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen: In Serbien hat die feierliche Beisetzung des bosnisch-serbischen Kriegsverbrechers Mladić begonnen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        },
+        {
+          "claim_id": "wt-b10575d1c95b9e06-claim-02",
+          "story_id": "wt-b10575d1c95b9e06",
+          "claim": "Serbien - Kriegsverbrecher Mladić in Belgrad beigesetzt: In Serbien ist der bosnisch-serbische Kriegsverbrecher Mladić mit militärischen Ehren beigesetzt worden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        },
+        {
+          "claim_id": "wt-b10575d1c95b9e06-claim-03",
+          "story_id": "wt-b10575d1c95b9e06",
+          "claim": "Serbien - Kriegsverbrecher Mladić in Belgrad beigesetzt: In Serbien ist der bosnisch-serbische Kriegsverbrecher Mladić mit militärischen Ehren beigesetzt worden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "5a812e73995279856c36b50ac5425e13347eb5ae1fda09c54409fa94801f00b9",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T08:21:57.165Z",
+      "event_detected_at": "2026-09-07T08:21:57.165Z",
+      "event_id": "event-f068ec67184a61796780",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.198733333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 855.21265,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "fc885724fc124334eef0358e5e49b807abfef8eb639967e97308e36085f73394",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-f03755f6f6b8c3b7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "60428a376b131e366c541a3b36f839b50702797bd2d1cad113a862e6ac766cb3",
+        "first_failed_at": "2026-09-07T16:52:04.572Z",
+        "failed_at": "2026-09-07T16:52:04.572Z",
+        "retry_after": "2026-09-07T17:07:04.572Z",
+        "retry_count": 1
+      },
+      "slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
+      "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
+      "first_seen": "2026-09-07T16:32:01.000Z",
+      "last_updated": "2026-09-07T22:12:58.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-100.html",
+          "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
+          "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "917d84824c59c9d27d77c8d027e73cd2d7878a2d2cf6c1b4bb289e64bbf0dcc2",
+          "source_item_id": "8522505814dfd134c1de6ce927fdf1d00172880a51c260f1ff3d2bf36d7d858c",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T16:32:01.000Z",
+          "ingested_at": "2026-09-07T16:52:04.572Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-110.html",
+          "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
+          "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:12:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e7d497f33cee23ff5a93ff5a215f8b00ed43d06ab6c87eb03e1f45f29dc51d30",
+          "source_item_id": "4881fd87297a327785a9cb7c3ba857feb803fc21180cc896da2ee63e91fa1d2c",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:12:58.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f03755f6f6b8c3b7-claim-01",
+          "story_id": "wt-f03755f6f6b8c3b7",
+          "claim": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden: Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        },
+        {
+          "claim_id": "wt-f03755f6f6b8c3b7-claim-02",
+          "story_id": "wt-f03755f6f6b8c3b7",
+          "claim": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden: Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "e5230658e38a9b3ccaa9d12b9035dab933736b521e96b99f4d3b95aa8f763331",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T16:36:37.497Z",
+      "event_detected_at": "2026-09-07T16:36:37.497Z",
+      "event_id": "event-57eeb90bde55fb4eff90",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.198733333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 360.54045,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-1bc0c72e08e0aa76",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "19bdbda19fae6ff83ef574f0041b7b5a1382dee356aa09d14338226c193c4ce0",
+        "first_failed_at": "2026-09-07T14:37:01.659Z",
+        "failed_at": "2026-09-07T14:37:01.659Z",
+        "retry_after": "2026-09-07T14:52:01.659Z",
+        "retry_count": 1
+      },
+      "slug": "nach-der-landtagswahl-wir-werden-schutz-organisieren-wie-die-zivilgesellschaft-in-sachse-e0aa76",
+      "title": "Nach der Landtagswahl - \"Wir werden Schutz organisieren\": Wie die Zivilgesellschaft in Sachsen-Anhalt auf das Wahlergebnis reagiert",
+      "first_seen": "2026-09-07T14:33:44.000Z",
+      "last_updated": "2026-09-07T22:12:58.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/wir-werden-schutz-organisieren-wie-die-zivilgesellschaft-in-sachsen-anhalt-auf-das-wahlergebnis-reag-100.html",
+          "title": "Nach der Landtagswahl - \"Wir werden Schutz organisieren\": Wie die Zivilgesellschaft in Sachsen-Anhalt auf das Wahlergebnis reagiert",
+          "summary": "Nach dem Wahlerfolg der AfD wollen zivilgesellschaftliche Akteure in Sachsen-Anhalt aktiv bleiben - jetzt erst recht. Es gehe darum, Menschen zu unterstützen, die an den Rand der Gesellschaft gedrängt würden, teilte etwa der Flüchtlingsrat des Landes mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T14:33:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "71a29d9e5786c9266692aeab98f6b2db349ad7667dea4e172e391190ad746316",
+          "source_item_id": "f986b718100a513a55593e4acfe289c9cb17efd234aa55b06b67753426388325",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T14:33:44.000Z",
+          "ingested_at": "2026-09-07T14:37:01.659Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/wir-werden-schutz-organisieren-wie-die-zivilgesellschaft-in-sachsen-anhalt-auf-das-wahlergebnis-reag-102.html",
+          "title": "Nach der Landtagswahl - \"Wir werden Schutz organisieren\": Wie die Zivilgesellschaft in Sachsen-Anhalt auf das Wahlergebnis reagiert",
+          "summary": "Nach dem Wahlerfolg der AfD wollen zivilgesellschaftliche Akteure in Sachsen-Anhalt aktiv bleiben - jetzt erst recht. Es gehe darum, Menschen zu unterstützen, die an den Rand der Gesellschaft gedrängt würden, teilte etwa der Flüchtlingsrat des Landes mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:12:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ead2ee603ce289e07770c5b4b32ffdc9de588a984189ba75f6482727ba40c88d",
+          "source_item_id": "acadcbc4ced59d6b01d08a630fa83d5b83366029beb5e5fd9d935255a10117fb",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:12:58.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-1bc0c72e08e0aa76-claim-01",
+          "story_id": "wt-1bc0c72e08e0aa76",
+          "claim": "Nach der Landtagswahl - \"Wir werden Schutz organisieren\": Wie die Zivilgesellschaft in Sachsen-Anhalt auf das Wahlergebnis reagiert: Nach dem Wahlerfolg der AfD wollen zivilgesellschaftliche Akteure in Sachsen-Anhalt aktiv bleiben - jetzt erst recht. Es gehe darum, Menschen zu unterstützen, die an den Rand der Gesellschaft gedrängt würden, teilte etwa der Flüchtlingsrat des Landes mit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        },
+        {
+          "claim_id": "wt-1bc0c72e08e0aa76-claim-02",
+          "story_id": "wt-1bc0c72e08e0aa76",
+          "claim": "Nach der Landtagswahl - \"Wir werden Schutz organisieren\": Wie die Zivilgesellschaft in Sachsen-Anhalt auf das Wahlergebnis reagiert: Nach dem Wahlerfolg der AfD wollen zivilgesellschaftliche Akteure in Sachsen-Anhalt aktiv bleiben - jetzt erst recht. Es gehe darum, Menschen zu unterstützen, die an den Rand der Gesellschaft gedrängt würden, teilte etwa der Flüchtlingsrat des Landes mit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "9f869e318cd87f6421c931e89a1a6ac6ec76eb78b1bdd0d728c4cd56de0576a8",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T14:37:01.659Z",
+      "event_detected_at": "2026-09-07T14:37:01.659Z",
+      "event_id": "event-21ddc2565ef285a62aa1",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/wir-werden-schutz-organisieren-wie-die-zivilgesellschaft-in-sachsen-anhalt-auf-das-wahlergebnis-reag-100.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/wir-werden-schutz-organisieren-wie-die-zivilgesellschaft-in-sachsen-anhalt-auf-das-wahlergebnis-reag-102.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.198733333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 480.13775,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "01235c8fb8c192dc0bcfa2acadced45aac51fbdd95a785307c1bbdeee5f00dff",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-386ff3ee7410d1bd",
+      "slug": "hilfsbedurftigkeit-bundesweiter-tag-der-pflegenden-angehorigen-sozialverband-kritisiert--10d1bd",
+      "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
+      "first_seen": "2026-09-07T22:12:58.000Z",
+      "last_updated": "2026-09-07T22:12:58.000Z",
+      "topic": [
+        "Soziales",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesweiter-tag-der-pflegenden-angehoerigen-sozialverband-kritisiert-mangelnde-unterstuetzung-100.html",
+          "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
+          "summary": "Der Sozialverband Deutschland fordert anlässlich des bundesweiten Tags der pflegenden Angehörigen mehr Unterstützung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:12:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "63fc7860884b2c95b7c93c733514d2898d4d5d5a346c2490b633eed4487e4618",
+          "source_item_id": "5799aa0514c706ef49e4b364556d437cbc4104c6f91dd46f2087c5112134c602",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:12:58.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-386ff3ee7410d1bd-claim-01",
+          "story_id": "wt-386ff3ee7410d1bd",
+          "claim": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung: Der Sozialverband Deutschland fordert anlässlich des bundesweiten Tags der pflegenden Angehörigen mehr Unterstützung.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "3e30d9e46275875203c411f41bb0210523277005cee662f59fd635c3b612eb95",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
+      "event_detected_at": "2026-09-07T22:37:09.924Z",
+      "event_id": "event-2919e8d889b258235eda",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.198733333333333,
+        "detection_delay_minutes": 24.198733333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "b7a5b4e9995342ed91c73e1ba31f4a6e0a54cbfc95ccd74526418a057a5381f9",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-e04a8fbcc22eac18",
+      "slug": "bildung-pisa-2025-ergebnisse-werden-in-berlin-vorgestellt-2eac18",
+      "title": "Bildung - Pisa 2025: Ergebnisse werden in Berlin vorgestellt",
+      "first_seen": "2026-09-07T22:12:58.000Z",
+      "last_updated": "2026-09-07T22:12:58.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/pisa-2025-ergebnisse-werden-in-berlin-vorgestellt-104.html",
+          "title": "Bildung - Pisa 2025: Ergebnisse werden in Berlin vorgestellt",
+          "summary": "25 Jahre nach der ersten Pisa-Studie werden heute in Berlin die Ergebnisse der jüngsten Auflage des internationalen Bildungsvergleichs vorgestellt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:12:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "48fc22440c77446be7f145cf87fe2506b33c596fe5d90fed66a3e34450920aed",
+          "source_item_id": "95e8a163635afbd40a2d3eb10dfdde966e6de19c6b078b18752a33365693190e",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:12:58.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e04a8fbcc22eac18-claim-01",
+          "story_id": "wt-e04a8fbcc22eac18",
+          "claim": "Bildung - Pisa 2025: Ergebnisse werden in Berlin vorgestellt: 25 Jahre nach der ersten Pisa-Studie werden heute in Berlin die Ergebnisse der jüngsten Auflage des internationalen Bildungsvergleichs vorgestellt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "5d7b4510a02309486ae5146b7c79796f5c88fc264b862bca719825eebf5e1c65",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
+      "event_detected_at": "2026-09-07T22:37:09.924Z",
+      "event_id": "event-18fe360f6a8dcb4f6d64",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.198733333333333,
+        "detection_delay_minutes": 24.198733333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "217dc9bf32f32952cf6c9351e2bdaca4eeec5c43ff6599ac8eec6da3d2fee0a9",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-05ffa4fef8bee914",
+      "slug": "bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914",
+      "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
+      "first_seen": "2026-09-07T22:12:58.000Z",
+      "last_updated": "2026-09-07T22:12:58.000Z",
+      "topic": [
+        "Europa",
+        "Finanzen",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
+          "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
+          "summary": "Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:12:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "277c2799773fd031dca7f8e87f9069f0aa9a4a4b8dab9b2cbb8dad5a8618ee1e",
+          "source_item_id": "a32ec3593dcd41922490c53e515701ec08c1758add747bc9b2ed42111f698da6",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:12:58.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-05ffa4fef8bee914-claim-01",
+          "story_id": "wt-05ffa4fef8bee914",
+          "claim": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant: Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "7ba8233478323fd63c3f37b4bc7bc4629f202119784c99869b8475baa65823cf",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
+      "event_detected_at": "2026-09-07T22:37:09.924Z",
+      "event_id": "event-dd4cc5404c117c50633c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Finanzen",
+          "Demokratie"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.198733333333333,
+        "detection_delay_minutes": 24.198733333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "7fdc57b79a20b4022e21bb401a183b4803218e2d209c424890c5091dda8577d3",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-811d4815cfd8d70d",
       "slug": "graustein-weitere-sprengvorrichtung-nahe-stromtrassen-gefunden-d8d70d",
@@ -2479,6 +3900,156 @@
       }
     },
     {
+      "story_id": "wt-a4cdfee3b5ff57be",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d2520f91c60dd84205dd6057100ba7cc557d0ca3bf4405495025b6b756555016",
+        "first_failed_at": "2026-09-07T22:37:09.924Z",
+        "failed_at": "2026-09-07T22:37:09.924Z",
+        "retry_after": "2026-09-07T22:52:09.924Z",
+        "retry_count": 1
+      },
+      "slug": "ukraine-generalstaatsanwalt-ruslan-krawtschenko-kundigt-rucktritt-an-ff57be",
+      "title": "Ukraine: Generalstaatsanwalt Ruslan Krawtschenko kündigt Rücktritt an",
+      "first_seen": "2026-09-07T22:07:00.000Z",
+      "last_updated": "2026-09-07T22:07:00.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/ukraine-generalstaatsanwalt-ruslan-krawtschenko-kuendigt-ruecktritt-an-a-1be1311d-f5f9-4ece-ad12-f7a52761a9f6",
+          "title": "Ukraine: Generalstaatsanwalt Ruslan Krawtschenko kündigt Rücktritt an",
+          "summary": "Ruslan Krawtschenko zieht Konsequenzen aus den Vorwürfen gegen seine Behörde und kündigt seinen Rücktritt an. Er spricht von einer politischen Entscheidung – wenige Stunden zuvor hatte er den Schritt noch abgelehnt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:07:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "068a16e0d26002364287a9956f4c4eacb6efcf4f21aa9b2d410c5a4753d4f57f",
+          "source_item_id": "80940d679ccd9fd3b33b5e048eaa24ed2304da7c1bb9938d54eaededad846275",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:07:00.000Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a4cdfee3b5ff57be-claim-01",
+          "story_id": "wt-a4cdfee3b5ff57be",
+          "claim": "Ukraine: Generalstaatsanwalt Ruslan Krawtschenko kündigt Rücktritt an: Ruslan Krawtschenko zieht Konsequenzen aus den Vorwürfen gegen seine Behörde und kündigt seinen Rücktritt an. Er spricht von einer politischen Entscheidung – wenige Stunden zuvor hatte er den Schritt noch abgelehnt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-07T22:37:09.924Z"
+        }
+      ],
+      "content_hash": "37e3c6ba9c637384fea2e64ff2045a468a4ea92b6059acba991294695718732a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-07T22:52:09.924Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-07T22:37:09.924Z",
+      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
+      "event_detected_at": "2026-09-07T22:37:09.924Z",
+      "event_id": "event-8d0a6bb62c92bb0d0f01",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "substantive_commitment"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 30.1654,
+        "detection_delay_minutes": 30.1654,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T22:37:09.924Z",
+        "fingerprint": "1599b3b09993ef7f0ada439a5affd62bc410b1ec7caaccdc3f83d7d060f00db5",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-07T22:37:09.924Z",
+      "rejection": {
+        "at": "2026-09-07T22:37:09.924Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
       "story_id": "wt-d48422d2b2076e49",
       "slug": "nahost-tote-bei-neuen-israelischen-angriffen-im-sudlibanon-076e49",
       "title": "Nahost - Tote bei neuen israelischen Angriffen im Südlibanon",
@@ -4216,160 +5787,6 @@
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_NEWS_VALUE_CONTEXT_ONLY"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-c00a3ccf1d9c40e7",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "16267f1f0010be0d20f2cc9f970aadc2213927eea636976bcec369a0f8b55d2b",
-        "first_failed_at": "2026-09-07T21:52:05.137Z",
-        "failed_at": "2026-09-07T21:52:05.137Z",
-        "retry_after": "2026-09-07T22:07:05.137Z",
-        "retry_count": 1
-      },
-      "slug": "nach-der-landtagswahl-in-sachsen-anhalt-bas-kritisiert-arbeitnehmerfeindliche-rhetorik-a-9c40e7",
-      "title": "Landtagswahl Sachsen-Anhalt - Bas kritisiert arbeitnehmerfeindliche Rhetorik als \"schädlich\", erwähnt Bundeskanzler Merz aber nicht namentlich",
-      "first_seen": "2026-09-07T16:32:01.000Z",
-      "last_updated": "2026-09-07T21:33:15.000Z",
-      "topic": [
-        "Arbeit",
-        "Soziales",
-        "Gesundheit"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/bas-kritisiert-arbeitnehmerfeindliche-rhetorik-als-schaedlich-erwaehnt-bundeskanzler-merz-aber-nicht-100.html",
-          "title": "Landtagswahl Sachsen-Anhalt - Bas kritisiert arbeitnehmerfeindliche Rhetorik als \"schädlich\", erwähnt Bundeskanzler Merz aber nicht namentlich",
-          "summary": "Die SPD-Vorsitzende Bas hat nach der Landtagswahl in Sachsen-Anhalt inhaltliche Konsequenzen für die Bundespolitik angekündigt. Bas sagte in Berlin, die Menschen hätten offene Fragen bei Gesundheit, Rente und Pflege.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T21:33:15.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ae28e7c339366dd4d2ca499e23b40b1e02f8736fdce4c7921cde405e1f2d5d10",
-          "source_item_id": "50260980a8a01cc156c6e0557e111f1c3f42160b10377a72c85bf67056b94172",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T21:33:15.000Z",
-          "ingested_at": "2026-09-07T21:52:05.137Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-c00a3ccf1d9c40e7-claim-01",
-          "story_id": "wt-c00a3ccf1d9c40e7",
-          "claim": "Landtagswahl Sachsen-Anhalt - Bas kritisiert arbeitnehmerfeindliche Rhetorik als \"schädlich\", erwähnt Bundeskanzler Merz aber nicht namentlich: Die SPD-Vorsitzende Bas hat nach der Landtagswahl in Sachsen-Anhalt inhaltliche Konsequenzen für die Bundespolitik angekündigt. Bas sagte in Berlin, die Menschen hätten offene Fragen bei Gesundheit, Rente und Pflege.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T21:52:05.137Z"
-        }
-      ],
-      "content_hash": "100e9fe1a65017353241f3877672dc411a568d787e55a80970b07e6d27f1b0a4",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-07T22:07:05.137Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T21:52:05.137Z",
-      "event_first_seen_at": "2026-09-07T16:36:37.497Z",
-      "event_detected_at": "2026-09-07T16:36:37.497Z",
-      "event_id": "event-816bda5295741011ec52",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Arbeit",
-          "Soziales",
-          "Gesundheit"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 18.835616666666667,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 315.46066666666667,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T21:52:05.137Z",
-        "fingerprint": "97cc718580f5d1281e1d7545b384c771ace880dbc04b880deb3919c63d517301",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T21:52:05.137Z",
-      "rejection": {
-        "at": "2026-09-07T21:52:05.137Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -6885,6 +8302,94 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-07T20:42:53.982Z",
         "status": "generated"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-07T22:37:09.924Z",
+        "content_hash": "9e2c170a787603ac0cbe5a209e34cf60ad0cc3c245f2d41de110c7c93f51f8b5",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/experten-gehen-von-weiter-steigenden-oelpreisen-aus-102.html",
+            "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
+            "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-07T20:26:58.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9238502ea46d35529d0a5e73bdb0fae0d892bf543b1b54ad4a8177cee4548992",
+            "source_item_id": "835d22abff8f046b00b50062e6dc3edca8a2075a3aadd200b4b29516a13674a2",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-07T20:26:58.000Z",
+            "ingested_at": "2026-09-07T20:36:52.379Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/experten-gehen-von-weiter-steigenden-oelpreisen-aus-108.html",
+            "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
+            "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-07T22:12:58.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "e6ad324d4c8790a876a32174bc9ff69a46054d382dcd1c618773387e25bc1c34",
+            "source_item_id": "acdf157a99b23ebd855652e2c7e2e262b8b84df6cc409ab90c154a6b2b75bb02",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-07T22:12:58.000Z",
+            "ingested_at": "2026-09-07T22:37:09.924Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-07T22:37:09.924Z",
+          "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -7729,156 +9234,6 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-07T20:42:45.859Z",
         "status": "generated"
-      }
-    },
-    {
-      "story_id": "wt-46e6bd810843b8fe",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "c704132253d6db9127ac7004216ccdba02bfa37e834d176e2797c24aa94a46a3",
-        "first_failed_at": "2026-09-07T20:36:52.379Z",
-        "failed_at": "2026-09-07T20:36:52.379Z",
-        "retry_after": "2026-09-07T20:51:52.379Z",
-        "retry_count": 1
-      },
-      "slug": "ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe",
-      "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
-      "first_seen": "2026-09-07T20:26:58.000Z",
-      "last_updated": "2026-09-07T20:26:58.000Z",
-      "topic": [
-        "Energie",
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-100.html",
-          "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
-          "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T20:26:58.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "88146a54259d618f27d2659242c4279d8900fa364f9560219470bcd6449dd850",
-          "source_item_id": "80cb140d5a33a85570a70e86955af1cf65dc0b9f0b84ea80d61288becc30c1a1",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T20:26:58.000Z",
-          "ingested_at": "2026-09-07T20:36:52.379Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-46e6bd810843b8fe-claim-01",
-          "story_id": "wt-46e6bd810843b8fe",
-          "claim": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen: Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T20:36:52.379Z"
-        }
-      ],
-      "content_hash": "bc6caf123dd6cb314993187f92de3d4066dc259940f3d584533a904a16ee846f",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-07T20:51:52.379Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T20:36:52.379Z",
-      "event_first_seen_at": "2026-09-07T20:36:52.379Z",
-      "event_detected_at": "2026-09-07T20:36:52.379Z",
-      "event_id": "event-5e80ce591f52469f8da2",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie",
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 9.906316666666667,
-        "detection_delay_minutes": 9.906316666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T20:36:52.379Z",
-        "fingerprint": "5a32e44cd35ec2d3e6f94fa404bbdc4757daef6011f8de16958e291c4733712f",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T20:36:52.379Z",
-      "rejection": {
-        "at": "2026-09-07T20:36:52.379Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
       }
     },
     {
@@ -18205,7 +19560,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T10:12:00.000Z",
-            "ingested_at": "2026-09-07T22:07:11.915Z",
+            "ingested_at": "2026-09-07T22:37:09.924Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18226,7 +19581,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -19310,7 +20665,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T17:30:38.000Z",
-            "ingested_at": "2026-09-07T22:07:11.915Z",
+            "ingested_at": "2026-09-07T22:37:09.924Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19364,7 +20719,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -20193,7 +21548,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:22:40.000Z",
-            "ingested_at": "2026-09-07T22:07:11.915Z",
+            "ingested_at": "2026-09-07T22:37:09.924Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20214,7 +21569,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -20635,7 +21990,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-07T17:08:13.000Z",
-          "ingested_at": "2026-09-07T22:07:11.915Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -20664,7 +22019,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T22:22:04.144Z"
+          "checked_at": "2026-09-07T22:37:09.924Z"
         }
       ],
       "content_hash": "cb6fb8d76924cede5fcffb29dbffe08141d840a1fffd6c807fa9b47617864fc7",
@@ -20677,7 +22032,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T22:22:04.144Z",
+      "updated_at": "2026-09-07T22:37:09.924Z",
       "event_first_seen_at": "2026-09-07T17:36:34.946Z",
       "event_detected_at": "2026-09-07T17:36:34.946Z",
       "event_id": "event-fa64c6e4e0c5b0881da4",
@@ -20712,20 +22067,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 313.8524,
+        "source_age_minutes": 328.94873333333334,
         "detection_delay_minutes": 28.365766666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 285.4866333333333,
+        "queue_age_minutes": 300.58296666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 35,
+        "news_freshness_score": 31,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T22:22:04.144Z",
+        "checked_at": "2026-09-07T22:37:09.924Z",
         "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
         "issue_codes": [],
         "warning_codes": []
@@ -21230,355 +22585,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-b10575d1c95b9e06",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "e3204d747aeceec11f7d58259e801100209b7a938fcfe2ad8384959ca98678fb",
-        "first_failed_at": "2026-09-07T16:36:37.497Z",
-        "failed_at": "2026-09-07T16:36:37.497Z",
-        "retry_after": "2026-09-07T16:51:37.497Z",
-        "retry_count": 1
-      },
-      "slug": "serbien-feierliche-beisetzung-von-kriegsverbrecher-mladic-in-belgrad-hat-begonnen-5b9e06",
-      "title": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen",
-      "first_seen": "2026-09-07T08:19:11.000Z",
-      "last_updated": "2026-09-07T16:32:01.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/feierliche-beisetzung-von-kriegsverbrecher-mladi-in-belgrad-hat-begonnen-102.html",
-          "title": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen",
-          "summary": "In Serbien hat die feierliche Beisetzung des bosnisch-serbischen Kriegsverbrechers Mladić begonnen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T16:32:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "34c39d388b330a7554e4c17dcaf2e5976e97882dc5ca0d66abfbc8dd5e3c41d2",
-          "source_item_id": "d0a0f74c43632919c1612eca9437cb7455322c867b29b83e896af6dcec824b3f",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T16:32:01.000Z",
-          "ingested_at": "2026-09-07T16:36:37.497Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-100.html",
-          "title": "Serbien - Kriegsverbrecher Mladić in Belgrad beigesetzt",
-          "summary": "In Serbien ist der bosnisch-serbische Kriegsverbrecher Mladić mit militärischen Ehren beigesetzt worden.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T16:32:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "d69c70d5ad19fb47c54acf2822331d7a9fd215e6a522a803ad689026b2150685",
-          "source_item_id": "090e71d29241a3c81bc1c937db0d250f82638c4f8f2d945700e7f8c98caf6639",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T16:32:01.000Z",
-          "ingested_at": "2026-09-07T16:36:37.497Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-b10575d1c95b9e06-claim-01",
-          "story_id": "wt-b10575d1c95b9e06",
-          "claim": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen: In Serbien hat die feierliche Beisetzung des bosnisch-serbischen Kriegsverbrechers Mladić begonnen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T16:36:37.497Z"
-        },
-        {
-          "claim_id": "wt-b10575d1c95b9e06-claim-02",
-          "story_id": "wt-b10575d1c95b9e06",
-          "claim": "Serbien - Kriegsverbrecher Mladić in Belgrad beigesetzt: In Serbien ist der bosnisch-serbische Kriegsverbrecher Mladić mit militärischen Ehren beigesetzt worden.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T16:36:37.497Z"
-        }
-      ],
-      "content_hash": "f4780d93e9edaa896834d3fd6d0a7620caa1fdd3b1444945ae2eaf62ee638f00",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-07T16:51:37.497Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T16:36:37.497Z",
-      "event_first_seen_at": "2026-09-07T08:21:57.165Z",
-      "event_detected_at": "2026-09-07T08:21:57.165Z",
-      "event_id": "event-f068ec67184a61796780",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 42,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 4.6082833333333335,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 494.6722,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T16:36:37.497Z",
-        "fingerprint": "a5320e198ac04ce7db076f320e02dd18ace28d97ed51d3985c3493fa9c735a0b",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T16:36:37.497Z",
-      "rejection": {
-        "at": "2026-09-07T16:36:37.497Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-f03755f6f6b8c3b7",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "60428a376b131e366c541a3b36f839b50702797bd2d1cad113a862e6ac766cb3",
-        "first_failed_at": "2026-09-07T16:52:04.572Z",
-        "failed_at": "2026-09-07T16:52:04.572Z",
-        "retry_after": "2026-09-07T17:07:04.572Z",
-        "retry_count": 1
-      },
-      "slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
-      "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
-      "first_seen": "2026-09-07T16:32:01.000Z",
-      "last_updated": "2026-09-07T16:32:01.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-100.html",
-          "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
-          "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T16:32:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "917d84824c59c9d27d77c8d027e73cd2d7878a2d2cf6c1b4bb289e64bbf0dcc2",
-          "source_item_id": "8522505814dfd134c1de6ce927fdf1d00172880a51c260f1ff3d2bf36d7d858c",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T16:32:01.000Z",
-          "ingested_at": "2026-09-07T16:52:04.572Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-f03755f6f6b8c3b7-claim-01",
-          "story_id": "wt-f03755f6f6b8c3b7",
-          "claim": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden: Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T16:52:04.572Z"
-        }
-      ],
-      "content_hash": "bde5d6fb394e83b118b49e72acda59c720e3784b40346aa42eb18010f03e974f",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-07T17:07:04.572Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T16:52:04.572Z",
-      "event_first_seen_at": "2026-09-07T16:36:37.497Z",
-      "event_detected_at": "2026-09-07T16:36:37.497Z",
-      "event_id": "event-57eeb90bde55fb4eff90",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 20.059533333333334,
-        "detection_delay_minutes": 4.6082833333333335,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 15.45125,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T16:52:04.572Z",
-        "fingerprint": "966e27638e1c2643f51ce6c77f833dd8f87d4530724303c355a5de6def62c802",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T16:52:04.572Z",
-      "rejection": {
-        "at": "2026-09-07T16:52:04.572Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -25206,7 +26212,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -31260,7 +32266,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -39989,7 +40995,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -41219,7 +42225,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T14:10:28.000Z",
-            "ingested_at": "2026-09-07T22:07:11.915Z",
+            "ingested_at": "2026-09-07T22:37:09.924Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41240,7 +42246,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "7a2c72da8e35ded18fff805a544609c7dc335a6f3cb4475cdbf05265d0956a32",
           "issue_codes": [],
           "warning_codes": []
@@ -41398,166 +42404,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-1bc0c72e08e0aa76",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "19bdbda19fae6ff83ef574f0041b7b5a1382dee356aa09d14338226c193c4ce0",
-        "first_failed_at": "2026-09-07T14:37:01.659Z",
-        "failed_at": "2026-09-07T14:37:01.659Z",
-        "retry_after": "2026-09-07T14:52:01.659Z",
-        "retry_count": 1
-      },
-      "slug": "nach-der-landtagswahl-wir-werden-schutz-organisieren-wie-die-zivilgesellschaft-in-sachse-e0aa76",
-      "title": "Nach der Landtagswahl - \"Wir werden Schutz organisieren\": Wie die Zivilgesellschaft in Sachsen-Anhalt auf das Wahlergebnis reagiert",
-      "first_seen": "2026-09-07T14:33:44.000Z",
-      "last_updated": "2026-09-07T14:33:44.000Z",
-      "topic": [
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/wir-werden-schutz-organisieren-wie-die-zivilgesellschaft-in-sachsen-anhalt-auf-das-wahlergebnis-reag-100.html",
-          "title": "Nach der Landtagswahl - \"Wir werden Schutz organisieren\": Wie die Zivilgesellschaft in Sachsen-Anhalt auf das Wahlergebnis reagiert",
-          "summary": "Nach dem Wahlerfolg der AfD wollen zivilgesellschaftliche Akteure in Sachsen-Anhalt aktiv bleiben - jetzt erst recht. Es gehe darum, Menschen zu unterstützen, die an den Rand der Gesellschaft gedrängt würden, teilte etwa der Flüchtlingsrat des Landes mit.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T14:33:44.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "71a29d9e5786c9266692aeab98f6b2db349ad7667dea4e172e391190ad746316",
-          "source_item_id": "f986b718100a513a55593e4acfe289c9cb17efd234aa55b06b67753426388325",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T14:33:44.000Z",
-          "ingested_at": "2026-09-07T14:37:01.659Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-1bc0c72e08e0aa76-claim-01",
-          "story_id": "wt-1bc0c72e08e0aa76",
-          "claim": "Nach der Landtagswahl - \"Wir werden Schutz organisieren\": Wie die Zivilgesellschaft in Sachsen-Anhalt auf das Wahlergebnis reagiert: Nach dem Wahlerfolg der AfD wollen zivilgesellschaftliche Akteure in Sachsen-Anhalt aktiv bleiben - jetzt erst recht. Es gehe darum, Menschen zu unterstützen, die an den Rand der Gesellschaft gedrängt würden, teilte etwa der Flüchtlingsrat des Landes mit.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T14:37:01.659Z"
-        }
-      ],
-      "content_hash": "1137fbe330b4a08c99f42beab8be70b7ed832e6d901a19cdc2ae04ca37a54485",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-07T14:52:01.659Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T14:37:01.659Z",
-      "event_first_seen_at": "2026-09-07T14:37:01.659Z",
-      "event_detected_at": "2026-09-07T14:37:01.659Z",
-      "event_id": "event-21ddc2565ef285a62aa1",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": true,
-          "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/wir-werden-schutz-organisieren-wie-die-zivilgesellschaft-in-sachsen-anhalt-auf-das-wahlergebnis-reag-100.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 3.2943166666666666,
-        "detection_delay_minutes": 3.2943166666666666,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T14:37:01.659Z",
-        "fingerprint": "568fe568df6770f584f5ad1478b27421a79f0c1c0b626299d2c122cd1a817dc3",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T14:37:01.659Z",
-      "rejection": {
-        "at": "2026-09-07T14:37:01.659Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -42853,7 +43699,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -45971,7 +46817,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -46875,7 +47721,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "8dd760ef559219b46c9fb7e39c384e8446b3e78d52b201582d87837a1fc49adc",
           "issue_codes": [],
           "warning_codes": []
@@ -50303,7 +51149,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T22:22:04.144Z"
+          "checked_at": "2026-09-07T22:37:09.924Z"
         }
       ],
       "content_hash": "e2b53646c10c2521310b20fe0011de8e5c7359652a6c6903ef30a27e9c193a21",
@@ -50316,7 +51162,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T22:22:04.144Z",
+      "updated_at": "2026-09-07T22:37:09.924Z",
       "event_first_seen_at": "2026-09-07T12:14:01.175Z",
       "event_detected_at": "2026-09-07T12:14:01.175Z",
       "event_id": "event-57c4ec3d851dc20967d7",
@@ -50349,11 +51195,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 619.8190666666667,
+        "source_age_minutes": 634.9154,
         "detection_delay_minutes": 11.769583333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 608.0494833333333,
+        "queue_age_minutes": 623.1458166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -50362,7 +51208,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T22:22:04.144Z",
+        "checked_at": "2026-09-07T22:37:09.924Z",
         "fingerprint": "0df47fc766242b05025666190437e9176d7b6cc1afddc55b1248e4ac905c7d8c",
         "issue_codes": [],
         "warning_codes": []
@@ -55083,22 +55929,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T22:22:04.144Z"
+          "checked_at": "2026-09-07T22:37:09.924Z"
         }
       ],
       "content_hash": "5d03dac823e6f535d794ef09278d7bba89d3229b0e31f870085c0ee60e4a67aa",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-07T22:37:04.144Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T22:22:04.144Z",
+      "updated_at": "2026-09-07T22:37:09.924Z",
       "event_first_seen_at": "2026-09-07T10:21:55.886Z",
       "event_detected_at": "2026-09-07T10:21:55.886Z",
       "event_id": "event-47b1ec6425302b33bb46",
@@ -55131,11 +55975,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 726.0690666666667,
+        "source_age_minutes": 741.1654,
         "detection_delay_minutes": 5.931433333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 720.1376333333334,
+        "queue_age_minutes": 735.2339666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -55144,7 +55988,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T22:22:04.144Z",
+        "checked_at": "2026-09-07T22:37:09.924Z",
         "fingerprint": "184a84e45ae8d0dcb754b6be3f7b686f0c1b32d1498cae4c1c9ddeebc4e5427f",
         "issue_codes": [],
         "warning_codes": []
@@ -58079,7 +58923,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-07T22:07:11.915Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -58140,7 +58984,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T22:22:04.144Z"
+          "checked_at": "2026-09-07T22:37:09.924Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -58160,7 +59004,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T22:22:04.144Z"
+          "checked_at": "2026-09-07T22:37:09.924Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -58176,7 +59020,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-07T22:22:04.144Z",
+      "updated_at": "2026-09-07T22:37:09.924Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -58216,7 +59060,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 795.1796833333333,
+        "queue_age_minutes": 810.2760166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -58225,7 +59069,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-07T22:22:04.144Z",
+        "checked_at": "2026-09-07T22:37:09.924Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -59961,7 +60805,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T22:22:04.144Z"
+          "checked_at": "2026-09-07T22:37:09.924Z"
         }
       ],
       "content_hash": "a2eaf34bc426761353b6d46928a687f33e7111b8e288d916a65e09a74920f1aa",
@@ -59974,7 +60818,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T22:22:04.144Z",
+      "updated_at": "2026-09-07T22:37:09.924Z",
       "event_first_seen_at": "2026-09-07T07:51:52.790Z",
       "event_detected_at": "2026-09-07T07:51:52.790Z",
       "event_id": "event-a7f0323e3aee22be4dcf",
@@ -60009,11 +60853,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 892.0690666666667,
+        "source_age_minutes": 907.1654,
         "detection_delay_minutes": 21.879833333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 870.1892333333333,
+        "queue_age_minutes": 885.2855666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -60022,7 +60866,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T22:22:04.144Z",
+        "checked_at": "2026-09-07T22:37:09.924Z",
         "fingerprint": "6a4484b475438d318b8864067203a077aa58e581a98fdb5686726b6a4980ad12",
         "issue_codes": [],
         "warning_codes": []
@@ -60989,7 +61833,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-07T06:37:45.000Z",
-          "ingested_at": "2026-09-07T21:52:05.137Z",
+          "ingested_at": "2026-09-07T22:37:09.924Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -61018,7 +61862,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T22:22:04.144Z"
+          "checked_at": "2026-09-07T22:37:09.924Z"
         }
       ],
       "content_hash": "080e59685d43ed061f6ac9c7360cdf232c56a9bf06157d35ae859b25df17355b",
@@ -61031,7 +61875,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T22:22:04.144Z",
+      "updated_at": "2026-09-07T22:37:09.924Z",
       "event_first_seen_at": "2026-09-07T07:06:45.331Z",
       "event_detected_at": "2026-09-07T07:06:45.331Z",
       "event_id": "event-efa3615b2fefcc402c6f",
@@ -61066,11 +61910,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 944.3190666666667,
+        "source_age_minutes": 959.4154,
         "detection_delay_minutes": 29.005516666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 915.31355,
+        "queue_age_minutes": 930.4098833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -61079,7 +61923,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T22:22:04.144Z",
+        "checked_at": "2026-09-07T22:37:09.924Z",
         "fingerprint": "3e38d1e2c5b8d8f9d75feaa46feccaa5ea83ba1f3d4ecba152015ab5e9978732",
         "issue_codes": [],
         "warning_codes": []
@@ -79072,7 +79916,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -79784,7 +80628,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-07T22:07:11.915Z",
+            "ingested_at": "2026-09-07T22:37:09.924Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -79805,7 +80649,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -80417,7 +81261,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -83833,7 +84677,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T14:10:14.000Z",
-            "ingested_at": "2026-09-07T22:07:11.915Z",
+            "ingested_at": "2026-09-07T22:37:09.924Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -83843,12 +84687,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-07T22:37:04.144Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -83856,7 +84698,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "3a48062f9f17240bc2032436aad30d6f1ece4f3bfb6aa68a85a440c21ebcb6c1",
           "issue_codes": [],
           "warning_codes": []
@@ -88238,7 +89080,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -89490,7 +90332,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T11:00:00.000Z",
-            "ingested_at": "2026-09-07T22:07:11.915Z",
+            "ingested_at": "2026-09-07T22:37:09.924Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -89500,13 +90342,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-07T22:37:04.144Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -89514,7 +90353,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "b0f20c8b2973dab6e6df95a22820e118840999e090b56e20fffa0f93f689c98d",
           "issue_codes": [],
           "warning_codes": []
@@ -95163,7 +96002,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T22:22:04.144Z"
+          "checked_at": "2026-09-07T22:37:09.924Z"
         }
       ],
       "content_hash": "90e1dd6b318ec1347f60aa4bc6571a2512523e2a40fc71e471b9b531dbd64211",
@@ -95176,7 +96015,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T22:22:04.144Z",
+      "updated_at": "2026-09-07T22:37:09.924Z",
       "event_first_seen_at": "2026-09-07T05:36:33.012Z",
       "event_detected_at": "2026-09-07T05:36:33.012Z",
       "event_id": "event-d2d632120c162703d492",
@@ -95212,11 +96051,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1806.2024,
+        "source_age_minutes": 1821.2987333333333,
         "detection_delay_minutes": 800.6835333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1005.5188666666667,
+        "queue_age_minutes": 1020.6152,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -95225,7 +96064,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T22:22:04.144Z",
+        "checked_at": "2026-09-07T22:37:09.924Z",
         "fingerprint": "81f2ebbe391a395f56e64817873daa787b10475636e7b27a4033d66136056472",
         "issue_codes": [],
         "warning_codes": []
@@ -105489,7 +106328,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "249f18fd4be1f1cc4705514dcda46b786b53e92f94f2d94531e96c099cb8580d",
           "issue_codes": [],
           "warning_codes": []
@@ -109393,12 +110232,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-07T22:37:04.144Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -109406,7 +110243,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -117048,7 +117885,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -162297,7 +163134,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-07T22:22:04.144Z",
+          "checked_at": "2026-09-07T22:37:09.924Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
