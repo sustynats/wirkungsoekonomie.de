@@ -12,16 +12,13 @@
     "publication-flow": {
       "firstSeen": "2026-09-07T00:13:34.048Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-07T00:50:46.982Z",
-      "active": true
-    },
-    "sources": {
-      "firstSeen": "2026-09-07T00:50:46.982Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "24e9eb6063efb11f02052953",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-07T01:05:31.483Z"
+    }
+  ],
   "dailyDate": "2026-09-06"
 }
