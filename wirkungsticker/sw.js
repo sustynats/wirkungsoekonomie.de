@@ -80,7 +80,16 @@ self.addEventListener("notificationclick", (event) => {
 self.addEventListener("fetch", (event) => {
   const request = event.request;
   const url = new URL(request.url);
-  if (request.method !== "GET" || url.origin !== self.location.origin || !url.pathname.startsWith("/wirkungsticker/")) return;
+  if (request.method !== "GET" || url.origin !== self.location.origin) return;
+  // Controlled article pages also request essential assets outside the worker
+  // URL scope. Do not leave their CSS/scripts hanging after HTML fell back.
+  const readerAsset = url.pathname.startsWith("/assets/")
+    && (APP_SHELL.includes(url.pathname) || ["style", "script", "font"].includes(request.destination));
+  if (readerAsset) {
+    event.respondWith(networkFirst(request, event, { asset: true }));
+    return;
+  }
+  if (!url.pathname.startsWith("/wirkungsticker/")) return;
   if (url.pathname === "/wirkungsticker/feed.json") {
     // A freshness probe must never mistake the offline cache for a live reply.
     if (url.searchParams.has("check")) {
@@ -108,18 +117,21 @@ function unavailableNavigation() {
   return new Response(`<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Wirkungsticker – Verbindung prüfen</title><body><main><h1>Die Seite konnte gerade nicht geladen werden.</h1><p>Die Verbindung ist unterbrochen oder dauert zu lange. Es liegt noch keine gespeicherte Fassung dieser Seite vor.</p><p><a href="">Diese Seite erneut laden</a> · <a href="/wirkungsticker/">Zum Wirkungsticker</a></p></main></body></html>`, { status: 503, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
 }
 
-async function networkFirst(request, event) {
+async function networkFirst(request, event, { asset = false } = {}) {
   // Fetch immediately. Storage access and cloning/writing the complete body
   // must never delay a usable network response or discard it on quota errors.
   const cache = boundedCache(() => caches.open(CACHE_NAME));
   const cached = boundedCache(async () => (await cache)?.match(request, { ignoreSearch: true }));
+  // Exact revisioned assets may render immediately. A different cached query
+  // version is only a fallback after the live request stalls or fails.
+  const exactCached = asset ? boundedCache(async () => (await cache)?.match(request)) : null;
   const controller = new AbortController();
   let deadlineTimer, graceTimer;
   const deadline = new Promise(resolve => {
     deadlineTimer = setTimeout(() => { controller.abort(); resolve(null); }, NAVIGATION_NETWORK_TIMEOUT_MS);
   });
   const network = Promise.race([
-    Promise.resolve().then(() => fetch(request, { cache: "no-store", signal: controller.signal })).catch(() => null), deadline,
+    Promise.resolve().then(() => fetch(request, { cache: asset ? "default" : "no-store", signal: controller.signal })).catch(() => null), deadline,
   ]).then(response => { clearTimeout(deadlineTimer); return response; });
   const store = network.then(response => {
     if (!response?.ok) return;
@@ -130,6 +142,7 @@ async function networkFirst(request, event) {
   event?.waitUntil(store);
   const liveOrFallback = network.then(async response => {
     if (response && response.status < 500) return response;
+    if (asset) return (await cached) || response || new Response("", { status: 504, statusText: "Asset unavailable" });
     return (await cached) || response
       || (await boundedCache(async () => (await cache)?.match("/wirkungsticker/offline.html")))
       || unavailableNavigation();
@@ -137,7 +150,9 @@ async function networkFirst(request, event) {
   const cachedAfterGrace = new Promise(resolve => {
     graceTimer = setTimeout(() => { void cached.then(response => { if (response) resolve(response); }); }, NAVIGATION_CACHE_GRACE_MS);
   });
-  const response = await Promise.race([liveOrFallback, cachedAfterGrace]);
+  const candidates = [liveOrFallback, cachedAfterGrace];
+  if (exactCached) candidates.push(exactCached.then(response => response || new Promise(() => {})));
+  const response = await Promise.race(candidates);
   clearTimeout(graceTimer);
   return response;
 }

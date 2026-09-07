@@ -18,8 +18,12 @@ Korrektur: Netzwerkantwort sofort an den Browser, Speichern separat mit `waitUnt
 
 Der Cache-Namensraum bleibt erhalten; vorhandene gespeicherte Artikel und Push-Zustand werden nicht gelöscht. Kein Backend, Budget, Abo oder Tarif geändert. Der konkrete gemeldete Gerätefall bleibt bis zu weiteren Angaben unbestätigt.
 
+Ein Browser-Belastungstest mit pausiertem eigenem localhost-Server machte zusätzlich eine Lücke im Asset-Routing sichtbar: HTML kam nach 2,51 Sekunden aus dem Cache, die nicht abgefangene `news.css` hielt die Seite bis 27,6 Sekunden auf. Wesentliche gleich-originige CSS-/Script-/Schriftdateien und die vorhandenen App-Shell-Assets werden nun ebenfalls bedient. Exakt passende Asset-Versionen dürfen sofort aus dem Cache kommen; eine abweichende Query-Version erst bei langsamem/fehlgeschlagenem Netz. Der große Suchindex, APIs und private Endpunkte bleiben ausgeschlossen; Fehler liefern Assets niemals eine HTML-Offlineseite aus.
+
 ## Prüfungen
 
 Gezielte Regressionen prüfen datierte Updates, Erstveröffentlichungen, technische Änderungen, alte Snapshots, neue Lageaktenmitglieder, historische Verlinkung, Winter-/Sommerzeit und ungültige Daten. Service-Worker-Tests prüfen hängende/gesperrte/vollgelaufene Speicher, langsames Netz, gespeicherte und ungecachete Artikel, verspätete Antworten, Serverfehler und unverfälschte Aktualitätsproben. Bestehende Push-Tests bleiben unverändert erfolgreich.
 
-Browserprüfung erfolgt im bestehenden Design auf schmalen und breiten Ansichten sowie mit kontrolliertem Service Worker und Offline-Fallback. Deployment bleibt im bestehenden GitHub-Pages-Workflow.
+Browser mit aktiv kontrollierendem Service Worker: Der wiederholte Belastungstest bei pausiertem eigenem localhost-Server lieferte nach der Asset-Korrektur die vollständige gespeicherte Seite nach 2,557 Sekunden statt 27,617 Sekunden. Die CSS-Anfrage dauerte dabei 3 ms statt rund 25 Sekunden. Der Testserver wurde jeweils in `finally` fortgesetzt; die Produktionsinfrastruktur war nicht beteiligt. Ein CLI-Offline-Schalter erwies sich zuvor für diese Messung als unzureichend und zählt nicht als erfolgreicher Offline-Nachweis.
+
+Browserprüfung des Banners im bestehenden Design: 390-px-Übersicht und Detailseite ohne horizontale Überbreite, Datum und direkte Verlinkung stimmen. Deployment bleibt im bestehenden GitHub-Pages-Workflow; ein reales Android-Gerät wurde nicht getestet.

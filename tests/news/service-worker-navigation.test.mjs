@@ -105,3 +105,37 @@ test("freshness probes never fall back to cached news and retain the existing ca
   assert.equal(fetches, 1); assert.equal(cacheOpens, 0);
   assert.match(source, /CACHE_NAME = "woek-wirkungsticker-shell-20260906-pull-refresh1"/);
 });
+
+test("essential same-origin reader assets outside the worker path are handled, not APIs or large discovery data", async () => {
+  const h = harness();
+  const handled = [];
+  for (const [path, destination, expected] of [["/assets/css/news.css?v=2", "style", true], ["/assets/js/main.js?v=2", "script", true], ["/assets/fonts/body.woff2", "font", true], ["/assets/img/brand/app-icon-192.png", "image", true], ["/assets/search/search-index.json", "", false], ["/api/private", "", false], ["/outside.js", "script", false]]) {
+    let result;
+    h.listeners.get("fetch")({ request: { method: "GET", url: `https://wirkungsoekonomie.de${path}`, destination, headers: new Headers() }, waitUntil: h.event.waitUntil, respondWith: promise => { result = promise; } });
+    assert.equal(Boolean(result), expected, path);
+    if (result) handled.push(result);
+  }
+  await Promise.all(handled); await Promise.all(h.background);
+});
+
+test("cached exact asset versions load immediately; a different version does not mask a fast live reply", async () => {
+  for (const exact of [true, false]) {
+    const h = harness({ fetch: async () => reply("fresh asset"), cache: { match: async (_key, options) => options?.ignoreSearch || exact ? reply("cached asset") : null } });
+    const result = await h.context.networkFirst(request(), h.event, { asset: true });
+    const body = await result.text();
+    if (exact) assert.ok(["cached asset", "fresh asset"].includes(body)); // Either ready response is valid for the exact version.
+    else assert.equal(body, "fresh asset");
+  }
+  const h = harness({ fetch: () => new Promise(() => {}), cache: { match: async () => reply("saved CSS") } });
+  let result;
+  h.context.networkFirst(request(), h.event, { asset: true }).then(value => { result = value; });
+  await h.flush(); assert.equal(await result.text(), "saved CSS");
+  await h.tick(8000); await Promise.all(h.background);
+});
+
+test("uncached failed assets never receive the HTML offline page as CSS or JavaScript", async () => {
+  const h = harness({ fetch: async () => { throw new Error("offline"); } });
+  const response = await h.context.networkFirst(request(), h.event, { asset: true });
+  assert.equal(response.status, 504);
+  assert.equal(await response.text(), "");
+});
