@@ -33,7 +33,7 @@
     "news:source-integrity:audit": "node scripts/news/audit-source-integrity.mjs",
     "news:source-portfolio:audit": "node scripts/news/audit-source-portfolio.mjs",
     "news:check-source-summaries": "node scripts/news/backfill-source-summaries.mjs --check",
-    "news:test": "node --test tests/news/*.test.mjs",
+    "news:test": "node --test tests/news/*.test.mjs tests/ops/discord-monitor.test.mjs",
     "news:validate": "node scripts/news/validate.mjs",
     "news:health": "node scripts/news/check-run-health.mjs",
     "check:hosting-cost": "node scripts/ops/check-hosting-cost-guard.mjs",

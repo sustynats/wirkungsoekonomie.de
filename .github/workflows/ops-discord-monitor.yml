@@ -31,6 +31,8 @@ jobs:
             .github/workflows/ops-discord-monitor.yml
             scripts/ops/discord-monitor.mjs
             scripts/news/case-files.mjs
+            scripts/news/publication-update.mjs
+            scripts/news/reader-copy.mjs
             scripts/news/living-files.mjs
             scripts/news/newsroom.mjs
             scripts/news/numeric-evidence.mjs
