@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **4421**
+- Sitemap routes: **4423**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14492**
+- Extra tracked source HTML not in sitemap: **14493**
 - Routes with non-default #253 action: **3590**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **252**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **253**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -3857,13 +3857,14 @@ Signals are review candidates, not automatic errors.
 - `wirkungsticker/putin-drei-tage-angriffspause-wahrend-ukraine-verhandlungen-d87e2d/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/krieg-in-der-ukraine-trump-schickt-mal-wieder-seinen-schwiegersohn-6d9511/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/ukraine-krieg-us-unterhandler-in-moskau-treffen-mit-putin-geplant-587a06/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
+- `wirkungsticker/analyse/entzauberung-durch-macht-sachsen-anhalt-kein-politisches-experiment/index.html` - alternativen, evaluation, novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/grosseinsatz-am-hambacher-forst-was-die-erfolglose-suche-uber-stromnetz-resilienz--3f27f4/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsticker/analyse/dreitagige-angriffspause-auf-kyjiw-was-die-neue-vermittlungsphase-wirklich-verande-cf42f2/index.html` - novelty_or_absence - No material #253 change identified by path rule; semantic scan still applies.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1197**
-- Combined matrix items (routes + extra HTML + support): **20110**
+- Tracked support text files inventoried: **1198**
+- Combined matrix items (routes + extra HTML + support): **20114**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -3953,6 +3954,7 @@ Signals are review candidates, not automatic errors.
 | `content/methods/woems-canvas.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
 | `content/methods/woems-methoden.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, alternativen, evaluation |
 | `content/news/media-registry.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/news/reviews/2026-09-07-entzauberung-durch-macht.json` | support_text | CORRECT_OVERCLAIM | alternativen, evaluation, novelty_or_absence |
 | `content/news/reviews/2026-09-07-sachsen-anhalt-sonderanalyse.json` | support_text | ADD_SOURCE_LINKS | enap, dns, alternativen, evaluation |
 | `content/news/reviews/sachsen-anhalt-kandidatur-2026-09-05.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/news/reviews/seelze-media-2026-09-06.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
@@ -4411,7 +4413,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **20111**
+- Combined reviewed items: **20115**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
