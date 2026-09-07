@@ -1,7 +1,551 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T16:07:11.255Z",
+  "updated_at": "2026-09-07T16:22:55.918Z",
   "stories": [
+    {
+      "story_id": "wt-edd4484465895b46",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
+      "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
+      "source_summary": "France 24 beschreibt die Flucht eines nepalesischen Arbeiters aus einem Tunnel eines Wasserkraftprojekts nach einer schweren Überschwemmung. Der Bericht verbindet diese Schilderung mit der Angabe, dass in Nepal rund 900 Arbeiter in Tunneln an sechs Wasserkraftwerken feststecken sollen.\n\nZugleich nennt die Quelle eine steigende Zahl Vermisster im Zusammenhang mit dem Himalaya-Desaster. Die Zahl wird mit 5,624 angegeben und den zuständigen nepalesischen und chinesischen Behörden zugeschrieben. Weitere Details zur Lage der Eingeschlossenen oder zu Rettungserfolgen bleiben in den gelieferten Textstellen offen.",
+      "summary": "Ein Arbeiter schildert seine Flucht aus einem gefluteten Tunnel in Nepal. Parallel nennt der Bericht weiter rund 900 Eingeschlossene und 5,624 Vermisste.",
+      "detail_summary": "Gesichert aus der gelieferten Quelle ist zunächst die Schilderung eines Arbeiters, der nach einer schweren Überschwemmung aus einem Tunnel eines Wasserkraftprojekts entkam. Der Bericht nennt außerdem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken und verweist auf 5,624 Vermisste im Zusammenhang mit dem Himalaya-Desaster. Das ist für die Nachricht relevant, weil es auf eine fortdauernde Gefährdungslage für viele Beschäftigte und auf eine größere Katastrophe mit möglichem Rettungs- und Koordinationsbedarf hinweist. Der Wirkpfad liegt vor allem in akuter Gefahrenabwehr, Einsatzlogistik und möglichen Verzögerungen oder Ausfällen im Wasserkraftbetrieb. Als mögliche Folge kommen weitere Rettungsaktionen, längere Unterbrechungen und zusätzliche Belastungen für die betroffenen Regionen in Frage. Die Evidenz bleibt jedoch begrenzt, weil im Datensatz nur diese eine journalistische Quelle vorliegt und die genaue Lage der Eingeschlossenen offen bleibt.",
+      "why_relevant": "Die Meldung betrifft eine große Zahl potenziell akut gefährdeter Arbeiter und eine laufende Katastrophenlage mit Rettungs- und Infrastrukturbezug.",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Viele Beschäftigte sollen eingeschlossen sein; für die Betroffenen geht es um unmittelbare Sicherheit und Rettung."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "rationale": "Die Überschwemmung betrifft Wasserkraftanlagen und damit Infrastruktur an einem Umwelt- und Klimarisiko-Knoten."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "rationale": "Direkte demokratische Folgen sind aus der Quelle nicht ersichtlich; relevant wären vor allem Behördenkommunikation und Krisensteuerung."
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Headline und der Lead rahmen die Flucht eines Arbeiters aus einem überfluteten Tunnel mit dramatischer Sprache; zugleich geht es um eine laufende Gefahrenlage mit vielen Betroffenen.",
+        "factual_core": "Ein nepalesischer Arbeiter berichtet, wie er aus einem überfluteten Tunnel eines Wasserkraftprojekts entkam. Die Quelle nennt außerdem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken und 5,624 Vermisste im Zusammenhang mit dem Himalaya-Desaster.",
+        "epistemic_status": {
+          "confirmed": [
+            "Ein Arbeiter schildert die Flucht aus einem gefluteten Tunnel.",
+            "Die Quelle nennt rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken.",
+            "Die Zahl 5,624 Vermisste wird den nepalesischen und chinesischen Behörden zugeschrieben."
+          ],
+          "actor_claims": [
+            "Der Arbeiter berichtet seine Flucht in der Ich-Perspektive.",
+            "Die Quelle verbindet den Einzelfall mit einer größeren Katastrophenlage."
+          ],
+          "open": [
+            "Wie die Lage der eingeschlossenen Arbeiter im Einzelnen ist, bleibt offen.",
+            "Ob und wann Rettungserfolge eintreten, bleibt offen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "France 24",
+          "speaker": "ein nepalesischer Arbeiter; Behördenangabe zu Vermissten",
+          "original_term": "disaster",
+          "usage_type": "direct_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "disaster",
+          "origin_in_story": "France 24",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "disaster",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Nicht nur ein Unfall, sondern eine fortdauernde Gefahren- und Rettungslage mit vielen Betroffenen.",
+          "implied_cause": "Schwere Überschwemmung im Zusammenhang mit dem Himalaya-Desaster und einem Wasserkraftprojekt.",
+          "implied_responsibility": "Konkrete Verantwortung bleibt in der gelieferten Quelle offen; genannt werden nur Behörden und die Lage vor Ort.",
+          "implied_threat": "Weitere Gefährdung eingeschlossener Arbeiter, Verzögerungen bei Rettung und Betriebsausfälle.",
+          "implied_solution_space": "Rettung, Sicherung der Tunnel, Einsatzkoordination und Krisenvorsorge.",
+          "material_omissions": [
+            "Keine Details zur Ursache der Überschwemmung.",
+            "Keine gesicherten Angaben zum Rettungsstand der übrigen Eingeschlossenen."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Ein politischer Kontext ist in der gelieferten Quelle nicht belegt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Katastrophen-, Arbeits- und Sicherheitsthemen; mögliche Wahrnehmung von Risiko bei Wasserkraftprojekten und Tunnelarbeit.",
+          "normalization_potential": "low",
+          "repetition_risk": "low",
+          "polarization_potential": "low",
+          "trust_effect_potential": "Kann Vertrauen in die Sichtbarkeit der Lage stützen, aber auch Alarmwirkung erzeugen.",
+          "discourse_effect_potential": "Die prominente Einzelschilderung kann die Aufmerksamkeit auf Rettung, Arbeitssicherheit und Krisenlogistik lenken. Daraus folgt noch keine beobachtete Wirkung auf Debatten oder Entscheidungen."
+        },
+        "impact_path": {
+          "first_order": "Die Schilderung macht die akute Gefahr für den einzelnen Arbeiter und die Lage im Tunnel sichtbar.",
+          "second_order": "Die Nennung von rund 900 Eingeschlossenen und 5,624 Vermissten kann den Fokus auf Rettungskapazitäten, Einsatzkoordination und Arbeitssicherheit vergrößern.",
+          "third_order": "Bei anhaltender Berichterstattung kann das Thema als Risiko für Infrastruktur, Sicherheitsstandards und Krisenvorsorge im Wasserkraftsektor verankert werden; das bleibt ein Wirkungspotenzial, keine belegte Folge."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Die Quelle ist ein journalistischer Bericht von France 24. Ein Arbeiter berichtet seine Flucht aus einem überfluteten Tunnel. Die Quelle nennt rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken. Die Quelle nennt 5,624 Vermisste und schreibt die Zahl nepalesischen und chinesischen Behörden zu.",
+          "what_is_inferred": "Die prominente Platzierung der Fluchtgeschichte erhöht das kommunikative Potenzial für Bedrohungswahrnehmung. Der Bericht kann als Resonanzraum für Sicherheits- und Rettungsdebatten dienen.",
+          "what_is_open": "Nur eine journalistische Quelle liegt vor. Kein zweiter unabhängiger Medienvergleich im Datensatz. Die genaue Lage der Eingeschlossenen bleibt offen.",
+          "facts": [
+            "Die Quelle ist ein journalistischer Bericht von France 24.",
+            "Ein Arbeiter berichtet seine Flucht aus einem überfluteten Tunnel.",
+            "Die Quelle nennt rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken.",
+            "Die Quelle nennt 5,624 Vermisste und schreibt die Zahl nepalesischen und chinesischen Behörden zu."
+          ],
+          "observations": [
+            "Die Headline nutzt eine dramatische Formulierung.",
+            "Der Einzelfall steht direkt neben einer größeren Katastrophenmeldung."
+          ],
+          "inferences": [
+            "Die prominente Platzierung der Fluchtgeschichte erhöht das kommunikative Potenzial für Bedrohungswahrnehmung.",
+            "Der Bericht kann als Resonanzraum für Sicherheits- und Rettungsdebatten dienen."
+          ],
+          "impact_potentials": [
+            "Mehr Aufmerksamkeit für Tunnel- und Arbeitssicherheit.",
+            "Stärkerer Druck auf Rettungs- und Koordinationsstrukturen.",
+            "Mögliche Diskussion über Sicherheitsstandards bei Wasserkraftprojekten."
+          ],
+          "impact_risks": [
+            "Dramatisierung kann die Krisenwahrnehmung verstärken.",
+            "Einzelbericht kann die Größe des Ereignisses emotional bündeln, ohne zusätzliche Fakten zu liefern."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle liegt vor.",
+            "Kein zweiter unabhängiger Medienvergleich im Datensatz.",
+            "Die genaue Lage der Eingeschlossenen bleibt offen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Konkretes Beispiel zuerst: Ein Arbeiter erzählt, wie er aus einem gefluteten Tunnel eines Wasserkraftprojekts in Nepal entkam. Danach ordnet der Bericht die Lage größer ein und nennt rund 900 eingeschlossene Arbeiter sowie 5,624 Vermisste. Das ist sachlich wichtig, weil es auf eine akute Gefahrenlage, auf Rettungsbedarf und auf mögliche Störungen beim Betrieb hinweist. Medienseitig fällt die dramatische Überschrift auf. Sie kann die Bedrohung stärker fühlbar machen, ohne dass das schon eine zusätzliche Wirkung belegt. Der Faktenkern bleibt: ein berichteter Fluchtvorgang, eine genannte Zahl eingeschlossener Arbeiter und eine Behördenangabe zu Vermissten. Unklar bleibt in den gelieferten Quellen, wie die Rettung vorankommt und wie viele Betroffene sich gerade in welcher Lage befinden. Daher ist hier vor allem von Wirkungspotenzial und Kommunikationswirkung zu sprechen, nicht von nachgewiesener Wirkung.",
+        "editorial_assessment": "Konkretes Beispiel zuerst: Ein Arbeiter erzählt, wie er aus einem gefluteten Tunnel eines Wasserkraftprojekts in Nepal entkam. Danach ordnet der Bericht die Lage größer ein und nennt rund 900 eingeschlossene Arbeiter sowie 5,624 Vermisste. Das ist sachlich wichtig, weil es auf eine akute Gefahrenlage, auf Rettungsbedarf und auf mögliche Störungen beim Betrieb hinweist. Medienseitig fällt die dramatische Überschrift auf. Sie kann die Bedrohung stärker fühlbar machen, ohne dass das schon eine zusätzliche Wirkung belegt. Der Faktenkern bleibt: ein berichteter Fluchtvorgang, eine genannte Zahl eingeschlossener Arbeiter und eine Behördenangabe zu Vermissten. Unklar bleibt in den gelieferten Quellen, wie die Rettung vorankommt und wie viele Betroffene sich gerade in welcher Lage befinden. Daher ist hier vor allem von Wirkungspotenzial und Kommunikationswirkung zu sprechen, nicht von nachgewiesener Wirkung.",
+        "fact_first_alternative": "Sachverhalt: Ein nepalesischer Arbeiter berichtet seine Flucht aus einem gefluteten Tunnel; Wissensstatus: journalistisch berichtet, teils offen; Attribution: France 24 zitiert den Arbeiter und Behördenzahlen; Frame: die Formulierung rahmt die Lage als schwere Katastrophe und akute Bedrohung.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Nepalesischer Arbeiter berichtet Flucht aus geflutetem Tunnel",
+          "recommended_summary": "France 24 schildert die Flucht eines Arbeiters aus einem Tunnel und nennt zugleich weitere Betroffene sowie Vermisste.",
+          "recommended_meta_description": "Bericht über Flucht aus einem gefluteten Tunnel in Nepal, eingeschlossene Arbeiter und offene Rettungslage."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T16:22:55.918Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-03T17:22:20.000Z",
+      "last_updated": "2026-09-07T16:22:55.918Z",
+      "version": 4,
+      "news_status": "preliminary",
+      "event_id": "event-4d4eabf7fc99346b711e",
+      "case_file": null,
+      "source_published_at": "2026-09-03T17:22:20.000Z",
+      "published_at": "2026-09-03T23:37:36.842Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Bleibt die Zahl der eingeschlossenen Arbeiter bei den betroffenen Anlagen bei rund 900 oder ändert sie sich durch Rettungen?",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Aktualisierte Angaben zu geretteten, eingeschlossenen oder vermissten Arbeitern",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-ec940d1e5c0ccd65",
+          "announced_at": "2026-09-03T17:22:20.000Z",
+          "follow_up_date": "2026-09-10T23:37:36.842Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/asia-pacific/20260903-fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T17:22:20.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f3d585eac14dec76",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0167d295b29ef87f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0666df4bbd59b99c-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-4f5215c9936e9827-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-bc436d1a412f175a-source.png"
+        }
+      },
+      "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
+      "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
+      "source_summary": "Die taz berichtet, dass sie nach dem Anschlag auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben erhalten hat. Nach dem Bericht lässt sich die Echtheit des Schreibens nicht zweifelsfrei klären. In dem Text soll sich ein Einzeltäter zu der Tat bekennen und die verwendeten selbstgebauten Raketen detailliert beschreiben. Außerdem soll das Schreiben Angaben zum vermeintlichen Absender enthalten; die Redaktion berichtet, sie habe an der angegebenen Adresse zunächst nur ein anderes Familienmitglied angetroffen.\n\nrbb24 meldet, die Polizei habe nach der Sabotage am Stromnetz bei Jänschwalde ein Bekennerschreiben erhalten und prüfe dessen Authentizität. Zugleich wird berichtet, dass die Ermittlungen unter anderem wegen der Bildung einer terroristischen Vereinigung laufen. Beide Berichte halten offen, ob das Schreiben echt ist und ob die darin genannten weiteren Orte tatsächlich angegriffen wurden.",
+      "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
+      "detail_summary": "Gesichert ist, dass nach dem Angriff auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben eingegangen ist und seine Echtheit bislang nicht bestätigt ist. rbb24 berichtet zugleich, die Polizei ermittle nach der Sabotage auch wegen der Bildung einer terroristischen Vereinigung. Die taz nennt im Schreiben detaillierte Beschreibungen selbstgebauter Raketen und verweist auf weitere angeblich betroffene Orte in Brandenburg und Sachsen. Für die Nachricht ist das relevant, weil sich der Vorgang nicht auf einen bloßen Einzelfall reduziert, sondern auf mögliche weitere Taten und auf ein Verfahren mit Bezug zu kritischer Infrastruktur. Der Wirkpfad liegt vor allem in der Lageeinschätzung von Sicherheitsbehörden, möglichen Schutzmaßnahmen und der Frage, ob sich ein koordiniertes Muster bestätigt. Offen bleibt aber, ob das Schreiben echt ist und ob die genannten weiteren Orte tatsächlich betroffen waren; deshalb bleibt die Zurechnung der behaupteten Tatserie vorerst unsicher.",
+      "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur und mögliche weitere Angriffe; davon hängen Sicherheitslage, Ermittlungsrichtung und Schutzmaßnahmen ab.",
+      "topic": [
+        "Energie",
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Störungen der Stromversorgung und Sicherheitsfolgen betreffen viele Menschen direkt oder indirekt."
+        },
+        "planet": {
+          "relevance": "offen",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimawirkpfad."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der mögliche Terrorismusbezug und staatliche Schutzreaktionen berühren Sicherheitsordnung und demokratische Kontrolle."
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Das Bekennerschreiben und der laufende Polizeiabgleich können die Sicherheitswahrnehmung rund um kritische Infrastruktur und mögliche Anschlussermittlungen prägen.",
+        "factual_core": "Nach dem Angriff auf das Umspannwerk bei Jänschwalde ist ein Bekennerschreiben eingegangen; seine Echtheit ist bislang nicht bestätigt. Die Polizei prüft das Schreiben. rbb24 berichtet außerdem von Ermittlungen auch wegen Bildung einer terroristischen Vereinigung.",
+        "epistemic_status": {
+          "confirmed": [
+            "Nach dem Angriff auf das Umspannwerk bei Jänschwalde ist ein Bekennerschreiben eingegangen.",
+            "Die Echtheit des Schreibens ist offen bzw. wird geprüft."
+          ],
+          "actor_claims": [
+            "Das Schreiben soll sich zu der Tat bekennen und weitere Orte nennen.",
+            "Die Polizei ermittelt auch wegen Bildung einer terroristischen Vereinigung."
+          ],
+          "open": [
+            "Ob das Schreiben echt ist.",
+            "Ob die im Schreiben genannten weiteren Orte tatsächlich betroffen waren.",
+            "Ob ein koordiniertes Muster vorliegt."
+          ]
+        },
+        "attribution": {
+          "frame_source": "rbb24 / taz",
+          "speaker": "Polizei bzw. unbekannter Verfasser des Schreibens",
+          "original_term": "terroristischen Vereinigung",
+          "usage_type": "paraphrase",
+          "placement": [
+            "body"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "terroristischen Vereinigung",
+          "origin_in_story": "rbb24 / taz",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "terroristischen Vereinigung",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Der Vorgang wird nicht nur als Sabotage an einer Anlage, sondern als möglicher Teil eines größeren Sicherheits- und Ermittlungsfalls gerahmt.",
+          "implied_cause": "Ein mögliches koordiniertes oder politisch motiviertes Vorgehen; das bleibt aber offen und ist nicht bestätigt.",
+          "implied_responsibility": "Noch unklar; Zurechnung ist offen und darf aus dem Bericht nicht hochgestuft werden.",
+          "implied_threat": "Mögliche weitere Angriffe auf kritische Infrastruktur und zusätzliche Belastung der Sicherheitslage.",
+          "implied_solution_space": "Echtheitsprüfung, Ermittlungen, Schutzmaßnahmen an kritischer Infrastruktur, behördliche Koordination.",
+          "material_omissions": [
+            "Keine bestätigte Täterschaft.",
+            "Keine bestätigte Serie weiterer Taten.",
+            "Keine belastbare Aussage zur Reichweite des Schreibens."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Politische Einordnung bleibt offen; die Quellen berichten vor allem über Ermittlungs- und Sicherheitsaspekte."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Sicherheits- und Infrastrukturberichterstattung, besonders bei Debatten über Sabotage, Terrorismusverdacht und Schutz kritischer Versorgungssysteme.",
+          "normalization_potential": "low",
+          "repetition_risk": "low",
+          "polarization_potential": "mittel, wenn der Terrorismusbezug ohne Prüfung als feststehend weiterverbreitet wird.",
+          "trust_effect_potential": "Kann Vertrauen in die Prüfung durch Behörden stützen, wenn die Unsicherheit klar benannt bleibt; kann es schwächen, wenn die Zuschreibung vorschnell wirkt.",
+          "discourse_effect_potential": "Das Schreiben kann die Wahrnehmung von Gefahr und Koordinationsbedarf verstärken, ohne selbst schon einen bestätigten Kausalbefund zu liefern."
+        },
+        "impact_path": {
+          "first_order": "Ein Bekennerschreiben löst Prüfung und Einordnung des Vorfalls aus.",
+          "second_order": "Die Echtheitsprüfung und der Terrorismusbezug können die Sicherheitsbewertung und die behördliche Kommunikation beeinflussen.",
+          "third_order": "Falls sich ein Muster bestätigt, können Schutzkonzepte für kritische Infrastruktur und die öffentliche Debatte über Sabotage und Sicherheitsarchitektur angepasst werden."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Ein Bekennerschreiben ist nach dem Angriff auf das Umspannwerk bei Jänschwalde eingegangen. Die Echtheit des Schreibens ist offen. Die Polizei prüft das Schreiben. rbb24 berichtet von Ermittlungen auch wegen Bildung einer terroristischen Vereinigung.",
+          "what_is_inferred": "Das kann die Lageeinschätzung und Schutzüberlegungen der Behörden beeinflussen. Die Story hat Potenzial für eine verstärkte Sicherheits- und Bedrohungsrahmung.",
+          "what_is_open": "Keine belastbare Evidenz für eine tatsächlich eingetretene gesellschaftliche Wirkung. Themenähnlichkeit allein belegt keine gemeinsame Tat oder Kausalität. Agentur- oder Zweitverwertung liegt nicht vor; die zwei journalistischen Berichte reichen nur für eine vergleichende Einordnung, nicht für einen Wirkungsnachweis.",
+          "facts": [
+            "Ein Bekennerschreiben ist nach dem Angriff auf das Umspannwerk bei Jänschwalde eingegangen.",
+            "Die Echtheit des Schreibens ist offen.",
+            "Die Polizei prüft das Schreiben.",
+            "rbb24 berichtet von Ermittlungen auch wegen Bildung einer terroristischen Vereinigung."
+          ],
+          "observations": [
+            "Die Berichte verbinden einen konkreten Infrastrukturvorfall mit einem ungeklärten Bekennerschreiben.",
+            "Der Terrorismusbezug erscheint als Ermittlungsstand, nicht als bestätigter Sachverhalt."
+          ],
+          "inferences": [
+            "Das kann die Lageeinschätzung und Schutzüberlegungen der Behörden beeinflussen.",
+            "Die Story hat Potenzial für eine verstärkte Sicherheits- und Bedrohungsrahmung."
+          ],
+          "impact_potentials": [
+            "Mögliche Anpassung von Schutzmaßnahmen an kritischer Infrastruktur.",
+            "Mögliche Koordination über mehrere Bundesländer hinweg, falls weitere Orte betroffen sind."
+          ],
+          "impact_risks": [
+            "Vorschnelle Verallgemeinerung zu einer bestätigten Tatserie.",
+            "Überdehnung des Terrorismusbezugs vor Abschluss der Prüfung."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine belastbare Evidenz für eine tatsächlich eingetretene gesellschaftliche Wirkung.",
+            "Themenähnlichkeit allein belegt keine gemeinsame Tat oder Kausalität.",
+            "Agentur- oder Zweitverwertung liegt nicht vor; die zwei journalistischen Berichte reichen nur für eine vergleichende Einordnung, nicht für einen Wirkungsnachweis."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Ein konkreter Vorfall steht am Anfang: Nach der Sabotage am Umspannwerk bei Jänschwalde ist ein Bekennerschreiben aufgetaucht. Das ist der belegte Kern. Die taz berichtet, dass sich daraus noch keine sichere Echtheit ableiten lässt. rbb24 meldet außerdem, dass die Polizei das Schreiben prüft und im Umfeld der Ermittlungen auch wegen einer terroristischen Vereinigung ermittelt. Für die Wirkung ist wichtig: Noch ist nichts davon bestätigt, was das Schreiben über weitere Taten, Orte oder Täter nahelegt. Medienseitig kann so eine Nachricht die Sicherheitswahrnehmung stark anheben und Debatten über Schutz kritischer Infrastruktur verstärken. Das ist aber zunächst nur ein möglicher Wirkpfad, keine eingetretene Wirkung. Entscheidend bleibt die klare Trennung zwischen gesichertem Vorfall, Behördenaussage, offener Echtheit und medialer Einordnung.",
+        "editorial_assessment": "Ein konkreter Vorfall steht am Anfang: Nach der Sabotage am Umspannwerk bei Jänschwalde ist ein Bekennerschreiben aufgetaucht. Das ist der belegte Kern. Die taz berichtet, dass sich daraus noch keine sichere Echtheit ableiten lässt. rbb24 meldet außerdem, dass die Polizei das Schreiben prüft und im Umfeld der Ermittlungen auch wegen einer terroristischen Vereinigung ermittelt. Für die Wirkung ist wichtig: Noch ist nichts davon bestätigt, was das Schreiben über weitere Taten, Orte oder Täter nahelegt. Medienseitig kann so eine Nachricht die Sicherheitswahrnehmung stark anheben und Debatten über Schutz kritischer Infrastruktur verstärken. Das ist aber zunächst nur ein möglicher Wirkpfad, keine eingetretene Wirkung. Entscheidend bleibt die klare Trennung zwischen gesichertem Vorfall, Behördenaussage, offener Echtheit und medialer Einordnung.",
+        "fact_first_alternative": "Nach dem Angriff auf das Umspannwerk bei Jänschwalde ist ein Bekennerschreiben eingegangen; ob es echt ist, bleibt offen. Laut rbb24 prüft die Polizei das Schreiben und ermittelt auch wegen einer terroristischen Vereinigung. Daraus ergibt sich vor allem ein möglicher Sicherheits- und Kommunikationswirkpfad, nicht schon eine bestätigte Tatserie.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 2,
+          "rewrite_required": false,
+          "recommended_title": "Bekennerschreiben nach Sabotage in Jänschwalde wird geprüft",
+          "recommended_summary": "Nach der Sabotage am Umspannwerk bei Jänschwalde ist ein Bekennerschreiben aufgetaucht. Seine Echtheit ist offen; die Polizei prüft es und ermittelt weiter.",
+          "recommended_meta_description": "Ein Bekennerschreiben nach der Sabotage am Umspannwerk Jänschwalde ist aufgetaucht. Die Echtheit ist offen, die Polizei prüft es."
+        },
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Zwei verschiedene journalistische Berichte stützen den Kern, dass nach dem Vorfall ein Bekennerschreiben einging und seine Echtheit offen ist; rbb24 ergänzt den Ermittlungsstand, die taz Details zum Inhalt des Schreibens. Für eine mediale Wirkungsprüfung reicht das als Vergleichsbasis, nicht als Beleg für eine tatsächliche Wirkung."
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T16:22:55.918Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-03T16:21:00.000Z",
+      "last_updated": "2026-09-07T16:22:55.918Z",
+      "version": 4,
+      "news_status": "updated",
+      "event_id": "event-f0b1482b8ce86ec1fab2",
+      "case_file": null,
+      "source_published_at": "2026-09-03T16:21:00.000Z",
+      "published_at": "2026-09-04T02:07:51.145Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ],
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Polizei oder Ermittler bewerten das Schreiben eindeutig als echt, falsch oder nicht belegbar.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-82c1d1ebd142a53a",
+          "announced_at": "2026-09-03T16:21:00.000Z",
+          "follow_up_date": "2026-09-11T02:07:51.145Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-6f87b9521d465246",
+          "announced_at": "2026-09-03T18:57:30.000Z",
+          "follow_up_date": "2026-09-10T22:37:01.821Z",
+          "status": "scheduled",
+          "origin_story_id": "wt-57bcbc8dea706471"
+        },
+        {
+          "claim": "Ob die Polizei die Authentizität des Bekennerschreibens bestätigen kann",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Polizeimitteilung zur Echtheitsprüfung oder Bestätigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2321322fdee145a1",
+          "announced_at": "2026-09-03T18:57:30.000Z",
+          "follow_up_date": "2026-09-11T10:21:35.407Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T16:21:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-03T18:57:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-8f7ac0654a780960",
       "title_image": {
@@ -6530,344 +7074,6 @@
           "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T10:06:18.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-edd4484465895b46",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-edd4484465895b46-7f2289df51f13633-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel-895b46",
-      "title": "‘Fight through darkness, water’: Nepal survivor recounts escape from flood-hit tunnel",
-      "source_summary": "France 24 beschreibt die Flucht eines nepalesischen Arbeiters aus einem Tunnel eines Wasserkraftprojekts nach einer schweren Überschwemmung. Der Bericht verbindet diese Schilderung mit der Angabe, dass in Nepal rund 900 Arbeiter in Tunneln an sechs Wasserkraftwerken feststecken sollen.\n\nZugleich nennt die Quelle eine steigende Zahl Vermisster im Zusammenhang mit dem Himalaya-Desaster. Die Zahl wird mit 5,624 angegeben und den zuständigen nepalesischen und chinesischen Behörden zugeschrieben. Weitere Details zur Lage der Eingeschlossenen oder zu Rettungserfolgen bleiben in den gelieferten Textstellen offen.",
-      "summary": "Ein Arbeiter schildert seine Flucht aus einem gefluteten Tunnel in Nepal. Parallel nennt der Bericht weiter rund 900 Eingeschlossene und 5,624 Vermisste.",
-      "detail_summary": "Gesichert aus der gelieferten Quelle ist zunächst die Schilderung eines Arbeiters, der nach einer schweren Überschwemmung aus einem Tunnel eines Wasserkraftprojekts entkam. Der Bericht nennt außerdem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken und verweist auf 5,624 Vermisste im Zusammenhang mit dem Himalaya-Desaster. Das ist für die Nachricht relevant, weil es auf eine fortdauernde Gefährdungslage für viele Beschäftigte und auf eine größere Katastrophe mit möglichem Rettungs- und Koordinationsbedarf hinweist. Der Wirkpfad liegt vor allem in akuter Gefahrenabwehr, Einsatzlogistik und möglichen Verzögerungen oder Ausfällen im Wasserkraftbetrieb. Als mögliche Folge kommen weitere Rettungsaktionen, längere Unterbrechungen und zusätzliche Belastungen für die betroffenen Regionen in Frage. Die Evidenz bleibt jedoch begrenzt, weil im Datensatz nur diese eine journalistische Quelle vorliegt und die genaue Lage der Eingeschlossenen offen bleibt.",
-      "why_relevant": "Die Meldung betrifft eine große Zahl potenziell akut gefährdeter Arbeiter und eine laufende Katastrophenlage mit Rettungs- und Infrastrukturbezug.",
-      "topic": [
-        "Arbeit",
-        "Gesundheit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Viele Beschäftigte sollen eingeschlossen sein; für die Betroffenen geht es um unmittelbare Sicherheit und Rettung."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Überschwemmung betrifft Wasserkraftanlagen und damit Infrastruktur an einem Umwelt- und Klimarisiko-Knoten."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Direkte demokratische Folgen sind aus der Quelle nicht ersichtlich; relevant wären vor allem Behördenkommunikation und Krisensteuerung."
-        }
-      },
-      "visuals": null,
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "medium",
-        "reason": "Der Titel nutzt eine dramatisierende Formulierung, und ein Betroffenenbericht steht prominent im Vordergrund; dadurch entsteht ein Resonanzraum für Katastrophenrahmung, ohne dass der Trigger selbst ein Befund ist.",
-        "factual_core": "Ein nepalesischer Arbeiter berichtet von seiner Flucht aus einem überfluteten Tunnel eines Wasserkraftprojekts. Die Quelle nennt zudem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken und 5,624 Vermisste im Zusammenhang mit dem Himalaya-Desaster.",
-        "speaker_statement": {
-          "present": true,
-          "speaker": "ein nepalesischer Arbeiter",
-          "statement": "Er schildert seine Flucht aus dem gefluteten Tunnel nach der Überschwemmung.",
-          "status": "fact"
-        },
-        "framing": {
-          "detected": true,
-          "term": "‘Fight through darkness, water’ / flood-hit tunnel / devastating flood / disaster",
-          "origin_in_story": "Medium und zitierte Betroffenenperspektive",
-          "media_usage": "multiple",
-          "attribution_quality": "grundsätzlich attribuiert",
-          "factual_status": "Aussage eines Akteurs",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "resonance": {
-          "resonance_space": "Katastrophen- und Gefahrenberichterstattung, Arbeitsschutz, Rettungs- und Krisenlogistik",
-          "resonance_risk": "Die dramatische Wortwahl kann die akute Gefährdungslage verstärken und den Eindruck einer umfassenderen Krise verdichten; das ist ein Wirkpotenzial, kein Wirkbeleg.",
-          "normalization_potential": "Wiederholte Verwendung des Katastrophen- und Desaster-Vokabulars kann die Rahmung als außergewöhnliche Dauerkrise stabilisieren.",
-          "repetition_effect": "Bei häufiger Wiederholung kann sich die Formulierung als naheliegender Deutungsrahmen einprägen; ein Illusory-Truth-Risiko ist möglich.",
-          "trust_effect": "Die klare Zuschreibung an einen Betroffenen kann Glaubwürdigkeit stützen; die starke Dramatisierung kann zugleich Distanz oder Übererregung fördern.",
-          "polarization_potential": "Gering; der Text ist vor allem auf Gefahren- und Betroffenenperspektive ausgerichtet, nicht auf politische Konfliktzuschreibung.",
-          "discourse_effect": "Der Beitrag lenkt Aufmerksamkeit auf Rettung, Sicherheitslage und die Größe des Schadens; die mediale Verdichtung kann die Wahrnehmung der Lage zuspitzen."
-        },
-        "impact_path": {
-          "first_order": "Leser:innen nehmen die Fluchtgeschichte und die Zahl der Eingeschlossenen als Hinweis auf eine akute Gefahrenlage wahr.",
-          "second_order": "Das kann die Erwartung nach weiteren Rettungsmaßnahmen, Sicherheitsprüfungen und Behördenreaktionen erhöhen.",
-          "third_order": "Bei fortgesetzter Rahmung in ähnlicher Sprache kann sich die Katastrophenperspektive im öffentlichen Diskurs verfestigen; das bleibt ein Wirkungspotenzial."
-        },
-        "evidence": {
-          "status": "medium",
-          "what_is_known": "Der Artikel berichtet über einen geretteten Arbeiter, nennt eingeschlossene Arbeiter und verweist auf steigende Vermisstenzahlen.",
-          "what_is_inferred": "Die mediale Form kann die Wahrnehmung der Lage als besonders dramatisch und akut beeinflussen.",
-          "what_is_open": "Ob die Lage vor Ort tatsächlich so weitreichend und aktuell ist, wie die Formulierungen nahelegen, lässt sich aus nur einer journalistischen Quelle nicht verifizieren."
-        },
-        "editorial_assessment": "Dramatisierende Überschrift und Katastrophenvokabular setzen einen starken Gefahrenrahmen; die Betroffenenstimme ist klar attribuiert, aber die mediale Verdichtung ist hoch.",
-        "fact_first_reframe": {
-          "title": "Nepalesischer Arbeiter berichtet von Flucht aus überflutetem Tunnel",
-          "source_summary": "France 24 berichtet über einen nepalesischen Arbeiter, der nach einer schweren Überschwemmung aus einem Tunnel eines Wasserkraftprojekts entkam. Die Quelle nennt außerdem rund 900 eingeschlossene Arbeiter an sechs Wasserkraftwerken sowie 5,624 Vermisste nach Angaben nepalesischer und chinesischer Behörden.",
-          "summary": "Ein Arbeiter schildert seine Flucht aus einem gefluteten Tunnel in Nepal. Der Bericht erwähnt zugleich weitere eingeschlossene Arbeiter und steigende Vermisstenzahlen im Zusammenhang mit der Überschwemmung.",
-          "detail_summary": "Nach Angaben des Berichts entkam ein nepalesischer Arbeiter aus einem überfluteten Tunnel eines Wasserkraftprojekts. France 24 verweist außerdem auf rund 900 Arbeiter, die in Tunneln an sechs Wasserkraftwerken eingeschlossen sein sollen, sowie auf 5,624 Vermisste, die den zuständigen Behörden zugeschrieben werden. Die Nachricht ist vor allem eine Lage- und Betroffenenmeldung; die genaue Situation der Eingeschlossenen bleibt in den gelieferten Textstellen offen."
-        },
-        "self_frame_warning": false,
-        "source_comparison": {
-          "sufficient_basis": false,
-          "finding": ""
-        }
-      },
-      "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T09:18:31.212Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-03T17:22:20.000Z",
-      "last_updated": "2026-09-05T09:18:31.212Z",
-      "version": 3,
-      "news_status": "preliminary",
-      "event_id": "event-4d4eabf7fc99346b711e",
-      "case_file": null,
-      "source_published_at": "2026-09-03T17:22:20.000Z",
-      "published_at": "2026-09-03T23:37:36.842Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "france24-en"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Bleibt die Zahl der eingeschlossenen Arbeiter bei den betroffenen Anlagen bei rund 900 oder ändert sie sich durch Rettungen?",
-          "source_id": "france24-en",
-          "expected_by": null,
-          "measurable_indicator": "Aktualisierte Angaben zu geretteten, eingeschlossenen oder vermissten Arbeitern",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-ec940d1e5c0ccd65",
-          "announced_at": "2026-09-03T17:22:20.000Z",
-          "follow_up_date": "2026-09-10T23:37:36.842Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "France 24",
-          "url": "https://www.france24.com/en/asia-pacific/20260903-fight-through-darkness-water-nepal-survivor-recounts-escape-from-flood-hit-tunnel",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T17:22:20.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-f3d585eac14dec76",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0167d295b29ef87f-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-0666df4bbd59b99c-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-4f5215c9936e9827-square.png",
-          "width": 1080,
-          "height": 1080
-        },
-        "background": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f3d585eac14dec76-bc436d1a412f175a-source.png"
-        }
-      },
-      "slug": "sabotage-an-umspannwerk-janschwalde-bekennerschreiben-zu-anschlag-aufgetaucht-4dec76",
-      "title": "Sabotage an Umspannwerk Jänschwalde: Bekennerschreiben zu Anschlag aufgetaucht",
-      "source_summary": "Die taz berichtet, dass sie nach dem Anschlag auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben erhalten hat. Nach dem Bericht lässt sich die Echtheit des Schreibens nicht zweifelsfrei klären. In dem Text soll sich ein Einzeltäter zu der Tat bekennen und die verwendeten selbstgebauten Raketen detailliert beschreiben. Außerdem soll das Schreiben Angaben zum vermeintlichen Absender enthalten; die Redaktion berichtet, sie habe an der angegebenen Adresse zunächst nur ein anderes Familienmitglied angetroffen.\n\nrbb24 meldet, die Polizei habe nach der Sabotage am Stromnetz bei Jänschwalde ein Bekennerschreiben erhalten und prüfe dessen Authentizität. Zugleich wird berichtet, dass die Ermittlungen unter anderem wegen der Bildung einer terroristischen Vereinigung laufen. Beide Berichte halten offen, ob das Schreiben echt ist und ob die darin genannten weiteren Orte tatsächlich angegriffen wurden.",
-      "summary": "Bei Jänschwalde ist ein Bekennerschreiben aufgetaucht, dessen Echtheit weiter offen ist. Die Polizei prüft das Schreiben im laufenden Ermittlungsverfahren.",
-      "detail_summary": "Gesichert ist, dass nach dem Angriff auf das Umspannwerk bei Jänschwalde ein Bekennerschreiben eingegangen ist und seine Echtheit bislang nicht bestätigt ist. rbb24 berichtet zugleich, die Polizei ermittle nach der Sabotage auch wegen der Bildung einer terroristischen Vereinigung. Die taz nennt im Schreiben detaillierte Beschreibungen selbstgebauter Raketen und verweist auf weitere angeblich betroffene Orte in Brandenburg und Sachsen. Für die Nachricht ist das relevant, weil sich der Vorgang nicht auf einen bloßen Einzelfall reduziert, sondern auf mögliche weitere Taten und auf ein Verfahren mit Bezug zu kritischer Infrastruktur. Der Wirkpfad liegt vor allem in der Lageeinschätzung von Sicherheitsbehörden, möglichen Schutzmaßnahmen und der Frage, ob sich ein koordiniertes Muster bestätigt. Offen bleibt aber, ob das Schreiben echt ist und ob die genannten weiteren Orte tatsächlich betroffen waren; deshalb bleibt die Zurechnung der behaupteten Tatserie vorerst unsicher.",
-      "why_relevant": "Der Vorgang betrifft kritische Energieinfrastruktur und mögliche weitere Angriffe; davon hängen Sicherheitslage, Ermittlungsrichtung und Schutzmaßnahmen ab.",
-      "topic": [
-        "Energie",
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Störungen der Stromversorgung und Sicherheitsfolgen betreffen viele Menschen direkt oder indirekt."
-        },
-        "planet": {
-          "relevance": "offen",
-          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimawirkpfad."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der mögliche Terrorismusbezug und staatliche Schutzreaktionen berühren Sicherheitsordnung und demokratische Kontrolle."
-        }
-      },
-      "visuals": null,
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "medium",
-        "reason": "Der Trigger erfasst politisch aufgeladene Begrifflichkeit im Titel und die Berichterstattung über ein Bekennerschreiben; außerdem liegen zwei journalistische Darstellungen vor, die das Framing und die Attribution prüfbar machen.",
-        "factual_core": "Nach der Sabotage am Umspannwerk bei Jänschwalde ist ein Bekennerschreiben eingegangen. Die Echtheit des Schreibens ist nach den Berichten nicht bestätigt und wird geprüft; die Polizei ermittelt zudem im Zusammenhang mit dem Vorfall.",
-        "speaker_statement": {
-          "present": true,
-          "speaker": "unbekannter Verfasser des Bekennerschreibens",
-          "statement": "Ein Einzeltäter bekennt sich zu der Tat und beschreibt selbstgebaute Raketen; im Schreiben werden weitere Orte genannt.",
-          "status": "claim"
-        },
-        "framing": {
-          "detected": true,
-          "term": "Anschlag",
-          "origin_in_story": "Medium",
-          "media_usage": "headline",
-          "attribution_quality": "unklare Attribution",
-          "factual_status": "Interpretation",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "resonance": {
-          "resonance_space": "Berichterstattung zu kritischer Infrastruktur, Ermittlungen und möglicher Sicherheitslage",
-          "resonance_risk": "Der Begriff kann die Tat semantisch stärker als gewaltsamen Anschlag rahmen, obwohl die Berichte zugleich die Echtheit des Schreibens offenlassen.",
-          "normalization_potential": "Wiederholte Verwendung des Begriffs kann den Bedrohungsrahmen im Diskurs verfestigen, ohne den Sachverhalt selbst zu beweisen.",
-          "repetition_effect": "Mehrfache Nennung von Bekennerschreiben und terroristischer Vereinigung kann einen Illusory-Truth-Resonanzraum für die behauptete Tatserie schaffen.",
-          "trust_effect": "Wenn Interpretation und belegter Kern nicht sauber getrennt werden, kann das Vertrauen in die Differenz zwischen Bericht und gesicherter Feststellung sinken.",
-          "polarization_potential": "Die Kombination aus Sabotage, Bekennerschreiben und Terrorismusbezug kann polarisierende Sicherheitsdeutungen begünstigen.",
-          "discourse_effect": "Der Fokus verschiebt sich auf mögliche Täterzuschreibung, Sicherheitsbehörden und Schutz kritischer Infrastruktur, während die Beweislage für das Schreiben offen bleibt."
-        },
-        "impact_path": {
-          "first_order": "Öffentliche Wahrnehmung des Vorfalls als sicherheitsrelevante Sabotage mit offenem Zurechnungsstatus.",
-          "second_order": "Stärkere Aufmerksamkeit für Ermittlungen, Authentizität des Schreibens und mögliche Schutzmaßnahmen an Energieanlagen.",
-          "third_order": "Falls sich das Schreiben oder eine Tatserie bestätigt, kann sich der Diskurs über terroristische Gewalt gegen kritische Infrastruktur und die behördliche Risikobewertung verdichten."
-        },
-        "evidence": {
-          "status": "medium",
-          "what_is_known": "Es gibt nach übereinstimmender Berichterstattung ein eingegangenes Bekennerschreiben; die Echtheit ist ungeklärt. Der Titel verwendet den Begriff 'Anschlag'.",
-          "what_is_inferred": "Der Titel und die Rahmung können das Ereignis stärker bedrohungsorientiert deuten, ohne dass dies den belegten Kern verändert.",
-          "what_is_open": "Ob das Schreiben echt ist, wer es verfasst hat und ob die genannten weiteren Orte tatsächlich betroffen waren."
-        },
-        "editorial_assessment": "Die Überschrift rahmt den Vorfall mit einem stark normativen Begriff, während die Quellenlage die Authentizität des Schreibens ausdrücklich offenlässt; im Text ist deshalb eine noch klarere Trennung von belegter Sabotage, fremder Selbstzuschreibung und journalistischer Einordnung sinnvoll.",
-        "fact_first_reframe": {
-          "title": "Bekennerschreiben nach Sabotage an Umspannwerk Jänschwalde geprüft",
-          "source_summary": "Nach der Sabotage am Umspannwerk bei Jänschwalde ist laut Berichten ein Bekennerschreiben eingegangen. Seine Echtheit ist bislang nicht bestätigt und wird von den Ermittlern geprüft.",
-          "summary": "Nach dem Vorfall bei Jänschwalde prüfen Polizei und Medien ein eingegangenes Bekennerschreiben. Die Authentizität des Schreibens ist offen.",
-          "detail_summary": "Gesichert ist nach den vorliegenden Berichten, dass nach der Sabotage am Umspannwerk bei Jänschwalde ein Bekennerschreiben einging. Sowohl die taz als auch rbb24 berichten, dass dessen Echtheit nicht bestätigt ist und geprüft wird. Die taz verweist auf Inhalte des Schreibens mit Angaben zu selbstgebauten Raketen und weiteren Orten; rbb24 berichtet über Ermittlungen unter anderem wegen des Verdachts auf Bildung einer terroristischen Vereinigung. Für die Einordnung bleibt daher zentral, was belegt ist, was von einem unbekannten Verfasser behauptet wird und was behördlich noch offen ist."
-        },
-        "self_frame_warning": true,
-        "source_comparison": {
-          "sufficient_basis": true,
-          "finding": "Zwei unterschiedliche journalistische Darstellungen liegen vor (taz und rbb24). Beide stützen den belegten Kern des eingegangenen Bekennerschreibens und der offenen Echtheit; sie setzen jedoch unterschiedliche Schwerpunkte."
-        }
-      },
-      "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T09:18:31.212Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-03T16:21:00.000Z",
-      "last_updated": "2026-09-05T09:18:31.212Z",
-      "version": 3,
-      "news_status": "updated",
-      "event_id": "event-f0b1482b8ce86ec1fab2",
-      "case_file": null,
-      "source_published_at": "2026-09-03T16:21:00.000Z",
-      "published_at": "2026-09-04T02:07:51.145Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "taz-aktuell"
-          ],
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die Ermittler klären die Echtheit des Bekennerschreibens.",
-          "source_id": "taz-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "Polizei oder Ermittler bewerten das Schreiben eindeutig als echt, falsch oder nicht belegbar.",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-82c1d1ebd142a53a",
-          "announced_at": "2026-09-03T16:21:00.000Z",
-          "follow_up_date": "2026-09-11T02:07:51.145Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die Polizei die Echtheit des Bekennerschreibens bestätigen kann",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimitteilung zur Authentizität des Schreibens",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-6f87b9521d465246",
-          "announced_at": "2026-09-03T18:57:30.000Z",
-          "follow_up_date": "2026-09-10T22:37:01.821Z",
-          "status": "scheduled",
-          "origin_story_id": "wt-57bcbc8dea706471"
-        },
-        {
-          "claim": "Ob die Polizei die Authentizität des Bekennerschreibens bestätigen kann",
-          "source_id": "rbb24-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Öffentliche Polizeimitteilung zur Echtheitsprüfung oder Bestätigung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-2321322fdee145a1",
-          "announced_at": "2026-09-03T18:57:30.000Z",
-          "follow_up_date": "2026-09-11T10:21:35.407Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "taz",
-          "url": "https://taz.de/Bekennerschreiben-zu-Anschlag-in-Jaenschwalde-aufgetaucht/!6209920",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T16:21:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/sabotage-umspannwerk-stromnetz-jaenschwalde-stromversorgung.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T18:57:30.000Z",
           "primary_source": false
         }
       ]
