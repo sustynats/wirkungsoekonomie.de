@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-06T23:51:36.418Z",
+  "last_successful_run": "2026-09-07T00:06:13.140Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -6664,14 +6664,14 @@
       "url": "https://europepmc.org/article/PMC/PMC13411705",
       "content_hash": "8a89836b52454681434e4ae8e9c7ccd4ee3517bd1a08271912967c8bb4ccd211",
       "published_at": "2026-09-04T00:00:00.000Z",
-      "last_seen": "2026-09-06T17:52:07.787Z"
+      "last_seen": "2026-09-07T00:06:13.140Z"
     },
     "dbd0be6b51574e856c5065993d6559d7bb67240ce23532156dcb9d97f6888d83": {
       "source_id": "europepmc-impact-research",
       "url": "https://europepmc.org/article/PMC/PMC13412020",
       "content_hash": "ab539ac49320e016e3a2cb59b8ef375cdf5825f88eac0afa13898538d3ba0645",
       "published_at": "2026-09-04T00:00:00.000Z",
-      "last_seen": "2026-09-06T17:52:07.787Z"
+      "last_seen": "2026-09-07T00:06:13.140Z"
     },
     "553d51996142b21ee33366b8b49c1f216435171a20f6d70bdb247565f032b13e": {
       "source_id": "euronews-en",
@@ -30844,12 +30844,12 @@
       "governance_hold_until": null
     },
     "europepmc-impact-research": {
-      "last_attempt": "2026-09-06T17:52:07.787Z",
-      "attempts": 12,
+      "last_attempt": "2026-09-07T00:06:13.140Z",
+      "attempts": 13,
       "consecutive_failures": 0,
-      "last_success": "2026-09-06T17:52:07.787Z",
+      "last_success": "2026-09-07T00:06:13.140Z",
       "last_error": null,
-      "feed_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=25&query=FIRST_PDATE%3A%5B2026-09-03%20TO%202026-09-06%5D%20AND%20OPEN_ACCESS%3AY%20AND%20%28TITLE_ABS%3Ahealth%20OR%20TITLE_ABS%3Aclimate%20OR%20TITLE_ABS%3Apollution%20OR%20TITLE_ABS%3Ainequality%29",
+      "feed_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=25&query=FIRST_PDATE%3A%5B2026-09-04%20TO%202026-09-07%5D%20AND%20OPEN_ACCESS%3AY%20AND%20%28TITLE_ABS%3Ahealth%20OR%20TITLE_ABS%3Aclimate%20OR%20TITLE_ABS%3Apollution%20OR%20TITLE_ABS%3Ainequality%29",
       "items": 25,
       "latest_item": "2026-09-04T00:00:00.000Z",
       "etag": null,
@@ -30956,10 +30956,10 @@
       "governance_hold_until": null
     },
     "ipcc-news": {
-      "last_attempt": "2026-09-06T17:52:07.787Z",
-      "attempts": 12,
+      "last_attempt": "2026-09-07T00:06:13.140Z",
+      "attempts": 13,
       "consecutive_failures": 0,
-      "last_success": "2026-09-06T17:52:07.787Z",
+      "last_success": "2026-09-07T00:06:13.140Z",
       "last_error": null,
       "feed_url": "https://www.ipcc.ch/feed/",
       "items": 10,
@@ -31383,7 +31383,7 @@
     "wt-a5874ae28ed5533f"
   ],
   "relevance_filter_version": "4.0",
-  "last_attempted_run": "2026-09-06T23:51:36.418Z",
+  "last_attempted_run": "2026-09-07T00:06:13.140Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1622,
