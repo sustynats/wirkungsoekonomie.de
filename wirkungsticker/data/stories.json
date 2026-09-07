@@ -1,7 +1,191 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T13:35:44.462Z",
+  "updated_at": "2026-09-07T13:42:50.274Z",
   "stories": [
+    {
+      "story_id": "wt-ed33c0962c4a697d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ed33c0962c4a697d-49b7a2c9864369a5-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ed33c0962c4a697d-deac7abb9a0b39f0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ed33c0962c4a697d-354d40311bb8bb22-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
+      "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+      "source_summary": "Der MDR berichtet in einem Liveticker zum Wahlergebnis in Sachsen-Anhalt. Nach dem vorläufigen Ergebnis liegt die AfD demnach bei 43,8 Prozent. Zugleich heißt es, Ministerpräsident Schulze sehe für die CDU keinen Regierungsauftrag mehr und die Partei sei in der Opposition.\n\nIm selben Beitrag werden weitere Eckdaten des neuen Landtags genannt, darunter 83 Abgeordnete und ein Frauenanteil von 21,7 Prozent. Der Text verweist auf eine Übersicht der Landeswahlleiterin als Grundlage für die Mandatszahlen. Offene Punkte bleiben die spätere amtliche Feststellung und mögliche Koalitionsfolgen.",
+      "summary": "Die AfD führt laut vorläufigem Ergebnis in Sachsen-Anhalt deutlich. Für die CDU beschreibt der Bericht einen Verlust des Regierungsauftrags und eine Rolle in der Opposition.",
+      "detail_summary": "Der Bericht hält als Kern fest, dass das vorläufige Wahlergebnis in Sachsen-Anhalt die AfD mit 43,8 Prozent vorne sieht und die CDU nach Einschätzung von Ministerpräsident Schulze keinen Regierungsauftrag mehr habe. Das ist politisch relevant, weil damit die Grundlage für Mehrheiten, Koalitionsverhandlungen und die künftige Regierungsbildung neu sortiert wird. Die direkte Zustandsänderung liegt zunächst in der veränderten Macht- und Verhandlungsposition der Parteien. Mögliche Folge sind neue Koalitionsoptionen, verschobene Ausschuss- und Parlamentsmehrheiten sowie ein anderer Kurs in Landespolitik und Bundesdebatte. Die Beleglage bleibt aber vorläufig und stützt sich hier auf einen journalistischen Bericht mit Verweis auf Wahlübersichten; die spätere amtliche Feststellung ist noch offen.",
+      "why_relevant": "Das vorläufige Wahlergebnis verändert die politische Mehrheitslage in einem Bundesland und damit die Grundlage für Regierung, Opposition und weitere Entscheidungen.",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Das Ergebnis betrifft Wählerinnen und Wähler, Parteien und die künftige Regierungsbildung. Für Menschen kann daraus ein anderer politischer Kurs folgen, aber die konkrete Wirkung ist noch offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Im vorliegenden Bericht gibt es keinen direkten Umwelt- oder Klimabezug. Ein späterer politischer Kurs könnte indirekt relevant werden, ist hier aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "sehr hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Wahl verändert Mehrheiten, Opposition und den Regierungsbildungsprozess. Das stärkt zunächst die demokratische Zustandsbeschreibung, birgt aber auch Konflikt- und Polarisierungspotenzial."
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "veränderte Sitz- und Stimmenverhältnisse im Landtag",
+            "direction": "open",
+            "condition": "Wenn das vorläufige Ergebnis bestätigt wird, verschiebt sich die parlamentarische Ausgangslage für Regierung und Opposition.",
+            "evidence": "scenario",
+            "claim_ids": []
+          },
+          {
+            "order": "second_order",
+            "path": "geänderte Koalitions- und Oppositionsrollen",
+            "direction": "open",
+            "condition": "Wenn keine Mehrheit für die bisherige Regierungsseite entsteht, ändern sich Verhandlungspositionen und Rollen.",
+            "evidence": "scenario",
+            "claim_ids": []
+          }
+        ],
+        "key_figures": [
+          {
+            "label": "AfD-Stimmenanteil",
+            "value": "43,8",
+            "unit": "Prozent",
+            "context": "Vorläufiges Ergebnis der AfD",
+            "claim_id": "wt-ed33c0962c4a697d-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "kommunen",
+          "haushalte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T13:42:50.274Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T12:35:38.000Z",
+      "last_updated": "2026-09-07T13:43:48.649Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-b05e38596ac7062bc4e0",
+      "case_file": {
+        "case_id": "case-c3b7412b8f0f9d",
+        "member_count": 6,
+        "publisher_count": 13,
+        "members": [
+          {
+            "story_id": "wt-ed33c0962c4a697d",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+            "summary": "Die AfD führt laut vorläufigem Ergebnis in Sachsen-Anhalt deutlich. Für die CDU beschreibt der Bericht einen Verlust des Regierungsauftrags und eine Rolle in der Opposition.",
+            "updated_at": "2026-09-07T13:43:48.649Z",
+            "published_at": "2026-09-07T13:43:48.649Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-67096fe077900925",
+            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
+            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
+            "updated_at": "2026-09-07T13:43:27.050Z",
+            "published_at": "2026-09-07T13:43:27.050Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-e10c23f5e37ed39e",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
+            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
+            "updated_at": "2026-09-06T20:53:01.243Z",
+            "published_at": "2026-09-06T20:53:01.243Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-12f9c680daba4f09",
+            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
+            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
+            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
+            "updated_at": "2026-09-06T20:07:20.597Z",
+            "published_at": "2026-09-06T20:07:20.597Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ebecf5b3f91d490",
+            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
+            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+            "updated_at": "2026-09-05T23:19:18.605Z",
+            "published_at": "2026-09-05T22:07:32.381Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-06476c6e980f5f47",
+            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-05T12:01:00.915Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-07T13:24:31.000Z",
+      "published_at": "2026-09-07T13:43:48.649Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-154,wahl-560.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T13:24:31.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-d6ae5b8518cc2e31",
       "title_image": {
@@ -111,153 +295,6 @@
           "url": "https://www.spiegel.de/panorama/justiz/xavier-naidoo-landgericht-mannheim-eroeffnet-verfahren-wegen-volksverhetzung-a-5fc326c6-19d0-43b0-a3bc-98e29eb9ac6f",
           "source_type": "media_rss",
           "published_at": "2026-09-07T12:11:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-e10c23f5e37ed39e",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e10c23f5e37ed39e-74a233e7c392016f-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e10c23f5e37ed39e-40a1849d51abf3e4-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e10c23f5e37ed39e-b0b0040e1c50b1a6-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
-      "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
-      "source_summary": "Der MDR meldet zur Landtagswahl in Sachsen-Anhalt eine aktuelle Hochrechnung von Infratest Dimap. Danach liegt die AfD mit rund 44,0 Prozent klar vorn, die CDU kommt auf 17,5 Prozent. Im Text wird außerdem genannt, dass das BSW mit 5,1 Prozent in den Landtag einziehen würde und die FDP mit 2,5 Prozent scheitert.\n\nOffen bleibt nach dem Bericht noch, ob die AfD die absolute Mehrheit der Sitze erreicht. Der Beitrag wurde am 6. September 2026 zuletzt aktualisiert; er verweist zugleich auf eine Audiofassung mit denselben Kernaussagen.",
-      "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
-      "detail_summary": "Der MDR berichtet über eine aktuelle Hochrechnung zur Landtagswahl in Sachsen-Anhalt und nennt die AfD mit rund 44,0 Prozent als stärkste Kraft. Für die CDU werden 17,5 Prozent genannt, zudem wird die Frage offengelassen, ob die AfD eine absolute Mehrheit der Sitze erreicht. Das ist politisch relevant, weil das Ergebnis die Macht- und Koalitionsoptionen im Landtag unmittelbar verändert. Der mögliche Wirkpfad betrifft damit die künftige Regierungsbildung, die Verhandlungsmacht der Parteien und die Zusammensetzung parlamentarischer Mehrheiten. Für eine belastbare Einordnung fehlt aber noch die amtliche Feststellung des Endergebnisses; die Quelle ist zudem eine einzelne journalistische Darstellung.",
-      "why_relevant": "Die Hochrechnung beschreibt eine mögliche Verschiebung der parlamentarischen Mehrheiten in einem Bundesland und damit eine unmittelbar demokratierelevante Zustandsänderung.",
-      "topic": [
-        "Demokratie",
-        "Politik"
-      ],
-      "status": "offen",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Das Ergebnis kann die politische Vertretung, Koalitionsbildung und den Handlungsspielraum der Wählerstimmen im Landtag verändern."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Aus der Meldung ergibt sich kein direkter Bezug zu Umwelt-, Klima- oder Ressourcenzuständen."
-        },
-        "democracy": {
-          "relevance": "sehr hoch",
-          "rationale": "Die Hochrechnung betrifft die Sitzverteilung, mögliche Mehrheiten und damit die demokratische Steuerungsfähigkeit im Landtag."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-06T20:51:30.652Z",
-      "editorial_analysis": {
-        "analysis_id": "woek-analysis-1abde052e9be",
-        "slug": "wenn-aus-programm-staatsmacht-wird-sachsen-anhalt",
-        "title": "Wenn aus Programm Staatsmacht wird: Was eine AfD-geführte Regierung in Sachsen-Anhalt verändern könnte",
-        "teaser": "Wer über Geld, Personal und Regeln entscheidet, verändert den Alltag. Diese Sonderanalyse zeigt, warum die angekündigten Eingriffe einer AfD-geführten Regierung besonders in ihrer Verbindung erhebliche Risiken für Mensch, Planet und Demokratie bergen.",
-        "published_at": "2026-09-06T22:56:33.651Z",
-        "updated_at": "2026-09-07T05:38:16.141Z"
-      },
-      "first_seen": "2026-09-06T20:22:40.000Z",
-      "last_updated": "2026-09-06T20:53:01.243Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-c34e678b7220e99b9eea",
-      "case_file": {
-        "case_id": "case-c3b7412b8f0f9d",
-        "member_count": 4,
-        "publisher_count": 13,
-        "members": [
-          {
-            "story_id": "wt-e10c23f5e37ed39e",
-            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
-            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
-            "updated_at": "2026-09-06T20:53:01.243Z",
-            "published_at": "2026-09-06T20:53:01.243Z",
-            "kind": "Weitere Entwicklung",
-            "current": true
-          },
-          {
-            "story_id": "wt-12f9c680daba4f09",
-            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
-            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
-            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
-            "updated_at": "2026-09-06T20:07:20.597Z",
-            "published_at": "2026-09-06T20:07:20.597Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ebecf5b3f91d490",
-            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
-            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
-            "updated_at": "2026-09-05T23:19:18.605Z",
-            "published_at": "2026-09-05T22:07:32.381Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-06476c6e980f5f47",
-            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
-            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
-            "updated_at": "2026-09-05T12:28:41.779Z",
-            "published_at": "2026-09-05T12:01:00.915Z",
-            "kind": "Kontext oder Einordnung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-06T20:22:40.000Z",
-      "published_at": "2026-09-06T20:53:01.243Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Wie viele Sitze erhält die AfD nach der amtlichen Feststellung des Endergebnisses?",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "amtlich festgestellte Sitzanzahl der AfD",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-49f72abce2075658",
-          "announced_at": "2026-09-06T20:22:40.000Z",
-          "follow_up_date": "2026-09-13T20:53:01.243Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/news-aktuelles-wahltag-wahlbeteiligung-114,ergebnisse-wahlkreise-gemeinden-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T20:22:40.000Z",
           "primary_source": false
         }
       ]
