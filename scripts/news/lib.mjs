@@ -4,7 +4,7 @@ import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./rea
 import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
-import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA } from "./visuals.mjs";
+import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA, DIMENSION_TENDENCY_RULE } from "./visuals.mjs";
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
@@ -870,6 +870,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     "material_development_review ist nur ein Prüfsignal. Neue Kandidatur-, Rücktritts-, Koalitions-, Regierungsbildungs- oder Ergebnisangaben vergleichen: materielle Aussage = material_update, anderes Medium allein = Dublette. Artikelzeit ist nicht Aussagezeit: Spätere Artikel können alte Zitate enthalten. Vor Kurswechselbehauptungen frühere Bedingungen, datierte Aussagen und Nachträge prüfen; das Publikationsdatum entscheidet keinen Widerspruch. Videoüberschrift ist kein geprüfter Originalton. Zeitkritik erhöht Prüfpriorität, nie Evidenzgrad. Gleiche Regeln für alle Parteien/Medien; Landtagswahl und Regierungschefwahl trennen.",
     "publication_recommendation=false bei unzureichend belegtem Ereignis/Status/Kern oder unmöglicher seriöser Einordnung. Ex-ante-Analyse mit Unsicherheiten bleibt bei bestandenem Materialitäts-/Evidenzgate zulässig.",
     "Trenne Fakt, Beobachtung, analytische Inferenz, Wirkungspotenzial, Wirkungsrisiko, eingetretene Wirkung, Zurechnung und normative Bewertung.",
+    DIMENSION_TENDENCY_RULE,
     "Verfahrensstand des konkreten Hauptgegenstands zum Quellenstand: Kabinettsbeschluss über Gesetzentwurf = Entwurf; beschlossen = endgültig verabschiedete Regelung/Entscheidung; in Kraft = bereits belegtes Inkrafttreten, nie Zukunftstermin. Geltendes Recht nicht zurückstufen. Frist/Entwurf/Beschluss/Inkrafttreten/Umsetzung getrennt halten; Vergleichsgesetz oder Teilregel bestimmt nicht den Hauptstatus. Unklar bleibt offen. Ex ante ist kein Verfahrensstand und vor messbarer Wirkung auch nach Inkrafttreten möglich.",
     "Wirkung ist neutral und eine tatsächliche Zustandsveränderung. Ex ante nie behaupten, eine Maßnahme bewirke bereits etwas. Output ist keine Wirkung; Zielbezug ist kein Kausalitätsbeweis.",
     "Keine Personen-, Parteien- oder moralische Rangliste. Reichweite ist nicht Wirkung. Benenne Nichtkompensation und Reverse Merit Order nur, wenn Schutzgrenzen oder Priorisierung materiell relevant sind.",
@@ -899,9 +900,9 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         why_relevant: "string",
         status: "angekündigt|Entwurf|beschlossen|in Kraft|laufende Umsetzung|erste Daten|evaluiert|laufende Entwicklung|offen",
         analysis_type: "ex_ante|monitoring|ex_post",
-        human: { relevance: "gering|mittel|hoch|sehr hoch|offen", rationale: "string" },
-        planet: { relevance: "gering|mittel|hoch|sehr hoch|offen", rationale: "string" },
-        democracy: { relevance: "gering|mittel|hoch|sehr hoch|offen", rationale: "string" },
+        human: { relevance: "gering|mittel|hoch|sehr hoch|offen", tendency: "chance|risiko|gemischt|offen", rationale: "string" },
+        planet: { relevance: "gering|mittel|hoch|sehr hoch|offen", tendency: "chance|risiko|gemischt|offen", rationale: "string" },
+        democracy: { relevance: "gering|mittel|hoch|sehr hoch|offen", tendency: "chance|risiko|gemischt|offen", rationale: "string" },
         importance: "gering|mittel|hoch|sehr hoch",
         impact_potential: "string",
         impact_risks: ["string"],

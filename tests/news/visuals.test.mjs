@@ -164,7 +164,8 @@ test("KI-Visuals werden nur gerendert, wenn vorhanden", () => {
 });
 
 test("Prompt-Bausteine sind vorhanden", () => {
-  assert.ok(VISUALS_SCHEMA.key_figures && VISUALS_SCHEMA.tendency && VISUALS_SCHEMA.chart);
+  assert.ok(VISUALS_SCHEMA.key_figures && VISUALS_SCHEMA.path_directions && VISUALS_SCHEMA.chart);
+  assert.equal(VISUALS_SCHEMA.tendency, undefined, 'Tendenzen stehen künftig einmalig in den Basisdimensionen');
   assert.ok(VISUALS_PROMPT_RULES.join(" ").includes("Zahlwort bleibt Zahlwort"));
 });
 

@@ -2,13 +2,26 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { documentKey, fileSubject, namedSubjects, subjectConflict, livingFileMatch, duplicateGroups, mergeLivingFiles, relatedStories, diplomaticVisit } from "../../scripts/news/living-files.mjs";
 import { anchoredSources, clusterItems, existingStoryMatch } from "../../scripts/news/lib.mjs";
-import { renderRelatedStories } from "../../scripts/news/build.mjs";
+import { renderRelatedStories, renderConsolidations } from "../../scripts/news/build.mjs";
 import { runWirkungsticker, publishedRecord, repartitionOversizedSourceQueues } from "../../scripts/news/run.mjs";
 
 const now = "2026-09-04T06:00:00Z";
 const source = (title, url = "https://example.org/a", more = {}) => ({ title, url, source_id: "test", publisher_id: "test", publisher: "Test", primary_source: true, published_at: now, ...more });
 const story = (id, title, more = {}) => ({ story_id: id, slug: id, title, source_summary: "", published: true, listed: true, published_at: now, last_updated: now, first_seen: now, sources: [source(title, `https://example.org/${id}`)], claims: [], analysis: { summary: title }, versions: [{ version: 1, analyzed_at: now }], current_version: 1, ...more });
 const dormagen = story("dormagen", "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen");
+
+test('consolidation history links only actual public pages, retaining archived publications', () => {
+  const main = story('current', 'Aktuelle Nachricht', { living_file: { consolidations: [
+    { slug: 'archived', title: 'Früher veröffentlicht', at: now },
+    { slug: 'never-published', title: 'Nur entdeckter Kandidat', at: now },
+  ] } });
+  const before = JSON.stringify(main);
+  const html = renderConsolidations(main, new Set(['current', 'archived']));
+  assert.match(html, /href="\.\.\/archived\/"/);
+  assert.doesNotMatch(html, /never-published|Nur entdeckter Kandidat/);
+  assert.equal(renderConsolidations(main, new Set(['current'])), '');
+  assert.equal(JSON.stringify(main), before);
+});
 
 test('an attached election background report cannot bridge polls into rallies', () => {
   const poll = story('poll', 'Vor der Landtagswahl: Sachsen-Anhalt und die Tücken der Umfragen');
