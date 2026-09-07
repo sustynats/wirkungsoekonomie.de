@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {normalizePublicationTypography} from '../lib/public-typography.mjs';
+import {normalizeShareMetadata} from '../lib/share-metadata.mjs';
 
 const SITE='https://wirkungsoekonomie.de';
 const esc=value=>String(value).replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;');
@@ -70,7 +71,7 @@ export function normalizePublicContent(root, options={}) {
   const pages=new Map();const report={reviewedAt:'2026-09-06',linkRewrites:[],fragmentAliases:[],uniqueIds:[],duplicates:[],headings:[],staleTocEntries:[],duplicateDownloadButtons:[]};
   for(const file of walk(root)){
     const rel=path.relative(root,file).replaceAll(path.sep,'/');const route=rel==='index.html'?'/':'/'+(rel.endsWith('/index.html')?rel.slice(0,-10):rel);
-    const original=fs.readFileSync(file,'utf8');let html=original;
+    const original=fs.readFileSync(file,'utf8');let html=normalizeShareMetadata(original);
     // JSON mirrors are machine access points, not duplicate editorial pages.
     if(rel.startsWith('api/'))html=normalizeMachineMirror(html);
     for(const [id,label] of Object.entries(headingAnchors[route] || {})){
