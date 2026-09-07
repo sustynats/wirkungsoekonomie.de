@@ -1,8 +1,50 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-07T15:08:51.209Z",
+  "updated_at": "2026-09-07T15:55:26.355Z",
   "candidates": [
+    {
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "story_slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
+      "story_title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
+      "editorial_analysis_score": 71,
+      "analysis_gain": 48,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 0,
+        "distribution_relevance": 6,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-17508db58ecc"
+    },
     {
       "story_id": "wt-60f4e4d7d43fad99",
       "story_slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
@@ -341,48 +383,6 @@
       "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
       "status": "published",
       "analysis_id": "woek-analysis-dab9cdd59202"
-    },
-    {
-      "story_id": "wt-f7d7115a53ff2c2f",
-      "story_slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
-      "story_title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
-      "editorial_analysis_score": 73,
-      "analysis_gain": 48,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 4,
-        "mpd_relevance": 7,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 3,
-        "MPD_interdependence": 0,
-        "distribution_relevance": 6,
-        "discourse_relevance": 6,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 2,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "bece0de0467f9ec9824b0ae47475c565fa1771d782ec154e3dc65e2e52c28a3c",
-      "status": "published",
-      "analysis_id": "woek-analysis-17508db58ecc"
     },
     {
       "story_id": "wt-f2edeab46d126d83",
@@ -17416,13 +17416,22 @@
     "wt-60f4e4d7d43fad99": {
       "fingerprint": "f68e99ac37a8b6579dd16fe4bca19cb8fe88ce840c7370004d3e4896b72b5653",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-07T15:24:20.633Z",
-      "next_attempt_at": "2026-09-07T15:54:20.633Z",
+      "attempts": 3,
+      "last_attempt_at": "2026-09-07T15:55:26.355Z",
+      "next_attempt_at": "2026-09-07T16:55:26.355Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_IMPACT_OPEN"
       ],
       "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_IMPACT_OPEN"
+    },
+    "wt-f7d7115a53ff2c2f": {
+      "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
+      "method_version": "1.0",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-07T15:55:26.355Z",
+      "next_attempt_at": "2026-09-07T16:10:26.355Z",
+      "quality_errors": [],
+      "reason": "AI_PROVIDER_OUTPUT_INVALID"
     }
   }
 }
