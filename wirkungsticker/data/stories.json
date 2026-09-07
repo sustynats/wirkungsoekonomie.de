@@ -1,7 +1,449 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T22:09:44.497Z",
+  "updated_at": "2026-09-07T23:08:50.989Z",
   "stories": [
+    {
+      "story_id": "wt-46e6bd810843b8fe",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-c57889a3125a3af1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-77682938db5ae76e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-438027a69aa506c4-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe",
+      "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+      "source_summary": "Das Atomkraftwerk Saporischschja wird nach Angaben der berichteten Quelle wieder von einer externen Stromleitung versorgt. Im Beitrag heißt es, eine beschädigte Verbindung sei während einer begrenzten Feuerpause repariert worden. Der Generaldirektor der Internationalen Atomenergiebehörde wird mit der Mitteilung zitiert, die Stromversorgung diene dem Kühlen radioaktiven Materials.\n\nZugleich wird beschrieben, dass die von Russland besetzte Anlage in Frontnähe fast drei Wochen lang nur über Notstromgeneratoren lief. Offen bleibt nach dieser Meldung, wie stabil die Leitung ist und ob weitere Gefährdungen für den Betrieb ausgeschlossen sind.",
+      "summary": "Das Atomkraftwerk Saporischschja ist wieder an eine externe Stromleitung angeschlossen. Zuvor war die Anlage fast drei Wochen lang nur über Notstromgeneratoren versorgt worden.",
+      "detail_summary": "Die Meldung beschreibt eine konkrete Veränderung des Zustands am Atomkraftwerk Saporischschja: Die externe Stromversorgung ist wiederhergestellt. Das ist relevant, weil die Leitung nach Darstellung der Quelle dazu dient, radioaktives Material zu kühlen und Sicherheitssysteme zu versorgen. Dadurch sinkt zunächst das akute Risiko eines Energieausfalls im Kraftwerk, auch wenn die Quelle keine vollständige Entwarnung gibt. Für Menschen und Umwelt ist das materiell, weil ein Ausfall der Kühlung und der Sicherheitssysteme schwerwiegende Folgewirkungen haben könnte. Der zentrale Wirkpfad verläuft daher über Infrastrukturstabilität, Sicherheitsreserven und Reversibilität der Lage. Offen bleibt, wie belastbar die Reparatur ist und ob die Versorgung dauerhaft gesichert ist; die Meldung liefert dazu nur einen begrenzten Erststand.",
+      "why_relevant": "Die Meldung beschreibt eine neue, sicherheitsrelevante Zustandsänderung an einem großen Atomkraftwerk mit möglicher Auswirkung auf Menschen und Umwelt. Die Folgewirkung betrifft Infrastruktur, Reversibilität und Kaskadenrisiken, nicht bloß Reichweite oder Aufmerksamkeit.",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "chance",
+          "rationale": "Die wiederhergestellte Stromversorgung senkt zunächst das Risiko für Kühlung und Sicherheitssysteme des Kraftwerks. Betroffen sind potenziell Menschen in der Region, auch wenn die konkrete Schadenslage offen bleibt."
+        },
+        "planet": {
+          "relevance": "sehr hoch",
+          "tendency": "chance",
+          "rationale": "Für die Umwelt ist die stabile Versorgung eines Atomkraftwerks materiell, weil sie ein Ausfallrisiko bei der Kühlung radioaktiven Materials mindern kann. Ein tatsächlicher Umweltschaden wird damit nicht behauptet, nur das reduzierte Risikopotenzial."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Meldung betrifft vor allem Energie- und Sicherheitsinfrastruktur im Krieg. Ein direkter Bezug zu demokratischer Korrekturfähigkeit oder Entscheidungsstrukturen ist in der Quelle nicht belegt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "europa",
+          "natur"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:08:50.989Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T20:26:58.000Z",
+      "last_updated": "2026-09-07T23:09:24.588Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-5e80ce591f52469f8da2",
+      "case_file": null,
+      "source_published_at": "2026-09-07T20:26:58.000Z",
+      "published_at": "2026-09-07T23:09:24.588Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T20:26:58.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:41:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4b5d0962d323432a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-1a03b859bb729371-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-0af761553550d1cc-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-251435bded92fdf4-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+      "source_summary": "Die Europäische Kommission teilt mit, dass sie einen deutschen Kapazitätsmechanismus nach den EU-Beihilfevorschriften geprüft und genehmigt hat. Die Maßnahme soll ab 2031 verfügbar sein und laut Quelle zwischen 15,6 Mrd. EUR und 35,2 Mrd. EUR kosten. Ziel ist, dass ausreichende Kapazitäten für Erzeugung, Speicherung und flexiblen Verbrauch von Strom vorhanden sind, damit die erwartete Nachfrage gedeckt werden kann.\n\nDie Bundesregierung erklärt ergänzend, das Gesetz für neue Stromkapazitäten sei am 22. Juli in Kraft getreten. Sie nennt einen Kapazitätsmarkt ab 2031, erste Ausschreibungen über elf Gigawatt in den nächsten zwölf Monaten sowie weitere Ausschreibungen in den Jahren 2027 und 2029. Die spätere genaue Regelung und Finanzierung solle in einem weiteren Gesetz voraussichtlich 2027 beschlossen werden.",
+      "summary": "Die EU-Kommission hat den deutschen Kapazitätsmechanismus genehmigt. Das Gesetz ist in Kraft, aber viele Ausgestaltungen und die Finanzierung bleiben noch offen.",
+      "detail_summary": "Der zentrale Sachverhalt ist die Genehmigung eines deutschen Kapazitätsmechanismus durch die EU-Kommission und der Hinweis der Bundesregierung, dass das dazugehörige Gesetz bereits in Kraft ist. Materiell relevant ist das, weil es Regeln und Anreize für Investitionen, Vorhaltung und Standortwahl im Stromsystem verändert. Der Wirkpfad führt von der Absicherung steuerbarer Kapazitäten über Versorgungssicherheit und Resilienz bis zu möglichen Folgen für Strommarkt, Netze und Investitionsentscheidungen. Offen bleibt aber, wie die Ausschreibungen genau gestaltet werden, wie Kosten weitergegeben werden und welche tatsächlichen Systemeffekte später eintreten. Deshalb ist das eine belastbare Entscheidungsmeldung, aber noch keine Wirkungsmeldung.",
+      "why_relevant": "Die Meldung ändert den Regelrahmen für Versorgungssicherheit und Investitionen im Stromsystem. Sie betrifft potenziell große Kapazitäten und damit Marktanreize, Kostenverteilung und Resilienz.",
+      "topic": [
+        "Energie",
+        "Europa",
+        "Politik"
+      ],
+      "status": "in Kraft",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Mögliche Folgen betreffen Stromversorgung, Preise und Investitionsanreize für Haushalte und Wirtschaft. Die Versorgungssicherheit kann steigen, zugleich bleiben Kosten- und Verteilungsfragen offen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Die Quelle nennt Klimaneutralität ab 2045 für geförderte Kraftwerke und wasserstofffähige Auslegung neuer Gaskraftwerke. Zugleich ist noch offen, wie stark der Mechanismus fossile Übergangsstrukturen verlängert oder Emissionen senkt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "rationale": "Relevant ist die Änderung eines staatlich geregelten Markt- und Beihilferahmens mit möglicher Kostenwirkung für Verbraucher und Unternehmen. Ob die demokratische Korrekturfähigkeit gestärkt oder belastet wird, lässt sich aus der Quelle noch nicht sicher ableiten."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "staat",
+          "kommunen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:02:05.417Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-0bfd0f9a3434",
+        "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
+        "title": "Kapazitätsmechanismus: Was die EU-Genehmigung am Stromsystem ändert",
+        "teaser": "Die EU hat den deutschen Kapazitätsmechanismus genehmigt, die Bundesregierung verweist auf ein bereits in Kraft getretenes Gesetz. Das ist mehr als eine Formalie: Es verschiebt Investitionsanreize im Stromsystem. Ob daraus tatsächlich mehr Versorgungssicherheit, höhere Kosten oder neue Lock-ins entstehen, entscheidet sich erst in den kommenden Jahren.",
+        "published_at": "2026-09-05T21:07:03.109Z",
+        "updated_at": "2026-09-07T23:05:14.172Z"
+      },
+      "first_seen": "2026-09-01T22:00:00.000Z",
+      "last_updated": "2026-09-07T23:04:25.349Z",
+      "version": 4,
+      "news_status": "confirmed",
+      "event_id": "event-657469d969e66b251ae7",
+      "case_file": null,
+      "source_published_at": "2026-09-01T22:00:00.000Z",
+      "published_at": "2026-09-03T11:15:45.293Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "eu-kommission-presse"
+          ],
+          [
+            "bundesregierung-kompakt"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die ersten Ausschreibungen tatsächlich wie angekündigt starten und in welchem Umfang Kapazitäten bezuschlagt werden.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Veröffentlichte Ausschreibungen, Zuschlagsmengen und Termine",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9efbc37f6ede6e40",
+          "announced_at": "2026-09-03T11:00:00.000Z",
+          "follow_up_date": "2026-09-13T17:53:28.215Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Bundesregierung nennt weitere Ausschreibungen im Jahr 2027 und 2029.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Ob die angekündigten Ausschreibungen tatsächlich starten.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-976a767510d14c32",
+          "announced_at": "2026-09-03T11:00:00.000Z",
+          "follow_up_date": "2026-09-14T23:04:25.349Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Bundesregierung nennt eine spätere Regelung und Finanzierung des Kapazitätsmarkts in einem weiteren Gesetz voraussichtlich 2027.",
+          "source_id": "bundesregierung-kompakt",
+          "expected_by": null,
+          "measurable_indicator": "Ob ein weiteres Gesetz zum Kapazitätsmarkt beschlossen wird.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4991cc55d70108a1",
+          "announced_at": "2026-09-03T11:00:00.000Z",
+          "follow_up_date": "2026-09-14T23:04:25.349Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Europäische Kommission - Press Corner",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
+          "source_type": "official_rss",
+          "published_at": "2026-09-01T22:00:00.000Z",
+          "primary_source": true
+        },
+        {
+          "publisher": "Bundesregierung kompakt",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
+          "source_type": "official_rss",
+          "published_at": "2026-09-03T11:00:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-b10575d1c95b9e06",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-9fa5550854dfdb85-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-d80bc562e07791e2-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-b8234c85c47846b7-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "serbien-feierliche-beisetzung-von-kriegsverbrecher-mladic-in-belgrad-hat-begonnen-5b9e06",
+      "title": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen",
+      "source_summary": "In Serbien hat die Beisetzungsfeier für Ratko Mladić begonnen. Der Sarg des früheren bosnisch-serbischen Militärchefs wurde in einer serbisch-orthodoxen Kirche in Belgrad aufgebahrt und anschließend durch die Stadt zu einem Friedhof geleitet. Serbischen Medien zufolge nahmen auch Minister und Soldaten an der Zeremonie teil, und der Justizminister hatte staatliche Ehren angekündigt.\n\nAus Protest sagte EU-Erweiterungskommissarin Marta Kos eine Reise nach Serbien ab. Sie begründete das mit der Verherrlichung Mladićs, die aus ihrer Sicht nicht zu den Werten der Europäischen Union passt. Mladić war im Alter von 84 Jahren in Den Haag gestorben und 2017 zu lebenslanger Haft verurteilt worden.",
+      "summary": "Die Beisetzung von Ratko Mladić hat in Belgrad begonnen. Die Zeremonie löste Proteste aus und führte zu einer abgesagten Reise der EU-Erweiterungskommissarin.",
+      "detail_summary": "Der Bericht schildert den Beginn der Beisetzungsfeier für Ratko Mladić in Belgrad. Genannt werden die Aufbahrung in einer serbisch-orthodoxen Kirche, der anschließende Zug zum Friedhof sowie Hinweise auf die Teilnahme von Ministern und Soldaten. Zusätzlich wird berichtet, dass die serbische Seite staatliche Ehren angekündigt hatte. Politisch relevant ist vor allem die Reaktion aus Brüssel: Marta Kos sagte ihre Reise nach Serbien ab und begründete das mit der Verherrlichung Mladićs. Der Wirkpfad liegt damit vor allem im diplomatischen und symbolischen Bereich, nicht in einem bereits belegten materiellen Folgeeffekt. Offen bleibt, ob und wie sich daraus weitere Schritte im Verhältnis zwischen Serbien und der EU ergeben. Die Beleglage ist zunächst auf einen journalistischen Bericht begrenzt.",
+      "why_relevant": "Die Beisetzung eines wegen Kriegsverbrechen verurteilten früheren Militärchefs berührt das Verhältnis zwischen serbischer Innenpolitik, öffentlicher Erinnerung und EU-Beitrittskontext. Dazu kommt eine konkrete diplomatische Reaktion mit abgesagter Reise.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind politische Öffentlichkeit, Angehörige und die Erinnerung an Kriegsverbrechen; die Zeremonie kann Polarisierung und Protest verstärken. Ein direkter materieller Effekt ist hier aber nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es gibt keinen unmittelbaren Umweltbezug in den vorliegenden Quellen. Ein Wirkpfad auf Planet-Zustände ist nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Die staatliche Ehrenfrage, die öffentliche Verherrlichung und die EU-Reaktion betreffen demokratische Normen, Rechtsstaatssignale und die politische Korrekturfähigkeit. Die Quelle belegt vor allem einen symbolischen Konflikt."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:02:05.417Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T08:19:11.000Z",
+      "last_updated": "2026-09-07T23:03:49.328Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-f068ec67184a61796780",
+      "case_file": null,
+      "source_published_at": "2026-09-07T16:32:01.000Z",
+      "published_at": "2026-09-07T23:03:49.328Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/feierliche-beisetzung-von-kriegsverbrecher-mladi-in-belgrad-hat-begonnen-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-106.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:41:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-3705bea838c05b93",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-69e4c5764a09f98f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-ead54f05e86bbf35-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-4ff0150c2e48cff1-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wirtschaft-kanadische-gegenzolle-auf-us-importe-treten-in-kraft-c05b93",
+      "title": "Wirtschaft - Kanadische Gegenzölle auf US-Importe treten in Kraft",
+      "source_summary": "Im Zollstreit zwischen den USA und Kanada treten nach Darstellung des Deutschlandfunks heute kanadische Gegenzölle in Kraft. Genannt wird, dass das kanadische Finanzministerium Zölle von bis zu 50 Prozent auf Teile der Importe aus den USA vorsieht. Als betroffene Waren werden Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte aufgezählt.\n\nDer Bericht ordnet den Schritt in eine zugespitzte Handelssituation ein: Die Gespräche zwischen beiden Ländern seien zuletzt gescheitert, die USA hätten bereits im August Zölle auf kanadische Waren verhängt. Außerdem wird berichtet, dass US-Präsident Trump gegen den Flugzeugbauer Bombardier Stimmung mache und dessen Produkte nicht mehr auf dem amerikanischen Markt sehen wolle.",
+      "summary": "Kanada setzt Gegenzölle gegen US-Importe in Kraft. Betroffen sind mehrere Warengruppen, darunter Stahl, Aluminium und Elektronik.",
+      "detail_summary": "Der Kern der Meldung ist ein handelspolitischer Schritt: Kanada lässt Gegenzölle auf US-Importe wirksam werden. Der Bericht nennt als Größenordnung Zölle von bis zu 50 Prozent und mehrere betroffene Produktgruppen. Für die Einordnung zählt das, weil sich damit Kosten, Handelsströme und mögliche Gegenreaktionen im bilateralen Handel verändern können. Der Wirkpfad verläuft über höhere Importpreise, mögliche Ausweichreaktionen von Unternehmen und Druck auf weitere Verhandlungen. Offen bleibt, wie breit die Regel im Detail greift und welche Gegenmaßnahmen folgen. Die Evidenzlage ist für eine kurze Erstmeldung brauchbar, bleibt aber auf eine journalistische Quelle begrenzt.",
+      "why_relevant": "Der Schritt verändert handelspolitische Rahmenbedingungen zwischen zwei großen Volkswirtschaften und kann Preise, Lieferketten und Gegenmaßnahmen beeinflussen.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Höhere Zölle können Preise und Verfügbarkeit betroffener Güter verändern; zugleich sind mögliche Gegenreaktionen und Belastungen für Beschäftigte und Verbraucher offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "gemischt",
+          "rationale": "Ein direkter Umweltpfad ist nicht belegt; mögliche Verlagerungen von Produktion und Transport wären nur mittelbar und derzeit offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Der Streit berührt die handelspolitische Steuerung zwischen Staaten und kann Korrekturfähigkeit, Verhandlungsmacht und Konfliktdynamik beeinflussen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:02:05.417Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T22:41:30.000Z",
+      "last_updated": "2026-09-07T23:03:29.075Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-107131005f4992182fca",
+      "case_file": null,
+      "source_published_at": "2026-09-07T22:41:30.000Z",
+      "published_at": "2026-09-07T23:03:29.075Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:41:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-811d4815cfd8d70d",
       "title_image": {
@@ -6652,146 +7094,6 @@
           "source_type": "media_rss",
           "published_at": "2026-09-06T17:47:51.000Z",
           "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4b5d0962d323432a",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-980c18f3dd96941c-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-e308c1a6d31092c4-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4b5d0962d323432a-2a6919d179539aba-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
-      "title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
-      "source_summary": "Die Europäische Kommission teilt mit, sie habe einen für Deutschland vorgesehenen Kapazitätsmechanismus nach EU-Beihilfevorschriften geprüft und genehmigt. Die Maßnahme soll ab 2031 zur Verfügung stehen; die Kosten werden in der Mitteilung mit 15,6 Mrd. EUR bis 35,2 Mrd. EUR angegeben.\n\nDie Bundesregierung beschreibt das zugehörige Stromversorgungssicherheits- und Kapazitätengesetz als bereits verabschiedet und nennt den 22. Juli als Inkrafttretensdatum. Nach ihrer Darstellung soll ein Kapazitätsmarkt den Bedarf ab 2031 decken; in den nächsten zwölf Monaten seien Ausschreibungen über insgesamt elf Gigawatt vorgesehen, weitere im Jahr 2027 und 2029.",
-      "summary": "Die EU-Kommission hat den deutschen Kapazitätsmechanismus genehmigt. Die Bundesregierung beschreibt dazu ein bereits in Kraft getretenes Gesetz mit ersten Ausschreibungen und einem Start des Kapazitätsmarkts ab 2031.",
-      "detail_summary": "Gesichert ist damit eine regulatorische Entscheidung mit direktem Bezug zur Stromversorgung: Die EU-Kommission hat den deutschen Kapazitätsmechanismus genehmigt, während die Bundesregierung das zugrunde liegende Gesetz als in Kraft getreten beschreibt. Materiell relevant ist das vor allem, weil damit Investitionsanreize, die Bereitstellung flexibler Stromkapazitäten und spätere Zahlungsströme für Marktteilnehmer beeinflusst werden können. Der Wirkpfad verläuft über Ausschreibungen, Zuschläge und die Verpflichtung, Leistung zu halten oder neu zu errichten. Mögliche Folgen sind mehr gesicherte Kapazität für Dunkelflauten und damit mehr Versorgungssicherheit, zugleich aber auch Kostenwirkungen und Verteilungseffekte für Verbraucher und Wirtschaft. Offen bleibt, wie genau die Finanzierung, die Technologiekriterien und die tatsächliche Nutzung aussehen. Ebenfalls unbelegt sind hier die spätere Emissionswirkung und die konkrete Marktreaktion.",
-      "why_relevant": "Die Meldung betrifft eine verbindliche EU-Genehmigung und ein bereits in Kraft getretenes nationales Regelwerk für Stromkapazitäten. Das kann Regeln, Anreize und Kapitalflüsse im Energiesystem verändern und ist damit systemisch relevant.",
-      "topic": [
-        "Energie",
-        "Europa",
-        "Politik"
-      ],
-      "status": "beschlossen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Die Maßnahme zielt auf Versorgungssicherheit und Investitionen im Stromsystem, also auf einen Bereich mit direkter Bedeutung für Haushalte und Betriebe."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Bundesregierung verknüpft das Gesetz mit Dekarbonisierung und Wasserstoff-Readiness; konkrete Klima- oder Emissionswirkungen sind aber noch offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Es geht um beihilferechtlich genehmigte staatliche Marktgestaltung und spätere Kostenzuordnung; die konkrete Ausgestaltung bleibt politisch kontrollierbar."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Geschätzte Kosten",
-            "value": "15,6",
-            "unit": "Mrd. EUR",
-            "context": "untere Kostenschätzung des Mechanismus",
-            "claim_id": "wt-4b5d0962d323432a-v3-claim-1"
-          },
-          {
-            "label": "Geschätzte Kosten",
-            "value": "35,2",
-            "unit": "Mrd. EUR",
-            "context": "obere Kostenschätzung des Mechanismus",
-            "claim_id": "wt-4b5d0962d323432a-v3-claim-1"
-          }
-        ],
-        "affected_groups": [
-          "haushalte",
-          "unternehmen",
-          "beschaeftigte",
-          "staat"
-        ],
-        "tendency": {
-          "human": "gemischt",
-          "planet": "gemischt",
-          "democracy": "offen"
-        }
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-06T17:52:07.787Z",
-      "editorial_analysis": {
-        "analysis_id": "woek-analysis-0bfd0f9a3434",
-        "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
-        "title": "Genehmigter Kapazitätsmechanismus für Deutschland: mehr gesicherte Leistung, offene Kostenfolgen",
-        "teaser": "Die EU-Kommission genehmigt Deutschlands Kapazitätsmechanismus. Das stärkt Planungssicherheit im Stromsystem, verschiebt aber Kosten, Anreize und Verteilungsfragen.",
-        "published_at": "2026-09-05T21:07:03.109Z",
-        "updated_at": "2026-09-06T18:24:28.974Z"
-      },
-      "first_seen": "2026-09-01T22:00:00.000Z",
-      "last_updated": "2026-09-06T17:53:28.215Z",
-      "version": 3,
-      "news_status": "confirmed",
-      "event_id": "event-657469d969e66b251ae7",
-      "case_file": null,
-      "source_published_at": "2026-09-01T22:00:00.000Z",
-      "published_at": "2026-09-03T11:15:45.293Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "eu-kommission-presse"
-          ],
-          [
-            "bundesregierung-kompakt"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die ersten Ausschreibungen tatsächlich wie angekündigt starten und in welchem Umfang Kapazitäten bezuschlagt werden.",
-          "source_id": "bundesregierung-kompakt",
-          "expected_by": null,
-          "measurable_indicator": "Veröffentlichte Ausschreibungen, Zuschlagsmengen und Termine",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-9efbc37f6ede6e40",
-          "announced_at": "2026-09-03T11:00:00.000Z",
-          "follow_up_date": "2026-09-13T17:53:28.215Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Europäische Kommission - Press Corner",
-          "url": "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_1778",
-          "source_type": "official_rss",
-          "published_at": "2026-09-01T22:00:00.000Z",
-          "primary_source": true
-        },
-        {
-          "publisher": "Bundesregierung kompakt",
-          "url": "https://www.bundesregierung.de/breg-de/aktuelles/stromversorgungssicherheit-2430320",
-          "source_type": "official_rss",
-          "published_at": "2026-09-03T11:00:00.000Z",
-          "primary_source": true
         }
       ]
     },
@@ -16138,6 +16440,17 @@
   ],
   "editorial_analyses": [
     {
+      "analysis_id": "woek-analysis-0bfd0f9a3434",
+      "story_id": "wt-4b5d0962d323432a",
+      "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
+      "title": "Kapazitätsmechanismus: Was die EU-Genehmigung am Stromsystem ändert",
+      "subtitle": "Die Entscheidung schafft einen neuen Vergütungsrahmen für gesicherte Stromkapazitäten. Die Wirkung hängt aber erst an Ausschreibungen, Finanzierung und Bau.",
+      "teaser": "Die EU hat den deutschen Kapazitätsmechanismus genehmigt, die Bundesregierung verweist auf ein bereits in Kraft getretenes Gesetz. Das ist mehr als eine Formalie: Es verschiebt Investitionsanreize im Stromsystem. Ob daraus tatsächlich mehr Versorgungssicherheit, höhere Kosten oder neue Lock-ins entstehen, entscheidet sich erst in den kommenden Jahren.",
+      "published_at": "2026-09-05T21:07:03.109Z",
+      "updated_at": "2026-09-07T23:05:14.172Z",
+      "reading_time_minutes": 7
+    },
+    {
       "analysis_id": "woek-analysis-e8a3a0294255",
       "story_id": "wt-811d4815cfd8d70d",
       "slug": "weitere-sprengvorrichtungen-nahe-stromtrassen-warum-der-fund-mehr-ist-als-eine-pol-e8a3a0",
@@ -16223,17 +16536,6 @@
       "teaser": "Am Hambacher Forst blieb die Suche nach einem Verdächtigen ohne Erfolg. Systemisch relevant ist vor allem, wie ein Sabotageverdacht Schutz, Zuständigkeiten und Resilienz im Stromnetz berührt.",
       "published_at": "2026-09-06T20:54:14.336Z",
       "updated_at": "2026-09-06T20:54:14.336Z",
-      "reading_time_minutes": 6
-    },
-    {
-      "analysis_id": "woek-analysis-0bfd0f9a3434",
-      "story_id": "wt-4b5d0962d323432a",
-      "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
-      "title": "Genehmigter Kapazitätsmechanismus für Deutschland: mehr gesicherte Leistung, offene Kostenfolgen",
-      "subtitle": "Die EU-Kommission hat den Mechanismus beihilferechtlich genehmigt; die Wirkung hängt nun an Ausschreibungen, Finanzierung und Design.",
-      "teaser": "Die EU-Kommission genehmigt Deutschlands Kapazitätsmechanismus. Das stärkt Planungssicherheit im Stromsystem, verschiebt aber Kosten, Anreize und Verteilungsfragen.",
-      "published_at": "2026-09-05T21:07:03.109Z",
-      "updated_at": "2026-09-06T18:24:28.974Z",
       "reading_time_minutes": 6
     },
     {
