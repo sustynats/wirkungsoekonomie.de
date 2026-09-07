@@ -110,6 +110,12 @@ test("case-specific forensic findings and concrete reactions are not discarded a
   assert.equal(caseContribution(decision).kind, "Entscheidung oder Maßnahme");
 });
 
+test("press surveys stay separate, without excluding concrete decisions mentioning reactions", () => {
+  for (const title of ["Internationale Reaktionen nach Landtagswahl in Thüringen", "Frankreich-Wahl: Pressestimmen aus Europa", "Wahl in Österreich: Presseschau", "Poland election: International reactions"])
+    assert.equal(caseContribution(story("survey", title, "Parteien und Medien bewerten das Ergebnis.")).role, "background");
+  assert.notEqual(caseContribution(story("decision", "Nach der Wahl: Parteien beschließen Koalitionsvertrag", "Internationale Reaktionen fallen unterschiedlich aus.")).role, "background");
+});
+
 test("a general background report cannot bridge otherwise independent cases", () => {
   const otherCase = [
     story("cyber1", "Angriff auf Rechenzentrum Nordstadt", "Im Rechenzentrum Nordstadt wurden Verwaltungsdaten gestohlen."),
