@@ -1,4 +1,8 @@
 const CACHE_NAME = "woek-wirkungsticker-shell-20260906-pull-refresh1";
+// Keep the existing article cache across this logic-only update.
+const NAVIGATION_CACHE_GRACE_MS = 2500;
+const NAVIGATION_NETWORK_TIMEOUT_MS = 8000;
+const CACHE_LOOKUP_TIMEOUT_MS = 1000;
 const NEWS_STATE_CACHE = "woek-wirkungsticker-notification-state-v1";
 const NEWS_STATE_URL = "/wirkungsticker/.notification-state";
 const NEWS_NOTIFICATION_TAG = "woek-wirkungsticker-updates";
@@ -83,25 +87,59 @@ self.addEventListener("fetch", (event) => {
       event.respondWith(fetch(request, { cache: "no-store" }));
       return;
     }
-    event.respondWith(networkFirst(request));
+    event.respondWith(networkFirst(request, event));
     return;
   }
   if (request.mode === "navigate" || request.headers.get("accept")?.includes("text/html")) {
-    event.respondWith(networkFirst(request));
+    event.respondWith(networkFirst(request, event));
     return;
   }
   event.respondWith(staleWhileRevalidate(request));
 });
 
-async function networkFirst(request) {
-  const cache = await caches.open(CACHE_NAME);
-  try {
-    const response = await fetch(request, { cache: "no-store" });
-    if (response.ok) await cache.put(request, response.clone());
-    return response;
-  } catch {
-    return (await cache.match(request, { ignoreSearch: true })) || (await cache.match("/wirkungsticker/offline.html"));
-  }
+function boundedCache(operation, milliseconds = CACHE_LOOKUP_TIMEOUT_MS) {
+  return new Promise(resolve => {
+    const timer = setTimeout(() => resolve(null), milliseconds);
+    Promise.resolve().then(operation).then(value => { clearTimeout(timer); resolve(value); }, () => { clearTimeout(timer); resolve(null); });
+  });
+}
+
+function unavailableNavigation() {
+  return new Response(`<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Wirkungsticker – Verbindung prüfen</title><body><main><h1>Die Seite konnte gerade nicht geladen werden.</h1><p>Die Verbindung ist unterbrochen oder dauert zu lange. Es liegt noch keine gespeicherte Fassung dieser Seite vor.</p><p><a href="">Diese Seite erneut laden</a> · <a href="/wirkungsticker/">Zum Wirkungsticker</a></p></main></body></html>`, { status: 503, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" } });
+}
+
+async function networkFirst(request, event) {
+  // Fetch immediately. Storage access and cloning/writing the complete body
+  // must never delay a usable network response or discard it on quota errors.
+  const cache = boundedCache(() => caches.open(CACHE_NAME));
+  const cached = boundedCache(async () => (await cache)?.match(request, { ignoreSearch: true }));
+  const controller = new AbortController();
+  let deadlineTimer, graceTimer;
+  const deadline = new Promise(resolve => {
+    deadlineTimer = setTimeout(() => { controller.abort(); resolve(null); }, NAVIGATION_NETWORK_TIMEOUT_MS);
+  });
+  const network = Promise.race([
+    Promise.resolve().then(() => fetch(request, { cache: "no-store", signal: controller.signal })).catch(() => null), deadline,
+  ]).then(response => { clearTimeout(deadlineTimer); return response; });
+  const store = network.then(response => {
+    if (!response?.ok) return;
+    const copy = response.clone();
+    return boundedCache(async () => (await cache)?.put(request, copy), 5000);
+  }).catch(() => undefined);
+  // If cached content wins, still refresh it in the background, within bounds.
+  event?.waitUntil(store);
+  const liveOrFallback = network.then(async response => {
+    if (response && response.status < 500) return response;
+    return (await cached) || response
+      || (await boundedCache(async () => (await cache)?.match("/wirkungsticker/offline.html")))
+      || unavailableNavigation();
+  });
+  const cachedAfterGrace = new Promise(resolve => {
+    graceTimer = setTimeout(() => { void cached.then(response => { if (response) resolve(response); }); }, NAVIGATION_CACHE_GRACE_MS);
+  });
+  const response = await Promise.race([liveOrFallback, cachedAfterGrace]);
+  clearTimeout(graceTimer);
+  return response;
 }
 
 async function staleWhileRevalidate(request) {
