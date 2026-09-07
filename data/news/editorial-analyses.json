@@ -21153,21 +21153,22 @@
     "wt-1c2c187d0b858b7c": {
       "fingerprint": "1fb3d62e28487277e32caff82efe2522cea1c8dd8c40697b1be02c774c4c3013",
       "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-07T22:09:44.497Z",
-      "next_attempt_at": "2026-09-07T22:24:44.497Z",
+      "attempts": 2,
+      "last_attempt_at": "2026-09-07T22:38:12.562Z",
+      "next_attempt_at": "2026-09-07T23:08:12.562Z",
       "quality_errors": [
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_SELF_FRAME_FAILED"
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
       ],
-      "reason": "AI_PROVIDER_OUTPUT_INVALID"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
     },
     "wt-6c26e428b894e714": {
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-07T22:09:44.497Z",
-      "next_attempt_at": "2026-09-07T22:24:44.497Z",
+      "last_attempt_at": "2026-09-07T22:38:12.562Z",
+      "next_attempt_at": "2026-09-07T22:53:12.562Z",
       "quality_errors": [],
       "reason": "BATCH_API_BATCH_CAPACITY"
     }
