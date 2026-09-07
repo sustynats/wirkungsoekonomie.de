@@ -2,26 +2,158 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-07T20:56:07.328Z",
-  "scanned_stories": 127,
-  "scanned_subjects": 109,
-  "editorial_candidates": 20,
-  "ready_for_research": 3,
+  "started_at": "2026-09-07T23:10:54.426Z",
+  "scanned_stories": 135,
+  "scanned_subjects": 117,
+  "editorial_candidates": 22,
+  "ready_for_research": 5,
   "research_pending": 7,
-  "retry_deferred": 3,
-  "editorial_research_sources_discovered": 22,
-  "selected": 0,
-  "editorial_research_started": 0,
+  "retry_deferred": 4,
+  "editorial_research_sources_discovered": 25,
+  "selected": 1,
+  "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
+  "research_calls": 2,
+  "research_tokens": 19618,
+  "analysis_tokens": 13590,
+  "estimated_cost_usd": 0.073449,
+  "quality_retries": 1,
   "publication_deferred": false,
-  "failed": [],
+  "failed": [
+    {
+      "story_id": "wt-1c2c187d0b858b7c",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-08T00:10:54.426Z"
+    }
+  ],
   "candidates": [
+    {
+      "story_id": "wt-4b5d0962d323432a",
+      "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
+      "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
+      "editorial_analysis_score": 85,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 9,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 2,
+        "cited_claim_count": 2,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "bc3aa055d45bb27ba557af536d2f08e367bdfdc5258362d4cdc9a088013bcdbb",
+      "status": "published",
+      "analysis_id": "woek-analysis-0bfd0f9a3434"
+    },
+    {
+      "story_id": "wt-811d4815cfd8d70d",
+      "story_slug": "graustein-weitere-sprengvorrichtung-nahe-stromtrassen-gefunden-d8d70d",
+      "story_title": "Weitere Sprengvorrichtung nahe Stromtrassen gefunden",
+      "editorial_analysis_score": 75,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "1f7a45328266d4d80707aa786cf916dd09fe0662a4c47902551be8f631bcb21a",
+      "status": "published",
+      "analysis_id": "woek-analysis-e8a3a0294255"
+    },
+    {
+      "story_id": "wt-1c2c187d0b858b7c",
+      "story_slug": "anschlage-auf-stromleitungen-21-sprengsatze-an-stromleitungen-entdeckt-und-entscharft-858b7c",
+      "story_title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
+      "editorial_analysis_score": 76,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 10,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "1fb3d62e28487277e32caff82efe2522cea1c8dd8c40697b1be02c774c4c3013",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-aa6c2b7b8a381223",
       "story_slug": "eu-to-boost-greenland-investment-amid-trump-annexation-claims-381223",
@@ -322,48 +454,6 @@
       "analysis_id": "woek-analysis-36e98d72ae20"
     },
     {
-      "story_id": "wt-4b5d0962d323432a",
-      "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
-      "story_title": "Kommission genehmigt deutschen Kapazitätsmechanismus von bis zu 35 Mrd. EUR zur Gewährleistung einer sicheren Stromversorgung",
-      "editorial_analysis_score": 82,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 6,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 8
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 2,
-        "cited_claim_count": 2,
-        "primary_source_expected": true,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "e1a3695100cfd89742bbb0067654fbaff5ab9e303d9a8f14e8a6ce5f29111790",
-      "status": "published",
-      "analysis_id": "woek-analysis-0bfd0f9a3434"
-    },
-    {
       "story_id": "wt-995822cc0b71a7f8",
       "story_slug": "statement-of-denmark-germany-the-netherlands-austria-finland-and-sweden-on-the-multiannu-71a7f8",
       "story_title": "Statement of Denmark, Germany, the Netherlands, Austria, Finland, and Sweden on the Multiannual Financial Framework 2028-2034",
@@ -454,7 +544,7 @@
       "story_id": "wt-6c26e428b894e714",
       "story_slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
       "story_title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
-      "editorial_analysis_score": 71,
+      "editorial_analysis_score": 68,
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
@@ -471,7 +561,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 8
+        "evidence_quality": 5
       },
       "factor_status": {
         "impact_potential": "open",
@@ -481,15 +571,15 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 5,
+        "independent_origin_count": 2,
         "primary_source_count": 0,
-        "cited_claim_count": 8,
+        "cited_claim_count": 4,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "95b8bb2184beba0a6312d8a9020be9a349ab589a6db4d6c57531f6e5e956bbcb",
-      "status": "published",
+      "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
+      "status": "ready_for_research",
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
@@ -890,5 +980,6 @@
     "applied": 0,
     "polling_errors": 0,
     "attention_required": []
-  }
+  },
+  "completed_at": "2026-09-07T23:12:17.848Z"
 }
