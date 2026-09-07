@@ -460,7 +460,7 @@
     }
   ],
   "regional_coverage": {
-    "checked_at": "2026-09-07T10:21:55.886Z",
+    "checked_at": "2026-09-07T10:36:46.945Z",
     "required_states": 16,
     "configured_states": 15,
     "healthy_states": 15,
@@ -1837,7 +1837,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 57.5,
+      "source_utility_score": 59,
       "metrics": {
         "items_seen": 1485,
         "items_local_rejected": 0,
@@ -1848,7 +1848,7 @@
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 6,
+        "items_source_integrity_failed": 7,
         "items_corrected_later": 0,
         "ai_input_tokens": 0,
         "ai_output_tokens": 0,
@@ -2063,7 +2063,7 @@
       "observation_status": "measurable",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 97.7,
+      "source_utility_score": 99.2,
       "metrics": {
         "items_seen": 1010,
         "items_local_rejected": 0,
@@ -2545,13 +2545,13 @@
         "items_seen": 2020,
         "items_local_rejected": 614,
         "items_duplicate": 1034,
-        "items_existing_story": 148,
+        "items_existing_story": 149,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 121,
         "items_published": 6,
         "items_story_updates": 5,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 55,
+        "items_source_integrity_failed": 56,
         "items_corrected_later": 0,
         "ai_input_tokens": 551368,
         "ai_output_tokens": 45099,
@@ -2765,7 +2765,7 @@
         "items_seen": 0,
         "items_local_rejected": 142,
         "items_duplicate": 664,
-        "items_existing_story": 120,
+        "items_existing_story": 121,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 43,
         "items_published": 3,
@@ -2956,7 +2956,7 @@
         "duplicates_over_90_percent",
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 86.5,
+      "source_utility_score": 89.5,
       "metrics": {
         "items_seen": 3030,
         "items_local_rejected": 25,
@@ -3014,7 +3014,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 73,
+      "source_utility_score": 74.5,
       "metrics": {
         "items_seen": 60,
         "items_local_rejected": 5,
@@ -3186,7 +3186,7 @@
         "items_seen": 4978,
         "items_local_rejected": 194,
         "items_duplicate": 4031,
-        "items_existing_story": 116,
+        "items_existing_story": 117,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 62,
         "items_published": 5,
@@ -3267,7 +3267,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 43.2,
+      "source_utility_score": 44.7,
       "metrics": {
         "items_seen": 4663,
         "items_local_rejected": 55,
@@ -3393,7 +3393,7 @@
         "items_published": 9,
         "items_story_updates": 5,
         "items_primary_source_found": 6,
-        "items_source_integrity_failed": 44,
+        "items_source_integrity_failed": 45,
         "items_corrected_later": 0,
         "ai_input_tokens": 313626,
         "ai_output_tokens": 35707,

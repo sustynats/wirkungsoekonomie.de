@@ -598430,7 +598430,41 @@
           "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0.143/0.172)."
         }
       ]
+    },
+    {
+      "at": "2026-09-07T10:36:46.945Z",
+      "story_id": "wt-07f3870f32ae8662",
+      "event_id": "event-b3b6b7dbecf642772b22",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "bundestag-wirtschaft",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210692",
+          "code": "SOURCE_PUBLICATION_DATE_INVALID",
+          "detail": "Das Veröffentlichungsdatum fehlt, ist ungültig oder liegt unplausibel in der Zukunft."
+        },
+        {
+          "source_id": "bundestag-wirtschaft",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1206216",
+          "code": "SOURCE_PUBLICATION_DATE_INVALID",
+          "detail": "Das Veröffentlichungsdatum fehlt, ist ungültig oder liegt unplausibel in der Zukunft."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-07T10:36:46.945Z",
+      "story_id": "wt-86ea1ddfd89beabf",
+      "event_id": "event-ae3d4b273922de048bb3",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "url": "https://www.stern.de/news/sabotageversuche-an-stromversorgung--weitere-sprengvorrichtungen-in-sachsen-gefunden-38214880.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0.143/0.172)."
+        }
+      ]
     }
   ],
-  "updated_at": "2026-09-07T10:21:55.886Z"
+  "updated_at": "2026-09-07T10:36:46.945Z"
 }
