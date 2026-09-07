@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-09-06",
+  "updated_at": "2026-09-07",
   "policy": {
     "respect_robots": true,
     "max_items_per_source": 60,
@@ -25,6 +25,24 @@
     "umweltbundesamt-presse": { "frequency_class": "regular", "max_latest_item_age_hours": 720 }
   },
   "sources": [
+    {
+      "source_id": "polskie-radio-case-research", "publisher_id": "polskie-radio", "name": "Polskie Radio - Deutsche Redaktion", "url": "https://www.polskieradio.pl/400", "source_type": "media_discovery", "publisher_kind": "public_broadcasting", "research_lane": "case_research", "role": "C", "source_function": "journalism", "primary_source": false, "enabled": false, "topic": "International", "language": "de", "geography": ["PL", "EU"],
+      "why_relevant": "Fallbezogene journalistische Einordnung polnischer Politik und deutsch-polnischer Beziehungen. Eingebettete Akteursäußerungen und redaktionelle Bewertung bleiben getrennt.",
+      "official_endpoint_verified": false, "technical_access": "open", "legal_use_status": "open", "legal_confidence": "low", "needs_manual_legal_review": true, "automation_allowed_status": "open",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Nur fallbezogene Quellenrecherche und eigene Zusammenfassung. Kein laufender Feed- oder Artikelabruf freigegeben; keine fremden Volltexte oder Bilder speichern." }
+    },
+    {
+      "source_id": "ikg-muenchen-statements", "publisher_id": "ikg-muenchen", "name": "Israelitische Kultusgemeinde München und Oberbayern", "url": "https://www.ikg-m.de/", "source_type": "official_discovery", "publisher_kind": "civil_society", "research_lane": "case_research", "role": "D", "source_function": "interest_statement", "source_role": "institutional_statement", "primary_source": true, "interest_source": true, "enabled": false, "topic": "Demokratie", "language": "de", "geography": ["DE"],
+      "why_relevant": "Originalquelle für eigene Erklärungen und die Position ihrer Präsidentin. Belegt, was erklärt wurde, nicht automatisch jede darin enthaltene Bewertung oder Zukunftserwartung.",
+      "official_endpoint_verified": false, "technical_access": "open", "legal_use_status": "open", "legal_confidence": "low", "needs_manual_legal_review": true, "automation_allowed_status": "open",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Fallbezogene Originalerklärungen mit Attribution; keine Freigabe für kontinuierliche Automatisierung. Keine Fotos oder vollständigen Erklärungen spiegeln." }
+    },
+    {
+      "source_id": "auschwitz-komitee-statements", "publisher_id": "auschwitz-komitee", "name": "Internationales Auschwitz Komitee", "url": "https://auschwitz.info/", "source_type": "official_discovery", "publisher_kind": "civil_society", "research_lane": "case_research", "role": "D", "source_function": "interest_statement", "source_role": "institutional_statement", "primary_source": true, "interest_source": true, "enabled": false, "topic": "Demokratie", "language": "de", "geography": ["DE", "international"],
+      "why_relevant": "Originalquelle für Erklärungen des Komitees und dokumentierte Stimmen von Auschwitz-Überlebenden. Persönliche Erfahrungen, politische Warnung und überprüfbare Tatsachen werden getrennt.",
+      "official_endpoint_verified": false, "technical_access": "open", "legal_use_status": "open", "legal_confidence": "low", "needs_manual_legal_review": true, "automation_allowed_status": "open",
+      "access": { "status": "pending", "cost_usd": 0, "article": "disabled", "note": "Nur fallbezogene Recherche veröffentlichter eigener Erklärungen. Kein automatischer Feed eingerichtet, keine Volltext- oder Bildübernahme." }
+    },
     {
       "source_id": "bayern-landesregierung-presse", "publisher_id": "bayerische-staatsregierung", "name": "Bayerische Staatsregierung - Pressemitteilungen", "url": "https://www.bayern.de/", "feed_url": "https://www.bayern.de/rss/pm_alle.php", "source_type": "official_rss", "publisher_kind": "institution", "source_role": "institutional_statement", "source_function": "primary_evidence", "primary_source": true, "role": "A", "enabled": true,
       "topic": "Landespolitik", "topics": ["Bayern", "Landespolitik", "Wirtschaft", "Infrastruktur", "Bildung", "Pflege", "Umwelt"], "geography": ["DE", "Bayern"], "federal_states": ["DE-BY"], "regional_coverage_kind": "official_statements", "research_lane": "blindspot", "frequency_class": "regular", "poll_minutes": 60, "max_items": 40, "selection_profile": "regional_materiality", "trial_mode": true,

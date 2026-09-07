@@ -1,0 +1,137 @@
+{
+  "event_key": "sachsen-anhalt-wahl-2026-internationale-reaktionen-und-ueberlebende",
+  "title": "Sachsen-Anhalt-Wahl: Internationale Reaktionen und Warnungen von Holocaust-Überlebenden",
+  "topics": ["Demokratie", "Geopolitik", "Medien"],
+  "research_checked_at": "2026-09-07T19:15:00Z",
+  "original_event_date": "2026-09-06",
+  "review_basis": "Nutzerhinweis auf BILD-Screenshot als Discovery, keine Übernahme von Bild oder Volltext. Polskie Radio dokumentiert den polnischen Tusk-Post mit eingebettetem Original und Datum 06.09.2026; der direkte X-Abruf war 403, deshalb ausdrücklich Attribution an die dokumentierende Redaktion. Frankreich und weitere europäische Reaktionen in aktuellen Euronews-Berichten geprüft, LCP zusätzlich gegengeprüft. IKG und Internationales Auschwitz Komitee veröffentlichen datierte Originalerklärungen vom 06.09.2026. AP-Originalbericht für den journalistischen Schwerpunkt geprüft. Le Monde war nicht zuverlässig direkt zugänglich und wird nicht als Inhaltsbeleg verwendet. Keine repräsentative internationale Presseschau, keine Gleichsetzung von Regierungsmitglied und formalem Regierungsbeschluss, keine erfundene genaue Uhrzeit bei tagesdatierten Erklärungen. Diese Nachricht behandelt Reaktionen, nicht Wahlergebnis oder Regierungsbildung als neues Ereignis.",
+  "method_sources": ["AGENTS.md", "docs/ops/WIRKUNGSTICKER-LIVING-FILES.md"],
+  "exclusions": ["BILD-Schlagzeile nicht als eigener Frame", "Keine Behauptung eines einheitlich entsetzten Auslands", "Keine Aussage im Namen Macrons oder der gesamten französischen Regierung", "Zeitzeugenschaft ist kein Kausalbeleg einer bevorstehenden historischen Wiederholung", "Keine neue Feed-Aktivierung", "Keine übernommenen Fremdbilder"],
+  "sources": [
+    {
+      "source_id": "polskie-radio-case-research",
+      "url": "https://www.polskieradio.pl/400/7764/Artykul/3728261,premier-tusk-schreibt-nach-afdwahlsieg-von-idioten-und-verr%C3%A4tern%E2%80%9C",
+      "title": "Premier Tusk schreibt nach AfD-Wahlsieg von „Idioten und Verrätern“",
+      "summary": "Polskie Radio dokumentiert nach der Sachsen-Anhalt-Wahl Tusks Kritik an Zustimmung zur AfD in Polen; ausdrücklich nennt er PiS und Konfederacja. Der eingebettete polnische Originalpost ist auf den 6. September 2026 datiert.",
+      "article_excerpt": "w Konfederacjach i PiS.",
+      "published_at": "2026-09-07T06:00:00+02:00",
+      "source_role": "actor_statement_report", "agency_origin": "unknown", "agency_origin_confidence": "unknown",
+      "provenance": { "origin": "statement:tusk-sachsen-anhalt-2026-09-06", "basis": "public_broadcast_report_with_embedded_original", "independence_established": false },
+      "research_metadata": { "original_statement_url": "https://x.com/donaldtusk/status/2096672766871105834", "original_statement_date": "2026-09-06", "direct_x_access": "403", "scope": "Öffentlich dokumentierter Wortlaut und Adressatenbezug, keine eigenständige Videoverifikation." }
+    },
+    {
+      "source_id": "euronews-en",
+      "url": "https://fr.euronews.com/my-europe/2026/09/07/victoire-de-lafd-en-saxe-anhalt-les-reactions-de-la-classe-politique-francaise",
+      "title": "Victoire de l'AfD en Saxe-Anhalt : les réactions de la classe politique française",
+      "summary": "Euronews dokumentiert nach der Sachsen-Anhalt-Wahl Benjamin Haddads Warnung und französische Parteireaktionen. Haddad ist Europaminister; Gabriel Attal spricht als Parteipolitiker. Der RN-Abgeordnete Jean-Philippe Tanguy verweist auf die Distanz seiner Partei zur AfD.",
+      "article_excerpt": "Un moment grave en Europe",
+      "published_at": "2026-09-07T12:17:00+02:00",
+      "source_role": "actor_statement_report", "agency_origin": "unknown", "agency_origin_confidence": "unknown",
+      "provenance": { "origin": "statements:france-sachsen-anhalt-2026-09-07", "basis": "attributed_statements", "independence_established": false }
+    },
+    {
+      "source_id": "euronews-en",
+      "url": "https://fr.euronews.com/my-europe/2026/09/07/victoire-historique-de-lafd-en-saxe-anhalt-tour-deurope-des-reactions",
+      "title": "Victoire historique de l'AfD en Saxe-Anhalt : tour d'Europe des réactions",
+      "summary": "Euronews stellt unterschiedliche europäische Reaktionen auf die Sachsen-Anhalt-Wahl gegenüber, darunter Zustimmung von Italiens Vizepremier Matteo Salvini und Vox-Chef Santiago Abascal. Der Beitrag nennt auch Tusks Kritik in Polen und die Reaktion aus Frankreich. Eine Zusammenfassung mehrerer Reaktionen ist kein Beleg für eine einheitliche europäische Haltung.",
+      "article_excerpt": "Une autre Europe est possible",
+      "published_at": "2026-09-07T10:38:00+02:00",
+      "source_role": "context", "agency_origin": "unknown", "agency_origin_confidence": "unknown",
+      "provenance": { "origin": "roundup:euronews-europe-reactions-2026-09-07", "basis": "attributed_roundup_including_agency_material", "independence_established": false }
+    },
+    {
+      "source_id": "ikg-muenchen-statements",
+      "url": "https://www.ikg-m.de/charlotte-knobloch-zum-ergebnis-der-landtagswahl-in-sachsen-anhalt-statik-unserer-demokratie-funktioniert-nicht-mehr/",
+      "title": "Charlotte Knobloch zum Ergebnis der Landtagswahl in Sachsen-Anhalt: „Statik unserer Demokratie funktioniert nicht mehr“",
+      "summary": "Die IKG veröffentlicht Charlotte Knoblochs Erklärung zur Sachsen-Anhalt-Wahl. Die Holocaust-Überlebende und IKG-Präsidentin äußert Angst und Sorge um die demokratische Stabilität.",
+      "article_excerpt": "Das macht mir Angst.",
+      "published_at": "2026-09-06", "source_role": "interest_statement",
+      "agency_origin": "original_reporting", "agency_origin_confidence": "high",
+      "provenance": { "origin": "statement:knobloch-ikg-2026-09-06", "basis": "original_published_statement", "independence_established": false },
+      "research_metadata": { "date_precision": "day", "evidence_scope": "Primärbeleg für ihre erklärte Sorge, nicht für eingetretene Institutionenschäden." }
+    },
+    {
+      "source_id": "auschwitz-komitee-statements",
+      "url": "https://auschwitz.info/de/presse/pressemitteilungen/presseinfo-einzeln/lesen/dieses-wahlergebnis-macht-uns-angst-auschwitz-ueberlebende-eva-umlauf-warnt-nach-landtagsw.html",
+      "title": "„Dieses Wahlergebnis macht uns Angst“ - Auschwitz-Überlebende Eva Umlauf warnt nach Landtagswahl in Sachsen-Anhalt",
+      "summary": "Das Internationale Auschwitz Komitee veröffentlicht Eva Umlaufs Reaktion auf die Sachsen-Anhalt-Wahl. Seine Präsidentin, eine Auschwitz-Überlebende, äußert Angst und ruft zu fortgesetztem Engagement für Demokratie und Erinnerung auf.",
+      "article_excerpt": "Wir werden weiter für die Demokratie",
+      "published_at": "2026-09-06", "source_role": "interest_statement",
+      "agency_origin": "original_reporting", "agency_origin_confidence": "high",
+      "provenance": { "origin": "statement:umlauf-iak-2026-09-06", "basis": "original_published_statement", "independence_established": false },
+      "research_metadata": { "date_precision": "day", "evidence_scope": "Eigene Erklärung, keine Vorhersage eines zwangsläufigen Verlaufs." }
+    },
+    {
+      "source_id": "ap-access",
+      "url": "https://apnews.com/article/germany-afd-saxony-anhalt-election-firewall-902f5d0f4e3181e6565ba29f4320417c",
+      "title": "AfD party's landslide win in eastern Germany tests country's 'firewall' against the far right",
+      "summary": "Der AP-Bericht zur Sachsen-Anhalt-Wahl fragt nach dem Umgang anderer Parteien mit einer möglichen AfD-Regierungsbeteiligung. Hier dient er als Beispiel für den Fokus internationaler Berichterstattung, nicht als US-Regierungserklärung.",
+      "published_at": "2026-09-07T12:41:00Z", "source_role": "context",
+      "agency_origin": "ap", "agency_origin_confidence": "high",
+      "provenance": { "origin": "report:ap-sachsen-anhalt-2026-09-07", "basis": "original_agency_report", "independence_established": false }
+    }
+  ],
+  "analysis": {
+    "news_status": "developing", "publication_depth": "deepened",
+    "source_summary": "Nach dem AfD-Wahlsieg in Sachsen-Anhalt kommen Warnungen aus Polen und Frankreich. Polens Regierungschef Donald Tusk kritisiert laut Polskie Radio den Jubel über die AfD in seinem eigenen Land und nennt ausdrücklich PiS und Konfederacja. Seine scharfen Worte richten sich damit nicht pauschal gegen deutsche Wähler. Frankreichs Europaminister Benjamin Haddad spricht laut Euronews von einem ernsten Moment für Europa und mahnt die Verteidigung demokratischer Werte an.\n\nAndere Reaktionen fallen zustimmend aus: Euronews berichtet über Unterstützung von Italiens Vizepremier Matteo Salvini und Spaniens Vox-Chef Santiago Abascal. Das sind unterschiedliche politische Stimmen, keine gemeinsame europäische Regierungsposition. Auch die internationale Presse setzt Schwerpunkte: AP fragt nach dem Umgang anderer Parteien mit einer möglichen AfD-Regierungsbeteiligung; Euronews vergleicht die europäischen Reaktionen.\n\nHinzu kommen Stimmen von Holocaust-Überlebenden: Charlotte Knobloch warnt in einer Erklärung der Israelitischen Kultusgemeinde München vor einer Gefährdung demokratischer Stabilität. Auschwitz-Überlebende Eva Umlauf äußert beim Internationalen Auschwitz Komitee Angst und ruft zum weiteren Einsatz für Demokratie und Erinnerung auf. Beide Erklärungen stammen vom Wahlabend, nicht aus einem historischen Archiv.",
+    "summary": "Polens Regierungschef Tusk und Frankreichs Europaminister Haddad warnen nach dem AfD-Wahlsieg, während Teile der europäischen Rechten Zustimmung äußern. Internationale Medien fragen nach den politischen Folgen; die Holocaust-Überlebenden Charlotte Knobloch und Eva Umlauf formulieren aktuelle Sorgen um die Demokratie.",
+    "detail_summary": "Eine Landtagswahl wird hier auch außerhalb Deutschlands als Signal für Europas politische Entwicklung gelesen. Besonders wichtig ist der Adressat einer Aussage: Tusks scharfe Kritik gilt dem Beifall in Polen, nicht pauschal den Menschen, die in Sachsen-Anhalt gewählt haben. Haddad spricht als französischer Europaminister; die Äußerungen anderer Politiker sind nicht automatisch Beschlüsse ihrer Regierungen. Knobloch und Umlauf melden sich als Überlebende und Vertreterinnen jüdischer beziehungsweise erinnerungspolitischer Organisationen zu Wort, ihre Sorge ist als gegenwärtige Erfahrung ernst zu nehmen. Daraus folgt jedoch keine sichere Vorhersage eines künftigen historischen Verlaufs. Die weitere Frage lautet, ob aus Warnungen oder Zustimmung konkrete Zusammenarbeit, politische Unterstützung oder Veränderungen für Betroffene entstehen.",
+    "why_relevant": "Die Reaktionen betreffen europäische Zusammenarbeit und das Vertrauen in demokratischen Schutz. Für jüdisches Leben und Erinnerungskultur geht es dabei nicht nur um Wahlstatistik, sondern auch um die öffentlich geäußerte Sorge, ob Zugehörigkeit und Sicherheit verlässlich bleiben.",
+    "status": "laufende Entwicklung", "analysis_type": "monitoring", "importance": "hoch",
+    "human": { "relevance": "hoch", "tendency": "risiko", "rationale": "Knobloch und Umlauf erklären ihre Sorge öffentlich. Weitere Belastungen für Sicherheitsgefühl oder Zugehörigkeit sind ein negatives Risiko, nicht schon durch die Reaktionen als allgemeiner Zustand nachgewiesen." },
+    "planet": { "relevance": "offen", "tendency": "offen", "rationale": "Diese konkreten Reaktionen enthalten keinen hinreichend bestimmten Umweltwirkpfad. Aus ihrer Lautstärke lässt sich keine Klima- oder Naturwirkung ableiten." },
+    "democracy": { "relevance": "hoch", "tendency": "gemischt", "rationale": "Öffentlicher Widerspruch kann demokratische Aufmerksamkeit und Solidarität unterstützen. Aus dem Kontext gelöste oder pauschalisierende Zuschreibungen bergen dagegen ein Risiko für Verständigung; die Pfade werden nicht miteinander verrechnet." },
+    "impact_potential": "Wenn die konkreten Sorgen in überprüfbare Schutz- und Kooperationsentscheidungen übersetzt werden, kann daraus Unterstützung für Betroffene entstehen. Eine Warnung oder ein zustimmender Post allein leistet diesen Schutz noch nicht.",
+    "impact_risks": ["Wird eine an polnische Parteien gerichtete Äußerung als Beschimpfung deutscher Wähler verbreitet, kann sich der Konflikt vom Inhalt auf eine falsche Zuschreibung verlagern.", "Bleiben Sicherheitsbedenken ohne konkrete Ansprechpartner oder Unterstützung, besteht das Risiko, dass öffentlich geäußerte Sorgen allein bei den Betroffenen verbleiben."],
+    "mechanisms": ["Eine Aussage wird ausgewählt, übersetzt und weiterverbreitet; dabei entscheidet der erhaltene Kontext darüber mit, welches Problem Leser erkennen.", "Internationale Reaktionen können Erwartungen an Zusammenarbeit verändern. Erst anschließende Entscheidungen zeigen, ob daraus ein belastbarer politischer Unterschied wird."],
+    "first_order": ["Dokumentiert sind öffentliche Warnungen, Zustimmung und ausdrücklich erklärte Sorge. Die Äußerungen sind noch keine diplomatische Maßnahme oder veränderte Schutzleistung."],
+    "second_order": ["Wenn Warnungen konkrete Solidarität und Unterstützung auslösen, können Betroffene zusätzliche Ansprechpartner gewinnen; dieser positive Folgepfad bleibt zu beobachten.", "Bei verkürzter Weiterverbreitung ohne Adressatenbezug besteht ein negatives Risiko für gegenseitiges Verständnis."],
+    "third_order": ["Wiederkehrende politische Signale und tatsächliche Entscheidungen können gemeinsam Erwartungen an europäische Zusammenarbeit und demokratische Verlässlichkeit prägen. Richtung und Umfang sind anhand dieser ersten Reaktionen noch nicht feststellbar."],
+    "systemic_relevance": "Öffentliche Kommunikation, persönliche Sicherheitserwartungen und europäische Kooperationsbeziehungen hängen zusammen. Ein Verlust von Vertrauen wäre nicht durch Reichweite zu messen, sondern durch veränderte Beziehungen und Handlungen.",
+    "transformation_potential": "Die Reaktionen markieren noch keinen institutionellen Umbau. Entscheidend sind mögliche spätere Entscheidungen und ihre überprüfbaren Folgen.",
+    "resilience": "Gehör für Betroffene, überprüfbare Information und konkrete institutionelle Antworten können Früherkennung und Korrektur unterstützen. Eine bloße Abfolge empörter Schlagzeilen ersetzt diese Fähigkeiten nicht.",
+    "side_effects": ["Die Wiederholung besonders scharfer Wörter kann deren Adressatenkontext überlagern und sachliche Fragen in den Hintergrund drängen; ein solcher Effekt ist hier nicht gemessen."],
+    "uncertainties": ["Die Beispiele bilden keine repräsentative Erhebung der internationalen Presse oder öffentlichen Meinung.", "Für Tusk ist der von Polskie Radio dokumentierte Originalpost die Grundlage; ein unabhängig durchgesehener direkter X-Aufruf liegt nicht vor.", "Warnungen, Zustimmung und persönliche Sorge belegen die jeweiligen Äußerungen, nicht bereits eine Veränderung diplomatischer Beziehungen oder allgemeiner Sicherheitslagen."],
+    "evidence_level": "Datierte Originalerklärungen belegen Knoblochs und Umlaufs Positionen. Aktuelle journalistische Berichte dokumentieren politische Reaktionen; weitergehende Folgen sind offen.",
+    "attribution": "Tusk wird über Polskie Radio mit polnischem Adressatenkontext dokumentiert; die französischen und weiteren europäischen Aussagen bleiben Euronews zugeschrieben. Die beiden Originalerklärungen belegen eigene Positionen. Agenturabdrucke zählen nicht als zusätzliche unabhängige Stimmen.",
+    "watch_next": ["Folgen auf die Erklärungen konkrete diplomatische Gespräche oder gemeinsame politische Initiativen?", "Welche Unterstützung erreichen jüdische Gemeinden und demokratische Erinnerungsarbeit tatsächlich?", "Werden verkürzte Zuschreibungen berichtigt und die Originalaussagen mit ihrem Adressatenkontext weitergegeben?"],
+    "reference_frameworks": ["Agenda 2030: SDG 16 als Bezug für inklusive, rechenschaftspflichtige Institutionen; die Zuordnung ist kein Wirkungsnachweis.", "SDG+ als WÖk-eigener ergänzender Schutzraum für demokratische Korrekturfähigkeit; keine amtliche Erweiterung der UN-Ziele."],
+    "publication_recommendation": true,
+    "publication_gate": { "news_value": "new_evidence", "materiality_factors": ["affected_scope", "democratic_correctability", "systemic_relevance"], "exceptional_factor": "none", "evidence_basis": "primary_source_with_caveats", "duplicate_status": "new_story", "rationale": "Aktuelle, zurechenbare internationale Reaktionen und Originalerklärungen von Überlebenden sind ein eigener Berichtsanlass. Keine Wiederveröffentlichung des Wahlergebnisses und keine Prognose eines Regierungshandelns." },
+    "event_claims": [
+      { "claim": "Polskie Radio dokumentiert Tusks Kritik am AfD-Jubel in Polen mit ausdrücklicher Nennung von PiS und Konfederacja.", "status": "single_source_claim", "evidence": [{ "source_id": "polskie-radio-case-research", "url": "https://www.polskieradio.pl/400/7764/Artykul/3728261,premier-tusk-schreibt-nach-afdwahlsieg-von-idioten-und-verr%C3%A4tern%E2%80%9C", "excerpt": "w Konfederacjach i PiS." }] },
+      { "claim": "Euronews berichtet, Frankreichs Europaminister Haddad bezeichne den Wahlausgang als ernsten Moment für Europa.", "status": "single_source_claim", "evidence": [{ "source_id": "euronews-en", "url": "https://fr.euronews.com/my-europe/2026/09/07/victoire-de-lafd-en-saxe-anhalt-les-reactions-de-la-classe-politique-francaise", "excerpt": "Un moment grave en Europe" }] },
+      { "claim": "Euronews dokumentiert auch zustimmende Reaktionen auf den AfD-Wahlerfolg in Europa.", "status": "single_source_claim", "evidence": [{ "source_id": "euronews-en", "url": "https://fr.euronews.com/my-europe/2026/09/07/victoire-historique-de-lafd-en-saxe-anhalt-tour-deurope-des-reactions", "excerpt": "Une autre Europe est possible" }] },
+      { "claim": "Die IKG veröffentlicht Knoblochs Sorge um demokratische Stabilität nach der Landtagswahl.", "status": "primary_source_claim", "evidence": [{ "source_id": "ikg-muenchen-statements", "url": "https://www.ikg-m.de/charlotte-knobloch-zum-ergebnis-der-landtagswahl-in-sachsen-anhalt-statik-unserer-demokratie-funktioniert-nicht-mehr/", "excerpt": "Das macht mir Angst." }] },
+      { "claim": "Das Internationale Auschwitz Komitee veröffentlicht Umlaufs besorgte Reaktion und ihren Aufruf zu weiterem Engagement.", "status": "primary_source_claim", "evidence": [{ "source_id": "auschwitz-komitee-statements", "url": "https://auschwitz.info/de/presse/pressemitteilungen/presseinfo-einzeln/lesen/dieses-wahlergebnis-macht-uns-angst-auschwitz-ueberlebende-eva-umlauf-warnt-nach-landtagsw.html", "excerpt": "Wir werden weiter für die Demokratie" }] },
+      { "claim": "Der AP-Bericht rückt den Umgang mit möglicher AfD-Regierungsbeteiligung in den Mittelpunkt.", "status": "single_source_claim", "evidence": [{ "source_id": "ap-access", "url": "https://apnews.com/article/germany-afd-saxony-anhalt-election-firewall-902f5d0f4e3181e6565ba29f4320417c", "excerpt": "tests country's 'firewall'" }] }
+    ],
+    "followups": [],
+    "media_impact": {
+      "relevant": true, "relevance_level": "high",
+      "reason": "Der Adressatenbezug des Tusk-Zitats verändert dessen Bedeutung; die Presseschau darf aus ausgewählten Positionen keine einheitliche internationale Haltung konstruieren.",
+      "factual_core": "Dokumentiert sind unterschiedliche politische Reaktionen und eigene Erklärungen von Holocaust-Überlebenden nach der Landtagswahl.",
+      "speaker_statement": { "present": true, "speaker": "Donald Tusk, dokumentiert von Polskie Radio", "statement": "Die Kritik betrifft AfD-Zustimmung in Polen, mit ausdrücklichem Bezug auf polnische Parteien.", "status": "claim" },
+      "framing": { "detected": true, "term": "Verräter", "origin_in_story": "Donald Tusks politische Äußerung", "media_usage": "headline", "attribution_quality": "eindeutig attribuiert", "factual_status": "Meinung", "frame_type": ["Konflikt"], "political_history_relevant": false, "political_history_evidence": [] },
+      "epistemic_status": { "confirmed": ["Aktuelle Originalerklärungen von Knobloch und Umlauf sind veröffentlicht."], "actor_claims": ["Politiker bewerten den Wahlausgang und die Zustimmung dazu unterschiedlich."], "open": ["Veränderungen von Einstellungen und Kooperation sind nicht gemessen."] },
+      "attribution": { "frame_source": "Donald Tusk", "speaker": "Polnischer Ministerpräsident", "original_term": "Verräter", "usage_type": "direct_quote", "placement": ["headline"], "attribution_quality": "clear" },
+      "frame_analysis": { "frame_detected": true, "frame_term": "Verräter", "frame_type": ["Konflikt"], "problem_definition": "Zustimmung zur AfD wird als polnischer Loyalitätskonflikt bewertet.", "implied_cause": "Politische Zustimmung, keine empirisch belegte Diagnose der Unterstützer.", "implied_responsibility": "Genannte polnische politische Kräfte, nicht pauschal deutsche Wähler.", "implied_threat": "Eine Loyalitätszuschreibung kann die Debatte verschärfen.", "implied_solution_space": "Über die tatsächlichen politischen Konsequenzen statt über verkürzte persönliche Zuschreibungen sprechen.", "material_omissions": ["Ohne den Adressatenbezug nach Polen verändert sich die Bedeutung der Aussage."] },
+      "political_context": { "relevant": false, "evidence_based": false, "evidence": [] },
+      "discourse_effect": { "impact_status": "potential", "resonance_space": "Europäische Zusammenarbeit und demokratische Sicherheitserwartungen.", "normalization_potential": "open", "repetition_risk": "open", "polarization_potential": "Kontextverlust kann einen zusätzlichen Konflikt um vermeintliche Beschimpfungen eröffnen." },
+      "impact_path": { "first_order": "Aussagen werden ausgewählt und als Überschrift sichtbar.", "second_order": "Ohne Kontext kann ein falscher Adressatenbezug entstehen.", "third_order": "Bei dauerhafter Verfestigung wären Vertrauensfolgen denkbar, aber gesondert zu belegen." },
+      "evidence": { "status": "medium", "level": "medium", "what_is_known": "Die ausgewählten Beiträge und Originalerklärungen liegen vor.", "what_is_inferred": "Verkürzung kann das Verständnis des Adressaten verändern.", "what_is_open": "Tatsächliche Rezeptions- und Vertrauensfolgen.", "facts": ["Die Erklärungen sind den genannten Akteuren zugeordnet."], "observations": ["Ein besonders scharfes Wort steht in der Überschrift des polnischen Rundfunkberichts."], "inferences": ["Ein fehlender Adressatenkontext kann eine andere Lesart nahelegen."], "impact_potentials": ["Konkrete Sorgen können zusätzliche Aufmerksamkeit erhalten."], "impact_risks": ["Pauschalisierung kann Unterschiede zwischen politischen und gesellschaftlichen Reaktionen verdecken."], "observed_impacts": [], "limitations": ["Keine systematische Rezeptionsstudie und keine repräsentative Pressestichprobe."] },
+      "observed_impact": { "present": false, "description": null, "evidence": [] },
+      "public_explanation": "Bei einer scharfen politischen Aussage zählt nicht nur das Wort, sondern auch, wem es gilt. Tusks Kritik bezieht sich auf Zustimmung zur AfD in Polen. Verschwindet dieser Zusammenhang beim Weitererzählen, kann daraus eine vermeintliche pauschale Beschimpfung deutscher Wähler werden. Ähnlich wichtig ist die Unterscheidung zwischen einem Minister, einem Parteichef und einem Pressekommentar: Sie sprechen nicht im selben Auftrag. Die aktuelle Auswahl zeigt verschiedene Reaktionen, keine gemeinsame Stimme Europas. Knoblochs und Umlaufs erklärte Sorge wiederum ist eine persönliche und gesellschaftliche Aussage mit eigenem Gewicht. Wie all dies Einstellungen, Vertrauen oder politische Entscheidungen tatsächlich verändert, ist bislang nicht gemessen; bloße Wiederholung wäre kein Beweis dafür.",
+      "fact_first_alternative": "Unterschiedliche politische Reaktionen und aktuelle Sorgen von Überlebenden nach der Sachsen-Anhalt-Wahl.",
+      "source_comparison": { "sufficient_basis": false, "finding": "Ausgewählte dokumentierte Reaktionen; keine repräsentative Gesamtbewertung der internationalen Medien." }
+    },
+    "visuals": {
+      "path_directions": [
+        { "order": "first_order", "path": "Dokumentiert sind öffentliche Warnungen, Zustimmung und ausdrücklich erklärte Sorge. Die Äußerungen sind noch keine diplomatische Maßnahme oder veränderte Schutzleistung.", "direction": "open", "condition": "Die dokumentierten Äußerungen belegen Positionen; ihre weitere gesellschaftliche Wirkung ist offen.", "evidence": "open", "claim_ids": ["wt-1cc2e06b531abcc4-v1-claim-1", "wt-1cc2e06b531abcc4-v1-claim-4", "wt-1cc2e06b531abcc4-v1-claim-5"] },
+        { "order": "second_order", "path": "Wenn Warnungen konkrete Solidarität und Unterstützung auslösen, können Betroffene zusätzliche Ansprechpartner gewinnen; dieser positive Folgepfad bleibt zu beobachten.", "direction": "positive", "condition": "Nur wenn auf die Warnungen zugängliche, konkrete Unterstützung folgt, verbessert sich das Hilfsangebot.", "evidence": "plausible_path", "claim_ids": ["wt-1cc2e06b531abcc4-v1-claim-4", "wt-1cc2e06b531abcc4-v1-claim-5"] },
+        { "order": "second_order", "path": "Bei verkürzter Weiterverbreitung ohne Adressatenbezug besteht ein negatives Risiko für gegenseitiges Verständnis.", "direction": "negative", "condition": "Fehlt der polnische Adressatenkontext, kann eine Äußerung fälschlich auf andere Gruppen bezogen werden.", "evidence": "plausible_path", "claim_ids": ["wt-1cc2e06b531abcc4-v1-claim-1"] },
+        { "order": "third_order", "path": "Wiederkehrende politische Signale und tatsächliche Entscheidungen können gemeinsam Erwartungen an europäische Zusammenarbeit und demokratische Verlässlichkeit prägen. Richtung und Umfang sind anhand dieser ersten Reaktionen noch nicht feststellbar.", "direction": "open", "condition": "Erst längerfristige Entscheidungen und überprüfbare Veränderungen erlauben einen Richtungsbefund.", "evidence": "scenario", "claim_ids": ["wt-1cc2e06b531abcc4-v1-claim-2"] }
+      ]
+    }
+  }
+}

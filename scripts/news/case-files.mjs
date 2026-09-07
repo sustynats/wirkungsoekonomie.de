@@ -1,6 +1,6 @@
 import { createHash } from "node:crypto";
 import { fileSubject, namedSubjects, namedSubjectConflict, diplomaticVisit, delegationNames } from "./living-files.mjs";
-import { caseContentUpdatedAt } from "./publication-update.mjs";
+import { caseContentUpdatedAt, caseUpdateDetails } from "./publication-update.mjs";
 
 // A case file is a presentation layer above evidence-bound stories. It never
 // merges claims, sources, event IDs or publication histories. The same rules
@@ -42,6 +42,9 @@ const hash = value => createHash("sha256").update(value).digest("hex").slice(0, 
 const BACKGROUND_SUBJECT = /\b(?:studie\w*|umfrage\w*|befragung\w*|risikobericht\w*|lagebild\w*|hintergrund\w*|analyse\w*|gutachten\w*|wirtschaftsforscher\w*|forschungsbericht\w*|survey\w*|research|risk assessment)\b/i;
 const GENERAL_RISK = /\b(?:wachsende\w*|steigende\w*|allgemeine\w*|hybride\w*|systemische\w*|growing|rising|general|systemic)\s+(?:risik\w*|bedroh\w*|gefahr\w*|risks?|threats?)\b|\b(?:risiken|bedrohungen|gefahren)\b.{0,140}\b(?:unternehmen|wirtschaft|branchen|gesellschaft|bevolkerung)\w*\b/i;
 const SPECIFIC_FINDING = /\b(?:belegt|bestatigt|widerlegt|identifiziert|rekonstruiert|weist\b.{0,70}\bnach|confirms?|identifies|reconstructs?)\b/i;
+// A press/reaction survey is its own editorial object, not another event-stage
+// report. Limit detection to the headline, never a quoted phrase in the body.
+const REACTION_ROUNDUP = /\b(?:presseschau|pressestimmen|press review|press reactions|international(?:e[nr]?)?\s+(?:reaktionen|reactions)|europaische[nr]?\s+reaktionen|reaktionen\s+aus\s+dem\s+ausland)\b/i;
 const DEMAND = /\b(?:fordert|fordern|verlangt|verlangen|fordert\w*|appelliert|demand\w*|calls? for)\b|\bwill\b.{0,85}\b(?:befugnisse|lockerung|reform|anderung|mehr schutz)\b/i;
 const PLANNED = /\b(?:plant|planen|kundigt\b.{0,90}\ban|angekundigt|will\b.{0,70}\b(?:einrichten|vorbereiten|aufbauen|andern)|plans?|announces?)\b/i;
 const MEASURE = /\b(?:beschlie(?:ss|ß)t|beschlossen|verabschiedet|genehmigt|erlasst|richtet\b.{0,70}\bein)\b|\b(?:erhoht|verstarkt|verscharft|increases?|strengthens?)\b.{0,70}\b(?:schutz|sicherheit\w*|kontrolle\w*|vorkehrung\w*|security|protection)\b/i;
@@ -53,6 +56,7 @@ export function caseContribution(story) {
   const concreteFinding = SPECIFIC_FINDING.test(headline) && ACUTE.test(headline);
   const concreteReaction = DEMAND.test(headline) || PLANNED.test(headline) || MEASURE.test(headline);
   const background = GENERAL_RISK.test(headline)
+    || REACTION_ROUNDUP.test(headline)
     || (BACKGROUND_SUBJECT.test(headline) && !concreteFinding && !concreteReaction)
     || (!ACUTE.test(headline) && !concreteReaction && sourceHeadlines.some(title => GENERAL_RISK.test(title) || BACKGROUND_SUBJECT.test(title)));
   if (background) return { role: "background", kind: "Hintergrund oder systemische Einordnung", reason: "general_subject_not_case_development" };
@@ -171,6 +175,7 @@ export function buildCaseFiles(stories, { minMembers = MIN_MEMBERS } = {}) {
       title: representative.title,
       updated_at: representative.last_updated,
       content_updated_at: caseContentUpdatedAt(members),
+      update_details: caseUpdateDetails(members),
       member_count: members.length,
       publisher_count: uniquePublishers(members),
       topics: caseTopics(members, representative),

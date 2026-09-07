@@ -16,11 +16,11 @@ import { canonicalizeUrl } from "./lib.mjs";
 import { relatedStories } from "./living-files.mjs";
 import { formatReferenceFramework } from "./reference-frameworks.mjs";
 import { buildCaseFiles } from "./case-files.mjs";
-import { storyUpdateNotice } from "./publication-update.mjs";
+import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260907-update1";
+const PUBLIC_RELEASE = "20260907-update2";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -237,9 +237,11 @@ export function renderUpdateBanner(story, { detail = false, caseFile = story.cas
   const update = storyUpdateNotice(story, caseFile);
   if (!update) return "";
   const isCase = update.scope === "case";
-  const target = isCase ? "lageakte" : "versionsverlauf";
+  const changes = isCase ? caseFile.update_details || [] : [storyUpdateDetails(story)].filter(Boolean);
+  const target = changes.length && !detail ? "aktuelles-update" : isCase ? "lageakte" : "versionsverlauf";
   const href = detail && update.slug === story.slug ? `#${target}` : `${detail ? "../" : "./"}${update.slug}/#${target}`;
-  return `<aside class="news-update-banner" data-news-update-banner data-search-exclude aria-label="${isCase ? "Aktualisierung der Lageakte" : "Aktualisierung dieser Meldung"}"><span class="news-update-banner__flag">${renderIcon("aktualisieren")}<strong>Update</strong></span><div class="news-update-banner__copy"><strong>${isCase ? "Lageakte fortgeschrieben" : "Meldung aktualisiert"}</strong><time datetime="${escapeHtml(update.at)}">${escapeHtml(formatDate(update.at))} Uhr</time><span>Aktualisierter Stand – keine doppelte Meldung.</span></div><a class="news-update-banner__link" href="${escapeHtml(href)}">${isCase ? "Zum aktuellen Stand" : "Zum Versionsverlauf"}${renderIcon("pfeil")}</a></aside>`;
+  const changeHtml = detail ? changes.slice(0, 3).map(change => `<div class="news-update-banner__change" data-news-update-content><p class="news-update-banner__label">${escapeHtml(change.label)}</p>${isCase || change.kind === "media" || change.kind === "analysis" ? `<p class="news-update-banner__context">${escapeHtml(change.title)}</p>` : ""}<p>${escapeHtml(change.text)}</p>${change.kind === "media" ? `<p class="news-update-banner__note">Ergänzt wurde die Einordnung der Berichterstattung. Das ist keine neue Entwicklung des Ereignisses.</p>` : ""}${change.kind === "current" ? `<p class="news-update-banner__note">Für diese ältere Akte ist kein Textvergleich mit der vorherigen Fassung verfügbar.</p>` : ""}${change.previous ? `<details class="news-update-banner__previous"><summary>Zum Vergleich: vorherige Fassung vom ${escapeHtml(formatDate(change.previous.at))} Uhr</summary><p>${escapeHtml(change.previous.text)}</p></details>` : ""}${isCase && change.slug !== story.slug && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(change.slug || "") ? `<a class="news-update-banner__link" href="../${escapeHtml(change.slug)}/#nachricht">Diese Entwicklung lesen${renderIcon("pfeil")}</a>` : ""}</div>`).join("") : "";
+  return `<aside class="news-update-banner${detail ? " news-update-banner--detail" : ""}"${detail ? ' id="aktuelles-update"' : ""} data-news-update-banner data-search-exclude aria-label="${isCase ? "Aktualisierung der Lageakte" : "Aktualisierung dieser Meldung"}"><span class="news-update-banner__flag">${renderIcon("aktualisieren")}<strong>Update</strong></span><div class="news-update-banner__copy"><strong>${isCase ? "Lageakte fortgeschrieben" : "Meldung aktualisiert"}</strong><time datetime="${escapeHtml(update.at)}">${escapeHtml(formatDate(update.at))} Uhr</time><span>Aktualisierter Stand - keine doppelte Meldung.</span></div>${changeHtml}<a class="news-update-banner__link news-update-banner__history" href="${escapeHtml(href)}">${!detail && changes.length ? "Was ist neu?" : isCase ? "Zum aktuellen Stand" : "Zum Versionsverlauf"}${renderIcon("pfeil")}</a></aside>`;
 }
 
 export function storyCard(story, index) {

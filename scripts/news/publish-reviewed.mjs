@@ -4,7 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { claimLedgerFor, preAnalyzeStory, sha256, slugify, validateAnalysis } from "./lib.mjs";
 import { loadNewsRegistry } from "./registry.mjs";
-import { evidenceGroups, eventFingerprint } from "./newsroom.mjs";
+import { evidenceGroups, eventFingerprint, persistClaimEvidence } from "./newsroom.mjs";
 import { sourceIntegrityForStory } from "./source-integrity.mjs";
 import { publishedRecord, sanitizeAnalysisMediaImpact } from "./run.mjs";
 import { sanitizeVisuals } from "./visuals.mjs";
@@ -63,7 +63,10 @@ export function prepareReviewedStory(review, registry, stories, now) {
   candidate.source_integrity = sourceIntegrityForStory(candidate, registry, stories, now);
   const analysis = { ...structuredClone(review.analysis), story_id: id };
   sanitizeAnalysisMediaImpact(analysis, candidate, {}, now);
-  if (analysis.visuals) analysis.visuals = sanitizeVisuals(analysis.visuals, { ...candidate, analysis }).visuals;
+  // Editorial visuals cite the reviewed claims that will actually be published,
+  // not the provisional discovery ledger whose IDs disappear on publication.
+  if (analysis.visuals) analysis.visuals = sanitizeVisuals(analysis.visuals, { ...candidate, analysis,
+    claims: analysis.event_claims ? persistClaimEvidence(analysis, candidate, now) : candidate.claims }).visuals;
   const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate)];
   if (errors.length) return { errors, candidate };
   const record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);
