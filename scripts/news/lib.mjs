@@ -977,7 +977,6 @@ function aiRetryDelayMs(response, attempt) {
 export async function callWoekAi(stories, options = {}) {
   const apiUrl = options.apiUrl || "https://130.162.217.58.sslip.io/api/woek-ai";
   const prompt = options.prompt || buildAnalysisPrompt(stories);
-  const suppliedIds = suppliedEvidenceIds(prompt);
   const attempts = Math.max(1, Math.min(3, Number(options.attempts || 3)));
   let response;
   let payload;
@@ -1039,6 +1038,12 @@ export async function callWoekAi(stories, options = {}) {
     error.requestAttempts = requestAttempts;
     throw error;
   }
+  return decodeWoekAiResponse(payload, prompt, requestAttempts);
+}
+
+// Delayed jobs use exactly the same transport decoding and downstream gates.
+export function decodeWoekAiResponse(payload, prompt, requestAttempts = 1) {
+  const suppliedIds = suppliedEvidenceIds(prompt);
   let parsed;
   try {
     if (String(payload.answer || "").length > 40000) throw new Error("AI_RESPONSE_TOO_LARGE");
