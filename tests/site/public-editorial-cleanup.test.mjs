@@ -23,6 +23,10 @@ test('tracking cleanup removes only AI parameters and repairs their own separato
   ['?x=1&utm_medium=openai', '?x=1'],
   ['?utm_source=chatgpt.com&utm_medium=openai&utm_campaign=claude&x=1', '?x=1'],
   ['?utm_source=chatgpt.com&amp;utm_medium=openai', ''],
+  ['?utm_source=chatgpt.com&quot;', '&quot;'],
+  ['?utm_source=chatgpt.com&#34;', '&#34;'],
+  ['?utm_source=chatgpt.com&#x22;', '&#x22;'],
+  ['?utm_source=chatgpt.com&rdquo;', '&rdquo;'],
   ['?utm_source=newsletter&x=1', '?utm_source=newsletter&x=1'],
   ['?utm_source=chatgpt.com.example&x=1', '?utm_source=chatgpt.com.example&x=1'],
  ]) {

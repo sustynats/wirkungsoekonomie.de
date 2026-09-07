@@ -1,7 +1,7 @@
 export function stripAiTrackingParameters(content) {
   // Repair separators only inside a removed parameter. A global ?& cleanup
   // corrupts prose such as “Frage?&quot;” into the visible text “Frage?quot;”.
-  const parameter = /([?&](?:amp;)*)(?:utm_source|utm_medium|utm_campaign)=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?(?=(?:&(?:amp;)*|#|["')\s<>]|$))(&(?:amp;)*)?/gi;
+  const parameter = /([?&](?:amp;)*)(?:utm_source|utm_medium|utm_campaign)=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?(?=(?:&(?:amp;)*|#|["')\s<>]|$))(&(?:amp;)*(?!(?:[a-z][a-z0-9]*|#(?:x[0-9a-f]+|[0-9]+));))?/gi;
   let previous;
   do {
     previous = content;
