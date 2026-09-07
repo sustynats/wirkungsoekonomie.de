@@ -1,3 +1,17 @@
+export function stripAiTrackingParameters(content) {
+  // Repair separators only inside a removed parameter. A global ?& cleanup
+  // corrupts prose such as “Frage?&quot;” into the visible text “Frage?quot;”.
+  const parameter = /([?&](?:amp;)*)(?:utm_source|utm_medium|utm_campaign)=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?(?=(?:&(?:amp;)*|#|["')\s<>]|$))(&(?:amp;)*(?!(?:[a-z][a-z0-9]*|#(?:x[0-9a-f]+|[0-9]+));))?/gi;
+  let previous;
+  do {
+    previous = content;
+    content = content.replace(parameter, (_match, separator, followingSeparator) =>
+      followingSeparator ? separator : "",
+    );
+  } while (content !== previous);
+  return content;
+}
+
 export function stripEditorialHtmlNotes(content) {
   // Produktions- und Agentenhinweise sind weder Beleg noch Erklärung. Eine
   // veröffentlichte Seite darf nur fachlichen Inhalt, Quellen- und
@@ -16,4 +30,3 @@ export function stripEditorialHtmlNotes(content) {
     .replace(/Auszug aus der umfangreichen Korrekturfassung\.?/gi, "Fachliche Vertiefung")
     .replace(/ergänzende\s+ergänzende/gi, "ergänzende");
 }
-

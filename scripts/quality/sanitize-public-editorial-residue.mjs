@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {stripAiTrackingParameters} from "../lib/public-editorial-cleanup.mjs";
 
 const root = process.cwd();
 const checkOnly = process.argv.includes("--check");
@@ -33,12 +34,9 @@ function walk(directory) {
 }
 
 function sanitize(content) {
-  return content
+  return stripAiTrackingParameters(content
     .replace(/Auszug aus der umfangreichen Korrekturfassung\.?/gi, "Fachliche Vertiefung")
-    .replace(/ergänzende\s+ergänzende/gi, "ergänzende")
-    .replace(aiTrackingPattern, (match, separator) => (separator.startsWith("?") ? "?" : ""))
-    .replace(/\?&(?:amp;)*/g, "?")
-    .replace(/\?(?:&(?:amp;)*)+(?=(?:["'\s<>]|$))/gi, "");
+    .replace(/ergänzende\s+ergänzende/gi, "ergänzende"));
 }
 
 const affected = [];

@@ -1,4 +1,4 @@
-import {stripEditorialHtmlNotes} from "../lib/public-editorial-cleanup.mjs";
+import {stripEditorialHtmlNotes, stripAiTrackingParameters} from "../lib/public-editorial-cleanup.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -502,13 +502,6 @@ function sanitizePublicJsonValue(value) {
     );
   }
   return value;
-}
-
-function stripAiTrackingParameters(content) {
-  return content
-    .replace(/([?&](?:amp;)*)((?:utm_source|utm_medium|utm_campaign))=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?(?=(?:&(?:amp;)?|["')\s<>]|$))/gi, (match, separator) => (separator.startsWith("?") ? "?" : ""))
-    .replace(/\?&(?:amp;)*/g, "?")
-    .replace(/\?(?:&(?:amp;)*)+(?=(?:["'\s<>]|$))/gi, "");
 }
 
 function stripPrivateDocumentLinks(content) {
