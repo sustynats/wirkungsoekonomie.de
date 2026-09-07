@@ -1,4 +1,6 @@
 export const NEWS_AI_BUDGET_EUR = 25;
+// Explicit approval on 7 September; no extension into another budget month.
+export const NEWS_AI_BUDGET_EXCEPTION = Object.freeze({ from: '2026-09-07T13:27:00.000Z', until: '2026-10-01T00:00:00.000Z', authorized_eur: 50 });
 export const NEWS_REQUEST_RESERVATION_USD = 0.25;
 const ECB_FX_URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
 
@@ -18,12 +20,15 @@ export async function refreshBudgetFx(previous, now, fetchImpl = fetch) {
   }
 }
 
-export function newsBudget(fx, now, authorizedEur = NEWS_AI_BUDGET_EUR) {
+export function newsBudget(fx, now, authorizedEur) {
   const age = Date.parse(now) - Date.parse(fx?.rate_date || "");
   const fresh = Number.isFinite(age) && age >= 0 && age <= 7 * 86400000 && Number.isFinite(fx?.rate_usd_per_eur) && fx.rate_usd_per_eur >= 0.5 && fx.rate_usd_per_eur <= 2;
   // User authorization is a ceiling, not a spending target. Retain 19% tax
   // reserve and 10% FX/estimation reserve. Never silently increase authorization.
-  const euroLimit = Math.min(NEWS_AI_BUDGET_EUR, Math.max(0, Number(authorizedEur) || 0));
+  const at = Date.parse(now);
+  const ceiling = at >= Date.parse(NEWS_AI_BUDGET_EXCEPTION.from) && at < Date.parse(NEWS_AI_BUDGET_EXCEPTION.until)
+    ? NEWS_AI_BUDGET_EXCEPTION.authorized_eur : NEWS_AI_BUDGET_EUR;
+  const euroLimit = Math.min(ceiling, Math.max(0, Number(authorizedEur === undefined ? ceiling : authorizedEur) || 0));
   const dollars = fresh ? Math.floor(euroLimit / 1.19 * 0.9 * Math.min(1, fx.rate_usd_per_eur) * 100) / 100 : 0;
   return { authorized_eur: euroLimit, technical_limit_usd: dollars, tax_reserve_factor: 1.19, fx_reserve_factor: 0.9, fx: fx || null, status: fresh ? "ok" : "FX_UNAVAILABLE_AI_HELD" };
 }

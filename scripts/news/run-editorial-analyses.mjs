@@ -231,7 +231,7 @@ export async function runEditorialAnalyses({
     writeAtomic(analysesFile, store);
   }
   if (!runnable.length) return report;
-  const budget = newsBudget(state.budget_fx, now, Number(process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR || 25));
+  const budget = newsBudget(state.budget_fx, now, process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR);
   if (budget.status !== "ok") {
     report.failed.push({ reason: "EDITORIAL_BUDGET_FX_UNAVAILABLE" });
     return report;
