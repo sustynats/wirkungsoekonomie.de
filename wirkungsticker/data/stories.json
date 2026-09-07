@@ -1,7 +1,366 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T20:56:07.328Z",
+  "updated_at": "2026-09-07T21:52:05.137Z",
   "stories": [
+    {
+      "story_id": "wt-d48422d2b2076e49",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d48422d2b2076e49-4ead4fc344c19cc1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d48422d2b2076e49-0fe5f631d38494fc-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d48422d2b2076e49-1d50ce21341a283e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nahost-tote-bei-neuen-israelischen-angriffen-im-sudlibanon-076e49",
+      "title": "Nahost - Tote bei neuen israelischen Angriffen im Südlibanon",
+      "source_summary": "Im Südlibanon haben nach den gelieferten Quellen neue israelische Angriffe Tote und Verletzte verursacht. Der Deutschlandfunk meldet drei Tote in einem weiteren Angriff; ZDFheute berichtet später unter Berufung auf libanesische Angaben von mindestens elf Toten und mindestens fünf Verletzten. Unter den Toten seien laut der staatlichen Nachrichtenagentur NNA auch zwei Kinder und zwei Sanitäter gewesen. Genannt werden Angriffe auf ein Wohngebäude im Raum Nabatija sowie weitere Ziele im Südlibanon.\n\nAls Begründung verweist Israel auf den Wiederaufbau der Hisbollah und auf Verstöße gegen die Waffenruhe. In derselben DLF-Meldung heißt es außerdem, im besetzten Westjordanland sei nach Behördenangaben ein palästinensischer Mann bei einem Angriff radikaler israelischer Siedler getötet worden; zwei weitere Menschen sollen verletzt worden sein. Die Berichte unterscheiden sich in den Opferzahlen und lassen den genauen Ablauf teils offen.",
+      "summary": "Die Quellen berichten über neue tödliche Angriffe im Südlibanon. Die genaue Opferzahl bleibt zwischen den Meldungen offen und reicht von drei bis mindestens elf Toten.",
+      "detail_summary": "Der Kern der Meldung ist gesichert: Im Südlibanon gab es nach den Quellen neue israelische Angriffe mit Toten und Verletzten. Die Berichte unterscheiden sich bei der Zahl der Opfer, nennen aber übereinstimmend einen tödlichen Angriff und weitere Gewalt im Raum Nabatija. ZDFheute ergänzt, dass auch Kinder und Sanitäter unter den Toten gewesen sein sollen. Israel verweist als Begründung auf Hisbollah-Aktivitäten und Verstöße gegen die Waffenruhe. Für die Wirkung ist vor allem der reale Zustand relevant, dass erneut Menschen getötet wurden und sich die Sicherheitslage weiter verschlechtert. Mögliche Folgen sind weitere Gegenreaktionen, zusätzliche Fluchtbewegungen und ein erneuter Druck auf die fragile Waffenruhe. Die Lage bleibt aber in den zentralen Punkten noch quellenabhängig, vor allem bei Opferzahl, genauer Zuschreibung und unmittelbarer Kausalkette.",
+      "why_relevant": "Die Meldung beschreibt eine konkrete Verschlechterung der Sicherheitslage mit Toten und Verletzten in einem bereits angespannten Konfliktgebiet. Das kann weitere militärische, politische und humanitäre Folgen auslösen und ist daher materiell.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Menschen wurden getötet und verletzt. Das verschärft die akute Gefährdungslage und kann weitere humanitäre Belastungen für die Zivilbevölkerung auslösen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus den Quellen ergibt sich kein direkter Umweltfaktor. Mögliche Folgewirkungen auf Infrastruktur oder Belastungen bleiben offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Die Angriffe stehen im Kontext einer fragilen Waffenruhe und können politische Entscheidungsräume sowie die regionale Deeskalation weiter belasten."
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Fall ist konfliktgeladen und enthält schwerwiegende Gewaltmeldungen mit politischer Zuschreibung.",
+        "factual_core": "Neue israelische Angriffe im Südlibanon haben nach den Quellen Tote und Verletzte verursacht.",
+        "epistemic_status": {
+          "confirmed": [
+            "Es gab neue Angriffe im Südlibanon.",
+            "Dabei gab es Tote und Verletzte."
+          ],
+          "actor_claims": [
+            "Israel begründet die Angriffe mit Hisbollah-Aktivitäten und Waffenruhe-Verstößen."
+          ],
+          "open": [
+            "Exakte Opferzahl",
+            "genauer Ablauf",
+            "unmittelbare Folgereaktionen"
+          ]
+        },
+        "attribution": {
+          "frame_source": "ZDFheute und Deutschlandfunk",
+          "speaker": "Israelische Armee, israelisches Außenministerium, libanesische Behörden bzw. NNA",
+          "original_term": "Waffenruhe-Verstöße",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Waffenruhe-Verstöße",
+          "origin_in_story": "ZDFheute und Deutschlandfunk",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Waffenruhe-Verstöße",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die Angriffe werden als Reaktion auf Verstöße und militärische Bedrohungen gerahmt.",
+          "implied_cause": "Hisbollah-Aktivitäten und angeblicher Wiederaufbau militärischer Fähigkeiten.",
+          "implied_responsibility": "Die Hisbollah wird als Auslöser markiert; die libanesische Seite bleibt nicht einheitlich gerahmt.",
+          "implied_threat": "Fortgesetzte Eskalation und weitere militärische Angriffe.",
+          "implied_solution_space": "Militärisches Vorgehen, mögliche politische oder sicherheitliche Gegenmaßnahmen.",
+          "material_omissions": [
+            "Die Quellenlage bleibt bei den Opferzahlen uneinheitlich.",
+            "Unabhängige Bestätigung der israelischen Begründung fehlt in den gelieferten Belegen."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Politische Einordnung bleibt auf den Konfliktkontext begrenzt und ist nicht eigenständig belegt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Nahost-Berichterstattung, Debatte über Waffenruhe und Sicherheitslage",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "hoch",
+          "trust_effect_potential": "mittel",
+          "discourse_effect_potential": "Die wiederholte Gewaltmeldung kann die Wahrnehmung einer anhaltenden Eskalation verstärken."
+        },
+        "impact_path": {
+          "first_order": "Tote und Verletzte werden öffentlich berichtet.",
+          "second_order": "Die Meldung kann politische und diplomatische Reaktionen auf die Waffenruhe auslösen.",
+          "third_order": "Bei Fortsetzung droht eine weitere Verhärtung des Konfliktrahmens."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Angriffe im Südlibanon Tote und Verletzte abweichende Opferzahlen in den Quellen",
+          "what_is_inferred": "Die Lage könnte sich weiter verschlechtern, wenn die Gewalt anhält.",
+          "what_is_open": "Keine vollständige Primärquelle im Datensatz Opferzahlen und Zuschreibungen sind nicht einheitlich",
+          "facts": [
+            "Angriffe im Südlibanon",
+            "Tote und Verletzte",
+            "abweichende Opferzahlen in den Quellen"
+          ],
+          "observations": [
+            "Israel nennt Hisbollah-Aktivitäten als Grund.",
+            "ZDFheute berichtet zusätzlich über Kinder und Sanitäter unter den Toten."
+          ],
+          "inferences": [
+            "Die Lage könnte sich weiter verschlechtern, wenn die Gewalt anhält."
+          ],
+          "impact_potentials": [
+            "Weitere Eskalation",
+            "mehr humanitäre Belastung",
+            "schwächere Deeskalationschancen"
+          ],
+          "impact_risks": [
+            "mehr zivile Opfer",
+            "Belastung von Rettungsstrukturen",
+            "politische Verhärtung"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine vollständige Primärquelle im Datensatz",
+            "Opferzahlen und Zuschreibungen sind nicht einheitlich"
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Quellen berichten nicht nur über politische Worte, sondern über konkrete Gewalt mit Toten und Verletzten im Südlibanon. Wichtig ist die klare Trennung: Gesichert ist der Angriff und der Schaden, offen bleiben genaue Opferzahlen und der vollständige Ablauf. Israel nennt Hisbollah-Aktivitäten als Grund; das ist eine Akteursperspektive, keine unabhängige Tatsachenprüfung. Für die Öffentlichkeit ist das relevant, weil solche Angriffe die Sicherheitslage verschlechtern und neue Gegenreaktionen oder humanitäre Belastungen auslösen können. Ob daraus eine weitere Eskalation wird, ist noch offen und muss mit neuen belastbaren Meldungen geprüft werden.",
+        "editorial_assessment": "Die Quellen berichten nicht nur über politische Worte, sondern über konkrete Gewalt mit Toten und Verletzten im Südlibanon. Wichtig ist die klare Trennung: Gesichert ist der Angriff und der Schaden, offen bleiben genaue Opferzahlen und der vollständige Ablauf. Israel nennt Hisbollah-Aktivitäten als Grund; das ist eine Akteursperspektive, keine unabhängige Tatsachenprüfung. Für die Öffentlichkeit ist das relevant, weil solche Angriffe die Sicherheitslage verschlechtern und neue Gegenreaktionen oder humanitäre Belastungen auslösen können. Ob daraus eine weitere Eskalation wird, ist noch offen und muss mit neuen belastbaren Meldungen geprüft werden.",
+        "fact_first_alternative": "Sachverhalt: Neue Angriffe im Südlibanon mit Toten und Verletzten. Wissensstatus: Die Opferzahlen variieren zwischen den Quellen. Attribution: Israel nennt Hisbollah-Aktivitäten als Begründung. Frame: Die Berichterstattung rahmt den Fall als Waffenruhe- und Sicherheitskonflikt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "",
+          "recommended_summary": "",
+          "recommended_meta_description": ""
+        },
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Zwei journalistische Quellen tragen den Kern der Meldung. Die Details zur Opferzahl und Begründung bleiben aber nicht vollständig deckungsgleich."
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T21:52:05.137Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T05:27:21.000Z",
+      "last_updated": "2026-09-07T21:55:04.954Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-5452d5307ffc63a88c9e",
+      "case_file": null,
+      "source_published_at": "2026-09-07T07:04:43.000Z",
+      "published_at": "2026-09-07T21:55:04.954Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/tote-bei-neuen-israelischen-angriffen-im-suedlibanon-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T07:04:43.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/tote-bei-neuen-israelischen-angriffen-im-suedlibanon-radikale-siedler-attackieren-offenbar-erneut-do-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T11:03:20.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/libanon-israel-angriffe-tote-verletzte-hisbollah-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T13:18:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-2f8debfae9969d81",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2f8debfae9969d81-9f9896c52b1fe15d-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2f8debfae9969d81-56683c5d06655249-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-2f8debfae9969d81-5ff2298eb0dc72cf-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "israel-intensifies-south-lebanon-strikes-killing-13-after-weeks-long-lull-969d81",
+      "title": "Israel intensifies South Lebanon strikes, killing 13 after weeks-long lull",
+      "source_summary": "Israel hat laut France 24 seine Luftangriffe im Süden des Libanon ausgeweitet. Nach Angaben des libanesischen Gesundheitsministeriums wurden dabei 13 Menschen getötet, darunter Frauen und Kinder. Die Meldung ordnet dies als Eskalation nach mehreren Wochen relativer Ruhe ein.\n\nIsrael sagte der Quelle zufolge, es werde weiter Ziele der vom Iran unterstützten Hisbollah angreifen und begründete das mit angeblichen Verstößen gegen die Waffenruhe. Die Hisbollah äußerte sich laut Bericht nicht zu den Angriffen. Offen bleibt zunächst, wie genau die einzelnen Treffer zustande kamen und ob es weitere bestätigte Opfer oder Folgemaßnahmen gibt.",
+      "summary": "Im Süden des Libanon sind nach einer Meldung von France 24 bei israelischen Luftangriffen 13 Menschen getötet worden. Israel kündigte an, weiter gegen die Hisbollah vorzugehen.",
+      "detail_summary": "Die Meldung beschreibt eine neue Eskalation im Süden des Libanon: Israel soll eine Serie von Luftangriffen geflogen haben, bei denen laut libanesischem Gesundheitsministerium 13 Menschen starben, darunter Frauen und Kinder. Israel kündigte zugleich an, weiter Ziele der vom Iran unterstützten Hisbollah anzugreifen und verwies dabei auf angebliche Verstöße gegen die Waffenruhe. Für die Einordnung reicht das als belastbarer Kern einer aktuellen Lageverschärfung, nicht aber für die Klärung von Ursache, militärischem Verlauf oder längerfristigen Folgen. Die materielle Relevanz liegt vor allem in der Zahl der Betroffenen, der unmittelbaren Tödlichkeit und der möglichen Fortsetzung der Angriffe. Wirkung im engeren Sinn ist damit noch nicht belegt; plausibel sind aber weitere Sicherheitsrisiken, neue Vertreibungen oder erneute Störungen im Grenzraum. Die Evidenz bleibt vorläufig, weil nur eine journalistische Quelle vorliegt und die Gegenposition der Hisbollah in der Meldung offen bleibt.",
+      "why_relevant": "Neue Angriffe mit Toten im Grenzraum verändern unmittelbar die Sicherheitslage, können weitere Gegenreaktionen auslösen und betreffen Zivilisten sowie regionale Stabilität.",
+      "topic": [
+        "Gesundheit",
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "rationale": "Tödliche Luftangriffe betreffen unmittelbar Menschenleben, Verletzungsrisiko und mögliche Vertreibung; die Quelle nennt 13 Tote, darunter Frauen und Kinder."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Meldung enthält keinen belastbaren Umwelt- oder Klimabezug."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Die Fortsetzung von Angriffen und Waffenruhevorwürfen kann politische Entscheidungsräume, Deeskalation und öffentliche Kontrolle im Konfliktfeld belasten."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "aeltere",
+          "patientinnen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T21:52:05.137Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T21:32:03.000Z",
+      "last_updated": "2026-09-07T21:53:36.052Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-2fced4499f7a74d7d7ba",
+      "case_file": null,
+      "source_published_at": "2026-09-07T21:32:03.000Z",
+      "published_at": "2026-09-07T21:53:36.052Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260907-israeli-strikes-south-lebanon-violence",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T21:32:03.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-aa6c2b7b8a381223",
       "title_image": {
