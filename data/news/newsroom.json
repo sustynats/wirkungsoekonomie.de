@@ -151626,7 +151626,7 @@
         "basis": "publisher_only_origin_unverified",
         "independence_established": false
       },
-      "event_id": "event-3571a475ab0ff094f8f9",
+      "event_id": "event-e87c0bb41d179b14c3e1",
       "first_seen_at": "2026-09-07T04:21:35.045Z"
     },
     "e67feaf08c39231290198a051cd64eab1bfa89f52b75308832655c2b578a001c": {
@@ -362918,7 +362918,39 @@
         ]
       },
       "id": "event-e87c0bb41d179b14c3e1",
-      "event_detected_at": "2026-09-07T09:06:53.363Z"
+      "event_detected_at": "2026-09-07T09:06:53.363Z",
+      "story_id": "wt-c02398cd87f59ee8",
+      "relevance": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "attention_impact_gap": null
     },
     "event-8319bae86d0aa28891c5": {
       "title_terms": [
@@ -391530,7 +391562,7 @@
       "role": "journalistic_report"
     },
     {
-      "event_id": "event-3571a475ab0ff094f8f9",
+      "event_id": "event-e87c0bb41d179b14c3e1",
       "source_item_id": "54afa45dfc7ec35afe9eb8f5ad796590a67d5727dae8f317c412969659cd2738",
       "source_id": "tagesspiegel-home",
       "role": "journalistic_report"
@@ -579478,7 +579510,35 @@
           "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0.143/0.172)."
         }
       ]
+    },
+    {
+      "at": "2026-09-07T09:21:30.730Z",
+      "story_id": "wt-07f3870f32ae8662",
+      "event_id": "event-b3b6b7dbecf642772b22",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "bundestag-wirtschaft",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210692",
+          "code": "SOURCE_PUBLICATION_DATE_INVALID",
+          "detail": "Das Veröffentlichungsdatum fehlt, ist ungültig oder liegt unplausibel in der Zukunft."
+        }
+      ]
+    },
+    {
+      "at": "2026-09-07T09:21:30.730Z",
+      "story_id": "wt-86ea1ddfd89beabf",
+      "event_id": "event-ae3d4b273922de048bb3",
+      "decision": "source_integrity_hold",
+      "issues": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "url": "https://www.stern.de/news/sabotageversuche-an-stromversorgung--weitere-sprengvorrichtungen-in-sachsen-gefunden-38214880.html",
+          "code": "SOURCE_SEMANTIC_FIT_OPEN",
+          "detail": "Titel-/Kontextpassung nicht ausreichend belegt (0.143/0.172)."
+        }
+      ]
     }
   ],
-  "updated_at": "2026-09-07T09:06:53.363Z"
+  "updated_at": "2026-09-07T09:21:30.730Z"
 }
