@@ -1,7 +1,541 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T18:56:39.293Z",
+  "updated_at": "2026-09-07T20:43:17.028Z",
   "stories": [
+    {
+      "story_id": "wt-8313deb6176c5fad",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8313deb6176c5fad-44af4e8a04db66fb-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8313deb6176c5fad-dc391c7ff457d5d3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-8313deb6176c5fad-13eea216e4181910-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nicht-nur-in-der-arktis-erwarmung-kann-die-folgen-von-erdbeben-verstarken-6c5fad",
+      "title": "Nicht nur in der Arktis: Erwärmung kann die Folgen von Erdbeben verstärken",
+      "source_summary": "Ein MDR-Beitrag beschreibt eine Rekonstruktion eines Erdbebengeschehens vor Jan Mayen am 10. März 2025. Nach dem Beben der Stärke 6,5 in 18 Kilometern Tiefe sei rund sieben Kilometer vom Epizentrum entfernt dreieinhalb Minuten später ein großer Felssturz ausgelöst worden; der Schutt sei 800 Meter tief gestürzt und habe den Kjerulf-Gletscher teilweise bedeckt.\n\nEin internationales Team unter Leitung des GEOMAR habe dafür fünf unabhängige Messverfahren zusammengeführt. Der Text nennt zudem weitere Messungen, etwa Bodenverschiebung, Luftschall und Satellitendaten. Offen bleibt im Beitrag, warum das gerade bei diesem Beben geschah und wie stark Erwärmung dabei tatsächlich eine Rolle spielte.",
+      "summary": "Ein MDR-Bericht rekonstruiert eine Kettenreaktion aus Erdbeben, Felssturz und Gletscherreaktion vor Jan Mayen. Als möglicher Hintergrund wird Erwärmung genannt, die Mitwirkung bleibt aber offen.",
+      "detail_summary": "Der Beitrag schildert einen klar abgegrenzten Naturvorgang vor Jan Mayen: Ein Beben der Stärke 6,5 soll einen Felssturz und anschließend Eisabbrüche am Kjerulf- und Weyprecht-Gletscher ausgelöst haben. Für die Meldung ist das neu und materiell, weil sie eine mögliche Verbindung von Erwärmung und Erdbebenfolgen auf ein konkret beobachtetes Ereignis bezieht. Der Wirkpfad wäre: wärmere Randbedingungen verändern Stabilität von Fels und Eis, dadurch kann bei gleicher seismischer Belastung der Schaden größer ausfallen. Das betrifft Naturgefahren, Küsten- und Gletscherstabilität sowie die Einordnung künftiger Risiken in kalten Regionen. Die Evidenz bleibt aber vorläufig, weil der Beitrag selbst die Ursache noch offenlässt und die Erwärmung nur als Verdacht im Hintergrund nennt.",
+      "why_relevant": "Die Meldung verbindet ein konkretes Erdbebenereignis mit einer möglichen klimabedingten Verstärkung seiner Folgen. Das ist relevant für Naturgefahren, Risikobewertung und die Frage, ob Erwärmung künftig Schadensfolgen von Erdbeben mitprägen kann.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Mögliche Folge ist eine stärkere Gefährdung von Menschen durch indirekte Naturgefahren, wenn instabilere Fels- und Eisverhältnisse Schäden verstärken. Ein unmittelbarer Nachweis für Menschenwirkungen fehlt im Beleg."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Der Befund betrifft Eis, Fels und Gletscherstabilität und damit physische Zustände in einem empfindlichen Klimaraum. Das kann die Abschätzung klimabedingter Naturgefahren verändern, ein positiver oder negativer Nettoeffekt ist noch nicht belegt."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter demokratischer Wirkpfad ist aus der Quelle nicht belegt. Indirekt kann der Befund aber Risikokommunikation, Forschung und Vorsorgepolitik beeinflussen."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "natur",
+          "europa",
+          "kommunen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T20:36:52.379Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T19:00:00.000Z",
+      "last_updated": "2026-09-07T20:40:57.012Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d5235dc6e4d3cc171917",
+      "case_file": null,
+      "source_published_at": "2026-09-07T19:00:00.000Z",
+      "published_at": "2026-09-07T20:40:57.012Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/wissen/umwelt-klima/erwaermung-kann-folgen-von-erdbeben-verstaerken-,erdbeben-arktis-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T19:00:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-6f87da7ae6b08d63",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6f87da7ae6b08d63-35025c36589ce85f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6f87da7ae6b08d63-9ae43ce70d149d8f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6f87da7ae6b08d63-63241a5e3ea2da70-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "tunisians-tell-the-story-of-their-summer-of-shortages-b08d63",
+      "title": "Tunisians tell the story of their summer of shortages",
+      "source_summary": "France 24 beschreibt einen Sommer mit wiederkehrenden Wasser- und Stromausfällen in Tunesien. Dazu kamen lange Schlangen für Flaschenwasser und Berichte über zerstörte Geflügelfarmen durch Hitze. Nach Darstellung des Beitrags waren Millionen Menschen von den Engpässen bei Strom und Wasser betroffen.\n\nDie Beobachter des Mediums führen die Lage auf jahrelange Unterinvestitionen in die Infrastruktur zurück. Der tunesische Präsident weist diese Einordnung zurück und spricht stattdessen von vorsätzlicher und geplanter Sabotage. Weitere belastbare Einzelheiten zu Ausmaß, Verantwortlichkeit oder Dauer bleiben in der Kurzquelle offen.",
+      "summary": "Tunesien erlebt laut dem Bericht einen Sommer mit massiven Wasser- und Stromausfällen. Die Ursache und die genaue Zuständigkeit bleiben nach der Quelle offen.",
+      "detail_summary": "Der berichtete Kern ist ein Versorgungsausfall bei Wasser und Strom in Tunesien, der laut Quelle Millionen Menschen betroffen hat. Genannt werden auch lange Schlangen für Flaschenwasser und Schäden an Geflügelfarmen durch Hitze. Das ist für Menschen unmittelbar relevant, weil es den Zugang zu Grundversorgung und damit Alltag, Hygiene und wirtschaftliche Aktivität beeinträchtigen kann. Der mögliche Wirkpfad läuft über knappe Infrastruktur, Ausfälle im Versorgungsnetz und Folgeschäden für Haushalte und Betriebe. Als mögliche Folge kommen längere Belastungen für Gesundheit, Einkommen und regionale Resilienz in Betracht, die Quelle belegt das aber nur teilweise. Die Evidenz bleibt vorläufig, weil nur ein journalistischer Bericht vorliegt und Ursache, Umfang und Dauer nicht unabhängig abgesichert sind.",
+      "why_relevant": "Die Meldung beschreibt eine materielle Veränderung bei der Grundversorgung mit Wasser und Strom. Betroffen sind viele Menschen, die Versorgungslage ist direkt alltags- und infrastrukturrelevant.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "rationale": "Wasser- und Stromausfälle treffen grundlegende Versorgung, Alltag und Gesundheit. Die Quelle nennt Millionen Betroffene und damit eine breite, unmittelbare Belastung."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Quelle verbindet die Engpässe mit Hitze, Wasserknappheit und zerstörten Geflügelfarmen. Das spricht für Umwelt- und Resilienzrisiken, ohne dass die Ursache abschließend geklärt ist."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "rationale": "Der Präsident weist die Lage politisch als Sabotage zurück, während Beobachter Unterinvestitionen nennen. Das berührt Verantwortungszuschreibung und staatliche Korrekturfähigkeit, bleibt aber faktisch ungeklärt."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T20:36:52.379Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T18:50:16.000Z",
+      "last_updated": "2026-09-07T20:40:25.286Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-349a9002690eea0b99fe",
+      "case_file": null,
+      "source_published_at": "2026-09-07T18:50:16.000Z",
+      "published_at": "2026-09-07T20:40:25.286Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/africa/20260907-tunisians-tell-story-their-summer-shortages",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T18:50:16.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-0db70d5b5b973623",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-da7f78205888ecc1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-f5943b6f808ee6db-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-bd9e1810bc8823a0-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wirtschaft-experten-gehen-von-weiter-steigenden-olpreisen-aus-973623",
+      "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
+      "source_summary": "Der Beitrag meldet Erwartungen von Experten, dass die Ölpreise weiter steigen könnten. Als Hauptgrund nennt die Sendung die angespannte Lage in der Straße von Hormus. Dort sei der Schiffsverkehr nach gegenseitigen Angriffen der USA und des Iran auf Tanker auf den niedrigsten Stand seit Mai zurückgegangen.\n\nIm Beitrag werden aktuelle Marktwerte genannt: Brent koste rund 98 Dollar je Barrel, Goldman Sachs halte bis zu 120 Dollar für möglich. Zugleich wird auf anhaltend hohe Kraftstoffpreise in Deutschland verwiesen. Der ADAC habe in der vergangenen Woche für E10 einen Höchststand im Zusammenhang mit dem Irankrieg gemeldet.",
+      "summary": "Die Meldung beschreibt einen Ölmarkt, der unter Spannungen in der Straße von Hormus steht. Genannt werden aktuelle Preise, eine Prognose und hohe Kraftstoffpreise in Deutschland.",
+      "detail_summary": "Die Quelle berichtet von weiter steigenden Ölpreis-Erwartungen und verbindet sie mit der angespannten Lage in der Straße von Hormus. Genannt werden ein niedrigerer Schiffsverkehr, ein Brent-Preis von rund 98 Dollar und eine Einschätzung von Goldman Sachs bis 120 Dollar. Für die Einordnung ist das relevant, weil Ölpreise über Energie-, Transport- und Kraftstoffkosten in viele Bereiche wirken können. Ein möglicher Wirkpfad ist daher: höhere Rohölpreise → teurere Kraftstoffe und Transporte → Belastung für Verbraucher und Unternehmen. Wie stark und wie lange das greift, bleibt offen, weil hier nur eine journalistische Darstellung und keine eigene Marktbeobachtung vorliegt. Die zentrale Evidenz ist damit belastbar als Erstmeldung, aber nicht als abschließende Analyse der tatsächlichen Preiswirkung.",
+      "why_relevant": "Ölpreisbewegungen können breit auf Energie-, Transport- und Verbraucherpreise wirken und damit mehrere Sektoren gleichzeitig betreffen.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Steigende Öl- und Kraftstoffpreise können Haushalte und Unternehmen kurzfristig über höhere Kosten belasten; die Breite der Betroffenen ist groß, die konkrete Höhe bleibt offen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Höhere Preise können den Verbrauch fossiler Energie nicht direkt senken, aber die Quelle beschreibt nur Markt- und Versorgungslage; ein Umwelt-Effekt ist daraus nicht unmittelbar belegbar."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter demokratischer Effekt ist aus der Quelle nicht belegt; denkbar sind nur indirekte Folgen über Preis- und Verteilungskonflikte."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "verbraucherinnen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T20:36:52.379Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T20:26:58.000Z",
+      "last_updated": "2026-09-07T20:40:02.383Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8081495831f3625dc003",
+      "case_file": null,
+      "source_published_at": "2026-09-07T20:26:58.000Z",
+      "published_at": "2026-09-07T20:40:02.383Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/experten-gehen-von-weiter-steigenden-oelpreisen-aus-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T20:26:58.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-255776ddd744e745",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-33234cba27bed701-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-8087460185623bd0-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-96648ce2d91660a1-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-ce1cec14fbf0a2bd-source.png"
+        }
+      },
+      "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
+      "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+      "source_summary": "Nach der Landtagswahl in Sachsen-Anhalt meldeten mehrere Quellen erste personelle und organisatorische Konsequenzen in der CDU. In einem Newsblog hieß es, die CDU-Spitze wolle sich nach der Niederlage neu aufstellen; Schulze stellte eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht und hatte bereits Konsequenzen angekündigt. Zugleich wurde berichtet, dass der Bundestagsabgeordnete Sepp Müller für den Landesvorsitz kandidieren will. Weitere Beiträge ordneten die Reaktionen ein und verwiesen auf die Debatte innerhalb der Partei.\n\nAußerdem äußerte sich Bundeskanzler Merz zur Wahl und sprach von einer Zäsur über Sachsen-Anhalt hinaus. Er sagte, das Ergebnis dürfe nicht einfach als Tagesgeschäft behandelt werden und habe auch Auswirkungen auf die internationale Lage. Die Berichte nennen keine окончeschlossene Personalentscheidung, sondern beschreiben einen laufenden innerparteilichen Klärungsprozess.",
+      "summary": "Nach der Wahlniederlage der CDU in Sachsen-Anhalt laufen erste Personal- und Strukturdebatten. Eine endgültige Entscheidung über die Parteiführung ist nach den gelieferten Quellen noch offen.",
+      "detail_summary": "Die Quellen zeigen einen klaren Zwischenstand nach der Landtagswahl in Sachsen-Anhalt: Schulze stellt eine Neuwahl des CDU-Landesvorstands in Aussicht, und Sepp Müller will für den Landesvorsitz kandidieren. Das ist für die Partei materiell relevant, weil damit Führung, Kurs und innerparteiliche Machtverteilung neu geordnet werden können. Der Wirkpfad führt von der Wahlniederlage über Personalentscheidungen zu möglichen Änderungen in Strategie, Geschlossenheit und Koalitionsfähigkeit. Für die demokratische Ebene ist vor allem bedeutsam, ob die CDU ihre organisatorische Handlungsfähigkeit rasch stabilisiert oder weiter in offenen Konflikten bleibt. Belastbar belegt ist aber nur der beginnende Prozess, nicht sein Ausgang. Über Folgen für Wählerverhalten, Regierungsbildung oder politische Mehrheiten lassen sich aus den gelieferten Quellen noch keine sicheren Aussagen ableiten.",
+      "why_relevant": "Die Meldung beschreibt einen konkreten Macht- und Organisationswechsel nach einem Wahlergebnis. Das ist neue Zustandsinformation mit möglicher Wirkung auf Parteiarbeit, politische Stabilität und Koalitionsoptionen.",
+      "topic": [
+        "Demokratie",
+        "Gesellschaft",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Personaldebatte kann die Arbeitsfähigkeit und Geschlossenheit der CDU in Sachsen-Anhalt verändern; zugleich ist der Ausgang noch offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus den gelieferten Quellen ergibt sich kein direkter Bezug zu Umwelt-, Klima- oder Ressourcenzuständen."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Parteiführung, Opposition und mögliche Neuordnung nach der Wahl berühren demokratische Korrekturfähigkeit und politische Repräsentation."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T20:36:52.379Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T12:36:15.000Z",
+      "last_updated": "2026-09-07T20:39:39.302Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-b8e5d6c8da26f0813a21",
+      "case_file": {
+        "case_id": "case-c3b7412b8f0f9d",
+        "member_count": 8,
+        "publisher_count": 13,
+        "members": [
+          {
+            "story_id": "wt-255776ddd744e745",
+            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
+            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+            "summary": "Nach der Wahlniederlage der CDU in Sachsen-Anhalt laufen erste Personal- und Strukturdebatten. Eine endgültige Entscheidung über die Parteiführung ist nach den gelieferten Quellen noch offen.",
+            "updated_at": "2026-09-07T20:39:39.302Z",
+            "published_at": "2026-09-07T20:39:39.302Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": true
+          },
+          {
+            "story_id": "wt-ce34d0b6e55327b5",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
+            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
+            "updated_at": "2026-09-07T18:23:55.805Z",
+            "published_at": "2026-09-07T18:23:55.805Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-ed33c0962c4a697d",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+            "summary": "Die AfD führt laut vorläufigem Ergebnis in Sachsen-Anhalt deutlich. Für die CDU beschreibt der Bericht einen Verlust des Regierungsauftrags und eine Rolle in der Opposition.",
+            "updated_at": "2026-09-07T13:43:48.649Z",
+            "published_at": "2026-09-07T13:43:48.649Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-67096fe077900925",
+            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
+            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
+            "updated_at": "2026-09-07T13:43:27.050Z",
+            "published_at": "2026-09-07T13:43:27.050Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-e10c23f5e37ed39e",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
+            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
+            "updated_at": "2026-09-06T20:53:01.243Z",
+            "published_at": "2026-09-06T20:53:01.243Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-12f9c680daba4f09",
+            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
+            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
+            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
+            "updated_at": "2026-09-06T20:07:20.597Z",
+            "published_at": "2026-09-06T20:07:20.597Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ebecf5b3f91d490",
+            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
+            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+            "updated_at": "2026-09-05T23:19:18.605Z",
+            "published_at": "2026-09-05T22:07:32.381Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-06476c6e980f5f47",
+            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-05T12:01:00.915Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-07T12:36:15.000Z",
+      "published_at": "2026-09-07T20:39:39.302Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 3
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Die CDU in Sachsen-Anhalt entscheidet über die künftige Parteiführung.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Beschluss oder Wahl eines neuen Landesvorstands bzw. Vorsitzes",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0539a39d2266c31b",
+          "announced_at": "2026-09-07T12:51:54.000Z",
+          "follow_up_date": "2026-09-14T20:39:39.302Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Schulze verkündet einen Rückzug oder bleibt im Amt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Bestätigung eines Rücktritts oder Verbleibs",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a3e93a43ba93f64f",
+          "announced_at": "2026-09-07T12:51:54.000Z",
+          "follow_up_date": "2026-09-14T20:39:39.302Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:36:15.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:37:32.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:51:54.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T18:44:45.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/cdu-in-sachsen-anhalt--mueller-geht-nach-merz-kritik-in-die-offensive-38216040.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T19:37:20.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:37:32.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-cdu-in-sachsen-anhalt-16027326.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:37:32.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-1cc2e06b531abcc4",
       "title_image": null,
@@ -853,179 +1387,6 @@
           "url": "https://taz.de/US-Vermittler-in-der-Ukraine/!6210651",
           "source_type": "media_rss",
           "published_at": "2026-09-06T11:48:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-ce34d0b6e55327b5",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ce34d0b6e55327b5-4eed0864417b7ab6-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ce34d0b6e55327b5-6e2a7f402a1f462a-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ce34d0b6e55327b5-20c3e89ca2a1d381-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
-      "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
-      "source_summary": "Am Abend nach der Landtagswahl in Sachsen-Anhalt meldet der MDR eine personelle Konsequenz in der CDU. Nach der Niederlage habe der Landesvorstand seine Ämter zur Verfügung gestellt, teilte CDU-Landeschef und Spitzenkandidat Sven Schulze demnach nach einer Landesvorstandssitzung mit. Bis zur Neuwahl der Parteiführung bleibe der bisherige Landesvorstand im Amt.\n\nDer Bericht nennt zudem einen Sonderparteitag im November, auf dem über die künftige Landesparteiführung entschieden werden soll. Weitere Details dazu, wer sich bewirbt oder wie der Ablauf genau aussieht, bleiben in der vorliegenden Quelle offen.",
-      "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
-      "detail_summary": "Der MDR berichtet, dass der CDU-Landesvorstand nach der Niederlage bei der Landtagswahl seine Ämter zur Verfügung gestellt hat. Bis zur Neuwahl bleibt der bisherige Vorstand im Amt, und ein Sonderparteitag im November soll über die künftige Landesparteiführung entscheiden. Das ist für die Partei relevant, weil sich damit Führung, Zuständigkeiten und innerparteiliche Steuerung ändern können. Der unmittelbare Wirkpfad liegt in der Neuordnung von Ämtern und Entscheidungswegen; für Wählerinnen und Wähler ist das vor allem ein Signal, nicht schon eine messbare Wirkung. Offen bleibt, wer kandidiert und ob die angekündigte Neuordnung tatsächlich zu einer neuen Linie führt. Belastbar belegt ist hier nur die angekündigte personelle Konsequenz aus einer einzelnen journalistischen Quelle.",
-      "why_relevant": "Nach der Landtagswahl gibt es eine konkrete personelle Folge in der CDU-Landespartei. Das betrifft Parteisteuerung und mögliche Anschlussentscheidungen, ist aber noch kein Nachweis für weitere politische oder gesellschaftliche Wirkungen.",
-      "topic": [
-        "Demokratie",
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "rationale": "Die Meldung beschreibt eine konkrete Führungsfolge nach der Wahl. Für Menschen ist das zunächst eine parteiinterne Zustandsänderung; eine weitergehende Auswirkung auf Politik oder Alltag ist noch offen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Zur Umwelt oder zu ökologischen Zuständen enthält die Quelle keinen Bezug."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "rationale": "Die parteiinterne Neuordnung betrifft politische Führung und damit demokratische Willensbildung innerhalb einer Landespartei. Eine Wirkung auf institutionelle Entscheidungsfähigkeit ist möglich, aber noch nicht belegt."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-07T18:22:09.938Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T18:11:12.000Z",
-      "last_updated": "2026-09-07T18:23:55.805Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-41226348abc84a6fb443",
-      "case_file": {
-        "case_id": "case-c3b7412b8f0f9d",
-        "member_count": 7,
-        "publisher_count": 13,
-        "members": [
-          {
-            "story_id": "wt-ce34d0b6e55327b5",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
-            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
-            "updated_at": "2026-09-07T18:23:55.805Z",
-            "published_at": "2026-09-07T18:23:55.805Z",
-            "kind": "Weitere Entwicklung",
-            "current": true
-          },
-          {
-            "story_id": "wt-ed33c0962c4a697d",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
-            "summary": "Die AfD führt laut vorläufigem Ergebnis in Sachsen-Anhalt deutlich. Für die CDU beschreibt der Bericht einen Verlust des Regierungsauftrags und eine Rolle in der Opposition.",
-            "updated_at": "2026-09-07T13:43:48.649Z",
-            "published_at": "2026-09-07T13:43:48.649Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-67096fe077900925",
-            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
-            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
-            "updated_at": "2026-09-07T13:43:27.050Z",
-            "published_at": "2026-09-07T13:43:27.050Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-e10c23f5e37ed39e",
-            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
-            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
-            "updated_at": "2026-09-06T20:53:01.243Z",
-            "published_at": "2026-09-06T20:53:01.243Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-12f9c680daba4f09",
-            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
-            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
-            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
-            "updated_at": "2026-09-06T20:07:20.597Z",
-            "published_at": "2026-09-06T20:07:20.597Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ebecf5b3f91d490",
-            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
-            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
-            "updated_at": "2026-09-05T23:19:18.605Z",
-            "published_at": "2026-09-05T22:07:32.381Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-06476c6e980f5f47",
-            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
-            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
-            "updated_at": "2026-09-05T12:28:41.779Z",
-            "published_at": "2026-09-05T12:01:00.915Z",
-            "kind": "Kontext oder Einordnung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-07T18:11:12.000Z",
-      "published_at": "2026-09-07T18:23:55.805Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Die CDU entscheidet auf einem Sonderparteitag im November über die künftige Landesparteiführung.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": "2026-11-30",
-          "measurable_indicator": "Beschluss oder Wahl einer neuen Landesparteiführung",
-          "expected_by_evidence_hash": "14a20a3977b3afab922e3891820b632496cc510bf31da98b393488fa1786495b",
-          "followup_id": "followup-271daf7944ff73f1",
-          "announced_at": "2026-09-07T18:11:12.000Z",
-          "follow_up_date": "2026-11-30T00:00:00.000Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-158,wahl-560.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T18:11:12.000Z",
           "primary_source": false
         }
       ]
@@ -3905,10 +4266,10 @@
       "editorial_analysis": {
         "analysis_id": "woek-analysis-36e98d72ae20",
         "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
-        "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
-        "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
+        "title": "Fahndung nach Sabotage am Stromnetz: Was der offene Fall an der Sicherheitsarchitektur verändert",
+        "teaser": "Ein Verdächtiger, sprengstoffverdächtige Gegenstände, offene Hypothesen: Der Fall ist mehr als ein Polizeibericht. Er belastet Schutzkonzepte, öffentliche Deutung und die Resilienz des Stromsystems.",
         "published_at": "2026-09-06T12:24:05.188Z",
-        "updated_at": "2026-09-06T12:24:05.188Z"
+        "updated_at": "2026-09-07T20:43:17.028Z"
       },
       "first_seen": "2026-09-04T15:15:00.000Z",
       "last_updated": "2026-09-07T14:54:35.121Z",
@@ -14792,6 +15153,17 @@
   ],
   "editorial_analyses": [
     {
+      "analysis_id": "woek-analysis-36e98d72ae20",
+      "story_id": "wt-60f4e4d7d43fad99",
+      "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
+      "title": "Fahndung nach Sabotage am Stromnetz: Was der offene Fall an der Sicherheitsarchitektur verändert",
+      "subtitle": "Die Berichte zeigen vor allem eine laufende Fahndung, einen offenen Ermittlungsstand und den Druck auf kritische Infrastruktur. Daraus folgt noch keine gesicherte Täterzuordnung.",
+      "teaser": "Ein Verdächtiger, sprengstoffverdächtige Gegenstände, offene Hypothesen: Der Fall ist mehr als ein Polizeibericht. Er belastet Schutzkonzepte, öffentliche Deutung und die Resilienz des Stromsystems.",
+      "published_at": "2026-09-06T12:24:05.188Z",
+      "updated_at": "2026-09-07T20:43:17.028Z",
+      "reading_time_minutes": 6
+    },
+    {
       "analysis_id": "woek-analysis-7c4918d1134c",
       "story_id": "wt-8f7ac0654a780960",
       "slug": "witkoff-fordert-russland-und-ukraine-zu-kompromissen-auf-was-das-fur-verhandlungen-7c4918",
@@ -14878,17 +15250,6 @@
       "published_at": "2026-09-06T16:37:35.523Z",
       "updated_at": "2026-09-06T16:37:35.523Z",
       "reading_time_minutes": 6
-    },
-    {
-      "analysis_id": "woek-analysis-36e98d72ae20",
-      "story_id": "wt-60f4e4d7d43fad99",
-      "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
-      "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
-      "subtitle": "Die Ermittlungen berühren kritische Infrastruktur, staatliche Schutzfähigkeit und das Vertrauen in die Stabilität des Energiesystems - auch wenn Motiv und Täterlage offen bleiben.",
-      "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
-      "published_at": "2026-09-06T12:24:05.188Z",
-      "updated_at": "2026-09-06T12:24:05.188Z",
-      "reading_time_minutes": 8
     },
     {
       "analysis_id": "woek-analysis-219f434ceb61",
