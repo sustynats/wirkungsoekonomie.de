@@ -1,0 +1,456 @@
+diff --git a/src/config.ts b/src/config.ts
+index dd8f4b1..d19d34c 100644
+--- a/src/config.ts
++++ b/src/config.ts
+@@ -84,6 +84,7 @@ export interface RuntimeConfig {
+   apiRouteRateLimitsPerHour: ApiRateLimitConfig;
+   apiBudgetEnabled: boolean;
+   apiMonthlyBudgetCents: number;
++  newsMonthlyBudgetUsdCents: number;
+   apiFeatureCostsCents: FeatureCostConfig;
+   websiteFeed: WebsiteFeedConfig;
+   newsPush: NewsPushConfig;
+@@ -214,6 +215,7 @@ export function readConfig(): RuntimeConfig {
+     },
+     apiBudgetEnabled: readBooleanEnv("API_BUDGET_ENABLED", true),
+     apiMonthlyBudgetCents: readIntegerEnv("API_MONTHLY_BUDGET_CENTS", 5000),
++    newsMonthlyBudgetUsdCents: readBudgetUsdCents(),
+     apiFeatureCostsCents: {
+       factcheck: readIntegerEnv("API_COST_FACTCHECK_CENTS", 20),
+       woekAi: readIntegerEnv("API_COST_WOEK_AI_CENTS", 8),
+@@ -252,6 +254,14 @@ export function readConfig(): RuntimeConfig {
+   };
+ }
+ 
++function readBudgetUsdCents(): number {
++  const raw = readOptionalEnv('NEWS_MONTHLY_BUDGET_USD_CENTS');
++  if (raw === undefined) return 1890;
++  const value = Number(raw);
++  if (!/^\d+$/.test(raw) || !Number.isSafeInteger(value) || value < 0) throw new Error('NEWS_MONTHLY_BUDGET_USD_CENTS must be a non-negative integer.');
++  return value;
++}
++
+ function readRequiredEnv(name: string): string {
+   const value = readOptionalEnv(name);
+   if (!value) {
+diff --git a/src/http/apiServer.ts b/src/http/apiServer.ts
+index 205c822..12d9e8b 100644
+--- a/src/http/apiServer.ts
++++ b/src/http/apiServer.ts
+@@ -267,7 +267,13 @@ export function startApiServer(service: FactcheckService, config: RuntimeConfig,
+           // Only this authenticated worker sees operational codes. These gates
+           // run before provider access and must not be charged as failed calls.
+           if (error instanceof FactcheckProviderError && ['monthly_budget_reached','news_monthly_budget_reached'].includes(error.technicalMessage || '')) {
+-            sendJson(response, 429, { ok:false, code:'BUDGET_EXHAUSTED', provider_called:false, error:'Das freigegebene KI-Budget ist ausgeschöpft.' });
++            sendJson(response, 429, { ok:false, code:'BUDGET_EXHAUSTED', provider_called:false,
++              budget_scope: error.technicalMessage === 'news_monthly_budget_reached' ? 'news' : 'shared',
++              error:'Das freigegebene KI-Budget ist ausgeschöpft.' });
++          } else if (error instanceof FactcheckProviderError && error.usageEvidence) {
++            sendJson(response, 502, { ok:false, code:'ANALYSIS_OUTPUT_INVALID', provider_called:true,
++              model:error.usageEvidence.model, usage:error.usageEvidence.usage,
++              error:'Die Nachrichtenanalyse hat kein gültiges Ausgabeformat.' });
+           } else throw error;
+         } finally {
+           newsAnalysisActive = false;
+diff --git a/src/index.ts b/src/index.ts
+index 7b82dc2..e8ebb1c 100644
+--- a/src/index.ts
++++ b/src/index.ts
+@@ -60,7 +60,7 @@ const discordAnalyticsStore = new DiscordAnalyticsStore({
+   maxSnapshots: config.discordAnalytics.maxSnapshots
+ });
+ const newsPushService = new NewsPushService(config.newsPush);
+-const newsAnalysisBudget = new NewsAnalysisBudget("./data/news-analysis-budget.json");
++const newsAnalysisBudget = new NewsAnalysisBudget("./data/news-analysis-budget.json", config.newsMonthlyBudgetUsdCents / 100);
+ let newsVisualProvider: NewsVisualProvider | undefined;
+ if (process.env.WOEK_HIGGSFIELD_ENABLED === "true") {
+   try {
+diff --git a/src/services/newsAnalysisBudget.ts b/src/services/newsAnalysisBudget.ts
+index 9c7663f..663f008 100644
+--- a/src/services/newsAnalysisBudget.ts
++++ b/src/services/newsAnalysisBudget.ts
+@@ -1,15 +1,18 @@
+ import { readFile, writeFile, mkdir, rename } from "node:fs/promises";
+ import { dirname } from "node:path";
+ import { FactcheckProviderError } from "./openaiFactcheck.js";
++import { miniUsageUsd } from './providerUsage.js';
+ 
+ interface BudgetState { version: 1; months: Record<string, { chargedUsd: number; requests: number }> }
+-interface UsageResult { usage?: { input_tokens: number; output_tokens: number; cached_input_tokens?: number }; cacheStatus?: string }
++interface UsageResult { model?: string; usage?: { input_tokens: number; output_tokens: number; cached_input_tokens?: number }; cacheStatus?: string }
+ 
+ // Crash-safe prepaid reservation. A failed or interrupted request retains its
+ // conservative reservation; successful calls reconcile to reported token usage.
+ export class NewsAnalysisBudget {
+   private queue: Promise<unknown> = Promise.resolve();
+-  constructor(private readonly file: string, private readonly limitUsd = 18.90, private readonly now = () => new Date()) {}
++  constructor(private readonly file: string, private readonly limitUsd = 18.90, private readonly now = () => new Date()) {
++    if (!Number.isFinite(limitUsd) || limitUsd < 0) throw new Error('Invalid newsroom budget limit');
++  }
+ 
+   withBudget<T extends UsageResult>(action: () => Promise<T>): Promise<T> {
+     const operation = this.queue.then(() => this.run(action));
+@@ -33,14 +36,18 @@ export class NewsAnalysisBudget {
+     current.requests += 1;
+     state.months[month] = current;
+     await this.save(state);
+-    const result = await action();
+-    let cost = reservation;
+-    const usage = result.usage;
+-    if (result.cacheStatus === "hit") cost = 0;
+-    else if (usage && Number.isFinite(usage.input_tokens) && Number.isFinite(usage.output_tokens) && usage.input_tokens >= 0 && usage.output_tokens >= 0) {
+-      const cached = Math.max(0, Math.min(usage.input_tokens, Number(usage.cached_input_tokens || 0)));
+-      cost = ((usage.input_tokens - cached) * 0.75 + cached * 0.075 + usage.output_tokens * 4.5) / 1e6;
++    let result: T;
++    try { result = await action(); }
++    catch (error) {
++      const cost = error instanceof FactcheckProviderError ? miniUsageUsd(error.usageEvidence) : undefined;
++      if (cost !== undefined) {
++        current.chargedUsd = Number((current.chargedUsd - reservation + cost).toFixed(6));
++        await this.save(state);
++      }
++      throw error;
+     }
++    const cost = result.cacheStatus === 'hit' ? 0
++      : miniUsageUsd(result.usage ? { model: result.model || '', usage: result.usage } : undefined) ?? reservation;
+     current.chargedUsd = Number((current.chargedUsd - reservation + cost).toFixed(6));
+     await this.save(state);
+     return result;
+diff --git a/src/services/openaiFactcheck.ts b/src/services/openaiFactcheck.ts
+index 599efcf..31256fe 100644
+--- a/src/services/openaiFactcheck.ts
++++ b/src/services/openaiFactcheck.ts
+@@ -46,7 +46,8 @@ export class FactcheckProviderError extends Error {
+   constructor(
+     message: string,
+     readonly statusCode = 503,
+-    readonly technicalMessage?: string
++    readonly technicalMessage?: string,
++    readonly usageEvidence?: import('./providerUsage.js').ProviderUsageEvidence
+   ) {
+     super(message);
+   }
+diff --git a/src/services/openaiWoekAi.ts b/src/services/openaiWoekAi.ts
+index 0996bd1..96f1f87 100644
+--- a/src/services/openaiWoekAi.ts
++++ b/src/services/openaiWoekAi.ts
+@@ -3,6 +3,7 @@ import { FactcheckProviderError } from "./openaiFactcheck.js";
+ import type { WebsiteKnowledgeHit, WebsiteKnowledgeService } from "./websiteKnowledge.js";
+ import type { WoekAiCacheStore } from "./woekAiCache.js";
+ import { buildWoekInstructions } from "./woekCore.js";
++import { validProviderUsage, type ProviderUsageEvidence } from './providerUsage.js';
+ 
+ export interface WoekAiQuestionInput {
+   question: string;
+@@ -156,6 +157,7 @@ export class OpenAiWoekAiProvider implements WoekAiAnswerProvider {
+ 
+       const controller = new AbortController();
+       const timeout = setTimeout(() => controller.abort(), remainingMs);
++      let usageEvidence: ProviderUsageEvidence | undefined;
+ 
+       try {
+         const response = await fetch("https://api.openai.com/v1/responses", {
+@@ -179,6 +181,15 @@ export class OpenAiWoekAiProvider implements WoekAiAnswerProvider {
+           throw openAiError(response.status, payload);
+         }
+ 
++        // Billing evidence belongs to the completed provider response, not to
++        // the validity of the generated article. No text is retained here.
++        // With earlier attempts, their unknown charges still require a reserve.
++        const usage = payload?.usage && {
++          input_tokens: payload.usage.input_tokens,
++          output_tokens: payload.usage.output_tokens,
++          cached_input_tokens: payload.usage.input_tokens_details?.cached_tokens ?? 0
++        };
++        if (attempt === 1 && validProviderUsage(usage)) usageEvidence = { model: this.options.model, usage };
+         const text = extractOutputText(payload);
+         if (!text) {
+           throw new FactcheckProviderError("Die WOeK-KI-Antwort war leer oder unlesbar.");
+@@ -193,20 +204,19 @@ export class OpenAiWoekAiProvider implements WoekAiAnswerProvider {
+         } : normalizeAnswer(parsed, this.options.model, knowledgeHits);
+         return {
+           ...answer,
+-          ...(attempt === 1 && payload?.usage && Number.isFinite(payload.usage.input_tokens) && Number.isFinite(payload.usage.output_tokens) ? {
+-            usage: { input_tokens: payload.usage.input_tokens, output_tokens: payload.usage.output_tokens, cached_input_tokens: Number(payload.usage.input_tokens_details?.cached_tokens || 0) }
+-          } : {})
++          ...(usageEvidence ? { usage: { ...usageEvidence.usage, cached_input_tokens: usageEvidence.usage.cached_input_tokens ?? 0 } } : {})
+         };
+       } catch (error) {
+         if (error instanceof FactcheckProviderError) {
+-          throw error;
++          throw usageEvidence ? new FactcheckProviderError(error.message, error.statusCode, error.technicalMessage, usageEvidence) : error;
+         }
+         if (isAbortError(error)) {
+           throw new FactcheckProviderError("Die WOeK-KI hat zu lange gebraucht. Bitte versuche es gleich erneut.");
+         }
+         if (error instanceof SyntaxError) {
+-          throw new FactcheckProviderError("Die WOeK-KI-Antwort war kein gueltiges Antwortformat.");
++          throw new FactcheckProviderError("Die WOeK-KI-Antwort war kein gueltiges Antwortformat.", 502, undefined, usageEvidence);
+         }
++        if (usageEvidence) throw new FactcheckProviderError("Die WOeK-KI-Antwort war kein gueltiges Antwortformat.", 502, undefined, usageEvidence);
+ 
+         const delayMs = retryDelaysMs[attempt - 1] ?? 0;
+         if (attempt <= retryDelaysMs.length && canRetry(deadline, delayMs)) {
+diff --git a/src/services/providerUsage.ts b/src/services/providerUsage.ts
+new file mode 100644
+index 0000000..bd581da
+--- /dev/null
++++ b/src/services/providerUsage.ts
+@@ -0,0 +1,27 @@
++export interface ProviderTokenUsage {
++  input_tokens: number;
++  output_tokens: number;
++  cached_input_tokens?: number;
++}
++
++export interface ProviderUsageEvidence {
++  model: string;
++  usage: ProviderTokenUsage;
++}
++
++export function validProviderUsage(value: unknown): value is ProviderTokenUsage {
++  const usage = value as ProviderTokenUsage | undefined;
++  return Boolean(usage && Number.isSafeInteger(usage.input_tokens) && usage.input_tokens >= 0
++    && Number.isSafeInteger(usage.output_tokens) && usage.output_tokens >= 0
++    && (usage.cached_input_tokens === undefined || Number.isSafeInteger(usage.cached_input_tokens)
++      && usage.cached_input_tokens >= 0 && usage.cached_input_tokens <= usage.input_tokens));
++}
++
++// Preserve the existing verified model tariff. Unknown models are not priced
++// by guessing; the caller keeps its conservative reservation instead.
++export function miniUsageUsd(evidence: ProviderUsageEvidence | undefined): number | undefined {
++  if (evidence?.model !== 'gpt-5.4-mini' || !validProviderUsage(evidence.usage)) return undefined;
++  const usage = evidence.usage;
++  const cached = usage.cached_input_tokens ?? 0;
++  return ((usage.input_tokens - cached) * 0.75 + cached * 0.075 + usage.output_tokens * 4.5) / 1e6;
++}
+diff --git a/src/services/tokenUsageBudget.ts b/src/services/tokenUsageBudget.ts
+index e4c0e9f..d65f48a 100644
+--- a/src/services/tokenUsageBudget.ts
++++ b/src/services/tokenUsageBudget.ts
+@@ -3,6 +3,7 @@ import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+ import { dirname } from "node:path";
+ import { FactcheckProviderError } from "./openaiFactcheck.js";
+ import type { ApiFeature, UsageBudgetOptions } from "./usageBudget.js";
++import { miniUsageUsd } from './providerUsage.js';
+ type BudgetFeature = ApiFeature | "news-analysis";
+ interface FeatureTotals { requests: number; estimatedCents: number }
+ interface MonthTotals { totalRequests: number; estimatedCents: number; features: Partial<Record<BudgetFeature, FeatureTotals>>; updatedAt: string }
+@@ -31,16 +32,18 @@ export class UsageBudgetTracker {
+     try { result = await action(); }
+     catch (error) {
+       if (error instanceof FactcheckProviderError && error.technicalMessage === 'news_monthly_budget_reached') await this.reconcile(id, 0, 'local_budget_rejection');
++      else if (feature === 'news-analysis' && error instanceof FactcheckProviderError) {
++        const usd = miniUsageUsd(error.usageEvidence);
++        if (usd !== undefined) await this.reconcile(id, cents(usd * USD_TO_GROSS_EUR_CENTS), 'provider_tokens_output_rejected', error.usageEvidence!.model, error.usageEvidence!.usage);
++      }
+       throw error;
+     }
+     const record = result as { cacheStatus?: string; mode?: string; provider?: string; model?: string; usage?: { input_tokens?: number; output_tokens?: number; cached_input_tokens?: number } } | undefined;
+     const cached = record?.cacheStatus === 'hit' || /cache/i.test(record?.mode || '') || /cache/i.test(record?.provider || '');
+     if (cached) await this.reconcile(id, 0, 'cache_hit');
+-    else if (record?.model === 'gpt-5.4-mini' && validUsage(record.usage)) {
+-      const usage = record.usage!;
+-      const cachedTokens = Math.min(usage.input_tokens!, usage.cached_input_tokens || 0);
+-      const usd = ((usage.input_tokens! - cachedTokens) * 0.75 + cachedTokens * 0.075 + usage.output_tokens! * 4.5) / 1e6;
+-      await this.reconcile(id, cents(usd * USD_TO_GROSS_EUR_CENTS), 'provider_tokens_with_fx_tax_reserve', record.model, usage);
++    else {
++      const usd = miniUsageUsd(record?.usage ? { model: record.model || '', usage: record.usage as import('./providerUsage.js').ProviderTokenUsage } : undefined);
++      if (usd !== undefined) await this.reconcile(id, cents(usd * USD_TO_GROSS_EUR_CENTS), 'provider_tokens_with_fx_tax_reserve', record!.model, record!.usage);
+     }
+     // Unknown models, usage or interrupted requests retain their reservation.
+     return result;
+@@ -93,6 +96,3 @@ export class UsageBudgetTracker {
+   }
+ }
+ function emptyMonth(): MonthTotals { return { totalRequests: 0, estimatedCents: 0, features: {}, updatedAt: new Date().toISOString() }; }
+-function validUsage(usage: any): boolean {
+-  return usage && Number.isInteger(usage.input_tokens) && usage.input_tokens >= 0 && Number.isInteger(usage.output_tokens) && usage.output_tokens >= 0 && (usage.cached_input_tokens === undefined || Number.isInteger(usage.cached_input_tokens) && usage.cached_input_tokens >= 0 && usage.cached_input_tokens <= usage.input_tokens);
+-}
+diff --git a/tests/apiServer.test.ts b/tests/apiServer.test.ts
+index 66b6721..5109db5 100644
+--- a/tests/apiServer.test.ts
++++ b/tests/apiServer.test.ts
+@@ -11,13 +11,13 @@ import { clientKey, startApiServer, type NewsVisualProvider } from "../src/http/
+ import type { UsageBudgetTracker } from '../src/services/usageBudget.js';
+ import { FactcheckProviderError } from '../src/services/openaiFactcheck.js';
+ 
+-it('reports a local budget refusal only to the authorized worker and never calls the provider',async()=>{
++it.each(['monthly_budget_reached', 'news_monthly_budget_reached'])('reports budget scope only to the authorized worker: %s',async technicalMessage=>{
+   let called=0;
+   const server=startApiServer({} as FactcheckService,{apiPort:0,apiHost:'127.0.0.1',apiAllowedOrigins:[],apiMaxBodyBytes:100000} as unknown as RuntimeConfig,{
+     newsPushService:{isAuthorized:(token:string)=>token==='test-only'} as unknown as NewsPushService,
+     newsAiProvider:{answer:async()=>{called++;return {sources:[],answer:'test'} as unknown as WoekAiAnswer}},
+     newsAnalysisBudget:{withBudget:async(action:()=>Promise<WoekAiAnswer>)=>action()} as unknown as NewsAnalysisBudget,
+-    budgetTracker:{withBudget:async(feature:string)=>{expect(feature).toBe('news-analysis');throw new FactcheckProviderError('budget',429,'monthly_budget_reached')}} as unknown as UsageBudgetTracker
++    budgetTracker:{withBudget:async(feature:string)=>{expect(feature).toBe('news-analysis');throw new FactcheckProviderError('budget',429,technicalMessage)}} as unknown as UsageBudgetTracker
+   });
+   await once(server,'listening');
+   const url=`http://127.0.0.1:${(server.address() as AddressInfo).port}/api/news-analysis`;
+@@ -25,13 +25,38 @@ it('reports a local budget refusal only to the authorized worker and never calls
+     const options={method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer test-only'},body:JSON.stringify({question:'News test'})};
+     for(let i=0;i<2;i++){
+       const response=await fetch(url,options);expect(response.status).toBe(429);
+-      expect(await response.json()).toMatchObject({code:'BUDGET_EXHAUSTED',provider_called:false});
++      expect(await response.json()).toMatchObject({code:'BUDGET_EXHAUSTED',provider_called:false,budget_scope:technicalMessage==='news_monthly_budget_reached'?'news':'shared'});
+     }
+     expect((await fetch(url,{...options,headers:{'Content-Type':'application/json'}})).status).toBe(401);
+     expect(called).toBe(0);
+   }finally{server.closeAllConnections();await new Promise<void>((resolve,reject)=>server.close(error=>error?reject(error):resolve()))}
+ });
+ 
++it('returns billing evidence for unusable output without leaking content and releases the lane', async()=>{
++  let called=0;
++  const evidence={model:'gpt-5.4-mini',usage:{input_tokens:1000,output_tokens:500,cached_input_tokens:100}};
++  const server=startApiServer({} as FactcheckService,{apiPort:0,apiHost:'127.0.0.1',apiAllowedOrigins:[],apiMaxBodyBytes:100000} as unknown as RuntimeConfig,{
++    newsPushService:{isAuthorized:(token:string)=>token==='test-only'} as unknown as NewsPushService,
++    newsAiProvider:{answer:async()=>{called++;throw new FactcheckProviderError('private raw content',502,'private provider diagnostic',evidence)}},
++    newsAnalysisBudget:{withBudget:async(action:()=>Promise<WoekAiAnswer>)=>action()} as unknown as NewsAnalysisBudget,
++  });
++  await once(server,'listening');
++  const url=`http://127.0.0.1:${(server.address() as AddressInfo).port}/api/news-analysis`;
++  const options={method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer test-only'},body:JSON.stringify({question:'Test'})};
++  try {
++    expect((await fetch(url,{...options,headers:{'Content-Type':'application/json'}})).status).toBe(401);
++    expect(called).toBe(0);
++    for(let i=0;i<2;i++) {
++      const response=await fetch(url,options);
++      expect(response.status).toBe(502);
++      const body=await response.json();
++      expect(body).toEqual({ok:false,code:'ANALYSIS_OUTPUT_INVALID',provider_called:true,...evidence,error:'Die Nachrichtenanalyse hat kein gültiges Ausgabeformat.'});
++      expect(JSON.stringify(body)).not.toContain('private');
++    }
++    expect(called).toBe(2);
++  } finally {server.closeAllConnections();await new Promise<void>((resolve,reject)=>server.close(error=>error?reject(error):resolve()))}
++});
++
+ it("protects image generation, validates input and never exposes provider secrets", async () => {
+   let called = 0, fail = false;
+   const image = { bytes: Buffer.from("test-image"), sha256: "test-hash", model: "nano_banana_pro", generated_at: "2026-09-04T00:00:00Z", prompt_version: "test", reused: false };
+diff --git a/tests/newsAnalysisBudget.test.ts b/tests/newsAnalysisBudget.test.ts
+index 5ccd168..93c445b 100644
+--- a/tests/newsAnalysisBudget.test.ts
++++ b/tests/newsAnalysisBudget.test.ts
+@@ -3,6 +3,7 @@ import { mkdtemp, readFile, rm } from "node:fs/promises";
+ import { tmpdir } from "node:os";
+ import { join } from "node:path";
+ import { NewsAnalysisBudget } from "../src/services/newsAnalysisBudget.js";
++import { FactcheckProviderError } from '../src/services/openaiFactcheck.js';
+ 
+ const temporaryDirectories: string[] = [];
+ afterEach(async () => { for (const dir of temporaryDirectories.splice(0)) await rm(dir, { recursive: true, force: true }); });
+@@ -16,7 +17,7 @@ describe("persistent newsroom budget", () => {
+     const { budget, file } = await fixture();
+     await budget.withBudget(async () => {
+       expect(JSON.parse(await readFile(file, "utf8")).months["2026-09"].chargedUsd).toBe(0.25);
+-      return { usage: { input_tokens: 1000, output_tokens: 1000 } };
++      return { model:'gpt-5.4-mini', usage: { input_tokens: 1000, output_tokens: 1000 } };
+     });
+     expect(JSON.parse(await readFile(file, "utf8")).months["2026-09"].chargedUsd).toBe(0.00525);
+   });
+@@ -26,4 +27,25 @@ describe("persistent newsroom budget", () => {
+     const restarted = new NewsAnalysisBudget(file, 0.25, () => new Date("2026-09-03T12:00:00Z"));
+     await expect(restarted.withBudget(async () => ({}))).rejects.toMatchObject({ statusCode: 429 });
+   });
++  it('charges reported tokens for rejected output without accepting the output', async () => {
++    const { budget, file } = await fixture(0.5);
++    const error = new FactcheckProviderError('Invalid JSON', 502, undefined, {model:'gpt-5.4-mini',usage:{input_tokens:1000,output_tokens:1000}});
++    await expect(budget.withBudget(async()=>{throw error})).rejects.toBe(error);
++    expect(JSON.parse(await readFile(file,'utf8')).months['2026-09'].chargedUsd).toBe(0.00525);
++    // A rejected but cheaply billed answer must not consume a whole $0.25 slot.
++    await budget.withBudget(async()=>({model:'gpt-5.4-mini',usage:{input_tokens:1000,output_tokens:1000}}));
++    expect(JSON.parse(await readFile(file,'utf8')).months['2026-09'].chargedUsd).toBe(0.0105);
++  });
++  it('does not release reserves for unknown models or malformed billing evidence', async () => {
++    const { budget, file } = await fixture(2);
++    for (const evidence of [
++      {model:'unknown',usage:{input_tokens:1000,output_tokens:1000}},
++      {model:'gpt-5.4-mini',usage:{input_tokens:1000,output_tokens:1000,cached_input_tokens:1001}},
++      {model:'gpt-5.4-mini',usage:{input_tokens:-1,output_tokens:1000}},
++    ]) await expect(budget.withBudget(async()=>{throw new FactcheckProviderError('invalid',502,undefined,evidence)})).rejects.toThrow('invalid');
++    expect(JSON.parse(await readFile(file,'utf8')).months['2026-09'].chargedUsd).toBe(0.75);
++  });
++  it('rejects invalid limits without accessing any provider or ledger', () => {
++    for (const limit of [-1, NaN, Infinity]) expect(()=>new NewsAnalysisBudget('/not-read',limit)).toThrow('Invalid newsroom budget limit');
++  });
+ });
+diff --git a/tests/newsBudgetConfig.test.ts b/tests/newsBudgetConfig.test.ts
+new file mode 100644
+index 0000000..935bf41
+--- /dev/null
++++ b/tests/newsBudgetConfig.test.ts
+@@ -0,0 +1,15 @@
++import { afterEach, expect, it, vi } from 'vitest';
++import { readConfig } from '../src/config.js';
++
++afterEach(()=>vi.unstubAllEnvs());
++it('keeps the authorized default and allows an explicit finite server limit without rebuilding',()=>{
++  vi.stubEnv('DISCORD_TOKEN','test');vi.stubEnv('DISCORD_CLIENT_ID','test');
++  vi.stubEnv('NEWS_MONTHLY_BUDGET_USD_CENTS',undefined);
++  expect(readConfig().newsMonthlyBudgetUsdCents).toBe(1890);
++  vi.stubEnv('NEWS_MONTHLY_BUDGET_USD_CENTS','1800');
++  expect(readConfig().newsMonthlyBudgetUsdCents).toBe(1800);
++  for (const value of ['-1','Infinity','NaN','18.9','100oops','9007199254740992']) {
++    vi.stubEnv('NEWS_MONTHLY_BUDGET_USD_CENTS',value);
++    expect(()=>readConfig()).toThrow('NEWS_MONTHLY_BUDGET_USD_CENTS');
++  }
++});
+diff --git a/tests/openaiWoekAi.test.ts b/tests/openaiWoekAi.test.ts
+index ec6acaf..ddcdd39 100644
+--- a/tests/openaiWoekAi.test.ts
++++ b/tests/openaiWoekAi.test.ts
+@@ -7,6 +7,25 @@ afterEach(() => {
+ });
+ 
+ describe("OpenAiWoekAiProvider", () => {
++  it.each(['', '{"analyses":', '{"other":[]}'])('preserves first-attempt usage when output is unusable: %s', async output_text => {
++    const fetchMock=vi.fn().mockResolvedValue(new Response(JSON.stringify({output_text,usage:{input_tokens:1000,output_tokens:500,input_tokens_details:{cached_tokens:200}}}),{status:200}));
++    vi.stubGlobal('fetch',fetchMock);
++    await expect(providerWith({newsroomMode:true}).answer({question:'Test'})).rejects.toMatchObject({usageEvidence:{model:'gpt-test',usage:{input_tokens:1000,output_tokens:500,cached_input_tokens:200}}});
++    expect(fetchMock).toHaveBeenCalledTimes(1);
++  });
++  it('does not claim complete token evidence after an earlier unknown attempt',async()=>{
++    vi.spyOn(console,'warn').mockImplementation(()=>undefined);
++    const fetchMock=vi.fn()
++      .mockResolvedValueOnce(new Response('{}',{status:503}))
++      .mockResolvedValueOnce(new Response(JSON.stringify({output_text:'broken',usage:{input_tokens:1000,output_tokens:500}}),{status:200}));
++    vi.stubGlobal('fetch',fetchMock);
++    await expect(providerWith({newsroomMode:true,retryDelaysMs:[0]}).answer({question:'Test'})).rejects.toMatchObject({usageEvidence:undefined});
++    expect(fetchMock).toHaveBeenCalledTimes(2);
++  });
++  it('does not normalize invalid token counts into valid cost evidence',async()=>{
++    vi.stubGlobal('fetch',vi.fn().mockResolvedValue(new Response(JSON.stringify({output_text:'broken',usage:{input_tokens:100,output_tokens:500,input_tokens_details:{cached_tokens:'unknown'}}}),{status:200})));
++    await expect(providerWith({newsroomMode:true}).answer({question:'Test'})).rejects.toMatchObject({usageEvidence:undefined});
++  });
+   it("uses a separate bounded newsroom output budget and exposes actual token usage", async () => {
+     const fetchMock = vi.fn().mockResolvedValue(new Response(JSON.stringify({ output_text: JSON.stringify({ analyses: [{ story_id: "test", publication_recommendation: false }] }), usage: { input_tokens: 100, output_tokens: 200, input_tokens_details: { cached_tokens: 40 } } }), { status: 200 }));
+     vi.stubGlobal("fetch", fetchMock);
+diff --git a/tests/tokenUsageBudget.test.ts b/tests/tokenUsageBudget.test.ts
+index 966d60f..43a445b 100644
+--- a/tests/tokenUsageBudget.test.ts
++++ b/tests/tokenUsageBudget.test.ts
+@@ -51,6 +51,23 @@ describe('token cost accounting', () => {
+     const entries=JSON.parse(await readFile(file,'utf8')).entries;
+     expect(entries[0].chargedCents).toBe(0);expect(entries[1].basis).toBe('reserved_unknown');
+   });
++  it('retains the charge for unusable output using reported tokens, not a flat reserve',async()=>{
++    const {budget,file}=await fixture();
++    const error=new FactcheckProviderError('invalid output',502,undefined,result);
++    await expect(budget.withBudget('news-analysis',async()=>{throw error})).rejects.toBe(error);
++    const state=JSON.parse(await readFile(file,'utf8'));
++    expect(state.entries[0].basis).toBe('provider_tokens_output_rejected');
++    expect(state.entries[0].chargedCents).toBeCloseTo(0.00525*USD_TO_GROSS_EUR_CENTS,5);
++    expect(state.entries[0].usage).toEqual(result.usage);
++    expect(state.months[new Date().toISOString().slice(0,7)].totalRequests).toBe(1);
++  });
++  it('does not use newsroom token-only evidence to release another service reservation',async()=>{
++    const {budget,file}=await fixture();
++    await expect(budget.withBudget('woek-ai',async()=>{throw new FactcheckProviderError('invalid',502,undefined,result)})).rejects.toThrow('invalid');
++    const entry=JSON.parse(await readFile(file,'utf8')).entries[0];
++    expect(entry.basis).toBe('reserved_unknown');
++    expect(entry.chargedCents).toBe(35);
++  });
+   it('does not reset damaged or legacy exhausted ledgers',async()=>{
+     const {budget,file}=await fixture();
+     await writeFile(file,'broken');
+

@@ -9,7 +9,7 @@ import { callWoekAi, estimateUsage, monthlyUsage, sha256, storySimilarity } from
 import { eventCompatibility } from "./newsroom.mjs";
 import { loadNewsRegistry } from "./registry.mjs";
 import { sourceIntegrityForStory } from "./source-integrity.mjs";
-import { NEWS_REQUEST_RESERVATION_USD, costFromUsage, modelRates, newsBudget } from "./budget.mjs";
+import { NEWS_REQUEST_RESERVATION_USD, costFromUsage, failedRequestCost, modelRates, newsBudget } from "./budget.mjs";
 import {
   EDITORIAL_ANALYSIS_VERSION, buildEditorialAnalysisPrompt, editorialAnalysisAssessment,
   editorialAnalysisValidationErrors, editorialSlug, editorialSourceRef, sanitizeEditorialAnalysis,
@@ -204,7 +204,15 @@ export async function runEditorialAnalyses({
   const ready = assessed
     .filter(({ story, assessment }) => !isCommissionedAnalysis(existingForStory(store, story.story_id)) && assessment.candidate && assessment.evidence_gate.passed && existingForStory(store, story.story_id)?.source_fingerprint !== assessment.fingerprint)
     .sort((left, right) => right.assessment.editorial_analysis_score - left.assessment.editorial_analysis_score || right.assessment.analysis_gain - left.assessment.analysis_gain || Date.parse(right.story.last_updated || 0) - Date.parse(left.story.last_updated || 0));
-  const runnable = ready.filter(({ story, assessment }) => !(Date.parse(retryFor(story, assessment)?.next_attempt_at) > Date.parse(now)));
+  const runnable = ready.filter(({ story, assessment }) => {
+    const retry = retryFor(story, assessment);
+    let next = Date.parse(retry?.next_attempt_at);
+    const last = Date.parse(retry?.last_attempt_at);
+    // Legacy budget refusals accumulated the quality backoff up to 12 hours.
+    // Keep their history, but do not let capacity masquerade as a quality fault.
+    if (retry?.reason === 'AI_BUDGET_EXHAUSTED' && Number.isFinite(last) && last <= Date.parse(now)) next = Math.min(next, last + 15 * 60000);
+    return !(next > Date.parse(now));
+  });
   const researchPending = candidateRows.filter((candidate) => candidate.status === "research_pending");
   const report = {
     schema_version: "1.0", execute, bootstrap, started_at: now, scanned_stories: activeStories.length, scanned_subjects: subjects.length,
@@ -243,18 +251,21 @@ export async function runEditorialAnalyses({
     let analysis;
     const previousRetry = retryFor(story, assessment);
     let errors = previousRetry?.quality_errors || [];
+    let requestPending = false;
     try {
       for (let qualityAttempt = 0; qualityAttempt < 2; qualityAttempt += 1) {
         if (qualityAttempt && spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) throw new Error("EDITORIAL_AI_BUDGET_BLOCKED");
         const prompt = buildEditorialAnalysisPrompt(story, assessment, errors);
+        requestPending = true;
         result = await callAiImpl([story], {
           apiUrl, authToken, attempts: 2, timeoutMs: 180000,
           clientId: "woek-wirkungsticker-editorial-analysis-v1",
           context: "Wirkungsticker: eigenständige, quellengebundene WÖK-Analyse mit Claim Ledger, Gegenbefund und Self-Frame-Check",
           prompt,
         });
+        requestPending = false;
         report.editorial_research_started += 1;
-        report.research_calls += 1;
+        report.research_calls += Number(result.request_attempts || 1);
         const callUsage = costFromUsage(result, estimateUsage(result.prompt_chars, result.answer_chars, result.model, modelRates(result.model)));
         spend += callUsage.estimated_cost_usd;
         report.research_tokens += callUsage.input_tokens;
@@ -298,8 +309,18 @@ export async function runEditorialAnalyses({
       writeAtomic(analysesFile, store);
     } catch (error) {
       const reason = String(error?.message || error).slice(0, 700);
-      const attempts = Number(previousRetry?.attempts || 0) + 1;
-      const delayMinutes = Math.min(720, 15 * (2 ** Math.min(6, attempts - 1)));
+      if (requestPending) {
+        const cost = failedRequestCost(error);
+        report.research_calls += Number(error?.requestAttempts ?? 1);
+        if (!error.providerNotCalled) report.editorial_research_started += 1;
+        spend += cost.estimated_cost_usd;
+        report.research_tokens += cost.input_tokens;
+        report.analysis_tokens += cost.output_tokens;
+        report.estimated_cost_usd = Number((report.estimated_cost_usd + cost.estimated_cost_usd).toFixed(6));
+      }
+      const budgetBlocked = reason === 'AI_BUDGET_EXHAUSTED';
+      const attempts = Number(previousRetry?.attempts || 0) + (budgetBlocked ? 0 : 1);
+      const delayMinutes = budgetBlocked ? 15 : Math.min(720, 15 * (2 ** Math.min(6, attempts - 1)));
       store.retry_state[story.story_id] = {
         fingerprint: assessment.fingerprint, method_version: EDITORIAL_ANALYSIS_VERSION,
         attempts, last_attempt_at: now, next_attempt_at: new Date(Date.parse(now) + delayMinutes * 60000).toISOString(),
@@ -307,6 +328,11 @@ export async function runEditorialAnalyses({
       };
       writeAtomic(analysesFile, store);
       report.failed.push({ story_id: story.story_id, reason, next_attempt_at: store.retry_state[story.story_id].next_attempt_at });
+      if (budgetBlocked) {
+        report.budget_blocked = true;
+        report.budget_block_scope = ['news', 'shared'].includes(error.budgetScope) ? error.budgetScope : 'unknown';
+        break;
+      }
     }
   }
   report.completed_at = new Date().toISOString();

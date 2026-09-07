@@ -3,7 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildNewsSite } from "./build.mjs";
 import { callWoekAi, estimateUsage, monthlyUsage, sha256, validateAnalysis } from "./lib.mjs";
-import { NEWS_REQUEST_RESERVATION_USD, costFromUsage, modelRates, newsBudget } from "./budget.mjs";
+import { NEWS_REQUEST_RESERVATION_USD, costFromUsage, failedRequestCost, modelRates, newsBudget } from "./budget.mjs";
 import { MEDIA_ANALYSIS_VERSION, MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, applySelfFrameRewrites, detectMediaImpactTrigger, estimateMediaUsage, mediaTriggerForAnalysis, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
 
 const DEFAULT_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -98,6 +98,7 @@ export async function backfillMediaImpact({
   }
   for (const { story, trigger } of selected) {
     if (spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) { result.failed.push({ story_id: story.story_id, reason: "AI_BUDGET_BLOCKED" }); break; }
+    let requestPending = false;
     try {
       let ai;
       let workingStory;
@@ -106,8 +107,11 @@ export async function backfillMediaImpact({
       let qualityErrors = [];
       for (let qualityAttempt = 0; qualityAttempt < 2; qualityAttempt += 1) {
         if (qualityAttempt && spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) throw new Error("AI_BUDGET_BLOCKED");
-        ai = await callAiImpl([story], { apiUrl, authToken, attempts: 3, timeoutMs: 120000, clientId: "woek-wirkungsticker-media-backfill-v1", context: "Wirkungsticker: selektiver, versionierter Medien- und Sprachwirkungs-Backfill", prompt: buildMediaBackfillPrompt(story, trigger, qualityErrors) });
-        result.ai_requests += 1;
+        const prompt = buildMediaBackfillPrompt(story, trigger, qualityErrors);
+        requestPending = true;
+        ai = await callAiImpl([story], { apiUrl, authToken, attempts: 3, timeoutMs: 120000, clientId: "woek-wirkungsticker-media-backfill-v1", context: "Wirkungsticker: selektiver, versionierter Medien- und Sprachwirkungs-Backfill", prompt });
+        requestPending = false;
+        result.ai_requests += Number(ai.request_attempts || 1);
         result.last_model = ai.model;
         result.last_provider = ai.provider;
         const callCost = costFromUsage(ai, estimateUsage(ai.prompt_chars, ai.answer_chars, ai.model, modelRates(ai.model)));
@@ -146,7 +150,19 @@ export async function backfillMediaImpact({
       result.estimated_media_payload_tokens = Number(result.estimated_media_payload_tokens || 0) + mediaUsage.input_tokens + mediaUsage.output_tokens;
       writeAtomic(storiesFile, store);
     } catch (error) {
+      if (requestPending) {
+        const cost = failedRequestCost(error);
+        result.ai_requests += Number(error?.requestAttempts ?? 1);
+        spend += cost.estimated_cost_usd;
+        result.media_check_tokens += cost.input_tokens + cost.output_tokens;
+        result.media_check_cost_usd = Number((result.media_check_cost_usd + cost.estimated_cost_usd).toFixed(6));
+      }
       result.failed.push({ story_id: story.story_id, reason: String(error?.message || error).slice(0, 500) });
+      if (error?.message === 'AI_BUDGET_EXHAUSTED') {
+        result.budget_blocked = true;
+        result.budget_block_scope = ['news', 'shared'].includes(error.budgetScope) ? error.budgetScope : 'unknown';
+        break;
+      }
     }
   }
   result.completed_at = new Date().toISOString();

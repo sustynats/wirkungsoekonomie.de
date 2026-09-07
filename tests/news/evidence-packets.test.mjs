@@ -131,6 +131,55 @@ test('malformed AI output is retained and retried automatically after backoff', 
   assert.equal(captured.storyStore.stories[0].pending_update,undefined);
 });
 
+for (const code of ['AI_PROVIDER_OUTPUT_INVALID', 'AI_SCHEMA_ANALYSES_REQUIRED']) test(`reported ${code} cost reaches the journal and source funnel without publication`, async () => {
+  let captured;
+  const previous = storedStory();
+  const error = new Error(code);
+  error.requestAttempts = 1;
+  error.promptChars = 24000;
+  error.billingEvidence = { model: 'gpt-5.4-mini', reported_usage: { input_tokens: 1000, output_tokens: 500, cached_input_tokens: 200 } };
+  const report = await runWirkungsticker(options(previous, { captureState: value => captured = value, callAiImpl: async () => { throw error; } }));
+  assert.equal(report.estimated_cost_usd, 0.002865);
+  assert.equal(report.ai_output_failure_cost_usd, 0.002865);
+  assert.equal(report.input_tokens, 1000);
+  assert.equal(report.output_tokens, 500);
+  assert.equal(report.prompt_chars_sent, 24000);
+  assert.equal(report.ai_calls, 1);
+  assert.equal(report.ai_provider_failures, 0);
+  assert.equal(report.ai_output_invalid, 1);
+  assert.equal(report.published_stories, 0);
+  assert.equal(report.updated_stories, 0);
+  const saved = captured.storyStore.stories[0];
+  assert.equal(saved.pending_update.reason, 'AI_OUTPUT_INVALID');
+  assert.equal(saved.pending_update.quality_retry_count, 1);
+  assert.deepEqual(saved.analysis, previous.analysis);
+  assert.deepEqual(saved.versions, previous.versions);
+  assert.equal(captured.usage.runs.at(-1).ai.estimated_cost_usd, 0.002865);
+  assert.equal(captured.usage.runs.at(-1).ai.output_failure_cost_usd, 0.002865);
+  assert.ok(JSON.stringify(report.source_funnel).includes('0.002865'));
+});
+
+test('server budget scope is reported without charging a rejected request or clearing the queue', async () => {
+  let captured;
+  const error = Object.assign(new Error('AI_BUDGET_EXHAUSTED'), { requestAttempts: 1, providerNotCalled: true, budgetScope: 'shared' });
+  const report = await runWirkungsticker(options(storedStory(), { captureState: value => captured = value, callAiImpl: async () => { throw error; } }));
+  assert.equal(report.budget_block_scope, 'shared');
+  assert.equal(report.estimated_cost_usd, 0);
+  assert.equal(report.published_stories, 0);
+  assert.equal(captured.storyStore.stories[0].pending_update.reason, 'AI_BUDGET_BLOCKED');
+});
+
+test('a local error after booked provider usage never adds another request reservation', async () => {
+  const report=await runWirkungsticker(options(storedStory(),{callAiImpl:async()=>({
+    analyses:{invalid_internal_contract:true},model:'gpt-5.4-mini',request_attempts:1,
+    reported_usage:{input_tokens:1000,output_tokens:500,cached_input_tokens:200},
+  })}));
+  assert.equal(report.estimated_cost_usd,0.002865);
+  assert.equal(report.ai_calls,1);
+  assert.equal(report.published_stories,0);
+  assert.equal(report.updated_stories,0);
+});
+
 test('duplicate enum in a rejection is a terminal editorial decision, never a publication', () => {
   const c = { ...candidate(), preanalysis: { filter_version: '4.0' } };
   const draft = { story_id: c.story_id, publication_recommendation: false,
