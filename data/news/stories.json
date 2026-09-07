@@ -1,8 +1,557 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-07T23:02:05.417Z",
-  "updated_at": "2026-09-07T23:02:05.417Z",
+  "public_updated_at": "2026-09-07T23:08:50.989Z",
+  "updated_at": "2026-09-07T23:08:50.989Z",
   "stories": [
+    {
+      "story_id": "wt-46e6bd810843b8fe",
+      "slug": "ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe",
+      "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+      "first_seen": "2026-09-07T20:26:58.000Z",
+      "last_updated": "2026-09-07T23:09:24.588Z",
+      "published_at": "2026-09-07T23:09:24.588Z",
+      "updated_at": "2026-09-07T23:09:24.588Z",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-100.html",
+          "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+          "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T20:26:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "88146a54259d618f27d2659242c4279d8900fa364f9560219470bcd6449dd850",
+          "source_item_id": "80cb140d5a33a85570a70e86955af1cf65dc0b9f0b84ea80d61288becc30c1a1",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T20:26:58.000Z",
+          "ingested_at": "2026-09-07T20:36:52.379Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+          "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+          "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:41:30.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e64aa8b4b7c40e052e58990bd9deb2fc08295fa397756fd3f5daae72c8983cbe",
+          "source_item_id": "6d7bc09c941f1e97772cba56c8f98d1abad8e9fc35a7342fe69d2f33ea5024c5",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T22:41:30.000Z",
+          "ingested_at": "2026-09-07T23:02:05.417Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-46e6bd810843b8fe-v1-claim-1",
+          "story_id": "wt-46e6bd810843b8fe",
+          "claim": "Das Atomkraftwerk Saporischschja ist wieder an eine externe Stromleitung angeschlossen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+              "excerpt_hash": "1b2287534b6622f3655f",
+              "checked_at": "2026-09-07T23:09:24.588Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-07T23:09:24.588Z"
+        },
+        {
+          "claim_id": "wt-46e6bd810843b8fe-v1-claim-2",
+          "story_id": "wt-46e6bd810843b8fe",
+          "claim": "Die zuvor beschädigte Verbindung wurde während einer begrenzten Feuerpause repariert; das Kraftwerk war fast drei Wochen lang nur noch mit Notstromgeneratoren versorgt worden.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+              "excerpt_hash": "c79458904c4ee7c37347",
+              "checked_at": "2026-09-07T23:09:24.588Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+              "excerpt_hash": "8559c5857282edf59835",
+              "checked_at": "2026-09-07T23:09:24.588Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-07T23:09:24.588Z"
+        },
+        {
+          "claim_id": "wt-46e6bd810843b8fe-v1-claim-3",
+          "story_id": "wt-46e6bd810843b8fe",
+          "claim": "Laut der Atomenergiebehörde hätte ohne die Reparatur ein Ausfall der Energieversorgung der Sicherheitssysteme gedroht, die Reaktoren sind derzeit abgeschaltet.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+              "excerpt_hash": "8559c5857282edf59835",
+              "checked_at": "2026-09-07T23:09:24.588Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+              "excerpt_hash": "2ddf31e813cfe408a187",
+              "checked_at": "2026-09-07T23:09:24.588Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-07T23:09:24.588Z"
+        }
+      ],
+      "event_id": "event-5e80ce591f52469f8da2",
+      "event_first_seen_at": "2026-09-07T20:36:52.379Z",
+      "event_detected_at": "2026-09-07T20:36:52.379Z",
+      "verification_started_at": "2026-09-07T23:09:12.612Z",
+      "publish_ready_at": "2026-09-07T23:09:24.588Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-07T23:08:50.989Z",
+        "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "583bd8e43e7af59e698f7433ff9c5c3ae9dd39cf2052673fe0cd332a2e48c492",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-07T23:09:24.588Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+            "content_hash": "e64aa8b4b7c40e052e58990bd9deb2fc08295fa397756fd3f5daae72c8983cbe",
+            "excerpt_hash": "b778a65d1f5559909e6bb4a2275d02e7f8d5acc454e0336a688a83800a68d25e",
+            "numbers": [
+              "8.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Das Atomkraftwerk Saporischschja wird nach Angaben der berichteten Quelle wieder von einer externen Stromleitung versorgt. Im Beitrag heißt es, eine beschädigte Verbindung sei während einer begrenzten Feuerpause repariert worden. Der Generaldirektor der Internationalen Atomenergiebehörde wird mit der Mitteilung zitiert, die Stromversorgung diene dem Kühlen radioaktiven Materials.\n\nZugleich wird beschrieben, dass die von Russland besetzte Anlage in Frontnähe fast drei Wochen lang nur über Notstromgeneratoren lief. Offen bleibt nach dieser Meldung, wie stabil die Leitung ist und ob weitere Gefährdungen für den Betrieb ausgeschlossen sind.",
+      "analysis": {
+        "story_id": "wt-46e6bd810843b8fe",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Das Atomkraftwerk Saporischschja ist wieder an eine externe Stromleitung angeschlossen. Zuvor war die Anlage fast drei Wochen lang nur über Notstromgeneratoren versorgt worden.",
+        "detail_summary": "Die Meldung beschreibt eine konkrete Veränderung des Zustands am Atomkraftwerk Saporischschja: Die externe Stromversorgung ist wiederhergestellt. Das ist relevant, weil die Leitung nach Darstellung der Quelle dazu dient, radioaktives Material zu kühlen und Sicherheitssysteme zu versorgen. Dadurch sinkt zunächst das akute Risiko eines Energieausfalls im Kraftwerk, auch wenn die Quelle keine vollständige Entwarnung gibt. Für Menschen und Umwelt ist das materiell, weil ein Ausfall der Kühlung und der Sicherheitssysteme schwerwiegende Folgewirkungen haben könnte. Der zentrale Wirkpfad verläuft daher über Infrastrukturstabilität, Sicherheitsreserven und Reversibilität der Lage. Offen bleibt, wie belastbar die Reparatur ist und ob die Versorgung dauerhaft gesichert ist; die Meldung liefert dazu nur einen begrenzten Erststand.",
+        "why_relevant": "Die Meldung beschreibt eine neue, sicherheitsrelevante Zustandsänderung an einem großen Atomkraftwerk mit möglicher Auswirkung auf Menschen und Umwelt. Die Folgewirkung betrifft Infrastruktur, Reversibilität und Kaskadenrisiken, nicht bloß Reichweite oder Aufmerksamkeit.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "monitoring",
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "chance",
+          "rationale": "Die wiederhergestellte Stromversorgung senkt zunächst das Risiko für Kühlung und Sicherheitssysteme des Kraftwerks. Betroffen sind potenziell Menschen in der Region, auch wenn die konkrete Schadenslage offen bleibt."
+        },
+        "planet": {
+          "relevance": "sehr hoch",
+          "tendency": "chance",
+          "rationale": "Für die Umwelt ist die stabile Versorgung eines Atomkraftwerks materiell, weil sie ein Ausfallrisiko bei der Kühlung radioaktiven Materials mindern kann. Ein tatsächlicher Umweltschaden wird damit nicht behauptet, nur das reduzierte Risikopotenzial."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Meldung betrifft vor allem Energie- und Sicherheitsinfrastruktur im Krieg. Ein direkter Bezug zu demokratischer Korrekturfähigkeit oder Entscheidungsstrukturen ist in der Quelle nicht belegt."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Reparatur kann das akute Wirkungsrisiko eines Strom- und Sicherheitsausfalls am Kraftwerk senken. Damit verändert sich ein kritischer Infrastrukturzustand mit möglicher Bedeutung für Kühlung, Betriebsstabilität und Krisenresilienz.",
+        "impact_risks": [
+          "Ein erneuter Ausfall der Leitung könnte die Sicherheitssysteme wieder unter Druck setzen.",
+          "Die Frontnähe und die kriegerische Lage können die Stabilität der Versorgung erneut gefährden."
+        ],
+        "mechanisms": [
+          "Externe Stromversorgung hält Kühlung und Sicherheitssysteme stabil.",
+          "Notstromabhängigkeit wird reduziert, wenn die Leitung hält."
+        ],
+        "first_order": [
+          "Wiederherstellung der externen Stromzufuhr an der Anlage."
+        ],
+        "second_order": [
+          "Sinkendes unmittelbares Risiko eines Ausfalls von Kühlung und Sicherheitssystemen."
+        ],
+        "third_order": [
+          "Mögliche Stabilisierung der nuklearen Sicherheitslage, sofern die Leitung belastbar bleibt."
+        ],
+        "systemic_relevance": "Die Anlage ist ein großes Atomkraftwerk in Frontnähe; Störungen dort haben wegen möglicher Kaskadenwirkungen und geringer Fehlertoleranz besondere Systemrelevanz.",
+        "transformation_potential": "Kein Transformationspfad im engeren Sinn, aber eine materielle Veränderung der Sicherheitsarchitektur des Standorts durch wiederhergestellte Energieversorgung.",
+        "resilience": "Die externe Leitung erhöht kurzfristig die Resilienz gegenüber einem vollständigen Stromausfall; die Kriegsnähe begrenzt diese Robustheit aber deutlich.",
+        "side_effects": [
+          "Die Meldung zeigt weiterhin die Verwundbarkeit der Anlage durch Kriegsereignisse.",
+          "Die Reparatur ist nur ein Zwischenschritt, keine dauerhafte Entwarnung."
+        ],
+        "uncertainties": [
+          "Wie stabil die reparierte Leitung ist, bleibt offen.",
+          "Die Quelle nennt keine unabhängige technische Prüfung des Zustands.",
+          "Unklar bleibt, ob weitere Leitungen oder Reservewege verfügbar sind."
+        ],
+        "evidence_level": "medium",
+        "attribution": "Berichtet wird eine Mitteilung des Generaldirektors der Internationalen Atomenergiebehörde in einem journalistischen Beitrag; die Formulierungen sind überwiegend paraphrasiert und teilweise direkt zugeschrieben.",
+        "watch_next": [
+          "Ob die externe Stromversorgung stabil bleibt.",
+          "Ob weitere offizielle Angaben zur Sicherheit des Standorts folgen."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 3, SDG 6, SDG 9, SDG 11, SDG 16, SDG 13"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue Zustandsinformation zu einer kritischen Energie- und Sicherheitsinfrastruktur mit potenziell großen Folgewirkungen; die Quelle ist einzeln, aber der Kern ist klar belegt."
+        },
+        "visuals": {
+          "affected_groups": [
+            "staat",
+            "europa",
+            "natur"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-07T23:08:50.989Z",
+        "media_trigger_fingerprint": "2ba23ad2f42a1de5bd6045f4f6f78bace2299e9db8760ca9b11b162d46ea660d",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 2,
+          "comparable_source_count": 1,
+          "fingerprint": "2ba23ad2f42a1de5bd6045f4f6f78bace2299e9db8760ca9b11b162d46ea660d",
+          "content_fingerprint": "8b955e373ca51a0be7c8b4a913f46f67f171d78a4382f7a8a05170b2d3d22ee1",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-07T23:09:24.588Z",
+          "content_hash": "583bd8e43e7af59e698f7433ff9c5c3ae9dd39cf2052673fe0cd332a2e48c492",
+          "source_summary": "Das Atomkraftwerk Saporischschja wird nach Angaben der berichteten Quelle wieder von einer externen Stromleitung versorgt. Im Beitrag heißt es, eine beschädigte Verbindung sei während einer begrenzten Feuerpause repariert worden. Der Generaldirektor der Internationalen Atomenergiebehörde wird mit der Mitteilung zitiert, die Stromversorgung diene dem Kühlen radioaktiven Materials.\n\nZugleich wird beschrieben, dass die von Russland besetzte Anlage in Frontnähe fast drei Wochen lang nur über Notstromgeneratoren lief. Offen bleibt nach dieser Meldung, wie stabil die Leitung ist und ob weitere Gefährdungen für den Betrieb ausgeschlossen sind.",
+          "analysis": {
+            "story_id": "wt-46e6bd810843b8fe",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Das Atomkraftwerk Saporischschja ist wieder an eine externe Stromleitung angeschlossen. Zuvor war die Anlage fast drei Wochen lang nur über Notstromgeneratoren versorgt worden.",
+            "detail_summary": "Die Meldung beschreibt eine konkrete Veränderung des Zustands am Atomkraftwerk Saporischschja: Die externe Stromversorgung ist wiederhergestellt. Das ist relevant, weil die Leitung nach Darstellung der Quelle dazu dient, radioaktives Material zu kühlen und Sicherheitssysteme zu versorgen. Dadurch sinkt zunächst das akute Risiko eines Energieausfalls im Kraftwerk, auch wenn die Quelle keine vollständige Entwarnung gibt. Für Menschen und Umwelt ist das materiell, weil ein Ausfall der Kühlung und der Sicherheitssysteme schwerwiegende Folgewirkungen haben könnte. Der zentrale Wirkpfad verläuft daher über Infrastrukturstabilität, Sicherheitsreserven und Reversibilität der Lage. Offen bleibt, wie belastbar die Reparatur ist und ob die Versorgung dauerhaft gesichert ist; die Meldung liefert dazu nur einen begrenzten Erststand.",
+            "why_relevant": "Die Meldung beschreibt eine neue, sicherheitsrelevante Zustandsänderung an einem großen Atomkraftwerk mit möglicher Auswirkung auf Menschen und Umwelt. Die Folgewirkung betrifft Infrastruktur, Reversibilität und Kaskadenrisiken, nicht bloß Reichweite oder Aufmerksamkeit.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "sehr hoch",
+              "tendency": "chance",
+              "rationale": "Die wiederhergestellte Stromversorgung senkt zunächst das Risiko für Kühlung und Sicherheitssysteme des Kraftwerks. Betroffen sind potenziell Menschen in der Region, auch wenn die konkrete Schadenslage offen bleibt."
+            },
+            "planet": {
+              "relevance": "sehr hoch",
+              "tendency": "chance",
+              "rationale": "Für die Umwelt ist die stabile Versorgung eines Atomkraftwerks materiell, weil sie ein Ausfallrisiko bei der Kühlung radioaktiven Materials mindern kann. Ein tatsächlicher Umweltschaden wird damit nicht behauptet, nur das reduzierte Risikopotenzial."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Die Meldung betrifft vor allem Energie- und Sicherheitsinfrastruktur im Krieg. Ein direkter Bezug zu demokratischer Korrekturfähigkeit oder Entscheidungsstrukturen ist in der Quelle nicht belegt."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Reparatur kann das akute Wirkungsrisiko eines Strom- und Sicherheitsausfalls am Kraftwerk senken. Damit verändert sich ein kritischer Infrastrukturzustand mit möglicher Bedeutung für Kühlung, Betriebsstabilität und Krisenresilienz.",
+            "impact_risks": [
+              "Ein erneuter Ausfall der Leitung könnte die Sicherheitssysteme wieder unter Druck setzen.",
+              "Die Frontnähe und die kriegerische Lage können die Stabilität der Versorgung erneut gefährden."
+            ],
+            "mechanisms": [
+              "Externe Stromversorgung hält Kühlung und Sicherheitssysteme stabil.",
+              "Notstromabhängigkeit wird reduziert, wenn die Leitung hält."
+            ],
+            "first_order": [
+              "Wiederherstellung der externen Stromzufuhr an der Anlage."
+            ],
+            "second_order": [
+              "Sinkendes unmittelbares Risiko eines Ausfalls von Kühlung und Sicherheitssystemen."
+            ],
+            "third_order": [
+              "Mögliche Stabilisierung der nuklearen Sicherheitslage, sofern die Leitung belastbar bleibt."
+            ],
+            "systemic_relevance": "Die Anlage ist ein großes Atomkraftwerk in Frontnähe; Störungen dort haben wegen möglicher Kaskadenwirkungen und geringer Fehlertoleranz besondere Systemrelevanz.",
+            "transformation_potential": "Kein Transformationspfad im engeren Sinn, aber eine materielle Veränderung der Sicherheitsarchitektur des Standorts durch wiederhergestellte Energieversorgung.",
+            "resilience": "Die externe Leitung erhöht kurzfristig die Resilienz gegenüber einem vollständigen Stromausfall; die Kriegsnähe begrenzt diese Robustheit aber deutlich.",
+            "side_effects": [
+              "Die Meldung zeigt weiterhin die Verwundbarkeit der Anlage durch Kriegsereignisse.",
+              "Die Reparatur ist nur ein Zwischenschritt, keine dauerhafte Entwarnung."
+            ],
+            "uncertainties": [
+              "Wie stabil die reparierte Leitung ist, bleibt offen.",
+              "Die Quelle nennt keine unabhängige technische Prüfung des Zustands.",
+              "Unklar bleibt, ob weitere Leitungen oder Reservewege verfügbar sind."
+            ],
+            "evidence_level": "medium",
+            "attribution": "Berichtet wird eine Mitteilung des Generaldirektors der Internationalen Atomenergiebehörde in einem journalistischen Beitrag; die Formulierungen sind überwiegend paraphrasiert und teilweise direkt zugeschrieben.",
+            "watch_next": [
+              "Ob die externe Stromversorgung stabil bleibt.",
+              "Ob weitere offizielle Angaben zur Sicherheit des Standorts folgen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3, SDG 6, SDG 9, SDG 11, SDG 16, SDG 13"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Zustandsinformation zu einer kritischen Energie- und Sicherheitsinfrastruktur mit potenziell großen Folgewirkungen; die Quelle ist einzeln, aber der Kern ist klar belegt."
+            },
+            "visuals": {
+              "affected_groups": [
+                "staat",
+                "europa",
+                "natur"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-07T23:08:50.989Z",
+            "media_trigger_fingerprint": "2ba23ad2f42a1de5bd6045f4f6f78bace2299e9db8760ca9b11b162d46ea660d",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 2,
+              "comparable_source_count": 1,
+              "fingerprint": "2ba23ad2f42a1de5bd6045f4f6f78bace2299e9db8760ca9b11b162d46ea660d",
+              "content_fingerprint": "8b955e373ca51a0be7c8b4a913f46f67f171d78a4382f7a8a05170b2d3d22ee1",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-46e6bd810843b8fe-v1-claim-1",
+              "story_id": "wt-46e6bd810843b8fe",
+              "claim": "Das Atomkraftwerk Saporischschja ist wieder an eine externe Stromleitung angeschlossen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+                  "excerpt_hash": "1b2287534b6622f3655f",
+                  "checked_at": "2026-09-07T23:09:24.588Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T23:09:24.588Z"
+            },
+            {
+              "claim_id": "wt-46e6bd810843b8fe-v1-claim-2",
+              "story_id": "wt-46e6bd810843b8fe",
+              "claim": "Die zuvor beschädigte Verbindung wurde während einer begrenzten Feuerpause repariert; das Kraftwerk war fast drei Wochen lang nur noch mit Notstromgeneratoren versorgt worden.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+                  "excerpt_hash": "c79458904c4ee7c37347",
+                  "checked_at": "2026-09-07T23:09:24.588Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+                  "excerpt_hash": "8559c5857282edf59835",
+                  "checked_at": "2026-09-07T23:09:24.588Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T23:09:24.588Z"
+            },
+            {
+              "claim_id": "wt-46e6bd810843b8fe-v1-claim-3",
+              "story_id": "wt-46e6bd810843b8fe",
+              "claim": "Laut der Atomenergiebehörde hätte ohne die Reparatur ein Ausfall der Energieversorgung der Sicherheitssysteme gedroht, die Reaktoren sind derzeit abgeschaltet.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+                  "excerpt_hash": "8559c5857282edf59835",
+                  "checked_at": "2026-09-07T23:09:24.588Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+                  "excerpt_hash": "2ddf31e813cfe408a187",
+                  "checked_at": "2026-09-07T23:09:24.588Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T23:09:24.588Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-100.html",
+              "content_hash": "88146a54259d618f27d2659242c4279d8900fa364f9560219470bcd6449dd850"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+              "content_hash": "e64aa8b4b7c40e052e58990bd9deb2fc08295fa397756fd3f5daae72c8983cbe"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-07T23:09:24.588Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+                "content_hash": "e64aa8b4b7c40e052e58990bd9deb2fc08295fa397756fd3f5daae72c8983cbe",
+                "excerpt_hash": "b778a65d1f5559909e6bb4a2275d02e7f8d5acc454e0336a688a83800a68d25e",
+                "numbers": [
+                  "8.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-07T23:09:24.588Z",
+          "source_count": 2
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-c57889a3125a3af1-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "c57889a3125a3af1d34c9273f3e027ff156490474d4a0745b02fe3f64aca7666"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-77682938db5ae76e-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "77682938db5ae76ea1ea9b4ea764a1cb12184278eabf3aa998d878591b1a4ab6"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-438027a69aa506c4-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "438027a69aa506c40e93a527ce711e31409acad761fde7606ae6733924b56671"
+        },
+        "source_visual": null,
+        "fingerprint": "12e7eb4680f5cc45e7862a22babac7a50528a361ce378fe0bf678efeb6d2136e",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-07T23:10:47.507Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-4b5d0962d323432a",
       "slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
@@ -2448,10 +2997,10 @@
       "story_id": "wt-c00a3ccf1d9c40e7",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "16267f1f0010be0d20f2cc9f970aadc2213927eea636976bcec369a0f8b55d2b",
-        "first_failed_at": "2026-09-07T21:52:05.137Z",
-        "failed_at": "2026-09-07T21:52:05.137Z",
-        "retry_after": "2026-09-07T22:07:05.137Z",
+        "fingerprint": "c4fe1a6c124c42fa54cdc95da70b9d8996932785ea18b3b9bfdd1481d4084d79",
+        "first_failed_at": "2026-09-07T23:08:50.989Z",
+        "failed_at": "2026-09-07T23:08:50.989Z",
+        "retry_after": "2026-09-07T23:23:50.989Z",
         "retry_count": 1
       },
       "slug": "nach-der-landtagswahl-in-sachsen-anhalt-bas-kritisiert-arbeitnehmerfeindliche-rhetorik-a-9c40e7",
@@ -2550,7 +3099,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         },
         {
           "claim_id": "wt-c00a3ccf1d9c40e7-claim-02",
@@ -2570,20 +3119,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "448b6b2a9d9965fd9f3cd8d4f15de5f795c2783e52a7c55642b65e01b173e4e9",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-07T23:23:50.989Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T16:36:37.497Z",
       "event_detected_at": "2026-09-07T16:36:37.497Z",
       "event_id": "event-816bda5295741011ec52",
@@ -2620,224 +3169,45 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.590283333333332,
+        "source_age_minutes": 27.349816666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 385.4653333333333,
+        "queue_age_minutes": 392.2248666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 94,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "2297e3af04ce35625d2ec750a3fcdef0ce2b1836ad4a8e7567c8c157558834e2",
         "issue_codes": [],
         "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-46e6bd810843b8fe",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "c704132253d6db9127ac7004216ccdba02bfa37e834d176e2797c24aa94a46a3",
-        "first_failed_at": "2026-09-07T20:36:52.379Z",
-        "failed_at": "2026-09-07T20:36:52.379Z",
-        "retry_after": "2026-09-07T20:51:52.379Z",
-        "retry_count": 1
       },
-      "slug": "ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe",
-      "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
-      "first_seen": "2026-09-07T20:26:58.000Z",
-      "last_updated": "2026-09-07T22:12:58.000Z",
-      "topic": [
-        "Energie",
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-100.html",
-          "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
-          "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T20:26:58.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "88146a54259d618f27d2659242c4279d8900fa364f9560219470bcd6449dd850",
-          "source_item_id": "80cb140d5a33a85570a70e86955af1cf65dc0b9f0b84ea80d61288becc30c1a1",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T20:26:58.000Z",
-          "ingested_at": "2026-09-07T20:36:52.379Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
-          "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
-          "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T22:41:30.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "e64aa8b4b7c40e052e58990bd9deb2fc08295fa397756fd3f5daae72c8983cbe",
-          "source_item_id": "6d7bc09c941f1e97772cba56c8f98d1abad8e9fc35a7342fe69d2f33ea5024c5",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T22:41:30.000Z",
-          "ingested_at": "2026-09-07T23:02:05.417Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-46e6bd810843b8fe-claim-01",
-          "story_id": "wt-46e6bd810843b8fe",
-          "claim": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen: Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
-        },
-        {
-          "claim_id": "wt-46e6bd810843b8fe-claim-02",
-          "story_id": "wt-46e6bd810843b8fe",
-          "claim": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen: Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
-        }
-      ],
-      "content_hash": "583bd8e43e7af59e698f7433ff9c5c3ae9dd39cf2052673fe0cd332a2e48c492",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
-      "event_first_seen_at": "2026-09-07T20:36:52.379Z",
-      "event_detected_at": "2026-09-07T20:36:52.379Z",
-      "event_id": "event-5e80ce591f52469f8da2",
-      "preanalysis": {
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-07T23:08:50.989Z",
+      "rejection": {
+        "at": "2026-09-07T23:08:50.989Z",
         "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie",
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
         ]
-      },
-      "freshness": {
-        "source_age_minutes": 20.590283333333332,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 145.2173,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
-        "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
       "story_id": "wt-f03755f6f6b8c3b7",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "60428a376b131e366c541a3b36f839b50702797bd2d1cad113a862e6ac766cb3",
-        "first_failed_at": "2026-09-07T16:52:04.572Z",
-        "failed_at": "2026-09-07T16:52:04.572Z",
-        "retry_after": "2026-09-07T17:07:04.572Z",
+        "fingerprint": "7188e4f0807887eb8f89a0ef72d4b0f85d0fca15cb4db4e425ada7c41bc42093",
+        "first_failed_at": "2026-09-07T23:08:50.989Z",
+        "failed_at": "2026-09-07T23:08:50.989Z",
+        "retry_after": "2026-09-07T23:23:50.989Z",
         "retry_count": 1
       },
       "slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
@@ -2934,7 +3304,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         },
         {
           "claim_id": "wt-f03755f6f6b8c3b7-claim-02",
@@ -2954,20 +3324,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "e5230658e38a9b3ccaa9d12b9035dab933736b521e96b99f4d3b95aa8f763331",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-07T23:23:50.989Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T16:36:37.497Z",
       "event_detected_at": "2026-09-07T16:36:37.497Z",
       "event_id": "event-57eeb90bde55fb4eff90",
@@ -3000,20 +3372,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.590283333333332,
+        "source_age_minutes": 27.349816666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 385.4653333333333,
+        "queue_age_minutes": 392.2248666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 94,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
         "issue_codes": [],
         "warning_codes": []
@@ -3545,6 +3917,14 @@
     },
     {
       "story_id": "wt-05ffa4fef8bee914",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ce9c00e11dd804a0c092f13dccf9d39af53abfc3fc7cf3bae1f8ed37ef306af7",
+        "first_failed_at": "2026-09-07T23:08:50.989Z",
+        "failed_at": "2026-09-07T23:08:50.989Z",
+        "retry_after": "2026-09-07T23:23:50.989Z",
+        "retry_count": 1
+      },
       "slug": "bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914",
       "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
       "first_seen": "2026-09-07T22:12:58.000Z",
@@ -3608,20 +3988,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "7ba8233478323fd63c3f37b4bc7bc4629f202119784c99869b8475baa65823cf",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-07T23:23:50.989Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T22:37:09.924Z",
       "event_detected_at": "2026-09-07T22:37:09.924Z",
       "event_id": "event-dd4cc5404c117c50633c",
@@ -3656,20 +4038,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.590283333333332,
+        "source_age_minutes": 27.349816666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 24.924883333333334,
+        "queue_age_minutes": 31.684416666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "7fdc57b79a20b4022e21bb401a183b4803218e2d209c424890c5091dda8577d3",
         "issue_codes": [],
         "warning_codes": []
@@ -10554,9 +10936,12 @@
         "generated_at": "2026-09-07T20:42:53.982Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-07T22:37:09.924Z",
-        "content_hash": "9e2c170a787603ac0cbe5a209e34cf60ad0cc3c245f2d41de110c7c93f51f8b5",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "b63cb2f967e8da9b1afe792b30b163bf31aaf98fa7dcef3363f0dca95110337f",
+        "checked_at": "2026-09-07T23:08:50.989Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T05:08:50.989Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -10624,23 +11009,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
-          "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       }
     },
     {
@@ -21832,7 +22201,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -22970,7 +23339,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -23820,7 +24189,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -24270,7 +24639,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "cb6fb8d76924cede5fcffb29dbffe08141d840a1fffd6c807fa9b47617864fc7",
@@ -24283,7 +24652,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T17:36:34.946Z",
       "event_detected_at": "2026-09-07T17:36:34.946Z",
       "event_id": "event-fa64c6e4e0c5b0881da4",
@@ -24318,20 +24687,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 353.8736166666667,
+        "source_age_minutes": 360.63315,
         "detection_delay_minutes": 28.365766666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 325.50785,
+        "queue_age_minutes": 332.2673833333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 26,
+        "news_freshness_score": 25,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
         "issue_codes": [],
         "warning_codes": []
@@ -28463,7 +28832,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -34517,7 +34886,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -43246,7 +43615,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -44497,7 +44866,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "7a2c72da8e35ded18fff805a544609c7dc335a6f3cb4475cdbf05265d0956a32",
           "issue_codes": [],
           "warning_codes": []
@@ -45950,7 +46319,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -49068,7 +49437,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -49972,7 +50341,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "8dd760ef559219b46c9fb7e39c384e8446b3e78d52b201582d87837a1fc49adc",
           "issue_codes": [],
           "warning_codes": []
@@ -53400,7 +53769,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "e2b53646c10c2521310b20fe0011de8e5c7359652a6c6903ef30a27e9c193a21",
@@ -53413,7 +53782,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T12:14:01.175Z",
       "event_detected_at": "2026-09-07T12:14:01.175Z",
       "event_id": "event-57c4ec3d851dc20967d7",
@@ -53446,11 +53815,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 659.8402833333333,
+        "source_age_minutes": 666.5998166666667,
         "detection_delay_minutes": 11.769583333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 648.0707,
+        "queue_age_minutes": 654.8302333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -53459,7 +53828,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "0df47fc766242b05025666190437e9176d7b6cc1afddc55b1248e4ac905c7d8c",
         "issue_codes": [],
         "warning_codes": []
@@ -58115,9 +58484,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "6b298b65fd41474675707c213182f5ddf697eb3804e29972c35476a0c37c0d4c",
         "first_failed_at": "2026-09-07T22:22:04.144Z",
-        "failed_at": "2026-09-07T22:22:04.144Z",
-        "retry_after": "2026-09-07T22:37:04.144Z",
-        "retry_count": 1
+        "failed_at": "2026-09-07T23:08:50.989Z",
+        "retry_after": "2026-09-07T23:38:50.989Z",
+        "retry_count": 2
       },
       "slug": "ermittler-prufen-sabotage-feuer-erfasst-berliner-umspannwerk-ampeln-fallen-aus-3ea316",
       "title": "Ermittler prüfen Sabotage: Feuer erfasst Berliner Umspannwerk – Ampeln fallen aus",
@@ -58180,20 +58549,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "5d03dac823e6f535d794ef09278d7bba89d3229b0e31f870085c0ee60e4a67aa",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-07T23:38:50.989Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T10:21:55.886Z",
       "event_detected_at": "2026-09-07T10:21:55.886Z",
       "event_id": "event-47b1ec6425302b33bb46",
@@ -58226,11 +58595,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 766.0902833333333,
+        "source_age_minutes": 772.8498166666667,
         "detection_delay_minutes": 5.931433333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 760.15885,
+        "queue_age_minutes": 766.9183833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -58239,10 +58608,22 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "184a84e45ae8d0dcb754b6be3f7b686f0c1b32d1498cae4c1c9ddeebc4e5427f",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-07T23:08:50.989Z",
+      "rejection": {
+        "at": "2026-09-07T23:08:50.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -61235,7 +61616,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -61255,7 +61636,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -61271,7 +61652,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -61311,7 +61692,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 835.2009,
+        "queue_age_minutes": 841.9604333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -61320,7 +61701,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -62995,6 +63376,14 @@
     },
     {
       "story_id": "wt-87075beb338db271",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "94010e293cffaa129078f0a435118fe91776c033352408a7fe432097bc879a5b",
+        "first_failed_at": "2026-09-07T23:08:50.989Z",
+        "failed_at": "2026-09-07T23:08:50.989Z",
+        "retry_after": "2026-09-07T23:23:50.989Z",
+        "retry_count": 1
+      },
       "slug": "alg-i-und-grundsicherung-arbeitslos-und-schwanger-diese-leistungen-stehen-ihnen-zu-8db271",
       "title": "ALG I und Grundsicherung: Arbeitslos und schwanger? Diese Leistungen stehen Ihnen zu",
       "first_seen": "2026-09-07T07:30:00.000Z",
@@ -63056,20 +63445,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "a2eaf34bc426761353b6d46928a687f33e7111b8e288d916a65e09a74920f1aa",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-07T23:23:50.989Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T07:51:52.790Z",
       "event_detected_at": "2026-09-07T07:51:52.790Z",
       "event_id": "event-a7f0323e3aee22be4dcf",
@@ -63104,11 +63493,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 932.0902833333333,
+        "source_age_minutes": 938.8498166666667,
         "detection_delay_minutes": 21.879833333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 910.21045,
+        "queue_age_minutes": 916.9699833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -63117,10 +63506,22 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "6a4484b475438d318b8864067203a077aa58e581a98fdb5686726b6a4980ad12",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-07T23:08:50.989Z",
+      "rejection": {
+        "at": "2026-09-07T23:08:50.989Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -64113,7 +64514,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "080e59685d43ed061f6ac9c7360cdf232c56a9bf06157d35ae859b25df17355b",
@@ -64126,7 +64527,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T07:06:45.331Z",
       "event_detected_at": "2026-09-07T07:06:45.331Z",
       "event_id": "event-efa3615b2fefcc402c6f",
@@ -64161,11 +64562,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 984.3402833333333,
+        "source_age_minutes": 991.0998166666667,
         "detection_delay_minutes": 29.005516666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 955.3347666666666,
+        "queue_age_minutes": 962.0943,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -64174,7 +64575,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "3e38d1e2c5b8d8f9d75feaa46feccaa5ea83ba1f3d4ecba152015ab5e9978732",
         "issue_codes": [],
         "warning_codes": []
@@ -82167,7 +82568,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -82900,7 +83301,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -83052,7 +83453,7 @@
       "verification_started_at": "2026-09-06T20:07:09.070Z",
       "publish_ready_at": "2026-09-06T20:07:20.597Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-07T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -83463,9 +83864,12 @@
         "generated_at": "2026-09-06T20:08:02.264Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-07T05:06:55.814Z",
-        "content_hash": "a1a074d4c2b8872cec1abafe29e0b34b0c3ddd26e9010c1541f29d26c37d0b5a",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "df6ee34e91cceca948fc37e22a4eeff2c8de64bdd0d2a1d77b52e5ed230ef75f",
+        "checked_at": "2026-09-07T23:08:50.989Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T05:08:50.989Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -83500,24 +83904,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
-          "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-57cb19cb4061455d",
@@ -90800,7 +91189,7 @@
       "verification_started_at": "2026-09-06T18:00:00.910Z",
       "publish_ready_at": "2026-09-06T18:00:15.606Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-07T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -91237,9 +91626,12 @@
         "generated_at": "2026-09-06T18:02:15.372Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-07T05:06:55.814Z",
-        "content_hash": "a8dea1f0437c6948f8be4eb3bcbf8308d84c0930f32a425b5ec481501f16a7f4",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "a9e54de288942831bb9f8f589d532ea473ed45cd3115e471d6e478ef02fad903",
+        "checked_at": "2026-09-07T23:08:50.989Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T05:08:50.989Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -91307,24 +91699,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
-          "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-6a495a63964121c7",
@@ -97259,7 +97636,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
+          "checked_at": "2026-09-07T23:08:50.989Z"
         }
       ],
       "content_hash": "90e1dd6b318ec1347f60aa4bc6571a2512523e2a40fc71e471b9b531dbd64211",
@@ -97272,7 +97649,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
+      "updated_at": "2026-09-07T23:08:50.989Z",
       "event_first_seen_at": "2026-09-07T05:36:33.012Z",
       "event_detected_at": "2026-09-07T05:36:33.012Z",
       "event_id": "event-d2d632120c162703d492",
@@ -97308,11 +97685,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1846.2236166666667,
+        "source_age_minutes": 1852.98315,
         "detection_delay_minutes": 800.6835333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1045.5400833333333,
+        "queue_age_minutes": 1052.2996166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -97321,7 +97698,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "fingerprint": "81f2ebbe391a395f56e64817873daa787b10475636e7b27a4033d66136056472",
         "issue_codes": [],
         "warning_codes": []
@@ -107585,7 +107962,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "249f18fd4be1f1cc4705514dcda46b786b53e92f94f2d94531e96c099cb8580d",
           "issue_codes": [],
           "warning_codes": []
@@ -110054,7 +110431,7 @@
       "verification_started_at": "2026-09-06T10:53:24.384Z",
       "publish_ready_at": "2026-09-06T10:53:50.820Z",
       "news_status": "updated",
-      "deepening_due_at": "2026-09-07T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -110595,441 +110972,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "03ab72a0a85dc9ce2b3201c7e8285b35aaef6eae99f0155a0d0999d475b89409",
-        "checked_at": "2026-09-06T18:36:19.904Z",
+        "fingerprint": "3ef58730eb0bc824c0466472a8234c39c9855dc5b44bd0c3d8ab3fd687d22ebc",
+        "checked_at": "2026-09-07T23:08:50.989Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-07T00:36:19.904Z",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
-            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
-            "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T18:15:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ada3b25d5f1d2f6395fdb01c2694dc1c91caad6028096c51398f529688341224",
-            "source_item_id": "caa7462337f456f714632a73839e9496507b2c89174f6f0116345ae1d1cdd47d",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T18:15:04.000Z",
-            "ingested_at": "2026-09-05T18:21:18.289Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
-            "title": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
-            "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T20:57:48.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ba6b5336cbefd5ab70cccb0ef8cbf8e0aa12442ee33c3304eb8af8705fc795b2",
-            "source_item_id": "88ed0dc883a49659c74146dce5d751ea22310c09eefc2d2a9aabbbbe22ae7017",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T20:57:48.000Z",
-            "ingested_at": "2026-09-05T22:06:43.441Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesschau-access",
-            "publisher": "tagesschau / ARD",
-            "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
-            "title": "Kreml spricht von nützlichen Gesprächen",
-            "summary": "Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Ein Kreml-Berater spricht von…",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T23:00:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "68cc5596cfa13153dcbdecd3e5503f01c3bd01f7039b0fc64ce485c07bafc4a5",
-            "source_item_id": "94e3ce8628219fad670ec251de9fd4161e140178b0ec05449ed0a8ab76a74bc6",
-            "publisher_id": "tagesschau",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T23:00:04.000Z",
-            "ingested_at": "2026-09-06T03:06:22.960Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesschau",
-              "basis": "publisher_resolved_from_registered_target_url",
-              "independence_established": false,
-              "collection_source_id": "swr-aktuell"
-            },
-            "collection_source_id": "swr-aktuell",
-            "collection_publisher_id": "swr"
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-102.html",
-            "title": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
-            "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T23:10:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "4366d035e754dab47a94244de00e70f6bc063f150ee84fe83a67b893671b1127",
-            "source_item_id": "9a0ca262de20d1c36c88339951571de63ee0f66468c2c9a41e6d97cd2ba9c277",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T23:10:33.000Z",
-            "ingested_at": "2026-09-06T01:21:36.222Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/verhandlungen--kreml-spricht-von-konstruktiven-gespraechen-mit-us-gesandten-38211922.html",
-            "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
-            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T22:32:05.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "2f6188f33f2744517fcce426e9b430520b23c489f294e87e772e8df74ebfb5d7",
-            "source_item_id": "97a589ea5e92a1c950dcc83b25867e955df33026edf37d66dec8bd86d010a06a",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T22:32:05.000Z",
-            "ingested_at": "2026-09-05T23:51:06.780Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021831.html",
-            "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
-            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T22:33:21.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "9d73f3f185741b614c12381252743de2e98099de9b22127fd0d8a8e4c9dafd83",
-            "source_item_id": "ae1314fd3ad3115996c32022559adb37fa3c7e0ef25bcb686a0eada07dec0219",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T22:33:21.000Z",
-            "ingested_at": "2026-09-05T23:51:06.780Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-lage-im-uberblick-16021831.html",
-            "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
-            "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T22:33:21.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "1cd0d7f972bc99aa4fde22511d1164550b5bcdaa59a94ca4bedc57e5a8d23c7d",
-            "source_item_id": "88f82b8bbe2dcf995cc59d16a42521526282daa54a210f0db14a1fc5be39d1ad",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T22:33:21.000Z",
-            "ingested_at": "2026-09-06T07:16:30.989Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/lage-im-ueberblick--us-gesandte-nach-treffen-mit-putin-unterwegs-nach-kiew-38211922.html",
-            "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
-            "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T00:18:16.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "e8797cb14ba76c632e4846dad974ec4de14526601f412e92380bdb855f4ce6e4",
-            "source_item_id": "589f28eeaf7513d13eb7463446c468070d74b137243fa82a5cf296fc309ae7ae",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T00:18:16.000Z",
-            "ingested_at": "2026-09-06T02:06:22.782Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
-            "title": "Ukraine-News: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
-            "summary": "Der Kreml hat die nach langer Pause wieder aufgenommenen Gespräche von Präsident Wladimir Putin mit den US-Vermittlern Steve Witkoff und Jared Kushner als konstruktiv, inhaltsreich und vertrauensvoll bezeichnet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T10:33:10.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "f8da5cb0dc06c630d2b9db3781ffc4d22387d073e22031e988791c34b1d04b22",
-            "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T10:33:10.000Z",
-            "ingested_at": "2026-09-06T10:51:35.145Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
-            "title": "Vermittlungsmission: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
-            "summary": "Nach dem Treffen mit Wladimir Putin reisen Steve Witkoff und Jared Kushner nach Kiew. Bewegungen im Ukraine-Krieg sind derzeit nicht erkennbar.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T10:35:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "e54fe4cb334d14b14ccccfad74bdb3a88ae5ea5f9bedaf203c07564f08d061d7",
-            "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T10:35:00.000Z",
-            "ingested_at": "2026-09-06T10:51:35.145Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
-            "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
-            "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T17:17:47.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
-            "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T17:17:47.000Z",
-            "ingested_at": "2026-09-05T17:51:35.693Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
-            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
-            "summary": "Die US-Gesandten Jared Kushner und Steve Witkoff sind zu Gesprächen über eine Beendigung des Ukraine-Kriegs in der russischen Hauptstadt Moskau eingetroffen. Ihr Flugzeug landete am Samstagmittag auf dem Flughafen Wnukowo, wie die russischen Nachrichtenagenturen Ria Nowosti und Tass meldeten. In der Folge wollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:25:11.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3df5cd824d6e715dc545dee0a6465e5528a0510cf96dfebd0addca1cce08269c",
-            "source_item_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:25:11.000Z",
-            "ingested_at": "2026-09-05T11:31:43.777Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-sprechen-nach-kiew-besuch-von-substanziellen-gespraechen-100.html",
-            "title": "Ukraine-Krieg - US-Gesandte Witkoff und Kushner sprechen nach Kiew-Besuch von substanziellen Gesprächen",
-            "summary": "Der US-Gesandte Steve Witkoff hat die Gespräche mit der ukrainischen Seite über ein Ende des russischen Angriffskriegs als \"substanziell\" bezeichnet. Der Schwiegersohn von US-Präsident Trump, Kushner, der ebenfalls in der ukrainischen Hauptstadt Kiew war, erklärte, er hoffe, dass die Gespräche neue Wege zu einem Frieden eröffnen würden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T15:29:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "f3e203da40f80c38ca8904961b19c69007d86e0d9ce95a86a55f698124fd963b",
-            "source_item_id": "e350cc0bf5b02b700a25ab17b92eb7b1eea9620c20352303d8f43e63c122b6a5",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T15:29:01.000Z",
-            "ingested_at": "2026-09-06T15:33:52.069Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-07T05:06:55.814Z",
-        "content_hash": "5b2c5d63a8b4feaabf94492255472ae8c95e385e8ca30b73bc54a0ac57206886",
+        "expires_at": "2026-09-08T05:08:50.989Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -111488,24 +111434,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 1,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
-          "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-5469869109614acf",
@@ -119142,7 +119073,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -164391,7 +164322,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:02:05.417Z",
+          "checked_at": "2026-09-07T23:08:50.989Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

@@ -1,7 +1,114 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T23:05:14.172Z",
+  "updated_at": "2026-09-07T23:08:50.989Z",
   "stories": [
+    {
+      "story_id": "wt-46e6bd810843b8fe",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-c57889a3125a3af1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-77682938db5ae76e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-46e6bd810843b8fe-438027a69aa506c4-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-krieg-atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlos-43b8fe",
+      "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
+      "source_summary": "Das Atomkraftwerk Saporischschja wird nach Angaben der berichteten Quelle wieder von einer externen Stromleitung versorgt. Im Beitrag heißt es, eine beschädigte Verbindung sei während einer begrenzten Feuerpause repariert worden. Der Generaldirektor der Internationalen Atomenergiebehörde wird mit der Mitteilung zitiert, die Stromversorgung diene dem Kühlen radioaktiven Materials.\n\nZugleich wird beschrieben, dass die von Russland besetzte Anlage in Frontnähe fast drei Wochen lang nur über Notstromgeneratoren lief. Offen bleibt nach dieser Meldung, wie stabil die Leitung ist und ob weitere Gefährdungen für den Betrieb ausgeschlossen sind.",
+      "summary": "Das Atomkraftwerk Saporischschja ist wieder an eine externe Stromleitung angeschlossen. Zuvor war die Anlage fast drei Wochen lang nur über Notstromgeneratoren versorgt worden.",
+      "detail_summary": "Die Meldung beschreibt eine konkrete Veränderung des Zustands am Atomkraftwerk Saporischschja: Die externe Stromversorgung ist wiederhergestellt. Das ist relevant, weil die Leitung nach Darstellung der Quelle dazu dient, radioaktives Material zu kühlen und Sicherheitssysteme zu versorgen. Dadurch sinkt zunächst das akute Risiko eines Energieausfalls im Kraftwerk, auch wenn die Quelle keine vollständige Entwarnung gibt. Für Menschen und Umwelt ist das materiell, weil ein Ausfall der Kühlung und der Sicherheitssysteme schwerwiegende Folgewirkungen haben könnte. Der zentrale Wirkpfad verläuft daher über Infrastrukturstabilität, Sicherheitsreserven und Reversibilität der Lage. Offen bleibt, wie belastbar die Reparatur ist und ob die Versorgung dauerhaft gesichert ist; die Meldung liefert dazu nur einen begrenzten Erststand.",
+      "why_relevant": "Die Meldung beschreibt eine neue, sicherheitsrelevante Zustandsänderung an einem großen Atomkraftwerk mit möglicher Auswirkung auf Menschen und Umwelt. Die Folgewirkung betrifft Infrastruktur, Reversibilität und Kaskadenrisiken, nicht bloß Reichweite oder Aufmerksamkeit.",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "chance",
+          "rationale": "Die wiederhergestellte Stromversorgung senkt zunächst das Risiko für Kühlung und Sicherheitssysteme des Kraftwerks. Betroffen sind potenziell Menschen in der Region, auch wenn die konkrete Schadenslage offen bleibt."
+        },
+        "planet": {
+          "relevance": "sehr hoch",
+          "tendency": "chance",
+          "rationale": "Für die Umwelt ist die stabile Versorgung eines Atomkraftwerks materiell, weil sie ein Ausfallrisiko bei der Kühlung radioaktiven Materials mindern kann. Ein tatsächlicher Umweltschaden wird damit nicht behauptet, nur das reduzierte Risikopotenzial."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Meldung betrifft vor allem Energie- und Sicherheitsinfrastruktur im Krieg. Ein direkter Bezug zu demokratischer Korrekturfähigkeit oder Entscheidungsstrukturen ist in der Quelle nicht belegt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "europa",
+          "natur"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:08:50.989Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T20:26:58.000Z",
+      "last_updated": "2026-09-07T23:09:24.588Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-5e80ce591f52469f8da2",
+      "case_file": null,
+      "source_published_at": "2026-09-07T20:26:58.000Z",
+      "published_at": "2026-09-07T23:09:24.588Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T20:26:58.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:41:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-4b5d0962d323432a",
       "title_image": {
