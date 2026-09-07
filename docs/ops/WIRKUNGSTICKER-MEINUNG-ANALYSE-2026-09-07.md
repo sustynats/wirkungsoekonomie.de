@@ -22,8 +22,8 @@ Der BASF-Hinweis bleibt separat: Eine am 7. September weitergegebene interne Ein
 
 ## Prüfungen
 
-- Vor dem letzten kleinen Kostenreport-Test: 555 Nachrichtentests bestanden; neue Format-, Rückkopplungs-, XSS-, Historien- und Linktests enthalten.
+- 556 Nachrichtentests bestanden; neue Format-, Rückkopplungs-, XSS-, Historien- und Linktests enthalten.
 - `news:build`, `news:validate`, `build:search`, `taxonomy:build`, `typecheck`, `lint`, `check:hosting-cost` erfolgreich. Sprachprüfung meldet 25 bestehende Befunde außerhalb des neuen Beitrags; kein behaupteter projektweiter Nullbefund.
 - Vollständiger öffentlicher Artefakt-Build, Privacy- und Größengate bestanden; Linkprüfung: 0 defekte Links. Bestehende globale Orphans und Titelduplikate sind kein neu erzeugter Befund.
-- Browser: Desktop 1440 px, Mobile 390 px, Seite und Autorenporträts ohne Überbreite. Übersicht -> neuer Beitrag -> Ursprung mit drei Analyse-CTAs funktioniert. Sechs Navigationsgruppen, zwei Rückkanäle, keine JavaScript-Fehler.
+- Browser: Desktop 1440 px, Mobile 390 und 320 px, Seite und Autorenporträts ohne Überbreite. Auf sehr schmalen Ticker-Seiten bleibt statt des umbrechenden Wortzeichens das zugänglich beschriftete Startseiten-Signet sichtbar. Übersicht -> neuer Beitrag -> Ursprung mit drei Analyse-CTAs funktioniert. Sechs Navigationsgruppen, zwei Rückkanäle, keine JavaScript-Fehler.
 - Produktion folgt dem bestehenden seriellen GitHub-Pages-Releaseweg. Keine Vercel-Nutzung, kein neuer kostenpflichtiger Analyseauftrag, keine Änderung an Budgetdeckeln oder Quellen-/Publikationsgates.

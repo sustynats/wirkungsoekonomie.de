@@ -2488,6 +2488,11 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
   .news-editorial-byline img { width: 5rem; height: 5rem; }
 }
 
+@media (max-width: 360px) {
+  /* Keep the labelled home link and signet; avoid a stacked wordmark. */
+  .site-header .brand-name { display: none; }
+}
+
 /* Compact reading aids: shared tokens, no new visual language. */
 .news-reading-guide { padding-block: 1.5rem; }
 .news-reading-guide h2 { font-size: clamp(1.25rem, 2vw, 1.6rem); }
