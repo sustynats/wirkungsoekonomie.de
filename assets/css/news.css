@@ -2289,7 +2289,7 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
 .news-editorial-byline span, .news-editorial-transparency { color: rgb(255 255 255 / 76%); }
 .news-editorial-byline .text-link { color: #f1eee6; text-decoration-color: rgb(241 238 230 / 55%); }
 .news-editorial-hero .content-save-tools > summary { color: #e4ecea; }
-.news-editorial-transparency { max-width: 54rem; font-size: .92rem; }
+.news-editorial-transparency { max-width: 54rem; font-size: .92rem; line-height: 1.65; padding-left: .9rem; border-left: 2px solid rgb(232 201 114 / 70%); }
 .news-editorial-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(17rem, .78fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
 /* Opt-in long-form layers. Standard analyses retain their existing layout. */
 .news-editorial-article--systemic .hero-title { hyphens: none; }
@@ -2337,6 +2337,13 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
 .news-comparison-lane li + li::before { content: "↓"; position: absolute; top: -1.9rem; left: calc(50% - .5rem); color: #4f6158; font-size: 1.25rem; }
 .news-comparison-lane h4 { font-size: 1.05rem; line-height: 1.4; margin: .65rem 0; }
 .news-comparison-lane h4 .wt-icon { width: 1.3rem; height: 1.3rem; vertical-align: -.2rem; margin-right: .3rem; }
+.news-feedback { margin: 1.75rem 0; padding: .5rem 0 .5rem 1rem; border-inline-start: .2rem solid #34705c; }
+.news-feedback--broken { border-inline-start: .2rem dashed #93502d; }
+.news-feedback .news-systemic-visual { margin-block: .5rem 0; }
+.news-feedback__return { display: flex; align-items: start; gap: .75rem; padding: 1rem; margin-top: 1.25rem; border: 1px solid #9bb2a7; border-radius: .6rem; background: #eaf1ec; color: #183f34; }
+.news-feedback--broken .news-feedback__return { border-style: dashed; border-color: #b99176; background: #f8eee5; color: #69381e; }
+.news-feedback__return > span:first-child { font-size: 1.8rem; line-height: 1.2; }
+.news-feedback__return strong { display: block; }
 @media (min-width: 1001px) {
   .news-editorial-article--commentary .news-systemic-visual--cascade > ol { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
 }
@@ -2479,6 +2486,11 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
   .news-editorial-layout { grid-template-columns: 1fr; }
   .news-editorial-article__aside { position: static; }
   .news-editorial-byline img { width: 5rem; height: 5rem; }
+}
+
+@media (max-width: 360px) {
+  /* Keep the labelled home link and signet; avoid a stacked wordmark. */
+  .site-header .brand-name { display: none; }
 }
 
 /* Compact reading aids: shared tokens, no new visual language. */

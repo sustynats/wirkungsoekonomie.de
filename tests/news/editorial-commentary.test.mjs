@@ -13,7 +13,7 @@ const prepared = () => prepareEditorialReview(structuredClone(packet), structure
 test("a commissioned commentary is independent, gated and protected from automatic rewriting", () => {
   const record = prepared();
   assert.equal(record.analysis_variant, "standard");
-  assert.equal(editorialLabel(record), "WÖk-Analyse / Kommentar");
+  assert.equal(editorialLabel(record), "Meinung & Analyse");
   assert.ok(isCommissionedAnalysis(record));
   assert.equal(commissionedReviewState(record, { ...story, last_updated: "2026-09-08T00:00:00Z" }).automatic_short_form_rewrite, false);
   assert.deepEqual(editorialAnalysisValidationErrors(record, story, { candidate: true, evidence_gate: { passed: true } }), []);
@@ -81,7 +81,7 @@ test("the comparison keeps lanes separate and requires evidence, conditions and 
 
 test("commentary renders seven visual anchors, distinct MPD, six navigation groups and author voice", () => {
   const html = editorialAnalysisPage(prepared(), story);
-  for (const marker of ["Analyse mit persönlicher Einordnung", "news-editorial-callout", "news-systemic-visual--comparison", "news-systemic-visual--cards", "news-systemic-visual--network", "news-systemic-visual--cascade", "news-mpd-balance", "Persönliche Einordnung der Autorin", "reality-check"]) assert.ok(html.includes(marker), marker);
+  for (const marker of ["Meinung &amp; Analyse", "wirkungsökonomisch eingeordnet", "news-editorial-callout", "news-systemic-visual--comparison", "news-systemic-visual--cards", "news-systemic-visual--network", "news-systemic-visual--cascade", "news-mpd-balance", "Persönliche Einordnung der Autorin", "reality-check"]) assert.ok(html.includes(marker), marker);
   assert.doesNotMatch(html, /Visuelle Einordnung der Ursprungsgeschichte/);
   assert.match(html, /href="\/wirkungsticker\/analyse\/wenn-aus-programm-staatsmacht-wird-sachsen-anhalt\/"/);
   assert.equal(packet.navigation_groups.length, 6);

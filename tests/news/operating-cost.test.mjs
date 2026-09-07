@@ -71,3 +71,20 @@ test('Batch costs, reservations and applied updates are separate from immediate 
     Number((result.news.estimated_cost_usd + result.editorial.estimated_cost_usd + result.batch.estimated_cost_usd).toFixed(6)));
   assert.deepEqual(usage, saved, 'reporting never changes the usage journal');
 });
+
+test('a zero-request capacity refusal is not a completed provider job and never removes costs', () => {
+  const rows = [
+    { ...run('batch-local-refusal', 0), ai: { processing_mode: 'batch', requests: 0, estimated_cost_usd: 0, token_source: 'batch_provider_usage' } },
+    { ...run('batch-paid', .006), ai: { processing_mode: 'batch', requests: 1, estimated_cost_usd: .006, token_source: 'batch_provider_usage' } },
+    { ...run('batch-unknown-requests', 0), ai: { processing_mode: 'batch', estimated_cost_usd: 0, token_source: 'batch_provider_usage' } },
+    { ...run('batch-cost-anomaly', .01), ai: { processing_mode: 'batch', requests: 0, estimated_cost_usd: .01, token_source: 'batch_provider_usage' } },
+  ];
+  const before = structuredClone(rows);
+  const result = operatingCostSummary({ runs: rows }, start, fx, now);
+  assert.equal(result.batch.zero_request_jobs, 1);
+  assert.equal(result.batch.settled_jobs, 3);
+  assert.equal(result.batch.runs, 4);
+  assert.equal(result.total.estimated_cost_usd, .016);
+  assert.equal(result.batch.settled_cost_usd, .016);
+  assert.deepEqual(rows, before);
+});
