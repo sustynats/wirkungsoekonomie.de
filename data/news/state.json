@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-07T15:36:43.631Z",
+  "last_successful_run": "2026-09-07T15:51:37.362Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -39199,21 +39199,21 @@
     }
   },
   "pending_story_ids": [
+    "wt-be45c7595b8274fa",
+    "wt-eefb978e3155ecf0",
+    "wt-8abfde3cda3a727f",
     "wt-0d84906ca1b98339",
     "wt-25a50986f26603b8",
     "wt-3026a53a7bc60183",
     "wt-f225188fe1801ba6",
     "wt-aeb06ac89a83b9a3",
-    "wt-8abfde3cda3a727f",
     "wt-ed33c0962c4a697d",
     "wt-67096fe077900925",
     "wt-d6ae5b8518cc2e31",
-    "wt-90244ad2c4093194",
     "wt-51afdab7cd06d9cf",
     "wt-78cc0bc696edd288",
     "wt-0578e3869d1a6427",
     "wt-7b23f2bb6f3816fc",
-    "wt-255776ddd744e745",
     "wt-0b8ef57e0aece57a",
     "wt-12227eeecd48c0b9",
     "wt-5d9b8d78913056f9",
@@ -39240,7 +39240,6 @@
     "wt-9d57656c73cf7db5",
     "wt-fd5950b78b2e6bb5",
     "wt-07f3870f32ae8662",
-    "wt-7c29fe7cdd0fbf76",
     "wt-f67d3e5629379706",
     "wt-3b0fbd0e7ce8e17e",
     "wt-8ed683b7b29027a6",
@@ -39293,9 +39292,7 @@
     "wt-8f7ac0654a780960",
     "wt-49363b52e1625c9e",
     "wt-b5ca8651ce7844db",
-    "wt-eefb978e3155ecf0",
     "wt-2b90423c6e7549bd",
-    "wt-b8204dba21ee4eea",
     "wt-a030a1d903caa413",
     "wt-40944545112da5d7",
     "wt-cf03acddb911d861",
@@ -39309,15 +39306,10 @@
     "wt-86ea1ddfd89beabf",
     "wt-166e870242fc37e6",
     "wt-6f1c19d047be6236",
-    "wt-a5874ae28ed5533f",
-    "wt-acb87769c2d31c45",
-    "wt-be45c7595b8274fa",
-    "wt-42538697ac8e4d46",
-    "wt-1546f00ef29f0a7a",
-    "wt-2a60eb52421c850c"
+    "wt-a5874ae28ed5533f"
   ],
   "relevance_filter_version": "4.0",
-  "last_attempted_run": "2026-09-07T15:36:43.631Z",
+  "last_attempted_run": "2026-09-07T15:51:37.362Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1622,
@@ -39383,8 +39375,8 @@
       "created_at": "2026-09-07T15:24:11.631Z",
       "status": "completed",
       "billing_status": "settled",
-      "next_poll_at": "2026-09-07T15:53:02.184Z",
-      "checked_at": "2026-09-07T15:38:02.184Z",
+      "next_poll_at": "2026-09-07T16:10:15.989Z",
+      "checked_at": "2026-09-07T15:55:15.989Z",
       "error": null
     },
     "5188f3152eba62a3e1ae02386d25ac2ea6d68b4cc31cb92039d24d594731f53b": {
@@ -39395,11 +39387,12 @@
       "prompt_hash": "de868a8417159664577cddf5838edccbfa0ee70470231e9292a10b4a1e33a86c",
       "attempt": 0,
       "created_at": "2026-09-07T15:38:02.184Z",
-      "status": "submitted",
-      "billing_status": "reserved",
-      "next_poll_at": "2026-09-07T15:53:02.184Z",
-      "checked_at": "2026-09-07T15:38:02.184Z",
-      "error": null
+      "status": "completed",
+      "billing_status": "settled",
+      "next_poll_at": "2026-09-07T16:10:15.989Z",
+      "checked_at": "2026-09-07T15:55:15.989Z",
+      "error": null,
+      "applied_at": "2026-09-07T15:55:15.989Z"
     },
     "ef591af7122d9d86db757c9effad5f586cf3d51d9579c3468d90fb584e3fd3f8": {
       "key": "ef591af7122d9d86db757c9effad5f586cf3d51d9579c3468d90fb584e3fd3f8",
@@ -39409,11 +39402,12 @@
       "prompt_hash": "266fe29986ef250ed8f33c780edb46344ef2bf08c6490b44f98e65872ce195af",
       "attempt": 0,
       "created_at": "2026-09-07T15:38:02.184Z",
-      "status": "submitted",
-      "billing_status": "reserved",
-      "next_poll_at": "2026-09-07T15:53:02.184Z",
-      "checked_at": "2026-09-07T15:38:02.184Z",
-      "error": null
+      "status": "completed",
+      "billing_status": "settled",
+      "next_poll_at": "2026-09-07T16:10:15.989Z",
+      "checked_at": "2026-09-07T15:55:15.989Z",
+      "error": null,
+      "applied_at": "2026-09-07T15:55:15.989Z"
     }
   }
 }
