@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { editorialContentSnapshot } from "./editorial-judgment.mjs";
 import { commissionedReviewState, isCommissionedAnalysis } from "./systemic-analysis.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -279,9 +280,9 @@ export async function runEditorialAnalyses({
         candidate_score: assessment.editorial_analysis_score, analysis_gain_score: assessment.analysis_gain,
         evidence_gate: assessment.evidence_gate, published_at: publishedAt, updated_at: now, version,
         ...analysis,
-        reading_time_minutes: Math.max(5, Math.ceil((analysis.sections || []).flatMap((section) => section.paragraphs || []).join(" ").split(/\s+/).filter(Boolean).length / 210)),
+        reading_time_minutes: Math.max(5, Math.ceil([analysis.executive_finding || "", ...(analysis.sections || []).flatMap(section => [...(section.paragraphs || []), ...(section.visual?.items || []).map(item => `${item.title} ${item.text}`)]), ...(analysis.author_perspective?.paragraphs || [])].join(" ").split(/\s+/).filter(Boolean).length / 210)),
         source_snapshot: editorialSources(story).map((source) => ({ source_id: editorialSourceRef(source), registry_source_id: source.registry_source_id || source.source_id, publisher_id: source.publisher_id || null, publisher: source.publisher, title: source.title, url: source.url, published_at: source.published_at, primary_source: Boolean(source.primary_source), ...(source.editorial_review ? { source_item_id: editorialSourceRef(source), summary: source.summary, canonical_domain: source.canonical_domain, source_function: source.source_function, editorial_review: source.editorial_review } : {}) })),
-        versions: [...(existing?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, provider: result.provider, model: result.model, claim_ledger: analysis.claim_ledger }],
+        versions: [...(existing?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, provider: result.provider, model: result.model, claim_ledger: analysis.claim_ledger, ...(existing ? { previous_content: editorialContentSnapshot(existing) } : {}) }],
       };
       const index = (store.analyses || []).findIndex((item) => item.analysis_id === analysisId);
       delete store.retry_state[story.story_id];

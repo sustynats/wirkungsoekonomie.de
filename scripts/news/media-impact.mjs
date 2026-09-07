@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { SYSTEMIC_ANALYSIS_RULE } from "./analysis-principles.mjs";
+import { SYSTEMIC_ANALYSIS_RULE, JOURNALISTIC_STYLE_RULE, IMPACT_DIRECTION_RULE } from "./analysis-principles.mjs";
 
 export const MEDIA_ANALYSIS_VERSION = "2.1";
 
@@ -83,6 +83,8 @@ export const MEDIA_IMPACT_SCHEMA = {
 
 export const MEDIA_PROMPT_RULES = [
   SYSTEMIC_ANALYSIS_RULE,
+  JOURNALISTIC_STYLE_RULE,
+  IMPACT_DIRECTION_RULE,
   "Leitregel: Sachverhalt vor Frame. Attribution sichtbar. Wirkungspotenzial und Wirkungsrisiko sind keine eingetretene Wirkung.",
   "media_trigger ist Vorprüfung, kein Befund: meist media_impact:null bei false; ein vollständiger, evidenzgetrennter Befund darf ergänzen. Bei true bleibt relevant:false möglich.",
   "Trenne zwingend A belegten Sachverhalt, B Akteursaussage, C mediale Vermittlung und D WÖk-Analyse. Politische Deutung ist kein amtlicher Fakt.",

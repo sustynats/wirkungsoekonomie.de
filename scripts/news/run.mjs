@@ -445,7 +445,7 @@ export function shouldRetryQualityGate(reason, qualityErrors, retryCount = 0, re
 
 export function sanitizeAnalysisVisuals(analysis, candidate, report = {}) {
   if (!analysis || typeof analysis !== "object" || Array.isArray(analysis)) return analysis;
-  const { visuals, dropped } = sanitizeVisuals(analysis.visuals, { ...candidate, source_summary: analysis.source_summary });
+  const { visuals, dropped } = sanitizeVisuals(analysis.visuals, { ...candidate, analysis, source_summary: analysis.source_summary });
   analysis.visuals = visuals;
   if (dropped.length) {
     report.visuals_dropped ||= [];

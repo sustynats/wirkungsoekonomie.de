@@ -168,6 +168,33 @@ test("Prompt-Bausteine sind vorhanden", () => {
   assert.ok(VISUALS_PROMPT_RULES.join(" ").includes("Zahlwort bleibt Zahlwort"));
 });
 
+test("Wirkpfadrichtung bleibt an den exakten Einzelpfad und gültige Belege gebunden", () => {
+  const item = story();
+  const assessment = { order: "second_order", path: "Investitionen möglich", direction: "positive", evidence: "plausible_path", condition: "Wenn die genehmigten Mittel wirksam in Versorgungssicherheit fließen.", claim_ids: ["wt-test-claim-01"] };
+  const { visuals, dropped } = sanitizeVisuals({ path_directions: [assessment] }, item);
+  assert.deepEqual(dropped, []);
+  assert.deepEqual(visuals.path_directions, [assessment]);
+  assert.deepEqual(sanitizeVisuals(visuals, item).visuals, visuals);
+  const html = renderImpactPath(item.analysis, undefined, visuals);
+  assert.match(html, /Richtung: Positiv/);
+  assert.match(html, /Plausibler Wirkpfad/);
+  assert.match(html, /Wenn die genehmigten Mittel/);
+  assert.equal((html.match(/Richtung: Offen/g) || []).length, 2);
+  for (const invalid of [{ ...assessment, path: "Quelle einer anderen Story" }, { ...assessment, order: "third_order" }, { ...assessment, claim_ids: ["fremder-claim"] }, { ...assessment, condition: "" }, { ...assessment, evidence: "observed" }, { ...assessment, direction: "neutral", evidence: "open" }]) {
+    assert.equal(sanitizeVisuals({ path_directions: [invalid] }, item).visuals, null);
+  }
+  item.analysis.second_order = ["Eine neue Entwicklung verändert die Lage."];
+  assert.equal(sanitizeVisuals(visuals, item).visuals, null, "Kein alter Richtungsbefund nach Textänderung");
+});
+
+test("Historische Wirkpfade erhalten keine erfundene Richtung oder pauschale Evidenzhierarchie", () => {
+  const html = renderImpactPath(story().analysis);
+  assert.equal((html.match(/Richtung: Offen/g) || []).length, 3);
+  assert.doesNotMatch(html, /Richtung: (?:Positiv|Negativ|Neutral)/);
+  assert.doesNotMatch(html, /Unsicherheit größer/);
+  assert.match(html, /Ordnung zeigt, wie Folgen zusammenhängen/);
+});
+
 test("Kennzahl mit veralteter Claim-ID wird nur bei eindeutigem aktuellem Beleg neu gebunden", () => {
   const item = story();
   const input = { key_figures: [{ label: "Rahmen", value: "35,2", unit: "Mrd. EUR", claim_id: "alte-version" }] };

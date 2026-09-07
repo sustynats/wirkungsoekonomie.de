@@ -74,6 +74,7 @@ export const VISUALS_LIMITS = { keyFigures: 3, affectedGroups: 4, timeline: 4, c
 
 // Schema-Ausschnitt für den Prompt der WÖk-KI. Codex bindet ihn in buildAnalysisPrompt() ein.
 export const VISUALS_SCHEMA = {
+  path_directions: [{ order: "first_order|second_order|third_order", path: "exakter Text des zugeordneten Wirkpfads", direction: "positive|negative|mixed|neutral|open", condition: "Bedingung und konkrete Zustandsveränderung", evidence: "plausible_path|scenario|open", claim_ids: ["Beleg-IDs für den Ausgangspunkt, kein Kausalitätsnachweis"] }],
   key_figures: [{
     label: "Kennzahl, höchstens 60 Zeichen",
     value: "Zahl exakt wie im Claim oder Quelltext, Schreibweise unverändert, z. B. 35,2 oder zehn",
@@ -91,7 +92,18 @@ export const VISUALS_PROMPT_RULES = [
   "Ergänze optional ein Objekt visuals für visuelle Anker. Jedes Element ist freiwillig: Liefere es nur, wenn die gelieferten Claims oder Quelltexte es unmittelbar tragen; sonst lasse den Schlüssel weg oder setze null. Visuals sind Darstellung, kein zusätzlicher Wirkungsbeleg.",
   "key_figures (höchstens 3): nur Zahlen, die wörtlich im Claim oder Quelltext stehen, Schreibweise unverändert (Zahlwort bleibt Zahlwort); keine Umrechnung, Summe, Schätzung oder Ableitung. chart (nur type bar, 3 bis 8 Punkte): nur wenn die Quelle mindestens drei vergleichbare Zahlen derselben Einheit nennt. timeline (höchstens 4): nur Termine oder Fristen, die die Quelle nennt. affected_groups (höchstens 4) ausschließlich aus der festen Liste. tendency je Dimension als analytische Tendenz: chance = Wirkungspotenzial überwiegt, risiko = Wirkungsrisiko überwiegt, gemischt, offen; ex ante nie als eingetretene Wirkung.",
   "Für jeden Diagrammpunkt sind claim_id und evidence_quote Pflicht. Der kurze unveränderte Ausschnitt muss im zugehörigen Claim oder dessen konkretem Quellenauszug stehen und genau diesen Punkt tragen: dieselbe Messgröße (measure), Kategorie (label) sowie Zahl unmittelbar mit Einheit. Keine Währungen, Mengen oder Größenordnungen vermischen; keine Jahreszahl als Messwert. Generische Einheiten wie 'Einheit' reichen nicht. Wenn dieser Nachweis fehlt, chart weglassen. Keine zusätzlichen Quellenaufrufe nur für ein Diagramm.",
+  "path_directions: Richtung je materiellem Einzelpfad, höchstens 12. path exakt aus first_order/second_order/third_order übernehmen; Bedingung und Ledger-Belege für Ausgangspunkt nennen. Richtung analytisch begründen, nicht aus Relevanz ableiten. Unbeurteilbar = open, nicht neutral. Kein neuer KI-Aufruf für fehlende Visuals.",
 ];
+
+export const PATH_DIRECTIONS = { positive: "Positiv", negative: "Negativ", mixed: "Gemischt", neutral: "Neutral", open: "Offen" };
+export const PATH_EVIDENCE = { plausible_path: "Plausibler Wirkpfad", scenario: "Bedingtes Szenario", open: "Evidenz offen" };
+const PATH_ORDERS = ["first_order", "second_order", "third_order"];
+
+export function renderPathDirection(direction) {
+  const key = Object.hasOwn(PATH_DIRECTIONS, direction) ? direction : "open";
+  const icon = { negative: "tendenz-risiko", positive: "tendenz-chance", mixed: "tendenz-gemischt" }[key] || "offen";
+  return `<span class="news-path-direction" data-direction="${key}">${renderIcon(icon)}Richtung: ${PATH_DIRECTIONS[key]}</span>`;
+}
 
 function escapeHtml(value = "") {
   return String(value)
@@ -209,6 +221,26 @@ export function sanitizeVisuals(input, story = {}) {
   const claimIds = new Set((story.claims || []).map((claim) => claim.claim_id));
   const output = {};
 
+  const paths = [];
+  const usedPaths = new Set();
+  for (const [index, raw] of (Array.isArray(input.path_directions) ? input.path_directions : []).entries()) {
+    const order = raw?.order;
+    const path = cleanText(raw?.path, 1200);
+    const condition = cleanText(raw?.condition, 400);
+    const direction = raw?.direction;
+    const evidence = raw?.evidence;
+    const refs = [...new Set((Array.isArray(raw?.claim_ids) ? raw.claim_ids : []).filter(id => boundVisualClaims(story, id).some(claim => claim.claim_id === id)))];
+    const key = `${order}:${path}`;
+    if (paths.length >= 12 || !PATH_ORDERS.includes(order) || !Array.isArray(story.analysis?.[order]) || !story.analysis[order].includes(path) || usedPaths.has(key)
+      || !Object.hasOwn(PATH_DIRECTIONS, direction) || !Object.hasOwn(PATH_EVIDENCE, evidence) || !condition
+      || (direction !== "open" && (evidence === "open" || !refs.length))) {
+      dropped.push(`PATH_DIRECTION_INVALID:${index}`); continue;
+    }
+    paths.push({ order, path, direction, condition, evidence, claim_ids: refs });
+    usedPaths.add(key);
+  }
+  if (paths.length) output.path_directions = paths;
+
   const figures = [];
   for (const [index, raw] of (Array.isArray(input.key_figures) ? input.key_figures : []).entries()) {
     if (figures.length >= VISUALS_LIMITS.keyFigures) { dropped.push(`KEY_FIGURE_LIMIT:${index}`); continue; }
@@ -293,6 +325,10 @@ export function sanitizeVisuals(input, story = {}) {
 // ---------------------------------------------------------------------------
 
 const ICON_PATHS = {
+  kultur: '<path d="M3 4l8 2v7c0 4-3 6-6 5-2-1-3-4-2-7zM13 7l8-3v9c0 5-4 7-7 5"/><path d="M5 9h1M8 10h1M5 14l3 1M15 10h1M18 9h1M15 15l3-1"/>',
+  wissenschaft: '<path d="M9 3h6M10 3v6l-6 10a1 1 0 0 0 1 2h14a1 1 0 0 0 1-2L14 9V3M7 15h10"/>',
+  medien: '<circle cx="12" cy="12" r="2"/><path d="M8 8a6 6 0 0 0 0 8M16 8a6 6 0 0 1 0 8M5 5a10 10 0 0 0 0 14M19 5a10 10 0 0 1 0 14M12 14v7"/>',
+  polizei: '<path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/><path d="M12 7l1.5 3h3l-2.5 2 1 3-3-2-3 2 1-3-2.5-2h3z"/>',
   meldung: '<path d="M4 5h13v14H4z"/><path d="M17 8h3v9a2 2 0 0 1-2 2"/><path d="M7 9h7M7 12h7M7 15h4"/>',
   politik: '<path d="M3 21h18M5 21v-11M9 21v-11M15 21v-11M19 21v-11M3 10l9-6 9 6z"/>',
   wirtschaft: '<path d="M4 20h16"/><path d="M7 20v-8M12 20V6M17 20v-10"/>',
@@ -422,14 +458,20 @@ export function renderDimensionMeters(analysis = {}, { compact = false, tendency
   return `<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>`;
 }
 
-export function renderImpactPath(analysis = {}, prose = (items) => (items || []).map(escapeHtml).join(" ")) {
+export function renderImpactPath(analysis = {}, prose = (items) => (items || []).map(escapeHtml).join(" "), visuals = null) {
   const steps = [
     { key: "mechanisms", badge: `${renderIcon("mechanismus")}<span>Wirkmechanismus</span>`, className: "wt-path__step--mechanism", title: "Wie die Maßnahme überhaupt wirken kann" },
     { key: "first_order", badge: "<b>1</b><span>Erste Ordnung – unmittelbar</span>", order: 1, title: "Erste Ordnung" },
     { key: "second_order", badge: "<b>2</b><span>Zweite Ordnung – nachgelagert</span>", order: 2, title: "Zweite Ordnung" },
     { key: "third_order", badge: "<b>3</b><span>Dritte Ordnung – systemisch</span>", order: 3, title: "Dritte Ordnung" },
-  ].map((step) => `<li class="wt-path__step${step.className ? ` ${step.className}` : ""}"${step.order ? ` data-order="${step.order}"` : ""}><span class="wt-path__badge" title="${escapeHtml(step.title)}">${step.badge}</span><p>${prose(analysis[step.key])}</p></li>`).join("");
-  return `<div class="wt-path"><ol class="wt-path__steps">${steps}</ol><p class="wt-path__legend">${renderIcon("folgen")}<span>Von links nach rechts wächst der Abstand zum gesicherten Sachverhalt: Die Fläche wird blasser, die Unsicherheit größer.</span></p></div>`;
+  ].map((step) => {
+    const paths = (Array.isArray(analysis[step.key]) ? analysis[step.key] : []).map(path => {
+      const assessment = step.order && visuals?.path_directions?.find(item => item.order === step.key && item.path === path);
+      return `<div class="wt-path__claim">${step.order ? renderPathDirection(assessment?.direction) : ""}<p>${prose([path])}</p>${step.order ? `<p class="news-method-note">${assessment ? `${escapeHtml(PATH_EVIDENCE[assessment.evidence] || "Evidenz offen")} · ${escapeHtml(assessment.condition)}` : "Richtung und Evidenz nicht gesondert eingestuft."}</p>` : ""}</div>`;
+    }).join("");
+    return `<li class="wt-path__step${step.className ? ` ${step.className}` : ""}"${step.order ? ` data-order="${step.order}"` : ""}><span class="wt-path__badge" title="${escapeHtml(step.title)}">${step.badge}</span>${paths || '<p>Hier liegt noch keine Einordnung vor.</p>'}</li>`;
+  }).join("");
+  return `<div class="wt-path"><ol class="wt-path__steps">${steps}</ol><p class="wt-path__legend">${renderIcon("folgen")}<span>Die Ordnung zeigt, wie Folgen zusammenhängen. Richtung und Evidenz werden je Wirkpfad getrennt eingeordnet. Eine mögliche Folge ist noch keine beobachtete Wirkung.</span></p></div>`;
 }
 
 export function renderGate(analysis = {}) {
