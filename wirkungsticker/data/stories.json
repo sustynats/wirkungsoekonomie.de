@@ -1,7 +1,91 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T18:25:32.431Z",
+  "updated_at": "2026-09-07T18:38:42.972Z",
   "stories": [
+    {
+      "story_id": "wt-3b0fbd0e7ce8e17e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3b0fbd0e7ce8e17e-3162032bbeb94bca-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3b0fbd0e7ce8e17e-70dff85306d0cbfa-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3b0fbd0e7ce8e17e-e6a09e8c1c3e559b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "handgranatenexplosion-nach-explosion-in-augsburg-noch-kein-verdachtiger-ermittelt-e8e17e",
+      "title": "Handgranatenexplosion: Nach Explosion in Augsburg noch kein Verdächtiger ermittelt",
+      "source_summary": "Die Quelle meldet eine Explosion in Augsburg und ordnet den Vorfall als Fall mit Handgranateneinsatz ein. Nach Angaben des Landeskriminalamts gibt es bislang keinen Tatverdächtigen. Zur Ursache und zu den Hintergründen bleibt der Sachstand offen.\n\nDie Meldung bleibt damit in mehreren Punkten vorläufig. Gesichert sind nach der Quelle der Einsatz einer Handgranate und der bisher fehlende Verdächtige; weitere Ermittlungsdetails nennt der Text nicht.",
+      "summary": "In Augsburg wurde laut Bericht eine Handgranate bei einer Explosion eingesetzt. Ein Tatverdächtiger ist bisher nicht ermittelt.",
+      "detail_summary": "Der berichtete Kern ist eine Explosion in Augsburg, bei der nach Angaben des Landeskriminalamts eine Handgranate eingesetzt wurde. Zugleich heißt es, dass es bisher keinen Tatverdächtigen gibt und die Hintergründe offen bleiben. Für die Einordnung ist vor allem relevant, dass es sich um einen möglichen Gewalt- oder Anschlagsvorgang handelt, der Ermittlungen auslöst und Sicherheitsfragen berührt. Der Wirkpfad liegt zunächst bei akuter Gefährdung und möglicher Verunsicherung im lokalen Umfeld; daraus können weitere Ermittlungsmaßnahmen folgen. Eine Wirkung auf Regeln, Märkte oder Infrastruktur ist nach der vorliegenden Quelle nicht belegbar. Die Evidenz bleibt begrenzt, weil nur eine journalistische Quelle vorliegt und zentrale Punkte zu Motiv, Täterschaft und Folgen offen sind.",
+      "why_relevant": "Ein möglicher Sprengsatz in einer Stadt ist ein sicherheitsrelevanter Vorfall mit unmittelbarer Bedeutung für Betroffene und Ermittlungen. Die Meldung enthält einen gesicherten Kern, aber noch keine vollständige Aufklärung.",
+      "topic": [
+        "Gesundheit"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Der Vorfall betrifft mögliche unmittelbare Gefährdung von Menschen und das lokale Sicherheitsgefühl. Über Folgen und Verletzte sagt die Quelle nichts Belastbares."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle enthält keinen belastbaren Bezug zu Umwelt, Klima oder Natur."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Bezug zu demokratischen Verfahren, Institutionen oder Teilhabe ist in der Quelle nicht belegt."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T18:37:02.679Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T08:30:59.000Z",
+      "last_updated": "2026-09-07T18:38:06.030Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-7acec0d9dac1b64d45ae",
+      "case_file": null,
+      "source_published_at": "2026-09-07T08:30:59.000Z",
+      "published_at": "2026-09-07T18:38:06.030Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/bayern/handgranatenexplosion--nach-explosion-in-augsburg-noch-kein-verdaechtiger-ermittelt-38214916.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T08:30:59.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-2b90423c6e7549bd",
       "title_image": {
@@ -1430,7 +1514,14 @@
       "media_impact": null,
       "media_analysis_version": "2.1",
       "media_checked_at": "2026-09-07T16:07:11.255Z",
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-7c4918d1134c",
+        "slug": "witkoff-fordert-russland-und-ukraine-zu-kompromissen-auf-was-das-fur-verhandlungen-7c4918",
+        "title": "Witkoff fordert Russland und Ukraine zu Kompromissen auf: Was das für Verhandlungen und Kriegslage bedeuten kann",
+        "teaser": "Nach Gesprächen in Kiew ruft der US-Gesandte Steve Witkoff beide Seiten zu Kompromissen auf. Das ist vor allem ein Signal im Verhandlungsraum – noch kein Beleg für einen Kurswechsel.",
+        "published_at": "2026-09-07T18:38:42.972Z",
+        "updated_at": "2026-09-07T18:38:42.972Z"
+      },
       "first_seen": "2026-09-06T17:07:45.000Z",
       "last_updated": "2026-09-07T16:10:36.707Z",
       "version": 1,
@@ -14018,6 +14109,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-7c4918d1134c",
+      "story_id": "wt-8f7ac0654a780960",
+      "slug": "witkoff-fordert-russland-und-ukraine-zu-kompromissen-auf-was-das-fur-verhandlungen-7c4918",
+      "title": "Witkoff fordert Russland und Ukraine zu Kompromissen auf: Was das für Verhandlungen und Kriegslage bedeuten kann",
+      "subtitle": "Eine öffentliche Vermittlerbotschaft kann Gesprächsräume öffnen. Sie kann aber auch rote Linien schärfer machen, ohne den Krieg selbst schon zu verändern.",
+      "teaser": "Nach Gesprächen in Kiew ruft der US-Gesandte Steve Witkoff beide Seiten zu Kompromissen auf. Das ist vor allem ein Signal im Verhandlungsraum – noch kein Beleg für einen Kurswechsel.",
+      "published_at": "2026-09-07T18:38:42.972Z",
+      "updated_at": "2026-09-07T18:38:42.972Z",
+      "reading_time_minutes": 6
+    },
     {
       "analysis_id": "woek-analysis-340bd54aa1fd",
       "story_id": "wt-a030a1d903caa413",
