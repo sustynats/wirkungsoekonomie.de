@@ -31301,9 +31301,9 @@
       "governance_hold_until": null
     },
     "berlin-presseportal": {
-      "last_attempt": "2026-09-06T00:21:47.142Z",
-      "attempts": 53,
-      "consecutive_failures": 1,
+      "last_attempt": "2026-09-07T00:36:20.608Z",
+      "attempts": 54,
+      "consecutive_failures": 2,
       "last_success": "2026-09-05T23:51:06.780Z",
       "last_error": "ROBOTS_UNAVAILABLE_429",
       "feed_url": "https://www.berlin.de/presse/pressemitteilungen/",
@@ -31311,10 +31311,10 @@
       "latest_item": "2026-09-04T22:00:00.000Z",
       "etag": null,
       "last_modified": null,
-      "failures": 5,
-      "last_error_at": "2026-09-06T00:21:47.142Z",
+      "failures": 6,
+      "last_error_at": "2026-09-07T00:36:20.608Z",
       "governance_hold_reason": "ROBOTS_UNAVAILABLE_429",
-      "governance_hold_until": "2026-09-07T00:21:47.142Z"
+      "governance_hold_until": "2026-09-08T00:36:20.608Z"
     },
     "lto-news": {
       "last_attempt": "2026-09-07T00:21:45.238Z",
@@ -31460,7 +31460,7 @@
     "wt-a5874ae28ed5533f"
   ],
   "relevance_filter_version": "4.0",
-  "last_attempted_run": "2026-09-07T00:21:45.238Z",
+  "last_attempted_run": "2026-09-07T00:36:20.608Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1622,
