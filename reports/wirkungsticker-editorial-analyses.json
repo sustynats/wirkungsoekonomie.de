@@ -2,26 +2,118 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-07T17:39:32.549Z",
-  "scanned_stories": 116,
-  "scanned_subjects": 100,
-  "editorial_candidates": 18,
-  "ready_for_research": 4,
-  "research_pending": 5,
+  "started_at": "2026-09-07T17:48:42.333Z",
+  "scanned_stories": 117,
+  "scanned_subjects": 101,
+  "editorial_candidates": 19,
+  "ready_for_research": 5,
+  "research_pending": 6,
   "retry_deferred": 4,
-  "editorial_research_sources_discovered": 18,
-  "selected": 0,
-  "editorial_research_started": 0,
+  "editorial_research_sources_discovered": 22,
+  "selected": 1,
+  "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
+  "research_calls": 2,
+  "research_tokens": 12667,
+  "analysis_tokens": 12272,
+  "estimated_cost_usd": 0.064724,
+  "quality_retries": 1,
   "publication_deferred": false,
-  "failed": [],
+  "failed": [
+    {
+      "story_id": "wt-cf03acddb911d861",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-07T18:03:42.333Z"
+    }
+  ],
   "candidates": [
+    {
+      "story_id": "wt-cf03acddb911d861",
+      "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
+      "story_title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
+      "editorial_analysis_score": 78,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-219f434ceb61"
+    },
+    {
+      "story_id": "wt-cd001726db438d2d",
+      "story_slug": "arbeitsmarkt-fachkraftemangel-konnte-bis-2029-auf-723-000-steigen-438d2d",
+      "story_title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
+      "editorial_analysis_score": 81,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 6,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "910a5e1f96e4f59f4bec24ac97f8d9e17f69e97963b19393a6e62179f6b21005",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-8f7ac0654a780960",
       "story_slug": "witkoff-fordert-russland-und-ukraine-zu-kompromissen-fur-kriegsende-auf-780960",
@@ -231,48 +323,6 @@
       "fingerprint": "e1a3695100cfd89742bbb0067654fbaff5ab9e303d9a8f14e8a6ce5f29111790",
       "status": "published",
       "analysis_id": "woek-analysis-0bfd0f9a3434"
-    },
-    {
-      "story_id": "wt-cf03acddb911d861",
-      "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
-      "story_title": "Özdemir fordert „Hochdruck“ beim Schutz sicherheitsrelevanter Infrastruktur",
-      "editorial_analysis_score": 73,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 4,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "2f2b82710b0f861b0a1ae02287680ad6f589dd63664b20ca92312f5602829f66",
-      "status": "published",
-      "analysis_id": "woek-analysis-219f434ceb61"
     },
     {
       "story_id": "wt-995822cc0b71a7f8",
@@ -801,5 +851,6 @@
     "applied": 0,
     "polling_errors": 0,
     "attention_required": []
-  }
+  },
+  "completed_at": "2026-09-07T17:49:57.927Z"
 }
