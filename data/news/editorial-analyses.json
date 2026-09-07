@@ -1,8 +1,92 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-07T20:56:07.328Z",
+  "updated_at": "2026-09-07T22:09:44.497Z",
   "candidates": [
+    {
+      "story_id": "wt-811d4815cfd8d70d",
+      "story_slug": "graustein-weitere-sprengvorrichtung-nahe-stromtrassen-gefunden-d8d70d",
+      "story_title": "Weitere Sprengvorrichtung nahe Stromtrassen gefunden",
+      "editorial_analysis_score": 75,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "1f7a45328266d4d80707aa786cf916dd09fe0662a4c47902551be8f631bcb21a",
+      "status": "published",
+      "analysis_id": "woek-analysis-e8a3a0294255"
+    },
+    {
+      "story_id": "wt-1c2c187d0b858b7c",
+      "story_slug": "anschlage-auf-stromleitungen-21-sprengsatze-an-stromleitungen-entdeckt-und-entscharft-858b7c",
+      "story_title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
+      "editorial_analysis_score": 76,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 10,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "1fb3d62e28487277e32caff82efe2522cea1c8dd8c40697b1be02c774c4c3013",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-aa6c2b7b8a381223",
       "story_slug": "eu-to-boost-greenland-investment-amid-trump-annexation-claims-381223",
@@ -435,7 +519,7 @@
       "story_id": "wt-6c26e428b894e714",
       "story_slug": "anschlage-auf-stromleitungen-angriffe-aufs-stromnetz-einsatz-in-sachsen-geht-weiter-94e714",
       "story_title": "Anschläge auf Stromleitungen: Angriffe aufs Stromnetz: Einsatz in Sachsen geht weiter",
-      "editorial_analysis_score": 71,
+      "editorial_analysis_score": 68,
       "analysis_gain": 52,
       "factors": {
         "systemic_relevance": 16,
@@ -452,7 +536,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 8
+        "evidence_quality": 5
       },
       "factor_status": {
         "impact_potential": "open",
@@ -462,15 +546,15 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 5,
+        "independent_origin_count": 2,
         "primary_source_count": 0,
-        "cited_claim_count": 8,
+        "cited_claim_count": 4,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "95b8bb2184beba0a6312d8a9020be9a349ab589a6db4d6c57531f6e5e956bbcb",
-      "status": "published",
+      "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
+      "status": "ready_for_research",
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
@@ -20442,6 +20526,592 @@
           ]
         }
       ]
+    },
+    {
+      "analysis_id": "woek-analysis-e8a3a0294255",
+      "story_id": "wt-811d4815cfd8d70d",
+      "related_story_ids": [
+        "wt-811d4815cfd8d70d"
+      ],
+      "related_case_id": null,
+      "slug": "weitere-sprengvorrichtungen-nahe-stromtrassen-warum-der-fund-mehr-ist-als-eine-pol-e8a3a0",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "1f7a45328266d4d80707aa786cf916dd09fe0662a4c47902551be8f631bcb21a",
+      "candidate_score": 75,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-07T22:09:44.497Z",
+      "updated_at": "2026-09-07T22:09:44.497Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet der Fund weiterer Sprengvorrichtungen nahe Stromtrassen für Sicherheit, Versorgung und staatliche Resilienz – jenseits der bloßen Meldung?",
+      "analysis_type": "system_analysis",
+      "title": "Weitere Sprengvorrichtungen nahe Stromtrassen: Warum der Fund mehr ist als eine Polizeimeldung",
+      "subtitle": "Die Zahl der Funde steigt, die Versorgung blieb laut Bericht stabil. Systemisch zählt vor allem, was der Fall über Schutz, Reaktion und Unsicherheit an kritischer Infrastruktur zeigt.",
+      "teaser": "Neun weitere Sprengvorrichtungen sind in der Oberlausitz gefunden worden. Die Stromversorgung blieb laut Bericht aufrechterhalten. Entscheidend ist jetzt der systemische Zusatznutzen: Was bedeutet der Fund für Sicherheit, Resilienz und staatliche Schutzfähigkeit?",
+      "seo_description": "Weitere Sprengvorrichtungen an Stromtrassen in Sachsen: Analyse zu Sicherheit, Resilienz, Versorgung und staatlicher Schutzfähigkeit.",
+      "additional_value": "Der Beitrag trennt Meldung, Wirkpfad und Bewertung. Er zeigt, warum ein größerer Fundumfang an kritischer Infrastruktur nicht automatisch eine eingetretene Schadwirkung ist, aber den Schutzbedarf, Ermittlungsdruck und die Wahrnehmung von Verwundbarkeit erhöht.",
+      "research_summary": "Geliefert wurden drei belastbare Meldungen aus dem öffentlich-rechtlichen und journalistischen Umfeld. MDR meldet neun weitere Sprengvorrichtungen und einen beendeten Polizeieinsatz. Deutschlandfunk bestätigt den Fund weiterer selbstgebauter Sprengvorrichtungen. stern berichtet zusätzlich, die Vorrichtungen hätten mutmaßlich Anschläge auf die Stromversorgung treffen sollen und lägen unmittelbar an Hochspannungstrassen bei Graustein. Eine tatsächliche Unterbrechung der Stromversorgung wird in den Quellen nicht beschrieben; im Gegenteil, sie sei aufrechterhalten worden.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Was konkret gefunden wurde",
+          "paragraphs": [
+            "Ein konkretes Bild hilft hier mehr als ein großes Schlagwort. Nach den vorliegenden Berichten wurden in der Oberlausitz neun weitere selbstgebaute Sprengvorrichtungen gefunden und unschädlich gemacht. Insgesamt ist von 21 Vorrichtungen im Bereich von Hochspannungstrassen südlich des Umspannwerks Graustein die Rede. Der Polizeieinsatz vor Ort dauerte laut MDR von Freitag bis Sonntag und ist inzwischen beendet. Die Stromversorgung blieb laut den gelieferten Quellen aufrechterhalten.",
+            "Das ist wichtig, weil damit zwei Dinge gleichzeitig feststehen: Es gab einen erheblichen Sicherheitsfund an kritischer Infrastruktur, aber keinen in den Quellen belegten Ausfall der Versorgung. Genau diese Trennung verhindert eine Überdehnung der Meldung. Fundumfang ist ein Befund; ein eingetretener Schaden wäre eine andere, extra zu belegende Aussage."
+          ],
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6",
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Fund weiterer Vorrichtungen",
+                "text": "Neun zusätzliche Sprengvorrichtungen werden entdeckt und unschädlich gemacht.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn die Meldungen zutreffen; der Fund ist in den Quellen beschrieben.",
+                "source_ids": [
+                  "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                  "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+                ]
+              },
+              {
+                "title": "Mehr Sicherungsbedarf",
+                "text": "Betreiber und Polizei müssen weitere Stellen prüfen, absichern und beobachten.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Weil kritische Infrastruktur betroffen ist und die Zahl der Funde steigt.",
+                "source_ids": [
+                  "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                  "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+                ]
+              },
+              {
+                "title": "Resilienz durch frühes Entdecken",
+                "text": "Das schnelle Auffinden und Entschärfen verhindert nach den Quellen einen Versorgungsabbruch.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Nur solange die Vorrichtungen rechtzeitig entdeckt werden; ein Ausfall ist nicht belegt.",
+                "source_ids": [
+                  "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+                ]
+              },
+              {
+                "title": "Längerer Schutz- und Ermittlungsdruck",
+                "text": "Die Behörden müssen offenhalten, ob noch weitere Funde oder Zusammenhänge auftreten.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn der Fall Teil eines größeren Musters ist; das bleibt in den Quellen offen.",
+                "source_ids": [
+                  "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                  "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "system",
+          "title": "Systemisch zählt die Kopplung: Strom, Schutz, Vertrauen",
+          "paragraphs": [
+            "Der Zusatznutzen dieser Meldung liegt nicht in der reinen Zahl, sondern in der Kopplung der Systeme. Stromtrassen sind nicht irgendein Ort, sondern Teil kritischer Infrastruktur. Wenn dort Sprengvorrichtungen auftauchen, verschiebt sich der Fokus sofort auf mehrere Ebenen zugleich: physische Sicherheit, Netzschutz, Einsatzkoordination und die Frage, wie schnell Gefahren erkannt werden.",
+            "Das ist ein klassischer Wirkpfad auf Ordnung eins und zwei. Ordnung eins ist der unmittelbare Schutz- und Entschärfungsakt. Ordnung zwei ist der Folgeaufwand: Kontrollen, Ermittlungen, Priorisierung von Personal und Technik. Eine mögliche dritte Ordnung wäre eine Anpassung von Schutzkonzepten für kritische Infrastruktur. Das ist plausibel, aber in den gelieferten Quellen nicht als tatsächliche Maßnahme belegt."
+          ],
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Drei Blickwinkel, ein Fall",
+          "paragraphs": [
+            "Für Menschen ist der wichtigste Punkt die Versorgungssicherheit. Die Quellen nennen keine Unterbrechung der Stromversorgung. Trotzdem ist die Bedingung klar: Schon der Verdacht auf Sabotage an Stromtrassen belastet das Sicherheitsgefühl in betroffenen Regionen und bindet Ressourcen von Polizei und Betreibern. Das betrifft alle, die auf stabile Energieversorgung angewiesen sind, also Haushalte, Betriebe und sensible Einrichtungen.",
+            "Für den Planeten ist der Bezug in den Quellen schwach. Es wird kein Umwelt- oder Klimaschaden beschrieben. Der Fall ist deshalb nicht als Umweltgeschichte zu überdehnen. Für die Demokratie ist der Befund indirekter, aber real: Kritische Infrastruktur verlangt funktionsfähige staatliche Schutz- und Ermittlungsstrukturen. Wenn diese schnell reagieren, stärkt das die Korrekturfähigkeit des Staates. Wenn Gefahrenlagen unklar bleiben, wächst der Druck auf Transparenz, Priorisierung und Vertrauen."
+          ],
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Von der Entschärfung zur Priorisierung",
+          "paragraphs": [
+            "Die erste Ordnung ist direkt sichtbar: Vorrichtungen werden gefunden und unschädlich gemacht. Die zweite Ordnung betrifft den zusätzlichen Aufwand für Einsatzkräfte, Ermittler und Netzbetreiber. Die dritte Ordnung liegt in möglichen Anpassungen von Schutzkonzepten und Vorsorgeprioritäten. Genau hier entsteht die eigentliche systemische Relevanz: Nicht jede Gefährdung erzeugt sofort einen Schaden, aber sie kann Entscheidungen verschieben.",
+            "Wichtig ist die Trennung von Wirkung und Reichweite. Viele Menschen können von der Meldung erfahren, ohne dass sich ihre Lebenslage بالفعل verändert. Wirkung entsteht erst dort, wo sich Zustände ändern: mehr Sicherungsaufwand, andere Prioritäten, möglicherweise neue Schutzroutinen. Dass dieser Pfad plausibel ist, macht ihn noch nicht zu einer beobachteten Wirkung auf Versorgung oder Politik."
+          ],
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Warum frühe Entdeckung der Schlüssel ist",
+          "paragraphs": [
+            "Resilienz zeigt sich hier als Fähigkeit, eine Bedrohung zu erkennen, bevor sie zu einem Ausfall wird. Dass die Vorrichtungen gefunden und unschädlich gemacht wurden, spricht für funktionierende Schutz- und Reaktionsketten. Gleichzeitig zeigt der Fall die offene Flanke: Die Gefährdung war zunächst da, bevor sie entdeckt wurde. Resilienz ist also nicht Abwesenheit von Risiko, sondern die Fähigkeit, trotz Risiko funktionsfähig zu bleiben.",
+            "Für die Bewertung ist auch die Unsicherheit wichtig. Die Quellen nennen keinen Täter, kein Motiv und keinen abschließend belegten Zusammenhang zu früheren Vorfällen. Darum bleibt offen, ob es sich um einen Einzelfall, ein Muster oder einen größeren Zusammenhang handelt. Diese Unsicherheit schwächt nicht die Dringlichkeit des Schutzes, aber sie begrenzt die Härte jeder weitergehenden Zurechnung."
+          ],
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was offen bleibt und warum das zählt",
+          "paragraphs": [
+            "Offen bleibt zunächst die Täterschaft. Offen bleibt auch, ob die nun gemeldeten Funde Teil desselben Tatkomplexes sind wie frühere Vorfälle, auch wenn die Berichte einen Zusammenhang im Kontext von Sabotageversuchen herstellen. Daraus folgt methodisch: Die Schutzlage ist ernst, die Kausalgeschichte aber nicht abgeschlossen. Wer an dieser Stelle zu weit geht, verwechselt Verdacht mit Beweis.",
+            "Das ist keine Schwäche der Analyse, sondern ihre Grenze. Gerade bei kritischer Infrastruktur muss man die Schutzlogik ernst nehmen, ohne den Fall größer zu machen, als ihn die Quellen tragen. In der Wirkungsökonomie heißt das: Bedingte Pfade sauber benennen, Zustand und Richtung trennen, und bei offener Evidenz offen bleiben."
+          ],
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6",
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die weitere Entwicklung zeigt",
+          "paragraphs": [
+            "Als Nächstes zählt nicht die große Dramatisierung, sondern die sachliche Beobachtung: Gibt es weitere Funde? Nennen die Behörden neue Erkenntnisse zur Herkunft der Vorrichtungen? Wird der Schutz von Hochspannungstrassen angepasst? Und bleibt die Versorgung stabil? Diese Punkte entscheiden darüber, ob aus der Gefährdung eine konkrete Wirkung auf Betrieb, Kosten oder Vertrauen wird.",
+            "Ein zweiter Beobachtungspunkt ist die öffentliche Kommunikation. Wenn Behörden offen erklären, was gesichert ist und was noch nicht, stärkt das die Einordnung. Wenn dagegen unklare Begriffe den Sachverhalt überlagern, steigt das Resonanzrisiko. Kommunikationswirkung ist aber nicht dasselbe wie Ereigniswirkung. Hier geht es also um den möglichen Diskursraum, nicht um eine bereits eingetretene politische Folge."
+          ],
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Der eigentliche Befund liegt in der Schutzfrage",
+          "paragraphs": [
+            "Mein Fazit aus den Quellen ist klar: Der Fund weiterer Sprengvorrichtungen ist vor allem ein Befund über Verwundbarkeit und Reaktionsfähigkeit kritischer Infrastruktur. Nicht belegt ist ein Ausfall der Stromversorgung, wohl aber ein erheblicher Sicherungs- und Ermittlungsbedarf. Der systemische Zusatznutzen dieser Meldung liegt darin, dass sie den Blick von der bloßen Zahl auf die Schutzarchitektur lenkt.",
+            "Im Kern geht es um eine schlichte, aber folgenreiche Frage: Wie gut erkennt ein Staat Gefahren an lebenswichtigen Netzen, bevor sie Schaden anrichten? Genau dort liegt die Wirkungsordnung dieses Falls. Die Meldung zeigt keine Katastrophe, aber sie zeigt einen Stresstest. Und ein Stresstest ist für Versorgung, Sicherheit und Vertrauen oft schon Wirkung genug, auch wenn der direkte Schaden noch ausbleibt."
+          ],
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6",
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Neun weitere Sprengvorrichtungen wurden in der Oberlausitz gefunden und unschädlich gemacht.",
+          "type": "fact",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die genaue Täterschaft bleibt offen.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Insgesamt werden 21 selbst hergestellte Sprengvorrichtungen im Bereich der Stromtrassen südlich des Umspannwerks Graustein genannt.",
+          "type": "fact",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Zahl stammt aus dem berichteten Behördenkontext; keine unabhängige Primärquelle im Material.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Der Polizeieinsatz vor Ort dauerte von Freitag bis Sonntag und ist beendet.",
+          "type": "observation",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Keine Angabe zu weiteren Nachsicherungen im Material.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Die Vorrichtungen sollten nach Behördenangaben Kurzschlüsse und Schäden an der Strominfrastruktur verursachen.",
+          "type": "fact",
+          "source_ids": [
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Aussage ist behördlich attribuiert und im Material nur über einen journalistischen Bericht zugänglich.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Es liegt keine in den Quellen belegte Unterbrechung der Stromversorgung vor.",
+          "type": "observation",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6",
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ],
+          "evidence_level": "high",
+          "data_status": "inferred",
+          "uncertainty": "Die Quellen nennen ausdrücklich, dass die Versorgung aufrechterhalten worden sei; daraus folgt kein Ausfall.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Mehr Funde an kritischer Infrastruktur erhöhen plausibel Sicherungs- und Ermittlungsaufwand.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Plausibler Wirkpfad, aber in den Quellen nicht als konkrete Ressourcenerhöhung quantifiziert.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Die Meldung kann das Sicherheitsgefühl in betroffenen Regionen belasten, ohne dass dies bereits als eingetretene Wirkung auf die Versorgung belegt wäre.",
+          "type": "impact_risk",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+          ],
+          "evidence_level": "low",
+          "data_status": "scenario",
+          "uncertainty": "Kommunikatives Resonanzpotenzial, keine belegte Zustandsänderung.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Frühes Finden und Unsachlichmachen der Vorrichtungen stärkt die Resilienz der Versorgung.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Resilienz wird hier aus dem beschriebenen Schutz- und Reaktionsablauf abgeleitet.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Ein abschließend belegter Zusammenhang zu früheren Sabotagefällen ist im gelieferten Material nicht vorhanden.",
+          "type": "fact",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6",
+            "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Berichte erwähnen Sabotageversuche als Kontext, aber keine endgültige Zurechnung.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Die Meldung hat einen relevanten Sicherheits- und Infrastrukturrahmen, ist aber keine fertige politische oder gesellschaftliche Gesamtbewertung.",
+          "type": "woek_definition",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische Einordnung, kein Ereignisfakt.",
+          "date": "2026-09-07"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Stromversorgung sei in allen genannten Fällen aufrechterhalten worden.",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+          ],
+          "effect_on_assessment": "Begrenzt die These eines bereits eingetretenen Schadens; stützt stattdessen eine Analyse über Risiko, Schutz und Resilienz."
+        },
+        {
+          "finding": "Täter, Motiv und vollständiger Zusammenhang bleiben offen.",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+            "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+          ],
+          "effect_on_assessment": "Verhindert eine harte Zuschreibung oder eine überdehnte politische Deutung."
+        }
+      ],
+      "editorial_rules_version": "2.0",
+      "executive_finding": "Neun weitere Sprengvorrichtungen an Stromtrassen sind ein ernstes Sicherheitszeichen, aber nach den Quellen kein belegter Stromausfall. Die konkrete Folge liegt zunächst im zusätzlichen Schutz- und Ermittlungsaufwand; eine zweite und dritte Wirkungsebene entsteht erst, wenn Betreiber und Behörden ihre Vorsorge, Kontrollen oder Schutzkonzepte anpassen. Die wichtigste Bedingung bleibt offen: Wer dahintersteht und ob ein größerer Zusammenhang besteht.",
+      "subject_dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind Versorgungssicherheit, Schutzbedarf und das Sicherheitsgefühl von Menschen und Betrieben im Umfeld kritischer Infrastruktur.",
+          "implementation_status": "open",
+          "likelihood": "likely",
+          "direction": "negative",
+          "magnitude": "medium",
+          "evidence": "plausible_path"
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Quellen nennen keinen Umwelt- oder Klimaschaden; ein direkter Planet-Bezug ist nicht belegt.",
+          "implementation_status": "open",
+          "likelihood": "open",
+          "direction": "open",
+          "magnitude": "open",
+          "evidence": "open"
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Kritische Infrastruktur verlangt funktionsfähige staatliche Schutz- und Ermittlungsstrukturen; deren Reaktionsfähigkeit ist hier betroffen.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "mixed",
+          "magnitude": "low",
+          "evidence": "plausible_path"
+        }
+      },
+      "assessment_context": "risk",
+      "assessment_condition": "Gilt, solange die Quellenlage unverändert bleibt: kein belegter Versorgungsausfall, aber ein bestätigter Sicherheitsfund an kritischer Infrastruktur mit offenen Täter- und Zusammenhangsfragen.",
+      "author_perspective": {
+        "paragraphs": [
+          "Ich lese diesen Fall vor allem als Belastungstest für die Schutzarchitektur. Nicht der Alarmton interessiert mich zuerst, sondern die Frage, ob ein Netz wie dieses gefährdet werden kann, ohne dass die Versorgung ausfällt. Genau darin steckt für mich die eigentliche politische Bedeutung: Ein Staat muss kritische Infrastruktur nicht nur betreiben, sondern auch früh genug sichern. Dass die Quellen keinen Ausfall nennen, ist beruhigend. Dass es überhaupt so viele Vorrichtungen an diesen Orten gab, bleibt aus meiner Sicht dennoch der schwerwiegende Punkt.",
+          "Meine Gewichtung ist deshalb klar: Ich würde den Fall nicht überdehnen, aber auch nicht kleinreden. Der belegte Kern ist ernst genug, weil er Schutzbedarf, Ermittlungsdruck und potenzielle Folgerisiken sichtbar macht. Wo die Evidenz endet, sollte die Einordnung enden. Gerade bei solchen Lagen überzeugt mich eine nüchterne Analyse mehr als jedes schnelle Urteil."
+        ],
+        "claim_indices": [
+          4,
+          5,
+          6
+        ],
+        "origin": "generated_from_analysis"
+      },
+      "positive_path_checks": [
+        {
+          "measure": "Frühes Auffinden und Unschädlichmachen der Vorrichtungen",
+          "source_ids": [
+            "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+          ],
+          "mechanism": "Die Entschärfung verhindert nach den Quellen den Eintritt eines Schadens an der Strominfrastruktur und stabilisiert damit die Versorgung."
+        }
+      ],
+      "counter_evidence_search": {
+        "checked": true,
+        "result": "Gefunden wurden keine Quellen, die einen Ausfall der Stromversorgung belegen. Die stärkste Grenze ist die offene Täter- und Zusammenhangsfrage sowie das Fehlen quantifizierter Folgekosten oder zusätzlicher Schutzmaßnahmen."
+      },
+      "editorial_quality": {
+        "false_balance_checked": true,
+        "concrete_positive_paths_only": true,
+        "likelihood_direction_separated": true,
+        "safeguards_as_limits": true,
+        "evidence_bound_judgment": true,
+        "reader_takeaway_clear": true,
+        "concrete_language_checked": true,
+        "visuals_explain_mechanism": true,
+        "author_perspective_separated": true
+      },
+      "what_changes_the_assessment": [
+        "Eine amtliche Bestätigung eines Ausfalls der Stromversorgung würde den Wirkungsbefund deutlich verschärfen.",
+        "Ein belastbar bestätigter Zusammenhang mit weiteren Vorfällen würde die Systemrelevanz erhöhen.",
+        "Konkrete Angaben zu zusätzlichen Schutzmaßnahmen oder Ressourcenverschiebungen würden den zweiten Ordnungs-Effekt besser belegen."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Weitere Sprengvorrichtungen nahe Stromtrassen: Warum der Fund mehr ist als eine Polizeimeldung",
+        "recommended_summary": "Neun weitere Sprengvorrichtungen wurden in der Oberlausitz gefunden. Die Stromversorgung blieb laut Bericht stabil. Entscheidend ist die systemische Frage nach Schutz, Resilienz und staatlicher Reaktionsfähigkeit.",
+        "recommended_meta_description": "Behörden melden neun weitere Sprengvorrichtungen an Stromtrassen in Sachsen. Die Analyse fragt nach Resilienz, Sicherheit und staatlicher Schutzfähigkeit."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Weitere Sprengvorrichtung nahe Stromtrassen gefunden",
+          "url": "https://www.mdr.de/nachrichten/sachsen/news-sabotage-umspann,sprengsaetze-oberlausitz-100.html",
+          "published_at": "2026-09-07T09:34:25.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Sabotageversuche - Weitere Sprengvorrichtungen in Sachsen gefunden",
+          "url": "https://www.deutschlandfunk.de/weitere-sprengvorrichtungen-in-sachsen-gefunden-100.html",
+          "published_at": "2026-09-07T21:33:15.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Sabotageversuche an Stromversorgung: Weitere Sprengvorrichtungen in Sachsen gefunden",
+          "url": "https://www.stern.de/news/sabotageversuche-an-stromversorgung--weitere-sprengvorrichtungen-in-sachsen-gefunden-38214880.html",
+          "published_at": "2026-09-07T08:26:25.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "9095531522b73a05a750d5d6976adf40ca3d54dc470a93b13ca8a596e7d239cd",
+          "registry_source_id": "mdr-nachrichten",
+          "publisher_id": "mdr",
+          "publisher": "MDR",
+          "title": "Sabotageverdacht in der Nähe von Bautzen",
+          "url": "https://www.mdr.de/nachrichten/sachsen/anschlag-sachsen-bautzen-strom-umspannwerk,video-akt-1042.html",
+          "published_at": "2026-09-04T18:51:15.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-07T22:09:44.497Z",
+          "source_fingerprint": "1f7a45328266d4d80707aa786cf916dd09fe0662a4c47902551be8f631bcb21a",
+          "title": "Weitere Sprengvorrichtungen nahe Stromtrassen: Warum der Fund mehr ist als eine Polizeimeldung",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Neun weitere Sprengvorrichtungen wurden in der Oberlausitz gefunden und unschädlich gemacht.",
+              "type": "fact",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die genaue Täterschaft bleibt offen.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Insgesamt werden 21 selbst hergestellte Sprengvorrichtungen im Bereich der Stromtrassen südlich des Umspannwerks Graustein genannt.",
+              "type": "fact",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Zahl stammt aus dem berichteten Behördenkontext; keine unabhängige Primärquelle im Material.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Der Polizeieinsatz vor Ort dauerte von Freitag bis Sonntag und ist beendet.",
+              "type": "observation",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Keine Angabe zu weiteren Nachsicherungen im Material.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Die Vorrichtungen sollten nach Behördenangaben Kurzschlüsse und Schäden an der Strominfrastruktur verursachen.",
+              "type": "fact",
+              "source_ids": [
+                "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Aussage ist behördlich attribuiert und im Material nur über einen journalistischen Bericht zugänglich.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Es liegt keine in den Quellen belegte Unterbrechung der Stromversorgung vor.",
+              "type": "observation",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6",
+                "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+              ],
+              "evidence_level": "high",
+              "data_status": "inferred",
+              "uncertainty": "Die Quellen nennen ausdrücklich, dass die Versorgung aufrechterhalten worden sei; daraus folgt kein Ausfall.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Mehr Funde an kritischer Infrastruktur erhöhen plausibel Sicherungs- und Ermittlungsaufwand.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Plausibler Wirkpfad, aber in den Quellen nicht als konkrete Ressourcenerhöhung quantifiziert.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Die Meldung kann das Sicherheitsgefühl in betroffenen Regionen belasten, ohne dass dies bereits als eingetretene Wirkung auf die Versorgung belegt wäre.",
+              "type": "impact_risk",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Kommunikatives Resonanzpotenzial, keine belegte Zustandsänderung.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Frühes Finden und Unsachlichmachen der Vorrichtungen stärkt die Resilienz der Versorgung.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Resilienz wird hier aus dem beschriebenen Schutz- und Reaktionsablauf abgeleitet.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Ein abschließend belegter Zusammenhang zu früheren Sabotagefällen ist im gelieferten Material nicht vorhanden.",
+              "type": "fact",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6",
+                "3b36df973f7b46b39f6f9667f4a7e8170279c048cb62339329ed3ec214479fd0"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Berichte erwähnen Sabotageversuche als Kontext, aber keine endgültige Zurechnung.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Die Meldung hat einen relevanten Sicherheits- und Infrastrukturrahmen, ist aber keine fertige politische oder gesellschaftliche Gesamtbewertung.",
+              "type": "woek_definition",
+              "source_ids": [
+                "a48749669c4463e4b9cb592f43b1759dfaa87340ba62a7754ea08cc8f6ef1501",
+                "b8683ddb51fc963af0628a77c820bbdd08f810f61d12bbf941faa4f513a71ab6"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische Einordnung, kein Ereignisfakt.",
+              "date": "2026-09-07"
+            }
+          ]
+        }
+      ]
     }
   ],
   "retry_state": {
@@ -20479,6 +21149,27 @@
         "EDITORIAL_ARTICLE_LENGTH"
       ],
       "reason": "EDITORIAL_QUALITY:EDITORIAL_SEO_LENGTH,EDITORIAL_ARTICLE_LENGTH"
+    },
+    "wt-1c2c187d0b858b7c": {
+      "fingerprint": "1fb3d62e28487277e32caff82efe2522cea1c8dd8c40697b1be02c774c4c3013",
+      "method_version": "1.0",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-07T22:09:44.497Z",
+      "next_attempt_at": "2026-09-07T22:24:44.497Z",
+      "quality_errors": [
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_SELF_FRAME_FAILED"
+      ],
+      "reason": "AI_PROVIDER_OUTPUT_INVALID"
+    },
+    "wt-6c26e428b894e714": {
+      "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
+      "method_version": "1.0",
+      "attempts": 0,
+      "last_attempt_at": "2026-09-07T22:09:44.497Z",
+      "next_attempt_at": "2026-09-07T22:24:44.497Z",
+      "quality_errors": [],
+      "reason": "BATCH_API_BATCH_CAPACITY"
     }
   }
 }
