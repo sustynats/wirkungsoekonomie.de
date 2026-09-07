@@ -460,7 +460,7 @@
     }
   ],
   "regional_coverage": {
-    "checked_at": "2026-09-07T00:21:45.238Z",
+    "checked_at": "2026-09-07T00:36:20.608Z",
     "required_states": 16,
     "configured_states": 15,
     "healthy_states": 15,
@@ -1749,7 +1749,7 @@
       "observation_status": "measurable",
       "review_required": false,
       "review_reasons": [],
-      "source_utility_score": 98.9,
+      "source_utility_score": 100,
       "metrics": {
         "items_seen": 1520,
         "items_local_rejected": 0,
@@ -2458,7 +2458,7 @@
         "items_seen": 1795,
         "items_local_rejected": 39,
         "items_duplicate": 1410,
-        "items_existing_story": 36,
+        "items_existing_story": 38,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 9,
         "items_published": 0,
@@ -2543,7 +2543,7 @@
         "items_seen": 1520,
         "items_local_rejected": 407,
         "items_duplicate": 811,
-        "items_existing_story": 99,
+        "items_existing_story": 100,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 121,
         "items_published": 6,
@@ -2763,7 +2763,7 @@
         "items_seen": 0,
         "items_local_rejected": 131,
         "items_duplicate": 489,
-        "items_existing_story": 76,
+        "items_existing_story": 77,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 43,
         "items_published": 3,
@@ -2895,7 +2895,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 55.5,
+      "source_utility_score": 55,
       "metrics": {
         "items_seen": 140,
         "items_local_rejected": 0,
@@ -2911,7 +2911,7 @@
         "ai_input_tokens": 12405,
         "ai_output_tokens": 2165,
         "estimated_ai_cost": 0.016868,
-        "fetch_failures": 1,
+        "fetch_failures": 2,
         "parse_failures": 0
       }
     },
@@ -3184,7 +3184,7 @@
         "items_seen": 3665,
         "items_local_rejected": 154,
         "items_duplicate": 2955,
-        "items_existing_story": 67,
+        "items_existing_story": 68,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 62,
         "items_published": 5,
