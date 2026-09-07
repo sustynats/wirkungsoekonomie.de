@@ -3,12 +3,15 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { editorialSourceRef, editorialAnalysisValidationErrors, editorialResearchSourceErrors, editorialAnalysisAssessment, withEditorialResearch } from "./editorial-analysis.mjs";
+import { editorialContentSnapshot } from "./editorial-judgment.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const hash = value => crypto.createHash("sha256").update(value).digest("hex");
 export function prepareEditorialReview(packet, story, previous = null, now = new Date().toISOString()) {
   if (!story?.published || story.listed === false || story.source_integrity?.status !== "verified") throw new Error("REVIEW_ORIGIN_NOT_VERIFIED");
-  if (packet.story_id !== story.story_id || packet.analysis_variant !== "systemic" || packet.editorial_mode !== "commissioned_review") throw new Error("REVIEW_SCOPE_INVALID");
+  const validFormat = packet.analysis_variant === "systemic" || (packet.analysis_variant === "standard" && packet.editorial_genre === "commentary");
+  if (packet.story_id !== story.story_id || !validFormat || packet.editorial_mode !== "commissioned_review") throw new Error("REVIEW_SCOPE_INVALID");
+  if (previous && (previous.story_id !== story.story_id || previous.slug !== packet.slug)) throw new Error("REVIEW_PREVIOUS_SCOPE_MISMATCH");
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(packet.slug)) throw new Error("REVIEW_SLUG_INVALID");
   const fingerprint = hash(JSON.stringify(packet));
   if (previous?.review_fingerprint === fingerprint) return { record: previous, changed: false };
@@ -47,7 +50,7 @@ export function prepareEditorialReview(packet, story, previous = null, now = new
     evidence_gate: evidenceGate, published_at: previous?.published_at || now, updated_at: now, version,
     monitoring: { ...analysis.monitoring, checked_at: checkedAt },
     self_frame_check: { passed: true, issues: [], recommended_title: analysis.title, recommended_summary: analysis.teaser, recommended_meta_description: analysis.seo_description },
-    versions: [...(previous?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, change_note: packet.revision_note || (version === 1 ? "Erstveröffentlichung: Ex-ante-Szenario mit datierter Quellenprüfung, Machtkarte und Beobachtungspunkten." : "Quellengebundene Fortschreibung der Sonderanalyse."), provider: null, model: null, claim_ledger: analysis.claim_ledger, ...(previous ? { previous_content: { title: previous.title, subtitle: previous.subtitle, teaser: previous.teaser, seo_description: previous.seo_description, sections: previous.sections, claim_ledger: previous.claim_ledger, source_snapshot: previous.source_snapshot, monitoring: previous.monitoring, subject_dimensions: previous.subject_dimensions, direction_finding: previous.direction_finding, author_perspective: previous.author_perspective, executive_finding: previous.executive_finding, navigation_groups: previous.navigation_groups, editorial_rules_version: previous.editorial_rules_version } } : {}) }],
+    versions: [...(previous?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, change_note: packet.revision_note || (version === 1 ? "Erstveröffentlichung: Ex-ante-Szenario mit datierter Quellenprüfung, Machtkarte und Beobachtungspunkten." : "Quellengebundene Fortschreibung der Analyse."), provider: null, model: null, claim_ledger: analysis.claim_ledger, ...(previous ? { previous_content: editorialContentSnapshot(previous) } : {}) }],
   };
   const readingText = [...record.sections.flatMap(section => [...section.paragraphs, ...(section.visual?.items || []).map(item => `${item.title} ${item.text} ${item.condition || ""}`)]), record.direction_finding, record.executive_finding || "", ...(record.author_perspective?.paragraphs || [])].join(" ");
   record.reading_time_minutes = Math.ceil(readingText.split(/\s+/).filter(Boolean).length / 210);
