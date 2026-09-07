@@ -58,7 +58,7 @@ export async function backfillMediaImpact({
   const usage = read(usageFile);
   const state = read(stateFile);
   const month = now.slice(0, 7);
-  const budget = newsBudget(state.budget_fx, now, Number(process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR || 25));
+  const budget = newsBudget(state.budget_fx, now, process.env.WOEK_NEWS_MONTHLY_AI_BUDGET_EUR);
   let spend = monthlyUsage(usage, month);
   const reviewed = store.stories.filter((story) => story.published && story.listed !== false && story.analysis).map((story) => ({ story, trigger: mediaTriggerForAnalysis(story.analysis, story) }));
   const obsolete = reviewed.filter(({ story, trigger }) => !trigger.relevant && story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_impact?.relevant);

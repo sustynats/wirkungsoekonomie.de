@@ -91,7 +91,7 @@ jobs:
       - name: Import, analyze and build
         if: steps.slot.outputs.should_run == 'true'
         env:
-          WOEK_NEWS_MONTHLY_AI_BUDGET_EUR: "25"
+          # Finite, dated authorization is enforced in scripts/news/budget.mjs.
           WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
           WOEK_NEWS_VISUAL_API_URL: "https://130.162.217.58.sslip.io/api/news-title-image"
@@ -131,7 +131,7 @@ jobs:
         id: media_impact
         if: steps.slot.outputs.should_run == 'true' && inputs.media_impact_backfill == true
         env:
-          WOEK_NEWS_MONTHLY_AI_BUDGET_EUR: "25"
+          # Uses the same dated authorization as the news worker.
           WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
           MEDIA_IMPACT_LIMIT: ${{ inputs.media_impact_limit }}
@@ -147,7 +147,7 @@ jobs:
         id: editorial
         if: steps.slot.outputs.should_run == 'true'
         env:
-          WOEK_NEWS_MONTHLY_AI_BUDGET_EUR: "25"
+          # Uses the same dated authorization as the news worker.
           WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
           EDITORIAL_ANALYSIS_LIMIT: ${{ inputs.editorial_analysis_limit || 6 }}
