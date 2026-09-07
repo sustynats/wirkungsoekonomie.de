@@ -3,6 +3,712 @@
   "updated_at": "2026-09-07T15:08:51.209Z",
   "stories": [
     {
+      "story_id": "wt-eb6e7bfa7e906259",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-eb6e7bfa7e906259-c0e38185813aa1af-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-eb6e7bfa7e906259-1f0d841996b86828-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-eb6e7bfa7e906259-7f1ddba1ee6c8933-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "folgen-des-hackerangriffs-bsi-warnt-nach-daten-leak-vor-erhohter-cyber-bedrohung-906259",
+      "title": "Berlin nach Daten-Leak: BSI warnt vor Phishing",
+      "source_summary": "Nach einem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen und empfiehlt Betroffenen besondere Wachsamkeit. In der Berichterstattung wird der Vorfall zudem mit den anstehenden Wahlen verknüpft und als möglicher Anlass für Befürchtungen beschrieben.\n\nEine weitere Meldung nennt 5,8 Terabyte veröffentlichter Daten der Berliner Verwaltung im Darknet seit Freitag. Zudem äußert ein IT-Experte den Vorwurf grober Fahrlässigkeit und verweist auf lange bekannte Sicherheitslücken. Die Quellenlage bleibt vorerst auf diese berichteten Angaben und Zitate begrenzt.",
+      "summary": "Das BSI warnt nach einem Berliner Daten-Leak vor Phishing und mehr Wachsamkeit. Berichtet wird außerdem von 5,8 Terabyte veröffentlichten Verwaltungsdaten und möglichen Wahlbezügen.",
+      "detail_summary": "Gesichert belegt ist zunächst nur, dass nach einem Daten-Leak in Berlin eine Warnung vor gezielten Phishing-Angriffen verbreitet wird und Betroffene aufgerufen sind, besonders wachsam zu sein. Eine zweite Meldung nennt zusätzlich 5,8 Terabyte veröffentlichter Daten der Berliner Verwaltung im Darknet seit Freitag. Für die Nachricht relevant ist das, weil ein solcher Leak die Informationslage und die digitale Angriffsfläche von Verwaltung und Betroffenen verändert. Ein möglicher Wirkpfad führt über Phishing, Nachahmungsangriffe und Vertrauensverlust in die Sicherheit öffentlicher IT. Als Folge kommen zusätzliche Schutzmaßnahmen, Prüfungen oder Benachrichtigungen in Betracht; belastbar belegt sind sie hier aber noch nicht. Die Evidenz bleibt begrenzt, weil die vorliegenden Texte vor allem wiedergeben und nur teilweise unabhängige Bestätigung liefern.",
+      "why_relevant": "Der Vorfall betrifft die digitale Sicherheit öffentlicher Verwaltung und kann die Schutzmaßnahmen, Informationslagen und das Vertrauen von Betroffenen beeinflussen.",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie",
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Betroffenheit von Verwaltungsdaten und Phishing-Risiken für Personen und Stellen ist unmittelbar gegeben."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der mögliche Bezug zu Wahlen und die Sicherheit öffentlicher Verwaltung berühren demokratische Korrekturfähigkeit."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Datenmenge",
+            "value": "5,8",
+            "unit": "Terabyte",
+            "context": "In einer Meldung genannte Menge der veröffentlichten Verwaltungsdaten",
+            "claim_id": "wt-eb6e7bfa7e906259-v1-claim-2"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "staat",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Ein Daten-Leak mit BSI-Warnung vor Phishing kann Vertrauen, Schutzverhalten und Verwaltungsabläufe beeinflussen; die Kopplung an Wahlen erhöht den Resonanzraum, ist aber nur als Kommunikationswirkung belegt.",
+        "factual_core": "Nach einem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen und rät Betroffenen zu besonderer Wachsamkeit. Eine Quelle nennt zudem 5,8 Terabyte veröffentlichter Daten der Berliner Verwaltung im Darknet seit Freitag. In der Berichterstattung wird der Vorgang auch mit den anstehenden Wahlen verknüpft.",
+        "epistemic_status": {
+          "confirmed": [
+            "Es wird nach einem Berliner Daten-Leak vor gezielten Phishing-Angriffen gewarnt.",
+            "Betroffene sollen besonders wachsam sein.",
+            "Eine Quelle nennt 5,8 Terabyte veröffentlichter Verwaltungsdaten im Darknet seit Freitag."
+          ],
+          "actor_claims": [
+            "Ein IT-Experte wirft Berlin grobe Fahrlässigkeit vor und verweist auf lange bekannte Sicherheitslücken.",
+            "In der Berichterstattung gibt es Befürchtungen mit Blick auf die anstehenden Wahlen."
+          ],
+          "open": [
+            "Wie viele Betroffene konkret betroffen sind, bleibt offen.",
+            "Ob es بالفعل zu erfolgreichen Folgeangriffen kam, ist hier nicht belegt.",
+            "Die technische und organisatorische Ursache des Leaks bleibt in den vorliegenden Quellen offen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "Berichterstattung / BSI-Warnung in den Quellen",
+          "speaker": "BSI; zusätzlich IT-Experte Manuel Atug in einer zweiten Meldung",
+          "original_term": "Bedrohung",
+          "usage_type": "paraphrase",
+          "placement": [
+            "headline",
+            "body"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Bedrohung",
+          "origin_in_story": "Berichterstattung / BSI-Warnung in den Quellen",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Bedrohung",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Der Leak wird als akute Sicherheitslage beschrieben, nicht nur als technisches Ereignis.",
+          "implied_cause": "Das veröffentlichte Datenmaterial und mögliche bekannte Sicherheitslücken werden als Auslöser für Folgeangriffe und Vertrauensverlust gerahmt.",
+          "implied_responsibility": "Beim BSI ist keine Verantwortung behauptet; in der Berichterstattung wird Berlin durch die Expertenaussage als verantwortliche Stelle mitprüfbar gemacht.",
+          "implied_threat": "Phishing, Nachahmungsangriffe, zusätzlicher Schutzaufwand und möglicher Vertrauensschaden in öffentliche IT.",
+          "implied_solution_space": "Warnungen, Wachsamkeit, Prüfungen, Schutzmaßnahmen und Benachrichtigungen.",
+          "material_omissions": [
+            "Keine belastbare Angabe zu tatsächlichen Folgeangriffen.",
+            "Keine gesicherte Ursache des Leaks in den Quellen.",
+            "Keine quantifizierte Betroffenheit der Bevölkerung oder einzelner Verwaltungsbereiche."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Die Wahlbezüge erscheinen als mediale Einordnung, nicht als belegt kausale Folge des Leaks."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Öffentliche Debatte über IT-Sicherheit, Verwaltungsschutz, Datenverantwortung und Wahlumfeld.",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "low",
+          "trust_effect_potential": "medium",
+          "discourse_effect_potential": "Kann Wachsamkeit erhöhen, aber auch Unsicherheit und Misstrauen gegenüber digitaler Verwaltung verstärken."
+        },
+        "impact_path": {
+          "first_order": "Warnung führt dazu, dass Betroffene Nachrichten, Zugänge und Konten genauer prüfen.",
+          "second_order": "Verwaltung und Öffentlichkeit reagieren mit mehr Schutzmaßnahmen, Kommunikation und möglicherweise mehr Prüf- und Meldeaufwand.",
+          "third_order": "Wenn der Vorfall als Beispiel für anhaltende Unsicherheit erinnert wird, kann das Vertrauen in digitale Verwaltungsprozesse und deren Krisenfestigkeit sinken; zugleich können strengere Sicherheitsroutinen gefördert werden."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "BSI-Warnung vor gezielten Phishing-Angriffen nach Berliner Daten-Leak. Hinweis auf besondere Wachsamkeit für Betroffene. Nennung von 5,8 Terabyte veröffentlichter Daten in einer Quelle.",
+          "what_is_inferred": "Ein größerer Leak kann die Angriffsfläche und den Schutzaufwand erhöhen. Wiederholte Berichte über Sicherheitslücken können das Misstrauen in öffentliche IT stärken.",
+          "what_is_open": "Keine Primärquelle zum Leak selbst in den gelieferten Daten. Keine belastbare Evidenz für tatsächlich eingetretene Folgeangriffe oder Verhaltensänderungen. Agentur- oder Abdrucknähe begrenzt die Unabhängigkeit der Bestätigung.",
+          "facts": [
+            "BSI-Warnung vor gezielten Phishing-Angriffen nach Berliner Daten-Leak.",
+            "Hinweis auf besondere Wachsamkeit für Betroffene.",
+            "Nennung von 5,8 Terabyte veröffentlichter Daten in einer Quelle."
+          ],
+          "observations": [
+            "Die Quellenlage besteht vor allem aus journalistischen Darstellungen und Zitaten.",
+            "Der Wahlbezug ist in der Berichterstattung vorhanden, aber nicht als eingetretener Effekt belegt."
+          ],
+          "inferences": [
+            "Ein größerer Leak kann die Angriffsfläche und den Schutzaufwand erhöhen.",
+            "Wiederholte Berichte über Sicherheitslücken können das Misstrauen in öffentliche IT stärken."
+          ],
+          "impact_potentials": [
+            "Mehr Phishing-Versuche gegen Betroffene.",
+            "Mehr Sperren, Passwortwechsel und Prüfungen.",
+            "Kommunikativer Vertrauensverlust gegenüber der Verwaltung."
+          ],
+          "impact_risks": [
+            "Fehlende oder verspätete Information kann Folgeprobleme verschärfen.",
+            "Mediale Kopplung an Wahlen kann die Bedrohungswahrnehmung verstärken, ohne die Ursache zu belegen."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine Primärquelle zum Leak selbst in den gelieferten Daten.",
+            "Keine belastbare Evidenz für tatsächlich eingetretene Folgeangriffe oder Verhaltensänderungen.",
+            "Agentur- oder Abdrucknähe begrenzt die Unabhängigkeit der Bestätigung."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Ein konkreter Auslöser steht im Mittelpunkt: Nach einem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen. Das ist erst einmal eine Warnung, kein Beweis dafür, dass solche Angriffe schon in großem Umfang passiert sind. Die Berichterstattung nennt außerdem 5,8 Terabyte veröffentlichter Daten und verbindet den Fall mit den anstehenden Wahlen. Das ist für den Mediencheck wichtig, weil so aus einem IT-Vorfall schnell ein breiter Sicherheitsrahmen wird. Mögliche Folgen sind mehr Vorsicht bei Betroffenen, mehr Prüfaufwand in der Verwaltung und mehr Misstrauen gegenüber digitaler Sicherheit. Belegt ist hier aber vor allem die Warnung und die Einordnung in den Medien. Ob daraus schon eine echte Veränderung im Verhalten oder in den Abläufen entstanden ist, bleibt offen.",
+        "editorial_assessment": "Ein konkreter Auslöser steht im Mittelpunkt: Nach einem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen. Das ist erst einmal eine Warnung, kein Beweis dafür, dass solche Angriffe schon in großem Umfang passiert sind. Die Berichterstattung nennt außerdem 5,8 Terabyte veröffentlichter Daten und verbindet den Fall mit den anstehenden Wahlen. Das ist für den Mediencheck wichtig, weil so aus einem IT-Vorfall schnell ein breiter Sicherheitsrahmen wird. Mögliche Folgen sind mehr Vorsicht bei Betroffenen, mehr Prüfaufwand in der Verwaltung und mehr Misstrauen gegenüber digitaler Sicherheit. Belegt ist hier aber vor allem die Warnung und die Einordnung in den Medien. Ob daraus schon eine echte Veränderung im Verhalten oder in den Abläufen entstanden ist, bleibt offen.",
+        "fact_first_alternative": "Sachlich zuerst: Nach einem Berliner Daten-Leak warnt das BSI vor Phishing. Wissensstatus: Die Quellen berichten darüber und nennen zusätzlich 5,8 Terabyte veröffentlichter Daten sowie Wahlbezüge; eine tatsächliche Folgewirkung ist nicht belegt. Attribution: Das ist eine BSI-Warnung und eine journalistische Einordnung, kein gesicherter Nachweis eines weiteren Schadens. Frame: Der Begriff ‚erhöhte Cyber-Bedrohung‘ rahmt den Vorfall als Sicherheitslage.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Unsicherer Frame-Einstieg in title"
+          ],
+          "frame_repetition_count": 1,
+          "rewrite_required": true,
+          "recommended_title": "Berlin nach Daten-Leak: BSI warnt vor Phishing",
+          "recommended_summary": "Nach einem Berliner Daten-Leak warnt das BSI vor gezielten Phishing-Angriffen. In den Berichten ist zudem von 5,8 Terabyte veröffentlichter Verwaltungsdaten und von Wahlbezügen die Rede.",
+          "recommended_meta_description": "BSI-Warnung nach Berliner Daten-Leak: Was belegt ist, was offen bleibt und warum die Berichterstattung den Vorfall als Sicherheitsrisiko rahmt."
+        },
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Zwei journalistische Darstellungen stützen die Warnung des BSI; die zusätzliche Angabe zu 5,8 Terabyte stammt aus einer weiteren Berichterstattung. Für eine belastbare Wirkungsaussage reicht das nur für Potenzial, nicht für beobachtete Wirkung."
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T15:08:06.778Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-05T03:00:12.000Z",
+      "last_updated": "2026-09-07T15:08:06.778Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-aaf5027a1c1ce5bf0c81",
+      "case_file": null,
+      "source_published_at": "2026-09-05T03:00:12.000Z",
+      "published_at": "2026-09-05T11:33:01.821Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob die Berliner Stellen weitere betroffene Personen konkret informieren.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Hinweise oder Benachrichtigungen an Betroffene",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0cd32439cc5fa69a",
+          "announced_at": "2026-09-05T03:00:12.000Z",
+          "follow_up_date": "2026-09-12T11:33:01.821Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/folgen-des-hackerangriffs--bsi-warnt-nach-daten-leak-vor-erhoehter-cyber-bedrohung-38210530.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T03:00:12.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-folgen-des-hackerangriffs-16020663.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T03:03:16.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/nach-hackerangriff--it-experte-wirft-berlin--grobe-fahrlaessigkeit--vor-38210530.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T11:12:32.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-60f4e4d7d43fad99",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-fec3442e4a108f5e-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-7cdca7339dded1c3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-3b1c611fe9d14d31-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-caff39847e67064e-source.png"
+        }
+      },
+      "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
+      "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
+      "source_summary": "Die beiden gelieferten Berichte beschreiben eine laufende Fahndung nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. ZDFheute meldet, das Fahrzeug des 48-Jährigen sei in Niederzier gestürmt worden; in seiner Wohnung in Gevelsberg seien sprengstoffverdächtige Gegenstände gefunden worden. Außerdem wird berichtet, dass es um Sabotage an mehreren Umspannwerken geht und nach einem Tatverdächtigen gefahndet wird.\n\nIn den Angaben aus der ZDF-Sendung äußert sich Innenminister Reul zu offenen Ermittlungsfragen: geprüft würden ein möglicher linksextremistischer Hintergrund, eine mögliche fremdstaatlich gesteuerte Sabotage sowie Verbindungen zu Vorfällen in Brandenburg. Bundesinnenminister Dobrindt sagt laut Bericht, sehr wahrscheinlich handle es sich um einen Einzeltäter, zugleich sei die Lage noch nicht abschließend geklärt. Der SWR verweist knapp ebenfalls auf die Fahndung nach einem Mann, der sich zu Sabotageakten bekannt habe.",
+      "summary": "Die Polizei fahndet weiter nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Es gibt Hinweise auf sprengstoffverdächtige Gegenstände, aber die Ermittlungen sind nach den Quellen weiter offen.",
+      "detail_summary": "Gesichert ist nach den gelieferten Quellen vor allem die laufende Fahndung nach einem Verdächtigen und der Fund sprengstoffverdächtiger Gegenstände in dessen Wohnung. Die Berichte ordnen den Fall in Ermittlungen zu Angriffen auf Umspannwerke und das Stromnetz ein. Innenminister Reul nennt mehrere geprüfte Hypothesen, darunter einen möglichen linksextremistischen oder fremdstaatlichen Hintergrund. Dobrindt spricht zugleich von einem sehr wahrscheinlich handelnden Einzeltäter, betont aber, dass die Beurteilung noch nicht abschließend sei. Die materielle Relevanz liegt in der möglichen Betroffenheit kritischer Infrastruktur und der Frage, ob daraus Schutz-, Ermittlungs- oder Sicherungsmaßnahmen folgen. Offen bleibt, ob die bisherigen Zuschreibungen tragen, ob es weitere Beteiligte gibt und wie die Taten genau zusammenhängen; eine endgültige Einordnung lässt sich aus den Quellen noch nicht ableiten.",
+      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Strominfrastruktur, also einen Zustand mit potenziell breiten Folgen für Versorgungssicherheit, Schutzmaßnahmen und Ermittlungsprioritäten.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Risiken für Versorgungssicherheit und öffentliche Sicherheit betreffen viele Menschen direkt, auch wenn die konkrete Schadenshöhe offen bleibt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in den Quellen nicht belegt; ein indirekter Bezug wäre nur möglich, wenn Schutz- oder Ausfallfolgen eintreten."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Quellen berühren staatliche Schutzfähigkeit, Ermittlungsarbeit und den Umgang mit politisch aufgeladenen Verdachtsmomenten."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "staat",
+          "verbraucherinnen"
+        ],
+        "tendency": {
+          "human": "risiko",
+          "planet": "offen",
+          "democracy": "gemischt"
+        }
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Berichte verbinden eine Fahndung wegen Angriffen auf das Stromnetz mit möglichen Extremismus- und Sabotageannahmen. Das kann die Deutung der offenen Ermittlungen und die Wahrnehmung kritischer Infrastruktur prägen.",
+        "factual_core": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. In seiner Wohnung wurden sprengstoffverdächtige Gegenstände gefunden. Reul nennt als offene Prüfungen einen möglichen linksextremistischen oder fremdstaatlich gesteuerten Hintergrund; Dobrindt spricht von einem sehr wahrscheinlichen Einzeltäter, betont aber den noch nicht abschließenden Stand.",
+        "epistemic_status": {
+          "confirmed": [
+            "laufende Fahndung nach einem Verdächtigen",
+            "Fund sprengstoffverdächtiger Gegenstände in der Wohnung",
+            "offene Ermittlungsprüfungen zu Hintergrund und Zusammenhang der Taten",
+            "Dobrindts Einordnung als sehr wahrscheinlicher Einzeltäter bei zugleich offener Lage"
+          ],
+          "actor_claims": [
+            "Reul prüft einen möglichen linksextremistischen Hintergrund, eine mögliche fremdstaatlich gesteuerte Sabotage und Verbindungen zu Vorfällen in Brandenburg.",
+            "Dobrindt sagt, sehr wahrscheinlich handle es sich um einen Einzeltäter, die Lage sei aber noch nicht abschließend geklärt."
+          ],
+          "open": [
+            "Ob die genannten Hintergründe zutreffen",
+            "ob es weitere Beteiligte gibt",
+            "wie die Vorfälle in Nordrhein-Westfalen und Brandenburg genau zusammenhängen"
+          ]
+        },
+        "attribution": {
+          "frame_source": "ZDFheute / tagesschau",
+          "speaker": "Innenminister Reul; Bundesinnenminister Dobrindt",
+          "original_term": "linksextremistischer",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "linksextremistischer",
+          "origin_in_story": "ZDFheute / tagesschau",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "linksextremistischer",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die offene Ermittlungsfrage wird in einen Extremismus- und Sabotagerahmen gestellt.",
+          "implied_cause": "möglicher politischer Extremismus oder fremdstaatliche Steuerung; beides bleibt laut Quelle ungeklärt",
+          "implied_responsibility": "der mutmaßliche Täter bzw. mögliche weitere Akteure; derzeit nur als Prüfhypothese",
+          "implied_threat": "Gefahr für kritische Infrastruktur und öffentliche Sicherheit",
+          "implied_solution_space": "Ermittlungen, Schutz kritischer Infrastruktur, Prüfung von Hintergründen und Verbindungen",
+          "material_omissions": [
+            "Die Ursachenfrage ist offen.",
+            "Die Quellen belegen keine endgültige Zuordnung zu einem politischen Lager.",
+            "Die Reichweite der tatsächlichen Schäden wird nicht in den gelieferten Angaben ausgeführt."
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "offene sicherheitspolitische und extremismusbezogene Einordnung einer Sabotageermittlung",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "zdfheute-nachrichten",
+              "claim_supported": "Reul prüft möglichen linksextremistischen Hintergrund und fremdstaatliche Sabotage."
+            },
+            {
+              "source": "tagesschau-access",
+              "claim_supported": "Die Fahndung wird als Folge von Sabotageakten am Stromnetz berichtet."
+            }
+          ],
+          "uncertainty": "Die politische Einordnung bleibt in den Quellen ausdrücklich offen und ist keine festgestellte Tatsache."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Sicherheitsdebatte über kritische Infrastruktur, Extremismus und staatliche Abwehrfähigkeit",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "medium",
+          "trust_effect_potential": "Kann Vertrauen in Ermittlungs- und Schutzfähigkeit stützen, aber bei ungeklärten Zuschreibungen auch Spekulationen verstärken.",
+          "discourse_effect_potential": "Der Wortlaut kann die öffentliche Wahrnehmung von Sabotage stärker auf politische Herkunftsdeutungen lenken, obwohl die Ursache noch offen ist."
+        },
+        "impact_path": {
+          "first_order": "Berichterstattung über Fahndung und offene Ermittlungsannahmen verändert die Wahrnehmung des Falls als Sicherheitsereignis.",
+          "second_order": "Die wiederholte Nennung möglicher extremismus- oder fremdstaatlicher Bezüge kann Deutungsrahmen im Diskurs verengen oder zuspitzen.",
+          "third_order": "Bei längerer Wiederholung kann das die Priorisierung von Schutzmaßnahmen und die Debatte über Sicherheitsarchitektur kritischer Infrastruktur beeinflussen."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "laufende Fahndung Fund sprengstoffverdächtiger Gegenstände offene Prüfungen zu Hintergrund und Verbindungen",
+          "what_is_inferred": "Die Formulierung hat kommunikatives Potenzial, weil sie den Fall in einen politischen Bedrohungsrahmen stellt. Es gibt ein mögliches Wirkungsrisiko für Verallgemeinerungen, solange die Zuschreibung ungeklärt ist.",
+          "what_is_open": "Keine belastbare Evidenz für eine beobachtete Kommunikationswirkung im engeren Sinn. Nur journalistische Berichte, keine amtliche Abschlussbewertung. Die Quellen geben keine vollständige Schadens- oder Folgenbilanz.",
+          "facts": [
+            "laufende Fahndung",
+            "Fund sprengstoffverdächtiger Gegenstände",
+            "offene Prüfungen zu Hintergrund und Verbindungen"
+          ],
+          "observations": [
+            "Zwei journalistische Darstellungen berichten übereinstimmend über Fahndung und Sabotagekontext.",
+            "Die politisch geladene Formulierung erscheint in einem offenen Ermittlungszusammenhang."
+          ],
+          "inferences": [
+            "Die Formulierung hat kommunikatives Potenzial, weil sie den Fall in einen politischen Bedrohungsrahmen stellt.",
+            "Es gibt ein mögliches Wirkungsrisiko für Verallgemeinerungen, solange die Zuschreibung ungeklärt ist."
+          ],
+          "impact_potentials": [
+            "mehr Aufmerksamkeit für kritische Infrastruktur",
+            "verstärkte Sicherheits- und Extremismusdebatte",
+            "mögliche Zuspitzung der öffentlichen Deutung"
+          ],
+          "impact_risks": [
+            "Spekulation über politische Motive",
+            "vorschnelle Lagerzuordnung",
+            "Verwechslung offener Hypothesen mit bestätigten Fakten"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine belastbare Evidenz für eine beobachtete Kommunikationswirkung im engeren Sinn.",
+            "Nur journalistische Berichte, keine amtliche Abschlussbewertung.",
+            "Die Quellen geben keine vollständige Schadens- oder Folgenbilanz."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Im Kern geht es um eine Fahndung nach Angriffen auf das Stromnetz. Dazu melden die Berichte auch den Fund sprengstoffverdächtiger Gegenstände in der Wohnung des Verdächtigen. Der heikle Punkt für die Medienwirkung ist die Sprache: Reul nennt einen möglichen linksextremistischen oder fremdstaatlichen Hintergrund, Dobrindt spricht zugleich von einem sehr wahrscheinlichen Einzeltäter, sagt aber, dass die Lage noch offen ist. Genau diese Mischung kann die öffentliche Deutung stark prägen. Sie macht aus einem Fahndungsbericht schnell einen Sicherheits- und Extremismusrahmen. Belegt ist das nicht als endgültige Ursache, sondern als offene Ermittlungsfrage. Darum ist das hier eher ein Wirkungs- und Resonanzpotenzial als ein Befund über tatsächliche Medienwirkung. Die Quellenlage reicht für eine beobachtete Wirkung nicht aus, aber für eine klare Warnung vor vorschneller Verfestigung der Zuschreibungen.",
+        "editorial_assessment": "Im Kern geht es um eine Fahndung nach Angriffen auf das Stromnetz. Dazu melden die Berichte auch den Fund sprengstoffverdächtiger Gegenstände in der Wohnung des Verdächtigen. Der heikle Punkt für die Medienwirkung ist die Sprache: Reul nennt einen möglichen linksextremistischen oder fremdstaatlichen Hintergrund, Dobrindt spricht zugleich von einem sehr wahrscheinlichen Einzeltäter, sagt aber, dass die Lage noch offen ist. Genau diese Mischung kann die öffentliche Deutung stark prägen. Sie macht aus einem Fahndungsbericht schnell einen Sicherheits- und Extremismusrahmen. Belegt ist das nicht als endgültige Ursache, sondern als offene Ermittlungsfrage. Darum ist das hier eher ein Wirkungs- und Resonanzpotenzial als ein Befund über tatsächliche Medienwirkung. Die Quellenlage reicht für eine beobachtete Wirkung nicht aus, aber für eine klare Warnung vor vorschneller Verfestigung der Zuschreibungen.",
+        "fact_first_alternative": "Fahndung nach Verdächtigem und Fund sprengstoffverdächtiger Gegenstände | Wissensstatus: offen, Ermittlungen laufen | Attribution: Reul prüft möglichen linksextremistischen oder fremdstaatlichen Hintergrund, Dobrindt spricht von sehr wahrscheinlichem Einzeltäter | Frame: politisch aufgeladener Sicherheits- und Bedrohungsrahmen",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 1,
+          "rewrite_required": false,
+          "recommended_title": "Fahndung nach Verdächtigem: offene Ermittlungen zu Sabotage am Stromnetz",
+          "recommended_summary": "Polizei fahndet nach Verdächtigem im Zusammenhang mit Sabotage am Stromnetz; mögliche Hintergründe bleiben offen.",
+          "recommended_meta_description": "Offene Fahndung, Fund sprengstoffverdächtiger Gegenstände und politisch geladene Ermittlungsfragen: Was die Berichte belegen und was noch ungeklärt ist."
+        },
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Zwei journalistische Darstellungen stützen den Kernbefund der laufenden Fahndung und des Sabotagekontexts. Sie reichen aber nicht für eine belastbare Aussage über die politische Ursache."
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T14:54:35.121Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-36e98d72ae20",
+        "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
+        "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
+        "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
+        "published_at": "2026-09-06T12:24:05.188Z",
+        "updated_at": "2026-09-06T12:24:05.188Z"
+      },
+      "first_seen": "2026-09-04T15:15:00.000Z",
+      "last_updated": "2026-09-07T14:54:35.121Z",
+      "version": 5,
+      "news_status": "developing",
+      "event_id": "event-b1327260d95e2af32735",
+      "case_file": null,
+      "source_published_at": "2026-09-04T16:49:00.000Z",
+      "published_at": "2026-09-04T17:41:38.182Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ],
+          [
+            "tagesschau-access"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Verdächtige tatsächlich allein gehandelt hat oder weitere Beteiligte identifiziert werden.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeiliche oder staatsanwaltschaftliche Bestätigung zusätzlicher Tatbeteiligter oder deren Ausschluss",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d2799f53d488671a",
+          "announced_at": "2026-09-04T16:49:00.000Z",
+          "follow_up_date": "2026-09-11T17:41:38.182Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Wird der Verdächtige identifiziert oder festgenommen?",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimeldung oder bestätigte Berichte zu Festnahme oder Identität",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8fc4f002a3295d22",
+          "announced_at": "2026-09-04T16:49:00.000Z",
+          "follow_up_date": "2026-09-12T11:34:46.061Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T16:49:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T07:45:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-9964cb1bfc0ad6fe",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9964cb1bfc0ad6fe-adad51bd3e4de561-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9964cb1bfc0ad6fe-fc091fa6c84754fa-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9964cb1bfc0ad6fe-955a09eb13f05026-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-9964cb1bfc0ad6fe-526e14b136833452-source.png"
+        }
+      },
+      "slug": "den-haag-deutschland-verteidigt-waffenexporte-nach-israel-vor-internationalem-gerichtsho-0ad6fe",
+      "title": "Den Haag - Deutschland verteidigt Waffenexporte nach Israel vor Internationalem Gerichtshof",
+      "source_summary": "Vor dem Internationalen Gerichtshof in Den Haag hat Deutschland nach einem Bericht des Deutschlandfunks seine Rüstungsexporte nach Israel verteidigt. Eine deutsche Vertreterin sagte demnach zu Beginn der Anhörung, alle deutschen Rüstungsexporte unterlägen strengen Prüfverfahren, die sogar strikter als internationale Regelungen seien. Geklagt habe Nicaragua. Das mittelamerikanische Land werfe Deutschland Beihilfe zum Völkermord vor und behaupte, die Lieferungen verletzten die Genozid-Konvention, weil Israel die Waffen für Angriffe im Gazastreifen nutze.\n\nDie deutsche Rechtsvertreterin habe die Vorwürfe als haltlos zurückgewiesen und den Internationalen Gerichtshof aufgefordert, Nicaraguas Antrag abzuweisen. Der Bericht nennt keine Entscheidung des Gerichts, sondern beschreibt die laufende Anhörung. Weitere Kernfragen bleiben offen, darunter der genaue Gang des Verfahrens und wie der Gerichtshof die Vorwürfe bewertet.",
+      "summary": "Deutschland hat vor dem Internationalen Gerichtshof seine Waffenexporte nach Israel verteidigt. Das Verfahren ist politisch und rechtlich bedeutsam, die Entscheidung des Gerichts steht aber noch aus.",
+      "detail_summary": "Der Bericht beschreibt eine laufende Anhörung vor dem Internationalen Gerichtshof in Den Haag. Deutschland verteidigt dort seine Rüstungsexporte nach Israel und verweist auf strenge Prüfverfahren; Nicaragua wirft Deutschland Beihilfe zum Völkermord vor. Für die Öffentlichkeit ist das relevant, weil das Verfahren mögliche Folgen für Exportpraxis, rechtliche Bewertung und politische Spielräume haben kann. Ein direkter Wirkpfad läge über die juristische Einordnung hinaus in künftigen Regeln, Prüfmaßstäben oder politischem Druck auf Exportentscheidungen. Eine Wirkung ist damit noch nicht eingetreten, es geht zunächst um ein offenes Verfahren mit unklarer Entscheidungslage. Die Beleglage stützt hier nur den beschriebenen Anhörungskern aus einer einzelnen journalistischen Quelle; das Urteil oder weitere Prozessdetails sind noch nicht belegt.",
+      "why_relevant": "Das Verfahren berührt die rechtliche und politische Rahmung deutscher Rüstungsexporte und damit mögliche Folgen für Regeln, Prüfmaßstäbe und Außenpolitik.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "rationale": "Betroffen sind mögliche Schutz- und Konfliktfragen, aber im Quellstand ist noch keine materielle Folge belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Ein Verfahren vor dem ICJ kann rechtliche Korrekturfähigkeit, staatliche Bindung und öffentliche Kontrolle über Exportpraxis berühren."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T14:51:29.794Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T12:15:59.000Z",
+      "last_updated": "2026-09-07T14:52:04.848Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-5d421c7bbec5e8ecbfc9",
+      "case_file": null,
+      "source_published_at": "2026-09-07T14:33:44.000Z",
+      "published_at": "2026-09-07T14:52:04.848Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/deutschland-verteidigt-waffenexporte-nach-israel-vor-internationalem-gerichtshof-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T14:33:44.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
       "story_id": "wt-d7f00335de9334ae",
       "title_image": {
         "mode": "impact_card",
@@ -2266,7 +2972,7 @@
             "Der eigene Titel übernimmt die technische Ursache prominent, ohne die Zuordnung zur berichteten Polizeiaussage sichtbar zu machen.",
             "Unsicherer Frame-Einstieg in title"
           ],
-          "frame_repetition_count": 1,
+          "frame_repetition_count": 0,
           "rewrite_required": true,
           "recommended_title": "Großbrand zerstört Sonderpostenmarkt in Seelze",
           "recommended_summary": "",
@@ -2278,11 +2984,11 @@
         }
       },
       "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-06T11:34:59.053Z",
+      "media_checked_at": "2026-09-07T14:54:35.121Z",
       "editorial_analysis": null,
       "first_seen": "2026-09-06T10:03:10.000Z",
       "last_updated": "2026-09-06T11:34:59.053Z",
-      "version": 2,
+      "version": 3,
       "news_status": "developing",
       "event_id": "event-cddc4a44512169719de0",
       "case_file": null,
@@ -3789,199 +4495,6 @@
       ]
     },
     {
-      "story_id": "wt-60f4e4d7d43fad99",
-      "title_image": {
-        "mode": "editorial",
-        "label": "KI-generiertes Symbolbild",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-fec3442e4a108f5e-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-7cdca7339dded1c3-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-3b1c611fe9d14d31-square.png",
-          "width": 1080,
-          "height": 1080
-        },
-        "background": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-60f4e4d7d43fad99-caff39847e67064e-source.png"
-        }
-      },
-      "slug": "angriffe-aufs-stromnetz-pressekonferenz-mit-dobrindt-und-reul-3fad99",
-      "title": "Angriffe aufs Stromnetz: Pressekonferenz mit Dobrindt und Reul",
-      "source_summary": "Die beiden gelieferten Berichte beschreiben eine laufende Fahndung nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. ZDFheute meldet, das Fahrzeug des 48-Jährigen sei in Niederzier gestürmt worden; in seiner Wohnung in Gevelsberg seien sprengstoffverdächtige Gegenstände gefunden worden. Außerdem wird berichtet, dass es um Sabotage an mehreren Umspannwerken geht und nach einem Tatverdächtigen gefahndet wird.\n\nIn den Angaben aus der ZDF-Sendung äußert sich Innenminister Reul zu offenen Ermittlungsfragen: geprüft würden ein möglicher linksextremistischer Hintergrund, eine mögliche fremdstaatlich gesteuerte Sabotage sowie Verbindungen zu Vorfällen in Brandenburg. Bundesinnenminister Dobrindt sagt laut Bericht, sehr wahrscheinlich handle es sich um einen Einzeltäter, zugleich sei die Lage noch nicht abschließend geklärt. Der SWR verweist knapp ebenfalls auf die Fahndung nach einem Mann, der sich zu Sabotageakten bekannt habe.",
-      "summary": "Die Polizei fahndet weiter nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Es gibt Hinweise auf sprengstoffverdächtige Gegenstände, aber die Ermittlungen sind nach den Quellen weiter offen.",
-      "detail_summary": "Gesichert ist nach den gelieferten Quellen vor allem die laufende Fahndung nach einem Verdächtigen und der Fund sprengstoffverdächtiger Gegenstände in dessen Wohnung. Die Berichte ordnen den Fall in Ermittlungen zu Angriffen auf Umspannwerke und das Stromnetz ein. Innenminister Reul nennt mehrere geprüfte Hypothesen, darunter einen möglichen linksextremistischen oder fremdstaatlichen Hintergrund. Dobrindt spricht zugleich von einem sehr wahrscheinlich handelnden Einzeltäter, betont aber, dass die Beurteilung noch nicht abschließend sei. Die materielle Relevanz liegt in der möglichen Betroffenheit kritischer Infrastruktur und der Frage, ob daraus Schutz-, Ermittlungs- oder Sicherungsmaßnahmen folgen. Offen bleibt, ob die bisherigen Zuschreibungen tragen, ob es weitere Beteiligte gibt und wie die Taten genau zusammenhängen; eine endgültige Einordnung lässt sich aus den Quellen noch nicht ableiten.",
-      "why_relevant": "Die Meldung betrifft mögliche Angriffe auf kritische Strominfrastruktur, also einen Zustand mit potenziell breiten Folgen für Versorgungssicherheit, Schutzmaßnahmen und Ermittlungsprioritäten.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Risiken für Versorgungssicherheit und öffentliche Sicherheit betreffen viele Menschen direkt, auch wenn die konkrete Schadenshöhe offen bleibt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Umweltbezug ist in den Quellen nicht belegt; ein indirekter Bezug wäre nur möglich, wenn Schutz- oder Ausfallfolgen eintreten."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Quellen berühren staatliche Schutzfähigkeit, Ermittlungsarbeit und den Umgang mit politisch aufgeladenen Verdachtsmomenten."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "unternehmen",
-          "beschaeftigte",
-          "staat",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "medium",
-        "reason": "Der Bericht rahmt die Lage mit Bedrohungsbegriffen und politischen Zuschreibungen, während die Tatsachenlage noch offen ist.",
-        "factual_core": "Es geht um eine Fahndung nach einem Verdächtigen nach Angriffen auf das Stromnetz; im Umfeld wurden sprengstoffverdächtige Gegenstände gefunden.",
-        "speaker_statement": {
-          "present": true,
-          "speaker": "Herbert Reul und Alexander Dobrindt",
-          "statement": "Es werde unter anderem ein möglicher linksextremistischer Hintergrund geprüft; sehr wahrscheinlich handele es sich um einen Einzeltäter.",
-          "status": "claim"
-        },
-        "framing": {
-          "detected": true,
-          "term": "Bedrohungslage",
-          "origin_in_story": "Akteur",
-          "media_usage": "body",
-          "attribution_quality": "eindeutig attribuiert",
-          "factual_status": "Aussage eines Akteurs",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "resonance": {
-          "resonance_space": "Sicherheits- und Innenpolitik",
-          "resonance_risk": "Vorläufige Verdachtslagen können als bestätigte Lage missverstanden werden.",
-          "normalization_potential": "Wiederholte Sicherheitsrahmung kann Bedrohungsdeutungen im Themenfeld verstetigen.",
-          "repetition_effect": "Mehrfaches Nebeneinander von Fahndung, Sabotage und Extremismusbegriffen erhöht Wiedererkennung.",
-          "trust_effect": "Die Mischung aus offenen Ermittlungen und starken Zuschreibungen verlangt saubere Attribution.",
-          "polarization_potential": "Mittel, wenn politische Hintergründe vorschnell verfestigt werden.",
-          "discourse_effect": "Verschiebt die Debatte auf Gefährdung, Verantwortung und Schutz kritischer Infrastruktur."
-        },
-        "impact_path": {
-          "first_order": "Aufmerksamkeit für Sicherheitslage und Ermittlungen.",
-          "second_order": "Druck auf Behörden und Betreiber, Schutzmaßnahmen zu verstärken.",
-          "third_order": "Verfestigte politische Deutungen möglicher Sabotageformen."
-        },
-        "evidence": {
-          "status": "medium",
-          "what_is_known": "Die Quellen berichten über Fahndung, Fund und politische Einordnung.",
-          "what_is_inferred": "Dass die Bedrohungsrahmung den Diskurs über Sicherheits- und Extremismusfragen prägen kann.",
-          "what_is_open": "Ob die Zuschreibungen zur Motivlage tragen und welche Folgen tatsächlich eintreten."
-        },
-        "editorial_assessment": "Konkrete und sauber zu attributierende Sicherheitsberichterstattung mit erkennbarer Bedrohungsrahmung, aber noch offener Beweislage.",
-        "fact_first_reframe": {
-          "title": "Polizei fahndet nach Verdächtigem nach Stromnetz-Angriffen",
-          "source_summary": "Die Quellen berichten über eine laufende Fahndung nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Im Umfeld wurden sprengstoffverdächtige Gegenstände gefunden, während die Ermittlungen zu Motiv und Beteiligten offen bleiben.",
-          "summary": "Die Polizei sucht weiter nach einem Verdächtigen nach Angriffen auf das Stromnetz. Im Umfeld des Falls wurden verdächtige Gegenstände gefunden, die Ermittlungen laufen weiter.",
-          "detail_summary": "Die Quellen berichten über eine laufende Fahndung im Zusammenhang mit Angriffen auf das Stromnetz. Im Umfeld des Verdächtigen wurden sprengstoffverdächtige Gegenstände gefunden, zugleich sind Motiv und Beteiligte weiter ungeklärt. Die Meldung ist relevant, weil kritische Infrastruktur und öffentliche Sicherheit betroffen sind. Der Wirkpfad führt über Ermittlungen, Schutzmaßnahmen und politische Einordnung. Mögliche Folge sind verstärkte Sicherheitsvorkehrungen, doch der Umfang bleibt offen. Die Beleglage stützt den Kern, nicht aber eine endgültige Täter- oder Motivfestlegung."
-        },
-        "self_frame_warning": false,
-        "source_comparison": {
-          "sufficient_basis": false,
-          "finding": ""
-        }
-      },
-      "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T11:31:43.777Z",
-      "editorial_analysis": {
-        "analysis_id": "woek-analysis-36e98d72ae20",
-        "slug": "angriffe-aufs-stromnetz-warum-die-fahndung-weit-uber-den-einzelfall-hinaus-wirkt-36e98d",
-        "title": "Angriffe aufs Stromnetz: Warum die Fahndung weit über den Einzelfall hinaus wirkt",
-        "teaser": "Die Polizei fahndet nach einem Verdächtigen im Zusammenhang mit Angriffen auf das Stromnetz. Für die Wirkungsanalyse zählt nicht nur die Tat, sondern auch, wie sie Schutz, Prioritäten und öffentliche Wahrnehmung verändert.",
-        "published_at": "2026-09-06T12:24:05.188Z",
-        "updated_at": "2026-09-06T12:24:05.188Z"
-      },
-      "first_seen": "2026-09-04T15:15:00.000Z",
-      "last_updated": "2026-09-05T12:28:41.779Z",
-      "version": 4,
-      "news_status": "developing",
-      "event_id": "event-b1327260d95e2af32735",
-      "case_file": null,
-      "source_published_at": "2026-09-04T16:49:00.000Z",
-      "published_at": "2026-09-04T17:41:38.182Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "tagesschau-access"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob der Verdächtige tatsächlich allein gehandelt hat oder weitere Beteiligte identifiziert werden.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeiliche oder staatsanwaltschaftliche Bestätigung zusätzlicher Tatbeteiligter oder deren Ausschluss",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-d2799f53d488671a",
-          "announced_at": "2026-09-04T16:49:00.000Z",
-          "follow_up_date": "2026-09-11T17:41:38.182Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Wird der Verdächtige identifiziert oder festgenommen?",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimeldung oder bestätigte Berichte zu Festnahme oder Identität",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-8fc4f002a3295d22",
-          "announced_at": "2026-09-04T16:49:00.000Z",
-          "follow_up_date": "2026-09-12T11:34:46.061Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/stromnetz-angriffe-nrw-brandenburg-dobrindt-reul-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T16:49:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/inland/fahndung-sabotage-stromnetz-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T07:45:01.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-998e73bf202ee8d2",
       "title_image": {
         "mode": "editorial",
@@ -4333,210 +4846,6 @@
           "url": "https://www.euronews.com/2026/09/03/federal-judge-blocks-trumps-new-bid-to-abolish-birthright-citizenship-citing-supreme-court",
           "source_type": "media_rss",
           "published_at": "2026-09-03T04:22:45.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-eb6e7bfa7e906259",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-eb6e7bfa7e906259-c0e38185813aa1af-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-eb6e7bfa7e906259-1f0d841996b86828-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-eb6e7bfa7e906259-7f1ddba1ee6c8933-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "folgen-des-hackerangriffs-bsi-warnt-nach-daten-leak-vor-erhohter-cyber-bedrohung-906259",
-      "title": "Folgen des Hackerangriffs: BSI warnt nach Daten-Leak vor erhöhter Cyber-Bedrohung",
-      "source_summary": "Nach einem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen und empfiehlt Betroffenen besondere Wachsamkeit. In der Berichterstattung wird der Vorfall zudem mit den anstehenden Wahlen verknüpft und als möglicher Anlass für Befürchtungen beschrieben.\n\nEine weitere Meldung nennt 5,8 Terabyte veröffentlichter Daten der Berliner Verwaltung im Darknet seit Freitag. Zudem äußert ein IT-Experte den Vorwurf grober Fahrlässigkeit und verweist auf lange bekannte Sicherheitslücken. Die Quellenlage bleibt vorerst auf diese berichteten Angaben und Zitate begrenzt.",
-      "summary": "Das BSI warnt nach einem Berliner Daten-Leak vor Phishing und mehr Wachsamkeit. Berichtet wird außerdem von 5,8 Terabyte veröffentlichten Verwaltungsdaten und möglichen Wahlbezügen.",
-      "detail_summary": "Gesichert belegt ist zunächst nur, dass nach einem Daten-Leak in Berlin eine Warnung vor gezielten Phishing-Angriffen verbreitet wird und Betroffene aufgerufen sind, besonders wachsam zu sein. Eine zweite Meldung nennt zusätzlich 5,8 Terabyte veröffentlichter Daten der Berliner Verwaltung im Darknet seit Freitag. Für die Nachricht relevant ist das, weil ein solcher Leak die Informationslage und die digitale Angriffsfläche von Verwaltung und Betroffenen verändert. Ein möglicher Wirkpfad führt über Phishing, Nachahmungsangriffe und Vertrauensverlust in die Sicherheit öffentlicher IT. Als Folge kommen zusätzliche Schutzmaßnahmen, Prüfungen oder Benachrichtigungen in Betracht; belastbar belegt sind sie hier aber noch nicht. Die Evidenz bleibt begrenzt, weil die vorliegenden Texte vor allem wiedergeben und nur teilweise unabhängige Bestätigung liefern.",
-      "why_relevant": "Der Vorfall betrifft die digitale Sicherheit öffentlicher Verwaltung und kann die Schutzmaßnahmen, Informationslagen und das Vertrauen von Betroffenen beeinflussen.",
-      "topic": [
-        "Digitalisierung",
-        "Demokratie",
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Mögliche Betroffenheit von Verwaltungsdaten und Phishing-Risiken für Personen und Stellen ist unmittelbar gegeben."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Kein direkter Umweltbezug erkennbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der mögliche Bezug zu Wahlen und die Sicherheit öffentlicher Verwaltung berühren demokratische Korrekturfähigkeit."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "Datenmenge",
-            "value": "5,8",
-            "unit": "Terabyte",
-            "context": "In einer Meldung genannte Menge der veröffentlichten Verwaltungsdaten",
-            "claim_id": "wt-eb6e7bfa7e906259-v1-claim-2"
-          }
-        ],
-        "affected_groups": [
-          "beschaeftigte",
-          "staat",
-          "verbraucherinnen"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "medium",
-        "reason": "Der Titel koppelt eine BSI-Warnung an ein Daten-Leak und rahmt das Ereignis als erhöhte Cyber-Bedrohung.",
-        "factual_core": "Nach einem Daten-Leak in Berlin warnt das BSI vor gezielten Phishing-Angriffen und rät zu besonderer Wachsamkeit.",
-        "speaker_statement": {
-          "present": true,
-          "speaker": "BSI laut Berichterstattung",
-          "statement": "gezielte Phishing-Angriffe möglich, besondere Wachsamkeit nötig",
-          "status": "claim"
-        },
-        "framing": {
-          "detected": true,
-          "term": "erhöhte Cyber-Bedrohung",
-          "origin_in_story": "Medium",
-          "media_usage": "headline",
-          "attribution_quality": "grundsätzlich attribuiert",
-          "factual_status": "Aussage eines Akteurs",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "resonance": {
-          "resonance_space": "Berlin-Digitalverwaltung und Wahlkontext",
-          "resonance_risk": "Das Bedrohungsframe kann Unsicherheit verstärken, auch wenn der konkrete Schadensumfang offen bleibt.",
-          "normalization_potential": "Wiederholte Warnungen können Sicherheitsverhalten normalisieren.",
-          "repetition_effect": "Die gleiche Rahmung in mehreren Meldungen kann den Eindruck einer akuten Lage verstärken.",
-          "trust_effect": "Kann Vorsicht erhöhen, aber auch Verunsicherung auslösen.",
-          "polarization_potential": "Begrenzt, solange keine Schuldzuschreibung zugespitzt wird.",
-          "discourse_effect": "Lenkt Aufmerksamkeit auf IT-Sicherheit und Schutzmaßnahmen."
-        },
-        "impact_path": {
-          "first_order": "Mehr Aufmerksamkeit für Phishing- und Schutzhinweise",
-          "second_order": "Behörden geraten stärker in die Pflicht zur Erklärung und Absicherung",
-          "third_order": "Mögliche Verschiebung in der Debatte über digitale Verwaltungsresilienz"
-        },
-        "evidence": {
-          "status": "medium",
-          "what_is_known": "Warnung vor Phishing und Bezug auf einen Berliner Daten-Leak sind belegt.",
-          "what_is_inferred": "Die mediale Bedrohungsrahmung kann den Resonanzraum für Sicherheitsdebatten vergrößern.",
-          "what_is_open": "Der tatsächliche Umfang der Schäden und die Zahl der Betroffenen bleiben offen."
-        },
-        "editorial_assessment": "konkrete kommunikative Rahmung eines bestätigten Sicherheitsvorfalls",
-        "fact_first_reframe": {
-          "title": "BSI warnt nach Berliner Daten-Leak vor Phishing",
-          "source_summary": "Nach einem Berliner Daten-Leak warnt das BSI vor gezielten Phishing-Angriffen und rät zu besonderer Wachsamkeit. Berichtet wird zudem von 5,8 Terabyte veröffentlichter Verwaltungsdaten und von Befürchtungen mit Blick auf die anstehenden Wahlen.",
-          "summary": "Nach einem Daten-Leak in Berlin warnt das BSI vor Phishing. Berichtet wird außerdem von 5,8 Terabyte Daten im Darknet und einem Wahlbezug.",
-          "detail_summary": "Nach einem Berliner Daten-Leak warnt das BSI vor gezielten Phishing-Angriffen und rät Betroffenen zu besonderer Wachsamkeit. Eine weitere Meldung nennt 5,8 Terabyte veröffentlichter Verwaltungsdaten seit Freitag. Die Nachricht ist relevant, weil veröffentlichte Verwaltungsdaten weitere Angriffe und Schutzaufwand auslösen können. Offen bleibt, welche Daten genau betroffen sind und wie viele Personen oder Stellen tatsächlich beeinträchtigt wurden."
-        },
-        "self_frame_warning": false,
-        "source_comparison": {
-          "sufficient_basis": false,
-          "finding": ""
-        }
-      },
-      "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T11:31:43.777Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-05T03:00:12.000Z",
-      "last_updated": "2026-09-05T11:33:01.821Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-aaf5027a1c1ce5bf0c81",
-      "case_file": null,
-      "source_published_at": "2026-09-05T03:00:12.000Z",
-      "published_at": "2026-09-05T11:33:01.821Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die Berliner Stellen weitere betroffene Personen konkret informieren.",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Offizielle Hinweise oder Benachrichtigungen an Betroffene",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-0cd32439cc5fa69a",
-          "announced_at": "2026-09-05T03:00:12.000Z",
-          "follow_up_date": "2026-09-12T11:33:01.821Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/folgen-des-hackerangriffs--bsi-warnt-nach-daten-leak-vor-erhoehter-cyber-bedrohung-38210530.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T03:00:12.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-folgen-des-hackerangriffs-16020663.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T03:03:16.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/nach-hackerangriff--it-experte-wirft-berlin--grobe-fahrlaessigkeit--vor-38210530.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T11:12:32.000Z",
           "primary_source": false
         }
       ]
