@@ -1,7 +1,377 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T23:08:50.989Z",
+  "updated_at": "2026-09-07T23:37:00.002Z",
   "stories": [
+    {
+      "story_id": "wt-f03755f6f6b8c3b7",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f03755f6f6b8c3b7-4a7d0dfebfb96be0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f03755f6f6b8c3b7-2cd026902ca01206-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f03755f6f6b8c3b7-6c0e24b628098994-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
+      "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
+      "source_summary": "Nach einer Serie von Sabotageversuchen auf das Stromnetz ruft die Polizei die Bevölkerung auf, verdächtige Beobachtungen zu melden. In dem Bericht werden weitere Funde beschrieben: Zuletzt seien in Nordrhein-Westfalen und in Sachsen selbstgebaute Vorrichtungen entdeckt worden, die Kurzschlüsse auslösen sollten. Für Sachsen nennt die Quelle neun entsprechende Vorrichtungen in der Nähe des Umspannwerks Graustein bei Görlitz. Als tatverdächtig gilt laut Quelle weiter ein 48-jähriger Mann aus Nordrhein-Westfalen, der ein Bekennerschreiben verfasst haben soll.\n\nDie Quelle ordnet die bisherigen Folgen so ein, dass es zu Abschaltungen in Kraftwerksblöcken kam, aber nicht zu Stromausfällen. Die Meldung verweist damit auf einen laufenden Ermittlungsstand und auf weitere offene Fragen zu Tathergang, Verantwortlichkeit und Reichweite der Vorfälle.",
+      "summary": "Die Polizei bittet nach Sabotageversuchen auf das Stromnetz weiter um Hinweise aus der Bevölkerung. Die Quelle nennt neue Funde in Sachsen und verweist auf einen weiter gesuchten Tatverdächtigen.",
+      "detail_summary": "Der Kern der Meldung ist ein laufendes Ermittlungsbild: Nach mehreren Sabotageversuchen auf das Stromnetz bittet die Polizei die Bevölkerung um verdächtige Beobachtungen. Die Quelle nennt in Sachsen neun Vorrichtungen nahe dem Umspannwerk Graustein bei Görlitz und hält einen 48-jährigen Mann aus Nordrhein-Westfalen weiter für tatverdächtig. Sachlich relevant ist das vor allem wegen der Stromnetz-Infrastruktur, der möglichen Wiederholbarkeit und der Frage, ob weitere Anlagen gefährdet sind. Ein direkter Wirkpfad wäre: verdächtige Vorrichtungen → mögliche Eingriffe in Leitungen oder Umspannwerke → Abschaltungen oder Störungen im Netzbetrieb. Nach der Quelle kam es bisher zu Abschaltungen in Kraftwerksblöcken, nicht zu Stromausfällen. Die Evidenz bleibt aber vorläufig, weil die Darstellung auf einer journalistischen Quelle beruht und zentrale Punkte im Ermittlungsverfahren offen sind.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, mögliche Wiederholungsgefahr und laufende Ermittlungen. Das ist für Versorgungssicherheit und öffentliche Gefahrenlage materiell relevant.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Betroffen sind potenziell viele Haushalte und Betriebe über das Stromnetz. Die Quelle beschreibt zwar noch keine Ausfälle, aber Sabotage an kritischer Infrastruktur schafft ein klares Störungs- und Sicherheitsrisiko."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus der Quelle ergibt sich kein direkter Umweltfakt. Mögliche Folgewirkungen über Stromerzeugung oder Netzbetrieb bleiben offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Der Sachverhalt berührt staatliche Schutz- und Ermittlungsfähigkeit sowie das Vertrauen in die Sicherheit kritischer Infrastruktur. Konkrete Auswirkungen auf demokratische Verfahren sind nicht belegt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:37:00.002Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T16:32:01.000Z",
+      "last_updated": "2026-09-07T23:39:37.569Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-57eeb90bde55fb4eff90",
+      "case_file": null,
+      "source_published_at": "2026-09-07T16:32:01.000Z",
+      "published_at": "2026-09-07T23:39:37.569Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-110.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T23:27:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-cd001726db438d2d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-3fbc257601c4cb8b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-566bab0667704a1b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-8e117c14c5b999a5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "arbeitsmarkt-fachkraftemangel-konnte-bis-2029-auf-723-000-steigen-438d2d",
+      "title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
+      "source_summary": "Die WirtschaftsWoche meldet unter Berufung auf eine Untersuchung, dass der Fachkräftemangel in Deutschland bis 2029 auf 723.000 steigen könnte. Der Bericht verweist darauf, dass die Zahl der Arbeitslosen zuletzt gestiegen sei, zugleich aber vielerorts Fachkräfte fehlten.\n\nZDFheute konkretisiert die Angaben mit Berufsfeldern: Besonders groß soll die Lücke im Verkauf, in der Kinderbetreuung sowie in der Gesundheits- und Krankenpflege werden. Genannt werden außerdem weitere betroffene Bereiche wie Bauelektrik, Bauplanung, Kfz-Technik und Mechatronik. Laut Bericht stützt sich die IW-Analyse auf Daten bis Ende 2024 und schreibt Entwicklungen für 1.300 Berufe fort.",
+      "summary": "Bis 2029 könnte die Fachkräftelücke deutlich wachsen. Besonders betroffen wären mehrere Berufe mit direktem Bezug zu Versorgung und Alltag.",
+      "detail_summary": "Die vorliegenden Berichte verweisen auf eine IW-Auswertung, nach der in Deutschland bis 2029 rund 723.000 Fachkräfte fehlen könnten. Genannt werden besonders Verkauf, Kinderbetreuung sowie Gesundheits- und Krankenpflege, dazu weitere Engpassberufe wie Bauelektrik oder Mechatronik. Für die öffentliche Debatte ist das relevant, weil sich daraus Druck auf Betriebe, Ausbildung und Versorgung ergeben kann. Der Wirkpfad wäre vor allem indirekt: weniger Personal trifft zuerst Arbeitsorganisation, dann Verfügbarkeit von Leistungen und damit die Belastung von Haushalten und Unternehmen. Offen bleibt, wie stark einzelne Regionen und Branchen die Lücke tatsächlich spüren und wie belastbar die Fortschreibung über 2024 hinaus ist. Es handelt sich hier um eine ex-ante-Einordnung auf Basis sekundär berichteter Studienangaben, nicht um bereits eingetretene Gesamtwirkung.",
+      "why_relevant": "Die Meldung beschreibt eine mögliche Verschärfung des Arbeitskräftemangels in mehreren alltags- und versorgungsrelevanten Berufen und damit eine potenzielle Veränderung von Arbeitsmärkten, Kapazitäten und Zugängen zu Leistungen.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Weniger Fachkräfte können Verfügbarkeit, Wartezeiten und Arbeitsbelastung in Versorgung, Bildung und Dienstleistungen verschlechtern. Betroffen sind viele Haushalte und Beschäftigte, die Studie nennt mehrere zentrale Berufe."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen ist in den gelieferten Quellen nicht belegt. Allenfalls indirekte Folgen über Bau, Technik oder Transformation sind denkbar, aber offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Der Befund berührt die demokratische Korrekturfähigkeit nur indirekt, etwa über öffentliche Daseinsvorsorge und staatliche Handlungsfähigkeit. Ein unmittelbarer Einfluss auf Verfahren oder Rechte ist nicht belegt."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:37:00.002Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T05:13:03.000Z",
+      "last_updated": "2026-09-07T23:39:13.185Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-cb0aa7c48054004d01bb",
+      "case_file": null,
+      "source_published_at": "2026-09-07T05:13:03.000Z",
+      "published_at": "2026-09-07T17:47:33.191Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/arbeitsmarkt-fachkraeftemangel-koennte-bis-2029-auf-723.000-steigen/100252475.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T05:13:03.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/studie-fachkraeftemangel-berufe-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T10:12:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-61bb6c2918c26f16",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61bb6c2918c26f16-01b3974e43ac60e0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61bb6c2918c26f16-57ed4418ebed7d4e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61bb6c2918c26f16-fec280dcdc3f817e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "eiffel-tower-workers-go-on-strike-after-female-staff-sidelined-for-hindu-group-s-visit-c26f16",
+      "title": "Eiffel Tower workers go on strike after female staff 'sidelined' for Hindu group's visit",
+      "source_summary": "France 24 berichtet, dass der Eiffelturm am Montag geschlossen blieb, nachdem Beschäftigte die Arbeit niedergelegt hatten. Anlass des Streiks war nach der Meldung die Kritik an einer jüngsten privaten Besuchsorganisation für eine hinduistische Delegation. Die Beschäftigten protestierten demnach gegen das „Zurückdrängen“ und Ersetzen weiblicher Mitarbeiterinnen bei diesem Besuch.\n\nDer Betreiber des Pariser Wahrzeichens teilte laut Bericht mit, die Gruppe habe darum gebeten, den privaten Besuch so zu organisieren, dass der Umgang mit Frauen begrenzt werde. In der Meldung bleibt offen, wie der genaue Ablauf des Besuchs war und ob weitere Stellen die Darstellung bestätigen. Weitere Folgen des Streiks werden nicht beschrieben.",
+      "summary": "Der Eiffelturm wurde am Montag geschlossen, nachdem Beschäftigte aus Protest streikten. Auslöser ist eine umstrittene Privatbesuchs-Organisation für eine hinduistische Delegation.",
+      "detail_summary": "Gesichert ist zunächst nur, dass der Eiffelturm am Montag geschlossen blieb und die Beschäftigten dafür in den Streik gingen. France 24 ordnet den Auslöser als Protest gegen das Zurückdrängen weiblicher Mitarbeiterinnen bei einem jüngsten Besuch einer hinduistischen Delegation ein; der Betreiber sagt, die Gruppe habe den privaten Termin so organisiert wissen wollen, dass Interaktionen mit Frauen begrenzt werden. Für die Einordnung als Konflikt um Arbeitsbedingungen und Gleichbehandlung reicht diese Erstmeldung als vorläufiger Kern, nicht aber für eine abschließende Klärung des genauen Ablaufs oder möglicher rechtlicher Folgen. Materiell ist das Ereignis wegen der zeitweisen Schließung eines stark frequentierten Wahrzeichens und wegen der möglichen arbeits- und gleichstellungsbezogenen Wirkung relevant. Offen bleibt, ob weitere unabhängige Belege die Zuschreibung und den Umfang der Maßnahme stützen.",
+      "why_relevant": "Die Meldung betrifft die zeitweise Schließung eines international wichtigen Wahrzeichens und einen Streit um den Umgang mit weiblichen Beschäftigten. Das hat unmittelbare Folgen für Betrieb, Arbeit und öffentliche Wahrnehmung.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Schließung trifft Beschäftigte und Besucher direkt; zugleich steht ein möglicher Konflikt um Gleichbehandlung im Raum. Ob daraus dauerhafte Änderungen bei Arbeitsorganisation oder Zugangspraxis folgen, bleibt offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus der Meldung ergibt sich kein belastbarer Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es geht um einen Betriebs- und Gleichbehandlungsstreit, nicht um demokratische Verfahren oder Institutionen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:37:00.002Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T17:08:13.000Z",
+      "last_updated": "2026-09-07T23:38:39.716Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-fa64c6e4e0c5b0881da4",
+      "case_file": null,
+      "source_published_at": "2026-09-07T17:08:13.000Z",
+      "published_at": "2026-09-07T23:38:39.716Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/france/20260907-strike-closes-eiffel-tower-paris-exclusion-female-staff-hindu-group-visit-baps",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T17:08:13.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-02136b7b66b5f660",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02136b7b66b5f660-2396e3f8f0ed9ea9-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02136b7b66b5f660-a3329b679b909601-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02136b7b66b5f660-7a536dd61f15cacf-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nearly-1-7-million-deaths-linked-to-second-hand-smoke-in-2023-study-finds-b5f660",
+      "title": "Nearly 1.7 million deaths linked to second-hand smoke in 2023, study finds",
+      "source_summary": "France 24 berichtet über eine Lancet-Studie zu Passivrauchen im Jahr 2023. Nach der Meldung waren weltweit mehr als 2,7 Milliarden Menschen, darunter 767 Millionen Kinder, dem Rauch anderer ausgesetzt. Die Studie ordnet Passivrauchen als weiter großes globales Gesundheitsrisiko ein und verweist darauf, dass es keinen sicheren Grenzwert der Exposition gibt.\n\nDie Meldung nennt außerdem nahezu 1,7 Millionen Todesfälle, die mit Passivrauchen in diesem Jahr verbunden gewesen seien. Es bleibt offen, welche exakte Methodik, Datengrundlage und Unsicherheiten die Studie im Original ausweist; die Originalarbeit ist in der Kurzmeldung nicht vollständig dargestellt.",
+      "summary": "Eine Studie beziffert die mit Passivrauchen verbundenen Todesfälle für 2023 auf nahezu 1,7 Millionen. Gleichzeitig nennt die Meldung eine sehr große Zahl Betroffener weltweit, darunter viele Kinder.",
+      "detail_summary": "Die Meldung stützt sich auf eine Lancet-Studie und nennt für 2023 nahezu 1,7 Millionen mit Passivrauchen verbundene Todesfälle. Dazu kommen mehr als 2,7 Milliarden Exponierte weltweit, darunter 767 Millionen Kinder. Das ist als Gesundheitsinformation relevant, weil die Zahl der Betroffenen groß ist und die Belastung nicht auf einzelne Länder begrenzt bleibt. Der mögliche Wirkpfad liegt über vermeidbare Exposition, Krankheitslast und vorzeitige Sterblichkeit. Eine direkte Wirkung der Meldung selbst lässt sich daraus nicht ableiten. Offen bleibt ohne Originalstudie, welche Annahmen, Unsicherheiten und Abgrenzungen hinter den Zahlen stehen.",
+      "why_relevant": "Die Meldung betrifft eine sehr große Zahl von Menschen und eine schwere, vermeidbare Gesundheitsbelastung. Sie kann Debatten über Rauchschutz, Prävention und öffentliche Regeln zu Passivrauchen stützen.",
+      "topic": [
+        "Gesundheit",
+        "Digitalisierung"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "rationale": "Die berichtete Exposition und die zugehörige Todeszahl betreffen weltweit sehr viele Menschen und verweisen auf erhebliche Gesundheitslast."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Der Bezug zu Umweltfolgen ist in der Quelle nicht belegt und bleibt offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "rationale": "Belastbare Gesundheitszahlen können politische Korrekturen, Prävention und Schutzregeln begründen; die Meldung selbst zeigt aber noch keine Entscheidung."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:37:00.002Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T22:53:34.000Z",
+      "last_updated": "2026-09-07T23:37:51.869Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8a5de0592aa30060acdd",
+      "case_file": null,
+      "source_published_at": "2026-09-07T22:53:34.000Z",
+      "published_at": "2026-09-07T23:37:51.869Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/health/20260907-second-hand-smoke-1-7-million-deaths",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:53:34.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-46e6bd810843b8fe",
       "title_image": {
@@ -3060,107 +3430,6 @@
           "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/oezdemir-draengt-auf-besseren-schutz-von-infrastruktur-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-06T11:48:46.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-cd001726db438d2d",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-b808800093c177ac-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-ae201ac9467a2983-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-4dd0cf5ac4019882-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "arbeitsmarkt-fachkraftemangel-konnte-bis-2029-auf-723-000-steigen-438d2d",
-      "title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
-      "source_summary": "Zwei aktuelle Berichte greifen eine IW-Studie zum Arbeitsmarkt auf. Nach den Texten könnten in Deutschland bis 2029 rund 723.000 Fachkräfte fehlen; das wäre annähernd doppelt so viel wie 2025. Genannt werden besonders starke Lücken im Verkauf, in der Kinderbetreuung, in der Sozialarbeit sowie in der Gesundheits- und Krankenpflege und in der Bauelektrik.\n\nAls Gründe nennt der zitierte Studienautor vor allem den Ruhestand der Babyboomer, zu wenig Nachwuchs in wichtigen Ausbildungsberufen und geringere Zuwanderung. Die ZDF-Darstellung ordnet die Auswertung ausdrücklich als Fortschreibung von Daten bis Ende 2024 ein und verweist auf Angaben der Bundesagentur für Arbeit und des Statistischen Bundesamts.",
-      "summary": "Eine IW-Studie rechnet bis 2029 mit einer deutlich größeren Fachkräftelücke. Besonders betroffen sein sollen mehrere Berufe mit direkter Wirkung auf Alltag und Versorgung.",
-      "detail_summary": "Der Kern der Meldung ist eine neue, konkret bezifferte Arbeitsmarktprojektion: Bis 2029 könnten laut IW rund 723.000 Fachkräfte fehlen, mit besonders großen Lücken im Verkauf, in der Kinderbetreuung, in der Sozialarbeit und in der Pflege. Das ist für Haushalte, Betriebe und öffentliche Daseinsvorsorge relevant, weil sich offene Stellen auf Verfügbarkeit, Wartezeiten und Leistungsfähigkeit auswirken können. Der Wirkpfad verläuft über weniger Personal zu geringerer Kapazität, stärkerem Druck auf bestehende Beschäftigte und möglichen Engpässen in Dienstleistungen. Mögliche Folge sind längere Suchzeiten, Ausfälle oder Priorisierungen bei Angeboten. Die Evidenz bleibt aber eine Studienfortschreibung aus Sekundärberichten; belastbar ist die Prognose als Hinweis auf ein Risiko, nicht als eingetretene Entwicklung.",
-      "why_relevant": "Die Meldung beschreibt eine neue, konkret quantifizierte Verschiebung am Arbeitsmarkt mit möglichen Folgen für Betriebe, Versorgung und öffentliche Leistungen.",
-      "topic": [
-        "Arbeit"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Die genannte Fachkräftelücke kann Beschäftigte, Betriebe und Nutzerinnen vieler Dienste betreffen; zugleich bleibt offen, wie stark sich das tatsächlich in Alltag und Einkommen übersetzt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Ein direkter Umweltbezug wird in den Quellen nicht beschrieben."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "rationale": "Wenn Kinderbetreuung, Pflege oder andere öffentliche Leistungen knapper werden, kann das die erreichbare Versorgung und die demokratisch korrigierbare Leistungsfähigkeit des Staates berühren."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "unternehmen",
-          "beschaeftigte",
-          "kinder_jugend",
-          "aeltere"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-07T17:47:04.791Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T05:13:03.000Z",
-      "last_updated": "2026-09-07T17:47:33.191Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-cb0aa7c48054004d01bb",
-      "case_file": null,
-      "source_published_at": "2026-09-07T05:13:03.000Z",
-      "published_at": "2026-09-07T17:47:33.191Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/deutschland/arbeitsmarkt-fachkraeftemangel-koennte-bis-2029-auf-723.000-steigen/100252475.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T05:13:03.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/wirtschaft/studie-fachkraeftemangel-berufe-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T10:12:00.000Z",
           "primary_source": false
         }
       ]
