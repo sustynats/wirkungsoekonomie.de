@@ -1,7 +1,374 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T18:38:42.972Z",
+  "updated_at": "2026-09-07T18:56:39.293Z",
   "stories": [
+    {
+      "story_id": "wt-ad9bd6cd53ef7715",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ad9bd6cd53ef7715-2346657aeb97d61a-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ad9bd6cd53ef7715-2d3af491aa3830ea-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ad9bd6cd53ef7715-20ce41e943ef2820-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-ad9bd6cd53ef7715-7037124104af71a6-source.png"
+        }
+      },
+      "slug": "siegmund-lehnt-afd-gefuhrte-minderheitsregierung-in-sachsen-anhalt-ab-ef7715",
+      "title": "Siegmund lehnt AfD-geführte Minderheitsregierung in Sachsen-Anhalt ab",
+      "source_summary": "Ulrich Siegmund, AfD-Spitzenkandidat in Sachsen-Anhalt, lehnt eine Minderheitsregierung unter Führung seiner Partei ab, falls die AfD keine absolute Mehrheit der Mandate gewinnt. Das sagte er nach dem Wahlsieg am Sonntagabend im ZDF. Die Meldung verweist zugleich darauf, dass die AfD grundsätzlich offen für eine Koalition mit einer Partei wäre, die einen neuen Kurs in der Migrations- und Energiepolitik unterstützt.\n\nDer MDR ordnet die Aussage in seinen Liveblog zur Landtagswahl ein. Dort wird eine Hochrechnung genannt, nach der die AfD bei 44,4 Prozent liegt. Im Livekontext geht es damit um die Frage, ob und wie nach dem Wahlabend eine Regierungsbildung möglich wäre.",
+      "summary": "Siegmund schließt eine AfD-geführte Minderheitsregierung aus, wenn die Partei nicht allein die Mehrheit hat. Der Fall ist für die Regierungsbildung in Sachsen-Anhalt relevant, weil er mögliche Mehrheiten und Verhandlungen eingrenzt.",
+      "detail_summary": "Der konkrete Befund ist eine politische Aussage von Ulrich Siegmund nach der Wahl in Sachsen-Anhalt: Eine AfD-geführte Minderheitsregierung soll es ohne absolute Mandatsmehrheit nicht geben. Dazu kommt die Einordnung, dass die AfD zwar grundsätzlich über Koalitionen spricht, aber derzeit keinen passenden Partner für den gewünschten Kurs bei Migration und Energie sieht. Für die weitere Entwicklung ist das relevant, weil es die verfügbaren Regierungsmodelle im Landtag verengt. Der Wirkpfad liegt damit nicht bei einer unmittelbaren Wirkung auf Bevölkerung oder Umwelt, sondern bei den Entscheidungsgrundlagen und Anreizen in der Koalitions- und Oppositionsbildung. Eine Folgewirkung kann in verzögerten und schwierigeren Regierungsverhandlungen liegen; ob daraus konkrete institutionelle Änderungen folgen, bleibt offen. Die Evidenz stützt hier vor allem die Aussage selbst und den Wahlkontext, nicht die späteren Verhandlungsergebnisse.",
+      "why_relevant": "Die Aussage betrifft direkt die Regierungsbildung nach der Landtagswahl und damit die künftige Macht- und Mehrheitskonstellation im Landtag.",
+      "topic": [
+        "Energie",
+        "Demokratie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "rationale": "Die Aussage verändert die Verhandlungsgrundlage für eine Landesregierung, aber noch nicht die Lage der Bevölkerung unmittelbar."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein Bezug zur Energiepolitik wird benannt, konkrete Umweltfolgen oder Maßnahmen sind aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Erklärung betrifft Regierungsbildung, Mehrheiten und Koalitionsoptionen und damit die demokratische Entscheidungsarchitektur."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "AfD-Anteil Hochrechnung",
+            "value": "44,4",
+            "unit": "Prozent",
+            "context": "genannte Hochrechnung im MDR-Liveblog",
+            "claim_id": "wt-ad9bd6cd53ef7715-v1-claim-3"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T18:52:11.443Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T17:33:54.000Z",
+      "last_updated": "2026-09-07T18:55:13.842Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-5ead28049434be271af5",
+      "case_file": null,
+      "source_published_at": "2026-09-06T17:33:54.000Z",
+      "published_at": "2026-09-07T18:55:13.842Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/siegmund-lehnt-afd-gefuehrte-minderheitsregierung-in-sachsen-anhalt-ab-38213528.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T17:33:54.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-136,wahl-560.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T17:50:23.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-bcc7ea8be6f1bb47",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bcc7ea8be6f1bb47-c68b62266f4d1aae-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bcc7ea8be6f1bb47-bbe55ae4fb59a678-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-bcc7ea8be6f1bb47-4b821152fef8b444-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "explosion-in-chemnitzer-wohnhaus-tatverdachtiger-kommt-in-haftklinik-f1bb47",
+      "title": "Chemnitz: Verdächtiger nach Explosion in Haftklinikum untergebracht",
+      "source_summary": "Nach der Explosion in einem Mehrfamilienhaus in Chemnitz hat ein Amtsrichter die Unterbringung des Tatverdächtigen in einem Haftklinikum angeordnet. Laut MDR war der 37-Jährige zuvor dem Richter vorgeführt worden und hatte bei der Detonation am Donnerstag in einer Wohnung im Lutherviertel leichte Verbrennungen erlitten.\n\nDie Polizei ermittelt weiter und hält es nach MDR-Angaben für möglich, dass der Mieter die Explosion selbst verursacht haben könnte. Betroffen waren mehrere Bewohner; nach Angaben der Feuerwehr konnten acht Hausbewohner das Gebäude selbst verlassen, zwei Menschen und zwei Hunde wurden aus dem verqualmten Haus gerettet. Das Gebäude war zunächst nicht bewohnbar, Strom und Gas wurden vorsorglich abgestellt.",
+      "summary": "Ein Richter hat den 37-Jährigen nach der Explosion in ein Haftklinikum untergebracht. Die Ermittlungen zu Ursache und Ablauf laufen weiter.",
+      "detail_summary": "Der berichtete Kern ist eine neue verfahrensrelevante Entwicklung im Chemnitzer Fall: Nicht nur die Explosion selbst, sondern nun auch die richterlich angeordnete Unterbringung des Tatverdächtigen wird genannt. Das ist für die weitere Aufklärung wichtig, weil sich damit der Status des Verdächtigen und der behördliche Umgang mit ihm verändern. Für die Lage vor Ort bleibt zentral, dass das Haus vorerst nicht bewohnbar war und Versorgungseinrichtungen vorsorglich abgeschaltet wurden. Mögliche Folge ist, dass sich die Ermittlungen auf Ursache, Verantwortlichkeit und den Zustand des Gebäudes weiter verdichten. Die Beleglage bleibt aber auf einen journalistischen Bericht beschränkt; Angaben zu Ursache und möglicher Selbstverursachung sind deshalb vorläufig zu behandeln.",
+      "why_relevant": "Die Nachricht enthält eine neue behördliche Entscheidung mit Folgen für das Verfahren, die Unterbringung des Verdächtigen und die weitere Lage im beschädigten Wohnhaus.",
+      "topic": [
+        "Gesundheit"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind Bewohner, Einsatzkräfte und der Verdächtige; die Unterbringung in einem Haftklinikum kann den Umgang mit Gefahr, Versorgung und Ermittlungen beeinflussen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Umweltbezug ist in den Quellen nicht belegt; genannt sind nur vorsorglich abgestellt Strom und Gas sowie Gebäudeschäden."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "rationale": "Behördliche Entscheidungen und laufende Ermittlungen sind für rechtsstaatliche Kontrolle relevant, ohne dass ein politischer Vorgang vorliegt."
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "Unterbringung des Tatverdächtigen in einem Haftklinikum",
+            "direction": "open",
+            "condition": "Wenn die Anordnung Bestand hat, ändert sich der Verfahrensstatus des Betroffenen und seine Unterbringung.",
+            "evidence": "plausible_path",
+            "claim_ids": []
+          }
+        ],
+        "affected_groups": [
+          "haushalte",
+          "kommunen",
+          "patientinnen"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Formulierung verbindet Explosion, mögliche Selbstverursachung und Haftklinikum; das kann Dramatisierung und Kollektivassoziationen auslösen.",
+        "factual_core": "Ein Richter ordnete die Unterbringung des 37-jährigen Tatverdächtigen in einem Haftklinikum an; die Polizei ermittelt weiter.",
+        "epistemic_status": {
+          "confirmed": [
+            "Unterbringung in einem Haftklinikum wurde angeordnet",
+            "Ermittlungen laufen weiter"
+          ],
+          "actor_claims": [
+            "die Polizei hält eine Selbstverursachung für möglich"
+          ],
+          "open": [
+            "ob der Mieter die Explosion tatsächlich verursacht hat",
+            "ob Bewohner zurückkehren können"
+          ]
+        },
+        "attribution": {
+          "frame_source": "MDR",
+          "speaker": "Polizei und Feuerwehr im Bericht",
+          "original_term": "Explosion",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Explosion",
+          "origin_in_story": "MDR",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Explosion",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Gefahr für Bewohner, Haus und Ermittlungsordnung nach einer Explosion.",
+          "implied_cause": "mögliche Selbstverursachung durch den Mieter, aber nicht gesichert.",
+          "implied_responsibility": "Tatverdächtiger bzw. Mieter als möglicher Verursacher, offen und vorläufig.",
+          "implied_threat": "weitere Gefährdung von Bewohnern und Unbewohnbarkeit des Hauses.",
+          "implied_solution_space": "Unterbringung, Feuerwehrmaßnahmen, kriminalpolizeiliche Aufklärung.",
+          "material_omissions": [
+            "keine gesicherte Ursachenklärung",
+            "keine Information zur Rückkehr der Bewohner"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Kein politischer Konflikt belegt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Lokale Sicherheits- und Gefahrennarrative",
+          "normalization_potential": "low",
+          "repetition_risk": "low",
+          "polarization_potential": "gering",
+          "trust_effect_potential": "neutral bis leicht belastend durch offene Ursache",
+          "discourse_effect_potential": "Die Zuspitzung auf Explosion und Haftklinikum kann die Wahrnehmung von Gefahr verstärken, ohne den Sachverhalt zu beweisen."
+        },
+        "impact_path": {
+          "first_order": "explosion und richterliche Unterbringung",
+          "second_order": "verstärkte Sicherheitswahrnehmung und Bedarf an Aufklärung",
+          "third_order": "mögliche längerfristige Debatte über Gebäudesicherheit und Gefahrenabwehr"
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Explosion in einem Mehrfamilienhaus in Chemnitz richterliche Unterbringung des Tatverdächtigen in einem Haftklinikum das Haus war zunächst nicht bewohnbar",
+          "what_is_inferred": "Der Bericht deutet auf eine fortdauernde Gefahren- und Ermittlungsphase",
+          "what_is_open": "Nur ein journalistischer Bericht liegt vor. Die Ursache der Explosion bleibt offen.",
+          "facts": [
+            "Explosion in einem Mehrfamilienhaus in Chemnitz",
+            "richterliche Unterbringung des Tatverdächtigen in einem Haftklinikum",
+            "das Haus war zunächst nicht bewohnbar"
+          ],
+          "observations": [
+            "MDR beruft sich auf Polizei und Feuerwehr"
+          ],
+          "inferences": [
+            "Der Bericht deutet auf eine fortdauernde Gefahren- und Ermittlungsphase"
+          ],
+          "impact_potentials": [
+            "Belastung der Bewohner durch unklare Rückkehrperspektive"
+          ],
+          "impact_risks": [
+            "Dramatisierung durch Wortwahl",
+            "unscharfe Zuschreibung möglicher Ursache"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur ein journalistischer Bericht liegt vor.",
+            "Die Ursache der Explosion bleibt offen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Meldung beschreibt vor allem einen neuen Schritt im laufenden Fall: Ein Richter hat den 37-jährigen Verdächtigen in ein Haftklinikum bringen lassen. Das ist wichtig, weil sich damit der behördliche Umgang mit dem Mann ändert und die Ermittlungen weiterlaufen. Für die Anwohner bleibt die Lage belastend, weil das Haus zunächst nicht bewohnbar war und offen ist, wann sie zurückkönnen. Gleichzeitig ist die Ursache der Explosion noch nicht gesichert; die mögliche Selbstverursachung ist deshalb nur eine vorläufige Annahme. Die Wirkung liegt hier also vor allem im Verfahren und in der Wohnsituation, nicht in einer schon bewiesenen langfristigen Folge.",
+        "editorial_assessment": "Die Meldung beschreibt vor allem einen neuen Schritt im laufenden Fall: Ein Richter hat den 37-jährigen Verdächtigen in ein Haftklinikum bringen lassen. Das ist wichtig, weil sich damit der behördliche Umgang mit dem Mann ändert und die Ermittlungen weiterlaufen. Für die Anwohner bleibt die Lage belastend, weil das Haus zunächst nicht bewohnbar war und offen ist, wann sie zurückkönnen. Gleichzeitig ist die Ursache der Explosion noch nicht gesichert; die mögliche Selbstverursachung ist deshalb nur eine vorläufige Annahme. Die Wirkung liegt hier also vor allem im Verfahren und in der Wohnsituation, nicht in einer schon bewiesenen langfristigen Folge.",
+        "fact_first_alternative": "Richter ordnet Unterbringung an; die Ursache der Explosion bleibt offen.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Unsicherer Frame-Einstieg in title"
+          ],
+          "frame_repetition_count": 5,
+          "rewrite_required": true,
+          "recommended_title": "Chemnitz: Verdächtiger nach Explosion in Haftklinikum untergebracht",
+          "recommended_summary": "Ein Richter hat nach der Explosion in Chemnitz die Unterbringung des Verdächtigen in einem Haftklinikum angeordnet. Die Ursache der Explosion ist weiter offen.",
+          "recommended_meta_description": "Nach der Explosion in Chemnitz ist der Verdächtige in einem Haftklinikum untergebracht worden; die Ermittlungen laufen weiter."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T18:56:39.293Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T16:40:27.000Z",
+      "last_updated": "2026-09-07T18:55:00.130Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-20fae259b3d04eac4cee",
+      "case_file": null,
+      "source_published_at": "2026-09-07T16:40:27.000Z",
+      "published_at": "2026-09-07T18:55:00.130Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen/chemnitz/news-haft-klinik-evakuierung,explosion-polizei-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:40:27.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3b0fbd0e7ce8e17e",
       "title_image": {

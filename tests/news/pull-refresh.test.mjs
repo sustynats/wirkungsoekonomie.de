@@ -191,12 +191,13 @@ test("desktop still has the accessible button without a touch overlay", async ()
 test("worker freshness probes do not return cached data when offline", async () => {
   const handlers = new Map(); let cacheOpens = 0;
   vm.runInNewContext(fs.readFileSync("wirkungsticker/sw.js", "utf8"), {
-    URL, self: { location: { origin: "https://wirkungsoekonomie.de" }, addEventListener: (name, fn) => handlers.set(name, fn) },
+    URL, Response, AbortController, setTimeout, clearTimeout,
+    self: { location: { origin: "https://wirkungsoekonomie.de" }, addEventListener: (name, fn) => handlers.set(name, fn) },
     fetch: async () => { throw new Error("offline"); },
     caches: { open: async () => { cacheOpens++; return { match: async () => new Response('{"items":[]}') }; } },
   });
   let reply;
-  const run = url => handlers.get("fetch")({ request: new Request(url), respondWith(promise) { reply = promise; } });
+  const run = url => handlers.get("fetch")({ request: new Request(url), respondWith(promise) { reply = promise; }, waitUntil(promise) { void promise; } });
   run("https://wirkungsoekonomie.de/wirkungsticker/feed.json?check=123");
   await assert.rejects(reply, /offline/); assert.equal(cacheOpens, 0);
   run("https://wirkungsoekonomie.de/wirkungsticker/feed.json");

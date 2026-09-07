@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { fileSubject, namedSubjects, namedSubjectConflict, diplomaticVisit, delegationNames } from "./living-files.mjs";
+import { caseContentUpdatedAt } from "./publication-update.mjs";
 
 // A case file is a presentation layer above evidence-bound stories. It never
 // merges claims, sources, event IDs or publication histories. The same rules
@@ -169,6 +170,7 @@ export function buildCaseFiles(stories, { minMembers = MIN_MEMBERS } = {}) {
       representative_slug: representative.slug,
       title: representative.title,
       updated_at: representative.last_updated,
+      content_updated_at: caseContentUpdatedAt(members),
       member_count: members.length,
       publisher_count: uniquePublishers(members),
       topics: caseTopics(members, representative),
