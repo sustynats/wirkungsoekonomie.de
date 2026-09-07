@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-07T18:25:32.431Z",
+  "updated_at": "2026-09-07T18:38:42.972Z",
   "candidates": [
     {
       "story_id": "wt-a030a1d903caa413",
@@ -170,8 +170,8 @@
         "reasons": []
       },
       "fingerprint": "78522ed7a608806cb3fb963a0a4eea1577746ec2d5d1136d08c1010801b11adc",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-7c4918d1134c"
     },
     {
       "story_id": "wt-f7d7115a53ff2c2f",
@@ -19345,6 +19345,600 @@
           ]
         }
       ]
+    },
+    {
+      "analysis_id": "woek-analysis-7c4918d1134c",
+      "story_id": "wt-8f7ac0654a780960",
+      "related_story_ids": [
+        "wt-8f7ac0654a780960"
+      ],
+      "related_case_id": null,
+      "slug": "witkoff-fordert-russland-und-ukraine-zu-kompromissen-auf-was-das-fur-verhandlungen-7c4918",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "78522ed7a608806cb3fb963a0a4eea1577746ec2d5d1136d08c1010801b11adc",
+      "candidate_score": 71,
+      "analysis_gain_score": 51,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 3,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-07T18:38:42.972Z",
+      "updated_at": "2026-09-07T18:38:42.972Z",
+      "version": 1,
+      "editorial_question": "Was verändert eine öffentliche Forderung nach „Kompromissen“ im Ukraine-Krieg tatsächlich: den Ton der Diplomatie, die Verhandlungsmacht oder schon die Lage am Boden?",
+      "analysis_type": "case_analysis",
+      "title": "Witkoff fordert Russland und Ukraine zu Kompromissen auf: Was das für Verhandlungen und Kriegslage bedeuten kann",
+      "subtitle": "Eine öffentliche Vermittlerbotschaft kann Gesprächsräume öffnen. Sie kann aber auch rote Linien schärfer machen, ohne den Krieg selbst schon zu verändern.",
+      "teaser": "Nach Gesprächen in Kiew ruft der US-Gesandte Steve Witkoff beide Seiten zu Kompromissen auf. Das ist vor allem ein Signal im Verhandlungsraum – noch kein Beleg für einen Kurswechsel.",
+      "seo_description": "Witkoffs Kompromissforderung im Ukraine-Krieg: Was das diplomatisch ändern kann – und warum daraus noch keine Wirkung am Boden folgt.",
+      "additional_value": "Der Text ordnet nicht nur den Bericht ein, sondern trennt sauber zwischen öffentlichem Verhandlungssignal, möglichem Wirkpfad und belegter Zustandsänderung. Er zeigt, wo diplomatische Sprache Politik beeinflussen kann, ohne die Lage schon zu verändern.",
+      "research_summary": "Belegt ist laut den gelieferten Berichten, dass Steve Witkoff nach Gesprächen in Kiew Russland und die Ukraine zu Kompromissen aufgerufen hat. Zudem wird Selenskyj mit der Aussage zitiert, territoriale Fragen könnten nur bei einem Treffen der Staatschefs geklärt werden. Mehrere Berichte verweisen darauf, dass Witkoff und Kushner zuvor in Moskau waren und anschließend nach Kiew reisten. Nicht belegt ist, dass daraus bereits konkrete Verhandlungsergebnisse, Kurswechsel oder materielle Folgen für den Kriegsverlauf entstanden sind. Die zentrale Analysefrage ist deshalb nicht Reichweite der Aussage, sondern ihr möglicher Wirkpfad: Wie verändern öffentliche Signale die Verhandlungslogik, die Erwartungshaltung und die spätere Konfliktbearbeitung?",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Ein Satz, der nach Diplomatie klingt – und trotzdem noch wenig löst",
+          "paragraphs": [
+            "Witkoff sagt nach Gesprächen in Kiew, Russland und die Ukraine müssten Kompromisse eingehen und ihre Meinungsverschiedenheiten abbauen. Selenskyj wiederum betont, territoriale Fragen ließen sich nur im direkten Treffen der Staatschefs klären. Das ist der konkrete Kern der Meldung. Mehr liefert die Quelle nicht. Es gibt also ein öffentliches Verhandlungssignal, aber keinen belastbaren Beleg für ein Ergebnis.",
+            "Genau hier liegt der Unterschied zwischen Nachricht und Wirkung: Eine Aussage kann den Rahmen eines Konflikts verschieben, ohne schon den Konfliktzustand zu ändern. Für die Wirkungsökonomie ist das wichtig, weil Reichweite keine Wirkung ist. Dass viele Menschen die Aussage lesen oder diskutieren, beweist noch nicht, dass sich die Verhandlungsmacht, die Sicherheitslage oder die Kriegsdauer بالفعل verändert haben."
+          ],
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Witkoff fordert öffentlich Kompromisse von beiden Seiten.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Die Aussage ist so berichtet worden; sie ist zunächst nur ein Verhandlungssignal.",
+                "source_ids": [
+                  "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Die Botschaft kann Erwartungen an weitere Gespräche oder Zugeständnisse verschieben.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Nur wenn die Beteiligten das Signal als relevant für ihre Linie lesen.",
+                "source_ids": [
+                  "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+                  "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Das kann den Spielraum für direkte Verhandlungen verändern – oder auch verhärten, wenn die Aussage als Vorfestlegung gilt.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Abhängig davon, wie Kiew und Moskau die Botschaft deuten.",
+                "source_ids": [
+                  "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+                  "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Erst wenn daraus konkrete Gespräche oder Vereinbarungen folgen, könnte sich der Kriegsverlauf tatsächlich ändern.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Dafür gibt es in den Quellen noch keinen Beleg.",
+                "source_ids": [
+                  "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+                  "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "system",
+          "title": "Der Zusatznutzen liegt im Verhandlungsraum, nicht im Kampfgeschehen",
+          "paragraphs": [
+            "Systemisch ist die Meldung vor allem deshalb relevant, weil sie einen diplomatischen Kanal sichtbar macht. Mehrere Berichte zeigen eine Abfolge von Gesprächen in Moskau und dann in Kiew. Das kann ein Hinweis auf anhaltende Kontaktlinien sein. Es ist aber noch kein Nachweis dafür, dass sich die materielle Lage im Krieg verändert hat.",
+            "Der Zusatznutzen entsteht also zunächst auf der Ebene der Koordination: Wer spricht mit wem, mit welcher öffentlichen Botschaft, an welcher Stelle der Eskalation? Solche Signale können Verhandlungspfad, Erwartungsmanagement und Gesichtswahrung beeinflussen. Die eigentliche Wirkung bleibt aber abhängig davon, ob beide Seiten daraus akzeptable Schritte ableiten."
+          ],
+          "source_ids": [
+            "e699bca5d4d35c680849e084988d65b45c6d94491e4ee9234c8ede11d65a8dba",
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73",
+            "c138708d7ccc6bb572dc5390506894677870f9a3d7fdd72acd50ef65546ec349"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: unterschiedliche Betroffenheit, unterschiedliche Evidenz",
+          "paragraphs": [
+            "Für Menschen ist der Bezug am stärksten. Wenn diplomatische Signale tatsächlich zu Gesprächen, Deeskalation oder einem Waffenstillstand beitragen, könnten sich Sicherheit und zivile Belastung verbessern. Das ist hier aber nur ein Wirkungspotenzial. Belegt ist allein die politische Kommunikation darüber, nicht eine Zustandsänderung am Boden.",
+            "Für den Planeten ergibt sich aus den Quellen kein direkter Befund. Für Demokratie und politische Ordnung ist die Lage indirekt relevant: Verhandlungen über Krieg und Frieden berühren staatliche Entscheidungsmacht, Legitimation und die Frage, wie Konflikte zwischen Regierungen bearbeitet werden. Auch hier gilt: Betroffenheit ist sichtbar, Wirkung noch nicht."
+          ],
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4"
+          ]
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen 1 bis 3: vom Signal zur möglichen Systemverschiebung",
+          "paragraphs": [
+            "Erste Ordnung: Die öffentliche Forderung nach Kompromissen verändert den Verhandlungsrahmen. Das ist die direkteste, aber auch schwächste Ebene. Zweite Ordnung: Die Beteiligten passen möglicherweise ihre Gesprächsformate, Botschaften oder roten Linien an. Dafür braucht es schon eine Reaktion der Gegenseite, also mehr als bloße Berichterstattung. Dritte Ordnung: Erst wenn daraus tragfähige Gespräche oder Vereinbarungen entstehen, kann sich der Sicherheits- und Kriegsverlauf verändern.",
+            "Diese Kaskade ist plausibel, aber nicht bewiesen. Die Quellen nennen keine konkreten Ergebnisse, keine Zusagen und keinen überprüfbaren Kurswechsel. Deshalb muss die Zurechnung offen bleiben. In der Wirkungsökonomie gilt: Ein denkbarer Pfad ist kein eingetretener Effekt."
+          ],
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz hängt davon ab, ob die Botschaft aufgenommen oder abgewehrt wird",
+          "paragraphs": [
+            "Resilienz bedeutet hier: Wie belastbar sind die Konfliktparteien gegenüber öffentlichem Druck aus Drittkanälen? Wenn Kiew oder Moskau die Kompromissforderung als hilfreichen Impuls lesen, kann das den Gesprächsfaden stützen. Wenn eine Seite darin eine Vorfestlegung oder ein Ungleichgewicht sieht, kann der Effekt auch das Gegenteil sein und die Verhandlungsbereitschaft senken.",
+            "Belastbar ist dazu noch nichts. Die Quellen zeigen lediglich, dass Witkoff und Kushner die Orte gewechselt haben und öffentlich auf Kompromisse drängen. Ob das den diplomatischen Prozess stabilisiert oder verengt, bleibt offen. Gerade deshalb sollte man nicht aus diplomatischer Aktivität auf positive Wirkung schließen."
+          ],
+          "source_ids": [
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73",
+            "e699bca5d4d35c680849e084988d65b45c6d94491e4ee9234c8ede11d65a8dba"
+          ]
+        },
+        {
+          "id": "verteilung",
+          "title": "Wer trägt welches Risiko? Vor allem Zivilbevölkerung, dann Verhandler",
+          "paragraphs": [
+            "Wenn diplomatische Signale nicht tragen, bleibt die Last des Krieges bei der Zivilbevölkerung. Genau deshalb ist die Meldung systemisch relevant: Jede Verzögerung in einem belastbaren Verhandlungsprozess kann die bestehende Belastung verlängern. Für Frauen und Kinder gilt dabei kein automatischer Sonderbefund aus der Quelle, aber die Schutzperspektive bleibt in Kriegen besonders wichtig, weil sie von Gewalt, Vertreibung und eingeschränktem Zugang zu Hilfe schneller betroffen sein kann. Das ist eine allgemeine Schutzlogik, keine neue Tatsachenbehauptung zu diesem Fall.",
+            "Für die Verhandlungsseite liegt das Verteilungsrisiko in verengten Spielräumen. Wer öffentlich stark auf Kompromisse drängt, kann den Eindruck erzeugen, dass Zugeständnisse schon erwartet werden. Das kann schwächere Akteure unter Druck setzen oder harte Linien stabilisieren. Auch das ist ein Wirkungsrisiko, kein Nachweis einer eingetretenen Benachteiligung."
+          ],
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Was wir wissen – und was offen bleiben muss",
+          "paragraphs": [
+            "Gesichert ist: Es gab nach den Quellen Gespräche in Kiew, und Witkoff hat öffentlich Kompromisse eingefordert. Ebenfalls gesichert ist, dass Selenskyj territoriale Fragen an ein Treffen der Staatschefs bindet. Offen bleibt: War die Botschaft abgestimmt oder nur ein Zwischenstand? Gibt es Anschlussgespräche? Verändert sich die Linie beider Seiten tatsächlich?",
+            "Diese Unsicherheit ist kein Mangel der Analyse, sondern ihr sauberer Rahmen. Sie schützt vor Überdehnung. Solange keine unabhängigen Angaben zu Ergebnissen, Vereinbarungen oder tatsächlichen Folgen vorliegen, bleibt jede stärkere Zurechnung spekulativ."
+          ],
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4",
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Woran sich die Wirkung als Nächstes prüfen ließe",
+          "paragraphs": [
+            "Entscheidend wären nicht weitere Schlagzeilen über denselben Satz, sondern überprüfbare Anschlussdaten: Gibt es neue Gesprächsformate? Werden direkte Treffen zwischen den Staatschefs vorbereitet? Kommen belastbare Vorschläge oder Gegenangebote auf den Tisch? Erst dann lässt sich prüfen, ob aus dem Signal ein Wirkpfad geworden ist.",
+            "Für die redaktionelle Beobachtung heißt das: Nicht die Lautstärke der Diplomatie zählt, sondern ihr Anschluss. Je konkreter die nächsten Schritte werden, desto stärker kann man von Wirkung sprechen. Bleibt es bei der öffentlichen Mahnung, bleibt es beim Potenzial."
+          ],
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Der Befund in einem Satz: Ein wichtiges Signal, aber noch keine Wirkung",
+          "paragraphs": [
+            "Mein Schluss ist nüchtern: Witkoffs Kompromissforderung markiert einen möglichen Wendepunkt im diplomatischen Ton, nicht mehr. Das kann Verhandlungen erleichtern, aber auch verschärfen. Der relevante Zusatznutzen liegt in der Verschiebung des Gesprächsrahmens, nicht in einer bereits sichtbaren Veränderung von Krieg oder Frieden.",
+            "Wer diese Meldung ernst nimmt, sollte sie deshalb als Startpunkt einer Wirkungsprüfung lesen, nicht als Erfolgsmeldung. Genau dort trennt die Wirkungsökonomie sauber zwischen öffentlichem Signal, plausibler Kette und tatsächlich veränderter Lage."
+          ],
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4"
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Steve Witkoff hat Russland und die Ukraine zu Kompromissen aufgefordert, um ein Ende des Krieges zu erreichen.",
+          "type": "fact",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die konkrete politische Wirkung dieser Forderung bleibt offen.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "Witkoff sagte nach Gesprächen in Kiew, beide Seiten müssten Kompromisse eingehen und ihre Meinungsverschiedenheiten abbauen.",
+          "type": "fact",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quelle dokumentiert die Aussage, nicht ihre Folgen.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "Wolodymyr Selenskyj sagte, territoriale Fragen könnten nur bei einem Treffen der beiden Staatschefs geklärt werden.",
+          "type": "fact",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Aussage ist als berichtete Position belegt, nicht als Verhandlungsergebnis.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "Die Meldung zeigt zunächst ein öffentliches Verhandlungssignal, aber keine belegte Zustandsveränderung im Krieg.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Kein unabhängiger Beleg für konkrete Folgen oder Kurswechsel liegt vor.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Öffentliche Forderungen nach Kompromissen können den Verhandlungsrahmen verändern und Erwartungen an weitere Gespräche verschieben.",
+          "type": "impact_potential",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+          ],
+          "evidence_level": "medium",
+          "data_status": "scenario",
+          "uncertainty": "Der Pfad ist plausibel, aber nicht belegt; Reaktionen der Seiten fehlen.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Wenn die Botschaft als Vorfestlegung gelesen wird, kann sie Verhandlungsspielräume auch verengen.",
+          "type": "impact_risk",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Quellen nennen keine Reaktion, deshalb bleibt es ein mögliches Risiko.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Für Menschen ist die Relevanz hoch, weil ein erfolgreicher Verhandlungspfad Sicherheit und zivile Belastung verbessern könnte.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Dies beschreibt Wirkungspotenzial, nicht eingetretene Wirkung.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Für Demokratie ist die Relevanz mittel, weil die Verhandlungen staatliche Entscheidungsmacht und öffentliche Konfliktbearbeitung berühren.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Der demokratische Effekt ist indirekt und noch nicht als Wirkung belegt.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Aus den Quellen ergibt sich kein direkter Umweltbezug.",
+          "type": "fact",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Ein indirekter Umweltbezug wäre nur über spätere Kriegsfolgen denkbar, die hier nicht belegt sind.",
+          "date": "2026-09-07"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen nennen keine konkreten Verhandlungsergebnisse, Zusagen oder materielle Folgen für den Kriegsverlauf.",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+          ],
+          "effect_on_assessment": "Begrenzt die Zurechnung auf Signalwirkung und verhindert ein Urteil über eingetretene Wirkung."
+        },
+        {
+          "finding": "Selenskyj wird als skeptisch beschrieben, was auf einen weiterhin offenen oder schwierigen Verhandlungspfad hindeutet.",
+          "source_ids": [
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+          ],
+          "effect_on_assessment": "Spricht gegen eine vorschnell positive Bewertung und macht den Pfad eher offen als wirksam."
+        }
+      ],
+      "editorial_rules_version": "2.0",
+      "executive_finding": "Witkoffs Kompromissforderung ist vor allem ein öffentliches Signal im Verhandlungsraum. Sie kann Erwartungen an weitere Gespräche verschieben und den diplomatischen Druck erhöhen. Eine tatsächliche Zustandsänderung im Krieg ist damit aber nicht belegt. Der wichtigste Punkt ist die Bedingung: Erst wenn aus dem Signal konkrete Anschlussgespräche oder Vereinbarungen werden, kann daraus eine echte Wirkung entstehen.",
+      "subject_dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen wäre vor allem Sicherheit, Gewaltverlauf und zivile Belastung, falls Verhandlungen tatsächlich vorankommen.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "open",
+          "magnitude": "open",
+          "evidence": "plausible_path"
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus den Quellen ergibt sich kein direkter Umweltbezug; ein indirekter Bezug wäre nur über spätere Kriegsfolgen denkbar.",
+          "implementation_status": "open",
+          "likelihood": "open",
+          "direction": "open",
+          "magnitude": "open",
+          "evidence": "open"
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Der Fall berührt staatliche Entscheidungsmacht, diplomatische Prozesse und öffentliche Konfliktbearbeitung.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "mixed",
+          "magnitude": "low",
+          "evidence": "plausible_path"
+        }
+      },
+      "assessment_context": "open",
+      "assessment_condition": "Die Bewertung gilt nur, solange die Quellen keine konkreten Verhandlungsergebnisse, Zusagen oder überprüfbaren Folgen nennen.",
+      "author_perspective": {
+        "paragraphs": [
+          "Ich halte die Meldung für wichtig, aber noch nicht für stark. Gerade bei Krieg und Frieden wird viel zu schnell aus einer diplomatischen Formulierung ein vermeintlicher Durchbruch. Hier sehe ich zunächst vor allem ein Signal: Da wird öffentlich auf Kompromiss gesetzt, und das kann Verhandlungen anstoßen oder zumindest den Rahmen dafür verschieben. Mehr ist aus den Quellen aber nicht sicher ableitbar.",
+          "Aus meiner Sicht liegt der Wert der Nachricht deshalb in der Zurückhaltung. Wer Wirkung ernst nimmt, muss das Signal vom Ergebnis trennen. Ich finde es richtig, den möglichen diplomatischen Pfad zu benennen, aber nicht schon von einem Effekt zu sprechen, den die Belege noch nicht tragen."
+        ],
+        "claim_indices": [
+          0
+        ],
+        "origin": "generated_from_analysis"
+      },
+      "positive_path_checks": [
+        {
+          "measure": "Öffentliche Kompromissforderung mit anschließenden, konkret benannten Gesprächsschritten zwischen den Konfliktparteien",
+          "source_ids": [
+            "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+            "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+          ],
+          "mechanism": "Wenn die Botschaft von beiden Seiten aufgenommen wird, kann sie Erwartungen und Gesprächsformate so verändern, dass echte Verhandlungen wahrscheinlicher werden."
+        }
+      ],
+      "counter_evidence_search": {
+        "checked": true,
+        "result": "Gefunden wurden Grenzen statt Gegenpfade: keine konkreten Ergebnisse, keine unabhängige Bestätigung eines Kurswechsels und eine skeptische Gegenposition Selenskyjs. Ein positiver Wirkpfad bleibt deshalb nur bedingt plausibel und nicht belegt."
+      },
+      "editorial_quality": {
+        "false_balance_checked": true,
+        "concrete_positive_paths_only": true,
+        "likelihood_direction_separated": true,
+        "safeguards_as_limits": true,
+        "evidence_bound_judgment": true,
+        "reader_takeaway_clear": true,
+        "concrete_language_checked": true,
+        "visuals_explain_mechanism": true,
+        "author_perspective_separated": true
+      },
+      "what_changes_the_assessment": [
+        "Konkrete, unabhängige Bestätigung eines Treffens der Staatschefs",
+        "Belastbare Angaben zu Zusagen, Zugeständnissen oder Textentwürfen",
+        "Hinweise, dass aus der Kompromissforderung tatsächlich neue Verhandlungen oder eine Deeskalation folgen"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Witkoff fordert Russland und Ukraine zu Kompromissen auf: Was das für Verhandlungen und Kriegslage bedeuten kann",
+        "recommended_summary": "Die Meldung ist vor allem ein diplomatisches Signal. Belegt ist die Kompromissforderung, nicht aber schon eine Wirkung im Krieg oder ein Verhandlungsergebnis.",
+        "recommended_meta_description": "Witkoffs Kompromissforderung im Ukraine-Krieg: Was das diplomatisch ändern kann – und warum daraus noch keine Wirkung am Boden folgt."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Witkoff fordert Russland und Ukraine zu „Kompromissen“ für Kriegsende auf",
+          "url": "https://www.stern.de/news/witkoff-fordert-russland-und-ukraine-zu--kompromissen--fuer-kriegsende-auf-38213452.html",
+          "published_at": "2026-09-06T17:07:45.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "838613a9b53a730432fcee623c3367a423257ef9848b4f064efc94bf84a1b9e3",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Treffen - Witkoff fordert Ukraine und Russland zu Kompromissen auf - Selenskyj pessimistisch",
+          "url": "https://www.deutschlandfunk.de/witkoff-fordert-ukraine-und-russland-zu-kompromissen-auf-selenskyj-pessimistisch-100.html",
+          "published_at": "2026-09-06T21:05:27.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "d7d763e408b70f6cdb45703e9bcc9422d16d046ae2cb6abc92e6ce75c34ba6b7",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Treffen - Witkoff fordert Ukraine und Russland zu Kompromissen auf - Selenskyj pessimistisch",
+          "url": "https://www.deutschlandfunk.de/witkoff-fordert-ukraine-und-russland-zu-kompromissen-auf-selenskyj-pessimistisch-104.html",
+          "published_at": "2026-09-06T23:29:31.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine - Kushner und Witkoff aus Kiew abgereist, Selenskyj pessimistisch zu Friedensschluss mit Russland",
+          "url": "https://www.deutschlandfunk.de/kushner-und-witkoff-aus-kiew-abgereist-selenskyj-pessimistisch-zu-friedensschluss-mit-russland-102.html",
+          "published_at": "2026-09-07T11:03:20.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "c138708d7ccc6bb572dc5390506894677870f9a3d7fdd72acd50ef65546ec349",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Krieg: US-Vermittler Witkoff fordert Kompromisse von Russland und Ukraine",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-witkoff-fordert-kompromisse-38212846.html",
+          "published_at": "2026-09-06T17:27:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4",
+          "registry_source_id": "spiegel-schlagzeilen",
+          "publisher_id": "spiegel",
+          "publisher": "DER SPIEGEL",
+          "title": "Ukraine-Krieg: US-Gesandte fordern Russland und Kyjiw zu »Kompromissen« auf",
+          "url": "https://www.spiegel.de/ausland/ukraine-krieg-us-gesandte-fordern-russland-und-ukraine-zu-kompromissen-auf-a-40af94b7-be76-4bc4-b658-3b28fa772771",
+          "published_at": "2026-09-06T17:14:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "e699bca5d4d35c680849e084988d65b45c6d94491e4ee9234c8ede11d65a8dba",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Ukraine-Krieg: US-Vertreter besprechen mit Putin „konkrete Pläne“ für Kriegsende",
+          "url": "https://www.stern.de/politik/ausland/ukraine--us-vertreter-besprechen-mit-putin--konkrete-plaene--fuer-kriegsende-38212396.html",
+          "published_at": "2026-09-06T07:45:00.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-07T18:38:42.972Z",
+          "source_fingerprint": "78522ed7a608806cb3fb963a0a4eea1577746ec2d5d1136d08c1010801b11adc",
+          "title": "Witkoff fordert Russland und Ukraine zu Kompromissen auf: Was das für Verhandlungen und Kriegslage bedeuten kann",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Steve Witkoff hat Russland und die Ukraine zu Kompromissen aufgefordert, um ein Ende des Krieges zu erreichen.",
+              "type": "fact",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die konkrete politische Wirkung dieser Forderung bleibt offen.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "Witkoff sagte nach Gesprächen in Kiew, beide Seiten müssten Kompromisse eingehen und ihre Meinungsverschiedenheiten abbauen.",
+              "type": "fact",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle dokumentiert die Aussage, nicht ihre Folgen.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "Wolodymyr Selenskyj sagte, territoriale Fragen könnten nur bei einem Treffen der beiden Staatschefs geklärt werden.",
+              "type": "fact",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+                "b483b7053c399c08c6dda5f920df09583302d343c6137965772e2e3afa2953f4"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Aussage ist als berichtete Position belegt, nicht als Verhandlungsergebnis.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "Die Meldung zeigt zunächst ein öffentliches Verhandlungssignal, aber keine belegte Zustandsveränderung im Krieg.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+                "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Kein unabhängiger Beleg für konkrete Folgen oder Kurswechsel liegt vor.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Öffentliche Forderungen nach Kompromissen können den Verhandlungsrahmen verändern und Erwartungen an weitere Gespräche verschieben.",
+              "type": "impact_potential",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+              ],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Der Pfad ist plausibel, aber nicht belegt; Reaktionen der Seiten fehlen.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Wenn die Botschaft als Vorfestlegung gelesen wird, kann sie Verhandlungsspielräume auch verengen.",
+              "type": "impact_risk",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Quellen nennen keine Reaktion, deshalb bleibt es ein mögliches Risiko.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Für Menschen ist die Relevanz hoch, weil ein erfolgreicher Verhandlungspfad Sicherheit und zivile Belastung verbessern könnte.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Dies beschreibt Wirkungspotenzial, nicht eingetretene Wirkung.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Für Demokratie ist die Relevanz mittel, weil die Verhandlungen staatliche Entscheidungsmacht und öffentliche Konfliktbearbeitung berühren.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Der demokratische Effekt ist indirekt und noch nicht als Wirkung belegt.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Aus den Quellen ergibt sich kein direkter Umweltbezug.",
+              "type": "fact",
+              "source_ids": [
+                "0de4a1ffe02aebd0971a78a2b70582e27cc80fa2d2742ca4d6fffe0f8f459d05",
+                "bb6fb1a55de96885be6cb9cf16c2f4901f27bd1bb09e07927c6fc295a4ec3e73"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Ein indirekter Umweltbezug wäre nur über spätere Kriegsfolgen denkbar, die hier nicht belegt sind.",
+              "date": "2026-09-07"
+            }
+          ]
+        }
+      ]
     }
   ],
   "retry_state": {
@@ -19389,31 +19983,16 @@
       ],
       "reason": "AI_PROVIDER_OUTPUT_INVALID"
     },
-    "wt-8f7ac0654a780960": {
-      "fingerprint": "78522ed7a608806cb3fb963a0a4eea1577746ec2d5d1136d08c1010801b11adc",
-      "method_version": "1.0",
-      "attempts": 3,
-      "last_attempt_at": "2026-09-07T17:25:50.466Z",
-      "next_attempt_at": "2026-09-07T18:25:50.466Z",
-      "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG"
-      ],
-      "reason": "AI_PROVIDER_OUTPUT_INVALID"
-    },
     "wt-cf03acddb911d861": {
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-07T18:08:22.781Z",
-      "next_attempt_at": "2026-09-07T18:38:22.781Z",
+      "attempts": 3,
+      "last_attempt_at": "2026-09-07T18:38:42.972Z",
+      "next_attempt_at": "2026-09-07T19:38:42.972Z",
       "quality_errors": [
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_AUTHOR_PERSPECTIVE_REQUIRED",
-        "EDITORIAL_JOURNALISTIC_REVIEW_REQUIRED",
-        "EDITORIAL_POSITIVE_PATH_UNGROUNDED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_AUTHOR_PERSPECTIVE_REQUIRED,EDITORIAL_JOURNALISTIC_REVIEW_REQUIRED,EDITORIAL_POSITIVE_PATH_UNGROUNDED,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
