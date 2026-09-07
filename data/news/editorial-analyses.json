@@ -17469,10 +17469,14 @@
     "wt-f7d7115a53ff2c2f": {
       "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-07T16:10:55.661Z",
-      "next_attempt_at": "2026-09-07T16:40:55.661Z",
-      "quality_errors": [],
+      "attempts": 3,
+      "last_attempt_at": "2026-09-07T16:55:22.139Z",
+      "next_attempt_at": "2026-09-07T17:55:22.139Z",
+      "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH"
+      ],
       "reason": "AI_PROVIDER_OUTPUT_INVALID"
     },
     "wt-8f7ac0654a780960": {
