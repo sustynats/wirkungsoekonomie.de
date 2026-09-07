@@ -21141,14 +21141,15 @@
     "wt-cf03acddb911d861": {
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
       "method_version": "1.0",
-      "attempts": 4,
-      "last_attempt_at": "2026-09-07T20:43:17.028Z",
-      "next_attempt_at": "2026-09-07T22:43:17.028Z",
+      "attempts": 5,
+      "last_attempt_at": "2026-09-07T22:51:56.422Z",
+      "next_attempt_at": "2026-09-08T02:51:56.422Z",
       "quality_errors": [
-        "EDITORIAL_SEO_LENGTH",
-        "EDITORIAL_ARTICLE_LENGTH"
+        "EDITORIAL_AUTHOR_PERSPECTIVE_REQUIRED",
+        "EDITORIAL_JOURNALISTIC_REVIEW_REQUIRED",
+        "EDITORIAL_POSITIVE_PATH_UNGROUNDED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SEO_LENGTH,EDITORIAL_ARTICLE_LENGTH"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_AUTHOR_PERSPECTIVE_REQUIRED,EDITORIAL_JOURNALISTIC_REVIEW_REQUIRED,EDITORIAL_POSITIVE_PATH_UNGROUNDED"
     },
     "wt-1c2c187d0b858b7c": {
       "fingerprint": "1fb3d62e28487277e32caff82efe2522cea1c8dd8c40697b1be02c774c4c3013",
