@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-07T18:03:30.473Z",
+  "updated_at": "2026-09-07T18:25:32.431Z",
   "candidates": [
     {
       "story_id": "wt-a030a1d903caa413",
@@ -42,8 +42,8 @@
         "reasons": []
       },
       "fingerprint": "3fea231ac7ff3b3e8940c80c748eab1bccc21dc3b1e980ca578eb653d50073c9",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-340bd54aa1fd"
     },
     {
       "story_id": "wt-cf03acddb911d861",
@@ -18743,6 +18743,608 @@
         }
       ],
       "reading_time_minutes": 11
+    },
+    {
+      "analysis_id": "woek-analysis-340bd54aa1fd",
+      "story_id": "wt-a030a1d903caa413",
+      "related_story_ids": [
+        "wt-a030a1d903caa413",
+        "wt-2cf5f0c5e42720ec"
+      ],
+      "related_case_id": null,
+      "slug": "hambacher-forst-wenn-die-fahndung-leer-ausgeht-bleibt-das-sicherheitsproblem-trotz-340bd5",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "3fea231ac7ff3b3e8940c80c748eab1bccc21dc3b1e980ca578eb653d50073c9",
+      "candidate_score": 69,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 8,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-07T18:25:32.431Z",
+      "updated_at": "2026-09-07T18:25:32.431Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet der erfolglose Großeinsatz am Hambacher Forst systemisch für den Schutz kritischer Infrastruktur – und was sagt er noch nicht aus?",
+      "analysis_type": "case_analysis",
+      "title": "Hambacher Forst: Wenn die Fahndung leer ausgeht, bleibt das Sicherheitsproblem trotzdem real",
+      "subtitle": "Der Einsatz änderte die Lage der Ermittlungen, nicht die Lage der Versorgung. Genau darin liegt der zusätzliche systemische Zusammenhang.",
+      "teaser": "Die Polizei fand am Hambacher Forst keinen Hinweis auf den gesuchten Mann. Für die Stromversorgung ist damit nichts belegt – für die Sicherheitsarchitektur aber schon: Ermittlungen, Schutzbedarf und öffentliche Risikowahrnehmung verschieben sich.",
+      "seo_description": "Hambacher Forst: Der erfolglose Großeinsatz verschiebt Ermittlungen, Schutzbedarf und Risikowahrnehmung – ohne belegte Versorgungsstörung.",
+      "additional_value": "Der Beitrag trennt sauber zwischen dem konkreten Einsatz, dem offenen Zusammenhang zu weiteren Fällen und der systemischen Frage, wie kritische Infrastruktur auf verdächtige Sabotage reagiert. Er zeigt, warum ein erfolgloser Zugriff trotzdem Folgen haben kann: für Polizei, Betreiber, Lagebilder und Vertrauen – aber nicht automatisch für die Versorgung selbst.",
+      "research_summary": "Die Quellen berichten übereinstimmend, dass die Polizei am Hambacher Forst nach einem 48-jährigen Verdächtigen im Zusammenhang mit Sabotageaktionen gegen das Stromnetz gesucht hat. Der Großeinsatz blieb erfolglos; es wurden keine Hinweise gefunden, die Fahndung läuft weiter. Zusätzlich nennen die Quellen weitere Ermittlungsstände: In Sachsen wurden zwölf selbstgebaute Sprengvorrichtungen an Stromtrassen entdeckt, in Berlin wurde ein Umspannwerk durch ein Feuer beschädigt; die Ursache ist dort offen und die Stromversorgung soll nicht beeinträchtigt gewesen sein. Ein Zusammenhang zwischen den Fällen ist nicht belegt, wird aber behördlich geprüft.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Der Einsatz änderte den Ermittlungsstand, nicht die Versorgungslage",
+          "paragraphs": [
+            "Am Hambacher Forst suchte die Polizei mit großem Aufgebot nach einem 48-jährigen Tatverdächtigen. Der Einsatz blieb ohne Erfolg, Hinweise auf die gesuchte Person wurden nicht gefunden. Die Fahndung läuft weiter. Das ist die konkrete Nachricht in Alltagssprache: Der Zugriff brachte keinen Treffer, die Suche selbst endet aber nicht.",
+            "Für die Wirkungsanalyse ist wichtig, was nicht belegt ist. Die Quellen zeigen keine ausgefallene Stromversorgung am Hambacher Forst. Sie zeigen auch keinen bestätigten Zusammenhang zwischen den Fällen in Nordrhein-Westfalen, Sachsen, Brandenburg und Berlin. Damit bleibt die Lage eine Lage der Ermittlungen – nicht schon eine Lage der eingetretenen Versorgungsschäden."
+          ],
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "1. Großeinsatz ohne Treffer",
+                "text": "Die Polizei sucht am Hambacher Forst und findet den Verdächtigen nicht.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Nur der Einsatz selbst ist belegt; kein Hinweis auf einen Fund",
+                "source_ids": [
+                  "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e"
+                ]
+              },
+              {
+                "title": "2. Fahndung bleibt aktiv",
+                "text": "Die Ermittlungen laufen weiter und binden weitere Aufmerksamkeit.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Fortsetzung der Fahndung laut Polizei",
+                "source_ids": [
+                  "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+                ]
+              },
+              {
+                "title": "3. Lagebild wird komplexer",
+                "text": "Andere Funde an Stromanlagen werden mitgeprüft, ohne dass ein Zusammenhang schon bewiesen wäre.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Nur wenn Behörden die Fälle weiter zusammenführen",
+                "source_ids": [
+                  "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+                ]
+              },
+              {
+                "title": "4. Schutzbedarf steigt als Reaktionslogik",
+                "text": "Betreiber und Behörden können Schutz und Überwachung anpassen, weil die Bedrohungslage nicht geklärt ist.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn die Unsicherheit anhält",
+                "source_ids": [
+                  "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "system",
+          "title": "Systemisch ist nicht der Wald der Punkt, sondern die kritische Infrastruktur dahinter",
+          "paragraphs": [
+            "Der zusätzliche Zusammenhang liegt nicht im Ort des Einsatzes, sondern im System, das dahintersteht. Stromleitungen, Umspannwerke und die Behörden, die sie schützen, gehören zu einer Infrastruktur, deren Ausfall nicht nur Technik betrifft, sondern Alltag, Wirtschaft und Sicherheit. Schon der Verdacht auf Sabotage verschiebt deshalb Prioritäten: Wer sucht, wer schützt, wer prüft Zusammenhänge – das wird selbst zum Teil der Wirkung.",
+            "Wirkungsökonomisch ist das ein typischer Pfad über eine gekoppelte Kette: ein Sicherheitsvorfall oder Verdacht erzeugt Reaktionsdruck; Reaktionsdruck bindet Personal und Aufmerksamkeit; mehr Aufmerksamkeit kann Schutz verbessern, aber zugleich andere Aufgaben verdrängen. Das ist keine Wirkung im Sinn einer eingetretenen Schädigung der Versorgung, sondern ein Wirkpfad im Sicherheits- und Steuerungssystem."
+          ],
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ]
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Die Relevanz liegt vor allem bei Sicherheit und Vertrauen",
+          "paragraphs": [
+            "Für Menschen ist der belegte Kern vor allem die Sicherheitsfrage: Wenn an Stromanlagen Sabotage vermutet wird, steigt der Druck auf Polizei, Betreiber und Notfallstrukturen. Für Frauen und Kinder lässt sich aus den Quellen kein eigener Sonderpfad belegen; relevant bleibt aber allgemein die erreichbare Hilfe, falls Infrastruktur oder Einsatzlagen länger angespannt wären. Auch das bleibt hier offen, nicht belegt.",
+            "Für die Demokratie ist der Pfad indirekt. Kritische Infrastruktur zu schützen ist eine Kernaufgabe staatlicher Handlungsfähigkeit. Wenn mehrere Fälle gleichzeitig geprüft werden und der Zusammenhang noch offen ist, wird Vertrauen nicht automatisch beschädigt. Aber die staatliche Lern- und Reaktionsfähigkeit steht sichtbar unter Beobachtung. Für den Planeten ergibt sich aus den Quellen kein belastbarer direkter Pfad."
+          ],
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "1. Sabotageverdacht",
+                "text": "Der Staat prüft Angriffe auf Stromanlagen.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur bei fortbestehendem Verdacht",
+                "source_ids": [
+                  "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e"
+                ]
+              },
+              {
+                "title": "2. Schutz wird hochgefahren",
+                "text": "Mehr Polizei, mehr Ermittlungen, mehr Kontrolle um Anlagen herum.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn Behörden Schutzmaßnahmen nachschärfen",
+                "source_ids": [
+                  "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+                ]
+              },
+              {
+                "title": "3. Ressourcen verschieben sich",
+                "text": "Andere Aufgaben können vorübergehend weniger Aufmerksamkeit bekommen.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Bei längerer Unsicherheit oder weiteren Funden",
+                "source_ids": [
+                  "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+                ]
+              },
+              {
+                "title": "4. Vertrauen hängt an Aufklärung",
+                "text": "Je schneller der Zusammenhang geklärt wird, desto eher stabilisiert sich das Sicherheitsvertrauen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Nur wenn die Ermittlungen belastbare Klarheit liefern",
+                "source_ids": [
+                  "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Erst Einsatz, dann Ressourcendruck, dann mögliche Nachsteuerung",
+          "paragraphs": [
+            "Auf erster Ordnung wirkt der Bericht auf die Lage der Ermittlungen: Die Fahndung bleibt offen, der Zugriff war erfolglos. Auf zweiter Ordnung kann daraus ein größerer Schutz- und Koordinationsaufwand entstehen, wenn Behörden weitere Anlagen und mögliche Zusammenhänge mitdenken. Auf dritter Ordnung wäre denkbar, dass Betreiber und staatliche Stellen Sicherheitsroutinen anpassen. Diese dritte Ordnung ist hier aber nur als plausibler Pfad, nicht als eingetretene Folge zu lesen.",
+            "Genau hier ist die Trennlinie wichtig: Reichweite ist nicht Wirkung. Dass über mehrere Bundesländer berichtet wird, heißt noch nicht, dass es schon eine systemische Kaskade gegeben hat. Die Quellen tragen eine offene, aber ernst zu nehmende Kette von Sicherheitsreaktionen – mehr nicht."
+          ],
+          "source_ids": [
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ]
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Die Behörden reagieren, doch die Unsicherheit frisst Kapazität",
+          "paragraphs": [
+            "Resilienz zeigt sich hier nicht an einem heroischen Erfolg, sondern an der Fähigkeit, trotz offener Lage weiterzuermitteln. Dass die Fahndung fortgesetzt wird, spricht für Reaktionsfähigkeit. Gleichzeitig ist die Unsicherheit selbst ein Kostenfaktor: Solange nicht klar ist, ob die Fälle zusammenhängen und wer verantwortlich ist, müssen Polizei und Betreiber auf mehreren Ebenen vorsorgen.",
+            "Das ist der typische Resilienzkonflikt in kritischer Infrastruktur: Mehr Schutz kann nötig sein, wenn die Lage unklar bleibt. Aber mehr Schutz kostet Personal, Zeit und Geld. Diese Schutzplanken begrenzen das Risiko, sie kompensieren es nicht. Sie sind also keine positive Gegenwirkung im eigentlichen Sinn, sondern eine defensive Begrenzung des Schadenspfads."
+          ],
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e"
+          ]
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was offen bleibt, ist hier der entscheidende Teil der Nachricht",
+          "paragraphs": [
+            "Offen bleibt, ob der Gesuchte tatsächlich verantwortlich ist. Offen bleibt auch, ob die Vorfälle in Nordrhein-Westfalen, Sachsen, Brandenburg und Berlin zusammenhängen. Bei Berlin bleibt zudem offen, ob ein technischer Defekt oder eine Straftat vorliegt. Das sind keine Randnotizen, sondern die Bedingungen, unter denen jeder weitere Wirkpfad erst plausibel wird.",
+            "Deshalb ist die analytische Vorsicht keine Schwäche, sondern die eigentliche Stärke. Wo der Beweis fehlt, darf man keinen eingetretenen Schaden behaupten. Wo die Verbindung nicht belegt ist, sollte man keine Kette als Fakt darstellen. Die belastbare Aussage lautet derzeit: Sicherheitslage und Lagebild sind angespannt; eine konkrete Versorgungsschädigung ist in den Quellen nicht belegt."
+          ],
+          "source_ids": [
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ]
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Worauf es als Nächstes ankommt",
+          "paragraphs": [
+            "Beobachten sollte man drei Dinge: Erstens, ob die Polizei neue Hinweise zum Gesuchten findet. Zweitens, ob die Behörden einen Zusammenhang zwischen den Fällen bestätigen oder verwerfen. Drittens, ob bei Stromanlagen konkrete Schutzmaßnahmen folgen. Erst an diesen Punkten lässt sich beurteilen, ob aus der offenen Sicherheitslage eine echte Kaskade wird.",
+            "Für die Berichterstattung heißt das auch: nicht mehr Zusammenhang behaupten, als die Quellen tragen. Und nicht aus der bloßen Größe des Einsatzes auf eine bereits eingetretene Wirkung schließen. Der Einsatz ist sichtbar, die Wirkung bleibt in Teilen offen."
+          ],
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ]
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Der Fall zeigt die Macht der Unsicherheit über das System",
+          "paragraphs": [
+            "Der eigentliche systemische Zusatznutzen dieser Meldung liegt in einer einfachen Einsicht: Nicht nur Sabotage kann Wirkung haben, sondern auch der Verdacht darauf. Er zwingt Behörden, Betreiber und Öffentlichkeit in eine Lage, in der Schutz, Koordination und Vertrauen neu austariert werden. Das ist noch keine belegte Versorgungskrise. Aber es ist eine reale Veränderung im Sicherheits- und Steuerungssystem.",
+            "Mein Fazit: Der erfolglose Großeinsatz am Hambacher Forst ist nicht bedeutungslos, gerade weil er keinen Verdächtigen brachte. Er zeigt, wie schnell kritische Infrastruktur zum Prüfstein staatlicher Handlungsfähigkeit wird. Solange der Zusammenhang der Fälle offen bleibt, ist die wichtigste Folge nicht der Schaden an der Leitung, sondern die Arbeit an einem belastbaren Lagebild."
+          ],
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ]
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Die Polizei hat am Hambacher Forst nach einem 48-jährigen Tatverdächtigen im Zusammenhang mit Sabotageaktionen gegen das Stromnetz gesucht.",
+          "type": "fact",
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Zuordnung zur Tatverdächtigen-Suche ist belegt; Tatbegehung selbst bleibt in den Quellen nicht abschließend bewiesen.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Der Großeinsatz blieb ohne Erfolg; es wurden keine Hinweise gefunden, die Fahndung läuft weiter.",
+          "type": "fact",
+          "source_ids": [
+            "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quelle benennt keinen festgenommenen Verdächtigen.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "In Sachsen wurden zwölf selbstgebaute Sprengvorrichtungen an Stromtrassen entdeckt; die Behörden prüfen einen Zusammenhang mit Brandenburg und Nordrhein-Westfalen.",
+          "type": "fact",
+          "source_ids": [
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Der Zusammenhang ist behördlich geprüft, aber nicht belegt.",
+          "date": "2026-09-06"
+        },
+        {
+          "claim": "In Berlin wurde ein Umspannwerk durch ein Feuer beschädigt; Ursache und Straftatverdacht sind offen, eine Beeinträchtigung der Stromversorgung wurde nicht belegt.",
+          "type": "fact",
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Ursache des Feuers bleibt offen.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Der Einsatz am Hambacher Forst verändert den Ermittlungsstand und damit das Lagebild zu kritischer Infrastruktur.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Der Einfluss betrifft das Lagebild und die Ermittlungsorganisation, nicht eine belegte Versorgungsschädigung.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Der Vorfall erzeugt ein Wirkungspotenzial für zusätzliche Schutz- und Ermittlungsmaßnahmen an kritischer Infrastruktur.",
+          "type": "impact_potential",
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Ein solches Nachsteuern ist plausibel, aber in den Quellen nicht als Maßnahme dokumentiert.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Eine direkte Versorgungsstörung ist in den vorliegenden Quellen nicht belegt.",
+          "type": "fact",
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Es liegen keine gegenteiligen Belege in den Quellen vor.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Der Verdacht auf Sabotage kann Polizei, Betreiber und Öffentlichkeit in eine Reaktions- und Schutzlogik zwingen.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Quellen belegen Reaktionen und offene Ermittlungen, aber keine vollständige Kaskade.",
+          "date": "2026-09-07"
+        },
+        {
+          "claim": "Die demokratische Relevanz liegt vor allem in der staatlichen Handlungsfähigkeit zum Schutz kritischer Infrastruktur.",
+          "type": "woek_definition",
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Dies ist eine methodische Einordnung, keine Quellenbehauptung über einen eingetretenen demokratischen Schaden.",
+          "date": "2026-09-07"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellen belegen keine Beeinträchtigung der Stromversorgung durch den Berliner Brand; damit fehlt ein zentraler direkter Schadenspfad.",
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ],
+          "effect_on_assessment": "Begrenzt die Bewertung auf Sicherheits- und Ermittlungsfolgen; eine Versorgungskrise darf nicht behauptet werden."
+        },
+        {
+          "finding": "Ein Zusammenhang zwischen den Fällen in Nordrhein-Westfalen, Sachsen, Brandenburg und Berlin ist nicht belegt, sondern nur behördlich geprüft.",
+          "source_ids": [
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ],
+          "effect_on_assessment": "Schwächt jede These über eine abgeschlossene Kaskade und hält die Systemwirkung im Bereich des offenen Pfads."
+        },
+        {
+          "finding": "Der Großeinsatz am Hambacher Forst blieb ohne Treffer.",
+          "source_ids": [
+            "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+          ],
+          "effect_on_assessment": "Verlagert die Bewertung weg vom Eingriffsresultat hin zum offenen Ermittlungs- und Schutzbedarf."
+        }
+      ],
+      "editorial_rules_version": "2.0",
+      "executive_finding": "Der Großeinsatz am Hambacher Forst hat keinen Verdächtigen geliefert, aber das Lagebild verändert. Für die Stromversorgung ist in den Quellen keine Störung belegt. Systemisch relevant ist etwas anderes: Der Verdacht auf Sabotage bindet Polizei, Betreiber und Aufmerksamkeit an kritischer Infrastruktur. Die wichtigste Bedingung bleibt offen – ob die Fälle zusammenhängen. Erst dann ließe sich von einer echten Kaskade sprechen.",
+      "subject_dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Risiken für Menschen entstehen über den Schutz kritischer Infrastruktur und die Handlungsfähigkeit von Polizei und Einsatzkräften; eine konkrete Versorgungsschädigung ist nicht belegt.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "mixed",
+          "magnitude": "medium",
+          "evidence": "plausible_path"
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umweltpfad; ein indirekter Zusammenhang über Energieinfrastruktur bleibt offen.",
+          "implementation_status": "open",
+          "likelihood": "open",
+          "direction": "open",
+          "magnitude": "open",
+          "evidence": "open"
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Relevant ist die staatliche Fähigkeit, kritische Infrastruktur zu schützen und Ermittlungen trotz Unsicherheit zu steuern.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "mixed",
+          "magnitude": "medium",
+          "evidence": "plausible_path"
+        }
+      },
+      "assessment_context": "open",
+      "assessment_condition": "Die Bewertung gilt nur solange weder ein bestätigter Zusammenhang der Fälle noch eine belegte Versorgungsschädigung vorliegt.",
+      "author_perspective": {
+        "paragraphs": [
+          "Ich halte den Fall gerade deshalb für wichtig, weil er auf den ersten Blick unspektakulär wirkt: Ein großer Polizeieinsatz endet ohne Fund, und doch verschiebt sich etwas im System. Aus meiner Sicht liegt die Relevanz nicht in einer dramatisierten Sofortwirkung, sondern in der nüchternen Folge für Schutz, Ermittlungen und Vertrauen. Wer kritische Infrastruktur angreift oder den Verdacht darauf auslöst, zwingt den Staat in eine dauerhafte Reaktionslage. Ich finde es deshalb richtig, hier klar zwischen belegter Wirkung und bloßem Risiko zu trennen. Genau diese Trennung schützt vor Übertreibung – und vor Verharmlosung."
+        ],
+        "claim_indices": [
+          4,
+          5,
+          6
+        ],
+        "origin": "generated_from_analysis"
+      },
+      "positive_path_checks": [
+        {
+          "measure": "Gezielte Schutz- und Lagebildanpassung an Stromanlagen durch Polizei und Betreiber",
+          "source_ids": [
+            "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+          ],
+          "mechanism": "Wenn offene Sabotageverdachtsfälle ernst genommen werden, können Behörden Überwachung, Prüfung und Koordination nachschärfen; daraus entsteht ein defensiver Nutzen für Resilienz, nicht automatisch eine positive Gesamtwirkung."
+        }
+      ],
+      "counter_evidence_search": {
+        "checked": true,
+        "result": "Gefunden wurden vor allem Grenzen: keine belegte Versorgungsstörung, kein bestätigter Zusammenhang der Fälle und kein bestätigter Fahndungserfolg. Diese Grenzen begrenzen die Zurechnung auf Sicherheits- und Ermittlungsfolgen."
+      },
+      "editorial_quality": {
+        "false_balance_checked": true,
+        "concrete_positive_paths_only": true,
+        "likelihood_direction_separated": true,
+        "safeguards_as_limits": true,
+        "evidence_bound_judgment": true,
+        "reader_takeaway_clear": true,
+        "concrete_language_checked": true,
+        "visuals_explain_mechanism": true,
+        "author_perspective_separated": true
+      },
+      "what_changes_the_assessment": [
+        "Ein bestätigter Zusammenhang zwischen den Fällen würde die Systemwirkung deutlich erhöhen.",
+        "Eine bestätigte oder widerlegte Ursache des Berliner Umspannwerks würde den Schadenspfad präzisieren.",
+        "Neue Hinweise zur Identität oder Lage des Gesuchten würden die Zurechnung der Ereignisse verändern."
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Hambacher Forst: Warum ein erfolgloser Großeinsatz für das Stromnetz trotzdem Folgen hat",
+        "recommended_summary": "Der Fehlgriff der Polizei ist kein Versorgungsereignis, aber ein Sicherheitsereignis. Er verschiebt Ermittlungen, Schutzbedarf und das Lagebild rund um kritische Infrastruktur.",
+        "recommended_meta_description": "Hambacher Forst: Der erfolglose Großeinsatz verschiebt Ermittlungen, Schutzbedarf und Risikowahrnehmung – ohne belegte Versorgungsstörung."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
+          "published_at": "2026-09-06T18:19:40.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-100.html",
+          "published_at": "2026-09-06T20:15:54.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-102.html",
+          "published_at": "2026-09-07T06:31:50.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-07T18:25:32.431Z",
+          "source_fingerprint": "3fea231ac7ff3b3e8940c80c748eab1bccc21dc3b1e980ca578eb653d50073c9",
+          "title": "Hambacher Forst: Wenn die Fahndung leer ausgeht, bleibt das Sicherheitsproblem trotzdem real",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Die Polizei hat am Hambacher Forst nach einem 48-jährigen Tatverdächtigen im Zusammenhang mit Sabotageaktionen gegen das Stromnetz gesucht.",
+              "type": "fact",
+              "source_ids": [
+                "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+                "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Zuordnung zur Tatverdächtigen-Suche ist belegt; Tatbegehung selbst bleibt in den Quellen nicht abschließend bewiesen.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Der Großeinsatz blieb ohne Erfolg; es wurden keine Hinweise gefunden, die Fahndung läuft weiter.",
+              "type": "fact",
+              "source_ids": [
+                "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
+                "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle benennt keinen festgenommenen Verdächtigen.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "In Sachsen wurden zwölf selbstgebaute Sprengvorrichtungen an Stromtrassen entdeckt; die Behörden prüfen einen Zusammenhang mit Brandenburg und Nordrhein-Westfalen.",
+              "type": "fact",
+              "source_ids": [
+                "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Der Zusammenhang ist behördlich geprüft, aber nicht belegt.",
+              "date": "2026-09-06"
+            },
+            {
+              "claim": "In Berlin wurde ein Umspannwerk durch ein Feuer beschädigt; Ursache und Straftatverdacht sind offen, eine Beeinträchtigung der Stromversorgung wurde nicht belegt.",
+              "type": "fact",
+              "source_ids": [
+                "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Ursache des Feuers bleibt offen.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Der Einsatz am Hambacher Forst verändert den Ermittlungsstand und damit das Lagebild zu kritischer Infrastruktur.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+                "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Der Einfluss betrifft das Lagebild und die Ermittlungsorganisation, nicht eine belegte Versorgungsschädigung.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Der Vorfall erzeugt ein Wirkungspotenzial für zusätzliche Schutz- und Ermittlungsmaßnahmen an kritischer Infrastruktur.",
+              "type": "impact_potential",
+              "source_ids": [
+                "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+                "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Ein solches Nachsteuern ist plausibel, aber in den Quellen nicht als Maßnahme dokumentiert.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Eine direkte Versorgungsstörung ist in den vorliegenden Quellen nicht belegt.",
+              "type": "fact",
+              "source_ids": [
+                "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Es liegen keine gegenteiligen Belege in den Quellen vor.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Der Verdacht auf Sabotage kann Polizei, Betreiber und Öffentlichkeit in eine Reaktions- und Schutzlogik zwingen.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
+                "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Quellen belegen Reaktionen und offene Ermittlungen, aber keine vollständige Kaskade.",
+              "date": "2026-09-07"
+            },
+            {
+              "claim": "Die demokratische Relevanz liegt vor allem in der staatlichen Handlungsfähigkeit zum Schutz kritischer Infrastruktur.",
+              "type": "woek_definition",
+              "source_ids": [
+                "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Dies ist eine methodische Einordnung, keine Quellenbehauptung über einen eingetretenen demokratischen Schaden.",
+              "date": "2026-09-07"
+            }
+          ]
+        }
+      ]
     }
   ],
   "retry_state": {
@@ -18812,19 +19414,6 @@
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
       "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_AUTHOR_PERSPECTIVE_REQUIRED,EDITORIAL_JOURNALISTIC_REVIEW_REQUIRED,EDITORIAL_POSITIVE_PATH_UNGROUNDED,EDITORIAL_SELF_FRAME_FAILED"
-    },
-    "wt-a030a1d903caa413": {
-      "fingerprint": "3fea231ac7ff3b3e8940c80c748eab1bccc21dc3b1e980ca578eb653d50073c9",
-      "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-07T17:55:23.680Z",
-      "next_attempt_at": "2026-09-07T18:10:23.680Z",
-      "quality_errors": [
-        "EDITORIAL_ARTICLE_LENGTH",
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_SELF_FRAME_FAILED"
-      ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
