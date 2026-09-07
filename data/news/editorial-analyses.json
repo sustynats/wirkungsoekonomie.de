@@ -17416,11 +17416,13 @@
     "wt-60f4e4d7d43fad99": {
       "fingerprint": "f68e99ac37a8b6579dd16fe4bca19cb8fe88ce840c7370004d3e4896b72b5653",
       "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-07T14:54:44.127Z",
-      "next_attempt_at": "2026-09-07T15:09:44.127Z",
-      "quality_errors": [],
-      "reason": "AI_PROVIDER_OUTPUT_INVALID"
+      "attempts": 2,
+      "last_attempt_at": "2026-09-07T15:24:20.633Z",
+      "next_attempt_at": "2026-09-07T15:54:20.633Z",
+      "quality_errors": [
+        "EDITORIAL_OBSERVED_IMPACT_OPEN"
+      ],
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_IMPACT_OPEN"
     }
   }
 }
