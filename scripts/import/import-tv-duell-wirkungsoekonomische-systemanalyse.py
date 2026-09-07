@@ -11,6 +11,7 @@ import html
 import json
 import re
 import shutil
+import argparse
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
@@ -52,6 +53,43 @@ class Article:
 
 
 ARTICLES = (
+    Article(
+        kind="election_result_saxony_anhalt",
+        source=ROOT / "source-assets/originals/Sachsen_Anhalt_Wahlergebnis_2026-09-07.docx",
+        image_source=ROOT / "assets/img/blog/2026-09-07-sachsen-anhalt-signal-fuer-europa.jpeg",
+        slug="sachsen-anhalt-wahlergebnis-signal-fuer-europa",
+        title="43,8 Prozent. Wir sehen das Wahlergebnis - aber sehen wir die Maschine dahinter?",
+        subtitle=(
+            "Warum Sachsen-Anhalt für mich nicht nur eine Abrechnung mit schlechter Politik ist "
+            "- und warum wir die offenen und verdeckten Einflussstrukturen hinter der "
+            "autoritären Welle endlich sichtbar machen müssen."
+        ),
+        description=(
+            "Natalie Weber ordnet das Wahlergebnis in Sachsen-Anhalt ein: "
+            "Informationsräume, internationale Einflussnetze und mögliche Folgen "
+            "für Mensch, Planet und Demokratie."
+        ),
+        date_label="7. September 2026",
+        date_iso="2026-09-07T12:00:00+02:00",
+        section="Demokratie, Wahlergebnis & Informationsräume",
+        reading_time="16 Min.",
+        image_name="2026-09-07-sachsen-anhalt-signal-fuer-europa.jpeg",
+        image_alt=(
+            "Illustrative Collage: Sachsen-Anhalt als Signal für Europa? "
+            "Wahlergebnis mit 43,8 Prozent, internationale Kommunikationsnetze "
+            "und demokratische Institutionen."
+        ),
+        tags=("Sachsen-Anhalt", "Landtagswahl 2026", "Wahlergebnis", "Demokratie",
+              "FIMI", "Desinformation", "Framing", "Informationsräume",
+              "Wirkungspotenzial", "Wirkungsrisiko", "Systemkaskade"),
+        status_note=(
+            "Persönliche Einordnung von Natalie Weber. Recherche-Stand: 7. September 2026; "
+            "das Wahlergebnis ist vorläufig, die Regierungsbildung zu diesem Zeitpunkt offen. "
+            "Belegte Informationsoperationen sind kein Nachweis dafür, dass sie dieses "
+            "Wahlergebnis verursacht haben. Beschriebene Regierungsfolgen sind Ex-ante-Risiken, "
+            "keine bereits gemessenen Schäden."
+        ),
+    ),
     Article(
         kind="tv_duell",
         source=SOURCE_DOCX,
@@ -569,6 +607,50 @@ def render_democracy_saxony_anhalt(body: ET.Element, links: dict[str, str]) -> s
     return "\n".join(output)
 
 
+def render_election_result(body: ET.Element, links: dict[str, str]) -> str:
+    """Übernimmt die freigegebene persönliche Einordnung ohne redaktionelle Umschreibung."""
+    output: list[str] = []
+    active = False
+    sources = False
+    source_list_open = False
+    for child in body:
+        if child.tag == W + "tbl":
+            # Die Vorlage verwendet Zweizellen-Tabellen als Zitatgestaltung,
+            # nicht als Datentabellen. Leere Schmuckzellen nicht veröffentlichen.
+            values = [inline_html(p, links) for p in child.findall(".//w:tc/w:p", NS)]
+            value = " ".join(v for v in values if v)
+            if value:
+                output.append(f"          <blockquote><p>{value}</p></blockquote>")
+            continue
+        if child.tag != W + "p":
+            continue
+        value = paragraph_text(child)
+        style = paragraph_style(child)
+        if style == "Heading1":
+            active = True
+        if not active or not value:
+            continue
+        if style == "Heading1":
+            sources = value == "Quellen und weiterführende Belege"
+            output.append(f"          <h2>{esc(value)}</h2>")
+            continue
+        rendered = inline_html(child, links)
+        if sources and re.match(r"^\d+\.\s", value):
+            if not source_list_open:
+                output.append('          <ol class="source-list">')
+                source_list_open = True
+            rendered = re.sub(r"^\s*\d+\.\s*", "", rendered)
+            output.append(f"            <li>{rendered}</li>")
+        else:
+            if source_list_open:
+                output.append("          </ol>")
+                source_list_open = False
+            output.append(f"          <p>{rendered}</p>")
+    if source_list_open:
+        output.append("          </ol>")
+    return "\n".join(output)
+
+
 def site_shell() -> tuple[str, str]:
     source = (ROOT / "blog/politik-an-ihren-folgen-messen.html").read_text(encoding="utf-8")
     header_start = source.index('    <header class="site-header"')
@@ -585,6 +667,8 @@ def article_content(article: Article) -> str:
         links = relationship_map(document)
     if body is None:
         raise ValueError(f"Kein Dokumentkörper in {article.source}")
+    if article.kind == "election_result_saxony_anhalt":
+        return render_election_result(body, links)
     if article.kind == "nachhaltigkeit":
         return render_nachhaltigkeit(body, links)
     if article.kind == "enap":
@@ -728,14 +812,20 @@ def update_sitemap(articles: tuple[Article, ...]) -> None:
 
 
 def main() -> None:
-    for article in ARTICLES:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--only", help="Nur diesen Journal-Slug erzeugen")
+    args = parser.parse_args()
+    articles = tuple(article for article in ARTICLES if not args.only or article.slug == args.only)
+    if not articles:
+        parser.error("Unbekannter Journal-Slug")
+    for article in articles:
         if not article.source.is_file() or not article.image_source.is_file():
             raise FileNotFoundError(f"Quelle fehlt: {article.source} oder {article.image_source}")
     header, footer = site_shell()
-    for article in ARTICLES:
+    for article in articles:
         write_article(article, header, footer)
         print(f"Erzeugt: blog/{article.slug}.html")
-    update_sitemap(ARTICLES)
+    update_sitemap(articles)
     print("Aktualisiert: sitemap.xml")
 
 
