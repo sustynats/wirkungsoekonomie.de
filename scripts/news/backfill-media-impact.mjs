@@ -1,4 +1,7 @@
 import fs from "node:fs";
+import { backgroundBatchEligibility, batchWorkPriority, createNewsBatchClient, BATCH_RESERVATION_USD } from './batch.mjs';
+import { sourceIntegrityForStory } from './source-integrity.mjs';
+import { loadNewsRegistry } from './registry.mjs';
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildNewsSite } from "./build.mjs";
@@ -49,6 +52,7 @@ export function buildMediaBackfillPrompt(story, trigger = detectMediaImpactTrigg
 export async function backfillMediaImpact({
   root = DEFAULT_ROOT, limit = 10, dryRun = true, now = new Date().toISOString(), callAiImpl = callWoekAi, build = buildNewsSite,
   apiUrl = process.env.WOEK_NEWS_API_URL, authToken = process.env.WOEK_NEWS_ANALYSIS_TOKEN,
+  batchEnabled = process.env.WOEK_NEWS_BATCH_ENABLED === 'true', backgroundOnly = false, batchFetchImpl,
 } = {}) {
   if (!Number.isInteger(limit) || limit < 1 || limit > 100) throw new Error("MEDIA_BACKFILL_LIMIT_INVALID");
   const storiesFile = path.join(root, "data/news/stories.json");
@@ -64,10 +68,18 @@ export async function backfillMediaImpact({
   const obsolete = reviewed.filter(({ story, trigger }) => !trigger.relevant && story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_impact?.relevant);
   const normalizable = reviewed.map(({ story, trigger }) => ({ story, trigger, sanitized: trigger.relevant && story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_trigger_fingerprint === trigger.fingerprint && story.analysis.media_impact ? sanitizeMediaImpact(story.analysis.media_impact, story, trigger).media_impact : null })).filter(({ story, sanitized }) => sanitized && JSON.stringify(sanitized) !== JSON.stringify(story.analysis.media_impact));
   const candidates = reviewed.filter(({ story, trigger }) => trigger.relevant && !(story.analysis.media_analysis_version === MEDIA_ANALYSIS_VERSION && story.analysis.media_trigger_fingerprint === trigger.fingerprint));
-  const selected = candidates.slice(0, limit);
+  const eligibleCandidates = candidates.filter(({ story }) => !backgroundOnly || backgroundBatchEligibility(story, { kind: 'media_backfill', now, state }).eligible);
+  const selected = (batchEnabled ? eligibleCandidates.sort((a, b) => batchWorkPriority(state, a.story, 'media_backfill') - batchWorkPriority(state, b.story, 'media_backfill')) : eligibleCandidates).slice(0, limit);
   const result = { schema_version: "1.0", dry_run: dryRun, started_at: now, candidates: candidates.length, selected: selected.length, obsolete_checks: obsolete.length, normalizable_checks: normalizable.length, completed: 0, cleaned: 0, normalized: 0, failed: [], ai_requests: 0, quality_retries: 0, media_check_tokens: 0, media_check_cost_usd: 0, self_frame_rewrites: 0, budget_status: budget.status };
   if (dryRun) return result;
-  if (budget.status !== "ok") throw new Error("MEDIA_BACKFILL_BUDGET_FX_UNAVAILABLE");
+  const batchClient = batchEnabled ? createNewsBatchClient({ state, usage, apiUrl, authToken, now, fetchImpl: batchFetchImpl,
+    canSubmit: () => budget.status === 'ok' && monthlyUsage(usage, month) + result.media_check_cost_usd + BATCH_RESERVATION_USD + 1 <= budget.technical_limit_usd,
+    save: () => { writeAtomic(usageFile, usage); writeAtomic(stateFile, state); } }) : null;
+  if (batchClient) { await batchClient.reconcile(); result.batch = batchClient.report; }
+  if (batchClient) for (const story of store.stories) for (const version of story.versions || []) {
+    if (version.batch_key && version.mode === 'media_impact_backfill') batchClient.applied(version, { updated_stories: 1 });
+  }
+  if (budget.status !== "ok" && !batchClient) throw new Error("MEDIA_BACKFILL_BUDGET_FX_UNAVAILABLE");
   for (const { story, trigger } of obsolete) {
     const version = Number(story.current_version || 0) + 1;
     const nextAnalysis = { ...story.analysis, media_impact: null, media_checked_at: now, media_trigger_fingerprint: trigger.fingerprint, media_trigger: mediaTriggerRecord(trigger, story) };
@@ -97,7 +109,8 @@ export async function backfillMediaImpact({
     writeAtomic(storiesFile, store);
   }
   for (const { story, trigger } of selected) {
-    if (spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) { result.failed.push({ story_id: story.story_id, reason: "AI_BUDGET_BLOCKED" }); break; }
+    const batchEligible = batchClient && backgroundBatchEligibility(story, { kind: 'media_backfill', now, state }).eligible;
+    if (!batchEligible && (budget.status !== 'ok' || spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd)) { result.failed.push({ story_id: story.story_id, reason: "AI_BUDGET_BLOCKED" }); continue; }
     let requestPending = false;
     try {
       let ai;
@@ -106,15 +119,17 @@ export async function backfillMediaImpact({
       let localReport;
       let qualityErrors = [];
       for (let qualityAttempt = 0; qualityAttempt < 2; qualityAttempt += 1) {
-        if (qualityAttempt && spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) throw new Error("AI_BUDGET_BLOCKED");
+        if (!batchEligible && qualityAttempt && spend + NEWS_REQUEST_RESERVATION_USD > budget.technical_limit_usd) throw new Error("AI_BUDGET_BLOCKED");
         const prompt = buildMediaBackfillPrompt(story, trigger, qualityErrors);
-        requestPending = true;
-        ai = await callAiImpl([story], { apiUrl, authToken, attempts: 3, timeoutMs: 120000, clientId: "woek-wirkungsticker-media-backfill-v1", context: "Wirkungsticker: selektiver, versionierter Medien- und Sprachwirkungs-Backfill", prompt });
+        if (batchEligible && sourceIntegrityForStory(story, loadNewsRegistry(root), [], now).status !== 'verified') throw new Error('MEDIA_BATCH_SOURCE_INTEGRITY_OPEN');
+        if (backgroundOnly && !batchEligible) throw Object.assign(new Error('BATCH_NOT_ELIGIBLE'), { batchDeferred: true });
+        requestPending = !batchEligible;
+        ai = batchEligible ? await batchClient.call(story, { kind: 'media_backfill', methodVersion: MEDIA_ANALYSIS_VERSION, prompt }) : await callAiImpl([story], { apiUrl, authToken, attempts: 3, timeoutMs: 120000, clientId: "woek-wirkungsticker-media-backfill-v1", context: "Wirkungsticker: selektiver, versionierter Medien- und Sprachwirkungs-Backfill", prompt });
         requestPending = false;
-        result.ai_requests += Number(ai.request_attempts || 1);
+        result.ai_requests += ai.batch_key ? 0 : Number(ai.request_attempts || 1);
         result.last_model = ai.model;
         result.last_provider = ai.provider;
-        const callCost = costFromUsage(ai, estimateUsage(ai.prompt_chars, ai.answer_chars, ai.model, modelRates(ai.model)));
+        const callCost = ai.batch_key ? { input_tokens: 0, output_tokens: 0, estimated_cost_usd: 0 } : costFromUsage(ai, estimateUsage(ai.prompt_chars, ai.answer_chars, ai.model, modelRates(ai.model)));
         spend += callCost.estimated_cost_usd;
         result.media_check_tokens += callCost.input_tokens + callCost.output_tokens;
         result.media_check_cost_usd = Number((result.media_check_cost_usd + callCost.estimated_cost_usd).toFixed(6));
@@ -140,7 +155,7 @@ export async function backfillMediaImpact({
       story.updated_at = now;
       story.versions = [...(story.versions || []), {
         version, analyzed_at: now, content_hash: story.content_hash, source_summary: story.source_summary, analysis: nextAnalysis,
-        provider: ai.provider, model: ai.model, mode: "media_impact_backfill", method_sources: ai.method_sources || [], claims: story.claims,
+        provider: ai.provider, model: ai.model, mode: "media_impact_backfill", ...(ai.batch_key ? { batch_key: ai.batch_key, processing_mode: 'batch' } : {}), method_sources: ai.method_sources || [], claims: story.claims,
         source_versions: (story.sources || []).map((source) => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
       }];
       story.publication_history = [...(story.publication_history || []), { version, published_at: now, source_count: story.sources.length, change: "media_impact_added" }];
@@ -149,7 +164,13 @@ export async function backfillMediaImpact({
       result.completed += 1;
       result.estimated_media_payload_tokens = Number(result.estimated_media_payload_tokens || 0) + mediaUsage.input_tokens + mediaUsage.output_tokens;
       writeAtomic(storiesFile, store);
+      if (ai.batch_key) batchClient.applied(ai, { updated_stories: 1 });
     } catch (error) {
+      if (error.batchDeferred) {
+        result.batch_deferred = Number(result.batch_deferred || 0) + 1;
+        spend = monthlyUsage(usage, month) + result.media_check_cost_usd;
+        continue;
+      }
       if (requestPending) {
         const cost = failedRequestCost(error);
         result.ai_requests += Number(error?.requestAttempts ?? 1);
@@ -186,6 +207,6 @@ export async function backfillMediaImpact({
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const limit = Number(process.argv.find((argument) => argument.startsWith("--limit="))?.slice(8) || 10);
-  const result = await backfillMediaImpact({ limit, dryRun: !process.argv.includes("--execute") || process.argv.includes("--dry-run") });
+  const result = await backfillMediaImpact({ limit, backgroundOnly: process.argv.includes('--background-only'), dryRun: !process.argv.includes("--execute") || process.argv.includes("--dry-run") });
   console.log(JSON.stringify(result, null, 2));
 }

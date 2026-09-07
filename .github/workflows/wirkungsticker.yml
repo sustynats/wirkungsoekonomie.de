@@ -129,20 +129,27 @@ jobs:
           npm run news:title-images:backfill -- "${args[@]}"
       - name: Backfill selectively triggered media-impact checks
         id: media_impact
-        if: steps.slot.outputs.should_run == 'true' && inputs.media_impact_backfill == true
+        if: steps.slot.outputs.should_run == 'true' && (inputs.media_impact_backfill == true || vars.WOEK_NEWS_BATCH_ENABLED == 'true')
         env:
           # Uses the same dated authorization as the news worker.
           WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
-          MEDIA_IMPACT_LIMIT: ${{ inputs.media_impact_limit }}
+          WOEK_NEWS_BATCH_ENABLED: ${{ vars.WOEK_NEWS_BATCH_ENABLED || 'false' }}
+          MEDIA_IMPACT_LIMIT: ${{ inputs.media_impact_limit || 2 }}
+          MEDIA_IMPACT_EXPLICIT: ${{ inputs.media_impact_backfill || false }}
         run: |
-          set -euo pipefail
-          npm run news:media-impact:backfill -- --execute --limit="$MEDIA_IMPACT_LIMIT"
+          set +e
+          args=(--execute --limit="$MEDIA_IMPACT_LIMIT")
+          if [ "$MEDIA_IMPACT_EXPLICIT" != "true" ]; then args+=(--background-only); fi
+          npm run news:media-impact:backfill -- "${args[@]}"
+          status=$?
+          if [ "$status" -ne 0 ]; then echo "Hintergrund-Mediencheck zurückgestellt; aktuelle Nachrichten laufen weiter."; fi
           if git diff --quiet -- data/news/stories.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+          exit 0
       - name: Research and publish relevant WÖK analyses
         id: editorial
         if: steps.slot.outputs.should_run == 'true'
@@ -150,6 +157,7 @@ jobs:
           # Uses the same dated authorization as the news worker.
           WOEK_NEWS_API_URL: "https://130.162.217.58.sslip.io/api/news-analysis"
           WOEK_NEWS_ANALYSIS_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
+          WOEK_NEWS_BATCH_ENABLED: ${{ vars.WOEK_NEWS_BATCH_ENABLED || 'false' }}
           EDITORIAL_ANALYSIS_LIMIT: ${{ inputs.editorial_analysis_limit || 6 }}
           EDITORIAL_ANALYSIS_BOOTSTRAP: ${{ inputs.editorial_analysis_bootstrap || false }}
         run: |

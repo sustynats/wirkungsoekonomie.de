@@ -85,6 +85,33 @@ function validEditorial(story) {
   };
 }
 
+test('Batch editorial results use the existing quality gate, publish once, and do not require a new budget reservation', async t => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-editorial-batch-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  fs.mkdirSync(path.join(root, 'data/news'), { recursive: true });
+  const stories = [highStory('background')];
+  fs.writeFileSync(path.join(root, 'data/news/stories.json'), JSON.stringify({ stories }));
+  fs.writeFileSync(path.join(root, 'data/news/state.json'), JSON.stringify({ budget_fx: { rate_usd_per_eur: 1.1, rate_date: '2026-09-05' } }));
+  let remote, ready = false, posts = 0;
+  const fetchImpl = async (url, options) => {
+    if (options.method === 'POST') { posts++; remote = { ...JSON.parse(options.body), status: 'submitted', processing_mode: 'batch', billing_status: 'reserved', estimated_cost_usd: .125 }; }
+    if (ready) Object.assign(remote, { status: 'completed', billing_status: 'settled', model: 'gpt-5.4-mini', usage: { input_tokens: 1000, output_tokens: 1000 }, estimated_cost_usd: .002625, answer: JSON.stringify({ analyses: [{ story_id: stories[0].story_id, editorial_analysis: validEditorial(stories[0]) }] }) });
+    return Response.json({ ok: true, job: remote });
+  };
+  const opts = { root, registry: registryFor(stories), execute: true, batchEnabled: true, batchFetchImpl: fetchImpl, authToken: 'test-only', callAiImpl: () => assert.fail('Background must not call sync provider'), build: () => {} };
+  const pending = await runEditorialAnalyses({ ...opts, now: '2026-09-07T12:00:00Z' });
+  assert.equal(pending.batch_deferred, 1); assert.equal(pending.failed.length, 0); assert.equal(pending.editorial_analyses_published, 0);
+  // Test paid retrieval even with missing FX: this must not re-submit or deadlock.
+  const stateFile = path.join(root, 'data/news/state.json'); const state = JSON.parse(fs.readFileSync(stateFile)); delete state.budget_fx; fs.writeFileSync(stateFile, JSON.stringify(state));
+  ready = true;
+  const completed = await runEditorialAnalyses({ ...opts, now: '2026-09-07T12:20:00Z' });
+  assert.equal(completed.editorial_analyses_published, 1, JSON.stringify(completed)); assert.equal(posts, 1);
+  const usage = JSON.parse(fs.readFileSync(path.join(root, 'data/news/usage.json')));
+  assert.equal(usage.runs.length, 1); assert.equal(usage.runs[0].ai.estimated_cost_usd, .002625);
+  const repeat = await runEditorialAnalyses({ ...opts, now: '2026-09-07T12:40:00Z' });
+  assert.equal(repeat.editorial_analyses_published, 0); assert.equal(posts, 1);
+});
+
 test("geringe Relevanz und bloße Aufmerksamkeit erzeugen keine WÖK-Analyse", () => {
   const item = highStory("small");
   item.title = "Prominenter Kommentar sorgt für große Aufmerksamkeit";
