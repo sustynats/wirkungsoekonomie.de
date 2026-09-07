@@ -36,7 +36,7 @@ import { numberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
 import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
 import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
-import { sourceCoverageDegraded } from "./check-run-health.mjs";
+import { isolatedSourceThrottleWithRecentCoverage, sourceCoverageDegraded } from "./check-run-health.mjs";
 import { operatingCostSummary } from "./operating-cost.mjs";
 import { regionalCoverage } from "./regional-coverage.mjs";
 
@@ -1480,6 +1480,8 @@ export async function runWirkungsticker(options = {}) {
   report.queue_status = report.queue.status;
   report.source_funnel = finalizeSourceFunnel(sourceFunnel);
   report.source_health = registry.sources.map((source) => sourceHealth(source, state, now));
+  report.source_coverage_status = isolatedSourceThrottleWithRecentCoverage(report)
+    ? "isolated_throttle_with_recent_coverage" : sourceCoverageDegraded(report) ? "degraded" : "ok";
   const sourceHealthDegraded = report.source_health.some((source) => ["disturbed", "stale"].includes(source.status));
   report.operational_status = report.ai_provider_degraded || sourceCoverageDegraded(report) || sourceHealthDegraded ? "degraded" : "ok";
   report.editorial_status = report.queue.editorial || report.source_integrity_holds.length ? "holds" : "clear";

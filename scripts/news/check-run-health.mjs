@@ -5,12 +5,36 @@ import { fileURLToPath } from "node:url";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const DEFAULT_REPORT = path.join(ROOT, "reports/wirkungsticker-latest-run.json");
 
+export function isolatedSourceThrottleWithRecentCoverage(report = {}) {
+  // A one-source retry window is not a sample of the whole portfolio. Only
+  // known throttling qualifies, with independently timestamped fresh coverage;
+  // never excuse parser/access errors or infer health from not-due counts alone.
+  if (report.sources_scheduled !== 1 || report.source_failures !== 1
+    || report.source_successes !== 0 || !(report.sources_not_due >= 3)) return false;
+  const errors = report.source_errors;
+  if (!Array.isArray(errors) || errors.length !== 1
+    || !/^(?:ROBOTS_UNAVAILABLE|FEED_HTTP)_429$/.test(errors[0]?.error || "")) return false;
+  const at = Date.parse(report.started_at);
+  if (!Number.isFinite(at) || !Array.isArray(report.source_health)) return false;
+  const failed = report.source_health.find(source => source.source_id === errors[0].source_id);
+  if (!failed || failed.last_error !== errors[0].error) return false;
+  const publishers = new Set(report.source_health.filter(source => {
+    const age = at - Date.parse(source.last_success);
+    const interval = Number(source.interval_minutes);
+    return source.source_id !== errors[0].source_id && source.status === "active"
+      && !source.last_error && typeof source.publisher_id === "string" && source.publisher_id
+      && Number.isFinite(interval) && interval > 0 && Number.isFinite(age)
+      && age >= 0 && age <= Math.min(60, interval) * 60000;
+  }).map(source => source.publisher_id));
+  return publishers.size >= 3;
+}
+
 export function sourceCoverageDegraded(report = {}) {
   const failures = Math.max(0, Number(report.source_failures || 0));
   const successes = Math.max(0, Number(report.source_successes || 0));
   const scheduled = Math.max(0, Number(report.sources_scheduled ?? successes + failures));
   if (failures === 0) return false;
-  if (successes === 0 && scheduled !== 0) return true;
+  if (successes === 0 && scheduled !== 0) return !isolatedSourceThrottleWithRecentCoverage(report);
   const attempted = Math.max(1, successes + failures);
   // A single transient 429/timeout must stay observable and retryable without
   // turning an otherwise complete run into a deployment incident. Alert on a
@@ -40,7 +64,8 @@ export function evaluateRunHealth(report, options = {}) {
   if (expectedAfter !== null && (!Number.isFinite(expectedAfter) || !Number.isFinite(startedAt) || startedAt < expectedAfter)) errors.push("RUN_REPORT_STALE");
   if (!options.expectedAfter && Number.isFinite(startedAt) && nowMs - startedAt > maxAgeMinutes * 60 * 1000) errors.push("RUN_REPORT_STALE");
   if (report?.ai_error) errors.push(report.ai_error === 'AI_BUDGET_EXHAUSTED' ? 'AI_BUDGET_EXHAUSTED' : report.ai_error === "AI_INPUT_TOO_LARGE" ? "AI_INPUT_BLOCKED" : "AI_PROVIDER_DEGRADED");
-  if (Number(report?.source_successes || 0) === 0 && report?.sources_scheduled !== 0) errors.push("NO_SOURCE_SUCCEEDED");
+  if (Number(report?.source_successes || 0) === 0 && report?.sources_scheduled !== 0
+    && !isolatedSourceThrottleWithRecentCoverage(report)) errors.push("NO_SOURCE_SUCCEEDED");
   if (sourceCoverageDegraded(report)) errors.push("SOURCE_COVERAGE_DEGRADED");
   if (!reportOperationallyHealthy(report)) errors.push("RUN_STATUS_NOT_OK");
 
