@@ -4,12 +4,13 @@
     "images": {
       "firstSeen": "2026-09-04T10:20:20.169Z",
       "active": true
-    },
-    "queue": {
-      "firstSeen": "2026-09-07T14:50:23.107Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "ef266e61b19c17a700ebec62",
+      "content": "✓ WÖk-Störung behoben\nNachrichten-Warteschlange\nPrüfung: 2026-09-07T16:05:58.816Z"
+    }
+  ],
   "dailyDate": "2026-09-07"
 }
