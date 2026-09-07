@@ -2,32 +2,79 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-07T17:48:42.333Z",
+  "started_at": "2026-09-07T17:55:23.680Z",
   "scanned_stories": 117,
   "scanned_subjects": 101,
   "editorial_candidates": 19,
-  "ready_for_research": 5,
+  "ready_for_research": 6,
   "research_pending": 6,
   "retry_deferred": 4,
   "editorial_research_sources_discovered": 22,
-  "selected": 1,
-  "editorial_research_started": 2,
+  "selected": 2,
+  "editorial_research_started": 4,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 2,
-  "research_tokens": 12667,
-  "analysis_tokens": 12272,
-  "estimated_cost_usd": 0.064724,
-  "quality_retries": 1,
+  "research_calls": 4,
+  "research_tokens": 27957,
+  "analysis_tokens": 32269,
+  "estimated_cost_usd": 0.159958,
+  "quality_retries": 2,
   "publication_deferred": false,
   "failed": [
     {
-      "story_id": "wt-cf03acddb911d861",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-07T18:03:42.333Z"
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "reason": "AI_PROVIDER_OUTPUT_INVALID",
+      "next_attempt_at": "2026-09-07T19:55:23.680Z"
+    },
+    {
+      "story_id": "wt-a030a1d903caa413",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-07T18:10:23.680Z"
     }
   ],
   "candidates": [
+    {
+      "story_id": "wt-a030a1d903caa413",
+      "story_slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-caa413",
+      "story_title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+      "editorial_analysis_score": 69,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 8,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "3fea231ac7ff3b3e8940c80c748eab1bccc21dc3b1e980ca578eb653d50073c9",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-cf03acddb911d861",
       "story_slug": "ozdemir-fordert-hochdruck-beim-schutz-sicherheitsrelevanter-infrastruktur-11d861",
@@ -239,48 +286,6 @@
       "fingerprint": "f68e99ac37a8b6579dd16fe4bca19cb8fe88ce840c7370004d3e4896b72b5653",
       "status": "ready_for_research",
       "analysis_id": "woek-analysis-36e98d72ae20"
-    },
-    {
-      "story_id": "wt-2cf5f0c5e42720ec",
-      "story_slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet--2720ec",
-      "story_title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
-      "editorial_analysis_score": 70,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 3,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 8,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "25314d0d4b38a47a0529d89c3fe5c5f86cdb4f87809a4faaf4862dac9db8282e",
-      "status": "published",
-      "analysis_id": "woek-analysis-3f27f489cadb"
     },
     {
       "story_id": "wt-4b5d0962d323432a",
@@ -852,5 +857,5 @@
     "polling_errors": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-07T17:49:57.927Z"
+  "completed_at": "2026-09-07T17:57:53.543Z"
 }

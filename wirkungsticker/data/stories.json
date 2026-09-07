@@ -1,7 +1,131 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T17:47:04.791Z",
+  "updated_at": "2026-09-07T17:52:05.999Z",
   "stories": [
+    {
+      "story_id": "wt-a030a1d903caa413",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-c072fbd2fb8013a6-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-fa8f46d9eb20f6a8-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-1fc7121cc021fca7-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-caa413",
+      "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+      "source_summary": "Am Hambacher Forst hat die Polizei mit einem Großaufgebot nach einem 48-jährigen Tatverdächtigen gesucht, der im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz steht. Nach Angaben aus dem Bericht fand der Einsatz vor Ort keine Hinweise auf den Gesuchten. Ein Polizeisprecher sagte demnach, die Einsatzkräfte hätten im Wald lediglich ein bewohntes Baumhaus entdeckt.\n\nParallel meldet die Quelle weitere Ermittlungsstände zu Angriffen auf Stromanlagen in anderen Bundesländern. In Sachsen wurden nach Angaben der Generalstaatsanwaltschaft Dresden zwölf selbstgebaute Sprengvorrichtungen an Stromtrassen gefunden. Die Behörden dort prüfen einen möglichen Zusammenhang mit ähnlichen Funden in Brandenburg und Nordrhein-Westfalen. Für Berlin wird zudem ein durch Feuer beschädigtes Umspannwerk genannt; dort ist die Ursache noch offen.",
+      "summary": "Die Fahndung am Hambacher Forst blieb ohne Treffer. Gleichzeitig laufen Ermittlungen zu weiteren Sabotagefunden an Stromanlagen in mehreren Bundesländern weiter.",
+      "detail_summary": "Neu ist vor allem der negative Ausgang des Großeinsatzes: Die Polizei fand am Hambacher Forst keine Hinweise auf den gesuchten Mann und will die Fahndung trotzdem fortsetzen. Das ist für den Nachrichtenwert materiell, weil es die Lage der Ermittlungen und damit die Grundlage für weitere Polizeischritte verändert. Hinzu kommt der größere Zusammenhang mit weiteren Funden an Stromtrassen in Sachsen sowie einem beschädigten Umspannwerk in Berlin. Der mögliche Wirkpfad liegt vor allem in der Belastung von Sicherheitsbehörden, Energie-Infrastruktur und öffentlicher Risikowahrnehmung; eine direkte Wirkung auf die Versorgung wird in den Belegen aber nicht nachgewiesen. Offen bleibt, ob die Fälle tatsächlich zusammenhängen und ob die gesuchte Person verantwortlich ist. Die Beleglage trägt deshalb eine aktualisierte, aber noch nicht abgeschlossene Lagebeschreibung.",
+      "why_relevant": "Der Fall betrifft kritische Energieinfrastruktur, laufende Fahndung und mögliche Zusammenhänge zwischen mehreren Sabotageereignissen. Die neue Information ist, dass der Großeinsatz am Hambacher Forst erfolglos blieb und die Ermittlungen dennoch weiterlaufen.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind mögliche Risiken für Menschen durch Angriffe auf kritische Infrastruktur und der laufende Polizeieinsatz. Zugleich ist keine konkrete Versorgungsschädigung belegt; der Kern ist der Stand der Fahndung und die offene Gefährdungslage."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein unmittelbarer Umweltfaktor ist in den Quellen nicht belegt. Allenfalls könnte die Infrastrukturstörung indirekt Energieflüsse betreffen, dafür fehlt hier jedoch belastbare Evidenz."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Die Sache berührt staatliche Sicherheits- und Ermittlungsfähigkeit sowie den Schutz kritischer Infrastruktur. Eine demokratische Folge ist nicht belegt, aber die Korrekturfähigkeit staatlicher Stellen und das Sicherheitsvertrauen können betroffen sein."
+        }
+      },
+      "visuals": {
+        "path_directions": [
+          {
+            "order": "first_order",
+            "path": "Erfolgloser Großeinsatz am Hambacher Forst",
+            "direction": "open",
+            "condition": "Wenn keine Hinweise auf den Gesuchten gefunden werden, bleibt die Fahndung offen und der Ermittlungsdruck bestehen.",
+            "evidence": "plausible_path",
+            "claim_ids": []
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "verbraucherinnen",
+          "kommunen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T17:52:05.999Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T12:02:39.000Z",
+      "last_updated": "2026-09-07T17:54:59.381Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-4b6252df6481b4c20d60",
+      "case_file": null,
+      "source_published_at": "2026-09-06T18:19:40.000Z",
+      "published_at": "2026-09-06T12:23:08.615Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T18:19:40.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T21:05:27.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T06:31:50.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-cf03acddb911d861",
       "title_image": {
@@ -4648,98 +4772,6 @@
           "url": "https://taz.de/US-Vermittler-in-der-Ukraine/!6210651",
           "source_type": "media_rss",
           "published_at": "2026-09-06T11:48:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-a030a1d903caa413",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-1b800dd7a15376a4-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-4e1074a75e5c42bb-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-a030a1d903caa413-e8d9e5e4cea3f393-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "sabotage-an-stromleitungen-grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-caa413",
-      "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
-      "source_summary": "Der Deutschlandfunk berichtet über einen Großeinsatz der Polizei am Hambacher Forst in Nordrhein-Westfalen. Die Fahndung richtet sich nach Angaben des Berichts gegen einen Tatverdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz; vor Ort seien laut dpa bis zu 100 Polizeifahrzeuge gesehen worden.\n\nIm Bericht heißt es außerdem, die Polizei halte es für wahrscheinlich, dass der 48-Jährige aus Gevelsberg mit dem Fahrrad flüchte; gesucht werde ein Rad der Marke Trenoli. Zugleich sei ein Bekennerschreiben mit seinem Namen veröffentlicht worden, die tatsächliche Verantwortung für die beschriebenen Taten aber weiter unklar. Ergänzend verweist der Bericht auf Funde in Sachsen mit zwölf selbstgebauten Sprengvorrichtungen und auf mögliche Zusammenhänge mit Brandenburg und Nordrhein-Westfalen.",
-      "summary": "Die Polizei sucht am Hambacher Forst nach einem Verdächtigen im Umfeld von Sabotageaktionen gegen das Stromnetz. Vor Ort war laut dpa von bis zu 100 Polizeifahrzeugen die Rede.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Meldung ein laufender Großeinsatz am Hambacher Forst, der mit der Fahndung nach einem 48-Jährigen aus Gevelsberg im Zusammenhang steht. Der Bericht nennt außerdem ein Bekennerschreiben, dessen Zuordnung zu den Taten aber ausdrücklich offen bleibt. Relevant ist die Meldung, weil sie einen laufenden Eingriff in ein energie- und sicherheitsrelevantes System beschreibt und zugleich zeigt, dass die Ermittlungen über Nordrhein-Westfalen hinausreichen. Ein möglicher Wirkpfad liegt in kurzfristigen Sicherheitsmaßnahmen, Fahndungsaufwand und zusätzlicher Prüfung von Stromnetz-Risiken. Als Folge sind weitere Sperrungen, Ermittlungsverbindungen oder neue Fundorte möglich; ob sich daraus tatsächlich ein größerer Zusammenhang ergibt, bleibt nach der Quellenlage offen. Die Beleglage ist vorerst nur eine zugespitzte Sekundärquelle mit dpa-Zuschreibung.",
-      "why_relevant": "Die Meldung betrifft mögliche Sabotage an kritischer Energieinfrastruktur und damit einen sicherheits- und systemrelevanten Gegenstand mit potenziellen Folgen für Versorgung, Ermittlungen und öffentliche Schutzmaßnahmen.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind mögliche Sicherheitslagen, Ermittlungsmaßnahmen und im Extremfall Versorgungssicherheit; direkte Folgen für Menschen sind noch offen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Die Verbindung zu Stromnetz, Braunkohlerevier und Energieinfrastruktur ist systemisch relevant, konkrete Umweltfolgen sind hier aber nicht belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Der Fall berührt staatliche Schutzfähigkeit, Ermittlungsarbeit und die öffentliche Nachvollziehbarkeit bei Sabotagevorwürfen."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "aeltere"
-        ],
-        "tendency": {
-          "human": "risiko",
-          "planet": "offen",
-          "democracy": "gemischt"
-        }
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-06T12:21:25.690Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-06T12:02:39.000Z",
-      "last_updated": "2026-09-06T12:23:08.615Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-4b6252df6481b4c20d60",
-      "case_file": null,
-      "source_published_at": "2026-09-06T12:02:39.000Z",
-      "published_at": "2026-09-06T12:23:08.615Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T12:02:39.000Z",
           "primary_source": false
         }
       ]
