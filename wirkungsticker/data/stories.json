@@ -1,7 +1,114 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T14:22:01.834Z",
+  "updated_at": "2026-09-07T14:37:01.659Z",
   "stories": [
+    {
+      "story_id": "wt-d7f00335de9334ae",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7f00335de9334ae-81328a05b2258cb2-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7f00335de9334ae-20c862f25d9e6e3d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-d7f00335de9334ae-ad5be092b369c6a7-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "israeli-strikes-kill-four-in-lebanon-after-alleged-hezbollah-drone-launch-9334ae",
+      "title": "Israeli strikes kill four in Lebanon after alleged Hezbollah drone launch",
+      "source_summary": "Israelische Luftangriffe im Süden des Libanon haben laut einer Meldung der staatlichen libanesischen Nachrichtenagentur am Montag mindestens elf Menschen getötet. Unter den Toten seien zwei Kinder und zwei Mediziner gewesen. Eine zweite Meldung verweist darauf, dass Israel die Bombardierungen im Süden des Libanon in den vergangenen Tagen verstärkt habe, obwohl eine Waffenruhe von Juni die Kämpfe zwischen dem israelischen Militär und der Hisbollah beenden sollte.\n\nIn einer früheren Meldung hieß es zudem, israelische Angriffe vom Sonntag hätten im Süden des Libanon vier Menschen getötet, darunter zwei Frauen. Dort sagte das israelische Militär, die Angriffe seien eine Reaktion auf einen behaupteten Hisbollah-Drohnenstart gegen Truppen in der israelisch besetzten Sicherheitszone gewesen.",
+      "summary": "Bei Angriffen im Süden des Libanon gibt es nach den vorliegenden Meldungen erneut Tote, darunter Kinder und Mediziner. Die Beleglage reicht für eine belastbare Erstmeldung, nicht für eine abgeschlossene Einordnung der Ursachen oder Folgen.",
+      "detail_summary": "Die Quellen melden eine neue Eskalation im südlichen Libanon: Am Montag sollen israelische Angriffe mindestens elf Menschen getötet haben, darunter zwei Kinder und zwei Mediziner. Eine frühere Meldung nennt für einen Sonntagsschlag vier Tote und verweist auf eine israelische Begründung mit einem behaupteten Drohnenstart der Hisbollah. Für die Berichterstattung ist das materiell, weil es um konkrete Todesopfer, eine mögliche Fortsetzung der Kämpfe trotz Waffenruhe und damit um einen Zustand mit unmittelbarer humanitärer Relevanz geht. Der naheliegende Wirkpfad ist eine militärische Eskalation mit weiteren Risiken für Zivilisten und Infrastruktur. Offen bleibt, was genau die einzelnen Angriffe ausgelöst hat, wie unabhängig die Opferzahlen geprüft sind und ob die Darstellung der Gegenseite belastbar bestätigt wird.",
+      "why_relevant": "Die Meldung beschreibt eine neue, unmittelbar folgenreiche militärische Entwicklung mit Toten, darunter Kinder und Mediziner, sowie möglicher Bedeutung für die fragile Waffenruhe im Süden des Libanon.",
+      "topic": [
+        "Geopolitik",
+        "Gesundheit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "rationale": "Betroffen sind Menschen unmittelbar durch tödliche Gewalt. Die Meldung nennt zivile Opfer und medizinisches Personal; weitere Verletzte und Folgewirkungen sind plausibel, aber noch offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus den Quellen ergeben sich keine belastbaren Umweltfolgen. Ein möglicher Einfluss auf Infrastruktur oder Flächen bleibt offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Die Meldung berührt die Wirksamkeit politischer und sicherheitspolitischer Vereinbarungen, weil eine Juni-Waffenruhe als Bezugsrahmen genannt wird. Das ist institutionell relevant, aber noch kein Nachweis eines dauerhaften Rechts- oder Regelbruchs."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "patientinnen",
+          "verbraucherinnen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T14:37:01.659Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-06T08:49:41.000Z",
+      "last_updated": "2026-09-07T14:39:47.688Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-bfcb43201da5809574f7",
+      "case_file": null,
+      "source_published_at": "2026-09-06T08:49:41.000Z",
+      "published_at": "2026-09-07T14:39:47.688Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "france24-en",
+              "france24-en"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260906-israeli-strikes-kill-four-in-lebanon-after-alleged-hezbollah-drone-launch",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T08:49:41.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260907-israeli-strikes-on-southern-lebanon-kill-11",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T14:10:28.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3a4a084c8463ae7e",
       "title_image": {
