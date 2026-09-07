@@ -1,7 +1,120 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T13:42:50.274Z",
+  "updated_at": "2026-09-07T14:22:01.834Z",
   "stories": [
+    {
+      "story_id": "wt-3a4a084c8463ae7e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a4a084c8463ae7e-ba5e2e5085626682-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a4a084c8463ae7e-aefd1d7d305c8ae7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3a4a084c8463ae7e-9a4f1cab0101d0d6-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "angriff-bei-fussballspiel-im-dortmunder-hoeschpark-63ae7e",
+      "title": "Angriff bei Fußballspiel im Dortmunder Hoeschpark",
+      "source_summary": "Bei einem Kreisligaspiel im Dortmunder Hoeschpark ist es laut WDR zu einer gewalttätigen Auseinandersetzung gekommen. Ein Zuschauer soll einen Fußballspieler mit einem Metall-Klappstuhl am Kopf verletzt haben. Insgesamt wurden drei Personen verletzt und ins Krankenhaus gebracht. Die Polizei sucht nach dem Angreifer; auch ein weiterer Tatverdächtiger im Zusammenhang mit Messerstichen soll flüchtig sein.\n\nNach Angaben im Bericht war die Partie bereits abgepfiffen, bevor es zu Tumulten kam. Als möglicher Hintergrund werden verbale Auseinandersetzungen und private Streitigkeiten genannt. Der WDR verweist in dem Beitrag auf Polizeiangaben als Quelle.",
+      "summary": "Bei einem Fußballspiel im Dortmunder Hoeschpark kam es zu einer Gewalttat mit Verletzten. Die ersten belastbaren Angaben stammen aus einem WDR-Bericht mit Polizeibezug.",
+      "detail_summary": "Aus der vorliegenden Quelle lässt sich ein konkreter Vorfall in Dortmund rekonstruieren: Bei einem Kreisligaspiel wurde ein Spieler nach Angaben des WDR von einem Zuschauer mit einem Metall-Klappstuhl verletzt, drei Menschen kamen ins Krankenhaus. Die Meldung nennt außerdem eine laufende Fahndung nach dem Angreifer und einem weiteren Tatverdächtigen. Für die Einordnung ist das vor allem als Sicherheits- und Ordnungsvorfall relevant, weil ein lokales Sportereignis in Gewalt umschlug und Ermittlungen ausgelöst wurden. Der Wirkpfad liegt zunächst bei unmittelbaren Verletzungen, dann bei möglichen Folgen für Spielbetrieb, Sicherheitsvorkehrungen und das Sicherheitsgefühl vor Ort. Offen bleibt aber, wie der genaue Ablauf, die Tatmotive und der Stand der Ermittlungen jenseits der Polizeiangaben aussehen.",
+      "why_relevant": "Der Vorfall betrifft direkte Körperverletzungen, eine laufende Fahndung und damit öffentliche Sicherheit bei einem Sportereignis. Er ist lokal begrenzt, aber materiell, weil er konkrete Verletzte und einen möglichen Anpassungsdruck bei Sicherheitsmaßnahmen auslösen kann.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Direkte Verletzungen und Gewalt bei einem öffentlichen Sportereignis betreffen Menschen unmittelbar. Die Lage ist lokal, aber die Gefährdung ist konkret und bereits eingetreten."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es gibt keinen belegten Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Kein direkter demokratischer Entscheidungs- oder Institutionsbezug belegt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "beschaeftigte",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T14:22:01.834Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T08:03:48.000Z",
+      "last_updated": "2026-09-07T14:22:31.946Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-d40b4650c5420b65d079",
+      "case_file": null,
+      "source_published_at": "2026-09-07T11:41:46.000Z",
+      "published_at": "2026-09-07T14:22:31.946Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Polizei den Klappstuhl-Angreifer identifiziert oder festgenommen hat.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizeimitteilung oder Folgebericht nennt Festnahme, Identität oder Fahndungserfolg",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-64aeb2e4b768b647",
+          "announced_at": "2026-09-07T11:41:46.000Z",
+          "follow_up_date": "2026-09-14T14:22:31.946Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Ermittler den Hintergrund als private Streitigkeiten bestätigen oder relativieren.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsstand nennt bestätigten Auslöser oder weist ihn zurück",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2db57bf8c927f846",
+          "announced_at": "2026-09-07T11:41:46.000Z",
+          "follow_up_date": "2026-09-14T14:22:31.946Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/dortmund/verletzte-fussballspiel-hoeschpark-dortmund-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T11:41:46.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-ed33c0962c4a697d",
       "title_image": {
