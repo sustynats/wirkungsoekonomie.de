@@ -10,6 +10,7 @@ import {
 import { runEditorialAnalyses } from "../../scripts/news/run-editorial-analyses.mjs";
 import { enrichEditorialResearchSubjects } from "../../scripts/news/run-editorial-analyses.mjs";
 import { editorialAnalysisPage, storyPage } from "../../scripts/news/build.mjs";
+import { EDITORIAL_QUALITY_KEYS } from "../../scripts/news/editorial-judgment.mjs";
 
 function source(id, publisher, primary = false) {
   return { source_id: id, source_item_id: `${id}-item`, publisher_id: id, publisher, url: `https://${id}.example.org/article`, title: `Quellenbericht ${publisher}`, summary: `Der Bericht dokumentiert den Sachverhalt und nennt überprüfbare Angaben zu Infrastruktur, Kosten, Zuständigkeiten und offenen Fragen.`, published_at: "2026-09-05T08:00:00Z", primary_source: primary, provenance: { origin: `publisher:${id}` } };
@@ -53,7 +54,18 @@ function validEditorial(story) {
     ["resilienz", "Prävention verändert die Kostenkurve"], ["externalitaeten", "Wer Kosten trägt"],
     ["unsicherheit", "Was wir nicht wissen"], ["beobachtung", "Worauf jetzt zu achten ist"], ["synthese", "Wirkungsökonomische Einordnung"],
   ].map(([id, title]) => ({ id, title, paragraphs: [paragraph, paragraph] }));
+  sections[3].visual = { type: "cascade", caption: "Vom Standard zur möglichen Wirkung", items: [
+    {title:"Schutzstandard",text:"Eine verbindliche Entscheidung ist dokumentiert.",status:"fact",relation:"scope",source_ids:[ids[0]]},
+    {title:"Vorsorge",text:"Investitionen können sich verändern.",status:"analytical_inference",relation:"impact_path",direction:"positive",condition:"Wenn der Standard zu wirksamer Vorsorge führt.",source_ids:[]},
+    {title:"Resilienz",text:"Unterlassene Vorsorge kann Kaskadenrisiken erhöhen.",status:"scenario",relation:"impact_path",direction:"negative",condition:"Wenn notwendige Vorsorge ausbleibt.",source_ids:[]},
+  ] };
   return {
+    executive_finding: paragraph,
+    assessment_context: "potential", assessment_condition: "Bedingt durch wirksame Umsetzung des Schutzstandards; noch keine gemessene Wirkung.",
+    subject_dimensions: Object.fromEntries(["human", "planet", "democracy"].map(key => [key, { relevance: "hoch", rationale: "Schutz, Versorgung und Vorsorge hängen zusammen.", implementation_status: "adopted", likelihood: "open", direction: "positive", magnitude: "open", evidence: "plausible_path" }])),
+    author_perspective: { paragraphs: ["Für mich steht nach dieser Analyse die Frage im Zentrum, ob aus einem Schutzstandard im Alltag verlässliche Vorsorge wird. Entscheidend ist nicht der Beschluss allein, sondern die Umsetzung. Erst belastbare Daten können zeigen, welche Zustandsveränderung erreicht und wie sie verursacht wurde."], claim_indices: [0, 2, 3] },
+    editorial_quality: Object.fromEntries(EDITORIAL_QUALITY_KEYS.map(key => [key, true])),
+    positive_path_checks: [{measure:"Schutzstandard",source_ids:[ids[0]],mechanism:"Regeln verändern Vorsorge und Investitionen."}],
     editorial_question: "Wie verändert der neue Schutzstandard die Resilienz kritischer Infrastruktur?", analysis_type: "resilience_analysis",
     title: "Was neue Schutzstandards für kritische Infrastruktur bedeuten", subtitle: "Warum Prävention, Investitionen und staatliche Handlungsfähigkeit gemeinsam betrachtet werden müssen.",
     teaser: "Die Entscheidung ist mehr als eine technische Vorgabe. Sie verschiebt Vorsorgekosten, Haftungsfragen und Investitionspfade – während die tatsächliche Wirkung erst mit Umsetzung und belastbaren Daten sichtbar wird.",

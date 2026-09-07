@@ -4,6 +4,54 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {uniqueContentIds,normalizeStaticNavigation,normalizePublicContent,normalizeMachineMirror} from '../../scripts/quality/normalize-public-content.mjs';
+import {normalizeShareMetadata,BRAND_SHARE_IMAGE} from '../../scripts/lib/share-metadata.mjs';
+
+test('neutral share asset is a small 1200 by 630 PNG with an editable branded source',()=>{
+ const image=fs.readFileSync(new URL('../../assets/img/brand/wirkungsoekonomie-share-v2.png',import.meta.url));
+ assert.equal(image.subarray(1,4).toString(),'PNG');
+ assert.equal(image.readUInt32BE(16),1200);assert.equal(image.readUInt32BE(20),630);
+ assert.ok(image.length<200000);
+ const svg=fs.readFileSync(new URL('../../assets/img/brand/wirkungsoekonomie-share-v2.svg',import.meta.url),'utf8');
+ assert.match(svg,/Mensch · Planet · Demokratie/);
+ assert.ok(!svg.includes('WIRKUNG STATT KAPITAL'));
+ assert.ok(!svg.includes('Alte Logik'));
+});
+
+test('sharing replaces only the generic graphic, retains page title and editorial image',()=>{
+ const old='https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png';
+ const input=`<head><title>Eine konkrete Frage</title><meta property="og:title" content="Eine konkrete Frage"><meta property="og:image" content="${old}"><meta name="twitter:image" content="${old}"><meta property="og:image:width" content="1800"></head><body><img src="${old}"></body>`;
+ const output=normalizeShareMetadata(input);
+ assert.equal((output.match(new RegExp(BRAND_SHARE_IMAGE.replaceAll('.','\\.'),'g'))||[]).length,2);
+ assert.match(output,/<meta property="og:title" content="Eine konkrete Frage">/);
+ assert.ok(output.includes(`<body><img src="${old}"></body>`));
+ assert.match(output,/<meta property="og:image:width" content="1200">/);
+ assert.match(output,/<meta property="og:image:height" content="630">/);
+ assert.match(output,/og:image:alt/);
+ assert.equal(normalizeShareMetadata(output),output);
+});
+test('custom journal and survey covers survive unchanged including alternate images',()=>{
+ const input='<head><meta property="og:image" content="https://example.org/article.jpg"><meta property="og:image" content="https://example.org/article-wide.jpg"><meta name="twitter:image" content="https://example.org/article-square.jpg"></head>';
+ assert.equal(normalizeShareMetadata(input),input);
+});
+test('missing or legacy sibling image uses a specific existing cover; scripts stay untouched',()=>{
+ const script='<script type="application/ld+json">{"image":"/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png"}</script>';
+ const output=normalizeShareMetadata(`<head>${script}<meta content='/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.webp?v=1' property='og:image'><meta name='twitter:image' content='https://example.org/special.jpg'></head>`);
+ assert.ok(output.includes(script));
+ assert.match(output,/property="og:image" content="https:\/\/example.org\/special.jpg"/);
+ assert.ok(!output.includes(BRAND_SHARE_IMAGE));
+ const sibling=normalizeShareMetadata('<head><meta property="og:image" content="/assets/img/polls/wirkstadt/basis.webp"></head>');
+ assert.match(sibling,/name="twitter:image" content="\/assets\/img\/polls\/wirkstadt\/basis.webp"/);
+});
+test('fallback fills existing social metadata only, with no fabricated headline or machine metadata',()=>{
+ const input='<head><title>Maschinenansicht</title></head><pre>{}</pre>';
+ assert.equal(normalizeShareMetadata(input),input);
+ const output=normalizeShareMetadata('<head><meta property="og:title" content="Fachbegriff"></head>');
+ assert.ok(output.includes(BRAND_SHARE_IMAGE));
+ assert.match(output,/og:title" content="Fachbegriff"/);
+ assert.equal(normalizeShareMetadata(output),output);
+ const external='<head><meta property="og:image" content="https://example.org/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png"><meta name="twitter:image" content="https://example.org/other.png"></head>';
+ assert.equal(normalizeShareMetadata(external),external);
+});
 
 test('bare API mirrors retain exact escaped data and receive an idempotent noindex shell',()=>{
  const input='<pre>{&quot;name&quot;:&quot;A &amp; B&quot;}</pre>';
