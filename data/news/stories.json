@@ -1,8 +1,158 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T01:51:45.200Z",
-  "updated_at": "2026-09-08T02:06:43.936Z",
+  "updated_at": "2026-09-08T02:21:51.794Z",
   "stories": [
+    {
+      "story_id": "wt-6f5e94e2389d5b37",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "57d53c80121fb77ab926b762b7a8c828ee9f5056617698b878713cf0b3042534",
+        "first_failed_at": "2026-09-08T02:21:51.794Z",
+        "failed_at": "2026-09-08T02:21:51.794Z",
+        "retry_after": "2026-09-08T02:36:51.794Z",
+        "retry_count": 1
+      },
+      "slug": "immobilien-mehr-fertighauser-genehmigt-besonders-beliebt-im-sudwesten-9d5b37",
+      "title": "Immobilien: Mehr Fertighäuser genehmigt – besonders beliebt im Südwesten",
+      "first_seen": "2026-09-08T02:02:08.000Z",
+      "last_updated": "2026-09-08T02:02:08.000Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-immobilien-16028815.html",
+          "title": "Immobilien: Mehr Fertighäuser genehmigt – besonders beliebt im Südwesten",
+          "summary": "Viele Bauherren setzen auf Häuser mit vorgefertigten Teilen aus der Fabrik. Ihr Marktanteil wächst. Vor allem in Süddeutschland sind die Häuser aus zusammengesetzten Teilen populär.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T02:02:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9c2ecfb22eab1863930a8a68ed0921e6714b4fb099f037a9a75f49e77947bfed",
+          "source_item_id": "af4f720db32a0f79356c5c821fc6abf407c2d4153d1cab94f37429337833de89",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T02:02:08.000Z",
+          "ingested_at": "2026-09-08T02:21:51.794Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6f5e94e2389d5b37-claim-01",
+          "story_id": "wt-6f5e94e2389d5b37",
+          "claim": "Immobilien: Mehr Fertighäuser genehmigt – besonders beliebt im Südwesten: Viele Bauherren setzen auf Häuser mit vorgefertigten Teilen aus der Fabrik. Ihr Marktanteil wächst. Vor allem in Süddeutschland sind die Häuser aus zusammengesetzten Teilen populär.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T02:21:51.794Z"
+        }
+      ],
+      "content_hash": "edc5ca759cd6c81a59e4249a301d2c85d42ac9b54c76bc6ef8a2e292f0e9d41d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T02:36:51.794Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T02:21:51.794Z",
+      "event_first_seen_at": "2026-09-08T02:21:51.794Z",
+      "event_detected_at": "2026-09-08T02:21:51.794Z",
+      "event_id": "event-a7eaeddcfbd28c73bf11",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 19.7299,
+        "detection_delay_minutes": 19.7299,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T02:21:51.794Z",
+        "fingerprint": "b242d6a3a3fca3ce4c9adce6a9ded7e1a7a3c05f40aab71e867bc538ee6e3be9",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T02:21:51.794Z",
+      "rejection": {
+        "at": "2026-09-08T02:21:51.794Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-8802c617d5bb3e85",
       "slug": "ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85",
@@ -65457,7 +65607,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T01:51:45.200Z",
+          "ingested_at": "2026-09-08T02:21:51.794Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -65518,7 +65668,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T02:06:43.936Z"
+          "checked_at": "2026-09-08T02:21:51.794Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -65538,7 +65688,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T02:06:43.936Z"
+          "checked_at": "2026-09-08T02:21:51.794Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -65554,7 +65704,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T02:06:43.936Z",
+      "updated_at": "2026-09-08T02:21:51.794Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -65594,7 +65744,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1019.8428833333334,
+        "queue_age_minutes": 1034.97385,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -65603,7 +65753,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T02:06:43.936Z",
+        "checked_at": "2026-09-08T02:21:51.794Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -123086,7 +123236,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T02:06:43.936Z",
+          "checked_at": "2026-09-08T02:21:51.794Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -167440,7 +167590,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T02:06:43.936Z",
+          "checked_at": "2026-09-08T02:21:51.794Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
