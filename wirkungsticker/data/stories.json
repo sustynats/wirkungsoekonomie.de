@@ -1,7 +1,126 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T05:22:10.164Z",
+  "updated_at": "2026-09-08T05:36:30.571Z",
   "stories": [
+    {
+      "story_id": "wt-b10575d1c95b9e06",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-cf44d3b432b422e1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-07be526703f9223a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-b1ca259303b7664f-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "serbien-feierliche-beisetzung-von-kriegsverbrecher-mladic-in-belgrad-hat-begonnen-5b9e06",
+      "title": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen",
+      "source_summary": "In Serbien ist die Beisetzung von Ratko Mladić in Belgrad in den Quellen zunächst als beginnende Zeremonie beschrieben worden. Der Sarg wurde in einer serbisch-orthodoxen Kirche aufgebahrt, später durch die Stadt zu einem Friedhof geleitet. Berichtet wird auch, dass an der Zeremonie serbische Minister und Soldaten teilgenommen hätten und dass ihm staatliche Ehren zuteilwerden sollten.\n\nDie Berichte nennen außerdem Proteste gegen die Beisetzung. EU-Erweiterungskommissarin Kos sagte eine Reise nach Serbien ab und begründete das mit der Verherrlichung Mladićs, die aus ihrer Sicht nicht mit den Werten der EU vereinbar sei. Mladić war zuvor im Alter von 84 Jahren gestorben und 2017 wegen seiner Rolle im Bosnien-Krieg zu lebenslanger Haft verurteilt worden.",
+      "summary": "Die Beisetzung Mladićs ist von der Ankündigung in den Vollzug übergegangen. Der politische Konflikt darum zeigt sich in der Absage der EU-Reise durch Kos.",
+      "detail_summary": "Neu ist hier vor allem der Übergang von der angekündigten Zeremonie zur Beisetzung mit militärischen Ehren. Das ist für die Einordnung wichtig, weil damit ein symbolischer staatlicher Akt nicht nur diskutiert, sondern laut Quelle tatsächlich vollzogen wurde. Betroffen sind vor allem die serbische Innenpolitik und das Verhältnis zur EU, weil die Beisetzung Protest auslöste und eine Reiseabsage nach sich zog. Ein möglicher Wirkpfad läuft über politische Symbolik, internationale Kritik und weitere Spannungen im EU-Beitrittskontext. Ob daraus mehr als ein kurzfristiger Konflikt wird, bleibt offen; die Quellenlage zeigt den Vorgang, aber noch keine Folgewirkung.",
+      "why_relevant": "Die Beisetzung mit militärischen Ehren ist eine neue, politisch relevante Zustandsänderung gegenüber der Erstmeldung vom Beginn der Zeremonie. Sie berührt das Verhältnis Serbiens zur EU und die öffentliche Bewertung eines verurteilten Kriegsverbrechers.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Umsetzung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind öffentliche Erinnerungspolitik, Proteste und die politische Beziehung zur EU. Für Menschen entsteht vor allem Konflikt- und Polarisierungspotenzial, kein belegter direkter Nutzen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es gibt keinen belegten direkten Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Die staatliche Ehrenpraxis und die öffentliche Reaktion berühren demokratische Korrekturfähigkeit, Normen und Außenbeziehungen. Das kann institutionelle Spannungen verstärken."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T05:36:30.571Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T08:19:11.000Z",
+      "last_updated": "2026-09-08T05:37:13.149Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-f068ec67184a61796780",
+      "case_file": null,
+      "source_published_at": "2026-09-07T16:32:01.000Z",
+      "published_at": "2026-09-07T23:03:49.328Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob Serbien im weiteren Verlauf offiziell auf die angekündigten staatlichen Ehren reagiert oder sie politisch verteidigt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "öffentliche Stellungnahmen oder Regierungsreaktionen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4cf41e789601d346",
+          "announced_at": "2026-09-07T16:32:01.000Z",
+          "follow_up_date": "2026-09-15T05:37:13.149Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/feierliche-beisetzung-von-kriegsverbrecher-mladi-in-belgrad-hat-begonnen-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-106.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T05:19:17.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3705bea838c05b93",
       "title_image": {
@@ -1437,113 +1556,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-03T11:00:00.000Z",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-b10575d1c95b9e06",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-9fa5550854dfdb85-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-d80bc562e07791e2-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-b10575d1c95b9e06-b8234c85c47846b7-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "serbien-feierliche-beisetzung-von-kriegsverbrecher-mladic-in-belgrad-hat-begonnen-5b9e06",
-      "title": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen",
-      "source_summary": "In Serbien hat die Beisetzungsfeier für Ratko Mladić begonnen. Der Sarg des früheren bosnisch-serbischen Militärchefs wurde in einer serbisch-orthodoxen Kirche in Belgrad aufgebahrt und anschließend durch die Stadt zu einem Friedhof geleitet. Serbischen Medien zufolge nahmen auch Minister und Soldaten an der Zeremonie teil, und der Justizminister hatte staatliche Ehren angekündigt.\n\nAus Protest sagte EU-Erweiterungskommissarin Marta Kos eine Reise nach Serbien ab. Sie begründete das mit der Verherrlichung Mladićs, die aus ihrer Sicht nicht zu den Werten der Europäischen Union passt. Mladić war im Alter von 84 Jahren in Den Haag gestorben und 2017 zu lebenslanger Haft verurteilt worden.",
-      "summary": "Die Beisetzung von Ratko Mladić hat in Belgrad begonnen. Die Zeremonie löste Proteste aus und führte zu einer abgesagten Reise der EU-Erweiterungskommissarin.",
-      "detail_summary": "Der Bericht schildert den Beginn der Beisetzungsfeier für Ratko Mladić in Belgrad. Genannt werden die Aufbahrung in einer serbisch-orthodoxen Kirche, der anschließende Zug zum Friedhof sowie Hinweise auf die Teilnahme von Ministern und Soldaten. Zusätzlich wird berichtet, dass die serbische Seite staatliche Ehren angekündigt hatte. Politisch relevant ist vor allem die Reaktion aus Brüssel: Marta Kos sagte ihre Reise nach Serbien ab und begründete das mit der Verherrlichung Mladićs. Der Wirkpfad liegt damit vor allem im diplomatischen und symbolischen Bereich, nicht in einem bereits belegten materiellen Folgeeffekt. Offen bleibt, ob und wie sich daraus weitere Schritte im Verhältnis zwischen Serbien und der EU ergeben. Die Beleglage ist zunächst auf einen journalistischen Bericht begrenzt.",
-      "why_relevant": "Die Beisetzung eines wegen Kriegsverbrechen verurteilten früheren Militärchefs berührt das Verhältnis zwischen serbischer Innenpolitik, öffentlicher Erinnerung und EU-Beitrittskontext. Dazu kommt eine konkrete diplomatische Reaktion mit abgesagter Reise.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "rationale": "Betroffen sind politische Öffentlichkeit, Angehörige und die Erinnerung an Kriegsverbrechen; die Zeremonie kann Polarisierung und Protest verstärken. Ein direkter materieller Effekt ist hier aber nicht belegt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Es gibt keinen unmittelbaren Umweltbezug in den vorliegenden Quellen. Ein Wirkpfad auf Planet-Zustände ist nicht erkennbar."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "risiko",
-          "rationale": "Die staatliche Ehrenfrage, die öffentliche Verherrlichung und die EU-Reaktion betreffen demokratische Normen, Rechtsstaatssignale und die politische Korrekturfähigkeit. Die Quelle belegt vor allem einen symbolischen Konflikt."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-07T23:02:05.417Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T08:19:11.000Z",
-      "last_updated": "2026-09-07T23:03:49.328Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-f068ec67184a61796780",
-      "case_file": null,
-      "source_published_at": "2026-09-07T16:32:01.000Z",
-      "published_at": "2026-09-07T23:03:49.328Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "dlf-nachrichten",
-              "dlf-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 3
-          }
-        ]
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/feierliche-beisetzung-von-kriegsverbrecher-mladi-in-belgrad-hat-begonnen-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T16:32:01.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T16:32:01.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/kriegsverbrecher-mladi-in-belgrad-beigesetzt-106.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T22:41:30.000Z",
-          "primary_source": false
         }
       ]
     },
