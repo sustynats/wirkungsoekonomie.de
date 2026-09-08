@@ -2,31 +2,37 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T07:21:49.409Z",
-  "scanned_stories": 143,
-  "scanned_subjects": 124,
+  "started_at": "2026-09-08T07:41:48.796Z",
+  "scanned_stories": 145,
+  "scanned_subjects": 126,
   "editorial_candidates": 24,
   "ready_for_research": 7,
   "research_pending": 7,
-  "retry_deferred": 7,
+  "retry_deferred": 5,
   "editorial_research_sources_discovered": 33,
-  "selected": 0,
-  "editorial_research_started": 0,
+  "selected": 2,
+  "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
-  "publication_deferred": false,
-  "failed": [],
+  "research_calls": 2,
+  "research_tokens": 16791,
+  "analysis_tokens": 14130,
+  "estimated_cost_usd": 0.073759,
+  "quality_retries": 1,
+  "publication_deferred": true,
+  "failed": [
+    {
+      "story_id": "wt-de413d33343f350b",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+      "next_attempt_at": "2026-09-08T07:56:48.796Z"
+    }
+  ],
   "candidates": [
     {
       "story_id": "wt-de413d33343f350b",
       "story_slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
       "story_title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
-      "editorial_analysis_score": 74,
+      "editorial_analysis_score": 75,
       "analysis_gain": 51,
       "factors": {
         "systemic_relevance": 16,
@@ -43,7 +49,7 @@
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -53,14 +59,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 4,
         "primary_source_count": 0,
         "cited_claim_count": 8,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "3b2a4c60dfae7956f3ea5b552d55450b6082047eacc0449f5451cff47362ca60",
+      "fingerprint": "3a1aa42e5fce23a1c7ec3e3c11e9eec28a73ddc47cc8150a995b2b2556fd35c0",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -1059,5 +1065,7 @@
     "polling_errors": 0,
     "timing_reconciled": 0,
     "attention_required": []
-  }
+  },
+  "batch_deferred": 1,
+  "completed_at": "2026-09-08T07:43:25.799Z"
 }
