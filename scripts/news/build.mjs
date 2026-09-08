@@ -20,7 +20,7 @@ import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs"
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260908-visibility1";
+const PUBLIC_RELEASE = "20260908-direction1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -425,7 +425,10 @@ function indexPage(stories, updatedAt, { totalStories = stories.length, caseCoun
       <div><dt>hoch / mittel / gering</dt><dd>Relevanz, nicht gut oder schlecht.</dd></div>
       <div><dt>Wirkungspotenzial / Wirkungsrisiko</dt><dd>Mögliche Folge, noch keine eingetretene Wirkung.</dd></div>
       <div><dt>Beobachtete Wirkung</dt><dd>Festgestellte Zustandsveränderung mit entsprechender Evidenz.</dd></div>
-      <div><dt>offen</dt><dd>Derzeit nicht ausreichend belegt.</dd></div>
+      <div><dt>Noch nicht eingeordnet</dt><dd>Für diese Dimension fehlt eine Richtungsbewertung. Kein neutrales Urteil.</dd></div>
+      <div><dt>Kein belastbarer Wirkpfad</dt><dd>Die Belege dieser Meldung tragen keinen konkreten Bezug zu dieser Dimension. Keine Entwarnung für das gesamte Thema.</dd></div>
+      <div><dt>Wirkungsrichtung unklar</dt><dd>Die Richtung ist nicht hinreichend bestimmbar. Ein unsicherer Eintritt oder ein offenes Ausmaß allein macht einen begründeten negativen Wirkpfad nicht neutral.</dd></div>
+      <div><dt>Gegenläufige Wirkpfade</dt><dd>Konkrete positive und negative Folgen werden getrennt begründet, nicht gegeneinander aufgerechnet. Ohne diese Grundlage gibt es keine belastbare Gesamtbilanz.</dd></div>
     </dl></details>
   </section>
   <aside class="news-install-promo" data-news-install-promo data-search-exclude hidden aria-labelledby="news-install-promo-title">

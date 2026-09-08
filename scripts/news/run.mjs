@@ -55,6 +55,7 @@ const RETRYABLE_QUALITY_ERRORS = [
   /^AI_ANALYSIS_TYPE_INVALID$/,
   /^AI_IMPORTANCE_INVALID$/,
   /^AI_DIMENSION_INVALID:/,
+  /^AI_DIRECTION_/,
   /^AI_ARRAY_REQUIRED:/,
   /^AI_UNCERTAINTY_REQUIRED$/,
   /^AI_WATCH_NEXT_REQUIRED$/,
@@ -1340,7 +1341,7 @@ export async function runWirkungsticker(options = {}) {
           else report.media_checks_skipped += 1;
           if (analysis) resolveEvidenceReferences(analysis, analysisCandidate, aiResult.supplied_evidence_ids?.[candidate.story_id] || []);
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
-          const errors = analysis ? validateAnalysis(analysis, analysisCandidate) : ["AI_ANALYSIS_MISSING"];
+          const errors = analysis ? validateAnalysis(analysis, analysisCandidate, { requireDirectionAssessment: true }) : ["AI_ANALYSIS_MISSING"];
           // Check the durable representation before accepting a publication.
           // A single transition defect must not invalidate the whole run later.
           let nextPublished;

@@ -42,14 +42,16 @@ export const AFFECTED_GROUPS = {
   europa: { label: "EU und Mitgliedstaaten", icon: "europa" },
 };
 
+import { NEWS_DIRECTION_RULE, dimensionAssessment } from './direction-assessment.mjs';
+
 export const TENDENCIES = {
   chance: { label: "Positiv", qualifier: "Potenzial", direction: "positive", icon: "tendenz-chance" },
   risiko: { label: "Negativ", qualifier: "Risiko", direction: "negative", icon: "tendenz-risiko" },
-  gemischt: { label: "Gemischt", qualifier: "Chancen / Risiken", direction: "mixed", icon: "tendenz-gemischt" },
-  offen: { label: "Richtung offen", qualifier: "", direction: "open", icon: "offen" },
+  gemischt: { label: "Gegenläufige Wirkpfade", qualifier: "nicht verrechnet", direction: "mixed", icon: "tendenz-gemischt" },
+  offen: { label: "Wirkungsrichtung unklar", qualifier: "", direction: "open", icon: "offen" },
 };
 
-export const DIMENSION_TENDENCY_RULE = "MPD tendency auch bei visuals:null: chance=positives Potenzial, risiko=negatives Risiko, gemischt=beides ohne Verrechnung, offen=unklar. In rationale mechanistisch begründen, unabhängig von Relevanz; kein Wirkungsnachweis.";
+export const DIMENSION_TENDENCY_RULE = NEWS_DIRECTION_RULE;
 
 const tendencyKey = value => typeof value === "string" && Object.hasOwn(TENDENCIES, value.trim().toLowerCase()) ? value.trim().toLowerCase() : "offen";
 
@@ -87,7 +89,7 @@ export const VISUALS_LIMITS = { keyFigures: 3, affectedGroups: 4, timeline: 4, c
 
 // Schema-Ausschnitt für den Prompt der WÖk-KI. Codex bindet ihn in buildAnalysisPrompt() ein.
 export const VISUALS_SCHEMA = {
-  path_directions: [{ order: "first_order|second_order|third_order", path: "exakter Text des zugeordneten Wirkpfads", direction: "positive|negative|mixed|neutral|open", condition: "Bedingung und konkrete Zustandsveränderung", evidence: "plausible_path|scenario|open", claim_ids: ["Beleg-IDs für den Ausgangspunkt, kein Kausalitätsnachweis"] }],
+  path_directions: [{ order: "first_order|second_order|third_order", path: "exakter Text des zugeordneten Wirkpfads", dimensions: ["human|planet|democracy; nur betroffene Dimensionen"], direction: "positive|negative|mixed|neutral|open", condition: "Bedingung und konkrete Zustandsveränderung im benannten Schutz-/Funktionsbereich", evidence: "plausible_path|scenario|open", claim_ids: ["Beleg-IDs für den Ausgangspunkt, kein Kausalitätsnachweis"] }],
   key_figures: [{
     label: "Kennzahl, höchstens 60 Zeichen",
     value: "Zahl exakt wie im Claim oder Quelltext, Schreibweise unverändert, z. B. 35,2 oder zehn",
@@ -252,7 +254,9 @@ export function sanitizeVisuals(input, story = {}) {
       || (direction !== "open" && (evidence === "open" || !refs.length))) {
       dropped.push(`PATH_DIRECTION_INVALID:${index}`); continue;
     }
-    paths.push({ order, path, direction, condition, evidence, claim_ids: refs });
+    const dimensions = [...new Set((Array.isArray(raw.dimensions) ? raw.dimensions : []).filter(key => Object.hasOwn(DIMENSIONS, key)))];
+    if (story.analysis?.direction_assessment_version && !dimensions.length) { dropped.push(`PATH_DIMENSIONS_REQUIRED:${index}`); continue; }
+    paths.push({ order, path, direction, condition, evidence, claim_ids: refs, ...(dimensions.length ? { dimensions } : {}) });
     usedPaths.add(key);
   }
   if (paths.length) output.path_directions = paths;
@@ -455,29 +459,34 @@ export function renderStatusTrack(status) {
   return `<div class="wt-track"><ol class="wt-track__steps" aria-label="Verfahrensstand: ${escapeHtml(status)}">${steps}</ol></div>`;
 }
 
-export function renderTendency(value) {
+export function renderTendency(value, assessment = null) {
   const key = tendencyKey(value);
   const tendency = TENDENCIES[key];
-  return `<span class="wt-tendency wt-tendency--${key}" data-direction="${tendency.direction}" title="Analytische Richtung: Potenzial und Risiko, kein Nachweis eingetretener Wirkung">${renderIcon(tendency.icon)}<span><strong>${tendency.label}</strong>${tendency.qualifier ? `<span class="wt-tendency__qualifier"> · ${tendency.qualifier}</span>` : ""}</span></span>`;
+  return `<span class="wt-tendency wt-tendency--${key}" data-direction="${tendency.direction}"${assessment ? ` data-assessment="${escapeHtml(assessment.status)}"` : ""} title="Analytische Richtung: Potenzial und Risiko, kein Nachweis eingetretener Wirkung">${renderIcon(tendency.icon)}<span><strong>${escapeHtml(assessment?.label || tendency.label)}</strong>${tendency.qualifier ? `<span class="wt-tendency__qualifier"> · ${tendency.qualifier}</span>` : ""}</span></span>`;
 }
 
 export function renderDimensionMeters(analysis = {}, { compact = false, tendency } = {}) {
-  const directions = dimensionTendencies(analysis, tendency === undefined ? analysis.visuals?.tendency : tendency);
+  const legacy = tendency === undefined ? analysis.visuals?.tendency : tendency;
   const items = Object.entries(DIMENSIONS).map(([key, meta]) => {
     const value = analysis[key] || { relevance: "offen", rationale: "Noch nicht belastbar eingeordnet." };
     const level = relevanceLevel(value.relevance);
     const label = value.relevance || "offen";
+    const assessment = dimensionAssessment(analysis, key, legacy);
     return `<div class="wt-dim wt-dim--${key}" data-level="${level}">
       <div class="wt-dim__head">${renderIcon(meta.icon)}<strong>${meta.label}</strong><span class="wt-dim__level">${escapeHtml(label)}</span></div>
       ${meter(level, `Relevanz für ${meta.label}: ${label}`, { className: "wt-dim__track" })}
-      ${renderTendency(directions[key])}
+      ${renderTendency(assessment.tendency, assessment)}
+      ${assessment.note ? `<p class="wt-dim__assessment-note">${escapeHtml(assessment.note)}</p>` : ""}
       <p class="wt-dim__note${compact ? " sr-only" : ""}">${escapeHtml(value.rationale || "")}</p>
+      ${!compact && assessment.tendency === 'gemischt' ? `<dl class="wt-dim__paths"><div><dt>Positiver Pfad</dt><dd>${escapeHtml(value.positive_path.mechanism)}</dd></div><div><dt>Negativer Pfad</dt><dd>${escapeHtml(value.negative_path.mechanism)}</dd></div></dl>` : ""}
     </div>`;
   }).join("");
-  return `<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>${compact ? "" : '<p class="wt-dims__legend">Balken: Relevanz. Zeichen und Text: positives Potenzial, negatives Risiko, gemischt oder offen. Kein Nachweis eingetretener Wirkung; gemischt bedeutet nicht ausgeglichen.</p>'}`;
+  return `<div class="wt-dims${compact ? " wt-dims--compact" : ""}">${items}</div>${compact ? "" : '<p class="wt-dims__legend">Die Einordnung gilt für die beschriebene Entwicklung, nicht pauschal für eine Partei oder ein Themenfeld. Balken: Relevanz. Richtung: positives Potenzial oder negatives Risiko, kein Wirkungsnachweis. Eintritt und Ausmaß können offen sein, obwohl die Richtung begründet ist. Gegenläufige Pfade werden nicht verrechnet.</p>'}`;
 }
 
 export function renderImpactPath(analysis = {}, prose = (items) => (items || []).map(escapeHtml).join(" "), visuals = null) {
+  const hasPathAssessments = ['first_order', 'second_order', 'third_order'].some(order =>
+    (Array.isArray(analysis[order]) ? analysis[order] : []).some(path => visuals?.path_directions?.some(item => item.order === order && item.path === path)));
   const steps = [
     { key: "mechanisms", badge: `${renderIcon("mechanismus")}<span>Wirkmechanismus</span>`, className: "wt-path__step--mechanism", title: "Wie die Maßnahme überhaupt wirken kann" },
     { key: "first_order", badge: "<b>1</b><span>Erste Ordnung – unmittelbar</span>", order: 1, title: "Erste Ordnung" },
@@ -486,11 +495,12 @@ export function renderImpactPath(analysis = {}, prose = (items) => (items || [])
   ].map((step) => {
     const paths = (Array.isArray(analysis[step.key]) ? analysis[step.key] : []).map(path => {
       const assessment = step.order && visuals?.path_directions?.find(item => item.order === step.key && item.path === path);
-      return `<div class="wt-path__claim">${step.order ? renderPathDirection(assessment?.direction) : ""}<p>${prose([path])}</p>${step.order ? `<p class="news-method-note">${assessment ? `${escapeHtml(PATH_EVIDENCE[assessment.evidence] || "Evidenz offen")} · ${escapeHtml(assessment.condition)}` : "Richtung und Evidenz nicht gesondert eingestuft."}</p>` : ""}</div>`;
+      const dimensions = (assessment?.dimensions || []).filter(key => Object.hasOwn(DIMENSIONS, key));
+      return `<div class="wt-path__claim">${dimensions.length ? `<p class="wt-path__scope"><strong>Bezug:</strong> ${dimensions.map(key => `${renderIcon(DIMENSIONS[key].icon)} ${DIMENSIONS[key].label}`).join(' · ')}</p>` : ''}${step.order && assessment ? renderPathDirection(assessment.direction) : ""}<p>${prose([path])}</p>${step.order && (assessment || hasPathAssessments) ? `<p class="news-method-note">${assessment ? `${escapeHtml(PATH_EVIDENCE[assessment.evidence] || "Evidenz offen")} · ${escapeHtml(assessment.condition)}` : "Für diese einzelne Folge liegt noch keine gesonderte Richtungsbewertung vor."}</p>` : ""}</div>`;
     }).join("");
     return `<li class="wt-path__step${step.className ? ` ${step.className}` : ""}"${step.order ? ` data-order="${step.order}"` : ""}><span class="wt-path__badge" title="${escapeHtml(step.title)}">${step.badge}</span>${paths || '<p>Hier liegt noch keine Einordnung vor.</p>'}</li>`;
   }).join("");
-  return `<div class="wt-path"><ol class="wt-path__steps">${steps}</ol><p class="wt-path__legend">${renderIcon("folgen")}<span>Die Ordnung zeigt, wie Folgen zusammenhängen. Richtung und Evidenz werden je Wirkpfad getrennt eingeordnet. Eine mögliche Folge ist noch keine beobachtete Wirkung.</span></p></div>`;
+  return `<div class="wt-path"><p class="wt-path__legend"><span><strong>Worauf bezieht sich die Richtung?</strong> Positiv bedeutet: Die beschriebene Folge verbessert Lebenslagen, natürliche Lebensgrundlagen oder demokratische Funktionen. Negativ bedeutet: Sie belastet oder schwächt diese. Gemeint ist der einzelne Wirkpfad, nicht das ganze Ereignis.${hasPathAssessments ? '' : ' Für die folgenden Einzelpfade liegt noch keine gesonderte Richtungsbewertung vor; sie zeigen mögliche Zusammenhänge.'}</span></p><ol class="wt-path__steps">${steps}</ol><p class="wt-path__legend">${renderIcon("folgen")}<span>Erste, zweite und dritte Ordnung zeigen unmittelbare, nachgelagerte und systemische Folgen - nicht die drei Dimensionen Mensch, Planet und Demokratie. Eine mögliche Folge ist noch keine beobachtete Wirkung.</span></p></div>`;
 }
 
 export function renderGate(analysis = {}) {
