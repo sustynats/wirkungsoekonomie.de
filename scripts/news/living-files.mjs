@@ -61,9 +61,10 @@ export function documentKey(value) {
   } catch { return ""; }
 }
 
-const PLACE_EXCLUSIONS = new Set("der die das dem den einem einer im am an auf aus bei bis durch fur gegen hinter in mit nach neben ober ohne seit uber um unter von vor wahrend wegen zu zum zur und oder sowie kraft folge zusammenhang vergleich blick zuge interview internet fernsehen".split(" "));
+const PLACE_EXCLUSIONS = new Set("der die das dem den einem einer im am an auf aus bei bis durch fur gegen hinter in mit nach neben ober ohne seit uber um unter von vor wahrend wegen zu zum zur und oder sowie kraft folge zusammenhang vergleich blick zuge interview internet fernsehen mathematik lesen naturwissenschaften physik chemie biologie".split(" "));
 function placesIn(text) {
   // Only locative phrases, never publisher coverage or the origin of a letter ("aus NRW").
+  // German capitalized subject nouns ("in Mathematik") are not place evidence.
   const matches = String(text || "").matchAll(/\b(?:in|bei|nahe)\s+(?:der\s+Stadt\s+)?([A-ZÄÖÜ][\p{L}-]+(?:\s+(?:am|an der|im|ob der)\s+[A-ZÄÖÜ][\p{L}-]+)?)/gu);
   return unique([...matches].map((match) => canonicalPlace(match[1])).filter((place) => !PLACE_EXCLUSIONS.has(place)));
 }
@@ -153,7 +154,9 @@ function publicNetworkPlace(title, lead) {
 
 export function fileSubject(item) {
   const title = String(item.title || "");
-  const lead = String(item.summary || item.source_summary || "").split(/\n\s*\n/)[0].slice(0, 650);
+  // An unanalysed batch cluster has no own summary yet. Its leading source
+  // still supplies the subject/place guard; arbitrary context sources do not.
+  const lead = String(item.summary || item.source_summary || item.sources?.[0]?.summary || "").split(/\n\s*\n/)[0].slice(0, 650);
   const text = normal(`${title} ${lead}`);
   const grid = /\b(umspannwerk\w*|stromnetz\w*|stromversorgung\w*|substation\w*)\b/.test(text);
   const response = /\b(schutz|sicherheitszentrum|sicherheitsvorkehrung\w*|schutzmassnahm\w*|schutzt|kritis-dachgesetz)\b/.test(normal(title));
