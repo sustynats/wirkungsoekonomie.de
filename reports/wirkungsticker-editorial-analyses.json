@@ -2,32 +2,71 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T11:08:38.096Z",
-  "scanned_stories": 152,
-  "scanned_subjects": 133,
-  "editorial_candidates": 25,
-  "ready_for_research": 8,
-  "research_pending": 8,
-  "retry_deferred": 5,
+  "started_at": "2026-09-08T11:29:36.270Z",
+  "scanned_stories": 157,
+  "scanned_subjects": 136,
+  "editorial_candidates": 26,
+  "ready_for_research": 7,
+  "research_pending": 9,
+  "retry_deferred": 6,
   "editorial_research_sources_discovered": 40,
-  "selected": 3,
-  "editorial_research_started": 4,
+  "selected": 1,
+  "editorial_research_started": 0,
   "editorial_analyses_published": 0,
-  "editorial_analyses_updated": 1,
-  "research_calls": 4,
-  "research_tokens": 28108,
-  "analysis_tokens": 28744,
-  "estimated_cost_usd": 0.146109,
-  "quality_retries": 2,
+  "editorial_analyses_updated": 0,
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
+  "quality_retries": 0,
   "publication_deferred": true,
-  "failed": [
-    {
-      "story_id": "wt-de413d33343f350b",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T12:08:38.096Z"
-    }
-  ],
+  "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-db0e00874c2fe321",
+      "story_slug": "insolvenzen-firmeninsolvenzen-sinken-im-august-aber-mehr-betroffene-2fe321",
+      "story_title": "Insolvenzen: Firmeninsolvenzen sinken im August – aber mehr Betroffene",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "bff7982d4b9bd35b25b74855cf076ee66786b94a7b8906a67f312c964ac5f4e1",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-4c0a09f9ce090af7",
       "story_slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
@@ -878,7 +917,7 @@
         "reasons": []
       },
       "fingerprint": "b3ccdb4bdc5adee6b0d6f75de828e40403e2b8523b27bc4f4722fef60686ebcb",
-      "status": "ready_for_research",
+      "status": "published",
       "analysis_id": "woek-analysis-852ebdd0a0aa"
     },
     {
@@ -1111,5 +1150,5 @@
     "attention_required": []
   },
   "batch_deferred": 1,
-  "completed_at": "2026-09-08T11:11:45.212Z"
+  "completed_at": "2026-09-08T11:29:53.685Z"
 }
