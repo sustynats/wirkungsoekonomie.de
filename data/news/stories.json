@@ -1,8 +1,168 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T18:37:17.573Z",
-  "updated_at": "2026-09-08T18:37:17.573Z",
+  "updated_at": "2026-09-08T18:53:06.079Z",
   "stories": [
+    {
+      "story_id": "wt-d28c410333263f0e",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "8bcd51f1238a8503e28627b8a8799e86f961c18bf7b3ea2e030ad45282b1829f",
+        "first_failed_at": "2026-09-08T18:53:06.079Z",
+        "failed_at": "2026-09-08T18:53:06.079Z",
+        "retry_after": "2026-09-08T19:08:06.079Z",
+        "retry_count": 1
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-willingmann-lehnt-gesprache-mit-afd-ab-263f0e",
+      "title": "Wahlergebnis Sachsen-Anhalt: Willingmann lehnt Gespräche mit AfD ab",
+      "first_seen": "2026-09-08T18:50:38.000Z",
+      "last_updated": "2026-09-08T18:50:38.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-164,wahl-560.html",
+          "title": "Wahlergebnis Sachsen-Anhalt: Willingmann lehnt Gespräche mit AfD ab",
+          "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Armin Willingmann lehnt diese Gespräche für die SPD ab. Die neuen Entwicklungen im Liveticker.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T18:50:38.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "32f12d4d2d0fbeea647cadf1c697b379b5fd79b36f9e52f0ca27e5d3d1d10726",
+          "source_item_id": "f33f31f8d3a61868e3403b1b795a87a8478d1de4c1c5c97f3921cecd61ce8ee4",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T18:50:38.000Z",
+          "ingested_at": "2026-09-08T18:53:06.079Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d28c410333263f0e-claim-01",
+          "story_id": "wt-d28c410333263f0e",
+          "claim": "Wahlergebnis Sachsen-Anhalt: Willingmann lehnt Gespräche mit AfD ab: Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Armin Willingmann lehnt diese Gespräche für die SPD ab. Die neuen Entwicklungen im Liveticker.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T18:53:06.079Z"
+        }
+      ],
+      "content_hash": "7c7f1568d94b869d1537a842a6e3035c6a6f1e92034dbc6281de409dffa46667",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T19:08:06.079Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T18:53:06.079Z",
+      "event_first_seen_at": "2026-09-08T18:53:06.079Z",
+      "event_detected_at": "2026-09-08T18:53:06.079Z",
+      "event_id": "event-a5d41d485e6026bc70bb",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-164,wahl-560.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 2.467983333333333,
+        "detection_delay_minutes": 2.467983333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T18:53:06.079Z",
+        "fingerprint": "2ec39e3f4dc8075f7d0775f3b902b0786e35a1765eca419e2cfc3d9a08151a40",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T18:53:06.079Z",
+      "rejection": {
+        "at": "2026-09-08T18:53:06.079Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-3707b0d66087698b",
       "slug": "zwolf-lander-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-87698b",
@@ -2240,7 +2400,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T18:18:05.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -2294,7 +2454,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "2f85c23ddcd850003559d4df0551295fa6a18908b5eb4a9ecd9209ef43c15c4a",
           "issue_codes": [],
           "warning_codes": []
@@ -2747,6 +2907,1007 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_MATERIALITY_TOO_LOW"
         ]
+      }
+    },
+    {
+      "story_id": "wt-4409a2f6e240d133",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ff05d6c44db69dfbdb18144cca6c0594b4c8cada96d0038cb8492e14c70fe2c3",
+        "first_failed_at": "2026-09-08T18:53:06.079Z",
+        "failed_at": "2026-09-08T18:53:06.079Z",
+        "retry_after": "2026-09-08T19:08:06.079Z",
+        "retry_count": 1
+      },
+      "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
+      "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-08T14:21:47.735Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T14:06:56.372Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T14:52:22.706Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T14:28:53.099Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T15:06:46.249Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T14:52:22.706Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T15:37:18.894Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:21:51.449Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T16:37:16.029Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T16:12:07.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T16:12:07.000Z",
+              "ingested_at": "2026-09-08T16:22:13.984Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:37:18.894Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T16:51:42.054Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T16:12:07.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T16:12:07.000Z",
+              "ingested_at": "2026-09-08T16:37:16.029Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:37:18.894Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T17:06:38.176Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T16:12:07.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T16:12:07.000Z",
+              "ingested_at": "2026-09-08T16:37:16.029Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:37:18.894Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T17:22:13.828Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T17:01:55.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T17:01:55.000Z",
+              "ingested_at": "2026-09-08T17:06:38.176Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:37:18.894Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T17:36:55.540Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T17:07:35.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T17:07:35.000Z",
+              "ingested_at": "2026-09-08T17:22:13.828Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:37:18.894Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T17:53:17.517Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T17:07:35.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T17:07:35.000Z",
+              "ingested_at": "2026-09-08T17:22:13.828Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:37:18.894Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T18:03:03.803Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T17:44:29.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T17:44:29.000Z",
+              "ingested_at": "2026-09-08T17:53:17.517Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:37:18.894Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T18:53:06.079Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T17:44:29.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T17:44:29.000Z",
+              "ingested_at": "2026-09-08T18:37:17.573Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
+      "first_seen": "2026-09-08T11:06:00.000Z",
+      "last_updated": "2026-09-08T17:44:29.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "manager-magazin-news",
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+          "title": "Sabotage an Umspannwerken: APolizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Nach einer Reihe von Sabotage-Angriffen auf das deutsche Stromnetz hat die Polizei einen Tatverdächtigen festgenommen. Der Mann sei der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:06:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "8889e3c6103ada6f47af1d19294825781ee90b38585e0de15240ad9d3cca0dc6",
+          "source_item_id": "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+          "publisher_id": "manager-magazin",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T11:06:00.000Z",
+          "ingested_at": "2026-09-08T18:53:06.079Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html",
+          "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Die Polizei hat in der Nähe eines Kraftwerks bei Aachen den mutmaßlichen Strom-Saboteur gefasst. Der 48-Jährige soll bundesweit Anschläge auf das Stromnetz verübt haben. Die Bunde…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:30:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e6c1f9b026160233f0d57dda61689eafa55b719d9dd02d3e21849b7a03b4a6f8",
+          "source_item_id": "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T11:30:01.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T18:47:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+          "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T18:47:22.000Z",
+          "ingested_at": "2026-09-08T18:53:06.079Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-01",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Sabotage an Umspannwerken: APolizei nimmt mutmaßlichen Strom-Saboteur fest: Nach einer Reihe von Sabotage-Angriffen auf das deutsche Stromnetz hat die Polizei einen Tatverdächtigen festgenommen. Der Mann sei der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "manager-magazin-news",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T18:53:06.079Z"
+        },
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-02",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Polizei nimmt mutmaßlichen Strom-Saboteur fest: Die Polizei hat in der Nähe eines Kraftwerks bei Aachen den mutmaßlichen Strom-Saboteur gefasst. Der 48-Jährige soll bundesweit Anschläge auf das Stromnetz verübt haben. Die Bunde…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T18:53:06.079Z"
+        },
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-03",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T18:53:06.079Z"
+        }
+      ],
+      "content_hash": "8be4a3a6fdf34f22f2d124abde2ed1bfe6de5b1c86f50c765c03f298c5d23ac4",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "MEDIA_IMPACT_REQUIRED"
+      ],
+      "quality_retry_count": 7,
+      "quality_retry_after": "2026-09-08T19:08:06.079Z",
+      "reassessment": false,
+      "fresh": false,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T18:53:06.079Z",
+      "event_first_seen_at": "2026-09-08T11:37:12.942Z",
+      "event_detected_at": "2026-09-08T11:37:12.942Z",
+      "event_id": "event-287abbb0f0d92c8cb59c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.73465,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 435.8856166666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T18:53:06.079Z",
+        "fingerprint": "1615cc473c9b190fd9a54820d36d157ec52c9d35697333b8b78db088dba87726",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -3346,7 +4507,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:12:00.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -3367,7 +4528,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -4212,7 +5373,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:50:00.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -4233,7 +5394,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -5087,7 +6248,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T17:41:57.149Z"
+        "retry_after": "2026-09-08T19:10:44.455Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T18:03:03.803Z",
@@ -5138,7 +6299,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "4b55b20f625f8b51cff685bdbe368f6c5abe3033876fbaf678baf66119971d61",
           "issue_codes": [],
           "warning_codes": []
@@ -6719,7 +7880,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -7451,7 +8612,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:37:22.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -7472,970 +8633,11 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "0e63a4de2d3808fb0a7038382c487171672091885e94aa28e01ad3ddaac453c4",
           "issue_codes": [],
           "warning_codes": []
         }
-      }
-    },
-    {
-      "story_id": "wt-4409a2f6e240d133",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "8f195e13b2aa134fd3de142aeacea7f37189600daa4f49b7002e12b3db8e0c29",
-        "first_failed_at": "2026-09-08T18:37:17.573Z",
-        "failed_at": "2026-09-08T18:37:17.573Z",
-        "retry_after": "2026-09-08T18:52:17.573Z",
-        "retry_count": 1
-      },
-      "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
-      "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-      "queue_source_repartitions": [
-        {
-          "version": 1,
-          "at": "2026-09-08T14:21:47.735Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T14:06:56.372Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T14:52:22.706Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T14:28:53.099Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T15:06:46.249Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T14:52:22.706Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T15:37:18.894Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T15:21:51.449Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T16:37:16.029Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "dlf-nachrichten",
-              "publisher": "Deutschlandfunk",
-              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T16:12:07.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-              "publisher_id": "deutschlandfunk",
-              "publisher_kind": "public_broadcasting",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "international"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T16:12:07.000Z",
-              "ingested_at": "2026-09-08T16:22:13.984Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:deutschlandfunk",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T15:37:18.894Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T16:51:42.054Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "dlf-nachrichten",
-              "publisher": "Deutschlandfunk",
-              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T16:12:07.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-              "publisher_id": "deutschlandfunk",
-              "publisher_kind": "public_broadcasting",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "international"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T16:12:07.000Z",
-              "ingested_at": "2026-09-08T16:37:16.029Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:deutschlandfunk",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T15:37:18.894Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T17:06:38.176Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "dlf-nachrichten",
-              "publisher": "Deutschlandfunk",
-              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T16:12:07.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-              "publisher_id": "deutschlandfunk",
-              "publisher_kind": "public_broadcasting",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "international"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T16:12:07.000Z",
-              "ingested_at": "2026-09-08T16:37:16.029Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:deutschlandfunk",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T15:37:18.894Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T17:22:13.828Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "dlf-nachrichten",
-              "publisher": "Deutschlandfunk",
-              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T17:01:55.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-              "publisher_id": "deutschlandfunk",
-              "publisher_kind": "public_broadcasting",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "international"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T17:01:55.000Z",
-              "ingested_at": "2026-09-08T17:06:38.176Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:deutschlandfunk",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T15:37:18.894Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T17:36:55.540Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "dlf-nachrichten",
-              "publisher": "Deutschlandfunk",
-              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T17:07:35.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-              "publisher_id": "deutschlandfunk",
-              "publisher_kind": "public_broadcasting",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "international"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T17:07:35.000Z",
-              "ingested_at": "2026-09-08T17:22:13.828Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:deutschlandfunk",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T15:37:18.894Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T17:53:17.517Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "dlf-nachrichten",
-              "publisher": "Deutschlandfunk",
-              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T17:07:35.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-              "publisher_id": "deutschlandfunk",
-              "publisher_kind": "public_broadcasting",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "international"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T17:07:35.000Z",
-              "ingested_at": "2026-09-08T17:22:13.828Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:deutschlandfunk",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T15:37:18.894Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        },
-        {
-          "version": 1,
-          "at": "2026-09-08T18:03:03.803Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "dlf-nachrichten",
-              "publisher": "Deutschlandfunk",
-              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T17:44:29.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-              "publisher_id": "deutschlandfunk",
-              "publisher_kind": "public_broadcasting",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "international"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T17:44:29.000Z",
-              "ingested_at": "2026-09-08T17:53:17.517Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:deutschlandfunk",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T15:37:18.894Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        }
-      ],
-      "first_seen": "2026-09-08T11:06:00.000Z",
-      "last_updated": "2026-09-08T17:07:35.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "manager-magazin-news",
-          "publisher": "manager magazin",
-          "url": "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-          "title": "Sabotage an Umspannwerken: APolizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Nach einer Reihe von Sabotage-Angriffen auf das deutsche Stromnetz hat die Polizei einen Tatverdächtigen festgenommen. Der Mann sei der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:06:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "8889e3c6103ada6f47af1d19294825781ee90b38585e0de15240ad9d3cca0dc6",
-          "source_item_id": "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
-          "publisher_id": "manager-magazin",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T18:37:17.573Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:manager-magazin",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesschau-access",
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html",
-          "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Die Polizei hat in der Nähe eines Kraftwerks bei Aachen den mutmaßlichen Strom-Saboteur gefasst. Der 48-Jährige soll bundesweit Anschläge auf das Stromnetz verübt haben. Die Bunde…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:30:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "e6c1f9b026160233f0d57dda61689eafa55b719d9dd02d3e21849b7a03b4a6f8",
-          "source_item_id": "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
-          "publisher_id": "tagesschau",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T11:30:01.000Z",
-          "ingested_at": "2026-09-08T13:22:17.950Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "collection_source_id": "swr-aktuell",
-          "collection_publisher_id": "swr"
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T17:44:29.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-          "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T17:44:29.000Z",
-          "ingested_at": "2026-09-08T18:37:17.573Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-01",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Sabotage an Umspannwerken: APolizei nimmt mutmaßlichen Strom-Saboteur fest: Nach einer Reihe von Sabotage-Angriffen auf das deutsche Stromnetz hat die Polizei einen Tatverdächtigen festgenommen. Der Mann sei der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "manager-magazin-news",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:manager-magazin",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:37:17.573Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-02",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Polizei nimmt mutmaßlichen Strom-Saboteur fest: Die Polizei hat in der Nähe eines Kraftwerks bei Aachen den mutmaßlichen Strom-Saboteur gefasst. Der 48-Jährige soll bundesweit Anschläge auf das Stromnetz verübt haben. Die Bunde…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesschau-access",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:37:17.573Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-03",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:37:17.573Z"
-        }
-      ],
-      "content_hash": "8be4a3a6fdf34f22f2d124abde2ed1bfe6de5b1c86f50c765c03f298c5d23ac4",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
-      "quality_retry_count": 6,
-      "quality_retry_after": "2026-09-08T18:52:17.573Z",
-      "reassessment": false,
-      "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-08T18:37:17.573Z",
-      "event_first_seen_at": "2026-09-08T11:37:12.942Z",
-      "event_detected_at": "2026-09-08T11:37:12.942Z",
-      "event_id": "event-287abbb0f0d92c8cb59c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 52.80955,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 420.0771833333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 89,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T18:37:17.573Z",
-        "fingerprint": "1615cc473c9b190fd9a54820d36d157ec52c9d35697333b8b78db088dba87726",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -9599,7 +9801,7 @@
             "title": "\"Welt\"-Bericht - Details zur geplanten Steuer-Reform bei Kryptowerten wie dem Bitcoin werden bekannt",
             "summary": "Innerhalb des Bundesfinanzministeriums werden die Pläne für eine Reform der Besteuerung von Gewinnen beim Handel mit Kryptowährungen offenbar konkreter.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T17:44:29.000Z",
+            "published_at": "2026-09-08T18:47:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -9615,8 +9817,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T17:44:29.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "source_published_at": "2026-09-08T18:47:22.000Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -9637,7 +9839,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "46b06f5129ab11dcdcbcead79a419746c9745bf047a31c3da192fa34a025dc76",
           "issue_codes": [],
           "warning_codes": []
@@ -11035,7 +11237,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
           "issue_codes": [],
           "warning_codes": []
@@ -14944,7 +15146,7 @@
             "title": "FairSquare - Erneute Beschwerde bei Ethikkomission gegen FIFA-Chef Infantino",
             "summary": "Im Machtkampf beim Fußball-Weltverband FIFA erhöht auch die Menschenrechtsorganisation FairSquare den Druck auf Präsident Gianni Infantino. Die Organisation hat eine erneute Beschwerde gegen den Schweizer bei der FIFA-Ethikkommission eingereicht.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T17:44:29.000Z",
+            "published_at": "2026-09-08T18:47:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -14960,8 +15162,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T17:44:29.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "source_published_at": "2026-09-08T18:47:22.000Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14982,7 +15184,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "484ee63d9db550c1e2294eb912677a21bde29d3e9b9613f1457cb2ac44270032",
           "issue_codes": [],
           "warning_codes": []
@@ -17089,7 +17291,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -18450,7 +18652,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -19169,7 +19371,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
           "issue_codes": [],
           "warning_codes": []
@@ -20449,7 +20651,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:02:50.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20470,7 +20672,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "d4b8c47f1b5a6ae4b9e8838edd34c8da0189c7f592bf1dd36369dd436d41ddf2",
           "issue_codes": [],
           "warning_codes": []
@@ -22991,7 +23193,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T11:57:24.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -23012,7 +23214,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -23716,7 +23918,7 @@
       "verification_started_at": "2026-09-08T12:23:27.630Z",
       "publish_ready_at": "2026-09-08T12:23:46.943Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -24091,9 +24293,12 @@
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T17:56:13.778Z"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T14:06:56.372Z",
-        "content_hash": "cfe9196d59bb47d11b34da8786b4e045a6e3b5692881b676e4e211e28dd69772",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "a6b4dcece46acd11bdfc1f26285e78849942c8aac78851e599dc99b0951c09cd",
+        "checked_at": "2026-09-08T18:53:06.079Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-09T00:53:06.079Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -24128,24 +24333,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
-          "fingerprint": "63f046175e324d9aac3dc62cf0f0e86b6ea7a260faeb7c3aa7053bcca7dcdfdf",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-7ff98dbd7f06db0d",
@@ -26248,7 +26438,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -27073,6 +27263,14 @@
     },
     {
       "story_id": "wt-0dea1227dc22264e",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "2c8d08201394e811d2d0d10f70da491f0fd7fce3357bff1a44a0dae74cd1e183",
+        "first_failed_at": "2026-09-08T18:53:06.079Z",
+        "failed_at": "2026-09-08T18:53:06.079Z",
+        "retry_after": "2026-09-08T19:08:06.079Z",
+        "retry_count": 1
+      },
       "slug": "ermittler-fassen-48-jahrigen-nach-sabotage-an-kraftwerken-22264e",
       "title": "Ermittler fassen 48-Jährigen nach Sabotage an Kraftwerken",
       "first_seen": "2026-09-08T11:31:00.000Z",
@@ -27134,20 +27332,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:37:17.573Z"
+          "checked_at": "2026-09-08T18:53:06.079Z"
         }
       ],
       "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T19:08:06.079Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T18:37:17.573Z",
+      "updated_at": "2026-09-08T18:53:06.079Z",
       "event_first_seen_at": "2026-09-08T12:36:46.426Z",
       "event_detected_at": "2026-09-08T12:36:46.426Z",
       "event_id": "event-112dbf80aa5019468e8a",
@@ -27182,23 +27380,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 426.29288333333335,
+        "source_age_minutes": 442.10131666666666,
         "detection_delay_minutes": 65.77376666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 360.51911666666666,
+        "queue_age_minutes": 376.32755,
         "target_publication_minutes": 120,
-        "news_freshness_score": 11,
+        "news_freshness_score": 8,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T18:37:17.573Z",
+        "checked_at": "2026-09-08T18:53:06.079Z",
         "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T18:53:06.079Z",
+      "rejection": {
+        "at": "2026-09-08T18:53:06.079Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -30108,7 +30318,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T17:26:39.174Z"
+        "retry_after": "2026-09-08T19:10:38.142Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -30798,7 +31008,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T17:26:33.700Z"
+        "retry_after": "2026-09-08T19:10:32.122Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -30849,7 +31059,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -31858,7 +32068,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T14:30:20.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -31912,7 +32122,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "aa36a5175a51620ce9b1dd20ae621a54427266dfa6f82d73155af11892f0c358",
           "issue_codes": [],
           "warning_codes": []
@@ -34170,7 +34380,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -35268,7 +35478,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "4c3017054cc3cb3b35afc4b945e8378f8031d694648e6d9d28e443d23d85aebb",
           "issue_codes": [],
           "warning_codes": []
@@ -35771,7 +35981,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "205041d2192cf688c27c75b8f7f545b8c4beba211ebffe3aaa3e8bcc272551f5",
           "issue_codes": [],
           "warning_codes": []
@@ -36334,7 +36544,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T08:45:00.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -36355,7 +36565,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "cc072f3eacc31d1e9994dcaa53b6184b0b77527fa2bdf770f01aad2115f6149d",
           "issue_codes": [],
           "warning_codes": []
@@ -37096,7 +37306,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "868ad5265d175cfb161266ef637639c076040c24552ca93728b755dfa7d9702e",
           "issue_codes": [],
           "warning_codes": []
@@ -39505,7 +39715,7 @@
       "verification_started_at": "2026-09-08T08:38:20.538Z",
       "publish_ready_at": "2026-09-08T08:38:30.859Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -39842,9 +40052,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "460d106222bb347c6b1e5a4122b24cbce66a13a34357f717d419b31395ed7a11",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T18:53:06.079Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T17:37:12.942Z",
+        "expires_at": "2026-09-09T00:53:06.079Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -39881,62 +40091,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T14:06:56.372Z",
-        "content_hash": "221b7575f9d9982f74c9573004c873a2511a0c4d34ce6d9c360ae8851993ec2e",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
-            "title": "EuGH: Politische Kampagne namens „IKEA-Plan“ kann Möbelhändler schaden",
-            "summary": "Im Markenstreit zwischen Ikea und einer belgischen politischen Partei hat der Europäische Gerichtshof (EuGH) zugunsten des Möbelhändlers entschieden. Einen Plan zur Asylpolitik mit „IKEA“ abzukürzen, kann der Wertschätzung der Marke und damit dem Interesse von Ikea schaden, wie der EuGH am Dienstag in Luxemburg entschied. Die Präsentation des Plans ähnelte einer Ikea-Montageanleitung. (Az. C-298/23)",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T08:18:17.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c0e5c8c8828fcb2d3708a0fbf5afb7fb50836f277ee822692269d711c3be24cc",
-            "source_item_id": "c73b805a842bb1c21b84a40f613c68022bff8d9d5d6766cdd8b74cc83f54f831",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T08:18:17.000Z",
-            "ingested_at": "2026-09-08T08:37:27.504Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
-          "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-3039792b45638ffe",
@@ -41722,7 +41877,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T07:30:00.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41743,7 +41898,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
           "issue_codes": [],
           "warning_codes": []
@@ -42439,7 +42594,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T18:37:17.573Z",
+          "ingested_at": "2026-09-08T18:53:06.079Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -42468,7 +42623,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:37:17.573Z"
+          "checked_at": "2026-09-08T18:53:06.079Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -42483,7 +42638,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T18:37:17.573Z",
+      "updated_at": "2026-09-08T18:53:06.079Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -42524,7 +42679,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 509.85743333333335,
+        "queue_age_minutes": 525.6658666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -42533,7 +42688,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T18:37:17.573Z",
+        "checked_at": "2026-09-08T18:53:06.079Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -42574,7 +42729,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T18:37:17.573Z",
+          "ingested_at": "2026-09-08T18:53:06.079Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -42603,7 +42758,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:37:17.573Z"
+          "checked_at": "2026-09-08T18:53:06.079Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -42618,7 +42773,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T18:37:17.573Z",
+      "updated_at": "2026-09-08T18:53:06.079Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -42658,7 +42813,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 509.85743333333335,
+        "queue_age_minutes": 525.6658666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -42667,7 +42822,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T18:37:17.573Z",
+        "checked_at": "2026-09-08T18:53:06.079Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -43951,7 +44106,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -44800,7 +44955,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -45506,7 +45661,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -47639,7 +47794,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -51876,7 +52031,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -55640,7 +55795,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Trump und Putin telefonieren",
             "summary": "Nach der Abreise der US-Unterhändler Witkoff und Kushner hat Russland die Luftangriffe auf die ukrainische Hauptstadt Kiew wieder aufgenommen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T17:44:29.000Z",
+            "published_at": "2026-09-08T18:47:22.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -55656,8 +55811,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T17:44:29.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "source_published_at": "2026-09-08T18:47:22.000Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -55678,7 +55833,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "23f60f41c7e50322a66d673ffbc4f4fa77d3d18dc42146d6ae3e57aa6991c72f",
           "issue_codes": [],
           "warning_codes": []
@@ -56403,7 +56558,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -57578,7 +57733,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "e6e91a616aae9777f03f38b9bf8d8eeeb51e28412c5ab2d462caa196320ef7a8",
           "issue_codes": [],
           "warning_codes": []
@@ -58520,7 +58675,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -61493,7 +61648,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -62243,7 +62398,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -63406,7 +63561,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -63831,9 +63986,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T18:37:17.573Z",
+        "checked_at": "2026-09-08T18:53:06.079Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T00:37:17.573Z",
+        "expires_at": "2026-09-09T00:53:06.079Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -67299,7 +67454,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -68556,7 +68711,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -69117,7 +69272,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -70626,7 +70781,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -71832,7 +71987,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -72958,7 +73113,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -72979,7 +73134,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -73499,7 +73654,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -74245,10 +74400,13 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T19:08:06.079Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -74256,11 +74414,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "57df0ffb130fc26456653bcc5b06544e7fcbee228548977d2ea94d57d547e21c",
+        "first_failed_at": "2026-09-08T18:53:06.079Z",
+        "failed_at": "2026-09-08T18:53:06.079Z",
+        "retry_after": "2026-09-08T19:08:06.079Z",
+        "retry_count": 1
       }
     },
     {
@@ -76713,7 +76879,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -80706,9 +80872,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "ae41d390977ed5b8c58fb9e54edd8a5c92918f3a44dea07416680a3f7bae4d6f",
-        "checked_at": "2026-09-08T18:37:17.573Z",
+        "checked_at": "2026-09-08T18:53:06.079Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T00:37:17.573Z",
+        "expires_at": "2026-09-09T00:53:06.079Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -85384,7 +85550,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -89921,7 +90087,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -96026,7 +96192,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -104590,7 +104756,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -107325,7 +107491,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -121475,7 +121641,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T18:37:17.573Z",
+          "ingested_at": "2026-09-08T18:53:06.079Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -121536,7 +121702,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:37:17.573Z"
+          "checked_at": "2026-09-08T18:53:06.079Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -121556,7 +121722,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:37:17.573Z"
+          "checked_at": "2026-09-08T18:53:06.079Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -121572,7 +121738,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T18:37:17.573Z",
+      "updated_at": "2026-09-08T18:53:06.079Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -121612,7 +121778,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2010.4035,
+        "queue_age_minutes": 2026.2119333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -121621,7 +121787,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T18:37:17.573Z",
+        "checked_at": "2026-09-08T18:53:06.079Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -141828,7 +141994,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -142529,7 +142695,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -143283,7 +143449,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -143304,7 +143470,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -143967,7 +144133,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -151255,7 +151421,7 @@
       "verification_started_at": "2026-09-06T18:00:00.910Z",
       "publish_ready_at": "2026-09-06T18:00:15.606Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -151694,83 +151860,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "3ee7d49c8a2cf1881a63e700efabbdb87172ce6f07462cb4adff2542235a653d",
-        "checked_at": "2026-09-08T06:21:43.808Z",
+        "fingerprint": "8f311321a2d94b5dfb44407526a57f2c074e75f497c2fb63f87e8a102fc7c32b",
+        "checked_at": "2026-09-08T18:53:06.079Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T12:21:43.808Z",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/ministerpraesident-schulze-cdu-raeumt-niederlage-ein-klingbeil-spd-spricht-von-signal-an-berlin-100.html",
-            "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Ministerpräsident Schulze (CDU) räumt Niederlage ein - Klingbeil (SPD) spricht von \"Signal an Berlin\"",
-            "summary": "+++ Die Junge Union Sachsen-Anhalt fordert einem Magazinbericht zufolge den Rücktritt von Ministerpräsident Schulze.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T17:47:51.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "c41fb85688ea9b82961522cfee6fd1dfd43880a623be9641aa5d346c220773ad",
-            "source_item_id": "8641dbb261d09f7c9d54671f6f3f85cd28a226809fe31c6634890289d6a1069a",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T17:47:51.000Z",
-            "ingested_at": "2026-09-06T17:52:07.787Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/video/livestreams/mdr-plus/eventlivestream-mediathek-mdr-aktuell-live-cdu-reaktion-100.html",
-            "title": "Landtagswahl in Sachsen-Anhalt: So reagiert die CDU",
-            "summary": "Die Landtagswahl in Sachsen-Anhalt ist Geschichte. Wie geht es jetzt weiter? Sehen Sie hier im Livestream Statement und Pressekonferenz der CDU.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T17:22:47.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "a0996fb22977a7078a727f72953c3effc0dfbf25490deee8093cdb2840f76f20",
-            "source_item_id": "518837add10c8a268ca480ddedc9a5b00646f58d14993d6399404583f5b8a260",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T17:22:47.000Z",
-            "ingested_at": "2026-09-07T12:14:01.175Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "50ef585fcc1aa91c47cae240292c61cce3d680ed6413c0df65d663da5b15466d",
+        "expires_at": "2026-09-09T00:53:06.079Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -151862,7 +151955,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T18:15:04.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
+            "ingested_at": "2026-09-08T18:53:06.079Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -151874,24 +151967,9 @@
             "collection_source_id": "swr-aktuell",
             "collection_publisher_id": "swr"
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
-          "fingerprint": "cc5f5e773b869d830ed713aa6f0e58fe9ccf5e9c52a499e3ee4cb2645d25c0a1",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-6a495a63964121c7",
@@ -177633,7 +177711,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -222027,7 +222105,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T18:37:17.573Z",
+          "checked_at": "2026-09-08T18:53:06.079Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
