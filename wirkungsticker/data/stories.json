@@ -1,7 +1,744 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-07T23:08:50.989Z",
+  "updated_at": "2026-09-08T00:52:14.401Z",
   "stories": [
+    {
+      "story_id": "wt-7b385f58748f3d32",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-954a5ccec049ce21-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-c404bd8d02df1dba-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-4528cb0e4dd565cc-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+      "title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+      "source_summary": "Die rbb24-Meldung berichtet unter Berufung auf ARD-Informationen, dass Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten. Nach dem Bericht bekennt sich darin ein mutmaßlicher Alleintäter zu Anschlägen in Jänschwalde und in Bergheim bei Köln, und die Fahndung läuft weiter.\n\nZudem heißt es, der Polizei in Nordrhein-Westfalen und Brandenburg lägen inzwischen zwei Bekennerschreiben derselben Person vor. Die Schreiben seien handschriftlich verfasst, mit Namen unterzeichnet und enthielten nach ARD-Terrorismusexperte Michael Götschenberg Täterwissen. Der Bericht nennt außerdem Hinweise, wonach die Person mit einem alten Bundeswehrfahrzeug unterwegs sei und offenbar weitere Tatorte anfahre.",
+      "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
+      "detail_summary": "Gesichert nach der vorliegenden Meldung ist vor allem, dass die Polizei die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch hält. Der Bericht ordnet die Schreiben einem mutmaßlichen Alleintäter zu, nennt Jänschwalde und Bergheim bei Köln als Tatorte und sagt, die Fahndung laufe weiter. Für die Einordnung ist das relevant, weil sich damit die Informationslage von einer bloßen Sachbeschädigungs- oder Sabotagespur hin zu einer personalisierten Ermittlungs- und Bedrohungslage verschiebt. Der Wirkpfad liegt vor allem in veränderten Ermittlungsprioritäten, Schutzmaßnahmen an kritischer Infrastruktur und möglicher öffentlicher Risikowahrnehmung. Mögliche Folgen sind zusätzliche Sicherung, weitere Fahndungsmaßnahmen und eine belastendere Lage für Netzbetreiber; ob daraus breitere Systemeffekte entstehen, bleibt offen. Tragfähige unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor, daher bleibt die Zuschreibung vorläufig.",
+      "why_relevant": "Die Meldung verändert die Lagebewertung zu Sabotage an kritischer Energieinfrastruktur, weil sie Authentizität, mögliche Täterschaft und laufende Fahndung zusammenführt.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Betroffen sind potenziell Sicherheit, Versorgungsschutz und Ermittlungsressourcen; die Lage kann Schutzmaßnahmen und öffentliche Wahrnehmung verändern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Ein unmittelbarer Umwelt- oder Klimawirkpfad wird in der Quelle nicht belastbar beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Meldung berührt den Schutz kritischer Infrastruktur und die Informationslage der Öffentlichkeit, ohne dass bereits eine politische Entscheidung vorliegt."
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Meldung verknüpft einen laufenden Sabotageverdacht mit der Einordnung als authentische Bekennerschreiben und mit möglicher Täterschaft. Das kann Ermittlungsdruck, Schutzmaßnahmen und öffentliche Risikowahrnehmung beeinflussen.",
+        "factual_core": "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten und die Fahndung weiterläuft. Genannt werden Jänschwalde und Bergheim bei Köln als Tatorte.",
+        "epistemic_status": {
+          "confirmed": [
+            "Die Meldung berichtet von authentisch gehaltenen Bekennerschreiben zu Sabotageakten auf die Stromversorgung.",
+            "Die Fahndung läuft laut Bericht weiter.",
+            "Genannt werden Jänschwalde und Bergheim bei Köln als Tatorte."
+          ],
+          "actor_claims": [
+            "Die Schreiben bekennen sich laut Bericht zu den Anschlägen.",
+            "Die Person soll mit einem alten Bundeswehrfahrzeug unterwegs sein und weitere Tatorte anfahren.",
+            "Die Schreiben enthielten Täterwissen und seien handschriftlich mit Namen unterzeichnet."
+          ],
+          "open": [
+            "Ob die Zuschreibung zu einer einzelnen Person belastbar bestätigt ist.",
+            "Ob die in den Schreiben behaupteten Angaben tatsächlich zutreffen.",
+            "Ob aus der Meldung bereits breitere Systemeffekte folgen."
+          ]
+        },
+        "attribution": {
+          "frame_source": "rbb24 / ARD-Informationen",
+          "speaker": "Polizeibehörden nach ARD-Informationen; im Bericht zudem ARD-Terrorismusexperte Michael Götschenberg",
+          "original_term": "Bekennerschreiben für authentisch",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Bekennerschreiben für authentisch",
+          "origin_in_story": "rbb24 / ARD-Informationen",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Bekennerschreiben für authentisch",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Nicht nur Sabotage als Sachverhalt, sondern eine mögliche personalisierte Bedrohungslage mit laufender Fahndung.",
+          "implied_cause": "Der Bericht legt nahe, dass die Schreiben von derselben Person stammen und echte Täterkenntnis enthalten.",
+          "implied_responsibility": "Vorläufig wird die Verantwortung einer mutmaßlichen Einzelperson zugeschrieben; das bleibt aber eine berichtete Einordnung, kein endgültiger Befund.",
+          "implied_threat": "Mögliche weitere Sabotageakte, erhöhte Gefahr für kritische Infrastruktur und zusätzlicher Schutzbedarf.",
+          "implied_solution_space": "Fahndung, Prüfung der Echtheit, Schutz kritischer Infrastruktur und Anpassung von Sicherungskonzepten.",
+          "material_omissions": [
+            "Keine unabhängige Bestätigung der Täterschaft in der vorliegenden Quelle.",
+            "Keine belastbaren Angaben zu Motiv, Umfang oder tatsächlicher Reichweite möglicher Folgegefahren."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Die Formulierung kann politisch aufgeladen wirken, ohne dass daraus in der vorliegenden Quelle ein politischer Ursprung oder eine politische Urheberschaft belegt wäre."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Kritische Infrastruktur, Fahndung, Sicherheit, Sabotage, mögliche Bedrohungslage",
+          "normalization_potential": "low",
+          "repetition_risk": "low",
+          "polarization_potential": "low",
+          "trust_effect_potential": "Die Hervorhebung der Authentizität kann Vertrauen in die Ermittlungsinformation stärken, aber bei Vorläufigkeit auch Vorbehalte gegenüber der Zuschreibung erzeugen.",
+          "discourse_effect_potential": "Die Meldung kann die Wahrnehmung einer personalisierten Gefahr verstärken und Aufmerksamkeit auf Schutz von Strominfrastruktur lenken. Das ist eine Kommunikationswirkung, keine belegte Ereignisfolge."
+        },
+        "impact_path": {
+          "first_order": "Die berichtete Authentizitätsbewertung und die laufende Fahndung verändern die Wahrnehmung der Lage sofort: von einer anonymen Sabotagespur hin zu einer möglichen Täterspur.",
+          "second_order": "Das kann Ermittlungen, Objektschutz und Risikoabschätzung bei Netzbetreibern und Behörden anstoßen oder verstärken. Betroffen sind vor allem Polizei, Betreiber kritischer Infrastruktur und mittelbar Nutzerinnen und Nutzer des Stromnetzes.",
+          "third_order": "Nur bedingt plausibel, aber offen: Wiederholte Berichte über solche Schreiben können den Diskurs über Sabotageschutz, Resilienz und Priorisierung kritischer Infrastruktur prägen. Eine Verlagerung oder ein Lock-in in härtere Sicherungslogiken ist möglich, aber in der Quelle nicht belegt."
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben für authentisch halten. Die Meldung nennt Sabotageakte auf die Stromversorgung in Jänschwalde und Bergheim bei Köln. Die Fahndung läuft laut Bericht weiter.",
+          "what_is_inferred": "Die Berichterstattung kann die Risikowahrnehmung für kritische Infrastruktur erhöhen. Die Zuschreibung an eine einzelne Person bleibt vorläufig. Mögliche Folgen liegen eher in Ermittlungs- und Schutzmaßnahmen als in unmittelbar belegten Systemfolgen.",
+          "what_is_open": "Nur eine gelieferte journalistische Quelle. Keine experimentelle, repräsentative oder längsschnittliche Evidenz zur Kommunikationswirkung. Keine unabhängige Bestätigung der berichteten Täterschaft in den gelieferten Quellen.",
+          "facts": [
+            "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben für authentisch halten.",
+            "Die Meldung nennt Sabotageakte auf die Stromversorgung in Jänschwalde und Bergheim bei Köln.",
+            "Die Fahndung läuft laut Bericht weiter."
+          ],
+          "observations": [
+            "Die Quelle ist eine journalistische Meldung unter Berufung auf ARD-Informationen.",
+            "Es gibt in der gelieferten Datenlage nur eine journalistische Darstellung, keine zweite unabhängige Bestätigung.",
+            "Der Bericht nennt zusätzliche Details wie handschriftliche Form, Namensunterzeichnung und angebliches Täterwissen."
+          ],
+          "inferences": [
+            "Die Berichterstattung kann die Risikowahrnehmung für kritische Infrastruktur erhöhen.",
+            "Die Zuschreibung an eine einzelne Person bleibt vorläufig.",
+            "Mögliche Folgen liegen eher in Ermittlungs- und Schutzmaßnahmen als in unmittelbar belegten Systemfolgen."
+          ],
+          "impact_potentials": [
+            "Mehr Sicherung an betroffenen oder vergleichbaren Anlagen.",
+            "Stärkere Aufmerksamkeit für Sabotageschutz kritischer Infrastruktur.",
+            "Kommunikative Verstärkung einer Bedrohungswahrnehmung."
+          ],
+          "impact_risks": [
+            "Überinterpretation der Täterschaft vor belastbarer Bestätigung.",
+            "Verallgemeinerung von Einzelfall auf andere Anlagen oder Gruppen.",
+            "Verstärkung von Unsicherheit ohne neue Sachinformation."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine gelieferte journalistische Quelle.",
+            "Keine experimentelle, repräsentative oder längsschnittliche Evidenz zur Kommunikationswirkung.",
+            "Keine unabhängige Bestätigung der berichteten Täterschaft in den gelieferten Quellen."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Meldung sagt erst einmal etwas Konkretes: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für echt, und die Fahndung läuft weiter. Erst danach folgt die Einordnung: Der Bericht schiebt den Fall in Richtung einer möglichen Täterspur und nennt Jänschwalde und Bergheim bei Köln als Tatorte. Das ist wichtig für Leserinnen und Leser, weil sich dadurch die Wahrnehmung von einem unklaren Vorfall zu einer möglichen Bedrohung kritischer Infrastruktur verschieben kann. Daraus folgt aber noch keine belegte Gesamtwirkung. Sicher belegt ist nur, was die Quelle berichtet. Offen bleibt, ob die Zuschreibung stimmt, ob weitere Taten folgen und ob sich daraus mehr als eine kommunikative Risikowahrnehmung ergibt. Die Meldung kann also Aufmerksamkeit auf Schutz und Fahndung lenken, beweist aber noch keine weitergehende Wirkung.",
+        "editorial_assessment": "Die Meldung sagt erst einmal etwas Konkretes: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für echt, und die Fahndung läuft weiter. Erst danach folgt die Einordnung: Der Bericht schiebt den Fall in Richtung einer möglichen Täterspur und nennt Jänschwalde und Bergheim bei Köln als Tatorte. Das ist wichtig für Leserinnen und Leser, weil sich dadurch die Wahrnehmung von einem unklaren Vorfall zu einer möglichen Bedrohung kritischer Infrastruktur verschieben kann. Daraus folgt aber noch keine belegte Gesamtwirkung. Sicher belegt ist nur, was die Quelle berichtet. Offen bleibt, ob die Zuschreibung stimmt, ob weitere Taten folgen und ob sich daraus mehr als eine kommunikative Risikowahrnehmung ergibt. Die Meldung kann also Aufmerksamkeit auf Schutz und Fahndung lenken, beweist aber noch keine weitergehende Wirkung.",
+        "fact_first_alternative": "Die Meldung berichtet zuerst den Sachverhalt: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch und die Fahndung läuft. Wissensstatus: Das ist eine journalistische Darstellung unter Berufung auf ARD-Informationen; die Täterschaft bleibt vorläufig. Attribution: Der Bericht schreibt die Einschätzung Polizeibehörden zu und nennt ARD-Terrorismusexperte Michael Götschenberg als weitere Quelle im Text. Frame: Die Formulierung rahmt den Fall als mögliche",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "Unsicherer Frame-Einstieg in title"
+          ],
+          "frame_repetition_count": 0,
+          "rewrite_required": true,
+          "recommended_title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+          "recommended_summary": "Die Meldung berichtet über authentisch gehaltene Bekennerschreiben zu Sabotageakten auf die Stromversorgung. Die Fahndung läuft weiter; die Täterschaft bleibt vorläufig.",
+          "recommended_meta_description": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Meldung nennt Jänschwalde und Bergheim bei Köln als Tatorte und eine laufende Fahndung."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T00:52:07.356Z",
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-dab9cdd59202",
+        "slug": "polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd",
+        "title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+        "teaser": "Die Polizei hält die Schreiben für authentisch, die Fahndung läuft weiter. Für die Wirkungökonomie zählt jetzt vor allem, wie sich Ermittlungen, Schutz von Infrastruktur und öffentliche Risikowahrnehmung gegenseitig verstärken.",
+        "published_at": "2026-09-06T16:37:35.523Z",
+        "updated_at": "2026-09-08T00:52:14.401Z"
+      },
+      "first_seen": "2026-09-04T10:06:18.000Z",
+      "last_updated": "2026-09-08T00:37:01.383Z",
+      "version": 4,
+      "news_status": "developing",
+      "event_id": "event-6a9b508f2d9dfc0503cf",
+      "case_file": null,
+      "source_published_at": "2026-09-04T10:06:18.000Z",
+      "published_at": "2026-09-04T10:09:13.371Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T10:06:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-12227eeecd48c0b9",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-be2b0b68d542b507-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-8791264ac6b7a0b9-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-3dc23afdbf4e9fb3-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "die-caritas-bottrop-arbeitet-gewaltvorfalle-auf-48c0b9",
+      "title": "Die Caritas Bottrop arbeitet Gewaltvorfälle auf",
+      "source_summary": "Die Caritas Bottrop hat laut WDR die Aufarbeitung von Gewaltvorwürfen in einem früheren Kinderheim gestartet. Anlass war ein anonymer Hinweis einer betroffenen Person, die über erlebte sexualisierte, körperliche und psychische Gewalt berichtete. Die Caritas nennt Hinweise auf Vorfälle in den 1960er und 1970er Jahren und sagt, es gebe keine Hinweise auf aktuelle Fälle.\n\nBeauftragt wurde die Klinik für Forensische Psychiatrie und Psychotherapie der Universität Ulm; die Studie soll auch historische Archive auswerten. Das Heim in Bottrop-Fuhlenbrock besteht weiter, dort leben nach Angaben des Beitrags aktuell um die 100 Kinder und Jugendliche. Ergebnisse werden für Herbst 2027 erwartet.",
+      "summary": "Die Caritas Bottrop hat eine historische Aufarbeitung zu Gewaltvorwürfen in einem früheren Kinderheim begonnen. Aktuelle Fälle schließt die Caritas nach eigenen Angaben aus.",
+      "detail_summary": "Konkret geht es um Hinweise auf sexualisierte, körperliche und psychische Gewalt im ehemaligen Kindervollheim St. Konrad in Bottrop-Fuhlenbrock. Die Caritas hat nach einem anonymen Hinweis eine Studie bei der Universität Ulm in Auftrag gegeben und will zusätzlich historische Archive auswerten. Der Vorgang ist für Betroffene relevant, weil er mögliche frühere Übergriffe sichtbar machen und Anerkennung oder weitere Meldungen ermöglichen kann. Für das heutige Heim mit rund 100 Kindern und Jugendlichen ist wichtig, dass die Vorwürfe laut Caritas nur die 1960er und 1970er Jahre betreffen und keine aktuellen Fälle bekannt sind. Als Wirkpfad kommt vor allem institutionelle Aufarbeitung über Dokumentation, Anerkennung und mögliche Schutzanpassungen in Betracht. Die Evidenz bleibt aber begrenzt, weil zunächst nur ein journalistischer Bericht und Caritas-Aussagen vorliegen; Ausmaß, Ursachen und konkrete Folgen sind noch offen.",
+      "why_relevant": "Der Fall betrifft mögliche Gewalt in einer Einrichtung mit laufendem Betrieb und damit Schutz, Vertrauen und mögliche Folgeanpassungen. Die Aufarbeitung kann Zustände für Betroffene, Einrichtung und Schutzkonzept verändern.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind frühere Heimkinder, mögliche weitere Betroffene und die aktuell dort lebenden Kinder. Die Aufarbeitung kann Anerkennung und Schutz verbessern, aber auch Belastungen und Unsicherheit verlängern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es sind keine unmittelbaren Umweltfolgen belegt. Ein Bezug zu Planet-Zielen ergibt sich aus der Quelle nicht belastbar."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "chance",
+          "rationale": "Der Fall berührt Transparenz, institutionelle Rechenschaft und die öffentliche Nachprüfbarkeit von Missständen. Das ist demokratisch relevant, aber kein politischer Entscheidungsprozess."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T00:06:52.179Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T11:21:08.000Z",
+      "last_updated": "2026-09-08T00:08:08.993Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-bbc2a8844af90a5446d1",
+      "case_file": null,
+      "source_published_at": "2026-09-07T19:22:40.000Z",
+      "published_at": "2026-09-07T17:24:29.900Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Mit den Ergebnissen der Studie wird im Herbst 2027 gerechnet.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": "2027-09-30",
+          "measurable_indicator": "Veröffentlichung oder belastbar angekündigte Vorlage der Studie",
+          "expected_by_evidence_hash": "f2477c4caa3a3aa0c161fe0955be855898af886d44e5c8fefd7f0247fd131e59",
+          "followup_id": "followup-8e8739b3a6722b06",
+          "announced_at": "2026-09-07T16:45:02.000Z",
+          "follow_up_date": "2027-09-30T00:00:00.000Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Studie soll den Umfang der Gewalt und die begünstigenden strukturellen Bedingungen klären.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": "2027-09-30",
+          "measurable_indicator": "Veröffentlichung der Studienergebnisse mit Angaben zu Umfang und Bedingungen",
+          "expected_by_evidence_hash": "f2477c4caa3a3aa0c161fe0955be855898af886d44e5c8fefd7f0247fd131e59",
+          "followup_id": "followup-4f1c5067f09d323f",
+          "announced_at": "2026-09-07T19:22:40.000Z",
+          "follow_up_date": "2027-09-30T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T19:22:40.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f03755f6f6b8c3b7",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f03755f6f6b8c3b7-4a7d0dfebfb96be0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f03755f6f6b8c3b7-2cd026902ca01206-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-f03755f6f6b8c3b7-6c0e24b628098994-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
+      "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
+      "source_summary": "Nach einer Serie von Sabotageversuchen auf das Stromnetz ruft die Polizei die Bevölkerung auf, verdächtige Beobachtungen zu melden. In dem Bericht werden weitere Funde beschrieben: Zuletzt seien in Nordrhein-Westfalen und in Sachsen selbstgebaute Vorrichtungen entdeckt worden, die Kurzschlüsse auslösen sollten. Für Sachsen nennt die Quelle neun entsprechende Vorrichtungen in der Nähe des Umspannwerks Graustein bei Görlitz. Als tatverdächtig gilt laut Quelle weiter ein 48-jähriger Mann aus Nordrhein-Westfalen, der ein Bekennerschreiben verfasst haben soll.\n\nDie Quelle ordnet die bisherigen Folgen so ein, dass es zu Abschaltungen in Kraftwerksblöcken kam, aber nicht zu Stromausfällen. Die Meldung verweist damit auf einen laufenden Ermittlungsstand und auf weitere offene Fragen zu Tathergang, Verantwortlichkeit und Reichweite der Vorfälle.",
+      "summary": "Die Polizei bittet nach Sabotageversuchen auf das Stromnetz weiter um Hinweise aus der Bevölkerung. Die Quelle nennt neue Funde in Sachsen und verweist auf einen weiter gesuchten Tatverdächtigen.",
+      "detail_summary": "Der Kern der Meldung ist ein laufendes Ermittlungsbild: Nach mehreren Sabotageversuchen auf das Stromnetz bittet die Polizei die Bevölkerung um verdächtige Beobachtungen. Die Quelle nennt in Sachsen neun Vorrichtungen nahe dem Umspannwerk Graustein bei Görlitz und hält einen 48-jährigen Mann aus Nordrhein-Westfalen weiter für tatverdächtig. Sachlich relevant ist das vor allem wegen der Stromnetz-Infrastruktur, der möglichen Wiederholbarkeit und der Frage, ob weitere Anlagen gefährdet sind. Ein direkter Wirkpfad wäre: verdächtige Vorrichtungen → mögliche Eingriffe in Leitungen oder Umspannwerke → Abschaltungen oder Störungen im Netzbetrieb. Nach der Quelle kam es bisher zu Abschaltungen in Kraftwerksblöcken, nicht zu Stromausfällen. Die Evidenz bleibt aber vorläufig, weil die Darstellung auf einer journalistischen Quelle beruht und zentrale Punkte im Ermittlungsverfahren offen sind.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, mögliche Wiederholungsgefahr und laufende Ermittlungen. Das ist für Versorgungssicherheit und öffentliche Gefahrenlage materiell relevant.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Betroffen sind potenziell viele Haushalte und Betriebe über das Stromnetz. Die Quelle beschreibt zwar noch keine Ausfälle, aber Sabotage an kritischer Infrastruktur schafft ein klares Störungs- und Sicherheitsrisiko."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus der Quelle ergibt sich kein direkter Umweltfakt. Mögliche Folgewirkungen über Stromerzeugung oder Netzbetrieb bleiben offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Der Sachverhalt berührt staatliche Schutz- und Ermittlungsfähigkeit sowie das Vertrauen in die Sicherheit kritischer Infrastruktur. Konkrete Auswirkungen auf demokratische Verfahren sind nicht belegt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:37:00.002Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T16:32:01.000Z",
+      "last_updated": "2026-09-07T23:39:37.569Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-57eeb90bde55fb4eff90",
+      "case_file": null,
+      "source_published_at": "2026-09-07T16:32:01.000Z",
+      "published_at": "2026-09-07T23:39:37.569Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T16:32:01.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-110.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T23:27:18.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-cd001726db438d2d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-3fbc257601c4cb8b-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-566bab0667704a1b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-8e117c14c5b999a5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "arbeitsmarkt-fachkraftemangel-konnte-bis-2029-auf-723-000-steigen-438d2d",
+      "title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
+      "source_summary": "Die WirtschaftsWoche meldet unter Berufung auf eine Untersuchung, dass der Fachkräftemangel in Deutschland bis 2029 auf 723.000 steigen könnte. Der Bericht verweist darauf, dass die Zahl der Arbeitslosen zuletzt gestiegen sei, zugleich aber vielerorts Fachkräfte fehlten.\n\nZDFheute konkretisiert die Angaben mit Berufsfeldern: Besonders groß soll die Lücke im Verkauf, in der Kinderbetreuung sowie in der Gesundheits- und Krankenpflege werden. Genannt werden außerdem weitere betroffene Bereiche wie Bauelektrik, Bauplanung, Kfz-Technik und Mechatronik. Laut Bericht stützt sich die IW-Analyse auf Daten bis Ende 2024 und schreibt Entwicklungen für 1.300 Berufe fort.",
+      "summary": "Bis 2029 könnte die Fachkräftelücke deutlich wachsen. Besonders betroffen wären mehrere Berufe mit direktem Bezug zu Versorgung und Alltag.",
+      "detail_summary": "Die vorliegenden Berichte verweisen auf eine IW-Auswertung, nach der in Deutschland bis 2029 rund 723.000 Fachkräfte fehlen könnten. Genannt werden besonders Verkauf, Kinderbetreuung sowie Gesundheits- und Krankenpflege, dazu weitere Engpassberufe wie Bauelektrik oder Mechatronik. Für die öffentliche Debatte ist das relevant, weil sich daraus Druck auf Betriebe, Ausbildung und Versorgung ergeben kann. Der Wirkpfad wäre vor allem indirekt: weniger Personal trifft zuerst Arbeitsorganisation, dann Verfügbarkeit von Leistungen und damit die Belastung von Haushalten und Unternehmen. Offen bleibt, wie stark einzelne Regionen und Branchen die Lücke tatsächlich spüren und wie belastbar die Fortschreibung über 2024 hinaus ist. Es handelt sich hier um eine ex-ante-Einordnung auf Basis sekundär berichteter Studienangaben, nicht um bereits eingetretene Gesamtwirkung.",
+      "why_relevant": "Die Meldung beschreibt eine mögliche Verschärfung des Arbeitskräftemangels in mehreren alltags- und versorgungsrelevanten Berufen und damit eine potenzielle Veränderung von Arbeitsmärkten, Kapazitäten und Zugängen zu Leistungen.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Weniger Fachkräfte können Verfügbarkeit, Wartezeiten und Arbeitsbelastung in Versorgung, Bildung und Dienstleistungen verschlechtern. Betroffen sind viele Haushalte und Beschäftigte, die Studie nennt mehrere zentrale Berufe."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Bezug zu Umwelt- oder Klimawirkungen ist in den gelieferten Quellen nicht belegt. Allenfalls indirekte Folgen über Bau, Technik oder Transformation sind denkbar, aber offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Der Befund berührt die demokratische Korrekturfähigkeit nur indirekt, etwa über öffentliche Daseinsvorsorge und staatliche Handlungsfähigkeit. Ein unmittelbarer Einfluss auf Verfahren oder Rechte ist nicht belegt."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:37:00.002Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T05:13:03.000Z",
+      "last_updated": "2026-09-07T23:39:13.185Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-cb0aa7c48054004d01bb",
+      "case_file": null,
+      "source_published_at": "2026-09-07T05:13:03.000Z",
+      "published_at": "2026-09-07T17:47:33.191Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/arbeitsmarkt-fachkraeftemangel-koennte-bis-2029-auf-723.000-steigen/100252475.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T05:13:03.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/studie-fachkraeftemangel-berufe-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T10:12:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-61bb6c2918c26f16",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61bb6c2918c26f16-01b3974e43ac60e0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61bb6c2918c26f16-57ed4418ebed7d4e-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-61bb6c2918c26f16-fec280dcdc3f817e-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "eiffel-tower-workers-go-on-strike-after-female-staff-sidelined-for-hindu-group-s-visit-c26f16",
+      "title": "Eiffel Tower workers go on strike after female staff 'sidelined' for Hindu group's visit",
+      "source_summary": "France 24 berichtet, dass der Eiffelturm am Montag geschlossen blieb, nachdem Beschäftigte die Arbeit niedergelegt hatten. Anlass des Streiks war nach der Meldung die Kritik an einer jüngsten privaten Besuchsorganisation für eine hinduistische Delegation. Die Beschäftigten protestierten demnach gegen das „Zurückdrängen“ und Ersetzen weiblicher Mitarbeiterinnen bei diesem Besuch.\n\nDer Betreiber des Pariser Wahrzeichens teilte laut Bericht mit, die Gruppe habe darum gebeten, den privaten Besuch so zu organisieren, dass der Umgang mit Frauen begrenzt werde. In der Meldung bleibt offen, wie der genaue Ablauf des Besuchs war und ob weitere Stellen die Darstellung bestätigen. Weitere Folgen des Streiks werden nicht beschrieben.",
+      "summary": "Der Eiffelturm wurde am Montag geschlossen, nachdem Beschäftigte aus Protest streikten. Auslöser ist eine umstrittene Privatbesuchs-Organisation für eine hinduistische Delegation.",
+      "detail_summary": "Gesichert ist zunächst nur, dass der Eiffelturm am Montag geschlossen blieb und die Beschäftigten dafür in den Streik gingen. France 24 ordnet den Auslöser als Protest gegen das Zurückdrängen weiblicher Mitarbeiterinnen bei einem jüngsten Besuch einer hinduistischen Delegation ein; der Betreiber sagt, die Gruppe habe den privaten Termin so organisiert wissen wollen, dass Interaktionen mit Frauen begrenzt werden. Für die Einordnung als Konflikt um Arbeitsbedingungen und Gleichbehandlung reicht diese Erstmeldung als vorläufiger Kern, nicht aber für eine abschließende Klärung des genauen Ablaufs oder möglicher rechtlicher Folgen. Materiell ist das Ereignis wegen der zeitweisen Schließung eines stark frequentierten Wahrzeichens und wegen der möglichen arbeits- und gleichstellungsbezogenen Wirkung relevant. Offen bleibt, ob weitere unabhängige Belege die Zuschreibung und den Umfang der Maßnahme stützen.",
+      "why_relevant": "Die Meldung betrifft die zeitweise Schließung eines international wichtigen Wahrzeichens und einen Streit um den Umgang mit weiblichen Beschäftigten. Das hat unmittelbare Folgen für Betrieb, Arbeit und öffentliche Wahrnehmung.",
+      "topic": [
+        "Arbeit"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Schließung trifft Beschäftigte und Besucher direkt; zugleich steht ein möglicher Konflikt um Gleichbehandlung im Raum. Ob daraus dauerhafte Änderungen bei Arbeitsorganisation oder Zugangspraxis folgen, bleibt offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus der Meldung ergibt sich kein belastbarer Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es geht um einen Betriebs- und Gleichbehandlungsstreit, nicht um demokratische Verfahren oder Institutionen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:37:00.002Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T17:08:13.000Z",
+      "last_updated": "2026-09-07T23:38:39.716Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-fa64c6e4e0c5b0881da4",
+      "case_file": null,
+      "source_published_at": "2026-09-07T17:08:13.000Z",
+      "published_at": "2026-09-07T23:38:39.716Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/france/20260907-strike-closes-eiffel-tower-paris-exclusion-female-staff-hindu-group-visit-baps",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T17:08:13.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-02136b7b66b5f660",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02136b7b66b5f660-2396e3f8f0ed9ea9-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02136b7b66b5f660-a3329b679b909601-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-02136b7b66b5f660-7a536dd61f15cacf-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "nearly-1-7-million-deaths-linked-to-second-hand-smoke-in-2023-study-finds-b5f660",
+      "title": "Nearly 1.7 million deaths linked to second-hand smoke in 2023, study finds",
+      "source_summary": "France 24 berichtet über eine Lancet-Studie zu Passivrauchen im Jahr 2023. Nach der Meldung waren weltweit mehr als 2,7 Milliarden Menschen, darunter 767 Millionen Kinder, dem Rauch anderer ausgesetzt. Die Studie ordnet Passivrauchen als weiter großes globales Gesundheitsrisiko ein und verweist darauf, dass es keinen sicheren Grenzwert der Exposition gibt.\n\nDie Meldung nennt außerdem nahezu 1,7 Millionen Todesfälle, die mit Passivrauchen in diesem Jahr verbunden gewesen seien. Es bleibt offen, welche exakte Methodik, Datengrundlage und Unsicherheiten die Studie im Original ausweist; die Originalarbeit ist in der Kurzmeldung nicht vollständig dargestellt.",
+      "summary": "Eine Studie beziffert die mit Passivrauchen verbundenen Todesfälle für 2023 auf nahezu 1,7 Millionen. Gleichzeitig nennt die Meldung eine sehr große Zahl Betroffener weltweit, darunter viele Kinder.",
+      "detail_summary": "Die Meldung stützt sich auf eine Lancet-Studie und nennt für 2023 nahezu 1,7 Millionen mit Passivrauchen verbundene Todesfälle. Dazu kommen mehr als 2,7 Milliarden Exponierte weltweit, darunter 767 Millionen Kinder. Das ist als Gesundheitsinformation relevant, weil die Zahl der Betroffenen groß ist und die Belastung nicht auf einzelne Länder begrenzt bleibt. Der mögliche Wirkpfad liegt über vermeidbare Exposition, Krankheitslast und vorzeitige Sterblichkeit. Eine direkte Wirkung der Meldung selbst lässt sich daraus nicht ableiten. Offen bleibt ohne Originalstudie, welche Annahmen, Unsicherheiten und Abgrenzungen hinter den Zahlen stehen.",
+      "why_relevant": "Die Meldung betrifft eine sehr große Zahl von Menschen und eine schwere, vermeidbare Gesundheitsbelastung. Sie kann Debatten über Rauchschutz, Prävention und öffentliche Regeln zu Passivrauchen stützen.",
+      "topic": [
+        "Gesundheit",
+        "Digitalisierung"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "sehr hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "tendency": "risiko",
+          "rationale": "Die berichtete Exposition und die zugehörige Todeszahl betreffen weltweit sehr viele Menschen und verweisen auf erhebliche Gesundheitslast."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Der Bezug zu Umweltfolgen ist in der Quelle nicht belegt und bleibt offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "rationale": "Belastbare Gesundheitszahlen können politische Korrekturen, Prävention und Schutzregeln begründen; die Meldung selbst zeigt aber noch keine Entscheidung."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-07T23:37:00.002Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T22:53:34.000Z",
+      "last_updated": "2026-09-07T23:37:51.869Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-8a5de0592aa30060acdd",
+      "case_file": null,
+      "source_published_at": "2026-09-07T22:53:34.000Z",
+      "published_at": "2026-09-07T23:37:51.869Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/health/20260907-second-hand-smoke-1-7-million-deaths",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T22:53:34.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-46e6bd810843b8fe",
       "title_image": {
@@ -758,7 +1495,43 @@
       "version": 1,
       "news_status": "developing",
       "event_id": "event-745265b7cc9f4888cbad",
-      "case_file": null,
+      "case_file": {
+        "case_id": "case-820912314a3256",
+        "member_count": 3,
+        "publisher_count": 6,
+        "members": [
+          {
+            "story_id": "wt-1c2c187d0b858b7c",
+            "slug": "anschlage-auf-stromleitungen-21-sprengsatze-an-stromleitungen-entdeckt-und-entscharft-858b7c",
+            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
+            "summary": "In Sachsen sind mehr als 21 Sprengsätze an Hochspannungsleitungen entdeckt und entschärft worden. Die Polizei sucht einen 48-Jährigen und bittet weiter um Hinweise.",
+            "updated_at": "2026-09-07T22:08:26.896Z",
+            "published_at": "2026-09-07T22:08:26.896Z",
+            "kind": "Ermittlungsstand",
+            "current": true
+          },
+          {
+            "story_id": "wt-86ea1ddfd89beabf",
+            "slug": "sabotage-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-fahndung-mit-foto-n-9beabf",
+            "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
+            "summary": "In Sachsen wurden an Stromtrassen zwölf Sprengvorrichtungen entdeckt. Die Polizei fahndet per Foto nach einem Verdächtigen und prüft Zusammenhänge mit Fällen in anderen Ländern.",
+            "updated_at": "2026-09-06T05:34:49.981Z",
+            "published_at": "2026-09-06T05:34:49.981Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          },
+          {
+            "story_id": "wt-33e396f2be1a3a1f",
+            "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
+            "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
+            "summary": "In Sachsen haben Ermittler Sprengvorrichtungen entdeckt, der Einsatz dauert an. Ein möglicher Zusammenhang zu Angriffen auf das Stromnetz in Brandenburg und NRW ist weiter offen.",
+            "updated_at": "2026-09-05T09:32:24.269Z",
+            "published_at": "2026-09-04T19:51:20.503Z",
+            "kind": "Ermittlungsstand",
+            "current": false
+          }
+        ]
+      },
       "source_published_at": "2026-09-07T09:21:15.000Z",
       "published_at": "2026-09-07T22:08:26.896Z",
       "evidence_groups": {
@@ -3065,107 +3838,6 @@
       ]
     },
     {
-      "story_id": "wt-cd001726db438d2d",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-b808800093c177ac-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-ae201ac9467a2983-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-cd001726db438d2d-4dd0cf5ac4019882-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "arbeitsmarkt-fachkraftemangel-konnte-bis-2029-auf-723-000-steigen-438d2d",
-      "title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
-      "source_summary": "Zwei aktuelle Berichte greifen eine IW-Studie zum Arbeitsmarkt auf. Nach den Texten könnten in Deutschland bis 2029 rund 723.000 Fachkräfte fehlen; das wäre annähernd doppelt so viel wie 2025. Genannt werden besonders starke Lücken im Verkauf, in der Kinderbetreuung, in der Sozialarbeit sowie in der Gesundheits- und Krankenpflege und in der Bauelektrik.\n\nAls Gründe nennt der zitierte Studienautor vor allem den Ruhestand der Babyboomer, zu wenig Nachwuchs in wichtigen Ausbildungsberufen und geringere Zuwanderung. Die ZDF-Darstellung ordnet die Auswertung ausdrücklich als Fortschreibung von Daten bis Ende 2024 ein und verweist auf Angaben der Bundesagentur für Arbeit und des Statistischen Bundesamts.",
-      "summary": "Eine IW-Studie rechnet bis 2029 mit einer deutlich größeren Fachkräftelücke. Besonders betroffen sein sollen mehrere Berufe mit direkter Wirkung auf Alltag und Versorgung.",
-      "detail_summary": "Der Kern der Meldung ist eine neue, konkret bezifferte Arbeitsmarktprojektion: Bis 2029 könnten laut IW rund 723.000 Fachkräfte fehlen, mit besonders großen Lücken im Verkauf, in der Kinderbetreuung, in der Sozialarbeit und in der Pflege. Das ist für Haushalte, Betriebe und öffentliche Daseinsvorsorge relevant, weil sich offene Stellen auf Verfügbarkeit, Wartezeiten und Leistungsfähigkeit auswirken können. Der Wirkpfad verläuft über weniger Personal zu geringerer Kapazität, stärkerem Druck auf bestehende Beschäftigte und möglichen Engpässen in Dienstleistungen. Mögliche Folge sind längere Suchzeiten, Ausfälle oder Priorisierungen bei Angeboten. Die Evidenz bleibt aber eine Studienfortschreibung aus Sekundärberichten; belastbar ist die Prognose als Hinweis auf ein Risiko, nicht als eingetretene Entwicklung.",
-      "why_relevant": "Die Meldung beschreibt eine neue, konkret quantifizierte Verschiebung am Arbeitsmarkt mit möglichen Folgen für Betriebe, Versorgung und öffentliche Leistungen.",
-      "topic": [
-        "Arbeit"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Die genannte Fachkräftelücke kann Beschäftigte, Betriebe und Nutzerinnen vieler Dienste betreffen; zugleich bleibt offen, wie stark sich das tatsächlich in Alltag und Einkommen übersetzt."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Ein direkter Umweltbezug wird in den Quellen nicht beschrieben."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "rationale": "Wenn Kinderbetreuung, Pflege oder andere öffentliche Leistungen knapper werden, kann das die erreichbare Versorgung und die demokratisch korrigierbare Leistungsfähigkeit des Staates berühren."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "unternehmen",
-          "beschaeftigte",
-          "kinder_jugend",
-          "aeltere"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-07T17:47:04.791Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T05:13:03.000Z",
-      "last_updated": "2026-09-07T17:47:33.191Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-cb0aa7c48054004d01bb",
-      "case_file": null,
-      "source_published_at": "2026-09-07T05:13:03.000Z",
-      "published_at": "2026-09-07T17:47:33.191Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/deutschland/arbeitsmarkt-fachkraeftemangel-koennte-bis-2029-auf-723.000-steigen/100252475.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T05:13:03.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/wirtschaft/studie-fachkraeftemangel-berufe-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T10:12:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-63c624795c1fe417",
       "title_image": {
         "mode": "impact_card",
@@ -3279,109 +3951,6 @@
           "url": "https://www.stern.de/news/finnland-errichtet-200-kilometer-langen-zaun-an-grenze-zu-russland-38217442.html",
           "source_type": "media_rss",
           "published_at": "2026-09-07T16:33:07.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-12227eeecd48c0b9",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-b077abe7ae401c71-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-af34e59ca8dbbc0e-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-28a1212dc72ef812-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "die-caritas-bottrop-arbeitet-gewaltvorfalle-auf-48c0b9",
-      "title": "Die Caritas Bottrop arbeitet Gewaltvorfälle auf",
-      "source_summary": "Die Caritas Bottrop hat nach eigenen Angaben mit der Aufarbeitung möglicher Gewaltvorfälle in einem früheren Kinderheim begonnen. Auslöser war ein anonymer Hinweis einer betroffenen Person, die über sexualisierte, körperliche und psychische Gewalt berichtet haben soll. Die Caritas hat daraufhin weitere Recherchen angestoßen und eine Studie in Auftrag gegeben.\n\nUntersucht werden soll, in welchem Ausmaß Kinder und Jugendliche damals Gewalt ausgesetzt waren und welche strukturellen Bedingungen Übergriffe begünstigt haben könnten. Laut Bericht geht es um das frühere Kindervollheim St. Konrad, heute Kinderdorf am Köllnischen Wald. Die Caritas sagt zugleich, die Vorwürfe beträfen die 1960er und 1970er Jahre; für aktuelle Fälle gebe es keine Hinweise. Im Heim leben derzeit rund 100 Kinder und Jugendliche.",
-      "summary": "Die Caritas Bottrop hat eine historische Aufarbeitung zu Gewaltvorwürfen in einem früheren Kinderheim gestartet. Der Bericht nennt zugleich offene Punkte und schließt aktuelle Fälle nach Caritas-Angaben aus.",
-      "detail_summary": "Auslöser ist ein anonymer Hinweis aus dem Januar, nach dem in dem früheren Kinderheim St. Konrad Gewalt erfahren worden sein soll. Die Caritas reagiert darauf mit weiterer Recherche und einer beauftragten Studie der Universität Ulm. Für die öffentliche Bedeutung zählt vor allem, dass damit ein institutioneller Aufarbeitungsprozess beginnt, der mögliche Betroffene und heutige Schutzkonzepte berühren kann. Der Wirkpfad liegt nicht in unmittelbarer Wirkung, sondern in möglicher Anerkennung, Dokumentation und späteren Folgerungen für Prävention und Schutzstrukturen. Zugleich bleibt die Beleglage begrenzt: Gesichert ist bisher der Start der Aufarbeitung und der Vorwurfskontext, nicht aber das Ausmaß der Vorfälle oder spätere Konsequenzen.",
-      "why_relevant": "Die Meldung zeigt eine neue institutionelle Reaktion auf historische Gewaltvorwürfe und kann Folgewirkungen für Aufarbeitung, Schutzkonzepte und Vertrauen in eine soziale Einrichtung haben.",
-      "topic": [
-        "Arbeit"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Betroffen sind mögliche ehemalige Heimkinder sowie die heute dort lebenden rund 100 Kinder und Jugendliche. Die Aufarbeitung kann Anerkennung und Prävention stärken, zugleich zeigt der Bericht einen schweren Gewaltkontext als mögliches Risiko."
-        },
-        "planet": {
-          "relevance": "offen",
-          "tendency": "offen",
-          "rationale": "Aus den Quellen ergibt sich kein eigenständiger Umwelt- oder Klimabezug."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "chance",
-          "rationale": "Der Vorgang betrifft institutionelle Aufarbeitung, Transparenz und die öffentliche Nachprüfbarkeit von Schutzversagen. Das stärkt demokratische Korrekturfähigkeit, ohne dass daraus schon ein Wirkungsnachweis folgt."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "kinder_jugend",
-          "beschaeftigte",
-          "kommunen",
-          "staat"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-07T17:21:31.323Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T11:21:08.000Z",
-      "last_updated": "2026-09-07T17:24:29.900Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-bbc2a8844af90a5446d1",
-      "case_file": null,
-      "source_published_at": "2026-09-07T16:45:02.000Z",
-      "published_at": "2026-09-07T17:24:29.900Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Mit den Ergebnissen der Studie wird im Herbst 2027 gerechnet.",
-          "source_id": "wdr-nachrichten",
-          "expected_by": "2027-09-30",
-          "measurable_indicator": "Veröffentlichung oder belastbar angekündigte Vorlage der Studie",
-          "expected_by_evidence_hash": "f2477c4caa3a3aa0c161fe0955be855898af886d44e5c8fefd7f0247fd131e59",
-          "followup_id": "followup-8e8739b3a6722b06",
-          "announced_at": "2026-09-07T16:45:02.000Z",
-          "follow_up_date": "2027-09-30T00:00:00.000Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T16:45:02.000Z",
           "primary_source": false
         }
       ]
@@ -7748,87 +8317,6 @@
       ]
     },
     {
-      "story_id": "wt-86ea1ddfd89beabf",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-86ea1ddfd89beabf-bc9fc18a9e636684-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-86ea1ddfd89beabf-98a85508fb2dc299-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-86ea1ddfd89beabf-0cc9823cf906a53b-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "sabotage-polizei-findet-zwolf-sprengsatze-an-stromtrassen-in-sachsen-fahndung-mit-foto-n-9beabf",
-      "title": "Sabotage - Polizei findet zwölf Sprengsätze an Stromtrassen in Sachsen - Fahndung mit Foto nach Tatverdächtigem aus NRW",
-      "source_summary": "Die Meldung beschreibt Ermittlungen nach einem mutmaßlichen Anschlagversuch auf die Stromversorgung in Sachsen. Nach Angaben der Generalstaatsanwaltschaft Dresden wurden in den Landkreisen Bautzen und Görlitz insgesamt zwölf selbstgebaute Sprengvorrichtungen entdeckt. Die Polizei sucht per Foto nach einem 48-Jährigen aus Gevelsberg in Nordrhein-Westfalen und hofft auf Hinweise zu seinem Aufenthaltsort; auch Hinweise aus einem Online-Portal werden geprüft.\n\nDie sächsischen Behörden prüfen zudem einen Zusammenhang mit ähnlichen Funden in Brandenburg und Nordrhein-Westfalen. Die vorliegenden Angaben stammen aus einem Deutschlandfunk-Bericht; weitere Hintergründe bleiben in den Textausschnitten offen.",
-      "summary": "In Sachsen wurden an Stromtrassen zwölf Sprengvorrichtungen entdeckt. Die Polizei fahndet per Foto nach einem Verdächtigen und prüft Zusammenhänge mit Fällen in anderen Ländern.",
-      "detail_summary": "Gesichert ist nach der vorliegenden Quelle der Fund von zwölf selbstgebauten Sprengvorrichtungen an Stromtrassen in den Landkreisen Bautzen und Görlitz sowie die Fahndung per Foto nach einem 48-Jährigen aus Gevelsberg. Relevanz entsteht, weil es um kritische Energieinfrastruktur geht und damit um einen möglichen Eingriff in eine systemrelevante Versorgung. Der Wirkpfad liegt nicht in der Meldung selbst, sondern in der möglichen Beeinträchtigung von Sicherheit, Betrieb und Vertrauen in die Resilienz solcher Netze. Mögliche Folgen sind zusätzliche Schutzmaßnahmen, Ermittlungsaufwand und bei bestätigtem Zusammenhang eine breitere Lagebewertung über Ländergrenzen hinweg. Die Evidenz bleibt begrenzt, weil hier nur eine journalistische Quelle vorliegt und die behördlichen Einzelheiten nur ausschnittsweise belegt sind.",
-      "why_relevant": "Die Meldung betrifft kritische Strominfrastruktur und mögliche Sabotage, also einen Zustand mit potenziellen Folgen für Versorgungssicherheit, Schutzaufwand und öffentliche Sicherheitslage.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Die Stromversorgung ist für Haushalte und öffentliche Versorgung unmittelbar relevant; konkrete Ausfälle sind hier aber nicht belegt."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "rationale": "Energieinfrastruktur betrifft auch die Stabilität von Versorgungssystemen; ökologische Folgen sind aus der Quelle nicht belegbar."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und damit demokratische Korrekturfähigkeit, ohne dass ein institutioneller Schaden hier belegt ist."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.0",
-      "media_checked_at": "2026-09-06T05:34:08.658Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-06T01:34:27.000Z",
-      "last_updated": "2026-09-06T05:34:49.981Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-ae3d4b273922de048bb3",
-      "case_file": null,
-      "source_published_at": "2026-09-06T05:18:36.000Z",
-      "published_at": "2026-09-06T05:34:49.981Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-findet-zwoelf-sprengsaetze-an-stromtrassen-in-sachsen-fahndung-mit-foto-nach-tatverdaechtige-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T05:18:36.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-6347f9739484a7d1",
       "title_image": {
         "mode": "impact_card",
@@ -9383,193 +9871,6 @@
       ]
     },
     {
-      "story_id": "wt-33e396f2be1a3a1f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-5eb9ad70fef6328f-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-0034990f29e955ff-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-33e396f2be1a3a1f-3371bd61c218e2a9-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "anschlage-auf-stromleitungen-sprengvorrichtungen-auch-in-sachsen-entdeckt-1a3a1f",
-      "title": "Anschläge auf Stromleitungen: „Sprengvorrichtungen“ auch in Sachsen entdeckt",
-      "source_summary": "In Sachsen läuft seit Freitagnachmittag ein größerer Polizeieinsatz im Raum Schleife und nördlich von Bautzen. Mehrere Berichte melden, dass Ermittler dort Sprengvorrichtungen entdeckt haben; sie sollen entschärft werden. Nach den Berichten gibt es Bezüge zu früheren Angriffen auf das Stromnetz in Brandenburg und Nordrhein-Westfalen, der genaue Zusammenhang bleibt aber offen.\n\nDie Polizei hielt sich mit Details zunächst zurück und kündigte weitere Informationen für den Tagesverlauf an. In den Berichten heißt es außerdem, Hinweise auf die Funde hätten sich aus einem Bekennerschreiben ergeben. Zugleich wird weiter nach einem Verdächtigen gefahndet.",
-      "summary": "In Sachsen haben Ermittler Sprengvorrichtungen entdeckt, der Einsatz dauert an. Ein möglicher Zusammenhang zu Angriffen auf das Stromnetz in Brandenburg und NRW ist weiter offen.",
-      "detail_summary": "Gesichert ist nach den vorliegenden Quellen vor allem der Fund von Sprengvorrichtungen in Sachsen sowie ein laufender Polizeieinsatz im Raum Schleife und nördlich von Bautzen. Die Berichte nennen zudem Hinweise aus einem Bekennerschreiben und sprechen davon, dass die Objekte entschärft werden sollen. Für die Nachricht ist das materiell, weil es um mögliche Eingriffe in kritische Energie-Infrastruktur und damit um Sicherheit, Versorgung und Folgekosten geht. Der Wirkpfad führt hier nicht über Reichweite oder Aufmerksamkeit, sondern über den tatsächlichen Zustand der Anlagen, die Spurensicherung und die Frage, ob weitere Taten verhindert werden können. Offen bleibt aber, wie belastbar die Zuordnung zu den früheren Angriffen in Brandenburg und NRW ist und wie gefährlich die Funde im Einzelnen waren. Auch die unabhängige Bestätigung der Einzelangaben ist bisher begrenzt.",
-      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur, laufende Polizeimaßnahmen und mögliche Folgerisiken für Versorgungssicherheit und öffentliche Sicherheit.",
-      "topic": [
-        "Energie",
-        "Arbeit",
-        "Wirtschaft",
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Versorgungssicherheit, öffentliche Sicherheit und die Vermeidung weiterer Schäden an kritischer Infrastruktur."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein direkter Umweltbezug ist aus den Quellen nicht belegt; mögliche Sekundärfolgen bleiben offen."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer demokratischer Effekt ist nicht belegt; relevant ist eher die staatliche Korrekturfähigkeit bei Sicherheitslagen."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T09:31:48.966Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-04T18:13:49.000Z",
-      "last_updated": "2026-09-05T09:32:24.269Z",
-      "version": 5,
-      "news_status": "developing",
-      "event_id": "event-b3909a98d9ba9b7edf64",
-      "case_file": null,
-      "source_published_at": "2026-09-04T18:13:49.000Z",
-      "published_at": "2026-09-04T19:51:20.503Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ],
-          [
-            "wiwo-schlagzeilen"
-          ],
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 4,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "mdr-nachrichten",
-              "mdr-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 3
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die gesicherten Objekte tatsächlich entschärft werden und welche Sprengwirkung sie haben, soll die Polizei später präzisieren.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Behördliche Bestätigung zu Entschärfung, Art und Gefährlichkeit der Objekte",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-596c5c287d66ce50",
-          "announced_at": "2026-09-04T19:28:00.000Z",
-          "follow_up_date": "2026-09-11T19:51:20.503Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Weitere Angaben der Polizei zu Art, Gefährlichkeit und Herkunft der gesicherten Objekte",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Benennung der Objekte oder offizielle Entschärfungs- bzw. Sicherungsdetails",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-7a8ae6d9fecdaefe",
-          "announced_at": "2026-09-04T18:27:06.000Z",
-          "follow_up_date": "2026-09-12T07:06:38.447Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die gefundenen Vorrichtungen entschärft werden konnten",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizeimitteilung oder belastbarer Bericht zur Entschärfung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-b181244a81513369",
-          "announced_at": "2026-09-04T19:28:00.000Z",
-          "follow_up_date": "2026-09-12T09:16:39.625Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen---sprengvorrichtungen--auch-in-sachsen-entdeckt-38210180.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:13:49.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16020481.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:15:11.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/deutschland/sachsen-sprengvorrichtung-sabotage-stromnetz-umspannwerk-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T09:21:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/umspannwerk-sprengvorrichtungen-in-sachsen-entdeckt-nrw-verdaechtiger-fluechtig/100251404.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:30:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen/news-polizei-einsatz-brandenburg-,anschlag-umspannwerk-lausitz-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T18:27:06.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-lausitz-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T07:02:53.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/deutschland/politik/news-polizei-fahndung-tatverdaechtiger-nrw,anschlag-umspannwerk-sn-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T08:59:23.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-6267bf5562aa70a6",
       "title_image": {
         "mode": "editorial",
@@ -9699,151 +10000,6 @@
           "url": "https://www.rbb24.de/panorama/beitrag/2026/09/berlin-brandenburg-flughafen-ber-terminal-1-frau-gefaehrlicher-stoff.html",
           "source_type": "media_rss",
           "published_at": "2026-09-04T08:13:24.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-7b385f58748f3d32",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-954a5ccec049ce21-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-c404bd8d02df1dba-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-7b385f58748f3d32-4528cb0e4dd565cc-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
-      "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
-      "source_summary": "Die rbb24-Meldung berichtet unter Berufung auf ARD-Informationen, dass Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten. Nach dem Bericht bekennt sich darin ein mutmaßlicher Alleintäter zu Anschlägen in Jänschwalde und in Bergheim bei Köln, und die Fahndung läuft weiter.\n\nZudem heißt es, der Polizei in Nordrhein-Westfalen und Brandenburg lägen inzwischen zwei Bekennerschreiben derselben Person vor. Die Schreiben seien handschriftlich verfasst, mit Namen unterzeichnet und enthielten nach ARD-Terrorismusexperte Michael Götschenberg Täterwissen. Der Bericht nennt außerdem Hinweise, wonach die Person mit einem alten Bundeswehrfahrzeug unterwegs sei und offenbar weitere Tatorte anfahre.",
-      "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
-      "detail_summary": "Gesichert nach der vorliegenden Meldung ist vor allem, dass die Polizei die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch hält. Der Bericht ordnet die Schreiben einem mutmaßlichen Alleintäter zu, nennt Jänschwalde und Bergheim bei Köln als Tatorte und sagt, die Fahndung laufe weiter. Für die Einordnung ist das relevant, weil sich damit die Informationslage von einer bloßen Sachbeschädigungs- oder Sabotagespur hin zu einer personalisierten Ermittlungs- und Bedrohungslage verschiebt. Der Wirkpfad liegt vor allem in veränderten Ermittlungsprioritäten, Schutzmaßnahmen an kritischer Infrastruktur und möglicher öffentlicher Risikowahrnehmung. Mögliche Folgen sind zusätzliche Sicherung, weitere Fahndungsmaßnahmen und eine belastendere Lage für Netzbetreiber; ob daraus breitere Systemeffekte entstehen, bleibt offen. Tragfähige unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor, daher bleibt die Zuschreibung vorläufig.",
-      "why_relevant": "Die Meldung verändert die Lagebewertung zu Sabotage an kritischer Energieinfrastruktur, weil sie Authentizität, mögliche Täterschaft und laufende Fahndung zusammenführt.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "rationale": "Betroffen sind potenziell Sicherheit, Versorgungsschutz und Ermittlungsressourcen; die Lage kann Schutzmaßnahmen und öffentliche Wahrnehmung verändern."
-        },
-        "planet": {
-          "relevance": "gering",
-          "rationale": "Ein unmittelbarer Umwelt- oder Klimawirkpfad wird in der Quelle nicht belastbar beschrieben."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "rationale": "Die Meldung berührt den Schutz kritischer Infrastruktur und die Informationslage der Öffentlichkeit, ohne dass bereits eine politische Entscheidung vorliegt."
-        }
-      },
-      "visuals": null,
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "medium",
-        "reason": "Die Meldung verbindet einen laufenden Sabotagefall mit einer personalisierten Täterzuschreibung und der Authentizitätsbewertung von Bekennerschreiben; das kann die öffentliche Bedrohungswahrnehmung und die Einordnung kritischer Infrastruktur beeinflussen.",
-        "factual_core": "Polizeibehörden halten laut der gemeldeten ARD-Informationen Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch; die Fahndung läuft weiter.",
-        "speaker_statement": {
-          "present": true,
-          "speaker": "Polizeibehörden / ARD-Informationen",
-          "statement": "Die Bekennerschreiben werden für authentisch gehalten; die Person soll sich zu den Anschlägen in Jänschwalde und Bergheim bei Köln bekannt haben.",
-          "status": "claim"
-        },
-        "framing": {
-          "detected": true,
-          "term": "ARD-Informationen / Bekennerschreiben / mutmaßlicher Alleintäter",
-          "origin_in_story": "Medium",
-          "media_usage": "headline",
-          "attribution_quality": "grundsätzlich attribuiert",
-          "factual_status": "Aussage eines Akteurs",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "resonance": {
-          "resonance_space": "Thema kritische Infrastruktur, Sabotage, Fahndung und Sicherheitslage",
-          "resonance_risk": "Der Eindruck erhöhter Gefährdung kann sich verstärken, auch wenn die Authentizität und Täterzuschreibung nur berichtete Einschätzungen sind.",
-          "normalization_potential": "Wiederholte Rahmung als akute Bedrohung kann den Ausnahmecharakter subjektiv normalisieren.",
-          "repetition_effect": "Wiederholung ähnlicher Meldungen kann ein Illusory-Truth-Risiko erzeugen, ohne zusätzliche Belege zu liefern.",
-          "trust_effect": "Die enge Kopplung von Authentizitätsbehauptung und Ermittlungsstand kann Vertrauen in die Ermittlungsinformation stützen, aber bei fehlender unabhängiger Bestätigung auch Vorläufigkeit sichtbar machen.",
-          "polarization_potential": "Begrenztes Potenzial, die Debatte entlang von Sicherheits-, Infrastruktur- und Zuständigkeitsfragen zu zuspitzen.",
-          "discourse_effect": "Verschiebt die Diskussion von der Sachbeschädigung hin zu personalisierter Fahndung und Schutz kritischer Infrastruktur."
-        },
-        "impact_path": {
-          "first_order": "Die Meldung erhöht die Aufmerksamkeit für die laufende Fahndung und die Einordnung der Schreiben.",
-          "second_order": "Netzbetreiber, Behörden und Öffentlichkeit können ihre Risikowahrnehmung und Schutzprioritäten anpassen.",
-          "third_order": "Längerfristig kann die Berichterstattung die kommunikative Einordnung von Sabotage gegen Infrastruktur als Sicherheits- und Resilienzthema verstetigen."
-        },
-        "evidence": {
-          "status": "medium",
-          "what_is_known": "Aus der Quelle ist bekannt, dass die Polizei die Bekennerschreiben für authentisch hält und die Fahndung läuft; außerdem werden Jänschwalde und Bergheim bei Köln als Tatorte genannt.",
-          "what_is_inferred": "Dass die Berichterstattung eine Bedrohungslage und einen personalisierten Ermittlungsrahmen hervorhebt.",
-          "what_is_open": "Ob die Zuschreibung eines mutmaßlichen Alleintäters und die geschilderten Details unabhängig bestätigt sind, bleibt in den gelieferten Quellen offen."
-        },
-        "editorial_assessment": "Die Formulierung verknüpft Ermittlungsstand und Authentizitätsbewertung eng mit dem Bedrohungsrahmen; sachlich präziser wäre eine klarere Trennung von bestätigtem Sachverhalt und berichteter Polizeieinschätzung.",
-        "fact_first_reframe": {
-          "title": "Polizei prüft Bekennerschreiben zu Sabotage an Stromversorgung",
-          "source_summary": "Die Polizei hält nach einem Bericht Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Fahndung nach einer mutmaßlich beteiligten Person läuft weiter.",
-          "summary": "Laut rbb24 hält die Polizei Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Fahndung läuft weiter; Jänschwalde und Bergheim bei Köln werden als Tatorte genannt.",
-          "detail_summary": "Nach der vorliegenden Meldung stufen Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung als authentisch ein. Der Bericht ordnet sie einer noch gesuchten Person zu und nennt Jänschwalde sowie Bergheim bei Köln als Tatorte. Für die Berichterstattung wichtig ist die Trennung zwischen dem berichteten Ermittlungsstand und einer darüber hinausgehenden Deutung als Bedrohungslage. Die Quelle nennt zudem weitere Hinweise aus dem laufenden Ermittlungszusammenhang, deren unabhängige Bestätigung in den gelieferten Quellen nicht vorliegt."
-        },
-        "self_frame_warning": false,
-        "source_comparison": {
-          "sufficient_basis": false,
-          "finding": ""
-        }
-      },
-      "media_analysis_version": "1.0",
-      "media_checked_at": "2026-09-05T09:18:31.212Z",
-      "editorial_analysis": {
-        "analysis_id": "woek-analysis-dab9cdd59202",
-        "slug": "polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd",
-        "title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
-        "teaser": "Die eigentliche Wirkung liegt nicht im Schreiben selbst, sondern in der veränderten Lage: Ermittlungen, Schutz kritischer Infrastruktur und öffentliche Risikobewertung werden neu sortiert.",
-        "published_at": "2026-09-06T16:37:35.523Z",
-        "updated_at": "2026-09-06T16:37:35.523Z"
-      },
-      "first_seen": "2026-09-04T10:06:18.000Z",
-      "last_updated": "2026-09-05T09:18:31.212Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-6a9b508f2d9dfc0503cf",
-      "case_file": null,
-      "source_published_at": "2026-09-04T10:06:18.000Z",
-      "published_at": "2026-09-04T10:09:13.371Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-04T10:06:18.000Z",
           "primary_source": false
         }
       ]
@@ -16440,6 +16596,17 @@
   ],
   "editorial_analyses": [
     {
+      "analysis_id": "woek-analysis-dab9cdd59202",
+      "story_id": "wt-7b385f58748f3d32",
+      "slug": "polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd",
+      "title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+      "subtitle": "Warum die Meldung mehr ist als ein Ermittlungsdetail: Sie verschiebt Schutz, Risiko und Aufmerksamkeit bei kritischer Infrastruktur.",
+      "teaser": "Die Polizei hält die Schreiben für authentisch, die Fahndung läuft weiter. Für die Wirkungökonomie zählt jetzt vor allem, wie sich Ermittlungen, Schutz von Infrastruktur und öffentliche Risikowahrnehmung gegenseitig verstärken.",
+      "published_at": "2026-09-06T16:37:35.523Z",
+      "updated_at": "2026-09-08T00:52:14.401Z",
+      "reading_time_minutes": 8
+    },
+    {
       "analysis_id": "woek-analysis-0bfd0f9a3434",
       "story_id": "wt-4b5d0962d323432a",
       "slug": "deutscher-kapazitatsmechanismus-was-die-eu-genehmigung-fur-stromsicherheit-und-sys-0bfd0f",
@@ -16536,17 +16703,6 @@
       "teaser": "Am Hambacher Forst blieb die Suche nach einem Verdächtigen ohne Erfolg. Systemisch relevant ist vor allem, wie ein Sabotageverdacht Schutz, Zuständigkeiten und Resilienz im Stromnetz berührt.",
       "published_at": "2026-09-06T20:54:14.336Z",
       "updated_at": "2026-09-06T20:54:14.336Z",
-      "reading_time_minutes": 6
-    },
-    {
-      "analysis_id": "woek-analysis-dab9cdd59202",
-      "story_id": "wt-7b385f58748f3d32",
-      "slug": "polizei-halt-bekennerschreiben-zu-sabotage-an-stromversorgung-fur-authentisch-dab9cd",
-      "title": "Polizei hält Bekennerschreiben zu Sabotage an Stromversorgung für authentisch",
-      "subtitle": "Warum die Meldung vor allem Ermittlungen, Schutzlogik und Risikowahrnehmung verschiebt",
-      "teaser": "Die eigentliche Wirkung liegt nicht im Schreiben selbst, sondern in der veränderten Lage: Ermittlungen, Schutz kritischer Infrastruktur und öffentliche Risikobewertung werden neu sortiert.",
-      "published_at": "2026-09-06T16:37:35.523Z",
-      "updated_at": "2026-09-06T16:37:35.523Z",
       "reading_time_minutes": 6
     },
     {

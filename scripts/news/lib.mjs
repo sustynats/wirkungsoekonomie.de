@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { numberTokens, persistedNumericEvidence } from "./numeric-evidence.mjs";
+import { numberTokens, sourceNumberTokens, persistedNumericEvidence } from "./numeric-evidence.mjs";
 import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
 import { lookup } from "node:dns/promises";
@@ -1214,9 +1214,8 @@ export function validateAnalysis(analysis, story, options = {}) {
   if (analysis?.analysis_type === "ex_ante" && /\b(bewirkt|hat\s+[^.!?]{0,80}\b(?:verbessert|reduziert|erhöht)|führt\s+(?:unmittelbar\s+)?zu)\b/i.test(text)) errors.push("AI_EX_ANTE_CAUSAL_OVERCLAIM");
   if (/\b(risiko ist schaden|wirkungsrisiko ist eingetreten|zielbezug beweist|korrelation beweist)\b/i.test(text)) errors.push("AI_EPISTEMIC_CONFLATION");
   const rawSourceText = story.sources.map((source) => `${source.title} ${source.summary} ${source.article_excerpt || ""}`).join(" ");
-  const sourceText = `${rawSourceText} ${story.source_summary || analysis?.source_summary || ""}`;
-  const allowedNumbers = numberTokens(sourceText);
-  const rawAllowedNumbers = numberTokens(rawSourceText);
+  const rawAllowedNumbers = new Set(story.sources.flatMap(source => [...sourceNumberTokens(source)]));
+  const allowedNumbers = new Set([...rawAllowedNumbers, ...numberTokens(story.source_summary || analysis?.source_summary || "")]);
   if (options.persisted === true) for (const token of persistedNumericEvidence(story)) {
     allowedNumbers.add(token);
     rawAllowedNumbers.add(token);

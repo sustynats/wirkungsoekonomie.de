@@ -2,32 +2,110 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-07T23:10:54.426Z",
-  "scanned_stories": 135,
-  "scanned_subjects": 117,
+  "started_at": "2026-09-08T01:09:57.682Z",
+  "scanned_stories": 138,
+  "scanned_subjects": 120,
   "editorial_candidates": 22,
-  "ready_for_research": 5,
-  "research_pending": 7,
-  "retry_deferred": 4,
+  "ready_for_research": 6,
+  "research_pending": 6,
+  "retry_deferred": 5,
   "editorial_research_sources_discovered": 25,
   "selected": 1,
-  "editorial_research_started": 2,
+  "editorial_research_started": 1,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 2,
-  "research_tokens": 19618,
-  "analysis_tokens": 13590,
-  "estimated_cost_usd": 0.073449,
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
   "quality_retries": 1,
-  "publication_deferred": false,
-  "failed": [
-    {
-      "story_id": "wt-1c2c187d0b858b7c",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T00:10:54.426Z"
-    }
-  ],
+  "publication_deferred": true,
+  "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-7b385f58748f3d32",
+      "story_slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+      "story_title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+      "editorial_analysis_score": 76,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 6,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "e523b7d244db5e2c70b8f012f93cf2ee04a1dbbe972efde41f6ce94dc7579be0",
+      "status": "published",
+      "analysis_id": "woek-analysis-dab9cdd59202"
+    },
+    {
+      "story_id": "wt-f03755f6f6b8c3b7",
+      "story_slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
+      "story_title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
+      "editorial_analysis_score": 78,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-4b5d0962d323432a",
       "story_slug": "kommission-genehmigt-deutschen-kapazitatsmechanismus-von-bis-zu-35-mrd-eur-zur-gewahrlei-23432a",
@@ -116,8 +194,8 @@
       "story_id": "wt-1c2c187d0b858b7c",
       "story_slug": "anschlage-auf-stromleitungen-21-sprengsatze-an-stromleitungen-entdeckt-und-entscharft-858b7c",
       "story_title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-      "editorial_analysis_score": 76,
-      "analysis_gain": 52,
+      "editorial_analysis_score": 80,
+      "analysis_gain": 60,
       "factors": {
         "systemic_relevance": 16,
         "impact_potential": 0,
@@ -132,7 +210,7 @@
         "MPD_interdependence": 2,
         "distribution_relevance": 6,
         "discourse_relevance": 0,
-        "case_depth": 0,
+        "case_depth": 4,
         "evidence_quality": 8
       },
       "factor_status": {
@@ -143,14 +221,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 5,
+        "independent_origin_count": 6,
         "primary_source_count": 0,
-        "cited_claim_count": 10,
+        "cited_claim_count": 13,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "1fb3d62e28487277e32caff82efe2522cea1c8dd8c40697b1be02c774c4c3013",
+      "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -282,50 +360,6 @@
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
       "status": "ready_for_research",
       "analysis_id": "woek-analysis-219f434ceb61"
-    },
-    {
-      "story_id": "wt-cd001726db438d2d",
-      "story_slug": "arbeitsmarkt-fachkraftemangel-konnte-bis-2029-auf-723-000-steigen-438d2d",
-      "story_title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
-      "editorial_analysis_score": 81,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 9,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 6,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 6,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 8
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": false,
-        "source_integrity": "verified",
-        "independent_origin_count": 6,
-        "primary_source_count": 0,
-        "cited_claim_count": 2,
-        "primary_source_expected": true,
-        "primary_source_satisfied": false,
-        "reasons": [
-          "primary_source_missing"
-        ]
-      },
-      "fingerprint": "910a5e1f96e4f59f4bec24ac97f8d9e17f69e97963b19393a6e62179f6b21005",
-      "status": "research_pending",
-      "analysis_id": null
     },
     {
       "story_id": "wt-8f7ac0654a780960",
@@ -581,48 +615,6 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "status": "ready_for_research",
       "analysis_id": "woek-analysis-1b3323ad407f"
-    },
-    {
-      "story_id": "wt-7b385f58748f3d32",
-      "story_slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
-      "story_title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
-      "editorial_analysis_score": 75,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 9,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 3,
-        "discourse_relevance": 4,
-        "case_depth": 0,
-        "evidence_quality": 7
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 3,
-        "primary_source_count": 0,
-        "cited_claim_count": 6,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
-      "status": "published",
-      "analysis_id": "woek-analysis-dab9cdd59202"
     },
     {
       "story_id": "wt-f2edeab46d126d83",
@@ -975,11 +967,12 @@
   "batch": {
     "submitted": 0,
     "pending": 0,
-    "completed": 0,
+    "completed": 1,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-07T23:12:17.848Z"
+  "batch_deferred": 1,
+  "completed_at": "2026-09-08T01:10:15.014Z"
 }
