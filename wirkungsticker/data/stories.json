@@ -1,7 +1,538 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T20:02:04.692Z",
+  "updated_at": "2026-09-08T20:21:54.035Z",
   "stories": [
+    {
+      "story_id": "wt-e820bef62dd96612",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
+      "title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
+      "source_summary": "In Ahrensburg hat es nach einem NDR-Bericht am Montagvormittag einen Angriff mit einer Stichwaffe gegeben. Dabei wurden eine Frau lebensgefährlich und ein Mann leicht verletzt; beide arbeiteten laut Polizei mit Reinigungsarbeiten in einem Mehrfamilienhaus. Die Einsatzkräfte wurden kurz vor 10 Uhr in den Ostpreußenweg gerufen. Der Verdächtige ist 32 Jahre alt, wurde in Tatortnähe festgenommen und auf Antrag der Staatsanwaltschaft in einem psychiatrischen Krankenhaus untergebracht.\n\nDie Ermittler stellten eine Tatwaffe sicher; beschrieben wird ein langes Schwert, ähnlich einer Machete. Polizei und Staatsanwaltschaft ermitteln wegen des Verdachts eines versuchten Tötungsdelikts. Als möglich gilt nach ihren Angaben, dass sich der Angreifer in einem psychischen Ausnahmezustand befand. Mehrere Punkte bleiben offen, darunter der genaue Ablauf und das Motiv.",
+      "summary": "Ahrensburg meldet einen Angriff mit einer Stichwaffe, bei dem zwei Menschen verletzt wurden. Ein 32-Jähriger wurde festgenommen und in einem psychiatrischen Krankenhaus untergebracht.",
+      "detail_summary": "Der Fall betrifft einen Angriff mit einer Stichwaffe in Ahrensburg. Nach dem Bericht wurden eine Frau lebensgefährlich und ein Mann leicht verletzt. Die Polizei nahm einen 32 Jahre alten Verdächtigen in Tatortnähe fest. Eine Tatwaffe wurde sichergestellt; beschrieben wird ein langes Schwert, ähnlich einer Machete. Polizei und Staatsanwaltschaft ermitteln wegen des Verdachts eines versuchten Tötungsdelikts. Die materiell relevante Folge ist vor allem der akute Schutzverlust für die unmittelbar Betroffenen; weitere Wirkungen auf Sicherheit und Ermittlungsverfahren bleiben offen. Die Evidenzlage ist vorerst auf einen journalistischen Bericht gestützt, ohne unabhängige Zweitquelle in den gelieferten Daten.",
+      "why_relevant": "Der Vorfall ist materiell relevant, weil schwere Gewalt, mögliche Gefährdung im öffentlichen Raum und ein laufendes Strafverfahren zusammenkommen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Schwere Körperverletzungen und ein mutmaßlich versuchtes Tötungsdelikt bedeuten unmittelbaren Schutzverlust für Betroffene; die Wirkung auf Dritte bleibt unklar.",
+          "positive_path": {
+            "mechanism": "Ermittlungs- und Unterbringungsentscheidungen können weitere unmittelbare Gefährdung begrenzen.",
+            "source_ids": [
+              "ndr-info"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die Tat erzeugt akuten Schaden, Angst und möglichen Sicherheitsverlust im betroffenen Umfeld.",
+            "source_ids": [
+              "ndr-info"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein belastbarer Umwelt- oder Klimapfad.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein direkter Einfluss auf demokratische Prozesse ist aus der Meldung nicht ableitbar.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T20:21:54.035Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T14:09:15.000Z",
+      "last_updated": "2026-09-08T20:24:02.893Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-64fb52d4ca51131651e2",
+      "case_file": null,
+      "source_published_at": "2026-09-08T06:55:02.000Z",
+      "published_at": "2026-09-08T07:39:26.543Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob die Staatsanwaltschaft den Verdacht eines versuchten Tötungsdelikts bestätigt oder verändert.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsstand und rechtliche Einordnung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-08750ed598bebbd9",
+          "announced_at": "2026-09-08T06:55:02.000Z",
+          "follow_up_date": "2026-09-15T20:24:02.893Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob zum Ablauf des Angriffs und zum Motiv weitere belastbare Angaben veröffentlicht werden.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "Neue Angaben zu Ablauf und Motiv",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0181299ae8d4be16",
+          "announced_at": "2026-09-08T06:55:02.000Z",
+          "follow_up_date": "2026-09-15T20:24:02.893Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob es unabhängige Bestätigungen zu Verletzungsgrad und Unterbringung gibt.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "Zweite belastbare Quelle zu Kernfakten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3c4d17fabf9faecf",
+          "announced_at": "2026-09-08T06:55:02.000Z",
+          "follow_up_date": "2026-09-15T20:24:02.893Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/angriff-mit-stichwaffe-in-ahrensburg-tatverdaechtiger-festgenommen,gewalttat-124.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:55:02.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-bbe37953fcbe9af5",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
+      "title": "Wahlergebnis Sachsen-Anhalt: AfD verschickt Einladung zu Gesprächen an CDU",
+      "source_summary": "Nach der Landtagswahl in Sachsen-Anhalt meldet der MDR, die AfD habe erste Einladungen zu Gesprächen über die politische Zukunft des Landes verschickt. Nach MDR-Angaben liegt der Redaktion ein Schreiben an die CDU vor.\n\nDer Text ist als Liveblog angelegt und beschreibt die laufenden Entwicklungen nach der Wahl; ein konkretes Ergebnis der Gespräche wird darin noch nicht genannt. Offen bleibt damit, ob und wie die angeschriebenen Parteien reagieren.",
+      "summary": "Die AfD hat nach dem Wahlabend Einladungen zu Gesprächen verschickt; laut MDR liegt ein Schreiben an die CDU vor. Ein Ergebnis der Gespräche ist noch offen.",
+      "detail_summary": "Der Kern ist eine neue politische Entwicklung nach der Landtagswahl in Sachsen-Anhalt: Die AfD sucht laut MDR das Gespräch mit der CDU und weiteren künftig im Landtag vertretenen Parteien. Das ist relevant, weil es um die Anbahnung möglicher Mehrheiten, Sondierungen und damit um den weiteren Regierungsbildungsprozess geht. Der Wirkpfad führt von der Einladung über mögliche Gespräche zu Koalitionsoptionen, Abgrenzungen oder Blockaden im Parlament. Eine materielle Folge kann erst entstehen, wenn daraus konkrete Bündnisse, Ausschlüsse oder Verfahrensentscheidungen werden. Die Evidenz ist vorläufig: Vorliegt hier nur ein einzelner MDR-Bericht mit einem angeblich exklusiven Schreiben; die Reaktionen der Angeschriebenen bleiben offen.",
+      "why_relevant": "Die Meldung betrifft unmittelbar die politische Anschlussfähigkeit nach einer Landtagswahl und damit demokratische Willensbildung, Mehrheitsbildung und mögliche Regierungsoptionen.",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Es ist eine Einladung zu Gesprächen belegt, aber noch keine belastbare Zustandsänderung im Regierungsprozess oder bei Rechten/Lasten der Bevölkerung.",
+          "positive_path": {
+            "mechanism": "Gespräche können Sondierungen und damit geordnete Mehrheitsbildung oder Klärung von Koalitionsoptionen auslösen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die Einladung kann Polarisierung, Abgrenzung und Blockaden im Parlament verstärken, wenn sie Gespräche nicht eröffnet.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein direkter Umwelt- oder Klimapfad.",
+          "positive_path": {
+            "mechanism": "Kein belastbarer Umweltpfad in der Meldung erkennbar.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kein belastbarer Umweltpfad in der Meldung erkennbar.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Einladung betrifft die Regierungs- und Mehrheitsbildung nach der Wahl. Das kann Verhandlungskanäle öffnen, zugleich aber auch Konfliktlinien und Abgrenzung im Parlament verschärfen.",
+          "positive_path": {
+            "mechanism": "Sondierungen können Entscheidungsfähigkeit und formale Klärung von Mehrheiten verbessern.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die Einladung kann den Konflikt um Zusammenarbeit mit der AfD verschärfen und die parlamentarische Zusammenarbeit belasten.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kommunen",
+          "staat",
+          "unternehmen"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Meldung bündelt ein politisch aufgeladenes Wahl-Nachwahl-Thema und kann als Signal für Sondierungen und Abgrenzungen gelesen werden.",
+        "factual_core": "Die AfD hat laut MDR Einladungen zu Gesprächen über die politische Zukunft Sachsen-Anhalts verschickt; ein Schreiben an die CDU liegt der Redaktion vor.",
+        "epistemic_status": {
+          "confirmed": [
+            "MDR berichtet über verschickte Einladungen und ein Schreiben an die CDU."
+          ],
+          "actor_claims": [
+            "Die AfD habe erste Einladungen zu Gesprächen verschickt."
+          ],
+          "open": [
+            "Ob und wann die CDU oder andere Parteien reagieren"
+          ]
+        },
+        "attribution": {
+          "frame_source": "MDR",
+          "speaker": "AfD laut MDR",
+          "original_term": "rechtsextremistisch",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "rechtsextremistisch",
+          "origin_in_story": "MDR",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "rechtsextremistisch",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die Überschrift rahmt die politische Entwicklung als konflikthaft und sicherheitsnah.",
+          "implied_cause": "Die AfD als Akteur wird mit einem stark wertenden politischen Label eingeführt.",
+          "implied_responsibility": "Die Partei wird kommunikativ als Auslöser des Konfliktrahmens gesetzt.",
+          "implied_threat": "Mögliche Gefahr oder Zuspitzung im politischen Umgang miteinander.",
+          "implied_solution_space": "Abgrenzung, Prüfung von Gesprächen, formale politische Reaktionen.",
+          "material_omissions": [
+            "Konkrete Reaktionen der CDU und anderer Parteien",
+            "Ob das Schreiben tatsächlich zu Gesprächen führt"
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Landtagswahl und Regierungsbildung",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "mdr-nachrichten",
+              "claim_supported": "Die Meldung betrifft Gespräche über die politische Zukunft Sachsen-Anhalts nach der Wahl."
+            }
+          ],
+          "uncertainty": "Die tatsächlichen Folgen für Koalitionen oder Mehrheiten sind noch offen."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Hohe Aufmerksamkeit für Koalitionsfragen, Abgrenzung zur AfD und politische Stabilität nach der Wahl.",
+          "normalization_potential": "low",
+          "repetition_risk": "medium",
+          "polarization_potential": "mittel bis hoch",
+          "trust_effect_potential": "offen",
+          "discourse_effect_potential": "Kann Verhandlungsdruck oder Abgrenzung verstärken, ohne selbst schon eine Entscheidung zu sein."
+        },
+        "impact_path": {
+          "first_order": "Einladung zu Gesprächen und mediale Verbreitung",
+          "second_order": "öffentliche Reaktionen, Abgrenzung oder Verhandlungsbereitschaft",
+          "third_order": "Einfluss auf den Rahmen der Regierungsbildung und parlamentarischen Zusammenarbeit"
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "MDR meldet verschickte Einladungen zu Gesprächen. Ein Schreiben an die CDU soll der Redaktion vorliegen.",
+          "what_is_inferred": "Daraus kann ein Gesprächsprozess oder eine klare Ablehnung entstehen.",
+          "what_is_open": "Nur eine journalistische Quelle im Datensatz Kein bestätigtes Ergebnis der Gespräche",
+          "facts": [
+            "MDR meldet verschickte Einladungen zu Gesprächen.",
+            "Ein Schreiben an die CDU soll der Redaktion vorliegen."
+          ],
+          "observations": [
+            "Die Meldung ist ein Liveblog-Eintrag nach der Wahl."
+          ],
+          "inferences": [
+            "Daraus kann ein Gesprächsprozess oder eine klare Ablehnung entstehen."
+          ],
+          "impact_potentials": [
+            "Mehr Transparenz über Mehrheitsoptionen",
+            "Frühzeitige Klärung politischer Positionen"
+          ],
+          "impact_risks": [
+            "Zusätzliche Polarisierung",
+            "Blockadeeffekte bei der Regierungsbildung"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle im Datensatz",
+            "Kein bestätigtes Ergebnis der Gespräche"
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Meldung sagt erst einmal nur: Die AfD hat nach der Wahl Gespräche angeboten, und der MDR hat dazu ein Schreiben an die CDU gesehen. Das ist politisch wichtig, weil solche Einladungen der Startpunkt für Sondierungen, Absprachen oder auch klare Absagen sein können. Noch ist aber nicht belegt, dass daraus schon etwas Konkretes geworden ist. Deshalb geht es hier um ein mögliches Wirkpotenzial im politischen Verfahren, nicht um eine بالفعل eingetretene Wirkung. Die Zuschreibung ist journalistisch vermittelt und nur in diesem Rahmen belastbar.",
+        "editorial_assessment": "Die Meldung sagt erst einmal nur: Die AfD hat nach der Wahl Gespräche angeboten, und der MDR hat dazu ein Schreiben an die CDU gesehen. Das ist politisch wichtig, weil solche Einladungen der Startpunkt für Sondierungen, Absprachen oder auch klare Absagen sein können. Noch ist aber nicht belegt, dass daraus schon etwas Konkretes geworden ist. Deshalb geht es hier um ein mögliches Wirkpotenzial im politischen Verfahren, nicht um eine بالفعل eingetretene Wirkung. Die Zuschreibung ist journalistisch vermittelt und nur in diesem Rahmen belastbar.",
+        "fact_first_alternative": "Sachlich: Nach der Wahl verschickt die AfD Einladungen zu Gesprächen; laut MDR liegt ein Schreiben an die CDU vor. Wissensstand: ein journalistisch berichteter Vorabstand. Attribution: MDR berichtet über ein vorliegendes AfD-Schreiben. Frame: politisch aufgeladene Darstellung mit Konfliktpotenzial.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "AfD verschickt Einladung zu Gesprächen an CDU",
+          "recommended_summary": "Die AfD hat nach der Wahl Gespräche angeboten; laut MDR liegt ein Schreiben an die CDU vor. Ein Ergebnis ist noch offen.",
+          "recommended_meta_description": "Nach der Sachsen-Anhalt-Wahl verschickt die AfD Gesprächeinladungen an die CDU; der MDR berichtet über ein vorliegendes Schreiben."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T20:21:54.035Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T19:52:01.000Z",
+      "last_updated": "2026-09-08T20:23:17.271Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-9b0d6a04db8967aed972",
+      "case_file": {
+        "case_id": "case-c3b7412b8f0f9d",
+        "member_count": 10,
+        "publisher_count": 13,
+        "members": [
+          {
+            "story_id": "wt-bbe37953fcbe9af5",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD verschickt Einladung zu Gesprächen an CDU",
+            "summary": "Die AfD hat nach dem Wahlabend Einladungen zu Gesprächen verschickt; laut MDR liegt ein Schreiben an die CDU vor. Ein Ergebnis der Gespräche ist noch offen.",
+            "updated_at": "2026-09-08T20:23:17.271Z",
+            "published_at": "2026-09-08T20:23:17.271Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-ed33c0962c4a697d",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+            "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
+            "updated_at": "2026-09-08T17:10:25.881Z",
+            "published_at": "2026-09-07T13:43:48.649Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-550f98293aec9698",
+            "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+            "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
+            "updated_at": "2026-09-08T11:24:45.444Z",
+            "published_at": "2026-09-08T11:24:45.444Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-255776ddd744e745",
+            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
+            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
+            "updated_at": "2026-09-08T05:54:13.168Z",
+            "published_at": "2026-09-07T20:39:39.302Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-ce34d0b6e55327b5",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
+            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
+            "updated_at": "2026-09-07T18:23:55.805Z",
+            "published_at": "2026-09-07T18:23:55.805Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-67096fe077900925",
+            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
+            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
+            "updated_at": "2026-09-07T13:43:27.050Z",
+            "published_at": "2026-09-07T13:43:27.050Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-e10c23f5e37ed39e",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
+            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
+            "updated_at": "2026-09-06T20:53:01.243Z",
+            "published_at": "2026-09-06T20:53:01.243Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-12f9c680daba4f09",
+            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
+            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
+            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
+            "updated_at": "2026-09-06T20:07:20.597Z",
+            "published_at": "2026-09-06T20:07:20.597Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ebecf5b3f91d490",
+            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
+            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+            "updated_at": "2026-09-05T23:19:18.605Z",
+            "published_at": "2026-09-05T22:07:32.381Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-06476c6e980f5f47",
+            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-05T12:01:00.915Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-08T19:52:01.000Z",
+      "published_at": "2026-09-08T20:23:17.271Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die CDU die Einladung annimmt oder ablehnt",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "öffentliche Reaktion der CDU",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-36271b128ad8deee",
+          "announced_at": "2026-09-08T19:52:01.000Z",
+          "follow_up_date": "2026-09-15T20:23:17.271Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Welche weiteren Parteien Gespräche mit der AfD führen",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "namentlich bestätigte Gesprächsteilnahmen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-80f124732f2f98b9",
+          "announced_at": "2026-09-08T19:52:01.000Z",
+          "follow_up_date": "2026-09-15T20:23:17.271Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-166,wahl-560.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T19:52:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-dc2a1dc727ed2b66",
       "title_image": {
@@ -1826,262 +2357,6 @@
           "url": "https://taz.de/Bundeshaushalt-fuer-2027/!6211410",
           "source_type": "media_rss",
           "published_at": "2026-09-08T16:06:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-ed33c0962c4a697d",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
-      "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
-      "source_summary": "Der MDR berichtet im Liveticker zum Landtagswahlabend in Sachsen-Anhalt über ein vorläufiges Ergebnis, nach dem die AfD bei 43,8 Prozent liegt. In derselben Meldung heißt es, Ministerpräsident Schulze sehe für die CDU keinen Regierungsauftrag mehr. Ein weiterer MDR-Beitrag verweist auf eine politische Reaktion von Markus Söder mit der Formulierung, die AfD sei in Sachsen-Anhalt „am Zug“.\n\nZusätzlich meldet der MDR, Sachsen-Anhalt habe wegen des Wahlausgangs eine Verschiebung der turnusmäßigen Übernahme des Vorsitzes der Ministerpräsidentenkonferenz vorgeschlagen. Offene Punkte bleiben die amtliche Feststellung des Ergebnisses und die konkreten Folgen für Gespräche, Mehrheiten und den MPK-Zeitplan.",
-      "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
-      "detail_summary": "Der Kern der Meldung ist ein vorläufiges Wahlergebnis in Sachsen-Anhalt mit 43,8 Prozent für die AfD und die politische Reaktion der CDU. Neu hinzu kommt der Vorschlag, die turnusmäßige Übernahme des Vorsitzes der Ministerpräsidentenkonferenz zu verschieben. Das ist materiell relevant, weil ein Wahlresultat hier nicht nur die politische Lage, sondern auch einen föderalen Ablauf und die institutionelle Übergabe berührt. Ein möglicher Wirkpfad führt von der veränderten Mehrheits- und Verhandlungslage zu neuen Zuständigkeiten, Gesprächen und einem geänderten Zeitplan. Die Wirkung bleibt aber vorläufig: Das Ergebnis ist noch nicht amtlich festgestellt, und der MPK-Vorschlag ist nach Quelle erst ein Vorschlag. Für eine bestätigte Einordnung fehlen außerdem unabhängige Belege außerhalb desselben Hauses.",
-      "why_relevant": "Die Meldung verbindet ein starkes Wahlergebnis mit möglichen Folgen für Regierungsbildung und föderale Abläufe. Dadurch verändert sich nicht nur die politische Lage, sondern auch ein konkreter institutioneller Zeitplan.",
-      "topic": [
-        "Demokratie",
-        "Politik",
-        "Gesellschaft"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Das Ergebnis verschiebt politische Mehrheits- und Verhandlungslagen; zugleich sind die praktischen Folgen noch offen und teils nur vorgeschlagen.",
-          "positive_path": {
-            "mechanism": "Ein klareres Wahlergebnis kann Verhandlungen, Zuständigkeiten und Übergaben ordnen.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Die neue Lage kann Regierungsbildung, Koalitionsgespräche und institutionelle Übergänge erschweren oder verzögern.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "In den gelieferten Quellen gibt es keinen belastbaren Umwelt- oder Klimapfad.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Die Meldung betrifft Wahlausgang, Regierungsauftrag und Mehrheitsbildung. Das berührt demokratische Korrekturfähigkeit, aber die konkrete institutionelle Folge ist noch offen.",
-          "positive_path": {
-            "mechanism": "Ein klar festgestelltes Ergebnis kann die öffentliche Willensbildung und die Neuordnung von Mehrheiten sichtbar machen.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ein umkämpftes oder instabiles Folgegefüge kann Verhandlungen, Legitimitätsdebatten und Übergaben belasten.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "AfD-Anteil",
-            "value": "43,8",
-            "unit": "Prozent",
-            "context": "vorläufiges Ergebnis in Sachsen-Anhalt",
-            "claim_id": "wt-ed33c0962c4a697d-v2-claim-1"
-          }
-        ],
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "beschaeftigte",
-          "europa"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T17:06:38.176Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T12:35:38.000Z",
-      "last_updated": "2026-09-08T17:10:25.881Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-b05e38596ac7062bc4e0",
-      "case_file": {
-        "case_id": "case-c3b7412b8f0f9d",
-        "member_count": 9,
-        "publisher_count": 13,
-        "members": [
-          {
-            "story_id": "wt-ed33c0962c4a697d",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
-            "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
-            "updated_at": "2026-09-08T17:10:25.881Z",
-            "published_at": "2026-09-07T13:43:48.649Z",
-            "kind": "Weitere Entwicklung",
-            "current": true
-          },
-          {
-            "story_id": "wt-550f98293aec9698",
-            "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
-            "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
-            "updated_at": "2026-09-08T11:24:45.444Z",
-            "published_at": "2026-09-08T11:24:45.444Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-255776ddd744e745",
-            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
-            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
-            "updated_at": "2026-09-08T05:54:13.168Z",
-            "published_at": "2026-09-07T20:39:39.302Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-ce34d0b6e55327b5",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
-            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
-            "updated_at": "2026-09-07T18:23:55.805Z",
-            "published_at": "2026-09-07T18:23:55.805Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-67096fe077900925",
-            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
-            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
-            "updated_at": "2026-09-07T13:43:27.050Z",
-            "published_at": "2026-09-07T13:43:27.050Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-e10c23f5e37ed39e",
-            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
-            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
-            "updated_at": "2026-09-06T20:53:01.243Z",
-            "published_at": "2026-09-06T20:53:01.243Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-12f9c680daba4f09",
-            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
-            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
-            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
-            "updated_at": "2026-09-06T20:07:20.597Z",
-            "published_at": "2026-09-06T20:07:20.597Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ebecf5b3f91d490",
-            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
-            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
-            "updated_at": "2026-09-05T23:19:18.605Z",
-            "published_at": "2026-09-05T22:07:32.381Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-06476c6e980f5f47",
-            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
-            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
-            "updated_at": "2026-09-05T12:28:41.779Z",
-            "published_at": "2026-09-05T12:01:00.915Z",
-            "kind": "Kontext oder Einordnung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-07T15:04:55.000Z",
-      "published_at": "2026-09-07T13:43:48.649Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "mdr-nachrichten",
-              "mdr-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob das Wahlergebnis amtlich festgestellt wird und welche Folgen es für Gespräche und Mehrheiten hat.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "amtliche Feststellung des Ergebnisses und dokumentierte Koalitions- oder Sondierungsschritte",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-1af43c20b881d82e",
-          "announced_at": "2026-09-07T15:04:55.000Z",
-          "follow_up_date": "2026-09-15T17:10:25.881Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob die vorgeschlagene Verschiebung des MPK-Vorsitzes tatsächlich beschlossen wird.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Beschluss oder Verzicht auf die Verschiebung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-3b8e71221aac9b7c",
-          "announced_at": "2026-09-07T15:04:55.000Z",
-          "follow_up_date": "2026-09-15T17:10:25.881Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-154,wahl-560.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T15:04:55.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/video-1644892.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T18:38:06.000Z",
           "primary_source": false
         }
       ]
@@ -4550,96 +4825,6 @@
           "url": "https://www.deutschlandfunk.de/atomkraftwerk-saporischschja-ist-wieder-an-externe-stromleitung-angeschlossen-108.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T07:33:34.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-e820bef62dd96612",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e820bef62dd96612-8739d021b96d0c8d-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e820bef62dd96612-621c627f9734b869-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e820bef62dd96612-31d33dd72764fbe0-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
-      "title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
-      "source_summary": "Bei einem Angriff in Ahrensburg im Kreis Stormarn sind am Montagvormittag zwei Menschen verletzt worden. Nach Angaben der Polizei erlitt eine Frau lebensgefährliche, ein Mann leichte Verletzungen. Ein 32-jähriger Tatverdächtiger wurde festgenommen. Die Einsatzkräfte wurden kurz vor 10 Uhr in den Ostpreußenweg nahe der Innenstadt gerufen.\n\nVor Ort sicherten Kriminalpolizei und Spurensicherung Spuren und Beweismittel und stellten eine Tatwaffe sicher. Laut Polizei handelte es sich um ein langes Schwert, ähnlich einer Machete. Die Polizei teilte mit, für die Öffentlichkeit habe keine Gefahr bestanden. Die Ermittlungen laufen weiter.",
-      "summary": "In Ahrensburg sind zwei Menschen verletzt worden, ein Tatverdächtiger wurde festgenommen. Zu Ablauf und Hintergrund der Tat bleiben mehrere Punkte offen.",
-      "detail_summary": "Der berichtete Kern ist klar: In Ahrensburg wurden am Montagvormittag zwei Menschen verletzt, darunter eine Frau lebensgefährlich, und ein 32-Jähriger wurde festgenommen. Für die Einordnung zählt vor allem die unmittelbare Sicherheitslage im Ort und der laufende Ermittlungsstand. Der Wirkpfad ist zunächst operativ: Gewaltereignis, Verletzungen, Polizeieinsatz, Spurensicherung, Strafverfahren. Mögliche Folgen betreffen die Betroffenen direkt und können über Angst, medizinische Versorgung und Ermittlungsaufwand hinausreichen. Die Evidenz ist dafür aber vorläufig, weil die Meldung nur auf einer journalistischen Quelle beruht und Motive, genauer Ablauf und mögliche Vorbedingungen offen bleiben.",
-      "why_relevant": "Die Meldung beschreibt eine schwere Gewalttat mit Verletzten und einer Festnahme. Das ist als aktuelle Sicherheits- und Polizeilage von öffentlichem Interesse.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "risiko",
-          "rationale": "Die Tat hat bereits zu Verletzungen geführt; für Betroffene, Umfeld und lokale Sicherheitslage ist das unmittelbar relevant."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Es gibt keinen belastbaren Bezug zu Umwelt, Natur oder Emissionen."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Ein direkter Bezug zu demokratischen Verfahren oder Institutionen ist nicht belegt."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "kinder_jugend",
-          "beschaeftigte",
-          "kommunen"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T07:36:44.231Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T14:09:15.000Z",
-      "last_updated": "2026-09-08T07:39:26.543Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-64fb52d4ca51131651e2",
-      "case_file": null,
-      "source_published_at": "2026-09-08T06:55:02.000Z",
-      "published_at": "2026-09-08T07:39:26.543Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "ndr-info"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/angriff-mit-stichwaffe-in-ahrensburg-tatverdaechtiger-festgenommen,gewalttat-124.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T06:55:02.000Z",
           "primary_source": false
         }
       ]
