@@ -1,7 +1,122 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T21:08:48.678Z",
+  "updated_at": "2026-09-08T21:36:51.819Z",
   "stories": [
+    {
+      "story_id": "wt-5a2fe52ebad137c3",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
+      "title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
+      "source_summary": "Ein US-Berufungsgericht in Washington hat laut der vorliegenden Quelle eine Vereinbarung zwischen der Einwanderungsbehörde ICE und der Steuerbehörde IRS aus dem vergangenen Jahr für rechtswidrig erklärt. Damit soll ICE keinen Zugriff auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten.\n\nDie Quelle berichtet zudem, dass ein erstinstanzliches Urteil bestätigt wurde, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte. Offen bleibt hier, wie der Volltext des Urteils genau begründet ist und ob weitere Verfahrensschritte folgen.",
+      "summary": "Ein US-Berufungsgericht hat laut Quelle die Weitergabe sensibler Steuerdaten an ICE gestoppt. Der Fall ist für Datenschutz, Migrationsverwaltung und staatliche Zugriffsbefugnisse materiell relevant.",
+      "detail_summary": "Die Meldung beschreibt eine gerichtliche Entscheidung mit unmittelbarer Zustandsänderung: Eine zuvor bestehende oder geplante Datenweitergabe zwischen IRS und ICE soll vorerst unzulässig sein. Das ist für Betroffene, Behördenpraxis und Datenschutz relevant, weil der Zugriff auf sensible Steuerdaten begrenzt wird. Ein möglicher Wirkpfad betrifft den Schutz personenbezogener Daten und die behördliche Nutzung solcher Daten in der Migrationsdurchsetzung. Eine mögliche Folge ist eine stärkere rechtliche Hürde für ähnliche Datennutzungen; die Breite und Dauer bleiben aber offen. Belastbar ist hier nur der berichtete Kern aus einer journalistischen Quelle, nicht der Volltext des Urteils.",
+      "why_relevant": "Die Meldung betrifft eine rechtlich bindende Entscheidung mit Folgen für Datenschutz, Verwaltungspraxis und den staatlichen Zugriff auf sensible Daten.",
+      "topic": [
+        "Finanzen"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn die Weitergabe tatsächlich untersagt bleibt, stärkt das den Schutz persönlicher Daten und begrenzt behördliche Zugriffsmöglichkeiten. Der Wirkpfad ist direkt, aber die praktische Reichweite bleibt ohne Volltext offen.",
+          "positive_path": {
+            "mechanism": "Begrenzter Zugriff auf sensible Steuerdaten reduziert das Risiko unzulässiger Nutzung gegen Betroffene.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein enger gerichtlicher Eingriff kann Behördenabstimmung erschweren und künftige Prüf- oder Vollzugswege verlangsamen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein belastbarer Umwelt- oder Klimawirkpfad.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Entscheidung betrifft rechtsstaatliche Kontrolle staatlicher Datenverwendung und damit die demokratische Korrekturfähigkeit von Behördenhandeln. Der Effekt ist institutionell, nicht personenbezogen.",
+          "positive_path": {
+            "mechanism": "Gerichtliche Begrenzung behördlicher Datenzugriffe stärkt Kontrolle und Bindung an Recht.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein konflikthafter Streit um Datenzugriffe kann das Vertrauen in Behördenpraxis weiter belasten, wenn Regeln unklar bleiben.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T21:36:51.819Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T21:23:47.000Z",
+      "last_updated": "2026-09-08T21:37:44.215Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-0413e758b0b10f40c221",
+      "case_file": null,
+      "source_published_at": "2026-09-08T21:23:47.000Z",
+      "published_at": "2026-09-08T21:37:44.215Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfung der Originalentscheidung und ihres genauen Tenors",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Originalurteil oder amtliche Mitteilung liegt vor",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0da65aa92968c031",
+          "announced_at": "2026-09-08T21:23:47.000Z",
+          "follow_up_date": "2026-09-15T21:37:44.215Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T21:23:47.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-ee6173fc58ca7eca",
       "title_image": {
