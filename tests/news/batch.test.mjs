@@ -26,7 +26,7 @@ function fixture() {
   };
   const client = () => createNewsBatchClient({ state, usage, now: at, authToken: 'test-only', fetchImpl, save: () => {}, canSubmit: () => allow });
   return { state, usage, remotes, methods, client,
-    advance: () => { at = '2026-09-07T12:20:00Z'; }, mode: value => { mode = value; }, disallow: () => { allow = false; },
+    advance: (value = '2026-09-07T12:20:00Z') => { at = value; }, mode: value => { mode = value; }, disallow: () => { allow = false; },
     complete: () => {
       const job = [...remotes.values()][0];
       Object.assign(job, { status: 'completed', billing_status: 'settled', usage: { input_tokens: 101, output_tokens: 77, cached_input_tokens: 10 }, estimated_cost_usd: .000208, answer: JSON.stringify({ analyses: [{ story_id: story.story_id }] }) });
@@ -76,6 +76,55 @@ test('local capacity refusals are free and do not permanently exhaust quality at
   assert.equal(f.usage.runs[0].ai.estimated_cost_usd, 0); assert.equal(f.usage.runs[0].ai.requests, 0);
   f.mode('normal'); f.advance(); await assert.rejects(f.client().call(story, args), { message: 'AI_BATCH_PENDING' });
   assert.equal(f.remotes.size, 1); assert.equal(f.usage.runs.length, 1); assert.equal(f.usage.runs[0].ai.estimated_cost_usd, .125);
+});
+test('a free refusal retried next month retains its history but starts a new cost clock', async () => {
+  const f = fixture(); f.mode('refusal'); await assert.rejects(f.client().call(story, args));
+  const row = f.usage.runs[0], original = structuredClone(row);
+  const admitted = '2026-10-01T00:05:00Z';
+  f.advance(admitted); f.mode('normal');
+  await assert.rejects(f.client().call(story, args), { message: 'AI_BATCH_PENDING' });
+  assert.equal(row.started_at, original.started_at, 'original journal date is immutable');
+  assert.equal(row.cost_started_at, admitted);
+  assert.equal(row.cost_started_at_basis, 'provider_created_at');
+  assert.equal(row.completed_at, null, 'the free refusal is not completion of the paid job');
+  assert.ok(row.batch_timing_history.some(x => x.completed_at === original.completed_at && x.requests === 0 && x.estimated_cost_usd === 0));
+  assert.equal(row.ai.estimated_cost_usd, .125);
+  f.complete(); f.advance('2026-10-01T00:25:00Z');
+  await f.client().reconcile();
+  const completed = row.completed_at, history = structuredClone(row.batch_timing_history);
+  f.advance('2026-10-01T00:45:00Z'); await f.client().call(story, args);
+  assert.equal(row.completed_at, completed, 'polling must not move completion forward');
+  assert.deepEqual(row.batch_timing_history, history);
+  assert.equal(row.ai.estimated_cost_usd, .000208);
+  assert.equal(f.usage.runs.length, 1, 'same key is charged only once');
+});
+test('metadata reconciliation repairs a legacy settled cost date without recharging or reapplying', async () => {
+  const f = fixture(); await assert.rejects(f.client().call(story, args)); f.complete(); f.advance();
+  const client = f.client(), result = await client.call(story, args); client.applied(result, { updated_stories: 1 });
+  const row = f.usage.runs[0];
+  row.started_at = '2026-09-06T23:00:00Z'; delete row.cost_started_at; delete row.cost_started_at_basis; delete row.batch_timing_history;
+  const before = structuredClone(row), jobBefore = structuredClone(f.state.batch_jobs);
+  const methodsBefore = f.methods.length;
+  await f.client().reconcile();
+  assert.equal(row.cost_started_at, now);
+  assert.equal(row.cost_started_at_basis, 'provider_created_at');
+  assert.equal(row.started_at, before.started_at);
+  assert.equal(row.completed_at, before.completed_at);
+  assert.deepEqual(row.ai, before.ai); assert.deepEqual(row.counts, before.counts);
+  assert.equal(row.publication_applied_at, before.publication_applied_at);
+  assert.deepEqual(f.state.batch_jobs, jobBefore, 'metadata repair cannot mutate article application state');
+  assert.deepEqual(f.methods.slice(methodsBefore), ['GET'], 'only the existing metadata list is needed');
+  assert.equal(row.batch_timing_history.length, 1);
+  const repaired = structuredClone(row); await f.client().reconcile(); assert.deepEqual(row, repaired);
+});
+test('cost dates cannot be inferred from malformed or foreign recovery metadata', async () => {
+  for (const change of [{ story_id: 'foreign' }, { fingerprint: 'b'.repeat(64) }, { prompt_hash: 'b'.repeat(64) }, { kind: 'editorial_background' }, { attempt: 2 }, { processing_mode: 'sync' }, { created_at: 'invalid' }, { created_at: '2099-01-01T00:00:00Z' }]) {
+    const f = fixture(); await assert.rejects(f.client().call(story, args)); f.complete(); f.advance();
+    const client = f.client(), result = await client.call(story, args); client.applied(result, {});
+    const row = f.usage.runs[0]; delete row.cost_started_at; delete row.cost_started_at_basis; delete row.batch_timing_history;
+    Object.assign([...f.remotes.values()][0], change);
+    const before = structuredClone(row); await f.client().reconcile(); assert.deepEqual(row, before, JSON.stringify(change));
+  }
 });
 test('missing authentication never creates a phantom paid reservation', async () => {
   const state = {}, usage = { runs: [] };

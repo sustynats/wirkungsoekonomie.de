@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { operatingCostSummary } from '../../scripts/news/operating-cost.mjs';
+import { monthlyUsage } from '../../scripts/news/lib.mjs';
+import { aiRequestsInWindow, retainUsageHistory } from '../../scripts/news/run.mjs';
 
 const start = '2026-09-06T06:00:00Z';
 const now = '2026-09-06T07:00:00Z';
@@ -87,4 +89,30 @@ test('a zero-request capacity refusal is not a completed provider job and never 
   assert.equal(result.total.estimated_cost_usd, .016);
   assert.equal(result.batch.settled_cost_usd, .016);
   assert.deepEqual(rows, before);
+});
+
+test('Batch cost windows and budget months follow admission, not an earlier free refusal', () => {
+  const admitted = '2026-10-01T00:05:00Z', checked = '2026-10-01T00:30:00Z';
+  const batch = { ...run('media-backfill-batch-retried', .006), started_at: '2026-09-30T20:00:00Z',
+    cost_started_at: admitted, cost_started_at_basis: 'provider_created_at',
+    ai: { requests: 1, processing_mode: 'batch', estimated_cost_usd: .006, token_source: 'batch_provider_usage' } };
+  const news = { ...run('news-in-october', .03, 1), started_at: admitted, cost_started_at: '2026-09-01T00:00:00Z' };
+  const usage = { runs: [batch, news] }, before = structuredClone(usage);
+  assert.equal(operatingCostSummary(usage, admitted, { rate_date: '2026-09-30', rate_usd_per_eur: 1.19 }, checked).batch.settled_cost_usd, .006);
+  assert.equal(operatingCostSummary(usage, '2026-09-30T00:00:00Z', fx, '2026-09-30T23:59:59Z').batch.runs, 0);
+  assert.equal(monthlyUsage(usage, '2026-10'), .036);
+  assert.equal(monthlyUsage(usage, '2026-09'), 0);
+  assert.equal(aiRequestsInWindow(usage, checked), 2, 'newly accepted Batch calls count against the current hourly cap');
+  const old = Array.from({ length: 450 }, (_, i) => ({ ...run('old-' + i, 0), started_at: '2026-09-01T00:00:00Z' }));
+  assert.ok(retainUsageHistory([batch, ...old, news], checked).includes(batch), 'current-month costs are never pruned as old attempts');
+  assert.deepEqual(usage, before);
+});
+
+test('legacy, invalid and untrusted cost dates fall back without changing the ledger', () => {
+  for (const fields of [{}, { cost_started_at: 'invalid', cost_started_at_basis: 'provider_created_at' },
+    { cost_started_at: '2026-10-01T00:00:00Z', cost_started_at_basis: 'model_answer' }]) {
+    const batch = { ...run('batch-legacy', .006), ...fields, ai: { requests: 1, processing_mode: 'batch', estimated_cost_usd: .006, token_source: 'batch_provider_usage' } };
+    assert.equal(operatingCostSummary({ runs: [batch] }, start, fx, now).batch.settled_cost_usd, .006);
+    assert.equal(monthlyUsage({ runs: [batch] }, '2026-09'), .006);
+  }
 });

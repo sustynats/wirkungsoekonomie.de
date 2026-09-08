@@ -1,8 +1,94 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T00:52:14.401Z",
+  "updated_at": "2026-09-08T05:25:44.347Z",
   "candidates": [
+    {
+      "story_id": "wt-de413d33343f350b",
+      "story_slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
+      "story_title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 51,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 8,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "11f50deb25a1b01e51b0ef684201e4cc6dcb708111c8fd7f40f7dad9adc97845",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-6fc066364494ba73",
+      "story_slug": "ukraine-news-ukrainischer-generalstaatsanwalt-tritt-nach-korruptionsvorwurfen-zuruck-94ba73",
+      "story_title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
+      "editorial_analysis_score": 73,
+      "analysis_gain": 53,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 0,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "5bb7d32b750cef0f6e1a26dc912b0b8479d4aaff49f436af09496646a4841659",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-7b385f58748f3d32",
       "story_slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
@@ -23127,20 +23213,916 @@
           ]
         }
       ]
+    },
+    {
+      "analysis_id": "woek-analysis-3988abd77b8d",
+      "story_id": "wt-8802c617d5bb3e85",
+      "related_story_ids": [
+        "wt-8802c617d5bb3e85"
+      ],
+      "related_case_id": null,
+      "slug": "kiew-unter-beschuss-was-die-ruckkehr-der-angriffe-fur-sicherheit-resilienz-und-pol-3988ab",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "6268c1bfa224bdd09f3817521001cfd1a7cfbb345ef91dc1832f3b72ff3ea28f",
+      "candidate_score": 72,
+      "analysis_gain_score": 52,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-08T01:52:42.101Z",
+      "updated_at": "2026-09-08T01:52:42.101Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet die erneute Angriffswelle auf Kiew systemisch für Sicherheit, Resilienz und politische Handlungsfähigkeit – über die reine Lagebeschreibung hinaus?",
+      "analysis_type": "case_analysis",
+      "title": "Kiew unter Beschuss: Was die Rückkehr der Angriffe für Sicherheit, Resilienz und Politik bedeutet",
+      "subtitle": "Die neue Nachtattacke ist mehr als eine weitere Kriegsnachricht: Sie trifft Schutz, Alltag und staatliche Funktionsfähigkeit gleichzeitig.",
+      "teaser": "Nach einer dreitägigen Pause hat Russland laut Deutschlandfunk die Angriffe auf Kiew wieder aufgenommen. Der Befund zeigt einen klaren Wirkpfad: akute Gefahr, Belastung von Schutzstrukturen und zusätzlicher Druck auf die Hauptstadt als politisches Zentrum.",
+      "seo_description": "Kiew erneut unter Beschuss: Analyse der Angriffswirkung auf Sicherheit, Resilienz und politische Handlungsfähigkeit in der ukrainischen Hauptstadt.",
+      "additional_value": "Der Beitrag trennt die konkrete Lage von der systemischen Bedeutung. Er zeigt, warum der Angriff auf eine Hauptstadt nicht nur einzelne Schäden erzeugt, sondern Sicherheitskaskaden, Schutzbedarf und institutionellen Druck verstärkt – und wo die Evidenz dafür endet.",
+      "research_summary": "Belegt ist nach den gelieferten Quellen, dass Russland die Luftangriffe auf Kiew nach einer dreitägigen Pause wieder aufgenommen hat. Genannt werden Drohnenangriffe auf zwei Stadtbezirke, ballistische Raketen, beschädigte Wohngebäude und der Aufruf der Militärverwaltung, Schutzräume aufzusuchen. Ebenfalls belegt ist, dass russische und ukrainische Angriffe sich in der Kriegslage fortsetzen und dass zuvor US-Vermittler in Kiew und Moskau erwartet beziehungsweise eingetroffen waren. Nicht belegt ist in der gelieferten Lage der genaue Schadensumfang, die Zahl von Verletzten oder Toten sowie eine belastbare Einordnung der russischen Begründung zur Pause. Die Analyse bleibt deshalb bei den Wirkpfaden, die aus den Quellen direkt oder plausibel ableitbar sind.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Eine Nacht, die den Alltag in Kiew sofort verändert",
+          "paragraphs": [
+            "Konkret ist zuerst die Veränderung für Menschen vor Ort: Die Luftangriffe auf Kiew wurden nach einer dreitägigen Pause wieder aufgenommen. Die Quelle nennt Drohnenangriffe auf zwei Stadtbezirke, ballistische Raketen und beschädigte Wohngebäude. Die Militärverwaltung rief die Einwohner auf, Schutzräume aufzusuchen. Das ist keine abstrakte Konfliktmeldung, sondern eine unmittelbare Zustandsänderung für Zivilbevölkerung, Rettungskräfte und Verwaltung.",
+            "Für die Einordnung wichtig ist die Systemgrenze: Belegt ist die Lage in der Hauptstadt, nicht der gesamte Kriegsverlauf. Kiew ist aber ein politisches und funktionales Zentrum. Darum wirken Angriffe dort anders als an einem beliebigen Ort. Sie treffen nicht nur einzelne Häuser, sondern zugleich Schutzlogik, Mobilität, Versorgung und die Wahrnehmung von Handlungsfähigkeit."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Angriffe treffen Wohngebiete und Stadtbezirke in Kiew.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "wenn die gemeldeten Angriffe tatsächlich wie beschrieben stattgefunden haben",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Bewohnerinnen und Bewohner müssen Schutzräume aufsuchen; Alltag und Bewegung werden unterbrochen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei aktiver Luftgefahr und Warnlage",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Wohngebäude und städtische Funktionen werden zusätzlich belastet; Reparatur- und Einsatzbedarf steigen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "wenn Beschädigungen an Infrastruktur und Wohnraum eintreten",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Die Hauptstadt gerät unter Druck, weil Schutz, Verwaltung und öffentliche Ruhe gleichzeitig gefragt sind.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei wiederholten Angriffen auf das politische Zentrum",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+                  "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "system",
+          "title": "Systemisch: Warum Angriffe auf eine Hauptstadt eine zweite Wirkungsebene haben",
+          "paragraphs": [
+            "Der zusätzliche systemische Zusammenhang liegt in der Kopplung mehrerer Teilsysteme. Ein Angriff auf Kiew betrifft nicht nur militärische Ziele oder einzelne Häuser. Er koppelt Sicherheitslage, zivile Resilienz, Verwaltung und öffentliche Kommunikation. Das ist Wirkungsordnung eins: unmittelbare Gefährdung und Sachschäden. Wirkungsordnung zwei: Belastung von Schutzdiensten, Notfallorganisation und Alltagsinfrastruktur. Wirkungsordnung drei: anhaltender Druck auf Resilienz, Wiederaufbau und politisches Vertrauen in Handlungsfähigkeit.",
+            "Genau hier entsteht der Unterschied zwischen Nachricht und Analyse. Reichweite allein wäre noch keine Wirkung. Wir sehen hier aber eine tatsächliche Zustandsveränderung: Menschen werden in Schutzräume verwiesen, Wohngebäude werden beschädigt, Behörden müssen reagieren. Die Quelle belegt keine exakten Zahlen, aber sie belegt den Wirkpfad. In einer Hauptstadt ist dieser Pfad stärker systemrelevant als in einer isolierten Randlage."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Ein Angriff erzeugt sofortige Gefahr und Schäden vor Ort.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei bestätigter Luftattacke auf städtische Ziele",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Schutzräume, Warnsysteme und Rettung werden aktiviert.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "wenn die Behörden auf Luftgefahr reagieren",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Zivile Abläufe, Versorgung und Verwaltung geraten unter Zusatzlast.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei wiederholten Angriffen und beschädigten Gebäuden",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Resilienz wird nicht zerstört, aber härter beansprucht; der Wiederaufbaubedarf wächst.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "wenn Angriffe fortgesetzt werden",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: die drei Perspektiven mit unterschiedlicher Evidenz",
+          "paragraphs": [
+            "Für den Menschen ist die Wirkung am klarsten. Die Sicherheitslage verschlechtert sich, Schutzbedarf steigt, und der Alltag wird unterbrochen. Das ist ein negativer Pfad mit hoher Relevanz und unmittelbarer Evidenz. Für den Planeten trägt das Material kaum etwas aus. Die Quellen nennen keine Umweltfolgen; mögliche Emissionen, Trümmer oder Energieeffekte wären hier bloße Vermutung und bleiben offen. Für die Demokratie ist die Lage indirekter, aber nicht unbedeutend: Eine Hauptstadt unter Angriff erhöht den Druck auf staatliche Schutz- und Kommunikationsfähigkeit. Das ist kein automatischer Demokratieverlust, aber ein Belastungspfad für öffentliche Ordnung und institutionelle Resilienz.",
+            "Wichtig ist die Trennung von Schutzplanken und Gegenwirkung. Die Aufforderung, Schutzräume aufzusuchen, ist eine Schutzmaßnahme. Sie begrenzt Schäden, ersetzt aber keine positive Gegenwirkung. Ebenso ist die bloße Präsenz von US-Vermittlern kein Wirkungsnachweis für eine Deeskalation. In der Logik der Wirkungsökonomie bleibt die Richtung deshalb negativ für Sicherheit, offen für politische Folgewirkungen und unbelegt für eine direkte planetare Wirkung."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b",
+            "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Menschen müssen sich vor Luftangriffen schützen.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei aktiver Luftgefahr in bewohnten Gebieten",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Behörden und Rettungskräfte müssen schneller reagieren und koordinieren.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "wenn Warnungen und Schäden zusammenkommen",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Die Hauptstadt wird als politisches Zentrum zusätzlich belastet.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei wiederholten Angriffen",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+                  "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Demokratische Handlungsfähigkeit steht unter Stress, ohne dass daraus allein ein Regimeeffekt folgt.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "wenn Schutz und Kommunikation dauerhaft überlastet werden",
+                "source_ids": []
+              }
+            ]
+          }
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen: Vom Einschlag zur politischen Nebenwirkung",
+          "paragraphs": [
+            "Die erste Ordnung ist die direkt sichtbare: Drohnen, Raketen, beschädigte Gebäude, Schutzsuche. Die zweite Ordnung folgt aus der Reaktion darauf: Einsatzkräfte werden gebunden, Abläufe werden unterbrochen, Reparaturen beginnen. Die dritte Ordnung ist systemisch und zeitverzögert: Wiederholte Angriffe schwächen Resilienz, erhöhen Kosten und können die Wahrnehmung der staatlichen Kontrolle in der Hauptstadt verschieben.",
+            "Die Quellen liefern für die dritte Ordnung noch keinen harten Beleg im Sinne einer bereits eingetretenen politischen Veränderung. Aber der Pfad ist plausibel, weil er an bekannte Kopplungen anschließt: Sicherheit beeinflusst Mobilität, Mobilität beeinflusst Versorgung, Versorgung beeinflusst Stabilität. Daraus folgt nicht automatisch ein Verhandlungseffekt oder ein diplomatischer Durchbruch. Es bleibt ein Wirkpotenzial, kein Wirknachweis für die höhere Ordnung."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Angriff trifft Stadtgebiet und Wohngebäude.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei bestätigter Luftattacke",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Schutz und Rettung werden aktiviert, Schäden müssen behandelt werden.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "wenn Gebäude und Bevölkerung betroffen sind",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Die Stadt bleibt unter zusätzlichem Druck, obwohl staatliche Reaktion weiterläuft.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei wiederholter Angriffslage",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Mögliche politische und diplomatische Folgewirkungen bleiben offen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "solange keine belastbaren Folgequellen dazu vorliegen",
+                "source_ids": [
+                  "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Schutzräume helfen, aber sie heben die Belastung nicht auf",
+          "paragraphs": [
+            "Der Aufruf der Militärverwaltung, Schutzräume aufzusuchen, ist ein wichtiger Hinweis auf vorhandene Reaktionsfähigkeit. Er zeigt: Es gibt eine Schutzlogik, die aktiviert werden kann. Das ist eine Grenze des Schadens, kein Beweis für geringe Wirkung. Gerade in einem Umfeld wiederholter Angriffe kann eine funktionierende Warn- und Schutzkette zwar Leben schützen, aber sie macht die Lage nicht harmlos.",
+            "Für die Bewertung zählt deshalb die Differenz zwischen Schutz und Entlastung. Schutzraumaufrufe senken das unmittelbare Risiko, solange sie rechtzeitig ankommen und die Menschen sie erreichen können. Sie verhindern aber nicht die Störung des öffentlichen Lebens, den Stress für Familien oder den Reparaturbedarf. Barrierefreiheit und erreichbare Hilfe bleiben als Prüfpunkt offen, weil die Quellen dazu nichts sagen."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Behörden warnen und rufen Schutzräume auf.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "mixed",
+                "condition": "bei Luftgefahr und erreichbarer Warnung",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Menschen können unmittelbaren Schaden vermeiden oder verringern.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "wenn Schutzräume zugänglich und rechtzeitig erreichbar sind",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Trotzdem bleibt der Alltag gestört und die Belastung des Systems hoch.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei fortgesetzten Angriffen",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Resilienz wird getestet, nicht automatisch widerlegt.",
+                "status": "scenario",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "solange kein längerfristiger Ausfall belegt ist",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was offen bleibt, ist für die Bewertung entscheidend",
+          "paragraphs": [
+            "Offen bleibt zuerst der genaue Schaden. Die gelieferte Quelle nennt beschädigte Wohngebäude, aber keine Zahlen zu Verletzten, Toten oder zur Höhe der Zerstörung. Offen bleibt auch die Frage, wie belastbar die russische Darstellung zur Beendigung der Angriffspause ist. Die Meldung referiert eine Tass-Darstellung, wonach Putin die Pause beendet habe und dies mit dem Aufenthalt von US-Vermittlern in Moskau und Kiew zusammenhänge. Das ist als zugeschriebene Deutung zu behandeln, nicht als gesicherter Hintergrund.",
+            "Für die Analyse heißt das: Der Befund ist stark genug für einen negativen Wirkpfad, aber zu schwach für eine harte Aussage über Ausmaß, strategische Absicht oder diplomatische Folgen. Die Quellenlage trägt deshalb keine Überinterpretation. Sie trägt den Befund einer erneuten, konkret benannten Angriffshandlung mit unmittelbaren Schutzfolgen."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Angriff ist berichtet, aber der Umfang bleibt unbeziffert.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "weil die Quelle keine Schadenszahlen nennt",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Die unmittelbare Gefährdung ist dennoch plausibel und belegt genug für die Lagebewertung.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei Angriffen auf bewohnte Stadtbezirke",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Strategische Absicht und diplomatische Wirkung bleiben offen.",
+                "status": "scenario",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "ohne weitere unabhängige Folgequellen",
+                "source_ids": [
+                  "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Die richtige Schlussfolgerung ist Vorsicht, nicht Beliebigkeit.",
+                "status": "analytical_inference",
+                "relation": "scope",
+                "direction": "mixed",
+                "condition": "weil Unsicherheit die Wirkung nicht aufhebt, sondern eingrenzt",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtung: Worauf es in den nächsten Meldungen ankommt",
+          "paragraphs": [
+            "Entscheidend sind drei Beobachtungspunkte: Gibt es unabhängige Bestätigungen zu Opfern und Schäden? Kommen Angaben zu Ausfällen bei Versorgung, Verkehr oder Verwaltung? Zeigen Folgequellen, dass die wieder aufgenommenen Angriffe das diplomatische Umfeld tatsächlich verändern? Erst dann ließe sich aus dem offenen Wirkpotenzial eine belastbarere Systemwirkung ableiten.",
+            "Solange diese Punkte fehlen, bleibt der redaktionell saubere Befund knapp: Die Angriffe auf Kiew sind eine konkrete negative Zustandsänderung mit hoher Relevanz für Schutz und Resilienz. Der Schritt zur höheren politischen Wirkung ist möglich, aber noch nicht belegt."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Folgemeldungen bestätigen oder präzisieren Schäden und Opfer.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "wenn unabhängige Quellen nachreichen",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Dann lässt sich der tatsächliche Schaden besser einordnen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "nur bei belastbaren Zusatzquellen",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Erst danach ist eine robustere Aussage zu politischer oder diplomatischer Wirkung möglich.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "wenn die höheren Ordnungen belegt werden",
+                "source_ids": [
+                  "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Ein Angriff auf Kiew ist kein bloßer Frontbericht",
+          "paragraphs": [
+            "Mein Befund aus der Quellenlage ist klar: Die erneuten Angriffe auf Kiew erzeugen eine negative Zustandsänderung mit direkter Wirkung auf Sicherheit, Schutzbedarf und städtische Funktionsfähigkeit. Der systemische Zusatznutzen dieser Analyse liegt darin, den zweiten und dritten Effekt mitzudenken: Wer die Hauptstadt trifft, trifft auch Reaktionsfähigkeit, öffentliche Ruhe und das Gefühl, dass der Staat seine Mitte schützen kann. Das ist kein automatisch politischer Durchbruch, aber ein relevanter Belastungspfad.",
+            "Die persönliche Einordnung dazu ist zurückhaltend, aber deutlich: Ich halte es für wichtig, solche Meldungen nicht auf den militärischen Einzelakt zu verkürzen. Gerade weil die Quellen keine Schadenszahlen liefern, sollte man nicht überdehnen. Aber man sollte auch nicht unterdehnen. Der belastbare Kern ist genug, um die Lage als Sicherheitsverschlechterung mit Resilienzfolgen zu beschreiben. Alles Weitere bleibt offen, bis die Quellenlage nachzieht."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Angriff trifft Kiew erneut nach einer Pause.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "laut der gemeldeten Nachtlage",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Schutzräume werden aufgesucht, Wohngebäude beschädigt, Alltag gestört.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "wenn die Meldung zutrifft",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Die Hauptstadt gerät unter zusätzlichen Druck auf Verwaltung und Resilienz.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "bei wiederholten Angriffen",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+                  "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Eine weitergehende politische oder diplomatische Wirkung bleibt offen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "ohne zusätzliche belastbare Folgequellen",
+                "source_ids": [
+                  "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Russland hat die Luftangriffe auf Kiew nach einer dreitägigen Pause in der Nacht wieder aufgenommen.",
+          "type": "fact",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Genaues Ausmaß und unabhängige Bestätigung der Details sind in der gelieferten Quellenlage offen.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Die Meldung nennt Angriffe auf zwei Stadtbezirke mit Drohnen, ballistische Raketen und beschädigte Wohngebäude.",
+          "type": "observation",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Die Quelle nennt keine Zahlen zu Schäden oder Opfern.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Der Aufruf der Militärverwaltung zum Aufsuchen von Schutzräumen zeigt eine aktivierte Schutzlogik.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Wirksamkeit der Schutzmaßnahme ist nicht belegt, nur ihre Anordnung.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Angriffe auf die Hauptstadt koppeln unmittelbare Gefährdung mit Belastung von Verwaltung und Resilienz.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die höhere Systemwirkung ist plausibel, aber in der Quellenlage nicht mit Kennzahlen belegt.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Eine konkrete demokratische Folgewirkung ist aus der Quellenlage nicht direkt belegt, aber als Belastungspfad offen.",
+          "type": "impact_potential",
+          "source_ids": [
+            "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1"
+          ],
+          "evidence_level": "low",
+          "data_status": "open",
+          "uncertainty": "Es gibt keine belastbare Folgequelle zu institutionellen oder politischen Effekten.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Die russische Begründung zur Beendigung der Angriffspause bleibt als zugeschriebene Darstellung einer dritten Seite offen.",
+          "type": "attribution",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "medium",
+          "data_status": "attributed",
+          "uncertainty": "Die Meldung referiert diese Erklärung, ohne sie unabhängig zu belegen.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Für den Planeten ergibt sich aus den gelieferten Quellen kein eigenständiger Wirkpfad.",
+          "type": "woek_definition",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "open",
+          "data_status": "open",
+          "uncertainty": "Mögliche Umweltfolgen werden in den Quellen nicht beschrieben.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Die erneute Beschusslage ist eine negative Zustandsänderung für Sicherheit und Schutzbedarf in Kiew.",
+          "type": "observed_impact",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die genaue Schadenshöhe bleibt offen, die Richtung der Veränderung ist jedoch klar.",
+          "date": "2026-09-08"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Die Quellenlage nennt keine Opferzahlen und keine bezifferten Schäden.",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "effect_on_assessment": "Begrenzt die Stärke der Aussage; der negative Wirkpfad bleibt, aber die Größenordnung bleibt offen."
+        },
+        {
+          "finding": "Die diplomatische Einordnung zur Rolle der US-Vermittler ist nur als zugeschriebene Darstellung berichtet, nicht als gesicherte Folge.",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "effect_on_assessment": "Verhindert eine harte Aussage über politische Absichten oder einen unmittelbaren Verhandlungseffekt."
+        },
+        {
+          "finding": "Die Lage meldet fortgesetzte gegenseitige Angriffe, nicht einen nachweisbaren strategischen Wendepunkt.",
+          "source_ids": [
+            "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+          ],
+          "effect_on_assessment": "Spricht gegen eine Überdeutung der Nachtmeldung als bereits eingetretene Trendwende."
+        }
+      ],
+      "editorial_rules_version": "2.0",
+      "executive_finding": "Die neue Angriffswelle auf Kiew ist mehr als ein Frontbericht: Sie verschlechtert direkt die Sicherheitslage, zwingt Menschen in Schutzräume und belastet Wohnraum sowie städtische Abläufe. Weil Kiew als Hauptstadt systemrelevant ist, kann der Schaden über den Ort hinaus auf Resilienz und Verwaltung wirken. Der wichtigste Vorbehalt bleibt: Die Quellen nennen keine Opferzahlen und keine genaue Schadenshöhe. Die negative Richtung ist klar, die Größenordnung und jede politische Folgewirkung bleiben offen.",
+      "subject_dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "rationale": "Die Angriffe betreffen Menschen in bewohnten Stadtbezirken unmittelbar; Schutzräume werden aufgesucht, Wohngebäude beschädigt.",
+          "implementation_status": "implemented",
+          "likelihood": "observed",
+          "direction": "negative",
+          "magnitude": "high",
+          "evidence": "established"
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Die Quellen nennen keine Umwelt- oder Klimafolgen; ein Umweltpfad ist nicht belegt.",
+          "implementation_status": "open",
+          "likelihood": "open",
+          "direction": "open",
+          "magnitude": "open",
+          "evidence": "open"
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Als Hauptstadt unter Druck kann Kiews Schutz- und Verwaltungskapazität belastet werden; ein direkter Demokratieeffekt ist aber nicht belegt.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "negative",
+          "magnitude": "medium",
+          "evidence": "plausible_path"
+        }
+      },
+      "assessment_context": "observed",
+      "assessment_condition": "Die Bewertung gilt unter der Bedingung, dass die in der Quelle berichteten Angriffe auf Kiew tatsächlich stattgefunden haben; weitergehende Systemwirkungen bleiben ohne Folgequellen offen.",
+      "author_perspective": {
+        "paragraphs": [
+          "Ich lese diese Lage als ernste Sicherheitsverschlechterung, nicht als bloße Wiederholung einer bekannten Kriegsnachricht. Gerade die Kombination aus Angriff, Schutzraumaufruf und beschädigten Wohngebäuden zeigt für mich, wie schnell aus einem militärischen Ereignis ein ziviler Belastungstest wird. Ich halte es deshalb für richtig, den Fokus nicht auf große Deutungen zu legen, sondern auf den konkreten Wirkpfad: Wer wird unmittelbar getroffen, was muss jetzt geschützt werden, und wo bleibt die Quelle noch still? Gleichzeitig bleibe ich bewusst vorsichtig. Ohne Zahlen zu Opfern und Schäden will ich den Befund nicht aufblasen. Aber ich will ihn auch nicht kleinreden."
+        ],
+        "claim_indices": [
+          0
+        ],
+        "origin": "generated_from_analysis"
+      },
+      "positive_path_checks": [
+        {
+          "measure": "Schutzräume aufsuchen und Warnketten aktivieren",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "mechanism": "Frühe Warnung und räumlicher Schutz können unmittelbare Verletzungsrisiken senken, obwohl sie die Angriffswirkung nicht aufheben."
+        }
+      ],
+      "counter_evidence_search": {
+        "checked": true,
+        "result": "Gefunden wurden vor allem Grenzen: keine Opferzahlen, keine Schadenshöhe, keine unabhängige Bestätigung der russischen Begründung zur Angriffspause und keine belastbare Folgequelle zu diplomatischen Effekten."
+      },
+      "editorial_quality": {
+        "false_balance_checked": true,
+        "concrete_positive_paths_only": true,
+        "likelihood_direction_separated": true,
+        "safeguards_as_limits": true,
+        "evidence_bound_judgment": true,
+        "reader_takeaway_clear": true,
+        "concrete_language_checked": true,
+        "visuals_explain_mechanism": true,
+        "author_perspective_separated": true
+      },
+      "what_changes_the_assessment": [
+        "Unabhängige Bestätigungen zu Opfern, Schäden oder Ausfällen in Kiew",
+        "Folgequellen zu Reaktionen der ukrainischen Behörden, der Zivilgesellschaft oder internationaler Vermittler",
+        "Belastbare Hinweise darauf, dass die erneuten Angriffe die Verhandlungen oder die politische Handlungsfähigkeit messbar verändern"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Kiew unter Beschuss: Was die Rückkehr der Angriffe für Sicherheit, Resilienz und Politik bedeutet",
+        "recommended_summary": "Die erneuten Angriffe auf Kiew erzeugen eine klare negative Zustandsänderung: Schutzbedarf steigt, Wohngebäude werden beschädigt, die Hauptstadt gerät unter zusätzlichen Druck. Politische Folgewirkungen bleiben offen.",
+        "recommended_meta_description": "Kiew erneut unter Beschuss: Analyse der Angriffswirkung auf Sicherheit, Resilienz und politische Handlungsfähigkeit in der ukrainischen Hauptstadt."
+      },
+      "reading_time_minutes": 7,
+      "source_snapshot": [
+        {
+          "source_id": "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - Russland setzt Angriffe auf Kiew nach dreitägiger Pause fort",
+          "url": "https://www.deutschlandfunk.de/russland-setzt-angriffe-auf-kiew-nach-dreitaegiger-pause-fort-100.html",
+          "published_at": "2026-09-08T01:38:07.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Krieg gegen die Ukraine - Russland und die Ukraine setzen gegenseitige Angriffe fort",
+          "url": "https://www.deutschlandfunk.de/russland-und-die-ukraine-setzen-gegenseitige-angriffe-fort-102.html",
+          "published_at": "2026-09-07T13:15:50.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
+          "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
+          "published_at": "2026-09-06T10:29:20.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "0da6428a4aecf8331ecf16cd8d4ad99224fc940538ecfe5747a46e11069b7d64",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Krieg in der Ukraine - Drohne trifft ukrainischen Inlandsgeheimdienst SBU",
+          "url": "https://www.deutschlandfunk.de/drohne-trifft-ukrainischen-inlandsgeheimdienst-sbu-102.html",
+          "published_at": "2026-09-04T21:29:55.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Ukraine-Krieg: US-Vermittler Witkoff und Kushner in Kiew eingetroffen",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-witkoff-und-kushner-erstmals-in-kiew-38212846.html",
+          "published_at": "2026-09-06T14:56:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
+          "published_at": "2026-09-04T21:29:55.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
+          "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
+          "published_at": "2026-09-05T11:18:53.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T01:52:42.101Z",
+          "source_fingerprint": "6268c1bfa224bdd09f3817521001cfd1a7cfbb345ef91dc1832f3b72ff3ea28f",
+          "title": "Kiew unter Beschuss: Was die Rückkehr der Angriffe für Sicherheit, Resilienz und Politik bedeutet",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Russland hat die Luftangriffe auf Kiew nach einer dreitägigen Pause in der Nacht wieder aufgenommen.",
+              "type": "fact",
+              "source_ids": [
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Genaues Ausmaß und unabhängige Bestätigung der Details sind in der gelieferten Quellenlage offen.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Die Meldung nennt Angriffe auf zwei Stadtbezirke mit Drohnen, ballistische Raketen und beschädigte Wohngebäude.",
+              "type": "observation",
+              "source_ids": [
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Die Quelle nennt keine Zahlen zu Schäden oder Opfern.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Der Aufruf der Militärverwaltung zum Aufsuchen von Schutzräumen zeigt eine aktivierte Schutzlogik.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Wirksamkeit der Schutzmaßnahme ist nicht belegt, nur ihre Anordnung.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Angriffe auf die Hauptstadt koppeln unmittelbare Gefährdung mit Belastung von Verwaltung und Resilienz.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+                "22d13568a90fe1fc35c1ec5f87fd38d466300ff02e2bf9b867b13be2da069e34"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die höhere Systemwirkung ist plausibel, aber in der Quellenlage nicht mit Kennzahlen belegt.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Eine konkrete demokratische Folgewirkung ist aus der Quellenlage nicht direkt belegt, aber als Belastungspfad offen.",
+              "type": "impact_potential",
+              "source_ids": [
+                "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1"
+              ],
+              "evidence_level": "low",
+              "data_status": "open",
+              "uncertainty": "Es gibt keine belastbare Folgequelle zu institutionellen oder politischen Effekten.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Die russische Begründung zur Beendigung der Angriffspause bleibt als zugeschriebene Darstellung einer dritten Seite offen.",
+              "type": "attribution",
+              "source_ids": [
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "medium",
+              "data_status": "attributed",
+              "uncertainty": "Die Meldung referiert diese Erklärung, ohne sie unabhängig zu belegen.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Für den Planeten ergibt sich aus den gelieferten Quellen kein eigenständiger Wirkpfad.",
+              "type": "woek_definition",
+              "source_ids": [
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "open",
+              "data_status": "open",
+              "uncertainty": "Mögliche Umweltfolgen werden in den Quellen nicht beschrieben.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Die erneute Beschusslage ist eine negative Zustandsänderung für Sicherheit und Schutzbedarf in Kiew.",
+              "type": "observed_impact",
+              "source_ids": [
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die genaue Schadenshöhe bleibt offen, die Richtung der Veränderung ist jedoch klar.",
+              "date": "2026-09-08"
+            }
+          ]
+        }
+      ]
     }
   ],
   "retry_state": {
     "wt-1fbb056ccaaf351d": {
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
-      "attempts": 8,
-      "last_attempt_at": "2026-09-07T13:39:59.241Z",
-      "next_attempt_at": "2026-09-08T01:39:59.241Z",
+      "attempts": 9,
+      "last_attempt_at": "2026-09-08T03:06:49.788Z",
+      "next_attempt_at": "2026-09-08T15:06:49.788Z",
       "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "AI_PROVIDER_OUTPUT_INVALID"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_UNSICHERHEIT,EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-f7d7115a53ff2c2f": {
       "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
@@ -23159,22 +24141,20 @@
     "wt-cf03acddb911d861": {
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
       "method_version": "1.0",
-      "attempts": 5,
-      "last_attempt_at": "2026-09-07T22:51:56.422Z",
-      "next_attempt_at": "2026-09-08T02:51:56.422Z",
+      "attempts": 6,
+      "last_attempt_at": "2026-09-08T02:52:49.622Z",
+      "next_attempt_at": "2026-09-08T10:52:49.622Z",
       "quality_errors": [
-        "EDITORIAL_AUTHOR_PERSPECTIVE_REQUIRED",
-        "EDITORIAL_JOURNALISTIC_REVIEW_REQUIRED",
-        "EDITORIAL_POSITIVE_PATH_UNGROUNDED"
+        "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_AUTHOR_PERSPECTIVE_REQUIRED,EDITORIAL_JOURNALISTIC_REVIEW_REQUIRED,EDITORIAL_POSITIVE_PATH_UNGROUNDED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-1c2c187d0b858b7c": {
       "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-08T00:52:14.401Z",
-      "next_attempt_at": "2026-09-08T01:22:14.401Z",
+      "attempts": 5,
+      "last_attempt_at": "2026-09-08T04:53:44.298Z",
+      "next_attempt_at": "2026-09-08T08:53:44.298Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -23185,8 +24165,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T01:09:57.682Z",
-      "next_attempt_at": "2026-09-08T01:24:57.682Z",
+      "last_attempt_at": "2026-09-08T05:54:32.815Z",
+      "next_attempt_at": "2026-09-08T06:09:32.815Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -23196,13 +24176,38 @@
     "wt-f03755f6f6b8c3b7": {
       "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
       "method_version": "1.0",
-      "attempts": 3,
-      "last_attempt_at": "2026-09-08T00:52:14.401Z",
-      "next_attempt_at": "2026-09-08T01:52:14.401Z",
+      "attempts": 5,
+      "last_attempt_at": "2026-09-08T04:07:37.623Z",
+      "next_attempt_at": "2026-09-08T08:07:37.623Z",
       "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH"
+      ],
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH"
+    },
+    "wt-8802c617d5bb3e85": {
+      "fingerprint": "78002b1d39e5b195d6a13a3b08a9f5b28b9075f1cc6fb1df969a2b489dd9ee8f",
+      "method_version": "1.0",
+      "attempts": 3,
+      "last_attempt_at": "2026-09-08T04:24:18.284Z",
+      "next_attempt_at": "2026-09-08T05:24:18.284Z",
+      "quality_errors": [
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+    },
+    "wt-de413d33343f350b": {
+      "fingerprint": "11f50deb25a1b01e51b0ef684201e4cc6dcb708111c8fd7f40f7dad9adc97845",
+      "method_version": "1.0",
+      "attempts": 2,
+      "last_attempt_at": "2026-09-08T05:54:32.815Z",
+      "next_attempt_at": "2026-09-08T06:24:32.815Z",
+      "quality_errors": [
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_SELF_FRAME_FAILED"
+      ],
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
