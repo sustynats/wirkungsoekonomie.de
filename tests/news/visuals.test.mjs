@@ -180,7 +180,7 @@ test("Wirkpfadrichtung bleibt an den exakten Einzelpfad und gültige Belege gebu
   assert.match(html, /Richtung: Positiv/);
   assert.match(html, /Plausibler Wirkpfad/);
   assert.match(html, /Wenn die genehmigten Mittel/);
-  assert.equal((html.match(/Richtung: Offen/g) || []).length, 2);
+  assert.equal((html.match(/Richtung: Offen/g) || []).length, 0);
   for (const invalid of [{ ...assessment, path: "Quelle einer anderen Story" }, { ...assessment, order: "third_order" }, { ...assessment, claim_ids: ["fremder-claim"] }, { ...assessment, condition: "" }, { ...assessment, evidence: "observed" }, { ...assessment, direction: "neutral", evidence: "open" }]) {
     assert.equal(sanitizeVisuals({ path_directions: [invalid] }, item).visuals, null);
   }
@@ -190,10 +190,10 @@ test("Wirkpfadrichtung bleibt an den exakten Einzelpfad und gültige Belege gebu
 
 test("Historische Wirkpfade erhalten keine erfundene Richtung oder pauschale Evidenzhierarchie", () => {
   const html = renderImpactPath(story().analysis);
-  assert.equal((html.match(/Richtung: Offen/g) || []).length, 3);
+  assert.equal((html.match(/Richtung: Offen/g) || []).length, 0);
   assert.doesNotMatch(html, /Richtung: (?:Positiv|Negativ|Neutral)/);
   assert.doesNotMatch(html, /Unsicherheit größer/);
-  assert.match(html, /Ordnung zeigt, wie Folgen zusammenhängen/);
+  assert.match(html, /Ordnung zeigen unmittelbare, nachgelagerte und systemische Folgen/);
 });
 
 test("Kennzahl mit veralteter Claim-ID wird nur bei eindeutigem aktuellem Beleg neu gebunden", () => {

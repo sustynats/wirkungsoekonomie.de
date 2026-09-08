@@ -6,14 +6,16 @@ import { renderStoryVisual } from '../../scripts/news/story-visual.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { storyCard, storyPage } from '../../scripts/news/build.mjs';
 import { sanitizeAnalysisVisuals } from '../../scripts/news/run.mjs';
+import { dimensionAssessment } from '../../scripts/news/direction-assessment.mjs';
 
 const mpd = () => Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',rationale:'Der konkrete Wirkmechanismus bleibt zu prüfen.'}]));
 const statuses = html => [...html.matchAll(/class="wt-tendency [^"]+" data-direction="([^"]+)"/g)].map(match=>match[1]);
+const mixedPaths = () => ({ positive_path: { mechanism: 'Zusätzliche Beratung erleichtert den Zugang zu Hilfe.', source_ids: ['test'] }, negative_path: { mechanism: 'Gleichzeitiger Mittelentzug verkürzt die Öffnungszeiten.', source_ids: ['test'] } });
 
 test('all four directions are legible text and distinct icons, not bar colors or a hover-only hint',()=>{
   for (const [value,direction,label,icon] of [
     ['chance','positive','Positiv','tendenz-chance'],['risiko','negative','Negativ','tendenz-risiko'],
-    ['gemischt','mixed','Gemischt','tendenz-gemischt'],['offen','open','Richtung offen','offen'],
+    ['gemischt','mixed','Gegenläufige Wirkpfade','tendenz-gemischt'],['offen','open','Wirkungsrichtung unklar','offen'],
   ]) {
     const html=renderTendency(value);
     assert.match(html,new RegExp(`data-direction="${direction}"`));
@@ -28,7 +30,8 @@ test('historical tendencies are reused, never guessed from relevance, headlines,
   const analysis={...mpd(),visuals:{tendency:{human:'chance',planet:'risiko',democracy:'gemischt'}}};
   const before=JSON.stringify(analysis);
   assert.deepEqual(dimensionTendencies(analysis),{human:'chance',planet:'risiko',democracy:'gemischt'});
-  assert.deepEqual(statuses(renderDimensionMeters(analysis)),['positive','negative','mixed']);
+  assert.deepEqual(statuses(renderDimensionMeters(analysis)),['positive','negative','open']);
+  assert.match(renderDimensionMeters(analysis), /Keine belastbare Gesamtbilanz/);
   assert.equal(JSON.stringify(analysis),before);
   delete analysis.visuals;
   analysis.human.rationale='Negativ bewertetes Ereignis, ohne eigenen Tendenzbefund.';
@@ -39,6 +42,7 @@ test('historical tendencies are reused, never guessed from relevance, headlines,
 test('current base assessments take precedence over legacy visuals, including an explicit open result',()=>{
   const analysis={...mpd(),visuals:{tendency:{human:'chance',planet:'chance',democracy:'chance'}}};
   analysis.human.tendency='offen';analysis.planet.tendency='risiko';analysis.democracy.tendency='gemischt';
+  Object.assign(analysis.democracy, mixedPaths());
   assert.deepEqual(statuses(renderDimensionMeters(analysis,{tendency:analysis.visuals.tendency})),['open','negative','mixed']);
   analysis.visuals=null;
   assert.deepEqual(statuses(renderDimensionMeters(analysis)),['open','negative','mixed']);
@@ -78,7 +82,7 @@ test('retroactive rendering covers every published story without rewriting store
     for(const detail of [false,true]) {
       const html=renderStoryVisual(story,{detail});
       assert.equal(statuses(html).length,3,story.slug);
-      assert.deepEqual(statuses(html),Object.values(dimensionTendencies(story.analysis)).map(value=>({chance:'positive',risiko:'negative',gemischt:'mixed',offen:'open'}[value])));
+      assert.deepEqual(statuses(html),['human','planet','democracy'].map(key=>({chance:'positive',risiko:'negative',gemischt:'mixed',offen:'open'}[dimensionAssessment(story.analysis,key).tendency])));
       assert.match(html,/Relevanz &amp; Richtung/);
       assert.match(html,/kein Wirkungsnachweis/);
     }
@@ -90,6 +94,7 @@ test('list and both detail MPD sections show the same available finding without 
   const stories=JSON.parse(fs.readFileSync(new URL('../../data/news/stories.json',import.meta.url))).stories;
   const story=structuredClone(stories.find(story=>story.published&&story.listed!==false));
   for(const [key,tendency] of Object.entries({human:'chance',planet:'risiko',democracy:'gemischt'})) story.analysis[key].tendency=tendency;
+  Object.assign(story.analysis.democracy, mixedPaths());
   const before=JSON.stringify(story);
   assert.deepEqual(statuses(storyCard(story,0)),['positive','negative','mixed']);
   assert.deepEqual(statuses(storyPage(story)),['positive','negative','mixed','positive','negative','mixed']);

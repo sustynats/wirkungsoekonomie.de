@@ -2,37 +2,159 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T10:29:32.164Z",
-  "scanned_stories": 151,
-  "scanned_subjects": 132,
-  "editorial_candidates": 24,
-  "ready_for_research": 8,
-  "research_pending": 7,
+  "started_at": "2026-09-08T14:32:54.675Z",
+  "scanned_stories": 165,
+  "scanned_subjects": 143,
+  "editorial_candidates": 27,
+  "ready_for_research": 6,
+  "research_pending": 10,
   "retry_deferred": 5,
-  "editorial_research_sources_discovered": 34,
-  "selected": 3,
-  "editorial_research_started": 4,
+  "editorial_research_sources_discovered": 41,
+  "selected": 1,
+  "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 4,
-  "research_tokens": 28141,
-  "analysis_tokens": 24199,
-  "estimated_cost_usd": 0.125681,
-  "quality_retries": 2,
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
+  "quality_retries": 0,
   "publication_deferred": true,
-  "failed": [
+  "failed": [],
+  "candidates": [
     {
-      "story_id": "wt-b5e0a39f46388642",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T10:59:32.164Z"
+      "story_id": "wt-84ac3f26c7762712",
+      "story_slug": "milliarden-lucke-im-klimafonds-762712",
+      "story_title": "Milliarden-Lücke im Klimafonds",
+      "editorial_analysis_score": 86,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 9,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "caff2f1749f1c3a3d67256cb866b617bea4b053b01b29473f7b524a7a3a95346",
+      "status": "research_pending",
+      "analysis_id": null
     },
     {
-      "story_id": "wt-de413d33343f350b",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_TEASER_LENGTH,EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-      "next_attempt_at": "2026-09-08T10:59:32.164Z"
-    }
-  ],
-  "candidates": [
+      "story_id": "wt-db0e00874c2fe321",
+      "story_slug": "insolvenzen-firmeninsolvenzen-sinken-im-august-aber-mehr-betroffene-2fe321",
+      "story_title": "Insolvenzen: Firmeninsolvenzen sinken im August – aber mehr Betroffene",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "bff7982d4b9bd35b25b74855cf076ee66786b94a7b8906a67f312c964ac5f4e1",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-4c0a09f9ce090af7",
+      "story_slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
+      "story_title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
+      "editorial_analysis_score": 70,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "83a7b24f03424b3c098db842dec96c64b12693bd3892d5566e339c2b36dffeca",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-de413d33343f350b",
       "story_slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
@@ -71,9 +193,9 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "5ea356c73c587ffd17ac555f965fdf3fa95795addba48aa4876dfd842af02cc3",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "fingerprint": "5216043ade26f5f0909c11d727151a9d8700c107006dbff7b6cc08b4f53fa1c5",
+      "status": "published",
+      "analysis_id": "woek-analysis-58daf5723737"
     },
     {
       "story_id": "wt-6fc066364494ba73",
@@ -157,7 +279,7 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "ed1ca2b011a03d3abfd9acfe6e4b1b80d11a8cb0102ee3bfd4142f034878d76b",
+      "fingerprint": "e1b1db1771ed604af4ad505ac35099d79339d3599224ead111a589923e4b9bed",
       "status": "published",
       "analysis_id": "woek-analysis-dab9cdd59202"
     },
@@ -839,7 +961,7 @@
         "reasons": []
       },
       "fingerprint": "b3ccdb4bdc5adee6b0d6f75de828e40403e2b8523b27bc4f4722fef60686ebcb",
-      "status": "ready_for_research",
+      "status": "published",
       "analysis_id": "woek-analysis-852ebdd0a0aa"
     },
     {
@@ -1072,5 +1194,5 @@
     "attention_required": []
   },
   "batch_deferred": 1,
-  "completed_at": "2026-09-08T10:32:15.445Z"
+  "completed_at": "2026-09-08T14:33:18.667Z"
 }

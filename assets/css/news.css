@@ -270,6 +270,10 @@
 .wt-tendency__qualifier { font-weight: 550; }
 .wt-tendency--offen { border-style: dashed; background: #edf0f2; color: #425460; }
 .wt-dims__legend { margin: .65rem 0 0; color: var(--wt-muted); font-size: .8rem; line-height: 1.5; }
+.wt-dim__assessment-note { margin: .3rem 0 0; font-size: .78rem; line-height: 1.45; color: var(--wt-muted); }
+.wt-dim__paths { margin: .5rem 0 0; font-size: .85rem; }
+.wt-dim__paths dt { font-weight: 700; }
+.wt-dim__paths dd { margin: 0 0 .4rem; }
 
 .wt-tendency--chance {
   background: rgba(47, 125, 92, 0.12);
@@ -772,7 +776,8 @@
   border-color: var(--wt-green);
 }
 
-.news-card[hidden] {
+/* Pagination and filters also hide editorial analysis cards (display: grid). */
+[data-news-card][hidden] {
   display: none;
 }
 
@@ -1100,8 +1105,11 @@
 
 .news-swipe-hint { display: none; }
 
-html.news-pull-enabled,
-html.news-pull-enabled body { overscroll-behavior-y: contain; }
+/* Contain viewport overscroll, not the body's wheel-to-viewport scroll chain.
+   overflow-x:hidden makes body a vertical scroll container in Chromium even
+   when it has no vertical range. Containment there can swallow mouse wheels. */
+html.news-pull-enabled { overscroll-behavior-y: contain; }
+html.news-pull-enabled body { overscroll-behavior-y: auto; }
 
 .news-pull-refresh {
   position: fixed;
@@ -1433,14 +1441,12 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
   gap: 0.45rem;
   align-content: start;
   padding: 0.85rem 0.9rem;
-  border: 1px solid rgba(47, 125, 92, calc(0.55 - var(--wt-path-fade, 0) * 0.12));
+  border: 1px solid rgba(7, 21, 44, 0.25);
   border-radius: 8px;
-  background: rgba(47, 125, 92, calc(0.16 - var(--wt-path-fade, 0) * 0.045));
+  background: rgba(7, 21, 44, 0.035);
 }
 
-.wt-path__step[data-order="1"] { --wt-path-fade: 1; }
-.wt-path__step[data-order="2"] { --wt-path-fade: 2; }
-.wt-path__step[data-order="3"] { --wt-path-fade: 3; }
+/* Order is a causal distance, not a positive direction or an evidence score. */
 
 .wt-path__step--mechanism {
   border-color: rgba(7, 21, 44, 0.3);
@@ -1458,7 +1464,7 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
   gap: 0.4rem;
   align-items: center;
   width: fit-content;
-  color: var(--wt-green-dark);
+  color: var(--wt-navy);
   font-size: 0.72rem;
   font-weight: 850;
   letter-spacing: 0.04em;
@@ -1475,13 +1481,10 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
   height: 1.5rem;
   place-items: center;
   border-radius: 50%;
-  background: var(--wt-green);
+  background: var(--wt-navy);
   color: #fff;
   font-size: 0.78rem;
 }
-
-.wt-path__step[data-order="2"] .wt-path__badge b { background: color-mix(in srgb, var(--wt-green) 75%, #fff); }
-.wt-path__step[data-order="3"] .wt-path__badge b { background: color-mix(in srgb, var(--wt-green) 55%, #fff); color: var(--wt-green-dark); }
 
 .wt-path__legend {
   display: flex;
@@ -2137,8 +2140,8 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
     right: -0.95rem;
     width: 0.7rem;
     height: 0.7rem;
-    border-top: 2px solid rgba(47, 125, 92, 0.55);
-    border-right: 2px solid rgba(47, 125, 92, 0.55);
+    border-top: 2px solid rgba(7, 21, 44, 0.4);
+    border-right: 2px solid rgba(7, 21, 44, 0.4);
     transform: translateY(-50%) rotate(45deg);
     content: "";
   }
@@ -2166,8 +2169,8 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
     left: 1.3rem;
     width: 0.55rem;
     height: 0.55rem;
-    border-right: 2px solid rgba(47, 125, 92, 0.55);
-    border-bottom: 2px solid rgba(47, 125, 92, 0.55);
+    border-right: 2px solid rgba(7, 21, 44, 0.4);
+    border-bottom: 2px solid rgba(7, 21, 44, 0.4);
     transform: rotate(45deg);
     content: "";
   }
@@ -2258,6 +2261,7 @@ html.news-pull-enabled body { overscroll-behavior-y: contain; }
 .news-story-visual .wt-tendency--risiko { background: #482a27; color: #ffccba; border-color: #c28574; }
 .news-story-visual .wt-tendency--gemischt { background: #3c3522; color: #f1dba0; border-color: #b49c61; }
 .news-story-visual .wt-tendency--offen { background: #1b2e3b; color: #d6e0e6; border-color: #8b9ba6; }
+.news-story-visual .wt-dim__assessment-note { color: #c4d1db; }
 .news-story-visual .news-story-visual__legend { margin: .9rem 0 0; color: #c4d1db; font-size: .7rem; line-height: 1.5; }
 .news-story-visual .wt-meter { width: 100%; max-width: none; }
 .news-story-visual__chips { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .8rem; }
