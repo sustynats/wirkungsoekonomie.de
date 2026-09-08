@@ -8,16 +8,17 @@
     "queue": {
       "firstSeen": "2026-09-07T20:50:46.225Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-08T09:35:24.598Z",
-      "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-09-08T09:35:24.598Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "abae8472a3c141a066cc1c6a",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-08T10:20:41.315Z"
+    },
+    {
+      "id": "63eb9281a30f7c07cf4e7f33",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-09-08T10:20:41.315Z"
+    }
+  ],
   "dailyDate": "2026-09-08"
 }
