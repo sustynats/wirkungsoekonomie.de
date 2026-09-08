@@ -40,3 +40,11 @@ Die Änderung betrifft Darstellung, Prompt und Gates, nicht die gespeicherten Ur
 - `data/news/editorial-analyses.json`: SHA-256 `42dea0efaee540c609d38721d15bb220c4c750f12613c1bc2c1efeaacbc27f11`
 
 Automatisierte Prüfungen: Nachrichten-/Betriebsmonitor-Suite, Syntaxprüfung, Registry-/Nachrichtenvalidierung, Artikelgenerator, vorhandener Language-Lint (25 bereits bestehende Befunde, keine neuen). Browserprüfung: betroffene Detailseiten, Übersicht, Standard-/Sonderanalyse, Desktop und 320/390-Pixel-Mobile, interne Navigation und echtes Mausrad. Öffentliche Generierung über den bestehenden Pages-Releaseweg, keine Vercel-Builds.
+
+## Technische Nachkontrolle: Ausgabevorlage am selben Tag
+
+Der Produktionslauf vom 08.09.2026, 14:52 UTC, meldete unter anderem `AI_DIRECTION_MIXED_PATHS_REQUIRED`. Die Nachprüfung zeigte eine Diskrepanz: Der Regeltext und das Gate verlangten getrennte Pfade, die tatsächliche JSON-Ausgabevorlage enthielt aber weder `positive_path` noch `negative_path`. Das ist ein vermeidbarer Schemahinweisfehler, nicht der Nachweis, dass jede zurückgestellte Antwort inhaltlich veröffentlichungsfähig war. In denselben Antworten fehlten zum Teil weiterhin Zahlenbelege oder passende Textlängen.
+
+Die gemeinsame `NEWS_DIMENSION_SCHEMA` zeigt jetzt beide Pfade samt `mechanism` und `source_ids` für alle drei Dimensionen. Nur bei `gemischt` sind diese auszufüllen; sonst bleiben beide `null`. Es werden keine positiven Gegenargumente erzwungen. Das Qualitätsgate, der Quellenbezug und die Behandlung historischer Texte bleiben unverändert.
+
+Zwei neue Regressionstests prüfen die tatsächliche JSON-Vorlage mit und ohne optionale Visuals; beide scheiterten vor der Korrektur und bestehen danach. Prüfung insgesamt: 618 Nachrichtentests und 26 Betriebsmonitortests, Syntaxprüfung, Nachrichten-/Registryvalidierung und Ticker-Build erfolgreich. Der Language-Lint zeigt dieselben 25 bestehenden Befunde. Eine gleichbedeutende Straffung des Materialitäts-Regeltextes hält auch die 21-Quellen-Regression unter 39.000 Zeichen; kein Quellen-, Evidenz-, Sicherheits- oder Kostengate wurde reduziert. Keine zusätzliche kostenpflichtige Testanfrage, kein manueller Backfill, keine Änderung an Queue oder Kostendaten. Da ausschließlich die künftige Modell-Ausgabevorlage geändert wurde, bleibt die zuvor visuell geprüfte Darstellung unverändert.
