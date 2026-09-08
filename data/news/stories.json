@@ -1,8 +1,908 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-07T23:37:00.002Z",
-  "updated_at": "2026-09-07T23:52:11.826Z",
+  "public_updated_at": "2026-09-08T00:06:52.179Z",
+  "updated_at": "2026-09-08T00:06:52.179Z",
   "stories": [
+    {
+      "story_id": "wt-12227eeecd48c0b9",
+      "slug": "die-caritas-bottrop-arbeitet-gewaltvorfalle-auf-48c0b9",
+      "title": "Die Caritas Bottrop arbeitet Gewaltvorfälle auf",
+      "first_seen": "2026-09-07T11:21:08.000Z",
+      "last_updated": "2026-09-08T00:08:08.993Z",
+      "published_at": "2026-09-07T17:24:29.900Z",
+      "updated_at": "2026-09-08T00:08:08.993Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+          "title": "Die Caritas Bottrop arbeitet Gewaltvorfälle auf",
+          "summary": "In einem Kinderheim der Bottroper Caritas sollen Kinder früher Gewalt erfahren haben. Die Caritas startet die Aufarbeitung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T19:22:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803",
+          "source_item_id": "b7b63f683a674013e8bb7006b80fa1edad831b2be717911e07cb4fc7e2b9f6a2",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T19:22:40.000Z",
+          "ingested_at": "2026-09-07T23:52:11.826Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-12227eeecd48c0b9-v2-claim-1",
+          "story_id": "wt-12227eeecd48c0b9",
+          "claim": "Die Caritas Bottrop hat die Aufarbeitung von Gewaltvorwürfen in einem früheren Kinderheim gestartet.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "2b85b7b11912475d5587",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "2f32c822f1a199081830",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "b4ee4149931e1e98675d",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T00:08:08.993Z"
+        },
+        {
+          "claim_id": "wt-12227eeecd48c0b9-v2-claim-2",
+          "story_id": "wt-12227eeecd48c0b9",
+          "claim": "Die Vorwürfe beziehen sich nach Caritas-Angaben auf mögliche Gewalt in den 1960er und 1970er Jahren; aktuelle Fälle seien nicht bekannt.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "60e3ec164a0e65df17b5",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "fb5dd09a620a483cecca",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "ced1ad49ae2cf09a0c17",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T00:08:08.993Z"
+        },
+        {
+          "claim_id": "wt-12227eeecd48c0b9-v2-claim-3",
+          "story_id": "wt-12227eeecd48c0b9",
+          "claim": "Für die Studie hat die Caritas die Klinik für Forensische Psychiatrie und Psychotherapie der Universität Ulm beauftragt; mit Ergebnissen wird im Herbst 2027 gerechnet.",
+          "status": "single_source_claim",
+          "source_id": "wdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "c44972ffd5d353c5486e",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "75839fa9f65d78479420",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            },
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "excerpt_hash": "1f5c8eda6e70522f9fc8",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T00:08:08.993Z"
+        }
+      ],
+      "event_id": "event-bbc2a8844af90a5446d1",
+      "event_first_seen_at": "2026-09-07T11:37:00.106Z",
+      "event_detected_at": "2026-09-07T11:37:00.106Z",
+      "verification_started_at": "2026-09-08T00:07:56.412Z",
+      "publish_ready_at": "2026-09-08T00:08:08.993Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T00:06:52.179Z",
+        "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Mit den Ergebnissen der Studie wird im Herbst 2027 gerechnet.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": "2027-09-30",
+          "measurable_indicator": "Veröffentlichung oder belastbar angekündigte Vorlage der Studie",
+          "expected_by_evidence_hash": "f2477c4caa3a3aa0c161fe0955be855898af886d44e5c8fefd7f0247fd131e59",
+          "followup_id": "followup-8e8739b3a6722b06",
+          "announced_at": "2026-09-07T16:45:02.000Z",
+          "follow_up_date": "2027-09-30T00:00:00.000Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Studie soll den Umfang der Gewalt und die begünstigenden strukturellen Bedingungen klären.",
+          "source_id": "wdr-nachrichten",
+          "expected_by": "2027-09-30",
+          "measurable_indicator": "Veröffentlichung der Studienergebnisse mit Angaben zu Umfang und Bedingungen",
+          "expected_by_evidence_hash": "f2477c4caa3a3aa0c161fe0955be855898af886d44e5c8fefd7f0247fd131e59",
+          "followup_id": "followup-4f1c5067f09d323f",
+          "announced_at": "2026-09-07T19:22:40.000Z",
+          "follow_up_date": "2027-09-30T00:00:00.000Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "0a0a67bcfffbcd3ca9fbfb1a766d25b31dd070dcd404c42524329206d9c8f472",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-be2b0b68d542b507-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "be2b0b68d542b507195f3ab1b08e54db02827dee5620f8d11183bc380a80a0e4"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-8791264ac6b7a0b9-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "8791264ac6b7a0b93c7738124d51b6c8c69e90cff95cad34b8129205bbb522cc"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-3dc23afdbf4e9fb3-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "3dc23afdbf4e9fb32f8da4b968ba6a02e347d193b3768e9b46b6f0f1e9315276"
+        },
+        "source_visual": null,
+        "fingerprint": "235b56c4fcb4552efb6cf6e386cee71513a3e0bf113e733078de82df2ff53dfc",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T00:08:19.102Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 2,
+        "checked_at": "2026-09-08T00:08:08.993Z",
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+            "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803",
+            "excerpt_hash": "95cd928ce6721acfe3b59b434e64cd43bbbb8642acf5ea30569c5f96169655f8",
+            "number_locale": "de",
+            "numbers": [
+              "2",
+              "32",
+              "7.09",
+              "2028",
+              "2026",
+              "18",
+              "44",
+              "60",
+              "25",
+              "100",
+              "2027",
+              "42",
+              "12",
+              "30",
+              "19.3",
+              "1"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Die Caritas Bottrop hat laut WDR die Aufarbeitung von Gewaltvorwürfen in einem früheren Kinderheim gestartet. Anlass war ein anonymer Hinweis einer betroffenen Person, die über erlebte sexualisierte, körperliche und psychische Gewalt berichtete. Die Caritas nennt Hinweise auf Vorfälle in den 1960er und 1970er Jahren und sagt, es gebe keine Hinweise auf aktuelle Fälle.\n\nBeauftragt wurde die Klinik für Forensische Psychiatrie und Psychotherapie der Universität Ulm; die Studie soll auch historische Archive auswerten. Das Heim in Bottrop-Fuhlenbrock besteht weiter, dort leben nach Angaben des Beitrags aktuell um die 100 Kinder und Jugendliche. Ergebnisse werden für Herbst 2027 erwartet.",
+      "analysis": {
+        "story_id": "wt-12227eeecd48c0b9",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Die Caritas Bottrop hat eine historische Aufarbeitung zu Gewaltvorwürfen in einem früheren Kinderheim begonnen. Aktuelle Fälle schließt die Caritas nach eigenen Angaben aus.",
+        "detail_summary": "Konkret geht es um Hinweise auf sexualisierte, körperliche und psychische Gewalt im ehemaligen Kindervollheim St. Konrad in Bottrop-Fuhlenbrock. Die Caritas hat nach einem anonymen Hinweis eine Studie bei der Universität Ulm in Auftrag gegeben und will zusätzlich historische Archive auswerten. Der Vorgang ist für Betroffene relevant, weil er mögliche frühere Übergriffe sichtbar machen und Anerkennung oder weitere Meldungen ermöglichen kann. Für das heutige Heim mit rund 100 Kindern und Jugendlichen ist wichtig, dass die Vorwürfe laut Caritas nur die 1960er und 1970er Jahre betreffen und keine aktuellen Fälle bekannt sind. Als Wirkpfad kommt vor allem institutionelle Aufarbeitung über Dokumentation, Anerkennung und mögliche Schutzanpassungen in Betracht. Die Evidenz bleibt aber begrenzt, weil zunächst nur ein journalistischer Bericht und Caritas-Aussagen vorliegen; Ausmaß, Ursachen und konkrete Folgen sind noch offen.",
+        "why_relevant": "Der Fall betrifft mögliche Gewalt in einer Einrichtung mit laufendem Betrieb und damit Schutz, Vertrauen und mögliche Folgeanpassungen. Die Aufarbeitung kann Zustände für Betroffene, Einrichtung und Schutzkonzept verändern.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind frühere Heimkinder, mögliche weitere Betroffene und die aktuell dort lebenden Kinder. Die Aufarbeitung kann Anerkennung und Schutz verbessern, aber auch Belastungen und Unsicherheit verlängern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es sind keine unmittelbaren Umweltfolgen belegt. Ein Bezug zu Planet-Zielen ergibt sich aus der Quelle nicht belastbar."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "chance",
+          "rationale": "Der Fall berührt Transparenz, institutionelle Rechenschaft und die öffentliche Nachprüfbarkeit von Missständen. Das ist demokratisch relevant, aber kein politischer Entscheidungsprozess."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Aufarbeitung kann die Informationslage zu früheren Gewaltvorwürfen verbessern, Betroffenenmeldungen erleichtern und Schutzkonzepte im Heimkontext anstoßen.",
+        "impact_risks": [
+          "Die lange Aufklärungsdauer kann Vertrauen belasten und Erwartungen offen lassen.",
+          "Ohne belastbare Ergebnisse bleibt die Einordnung der Vorwürfe vorläufig."
+        ],
+        "mechanisms": [
+          "Anonyme Meldung löst Recherche und Studie aus.",
+          "Historische Rekonstruktion kann verborgene Vorfälle und Strukturen sichtbarer machen.",
+          "Ergebnisse können Schutzkonzepte und institutionelle Regeln beeinflussen."
+        ],
+        "first_order": [
+          "mehr Wissen über mögliche frühere Gewalt",
+          "Anerkennung oder Präzisierung der Vorwürfe",
+          "mögliche Anpassung des Schutzkonzepts"
+        ],
+        "second_order": [
+          "veränderte Meldebereitschaft Betroffener",
+          "geänderte interne Prüf- und Dokumentationspraxis",
+          "mögliche Vertrauensverschiebungen in die Einrichtung"
+        ],
+        "third_order": [
+          "stabilere Aufarbeitungsstandards in ähnlichen Einrichtungen",
+          "längerfristige Stärkung von Prävention und Kontrolle",
+          "mögliche Vorbildwirkung für historische Gewaltaufarbeitung"
+        ],
+        "systemic_relevance": "Relevanz entsteht durch die Verbindung von Heimschutz, historischer Aufarbeitung und möglicher institutioneller Nachsteuerung. Systemisch bedeutsam ist vor allem die Frage, ob aus der Rekonstruktion konkrete Schutzfolgen für laufende Betreuung entstehen.",
+        "transformation_potential": "Potenzial besteht für eine bessere Aufarbeitungs- und Präventionspraxis in kirchlichen oder sozialen Einrichtungen, falls die Studie strukturelle Muster sichtbar macht.",
+        "resilience": "Resilienz kann steigen, wenn Meldestrukturen, historische Dokumentation und Schutzkonzepte verbessert werden; ohne belastbare Ergebnisse bleibt dieser Effekt offen.",
+        "side_effects": [
+          "Längere öffentliche Unsicherheit bis zur Studie",
+          "mögliche Belastung für Mitarbeitende und Betroffene durch die Aufarbeitung"
+        ],
+        "uncertainties": [
+          "Das Ausmaß der damaligen Gewalt ist noch nicht belegt.",
+          "Die konkreten Studienergebnisse liegen erst für Herbst 2027 in Aussicht.",
+          "Unklar bleibt, welche konkreten Konsequenzen die Caritas daraus zieht."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Quelle ist ein WDR-Bericht mit Aussagen der Caritas Bottrop und einer Expertin der Universität Ulm. Die Angaben zu früheren Vorfällen, Studienauftrag und fehlenden aktuellen Fällen stammen aus dem Bericht und sind noch nicht unabhängig bestätigt.",
+        "watch_next": [
+          "Veröffentlichung der Studie im Herbst 2027",
+          "mögliche neue Aussagen der Caritas zu Konsequenzen",
+          "weitere Meldungen Betroffener oder Hinweise aus der Aufarbeitung"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16",
+          "Agenda 2030/SDG 3"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue Information ist der Beginn einer historischen Aufarbeitung mit laufendem Heimkontext und angekündigter Studie. Das hat materielle Relevanz für Betroffene, Schutzkonzepte und institutionelle Rechenschaft."
+        },
+        "visuals": {
+          "affected_groups": [
+            "kinder_jugend",
+            "kommunen",
+            "staat"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T00:06:52.179Z",
+        "media_trigger_fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "angst"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
+          "content_fingerprint": "68b37f4bead3e28335352ef3c11ba4133dfdba00c639ebf3d5eb2db942915362",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-07T17:24:29.900Z",
+          "content_hash": "0a0a67bcfffbcd3ca9fbfb1a766d25b31dd070dcd404c42524329206d9c8f472",
+          "source_summary": "Die Caritas Bottrop hat nach eigenen Angaben mit der Aufarbeitung möglicher Gewaltvorfälle in einem früheren Kinderheim begonnen. Auslöser war ein anonymer Hinweis einer betroffenen Person, die über sexualisierte, körperliche und psychische Gewalt berichtet haben soll. Die Caritas hat daraufhin weitere Recherchen angestoßen und eine Studie in Auftrag gegeben.\n\nUntersucht werden soll, in welchem Ausmaß Kinder und Jugendliche damals Gewalt ausgesetzt waren und welche strukturellen Bedingungen Übergriffe begünstigt haben könnten. Laut Bericht geht es um das frühere Kindervollheim St. Konrad, heute Kinderdorf am Köllnischen Wald. Die Caritas sagt zugleich, die Vorwürfe beträfen die 1960er und 1970er Jahre; für aktuelle Fälle gebe es keine Hinweise. Im Heim leben derzeit rund 100 Kinder und Jugendliche.",
+          "analysis": {
+            "story_id": "wt-12227eeecd48c0b9",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Caritas Bottrop hat eine historische Aufarbeitung zu Gewaltvorwürfen in einem früheren Kinderheim gestartet. Der Bericht nennt zugleich offene Punkte und schließt aktuelle Fälle nach Caritas-Angaben aus.",
+            "detail_summary": "Auslöser ist ein anonymer Hinweis aus dem Januar, nach dem in dem früheren Kinderheim St. Konrad Gewalt erfahren worden sein soll. Die Caritas reagiert darauf mit weiterer Recherche und einer beauftragten Studie der Universität Ulm. Für die öffentliche Bedeutung zählt vor allem, dass damit ein institutioneller Aufarbeitungsprozess beginnt, der mögliche Betroffene und heutige Schutzkonzepte berühren kann. Der Wirkpfad liegt nicht in unmittelbarer Wirkung, sondern in möglicher Anerkennung, Dokumentation und späteren Folgerungen für Prävention und Schutzstrukturen. Zugleich bleibt die Beleglage begrenzt: Gesichert ist bisher der Start der Aufarbeitung und der Vorwurfskontext, nicht aber das Ausmaß der Vorfälle oder spätere Konsequenzen.",
+            "why_relevant": "Die Meldung zeigt eine neue institutionelle Reaktion auf historische Gewaltvorwürfe und kann Folgewirkungen für Aufarbeitung, Schutzkonzepte und Vertrauen in eine soziale Einrichtung haben.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Betroffen sind mögliche ehemalige Heimkinder sowie die heute dort lebenden rund 100 Kinder und Jugendliche. Die Aufarbeitung kann Anerkennung und Prävention stärken, zugleich zeigt der Bericht einen schweren Gewaltkontext als mögliches Risiko."
+            },
+            "planet": {
+              "relevance": "offen",
+              "tendency": "offen",
+              "rationale": "Aus den Quellen ergibt sich kein eigenständiger Umwelt- oder Klimabezug."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "chance",
+              "rationale": "Der Vorgang betrifft institutionelle Aufarbeitung, Transparenz und die öffentliche Nachprüfbarkeit von Schutzversagen. Das stärkt demokratische Korrekturfähigkeit, ohne dass daraus schon ein Wirkungsnachweis folgt."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Aufarbeitung kann interne Schutzstandards, Dokumentation und den Umgang mit historischen Gewaltvorwürfen verändern. Für Betroffene eröffnet sie möglicherweise einen Resonanz- und Anerkennungsraum; für die Einrichtung kann sie Prüf- und Anpassungsdruck erzeugen.",
+            "impact_risks": [
+              "Ohne belastbare Ergebnisse bleibt die Debatte vorerst auf Verdachts- und Hinweisniveau.",
+              "Sollten strukturelle Defizite bestätigt werden, könnten Vertrauensverlust und zusätzlicher Aufarbeitungsbedarf zunehmen."
+            ],
+            "mechanisms": [
+              "Anonymer Hinweis löst institutionelle Reaktion aus.",
+              "Externe Studie kann historische Vorfälle und begünstigende Strukturen rekonstruieren.",
+              "Mögliche Folgerungen können Schutzkonzepte und interne Verfahren beeinflussen."
+            ],
+            "first_order": [
+              "Aufbau eines formellen Aufarbeitungsprozesses.",
+              "Sammlung von Aussagen und Archivmaterial."
+            ],
+            "second_order": [
+              "Mögliche Präzisierung von Schutz- und Meldewegen.",
+              "Erhöhte öffentliche Prüfbarkeit des Umgangs mit historischen Vorwürfen."
+            ],
+            "third_order": [
+              "Falls die Studie strukturelle Muster belegt, könnten institutionelle Standards über den Einzelfall hinaus angepasst werden."
+            ],
+            "systemic_relevance": "Mittlere systemische Relevanz ergibt sich aus der Verbindung von Kinderschutz, institutioneller Verantwortung und historischer Aufarbeitung in einer sozialen Trägerstruktur.",
+            "transformation_potential": "Potenzial liegt vor allem in besserer Prävention, transparenterer Dokumentation und möglicher Korrektur von Schutzarchitekturen.",
+            "resilience": "Resilienz hängt davon ab, ob der Träger Betroffenen glaubwürdig zuhört, Ergebnisse offenlegt und Schutzkonzepte nachprüfbar nachschärft.",
+            "side_effects": [
+              "Mehr öffentliche Aufmerksamkeit auf historische Gewalt in Heimen.",
+              "Mögliche Belastung für heutige Beschäftigte und Bewohner durch die Aufarbeitung."
+            ],
+            "uncertainties": [
+              "Das tatsächliche Ausmaß der damaligen Gewalt ist noch nicht belegt.",
+              "Die Studie liegt erst für Herbst 2027 in Aussicht.",
+              "Es ist offen, welche konkreten Konsequenzen sich daraus ergeben."
+            ],
+            "evidence_level": "low to medium, da nur eine journalistische Quelle vorliegt und zentrale Vorwürfe sowie Folgen noch nicht unabhängig bestätigt sind.",
+            "attribution": "Die wesentlichen Angaben stammen aus einem WDR-Bericht mit Aussagen des Caritas-Direktors und einer Expertin; die Vorwürfe selbst sind als Hinweise und Berichte wiedergegeben, nicht als abschließend bewiesen.",
+            "watch_next": [
+              "Veröffentlichung oder Zwischenstand der Studie.",
+              "Konkrete Reaktionen der Caritas auf Zwischenergebnisse.",
+              "Ob weitere Betroffene sich melden."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3, SDG 16, SDG+ Kinderschutz und institutionelle Rechenschaft"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Information ist der Start einer externen Aufarbeitung samt Studienauftrag zu schweren historischen Vorwürfen; betroffen sind eine soziale Einrichtung, mögliche ehemalige Heimkinder und die heutige Schutzarchitektur."
+            },
+            "visuals": {
+              "affected_groups": [
+                "kinder_jugend",
+                "beschaeftigte",
+                "kommunen",
+                "staat"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-07T17:21:31.323Z",
+            "media_trigger_fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "angst"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
+              "content_fingerprint": "68b37f4bead3e28335352ef3c11ba4133dfdba00c639ebf3d5eb2db942915362",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-12227eeecd48c0b9-v1-claim-1",
+              "story_id": "wt-12227eeecd48c0b9",
+              "claim": "Die Caritas Bottrop hat die Aufarbeitung von Gewaltvorwürfen in einem früheren Kinderheim begonnen.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "9724d374b5fb8fb800f7",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "4f3e7876843f5270ade7",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "6225fe34b7a8d7c8520e",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T17:24:29.900Z"
+            },
+            {
+              "claim_id": "wt-12227eeecd48c0b9-v1-claim-2",
+              "story_id": "wt-12227eeecd48c0b9",
+              "claim": "Es geht um Hinweise auf sexualisierte, körperliche und psychische Gewalt im ehemaligen Kindervollheim St. Konrad aus den 1960er- und 1970er-Jahren.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "f1b0c0f69434e382faf7",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "5eaa4a12c064b0b6f1a4",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "24a5338c9caf945d0355",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T17:24:29.900Z"
+            },
+            {
+              "claim_id": "wt-12227eeecd48c0b9-v1-claim-3",
+              "story_id": "wt-12227eeecd48c0b9",
+              "claim": "Die Caritas hat dafür die Klinik für Forensische Psychiatrie und Psychotherapie der Universität Ulm mit einer Studie beauftragt.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "6225fe34b7a8d7c8520e",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "5ffcfa96f1b5d3c3fc7e",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T17:24:29.900Z"
+            },
+            {
+              "claim_id": "wt-12227eeecd48c0b9-v1-claim-4",
+              "story_id": "wt-12227eeecd48c0b9",
+              "claim": "Das betroffene Heim heißt heute Kinderdorf am Köllnischen Wald; nach Angaben der Caritas gibt es keine Hinweise auf aktuelle Fälle, und dort leben derzeit etwa 100 Kinder und Jugendliche.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "915d895838e75a4f5cd5",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "79b9a735486c7c2ec8f2",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "24a5338c9caf945d0355",
+                  "checked_at": "2026-09-07T17:24:29.900Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T17:24:29.900Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-07T17:24:29.900Z",
+            "sources": [
+              {
+                "source_id": "wdr-nachrichten",
+                "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803",
+                "excerpt_hash": "e7affa0eb2d2bf1e807ebf1a52a5b5b550aa5ca302da67c772fc49a4b9413474",
+                "numbers": [
+                  "7.09",
+                  "2026",
+                  "18",
+                  "44",
+                  "60",
+                  "25",
+                  "100",
+                  "2027",
+                  "42",
+                  "12",
+                  "30",
+                  "1",
+                  "2"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-08T00:08:08.993Z",
+          "content_hash": "0a0a67bcfffbcd3ca9fbfb1a766d25b31dd070dcd404c42524329206d9c8f472",
+          "source_summary": "Die Caritas Bottrop hat laut WDR die Aufarbeitung von Gewaltvorwürfen in einem früheren Kinderheim gestartet. Anlass war ein anonymer Hinweis einer betroffenen Person, die über erlebte sexualisierte, körperliche und psychische Gewalt berichtete. Die Caritas nennt Hinweise auf Vorfälle in den 1960er und 1970er Jahren und sagt, es gebe keine Hinweise auf aktuelle Fälle.\n\nBeauftragt wurde die Klinik für Forensische Psychiatrie und Psychotherapie der Universität Ulm; die Studie soll auch historische Archive auswerten. Das Heim in Bottrop-Fuhlenbrock besteht weiter, dort leben nach Angaben des Beitrags aktuell um die 100 Kinder und Jugendliche. Ergebnisse werden für Herbst 2027 erwartet.",
+          "analysis": {
+            "story_id": "wt-12227eeecd48c0b9",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Die Caritas Bottrop hat eine historische Aufarbeitung zu Gewaltvorwürfen in einem früheren Kinderheim begonnen. Aktuelle Fälle schließt die Caritas nach eigenen Angaben aus.",
+            "detail_summary": "Konkret geht es um Hinweise auf sexualisierte, körperliche und psychische Gewalt im ehemaligen Kindervollheim St. Konrad in Bottrop-Fuhlenbrock. Die Caritas hat nach einem anonymen Hinweis eine Studie bei der Universität Ulm in Auftrag gegeben und will zusätzlich historische Archive auswerten. Der Vorgang ist für Betroffene relevant, weil er mögliche frühere Übergriffe sichtbar machen und Anerkennung oder weitere Meldungen ermöglichen kann. Für das heutige Heim mit rund 100 Kindern und Jugendlichen ist wichtig, dass die Vorwürfe laut Caritas nur die 1960er und 1970er Jahre betreffen und keine aktuellen Fälle bekannt sind. Als Wirkpfad kommt vor allem institutionelle Aufarbeitung über Dokumentation, Anerkennung und mögliche Schutzanpassungen in Betracht. Die Evidenz bleibt aber begrenzt, weil zunächst nur ein journalistischer Bericht und Caritas-Aussagen vorliegen; Ausmaß, Ursachen und konkrete Folgen sind noch offen.",
+            "why_relevant": "Der Fall betrifft mögliche Gewalt in einer Einrichtung mit laufendem Betrieb und damit Schutz, Vertrauen und mögliche Folgeanpassungen. Die Aufarbeitung kann Zustände für Betroffene, Einrichtung und Schutzkonzept verändern.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Betroffen sind frühere Heimkinder, mögliche weitere Betroffene und die aktuell dort lebenden Kinder. Die Aufarbeitung kann Anerkennung und Schutz verbessern, aber auch Belastungen und Unsicherheit verlängern."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Es sind keine unmittelbaren Umweltfolgen belegt. Ein Bezug zu Planet-Zielen ergibt sich aus der Quelle nicht belastbar."
+            },
+            "democracy": {
+              "relevance": "gering",
+              "tendency": "chance",
+              "rationale": "Der Fall berührt Transparenz, institutionelle Rechenschaft und die öffentliche Nachprüfbarkeit von Missständen. Das ist demokratisch relevant, aber kein politischer Entscheidungsprozess."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Aufarbeitung kann die Informationslage zu früheren Gewaltvorwürfen verbessern, Betroffenenmeldungen erleichtern und Schutzkonzepte im Heimkontext anstoßen.",
+            "impact_risks": [
+              "Die lange Aufklärungsdauer kann Vertrauen belasten und Erwartungen offen lassen.",
+              "Ohne belastbare Ergebnisse bleibt die Einordnung der Vorwürfe vorläufig."
+            ],
+            "mechanisms": [
+              "Anonyme Meldung löst Recherche und Studie aus.",
+              "Historische Rekonstruktion kann verborgene Vorfälle und Strukturen sichtbarer machen.",
+              "Ergebnisse können Schutzkonzepte und institutionelle Regeln beeinflussen."
+            ],
+            "first_order": [
+              "mehr Wissen über mögliche frühere Gewalt",
+              "Anerkennung oder Präzisierung der Vorwürfe",
+              "mögliche Anpassung des Schutzkonzepts"
+            ],
+            "second_order": [
+              "veränderte Meldebereitschaft Betroffener",
+              "geänderte interne Prüf- und Dokumentationspraxis",
+              "mögliche Vertrauensverschiebungen in die Einrichtung"
+            ],
+            "third_order": [
+              "stabilere Aufarbeitungsstandards in ähnlichen Einrichtungen",
+              "längerfristige Stärkung von Prävention und Kontrolle",
+              "mögliche Vorbildwirkung für historische Gewaltaufarbeitung"
+            ],
+            "systemic_relevance": "Relevanz entsteht durch die Verbindung von Heimschutz, historischer Aufarbeitung und möglicher institutioneller Nachsteuerung. Systemisch bedeutsam ist vor allem die Frage, ob aus der Rekonstruktion konkrete Schutzfolgen für laufende Betreuung entstehen.",
+            "transformation_potential": "Potenzial besteht für eine bessere Aufarbeitungs- und Präventionspraxis in kirchlichen oder sozialen Einrichtungen, falls die Studie strukturelle Muster sichtbar macht.",
+            "resilience": "Resilienz kann steigen, wenn Meldestrukturen, historische Dokumentation und Schutzkonzepte verbessert werden; ohne belastbare Ergebnisse bleibt dieser Effekt offen.",
+            "side_effects": [
+              "Längere öffentliche Unsicherheit bis zur Studie",
+              "mögliche Belastung für Mitarbeitende und Betroffene durch die Aufarbeitung"
+            ],
+            "uncertainties": [
+              "Das Ausmaß der damaligen Gewalt ist noch nicht belegt.",
+              "Die konkreten Studienergebnisse liegen erst für Herbst 2027 in Aussicht.",
+              "Unklar bleibt, welche konkreten Konsequenzen die Caritas daraus zieht."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Quelle ist ein WDR-Bericht mit Aussagen der Caritas Bottrop und einer Expertin der Universität Ulm. Die Angaben zu früheren Vorfällen, Studienauftrag und fehlenden aktuellen Fällen stammen aus dem Bericht und sind noch nicht unabhängig bestätigt.",
+            "watch_next": [
+              "Veröffentlichung der Studie im Herbst 2027",
+              "mögliche neue Aussagen der Caritas zu Konsequenzen",
+              "weitere Meldungen Betroffener oder Hinweise aus der Aufarbeitung"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16",
+              "Agenda 2030/SDG 3"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Information ist der Beginn einer historischen Aufarbeitung mit laufendem Heimkontext und angekündigter Studie. Das hat materielle Relevanz für Betroffene, Schutzkonzepte und institutionelle Rechenschaft."
+            },
+            "visuals": {
+              "affected_groups": [
+                "kinder_jugend",
+                "kommunen",
+                "staat"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T00:06:52.179Z",
+            "media_trigger_fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "angst"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
+              "content_fingerprint": "68b37f4bead3e28335352ef3c11ba4133dfdba00c639ebf3d5eb2db942915362",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-12227eeecd48c0b9-v2-claim-1",
+              "story_id": "wt-12227eeecd48c0b9",
+              "claim": "Die Caritas Bottrop hat die Aufarbeitung von Gewaltvorwürfen in einem früheren Kinderheim gestartet.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "2b85b7b11912475d5587",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "2f32c822f1a199081830",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "b4ee4149931e1e98675d",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            },
+            {
+              "claim_id": "wt-12227eeecd48c0b9-v2-claim-2",
+              "story_id": "wt-12227eeecd48c0b9",
+              "claim": "Die Vorwürfe beziehen sich nach Caritas-Angaben auf mögliche Gewalt in den 1960er und 1970er Jahren; aktuelle Fälle seien nicht bekannt.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "60e3ec164a0e65df17b5",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "fb5dd09a620a483cecca",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "ced1ad49ae2cf09a0c17",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            },
+            {
+              "claim_id": "wt-12227eeecd48c0b9-v2-claim-3",
+              "story_id": "wt-12227eeecd48c0b9",
+              "claim": "Für die Studie hat die Caritas die Klinik für Forensische Psychiatrie und Psychotherapie der Universität Ulm beauftragt; mit Ergebnissen wird im Herbst 2027 gerechnet.",
+              "status": "single_source_claim",
+              "source_id": "wdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "c44972ffd5d353c5486e",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "75839fa9f65d78479420",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                },
+                {
+                  "source_id": "wdr-nachrichten",
+                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                  "excerpt_hash": "1f5c8eda6e70522f9fc8",
+                  "checked_at": "2026-09-08T00:08:08.993Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T00:08:08.993Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wdr-nachrichten",
+              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+              "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 2,
+            "checked_at": "2026-09-08T00:08:08.993Z",
+            "sources": [
+              {
+                "source_id": "wdr-nachrichten",
+                "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
+                "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803",
+                "excerpt_hash": "95cd928ce6721acfe3b59b434e64cd43bbbb8642acf5ea30569c5f96169655f8",
+                "number_locale": "de",
+                "numbers": [
+                  "2",
+                  "32",
+                  "7.09",
+                  "2028",
+                  "2026",
+                  "18",
+                  "44",
+                  "60",
+                  "25",
+                  "100",
+                  "2027",
+                  "42",
+                  "12",
+                  "30",
+                  "19.3",
+                  "1"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-07T17:24:29.900Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-08T00:08:08.993Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
     {
       "story_id": "wt-f03755f6f6b8c3b7",
       "slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
@@ -24278,7 +25178,7 @@
       "verification_started_at": "2026-09-07T17:38:17.551Z",
       "publish_ready_at": "2026-09-07T17:38:31.461Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-07T18:00:00.000Z",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -24719,9 +25619,12 @@
         "generated_at": "2026-09-07T17:39:26.997Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-07T18:07:09.206Z",
-        "content_hash": "ac793f0bdfa7dc4a5b03568ec3715972967de301fb1850dfad547b886d2f1d18",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "7e514af21c32bb7d7f74aa8a36db8695c6e4fe06bc8b8e3baa4e4effc7ece246",
+        "checked_at": "2026-09-08T00:06:52.179Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T06:06:52.179Z",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
@@ -24789,24 +25692,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:52:11.826Z",
-          "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-77214e70d8c76277",
@@ -24954,708 +25842,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-12227eeecd48c0b9",
-      "slug": "die-caritas-bottrop-arbeitet-gewaltvorfalle-auf-48c0b9",
-      "title": "Die Caritas Bottrop arbeitet Gewaltvorfälle auf",
-      "first_seen": "2026-09-07T11:21:08.000Z",
-      "last_updated": "2026-09-07T17:24:29.900Z",
-      "published_at": "2026-09-07T17:24:29.900Z",
-      "updated_at": "2026-09-07T17:24:29.900Z",
-      "topic": [
-        "Arbeit"
-      ],
-      "sources": [
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-          "title": "Die Caritas Bottrop arbeitet Gewaltvorfälle auf",
-          "summary": "In einem Kinderheim der Bottroper Caritas sollen Kinder früher Gewalt erfahren haben. Die Caritas startet die Aufarbeitung.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T16:45:02.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803",
-          "source_item_id": "b7b63f683a674013e8bb7006b80fa1edad831b2be717911e07cb4fc7e2b9f6a2",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T16:45:02.000Z",
-          "ingested_at": "2026-09-07T17:21:31.323Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-12227eeecd48c0b9-v1-claim-1",
-          "story_id": "wt-12227eeecd48c0b9",
-          "claim": "Die Caritas Bottrop hat die Aufarbeitung von Gewaltvorwürfen in einem früheren Kinderheim begonnen.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "9724d374b5fb8fb800f7",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "4f3e7876843f5270ade7",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "6225fe34b7a8d7c8520e",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T17:24:29.900Z"
-        },
-        {
-          "claim_id": "wt-12227eeecd48c0b9-v1-claim-2",
-          "story_id": "wt-12227eeecd48c0b9",
-          "claim": "Es geht um Hinweise auf sexualisierte, körperliche und psychische Gewalt im ehemaligen Kindervollheim St. Konrad aus den 1960er- und 1970er-Jahren.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "f1b0c0f69434e382faf7",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "5eaa4a12c064b0b6f1a4",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "24a5338c9caf945d0355",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T17:24:29.900Z"
-        },
-        {
-          "claim_id": "wt-12227eeecd48c0b9-v1-claim-3",
-          "story_id": "wt-12227eeecd48c0b9",
-          "claim": "Die Caritas hat dafür die Klinik für Forensische Psychiatrie und Psychotherapie der Universität Ulm mit einer Studie beauftragt.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "6225fe34b7a8d7c8520e",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "5ffcfa96f1b5d3c3fc7e",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T17:24:29.900Z"
-        },
-        {
-          "claim_id": "wt-12227eeecd48c0b9-v1-claim-4",
-          "story_id": "wt-12227eeecd48c0b9",
-          "claim": "Das betroffene Heim heißt heute Kinderdorf am Köllnischen Wald; nach Angaben der Caritas gibt es keine Hinweise auf aktuelle Fälle, und dort leben derzeit etwa 100 Kinder und Jugendliche.",
-          "status": "single_source_claim",
-          "source_id": "wdr-nachrichten",
-          "evidence": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "915d895838e75a4f5cd5",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "79b9a735486c7c2ec8f2",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "excerpt_hash": "24a5338c9caf945d0355",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T17:24:29.900Z"
-        }
-      ],
-      "event_id": "event-bbc2a8844af90a5446d1",
-      "event_first_seen_at": "2026-09-07T11:37:00.106Z",
-      "event_detected_at": "2026-09-07T11:37:00.106Z",
-      "verification_started_at": "2026-09-07T17:24:12.087Z",
-      "publish_ready_at": "2026-09-07T17:24:29.900Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-07T18:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "wdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T17:21:31.323Z",
-        "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "followups": [
-        {
-          "claim": "Mit den Ergebnissen der Studie wird im Herbst 2027 gerechnet.",
-          "source_id": "wdr-nachrichten",
-          "expected_by": "2027-09-30",
-          "measurable_indicator": "Veröffentlichung oder belastbar angekündigte Vorlage der Studie",
-          "expected_by_evidence_hash": "f2477c4caa3a3aa0c161fe0955be855898af886d44e5c8fefd7f0247fd131e59",
-          "followup_id": "followup-8e8739b3a6722b06",
-          "announced_at": "2026-09-07T16:45:02.000Z",
-          "follow_up_date": "2027-09-30T00:00:00.000Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "0a0a67bcfffbcd3ca9fbfb1a766d25b31dd070dcd404c42524329206d9c8f472",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "numeric_evidence": {
-        "version": 1,
-        "analysis_version": 1,
-        "checked_at": "2026-09-07T17:24:29.900Z",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-            "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803",
-            "excerpt_hash": "e7affa0eb2d2bf1e807ebf1a52a5b5b550aa5ca302da67c772fc49a4b9413474",
-            "numbers": [
-              "7.09",
-              "2026",
-              "18",
-              "44",
-              "60",
-              "25",
-              "100",
-              "2027",
-              "42",
-              "12",
-              "30",
-              "1",
-              "2"
-            ]
-          }
-        ]
-      },
-      "source_summary": "Die Caritas Bottrop hat nach eigenen Angaben mit der Aufarbeitung möglicher Gewaltvorfälle in einem früheren Kinderheim begonnen. Auslöser war ein anonymer Hinweis einer betroffenen Person, die über sexualisierte, körperliche und psychische Gewalt berichtet haben soll. Die Caritas hat daraufhin weitere Recherchen angestoßen und eine Studie in Auftrag gegeben.\n\nUntersucht werden soll, in welchem Ausmaß Kinder und Jugendliche damals Gewalt ausgesetzt waren und welche strukturellen Bedingungen Übergriffe begünstigt haben könnten. Laut Bericht geht es um das frühere Kindervollheim St. Konrad, heute Kinderdorf am Köllnischen Wald. Die Caritas sagt zugleich, die Vorwürfe beträfen die 1960er und 1970er Jahre; für aktuelle Fälle gebe es keine Hinweise. Im Heim leben derzeit rund 100 Kinder und Jugendliche.",
-      "analysis": {
-        "story_id": "wt-12227eeecd48c0b9",
-        "publication_recommendation": true,
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Die Caritas Bottrop hat eine historische Aufarbeitung zu Gewaltvorwürfen in einem früheren Kinderheim gestartet. Der Bericht nennt zugleich offene Punkte und schließt aktuelle Fälle nach Caritas-Angaben aus.",
-        "detail_summary": "Auslöser ist ein anonymer Hinweis aus dem Januar, nach dem in dem früheren Kinderheim St. Konrad Gewalt erfahren worden sein soll. Die Caritas reagiert darauf mit weiterer Recherche und einer beauftragten Studie der Universität Ulm. Für die öffentliche Bedeutung zählt vor allem, dass damit ein institutioneller Aufarbeitungsprozess beginnt, der mögliche Betroffene und heutige Schutzkonzepte berühren kann. Der Wirkpfad liegt nicht in unmittelbarer Wirkung, sondern in möglicher Anerkennung, Dokumentation und späteren Folgerungen für Prävention und Schutzstrukturen. Zugleich bleibt die Beleglage begrenzt: Gesichert ist bisher der Start der Aufarbeitung und der Vorwurfskontext, nicht aber das Ausmaß der Vorfälle oder spätere Konsequenzen.",
-        "why_relevant": "Die Meldung zeigt eine neue institutionelle Reaktion auf historische Gewaltvorwürfe und kann Folgewirkungen für Aufarbeitung, Schutzkonzepte und Vertrauen in eine soziale Einrichtung haben.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Betroffen sind mögliche ehemalige Heimkinder sowie die heute dort lebenden rund 100 Kinder und Jugendliche. Die Aufarbeitung kann Anerkennung und Prävention stärken, zugleich zeigt der Bericht einen schweren Gewaltkontext als mögliches Risiko."
-        },
-        "planet": {
-          "relevance": "offen",
-          "tendency": "offen",
-          "rationale": "Aus den Quellen ergibt sich kein eigenständiger Umwelt- oder Klimabezug."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "chance",
-          "rationale": "Der Vorgang betrifft institutionelle Aufarbeitung, Transparenz und die öffentliche Nachprüfbarkeit von Schutzversagen. Das stärkt demokratische Korrekturfähigkeit, ohne dass daraus schon ein Wirkungsnachweis folgt."
-        },
-        "importance": "hoch",
-        "impact_potential": "Die Aufarbeitung kann interne Schutzstandards, Dokumentation und den Umgang mit historischen Gewaltvorwürfen verändern. Für Betroffene eröffnet sie möglicherweise einen Resonanz- und Anerkennungsraum; für die Einrichtung kann sie Prüf- und Anpassungsdruck erzeugen.",
-        "impact_risks": [
-          "Ohne belastbare Ergebnisse bleibt die Debatte vorerst auf Verdachts- und Hinweisniveau.",
-          "Sollten strukturelle Defizite bestätigt werden, könnten Vertrauensverlust und zusätzlicher Aufarbeitungsbedarf zunehmen."
-        ],
-        "mechanisms": [
-          "Anonymer Hinweis löst institutionelle Reaktion aus.",
-          "Externe Studie kann historische Vorfälle und begünstigende Strukturen rekonstruieren.",
-          "Mögliche Folgerungen können Schutzkonzepte und interne Verfahren beeinflussen."
-        ],
-        "first_order": [
-          "Aufbau eines formellen Aufarbeitungsprozesses.",
-          "Sammlung von Aussagen und Archivmaterial."
-        ],
-        "second_order": [
-          "Mögliche Präzisierung von Schutz- und Meldewegen.",
-          "Erhöhte öffentliche Prüfbarkeit des Umgangs mit historischen Vorwürfen."
-        ],
-        "third_order": [
-          "Falls die Studie strukturelle Muster belegt, könnten institutionelle Standards über den Einzelfall hinaus angepasst werden."
-        ],
-        "systemic_relevance": "Mittlere systemische Relevanz ergibt sich aus der Verbindung von Kinderschutz, institutioneller Verantwortung und historischer Aufarbeitung in einer sozialen Trägerstruktur.",
-        "transformation_potential": "Potenzial liegt vor allem in besserer Prävention, transparenterer Dokumentation und möglicher Korrektur von Schutzarchitekturen.",
-        "resilience": "Resilienz hängt davon ab, ob der Träger Betroffenen glaubwürdig zuhört, Ergebnisse offenlegt und Schutzkonzepte nachprüfbar nachschärft.",
-        "side_effects": [
-          "Mehr öffentliche Aufmerksamkeit auf historische Gewalt in Heimen.",
-          "Mögliche Belastung für heutige Beschäftigte und Bewohner durch die Aufarbeitung."
-        ],
-        "uncertainties": [
-          "Das tatsächliche Ausmaß der damaligen Gewalt ist noch nicht belegt.",
-          "Die Studie liegt erst für Herbst 2027 in Aussicht.",
-          "Es ist offen, welche konkreten Konsequenzen sich daraus ergeben."
-        ],
-        "evidence_level": "low to medium, da nur eine journalistische Quelle vorliegt und zentrale Vorwürfe sowie Folgen noch nicht unabhängig bestätigt sind.",
-        "attribution": "Die wesentlichen Angaben stammen aus einem WDR-Bericht mit Aussagen des Caritas-Direktors und einer Expertin; die Vorwürfe selbst sind als Hinweise und Berichte wiedergegeben, nicht als abschließend bewiesen.",
-        "watch_next": [
-          "Veröffentlichung oder Zwischenstand der Studie.",
-          "Konkrete Reaktionen der Caritas auf Zwischenergebnisse.",
-          "Ob weitere Betroffene sich melden."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 3, SDG 16, SDG+ Kinderschutz und institutionelle Rechenschaft"
-        ],
-        "publication_gate": {
-          "news_value": "new_evidence",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Neue Information ist der Start einer externen Aufarbeitung samt Studienauftrag zu schweren historischen Vorwürfen; betroffen sind eine soziale Einrichtung, mögliche ehemalige Heimkinder und die heutige Schutzarchitektur."
-        },
-        "visuals": {
-          "affected_groups": [
-            "kinder_jugend",
-            "beschaeftigte",
-            "kommunen",
-            "staat"
-          ]
-        },
-        "media_impact": null,
-        "media_analysis_version": "2.1",
-        "media_checked_at": "2026-09-07T17:21:31.323Z",
-        "media_trigger_fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
-        "media_trigger": {
-          "relevant": false,
-          "level": "low",
-          "score": 3,
-          "reasons": [
-            "threat_or_fear_frame"
-          ],
-          "matched_terms": [
-            "angst"
-          ],
-          "source_count": 1,
-          "comparable_source_count": 1,
-          "fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
-          "content_fingerprint": "68b37f4bead3e28335352ef3c11ba4133dfdba00c639ebf3d5eb2db942915362",
-          "basis": "controlled_source_text",
-          "version": "2.1"
-        }
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-07T17:24:29.900Z",
-          "content_hash": "0a0a67bcfffbcd3ca9fbfb1a766d25b31dd070dcd404c42524329206d9c8f472",
-          "source_summary": "Die Caritas Bottrop hat nach eigenen Angaben mit der Aufarbeitung möglicher Gewaltvorfälle in einem früheren Kinderheim begonnen. Auslöser war ein anonymer Hinweis einer betroffenen Person, die über sexualisierte, körperliche und psychische Gewalt berichtet haben soll. Die Caritas hat daraufhin weitere Recherchen angestoßen und eine Studie in Auftrag gegeben.\n\nUntersucht werden soll, in welchem Ausmaß Kinder und Jugendliche damals Gewalt ausgesetzt waren und welche strukturellen Bedingungen Übergriffe begünstigt haben könnten. Laut Bericht geht es um das frühere Kindervollheim St. Konrad, heute Kinderdorf am Köllnischen Wald. Die Caritas sagt zugleich, die Vorwürfe beträfen die 1960er und 1970er Jahre; für aktuelle Fälle gebe es keine Hinweise. Im Heim leben derzeit rund 100 Kinder und Jugendliche.",
-          "analysis": {
-            "story_id": "wt-12227eeecd48c0b9",
-            "publication_recommendation": true,
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Die Caritas Bottrop hat eine historische Aufarbeitung zu Gewaltvorwürfen in einem früheren Kinderheim gestartet. Der Bericht nennt zugleich offene Punkte und schließt aktuelle Fälle nach Caritas-Angaben aus.",
-            "detail_summary": "Auslöser ist ein anonymer Hinweis aus dem Januar, nach dem in dem früheren Kinderheim St. Konrad Gewalt erfahren worden sein soll. Die Caritas reagiert darauf mit weiterer Recherche und einer beauftragten Studie der Universität Ulm. Für die öffentliche Bedeutung zählt vor allem, dass damit ein institutioneller Aufarbeitungsprozess beginnt, der mögliche Betroffene und heutige Schutzkonzepte berühren kann. Der Wirkpfad liegt nicht in unmittelbarer Wirkung, sondern in möglicher Anerkennung, Dokumentation und späteren Folgerungen für Prävention und Schutzstrukturen. Zugleich bleibt die Beleglage begrenzt: Gesichert ist bisher der Start der Aufarbeitung und der Vorwurfskontext, nicht aber das Ausmaß der Vorfälle oder spätere Konsequenzen.",
-            "why_relevant": "Die Meldung zeigt eine neue institutionelle Reaktion auf historische Gewaltvorwürfe und kann Folgewirkungen für Aufarbeitung, Schutzkonzepte und Vertrauen in eine soziale Einrichtung haben.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "tendency": "gemischt",
-              "rationale": "Betroffen sind mögliche ehemalige Heimkinder sowie die heute dort lebenden rund 100 Kinder und Jugendliche. Die Aufarbeitung kann Anerkennung und Prävention stärken, zugleich zeigt der Bericht einen schweren Gewaltkontext als mögliches Risiko."
-            },
-            "planet": {
-              "relevance": "offen",
-              "tendency": "offen",
-              "rationale": "Aus den Quellen ergibt sich kein eigenständiger Umwelt- oder Klimabezug."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "tendency": "chance",
-              "rationale": "Der Vorgang betrifft institutionelle Aufarbeitung, Transparenz und die öffentliche Nachprüfbarkeit von Schutzversagen. Das stärkt demokratische Korrekturfähigkeit, ohne dass daraus schon ein Wirkungsnachweis folgt."
-            },
-            "importance": "hoch",
-            "impact_potential": "Die Aufarbeitung kann interne Schutzstandards, Dokumentation und den Umgang mit historischen Gewaltvorwürfen verändern. Für Betroffene eröffnet sie möglicherweise einen Resonanz- und Anerkennungsraum; für die Einrichtung kann sie Prüf- und Anpassungsdruck erzeugen.",
-            "impact_risks": [
-              "Ohne belastbare Ergebnisse bleibt die Debatte vorerst auf Verdachts- und Hinweisniveau.",
-              "Sollten strukturelle Defizite bestätigt werden, könnten Vertrauensverlust und zusätzlicher Aufarbeitungsbedarf zunehmen."
-            ],
-            "mechanisms": [
-              "Anonymer Hinweis löst institutionelle Reaktion aus.",
-              "Externe Studie kann historische Vorfälle und begünstigende Strukturen rekonstruieren.",
-              "Mögliche Folgerungen können Schutzkonzepte und interne Verfahren beeinflussen."
-            ],
-            "first_order": [
-              "Aufbau eines formellen Aufarbeitungsprozesses.",
-              "Sammlung von Aussagen und Archivmaterial."
-            ],
-            "second_order": [
-              "Mögliche Präzisierung von Schutz- und Meldewegen.",
-              "Erhöhte öffentliche Prüfbarkeit des Umgangs mit historischen Vorwürfen."
-            ],
-            "third_order": [
-              "Falls die Studie strukturelle Muster belegt, könnten institutionelle Standards über den Einzelfall hinaus angepasst werden."
-            ],
-            "systemic_relevance": "Mittlere systemische Relevanz ergibt sich aus der Verbindung von Kinderschutz, institutioneller Verantwortung und historischer Aufarbeitung in einer sozialen Trägerstruktur.",
-            "transformation_potential": "Potenzial liegt vor allem in besserer Prävention, transparenterer Dokumentation und möglicher Korrektur von Schutzarchitekturen.",
-            "resilience": "Resilienz hängt davon ab, ob der Träger Betroffenen glaubwürdig zuhört, Ergebnisse offenlegt und Schutzkonzepte nachprüfbar nachschärft.",
-            "side_effects": [
-              "Mehr öffentliche Aufmerksamkeit auf historische Gewalt in Heimen.",
-              "Mögliche Belastung für heutige Beschäftigte und Bewohner durch die Aufarbeitung."
-            ],
-            "uncertainties": [
-              "Das tatsächliche Ausmaß der damaligen Gewalt ist noch nicht belegt.",
-              "Die Studie liegt erst für Herbst 2027 in Aussicht.",
-              "Es ist offen, welche konkreten Konsequenzen sich daraus ergeben."
-            ],
-            "evidence_level": "low to medium, da nur eine journalistische Quelle vorliegt und zentrale Vorwürfe sowie Folgen noch nicht unabhängig bestätigt sind.",
-            "attribution": "Die wesentlichen Angaben stammen aus einem WDR-Bericht mit Aussagen des Caritas-Direktors und einer Expertin; die Vorwürfe selbst sind als Hinweise und Berichte wiedergegeben, nicht als abschließend bewiesen.",
-            "watch_next": [
-              "Veröffentlichung oder Zwischenstand der Studie.",
-              "Konkrete Reaktionen der Caritas auf Zwischenergebnisse.",
-              "Ob weitere Betroffene sich melden."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 3, SDG 16, SDG+ Kinderschutz und institutionelle Rechenschaft"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neue Information ist der Start einer externen Aufarbeitung samt Studienauftrag zu schweren historischen Vorwürfen; betroffen sind eine soziale Einrichtung, mögliche ehemalige Heimkinder und die heutige Schutzarchitektur."
-            },
-            "visuals": {
-              "affected_groups": [
-                "kinder_jugend",
-                "beschaeftigte",
-                "kommunen",
-                "staat"
-              ]
-            },
-            "media_impact": null,
-            "media_analysis_version": "2.1",
-            "media_checked_at": "2026-09-07T17:21:31.323Z",
-            "media_trigger_fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
-            "media_trigger": {
-              "relevant": false,
-              "level": "low",
-              "score": 3,
-              "reasons": [
-                "threat_or_fear_frame"
-              ],
-              "matched_terms": [
-                "angst"
-              ],
-              "source_count": 1,
-              "comparable_source_count": 1,
-              "fingerprint": "ce8b9718f4f5ee6128fdeb47320bca786518416adfdb0f12481a1f80da5be6e2",
-              "content_fingerprint": "68b37f4bead3e28335352ef3c11ba4133dfdba00c639ebf3d5eb2db942915362",
-              "basis": "controlled_source_text",
-              "version": "2.1"
-            }
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-12227eeecd48c0b9-v1-claim-1",
-              "story_id": "wt-12227eeecd48c0b9",
-              "claim": "Die Caritas Bottrop hat die Aufarbeitung von Gewaltvorwürfen in einem früheren Kinderheim begonnen.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "9724d374b5fb8fb800f7",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "4f3e7876843f5270ade7",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "6225fe34b7a8d7c8520e",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "claim_id": "wt-12227eeecd48c0b9-v1-claim-2",
-              "story_id": "wt-12227eeecd48c0b9",
-              "claim": "Es geht um Hinweise auf sexualisierte, körperliche und psychische Gewalt im ehemaligen Kindervollheim St. Konrad aus den 1960er- und 1970er-Jahren.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "f1b0c0f69434e382faf7",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "5eaa4a12c064b0b6f1a4",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "24a5338c9caf945d0355",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "claim_id": "wt-12227eeecd48c0b9-v1-claim-3",
-              "story_id": "wt-12227eeecd48c0b9",
-              "claim": "Die Caritas hat dafür die Klinik für Forensische Psychiatrie und Psychotherapie der Universität Ulm mit einer Studie beauftragt.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "6225fe34b7a8d7c8520e",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "5ffcfa96f1b5d3c3fc7e",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            },
-            {
-              "claim_id": "wt-12227eeecd48c0b9-v1-claim-4",
-              "story_id": "wt-12227eeecd48c0b9",
-              "claim": "Das betroffene Heim heißt heute Kinderdorf am Köllnischen Wald; nach Angaben der Caritas gibt es keine Hinweise auf aktuelle Fälle, und dort leben derzeit etwa 100 Kinder und Jugendliche.",
-              "status": "single_source_claim",
-              "source_id": "wdr-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "915d895838e75a4f5cd5",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "79b9a735486c7c2ec8f2",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                },
-                {
-                  "source_id": "wdr-nachrichten",
-                  "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                  "excerpt_hash": "24a5338c9caf945d0355",
-                  "checked_at": "2026-09-07T17:24:29.900Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T17:24:29.900Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "wdr-nachrichten",
-              "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-              "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803"
-            }
-          ],
-          "numeric_evidence": {
-            "version": 1,
-            "analysis_version": 1,
-            "checked_at": "2026-09-07T17:24:29.900Z",
-            "sources": [
-              {
-                "source_id": "wdr-nachrichten",
-                "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-                "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803",
-                "excerpt_hash": "e7affa0eb2d2bf1e807ebf1a52a5b5b550aa5ca302da67c772fc49a4b9413474",
-                "numbers": [
-                  "7.09",
-                  "2026",
-                  "18",
-                  "44",
-                  "60",
-                  "25",
-                  "100",
-                  "2027",
-                  "42",
-                  "12",
-                  "30",
-                  "1",
-                  "2"
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-07T17:24:29.900Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-b077abe7ae401c71-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "b077abe7ae401c71b42b83c8b1d6d7247f43d571fce98f4eacf563c82acf3b55"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-af34e59ca8dbbc0e-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "af34e59ca8dbbc0ed86d9fdf9209dccf2ef0696907b749dc7023f2c397757b97"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-12227eeecd48c0b9-28a1212dc72ef812-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "28a1212dc72ef812feab4648c4e4231a0c4d53a83e10fc0c9012a7b00853ed2c"
-        },
-        "source_visual": null,
-        "fingerprint": "26512eed0273af8833bf7c0bb306ccf630c748b1262a64fb46ccfb4e87bfeb52",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-07T17:25:44.835Z",
-        "status": "generated"
-      },
-      "pending_update": {
-        "detected_at": "2026-09-07T18:07:09.206Z",
-        "content_hash": "0a0a67bcfffbcd3ca9fbfb1a766d25b31dd070dcd404c42524329206d9c8f472",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/ruhrgebiet/studie-caritas-bottrop-gewalt-kinderheim-100.html",
-            "title": "Die Caritas Bottrop arbeitet Gewaltvorfälle auf",
-            "summary": "In einem Kinderheim der Bottroper Caritas sollen Kinder früher Gewalt erfahren haben. Die Caritas startet die Aufarbeitung.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T19:22:40.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "25787db402adea2994ce4d456ddfecb950d0cdec2cea464ae434e0a0965fc803",
-            "source_item_id": "b7b63f683a674013e8bb7006b80fa1edad831b2be717911e07cb4fc7e2b9f6a2",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T19:22:40.000Z",
-            "ingested_at": "2026-09-07T23:52:11.826Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:52:11.826Z",
-          "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
-          "issue_codes": [],
-          "warning_codes": []
-        }
       }
     },
     {
@@ -29753,7 +29939,7 @@
       "verification_started_at": "2026-09-07T16:10:25.777Z",
       "publish_ready_at": "2026-09-07T16:10:36.707Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-07T18:00:00.000Z",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -30108,9 +30294,12 @@
         "generated_at": "2026-09-07T16:10:45.263Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-07T18:07:09.206Z",
-        "content_hash": "bd2f32f874d85ea5092d3ed1f7cbb6ca2a4511f4be24ddcf7c1dda49b3b24dd6",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "b469f170ebe926e82bb86dd4050c61b66f5d4a7bad3562d63ee750eb9cbd99c4",
+        "checked_at": "2026-09-08T00:06:52.179Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T06:06:52.179Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -30145,24 +30334,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:52:11.826Z",
-          "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-664cfe8f5ccd9c60",
@@ -44514,7 +44688,7 @@
       "verification_started_at": "2026-09-07T14:51:48.306Z",
       "publish_ready_at": "2026-09-07T14:52:04.848Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-07T18:00:00.000Z",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -44901,9 +45075,12 @@
         "generated_at": "2026-09-07T14:54:30.929Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-07T18:07:09.206Z",
-        "content_hash": "5c15bc8893187251a454ac66b6366778dfb988f3204c48ed742c711d6de5e7d7",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "f4b96b990a6a514ea813e3977ced5441c76c8376fe8d002434d6597f46858b17",
+        "checked_at": "2026-09-08T00:06:52.179Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T06:06:52.179Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -44938,24 +45115,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:52:11.826Z",
-          "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-87774fb852f90a20",
@@ -62850,7 +63012,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:52:11.826Z"
+          "checked_at": "2026-09-08T00:06:52.179Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -62870,7 +63032,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:52:11.826Z"
+          "checked_at": "2026-09-08T00:06:52.179Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -62886,7 +63048,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-07T23:52:11.826Z",
+      "updated_at": "2026-09-08T00:06:52.179Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -62926,7 +63088,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 885.3077166666667,
+        "queue_age_minutes": 899.9802666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -62935,7 +63097,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-07T23:52:11.826Z",
+        "checked_at": "2026-09-08T00:06:52.179Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -107836,7 +107998,7 @@
       "verification_started_at": "2026-09-06T10:21:55.310Z",
       "publish_ready_at": "2026-09-06T10:22:08.636Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-07T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -109123,9 +109285,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "c7de69188e5a1f6ef5c184366e5e9e35717d23a5bd839111d19a212ecfcfb939",
-        "checked_at": "2026-09-07T17:52:05.999Z",
+        "checked_at": "2026-09-08T00:06:52.179Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-07T23:52:05.999Z",
+        "expires_at": "2026-09-08T06:06:52.179Z",
         "sources": [
           {
             "source_id": "ndr-info",
@@ -109162,62 +109324,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-07T18:07:09.206Z",
-        "content_hash": "4c029ed44a766bc13aba9632b1809eee1b7242303ccc17bd52c9f32cc4b727c1",
-        "sources": [
-          {
-            "source_id": "ndr-info",
-            "publisher": "NDR",
-            "url": "https://www.ndr.de/nachrichten/niedersachsen/hannover_weser-leinegebiet/seelze-elektro-rollstuhl-loest-grossbrand-in-sonderpostenmarkt-aus,seelze-104.html",
-            "title": "Seelze: Elektro-Rollstuhl löst Großbrand in Sonderpostenmarkt aus",
-            "summary": "Die Batterie des Rollstuhls hatte Funken geschlagen. Das Feuer konnte nicht eingedämmt werden, der Markt wurde komplett zerstört.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T10:03:10.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "9bd2401d826938665e331469a12f0bfdc31650530596217e4707b9dd80d79a4d",
-            "source_item_id": "4308a7f3017d083a560046cd5a3931fb719b6a6b08956e91e871f8a23609fd57",
-            "publisher_id": "ndr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Norddeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T10:03:10.000Z",
-            "ingested_at": "2026-09-06T10:21:08.621Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:ndr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-07T23:52:11.826Z",
-          "fingerprint": "249f18fd4be1f1cc4705514dcda46b786b53e92f94f2d94531e96c099cb8580d",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-2c3f96a91e1a0fb0",
@@ -120323,7 +120430,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:52:11.826Z",
+          "checked_at": "2026-09-08T00:06:52.179Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -165572,7 +165679,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-07T23:52:11.826Z",
+          "checked_at": "2026-09-08T00:06:52.179Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

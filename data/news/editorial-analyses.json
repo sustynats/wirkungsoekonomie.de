@@ -21701,21 +21701,22 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-07T23:40:36.292Z",
-      "next_attempt_at": "2026-09-07T23:55:36.292Z",
+      "last_attempt_at": "2026-09-08T00:08:28.499Z",
+      "next_attempt_at": "2026-09-08T00:23:28.499Z",
       "quality_errors": [],
-      "reason": "BATCH_API_BATCH_CAPACITY"
+      "reason": "AI_BATCH_PENDING"
     },
     "wt-f03755f6f6b8c3b7": {
       "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
       "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-07T23:40:36.292Z",
-      "next_attempt_at": "2026-09-07T23:55:36.292Z",
+      "attempts": 2,
+      "last_attempt_at": "2026-09-08T00:08:28.499Z",
+      "next_attempt_at": "2026-09-08T00:38:28.499Z",
       "quality_errors": [
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
