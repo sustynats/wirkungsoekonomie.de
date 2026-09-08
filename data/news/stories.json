@@ -1,8 +1,833 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T06:37:33.655Z",
-  "updated_at": "2026-09-08T06:52:08.981Z",
+  "updated_at": "2026-09-08T07:06:51.663Z",
   "stories": [
+    {
+      "story_id": "wt-a0440239b5f6ba75",
+      "slug": "haushaltswoche-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-grune-kritis-f6ba75",
+      "title": "Haushaltswoche - Mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant - Grüne kritisieren Umwidmung von KTF-Geldern",
+      "first_seen": "2026-09-08T06:58:56.000Z",
+      "last_updated": "2026-09-08T06:58:56.000Z",
+      "topic": [
+        "Europa",
+        "Finanzen",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-gruene-kritisieren-umwidmung-von-ktf-ge-100.html",
+          "title": "Haushaltswoche - Mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant - Grüne kritisieren Umwidmung von KTF-Geldern",
+          "summary": "Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:58:56.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a4d863e1715ff87f371ff3fb09b260bd694dea709e510e0d29f5195ad59d1b6c",
+          "source_item_id": "d2ad7b49186c4a4a3c5f2442e911cd191297f0919761238513a5d4aaaf36e39d",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:58:56.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a0440239b5f6ba75-claim-01",
+          "story_id": "wt-a0440239b5f6ba75",
+          "claim": "Haushaltswoche - Mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant - Grüne kritisieren Umwidmung von KTF-Geldern: Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "3b0636fe506336292d9ed718ee2ec4f4858191409ef07bdd5b70b5f0a503ab84",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-08T07:06:51.663Z",
+      "event_detected_at": "2026-09-08T07:06:51.663Z",
+      "event_id": "event-51b974a0c225d8faff13",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Finanzen",
+          "Demokratie"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 7.927716666666667,
+        "detection_delay_minutes": 7.927716666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "9ff90a12374cff4ec28c98a452e7fe71b32c84d0b84d13068a08a18efdc88b9b",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-3169ef2d667f0a8f",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "4cf1264f0520c14414eb7dd07c460850fc0f855bb5394499ef3b57e0b2d51cc3",
+        "first_failed_at": "2026-09-08T07:06:51.663Z",
+        "failed_at": "2026-09-08T07:06:51.663Z",
+        "retry_after": "2026-09-08T07:21:51.663Z",
+        "retry_count": 1
+      },
+      "slug": "hacker-angriff-berliner-datenleck-darauf-mussen-burger-nun-besonders-achten-7f0a8f",
+      "title": "Hacker-Angriff: Berliner Datenleck: Darauf müssen Bürger nun besonders achten",
+      "first_seen": "2026-09-08T06:58:00.000Z",
+      "last_updated": "2026-09-08T06:58:00.000Z",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/datenleck-berlin--das-muessen-buerger-jetzt-beachten-38217052.html",
+          "title": "Hacker-Angriff: Berliner Datenleck: Darauf müssen Bürger nun besonders achten",
+          "summary": "Nach dem Datenleck der Berliner Verwaltung sind abertausende vertrauliche Informationen öffentlich zugänglich. Ein Experte erklärt, worauf man jetzt achten sollte.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:58:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f6e33044084339dd4ae82fb22d6173c2cad4e3b38c0f50d330f1e42e57ef1381",
+          "source_item_id": "d18d89b78e87ae216e4089f7b2f5e7e520d45c2b8c5cd92aac135074db623300",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:58:00.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3169ef2d667f0a8f-claim-01",
+          "story_id": "wt-3169ef2d667f0a8f",
+          "claim": "Hacker-Angriff: Berliner Datenleck: Darauf müssen Bürger nun besonders achten: Nach dem Datenleck der Berliner Verwaltung sind abertausende vertrauliche Informationen öffentlich zugänglich. Ein Experte erklärt, worauf man jetzt achten sollte.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "c27d4423a4c8181292072a11f166dc81db9cbfd06ee14931a6c604edca7b8d73",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T07:21:51.663Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-08T07:06:51.663Z",
+      "event_detected_at": "2026-09-08T07:06:51.663Z",
+      "event_id": "event-7a5112cae1bd39042a60",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 56,
+        "public_relevance": "hoch",
+        "topics": [
+          "Digitalisierung"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 8.86105,
+        "detection_delay_minutes": 8.86105,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "39de8547b65d07519ea43aeadef0b76a5dda06b02f4f07a5e384738fcd5e56e0",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T07:06:51.663Z",
+      "rejection": {
+        "at": "2026-09-08T07:06:51.663Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-fec94c5cf2ede512",
+      "slug": "sabotageversuche-an-stromversorgung-weiteres-bekennerschreiben-bei-weisweiler-entdeckt-ede512",
+      "title": "Sabotageversuche an Stromversorgung: Weiteres Bekennerschreiben bei Weisweiler entdeckt",
+      "first_seen": "2026-09-08T06:56:51.000Z",
+      "last_updated": "2026-09-08T06:56:51.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/sabotageversuche-an-stromversorgung--weiteres-bekennerschreiben-bei-weisweiler-entdeckt-38219128.html",
+          "title": "Sabotageversuche an Stromversorgung: Weiteres Bekennerschreiben bei Weisweiler entdeckt",
+          "summary": "Nach dem Fund von selbstgebauten Sprengvorrichtungen an Hochspannungsleitungen nahe des Kraftwerks Weisweiler in Nordrhein-Westfalen hat die Polizei ein weiteres Bekennerschreiben gefunden. Details dazu gab die Polizei Köln am Dienstag aufgrund der laufenden Ermittlungen nicht bekannt. Während der Absuche am Kraftwerk habe es am Montagabend Blitze und Knallgeräusche gegeben. Mögliche Schäden wurden den Angaben zufolge bislang nicht festgestellt. Die Beamten setzten im Umfeld des Kraftwerks am Dienstag die Suche Beweisen, Spuren und dem mutmaßlichen Tatverdächtigen fort.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:56:51.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4dda4e544f8f8416ae334e3721b5038ca01fde45c7b29ba8f3e9fc5fe89ecf6f",
+          "source_item_id": "f0abe571c43f5c7cac0e49bd16f60a9255715495d6490a1ace414b42a9c4b9c8",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:56:51.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-fec94c5cf2ede512-claim-01",
+          "story_id": "wt-fec94c5cf2ede512",
+          "claim": "Sabotageversuche an Stromversorgung: Weiteres Bekennerschreiben bei Weisweiler entdeckt: Nach dem Fund von selbstgebauten Sprengvorrichtungen an Hochspannungsleitungen nahe des Kraftwerks Weisweiler in Nordrhein-Westfalen hat die Polizei ein weiteres Bekennerschreiben gefunden. Details dazu gab die Polizei Köln am Dienstag aufgrund der laufenden Ermittlungen nicht bekannt. Während der Absuche am Kraftwerk habe es am Montagabend Blitze und Knallgeräusche gegeben. Mögliche Schäden wurden den Angaben zufolge bislang nicht festgestellt. Die Beamten setzten im Umfeld des Kraftwerks am Dienstag die Suche Beweisen, Spuren und dem mutmaßlichen Tatverdächtigen fort.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "2d23078249965e5b0add722d18f107a13e5ce3544601bf2a2a17012e84d6e091",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-08T07:06:51.663Z",
+      "event_detected_at": "2026-09-08T07:06:51.663Z",
+      "event_id": "event-2b7f93e5cf37802558f8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 10.01105,
+        "detection_delay_minutes": 10.01105,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "7e287175c093b8ab22f9a37d479df6324d48eb617746645a8a79ffee175b60b2",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-e820bef62dd96612",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "0e81d3e3d437bb441d09c3224b5bdff7476627ce0032446ce635e866a4c0adeb",
+        "first_failed_at": "2026-09-08T07:06:51.663Z",
+        "failed_at": "2026-09-08T07:06:51.663Z",
+        "retry_after": "2026-09-08T07:21:51.663Z",
+        "retry_count": 1
+      },
+      "slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
+      "title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
+      "first_seen": "2026-09-07T14:09:15.000Z",
+      "last_updated": "2026-09-08T06:55:02.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/angriff-mit-stichwaffe-in-ahrensburg-tatverdaechtiger-festgenommen,gewalttat-124.html",
+          "title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
+          "summary": "Bei dem Angriff am Montagvormittag erlitt eine Frau lebensgefährliche, ein Mann leichte Verletzungen. Die Kripo ermittelt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:55:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "0a61e5cb2c1d11cc910df7e7de5231eb0206eee6f156ff06c6ad5d83f6e87786",
+          "source_item_id": "00cc813e1e4f113cebe21e2729f26b8aab065de7f832606562cb6db258b32bc4",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:55:02.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e820bef62dd96612-claim-01",
+          "story_id": "wt-e820bef62dd96612",
+          "claim": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen: Bei dem Angriff am Montagvormittag erlitt eine Frau lebensgefährliche, ein Mann leichte Verletzungen. Die Kripo ermittelt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "f6711943bb27d00e7f633260180bb0a617bba88d6de6b04c7e424d427720fd80",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T07:21:51.663Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-07T14:37:01.659Z",
+      "event_detected_at": "2026-09-07T14:37:01.659Z",
+      "event_id": "event-64fb52d4ca51131651e2",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.827716666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 989.8334,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-2daaed7e97b8ae91",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d986ff2e48a7317f1a3a0733d1cf41639dc8acfc293164a4834a18871b9cf126",
+        "first_failed_at": "2026-09-08T07:06:51.663Z",
+        "failed_at": "2026-09-08T07:06:51.663Z",
+        "retry_after": "2026-09-08T07:21:51.663Z",
+        "retry_count": 1
+      },
+      "slug": "nepal-rescuers-race-to-free-dozens-trapped-in-hydropower-tunnels-b8ae91",
+      "title": "Nepal rescuers race to free dozens trapped in hydropower tunnels",
+      "first_seen": "2026-09-08T06:51:29.000Z",
+      "last_updated": "2026-09-08T06:51:29.000Z",
+      "topic": [
+        "Arbeit",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/asia-pacific/20260908-nepal-rescuers-race-to-free-dozens-trapped-in-hydropower-tunnels",
+          "title": "Nepal rescuers race to free dozens trapped in hydropower tunnels",
+          "summary": "Authorities in Nepal on Tuesday said that rescuers are focusing on three hydropower project tunnels where they believe dozens of workers could be trapped. The announcement came two weeks after ​a devastating ‌flood killed that hundreds and left thousands missing in the Himalayan country and in ⁠neighbouring China's Tibet region.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:51:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "427f6d1c14c9a5ec4b5d8f0a332a0e321dae7777b172bc905467d79da3240c96",
+          "source_item_id": "d5355493ce5012722e4630c43fca87f740bb82edf9bd8837f3d09bc04ee6cc92",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:51:29.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2daaed7e97b8ae91-claim-01",
+          "story_id": "wt-2daaed7e97b8ae91",
+          "claim": "Nepal rescuers race to free dozens trapped in hydropower tunnels: Authorities in Nepal on Tuesday said that rescuers are focusing on three hydropower project tunnels where they believe dozens of workers could be trapped. The announcement came two weeks after ​a devastating ‌flood killed that hundreds and left thousands missing in the Himalayan country and in ⁠neighbouring China's Tibet region.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "6d2dc4971ad528bf181d5faf97a974f80758e3b82b80c0ed76c39dde4b0ed704",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_NEWS_VALUE_CONTEXT_ONLY"
+      ],
+      "quality_retry_after": "2026-09-08T07:21:51.663Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-08T07:06:51.663Z",
+      "event_detected_at": "2026-09-08T07:06:51.663Z",
+      "event_id": "event-7dc88e53d3d74b86ae82",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.377716666666666,
+        "detection_delay_minutes": 15.377716666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "5d9186f36684b9c319543dee78acf960b42df21c7024d66521642f4533a86557",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T07:06:51.663Z",
+      "rejection": {
+        "at": "2026-09-08T07:06:51.663Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_NEWS_VALUE_CONTEXT_ONLY"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-579ce393cb77846c",
+      "slug": "nachrichten-im-ukraine-krieg-russland-nimmt-angriffe-auf-kyjiw-wieder-auf-77846c",
+      "title": "+++ Nachrichten im Ukraine-Krieg +++: Russland nimmt Angriffe auf Kyjiw wieder auf",
+      "first_seen": "2026-09-08T06:45:00.000Z",
+      "last_updated": "2026-09-08T06:45:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/-Nachrichten-im-Ukraine-Krieg-/!6211311",
+          "title": "+++ Nachrichten im Ukraine-Krieg +++: Russland nimmt Angriffe auf Kyjiw wieder auf",
+          "summary": "Behörden melden zwei Todesopfer nach neuen russischen Angriffen. Der ukrainische Generalstaatsanwalt tritt zurück. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:45:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "9d6fb2559fe2d0f18b4982d910f0067b171b6a7ae0104f7dd59906db9f5a2d69",
+          "source_item_id": "a2753b6d3991444addf6443a6848e2b03629cba8123440d996d3caa7dda42d15",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:45:00.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-579ce393cb77846c-claim-01",
+          "story_id": "wt-579ce393cb77846c",
+          "claim": "+++ Nachrichten im Ukraine-Krieg +++: Russland nimmt Angriffe auf Kyjiw wieder auf: Behörden melden zwei Todesopfer nach neuen russischen Angriffen. Der ukrainische Generalstaatsanwalt tritt zurück. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "5e7eb36d96f830199f676d0c5acdaff574c0427d7d2405e2b30de7c306be8650",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-08T07:06:51.663Z",
+      "event_detected_at": "2026-09-08T07:06:51.663Z",
+      "event_id": "event-33e2d2512eba312b855e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.86105,
+        "detection_delay_minutes": 21.86105,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "5904609d2b5b58fcfaba41928d50d489a99c481a30e19178b50cb77c4bd7c161",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-05ffa4fef8bee914",
       "slug": "bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914",
@@ -755,18 +1580,450 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-08T06:41:44.395Z",
         "status": "fallback",
-        "fallback_reason": "HIGGSFIELD_TIMEOUT",
-        "retry_after": "2026-09-08T06:56:44.395Z"
+        "fallback_reason": "HIGGSFIELD_JOB_RETRY_WAIT",
+        "retry_after": "2026-09-08T07:24:13.117Z"
+      }
+    },
+    {
+      "story_id": "wt-c02eed2b9997576b",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "fc5bf6893aeded0f65108bc22903050e804d4e277513665716598c74b2d9402f",
+        "first_failed_at": "2026-09-08T07:06:51.663Z",
+        "failed_at": "2026-09-08T07:06:51.663Z",
+        "retry_after": "2026-09-08T07:21:51.663Z",
+        "retry_count": 1
+      },
+      "slug": "handelsstreit-mit-den-usa-kanadische-gegenzolle-in-kraft-getreten-97576b",
+      "title": "Handelsstreit mit den USA: Kanadische Gegenzölle in Kraft getreten",
+      "first_seen": "2026-09-08T06:34:57.000Z",
+      "last_updated": "2026-09-08T06:34:57.000Z",
+      "topic": [
+        "Europa",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/handelsstreit-mit-den-usa--kanadische-gegenzoelle-in-kraft-getreten-38219050.html",
+          "title": "Handelsstreit mit den USA: Kanadische Gegenzölle in Kraft getreten",
+          "summary": "Im Handelsstreit mit den USA sind am Dienstag die von Kanada verhängten Gegenzölle in Kraft getreten. Die Aufschläge in Höhe von 15 bis 50 Prozent betrifft eine Reihe von US-Waren im Gesamtwert von 20 Milliarden Dollar (17,2 Milliarden Euro), darunter Stahl- und Aluminiumprodukte sowie Milchprodukte. Einige Meeresfrüchteprodukte wurden von der ursprünglichen Liste jedoch gestrichen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:34:57.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "bfd4929ab5906b20cedf830fd92968aad7b0e92a929409b1d7d2dd34852bbab9",
+          "source_item_id": "9248d401dac2356d3d16ba8c438fb7030e799ca4a4e03e0f2a5202cc0e22a179",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:34:57.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c02eed2b9997576b-claim-01",
+          "story_id": "wt-c02eed2b9997576b",
+          "claim": "Handelsstreit mit den USA: Kanadische Gegenzölle in Kraft getreten: Im Handelsstreit mit den USA sind am Dienstag die von Kanada verhängten Gegenzölle in Kraft getreten. Die Aufschläge in Höhe von 15 bis 50 Prozent betrifft eine Reihe von US-Waren im Gesamtwert von 20 Milliarden Dollar (17,2 Milliarden Euro), darunter Stahl- und Aluminiumprodukte sowie Milchprodukte. Einige Meeresfrüchteprodukte wurden von der ursprünglichen Liste jedoch gestrichen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "144d90f5235fa4acfae855187cf2238f3b236a08a8bb5b65c49e4b6c79a029c3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T07:21:51.663Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-08T07:06:51.663Z",
+      "event_detected_at": "2026-09-08T07:06:51.663Z",
+      "event_id": "event-6ab8b8b4d997b6e565a0",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 31.91105,
+        "detection_delay_minutes": 31.91105,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "ad5483d77cb74f8ad680325d36bb05dea97567a7ebc3dbb7358f690a70fe1f11",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T07:06:51.663Z",
+      "rejection": {
+        "at": "2026-09-08T07:06:51.663Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-64d9633f3dfc908d",
+      "slug": "volkswagen-vw-e-kleinwagen-knacken-uberraschend-schnell-marke-von-100-000-vorbestellunge-fc908d",
+      "title": "Volkswagen: VW-E-Kleinwagen knacken überraschend schnell Marke von 100.000 Vorbestellungen",
+      "first_seen": "2026-09-08T06:34:16.000Z",
+      "last_updated": "2026-09-08T06:34:16.000Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/auto/volkswagen-vw-e-kleinwagen-knacken-ueberraschend-schnell-marke-von-100.000-vorbestellungen/100252786.html",
+          "title": "Volkswagen: VW-E-Kleinwagen knacken überraschend schnell Marke von 100.000 Vorbestellungen",
+          "summary": "Der ID.Polo erreicht 30.000 Bestellungen noch vor dem Start im Handel. Volkswagen erhöht deshalb die Fertigungskapazitäten schneller.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:34:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "2d1f33b31ed39a993d0298dc56a013a89b7c67609b8a608d7b8c7694f30b0836",
+          "source_item_id": "160ab8202173722ae36a424d5cfbd04c1fbcb6c959f72bdbdc54915a6242b83e",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:34:16.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-64d9633f3dfc908d-claim-01",
+          "story_id": "wt-64d9633f3dfc908d",
+          "claim": "Volkswagen: VW-E-Kleinwagen knacken überraschend schnell Marke von 100.000 Vorbestellungen: Der ID.Polo erreicht 30.000 Bestellungen noch vor dem Start im Handel. Volkswagen erhöht deshalb die Fertigungskapazitäten schneller.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "d798451b3c0709f7331c7f34efc8cb4d42d9afb210d7c0c58449a635d2a5da33",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-08T07:06:51.663Z",
+      "event_detected_at": "2026-09-08T07:06:51.663Z",
+      "event_id": "event-3e4858203e070ff16770",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 32.59438333333333,
+        "detection_delay_minutes": 32.59438333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "a2c1340f11b0695900fb1cde535b3625cee5e178f54ccbafaa3eed8cae5bf1d1",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-2f1021b7cba45a8b",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a33444df26dc2692f4d8407e3e9c4dd86cee50bd3d4041a5d9e965eca4bd03c3",
+        "first_failed_at": "2026-09-08T07:06:51.663Z",
+        "failed_at": "2026-09-08T07:06:51.663Z",
+        "retry_after": "2026-09-08T07:21:51.663Z",
+        "retry_count": 1
+      },
+      "slug": "handelsstreit-mit-usa-kanada-setzt-gegenzolle-in-kraft-trump-droht-bombardier-a45a8b",
+      "title": "Handelsstreit mit USA: Kanada setzt Gegenzölle in Kraft – Trump droht Bombardier",
+      "first_seen": "2026-09-08T06:33:00.000Z",
+      "last_updated": "2026-09-08T06:33:00.000Z",
+      "topic": [
+        "Wirtschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/wirtschaft/unternehmen/handelsstreit-mit-usa-kanada-setzt-gegenzoelle-in-kraft-trump-droht-bombardier-a-efb205c8-ec95-443c-92bf-a1e4ef6911a9",
+          "title": "Handelsstreit mit USA: Kanada setzt Gegenzölle in Kraft – Trump droht Bombardier",
+          "summary": "Betroffen sind etwa Stahl, Elektronik und Papier: Im Handelsstreit mit den USA hat Kanada Gegenzölle in Kraft gesetzt. US-Präsident Trump baut einen weiteren Konfliktpunkt auf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:33:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3df9b23cefac6c9b95a6657edc783a57a9f993867a490e9d0689247a2f632623",
+          "source_item_id": "b22a3e3d29b21d84f20b898957d8c67c8abd52eccd26b5b7da456badf54d130b",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:33:00.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2f1021b7cba45a8b-claim-01",
+          "story_id": "wt-2f1021b7cba45a8b",
+          "claim": "Handelsstreit mit USA: Kanada setzt Gegenzölle in Kraft – Trump droht Bombardier: Betroffen sind etwa Stahl, Elektronik und Papier: Im Handelsstreit mit den USA hat Kanada Gegenzölle in Kraft gesetzt. US-Präsident Trump baut einen weiteren Konfliktpunkt auf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:06:51.663Z"
+        }
+      ],
+      "content_hash": "f30d9b38aae9e052cf950bab5725ef78aa5ce6b592bf74247634ecb038304ebc",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T07:21:51.663Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T07:06:51.663Z",
+      "event_first_seen_at": "2026-09-08T07:06:51.663Z",
+      "event_detected_at": "2026-09-08T07:06:51.663Z",
+      "event_id": "event-6273b8f011eef897aa93",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 66,
+        "public_relevance": "hoch",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 33.86105,
+        "detection_delay_minutes": 33.86105,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 86,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:06:51.663Z",
+        "fingerprint": "f560129a2e9361f3ab8b0d80e2b6ddab947666e42dfd81c85f5104e0b0fd54c2",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T07:06:51.663Z",
+      "rejection": {
+        "at": "2026-09-08T07:06:51.663Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
       "story_id": "wt-550f98293aec9698",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "67e00550b7c4c790971066c73f0ef09ce5d5fd8d94c3bab50fb06eafcdf871ba",
-        "first_failed_at": "2026-09-08T06:37:33.655Z",
-        "failed_at": "2026-09-08T06:37:33.655Z",
-        "retry_after": "2026-09-08T06:52:33.655Z",
+        "fingerprint": "1bd4f1d944a25bd86cd1ad07c40b14bb8a55b20cce49bc745e0cc34f8b1aa213",
+        "first_failed_at": "2026-09-08T07:06:51.663Z",
+        "failed_at": "2026-09-08T07:06:51.663Z",
+        "retry_after": "2026-09-08T07:21:51.663Z",
         "retry_count": 1
       },
       "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
@@ -784,7 +2041,7 @@
           "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
           "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T06:26:38.000Z",
+          "published_at": "2026-09-08T07:03:31.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
@@ -800,8 +2057,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T06:26:38.000Z",
-          "ingested_at": "2026-09-08T06:37:33.655Z",
+          "source_published_at": "2026-09-08T07:03:31.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -830,22 +2087,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:37:33.655Z"
+          "checked_at": "2026-09-08T07:06:51.663Z"
         }
       ],
       "content_hash": "49c981094cf76588ca2e7fb9438b28093eb2c3ef3efaf70239d21e7b43ebbda7",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T06:52:33.655Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-08T07:21:51.663Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T06:37:33.655Z",
+      "updated_at": "2026-09-08T07:06:51.663Z",
       "event_first_seen_at": "2026-09-08T05:22:10.164Z",
       "event_detected_at": "2026-09-08T05:22:10.164Z",
       "event_id": "event-d98ccda8e5e813b1598c",
@@ -890,23 +2145,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 10.927583333333333,
+        "source_age_minutes": 3.3443833333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 75.39151666666666,
+        "queue_age_minutes": 104.69165,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 99,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T06:37:33.655Z",
+        "checked_at": "2026-09-08T07:06:51.663Z",
         "fingerprint": "937da7a14b51cfe47d8743875a95df84a883b14eddcec3e87780d4e0c7658bf2",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T07:06:51.663Z",
+      "rejection": {
+        "at": "2026-09-08T07:06:51.663Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -980,22 +2247,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:37:33.655Z"
+          "checked_at": "2026-09-08T07:06:51.663Z"
         }
       ],
       "content_hash": "f08086a9966a9795931fda414349559044f51e3fa625dc6bcd42039dbb30593c",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SUMMARY_SENTENCE_COUNT"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T06:52:33.655Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T06:37:33.655Z",
+      "updated_at": "2026-09-08T07:06:51.663Z",
       "event_first_seen_at": "2026-09-08T06:37:33.655Z",
       "event_detected_at": "2026-09-08T06:37:33.655Z",
       "event_id": "event-f54c0eeb074f820f5a13",
@@ -1030,20 +2295,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 16.927583333333335,
+        "source_age_minutes": 46.227716666666666,
         "detection_delay_minutes": 16.927583333333335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 29.300133333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T06:37:33.655Z",
+        "checked_at": "2026-09-08T07:06:51.663Z",
         "fingerprint": "62090415ad3a3cbdbfcc3975fec3394eebb42f4057509535662b4d4e0ce1fc94",
         "issue_codes": [],
         "warning_codes": []
@@ -13443,7 +14708,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -15629,7 +16894,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T17:08:13.000Z",
-            "ingested_at": "2026-09-08T06:37:33.655Z",
+            "ingested_at": "2026-09-08T07:06:51.663Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -15650,7 +16915,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
           "issue_codes": [],
           "warning_codes": []
@@ -16766,7 +18031,7 @@
             "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
             "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T06:34:15.000Z",
+            "published_at": "2026-09-08T06:58:56.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -16782,8 +18047,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T06:34:15.000Z",
-            "ingested_at": "2026-09-08T06:37:33.655Z",
+            "source_published_at": "2026-09-08T06:58:56.000Z",
+            "ingested_at": "2026-09-08T07:06:51.663Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -16797,8 +18062,8 @@
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T06:52:33.655Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-08T07:21:51.663Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -16806,7 +18071,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -16814,10 +18079,10 @@
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "09d4e9b44559b86fdab74ac404acd22feafa5ec6e7b5f90426be616443b3b3fa",
-        "first_failed_at": "2026-09-08T06:37:33.655Z",
-        "failed_at": "2026-09-08T06:37:33.655Z",
-        "retry_after": "2026-09-08T06:52:33.655Z",
+        "fingerprint": "dd31ad96518bd3017578499394548f9de0ccaac6a105b7522d369c0e6a23ef85",
+        "first_failed_at": "2026-09-08T07:06:51.663Z",
+        "failed_at": "2026-09-08T07:06:51.663Z",
+        "retry_after": "2026-09-08T07:21:51.663Z",
         "retry_count": 1
       }
     },
@@ -28341,7 +29606,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -32334,9 +33599,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T06:52:08.981Z",
+        "checked_at": "2026-09-08T07:06:51.663Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T12:52:08.981Z",
+        "expires_at": "2026-09-08T13:06:51.663Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -41621,7 +42886,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -59264,154 +60529,6 @@
       }
     },
     {
-      "story_id": "wt-e820bef62dd96612",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "b79ad677659f5d12289290deacb326070aac6298371f86f4391e2b0b066e38be",
-        "first_failed_at": "2026-09-07T14:37:01.659Z",
-        "failed_at": "2026-09-07T14:37:01.659Z",
-        "retry_after": "2026-09-07T14:52:01.659Z",
-        "retry_count": 1
-      },
-      "slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
-      "title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
-      "first_seen": "2026-09-07T14:09:15.000Z",
-      "last_updated": "2026-09-07T14:09:15.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "ndr-info",
-          "publisher": "NDR",
-          "url": "https://www.ndr.de/nachrichten/schleswig-holstein/angriff-mit-stichwaffe-in-ahrensburg-tatverdaechtiger-festgenommen,gewalttat-124.html",
-          "title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
-          "summary": "Bei dem Angriff am Montagvormittag erlitt eine Frau lebensgefährliche, ein Mann leichte Verletzungen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T14:09:15.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "cb7911814da85bf3524b6ae812d6b0e7b9ad8d117cb0323cbb711fd6942dd71a",
-          "source_item_id": "00cc813e1e4f113cebe21e2729f26b8aab065de7f832606562cb6db258b32bc4",
-          "publisher_id": "ndr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Norddeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T14:09:15.000Z",
-          "ingested_at": "2026-09-07T14:37:01.659Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-e820bef62dd96612-claim-01",
-          "story_id": "wt-e820bef62dd96612",
-          "claim": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen: Bei dem Angriff am Montagvormittag erlitt eine Frau lebensgefährliche, ein Mann leichte Verletzungen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "ndr-info",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:ndr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T14:37:01.659Z"
-        }
-      ],
-      "content_hash": "a95097aa57149d62cbfd524e3d65f6f39b355c64cb86ec9831f9c7cefedb1a1f",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-07T14:52:01.659Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T14:37:01.659Z",
-      "event_first_seen_at": "2026-09-07T14:37:01.659Z",
-      "event_detected_at": "2026-09-07T14:37:01.659Z",
-      "event_id": "event-64fb52d4ca51131651e2",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 27.77765,
-        "detection_delay_minutes": 27.77765,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 94,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T14:37:01.659Z",
-        "fingerprint": "3d759209e3fe7a61ad1f6483fdd9efe880c1a6bd535a0b8659ec9d67d4e09aa9",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T14:37:01.659Z",
-      "rejection": {
-        "at": "2026-09-07T14:37:01.659Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-ccb8468fdaec466f",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -74019,7 +75136,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T06:37:33.655Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -74080,7 +75197,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:52:08.981Z"
+          "checked_at": "2026-09-08T07:06:51.663Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -74100,7 +75217,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:52:08.981Z"
+          "checked_at": "2026-09-08T07:06:51.663Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -74116,7 +75233,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T06:52:08.981Z",
+      "updated_at": "2026-09-08T07:06:51.663Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -74156,7 +75273,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1305.2603,
+        "queue_age_minutes": 1319.9716666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -74165,7 +75282,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T06:52:08.981Z",
+        "checked_at": "2026-09-08T07:06:51.663Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -78187,9 +79304,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "48e0524be033f09c86d9e29c77e50407066a7fcaf1484863cda8fff98dd03382",
         "first_failed_at": "2026-09-07T17:47:04.791Z",
-        "failed_at": "2026-09-08T01:05:54.951Z",
-        "retry_after": "2026-09-08T07:05:54.951Z",
-        "retry_count": 5
+        "failed_at": "2026-09-08T07:06:51.663Z",
+        "retry_after": "2026-09-08T19:06:51.663Z",
+        "retry_count": 6
       },
       "slug": "eruption-des-anak-krakatau-vulkanausbruch-in-indonesien-flughafen-weiter-geschlossen-1ccd32",
       "title": "Eruption des Anak Krakatau: Vulkanausbruch in Indonesien: Flughäfen weiter geschlossen",
@@ -78301,7 +79418,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-06T08:51:00.000Z",
-          "ingested_at": "2026-09-07T21:52:05.137Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -78330,7 +79447,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T01:05:54.951Z"
+          "checked_at": "2026-09-08T07:06:51.663Z"
         },
         {
           "claim_id": "wt-3de38f5a311ccd32-claim-02",
@@ -78350,24 +79467,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T01:05:54.951Z"
+          "checked_at": "2026-09-08T07:06:51.663Z"
         }
       ],
       "content_hash": "7bec21c9ad6da2b53cd798e999c5c7be84abcb3455616cc6114acba33763a9bc",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
-        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 5,
-      "quality_retry_after": "2026-09-08T07:05:54.951Z",
+      "quality_retry_count": 6,
+      "quality_retry_after": "2026-09-08T19:06:51.663Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T01:05:54.951Z",
+      "updated_at": "2026-09-08T07:06:51.663Z",
       "event_first_seen_at": "2026-09-07T04:21:35.045Z",
       "event_detected_at": "2026-09-07T04:21:35.045Z",
       "event_id": "event-3571a475ab0ff094f8f9",
@@ -78403,11 +79519,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1259.5825166666666,
+        "source_age_minutes": 1620.5277166666667,
         "detection_delay_minutes": 15.25075,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1244.3317666666667,
+        "queue_age_minutes": 1605.2769666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -78416,7 +79532,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T01:05:54.951Z",
+        "checked_at": "2026-09-08T07:06:51.663Z",
         "fingerprint": "86d84211d951efd681b76db8fc933f5c34cc87c808ddaaaf70e05c18bbb843da",
         "issue_codes": [],
         "warning_codes": []
@@ -94978,7 +96094,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -95732,7 +96848,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T06:37:33.655Z",
+            "ingested_at": "2026-09-08T07:06:51.663Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -95753,7 +96869,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -124124,7 +125240,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -130154,7 +131270,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -174508,7 +175624,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:52:08.981Z",
+          "checked_at": "2026-09-08T07:06:51.663Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
