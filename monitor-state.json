@@ -8,12 +8,13 @@
     "queue": {
       "firstSeen": "2026-09-07T20:50:46.225Z",
       "active": true
-    },
-    "run": {
-      "firstSeen": "2026-09-08T00:20:55.915Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "34e07a0445db5ca656e5e184",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-08T02:35:57.214Z"
+    }
+  ],
   "dailyDate": "2026-09-07"
 }
