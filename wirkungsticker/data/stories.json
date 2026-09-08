@@ -1,7 +1,101 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T10:13:04.054Z",
+  "updated_at": "2026-09-08T10:36:46.558Z",
   "stories": [
+    {
+      "story_id": "wt-a507ffe4779c1fd4",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "grune-fordern-reformen-in-der-psychiatrischen-versorgung-9c1fd4",
+      "title": "Grüne fordern Reformen in der psychiatrischen Versorgung",
+      "source_summary": "Die Bundestagskurzmeldung berichtet über einen Antrag der Grünen-Fraktion zur psychiatrischen Versorgung. Die Fraktion fordert einen Ausbau ambulanter Behandlungsmöglichkeiten und verweist auf aus ihrer Sicht bestehende Versorgungsbrüche zwischen stationärer und ambulanter Behandlung.\n\nAls Begründung nennt die Quelle steigende stationäre Behandlungen wegen psychischer Erkrankungen, mehr psychiatrische und psychosomatische Krankenhausbetten und fehlende Anschlussangebote nach einem Klinikaufenthalt. Genannt werden außerdem flexiblere Hilfen aus Kliniken, ein Ausbau psychiatrischer Institutsambulanzen, besseres Entlassmanagement und die Wiederherstellung der vollständigen Refinanzierung tariflicher Personalkosten.",
+      "summary": "Die Grünen wollen die psychiatrische Versorgung mit mehr ambulanter Behandlung umbauen. Die Meldung beschreibt vor allem einen parlamentarischen Antrag, keine بالفعل beschlossene Änderung.",
+      "detail_summary": "Im Kern geht es um einen Antrag der Grünen-Fraktion zur psychiatrischen Versorgung mit Schwerpunkt auf ambulanten Angeboten, Institutsambulanzen und besserer Anschlussversorgung nach Klinikaufenthalten. Die Quelle begründet den Vorstoß mit gestiegener stationärer Behandlung und mit Versorgungsbrüchen zwischen Sektoren. Für Menschen mit schweren und chronischen psychischen Erkrankungen könnte ein solcher Umbau den Zugang zu wohnortnaher Hilfe verändern und Wiederaufnahmen verringern, wenn die geforderten Strukturen tatsächlich umgesetzt werden. Für das System wäre das relevant, weil sich Kapazitäten, Zuständigkeiten und Finanzierung zwischen stationär und ambulant verschieben könnten. Belastbar belegt ist hier aber nur der Antrag selbst; eine tatsächliche Reform, Wirkung oder Finanzierungsauswirkung ist noch nicht nachgewiesen.",
+      "why_relevant": "Die Meldung betrifft die Organisation der psychiatrischen Versorgung und damit ein Feld mit direkter Bedeutung für Betroffene, Versorgungskapazitäten und Finanzierung. Wenn der Antrag später in Maßnahmen mündet, kann das Zuständigkeiten, Anreize und Zugänge im Gesundheitssystem verändern.",
+      "topic": [
+        "Gesundheit",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "rationale": "Mehr ambulante Angebote, bessere Übergänge nach Klinikaufenthalten und gesicherte Personalkosten können den Zugang zu Hilfe und die Kontinuität der Versorgung verbessern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle enthält keinen direkten Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "rationale": "Es handelt sich um einen parlamentarischen Antrag und damit um einen öffentlich verhandelten Reformvorschlag mit möglicher Wirkung auf die politische Entscheidungsfindung."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "patientinnen",
+          "aeltere",
+          "kinder_jugend",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T10:26:26.801Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T09:18:00.000Z",
+      "last_updated": "2026-09-08T10:28:51.345Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-f41ec576e0c6556a2ca9",
+      "case_file": null,
+      "source_published_at": "2026-09-08T09:18:00.000Z",
+      "published_at": "2026-09-08T10:28:51.345Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form der Bundestag den Antrag berät oder beschließt.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Ausschussberatung, Abstimmung oder weitere parlamentarische Schritte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e6efbfac503878b7",
+          "announced_at": "2026-09-08T09:18:00.000Z",
+          "follow_up_date": "2026-09-15T10:28:51.345Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T09:18:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-fba5823fb7d08999",
       "title_image": {
@@ -457,6 +551,104 @@
           "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T08:18:17.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4c0a09f9ce090af7",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-e6cc1adc0bfe5cc8-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-918ce848229759fb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c1f3f12f2823a5e2-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c59e090bf31d3a2a-source.png"
+        }
+      },
+      "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
+      "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
+      "source_summary": "Deutschland ist in der neuen Pisa-Studie nach Angaben zweier Berichte so schlecht wie nie zuvor. Beide Texte verweisen auf die OECD als Urheberin der Studie und beschreiben einen erneuten Rückgang der Leistungen von 15-Jährigen in Mathematik, Lesen und Naturwissenschaften.\n\nDie Berichte nennen außerdem die Größenordnung der Untersuchung: weltweit nahmen mehr als 760.000 Schüler aus 91 Staaten und Regionen teil, in Deutschland rund 6.700 Schüler an etwa 250 Schulen. ZDFheute ergänzt konkrete Werte und ordnet ein, dass ein Teil der Jugendlichen die Basiskompetenzen nicht erreicht.",
+      "summary": "Deutschland verzeichnet in der neuen Pisa-Studie einen historischen Tiefstand. Die Untersuchung erfasst große Schülerzahlen weltweit und in Deutschland.",
+      "detail_summary": "Die Quellen berichten übereinstimmend, dass Deutschland in der neuen Pisa-Studie den schwächsten Stand seit Beginn der Erhebungen erreicht hat. Genannt werden sinkende Leistungen in Mathematik, Lesen und Naturwissenschaften sowie eine große Stichprobe mit rund 6.700 Schülern in Deutschland. Für die Einordnung ist das relevant, weil Bildungsleistungen langfristig auf Chancen, Fachkräfteangebot und soziale Teilhabe wirken können. Der mögliche Wirkpfad verläuft über Kompetenzverluste zu späteren Bildungs- und Arbeitsmarkteffekten. Gleichzeitig bleibt offen, welche Ursachen die Studie genau benennt und wie stark einzelne Politikfelder betroffen sind. Die Evidenz stützt die aktuelle Zustandsbeschreibung, nicht aber schon eine gesicherte Wirkung einzelner Maßnahmen.",
+      "why_relevant": "Die Meldung betrifft die Bildungsleistung eines großen Jahrgangs und damit ein zentrales Zukunfts- und Verteilungsthema mit möglichen Folgen für Arbeitsmarkt, Teilhabe und staatliche Steuerung.",
+      "topic": [
+        "Wirtschaft",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Sinkende Kompetenzwerte bei vielen Jugendlichen können künftige Bildungs- und Teilhabechancen verschlechtern. Der Befund ist groß genug, um soziale Folgekosten plausibel zu machen, aber die Ursachen bleiben offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle behandelt keinen direkten Umwelt- oder Klimawirkpfad. Ein indirekter Bezug über künftige Qualifikation ist möglich, aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Bildungsniveau und Basiskompetenzen beeinflussen die demokratische Korrekturfähigkeit, weil Verständlichkeit, Urteilskraft und Informationsverarbeitung davon abhängen. Ein konkreter demokratischer Effekt ist aus der Quelle noch nicht nachgewiesen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T08:22:13.205Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T08:00:21.000Z",
+      "last_updated": "2026-09-08T08:23:27.568Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-3f8d4c75c0276c438696",
+      "case_file": null,
+      "source_published_at": "2026-09-08T07:30:00.000Z",
+      "published_at": "2026-09-08T08:23:27.568Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:00:21.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:30:00.000Z",
           "primary_source": false
         }
       ]

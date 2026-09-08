@@ -2,44 +2,34 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T10:13:04.054Z",
-  "scanned_stories": 150,
-  "scanned_subjects": 131,
+  "started_at": "2026-09-08T10:29:32.164Z",
+  "scanned_stories": 151,
+  "scanned_subjects": 132,
   "editorial_candidates": 24,
   "ready_for_research": 8,
   "research_pending": 7,
-  "retry_deferred": 3,
+  "retry_deferred": 5,
   "editorial_research_sources_discovered": 34,
-  "selected": 5,
-  "editorial_research_started": 8,
+  "selected": 3,
+  "editorial_research_started": 4,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 8,
-  "research_tokens": 63098,
-  "analysis_tokens": 54436,
-  "estimated_cost_usd": 0.284336,
-  "quality_retries": 4,
+  "research_calls": 4,
+  "research_tokens": 28141,
+  "analysis_tokens": 24199,
+  "estimated_cost_usd": 0.125681,
+  "quality_retries": 2,
   "publication_deferred": true,
   "failed": [
     {
       "story_id": "wt-b5e0a39f46388642",
       "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T10:28:04.054Z"
-    },
-    {
-      "story_id": "wt-1c2c187d0b858b7c",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_FACT_WITHOUT_SOURCE,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T18:13:04.054Z"
+      "next_attempt_at": "2026-09-08T10:59:32.164Z"
     },
     {
       "story_id": "wt-de413d33343f350b",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_AUTHOR_PERSPECTIVE_UNGROUNDED",
-      "next_attempt_at": "2026-09-08T10:28:04.054Z"
-    },
-    {
-      "story_id": "wt-f7d7115a53ff2c2f",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_IMPACT_OPEN,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T22:13:04.054Z"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_TEASER_LENGTH,EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+      "next_attempt_at": "2026-09-08T10:59:32.164Z"
     }
   ],
   "candidates": [
@@ -1082,5 +1072,5 @@
     "attention_required": []
   },
   "batch_deferred": 1,
-  "completed_at": "2026-09-08T10:17:57.685Z"
+  "completed_at": "2026-09-08T10:32:15.445Z"
 }
