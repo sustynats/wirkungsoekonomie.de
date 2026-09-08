@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { assessVercelBilling, validateHostingMigrationPolicy } from "./hosting-migration-policy.mjs";
 
 const root = process.cwd();
 const policy = JSON.parse(
@@ -39,6 +40,14 @@ try {
 } catch {
   console.error("VERCEL_RELEASE_BUDGET_GATE=FAIL");
   console.error("- Vercel returned an unreadable team billing response; fail closed.");
+  process.exit(1);
+}
+
+const admissionFailures = [...validateHostingMigrationPolicy(policy), ...assessVercelBilling(team).failures];
+if (admissionFailures.length) {
+  console.error("VERCEL_RELEASE_BUDGET_GATE=FAIL");
+  admissionFailures.forEach((failure) => console.error(`- ${failure}`));
+  console.error("NO_NEW_VERCEL_BUILD=true");
   process.exit(1);
 }
 

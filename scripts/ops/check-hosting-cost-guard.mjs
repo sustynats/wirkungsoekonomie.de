@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { validateHostingMigrationPolicy } from "./hosting-migration-policy.mjs";
 
 const root = process.cwd();
 const policyPath = path.join(root, "ops", "hosting-cost-policy.json");
@@ -12,6 +13,7 @@ function readJson(filePath) {
 
 const failures = [];
 const policy = readJson(policyPath);
+failures.push(...validateHostingMigrationPolicy(policy));
 const buildLedger = fs
   .readFileSync(buildLedgerPath, "utf8")
   .split("\n")
@@ -81,6 +83,9 @@ if (failures.length > 0) {
 }
 
 console.log("HOSTING_COST_GUARD=PASS");
+console.log("VERCEL_TARGET_MONTHLY_BUDGET_EUR=0");
+console.log("VERCEL_IS_DEFAULT=false");
+console.log("MIGRATION_REQUIRES_BACKUP_RESTORE_PARITY_ROLLBACK=true");
 console.log("VERCEL_GROSS_MONTHLY_BUDGET_EUR=25");
 console.log("VERCEL_MONTHLY_BUILD_LIMIT_ALL_PROJECTS=4");
 console.log("VERCEL_PRODUCTION_REBUILD=false");

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { assessVercelBilling } from "./hosting-migration-policy.mjs";
 
 const root = process.cwd();
 const baseline = JSON.parse(
@@ -24,15 +25,19 @@ if (teamResult.status !== 0) {
   failures.push("Vercel team billing state could not be read");
 } else {
   const team = JSON.parse(teamResult.stdout);
+  const billingAssessment = assessVercelBilling(team);
+  failures.push(...billingAssessment.failures);
+  console.log(`VERCEL_CURRENT_PLAN=${billingAssessment.plan}`);
+  console.log(`VERCEL_ZERO_COST_PLAN_TARGET_MET=${billingAssessment.zeroCostTargetMet}`);
+  // This endpoint does not establish the complete Spend Management configuration.
+  // Never confuse a project/build settings check with a provider-side spending cap.
+  console.log("VERCEL_PROVIDER_HARD_SPEND_CAP=NOT_VERIFIED_BY_THIS_ENDPOINT");
   const invoiceItems = team.billing?.invoiceItems ?? {};
   if ((invoiceItems.teamSeats?.quantity ?? 0) !== baseline.expected.additional_team_seats) {
     failures.push("Vercel additional team seats are enabled");
   }
   if ((invoiceItems.analytics?.quantity ?? 0) !== 0) {
     failures.push("Paid Vercel Analytics is enabled");
-  }
-  if ((invoiceItems.observabilityPlus?.quantity ?? 0) !== 0) {
-    failures.push("Vercel Observability Plus is enabled");
   }
 }
 
