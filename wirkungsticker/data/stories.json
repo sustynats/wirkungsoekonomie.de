@@ -1,7 +1,149 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T18:07:16.921Z",
+  "updated_at": "2026-09-08T18:37:17.573Z",
   "stories": [
+    {
+      "story_id": "wt-3707b0d66087698b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "zwolf-lander-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-87698b",
+      "title": "Zwölf Länder wollen Handel mit Israels Siedlungen im Westjordanland sanktionieren",
+      "source_summary": "Zwölf Staaten wollen den Handel mit Waren aus israelischen Siedlungen im Westjordanland sanktionieren. Nach den Meldungen zählen dazu Großbritannien, Frankreich und Kanada, Deutschland nicht. Israel verurteilte das Vorhaben und ordnete die Schließung des britischen Konsulats in Jerusalem an.\n\nZugleich wies die israelische Justiz einen Eilantrag gegen das umstrittene Siedlungsprojekt E1 zurück. Eine der Quellen nennt zudem die Begründung der Staaten, die Siedlungen verstießen gegen Völkerrecht. Offen bleibt, wie konkret die Handelsbeschränkungen ausgestaltet werden und wann sie greifen sollen.",
+      "summary": "Zwölf Länder wollen Handel mit Siedlungswaren sanktionieren. Die Meldung hat politischen und wirtschaftlichen Bezug, der genaue Umfang bleibt offen.",
+      "detail_summary": "Die Nachricht beschreibt eine gemeinsame Ankündigung von zwölf Staaten, den Handel mit Waren aus israelischen Siedlungen im Westjordanland zu sanktionieren. Genannt werden Großbritannien, Frankreich und Kanada; Deutschland gehört nach der Meldung nicht dazu. Israel weist das Vorhaben zurück und reagiert mit der Schließung des britischen Konsulats in Jerusalem. Parallel meldet die Quelle eine juristische Niederlage der Gegner des E1-Projekts: Ein Eilantrag gegen das Siedlungsvorhaben wurde abgewiesen. Für die Wirkung ist vor allem der mögliche Pfad über Handelsbeschränkungen, diplomatische Spannungen und zusätzliche Belastungen für Siedlungsökonomie und Außenbeziehungen relevant. Sicher ist bisher nur die Ankündigung; ob und wie weit die Maßnahmen umgesetzt werden, bleibt offen.",
+      "why_relevant": "Die Meldung betrifft mögliche neue Handelsbeschränkungen gegen Siedlungswaren und damit einen materiellen Eingriff in Handel, Diplomatie und den Konfliktkontext.",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die angekündigten Handelsbeschränkungen können den Warenfluss aus Siedlungen mindern und politischen Druck erhöhen, zugleich aber diplomatische Gegenreaktionen und Belastungen für Betroffene auslösen.",
+          "positive_path": {
+            "mechanism": "Weniger Handel mit Siedlungswaren kann wirtschaftlichen Anreiz und internationale Normalisierung der Siedlungen verringern.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Gegenreaktionen wie Konsulatsschließung und weitere Eskalation können diplomatische Spannungen und Konfliktkosten erhöhen.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein belastbarer Umweltwirkpfad ist in den gelieferten Quellen nicht beschrieben.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Ankündigung betrifft staatliche Außen- und Handelspolitik sowie rechtliche Auseinandersetzungen; das kann politische Korrekturfähigkeit stärken, zugleich aber Konfliktverhärtung fördern.",
+          "positive_path": {
+            "mechanism": "Koordinierte Beschränkungen zeigen eine gemeinsame politische Position und können rechtliche und diplomatische Kontrolle verstärken.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Vergeltungsmaßnahmen und die Schärfung des Konfliktrahmens können Verhandlungen und institutionelle Deeskalation erschweren.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T18:37:17.573Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:45:32.000Z",
+      "last_updated": "2026-09-08T18:40:36.700Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-a5922a6b009747149c00",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:45:32.000Z",
+      "published_at": "2026-09-08T18:40:36.700Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob und wann die angekündigten Handelsbeschränkungen rechtlich beschlossen oder umgesetzt werden.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "förmliche Beschluss- oder Umsetzungsmitteilung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0fa8541f64c3c3ca",
+          "announced_at": "2026-09-08T15:45:32.000Z",
+          "follow_up_date": "2026-09-15T18:40:36.700Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, welche konkreten Waren, Staaten und Rechtsinstrumente von den geplanten Sanktionen erfasst werden.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "benannte Produktgruppen und Staatenliste",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-04852b2a8be0ba9b",
+          "announced_at": "2026-09-08T17:44:29.000Z",
+          "follow_up_date": "2026-09-15T18:40:36.700Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/zwoelf-laender-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-38222080.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:45:32.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/zwoelf-laender-sanktionieren-handel-mit-israelischen-siedlungen-in-besetzten-palaestinensergebieten-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T17:44:29.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b84af952fb761238",
       "title_image": {
