@@ -1,7 +1,393 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T16:56:05.979Z",
+  "updated_at": "2026-09-08T17:06:38.176Z",
   "stories": [
+    {
+      "story_id": "wt-ed33c0962c4a697d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
+      "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+      "source_summary": "Der MDR berichtet im Liveticker zum Landtagswahlabend in Sachsen-Anhalt über ein vorläufiges Ergebnis, nach dem die AfD bei 43,8 Prozent liegt. In derselben Meldung heißt es, Ministerpräsident Schulze sehe für die CDU keinen Regierungsauftrag mehr. Ein weiterer MDR-Beitrag verweist auf eine politische Reaktion von Markus Söder mit der Formulierung, die AfD sei in Sachsen-Anhalt „am Zug“.\n\nZusätzlich meldet der MDR, Sachsen-Anhalt habe wegen des Wahlausgangs eine Verschiebung der turnusmäßigen Übernahme des Vorsitzes der Ministerpräsidentenkonferenz vorgeschlagen. Offene Punkte bleiben die amtliche Feststellung des Ergebnisses und die konkreten Folgen für Gespräche, Mehrheiten und den MPK-Zeitplan.",
+      "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
+      "detail_summary": "Der Kern der Meldung ist ein vorläufiges Wahlergebnis in Sachsen-Anhalt mit 43,8 Prozent für die AfD und die politische Reaktion der CDU. Neu hinzu kommt der Vorschlag, die turnusmäßige Übernahme des Vorsitzes der Ministerpräsidentenkonferenz zu verschieben. Das ist materiell relevant, weil ein Wahlresultat hier nicht nur die politische Lage, sondern auch einen föderalen Ablauf und die institutionelle Übergabe berührt. Ein möglicher Wirkpfad führt von der veränderten Mehrheits- und Verhandlungslage zu neuen Zuständigkeiten, Gesprächen und einem geänderten Zeitplan. Die Wirkung bleibt aber vorläufig: Das Ergebnis ist noch nicht amtlich festgestellt, und der MPK-Vorschlag ist nach Quelle erst ein Vorschlag. Für eine bestätigte Einordnung fehlen außerdem unabhängige Belege außerhalb desselben Hauses.",
+      "why_relevant": "Die Meldung verbindet ein starkes Wahlergebnis mit möglichen Folgen für Regierungsbildung und föderale Abläufe. Dadurch verändert sich nicht nur die politische Lage, sondern auch ein konkreter institutioneller Zeitplan.",
+      "topic": [
+        "Demokratie",
+        "Politik",
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Das Ergebnis verschiebt politische Mehrheits- und Verhandlungslagen; zugleich sind die praktischen Folgen noch offen und teils nur vorgeschlagen.",
+          "positive_path": {
+            "mechanism": "Ein klareres Wahlergebnis kann Verhandlungen, Zuständigkeiten und Übergaben ordnen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die neue Lage kann Regierungsbildung, Koalitionsgespräche und institutionelle Übergänge erschweren oder verzögern.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den gelieferten Quellen gibt es keinen belastbaren Umwelt- oder Klimapfad.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Meldung betrifft Wahlausgang, Regierungsauftrag und Mehrheitsbildung. Das berührt demokratische Korrekturfähigkeit, aber die konkrete institutionelle Folge ist noch offen.",
+          "positive_path": {
+            "mechanism": "Ein klar festgestelltes Ergebnis kann die öffentliche Willensbildung und die Neuordnung von Mehrheiten sichtbar machen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein umkämpftes oder instabiles Folgegefüge kann Verhandlungen, Legitimitätsdebatten und Übergaben belasten.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "AfD-Anteil",
+            "value": "43,8",
+            "unit": "Prozent",
+            "context": "vorläufiges Ergebnis in Sachsen-Anhalt",
+            "claim_id": "wt-ed33c0962c4a697d-v2-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "beschaeftigte",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T17:06:38.176Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T12:35:38.000Z",
+      "last_updated": "2026-09-08T17:10:25.881Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-b05e38596ac7062bc4e0",
+      "case_file": {
+        "case_id": "case-c3b7412b8f0f9d",
+        "member_count": 9,
+        "publisher_count": 13,
+        "members": [
+          {
+            "story_id": "wt-ed33c0962c4a697d",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+            "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
+            "updated_at": "2026-09-08T17:10:25.881Z",
+            "published_at": "2026-09-07T13:43:48.649Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-550f98293aec9698",
+            "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+            "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
+            "updated_at": "2026-09-08T11:24:45.444Z",
+            "published_at": "2026-09-08T11:24:45.444Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-255776ddd744e745",
+            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
+            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
+            "updated_at": "2026-09-08T05:54:13.168Z",
+            "published_at": "2026-09-07T20:39:39.302Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-ce34d0b6e55327b5",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
+            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
+            "updated_at": "2026-09-07T18:23:55.805Z",
+            "published_at": "2026-09-07T18:23:55.805Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-67096fe077900925",
+            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
+            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
+            "updated_at": "2026-09-07T13:43:27.050Z",
+            "published_at": "2026-09-07T13:43:27.050Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-e10c23f5e37ed39e",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
+            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
+            "updated_at": "2026-09-06T20:53:01.243Z",
+            "published_at": "2026-09-06T20:53:01.243Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-12f9c680daba4f09",
+            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
+            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
+            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
+            "updated_at": "2026-09-06T20:07:20.597Z",
+            "published_at": "2026-09-06T20:07:20.597Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ebecf5b3f91d490",
+            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
+            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+            "updated_at": "2026-09-05T23:19:18.605Z",
+            "published_at": "2026-09-05T22:07:32.381Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-06476c6e980f5f47",
+            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-05T12:01:00.915Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-07T15:04:55.000Z",
+      "published_at": "2026-09-07T13:43:48.649Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "mdr-nachrichten",
+              "mdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob das Wahlergebnis amtlich festgestellt wird und welche Folgen es für Gespräche und Mehrheiten hat.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "amtliche Feststellung des Ergebnisses und dokumentierte Koalitions- oder Sondierungsschritte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-1af43c20b881d82e",
+          "announced_at": "2026-09-07T15:04:55.000Z",
+          "follow_up_date": "2026-09-15T17:10:25.881Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die vorgeschlagene Verschiebung des MPK-Vorsitzes tatsächlich beschlossen wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Beschluss oder Verzicht auf die Verschiebung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3b8e71221aac9b7c",
+          "announced_at": "2026-09-07T15:04:55.000Z",
+          "follow_up_date": "2026-09-15T17:10:25.881Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-154,wahl-560.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T15:04:55.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/video-1644892.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T18:38:06.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4da4b09830c09b15",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fur-sanofi-c09b15",
+      "title": "Insulin aus Frankfurt: EU genehmigt 400 Millionen Euro für Sanofi",
+      "source_summary": "Sanofi will in Frankfurt-Höchst nach einem Bericht der hessenschau ein neues Insulinwerk bauen. Die EU-Kommission habe dafür staatliche Fördergelder in Höhe von 400 Millionen Euro genehmigt und dies mit der Bedeutung für die Insulinversorgung begründet. Laut Bericht verpflichtet sich Sanofi, bis Ende 2032 eine neue Insulinfabrik am Standort aufzubauen und dort bis Ende 2042 jährlich mindestens 1,1 Tonnen Insulin herzustellen.\n\nDie Kommission verweist zudem darauf, dass der Standort die einzige Humaninsulin-Produktion im Europäischen Wirtschaftsraum und eine von nur zwei Insulin-Produktionsstätten dort sei. Offen bleibt, wie der genaue Vollzug der Förderung aussieht und wie belastbar die Einordnung ohne weitere Quelle ist.",
+      "summary": "EU-Brüssel soll 400 Millionen Euro für Sanofi in Frankfurt genehmigt haben. Das würde Investition, Standortbindung und künftige Insulinproduktion beeinflussen.",
+      "detail_summary": "Der Bericht beschreibt eine genehmigte Förderung für Sanofi am Standort Frankfurt-Höchst und eine damit verknüpfte Investition in ein neues Insulinwerk. Materiell relevant ist das, weil sich dadurch Kapitalfluss, Produktionskapazität und Versorgungssicherheit für ein Arzneimittel mit möglicher Systembedeutung ändern können. Der Wirkpfad reicht von der Beihilfe über den Aufbau der Anlage bis zu künftiger Produktion und möglicher Lieferstabilität. Unsicher bleibt, wie schnell und vollständig das Vorhaben umgesetzt wird und ob die berichteten Mengen- und Standortangaben sich in weiteren Quellen bestätigen. Die Meldung ist deshalb vorläufig und wegen der Einordnung der Versorgungslage noch nicht abschließend.",
+      "why_relevant": "Die Meldung betrifft einen genehmigten Förderrahmen und damit eine konkrete Änderung von Kapitalfluss und potenzieller Produktionskapazität in einem medizinisch relevanten Markt.",
+      "topic": [
+        "Europa"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn die Investition und der Bau wie berichtet umgesetzt werden, kann das die Verfügbarkeit von Humaninsulin stabilisieren und Lieferengpässe eher mindern. Der Pfad ist jedoch noch ex ante und hängt an Umsetzung, Zeitplan und tatsächlicher Produktion.",
+          "positive_path": {
+            "mechanism": "Förderung und Investition ermöglichen Aufbau neuer Produktionskapazität; das kann Versorgung und Standortsicherung verbessern.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Falls Umsetzung, Genehmigungsauflagen oder Bau verzögert scheitern, bleibt die erwartete Kapazität aus und die Versorgungslage ändert sich nicht.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den gelieferten Quellen fehlt ein belastbarer Pfad zu Umwelt- oder Klimawirkungen. Es gibt keine Angaben zu Energiebedarf, Emissionen oder Ressourcenverbrauch des Projekts.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Beihilfeentscheidung zeigt staatliche Steuerung im EU-Rahmen und betrifft damit Regeln, Aufsicht und öffentliche Korrekturfähigkeit. Eine direkte demokratische Wirkung ist aber nicht belegt; relevant ist vor allem die institutionelle Entscheidungs- und Begründungsstruktur.",
+          "positive_path": {
+            "mechanism": "Beihilfeprüfung und öffentliche Begründung machen wirtschaftliche Förderung transparent und kontrollierbar.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn zentrale Produktionskapazität stark an einzelne Standorte gebunden bleibt, kann das die politische Verwundbarkeit bei Störungen erhöhen.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Fördergeld",
+            "value": "400",
+            "unit": "Millionen Euro",
+            "context": "Genehmigte staatliche Unterstützung für Sanofi",
+            "claim_id": "wt-4da4b09830c09b15-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "patientinnen",
+          "unternehmen",
+          "beschaeftigte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T17:06:38.176Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:37:22.000Z",
+      "last_updated": "2026-09-08T17:08:56.438Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-d733eb8b40e9e5032787",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:37:22.000Z",
+      "published_at": "2026-09-08T17:08:56.438Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Förderung und der Bau wie berichtet umgesetzt werden und ob sich der Zeitplan bis Ende 2032/2042 bestätigt.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Baubeginn, Fördervollzug, Fertigstellung, Produktionsstart",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-75143a83f77cf10d",
+          "announced_at": "2026-09-08T15:37:22.000Z",
+          "follow_up_date": "2026-09-15T17:08:56.438Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/wirtschaft/insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fuer-sanofi-v1,sanofi-insulin-frankfurt-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:37:22.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-d2fe68062d8518b6",
       "title_image": {
@@ -1358,210 +1744,6 @@
           "url": "https://www.stern.de/politik/deutschland/angriffe-auf-energieversorgung--sabotage-am-stromnetz--polizei-findet-bekennerschreiben-38219776.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T10:15:26.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-550f98293aec9698",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
-      "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
-      "source_summary": "Zwei MDR-Artikel zum Sachsen-Anhalt-Ticker melden nach der Wahl neue Bewegung bei der Regierungsbildung. Laut Abstract will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Zugleich heißt es, eine Koalition sei derzeit nicht in Sicht. Der Materialkontext bleibt ein Liveblog, also eine fortlaufend aktualisierte Nachrichtenlage. Weitere Belege für Annahmen, Zusagen oder tatsächliche Gesprächsergebnisse sind in den gelieferten Auszügen nicht enthalten.\n\nDie Seite verweist außerdem auf ein eingebettetes MDR-Video und auf frühere Ticker-Meldungen im gleichen Themenstrang. In den gelieferten Textstellen steht aber nur die Ankündigung der Sondierungseinladung und die Einschätzung, dass eine Koalition aktuell nicht absehbar ist.",
-      "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
-      "detail_summary": "Die gelieferte Quelle meldet als neue Information, dass die AfD nach der Wahl in Sachsen-Anhalt alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen will. Das ist für die Regierungsbildung materiell relevant, weil daraus Gespräche, Abgrenzungen oder Koalitionsoptionen folgen können. Die Wirkung liegt zunächst nicht im Ereignis selbst, sondern im möglichen Wirkpfad auf Mehrheitsbildung, Verfahrensabläufe und spätere Entscheidungen im Landtag. Als Folge kommen vor allem veränderte Verhandlungslagen und öffentlich sichtbare Positionierungen der anderen Fraktionen in Betracht. Die Evidenz bleibt begrenzt, weil die gelieferten Auszüge im Kern auf denselben MDR-Text verweisen und keine unabhängige Bestätigung der Einladung oder ihrer Ergebnisse enthalten.",
-      "why_relevant": "Die Meldung betrifft die Bildung von Macht- und Mehrheitsverhältnissen im neu gewählten Landtag. Solche Sondierungen können die Regierungsbildung, Fraktionsstrategien und spätere Entscheidungen unmittelbar beeinflussen.",
-      "topic": [
-        "Demokratie",
-        "Politik"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "offen",
-          "rationale": "Die mögliche Wirkung betrifft die politische Handlungsfähigkeit des Landtags und damit konkrete Entscheidungen, aber der Ausgang der Gespräche ist offen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Aus den gelieferten Quellen ergibt sich kein direkter Umweltbezug."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "offen",
-          "rationale": "Die Meldung betrifft Sondierungen, Mehrheitsbildung und damit den demokratischen Entscheidungsprozess im Parlament."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "europa"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T11:22:01.370Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T05:19:28.000Z",
-      "last_updated": "2026-09-08T11:24:45.444Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-d98ccda8e5e813b1598c",
-      "case_file": {
-        "case_id": "case-c3b7412b8f0f9d",
-        "member_count": 9,
-        "publisher_count": 13,
-        "members": [
-          {
-            "story_id": "wt-550f98293aec9698",
-            "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
-            "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
-            "updated_at": "2026-09-08T11:24:45.444Z",
-            "published_at": "2026-09-08T11:24:45.444Z",
-            "kind": "Weitere Entwicklung",
-            "current": true
-          },
-          {
-            "story_id": "wt-255776ddd744e745",
-            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
-            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
-            "updated_at": "2026-09-08T05:54:13.168Z",
-            "published_at": "2026-09-07T20:39:39.302Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-ce34d0b6e55327b5",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
-            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
-            "updated_at": "2026-09-07T18:23:55.805Z",
-            "published_at": "2026-09-07T18:23:55.805Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-ed33c0962c4a697d",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
-            "summary": "Die AfD führt laut vorläufigem Ergebnis in Sachsen-Anhalt deutlich. Für die CDU beschreibt der Bericht einen Verlust des Regierungsauftrags und eine Rolle in der Opposition.",
-            "updated_at": "2026-09-07T13:43:48.649Z",
-            "published_at": "2026-09-07T13:43:48.649Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-67096fe077900925",
-            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
-            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
-            "updated_at": "2026-09-07T13:43:27.050Z",
-            "published_at": "2026-09-07T13:43:27.050Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-e10c23f5e37ed39e",
-            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
-            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
-            "updated_at": "2026-09-06T20:53:01.243Z",
-            "published_at": "2026-09-06T20:53:01.243Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-12f9c680daba4f09",
-            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
-            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
-            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
-            "updated_at": "2026-09-06T20:07:20.597Z",
-            "published_at": "2026-09-06T20:07:20.597Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ebecf5b3f91d490",
-            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
-            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
-            "updated_at": "2026-09-05T23:19:18.605Z",
-            "published_at": "2026-09-05T22:07:32.381Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-06476c6e980f5f47",
-            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
-            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
-            "updated_at": "2026-09-05T12:28:41.779Z",
-            "published_at": "2026-09-05T12:01:00.915Z",
-            "kind": "Kontext oder Einordnung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-08T07:03:31.000Z",
-      "published_at": "2026-09-08T11:24:45.444Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "mdr-nachrichten",
-              "mdr-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob die angekündigten Sondierungen tatsächlich stattfinden.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Öffentliche Bestätigung oder Beginn von Gesprächen mit den Fraktionen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-7c5e9eaa320463b2",
-          "announced_at": "2026-09-08T07:03:31.000Z",
-          "follow_up_date": "2026-09-15T11:24:45.444Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T07:03:31.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-162,wahl-560.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T10:47:12.000Z",
           "primary_source": false
         }
       ]
