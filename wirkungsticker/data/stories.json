@@ -1,7 +1,105 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T07:41:48.796Z",
+  "updated_at": "2026-09-08T08:22:13.205Z",
   "stories": [
+    {
+      "story_id": "wt-4c0a09f9ce090af7",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-e6cc1adc0bfe5cc8-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-918ce848229759fb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c1f3f12f2823a5e2-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c59e090bf31d3a2a-source.png"
+        }
+      },
+      "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
+      "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
+      "source_summary": "Deutschland ist in der neuen Pisa-Studie nach Angaben zweier Berichte so schlecht wie nie zuvor. Beide Texte verweisen auf die OECD als Urheberin der Studie und beschreiben einen erneuten Rückgang der Leistungen von 15-Jährigen in Mathematik, Lesen und Naturwissenschaften.\n\nDie Berichte nennen außerdem die Größenordnung der Untersuchung: weltweit nahmen mehr als 760.000 Schüler aus 91 Staaten und Regionen teil, in Deutschland rund 6.700 Schüler an etwa 250 Schulen. ZDFheute ergänzt konkrete Werte und ordnet ein, dass ein Teil der Jugendlichen die Basiskompetenzen nicht erreicht.",
+      "summary": "Deutschland verzeichnet in der neuen Pisa-Studie einen historischen Tiefstand. Die Untersuchung erfasst große Schülerzahlen weltweit und in Deutschland.",
+      "detail_summary": "Die Quellen berichten übereinstimmend, dass Deutschland in der neuen Pisa-Studie den schwächsten Stand seit Beginn der Erhebungen erreicht hat. Genannt werden sinkende Leistungen in Mathematik, Lesen und Naturwissenschaften sowie eine große Stichprobe mit rund 6.700 Schülern in Deutschland. Für die Einordnung ist das relevant, weil Bildungsleistungen langfristig auf Chancen, Fachkräfteangebot und soziale Teilhabe wirken können. Der mögliche Wirkpfad verläuft über Kompetenzverluste zu späteren Bildungs- und Arbeitsmarkteffekten. Gleichzeitig bleibt offen, welche Ursachen die Studie genau benennt und wie stark einzelne Politikfelder betroffen sind. Die Evidenz stützt die aktuelle Zustandsbeschreibung, nicht aber schon eine gesicherte Wirkung einzelner Maßnahmen.",
+      "why_relevant": "Die Meldung betrifft die Bildungsleistung eines großen Jahrgangs und damit ein zentrales Zukunfts- und Verteilungsthema mit möglichen Folgen für Arbeitsmarkt, Teilhabe und staatliche Steuerung.",
+      "topic": [
+        "Wirtschaft",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Sinkende Kompetenzwerte bei vielen Jugendlichen können künftige Bildungs- und Teilhabechancen verschlechtern. Der Befund ist groß genug, um soziale Folgekosten plausibel zu machen, aber die Ursachen bleiben offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle behandelt keinen direkten Umwelt- oder Klimawirkpfad. Ein indirekter Bezug über künftige Qualifikation ist möglich, aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Bildungsniveau und Basiskompetenzen beeinflussen die demokratische Korrekturfähigkeit, weil Verständlichkeit, Urteilskraft und Informationsverarbeitung davon abhängen. Ein konkreter demokratischer Effekt ist aus der Quelle noch nicht nachgewiesen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T08:22:13.205Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T08:00:21.000Z",
+      "last_updated": "2026-09-08T08:23:27.568Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-3f8d4c75c0276c438696",
+      "case_file": null,
+      "source_published_at": "2026-09-08T07:30:00.000Z",
+      "published_at": "2026-09-08T08:23:27.568Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:00:21.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:30:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3832ac28950296cb",
       "title_image": {

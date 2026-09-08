@@ -1,22 +1,16 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T07:36:44.231Z",
-  "updated_at": "2026-09-08T08:06:49.615Z",
+  "public_updated_at": "2026-09-08T08:22:13.205Z",
+  "updated_at": "2026-09-08T08:22:13.205Z",
   "stories": [
     {
       "story_id": "wt-4c0a09f9ce090af7",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "de081befa1fd185d21edf7f4e1f8f36488af43132ec3ee73301aacfea13467e0",
-        "first_failed_at": "2026-09-08T08:06:49.615Z",
-        "failed_at": "2026-09-08T08:06:49.615Z",
-        "retry_after": "2026-09-08T08:21:49.615Z",
-        "retry_count": 1
-      },
       "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
       "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
       "first_seen": "2026-09-08T08:00:21.000Z",
-      "last_updated": "2026-09-08T08:00:21.000Z",
+      "last_updated": "2026-09-08T08:23:27.568Z",
+      "published_at": "2026-09-08T08:23:27.568Z",
+      "updated_at": "2026-09-08T08:23:27.568Z",
       "topic": [
         "Wirtschaft",
         "Politik"
@@ -46,7 +40,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T08:00:21.000Z",
-          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -79,7 +73,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T07:30:00.000Z",
-          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -91,35 +85,703 @@
       ],
       "claims": [
         {
-          "claim_id": "wt-4c0a09f9ce090af7-claim-01",
+          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-1",
           "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie: Deutsche Schüler haben bei der neuen PISA-Bildungsstudie so schlecht wie noch nie abgeschnitten. Das teilte die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mit. Demnach gingen die Leistungen der 15-Jährigen in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen erneut zurück.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "claim": "Die neue Pisa-Studie meldet für Deutschland den schlechtesten Stand seit Beginn der Erhebungen.",
+          "status": "confirmed_claim",
           "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "excerpt_hash": "8d65be250f0a54268f03",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "97bd6e9306fe35feb255",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "efa5d210f14d66d55600",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:23:27.568Z"
         },
         {
-          "claim_id": "wt-4c0a09f9ce090af7-claim-02",
+          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-2",
           "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "Pisa-Studie: Deutschland so schlecht wie nie: Die deutschen Ergebnisse der Pisa-Studie 2025 zeigen einen Tiefststand. Ob Naturwissenschaften, Lesen oder Mathe: Deutschland erreicht nur das Durchschnittsniveau der OECD-Staaten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "claim": "Die Leistungen der 15-Jährigen sind in Mathematik, Lesen und Naturwissenschaften erneut gesunken.",
+          "status": "confirmed_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "excerpt_hash": "57a234e5601581e531c3",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "excerpt_hash": "cfb6e1e2923774a36242",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "3a84194a3725faa2e428",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:23:27.568Z"
+        },
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-3",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "An der Untersuchung nahmen weltweit mehr als 760.000 Schüler aus 91 Staaten und Regionen teil; in Deutschland waren es rund 6.700 Schüler an etwa 250 Schulen.",
+          "status": "confirmed_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "excerpt_hash": "2128618d6e5518d91318",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "aafa19b1277a3cff5043",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:23:27.568Z"
+        },
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-4",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "In Deutschland erreichen rund ein Fünftel der Jugendlichen in allen drei Bereichen keine ausreichende Basiskompetenz; in Lesen und Mathe verfehlt etwa ein Drittel die Mindeststandards, in den Naturwissenschaften etwa ein Viertel.",
+          "status": "single_source_claim",
           "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "a7094e66e8f0b4bcc146",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "30e9ebb3108a6777948c",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:23:27.568Z"
+        }
+      ],
+      "event_id": "event-3f8d4c75c0276c438696",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "verification_started_at": "2026-09-08T08:23:12.536Z",
+      "publish_ready_at": "2026-09-08T08:23:27.568Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:22:13.205Z",
+        "fingerprint": "4fe85b1a64b11381ad6791cc019ac375405bd080b387e661dbf963aefe1de78b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "3185eadd4789690d6ce9371f4e4ec240b3cd26df3fecd239f6565afcaf171e51",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T08:23:27.568Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+            "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
+            "excerpt_hash": "40d2e352b31b3c69d824d75edeeff9e2b18c62ef2132bcc38d45f8156c10074a",
+            "number_locale": "de",
+            "numbers": [
+              "2000",
+              "760000",
+              "91",
+              "6700",
+              "250",
+              "8.09",
+              "2026"
+            ]
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+            "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
+            "excerpt_hash": "91696e96065f1dbb02d6b12ed3c553169016be47c6f74a8eb200f89635f970b8",
+            "number_locale": "de",
+            "numbers": [
+              "8.09",
+              "2026",
+              "9",
+              "30",
+              "2025",
+              "0",
+              "34",
+              "15",
+              "760000",
+              "91",
+              "6700",
+              "250",
+              "486",
+              "19",
+              "465",
+              "464",
+              "2",
+              "4",
+              "5",
+              "6",
+              "48",
+              "2015",
+              "500",
+              "20",
+              "13",
+              "25"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Deutschland ist in der neuen Pisa-Studie nach Angaben zweier Berichte so schlecht wie nie zuvor. Beide Texte verweisen auf die OECD als Urheberin der Studie und beschreiben einen erneuten Rückgang der Leistungen von 15-Jährigen in Mathematik, Lesen und Naturwissenschaften.\n\nDie Berichte nennen außerdem die Größenordnung der Untersuchung: weltweit nahmen mehr als 760.000 Schüler aus 91 Staaten und Regionen teil, in Deutschland rund 6.700 Schüler an etwa 250 Schulen. ZDFheute ergänzt konkrete Werte und ordnet ein, dass ein Teil der Jugendlichen die Basiskompetenzen nicht erreicht.",
+      "analysis": {
+        "story_id": "wt-4c0a09f9ce090af7",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Deutschland verzeichnet in der neuen Pisa-Studie einen historischen Tiefstand. Die Untersuchung erfasst große Schülerzahlen weltweit und in Deutschland.",
+        "detail_summary": "Die Quellen berichten übereinstimmend, dass Deutschland in der neuen Pisa-Studie den schwächsten Stand seit Beginn der Erhebungen erreicht hat. Genannt werden sinkende Leistungen in Mathematik, Lesen und Naturwissenschaften sowie eine große Stichprobe mit rund 6.700 Schülern in Deutschland. Für die Einordnung ist das relevant, weil Bildungsleistungen langfristig auf Chancen, Fachkräfteangebot und soziale Teilhabe wirken können. Der mögliche Wirkpfad verläuft über Kompetenzverluste zu späteren Bildungs- und Arbeitsmarkteffekten. Gleichzeitig bleibt offen, welche Ursachen die Studie genau benennt und wie stark einzelne Politikfelder betroffen sind. Die Evidenz stützt die aktuelle Zustandsbeschreibung, nicht aber schon eine gesicherte Wirkung einzelner Maßnahmen.",
+        "why_relevant": "Die Meldung betrifft die Bildungsleistung eines großen Jahrgangs und damit ein zentrales Zukunfts- und Verteilungsthema mit möglichen Folgen für Arbeitsmarkt, Teilhabe und staatliche Steuerung.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Sinkende Kompetenzwerte bei vielen Jugendlichen können künftige Bildungs- und Teilhabechancen verschlechtern. Der Befund ist groß genug, um soziale Folgekosten plausibel zu machen, aber die Ursachen bleiben offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle behandelt keinen direkten Umwelt- oder Klimawirkpfad. Ein indirekter Bezug über künftige Qualifikation ist möglich, aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Bildungsniveau und Basiskompetenzen beeinflussen die demokratische Korrekturfähigkeit, weil Verständlichkeit, Urteilskraft und Informationsverarbeitung davon abhängen. Ein konkreter demokratischer Effekt ist aus der Quelle noch nicht nachgewiesen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Das Thema kann über geringere Kompetenzen bei vielen Jugendlichen spätere Bildungswege, Produktivität und soziale Mobilität beeinflussen.",
+        "impact_risks": [
+          "Schwächere Basiskompetenzen können Übergänge in Ausbildung und Beruf erschweren.",
+          "Ungleichheiten können sich verfestigen, wenn leistungsschwächere Gruppen stärker zurückfallen."
+        ],
+        "mechanisms": [
+          "Kompetenzrückgang in Kernfächern verringert spätere Lernfähigkeit und Abschlusschancen.",
+          "Große Zahl betroffener Schüler erhöht das Systemrisiko für Ausbildung und Arbeitsmarkt."
+        ],
+        "first_order": [
+          "Niedrigere Testergebnisse zeigen eine verschlechterte Kompetenzlage bei 15-Jährigen."
+        ],
+        "second_order": [
+          "Schlechtere Basiskompetenzen können Bildungswege, Ausbildungsreife und spätere Erwerbschancen belasten."
+        ],
+        "third_order": [
+          "Langfristig kann das die soziale Mobilität und die Anpassungsfähigkeit des Arbeitsmarkts schwächen."
+        ],
+        "systemic_relevance": "Die Studie betrifft ein großes, landesweites Bildungssystem und damit einen Bereich mit hohen Rückkopplungen auf Wirtschaft und gesellschaftliche Teilhabe.",
+        "transformation_potential": "Ein belastbarer Reformdruck kann entstehen, wenn Ergebnisse in Lehrpläne, Förderung und Schulpolitik übersetzt werden; die Quelle belegt diese Reaktion aber noch nicht.",
+        "resilience": "Resilienz hängt hier davon ab, ob Schulen und Systeme Basiskompetenzen schnell stabilisieren können. Aus der Meldung ergibt sich eher ein Belastungssignal als ein Beleg für robuste Gegensteuerung.",
+        "side_effects": [
+          "Mehr Förderbedarf an Schulen und mögliche Belastung für Lehrkräfte.",
+          "Mögliche Verschärfung bestehender Bildungsungleichheiten."
+        ],
+        "uncertainties": [
+          "Ursachen der Verschlechterung bleiben in der Meldung offen.",
+          "Aus der Studie folgt noch keine belegte Wirkung einer bestimmten Reform."
+        ],
+        "evidence_level": "hoch für den beschriebenen Befund, mittel für die Einordnung",
+        "attribution": "Die Verschlechterung wird der OECD beziehungsweise der Pisa-Studie zugeschrieben; konkrete Interpretation und Alarmton stammen teils aus der Berichterstattung.",
+        "watch_next": [
+          "Ob Bildungsministerien oder Länder auf die Ergebnisse mit konkreten Maßnahmen reagieren.",
+          "Ob die Originalstudie oder amtliche Stellen die Zahlen und Teilbefunde weiter präzisieren."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 4",
+          "Agenda 2030/SDG 10",
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung bringt einen neuen, landesweit relevanten Zustandsbefund zur Bildungsleistung mit breiter Betroffenheit und langfristiger Relevanz. Zwei unabhängige Berichte tragen den Kern, auch wenn die Originalstudie hier nicht direkt vorliegt."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T08:22:13.205Z",
+        "media_trigger_fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "alarmierend"
+          ],
+          "source_count": 2,
+          "comparable_source_count": 2,
+          "fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
+          "content_fingerprint": "1cb7a5a0836643169985bee2e6f8339d6fb91c2cb643af40c3e2b7080336765e",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T08:23:27.568Z",
+          "content_hash": "3185eadd4789690d6ce9371f4e4ec240b3cd26df3fecd239f6565afcaf171e51",
+          "source_summary": "Deutschland ist in der neuen Pisa-Studie nach Angaben zweier Berichte so schlecht wie nie zuvor. Beide Texte verweisen auf die OECD als Urheberin der Studie und beschreiben einen erneuten Rückgang der Leistungen von 15-Jährigen in Mathematik, Lesen und Naturwissenschaften.\n\nDie Berichte nennen außerdem die Größenordnung der Untersuchung: weltweit nahmen mehr als 760.000 Schüler aus 91 Staaten und Regionen teil, in Deutschland rund 6.700 Schüler an etwa 250 Schulen. ZDFheute ergänzt konkrete Werte und ordnet ein, dass ein Teil der Jugendlichen die Basiskompetenzen nicht erreicht.",
+          "analysis": {
+            "story_id": "wt-4c0a09f9ce090af7",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Deutschland verzeichnet in der neuen Pisa-Studie einen historischen Tiefstand. Die Untersuchung erfasst große Schülerzahlen weltweit und in Deutschland.",
+            "detail_summary": "Die Quellen berichten übereinstimmend, dass Deutschland in der neuen Pisa-Studie den schwächsten Stand seit Beginn der Erhebungen erreicht hat. Genannt werden sinkende Leistungen in Mathematik, Lesen und Naturwissenschaften sowie eine große Stichprobe mit rund 6.700 Schülern in Deutschland. Für die Einordnung ist das relevant, weil Bildungsleistungen langfristig auf Chancen, Fachkräfteangebot und soziale Teilhabe wirken können. Der mögliche Wirkpfad verläuft über Kompetenzverluste zu späteren Bildungs- und Arbeitsmarkteffekten. Gleichzeitig bleibt offen, welche Ursachen die Studie genau benennt und wie stark einzelne Politikfelder betroffen sind. Die Evidenz stützt die aktuelle Zustandsbeschreibung, nicht aber schon eine gesicherte Wirkung einzelner Maßnahmen.",
+            "why_relevant": "Die Meldung betrifft die Bildungsleistung eines großen Jahrgangs und damit ein zentrales Zukunfts- und Verteilungsthema mit möglichen Folgen für Arbeitsmarkt, Teilhabe und staatliche Steuerung.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "rationale": "Sinkende Kompetenzwerte bei vielen Jugendlichen können künftige Bildungs- und Teilhabechancen verschlechtern. Der Befund ist groß genug, um soziale Folgekosten plausibel zu machen, aber die Ursachen bleiben offen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Die Quelle behandelt keinen direkten Umwelt- oder Klimawirkpfad. Ein indirekter Bezug über künftige Qualifikation ist möglich, aber nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "rationale": "Bildungsniveau und Basiskompetenzen beeinflussen die demokratische Korrekturfähigkeit, weil Verständlichkeit, Urteilskraft und Informationsverarbeitung davon abhängen. Ein konkreter demokratischer Effekt ist aus der Quelle noch nicht nachgewiesen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Das Thema kann über geringere Kompetenzen bei vielen Jugendlichen spätere Bildungswege, Produktivität und soziale Mobilität beeinflussen.",
+            "impact_risks": [
+              "Schwächere Basiskompetenzen können Übergänge in Ausbildung und Beruf erschweren.",
+              "Ungleichheiten können sich verfestigen, wenn leistungsschwächere Gruppen stärker zurückfallen."
+            ],
+            "mechanisms": [
+              "Kompetenzrückgang in Kernfächern verringert spätere Lernfähigkeit und Abschlusschancen.",
+              "Große Zahl betroffener Schüler erhöht das Systemrisiko für Ausbildung und Arbeitsmarkt."
+            ],
+            "first_order": [
+              "Niedrigere Testergebnisse zeigen eine verschlechterte Kompetenzlage bei 15-Jährigen."
+            ],
+            "second_order": [
+              "Schlechtere Basiskompetenzen können Bildungswege, Ausbildungsreife und spätere Erwerbschancen belasten."
+            ],
+            "third_order": [
+              "Langfristig kann das die soziale Mobilität und die Anpassungsfähigkeit des Arbeitsmarkts schwächen."
+            ],
+            "systemic_relevance": "Die Studie betrifft ein großes, landesweites Bildungssystem und damit einen Bereich mit hohen Rückkopplungen auf Wirtschaft und gesellschaftliche Teilhabe.",
+            "transformation_potential": "Ein belastbarer Reformdruck kann entstehen, wenn Ergebnisse in Lehrpläne, Förderung und Schulpolitik übersetzt werden; die Quelle belegt diese Reaktion aber noch nicht.",
+            "resilience": "Resilienz hängt hier davon ab, ob Schulen und Systeme Basiskompetenzen schnell stabilisieren können. Aus der Meldung ergibt sich eher ein Belastungssignal als ein Beleg für robuste Gegensteuerung.",
+            "side_effects": [
+              "Mehr Förderbedarf an Schulen und mögliche Belastung für Lehrkräfte.",
+              "Mögliche Verschärfung bestehender Bildungsungleichheiten."
+            ],
+            "uncertainties": [
+              "Ursachen der Verschlechterung bleiben in der Meldung offen.",
+              "Aus der Studie folgt noch keine belegte Wirkung einer bestimmten Reform."
+            ],
+            "evidence_level": "hoch für den beschriebenen Befund, mittel für die Einordnung",
+            "attribution": "Die Verschlechterung wird der OECD beziehungsweise der Pisa-Studie zugeschrieben; konkrete Interpretation und Alarmton stammen teils aus der Berichterstattung.",
+            "watch_next": [
+              "Ob Bildungsministerien oder Länder auf die Ergebnisse mit konkreten Maßnahmen reagieren.",
+              "Ob die Originalstudie oder amtliche Stellen die Zahlen und Teilbefunde weiter präzisieren."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 4",
+              "Agenda 2030/SDG 10",
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung bringt einen neuen, landesweit relevanten Zustandsbefund zur Bildungsleistung mit breiter Betroffenheit und langfristiger Relevanz. Zwei unabhängige Berichte tragen den Kern, auch wenn die Originalstudie hier nicht direkt vorliegt."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T08:22:13.205Z",
+            "media_trigger_fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "alarmierend"
+              ],
+              "source_count": 2,
+              "comparable_source_count": 2,
+              "fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
+              "content_fingerprint": "1cb7a5a0836643169985bee2e6f8339d6fb91c2cb643af40c3e2b7080336765e",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-1",
+              "story_id": "wt-4c0a09f9ce090af7",
+              "claim": "Die neue Pisa-Studie meldet für Deutschland den schlechtesten Stand seit Beginn der Erhebungen.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                  "excerpt_hash": "8d65be250f0a54268f03",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "97bd6e9306fe35feb255",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "efa5d210f14d66d55600",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-2",
+              "story_id": "wt-4c0a09f9ce090af7",
+              "claim": "Die Leistungen der 15-Jährigen sind in Mathematik, Lesen und Naturwissenschaften erneut gesunken.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                  "excerpt_hash": "57a234e5601581e531c3",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                  "excerpt_hash": "cfb6e1e2923774a36242",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "3a84194a3725faa2e428",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-3",
+              "story_id": "wt-4c0a09f9ce090af7",
+              "claim": "An der Untersuchung nahmen weltweit mehr als 760.000 Schüler aus 91 Staaten und Regionen teil; in Deutschland waren es rund 6.700 Schüler an etwa 250 Schulen.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                  "excerpt_hash": "2128618d6e5518d91318",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "aafa19b1277a3cff5043",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-4",
+              "story_id": "wt-4c0a09f9ce090af7",
+              "claim": "In Deutschland erreichen rund ein Fünftel der Jugendlichen in allen drei Bereichen keine ausreichende Basiskompetenz; in Lesen und Mathe verfehlt etwa ein Drittel die Mindeststandards, in den Naturwissenschaften etwa ein Viertel.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "a7094e66e8f0b4bcc146",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "30e9ebb3108a6777948c",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T08:23:27.568Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
+                "excerpt_hash": "40d2e352b31b3c69d824d75edeeff9e2b18c62ef2132bcc38d45f8156c10074a",
+                "number_locale": "de",
+                "numbers": [
+                  "2000",
+                  "760000",
+                  "91",
+                  "6700",
+                  "250",
+                  "8.09",
+                  "2026"
+                ]
+              },
+              {
+                "source_id": "zdfheute-nachrichten",
+                "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
+                "excerpt_hash": "91696e96065f1dbb02d6b12ed3c553169016be47c6f74a8eb200f89635f970b8",
+                "number_locale": "de",
+                "numbers": [
+                  "8.09",
+                  "2026",
+                  "9",
+                  "30",
+                  "2025",
+                  "0",
+                  "34",
+                  "15",
+                  "760000",
+                  "91",
+                  "6700",
+                  "250",
+                  "486",
+                  "19",
+                  "465",
+                  "464",
+                  "2",
+                  "4",
+                  "5",
+                  "6",
+                  "48",
+                  "2015",
+                  "500",
+                  "20",
+                  "13",
+                  "25"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T08:23:27.568Z",
+          "source_count": 2
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-e6cc1adc0bfe5cc8-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "e6cc1adc0bfe5cc8c8c1200befd65e84655fcf6b9ef276b686b6823bca1258c5"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-918ce848229759fb-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "918ce848229759fb6fb3574563a7c675499f57c9c59fd1b5a07b87b4f94a2ef2"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c1f3f12f2823a5e2-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "c1f3f12f2823a5e25c2f48f157864492364dbb4d0dcc46424582a8a86a9991c4"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c59e090bf31d3a2a-source.png",
+          "sha256": "c59e090bf31d3a2ac54b507dd10e808671553abc822e480defa70dcaa32925b8",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-08T08:23:59.855Z"
+        },
+        "fingerprint": "8482a389068daa902c21e6c8b994d063777001de3867586582891689654248ff",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T08:25:23.551Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-a04ff251eb9dd5e7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "407b716943c79f0de938a5a888602aa2916988e518e19b30c7072d88149a0c0b",
+        "first_failed_at": "2026-09-08T08:22:13.205Z",
+        "failed_at": "2026-09-08T08:22:13.205Z",
+        "retry_after": "2026-09-08T08:37:13.205Z",
+        "retry_count": 1
+      },
+      "slug": "jemen-krieg-mehr-als-70-verletzte-bei-huthi-angriffen-in-saudi-arabien-9dd5e7",
+      "title": "Jemen-Krieg: Mehr als 70 Verletzte bei Huthi-Angriffen in Saudi-Arabien",
+      "first_seen": "2026-09-08T08:21:13.000Z",
+      "last_updated": "2026-09-08T08:21:13.000Z",
+      "topic": [
+        "Energie",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-jemen-krieg-16029492.html",
+          "title": "Jemen-Krieg: Mehr als 70 Verletzte bei Huthi-Angriffen in Saudi-Arabien",
+          "summary": "Der Konflikt zwischen dem Jemen und Saudi-Arabien eskaliert weiter. In Saudi-Arabien werden mehrere Energie-Einrichtungen getroffen. Zuvor warfen die Huthi Riad einen Angriff auf ein Gefängnis vor.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:21:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "dc73ef98de18dc5b99afb83abf38fbe47fa2164138af2d18163be5e0acbc25d4",
+          "source_item_id": "af474300a50ce70384be91e0d442958bdd98413d00839dc6054bfb71f2c4dbdf",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:21:13.000Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a04ff251eb9dd5e7-claim-01",
+          "story_id": "wt-a04ff251eb9dd5e7",
+          "claim": "Jemen-Krieg: Mehr als 70 Verletzte bei Huthi-Angriffen in Saudi-Arabien: Der Konflikt zwischen dem Jemen und Saudi-Arabien eskaliert weiter. In Saudi-Arabien werden mehrere Energie-Einrichtungen getroffen. Zuvor warfen die Huthi Riad einen Angriff auf ein Gefängnis vor.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
           "source_function": "journalistic_report",
           "status": "single_source_claim",
           "provenance": {
-            "origin": "publisher:zdfheute",
+            "origin": "publisher:tagesspiegel",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           },
@@ -128,26 +790,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
         }
       ],
-      "content_hash": "3185eadd4789690d6ce9371f4e4ec240b3cd26df3fecd239f6565afcaf171e51",
+      "content_hash": "b851564565601ccc207392ea27a0e0ad4201a4a34958196f652dd3bb8dd1a6b0",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
-        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T08:21:49.615Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-08T08:37:13.205Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T08:06:49.615Z",
-      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
-      "event_detected_at": "2026-09-08T08:06:49.615Z",
-      "event_id": "event-3f8d4c75c0276c438696",
+      "updated_at": "2026-09-08T08:22:13.205Z",
+      "event_first_seen_at": "2026-09-08T08:22:13.205Z",
+      "event_detected_at": "2026-09-08T08:22:13.205Z",
+      "event_id": "event-f097b1367e3e72ebcfa9",
       "preanalysis": {
         "filter_version": "4.0",
         "material_development_review": {
@@ -155,14 +814,13 @@
           "time_sensitive": false,
           "findings": []
         },
-        "internal_relevance_score": 36,
-        "public_relevance": "mittel",
+        "internal_relevance_score": 64,
+        "public_relevance": "hoch",
         "topics": [
-          "Wirtschaft",
-          "Politik"
+          "Energie",
+          "Geopolitik"
         ],
         "dimensions": [
-          "Mensch",
           "Planet"
         ],
         "status": "laufende Entwicklung",
@@ -181,23 +839,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.476916666666667,
-        "detection_delay_minutes": 6.476916666666667,
+        "source_age_minutes": 1.0034166666666666,
+        "detection_delay_minutes": 1.0034166666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
         "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 100,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:06:49.615Z",
-        "fingerprint": "4fe85b1a64b11381ad6791cc019ac375405bd080b387e661dbf963aefe1de78b",
+        "checked_at": "2026-09-08T08:22:13.205Z",
+        "fingerprint": "9b176d3b755b80c5ae7d5a63c0389355c3d6a50518be771170c09891c85e5ce4",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:22:13.205Z",
+      "rejection": {
+        "at": "2026-09-08T08:22:13.205Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -810,9 +1480,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "79ad0d802c867f02476ad3b9a5360f0a8fa5e3994dcb1c57a36e137e246b641a",
         "first_failed_at": "2026-09-08T08:06:49.615Z",
-        "failed_at": "2026-09-08T08:06:49.615Z",
-        "retry_after": "2026-09-08T08:21:49.615Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T08:22:13.205Z",
+        "retry_after": "2026-09-08T08:52:13.205Z",
+        "retry_count": 2
       },
       "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
       "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
@@ -879,7 +1549,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T07:45:32.000Z",
-          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -908,7 +1578,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
         },
         {
           "claim_id": "wt-550f98293aec9698-claim-02",
@@ -928,7 +1598,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
         }
       ],
       "content_hash": "5a7c334d93db70be99298b73e4d062395ecceaf773a58069b63cef3f84cf5abe",
@@ -937,13 +1607,13 @@
       "quality_errors": [
         "MEDIA_IMPACT_REQUIRED"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T08:52:13.205Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T08:06:49.615Z",
+      "updated_at": "2026-09-08T08:22:13.205Z",
       "event_first_seen_at": "2026-09-08T05:22:10.164Z",
       "event_detected_at": "2026-09-08T05:22:10.164Z",
       "event_id": "event-d98ccda8e5e813b1598c",
@@ -997,20 +1667,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 21.293583333333334,
+        "source_age_minutes": 36.68675,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 164.65751666666668,
+        "queue_age_minutes": 180.05068333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 92,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:06:49.615Z",
+        "checked_at": "2026-09-08T08:22:13.205Z",
         "fingerprint": "6868670c22aae26632c5375ce71597dbeeb1a0b57fe978f30d3d38ea048f62f6",
         "issue_codes": [],
         "warning_codes": []
@@ -3461,9 +4131,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "9c347052b2ef6bf105ca9682991b33db03a6a2d08eefccc70b046e388288f760",
         "first_failed_at": "2026-09-08T08:06:49.615Z",
-        "failed_at": "2026-09-08T08:06:49.615Z",
-        "retry_after": "2026-09-08T08:21:49.615Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T08:22:13.205Z",
+        "retry_after": "2026-09-08T08:52:13.205Z",
+        "retry_count": 2
       },
       "slug": "pisa-studie-deutschland-schneidet-schlechter-ab-als-je-zuvor-e7223d",
       "title": "Pisa-Studie: Deutschland schneidet schlechter ab als je zuvor",
@@ -3497,7 +4167,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T07:37:20.000Z",
-          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3526,22 +4196,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
         }
       ],
       "content_hash": "33d2bdc05cb74848c5629b088d7a7440c92f2849bf7085efbc7ac187dee43f2f",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T08:21:49.615Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-08T08:52:13.205Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T08:06:49.615Z",
+      "updated_at": "2026-09-08T08:22:13.205Z",
       "event_first_seen_at": "2026-09-08T08:06:49.615Z",
       "event_detected_at": "2026-09-08T08:06:49.615Z",
       "event_id": "event-924ebfb4570fdaceb59e",
@@ -3577,23 +4245,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 29.493583333333333,
+        "source_age_minutes": 44.88675,
         "detection_delay_minutes": 29.493583333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.393166666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:06:49.615Z",
+        "checked_at": "2026-09-08T08:22:13.205Z",
         "fingerprint": "5af4fd7908faee1f122f808cef91c76b5cef2b564afe7a5e3defd7ae7c0f3ef2",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:22:13.205Z",
+      "rejection": {
+        "at": "2026-09-08T08:22:13.205Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -4150,7 +4830,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T08:00:21.000Z",
-          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4179,7 +4859,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
         }
       ],
       "content_hash": "3b0636fe506336292d9ed718ee2ec4f4858191409ef07bdd5b70b5f0a503ab84",
@@ -4192,7 +4872,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T08:06:49.615Z",
+      "updated_at": "2026-09-08T08:22:13.205Z",
       "event_first_seen_at": "2026-09-08T07:06:51.663Z",
       "event_detected_at": "2026-09-08T07:06:51.663Z",
       "event_id": "event-51b974a0c225d8faff13",
@@ -4227,20 +4907,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.476916666666667,
+        "source_age_minutes": 21.870083333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.96586666666666,
+        "queue_age_minutes": 75.35903333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:06:49.615Z",
+        "checked_at": "2026-09-08T08:22:13.205Z",
         "fingerprint": "9ff90a12374cff4ec28c98a452e7fe71b32c84d0b84d13068a08a18efdc88b9b",
         "issue_codes": [],
         "warning_codes": []
@@ -5601,10 +6281,10 @@
       "story_id": "wt-64d9633f3dfc908d",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "a58c1ed154f2282669f83dad0bea440b4b7f0f86d7dfdcce96f88967b100e6af",
-        "first_failed_at": "2026-09-08T07:36:44.231Z",
-        "failed_at": "2026-09-08T07:36:44.231Z",
-        "retry_after": "2026-09-08T07:51:44.231Z",
+        "fingerprint": "c2d8e7670232dc6f21212206f97d01d10bad83dab46767facfe4d2fba02b4ee6",
+        "first_failed_at": "2026-09-08T08:22:13.205Z",
+        "failed_at": "2026-09-08T08:22:13.205Z",
+        "retry_after": "2026-09-08T08:37:13.205Z",
         "retry_count": 1
       },
       "slug": "volkswagen-vw-e-kleinwagen-knacken-uberraschend-schnell-marke-von-100-000-vorbestellunge-fc908d",
@@ -5647,6 +6327,39 @@
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/auto/vw-e-kleinwagen-knacken-ueberraschend-schnell-marke-von-100.000-vorbestellungen/100252786.html",
+          "title": "Volkswagen: VW-E-Kleinwagen knacken überraschend schnell Marke von 100.000 Vorbestellungen",
+          "summary": "Der ID.Polo erreicht 30.000 Bestellungen noch vor dem Start im Handel. Volkswagen erhöht deshalb die Fertigungskapazitäten schneller.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:34:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "625d247e313d9e1b964d6de9e4a518673234451db48bbd7212f6b33c9c7557b0",
+          "source_item_id": "f82a406f5d19698be155baa7f909578ec44f232da8137efd4ea2a6543da0611c",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:34:16.000Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
@@ -5668,20 +6381,44 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
+        },
+        {
+          "claim_id": "wt-64d9633f3dfc908d-claim-02",
+          "story_id": "wt-64d9633f3dfc908d",
+          "claim": "Volkswagen: VW-E-Kleinwagen knacken überraschend schnell Marke von 100.000 Vorbestellungen: Der ID.Polo erreicht 30.000 Bestellungen noch vor dem Start im Handel. Volkswagen erhöht deshalb die Fertigungskapazitäten schneller.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:22:13.205Z"
         }
       ],
-      "content_hash": "d798451b3c0709f7331c7f34efc8cb4d42d9afb210d7c0c58449a635d2a5da33",
+      "content_hash": "698454ac68caa8063e3775a37428684dbe526cdd75812618cf2a7415699e8a43",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T08:37:13.205Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T08:06:49.615Z",
+      "updated_at": "2026-09-08T08:22:13.205Z",
       "event_first_seen_at": "2026-09-08T07:06:51.663Z",
       "event_detected_at": "2026-09-08T07:06:51.663Z",
       "event_id": "event-3e4858203e070ff16770",
@@ -5714,21 +6451,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 92.56025,
+        "source_age_minutes": 107.95341666666667,
         "detection_delay_minutes": 32.59438333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.96586666666666,
+        "queue_age_minutes": 75.35903333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
+        "news_freshness_score": 78,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:06:49.615Z",
-        "fingerprint": "a2c1340f11b0695900fb1cde535b3625cee5e178f54ccbafaa3eed8cae5bf1d1",
+        "checked_at": "2026-09-08T08:22:13.205Z",
+        "fingerprint": "93345dde9e7668bb14accc83da70ce81ddc4fe9096713c3ffd7990353a74a99c",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -27741,10 +28478,10 @@
       "story_id": "wt-2d8e98904082a279",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "6a1d2320f9cc45f5a55e786f09544c910a7d40e867e42ef188806ab0843ceb4c",
-        "first_failed_at": "2026-09-07T21:52:05.137Z",
-        "failed_at": "2026-09-07T21:52:05.137Z",
-        "retry_after": "2026-09-07T22:07:05.137Z",
+        "fingerprint": "8617ada0147b9d6e2c7e9a9267a6f839c1883bfc7c306c3ebd3cf62fc43631d3",
+        "first_failed_at": "2026-09-08T08:22:13.205Z",
+        "failed_at": "2026-09-08T08:22:13.205Z",
+        "retry_after": "2026-09-08T08:37:13.205Z",
         "retry_count": 1
       },
       "slug": "volkswagen-s-osnabruck-plant-to-switch-from-cars-to-defence-82a279",
@@ -27780,7 +28517,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-07T20:52:55.000Z",
-          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -27809,20 +28546,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
         }
       ],
       "content_hash": "ffd345649e8c7341055bd39f3b4734156e6350a959d0ac833a7af3932f6b89de",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T08:37:13.205Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T08:06:49.615Z",
+      "updated_at": "2026-09-08T08:22:13.205Z",
       "event_first_seen_at": "2026-09-07T21:22:08.446Z",
       "event_detected_at": "2026-09-07T21:22:08.446Z",
       "event_id": "event-3743bb8c52dbbcd6cbae",
@@ -27859,11 +28596,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 673.91025,
+        "source_age_minutes": 689.3034166666666,
         "detection_delay_minutes": 29.2241,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 644.68615,
+        "queue_age_minutes": 660.0793166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -27872,10 +28609,22 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:06:49.615Z",
+        "checked_at": "2026-09-08T08:22:13.205Z",
         "fingerprint": "d802c6131d0802593fad2b535cdba7b2a8e5ee4a2e8c02aa69925bd68fc3ddcf",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:22:13.205Z",
+      "rejection": {
+        "at": "2026-09-08T08:22:13.205Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -36159,9 +36908,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T08:06:49.615Z",
+        "checked_at": "2026-09-08T08:22:13.205Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T14:06:49.615Z",
+        "expires_at": "2026-09-08T14:22:13.205Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -77641,7 +78390,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -77702,7 +78451,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -77722,7 +78471,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
+          "checked_at": "2026-09-08T08:22:13.205Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -77738,7 +78487,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T08:06:49.615Z",
+      "updated_at": "2026-09-08T08:22:13.205Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -77778,7 +78527,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1379.9375333333332,
+        "queue_age_minutes": 1395.3307,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -77787,7 +78536,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:06:49.615Z",
+        "checked_at": "2026-09-08T08:22:13.205Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -133620,7 +134369,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T08:06:49.615Z",
+          "checked_at": "2026-09-08T08:22:13.205Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -177974,7 +178723,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T08:06:49.615Z",
+          "checked_at": "2026-09-08T08:22:13.205Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
