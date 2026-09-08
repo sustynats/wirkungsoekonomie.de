@@ -1,8 +1,1286 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T05:36:30.571Z",
-  "updated_at": "2026-09-08T05:36:30.571Z",
+  "public_updated_at": "2026-09-08T05:52:13.496Z",
+  "updated_at": "2026-09-08T05:52:13.496Z",
   "stories": [
+    {
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-07T20:36:52.379Z",
+          "retained_urls": [
+            "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
+            "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
+            "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+            "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
+              "title": "Sachsen-Anhalt: Müller will neuer CDU-Chef in Sachsen-Anhalt werden",
+              "summary": "Nach dem schlechten Abschneiden bei der Landtagswahl in Sachsen-Anhalt zieht die CDU erste Konsequenzen. Im Herbst soll es einen Parteitag geben. Ein Bundestagsabgeordneter will kandidieren.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-07T12:37:32.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "08bbe4750c8eb76b502b48fd79d934ab961c1a393a8b750873a123f93799403d",
+              "source_item_id": "1894f96bd5c75a2c16857350cf8f25e542d992f0df2c8baf40b6934294117ecd",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-07T12:37:32.000Z",
+              "ingested_at": "2026-09-07T18:52:11.443Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
+      "story_id": "wt-255776ddd744e745",
+      "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
+      "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+      "first_seen": "2026-09-07T12:36:15.000Z",
+      "last_updated": "2026-09-08T05:54:13.168Z",
+      "published_at": "2026-09-07T20:39:39.302Z",
+      "updated_at": "2026-09-08T05:54:13.168Z",
+      "topic": [
+        "Demokratie",
+        "Gesellschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
+          "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+          "summary": "Sven Schulze steht in Sachsen-Anhalt vor einer entscheidenden Sitzung: Wird er seinen Rücktritt als Landesparteichef verkünden? Wer ihn beerben könnte und was in der CDU jetzt diskutiert wird.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:36:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "57acab12436c3c020ebb20bca2ea3aebb15926696babe8e2435559e01c445fb5",
+          "source_item_id": "b1aa1ecafc73dbe8c72d95c51edf5c2391e7d421c3a5e3910e125a4401b51f89",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T12:36:15.000Z",
+          "ingested_at": "2026-09-07T12:51:36.383Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
+          "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+          "summary": "Sven Schulze steht in Sachsen-Anhalt vor einer entscheidenden Sitzung: Wird er seinen Rücktritt als Landesparteichef verkünden? Wer ihn beerben könnte und was in der CDU jetzt diskutiert wird.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:37:32.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ad87dcf1cbcd6d08316da7d1e0a9f6169026a57d1cc8c3a24139be47668fa0d3",
+          "source_item_id": "8e666c16069432d4a666744e7127233fe6464c5b2d040627f0018a9cc45dee0f",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T12:37:32.000Z",
+          "ingested_at": "2026-09-07T14:07:07.178Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+          "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - CDU-Spitzenkandidat Schulze kündigt nach Wahlniederlage Konsequenzen an",
+          "summary": "+++ CDU-Spitzenkandidat Schulze kündigt nach Wahlniederlage Konsequenzen an.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:51:54.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18",
+          "source_item_id": "9149cbaf2d3503cd6139205fc5ad62cbaf9696ad86c808210755558b2133eec6",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T12:51:54.000Z",
+          "ingested_at": "2026-09-07T13:09:04.172Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html",
+          "title": "Sachsen-Anhalt: Müller will neuer CDU-Chef in Sachsen-Anhalt werden",
+          "summary": "Nach dem schlechten Abschneiden bei der Landtagswahl in Sachsen-Anhalt zieht die CDU erste Konsequenzen. Im Herbst soll es einen Parteitag geben. Ein Bundestagsabgeordneter will kandidieren.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T18:44:45.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "af2ab524c1917c9543cb6f9cc38778452592b09bed325e8b79d9f6c69f2ea0c3",
+          "source_item_id": "a73aaf5d412c76c66f7f3a3d2e14237098f71fc6e2b12dcc2026090a97b2d2bc",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T18:44:45.000Z",
+          "ingested_at": "2026-09-07T18:52:11.443Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/cdu-in-sachsen-anhalt--mueller-geht-nach-merz-kritik-in-die-offensive-38216040.html",
+          "title": "CDU in Sachsen-Anhalt: Müller geht nach Merz-Kritik in die Offensive",
+          "summary": "Sepp Müller will die CDU Sachsen-Anhalt neu aufstellen – mit klarer Kante gegen Extreme. Wie er Merz’ Kritik begegnet, und warum er jetzt für den Landesvorsitz kandidiert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T19:37:20.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1e77708eb2f0bd4f2e3102f47d7992f82efe58ff6a3d4d9bed7b0daf8b93f800",
+          "source_item_id": "109b9a0391b3a58bdb9e567d98d614715ae0ffbeb75565b400c0c84447b92f48",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T19:37:20.000Z",
+          "ingested_at": "2026-09-07T20:36:52.379Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
+          "title": "Sachsen-Anhalt: Müller will neuer CDU-Chef in Sachsen-Anhalt werden",
+          "summary": "Nach dem schlechten Abschneiden bei der Landtagswahl in Sachsen-Anhalt zieht die CDU erste Konsequenzen. Im Herbst soll es einen Parteitag geben. Ein Bundestagsabgeordneter will kandidieren.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:37:32.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "08bbe4750c8eb76b502b48fd79d934ab961c1a393a8b750873a123f93799403d",
+          "source_item_id": "1894f96bd5c75a2c16857350cf8f25e542d992f0df2c8baf40b6934294117ecd",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T12:37:32.000Z",
+          "ingested_at": "2026-09-07T18:52:11.443Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-cdu-in-sachsen-anhalt-16027326.html",
+          "title": "CDU in Sachsen-Anhalt: Müller geht nach Merz-Kritik in die Offensive",
+          "summary": "Sepp Müller will die CDU Sachsen-Anhalt neu aufstellen – mit klarer Kante gegen Extreme. Wie er Merz’ Kritik begegnet, und warum er jetzt für den Landesvorsitz kandidiert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:37:32.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4ed50bf9f7c20045017f42092625ee3301a6eab6f3b248f2411a677078308e11",
+          "source_item_id": "a33a6dd3a73ecdd1595e8e87acfbb6a5d4183a2b83075288f2da64993bac3610",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T12:37:32.000Z",
+          "ingested_at": "2026-09-08T05:52:13.496Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-255776ddd744e745-v2-claim-1",
+          "story_id": "wt-255776ddd744e745",
+          "claim": "Die CDU-Spitze in Sachsen-Anhalt will sich nach der Wahlniederlage neu aufstellen, und Schulze stellte eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+              "excerpt_hash": "999bf4e55df51b944b00",
+              "checked_at": "2026-09-08T05:54:13.168Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T05:54:13.168Z"
+        },
+        {
+          "claim_id": "wt-255776ddd744e745-v2-claim-2",
+          "story_id": "wt-255776ddd744e745",
+          "claim": "Der Vize-Vorsitzende der Unionsfraktion im Bundestag, Sepp Müller, will für den Landesvorsitz in Sachsen-Anhalt kandidieren.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+              "excerpt_hash": "ed360efbd22b78c8da07",
+              "checked_at": "2026-09-08T05:54:13.168Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T05:54:13.168Z"
+        },
+        {
+          "claim_id": "wt-255776ddd744e745-v2-claim-3",
+          "story_id": "wt-255776ddd744e745",
+          "claim": "Nach der Niederlage bei der Landtagswahl laufen in der CDU Sachsen-Anhalt erste Konsequenzen und interne Führungsdebatten.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+              "excerpt_hash": "a4fba300c8c54184da57",
+              "checked_at": "2026-09-08T05:54:13.168Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+              "excerpt_hash": "999bf4e55df51b944b00",
+              "checked_at": "2026-09-08T05:54:13.168Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+              "excerpt_hash": "ed360efbd22b78c8da07",
+              "checked_at": "2026-09-08T05:54:13.168Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T05:54:13.168Z"
+        }
+      ],
+      "event_id": "event-b8e5d6c8da26f0813a21",
+      "event_first_seen_at": "2026-09-07T12:51:36.383Z",
+      "event_detected_at": "2026-09-07T12:51:36.383Z",
+      "verification_started_at": "2026-09-08T05:53:48.498Z",
+      "publish_ready_at": "2026-09-08T05:54:13.168Z",
+      "news_status": "updated",
+      "deepening_due_at": null,
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen",
+            "tagesspiegel-home"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 3
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "tagesspiegel-home"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T05:52:13.496Z",
+        "fingerprint": "471d8904d36e4cf7fbeb3ac1f379b0b29e16e02b57e317121bb9cc83cab5f6e2",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Die CDU in Sachsen-Anhalt entscheidet über die künftige Parteiführung.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Beschluss oder Wahl eines neuen Landesvorstands bzw. Vorsitzes",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0539a39d2266c31b",
+          "announced_at": "2026-09-07T12:51:54.000Z",
+          "follow_up_date": "2026-09-14T20:39:39.302Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Schulze verkündet einen Rückzug oder bleibt im Amt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Bestätigung eines Rücktritts oder Verbleibs",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a3e93a43ba93f64f",
+          "announced_at": "2026-09-07T12:51:54.000Z",
+          "follow_up_date": "2026-09-14T20:39:39.302Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "900deaf772dc840cff30dec5f67836f098c06217b6826124e62fe6f553de6085",
+      "published": true,
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-c77e2920b8131a6d-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "c77e2920b8131a6da5b49934d8c6500f329fde78809cc9fe1502c90317ef24b9"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-d4085543c55853e8-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "d4085543c55853e891af019968ffc438b2c82c486660f22cb04ba278221ed845"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-a7f178c657b80d21-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "a7f178c657b80d21d8a04d98c5798724af23550b93b6d0af8501f99e821c5b96"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-ce1cec14fbf0a2bd-source.png",
+          "sha256": "ce1cec14fbf0a2bd20db3fe2dec466a8c8b482cdebb5713fa020930f71d3ca01",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-07T20:41:49.663Z"
+        },
+        "fingerprint": "db4cb269b630d7a48ba45ca6a8fbff24c28663de22e68926fc51fcf099251bb8",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T05:54:25.847Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 2,
+        "checked_at": "2026-09-08T05:54:13.168Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+            "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18",
+            "excerpt_hash": "beccd19cc9f99197fc8f0035abba5733889f231c7b5a1a5cd1222e90b6e2c51f",
+            "number_locale": "de",
+            "numbers": [
+              "5000",
+              "14000",
+              "60",
+              "7.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Nach der Wahlniederlage der CDU in Sachsen-Anhalt berichten die Quellen über erste personelle und organisatorische Konsequenzen. Im Deutschlandfunk-Newsblog heißt es, die CDU-Spitze wolle sich neu aufstellen; Ministerpräsident und Parteichef Schulze stelle eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht. Zugleich habe Schulze bereits Konsequenzen aus dem Wahlergebnis angekündigt und erklärt, die CDU sei nun Opposition.\n\nAußerdem meldet der Deutschlandfunk, dass der Bundestagsabgeordnete und Unionsfraktionsvize Sepp Müller seine Kandidatur für den Landesvorsitz angekündigt habe. Stern und Tagesspiegel verweisen ebenfalls auf die laufenden Debatten innerhalb der CDU in Sachsen-Anhalt. Die genaue Entscheidung über die Parteiführung ist nach den gelieferten Quellen noch offen.",
+      "analysis": {
+        "story_id": "wt-255776ddd744e745",
+        "publication_recommendation": true,
+        "news_status": "updated",
+        "publication_depth": "deepened",
+        "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
+        "detail_summary": "Neu ist hier nicht das Wahlergebnis selbst, sondern die konkrete Folgefrage in der Partei: Schulze stellt eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht, und Sepp Müller will für den Landesvorsitz kandidieren. Das ist politisch relevant, weil sich daran die künftige Steuerung der CDU im Land und ihre Rolle in der Opposition entscheidet. Der Wirkpfad führt von der Führungsfrage über innerparteiliche Ordnung und Personal bis zu künftigen Positionierungen, Bündnissen und Ressourcen im Landesverband. Mögliche Folge ist eine rasche Neuordnung der Partei; offen bleibt aber, wie umkämpft der Übergang wird und ob daraus auch Kursänderungen folgen. Die Beleglage stützt die Erstmeldung, lässt aber die spätere Entscheidung und ihre Folgen noch offen.",
+        "why_relevant": "Die Meldung beschreibt eine materielle personelle und organisatorische Neuordnung einer großen Landespartei nach einer Wahlniederlage. Das kann künftige Entscheidungen, Koalitionsoptionen und innerparteiliche Ressourcen beeinflussen.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "rationale": "Die Quellen zeigen einen offenen Führungswechsel- und Organisationsprozess. Für Menschen ist vor allem relevant, welche politische Linie und welche Ansprechpartner die CDU im Land künftig hat."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es gibt in den Quellen keinen direkten Umwelt- oder Klimabezug. Ein indirekter Einfluss wäre nur möglich, falls die spätere Parteiführung politische Prioritäten verschiebt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "rationale": "Es geht um innerparteiliche Führung nach einer Landtagswahl und damit um politische Repräsentation, Oppositionsorganisation und demokratische Korrekturfähigkeit. Die Wirkung ist noch nicht eingetreten, aber der Entscheidungsprozess ist demokratisch zentral."
+        },
+        "importance": "hoch",
+        "impact_potential": "Eine neue Landesführung kann die organisatorische Stabilität der CDU Sachsen-Anhalt stärken oder interne Konflikte verlängern. Dadurch können sich spätere Positionen, Koalitionssignale und die Oppositionsarbeit im Landtag verändern.",
+        "impact_risks": [
+          "Ein ungeklärter Führungswechsel kann die Partei vorübergehend schwächen und ihre Handlungsfähigkeit mindern.",
+          "Ein konflikthafter Wettbewerb um den Vorsitz kann Personal- und Linienfragen überlagern."
+        ],
+        "mechanisms": [
+          "Wahlniederlage löst Führungsdebatte aus",
+          "Ankündigung einer Neuwahl des Landesvorstands verändert den innerparteilichen Entscheidungsprozess",
+          "Kandidatur von Sepp Müller erhöht den Wettbewerb um den Landesvorsitz"
+        ],
+        "first_order": [
+          "Veränderte Macht- und Zuständigkeitsstruktur im Landesverband",
+          "Öffentliche Klärung, wer die CDU Sachsen-Anhalt führt"
+        ],
+        "second_order": [
+          "Mögliche Neuordnung der Oppositionsstrategie im Landtag",
+          "Verschiebung von Personal, Aufmerksamkeit und organisatorischen Ressourcen"
+        ],
+        "third_order": [
+          "Indirekter Einfluss auf künftige Koalitions- und Regierungsoptionen",
+          "Mögliche Folgen für die demokratische Korrekturfähigkeit des Landesverbandes"
+        ],
+        "systemic_relevance": "Die Partei ist ein zentraler Akteur im Landesparlament. Führungswechsel können über Personal hinaus die politische Steuerungsfähigkeit und die Anschlussfähigkeit an Wählergruppen verändern.",
+        "transformation_potential": "Falls die neue Führung Kurs und Organisation der CDU sichtbar ordnet, kann das die Partei nach der Niederlage stabilisieren. Ein belastbarer Transformationsnachweis liegt aber noch nicht vor.",
+        "resilience": "Ein geordneter Übergang würde die institutionelle Resilienz des Landesverbandes stärken. Offen bleibt, ob der Prozess konfliktarm verläuft.",
+        "side_effects": [
+          "Vorübergehende Unsicherheit über Zuständigkeiten",
+          "Mögliche öffentliche Wahrnehmung innerer Schwäche"
+        ],
+        "uncertainties": [
+          "Die finale Entscheidung über den Vorsitz ist offen.",
+          "Die späteren politischen Konsequenzen sind in den Quellen nicht belegt."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Deutschlandfunk berichtet über die Ankündigung Schulzes und die Kandidatur von Müller; Stern und Tagesspiegel verweisen auf die laufenden Debatten. Die Aussagen sind zugeordnet, aber in der gelieferten Auswahl nicht unabhängig bestätigt.",
+        "watch_next": [
+          "Ob und wann der Landesparteitag den Vorsitz neu besetzt",
+          "Ob weitere Kandidaturen bekannt werden",
+          "Ob die neue Führung eine politische Kursänderung ankündigt"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16",
+          "Agenda 2030/SDG 10"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "democratic_correctability",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Die Quellen enthalten eine neue, materielle Zustandsinformation zur Führung der CDU Sachsen-Anhalt. Sie betrifft einen zentralen Landesverband, hat organisatorische Dauerwirkung und ist für die demokratische Korrekturfähigkeit relevant."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T05:52:13.496Z",
+        "media_trigger_fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 7,
+          "comparable_source_count": 3,
+          "fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
+          "content_fingerprint": "488c6adbd6e145d522edd506ad0ae24717a4fe5efe7882a91ec9ac94892369c4",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-07T20:39:39.302Z",
+          "content_hash": "900deaf772dc840cff30dec5f67836f098c06217b6826124e62fe6f553de6085",
+          "source_summary": "Nach der Landtagswahl in Sachsen-Anhalt meldeten mehrere Quellen erste personelle und organisatorische Konsequenzen in der CDU. In einem Newsblog hieß es, die CDU-Spitze wolle sich nach der Niederlage neu aufstellen; Schulze stellte eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht und hatte bereits Konsequenzen angekündigt. Zugleich wurde berichtet, dass der Bundestagsabgeordnete Sepp Müller für den Landesvorsitz kandidieren will. Weitere Beiträge ordneten die Reaktionen ein und verwiesen auf die Debatte innerhalb der Partei.\n\nAußerdem äußerte sich Bundeskanzler Merz zur Wahl und sprach von einer Zäsur über Sachsen-Anhalt hinaus. Er sagte, das Ergebnis dürfe nicht einfach als Tagesgeschäft behandelt werden und habe auch Auswirkungen auf die internationale Lage. Die Berichte nennen keine окончeschlossene Personalentscheidung, sondern beschreiben einen laufenden innerparteilichen Klärungsprozess.",
+          "analysis": {
+            "story_id": "wt-255776ddd744e745",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Nach der Wahlniederlage der CDU in Sachsen-Anhalt laufen erste Personal- und Strukturdebatten. Eine endgültige Entscheidung über die Parteiführung ist nach den gelieferten Quellen noch offen.",
+            "detail_summary": "Die Quellen zeigen einen klaren Zwischenstand nach der Landtagswahl in Sachsen-Anhalt: Schulze stellt eine Neuwahl des CDU-Landesvorstands in Aussicht, und Sepp Müller will für den Landesvorsitz kandidieren. Das ist für die Partei materiell relevant, weil damit Führung, Kurs und innerparteiliche Machtverteilung neu geordnet werden können. Der Wirkpfad führt von der Wahlniederlage über Personalentscheidungen zu möglichen Änderungen in Strategie, Geschlossenheit und Koalitionsfähigkeit. Für die demokratische Ebene ist vor allem bedeutsam, ob die CDU ihre organisatorische Handlungsfähigkeit rasch stabilisiert oder weiter in offenen Konflikten bleibt. Belastbar belegt ist aber nur der beginnende Prozess, nicht sein Ausgang. Über Folgen für Wählerverhalten, Regierungsbildung oder politische Mehrheiten lassen sich aus den gelieferten Quellen noch keine sicheren Aussagen ableiten.",
+            "why_relevant": "Die Meldung beschreibt einen konkreten Macht- und Organisationswechsel nach einem Wahlergebnis. Das ist neue Zustandsinformation mit möglicher Wirkung auf Parteiarbeit, politische Stabilität und Koalitionsoptionen.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Die Personaldebatte kann die Arbeitsfähigkeit und Geschlossenheit der CDU in Sachsen-Anhalt verändern; zugleich ist der Ausgang noch offen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Aus den gelieferten Quellen ergibt sich kein direkter Bezug zu Umwelt-, Klima- oder Ressourcenzuständen."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Parteiführung, Opposition und mögliche Neuordnung nach der Wahl berühren demokratische Korrekturfähigkeit und politische Repräsentation."
+            },
+            "importance": "hoch",
+            "impact_potential": "Ein Führungswechsel oder eine Neuaufstellung kann die innerparteiliche Steuerung, die Koalitionsfähigkeit und die politische Stabilität in Sachsen-Anhalt verändern.",
+            "impact_risks": [
+              "Offene Personalauseinandersetzungen können die Partei vorübergehend schwächen.",
+              "Uneinigkeit kann die Anschlussfähigkeit an parlamentarische Mehrheiten mindern.",
+              "Die öffentliche Deutung der Wahlniederlage kann die weitere Mobilisierung beeinflussen."
+            ],
+            "mechanisms": [
+              "Wahlniederlage erzeugt Druck auf die Parteiführung.",
+              "Ein möglicher Vorsitzwechsel verschiebt Zuständigkeiten und Entscheidungswege.",
+              "Neue Führung kann Kurs, Kommunikation und Bündnisoptionen neu setzen."
+            ],
+            "first_order": [
+              "Ankündigung einer Neuwahl des Landesvorstands",
+              "Kandidatur von Sepp Müller für den Landesvorsitz"
+            ],
+            "second_order": [
+              "Änderung der internen Machtbalance in der CDU Sachsen-Anhalt",
+              "Mögliche Neuausrichtung von Strategie und öffentlicher Kommunikation"
+            ],
+            "third_order": [
+              "Mögliche Folgen für Koalitionsfähigkeit, Oppositionsrolle und politische Stabilität im Landtag"
+            ],
+            "systemic_relevance": "Der Fall betrifft nicht nur eine Personalfrage, sondern die organisatorische Reaktion einer großen Landespartei nach einer Wahl mit deutlicher Signalwirkung.",
+            "transformation_potential": "Falls die CDU die Führung rasch klärt, kann das ihre Oppositionsarbeit und strategische Neuaufstellung strukturieren; bei Streit steigt das Risiko längerer Lähmung.",
+            "resilience": "Die Partei kann über einen geordneten Parteitag ihre Handlungsfähigkeit wiederherstellen; offen bleibt, ob die Konflikte schnell befriedet werden.",
+            "side_effects": [
+              "Interne Debatten können öffentlich sichtbar werden.",
+              "Kritik an der bisherigen Linie kann zunehmen."
+            ],
+            "uncertainties": [
+              "Ein Rücktritt Schulzes ist in den gelieferten Quellen nicht endgültig bestätigt.",
+              "Der Ausgang der internen Wahl ist offen.",
+              "Folgen für konkrete politische Entscheidungen sind noch nicht belegt."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Die Berichte stützen sich auf Nachrichtenmeldungen von stern, Tagesspiegel und Deutschlandfunk; mehrere Aussagen sind als Ankündigung oder Absicht formuliert, nicht als vollzogener Beschluss.",
+            "watch_next": [
+              "Ob Schulze seinen Rückzug erklärt oder im Amt bleibt.",
+              "Ob und wann ein Parteitag den neuen Landesvorstand wählt.",
+              "Ob weitere Bewerbungen für den Landesvorsitz folgen."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Gegenüber dem bisherigen Stand liegt eine neue, materielle Personal- und Strukturinformation zur CDU-Landesführung vor. Das betrifft Parteiorganisation und politische Handlungsfähigkeit, nicht nur Aufmerksamkeit."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-07T20:36:52.379Z",
+            "media_trigger_fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 7,
+              "comparable_source_count": 3,
+              "fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
+              "content_fingerprint": "488c6adbd6e145d522edd506ad0ae24717a4fe5efe7882a91ec9ac94892369c4",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-255776ddd744e745-v1-claim-1",
+              "story_id": "wt-255776ddd744e745",
+              "claim": "Sven Schulze stellt nach der Wahlniederlage eine Neuwahl des CDU-Landesvorstands für Ende November oder Anfang Dezember in Aussicht.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "999bf4e55df51b944b00",
+                  "checked_at": "2026-09-07T20:39:39.302Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T20:39:39.302Z"
+            },
+            {
+              "claim_id": "wt-255776ddd744e745-v1-claim-2",
+              "story_id": "wt-255776ddd744e745",
+              "claim": "Sepp Müller will für den Landesvorsitz der CDU in Sachsen-Anhalt kandidieren.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "ed360efbd22b78c8da07",
+                  "checked_at": "2026-09-07T20:39:39.302Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T20:39:39.302Z"
+            },
+            {
+              "claim_id": "wt-255776ddd744e745-v1-claim-3",
+              "story_id": "wt-255776ddd744e745",
+              "claim": "Bundeskanzler Merz beschreibt den AfD-Sieg in Sachsen-Anhalt als Zäsur und sagt, das Ergebnis könne nicht zur Tagesordnung übergehen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "df3fe58711b3863f30f3",
+                  "checked_at": "2026-09-07T20:39:39.302Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "0b54ba7fbfd2d504bdcd",
+                  "checked_at": "2026-09-07T20:39:39.302Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "aebc7d3fc66ead972a56",
+                  "checked_at": "2026-09-07T20:39:39.302Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T20:39:39.302Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
+              "content_hash": "57acab12436c3c020ebb20bca2ea3aebb15926696babe8e2435559e01c445fb5"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
+              "content_hash": "ad87dcf1cbcd6d08316da7d1e0a9f6169026a57d1cc8c3a24139be47668fa0d3"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+              "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html",
+              "content_hash": "af2ab524c1917c9543cb6f9cc38778452592b09bed325e8b79d9f6c69f2ea0c3"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/deutschland/cdu-in-sachsen-anhalt--mueller-geht-nach-merz-kritik-in-die-offensive-38216040.html",
+              "content_hash": "1e77708eb2f0bd4f2e3102f47d7992f82efe58ff6a3d4d9bed7b0daf8b93f800"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
+              "content_hash": "08bbe4750c8eb76b502b48fd79d934ab961c1a393a8b750873a123f93799403d"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/politik/dpa-cdu-in-sachsen-anhalt-16027326.html",
+              "content_hash": "4ed50bf9f7c20045017f42092625ee3301a6eab6f3b248f2411a677078308e11"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-07T20:39:39.302Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18",
+                "excerpt_hash": "beccd19cc9f99197fc8f0035abba5733889f231c7b5a1a5cd1222e90b6e2c51f",
+                "numbers": [
+                  "5000",
+                  "14000",
+                  "60",
+                  "7.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-08T05:54:13.168Z",
+          "content_hash": "900deaf772dc840cff30dec5f67836f098c06217b6826124e62fe6f553de6085",
+          "source_summary": "Nach der Wahlniederlage der CDU in Sachsen-Anhalt berichten die Quellen über erste personelle und organisatorische Konsequenzen. Im Deutschlandfunk-Newsblog heißt es, die CDU-Spitze wolle sich neu aufstellen; Ministerpräsident und Parteichef Schulze stelle eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht. Zugleich habe Schulze bereits Konsequenzen aus dem Wahlergebnis angekündigt und erklärt, die CDU sei nun Opposition.\n\nAußerdem meldet der Deutschlandfunk, dass der Bundestagsabgeordnete und Unionsfraktionsvize Sepp Müller seine Kandidatur für den Landesvorsitz angekündigt habe. Stern und Tagesspiegel verweisen ebenfalls auf die laufenden Debatten innerhalb der CDU in Sachsen-Anhalt. Die genaue Entscheidung über die Parteiführung ist nach den gelieferten Quellen noch offen.",
+          "analysis": {
+            "story_id": "wt-255776ddd744e745",
+            "publication_recommendation": true,
+            "news_status": "updated",
+            "publication_depth": "deepened",
+            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
+            "detail_summary": "Neu ist hier nicht das Wahlergebnis selbst, sondern die konkrete Folgefrage in der Partei: Schulze stellt eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht, und Sepp Müller will für den Landesvorsitz kandidieren. Das ist politisch relevant, weil sich daran die künftige Steuerung der CDU im Land und ihre Rolle in der Opposition entscheidet. Der Wirkpfad führt von der Führungsfrage über innerparteiliche Ordnung und Personal bis zu künftigen Positionierungen, Bündnissen und Ressourcen im Landesverband. Mögliche Folge ist eine rasche Neuordnung der Partei; offen bleibt aber, wie umkämpft der Übergang wird und ob daraus auch Kursänderungen folgen. Die Beleglage stützt die Erstmeldung, lässt aber die spätere Entscheidung und ihre Folgen noch offen.",
+            "why_relevant": "Die Meldung beschreibt eine materielle personelle und organisatorische Neuordnung einer großen Landespartei nach einer Wahlniederlage. Das kann künftige Entscheidungen, Koalitionsoptionen und innerparteiliche Ressourcen beeinflussen.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "tendency": "offen",
+              "rationale": "Die Quellen zeigen einen offenen Führungswechsel- und Organisationsprozess. Für Menschen ist vor allem relevant, welche politische Linie und welche Ansprechpartner die CDU im Land künftig hat."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Es gibt in den Quellen keinen direkten Umwelt- oder Klimabezug. Ein indirekter Einfluss wäre nur möglich, falls die spätere Parteiführung politische Prioritäten verschiebt."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "offen",
+              "rationale": "Es geht um innerparteiliche Führung nach einer Landtagswahl und damit um politische Repräsentation, Oppositionsorganisation und demokratische Korrekturfähigkeit. Die Wirkung ist noch nicht eingetreten, aber der Entscheidungsprozess ist demokratisch zentral."
+            },
+            "importance": "hoch",
+            "impact_potential": "Eine neue Landesführung kann die organisatorische Stabilität der CDU Sachsen-Anhalt stärken oder interne Konflikte verlängern. Dadurch können sich spätere Positionen, Koalitionssignale und die Oppositionsarbeit im Landtag verändern.",
+            "impact_risks": [
+              "Ein ungeklärter Führungswechsel kann die Partei vorübergehend schwächen und ihre Handlungsfähigkeit mindern.",
+              "Ein konflikthafter Wettbewerb um den Vorsitz kann Personal- und Linienfragen überlagern."
+            ],
+            "mechanisms": [
+              "Wahlniederlage löst Führungsdebatte aus",
+              "Ankündigung einer Neuwahl des Landesvorstands verändert den innerparteilichen Entscheidungsprozess",
+              "Kandidatur von Sepp Müller erhöht den Wettbewerb um den Landesvorsitz"
+            ],
+            "first_order": [
+              "Veränderte Macht- und Zuständigkeitsstruktur im Landesverband",
+              "Öffentliche Klärung, wer die CDU Sachsen-Anhalt führt"
+            ],
+            "second_order": [
+              "Mögliche Neuordnung der Oppositionsstrategie im Landtag",
+              "Verschiebung von Personal, Aufmerksamkeit und organisatorischen Ressourcen"
+            ],
+            "third_order": [
+              "Indirekter Einfluss auf künftige Koalitions- und Regierungsoptionen",
+              "Mögliche Folgen für die demokratische Korrekturfähigkeit des Landesverbandes"
+            ],
+            "systemic_relevance": "Die Partei ist ein zentraler Akteur im Landesparlament. Führungswechsel können über Personal hinaus die politische Steuerungsfähigkeit und die Anschlussfähigkeit an Wählergruppen verändern.",
+            "transformation_potential": "Falls die neue Führung Kurs und Organisation der CDU sichtbar ordnet, kann das die Partei nach der Niederlage stabilisieren. Ein belastbarer Transformationsnachweis liegt aber noch nicht vor.",
+            "resilience": "Ein geordneter Übergang würde die institutionelle Resilienz des Landesverbandes stärken. Offen bleibt, ob der Prozess konfliktarm verläuft.",
+            "side_effects": [
+              "Vorübergehende Unsicherheit über Zuständigkeiten",
+              "Mögliche öffentliche Wahrnehmung innerer Schwäche"
+            ],
+            "uncertainties": [
+              "Die finale Entscheidung über den Vorsitz ist offen.",
+              "Die späteren politischen Konsequenzen sind in den Quellen nicht belegt."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Deutschlandfunk berichtet über die Ankündigung Schulzes und die Kandidatur von Müller; Stern und Tagesspiegel verweisen auf die laufenden Debatten. Die Aussagen sind zugeordnet, aber in der gelieferten Auswahl nicht unabhängig bestätigt.",
+            "watch_next": [
+              "Ob und wann der Landesparteitag den Vorsitz neu besetzt",
+              "Ob weitere Kandidaturen bekannt werden",
+              "Ob die neue Führung eine politische Kursänderung ankündigt"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16",
+              "Agenda 2030/SDG 10"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "democratic_correctability",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Die Quellen enthalten eine neue, materielle Zustandsinformation zur Führung der CDU Sachsen-Anhalt. Sie betrifft einen zentralen Landesverband, hat organisatorische Dauerwirkung und ist für die demokratische Korrekturfähigkeit relevant."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T05:52:13.496Z",
+            "media_trigger_fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 7,
+              "comparable_source_count": 3,
+              "fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
+              "content_fingerprint": "488c6adbd6e145d522edd506ad0ae24717a4fe5efe7882a91ec9ac94892369c4",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-255776ddd744e745-v2-claim-1",
+              "story_id": "wt-255776ddd744e745",
+              "claim": "Die CDU-Spitze in Sachsen-Anhalt will sich nach der Wahlniederlage neu aufstellen, und Schulze stellte eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "999bf4e55df51b944b00",
+                  "checked_at": "2026-09-08T05:54:13.168Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T05:54:13.168Z"
+            },
+            {
+              "claim_id": "wt-255776ddd744e745-v2-claim-2",
+              "story_id": "wt-255776ddd744e745",
+              "claim": "Der Vize-Vorsitzende der Unionsfraktion im Bundestag, Sepp Müller, will für den Landesvorsitz in Sachsen-Anhalt kandidieren.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "ed360efbd22b78c8da07",
+                  "checked_at": "2026-09-08T05:54:13.168Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T05:54:13.168Z"
+            },
+            {
+              "claim_id": "wt-255776ddd744e745-v2-claim-3",
+              "story_id": "wt-255776ddd744e745",
+              "claim": "Nach der Niederlage bei der Landtagswahl laufen in der CDU Sachsen-Anhalt erste Konsequenzen und interne Führungsdebatten.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "a4fba300c8c54184da57",
+                  "checked_at": "2026-09-08T05:54:13.168Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "999bf4e55df51b944b00",
+                  "checked_at": "2026-09-08T05:54:13.168Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                  "excerpt_hash": "ed360efbd22b78c8da07",
+                  "checked_at": "2026-09-08T05:54:13.168Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T05:54:13.168Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
+              "content_hash": "57acab12436c3c020ebb20bca2ea3aebb15926696babe8e2435559e01c445fb5"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
+              "content_hash": "ad87dcf1cbcd6d08316da7d1e0a9f6169026a57d1cc8c3a24139be47668fa0d3"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+              "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html",
+              "content_hash": "af2ab524c1917c9543cb6f9cc38778452592b09bed325e8b79d9f6c69f2ea0c3"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/politik/deutschland/cdu-in-sachsen-anhalt--mueller-geht-nach-merz-kritik-in-die-offensive-38216040.html",
+              "content_hash": "1e77708eb2f0bd4f2e3102f47d7992f82efe58ff6a3d4d9bed7b0daf8b93f800"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
+              "content_hash": "08bbe4750c8eb76b502b48fd79d934ab961c1a393a8b750873a123f93799403d"
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "url": "https://www.tagesspiegel.de/politik/dpa-cdu-in-sachsen-anhalt-16027326.html",
+              "content_hash": "4ed50bf9f7c20045017f42092625ee3301a6eab6f3b248f2411a677078308e11"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 2,
+            "checked_at": "2026-09-08T05:54:13.168Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
+                "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18",
+                "excerpt_hash": "beccd19cc9f99197fc8f0035abba5733889f231c7b5a1a5cd1222e90b6e2c51f",
+                "number_locale": "de",
+                "numbers": [
+                  "5000",
+                  "14000",
+                  "60",
+                  "7.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-07T20:39:39.302Z",
+          "source_count": 7
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-08T05:54:13.168Z",
+          "source_count": 7
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-05ffa4fef8bee914",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "62047269fef95586e522951156568cb85342a135ebd90b603e14f5c678b06f28",
+        "first_failed_at": "2026-09-08T05:52:13.496Z",
+        "failed_at": "2026-09-08T05:52:13.496Z",
+        "retry_after": "2026-09-08T06:07:13.496Z",
+        "retry_count": 1
+      },
+      "slug": "bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914",
+      "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
+      "first_seen": "2026-09-07T22:12:58.000Z",
+      "last_updated": "2026-09-08T05:48:08.000Z",
+      "topic": [
+        "Europa",
+        "Finanzen",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
+          "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
+          "summary": "Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T23:27:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "277c2799773fd031dca7f8e87f9069f0aa9a4a4b8dab9b2cbb8dad5a8618ee1e",
+          "source_item_id": "a32ec3593dcd41922490c53e515701ec08c1758add747bc9b2ed42111f698da6",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T23:27:18.000Z",
+          "ingested_at": "2026-09-07T23:37:00.002Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+          "title": "Bundestag - Haushaltswoche beginnt - mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant",
+          "summary": "Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T05:48:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "36d3e8a5c7f82a683b13ed8385c65ae23e7de76c27efc8b4c46ffacd9f26f86e",
+          "source_item_id": "0b8e72df6177db3f2c4dd6a5c36520dc68909b5ac2e3175e16384adb8ca011d4",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T05:48:08.000Z",
+          "ingested_at": "2026-09-08T05:52:13.496Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-05ffa4fef8bee914-claim-01",
+          "story_id": "wt-05ffa4fef8bee914",
+          "claim": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant: Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T05:52:13.496Z"
+        },
+        {
+          "claim_id": "wt-05ffa4fef8bee914-claim-02",
+          "story_id": "wt-05ffa4fef8bee914",
+          "claim": "Bundestag - Haushaltswoche beginnt - mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant: Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T05:52:13.496Z"
+        }
+      ],
+      "content_hash": "ea3dd40c3ad5942dfd004fe08a46db4d264cd4ace0d40bd102f6ca9878f5d451",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T06:07:13.496Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T05:52:13.496Z",
+      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
+      "event_detected_at": "2026-09-07T22:37:09.924Z",
+      "event_id": "event-dd4cc5404c117c50633c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Finanzen",
+          "Demokratie"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.0916,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 435.0595333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T05:52:13.496Z",
+        "fingerprint": "5f426df0c914b750ff27afbd0ccc845e59c2df6c6e54805bf5662d56f4a6d476",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-b10575d1c95b9e06",
       "slug": "serbien-feierliche-beisetzung-von-kriegsverbrecher-mladic-in-belgrad-hat-begonnen-5b9e06",
@@ -2304,7 +3582,7 @@
       "verification_started_at": "2026-09-08T04:53:10.143Z",
       "publish_ready_at": "2026-09-08T04:53:23.148Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -2742,22 +4020,25 @@
         "generated_at": "2026-09-08T04:53:38.102Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "710565dff0a8201798cd74769d78a95f0a371f31f6e28e9f13f5fff8544d8285",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "2bd4a0326132ad691f371d6ebc344558e205a3707232292fe5d256427dbed798",
+        "checked_at": "2026-09-08T05:52:13.496Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T11:52:13.496Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
             "publisher": "Deutschlandfunk",
             "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
-            "summary": "Nach einer dreitägigen Pause hat Russland die Luftangriffe auf die ukrainische Hauptstadt Kiew in der Nacht wieder aufgenommen.",
+            "summary": "Kurz nach der Abreise von US-Unterhändlern hat Russland die ukrainische Hauptstadt Kiew erneut mit ballistischen Raketen angegriffen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T05:19:17.000Z",
+            "published_at": "2026-09-08T05:48:08.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "dbc545b72437bafed665b8b8db431054698e75fbe43143bcf5940d51513acea6",
+            "content_hash": "43556dc859e359d6065864a38faa8822d11a74eb488013efef3b66695a07c203",
             "source_item_id": "d0acedaf5ac83e6a8760512b40a6a6ef49a5115ad813b242b883cd81b3045416",
             "publisher_id": "deutschlandfunk",
             "publisher_kind": "public_broadcasting",
@@ -2769,8 +4050,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T05:19:17.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "source_published_at": "2026-09-08T05:48:08.000Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -2779,24 +4060,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
-          "fingerprint": "a5503f398bda5c186754718a19c67e1bc7a98cf6f4e8d07a2cd0cdf955f0adc2",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-dbc644779e2aac60",
@@ -3723,6 +4989,160 @@
         ]
       },
       "deepening_checks": 1
+    },
+    {
+      "story_id": "wt-b5ef8ee6ed8bd17a",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "648e9f5857e11de5d215740c0fa79bd3f946f3170282d3534d9072943caf2685",
+        "first_failed_at": "2026-09-08T05:52:13.496Z",
+        "failed_at": "2026-09-08T05:52:13.496Z",
+        "retry_after": "2026-09-08T06:07:13.496Z",
+        "retry_count": 1
+      },
+      "slug": "ukraine-meldet-neue-russische-angriffe-nach-dreitagiger-feuerpause-8bd17a",
+      "title": "Ukraine meldet neue russische Angriffe nach dreitägiger Feuerpause",
+      "first_seen": "2026-09-08T03:09:42.000Z",
+      "last_updated": "2026-09-08T03:09:42.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/ausland/ukraine-russland-angriffe-krieg-100.html",
+          "title": "Ukraine meldet neue russische Angriffe nach dreitägiger Feuerpause",
+          "summary": "Nach einer kurzzeitigen Feuerpause während des Besuchs von US-Unterhändlern in der Ukraine hat Russland seine schweren Luftangriffe wieder aufgenommen. Aus Kiew wurden Explosionen gemeldet, berichteten ukrainische Medien.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T03:09:42.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "747996e878bad3ef59ff2d4a09df8a3f9a701f97f4eb12f1c17580f6a67f0c1e",
+          "source_item_id": "6be0985347322ccebf68f1bfa9b6f4d602344794bfa42b68ced08b913adbb5f1",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T03:09:42.000Z",
+          "ingested_at": "2026-09-08T05:52:13.496Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "ndr-info"
+          },
+          "collection_source_id": "ndr-info",
+          "collection_publisher_id": "ndr"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b5ef8ee6ed8bd17a-claim-01",
+          "story_id": "wt-b5ef8ee6ed8bd17a",
+          "claim": "Ukraine meldet neue russische Angriffe nach dreitägiger Feuerpause: Nach einer kurzzeitigen Feuerpause während des Besuchs von US-Unterhändlern in der Ukraine hat Russland seine schweren Luftangriffe wieder aufgenommen. Aus Kiew wurden Explosionen gemeldet, berichteten ukrainische Medien.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "ndr-info"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T05:52:13.496Z"
+        }
+      ],
+      "content_hash": "f4a1c8b85d89318fc9c7ba4213bd5dad34b854e7f083228d7dd10e62460fd5a3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T06:07:13.496Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T05:52:13.496Z",
+      "event_first_seen_at": "2026-09-08T05:52:13.496Z",
+      "event_detected_at": "2026-09-08T05:52:13.496Z",
+      "event_id": "event-3a3496120ba98a5f689b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 162.52493333333334,
+        "detection_delay_minutes": 162.52493333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 66,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T05:52:13.496Z",
+        "fingerprint": "8d343e7fd48331398b210157e54aa68edb25830bcfde0503fdaf44335b299a18",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T05:52:13.496Z",
+      "rejection": {
+        "at": "2026-09-08T05:52:13.496Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
     },
     {
       "story_id": "wt-7d63335e9280ea4e",
@@ -5778,7 +7198,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -8708,7 +10128,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -9344,7 +10764,7 @@
             "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
             "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T05:19:17.000Z",
+            "published_at": "2026-09-08T05:48:08.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -9360,8 +10780,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T05:19:17.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "source_published_at": "2026-09-08T05:48:08.000Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -9382,7 +10802,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -10906,7 +12326,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T17:08:13.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -10927,7 +12347,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
           "issue_codes": [],
           "warning_codes": []
@@ -12043,7 +13463,7 @@
             "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
             "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T05:19:17.000Z",
+            "published_at": "2026-09-08T05:48:08.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -12059,8 +13479,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T05:19:17.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "source_published_at": "2026-09-08T05:48:08.000Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -12081,7 +13501,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -13725,158 +15145,6 @@
       }
     },
     {
-      "story_id": "wt-05ffa4fef8bee914",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "f4e03a9bef2104ad28b9ac6a39455ec8f0c5d0528fe9caabfe3336644bd8940d",
-        "first_failed_at": "2026-09-07T23:37:00.002Z",
-        "failed_at": "2026-09-07T23:37:00.002Z",
-        "retry_after": "2026-09-07T23:52:00.002Z",
-        "retry_count": 1
-      },
-      "slug": "bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914",
-      "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
-      "first_seen": "2026-09-07T22:12:58.000Z",
-      "last_updated": "2026-09-07T22:12:58.000Z",
-      "topic": [
-        "Europa",
-        "Finanzen",
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
-          "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
-          "summary": "Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T23:27:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "277c2799773fd031dca7f8e87f9069f0aa9a4a4b8dab9b2cbb8dad5a8618ee1e",
-          "source_item_id": "a32ec3593dcd41922490c53e515701ec08c1758add747bc9b2ed42111f698da6",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T23:27:18.000Z",
-          "ingested_at": "2026-09-07T23:37:00.002Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-05ffa4fef8bee914-claim-01",
-          "story_id": "wt-05ffa4fef8bee914",
-          "claim": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant: Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:37:00.002Z"
-        }
-      ],
-      "content_hash": "7ba8233478323fd63c3f37b4bc7bc4629f202119784c99869b8475baa65823cf",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-07T23:52:00.002Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T23:37:00.002Z",
-      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
-      "event_detected_at": "2026-09-07T22:37:09.924Z",
-      "event_id": "event-dd4cc5404c117c50633c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Europa",
-          "Finanzen",
-          "Demokratie"
-        ],
-        "dimensions": [],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 9.700033333333334,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 59.834633333333336,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T23:37:00.002Z",
-        "fingerprint": "7fdc57b79a20b4022e21bb401a183b4803218e2d209c424890c5091dda8577d3",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T23:37:00.002Z",
-      "rejection": {
-        "at": "2026-09-07T23:37:00.002Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-811d4815cfd8d70d",
       "slug": "graustein-weitere-sprengvorrichtung-nahe-stromtrassen-gefunden-d8d70d",
       "title": "Weitere Sprengvorrichtung nahe Stromtrassen gefunden",
@@ -15086,7 +16354,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T09:34:25.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -15107,7 +16375,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -16156,7 +17424,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "1db019db3e38cbd7a31297d78ff78c013fe66f289bde97e6059e3c3af70bc478",
           "issue_codes": [],
           "warning_codes": []
@@ -16674,7 +17942,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -18066,7 +19334,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -19189,7 +20457,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -20272,7 +21540,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20293,7 +21561,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -20750,7 +22018,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T18:50:16.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20771,7 +22039,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -21446,1113 +22714,6 @@
         ]
       },
       "deepening_checks": 1
-    },
-    {
-      "queue_source_repartitions": [
-        {
-          "version": 1,
-          "at": "2026-09-07T20:36:52.379Z",
-          "retained_urls": [
-            "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
-            "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
-            "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-            "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
-              "title": "Sachsen-Anhalt: Müller will neuer CDU-Chef in Sachsen-Anhalt werden",
-              "summary": "Nach dem schlechten Abschneiden bei der Landtagswahl in Sachsen-Anhalt zieht die CDU erste Konsequenzen. Im Herbst soll es einen Parteitag geben. Ein Bundestagsabgeordneter will kandidieren.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-07T12:37:32.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "08bbe4750c8eb76b502b48fd79d934ab961c1a393a8b750873a123f93799403d",
-              "source_item_id": "1894f96bd5c75a2c16857350cf8f25e542d992f0df2c8baf40b6934294117ecd",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-07T12:37:32.000Z",
-              "ingested_at": "2026-09-07T18:52:11.443Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        }
-      ],
-      "story_id": "wt-255776ddd744e745",
-      "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
-      "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-      "first_seen": "2026-09-07T12:36:15.000Z",
-      "last_updated": "2026-09-07T20:39:39.302Z",
-      "published_at": "2026-09-07T20:39:39.302Z",
-      "updated_at": "2026-09-07T20:39:39.302Z",
-      "topic": [
-        "Demokratie",
-        "Gesellschaft",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
-          "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-          "summary": "Sven Schulze steht in Sachsen-Anhalt vor einer entscheidenden Sitzung: Wird er seinen Rücktritt als Landesparteichef verkünden? Wer ihn beerben könnte und was in der CDU jetzt diskutiert wird.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T12:36:15.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "57acab12436c3c020ebb20bca2ea3aebb15926696babe8e2435559e01c445fb5",
-          "source_item_id": "b1aa1ecafc73dbe8c72d95c51edf5c2391e7d421c3a5e3910e125a4401b51f89",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T12:36:15.000Z",
-          "ingested_at": "2026-09-07T12:51:36.383Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
-          "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-          "summary": "Sven Schulze steht in Sachsen-Anhalt vor einer entscheidenden Sitzung: Wird er seinen Rücktritt als Landesparteichef verkünden? Wer ihn beerben könnte und was in der CDU jetzt diskutiert wird.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T12:37:32.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ad87dcf1cbcd6d08316da7d1e0a9f6169026a57d1cc8c3a24139be47668fa0d3",
-          "source_item_id": "8e666c16069432d4a666744e7127233fe6464c5b2d040627f0018a9cc45dee0f",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T12:37:32.000Z",
-          "ingested_at": "2026-09-07T14:07:07.178Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-          "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - CDU-Spitzenkandidat Schulze kündigt nach Wahlniederlage Konsequenzen an",
-          "summary": "+++ CDU-Spitzenkandidat Schulze kündigt nach Wahlniederlage Konsequenzen an.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T12:51:54.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18",
-          "source_item_id": "9149cbaf2d3503cd6139205fc5ad62cbaf9696ad86c808210755558b2133eec6",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T12:51:54.000Z",
-          "ingested_at": "2026-09-07T13:09:04.172Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html",
-          "title": "Sachsen-Anhalt: Müller will neuer CDU-Chef in Sachsen-Anhalt werden",
-          "summary": "Nach dem schlechten Abschneiden bei der Landtagswahl in Sachsen-Anhalt zieht die CDU erste Konsequenzen. Im Herbst soll es einen Parteitag geben. Ein Bundestagsabgeordneter will kandidieren.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T18:44:45.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "af2ab524c1917c9543cb6f9cc38778452592b09bed325e8b79d9f6c69f2ea0c3",
-          "source_item_id": "a73aaf5d412c76c66f7f3a3d2e14237098f71fc6e2b12dcc2026090a97b2d2bc",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T18:44:45.000Z",
-          "ingested_at": "2026-09-07T18:52:11.443Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/deutschland/cdu-in-sachsen-anhalt--mueller-geht-nach-merz-kritik-in-die-offensive-38216040.html",
-          "title": "CDU in Sachsen-Anhalt: Müller geht nach Merz-Kritik in die Offensive",
-          "summary": "Sepp Müller will die CDU Sachsen-Anhalt neu aufstellen – mit klarer Kante gegen Extreme. Wie er Merz’ Kritik begegnet, und warum er jetzt für den Landesvorsitz kandidiert.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T19:37:20.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "1e77708eb2f0bd4f2e3102f47d7992f82efe58ff6a3d4d9bed7b0daf8b93f800",
-          "source_item_id": "109b9a0391b3a58bdb9e567d98d614715ae0ffbeb75565b400c0c84447b92f48",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T19:37:20.000Z",
-          "ingested_at": "2026-09-07T20:36:52.379Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
-          "title": "Sachsen-Anhalt: Müller will neuer CDU-Chef in Sachsen-Anhalt werden",
-          "summary": "Nach dem schlechten Abschneiden bei der Landtagswahl in Sachsen-Anhalt zieht die CDU erste Konsequenzen. Im Herbst soll es einen Parteitag geben. Ein Bundestagsabgeordneter will kandidieren.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T12:37:32.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "08bbe4750c8eb76b502b48fd79d934ab961c1a393a8b750873a123f93799403d",
-          "source_item_id": "1894f96bd5c75a2c16857350cf8f25e542d992f0df2c8baf40b6934294117ecd",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T12:37:32.000Z",
-          "ingested_at": "2026-09-07T18:52:11.443Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-cdu-in-sachsen-anhalt-16027326.html",
-          "title": "CDU in Sachsen-Anhalt: Müller geht nach Merz-Kritik in die Offensive",
-          "summary": "Sepp Müller will die CDU Sachsen-Anhalt neu aufstellen – mit klarer Kante gegen Extreme. Wie er Merz’ Kritik begegnet, und warum er jetzt für den Landesvorsitz kandidiert.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T12:37:32.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "4ed50bf9f7c20045017f42092625ee3301a6eab6f3b248f2411a677078308e11",
-          "source_item_id": "a33a6dd3a73ecdd1595e8e87acfbb6a5d4183a2b83075288f2da64993bac3610",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T12:37:32.000Z",
-          "ingested_at": "2026-09-07T20:36:52.379Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-255776ddd744e745-v1-claim-1",
-          "story_id": "wt-255776ddd744e745",
-          "claim": "Sven Schulze stellt nach der Wahlniederlage eine Neuwahl des CDU-Landesvorstands für Ende November oder Anfang Dezember in Aussicht.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-              "excerpt_hash": "999bf4e55df51b944b00",
-              "checked_at": "2026-09-07T20:39:39.302Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T20:39:39.302Z"
-        },
-        {
-          "claim_id": "wt-255776ddd744e745-v1-claim-2",
-          "story_id": "wt-255776ddd744e745",
-          "claim": "Sepp Müller will für den Landesvorsitz der CDU in Sachsen-Anhalt kandidieren.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-              "excerpt_hash": "ed360efbd22b78c8da07",
-              "checked_at": "2026-09-07T20:39:39.302Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T20:39:39.302Z"
-        },
-        {
-          "claim_id": "wt-255776ddd744e745-v1-claim-3",
-          "story_id": "wt-255776ddd744e745",
-          "claim": "Bundeskanzler Merz beschreibt den AfD-Sieg in Sachsen-Anhalt als Zäsur und sagt, das Ergebnis könne nicht zur Tagesordnung übergehen.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-              "excerpt_hash": "df3fe58711b3863f30f3",
-              "checked_at": "2026-09-07T20:39:39.302Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-              "excerpt_hash": "0b54ba7fbfd2d504bdcd",
-              "checked_at": "2026-09-07T20:39:39.302Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-              "excerpt_hash": "aebc7d3fc66ead972a56",
-              "checked_at": "2026-09-07T20:39:39.302Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T20:39:39.302Z"
-        }
-      ],
-      "event_id": "event-b8e5d6c8da26f0813a21",
-      "event_first_seen_at": "2026-09-07T12:51:36.383Z",
-      "event_detected_at": "2026-09-07T12:51:36.383Z",
-      "verification_started_at": "2026-09-07T20:39:17.898Z",
-      "publish_ready_at": "2026-09-07T20:39:39.302Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen",
-            "tagesspiegel-home"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 3
-          },
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "stern-schlagzeilen"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 3
-          },
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "tagesspiegel-home"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 3
-          }
-        ]
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T20:36:52.379Z",
-        "fingerprint": "471d8904d36e4cf7fbeb3ac1f379b0b29e16e02b57e317121bb9cc83cab5f6e2",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "followups": [
-        {
-          "claim": "Die CDU in Sachsen-Anhalt entscheidet über die künftige Parteiführung.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Beschluss oder Wahl eines neuen Landesvorstands bzw. Vorsitzes",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-0539a39d2266c31b",
-          "announced_at": "2026-09-07T12:51:54.000Z",
-          "follow_up_date": "2026-09-14T20:39:39.302Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Schulze verkündet einen Rückzug oder bleibt im Amt.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Öffentliche Bestätigung eines Rücktritts oder Verbleibs",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-a3e93a43ba93f64f",
-          "announced_at": "2026-09-07T12:51:54.000Z",
-          "follow_up_date": "2026-09-14T20:39:39.302Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "900deaf772dc840cff30dec5f67836f098c06217b6826124e62fe6f553de6085",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "numeric_evidence": {
-        "version": 1,
-        "analysis_version": 1,
-        "checked_at": "2026-09-07T20:39:39.302Z",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-            "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18",
-            "excerpt_hash": "beccd19cc9f99197fc8f0035abba5733889f231c7b5a1a5cd1222e90b6e2c51f",
-            "numbers": [
-              "5000",
-              "14000",
-              "60",
-              "7.09",
-              "2026"
-            ]
-          }
-        ]
-      },
-      "source_summary": "Nach der Landtagswahl in Sachsen-Anhalt meldeten mehrere Quellen erste personelle und organisatorische Konsequenzen in der CDU. In einem Newsblog hieß es, die CDU-Spitze wolle sich nach der Niederlage neu aufstellen; Schulze stellte eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht und hatte bereits Konsequenzen angekündigt. Zugleich wurde berichtet, dass der Bundestagsabgeordnete Sepp Müller für den Landesvorsitz kandidieren will. Weitere Beiträge ordneten die Reaktionen ein und verwiesen auf die Debatte innerhalb der Partei.\n\nAußerdem äußerte sich Bundeskanzler Merz zur Wahl und sprach von einer Zäsur über Sachsen-Anhalt hinaus. Er sagte, das Ergebnis dürfe nicht einfach als Tagesgeschäft behandelt werden und habe auch Auswirkungen auf die internationale Lage. Die Berichte nennen keine окончeschlossene Personalentscheidung, sondern beschreiben einen laufenden innerparteilichen Klärungsprozess.",
-      "analysis": {
-        "story_id": "wt-255776ddd744e745",
-        "publication_recommendation": true,
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Nach der Wahlniederlage der CDU in Sachsen-Anhalt laufen erste Personal- und Strukturdebatten. Eine endgültige Entscheidung über die Parteiführung ist nach den gelieferten Quellen noch offen.",
-        "detail_summary": "Die Quellen zeigen einen klaren Zwischenstand nach der Landtagswahl in Sachsen-Anhalt: Schulze stellt eine Neuwahl des CDU-Landesvorstands in Aussicht, und Sepp Müller will für den Landesvorsitz kandidieren. Das ist für die Partei materiell relevant, weil damit Führung, Kurs und innerparteiliche Machtverteilung neu geordnet werden können. Der Wirkpfad führt von der Wahlniederlage über Personalentscheidungen zu möglichen Änderungen in Strategie, Geschlossenheit und Koalitionsfähigkeit. Für die demokratische Ebene ist vor allem bedeutsam, ob die CDU ihre organisatorische Handlungsfähigkeit rasch stabilisiert oder weiter in offenen Konflikten bleibt. Belastbar belegt ist aber nur der beginnende Prozess, nicht sein Ausgang. Über Folgen für Wählerverhalten, Regierungsbildung oder politische Mehrheiten lassen sich aus den gelieferten Quellen noch keine sicheren Aussagen ableiten.",
-        "why_relevant": "Die Meldung beschreibt einen konkreten Macht- und Organisationswechsel nach einem Wahlergebnis. Das ist neue Zustandsinformation mit möglicher Wirkung auf Parteiarbeit, politische Stabilität und Koalitionsoptionen.",
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Die Personaldebatte kann die Arbeitsfähigkeit und Geschlossenheit der CDU in Sachsen-Anhalt verändern; zugleich ist der Ausgang noch offen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Aus den gelieferten Quellen ergibt sich kein direkter Bezug zu Umwelt-, Klima- oder Ressourcenzuständen."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Parteiführung, Opposition und mögliche Neuordnung nach der Wahl berühren demokratische Korrekturfähigkeit und politische Repräsentation."
-        },
-        "importance": "hoch",
-        "impact_potential": "Ein Führungswechsel oder eine Neuaufstellung kann die innerparteiliche Steuerung, die Koalitionsfähigkeit und die politische Stabilität in Sachsen-Anhalt verändern.",
-        "impact_risks": [
-          "Offene Personalauseinandersetzungen können die Partei vorübergehend schwächen.",
-          "Uneinigkeit kann die Anschlussfähigkeit an parlamentarische Mehrheiten mindern.",
-          "Die öffentliche Deutung der Wahlniederlage kann die weitere Mobilisierung beeinflussen."
-        ],
-        "mechanisms": [
-          "Wahlniederlage erzeugt Druck auf die Parteiführung.",
-          "Ein möglicher Vorsitzwechsel verschiebt Zuständigkeiten und Entscheidungswege.",
-          "Neue Führung kann Kurs, Kommunikation und Bündnisoptionen neu setzen."
-        ],
-        "first_order": [
-          "Ankündigung einer Neuwahl des Landesvorstands",
-          "Kandidatur von Sepp Müller für den Landesvorsitz"
-        ],
-        "second_order": [
-          "Änderung der internen Machtbalance in der CDU Sachsen-Anhalt",
-          "Mögliche Neuausrichtung von Strategie und öffentlicher Kommunikation"
-        ],
-        "third_order": [
-          "Mögliche Folgen für Koalitionsfähigkeit, Oppositionsrolle und politische Stabilität im Landtag"
-        ],
-        "systemic_relevance": "Der Fall betrifft nicht nur eine Personalfrage, sondern die organisatorische Reaktion einer großen Landespartei nach einer Wahl mit deutlicher Signalwirkung.",
-        "transformation_potential": "Falls die CDU die Führung rasch klärt, kann das ihre Oppositionsarbeit und strategische Neuaufstellung strukturieren; bei Streit steigt das Risiko längerer Lähmung.",
-        "resilience": "Die Partei kann über einen geordneten Parteitag ihre Handlungsfähigkeit wiederherstellen; offen bleibt, ob die Konflikte schnell befriedet werden.",
-        "side_effects": [
-          "Interne Debatten können öffentlich sichtbar werden.",
-          "Kritik an der bisherigen Linie kann zunehmen."
-        ],
-        "uncertainties": [
-          "Ein Rücktritt Schulzes ist in den gelieferten Quellen nicht endgültig bestätigt.",
-          "Der Ausgang der internen Wahl ist offen.",
-          "Folgen für konkrete politische Entscheidungen sind noch nicht belegt."
-        ],
-        "evidence_level": "mittel",
-        "attribution": "Die Berichte stützen sich auf Nachrichtenmeldungen von stern, Tagesspiegel und Deutschlandfunk; mehrere Aussagen sind als Ankündigung oder Absicht formuliert, nicht als vollzogener Beschluss.",
-        "watch_next": [
-          "Ob Schulze seinen Rückzug erklärt oder im Amt bleibt.",
-          "Ob und wann ein Parteitag den neuen Landesvorstand wählt.",
-          "Ob weitere Bewerbungen für den Landesvorsitz folgen."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 16"
-        ],
-        "publication_gate": {
-          "news_value": "material_update",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "material_update",
-          "rationale": "Gegenüber dem bisherigen Stand liegt eine neue, materielle Personal- und Strukturinformation zur CDU-Landesführung vor. Das betrifft Parteiorganisation und politische Handlungsfähigkeit, nicht nur Aufmerksamkeit."
-        },
-        "visuals": null,
-        "media_impact": null,
-        "media_analysis_version": "2.1",
-        "media_checked_at": "2026-09-07T20:36:52.379Z",
-        "media_trigger_fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
-        "media_trigger": {
-          "relevant": false,
-          "level": "low",
-          "score": 0,
-          "reasons": [],
-          "matched_terms": [],
-          "source_count": 7,
-          "comparable_source_count": 3,
-          "fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
-          "content_fingerprint": "488c6adbd6e145d522edd506ad0ae24717a4fe5efe7882a91ec9ac94892369c4",
-          "basis": "controlled_source_text",
-          "version": "2.1"
-        }
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-07T20:39:39.302Z",
-          "content_hash": "900deaf772dc840cff30dec5f67836f098c06217b6826124e62fe6f553de6085",
-          "source_summary": "Nach der Landtagswahl in Sachsen-Anhalt meldeten mehrere Quellen erste personelle und organisatorische Konsequenzen in der CDU. In einem Newsblog hieß es, die CDU-Spitze wolle sich nach der Niederlage neu aufstellen; Schulze stellte eine Neuwahl des Landesvorstands für Ende November oder Anfang Dezember in Aussicht und hatte bereits Konsequenzen angekündigt. Zugleich wurde berichtet, dass der Bundestagsabgeordnete Sepp Müller für den Landesvorsitz kandidieren will. Weitere Beiträge ordneten die Reaktionen ein und verwiesen auf die Debatte innerhalb der Partei.\n\nAußerdem äußerte sich Bundeskanzler Merz zur Wahl und sprach von einer Zäsur über Sachsen-Anhalt hinaus. Er sagte, das Ergebnis dürfe nicht einfach als Tagesgeschäft behandelt werden und habe auch Auswirkungen auf die internationale Lage. Die Berichte nennen keine окончeschlossene Personalentscheidung, sondern beschreiben einen laufenden innerparteilichen Klärungsprozess.",
-          "analysis": {
-            "story_id": "wt-255776ddd744e745",
-            "publication_recommendation": true,
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Nach der Wahlniederlage der CDU in Sachsen-Anhalt laufen erste Personal- und Strukturdebatten. Eine endgültige Entscheidung über die Parteiführung ist nach den gelieferten Quellen noch offen.",
-            "detail_summary": "Die Quellen zeigen einen klaren Zwischenstand nach der Landtagswahl in Sachsen-Anhalt: Schulze stellt eine Neuwahl des CDU-Landesvorstands in Aussicht, und Sepp Müller will für den Landesvorsitz kandidieren. Das ist für die Partei materiell relevant, weil damit Führung, Kurs und innerparteiliche Machtverteilung neu geordnet werden können. Der Wirkpfad führt von der Wahlniederlage über Personalentscheidungen zu möglichen Änderungen in Strategie, Geschlossenheit und Koalitionsfähigkeit. Für die demokratische Ebene ist vor allem bedeutsam, ob die CDU ihre organisatorische Handlungsfähigkeit rasch stabilisiert oder weiter in offenen Konflikten bleibt. Belastbar belegt ist aber nur der beginnende Prozess, nicht sein Ausgang. Über Folgen für Wählerverhalten, Regierungsbildung oder politische Mehrheiten lassen sich aus den gelieferten Quellen noch keine sicheren Aussagen ableiten.",
-            "why_relevant": "Die Meldung beschreibt einen konkreten Macht- und Organisationswechsel nach einem Wahlergebnis. Das ist neue Zustandsinformation mit möglicher Wirkung auf Parteiarbeit, politische Stabilität und Koalitionsoptionen.",
-            "status": "laufende Entwicklung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "tendency": "gemischt",
-              "rationale": "Die Personaldebatte kann die Arbeitsfähigkeit und Geschlossenheit der CDU in Sachsen-Anhalt verändern; zugleich ist der Ausgang noch offen."
-            },
-            "planet": {
-              "relevance": "gering",
-              "tendency": "offen",
-              "rationale": "Aus den gelieferten Quellen ergibt sich kein direkter Bezug zu Umwelt-, Klima- oder Ressourcenzuständen."
-            },
-            "democracy": {
-              "relevance": "hoch",
-              "tendency": "gemischt",
-              "rationale": "Parteiführung, Opposition und mögliche Neuordnung nach der Wahl berühren demokratische Korrekturfähigkeit und politische Repräsentation."
-            },
-            "importance": "hoch",
-            "impact_potential": "Ein Führungswechsel oder eine Neuaufstellung kann die innerparteiliche Steuerung, die Koalitionsfähigkeit und die politische Stabilität in Sachsen-Anhalt verändern.",
-            "impact_risks": [
-              "Offene Personalauseinandersetzungen können die Partei vorübergehend schwächen.",
-              "Uneinigkeit kann die Anschlussfähigkeit an parlamentarische Mehrheiten mindern.",
-              "Die öffentliche Deutung der Wahlniederlage kann die weitere Mobilisierung beeinflussen."
-            ],
-            "mechanisms": [
-              "Wahlniederlage erzeugt Druck auf die Parteiführung.",
-              "Ein möglicher Vorsitzwechsel verschiebt Zuständigkeiten und Entscheidungswege.",
-              "Neue Führung kann Kurs, Kommunikation und Bündnisoptionen neu setzen."
-            ],
-            "first_order": [
-              "Ankündigung einer Neuwahl des Landesvorstands",
-              "Kandidatur von Sepp Müller für den Landesvorsitz"
-            ],
-            "second_order": [
-              "Änderung der internen Machtbalance in der CDU Sachsen-Anhalt",
-              "Mögliche Neuausrichtung von Strategie und öffentlicher Kommunikation"
-            ],
-            "third_order": [
-              "Mögliche Folgen für Koalitionsfähigkeit, Oppositionsrolle und politische Stabilität im Landtag"
-            ],
-            "systemic_relevance": "Der Fall betrifft nicht nur eine Personalfrage, sondern die organisatorische Reaktion einer großen Landespartei nach einer Wahl mit deutlicher Signalwirkung.",
-            "transformation_potential": "Falls die CDU die Führung rasch klärt, kann das ihre Oppositionsarbeit und strategische Neuaufstellung strukturieren; bei Streit steigt das Risiko längerer Lähmung.",
-            "resilience": "Die Partei kann über einen geordneten Parteitag ihre Handlungsfähigkeit wiederherstellen; offen bleibt, ob die Konflikte schnell befriedet werden.",
-            "side_effects": [
-              "Interne Debatten können öffentlich sichtbar werden.",
-              "Kritik an der bisherigen Linie kann zunehmen."
-            ],
-            "uncertainties": [
-              "Ein Rücktritt Schulzes ist in den gelieferten Quellen nicht endgültig bestätigt.",
-              "Der Ausgang der internen Wahl ist offen.",
-              "Folgen für konkrete politische Entscheidungen sind noch nicht belegt."
-            ],
-            "evidence_level": "mittel",
-            "attribution": "Die Berichte stützen sich auf Nachrichtenmeldungen von stern, Tagesspiegel und Deutschlandfunk; mehrere Aussagen sind als Ankündigung oder Absicht formuliert, nicht als vollzogener Beschluss.",
-            "watch_next": [
-              "Ob Schulze seinen Rückzug erklärt oder im Amt bleibt.",
-              "Ob und wann ein Parteitag den neuen Landesvorstand wählt.",
-              "Ob weitere Bewerbungen für den Landesvorsitz folgen."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "material_update",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "material_update",
-              "rationale": "Gegenüber dem bisherigen Stand liegt eine neue, materielle Personal- und Strukturinformation zur CDU-Landesführung vor. Das betrifft Parteiorganisation und politische Handlungsfähigkeit, nicht nur Aufmerksamkeit."
-            },
-            "visuals": null,
-            "media_impact": null,
-            "media_analysis_version": "2.1",
-            "media_checked_at": "2026-09-07T20:36:52.379Z",
-            "media_trigger_fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
-            "media_trigger": {
-              "relevant": false,
-              "level": "low",
-              "score": 0,
-              "reasons": [],
-              "matched_terms": [],
-              "source_count": 7,
-              "comparable_source_count": 3,
-              "fingerprint": "d4aa2130e4188382ec98435a48914bbffa6ec6f836d82c34594c2274b4d2c17b",
-              "content_fingerprint": "488c6adbd6e145d522edd506ad0ae24717a4fe5efe7882a91ec9ac94892369c4",
-              "basis": "controlled_source_text",
-              "version": "2.1"
-            }
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-255776ddd744e745-v1-claim-1",
-              "story_id": "wt-255776ddd744e745",
-              "claim": "Sven Schulze stellt nach der Wahlniederlage eine Neuwahl des CDU-Landesvorstands für Ende November oder Anfang Dezember in Aussicht.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-                  "excerpt_hash": "999bf4e55df51b944b00",
-                  "checked_at": "2026-09-07T20:39:39.302Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T20:39:39.302Z"
-            },
-            {
-              "claim_id": "wt-255776ddd744e745-v1-claim-2",
-              "story_id": "wt-255776ddd744e745",
-              "claim": "Sepp Müller will für den Landesvorsitz der CDU in Sachsen-Anhalt kandidieren.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-                  "excerpt_hash": "ed360efbd22b78c8da07",
-                  "checked_at": "2026-09-07T20:39:39.302Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T20:39:39.302Z"
-            },
-            {
-              "claim_id": "wt-255776ddd744e745-v1-claim-3",
-              "story_id": "wt-255776ddd744e745",
-              "claim": "Bundeskanzler Merz beschreibt den AfD-Sieg in Sachsen-Anhalt als Zäsur und sagt, das Ergebnis könne nicht zur Tagesordnung übergehen.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-                  "excerpt_hash": "df3fe58711b3863f30f3",
-                  "checked_at": "2026-09-07T20:39:39.302Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-                  "excerpt_hash": "0b54ba7fbfd2d504bdcd",
-                  "checked_at": "2026-09-07T20:39:39.302Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-                  "excerpt_hash": "aebc7d3fc66ead972a56",
-                  "checked_at": "2026-09-07T20:39:39.302Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T20:39:39.302Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
-              "content_hash": "57acab12436c3c020ebb20bca2ea3aebb15926696babe8e2435559e01c445fb5"
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
-              "content_hash": "ad87dcf1cbcd6d08316da7d1e0a9f6169026a57d1cc8c3a24139be47668fa0d3"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-              "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18"
-            },
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html",
-              "content_hash": "af2ab524c1917c9543cb6f9cc38778452592b09bed325e8b79d9f6c69f2ea0c3"
-            },
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/politik/deutschland/cdu-in-sachsen-anhalt--mueller-geht-nach-merz-kritik-in-die-offensive-38216040.html",
-              "content_hash": "1e77708eb2f0bd4f2e3102f47d7992f82efe58ff6a3d4d9bed7b0daf8b93f800"
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
-              "content_hash": "08bbe4750c8eb76b502b48fd79d934ab961c1a393a8b750873a123f93799403d"
-            },
-            {
-              "source_id": "tagesspiegel-home",
-              "url": "https://www.tagesspiegel.de/politik/dpa-cdu-in-sachsen-anhalt-16027326.html",
-              "content_hash": "4ed50bf9f7c20045017f42092625ee3301a6eab6f3b248f2411a677078308e11"
-            }
-          ],
-          "numeric_evidence": {
-            "version": 1,
-            "analysis_version": 1,
-            "checked_at": "2026-09-07T20:39:39.302Z",
-            "sources": [
-              {
-                "source_id": "dlf-nachrichten",
-                "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-                "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18",
-                "excerpt_hash": "beccd19cc9f99197fc8f0035abba5733889f231c7b5a1a5cd1222e90b6e2c51f",
-                "numbers": [
-                  "5000",
-                  "14000",
-                  "60",
-                  "7.09",
-                  "2026"
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-07T20:39:39.302Z",
-          "source_count": 7
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-33234cba27bed701-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "33234cba27bed701e3ffd4f695f0cf471c3355268003398cb7a3a94ecfea5f34"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-8087460185623bd0-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "8087460185623bd0b6ab002b925f6aa0a2c7613b286580972a3420cd828dfcb5"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-96648ce2d91660a1-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "96648ce2d91660a17ecdf5f14f57e39464a9974483b041fc6b64a9005df9706f"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-255776ddd744e745-ce1cec14fbf0a2bd-source.png",
-          "sha256": "ce1cec14fbf0a2bd20db3fe2dec466a8c8b482cdebb5713fa020930f71d3ca01",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-4-contextual",
-          "generated_at": "2026-09-07T20:41:49.663Z"
-        },
-        "fingerprint": "05c664f80e09c379672974763e7d8a46e503ccf8d5c0937d3136a73a9a8d045d",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-07T20:42:45.859Z",
-        "status": "generated"
-      },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "900deaf772dc840cff30dec5f67836f098c06217b6826124e62fe6f553de6085",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/deutschland/landtagswahl-in-sachsen-anhalt--schulze-kuendigt-nach-cdu-wahlpleite-konsequenzen-an-38216040.html",
-            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-            "summary": "Sven Schulze steht in Sachsen-Anhalt vor einer entscheidenden Sitzung: Wird er seinen Rücktritt als Landesparteichef verkünden? Wer ihn beerben könnte und was in der CDU jetzt diskutiert wird.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T12:36:15.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "57acab12436c3c020ebb20bca2ea3aebb15926696babe8e2435559e01c445fb5",
-            "source_item_id": "b1aa1ecafc73dbe8c72d95c51edf5c2391e7d421c3a5e3910e125a4401b51f89",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T12:36:15.000Z",
-            "ingested_at": "2026-09-07T12:51:36.383Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-landtagswahl-in-sachsen-anhalt-16027326.html",
-            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-            "summary": "Sven Schulze steht in Sachsen-Anhalt vor einer entscheidenden Sitzung: Wird er seinen Rücktritt als Landesparteichef verkünden? Wer ihn beerben könnte und was in der CDU jetzt diskutiert wird.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T12:37:32.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ad87dcf1cbcd6d08316da7d1e0a9f6169026a57d1cc8c3a24139be47668fa0d3",
-            "source_item_id": "8e666c16069432d4a666744e7127233fe6464c5b2d040627f0018a9cc45dee0f",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T12:37:32.000Z",
-            "ingested_at": "2026-09-07T14:07:07.178Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/cdu-spitzenkandidat-schulze-kuendigt-nach-wahlniederlage-konsequenzen-an-100.html",
-            "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - CDU-Spitzenkandidat Schulze kündigt nach Wahlniederlage Konsequenzen an",
-            "summary": "+++ CDU-Spitzenkandidat Schulze kündigt nach Wahlniederlage Konsequenzen an.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T12:51:54.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "2b44928e359f3391c934574d1f1eea26ff66a46058bdab9972e03044435a4d18",
-            "source_item_id": "9149cbaf2d3503cd6139205fc5ad62cbaf9696ad86c808210755558b2133eec6",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T12:51:54.000Z",
-            "ingested_at": "2026-09-07T13:09:04.172Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/deutschland/sachsen-anhalt--mueller-will-neuer-cdu-chef-in-sachsen-anhalt-werden-38216040.html",
-            "title": "Sachsen-Anhalt: Müller will neuer CDU-Chef in Sachsen-Anhalt werden",
-            "summary": "Nach dem schlechten Abschneiden bei der Landtagswahl in Sachsen-Anhalt zieht die CDU erste Konsequenzen. Im Herbst soll es einen Parteitag geben. Ein Bundestagsabgeordneter will kandidieren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T18:44:45.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "af2ab524c1917c9543cb6f9cc38778452592b09bed325e8b79d9f6c69f2ea0c3",
-            "source_item_id": "a73aaf5d412c76c66f7f3a3d2e14237098f71fc6e2b12dcc2026090a97b2d2bc",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T18:44:45.000Z",
-            "ingested_at": "2026-09-07T18:52:11.443Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/deutschland/cdu-in-sachsen-anhalt--mueller-geht-nach-merz-kritik-in-die-offensive-38216040.html",
-            "title": "CDU in Sachsen-Anhalt: Müller geht nach Merz-Kritik in die Offensive",
-            "summary": "Sepp Müller will die CDU Sachsen-Anhalt neu aufstellen – mit klarer Kante gegen Extreme. Wie er Merz’ Kritik begegnet, und warum er jetzt für den Landesvorsitz kandidiert.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T19:37:20.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "1e77708eb2f0bd4f2e3102f47d7992f82efe58ff6a3d4d9bed7b0daf8b93f800",
-            "source_item_id": "109b9a0391b3a58bdb9e567d98d614715ae0ffbeb75565b400c0c84447b92f48",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T19:37:20.000Z",
-            "ingested_at": "2026-09-07T20:36:52.379Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-sachsen-anhalt-16027326.html",
-            "title": "Sachsen-Anhalt: Müller will neuer CDU-Chef in Sachsen-Anhalt werden",
-            "summary": "Nach dem schlechten Abschneiden bei der Landtagswahl in Sachsen-Anhalt zieht die CDU erste Konsequenzen. Im Herbst soll es einen Parteitag geben. Ein Bundestagsabgeordneter will kandidieren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T12:37:32.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "08bbe4750c8eb76b502b48fd79d934ab961c1a393a8b750873a123f93799403d",
-            "source_item_id": "1894f96bd5c75a2c16857350cf8f25e542d992f0df2c8baf40b6934294117ecd",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T12:37:32.000Z",
-            "ingested_at": "2026-09-07T18:52:11.443Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-cdu-in-sachsen-anhalt-16027326.html",
-            "title": "CDU in Sachsen-Anhalt: Müller geht nach Merz-Kritik in die Offensive",
-            "summary": "Sepp Müller will die CDU Sachsen-Anhalt neu aufstellen – mit klarer Kante gegen Extreme. Wie er Merz’ Kritik begegnet, und warum er jetzt für den Landesvorsitz kandidiert.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T12:37:32.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "4ed50bf9f7c20045017f42092625ee3301a6eab6f3b248f2411a677078308e11",
-            "source_item_id": "a33a6dd3a73ecdd1595e8e87acfbb6a5d4183a2b83075288f2da64993bac3610",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T12:37:32.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T05:37:10.164Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:22:10.164Z",
-          "fingerprint": "471d8904d36e4cf7fbeb3ac1f379b0b29e16e02b57e317121bb9cc83cab5f6e2",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      },
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "76c3ab3907fd9d9c8866e43c0abf73cb2248f825f97af33e86ca12dd95f5cc01",
-        "first_failed_at": "2026-09-08T05:22:10.164Z",
-        "failed_at": "2026-09-08T05:22:10.164Z",
-        "retry_after": "2026-09-08T05:37:10.164Z",
-        "retry_count": 1
-      }
     },
     {
       "story_id": "wt-1cc2e06b531abcc4",
@@ -24928,7 +25089,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -28921,9 +29082,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T05:36:30.571Z",
+        "checked_at": "2026-09-08T05:52:13.496Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:36:30.571Z",
+        "expires_at": "2026-09-08T11:52:13.496Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -33599,7 +33760,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -38296,7 +38457,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -44380,7 +44541,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T15:31:00.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -44401,7 +44562,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -53173,7 +53334,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -55835,7 +55996,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -71067,7 +71228,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T05:22:10.164Z",
+          "ingested_at": "2026-09-08T05:52:13.496Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -71128,7 +71289,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:36:30.571Z"
+          "checked_at": "2026-09-08T05:52:13.496Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -71148,7 +71309,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:36:30.571Z"
+          "checked_at": "2026-09-08T05:52:13.496Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -71164,7 +71325,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T05:36:30.571Z",
+      "updated_at": "2026-09-08T05:52:13.496Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -71204,7 +71365,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1229.6201333333333,
+        "queue_age_minutes": 1245.33555,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -71213,7 +71374,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T05:36:30.571Z",
+        "checked_at": "2026-09-08T05:52:13.496Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -91728,7 +91889,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -92421,7 +92582,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -93175,7 +93336,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -93196,7 +93357,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -93851,7 +94012,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -101734,7 +101895,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -121892,7 +122053,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T13:07:00.000Z",
-            "ingested_at": "2026-09-07T20:36:52.379Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -121902,14 +122063,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T05:37:06.629Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -121917,7 +122074,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -123570,7 +123727,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T12:00:00.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -123580,12 +123737,10 @@
             }
           }
         ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-08T05:52:10.164Z",
+        "quality_retry_after": null,
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -123593,7 +123748,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:22:10.164Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -129623,7 +129778,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -173977,7 +174132,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:36:30.571Z",
+          "checked_at": "2026-09-08T05:52:13.496Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
