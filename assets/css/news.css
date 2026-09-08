@@ -772,7 +772,8 @@
   border-color: var(--wt-green);
 }
 
-.news-card[hidden] {
+/* Pagination and filters also hide editorial analysis cards (display: grid). */
+[data-news-card][hidden] {
   display: none;
 }
 
