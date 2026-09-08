@@ -6,7 +6,7 @@ import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-
 import { lookup } from "node:dns/promises";
 import { isIP } from "node:net";
 import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA, DIMENSION_TENDENCY_RULE } from "./visuals.mjs";
-import { DIRECTION_ASSESSMENT_VERSION, directionAssessmentErrors } from './direction-assessment.mjs';
+import { DIRECTION_ASSESSMENT_VERSION, NEWS_DIMENSION_SCHEMA, directionAssessmentErrors } from './direction-assessment.mjs';
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
@@ -877,7 +877,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     "Verwirf ungeeignete Kandidaten früh und knapp: Für eine Ablehnung liefere ausschließlich story_id, publication_recommendation:false und rejection:{code,reason}. Erlaubte codes: not_material, no_new_information, insufficient_evidence, superseded. reason muss die konkrete sachliche Ursache in 30 bis 300 Zeichen nennen. Keine langen Artikel oder Folgenanalysen für abgelehnte Kandidaten erzeugen.",
     "review_mode: historical_relevance_reassessment beurteilt die Neuigkeit zum Quelldatum; existing_history derselben Akte ist kein Dublettenbeweis. related_ticker_history bezeichnet andere Akten: source_published_at vergleichen. Ein späterer Rückblick entwertet keine frühere Originalmeldung; ein Rückblick ohne neue Information ist aber eine Dublette. new_or_updated_story verlangt eine neue materielle Entwicklung gegenüber der Vorgeschichte.",
     "Materiell NEU: Änderung von Regeln, Anreizen, Kapitalflüssen, Märkten, Infrastruktur oder MPD-Zuständen; oder neue belastbare Evidenz dazu.",
-    "Prüfe Materialität ausdrücklich nach Zahl und Art der Betroffenen, Intensität, Dauer, Reversibilität, Systemrelevanz, Kaskaden, Verteilung, Resilienz und demokratischer Korrekturfähigkeit. Mindestens zwei verschiedene Faktoren müssen substanziell sein oder ein einzelner Faktor muss außergewöhnlich stark sein. Resonanz und Aufmerksamkeit zählen nicht als materielle Faktoren und begründen auch keine Ausnahme.",
+    "Materialität: Zahl/Art Betroffener, Intensität, Dauer, Reversibilität, Systemrelevanz, Kaskaden, Verteilung, Resilienz, demokratische Korrekturfähigkeit. Mindestens zwei verschiedene substanzielle Faktoren oder einer außergewöhnlich stark. Resonanz/Aufmerksamkeit sind keine materiellen Faktoren und keine Ausnahme.",
     "Konkrete Materialität begründen: Lokaler Einzelfall, Produkt- oder Gebührenänderung reicht ohne belegte Intensität, Breite oder Präzedenzwirkung nicht. Denkbare Übertragbarkeit allein reicht nicht. Die Publikationsform ist niemals allein ein Ausschlussgrund: Auch regelmäßige Arbeitsmarkt-/Preis-/Gesundheits-/Klimastatistik, Interview, Rede oder parlamentarische Antwort kann neue Zustandsinformation, zurechenbare Entscheidung, verbindliche Zusage, Evidenz oder Kursänderung liefern.",
     "Ablehnen: bloße Meinung, Wiederholung, Spekulation, Zeremonie, Routinezahl, Börsen-/Tenderzahl, Frage ohne materielle Antwort oder formales Verfahren ohne relevanten Wirkpfad. Quellenrang und Aufmerksamkeit sind kein Relevanzbeweis. Sammel-/Rückblicksmeldung bereits erfasster Entscheidungen ohne neue Information: related_ticker_history prüfen, duplicate_without_new_information.",
     "material_development_review ist nur ein Prüfsignal. Neue Kandidatur-, Rücktritts-, Koalitions-, Regierungsbildungs- oder Ergebnisangaben vergleichen: materielle Aussage = material_update, anderes Medium allein = Dublette. Artikelzeit ist nicht Aussagezeit: Spätere Artikel können alte Zitate enthalten. Vor Kurswechselbehauptungen frühere Bedingungen, datierte Aussagen und Nachträge prüfen; das Publikationsdatum entscheidet keinen Widerspruch. Videoüberschrift ist kein geprüfter Originalton. Zeitkritik erhöht Prüfpriorität, nie Evidenzgrad. Gleiche Regeln für alle Parteien/Medien; Landtagswahl und Regierungschefwahl trennen.",
@@ -889,7 +889,7 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
     "source_summary: eigene neutrale Quellenzusammenfassung, 100 bis 180 Wörter, 2 bis 3 Absätze (Leerzeile). Nur belegte Ereignisse/Beteiligte/Anlass/Maßnahmen/Aussagen/Zahlen/Termine/Kontext; offene Punkte benennen, keine Bewertung/Wirkungsannahme.",
     "WÖk-Einordnung nur außerhalb source_summary: summary genau 2 kurze Sätze, höchstens 360 Zeichen; detail_summary 5 bis 7 gehaltvolle Sätze, 500 bis 1200 Zeichen: Sachverhalt, Relevanz, Wirkpfad, mögliche Folge, Evidenzgrenze. Ohne eigene Feldvorgabe: Strings maximal 220 Zeichen; Arrays je 1 Eintrag, maximal 180 Zeichen. Gesamtlimit inkl. Schema/Visuals: 10000 Zeichen mit relevantem Mediencheck, sonst 6300.",
     "Lesertexte deutsch, ohne URLs/Quellen-IDs/Dokumentnummern. Zahlen nur aus Claim/Quelle, gleiche Schreibweise (Zahlwort bleibt Zahlwort). Keine Einleitung/Schemawiederholung. Beleg-IDs gehören nur in interne Referenzfelder, außerhalb des Fließtextbudgets.",
-    "event_claims.evidence:[{evidence_id:...}] verweist auf passende gelieferte evidence_segments (ersetzen article_excerpt); mehrere IDs möglich, Server löst sie auf. followups.source_id und MPD-Pfad-source_ids: gelieferte Quellen-IDs. Keine Zitate kopieren oder URLs/IDs erfinden. Originalbelege unübersetzt.",
+    "event_claims.evidence:[{evidence_id:...}]: passende gelieferte evidence_segments referenzieren, Server löst auf. followups.source_id: source_id. MPD-Pfad-source_ids: source_id oder gelieferte evidence_id. Keine Zitate kopieren, keine URLs/IDs erfinden. Originalbelege unübersetzt.",
     "evidence_selection.incomplete kennzeichnet eine begrenzte Textstellenauswahl, keinen vollständig gelesenen Artikel. Keine Vollständigkeit behaupten; fehlt Beleg oder Kontext für eine Kernbehauptung, insufficient_evidence statt Ergänzen aus Vermutung.",
     ...MEDIA_PROMPT_RULES,
     ...(includeVisuals ? [...VISUALS_PROMPT_RULES,
@@ -912,9 +912,9 @@ export function buildAnalysisPrompt(stories, { includeVisuals = true } = {}) {
         status: "angekündigt|Entwurf|beschlossen|in Kraft|laufende Umsetzung|erste Daten|evaluiert|laufende Entwicklung|offen",
         analysis_type: "ex_ante|monitoring|ex_post",
         direction_assessment_version: DIRECTION_ASSESSMENT_VERSION,
-        human: { relevance: "gering|mittel|hoch|sehr hoch|offen", tendency: "chance|risiko|gemischt|offen", direction_basis: "assessed|unclear|no_path", rationale: "string" },
-        planet: { relevance: "gering|mittel|hoch|sehr hoch|offen", tendency: "chance|risiko|gemischt|offen", direction_basis: "assessed|unclear|no_path", rationale: "string" },
-        democracy: { relevance: "gering|mittel|hoch|sehr hoch|offen", tendency: "chance|risiko|gemischt|offen", direction_basis: "assessed|unclear|no_path", rationale: "string" },
+        human: NEWS_DIMENSION_SCHEMA,
+        planet: NEWS_DIMENSION_SCHEMA,
+        democracy: NEWS_DIMENSION_SCHEMA,
         importance: "gering|mittel|hoch|sehr hoch",
         impact_potential: "string",
         impact_risks: ["string"],

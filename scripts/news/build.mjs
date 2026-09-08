@@ -20,7 +20,7 @@ import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs"
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260908-direction1";
+const PUBLIC_RELEASE = "20260908-education1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -93,6 +93,16 @@ function formatDate(value, options = {}) {
     dateStyle: options.dateOnly ? "medium" : "medium",
     ...(options.dateOnly ? {} : { timeStyle: "short" }),
   }).format(new Date(value));
+}
+
+export function formatEditorialSourceDate(source) {
+  if (!source.published_at) return "Publikationsdatum nicht angegeben";
+  // Journal issues may state a month, not an exact publication day.
+  if (source.document_date_status === "month_only") {
+    if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(source.published_at)) return "Publikationsdatum nicht angegeben";
+    return new Intl.DateTimeFormat("de-DE", { timeZone: "UTC", month: "long", year: "numeric" }).format(new Date(`${source.published_at}-01T00:00:00Z`));
+  }
+  return formatDate(source.published_at, { dateOnly: true });
 }
 
 function firstSourceDate(story) {
@@ -688,7 +698,7 @@ export function editorialAnalysisPage(analysis, story, { nextItem = null } = {})
   const heroSections = renderedSections.filter(item => item.section.placement === "hero").map(item => item.html).join("");
   const sections = renderedSections.filter(item => !item.section.placement).map(item => item.html).join("");
   const contents = renderEditorialContents(analysis);
-  const sourceList = (analysis.source_snapshot || []).map((source) => `<li><a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><span>${escapeHtml({ context: "Institutioneller Kontext / eigener Vorschlag", journalistic_context: "Journalistischer Bericht / attribuierte Angabe", counter_source: "Gegenposition oder kritischer Prüfbericht", research: "Fachlicher Forschungsstand", reference_framework: "Ziel- und Referenzrahmen" }[source.source_function] || (source.primary_source ? "Primärquelle / Selbstauskunft" : "Journalistische oder fachliche Kontextquelle"))} · ${source.editorial_review ? "Dokumentstand " : ""}${source.published_at ? escapeHtml(formatDate(source.published_at, { dateOnly: true })) : "Publikationsdatum nicht angegeben"}${source.editorial_review ? ` · geprüft ${escapeHtml(source.editorial_review.checked_at.slice(0, 10))}` : ""}${source.precise_location ? ` · ${escapeHtml(source.precise_location)}` : ""}</span></li>`).join("");
+  const sourceList = (analysis.source_snapshot || []).map((source) => `<li><a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><span>${escapeHtml({ context: "Institutioneller Kontext / eigener Vorschlag", journalistic_context: "Journalistischer Bericht / attribuierte Angabe", counter_source: "Gegenposition oder kritischer Prüfbericht", research: "Fachlicher Forschungsstand", reference_framework: "Ziel- und Referenzrahmen" }[source.source_function] || (source.primary_source ? "Primärquelle / Selbstauskunft" : "Journalistische oder fachliche Kontextquelle"))} · ${source.editorial_review ? "Dokumentstand " : ""}${escapeHtml(formatEditorialSourceDate(source))}${source.editorial_review ? ` · geprüft ${escapeHtml(source.editorial_review.checked_at.slice(0, 10))}` : ""}${source.precise_location ? ` · ${escapeHtml(source.precise_location)}` : ""}</span></li>`).join("");
   const ledger = (analysis.claim_ledger || []).map((claim) => {
     const linkedSources = (claim.source_ids || []).map((sourceId) => sourcesById.get(sourceId)).filter(Boolean);
     return `<li><div><strong>${escapeHtml(CLAIM_TYPE_LABELS[claim.type] || "Einordnung")}</strong><p>${escapeHtml(claim.claim)}</p></div><p class="news-method-note">Evidenz: ${escapeHtml({ high: "hoch", medium: "mittel", low: "gering", open: "offen" }[claim.evidence_level] || "offen")}${linkedSources.length ? ` · ${linkedSources.map((source) => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}</a>`).join(" · ")}` : ""}${claim.uncertainty ? ` · Grenze: ${escapeHtml(claim.uncertainty)}` : ""}</p></li>`;

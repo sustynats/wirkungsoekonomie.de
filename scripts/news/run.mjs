@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { directionInputDiagnostics, normalizeEmptyDirectionPaths } from "./direction-assessment.mjs";
 import {
   budgetStage,
   buildAnalysisPrompt,
@@ -487,9 +488,10 @@ export function mediaInputDiagnostics(value) {
   };
 }
 
-export function analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, story = {}, mediaInput) {
+export function analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, story = {}, mediaInput, directionInput) {
   if (!analysis) return null;
   return {
+    direction_input: directionInput || directionInputDiagnostics(analysis, story.sources || []),
     publication_depth: analysis.publication_depth || null,
     publication_decision_type: typeof analysis.publication_recommendation,
     publication_decision_value: ['string','boolean','number'].includes(typeof analysis.publication_recommendation)
@@ -1339,7 +1341,13 @@ export async function runWirkungsticker(options = {}) {
             report.media_check_cost_usd = Number((report.media_check_cost_usd + mediaUsage.estimated_cost_usd).toFixed(6));
           } else if (analysisCandidate.media_trigger?.relevant) report.media_checks_triggered += 1;
           else report.media_checks_skipped += 1;
-          if (analysis) resolveEvidenceReferences(analysis, analysisCandidate, aiResult.supplied_evidence_ids?.[candidate.story_id] || []);
+          const directionInputBeforeNormalization = directionInputDiagnostics(analysis, analysisCandidate.sources || []);
+          const directionTransport = { empty_paths_normalized: normalizeEmptyDirectionPaths(analysis) };
+          if (analysis) resolveEvidenceReferences(analysis, analysisCandidate, aiResult.supplied_evidence_ids?.[candidate.story_id] || [], directionTransport);
+          if (directionTransport.empty_paths_normalized.length || directionTransport.supplied_evidence_refs || directionTransport.unknown_refs) {
+            report.direction_transport ||= [];
+            report.direction_transport.push({ story_id: candidate.story_id, ...directionTransport });
+          }
           if (analysis) normalizeEvidenceExcerpts(analysis, analysisCandidate);
           const errors = analysis ? validateAnalysis(analysis, analysisCandidate, { requireDirectionAssessment: true }) : ["AI_ANALYSIS_MISSING"];
           // Check the durable representation before accepting a publication.
@@ -1349,7 +1357,7 @@ export async function runWirkungsticker(options = {}) {
             nextPublished = publishedRecord(analysisCandidate, analysis, aiResult, options.now ? now : new Date().toISOString());
             errors.push(...validateAnalysis({ source_summary: nextPublished.source_summary, ...nextPublished.analysis }, nextPublished, { validateSourceSummaryNumbers: false, persisted: true }));
           }
-          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, candidate, mediaInputBeforeSanitizing) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
+          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, candidate, mediaInputBeforeSanitizing, directionInputBeforeNormalization) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
             const noUpdate = errors.includes("AI_DUPLICATE_WITHOUT_UPDATE")
               && errors.every(error => ["AI_PUBLICATION_NOT_RECOMMENDED", "AI_DUPLICATE_WITHOUT_UPDATE"].includes(error));

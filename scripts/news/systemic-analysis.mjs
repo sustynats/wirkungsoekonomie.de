@@ -8,7 +8,19 @@ export const isCommissionedAnalysis = analysis => (analysis?.analysis_variant ==
 const escape = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[char]));
 const STATES = { open: "Offen", announced: "Angekündigt", introduced: "Eingebracht", adopted: "Beschlossen", implemented: "Umgesetzt", measured: "Wirkung gemessen" };
 const STATUS = { fact: "Belegt", program_statement: "Programmaussage", analytical_inference: "Plausibler Wirkpfad", scenario: "Bedingtes Szenario", impact_risk: "Bedingtes Risiko" };
-const TYPES = new Set(["cards", "cascade", "timeline", "references", "network", "power", "federal", "comparison", "feedback"]);
+const TYPES = new Set(["cards", "cascade", "timeline", "references", "network", "power", "federal", "comparison", "feedback", "evidence_table"]);
+
+function validEvidenceTable(visual) {
+  return Array.isArray(visual.columns) && visual.columns.length === 4
+    && visual.columns.every(label => typeof label === "string" && label.trim() && label.length <= 80)
+    && Array.isArray(visual.items) && visual.items.length > 0 && visual.items.length <= 12
+    && visual.items.every(item => item && typeof item.title === "string" && item.title.trim()
+      && typeof item.text === "string" && item.text.trim()
+      && typeof item.condition === "string" && item.condition.trim()
+      && item.relation === "impact_path" && Object.hasOwn(AXES.direction, item.direction)
+      && STATUS[item.status] && Array.isArray(item.source_ids) && item.source_ids.length > 0
+      && (item.source_note === undefined || (typeof item.source_note === "string" && item.source_note.length <= 240)));
+}
 
 export const EDITORIAL_VISUAL_SCHEMA = { type: "cascade", caption: "Wirkpfad in Alltagssprache", items: [{ title: "Schritt", text: "konkrete Veränderung", status: "fact|program_statement|analytical_inference|scenario|impact_risk", relation: "scope|impact_path", direction: "positive|negative|mixed|open", condition: "Bedingung des Wirkpfads; scope zeigt nur Zuständigkeit/Bezug", source_ids: ["string"] }] };
 
@@ -32,6 +44,10 @@ export function editorialVisualErrors(analysis) {
     if (!visual) continue;
     if (!TYPES.has(visual.type) || !visual.caption || !visual.items?.length) errors.push("SYSTEMIC_VISUAL_INVALID");
     if (["network", "power", "federal"].includes(visual.type) && !visual.hub) errors.push("SYSTEMIC_VISUAL_HUB_REQUIRED");
+    if (visual.type === "evidence_table" && !validEvidenceTable(visual)) {
+      errors.push("EDITORIAL_EVIDENCE_TABLE_INVALID");
+      continue;
+    }
     if (visual.type === "feedback" && (!Array.isArray(visual.items) || visual.items.length < 3 || !["closed", "broken"].includes(visual.loop_status) || typeof visual.return_label !== "string" || !visual.return_label.trim() || visual.return_label.length > 240)) errors.push("EDITORIAL_FEEDBACK_INVALID");
     if (visual.type === "comparison") {
       const lanes = Array.isArray(visual.lanes) ? visual.lanes : [];
@@ -87,6 +103,12 @@ export function commissionedReviewState(analysis, story) {
 
 export function renderSystemicVisual(visual, sources) {
   if (!visual || !TYPES.has(visual.type)) return "";
+  if (visual.type === "evidence_table") {
+    if (!validEvidenceTable(visual)) return "";
+    const mobileLabel = index => `<span class="news-evidence-table__label" aria-hidden="true">${escape(visual.columns[index])}</span>`;
+    const rows = visual.items.map(item => `<tr role="row"><th scope="row" role="rowheader">${mobileLabel(0)}${escape(item.title)}</th><td role="cell">${mobileLabel(1)}${escape(item.text)}</td><td role="cell">${mobileLabel(2)}${renderPathDirection(item.direction)}<span class="news-systemic-status">${escape(STATUS[item.status])}</span><p>${escape(item.condition)}</p></td><td role="cell">${mobileLabel(3)}${item.source_ids.map(id => sources.get(id)).filter(Boolean).map(source => `<a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.publisher)}</a>`).join(" · ")}${item.source_note ? `<p class="news-method-note">${escape(item.source_note)}</p>` : ""}</td></tr>`).join("");
+    return `<figure class="news-systemic-visual news-systemic-visual--evidence-table"><table class="news-evidence-table" role="table"><caption>${escape(visual.caption)}</caption><thead role="rowgroup"><tr role="row">${visual.columns.map(label => `<th scope="col" role="columnheader">${escape(label)}</th>`).join("")}</tr></thead><tbody role="rowgroup">${rows}</tbody></table></figure>`;
+  }
   if (visual.type === "feedback") {
     if (!Array.isArray(visual.items) || visual.items.length < 3 || !["closed", "broken"].includes(visual.loop_status) || !visual.return_label) return "";
     // Reuse the ordered, evidence-labelled path; the return channel makes the

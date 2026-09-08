@@ -2382,6 +2382,27 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 .news-editorial-callout { padding: clamp(1.3rem, 4vw, 2.5rem); border-radius: 1rem; background: linear-gradient(135deg, #07192d, #16463f); margin: 2rem 0; }
 .news-editorial-callout > p { color: #fff4d8; font-family: var(--font-serif, Georgia, serif); font-size: clamp(1.6rem, 3.5vw, 2.6rem); line-height: 1.25; margin: 0; max-width: 35ch; }
 .news-comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+.news-evidence-table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: .95rem; line-height: 1.55; }
+.news-evidence-table caption { text-align: left; color: #19423a; font-weight: 700; margin-bottom: 1rem; }
+.news-evidence-table th, .news-evidence-table td { text-align: left; vertical-align: top; padding: .9rem; border: 1px solid #b2beb6; overflow-wrap: anywhere; hyphens: auto; }
+.news-evidence-table thead { background: #e5eee8; color: #183f34; }
+.news-evidence-table thead th:nth-child(1) { width: 19%; }
+.news-evidence-table thead th:nth-child(2) { width: 27%; }
+.news-evidence-table thead th:nth-child(3) { width: 35%; }
+.news-evidence-table tbody { background: #fffdf7; }
+.news-evidence-table td p { margin: .5rem 0 0; }
+.news-evidence-table .news-path-direction { margin-bottom: .4rem; }
+.news-evidence-table__label { display: none; }
+@media (max-width: 760px) {
+  /* Explicit table roles preserve the relationships when rows become reading cards. */
+  .news-evidence-table, .news-evidence-table caption, .news-evidence-table tbody, .news-evidence-table tr { display: block; width: 100%; }
+  .news-evidence-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .news-evidence-table tbody tr { margin-bottom: 1rem; border: 1px solid #b2beb6; border-radius: .65rem; overflow: hidden; }
+  .news-evidence-table tbody th, .news-evidence-table tbody td { display: block; width: auto; border: 0; border-bottom: 1px solid #dbe2dc; }
+  .news-evidence-table tbody th { background: #e5eee8; }
+  .news-evidence-table tbody td:last-child { border-bottom: 0; }
+  .news-evidence-table__label { display: block; font-size: .8rem; font-weight: 700; color: #345c50; margin-bottom: .3rem; }
+}
 .news-comparison-lane { padding: 1rem; border: 1px solid #acb9b4; border-radius: .85rem; background: #eef2ef; min-width: 0; }
 .news-comparison-lane + .news-comparison-lane { background: #f7eee6; border-color: #c6a78e; }
 .news-comparison-lane > h3 { font-size: 1.3rem; margin: .2rem 0 .6rem; }
