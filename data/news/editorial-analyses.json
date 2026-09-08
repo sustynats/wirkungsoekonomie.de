@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T07:09:20.286Z",
+  "updated_at": "2026-09-08T07:41:48.796Z",
   "candidates": [
     {
       "story_id": "wt-de413d33343f350b",
       "story_slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
       "story_title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
-      "editorial_analysis_score": 74,
+      "editorial_analysis_score": 75,
       "analysis_gain": 51,
       "factors": {
         "systemic_relevance": 16,
@@ -24,7 +24,7 @@
         "distribution_relevance": 3,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -34,14 +34,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 4,
         "primary_source_count": 0,
         "cited_claim_count": 8,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "3b2a4c60dfae7956f3ea5b552d55450b6082047eacc0449f5451cff47362ca60",
+      "fingerprint": "3a1aa42e5fce23a1c7ec3e3c11e9eec28a73ddc47cc8150a995b2b2556fd35c0",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -24165,8 +24165,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T07:09:20.286Z",
-      "next_attempt_at": "2026-09-08T07:24:20.286Z",
+      "last_attempt_at": "2026-09-08T07:41:48.796Z",
+      "next_attempt_at": "2026-09-08T07:56:48.796Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -24198,18 +24198,16 @@
       "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-de413d33343f350b": {
-      "fingerprint": "3b2a4c60dfae7956f3ea5b552d55450b6082047eacc0449f5451cff47362ca60",
+      "fingerprint": "3a1aa42e5fce23a1c7ec3e3c11e9eec28a73ddc47cc8150a995b2b2556fd35c0",
       "method_version": "1.0",
       "attempts": 1,
-      "last_attempt_at": "2026-09-08T07:09:20.286Z",
-      "next_attempt_at": "2026-09-08T07:24:20.286Z",
+      "last_attempt_at": "2026-09-08T07:41:48.796Z",
+      "next_attempt_at": "2026-09-08T07:56:48.796Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_ARTICLE_LENGTH",
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_SELF_FRAME_FAILED"
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
     }
   }
 }
