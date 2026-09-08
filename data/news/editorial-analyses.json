@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T14:32:54.675Z",
+  "updated_at": "2026-09-08T15:26:56.650Z",
   "candidates": [
     {
       "story_id": "wt-84ac3f26c7762712",
@@ -607,7 +607,7 @@
       "story_id": "wt-f7d7115a53ff2c2f",
       "story_slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
       "story_title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
-      "editorial_analysis_score": 71,
+      "editorial_analysis_score": 74,
       "analysis_gain": 48,
       "factors": {
         "systemic_relevance": 16,
@@ -624,7 +624,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 4,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -634,14 +634,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
         "cited_claim_count": 2,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
+      "fingerprint": "0ea71472a448a07bb78d90dd83f286f6029c3828610e97f86e67dc315f4aa93f",
       "status": "ready_for_research",
       "analysis_id": "woek-analysis-17508db58ecc"
     },
@@ -26785,8 +26785,8 @@
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
       "attempts": 9,
-      "last_attempt_at": "2026-09-08T15:07:22.116Z",
-      "next_attempt_at": "2026-09-08T15:22:22.116Z",
+      "last_attempt_at": "2026-09-08T15:26:56.650Z",
+      "next_attempt_at": "2026-09-08T15:41:56.650Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
@@ -26795,16 +26795,17 @@
       "reason": "BATCH_RETRY_LIMIT"
     },
     "wt-f7d7115a53ff2c2f": {
-      "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
+      "fingerprint": "0ea71472a448a07bb78d90dd83f286f6029c3828610e97f86e67dc315f4aa93f",
       "method_version": "1.0",
-      "attempts": 7,
-      "last_attempt_at": "2026-09-08T10:13:04.054Z",
-      "next_attempt_at": "2026-09-08T22:13:04.054Z",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-08T15:26:56.650Z",
+      "next_attempt_at": "2026-09-08T15:41:56.650Z",
       "quality_errors": [
-        "EDITORIAL_OBSERVED_IMPACT_OPEN",
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_IMPACT_OPEN,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-cf03acddb911d861": {
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
@@ -26834,8 +26835,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T14:57:44.817Z",
-      "next_attempt_at": "2026-09-08T15:12:44.817Z",
+      "last_attempt_at": "2026-09-08T15:26:56.650Z",
+      "next_attempt_at": "2026-09-08T15:41:56.650Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"

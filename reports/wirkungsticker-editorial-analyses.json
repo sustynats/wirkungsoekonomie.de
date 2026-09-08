@@ -2,25 +2,31 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T15:07:22.116Z",
+  "started_at": "2026-09-08T15:26:56.650Z",
   "scanned_stories": 165,
   "scanned_subjects": 143,
   "editorial_candidates": 27,
   "ready_for_research": 6,
   "research_pending": 10,
-  "retry_deferred": 5,
-  "editorial_research_sources_discovered": 41,
-  "selected": 1,
-  "editorial_research_started": 0,
+  "retry_deferred": 3,
+  "editorial_research_sources_discovered": 42,
+  "selected": 3,
+  "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
-  "research_tokens": 0,
-  "analysis_tokens": 0,
-  "estimated_cost_usd": 0,
-  "quality_retries": 0,
+  "research_calls": 2,
+  "research_tokens": 14565,
+  "analysis_tokens": 15147,
+  "estimated_cost_usd": 0.077875,
+  "quality_retries": 1,
   "publication_deferred": true,
-  "failed": [],
+  "failed": [
+    {
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-08T15:41:56.650Z"
+    }
+  ],
   "candidates": [
     {
       "story_id": "wt-84ac3f26c7762712",
@@ -626,7 +632,7 @@
       "story_id": "wt-f7d7115a53ff2c2f",
       "story_slug": "wachsende-risiken-jedes-funfte-unternehmen-spurt-hybride-bedrohung-ff2c2f",
       "story_title": "Bericht nennt wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage für Unternehmen",
-      "editorial_analysis_score": 71,
+      "editorial_analysis_score": 74,
       "analysis_gain": 48,
       "factors": {
         "systemic_relevance": 16,
@@ -643,7 +649,7 @@
         "distribution_relevance": 6,
         "discourse_relevance": 4,
         "case_depth": 0,
-        "evidence_quality": 5
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -653,14 +659,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
         "cited_claim_count": 2,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
+      "fingerprint": "0ea71472a448a07bb78d90dd83f286f6029c3828610e97f86e67dc315f4aa93f",
       "status": "ready_for_research",
       "analysis_id": "woek-analysis-17508db58ecc"
     },
@@ -1193,6 +1199,6 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "batch_deferred": 1,
-  "completed_at": "2026-09-08T15:07:46.207Z"
+  "batch_deferred": 2,
+  "completed_at": "2026-09-08T15:28:52.265Z"
 }
