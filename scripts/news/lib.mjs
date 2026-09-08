@@ -9,7 +9,7 @@ import { VISUALS_PROMPT_RULES, VISUALS_SCHEMA, DIMENSION_TENDENCY_RULE } from ".
 import { assertDirectNewsUrl, assertPublicArticle, sourceAccess, respectRobots, respectRsl, mustRespectRobots } from "./access-policy.mjs";
 import { evidenceGroups, eventCompatibility, validateNewsroomAnalysis, promptEvidenceSegments } from "./newsroom.mjs";
 import { parseResearchApi, parseNewsSitemap, parseHtmlIndex } from "./source-adapters.mjs";
-import { livingFileMatch, subjectConflict, matchingStories, isMerged } from "./living-files.mjs";
+import { livingFileMatch, subjectConflict, matchingStories, isMerged, documentKey } from "./living-files.mjs";
 import { compactEvidenceSegments, serializeEvidencePackets, expandEvidenceSegments, expandPacketTransport } from "./evidence-packets.mjs";
 import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis } from "./media-impact.mjs";
 
@@ -652,6 +652,7 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
 
 export function clusterItems(items, existingStories = [], now = new Date().toISOString()) {
   const clusters = [];
+  const occupiedIds = new Set(existingStories.map(story => story.story_id));
   const existing = matchingStories(existingStories).map((story) => ({ story, title: story.title, last_updated: story.last_updated,
     anchored_story: { ...story, sources: anchoredSources(story) } }));
   const sorted = items.map((item) => ({ item, match: existing
@@ -675,8 +676,18 @@ export function clusterItems(items, existingStories = [], now = new Date().toISO
     });
     if (!target) {
       const signature = [...titleTokens(item.title)].sort().slice(0, 10).join("-") || item.item_id;
+      const seed = `${signature}:${(item.published_at || now).slice(0, 10)}`;
+      let storyId = `wt-${sha256(seed).slice(0, 16)}`;
+      // A similar headline hash is not permission to replace a stored record.
+      // Reuse is allowed only through the explicit event match above. Retired
+      // IDs and other unmatched events in the same batch stay occupied as well.
+      const document = documentKey(item.url) || item.source_item_id || item.item_id || "unknown";
+      for (let collision = 1; occupiedIds.has(storyId); collision += 1) {
+        storyId = `wt-${sha256(`${seed}:${document}:${collision}`).slice(0, 16)}`;
+      }
+      occupiedIds.add(storyId);
       target = {
-        story_id: `wt-${sha256(`${signature}:${(item.published_at || now).slice(0, 10)}`).slice(0, 16)}`,
+        story_id: storyId,
         existing_story: null,
         title: item.title,
         first_seen: item.published_at || now,

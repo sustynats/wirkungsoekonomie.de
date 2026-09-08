@@ -10,6 +10,41 @@ const source = (title, url = "https://example.org/a", more = {}) => ({ title, ur
 const story = (id, title, more = {}) => ({ story_id: id, slug: id, title, source_summary: "", published: true, listed: true, published_at: now, last_updated: now, first_seen: now, sources: [source(title, `https://example.org/${id}`)], claims: [], analysis: { summary: title }, versions: [{ version: 1, analyzed_at: now }], current_version: 1, ...more });
 const dormagen = story("dormagen", "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen");
 
+test('school subjects in a checked summary are not conflicting geographical places', () => {
+  for (const subject of ['Mathematik', 'Lesen', 'Naturwissenschaften']) {
+    const title = 'Schule: Deutschland in neuer Vergleichsstudie mit schwächeren Ergebnissen';
+    const original = source(title, 'https://example.org/vergleich', { summary: `Die Ergebnisse in ${subject} sind gesunken.` });
+    const id = clusterItems([original], [], now)[0].story_id;
+    const previous = story(id, title, { sources: [original], source_summary: original.summary });
+    const updated = { ...original, summary: 'Die Ergebnisse in Deutschland sind gesunken; ein neuer Bericht liegt vor.' };
+    const before = structuredClone(previous);
+    assert.deepEqual(fileSubject(previous).places, []);
+    assert.equal(subjectConflict(updated, previous), false);
+    const [cluster] = clusterItems([updated], [previous], now);
+    assert.equal(cluster.story_id, id);
+    assert.equal(cluster.existing_story, previous);
+    assert.deepEqual(previous, before);
+  }
+});
+
+test('unmatched events with identical headline signatures cannot reuse a stored story ID', () => {
+  const title = 'Behörde beschließt Ausbau eines Stromnetzes';
+  const first = source(title, 'https://example.org/nord', { summary: 'Das Projekt in Nordstadt erhält eine Genehmigung.' });
+  const second = source(title, 'https://example.org/sued', { summary: 'Das Projekt in Südstadt erhält eine Genehmigung.' });
+  const [initial] = clusterItems([first], [], now);
+  const previous = story(initial.story_id, title, { sources: [first], source_summary: first.summary });
+  const before = structuredClone(previous);
+  const [next] = clusterItems([second], [previous], now);
+  assert.equal(subjectConflict(second, previous), true);
+  assert.equal(next.existing_story, null);
+  assert.notEqual(next.story_id, previous.story_id);
+  assert.equal(clusterItems([second], [previous], now)[0].story_id, next.story_id);
+  const simultaneous = clusterItems([first, second], [], now);
+  assert.equal(simultaneous.length, 2);
+  assert.equal(new Set(simultaneous.map(s => s.story_id)).size, 2);
+  assert.deepEqual(previous, before);
+});
+
 test('consolidation history links only actual public pages, retaining archived publications', () => {
   const main = story('current', 'Aktuelle Nachricht', { living_file: { consolidations: [
     { slug: 'archived', title: 'Früher veröffentlicht', at: now },
