@@ -1,8 +1,592 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T17:53:17.517Z",
-  "updated_at": "2026-09-08T17:53:17.517Z",
+  "public_updated_at": "2026-09-08T18:07:16.921Z",
+  "updated_at": "2026-09-08T18:07:16.921Z",
   "stories": [
+    {
+      "story_id": "wt-b84af952fb761238",
+      "slug": "sturzflut-in-nepal-berge-waren-vor-gletscherabbruch-aussergewohnlich-warm-761238",
+      "title": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm",
+      "first_seen": "2026-09-08T13:06:33.000Z",
+      "last_updated": "2026-09-08T18:08:46.088Z",
+      "published_at": "2026-09-08T18:08:46.088Z",
+      "updated_at": "2026-09-08T18:08:46.088Z",
+      "topic": [
+        "Klima",
+        "Digitalisierung",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+          "title": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm",
+          "summary": "Vor dem verheerenden Gletscherabbruch in Nepal und der darauffolgenden tödlichen Sturzflut war es auf dem betroffenen Himalaya-Gletscher nach Berechnungen von Klimaforschern außergewöhnlich warm. Zwischen dem 21. und 26. August lag die Durchschnittstemperatur auf dem Gletscher auf 5200 Metern Höhe bei etwa fünf Grad Celsius, wie der US-Forscher Robert Rohde anhand meteorologischer Daten errechnet hat. Seit Beginn der Aufzeichnungen vor mehr als 55 Jahren hatte die Temperatur dort in diesem Zeitraum noch nie über vier Grad Celsius gelegen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:06:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "929c10e21db8d227f92776180c773d79fe2cab1c15e862864a1032d6a8581c51",
+          "source_item_id": "5adfeccffee910396ff4769159dc6049999468d19b8fb01f926f5d94625c633c",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T13:06:33.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b84af952fb761238-v1-claim-1",
+          "story_id": "wt-b84af952fb761238",
+          "claim": "Vor dem Gletscherabbruch in Nepal war es auf dem betroffenen Himalaya-Gletscher zwischen dem 21. und 26. August außergewöhnlich warm.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+              "excerpt_hash": "a85c4049827f83320d54",
+              "checked_at": "2026-09-08T18:08:46.088Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+              "excerpt_hash": "5ec3197431cd5f4cebc2",
+              "checked_at": "2026-09-08T18:08:46.088Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T18:08:46.088Z"
+        },
+        {
+          "claim_id": "wt-b84af952fb761238-v1-claim-2",
+          "story_id": "wt-b84af952fb761238",
+          "claim": "Die Durchschnittstemperatur auf dem Gletscher auf 5200 Metern Höhe lag in diesem Zeitraum bei etwa fünf Grad Celsius; seit Beginn der Aufzeichnungen vor mehr als 55 Jahren lag sie dort in diesem Zeitraum nie über vier Grad.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+              "excerpt_hash": "a85c4049827f83320d54",
+              "checked_at": "2026-09-08T18:08:46.088Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+              "excerpt_hash": "5ec3197431cd5f4cebc2",
+              "checked_at": "2026-09-08T18:08:46.088Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+              "excerpt_hash": "ee14e6f5d75b33db250f",
+              "checked_at": "2026-09-08T18:08:46.088Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T18:08:46.088Z"
+        }
+      ],
+      "event_id": "event-eb2f1fe8aaf73d379b23",
+      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
+      "event_detected_at": "2026-09-08T13:22:17.950Z",
+      "verification_started_at": "2026-09-08T18:08:24.719Z",
+      "publish_ready_at": "2026-09-08T18:08:46.088Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T18:07:16.921Z",
+        "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Abgleich mit der Originalmessung oder Fachanalyse zu den Temperaturdaten des Gletschers.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung der Datengrundlage und des Zeitraums",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-885c9e5894c8848c",
+          "announced_at": "2026-09-08T13:06:33.000Z",
+          "follow_up_date": "2026-09-15T18:08:46.088Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "b05800c449bd8a512a5a6f6ee762cd7476012ccaba182bf8cf990e46bfcb6689",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T18:08:46.088Z",
+        "sources": []
+      },
+      "source_summary": "Vor einem tödlichen Gletscherabbruch und der anschließenden Sturzflut in Nepal war es auf dem betroffenen Himalaya-Gletscher nach Berechnungen von Klimaforschern ungewöhnlich warm. Für den Zeitraum vom 21. bis 26. August wird eine Durchschnittstemperatur von etwa fünf Grad Celsius auf 5200 Metern Höhe genannt.\n\nDer US-Forscher Robert Rohde habe dies aus meteorologischen Daten errechnet. Laut der Meldung hatte die Temperatur dort seit Beginn der Aufzeichnungen vor mehr als 55 Jahren in diesem Zeitraum noch nie über vier Grad Celsius gelegen. Offene Punkte sind der genaue methodische Zugang und der Abgleich mit der Originalquelle der Berechnung.",
+      "analysis": {
+        "story_id": "wt-b84af952fb761238",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Vor dem Gletscherabbruch in Nepal war es auf dem betroffenen Gletscher laut einer Berechnung ungewöhnlich warm. Genannt werden etwa fünf Grad Celsius auf 5200 Metern Höhe und ein Rekordwert für diesen Zeitraum seit mehr als 55 Jahren.",
+        "detail_summary": "Die Meldung beschreibt einen möglichen Zusammenhang zwischen außergewöhnlicher Wärme auf einem Himalaya-Gletscher und dem späteren Abbruch mit Sturzflut in Nepal. Belegt ist in der Quelle vor allem die Temperaturangabe und der historische Vergleich für denselben Zeitraum. Für eine exakte Ursache-Wirkung-Zuordnung fehlt hier noch die Originalanalyse. Materiell relevant ist der Befund, weil Gletscherwärme die Stabilität von Eis und damit das Abfluss- und Abbruchrisiko beeinflussen kann. Die Wirkung bleibt aber als Wirkpotenzial offen, solange die Prozesskette nicht mit Primärdaten und Fachbewertung abgesichert ist.",
+        "why_relevant": "Der Befund berührt ein akutes Naturgefahren- und Klimarisiko mit möglicher Relevanz für Schutz, Warnung und Anpassung.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Wenn außergewöhnliche Wärme Eis destabilisiert, steigt das Risiko für Abbruch und Flut; ein eingetretener Wirkungspfad ist hier aber nur teilweise belegt.",
+          "positive_path": {
+            "mechanism": "Bessere Temperatur- und Gefahrenkenntnis kann Warnungen und Vorsorge für betroffene Talräume verbessern.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Hohe Wärme kann Gletscher- und Hangstabilität mindern und so Abbruch- sowie Flutrisiken erhöhen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Der Befund deutet auf eine klima- und cryosphärenbezogene Gefahrenlage hin, die mit Gletscherschwund und Naturgefahren verknüpft sein kann.",
+          "positive_path": {
+            "mechanism": "Die Einordnung solcher Extremwerte kann Beobachtung, Anpassung und Risikomanagement für Gletscherregionen stärken.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Außergewöhnliche Wärme kann Eis schmelzen und die Stabilität des Gletschers verschlechtern.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Ein unmittelbarer demokratischer Wirkpfad ist in dieser Meldung nicht tragfähig belegt.",
+          "positive_path": {
+            "mechanism": "Kein belastbarer positiver demokratischer Wirkpfad in der Meldung.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kein belastbarer negativer demokratischer Wirkpfad in der Meldung.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Meldung kann die Einordnung von Gletschergefahren und klimabedingten Naturprozessen schärfen, ohne den Kausalpfad vollständig zu belegen.",
+        "impact_risks": [
+          "Überinterpretation eines einzelnen Temperaturbefunds als alleinige Ursache",
+          "Verwechslung von Reichweite der Meldung mit tatsächlicher Wirkung vor Ort"
+        ],
+        "mechanisms": [
+          "Außergewöhnliche Wärme verändert die Stabilität von Eis und Schmelzwasserabfluss",
+          "Temperaturdaten liefern einen Risikohinweis für Naturgefahrenmanagement"
+        ],
+        "first_order": [
+          "Temperaturwert auf dem Gletscher",
+          "Einschätzung der Wärme als außergewöhnlich"
+        ],
+        "second_order": [
+          "höheres Abbruch- und Flutrisiko durch instabileres Eis",
+          "erhöhter Bedarf an Gefahrenbeobachtung"
+        ],
+        "third_order": [
+          "mögliche Anpassungen bei Warnung und Monitoring in Hochgebirgsregionen"
+        ],
+        "systemic_relevance": "Die Meldung betrifft ein lokales Naturereignis mit möglicher Einbettung in breitere Klimarisiken für Hochgebirgsräume.",
+        "transformation_potential": "gering bis mittel; vor allem bessere Gefahrenwahrnehmung und Monitoring, nicht ein unmittelbarer Strukturwandel",
+        "resilience": "Relevant für Resilienz, wenn die Daten in Warn- und Vorsorgesysteme einfließen; die Meldung selbst zeigt das noch nicht.",
+        "side_effects": [
+          "Stärkere Aufmerksamkeit für Gletscherstabilität",
+          "mögliche Fehlzuschreibung der Ursache ohne Primärabgleich"
+        ],
+        "uncertainties": [
+          "Originalmessung und methodischer Kontext sind in der Quelle nicht vollständig offengelegt",
+          "Die kausale Rolle der Wärme für den Abbruch bleibt in der Meldung nur plausibel, nicht belegt"
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Quelle: stern; zugeschrieben wird dem US-Forscher Robert Rohde eine Berechnung auf Basis meteorologischer Daten. Die Meldung ist journalistische Sekundärquelle und verweist nicht auf die Originalanalyse im Auszug.",
+        "watch_next": [
+          "Abgleich mit der Originalanalyse der Temperaturberechnung",
+          "Ergänzende Fachquelle zum Gletscherabbruch und zur Wetterlage"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "intensity",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue, zeitnahe Naturgefahren-Information mit konkreter Temperaturangabe; materiell relevant wegen möglicher Folgen für Abbruch- und Flutrisiko, aber nur sekundär belegt."
+        },
+        "visuals": {
+          "path_directions": [
+            {
+              "order": "first_order",
+              "path": "Temperaturwert auf dem Gletscher",
+              "direction": "negative",
+              "condition": "Wenn die Wärme die Eisstabilität mindert, steigt das Abbruchrisiko",
+              "evidence": "plausible_path",
+              "claim_ids": [
+                "wt-b84af952fb761238-claim-01"
+              ],
+              "dimensions": [
+                "planet"
+              ]
+            }
+          ],
+          "key_figures": [
+            {
+              "label": "Durchschnittstemperatur",
+              "value": "fünf",
+              "unit": "Grad Celsius",
+              "context": "genannte Durchschnittstemperatur auf 5200 Metern Höhe",
+              "claim_id": "wt-b84af952fb761238-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "natur"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T18:07:16.921Z",
+        "media_trigger_fingerprint": "02b8d3781e4abace10aa5f0fdb19e008b3ed19ce536426553633db1c8e0d1047",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "02b8d3781e4abace10aa5f0fdb19e008b3ed19ce536426553633db1c8e0d1047",
+          "content_fingerprint": "1f9fa5990dc784bfb92a9594308e9894ccf1bf67688405288391015fb4731a8d",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T18:08:46.088Z",
+          "content_hash": "b05800c449bd8a512a5a6f6ee762cd7476012ccaba182bf8cf990e46bfcb6689",
+          "source_summary": "Vor einem tödlichen Gletscherabbruch und der anschließenden Sturzflut in Nepal war es auf dem betroffenen Himalaya-Gletscher nach Berechnungen von Klimaforschern ungewöhnlich warm. Für den Zeitraum vom 21. bis 26. August wird eine Durchschnittstemperatur von etwa fünf Grad Celsius auf 5200 Metern Höhe genannt.\n\nDer US-Forscher Robert Rohde habe dies aus meteorologischen Daten errechnet. Laut der Meldung hatte die Temperatur dort seit Beginn der Aufzeichnungen vor mehr als 55 Jahren in diesem Zeitraum noch nie über vier Grad Celsius gelegen. Offene Punkte sind der genaue methodische Zugang und der Abgleich mit der Originalquelle der Berechnung.",
+          "analysis": {
+            "story_id": "wt-b84af952fb761238",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Vor dem Gletscherabbruch in Nepal war es auf dem betroffenen Gletscher laut einer Berechnung ungewöhnlich warm. Genannt werden etwa fünf Grad Celsius auf 5200 Metern Höhe und ein Rekordwert für diesen Zeitraum seit mehr als 55 Jahren.",
+            "detail_summary": "Die Meldung beschreibt einen möglichen Zusammenhang zwischen außergewöhnlicher Wärme auf einem Himalaya-Gletscher und dem späteren Abbruch mit Sturzflut in Nepal. Belegt ist in der Quelle vor allem die Temperaturangabe und der historische Vergleich für denselben Zeitraum. Für eine exakte Ursache-Wirkung-Zuordnung fehlt hier noch die Originalanalyse. Materiell relevant ist der Befund, weil Gletscherwärme die Stabilität von Eis und damit das Abfluss- und Abbruchrisiko beeinflussen kann. Die Wirkung bleibt aber als Wirkpotenzial offen, solange die Prozesskette nicht mit Primärdaten und Fachbewertung abgesichert ist.",
+            "why_relevant": "Der Befund berührt ein akutes Naturgefahren- und Klimarisiko mit möglicher Relevanz für Schutz, Warnung und Anpassung.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Wenn außergewöhnliche Wärme Eis destabilisiert, steigt das Risiko für Abbruch und Flut; ein eingetretener Wirkungspfad ist hier aber nur teilweise belegt.",
+              "positive_path": {
+                "mechanism": "Bessere Temperatur- und Gefahrenkenntnis kann Warnungen und Vorsorge für betroffene Talräume verbessern.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Hohe Wärme kann Gletscher- und Hangstabilität mindern und so Abbruch- sowie Flutrisiken erhöhen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Der Befund deutet auf eine klima- und cryosphärenbezogene Gefahrenlage hin, die mit Gletscherschwund und Naturgefahren verknüpft sein kann.",
+              "positive_path": {
+                "mechanism": "Die Einordnung solcher Extremwerte kann Beobachtung, Anpassung und Risikomanagement für Gletscherregionen stärken.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Außergewöhnliche Wärme kann Eis schmelzen und die Stabilität des Gletschers verschlechtern.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "democracy": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "Ein unmittelbarer demokratischer Wirkpfad ist in dieser Meldung nicht tragfähig belegt.",
+              "positive_path": {
+                "mechanism": "Kein belastbarer positiver demokratischer Wirkpfad in der Meldung.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Kein belastbarer negativer demokratischer Wirkpfad in der Meldung.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Meldung kann die Einordnung von Gletschergefahren und klimabedingten Naturprozessen schärfen, ohne den Kausalpfad vollständig zu belegen.",
+            "impact_risks": [
+              "Überinterpretation eines einzelnen Temperaturbefunds als alleinige Ursache",
+              "Verwechslung von Reichweite der Meldung mit tatsächlicher Wirkung vor Ort"
+            ],
+            "mechanisms": [
+              "Außergewöhnliche Wärme verändert die Stabilität von Eis und Schmelzwasserabfluss",
+              "Temperaturdaten liefern einen Risikohinweis für Naturgefahrenmanagement"
+            ],
+            "first_order": [
+              "Temperaturwert auf dem Gletscher",
+              "Einschätzung der Wärme als außergewöhnlich"
+            ],
+            "second_order": [
+              "höheres Abbruch- und Flutrisiko durch instabileres Eis",
+              "erhöhter Bedarf an Gefahrenbeobachtung"
+            ],
+            "third_order": [
+              "mögliche Anpassungen bei Warnung und Monitoring in Hochgebirgsregionen"
+            ],
+            "systemic_relevance": "Die Meldung betrifft ein lokales Naturereignis mit möglicher Einbettung in breitere Klimarisiken für Hochgebirgsräume.",
+            "transformation_potential": "gering bis mittel; vor allem bessere Gefahrenwahrnehmung und Monitoring, nicht ein unmittelbarer Strukturwandel",
+            "resilience": "Relevant für Resilienz, wenn die Daten in Warn- und Vorsorgesysteme einfließen; die Meldung selbst zeigt das noch nicht.",
+            "side_effects": [
+              "Stärkere Aufmerksamkeit für Gletscherstabilität",
+              "mögliche Fehlzuschreibung der Ursache ohne Primärabgleich"
+            ],
+            "uncertainties": [
+              "Originalmessung und methodischer Kontext sind in der Quelle nicht vollständig offengelegt",
+              "Die kausale Rolle der Wärme für den Abbruch bleibt in der Meldung nur plausibel, nicht belegt"
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Quelle: stern; zugeschrieben wird dem US-Forscher Robert Rohde eine Berechnung auf Basis meteorologischer Daten. Die Meldung ist journalistische Sekundärquelle und verweist nicht auf die Originalanalyse im Auszug.",
+            "watch_next": [
+              "Abgleich mit der Originalanalyse der Temperaturberechnung",
+              "Ergänzende Fachquelle zum Gletscherabbruch und zur Wetterlage"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "intensity",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, zeitnahe Naturgefahren-Information mit konkreter Temperaturangabe; materiell relevant wegen möglicher Folgen für Abbruch- und Flutrisiko, aber nur sekundär belegt."
+            },
+            "visuals": {
+              "path_directions": [
+                {
+                  "order": "first_order",
+                  "path": "Temperaturwert auf dem Gletscher",
+                  "direction": "negative",
+                  "condition": "Wenn die Wärme die Eisstabilität mindert, steigt das Abbruchrisiko",
+                  "evidence": "plausible_path",
+                  "claim_ids": [
+                    "wt-b84af952fb761238-claim-01"
+                  ],
+                  "dimensions": [
+                    "planet"
+                  ]
+                }
+              ],
+              "key_figures": [
+                {
+                  "label": "Durchschnittstemperatur",
+                  "value": "fünf",
+                  "unit": "Grad Celsius",
+                  "context": "genannte Durchschnittstemperatur auf 5200 Metern Höhe",
+                  "claim_id": "wt-b84af952fb761238-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "natur"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T18:07:16.921Z",
+            "media_trigger_fingerprint": "02b8d3781e4abace10aa5f0fdb19e008b3ed19ce536426553633db1c8e0d1047",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "02b8d3781e4abace10aa5f0fdb19e008b3ed19ce536426553633db1c8e0d1047",
+              "content_fingerprint": "1f9fa5990dc784bfb92a9594308e9894ccf1bf67688405288391015fb4731a8d",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-b84af952fb761238-v1-claim-1",
+              "story_id": "wt-b84af952fb761238",
+              "claim": "Vor dem Gletscherabbruch in Nepal war es auf dem betroffenen Himalaya-Gletscher zwischen dem 21. und 26. August außergewöhnlich warm.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+                  "excerpt_hash": "a85c4049827f83320d54",
+                  "checked_at": "2026-09-08T18:08:46.088Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+                  "excerpt_hash": "5ec3197431cd5f4cebc2",
+                  "checked_at": "2026-09-08T18:08:46.088Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T18:08:46.088Z"
+            },
+            {
+              "claim_id": "wt-b84af952fb761238-v1-claim-2",
+              "story_id": "wt-b84af952fb761238",
+              "claim": "Die Durchschnittstemperatur auf dem Gletscher auf 5200 Metern Höhe lag in diesem Zeitraum bei etwa fünf Grad Celsius; seit Beginn der Aufzeichnungen vor mehr als 55 Jahren lag sie dort in diesem Zeitraum nie über vier Grad.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+                  "excerpt_hash": "a85c4049827f83320d54",
+                  "checked_at": "2026-09-08T18:08:46.088Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+                  "excerpt_hash": "5ec3197431cd5f4cebc2",
+                  "checked_at": "2026-09-08T18:08:46.088Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+                  "excerpt_hash": "ee14e6f5d75b33db250f",
+                  "checked_at": "2026-09-08T18:08:46.088Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T18:08:46.088Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+              "content_hash": "929c10e21db8d227f92776180c773d79fe2cab1c15e862864a1032d6a8581c51"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T18:08:46.088Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T18:08:46.088Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T18:24:50.553Z"
+      }
+    },
     {
       "story_id": "wt-e01e1e77e702edc3",
       "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
@@ -773,6 +1357,94 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T18:11:57.257Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "b28b241482c85810fb76f49a06bfbe84518f7e1fa8213ed8062195a7c3af34b5",
+        "sources": [
+          {
+            "source_id": "wdr-nachrichten",
+            "publisher": "WDR",
+            "url": "https://www1.wdr.de/nrw/mutmasslicher-strom-saboteur-daniel-v-festgenommen-100.html",
+            "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
+            "summary": "Die Polizei hat am Dienstag den Mann festgenommen, der für mehrere Sabotage-Aktionen am Stromnetz verantwortlich sein soll.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T17:36:18.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "a0e03784e97357cc2e72a3260dabbdad8d6ac742e2ab889b8ec2e75d2dc1a616",
+            "source_item_id": "a8a99495658a8b6e2e62ac0069cb18a31c80138dc48f7b4d3769c8cc8b24207b",
+            "publisher_id": "wdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Nordrhein-Westfalen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T17:36:18.000Z",
+            "ingested_at": "2026-09-08T17:53:17.517Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-angriffe-auf-energieversorgung-16030932.html",
+            "title": "Mutmaßlicher Strom-Saboteur festgenommen: Brandenburgs Innenminister nennt Verdächtigen „fehlgeleiteten Einzeltäter“",
+            "summary": "Ein Mann aus Nordrhein-Westfalen soll mit selbstgebauten Raketen die Energieversorgung in Brandenburg, Sachsen und NRW angegriffen haben. Was sagt Brandenburgs Innenminister nach der Festnahme?",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T13:24:19.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "d819dddd202e069bcc6a629872a179bf8576a6ebca2ae4eb2a33480c3a3f588d",
+            "source_item_id": "4825352270c9bdfd3182a75eddd3bb2ca9fdb504e7f6662c840dcaeb2f04d3b4",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T13:24:19.000Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "2f85c23ddcd850003559d4df0551295fa6a18908b5eb4a9ecd9209ef43c15c4a",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -1492,6 +2164,60 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T17:55:58.432Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "a500d34e7dbbe43b70282897bb0d692097dd3f7683236521849e31fc3588126a",
+        "sources": [
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag - Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210972",
+            "title": "Regierung: Keine explizit ostdeutschen Demokratie-Programme",
+            "summary": "Bildung, Familie, Senioren, Frauen und Jugend/Antwort Die Bundesregierung plant keine explizit ostdeutsche Programmförderung im Rahmen von \"Demokratie leben!\", wie sie in einer Antwort ausführt.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-08T15:12:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "b9f7bf388420886ce7c18fb807186dc47278b41a613b4e6c86d5e8accfae95bc",
+            "source_item_id": "d31b6901d6d53417786ebd5a186f11e01ef4ab78b78bf6b8e384fe4fbbd25b8e",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T15:12:00.000Z",
+            "ingested_at": "2026-09-08T17:22:13.828Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -2304,6 +3030,60 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T17:55:51.245Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "0ec1685475244be76f48fd7ac224b9069642818516a36a7e08abc7400cae8952",
+        "sources": [
+          {
+            "source_id": "bundestag-hib",
+            "publisher": "Deutscher Bundestag - Heute im Bundestag",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210980",
+            "title": "Unterschiedliche Auffassungen zum Düngegesetz",
+            "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Die geplante Änderung des Düngegesetzes ist von den Sachverständigen in einer Anhörung des Landwirtschaftsausschusses am Dienstag unterschiedlich beurteilt worden.",
+            "source_type": "official_rss",
+            "published_at": "2026-09-08T15:50:00.000Z",
+            "primary_source": true,
+            "source_priority": 96,
+            "source_topic": "Politik",
+            "content_hash": "3e776c07c9476831f0640688dd8a3508124385387f02fe916a892deb98b9dd87",
+            "source_item_id": "d5ed00e5daaa802c9a30cd6dc4ad9358eafc76227327dfb0dcac850d60928bfe",
+            "publisher_id": "bundestag",
+            "publisher_kind": "institution",
+            "source_role": "institutional_statement",
+            "language": "de",
+            "geography": [
+              "DE"
+            ],
+            "research_lane": "primary",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T15:50:00.000Z",
+            "ingested_at": "2026-09-08T17:22:13.828Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:bundestag",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -3154,6 +3934,61 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T17:41:57.149Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "3c893d8a0f3e18dd5c2ea3c5e705702cb6cbbfb533cc7c47738f42e8b856de75",
+        "sources": [
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/Bundeshaushalt-fuer-2027/!6211410",
+            "title": "Bundeshaushalt für 2027: Kritik an Klingbeils Klima-Sparplänen",
+            "summary": "Der Finanzminister will Geld aus dem Klima- und Transformationsfonds abziehen. Außerdem drohen internationale Hilfsgelder einzubrechen. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T16:06:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "7b2c20b354727475b0973f8ab7916d05fa04a3397fbac850dc612db68c562cf9",
+            "source_item_id": "725347ab72a542e60144b426aba05673cf06dbfe8c614ab0a11b35be04750d37",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T16:06:00.000Z",
+            "ingested_at": "2026-09-08T17:22:13.828Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "4b55b20f625f8b51cff685bdbe368f6c5abe3033876fbaf678baf66119971d61",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -4645,7 +5480,95 @@
           "source_count": 2
         }
       ],
-      "retirement_history": []
+      "retirement_history": [],
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "007a0522aa6a006185fe7887dcb7008c9d6a542fa8cc5c6bf41be260850b2769",
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-154,wahl-560.html",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+            "summary": "Laut vorläufigem Ergebnis steht die AfD in Sachsen-Anhalt bei 43,8 Prozent. Die CDU hat aus Sicht von Ministerpräsident Schulze keinen Regierungsauftrag mehr. Im Liveticker berichten wir über Reaktionen zur Wahl.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-07T15:04:55.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "fb2b2b5d72f6b3231ab8f9d69f5c94ededd9774d7d6f8ae42f5a733724533c45",
+            "source_item_id": "b0ef43b7f789d7af19b81a14457f1dd22b32e4f90ae8d2a5d5735bf6349de769",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-07T15:04:55.000Z",
+            "ingested_at": "2026-09-07T15:36:43.631Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/video-1644892.html",
+            "title": "Söder sieht AfD in Sachsen-Anhalt \"am Zug\"",
+            "summary": "Söder sieht AfD in Sachsen-Anhalt \"am Zug\"",
+            "source_type": "media_rss",
+            "published_at": "2026-09-07T18:38:06.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "86a3c4358f23f28646f7b62c0fca2eb99ab893b34697dd5129e56dd753ad94aa",
+            "source_item_id": "2d4e49737bb81c6e45b2a4e9149d8da946ffaa689f3082d3ea09a9e7f3424585",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-07T18:38:06.000Z",
+            "ingested_at": "2026-09-07T18:52:11.443Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-4da4b09830c09b15",
@@ -5343,16 +6266,71 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T17:26:15.754Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "4d8cddc1cdc09479ed36997589a427f661833d829d57ca49d66b3a1d5f71de53",
+        "sources": [
+          {
+            "source_id": "hr-hessenschau",
+            "publisher": "hessenschau",
+            "url": "https://www.hessenschau.de/wirtschaft/insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fuer-sanofi-v1,sanofi-insulin-frankfurt-102.html",
+            "title": "Insulin aus Frankfurt: EU genehmigt 400 Millionen Euro für Sanofi",
+            "summary": "Der Pharmakonzern Sanofi will in Frankfurt-Höchst ein neues Insulinwerk bauen. Die EU-Kommission gab jetzt grünes Licht für die dafür eingeplanten staatlichen Fördergelder.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T15:37:22.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "c531531fbb3b048f76f4780dd252dad7cc22d73c25bc7d14c5ddd613e8d92bda",
+            "source_item_id": "76c99687fe93ce2745c7af12945f94b7378be04f356d431ae9e354b71ae10e13",
+            "publisher_id": "hr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Hessen"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T15:37:22.000Z",
+            "ingested_at": "2026-09-08T17:06:38.176Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:hr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "0e63a4de2d3808fb0a7038382c487171672091885e94aa28e01ad3ddaac453c4",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "de6c482b86a545a165c9dc82deb184554a0ad85b9da2bf85dff11ae75d1ed8df",
-        "first_failed_at": "2026-09-08T17:53:17.517Z",
-        "failed_at": "2026-09-08T17:53:17.517Z",
-        "retry_after": "2026-09-08T18:08:17.517Z",
+        "fingerprint": "7d5d907f4c7bd889a7e620fb3f02c5803549ba17b36b517caaf713fdabdee62f",
+        "first_failed_at": "2026-09-08T18:07:16.921Z",
+        "failed_at": "2026-09-08T18:07:16.921Z",
+        "retry_after": "2026-09-08T18:22:16.921Z",
         "retry_count": 1
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
@@ -5989,14 +6967,88 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T18:03:03.803Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T17:44:29.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T17:44:29.000Z",
+              "ingested_at": "2026-09-08T17:53:17.517Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            },
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T15:37:18.894Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-08T11:06:00.000Z",
       "last_updated": "2026-09-08T17:07:35.000Z",
       "topic": [
-        "Energie",
-        "Geopolitik",
-        "Politik"
+        "Energie"
       ],
       "sources": [
         {
@@ -6067,72 +7119,6 @@
           },
           "collection_source_id": "swr-aktuell",
           "collection_publisher_id": "swr"
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T17:44:29.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-          "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T17:44:29.000Z",
-          "ingested_at": "2026-09-08T17:53:17.517Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-          "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-          "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T10:28:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-          "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T10:28:28.000Z",
-          "ingested_at": "2026-09-08T15:37:18.894Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
         }
       ],
       "claims": [
@@ -6154,7 +7140,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -6175,62 +7161,24 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-03",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-04",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest: Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         }
       ],
-      "content_hash": "05dcc0d3098cc6d42c84bef0addaebf1ffda2cda2493460e3106e9a04cbcc0c4",
+      "content_hash": "c8ce372d04f82ecc364b86c165a7874db7627cd12928239fff886f2afaba9f54",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED"
+        "AI_DIRECTION_BASIS_INVALID:planet",
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS"
       ],
-      "quality_retry_count": 4,
-      "quality_retry_after": "2026-09-08T18:08:17.517Z",
+      "quality_retry_count": 5,
+      "quality_retry_after": "2026-09-08T18:22:16.921Z",
       "reassessment": false,
       "fresh": false,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:07:16.921Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -6244,9 +7192,7 @@
         "internal_relevance_score": 32,
         "public_relevance": "mittel",
         "topics": [
-          "Energie",
-          "Geopolitik",
-          "Politik"
+          "Energie"
         ],
         "dimensions": [],
         "status": "laufende Entwicklung",
@@ -6265,21 +7211,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.808616666666667,
-        "detection_delay_minutes": 0,
+        "source_age_minutes": 397.26535,
+        "detection_delay_minutes": 7.199033333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 376.07625,
+        "queue_age_minutes": 390.0663166666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 17,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
-        "fingerprint": "4933429724e1e58a9969bf9ace0df7d962844c1f47f40c5748017fde6d0ebd00",
+        "checked_at": "2026-09-08T18:07:16.921Z",
+        "fingerprint": "6f205d01811642ab7970abef6ebcee403c8c50183757ad22fdabc5c173d5793d",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -7432,7 +8378,62 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T17:10:43.163Z"
+        "retry_after": "2026-09-08T18:25:07.106Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "ef98371c459f10cb23278d2ce271f29f7c42166e85924a90ea1678f09c7d015e",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/details-zur-geplanten-steuer-reform-bei-kryptowerten-wie-dem-bitcoin-werden-bekannt-100.html",
+            "title": "\"Welt\"-Bericht - Details zur geplanten Steuer-Reform bei Kryptowerten wie dem Bitcoin werden bekannt",
+            "summary": "Innerhalb des Bundesfinanzministeriums werden die Pläne für eine Reform der Besteuerung von Gewinnen beim Handel mit Kryptowährungen offenbar konkreter.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T16:12:07.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ea501d443cf882eb5afe8070b7b6cdacf22d7f28649ff3ee318d928cd70d0719",
+            "source_item_id": "577b406beaaafcc00b7b6168d2abbe36ce3169794ad3b14904607a3b887da932",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T16:12:07.000Z",
+            "ingested_at": "2026-09-08T16:37:16.029Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "46b06f5129ab11dcdcbcead79a419746c9745bf047a31c3da192fa34a025dc76",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -8775,11 +9776,74 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T17:09:49.840Z"
+        "retry_after": "2026-09-08T18:25:01.150Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "e5fca94823cc375c4cc02316a316b768fc3ca06aea9fbc8b250325e774439d60",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/wachsender-zuspruch-fuer-bsw-vorschlag-zu-unabhaengigem-ministerpraesidenten-100.html",
+            "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Wachsender Zuspruch für BSW-Vorschlag zu unabhängigem Ministerpräsidenten",
+            "summary": "+++ Nach der SPD haben sich auch die Grünen in Sachsen-Anhalt offen gezeigt für den Vorschlag des BSW zu einem überparteilichen Ministerpräsidenten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T15:24:30.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1cb37adcf085c338d85b6146fd8bdcb9a4bdf90c6fad60ab2a5cdc94ccaebcac",
+            "source_item_id": "38c4fe146c77be14698b390e8eb4b6776c873fc22c0c9e028a798b4058571520",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T15:24:30.000Z",
+            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
       "story_id": "wt-b8a90d7eb3003b6a",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "1d70f9efe16a83a795e8f75e163f624d88aa48b4d87903d7f79e240009afbe3e",
+        "first_failed_at": "2026-09-08T18:03:03.803Z",
+        "failed_at": "2026-09-08T18:03:03.803Z",
+        "retry_after": "2026-09-08T18:18:03.803Z",
+        "retry_count": 1
+      },
       "slug": "rechtsruck-unter-arbeitern-lechts-und-rinks-kann-man-velwechsern-003b6a",
       "title": "Rechtsruck unter Arbeitern: Lechts und rinks kann man velwechsern!",
       "first_seen": "2026-09-08T16:40:00.000Z",
@@ -8841,20 +9905,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:03:03.803Z"
         }
       ],
       "content_hash": "24bcec786a309d09e899aa75f385aa1f0597abb0049ad6f1fc3ff0ec961967a2",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T18:18:03.803Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:03:03.803Z",
       "event_first_seen_at": "2026-09-08T17:06:38.176Z",
       "event_detected_at": "2026-09-08T17:06:38.176Z",
       "event_id": "event-56e8ed2b6b364d97d6c4",
@@ -8890,23 +9954,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 73.29195,
+        "source_age_minutes": 83.06338333333333,
         "detection_delay_minutes": 26.636266666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 46.655683333333336,
+        "queue_age_minutes": 56.42711666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 85,
+        "news_freshness_score": 83,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:03:03.803Z",
         "fingerprint": "f0fba5af235fc09d07b450b66f6c19ff4a38b4fcc648c3488b5a789320fb44a5",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T18:03:03.803Z",
+      "rejection": {
+        "at": "2026-09-08T18:03:03.803Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -9223,6 +10299,14 @@
     },
     {
       "story_id": "wt-2bc9ec3dfc4bf9c9",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d6e9c6a878b948973246ac965960ddbe8b575d7dde5bc3ac8c167593a837b0cb",
+        "first_failed_at": "2026-09-08T18:03:03.803Z",
+        "failed_at": "2026-09-08T18:03:03.803Z",
+        "retry_after": "2026-09-08T18:18:03.803Z",
+        "retry_count": 1
+      },
       "slug": "us-midterm-elections-tend-to-be-referendums-on-the-unpopularity-of-the-president-4bf9c9",
       "title": "'US Midterm elections tend to be referendums on the unpopularity of the president'",
       "first_seen": "2026-09-08T16:25:34.000Z",
@@ -9285,20 +10369,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:03:03.803Z"
         }
       ],
       "content_hash": "dcad91ca65160bb00388beb168b713986670df2835a040cdc759e2f5b8d64a15",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T18:18:03.803Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:03:03.803Z",
       "event_first_seen_at": "2026-09-08T16:37:16.029Z",
       "event_detected_at": "2026-09-08T16:37:16.029Z",
       "event_id": "event-cfa2dad91a8720822bb1",
@@ -9335,23 +10419,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 87.72528333333334,
+        "source_age_minutes": 97.49671666666667,
         "detection_delay_minutes": 11.700483333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 76.0248,
+        "queue_age_minutes": 85.79623333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 82,
+        "news_freshness_score": 80,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:03:03.803Z",
         "fingerprint": "8ba9ec938e2774f3ba99750847dd328ba8dc6c2f26ce22494a8d69b1f0246d68",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T18:03:03.803Z",
+      "rejection": {
+        "at": "2026-09-08T18:03:03.803Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -9559,6 +10655,14 @@
     },
     {
       "story_id": "wt-fa9c3500d64fd322",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "39d077ba0513eb81f53baa6602b2a221ec8b8cd757d15a2fc335f2615fcf0047",
+        "first_failed_at": "2026-09-08T18:03:03.803Z",
+        "failed_at": "2026-09-08T18:03:03.803Z",
+        "retry_after": "2026-09-08T18:18:03.803Z",
+        "retry_count": 1
+      },
       "slug": "uae-warned-netanyahu-of-7-october-attack-israeli-newspaper-reports-4fd322",
       "title": "UAE warned Netanyahu of 7 October attack, Israeli newspaper reports",
       "first_seen": "2026-09-08T16:24:20.000Z",
@@ -9621,20 +10725,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:03:03.803Z"
         }
       ],
       "content_hash": "09959bfa44cfcefb71b6af6eab5158d8717c48ccb9d86da414d64e2766741f2d",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T18:18:03.803Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:03:03.803Z",
       "event_first_seen_at": "2026-09-08T17:06:38.176Z",
       "event_detected_at": "2026-09-08T17:06:38.176Z",
       "event_id": "event-1cc23bcc254dd4033196",
@@ -9670,23 +10774,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 88.95861666666667,
+        "source_age_minutes": 98.73005,
         "detection_delay_minutes": 42.302933333333335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 46.655683333333336,
+        "queue_age_minutes": 56.42711666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
+        "news_freshness_score": 79,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:03:03.803Z",
         "fingerprint": "89e2ecd579a440413777c9b07dfb510f6368dc8b5f468742dae8e4aab2b7714f",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T18:03:03.803Z",
+      "rejection": {
+        "at": "2026-09-08T18:03:03.803Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -10131,6 +11247,14 @@
     },
     {
       "story_id": "wt-dba7f21bb3e67296",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e8d41764f75af1d2380ce4382accc6d97b83a035debf5fc6e81c759ea265e2ed",
+        "first_failed_at": "2026-09-08T18:03:03.803Z",
+        "failed_at": "2026-09-08T18:03:03.803Z",
+        "retry_after": "2026-09-08T18:18:03.803Z",
+        "retry_count": 1
+      },
       "slug": "dortmunder-schule-mit-ballon-ins-all-gegen-pisa-trend-e67296",
       "title": "Dortmunder Schule: Mit Ballon ins All gegen Pisa-Trend",
       "first_seen": "2026-09-08T15:51:09.000Z",
@@ -10192,20 +11316,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:03:03.803Z"
         }
       ],
       "content_hash": "595f540032fac7285be260099d82240f70c975bbc2aa4964010fc6989ab16e59",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T18:18:03.803Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:03:03.803Z",
       "event_first_seen_at": "2026-09-08T16:06:50.416Z",
       "event_detected_at": "2026-09-08T16:06:50.416Z",
       "event_id": "event-6d8026012b395d8d66c9",
@@ -10240,23 +11364,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 109.12528333333333,
+        "source_age_minutes": 118.89671666666666,
         "detection_delay_minutes": 2.6736,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 106.45168333333334,
+        "queue_age_minutes": 116.22311666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 77,
+        "news_freshness_score": 75,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:03:03.803Z",
         "fingerprint": "c8f660af75e18cf3d5387cf5a36ccffc0c40a90e672237afef20104d52d50591",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T18:03:03.803Z",
+      "rejection": {
+        "at": "2026-09-08T18:03:03.803Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -10466,9 +11602,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "cccc3daa4cf2ab3e01148b6b5d4f3f4ab09b5632e316d56845d65c8f51929d7a",
         "first_failed_at": "2026-09-08T16:06:50.416Z",
-        "failed_at": "2026-09-08T17:06:38.176Z",
-        "retry_after": "2026-09-08T18:06:38.176Z",
-        "retry_count": 3
+        "failed_at": "2026-09-08T18:07:16.921Z",
+        "retry_after": "2026-09-08T21:07:16.921Z",
+        "retry_count": 4
       },
       "slug": "klingbeils-rekord-schulden-und-schwache-schuler-ca7eca",
       "title": "Klingbeils Rekord-Schulden und schwache Schüler",
@@ -10532,22 +11668,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:06:38.176Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         }
       ],
       "content_hash": "f48603825bbe70e13fb9bb98d782bcd1a7dc1fdc8c40f7625777cfad0b5bc355",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:8"
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-08T18:06:38.176Z",
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-08T21:07:16.921Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T17:06:38.176Z",
+      "updated_at": "2026-09-08T18:07:16.921Z",
       "event_first_seen_at": "2026-09-08T16:06:50.416Z",
       "event_detected_at": "2026-09-08T16:06:50.416Z",
       "event_id": "event-5f3c52a0a4b117744739",
@@ -10583,20 +11719,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 80.63626666666667,
+        "source_age_minutes": 141.28201666666666,
         "detection_delay_minutes": 20.84026666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.796,
+        "queue_age_minutes": 120.44175,
         "target_publication_minutes": 120,
-        "news_freshness_score": 83,
-        "freshness_warning": null
+        "news_freshness_score": 71,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:06:38.176Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "fingerprint": "13107cad130cee66a7554cbf6765ac0d0630a5fb4b2c1bc76431d28e9d666293",
         "issue_codes": [],
         "warning_codes": []
@@ -12783,6 +13919,61 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T17:56:08.506Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "b8faccce73a48645c899a33dc1d9e71615fb244a1568f610f81f82ea28acde04",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+            "title": "FairSquare - Erneute Beschwerde bei Ethikkomission gegen FIFA-Chef Infantino",
+            "summary": "Im Machtkampf beim Fußball-Weltverband FIFA erhöht auch die Menschenrechtsorganisation FairSquare den Druck auf Präsident Gianni Infantino. Die Organisation hat eine erneute Beschwerde gegen den Schweizer bei der FIFA-Ethikkommission eingereicht.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T14:22:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "45b52bb546364995adef993f68d3dc587a44257a5b5322b8b21d2b9c581e3f2d",
+            "source_item_id": "2de8cc5c5317264dbe214b14f85ec6c217deee02da1662dacff933e79a911944",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T14:22:00.000Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "484ee63d9db550c1e2294eb912677a21bde29d3e9b9613f1457cb2ac44270032",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -14885,7 +16076,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -16195,7 +17386,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T16:41:40.306Z"
+        "retry_after": "2026-09-08T18:19:05.806Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -16246,7 +17437,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -16965,7 +18156,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
           "issue_codes": [],
           "warning_codes": []
@@ -18266,7 +19457,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "d4b8c47f1b5a6ae4b9e8838edd34c8da0189c7f592bf1dd36369dd436d41ddf2",
           "issue_codes": [],
           "warning_codes": []
@@ -18279,9 +19470,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "09f298df1f18b4eae2e6df8965238624a52b4c5ff45555a434f86bc9bec536f9",
         "first_failed_at": "2026-09-08T15:37:18.894Z",
-        "failed_at": "2026-09-08T17:36:55.540Z",
-        "retry_after": "2026-09-08T18:06:55.540Z",
-        "retry_count": 2
+        "failed_at": "2026-09-08T18:07:16.921Z",
+        "retry_after": "2026-09-08T19:07:16.921Z",
+        "retry_count": 3
       },
       "slug": "strom-saboteur-polizei-nimmt-verdachtigen-fest-bc139d",
       "title": "Strom-Saboteur: Polizei nimmt Verdächtigen fest",
@@ -18377,7 +19568,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:36:55.540Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         },
         {
           "claim_id": "wt-89cc270ef6bc139d-claim-02",
@@ -18397,22 +19588,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:36:55.540Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         }
       ],
       "content_hash": "6d3f2fd3bd78738a7ffd7700a7bdcc4823786483d0c21534e51897e734d47f69",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        "MEDIA_IMPACT_REQUIRED"
       ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-08T18:06:55.540Z",
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-08T19:07:16.921Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T17:36:55.540Z",
+      "updated_at": "2026-09-08T18:07:16.921Z",
       "event_first_seen_at": "2026-09-08T13:51:47.903Z",
       "event_detected_at": "2026-09-08T13:51:47.903Z",
       "event_id": "event-626e50ed9dab5a3077bc",
@@ -18445,20 +19636,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 133.92566666666667,
+        "source_age_minutes": 164.28201666666666,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 225.12728333333334,
+        "queue_age_minutes": 255.48363333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 72,
+        "news_freshness_score": 66,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:36:55.540Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "fingerprint": "509bb5f5b357175f84ec6fda0c4b4ee0efb41e8e3e31fd630addb2780cc6ff87",
         "issue_codes": [],
         "warning_codes": []
@@ -18663,149 +19854,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
-      }
-    },
-    {
-      "story_id": "wt-b84af952fb761238",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "3bb326069bd581eea38816eb7cedef424cc37ad3bc2358a42ebe0f1fc6d984d7",
-        "first_failed_at": "2026-09-08T13:36:53.016Z",
-        "failed_at": "2026-09-08T13:36:53.016Z",
-        "retry_after": "2026-09-08T13:51:53.016Z",
-        "retry_count": 1
-      },
-      "slug": "sturzflut-in-nepal-berge-waren-vor-gletscherabbruch-aussergewohnlich-warm-761238",
-      "title": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm",
-      "first_seen": "2026-09-08T13:06:33.000Z",
-      "last_updated": "2026-09-08T13:06:33.000Z",
-      "topic": [
-        "Klima",
-        "Digitalisierung",
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
-          "title": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm",
-          "summary": "Vor dem verheerenden Gletscherabbruch in Nepal und der darauffolgenden tödlichen Sturzflut war es auf dem betroffenen Himalaya-Gletscher nach Berechnungen von Klimaforschern außergewöhnlich warm. Zwischen dem 21. und 26. August lag die Durchschnittstemperatur auf dem Gletscher auf 5200 Metern Höhe bei etwa fünf Grad Celsius, wie der US-Forscher Robert Rohde anhand meteorologischer Daten errechnet hat. Seit Beginn der Aufzeichnungen vor mehr als 55 Jahren hatte die Temperatur dort in diesem Zeitraum noch nie über vier Grad Celsius gelegen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T13:06:33.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "929c10e21db8d227f92776180c773d79fe2cab1c15e862864a1032d6a8581c51",
-          "source_item_id": "5adfeccffee910396ff4769159dc6049999468d19b8fb01f926f5d94625c633c",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T13:06:33.000Z",
-          "ingested_at": "2026-09-08T13:22:17.950Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-b84af952fb761238-claim-01",
-          "story_id": "wt-b84af952fb761238",
-          "claim": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm: Vor dem verheerenden Gletscherabbruch in Nepal und der darauffolgenden tödlichen Sturzflut war es auf dem betroffenen Himalaya-Gletscher nach Berechnungen von Klimaforschern außergewöhnlich warm. Zwischen dem 21. und 26. August lag die Durchschnittstemperatur auf dem Gletscher auf 5200 Metern Höhe bei etwa fünf Grad Celsius, wie der US-Forscher Robert Rohde anhand meteorologischer Daten errechnet hat. Seit Beginn der Aufzeichnungen vor mehr als 55 Jahren hatte die Temperatur dort in diesem Zeitraum noch nie über vier Grad Celsius gelegen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
-        }
-      ],
-      "content_hash": "b05800c449bd8a512a5a6f6ee762cd7476012ccaba182bf8cf990e46bfcb6689",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
-      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
-      "event_detected_at": "2026-09-08T13:22:17.950Z",
-      "event_id": "event-eb2f1fe8aaf73d379b23",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Klima",
-          "Digitalisierung",
-          "Geopolitik"
-        ],
-        "dimensions": [
-          "Planet",
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 286.74195,
-        "detection_delay_minutes": 15.749166666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 270.9927833333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 40,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
-        "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -20900,7 +21948,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T16:54:32.726Z"
+        "retry_after": "2026-09-08T18:19:15.274Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -20951,7 +21999,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -22079,7 +23127,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "63f046175e324d9aac3dc62cf0f0e86b6ea7a260faeb7c3aa7053bcca7dcdfdf",
           "issue_codes": [],
           "warning_codes": []
@@ -24187,7 +25235,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -25073,7 +26121,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         }
       ],
       "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
@@ -25086,7 +26134,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:07:16.921Z",
       "event_first_seen_at": "2026-09-08T12:36:46.426Z",
       "event_detected_at": "2026-09-08T12:36:46.426Z",
       "event_id": "event-112dbf80aa5019468e8a",
@@ -25121,20 +26169,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 382.29195,
+        "source_age_minutes": 396.28201666666666,
         "detection_delay_minutes": 65.77376666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 316.51818333333335,
+        "queue_age_minutes": 330.50825,
         "target_publication_minutes": 120,
-        "news_freshness_score": 20,
+        "news_freshness_score": 17,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
@@ -27146,7 +28194,7 @@
       "verification_started_at": "2026-09-08T11:24:33.651Z",
       "publish_ready_at": "2026-09-08T11:24:45.444Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -27563,9 +28611,12 @@
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T17:42:02.087Z"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T12:51:54.078Z",
-        "content_hash": "fc948e32449c195e2f5cc1f63c64e48a306826485fd91e5faf36fa47eda92545",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "bbcf13fd609b00a28de48af30f38b4065af3f79de31ffdde762e6438590bbf1e",
+        "checked_at": "2026-09-08T18:07:16.921Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-09T00:07:16.921Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -27633,24 +28684,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
-          "fingerprint": "0e824208ac91cd615c6da0a4f44ebe8e9f89278fea217f54750b619c806b7163",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-8a0ad94fdbe647e0",
@@ -27743,7 +28779,7 @@
       "verification_started_at": "2026-09-08T11:24:21.297Z",
       "publish_ready_at": "2026-09-08T11:24:31.149Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -28064,284 +29100,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "550687fd528adfe7fcb8ef25cb1111f2a7e80ec175059d79df5ad0e18237c51f",
-        "checked_at": "2026-09-08T16:22:13.984Z",
+        "fingerprint": "77a1fb25f8cc40fc95d0f74937bbc08a8b170d6840db6eaefe17061f04092f4b",
+        "checked_at": "2026-09-08T18:03:03.803Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T22:22:13.984Z",
-        "sources": [
-          {
-            "source_id": "tagesschau-access",
-            "publisher": "tagesschau / ARD",
-            "url": "https://www.tagesschau.de/inland/innenpolitik/liveblog-nach-sachsen-anhalt-wahl-100.html",
-            "title": "++ Schulze als neuer CDU-Fraktionschef gewählt ++",
-            "summary": "Der geschäftsführende Ministerpräsident von Sachsen-Anhalt, Schulze, ist Berichten zufolge als neuer Chef der CDU-Landtagsfraktion gewählt worden. Das BSW will mit allen Parteien …",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T15:00:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "8e8449b13f633014d90fd25456c97c3e3f4305532f7f81b9250ab1d71d0ad6ca",
-            "source_item_id": "8f11d427200126ba238cf5cd7f13e81d10b9ce76fcd4c44d9786fcc42e011cfc",
-            "publisher_id": "tagesschau",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:00:04.000Z",
-            "ingested_at": "2026-09-08T15:21:51.449Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesschau",
-              "basis": "publisher_resolved_from_registered_target_url",
-              "independence_established": false,
-              "collection_source_id": "swr-aktuell"
-            },
-            "collection_source_id": "swr-aktuell",
-            "collection_publisher_id": "swr"
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/deutschland/zwei-tage-nach-landtagswahl--ministerpraesident-schulze-zu-cdu-fraktionschef-gewaehlt-38218186.html",
-            "title": "Zwei Tage nach Landtagswahl: Ministerpräsident Schulze zu CDU-Fraktionschef gewählt",
-            "summary": "Die Landtagswahl in Sachsen-Anhalt hat die CDU von Ministerpräsident Schulze deutlich verloren. Nun hat die Landtagsfraktion ihren neuen Vorstand gewählt – mit einem ungewöhnlichen Ausgang.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T14:54:29.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "6740b33584c2f532a736710750a8d96259842d6e6bff212ae7fcada66e0dac82",
-            "source_item_id": "20482b5e67c63d037937df593b1d6b7458fac513ffe5bf6447102c87250361a2",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T14:54:29.000Z",
-            "ingested_at": "2026-09-08T15:21:51.449Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-zwei-tage-nach-landtagswahl-16028821.html",
-            "title": "Zwei Tage nach Landtagswahl: Machtprobe in der CDU – Schulze setzt sich durch",
-            "summary": "Die CDU sortiert sich nach der Niederlage bei der Landtagswahl in Sachsen-Anhalt neu. In der Landtagsfraktion kommt es zu einer Kampfabstimmung, Ministerpräsident Schulze übernimmt ein neues Amt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T02:02:38.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "da0607637d3988f91fd5ed9f42728b7225027ae8eb97817788a9bf91ec3a96e4",
-            "source_item_id": "13e1d863982a899a20da8d800d04e85ff6b67a50ab56d46abcd59fc762206d97",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T02:02:38.000Z",
-            "ingested_at": "2026-09-08T16:06:50.416Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/liveblog/kampfabstimmung-in-sachsen-anhalt-ministerprasident-schulze-wird-neuer-cdu-fraktionschef-16008484.html",
-            "title": "Kampfabstimmung in Sachsen-Anhalt: Ministerpräsident Schulze wird neuer CDU-Fraktionschef",
-            "summary": "Ministerpräsident Sven Schulze ist neuer Chef der CDU-Fraktion in Sachsen-Anhalt. Er hat sich gegen den bisherigen Fraktionschef Guido Heuer durchgesetzt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T06:56:20.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "73bc9e73c20f7719dfbdeb11da22c3d9ac5a54edbbca99bdfe08048d2f70bb9a",
-            "source_item_id": "c8b5d34a80d908d649b42b2536c1cd359c0165cb1c2adfd891ab4bf60582879c",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-08T16:22:13.984Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/nach-wahldebakel--ministerpraesident-schulze-neuer-cdu-fraktionschef-in-sachsen-anhalt-38222974.html",
-            "title": "Nach Wahldebakel: Ministerpräsident Schulze neuer CDU-Fraktionschef in Sachsen-Anhalt",
-            "summary": "Ungeachtet der Wahlniederlage der CDU bei der Landtagswahl in Sachsen-Anhalt ist der noch amtierende Ministerpräsident Sven Schulze zum neuen Fraktionschef gewählt worden. In der konstituierenden Sitzung der neuen Landtagsfraktion erhielt der 47-Jährige am Dienstag acht Stimmen der insgesamt 15 Abgeordneten, wie Schulze in Magdeburg sagte. Sieben Abgeordnete stimmten gegen ihn. Es gab einen Gegenkandidaten, der Schulze nur knapp unterlag.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T15:22:56.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "34eec82ac6825cf8d225db7b748eb18a14e43d38eee6483ada3f0680e185932a",
-            "source_item_id": "13b3a1f0ba8538ee15294b3387dfb0b9f10ab9e51b4a9db73948d65ee21e57c6",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:22:56.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/ministerpraesident-schulze-zu-cdu-fraktionschef-gewaehlt-100.html",
-            "title": "Sachsen-Anhalt - Ministerpräsident Schulze zu CDU-Fraktionschef gewählt",
-            "summary": "Zwei Tage nach der Niederlage bei der Landtagswahl in Sachsen-Anhalt hat die CDU-Landtagsfraktion Regierungschef Schulze zu ihrem neuen Vorsitzenden gewählt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T16:05:11.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "102d942fc2dba1b5822926e9f93e899d42164a5740346e1a05b4f08a81cca7b9",
-            "source_item_id": "b0159547f6015b442e141e120265eff6cd349a72768b419df443dd512c701f81",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T16:05:11.000Z",
-            "ingested_at": "2026-09-08T16:06:50.416Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/deutschland/zwei-tage-nach-landtagswahl--machtprobe-in-der-cdu---schulze-setzt-sich-durch-38218186.html",
-            "title": "Zwei Tage nach Landtagswahl: Machtprobe in der CDU – Schulze setzt sich durch",
-            "summary": "Die CDU sortiert sich nach der Niederlage bei der Landtagswahl in Sachsen-Anhalt neu. In der Landtagsfraktion kommt es zu einer Kampfabstimmung, Ministerpräsident Schulze übernimmt ein neues Amt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T15:59:18.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "ffe9c7ba77edb23f1f6c9225c952b646f5ec14b574bdfadbd28bbb5000c000d0",
-            "source_item_id": "ee810fa877979a436f620e271c66fd04b55f1ee4ee88d97756420576b13d239b",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:59:18.000Z",
-            "ingested_at": "2026-09-08T16:22:13.984Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/schulze-zu-cdu-fraktionschef-gewaehlt-100.html",
-            "title": "Sachsen-Anhalt - Schulze zu CDU-Fraktionschef gewählt",
-            "summary": "Zwei Tage nach der Niederlage bei der Landtagswahl in Sachsen-Anhalt hat die CDU-Landtagsfraktion Regierungschef Schulze zu ihrem neuen Vorsitzenden gewählt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T16:12:07.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "af227444291cabb3b6e82a00d7a990f37bd0779bfffce58375f49fa8f117c921",
-            "source_item_id": "56370c5a343881219cc1705aa890cdd8adfd2e146817758546a5abf0f5c22d4e",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T16:12:07.000Z",
-            "ingested_at": "2026-09-08T16:22:13.984Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reviewed_by": "local_relevance_filter"
-      },
-      "pending_update": {
-        "detected_at": "2026-09-08T16:37:16.029Z",
-        "content_hash": "8ff4df08a4c3e16105944268d4c350dd707188a8c762cf0f16abeebeba236ec7",
+        "expires_at": "2026-09-09T00:03:03.803Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -28610,24 +29372,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
-          "fingerprint": "5fa988864d438aab8e3ffc5289a2ab91c03b30cc6806da8dadeb4cbae7f98fb2",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-db0e00874c2fe321",
@@ -29089,7 +29836,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -30152,7 +30899,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "aa36a5175a51620ce9b1dd20ae621a54427266dfa6f82d73155af11892f0c358",
           "issue_codes": [],
           "warning_codes": []
@@ -31176,9 +31923,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "d32dddf7903dc2853d4b4673a0a46f951280a24abc99c3a3b378d3ec1d301f72",
         "first_failed_at": "2026-09-08T11:22:01.370Z",
-        "failed_at": "2026-09-08T13:36:53.016Z",
-        "retry_after": "2026-09-08T16:36:53.016Z",
-        "retry_count": 4
+        "failed_at": "2026-09-08T18:07:16.921Z",
+        "retry_after": "2026-09-09T00:07:16.921Z",
+        "retry_count": 5
       },
       "slug": "furacker-steuerliche-entlastung-fur-vereine-dringend-geboten-bayern-fordert-verdoppelung-da225e",
       "title": "FÜRACKER: STEUERLICHE ENTLASTUNG FÜR VEREINE DRINGEND GEBOTEN - Bayern fordert: Verdoppelung Freibeträge auf 10.000 Euro // Verdoppelung Besteuerungsgrenze auf 100.000 Euro // „Einfachsteuererklärung“ für kleinere Vereine",
@@ -31246,20 +31993,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         }
       ],
       "content_hash": "d61b57c4eb7c8477990a5d3745f7376dc0742f06f194f41f866c538f4fdb913f",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 4,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "quality_retry_count": 5,
+      "quality_retry_after": "2026-09-09T00:07:16.921Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:07:16.921Z",
       "event_first_seen_at": "2026-09-08T11:22:01.370Z",
       "event_detected_at": "2026-09-08T11:22:01.370Z",
       "event_id": "event-11e4bcf6bd775b283b63",
@@ -31302,20 +32051,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 424.8086166666667,
+        "source_age_minutes": 438.7986833333333,
         "detection_delay_minutes": 33.5395,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 391.26911666666666,
+        "queue_age_minutes": 405.25918333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 11,
+        "news_freshness_score": 9,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "fingerprint": "a850ac3e70afe5741af18b89a9d62c65269a2962b43ad4d06eda7521b6b9cc5f",
         "issue_codes": [],
         "warning_codes": []
@@ -32408,7 +33157,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -33456,7 +34205,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T16:54:26.086Z"
+        "retry_after": "2026-09-08T18:19:10.437Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -33506,7 +34255,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "4c3017054cc3cb3b35afc4b945e8378f8031d694648e6d9d28e443d23d85aebb",
           "issue_codes": [],
           "warning_codes": []
@@ -34009,7 +34758,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "205041d2192cf688c27c75b8f7f545b8c4beba211ebffe3aaa3e8bcc272551f5",
           "issue_codes": [],
           "warning_codes": []
@@ -34593,7 +35342,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "cc072f3eacc31d1e9994dcaa53b6184b0b77527fa2bdf770f01aad2115f6149d",
           "issue_codes": [],
           "warning_codes": []
@@ -35334,7 +36083,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "868ad5265d175cfb161266ef637639c076040c24552ca93728b755dfa7d9702e",
           "issue_codes": [],
           "warning_codes": []
@@ -38075,7 +38824,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T16:54:37.955Z"
+        "retry_after": "2026-09-08T18:24:55.702Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -38169,7 +38918,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
           "issue_codes": [],
           "warning_codes": []
@@ -39981,7 +40730,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
           "issue_codes": [],
           "warning_codes": []
@@ -40706,7 +41455,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -40721,7 +41470,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:07:16.921Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -40762,7 +41511,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 465.8565,
+        "queue_age_minutes": 479.84656666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -40771,7 +41520,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -40841,7 +41590,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -40856,7 +41605,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:07:16.921Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -40896,7 +41645,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 465.8565,
+        "queue_age_minutes": 479.84656666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -40905,7 +41654,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -42189,7 +42938,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -43038,7 +43787,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -43744,7 +44493,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -45877,7 +46626,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -49640,7 +50389,486 @@
           }
         ]
       },
-      "deepening_checks": 1
+      "deepening_checks": 1,
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "5b2c5d63a8b4feaabf94492255472ae8c95e385e8ca30b73bc54a0ac57206886",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-in-moskau-mit-putin-zusammengekommen-102.html",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte in Moskau mit Putin zusammengekommen",
+            "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T18:15:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ada3b25d5f1d2f6395fdb01c2694dc1c91caad6028096c51398f529688341224",
+            "source_item_id": "caa7462337f456f714632a73839e9496507b2c89174f6f0116345ae1d1cdd47d",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T18:15:04.000Z",
+            "ingested_at": "2026-09-05T18:21:18.289Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-100.html",
+            "title": "Gespräche über ein Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
+            "summary": "Der russische Präsident Putin hat die US-Unterhändler Witkoff und Kushner in Moskau zu neuen Gesprächen zum Ukraine-Krieg empfangen. In einem vom Kreml veröffentlichten Video vom Auftakt des Treffens sagte Putin den beiden Gesandten, es gehe um schwierige Fragen. Er werde ihnen die Lage aus seiner Sicht erläutern.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T20:57:48.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "ba6b5336cbefd5ab70cccb0ef8cbf8e0aa12442ee33c3304eb8af8705fc795b2",
+            "source_item_id": "88ed0dc883a49659c74146dce5d751ea22310c09eefc2d2a9aabbbbe22ae7017",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T20:57:48.000Z",
+            "ingested_at": "2026-09-05T22:06:43.441Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/ausland/europa/witkoff-kushner-treffen-putin-100.html",
+            "title": "Kreml spricht von nützlichen Gesprächen",
+            "summary": "Mit einer \"Idee für den Frieden\" sind die US-Sondergesandten Witkoff und Kushner nach Russland gereist und dort von Präsident Putin empfangen worden. Ein Kreml-Berater spricht von…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T23:00:04.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "68cc5596cfa13153dcbdecd3e5503f01c3bd01f7039b0fc64ce485c07bafc4a5",
+            "source_item_id": "94e3ce8628219fad670ec251de9fd4161e140178b0ec05449ed0a8ab76a74bc6",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T23:00:04.000Z",
+            "ingested_at": "2026-09-06T03:06:22.960Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-in-moskau-mit-putin-zusammengekommen-102.html",
+            "title": "Gespräche über Friedensabkommen - US-Gesandte Witkoff und Kushner in Moskau mit Putin zusammengekommen",
+            "summary": "In Moskau sind die Gespräche zwischen Präsident Putin und den US-Unterhändlern Witkoff und Kushner beendet worden. Jetzt werden die Gesandten von Präsident Trump in Kiew erwartet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T23:10:33.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "4366d035e754dab47a94244de00e70f6bc063f150ee84fe83a67b893671b1127",
+            "source_item_id": "9a0ca262de20d1c36c88339951571de63ee0f66468c2c9a41e6d97cd2ba9c277",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T23:10:33.000Z",
+            "ingested_at": "2026-09-06T01:21:36.222Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/verhandlungen--kreml-spricht-von-konstruktiven-gespraechen-mit-us-gesandten-38211922.html",
+            "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T22:32:05.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "2f6188f33f2744517fcce426e9b430520b23c489f294e87e772e8df74ebfb5d7",
+            "source_item_id": "97a589ea5e92a1c950dcc83b25867e955df33026edf37d66dec8bd86d010a06a",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T22:32:05.000Z",
+            "ingested_at": "2026-09-05T23:51:06.780Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-verhandlungen-16021831.html",
+            "title": "Verhandlungen: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+            "summary": "Kremlchef Putin lobt US-Präsident Trumps Bemühungen um ein Ende des russischen Angriffskriegs gegen die Ukraine. Fast drei Stunden spricht er in Moskau mit den US-Gesandten Witkoff und Kushner.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T22:33:21.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9d73f3f185741b614c12381252743de2e98099de9b22127fd0d8a8e4c9dafd83",
+            "source_item_id": "ae1314fd3ad3115996c32022559adb37fa3c7e0ef25bcb686a0eada07dec0219",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T22:33:21.000Z",
+            "ingested_at": "2026-09-05T23:51:06.780Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/internationales/dpa-lage-im-uberblick-16021831.html",
+            "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
+            "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T22:33:21.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "1cd0d7f972bc99aa4fde22511d1164550b5bcdaa59a94ca4bedc57e5a8d23c7d",
+            "source_item_id": "88f82b8bbe2dcf995cc59d16a42521526282daa54a210f0db14a1fc5be39d1ad",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T22:33:21.000Z",
+            "ingested_at": "2026-09-06T07:16:30.989Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/ausland/lage-im-ueberblick--us-gesandte-nach-treffen-mit-putin-unterwegs-nach-kiew-38211922.html",
+            "title": "Lage im Überblick: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
+            "summary": "Rund drei Studen haben Kremlchef Putin und die Gesandten von US-Präsident Trumps in Moskau über Russlands Angriffskrieg gegen die Ukraine gesprochen. Nun reisen die Unterhändler erstmals nach Kiew.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T00:18:16.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "e8797cb14ba76c632e4846dad974ec4de14526601f412e92380bdb855f4ce6e4",
+            "source_item_id": "589f28eeaf7513d13eb7463446c468070d74b137243fa82a5cf296fc309ae7ae",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T00:18:16.000Z",
+            "ingested_at": "2026-09-06T02:06:22.782Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "mdr-nachrichten",
+            "publisher": "MDR",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
+            "title": "Ukraine-News: Kreml spricht von konstruktiven Gesprächen mit US-Gesandten",
+            "summary": "Der Kreml hat die nach langer Pause wieder aufgenommenen Gespräche von Präsident Wladimir Putin mit den US-Vermittlern Steve Witkoff und Jared Kushner als konstruktiv, inhaltsreich und vertrauensvoll bezeichnet.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:33:10.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "f8da5cb0dc06c630d2b9db3781ffc4d22387d073e22031e988791c34b1d04b22",
+            "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
+            "publisher_id": "mdr",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Mitteldeutschland"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:33:10.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:mdr",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
+            "title": "Vermittlungsmission: US-Gesandte nach Treffen mit Putin unterwegs nach Kiew",
+            "summary": "Nach dem Treffen mit Wladimir Putin reisen Steve Witkoff und Jared Kushner nach Kiew. Bewegungen im Ukraine-Krieg sind derzeit nicht erkennbar.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T10:35:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "e54fe4cb334d14b14ccccfad74bdb3a88ae5ea5f9bedaf203c07564f08d061d7",
+            "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T10:35:00.000Z",
+            "ingested_at": "2026-09-06T10:51:35.145Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-sondergesandte-in-moskau-eingetroffen-100.html",
+            "title": "Gespräche über Friedensabkommen - US-Sondergesandte in Moskau eingetroffen",
+            "summary": "In Moskau haben am Abend die kurzfristig anberaumten neuen Gespräche zum Ukraine-Krieg zwischen Kremlchef Wladimir Putin und den US-Unterhändlern Witkoff und Kushner begonnen. Putin empfing die beiden Gesandten von US-Präsident Trump im Kreml, wie Staatsmedien meldeten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T17:17:47.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "dfb94641443123d585d7ef4b770fb44383273b23e32d3223e68f048101e79987",
+            "source_item_id": "3b07aa287e50b1bbf027019a2483375c05efa7365a4acb4f008cee14ce106321",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T17:17:47.000Z",
+            "ingested_at": "2026-09-05T17:51:35.693Z",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/us-gesandte-kushner-und-witkoff-zu-gespraechen-ueber-ukraine-krieg-in-moskau-38211250.html",
+            "title": "US-Gesandte Kushner und Witkoff zu Gesprächen über Ukraine-Krieg in Moskau",
+            "summary": "Die US-Gesandten Jared Kushner und Steve Witkoff sind zu Gesprächen über eine Beendigung des Ukraine-Kriegs in der russischen Hauptstadt Moskau eingetroffen. Ihr Flugzeug landete am Samstagmittag auf dem Flughafen Wnukowo, wie die russischen Nachrichtenagenturen Ria Nowosti und Tass meldeten. In der Folge wollen Kushner und Witkoff Gespräche in der ukrainischen Hauptstadt Kiew führen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-05T11:25:11.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "3df5cd824d6e715dc545dee0a6465e5528a0510cf96dfebd0addca1cce08269c",
+            "source_item_id": "725b0940356c31a3334f83c49ff14b8402e3eb4b2b80e78bb193139fa6b17fd3",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-05T11:25:11.000Z",
+            "ingested_at": "2026-09-05T11:31:43.777Z",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/us-gesandte-witkoff-und-kushner-sprechen-nach-kiew-besuch-von-substanziellen-gespraechen-100.html",
+            "title": "Ukraine-Krieg - US-Gesandte Witkoff und Kushner sprechen nach Kiew-Besuch von substanziellen Gesprächen",
+            "summary": "Der US-Gesandte Steve Witkoff hat die Gespräche mit der ukrainischen Seite über ein Ende des russischen Angriffskriegs als \"substanziell\" bezeichnet. Der Schwiegersohn von US-Präsident Trump, Kushner, der ebenfalls in der ukrainischen Hauptstadt Kiew war, erklärte, er hoffe, dass die Gespräche neue Wege zu einem Frieden eröffnen würden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T15:29:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f3e203da40f80c38ca8904961b19c69007d86e0d9ce95a86a55f698124fd963b",
+            "source_item_id": "e350cc0bf5b02b700a25ab17b92eb7b1eea9620c20352303d8f43e63c122b6a5",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T15:29:01.000Z",
+            "ingested_at": "2026-09-06T15:33:52.069Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "taz-aktuell",
+            "publisher": "taz",
+            "url": "https://taz.de/US-Vermittler-in-Moskau-und-Kyjiw/!6210840",
+            "title": "US-Vermittler in Moskau und Kyjiw: Diplomaten als Fans",
+            "summary": "US-Vermittler Steve Witkoff und Jared Kushner haben Gespräche in Russland und der Ukraine geführt. Viele Fragen bleiben offen, immerhin ist von „neuen Ideen“ die Rede. mehr...",
+            "source_type": "media_rss",
+            "published_at": "2026-09-07T13:07:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "41544ec5f60a28e1cba8ad2945be83307bd3d8a166b273a31d14ae34a9c7e0ff",
+            "source_item_id": "60d5bbb648029880633ae78f07b63eab22b07fac4b828a4b4537646661525f28",
+            "publisher_id": "taz",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-07T13:07:00.000Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:taz",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "queue_source_repartitions": [
@@ -53354,6 +54582,61 @@
         "failed_at": "2026-09-08T16:06:50.416Z",
         "retry_after": "2026-09-08T16:21:50.416Z",
         "retry_count": 1
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "0cdf2520cf5a2d23736f61dc9c94bc97f12db98b754fac34884e6492aaf72916",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+            "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
+            "summary": "Kurz nach der Abreise von US-Unterhändlern hat Russland die ukrainische Hauptstadt Kiew erneut mit ballistischen Raketen angegriffen.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T05:48:08.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "43556dc859e359d6065864a38faa8822d11a74eb488013efef3b66695a07c203",
+            "source_item_id": "d0acedaf5ac83e6a8760512b40a6a6ef49a5115ad813b242b883cd81b3045416",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T05:48:08.000Z",
+            "ingested_at": "2026-09-08T05:52:13.496Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -54074,7 +55357,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -55249,7 +56532,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "e6e91a616aae9777f03f38b9bf8d8eeeb51e28412c5ab2d462caa196320ef7a8",
           "issue_codes": [],
           "warning_codes": []
@@ -56191,7 +57474,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -59164,7 +60447,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -59914,7 +61197,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -60994,7 +62277,95 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 2,
+      "pending_update": {
+        "detected_at": "2026-09-08T18:03:03.803Z",
+        "content_hash": "1e35e4c2c361abc5134938c2a027bd50bcae99d7e956e0f906ae8940bc76a9eb",
+        "sources": [
+          {
+            "source_id": "wiwo-schlagzeilen",
+            "publisher": "WirtschaftsWoche",
+            "url": "https://www.wiwo.de/politik/deutschland/arbeitsmarkt-fachkraeftemangel-koennte-bis-2029-auf-723.000-steigen/100252475.html",
+            "title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
+            "summary": "Die Zahl der Arbeitslosen ist zuletzt gestiegen. Zugleich fehlen in Deutschland vielerorts Fachkräfte. In drei Jahren dürften es einer Untersuchung zufolge noch weit mehr sein.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-07T05:13:03.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Wirtschaft",
+            "content_hash": "cbe32416d9119c59366a3921937027cd9c4b0e094357ed5224512e60134f4a06",
+            "source_item_id": "7e21447d3fc624056635b5d06862c43059c6488e11d0cbb2c0cf5aace5b44034",
+            "publisher_id": "wirtschaftswoche",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-07T05:13:03.000Z",
+            "ingested_at": "2026-09-07T08:37:06.801Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:wirtschaftswoche",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/wirtschaft/studie-fachkraeftemangel-berufe-100.html",
+            "title": "Fachkräftemangel könnte sich bis 2029 verdoppeln",
+            "summary": "Der Fachkräftemangel droht für Firmen zum immer größeren Problem zu werden. Laut einer IW-Studie könnten bald 723.000 Mitarbeiter fehlen. Welche Berufe das besonders betrifft.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-07T10:12:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f34fa77b0b30031d5a2ec5438d060987c7ca0eb82c8037a6f22669f7f1c40c87",
+            "source_item_id": "0660976e4f58270c8feb92d6580fa9fd0b2e39098f53430dca3f770b313b6e6f",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-07T10:12:00.000Z",
+            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": false,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T18:07:16.921Z",
+          "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-61bb6c2918c26f16",
@@ -61414,9 +62785,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T23:53:17.517Z",
+        "expires_at": "2026-09-09T00:07:16.921Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -64882,7 +66253,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -66139,7 +67510,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -66700,7 +68071,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -68209,7 +69580,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -69415,7 +70786,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -70562,7 +71933,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -71082,7 +72453,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -71839,7 +73210,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -74296,7 +75667,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -74471,7 +75842,7 @@
       "verification_started_at": "2026-09-07T18:54:41.209Z",
       "publish_ready_at": "2026-09-07T18:55:00.130Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -75705,9 +77076,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "fe5acfcc458471f3b37a99f85c93ef27048a84f8b64987e1ba0107e2773acd70",
-        "checked_at": "2026-09-08T14:52:22.706Z",
+        "checked_at": "2026-09-08T18:03:03.803Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T20:52:22.706Z",
+        "expires_at": "2026-09-09T00:03:03.803Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -75744,7 +77115,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-ab8e484fc06cc08f",
@@ -76377,7 +77748,7 @@
       "verification_started_at": "2026-09-07T18:37:49.197Z",
       "publish_ready_at": "2026-09-07T18:38:06.030Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T18:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -76725,9 +78096,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "d06fdc8f362fc6a5f6c1266058357f873d9a310b5c4946bfb3a358b2b2c64edc",
-        "checked_at": "2026-09-08T14:52:22.706Z",
+        "checked_at": "2026-09-08T18:03:03.803Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T20:52:22.706Z",
+        "expires_at": "2026-09-09T00:03:03.803Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -76764,7 +78135,7 @@
           }
         ]
       },
-      "deepening_checks": 2
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-49f028aa3748119b",
@@ -78289,9 +79660,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "ae41d390977ed5b8c58fb9e54edd8a5c92918f3a44dea07416680a3f7bae4d6f",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T23:53:17.517Z",
+        "expires_at": "2026-09-09T00:07:16.921Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -82967,7 +84338,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -87504,7 +88875,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -93609,7 +94980,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -102173,7 +103544,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -104908,7 +106279,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -119119,7 +120490,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -119139,7 +120510,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:53:17.517Z"
+          "checked_at": "2026-09-08T18:07:16.921Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -119155,7 +120526,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T17:53:17.517Z",
+      "updated_at": "2026-09-08T18:07:16.921Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -119195,7 +120566,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1966.4025666666666,
+        "queue_age_minutes": 1980.3926333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -119204,7 +120575,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T17:53:17.517Z",
+        "checked_at": "2026-09-08T18:07:16.921Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -139411,7 +140782,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -140112,7 +141483,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -140887,7 +142258,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -141550,7 +142921,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -149433,7 +150804,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -175180,7 +176551,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -219574,7 +220945,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T17:53:17.517Z",
+          "checked_at": "2026-09-08T18:07:16.921Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
