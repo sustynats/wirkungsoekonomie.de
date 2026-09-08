@@ -1,8 +1,1470 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T11:51:56.994Z",
-  "updated_at": "2026-09-08T12:06:46.743Z",
+  "public_updated_at": "2026-09-08T12:22:00.863Z",
+  "updated_at": "2026-09-08T12:22:00.863Z",
   "stories": [
+    {
+      "story_id": "wt-268817aa0a8ccf86",
+      "slug": "menschenrechtsgericht-lehnt-familiennachzug-fur-13-kinder-aus-drei-ehen-ab-8ccf86",
+      "title": "Menschenrechtsgericht lehnt Familiennachzug für 13 Kinder aus drei Ehen ab",
+      "first_seen": "2026-09-08T12:13:56.000Z",
+      "last_updated": "2026-09-08T12:23:46.943Z",
+      "published_at": "2026-09-08T12:23:46.943Z",
+      "updated_at": "2026-09-08T12:23:46.943Z",
+      "topic": [
+        "Soziales",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/menschenrechtsgericht-lehnt-familiennachzug-fuer-13-kinder-aus-drei-ehen-ab-38221742.html",
+          "title": "Menschenrechtsgericht lehnt Familiennachzug für 13 Kinder aus drei Ehen ab",
+          "summary": "Ein Mann aus dem Jemen, der seine 13 Kinder von drei Ehefrauen in die Niederlande nachholen wollte, ist mit diesem Vorhaben vor dem Europäischen Gerichtshof für Menschenrechte gescheitert. Ein europäischer Staat, der bei der Zuwanderung familiäre Bindungen berücksichtigt, sei nicht verpflichtet, polygame Ehen anzuerkennen, die gegen die eigene Rechtsordnung verstoßen, urteilte der Europäische Gerichtshof für Menschenrechte am Dienstag in Straßburg.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:13:56.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "2bc9d257667329f6b326ca98f2d1344f2eab5bd05f09542656dd15806053fedc",
+          "source_item_id": "432ef23bca00207823a6ecbd5c9b035428e140d9034982f6b6706b5828ed8d4d",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:13:56.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-268817aa0a8ccf86-v1-claim-1",
+          "story_id": "wt-268817aa0a8ccf86",
+          "claim": "Der Europäische Gerichtshof für Menschenrechte hat den Familiennachzug für 13 Kinder aus drei Ehen eines Mannes aus dem Jemen abgelehnt.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/menschenrechtsgericht-lehnt-familiennachzug-fuer-13-kinder-aus-drei-ehen-ab-38221742.html",
+              "excerpt_hash": "c84b340462709526b626",
+              "checked_at": "2026-09-08T12:23:46.943Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T12:23:46.943Z"
+        },
+        {
+          "claim_id": "wt-268817aa0a8ccf86-v1-claim-2",
+          "story_id": "wt-268817aa0a8ccf86",
+          "claim": "Nach der Darstellung der Quelle sagte das Gericht, ein europäischer Staat müsse polygame Ehen, die gegen die eigene Rechtsordnung verstoßen, bei der Zuwanderung nicht anerkennen.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/menschenrechtsgericht-lehnt-familiennachzug-fuer-13-kinder-aus-drei-ehen-ab-38221742.html",
+              "excerpt_hash": "c84b340462709526b626",
+              "checked_at": "2026-09-08T12:23:46.943Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/menschenrechtsgericht-lehnt-familiennachzug-fuer-13-kinder-aus-drei-ehen-ab-38221742.html",
+              "excerpt_hash": "757ea01c3e8b417ecbd3",
+              "checked_at": "2026-09-08T12:23:46.943Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T12:23:46.943Z"
+        }
+      ],
+      "event_id": "event-dcfbef067025df7984a1",
+      "event_first_seen_at": "2026-09-08T12:22:00.863Z",
+      "event_detected_at": "2026-09-08T12:22:00.863Z",
+      "verification_started_at": "2026-09-08T12:23:27.630Z",
+      "publish_ready_at": "2026-09-08T12:23:46.943Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:22:00.863Z",
+        "fingerprint": "63f046175e324d9aac3dc62cf0f0e86b6ea7a260faeb7c3aa7053bcca7dcdfdf",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "cfe9196d59bb47d11b34da8786b4e045a6e3b5692881b676e4e211e28dd69772",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T12:23:46.943Z",
+        "sources": []
+      },
+      "source_summary": "Ein Bericht beschreibt eine Entscheidung des Europäischen Gerichtshofs für Menschenrechte in Straßburg. Danach scheiterte ein Mann aus dem Jemen mit dem Versuch, seine 13 Kinder von drei Ehefrauen in die Niederlande nachzuholen.\n\nDie Quelle ordnet das als Ablehnung des Familiennachzugs ein und verweist darauf, dass der Gerichtshof bei der Zuwanderung familiäre Bindungen nicht als Pflicht zur Anerkennung polygamer Ehen verstanden habe. Weitere Verfahrensdetails, die genaue Begründung und mögliche Folgen für andere Fälle bleiben in der vorliegenden Meldung offen.",
+      "analysis": {
+        "story_id": "wt-268817aa0a8ccf86",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Der Gerichtshof soll den Familiennachzug für 13 Kinder aus drei Ehen abgelehnt haben. Die genaue Begründung und die Reichweite der Entscheidung bleiben in der Quelle nur angedeutet.",
+        "detail_summary": "Die Meldung beschreibt eine gerichtliche Entscheidung mit unmittelbarer Bedeutung für Familiennachzug und die Behandlung polygamer Ehen im Migrationskontext. Der materielle Kern ist eng, aber klar: Ein einzelner Fall kann für die betroffene Familie erhebliche und wohl auch dauerhafte Folgen haben, weil ein Rechtsweg an einer zentralen Zulassungshürde scheitert. Der Wirkpfad verläuft über die Auslegung von Familien- und Zuwanderungsregeln hin zu konkreten Zugangsentscheidungen. Ob daraus eine breitere Änderung von Praxis oder Anreizen folgt, ist mit der gelieferten Quelle nicht belegt. Die Evidenz bleibt journalistisch vermittelt; die genaue Urteilsbegründung sollte mit der Originalentscheidung geprüft werden.",
+        "why_relevant": "Die Meldung betrifft eine konkrete gerichtliche Entscheidung zu Familiennachzug und damit einen Eingriff in Rechte, Zuständigkeiten und mögliche Verwaltungspraxis.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Für die betroffene Familie ist der Zugang zu gemeinsamem Leben direkt berührt; zugleich kann die Entscheidung restriktive Rechtsanwendung stützen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Die Entscheidung betrifft Rechtsauslegung und die Bindung staatlichen Handelns an gerichtliche Maßstäbe; die demokratische Korrekturfähigkeit bleibt aber über das Rechtssystem erhalten."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Entscheidung kann den Zugang zu Familiennachzug in ähnlichen Konstellationen erschweren und damit Rechtsanwendung, Verwaltungsentscheidungen und Erwartungen von Betroffenen beeinflussen.",
+        "impact_risks": [
+          "Betroffene Familien können länger getrennt bleiben oder keinen Nachzug erhalten.",
+          "Die Entscheidung kann als Orientierung für weitere Fälle mit polygamen Ehen herangezogen werden."
+        ],
+        "mechanisms": [
+          "Gerichtliche Auslegung der Menschenrechts- und Zuwanderungsregeln",
+          "Signalwirkung für Verwaltung und Rechtsberatung",
+          "Mögliche Verschärfung oder Bestätigung bestehender Prüfungspraxis"
+        ],
+        "first_order": [
+          "Ablehnung des konkreten Familiennachzugs",
+          "Rechtsverlust bzw. ausbleibender Zugang für die betroffenen Kinder"
+        ],
+        "second_order": [
+          "Orientierung für ähnliche Anträge",
+          "Anpassung administrativer Prüfmaßstäbe"
+        ],
+        "third_order": [
+          "Mögliche Verfestigung einer restriktiven Linie bei vergleichbaren Fällen",
+          "Folgen für Rechtsstrategien und Erwartungssicherheit im Migrationsrecht"
+        ],
+        "systemic_relevance": "Der Fall berührt die Schnittstelle von Familienrecht, Migrationssteuerung und gerichtlicher Kontrolle. Systemisch relevant ist vor allem, ob sich daraus eine belastbare Linie für vergleichbare Verfahren ableiten lässt.",
+        "transformation_potential": "Niedrig bis mittel, weil die Quelle nur einen Einzelfall beschreibt und keine Regeländerung belegt.",
+        "resilience": "Die Rechtsordnung bleibt grundsätzlich korrigierbar, weil weitere Verfahren, Begründungen und nationale Umsetzungsschritte offen sind.",
+        "side_effects": [
+          "Mehr Unsicherheit für ähnliche Anträge",
+          "Mögliche Verlagerung in andere rechtliche Argumentationen"
+        ],
+        "uncertainties": [
+          "Die Originalentscheidung ist in der gelieferten Quelle nicht enthalten.",
+          "Unklar bleibt, wie weit die Entscheidung auf andere Fälle übertragbar ist.",
+          "Die genaue Begründung und eventuelle abweichende Tatsachen sind offen."
+        ],
+        "evidence_level": "low",
+        "attribution": "Quelle: stern; Sprecher im Bericht: der Europäische Gerichtshof für Menschenrechte; Originalformulierung nur indirekt wiedergegeben.",
+        "watch_next": [
+          "Originalurteil und Begründung prüfen",
+          "Prüfen, ob andere Medien oder die Gerichtsmitteilung den Fall bestätigen",
+          "Beobachten, ob sich daraus eine gefestigte Rechtsprechungslinie ergibt"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 10, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält eine neue gerichtliche Entscheidung mit unmittelbarer Wirkung für einen konkreten Familiennachzug und potenzieller Relevanz für ähnliche Fälle."
+        },
+        "visuals": {
+          "path_directions": [
+            {
+              "order": "first_order",
+              "path": "Ablehnung des konkreten Familiennachzugs",
+              "direction": "negative",
+              "condition": "Wenn die Entscheidung umgesetzt wird, bleibt der Nachzug für die betroffene Familie aus.",
+              "evidence": "scenario",
+              "claim_ids": [
+                "wt-268817aa0a8ccf86-claim-01"
+              ]
+            }
+          ],
+          "key_figures": [
+            {
+              "label": "Kinder",
+              "value": "13",
+              "unit": "Kinder",
+              "context": "Betroffene Kinder im beschriebenen Fall",
+              "claim_id": "wt-268817aa0a8ccf86-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "kinder_jugend",
+            "beschaeftigte"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T12:22:00.863Z",
+        "media_trigger_fingerprint": "976bdab84cd9e21c769bbb3a34f55361e48baf29492acd1a82a4ff526fcef9c0",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "976bdab84cd9e21c769bbb3a34f55361e48baf29492acd1a82a4ff526fcef9c0",
+          "content_fingerprint": "09c4e9329a729b9f04449c33a283646681a87b4b24502e1909d9974d48cb19b9",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T12:23:46.943Z",
+          "content_hash": "cfe9196d59bb47d11b34da8786b4e045a6e3b5692881b676e4e211e28dd69772",
+          "source_summary": "Ein Bericht beschreibt eine Entscheidung des Europäischen Gerichtshofs für Menschenrechte in Straßburg. Danach scheiterte ein Mann aus dem Jemen mit dem Versuch, seine 13 Kinder von drei Ehefrauen in die Niederlande nachzuholen.\n\nDie Quelle ordnet das als Ablehnung des Familiennachzugs ein und verweist darauf, dass der Gerichtshof bei der Zuwanderung familiäre Bindungen nicht als Pflicht zur Anerkennung polygamer Ehen verstanden habe. Weitere Verfahrensdetails, die genaue Begründung und mögliche Folgen für andere Fälle bleiben in der vorliegenden Meldung offen.",
+          "analysis": {
+            "story_id": "wt-268817aa0a8ccf86",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Der Gerichtshof soll den Familiennachzug für 13 Kinder aus drei Ehen abgelehnt haben. Die genaue Begründung und die Reichweite der Entscheidung bleiben in der Quelle nur angedeutet.",
+            "detail_summary": "Die Meldung beschreibt eine gerichtliche Entscheidung mit unmittelbarer Bedeutung für Familiennachzug und die Behandlung polygamer Ehen im Migrationskontext. Der materielle Kern ist eng, aber klar: Ein einzelner Fall kann für die betroffene Familie erhebliche und wohl auch dauerhafte Folgen haben, weil ein Rechtsweg an einer zentralen Zulassungshürde scheitert. Der Wirkpfad verläuft über die Auslegung von Familien- und Zuwanderungsregeln hin zu konkreten Zugangsentscheidungen. Ob daraus eine breitere Änderung von Praxis oder Anreizen folgt, ist mit der gelieferten Quelle nicht belegt. Die Evidenz bleibt journalistisch vermittelt; die genaue Urteilsbegründung sollte mit der Originalentscheidung geprüft werden.",
+            "why_relevant": "Die Meldung betrifft eine konkrete gerichtliche Entscheidung zu Familiennachzug und damit einen Eingriff in Rechte, Zuständigkeiten und mögliche Verwaltungspraxis.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Für die betroffene Familie ist der Zugang zu gemeinsamem Leben direkt berührt; zugleich kann die Entscheidung restriktive Rechtsanwendung stützen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Ein unmittelbarer Umweltbezug ist in der Quelle nicht erkennbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Die Entscheidung betrifft Rechtsauslegung und die Bindung staatlichen Handelns an gerichtliche Maßstäbe; die demokratische Korrekturfähigkeit bleibt aber über das Rechtssystem erhalten."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Entscheidung kann den Zugang zu Familiennachzug in ähnlichen Konstellationen erschweren und damit Rechtsanwendung, Verwaltungsentscheidungen und Erwartungen von Betroffenen beeinflussen.",
+            "impact_risks": [
+              "Betroffene Familien können länger getrennt bleiben oder keinen Nachzug erhalten.",
+              "Die Entscheidung kann als Orientierung für weitere Fälle mit polygamen Ehen herangezogen werden."
+            ],
+            "mechanisms": [
+              "Gerichtliche Auslegung der Menschenrechts- und Zuwanderungsregeln",
+              "Signalwirkung für Verwaltung und Rechtsberatung",
+              "Mögliche Verschärfung oder Bestätigung bestehender Prüfungspraxis"
+            ],
+            "first_order": [
+              "Ablehnung des konkreten Familiennachzugs",
+              "Rechtsverlust bzw. ausbleibender Zugang für die betroffenen Kinder"
+            ],
+            "second_order": [
+              "Orientierung für ähnliche Anträge",
+              "Anpassung administrativer Prüfmaßstäbe"
+            ],
+            "third_order": [
+              "Mögliche Verfestigung einer restriktiven Linie bei vergleichbaren Fällen",
+              "Folgen für Rechtsstrategien und Erwartungssicherheit im Migrationsrecht"
+            ],
+            "systemic_relevance": "Der Fall berührt die Schnittstelle von Familienrecht, Migrationssteuerung und gerichtlicher Kontrolle. Systemisch relevant ist vor allem, ob sich daraus eine belastbare Linie für vergleichbare Verfahren ableiten lässt.",
+            "transformation_potential": "Niedrig bis mittel, weil die Quelle nur einen Einzelfall beschreibt und keine Regeländerung belegt.",
+            "resilience": "Die Rechtsordnung bleibt grundsätzlich korrigierbar, weil weitere Verfahren, Begründungen und nationale Umsetzungsschritte offen sind.",
+            "side_effects": [
+              "Mehr Unsicherheit für ähnliche Anträge",
+              "Mögliche Verlagerung in andere rechtliche Argumentationen"
+            ],
+            "uncertainties": [
+              "Die Originalentscheidung ist in der gelieferten Quelle nicht enthalten.",
+              "Unklar bleibt, wie weit die Entscheidung auf andere Fälle übertragbar ist.",
+              "Die genaue Begründung und eventuelle abweichende Tatsachen sind offen."
+            ],
+            "evidence_level": "low",
+            "attribution": "Quelle: stern; Sprecher im Bericht: der Europäische Gerichtshof für Menschenrechte; Originalformulierung nur indirekt wiedergegeben.",
+            "watch_next": [
+              "Originalurteil und Begründung prüfen",
+              "Prüfen, ob andere Medien oder die Gerichtsmitteilung den Fall bestätigen",
+              "Beobachten, ob sich daraus eine gefestigte Rechtsprechungslinie ergibt"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 10, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält eine neue gerichtliche Entscheidung mit unmittelbarer Wirkung für einen konkreten Familiennachzug und potenzieller Relevanz für ähnliche Fälle."
+            },
+            "visuals": {
+              "path_directions": [
+                {
+                  "order": "first_order",
+                  "path": "Ablehnung des konkreten Familiennachzugs",
+                  "direction": "negative",
+                  "condition": "Wenn die Entscheidung umgesetzt wird, bleibt der Nachzug für die betroffene Familie aus.",
+                  "evidence": "scenario",
+                  "claim_ids": [
+                    "wt-268817aa0a8ccf86-claim-01"
+                  ]
+                }
+              ],
+              "key_figures": [
+                {
+                  "label": "Kinder",
+                  "value": "13",
+                  "unit": "Kinder",
+                  "context": "Betroffene Kinder im beschriebenen Fall",
+                  "claim_id": "wt-268817aa0a8ccf86-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "kinder_jugend",
+                "beschaeftigte"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T12:22:00.863Z",
+            "media_trigger_fingerprint": "976bdab84cd9e21c769bbb3a34f55361e48baf29492acd1a82a4ff526fcef9c0",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "976bdab84cd9e21c769bbb3a34f55361e48baf29492acd1a82a4ff526fcef9c0",
+              "content_fingerprint": "09c4e9329a729b9f04449c33a283646681a87b4b24502e1909d9974d48cb19b9",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-268817aa0a8ccf86-v1-claim-1",
+              "story_id": "wt-268817aa0a8ccf86",
+              "claim": "Der Europäische Gerichtshof für Menschenrechte hat den Familiennachzug für 13 Kinder aus drei Ehen eines Mannes aus dem Jemen abgelehnt.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/menschenrechtsgericht-lehnt-familiennachzug-fuer-13-kinder-aus-drei-ehen-ab-38221742.html",
+                  "excerpt_hash": "c84b340462709526b626",
+                  "checked_at": "2026-09-08T12:23:46.943Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T12:23:46.943Z"
+            },
+            {
+              "claim_id": "wt-268817aa0a8ccf86-v1-claim-2",
+              "story_id": "wt-268817aa0a8ccf86",
+              "claim": "Nach der Darstellung der Quelle sagte das Gericht, ein europäischer Staat müsse polygame Ehen, die gegen die eigene Rechtsordnung verstoßen, bei der Zuwanderung nicht anerkennen.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/menschenrechtsgericht-lehnt-familiennachzug-fuer-13-kinder-aus-drei-ehen-ab-38221742.html",
+                  "excerpt_hash": "c84b340462709526b626",
+                  "checked_at": "2026-09-08T12:23:46.943Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/menschenrechtsgericht-lehnt-familiennachzug-fuer-13-kinder-aus-drei-ehen-ab-38221742.html",
+                  "excerpt_hash": "757ea01c3e8b417ecbd3",
+                  "checked_at": "2026-09-08T12:23:46.943Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T12:23:46.943Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/menschenrechtsgericht-lehnt-familiennachzug-fuer-13-kinder-aus-drei-ehen-ab-38221742.html",
+              "content_hash": "2bc9d257667329f6b326ca98f2d1344f2eab5bd05f09542656dd15806053fedc"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T12:23:46.943Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T12:23:46.943Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T12:39:33.942Z"
+      }
+    },
+    {
+      "story_id": "wt-376571064350b0b0",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "657307b6a64f921ceae097a23ea3ae5ea3aa4fe01def9444f4019e227f535585",
+        "first_failed_at": "2026-09-08T12:06:46.743Z",
+        "failed_at": "2026-09-08T12:06:46.743Z",
+        "retry_after": "2026-09-08T12:21:46.743Z",
+        "retry_count": 1
+      },
+      "slug": "kritische-infrastruktur-land-will-energienetze-und-hafen-besser-schutzen-50b0b0",
+      "title": "Kritische Infrastruktur: Land will Energienetze und Häfen besser schützen",
+      "first_seen": "2026-09-08T11:45:13.000Z",
+      "last_updated": "2026-09-08T12:16:32.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kritische-infrastruktur--land-will-energienetze-und-haefen-besser-schuetzen-38221586.html",
+          "title": "Kritische Infrastruktur: Land will Energienetze und Häfen besser schützen",
+          "summary": "Schleswig-Holstein setzt auf neue Maßnahmen, um Energienetze und Häfen besser zu schützen. Was das geplante Lagebild und neue Drohnentechnik bewirken sollen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:45:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "17a9cf8d56d8688e575b2e4e9ee2f0657b004103469800d4c7f7d4777b74edc8",
+          "source_item_id": "ee8d9032775de7f37ff646765984318d3032a296e5268234d571a85de9e220c6",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T11:45:13.000Z",
+          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kritische-infrastruktur--neue-plattform-und-drohnen-gegen-sabotage-in-haefen-38221586.html",
+          "title": "Kritische Infrastruktur: Neue Plattform und Drohnen gegen Sabotage in Häfen",
+          "summary": "Schleswig-Holstein plant neue Maßnahmen zum Schutz kritischer Infrastruktur. Was die Landesregierung konkret vorhat und welche Technik in den Häfen getestet wird.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:16:32.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "635c438a731382973c4cee7af67c9e988a6800e86a678e2fe48ceb8a9f8b9678",
+          "source_item_id": "4481f67de9e280552a7d3f7e5b24ff46d0dd08b0c572d669d1114e9e40ef1730",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:16:32.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-376571064350b0b0-claim-01",
+          "story_id": "wt-376571064350b0b0",
+          "claim": "Kritische Infrastruktur: Land will Energienetze und Häfen besser schützen: Schleswig-Holstein setzt auf neue Maßnahmen, um Energienetze und Häfen besser zu schützen. Was das geplante Lagebild und neue Drohnentechnik bewirken sollen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        },
+        {
+          "claim_id": "wt-376571064350b0b0-claim-02",
+          "story_id": "wt-376571064350b0b0",
+          "claim": "Kritische Infrastruktur: Neue Plattform und Drohnen gegen Sabotage in Häfen: Schleswig-Holstein plant neue Maßnahmen zum Schutz kritischer Infrastruktur. Was die Landesregierung konkret vorhat und welche Technik in den Häfen getestet wird.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        }
+      ],
+      "content_hash": "4e9cc51e8fe6ad70fabc651a0d80dafebacae6045e43ac81c5b2d4e8f11986e0",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T12:22:00.863Z",
+      "event_first_seen_at": "2026-09-08T12:06:46.743Z",
+      "event_detected_at": "2026-09-08T12:06:46.743Z",
+      "event_id": "event-331b581464e820c98f8a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 64,
+        "public_relevance": "hoch",
+        "topics": [
+          "Digitalisierung",
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.48105,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 15.235333333333333,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:22:00.863Z",
+        "fingerprint": "d960f1b780d83370e604ab0de3909759ef565451e01dc1275e5fdaaf4d07a4a7",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-979056dc14111103",
+      "slug": "energiepreise-haushalte-konnten-mit-flexiblem-stromverbrauch-geld-sparen-111103",
+      "title": "Energiepreise: Haushalte könnten mit flexiblem Stromverbrauch Geld sparen",
+      "first_seen": "2026-09-08T12:12:40.000Z",
+      "last_updated": "2026-09-08T12:13:43.000Z",
+      "topic": [
+        "Energie",
+        "Soziales",
+        "Digitalisierung",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/wirtschaft/news/energiepreise--haushalte-koennten-mit-flexiblem-stromverbrauch-geld-sparen-38221728.html",
+          "title": "Energiepreise: Haushalte könnten mit flexiblem Stromverbrauch Geld sparen",
+          "summary": "Der Börsenstrompreis schwankt im Tagesverlauf. Sowohl Hausbesitzer als auch Mieter könnten sich das zunutze machen und Geld sparen. Voraussetzung wären digitale Zähler.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:12:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "fa5f11ece65945be42523d140ccf638c09ef19a0e60c562327d77c18bac83186",
+          "source_item_id": "b67cb43f864629425211258b980a31c4570292a914b5a99f807ed981635f9058",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:12:40.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-energiepreise-16030560.html",
+          "title": "Energiepreise: Haushalte könnten mit flexiblem Stromverbrauch Geld sparen",
+          "summary": "Der Börsenstrompreis schwankt im Tagesverlauf. Sowohl Hausbesitzer als auch Mieter könnten sich das zunutze machen und Geld sparen. Voraussetzung wären digitale Zähler.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:13:43.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d34d2cd46a5406b42c6b965e6f9b894b830ada19843b0ac8056d11019f717171",
+          "source_item_id": "624e0f5d33e5a005858a8f12328d80bc3e70b8db44aeb91ba873efb6cddf78cf",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:13:43.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-979056dc14111103-claim-01",
+          "story_id": "wt-979056dc14111103",
+          "claim": "Energiepreise: Haushalte könnten mit flexiblem Stromverbrauch Geld sparen: Der Börsenstrompreis schwankt im Tagesverlauf. Sowohl Hausbesitzer als auch Mieter könnten sich das zunutze machen und Geld sparen. Voraussetzung wären digitale Zähler.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        },
+        {
+          "claim_id": "wt-979056dc14111103-claim-02",
+          "story_id": "wt-979056dc14111103",
+          "claim": "Energiepreise: Haushalte könnten mit flexiblem Stromverbrauch Geld sparen: Der Börsenstrompreis schwankt im Tagesverlauf. Sowohl Hausbesitzer als auch Mieter könnten sich das zunutze machen und Geld sparen. Voraussetzung wären digitale Zähler.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        }
+      ],
+      "content_hash": "18ff7f895e8425c584ea57922a8881e3518700655f23bf9ba8ee1295cd3a1d3b",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T12:22:00.863Z",
+      "event_first_seen_at": "2026-09-08T12:22:00.863Z",
+      "event_detected_at": "2026-09-08T12:22:00.863Z",
+      "event_id": "event-f4d136cc918b0ee6e359",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Soziales",
+          "Digitalisierung",
+          "Finanzen"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 8.297716666666666,
+        "detection_delay_minutes": 8.297716666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:22:00.863Z",
+        "fingerprint": "eecc27621589aa4279896b67598fcea01cbaef6356c54f6947e8a55325df498a",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-e01e1e77e702edc3",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "afe4bec7362b59182abe117bf944a518e936a5eeb760afe56e6c5073b4d3254e",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
+      "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
+      "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
+      "first_seen": "2026-09-08T10:41:31.000Z",
+      "last_updated": "2026-09-08T12:12:44.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/mutmasslicher-strom-saboteur-daniel-v-festgenommen-100.html",
+          "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
+          "summary": "Ende der Fahndung nach Daniel V.: Die Polizei hat den Mann festgenommen, der für Sabotage am Stromnetz verantwortlich sein soll.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:12:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "004a45cdf5ec587808d29f507d49973cab84765a6e411a1bafca212c027671c5",
+          "source_item_id": "a8a99495658a8b6e2e62ac0069cb18a31c80138dc48f7b4d3769c8cc8b24207b",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:12:44.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e01e1e77e702edc3-claim-01",
+          "story_id": "wt-e01e1e77e702edc3",
+          "claim": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen: Ende der Fahndung nach Daniel V.: Die Polizei hat den Mann festgenommen, der für Sabotage am Stromnetz verantwortlich sein soll.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        }
+      ],
+      "content_hash": "601e16a0142d442f5f07a91a864cae07670d8ad5995737142d5a30483b474cc2",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 1,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T12:22:00.863Z",
+      "event_first_seen_at": "2026-09-08T10:51:42.562Z",
+      "event_detected_at": "2026-09-08T10:51:42.562Z",
+      "event_id": "event-1c240bac9c8b267f5a27",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.28105,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 90.30501666666666,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:22:00.863Z",
+        "fingerprint": "f3b717ff3eaec8205e4661b931ce09f9b2d59aa5a5b06cd5658fc2b87b97a329",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-002ef3a7bb1a5ae1",
+      "slug": "besetztes-westjordanland-die-siedlungen-kommen-die-sanktionen-aber-auch-1a5ae1",
+      "title": "Besetztes Westjordanland: Die Siedlungen kommen, die Sanktionen aber auch",
+      "first_seen": "2026-09-08T12:12:00.000Z",
+      "last_updated": "2026-09-08T12:12:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+          "title": "Besetztes Westjordanland: Die Siedlungen kommen, die Sanktionen aber auch",
+          "summary": "Ein israelisches Gericht weist einen Eilantrag gegen das Siedlungsprojekt E1 zurück. Gleichzeitig soll es neue Sanktionen gegen Produkte aus Siedlungen geben. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:12:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "3ff17446ba1446433efea28f651fc118b84cbdf7a2b62c1e80ef6ade3c07b960",
+          "source_item_id": "3074e8767dbbfdeea5a25da390af7f3e625047767b5a88a0914e0dc8f5773b30",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:12:00.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-002ef3a7bb1a5ae1-claim-01",
+          "story_id": "wt-002ef3a7bb1a5ae1",
+          "claim": "Besetztes Westjordanland: Die Siedlungen kommen, die Sanktionen aber auch: Ein israelisches Gericht weist einen Eilantrag gegen das Siedlungsprojekt E1 zurück. Gleichzeitig soll es neue Sanktionen gegen Produkte aus Siedlungen geben. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        }
+      ],
+      "content_hash": "8fd910f1dcadab670e980a1f64f0ff32f6dcc5da5838f7e98e47e65f90f93d3a",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T12:22:00.863Z",
+      "event_first_seen_at": "2026-09-08T12:22:00.863Z",
+      "event_detected_at": "2026-09-08T12:22:00.863Z",
+      "event_id": "event-138f4d09f7c64d57aa21",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 10.014383333333333,
+        "detection_delay_minutes": 10.014383333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:22:00.863Z",
+        "fingerprint": "127d0255e503d7bca7490fd96230a18b5276eb876cf618a834fe80236c1715a2",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-b2c5f374ae30cf66",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d8b2f3576ade07f0e59b72ee458f79a13e43d842dd98f5cb3ec5d7ff32f5aafd",
+        "first_failed_at": "2026-09-08T12:22:00.863Z",
+        "failed_at": "2026-09-08T12:22:00.863Z",
+        "retry_after": "2026-09-08T12:37:00.863Z",
+        "retry_count": 1
+      },
+      "slug": "privat-und-guterbahnen-stellen-db-infrastrukturtochter-vernichtendes-urteil-aus-30cf66",
+      "title": "Privat- und Güterbahnen stellen DB-Infrastrukturtochter vernichtendes Urteil aus",
+      "first_seen": "2026-09-08T12:04:44.000Z",
+      "last_updated": "2026-09-08T12:04:44.000Z",
+      "topic": [
+        "Arbeit",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/privat--und-gueterbahnen-stellen-db-infrastrukturtochter-vernichtendes-urteil-aus-38221686.html",
+          "title": "Privat- und Güterbahnen stellen DB-Infrastrukturtochter vernichtendes Urteil aus",
+          "summary": "Privatbahnen, Güterbahnen und der Fahrgastverband ProBahn haben ein vernichtendes Urteil über die Arbeit der seit 2024 offiziell „gemeinwohlorientierten“ Deutsche-Bahn-Tochter DB Infrago gefällt. In einer am Dienstag veröffentlichten Umfrage der Unternehmen des Privatbahnenverbandes mofair, des Verbandes Die Güterbahnen und von ProBahn bewerteten diese die Arbeit mit „ungenügend“. So sagten 100 Prozent der befragten Güterbahnbetreiber, die Leistung der DB Infrago habe sich in den vergangenen Jahren verschlechtert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:04:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "a4a709a759c7f1f7bc6f31dff12d2137390acff2b5e7229ad9eaa54bca70381e",
+          "source_item_id": "89d7ef5a3264a0e6ec9601040515b315e2c424ad37eacf775c4b6e150679aea6",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:04:44.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b2c5f374ae30cf66-claim-01",
+          "story_id": "wt-b2c5f374ae30cf66",
+          "claim": "Privat- und Güterbahnen stellen DB-Infrastrukturtochter vernichtendes Urteil aus: Privatbahnen, Güterbahnen und der Fahrgastverband ProBahn haben ein vernichtendes Urteil über die Arbeit der seit 2024 offiziell „gemeinwohlorientierten“ Deutsche-Bahn-Tochter DB Infrago gefällt. In einer am Dienstag veröffentlichten Umfrage der Unternehmen des Privatbahnenverbandes mofair, des Verbandes Die Güterbahnen und von ProBahn bewerteten diese die Arbeit mit „ungenügend“. So sagten 100 Prozent der befragten Güterbahnbetreiber, die Leistung der DB Infrago habe sich in den vergangenen Jahren verschlechtert.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        }
+      ],
+      "content_hash": "e6a11452349ba154093b257f150bb6240873431bcb46e7d49e731b79f5a18507",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T12:37:00.863Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T12:22:00.863Z",
+      "event_first_seen_at": "2026-09-08T12:22:00.863Z",
+      "event_detected_at": "2026-09-08T12:22:00.863Z",
+      "event_id": "event-b74248a182cc3a288550",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 48,
+        "public_relevance": "hoch",
+        "topics": [
+          "Arbeit",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.28105,
+        "detection_delay_minutes": 17.28105,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:22:00.863Z",
+        "fingerprint": "aafe80fd3d9d38e8671415c776119861122181d55d6e1ab1d26315f6df24951e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T12:22:00.863Z",
+      "rejection": {
+        "at": "2026-09-08T12:22:00.863Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7d3df5b2934b92f7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c047333f201e6f1efd893dc4cebce8c856b7cd5b16b2b4e77649947f5b6e7f6f",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
+      "slug": "markenrecht-eugh-starkt-ikea-gegen-rechte-partei-aus-belgien-4b92f7",
+      "title": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien",
+      "first_seen": "2026-09-08T08:51:13.000Z",
+      "last_updated": "2026-09-08T12:03:55.000Z",
+      "topic": [
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-markenrecht-16029651.html",
+          "title": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien",
+          "summary": "Wofür steht „Ikea“? Eine extrem rechte Partei aus Belgien nutzt die Abkürzung für ein einwanderungskritisches Programm und spielt auch in Grafiken auf das Möbelhaus an. Der Streit geht vor Gericht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:51:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "f36988bd3a8862d702eceb6cb8a08b08a1065e95efa73a5504e6419b4400da72",
+          "source_item_id": "5591475b392e27894ab55bd5ddd761908be838ef13520efba35415d7366170c2",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:51:13.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/wirtschaft/news/markenrecht--eugh-staerkt-ikea-gegen-rechte-partei-aus-belgien-38220254.html",
+          "title": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien",
+          "summary": "Wofür steht „Ikea“? Eine extrem rechte Partei aus Belgien nutzt die Abkürzung für ein einwanderungskritisches Programm und spielt auch in Grafiken auf das Möbelhaus an. Der Streit geht vor Gericht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:03:55.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b2bb80e57a808147c318b42ce3508e0ca9e349ca638b8b00e2bdd71055d9a455",
+          "source_item_id": "a9f4d64f187f805f41e7e953d5fe62d133623d0db122fc89b58f78a2ea09e1ec",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:03:55.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7d3df5b2934b92f7-claim-01",
+          "story_id": "wt-7d3df5b2934b92f7",
+          "claim": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien: Wofür steht „Ikea“? Eine extrem rechte Partei aus Belgien nutzt die Abkürzung für ein einwanderungskritisches Programm und spielt auch in Grafiken auf das Möbelhaus an. Der Streit geht vor Gericht.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        },
+        {
+          "claim_id": "wt-7d3df5b2934b92f7-claim-02",
+          "story_id": "wt-7d3df5b2934b92f7",
+          "claim": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien: Wofür steht „Ikea“? Eine extrem rechte Partei aus Belgien nutzt die Abkürzung für ein einwanderungskritisches Programm und spielt auch in Grafiken auf das Möbelhaus an. Der Streit geht vor Gericht.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        }
+      ],
+      "content_hash": "29b1618238793619f26a0f6a503767dbbba47f8a447f94d6578cc4ddc731e32c",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T12:22:00.863Z",
+      "event_first_seen_at": "2026-09-08T10:07:26.127Z",
+      "event_detected_at": "2026-09-08T10:07:26.127Z",
+      "event_id": "event-79cc6e82b6140bb5a4c7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 48,
+        "public_relevance": "hoch",
+        "topics": [
+          "Europa"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.097716666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 134.57893333333334,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 92,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:22:00.863Z",
+        "fingerprint": "39983d3957347a2442e877697aa15fe3945c1ee69ee29cb4dff81c68e66842aa",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-f2c9ac6049d9d30f",
       "ai_retry": {
@@ -16,7 +1478,7 @@
       "slug": "angriffe-auf-energieversorgung-stromnetz-sabotage-schuster-warnt-vor-motiv-spekulationen-d9d30f",
       "title": "Angriffe auf Energieversorgung: Stromnetz-Sabotage: Schuster warnt vor Motiv-Spekulationen",
       "first_seen": "2026-09-08T12:04:56.000Z",
-      "last_updated": "2026-09-08T12:04:56.000Z",
+      "last_updated": "2026-09-08T12:03:46.000Z",
       "topic": [
         "Energie"
       ],
@@ -45,11 +1507,44 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T12:04:56.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
             "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/angriffe-auf-energieversorgung--stromnetz-sabotage--schuster-warnt-vor-motiv-spekulationen-38221672.html",
+          "title": "Angriffe auf Energieversorgung: Stromnetz-Sabotage: Schuster warnt vor Motiv-Spekulationen",
+          "summary": "Nach tagelanger Fahndung hat die Polizei den 48-Jährigen festgenommen, der hinter den Angriffen auf das Stromnetz stehen soll. Vieles ist laut Sachsens Innenminister aber noch unklar.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:03:46.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4797320abd3ad478163400c63c867c2bdeac82b54e55d75778a067af777226d1",
+          "source_item_id": "029274e5610ff9830767e22c5363755056392f26c4299539e3c923b32390b1a5",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:03:46.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
@@ -74,20 +1569,40 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
+        },
+        {
+          "claim_id": "wt-f2c9ac6049d9d30f-claim-02",
+          "story_id": "wt-f2c9ac6049d9d30f",
+          "claim": "Angriffe auf Energieversorgung: Stromnetz-Sabotage: Schuster warnt vor Motiv-Spekulationen: Nach tagelanger Fahndung hat die Polizei den 48-Jährigen festgenommen, der hinter den Angriffen auf das Stromnetz stehen soll. Vieles ist laut Sachsens Innenminister aber noch unklar.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
-      "content_hash": "8670e3236ea3f7d549d3d22c1ae684206c19d45bceffe021a9df86365a20da76",
+      "content_hash": "c340dd864abc8e3d21a81c081bb8da4b074217b4ac33291ea68d6710006aea4e",
       "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T12:21:46.743Z",
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
       "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-1260cbbf814a922ad95e",
@@ -122,35 +1637,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1.8457166666666667,
+        "source_age_minutes": 17.08105,
         "detection_delay_minutes": 1.8457166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 60,
-        "news_freshness_score": 99,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
-        "fingerprint": "c0fdb0b321d3e77d467347a1cda36eaec5ea70f8da737178b8d6c227c5eac3e9",
+        "checked_at": "2026-09-08T12:22:00.863Z",
+        "fingerprint": "368c9fb01541ea4b15750dc2edcdb7d9ec6848c146a2296702d9fde8b0be165d",
         "issue_codes": [],
         "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T12:06:46.743Z",
-      "rejection": {
-        "at": "2026-09-08T12:06:46.743Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
       }
     },
     {
@@ -170,7 +1673,7 @@
           "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
           "summary": "Der israelische Regierungschef Netanjahu steht wegen eines Berichts unter Druck, wonach er vor dem Hamas-Angriff vom 7. Oktober 2023 gewarnt worden sein soll.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T12:02:16.000Z",
+          "published_at": "2026-09-08T12:09:05.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -186,8 +1689,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T12:02:16.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "source_published_at": "2026-09-08T12:09:05.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -216,7 +1719,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "81943d9e2f52b2bba5dd4f691454f85a5ab05e4d17d6e45de690072dc2a8363a",
@@ -229,7 +1732,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-4115d1c8b7b41d981c8c",
@@ -262,20 +1765,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4.512383333333333,
-        "detection_delay_minutes": 4.512383333333333,
+        "source_age_minutes": 12.93105,
+        "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 97,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "1c016ce296b8780776bdf90957fe93ed37a616025f87cbd995a7b06d9dd069b4",
         "issue_codes": [],
         "warning_codes": []
@@ -316,7 +1819,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:57:24.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -345,7 +1848,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "f97881c07c196e6d214befb919c7e1cae16329ee7a5391eb6f117157af36bbaa",
@@ -358,7 +1861,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-c1db53eddd471e49ec6b",
@@ -404,20 +1907,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9.37905,
+        "source_age_minutes": 24.614383333333333,
         "detection_delay_minutes": 9.37905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
         "issue_codes": [],
         "warning_codes": []
@@ -459,7 +1962,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:56:57.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -488,7 +1991,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "a3b0375c65de5bb7a50e922830a361014127503c38b6d1d2d4bef53afcf436b3",
@@ -501,7 +2004,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-644b31466d3283669859",
@@ -538,20 +2041,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9.82905,
+        "source_age_minutes": 25.064383333333332,
         "detection_delay_minutes": 9.82905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "cf2cc9049d053b254a3b332d318e237bce7b4f2d3c38b9e57ec7e9b72b3971cb",
         "issue_codes": [],
         "warning_codes": []
@@ -1040,7 +2543,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T07:33:04.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1069,7 +2572,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         },
         {
           "claim_id": "wt-16ff0e7d55e0c550-claim-02",
@@ -1089,7 +2592,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "6a8be95865c0d33d9364575bb176fb897f27a142d301d91d2206e738a48373e5",
@@ -1102,7 +2605,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-c2fe2f5102a6d6486b36",
@@ -1139,20 +2642,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 14.27905,
+        "source_age_minutes": 29.514383333333335,
         "detection_delay_minutes": 14.27905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "606c44eeb89d974e91beba2d65d72019068b816935c034844c355a8cf1b6b89c",
         "issue_codes": [],
         "warning_codes": []
@@ -1192,7 +2695,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:47:56.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1221,7 +2724,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "e9123b34fc3c6f622298aa1f183a8189d107027bde8e09cf18025ac319263086",
@@ -1234,7 +2737,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-6bb10c2f566db83d662b",
@@ -1279,20 +2782,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 18.845716666666668,
+        "source_age_minutes": 34.08105,
         "detection_delay_minutes": 18.845716666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "44a9274fe247a74345888f68254b5dbc01eb39823b714a5b7ff676794b1588a7",
         "issue_codes": [],
         "warning_codes": []
@@ -1332,7 +2835,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:47:00.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1361,7 +2864,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "ff5b47feb153227b4c77a174ea3e7bfc839e65fb271613e4b1bf28f02e37ace9",
@@ -1374,7 +2877,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-b5a73afa4741305aea5b",
@@ -1407,173 +2910,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 19.77905,
+        "source_age_minutes": 35.014383333333335,
         "detection_delay_minutes": 19.77905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "e5f52b3f41a5cd90e88625bb20b4e47f04828f1f42537a5b5ec76d09d0aa726a",
         "issue_codes": [],
         "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-376571064350b0b0",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "657307b6a64f921ceae097a23ea3ae5ea3aa4fe01def9444f4019e227f535585",
-        "first_failed_at": "2026-09-08T12:06:46.743Z",
-        "failed_at": "2026-09-08T12:06:46.743Z",
-        "retry_after": "2026-09-08T12:21:46.743Z",
-        "retry_count": 1
-      },
-      "slug": "kritische-infrastruktur-land-will-energienetze-und-hafen-besser-schutzen-50b0b0",
-      "title": "Kritische Infrastruktur: Land will Energienetze und Häfen besser schützen",
-      "first_seen": "2026-09-08T11:45:13.000Z",
-      "last_updated": "2026-09-08T11:45:13.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kritische-infrastruktur--land-will-energienetze-und-haefen-besser-schuetzen-38221586.html",
-          "title": "Kritische Infrastruktur: Land will Energienetze und Häfen besser schützen",
-          "summary": "Schleswig-Holstein setzt auf neue Maßnahmen, um Energienetze und Häfen besser zu schützen. Was das geplante Lagebild und neue Drohnentechnik bewirken sollen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:45:13.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "17a9cf8d56d8688e575b2e4e9ee2f0657b004103469800d4c7f7d4777b74edc8",
-          "source_item_id": "ee8d9032775de7f37ff646765984318d3032a296e5268234d571a85de9e220c6",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T11:45:13.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-376571064350b0b0-claim-01",
-          "story_id": "wt-376571064350b0b0",
-          "claim": "Kritische Infrastruktur: Land will Energienetze und Häfen besser schützen: Schleswig-Holstein setzt auf neue Maßnahmen, um Energienetze und Häfen besser zu schützen. Was das geplante Lagebild und neue Drohnentechnik bewirken sollen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
-        }
-      ],
-      "content_hash": "6d3cc5f761aeb1b24d17d40f70ec1d3c5450299e04de37c7268bb287e493733e",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T12:21:46.743Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
-      "event_first_seen_at": "2026-09-08T12:06:46.743Z",
-      "event_detected_at": "2026-09-08T12:06:46.743Z",
-      "event_id": "event-331b581464e820c98f8a",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 42,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Infrastruktur oder Versorgungskapazität"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 21.562383333333333,
-        "detection_delay_minutes": 21.562383333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
-        "fingerprint": "271922b10bc4c890365df1d19cb1cfe71ae0266e47c7622eb736a557eec7f353",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T12:06:46.743Z",
-      "rejection": {
-        "at": "2026-09-08T12:06:46.743Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
       }
     },
     {
@@ -1639,7 +2992,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "09f6dfd4cd94d0d6dc6adff4ebe002a75b2ba9580a0546232d28c3da3990f4c9",
@@ -1652,7 +3005,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-679148114cd26e0dee49",
@@ -1687,157 +3040,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 28.77905,
+        "source_age_minutes": 44.014383333333335,
         "detection_delay_minutes": 28.77905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "754e932ca7e36482704b55b2932fe7e32e7390d70d70291e260f35e0115f79eb",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-e01e1e77e702edc3",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "afe4bec7362b59182abe117bf944a518e936a5eeb760afe56e6c5073b4d3254e",
-        "first_failed_at": "2026-09-08T11:51:56.994Z",
-        "failed_at": "2026-09-08T11:51:56.994Z",
-        "retry_after": "2026-09-08T12:06:56.994Z",
-        "retry_count": 1
-      },
-      "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
-      "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
-      "first_seen": "2026-09-08T10:41:31.000Z",
-      "last_updated": "2026-09-08T11:35:28.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "wdr-nachrichten",
-          "publisher": "WDR",
-          "url": "https://www1.wdr.de/nrw/mutmasslicher-strom-saboteur-daniel-v-festgenommen-100.html",
-          "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
-          "summary": "Die Polizei hat den Mann festgenommen, der für mehrere Sabotage-Akte am Stromnetz verantwortlich sein soll.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:35:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "7caf685f1ca5d7be69c863b43ead6080ffcef874f02191ed29a582126bcc60e7",
-          "source_item_id": "a8a99495658a8b6e2e62ac0069cb18a31c80138dc48f7b4d3769c8cc8b24207b",
-          "publisher_id": "wdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Nordrhein-Westfalen"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T11:35:28.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-e01e1e77e702edc3-claim-01",
-          "story_id": "wt-e01e1e77e702edc3",
-          "claim": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen: Die Polizei hat den Mann festgenommen, der für mehrere Sabotage-Akte am Stromnetz verantwortlich sein soll.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
-        }
-      ],
-      "content_hash": "fe3ab14711cc93d89f124c9feb097a8464c5eeddc94af2328767b8c22be3bd35",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
-      "event_first_seen_at": "2026-09-08T10:51:42.562Z",
-      "event_detected_at": "2026-09-08T10:51:42.562Z",
-      "event_id": "event-1c240bac9c8b267f5a27",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 31.312383333333333,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 75.06968333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 93,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
-        "fingerprint": "ee1424b0b9aff37b0350780cf570877356e3f91bf80d815e68d8c2187c1d5c0c",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -1906,7 +3123,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "fc48136262064742b7c95efb045ac35e2b0d0ab1f581d6abfb85f296e907c9c9",
@@ -1919,7 +3136,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-079e18fede24e8c4eb7b",
@@ -1955,20 +3172,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 32.66238333333333,
+        "source_age_minutes": 47.89771666666667,
         "detection_delay_minutes": 32.66238333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.235333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "08286f2bd1d57a51fb58e950f40036cfd1385d5ad2fd5083ecb3e6be78ee53b8",
         "issue_codes": [],
         "warning_codes": []
@@ -6842,7 +8059,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6858,7 +8075,7 @@
           "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
           "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T12:02:16.000Z",
+          "published_at": "2026-09-08T12:09:05.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -6874,8 +8091,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T12:02:16.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "source_published_at": "2026-09-08T12:09:05.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6908,7 +8125,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:30:01.000Z",
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6940,7 +8157,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -6960,7 +8177,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-03",
@@ -6981,7 +8198,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "ac67e299a9207a92e280898652b451f93b6fd0967cdcafe058ac7b0bda0d789d",
@@ -6994,7 +8211,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -7027,20 +8244,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4.512383333333333,
+        "source_age_minutes": 12.93105,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.56335,
+        "queue_age_minutes": 44.79868333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 97,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "c436fb700fc6246017dcdb803f26a8941cea9438bc13f28b91e6cddc6e351ac1",
         "issue_codes": [],
         "warning_codes": []
@@ -7088,7 +8305,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T10:49:57.000Z",
-          "ingested_at": "2026-09-08T11:37:12.942Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -7121,22 +8338,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:51:56.994Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "705c706245dde445fa6cc348522a087d7881391fa5e57eca0944f65b9babc14c",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T12:06:56.994Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T11:51:56.994Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T11:07:04.983Z",
       "event_detected_at": "2026-09-08T11:07:04.983Z",
       "event_id": "event-915bb4f3f4b8a5b3a9ea",
@@ -7169,20 +8384,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 61.9999,
+        "source_age_minutes": 92.06438333333334,
         "detection_delay_minutes": 17.13305,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.86685,
+        "queue_age_minutes": 74.93133333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 87,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:51:56.994Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "c7ae3907216fed9c56d43da776c0bdbc4b68e47ca36e4e42409a88e85cc6698f",
         "issue_codes": [],
         "warning_codes": []
@@ -7264,23 +8479,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "d61b57c4eb7c8477990a5d3745f7376dc0742f06f194f41f866c538f4fdb913f",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-08T12:07:12.942Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T11:22:01.370Z",
       "event_detected_at": "2026-09-08T11:22:01.370Z",
       "event_id": "event-11e4bcf6bd775b283b63",
@@ -7323,20 +8535,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 48.732366666666664,
+        "source_age_minutes": 93.53105,
         "detection_delay_minutes": 33.5395,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.192866666666667,
+        "queue_age_minutes": 59.99155,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "a850ac3e70afe5741af18b89a9d62c65269a2962b43ad4d06eda7521b6b9cc5f",
         "issue_codes": [],
         "warning_codes": []
@@ -9423,7 +10635,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T11:56:08.392Z"
+        "retry_after": "2026-09-08T12:39:49.938Z"
       }
     },
     {
@@ -9872,7 +11084,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T11:44:29.156Z"
+        "retry_after": "2026-09-08T12:39:44.741Z"
       }
     },
     {
@@ -10402,7 +11614,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T11:44:24.174Z"
+        "retry_after": "2026-09-08T12:39:39.561Z"
       }
     },
     {
@@ -13430,156 +14642,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-7d3df5b2934b92f7",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "c047333f201e6f1efd893dc4cebce8c856b7cd5b16b2b4e77649947f5b6e7f6f",
-        "first_failed_at": "2026-09-08T10:20:48.403Z",
-        "failed_at": "2026-09-08T10:20:48.403Z",
-        "retry_after": "2026-09-08T10:35:48.403Z",
-        "retry_count": 1
-      },
-      "slug": "markenrecht-eugh-starkt-ikea-gegen-rechte-partei-aus-belgien-4b92f7",
-      "title": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien",
-      "first_seen": "2026-09-08T08:51:13.000Z",
-      "last_updated": "2026-09-08T08:51:13.000Z",
-      "topic": [
-        "Europa"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-markenrecht-16029651.html",
-          "title": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien",
-          "summary": "Wofür steht „Ikea“? Eine extrem rechte Partei aus Belgien nutzt die Abkürzung für ein einwanderungskritisches Programm und spielt auch in Grafiken auf das Möbelhaus an. Der Streit geht vor Gericht.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T08:51:13.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "f36988bd3a8862d702eceb6cb8a08b08a1065e95efa73a5504e6419b4400da72",
-          "source_item_id": "5591475b392e27894ab55bd5ddd761908be838ef13520efba35415d7366170c2",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T08:51:13.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-7d3df5b2934b92f7-claim-01",
-          "story_id": "wt-7d3df5b2934b92f7",
-          "claim": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien: Wofür steht „Ikea“? Eine extrem rechte Partei aus Belgien nutzt die Abkürzung für ein einwanderungskritisches Programm und spielt auch in Grafiken auf das Möbelhaus an. Der Streit geht vor Gericht.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
-        }
-      ],
-      "content_hash": "448cb331d4db87853501893e73e4e99b90a78f6b028030d6088c6d6476506155",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T10:35:48.403Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
-      "event_first_seen_at": "2026-09-08T10:07:26.127Z",
-      "event_detected_at": "2026-09-08T10:07:26.127Z",
-      "event_id": "event-79cc6e82b6140bb5a4c7",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 48,
-        "public_relevance": "hoch",
-        "topics": [
-          "Europa"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 89.59005,
-        "detection_delay_minutes": 76.21878333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 13.371266666666667,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 63,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
-        "fingerprint": "c8d5383227a2dc09288788885d30a8884e3377d00bb105a79e1fd2de805140b8",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T10:20:48.403Z",
-      "rejection": {
-        "at": "2026-09-08T10:20:48.403Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -16952,7 +18014,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -16981,7 +18043,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -16996,7 +18058,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -17037,16 +18099,16 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.3436,
+        "queue_age_minutes": 134.57893333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
-        "freshness_warning": null
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -17087,7 +18149,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -17116,7 +18178,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -17131,7 +18193,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -17171,16 +18233,16 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.3436,
+        "queue_age_minutes": 134.57893333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
-        "freshness_warning": null
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -18443,7 +19505,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T03:01:43.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18464,7 +19526,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -19313,7 +20375,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -20019,7 +21081,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -22152,7 +23214,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -25922,7 +26984,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -29645,7 +30707,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
             "summary": "Kurz nach der Abreise von US-Unterhändlern hat Russland die ukrainische Hauptstadt Kiew erneut mit ballistischen Raketen angegriffen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T12:02:16.000Z",
+            "published_at": "2026-09-08T12:09:05.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -29661,8 +30723,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T12:02:16.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "source_published_at": "2026-09-08T12:09:05.000Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -29683,7 +30745,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -30387,7 +31449,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T04:02:02.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -30408,7 +31470,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -31562,7 +32624,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T10:47:08.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -31583,7 +32645,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "7058d23c9246612a31343345ae582873e03ef1dcd138d22c83c048f96c4900e7",
           "issue_codes": [],
           "warning_codes": []
@@ -32525,7 +33587,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -35498,7 +36560,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -36248,7 +37310,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -37411,7 +38473,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -37836,9 +38898,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T18:06:46.743Z",
+        "expires_at": "2026-09-08T18:22:00.863Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -38420,7 +39482,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T22:53:34.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -38441,7 +39503,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "b6eac9ae04448a841c4dd4b15ba5312652100dd079ff9f977e47c18e0d1ecd2c",
           "issue_codes": [],
           "warning_codes": []
@@ -41358,7 +42420,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -42615,7 +43677,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -43176,7 +44238,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -44685,7 +45747,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -45891,7 +46953,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -47017,7 +48079,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -47038,7 +48100,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -47558,7 +48620,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -48277,7 +49339,7 @@
             "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
             "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T12:02:16.000Z",
+            "published_at": "2026-09-08T12:09:05.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -48293,8 +49355,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T12:02:16.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "source_published_at": "2026-09-08T12:09:05.000Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -48315,7 +49377,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -50772,7 +51834,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -52270,7 +53332,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -53345,7 +54407,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -54875,9 +55937,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T18:06:46.743Z",
+        "expires_at": "2026-09-08T18:22:00.863Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -59553,7 +60615,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -64250,7 +65312,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -70334,7 +71396,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T15:31:00.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -70355,7 +71417,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -78919,7 +79981,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -80171,7 +81233,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "7a2c72da8e35ded18fff805a544609c7dc335a6f3cb4475cdbf05265d0956a32",
           "issue_codes": [],
           "warning_codes": []
@@ -81667,7 +82729,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -84027,7 +85089,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -84768,7 +85830,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -96812,7 +97874,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T12:06:46.743Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -96873,7 +97935,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -96893,7 +97955,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:06:46.743Z"
+          "checked_at": "2026-09-08T12:22:00.863Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -96909,7 +97971,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:06:46.743Z",
+      "updated_at": "2026-09-08T12:22:00.863Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -96949,7 +98011,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1619.8896666666667,
+        "queue_age_minutes": 1635.125,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -96958,7 +98020,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:06:46.743Z",
+        "checked_at": "2026-09-08T12:22:00.863Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -116225,7 +117287,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -117220,7 +118282,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -117921,7 +118983,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -118675,7 +119737,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T12:06:46.743Z",
+            "ingested_at": "2026-09-08T12:22:00.863Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -118696,7 +119758,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -119359,7 +120421,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -123470,7 +124532,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "3a48062f9f17240bc2032436aad30d6f1ece4f3bfb6aa68a85a440c21ebcb6c1",
           "issue_codes": [],
           "warning_codes": []
@@ -124772,7 +125834,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
           "issue_codes": [],
           "warning_codes": []
@@ -128143,7 +129205,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -154030,7 +155092,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -198384,7 +199446,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:06:46.743Z",
+          "checked_at": "2026-09-08T12:22:00.863Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
