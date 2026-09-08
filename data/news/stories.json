@@ -1,22 +1,155 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T14:28:53.099Z",
-  "updated_at": "2026-09-08T15:51:55.265Z",
+  "updated_at": "2026-09-08T16:06:50.416Z",
   "stories": [
+    {
+      "story_id": "wt-d2fe68062d8518b6",
+      "slug": "welt-bericht-details-zur-geplanten-steuer-reform-bei-kryptowerten-wie-dem-bitcoin-werden-8518b6",
+      "title": "\"Welt\"-Bericht - Details zur geplanten Steuer-Reform bei Kryptowerten wie dem Bitcoin werden bekannt",
+      "first_seen": "2026-09-08T16:05:11.000Z",
+      "last_updated": "2026-09-08T16:05:11.000Z",
+      "topic": [
+        "Finanzen",
+        "Wirtschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/details-zur-geplanten-steuer-reform-bei-kryptowerten-wie-dem-bitcoin-werden-bekannt-100.html",
+          "title": "\"Welt\"-Bericht - Details zur geplanten Steuer-Reform bei Kryptowerten wie dem Bitcoin werden bekannt",
+          "summary": "Innerhalb des Bundesfinanzministeriums werden die Pläne für eine Reform der Besteuerung von Gewinnen beim Handel mit Kryptowährungen offenbar konkreter.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T16:05:11.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ea501d443cf882eb5afe8070b7b6cdacf22d7f28649ff3ee318d928cd70d0719",
+          "source_item_id": "577b406beaaafcc00b7b6168d2abbe36ce3169794ad3b14904607a3b887da932",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T16:05:11.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d2fe68062d8518b6-claim-01",
+          "story_id": "wt-d2fe68062d8518b6",
+          "claim": "\"Welt\"-Bericht - Details zur geplanten Steuer-Reform bei Kryptowerten wie dem Bitcoin werden bekannt: Innerhalb des Bundesfinanzministeriums werden die Pläne für eine Reform der Besteuerung von Gewinnen beim Handel mit Kryptowährungen offenbar konkreter.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "ef98371c459f10cb23278d2ce271f29f7c42166e85924a90ea1678f09c7d015e",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-e2a700c984102b85c7b8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Finanzen",
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 1.6569333333333334,
+        "detection_delay_minutes": 1.6569333333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 100,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "46b06f5129ab11dcdcbcead79a419746c9745bf047a31c3da192fa34a025dc76",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-55396a7301aa0e36",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "5a704ef39928d62d1b09317fe0006f88f4774c1ef31217233a9adff424953662",
-        "first_failed_at": "2026-09-08T15:37:18.894Z",
-        "failed_at": "2026-09-08T15:37:18.894Z",
-        "retry_after": "2026-09-08T15:52:18.894Z",
+        "fingerprint": "55bc3e0f2b517f8e3d9cf3082dcf59687129c3b05e15a85ad15ad351edc369dc",
+        "first_failed_at": "2026-09-08T16:06:50.416Z",
+        "failed_at": "2026-09-08T16:06:50.416Z",
+        "retry_after": "2026-09-08T16:21:50.416Z",
         "retry_count": 1
       },
       "slug": "nahostkonflikt-berichte-london-sanktioniert-siedlungen-im-westjordanland-aa0e36",
       "title": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland",
       "first_seen": "2026-09-08T07:51:01.000Z",
-      "last_updated": "2026-09-08T15:30:04.000Z",
+      "last_updated": "2026-09-08T15:57:53.000Z",
       "topic": [
         "Arbeit",
         "Geopolitik",
@@ -29,13 +162,13 @@
           "publisher": "Der Tagesspiegel",
           "url": "https://www.tagesspiegel.de/internationales/dpa-nahostkonflikt-16029366.html",
           "title": "Nahostkonflikt: London sanktioniert Siedlungen im Westjordanland",
-          "summary": "Die britische Labour-Regierung unter Premier Andy Burnham schlägt einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
+          "summary": "Die britische Labour-Regierung unter Premier Andy Burnham schlägt einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel gibt es scharfe Kritik - und Gegenmaßnahmen.",
           "source_type": "media_rss",
           "published_at": "2026-09-08T07:51:01.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "6fe9264d1b740b4f98d5a44257a97b22efd851071b40f3e921c418c7d4f611b5",
+          "content_hash": "37e044e01829f758d8dbfee04d1ab287411280586a9d254d22e8e2ea7f036d4e",
           "source_item_id": "cae612173c183c528be6b1ae4c32916169cbd7d758e70e2c0a80487e4cfcf608",
           "publisher_id": "tagesspiegel",
           "publisher_kind": "journalism",
@@ -48,7 +181,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T07:51:01.000Z",
-          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -95,13 +228,13 @@
           "publisher": "tagesschau / ARD",
           "url": "https://www.tagesschau.de/ausland/europa/grossbritannien-siedler-westjordanland-100.html",
           "title": "Großbritannien sanktioniert Siedlungen im Westjordanland",
-          "summary": "Großbritannien kündigt Sanktionen gegen den Import von Waren aus völkerrechtswidrigen israelischen Siedlungen im Westjordanland an. Damit soll die Möglichkeit einer Zweistaatenlös…",
+          "summary": "Großbritannien kündigt Sanktionen gegen den Import von Waren aus völkerrechtswidrigen israelischen Siedlungen im Westjordanland an. Aus Israel kommt Kritik - so soll unter anderem…",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T15:30:04.000Z",
+          "published_at": "2026-09-08T15:45:01.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "6682c34504bd3cad550fab99c847245b31797ea84d92ff32b14713ab23fd285b",
+          "content_hash": "f5a3eaa81a2e540a62c544921a77966fd8996bcb0ca1b47b791cd246c3453023",
           "source_item_id": "cb331fbb5fd9e06f5ce90fc3dca55b6632b63ad8e53a774d89df41f25ad88698",
           "publisher_id": "tagesschau",
           "publisher_kind": "public_broadcasting",
@@ -113,8 +246,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T15:30:04.000Z",
-          "ingested_at": "2026-09-08T15:37:18.894Z",
+          "source_published_at": "2026-09-08T15:45:01.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -125,13 +258,46 @@
           },
           "collection_source_id": "swr-aktuell",
           "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/nahostkonflikt--london-sanktioniert-siedlungen-im-westjordanland-38219736.html",
+          "title": "Nahostkonflikt: London sanktioniert Siedlungen im Westjordanland",
+          "summary": "Die britische Labour-Regierung unter Premier Andy Burnham schlägt einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel gibt es scharfe Kritik - und Gegenmaßnahmen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:57:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "d0b1afbc935f14da81719a30634bdbfbb27fb505ffdbfaf79f852cddd3a4dd6e",
+          "source_item_id": "b5f252db725f2dc16b08f7487cf50af84c3f2645293a3b863a727e2b09689155",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:57:53.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
         {
           "claim_id": "wt-55396a7301aa0e36-claim-01",
           "story_id": "wt-55396a7301aa0e36",
-          "claim": "Nahostkonflikt: London sanktioniert Siedlungen im Westjordanland: Die britische Labour-Regierung unter Premier Andy Burnham schlägt einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
+          "claim": "Nahostkonflikt: London sanktioniert Siedlungen im Westjordanland: Die britische Labour-Regierung unter Premier Andy Burnham schlägt einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel gibt es scharfe Kritik - und Gegenmaßnahmen.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesspiegel-home",
           "source_function": "journalistic_report",
@@ -146,7 +312,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:37:18.894Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         },
         {
           "claim_id": "wt-55396a7301aa0e36-claim-02",
@@ -166,12 +332,12 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:37:18.894Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         },
         {
           "claim_id": "wt-55396a7301aa0e36-claim-03",
           "story_id": "wt-55396a7301aa0e36",
-          "claim": "Großbritannien sanktioniert Siedlungen im Westjordanland: Großbritannien kündigt Sanktionen gegen den Import von Waren aus völkerrechtswidrigen israelischen Siedlungen im Westjordanland an. Damit soll die Möglichkeit einer Zweistaatenlös…",
+          "claim": "Großbritannien sanktioniert Siedlungen im Westjordanland: Großbritannien kündigt Sanktionen gegen den Import von Waren aus völkerrechtswidrigen israelischen Siedlungen im Westjordanland an. Aus Israel kommt Kritik - so soll unter anderem…",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesschau-access",
           "source_function": "journalistic_report",
@@ -187,27 +353,45 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:37:18.894Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        },
+        {
+          "claim_id": "wt-55396a7301aa0e36-claim-04",
+          "story_id": "wt-55396a7301aa0e36",
+          "claim": "Nahostkonflikt: London sanktioniert Siedlungen im Westjordanland: Die britische Labour-Regierung unter Premier Andy Burnham schlägt einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel gibt es scharfe Kritik - und Gegenmaßnahmen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
-      "content_hash": "029d77ec8ac3fe1e6ec62a8813480a27d7eb277775863836b0e17a08a7fb83de",
+      "content_hash": "6979f2f03aafb80d2d6aae79bdd4f6690fa0229b8d6635a914f7db04b74ad373",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
         "AI_DIRECTION_PATH_SOURCE_INVALID:human",
         "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
         "AI_DIRECTION_PATH_SOURCE_INVALID:democracy",
-        "AI_SOURCE_SUMMARY_LENGTH",
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
-        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        "AI_SOURCE_SUMMARY_LENGTH"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T15:52:18.894Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T16:21:50.416Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T15:37:18.894Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-08T08:06:49.615Z",
       "event_detected_at": "2026-09-08T08:06:49.615Z",
       "event_id": "event-986b65b56d8c9beac934",
@@ -248,11 +432,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7.248233333333333,
+        "source_age_minutes": 8.956933333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 450.4879833333333,
+        "queue_age_minutes": 480.01335,
         "target_publication_minutes": 120,
         "news_freshness_score": 98,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -261,8 +445,1349 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:37:18.894Z",
-        "fingerprint": "d8d5c0f1365f03b004e8af3f4e2438c39c6a39ff4c346ed964afab72d18fa2cd",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "7186339bf21f0d35588cbdef1d532799dccbd845cec5dcf9804ca0bbe6e28637",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-dc2a1dc727ed2b66",
+      "slug": "berliner-gesetze-werden-jugendcheck-unterzogen-ed2b66",
+      "title": "Berliner Gesetze werden \"Jugendcheck\" unterzogen",
+      "first_seen": "2026-09-08T15:52:01.000Z",
+      "last_updated": "2026-09-08T15:52:01.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-jugendcheck-gesetze-generationsgerechtere-politik.html",
+          "title": "Berliner Gesetze werden \"Jugendcheck\" unterzogen",
+          "summary": "",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:52:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "74e5c3223ae6e14ae1e4c8062be5af8b39e769f26dccbb6d2691c8e35f9461c0",
+          "source_item_id": "b4c258bb3b76ec1cd396dd5b2d33ba65ac4f447ef2b3912509d886cf05618f2b",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:52:01.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-dc2a1dc727ed2b66-claim-01",
+          "story_id": "wt-dc2a1dc727ed2b66",
+          "claim": "Berliner Gesetze werden \"Jugendcheck\" unterzogen",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "rbb24-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "nur Titel und Metadaten",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Feed enthält keinen Kurztext.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "be3784446b256e394bbdb2be3cc2fa1fe78353555bd570f4ddf49f4178f27d17",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-5ba297268ddffd901500",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.8236,
+        "detection_delay_minutes": 14.8236,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-dba7f21bb3e67296",
+      "slug": "dortmunder-schule-mit-ballon-ins-all-gegen-pisa-trend-e67296",
+      "title": "Dortmunder Schule: Mit Ballon ins All gegen Pisa-Trend",
+      "first_seen": "2026-09-08T15:51:09.000Z",
+      "last_updated": "2026-09-08T15:51:09.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/ruhrgebiet/europaschule-dortmund-stratosphaerenflug-pisa-studie-100.html",
+          "title": "Dortmunder Schule: Mit Ballon ins All gegen Pisa-Trend",
+          "summary": "Naturwissenschaften in der Pisa-Krise? Ein Stratosphärenflug soll Dortmunder Schüler für Forschung begeistern.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:51:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5958fdc46758679ce4157833a512cef1f7fe5d37089b3fb83655536414850c16",
+          "source_item_id": "e032864f7f266c804d9f19be0e9e40f888f68a603242ae605ebb66f8ef58bca7",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:51:09.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-dba7f21bb3e67296-claim-01",
+          "story_id": "wt-dba7f21bb3e67296",
+          "claim": "Dortmunder Schule: Mit Ballon ins All gegen Pisa-Trend: Naturwissenschaften in der Pisa-Krise? Ein Stratosphärenflug soll Dortmunder Schüler für Forschung begeistern.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "595f540032fac7285be260099d82240f70c975bbc2aa4964010fc6989ab16e59",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-6d8026012b395d8d66c9",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.690266666666666,
+        "detection_delay_minutes": 15.690266666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "c8f660af75e18cf3d5387cf5a36ccffc0c40a90e672237afef20104d52d50591",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-0fb6fe60049ce82c",
+      "slug": "unterschiedliche-auffassungen-zum-dungegesetz-9ce82c",
+      "title": "Unterschiedliche Auffassungen zum Düngegesetz",
+      "first_seen": "2026-09-08T15:50:00.000Z",
+      "last_updated": "2026-09-08T15:50:00.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-hib",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210980",
+          "title": "Unterschiedliche Auffassungen zum Düngegesetz",
+          "summary": "Landwirtschaft, Ernährung und Heimat/Anhörung Die geplante Änderung des Düngegesetzes ist von den Sachverständigen in einer Anhörung des Landwirtschaftsausschusses am Dienstag unterschiedlich beurteilt worden.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T15:50:00.000Z",
+          "primary_source": true,
+          "source_priority": 96,
+          "source_topic": "Politik",
+          "content_hash": "3e776c07c9476831f0640688dd8a3508124385387f02fe916a892deb98b9dd87",
+          "source_item_id": "d5ed00e5daaa802c9a30cd6dc4ad9358eafc76227327dfb0dcac850d60928bfe",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:50:00.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0fb6fe60049ce82c-claim-01",
+          "story_id": "wt-0fb6fe60049ce82c",
+          "claim": "Unterschiedliche Auffassungen zum Düngegesetz: Landwirtschaft, Ernährung und Heimat/Anhörung Die geplante Änderung des Düngegesetzes ist von den Sachverständigen in einer Anhörung des Landwirtschaftsausschusses am Dienstag unterschiedlich beurteilt worden.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "bundestag-hib",
+          "source_function": "institutional_statement",
+          "status": "primary_source_claim",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "0ec1685475244be76f48fd7ac224b9069642818516a36a7e08abc7400cae8952",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-d370915b5e0ec50d8a43",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.84026666666667,
+        "detection_delay_minutes": 16.84026666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-04abae040ea1a306",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ae178dd9690c6a8da9e072c128cea6aa2914f69ebbb428706a7f43d14cbafa05",
+        "first_failed_at": "2026-09-08T16:06:50.416Z",
+        "failed_at": "2026-09-08T16:06:50.416Z",
+        "retry_after": "2026-09-08T16:21:50.416Z",
+        "retry_count": 1
+      },
+      "slug": "tank-wucher-wer-verdient-an-den-absurden-spritpreisen-im-september-2026-a1a306",
+      "title": "Tank-Wucher: Wer verdient an den absurden Spritpreisen im September 2026?",
+      "first_seen": "2026-09-06T07:36:00.000Z",
+      "last_updated": "2026-09-08T15:46:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/auto/spritpreise-im-september-2026--wer-verdient-am-absurd-teuren-treibstoff-38207398.html",
+          "title": "Tank-Wucher: Wer verdient an den absurden Spritpreisen im September 2026?",
+          "summary": "Der Spritpreis für Super schnellt in die Höhe, der für Diesel schwankt. Was sind die Gründe dafür? Ist es wirklich der Krieg im Nahen Osten? Der ADAC sagt: Nein.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:36:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "dd1a6b9830d642242f66203e8563872657d3b075ec528d849e02ac8f046e5a48",
+          "source_item_id": "43b9eef446a7b79507cbd39f2fef8f80829882a4a087c9a5406cc90e4283f7e6",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:36:00.000Z",
+          "ingested_at": "2026-09-06T07:51:40.901Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/auto/hohe-spritpreise-im-september-2026--wer-verdient-am-teuren-treibstoff--38207398.html",
+          "title": "Tank-Wucher: Wer verdient an den absurden Spritpreisen im September 2026?",
+          "summary": "Der Spritpreis für Super schnellt in die Höhe, der für Diesel schwankt. Was sind die Gründe dafür? Ist es wirklich der Krieg im Nahen Osten? Der ADAC sagt: Nein.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:46:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "22f3a2c97912592368e8fc7df33304eee8e269c656105c22095812d427afd5a3",
+          "source_item_id": "6af136942873b6934d4ad83771fc296236b84a630b19c5a82e63e2447fd3309e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:46:00.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-04abae040ea1a306-claim-01",
+          "story_id": "wt-04abae040ea1a306",
+          "claim": "Tank-Wucher: Wer verdient an den absurden Spritpreisen im September 2026?: Der Spritpreis für Super schnellt in die Höhe, der für Diesel schwankt. Was sind die Gründe dafür? Ist es wirklich der Krieg im Nahen Osten? Der ADAC sagt: Nein.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        },
+        {
+          "claim_id": "wt-04abae040ea1a306-claim-02",
+          "story_id": "wt-04abae040ea1a306",
+          "claim": "Tank-Wucher: Wer verdient an den absurden Spritpreisen im September 2026?: Der Spritpreis für Super schnellt in die Höhe, der für Diesel schwankt. Was sind die Gründe dafür? Ist es wirklich der Krieg im Nahen Osten? Der ADAC sagt: Nein.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "d45be45bc6edc69d4abe57f1cd799e271de8b7604572850b44c91c9613eeb50c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T16:21:50.416Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-06T07:51:40.901Z",
+      "event_detected_at": "2026-09-06T07:51:40.901Z",
+      "event_id": "event-4baf277e637cedc59dcf",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.84026666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 3375.1585833333334,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "e568339f683204e4082031ccb258eeaf4a6c688f91f2f5f09c36c700e9bbf9c0",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T16:06:50.416Z",
+      "rejection": {
+        "at": "2026-09-08T16:06:50.416Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-ee6173fc58ca7eca",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "cccc3daa4cf2ab3e01148b6b5d4f3f4ab09b5632e316d56845d65c8f51929d7a",
+        "first_failed_at": "2026-09-08T16:06:50.416Z",
+        "failed_at": "2026-09-08T16:06:50.416Z",
+        "retry_after": "2026-09-08T16:21:50.416Z",
+        "retry_count": 1
+      },
+      "slug": "klingbeils-rekord-schulden-und-schwache-schuler-ca7eca",
+      "title": "Klingbeils Rekord-Schulden und schwache Schüler",
+      "first_seen": "2026-09-08T15:46:00.000Z",
+      "last_updated": "2026-09-08T15:46:00.000Z",
+      "topic": [
+        "Finanzen",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+          "title": "Klingbeils Rekord-Schulden und schwache Schüler",
+          "summary": "Klingbeils Haushalt mit Rekord-Schulden, Pisa-Debakel für Deutschlands Schulen und Spekulationen um die Regierungsbildung in Sachsen-Anhalt - der Tag kompakt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:46:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ebeebacd9a315cdc1e46a7e33aab06e2d5b33c737f2d864ab163fa54293064b9",
+          "source_item_id": "6579f1f376b58ef8ead9d11db6e66fc9bdb69b801dc9d3b251201ec47cc7eca7",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:46:00.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ee6173fc58ca7eca-claim-01",
+          "story_id": "wt-ee6173fc58ca7eca",
+          "claim": "Klingbeils Rekord-Schulden und schwache Schüler: Klingbeils Haushalt mit Rekord-Schulden, Pisa-Debakel für Deutschlands Schulen und Spekulationen um die Regierungsbildung in Sachsen-Anhalt - der Tag kompakt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "f48603825bbe70e13fb9bb98d782bcd1a7dc1fdc8c40f7625777cfad0b5bc355",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_DIRECTION_PATH_SOURCE_INVALID:human",
+        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
+        "AI_DIRECTION_PATH_SOURCE_INVALID:democracy"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T16:21:50.416Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-5f3c52a0a4b117744739",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Finanzen",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "new_evidence"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.84026666666667,
+        "detection_delay_minutes": 20.84026666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "13107cad130cee66a7554cbf6765ac0d0630a5fb4b2c1bc76431d28e9d666293",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-3707b0d66087698b",
+      "slug": "zwolf-lander-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-87698b",
+      "title": "Zwölf Länder wollen Handel mit Israels Siedlungen im Westjordanland sanktionieren",
+      "first_seen": "2026-09-08T15:45:32.000Z",
+      "last_updated": "2026-09-08T15:45:32.000Z",
+      "topic": [
+        "Europa",
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/zwoelf-laender-wollen-handel-mit-israels-siedlungen-im-westjordanland-sanktionieren-38222080.html",
+          "title": "Zwölf Länder wollen Handel mit Israels Siedlungen im Westjordanland sanktionieren",
+          "summary": "Angesichts der wachsenden Gewalt israelischer Siedler im Westjordanland sowie wegen der Ausweitung der Siedlungen wollen zwölf Staaten, darunter Großbritannien, mehrere EU-Länder und Kanada, den Handel mit Produkten aus den israelischen Siedlungen im Westjordanland sanktionieren. Israel verurteilte das am Dienstag bekannt gegebene Vorhaben und ordnete die Schließung des britischen Konsulats in Jerusalem an. Die israelische Justiz wies derweil einen Eilantrag gegen das umstrittene Siedlungsprojekt E1 im Westjordanland zurück.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:45:32.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "b19c884df932824b64cab51680044e2ec8788b1fd89bebe06a451cfbb0ff835e",
+          "source_item_id": "ca44637fd2df823a1876e5da08791ff0bb3afd06a33e743910494c66a13bb11f",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:45:32.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/zwoelf-laender-sanktionieren-handel-mit-israelischen-siedlungen-in-besetzten-palaestinensergebieten-102.html",
+          "title": "Westjordanland - Zwölf Länder sanktionieren Handel mit israelischen Siedlungen in besetzten Palästinensergebieten",
+          "summary": "Zwölf Länder wollen den Handel mit israelischen Siedlungen im Westjordanland sanktionieren.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T16:05:11.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "73c3d7ef2b25d1dd800dca6319cf8920688657c1d182e09778a5a645a89516a8",
+          "source_item_id": "122594a83f5478a390c65d3ab01da7f566464522290d911e744f8cd7b47a6677",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T16:05:11.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3707b0d66087698b-claim-01",
+          "story_id": "wt-3707b0d66087698b",
+          "claim": "Zwölf Länder wollen Handel mit Israels Siedlungen im Westjordanland sanktionieren: Angesichts der wachsenden Gewalt israelischer Siedler im Westjordanland sowie wegen der Ausweitung der Siedlungen wollen zwölf Staaten, darunter Großbritannien, mehrere EU-Länder und Kanada, den Handel mit Produkten aus den israelischen Siedlungen im Westjordanland sanktionieren. Israel verurteilte das am Dienstag bekannt gegebene Vorhaben und ordnete die Schließung des britischen Konsulats in Jerusalem an. Die israelische Justiz wies derweil einen Eilantrag gegen das umstrittene Siedlungsprojekt E1 im Westjordanland zurück.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        },
+        {
+          "claim_id": "wt-3707b0d66087698b-claim-02",
+          "story_id": "wt-3707b0d66087698b",
+          "claim": "Westjordanland - Zwölf Länder sanktionieren Handel mit israelischen Siedlungen in besetzten Palästinensergebieten: Zwölf Länder wollen den Handel mit israelischen Siedlungen im Westjordanland sanktionieren.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "9570308a7e7cf21d4ab799888a81f5a715daf2d44ba5ba65c08883eb69fc2a42",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-a5922a6b009747149c00",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa",
+          "Geopolitik",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 1.6569333333333334,
+        "detection_delay_minutes": 1.6569333333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 100,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-b16e45d7756f3a67",
+      "slug": "kommunen-magdeburg-muss-weiter-sparen-und-erhoht-kita-beitrage-stark-6f3a67",
+      "title": "Kommunen: Magdeburg muss weiter sparen und erhöht Kita-Beiträge stark",
+      "first_seen": "2026-09-08T15:44:35.000Z",
+      "last_updated": "2026-09-08T15:44:35.000Z",
+      "topic": [
+        "Soziales",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/kommunen--magdeburg-muss-weiter-sparen-und-erhoeht-kita-beitraege-stark-38223088.html",
+          "title": "Kommunen: Magdeburg muss weiter sparen und erhöht Kita-Beiträge stark",
+          "summary": "Die Landeshauptstadt ist finanziell am Limit. Sie kann keinen ausgeglichenen Haushalt aufstellen für 2027. Das hat Folgen für Familien, Autofahrer und die Verwaltung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:44:35.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "02f0a3de1b0d3427556ee73a7ebb790fd4f0d51dadb96109c716a442d1e6e391",
+          "source_item_id": "1144a9ea95e3e57010b8bb2318c2f8f7adf10f8de3d127418c37ce2bf013f6d0",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:44:35.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b16e45d7756f3a67-claim-01",
+          "story_id": "wt-b16e45d7756f3a67",
+          "claim": "Kommunen: Magdeburg muss weiter sparen und erhöht Kita-Beiträge stark: Die Landeshauptstadt ist finanziell am Limit. Sie kann keinen ausgeglichenen Haushalt aufstellen für 2027. Das hat Folgen für Familien, Autofahrer und die Verwaltung.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "9dff0bba54815a39b37bdc9d81ba4d08001e483b24fe965799fe17c8c93eb2ba",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-7d31d1b1d229abac6259",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Finanzen"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.256933333333333,
+        "detection_delay_minutes": 22.256933333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "1f5ecae4b99683bae69202e62adc0fb8fe0311b06f3afddabf5714849e504dc6",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-cae0a24bfeb64412",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ec836e3bfa8a829075638ecc38fb40d2e4dcecd352266ebf8108133e0b9164b2",
+        "first_failed_at": "2026-09-08T16:06:50.416Z",
+        "failed_at": "2026-09-08T16:06:50.416Z",
+        "retry_after": "2026-09-08T16:21:50.416Z",
+        "retry_count": 1
+      },
+      "slug": "angriffe-auf-energieversorgung-sachsens-regierung-plant-besseren-schutz-fur-stromnetze-b64412",
+      "title": "Angriffe auf Energieversorgung: Sachsens Regierung plant besseren Schutz für Stromnetze",
+      "first_seen": "2026-09-08T15:42:32.000Z",
+      "last_updated": "2026-09-08T15:42:32.000Z",
+      "topic": [
+        "Energie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/sachsen/angriffe-auf-energieversorgung--sachsens-regierung-plant-besseren-schutz-fuer-stromnetze-38222414.html",
+          "title": "Angriffe auf Energieversorgung: Sachsens Regierung plant besseren Schutz für Stromnetze",
+          "summary": "Sachsens Regierung will mit einem neuen Gremium auf Sabotage-Angriffe reagieren und den Schutz kritischer Infrastruktur stärken. Was dabei geplant ist.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:42:32.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "815a5304ec0b093412b22b84e8cf56beb5d30162114af2b530a5ad82bb33f342",
+          "source_item_id": "6015e31a531c89e6e80730c001c48a1443f665e7e585cd1962ad8c91a74c283e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:42:32.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-cae0a24bfeb64412-claim-01",
+          "story_id": "wt-cae0a24bfeb64412",
+          "claim": "Angriffe auf Energieversorgung: Sachsens Regierung plant besseren Schutz für Stromnetze: Sachsens Regierung will mit einem neuen Gremium auf Sabotage-Angriffe reagieren und den Schutz kritischer Infrastruktur stärken. Was dabei geplant ist.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "e7d70122556c9e5d25f4668fd982bac1068a0eff49d01fa9bdab2a24ba750a7f",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T16:21:50.416Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-140716de0ee1c5e98f86",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 66,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.306933333333333,
+        "detection_delay_minutes": 24.306933333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 90,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "16143719eb8d0b3383eb848b636335ce7df23346521bcc435972d3e8d75af3d7",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T16:06:50.416Z",
+      "rejection": {
+        "at": "2026-09-08T16:06:50.416Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-4da4b09830c09b15",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "264e8dab47f04e0b1e99aaa748e082a9baf6c52632ca40f3542d5cb32af225dd",
+        "first_failed_at": "2026-09-08T16:06:50.416Z",
+        "failed_at": "2026-09-08T16:06:50.416Z",
+        "retry_after": "2026-09-08T16:21:50.416Z",
+        "retry_count": 1
+      },
+      "slug": "insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fur-sanofi-c09b15",
+      "title": "Insulin aus Frankfurt: EU genehmigt 400 Millionen Euro für Sanofi",
+      "first_seen": "2026-09-08T15:37:22.000Z",
+      "last_updated": "2026-09-08T15:37:22.000Z",
+      "topic": [
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/wirtschaft/insulin-aus-frankfurt-eu-genehmigt-400-millionen-euro-fuer-sanofi-v1,sanofi-insulin-frankfurt-102.html",
+          "title": "Insulin aus Frankfurt: EU genehmigt 400 Millionen Euro für Sanofi",
+          "summary": "Der Pharmakonzern Sanofi will in Frankfurt-Höchst ein neues Insulinwerk bauen. Die EU-Kommission gab jetzt grünes Licht für die dafür eingeplanten staatlichen Fördergelder.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:37:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c531531fbb3b048f76f4780dd252dad7cc22d73c25bc7d14c5ddd613e8d92bda",
+          "source_item_id": "76c99687fe93ce2745c7af12945f94b7378be04f356d431ae9e354b71ae10e13",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:37:22.000Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4da4b09830c09b15-claim-01",
+          "story_id": "wt-4da4b09830c09b15",
+          "claim": "Insulin aus Frankfurt: EU genehmigt 400 Millionen Euro für Sanofi: Der Pharmakonzern Sanofi will in Frankfurt-Höchst ein neues Insulinwerk bauen. Die EU-Kommission gab jetzt grünes Licht für die dafür eingeplanten staatlichen Fördergelder.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "hr-hessenschau",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T16:06:50.416Z"
+        }
+      ],
+      "content_hash": "4d8cddc1cdc09479ed36997589a427f661833d829d57ca49d66b3a1d5f71de53",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_DIRECTION_PATH_SOURCE_INVALID:human",
+        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
+        "AI_DIRECTION_PATH_SOURCE_INVALID:democracy"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T16:21:50.416Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T16:06:50.416Z",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "event_id": "event-d733eb8b40e9e5032787",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 29.4736,
+        "detection_delay_minutes": 29.4736,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T16:06:50.416Z",
+        "fingerprint": "0e63a4de2d3808fb0a7038382c487171672091885e94aa28e01ad3ddaac453c4",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -1686,9 +3211,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "9432f22398166fd5ff115f3fd480a23cf27b63ba547284122f169256267f0632",
         "first_failed_at": "2026-09-08T14:52:22.706Z",
-        "failed_at": "2026-09-08T15:21:51.449Z",
-        "retry_after": "2026-09-08T15:51:51.449Z",
-        "retry_count": 2
+        "failed_at": "2026-09-08T16:06:50.416Z",
+        "retry_after": "2026-09-08T17:06:50.416Z",
+        "retry_count": 3
       },
       "slug": "hackerangriff-in-berlin-anlaufstelle-fur-burger-und-firmen-geplant-54e82b",
       "title": "Hackerangriff in Berlin: Anlaufstelle für Bürger und Firmen geplant",
@@ -1722,7 +3247,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T14:37:42.000Z",
-          "ingested_at": "2026-09-08T15:21:51.449Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1751,20 +3276,25 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:51:55.265Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
       "content_hash": "bf36d0e52a041563fd6ea4080293b7349719faa53e6e2da44ae2c04b203bc8a7",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 2,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_DIRECTION_PATH_SOURCE_INVALID:human",
+        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
+        "AI_DIRECTION_PATH_SOURCE_INVALID:democracy",
+        "MEDIA_IMPACT_REQUIRED"
+      ],
+      "quality_retry_count": 3,
+      "quality_retry_after": "2026-09-08T17:06:50.416Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T15:51:55.265Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-08T14:52:22.706Z",
       "event_detected_at": "2026-09-08T14:52:22.706Z",
       "event_id": "event-b4bdb0e02259462f4622",
@@ -1797,20 +3327,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 74.22108333333334,
+        "source_age_minutes": 89.14026666666666,
         "detection_delay_minutes": 14.678433333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.54265,
+        "queue_age_minutes": 74.46183333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 85,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "fingerprint": "8dc1fc67b4d6b2ce603c3c5a8305a9c0bb659e39149c405430a72181bf44e900",
         "issue_codes": [],
         "warning_codes": []
@@ -2401,7 +3931,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T14:47:30.225Z"
+        "retry_after": "2026-09-08T16:27:14.298Z"
       }
     },
     {
@@ -3154,9 +4684,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "18ced420cf20aaa3a4218323fd65dfbd197ef7f1a06401014942bb987a9078d6",
         "first_failed_at": "2026-09-08T15:37:18.894Z",
-        "failed_at": "2026-09-08T15:37:18.894Z",
-        "retry_after": "2026-09-08T15:52:18.894Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T16:06:50.416Z",
+        "retry_after": "2026-09-08T16:36:50.416Z",
+        "retry_count": 2
       },
       "slug": "newsblog-zur-landtagswahl-in-sachsen-anhalt-wachsender-zuspruch-fur-bsw-vorschlag-zu-una-2ae801",
       "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Wachsender Zuspruch für BSW-Vorschlag zu unabhängigem Ministerpräsidenten",
@@ -3219,7 +4749,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:37:18.894Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
       "content_hash": "e5fca94823cc375c4cc02316a316b768fc3ca06aea9fbc8b250325e774439d60",
@@ -3229,15 +4759,15 @@
         "AI_DIRECTION_PATH_SOURCE_INVALID:human",
         "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
         "AI_DIRECTION_PATH_SOURCE_INVALID:democracy",
-        "MEDIA_IMPACT_REQUIRED"
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
       ],
-      "quality_retry_count": 4,
-      "quality_retry_after": "2026-09-08T15:52:18.894Z",
+      "quality_retry_count": 5,
+      "quality_retry_after": "2026-09-08T16:36:50.416Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T15:37:18.894Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-08T14:28:53.099Z",
       "event_detected_at": "2026-09-08T14:28:53.099Z",
       "event_id": "event-554c6def31137222cd39",
@@ -3280,20 +4810,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 12.8149,
+        "source_age_minutes": 42.340266666666665,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 68.42991666666667,
+        "queue_age_minutes": 97.95528333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:37:18.894Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
         "issue_codes": [],
         "warning_codes": []
@@ -4634,7 +6164,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T14:03:44.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -4644,7 +6174,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -4655,7 +6185,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -5995,7 +7525,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T12:12:00.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6005,7 +7535,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -6016,7 +7546,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -6714,7 +8244,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:18:16.000Z",
-            "ingested_at": "2026-09-08T14:52:22.706Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6724,7 +8254,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -6735,7 +8265,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
           "issue_codes": [],
           "warning_codes": []
@@ -8015,7 +9545,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:02:50.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -8025,7 +9555,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -8036,7 +9566,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "d4b8c47f1b5a6ae4b9e8838edd34c8da0189c7f592bf1dd36369dd436d41ddf2",
           "issue_codes": [],
           "warning_codes": []
@@ -8282,7 +9812,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T15:23:00.000Z",
-          "ingested_at": "2026-09-08T15:37:18.894Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -8315,7 +9845,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:07:00.000Z",
-          "ingested_at": "2026-09-08T15:37:18.894Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -8344,7 +9874,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:37:18.894Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         },
         {
           "claim_id": "wt-89cc270ef6bc139d-claim-02",
@@ -8364,25 +9894,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:37:18.894Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
       "content_hash": "6d3f2fd3bd78738a7ffd7700a7bdcc4823786483d0c21534e51897e734d47f69",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_DIRECTION_PATH_SOURCE_INVALID:human",
-        "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
-        "AI_DIRECTION_PATH_SOURCE_INVALID:democracy",
-        "MEDIA_IMPACT_REQUIRED"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-08T15:52:18.894Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T15:37:18.894Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-08T13:51:47.903Z",
       "event_detected_at": "2026-09-08T13:51:47.903Z",
       "event_id": "event-626e50ed9dab5a3077bc",
@@ -8415,20 +9940,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 14.3149,
+        "source_age_minutes": 43.840266666666665,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 105.51651666666666,
+        "queue_age_minutes": 135.04188333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
+        "news_freshness_score": 91,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:37:18.894Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "fingerprint": "509bb5f5b357175f84ec6fda0c4b4ee0efb41e8e3e31fd630addb2780cc6ff87",
         "issue_codes": [],
         "warning_codes": []
@@ -8708,7 +10233,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:51:55.265Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
       "content_hash": "b05800c449bd8a512a5a6f6ee762cd7476012ccaba182bf8cf990e46bfcb6689",
@@ -8719,9 +10244,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T15:51:55.265Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-08T13:22:17.950Z",
       "event_detected_at": "2026-09-08T13:22:17.950Z",
       "event_id": "event-eb2f1fe8aaf73d379b23",
@@ -8759,20 +10284,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 165.37108333333333,
+        "source_age_minutes": 180.29026666666667,
         "detection_delay_minutes": 15.749166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 149.62191666666666,
+        "queue_age_minutes": 164.5411,
         "target_publication_minutes": 120,
-        "news_freshness_score": 66,
+        "news_freshness_score": 62,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
         "issue_codes": [],
         "warning_codes": []
@@ -10900,7 +12425,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T11:57:24.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -10910,7 +12435,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -10921,7 +12446,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -11998,7 +13523,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T14:47:35.472Z"
+        "retry_after": "2026-09-08T16:27:20.465Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -12038,7 +13563,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -12049,7 +13574,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "63f046175e324d9aac3dc62cf0f0e86b6ea7a260faeb7c3aa7053bcca7dcdfdf",
           "issue_codes": [],
           "warning_codes": []
@@ -14146,7 +15671,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -14157,7 +15682,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -15043,7 +16568,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:51:55.265Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
       "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
@@ -15054,9 +16579,9 @@
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_HOURLY_CALL_LIMIT",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T15:51:55.265Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-08T12:36:46.426Z",
       "event_detected_at": "2026-09-08T12:36:46.426Z",
       "event_id": "event-112dbf80aa5019468e8a",
@@ -15091,20 +16616,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 260.92108333333334,
+        "source_age_minutes": 275.84026666666665,
         "detection_delay_minutes": 65.77376666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 195.14731666666665,
+        "queue_age_minutes": 210.0665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 46,
+        "news_freshness_score": 43,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
@@ -16915,20 +18440,20 @@
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
-        "content_hash": "fef6e77e852941266c86d4e217f5261616ef2f9f462618339e390fd2e03d516c",
+        "content_hash": "b834321f5161537116b99263f16089cbd3058aaf26c01b76990ed7fbe392239b",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
             "publisher": "Der Tagesspiegel",
             "url": "https://www.tagesspiegel.de/politik/dpa-angriffe-auf-energieversorgung-16029379.html",
-            "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei nimmt 48-Jährigen fest",
+            "title": "Angriffe auf Energieversorgung: Attacken auf Stromnetz: Polizei nimmt Verdächtigen fest",
             "summary": "Tagelang hat die Polizei nach einem Mann gefahndet, der das Stromnetz in Deutschland sabotiert haben soll. Bei seiner Festnahme wird klar: Er hatte weitere Sprengmittel bei sich.",
             "source_type": "media_rss",
             "published_at": "2026-09-08T07:55:01.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "efde000c99402903136ec2fd0917b4d27906f80856dafd39a05d22e384764ab1",
+            "content_hash": "c78f975930986e2be9e5d9ee061a71fec7d352e21c4e19a32c1a3b7c6f823a01",
             "source_item_id": "1a2102d99635a5e602b49154d027290f174d90f4f01f81a305f4fa64751b94c2",
             "publisher_id": "tagesspiegel",
             "publisher_kind": "journalism",
@@ -16941,7 +18466,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T07:55:01.000Z",
-            "ingested_at": "2026-09-08T14:52:22.706Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -16990,7 +18515,7 @@
             "title": "Strom-Sabotage: Polizei nimmt Verdächtigen fest",
             "summary": "Die Sabotage-Angriffe auf das Stromnetz in mehreren Bundesländern sorgten seit Tagen für Aufsehen. Jetzt nahm die Polizei einen 48-jährigen Verdächtigen fest.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T10:28:25.000Z",
+            "published_at": "2026-09-08T11:07:00.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -17006,8 +18531,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T10:28:25.000Z",
-            "ingested_at": "2026-09-08T11:07:04.983Z",
+            "source_published_at": "2026-09-08T11:07:00.000Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17081,21 +18606,54 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/angriffe-auf-energieversorgung--attacken-auf-stromnetz--polizei-nimmt-verdaechtigen-fest-38219776.html",
+            "title": "Angriffe auf Energieversorgung: Attacken auf Stromnetz: Polizei nimmt Verdächtigen fest",
+            "summary": "Tagelang hat die Polizei nach einem Mann gefahndet, der das Stromnetz in Deutschland sabotiert haben soll. Bei seiner Festnahme wird klar: Er hatte weitere Sprengmittel bei sich.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T15:50:39.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "8800336983f302cb9c9d2f6601f2424773648c85cda9c6308bd373f18c900815",
+            "source_item_id": "02a6c437f7b012e9ba2b088c930c47b73e385a6ea85630effb32b3a3ae96e175",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T15:50:39.000Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
         "reassessment": false,
-        "fresh": false,
+        "fresh": true,
         "consolidation": false,
         "source_integrity": {
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
-          "fingerprint": "41883468f1df8e94adc5896f7810e5edfdd1396b96807d8bccc9b25d2e316287",
+          "checked_at": "2026-09-08T16:06:50.416Z",
+          "fingerprint": "65bf05d682b1601675c0983a98a31ea1ae357e821796ed87f6a825c844f41862",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -17710,7 +19268,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -17721,7 +19279,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "0e824208ac91cd615c6da0a4f44ebe8e9f89278fea217f54750b619c806b7163",
           "issue_codes": [],
           "warning_codes": []
@@ -18140,10 +19698,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "91449beadb551b2872744ff636b858741cffe9077d9fb12e2403c6e763bb3cae",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "fingerprint": "fbd41a1b99450805a8924be50b8aef9699b9564a935a69b4477d3f395fbd71bc",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T21:51:55.265Z",
+        "expires_at": "2026-09-08T22:06:50.416Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -18218,14 +19776,14 @@
             "source_id": "tagesspiegel-home",
             "publisher": "Der Tagesspiegel",
             "url": "https://www.tagesspiegel.de/politik/dpa-zwei-tage-nach-landtagswahl-16028821.html",
-            "title": "Zwei Tage nach Landtagswahl: Ministerpräsident Schulze zu CDU-Fraktionschef gewählt",
-            "summary": "Die Landtagswahl in Sachsen-Anhalt hat die CDU von Ministerpräsident Schulze deutlich verloren. Nun hat die Landtagsfraktion ihren neuen Vorstand gewählt – mit einem ungewöhnlichen Ausgang.",
+            "title": "Zwei Tage nach Landtagswahl: Machtprobe in der CDU – Schulze setzt sich durch",
+            "summary": "Die CDU sortiert sich nach der Niederlage bei der Landtagswahl in Sachsen-Anhalt neu. In der Landtagsfraktion kommt es zu einer Kampfabstimmung, Ministerpräsident Schulze übernimmt ein neues Amt.",
             "source_type": "media_rss",
             "published_at": "2026-09-08T02:02:38.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
-            "content_hash": "c76ab42056a6973764692dd4bd07a4809e7626e77e99d5238dbd5d812092a8b8",
+            "content_hash": "da0607637d3988f91fd5ed9f42728b7225027ae8eb97817788a9bf91ec3a96e4",
             "source_item_id": "13e1d863982a899a20da8d800d04e85ff6b67a50ab56d46abcd59fc762206d97",
             "publisher_id": "tagesspiegel",
             "publisher_kind": "journalism",
@@ -18238,7 +19796,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T02:02:38.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18271,7 +19829,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-05T06:56:20.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18320,7 +19878,7 @@
             "title": "Sachsen-Anhalt - Ministerpräsident Schulze zu CDU-Fraktionschef gewählt",
             "summary": "Zwei Tage nach der Niederlage bei der Landtagswahl in Sachsen-Anhalt hat die CDU-Landtagsfraktion Regierungschef Schulze zu ihrem neuen Vorsitzenden gewählt.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T15:24:30.000Z",
+            "published_at": "2026-09-08T16:05:11.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -18336,12 +19894,45 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:24:30.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "source_published_at": "2026-09-08T16:05:11.000Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/zwei-tage-nach-landtagswahl--machtprobe-in-der-cdu---schulze-setzt-sich-durch-38218186.html",
+            "title": "Zwei Tage nach Landtagswahl: Machtprobe in der CDU – Schulze setzt sich durch",
+            "summary": "Die CDU sortiert sich nach der Niederlage bei der Landtagswahl in Sachsen-Anhalt neu. In der Landtagsfraktion kommt es zu einer Kampfabstimmung, Ministerpräsident Schulze übernimmt ein neues Amt.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T15:59:18.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "ffe9c7ba77edb23f1f6c9225c952b646f5ec14b574bdfadbd28bbb5000c000d0",
+            "source_item_id": "ee810fa877979a436f620e271c66fd04b55f1ee4ee88d97756420576b13d239b",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T15:59:18.000Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
@@ -18799,7 +20390,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -18810,7 +20401,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -19819,7 +21410,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T14:30:20.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19862,7 +21453,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -19873,7 +21464,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "aa36a5175a51620ce9b1dd20ae621a54427266dfa6f82d73155af11892f0c358",
           "issue_codes": [],
           "warning_codes": []
@@ -22121,7 +23712,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -22132,7 +23723,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -23702,7 +25293,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T08:39:22.000Z",
-            "ingested_at": "2026-09-08T14:52:22.706Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -23712,7 +25303,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -23723,7 +25314,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "4c3017054cc3cb3b35afc4b945e8378f8031d694648e6d9d28e443d23d85aebb",
           "issue_codes": [],
           "warning_codes": []
@@ -24215,7 +25806,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -24226,7 +25817,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "205041d2192cf688c27c75b8f7f545b8c4beba211ebffe3aaa3e8bcc272551f5",
           "issue_codes": [],
           "warning_codes": []
@@ -24760,7 +26351,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T14:47:40.601Z"
+        "retry_after": "2026-09-08T16:27:26.037Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -24789,7 +26380,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T08:45:00.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -24799,7 +26390,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -24810,7 +26401,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "cc072f3eacc31d1e9994dcaa53b6184b0b77527fa2bdf770f01aad2115f6149d",
           "issue_codes": [],
           "warning_codes": []
@@ -25540,7 +27131,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -25551,7 +27142,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "868ad5265d175cfb161266ef637639c076040c24552ca93728b755dfa7d9702e",
           "issue_codes": [],
           "warning_codes": []
@@ -28375,7 +29966,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -28386,7 +29977,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
           "issue_codes": [],
           "warning_codes": []
@@ -30177,7 +31768,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T07:30:00.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -30187,7 +31778,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -30198,7 +31789,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
           "issue_codes": [],
           "warning_codes": []
@@ -30894,7 +32485,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T15:37:18.894Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -30923,7 +32514,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:51:55.265Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -30938,7 +32529,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T15:51:55.265Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -30979,7 +32570,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 344.48563333333334,
+        "queue_age_minutes": 359.40481666666665,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -30988,7 +32579,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -31029,7 +32620,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T15:37:18.894Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -31058,7 +32649,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:51:55.265Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -31073,7 +32664,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T15:51:55.265Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -31113,7 +32704,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 344.48563333333334,
+        "queue_age_minutes": 359.40481666666665,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -31122,7 +32713,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -32395,7 +33986,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -32406,7 +33997,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -33244,7 +34835,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -33255,7 +34846,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -33950,7 +35541,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -33961,7 +35552,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -36083,7 +37674,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -36094,7 +37685,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -43608,7 +45199,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Trump und Putin telefonieren",
             "summary": "Nach der Abreise der US-Unterhändler Witkoff und Kushner hat Russland die Luftangriffe auf die ukrainische Hauptstadt Kiew wieder aufgenommen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T15:24:30.000Z",
+            "published_at": "2026-09-08T16:05:11.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -43624,8 +45215,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:24:30.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "source_published_at": "2026-09-08T16:05:11.000Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -43640,12 +45231,10 @@
           "AI_DIRECTION_PATH_SOURCE_INVALID:human",
           "AI_DIRECTION_PATH_SOURCE_INVALID:planet",
           "AI_DIRECTION_PATH_SOURCE_INVALID:democracy",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS",
-          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+          "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T15:52:18.894Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-08T16:21:50.416Z",
         "reassessment": false,
         "fresh": true,
         "consolidation": false,
@@ -43653,7 +45242,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:37:18.894Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "23f60f41c7e50322a66d673ffbc4f4fa77d3d18dc42146d6ae3e57aa6991c72f",
           "issue_codes": [],
           "warning_codes": []
@@ -43661,10 +45250,10 @@
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "7cca18c38ffd4800acd0ad43ee028141d68797290d384d83685324135ea4a5c4",
-        "first_failed_at": "2026-09-08T15:37:18.894Z",
-        "failed_at": "2026-09-08T15:37:18.894Z",
-        "retry_after": "2026-09-08T15:52:18.894Z",
+        "fingerprint": "cc689390d1e4c2d2ec283e7e8522d361a2a101b06c05b0f0f2e1cd4ace09105b",
+        "first_failed_at": "2026-09-08T16:06:50.416Z",
+        "failed_at": "2026-09-08T16:06:50.416Z",
+        "retry_after": "2026-09-08T16:21:50.416Z",
         "retry_count": 1
       }
     },
@@ -44375,7 +45964,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -44386,7 +45975,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -45550,7 +47139,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -45561,7 +47150,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "e6e91a616aae9777f03f38b9bf8d8eeeb51e28412c5ab2d462caa196320ef7a8",
           "issue_codes": [],
           "warning_codes": []
@@ -46492,7 +48081,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -46503,7 +48092,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -49465,7 +51054,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -49476,7 +51065,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -50215,7 +51804,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -50226,7 +51815,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -51726,9 +53315,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T21:51:55.265Z",
+        "expires_at": "2026-09-08T22:06:50.416Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -55183,7 +56772,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -55194,7 +56783,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -56440,7 +58029,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -56451,7 +58040,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -57001,7 +58590,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -57012,7 +58601,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -58510,7 +60099,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -58521,7 +60110,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -59716,7 +61305,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -59727,7 +61316,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -60853,7 +62442,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -60863,7 +62452,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -60874,7 +62463,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -61383,7 +62972,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -61394,7 +62983,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -62113,7 +63702,7 @@
             "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
             "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T15:24:30.000Z",
+            "published_at": "2026-09-08T16:05:11.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -62129,8 +63718,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T15:24:30.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "source_published_at": "2026-09-08T16:05:11.000Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -62140,7 +63729,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -62151,7 +63740,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -64597,7 +66186,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -64608,7 +66197,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -68601,9 +70190,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T21:51:55.265Z",
+        "expires_at": "2026-09-08T22:06:50.416Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -73268,7 +74857,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -73279,7 +74868,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -77805,7 +79394,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -77816,7 +79405,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -83910,7 +85499,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -83921,7 +85510,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -92474,7 +94063,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -92485,7 +94074,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -95209,7 +96798,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -95220,7 +96809,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -98324,7 +99913,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -98335,7 +99924,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -110231,7 +111820,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T15:37:18.894Z",
+          "ingested_at": "2026-09-08T16:06:50.416Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -110292,7 +111881,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:51:55.265Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -110312,7 +111901,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T15:51:55.265Z"
+          "checked_at": "2026-09-08T16:06:50.416Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -110328,7 +111917,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T15:51:55.265Z",
+      "updated_at": "2026-09-08T16:06:50.416Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -110368,7 +111957,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1845.0317,
+        "queue_age_minutes": 1859.9508833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -110377,7 +111966,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T15:51:55.265Z",
+        "checked_at": "2026-09-08T16:06:50.416Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -130573,7 +132162,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -130584,7 +132173,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -131274,7 +132863,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -131285,7 +132874,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -132039,7 +133628,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T15:37:18.894Z",
+            "ingested_at": "2026-09-08T16:06:50.416Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -132049,7 +133638,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -132060,7 +133649,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -132712,7 +134301,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -132723,7 +134312,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -140595,7 +142184,7 @@
             }
           }
         ],
-        "reason": "AI_HOURLY_CALL_LIMIT",
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
         "quality_errors": [],
         "quality_retry_count": 0,
         "quality_retry_after": null,
@@ -140606,7 +142195,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -163539,146 +165128,6 @@
       }
     },
     {
-      "story_id": "wt-04abae040ea1a306",
-      "slug": "tank-wucher-wer-verdient-an-den-absurden-spritpreisen-im-september-2026-a1a306",
-      "title": "Tank-Wucher: Wer verdient an den absurden Spritpreisen im September 2026?",
-      "first_seen": "2026-09-06T07:36:00.000Z",
-      "last_updated": "2026-09-06T07:36:00.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/auto/spritpreise-im-september-2026--wer-verdient-am-absurd-teuren-treibstoff-38207398.html",
-          "title": "Tank-Wucher: Wer verdient an den absurden Spritpreisen im September 2026?",
-          "summary": "Der Spritpreis für Super schnellt in die Höhe, der für Diesel schwankt. Was sind die Gründe dafür? Ist es wirklich der Krieg im Nahen Osten? Der ADAC sagt: Nein.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T07:36:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "dd1a6b9830d642242f66203e8563872657d3b075ec528d849e02ac8f046e5a48",
-          "source_item_id": "43b9eef446a7b79507cbd39f2fef8f80829882a4a087c9a5406cc90e4283f7e6",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T07:36:00.000Z",
-          "ingested_at": "2026-09-06T07:51:40.901Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-04abae040ea1a306-claim-01",
-          "story_id": "wt-04abae040ea1a306",
-          "claim": "Tank-Wucher: Wer verdient an den absurden Spritpreisen im September 2026?: Der Spritpreis für Super schnellt in die Höhe, der für Diesel schwankt. Was sind die Gründe dafür? Ist es wirklich der Krieg im Nahen Osten? Der ADAC sagt: Nein.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-06T07:51:40.901Z"
-        }
-      ],
-      "content_hash": "1a5bb9558a264cc02471b0057f98a2bf5b0eb6a0938df2f1137cda264c7ac83b",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-06T08:06:40.901Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-06T07:51:40.901Z",
-      "event_first_seen_at": "2026-09-06T07:51:40.901Z",
-      "event_detected_at": "2026-09-06T07:51:40.901Z",
-      "event_id": "event-4baf277e637cedc59dcf",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 15.681683333333334,
-        "detection_delay_minutes": 15.681683333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-06T07:51:40.901Z",
-        "fingerprint": "411b153efddea7070a67a0525469c7873f2d5d92a699c18590ebd7a4a21ced25",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-06T07:51:40.901Z",
-      "rejection": {
-        "at": "2026-09-06T07:51:40.901Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-39a3ae40381778f1",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -166493,7 +167942,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -210847,7 +212296,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T15:51:55.265Z",
+          "checked_at": "2026-09-08T16:06:50.416Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
