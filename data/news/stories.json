@@ -1,22 +1,1329 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T05:58:36.742Z",
-  "updated_at": "2026-09-08T06:21:43.808Z",
+  "public_updated_at": "2026-09-08T06:37:33.655Z",
+  "updated_at": "2026-09-08T06:37:33.655Z",
   "stories": [
+    {
+      "story_id": "wt-05ffa4fef8bee914",
+      "slug": "bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914",
+      "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
+      "first_seen": "2026-09-07T22:12:58.000Z",
+      "last_updated": "2026-09-08T06:40:46.791Z",
+      "published_at": "2026-09-08T06:40:46.791Z",
+      "updated_at": "2026-09-08T06:40:46.791Z",
+      "topic": [
+        "Europa",
+        "Finanzen",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
+          "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
+          "summary": "Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T23:27:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "277c2799773fd031dca7f8e87f9069f0aa9a4a4b8dab9b2cbb8dad5a8618ee1e",
+          "source_item_id": "a32ec3593dcd41922490c53e515701ec08c1758add747bc9b2ed42111f698da6",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T23:27:18.000Z",
+          "ingested_at": "2026-09-07T23:37:00.002Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+          "title": "Bundestag - Haushaltswoche beginnt - mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant",
+          "summary": "Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:06:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "36d3e8a5c7f82a683b13ed8385c65ae23e7de76c27efc8b4c46ffacd9f26f86e",
+          "source_item_id": "0b8e72df6177db3f2c4dd6a5c36520dc68909b5ac2e3175e16384adb8ca011d4",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:06:39.000Z",
+          "ingested_at": "2026-09-08T06:21:43.808Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-gruene-kritisier-100.html",
+          "title": "Bundestag - Haushaltswoche beginnt - mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant - Grüne kritisieren Umwidmung von KTF-Geldern",
+          "summary": "Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:34:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ac1c2f85d344f32db8b158a4375e55f665f6c5018a7ab7e534bcabd008c614b8",
+          "source_item_id": "b6c5490c2333c1a7d9d3a9e48e53577889c18c1657d6f2221e6d93bee60b3619",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:34:15.000Z",
+          "ingested_at": "2026-09-08T06:37:33.655Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-05ffa4fef8bee914-v1-claim-1",
+          "story_id": "wt-05ffa4fef8bee914",
+          "claim": "Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr in den Bundestag ein.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+              "excerpt_hash": "606d32ffaff936a9b533",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T06:40:46.791Z"
+        },
+        {
+          "claim_id": "wt-05ffa4fef8bee914-v1-claim-2",
+          "story_id": "wt-05ffa4fef8bee914",
+          "claim": "Für 2027 wird mit Ausgaben von rund 555 Milliarden Euro und mit mehr als 200 Milliarden Euro Neuverschuldung gerechnet.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+              "excerpt_hash": "606d32ffaff936a9b533",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+              "excerpt_hash": "f98b626e509649b625c6",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
+              "excerpt_hash": "616b65298f92f2852829",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T06:40:46.791Z"
+        },
+        {
+          "claim_id": "wt-05ffa4fef8bee914-v1-claim-3",
+          "story_id": "wt-05ffa4fef8bee914",
+          "claim": "Im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+              "excerpt_hash": "f98b626e509649b625c6",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T06:40:46.791Z"
+        },
+        {
+          "claim_id": "wt-05ffa4fef8bee914-v1-claim-4",
+          "story_id": "wt-05ffa4fef8bee914",
+          "claim": "Die Grünen kritisieren die geplante Umwidmung von rund drei Milliarden Euro aus dem Klima- und Transformationsfonds in den normalen Haushalt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-gruene-kritisier-100.html",
+              "excerpt_hash": "b21d5a0d0beb94939a93",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T06:40:46.791Z"
+        }
+      ],
+      "event_id": "event-dd4cc5404c117c50633c",
+      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
+      "event_detected_at": "2026-09-07T22:37:09.924Z",
+      "verification_started_at": "2026-09-08T06:40:09.162Z",
+      "publish_ready_at": "2026-09-08T06:40:46.791Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 3
+          }
+        ]
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T06:37:33.655Z",
+        "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "6c01ae13e4cecf32f0a62efb816477e3915145e266dc4e1e11bd281fe80d11e9",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T06:40:46.791Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
+            "content_hash": "277c2799773fd031dca7f8e87f9069f0aa9a4a4b8dab9b2cbb8dad5a8618ee1e",
+            "excerpt_hash": "1def58a8dbf32e4794ec284f83f2aadf8ff356269d210c4a795b36ba9f1ffd6f",
+            "number_locale": "de",
+            "numbers": [
+              "200",
+              "0.9",
+              "41.9",
+              "2030",
+              "81",
+              "2029",
+              "3.5",
+              "2027",
+              "117.5",
+              "34",
+              "3.9",
+              "86",
+              "8.09",
+              "2026"
+            ]
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+            "content_hash": "36d3e8a5c7f82a683b13ed8385c65ae23e7de76c27efc8b4c46ffacd9f26f86e",
+            "excerpt_hash": "1def58a8dbf32e4794ec284f83f2aadf8ff356269d210c4a795b36ba9f1ffd6f",
+            "number_locale": "de",
+            "numbers": [
+              "200",
+              "0.9",
+              "41.9",
+              "2030",
+              "81",
+              "2029",
+              "3.5",
+              "2027",
+              "117.5",
+              "34",
+              "3.9",
+              "86",
+              "8.09",
+              "2026"
+            ]
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-gruene-kritisier-100.html",
+            "content_hash": "ac1c2f85d344f32db8b158a4375e55f665f6c5018a7ab7e534bcabd008c614b8",
+            "excerpt_hash": "1def58a8dbf32e4794ec284f83f2aadf8ff356269d210c4a795b36ba9f1ffd6f",
+            "number_locale": "de",
+            "numbers": [
+              "200",
+              "0.9",
+              "41.9",
+              "2030",
+              "81",
+              "2029",
+              "3.5",
+              "2027",
+              "117.5",
+              "34",
+              "3.9",
+              "86",
+              "8.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Im Bundestag beginnt die Haushaltswoche. Finanzminister Lars Klingbeil will den Etatentwurf für das kommende Jahr einbringen. Laut dem Bericht plant die Regierung für 2027 mit Ausgaben von rund 555 Milliarden Euro und mit mehr als 200 Milliarden Euro Neuverschuldung, darunter Schulden von mehr als 118 Milliarden Euro im Kernhaushalt. Als weitere Bausteine nennt der Text neue Kredite aus Sondervermögen sowie höhere Zinszahlungen und einen Mehrbedarf der Bundesagentur für Arbeit.\n\nDer Bericht nennt außerdem Konflikte, Energiepreise, Lieferketten und die schwache Konjunktur als Begründung der Regierung. Zugleich wird Kritik an der geplanten Überführung von rund drei Milliarden Euro aus dem Klima- und Transformationsfonds in den normalen Haushalt beschrieben. Offen bleibt in der Meldung, wie die Beratungen im Bundestag ausgehen und welche Teile des Entwurfs sich noch ändern.",
+      "analysis": {
+        "story_id": "wt-05ffa4fef8bee914",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Der Bericht beschreibt den Start der Haushaltswoche und einen Etatentwurf mit hoher Neuverschuldung. Offen bleibt, wie sich der Plan im parlamentarischen Verfahren noch verändert.",
+        "detail_summary": "Kern der Meldung ist der Beginn der Haushaltswoche im Bundestag mit einem von Finanzminister Klingbeil eingebrachten Etatentwurf für 2027. Genannt werden Ausgaben von rund 555 Milliarden Euro und eine Neuverschuldung von gut 200 Milliarden Euro, davon mehr als 118 Milliarden Euro im Kernhaushalt. Relevanz hat das wegen möglicher Änderungen bei Schulden, Investitionen und Mittelverschiebungen im Bundeshaushalt. Der Wirkpfad führt hier vor allem über die staatliche Finanzierungsseite: neue Kredite, Ausgaben und Umwidmungen können Haushaltsspielräume, Prioritäten und Verteilung zwischen Ressorts verändern. Als mögliche Folge werden im Bericht höhere Zinslasten, Investitionen und Konflikte um Klimamittel sichtbar. Die Evidenz bleibt auf einen journalistischen Bericht beschränkt; der Entwurf ist nicht als beschlossene oder in Kraft getretene Regelung belegt.",
+        "why_relevant": "Der Text enthält eine neue, konkrete Zustandsinformation zum Bundeshaushalt 2027 mit großer finanzieller Reichweite und politischer Verteilungskonfliktlinie.",
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Der Entwurf betrifft Bundesausgaben, Zinslasten und mögliche Verteilungswirkungen für viele Gruppen. Für Haushalte, Beschäftigte im öffentlichen Bereich und Empfänger staatlicher Leistungen können sich Anreize und Budgets ändern, die Richtung bleibt aber im Verfahren offen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Die geplante Umwidmung von rund drei Milliarden Euro aus dem Klima- und Transformationsfonds berührt Klimaschutz- und Klimaanpassungsfinanzierung. Ob daraus weniger oder anders ausgerichtete Umweltwirkung entsteht, ist noch offen, weil es sich um einen Entwurf und eine politische Auseinandersetzung handelt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "rationale": "Der Haushalt ist ein zentraler parlamentarischer Entscheidungsprozess mit hoher Relevanz für demokratische Prioritätensetzung. Die Meldung zeigt Konflikte über Schulden, Einsparungen und die Verwendung von Klimamitteln, aber noch keine endgültige Entscheidung."
+        },
+        "importance": "hoch",
+        "impact_potential": "Der Haushalt kann Ausgaben, Verschuldung, Zinslasten und Mittelverteilung des Bundes verändern und damit künftige Spielräume für Investitionen und Ressorts beeinflussen.",
+        "impact_risks": [
+          "Höhere Verschuldung kann spätere Haushalte durch steigende Zinszahlungen belasten.",
+          "Die Überführung von Klimamitteln kann Verteilungskonflikte und Prioritätsverschiebungen auslösen."
+        ],
+        "mechanisms": [
+          "Neuverschuldung verändert den Finanzierungsrahmen des Bundes.",
+          "Umbuchungen im Klima- und Transformationsfonds verschieben Mittel zwischen Politikzielen.",
+          "Höhere Zinszahlungen binden künftigen Haushaltsspielraum."
+        ],
+        "first_order": [
+          "Mehr Schulden im Bundeshaushalt 2027.",
+          "Mehr oder andere Ausgaben in einzelnen Politikfeldern.",
+          "Konflikte über die Verwendung von Klimamitteln."
+        ],
+        "second_order": [
+          "Veränderter Spielraum für spätere Haushaltsjahre.",
+          "Mögliche Verschiebung von Investitionen zwischen Klimaschutz, Infrastruktur und Verteidigung.",
+          "Stärkere politische Auseinandersetzungen über Prioritäten."
+        ],
+        "third_order": [
+          "Langfristig veränderte fiskalische Belastung durch höhere Zinsen.",
+          "Mögliche strukturelle Verschiebung der Bundesausgaben.",
+          "Potenzielle Folgen für die demokratische Korrekturfähigkeit über den Haushaltsprozess."
+        ],
+        "systemic_relevance": "Der Bundeshaushalt wirkt systemisch, weil er Finanzierung, Prioritäten und Verschuldung des Staates bündelt und dadurch viele Politikfelder zugleich berührt.",
+        "transformation_potential": "Der Entwurf kann die Mittelverteilung zwischen Klima, Investitionen, Sozialausgaben und Verteidigung neu justieren; eine tatsächliche Transformation ist damit noch nicht belegt.",
+        "resilience": "Die Wirkung ist reversibel, solange der Entwurf parlamentarisch geändert werden kann; die demokratische Korrektur bleibt im laufenden Verfahren hoch.",
+        "side_effects": [
+          "Kritik an Zweckentfremdung von Klimamitteln.",
+          "Mögliche Verdrängung anderer Haushaltsprioritäten.",
+          "Höhere Zinsausgaben in späteren Jahren."
+        ],
+        "uncertainties": [
+          "Der Text beschreibt einen Entwurf, keine beschlossene oder in Kraft getretene Regelung.",
+          "Die tatsächliche Höhe der Neuverschuldung kann sich in den Beratungen ändern.",
+          "Die Wirkungen der Mittelverschiebung aus dem KTF bleiben ex ante offen."
+        ],
+        "evidence_level": "medium",
+        "attribution": "Deutschlandfunk berichtet über den von Klingbeil eingebrachten Haushaltsentwurf und zitiert die Regierungsvorlage sowie Kritik der Grünen; die Meldung ist journalistisch vermittelt, nicht amtliche Primärquelle.",
+        "watch_next": [
+          "Wie die Haushaltsberatungen im Bundestag verlaufen.",
+          "Ob sich die genannte Neuverschuldung und die KTF-Umschichtung im Verfahren ändern.",
+          "Ob es einen Beschluss zum Haushalt 2027 gibt."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 8, 9, 13 und 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue Haushaltszahlen und die KTF-Umwidmung sind konkrete Zustandsinformationen mit großer Reichweite und politischer Folgewirkung; der Bericht ist hinreichend belegt, aber noch nicht primär bestätigt."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T06:37:33.655Z",
+        "media_trigger_fingerprint": "d1a2a7e2d57a9d5156b03c2a4bbbdfc33a94aa408a98e793df5d35e20f03cdcf",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "bedrohungslage"
+          ],
+          "source_count": 3,
+          "comparable_source_count": 1,
+          "fingerprint": "d1a2a7e2d57a9d5156b03c2a4bbbdfc33a94aa408a98e793df5d35e20f03cdcf",
+          "content_fingerprint": "b91a07f9577e062456c054756a867befa1ecb8d17817d9d0c59ba2d7b5090134",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T06:40:46.791Z",
+          "content_hash": "6c01ae13e4cecf32f0a62efb816477e3915145e266dc4e1e11bd281fe80d11e9",
+          "source_summary": "Im Bundestag beginnt die Haushaltswoche. Finanzminister Lars Klingbeil will den Etatentwurf für das kommende Jahr einbringen. Laut dem Bericht plant die Regierung für 2027 mit Ausgaben von rund 555 Milliarden Euro und mit mehr als 200 Milliarden Euro Neuverschuldung, darunter Schulden von mehr als 118 Milliarden Euro im Kernhaushalt. Als weitere Bausteine nennt der Text neue Kredite aus Sondervermögen sowie höhere Zinszahlungen und einen Mehrbedarf der Bundesagentur für Arbeit.\n\nDer Bericht nennt außerdem Konflikte, Energiepreise, Lieferketten und die schwache Konjunktur als Begründung der Regierung. Zugleich wird Kritik an der geplanten Überführung von rund drei Milliarden Euro aus dem Klima- und Transformationsfonds in den normalen Haushalt beschrieben. Offen bleibt in der Meldung, wie die Beratungen im Bundestag ausgehen und welche Teile des Entwurfs sich noch ändern.",
+          "analysis": {
+            "story_id": "wt-05ffa4fef8bee914",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Der Bericht beschreibt den Start der Haushaltswoche und einen Etatentwurf mit hoher Neuverschuldung. Offen bleibt, wie sich der Plan im parlamentarischen Verfahren noch verändert.",
+            "detail_summary": "Kern der Meldung ist der Beginn der Haushaltswoche im Bundestag mit einem von Finanzminister Klingbeil eingebrachten Etatentwurf für 2027. Genannt werden Ausgaben von rund 555 Milliarden Euro und eine Neuverschuldung von gut 200 Milliarden Euro, davon mehr als 118 Milliarden Euro im Kernhaushalt. Relevanz hat das wegen möglicher Änderungen bei Schulden, Investitionen und Mittelverschiebungen im Bundeshaushalt. Der Wirkpfad führt hier vor allem über die staatliche Finanzierungsseite: neue Kredite, Ausgaben und Umwidmungen können Haushaltsspielräume, Prioritäten und Verteilung zwischen Ressorts verändern. Als mögliche Folge werden im Bericht höhere Zinslasten, Investitionen und Konflikte um Klimamittel sichtbar. Die Evidenz bleibt auf einen journalistischen Bericht beschränkt; der Entwurf ist nicht als beschlossene oder in Kraft getretene Regelung belegt.",
+            "why_relevant": "Der Text enthält eine neue, konkrete Zustandsinformation zum Bundeshaushalt 2027 mit großer finanzieller Reichweite und politischer Verteilungskonfliktlinie.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Der Entwurf betrifft Bundesausgaben, Zinslasten und mögliche Verteilungswirkungen für viele Gruppen. Für Haushalte, Beschäftigte im öffentlichen Bereich und Empfänger staatlicher Leistungen können sich Anreize und Budgets ändern, die Richtung bleibt aber im Verfahren offen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Die geplante Umwidmung von rund drei Milliarden Euro aus dem Klima- und Transformationsfonds berührt Klimaschutz- und Klimaanpassungsfinanzierung. Ob daraus weniger oder anders ausgerichtete Umweltwirkung entsteht, ist noch offen, weil es sich um einen Entwurf und eine politische Auseinandersetzung handelt."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "offen",
+              "rationale": "Der Haushalt ist ein zentraler parlamentarischer Entscheidungsprozess mit hoher Relevanz für demokratische Prioritätensetzung. Die Meldung zeigt Konflikte über Schulden, Einsparungen und die Verwendung von Klimamitteln, aber noch keine endgültige Entscheidung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Der Haushalt kann Ausgaben, Verschuldung, Zinslasten und Mittelverteilung des Bundes verändern und damit künftige Spielräume für Investitionen und Ressorts beeinflussen.",
+            "impact_risks": [
+              "Höhere Verschuldung kann spätere Haushalte durch steigende Zinszahlungen belasten.",
+              "Die Überführung von Klimamitteln kann Verteilungskonflikte und Prioritätsverschiebungen auslösen."
+            ],
+            "mechanisms": [
+              "Neuverschuldung verändert den Finanzierungsrahmen des Bundes.",
+              "Umbuchungen im Klima- und Transformationsfonds verschieben Mittel zwischen Politikzielen.",
+              "Höhere Zinszahlungen binden künftigen Haushaltsspielraum."
+            ],
+            "first_order": [
+              "Mehr Schulden im Bundeshaushalt 2027.",
+              "Mehr oder andere Ausgaben in einzelnen Politikfeldern.",
+              "Konflikte über die Verwendung von Klimamitteln."
+            ],
+            "second_order": [
+              "Veränderter Spielraum für spätere Haushaltsjahre.",
+              "Mögliche Verschiebung von Investitionen zwischen Klimaschutz, Infrastruktur und Verteidigung.",
+              "Stärkere politische Auseinandersetzungen über Prioritäten."
+            ],
+            "third_order": [
+              "Langfristig veränderte fiskalische Belastung durch höhere Zinsen.",
+              "Mögliche strukturelle Verschiebung der Bundesausgaben.",
+              "Potenzielle Folgen für die demokratische Korrekturfähigkeit über den Haushaltsprozess."
+            ],
+            "systemic_relevance": "Der Bundeshaushalt wirkt systemisch, weil er Finanzierung, Prioritäten und Verschuldung des Staates bündelt und dadurch viele Politikfelder zugleich berührt.",
+            "transformation_potential": "Der Entwurf kann die Mittelverteilung zwischen Klima, Investitionen, Sozialausgaben und Verteidigung neu justieren; eine tatsächliche Transformation ist damit noch nicht belegt.",
+            "resilience": "Die Wirkung ist reversibel, solange der Entwurf parlamentarisch geändert werden kann; die demokratische Korrektur bleibt im laufenden Verfahren hoch.",
+            "side_effects": [
+              "Kritik an Zweckentfremdung von Klimamitteln.",
+              "Mögliche Verdrängung anderer Haushaltsprioritäten.",
+              "Höhere Zinsausgaben in späteren Jahren."
+            ],
+            "uncertainties": [
+              "Der Text beschreibt einen Entwurf, keine beschlossene oder in Kraft getretene Regelung.",
+              "Die tatsächliche Höhe der Neuverschuldung kann sich in den Beratungen ändern.",
+              "Die Wirkungen der Mittelverschiebung aus dem KTF bleiben ex ante offen."
+            ],
+            "evidence_level": "medium",
+            "attribution": "Deutschlandfunk berichtet über den von Klingbeil eingebrachten Haushaltsentwurf und zitiert die Regierungsvorlage sowie Kritik der Grünen; die Meldung ist journalistisch vermittelt, nicht amtliche Primärquelle.",
+            "watch_next": [
+              "Wie die Haushaltsberatungen im Bundestag verlaufen.",
+              "Ob sich die genannte Neuverschuldung und die KTF-Umschichtung im Verfahren ändern.",
+              "Ob es einen Beschluss zum Haushalt 2027 gibt."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, 9, 13 und 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Haushaltszahlen und die KTF-Umwidmung sind konkrete Zustandsinformationen mit großer Reichweite und politischer Folgewirkung; der Bericht ist hinreichend belegt, aber noch nicht primär bestätigt."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T06:37:33.655Z",
+            "media_trigger_fingerprint": "d1a2a7e2d57a9d5156b03c2a4bbbdfc33a94aa408a98e793df5d35e20f03cdcf",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "bedrohungslage"
+              ],
+              "source_count": 3,
+              "comparable_source_count": 1,
+              "fingerprint": "d1a2a7e2d57a9d5156b03c2a4bbbdfc33a94aa408a98e793df5d35e20f03cdcf",
+              "content_fingerprint": "b91a07f9577e062456c054756a867befa1ecb8d17817d9d0c59ba2d7b5090134",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-05ffa4fef8bee914-v1-claim-1",
+              "story_id": "wt-05ffa4fef8bee914",
+              "claim": "Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr in den Bundestag ein.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+                  "excerpt_hash": "606d32ffaff936a9b533",
+                  "checked_at": "2026-09-08T06:40:46.791Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            },
+            {
+              "claim_id": "wt-05ffa4fef8bee914-v1-claim-2",
+              "story_id": "wt-05ffa4fef8bee914",
+              "claim": "Für 2027 wird mit Ausgaben von rund 555 Milliarden Euro und mit mehr als 200 Milliarden Euro Neuverschuldung gerechnet.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+                  "excerpt_hash": "606d32ffaff936a9b533",
+                  "checked_at": "2026-09-08T06:40:46.791Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+                  "excerpt_hash": "f98b626e509649b625c6",
+                  "checked_at": "2026-09-08T06:40:46.791Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
+                  "excerpt_hash": "616b65298f92f2852829",
+                  "checked_at": "2026-09-08T06:40:46.791Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            },
+            {
+              "claim_id": "wt-05ffa4fef8bee914-v1-claim-3",
+              "story_id": "wt-05ffa4fef8bee914",
+              "claim": "Im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+                  "excerpt_hash": "f98b626e509649b625c6",
+                  "checked_at": "2026-09-08T06:40:46.791Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            },
+            {
+              "claim_id": "wt-05ffa4fef8bee914-v1-claim-4",
+              "story_id": "wt-05ffa4fef8bee914",
+              "claim": "Die Grünen kritisieren die geplante Umwidmung von rund drei Milliarden Euro aus dem Klima- und Transformationsfonds in den normalen Haushalt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-gruene-kritisier-100.html",
+                  "excerpt_hash": "b21d5a0d0beb94939a93",
+                  "checked_at": "2026-09-08T06:40:46.791Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T06:40:46.791Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
+              "content_hash": "277c2799773fd031dca7f8e87f9069f0aa9a4a4b8dab9b2cbb8dad5a8618ee1e"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+              "content_hash": "36d3e8a5c7f82a683b13ed8385c65ae23e7de76c27efc8b4c46ffacd9f26f86e"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-gruene-kritisier-100.html",
+              "content_hash": "ac1c2f85d344f32db8b158a4375e55f665f6c5018a7ab7e534bcabd008c614b8"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T06:40:46.791Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
+                "content_hash": "277c2799773fd031dca7f8e87f9069f0aa9a4a4b8dab9b2cbb8dad5a8618ee1e",
+                "excerpt_hash": "1def58a8dbf32e4794ec284f83f2aadf8ff356269d210c4a795b36ba9f1ffd6f",
+                "number_locale": "de",
+                "numbers": [
+                  "200",
+                  "0.9",
+                  "41.9",
+                  "2030",
+                  "81",
+                  "2029",
+                  "3.5",
+                  "2027",
+                  "117.5",
+                  "34",
+                  "3.9",
+                  "86",
+                  "8.09",
+                  "2026"
+                ]
+              },
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
+                "content_hash": "36d3e8a5c7f82a683b13ed8385c65ae23e7de76c27efc8b4c46ffacd9f26f86e",
+                "excerpt_hash": "1def58a8dbf32e4794ec284f83f2aadf8ff356269d210c4a795b36ba9f1ffd6f",
+                "number_locale": "de",
+                "numbers": [
+                  "200",
+                  "0.9",
+                  "41.9",
+                  "2030",
+                  "81",
+                  "2029",
+                  "3.5",
+                  "2027",
+                  "117.5",
+                  "34",
+                  "3.9",
+                  "86",
+                  "8.09",
+                  "2026"
+                ]
+              },
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-gruene-kritisier-100.html",
+                "content_hash": "ac1c2f85d344f32db8b158a4375e55f665f6c5018a7ab7e534bcabd008c614b8",
+                "excerpt_hash": "1def58a8dbf32e4794ec284f83f2aadf8ff356269d210c4a795b36ba9f1ffd6f",
+                "number_locale": "de",
+                "numbers": [
+                  "200",
+                  "0.9",
+                  "41.9",
+                  "2030",
+                  "81",
+                  "2029",
+                  "3.5",
+                  "2027",
+                  "117.5",
+                  "34",
+                  "3.9",
+                  "86",
+                  "8.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T06:40:46.791Z",
+          "source_count": 3
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-05ffa4fef8bee914-b41b3a8e413c43d5-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "b41b3a8e413c43d5c731a93bbdef31a96347ae1f798ee21846415aee2dbd80dd"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-05ffa4fef8bee914-c2a1639c81c379d2-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "c2a1639c81c379d2292d4fbeeab3c6ef367f461faa0609c26e577f4cd97e00e7"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-05ffa4fef8bee914-aa6ffd271d045148-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "aa6ffd271d0451487d41f85ff7f2fc78e6016a781c746c171fdee5fc7ce6a760"
+        },
+        "source_visual": null,
+        "fingerprint": "db5b76cb43a0dfb58bcbf17590cd55973bc246217ad286d734e548787054da57",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T06:41:44.395Z",
+        "status": "fallback",
+        "fallback_reason": "HIGGSFIELD_TIMEOUT",
+        "retry_after": "2026-09-08T06:56:44.395Z"
+      }
+    },
+    {
+      "story_id": "wt-550f98293aec9698",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "67e00550b7c4c790971066c73f0ef09ce5d5fd8d94c3bab50fb06eafcdf871ba",
+        "first_failed_at": "2026-09-08T06:37:33.655Z",
+        "failed_at": "2026-09-08T06:37:33.655Z",
+        "retry_after": "2026-09-08T06:52:33.655Z",
+        "retry_count": 1
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
+      "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+      "first_seen": "2026-09-08T05:19:28.000Z",
+      "last_updated": "2026-09-08T06:26:38.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
+          "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+          "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:26:38.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "2ba7bde655a0ab79ce0650fa975572cca8ec5830ca31592b7fe17cb484eba973",
+          "source_item_id": "d7d59be7dcb9c4682fff5fe96d7177a7e6a524e211703d13ffadd27a32dda9c3",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:26:38.000Z",
+          "ingested_at": "2026-09-08T06:37:33.655Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-550f98293aec9698-claim-01",
+          "story_id": "wt-550f98293aec9698",
+          "claim": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen: Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:37:33.655Z"
+        }
+      ],
+      "content_hash": "49c981094cf76588ca2e7fb9438b28093eb2c3ef3efaf70239d21e7b43ebbda7",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T06:52:33.655Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T06:37:33.655Z",
+      "event_first_seen_at": "2026-09-08T05:22:10.164Z",
+      "event_detected_at": "2026-09-08T05:22:10.164Z",
+      "event_id": "event-d98ccda8e5e813b1598c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 10.927583333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 75.39151666666666,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T06:37:33.655Z",
+        "fingerprint": "937da7a14b51cfe47d8743875a95df84a883b14eddcec3e87780d4e0c7658bf2",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-4ffb4dfd95e989b7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "beebad0fdbb14fa4254e0cc4ec0109cc31cb38493cc14b58ee4b3a0c9aad15f3",
+        "first_failed_at": "2026-09-08T06:37:33.655Z",
+        "failed_at": "2026-09-08T06:37:33.655Z",
+        "retry_after": "2026-09-08T06:52:33.655Z",
+        "retry_count": 1
+      },
+      "slug": "gasspeicher-betreiber-bis-1-november-noch-befullung-zu-77-prozent-moglich-e989b7",
+      "title": "Gasspeicher-Betreiber: Bis 1. November noch Befüllung zu 77 Prozent möglich",
+      "first_seen": "2026-09-08T06:20:38.000Z",
+      "last_updated": "2026-09-08T06:20:38.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/gasspeicher-betreiber--bis-1--november-noch-befuellung-zu-77-prozent-moeglich-38218980.html",
+          "title": "Gasspeicher-Betreiber: Bis 1. November noch Befüllung zu 77 Prozent möglich",
+          "summary": "Die Betreiber von Gasspeichern in Deutschland haben vor einem sich schließenden Zeitfenster für die Befüllung ihrer Anlagen gewarnt. „Technisch kann bis zum 1. November noch ein Füllstand von rund 77 Prozent erreicht werden“, erklärte die Initiative Energien Speichern (Ines) am Dienstag. „Entscheidend ist nun aber, ob die Speicherkunden ihre gebuchten Kapazitäten tatsächlich befüllen - und ob dies schnell genug geschieht.“",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:20:38.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1dce8240070ed983e838337c015260a67cfbb4edbbe82cddcadae8b2fee0d662",
+          "source_item_id": "ee7d7cee161da9ee807f4b018bce59ee510114d56e9a6c59d5feaba8f07756bd",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:20:38.000Z",
+          "ingested_at": "2026-09-08T06:37:33.655Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4ffb4dfd95e989b7-claim-01",
+          "story_id": "wt-4ffb4dfd95e989b7",
+          "claim": "Gasspeicher-Betreiber: Bis 1. November noch Befüllung zu 77 Prozent möglich: Die Betreiber von Gasspeichern in Deutschland haben vor einem sich schließenden Zeitfenster für die Befüllung ihrer Anlagen gewarnt. „Technisch kann bis zum 1. November noch ein Füllstand von rund 77 Prozent erreicht werden“, erklärte die Initiative Energien Speichern (Ines) am Dienstag. „Entscheidend ist nun aber, ob die Speicherkunden ihre gebuchten Kapazitäten tatsächlich befüllen - und ob dies schnell genug geschieht.“",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:37:33.655Z"
+        }
+      ],
+      "content_hash": "f08086a9966a9795931fda414349559044f51e3fa625dc6bcd42039dbb30593c",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_SUMMARY_SENTENCE_COUNT"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T06:52:33.655Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T06:37:33.655Z",
+      "event_first_seen_at": "2026-09-08T06:37:33.655Z",
+      "event_detected_at": "2026-09-08T06:37:33.655Z",
+      "event_id": "event-f54c0eeb074f820f5a13",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.927583333333335,
+        "detection_delay_minutes": 16.927583333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T06:37:33.655Z",
+        "fingerprint": "62090415ad3a3cbdbfcc3975fec3394eebb42f4057509535662b4d4e0ce1fc94",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-8abfde3cda3a727f",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c4a6020d77051af3b22ce2e3a1a1c89cb4271eedb6922133b84268d7f222b24b",
+        "first_failed_at": "2026-09-08T06:37:33.655Z",
+        "failed_at": "2026-09-08T06:37:33.655Z",
+        "retry_after": "2026-09-08T06:52:33.655Z",
+        "retry_count": 1
+      },
+      "slug": "landtagswahlen-in-sachsen-anhalt-die-afd-gewinnt-in-der-mitte-der-gesellschaft-3a727f",
+      "title": "Landtagswahlen in Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft",
+      "first_seen": "2026-09-07T09:30:06.000Z",
+      "last_updated": "2026-09-08T06:20:00.000Z",
+      "topic": [
+        "Soziales",
+        "Wirtschaft",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/landtagswahlen-in-sachsen-anhalt-woher-die-afd-ihre-staerke-nimmt/100252512.html",
+          "title": "Landtagswahlen in Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft",
+          "summary": "Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T09:30:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "a27e146f3b5081910f10c6c8cb786c2d3725305bae01f652b91201b3ce0dabbd",
+          "source_item_id": "374c28b1c6a5f21a36f4322a333c2b93a21ebad5c1afa21b899e661dd9c65e57",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T09:30:06.000Z",
+          "ingested_at": "2026-09-07T10:51:38.130Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/afd-gewinnt-landtagswahlen-in-sachsen-anhalt-woher-die-afd-ihre-staerke-nimmt/100252512.html",
+          "title": "Landtagswahl Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft",
+          "summary": "Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T15:10:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "2d29c819474417a60edac7cab2bc496639699aa9a6089c3597263f6db1391943",
+          "source_item_id": "8674418d9329e9d307be17428e2bbceeb2382796e827cc19acfc4bd5654b1112",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T15:10:00.000Z",
+          "ingested_at": "2026-09-07T16:07:11.255Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/deutschland/afd-gewinnt-in-sachsen-anhalt-woher-die-afd-ihre-staerke-nimmt/100252512.html",
+          "title": "Landtagswahl Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft",
+          "summary": "Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:20:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "8d555976d700f8c069187672cf21f63a8be8b156da5f4e5c0d0e95489c945f2f",
+          "source_item_id": "665a1ecd2048572f29de7d05439fd36fc4b1ba27411c0bd9f82afed6bfe21c7b",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:20:00.000Z",
+          "ingested_at": "2026-09-08T06:37:33.655Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-8abfde3cda3a727f-claim-01",
+          "story_id": "wt-8abfde3cda3a727f",
+          "claim": "Landtagswahlen in Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft: Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:37:33.655Z"
+        },
+        {
+          "claim_id": "wt-8abfde3cda3a727f-claim-02",
+          "story_id": "wt-8abfde3cda3a727f",
+          "claim": "Landtagswahl Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft: Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:37:33.655Z"
+        },
+        {
+          "claim_id": "wt-8abfde3cda3a727f-claim-03",
+          "story_id": "wt-8abfde3cda3a727f",
+          "claim": "Landtagswahl Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft: Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:37:33.655Z"
+        }
+      ],
+      "content_hash": "973b048d75e6ddea78f32fb61c6c1274e7fd293fb4b00cbbde563f8bf236801a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T06:52:33.655Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T06:37:33.655Z",
+      "event_first_seen_at": "2026-09-07T09:36:56.459Z",
+      "event_detected_at": "2026-09-07T09:36:56.459Z",
+      "event_id": "event-f31f12e8cd8fc9656e18",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Wirtschaft",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.560916666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 1260.6199333333334,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T06:37:33.655Z",
+        "fingerprint": "4d6aa0c5a12c281fc43427bb52aac5e717b5918f704d638e095d088c5bf93d23",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T06:37:33.655Z",
+      "rejection": {
+        "at": "2026-09-08T06:37:33.655Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-e3194cf165935f1f",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "a8c4bf4066fad10706c71be2e63abe0ad0a9a7cc6e66bc2f3d59fd90e997028b",
-        "first_failed_at": "2026-09-08T06:21:43.808Z",
-        "failed_at": "2026-09-08T06:21:43.808Z",
-        "retry_after": "2026-09-08T06:36:43.808Z",
+        "fingerprint": "1619a41a8d06b29e72e3c5113f62247e0fe3e92c108245c8963f2e781d2b65b5",
+        "first_failed_at": "2026-09-08T06:37:33.655Z",
+        "failed_at": "2026-09-08T06:37:33.655Z",
+        "retry_after": "2026-09-08T06:52:33.655Z",
         "retry_count": 1
       },
       "slug": "angriffe-auf-energieversorgung-sabotage-am-stromnetz-suche-nach-verdachtigem-dauert-an-935f1f",
       "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Suche nach Verdächtigem dauert an",
       "first_seen": "2026-09-08T06:20:22.000Z",
-      "last_updated": "2026-09-08T06:20:22.000Z",
+      "last_updated": "2026-09-08T06:19:24.000Z",
       "topic": [
         "Energie"
       ],
@@ -45,11 +1352,44 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T06:20:22.000Z",
-          "ingested_at": "2026-09-08T06:21:43.808Z",
+          "ingested_at": "2026-09-08T06:37:33.655Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
             "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/angriffe-auf-energieversorgung--sabotage-am-stromnetz--suche-nach-verdaechtigem-dauert-an-38218956.html",
+          "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Suche nach Verdächtigem dauert an",
+          "summary": "Nach einer Sabotage-Serie an Hochspannungsleitungen findet die Polizei nahe einem Kraftwerk bei Aachen weitere Sprengvorrichtungen. Die Suche nach dem Tatverdächtigen ist bislang erfolglos.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:19:24.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "5a1548a0cdabbe7cb975e1887f550a142330b6eed543a99232a0452d24924efd",
+          "source_item_id": "f169b4ff050c185b110def3993ff84ef0bc81c86e8207f4c4fb5e37dc32a9faf",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:19:24.000Z",
+          "ingested_at": "2026-09-08T06:37:33.655Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
@@ -74,20 +1414,40 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:21:43.808Z"
+          "checked_at": "2026-09-08T06:37:33.655Z"
+        },
+        {
+          "claim_id": "wt-e3194cf165935f1f-claim-02",
+          "story_id": "wt-e3194cf165935f1f",
+          "claim": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Suche nach Verdächtigem dauert an: Nach einer Sabotage-Serie an Hochspannungsleitungen findet die Polizei nahe einem Kraftwerk bei Aachen weitere Sprengvorrichtungen. Die Suche nach dem Tatverdächtigen ist bislang erfolglos.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:37:33.655Z"
         }
       ],
-      "content_hash": "f1dfe1c044364a797a1ef92a1d7890014b28b078657aec91db33dfffc48ae190",
+      "content_hash": "da85e74813ae63af2447557b41eddc3899dbdca38b341139f497cf3bf712ad9c",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
         "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_after": "2026-09-08T06:36:43.808Z",
+      "quality_retry_after": "2026-09-08T06:52:33.655Z",
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-08T06:21:43.808Z",
+      "updated_at": "2026-09-08T06:37:33.655Z",
       "event_first_seen_at": "2026-09-08T06:21:43.808Z",
       "event_detected_at": "2026-09-08T06:21:43.808Z",
       "event_id": "event-191d977e2e960b74b6b8",
@@ -122,29 +1482,29 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1.3634666666666666,
+        "source_age_minutes": 17.19425,
         "detection_delay_minutes": 1.3634666666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.830783333333333,
         "target_publication_minutes": 60,
-        "news_freshness_score": 99,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T06:21:43.808Z",
-        "fingerprint": "939fd5df4709b089e78449148e5568a1c2feca9e056dcf6dc4cf7d2e7a6a14e5",
+        "checked_at": "2026-09-08T06:37:33.655Z",
+        "fingerprint": "6ac451f77e10d7a8ed4115a72c3380ceb19a1fabb3226172fd1fe9e480c94cfd",
         "issue_codes": [],
         "warning_codes": []
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T06:21:43.808Z",
+      "rejected_at": "2026-09-08T06:37:33.655Z",
       "rejection": {
-        "at": "2026-09-08T06:21:43.808Z",
+        "at": "2026-09-08T06:37:33.655Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -3409,201 +4769,6 @@
       "retirement_history": []
     },
     {
-      "story_id": "wt-05ffa4fef8bee914",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "5fc0bd8fb8f627a18638334aa0a3ff0932c3608a91c0dd05c337c7d625c18f9f",
-        "first_failed_at": "2026-09-08T06:21:43.808Z",
-        "failed_at": "2026-09-08T06:21:43.808Z",
-        "retry_after": "2026-09-08T06:36:43.808Z",
-        "retry_count": 1
-      },
-      "slug": "bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914",
-      "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
-      "first_seen": "2026-09-07T22:12:58.000Z",
-      "last_updated": "2026-09-08T05:48:08.000Z",
-      "topic": [
-        "Europa",
-        "Finanzen",
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-102.html",
-          "title": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant",
-          "summary": "Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T23:27:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "277c2799773fd031dca7f8e87f9069f0aa9a4a4b8dab9b2cbb8dad5a8618ee1e",
-          "source_item_id": "a32ec3593dcd41922490c53e515701ec08c1758add747bc9b2ed42111f698da6",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T23:27:18.000Z",
-          "ingested_at": "2026-09-07T23:37:00.002Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/haushaltswoche-beginnt-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-100.html",
-          "title": "Bundestag - Haushaltswoche beginnt - mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant",
-          "summary": "Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T06:06:39.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "36d3e8a5c7f82a683b13ed8385c65ae23e7de76c27efc8b4c46ffacd9f26f86e",
-          "source_item_id": "0b8e72df6177db3f2c4dd6a5c36520dc68909b5ac2e3175e16384adb8ca011d4",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T06:06:39.000Z",
-          "ingested_at": "2026-09-08T06:21:43.808Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-05ffa4fef8bee914-claim-01",
-          "story_id": "wt-05ffa4fef8bee914",
-          "claim": "Bundestag - Haushaltswoche beginnt - gut 200 Milliarden Euro Neuverschuldung in 2027 geplant: Bundesfinanzminister Klingbeil will heute den Haushalt für das kommende Jahr in den Bundestag einbringen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:21:43.808Z"
-        },
-        {
-          "claim_id": "wt-05ffa4fef8bee914-claim-02",
-          "story_id": "wt-05ffa4fef8bee914",
-          "claim": "Bundestag - Haushaltswoche beginnt - mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant: Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:21:43.808Z"
-        }
-      ],
-      "content_hash": "ea3dd40c3ad5942dfd004fe08a46db4d264cd4ace0d40bd102f6ca9878f5d451",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-08T06:36:43.808Z",
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-08T06:21:43.808Z",
-      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
-      "event_detected_at": "2026-09-07T22:37:09.924Z",
-      "event_id": "event-dd4cc5404c117c50633c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Europa",
-          "Finanzen",
-          "Demokratie"
-        ],
-        "dimensions": [],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 15.080133333333333,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 464.5647333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T06:21:43.808Z",
-        "fingerprint": "5f426df0c914b750ff27afbd0ccc845e59c2df6c6e54805bf5662d56f4a6d476",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
       "story_id": "wt-b10575d1c95b9e06",
       "slug": "serbien-feierliche-beisetzung-von-kriegsverbrecher-mladic-in-belgrad-hat-begonnen-5b9e06",
       "title": "Serbien - Feierliche Beisetzung von Kriegsverbrecher Mladić in Belgrad hat begonnen",
@@ -5289,166 +6454,6 @@
         }
       ],
       "retirement_history": []
-    },
-    {
-      "story_id": "wt-550f98293aec9698",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "956e8ce5622a2cf01215139d3ac8541271b35b707ce920dda5a779a9dfbbfb02",
-        "first_failed_at": "2026-09-08T05:22:10.164Z",
-        "failed_at": "2026-09-08T05:22:10.164Z",
-        "retry_after": "2026-09-08T05:37:10.164Z",
-        "retry_count": 1
-      },
-      "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
-      "title": "Wahlergebnis Sachsen-Anhalt: Bundesweit große Sorge nach der Wahl",
-      "first_seen": "2026-09-08T05:19:28.000Z",
-      "last_updated": "2026-09-08T05:19:28.000Z",
-      "topic": [
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
-          "title": "Wahlergebnis Sachsen-Anhalt: Bundesweit große Sorge nach der Wahl",
-          "summary": "Zwei Tage nach der Landtagswahl wird weiter über die Ergebnisse gesprochen. Die Wahl in Sachsen-Anhalt führt bundesweit zu Sorge. Die neuen Entwicklungen im Liveticker.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T05:19:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "4de280e565635f0bb00f73df52122a8f14734430148ea931d72a10d7f6e55e77",
-          "source_item_id": "d7d59be7dcb9c4682fff5fe96d7177a7e6a524e211703d13ffadd27a32dda9c3",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T05:19:28.000Z",
-          "ingested_at": "2026-09-08T05:22:10.164Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-550f98293aec9698-claim-01",
-          "story_id": "wt-550f98293aec9698",
-          "claim": "Wahlergebnis Sachsen-Anhalt: Bundesweit große Sorge nach der Wahl: Zwei Tage nach der Landtagswahl wird weiter über die Ergebnisse gesprochen. Die Wahl in Sachsen-Anhalt führt bundesweit zu Sorge. Die neuen Entwicklungen im Liveticker.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:22:10.164Z"
-        }
-      ],
-      "content_hash": "4a82635cb1e58bfd556928fa6a23a48f2f227f2d94f7e1983306809e1845db13",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-08T05:37:10.164Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T05:22:10.164Z",
-      "event_first_seen_at": "2026-09-08T05:22:10.164Z",
-      "event_detected_at": "2026-09-08T05:22:10.164Z",
-      "event_id": "event-d98ccda8e5e813b1598c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": true,
-          "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
-        },
-        "internal_relevance_score": 44,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 2.702733333333333,
-        "detection_delay_minutes": 2.702733333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T05:22:10.164Z",
-        "fingerprint": "10e9300ea4aeb07804d5a3d006359c81b43ccde088126617de14a081110cdba1",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T05:22:10.164Z",
-      "rejection": {
-        "at": "2026-09-08T05:22:10.164Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
     },
     {
       "story_id": "wt-386ff3ee7410d1bd",
@@ -9061,7 +10066,7 @@
       "verification_started_at": "2026-09-08T01:52:13.556Z",
       "publish_ready_at": "2026-09-08T01:52:26.427Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -9471,9 +10476,12 @@
         "generated_at": "2026-09-08T01:52:34.628Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "94c3954d71147c7f9aa75de618dc6806838c7f69ccbc6cefc47422c5e34024f5",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "566315d2f6d918098a64920c9cc0b9882cf4fb0ff29ce1a8a650d4956b84a616",
+        "checked_at": "2026-09-08T06:37:33.655Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T12:37:33.655Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -9508,24 +10516,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
-          "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-2cf100b273a80da8",
@@ -12450,7 +13443,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -12612,7 +13605,7 @@
       "verification_started_at": "2026-09-07T23:39:15.690Z",
       "publish_ready_at": "2026-09-07T23:39:37.569Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -13042,9 +14035,12 @@
         "generated_at": "2026-09-07T23:40:29.235Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "e5230658e38a9b3ccaa9d12b9035dab933736b521e96b99f4d3b95aa8f763331",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "4a5186bf3e10d5105495284c90dc3847e1b2a3e64dd88a1ef47993bd9ac66c23",
+        "checked_at": "2026-09-08T06:37:33.655Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T12:37:33.655Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -13086,7 +14082,7 @@
             "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
             "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T06:06:39.000Z",
+            "published_at": "2026-09-08T06:34:15.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -13102,8 +14098,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T06:06:39.000Z",
-            "ingested_at": "2026-09-08T06:21:43.808Z",
+            "source_published_at": "2026-09-08T06:34:15.000Z",
+            "ingested_at": "2026-09-08T06:37:33.655Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -13112,24 +14108,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
-          "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-cd001726db438d2d",
@@ -14648,7 +15629,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T17:08:13.000Z",
-            "ingested_at": "2026-09-08T06:21:43.808Z",
+            "ingested_at": "2026-09-08T06:37:33.655Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14669,7 +15650,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
           "issue_codes": [],
           "warning_codes": []
@@ -15785,7 +16766,7 @@
             "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
             "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T06:06:39.000Z",
+            "published_at": "2026-09-08T06:34:15.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -15801,8 +16782,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T06:06:39.000Z",
-            "ingested_at": "2026-09-08T06:21:43.808Z",
+            "source_published_at": "2026-09-08T06:34:15.000Z",
+            "ingested_at": "2026-09-08T06:37:33.655Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -15812,10 +16793,12 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T06:52:33.655Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -15823,11 +16806,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "09d4e9b44559b86fdab74ac404acd22feafa5ec6e7b5f90426be616443b3b3fa",
+        "first_failed_at": "2026-09-08T06:37:33.655Z",
+        "failed_at": "2026-09-08T06:37:33.655Z",
+        "retry_after": "2026-09-08T06:52:33.655Z",
+        "retry_count": 1
       }
     },
     {
@@ -18676,7 +19667,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T09:34:25.000Z",
-            "ingested_at": "2026-09-08T06:21:43.808Z",
+            "ingested_at": "2026-09-08T06:37:33.655Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -18697,7 +19688,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -19746,7 +20737,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "1db019db3e38cbd7a31297d78ff78c013fe66f289bde97e6059e3c3af70bc478",
           "issue_codes": [],
           "warning_codes": []
@@ -21636,10 +22627,10 @@
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH",
-          "MEDIA_IMPACT_REQUIRED"
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T06:36:43.808Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-08T07:07:33.655Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -21647,7 +22638,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -21657,9 +22648,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "448b95b9210781b0a3b73b516aba35c3e95c2f48f102dee86b7b5a02dff5cf95",
         "first_failed_at": "2026-09-08T06:21:43.808Z",
-        "failed_at": "2026-09-08T06:21:43.808Z",
-        "retry_after": "2026-09-08T06:36:43.808Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T06:37:33.655Z",
+        "retry_after": "2026-09-08T07:07:33.655Z",
+        "retry_count": 2
       }
     },
     {
@@ -22778,7 +23769,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -27386,7 +28377,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -28840,10 +29831,10 @@
       "story_id": "wt-ab8e484fc06cc08f",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "ca4f09c970c2b773f67436514f62ace2256c130fbe280a5ca2bf78b580bd535d",
-        "first_failed_at": "2026-09-07T20:36:52.379Z",
-        "failed_at": "2026-09-07T20:36:52.379Z",
-        "retry_after": "2026-09-07T20:51:52.379Z",
+        "fingerprint": "0e00cf99d44ce3aa7c582b045b79f3c4dbe3ec42a264f3004a34584fc6a263be",
+        "first_failed_at": "2026-09-08T06:37:33.655Z",
+        "failed_at": "2026-09-08T06:37:33.655Z",
+        "retry_after": "2026-09-08T06:52:33.655Z",
         "retry_count": 1
       },
       "slug": "polarised-brazil-lula-remains-a-strong-candidate-despite-the-challenges-of-incumbency-6cc08f",
@@ -28860,13 +29851,13 @@
           "publisher": "France 24",
           "url": "https://www.france24.com/en/tv-shows/spotlight/20260907-polarised-brazil-lula-remains-a-strong-candidate-despite-the-challenges-of-incumbency",
           "title": "'Polarised Brazil': Lula remains a ‘strong candidate’ despite the challenges of incumbency",
-          "summary": "François Picard is pleased to welcome Andreza Aruska de Souza Santos, Director of King’s Brazil Institute at the School of Global Affairs, King’s College London and Associate Professor in Brazil and Latin American Studies. According to Aruska, Brazil’s approaching elections can be viewed through the following prism: macroeconomic performance and political confidence are moving on different tracks. While headline indicators may suggest an economy performing relatively well, she argues that many Brazilians experience a much harsher reality shaped by the cost of living and a volatile job market.",
+          "summary": "François Picard is pleased to welcome Andreza Aruska de Souza Santos, Director of King’s Brazil Institute at the School of Global Affairs, King’s College London and Associate Professor in Brazil and Latin American Studies. According to Aruska, Brazil’s approaching elections can be viewed through competing prisms: macroeconomic performance and political confidence are moving on different tracks. While headline indicators may suggest an economy performing relatively well, she argues that many Brazilians experience a much harsher reality shaped by the cost of living and a volatile job market.",
           "source_type": "media_rss",
           "published_at": "2026-09-07T18:50:52.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Geopolitik",
-          "content_hash": "97abb490bcac2290bedd79cd607c489a5393ee39144b2d9cdc3ae78db2e223aa",
+          "content_hash": "5e812ae4a8a69acd8f75a6c4ed629b208ac29b6e4a125a92b66a37a48d31c721",
           "source_item_id": "1ebb9580cd605323288f25bf132e8583323793f2c003c6a58ea526e45d1e681a",
           "publisher_id": "france24",
           "publisher_kind": "public_broadcasting",
@@ -28878,7 +29869,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-07T18:50:52.000Z",
-          "ingested_at": "2026-09-07T20:36:52.379Z",
+          "ingested_at": "2026-09-08T06:37:33.655Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -28892,7 +29883,7 @@
         {
           "claim_id": "wt-ab8e484fc06cc08f-claim-01",
           "story_id": "wt-ab8e484fc06cc08f",
-          "claim": "'Polarised Brazil': Lula remains a ‘strong candidate’ despite the challenges of incumbency: François Picard is pleased to welcome Andreza Aruska de Souza Santos, Director of King’s Brazil Institute at the School of Global Affairs, King’s College London and Associate Professor in Brazil and Latin American Studies. According to Aruska, Brazil’s approaching elections can be viewed through the following prism: macroeconomic performance and political confidence are moving on different tracks. While headline indicators may suggest an economy performing relatively well, she argues that many Brazilians experience a much harsher reality shaped by the cost of living and a volatile job market.",
+          "claim": "'Polarised Brazil': Lula remains a ‘strong candidate’ despite the challenges of incumbency: François Picard is pleased to welcome Andreza Aruska de Souza Santos, Director of King’s Brazil Institute at the School of Global Affairs, King’s College London and Associate Professor in Brazil and Latin American Studies. According to Aruska, Brazil’s approaching elections can be viewed through competing prisms: macroeconomic performance and political confidence are moving on different tracks. While headline indicators may suggest an economy performing relatively well, she argues that many Brazilians experience a much harsher reality shaped by the cost of living and a volatile job market.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "france24-en",
           "source_function": "journalistic_report",
@@ -28907,20 +29898,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T20:36:52.379Z"
+          "checked_at": "2026-09-08T06:37:33.655Z"
         }
       ],
-      "content_hash": "35e5335fad996ac6fd51e5b0695ffa4f2cdc82e94a5f8dbdc0b0ea2a2639c72f",
+      "content_hash": "55fe032b173033dde89397ed4604c88c1e9a3110716dd1d7b220fa9cfbf08a93",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
         "AI_MATERIALITY_TOO_LOW"
       ],
-      "quality_retry_after": "2026-09-07T20:51:52.379Z",
+      "quality_retry_after": "2026-09-08T06:52:33.655Z",
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-07T20:36:52.379Z",
+      "updated_at": "2026-09-08T06:37:33.655Z",
       "event_first_seen_at": "2026-09-07T20:36:52.379Z",
       "event_detected_at": "2026-09-07T20:36:52.379Z",
       "event_id": "event-b6be8b13fc453363bca0",
@@ -28956,29 +29947,29 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 106.00631666666666,
+        "source_age_minutes": 706.69425,
         "detection_delay_minutes": 106.00631666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 600.6879333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 78,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T20:36:52.379Z",
-        "fingerprint": "d1f3c577b57104f5a46425a012aaa246cd5b61a898b060505863e259b23d7664",
+        "checked_at": "2026-09-08T06:37:33.655Z",
+        "fingerprint": "a0f6aed52ada40a5a3dc10016017b08c896ed4dc155dfc4a15c0270a27bccce6",
         "issue_codes": [],
         "warning_codes": []
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T20:36:52.379Z",
+      "rejected_at": "2026-09-08T06:37:33.655Z",
       "rejection": {
-        "at": "2026-09-07T20:36:52.379Z",
+        "at": "2026-09-08T06:37:33.655Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -31379,9 +32370,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T06:21:43.808Z",
+        "checked_at": "2026-09-08T06:37:33.655Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T12:21:43.808Z",
+        "expires_at": "2026-09-08T12:37:33.655Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -36057,7 +37048,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -40754,7 +41745,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -50538,214 +51529,6 @@
       }
     },
     {
-      "story_id": "wt-8abfde3cda3a727f",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "88804e9531f30cf931974d2d782690f6f8167dd6da477a6fcf2ce8c77e3d3d3b",
-        "first_failed_at": "2026-09-07T16:21:31.934Z",
-        "failed_at": "2026-09-07T16:21:31.934Z",
-        "retry_after": "2026-09-07T16:36:31.934Z",
-        "retry_count": 1
-      },
-      "slug": "landtagswahlen-in-sachsen-anhalt-die-afd-gewinnt-in-der-mitte-der-gesellschaft-3a727f",
-      "title": "Landtagswahlen in Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft",
-      "first_seen": "2026-09-07T09:30:06.000Z",
-      "last_updated": "2026-09-07T15:10:00.000Z",
-      "topic": [
-        "Soziales",
-        "Wirtschaft",
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/deutschland/landtagswahlen-in-sachsen-anhalt-woher-die-afd-ihre-staerke-nimmt/100252512.html",
-          "title": "Landtagswahlen in Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft",
-          "summary": "Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T09:30:06.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "a27e146f3b5081910f10c6c8cb786c2d3725305bae01f652b91201b3ce0dabbd",
-          "source_item_id": "374c28b1c6a5f21a36f4322a333c2b93a21ebad5c1afa21b899e661dd9c65e57",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T09:30:06.000Z",
-          "ingested_at": "2026-09-07T10:51:38.130Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/politik/deutschland/afd-gewinnt-landtagswahlen-in-sachsen-anhalt-woher-die-afd-ihre-staerke-nimmt/100252512.html",
-          "title": "Landtagswahl Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft",
-          "summary": "Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T15:10:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "2d29c819474417a60edac7cab2bc496639699aa9a6089c3597263f6db1391943",
-          "source_item_id": "8674418d9329e9d307be17428e2bbceeb2382796e827cc19acfc4bd5654b1112",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T15:10:00.000Z",
-          "ingested_at": "2026-09-07T16:07:11.255Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-8abfde3cda3a727f-claim-01",
-          "story_id": "wt-8abfde3cda3a727f",
-          "claim": "Landtagswahlen in Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft: Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T16:21:31.934Z"
-        },
-        {
-          "claim_id": "wt-8abfde3cda3a727f-claim-02",
-          "story_id": "wt-8abfde3cda3a727f",
-          "claim": "Landtagswahl Sachsen-Anhalt: Die AfD gewinnt in der Mitte der Gesellschaft: Zur Wahl in Sachsen-Anhalt trauten die Menschen der rechtsextremen Partei bei Wirtschaft, Sozialem und Bildung am meisten zu – mehr als CDU und SPD.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T16:21:31.934Z"
-        }
-      ],
-      "content_hash": "5b0af1ce0d6ccbc74d9b7e105a41739452664b39e0273db6903b3d5e2dbba549",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-07T16:36:31.934Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T16:21:31.934Z",
-      "event_first_seen_at": "2026-09-07T09:36:56.459Z",
-      "event_detected_at": "2026-09-07T09:36:56.459Z",
-      "event_id": "event-f31f12e8cd8fc9656e18",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Soziales",
-          "Wirtschaft",
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Mensch",
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 71.53223333333334,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 404.59125,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 85,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T16:21:31.934Z",
-        "fingerprint": "73570763da48b3ab6fb96edeab7e1783d3cf9dcf73b51494f84dc775498b116a",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T16:21:31.934Z",
-      "rejection": {
-        "at": "2026-09-07T16:21:31.934Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
-        ]
-      }
-    },
-    {
       "story_id": "wt-acb87769c2d31c45",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -55576,7 +56359,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -73415,7 +74198,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T06:21:43.808Z",
+          "ingested_at": "2026-09-08T06:37:33.655Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -73476,7 +74259,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:21:43.808Z"
+          "checked_at": "2026-09-08T06:37:33.655Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -73496,7 +74279,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:21:43.808Z"
+          "checked_at": "2026-09-08T06:37:33.655Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -73512,7 +74295,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T06:21:43.808Z",
+      "updated_at": "2026-09-08T06:37:33.655Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -73552,7 +74335,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1274.84075,
+        "queue_age_minutes": 1290.6715333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -73561,7 +74344,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T06:21:43.808Z",
+        "checked_at": "2026-09-08T06:37:33.655Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -93769,7 +94552,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -94462,7 +95245,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -95216,7 +95999,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T06:21:43.808Z",
+            "ingested_at": "2026-09-08T06:37:33.655Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -95237,7 +96020,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -95885,8 +96668,8 @@
         "quality_errors": [
           "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T06:36:43.808Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-08T07:07:33.655Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -95894,7 +96677,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -95904,9 +96687,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "fbee0412c89ff6cf43c964b36379370bb741e6f4f69cfbde24fb7cda9bc8ad20",
         "first_failed_at": "2026-09-08T06:21:43.808Z",
-        "failed_at": "2026-09-08T06:21:43.808Z",
-        "retry_after": "2026-09-08T06:36:43.808Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T06:37:33.655Z",
+        "retry_after": "2026-09-08T07:07:33.655Z",
+        "retry_count": 2
       }
     },
     {
@@ -123608,7 +124391,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -129638,7 +130421,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -173992,7 +174775,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:21:43.808Z",
+          "checked_at": "2026-09-08T06:37:33.655Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -232986,11 +233769,11 @@
         "status": "generated"
       },
       "review_checkpoint": {
-        "version": "evidence-packet-1",
-        "fingerprint": "240974b74336bfd4f6d2b2c26cb8e4db24f168cfe2336326d665f03a2edcc953",
-        "checked_at": "2026-09-04T15:51:24.598Z",
+        "version": "evidence-packet-3",
+        "fingerprint": "25ed0c304b3c6cb993b9bc45acbd729cc490415e106552bd7c9bb99d0d3faae0",
+        "checked_at": "2026-09-08T06:37:33.655Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-04T21:51:24.598Z",
+        "expires_at": "2026-09-08T12:37:33.655Z",
         "sources": [
           {
             "source_id": "bundesregierung-kompakt",
@@ -233018,6 +233801,39 @@
             "ingested_at": "2026-09-04T15:51:24.598Z",
             "provenance": {
               "origin": "publisher:bundesregierung",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "heise-wirtschaft",
+            "publisher": "heise online - Wirtschaft",
+            "url": "https://www.heise.de/news/Start-up-Ground-A-will-Kritische-Infrastruktur-mit-Laserwaffe-schuetzen-11444563.html?wt_mc=rss.red.ho.beitrag.atom.beitrag.beitrag",
+            "title": "Start-up Ground A will Kritische Infrastruktur mit Laserwaffe schützen",
+            "summary": "Ground A hat eine Laserwaffe entwickelt, die zum Schutz Kritischer Infrastrukturen vor Drohnen eingesetzt werden kann. Gesetzliche Anpassungen sind nötig.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T05:53:00.000Z",
+            "primary_source": false,
+            "source_priority": 78,
+            "source_topic": "Wirtschaft",
+            "content_hash": "40bc986ef6764f99a8fda0c596e44e2ca517d9804972d473c40171deb44abd28",
+            "source_item_id": "660c7243301643f62faa659a7bec2b0c108e6c5036bbb61cc805b84743a12d93",
+            "publisher_id": "heise",
+            "publisher_kind": "specialist_journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "blindspot",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T05:53:00.000Z",
+            "ingested_at": "2026-09-08T06:37:33.655Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:heise",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
@@ -233076,12 +233892,14 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-03T10:12:04.000Z",
-            "ingested_at": "2026-09-04T15:51:24.598Z",
+            "ingested_at": "2026-09-08T06:37:33.655Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
-            }
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
           },
           {
             "source_id": "dlf-gesellschaft",
@@ -233106,12 +233924,14 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-04T15:43:00.000Z",
-            "ingested_at": "2026-09-04T15:51:24.598Z",
+            "ingested_at": "2026-09-08T06:37:33.655Z",
             "provenance": {
               "origin": "publisher:deutschlandfunk",
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
-            }
+            },
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown"
           }
         ]
       }
