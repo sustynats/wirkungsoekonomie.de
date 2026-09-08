@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T21:36:51.819Z",
-  "updated_at": "2026-09-08T21:52:27.208Z",
+  "updated_at": "2026-09-08T22:07:00.398Z",
   "stories": [
     {
       "story_id": "wt-5a2fe52ebad137c3",
@@ -1573,6 +1573,49 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T22:07:00.398Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T21:24:10.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T21:24:10.000Z",
+              "ingested_at": "2026-09-08T21:52:27.208Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-08T11:06:00.000Z",
@@ -1649,39 +1692,6 @@
           },
           "collection_source_id": "swr-aktuell",
           "collection_publisher_id": "swr"
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T21:24:10.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-          "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T21:24:10.000Z",
-          "ingested_at": "2026-09-08T21:52:27.208Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
         }
       ],
       "claims": [
@@ -1703,7 +1713,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T21:52:27.208Z"
+          "checked_at": "2026-09-08T22:07:00.398Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -1724,40 +1734,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T21:52:27.208Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-03",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T21:52:27.208Z"
+          "checked_at": "2026-09-08T22:07:00.398Z"
         }
       ],
-      "content_hash": "8be4a3a6fdf34f22f2d124abde2ed1bfe6de5b1c86f50c765c03f298c5d23ac4",
+      "content_hash": "c8ce372d04f82ecc364b86c165a7874db7627cd12928239fff886f2afaba9f54",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 14,
       "quality_retry_after": "2026-09-08T22:22:27.208Z",
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
       "updated_at": "2026-09-08T21:52:27.208Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
@@ -6728,7 +6716,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T19:54:55.296Z"
+        "retry_after": "2026-09-08T22:24:30.484Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -13984,7 +13972,7 @@
       "verification_started_at": "2026-09-08T17:39:08.268Z",
       "publish_ready_at": "2026-09-08T17:39:25.030Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-08T18:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -14428,11 +14416,14 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T19:40:29.923Z"
+        "retry_after": "2026-09-08T22:24:20.606Z"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T18:03:03.803Z",
-        "content_hash": "a500d34e7dbbe43b70282897bb0d692097dd3f7683236521849e31fc3588126a",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "4f43669bae3122a74ed27a35856fb5ed3a87e7ff2035fd22a9e0e06334729df6",
+        "checked_at": "2026-09-08T22:07:00.398Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-09T04:07:00.398Z",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -14466,24 +14457,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
-          "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-0f2ae8650748e579",
@@ -27759,7 +27735,7 @@
       "verification_started_at": "2026-09-08T13:38:15.754Z",
       "publish_ready_at": "2026-09-08T13:38:38.411Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -28167,9 +28143,12 @@
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T20:23:13.063Z"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T14:06:56.372Z",
-        "content_hash": "a2dd6deb1e637f49b1950c7b04ca5656be003fdf7e24e5a555c96d4997953ff5",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "039c12d8bdfb39098ed5a8774d8cec851fbbdb2b7d11d1006ab3d25666a317e2",
+        "checked_at": "2026-09-08T22:07:00.398Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-09T04:07:00.398Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -28204,24 +28183,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
-          "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-84ac3f26c7762712",
@@ -30140,7 +30104,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T19:40:35.411Z"
+        "retry_after": "2026-09-08T22:24:25.695Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -50149,7 +50113,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T21:52:27.208Z"
+          "checked_at": "2026-09-08T22:07:00.398Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -50164,7 +50128,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T21:52:27.208Z",
+      "updated_at": "2026-09-08T22:07:00.398Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -50205,7 +50169,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 705.0180166666667,
+        "queue_age_minutes": 719.5711833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -50214,7 +50178,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T21:52:27.208Z",
+        "checked_at": "2026-09-08T22:07:00.398Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -50284,7 +50248,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T21:52:27.208Z"
+          "checked_at": "2026-09-08T22:07:00.398Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -50299,7 +50263,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T21:52:27.208Z",
+      "updated_at": "2026-09-08T22:07:00.398Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -50339,7 +50303,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 705.0180166666667,
+        "queue_age_minutes": 719.5711833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -50348,7 +50312,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T21:52:27.208Z",
+        "checked_at": "2026-09-08T22:07:00.398Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -54587,10 +54551,14 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T22:22:00.398Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -54598,11 +54566,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
+          "checked_at": "2026-09-08T22:07:00.398Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "98ad7c75c02781f07691464bdf43c44bbd1faecc7e203c47ecaf8c2458788619",
+        "first_failed_at": "2026-09-08T22:07:00.398Z",
+        "failed_at": "2026-09-08T22:07:00.398Z",
+        "retry_after": "2026-09-08T22:22:00.398Z",
+        "retry_count": 1
       }
     },
     {
@@ -67807,10 +67783,13 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T22:22:00.398Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -67818,11 +67797,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
+          "checked_at": "2026-09-08T22:07:00.398Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "66d6205e1bce3e8582cd2dd89436ee032a12773dfafe99c21105b58b71f882a2",
+        "first_failed_at": "2026-09-08T22:07:00.398Z",
+        "failed_at": "2026-09-08T22:07:00.398Z",
+        "retry_after": "2026-09-08T22:22:00.398Z",
+        "retry_count": 1
       }
     },
     {
@@ -69980,9 +69967,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T21:52:27.208Z",
+        "checked_at": "2026-09-08T22:07:00.398Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T03:52:27.208Z",
+        "expires_at": "2026-09-09T04:07:00.398Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -80880,7 +80867,7 @@
       "verification_started_at": "2026-09-07T18:55:02.635Z",
       "publish_ready_at": "2026-09-07T18:55:13.842Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -81337,10 +81324,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "8c6113a19499f41e1ed55c940ed38aa8a3debd35c9853ef6c845c837e29ee38b",
-        "checked_at": "2026-09-08T07:51:43.705Z",
+        "fingerprint": "a45c20af4c01bb5ceb2692714d55c9eeb52cff81563b99ea75533740bc3d4d65",
+        "checked_at": "2026-09-08T22:07:00.398Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T13:51:43.705Z",
+        "expires_at": "2026-09-09T04:07:00.398Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -81410,95 +81397,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "465204f206f9c6c7ac230363258b7f53ad73c7205826e25e9c27fe08dbaf6cf4",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/siegmund-lehnt-afd-gefuehrte-minderheitsregierung-in-sachsen-anhalt-ab-38213528.html",
-            "title": "Siegmund lehnt AfD-geführte Minderheitsregierung in Sachsen-Anhalt ab",
-            "summary": "Sachsen-Anhalts AfD-Spitzenkandidat Ulrich Siegmund lehnt eine Minderheitsregierung unter Führung seiner Partei ab, falls diese nicht die absolute Mehrheit der Mandate gewinnt. Nach dem Wahlsieg werde es „keine Konstellationen geben mit Minderheitsregierung oder sowas“, sagte Siegmund am Sonntagabend im ZDF. Prinzipiell wäre die AfD zwar offen für eine Koalition mit einer Partei, die einen neuen Kurs in der Migrations- und Energiepolitik umsetzen wolle, einen derartigen Partner sehe er aber derzeit nicht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T17:33:54.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "323087481190f26cbc73c5ccff46f2c246d488914adcce13ac675665fe040dec",
-            "source_item_id": "7189eac3b2a814ce1007ffc7ee446bc911bfe4f8012391d10a7d17c077732b24",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T17:33:54.000Z",
-            "ingested_at": "2026-09-06T17:52:07.787Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-136,wahl-560.html",
-            "title": "Wahl Sachsen-Anhalt im Liveticker: Siegmund lehnt Minderheitsregierung ab",
-            "summary": "Die Hochrechnung sieht die AfD in Sachsen-Anhalt bei 44,4 Prozent. Im Liveticker berichten wir über Ergebnisse und Reaktionen – und die Frage, ob eine absolute Mehrheit möglich wäre.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T17:50:23.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "ce24fdad0fb141f17f1fcbef4f59bd13dfb394e6f16ba961b875959e69ca4bbf",
-            "source_item_id": "a60619ee80ae649ac50315b6115bde1c5f927454f0df5f73976a5b58bd30a01e",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T17:50:23.000Z",
-            "ingested_at": "2026-09-06T17:52:07.787Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
-          "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-bcc7ea8be6f1bb47",
@@ -85486,9 +85385,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-08T21:52:27.208Z",
+        "checked_at": "2026-09-08T22:07:00.398Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T03:52:27.208Z",
+        "expires_at": "2026-09-09T04:07:00.398Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -126016,7 +125915,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T21:52:27.208Z"
+          "checked_at": "2026-09-08T22:07:00.398Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -126036,7 +125935,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T21:52:27.208Z"
+          "checked_at": "2026-09-08T22:07:00.398Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -126052,7 +125951,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T21:52:27.208Z",
+      "updated_at": "2026-09-08T22:07:00.398Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -126092,7 +125991,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2205.564083333333,
+        "queue_age_minutes": 2220.11725,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -126101,7 +126000,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T21:52:27.208Z",
+        "checked_at": "2026-09-08T22:07:00.398Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -146871,9 +146770,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "ab1d0f1922c91148fba8604710aeaa9e87f6412e8c8e9fd292418267a75b35d7",
         "first_failed_at": "2026-09-08T07:51:43.705Z",
-        "failed_at": "2026-09-08T08:06:49.615Z",
-        "retry_after": "2026-09-08T08:36:49.615Z",
-        "retry_count": 2
+        "failed_at": "2026-09-08T22:07:00.398Z",
+        "retry_after": "2026-09-08T23:07:00.398Z",
+        "retry_count": 3
       },
       "pending_update": {
         "detected_at": "2026-09-08T10:07:26.127Z",
@@ -146911,10 +146810,14 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T23:07:00.398Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -146922,7 +146825,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
+          "checked_at": "2026-09-08T22:07:00.398Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -147686,10 +147589,13 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T22:22:00.398Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -147697,11 +147603,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
+          "checked_at": "2026-09-08T22:07:00.398Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "1e40bf66e5ea96605f56ccdbd56f9de7bc15c3f525c19aa4e97a0236db1c8d88",
+        "first_failed_at": "2026-09-08T22:07:00.398Z",
+        "failed_at": "2026-09-08T22:07:00.398Z",
+        "retry_after": "2026-09-08T22:22:00.398Z",
+        "retry_count": 1
       }
     },
     {
@@ -181883,7 +181797,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
+          "checked_at": "2026-09-08T22:07:00.398Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -226277,7 +226191,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T21:52:27.208Z",
+          "checked_at": "2026-09-08T22:07:00.398Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
