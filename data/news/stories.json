@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T07:36:44.231Z",
-  "updated_at": "2026-09-08T07:36:44.231Z",
+  "updated_at": "2026-09-08T07:51:43.705Z",
   "stories": [
     {
       "story_id": "wt-3832ac28950296cb",
@@ -2490,6 +2490,315 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-dbc644779e2aac60",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d925253d820d448854b870d50309fc03626091c6e898b975c5e5374968a365d0",
+        "first_failed_at": "2026-09-08T07:51:43.705Z",
+        "failed_at": "2026-09-08T07:51:43.705Z",
+        "retry_after": "2026-09-08T08:06:43.705Z",
+        "retry_count": 1
+      },
+      "slug": "energieversorgung-verband-komplett-leere-gasspeicher-im-februar-sind-moglich-2aac60",
+      "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
+      "first_seen": "2026-09-08T04:01:14.000Z",
+      "last_updated": "2026-09-08T07:26:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "heise-wirtschaft",
+          "publisher": "heise online - Wirtschaft",
+          "url": "https://www.heise.de/news/Verband-Komplett-leere-Gasspeicher-im-Februar-sind-moeglich-11444697.html?wt_mc=rss.red.ho.beitrag.atom.beitrag.beitrag",
+          "title": "Verband: Komplett leere Gasspeicher im Februar sind möglich",
+          "summary": "Deutschlands Gasspeicher könnten bei einem sehr kalten Winter bereits im Februar leer sein. Der Verband Ines fordert nun Anreize für eine bessere Befüllung.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:26:00.000Z",
+          "primary_source": false,
+          "source_priority": 78,
+          "source_topic": "Wirtschaft",
+          "content_hash": "4cb862e669cc3f08318040180db8e2a067a054adfab086386d057c8ff34ead05",
+          "source_item_id": "f72c470df22cb95dbd3ac437930b201eb2fdcbac572c304a7f806a8c06ee019c",
+          "publisher_id": "heise",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:26:00.000Z",
+          "ingested_at": "2026-09-08T07:51:43.705Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-energieversorgung-16028927.html",
+          "title": "Verband warnt: Komplett leere Gasspeicher im Februar sind möglich",
+          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:01:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "75347356b7a7e0950be77a7a848cf0f950faae02369fad60dac3473a536460fb",
+          "source_item_id": "5a0b503e8d641bc809c318d01e8bcdf3152569ca56c8718d5d177bf3921191a5",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:01:14.000Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/energieversorgung-verband-komplett-leere-gasspeicher-im-februar-sind-moeglich/100252759.html",
+          "title": "Branchenschätzung: Komplett leere Gasspeicher im Februar sind möglich",
+          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:50:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "c5c20fc00e672d3bfdc630c6a9c04682c851749996503ac698feee2cecfadc55",
+          "source_item_id": "e98e7c26be1525ecd279a065f43fd181c2f6571f8f92b7357aa5e74a287388b7",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:50:00.000Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/wirtschaft/news/energieversorgung--verband--komplett-leere-gasspeicher-im-februar-sind-moeglich-38218448.html",
+          "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
+          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:00:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "53e1db687df2dd9fb0364c56b6ce21b9845ed2f14be56df6fba2367565264a83",
+          "source_item_id": "01f8d0f70d97024f72fea3bff68ef4ca6601eaf845ea268fc3f3c7b51249a9c2",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:00:05.000Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-dbc644779e2aac60-claim-01",
+          "story_id": "wt-dbc644779e2aac60",
+          "claim": "Verband: Komplett leere Gasspeicher im Februar sind möglich: Deutschlands Gasspeicher könnten bei einem sehr kalten Winter bereits im Februar leer sein. Der Verband Ines fordert nun Anreize für eine bessere Befüllung.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "heise-wirtschaft",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:51:43.705Z"
+        },
+        {
+          "claim_id": "wt-dbc644779e2aac60-claim-02",
+          "story_id": "wt-dbc644779e2aac60",
+          "claim": "Verband warnt: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:51:43.705Z"
+        },
+        {
+          "claim_id": "wt-dbc644779e2aac60-claim-03",
+          "story_id": "wt-dbc644779e2aac60",
+          "claim": "Branchenschätzung: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:51:43.705Z"
+        },
+        {
+          "claim_id": "wt-dbc644779e2aac60-claim-04",
+          "story_id": "wt-dbc644779e2aac60",
+          "claim": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T07:51:43.705Z"
+        }
+      ],
+      "content_hash": "f141106a549b278943b9a7cfe7611c49b68c94374c3ba750ac5b3b9026e48265",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T08:06:43.705Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T07:51:43.705Z",
+      "event_first_seen_at": "2026-09-08T04:06:45.170Z",
+      "event_detected_at": "2026-09-08T04:06:45.170Z",
+      "event_id": "event-9282548dfd75495b433a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 25.728416666666668,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 224.97558333333333,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T07:51:43.705Z",
+        "fingerprint": "dd7f45a3668904893cbe7cd1fc5083f93498e2223f72528c0cea8b2bce4bca8b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T07:51:43.705Z",
+      "rejection": {
+        "at": "2026-09-08T07:51:43.705Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -10929,262 +11238,6 @@
       "deepening_checks": 1
     },
     {
-      "story_id": "wt-dbc644779e2aac60",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "3ee210d57940508173357c04ec22a2d097efb20da45406bd8ded1eeeabed23f5",
-        "first_failed_at": "2026-09-08T04:52:08.677Z",
-        "failed_at": "2026-09-08T04:52:08.677Z",
-        "retry_after": "2026-09-08T05:07:08.677Z",
-        "retry_count": 1
-      },
-      "slug": "energieversorgung-verband-komplett-leere-gasspeicher-im-februar-sind-moglich-2aac60",
-      "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
-      "first_seen": "2026-09-08T04:01:14.000Z",
-      "last_updated": "2026-09-08T04:50:00.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-energieversorgung-16028927.html",
-          "title": "Verband warnt: Komplett leere Gasspeicher im Februar sind möglich",
-          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T04:01:14.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "75347356b7a7e0950be77a7a848cf0f950faae02369fad60dac3473a536460fb",
-          "source_item_id": "5a0b503e8d641bc809c318d01e8bcdf3152569ca56c8718d5d177bf3921191a5",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T04:01:14.000Z",
-          "ingested_at": "2026-09-08T04:52:08.677Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/energieversorgung-verband-komplett-leere-gasspeicher-im-februar-sind-moeglich/100252759.html",
-          "title": "Branchenschätzung: Komplett leere Gasspeicher im Februar sind möglich",
-          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T04:50:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "c5c20fc00e672d3bfdc630c6a9c04682c851749996503ac698feee2cecfadc55",
-          "source_item_id": "e98e7c26be1525ecd279a065f43fd181c2f6571f8f92b7357aa5e74a287388b7",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T04:50:00.000Z",
-          "ingested_at": "2026-09-08T04:52:08.677Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/wirtschaft/news/energieversorgung--verband--komplett-leere-gasspeicher-im-februar-sind-moeglich-38218448.html",
-          "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
-          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T04:00:05.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "53e1db687df2dd9fb0364c56b6ce21b9845ed2f14be56df6fba2367565264a83",
-          "source_item_id": "01f8d0f70d97024f72fea3bff68ef4ca6601eaf845ea268fc3f3c7b51249a9c2",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T04:00:05.000Z",
-          "ingested_at": "2026-09-08T04:52:08.677Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-dbc644779e2aac60-claim-01",
-          "story_id": "wt-dbc644779e2aac60",
-          "claim": "Verband warnt: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:52:08.677Z"
-        },
-        {
-          "claim_id": "wt-dbc644779e2aac60-claim-02",
-          "story_id": "wt-dbc644779e2aac60",
-          "claim": "Branchenschätzung: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:52:08.677Z"
-        },
-        {
-          "claim_id": "wt-dbc644779e2aac60-claim-03",
-          "story_id": "wt-dbc644779e2aac60",
-          "claim": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:52:08.677Z"
-        }
-      ],
-      "content_hash": "807ea26d44b1c25f5e12b890ceec98d53c2aaa7dd8c6bb54deee9b9ad62eb823",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T05:07:08.677Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T04:52:08.677Z",
-      "event_first_seen_at": "2026-09-08T04:06:45.170Z",
-      "event_detected_at": "2026-09-08T04:06:45.170Z",
-      "event_id": "event-9282548dfd75495b433a",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 2.144616666666667,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 45.391783333333336,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 100,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T04:52:08.677Z",
-        "fingerprint": "2b35831388503ab9021483c363604db88caad9c52c52a0b25efca7341b7cc0ee",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T04:52:08.677Z",
-      "rejection": {
-        "at": "2026-09-08T04:52:08.677Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-e1047174e6d92607",
       "slug": "wohngeld-spd-und-grune-in-hamburg-fordern-rucknahme-von-kurzungen-d92607",
       "title": "Wohngeld: SPD und Grüne in Hamburg fordern Rücknahme von Kürzungen",
@@ -18593,7 +18646,7 @@
       "verification_started_at": "2026-09-07T23:38:26.965Z",
       "publish_ready_at": "2026-09-07T23:38:39.716Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -18921,9 +18974,12 @@
         "generated_at": "2026-09-07T23:40:13.390Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "cb6fb8d76924cede5fcffb29dbffe08141d840a1fffd6c807fa9b47617864fc7",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "ac0c3f0bd0c47d6922962f12f2fabfe0aa2aa7efee3c5baea29e8540b5644495",
+        "checked_at": "2026-09-08T07:51:43.705Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T13:51:43.705Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -18957,24 +19013,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T07:36:44.231Z",
-          "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-02136b7b66b5f660",
@@ -30461,7 +30502,7 @@
       "verification_started_at": "2026-09-07T18:55:02.635Z",
       "publish_ready_at": "2026-09-07T18:55:13.842Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -30916,9 +30957,12 @@
         "generated_at": "2026-09-07T18:56:35.157Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "465204f206f9c6c7ac230363258b7f53ad73c7205826e25e9c27fe08dbaf6cf4",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "8c6113a19499f41e1ed55c940ed38aa8a3debd35c9853ef6c845c837e29ee38b",
+        "checked_at": "2026-09-08T07:51:43.705Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T13:51:43.705Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -30986,24 +31030,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T07:36:44.231Z",
-          "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-bcc7ea8be6f1bb47",
@@ -34991,9 +35020,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T07:36:44.231Z",
+        "checked_at": "2026-09-08T07:51:43.705Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T13:36:44.231Z",
+        "expires_at": "2026-09-08T13:51:43.705Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -76534,7 +76563,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T07:36:44.231Z"
+          "checked_at": "2026-09-08T07:51:43.705Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -76554,7 +76583,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T07:36:44.231Z"
+          "checked_at": "2026-09-08T07:51:43.705Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -76570,7 +76599,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T07:36:44.231Z",
+      "updated_at": "2026-09-08T07:51:43.705Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -76610,7 +76639,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1349.8478,
+        "queue_age_minutes": 1364.8390333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -76619,7 +76648,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T07:36:44.231Z",
+        "checked_at": "2026-09-08T07:51:43.705Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -97420,10 +97449,12 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T08:06:43.705Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -97431,11 +97462,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T07:36:44.231Z",
+          "checked_at": "2026-09-08T07:51:43.705Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ab1d0f1922c91148fba8604710aeaa9e87f6412e8c8e9fd292418267a75b35d7",
+        "first_failed_at": "2026-09-08T07:51:43.705Z",
+        "failed_at": "2026-09-08T07:51:43.705Z",
+        "retry_after": "2026-09-08T08:06:43.705Z",
+        "retry_count": 1
       }
     },
     {
@@ -97584,7 +97623,7 @@
       "verification_started_at": "2026-09-06T20:07:34.489Z",
       "publish_ready_at": "2026-09-06T20:07:42.987Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -98119,48 +98158,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "c1a1c5378b2bfb1818afe0a559f3c8eec3326fa5fb621db0826e498f6c56c7da",
-        "checked_at": "2026-09-07T23:37:00.002Z",
+        "checked_at": "2026-09-08T07:51:43.705Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T05:37:00.002Z",
-        "sources": [
-          {
-            "source_id": "destatis-aktuell",
-            "publisher": "Statistisches Bundesamt",
-            "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/09/PD26_N061_63.html",
-            "title": "Ruheständler-Haushalte verfügen im Mittel über 2 330 Euro pro Monat",
-            "summary": "Haushalte von Ruheständlerinnen und Ruheständlern ab 65 Jahren haben im Mittel 2 330 Euro pro Monat zur Verfügung. In den östlichen Bundesländern einschließlich Berlin verfügen Haushalte von Personen im Ruhestand ab 65 Jahren über ein mittleres Haushaltsnettoeinkommen (Median) von 2 270 Euro im Monat, in den westlichen Ländern sind es 2 350 Euro. Das teilt das Statistische Bundesamt (Destatis) nach Ergebnissen der europäischen Gemeinschaftsstatistik über Einkommen und Lebensbedingungen (EU-SILC) 2025 mit.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-01T06:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 95,
-            "source_topic": "Wirtschaft",
-            "content_hash": "e7365f28a8f6a08602fbc1e38782119bebf3184fb7dc462e7d66ff0c03ed0ec0",
-            "source_item_id": "9b36260f37c035ba7be21ca91d696d22762bda5990a1a50ad72f7f8730baf268",
-            "publisher_id": "destatis-aktuell",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-07T23:37:00.002Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:destatis-aktuell",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "96f24e0ffb1e0d1c0e5925d1e50278397ec1b215d4ee6ec0d3414053a8727729",
+        "expires_at": "2026-09-08T13:51:43.705Z",
         "sources": [
           {
             "source_id": "destatis-aktuell",
@@ -98194,24 +98194,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T07:36:44.231Z",
-          "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-12f9c680daba4f09",
@@ -126012,7 +125997,7 @@
       "verification_started_at": "2026-09-06T10:39:23.781Z",
       "publish_ready_at": "2026-09-06T10:39:49.245Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -126424,57 +126409,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "336033b500d4cff3e47780737312d702e705ceb5b8a18313e7b938bfa47a9f07",
-        "checked_at": "2026-09-07T18:37:02.679Z",
+        "fingerprint": "444487da16ea4b40ae99b09411bf69ed48355c4d30f74a9b3f40740e6ddb8c03",
+        "checked_at": "2026-09-08T07:51:43.705Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T00:37:02.679Z",
-        "sources": [
-          {
-            "source_id": "destatis-aktuell",
-            "publisher": "Statistisches Bundesamt",
-            "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_311_611.html",
-            "title": "Inflationsrate im August 2026 voraussichtlich +2,9 %",
-            "summary": "Die Inflationsrate in Deutschland wird im August 2026 voraussichtlich +2,9 % betragen. Gemessen wird sie als Veränderung des Verbraucherpreisindex (VPI) zum Vorjahresmonat. Wie das Statistische Bundesamt (Destatis) nach bisher vorliegenden Ergebnissen weiter mitteilt, steigen die Verbraucherpreise gegenüber Juli 2026 um 0,2 %. Die Inflationsrate ohne Nahrungsmittel und Energie, oftmals auch als Kerninflation bezeichnet, beträgt im August 2026 voraussichtlich +2,4 %. Die Preise für Energie steigen gegenüber dem Vorjahresmonat voraussichtlich um 10,5 %. Damit nimmt die Teuerung für Energie im August weiter zu (Juli 2026: +8,3 % gegenüber Juli 2025; Juni 2026: +3,4 % gegenüber Juni 2025).",
-            "source_type": "official_rss",
-            "published_at": "2026-08-31T12:00:00.000Z",
-            "primary_source": true,
-            "source_priority": 95,
-            "source_topic": "Wirtschaft",
-            "content_hash": "8f08144f5eaee266485a9544ddff459202fc61c120da84d9fa185bb269374348",
-            "source_item_id": "047798272027efb1f0975e1e961e7d479178183f1b870dd1306cf8b242cc4efc",
-            "publisher_id": "destatis-aktuell",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-08-31T12:00:00.000Z",
-            "ingested_at": "2026-09-07T18:22:09.938Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:destatis-aktuell",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "f81b4c612e76ea68b1c7bc676a43efea41bc588d731f1c35836a6970e23f09b5",
-        "first_failed_at": "2026-09-08T05:07:06.629Z",
-        "failed_at": "2026-09-08T05:22:10.164Z",
-        "retry_after": "2026-09-08T05:52:10.164Z",
-        "retry_count": 2
-      },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "6206ed9a02794668781dee0f8ba172fb694781ea1bf16b071eeb4c46d412199e",
+        "expires_at": "2026-09-08T13:51:43.705Z",
         "sources": [
           {
             "source_id": "destatis-aktuell",
@@ -126508,23 +126446,16 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 2,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T07:36:44.231Z",
-          "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
+      },
+      "deepening_checks": 3,
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "f81b4c612e76ea68b1c7bc676a43efea41bc588d731f1c35836a6970e23f09b5",
+        "first_failed_at": "2026-09-08T05:07:06.629Z",
+        "failed_at": "2026-09-08T05:22:10.164Z",
+        "retry_after": "2026-09-08T05:52:10.164Z",
+        "retry_count": 2
       }
     },
     {
@@ -132550,7 +132481,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T07:36:44.231Z",
+          "checked_at": "2026-09-08T07:51:43.705Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -176904,7 +176835,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T07:36:44.231Z",
+          "checked_at": "2026-09-08T07:51:43.705Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
