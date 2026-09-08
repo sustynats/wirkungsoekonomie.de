@@ -1,8 +1,953 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T10:07:26.127Z",
-  "updated_at": "2026-09-08T10:20:48.403Z",
+  "public_updated_at": "2026-09-08T10:26:26.801Z",
+  "updated_at": "2026-09-08T10:26:26.801Z",
   "stories": [
+    {
+      "story_id": "wt-a507ffe4779c1fd4",
+      "slug": "grune-fordern-reformen-in-der-psychiatrischen-versorgung-9c1fd4",
+      "title": "Grüne fordern Reformen in der psychiatrischen Versorgung",
+      "first_seen": "2026-09-08T09:18:00.000Z",
+      "last_updated": "2026-09-08T10:28:51.345Z",
+      "published_at": "2026-09-08T10:28:51.345Z",
+      "updated_at": "2026-09-08T10:28:51.345Z",
+      "topic": [
+        "Gesundheit",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-hib",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+          "title": "Grüne fordern Reformen in der psychiatrischen Versorgung",
+          "summary": "Gesundheit/Antrag Die Grünen-Fraktion fordert in einem Antrag Reformen in der psychiatrischen Versorgung mit einem Ausbau ambulanter Behandlungsmöglichkeiten.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T09:18:00.000Z",
+          "primary_source": true,
+          "source_priority": 96,
+          "source_topic": "Politik",
+          "content_hash": "88ca30a2176b3b33841fe932ef3f31e09d1593e4aa0aa99bec0ca09064165961",
+          "source_item_id": "d20735a78cbea9ecf35f9346540accd39183853e91fc77b751b90d1ce8bf886c",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T09:18:00.000Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a507ffe4779c1fd4-v1-claim-1",
+          "story_id": "wt-a507ffe4779c1fd4",
+          "claim": "Die Grünen-Fraktion hat einen Antrag eingebracht, der Reformen in der psychiatrischen Versorgung und mehr ambulante Behandlungsangebote fordert.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "c85178e795ee47e02bbc",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "3344ce225c6665e4163a",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "93e25ccf04f377fb0f7a",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "c2a793cb44095dcf741f",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T10:28:51.345Z"
+        },
+        {
+          "claim_id": "wt-a507ffe4779c1fd4-v1-claim-2",
+          "story_id": "wt-a507ffe4779c1fd4",
+          "claim": "Der Antrag verweist auf gestiegene stationäre Behandlungen wegen psychischer Erkrankungen und auf mehr psychiatrische und psychosomatische Krankenhausbetten in den vergangenen Jahren.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "5421127f341bb90ac63a",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "e1a7e9675497184d63d3",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T10:28:51.345Z"
+        },
+        {
+          "claim_id": "wt-a507ffe4779c1fd4-v1-claim-3",
+          "story_id": "wt-a507ffe4779c1fd4",
+          "claim": "Die Fraktion will Psychiatrische Institutsambulanzen flächendeckend ausbauen, Entlassmanagement und Anschlussversorgung weiterentwickeln und tarifliche Personalkosten wieder vollständig refinanzieren.",
+          "status": "primary_source_claim",
+          "source_id": "bundestag-hib",
+          "evidence": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "c2a793cb44095dcf741f",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "567eeda795ee6285de56",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            },
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "excerpt_hash": "5808ea366e821578133d",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T10:28:51.345Z"
+        }
+      ],
+      "event_id": "event-f41ec576e0c6556a2ca9",
+      "event_first_seen_at": "2026-09-08T10:07:26.127Z",
+      "event_detected_at": "2026-09-08T10:07:26.127Z",
+      "verification_started_at": "2026-09-08T10:28:37.227Z",
+      "publish_ready_at": "2026-09-08T10:28:51.345Z",
+      "news_status": "confirmed",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T10:26:26.801Z",
+        "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form der Bundestag den Antrag berät oder beschließt.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Ausschussberatung, Abstimmung oder weitere parlamentarische Schritte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e6efbfac503878b7",
+          "announced_at": "2026-09-08T09:18:00.000Z",
+          "follow_up_date": "2026-09-15T10:28:51.345Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "a00300db27964238a0d06db22daaee217c77e1afeb8282eec1def20105fdf889",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T10:28:51.345Z",
+        "sources": [
+          {
+            "source_id": "bundestag-hib",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+            "content_hash": "88ca30a2176b3b33841fe932ef3f31e09d1593e4aa0aa99bec0ca09064165961",
+            "excerpt_hash": "c7f85256f7fc792e5d76b56812ed00e3a3fb2d98dae45e85129754ad83d70d69",
+            "number_locale": "de",
+            "numbers": [
+              "8.09",
+              "2026",
+              "691",
+              "21",
+              "7853"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Die Bundestagskurzmeldung berichtet über einen Antrag der Grünen-Fraktion zur psychiatrischen Versorgung. Die Fraktion fordert einen Ausbau ambulanter Behandlungsmöglichkeiten und verweist auf aus ihrer Sicht bestehende Versorgungsbrüche zwischen stationärer und ambulanter Behandlung.\n\nAls Begründung nennt die Quelle steigende stationäre Behandlungen wegen psychischer Erkrankungen, mehr psychiatrische und psychosomatische Krankenhausbetten und fehlende Anschlussangebote nach einem Klinikaufenthalt. Genannt werden außerdem flexiblere Hilfen aus Kliniken, ein Ausbau psychiatrischer Institutsambulanzen, besseres Entlassmanagement und die Wiederherstellung der vollständigen Refinanzierung tariflicher Personalkosten.",
+      "analysis": {
+        "story_id": "wt-a507ffe4779c1fd4",
+        "publication_recommendation": true,
+        "news_status": "confirmed",
+        "publication_depth": "initial",
+        "summary": "Die Grünen wollen die psychiatrische Versorgung mit mehr ambulanter Behandlung umbauen. Die Meldung beschreibt vor allem einen parlamentarischen Antrag, keine بالفعل beschlossene Änderung.",
+        "detail_summary": "Im Kern geht es um einen Antrag der Grünen-Fraktion zur psychiatrischen Versorgung mit Schwerpunkt auf ambulanten Angeboten, Institutsambulanzen und besserer Anschlussversorgung nach Klinikaufenthalten. Die Quelle begründet den Vorstoß mit gestiegener stationärer Behandlung und mit Versorgungsbrüchen zwischen Sektoren. Für Menschen mit schweren und chronischen psychischen Erkrankungen könnte ein solcher Umbau den Zugang zu wohnortnaher Hilfe verändern und Wiederaufnahmen verringern, wenn die geforderten Strukturen tatsächlich umgesetzt werden. Für das System wäre das relevant, weil sich Kapazitäten, Zuständigkeiten und Finanzierung zwischen stationär und ambulant verschieben könnten. Belastbar belegt ist hier aber nur der Antrag selbst; eine tatsächliche Reform, Wirkung oder Finanzierungsauswirkung ist noch nicht nachgewiesen.",
+        "why_relevant": "Die Meldung betrifft die Organisation der psychiatrischen Versorgung und damit ein Feld mit direkter Bedeutung für Betroffene, Versorgungskapazitäten und Finanzierung. Wenn der Antrag später in Maßnahmen mündet, kann das Zuständigkeiten, Anreize und Zugänge im Gesundheitssystem verändern.",
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "rationale": "Mehr ambulante Angebote, bessere Übergänge nach Klinikaufenthalten und gesicherte Personalkosten können den Zugang zu Hilfe und die Kontinuität der Versorgung verbessern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle enthält keinen direkten Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "rationale": "Es handelt sich um einen parlamentarischen Antrag und damit um einen öffentlich verhandelten Reformvorschlag mit möglicher Wirkung auf die politische Entscheidungsfindung."
+        },
+        "importance": "hoch",
+        "impact_potential": "Ein Ausbau ambulanter Strukturen und besseres Entlassmanagement könnten die Versorgungskette in der Psychiatrie verändern und stationäre Abhängigkeiten verringern.",
+        "impact_risks": [
+          "Ohne zusätzliche Kapazitäten könnte eine Verlagerung in den ambulanten Bereich neue Engpässe erzeugen.",
+          "Bleibt die Finanzierung unklar, könnten Reformziele an Personal- und Umsetzungsgrenzen scheitern."
+        ],
+        "mechanisms": [
+          "Ausbau ambulanter Behandlungsangebote",
+          "Flexiblere Hilfen aus psychiatrischen Kliniken",
+          "Besseres Entlassmanagement und Anschlussversorgung",
+          "Finanzielle Stabilisierung über tarifliche Personalkosten"
+        ],
+        "first_order": [
+          "Mehr ambulante Behandlungsmöglichkeiten",
+          "Flächendeckenderer Zugang zu psychiatrischen Institutsambulanzen"
+        ],
+        "second_order": [
+          "Weniger Versorgungsbrüche zwischen stationär und ambulant",
+          "Mögliche Entlastung kostenintensiver Wiederaufnahmen"
+        ],
+        "third_order": [
+          "Veränderte Allokation von Versorgungskapazitäten und Finanzierung im psychiatrischen Sektor"
+        ],
+        "systemic_relevance": "Die Vorlage zielt auf die Schnittstelle zwischen stationärer und ambulanter Versorgung, also auf einen zentralen Organisationspunkt des Gesundheitssystems.",
+        "transformation_potential": "Möglich ist ein schrittweiser Umbau hin zu stärker sektorübergreifender, wohnortnaher Versorgung.",
+        "resilience": "Höhere Resilienz wäre möglich, wenn Anschlussversorgung und flexible Hilfen Ausfälle und Brüche abfedern; ohne Personal und Finanzierung bleibt das offen.",
+        "side_effects": [
+          "Mehr ambulante Last kann neue Wartezeiten erzeugen, wenn Kapazitäten fehlen.",
+          "Die Wiederherstellung von Refinanzierung kann Budgetwirkungen für das System haben."
+        ],
+        "uncertainties": [
+          "Ob der Antrag parlamentarisch Mehrheiten findet, bleibt offen.",
+          "Die konkrete Ausgestaltung der Reform ist in der Quelle nicht beschrieben.",
+          "Eine tatsächliche Wirkung auf Versorgung oder Wiederaufnahmen ist noch nicht belegt."
+        ],
+        "evidence_level": "hoch für den Antrag, offen für Wirkung",
+        "attribution": "Quelle: Deutscher Bundestag, heute im Bundestag; Sprecher: Grünen-Fraktion; Originalformulierung: Antrag auf Reformen und Ausbau ambulanter Behandlungsmöglichkeiten; Darstellung: institutionelle Kurzmeldung.",
+        "watch_next": [
+          "Beratung im Bundestag oder in Ausschüssen",
+          "Konkrete Änderungen an Finanzierung und Versorgungsstrukturen",
+          "Antworten anderer Fraktionen oder der Bundesregierung"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 3"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "primary_source_direct",
+          "duplicate_status": "new_story",
+          "rationale": "Der Antrag ist eine neue parlamentarische Initiative mit möglichem Einfluss auf Versorgung, Kapazitäten und Finanzierung in der Psychiatrie. Betroffen sind zahlreiche Patientinnen und Patienten sowie die Struktur der Versorgung; die Quelle ist direkt und amtlich."
+        },
+        "visuals": {
+          "path_directions": [
+            {
+              "order": "first_order",
+              "path": "Mehr ambulante Behandlungsmöglichkeiten",
+              "direction": "positive",
+              "condition": "Wenn zusätzlich Personal und Zugänge vorhanden sind, verlagert sich Versorgung von stationär zu ambulant.",
+              "evidence": "plausible_path",
+              "claim_ids": [
+                "wt-a507ffe4779c1fd4-claim-01"
+              ]
+            }
+          ],
+          "affected_groups": [
+            "patientinnen",
+            "aeltere",
+            "kinder_jugend",
+            "staat"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T10:26:26.801Z",
+        "media_trigger_fingerprint": "b62d4ef77037f2ded4ddf79926152d7524d4f1e09909559ac3a75b51c7ccc598",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 0,
+          "fingerprint": "b62d4ef77037f2ded4ddf79926152d7524d4f1e09909559ac3a75b51c7ccc598",
+          "content_fingerprint": "fcbc7e3d7a8e12de9389ea2c71ebe9e5c88ac737a3ba3394677bea3506251e0c",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T10:28:51.345Z",
+          "content_hash": "a00300db27964238a0d06db22daaee217c77e1afeb8282eec1def20105fdf889",
+          "source_summary": "Die Bundestagskurzmeldung berichtet über einen Antrag der Grünen-Fraktion zur psychiatrischen Versorgung. Die Fraktion fordert einen Ausbau ambulanter Behandlungsmöglichkeiten und verweist auf aus ihrer Sicht bestehende Versorgungsbrüche zwischen stationärer und ambulanter Behandlung.\n\nAls Begründung nennt die Quelle steigende stationäre Behandlungen wegen psychischer Erkrankungen, mehr psychiatrische und psychosomatische Krankenhausbetten und fehlende Anschlussangebote nach einem Klinikaufenthalt. Genannt werden außerdem flexiblere Hilfen aus Kliniken, ein Ausbau psychiatrischer Institutsambulanzen, besseres Entlassmanagement und die Wiederherstellung der vollständigen Refinanzierung tariflicher Personalkosten.",
+          "analysis": {
+            "story_id": "wt-a507ffe4779c1fd4",
+            "publication_recommendation": true,
+            "news_status": "confirmed",
+            "publication_depth": "initial",
+            "summary": "Die Grünen wollen die psychiatrische Versorgung mit mehr ambulanter Behandlung umbauen. Die Meldung beschreibt vor allem einen parlamentarischen Antrag, keine بالفعل beschlossene Änderung.",
+            "detail_summary": "Im Kern geht es um einen Antrag der Grünen-Fraktion zur psychiatrischen Versorgung mit Schwerpunkt auf ambulanten Angeboten, Institutsambulanzen und besserer Anschlussversorgung nach Klinikaufenthalten. Die Quelle begründet den Vorstoß mit gestiegener stationärer Behandlung und mit Versorgungsbrüchen zwischen Sektoren. Für Menschen mit schweren und chronischen psychischen Erkrankungen könnte ein solcher Umbau den Zugang zu wohnortnaher Hilfe verändern und Wiederaufnahmen verringern, wenn die geforderten Strukturen tatsächlich umgesetzt werden. Für das System wäre das relevant, weil sich Kapazitäten, Zuständigkeiten und Finanzierung zwischen stationär und ambulant verschieben könnten. Belastbar belegt ist hier aber nur der Antrag selbst; eine tatsächliche Reform, Wirkung oder Finanzierungsauswirkung ist noch nicht nachgewiesen.",
+            "why_relevant": "Die Meldung betrifft die Organisation der psychiatrischen Versorgung und damit ein Feld mit direkter Bedeutung für Betroffene, Versorgungskapazitäten und Finanzierung. Wenn der Antrag später in Maßnahmen mündet, kann das Zuständigkeiten, Anreize und Zugänge im Gesundheitssystem verändern.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "chance",
+              "rationale": "Mehr ambulante Angebote, bessere Übergänge nach Klinikaufenthalten und gesicherte Personalkosten können den Zugang zu Hilfe und die Kontinuität der Versorgung verbessern."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Die Quelle enthält keinen direkten Umweltbezug."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "chance",
+              "rationale": "Es handelt sich um einen parlamentarischen Antrag und damit um einen öffentlich verhandelten Reformvorschlag mit möglicher Wirkung auf die politische Entscheidungsfindung."
+            },
+            "importance": "hoch",
+            "impact_potential": "Ein Ausbau ambulanter Strukturen und besseres Entlassmanagement könnten die Versorgungskette in der Psychiatrie verändern und stationäre Abhängigkeiten verringern.",
+            "impact_risks": [
+              "Ohne zusätzliche Kapazitäten könnte eine Verlagerung in den ambulanten Bereich neue Engpässe erzeugen.",
+              "Bleibt die Finanzierung unklar, könnten Reformziele an Personal- und Umsetzungsgrenzen scheitern."
+            ],
+            "mechanisms": [
+              "Ausbau ambulanter Behandlungsangebote",
+              "Flexiblere Hilfen aus psychiatrischen Kliniken",
+              "Besseres Entlassmanagement und Anschlussversorgung",
+              "Finanzielle Stabilisierung über tarifliche Personalkosten"
+            ],
+            "first_order": [
+              "Mehr ambulante Behandlungsmöglichkeiten",
+              "Flächendeckenderer Zugang zu psychiatrischen Institutsambulanzen"
+            ],
+            "second_order": [
+              "Weniger Versorgungsbrüche zwischen stationär und ambulant",
+              "Mögliche Entlastung kostenintensiver Wiederaufnahmen"
+            ],
+            "third_order": [
+              "Veränderte Allokation von Versorgungskapazitäten und Finanzierung im psychiatrischen Sektor"
+            ],
+            "systemic_relevance": "Die Vorlage zielt auf die Schnittstelle zwischen stationärer und ambulanter Versorgung, also auf einen zentralen Organisationspunkt des Gesundheitssystems.",
+            "transformation_potential": "Möglich ist ein schrittweiser Umbau hin zu stärker sektorübergreifender, wohnortnaher Versorgung.",
+            "resilience": "Höhere Resilienz wäre möglich, wenn Anschlussversorgung und flexible Hilfen Ausfälle und Brüche abfedern; ohne Personal und Finanzierung bleibt das offen.",
+            "side_effects": [
+              "Mehr ambulante Last kann neue Wartezeiten erzeugen, wenn Kapazitäten fehlen.",
+              "Die Wiederherstellung von Refinanzierung kann Budgetwirkungen für das System haben."
+            ],
+            "uncertainties": [
+              "Ob der Antrag parlamentarisch Mehrheiten findet, bleibt offen.",
+              "Die konkrete Ausgestaltung der Reform ist in der Quelle nicht beschrieben.",
+              "Eine tatsächliche Wirkung auf Versorgung oder Wiederaufnahmen ist noch nicht belegt."
+            ],
+            "evidence_level": "hoch für den Antrag, offen für Wirkung",
+            "attribution": "Quelle: Deutscher Bundestag, heute im Bundestag; Sprecher: Grünen-Fraktion; Originalformulierung: Antrag auf Reformen und Ausbau ambulanter Behandlungsmöglichkeiten; Darstellung: institutionelle Kurzmeldung.",
+            "watch_next": [
+              "Beratung im Bundestag oder in Ausschüssen",
+              "Konkrete Änderungen an Finanzierung und Versorgungsstrukturen",
+              "Antworten anderer Fraktionen oder der Bundesregierung"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "primary_source_direct",
+              "duplicate_status": "new_story",
+              "rationale": "Der Antrag ist eine neue parlamentarische Initiative mit möglichem Einfluss auf Versorgung, Kapazitäten und Finanzierung in der Psychiatrie. Betroffen sind zahlreiche Patientinnen und Patienten sowie die Struktur der Versorgung; die Quelle ist direkt und amtlich."
+            },
+            "visuals": {
+              "path_directions": [
+                {
+                  "order": "first_order",
+                  "path": "Mehr ambulante Behandlungsmöglichkeiten",
+                  "direction": "positive",
+                  "condition": "Wenn zusätzlich Personal und Zugänge vorhanden sind, verlagert sich Versorgung von stationär zu ambulant.",
+                  "evidence": "plausible_path",
+                  "claim_ids": [
+                    "wt-a507ffe4779c1fd4-claim-01"
+                  ]
+                }
+              ],
+              "affected_groups": [
+                "patientinnen",
+                "aeltere",
+                "kinder_jugend",
+                "staat"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T10:26:26.801Z",
+            "media_trigger_fingerprint": "b62d4ef77037f2ded4ddf79926152d7524d4f1e09909559ac3a75b51c7ccc598",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 0,
+              "fingerprint": "b62d4ef77037f2ded4ddf79926152d7524d4f1e09909559ac3a75b51c7ccc598",
+              "content_fingerprint": "fcbc7e3d7a8e12de9389ea2c71ebe9e5c88ac737a3ba3394677bea3506251e0c",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-a507ffe4779c1fd4-v1-claim-1",
+              "story_id": "wt-a507ffe4779c1fd4",
+              "claim": "Die Grünen-Fraktion hat einen Antrag eingebracht, der Reformen in der psychiatrischen Versorgung und mehr ambulante Behandlungsangebote fordert.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "c85178e795ee47e02bbc",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "3344ce225c6665e4163a",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "93e25ccf04f377fb0f7a",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "c2a793cb44095dcf741f",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            },
+            {
+              "claim_id": "wt-a507ffe4779c1fd4-v1-claim-2",
+              "story_id": "wt-a507ffe4779c1fd4",
+              "claim": "Der Antrag verweist auf gestiegene stationäre Behandlungen wegen psychischer Erkrankungen und auf mehr psychiatrische und psychosomatische Krankenhausbetten in den vergangenen Jahren.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "5421127f341bb90ac63a",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "e1a7e9675497184d63d3",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            },
+            {
+              "claim_id": "wt-a507ffe4779c1fd4-v1-claim-3",
+              "story_id": "wt-a507ffe4779c1fd4",
+              "claim": "Die Fraktion will Psychiatrische Institutsambulanzen flächendeckend ausbauen, Entlassmanagement und Anschlussversorgung weiterentwickeln und tarifliche Personalkosten wieder vollständig refinanzieren.",
+              "status": "primary_source_claim",
+              "source_id": "bundestag-hib",
+              "evidence": [
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "c2a793cb44095dcf741f",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "567eeda795ee6285de56",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                },
+                {
+                  "source_id": "bundestag-hib",
+                  "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                  "excerpt_hash": "5808ea366e821578133d",
+                  "checked_at": "2026-09-08T10:28:51.345Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T10:28:51.345Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "bundestag-hib",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+              "content_hash": "88ca30a2176b3b33841fe932ef3f31e09d1593e4aa0aa99bec0ca09064165961"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T10:28:51.345Z",
+            "sources": [
+              {
+                "source_id": "bundestag-hib",
+                "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+                "content_hash": "88ca30a2176b3b33841fe932ef3f31e09d1593e4aa0aa99bec0ca09064165961",
+                "excerpt_hash": "c7f85256f7fc792e5d76b56812ed00e3a3fb2d98dae45e85129754ad83d70d69",
+                "number_locale": "de",
+                "numbers": [
+                  "8.09",
+                  "2026",
+                  "691",
+                  "21",
+                  "7853"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T10:28:51.345Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T10:44:24.359Z"
+      }
+    },
+    {
+      "story_id": "wt-4dd7fd7f34eaa026",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d1aa88c6da1635e7c1c78c8e233b365677ab20466e79fc4e66d8fec71c427278",
+        "first_failed_at": "2026-09-08T10:26:26.801Z",
+        "failed_at": "2026-09-08T10:26:26.801Z",
+        "retry_after": "2026-09-08T10:41:26.801Z",
+        "retry_count": 1
+      },
+      "slug": "es-ist-wie-bei-the-hunger-games-russland-uberzieht-kyjiw-nach-dreitagiger-pause-mit-neue-eaa026",
+      "title": "„Es ist wie bei The Hunger Games“: Russland überzieht Kyjiw nach dreitägiger Pause mit neuen Luftangriffen",
+      "first_seen": "2026-09-08T10:18:47.000Z",
+      "last_updated": "2026-09-08T10:18:47.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/es-ist-wie-bei-the-hunger-games-russland-uberzieht-kyjiw-nach-dreitagiger-pause-mit-neuen-luftangriffen-16029596.html",
+          "title": "„Es ist wie bei The Hunger Games“: Russland überzieht Kyjiw nach dreitägiger Pause mit neuen Luftangriffen",
+          "summary": "Die ukrainische Hauptstadt blieb während des Besuchs zweier US-Gesandter von Drohnen und Raketen verschont. Doch kurz nach deren Abreise setzt Moskau den Terror gegen die Zivilbevölkerung fort.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T10:18:47.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "0af14ad513ad114654857dbd542e830321bb7ee1c6039b3bffd6f4ced260779c",
+          "source_item_id": "8d50d4e1de532594869789ed79a509cdc9dc9799c4d0ab30dbbeb5d25f145f36",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T10:18:47.000Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4dd7fd7f34eaa026-claim-01",
+          "story_id": "wt-4dd7fd7f34eaa026",
+          "claim": "„Es ist wie bei The Hunger Games“: Russland überzieht Kyjiw nach dreitägiger Pause mit neuen Luftangriffen: Die ukrainische Hauptstadt blieb während des Besuchs zweier US-Gesandter von Drohnen und Raketen verschont. Doch kurz nach deren Abreise setzt Moskau den Terror gegen die Zivilbevölkerung fort.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T10:26:26.801Z"
+        }
+      ],
+      "content_hash": "8c29fea304bb02ffd902cd81e1d9f62f7518fd18724d52b0cc63fe1984e26907",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T10:41:26.801Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T10:26:26.801Z",
+      "event_first_seen_at": "2026-09-08T10:26:26.801Z",
+      "event_detected_at": "2026-09-08T10:26:26.801Z",
+      "event_id": "event-aed18de0094bff8acad2",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 7.66335,
+        "detection_delay_minutes": 7.66335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T10:26:26.801Z",
+        "fingerprint": "bc08394e1412695963230ce59dbce013ac011163b2d83808755619e7cda67f0a",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:26:26.801Z",
+      "rejection": {
+        "at": "2026-09-08T10:26:26.801Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-aa2ebf665fdf173d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "6528a96e5d92cdbdb7d85a8bc78abd0477e0036e0e2c43fe697bc914de464b24",
+        "first_failed_at": "2026-09-08T10:26:26.801Z",
+        "failed_at": "2026-09-08T10:26:26.801Z",
+        "retry_after": "2026-09-08T10:41:26.801Z",
+        "retry_count": 1
+      },
+      "slug": "angriffe-auf-energieversorgung-sabotage-am-stromnetz-polizei-findet-bekennerschreiben-df173d",
+      "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
+      "first_seen": "2026-09-08T07:55:01.000Z",
+      "last_updated": "2026-09-08T10:15:26.000Z",
+      "topic": [
+        "Energie",
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-angriffe-auf-energieversorgung-16029379.html",
+          "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
+          "summary": "Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein weiteres Bekennerschreiben.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:55:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "8d2478c877834b208106c2ef7aa2289fbfd14282b6c5fb1e4dd62881d7af7646",
+          "source_item_id": "1a2102d99635a5e602b49154d027290f174d90f4f01f81a305f4fa64751b94c2",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:55:01.000Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/angriffe-auf-energieversorgung--sabotage-am-stromnetz--polizei-findet-bekennerschreiben-38219776.html",
+          "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
+          "summary": "Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein weiteres Bekennerschreiben.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T10:15:26.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "080101929a342211054dbbca33f28709d33bd947d11fea253f5c1ae1a6b23f9d",
+          "source_item_id": "24ea8baba04fb05f25b87b1e6d57aadd642f58643fd52a5e11e575ee7b5a6209",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T10:15:26.000Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-aa2ebf665fdf173d-claim-01",
+          "story_id": "wt-aa2ebf665fdf173d",
+          "claim": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben: Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein weiteres Bekennerschreiben.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T10:26:26.801Z"
+        },
+        {
+          "claim_id": "wt-aa2ebf665fdf173d-claim-02",
+          "story_id": "wt-aa2ebf665fdf173d",
+          "claim": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben: Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein weiteres Bekennerschreiben.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T10:26:26.801Z"
+        }
+      ],
+      "content_hash": "f441731edddc6261ec723b487fd0d8f77741e508ef2447a577f8358846fe4335",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T10:41:26.801Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T10:26:26.801Z",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "event_id": "event-403434e66c7b7c17b1ad",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 52,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie",
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.01335,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 139.61976666666666,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T10:26:26.801Z",
+        "fingerprint": "56e79d7ab4a7e5ef1faf9c86f18511762080a5609125a09860f87f8c8ca065f3",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:26:26.801Z",
+      "rejection": {
+        "at": "2026-09-08T10:26:26.801Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-fba5823fb7d08999",
       "slug": "gesetzentwurf-der-bundesregierung-zur-einkommensteuer-viel-versprochen-kaum-entlastet-d08999",
@@ -2413,6 +3358,156 @@
       }
     },
     {
+      "story_id": "wt-2f96597b1f32e6a6",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "260e6723057f3dd7e6a72261f9a3707ab5fe929144ad137a6a4eb0e0d12aeccf",
+        "first_failed_at": "2026-09-08T10:26:26.801Z",
+        "failed_at": "2026-09-08T10:26:26.801Z",
+        "retry_after": "2026-09-08T10:41:26.801Z",
+        "retry_count": 1
+      },
+      "slug": "fachkraftemangel-internationale-studierende-bringen-milliardenuberschuss-fur-staat-32e6a6",
+      "title": "Fachkräftemangel: Internationale Studierende bringen Milliardenüberschuss für Staat",
+      "first_seen": "2026-09-08T10:06:00.000Z",
+      "last_updated": "2026-09-08T10:06:00.000Z",
+      "topic": [
+        "Arbeit",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/start/fachkraeftemangel-internationale-studierende-bringen-milliardenueberschuss-fuer-staat-a-f177558d-e58f-49dc-a203-bfed248c023a",
+          "title": "Fachkräftemangel: Internationale Studierende bringen Milliardenüberschuss für Staat",
+          "summary": "Weit mehr internationale Studierende bleiben dauerhaft in Deutschland als bislang geschätzt: Das zeigt ein neues Gutachten des Instituts der deutschen Wirtschaft. Die Entwicklung hat auch Folgen für die Staatskasse.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T10:06:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a0225724ed85775c0d2d4d2d4cfcd3bc19163643b761eb122169913d6455ee6b",
+          "source_item_id": "faecdb83fd01c6c7c2a811f3773ceb49a572a01f7905fc1afc45b442724790df",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T10:06:00.000Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2f96597b1f32e6a6-claim-01",
+          "story_id": "wt-2f96597b1f32e6a6",
+          "claim": "Fachkräftemangel: Internationale Studierende bringen Milliardenüberschuss für Staat: Weit mehr internationale Studierende bleiben dauerhaft in Deutschland als bislang geschätzt: Das zeigt ein neues Gutachten des Instituts der deutschen Wirtschaft. Die Entwicklung hat auch Folgen für die Staatskasse.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T10:26:26.801Z"
+        }
+      ],
+      "content_hash": "a510a04b5fd69e95463117a7164a5f0ced14c946009b7d8dd50d0803f2f3ed54",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:41:26.801Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T10:26:26.801Z",
+      "event_first_seen_at": "2026-09-08T10:26:26.801Z",
+      "event_detected_at": "2026-09-08T10:26:26.801Z",
+      "event_id": "event-d7719024ac21b32404b0",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.446683333333333,
+        "detection_delay_minutes": 20.446683333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T10:26:26.801Z",
+        "fingerprint": "9abe18f4a519d549141f936e7321d5b2327c5b2292f2cfe43a6dc86ed793ec40",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:26:26.801Z",
+      "rejection": {
+        "at": "2026-09-08T10:26:26.801Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
       "story_id": "wt-4c0a09f9ce090af7",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -2658,10 +3753,10 @@
       "story_id": "wt-60da9d2ff19083c7",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "9d6277e4b70924ab6b3fe79a588254a29dbba1af7499ad27fdcbfec15e75a31c",
-        "first_failed_at": "2026-09-08T10:07:26.127Z",
-        "failed_at": "2026-09-08T10:07:26.127Z",
-        "retry_after": "2026-09-08T10:22:26.127Z",
+        "fingerprint": "1a8e2fc066b088e918c4102df0e1ee873ed1eab7120355373eda46c50a4997fd",
+        "first_failed_at": "2026-09-08T10:26:26.801Z",
+        "failed_at": "2026-09-08T10:26:26.801Z",
+        "retry_after": "2026-09-08T10:41:26.801Z",
         "retry_count": 1
       },
       "slug": "haushaltswoche-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-klingbeil-sp-9083c7",
@@ -2683,7 +3778,7 @@
           "title": "Haushaltswoche - Mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant - Klingbeil spricht von \"einzigartigem Zukunftsprogramm\"",
           "summary": "Im Deutschen Bundestag in Berlin hat die Haushaltswoche begonnen. Bundesfinanzminister Klingbeil stellte seinen Haushaltsentwurf für 2027 vor. Der SPD-Vorsitzende sprach von einem Etat für Wachstum und soziale Sicherheit. Es stünden insgesamt 118 Milliarden Euro für Investitionen bereit. Doch es regt sich auch viel Kritik an der Rekordverschuldung.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T10:04:29.000Z",
+          "published_at": "2026-09-08T10:16:01.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -2699,8 +3794,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T10:04:29.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "source_published_at": "2026-09-08T10:16:01.000Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2729,7 +3824,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
       "content_hash": "5485a748dc8f24459268444e824702aad381bf9c489f7339d6789a9741d0c830",
@@ -2738,13 +3833,13 @@
       "quality_errors": [
         "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T10:22:26.127Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T10:41:26.801Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-6c748d86dc415bfbadd0",
@@ -2785,20 +3880,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2.9521166666666665,
-        "detection_delay_minutes": 2.9521166666666665,
+        "source_age_minutes": 10.430016666666667,
+        "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 19.011233333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 98,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "fingerprint": "843121e2db178ab365c16b6bc787d9cfa16027e6637e5ec4d9cc27fc2f80598b",
         "issue_codes": [],
         "warning_codes": []
@@ -3605,6 +4700,14 @@
     },
     {
       "story_id": "wt-f95054aec8b1d506",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "28fe0e519f8155ba6ddae327491754015c734d866610adee837533ceedb45faf",
+        "first_failed_at": "2026-09-08T10:26:26.801Z",
+        "failed_at": "2026-09-08T10:26:26.801Z",
+        "retry_after": "2026-09-08T10:41:26.801Z",
+        "retry_count": 1
+      },
       "slug": "bildungstest-pisa-minister-genauer-hinschauen-wo-schuler-hilfe-brauchen-b1d506",
       "title": "Bildungstest Pisa: Minister: Genauer hinschauen, wo Schüler Hilfe brauchen",
       "first_seen": "2026-09-08T09:52:31.000Z",
@@ -3678,6 +4781,39 @@
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/potsdam/brandenburg/dpa-bildungstest-pisa-16029909.html",
+          "title": "Neuer Pisa-Tiefpunkt: Brandenburgs Bildungsminister will genauer hinschauen, wo Schüler Hilfe brauchen",
+          "summary": "Deutschlands 15-Jährige erreichen bei Pisa so schlechte Werte wie nie zuvor. Brandenburg ist aufgeschreckt. Bildungsminister Hoffmann setzt auf langfristige Verbesserungen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T09:53:52.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4e648bdd50e3ee96925accb5f7a0bfe952d0c2b079f932e5785e7309aff49010",
+          "source_item_id": "9b596c394dc890cc6ca9496a6ef660e74334070829c12d8716b493db97673218",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T09:53:52.000Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
@@ -3699,7 +4835,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         },
         {
           "claim_id": "wt-f95054aec8b1d506-claim-02",
@@ -3719,20 +4855,40 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
+        },
+        {
+          "claim_id": "wt-f95054aec8b1d506-claim-03",
+          "story_id": "wt-f95054aec8b1d506",
+          "claim": "Neuer Pisa-Tiefpunkt: Brandenburgs Bildungsminister will genauer hinschauen, wo Schüler Hilfe brauchen: Deutschlands 15-Jährige erreichen bei Pisa so schlechte Werte wie nie zuvor. Brandenburg ist aufgeschreckt. Bildungsminister Hoffmann setzt auf langfristige Verbesserungen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
-      "content_hash": "07ac56f54d2a37be4377ac4def4e2fa7268ed04e8b0bc38602dcc09fd6d589a3",
+      "content_hash": "a2fdaeebc8b05f055996880ee56c9d20c498ff9299df991b79d8ac80d9eb7213",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T10:41:26.801Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-937fb42f74c0c9a4680f",
@@ -3767,23 +4923,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 26.94005,
+        "source_age_minutes": 32.580016666666666,
         "detection_delay_minutes": 13.568783333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 13.371266666666667,
+        "queue_age_minutes": 19.011233333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
-        "fingerprint": "27ac87defa641bb8cd11ed6968b9a040acd215f64aa3a0b1419fdb73b4d7d38a",
+        "checked_at": "2026-09-08T10:26:26.801Z",
+        "fingerprint": "5b5bd14c9cbb0286602ccc01196465288bb0f619be4afbfd4ac733da72dff63e",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:26:26.801Z",
+      "rejection": {
+        "at": "2026-09-08T10:26:26.801Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -3950,6 +5118,14 @@
     },
     {
       "story_id": "wt-5811f2db56d5a77e",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "335e2168f469a2ed6e4556aa177cc754d4577e1ac0668023daae352d74ae081a",
+        "first_failed_at": "2026-09-08T10:26:26.801Z",
+        "failed_at": "2026-09-08T10:26:26.801Z",
+        "retry_after": "2026-09-08T10:41:26.801Z",
+        "retry_count": 1
+      },
       "slug": "hausliche-gewalt-66-jahriger-nach-angriff-mit-stichwaffe-in-lebensgefahr-d5a77e",
       "title": "Häusliche Gewalt: 66-Jähriger nach Angriff mit Stichwaffe in Lebensgefahr",
       "first_seen": "2026-09-08T09:47:16.000Z",
@@ -4011,20 +5187,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
       "content_hash": "ec8debabde3c91f300b89a8d858e2c448da38594a9f9073119f3fc600a9f0e73",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:41:26.801Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4994339e3cba54abf672",
@@ -4057,23 +5233,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 33.54005,
+        "source_age_minutes": 39.18001666666667,
         "detection_delay_minutes": 20.168783333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 13.371266666666667,
+        "queue_age_minutes": 19.011233333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "fingerprint": "0750f682e943f3eb0bd486ef420dfe3f2fad6fe5a641d9ee7d7c5a6b38084e4e",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:26:26.801Z",
+      "rejection": {
+        "at": "2026-09-08T10:26:26.801Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -4525,137 +5713,6 @@
       }
     },
     {
-      "story_id": "wt-a507ffe4779c1fd4",
-      "slug": "grune-fordern-reformen-in-der-psychiatrischen-versorgung-9c1fd4",
-      "title": "Grüne fordern Reformen in der psychiatrischen Versorgung",
-      "first_seen": "2026-09-08T09:18:00.000Z",
-      "last_updated": "2026-09-08T09:18:00.000Z",
-      "topic": [
-        "Gesundheit",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "bundestag-hib",
-          "publisher": "Deutscher Bundestag - Heute im Bundestag",
-          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
-          "title": "Grüne fordern Reformen in der psychiatrischen Versorgung",
-          "summary": "Gesundheit/Antrag Die Grünen-Fraktion fordert in einem Antrag Reformen in der psychiatrischen Versorgung mit einem Ausbau ambulanter Behandlungsmöglichkeiten.",
-          "source_type": "official_rss",
-          "published_at": "2026-09-08T09:18:00.000Z",
-          "primary_source": true,
-          "source_priority": 96,
-          "source_topic": "Politik",
-          "content_hash": "88ca30a2176b3b33841fe932ef3f31e09d1593e4aa0aa99bec0ca09064165961",
-          "source_item_id": "d20735a78cbea9ecf35f9346540accd39183853e91fc77b751b90d1ce8bf886c",
-          "publisher_id": "bundestag",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T09:18:00.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:bundestag",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-a507ffe4779c1fd4-claim-01",
-          "story_id": "wt-a507ffe4779c1fd4",
-          "claim": "Grüne fordern Reformen in der psychiatrischen Versorgung: Gesundheit/Antrag Die Grünen-Fraktion fordert in einem Antrag Reformen in der psychiatrischen Versorgung mit einem Ausbau ambulanter Behandlungsmöglichkeiten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "bundestag-hib",
-          "source_function": "institutional_statement",
-          "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:bundestag",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
-        }
-      ],
-      "content_hash": "a00300db27964238a0d06db22daaee217c77e1afeb8282eec1def20105fdf889",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
-      "event_first_seen_at": "2026-09-08T10:07:26.127Z",
-      "event_detected_at": "2026-09-08T10:07:26.127Z",
-      "event_id": "event-f41ec576e0c6556a2ca9",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesundheit",
-          "Politik"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "Entwurf",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Infrastruktur oder Versorgungskapazität"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 62.80671666666667,
-        "detection_delay_minutes": 49.43545,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 13.371266666666667,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 87,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
-        "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
       "story_id": "wt-7679129a9d31dd8f",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -4842,7 +5899,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T09:04:56.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4871,7 +5928,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
       "content_hash": "8f995d10c1726a40b0903002e9fb2741ac61c08b6c6fbe56f886b52ddcf4b8e1",
@@ -4884,7 +5941,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-91186fd734fe84ded1b4",
@@ -4919,20 +5976,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 75.87338333333334,
+        "source_age_minutes": 81.51335,
         "detection_delay_minutes": 62.502116666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 13.371266666666667,
+        "queue_age_minutes": 19.011233333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 84,
+        "news_freshness_score": 83,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "fingerprint": "b84f558ebac0c4b61f73fc9b8337058583a4639388ee219ea7a136d8f103c98d",
         "issue_codes": [],
         "warning_codes": []
@@ -5122,7 +6179,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T08:50:49.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5151,7 +6208,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
       "content_hash": "605d736f4e364e1d63d9a13db174570f8d6acf0ea93d2ad6de60df44c5e0feb9",
@@ -5164,7 +6221,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-f6c9467feff2212f044b",
@@ -5197,20 +6254,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 89.99005,
+        "source_age_minutes": 95.63001666666666,
         "detection_delay_minutes": 76.61878333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 13.371266666666667,
+        "queue_age_minutes": 19.011233333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
+        "news_freshness_score": 80,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "fingerprint": "2f24caa604c770e4181acef0efb0da59f981a32d0760c5986f621e6e417902f4",
         "issue_codes": [],
         "warning_codes": []
@@ -6020,7 +7077,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
           "issue_codes": [],
           "warning_codes": []
@@ -7253,158 +8310,6 @@
       }
     },
     {
-      "story_id": "wt-aa2ebf665fdf173d",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "6b344e5989f918b304d7dbd0e4ab629b6831821e2185569593553f3807f93da5",
-        "first_failed_at": "2026-09-08T08:06:49.615Z",
-        "failed_at": "2026-09-08T08:06:49.615Z",
-        "retry_after": "2026-09-08T08:21:49.615Z",
-        "retry_count": 1
-      },
-      "slug": "angriffe-auf-energieversorgung-sabotage-am-stromnetz-polizei-findet-bekennerschreiben-df173d",
-      "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
-      "first_seen": "2026-09-08T07:55:01.000Z",
-      "last_updated": "2026-09-08T07:55:01.000Z",
-      "topic": [
-        "Energie",
-        "Arbeit"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/politik/dpa-angriffe-auf-energieversorgung-16029379.html",
-          "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
-          "summary": "Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein Schreiben, in dem sich jemand zur Tat bekennt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T07:55:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "5fb63a6ce9f31f38d532b14d5f24e48dfd3caa06019c6c3f2c8bcf2e2648719e",
-          "source_item_id": "1a2102d99635a5e602b49154d027290f174d90f4f01f81a305f4fa64751b94c2",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T07:55:01.000Z",
-          "ingested_at": "2026-09-08T08:06:49.615Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-aa2ebf665fdf173d-claim-01",
-          "story_id": "wt-aa2ebf665fdf173d",
-          "claim": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben: Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein Schreiben, in dem sich jemand zur Tat bekennt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:06:49.615Z"
-        }
-      ],
-      "content_hash": "da47c6e7ef3b8a9749520054be5e61cc93d55c13607b58d379a895431ac6412b",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-08T08:21:49.615Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T08:06:49.615Z",
-      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
-      "event_detected_at": "2026-09-08T08:06:49.615Z",
-      "event_id": "event-403434e66c7b7c17b1ad",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 52,
-        "public_relevance": "hoch",
-        "topics": [
-          "Energie",
-          "Arbeit"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 11.81025,
-        "detection_delay_minutes": 11.81025,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 60,
-        "news_freshness_score": 95,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T08:06:49.615Z",
-        "fingerprint": "d0b4d9a54b60a57afaa5793977a02d37cd23f29b6dda9ce8ce59302b7bc0f23f",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T08:06:49.615Z",
-      "rejection": {
-        "at": "2026-09-08T08:06:49.615Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
       "story_id": "wt-7347f5c56c1fbeed",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -7708,9 +8613,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "0238c428cfb4c39d4101cb5b824aca0f3919ca88a93bdef31fe85af620a8f8f2",
         "first_failed_at": "2026-09-08T10:07:26.127Z",
-        "failed_at": "2026-09-08T10:07:26.127Z",
-        "retry_after": "2026-09-08T10:22:26.127Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T10:26:26.801Z",
+        "retry_after": "2026-09-08T10:56:26.801Z",
+        "retry_count": 2
       },
       "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
       "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
@@ -7777,7 +8682,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T09:59:00.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -7806,7 +8711,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         },
         {
           "claim_id": "wt-550f98293aec9698-claim-02",
@@ -7826,22 +8731,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
       "content_hash": "5a7c334d93db70be99298b73e4d062395ecceaf773a58069b63cef3f84cf5abe",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED"
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
       ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-08T10:22:26.127Z",
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-08T10:56:26.801Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-08T05:22:10.164Z",
       "event_detected_at": "2026-09-08T05:22:10.164Z",
       "event_id": "event-d98ccda8e5e813b1598c",
@@ -7895,20 +8800,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.43545,
+        "source_age_minutes": 27.446683333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 285.26605,
+        "queue_age_minutes": 304.27728333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 94,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "fingerprint": "6868670c22aae26632c5375ce71597dbeeb1a0b57fe978f30d3d38ea048f62f6",
         "issue_codes": [],
         "warning_codes": []
@@ -7948,7 +8853,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -7977,7 +8882,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -7992,7 +8897,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -8033,7 +8938,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 13.371266666666667,
+        "queue_age_minutes": 19.011233333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": null
@@ -8042,7 +8947,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -8083,7 +8988,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -8112,7 +9017,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -8127,7 +9032,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -8167,7 +9072,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 13.371266666666667,
+        "queue_age_minutes": 19.011233333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": null
@@ -8176,7 +9081,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -9460,7 +10365,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "de7c0bfb450d11ccd96ecdb764b76f9861eeed321be70fdc3d21b1f05e3d91ee",
           "issue_codes": [],
           "warning_codes": []
@@ -10271,7 +11176,7 @@
             "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
             "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T10:04:29.000Z",
+            "published_at": "2026-09-08T10:16:01.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -10287,8 +11192,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T10:04:29.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "source_published_at": "2026-09-08T10:16:01.000Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -10309,7 +11214,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -11015,7 +11920,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -13148,7 +14053,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -16897,7 +17802,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T13:07:00.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -16918,7 +17823,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -20641,7 +21546,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
             "summary": "Kurz nach der Abreise von US-Unterhändlern hat Russland die ukrainische Hauptstadt Kiew erneut mit ballistischen Raketen angegriffen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T10:04:29.000Z",
+            "published_at": "2026-09-08T10:16:01.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -20657,8 +21562,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T10:04:29.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "source_published_at": "2026-09-08T10:16:01.000Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20679,7 +21584,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -21383,7 +22288,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T04:02:02.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21404,7 +22309,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -22558,7 +23463,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T09:36:19.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -22579,7 +23484,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "7058d23c9246612a31343345ae582873e03ef1dcd138d22c83c048f96c4900e7",
           "issue_codes": [],
           "warning_codes": []
@@ -23521,7 +24426,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -26494,7 +27399,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -27206,7 +28111,7 @@
             "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
             "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T10:04:29.000Z",
+            "published_at": "2026-09-08T10:16:01.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -27222,8 +28127,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T10:04:29.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "source_published_at": "2026-09-08T10:16:01.000Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -27244,7 +28149,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -28407,7 +29312,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -28832,9 +29737,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T10:20:48.403Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T16:20:48.403Z",
+        "expires_at": "2026-09-08T16:26:26.801Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -29416,7 +30321,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T22:53:34.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -29437,7 +30342,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "b6eac9ae04448a841c4dd4b15ba5312652100dd079ff9f977e47c18e0d1ecd2c",
           "issue_codes": [],
           "warning_codes": []
@@ -32354,7 +33259,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -33611,7 +34516,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -34172,7 +35077,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -35681,7 +36586,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -36188,7 +37093,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T21:32:03.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -36209,7 +37114,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "5bcda75ca15146769f2ebfdac151168ed145dfee00818f3f0083be9e3dc29b3f",
           "issue_codes": [],
           "warning_codes": []
@@ -36900,7 +37805,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -38026,7 +38931,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -38047,7 +38952,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -38567,7 +39472,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -39286,7 +40191,7 @@
             "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
             "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T10:04:29.000Z",
+            "published_at": "2026-09-08T10:16:01.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -39302,8 +40207,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T10:04:29.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "source_published_at": "2026-09-08T10:16:01.000Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39324,7 +40229,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -41781,7 +42686,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -43279,7 +44184,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -44354,7 +45259,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -45884,9 +46789,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T10:20:48.403Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T16:20:48.403Z",
+        "expires_at": "2026-09-08T16:26:26.801Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -50562,7 +51467,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -55259,7 +56164,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -61343,7 +62248,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T15:31:00.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -61364,7 +62269,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -69928,7 +70833,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -71180,7 +72085,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "7a2c72da8e35ded18fff805a544609c7dc335a6f3cb4475cdbf05265d0956a32",
           "issue_codes": [],
           "warning_codes": []
@@ -72676,7 +73581,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -75036,7 +75941,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -75777,7 +76682,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -87821,7 +88726,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "ingested_at": "2026-09-08T10:26:26.801Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -87882,7 +88787,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -87902,7 +88807,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          "checked_at": "2026-09-08T10:26:26.801Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -87918,7 +88823,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
+      "updated_at": "2026-09-08T10:26:26.801Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -87958,7 +88863,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1513.9173333333333,
+        "queue_age_minutes": 1519.5573,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -87967,7 +88872,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
+        "checked_at": "2026-09-08T10:26:26.801Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -107234,7 +108139,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -108229,7 +109134,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -108930,7 +109835,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -109684,7 +110589,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -109705,7 +110610,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -110368,7 +111273,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -114479,7 +115384,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "3a48062f9f17240bc2032436aad30d6f1ece4f3bfb6aa68a85a440c21ebcb6c1",
           "issue_codes": [],
           "warning_codes": []
@@ -115781,7 +116686,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
           "issue_codes": [],
           "warning_codes": []
@@ -119152,7 +120057,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -145039,7 +145944,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -189393,7 +190298,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:20:48.403Z",
+          "checked_at": "2026-09-08T10:26:26.801Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

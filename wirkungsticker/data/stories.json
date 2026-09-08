@@ -1,7 +1,101 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T10:13:04.054Z",
+  "updated_at": "2026-09-08T10:26:26.801Z",
   "stories": [
+    {
+      "story_id": "wt-a507ffe4779c1fd4",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "grune-fordern-reformen-in-der-psychiatrischen-versorgung-9c1fd4",
+      "title": "Grüne fordern Reformen in der psychiatrischen Versorgung",
+      "source_summary": "Die Bundestagskurzmeldung berichtet über einen Antrag der Grünen-Fraktion zur psychiatrischen Versorgung. Die Fraktion fordert einen Ausbau ambulanter Behandlungsmöglichkeiten und verweist auf aus ihrer Sicht bestehende Versorgungsbrüche zwischen stationärer und ambulanter Behandlung.\n\nAls Begründung nennt die Quelle steigende stationäre Behandlungen wegen psychischer Erkrankungen, mehr psychiatrische und psychosomatische Krankenhausbetten und fehlende Anschlussangebote nach einem Klinikaufenthalt. Genannt werden außerdem flexiblere Hilfen aus Kliniken, ein Ausbau psychiatrischer Institutsambulanzen, besseres Entlassmanagement und die Wiederherstellung der vollständigen Refinanzierung tariflicher Personalkosten.",
+      "summary": "Die Grünen wollen die psychiatrische Versorgung mit mehr ambulanter Behandlung umbauen. Die Meldung beschreibt vor allem einen parlamentarischen Antrag, keine بالفعل beschlossene Änderung.",
+      "detail_summary": "Im Kern geht es um einen Antrag der Grünen-Fraktion zur psychiatrischen Versorgung mit Schwerpunkt auf ambulanten Angeboten, Institutsambulanzen und besserer Anschlussversorgung nach Klinikaufenthalten. Die Quelle begründet den Vorstoß mit gestiegener stationärer Behandlung und mit Versorgungsbrüchen zwischen Sektoren. Für Menschen mit schweren und chronischen psychischen Erkrankungen könnte ein solcher Umbau den Zugang zu wohnortnaher Hilfe verändern und Wiederaufnahmen verringern, wenn die geforderten Strukturen tatsächlich umgesetzt werden. Für das System wäre das relevant, weil sich Kapazitäten, Zuständigkeiten und Finanzierung zwischen stationär und ambulant verschieben könnten. Belastbar belegt ist hier aber nur der Antrag selbst; eine tatsächliche Reform, Wirkung oder Finanzierungsauswirkung ist noch nicht nachgewiesen.",
+      "why_relevant": "Die Meldung betrifft die Organisation der psychiatrischen Versorgung und damit ein Feld mit direkter Bedeutung für Betroffene, Versorgungskapazitäten und Finanzierung. Wenn der Antrag später in Maßnahmen mündet, kann das Zuständigkeiten, Anreize und Zugänge im Gesundheitssystem verändern.",
+      "topic": [
+        "Gesundheit",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "rationale": "Mehr ambulante Angebote, bessere Übergänge nach Klinikaufenthalten und gesicherte Personalkosten können den Zugang zu Hilfe und die Kontinuität der Versorgung verbessern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle enthält keinen direkten Umweltbezug."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "rationale": "Es handelt sich um einen parlamentarischen Antrag und damit um einen öffentlich verhandelten Reformvorschlag mit möglicher Wirkung auf die politische Entscheidungsfindung."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "patientinnen",
+          "aeltere",
+          "kinder_jugend",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T10:26:26.801Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T09:18:00.000Z",
+      "last_updated": "2026-09-08T10:28:51.345Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-f41ec576e0c6556a2ca9",
+      "case_file": null,
+      "source_published_at": "2026-09-08T09:18:00.000Z",
+      "published_at": "2026-09-08T10:28:51.345Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form der Bundestag den Antrag berät oder beschließt.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Ausschussberatung, Abstimmung oder weitere parlamentarische Schritte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-e6efbfac503878b7",
+          "announced_at": "2026-09-08T09:18:00.000Z",
+          "follow_up_date": "2026-09-15T10:28:51.345Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T09:18:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-fba5823fb7d08999",
       "title_image": {
