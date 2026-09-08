@@ -1,8 +1,774 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T01:51:45.200Z",
-  "updated_at": "2026-09-08T02:21:51.794Z",
+  "public_updated_at": "2026-09-08T02:37:05.212Z",
+  "updated_at": "2026-09-08T02:37:05.212Z",
   "stories": [
+    {
+      "story_id": "wt-6fc066364494ba73",
+      "slug": "ukraine-news-ukrainischer-generalstaatsanwalt-tritt-nach-korruptionsvorwurfen-zuruck-94ba73",
+      "title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
+      "first_seen": "2026-09-08T02:33:38.000Z",
+      "last_updated": "2026-09-08T02:37:41.297Z",
+      "published_at": "2026-09-08T02:37:41.297Z",
+      "updated_at": "2026-09-08T02:37:41.297Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+          "title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
+          "summary": "Der ukrainische Generalstaatsanwalt Ruslan Krawtschenko hat nach Korruptionsvorwürfen seinen Rücktritt eingereicht. Bei einem Drohnenangriff auf Saratow wurden derweil mehrere Menschen verletzt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T02:33:38.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "21d4ad36742ba512a23bc10ed22ec3b3b81a3fc8970c04f2f5fceaa1367f8cfd",
+          "source_item_id": "ac7053798f55cfb0ff2fe8e9b54e47dbc2708a36a94690edae9ca1447609826e",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T02:33:38.000Z",
+          "ingested_at": "2026-09-08T02:37:05.212Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6fc066364494ba73-v1-claim-1",
+          "story_id": "wt-6fc066364494ba73",
+          "claim": "Der ukrainische Generalstaatsanwalt Ruslan Krawtschenko hat nach Korruptionsvorwürfen seinen Rücktritt eingereicht.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "8791409beb5d180fe037",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "f9141bdd5ca079753ad4",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "3dc0ceceff71f66ab65d",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "f57853230262a03f7c03",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T02:37:41.297Z"
+        },
+        {
+          "claim_id": "wt-6fc066364494ba73-v1-claim-2",
+          "story_id": "wt-6fc066364494ba73",
+          "claim": "Die ukrainischen Antikorruptionsbehörden hatten zuvor nach eigenen Angaben ein Netzwerk aufgedeckt, das betrügerische Callcenter gegen Bestechungsgelder geschützt haben soll.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "3dc0ceceff71f66ab65d",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "f57853230262a03f7c03",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T02:37:41.297Z"
+        },
+        {
+          "claim_id": "wt-6fc066364494ba73-v1-claim-3",
+          "story_id": "wt-6fc066364494ba73",
+          "claim": "Krawtschenko weist eine persönliche Verwicklung in die Affäre zurück und bezeichnet den Schritt als politische Entscheidung.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "f9141bdd5ca079753ad4",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T02:37:41.297Z"
+        },
+        {
+          "claim_id": "wt-6fc066364494ba73-v1-claim-4",
+          "story_id": "wt-6fc066364494ba73",
+          "claim": "Bei Ermittlungen wurden auch Büros der Generalstaatsanwaltschaft durchsucht.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "3dc0ceceff71f66ab65d",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "excerpt_hash": "f57853230262a03f7c03",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T02:37:41.297Z"
+        }
+      ],
+      "event_id": "event-12e474f96aac28e26997",
+      "event_first_seen_at": "2026-09-08T02:37:05.212Z",
+      "event_detected_at": "2026-09-08T02:37:05.212Z",
+      "verification_started_at": "2026-09-08T02:37:29.597Z",
+      "publish_ready_at": "2026-09-08T02:37:41.297Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T02:37:05.212Z",
+        "fingerprint": "7058d23c9246612a31343345ae582873e03ef1dcd138d22c83c048f96c4900e7",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "cd9a1358404fd99dd334642c1954fdfe047b600b99e18677eb318b362a1f4287",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T02:37:41.297Z",
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+            "content_hash": "21d4ad36742ba512a23bc10ed22ec3b3b81a3fc8970c04f2f5fceaa1367f8cfd",
+            "excerpt_hash": "1ed2544298923569634e8b58fb95e4e168987ceec8613d8c5d641e36f4936a24",
+            "number_locale": "de",
+            "numbers": [
+              "4",
+              "32",
+              "36",
+              "2022",
+              "2",
+              "3",
+              "6",
+              "42",
+              "596352",
+              "2026",
+              "9",
+              "33",
+              "1195",
+              "8",
+              "100",
+              "0",
+              "62000",
+              "3462776",
+              "13",
+              "4306",
+              "16",
+              "1",
+              "17",
+              "200",
+              "4.5",
+              "1300",
+              "2023"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Der MDR berichtet in einem Ukraine-Liveblog, dass der ukrainische Generalstaatsanwalt Ruslan Krawtschenko nach Korruptionsvorwürfen seinen Rücktritt eingereicht habe. Krawtschenko habe den Schritt als politische Entscheidung bezeichnet und eine persönliche Verwicklung zurückgewiesen.\n\nAls Hintergrund nennt die Quelle Angaben der ukrainischen Antikorruptionsbehörden, denen zufolge ein Netzwerk aufgedeckt worden sei, das betrügerische Callcenter gegen Bestechungsgelder geschützt haben soll. Bei den Ermittlungen seien auch Büros der Generalstaatsanwaltschaft durchsucht worden. Die Meldung bleibt auf diese Darstellung beschränkt; weitere belastbare Details zu möglichen Folgen oder zu einer offiziellen Bestätigung des Rücktritts nennt der Text nicht.",
+      "analysis": {
+        "story_id": "wt-6fc066364494ba73",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Krawtschenko soll nach Korruptionsvorwürfen zurückgetreten sein. Die Quelle nennt zugleich Ermittlungen und Durchsuchungen bei der Generalstaatsanwaltschaft.",
+        "detail_summary": "Der berichtete Kern ist ein Rücktritt an der Spitze der ukrainischen Generalstaatsanwaltschaft nach Korruptionsvorwürfen. Dazu kommen Ermittlungsangaben über ein mutmaßlich geschütztes Betrugsnetzwerk und Durchsuchungen in der Behörde. Das ist für die Staatlichkeit und die Korruptionsbekämpfung relevant, weil ein solcher Schritt die Leitung einer zentralen Kontrollinstanz verändert. Mögliche Folge ist zunächst eine personelle und organisatorische Neuordnung; je nach weiterer Aufklärung kann das Vertrauen in Ermittlungen und Amtsführung steigen oder sinken. Ein Wirkpfad lässt sich deshalb vor allem über Governance, Rechtsdurchsetzung und die öffentliche Glaubwürdigkeit der Institution beschreiben. Belastbar bleibt aber nur der berichtete Stand aus einer journalistischen Quelle; eine unabhängige Bestätigung des Rücktritts oder der Vorwürfe liegt in den gelieferten Belegen nicht vor.",
+        "why_relevant": "Ein Rücktritt an der Spitze der Generalstaatsanwaltschaft kann die Handlungsfähigkeit und Glaubwürdigkeit einer zentralen Rechtsstaatsinstitution verändern. Das betrifft Governance, Korruptionsbekämpfung und damit einen materiellen Staatszustand in der laufenden Kriegs- und Reformlage.",
+        "status": "offen",
+        "analysis_type": "monitoring",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Meldung betrifft die Leitung einer zentralen Justizinstitution. Das kann die Durchsetzung von Recht und das Vertrauen in staatliche Kontrolle stärken oder schwächen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es ist kein direkter Umwelt- oder Ressourcenbezug belegt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Generalstaatsanwaltschaft ist für Rechtsstaatlichkeit und Kontrolle relevant. Ein personeller Einschnitt kann die demokratische Korrekturfähigkeit und Korruptionsbekämpfung beeinflussen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Ein Wechsel an der Spitze kann Ermittlungsprioritäten, interne Abläufe und die Durchsetzung von Antikorruptionsregeln verändern. Je nach Nachbesetzung und Aufklärung kann das die institutionelle Stabilität stärken oder weitere Vertrauensverluste auslösen.",
+        "impact_risks": [
+          "Vorübergehende Schwächung der Ermittlungs- und Steuerungsfähigkeit",
+          "Vertrauensverlust in die Unabhängigkeit der Behörde",
+          "Politische Instrumentalisierung des Vorgangs"
+        ],
+        "mechanisms": [
+          "Rücktritt verändert die Führung einer zentralen Behörde",
+          "Ermittlungen und Durchsuchungen erhöhen internen und öffentlichen Druck",
+          "Die Aufklärung kann Anreize und Kontrolle innerhalb der Institution verschieben"
+        ],
+        "first_order": [
+          "Personalwechsel an der Spitze der Generalstaatsanwaltschaft",
+          "Öffentliche Aufmerksamkeit für Korruptionsvorwürfe"
+        ],
+        "second_order": [
+          "Mögliche Neuordnung von Zuständigkeiten und Ermittlungsabläufen",
+          "Veränderte Erwartungen an Antikorruptionspolitik und Amtsführung"
+        ],
+        "third_order": [
+          "Falls der Vorgang zu wirksameren Kontrollen führt, könnte das die institutionelle Resilienz stärken",
+          "Bei weiterer Politisierung könnte die Korrekturfähigkeit der Institution geschwächt werden"
+        ],
+        "systemic_relevance": "Die Meldung berührt eine zentrale Rechtsstaats- und Kontrollinstanz in einem Land im Krieg. Dadurch kann der Fall über den Einzelfall hinaus Wirkung auf Governance, Vertrauen und Korruptionsbekämpfung entfalten.",
+        "transformation_potential": "Wenn der Rücktritt eine ernsthafte Aufklärung und institutionelle Nachsteuerung auslöst, kann das die Antikorruptionsarchitektur schärfen. Ohne belastbare Folgeberichte bleibt das aber nur ein mögliches Potenzial.",
+        "resilience": "Resilienz hängt hier davon ab, ob die Behörde schnell und glaubwürdig nachbesetzt wird und ob Ermittlungen unabhängig weiterlaufen. Die bisherige Evidenz reicht nicht, um das Ergebnis zu beurteilen.",
+        "side_effects": [
+          "Kurzfristige Personal- und Führungslücke",
+          "Mögliche Verunsicherung in der Verwaltung",
+          "Erhöhte politische Angriffsfläche"
+        ],
+        "uncertainties": [
+          "Ob der Rücktritt bereits offiziell angenommen wurde, bleibt offen",
+          "Die Reichweite der Vorwürfe und die Ergebnisse der Ermittlungen sind in den gelieferten Belegen nicht abschließend belegt",
+          "Folgen für die Behörde und das politische Umfeld sind noch unklar"
+        ],
+        "evidence_level": "medium",
+        "attribution": "Berichtet wird im MDR-Liveblog; die Quelle nennt den Rücktritt, die Vorwürfe und die Durchsuchungen, stützt sich dabei teils auf Reuters, dpa und AFP. Die zentrale Nachricht ist journalistisch attribuiert, nicht amtlich bestätigt.",
+        "watch_next": [
+          "Offizielle Bestätigung oder Annahme des Rücktritts",
+          "Weitere Angaben zu den Ermittlungen und möglichen personellen Folgen",
+          "Reaktionen aus Regierung und Justiz"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16",
+          "SDG+ Rechtsstaatlichkeit und Korruptionsbekämpfung"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält eine neue, materielle Zustandsänderung an der Spitze einer zentralen Justizinstitution. Trotz nur einer journalistischen Quelle ist der Kern klar attribuiert und für Governance und Rechtsstaat relevant."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T02:37:05.212Z",
+        "media_trigger_fingerprint": "6c450b424f32c39f63c54a77eae09ae14c66ab375c34de737b428601abac3ae0",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "6c450b424f32c39f63c54a77eae09ae14c66ab375c34de737b428601abac3ae0",
+          "content_fingerprint": "5ed89b8c295a62c332dcc54a1b7d09e61fcce5a509e4ec949e9ad19bfd904a55",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T02:37:41.297Z",
+          "content_hash": "cd9a1358404fd99dd334642c1954fdfe047b600b99e18677eb318b362a1f4287",
+          "source_summary": "Der MDR berichtet in einem Ukraine-Liveblog, dass der ukrainische Generalstaatsanwalt Ruslan Krawtschenko nach Korruptionsvorwürfen seinen Rücktritt eingereicht habe. Krawtschenko habe den Schritt als politische Entscheidung bezeichnet und eine persönliche Verwicklung zurückgewiesen.\n\nAls Hintergrund nennt die Quelle Angaben der ukrainischen Antikorruptionsbehörden, denen zufolge ein Netzwerk aufgedeckt worden sei, das betrügerische Callcenter gegen Bestechungsgelder geschützt haben soll. Bei den Ermittlungen seien auch Büros der Generalstaatsanwaltschaft durchsucht worden. Die Meldung bleibt auf diese Darstellung beschränkt; weitere belastbare Details zu möglichen Folgen oder zu einer offiziellen Bestätigung des Rücktritts nennt der Text nicht.",
+          "analysis": {
+            "story_id": "wt-6fc066364494ba73",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Krawtschenko soll nach Korruptionsvorwürfen zurückgetreten sein. Die Quelle nennt zugleich Ermittlungen und Durchsuchungen bei der Generalstaatsanwaltschaft.",
+            "detail_summary": "Der berichtete Kern ist ein Rücktritt an der Spitze der ukrainischen Generalstaatsanwaltschaft nach Korruptionsvorwürfen. Dazu kommen Ermittlungsangaben über ein mutmaßlich geschütztes Betrugsnetzwerk und Durchsuchungen in der Behörde. Das ist für die Staatlichkeit und die Korruptionsbekämpfung relevant, weil ein solcher Schritt die Leitung einer zentralen Kontrollinstanz verändert. Mögliche Folge ist zunächst eine personelle und organisatorische Neuordnung; je nach weiterer Aufklärung kann das Vertrauen in Ermittlungen und Amtsführung steigen oder sinken. Ein Wirkpfad lässt sich deshalb vor allem über Governance, Rechtsdurchsetzung und die öffentliche Glaubwürdigkeit der Institution beschreiben. Belastbar bleibt aber nur der berichtete Stand aus einer journalistischen Quelle; eine unabhängige Bestätigung des Rücktritts oder der Vorwürfe liegt in den gelieferten Belegen nicht vor.",
+            "why_relevant": "Ein Rücktritt an der Spitze der Generalstaatsanwaltschaft kann die Handlungsfähigkeit und Glaubwürdigkeit einer zentralen Rechtsstaatsinstitution verändern. Das betrifft Governance, Korruptionsbekämpfung und damit einen materiellen Staatszustand in der laufenden Kriegs- und Reformlage.",
+            "status": "offen",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Die Meldung betrifft die Leitung einer zentralen Justizinstitution. Das kann die Durchsetzung von Recht und das Vertrauen in staatliche Kontrolle stärken oder schwächen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Es ist kein direkter Umwelt- oder Ressourcenbezug belegt."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Die Generalstaatsanwaltschaft ist für Rechtsstaatlichkeit und Kontrolle relevant. Ein personeller Einschnitt kann die demokratische Korrekturfähigkeit und Korruptionsbekämpfung beeinflussen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Ein Wechsel an der Spitze kann Ermittlungsprioritäten, interne Abläufe und die Durchsetzung von Antikorruptionsregeln verändern. Je nach Nachbesetzung und Aufklärung kann das die institutionelle Stabilität stärken oder weitere Vertrauensverluste auslösen.",
+            "impact_risks": [
+              "Vorübergehende Schwächung der Ermittlungs- und Steuerungsfähigkeit",
+              "Vertrauensverlust in die Unabhängigkeit der Behörde",
+              "Politische Instrumentalisierung des Vorgangs"
+            ],
+            "mechanisms": [
+              "Rücktritt verändert die Führung einer zentralen Behörde",
+              "Ermittlungen und Durchsuchungen erhöhen internen und öffentlichen Druck",
+              "Die Aufklärung kann Anreize und Kontrolle innerhalb der Institution verschieben"
+            ],
+            "first_order": [
+              "Personalwechsel an der Spitze der Generalstaatsanwaltschaft",
+              "Öffentliche Aufmerksamkeit für Korruptionsvorwürfe"
+            ],
+            "second_order": [
+              "Mögliche Neuordnung von Zuständigkeiten und Ermittlungsabläufen",
+              "Veränderte Erwartungen an Antikorruptionspolitik und Amtsführung"
+            ],
+            "third_order": [
+              "Falls der Vorgang zu wirksameren Kontrollen führt, könnte das die institutionelle Resilienz stärken",
+              "Bei weiterer Politisierung könnte die Korrekturfähigkeit der Institution geschwächt werden"
+            ],
+            "systemic_relevance": "Die Meldung berührt eine zentrale Rechtsstaats- und Kontrollinstanz in einem Land im Krieg. Dadurch kann der Fall über den Einzelfall hinaus Wirkung auf Governance, Vertrauen und Korruptionsbekämpfung entfalten.",
+            "transformation_potential": "Wenn der Rücktritt eine ernsthafte Aufklärung und institutionelle Nachsteuerung auslöst, kann das die Antikorruptionsarchitektur schärfen. Ohne belastbare Folgeberichte bleibt das aber nur ein mögliches Potenzial.",
+            "resilience": "Resilienz hängt hier davon ab, ob die Behörde schnell und glaubwürdig nachbesetzt wird und ob Ermittlungen unabhängig weiterlaufen. Die bisherige Evidenz reicht nicht, um das Ergebnis zu beurteilen.",
+            "side_effects": [
+              "Kurzfristige Personal- und Führungslücke",
+              "Mögliche Verunsicherung in der Verwaltung",
+              "Erhöhte politische Angriffsfläche"
+            ],
+            "uncertainties": [
+              "Ob der Rücktritt bereits offiziell angenommen wurde, bleibt offen",
+              "Die Reichweite der Vorwürfe und die Ergebnisse der Ermittlungen sind in den gelieferten Belegen nicht abschließend belegt",
+              "Folgen für die Behörde und das politische Umfeld sind noch unklar"
+            ],
+            "evidence_level": "medium",
+            "attribution": "Berichtet wird im MDR-Liveblog; die Quelle nennt den Rücktritt, die Vorwürfe und die Durchsuchungen, stützt sich dabei teils auf Reuters, dpa und AFP. Die zentrale Nachricht ist journalistisch attribuiert, nicht amtlich bestätigt.",
+            "watch_next": [
+              "Offizielle Bestätigung oder Annahme des Rücktritts",
+              "Weitere Angaben zu den Ermittlungen und möglichen personellen Folgen",
+              "Reaktionen aus Regierung und Justiz"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16",
+              "SDG+ Rechtsstaatlichkeit und Korruptionsbekämpfung"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält eine neue, materielle Zustandsänderung an der Spitze einer zentralen Justizinstitution. Trotz nur einer journalistischen Quelle ist der Kern klar attribuiert und für Governance und Rechtsstaat relevant."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T02:37:05.212Z",
+            "media_trigger_fingerprint": "6c450b424f32c39f63c54a77eae09ae14c66ab375c34de737b428601abac3ae0",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "6c450b424f32c39f63c54a77eae09ae14c66ab375c34de737b428601abac3ae0",
+              "content_fingerprint": "5ed89b8c295a62c332dcc54a1b7d09e61fcce5a509e4ec949e9ad19bfd904a55",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-6fc066364494ba73-v1-claim-1",
+              "story_id": "wt-6fc066364494ba73",
+              "claim": "Der ukrainische Generalstaatsanwalt Ruslan Krawtschenko hat nach Korruptionsvorwürfen seinen Rücktritt eingereicht.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "8791409beb5d180fe037",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "f9141bdd5ca079753ad4",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "3dc0ceceff71f66ab65d",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "f57853230262a03f7c03",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            },
+            {
+              "claim_id": "wt-6fc066364494ba73-v1-claim-2",
+              "story_id": "wt-6fc066364494ba73",
+              "claim": "Die ukrainischen Antikorruptionsbehörden hatten zuvor nach eigenen Angaben ein Netzwerk aufgedeckt, das betrügerische Callcenter gegen Bestechungsgelder geschützt haben soll.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "3dc0ceceff71f66ab65d",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "f57853230262a03f7c03",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            },
+            {
+              "claim_id": "wt-6fc066364494ba73-v1-claim-3",
+              "story_id": "wt-6fc066364494ba73",
+              "claim": "Krawtschenko weist eine persönliche Verwicklung in die Affäre zurück und bezeichnet den Schritt als politische Entscheidung.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "f9141bdd5ca079753ad4",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            },
+            {
+              "claim_id": "wt-6fc066364494ba73-v1-claim-4",
+              "story_id": "wt-6fc066364494ba73",
+              "claim": "Bei Ermittlungen wurden auch Büros der Generalstaatsanwaltschaft durchsucht.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "3dc0ceceff71f66ab65d",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                  "excerpt_hash": "f57853230262a03f7c03",
+                  "checked_at": "2026-09-08T02:37:41.297Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T02:37:41.297Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+              "content_hash": "21d4ad36742ba512a23bc10ed22ec3b3b81a3fc8970c04f2f5fceaa1367f8cfd"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T02:37:41.297Z",
+            "sources": [
+              {
+                "source_id": "mdr-nachrichten",
+                "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+                "content_hash": "21d4ad36742ba512a23bc10ed22ec3b3b81a3fc8970c04f2f5fceaa1367f8cfd",
+                "excerpt_hash": "1ed2544298923569634e8b58fb95e4e168987ceec8613d8c5d641e36f4936a24",
+                "number_locale": "de",
+                "numbers": [
+                  "4",
+                  "32",
+                  "36",
+                  "2022",
+                  "2",
+                  "3",
+                  "6",
+                  "42",
+                  "596352",
+                  "2026",
+                  "9",
+                  "33",
+                  "1195",
+                  "8",
+                  "100",
+                  "0",
+                  "62000",
+                  "3462776",
+                  "13",
+                  "4306",
+                  "16",
+                  "1",
+                  "17",
+                  "200",
+                  "4.5",
+                  "1300",
+                  "2023"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T02:37:41.297Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6fc066364494ba73-60de2ed9c37235e0-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "60de2ed9c37235e0b5b2fd7b390d7a86d2a9973c736db33fa6e4bfa3e7ce173c"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6fc066364494ba73-ef948f41d885e6e4-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "ef948f41d885e6e43cdd1c0b324d1ec12a5acd19775e5cdf3b60a581e255a4fc"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6fc066364494ba73-898c9965d09f783b-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "898c9965d09f783bdfcf2f0077daf9e42f4e8bd5ca2bc1ad89d07fe7a89776ab"
+        },
+        "source_visual": null,
+        "fingerprint": "b0574a8afcb8c701baaf40764eea820ab670e51d66fe7297b29457544db928c0",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T02:38:10.544Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-6343ca92be9f7cb8",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "dbca7656d23ce1538ca11191e19bb5758041156271939c89554375ef77e7088b",
+        "first_failed_at": "2026-09-08T02:37:05.212Z",
+        "failed_at": "2026-09-08T02:37:05.212Z",
+        "retry_after": "2026-09-08T02:52:05.212Z",
+        "retry_count": 1
+      },
+      "slug": "trump-threatens-to-ban-canadian-bombardier-jets-from-us-market-9f7cb8",
+      "title": "Trump threatens to ban Canadian Bombardier jets from US market",
+      "first_seen": "2026-09-08T02:24:03.000Z",
+      "last_updated": "2026-09-08T02:24:03.000Z",
+      "topic": [
+        "Arbeit",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/americas/20260908-trump-ban-canadian-bombardier-jets-us-market",
+          "title": "Trump threatens to ban Canadian Bombardier jets from US market",
+          "summary": "US President Donald Trump threatened on Monday to block sales of Canadian planemaker Bombardier in the United States unless it builds aircraft in the country, escalating trade tensions on the eve of Canadian retaliatory tariffs. Trump accused Canada of “unjust and unfair” trade practices but did not explain how a ban would work.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T02:24:03.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "e8c01dc6fd9a1e1393dd65c30aecfadd388f15e7879a3658319e67dab640a9d9",
+          "source_item_id": "64decde9a94735adb6851dd7267ed0d1cb92f5eff8d8f0b03580015ce989f92c",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T02:24:03.000Z",
+          "ingested_at": "2026-09-08T02:37:05.212Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6343ca92be9f7cb8-claim-01",
+          "story_id": "wt-6343ca92be9f7cb8",
+          "claim": "Trump threatens to ban Canadian Bombardier jets from US market: US President Donald Trump threatened on Monday to block sales of Canadian planemaker Bombardier in the United States unless it builds aircraft in the country, escalating trade tensions on the eve of Canadian retaliatory tariffs. Trump accused Canada of “unjust and unfair” trade practices but did not explain how a ban would work.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T02:37:05.212Z"
+        }
+      ],
+      "content_hash": "7879599c705efdbaa420e315bfc0887532c964284429feaed3d7fe76b9c45861",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T02:52:05.212Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T02:37:05.212Z",
+      "event_first_seen_at": "2026-09-08T02:37:05.212Z",
+      "event_detected_at": "2026-09-08T02:37:05.212Z",
+      "event_id": "event-ac7d1761c4986673813b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.036866666666667,
+        "detection_delay_minutes": 13.036866666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T02:37:05.212Z",
+        "fingerprint": "2a45ea8ed00c8d468ff8003805e6595a4b823ef36186a386eb513307499cc627",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-6f5e94e2389d5b37",
       "ai_retry": {
@@ -65607,7 +66373,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T02:21:51.794Z",
+          "ingested_at": "2026-09-08T02:37:05.212Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -65668,7 +66434,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T02:21:51.794Z"
+          "checked_at": "2026-09-08T02:37:05.212Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -65688,7 +66454,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T02:21:51.794Z"
+          "checked_at": "2026-09-08T02:37:05.212Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -65704,7 +66470,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T02:21:51.794Z",
+      "updated_at": "2026-09-08T02:37:05.212Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -65744,7 +66510,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1034.97385,
+        "queue_age_minutes": 1050.1974833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -65753,7 +66519,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T02:21:51.794Z",
+        "checked_at": "2026-09-08T02:37:05.212Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -123236,7 +124002,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T02:21:51.794Z",
+          "checked_at": "2026-09-08T02:37:05.212Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -167590,7 +168356,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T02:21:51.794Z",
+          "checked_at": "2026-09-08T02:37:05.212Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

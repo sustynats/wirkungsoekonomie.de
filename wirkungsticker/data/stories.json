@@ -1,7 +1,91 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T01:52:42.101Z",
+  "updated_at": "2026-09-08T02:37:05.212Z",
   "stories": [
+    {
+      "story_id": "wt-6fc066364494ba73",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6fc066364494ba73-60de2ed9c37235e0-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6fc066364494ba73-ef948f41d885e6e4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-6fc066364494ba73-898c9965d09f783b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-news-ukrainischer-generalstaatsanwalt-tritt-nach-korruptionsvorwurfen-zuruck-94ba73",
+      "title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
+      "source_summary": "Der MDR berichtet in einem Ukraine-Liveblog, dass der ukrainische Generalstaatsanwalt Ruslan Krawtschenko nach Korruptionsvorwürfen seinen Rücktritt eingereicht habe. Krawtschenko habe den Schritt als politische Entscheidung bezeichnet und eine persönliche Verwicklung zurückgewiesen.\n\nAls Hintergrund nennt die Quelle Angaben der ukrainischen Antikorruptionsbehörden, denen zufolge ein Netzwerk aufgedeckt worden sei, das betrügerische Callcenter gegen Bestechungsgelder geschützt haben soll. Bei den Ermittlungen seien auch Büros der Generalstaatsanwaltschaft durchsucht worden. Die Meldung bleibt auf diese Darstellung beschränkt; weitere belastbare Details zu möglichen Folgen oder zu einer offiziellen Bestätigung des Rücktritts nennt der Text nicht.",
+      "summary": "Krawtschenko soll nach Korruptionsvorwürfen zurückgetreten sein. Die Quelle nennt zugleich Ermittlungen und Durchsuchungen bei der Generalstaatsanwaltschaft.",
+      "detail_summary": "Der berichtete Kern ist ein Rücktritt an der Spitze der ukrainischen Generalstaatsanwaltschaft nach Korruptionsvorwürfen. Dazu kommen Ermittlungsangaben über ein mutmaßlich geschütztes Betrugsnetzwerk und Durchsuchungen in der Behörde. Das ist für die Staatlichkeit und die Korruptionsbekämpfung relevant, weil ein solcher Schritt die Leitung einer zentralen Kontrollinstanz verändert. Mögliche Folge ist zunächst eine personelle und organisatorische Neuordnung; je nach weiterer Aufklärung kann das Vertrauen in Ermittlungen und Amtsführung steigen oder sinken. Ein Wirkpfad lässt sich deshalb vor allem über Governance, Rechtsdurchsetzung und die öffentliche Glaubwürdigkeit der Institution beschreiben. Belastbar bleibt aber nur der berichtete Stand aus einer journalistischen Quelle; eine unabhängige Bestätigung des Rücktritts oder der Vorwürfe liegt in den gelieferten Belegen nicht vor.",
+      "why_relevant": "Ein Rücktritt an der Spitze der Generalstaatsanwaltschaft kann die Handlungsfähigkeit und Glaubwürdigkeit einer zentralen Rechtsstaatsinstitution verändern. Das betrifft Governance, Korruptionsbekämpfung und damit einen materiellen Staatszustand in der laufenden Kriegs- und Reformlage.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Meldung betrifft die Leitung einer zentralen Justizinstitution. Das kann die Durchsetzung von Recht und das Vertrauen in staatliche Kontrolle stärken oder schwächen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Es ist kein direkter Umwelt- oder Ressourcenbezug belegt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Generalstaatsanwaltschaft ist für Rechtsstaatlichkeit und Kontrolle relevant. Ein personeller Einschnitt kann die demokratische Korrekturfähigkeit und Korruptionsbekämpfung beeinflussen."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T02:37:05.212Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T02:33:38.000Z",
+      "last_updated": "2026-09-08T02:37:41.297Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-12e474f96aac28e26997",
+      "case_file": null,
+      "source_published_at": "2026-09-08T02:33:38.000Z",
+      "published_at": "2026-09-08T02:37:41.297Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-generalstaatsanwalt-krawtschenko-ruecktritt-korruptionsvorwuerfe-,ukraine-news-08-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T02:33:38.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-8802c617d5bb3e85",
       "title_image": {

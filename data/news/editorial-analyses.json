@@ -1,8 +1,52 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T02:23:01.671Z",
+  "updated_at": "2026-09-08T02:38:19.458Z",
   "candidates": [
+    {
+      "story_id": "wt-6fc066364494ba73",
+      "story_slug": "ukraine-news-ukrainischer-generalstaatsanwalt-tritt-nach-korruptionsvorwurfen-zuruck-94ba73",
+      "story_title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
+      "editorial_analysis_score": 73,
+      "analysis_gain": 53,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 0,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "5bb7d32b750cef0f6e1a26dc912b0b8479d4aaff49f436af09496646a4841659",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-8802c617d5bb3e85",
       "story_slug": "ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85",
@@ -24071,11 +24115,11 @@
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
       "attempts": 8,
-      "last_attempt_at": "2026-09-08T02:23:01.671Z",
-      "next_attempt_at": "2026-09-08T02:38:01.671Z",
+      "last_attempt_at": "2026-09-08T02:38:19.458Z",
+      "next_attempt_at": "2026-09-08T02:53:19.458Z",
       "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
       "reason": "AI_BATCH_PENDING"
@@ -24110,21 +24154,21 @@
     "wt-1c2c187d0b858b7c": {
       "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
       "method_version": "1.0",
-      "attempts": 3,
-      "last_attempt_at": "2026-09-08T01:37:06.031Z",
-      "next_attempt_at": "2026-09-08T02:37:06.031Z",
+      "attempts": 4,
+      "last_attempt_at": "2026-09-08T02:38:19.458Z",
+      "next_attempt_at": "2026-09-08T04:38:19.458Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "AI_PROVIDER_OUTPUT_INVALID"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-6c26e428b894e714": {
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T02:23:01.671Z",
-      "next_attempt_at": "2026-09-08T02:38:01.671Z",
+      "last_attempt_at": "2026-09-08T02:38:19.458Z",
+      "next_attempt_at": "2026-09-08T02:53:19.458Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -24148,13 +24192,16 @@
     "wt-8802c617d5bb3e85": {
       "fingerprint": "fe28f54c22f9a5b57cd37d4d218bb05595b82b70e6d4ae5de7f191a34f36c475",
       "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-08T02:23:01.671Z",
-      "next_attempt_at": "2026-09-08T02:38:01.671Z",
+      "attempts": 2,
+      "last_attempt_at": "2026-09-08T02:38:19.458Z",
+      "next_attempt_at": "2026-09-08T03:08:19.458Z",
       "quality_errors": [
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
