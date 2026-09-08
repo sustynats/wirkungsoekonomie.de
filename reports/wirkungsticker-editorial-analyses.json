@@ -2,32 +2,81 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T02:23:01.671Z",
-  "scanned_stories": 139,
-  "scanned_subjects": 121,
-  "editorial_candidates": 23,
+  "started_at": "2026-09-08T02:38:19.458Z",
+  "scanned_stories": 140,
+  "scanned_subjects": 122,
+  "editorial_candidates": 24,
   "ready_for_research": 7,
-  "research_pending": 6,
-  "retry_deferred": 4,
-  "editorial_research_sources_discovered": 31,
-  "selected": 3,
-  "editorial_research_started": 3,
+  "research_pending": 7,
+  "retry_deferred": 3,
+  "editorial_research_sources_discovered": 33,
+  "selected": 4,
+  "editorial_research_started": 5,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 2,
-  "research_tokens": 14063,
-  "analysis_tokens": 10980,
-  "estimated_cost_usd": 0.058748,
-  "quality_retries": 2,
+  "research_calls": 4,
+  "research_tokens": 35103,
+  "analysis_tokens": 28406,
+  "estimated_cost_usd": 0.149315,
+  "quality_retries": 3,
   "publication_deferred": true,
   "failed": [
     {
+      "story_id": "wt-1c2c187d0b858b7c",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-08T04:38:19.458Z"
+    },
+    {
       "story_id": "wt-8802c617d5bb3e85",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-      "next_attempt_at": "2026-09-08T02:38:01.671Z"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-08T03:08:19.458Z"
     }
   ],
   "candidates": [
+    {
+      "story_id": "wt-6fc066364494ba73",
+      "story_slug": "ukraine-news-ukrainischer-generalstaatsanwalt-tritt-nach-korruptionsvorwurfen-zuruck-94ba73",
+      "story_title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
+      "editorial_analysis_score": 73,
+      "analysis_gain": 53,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 0,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 7
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 3,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "5bb7d32b750cef0f6e1a26dc912b0b8479d4aaff49f436af09496646a4841659",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-8802c617d5bb3e85",
       "story_slug": "ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85",
@@ -1023,5 +1072,5 @@
     "attention_required": []
   },
   "batch_deferred": 2,
-  "completed_at": "2026-09-08T02:24:56.825Z"
+  "completed_at": "2026-09-08T02:41:39.962Z"
 }
