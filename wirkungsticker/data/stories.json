@@ -1,7 +1,96 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T14:11:43.546Z",
+  "updated_at": "2026-09-08T14:28:53.099Z",
   "stories": [
+    {
+      "story_id": "wt-42e4a2ecd40874e2",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "fairsquare-erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-0874e2",
+      "title": "FairSquare - Erneute Beschwerde bei Ethikkomission gegen FIFA-Chef Infantino",
+      "source_summary": "FairSquare hat nach einem Bericht von Deutschlandfunk erneut Beschwerde gegen FIFA-Präsident Gianni Infantino bei der FIFA-Ethikkommission eingereicht. Die Organisation wirft ihm demnach mehrfachen Verstoß gegen den FIFA-Ethikkodex vor und verweist auf seine Nähe zu US-Präsident Donald Trump sowie auf einen möglichen Missbrauch präsidialer Befugnisse. Bereits im Dezember 2025 hatte FairSquare eine Beschwerde eingereicht; auch ein Vorgehen beim IOC blieb laut Bericht ohne Erfolg.\n\nZudem wird berichtet, dass die UEFA seinen Rückzug fordert und eine Strafanzeige in der Schweiz vorbereitet. Der Hintergrund sei ein inzwischen verworfener Plan gewesen, Turnieranteile an private Investoren zu verkaufen.",
+      "summary": "FairSquare hat erneut eine Beschwerde gegen FIFA-Chef Gianni Infantino eingereicht. Der Bericht verbindet das mit Vorwürfen zum FIFA-Ethikkodex und mit weiterem Druck von UEFA-Seite.",
+      "detail_summary": "Im Kern geht es um eine erneute Beschwerde von FairSquare gegen Gianni Infantino bei der FIFA-Ethikkommission. Der Bericht nennt als Hintergrund Vorwürfe eines Verstoßes gegen den FIFA-Ethikkodex sowie die Nähe zu Donald Trump und einen früheren, inzwischen verworfenen Verkaufsplan für Turnieranteile. Für die Öffentlichkeit ist das relevant, weil es um die Integrität der Verbandsspitze und mögliche Folgen für FIFA-Verfahren und innerverbandliche Machtverhältnisse geht. Ein direkter Wirkpfad liegt vor allem in möglichen Disziplinar-, Reputations- und Governance-Folgen, nicht in einer bereits eingetretenen Zustandsänderung. Offen bleibt, wie die Ethikkommission reagiert und ob die Vorwürfe belastbar sind; belegt ist hier zunächst nur der berichtete Schritt der Beschwerde.",
+      "why_relevant": "Die Meldung betrifft die Führung eines globalen Sportverbands, mögliche Ethikverfahren und zusätzlichen Druck durch weitere Akteure. Das kann interne Entscheidungen, Reputation und Governance des Verbandes beeinflussen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Beschwerde kann Disziplinar- und Reputationsfolgen für den Betroffenen und den Verband auslösen; eingetreten ist das noch nicht."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein belastbarer Wirkpfad zu Umwelt- oder Ressourcenfolgen beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Es geht um Ethik, Transparenz und Machtkontrolle in einer großen Verbandsstruktur; das berührt Korrekturfähigkeit und institutionelle Kontrolle."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T14:28:53.099Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T14:22:00.000Z",
+      "last_updated": "2026-09-08T14:30:51.368Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-29be96fd46d1aad47eb1",
+      "case_file": null,
+      "source_published_at": "2026-09-08T14:22:00.000Z",
+      "published_at": "2026-09-08T14:30:51.368Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die FIFA-Ethikkommission die erneute Beschwerde annimmt oder weitere Schritte einleitet.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Verfahrensschritt der Ethikkommission",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f0ac8fed6f6c6e19",
+          "announced_at": "2026-09-08T14:22:00.000Z",
+          "follow_up_date": "2026-09-15T14:30:51.368Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:22:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-cb6944882f826542",
       "title_image": {
