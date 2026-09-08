@@ -1,7 +1,121 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T20:54:03.771Z",
+  "updated_at": "2026-09-08T21:08:48.678Z",
   "stories": [
+    {
+      "story_id": "wt-ee6173fc58ca7eca",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "klingbeils-rekord-schulden-und-schwache-schuler-ca7eca",
+      "title": "Klingbeils Rekord-Schulden und schwache Schüler",
+      "source_summary": "ZDFheute bündelt am Abend drei aktuelle Themen: den Haushaltsentwurf 2027 von Finanzminister Lars Klingbeil, die neuen Pisa-Ergebnisse und die ersten politischen Gespräche nach der Landtagswahl in Sachsen-Anhalt. Im Haushalt nennt der Bericht Ausgaben von 555,4 Milliarden Euro, Kredite von 118,7 Milliarden Euro und zusammen mit Sondervermögen eine Neuverschuldung von rund 203,6 Milliarden Euro.\n\nBei Pisa heißt es, Deutschlands Schülerinnen und Schüler schnitten so schlecht ab wie nie seit 2000; rund ein Fünftel verfehle in allen drei Bereichen die Basiskompetenzen. In Sachsen-Anhalt werden nach dem AfD-Erfolg Koalitions- und Minderheitsmodelle diskutiert, ein Ergebnis ist offen.",
+      "summary": "Klingbeil bringt einen Haushalt mit hoher Neuverschuldung ein. Zugleich meldet die Quelle neue Pisa-Befunde und offene Regierungsoptionen in Sachsen-Anhalt.",
+      "detail_summary": "Die Meldung verbindet drei getrennte, aber politisch und fiskalisch relevante Entwicklungen: den Haushaltsentwurf 2027 mit 555,4 Milliarden Euro Ausgaben und 118,7 Milliarden Euro Krediten, die schlechtesten Pisa-Ergebnisse Deutschlands seit Beginn der Erhebungen und erste Sondierungen nach der Wahl in Sachsen-Anhalt. Für die Öffentlichkeit ist das relevant, weil Haushalt, Bildungsstand und Regierungsbildung jeweils Regeln, Mittelverwendung und Entscheidungsspielräume beeinflussen. Ein direkter Wirkpfad liegt beim Haushalt in möglichen Verschiebungen von Anreizen und Prioritäten; bei Pisa vor allem in der Bildungssteuerung und bei Sachsen-Anhalt in der künftigen Mehrheitsbildung. Die Quelle bleibt ein journalistischer Überblick; die Einordnung der Folgen ist daher vorläufig.",
+      "why_relevant": "Die Meldung enthält neue, materielle Zustandsinformationen zu Bundeshaushalt, Bildungslage und Regierungsbildung mit möglichem Einfluss auf Mittelverteilung, Anreize und politische Mehrheiten.",
+      "topic": [
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Haushalt kann Mittel und Anreize neu ordnen; gleichzeitig bleiben Verteilungswirkungen und Zielkonflikte offen. Ohne Umsetzungsdaten ist die Nettowirkung noch nicht bestimmbar.",
+          "positive_path": {
+            "mechanism": "Höhere Mittel und neue Abgaben können öffentliche Leistungen und fiskalische Handlungsfähigkeit sichern.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Hohe Neuverschuldung und Kürzungsdebatten können Verteilungskonflikte, Belastungen und politische Blockaden verstärken.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Quelle nennt Klimaschutz-Sondervermögen und Kritik an Kürzungen im Klima- und Transformationsfonds. Daraus ergibt sich ein möglicher Pfad in beide Richtungen, aber kein Wirkungsnachweis.",
+          "positive_path": {
+            "mechanism": "Klimaschutzbezogene Mittel können Transformations- und Investitionspfade stützen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kürzungen oder Umwidmungen können Klima- und Transformationsvorhaben schwächen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Bei Sachsen-Anhalt geht es um Regierungsbildung und mögliche Koalitionsmodelle. Die demokratische Wirkung hängt von den späteren Mehrheiten und Verfahren ab; dazu nennt die Quelle noch kein Ergebnis.",
+          "positive_path": {
+            "mechanism": "Offene Verhandlungen können institutionelle Mehrheiten und parlamentarische Kontrolle klären.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Blockaden oder Lagerkonflikte können die Regierungsbildung erschweren und Korrekturfähigkeit mindern.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T21:08:48.678Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:46:00.000Z",
+      "last_updated": "2026-09-08T21:11:10.043Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-5f3c52a0a4b117744739",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:46:00.000Z",
+      "published_at": "2026-09-08T21:11:10.043Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:46:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e820bef62dd96612",
       "title_image": {
