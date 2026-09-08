@@ -2,37 +2,76 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T10:29:32.164Z",
-  "scanned_stories": 151,
-  "scanned_subjects": 132,
-  "editorial_candidates": 24,
-  "ready_for_research": 8,
-  "research_pending": 7,
-  "retry_deferred": 5,
-  "editorial_research_sources_discovered": 34,
+  "started_at": "2026-09-08T10:53:22.688Z",
+  "scanned_stories": 152,
+  "scanned_subjects": 133,
+  "editorial_candidates": 25,
+  "ready_for_research": 9,
+  "research_pending": 8,
+  "retry_deferred": 6,
+  "editorial_research_sources_discovered": 40,
   "selected": 3,
   "editorial_research_started": 4,
   "editorial_analyses_published": 0,
-  "editorial_analyses_updated": 0,
+  "editorial_analyses_updated": 1,
   "research_calls": 4,
-  "research_tokens": 28141,
-  "analysis_tokens": 24199,
-  "estimated_cost_usd": 0.125681,
+  "research_tokens": 32477,
+  "analysis_tokens": 31215,
+  "estimated_cost_usd": 0.160505,
   "quality_retries": 2,
   "publication_deferred": true,
   "failed": [
     {
-      "story_id": "wt-b5e0a39f46388642",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T10:59:32.164Z"
-    },
-    {
-      "story_id": "wt-de413d33343f350b",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_TEASER_LENGTH,EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-      "next_attempt_at": "2026-09-08T10:59:32.164Z"
+      "story_id": "wt-cf03acddb911d861",
+      "reason": "AI_PROVIDER_OUTPUT_INVALID",
+      "next_attempt_at": "2026-09-08T22:53:22.688Z"
     }
   ],
   "candidates": [
+    {
+      "story_id": "wt-4c0a09f9ce090af7",
+      "story_slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
+      "story_title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
+      "editorial_analysis_score": 70,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "6d1adf2c4c1674a28bf8d5bf2d3049e395e429a15e210afbc5818019c1e6a157",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-de413d33343f350b",
       "story_slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
@@ -157,8 +196,8 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "ed1ca2b011a03d3abfd9acfe6e4b1b80d11a8cb0102ee3bfd4142f034878d76b",
-      "status": "published",
+      "fingerprint": "e1b1db1771ed604af4ad505ac35099d79339d3599224ead111a589923e4b9bed",
+      "status": "ready_for_research",
       "analysis_id": "woek-analysis-dab9cdd59202"
     },
     {
@@ -1072,5 +1111,5 @@
     "attention_required": []
   },
   "batch_deferred": 1,
-  "completed_at": "2026-09-08T10:32:15.445Z"
+  "completed_at": "2026-09-08T10:57:03.985Z"
 }
