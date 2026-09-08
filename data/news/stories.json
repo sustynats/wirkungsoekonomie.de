@@ -1,16 +1,772 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T08:22:13.205Z",
-  "updated_at": "2026-09-08T08:22:13.205Z",
+  "public_updated_at": "2026-09-08T08:37:27.504Z",
+  "updated_at": "2026-09-08T08:37:27.504Z",
   "stories": [
     {
+      "story_id": "wt-26f87ea8d0b41af4",
+      "slug": "eugh-politische-kampagne-namens-ikea-plan-kann-mobelhandler-schaden-b41af4",
+      "title": "EuGH: Politische Kampagne namens „IKEA-Plan“ kann Möbelhändler schaden",
+      "first_seen": "2026-09-08T08:18:17.000Z",
+      "last_updated": "2026-09-08T08:38:30.859Z",
+      "published_at": "2026-09-08T08:38:30.859Z",
+      "updated_at": "2026-09-08T08:38:30.859Z",
+      "topic": [
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+          "title": "EuGH: Politische Kampagne namens „IKEA-Plan“ kann Möbelhändler schaden",
+          "summary": "Im Markenstreit zwischen Ikea und einer belgischen politischen Partei hat der Europäische Gerichtshof (EuGH) zugunsten des Möbelhändlers entschieden. Einen Plan zur Asylpolitik mit „IKEA“ abzukürzen, kann der Wertschätzung der Marke und damit dem Interesse von Ikea schaden, wie der EuGH am Dienstag in Luxemburg entschied. Die Präsentation des Plans ähnelte einer Ikea-Montageanleitung. (Az. C-298/23)",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:18:17.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c0e5c8c8828fcb2d3708a0fbf5afb7fb50836f277ee822692269d711c3be24cc",
+          "source_item_id": "c73b805a842bb1c21b84a40f613c68022bff8d9d5d6766cdd8b74cc83f54f831",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:18:17.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-26f87ea8d0b41af4-v1-claim-1",
+          "story_id": "wt-26f87ea8d0b41af4",
+          "claim": "Der Europäische Gerichtshof hat im Markenstreit zwischen Ikea und einer belgischen politischen Partei zugunsten von Ikea entschieden.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+              "excerpt_hash": "61896e1ace55eb727bbf",
+              "checked_at": "2026-09-08T08:38:30.859Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:38:30.859Z"
+        },
+        {
+          "claim_id": "wt-26f87ea8d0b41af4-v1-claim-2",
+          "story_id": "wt-26f87ea8d0b41af4",
+          "claim": "Der EuGH hält es für möglich, dass die Abkürzung eines Asylplans mit „IKEA“ der Wertschätzung der Marke und damit dem Interesse von Ikea schaden kann.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+              "excerpt_hash": "61896e1ace55eb727bbf",
+              "checked_at": "2026-09-08T08:38:30.859Z"
+            },
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+              "excerpt_hash": "7ce35858264fc32e2fa2",
+              "checked_at": "2026-09-08T08:38:30.859Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:38:30.859Z"
+        },
+        {
+          "claim_id": "wt-26f87ea8d0b41af4-v1-claim-3",
+          "story_id": "wt-26f87ea8d0b41af4",
+          "claim": "Die Präsentation des Plans ähnelte nach Darstellung der Quelle einer Ikea-Montageanleitung.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+              "excerpt_hash": "7ce35858264fc32e2fa2",
+              "checked_at": "2026-09-08T08:38:30.859Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:38:30.859Z"
+        }
+      ],
+      "event_id": "event-6bdf1d7bd1acc2d85b43",
+      "event_first_seen_at": "2026-09-08T08:37:27.504Z",
+      "event_detected_at": "2026-09-08T08:37:27.504Z",
+      "verification_started_at": "2026-09-08T08:38:20.538Z",
+      "publish_ready_at": "2026-09-08T08:38:30.859Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "221b7575f9d9982f74c9573004c873a2511a0c4d34ce6d9c360ae8851993ec2e",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T08:38:30.859Z",
+        "sources": []
+      },
+      "source_summary": "Im Zentrum der Meldung steht ein Markenstreit zwischen Ikea und einer belgischen politischen Partei. Nach der Darstellung der Quelle hat der Europäische Gerichtshof zugunsten des Möbelhändlers entschieden. Anlass war ein Plan zur Asylpolitik, der mit „IKEA“ abgekürzt wurde.\n\nDie Quelle berichtet weiter, der EuGH habe gesehen, dass diese Abkürzung der Wertschätzung der Marke und damit dem Interesse von Ikea schaden könne. Außerdem habe die Präsentation des Plans einer Ikea-Montageanleitung geähnelt. Genannt wird das Aktenzeichen C-298/23.",
+      "analysis": {
+        "story_id": "wt-26f87ea8d0b41af4",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Der EuGH wird als zugunsten von Ikea entschieden dargestellt. Der Fall betrifft eine politische Kampagne, die die Marke im Namen und in der Gestaltung aufgreift.",
+        "detail_summary": "Die Meldung beschreibt einen Markenstreit mit politischem Bezug: Eine belgische Partei soll einen Asylplan mit „IKEA“ abgekürzt und so die Marke in einer Kampagne verwendet haben. Laut Quelle hat der EuGH daraus eine mögliche Beeinträchtigung der Markenwertschätzung und von Ikeas Interesse abgeleitet. Für die Öffentlichkeit ist das relevant, weil Gerichtsentscheidungen den Schutz von Marken und die Grenzen politischer Kommunikation präzisieren können. Der Wirkpfad läuft hier über die rechtliche Bewertung eines Namens- und Gestaltungsgebrauchs, nicht über eine bereits belegte wirtschaftliche Folge. Offen bleibt ohne Primärquelle, wie weit die Entscheidung im Wortlaut reicht und welche konkrete rechtliche Begründung der Gerichtshof gegeben hat.",
+        "why_relevant": "Die Meldung betrifft eine richterliche Entscheidung mit möglicher Wirkung auf Markenrecht, politische Kommunikation und den Umgang mit markennahen Anspielungen.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "rationale": "Die Entscheidung kann den rechtlichen Spielraum für Markenverwendungen in politischer Kommunikation beeinflussen. Ein konkreter Nutzen oder Schaden für Menschen ist aus der Quelle nicht direkt belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Bezug zu Umwelt, Ressourcen oder Klima ist in der Quelle nicht erkennbar."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Der Fall berührt politische Kommunikation und deren rechtliche Grenzen. Das kann demokratische Debattenordnung stärken oder als Einschränkung von Kampagnenformen wirken; die Richtung hängt vom Volltext der Entscheidung ab."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Entscheidung kann den Umgang mit markenähnlichen Bezügen in politischen Kampagnen beeinflussen und damit Anreize für künftige Kommunikation setzen.",
+        "impact_risks": [
+          "Die Abgrenzung zwischen zulässiger politischer Zuspitzung und markenrechtlich relevanter Nutzung könnte enger ausgelegt werden.",
+          "Ohne Primärquelle bleibt offen, wie breit der Maßstab des Urteils tatsächlich ist."
+        ],
+        "mechanisms": [
+          "Gerichte setzen einen rechtlichen Maßstab für die Nutzung geschützter Zeichen in politischen Kampagnen.",
+          "Solche Maßstäbe verändern die Anreize für Parteien und Werbende bei der Wort- und Bildwahl."
+        ],
+        "first_order": [
+          "rechtliche Bewertung einer markenähnlichen Kampagnenbezeichnung"
+        ],
+        "second_order": [
+          "veränderte Anreize für politische Kommunikation und Kampagnendesign"
+        ],
+        "third_order": [
+          "mögliche Verschiebung der Praxis zwischen Zuspitzung, Parodie und markenrechtlichem Risiko"
+        ],
+        "systemic_relevance": "Der Fall ist systemrelevant für das Zusammenspiel von Markenrecht, politischer Kommunikation und richterlicher Korrekturfähigkeit innerhalb des Binnenmarkts.",
+        "transformation_potential": "Potenzial für eine präzisere Abgrenzung rechtlich riskanter Kampagnenformen im Umgang mit Markenbezügen.",
+        "resilience": "Rechtliche Klarheit kann Konflikte künftig früher begrenzen; die tatsächliche Reichweite bleibt wegen der dünnen Beleglage offen.",
+        "side_effects": [
+          "Ein strenger Maßstab kann kreative politische Zuspitzung erschweren.",
+          "Ein weiter Schutz kann den Wert von Marken im öffentlichen Raum stärken."
+        ],
+        "uncertainties": [
+          "Nur eine journalistische Quelle liegt vor.",
+          "Der genaue Wortlaut und die Begründung des EuGH sind nicht im Primärtext belegt.",
+          "Die praktische Reichweite des Urteils bleibt offen."
+        ],
+        "evidence_level": "low",
+        "attribution": "Quelle: stern; Sprecher im Bericht: der EuGH; Originalformulierung der Entscheidung ist nicht direkt belegt, sondern journalistisch wiedergegeben.",
+        "watch_next": [
+          "Den Wortlaut und die Begründung des Urteils prüfen.",
+          "Beobachten, ob weitere Berichte die Reichweite der Entscheidung präzisieren."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope",
+            "distribution"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Es liegt eine neue gerichtliche Entscheidung vor, die Anreize für politische Kommunikation und Markenverwendung berühren kann. Die Quelle ist jedoch nur journalistisch und nicht primär belegt."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T08:37:27.504Z",
+        "media_trigger_fingerprint": "adfbdf6be2bf243c2f76c188ab4d3b3001ef52610cf565a79bc4bdbff52f73e6",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "actor_statement_in_prominent_position"
+          ],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "adfbdf6be2bf243c2f76c188ab4d3b3001ef52610cf565a79bc4bdbff52f73e6",
+          "content_fingerprint": "a3b72df90ed9f3f78b44c86042af9cc833a16a136668160315d116952e9c4495",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T08:38:30.859Z",
+          "content_hash": "221b7575f9d9982f74c9573004c873a2511a0c4d34ce6d9c360ae8851993ec2e",
+          "source_summary": "Im Zentrum der Meldung steht ein Markenstreit zwischen Ikea und einer belgischen politischen Partei. Nach der Darstellung der Quelle hat der Europäische Gerichtshof zugunsten des Möbelhändlers entschieden. Anlass war ein Plan zur Asylpolitik, der mit „IKEA“ abgekürzt wurde.\n\nDie Quelle berichtet weiter, der EuGH habe gesehen, dass diese Abkürzung der Wertschätzung der Marke und damit dem Interesse von Ikea schaden könne. Außerdem habe die Präsentation des Plans einer Ikea-Montageanleitung geähnelt. Genannt wird das Aktenzeichen C-298/23.",
+          "analysis": {
+            "story_id": "wt-26f87ea8d0b41af4",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Der EuGH wird als zugunsten von Ikea entschieden dargestellt. Der Fall betrifft eine politische Kampagne, die die Marke im Namen und in der Gestaltung aufgreift.",
+            "detail_summary": "Die Meldung beschreibt einen Markenstreit mit politischem Bezug: Eine belgische Partei soll einen Asylplan mit „IKEA“ abgekürzt und so die Marke in einer Kampagne verwendet haben. Laut Quelle hat der EuGH daraus eine mögliche Beeinträchtigung der Markenwertschätzung und von Ikeas Interesse abgeleitet. Für die Öffentlichkeit ist das relevant, weil Gerichtsentscheidungen den Schutz von Marken und die Grenzen politischer Kommunikation präzisieren können. Der Wirkpfad läuft hier über die rechtliche Bewertung eines Namens- und Gestaltungsgebrauchs, nicht über eine bereits belegte wirtschaftliche Folge. Offen bleibt ohne Primärquelle, wie weit die Entscheidung im Wortlaut reicht und welche konkrete rechtliche Begründung der Gerichtshof gegeben hat.",
+            "why_relevant": "Die Meldung betrifft eine richterliche Entscheidung mit möglicher Wirkung auf Markenrecht, politische Kommunikation und den Umgang mit markennahen Anspielungen.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "tendency": "offen",
+              "rationale": "Die Entscheidung kann den rechtlichen Spielraum für Markenverwendungen in politischer Kommunikation beeinflussen. Ein konkreter Nutzen oder Schaden für Menschen ist aus der Quelle nicht direkt belegt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Ein direkter Bezug zu Umwelt, Ressourcen oder Klima ist in der Quelle nicht erkennbar."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Der Fall berührt politische Kommunikation und deren rechtliche Grenzen. Das kann demokratische Debattenordnung stärken oder als Einschränkung von Kampagnenformen wirken; die Richtung hängt vom Volltext der Entscheidung ab."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Entscheidung kann den Umgang mit markenähnlichen Bezügen in politischen Kampagnen beeinflussen und damit Anreize für künftige Kommunikation setzen.",
+            "impact_risks": [
+              "Die Abgrenzung zwischen zulässiger politischer Zuspitzung und markenrechtlich relevanter Nutzung könnte enger ausgelegt werden.",
+              "Ohne Primärquelle bleibt offen, wie breit der Maßstab des Urteils tatsächlich ist."
+            ],
+            "mechanisms": [
+              "Gerichte setzen einen rechtlichen Maßstab für die Nutzung geschützter Zeichen in politischen Kampagnen.",
+              "Solche Maßstäbe verändern die Anreize für Parteien und Werbende bei der Wort- und Bildwahl."
+            ],
+            "first_order": [
+              "rechtliche Bewertung einer markenähnlichen Kampagnenbezeichnung"
+            ],
+            "second_order": [
+              "veränderte Anreize für politische Kommunikation und Kampagnendesign"
+            ],
+            "third_order": [
+              "mögliche Verschiebung der Praxis zwischen Zuspitzung, Parodie und markenrechtlichem Risiko"
+            ],
+            "systemic_relevance": "Der Fall ist systemrelevant für das Zusammenspiel von Markenrecht, politischer Kommunikation und richterlicher Korrekturfähigkeit innerhalb des Binnenmarkts.",
+            "transformation_potential": "Potenzial für eine präzisere Abgrenzung rechtlich riskanter Kampagnenformen im Umgang mit Markenbezügen.",
+            "resilience": "Rechtliche Klarheit kann Konflikte künftig früher begrenzen; die tatsächliche Reichweite bleibt wegen der dünnen Beleglage offen.",
+            "side_effects": [
+              "Ein strenger Maßstab kann kreative politische Zuspitzung erschweren.",
+              "Ein weiter Schutz kann den Wert von Marken im öffentlichen Raum stärken."
+            ],
+            "uncertainties": [
+              "Nur eine journalistische Quelle liegt vor.",
+              "Der genaue Wortlaut und die Begründung des EuGH sind nicht im Primärtext belegt.",
+              "Die praktische Reichweite des Urteils bleibt offen."
+            ],
+            "evidence_level": "low",
+            "attribution": "Quelle: stern; Sprecher im Bericht: der EuGH; Originalformulierung der Entscheidung ist nicht direkt belegt, sondern journalistisch wiedergegeben.",
+            "watch_next": [
+              "Den Wortlaut und die Begründung des Urteils prüfen.",
+              "Beobachten, ob weitere Berichte die Reichweite der Entscheidung präzisieren."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "distribution"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Es liegt eine neue gerichtliche Entscheidung vor, die Anreize für politische Kommunikation und Markenverwendung berühren kann. Die Quelle ist jedoch nur journalistisch und nicht primär belegt."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T08:37:27.504Z",
+            "media_trigger_fingerprint": "adfbdf6be2bf243c2f76c188ab4d3b3001ef52610cf565a79bc4bdbff52f73e6",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "actor_statement_in_prominent_position"
+              ],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "adfbdf6be2bf243c2f76c188ab4d3b3001ef52610cf565a79bc4bdbff52f73e6",
+              "content_fingerprint": "a3b72df90ed9f3f78b44c86042af9cc833a16a136668160315d116952e9c4495",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-26f87ea8d0b41af4-v1-claim-1",
+              "story_id": "wt-26f87ea8d0b41af4",
+              "claim": "Der Europäische Gerichtshof hat im Markenstreit zwischen Ikea und einer belgischen politischen Partei zugunsten von Ikea entschieden.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+                  "excerpt_hash": "61896e1ace55eb727bbf",
+                  "checked_at": "2026-09-08T08:38:30.859Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:38:30.859Z"
+            },
+            {
+              "claim_id": "wt-26f87ea8d0b41af4-v1-claim-2",
+              "story_id": "wt-26f87ea8d0b41af4",
+              "claim": "Der EuGH hält es für möglich, dass die Abkürzung eines Asylplans mit „IKEA“ der Wertschätzung der Marke und damit dem Interesse von Ikea schaden kann.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+                  "excerpt_hash": "61896e1ace55eb727bbf",
+                  "checked_at": "2026-09-08T08:38:30.859Z"
+                },
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+                  "excerpt_hash": "7ce35858264fc32e2fa2",
+                  "checked_at": "2026-09-08T08:38:30.859Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:38:30.859Z"
+            },
+            {
+              "claim_id": "wt-26f87ea8d0b41af4-v1-claim-3",
+              "story_id": "wt-26f87ea8d0b41af4",
+              "claim": "Die Präsentation des Plans ähnelte nach Darstellung der Quelle einer Ikea-Montageanleitung.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+                  "excerpt_hash": "7ce35858264fc32e2fa2",
+                  "checked_at": "2026-09-08T08:38:30.859Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:38:30.859Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/eugh--politische-kampagne-namens--ikea-plan--kann-moebelhaendler-schaden-38220066.html",
+              "content_hash": "c0e5c8c8828fcb2d3708a0fbf5afb7fb50836f277ee822692269d711c3be24cc"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T08:38:30.859Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T08:38:30.859Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T08:54:59.817Z"
+      }
+    },
+    {
+      "story_id": "wt-3039792b45638ffe",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "6000b8cfd1b88dd08bc887292cfc2ac76c4c578e5b2c32c71394e5ee83bb7868",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
+        "retry_count": 1
+      },
+      "slug": "erwerbstatigkeit-von-frauen-studie-kinderbetreuung-erhoht-einkommen-von-muttern-638ffe",
+      "title": "Erwerbstätigkeit von Frauen: Studie: Kinderbetreuung erhöht Einkommen von Müttern",
+      "first_seen": "2026-09-08T08:35:18.000Z",
+      "last_updated": "2026-09-08T08:35:18.000Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-erwerbstatigkeit-von-frauen-16029572.html",
+          "title": "Erwerbstätigkeit von Frauen: Studie: Kinderbetreuung erhöht Einkommen von Müttern",
+          "summary": "Viele Mütter arbeiten nach der Geburt ihres ersten Kindes weniger. Dadurch verdienen sie langfristig weniger. Eine Studie zeigt, was Kinderbetreuung bewirkt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:35:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "67bbb4b0767559e32beb47d7d6b29f151d26fb37c5f2610ce34175d72607ee81",
+          "source_item_id": "2748c16d282a07f9618f72bcd3e76caff4666c92f941607da103975266c0eaaf",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:35:18.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3039792b45638ffe-claim-01",
+          "story_id": "wt-3039792b45638ffe",
+          "claim": "Erwerbstätigkeit von Frauen: Studie: Kinderbetreuung erhöht Einkommen von Müttern: Viele Mütter arbeiten nach der Geburt ihres ersten Kindes weniger. Dadurch verdienen sie langfristig weniger. Eine Studie zeigt, was Kinderbetreuung bewirkt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        }
+      ],
+      "content_hash": "7bec032a99ef713656ef53b9d0a04c8f1fcbe1296af8379bb192bee838cc2a70",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:37:27.504Z",
+      "event_first_seen_at": "2026-09-08T08:37:27.504Z",
+      "event_detected_at": "2026-09-08T08:37:27.504Z",
+      "event_id": "event-bae0c23bb03d63907b23",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 62,
+        "public_relevance": "hoch",
+        "topics": [
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 2.1584,
+        "detection_delay_minutes": 2.1584,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "6ede3ed083e059c5247d3278c07657032a913704ecc324c41ea6b0b3ec11262a",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:37:27.504Z",
+      "rejection": {
+        "at": "2026-09-08T08:37:27.504Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-9987e576f09f9cd9",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ac715451afd9b766a61850b80db78cb60c4600c49e09538f14541a7efad500da",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
+        "retry_count": 1
+      },
+      "slug": "israels-siedlungen-im-westjordanland-britische-regierung-verhangt-offenbar-sanktionen-9f9cd9",
+      "title": "Israels Siedlungen im Westjordanland: Britische Regierung verhängt offenbar Sanktionen",
+      "first_seen": "2026-09-08T08:33:38.000Z",
+      "last_updated": "2026-09-08T08:33:38.000Z",
+      "topic": [
+        "Arbeit",
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-britische-regierung-verhangt-offenbar-sanktionen-16029398.html",
+          "title": "Israels Siedlungen im Westjordanland: Britische Regierung verhängt offenbar Sanktionen",
+          "summary": "Die Labour-Regierung unter Premier Andy Burnham verschärft Berichten zufolge ihren Kurs gegenüber Tel Aviv. Waren aus illegalen Siedlungen sollen nicht mehr importiert werden dürfen. Die Reaktion aus Israel erfolgt prompt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:33:38.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "414ef88558905a947d4b20d6b7cf62411a320973813d3796c3e40ca3502c9de3",
+          "source_item_id": "431c745613127c6e2924d4df624a75d181e9ecf3444ec6bdeff1de4d24ff5299",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:33:38.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9987e576f09f9cd9-claim-01",
+          "story_id": "wt-9987e576f09f9cd9",
+          "claim": "Israels Siedlungen im Westjordanland: Britische Regierung verhängt offenbar Sanktionen: Die Labour-Regierung unter Premier Andy Burnham verschärft Berichten zufolge ihren Kurs gegenüber Tel Aviv. Waren aus illegalen Siedlungen sollen nicht mehr importiert werden dürfen. Die Reaktion aus Israel erfolgt prompt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        }
+      ],
+      "content_hash": "daec9b2945e321b445767ec33b8cf20df2867a02427bd5325f5182426a5ad246",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:37:27.504Z",
+      "event_first_seen_at": "2026-09-08T08:37:27.504Z",
+      "event_detected_at": "2026-09-08T08:37:27.504Z",
+      "event_id": "event-551c990f2d94eb542827",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Geopolitik",
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.825066666666667,
+        "detection_delay_minutes": 3.825066666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "1cac5df8807fdd25364694f0cba6f036b144b8fd995307233107725627ceddb4",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:37:27.504Z",
+      "rejection": {
+        "at": "2026-09-08T08:37:27.504Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
       "story_id": "wt-4c0a09f9ce090af7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "981d3250837636f351aff6f49b5e7081da4e4bf834fbba61a6e94f4ac0841026",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
+        "retry_count": 1
+      },
       "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
-      "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
-      "first_seen": "2026-09-08T08:00:21.000Z",
-      "last_updated": "2026-09-08T08:23:27.568Z",
-      "published_at": "2026-09-08T08:23:27.568Z",
-      "updated_at": "2026-09-08T08:23:27.568Z",
+      "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie",
+      "first_seen": "2026-09-08T08:33:20.000Z",
+      "last_updated": "2026-09-08T08:33:20.000Z",
       "topic": [
         "Wirtschaft",
         "Politik"
@@ -20,14 +776,14 @@
           "source_id": "dlf-nachrichten",
           "publisher": "Deutschlandfunk",
           "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-          "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
-          "summary": "Deutsche Schüler haben bei der neuen PISA-Bildungsstudie so schlecht wie noch nie abgeschnitten. Das teilte die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mit. Demnach gingen die Leistungen der 15-Jährigen in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen erneut zurück.",
+          "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie",
+          "summary": "In der neuen PISA-Bildungsstudie schneiden Schülerinnen und Schüler in Deutschland so schlecht ab wie nie zuvor. Wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mitteilte, gingen die Leistungen der 15-Jährigen hierzulande in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen weiter zurück. Auch international wurden neue Tiefstwerte erreicht.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T08:00:21.000Z",
+          "published_at": "2026-09-08T08:33:20.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
+          "content_hash": "85362fd46fd3b2eeaf2e194ef2e9b16c84dbab99cd39c44f0247972c83986d45",
           "source_item_id": "e67863f4c746d2c833223bc449d40c51c28ea8a8ca7108674626a64b3442aeb6",
           "publisher_id": "deutschlandfunk",
           "publisher_kind": "public_broadcasting",
@@ -39,8 +795,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T08:00:21.000Z",
-          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "source_published_at": "2026-09-08T08:33:20.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -73,7 +829,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T07:30:00.000Z",
-          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -85,653 +841,846 @@
       ],
       "claims": [
         {
-          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-1",
+          "claim_id": "wt-4c0a09f9ce090af7-claim-01",
           "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "Die neue Pisa-Studie meldet für Deutschland den schlechtesten Stand seit Beginn der Erhebungen.",
-          "status": "confirmed_claim",
+          "claim": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie: In der neuen PISA-Bildungsstudie schneiden Schülerinnen und Schüler in Deutschland so schlecht ab wie nie zuvor. Wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mitteilte, gingen die Leistungen der 15-Jährigen hierzulande in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen weiter zurück. Auch international wurden neue Tiefstwerte erreicht.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-              "excerpt_hash": "8d65be250f0a54268f03",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-              "excerpt_hash": "97bd6e9306fe35feb255",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-              "excerpt_hash": "efa5d210f14d66d55600",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-08T08:23:27.568Z"
-        },
-        {
-          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-2",
-          "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "Die Leistungen der 15-Jährigen sind in Mathematik, Lesen und Naturwissenschaften erneut gesunken.",
-          "status": "confirmed_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-              "excerpt_hash": "57a234e5601581e531c3",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-              "excerpt_hash": "cfb6e1e2923774a36242",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-              "excerpt_hash": "3a84194a3725faa2e428",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-08T08:23:27.568Z"
-        },
-        {
-          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-3",
-          "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "An der Untersuchung nahmen weltweit mehr als 760.000 Schüler aus 91 Staaten und Regionen teil; in Deutschland waren es rund 6.700 Schüler an etwa 250 Schulen.",
-          "status": "confirmed_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-              "excerpt_hash": "2128618d6e5518d91318",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-              "excerpt_hash": "aafa19b1277a3cff5043",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-08T08:23:27.568Z"
-        },
-        {
-          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-4",
-          "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "In Deutschland erreichen rund ein Fünftel der Jugendlichen in allen drei Bereichen keine ausreichende Basiskompetenz; in Lesen und Mathe verfehlt etwa ein Drittel die Mindeststandards, in den Naturwissenschaften etwa ein Viertel.",
+          "source_function": "journalistic_report",
           "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        },
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-claim-02",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "Pisa-Studie: Deutschland so schlecht wie nie: Die deutschen Ergebnisse der Pisa-Studie 2025 zeigen einen Tiefststand. Ob Naturwissenschaften, Lesen oder Mathe: Deutschland erreicht nur das Durchschnittsniveau der OECD-Staaten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "zdfheute-nachrichten",
-          "evidence": [
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-              "excerpt_hash": "a7094e66e8f0b4bcc146",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-              "excerpt_hash": "30e9ebb3108a6777948c",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-08T08:23:27.568Z"
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
         }
       ],
-      "event_id": "event-3f8d4c75c0276c438696",
-      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
-      "event_detected_at": "2026-09-08T08:06:49.615Z",
-      "verification_started_at": "2026-09-08T08:23:12.536Z",
-      "publish_ready_at": "2026-09-08T08:23:27.568Z",
-      "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ],
-          [
-            "zdfheute-nachrichten"
-          ]
+      "content_hash": "7fa8894f7eb486e63fcc9406a54c494820a29ac125418e30e3ba278cd1a589fb",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "MEDIA_IMPACT_REQUIRED",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T08:37:27.504Z",
+      "event_first_seen_at": "2026-09-08T08:37:27.504Z",
+      "event_detected_at": "2026-09-08T08:37:27.504Z",
+      "event_id": "event-c4b5ca1a2fb30541bcc7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
         ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
+        "dimensions": [
+          "Mensch",
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.125066666666667,
+        "detection_delay_minutes": 4.125066666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:22:13.205Z",
-        "fingerprint": "4fe85b1a64b11381ad6791cc019ac375405bd080b387e661dbf963aefe1de78b",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-6f4d5492265647cc",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "53aa619c2a972d82683fed356c324c208efcc7200fd6325390fbb1194872c0af",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
+        "retry_count": 1
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-was-die-wahldaten-uber-den-afd-sieg-zeigen-5647cc",
+      "title": "Wahlergebnis Sachsen-Anhalt: Was die Wahldaten über den AfD-Sieg zeigen",
+      "first_seen": "2026-09-07T12:51:06.000Z",
+      "last_updated": "2026-09-08T08:32:44.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlergebnis-hochburgen-absolute-mehrheit-104,analyse-afd-cdu-100.html",
+          "title": "Wahlergebnis Sachsen-Anhalt: Was die Wahldaten über den AfD-Sieg zeigen",
+          "summary": "Die AfD liegt in allen 218 Gemeinden vorn, verfehlt im Landtag aber die absolute Mehrheit. Sechs Grafiken zeigen Hochburgen, Wählergruppen und CDU-Verluste.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T12:51:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "7cd97b777c53af16d91ec1740acd18c611d3663cc1f6e057593747a8d09c3d1a",
+          "source_item_id": "69aba03edf6a711e9f4fea943fd20508beca39734d96a40c4562a0a3258eef1c",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T12:51:06.000Z",
+          "ingested_at": "2026-09-07T13:35:44.462Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlergebnis-hochburgen-absolute-mehrheit-106,analyse-afd-cdu-100.html",
+          "title": "Was die Wahldaten über den AfD-Sieg zeigen",
+          "summary": "Die AfD wird bei der Landtagswahl in allen 218 Gemeinden stärkste Kraft. Die Wahldaten zeigen Hochburgen, Stadt-Land-Unterschiede und warum die absolute Mehrheit verfehlt wurde.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:32:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "e43e44d33eed559c380b5ffcbc4d625c2e56d2672e606dc87ba2121dc1368a07",
+          "source_item_id": "0a50db40e11d28a18149a76e1d29cfd5fc2886cebd37cc9f2380691a9af72e52",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:32:44.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6f4d5492265647cc-claim-01",
+          "story_id": "wt-6f4d5492265647cc",
+          "claim": "Wahlergebnis Sachsen-Anhalt: Was die Wahldaten über den AfD-Sieg zeigen: Die AfD liegt in allen 218 Gemeinden vorn, verfehlt im Landtag aber die absolute Mehrheit. Sechs Grafiken zeigen Hochburgen, Wählergruppen und CDU-Verluste.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        },
+        {
+          "claim_id": "wt-6f4d5492265647cc-claim-02",
+          "story_id": "wt-6f4d5492265647cc",
+          "claim": "Was die Wahldaten über den AfD-Sieg zeigen: Die AfD wird bei der Landtagswahl in allen 218 Gemeinden stärkste Kraft. Die Wahldaten zeigen Hochburgen, Stadt-Land-Unterschiede und warum die absolute Mehrheit verfehlt wurde.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        }
+      ],
+      "content_hash": "7a88dc733468f2db6f85e513a3219d1db399669b507ed73001a5597dffb6dbd3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:37:27.504Z",
+      "event_first_seen_at": "2026-09-07T13:09:04.172Z",
+      "event_detected_at": "2026-09-07T13:09:04.172Z",
+      "event_id": "event-52d5b3f93d21b5d4b853",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlergebnis-hochburgen-absolute-mehrheit-104,analyse-afd-cdu-100.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.725066666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 1168.3888666666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "7bbb2e1ebfa69f52a0f1e383d2736dc5659ce65820bce7b385799d9d1546bb22",
         "issue_codes": [],
         "warning_codes": []
       },
-      "followups": [],
-      "content_hash": "3185eadd4789690d6ce9371f4e4ec240b3cd26df3fecd239f6565afcaf171e51",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
+      "listed": false,
       "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "numeric_evidence": {
-        "version": 1,
-        "analysis_version": 1,
-        "checked_at": "2026-09-08T08:23:27.568Z",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-            "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
-            "excerpt_hash": "40d2e352b31b3c69d824d75edeeff9e2b18c62ef2132bcc38d45f8156c10074a",
-            "number_locale": "de",
-            "numbers": [
-              "2000",
-              "760000",
-              "91",
-              "6700",
-              "250",
-              "8.09",
-              "2026"
-            ]
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-            "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
-            "excerpt_hash": "91696e96065f1dbb02d6b12ed3c553169016be47c6f74a8eb200f89635f970b8",
-            "number_locale": "de",
-            "numbers": [
-              "8.09",
-              "2026",
-              "9",
-              "30",
-              "2025",
-              "0",
-              "34",
-              "15",
-              "760000",
-              "91",
-              "6700",
-              "250",
-              "486",
-              "19",
-              "465",
-              "464",
-              "2",
-              "4",
-              "5",
-              "6",
-              "48",
-              "2015",
-              "500",
-              "20",
-              "13",
-              "25"
-            ]
+      "rejected_at": "2026-09-08T08:37:27.504Z",
+      "rejection": {
+        "at": "2026-09-08T08:37:27.504Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-db4258ffaa34e6c7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "b663d4661b97d5a2fe8cea72a475b281be7c9ad3ff94c09abb0e999939f2f9be",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
+        "retry_count": 1
+      },
+      "slug": "hollywoodstar-angelina-jolie-zum-dritten-mal-in-kriegsgeplagter-ukraine-34e6c7",
+      "title": "Hollywoodstar: Angelina Jolie zum dritten Mal in kriegsgeplagter Ukraine",
+      "first_seen": "2026-09-08T08:25:28.000Z",
+      "last_updated": "2026-09-08T08:26:26.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/kultur/film/hollywoodstar--angelina-jolie-zum-dritten-mal-in-kriegsgeplagter-ukraine-38220042.html",
+          "title": "Hollywoodstar: Angelina Jolie zum dritten Mal in kriegsgeplagter Ukraine",
+          "summary": "Die Ukraine ist in ihrem Abwehrkrieg gegen Russland auf internationale Hilfe angewiesen. Auch Hollywoodstars reisen in das Land. Angelina Jolie schon mehrfach – dieses Mal besucht sie einen Boxclub.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:25:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "f194bd262ceefda453f79e7d8c72f68fc5502c7d1a4c647bdead4ed8dd3c4c07",
+          "source_item_id": "0ab681d21ae30e0e02a21f56f51f31c3c856c7e0d07c115e399b894ee80ad167",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:25:28.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
           }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/dpa-hollywoodstar-16029507.html",
+          "title": "Hollywoodstar: Angelina Jolie zum dritten Mal in kriegsgeplagter Ukraine",
+          "summary": "Die Ukraine ist in ihrem Abwehrkrieg gegen Russland auf internationale Hilfe angewiesen. Auch Hollywoodstars reisen in das Land. Angelina Jolie schon mehrfach – dieses Mal besucht sie einen Boxclub.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:26:26.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ad10719edfe574eac9cf664cd27256f757aec6b17af4d1bec83eedbf69c05c94",
+          "source_item_id": "59d9ec91e1c36306dfa989e5006fd5dd76b7fde3f5a6127aa5378c69f88472dc",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:26:26.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-db4258ffaa34e6c7-claim-01",
+          "story_id": "wt-db4258ffaa34e6c7",
+          "claim": "Hollywoodstar: Angelina Jolie zum dritten Mal in kriegsgeplagter Ukraine: Die Ukraine ist in ihrem Abwehrkrieg gegen Russland auf internationale Hilfe angewiesen. Auch Hollywoodstars reisen in das Land. Angelina Jolie schon mehrfach – dieses Mal besucht sie einen Boxclub.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        },
+        {
+          "claim_id": "wt-db4258ffaa34e6c7-claim-02",
+          "story_id": "wt-db4258ffaa34e6c7",
+          "claim": "Hollywoodstar: Angelina Jolie zum dritten Mal in kriegsgeplagter Ukraine: Die Ukraine ist in ihrem Abwehrkrieg gegen Russland auf internationale Hilfe angewiesen. Auch Hollywoodstars reisen in das Land. Angelina Jolie schon mehrfach – dieses Mal besucht sie einen Boxclub.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        }
+      ],
+      "content_hash": "a24d98493418d81204e3c3734d0060b011ccabd613d27ddd5dbb550d2719081c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:37:27.504Z",
+      "event_first_seen_at": "2026-09-08T08:37:27.504Z",
+      "event_detected_at": "2026-09-08T08:37:27.504Z",
+      "event_id": "event-00f6ef9e9e5c397cec9d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
         ]
       },
-      "source_summary": "Deutschland ist in der neuen Pisa-Studie nach Angaben zweier Berichte so schlecht wie nie zuvor. Beide Texte verweisen auf die OECD als Urheberin der Studie und beschreiben einen erneuten Rückgang der Leistungen von 15-Jährigen in Mathematik, Lesen und Naturwissenschaften.\n\nDie Berichte nennen außerdem die Größenordnung der Untersuchung: weltweit nahmen mehr als 760.000 Schüler aus 91 Staaten und Regionen teil, in Deutschland rund 6.700 Schüler an etwa 250 Schulen. ZDFheute ergänzt konkrete Werte und ordnet ein, dass ein Teil der Jugendlichen die Basiskompetenzen nicht erreicht.",
-      "analysis": {
-        "story_id": "wt-4c0a09f9ce090af7",
-        "publication_recommendation": true,
-        "news_status": "preliminary",
-        "publication_depth": "initial",
-        "summary": "Deutschland verzeichnet in der neuen Pisa-Studie einen historischen Tiefstand. Die Untersuchung erfasst große Schülerzahlen weltweit und in Deutschland.",
-        "detail_summary": "Die Quellen berichten übereinstimmend, dass Deutschland in der neuen Pisa-Studie den schwächsten Stand seit Beginn der Erhebungen erreicht hat. Genannt werden sinkende Leistungen in Mathematik, Lesen und Naturwissenschaften sowie eine große Stichprobe mit rund 6.700 Schülern in Deutschland. Für die Einordnung ist das relevant, weil Bildungsleistungen langfristig auf Chancen, Fachkräfteangebot und soziale Teilhabe wirken können. Der mögliche Wirkpfad verläuft über Kompetenzverluste zu späteren Bildungs- und Arbeitsmarkteffekten. Gleichzeitig bleibt offen, welche Ursachen die Studie genau benennt und wie stark einzelne Politikfelder betroffen sind. Die Evidenz stützt die aktuelle Zustandsbeschreibung, nicht aber schon eine gesicherte Wirkung einzelner Maßnahmen.",
-        "why_relevant": "Die Meldung betrifft die Bildungsleistung eines großen Jahrgangs und damit ein zentrales Zukunfts- und Verteilungsthema mit möglichen Folgen für Arbeitsmarkt, Teilhabe und staatliche Steuerung.",
-        "status": "offen",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "hoch",
-          "tendency": "risiko",
-          "rationale": "Sinkende Kompetenzwerte bei vielen Jugendlichen können künftige Bildungs- und Teilhabechancen verschlechtern. Der Befund ist groß genug, um soziale Folgekosten plausibel zu machen, aber die Ursachen bleiben offen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Die Quelle behandelt keinen direkten Umwelt- oder Klimawirkpfad. Ein indirekter Bezug über künftige Qualifikation ist möglich, aber nicht belegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "risiko",
-          "rationale": "Bildungsniveau und Basiskompetenzen beeinflussen die demokratische Korrekturfähigkeit, weil Verständlichkeit, Urteilskraft und Informationsverarbeitung davon abhängen. Ein konkreter demokratischer Effekt ist aus der Quelle noch nicht nachgewiesen."
-        },
-        "importance": "hoch",
-        "impact_potential": "Das Thema kann über geringere Kompetenzen bei vielen Jugendlichen spätere Bildungswege, Produktivität und soziale Mobilität beeinflussen.",
-        "impact_risks": [
-          "Schwächere Basiskompetenzen können Übergänge in Ausbildung und Beruf erschweren.",
-          "Ungleichheiten können sich verfestigen, wenn leistungsschwächere Gruppen stärker zurückfallen."
-        ],
-        "mechanisms": [
-          "Kompetenzrückgang in Kernfächern verringert spätere Lernfähigkeit und Abschlusschancen.",
-          "Große Zahl betroffener Schüler erhöht das Systemrisiko für Ausbildung und Arbeitsmarkt."
-        ],
-        "first_order": [
-          "Niedrigere Testergebnisse zeigen eine verschlechterte Kompetenzlage bei 15-Jährigen."
-        ],
-        "second_order": [
-          "Schlechtere Basiskompetenzen können Bildungswege, Ausbildungsreife und spätere Erwerbschancen belasten."
-        ],
-        "third_order": [
-          "Langfristig kann das die soziale Mobilität und die Anpassungsfähigkeit des Arbeitsmarkts schwächen."
-        ],
-        "systemic_relevance": "Die Studie betrifft ein großes, landesweites Bildungssystem und damit einen Bereich mit hohen Rückkopplungen auf Wirtschaft und gesellschaftliche Teilhabe.",
-        "transformation_potential": "Ein belastbarer Reformdruck kann entstehen, wenn Ergebnisse in Lehrpläne, Förderung und Schulpolitik übersetzt werden; die Quelle belegt diese Reaktion aber noch nicht.",
-        "resilience": "Resilienz hängt hier davon ab, ob Schulen und Systeme Basiskompetenzen schnell stabilisieren können. Aus der Meldung ergibt sich eher ein Belastungssignal als ein Beleg für robuste Gegensteuerung.",
-        "side_effects": [
-          "Mehr Förderbedarf an Schulen und mögliche Belastung für Lehrkräfte.",
-          "Mögliche Verschärfung bestehender Bildungsungleichheiten."
-        ],
-        "uncertainties": [
-          "Ursachen der Verschlechterung bleiben in der Meldung offen.",
-          "Aus der Studie folgt noch keine belegte Wirkung einer bestimmten Reform."
-        ],
-        "evidence_level": "hoch für den beschriebenen Befund, mittel für die Einordnung",
-        "attribution": "Die Verschlechterung wird der OECD beziehungsweise der Pisa-Studie zugeschrieben; konkrete Interpretation und Alarmton stammen teils aus der Berichterstattung.",
-        "watch_next": [
-          "Ob Bildungsministerien oder Länder auf die Ergebnisse mit konkreten Maßnahmen reagieren.",
-          "Ob die Originalstudie oder amtliche Stellen die Zahlen und Teilbefunde weiter präzisieren."
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 4",
-          "Agenda 2030/SDG 10",
-          "Agenda 2030/SDG 16"
-        ],
-        "publication_gate": {
-          "news_value": "new_evidence",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "independent_reports",
-          "duplicate_status": "new_story",
-          "rationale": "Die Meldung bringt einen neuen, landesweit relevanten Zustandsbefund zur Bildungsleistung mit breiter Betroffenheit und langfristiger Relevanz. Zwei unabhängige Berichte tragen den Kern, auch wenn die Originalstudie hier nicht direkt vorliegt."
-        },
-        "visuals": null,
-        "media_impact": null,
-        "media_analysis_version": "2.1",
-        "media_checked_at": "2026-09-08T08:22:13.205Z",
-        "media_trigger_fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
-        "media_trigger": {
-          "relevant": false,
-          "level": "low",
-          "score": 3,
-          "reasons": [
-            "threat_or_fear_frame"
-          ],
-          "matched_terms": [
-            "alarmierend"
-          ],
-          "source_count": 2,
-          "comparable_source_count": 2,
-          "fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
-          "content_fingerprint": "1cb7a5a0836643169985bee2e6f8339d6fb91c2cb643af40c3e2b7080336765e",
-          "basis": "controlled_source_text",
-          "version": "2.1"
-        }
+      "freshness": {
+        "source_age_minutes": 11.025066666666667,
+        "detection_delay_minutes": 11.025066666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
       },
-      "versions": [
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "34cc91de67d6f65bf61b40cde8cdf29dd710d3e0a1380de67a575f99ea8c656b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:37:27.504Z",
+      "rejection": {
+        "at": "2026-09-08T08:37:27.504Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-ceccb61b5f08e9d1",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d3853ed7c297f5e998fde6c4de67609dfb1983070dd9f26860670ca9151c6159",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
+        "retry_count": 1
+      },
+      "slug": "angriff-auf-protest-gegen-afd-polizei-ermittelt-nach-schuss-auf-antifademo-in-halle-08e9d1",
+      "title": "Angriff auf Protest gegen AfD: Polizei ermittelt nach Schuss auf Antifademo in Halle",
+      "first_seen": "2026-09-08T08:24:00.000Z",
+      "last_updated": "2026-09-08T08:24:00.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
         {
-          "version": 1,
-          "analyzed_at": "2026-09-08T08:23:27.568Z",
-          "content_hash": "3185eadd4789690d6ce9371f4e4ec240b3cd26df3fecd239f6565afcaf171e51",
-          "source_summary": "Deutschland ist in der neuen Pisa-Studie nach Angaben zweier Berichte so schlecht wie nie zuvor. Beide Texte verweisen auf die OECD als Urheberin der Studie und beschreiben einen erneuten Rückgang der Leistungen von 15-Jährigen in Mathematik, Lesen und Naturwissenschaften.\n\nDie Berichte nennen außerdem die Größenordnung der Untersuchung: weltweit nahmen mehr als 760.000 Schüler aus 91 Staaten und Regionen teil, in Deutschland rund 6.700 Schüler an etwa 250 Schulen. ZDFheute ergänzt konkrete Werte und ordnet ein, dass ein Teil der Jugendlichen die Basiskompetenzen nicht erreicht.",
-          "analysis": {
-            "story_id": "wt-4c0a09f9ce090af7",
-            "publication_recommendation": true,
-            "news_status": "preliminary",
-            "publication_depth": "initial",
-            "summary": "Deutschland verzeichnet in der neuen Pisa-Studie einen historischen Tiefstand. Die Untersuchung erfasst große Schülerzahlen weltweit und in Deutschland.",
-            "detail_summary": "Die Quellen berichten übereinstimmend, dass Deutschland in der neuen Pisa-Studie den schwächsten Stand seit Beginn der Erhebungen erreicht hat. Genannt werden sinkende Leistungen in Mathematik, Lesen und Naturwissenschaften sowie eine große Stichprobe mit rund 6.700 Schülern in Deutschland. Für die Einordnung ist das relevant, weil Bildungsleistungen langfristig auf Chancen, Fachkräfteangebot und soziale Teilhabe wirken können. Der mögliche Wirkpfad verläuft über Kompetenzverluste zu späteren Bildungs- und Arbeitsmarkteffekten. Gleichzeitig bleibt offen, welche Ursachen die Studie genau benennt und wie stark einzelne Politikfelder betroffen sind. Die Evidenz stützt die aktuelle Zustandsbeschreibung, nicht aber schon eine gesicherte Wirkung einzelner Maßnahmen.",
-            "why_relevant": "Die Meldung betrifft die Bildungsleistung eines großen Jahrgangs und damit ein zentrales Zukunfts- und Verteilungsthema mit möglichen Folgen für Arbeitsmarkt, Teilhabe und staatliche Steuerung.",
-            "status": "offen",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "hoch",
-              "tendency": "risiko",
-              "rationale": "Sinkende Kompetenzwerte bei vielen Jugendlichen können künftige Bildungs- und Teilhabechancen verschlechtern. Der Befund ist groß genug, um soziale Folgekosten plausibel zu machen, aber die Ursachen bleiben offen."
-            },
-            "planet": {
-              "relevance": "gering",
-              "tendency": "offen",
-              "rationale": "Die Quelle behandelt keinen direkten Umwelt- oder Klimawirkpfad. Ein indirekter Bezug über künftige Qualifikation ist möglich, aber nicht belegt."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "tendency": "risiko",
-              "rationale": "Bildungsniveau und Basiskompetenzen beeinflussen die demokratische Korrekturfähigkeit, weil Verständlichkeit, Urteilskraft und Informationsverarbeitung davon abhängen. Ein konkreter demokratischer Effekt ist aus der Quelle noch nicht nachgewiesen."
-            },
-            "importance": "hoch",
-            "impact_potential": "Das Thema kann über geringere Kompetenzen bei vielen Jugendlichen spätere Bildungswege, Produktivität und soziale Mobilität beeinflussen.",
-            "impact_risks": [
-              "Schwächere Basiskompetenzen können Übergänge in Ausbildung und Beruf erschweren.",
-              "Ungleichheiten können sich verfestigen, wenn leistungsschwächere Gruppen stärker zurückfallen."
-            ],
-            "mechanisms": [
-              "Kompetenzrückgang in Kernfächern verringert spätere Lernfähigkeit und Abschlusschancen.",
-              "Große Zahl betroffener Schüler erhöht das Systemrisiko für Ausbildung und Arbeitsmarkt."
-            ],
-            "first_order": [
-              "Niedrigere Testergebnisse zeigen eine verschlechterte Kompetenzlage bei 15-Jährigen."
-            ],
-            "second_order": [
-              "Schlechtere Basiskompetenzen können Bildungswege, Ausbildungsreife und spätere Erwerbschancen belasten."
-            ],
-            "third_order": [
-              "Langfristig kann das die soziale Mobilität und die Anpassungsfähigkeit des Arbeitsmarkts schwächen."
-            ],
-            "systemic_relevance": "Die Studie betrifft ein großes, landesweites Bildungssystem und damit einen Bereich mit hohen Rückkopplungen auf Wirtschaft und gesellschaftliche Teilhabe.",
-            "transformation_potential": "Ein belastbarer Reformdruck kann entstehen, wenn Ergebnisse in Lehrpläne, Förderung und Schulpolitik übersetzt werden; die Quelle belegt diese Reaktion aber noch nicht.",
-            "resilience": "Resilienz hängt hier davon ab, ob Schulen und Systeme Basiskompetenzen schnell stabilisieren können. Aus der Meldung ergibt sich eher ein Belastungssignal als ein Beleg für robuste Gegensteuerung.",
-            "side_effects": [
-              "Mehr Förderbedarf an Schulen und mögliche Belastung für Lehrkräfte.",
-              "Mögliche Verschärfung bestehender Bildungsungleichheiten."
-            ],
-            "uncertainties": [
-              "Ursachen der Verschlechterung bleiben in der Meldung offen.",
-              "Aus der Studie folgt noch keine belegte Wirkung einer bestimmten Reform."
-            ],
-            "evidence_level": "hoch für den beschriebenen Befund, mittel für die Einordnung",
-            "attribution": "Die Verschlechterung wird der OECD beziehungsweise der Pisa-Studie zugeschrieben; konkrete Interpretation und Alarmton stammen teils aus der Berichterstattung.",
-            "watch_next": [
-              "Ob Bildungsministerien oder Länder auf die Ergebnisse mit konkreten Maßnahmen reagieren.",
-              "Ob die Originalstudie oder amtliche Stellen die Zahlen und Teilbefunde weiter präzisieren."
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 4",
-              "Agenda 2030/SDG 10",
-              "Agenda 2030/SDG 16"
-            ],
-            "publication_gate": {
-              "news_value": "new_evidence",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "independent_reports",
-              "duplicate_status": "new_story",
-              "rationale": "Die Meldung bringt einen neuen, landesweit relevanten Zustandsbefund zur Bildungsleistung mit breiter Betroffenheit und langfristiger Relevanz. Zwei unabhängige Berichte tragen den Kern, auch wenn die Originalstudie hier nicht direkt vorliegt."
-            },
-            "visuals": null,
-            "media_impact": null,
-            "media_analysis_version": "2.1",
-            "media_checked_at": "2026-09-08T08:22:13.205Z",
-            "media_trigger_fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
-            "media_trigger": {
-              "relevant": false,
-              "level": "low",
-              "score": 3,
-              "reasons": [
-                "threat_or_fear_frame"
-              ],
-              "matched_terms": [
-                "alarmierend"
-              ],
-              "source_count": 2,
-              "comparable_source_count": 2,
-              "fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
-              "content_fingerprint": "1cb7a5a0836643169985bee2e6f8339d6fb91c2cb643af40c3e2b7080336765e",
-              "basis": "controlled_source_text",
-              "version": "2.1"
-            }
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-1",
-              "story_id": "wt-4c0a09f9ce090af7",
-              "claim": "Die neue Pisa-Studie meldet für Deutschland den schlechtesten Stand seit Beginn der Erhebungen.",
-              "status": "confirmed_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-                  "excerpt_hash": "8d65be250f0a54268f03",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-                  "excerpt_hash": "97bd6e9306fe35feb255",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-                  "excerpt_hash": "efa5d210f14d66d55600",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-2",
-              "story_id": "wt-4c0a09f9ce090af7",
-              "claim": "Die Leistungen der 15-Jährigen sind in Mathematik, Lesen und Naturwissenschaften erneut gesunken.",
-              "status": "confirmed_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-                  "excerpt_hash": "57a234e5601581e531c3",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                },
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-                  "excerpt_hash": "cfb6e1e2923774a36242",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-                  "excerpt_hash": "3a84194a3725faa2e428",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-3",
-              "story_id": "wt-4c0a09f9ce090af7",
-              "claim": "An der Untersuchung nahmen weltweit mehr als 760.000 Schüler aus 91 Staaten und Regionen teil; in Deutschland waren es rund 6.700 Schüler an etwa 250 Schulen.",
-              "status": "confirmed_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-                  "excerpt_hash": "2128618d6e5518d91318",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-                  "excerpt_hash": "aafa19b1277a3cff5043",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            },
-            {
-              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-4",
-              "story_id": "wt-4c0a09f9ce090af7",
-              "claim": "In Deutschland erreichen rund ein Fünftel der Jugendlichen in allen drei Bereichen keine ausreichende Basiskompetenz; in Lesen und Mathe verfehlt etwa ein Drittel die Mindeststandards, in den Naturwissenschaften etwa ein Viertel.",
-              "status": "single_source_claim",
-              "source_id": "zdfheute-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-                  "excerpt_hash": "a7094e66e8f0b4bcc146",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                },
-                {
-                  "source_id": "zdfheute-nachrichten",
-                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-                  "excerpt_hash": "30e9ebb3108a6777948c",
-                  "checked_at": "2026-09-08T08:23:27.568Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-08T08:23:27.568Z"
-            }
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Angriff-auf-Protest-gegen-AfD/!6211337",
+          "title": "Angriff auf Protest gegen AfD: Polizei ermittelt nach Schuss auf Antifademo in Halle",
+          "summary": "Bei einem Protestzug gegen den AfD-Wahlsieg in Sachsen-Anhalt wurde ein Mensch durch den Schuss aus einem Luftdruckgewehr verletzt. Der Täter ist unbekannt. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:24:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8818292ab000d5968c51a73875376081dd931e8f8da17c1a36fd1d6fe4b0bcd4",
+          "source_item_id": "42375f845858903ce7a680ac6c045712353dc248528156dbbf25b0cdeedca8fc",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
           ],
-          "source_versions": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-              "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c"
-            },
-            {
-              "source_id": "zdfheute-nachrichten",
-              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-              "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb"
-            }
-          ],
-          "numeric_evidence": {
-            "version": 1,
-            "analysis_version": 1,
-            "checked_at": "2026-09-08T08:23:27.568Z",
-            "sources": [
-              {
-                "source_id": "dlf-nachrichten",
-                "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-                "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
-                "excerpt_hash": "40d2e352b31b3c69d824d75edeeff9e2b18c62ef2132bcc38d45f8156c10074a",
-                "number_locale": "de",
-                "numbers": [
-                  "2000",
-                  "760000",
-                  "91",
-                  "6700",
-                  "250",
-                  "8.09",
-                  "2026"
-                ]
-              },
-              {
-                "source_id": "zdfheute-nachrichten",
-                "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-                "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
-                "excerpt_hash": "91696e96065f1dbb02d6b12ed3c553169016be47c6f74a8eb200f89635f970b8",
-                "number_locale": "de",
-                "numbers": [
-                  "8.09",
-                  "2026",
-                  "9",
-                  "30",
-                  "2025",
-                  "0",
-                  "34",
-                  "15",
-                  "760000",
-                  "91",
-                  "6700",
-                  "250",
-                  "486",
-                  "19",
-                  "465",
-                  "464",
-                  "2",
-                  "4",
-                  "5",
-                  "6",
-                  "48",
-                  "2015",
-                  "500",
-                  "20",
-                  "13",
-                  "25"
-                ]
-              }
-            ]
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:24:00.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
           }
         }
       ],
-      "publication_history": [
+      "claims": [
         {
-          "version": 1,
-          "published_at": "2026-09-08T08:23:27.568Z",
-          "source_count": 2
+          "claim_id": "wt-ceccb61b5f08e9d1-claim-01",
+          "story_id": "wt-ceccb61b5f08e9d1",
+          "claim": "Angriff auf Protest gegen AfD: Polizei ermittelt nach Schuss auf Antifademo in Halle: Bei einem Protestzug gegen den AfD-Wahlsieg in Sachsen-Anhalt wurde ein Mensch durch den Schuss aus einem Luftdruckgewehr verletzt. Der Täter ist unbekannt. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
         }
       ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "editorial",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-e6cc1adc0bfe5cc8-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "e6cc1adc0bfe5cc8c8c1200befd65e84655fcf6b9ef276b686b6823bca1258c5"
+      "content_hash": "2325d8b340901992d61ff8c1c85429a3d0d01d163257481dfe402959ed8378d6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:37:27.504Z",
+      "event_first_seen_at": "2026-09-08T08:37:27.504Z",
+      "event_detected_at": "2026-09-08T08:37:27.504Z",
+      "event_id": "event-8584e5984dbaff99ed1d",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
         },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-918ce848229759fb-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "918ce848229759fb6fb3574563a7c675499f57c9c59fd1b5a07b87b4f94a2ef2"
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.4584,
+        "detection_delay_minutes": 13.4584,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "862d65f4d06723855b651aab448e1212440e464202341a663a79bc2401db30db",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:37:27.504Z",
+      "rejection": {
+        "at": "2026-09-08T08:37:27.504Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-575204517e219ac6",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c7f99094bb6b958b8cb8605ac2e41e22d092922ff81fdc790e15dd82a1cbb9ba",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
+        "retry_count": 1
+      },
+      "slug": "bombardier-trump-droht-flugzeugbauer-aus-kanada-nach-gegenzollen-219ac6",
+      "title": "Bombardier: Trump droht Flugzeugbauer aus Kanada nach Gegenzöllen",
+      "first_seen": "2026-09-08T08:22:00.000Z",
+      "last_updated": "2026-09-08T08:22:00.000Z",
+      "topic": [
+        "Wirtschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "manager-magazin-news",
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/politik/weltwirtschaft/bombardier-trump-droht-flugzeugbauer-aus-kanada-nach-gegenzoellen-a-4935c056-c79d-40fb-b3b3-50d2d499afac",
+          "title": "Bombardier: Trump droht Flugzeugbauer aus Kanada nach Gegenzöllen",
+          "summary": "Betroffen sind etwa Stahl, Elektronik und Papier: Im Handelsstreit mit den USA hat Kanada Gegenzölle in Kraft gesetzt. US-Präsident Trump baut einen weiteren Konfliktpunkt auf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:22:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "5c1932e0c0a164b28496f2e90e1aa9c3672f337d664e4d76c30a2d9ef392bb17",
+          "source_item_id": "410e5b3317a3069390e98b41e0dbab470d64b2b0bb6ed585cc6778d85a2d1b9b",
+          "publisher_id": "manager-magazin",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:22:00.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-575204517e219ac6-claim-01",
+          "story_id": "wt-575204517e219ac6",
+          "claim": "Bombardier: Trump droht Flugzeugbauer aus Kanada nach Gegenzöllen: Betroffen sind etwa Stahl, Elektronik und Papier: Im Handelsstreit mit den USA hat Kanada Gegenzölle in Kraft gesetzt. US-Präsident Trump baut einen weiteren Konfliktpunkt auf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "manager-magazin-news",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        }
+      ],
+      "content_hash": "34f485cb58bd220b738368200e93b5b832e3d408165df5c8ec89df7554037960",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:37:27.504Z",
+      "event_first_seen_at": "2026-09-08T08:37:27.504Z",
+      "event_detected_at": "2026-09-08T08:37:27.504Z",
+      "event_id": "event-efa8b754b93a90928158",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
         },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c1f3f12f2823a5e2-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "c1f3f12f2823a5e25c2f48f157864492364dbb4d0dcc46424582a8a86a9991c4"
-        },
-        "source_visual": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c59e090bf31d3a2a-source.png",
-          "sha256": "c59e090bf31d3a2ac54b507dd10e808671553abc822e480defa70dcaa32925b8",
-          "width": 2752,
-          "height": 1536,
-          "mime": "image/png",
-          "provider": "higgsfield",
-          "model": "nano_banana_pro",
-          "prompt_version": "woek-editorial-4-contextual",
-          "generated_at": "2026-09-08T08:23:59.855Z"
-        },
-        "fingerprint": "8482a389068daa902c21e6c8b994d063777001de3867586582891689654248ff",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-08T08:25:23.551Z",
-        "status": "generated"
+        "internal_relevance_score": 66,
+        "public_relevance": "hoch",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.4584,
+        "detection_delay_minutes": 15.4584,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "83e430aba9a9b7c931ceef69dfb0b84047f2014f6599eb205f348d37e38a9a55",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:37:27.504Z",
+      "rejection": {
+        "at": "2026-09-08T08:37:27.504Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
       "story_id": "wt-a04ff251eb9dd5e7",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "407b716943c79f0de938a5a888602aa2916988e518e19b30c7072d88149a0c0b",
-        "first_failed_at": "2026-09-08T08:22:13.205Z",
-        "failed_at": "2026-09-08T08:22:13.205Z",
-        "retry_after": "2026-09-08T08:37:13.205Z",
+        "fingerprint": "3042e5d254f72e200b03da671e200549937d04b3e8070594470475053e7cb255",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
         "retry_count": 1
       },
       "slug": "jemen-krieg-mehr-als-70-verletzte-bei-huthi-angriffen-in-saudi-arabien-9dd5e7",
       "title": "Jemen-Krieg: Mehr als 70 Verletzte bei Huthi-Angriffen in Saudi-Arabien",
       "first_seen": "2026-09-08T08:21:13.000Z",
-      "last_updated": "2026-09-08T08:21:13.000Z",
+      "last_updated": "2026-09-08T08:20:13.000Z",
       "topic": [
         "Energie",
         "Geopolitik"
@@ -761,11 +1710,44 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T08:21:13.000Z",
-          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
             "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/jemen-krieg--mehr-als-70-verletzte-bei-huthi-angriffen-in-saudi-arabien-38220004.html",
+          "title": "Jemen-Krieg: Mehr als 70 Verletzte bei Huthi-Angriffen in Saudi-Arabien",
+          "summary": "Der Konflikt zwischen dem Jemen und Saudi-Arabien eskaliert weiter. In Saudi-Arabien werden mehrere Energie-Einrichtungen getroffen. Zuvor warfen die Huthi Riad einen Angriff auf ein Gefängnis vor.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:20:13.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "444636793b6e0bb45c7cd88439603e32948f8b2574a2ecbc1698b32d534f9be7",
+          "source_item_id": "6fb225704c5cafa7e1cb61aab95e61dd95064b980e21e3595ca12bfb0eabb87e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:20:13.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
@@ -790,20 +1772,40 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:22:13.205Z"
+          "checked_at": "2026-09-08T08:37:27.504Z"
+        },
+        {
+          "claim_id": "wt-a04ff251eb9dd5e7-claim-02",
+          "story_id": "wt-a04ff251eb9dd5e7",
+          "claim": "Jemen-Krieg: Mehr als 70 Verletzte bei Huthi-Angriffen in Saudi-Arabien: Der Konflikt zwischen dem Jemen und Saudi-Arabien eskaliert weiter. In Saudi-Arabien werden mehrere Energie-Einrichtungen getroffen. Zuvor warfen die Huthi Riad einen Angriff auf ein Gefängnis vor.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:37:27.504Z"
         }
       ],
-      "content_hash": "b851564565601ccc207392ea27a0e0ad4201a4a34958196f652dd3bb8dd1a6b0",
+      "content_hash": "1a113de6d7f1e82db01b9897539692fed3ca712c276d3babf9a549223765d5bc",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
+        "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
-      "quality_retry_after": "2026-09-08T08:37:13.205Z",
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-08T08:22:13.205Z",
+      "updated_at": "2026-09-08T08:37:27.504Z",
       "event_first_seen_at": "2026-09-08T08:22:13.205Z",
       "event_detected_at": "2026-09-08T08:22:13.205Z",
       "event_id": "event-f097b1367e3e72ebcfa9",
@@ -839,34 +1841,34 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1.0034166666666666,
+        "source_age_minutes": 16.241733333333332,
         "detection_delay_minutes": 1.0034166666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.238316666666666,
         "target_publication_minutes": 60,
-        "news_freshness_score": 100,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:22:13.205Z",
-        "fingerprint": "9b176d3b755b80c5ae7d5a63c0389355c3d6a50518be771170c09891c85e5ce4",
+        "checked_at": "2026-09-08T08:37:27.504Z",
+        "fingerprint": "fee4697d24df6708c7981672ad6c7b6f5a73bd808361394af66adb530212670f",
         "issue_codes": [],
         "warning_codes": []
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T08:22:13.205Z",
+      "rejected_at": "2026-09-08T08:37:27.504Z",
       "rejection": {
-        "at": "2026-09-08T08:22:13.205Z",
+        "at": "2026-09-08T08:37:27.504Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
+          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -4790,10 +5792,10 @@
       "story_id": "wt-a0440239b5f6ba75",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "eac504af492c67954864c114052fbb7fd8ce58e21b5fd5f4ed6b4475e07656ab",
-        "first_failed_at": "2026-09-08T07:36:44.231Z",
-        "failed_at": "2026-09-08T07:36:44.231Z",
-        "retry_after": "2026-09-08T07:51:44.231Z",
+        "fingerprint": "623a83fc2ee864c8565980237146045b419de1a47151df68c2653ae91c31c36a",
+        "first_failed_at": "2026-09-08T08:37:27.504Z",
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T08:52:27.504Z",
         "retry_count": 1
       },
       "slug": "haushaltswoche-mehr-als-200-milliarden-euro-neuverschuldung-in-2027-geplant-grune-kritis-f6ba75",
@@ -4813,7 +5815,7 @@
           "title": "Haushaltswoche - Mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant - Grüne kritisieren Umwidmung von KTF-Geldern",
           "summary": "Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T08:00:21.000Z",
+          "published_at": "2026-09-08T08:33:20.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -4829,8 +5831,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T08:00:21.000Z",
-          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "source_published_at": "2026-09-08T08:33:20.000Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4859,20 +5861,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:22:13.205Z"
+          "checked_at": "2026-09-08T08:37:27.504Z"
         }
       ],
       "content_hash": "3b0636fe506336292d9ed718ee2ec4f4858191409ef07bdd5b70b5f0a503ab84",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T08:52:27.504Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T08:22:13.205Z",
+      "updated_at": "2026-09-08T08:37:27.504Z",
       "event_first_seen_at": "2026-09-08T07:06:51.663Z",
       "event_detected_at": "2026-09-08T07:06:51.663Z",
       "event_id": "event-51b974a0c225d8faff13",
@@ -4907,20 +5911,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 21.870083333333334,
+        "source_age_minutes": 4.125066666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 75.35903333333333,
+        "queue_age_minutes": 90.59735,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 99,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:22:13.205Z",
+        "checked_at": "2026-09-08T08:37:27.504Z",
         "fingerprint": "9ff90a12374cff4ec28c98a452e7fe71b32c84d0b84d13068a08a18efdc88b9b",
         "issue_codes": [],
         "warning_codes": []
@@ -6283,9 +7287,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "c2d8e7670232dc6f21212206f97d01d10bad83dab46767facfe4d2fba02b4ee6",
         "first_failed_at": "2026-09-08T08:22:13.205Z",
-        "failed_at": "2026-09-08T08:22:13.205Z",
-        "retry_after": "2026-09-08T08:37:13.205Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T08:37:27.504Z",
+        "retry_after": "2026-09-08T09:07:27.504Z",
+        "retry_count": 2
       },
       "slug": "volkswagen-vw-e-kleinwagen-knacken-uberraschend-schnell-marke-von-100-000-vorbestellunge-fc908d",
       "title": "Volkswagen: VW-E-Kleinwagen knacken überraschend schnell Marke von 100.000 Vorbestellungen",
@@ -6352,7 +7356,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T06:34:16.000Z",
-          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6381,7 +7385,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:22:13.205Z"
+          "checked_at": "2026-09-08T08:37:27.504Z"
         },
         {
           "claim_id": "wt-64d9633f3dfc908d-claim-02",
@@ -6401,24 +7405,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:22:13.205Z"
+          "checked_at": "2026-09-08T08:37:27.504Z"
         }
       ],
       "content_hash": "698454ac68caa8063e3775a37428684dbe526cdd75812618cf2a7415699e8a43",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "AI_SOURCE_SUMMARY_LENGTH",
-        "AI_SOURCE_SUMMARY_PARAGRAPHS",
-        "AI_EX_ANTE_CAUSAL_OVERCLAIM"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-08T08:37:13.205Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-08T09:07:27.504Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T08:22:13.205Z",
+      "updated_at": "2026-09-08T08:37:27.504Z",
       "event_first_seen_at": "2026-09-08T07:06:51.663Z",
       "event_detected_at": "2026-09-08T07:06:51.663Z",
       "event_id": "event-3e4858203e070ff16770",
@@ -6451,23 +7451,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 107.95341666666667,
+        "source_age_minutes": 123.19173333333333,
         "detection_delay_minutes": 32.59438333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 75.35903333333333,
+        "queue_age_minutes": 90.59735,
         "target_publication_minutes": 120,
-        "news_freshness_score": 78,
+        "news_freshness_score": 74,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:22:13.205Z",
+        "checked_at": "2026-09-08T08:37:27.504Z",
         "fingerprint": "93345dde9e7668bb14accc83da70ce81ddc4fe9096713c3ffd7990353a74a99c",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:37:27.504Z",
+      "rejection": {
+        "at": "2026-09-08T08:37:27.504Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -36908,9 +37920,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T08:22:13.205Z",
+        "checked_at": "2026-09-08T08:37:27.504Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T14:22:13.205Z",
+        "expires_at": "2026-09-08T14:37:27.504Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -39082,7 +40094,161 @@
           "source_count": 3
         }
       ],
-      "retirement_history": []
+      "retirement_history": [],
+      "pending_update": {
+        "detected_at": "2026-09-08T08:37:27.504Z",
+        "content_hash": "249568f3cbfab03d04f6ff378c88922e5d832bc86383c4f114d50e45d2db8801",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
+            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
+            "summary": "Auf der Suche nach dem Tatverdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz läuft ein Großeinsatz der Polizei am Hambacher Forst. Ein Reporter der Deutschen Presse-Agentur berichtet von bis zu 100 Polizeifahrzeugen vor Ort.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T18:19:40.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "9d812be6208cdb25d5279142f4527709a7c5c46b2024dad0418355d9f5a6823c",
+            "source_item_id": "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T18:19:40.000Z",
+            "ingested_at": "2026-09-06T18:21:34.663Z",
+            "agency_origin": "dpa",
+            "agency_origin_confidence": "high",
+            "provenance": {
+              "origin": "agency:dpa",
+              "basis": "agency_attribution_in_available_text",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-100.html",
+            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
+            "summary": "Wegen versuchter Sabotage-Angriffe auf das deutsche Stromnetz hat die Polizei mit einem Großaufgebot am Hambacher Forst bei Kerpen westlich von Köln nach dem Tatverdächtigen gesucht - ohne Erfolg. Es seien keine Hinweise gefunden worden. Die generelle Fahndung nach dem Täter gehe aber weiter, teilte die Polizei mit.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-06T21:05:27.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "c3eb294d00d22a521af8890c6afee6069cec7ef81d67aeaba88b8eda3e531296",
+            "source_item_id": "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-06T21:05:27.000Z",
+            "ingested_at": "2026-09-06T21:38:52.134Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-102.html",
+            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
+            "summary": "Wegen versuchter Sabotage-Angriffe auf das deutsche Stromnetz hat die Polizei mit einem Großaufgebot am Hambacher Forst bei Kerpen westlich von Köln nach dem Tatverdächtigen gesucht - ohne Erfolg. Es seien keine Hinweise gefunden worden. Die generelle Fahndung nach dem Täter gehe aber weiter, teilte die Polizei mit.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-07T06:31:50.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "918823902893b8a98930597831d840e250b8dec70ba4fce1a1072552f374dbea",
+            "source_item_id": "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-07T06:31:50.000Z",
+            "ingested_at": "2026-09-07T06:36:51.010Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/sabotage-am-stromnetz-polizei-findet-bekennerschreiben-100.html",
+            "title": "Nordrhein-Westfalen - Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
+            "summary": "Nach dem Fund von selbstgebauten Sprengvorrichtungen an Hochspannungsleitungen in Nordrhein-Westfalen hat die Polizei ein weiteres Bekennerschreiben gefunden.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T08:33:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "8c9f6104f17f5ca29487ce34cc6271a24c72f209284cbb404fd268aaf3b359a8",
+            "source_item_id": "22a4d493483cef366ed1d2761cda074ee14304569e89d423a83001bcb33c32d4",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T08:33:20.000Z",
+            "ingested_at": "2026-09-08T08:37:27.504Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T08:37:27.504Z",
+          "fingerprint": "68f9bd2b95615983f532fdb6a604739ba1232025a109dd7a3b7f485700db517d",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      }
     },
     {
       "story_id": "wt-9274ee50d0f0d4b2",
@@ -68756,154 +69922,6 @@
       }
     },
     {
-      "story_id": "wt-6f4d5492265647cc",
-      "slug": "wahlergebnis-sachsen-anhalt-was-die-wahldaten-uber-den-afd-sieg-zeigen-5647cc",
-      "title": "Wahlergebnis Sachsen-Anhalt: Was die Wahldaten über den AfD-Sieg zeigen",
-      "first_seen": "2026-09-07T12:51:06.000Z",
-      "last_updated": "2026-09-07T12:51:06.000Z",
-      "topic": [
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlergebnis-hochburgen-absolute-mehrheit-104,analyse-afd-cdu-100.html",
-          "title": "Wahlergebnis Sachsen-Anhalt: Was die Wahldaten über den AfD-Sieg zeigen",
-          "summary": "Die AfD liegt in allen 218 Gemeinden vorn, verfehlt im Landtag aber die absolute Mehrheit. Sechs Grafiken zeigen Hochburgen, Wählergruppen und CDU-Verluste.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T12:51:06.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "7cd97b777c53af16d91ec1740acd18c611d3663cc1f6e057593747a8d09c3d1a",
-          "source_item_id": "69aba03edf6a711e9f4fea943fd20508beca39734d96a40c4562a0a3258eef1c",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T12:51:06.000Z",
-          "ingested_at": "2026-09-07T13:35:44.462Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-6f4d5492265647cc-claim-01",
-          "story_id": "wt-6f4d5492265647cc",
-          "claim": "Wahlergebnis Sachsen-Anhalt: Was die Wahldaten über den AfD-Sieg zeigen: Die AfD liegt in allen 218 Gemeinden vorn, verfehlt im Landtag aber die absolute Mehrheit. Sechs Grafiken zeigen Hochburgen, Wählergruppen und CDU-Verluste.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T13:42:50.274Z"
-        }
-      ],
-      "content_hash": "65dae873da2606e4095926f54f078af403b14880a2b9e0b7e3a6a43f61269e45",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [],
-      "quality_retry_after": null,
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T13:42:50.274Z",
-      "event_first_seen_at": "2026-09-07T13:09:04.172Z",
-      "event_detected_at": "2026-09-07T13:09:04.172Z",
-      "event_id": "event-52d5b3f93d21b5d4b853",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": true,
-          "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahlergebnis-hochburgen-absolute-mehrheit-104,analyse-afd-cdu-100.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 51.7379,
-        "detection_delay_minutes": 17.969533333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 33.768366666666665,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 89,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T13:42:50.274Z",
-        "fingerprint": "32eecd05d99d96de971194f4f0ee4e75e284ec257cb63b1ca3b88d7743aeb207",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T14:07:07.178Z",
-      "rejection": {
-        "at": "2026-09-07T14:07:07.178Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "LOCAL_RELEVANCE_BELOW_THRESHOLD"
-        ]
-      }
-    },
-    {
       "story_id": "wt-51afdab7cd06d9cf",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -78390,7 +79408,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "ingested_at": "2026-09-08T08:37:27.504Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -78451,7 +79469,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:22:13.205Z"
+          "checked_at": "2026-09-08T08:37:27.504Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -78471,7 +79489,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T08:22:13.205Z"
+          "checked_at": "2026-09-08T08:37:27.504Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -78487,7 +79505,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T08:22:13.205Z",
+      "updated_at": "2026-09-08T08:37:27.504Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -78527,7 +79545,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1395.3307,
+        "queue_age_minutes": 1410.5690166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -78536,7 +79554,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T08:22:13.205Z",
+        "checked_at": "2026-09-08T08:37:27.504Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -98816,7 +99834,7 @@
       "verification_started_at": "2026-09-06T20:07:45.491Z",
       "publish_ready_at": "2026-09-06T20:07:54.819Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -99263,9 +100281,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "efa37ffc26106c7927377c7ebd89faa4ff195b6072e38ad73666621ae6a8f54b",
-        "checked_at": "2026-09-07T23:37:00.002Z",
+        "checked_at": "2026-09-08T08:37:27.504Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T05:37:00.002Z",
+        "expires_at": "2026-09-08T14:37:27.504Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -99300,62 +100318,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "323856bd92a15193c004bb0fa5cb087eb623ae0b9af36fb66299680aec88f2f5",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/wissen/medizin-gesundheit/zukunftsangst-daempft-kinderwunsch-fertility-gap-,geburtenrate-126.html",
-            "title": "Warum Kinderwünsche unerfüllt bleiben und die Geburtenrate sinkt",
-            "summary": "Viele junge Menschen in Deutschland wünschen sich zwar weiterhin Kinder, aber die Geburtenrate ist trotzdem gesunken. Krisen, Wohnungsnot und unsichere Arbeitsbedingungen bremsen die Familienplanung, zeigt die Forschung.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-03T14:23:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "0cd98b5b1b7377b09de168e295906febecd4a13979c516e8a3d8c4cc64b6fd94",
-            "source_item_id": "efcfc8639de92ea964fb9a96f83e188076966adc32c93c3104c7897e29699c53",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-03T14:23:00.000Z",
-            "ingested_at": "2026-09-04T07:36:19.931Z",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-08T08:36:49.615Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T08:06:49.615Z",
-          "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      },
+      "deepening_checks": 2,
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "ab1d0f1922c91148fba8604710aeaa9e87f6412e8c8e9fd292418267a75b35d7",
@@ -134369,7 +135332,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T08:22:13.205Z",
+          "checked_at": "2026-09-08T08:37:27.504Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -178723,7 +179686,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T08:22:13.205Z",
+          "checked_at": "2026-09-08T08:37:27.504Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
