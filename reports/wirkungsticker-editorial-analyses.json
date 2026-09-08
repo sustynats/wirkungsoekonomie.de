@@ -2,29 +2,29 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T02:52:49.622Z",
+  "started_at": "2026-09-08T03:06:49.788Z",
   "scanned_stories": 140,
   "scanned_subjects": 122,
   "editorial_candidates": 24,
   "ready_for_research": 7,
   "research_pending": 7,
-  "retry_deferred": 6,
+  "retry_deferred": 5,
   "editorial_research_sources_discovered": 33,
-  "selected": 1,
+  "selected": 2,
   "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 2,
-  "research_tokens": 13100,
-  "analysis_tokens": 12630,
-  "estimated_cost_usd": 0.064241,
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
   "quality_retries": 1,
-  "publication_deferred": false,
+  "publication_deferred": true,
   "failed": [
     {
-      "story_id": "wt-cf03acddb911d861",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T10:52:49.622Z"
+      "story_id": "wt-1fbb056ccaaf351d",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_UNSICHERHEIT,EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-08T15:06:49.788Z"
     }
   ],
   "candidates": [
@@ -1058,13 +1058,14 @@
   ],
   "batch": {
     "submitted": 0,
-    "pending": 1,
-    "completed": 0,
+    "pending": 0,
+    "completed": 2,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-08T02:54:10.844Z"
+  "batch_deferred": 1,
+  "completed_at": "2026-09-08T03:07:04.362Z"
 }
