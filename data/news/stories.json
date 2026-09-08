@@ -1,8 +1,1001 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T04:22:04.039Z",
-  "updated_at": "2026-09-08T04:36:44.973Z",
+  "public_updated_at": "2026-09-08T04:52:08.677Z",
+  "updated_at": "2026-09-08T04:52:08.677Z",
   "stories": [
+    {
+      "story_id": "wt-de413d33343f350b",
+      "slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
+      "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
+      "first_seen": "2026-09-08T04:39:24.000Z",
+      "last_updated": "2026-09-08T04:53:23.148Z",
+      "published_at": "2026-09-08T04:53:23.148Z",
+      "updated_at": "2026-09-08T04:53:23.148Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+          "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
+          "summary": "Nach einer dreitägigen Pause hat Russland die Luftangriffe auf die ukrainische Hauptstadt Kiew in der Nacht wieder aufgenommen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:39:24.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "dbc545b72437bafed665b8b8db431054698e75fbe43143bcf5940d51513acea6",
+          "source_item_id": "d0acedaf5ac83e6a8760512b40a6a6ef49a5115ad813b242b883cd81b3045416",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:39:24.000Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-de413d33343f350b-v1-claim-1",
+          "story_id": "wt-de413d33343f350b",
+          "claim": "Russland hat nach einer dreitägigen Pause die Angriffe auf Kiew in der Nacht wieder aufgenommen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "excerpt_hash": "4b12b6c4acfd4946ff9d",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "excerpt_hash": "38afba509cfeaef5a5b6",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "excerpt_hash": "e3600dd64732bff0b4fa",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:53:23.148Z"
+        },
+        {
+          "claim_id": "wt-de413d33343f350b-v1-claim-2",
+          "story_id": "wt-de413d33343f350b",
+          "claim": "Nach Angaben des Katastrophenschutzes wurden zwei Stadtbezirke mit Drohnen angegriffen; der Bürgermeister nannte zusätzlich Angriffe mit ballistischen Raketen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "excerpt_hash": "15e601f0ed1affc5b56c",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "excerpt_hash": "7f9de0b7db51b87ca9d0",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:53:23.148Z"
+        },
+        {
+          "claim_id": "wt-de413d33343f350b-v1-claim-3",
+          "story_id": "wt-de413d33343f350b",
+          "claim": "Es wurden Wohngebäude, Lagerhallen und eine Schule beschädigt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "excerpt_hash": "7f9de0b7db51b87ca9d0",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:53:23.148Z"
+        },
+        {
+          "claim_id": "wt-de413d33343f350b-v1-claim-4",
+          "story_id": "wt-de413d33343f350b",
+          "claim": "Für Kiew werden mindestens zwei Tote und sieben Verletzte genannt; aus Saratow werden zugleich ukrainische Drohnenangriffe mit mehreren Verletzten gemeldet.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "excerpt_hash": "7f9de0b7db51b87ca9d0",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "excerpt_hash": "8ecc9110ecd59733694f",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:53:23.148Z"
+        }
+      ],
+      "event_id": "event-3470c749db18fcf27790",
+      "event_first_seen_at": "2026-09-08T04:52:08.677Z",
+      "event_detected_at": "2026-09-08T04:52:08.677Z",
+      "verification_started_at": "2026-09-08T04:53:10.143Z",
+      "publish_ready_at": "2026-09-08T04:53:23.148Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T04:52:08.677Z",
+        "fingerprint": "a5503f398bda5c186754718a19c67e1bc7a98cf6f4e8d07a2cd0cdf955f0adc2",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "710565dff0a8201798cd74769d78a95f0a371f31f6e28e9f13f5fff8544d8285",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T04:53:23.148Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+            "content_hash": "dbc545b72437bafed665b8b8db431054698e75fbe43143bcf5940d51513acea6",
+            "excerpt_hash": "6542805dfc40411cb723ba0c11d8511c58cea273619e1780c4a643cb00ae095b",
+            "number_locale": "de",
+            "numbers": [
+              "500",
+              "8.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Nach einer dreitägigen Pause hat Russland die Luftangriffe auf Kiew in der Nacht wieder aufgenommen. Der Bericht nennt dafür Angaben des Katastrophenschutzes, des Bürgermeisters Klitschko und der staatlichen russischen Nachrichtenagentur Tass. Genannt werden Angriffe mit Drohnen und ballistischen Raketen, beschädigte Wohngebäude, Lagerhallen und eine Schule sowie mindestens zwei Tote und sieben Verletzte. Zugleich berichtet die Quelle über ukrainische Drohnenangriffe auf Saratow, wo laut Regionalgouverneur mehrere Menschen verletzt worden seien.\n\nDie Meldung ordnet das Geschehen in den Besuch der US-Gesandten Witkoff und Kushner in Moskau und Kiew ein und verweist darauf, dass die Kriegsparteien für die Dauer des Besuchs auf Angriffe auf die jeweiligen Hauptstädte verzichten wollten.",
+      "analysis": {
+        "story_id": "wt-de413d33343f350b",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Russland hat laut der Quelle die Angriffe auf Kiew nach einer dreitägigen Pause wieder aufgenommen. Zugleich werden Angriffe der Ukraine auf Saratow und Schäden sowie Opfer auf beiden Seiten genannt.",
+        "detail_summary": "Der berichtete Kern ist klar: Nach drei Tagen Pause wurden Kiew erneut Drohnen- und Raketenangriffe zugeschrieben, mit beschädigten Gebäuden und mindestens zwei Toten. Das ist als laufende Entwicklung relevant, weil es eine sichtbare Änderung der militärischen Lage und des Schutzstatus von Zivilinfrastruktur bedeutet. Ein möglicher Wirkpfad führt über neue Zerstörung, erneute Evakuierungs- und Sicherheitsbedarfe und zusätzlichen Druck auf lokale Versorgung und staatliche Schutzkapazitäten. Als weitere mögliche Folge kommt eine Verschärfung der Gegenschläge in Betracht, weil im selben Text auch ukrainische Drohnenangriffe auf Saratow erwähnt werden. Die Evidenz bleibt aber begrenzt, weil die Meldung auf einer einzelnen journalistischen Quelle beruht und die genaue Lage, die Verantwortlichkeiten im Detail und das Ausmaß der Schäden nicht unabhängig bestätigt sind.",
+        "why_relevant": "Die Meldung beschreibt eine neue militärische Lageänderung mit Opfern, Schäden und möglichen Folgeeffekten für Zivilbevölkerung und Infrastruktur.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Die Quelle nennt Tote, Verletzte und beschädigte Wohngebäude, also direkte Belastungen für Menschen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer Umwelt- oder Klimaeffekt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Der Angriff betrifft die Hauptstadt und damit staatliche Handlungsfähigkeit sowie Schutzfunktionen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Neue Angriffe auf Kiew können Schutzbedarf, Evakuierungen und Belastungen für Infrastruktur erhöhen; zugleich deutet der Text auf eine mögliche Eskalationsdynamik mit Gegenschlägen hin.",
+        "impact_risks": [
+          "Weitere zivile Opfer und Sachschäden",
+          "Belastung von Rettung, Versorgung und Verwaltung",
+          "Eskalation der wechselseitigen Angriffe"
+        ],
+        "mechanisms": [
+          "Angriffe zerstören oder beschädigen Gebäude",
+          "Sicherheitslage verschlechtert sich kurzfristig",
+          "Staatliche und kommunale Schutzkapazitäten werden stärker beansprucht"
+        ],
+        "first_order": [
+          "Direkte Schäden an Wohngebäuden, Lagerhallen und Schule",
+          "Tote und Verletzte in Kiew sowie Verletzte in Saratow"
+        ],
+        "second_order": [
+          "Mehr Einsatz für Rettung, Reparatur und Schutzmaßnahmen",
+          "Mögliche Verlagerung von Personal und Ressourcen in den Krisenmodus"
+        ],
+        "third_order": [
+          "Verfestigung eines Eskalations- und Reaktionsmusters",
+          "Längere Belastung von Infrastruktur und Resilienz"
+        ],
+        "systemic_relevance": "Die Hauptstadt ist ein Knotenpunkt für Verwaltung, Versorgung und Symbolwirkung; Angriffe dort können über den Einzelfall hinaus Schutz- und Reaktionssysteme belasten.",
+        "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Verstärker für Sicherheits-, Luftschutz- und Verteidigungsanpassungen.",
+        "resilience": "Kurzfristig sinkt die Resilienz durch neue Schäden; mittelfristig hängt sie von Reparatur, Luftschutz und Abwehr ab.",
+        "side_effects": [
+          "Zusätzlicher Druck auf Rettungsdienste",
+          "Mögliche Gegenangriffe im Konfliktverlauf",
+          "Informationsunsicherheit in der Erstmeldung"
+        ],
+        "uncertainties": [
+          "Die Quelle ist nur eine journalistische Sekundärquelle",
+          "Das genaue Schadensausmaß bleibt offen",
+          "Die Lage in Saratow ist nur knapp beschrieben"
+        ],
+        "evidence_level": "medium",
+        "attribution": "Quelle: Deutschlandfunk; Sprecher:innen im Text: Katastrophenschutz, Bürgermeister Klitschko, staatliche Agentur Tass und Regionalgouverneur; die Formulierungen sind berichtend wiedergegeben.",
+        "watch_next": [
+          "Ob die genannten Opfer- und Schadenszahlen bestätigt oder aktualisiert werden",
+          "Ob weitere Angriffe oder offizielle Reaktionen folgen"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 11, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Es liegt eine neue Lageänderung mit Opfern und Schäden vor, die über reine Aufmerksamkeit hinaus materielle Folgen für Menschen und Infrastruktur hat."
+        },
+        "visuals": {
+          "affected_groups": [
+            "kinder_jugend",
+            "haushalte",
+            "staat",
+            "kommunen"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T04:52:08.677Z",
+        "media_trigger_fingerprint": "d911a3c0653b85ce09c5f3b32d8b9f48028ef8c90c25b478da09d00486623916",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 2,
+          "reasons": [
+            "catastrophizing_or_dramatizing"
+          ],
+          "matched_terms": [
+            "katastrophenschutz"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "d911a3c0653b85ce09c5f3b32d8b9f48028ef8c90c25b478da09d00486623916",
+          "content_fingerprint": "ab7a4cba45b200708afe6a878b30876e1a7ca73a8d5e5da00e4626facfbbfe96",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T04:53:23.148Z",
+          "content_hash": "710565dff0a8201798cd74769d78a95f0a371f31f6e28e9f13f5fff8544d8285",
+          "source_summary": "Nach einer dreitägigen Pause hat Russland die Luftangriffe auf Kiew in der Nacht wieder aufgenommen. Der Bericht nennt dafür Angaben des Katastrophenschutzes, des Bürgermeisters Klitschko und der staatlichen russischen Nachrichtenagentur Tass. Genannt werden Angriffe mit Drohnen und ballistischen Raketen, beschädigte Wohngebäude, Lagerhallen und eine Schule sowie mindestens zwei Tote und sieben Verletzte. Zugleich berichtet die Quelle über ukrainische Drohnenangriffe auf Saratow, wo laut Regionalgouverneur mehrere Menschen verletzt worden seien.\n\nDie Meldung ordnet das Geschehen in den Besuch der US-Gesandten Witkoff und Kushner in Moskau und Kiew ein und verweist darauf, dass die Kriegsparteien für die Dauer des Besuchs auf Angriffe auf die jeweiligen Hauptstädte verzichten wollten.",
+          "analysis": {
+            "story_id": "wt-de413d33343f350b",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Russland hat laut der Quelle die Angriffe auf Kiew nach einer dreitägigen Pause wieder aufgenommen. Zugleich werden Angriffe der Ukraine auf Saratow und Schäden sowie Opfer auf beiden Seiten genannt.",
+            "detail_summary": "Der berichtete Kern ist klar: Nach drei Tagen Pause wurden Kiew erneut Drohnen- und Raketenangriffe zugeschrieben, mit beschädigten Gebäuden und mindestens zwei Toten. Das ist als laufende Entwicklung relevant, weil es eine sichtbare Änderung der militärischen Lage und des Schutzstatus von Zivilinfrastruktur bedeutet. Ein möglicher Wirkpfad führt über neue Zerstörung, erneute Evakuierungs- und Sicherheitsbedarfe und zusätzlichen Druck auf lokale Versorgung und staatliche Schutzkapazitäten. Als weitere mögliche Folge kommt eine Verschärfung der Gegenschläge in Betracht, weil im selben Text auch ukrainische Drohnenangriffe auf Saratow erwähnt werden. Die Evidenz bleibt aber begrenzt, weil die Meldung auf einer einzelnen journalistischen Quelle beruht und die genaue Lage, die Verantwortlichkeiten im Detail und das Ausmaß der Schäden nicht unabhängig bestätigt sind.",
+            "why_relevant": "Die Meldung beschreibt eine neue militärische Lageänderung mit Opfern, Schäden und möglichen Folgeeffekten für Zivilbevölkerung und Infrastruktur.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "rationale": "Die Quelle nennt Tote, Verletzte und beschädigte Wohngebäude, also direkte Belastungen für Menschen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Aus den Quellen ergibt sich kein belastbarer Umwelt- oder Klimaeffekt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "rationale": "Der Angriff betrifft die Hauptstadt und damit staatliche Handlungsfähigkeit sowie Schutzfunktionen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Neue Angriffe auf Kiew können Schutzbedarf, Evakuierungen und Belastungen für Infrastruktur erhöhen; zugleich deutet der Text auf eine mögliche Eskalationsdynamik mit Gegenschlägen hin.",
+            "impact_risks": [
+              "Weitere zivile Opfer und Sachschäden",
+              "Belastung von Rettung, Versorgung und Verwaltung",
+              "Eskalation der wechselseitigen Angriffe"
+            ],
+            "mechanisms": [
+              "Angriffe zerstören oder beschädigen Gebäude",
+              "Sicherheitslage verschlechtert sich kurzfristig",
+              "Staatliche und kommunale Schutzkapazitäten werden stärker beansprucht"
+            ],
+            "first_order": [
+              "Direkte Schäden an Wohngebäuden, Lagerhallen und Schule",
+              "Tote und Verletzte in Kiew sowie Verletzte in Saratow"
+            ],
+            "second_order": [
+              "Mehr Einsatz für Rettung, Reparatur und Schutzmaßnahmen",
+              "Mögliche Verlagerung von Personal und Ressourcen in den Krisenmodus"
+            ],
+            "third_order": [
+              "Verfestigung eines Eskalations- und Reaktionsmusters",
+              "Längere Belastung von Infrastruktur und Resilienz"
+            ],
+            "systemic_relevance": "Die Hauptstadt ist ein Knotenpunkt für Verwaltung, Versorgung und Symbolwirkung; Angriffe dort können über den Einzelfall hinaus Schutz- und Reaktionssysteme belasten.",
+            "transformation_potential": "Kein Transformationsereignis, aber ein möglicher Verstärker für Sicherheits-, Luftschutz- und Verteidigungsanpassungen.",
+            "resilience": "Kurzfristig sinkt die Resilienz durch neue Schäden; mittelfristig hängt sie von Reparatur, Luftschutz und Abwehr ab.",
+            "side_effects": [
+              "Zusätzlicher Druck auf Rettungsdienste",
+              "Mögliche Gegenangriffe im Konfliktverlauf",
+              "Informationsunsicherheit in der Erstmeldung"
+            ],
+            "uncertainties": [
+              "Die Quelle ist nur eine journalistische Sekundärquelle",
+              "Das genaue Schadensausmaß bleibt offen",
+              "Die Lage in Saratow ist nur knapp beschrieben"
+            ],
+            "evidence_level": "medium",
+            "attribution": "Quelle: Deutschlandfunk; Sprecher:innen im Text: Katastrophenschutz, Bürgermeister Klitschko, staatliche Agentur Tass und Regionalgouverneur; die Formulierungen sind berichtend wiedergegeben.",
+            "watch_next": [
+              "Ob die genannten Opfer- und Schadenszahlen bestätigt oder aktualisiert werden",
+              "Ob weitere Angriffe oder offizielle Reaktionen folgen"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 11, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Es liegt eine neue Lageänderung mit Opfern und Schäden vor, die über reine Aufmerksamkeit hinaus materielle Folgen für Menschen und Infrastruktur hat."
+            },
+            "visuals": {
+              "affected_groups": [
+                "kinder_jugend",
+                "haushalte",
+                "staat",
+                "kommunen"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T04:52:08.677Z",
+            "media_trigger_fingerprint": "d911a3c0653b85ce09c5f3b32d8b9f48028ef8c90c25b478da09d00486623916",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 2,
+              "reasons": [
+                "catastrophizing_or_dramatizing"
+              ],
+              "matched_terms": [
+                "katastrophenschutz"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "d911a3c0653b85ce09c5f3b32d8b9f48028ef8c90c25b478da09d00486623916",
+              "content_fingerprint": "ab7a4cba45b200708afe6a878b30876e1a7ca73a8d5e5da00e4626facfbbfe96",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-de413d33343f350b-v1-claim-1",
+              "story_id": "wt-de413d33343f350b",
+              "claim": "Russland hat nach einer dreitägigen Pause die Angriffe auf Kiew in der Nacht wieder aufgenommen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                  "excerpt_hash": "4b12b6c4acfd4946ff9d",
+                  "checked_at": "2026-09-08T04:53:23.148Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                  "excerpt_hash": "38afba509cfeaef5a5b6",
+                  "checked_at": "2026-09-08T04:53:23.148Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                  "excerpt_hash": "e3600dd64732bff0b4fa",
+                  "checked_at": "2026-09-08T04:53:23.148Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            },
+            {
+              "claim_id": "wt-de413d33343f350b-v1-claim-2",
+              "story_id": "wt-de413d33343f350b",
+              "claim": "Nach Angaben des Katastrophenschutzes wurden zwei Stadtbezirke mit Drohnen angegriffen; der Bürgermeister nannte zusätzlich Angriffe mit ballistischen Raketen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                  "excerpt_hash": "15e601f0ed1affc5b56c",
+                  "checked_at": "2026-09-08T04:53:23.148Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                  "excerpt_hash": "7f9de0b7db51b87ca9d0",
+                  "checked_at": "2026-09-08T04:53:23.148Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            },
+            {
+              "claim_id": "wt-de413d33343f350b-v1-claim-3",
+              "story_id": "wt-de413d33343f350b",
+              "claim": "Es wurden Wohngebäude, Lagerhallen und eine Schule beschädigt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                  "excerpt_hash": "7f9de0b7db51b87ca9d0",
+                  "checked_at": "2026-09-08T04:53:23.148Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            },
+            {
+              "claim_id": "wt-de413d33343f350b-v1-claim-4",
+              "story_id": "wt-de413d33343f350b",
+              "claim": "Für Kiew werden mindestens zwei Tote und sieben Verletzte genannt; aus Saratow werden zugleich ukrainische Drohnenangriffe mit mehreren Verletzten gemeldet.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                  "excerpt_hash": "7f9de0b7db51b87ca9d0",
+                  "checked_at": "2026-09-08T04:53:23.148Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                  "excerpt_hash": "8ecc9110ecd59733694f",
+                  "checked_at": "2026-09-08T04:53:23.148Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:53:23.148Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+              "content_hash": "dbc545b72437bafed665b8b8db431054698e75fbe43143bcf5940d51513acea6"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T04:53:23.148Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+                "content_hash": "dbc545b72437bafed665b8b8db431054698e75fbe43143bcf5940d51513acea6",
+                "excerpt_hash": "6542805dfc40411cb723ba0c11d8511c58cea273619e1780c4a643cb00ae095b",
+                "number_locale": "de",
+                "numbers": [
+                  "500",
+                  "8.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T04:53:23.148Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-3b8ebf7de7017a9c-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "3b8ebf7de7017a9c8c0d2deacfe179042205d96b6d671d1d7003aede75d6b11f"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-bb015e023dff4963-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "bb015e023dff49633807594556436f5f0464c681e5d80b1a91b0440bf0a75075"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-e75577bd531ebe93-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "e75577bd531ebe930bafa053605ea3854e85ef1c4cc076e5912c746deaa3c28a"
+        },
+        "source_visual": null,
+        "fingerprint": "aeb4f0d0fa86715783f2d51f0f9045a8d73ed542d1b49623698d1a1c4946fec8",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T04:53:38.102Z",
+        "status": "generated"
+      }
+    },
+    {
+      "story_id": "wt-dbc644779e2aac60",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "3ee210d57940508173357c04ec22a2d097efb20da45406bd8ded1eeeabed23f5",
+        "first_failed_at": "2026-09-08T04:52:08.677Z",
+        "failed_at": "2026-09-08T04:52:08.677Z",
+        "retry_after": "2026-09-08T05:07:08.677Z",
+        "retry_count": 1
+      },
+      "slug": "energieversorgung-verband-komplett-leere-gasspeicher-im-februar-sind-moglich-2aac60",
+      "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
+      "first_seen": "2026-09-08T04:01:14.000Z",
+      "last_updated": "2026-09-08T04:50:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-energieversorgung-16028927.html",
+          "title": "Verband warnt: Komplett leere Gasspeicher im Februar sind möglich",
+          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:01:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "75347356b7a7e0950be77a7a848cf0f950faae02369fad60dac3473a536460fb",
+          "source_item_id": "5a0b503e8d641bc809c318d01e8bcdf3152569ca56c8718d5d177bf3921191a5",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:01:14.000Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/energieversorgung-verband-komplett-leere-gasspeicher-im-februar-sind-moeglich/100252759.html",
+          "title": "Branchenschätzung: Komplett leere Gasspeicher im Februar sind möglich",
+          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:50:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "c5c20fc00e672d3bfdc630c6a9c04682c851749996503ac698feee2cecfadc55",
+          "source_item_id": "e98e7c26be1525ecd279a065f43fd181c2f6571f8f92b7357aa5e74a287388b7",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:50:00.000Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/wirtschaft/news/energieversorgung--verband--komplett-leere-gasspeicher-im-februar-sind-moeglich-38218448.html",
+          "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
+          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:00:05.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "53e1db687df2dd9fb0364c56b6ce21b9845ed2f14be56df6fba2367565264a83",
+          "source_item_id": "01f8d0f70d97024f72fea3bff68ef4ca6601eaf845ea268fc3f3c7b51249a9c2",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:00:05.000Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-dbc644779e2aac60-claim-01",
+          "story_id": "wt-dbc644779e2aac60",
+          "claim": "Verband warnt: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T04:52:08.677Z"
+        },
+        {
+          "claim_id": "wt-dbc644779e2aac60-claim-02",
+          "story_id": "wt-dbc644779e2aac60",
+          "claim": "Branchenschätzung: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T04:52:08.677Z"
+        },
+        {
+          "claim_id": "wt-dbc644779e2aac60-claim-03",
+          "story_id": "wt-dbc644779e2aac60",
+          "claim": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T04:52:08.677Z"
+        }
+      ],
+      "content_hash": "807ea26d44b1c25f5e12b890ceec98d53c2aaa7dd8c6bb54deee9b9ad62eb823",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T05:07:08.677Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T04:52:08.677Z",
+      "event_first_seen_at": "2026-09-08T04:06:45.170Z",
+      "event_detected_at": "2026-09-08T04:06:45.170Z",
+      "event_id": "event-9282548dfd75495b433a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 2.144616666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 45.391783333333336,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 100,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T04:52:08.677Z",
+        "fingerprint": "2b35831388503ab9021483c363604db88caad9c52c52a0b25efca7341b7cc0ee",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T04:52:08.677Z",
+      "rejection": {
+        "at": "2026-09-08T04:52:08.677Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-386ff3ee7410d1bd",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a226ea301c8a2a956ae09aecb9e973f2507622c653c2354a51ad520d0a06fba3",
+        "first_failed_at": "2026-09-08T04:52:08.677Z",
+        "failed_at": "2026-09-08T04:52:08.677Z",
+        "retry_after": "2026-09-08T05:07:08.677Z",
+        "retry_count": 1
+      },
+      "slug": "hilfsbedurftigkeit-bundesweiter-tag-der-pflegenden-angehorigen-sozialverband-kritisiert--10d1bd",
+      "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
+      "first_seen": "2026-09-07T22:12:58.000Z",
+      "last_updated": "2026-09-08T04:39:24.000Z",
+      "topic": [
+        "Soziales",
+        "Gesundheit"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesweiter-tag-der-pflegenden-angehoerigen-sozialverband-kritisiert-mangelnde-unterstuetzung-100.html",
+          "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
+          "summary": "Der Sozialverband Deutschland fordert mehr Unterstützung für die Millionen Menschen, die Angehörige zu Hause pflegen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:39:24.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "403badf6f4705c165cfb1d5f6738cf2fe59463074fd3d256a9e488acedfa41e9",
+          "source_item_id": "5799aa0514c706ef49e4b364556d437cbc4104c6f91dd46f2087c5112134c602",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:39:24.000Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-386ff3ee7410d1bd-claim-01",
+          "story_id": "wt-386ff3ee7410d1bd",
+          "claim": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung: Der Sozialverband Deutschland fordert mehr Unterstützung für die Millionen Menschen, die Angehörige zu Hause pflegen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T04:52:08.677Z"
+        }
+      ],
+      "content_hash": "62a8609ace3dae574aba0e0cd1a0cb9320838a57eadae4dbc9d373235020d285",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T05:07:08.677Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T04:52:08.677Z",
+      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
+      "event_detected_at": "2026-09-07T22:37:09.924Z",
+      "event_id": "event-2919e8d889b258235eda",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Gesundheit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 12.744616666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 374.9792166666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T04:52:08.677Z",
+        "fingerprint": "432a677f304a811fa89689a1244b261a7633c91e06531d3e825755110a8d86d6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T04:52:08.677Z",
+      "rejection": {
+        "at": "2026-09-08T04:52:08.677Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
     {
       "story_id": "wt-e1047174e6d92607",
       "slug": "wohngeld-spd-und-grune-in-hamburg-fordern-rucknahme-von-kurzungen-d92607",
@@ -628,156 +1621,6 @@
         "prompt_version": "woek-editorial-4-contextual",
         "generated_at": "2026-09-08T04:24:11.160Z",
         "status": "generated"
-      }
-    },
-    {
-      "story_id": "wt-dbc644779e2aac60",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "07593bb510a11fe2a6cda398d6d7130953acb2c13c05a9f5bb2e1604801e0ed1",
-        "first_failed_at": "2026-09-08T04:06:45.170Z",
-        "failed_at": "2026-09-08T04:06:45.170Z",
-        "retry_after": "2026-09-08T04:21:45.170Z",
-        "retry_count": 1
-      },
-      "slug": "energieversorgung-verband-komplett-leere-gasspeicher-im-februar-sind-moglich-2aac60",
-      "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
-      "first_seen": "2026-09-08T04:01:14.000Z",
-      "last_updated": "2026-09-08T04:01:14.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-energieversorgung-16028927.html",
-          "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
-          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T04:01:14.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "adcca1f66687dc9b2d0bf73fd8ae68aa820f317837f944b4e166610c6d4a0283",
-          "source_item_id": "5a0b503e8d641bc809c318d01e8bcdf3152569ca56c8718d5d177bf3921191a5",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T04:01:14.000Z",
-          "ingested_at": "2026-09-08T04:06:45.170Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-dbc644779e2aac60-claim-01",
-          "story_id": "wt-dbc644779e2aac60",
-          "claim": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:06:45.170Z"
-        }
-      ],
-      "content_hash": "0d3129b7b7f6f050b986c2a1b1ae8be0e740922930757dbae3cb78b8fdcb96e3",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T04:21:45.170Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T04:06:45.170Z",
-      "event_first_seen_at": "2026-09-08T04:06:45.170Z",
-      "event_detected_at": "2026-09-08T04:06:45.170Z",
-      "event_id": "event-9282548dfd75495b433a",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 5.5195,
-        "detection_delay_minutes": 5.5195,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T04:06:45.170Z",
-        "fingerprint": "92edb005e438b2462064249d925d378c4102a18972cd9376a88a1d0062f80d57",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T04:06:45.170Z",
-      "rejection": {
-        "at": "2026-09-08T04:06:45.170Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
       }
     },
     {
@@ -1915,9 +2758,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "dbca7656d23ce1538ca11191e19bb5758041156271939c89554375ef77e7088b",
         "first_failed_at": "2026-09-08T02:37:05.212Z",
-        "failed_at": "2026-09-08T03:37:09.836Z",
-        "retry_after": "2026-09-08T04:37:09.836Z",
-        "retry_count": 3
+        "failed_at": "2026-09-08T04:52:08.677Z",
+        "retry_after": "2026-09-08T07:52:08.677Z",
+        "retry_count": 4
       },
       "slug": "trump-threatens-to-ban-canadian-bombardier-jets-from-us-market-9f7cb8",
       "title": "Trump threatens to ban Canadian Bombardier jets from US market",
@@ -1951,7 +2794,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T02:24:03.000Z",
-          "ingested_at": "2026-09-08T03:37:09.836Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1980,22 +2823,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T03:37:09.836Z"
+          "checked_at": "2026-09-08T04:52:08.677Z"
         }
       ],
       "content_hash": "7879599c705efdbaa420e315bfc0887532c964284429feaed3d7fe76b9c45861",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED"
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
       ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-08T04:37:09.836Z",
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-08T07:52:08.677Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T03:37:09.836Z",
+      "updated_at": "2026-09-08T04:52:08.677Z",
       "event_first_seen_at": "2026-09-08T02:37:05.212Z",
       "event_detected_at": "2026-09-08T02:37:05.212Z",
       "event_id": "event-ac7d1761c4986673813b",
@@ -2029,20 +2872,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 73.11393333333334,
+        "source_age_minutes": 148.09461666666667,
         "detection_delay_minutes": 13.036866666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 60.07706666666667,
+        "queue_age_minutes": 135.05775,
         "target_publication_minutes": 120,
-        "news_freshness_score": 85,
-        "freshness_warning": null
+        "news_freshness_score": 69,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T03:37:09.836Z",
+        "checked_at": "2026-09-08T04:52:08.677Z",
         "fingerprint": "2a45ea8ed00c8d468ff8003805e6595a4b823ef36186a386eb513307499cc627",
         "issue_codes": [],
         "warning_codes": []
@@ -11365,158 +12208,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-386ff3ee7410d1bd",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "79538ee568540875556c70de76f68f9f07ccd4a4968526346493beba9fc847f8",
-        "first_failed_at": "2026-09-07T23:02:05.417Z",
-        "failed_at": "2026-09-07T23:02:05.417Z",
-        "retry_after": "2026-09-07T23:17:05.417Z",
-        "retry_count": 1
-      },
-      "slug": "hilfsbedurftigkeit-bundesweiter-tag-der-pflegenden-angehorigen-sozialverband-kritisiert--10d1bd",
-      "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
-      "first_seen": "2026-09-07T22:12:58.000Z",
-      "last_updated": "2026-09-07T22:12:58.000Z",
-      "topic": [
-        "Soziales",
-        "Gesundheit"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/bundesweiter-tag-der-pflegenden-angehoerigen-sozialverband-kritisiert-mangelnde-unterstuetzung-100.html",
-          "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
-          "summary": "Der Sozialverband Deutschland fordert anlässlich des bundesweiten Tags der pflegenden Angehörigen mehr Unterstützung.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T22:41:30.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "63fc7860884b2c95b7c93c733514d2898d4d5d5a346c2490b633eed4487e4618",
-          "source_item_id": "5799aa0514c706ef49e4b364556d437cbc4104c6f91dd46f2087c5112134c602",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T22:41:30.000Z",
-          "ingested_at": "2026-09-07T23:02:05.417Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-386ff3ee7410d1bd-claim-01",
-          "story_id": "wt-386ff3ee7410d1bd",
-          "claim": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung: Der Sozialverband Deutschland fordert anlässlich des bundesweiten Tags der pflegenden Angehörigen mehr Unterstützung.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T23:02:05.417Z"
-        }
-      ],
-      "content_hash": "3e30d9e46275875203c411f41bb0210523277005cee662f59fd635c3b612eb95",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_MATERIALITY_TOO_LOW"
-      ],
-      "quality_retry_after": "2026-09-07T23:17:05.417Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T23:02:05.417Z",
-      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
-      "event_detected_at": "2026-09-07T22:37:09.924Z",
-      "event_id": "event-2919e8d889b258235eda",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 40,
-        "public_relevance": "mittel",
-        "topics": [
-          "Soziales",
-          "Gesundheit"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 20.590283333333332,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 24.924883333333334,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
-        "fingerprint": "b7a5b4e9995342ed91c73e1ba31f4a6e0a54cbfc95ccd74526418a057a5381f9",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T23:02:05.417Z",
-      "rejection": {
-        "at": "2026-09-07T23:02:05.417Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_MATERIALITY_TOO_LOW"
         ]
       }
     },
@@ -67652,7 +68343,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T04:22:04.039Z",
+          "ingested_at": "2026-09-08T04:52:08.677Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -67713,7 +68404,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:36:44.973Z"
+          "checked_at": "2026-09-08T04:52:08.677Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -67733,7 +68424,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:36:44.973Z"
+          "checked_at": "2026-09-08T04:52:08.677Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -67749,7 +68440,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T04:36:44.973Z",
+      "updated_at": "2026-09-08T04:52:08.677Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -67789,7 +68480,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1169.8601666666666,
+        "queue_age_minutes": 1185.2552333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -67798,7 +68489,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T04:36:44.973Z",
+        "checked_at": "2026-09-08T04:52:08.677Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -125281,7 +125972,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T04:36:44.973Z",
+          "checked_at": "2026-09-08T04:52:08.677Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -169635,7 +170326,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T04:36:44.973Z",
+          "checked_at": "2026-09-08T04:52:08.677Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

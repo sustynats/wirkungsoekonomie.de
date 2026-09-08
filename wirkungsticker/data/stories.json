@@ -1,7 +1,98 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T04:22:04.039Z",
+  "updated_at": "2026-09-08T04:52:08.677Z",
   "stories": [
+    {
+      "story_id": "wt-de413d33343f350b",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-3b8ebf7de7017a9c-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-bb015e023dff4963-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-de413d33343f350b-e75577bd531ebe93-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
+      "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
+      "source_summary": "Nach einer dreitägigen Pause hat Russland die Luftangriffe auf Kiew in der Nacht wieder aufgenommen. Der Bericht nennt dafür Angaben des Katastrophenschutzes, des Bürgermeisters Klitschko und der staatlichen russischen Nachrichtenagentur Tass. Genannt werden Angriffe mit Drohnen und ballistischen Raketen, beschädigte Wohngebäude, Lagerhallen und eine Schule sowie mindestens zwei Tote und sieben Verletzte. Zugleich berichtet die Quelle über ukrainische Drohnenangriffe auf Saratow, wo laut Regionalgouverneur mehrere Menschen verletzt worden seien.\n\nDie Meldung ordnet das Geschehen in den Besuch der US-Gesandten Witkoff und Kushner in Moskau und Kiew ein und verweist darauf, dass die Kriegsparteien für die Dauer des Besuchs auf Angriffe auf die jeweiligen Hauptstädte verzichten wollten.",
+      "summary": "Russland hat laut der Quelle die Angriffe auf Kiew nach einer dreitägigen Pause wieder aufgenommen. Zugleich werden Angriffe der Ukraine auf Saratow und Schäden sowie Opfer auf beiden Seiten genannt.",
+      "detail_summary": "Der berichtete Kern ist klar: Nach drei Tagen Pause wurden Kiew erneut Drohnen- und Raketenangriffe zugeschrieben, mit beschädigten Gebäuden und mindestens zwei Toten. Das ist als laufende Entwicklung relevant, weil es eine sichtbare Änderung der militärischen Lage und des Schutzstatus von Zivilinfrastruktur bedeutet. Ein möglicher Wirkpfad führt über neue Zerstörung, erneute Evakuierungs- und Sicherheitsbedarfe und zusätzlichen Druck auf lokale Versorgung und staatliche Schutzkapazitäten. Als weitere mögliche Folge kommt eine Verschärfung der Gegenschläge in Betracht, weil im selben Text auch ukrainische Drohnenangriffe auf Saratow erwähnt werden. Die Evidenz bleibt aber begrenzt, weil die Meldung auf einer einzelnen journalistischen Quelle beruht und die genaue Lage, die Verantwortlichkeiten im Detail und das Ausmaß der Schäden nicht unabhängig bestätigt sind.",
+      "why_relevant": "Die Meldung beschreibt eine neue militärische Lageänderung mit Opfern, Schäden und möglichen Folgeeffekten für Zivilbevölkerung und Infrastruktur.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Die Quelle nennt Tote, Verletzte und beschädigte Wohngebäude, also direkte Belastungen für Menschen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer Umwelt- oder Klimaeffekt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Der Angriff betrifft die Hauptstadt und damit staatliche Handlungsfähigkeit sowie Schutzfunktionen."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "haushalte",
+          "staat",
+          "kommunen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T04:52:08.677Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T04:39:24.000Z",
+      "last_updated": "2026-09-08T04:53:23.148Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-3470c749db18fcf27790",
+      "case_file": null,
+      "source_published_at": "2026-09-08T04:39:24.000Z",
+      "published_at": "2026-09-08T04:53:23.148Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:39:24.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e1047174e6d92607",
       "title_image": {
