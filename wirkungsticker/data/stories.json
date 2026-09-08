@@ -1,7 +1,237 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T17:27:21.241Z",
+  "updated_at": "2026-09-08T17:36:55.540Z",
   "stories": [
+    {
+      "story_id": "wt-29efb90c51d5b3f7",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "regierung-keine-explizit-ostdeutschen-demokratie-programme-d5b3f7",
+      "title": "Regierung: Keine explizit ostdeutschen Demokratie-Programme",
+      "source_summary": "Die Bundesregierung hat nach einer Antwort auf eine Kleine Anfrage erklärt, dass das Bundesprogramm „Demokratie leben!“ die ostdeutsche Zivilgesellschaft weiter unterstützen soll. Zugleich heißt es, eine explizit ostdeutsche Programmförderung sei nicht vorgesehen.\n\nGenannt werden die Fortsetzung der Partnerschaften für Demokratie sowie der Landesdemokratiezentren auf den Programmebenen Kommune und Land. Eine besondere Härtefallregelung für weitere ostdeutschlandspezifische Projekte wird in der Antwort verneint.",
+      "summary": "Die Bundesregierung verneint eine explizit ostdeutsche Sonderförderung in „Demokratie leben!“. Zugleich soll die laufende Förderung für Kommunen und Länder weitergehen.",
+      "detail_summary": "Konkret geht es um eine Antwort der Bundesregierung auf eine Kleine Anfrage zur Ausgestaltung von „Demokratie leben!“. Die Regierung sagt darin: Die ostdeutsche Zivilgesellschaft werde weiter unterstützt, aber eine explizit ostdeutsche Programmförderung sei nicht vorgesehen. Für die Wirkung ist das vor allem als Zustandsänderung in der Förderarchitektur relevant, nicht als bereits messbarer Effekt. Der mögliche Pfad führt über die Verteilung von Fördermitteln und die Reichweite einzelner Programme; offen bleibt, ob sich dadurch die Mittel, die Antragslage oder die regionale Abdeckung praktisch ändern. Die Evidenz ist eine primäre amtliche Antwort, aber ohne unabhängige Einordnung zu Umsetzung oder Folgen.",
+      "why_relevant": "Die Antwort beschreibt eine konkrete Förderlogik des Bundesprogramms und damit eine mögliche Änderung von Anreizen und Mittelverteilung für demokratische Projekte.",
+      "topic": [
+        "Soziales",
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Mehr Unterstützung für bestehende Strukturen kann demokratische Beteiligung stärken; die fehlende ostdeutsche Sonderlinie kann regionale Passgenauigkeit begrenzen.",
+          "positive_path": {
+            "mechanism": "Fortgesetzte Förderung über Kommune und Land erhält Trägerstrukturen, Beratung und lokale Projekte.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne explizite ostdeutsche Sonderförderung bleiben regionale Besonderheiten und Bedarfe möglicherweise unberücksichtigt.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Förderantwort ergibt sich kein belastbarer Umwelt- oder Klimapfad.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Antwort betrifft staatliche Förderung für demokratische Infrastruktur und damit demokratische Korrekturfähigkeit, regionale Teilhabe und Resilienz.",
+          "positive_path": {
+            "mechanism": "Bestehende Programme können lokale Initiativen, Beratung und Beteiligungsarbeit absichern.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Der Verzicht auf eine ostdeutsche Sonderförderung kann die gezielte Bearbeitung regionaler Demokratiedefizite erschweren.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T17:36:55.540Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:12:00.000Z",
+      "last_updated": "2026-09-08T17:39:25.030Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-5d002dc7548d4d9d1351",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:12:00.000Z",
+      "published_at": "2026-09-08T17:39:25.030Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob der Bundeshaushalt oder künftige Programmhinweise die angekündigte Förderung konkretisieren.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "konkrete Förderlinie, Mittelansatz oder Ausschreibung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-95f5ecf6bb96c64d",
+          "announced_at": "2026-09-08T15:12:00.000Z",
+          "follow_up_date": "2026-09-15T17:39:25.030Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210972",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T15:12:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-0fb6fe60049ce82c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "unterschiedliche-auffassungen-zum-dungegesetz-9ce82c",
+      "title": "Unterschiedliche Auffassungen zum Düngegesetz",
+      "source_summary": "Der Bundestag meldet eine öffentliche Anhörung des Landwirtschaftsausschusses zur geplanten Änderung des Düngegesetzes. Grundlage ist der Regierungsentwurf für ein Zweites Gesetz zur Änderung des Düngegesetzes. Vorgesehen sind unter anderem eine Rechtsgrundlage für eine Verordnung zum Wirkungsmonitoring und ein erweitertes bundesweites Monitoring, das auch der geforderten flächendeckenden Berichterstattung dienen soll.\n\nNach dem Bericht beurteilen Sachverständige den Entwurf unterschiedlich: Einige sehen ihn als notwendig und sinnvoll, andere kritisieren fehlende Einzelheiten, zu weit reichende Verlagerungen auf Verordnungen und fehlende verbindliche Obergrenzen. Offen bleibt, wie das Monitoring genau ausgestaltet wird und ob die Regeln am Ende die Erwartungen an den Gewässerschutz erfüllen.",
+      "summary": "Im Bundestag wird die Änderung des Düngegesetzes öffentlich beraten. Streitpunkt ist vor allem, wie streng das neue Monitoring und der Gewässerschutz ausfallen sollen.",
+      "detail_summary": "Die Anhörung zeigt einen laufenden Gesetzgebungsprozess mit klarer materieller Relevanz für Landwirtschaft, Gewässerschutz und Datenerhebung. Der Wirkpfad führt über neue Regeln und ein mögliches Monitoring zu veränderten Pflichten, Kontrollmöglichkeiten und Anreizen im Umgang mit Nährstoffen. Als mögliche Folge nennt die Quelle mehr Transparenz über regionale Nährstoffströme, aber auch Kritik an unklaren Details und fehlenden Obergrenzen. Für die Wirkung bleibt offen, ob der Entwurf später tatsächlich die Wasserqualität verbessert oder nur die Steuerungsarchitektur verändert. Die Evidenzlage ist eng auf eine Bundestagsmeldung und darin wiedergegebene Stellungnahmen begrenzt; unabhängige Bestätigung der Bewertungen liegt hier nicht vor.",
+      "why_relevant": "Die geplante Gesetzesänderung kann Pflichten, Kontrolle und Anreize in der Landwirtschaft verändern und damit Gewässerschutz, Verwaltung und Datenflüsse betreffen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Entwurf kann die Datengrundlage und Steuerung im Düngerecht verbessern, kann aber auch Bürokratie und Pflichten ausweiten. Die Quelle beschreibt beides als Streitpunkte.",
+          "positive_path": {
+            "mechanism": "Ein erweitertes Monitoring kann Nährstoffströme sichtbarer machen und gezieltere Maßnahmen gegen Belastungen ermöglichen.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Mehr Datenabfragen, unklare Ausgestaltung und fehlende Obergrenzen können Aufwand erhöhen und den Gewässerschutz unzureichend absichern.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Für Wasserqualität und Nährstoffeinträge ist der Pfad direkt relevant. Ob er zu weniger Belastung führt, bleibt in der Meldung offen.",
+          "positive_path": {
+            "mechanism": "Strengeres Monitoring und präzisere Vorgaben können Nitratbelastungen schneller sichtbar machen und Gegenmaßnahmen erleichtern.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn verbindliche Grenzen fehlen oder zentrale Details erst per Verordnung kommen, kann der Schutz hinter den Anforderungen zurückbleiben.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Anhörung zeigt parlamentarische Kontrolle und umstrittene Fachpositionen, aber noch keine gesicherte Änderung der demokratischen Korrekturfähigkeit.",
+          "positive_path": {
+            "mechanism": "Die öffentliche Anhörung macht Streitpunkte und Fachpositionen im Gesetzgebungsverfahren sichtbar.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Weit reichende Ermächtigungen für Datenabfragen und -austausch können als Kontroll- und Transparenzthema umstritten bleiben.",
+            "source_ids": [
+              "bundestag-hib"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T17:36:55.540Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:50:00.000Z",
+      "last_updated": "2026-09-08T17:38:31.706Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-d370915b5e0ec50d8a43",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:50:00.000Z",
+      "published_at": "2026-09-08T17:38:31.706Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210980",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T15:50:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-c5b69762f7366b61",
       "title_image": {

@@ -207,12 +207,20 @@ jobs:
           fi
           git commit -m "[wirkungsticker] ${SLOT_NAME} $(date -u +%Y-%m-%dT%H:%MZ)"
           node scripts/news/publish-git.mjs
+          # publish-git can rebase and rebuild; bind the release only AFTER its successful push.
+          RELEASE_COMMIT="$(git rev-parse HEAD)"
+          [[ "$RELEASE_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "Invalid published commit." >&2; exit 1; }
+          echo "commit=$RELEASE_COMMIT" >> "$GITHUB_OUTPUT"
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Publish the committed ticker automatically
         if: steps.commit.outputs.changed == 'true' && (steps.outcome.outputs.public_changed == 'true' || steps.polls.outputs.changed == 'true' || steps.media_impact.outputs.changed == 'true' || steps.editorial.outputs.public_changed == 'true')
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy.yml --ref main -f ticker_only=true
+          TICKER_COMMIT: ${{ steps.commit.outputs.commit }}
+        run: |
+          set -euo pipefail
+          [[ "$TICKER_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "Missing exact published commit; refusing an unbound release." >&2; exit 1; }
+          gh workflow run deploy.yml --ref main -f ticker_only=true -f "ticker_commit=$TICKER_COMMIT"
       - name: Verify ticker run health
         if: always() && steps.slot.outputs.should_run == 'true'
         run: npm run news:health -- --started-after="$WOEK_NEWS_EXPECTED_AFTER"
