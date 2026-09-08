@@ -1,7 +1,261 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T19:36:47.361Z",
+  "updated_at": "2026-09-08T19:55:48.672Z",
   "stories": [
+    {
+      "story_id": "wt-dc2a1dc727ed2b66",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "berliner-gesetze-werden-jugendcheck-unterzogen-ed2b66",
+      "title": "Berliner Gesetze werden \"Jugendcheck\" unterzogen",
+      "source_summary": "Berlin will nach Angaben der Bildungssenatorin alle Gesetze und politischen Vorhaben künftig einem „Jugendcheck“ unterziehen. Dabei sollen die Auswirkungen auf Kinder, Jugendliche und junge Erwachsene systematisch geprüft werden; die Perspektive junger Menschen solle frühzeitig im Gesetzgebungsverfahren berücksichtigt werden. Als Teil des Vorhabens nannte Günther-Wünsch auch eine Jugendwohnagentur, die jungen Menschen bei der Wohnungssuche helfen soll, wenn sie Pflegefamilien oder Heime verlassen.\n\nAußerdem kündigte sie den Beitritt Berlins zur Initiative „Kinderfreundliche Kommunen“ an und verband das mit dem Anspruch, die UN-Kinderrechtskonvention als Maßstab in allen Senatsverwaltungen zu verankern. Offen bleibt, wie verbindlich und in welchem Zeitplan die Prüfungen und Begleitmaßnahmen tatsächlich umgesetzt werden.",
+      "summary": "Berlin kündigt an, Gesetze und Vorhaben künftig auf ihre Folgen für junge Menschen prüfen zu lassen. Das ist relevant, weil sich damit Regeln und Prüfmaßstäbe im Verfahren ändern können.",
+      "detail_summary": "Der berichtete Kern ist eine Berliner Ankündigung: Künftig sollen alle Gesetze und politischen Vorhaben einem Jugendcheck unterzogen werden. Das ist materiell relevant, weil sich dadurch ein zusätzlicher Prüfschritt im Gesetzgebungsverfahren und damit ein möglicher Einfluss auf Inhalte, Prioritäten und Begründungen ergeben kann. Die Richtung ist vorerst offen: Ein Jugendcheck kann Schutz- und Beteiligungswirkungen stärken, er kann aber auch ohne verbindliche Folgen nur symbolisch bleiben. Belastbar belegt ist bislang vor allem die Ankündigung der Senatorin; Umsetzung, Verbindlichkeit und praktische Reichweite bleiben offen. Für die Einordnung ist deshalb entscheidend, ob der Check später tatsächlich in Verfahren, Ressourcenzuteilung oder Entscheidungen eingreift.",
+      "why_relevant": "Die Ankündigung verändert den Prüf- und Entscheidungsrahmen für Berliner Gesetze und Vorhaben mit möglicher Wirkung auf Kinder, Jugendliche und junge Erwachsene.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Meldung beschreibt zunächst nur einen angekündigten Prüfmechanismus. Ob daraus mehr Schutz, mehr Beteiligung oder nur ein zusätzlicher Verfahrensschritt folgt, ist noch nicht belegt.",
+          "positive_path": {
+            "mechanism": "Ein Jugendcheck kann Vorhaben früher auf Folgen für junge Menschen prüfen und so schädliche Regelungen abmildern oder bessere Beteiligung fördern.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleibt der Check unverbindlich oder rein formal, entsteht vor allem zusätzlicher Aufwand ohne messbare Verbesserung für junge Menschen.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein belastbarer Umwelt- oder Klimapfad beschrieben.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Ein früher Jugendcheck kann Beteiligung und Korrekturfähigkeit im Verfahren stärken, wenn er ernsthaft angewendet und dokumentiert wird.",
+          "positive_path": {
+            "mechanism": "Mehr systematische Prüfung und die Berücksichtigung junger Perspektiven können politische Entscheidungen nachvollziehbarer und anschlussfähiger machen.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne Verbindlichkeit oder Transparenz kann der Begriff vor allem kommunikativ wirken, ohne demokratische Korrektur tatsächlich zu verbessern.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "kommunen"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die prominente Formulierung „Jugendcheck“ plus die zugeschriebene Senatorinnenaussage schaffen einen klaren politischen Trigger.",
+        "factual_core": "Berlin soll künftig alle Gesetze und politischen Vorhaben einem Jugendcheck unterziehen; die Perspektive junger Menschen soll früh berücksichtigt werden.",
+        "epistemic_status": {
+          "confirmed": [
+            "Im Bericht wird eine künftige Prüfung aller Gesetze und politischen Vorhaben angekündigt.",
+            "Die Wirkung auf Kinder, Jugendliche und junge Erwachsene ist als Ziel der Prüfung benannt."
+          ],
+          "actor_claims": [
+            "Katharina Günther-Wünsch stellt das Vorhaben nach der Senatssitzung vor."
+          ],
+          "open": [
+            "Ob und wann der Jugendcheck verbindlich umgesetzt wird."
+          ]
+        },
+        "attribution": {
+          "frame_source": "rbb24",
+          "speaker": "Katharina Günther-Wünsch",
+          "original_term": "Jugendcheck",
+          "usage_type": "indirect_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Jugendcheck",
+          "origin_in_story": "rbb24",
+          "media_usage": "headline",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Jugendcheck",
+          "frame_type": [],
+          "problem_definition": "Politische Vorhaben sollen stärker auf Folgen für junge Menschen geprüft werden.",
+          "implied_cause": "Zu geringe frühzeitige Berücksichtigung jugendlicher Perspektiven im Verfahren.",
+          "implied_responsibility": "Senat und zuständige Verwaltungen als Träger der Prüfung.",
+          "implied_threat": "Ohne Prüfung könnten Folgen für junge Menschen zu spät sichtbar werden.",
+          "implied_solution_space": "Frühe systematische Prüfung im Gesetzgebungsverfahren.",
+          "material_omissions": [
+            "Keine Details zur Rechtsgrundlage oder Verbindlichkeit.",
+            "Keine unabhängige Bewertung der erwartbaren Wirkung."
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Die politische Einordnung bleibt auf die Ankündigung beschränkt; keine weitergehende Konfliktlage belegt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Jugendpolitik, Generationengerechtigkeit, Verwaltungsmodernisierung",
+          "normalization_potential": "medium",
+          "repetition_risk": "low",
+          "polarization_potential": "gering",
+          "trust_effect_potential": "offen",
+          "discourse_effect_potential": "Der Begriff kann Erwartungen an generationengerechte Politik bündeln, ohne selbst einen Wirkungsnachweis zu liefern."
+        },
+        "impact_path": {
+          "first_order": "Ankündigung eines neuen Prüfverfahrens für Berliner Vorhaben.",
+          "second_order": "Mögliche stärkere Berücksichtigung jugendbezogener Folgen in Vorlagen und Abwägungen.",
+          "third_order": "Bei dauerhafter Anwendung könnte sich die Verwaltungspraxis gegenüber jungen Menschen institutionell verschieben."
+        },
+        "evidence": {
+          "status": "low",
+          "level": "low",
+          "what_is_known": "Es gibt eine journalistisch berichtete Ankündigung aus Berlin. Die Prüfung soll sich auf Kinder, Jugendliche und junge Erwachsene beziehen.",
+          "what_is_inferred": "Der Jugendcheck könnte Entscheidungsprozesse beeinflussen, falls er verbindlich wird.",
+          "what_is_open": "Keine unabhängige Zweitquelle im gelieferten Material. Keine Detailinformationen zu Verfahren, Sanktionen oder Zeitplan.",
+          "facts": [
+            "Es gibt eine journalistisch berichtete Ankündigung aus Berlin.",
+            "Die Prüfung soll sich auf Kinder, Jugendliche und junge Erwachsene beziehen."
+          ],
+          "observations": [
+            "Nur eine journalistische Quelle ist im Datensatz enthalten.",
+            "Die Quelle nennt keine beschlossene Rechtsnorm."
+          ],
+          "inferences": [
+            "Der Jugendcheck könnte Entscheidungsprozesse beeinflussen, falls er verbindlich wird."
+          ],
+          "impact_potentials": [
+            "Bessere frühzeitige Berücksichtigung jugendbezogener Folgen."
+          ],
+          "impact_risks": [
+            "Symbolpolitik ohne praktische Änderung."
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine unabhängige Zweitquelle im gelieferten Material.",
+            "Keine Detailinformationen zu Verfahren, Sanktionen oder Zeitplan."
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Berlin kündigt an, künftige Gesetze und Vorhaben auf ihre Folgen für junge Menschen zu prüfen. Das ist mehr als nur ein Schlagwort: Wenn der Jugendcheck verbindlich wird, kann er Entscheidungen im Senat und in den Verwaltungen verändern. Ob das am Ende wirklich zu besseren Regeln führt, ist aber offen. Im vorliegenden Bericht steckt vor allem eine politische Ankündigung; belastbare Daten zur Umsetzung oder zu Ergebnissen gibt es noch nicht. Deshalb lässt sich die Richtung nur als mögliches Potenzial beschreiben, nicht als بالفعل eingetretene Wirkung.",
+        "editorial_assessment": "Berlin kündigt an, künftige Gesetze und Vorhaben auf ihre Folgen für junge Menschen zu prüfen. Das ist mehr als nur ein Schlagwort: Wenn der Jugendcheck verbindlich wird, kann er Entscheidungen im Senat und in den Verwaltungen verändern. Ob das am Ende wirklich zu besseren Regeln führt, ist aber offen. Im vorliegenden Bericht steckt vor allem eine politische Ankündigung; belastbare Daten zur Umsetzung oder zu Ergebnissen gibt es noch nicht. Deshalb lässt sich die Richtung nur als mögliches Potenzial beschreiben, nicht als بالفعل eingetretene Wirkung.",
+        "fact_first_alternative": "Berlin kündigt einen Jugendcheck für Gesetze und Vorhaben an. Der Bericht nennt dies als politische Ankündigung; eine tatsächliche Wirkung ist noch nicht belegt.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 4,
+          "rewrite_required": false,
+          "recommended_title": "Berlin kündigt Jugendcheck für Gesetze an",
+          "recommended_summary": "Berlin will künftige Gesetze und Vorhaben auf Folgen für junge Menschen prüfen lassen.",
+          "recommended_meta_description": "Berlin kündigt einen Jugendcheck für Gesetze und Vorhaben an. Ob der Schritt verbindlich wird, bleibt offen."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T19:55:48.672Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:52:01.000Z",
+      "last_updated": "2026-09-08T19:55:13.089Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-5ba297268ddffd901500",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:52:01.000Z",
+      "published_at": "2026-09-08T19:55:13.089Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-jugendcheck-gesetze-generationsgerechtere-politik.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:52:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-366b1fbfa120e44f",
       "title_image": {
