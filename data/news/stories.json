@@ -1,8 +1,1144 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T20:21:54.035Z",
-  "updated_at": "2026-09-08T20:51:52.093Z",
+  "public_updated_at": "2026-09-08T21:08:48.678Z",
+  "updated_at": "2026-09-08T21:08:48.678Z",
   "stories": [
+    {
+      "story_id": "wt-ee6173fc58ca7eca",
+      "slug": "klingbeils-rekord-schulden-und-schwache-schuler-ca7eca",
+      "title": "Klingbeils Rekord-Schulden und schwache Schüler",
+      "first_seen": "2026-09-08T15:46:00.000Z",
+      "last_updated": "2026-09-08T21:11:10.043Z",
+      "published_at": "2026-09-08T21:11:10.043Z",
+      "updated_at": "2026-09-08T21:11:10.043Z",
+      "topic": [
+        "Finanzen",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+          "title": "Klingbeils Rekord-Schulden und schwache Schüler",
+          "summary": "Klingbeils Haushalt mit Rekord-Schulden, Pisa-Debakel für Deutschlands Schulen und Spekulationen um die Regierungsbildung in Sachsen-Anhalt - der Tag kompakt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:46:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ebeebacd9a315cdc1e46a7e33aab06e2d5b33c737f2d864ab163fa54293064b9",
+          "source_item_id": "6579f1f376b58ef8ead9d11db6e66fc9bdb69b801dc9d3b251201ec47cc7eca7",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T15:46:00.000Z",
+          "ingested_at": "2026-09-08T17:06:38.176Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ee6173fc58ca7eca-v1-claim-1",
+          "story_id": "wt-ee6173fc58ca7eca",
+          "claim": "Bundesfinanzminister Lars Klingbeil hat den Haushaltsentwurf für 2027 in den Bundestag eingebracht und plant Ausgaben von 555,4 Milliarden Euro sowie Kredite von 118,7 Milliarden Euro.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "5efd21cf6074551f9e59",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "bdf48bab596f04ceebc9",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "df59bea5850f3b882b80",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T21:11:10.043Z"
+        },
+        {
+          "claim_id": "wt-ee6173fc58ca7eca-v1-claim-2",
+          "story_id": "wt-ee6173fc58ca7eca",
+          "claim": "Zusammen mit Sondervermögen für Bundeswehr, Infrastruktur und Klimaschutz summiert sich die Neuverschuldung laut Bericht auf rund 203,6 Milliarden Euro.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "bdf48bab596f04ceebc9",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "df59bea5850f3b882b80",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T21:11:10.043Z"
+        },
+        {
+          "claim_id": "wt-ee6173fc58ca7eca-v1-claim-3",
+          "story_id": "wt-ee6173fc58ca7eca",
+          "claim": "In der neuen Pisa-Studie schneiden Deutschlands Schülerinnen und Schüler so schlecht ab wie nie seit Beginn der Erhebungen im Jahr 2000.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "dc5c83665684e4543528",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "92205565977473152631",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "7fd463aa27244ca6e36b",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T21:11:10.043Z"
+        },
+        {
+          "claim_id": "wt-ee6173fc58ca7eca-v1-claim-4",
+          "story_id": "wt-ee6173fc58ca7eca",
+          "claim": "Rund ein Fünftel der getesteten Jugendlichen verfehlt in allen drei Bereichen die Basiskompetenzen; der Negativtrend läuft laut Studie seit etwa 2015.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "92205565977473152631",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "7fd463aa27244ca6e36b",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T21:11:10.043Z"
+        },
+        {
+          "claim_id": "wt-ee6173fc58ca7eca-v1-claim-5",
+          "story_id": "wt-ee6173fc58ca7eca",
+          "claim": "In Sachsen-Anhalt beginnt nach dem AfD-Erfolg bei der Landtagswahl das Ringen um eine neue Regierung; mehrere Koalitions- und Minderheitsoptionen werden diskutiert.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "95dc56605a1e64617aa1",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "43d39b4995f1b314e10e",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "excerpt_hash": "f373787a3cd8c1f83dc6",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T21:11:10.043Z"
+        }
+      ],
+      "event_id": "event-5f3c52a0a4b117744739",
+      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
+      "event_detected_at": "2026-09-08T16:06:50.416Z",
+      "verification_started_at": "2026-09-08T21:10:46.841Z",
+      "publish_ready_at": "2026-09-08T21:11:10.043Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T21:08:48.678Z",
+        "fingerprint": "13107cad130cee66a7554cbf6765ac0d0630a5fb4b2c1bc76431d28e9d666293",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "f48603825bbe70e13fb9bb98d782bcd1a7dc1fdc8c40f7625777cfad0b5bc355",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T21:11:10.043Z",
+        "sources": [
+          {
+            "source_id": "zdfheute-nachrichten",
+            "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+            "content_hash": "ebeebacd9a315cdc1e46a7e33aab06e2d5b33c737f2d864ab163fa54293064b9",
+            "excerpt_hash": "249c92d59add590ffcd888c29082aa92cc0aafa510189732ae467e041a7c1f8a",
+            "number_locale": "de",
+            "numbers": [
+              "8.09",
+              "2026",
+              "17",
+              "46",
+              "2027",
+              "555.4",
+              "524.5",
+              "118.7",
+              "203.6",
+              "45",
+              "118",
+              "10",
+              "1",
+              "38",
+              "2000",
+              "760000",
+              "91",
+              "6700",
+              "2015",
+              "5",
+              "15",
+              "13",
+              "8.9",
+              "12",
+              "27",
+              "22",
+              "14",
+              "2",
+              "3",
+              "31"
+            ]
+          }
+        ]
+      },
+      "source_summary": "ZDFheute bündelt am Abend drei aktuelle Themen: den Haushaltsentwurf 2027 von Finanzminister Lars Klingbeil, die neuen Pisa-Ergebnisse und die ersten politischen Gespräche nach der Landtagswahl in Sachsen-Anhalt. Im Haushalt nennt der Bericht Ausgaben von 555,4 Milliarden Euro, Kredite von 118,7 Milliarden Euro und zusammen mit Sondervermögen eine Neuverschuldung von rund 203,6 Milliarden Euro.\n\nBei Pisa heißt es, Deutschlands Schülerinnen und Schüler schnitten so schlecht ab wie nie seit 2000; rund ein Fünftel verfehle in allen drei Bereichen die Basiskompetenzen. In Sachsen-Anhalt werden nach dem AfD-Erfolg Koalitions- und Minderheitsmodelle diskutiert, ein Ergebnis ist offen.",
+      "analysis": {
+        "story_id": "wt-ee6173fc58ca7eca",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Klingbeil bringt einen Haushalt mit hoher Neuverschuldung ein. Zugleich meldet die Quelle neue Pisa-Befunde und offene Regierungsoptionen in Sachsen-Anhalt.",
+        "detail_summary": "Die Meldung verbindet drei getrennte, aber politisch und fiskalisch relevante Entwicklungen: den Haushaltsentwurf 2027 mit 555,4 Milliarden Euro Ausgaben und 118,7 Milliarden Euro Krediten, die schlechtesten Pisa-Ergebnisse Deutschlands seit Beginn der Erhebungen und erste Sondierungen nach der Wahl in Sachsen-Anhalt. Für die Öffentlichkeit ist das relevant, weil Haushalt, Bildungsstand und Regierungsbildung jeweils Regeln, Mittelverwendung und Entscheidungsspielräume beeinflussen. Ein direkter Wirkpfad liegt beim Haushalt in möglichen Verschiebungen von Anreizen und Prioritäten; bei Pisa vor allem in der Bildungssteuerung und bei Sachsen-Anhalt in der künftigen Mehrheitsbildung. Die Quelle bleibt ein journalistischer Überblick; die Einordnung der Folgen ist daher vorläufig.",
+        "why_relevant": "Die Meldung enthält neue, materielle Zustandsinformationen zu Bundeshaushalt, Bildungslage und Regierungsbildung mit möglichem Einfluss auf Mittelverteilung, Anreize und politische Mehrheiten.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Haushalt kann Mittel und Anreize neu ordnen; gleichzeitig bleiben Verteilungswirkungen und Zielkonflikte offen. Ohne Umsetzungsdaten ist die Nettowirkung noch nicht bestimmbar.",
+          "positive_path": {
+            "mechanism": "Höhere Mittel und neue Abgaben können öffentliche Leistungen und fiskalische Handlungsfähigkeit sichern.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Hohe Neuverschuldung und Kürzungsdebatten können Verteilungskonflikte, Belastungen und politische Blockaden verstärken.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Quelle nennt Klimaschutz-Sondervermögen und Kritik an Kürzungen im Klima- und Transformationsfonds. Daraus ergibt sich ein möglicher Pfad in beide Richtungen, aber kein Wirkungsnachweis.",
+          "positive_path": {
+            "mechanism": "Klimaschutzbezogene Mittel können Transformations- und Investitionspfade stützen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kürzungen oder Umwidmungen können Klima- und Transformationsvorhaben schwächen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Bei Sachsen-Anhalt geht es um Regierungsbildung und mögliche Koalitionsmodelle. Die demokratische Wirkung hängt von den späteren Mehrheiten und Verfahren ab; dazu nennt die Quelle noch kein Ergebnis.",
+          "positive_path": {
+            "mechanism": "Offene Verhandlungen können institutionelle Mehrheiten und parlamentarische Kontrolle klären.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Blockaden oder Lagerkonflikte können die Regierungsbildung erschweren und Korrekturfähigkeit mindern.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "importance": "hoch",
+        "impact_potential": "Der Haushalt kann Ausgaben, Verschuldung und Prioritäten des Bundes verschieben; Pisa kann Bildungssteuerung und Reformdruck erhöhen; Sachsen-Anhalt kann Mehrheitsoptionen und Regierungsbildung verändern.",
+        "impact_risks": [
+          "Hohe Neuverschuldung kann Konflikte um Verteilung und Prioritäten verschärfen.",
+          "Kürzungen im Klima- und Transformationsfonds können Transformationspfade belasten.",
+          "Offene Regierungsbildung kann Verzögerungen und Blockaden erzeugen."
+        ],
+        "mechanisms": [
+          "Haushalt setzt fiskalische Prioritäten und Anreize.",
+          "Pisa-Daten erhöhen Reformdruck im Bildungsbereich.",
+          "Koalitionsgespräche verändern Mehrheitsoptionen und Regierungsfähigkeit."
+        ],
+        "first_order": [
+          "Bund legt einen Haushalt mit hoher Neuverschuldung vor.",
+          "Neue Pisa-Daten verändern die Problembeschreibung im Bildungsbereich.",
+          "In Sachsen-Anhalt werden neue Regierungsoptionen geprüft."
+        ],
+        "second_order": [
+          "Mittelverschiebungen können Ressorts und Investitionen neu gewichten.",
+          "Bildungsdebatten können zu Reformen oder Kurskorrekturen führen.",
+          "Koalitionsgespräche können die Zusammensetzung der Landesregierung bestimmen."
+        ],
+        "third_order": [
+          "Anhaltende Verschuldung oder Umschichtung kann die fiskalische Struktur prägen.",
+          "Bildungsreformen können mittelfristig Kompetenzen und Chancengleichheit beeinflussen.",
+          "Die Regierungsbildung kann die demokratische Steuerungsfähigkeit des Landes prägen."
+        ],
+        "systemic_relevance": "Die Meldung berührt Bundesfinanzen, Bildungsqualität und Landesregierung zugleich. Das betrifft Budgetsteuerung, Humankapital, Mehrheitsbildung und damit drei miteinander gekoppelte politische Systeme.",
+        "transformation_potential": "Vor allem der Haushalt und die Bildungsdebatte können Prioritäten und Anreize verschieben; die Wirkung bleibt aber an Beschlusslage, Umsetzung und Folgeentscheidungen gebunden.",
+        "resilience": "Resilienz hängt hier an fiskalischem Spielraum, Bildungsfähigkeit und der Stabilität parlamentarischer Mehrheiten. Die Quelle zeigt Belastungen, aber noch keine belastbare Gegensteuerung.",
+        "side_effects": [
+          "Mehr Schulden können spätere Spielräume einschränken.",
+          "Bildungsdebatten können Erwartungen erhöhen, ohne sofort Wirkung zu entfalten.",
+          "Offene Koalitionsfragen können politische Unsicherheit verlängern."
+        ],
+        "uncertainties": [
+          "Die Quelle ist ein journalistischer Überblick ohne vollständigen Originalkontext.",
+          "Die tatsächlichen Haushalts- und Bildungswirkungen sind noch nicht messbar.",
+          "Die Regierungsbildung in Sachsen-Anhalt ist offen."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Quelle: ZDFheute. Sprecher im Haushaltsteil: Lars Klingbeil; im Pisa-Teil werden Studienverantwortliche und Politiker zitiert; bei Sachsen-Anhalt berichtet die Redaktion über offene Szenarien.",
+        "watch_next": [
+          "Beschlusslage und Änderungen am Haushalt 2027.",
+          "Weitere belastbare Pisa-Auswertungen und Reaktionen.",
+          "Konkrete Koalitionsgespräche oder Personalentscheidungen in Sachsen-Anhalt."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält neue, materielle Zustandsinformationen zu Bundeshaushalt, Bildungslage und Regierungsbildung. Die Belege stammen aus einer journalistischen Quelle und sind für eine erste, klar begrenzte Meldung ausreichend."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T21:08:48.678Z",
+        "media_trigger_fingerprint": "c35e912182aad41f6cb8d8ed1ad0a5413a06255e1049c5a2385fb17e45c2f934",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 2,
+          "reasons": [
+            "catastrophizing_or_dramatizing"
+          ],
+          "matched_terms": [
+            "schock"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "c35e912182aad41f6cb8d8ed1ad0a5413a06255e1049c5a2385fb17e45c2f934",
+          "content_fingerprint": "9fcb63bb909af8677ae4ebb0f982c1e629f108985fdc3a4252cd9f07748b4933",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T21:11:10.043Z",
+          "content_hash": "f48603825bbe70e13fb9bb98d782bcd1a7dc1fdc8c40f7625777cfad0b5bc355",
+          "source_summary": "ZDFheute bündelt am Abend drei aktuelle Themen: den Haushaltsentwurf 2027 von Finanzminister Lars Klingbeil, die neuen Pisa-Ergebnisse und die ersten politischen Gespräche nach der Landtagswahl in Sachsen-Anhalt. Im Haushalt nennt der Bericht Ausgaben von 555,4 Milliarden Euro, Kredite von 118,7 Milliarden Euro und zusammen mit Sondervermögen eine Neuverschuldung von rund 203,6 Milliarden Euro.\n\nBei Pisa heißt es, Deutschlands Schülerinnen und Schüler schnitten so schlecht ab wie nie seit 2000; rund ein Fünftel verfehle in allen drei Bereichen die Basiskompetenzen. In Sachsen-Anhalt werden nach dem AfD-Erfolg Koalitions- und Minderheitsmodelle diskutiert, ein Ergebnis ist offen.",
+          "analysis": {
+            "story_id": "wt-ee6173fc58ca7eca",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Klingbeil bringt einen Haushalt mit hoher Neuverschuldung ein. Zugleich meldet die Quelle neue Pisa-Befunde und offene Regierungsoptionen in Sachsen-Anhalt.",
+            "detail_summary": "Die Meldung verbindet drei getrennte, aber politisch und fiskalisch relevante Entwicklungen: den Haushaltsentwurf 2027 mit 555,4 Milliarden Euro Ausgaben und 118,7 Milliarden Euro Krediten, die schlechtesten Pisa-Ergebnisse Deutschlands seit Beginn der Erhebungen und erste Sondierungen nach der Wahl in Sachsen-Anhalt. Für die Öffentlichkeit ist das relevant, weil Haushalt, Bildungsstand und Regierungsbildung jeweils Regeln, Mittelverwendung und Entscheidungsspielräume beeinflussen. Ein direkter Wirkpfad liegt beim Haushalt in möglichen Verschiebungen von Anreizen und Prioritäten; bei Pisa vor allem in der Bildungssteuerung und bei Sachsen-Anhalt in der künftigen Mehrheitsbildung. Die Quelle bleibt ein journalistischer Überblick; die Einordnung der Folgen ist daher vorläufig.",
+            "why_relevant": "Die Meldung enthält neue, materielle Zustandsinformationen zu Bundeshaushalt, Bildungslage und Regierungsbildung mit möglichem Einfluss auf Mittelverteilung, Anreize und politische Mehrheiten.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Der Haushalt kann Mittel und Anreize neu ordnen; gleichzeitig bleiben Verteilungswirkungen und Zielkonflikte offen. Ohne Umsetzungsdaten ist die Nettowirkung noch nicht bestimmbar.",
+              "positive_path": {
+                "mechanism": "Höhere Mittel und neue Abgaben können öffentliche Leistungen und fiskalische Handlungsfähigkeit sichern.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Hohe Neuverschuldung und Kürzungsdebatten können Verteilungskonflikte, Belastungen und politische Blockaden verstärken.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Die Quelle nennt Klimaschutz-Sondervermögen und Kritik an Kürzungen im Klima- und Transformationsfonds. Daraus ergibt sich ein möglicher Pfad in beide Richtungen, aber kein Wirkungsnachweis.",
+              "positive_path": {
+                "mechanism": "Klimaschutzbezogene Mittel können Transformations- und Investitionspfade stützen.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Kürzungen oder Umwidmungen können Klima- und Transformationsvorhaben schwächen.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              }
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "offen",
+              "direction_basis": "unclear",
+              "rationale": "Bei Sachsen-Anhalt geht es um Regierungsbildung und mögliche Koalitionsmodelle. Die demokratische Wirkung hängt von den späteren Mehrheiten und Verfahren ab; dazu nennt die Quelle noch kein Ergebnis.",
+              "positive_path": {
+                "mechanism": "Offene Verhandlungen können institutionelle Mehrheiten und parlamentarische Kontrolle klären.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Blockaden oder Lagerkonflikte können die Regierungsbildung erschweren und Korrekturfähigkeit mindern.",
+                "source_ids": [
+                  "zdfheute-nachrichten"
+                ]
+              }
+            },
+            "importance": "hoch",
+            "impact_potential": "Der Haushalt kann Ausgaben, Verschuldung und Prioritäten des Bundes verschieben; Pisa kann Bildungssteuerung und Reformdruck erhöhen; Sachsen-Anhalt kann Mehrheitsoptionen und Regierungsbildung verändern.",
+            "impact_risks": [
+              "Hohe Neuverschuldung kann Konflikte um Verteilung und Prioritäten verschärfen.",
+              "Kürzungen im Klima- und Transformationsfonds können Transformationspfade belasten.",
+              "Offene Regierungsbildung kann Verzögerungen und Blockaden erzeugen."
+            ],
+            "mechanisms": [
+              "Haushalt setzt fiskalische Prioritäten und Anreize.",
+              "Pisa-Daten erhöhen Reformdruck im Bildungsbereich.",
+              "Koalitionsgespräche verändern Mehrheitsoptionen und Regierungsfähigkeit."
+            ],
+            "first_order": [
+              "Bund legt einen Haushalt mit hoher Neuverschuldung vor.",
+              "Neue Pisa-Daten verändern die Problembeschreibung im Bildungsbereich.",
+              "In Sachsen-Anhalt werden neue Regierungsoptionen geprüft."
+            ],
+            "second_order": [
+              "Mittelverschiebungen können Ressorts und Investitionen neu gewichten.",
+              "Bildungsdebatten können zu Reformen oder Kurskorrekturen führen.",
+              "Koalitionsgespräche können die Zusammensetzung der Landesregierung bestimmen."
+            ],
+            "third_order": [
+              "Anhaltende Verschuldung oder Umschichtung kann die fiskalische Struktur prägen.",
+              "Bildungsreformen können mittelfristig Kompetenzen und Chancengleichheit beeinflussen.",
+              "Die Regierungsbildung kann die demokratische Steuerungsfähigkeit des Landes prägen."
+            ],
+            "systemic_relevance": "Die Meldung berührt Bundesfinanzen, Bildungsqualität und Landesregierung zugleich. Das betrifft Budgetsteuerung, Humankapital, Mehrheitsbildung und damit drei miteinander gekoppelte politische Systeme.",
+            "transformation_potential": "Vor allem der Haushalt und die Bildungsdebatte können Prioritäten und Anreize verschieben; die Wirkung bleibt aber an Beschlusslage, Umsetzung und Folgeentscheidungen gebunden.",
+            "resilience": "Resilienz hängt hier an fiskalischem Spielraum, Bildungsfähigkeit und der Stabilität parlamentarischer Mehrheiten. Die Quelle zeigt Belastungen, aber noch keine belastbare Gegensteuerung.",
+            "side_effects": [
+              "Mehr Schulden können spätere Spielräume einschränken.",
+              "Bildungsdebatten können Erwartungen erhöhen, ohne sofort Wirkung zu entfalten.",
+              "Offene Koalitionsfragen können politische Unsicherheit verlängern."
+            ],
+            "uncertainties": [
+              "Die Quelle ist ein journalistischer Überblick ohne vollständigen Originalkontext.",
+              "Die tatsächlichen Haushalts- und Bildungswirkungen sind noch nicht messbar.",
+              "Die Regierungsbildung in Sachsen-Anhalt ist offen."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Quelle: ZDFheute. Sprecher im Haushaltsteil: Lars Klingbeil; im Pisa-Teil werden Studienverantwortliche und Politiker zitiert; bei Sachsen-Anhalt berichtet die Redaktion über offene Szenarien.",
+            "watch_next": [
+              "Beschlusslage und Änderungen am Haushalt 2027.",
+              "Weitere belastbare Pisa-Auswertungen und Reaktionen.",
+              "Konkrete Koalitionsgespräche oder Personalentscheidungen in Sachsen-Anhalt."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält neue, materielle Zustandsinformationen zu Bundeshaushalt, Bildungslage und Regierungsbildung. Die Belege stammen aus einer journalistischen Quelle und sind für eine erste, klar begrenzte Meldung ausreichend."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T21:08:48.678Z",
+            "media_trigger_fingerprint": "c35e912182aad41f6cb8d8ed1ad0a5413a06255e1049c5a2385fb17e45c2f934",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 2,
+              "reasons": [
+                "catastrophizing_or_dramatizing"
+              ],
+              "matched_terms": [
+                "schock"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "c35e912182aad41f6cb8d8ed1ad0a5413a06255e1049c5a2385fb17e45c2f934",
+              "content_fingerprint": "9fcb63bb909af8677ae4ebb0f982c1e629f108985fdc3a4252cd9f07748b4933",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-ee6173fc58ca7eca-v1-claim-1",
+              "story_id": "wt-ee6173fc58ca7eca",
+              "claim": "Bundesfinanzminister Lars Klingbeil hat den Haushaltsentwurf für 2027 in den Bundestag eingebracht und plant Ausgaben von 555,4 Milliarden Euro sowie Kredite von 118,7 Milliarden Euro.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "5efd21cf6074551f9e59",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "bdf48bab596f04ceebc9",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "df59bea5850f3b882b80",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "claim_id": "wt-ee6173fc58ca7eca-v1-claim-2",
+              "story_id": "wt-ee6173fc58ca7eca",
+              "claim": "Zusammen mit Sondervermögen für Bundeswehr, Infrastruktur und Klimaschutz summiert sich die Neuverschuldung laut Bericht auf rund 203,6 Milliarden Euro.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "bdf48bab596f04ceebc9",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "df59bea5850f3b882b80",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "claim_id": "wt-ee6173fc58ca7eca-v1-claim-3",
+              "story_id": "wt-ee6173fc58ca7eca",
+              "claim": "In der neuen Pisa-Studie schneiden Deutschlands Schülerinnen und Schüler so schlecht ab wie nie seit Beginn der Erhebungen im Jahr 2000.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "dc5c83665684e4543528",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "92205565977473152631",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "7fd463aa27244ca6e36b",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "claim_id": "wt-ee6173fc58ca7eca-v1-claim-4",
+              "story_id": "wt-ee6173fc58ca7eca",
+              "claim": "Rund ein Fünftel der getesteten Jugendlichen verfehlt in allen drei Bereichen die Basiskompetenzen; der Negativtrend läuft laut Studie seit etwa 2015.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "92205565977473152631",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "7fd463aa27244ca6e36b",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            },
+            {
+              "claim_id": "wt-ee6173fc58ca7eca-v1-claim-5",
+              "story_id": "wt-ee6173fc58ca7eca",
+              "claim": "In Sachsen-Anhalt beginnt nach dem AfD-Erfolg bei der Landtagswahl das Ringen um eine neue Regierung; mehrere Koalitions- und Minderheitsoptionen werden diskutiert.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "95dc56605a1e64617aa1",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "43d39b4995f1b314e10e",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                  "excerpt_hash": "f373787a3cd8c1f83dc6",
+                  "checked_at": "2026-09-08T21:11:10.043Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T21:11:10.043Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+              "content_hash": "ebeebacd9a315cdc1e46a7e33aab06e2d5b33c737f2d864ab163fa54293064b9"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T21:11:10.043Z",
+            "sources": [
+              {
+                "source_id": "zdfheute-nachrichten",
+                "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
+                "content_hash": "ebeebacd9a315cdc1e46a7e33aab06e2d5b33c737f2d864ab163fa54293064b9",
+                "excerpt_hash": "249c92d59add590ffcd888c29082aa92cc0aafa510189732ae467e041a7c1f8a",
+                "number_locale": "de",
+                "numbers": [
+                  "8.09",
+                  "2026",
+                  "17",
+                  "46",
+                  "2027",
+                  "555.4",
+                  "524.5",
+                  "118.7",
+                  "203.6",
+                  "45",
+                  "118",
+                  "10",
+                  "1",
+                  "38",
+                  "2000",
+                  "760000",
+                  "91",
+                  "6700",
+                  "2015",
+                  "5",
+                  "15",
+                  "13",
+                  "8.9",
+                  "12",
+                  "27",
+                  "22",
+                  "14",
+                  "2",
+                  "3",
+                  "31"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T21:11:10.043Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T21:28:14.830Z"
+      }
+    },
+    {
+      "story_id": "wt-2ba80a7557ba7bf8",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "6e3156cf9217bdb525538b21ae44d50328b4be35a42ed116574141e9403b78ee",
+        "first_failed_at": "2026-09-08T21:08:48.678Z",
+        "failed_at": "2026-09-08T21:08:48.678Z",
+        "retry_after": "2026-09-08T21:23:48.678Z",
+        "retry_count": 1
+      },
+      "slug": "ukraine-krieg-tote-und-verletzte-bei-russischen-angriffen-ba7bf8",
+      "title": "Ukraine-Krieg: Tote und Verletzte bei russischen Angriffen",
+      "first_seen": "2026-09-08T20:41:43.000Z",
+      "last_updated": "2026-09-08T20:42:48.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--tote-und-verletzte-bei-russischen-angriffen-38223992.html",
+          "title": "Ukraine-Krieg: Tote und Verletzte bei russischen Angriffen",
+          "summary": "Die russischen Streitkräfte setzen die Ukraine weiter unter Druck. Immer neue Angriffe gegen zivile Ziele fordern zahlreiche Opfer.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T20:41:43.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c4abf695c1d4ea5ef0da094b9e8d94b0ab5ffec56c8b85ea494e88f94f3e41e5",
+          "source_item_id": "24a0d58f9fddeb7781295698cd9cb1d06d79ac499e2d5ec942138043cdda35f4",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T20:41:43.000Z",
+          "ingested_at": "2026-09-08T21:08:48.678Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16032272.html",
+          "title": "Ukraine-Krieg: Tote und Verletzte bei russischen Angriffen",
+          "summary": "Die russischen Streitkräfte setzen die Ukraine weiter unter Druck. Immer neue Angriffe gegen zivile Ziele fordern zahlreiche Opfer.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T20:42:48.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "840c9a138084445ed2353b4b805710a113e9ae79dc95235d80c023cc24051390",
+          "source_item_id": "361bc08c809a07351f4b2796bd7d5455cf4fbaa7c7c5b0fca4c81454eedf0349",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T20:42:48.000Z",
+          "ingested_at": "2026-09-08T21:08:48.678Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2ba80a7557ba7bf8-claim-01",
+          "story_id": "wt-2ba80a7557ba7bf8",
+          "claim": "Ukraine-Krieg: Tote und Verletzte bei russischen Angriffen: Die russischen Streitkräfte setzen die Ukraine weiter unter Druck. Immer neue Angriffe gegen zivile Ziele fordern zahlreiche Opfer.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T21:08:48.678Z"
+        },
+        {
+          "claim_id": "wt-2ba80a7557ba7bf8-claim-02",
+          "story_id": "wt-2ba80a7557ba7bf8",
+          "claim": "Ukraine-Krieg: Tote und Verletzte bei russischen Angriffen: Die russischen Streitkräfte setzen die Ukraine weiter unter Druck. Immer neue Angriffe gegen zivile Ziele fordern zahlreiche Opfer.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T21:08:48.678Z"
+        }
+      ],
+      "content_hash": "5e9d3ebf31421d84a8ebaa1d2bbd133608a07ff4f4ff62cc2d4cdc27e642eb47",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T21:23:48.678Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T21:08:48.678Z",
+      "event_first_seen_at": "2026-09-08T21:08:48.678Z",
+      "event_detected_at": "2026-09-08T21:08:48.678Z",
+      "event_id": "event-4a089ca3fb37f4556835",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 26.0113,
+        "detection_delay_minutes": 26.0113,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T21:08:48.678Z",
+        "fingerprint": "5f52bf3547127459ec19c88844f8b78be4defe9afb9982d7e4867472cc6af3da",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T21:08:48.678Z",
+      "rejection": {
+        "at": "2026-09-08T21:08:48.678Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-a57752df69a2eb01",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "bb9bd3df0466fb7270f3c3dbbfa22a036ea2835cb6f94a49d34a13c0427108c4",
+        "first_failed_at": "2026-09-08T21:08:48.678Z",
+        "failed_at": "2026-09-08T21:08:48.678Z",
+        "retry_after": "2026-09-08T21:23:48.678Z",
+        "retry_count": 1
+      },
+      "slug": "merkel-wunscht-sich-einen-ki-roboter-fur-den-haushalt-a2eb01",
+      "title": "Merkel wünscht sich einen KI-Roboter - für den Haushalt",
+      "first_seen": "2026-09-08T20:38:00.000Z",
+      "last_updated": "2026-09-08T20:38:00.000Z",
+      "topic": [
+        "Arbeit",
+        "KI",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/panorama/merkel-kuenstliche-intelligenz-ki-haushalt-100.html",
+          "title": "Merkel wünscht sich einen KI-Roboter - für den Haushalt",
+          "summary": "Auch Angela Merkel beschäftigt sich mit Künstlicher Intelligenz: Die Altkanzlerin hofft auf helfende Hände in der Küche - und warnt vor globalen Abhängigkeiten in der KI-Welt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T20:38:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3bde19fb9eef31f10e38c3bd7e9a0eb0bfcd00a14e27a3f33fe790c189ef3b5d",
+          "source_item_id": "439b398ce0736cbc578517505cf4342a8aacd8f55023be331351ab1e3a352aff",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T20:38:00.000Z",
+          "ingested_at": "2026-09-08T21:08:48.678Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a57752df69a2eb01-claim-01",
+          "story_id": "wt-a57752df69a2eb01",
+          "claim": "Merkel wünscht sich einen KI-Roboter - für den Haushalt: Auch Angela Merkel beschäftigt sich mit Künstlicher Intelligenz: Die Altkanzlerin hofft auf helfende Hände in der Küche - und warnt vor globalen Abhängigkeiten in der KI-Welt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T21:08:48.678Z"
+        }
+      ],
+      "content_hash": "8b69c191c0a759a61bd12578b465393c7c32ec48cbbbaf69caaec61cbcb18ee4",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T21:23:48.678Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T21:08:48.678Z",
+      "event_first_seen_at": "2026-09-08T21:08:48.678Z",
+      "event_detected_at": "2026-09-08T21:08:48.678Z",
+      "event_id": "event-fd488941257ff53ccc6b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "KI",
+          "Finanzen"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 30.8113,
+        "detection_delay_minutes": 30.8113,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T21:08:48.678Z",
+        "fingerprint": "9c9512152229b10a0a27ae683a1d75d72297a3d136befd623398d0eda8009035",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T21:08:48.678Z",
+      "rejection": {
+        "at": "2026-09-08T21:08:48.678Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-e820bef62dd96612",
       "slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
@@ -5084,11 +6220,11 @@
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "30800dee61c9eacfa61b93de75480c1637ffbfbc91a3915941ae4483b2d3ee11",
-        "first_failed_at": "2026-09-08T19:36:47.361Z",
-        "failed_at": "2026-09-08T20:36:57.130Z",
-        "retry_after": "2026-09-08T21:36:57.130Z",
-        "retry_count": 3
+        "fingerprint": "99588933ff5f1858d8a4d45c51ce1d746e44320f4ee474d1ff60f7caee11e0af",
+        "first_failed_at": "2026-09-08T21:08:48.678Z",
+        "failed_at": "2026-09-08T21:08:48.678Z",
+        "retry_after": "2026-09-08T21:23:48.678Z",
+        "retry_count": 1
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
       "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
@@ -6090,7 +7226,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T20:36:57.130Z",
+          "ingested_at": "2026-09-08T21:08:48.678Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -6134,6 +7270,39 @@
           },
           "collection_source_id": "swr-aktuell",
           "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T21:02:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+          "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T21:02:39.000Z",
+          "ingested_at": "2026-09-08T21:08:48.678Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
@@ -6155,7 +7324,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:51:52.093Z"
+          "checked_at": "2026-09-08T21:08:48.678Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -6176,20 +7345,43 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:51:52.093Z"
+          "checked_at": "2026-09-08T21:08:48.678Z"
+        },
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-03",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T21:08:48.678Z"
         }
       ],
-      "content_hash": "c8ce372d04f82ecc364b86c165a7874db7627cd12928239fff886f2afaba9f54",
+      "content_hash": "8be4a3a6fdf34f22f2d124abde2ed1bfe6de5b1c86f50c765c03f298c5d23ac4",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 11,
-      "quality_retry_after": "2026-09-08T21:36:57.130Z",
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 12,
+      "quality_retry_after": "2026-09-08T21:23:48.678Z",
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T20:36:57.130Z",
+      "updated_at": "2026-09-08T21:08:48.678Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -6222,20 +7414,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 69.5355,
+        "source_age_minutes": 6.1613,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 539.7364666666666,
+        "queue_age_minutes": 571.5956,
         "target_publication_minutes": 120,
-        "news_freshness_score": 86,
+        "news_freshness_score": 99,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T20:36:57.130Z",
+        "checked_at": "2026-09-08T21:08:48.678Z",
         "fingerprint": "1615cc473c9b190fd9a54820d36d157ec52c9d35697333b8b78db088dba87726",
         "issue_codes": [],
         "warning_codes": []
@@ -11557,7 +12749,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T19:21:39.000Z",
-            "ingested_at": "2026-09-08T20:36:57.130Z",
+            "ingested_at": "2026-09-08T21:08:48.678Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11611,7 +12803,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "2f85c23ddcd850003559d4df0551295fa6a18908b5eb4a9ecd9209ef43c15c4a",
           "issue_codes": [],
           "warning_codes": []
@@ -12663,7 +13855,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:12:00.000Z",
-            "ingested_at": "2026-09-08T20:36:57.130Z",
+            "ingested_at": "2026-09-08T21:08:48.678Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -12684,7 +13876,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -13529,7 +14721,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:50:00.000Z",
-            "ingested_at": "2026-09-08T20:36:57.130Z",
+            "ingested_at": "2026-09-08T21:08:48.678Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -13550,7 +14742,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -14404,7 +15596,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T19:10:44.455Z"
+        "retry_after": "2026-09-08T21:28:29.630Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -19302,10 +20494,10 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+          "MEDIA_IMPACT_REQUIRED"
         ],
-        "quality_retry_count": 2,
-        "quality_retry_after": "2026-09-08T20:51:54.035Z",
+        "quality_retry_count": 3,
+        "quality_retry_after": "2026-09-08T22:08:48.678Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -19313,7 +20505,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:21:54.035Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
           "issue_codes": [],
           "warning_codes": []
@@ -19323,9 +20515,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "934ccfb80e806889dfed348b8d6740d6458666a4f4cd42fe233720e42286bcaf",
         "first_failed_at": "2026-09-08T19:52:12.815Z",
-        "failed_at": "2026-09-08T20:21:54.035Z",
-        "retry_after": "2026-09-08T20:51:54.035Z",
-        "retry_count": 2
+        "failed_at": "2026-09-08T21:08:48.678Z",
+        "retry_after": "2026-09-08T22:08:48.678Z",
+        "retry_count": 3
       }
     },
     {
@@ -20950,148 +22142,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
         ]
-      }
-    },
-    {
-      "story_id": "wt-ee6173fc58ca7eca",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "cccc3daa4cf2ab3e01148b6b5d4f3f4ab09b5632e316d56845d65c8f51929d7a",
-        "first_failed_at": "2026-09-08T16:06:50.416Z",
-        "failed_at": "2026-09-08T18:07:16.921Z",
-        "retry_after": "2026-09-08T21:07:16.921Z",
-        "retry_count": 4
-      },
-      "slug": "klingbeils-rekord-schulden-und-schwache-schuler-ca7eca",
-      "title": "Klingbeils Rekord-Schulden und schwache Schüler",
-      "first_seen": "2026-09-08T15:46:00.000Z",
-      "last_updated": "2026-09-08T15:46:00.000Z",
-      "topic": [
-        "Finanzen",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/briefing/haushalt-pisa-landtagswahl-zdfheute-update-100.html",
-          "title": "Klingbeils Rekord-Schulden und schwache Schüler",
-          "summary": "Klingbeils Haushalt mit Rekord-Schulden, Pisa-Debakel für Deutschlands Schulen und Spekulationen um die Regierungsbildung in Sachsen-Anhalt - der Tag kompakt.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T15:46:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ebeebacd9a315cdc1e46a7e33aab06e2d5b33c737f2d864ab163fa54293064b9",
-          "source_item_id": "6579f1f376b58ef8ead9d11db6e66fc9bdb69b801dc9d3b251201ec47cc7eca7",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T15:46:00.000Z",
-          "ingested_at": "2026-09-08T17:06:38.176Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-ee6173fc58ca7eca-claim-01",
-          "story_id": "wt-ee6173fc58ca7eca",
-          "claim": "Klingbeils Rekord-Schulden und schwache Schüler: Klingbeils Haushalt mit Rekord-Schulden, Pisa-Debakel für Deutschlands Schulen und Spekulationen um die Regierungsbildung in Sachsen-Anhalt - der Tag kompakt.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "zdfheute-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T18:07:16.921Z"
-        }
-      ],
-      "content_hash": "f48603825bbe70e13fb9bb98d782bcd1a7dc1fdc8c40f7625777cfad0b5bc355",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
-      "quality_retry_count": 4,
-      "quality_retry_after": "2026-09-08T21:07:16.921Z",
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-08T18:07:16.921Z",
-      "event_first_seen_at": "2026-09-08T16:06:50.416Z",
-      "event_detected_at": "2026-09-08T16:06:50.416Z",
-      "event_id": "event-5f3c52a0a4b117744739",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Finanzen",
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [
-          "new_evidence"
-        ],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 141.28201666666666,
-        "detection_delay_minutes": 20.84026666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 120.44175,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 71,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T18:07:16.921Z",
-        "fingerprint": "13107cad130cee66a7554cbf6765ac0d0630a5fb4b2c1bc76431d28e9d666293",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -25227,7 +26277,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -26588,7 +27638,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -26767,7 +27817,7 @@
       "verification_started_at": "2026-09-08T13:37:23.093Z",
       "publish_ready_at": "2026-09-08T13:37:46.383Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -27258,66 +28308,6 @@
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T20:10:40.106Z"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T14:06:56.372Z",
-        "content_hash": "959778f31977ed3fd59589bf0575ecc22d971cb8b0fe43c43a9931d17516d91e",
-        "sources": [
-          {
-            "source_id": "klimareporter-news",
-            "publisher": "Klimareporter°",
-            "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
-            "title": "Milliarden-Lücke im Klimafonds",
-            "summary": "Verbände und Fachleute dringen auf Korrekturen beim Klima- und Transformationsfonds und beklagen zudem eine soziale Schieflage. Investitionen, die Energiekosten dauerhaft senken können, dürften nicht beschnitten werden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T13:18:16.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Klima",
-            "content_hash": "8ae8b66b1382a2cb40465498a0fcbd136a6da11d2d0db5aadacb1957b51f529f",
-            "source_item_id": "e444b33ca85e3cf68c2548cc15b270815eb79e4b617dadca60c6e8d3363827e2",
-            "publisher_id": "klimareporter",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "blindspot",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T13:18:16.000Z",
-            "ingested_at": "2026-09-08T18:37:17.573Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:klimareporter",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_DIRECTION_BASIS_INVALID:democracy",
-          "AI_SUMMARY_SENTENCE_COUNT",
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
-        "quality_retry_count": 3,
-        "quality_retry_after": "2026-09-08T21:06:47.746Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T20:06:47.746Z",
-          "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "9f32d20dace33d0af25ddd903153d35dac464723c7151b428712d070b5a90e20",
@@ -27325,7 +28315,8 @@
         "failed_at": "2026-09-08T20:06:47.746Z",
         "retry_after": "2026-09-08T21:06:47.746Z",
         "retry_count": 3
-      }
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-7aa33715fe94acdb",
@@ -38249,7 +39240,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T19:10:38.142Z"
+        "retry_after": "2026-09-08T21:28:24.866Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -38939,7 +39930,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T19:10:32.122Z"
+        "retry_after": "2026-09-08T21:28:19.036Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -42579,7 +43570,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T08:45:00.000Z",
-            "ingested_at": "2026-09-08T19:36:47.361Z",
+            "ingested_at": "2026-09-08T21:08:48.678Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42591,10 +43582,11 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
         ],
-        "quality_retry_count": 3,
-        "quality_retry_after": "2026-09-08T21:06:47.746Z",
+        "quality_retry_count": 4,
+        "quality_retry_after": "2026-09-09T00:08:48.678Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -42602,7 +43594,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:06:47.746Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "cc072f3eacc31d1e9994dcaa53b6184b0b77527fa2bdf770f01aad2115f6149d",
           "issue_codes": [],
           "warning_codes": []
@@ -42612,9 +43604,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "80262019313968ec45366781512b0952d6b93b8fcb7f481bbca4b414c366301b",
         "first_failed_at": "2026-09-08T19:07:17.124Z",
-        "failed_at": "2026-09-08T20:06:47.746Z",
-        "retry_after": "2026-09-08T21:06:47.746Z",
-        "retry_count": 3
+        "failed_at": "2026-09-08T21:08:48.678Z",
+        "retry_after": "2026-09-09T00:08:48.678Z",
+        "retry_count": 4
       }
     },
     {
@@ -48547,7 +49539,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T20:36:57.130Z",
+          "ingested_at": "2026-09-08T21:08:48.678Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -48576,7 +49568,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:51:52.093Z"
+          "checked_at": "2026-09-08T21:08:48.678Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -48591,7 +49583,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T20:51:52.093Z",
+      "updated_at": "2026-09-08T21:08:48.678Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -48632,7 +49624,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 644.4327666666667,
+        "queue_age_minutes": 661.37585,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -48641,7 +49633,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T20:51:52.093Z",
+        "checked_at": "2026-09-08T21:08:48.678Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -48682,7 +49674,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T20:36:57.130Z",
+          "ingested_at": "2026-09-08T21:08:48.678Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -48711,7 +49703,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:51:52.093Z"
+          "checked_at": "2026-09-08T21:08:48.678Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -48726,7 +49718,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T20:51:52.093Z",
+      "updated_at": "2026-09-08T21:08:48.678Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -48766,7 +49758,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 644.4327666666667,
+        "queue_age_minutes": 661.37585,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -48775,7 +49767,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T20:51:52.093Z",
+        "checked_at": "2026-09-08T21:08:48.678Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -53025,7 +54017,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -60555,7 +61547,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Trump und Putin telefonieren",
             "summary": "Nach der Abreise der US-Unterhändler Witkoff und Kushner hat Russland die Luftangriffe auf die ukrainische Hauptstadt Kiew wieder aufgenommen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T19:27:25.000Z",
+            "published_at": "2026-09-08T21:02:39.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -60571,8 +61563,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T19:27:25.000Z",
-            "ingested_at": "2026-09-08T20:36:57.130Z",
+            "source_published_at": "2026-09-08T21:02:39.000Z",
+            "ingested_at": "2026-09-08T21:08:48.678Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -60593,7 +61585,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "23f60f41c7e50322a66d673ffbc4f4fa77d3d18dc42146d6ae3e57aa6991c72f",
           "issue_codes": [],
           "warning_codes": []
@@ -63325,7 +64317,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -66298,7 +67290,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -68460,9 +69452,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T20:51:52.093Z",
+        "checked_at": "2026-09-08T21:08:48.678Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T02:51:52.093Z",
+        "expires_at": "2026-09-09T03:08:48.678Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -71928,7 +72920,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -76065,7 +77057,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -80080,7 +81072,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -84073,9 +85065,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-08T20:51:52.093Z",
+        "checked_at": "2026-09-08T21:08:48.678Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T02:51:52.093Z",
+        "expires_at": "2026-09-09T03:08:48.678Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -88751,7 +89743,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -93288,7 +94280,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -107902,7 +108894,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -110628,11 +111620,10 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+          "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T20:51:57.130Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-08T21:38:48.678Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -110640,7 +111631,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -110650,9 +111641,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "f3b5d5d8374e1eaef3eef656e38632fe903569706615fa9b0730ddcf27e63bb7",
         "first_failed_at": "2026-09-08T20:36:57.130Z",
-        "failed_at": "2026-09-08T20:36:57.130Z",
-        "retry_after": "2026-09-08T20:51:57.130Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T21:08:48.678Z",
+        "retry_after": "2026-09-08T21:38:48.678Z",
+        "retry_count": 2
       }
     },
     {
@@ -124798,7 +125789,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T20:36:57.130Z",
+          "ingested_at": "2026-09-08T21:08:48.678Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -124859,7 +125850,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:51:52.093Z"
+          "checked_at": "2026-09-08T21:08:48.678Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -124879,7 +125870,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:51:52.093Z"
+          "checked_at": "2026-09-08T21:08:48.678Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -124895,7 +125886,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T20:51:52.093Z",
+      "updated_at": "2026-09-08T21:08:48.678Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -124935,7 +125926,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2144.978833333333,
+        "queue_age_minutes": 2161.9219166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -124944,7 +125935,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T20:51:52.093Z",
+        "checked_at": "2026-09-08T21:08:48.678Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -145152,7 +146143,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -145853,7 +146844,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -146607,7 +147598,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T20:36:57.130Z",
+            "ingested_at": "2026-09-08T21:08:48.678Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -146628,7 +147619,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -180814,7 +181805,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -225208,7 +226199,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:51:52.093Z",
+          "checked_at": "2026-09-08T21:08:48.678Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
