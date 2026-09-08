@@ -1,8 +1,1735 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T14:06:56.372Z",
-  "updated_at": "2026-09-08T14:06:56.372Z",
+  "public_updated_at": "2026-09-08T14:28:53.099Z",
+  "updated_at": "2026-09-08T14:28:53.099Z",
   "stories": [
+    {
+      "story_id": "wt-42e4a2ecd40874e2",
+      "slug": "fairsquare-erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-0874e2",
+      "title": "FairSquare - Erneute Beschwerde bei Ethikkomission gegen FIFA-Chef Infantino",
+      "first_seen": "2026-09-08T14:22:00.000Z",
+      "last_updated": "2026-09-08T14:30:51.368Z",
+      "published_at": "2026-09-08T14:30:51.368Z",
+      "updated_at": "2026-09-08T14:30:51.368Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+          "title": "FairSquare - Erneute Beschwerde bei Ethikkomission gegen FIFA-Chef Infantino",
+          "summary": "Im Machtkampf beim Fußball-Weltverband FIFA erhöht auch die Menschenrechtsorganisation FairSquare den Druck auf Präsident Gianni Infantino. Die Organisation hat eine erneute Beschwerde gegen den Schweizer bei der FIFA-Ethikkommission eingereicht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:22:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "45b52bb546364995adef993f68d3dc587a44257a5b5322b8b21d2b9c581e3f2d",
+          "source_item_id": "2de8cc5c5317264dbe214b14f85ec6c217deee02da1662dacff933e79a911944",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:22:00.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-42e4a2ecd40874e2-v1-claim-1",
+          "story_id": "wt-42e4a2ecd40874e2",
+          "claim": "FairSquare hat erneut eine Beschwerde gegen FIFA-Präsident Gianni Infantino bei der FIFA-Ethikkommission eingereicht.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "excerpt_hash": "98c0c12227c991db9b6f",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "excerpt_hash": "a8e18f0953af416e3792",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T14:30:51.368Z"
+        },
+        {
+          "claim_id": "wt-42e4a2ecd40874e2-v1-claim-2",
+          "story_id": "wt-42e4a2ecd40874e2",
+          "claim": "Die Beschwerde steht nach Angaben des Berichts im Zusammenhang mit Vorwürfen eines mehrfachen Verstoßes gegen den FIFA-Ethikkodex und der Nähe Infantinos zu Donald Trump.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "excerpt_hash": "897bbc64727fb3090af9",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "excerpt_hash": "0d92a08883f8cb0aa013",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T14:30:51.368Z"
+        },
+        {
+          "claim_id": "wt-42e4a2ecd40874e2-v1-claim-3",
+          "story_id": "wt-42e4a2ecd40874e2",
+          "claim": "FairSquare hatte bereits im Dezember 2025 eine Beschwerde eingereicht; auch beim IOC blieb das Vorgehen ohne Erfolg.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "excerpt_hash": "0d92a08883f8cb0aa013",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "excerpt_hash": "10dada06d35cdd01c6e5",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T14:30:51.368Z"
+        },
+        {
+          "claim_id": "wt-42e4a2ecd40874e2-v1-claim-4",
+          "story_id": "wt-42e4a2ecd40874e2",
+          "claim": "Die UEFA fordert laut Bericht Infantinos Rückzug und bereitet eine Strafanzeige in der Schweiz vor.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "excerpt_hash": "a8bcb1e4728a69301336",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T14:30:51.368Z"
+        },
+        {
+          "claim_id": "wt-42e4a2ecd40874e2-v1-claim-5",
+          "story_id": "wt-42e4a2ecd40874e2",
+          "claim": "Der Hintergrund ist dem Bericht zufolge ein inzwischen verworfener Plan, Anteile an FIFA-Turnieren an private Investoren auch aus dem Umfeld Trumps zu verkaufen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "excerpt_hash": "e6529b72a33fb411d194",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T14:30:51.368Z"
+        }
+      ],
+      "event_id": "event-29be96fd46d1aad47eb1",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "verification_started_at": "2026-09-08T14:30:40.120Z",
+      "publish_ready_at": "2026-09-08T14:30:51.368Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T18:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "484ee63d9db550c1e2294eb912677a21bde29d3e9b9613f1457cb2ac44270032",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die FIFA-Ethikkommission die erneute Beschwerde annimmt oder weitere Schritte einleitet.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Verfahrensschritt der Ethikkommission",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f0ac8fed6f6c6e19",
+          "announced_at": "2026-09-08T14:22:00.000Z",
+          "follow_up_date": "2026-09-15T14:30:51.368Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "b8faccce73a48645c899a33dc1d9e71615fb244a1568f610f81f82ea28acde04",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T14:30:51.368Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+            "content_hash": "45b52bb546364995adef993f68d3dc587a44257a5b5322b8b21d2b9c581e3f2d",
+            "excerpt_hash": "ff393c37fb0f07b8c5a41ba9c301f303d3be3fd093adcb07c049072312a2dbb4",
+            "number_locale": "de",
+            "numbers": [
+              "2025",
+              "18",
+              "8.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "FairSquare hat nach einem Bericht von Deutschlandfunk erneut Beschwerde gegen FIFA-Präsident Gianni Infantino bei der FIFA-Ethikkommission eingereicht. Die Organisation wirft ihm demnach mehrfachen Verstoß gegen den FIFA-Ethikkodex vor und verweist auf seine Nähe zu US-Präsident Donald Trump sowie auf einen möglichen Missbrauch präsidialer Befugnisse. Bereits im Dezember 2025 hatte FairSquare eine Beschwerde eingereicht; auch ein Vorgehen beim IOC blieb laut Bericht ohne Erfolg.\n\nZudem wird berichtet, dass die UEFA seinen Rückzug fordert und eine Strafanzeige in der Schweiz vorbereitet. Der Hintergrund sei ein inzwischen verworfener Plan gewesen, Turnieranteile an private Investoren zu verkaufen.",
+      "analysis": {
+        "story_id": "wt-42e4a2ecd40874e2",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "FairSquare hat erneut eine Beschwerde gegen FIFA-Chef Gianni Infantino eingereicht. Der Bericht verbindet das mit Vorwürfen zum FIFA-Ethikkodex und mit weiterem Druck von UEFA-Seite.",
+        "detail_summary": "Im Kern geht es um eine erneute Beschwerde von FairSquare gegen Gianni Infantino bei der FIFA-Ethikkommission. Der Bericht nennt als Hintergrund Vorwürfe eines Verstoßes gegen den FIFA-Ethikkodex sowie die Nähe zu Donald Trump und einen früheren, inzwischen verworfenen Verkaufsplan für Turnieranteile. Für die Öffentlichkeit ist das relevant, weil es um die Integrität der Verbandsspitze und mögliche Folgen für FIFA-Verfahren und innerverbandliche Machtverhältnisse geht. Ein direkter Wirkpfad liegt vor allem in möglichen Disziplinar-, Reputations- und Governance-Folgen, nicht in einer bereits eingetretenen Zustandsänderung. Offen bleibt, wie die Ethikkommission reagiert und ob die Vorwürfe belastbar sind; belegt ist hier zunächst nur der berichtete Schritt der Beschwerde.",
+        "why_relevant": "Die Meldung betrifft die Führung eines globalen Sportverbands, mögliche Ethikverfahren und zusätzlichen Druck durch weitere Akteure. Das kann interne Entscheidungen, Reputation und Governance des Verbandes beeinflussen.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Beschwerde kann Disziplinar- und Reputationsfolgen für den Betroffenen und den Verband auslösen; eingetreten ist das noch nicht."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein belastbarer Wirkpfad zu Umwelt- oder Ressourcenfolgen beschrieben."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Es geht um Ethik, Transparenz und Machtkontrolle in einer großen Verbandsstruktur; das berührt Korrekturfähigkeit und institutionelle Kontrolle."
+        },
+        "importance": "mittel",
+        "impact_potential": "Mögliche Verfahrensfolgen in der FIFA, zusätzlicher Druck auf die Führung und Reputationswirkungen im internationalen Fußball.",
+        "impact_risks": [
+          "Verfestigung von Machtkonflikten im Verband",
+          "Reputationsverlust für FIFA und Präsident",
+          "Polarisierung im Umfeld der Verbandsführung"
+        ],
+        "mechanisms": [
+          "Ethikbeschwerde kann ein Prüfverfahren anstoßen oder Druck auf die Verbandsspitze erhöhen",
+          "öffentlicher Vorwurf kann Entscheidungs- und Legitimationskosten steigern"
+        ],
+        "first_order": [
+          "Einleitung oder Verstärkung eines Ethikverfahrens",
+          "öffentlicher und institutioneller Druck auf Infantino"
+        ],
+        "second_order": [
+          "mögliche Auswirkungen auf seine Position im Verband",
+          "Folgen für innerverbandliche Allianzen und Kontrollmechanismen"
+        ],
+        "third_order": [
+          "mögliche Veränderungen in Governance- und Transparenzstandards innerhalb des Verbandes"
+        ],
+        "systemic_relevance": "Die Meldung berührt Governance eines weltweit wirksamen Sportverbands und damit eine Struktur mit erheblicher öffentlicher und institutioneller Reichweite.",
+        "transformation_potential": "Allenfalls indirekt: Sollte ein Verfahren folgen, könnte es Kontroll- und Transparenzanforderungen im Verband stärken. Das bleibt jedoch offen.",
+        "resilience": "Die Korrekturfähigkeit hängt hier an den Ethik- und Sanktionsmechanismen der FIFA; deren Wirksamkeit ist in der Meldung nicht belegt.",
+        "side_effects": [
+          "Weitere Zuspitzung des Machtkampfs im Verband",
+          "Verstärkte öffentliche Konfliktkommunikation"
+        ],
+        "uncertainties": [
+          "Unklar ist, wie die Ethikkommission reagiert",
+          "Unklar ist die Belastbarkeit der Vorwürfe über den Bericht hinaus",
+          "Unklar ist, ob die UEFA-Ankündigung umgesetzt wird"
+        ],
+        "evidence_level": "low",
+        "attribution": "Deutschlandfunk berichtet über eine erneute Beschwerde von FairSquare; die zugeschriebenen Vorwürfe stammen aus dem berichteten Schreiben und aus weiteren Medienbezügen im Beitrag.",
+        "watch_next": [
+          "Reaktion der FIFA-Ethikkommission",
+          "Bestätigung oder Präzisierung der UEFA-Schritte"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die erneute Beschwerde ist ein neuer Vorgang mit möglicher Relevanz für Governance und Verbandskontrolle; die Beleglage bleibt aber journalistisch vermittelt."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T14:28:53.099Z",
+        "media_trigger_fingerprint": "925d45a881ad6aebf70c07daf95c6b55880ddcf6a6d6e104e13bf88044cd4cf6",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "925d45a881ad6aebf70c07daf95c6b55880ddcf6a6d6e104e13bf88044cd4cf6",
+          "content_fingerprint": "efd302dd9cab11d37c495a514bbfd006be9a5e50fc0fdf67d579e9786ef24dd6",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T14:30:51.368Z",
+          "content_hash": "b8faccce73a48645c899a33dc1d9e71615fb244a1568f610f81f82ea28acde04",
+          "source_summary": "FairSquare hat nach einem Bericht von Deutschlandfunk erneut Beschwerde gegen FIFA-Präsident Gianni Infantino bei der FIFA-Ethikkommission eingereicht. Die Organisation wirft ihm demnach mehrfachen Verstoß gegen den FIFA-Ethikkodex vor und verweist auf seine Nähe zu US-Präsident Donald Trump sowie auf einen möglichen Missbrauch präsidialer Befugnisse. Bereits im Dezember 2025 hatte FairSquare eine Beschwerde eingereicht; auch ein Vorgehen beim IOC blieb laut Bericht ohne Erfolg.\n\nZudem wird berichtet, dass die UEFA seinen Rückzug fordert und eine Strafanzeige in der Schweiz vorbereitet. Der Hintergrund sei ein inzwischen verworfener Plan gewesen, Turnieranteile an private Investoren zu verkaufen.",
+          "analysis": {
+            "story_id": "wt-42e4a2ecd40874e2",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "FairSquare hat erneut eine Beschwerde gegen FIFA-Chef Gianni Infantino eingereicht. Der Bericht verbindet das mit Vorwürfen zum FIFA-Ethikkodex und mit weiterem Druck von UEFA-Seite.",
+            "detail_summary": "Im Kern geht es um eine erneute Beschwerde von FairSquare gegen Gianni Infantino bei der FIFA-Ethikkommission. Der Bericht nennt als Hintergrund Vorwürfe eines Verstoßes gegen den FIFA-Ethikkodex sowie die Nähe zu Donald Trump und einen früheren, inzwischen verworfenen Verkaufsplan für Turnieranteile. Für die Öffentlichkeit ist das relevant, weil es um die Integrität der Verbandsspitze und mögliche Folgen für FIFA-Verfahren und innerverbandliche Machtverhältnisse geht. Ein direkter Wirkpfad liegt vor allem in möglichen Disziplinar-, Reputations- und Governance-Folgen, nicht in einer bereits eingetretenen Zustandsänderung. Offen bleibt, wie die Ethikkommission reagiert und ob die Vorwürfe belastbar sind; belegt ist hier zunächst nur der berichtete Schritt der Beschwerde.",
+            "why_relevant": "Die Meldung betrifft die Führung eines globalen Sportverbands, mögliche Ethikverfahren und zusätzlichen Druck durch weitere Akteure. Das kann interne Entscheidungen, Reputation und Governance des Verbandes beeinflussen.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Die Beschwerde kann Disziplinar- und Reputationsfolgen für den Betroffenen und den Verband auslösen; eingetreten ist das noch nicht."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "In der Meldung ist kein belastbarer Wirkpfad zu Umwelt- oder Ressourcenfolgen beschrieben."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Es geht um Ethik, Transparenz und Machtkontrolle in einer großen Verbandsstruktur; das berührt Korrekturfähigkeit und institutionelle Kontrolle."
+            },
+            "importance": "mittel",
+            "impact_potential": "Mögliche Verfahrensfolgen in der FIFA, zusätzlicher Druck auf die Führung und Reputationswirkungen im internationalen Fußball.",
+            "impact_risks": [
+              "Verfestigung von Machtkonflikten im Verband",
+              "Reputationsverlust für FIFA und Präsident",
+              "Polarisierung im Umfeld der Verbandsführung"
+            ],
+            "mechanisms": [
+              "Ethikbeschwerde kann ein Prüfverfahren anstoßen oder Druck auf die Verbandsspitze erhöhen",
+              "öffentlicher Vorwurf kann Entscheidungs- und Legitimationskosten steigern"
+            ],
+            "first_order": [
+              "Einleitung oder Verstärkung eines Ethikverfahrens",
+              "öffentlicher und institutioneller Druck auf Infantino"
+            ],
+            "second_order": [
+              "mögliche Auswirkungen auf seine Position im Verband",
+              "Folgen für innerverbandliche Allianzen und Kontrollmechanismen"
+            ],
+            "third_order": [
+              "mögliche Veränderungen in Governance- und Transparenzstandards innerhalb des Verbandes"
+            ],
+            "systemic_relevance": "Die Meldung berührt Governance eines weltweit wirksamen Sportverbands und damit eine Struktur mit erheblicher öffentlicher und institutioneller Reichweite.",
+            "transformation_potential": "Allenfalls indirekt: Sollte ein Verfahren folgen, könnte es Kontroll- und Transparenzanforderungen im Verband stärken. Das bleibt jedoch offen.",
+            "resilience": "Die Korrekturfähigkeit hängt hier an den Ethik- und Sanktionsmechanismen der FIFA; deren Wirksamkeit ist in der Meldung nicht belegt.",
+            "side_effects": [
+              "Weitere Zuspitzung des Machtkampfs im Verband",
+              "Verstärkte öffentliche Konfliktkommunikation"
+            ],
+            "uncertainties": [
+              "Unklar ist, wie die Ethikkommission reagiert",
+              "Unklar ist die Belastbarkeit der Vorwürfe über den Bericht hinaus",
+              "Unklar ist, ob die UEFA-Ankündigung umgesetzt wird"
+            ],
+            "evidence_level": "low",
+            "attribution": "Deutschlandfunk berichtet über eine erneute Beschwerde von FairSquare; die zugeschriebenen Vorwürfe stammen aus dem berichteten Schreiben und aus weiteren Medienbezügen im Beitrag.",
+            "watch_next": [
+              "Reaktion der FIFA-Ethikkommission",
+              "Bestätigung oder Präzisierung der UEFA-Schritte"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die erneute Beschwerde ist ein neuer Vorgang mit möglicher Relevanz für Governance und Verbandskontrolle; die Beleglage bleibt aber journalistisch vermittelt."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T14:28:53.099Z",
+            "media_trigger_fingerprint": "925d45a881ad6aebf70c07daf95c6b55880ddcf6a6d6e104e13bf88044cd4cf6",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "925d45a881ad6aebf70c07daf95c6b55880ddcf6a6d6e104e13bf88044cd4cf6",
+              "content_fingerprint": "efd302dd9cab11d37c495a514bbfd006be9a5e50fc0fdf67d579e9786ef24dd6",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-42e4a2ecd40874e2-v1-claim-1",
+              "story_id": "wt-42e4a2ecd40874e2",
+              "claim": "FairSquare hat erneut eine Beschwerde gegen FIFA-Präsident Gianni Infantino bei der FIFA-Ethikkommission eingereicht.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                  "excerpt_hash": "98c0c12227c991db9b6f",
+                  "checked_at": "2026-09-08T14:30:51.368Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                  "excerpt_hash": "a8e18f0953af416e3792",
+                  "checked_at": "2026-09-08T14:30:51.368Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            },
+            {
+              "claim_id": "wt-42e4a2ecd40874e2-v1-claim-2",
+              "story_id": "wt-42e4a2ecd40874e2",
+              "claim": "Die Beschwerde steht nach Angaben des Berichts im Zusammenhang mit Vorwürfen eines mehrfachen Verstoßes gegen den FIFA-Ethikkodex und der Nähe Infantinos zu Donald Trump.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                  "excerpt_hash": "897bbc64727fb3090af9",
+                  "checked_at": "2026-09-08T14:30:51.368Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                  "excerpt_hash": "0d92a08883f8cb0aa013",
+                  "checked_at": "2026-09-08T14:30:51.368Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            },
+            {
+              "claim_id": "wt-42e4a2ecd40874e2-v1-claim-3",
+              "story_id": "wt-42e4a2ecd40874e2",
+              "claim": "FairSquare hatte bereits im Dezember 2025 eine Beschwerde eingereicht; auch beim IOC blieb das Vorgehen ohne Erfolg.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                  "excerpt_hash": "0d92a08883f8cb0aa013",
+                  "checked_at": "2026-09-08T14:30:51.368Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                  "excerpt_hash": "10dada06d35cdd01c6e5",
+                  "checked_at": "2026-09-08T14:30:51.368Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            },
+            {
+              "claim_id": "wt-42e4a2ecd40874e2-v1-claim-4",
+              "story_id": "wt-42e4a2ecd40874e2",
+              "claim": "Die UEFA fordert laut Bericht Infantinos Rückzug und bereitet eine Strafanzeige in der Schweiz vor.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                  "excerpt_hash": "a8bcb1e4728a69301336",
+                  "checked_at": "2026-09-08T14:30:51.368Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            },
+            {
+              "claim_id": "wt-42e4a2ecd40874e2-v1-claim-5",
+              "story_id": "wt-42e4a2ecd40874e2",
+              "claim": "Der Hintergrund ist dem Bericht zufolge ein inzwischen verworfener Plan, Anteile an FIFA-Turnieren an private Investoren auch aus dem Umfeld Trumps zu verkaufen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                  "excerpt_hash": "e6529b72a33fb411d194",
+                  "checked_at": "2026-09-08T14:30:51.368Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T14:30:51.368Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+              "content_hash": "45b52bb546364995adef993f68d3dc587a44257a5b5322b8b21d2b9c581e3f2d"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T14:30:51.368Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
+                "content_hash": "45b52bb546364995adef993f68d3dc587a44257a5b5322b8b21d2b9c581e3f2d",
+                "excerpt_hash": "ff393c37fb0f07b8c5a41ba9c301f303d3be3fd093adcb07c049072312a2dbb4",
+                "number_locale": "de",
+                "numbers": [
+                  "2025",
+                  "18",
+                  "8.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T14:30:51.368Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T14:47:30.225Z"
+      }
+    },
+    {
+      "story_id": "wt-8067a51cde64ef05",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "73e2ca394274bb698d0e44dbf997ba1e391cdc83564ca129b87763b0a386f5b7",
+        "first_failed_at": "2026-09-08T14:28:53.099Z",
+        "failed_at": "2026-09-08T14:28:53.099Z",
+        "retry_after": "2026-09-08T14:43:53.099Z",
+        "retry_count": 1
+      },
+      "slug": "nur-fur-studierende-und-azubis-erste-mieter-im-campus-an-der-roedernallee-begrusst-64ef05",
+      "title": "Nur für Studierende und Azubis: Erste Mieter im Campus an der Roedernallee begrüßt",
+      "first_seen": "2026-09-08T14:25:37.000Z",
+      "last_updated": "2026-09-08T14:25:37.000Z",
+      "topic": [
+        "Soziales",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/bezirke/reinickendorf/nur-fur-studierende-und-azubis-erste-mieter-im-campus-an-der-roedernallee-begrusst-16031124.html",
+          "title": "Nur für Studierende und Azubis: Erste Mieter im Campus an der Roedernallee begrüßt",
+          "summary": "242 bezahlbare Wohnungen für junge Menschen: Im neuen GESOcampus wird vor allem auf Gemeinschaftlichkeit gesetzt. Jetzt sind die ersten Mieter eingezogen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:25:37.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a7fd7a9168fa6cd928e01ab20b74d16ce59f9e954fa3551e58ad35657e96f8a9",
+          "source_item_id": "c90331c2ea88a97edfc3b9b6ccf4ba3999d9814ddcc18443edd909698c5c2b4c",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:25:37.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-8067a51cde64ef05-claim-01",
+          "story_id": "wt-8067a51cde64ef05",
+          "claim": "Nur für Studierende und Azubis: Erste Mieter im Campus an der Roedernallee begrüßt: 242 bezahlbare Wohnungen für junge Menschen: Im neuen GESOcampus wird vor allem auf Gemeinschaftlichkeit gesetzt. Jetzt sind die ersten Mieter eingezogen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:28:53.099Z"
+        }
+      ],
+      "content_hash": "13b02760ad7825f0bd96ebd07ed743ab87843e6ae5e77c74abb6043ca18a8026",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T14:43:53.099Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T14:28:53.099Z",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "event_id": "event-d113236d8651341d63a3",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Regeln und Verbindlichkeiten"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 3.2683166666666668,
+        "detection_delay_minutes": 3.2683166666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "265dc52df8188d79143d0cd30261314db4c379b88411c6fe16d3695927d35df4",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:28:53.099Z",
+      "rejection": {
+        "at": "2026-09-08T14:28:53.099Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-6222b0ef3b2ae801",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "883748211369b62d10c5569fdfd96aaa1524329f52b53daaae58b37b56915a90",
+        "first_failed_at": "2026-09-08T14:28:53.099Z",
+        "failed_at": "2026-09-08T14:28:53.099Z",
+        "retry_after": "2026-09-08T14:43:53.099Z",
+        "retry_count": 1
+      },
+      "slug": "newsblog-zur-landtagswahl-in-sachsen-anhalt-wachsender-zuspruch-fur-bsw-vorschlag-zu-una-2ae801",
+      "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Wachsender Zuspruch für BSW-Vorschlag zu unabhängigem Ministerpräsidenten",
+      "first_seen": "2026-09-08T14:22:00.000Z",
+      "last_updated": "2026-09-08T14:22:00.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/wachsender-zuspruch-fuer-bsw-vorschlag-zu-unabhaengigem-ministerpraesidenten-100.html",
+          "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Wachsender Zuspruch für BSW-Vorschlag zu unabhängigem Ministerpräsidenten",
+          "summary": "+++ Nach der SPD haben sich auch die Grünen in Sachsen-Anhalt offen gezeigt für den Vorschlag des BSW zu einem überparteilichen Ministerpräsidenten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:22:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "1cb37adcf085c338d85b6146fd8bdcb9a4bdf90c6fad60ab2a5cdc94ccaebcac",
+          "source_item_id": "38c4fe146c77be14698b390e8eb4b6776c873fc22c0c9e028a798b4058571520",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:22:00.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6222b0ef3b2ae801-claim-01",
+          "story_id": "wt-6222b0ef3b2ae801",
+          "claim": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Wachsender Zuspruch für BSW-Vorschlag zu unabhängigem Ministerpräsidenten: +++ Nach der SPD haben sich auch die Grünen in Sachsen-Anhalt offen gezeigt für den Vorschlag des BSW zu einem überparteilichen Ministerpräsidenten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:28:53.099Z"
+        }
+      ],
+      "content_hash": "e5fca94823cc375c4cc02316a316b768fc3ca06aea9fbc8b250325e774439d60",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
+        "MEDIA_IMPACT_REQUIRED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T14:43:53.099Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T14:28:53.099Z",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "event_id": "event-554c6def31137222cd39",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/wachsender-zuspruch-fuer-bsw-vorschlag-zu-unabhaengigem-ministerpraesidenten-100.html",
+              "signals": [
+                "candidacy_open"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.8849833333333335,
+        "detection_delay_minutes": 6.8849833333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-4fca92727a3de629",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "f156cd5f201b0dc7c32e019429106875d911fa92198ea831e31f5b3323ff06da",
+        "first_failed_at": "2026-09-08T14:28:53.099Z",
+        "failed_at": "2026-09-08T14:28:53.099Z",
+        "retry_after": "2026-09-08T14:43:53.099Z",
+        "retry_count": 1
+      },
+      "slug": "bildungsstudie-weckruf-und-quittung-neuer-pisa-schock-3de629",
+      "title": "Bildungsstudie: „Weckruf“ und „Quittung“ - neuer Pisa-Schock",
+      "first_seen": "2026-09-08T14:20:08.000Z",
+      "last_updated": "2026-09-08T14:20:08.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/rheinland-pfalz-saarland/bildungsstudie---weckruf--und--quittung----neuer-pisa-schock-38220202.html",
+          "title": "Bildungsstudie: „Weckruf“ und „Quittung“ - neuer Pisa-Schock",
+          "summary": "Das geplante Verbot der privaten Handynutzung während der Schulzeit ist für die Bildungsministerin eine wichtige Maßnahme für bessere Ergebnisse. Doch das dürfte nicht genügen. Was andere sagen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:20:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ee6a2fe5fea293c98d1bda58354db717d32ecc9cce7ace9550a1890caea814ac",
+          "source_item_id": "1e4d0e770b301a860864853663a98b81079cf6d438bb85260702553ca686245d",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:20:08.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4fca92727a3de629-claim-01",
+          "story_id": "wt-4fca92727a3de629",
+          "claim": "Bildungsstudie: „Weckruf“ und „Quittung“ - neuer Pisa-Schock: Das geplante Verbot der privaten Handynutzung während der Schulzeit ist für die Bildungsministerin eine wichtige Maßnahme für bessere Ergebnisse. Doch das dürfte nicht genügen. Was andere sagen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:28:53.099Z"
+        }
+      ],
+      "content_hash": "34becfae657b072abdecedccd72232132cb9abb9ae452b05c1ea6e57527d57d0",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T14:43:53.099Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T14:28:53.099Z",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "event_id": "event-492f8966b5a9fdb72a21",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 8.75165,
+        "detection_delay_minutes": 8.75165,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "bf0e501c60c9423e79a20fc61c55f03b1e27b14d7a98c22aa0a9d80dc2e44602",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:28:53.099Z",
+      "rejection": {
+        "at": "2026-09-08T14:28:53.099Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-4931e8bd825ea4c2",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ba43caa52184dd257ecb4ab4c46745de22d6c9372e6981205c3553d7e3ac939e",
+        "first_failed_at": "2026-09-08T14:28:53.099Z",
+        "failed_at": "2026-09-08T14:28:53.099Z",
+        "retry_after": "2026-09-08T14:43:53.099Z",
+        "retry_count": 1
+      },
+      "slug": "hochste-gerichtsentscheidung-afd-antrag-scheitert-vor-verfassungsgerichtshof-5ea4c2",
+      "title": "Höchste Gerichtsentscheidung: AfD-Antrag scheitert vor Verfassungsgerichtshof",
+      "first_seen": "2026-09-08T14:16:06.000Z",
+      "last_updated": "2026-09-08T14:16:06.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/rheinland-pfalz-saarland/hoechste-gerichtsentscheidung--afd-antrag-scheitert-vor-verfassungsgerichtshof-38220258.html",
+          "title": "Höchste Gerichtsentscheidung: AfD-Antrag scheitert vor Verfassungsgerichtshof",
+          "summary": "Die Novelle des Fraktions- und Abgeordnetengesetzes in Rheinland-Pfalz ist rechtens. Der Verfassungsgerichtshof lehnt einen AfD-Antrag dagegen als unbegründet ab.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:16:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c8d025fdcb3e5892fb3c473be6cabc6ec9465515d32ef6a3b1b0f636fbc9fd57",
+          "source_item_id": "eddb10bb60cc320d81578dfcb86df6c4aee2d85410f5daa6fa6f74ffa1643075",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:16:06.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4931e8bd825ea4c2-claim-01",
+          "story_id": "wt-4931e8bd825ea4c2",
+          "claim": "Höchste Gerichtsentscheidung: AfD-Antrag scheitert vor Verfassungsgerichtshof: Die Novelle des Fraktions- und Abgeordnetengesetzes in Rheinland-Pfalz ist rechtens. Der Verfassungsgerichtshof lehnt einen AfD-Antrag dagegen als unbegründet ab.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:28:53.099Z"
+        }
+      ],
+      "content_hash": "0e98a5539a15c97305c19a5bcc894e516ab67e741b1c763e856eccd545f9126b",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T14:43:53.099Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T14:28:53.099Z",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "event_id": "event-7bb346c2ff16f2db8945",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 12.784983333333333,
+        "detection_delay_minutes": 12.784983333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "78e85dd85ee70130471b4f597418223ecc8f777e20b07bc1b3a90ad265781edf",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:28:53.099Z",
+      "rejection": {
+        "at": "2026-09-08T14:28:53.099Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-ced187cc9e3a5ad8",
+      "slug": "sounding-the-fire-alarm-why-french-firefighters-are-going-on-strike-3a5ad8",
+      "title": "Sounding the fire alarm: Why French firefighters are going on strike",
+      "first_seen": "2026-09-08T14:12:50.000Z",
+      "last_updated": "2026-09-08T14:12:50.000Z",
+      "topic": [
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/tv-shows/entre-nous/20260908-sounding-the-fire-alarm-why-french-firefighters-are-going-on-strike",
+          "title": "Sounding the fire alarm: Why French firefighters are going on strike",
+          "summary": "We dive into the particularities of France's firefighting system, including how they came to be called \"sapeurs-pompiers\", this as firefighters kick off six weeks of strikes. Finally, we discuss how other public service workers are also calling for industrial action.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:12:50.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "b46a22d695e11dada5c818650fafd26ae280121890928152e7b16f803a0c10c6",
+          "source_item_id": "d29ef98ba449c932d9b689c8335a818f68b7be37eb324df3fe13f2eb7745c461",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:12:50.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ced187cc9e3a5ad8-claim-01",
+          "story_id": "wt-ced187cc9e3a5ad8",
+          "claim": "Sounding the fire alarm: Why French firefighters are going on strike: We dive into the particularities of France's firefighting system, including how they came to be called \"sapeurs-pompiers\", this as firefighters kick off six weeks of strikes. Finally, we discuss how other public service workers are also calling for industrial action.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:28:53.099Z"
+        }
+      ],
+      "content_hash": "887a45a6391316195b8bbae22ac81b7b17f2c56a5df572542f0ae897adefa16d",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T14:28:53.099Z",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "event_id": "event-7a644acddb58aade4ca6",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.05165,
+        "detection_delay_minutes": 16.05165,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "51b7f50c8bf76a8fa9ce29cf3768786deb4f378a4e39166984584534a94a5423",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-d1fa54ed67c50054",
+      "slug": "spoiler-alert-ai-in-cinema-just-a-tool-won-t-replace-actors-and-human-beings-c50054",
+      "title": "Spoiler alert: AI in cinema 'just a tool, won’t replace actors and human beings'",
+      "first_seen": "2026-09-08T14:11:18.000Z",
+      "last_updated": "2026-09-08T14:11:18.000Z",
+      "topic": [
+        "Gesundheit",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260908-spoiler-alert-ai-in-cinema-just-a-tool-won-t-replace-actors-and-human-beings-1",
+          "title": "Spoiler alert: AI in cinema 'just a tool, won’t replace actors and human beings'",
+          "summary": "Eve Irvine is pleased to welcome film producer Lahoucine Grimich. He challenges the prevailing narrative that cinema is an industry in existential crisis. While acknowledging that viewing habits have dramatically shifted since the pandemic, he argues that streaming platforms, public support and theatrical exhibition are not competing forces. As demonstrated in the French model, they form parts of an interconnected financing ecosystem in which cinema can adapt without ever abandoning the big screen. He frames filmmaking as a form of cultural sovereignty: societies need films not simply as entertainment, but to recognise themselves and to create what he calls “new imaginaries.”",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:11:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "b055b9367c6833b430341a8b466f6ae33361a2f3e02ae8834e8a356b14d3a390",
+          "source_item_id": "59df42aa2e9d9456cadf91aca544b38ecc003b10bd6616c741165859562a639e",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:11:18.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d1fa54ed67c50054-claim-01",
+          "story_id": "wt-d1fa54ed67c50054",
+          "claim": "Spoiler alert: AI in cinema 'just a tool, won’t replace actors and human beings': Eve Irvine is pleased to welcome film producer Lahoucine Grimich. He challenges the prevailing narrative that cinema is an industry in existential crisis. While acknowledging that viewing habits have dramatically shifted since the pandemic, he argues that streaming platforms, public support and theatrical exhibition are not competing forces. As demonstrated in the French model, they form parts of an interconnected financing ecosystem in which cinema can adapt without ever abandoning the big screen. He frames filmmaking as a form of cultural sovereignty: societies need films not simply as entertainment, but to recognise themselves and to create what he calls “new imaginaries.”",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:28:53.099Z"
+        }
+      ],
+      "content_hash": "a9de2ea60a1f84ee9a4bdffcb51a2bc21716764f5592bdba0fd47d0a1a60515c",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T14:28:53.099Z",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "event_id": "event-a4098ac460e111f186e6",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesundheit",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.584983333333334,
+        "detection_delay_minutes": 17.584983333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "0e10e7d8f6d517857dd0b360c2b83795f8a2cab77b89daac3f945f5637f1d65a",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-5e580dc14277ed8c",
+      "slug": "nicaragua-im-gaza-prozess-deutschland-verstosst-gegen-das-volkerrecht-77ed8c",
+      "title": "Nicaragua im Gaza-Prozess. Deutschland verstößt gegen das Völkerrecht",
+      "first_seen": "2026-09-08T14:10:36.000Z",
+      "last_updated": "2026-09-08T14:10:36.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/nicaragua-im-gaza-prozess--deutschland-verstoesst-gegen-das-voelkerrecht-38222558.html",
+          "title": "Nicaragua im Gaza-Prozess. Deutschland verstößt gegen das Völkerrecht",
+          "summary": "In dem von Nicaragua angestrengten Verfahren gegen Deutschland vor dem Internationalen Gerichtshof (IGH) hat das zentralamerikanische Land Deutschland den Bruch des Völkerrechts vorgeworfen. „Nicaragua beruft sich auf Deutschlands Verantwortung in Verbindung mit mehrfachen Verstößen gegen das Völkerrecht“, sagte der Vertreter Nicaraguas, Carlos Jose Argüello Gómez, am zweiten Tag der Anhörungen am Dienstag vor dem Gericht in Den Haag.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:10:36.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "de2d389e11c6646702c0e8f63d29db21ad40de6eec183f75d8ef16ecf253e7c6",
+          "source_item_id": "dbf24a0c67bfca0cb440556004923f6239b50bf1f0a755c103426c7b1091a4df",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:10:36.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5e580dc14277ed8c-claim-01",
+          "story_id": "wt-5e580dc14277ed8c",
+          "claim": "Nicaragua im Gaza-Prozess. Deutschland verstößt gegen das Völkerrecht: In dem von Nicaragua angestrengten Verfahren gegen Deutschland vor dem Internationalen Gerichtshof (IGH) hat das zentralamerikanische Land Deutschland den Bruch des Völkerrechts vorgeworfen. „Nicaragua beruft sich auf Deutschlands Verantwortung in Verbindung mit mehrfachen Verstößen gegen das Völkerrecht“, sagte der Vertreter Nicaraguas, Carlos Jose Argüello Gómez, am zweiten Tag der Anhörungen am Dienstag vor dem Gericht in Den Haag.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:28:53.099Z"
+        }
+      ],
+      "content_hash": "f7cc57e77a2280a1b4a23cd28cdf052f7cb178f1f93347a04cbb185a0ee4cea0",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T14:28:53.099Z",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "event_id": "event-d8afcf2bd71e385c3840",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.284983333333333,
+        "detection_delay_minutes": 18.284983333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "1a91123cb6dcce85e3ebad744f11841f14bf22bbdf330b23fe8008e24ea1a4c0",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-6239f379d5ad59b3",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "331bfe7d9c746f7afa6df6f1277cb6cbbd82c141da953c7b3d3e952bfa8d962f",
+        "first_failed_at": "2026-09-08T14:28:53.099Z",
+        "failed_at": "2026-09-08T14:28:53.099Z",
+        "retry_after": "2026-09-08T14:43:53.099Z",
+        "retry_count": 1
+      },
+      "slug": "vorwurfe-gegen-israelischen-premier-netanjahu-ignorierte-warnungen-vor-dem-7-oktober-ad59b3",
+      "title": "Vorwürfe gegen israelischen Premier: Netanjahu ignorierte Warnungen vor dem 7. Oktober",
+      "first_seen": "2026-09-08T14:10:00.000Z",
+      "last_updated": "2026-09-08T14:10:00.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Vorwuerfe-gegen-israelischen-Premier/!6211404",
+          "title": "Vorwürfe gegen israelischen Premier: Netanjahu ignorierte Warnungen vor dem 7. Oktober",
+          "summary": "Mitten im Wahlkampf zeigt eine Recherche der Zeitung „Ha’aretz“: Netanjahu wurde auf höchster Ebene vor einem Hamas-Angriff gewarnt – und blieb untätig. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:10:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "65c5d6a3851c9e812d48f646e29c1531f6ba74ff45d82a6e66da24831f72781a",
+          "source_item_id": "554961ad4e0afb7a1b4c1b5a06d3ec9bf17634bc36f3e7c45e25a295553139ed",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:10:00.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6239f379d5ad59b3-claim-01",
+          "story_id": "wt-6239f379d5ad59b3",
+          "claim": "Vorwürfe gegen israelischen Premier: Netanjahu ignorierte Warnungen vor dem 7. Oktober: Mitten im Wahlkampf zeigt eine Recherche der Zeitung „Ha’aretz“: Netanjahu wurde auf höchster Ebene vor einem Hamas-Angriff gewarnt – und blieb untätig. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:28:53.099Z"
+        }
+      ],
+      "content_hash": "2552361ab6f69439261d46f508f6334554fd2dd8cb67177d37992a87ed27dd8b",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T14:43:53.099Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T14:28:53.099Z",
+      "event_first_seen_at": "2026-09-08T14:28:53.099Z",
+      "event_detected_at": "2026-09-08T14:28:53.099Z",
+      "event_id": "event-bf20fb22895e607ebfbf",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18.884983333333334,
+        "detection_delay_minutes": 18.884983333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "2f0574c4d49db2a657c87b25dce32ea94eb868f3bf4873ac08289b8f1d4440a6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:28:53.099Z",
+      "rejection": {
+        "at": "2026-09-08T14:28:53.099Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-cb6944882f826542",
       "slug": "nach-hackerangriff-auf-verwaltung-berliner-bezirk-gibt-widerstand-gegen-us-software-auf-826542",
@@ -413,6 +2140,14 @@
     },
     {
       "story_id": "wt-8b4a2564e0315e4d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "47e4e44b88be50e5f9db94a725a3183730efb43d9a02d4fbd325dfd33c136cf2",
+        "first_failed_at": "2026-09-08T14:21:47.735Z",
+        "failed_at": "2026-09-08T14:21:47.735Z",
+        "retry_after": "2026-09-08T14:36:47.735Z",
+        "retry_count": 1
+      },
       "slug": "hupende-autos-in-soest-gegen-geplante-pflegereform-315e4d",
       "title": "Hupende Autos in Soest gegen geplante Pflegereform",
       "first_seen": "2026-09-08T14:04:36.000Z",
@@ -476,20 +2211,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:21:47.735Z"
         }
       ],
       "content_hash": "9665a08224217eb686900832195df7582a79b815ca34758cb312e40beee46c5f",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T14:36:47.735Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:21:47.735Z",
       "event_first_seen_at": "2026-09-08T14:06:56.372Z",
       "event_detected_at": "2026-09-08T14:06:56.372Z",
       "event_id": "event-bc1835687650791e0726",
@@ -526,23 +2261,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2.3395333333333332,
+        "source_age_minutes": 17.19558333333333,
         "detection_delay_minutes": 2.3395333333333332,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.85605,
         "target_publication_minutes": 120,
-        "news_freshness_score": 100,
+        "news_freshness_score": 96,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:21:47.735Z",
         "fingerprint": "91e07ccd56e6ec6efe156c6c4a1fddb2c4d42447558f1695450524d308981544",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:21:47.735Z",
+      "rejection": {
+        "at": "2026-09-08T14:21:47.735Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -1724,7 +3471,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T12:12:00.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -1745,7 +3492,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -2464,7 +4211,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
           "issue_codes": [],
           "warning_codes": []
@@ -3042,6 +4789,14 @@
     },
     {
       "story_id": "wt-78bc384bab02a33d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d7a2a6a42ffc49dbf81015d5baefad2f6db5ae4e6007dd939e27a58cad5fff0f",
+        "first_failed_at": "2026-09-08T14:21:47.735Z",
+        "failed_at": "2026-09-08T14:21:47.735Z",
+        "retry_after": "2026-09-08T14:36:47.735Z",
+        "retry_count": 1
+      },
       "slug": "ackerbau-und-grune-energie-wildblumen-acker-und-strom-neues-solar-projekt-startet-02a33d",
       "title": "Ackerbau und grüne Energie: Wildblumen, Acker und Strom: Neues Solar-Projekt startet",
       "first_seen": "2026-09-08T13:28:19.000Z",
@@ -3136,7 +4891,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:21:47.735Z"
         },
         {
           "claim_id": "wt-78bc384bab02a33d-claim-02",
@@ -3156,20 +4911,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:21:47.735Z"
         }
       ],
       "content_hash": "c593fb2ea99e83d87537ae04baf8a8d49ad54e7c73f714d2c5eabadeea3322a2",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T14:36:47.735Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:21:47.735Z",
       "event_first_seen_at": "2026-09-08T13:51:47.903Z",
       "event_detected_at": "2026-09-08T13:51:47.903Z",
       "event_id": "event-736ca7f8fc97adc42b6a",
@@ -3204,23 +4959,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 37.272866666666665,
+        "source_age_minutes": 52.12891666666667,
         "detection_delay_minutes": 22.131716666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.14115,
+        "queue_age_minutes": 29.9972,
         "target_publication_minutes": 120,
-        "news_freshness_score": 92,
+        "news_freshness_score": 89,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:21:47.735Z",
         "fingerprint": "3d53b488583454470cc763cb6a6a2101aec921f68d2e0725f2e1bf239f525b7c",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:21:47.735Z",
+      "rejection": {
+        "at": "2026-09-08T14:21:47.735Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -3693,7 +5460,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:40:35.863Z"
+        "retry_after": "2026-09-08T14:37:46.298Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -3722,7 +5489,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:02:50.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -3743,7 +5510,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "d4b8c47f1b5a6ae4b9e8838edd34c8da0189c7f592bf1dd36369dd436d41ddf2",
           "issue_codes": [],
           "warning_codes": []
@@ -3756,9 +5523,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "e0e1901369bda66453d316b74c9e65af37cf9a7dc58c8d2d2a5a04073b82ea0d",
         "first_failed_at": "2026-09-08T14:06:56.372Z",
-        "failed_at": "2026-09-08T14:06:56.372Z",
-        "retry_after": "2026-09-08T14:21:56.372Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T14:28:53.099Z",
+        "retry_after": "2026-09-08T14:58:53.099Z",
+        "retry_count": 2
       },
       "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
       "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
@@ -3792,7 +5559,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T13:52:29.000Z",
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3825,7 +5592,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T13:24:19.000Z",
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3854,7 +5621,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         },
         {
           "claim_id": "wt-e01e1e77e702edc3-claim-02",
@@ -3874,7 +5641,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         }
       ],
       "content_hash": "8084603b1c27b41dd5410f82914b4f262225754981cf74e4fe211b78808af8f3",
@@ -3884,13 +5651,13 @@
         "AI_SUMMARY_SENTENCE_COUNT",
         "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
       ],
-      "quality_retry_count": 5,
-      "quality_retry_after": "2026-09-08T14:21:56.372Z",
+      "quality_retry_count": 6,
+      "quality_retry_after": "2026-09-08T14:58:53.099Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:28:53.099Z",
       "event_first_seen_at": "2026-09-08T10:51:42.562Z",
       "event_detected_at": "2026-09-08T10:51:42.562Z",
       "event_id": "event-1c240bac9c8b267f5a27",
@@ -3925,20 +5692,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 14.4562,
+        "source_age_minutes": 36.40165,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 195.23016666666666,
+        "queue_age_minutes": 217.17561666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 92,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "fingerprint": "fe7fe1c25e42b3fc1cec85040a2606e6bdb8391a3fcdf19c886a478430adb31e",
         "issue_codes": [],
         "warning_codes": []
@@ -3946,6 +5713,14 @@
     },
     {
       "story_id": "wt-89cc270ef6bc139d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "cb1d5fb6c38c46246992993cd430b58a57abf373a756a4f6d15c1d98844a4d90",
+        "first_failed_at": "2026-09-08T14:21:47.735Z",
+        "failed_at": "2026-09-08T14:21:47.735Z",
+        "retry_after": "2026-09-08T14:36:47.735Z",
+        "retry_count": 1
+      },
       "slug": "strom-saboteur-polizei-nimmt-verdachtigen-fest-bc139d",
       "title": "Strom-Saboteur: Polizei nimmt Verdächtigen fest",
       "first_seen": "2026-09-08T13:19:00.000Z",
@@ -4040,7 +5815,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:21:47.735Z"
         },
         {
           "claim_id": "wt-89cc270ef6bc139d-claim-02",
@@ -4060,20 +5835,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:21:47.735Z"
         }
       ],
       "content_hash": "6d3f2fd3bd78738a7ffd7700a7bdcc4823786483d0c21534e51897e734d47f69",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "MEDIA_IMPACT_REQUIRED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T14:36:47.735Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:21:47.735Z",
       "event_first_seen_at": "2026-09-08T13:51:47.903Z",
       "event_detected_at": "2026-09-08T13:51:47.903Z",
       "event_id": "event-626e50ed9dab5a3077bc",
@@ -4106,20 +5883,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 47.93953333333334,
+        "source_age_minutes": 62.79558333333333,
         "detection_delay_minutes": 32.798383333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.14115,
+        "queue_age_minutes": 29.9972,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 87,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:21:47.735Z",
         "fingerprint": "509bb5f5b357175f84ec6fda0c4b4ee0efb41e8e3e31fd630addb2780cc6ff87",
         "issue_codes": [],
         "warning_codes": []
@@ -4399,7 +6176,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         }
       ],
       "content_hash": "b05800c449bd8a512a5a6f6ee762cd7476012ccaba182bf8cf990e46bfcb6689",
@@ -4412,7 +6189,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:28:53.099Z",
       "event_first_seen_at": "2026-09-08T13:22:17.950Z",
       "event_detected_at": "2026-09-08T13:22:17.950Z",
       "event_id": "event-eb2f1fe8aaf73d379b23",
@@ -4450,20 +6227,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 60.38953333333333,
+        "source_age_minutes": 82.33498333333333,
         "detection_delay_minutes": 15.749166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.640366666666665,
+        "queue_age_minutes": 66.58581666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 87,
+        "news_freshness_score": 83,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
         "issue_codes": [],
         "warning_codes": []
@@ -6591,7 +8368,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T11:57:24.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -6612,7 +8389,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -7689,7 +9466,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:40:41.440Z"
+        "retry_after": "2026-09-08T14:47:35.472Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -7740,7 +9517,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "63f046175e324d9aac3dc62cf0f0e86b6ea7a260faeb7c3aa7053bcca7dcdfdf",
           "issue_codes": [],
           "warning_codes": []
@@ -9848,7 +11625,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -10734,7 +12511,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         }
       ],
       "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
@@ -10747,7 +12524,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:28:53.099Z",
       "event_first_seen_at": "2026-09-08T12:36:46.426Z",
       "event_detected_at": "2026-09-08T12:36:46.426Z",
       "event_id": "event-112dbf80aa5019468e8a",
@@ -10782,20 +12559,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 155.93953333333334,
+        "source_age_minutes": 177.88498333333334,
         "detection_delay_minutes": 65.77376666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 90.16576666666667,
+        "queue_age_minutes": 112.11121666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 68,
+        "news_freshness_score": 63,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
@@ -12428,7 +14205,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:22:55.109Z"
+        "retry_after": "2026-09-08T14:37:36.541Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -12632,7 +14409,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T07:55:01.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -12785,7 +14562,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "41883468f1df8e94adc5896f7810e5edfdd1396b96807d8bccc9b25d2e316287",
           "issue_codes": [],
           "warning_codes": []
@@ -13332,7 +15109,7 @@
       },
       "pending_update": {
         "detected_at": "2026-09-08T12:51:54.078Z",
-        "content_hash": "650723dfb95ad5b990ad2b24cc742aa2462238d061ced7a7e7473493241e6786",
+        "content_hash": "d84b53b9e996ff1be9aa40ea0b169ff5c4bd9509ba67a92a156751b4e18ab919",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -13371,14 +15148,14 @@
             "source_id": "mdr-nachrichten",
             "publisher": "MDR",
             "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-162,wahl-560.html",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Politiker Sepp Müller schließt Zusammenarbeit mit AfD aus",
-            "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Die CDU will der AfD nicht zu einer Mehrheit im Landtag verhelfen. Die neuen Entwicklungen im Liveticker.",
+            "title": "Wahlergebnis Sachsen-Anhalt: BSW will Nord Stream öffnen – und setzt auf AfD-Stimmen",
+            "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Das BSW will mit den Stimmen der AfD Nord Stream wieder öffnen. Die neuen Entwicklungen im Liveticker.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T12:49:27.000Z",
+            "published_at": "2026-09-08T14:21:05.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
-            "content_hash": "6e4c1e960cba263b36b0168c6904b54139810a7887d0e767d84f5177450fd74f",
+            "content_hash": "025eadd0c784b54c0456fd956514280ac69b7aa0e02d85fa1a5d1f9c3254a613",
             "source_item_id": "1dbdc37b9607a66df42eb2625f93ae67190df53f2ff760755d84d13da4a51968",
             "publisher_id": "mdr",
             "publisher_kind": "public_broadcasting",
@@ -13390,8 +15167,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T12:49:27.000Z",
-            "ingested_at": "2026-09-08T12:51:54.078Z",
+            "source_published_at": "2026-09-08T14:21:05.000Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -13412,8 +15189,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
-          "fingerprint": "6a9068d1ebec6f01b3bc6b49547420e25734d61e781e50aa4ca0c5f43aa48445",
+          "checked_at": "2026-09-08T14:28:53.099Z",
+          "fingerprint": "96f5f46101b5d15024d64f70b62c6b87ec43c3b405b72a76ef61e85afd3f579e",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -13832,9 +15609,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "1dba2b38d45fe8b5b2ca32ff56e793346e5ee3cb5606c42d0d020796edea8544",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T20:06:56.372Z",
+        "expires_at": "2026-09-08T20:28:53.099Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -13860,7 +15637,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:30:03.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14315,7 +16092,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T10:55:46.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14336,7 +16113,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -15345,7 +17122,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:55:46.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -15399,7 +17176,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "aa36a5175a51620ce9b1dd20ae621a54427266dfa6f82d73155af11892f0c358",
           "issue_codes": [],
           "warning_codes": []
@@ -16269,14 +18046,60 @@
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "2fe8c655bb2177e16676ec108ce96c519da9fecd08a975bc2cb49bc3a7e2e7db",
-        "first_failed_at": "2026-09-08T14:06:56.372Z",
-        "failed_at": "2026-09-08T14:06:56.372Z",
-        "retry_after": "2026-09-08T14:21:56.372Z",
+        "fingerprint": "f6f30d268092bdacada218f1284322c43e04f28efc12ee2cb14420846c09a872",
+        "first_failed_at": "2026-09-08T14:28:53.099Z",
+        "failed_at": "2026-09-08T14:28:53.099Z",
+        "retry_after": "2026-09-08T14:43:53.099Z",
         "retry_count": 1
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
       "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-08T14:21:47.735Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T14:06:56.372Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
       "first_seen": "2026-09-08T11:06:00.000Z",
       "last_updated": "2026-09-08T11:06:00.000Z",
       "topic": [
@@ -16309,7 +18132,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -16325,7 +18148,7 @@
           "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
           "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T13:55:18.000Z",
+          "published_at": "2026-09-08T14:22:00.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -16341,8 +18164,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T13:55:18.000Z",
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "source_published_at": "2026-09-08T14:22:00.000Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -16411,7 +18234,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T10:28:28.000Z",
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -16440,7 +18263,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -16460,7 +18283,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-03",
@@ -16481,7 +18304,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-04",
@@ -16501,7 +18324,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         }
       ],
       "content_hash": "2963c9ea1cdc5bb83d5344ad1478a2f00e3012f114919cf39bbe468f67143942",
@@ -16510,13 +18333,13 @@
       "quality_errors": [
         "MEDIA_IMPACT_REQUIRED"
       ],
-      "quality_retry_count": 5,
-      "quality_retry_after": "2026-09-08T14:21:56.372Z",
+      "quality_retry_count": 6,
+      "quality_retry_after": "2026-09-08T14:43:53.099Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:28:53.099Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -16551,20 +18374,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 11.639533333333333,
+        "source_age_minutes": 6.8849833333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 149.72383333333335,
+        "queue_age_minutes": 171.66928333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 99,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "fingerprint": "57c4c357826ddcf17cf35786e5783317689b836f21fb144db6f4630bed72ead5",
         "issue_codes": [],
         "warning_codes": []
@@ -17942,7 +19765,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T09:18:00.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17963,7 +19786,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
@@ -19061,7 +20884,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "4c3017054cc3cb3b35afc4b945e8378f8031d694648e6d9d28e443d23d85aebb",
           "issue_codes": [],
           "warning_codes": []
@@ -19514,7 +21337,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:40:51.722Z"
+        "retry_after": "2026-09-08T14:47:45.755Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -19543,7 +21366,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T09:50:23.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19564,7 +21387,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "205041d2192cf688c27c75b8f7f545b8c4beba211ebffe3aaa3e8bcc272551f5",
           "issue_codes": [],
           "warning_codes": []
@@ -20098,7 +21921,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:40:46.366Z"
+        "retry_after": "2026-09-08T14:47:40.601Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -20127,7 +21950,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T08:45:00.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20148,7 +21971,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "cc072f3eacc31d1e9994dcaa53b6184b0b77527fa2bdf770f01aad2115f6149d",
           "issue_codes": [],
           "warning_codes": []
@@ -20839,7 +22662,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:22:59.817Z"
+        "retry_after": "2026-09-08T14:37:41.444Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -20889,7 +22712,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "868ad5265d175cfb161266ef637639c076040c24552ca93728b755dfa7d9702e",
           "issue_codes": [],
           "warning_codes": []
@@ -23724,7 +25547,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
           "issue_codes": [],
           "warning_codes": []
@@ -24252,10 +26075,10 @@
       "story_id": "wt-db4258ffaa34e6c7",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "b663d4661b97d5a2fe8cea72a475b281be7c9ad3ff94c09abb0e999939f2f9be",
-        "first_failed_at": "2026-09-08T08:37:27.504Z",
-        "failed_at": "2026-09-08T08:37:27.504Z",
-        "retry_after": "2026-09-08T08:52:27.504Z",
+        "fingerprint": "52a63759ca5137f6b359508caa5831f114fb08a8c7476fda4d96291704f9c3f1",
+        "first_failed_at": "2026-09-08T14:21:47.735Z",
+        "failed_at": "2026-09-08T14:21:47.735Z",
+        "retry_after": "2026-09-08T14:36:47.735Z",
         "retry_count": 1
       },
       "slug": "hollywoodstar-angelina-jolie-zum-dritten-mal-in-kriegsgeplagter-ukraine-34e6c7",
@@ -24363,20 +26186,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:21:47.735Z"
         }
       ],
       "content_hash": "c9ea280df0d25bc0398258e41edd208086d3f6033138e1645b07c86174204467",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T14:36:47.735Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:21:47.735Z",
       "event_first_seen_at": "2026-09-08T08:37:27.504Z",
       "event_detected_at": "2026-09-08T08:37:27.504Z",
       "event_id": "event-00f6ef9e9e5c397cec9d",
@@ -24409,23 +26232,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 341.4728666666667,
+        "source_age_minutes": 356.32891666666666,
         "detection_delay_minutes": 11.991733333333332,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 329.48113333333333,
+        "queue_age_minutes": 344.3371833333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 29,
+        "news_freshness_score": 26,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:21:47.735Z",
         "fingerprint": "1406730fa987d2867be4f4bd7e87524334ebaf0cf55cb40cb198e95d205595fc",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:21:47.735Z",
+      "rejection": {
+        "at": "2026-09-08T14:21:47.735Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -25503,7 +27338,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T07:30:00.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -25524,7 +27359,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
           "issue_codes": [],
           "warning_codes": []
@@ -26430,7 +28265,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -26459,7 +28294,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -26474,7 +28309,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:28:53.099Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -26515,7 +28350,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 239.50408333333334,
+        "queue_age_minutes": 261.4495333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26524,7 +28359,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -26565,7 +28400,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -26594,7 +28429,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -26609,7 +28444,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:28:53.099Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -26649,7 +28484,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 239.50408333333334,
+        "queue_age_minutes": 261.4495333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -26658,7 +28493,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -27942,7 +29777,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -28791,7 +30626,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -29497,7 +31332,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -31630,7 +33465,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -35400,7 +37235,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -39123,7 +40958,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
             "summary": "Kurz nach der Abreise von US-Unterhändlern hat Russland die ukrainische Hauptstadt Kiew erneut mit ballistischen Raketen angegriffen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T13:55:18.000Z",
+            "published_at": "2026-09-08T14:22:00.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -39139,8 +40974,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T13:55:18.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "source_published_at": "2026-09-08T14:22:00.000Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -39161,7 +40996,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -39886,7 +41721,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -41040,7 +42875,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:45:03.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41061,7 +42896,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "e6e91a616aae9777f03f38b9bf8d8eeeb51e28412c5ab2d462caa196320ef7a8",
           "issue_codes": [],
           "warning_codes": []
@@ -42003,7 +43838,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -44976,7 +46811,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -45726,7 +47561,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -46889,7 +48724,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -47314,9 +49149,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T20:06:56.372Z",
+        "expires_at": "2026-09-08T20:28:53.099Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -50782,7 +52617,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -52039,7 +53874,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -52600,7 +54435,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -54109,7 +55944,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -55315,7 +57150,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -56441,7 +58276,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -56462,7 +58297,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -56982,7 +58817,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -57701,7 +59536,7 @@
             "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
             "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T13:55:18.000Z",
+            "published_at": "2026-09-08T14:22:00.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -57717,8 +59552,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T13:55:18.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "source_published_at": "2026-09-08T14:22:00.000Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -57739,7 +59574,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -60196,7 +62031,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -61694,7 +63529,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -62769,7 +64604,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -64299,9 +66134,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T20:06:56.372Z",
+        "expires_at": "2026-09-08T20:28:53.099Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -68977,7 +70812,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -73514,7 +75349,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -79619,7 +81454,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -88183,7 +90018,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -90918,7 +92753,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -93278,7 +95113,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -94019,7 +95854,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -105915,7 +107750,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:28:53.099Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -105976,7 +107811,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -105996,7 +107831,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:28:53.099Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -106012,7 +107847,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:28:53.099Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -106052,7 +107887,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1740.05015,
+        "queue_age_minutes": 1761.9956,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -106061,7 +107896,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -125232,9 +127067,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "f976377bb7e9aedf95200256fd91fe5de6ad4d7da2d2d89faf8a96f2aecc4c32",
         "first_failed_at": "2026-09-08T05:07:06.629Z",
-        "failed_at": "2026-09-08T05:07:06.629Z",
-        "retry_after": "2026-09-08T05:22:06.629Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T14:28:53.099Z",
+        "retry_after": "2026-09-08T14:58:53.099Z",
+        "retry_count": 2
       },
       "deepening_checks": 2,
       "review_checkpoint": {
@@ -125317,10 +127152,15 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_DIRECTION_MIXED_PATHS_REQUIRED:human",
+          "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T14:58:53.099Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -125328,7 +127168,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -126323,7 +128163,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -127024,7 +128864,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -127778,7 +129618,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T14:06:56.372Z",
+            "ingested_at": "2026-09-08T14:28:53.099Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -127799,7 +129639,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -128462,7 +130302,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -132340,7 +134180,7 @@
       "verification_started_at": "2026-09-06T19:06:39.508Z",
       "publish_ready_at": "2026-09-06T19:06:54.699Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -132771,10 +134611,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "b5f65f4df413f7f20b46771d7986303ca8b257004d7d24a7634ee3f913c210b5",
-        "checked_at": "2026-09-08T05:07:06.629Z",
+        "fingerprint": "153d25b50b4c0d6416cc6db627f9b490a369de8d1f58857e5191ec8ed2a0c65a",
+        "checked_at": "2026-09-08T14:28:53.099Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:07:06.629Z",
+        "expires_at": "2026-09-08T20:28:53.099Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -132979,230 +134819,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "8306ad4d1b577b9f90afdace079485d63ebdbdffdc1b97ac0420d3636d5c96b1",
-        "sources": [
-          {
-            "source_id": "tagesschau-access",
-            "publisher": "tagesschau / ARD",
-            "url": "https://www.tagesschau.de/newsticker/liveblog-landtagswahl-sachsen-anhalt-100.html",
-            "title": "++ Schulze verpasst Direktmandat in Magdeburg ++",
-            "summary": "CDU-Ministerpräsident Schulze hat im Wahlkreis Magdeburg III gegen den AfD-Kandidaten Mertens verloren. AfD-Spitzenkandidat Siegmund lehnt den Vorschlag des BSW eines überparteili…",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T00:45:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "4943720c75cc076f47e8b80e3d75349a580055395a740afeb6d91f8f5acbe5b8",
-            "source_item_id": "776cc3745c8f775fdb9aede20712df3e986cdece71d29d4af6e217db1a5e512e",
-            "publisher_id": "tagesschau",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T00:45:01.000Z",
-            "ingested_at": "2026-09-07T00:51:33.039Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesschau",
-              "basis": "publisher_resolved_from_registered_target_url",
-              "independence_established": false,
-              "collection_source_id": "swr-aktuell"
-            },
-            "collection_source_id": "swr-aktuell",
-            "collection_publisher_id": "swr"
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/landtagswahl-sachsen-anhalt--fdp-spitzenkandidatin-hueskens-kuendigt-ruecktritt-an-38213608.html",
-            "title": "Landtagswahl Sachsen-Anhalt: FDP-Spitzenkandidatin Hüskens kündigt Rücktritt an",
-            "summary": "FDP-Spitzenkandidatin Lydia Hüskens zieht nach dem schwachen Ergebnis ihrer Partei Konsequenzen und kündigt ihren Rücktritt als Landesvorsitzende an. Offen bleibt, wann.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T18:12:37.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "a6ef4a9fa8af6320bb8bae1cbfc51190d9e54d3271e056dcb0b730a64185ad7a",
-            "source_item_id": "75ef5b988389a1e46e7d68bcbf237c39cc465a85f108d004ad400b9421a449d3",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T18:12:37.000Z",
-            "ingested_at": "2026-09-06T18:21:34.663Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/--lydia-hueskens-kuendigt-ruecktritt-von-fdp-landesvorsitz-an-38213596.html",
-            "title": "Lydia Hüskens kündigt Rücktritt von FDP-Landesvorsitz an",
-            "summary": "Nach dem verpassten Wiedereinzug der FDP in den Magdeburger Landtag hat Sachsen-Anhalts FDP-Landesvorsitzende Lydia Hüskens ihren Rücktritt angekündigt. „Wir müssen jetzt morgen einfach schlicht darüber reden, wie wir es machen, ob wir es mit sofortiger Wirkung machen oder den Landesparteitag im April nehmen dafür, um da den Wechsel zu machen“, sagte sie der Deutschen Presse-Agentur.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T18:03:18.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "d28f8874d4dc8f667f6e420ffe450d6900835f39847bc4005f5750c969a66a89",
-            "source_item_id": "ce11dd120e817ff0b2e81f20db6ba6d96fe4bd4a8fb20d67588d9f31e158225b",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T18:03:18.000Z",
-            "ingested_at": "2026-09-06T18:21:34.663Z",
-            "agency_origin": "dpa",
-            "agency_origin_confidence": "high",
-            "provenance": {
-              "origin": "agency:dpa",
-              "basis": "agency_attribution_in_available_text",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/sachsen-anhalt/--lydia-hueskens-kuendigt-ruecktritt-von-fdp-landesvorsitz-an-38213600.html",
-            "title": "Lydia Hüskens kündigt Rücktritt von FDP-Landesvorsitz an",
-            "summary": "Nach dem verpassten Wiedereinzug der FDP in den Magdeburger Landtag hat Sachsen-Anhalts FDP-Landesvorsitzende Lydia Hüskens ihren Rücktritt angekündigt. „Wir müssen jetzt morgen einfach schlicht darüber reden, wie wir es machen, ob wir es mit sofortiger Wirkung machen oder den Landesparteitag im April nehmen dafür, um da den Wechsel zu machen“, sagte sie der Deutschen Presse-Agentur.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T18:03:11.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "affbc3586d2f4760a001ceeb78d0cd805c037f8258b9179b5895e1e9b87461a6",
-            "source_item_id": "2fa048baf0442db542a83908b20cd2fe963766634494d2285f07b11485cbb798",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T18:03:11.000Z",
-            "ingested_at": "2026-09-06T18:21:34.663Z",
-            "agency_origin": "dpa",
-            "agency_origin_confidence": "high",
-            "provenance": {
-              "origin": "agency:dpa",
-              "basis": "agency_attribution_in_available_text",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/schulze-cdu-verpasst-direktmandat-in-magdeburg-100.html",
-            "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Schulze (CDU) verpasst Direktmandat in Magdeburg",
-            "summary": "+++ Sachsen-Anhalts Ministerpräsident Schulze (CDU) hat das Direktmandat in seinem Wahlkreis nicht gewonnen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T23:29:31.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "28ec9ea0b33aa54af50803a8e436e21cea8c5e85a4d39382b95d5e12f0c460f4",
-            "source_item_id": "6ca339971a0afd7c1c64edde6ba1f45ebb1c101c85912b277274d18b4ce37db2",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T23:29:31.000Z",
-            "ingested_at": "2026-09-06T23:51:36.418Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/sachsen-anhalts-fdp-landesvorsitzende-hueskens-kuendigt-ruecktritt-an-104.html",
-            "title": "Konsequenz aus Wahlergebnis - Sachsen-Anhalts FDP-Landesvorsitzende Hüskens kündigt Rücktritt an",
-            "summary": "Nach dem verpassten Wiedereinzug der FDP in den Landtag von Sachsen-Anhalt hat die FDP-Landesvorsitzende Hüskens ihren Rücktritt angekündigt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T22:50:28.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "02d1f130648cd38f42596e583f291ac3394062b68a3cbddaeb476730e4a56a7d",
-            "source_item_id": "9ec1bea9506c47db3292043f9dabc1559e61e370417991469caa5be312d4a363",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T22:50:28.000Z",
-            "ingested_at": "2026-09-06T22:51:36.518Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
-          "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-a92a548f40e9c80e",
@@ -136568,7 +138185,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -162455,7 +164072,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -206809,7 +208426,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:06:56.372Z",
+          "checked_at": "2026-09-08T14:28:53.099Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

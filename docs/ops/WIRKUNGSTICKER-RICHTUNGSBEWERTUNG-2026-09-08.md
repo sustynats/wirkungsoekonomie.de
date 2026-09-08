@@ -1,0 +1,42 @@
+# Richtungsbewertung und Chrome-Scrollen: Korrektur vom 8. September 2026
+
+## Gegenstand und Befund
+
+Leserfeedback: Die Sammelkennzeichnung `Richtung offen` vermischte fehlende Richtungsdaten, fehlende Wirkpfade und tatsächlich unklare Richtung. `Gemischt` konnte wie ein ausgeglichenes Urteil erscheinen, obwohl der gespeicherte Text nur Unsicherheit beschrieb. Im Folgencheck fehlte zudem der Bezugsraum.
+
+Audit auf `fbc795232b`: 161 aktive veröffentlichte Einzelakten, 483 MPD-Felder. 102 fehlende Richtungsfelder in 34 Akten wurden als offen dargestellt. 258 Felder erschienen insgesamt offen (102 Fallbacks, 83 explizite Basiswerte, 73 Legacy-Werte); 118 gemischt. Im Validator bestanden fehlende/ungültige Tendenzen, leere Begründungen und ein nur mit Unsicherheit begründetes `gemischt` den Test. Diese Zahlen sind eine Momentaufnahme, keine Medienqualitätsbewertung.
+
+## Umsetzung
+
+- Gemeinsame Darstellung für Übersicht und Detail: `Noch nicht eingeordnet`, `Kein belastbarer Wirkpfad`, `Wirkungsrichtung unklar` und `Keine belastbare Gesamtbilanz` sind unterscheidbar. Keine dieser Kennzeichnungen bedeutet neutral oder unbedenklich.
+- Begründete gegenläufige Pfade erscheinen als solche, ausdrücklich ohne Verrechnung. Vorliegende positive und negative Richtungen werden nicht aus Thema, Partei oder Relevanz umgedeutet.
+- Neues versioniertes Kurzformat `direction_assessment_version: 1.0`. MPD-Felder enthalten Tendenz, `direction_basis` und substanzielle Begründung. Gemischt verlangt getrennte `positive_path` und `negative_path` mit Mechanismus und gültigen Quellen-IDs. Quellenbindung belegt den Ausgangspunkt, nicht automatisch die Kausalität des Wirkpfads.
+- Frische akzeptierte Nachrichtenantworten müssen den Vertrag erfüllen. Fehler gehen in den vorhandenen begrenzten Qualitäts-Retry, nicht in eine neue kostenpflichtige Verarbeitungsschleife. Redaktionelle Ablehnungen bleiben Ablehnungen. Der Vertrag verhindert Formfehler; die inhaltliche Richtigkeit kann ein Schema allein nicht garantieren.
+- Eintritt, Ausmaß, Evidenz und Richtung werden in Nachrichten- und Analyseprompts getrennt. Schutzplanken, Unsicherheit und formale Verfahren sind keine automatisch positiven Gegenpfade. Auch ein gemischtes Autorenurteil benötigt konkrete positive Pfade im vorhandenen Qualitätsgate.
+- Neue Einzelpfad-Metadaten benennen betroffene MPD-Dimensionen. Der Folgencheck erklärt positiv/negativ anhand der konkreten Zustandsveränderung; Wirkungsordnungen 1 bis 3 sind keine MPD-Dimensionen. Fehlenden historischen Einzelurteilen wird kein `Richtung: Offen`-Badge mehr untergeschoben.
+- Doppelte Promptbeschreibungen wurden gestrafft. Das 39.000-Zeichen-Gate, Quellenbestand und Kostenlimits bleiben unverändert. Der Regressionstest mit 21 realen Quellen und wachsendem Vergleichskontext besteht weiterhin, bei Bedarf ohne optionale neue Visuals.
+
+## Konkrete Leserfälle
+
+### Huthi-/Saudi-Arabien-Meldung (`d4f421`)
+
+Die gespeicherte MPD-Gesamtbewertung ist negativ. Einzelpfadbewertungen fehlten dagegen; der Renderer zeigte dort ungeprüfte Offen-Badges. Korrektur: keine erfundenen Einzelurteile, verständlicher Bezug auf konkrete Folgen und ein gemeinsamer Hinweis auf noch nicht gesondert bewertete Einzelpfade.
+
+### Westjordanland/Sanktionen (`1a5ae1`)
+
+Ein einzelner taz-Beitrag beschreibt eine Eilantragsentscheidung zum E1-Projekt und britische Sanktionspläne. Kein vom Ticker verursachter Cluster-Merge. Die gespeicherten gemischten MPD-Begründungen trennen positive und negative Mechanismen nicht belastbar; die Darstellung behauptet deshalb keine ausgeglichene Bilanz. Maßnahme und Gegenmaßnahme sind getrennt zu bewerten; eine Ankündigung ist noch kein wirksamer Ausgleich. Keine automatische Aufspaltung oder neue Tatsachenbewertung ohne gesonderte redaktionelle Quellenprüfung.
+
+## Chrome-Scrollfehler
+
+Reproduziert mit echten Mausrad-Ereignissen in Chromium auf der Huthi-Detailseite. Bei aktivem Pull-to-refresh lag `overscroll-behavior-y: contain` sowohl auf `html` als auch `body`. Zusammen mit dem vorhandenen `overflow-x:hidden` erzeugt Chromium einen Body-Scrollcontainer ohne eigenen vertikalen Scrollbereich. Die Body-Regel blockierte die Weiterleitung zum Viewport: 600 Pixel Mausraddelta, Scrollposition weiterhin 0. Nur die Body-Regel auf `auto` geändert: gleiche Seite, gleiches Ereignis, Scrollposition 600. Zurück auf `contain`: wieder 0.
+
+Korrektur: Overscroll-Begrenzung bleibt am Wurzelscroller; der Body leitet Scrollen weiter. Kein neuer Wheel-Handler, kein Eingriff in die Gestenerkennung. Pull-to-refresh, Tastatur-/Schaltflächenalternative, Abbruch, Offline-Schutz und Touch-Schutzregeln werden weiterhin getestet. Das konkrete Gerät der meldenden Person war bei diesem Test nicht bekannt.
+
+## Historische Daten, Betrieb und Prüfung
+
+Die Änderung betrifft Darstellung, Prompt und Gates, nicht die gespeicherten Urteile oder Artikeltexte. Keine KI-Neuanalyse, keine neuen Quellen, keine Budgetänderung, kein Stoppen des Nachrichtenworkers. Quelldaten auf Implementierungsbasis `f846d9bbf77daf7bc9956eb4198f884ee514f9a4` unverändert:
+
+- `data/news/stories.json`: SHA-256 `d2ed269c998c6ce274b8ad68c67ea0d976069b05c1243a320bdc636bf6cd912c`
+- `data/news/editorial-analyses.json`: SHA-256 `42dea0efaee540c609d38721d15bb220c4c750f12613c1bc2c1efeaacbc27f11`
+
+Automatisierte Prüfungen: Nachrichten-/Betriebsmonitor-Suite, Syntaxprüfung, Registry-/Nachrichtenvalidierung, Artikelgenerator, vorhandener Language-Lint (25 bereits bestehende Befunde, keine neuen). Browserprüfung: betroffene Detailseiten, Übersicht, Standard-/Sonderanalyse, Desktop und 320/390-Pixel-Mobile, interne Navigation und echtes Mausrad. Öffentliche Generierung über den bestehenden Pages-Releaseweg, keine Vercel-Builds.

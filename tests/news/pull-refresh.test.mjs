@@ -211,3 +211,12 @@ test("both detail templates provide a keyboard/tap alternative; motion preferenc
   assert.match(css, /prefers-reduced-motion: reduce/);
   assert.match(css, /\.news-pull-refresh\[hidden\] \{ display: none/);
 });
+
+test("pull refresh contains the viewport but never traps the body-to-viewport wheel chain", () => {
+  const css = fs.readFileSync("assets/css/news.css", "utf8");
+  assert.match(css, /html\.news-pull-enabled\s*\{\s*overscroll-behavior-y:\s*contain;/);
+  assert.match(css, /html\.news-pull-enabled body\s*\{\s*overscroll-behavior-y:\s*auto;/);
+  assert.doesNotMatch(css, /html\.news-pull-enabled body\s*\{\s*overscroll-behavior-y:\s*(contain|none)/);
+  const h = harness();
+  for (const element of [h.reader, h.body, h.doc, h.win]) assert.equal(element.events.has('wheel'), false);
+});

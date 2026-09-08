@@ -74,7 +74,7 @@ export function editorialJudgmentErrors(analysis) {
   for (const item of analysis.positive_path_checks || []) {
     if (!item.measure || !item.mechanism || !item.source_ids?.length || (validSources.size && item.source_ids.some(id => !validSources.has(id)))) errors.push("EDITORIAL_POSITIVE_PATH_UNGROUNDED");
   }
-  const hasPositiveDirection = Object.values(analysis.subject_dimensions || {}).some(item => item.direction === "positive") || (analysis.sections || []).some(section => section.visual?.items?.some(item => item.relation === "impact_path" && item.direction === "positive"));
+  const hasPositiveDirection = Object.values(analysis.subject_dimensions || {}).some(item => ['positive', 'mixed'].includes(item.direction)) || (analysis.sections || []).some(section => section.visual?.items?.some(item => item.relation === "impact_path" && ['positive', 'mixed'].includes(item.direction)));
   if (hasPositiveDirection && !analysis.positive_path_checks?.length) errors.push("EDITORIAL_POSITIVE_PATH_UNGROUNDED");
   if (!(analysis.sections || []).some(section => ["cascade", "network"].includes(section.visual?.type) && section.visual.items?.length >= 3 && section.visual.items.some(item => item.relation === "impact_path"))) errors.push("EDITORIAL_IMPACT_VISUAL_REQUIRED");
   return [...new Set(errors)];
