@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-08T06:37:33.655Z",
+  "last_successful_run": "2026-09-08T06:52:08.981Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -42883,10 +42883,10 @@
       "governance_hold_until": null
     },
     "europepmc-impact-research": {
-      "last_attempt": "2026-09-08T00:51:35.938Z",
-      "attempts": 17,
+      "last_attempt": "2026-09-08T06:52:08.981Z",
+      "attempts": 18,
       "consecutive_failures": 0,
-      "last_success": "2026-09-08T00:51:35.938Z",
+      "last_success": "2026-09-08T06:52:08.981Z",
       "last_error": null,
       "feed_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?format=json&resultType=core&pageSize=25&query=FIRST_PDATE%3A%5B2026-09-05%20TO%202026-09-08%5D%20AND%20OPEN_ACCESS%3AY%20AND%20%28TITLE_ABS%3Ahealth%20OR%20TITLE_ABS%3Aclimate%20OR%20TITLE_ABS%3Apollution%20OR%20TITLE_ABS%3Ainequality%29",
       "items": 0,
@@ -42995,10 +42995,10 @@
       "governance_hold_until": null
     },
     "ipcc-news": {
-      "last_attempt": "2026-09-08T00:51:35.938Z",
-      "attempts": 17,
+      "last_attempt": "2026-09-08T06:52:08.981Z",
+      "attempts": 18,
       "consecutive_failures": 0,
-      "last_success": "2026-09-08T00:51:35.938Z",
+      "last_success": "2026-09-08T06:52:08.981Z",
       "last_error": null,
       "feed_url": "https://www.ipcc.ch/feed/",
       "items": 10,
@@ -43381,31 +43381,25 @@
   },
   "pending_story_ids": [
     "wt-550f98293aec9698",
+    "wt-4ffb4dfd95e989b7",
     "wt-6343ca92be9f7cb8",
     "wt-12227eeecd48c0b9",
     "wt-61bb6c2918c26f16",
     "wt-46e6bd810843b8fe",
-    "wt-811d4815cfd8d70d",
-    "wt-1c2c187d0b858b7c",
     "wt-d48422d2b2076e49",
-    "wt-aa6c2b7b8a381223",
     "wt-ad9bd6cd53ef7715",
-    "wt-63c624795c1fe417",
     "wt-8f7ac0654a780960",
-    "wt-9964cb1bfc0ad6fe",
     "wt-07f3870f32ae8662",
     "wt-3de38f5a311ccd32",
-    "wt-2cf5f0c5e42720ec",
     "wt-3b184047d464b8b5",
     "wt-e28250d4074683af",
     "wt-12f9c680daba4f09",
     "wt-46e5c503d6322ccb",
     "wt-86ea1ddfd89beabf",
-    "wt-a5874ae28ed5533f",
-    "wt-4ffb4dfd95e989b7"
+    "wt-a5874ae28ed5533f"
   ],
   "relevance_filter_version": "4.0",
-  "last_attempted_run": "2026-09-08T06:37:33.655Z",
+  "last_attempted_run": "2026-09-08T06:52:08.981Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1622,
