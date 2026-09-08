@@ -1,8 +1,819 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T05:58:36.742Z",
-  "updated_at": "2026-09-08T05:58:36.742Z",
+  "updated_at": "2026-09-08T06:21:43.808Z",
   "stories": [
+    {
+      "story_id": "wt-e3194cf165935f1f",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a8c4bf4066fad10706c71be2e63abe0ad0a9a7cc6e66bc2f3d59fd90e997028b",
+        "first_failed_at": "2026-09-08T06:21:43.808Z",
+        "failed_at": "2026-09-08T06:21:43.808Z",
+        "retry_after": "2026-09-08T06:36:43.808Z",
+        "retry_count": 1
+      },
+      "slug": "angriffe-auf-energieversorgung-sabotage-am-stromnetz-suche-nach-verdachtigem-dauert-an-935f1f",
+      "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Suche nach Verdächtigem dauert an",
+      "first_seen": "2026-09-08T06:20:22.000Z",
+      "last_updated": "2026-09-08T06:20:22.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-angriffe-auf-energieversorgung-16029067.html",
+          "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Suche nach Verdächtigem dauert an",
+          "summary": "Nach einer Sabotage-Serie an Hochspannungsleitungen findet die Polizei nahe einem Kraftwerk bei Aachen weitere Sprengvorrichtungen. Die Suche nach dem Tatverdächtigen ist bislang erfolglos.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:20:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "334465c96c044170bf26b3bb34762ba1657f77d399f0823da0c424d43b0ca39e",
+          "source_item_id": "21cdc986a4c7480f57dad94032a95de33ed9cf3dfb263d004f6b1b0829c571ed",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:20:22.000Z",
+          "ingested_at": "2026-09-08T06:21:43.808Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e3194cf165935f1f-claim-01",
+          "story_id": "wt-e3194cf165935f1f",
+          "claim": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Suche nach Verdächtigem dauert an: Nach einer Sabotage-Serie an Hochspannungsleitungen findet die Polizei nahe einem Kraftwerk bei Aachen weitere Sprengvorrichtungen. Die Suche nach dem Tatverdächtigen ist bislang erfolglos.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:21:43.808Z"
+        }
+      ],
+      "content_hash": "f1dfe1c044364a797a1ef92a1d7890014b28b078657aec91db33dfffc48ae190",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T06:36:43.808Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T06:21:43.808Z",
+      "event_first_seen_at": "2026-09-08T06:21:43.808Z",
+      "event_detected_at": "2026-09-08T06:21:43.808Z",
+      "event_id": "event-191d977e2e960b74b6b8",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 52,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 1.3634666666666666,
+        "detection_delay_minutes": 1.3634666666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T06:21:43.808Z",
+        "fingerprint": "939fd5df4709b089e78449148e5568a1c2feca9e056dcf6dc4cf7d2e7a6a14e5",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T06:21:43.808Z",
+      "rejection": {
+        "at": "2026-09-08T06:21:43.808Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-23e5db1c29a3986d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c62bb1683feedf7c76301f61c6051ed8dbb29b08f68358060836d0ec66bcfec7",
+        "first_failed_at": "2026-09-08T06:21:43.808Z",
+        "failed_at": "2026-09-08T06:21:43.808Z",
+        "retry_after": "2026-09-08T06:36:43.808Z",
+        "retry_count": 1
+      },
+      "slug": "uniper-unipers-kritische-rolle-beim-auffullen-der-gasspeicher-a3986d",
+      "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+      "first_seen": "2026-09-05T10:12:00.000Z",
+      "last_updated": "2026-09-08T06:08:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/deutschlands-gasspeicher-warum-uniper-wieder-unverzichtbar-wird/100251801.html",
+          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-05T10:12:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "1172b6a6b4bc98615131c7e212317c25611ea201af7024a93bc91e01f79e1a18",
+          "source_item_id": "c025f627707b43b240e1038defd2f2668a845f6e95227f0623d577c5a202d8ea",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-05T10:12:00.000Z",
+          "ingested_at": "2026-09-05T10:57:29.473Z",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/gasspeicher-warum-uniper-wieder-unverzichtbar-wird/100251801.html",
+          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T06:12:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "cdc4820f6e3251c6795cb14794b77a99c6ce7f51d8fb4df48e5acb7dbbe3d9d7",
+          "source_item_id": "78b5f511b22f02d4dce93a10343fb740425a48b6d8a3ce8952ea1ba8cfac72b9",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T06:12:00.000Z",
+          "ingested_at": "2026-09-06T06:21:40.343Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/deutschlands-gasspeicher-warum-uniper-nun-wieder-unverzichtbar-wird/100251801.html",
+          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T07:33:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "fcb88d26d2cb599ff76f64c2a05b41586c377dd450bf0b33cad33750dde471ef",
+          "source_item_id": "04838b0135973b5669de615363f9865e4f55a8e75c819bbbcfbe29ce1e5694ef",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T07:33:00.000Z",
+          "ingested_at": "2026-09-07T10:21:55.886Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/deutschlands-gasspeicher-warum-uniper-jetzt-wieder-unverzichtbar-wird/100251801.html",
+          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T10:15:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "35236d527b19b844d297027ee33c8c4e3a79db7bdc4455a62a59d9f7892ca858",
+          "source_item_id": "d5a8906bbc9b718583636210ee0461021fd543dec0417298e7b37692cf67eca0",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-07T10:15:00.000Z",
+          "ingested_at": "2026-09-07T13:35:44.462Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/uniper-warum-der-gaskonzern-jetzt-wieder-unverzichtbar-wird/100251801.html",
+          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
+          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:08:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "d0b9c5a21c54d930fb3f6e76b4913ca90ae882a6ad2b8c6e2f12607cf4feea73",
+          "source_item_id": "6fc875834268eb9fd73704eaf708d2f0d49996ddf683ad7551f66ab3e2954e14",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:08:00.000Z",
+          "ingested_at": "2026-09-08T06:21:43.808Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-23e5db1c29a3986d-claim-01",
+          "story_id": "wt-23e5db1c29a3986d",
+          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:21:43.808Z"
+        },
+        {
+          "claim_id": "wt-23e5db1c29a3986d-claim-02",
+          "story_id": "wt-23e5db1c29a3986d",
+          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:21:43.808Z"
+        },
+        {
+          "claim_id": "wt-23e5db1c29a3986d-claim-03",
+          "story_id": "wt-23e5db1c29a3986d",
+          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:21:43.808Z"
+        },
+        {
+          "claim_id": "wt-23e5db1c29a3986d-claim-04",
+          "story_id": "wt-23e5db1c29a3986d",
+          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:21:43.808Z"
+        },
+        {
+          "claim_id": "wt-23e5db1c29a3986d-claim-05",
+          "story_id": "wt-23e5db1c29a3986d",
+          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:21:43.808Z"
+        }
+      ],
+      "content_hash": "a865f02cf1875125bf81c801468838c385389827ed05d762e251b0bf445b2d8c",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T06:36:43.808Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T06:21:43.808Z",
+      "event_first_seen_at": "2026-09-05T10:57:29.473Z",
+      "event_detected_at": "2026-09-05T10:57:29.473Z",
+      "event_id": "event-2f21c5a1c223e3d2beee",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.730133333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 4044.2389166666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T06:21:43.808Z",
+        "fingerprint": "161eb613990925fdcd5e7f82b0ca014144eb6f610da42467114bd01dfc30da12",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T06:21:43.808Z",
+      "rejection": {
+        "at": "2026-09-08T06:21:43.808Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-41c3c1a09870ebed",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "807a324d1a6a753eb38a3cd9ac921697c1e5fdf2f79281f1e29f250339db5a26",
+        "first_failed_at": "2026-09-08T06:21:43.808Z",
+        "failed_at": "2026-09-08T06:21:43.808Z",
+        "retry_after": "2026-09-08T06:36:43.808Z",
+        "retry_count": 1
+      },
+      "slug": "staatsfinanzen-gesamtmetall-hauptgeschaftsfuhrer-zander-fordert-umfassende-reformen-in-a-70ebed",
+      "title": "Staatsfinanzen - Gesamtmetall-Hauptgeschäftsführer Zander fordert umfassende Reformen: \"In allen Bereichen muss gespart werden\"",
+      "first_seen": "2026-09-08T06:06:39.000Z",
+      "last_updated": "2026-09-08T06:06:39.000Z",
+      "topic": [
+        "Gesundheit",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/gesamtmetall-hauptgeschaeftsfuehrer-zander-fordert-umfassende-reformen-in-allen-bereichen-muss-gespa-100.html",
+          "title": "Staatsfinanzen - Gesamtmetall-Hauptgeschäftsführer Zander fordert umfassende Reformen: \"In allen Bereichen muss gespart werden\"",
+          "summary": "Mit Blick auf die Haushaltsplanungen der Bundesregierung hat Gesamtmetall-Hauptgeschäftsführer Zander die Rufe nach umfassenden Reformen der Staatsfinanzen bekräftigt. Als Ansatzpunkte für Sparmaßnahme nannte Zander im Deutschlandfunk das Stellenwachstum im öffentlichen Dienst, die steigenden Kosten im Gesundheitswesen und die Subventionen etwa auf Diesel und Dienstwagen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T06:06:39.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4fd176464521ef443d3e3af7a5013dfa34a6c32cd5c93e5ceeb0a0fa161e59e3",
+          "source_item_id": "d70bcbe38d5020deba81d91da5358a096421900c28d3b7220e9596a1b84cdded",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:06:39.000Z",
+          "ingested_at": "2026-09-08T06:21:43.808Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-41c3c1a09870ebed-claim-01",
+          "story_id": "wt-41c3c1a09870ebed",
+          "claim": "Staatsfinanzen - Gesamtmetall-Hauptgeschäftsführer Zander fordert umfassende Reformen: \"In allen Bereichen muss gespart werden\": Mit Blick auf die Haushaltsplanungen der Bundesregierung hat Gesamtmetall-Hauptgeschäftsführer Zander die Rufe nach umfassenden Reformen der Staatsfinanzen bekräftigt. Als Ansatzpunkte für Sparmaßnahme nannte Zander im Deutschlandfunk das Stellenwachstum im öffentlichen Dienst, die steigenden Kosten im Gesundheitswesen und die Subventionen etwa auf Diesel und Dienstwagen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:21:43.808Z"
+        }
+      ],
+      "content_hash": "bec4d9891f02ca063736bc0e9f4b2cfc520914299f44db075e66316248404b91",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T06:36:43.808Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T06:21:43.808Z",
+      "event_first_seen_at": "2026-09-08T06:21:43.808Z",
+      "event_detected_at": "2026-09-08T06:21:43.808Z",
+      "event_id": "event-e769a887655ca8147b2a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesundheit",
+          "Finanzen"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.080133333333333,
+        "detection_delay_minutes": 15.080133333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T06:21:43.808Z",
+        "fingerprint": "b53d9a07a5d742240246d2050557871ea325acd4e02a50728e6f16a94fc4b644",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T06:21:43.808Z",
+      "rejection": {
+        "at": "2026-09-08T06:21:43.808Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-6f1ebd47aa7215ca",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "7758f18dd03a32d413cdc72f8fd65dbda1a2a6a822c9c1f201de55ab0fca524f",
+        "first_failed_at": "2026-09-08T06:21:43.808Z",
+        "failed_at": "2026-09-08T06:21:43.808Z",
+        "retry_after": "2026-09-08T06:36:43.808Z",
+        "retry_count": 1
+      },
+      "slug": "bei-63-der-paare-in-deutschland-haben-frau-und-mann-den-gleichen-bildungsstand-7215ca",
+      "title": "Bei 63 % der Paare in Deutschland haben Frau und Mann den gleichen Bildungsstand",
+      "first_seen": "2026-09-08T06:00:00.000Z",
+      "last_updated": "2026-09-08T06:00:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "destatis-aktuell",
+          "publisher": "Statistisches Bundesamt",
+          "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_37_p002.html",
+          "title": "Bei 63 % der Paare in Deutschland haben Frau und Mann den gleichen Bildungsstand",
+          "summary": "Die meisten Menschen in Deutschland wählen eine Partnerin oder einen Partner mit dem gleichen Bildungsniveau wie sie selbst. Wie das Statistische Bundesamt (Destatis) auf Grundlage des Mikrozensus mitteilt, hatten 2025 bei 63 % der gemischtgeschlechtlichen Paare beide Personen den gleichen oder einen ähnlichen Bildungsabschluss. Unterscheidet sich das Bildungsniveau, dann hat meistens der Mann den höheren Abschluss. Im letzten Jahr traf das auf ein Viertel (25 %) der Paare zu. Der umgekehrte Fall tritt seltener ein: Bei 13 % der Paare war die Frau im Vergleich zu ihrem Partner formal höher gebildet.",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T06:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 95,
+          "source_topic": "Wirtschaft",
+          "content_hash": "d59e2d8aefd606d36260e560b77bdcd90ae658f7b78666fdc98b98d35dcc4ac2",
+          "source_item_id": "32accaab7781036a8200aa3e82d914948640da8cdee4ac9b3f53183514f89701",
+          "publisher_id": "destatis-aktuell",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T06:00:00.000Z",
+          "ingested_at": "2026-09-08T06:21:43.808Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:destatis-aktuell",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6f1ebd47aa7215ca-claim-01",
+          "story_id": "wt-6f1ebd47aa7215ca",
+          "claim": "Bei 63 % der Paare in Deutschland haben Frau und Mann den gleichen Bildungsstand: Die meisten Menschen in Deutschland wählen eine Partnerin oder einen Partner mit dem gleichen Bildungsniveau wie sie selbst. Wie das Statistische Bundesamt (Destatis) auf Grundlage des Mikrozensus mitteilt, hatten 2025 bei 63 % der gemischtgeschlechtlichen Paare beide Personen den gleichen oder einen ähnlichen Bildungsabschluss. Unterscheidet sich das Bildungsniveau, dann hat meistens der Mann den höheren Abschluss. Im letzten Jahr traf das auf ein Viertel (25 %) der Paare zu. Der umgekehrte Fall tritt seltener ein: Bei 13 % der Paare war die Frau im Vergleich zu ihrem Partner formal höher gebildet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "destatis-aktuell",
+          "source_function": "institutional_statement",
+          "status": "primary_source_claim",
+          "provenance": {
+            "origin": "publisher:destatis-aktuell",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T06:21:43.808Z"
+        }
+      ],
+      "content_hash": "4106c427d2a496e9f697d66a6dbd7da74799a08dd974ad39db902c98ff23d728",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T06:36:43.808Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T06:21:43.808Z",
+      "event_first_seen_at": "2026-09-08T06:21:43.808Z",
+      "event_detected_at": "2026-09-08T06:21:43.808Z",
+      "event_id": "event-804cb93840f476077e27",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.730133333333335,
+        "detection_delay_minutes": 21.730133333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T06:21:43.808Z",
+        "fingerprint": "8abe110614efc5657fb5c511c4e558c3b5ab3e4f660d81e57fc79eec618f0dd1",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T06:21:43.808Z",
+      "rejection": {
+        "at": "2026-09-08T06:21:43.808Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-78b8df2827ab4527",
       "slug": "gesprache-uber-ein-friedensabkommen-us-gesandte-in-moskau-mit-putin-zusammengekommen-ab4527",
@@ -2601,10 +3412,10 @@
       "story_id": "wt-05ffa4fef8bee914",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "62047269fef95586e522951156568cb85342a135ebd90b603e14f5c678b06f28",
-        "first_failed_at": "2026-09-08T05:52:13.496Z",
-        "failed_at": "2026-09-08T05:52:13.496Z",
-        "retry_after": "2026-09-08T06:07:13.496Z",
+        "fingerprint": "5fc0bd8fb8f627a18638334aa0a3ff0932c3608a91c0dd05c337c7d625c18f9f",
+        "first_failed_at": "2026-09-08T06:21:43.808Z",
+        "failed_at": "2026-09-08T06:21:43.808Z",
+        "retry_after": "2026-09-08T06:36:43.808Z",
         "retry_count": 1
       },
       "slug": "bundestag-haushaltswoche-beginnt-gut-200-milliarden-euro-neuverschuldung-in-2027-geplant-bee914",
@@ -2657,7 +3468,7 @@
           "title": "Bundestag - Haushaltswoche beginnt - mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant",
           "summary": "Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T05:48:08.000Z",
+          "published_at": "2026-09-08T06:06:39.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -2673,8 +3484,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T05:48:08.000Z",
-          "ingested_at": "2026-09-08T05:52:13.496Z",
+          "source_published_at": "2026-09-08T06:06:39.000Z",
+          "ingested_at": "2026-09-08T06:21:43.808Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2703,7 +3514,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:52:13.496Z"
+          "checked_at": "2026-09-08T06:21:43.808Z"
         },
         {
           "claim_id": "wt-05ffa4fef8bee914-claim-02",
@@ -2723,7 +3534,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:52:13.496Z"
+          "checked_at": "2026-09-08T06:21:43.808Z"
         }
       ],
       "content_hash": "ea3dd40c3ad5942dfd004fe08a46db4d264cd4ace0d40bd102f6ca9878f5d451",
@@ -2732,13 +3543,13 @@
       "quality_errors": [
         "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T06:07:13.496Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T06:36:43.808Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T05:52:13.496Z",
+      "updated_at": "2026-09-08T06:21:43.808Z",
       "event_first_seen_at": "2026-09-07T22:37:09.924Z",
       "event_detected_at": "2026-09-07T22:37:09.924Z",
       "event_id": "event-dd4cc5404c117c50633c",
@@ -2773,20 +3584,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 4.0916,
+        "source_age_minutes": 15.080133333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 435.0595333333333,
+        "queue_age_minutes": 464.5647333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 97,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T05:52:13.496Z",
+        "checked_at": "2026-09-08T06:21:43.808Z",
         "fingerprint": "5f426df0c914b750ff27afbd0ccc845e59c2df6c6e54805bf5662d56f4a6d476",
         "issue_codes": [],
         "warning_codes": []
@@ -8709,7 +9520,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -11639,7 +12450,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -12275,7 +13086,7 @@
             "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
             "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T05:48:08.000Z",
+            "published_at": "2026-09-08T06:06:39.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -12291,8 +13102,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T05:48:08.000Z",
-            "ingested_at": "2026-09-08T05:52:13.496Z",
+            "source_published_at": "2026-09-08T06:06:39.000Z",
+            "ingested_at": "2026-09-08T06:21:43.808Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -12313,7 +13124,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -13837,7 +14648,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T17:08:13.000Z",
-            "ingested_at": "2026-09-08T05:52:13.496Z",
+            "ingested_at": "2026-09-08T06:21:43.808Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -13858,7 +14669,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
           "issue_codes": [],
           "warning_codes": []
@@ -14974,7 +15785,7 @@
             "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
             "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T05:48:08.000Z",
+            "published_at": "2026-09-08T06:06:39.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -14990,8 +15801,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T05:48:08.000Z",
-            "ingested_at": "2026-09-08T05:52:13.496Z",
+            "source_published_at": "2026-09-08T06:06:39.000Z",
+            "ingested_at": "2026-09-08T06:21:43.808Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -15012,7 +15823,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -17865,7 +18676,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T09:34:25.000Z",
-            "ingested_at": "2026-09-08T05:52:13.496Z",
+            "ingested_at": "2026-09-08T06:21:43.808Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17886,7 +18697,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -18935,7 +19746,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "1db019db3e38cbd7a31297d78ff78c013fe66f289bde97e6059e3c3af70bc478",
           "issue_codes": [],
           "warning_codes": []
@@ -19047,7 +19858,7 @@
       "verification_started_at": "2026-09-07T22:08:06.487Z",
       "publish_ready_at": "2026-09-07T22:08:15.331Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -19404,9 +20215,12 @@
         "generated_at": "2026-09-07T22:09:18.469Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "0c526e8a010aacdc682a67cce9deacae4a5a100dd1fb3232f8641229f059e427",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "8bfea5517251303d654c52e308c46c97a86be4c10269cc5ca0fcacf5e2644bea",
+        "checked_at": "2026-09-08T06:21:43.808Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T12:21:43.808Z",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
@@ -19441,24 +20255,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
-          "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-a4cdfee3b5ff57be",
@@ -20834,10 +21633,13 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "MEDIA_IMPACT_REQUIRED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T06:36:43.808Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -20845,11 +21647,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "448b95b9210781b0a3b73b516aba35c3e95c2f48f102dee86b7b5a02dff5cf95",
+        "first_failed_at": "2026-09-08T06:21:43.808Z",
+        "failed_at": "2026-09-08T06:21:43.808Z",
+        "retry_after": "2026-09-08T06:36:43.808Z",
+        "retry_count": 1
       }
     },
     {
@@ -21968,7 +22778,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -22549,7 +23359,7 @@
       "verification_started_at": "2026-09-07T20:40:41.314Z",
       "publish_ready_at": "2026-09-07T20:40:57.012Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -23023,9 +23833,12 @@
         "generated_at": "2026-09-07T20:43:09.986Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "842c93b7e2db5750dbe7d3151076f409e56496080ca8763db4c9da7963ab8abd",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "33b1099e631badab9efbb75565607cda496ef257918ed0cc2ada92a810e217eb",
+        "checked_at": "2026-09-08T06:21:43.808Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T12:21:43.808Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -23051,7 +23864,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T05:52:13.496Z",
+            "ingested_at": "2026-09-08T06:21:43.808Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -23060,24 +23873,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
-          "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-6f87da7ae6b08d63",
@@ -26588,7 +27386,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -30581,9 +31379,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T05:58:36.742Z",
+        "checked_at": "2026-09-08T06:21:43.808Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:58:36.742Z",
+        "expires_at": "2026-09-08T12:21:43.808Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -35259,7 +36057,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -39956,7 +40754,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -45507,7 +46305,7 @@
       "verification_started_at": "2026-09-07T15:52:08.728Z",
       "publish_ready_at": "2026-09-07T15:52:28.388Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -45971,10 +46769,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "6ed3db010ceb53ff55efbde7fe8525419de4cb98f1c53eab328dbf094b7d63eb",
-        "checked_at": "2026-09-08T00:22:05.326Z",
+        "fingerprint": "a757642851208a4f9c1d6d76b9ba7cb56c32e30708d2370e68cb7ac53b13b275",
+        "checked_at": "2026-09-08T06:21:43.808Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T06:22:05.326Z",
+        "expires_at": "2026-09-08T12:21:43.808Z",
         "sources": [
           {
             "source_id": "taz-aktuell",
@@ -46000,7 +46798,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T15:31:00.000Z",
-            "ingested_at": "2026-09-07T20:36:52.379Z",
+            "ingested_at": "2026-09-08T06:21:43.808Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -46011,62 +46809,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "ff2c0544cea3a39e4b531910a7eee1e49ccd8f50d6512a2b644ad1f19da01bc2",
-        "sources": [
-          {
-            "source_id": "taz-aktuell",
-            "publisher": "taz",
-            "url": "https://taz.de/EU-und-Groenland/!6210832",
-            "title": "EU und Grönland: Auf der Suche nach einem Platz an der nordischen Sonne",
-            "summary": "Der Beziehungsstatus zwischen der Europäischen Union und Grönland ist kompliziert. Nun wagt die EU einen neuen Vorstoß mit einem Millionen-Programm. mehr...",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T15:31:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "81aab42de7fbe852787e65690e684839be59187d1b8a01426572f229ba2c5f35",
-            "source_item_id": "b9a9ac48f4bf2b5df0a56c12e24873709e92727dbab6c54ceab17c269292c6e0",
-            "publisher_id": "taz",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T15:31:00.000Z",
-            "ingested_at": "2026-09-08T05:52:13.496Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:taz",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
-          "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-37e17053b3aa84c3",
@@ -54833,7 +55576,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -56876,7 +57619,7 @@
       "verification_started_at": "2026-09-07T14:22:09.453Z",
       "publish_ready_at": "2026-09-07T14:22:31.946Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -57406,9 +58149,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "7f267e2e1c31c55212d48c50413412f001a506d2607d81791ea28a55b6e582f3",
-        "checked_at": "2026-09-07T23:52:11.826Z",
+        "checked_at": "2026-09-08T06:21:43.808Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T05:52:11.826Z",
+        "expires_at": "2026-09-08T12:21:43.808Z",
         "sources": [
           {
             "source_id": "wdr-nachrichten",
@@ -57445,62 +58188,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "fc8a2e4b73af59cc4e5bf14c6c0d0ffb7f3a21c45b3fa5413f683ac95c7ff0aa",
-        "sources": [
-          {
-            "source_id": "wdr-nachrichten",
-            "publisher": "WDR",
-            "url": "https://www1.wdr.de/nrw/dortmund/verletzte-fussballspiel-hoeschpark-dortmund-100.html",
-            "title": "Angriff bei Fußballspiel im Dortmunder Hoeschpark",
-            "summary": "Bei einem Kreisligaspiel im Dortmunder Hoeschpark hat ein Zuschauer einen Fußballspieler mit einem Klappstuhl angegriffen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T11:41:46.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "a26d269ae614b15053e69833f77aa5b8b9ef6f2717d4f00c00909b7d75991cfb",
-            "source_item_id": "a774bad954f07e285e272791ca15cd09407393368ea19cc871f197d6462cdc43",
-            "publisher_id": "wdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Nordrhein-Westfalen"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T11:41:46.000Z",
-            "ingested_at": "2026-09-07T14:07:07.178Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
-          "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-890f4dfeb31e6cb8",
@@ -72727,7 +73415,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T05:52:13.496Z",
+          "ingested_at": "2026-09-08T06:21:43.808Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -72788,7 +73476,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:58:36.742Z"
+          "checked_at": "2026-09-08T06:21:43.808Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -72808,7 +73496,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:58:36.742Z"
+          "checked_at": "2026-09-08T06:21:43.808Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -72824,7 +73512,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T05:58:36.742Z",
+      "updated_at": "2026-09-08T06:21:43.808Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -72864,7 +73552,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1251.7229833333333,
+        "queue_age_minutes": 1274.84075,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -72873,7 +73561,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T05:58:36.742Z",
+        "checked_at": "2026-09-08T06:21:43.808Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -74231,313 +74919,6 @@
       "rejected_at": "2026-09-07T20:54:05.943Z",
       "rejection": {
         "at": "2026-09-07T20:54:05.943Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-23e5db1c29a3986d",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "ce6d4d6bfd4ec6536d3dcf9a08ac36efe62cb959495671bb20ad4d7f48ff36b5",
-        "first_failed_at": "2026-09-07T13:35:44.462Z",
-        "failed_at": "2026-09-07T13:35:44.462Z",
-        "retry_after": "2026-09-07T13:50:44.462Z",
-        "retry_count": 1
-      },
-      "slug": "uniper-unipers-kritische-rolle-beim-auffullen-der-gasspeicher-a3986d",
-      "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
-      "first_seen": "2026-09-05T10:12:00.000Z",
-      "last_updated": "2026-09-07T07:33:00.000Z",
-      "topic": [
-        "Energie"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/deutschlands-gasspeicher-warum-uniper-wieder-unverzichtbar-wird/100251801.html",
-          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
-          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-05T10:12:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "1172b6a6b4bc98615131c7e212317c25611ea201af7024a93bc91e01f79e1a18",
-          "source_item_id": "c025f627707b43b240e1038defd2f2668a845f6e95227f0623d577c5a202d8ea",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-05T10:12:00.000Z",
-          "ingested_at": "2026-09-05T10:57:29.473Z",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/gasspeicher-warum-uniper-wieder-unverzichtbar-wird/100251801.html",
-          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
-          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-06T06:12:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "cdc4820f6e3251c6795cb14794b77a99c6ce7f51d8fb4df48e5acb7dbbe3d9d7",
-          "source_item_id": "78b5f511b22f02d4dce93a10343fb740425a48b6d8a3ce8952ea1ba8cfac72b9",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-06T06:12:00.000Z",
-          "ingested_at": "2026-09-06T06:21:40.343Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/deutschlands-gasspeicher-warum-uniper-nun-wieder-unverzichtbar-wird/100251801.html",
-          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
-          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T07:33:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "fcb88d26d2cb599ff76f64c2a05b41586c377dd450bf0b33cad33750dde471ef",
-          "source_item_id": "04838b0135973b5669de615363f9865e4f55a8e75c819bbbcfbe29ce1e5694ef",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T07:33:00.000Z",
-          "ingested_at": "2026-09-07T10:21:55.886Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/deutschlands-gasspeicher-warum-uniper-jetzt-wieder-unverzichtbar-wird/100251801.html",
-          "title": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher",
-          "summary": "Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T10:15:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "35236d527b19b844d297027ee33c8c4e3a79db7bdc4455a62a59d9f7892ca858",
-          "source_item_id": "d5a8906bbc9b718583636210ee0461021fd543dec0417298e7b37692cf67eca0",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T10:15:00.000Z",
-          "ingested_at": "2026-09-07T13:35:44.462Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-23e5db1c29a3986d-claim-01",
-          "story_id": "wt-23e5db1c29a3986d",
-          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T13:35:44.462Z"
-        },
-        {
-          "claim_id": "wt-23e5db1c29a3986d-claim-02",
-          "story_id": "wt-23e5db1c29a3986d",
-          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T13:35:44.462Z"
-        },
-        {
-          "claim_id": "wt-23e5db1c29a3986d-claim-03",
-          "story_id": "wt-23e5db1c29a3986d",
-          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T13:35:44.462Z"
-        },
-        {
-          "claim_id": "wt-23e5db1c29a3986d-claim-04",
-          "story_id": "wt-23e5db1c29a3986d",
-          "claim": "Uniper: Unipers kritische Rolle beim Auffüllen der Gasspeicher: Deutschland droht im Winter das Gas auszugehen. Schon wieder. Dem Energiekonzern Uniper kommt das gelegen. Er positioniert sich als Chefimporteur.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T13:35:44.462Z"
-        }
-      ],
-      "content_hash": "eec67fc6cfa570c2d707ff2316f07fe87db83798d3a5aed89cd5ed895ee25114",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-07T13:50:44.462Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-07T13:35:44.462Z",
-      "event_first_seen_at": "2026-09-05T10:57:29.473Z",
-      "event_detected_at": "2026-09-05T10:57:29.473Z",
-      "event_id": "event-2f21c5a1c223e3d2beee",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie"
-        ],
-        "dimensions": [
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 200.74103333333332,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 3038.2498166666664,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 58,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T13:35:44.462Z",
-        "fingerprint": "dc2658227e319e3467c90919efc230fdf27d7a84dc38d8bd80f4ef094b5d8539",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T13:35:44.462Z",
-      "rejection": {
-        "at": "2026-09-07T13:35:44.462Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -93388,7 +93769,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -94081,7 +94462,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -94835,7 +95216,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T05:52:13.496Z",
+            "ingested_at": "2026-09-08T06:21:43.808Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -94856,7 +95237,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -95500,10 +95881,12 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T06:36:43.808Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -95511,11 +95894,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "fbee0412c89ff6cf43c964b36379370bb741e6f4f69cfbde24fb7cda9bc8ad20",
+        "first_failed_at": "2026-09-08T06:21:43.808Z",
+        "failed_at": "2026-09-08T06:21:43.808Z",
+        "retry_after": "2026-09-08T06:36:43.808Z",
+        "retry_count": 1
       }
     },
     {
@@ -102799,7 +103190,7 @@
       "verification_started_at": "2026-09-06T18:00:00.910Z",
       "publish_ready_at": "2026-09-06T18:00:15.606Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -103238,10 +103629,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "a9e54de288942831bb9f8f589d532ea473ed45cd3115e471d6e478ef02fad903",
-        "checked_at": "2026-09-07T23:08:50.989Z",
+        "fingerprint": "3ee7d49c8a2cf1881a63e700efabbdb87172ce6f07462cb4adff2542235a653d",
+        "checked_at": "2026-09-08T06:21:43.808Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T05:08:50.989Z",
+        "expires_at": "2026-09-08T12:21:43.808Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -103311,95 +103702,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "a8dea1f0437c6948f8be4eb3bcbf8308d84c0930f32a425b5ec481501f16a7f4",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/ministerpraesident-schulze-cdu-raeumt-niederlage-ein-klingbeil-spd-spricht-von-signal-an-berlin-100.html",
-            "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Ministerpräsident Schulze (CDU) räumt Niederlage ein - Klingbeil (SPD) spricht von \"Signal an Berlin\"",
-            "summary": "+++ Die Junge Union Sachsen-Anhalt fordert einem Magazinbericht zufolge den Rücktritt von Ministerpräsident Schulze.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T17:47:51.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "c41fb85688ea9b82961522cfee6fd1dfd43880a623be9641aa5d346c220773ad",
-            "source_item_id": "8641dbb261d09f7c9d54671f6f3f85cd28a226809fe31c6634890289d6a1069a",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T17:47:51.000Z",
-            "ingested_at": "2026-09-06T17:52:07.787Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/video/livestreams/mdr-plus/eventlivestream-mediathek-mdr-aktuell-live-cdu-reaktion-100.html",
-            "title": "Landtagswahl in Sachsen-Anhalt: So reagiert die CDU",
-            "summary": "Die Landtagswahl in Sachsen-Anhalt ist Geschichte. Wie geht es jetzt weiter? Sehen Sie hier im Livestream Statement und Pressekonferenz der CDU.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T17:22:47.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "a0996fb22977a7078a727f72953c3effc0dfbf25490deee8093cdb2840f76f20",
-            "source_item_id": "518837add10c8a268ca480ddedc9a5b00646f58d14993d6399404583f5b8a260",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T17:22:47.000Z",
-            "ingested_at": "2026-09-07T12:14:01.175Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
-          "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-6a495a63964121c7",
@@ -123305,7 +123608,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -129335,7 +129638,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -173689,7 +173992,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:58:36.742Z",
+          "checked_at": "2026-09-08T06:21:43.808Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
