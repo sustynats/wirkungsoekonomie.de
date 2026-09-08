@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T10:07:26.127Z",
-  "updated_at": "2026-09-08T10:07:26.127Z",
+  "updated_at": "2026-09-08T10:20:48.403Z",
   "stories": [
     {
       "story_id": "wt-fba5823fb7d08999",
@@ -2418,12 +2418,57 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "981d3250837636f351aff6f49b5e7081da4e4bf834fbba61a6e94f4ac0841026",
         "first_failed_at": "2026-09-08T08:37:27.504Z",
-        "failed_at": "2026-09-08T08:37:27.504Z",
-        "retry_after": "2026-09-08T08:52:27.504Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:50:48.403Z",
+        "retry_count": 2
       },
       "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
       "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-08T10:20:48.403Z",
+          "retained_urls": [
+            "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+            "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-prien-besorgniserregender-befund-100.html",
+              "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie - Prien: \"Besorgniserregender Befund\"",
+              "summary": "Deutschlands Schüler rutschen laut der neuen PISA-Bildungsstudie im internationalen Vergleich immer weiter ab. Die Ergebnisse von 15-Jährigen in Mathematik, Lesekompetenz und Naturwissenschaften sind die schlechtesten, die je gemessen wurden, wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD) in Paris mitteilte. Vertreter von Politik und Wirtschaft reagierten alarmiert.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:04:29.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "075ed040837db7674a2dc4cb2f9bd6435bdbff579d43efe9c3ab266af9a43505",
+              "source_item_id": "a0ada3f4f5f5df6283c48fda29ff07188280e6ce343ef76a103d21307d653c50",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:04:29.000Z",
+              "ingested_at": "2026-09-08T10:07:26.127Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
       "first_seen": "2026-09-08T08:33:20.000Z",
       "last_updated": "2026-09-08T10:04:29.000Z",
       "topic": [
@@ -2496,39 +2541,6 @@
             "basis": "publisher_only_origin_unverified",
             "independence_established": false
           }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-prien-besorgniserregender-befund-100.html",
-          "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie - Prien: \"Besorgniserregender Befund\"",
-          "summary": "Deutschlands Schüler rutschen laut der neuen PISA-Bildungsstudie im internationalen Vergleich immer weiter ab. Die Ergebnisse von 15-Jährigen in Mathematik, Lesekompetenz und Naturwissenschaften sind die schlechtesten, die je gemessen wurden, wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD) in Paris mitteilte. Vertreter von Politik und Wirtschaft reagierten alarmiert.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T10:04:29.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "075ed040837db7674a2dc4cb2f9bd6435bdbff579d43efe9c3ab266af9a43505",
-          "source_item_id": "a0ada3f4f5f5df6283c48fda29ff07188280e6ce343ef76a103d21307d653c50",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T10:04:29.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
         }
       ],
       "claims": [
@@ -2550,7 +2562,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         },
         {
           "claim_id": "wt-4c0a09f9ce090af7-claim-02",
@@ -2570,40 +2582,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
-        },
-        {
-          "claim_id": "wt-4c0a09f9ce090af7-claim-03",
-          "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie - Prien: \"Besorgniserregender Befund\": Deutschlands Schüler rutschen laut der neuen PISA-Bildungsstudie im internationalen Vergleich immer weiter ab. Die Ergebnisse von 15-Jährigen in Mathematik, Lesekompetenz und Naturwissenschaften sind die schlechtesten, die je gemessen wurden, wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD) in Paris mitteilte. Vertreter von Politik und Wirtschaft reagierten alarmiert.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
-      "content_hash": "128fad1836f5c8d69c92fd09810aa83ab7863d5432e72182b60a7d5622d485e2",
+      "content_hash": "7fa8894f7eb486e63fcc9406a54c494820a29ac125418e30e3ba278cd1a589fb",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T10:50:48.403Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T08:37:27.504Z",
       "event_detected_at": "2026-09-08T08:37:27.504Z",
       "event_id": "event-c4b5ca1a2fb30541bcc7",
@@ -2640,21 +2635,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2.9521166666666665,
-        "detection_delay_minutes": 0,
+        "source_age_minutes": 107.47338333333333,
+        "detection_delay_minutes": 4.125066666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 89.97705,
+        "queue_age_minutes": 103.34831666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 99,
+        "news_freshness_score": 78,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
-        "fingerprint": "b5d808f653654893d73a5716af400806caf270c761047e5de31454ed795eac2b",
+        "checked_at": "2026-09-08T10:20:48.403Z",
+        "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -2805,6 +2800,147 @@
         "version": "1.0",
         "checked_at": "2026-09-08T10:07:26.127Z",
         "fingerprint": "843121e2db178ab365c16b6bc787d9cfa16027e6637e5ec4d9cc27fc2f80598b",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-6222cd9512fe2eb2",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a9fd3b7c7c595babe6ad68129baa0ee5134e514e18728e61d79ad23fc07727cb",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
+      "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-prien-besorgniserregender-be-fe2eb2",
+      "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie - Prien: \"Besorgniserregender Befund\"",
+      "first_seen": "2026-09-08T10:04:29.000Z",
+      "last_updated": "2026-09-08T10:04:29.000Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-prien-besorgniserregender-befund-100.html",
+          "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie - Prien: \"Besorgniserregender Befund\"",
+          "summary": "Deutschlands Schüler rutschen laut der neuen PISA-Bildungsstudie im internationalen Vergleich immer weiter ab. Die Ergebnisse von 15-Jährigen in Mathematik, Lesekompetenz und Naturwissenschaften sind die schlechtesten, die je gemessen wurden, wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD) in Paris mitteilte. Vertreter von Politik und Wirtschaft reagierten alarmiert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T10:04:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "075ed040837db7674a2dc4cb2f9bd6435bdbff579d43efe9c3ab266af9a43505",
+          "source_item_id": "a0ada3f4f5f5df6283c48fda29ff07188280e6ce343ef76a103d21307d653c50",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T10:04:29.000Z",
+          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6222cd9512fe2eb2-claim-01",
+          "story_id": "wt-6222cd9512fe2eb2",
+          "claim": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie - Prien: \"Besorgniserregender Befund\": Deutschlands Schüler rutschen laut der neuen PISA-Bildungsstudie im internationalen Vergleich immer weiter ab. Die Ergebnisse von 15-Jährigen in Mathematik, Lesekompetenz und Naturwissenschaften sind die schlechtesten, die je gemessen wurden, wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung (OECD) in Paris mitteilte. Vertreter von Politik und Wirtschaft reagierten alarmiert.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T10:20:48.403Z"
+        }
+      ],
+      "content_hash": "8b63160fe43c6fca7d9887c121930b6a87853a15995c9fd4e7fa62c47d5ed48a",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
+      "reassessment": false,
+      "fresh": false,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T10:20:48.403Z",
+      "event_first_seen_at": "2026-09-08T10:20:48.403Z",
+      "event_detected_at": "2026-09-08T10:20:48.403Z",
+      "event_id": "event-da919c191f982d7965f7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.323383333333332,
+        "detection_delay_minutes": 16.323383333333332,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T10:20:48.403Z",
+        "fingerprint": "8118400240545d43c330a0b1fd1298c7e7de60b5b6078cf741545bd62f277e77",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -2961,6 +3097,14 @@
     },
     {
       "story_id": "wt-427243811c7ee309",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "42889cf4fc3fe10480847be9d8f344286ac91966d0f397a16eef532b882f4362",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
       "slug": "krieg-russlands-gegen-die-ukraine-london-sagt-kyjiw-100-millionen-pfund-zu-tote-nach-ang-7ee309",
       "title": "Krieg Russlands gegen die Ukraine: London sagt Kyjiw 100 Millionen Pfund zu – Tote nach Angriffen in der Hauptstadt",
       "first_seen": "2026-09-08T10:00:00.000Z",
@@ -3022,20 +3166,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "351c04268199a20f94b66d303cf8d7c65dde9aa5c4e4debe9d9e7a8f46e6af48",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-2dd460997049c8818a69",
@@ -3068,27 +3212,47 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7.43545,
+        "source_age_minutes": 20.806716666666667,
         "detection_delay_minutes": 7.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 96,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "15c834730143cca3983bdf3d3f06e18c16c10763f6203dde4613830382f4821b",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:20:48.403Z",
+      "rejection": {
+        "at": "2026-09-08T10:20:48.403Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
       "story_id": "wt-a5d40d2440740c71",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "0fd546143be95811cc0e40c765b8cfe89a89485dbedb03f09df4e552bf58e7c1",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
       "slug": "pisa-studie-kinderhilfswerk-fordert-starkeren-fokus-auf-bildungsgerechtigkeit-740c71",
       "title": "Pisa-Studie: Kinderhilfswerk fordert stärkeren Fokus auf Bildungsgerechtigkeit",
       "first_seen": "2026-09-08T09:57:09.000Z",
@@ -3150,20 +3314,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "e7137c11acfdbdf3c38d3d94db9e5c6f05f6ff21067846e6ecb0e52934b24487",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-90666e44b529c9a9fe3a",
@@ -3198,33 +3362,45 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 10.28545,
+        "source_age_minutes": 23.656716666666668,
         "detection_delay_minutes": 10.28545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "a9858c568368bcca739ddb09f6b73ec31adf0d5a82843464dfe2707f32b0feb3",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:20:48.403Z",
+      "rejection": {
+        "at": "2026-09-08T10:20:48.403Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
       "story_id": "wt-55396a7301aa0e36",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "91d2ea1f2558bcd032ecbbf2c84e45b178faab1826be7d6edba904ed772fbaca",
-        "first_failed_at": "2026-09-08T08:06:49.615Z",
-        "failed_at": "2026-09-08T08:06:49.615Z",
-        "retry_after": "2026-09-08T08:21:49.615Z",
+        "fingerprint": "71004d126d8c4a1ca91d1914361b1ce041ab08af2e346495b9cc56409ef879d4",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
         "retry_count": 1
       },
       "slug": "nahostkonflikt-berichte-london-sanktioniert-siedlungen-im-westjordanland-aa0e36",
@@ -3324,7 +3500,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         },
         {
           "claim_id": "wt-55396a7301aa0e36-claim-02",
@@ -3344,20 +3520,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "314cff7ddee007005f91030a27a6c1dc35fb80a6d4353c503f39e427ba4fe2db",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T08:06:49.615Z",
       "event_detected_at": "2026-09-08T08:06:49.615Z",
       "event_id": "event-986b65b56d8c9beac934",
@@ -3396,23 +3572,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 12.652116666666666,
+        "source_age_minutes": 26.023383333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 120.60853333333333,
+        "queue_age_minutes": 133.9798,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 95,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "f55b7486e5e23ebbfb5d8db3942cd88c50653656f4bc7720dd2ac2e5e18355c9",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:20:48.403Z",
+      "rejection": {
+        "at": "2026-09-08T10:20:48.403Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -3511,7 +3699,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         },
         {
           "claim_id": "wt-f95054aec8b1d506-claim-02",
@@ -3531,7 +3719,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "07ac56f54d2a37be4377ac4def4e2fa7268ed04e8b0bc38602dcc09fd6d589a3",
@@ -3544,7 +3732,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-937fb42f74c0c9a4680f",
@@ -3579,20 +3767,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 13.568783333333334,
+        "source_age_minutes": 26.94005,
         "detection_delay_minutes": 13.568783333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "27ac87defa641bb8cd11ed6968b9a040acd215f64aa3a0b1419fdb73b4d7d38a",
         "issue_codes": [],
         "warning_codes": []
@@ -3823,7 +4011,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "ec8debabde3c91f300b89a8d858e2c448da38594a9f9073119f3fc600a9f0e73",
@@ -3836,7 +4024,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4994339e3cba54abf672",
@@ -3869,20 +4057,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.168783333333334,
+        "source_age_minutes": 33.54005,
         "detection_delay_minutes": 20.168783333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "0750f682e943f3eb0bd486ef420dfe3f2fad6fe5a641d9ee7d7c5a6b38084e4e",
         "issue_codes": [],
         "warning_codes": []
@@ -3890,6 +4078,14 @@
     },
     {
       "story_id": "wt-22a23ceaebed387c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "3203507d44a4c493b440561fa3d01860c4b3782819f5ebfc4ae56bb6044fda39",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
       "slug": "israel-gaza-mohammed-bin-zayed-vae-soll-benjamin-netanyahu-vor-hamas-attacke-am-7-oktobe-ed387c",
       "title": "Israel - Gaza: Mohammed bin Zayed (VAE) soll Benjamin Netanyahu vor Hamas-Attacke am 7. Oktober explizit gewarnt haben",
       "first_seen": "2026-09-08T09:44:00.000Z",
@@ -3951,20 +4147,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "5029535990f99e57a10b98aef4a2b4033eb2c70c7dbb740f01d385ee3ffa7a0a",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c761db43615bc5e8d2a8",
@@ -3997,27 +4193,47 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 23.43545,
+        "source_age_minutes": 36.80671666666667,
         "detection_delay_minutes": 23.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "2242679d123e40eb73d12234c0e061043d6d0d286e14980b3e06402acdf89f31",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:20:48.403Z",
+      "rejection": {
+        "at": "2026-09-08T10:20:48.403Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
       "story_id": "wt-45e21184245f6091",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e8c2e21406d43004ae92ce383c386f67de2861d9e6c72d9058a452b6b83c2a4d",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
       "slug": "globale-studie-fast-1-7-millionen-menschen-weltweit-sollen-2023-an-folgen-von-passivrauc-5f6091",
       "title": "Globale Studie: Fast 1,7 Millionen Menschen weltweit sollen 2023 an Folgen von Passivrauchen gestorben sein",
       "first_seen": "2026-09-08T09:42:55.000Z",
@@ -4079,20 +4295,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "113ec0ce4dbac5bb10df09678477f96fb28f360610b1938cb2042149464195fc",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-1f64d1dbfeca83af801e",
@@ -4127,23 +4343,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 24.51878333333333,
+        "source_age_minutes": 37.89005,
         "detection_delay_minutes": 24.51878333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "121a5f8a31ae7043ba9d7a6c49adc553c6cad31a74295ce112b6ffe4bf8812da",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:20:48.403Z",
+      "rejection": {
+        "at": "2026-09-08T10:20:48.403Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -4359,7 +4587,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "a00300db27964238a0d06db22daaee217c77e1afeb8282eec1def20105fdf889",
@@ -4372,7 +4600,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-f41ec576e0c6556a2ca9",
@@ -4408,20 +4636,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 49.43545,
+        "source_age_minutes": 62.80671666666667,
         "detection_delay_minutes": 49.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 87,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
         "issue_codes": [],
         "warning_codes": []
@@ -4429,6 +4657,14 @@
     },
     {
       "story_id": "wt-7679129a9d31dd8f",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a928e154b6d7ae3230efd82ef48b8a57f09d3f5c8274816144705f0859af2caa",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
       "slug": "trump-threatens-ban-on-bombardier-as-canada-s-retaliatory-tariffs-kick-in-31dd8f",
       "title": "Trump threatens ban on Bombardier as Canada's retaliatory tariffs kick in",
       "first_seen": "2026-09-08T09:16:17.000Z",
@@ -4492,20 +4728,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "b3aa186c4aef7139fa40f8ac981636c0a47166c798ff91367e4aac0dc2212dca",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-6df54636394a4e7a2344",
@@ -4541,23 +4777,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 51.152116666666664,
+        "source_age_minutes": 64.52338333333333,
         "detection_delay_minutes": 51.152116666666664,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 60,
-        "news_freshness_score": 79,
+        "news_freshness_score": 73,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "9f7087b77984f915b5a8d5797a38535bc8f8552b1017585e667e1cb46e17fa92",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:20:48.403Z",
+      "rejection": {
+        "at": "2026-09-08T10:20:48.403Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -4623,7 +4871,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "8f995d10c1726a40b0903002e9fb2741ac61c08b6c6fbe56f886b52ddcf4b8e1",
@@ -4636,7 +4884,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-91186fd734fe84ded1b4",
@@ -4671,20 +4919,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 62.502116666666666,
+        "source_age_minutes": 75.87338333333334,
         "detection_delay_minutes": 62.502116666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 87,
+        "news_freshness_score": 84,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "b84f558ebac0c4b61f73fc9b8337058583a4639388ee219ea7a136d8f103c98d",
         "issue_codes": [],
         "warning_codes": []
@@ -4692,6 +4940,14 @@
     },
     {
       "story_id": "wt-7d3df5b2934b92f7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c047333f201e6f1efd893dc4cebce8c856b7cd5b16b2b4e77649947f5b6e7f6f",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
       "slug": "markenrecht-eugh-starkt-ikea-gegen-rechte-partei-aus-belgien-4b92f7",
       "title": "Markenrecht: EuGH stärkt Ikea gegen rechte Partei aus Belgien",
       "first_seen": "2026-09-08T08:51:13.000Z",
@@ -4753,20 +5009,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "448cb331d4db87853501893e73e4e99b90a78f6b028030d6088c6d6476506155",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-79cc6e82b6140bb5a4c7",
@@ -4801,23 +5057,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 76.21878333333333,
+        "source_age_minutes": 89.59005,
         "detection_delay_minutes": 76.21878333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 60,
-        "news_freshness_score": 68,
+        "news_freshness_score": 63,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "c8d5383227a2dc09288788885d30a8884e3377d00bb105a79e1fd2de805140b8",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:20:48.403Z",
+      "rejection": {
+        "at": "2026-09-08T10:20:48.403Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -4883,7 +5151,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "605d736f4e364e1d63d9a13db174570f8d6acf0ea93d2ad6de60df44c5e0feb9",
@@ -4896,7 +5164,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-f6c9467feff2212f044b",
@@ -4929,20 +5197,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 76.61878333333334,
+        "source_age_minutes": 89.99005,
         "detection_delay_minutes": 76.61878333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 84,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "2f24caa604c770e4181acef0efb0da59f981a32d0760c5986f621e6e417902f4",
         "issue_codes": [],
         "warning_codes": []
@@ -5112,6 +5380,14 @@
     },
     {
       "story_id": "wt-771a6e65c689385c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "dc10255b6b075c4b7eb6bd66cfbf1cdda10a4ca0b817302ce0a0e4295de706e4",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
       "slug": "rohstoffe-olpreise-weiten-gewinne-aus-brent-nahert-sich-marke-von-100-dollar-89385c",
       "title": "Rohstoffe: Ölpreise weiten Gewinne aus – Brent nähert sich Marke von 100 Dollar",
       "first_seen": "2026-09-08T08:48:06.000Z",
@@ -5173,20 +5449,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "79588d09a6e700218267b1763db495ec1e6c968384be991eddcbcc5f224727ff",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T10:35:48.403Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-5fd1fa1beafd4e902814",
@@ -5219,23 +5495,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 79.33545,
+        "source_age_minutes": 92.70671666666667,
         "detection_delay_minutes": 79.33545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 83,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "4a1ebccfc10b9a4821b86e3f4c39984d09772855ff775e1287df4ec9462df47c",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T10:20:48.403Z",
+      "rejection": {
+        "at": "2026-09-08T10:20:48.403Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -5732,7 +6020,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
           "issue_codes": [],
           "warning_codes": []
@@ -7689,7 +7977,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -7704,7 +7992,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -7745,7 +8033,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": null
@@ -7754,7 +8042,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -7824,7 +8112,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -7839,7 +8127,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -7879,7 +8167,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 13.371266666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": null
@@ -7888,7 +8176,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -9172,7 +9460,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "de7c0bfb450d11ccd96ecdb764b76f9861eeed321be70fdc3d21b1f05e3d91ee",
           "issue_codes": [],
           "warning_codes": []
@@ -10021,7 +10309,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -10727,7 +11015,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -12860,7 +13148,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -16630,7 +16918,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -20391,7 +20679,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -21116,7 +21404,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -22291,7 +22579,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "7058d23c9246612a31343345ae582873e03ef1dcd138d22c83c048f96c4900e7",
           "issue_codes": [],
           "warning_codes": []
@@ -23233,7 +23521,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -26206,7 +26494,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -26956,7 +27244,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -28119,7 +28407,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -28544,9 +28832,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T16:07:26.127Z",
+        "expires_at": "2026-09-08T16:20:48.403Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -29149,7 +29437,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "b6eac9ae04448a841c4dd4b15ba5312652100dd079ff9f977e47c18e0d1ecd2c",
           "issue_codes": [],
           "warning_codes": []
@@ -32066,7 +32354,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -33323,7 +33611,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -33884,7 +34172,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -35393,7 +35681,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -35921,7 +36209,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "5bcda75ca15146769f2ebfdac151168ed145dfee00818f3f0083be9e3dc29b3f",
           "issue_codes": [],
           "warning_codes": []
@@ -36612,7 +36900,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -37759,7 +38047,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -38279,7 +38567,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -39036,7 +39324,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -41493,7 +41781,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -42991,7 +43279,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -44066,7 +44354,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -45596,9 +45884,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T16:07:26.127Z",
+        "expires_at": "2026-09-08T16:20:48.403Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -47770,161 +48058,7 @@
           "source_count": 3
         }
       ],
-      "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-08T08:37:27.504Z",
-        "content_hash": "249568f3cbfab03d04f6ff378c88922e5d832bc86383c4f114d50e45d2db8801",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-100.html",
-            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen",
-            "summary": "Auf der Suche nach dem Tatverdächtigen im Zusammenhang mit mehreren Sabotageaktionen gegen das deutsche Stromnetz läuft ein Großeinsatz der Polizei am Hambacher Forst. Ein Reporter der Deutschen Presse-Agentur berichtet von bis zu 100 Polizeifahrzeugen vor Ort.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T18:19:40.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "9d812be6208cdb25d5279142f4527709a7c5c46b2024dad0418355d9f5a6823c",
-            "source_item_id": "6fef603152ab459a6ecc4846ba67409e76fb827a24b030594968f6e0af7af221",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T18:19:40.000Z",
-            "ingested_at": "2026-09-06T18:21:34.663Z",
-            "agency_origin": "dpa",
-            "agency_origin_confidence": "high",
-            "provenance": {
-              "origin": "agency:dpa",
-              "basis": "agency_attribution_in_available_text",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-100.html",
-            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
-            "summary": "Wegen versuchter Sabotage-Angriffe auf das deutsche Stromnetz hat die Polizei mit einem Großaufgebot am Hambacher Forst bei Kerpen westlich von Köln nach dem Tatverdächtigen gesucht - ohne Erfolg. Es seien keine Hinweise gefunden worden. Die generelle Fahndung nach dem Täter gehe aber weiter, teilte die Polizei mit.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T21:05:27.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "c3eb294d00d22a521af8890c6afee6069cec7ef81d67aeaba88b8eda3e531296",
-            "source_item_id": "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T21:05:27.000Z",
-            "ingested_at": "2026-09-06T21:38:52.134Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-102.html",
-            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
-            "summary": "Wegen versuchter Sabotage-Angriffe auf das deutsche Stromnetz hat die Polizei mit einem Großaufgebot am Hambacher Forst bei Kerpen westlich von Köln nach dem Tatverdächtigen gesucht - ohne Erfolg. Es seien keine Hinweise gefunden worden. Die generelle Fahndung nach dem Täter gehe aber weiter, teilte die Polizei mit.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T06:31:50.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "918823902893b8a98930597831d840e250b8dec70ba4fce1a1072552f374dbea",
-            "source_item_id": "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T06:31:50.000Z",
-            "ingested_at": "2026-09-07T06:36:51.010Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/sabotage-am-stromnetz-polizei-findet-bekennerschreiben-100.html",
-            "title": "Nordrhein-Westfalen - Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
-            "summary": "Nach dem Fund von selbstgebauten Sprengvorrichtungen an Hochspannungsleitungen in Nordrhein-Westfalen hat die Polizei ein weiteres Bekennerschreiben gefunden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T08:33:20.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "8c9f6104f17f5ca29487ce34cc6271a24c72f209284cbb404fd268aaf3b359a8",
-            "source_item_id": "22a4d493483cef366ed1d2761cda074ee14304569e89d423a83001bcb33c32d4",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T08:33:20.000Z",
-            "ingested_at": "2026-09-08T08:37:27.504Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
-          "fingerprint": "68f9bd2b95615983f532fdb6a604739ba1232025a109dd7a3b7f485700db517d",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "retirement_history": []
     },
     {
       "story_id": "wt-9274ee50d0f0d4b2",
@@ -50428,7 +50562,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -55125,7 +55259,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -61230,7 +61364,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -69794,7 +69928,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -71046,7 +71180,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "7a2c72da8e35ded18fff805a544609c7dc335a6f3cb4475cdbf05265d0956a32",
           "issue_codes": [],
           "warning_codes": []
@@ -72542,7 +72676,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -74902,7 +75036,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -75643,7 +75777,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -76043,7 +76177,7 @@
       "verification_started_at": "2026-09-07T13:37:18.001Z",
       "publish_ready_at": "2026-09-07T13:37:38.572Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -76434,116 +76568,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "80a0ce294df87e9b68b9730b85a575b26af45c0dd36eb7997ec1410bd21337a1",
-        "checked_at": "2026-09-08T05:07:06.629Z",
+        "fingerprint": "d9c333f568b8f07f398dcd35f448c11956a80af219d9db3b1e6d01bf9931b20c",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:07:06.629Z",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/panorama/verbrechen/xavier-naidoo--strafverfahren-wegen-volksverhetzung-eroeffnet-38215842.html",
-            "title": "Wegen Volksverhetzung: Landgericht Mannheim eröffnet Verfahren gegen Xavier Naidoo",
-            "summary": "Der Sänger Xavier Naidoo muss sich wegen Volksverhetzung vor Gericht verantworten. Das Landgericht Mannheim ließ eine von zwei Anklagen der Staatsanwaltschaft zu.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T12:04:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "820aba8f5a57304fb0d5861fa352d54b091d96e18d7c2baddd42d7c0740f5a81",
-            "source_item_id": "17fbc9574f0a8a4e6e670d27cc1a7cebbce265ffaec79d643f2fa44a75884ea9",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T12:04:00.000Z",
-            "ingested_at": "2026-09-07T12:14:01.175Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/gesellschaft/dpa-wegen-volksverhetzung-16026750.html",
-            "title": "Wegen Volksverhetzung: Landgericht Mannheim eröffnet Verfahren gegen Xavier Naidoo",
-            "summary": "Die Staatsanwaltschaft Mannheim erhob zweimal Anklage gegen den Sänger wegen Volksverhetzung. Eine davon lässt das Landgericht Mannheim nun zu.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T11:24:29.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "d82082bfeac847af4553a1ecb6f4fa13615901814526e8efec124d3e73017c1c",
-            "source_item_id": "8f23b3e2b33b8216b5992e9d396b5a190fb6d1c503605fda6e81f65b3898d4f3",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T11:24:29.000Z",
-            "ingested_at": "2026-09-07T16:52:04.572Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "spiegel-schlagzeilen",
-            "publisher": "DER SPIEGEL",
-            "url": "https://www.spiegel.de/panorama/justiz/xavier-naidoo-landgericht-mannheim-eroeffnet-verfahren-wegen-volksverhetzung-a-5fc326c6-19d0-43b0-a3bc-98e29eb9ac6f",
-            "title": "Xavier Naidoo: Landgericht Mannheim eröffnet Verfahren wegen Volksverhetzung",
-            "summary": "Xavier Naidoo wird vorgeworfen, antisemitische Inhalte verbreitet zu haben. Die Staatsanwaltschaft erhob Anklagen wegen Volksverhetzung, eine davon hat das Landgericht Mannheim nun zugelassen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T12:11:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "b2ac828c9d510ef04603a2897f82fb2505342316c950f2c0a665a52dbd00bd0f",
-            "source_item_id": "905204221d2626bff5f886d15e64594c2314ecbfa7f57776c4bfcb099d827099",
-            "publisher_id": "spiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T12:11:00.000Z",
-            "ingested_at": "2026-09-07T14:37:01.659Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:spiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "f5e602ff5416dfd544d6ab54f9e9ea6b83e7f64ecfc857ebc0b8c5b6fcc84f27",
+        "expires_at": "2026-09-08T16:20:48.403Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -76710,24 +76738,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
-          "fingerprint": "ab38f7579a4c708cb844cb55f6048905dce75fa4622e439fad3a24873b78c8fa",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-5a752aeec4a6875b",
@@ -87869,7 +87882,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -87889,7 +87902,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:07:26.127Z"
+          "checked_at": "2026-09-08T10:20:48.403Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -87905,7 +87918,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T10:07:26.127Z",
+      "updated_at": "2026-09-08T10:20:48.403Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -87945,7 +87958,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1500.5460666666668,
+        "queue_age_minutes": 1513.9173333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -87954,7 +87967,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T10:07:26.127Z",
+        "checked_at": "2026-09-08T10:20:48.403Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -107221,7 +107234,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -108216,7 +108229,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -108917,7 +108930,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -109692,7 +109705,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -110355,7 +110368,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -114466,7 +114479,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "3a48062f9f17240bc2032436aad30d6f1ece4f3bfb6aa68a85a440c21ebcb6c1",
           "issue_codes": [],
           "warning_codes": []
@@ -115768,7 +115781,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
           "issue_codes": [],
           "warning_codes": []
@@ -119139,7 +119152,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -145026,7 +145039,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -189380,7 +189393,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T10:07:26.127Z",
+          "checked_at": "2026-09-08T10:20:48.403Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
