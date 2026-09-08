@@ -23185,15 +23185,13 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T00:52:14.401Z",
-      "next_attempt_at": "2026-09-08T01:07:14.401Z",
+      "last_attempt_at": "2026-09-08T01:09:57.682Z",
+      "next_attempt_at": "2026-09-08T01:24:57.682Z",
       "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "AI_BATCH_PENDING"
+      "reason": "BATCH_RETRY_LIMIT"
     },
     "wt-f03755f6f6b8c3b7": {
       "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
