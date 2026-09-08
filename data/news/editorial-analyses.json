@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T00:37:12.999Z",
+  "updated_at": "2026-09-08T00:52:14.401Z",
   "candidates": [
     {
       "story_id": "wt-7b385f58748f3d32",
@@ -41,7 +41,7 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "93379a94be74cad99051049d5d3bb535add7d8a9b7afaba14847f81d2689ad1e",
+      "fingerprint": "e523b7d244db5e2c70b8f012f93cf2ee04a1dbbe972efde41f6ce94dc7579be0",
       "status": "published",
       "analysis_id": "woek-analysis-dab9cdd59202"
     },
@@ -9805,7 +9805,7 @@
       },
       "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
       "method_version": "1.0",
-      "source_fingerprint": "93379a94be74cad99051049d5d3bb535add7d8a9b7afaba14847f81d2689ad1e",
+      "source_fingerprint": "e523b7d244db5e2c70b8f012f93cf2ee04a1dbbe972efde41f6ce94dc7579be0",
       "candidate_score": 76,
       "analysis_gain_score": 52,
       "evidence_gate": {
@@ -9819,77 +9819,78 @@
         "reasons": []
       },
       "published_at": "2026-09-06T16:37:35.523Z",
-      "updated_at": "2026-09-08T00:37:12.999Z",
-      "version": 2,
-      "editorial_question": "Was ändert sich systemisch, wenn Polizeibehörden Bekennerschreiben zu Strom-Sabotage für authentisch halten und die Fahndung weiterläuft?",
+      "updated_at": "2026-09-08T00:52:14.401Z",
+      "version": 3,
+      "editorial_question": "Was ändert sich systemisch, wenn Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten – und was bleibt offen?",
       "analysis_type": "case_analysis",
       "title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
-      "subtitle": "Wie eine Authentizitätsbewertung die Lage bei kritischer Infrastruktur verschiebt",
-      "teaser": "Die Meldung beschreibt mehr als einen Ermittlungsstand: Wenn Bekennerschreiben als echt gelten, verändert das Fahndung, Objektschutz und Risikowahrnehmung zugleich.",
-      "seo_description": "Polizeibehörden halten Bekennerschreiben zu Strom-Sabotage für authentisch. Die Fahndung läuft weiter; Jänschwalde und Bergheim sind genannt.",
-      "additional_value": "Der Beitrag ordnet nicht nur den Bericht ein, sondern trennt den belegten Sachverhalt von der wirkungsökonomischen Folge: Eine Authentizitätszuschreibung kann die Ermittlungs- und Schutzlogik an kritischer Infrastruktur verändern, ohne dass daraus schon eine breitere Systemwirkung belegt wäre. So wird sichtbar, wo die Quelle trägt, wo nur ein plausibler Wirkpfad liegt und wo die Unsicherheit bleibt.",
-      "research_summary": "Gesichert nach der gelieferten Meldung ist, dass Polizeibehörden die Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten, die Fahndung weiterläuft und Jänschwalde sowie Bergheim bei Köln als Tatorte genannt werden. Die Quelle berichtet außerdem von zwei Schreiben derselben Person, handschriftlicher Form, Namensunterzeichnung und Täterwissen. In den weiteren gelieferten Kontextquellen tauchen ähnliche Berichte auf; eine unabhängige Primärbestätigung der Täterschaft liegt in den gelieferten Daten nicht vor. Daraus folgt vor allem ein Wirkpfad über Ermittlungsprioritäten, Schutzmaßnahmen und öffentliche Risikowahrnehmung, nicht über bereits eingetretene Strukturfolgen.",
+      "subtitle": "Warum die Meldung mehr ist als ein Ermittlungsdetail: Sie verschiebt Schutz, Risiko und Aufmerksamkeit bei kritischer Infrastruktur.",
+      "teaser": "Die Polizei hält die Schreiben für authentisch, die Fahndung läuft weiter. Für die Wirkungökonomie zählt jetzt vor allem, wie sich Ermittlungen, Schutz von Infrastruktur und öffentliche Risikowahrnehmung gegenseitig verstärken.",
+      "seo_description": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Fahndung läuft, die Schutzfrage bleibt offen.",
+      "additional_value": "Der Beitrag trennt sauber zwischen dem belegten Ermittlungsstand, der möglichen Wirkung auf Schutz und Resilienz kritischer Infrastruktur und der offenen Frage, ob daraus mehr als eine kommunikative Bedrohungswahrnehmung entsteht.",
+      "research_summary": "Die gelieferte Lage beruht auf einer rbb24-Meldung mit ARD-Informationen sowie mehreren kontextuellen Berichten von Deutschlandfunk, WDR, ZDFheute, Stern und Tagesspiegel. Belegt ist, dass Polizeibehörden die Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten und dass die Fahndung weiterläuft. Mehrere Quellen nennen Jänschwalde und weitere Orte, einige sprechen von einem mutmaßlichen Einzeltäter oder Tatverdächtigen. Unbelegt bleibt in den gelieferten Quellen eine unabhängige Bestätigung der Täterschaft, des Motivs und einer bereits eingetretenen Systemwirkung. Die Analyse bleibt deshalb bei plausiblen Wirkpfaden, nicht bei harten Folgerungen.",
       "sections": [
         {
           "id": "lage",
-          "title": "Lage: Eine Echtheitsbewertung verschiebt die Ermittlungsfrage",
+          "title": "Die Lage: Ein Schreiben, eine Fahndung, ein neues Lagebild",
           "paragraphs": [
-            "Ein Bekennerschreiben, das von der Polizei für echt gehalten wird, ist zuerst einmal kein Symbol, sondern ein Ermittlungswerkzeug. Es macht aus einem unklaren Sabotageverdacht eine stärker personalisierte Lage. Die Meldung nennt Jänschwalde und Bergheim bei Köln als Tatorte und berichtet von einer laufenden Fahndung. Damit ändert sich die operative Frage: nicht mehr nur, was an der Stromversorgung beschädigt wurde, sondern wer dahinterstehen könnte und ob weitere Taten drohen.",
-            "Wirkungsökonomisch ist das eine Zustandsänderung in der Informationslage. Die Reichweite der Meldung ist dabei nicht die Wirkung selbst. Wirkung entsteht erst dort, wo Behörden, Betreiber oder Öffentlichkeit ihr Verhalten ändern. Genau dieser Übergang ist hier plausibel, aber in der gelieferten Datenlage noch nicht als eingetretene Folge belegt."
+            "Erst einmal steht ein konkreter Punkt im Raum: Polizeibehörden halten die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch, und die Fahndung läuft weiter. Die rbb24-Meldung stützt sich auf ARD-Informationen und nennt Jänschwalde sowie Bergheim bei Köln als Tatorte. Auch andere gelieferte Berichte greifen die laufende Fahndung und die Prüfung der Schreiben auf. So verschiebt sich die Lage von einem offenen Sabotageverdacht hin zu einer personalisierten Ermittlungsrichtung.",
+            "Für die Wirkungsperspektive ist das wichtig, weil damit nicht nur ein einzelner Vorfall beschrieben wird, sondern ein mögliches Muster von Angriff, Zuschreibung und Schutzreaktion. Aber: In den gelieferten Quellen ist die Täterschaft nicht unabhängig bestätigt. Deshalb bleibt die Lagebeschreibung vorläufig und quellengebunden."
           ],
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
           ],
           "visual": {
             "type": "cascade",
             "caption": "Wirkpfad in Alltagssprache",
             "items": [
               {
-                "title": "1. Meldung",
-                "text": "Die Polizei hält Bekennerschreiben zu Strom-Sabotage für authentisch.",
+                "title": "Schritt 1",
+                "text": "Polizei hält die Bekennerschreiben für authentisch und sucht weiter nach der Person.",
                 "status": "fact",
                 "relation": "scope",
                 "direction": "open",
-                "condition": "Nur die berichtete Einschätzung, keine eigene Bestätigung",
+                "condition": "Gilt nur als berichtete Ermittlungs- und Lageeinschätzung; keine endgültige Täterschaft belegt.",
                 "source_ids": [
                   "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
                 ]
               },
               {
-                "title": "2. Ermittlungsänderung",
-                "text": "Die Lage wird stärker als personengebundene Fahndung und weniger als anonymer Einzelfall behandelt.",
+                "title": "Schritt 2",
+                "text": "Die Ermittlungen richten sich stärker auf eine mögliche Täterspur und auf weitere Tatorte.",
                 "status": "analytical_inference",
                 "relation": "impact_path",
-                "direction": "mixed",
-                "condition": "Wenn die Echtheitsbewertung trägt",
+                "direction": "negative",
+                "condition": "Wenn die Authentizität der Schreiben trägt, bündeln sich Ressourcen auf Fahndung und Spurensicherung.",
                 "source_ids": [
-                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
                 ]
               },
               {
-                "title": "3. Schutzreaktion",
-                "text": "Betreiber und Behörden können Schutz und Kontrolle an kritischer Infrastruktur verstärken.",
+                "title": "Schritt 3",
+                "text": "Betreiber kritischer Infrastruktur können Schutz und Lagebewertung anpassen.",
                 "status": "impact_risk",
                 "relation": "impact_path",
-                "direction": "negative",
-                "condition": "Wenn weitere Vorfälle befürchtet werden",
+                "direction": "mixed",
+                "condition": "Nur plausibel, wenn die Bedrohung als glaubhaft gilt; das Ausmaß bleibt offen.",
                 "source_ids": [
                   "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                  "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
                 ]
               },
               {
-                "title": "4. Systemfolge",
-                "text": "Mehr Sicherheitsaufwand kann Resilienz stärken, bindet aber zugleich Ressourcen.",
+                "title": "Schritt 4",
+                "text": "Die öffentliche Wahrnehmung von Sicherheit kann sich verschieben, auch ohne neue Sachlage.",
                 "status": "scenario",
                 "relation": "impact_path",
-                "direction": "mixed",
-                "condition": "Bei anhaltender Bedrohungswahrnehmung oder weiteren Taten",
+                "direction": "open",
+                "condition": "Nur kommunikative Wirkung; keine belegte Ereignisfolge in den Quellen.",
                 "source_ids": [
-                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
                 ]
               }
             ]
@@ -9897,23 +9898,76 @@
         },
         {
           "id": "system",
-          "title": "System: Kritische Energieinfrastruktur reagiert auf Informations- und Sicherheitsdruck",
+          "title": "Systemischer Zusatznutzen: Warum der Fall über den Einzelfall hinausreicht",
           "paragraphs": [
-            "Die eigentliche Systemfrage liegt nicht im Bekennerschreiben selbst, sondern in der Kopplung zwischen Sabotageverdacht, Sicherheitsarchitektur und öffentlicher Lageeinschätzung. Kritische Energieinfrastruktur ist auf Ausfallsicherheit und schnelle Reaktion angewiesen. Sobald Ermittler eine Täterschaft für plausibel halten, verschiebt sich der Fokus von der Schadensaufnahme zu Prävention, Fahndung und Schutz weiterer Anlagen.",
-            "Daraus entsteht ein Wirkpfad mit Rückkopplung: Je glaubwürdiger eine Sabotagespur wirkt, desto eher werden Überwachung, Bewachung und Lageabgleich verstärkt. Das kann helfen, weitere Schäden zu begrenzen. Gleichzeitig kann es Personal, Mittel und Aufmerksamkeit aus anderen Schutzbereichen abziehen. Diese Verlagerung ist keine bloße Reichweite, sondern eine tatsächliche Steuerungsfolge, wenn sie umgesetzt wird."
+            "Der zusätzliche systemische Zusammenhang liegt nicht im bloßen Nachrichtwert, sondern in der Kopplung von kritischer Infrastruktur, Ermittlungsarbeit und Risikoanpassung. Wenn ein Sabotagefall glaubhaft einem oder mehreren Tatorten zugeordnet wird, reagieren Polizei, Betreiber und Öffentlichkeit nicht isoliert. Sie passen ihre jeweiligen Routinen an. Genau darin steckt die Wirkungsökonomie: Eine kleine Informationsänderung kann operative Prioritäten verschieben, ohne dass schon eine große physische Folgewirkung bewiesen wäre.",
+            "Das ist kein Automatismus. Es ist ein Wirkpfad mit Bedingungen. Erst wenn die Zuschreibung trägt, steigt die Wahrscheinlichkeit, dass Schutzkonzepte überprüft, Fahndungsressourcen gebunden und Lagebilder enger geführt werden. Das ist eine Veränderung von Zuständen, nicht von Absichten. Reichweite allein ist noch keine Wirkung."
           ],
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d",
-            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
-          ]
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Die Schreibenzuschreibung wird als authentisch behandelt.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Nur berichtete Polizei- und ARD-Einschätzung.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Die Ermittlungs- und Schutzlogik richtet sich auf eine konkrete Täterspur.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn die Zuschreibung belastbar ist, steigt die Wahrscheinlichkeit gebündelter Fahndung.",
+                "source_ids": [
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Betreiber kritischer Infrastruktur prüfen Schutz und Resilienz enger.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Nur bedingt plausibel; konkrete Maßnahmen sind in den Quellen nicht beschrieben.",
+                "source_ids": [
+                  "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba",
+                  "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Die Debatte über Schutz kritischer Infrastruktur gewinnt Gewicht.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Nur als kommunikatives und organisatorisches Folgepotenzial, nicht als belegte Strukturreform.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "mpd",
-          "title": "Mensch, Planet, Demokratie: unterschiedliche Betroffenheiten",
+          "title": "Mensch, Planet, Demokratie: die betroffenen Ebenen",
           "paragraphs": [
-            "Für Menschen ist der naheliegendste Effekt die Versorgungssicherheit. Stromsabotage an Umspannwerken und Stromleitungen kann bei Wiederholung oder Ausweitung zu konkreten Risiken für Haushalte, Betriebe und sensible Einrichtungen führen. In der gelieferten Quelle ist kein Stromausfall in größerem Ausmaß belegt; daher bleibt die unmittelbare Wirkung offen, der Schutzbedarf aber plausibel.",
-            "Für den Planeten ergibt sich aus der Quelle kein direkter Umweltpfad. Mittelbar kann die Debatte über Stromversorgung und fossile Energien zwar angestoßen werden, doch das ist hier nur als berichtete Kommunikationslage sichtbar, nicht als belegt eingetretener Klima- oder Umweltwirkungspfad. Für die Demokratie ist relevant, dass kritische Infrastruktur ein Kernbereich staatlicher Schutzverantwortung ist. Die öffentliche Information über laufende Fahndungen kann Vertrauen in Ermittlungsfähigkeit stützen, solange sie sauber zwischen Befund und Vermutung trennt."
+            "Auf der Mensch-Ebene geht es zuerst um Sicherheit und Verlässlichkeit. Wer Strominfrastruktur sabotiert, greift nicht abstrakt ein System an, sondern eine alltägliche Grundlage: Versorgung, Arbeit, Erreichbarkeit und im Ernstfall auch Hilfe. In den gelieferten Berichten ist keine konkrete Versorgungsstörung als Folge belegt, aber die Bedrohungslage selbst verändert bereits Prioritäten und Aufmerksamkeit. Das betrifft unmittelbar Polizei, Betreiber und mittelbar die Bevölkerung.",
+            "Auf der Planet-Ebene ist kein direkter Umweltpfad belegt. Es gibt zwar in der Meldung einen Hinweis auf Kritik an der Stromversorgung aus fossilen Brennstoffen, doch das ist erst einmal ein Inhalt des Schreibens, kein Nachweis eines Umwelt- oder Klimawirkens. Auf der Demokratie-Ebene ist der Schutz kritischer Infrastruktur relevant, weil staatliche Handlungsfähigkeit, öffentliche Sicherheit und Informationsvertrauen zusammenhängen. Auch hier gilt: Die Quelle belegt eine Fahndung und eine Authentizitätsbewertung, aber keine politische Folgeregelung."
           ],
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
@@ -9924,36 +9978,37 @@
             "caption": "Wirkpfad in Alltagssprache",
             "items": [
               {
-                "title": "Energieversorgung",
-                "text": "Sabotageverdacht lenkt Schutz auf Anlagen und Netzbetreiber.",
-                "status": "analytical_inference",
-                "relation": "impact_path",
-                "direction": "positive",
-                "condition": "Wenn Schutzmaßnahmen gezielt ausgebaut werden",
+                "title": "Schritt 1",
+                "text": "Ein Sabotagehinweis erreicht Polizei und Öffentlichkeit.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Berichtet, nicht unabhängig verifiziert.",
                 "source_ids": [
-                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
                 ]
               },
               {
-                "title": "Menschen",
-                "text": "Mehr Schutz kann Ausfallrisiken für Haushalte und Betriebe senken, bindet aber Ressourcen.",
+                "title": "Schritt 2",
+                "text": "Sicherheitsbehörden priorisieren Schutz und Fahndung.",
                 "status": "analytical_inference",
                 "relation": "impact_path",
-                "direction": "mixed",
-                "condition": "Bei tatsächlich erhöhtem Schutzniveau",
+                "direction": "negative",
+                "condition": "Wenn die Bedrohung als glaubhaft gilt, werden Ressourcen umgesteuert.",
                 "source_ids": [
-                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
                 ]
               },
               {
-                "title": "Demokratie",
-                "text": "Saubere, nachvollziehbare Information unterstützt Vertrauen in Ermittlungen und staatlichen Schutz.",
-                "status": "scenario",
+                "title": "Schritt 3",
+                "text": "Die öffentliche Wahrnehmung von Versorgungssicherheit kann sinken.",
+                "status": "impact_risk",
                 "relation": "impact_path",
-                "direction": "positive",
-                "condition": "Wenn Vorläufigkeit und Beleglage klar benannt werden",
+                "direction": "negative",
+                "condition": "Nur kommunikativ plausibel; kein gemessener Effekt in den Quellen.",
                 "source_ids": [
+                  "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e",
                   "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
                 ]
               }
@@ -9962,52 +10017,53 @@
         },
         {
           "id": "wirkungsordnungen",
-          "title": "Wirkungsordnungen: von der Einordnung zur Kaskade",
+          "title": "Wirkungsordnungen 1 bis 3: vom Fall zur Systemantwort",
           "paragraphs": [
-            "Auf der ersten Ordnung steht die unmittelbare Zustandsänderung: Die Polizei stuft Bekennerschreiben als authentisch ein und sucht weiter nach einer Person. Auf der zweiten Ordnung verschiebt sich die Arbeitslogik bei Ermittlern und Betreibern. Es werden Lagebilder, Schutzkonzepte und Prioritäten angepasst. Auf der dritten Ordnung kann das, wenn es anhält oder sich bestätigt, zu dauerhaften Sicherheitsroutinen, mehr Resilienzanforderungen und womöglich zu einem Lock-in in strengere Schutzregime führen.",
-            "Das ist keine automatische Eskalation, sondern ein bedingter Pfad. Nichtkompensation spielt hier nur indirekt eine Rolle: Zusätzlicher Schutz kann Schäden verhindern, ersetzt aber nicht die zugrunde liegende Verwundbarkeit der Infrastruktur. Reverse Merit Order wäre nur dann relevant, wenn Schutzkapazitäten aus guten Gründen zuerst dort konzentriert werden, wo das Schadenspotenzial am höchsten ist. Die Quelle liefert dafür Anhaltspunkte, aber keinen vollständigen Steuerungsplan."
+            "Wirkungsordnung eins ist hier die unmittelbare Ermittlungs- und Schutzreaktion. Die Polizei sucht weiter, prüft Schreiben und ordnet den Fall offenbar einer konkreten Täterspur zu. Das ist eine reale Zustandsänderung in der Bearbeitung des Ereignisses. Wirkungsordnung zwei liegt in der möglichen Anpassung von Schutzkonzepten, Lagebildern und Koordination bei Netzbetreibern und Behörden. Diese Stufe ist in den Quellen nicht als Maßnahme beschrieben, aber als Reaktion plausibel.",
+            "Wirkungsordnung drei betrifft Rückkopplungen im System. Wenn ähnliche Fälle öffentlich breit berichtet werden, kann das Diskurse über Resilienz, Schutzstandards und Priorisierung kritischer Infrastruktur verschieben. Das kann zu mehr Schutz führen, aber auch zu Lock-ins in härtere Sicherungslogiken. Ob das tatsächlich eintritt, bleibt offen. Reverse-Merit-Order im Sinne einer Priorisierungsfrage wäre erst dann relevant, wenn Schutzressourcen zwischen besonders verletzlichen und weniger verletzlichen Objekten systematisch umverteilt würden; dafür liefern die Quellen keinen Nachweis."
           ],
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d"
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
           ],
           "visual": {
             "type": "cascade",
             "caption": "Wirkpfad in Alltagssprache",
             "items": [
               {
-                "title": "1. Erste Ordnung",
-                "text": "Die Polizei hält die Schreiben für echt und fahndet weiter.",
+                "title": "Schritt 1",
+                "text": "Ermittlungen werden auf eine mögliche Person und weitere Spuren konzentriert.",
                 "status": "fact",
                 "relation": "impact_path",
-                "direction": "open",
-                "condition": "Berichtete Lage, keine unabhängige Bestätigung in den gelieferten Quellen",
+                "direction": "negative",
+                "condition": "Berichtete Lage, nicht endgültig bestätigt.",
                 "source_ids": [
                   "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
                 ]
               },
               {
-                "title": "2. Zweite Ordnung",
-                "text": "Behörden und Betreiber prüfen Schutz, Einsatz und Prioritäten neu.",
+                "title": "Schritt 2",
+                "text": "Schutz- und Koordinationsroutinen können angepasst werden.",
                 "status": "analytical_inference",
                 "relation": "impact_path",
                 "direction": "mixed",
-                "condition": "Wenn die Bedrohung als belastbar gilt",
+                "condition": "Nur wenn Betreiber und Behörden die Lage als glaubhaft einstufen.",
                 "source_ids": [
                   "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                  "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d"
                 ]
               },
               {
-                "title": "3. Dritte Ordnung",
-                "text": "Dauerhafterer Schutzaufwand kann zu mehr Resilienz, aber auch zu Lock-ins führen.",
+                "title": "Schritt 3",
+                "text": "Längerfristig kann die Debatte über Resilienz kritischer Infrastruktur anziehen.",
                 "status": "scenario",
                 "relation": "impact_path",
-                "direction": "mixed",
-                "condition": "Nur bei wiederholten oder bestätigten Vorfällen",
+                "direction": "open",
+                "condition": "Kommunikative Rückkopplung möglich, aber nicht belegt.",
                 "source_ids": [
-                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
                 ]
               }
             ]
@@ -10015,194 +10071,442 @@
         },
         {
           "id": "resilienz",
-          "title": "Resilienz: Schutz stärkt, kostet aber auch",
+          "title": "Resilienz: belastbar wird das System erst durch gute Reaktion",
           "paragraphs": [
-            "Die naheliegende positive Gegenwirkung ist nicht abstrakt „mehr Sicherheit“, sondern gezielte Resilienzarbeit: bessere Kontrolle an Umspannwerken, klarere Alarmwege, belastbare Lagebilder und schneller Austausch zwischen Polizei und Betreibern. Das kann Schäden reduzieren, falls es tatsächlich zu weiteren Angriffen kommt. Zugleich ist das eine ressourcenintensive Antwort. Wer mehr abschirmt, muss mehr Personal, Geld und Aufmerksamkeit binden.",
-            "Genau hier liegt der Unterschied zwischen Wirkung und Wunschbild. Eine Schutzmaßnahme ist noch kein Wirksamkeitsnachweis. Erst wenn sie im konkreten Wirkpfad Eintrittswahrscheinlichkeit oder Schadenshöhe senkt, wird aus Potenzial eine Wirkung. Die vorliegenden Quellen reichen dafür nur bedingt aus. Sie belegen vor allem den Anlass, nicht die tatsächliche Wirksamkeit bereits umgesetzter Gegenmaßnahmen."
+            "Resilienz heißt hier nicht: Angriffe verhindern können. Resilienz heißt auch: Ein System kann einen Vorfall aufnehmen, aufklären und daraus lernen, ohne in Unsicherheit zu versinken. Die Meldung deutet an, dass Polizei und andere Behörden genau das jetzt tun. Das ist noch keine positive Gegenwirkung im Sinn einer gelösten Lage, aber es ist die Voraussetzung dafür. Schutzplanken begrenzen Macht und Eintritt; sie kompensieren nicht den Vorfall.",
+            "Für Betroffene zählt zudem die Frage nach erreichbarer Hilfe. Wenn kritische Infrastruktur unter Druck gerät, braucht es klare Zuständigkeiten und verlässliche Kommunikation. In den vorliegenden Quellen bleibt offen, ob und wo konkrete Ausfälle oder Hilfebedarfe entstanden sind. Deshalb kann man nur von einem Wirkungsrisiko sprechen, nicht von einer belegten Ausfallwirkung."
           ],
           "source_ids": [
             "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Eine mögliche Sabotagespur wird ernst genommen.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Nur die berichtete Behördeneinschätzung.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Behörden und Betreiber können Schutz und Information nachschärfen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Wenn die Reaktion klar und koordiniert ist, steigt die Resilienz.",
+                "source_ids": [
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Ohne belastbare Klärung bleibt Unsicherheit bestehen.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Offen bleibt vor allem die unabhängige Bestätigung der Täterschaft.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "transformation",
+          "title": "Transformation: kein Strukturbruch, aber ein möglicher Schub für Schutzpolitik",
+          "paragraphs": [
+            "Von Transformation würde ich hier nur vorsichtig sprechen. Die Quelle belegt keinen Strukturwandel, keine neue Regel und kein neues Programm. Aber sie kann einen Schub auslösen: Wer über Sabotage an Stromversorgung liest, denkt schneller über Schutz, Redundanz und Priorisierung nach. Das ist eine Transformationswirkung im Potenzial, nicht als eingetretene Reform. Die Unterscheidung ist wichtig, damit Reichweite nicht mit Wirkung verwechselt wird.",
+            "Gerade in der Energieinfrastruktur kann ein solcher Fall später in strengere Standards, mehr Koordination und andere Risikoannahmen übersetzen. Ob das eher zur Belastung oder zur Stärkung führt, hängt von der Qualität der Reaktion ab. Ohne belastbare Gegenbelege bleibt das offen."
+          ],
+          "source_ids": [
             "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d",
-            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
-          ]
+            "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Ein Sabotagefall lenkt Aufmerksamkeit auf kritische Infrastruktur.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Berichtet, aber noch ohne unabhängige Gesamtbestätigung.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Akteure prüfen Standards, Schutz und Koordination genauer.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Nur wenn aus Aufmerksamkeit praktische Anpassung folgt.",
+                "source_ids": [
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Daraus kann mittelfristig mehr Resilienz entstehen oder mehr Aufwand ohne Zusatznutzen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Ausgang offen; die Wirkung hängt von Reaktionsqualität und Lernfähigkeit ab.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "unsicherheit",
-          "title": "Unsicherheit: Was offen bleibt, ist analytisch wichtig",
+          "title": "Unsicherheit: Was die Quellen nicht tragen",
           "paragraphs": [
-            "Offen bleibt vor allem die unabhängige Bestätigung der Täterschaft. Die Quellenlage besteht aus journalistischen Berichten; es gibt in den gelieferten Daten keine Primärquelle, kein offizielles Ermittler-Statement im Wortlaut und keine belastbare Messung von Folgewirkungen. Deshalb darf die Analyse nur einen plausiblen Wirkpfad beschreiben, keine harte Kausalität behaupten.",
-            "Offen ist auch, ob aus der Meldung ein breiter Diskurseffekt entsteht oder lediglich ein kurzer Nachrichtenimpuls. Kommunikative Wirkung ist nicht identisch mit Ereigniswirkung. Dass Medien über authentisch gehaltene Schreiben berichten, beweist weder zusätzliche Sabotage noch einen langfristigen Lock-in. Die belastbare Grenze lautet deshalb: hohe Relevanz, aber nur bedingt gesicherte Wirkungsbelege."
+            "Am stärksten ist die Evidenz für den berichteten Polizeibefund und die laufende Fahndung. Schwächer ist sie bei allem, was darüber hinausgeht: keine unabhängige Bestätigung der Täterschaft, keine belastbaren Angaben zu Motiv und Reichweite, keine gemessene Systemwirkung. Das ist kein Schönreden, sondern saubere Trennung von Beobachtung und Inferenz. Offen ist auch, wie stark die Lage tatsächlich mehrere Standorte verbindet.",
+            "Ein Gegenbefund im engeren Sinn ist nicht vorhanden; aber die Grenze der Suche ist klar. Alle gelieferten Quellen bleiben journalistische Berichte, keine Primärdokumente. Damit ist die Aussage über den Fall selbst in der Breite ähnlich, aber nicht identisch abgesichert. Für die Analyse heißt das: Der Fall ist relevant, die Folgewirkungen sind vorläufig."
           ],
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
             "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
-            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
-          ]
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e",
+            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Die Quellen berichten übereinstimmend von authentisch gehaltenen Schreiben und laufender Fahndung.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Journalistische Berichte, keine Primärquelle.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Täterzuschreibung und Motiv bleiben vorläufig.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Die Quellen tragen das nicht unabhängig zu Ende.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Systemfolgen sind plausibel, aber noch nicht belegt.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Nur bei weiterer Bestätigung oder Folgetaten könnte die Wirkungskette länger werden.",
+                "source_ids": [
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "beobachtung",
-          "title": "Beobachtung: Woran sich die Lage prüfen lässt",
+          "title": "Worauf jetzt zu achten ist",
           "paragraphs": [
-            "Für die weitere Einordnung zählen drei Beobachtungspunkte. Erstens: Bestätigen Ermittler die Authentizität der Schreiben und die Zuordnung zu einer Person? Zweitens: Werden weitere Tatorte, weitere Schreiben oder konkrete Sicherungsmaßnahmen öffentlich benannt? Drittens: Verändert sich der operative Schutz von Stromanlagen, also Bewachung, Zugangskontrolle oder Koordination mit Betreibern?",
-            "Diese Punkte entscheiden darüber, ob aus der Meldung nur eine verdichtete Fahndungslage wird oder ein dauerhafter Resilienzimpuls. Auch hier gilt: Keine vorschnelle Schlussfolgerung. Erst wenn Zustandsänderungen sichtbar werden, ist eine wirkungsökonomische Zurechnung gerechtfertigt. Ohne diese Beobachtungen bleibt der Fall vor allem ein ernstes, aber noch eng umrissenes Sicherheitsereignis."
+            "Beobachtungspunkt eins ist die weitere Ermittlungsbestätigung. Wird die Authentizität der Schreiben belastbar unterlegt oder relativiert? Beobachtungspunkt zwei ist die Schutzpraxis an betroffenen und vergleichbaren Anlagen: Gibt es sichtbare Anpassungen, Koordination oder neue Routinen? Beobachtungspunkt drei ist die öffentliche Kommunikation. Sie kann Sicherheit stärken, aber auch Unsicherheit verstärken, wenn sie zu viel andeutet und zu wenig belegt.",
+            "Gerade bei kritischer Infrastruktur zählt die Zeitverzögerung. Erst kommt der Bericht, dann die Lageanpassung, später vielleicht die strukturelle Lehre. Diese Reihenfolge ist wichtig, weil sie Kaskaden sichtbar macht, ohne sie zu dramatisieren. Wenn nichts weiter kommt, bleibt der Fall ein ernstes Ermittlungsereignis mit begrenzter Nachwirkung. Wenn neue Taten oder Belege folgen, kann die Bewertung deutlich kippen."
           ],
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
             "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
-          ]
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Ermittlungen laufen weiter und können die Lage präzisieren.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Nur wenn neue belastbare Informationen hinzukommen.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Schutzmaßnahmen können vorübergehend angepasst werden.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn Betreiber die Warnung ernst nehmen, steigt kurzfristig der Aufwand.",
+                "source_ids": [
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Mittelfristig kann daraus mehr Resilienz oder mehr Unsicherheit entstehen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Abhängig von Bestätigung, Transparenz und Reaktionsqualität.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "synthese",
-          "title": "Synthese: Der Zusatznutzen liegt in der systemischen Lesart",
+          "title": "Synthese: konkret, vorläufig, systemisch relevant",
           "paragraphs": [
-            "Mein Befund ist deshalb zweistufig. Erstens: Die Meldung berichtet eine für die Ermittlungen wichtige Authentizitätsbewertung und eine weiterlaufende Fahndung. Zweitens: Genau diese Bewertung kann die Schutzlogik kritischer Energieinfrastruktur verschieben. Der zusätzliche systemische Zusammenhang liegt in der Kopplung von Fahndung, Objektschutz, öffentlicher Risikowahrnehmung und möglicher Ressourcenverlagerung. Das ist mehr als eine bloße Ereignisnotiz, aber noch keine nachgewiesene Strukturveränderung.",
-            "Für die Wirkungökonomie ist die zentrale Grenze klar: Reichweite ist nicht Wirkung, und eine glaubwürdige Bedrohung ist noch kein Wirkungsnachweis. Trotzdem ist der Fall relevant, weil er zeigt, wie schnell ein einzelner Sicherheitsbericht mehrere Ebenen berühren kann: Menschen über Versorgungsschutz, Demokratie über belastbare Information und das System über Resilienz und Priorisierung. Ob daraus ein Lock-in in härtere Schutzregime entsteht, bleibt offen; plausibel ist vorerst nur der verstärkte Sicherheits- und Fahndungsdruck."
+            "Mein Befund ist schlicht: Die Meldung ist nicht deshalb relevant, weil sie groß klingt, sondern weil sie einen möglichen Angriff auf kritische Infrastruktur in ein neues Lagebild überführt. Das kann Ermittlungen bündeln, Schutz anstoßen und das Thema Resilienz von Stromversorgung und Behördenkooperation nach oben ziehen. Es ist also ein Fall mit systemischer Anschlussfähigkeit, aber ohne belegte Großwirkung. Genau diese Trennung ist entscheidend.",
+            "Für Leserinnen und Leser heißt das: Der Kern liegt nicht in der Sensation, sondern in der Frage, wie ein glaubhaft wirkender Sabotagehinweis staatliche und betriebliche Reaktionen verändert. Ob daraus mehr Sicherheit, mehr Aufwand oder vor allem mehr Unsicherheit entsteht, bleibt offen. Die Quellen tragen eine vorläufige, aber belastbare Einordnung: ernst nehmen, sauber trennen, noch nicht überdehnen."
           ],
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
-          ]
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Eine authentisch bewertete Spur verändert die Lageeinschätzung.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Berichtet, aber noch vorläufig.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Ermittlungen und Schutz können sich darauf ausrichten.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die Bewertung trägt, steigt der Koordinationsdruck.",
+                "source_ids": [
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Ob daraus eine echte Systemstärkung wird, hängt von der Reaktion ab.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Keine belegte Reform in den Quellen.",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ]
+              }
+            ]
+          }
         }
       ],
       "claim_ledger": [
         {
-          "claim": "Polizeibehörden halten die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch.",
+          "claim": "Nach ARD-Informationen halten Polizeibehörden die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch.",
           "type": "fact",
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
           ],
           "evidence_level": "high",
           "data_status": "confirmed",
-          "uncertainty": "Nur als journalistisch berichtete Einschätzung in den gelieferten Quellen enthalten; keine Primärquelle im Paket.",
+          "uncertainty": "Die Aussage ist als journalistisch berichtete Behördeneinschätzung belegt, nicht als unabhängige Primärbestätigung der Tatperson.",
           "date": "2026-09-04"
         },
         {
-          "claim": "Die Meldung nennt Jänschwalde und Bergheim bei Köln als Tatorte und berichtet von einer laufenden Fahndung.",
+          "claim": "Die Fahndung nach der Person läuft weiter.",
           "type": "fact",
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
           ],
           "evidence_level": "high",
           "data_status": "confirmed",
-          "uncertainty": "Tatzuordnung und Fahndungsstand bleiben berichtsgebunden.",
+          "uncertainty": "Der Fahndungsstatus ist nur in der Meldung belegt.",
           "date": "2026-09-04"
         },
         {
-          "claim": "Nach ARD-Informationen liegen der Polizei in Nordrhein-Westfalen und Brandenburg inzwischen zwei Bekennerschreiben derselben Person vor.",
-          "type": "fact",
-          "source_ids": [
-            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
-          ],
-          "evidence_level": "medium",
-          "data_status": "attributed",
-          "uncertainty": "Die Doppelzuschreibung ist nur indirekt berichtet.",
-          "date": "2026-09-04"
-        },
-        {
-          "claim": "Eine Authentizitätszuschreibung kann die Ermittlungs- und Schutzlogik an kritischer Energieinfrastruktur verändern.",
+          "claim": "Die berichtete Authentizitätsbewertung verschiebt die Lage von einem unklaren Sabotageverdacht zu einer personalisierten Ermittlungsrichtung.",
           "type": "analytical_inference",
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
             "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
           ],
           "evidence_level": "medium",
           "data_status": "inferred",
-          "uncertainty": "Plausibler Wirkpfad, aber keine direkt belegte Umsetzung in den gelieferten Quellen.",
+          "uncertainty": "Plausible Deutung, aber ohne direkte Wirkungsmesung.",
           "date": "2026-09-04"
         },
         {
-          "claim": "Mehr Schutz und Fahndung können einerseits Resilienz stärken, andererseits Ressourcen binden und Aufmerksamkeit verlagern.",
-          "type": "impact_risk",
+          "claim": "Ermittlungen und Schutzmaßnahmen bei kritischer Infrastruktur könnten sich durch die berichtete Lage neu ausrichten.",
+          "type": "impact_potential",
           "source_ids": [
             "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d"
+            "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
           ],
           "evidence_level": "medium",
-          "data_status": "inferred",
-          "uncertainty": "Der Ressourceneffekt ist plausibel, aber in der Quelle nicht gemessen.",
+          "data_status": "scenario",
+          "uncertainty": "Kein konkreter Maßnahmenkatalog in den Quellen; nur plausibler Reaktionspfad.",
           "date": "2026-09-04"
         },
         {
-          "claim": "Für den Planeten ergibt sich aus der Quelle kein direkter Umwelt- oder Klimawirkpfad.",
+          "claim": "Ein unmittelbarer Umwelt- oder Klimawirkpfad ist in den gelieferten Quellen nicht belastbar beschrieben.",
           "type": "observation",
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
           ],
           "evidence_level": "high",
           "data_status": "confirmed",
-          "uncertainty": "Mittelbare Energiedebatten sind möglich, aber nicht als Wirkung belegt.",
+          "uncertainty": "Negativbefund aus der Quellenlage, kein Beweis für Abwesenheit jeder Umweltfolge.",
           "date": "2026-09-04"
         },
         {
-          "claim": "Die zentrale Unsicherheit ist die fehlende unabhängige Bestätigung der Täterschaft und der Folgewirkungen.",
-          "type": "fact",
+          "claim": "Die Meldung kann die öffentliche Wahrnehmung von Versorgungssicherheit verändern, ohne dass damit eine belegte Ereignisfolge nachgewiesen ist.",
+          "type": "impact_risk",
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
             "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
           ],
-          "evidence_level": "high",
-          "data_status": "open",
-          "uncertainty": "Nur journalistische Darstellung, keine Primärbestätigung im Paket.",
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Kommunikative Wirkung plausibel, aber nicht gemessen.",
           "date": "2026-09-04"
         },
         {
-          "claim": "Die Meldung kann die Risikowahrnehmung für kritische Infrastruktur erhöhen.",
-          "type": "impact_potential",
+          "claim": "Die Quellen tragen keine unabhängige Bestätigung der Täterschaft, des Motivs oder einer bereits eingetretenen Systemwirkung.",
+          "type": "observation",
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
-            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Unsicherheit ist produktiv für die Einordnung, nicht ein Mangel der Analyse.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Wirkungsordnung eins liegt in der unmittelbaren Ermittlungs- und Schutzreaktion.",
+          "type": "woek_definition",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Methodische Einordnung, keine zusätzliche Tatsachenbehauptung.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Eine belastbare positive Gegenwirkung ist in den Quellen nicht angekündigt oder untersucht.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+          ],
+          "evidence_level": "medium",
+          "data_status": "open",
+          "uncertainty": "Schutzreaktionen können positiv wirken, sind hier aber nicht konkret belegt.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Die persönliche Einordnung sollte den Fall als systemisch relevant, aber vorläufig bewertbar beschreiben.",
+          "type": "attribution",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
           ],
           "evidence_level": "medium",
           "data_status": "inferred",
-          "uncertainty": "Kommunikatives Potenzial, keine gemessene Wahrnehmungsänderung.",
+          "uncertainty": "Journalistische Gewichtung, keine neue Tatsache.",
+          "date": "2026-09-04"
+        },
+        {
+          "claim": "Keine der gelieferten Quellen belegt bereits einen Lock-in in härtere Sicherungslogiken.",
+          "type": "fact",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Ein späterer Lock-in bleibt als Szenario offen.",
           "date": "2026-09-04"
         }
       ],
       "counter_evidence": [
         {
-          "finding": "In den gelieferten Daten liegt keine unabhängige Primärquelle zur Täterschaft oder zu den behaupteten Bekennerschreiben vor.",
+          "finding": "Die gelieferten Quellen sind journalistische Berichte; eine unabhängige Primärbestätigung der Täterschaft liegt nicht vor.",
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
             "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
           ],
-          "effect_on_assessment": "Begrenzt die Stärke jeder Zurechnung; der Wirkpfad bleibt plausibel, aber vorläufig."
+          "effect_on_assessment": "Begrenzt die Stärke jeder Zuschreibung und hält die Systemwirkung im Status vorläufig."
         },
         {
-          "finding": "Die Quelle beschreibt keine gemessenen Ausfälle, keine quantifizierten Schäden und keine gesicherte Langzeitwirkung.",
+          "finding": "Keine der Quellen belegt bereits konkrete Ausfälle oder eine messbare Versorgungskrise als Folge.",
+          "source_ids": [
+            "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+            "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+          ],
+          "effect_on_assessment": "Reduziert den Befund auf Ermittlungs-, Schutz- und Kommunikationswirkung statt auf belegte physische Kaskaden."
+        },
+        {
+          "finding": "Ein unmittelbarer Umwelt- oder Klimawirkpfad wird in den Quellen nicht beschrieben.",
           "source_ids": [
             "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
           ],
-          "effect_on_assessment": "Senkt die Evidenz für beobachtete Wirkung; die Analyse bleibt bei Potenzial und Risiko."
-        },
-        {
-          "finding": "Die weiteren gelieferten Berichte bleiben kontextuell und bestätigen vor allem die laufende Fahndung, nicht eine tiefe Systemveränderung.",
-          "source_ids": [
-            "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d",
-            "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
-          ],
-          "effect_on_assessment": "Begrenzt Aussagen zu Wirkungsordnungen 2 und 3; diese bleiben bedingt plausibel."
+          "effect_on_assessment": "Planet-Ebene bleibt relevant, aber ohne belastbare Richtung."
         }
       ],
       "editorial_rules_version": "2.0",
-      "executive_finding": "Die Meldung verändert vor allem die Lagewahrnehmung: Aus einem Sabotageverdacht wird eine personell zugespitzte Fahndungslage. Das kann Schutz und Ermittlungen bei kritischer Energieinfrastruktur verschieben und Ressourcen binden. Für die Betroffenen sind vor allem Netzbetreiber, Polizei und mittelbar Stromkundinnen und -kunden relevant. Ob daraus eine dauerhafte Strukturänderung folgt, bleibt offen; dafür fehlt in den gelieferten Quellen noch unabhängige Bestätigung und jede Messung realer Folgewirkungen.",
+      "executive_finding": "Die Meldung verändert zuerst die Ermittlungslogik: Aus einem unklaren Sabotageverdacht wird eine mögliche Täterspur. Daraus kann mehr Schutz für kritische Infrastruktur folgen, vor allem bei Polizei und Netzbetreibern. Eine echte Systemwirkung ist aber noch nicht belegt. Entscheidend bleibt, ob die Echtheit und die Täterschaft weiter belastbar bestätigt werden. Ohne das bleibt die Wirkung vor allem eine Verschiebung von Aufmerksamkeit, Prioritäten und Risikowahrnehmung.",
       "subject_dimensions": {
         "human": {
           "relevance": "hoch",
-          "rationale": "Betroffen sind Versorgungssicherheit, Schutz von Haushalten und Betrieben sowie der Einsatz von Polizei und Betreibern.",
+          "rationale": "Betroffen sind Sicherheit, Versorgung und erreichbare Hilfe bei kritischer Infrastruktur; konkrete Ausfälle sind jedoch nicht belegt.",
           "implementation_status": "open",
           "likelihood": "plausible",
           "direction": "mixed",
-          "magnitude": "medium",
+          "magnitude": "open",
           "evidence": "plausible_path"
         },
         "planet": {
           "relevance": "gering",
-          "rationale": "Die Quelle beschreibt keinen direkten Umwelt- oder Klimawirkpfad; nur indirekte Energiedebatten sind angedeutet.",
+          "rationale": "Ein direkter Umwelt- oder Klimawirkpfad ist in den Quellen nicht belastbar beschrieben; die erwähnte fossile Kritik stammt aus dem Schreiben und ist kein Wirkungsnachweis.",
           "implementation_status": "open",
           "likelihood": "open",
           "direction": "open",
@@ -10211,22 +10515,24 @@
         },
         "democracy": {
           "relevance": "mittel",
-          "rationale": "Belastbare Information über kritische Infrastruktur und laufende Fahndung ist für Vertrauen in staatlichen Schutz relevant.",
+          "rationale": "Die Meldung betrifft staatliche Schutzfähigkeit, Informationsvertrauen und die Priorisierung kritischer Infrastruktur, aber keine politische Entscheidung.",
           "implementation_status": "open",
           "likelihood": "plausible",
-          "direction": "positive",
+          "direction": "mixed",
           "magnitude": "low",
           "evidence": "plausible_path"
         }
       },
       "assessment_context": "open",
-      "assessment_condition": "Die bewerteten Pfade gelten nur, wenn die berichtete Echtheitszuschreibung trägt und Schutz- oder Fahndungsmaßnahmen tatsächlich folgen.",
+      "assessment_condition": "Gilt, solange die Bekennerschreiben nur journalistisch berichtet und nicht unabhängig in der Täterschaft oder Folgewirkung bestätigt sind.",
       "author_perspective": {
         "paragraphs": [
-          "Ich halte die Meldung vor allem deshalb für relevant, weil sie einen Sicherheitsvorfall in eine systemische Lage verschiebt. Aus meiner Sicht liegt der Mehrwert nicht im Spektakel des Bekennerschreibens, sondern in der Frage, wie schnell kritische Infrastruktur, Polizei und Öffentlichkeit auf eine glaubwürdige Bedrohung reagieren. Ich gewichte dabei die Vorläufigkeit hoch: Es gibt einen klaren Bericht, aber keine unabhängige Bestätigung der Täterschaft in den gelieferten Quellen. Deshalb lese ich den Fall nicht als fertige Großlage, sondern als ernstes Beispiel für einen möglichen Wirkpfad von der Einzeltat zur Schutzreaktion. Genau diese Trennung ist mir wichtig."
+          "Ich halte die Meldung für relevant, weil sie mehr ist als ein Ermittlungsdetail. Wer die Bekennerschreiben ernst nimmt, muss auch die mögliche Verschiebung von Schutz, Fahndung und öffentlicher Wahrnehmung mitdenken. Mich überzeugt dabei vor allem der systemische Blick: Ein kurzer Bericht kann die Lage an kritischer Infrastruktur verändern, ohne dass schon eine große physische Folge eingetreten sein muss.",
+          "Gleichzeitig würde ich die Wirkung nicht größer machen, als die Quellen tragen. Aus meiner Sicht ist der Fall vor allem ein Beispiel dafür, wie schnell aus einem unklaren Vorfall ein personalisiertes Sicherheitslagebild wird. Das ist bedeutsam, aber noch kein Beweis für eine breite Systemkrise. Genau diese Zurückhaltung gehört für mich zur sauberen Analyse."
         ],
         "claim_indices": [
           0,
+          2,
           3,
           5
         ],
@@ -10234,17 +10540,17 @@
       },
       "positive_path_checks": [
         {
-          "measure": "gezielte Verstärkung von Zugangskontrolle, Lageabgleich und Koordination an Stromanlagen",
+          "measure": "Prüfung und gegebenenfalls Anpassung von Schutz- und Koordinationsroutinen bei kritischer Infrastruktur",
           "source_ids": [
             "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
-            "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d"
+            "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
           ],
-          "mechanism": "Wenn Ermittlungen eine glaubwürdige Sabotagespur annehmen, können Betreiber und Polizei Schutzmaßnahmen dort konzentrieren, wo weitere Schäden am ehesten drohen. Das senkt bei Erfolg Eintritt oder Ausmaß weiterer Vorfälle."
+          "mechanism": "Wenn die Bedrohung als glaubhaft gilt, können Betreiber und Behörden Schutz, Lagebild und Kommunikation enger abstimmen; daraus kann mittelfristig mehr Resilienz entstehen."
         }
       ],
       "counter_evidence_search": {
         "checked": true,
-        "result": "Gefunden wurden vor allem Grenzen der Datenlage: keine Primärquelle im Paket, keine Messung von Schäden, keine belastbare Langzeitwirkung. Damit bleibt der Wirkpfad plausibel, aber vorläufig; ein positiver Gegenpfad ist in den Quellen nicht als eingetretene Wirkung belegt."
+        "result": "Gefunden wurden keine gegenteiligen Primärbelege zur Echtheit der Schreiben oder zu bereits eingetretenen Systemfolgen. Die wichtigste Grenze ist vielmehr die Quellenart: Es liegen nur journalistische Berichte vor, keine unabhängige Primärbestätigung der Täterschaft oder der konkreten Folgewirkungen."
       },
       "editorial_quality": {
         "false_balance_checked": true,
@@ -10258,19 +10564,19 @@
         "author_perspective_separated": true
       },
       "what_changes_the_assessment": [
-        "Eine offizielle Bestätigung der Ermittler zum Inhalt und zur Herkunft der Schreiben würde die Zurechnung stärken.",
-        "Benannte zusätzliche Tatorte, weitere Beweismittel oder eine Festnahme würden die Lage von plausibler Vermutung zu belastbarerem Befund verschieben.",
-        "Nachweisbare Schutzmaßnahmen an Stromanlagen würden aus Potenzial eine beobachtbare Wirkung machen.",
-        "Messbare Ausfälle oder Folgeschäden würden die Bewertung von Relevanz, Stärke und Betroffenheit deutlich erhöhen."
+        "Eine bestätigte Täterschaft oder Gegenbestätigung zur Echtheit der Schreiben",
+        "Neue, konkrete Folgen für Stromversorgung, Schutzkonzepte oder Einsatzlagen",
+        "Weitere unabhängige Quellen mit primärquellennahem Material",
+        "Belastbare Angaben zu Motiv, Umfang oder Folgevorfällen"
       ],
       "self_frame_check": {
         "passed": true,
         "issues": [],
         "recommended_title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
-        "recommended_summary": "Die Meldung berichtet über authentisch gehaltene Bekennerschreiben zu Sabotageakten auf die Stromversorgung. Die Fahndung läuft weiter; die Täterschaft bleibt vorläufig.",
-        "recommended_meta_description": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Meldung nennt Jänschwalde und Bergheim bei Köln als Tatorte und eine laufende"
+        "recommended_summary": "Die Polizei hält Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Fahndung läuft weiter; die Täterschaft bleibt vorläufig.",
+        "recommended_meta_description": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Fahndung läuft weiter, die Zuschreibung bleibt vorläufig."
       },
-      "reading_time_minutes": 6,
+      "reading_time_minutes": 8,
       "source_snapshot": [
         {
           "source_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
@@ -10915,6 +11221,599 @@
                 "primary_source": false
               }
             ]
+          }
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-08T00:52:14.401Z",
+          "source_fingerprint": "e523b7d244db5e2c70b8f012f93cf2ee04a1dbbe972efde41f6ce94dc7579be0",
+          "title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Nach ARD-Informationen halten Polizeibehörden die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Aussage ist als journalistisch berichtete Behördeneinschätzung belegt, nicht als unabhängige Primärbestätigung der Tatperson.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Fahndung nach der Person läuft weiter.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Der Fahndungsstatus ist nur in der Meldung belegt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die berichtete Authentizitätsbewertung verschiebt die Lage von einem unklaren Sabotageverdacht zu einer personalisierten Ermittlungsrichtung.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Plausible Deutung, aber ohne direkte Wirkungsmesung.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ermittlungen und Schutzmaßnahmen bei kritischer Infrastruktur könnten sich durch die berichtete Lage neu ausrichten.",
+              "type": "impact_potential",
+              "source_ids": [
+                "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+              ],
+              "evidence_level": "medium",
+              "data_status": "scenario",
+              "uncertainty": "Kein konkreter Maßnahmenkatalog in den Quellen; nur plausibler Reaktionspfad.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Ein unmittelbarer Umwelt- oder Klimawirkpfad ist in den gelieferten Quellen nicht belastbar beschrieben.",
+              "type": "observation",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Negativbefund aus der Quellenlage, kein Beweis für Abwesenheit jeder Umweltfolge.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Meldung kann die öffentliche Wahrnehmung von Versorgungssicherheit verändern, ohne dass damit eine belegte Ereignisfolge nachgewiesen ist.",
+              "type": "impact_risk",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Kommunikative Wirkung plausibel, aber nicht gemessen.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die Quellen tragen keine unabhängige Bestätigung der Täterschaft, des Motivs oder einer bereits eingetretenen Systemwirkung.",
+              "type": "observation",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Unsicherheit ist produktiv für die Einordnung, nicht ein Mangel der Analyse.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Wirkungsordnung eins liegt in der unmittelbaren Ermittlungs- und Schutzreaktion.",
+              "type": "woek_definition",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Methodische Einordnung, keine zusätzliche Tatsachenbehauptung.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Eine belastbare positive Gegenwirkung ist in den Quellen nicht angekündigt oder untersucht.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+              ],
+              "evidence_level": "medium",
+              "data_status": "open",
+              "uncertainty": "Schutzreaktionen können positiv wirken, sind hier aber nicht konkret belegt.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Die persönliche Einordnung sollte den Fall als systemisch relevant, aber vorläufig bewertbar beschreiben.",
+              "type": "attribution",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Journalistische Gewichtung, keine neue Tatsache.",
+              "date": "2026-09-04"
+            },
+            {
+              "claim": "Keine der gelieferten Quellen belegt bereits einen Lock-in in härtere Sicherungslogiken.",
+              "type": "fact",
+              "source_ids": [
+                "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Ein späterer Lock-in bleibt als Szenario offen.",
+              "date": "2026-09-04"
+            }
+          ],
+          "previous_content": {
+            "title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+            "subtitle": "Wie eine Authentizitätsbewertung die Lage bei kritischer Infrastruktur verschiebt",
+            "teaser": "Die Meldung beschreibt mehr als einen Ermittlungsstand: Wenn Bekennerschreiben als echt gelten, verändert das Fahndung, Objektschutz und Risikowahrnehmung zugleich.",
+            "seo_description": "Polizeibehörden halten Bekennerschreiben zu Strom-Sabotage für authentisch. Die Fahndung läuft weiter; Jänschwalde und Bergheim sind genannt.",
+            "sections": [
+              {
+                "id": "lage",
+                "title": "Lage: Eine Echtheitsbewertung verschiebt die Ermittlungsfrage",
+                "paragraphs": [
+                  "Ein Bekennerschreiben, das von der Polizei für echt gehalten wird, ist zuerst einmal kein Symbol, sondern ein Ermittlungswerkzeug. Es macht aus einem unklaren Sabotageverdacht eine stärker personalisierte Lage. Die Meldung nennt Jänschwalde und Bergheim bei Köln als Tatorte und berichtet von einer laufenden Fahndung. Damit ändert sich die operative Frage: nicht mehr nur, was an der Stromversorgung beschädigt wurde, sondern wer dahinterstehen könnte und ob weitere Taten drohen.",
+                  "Wirkungsökonomisch ist das eine Zustandsänderung in der Informationslage. Die Reichweite der Meldung ist dabei nicht die Wirkung selbst. Wirkung entsteht erst dort, wo Behörden, Betreiber oder Öffentlichkeit ihr Verhalten ändern. Genau dieser Übergang ist hier plausibel, aber in der gelieferten Datenlage noch nicht als eingetretene Folge belegt."
+                ],
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                ],
+                "visual": {
+                  "type": "cascade",
+                  "caption": "Wirkpfad in Alltagssprache",
+                  "items": [
+                    {
+                      "title": "1. Meldung",
+                      "text": "Die Polizei hält Bekennerschreiben zu Strom-Sabotage für authentisch.",
+                      "status": "fact",
+                      "relation": "scope",
+                      "direction": "open",
+                      "condition": "Nur die berichtete Einschätzung, keine eigene Bestätigung",
+                      "source_ids": [
+                        "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                      ]
+                    },
+                    {
+                      "title": "2. Ermittlungsänderung",
+                      "text": "Die Lage wird stärker als personengebundene Fahndung und weniger als anonymer Einzelfall behandelt.",
+                      "status": "analytical_inference",
+                      "relation": "impact_path",
+                      "direction": "mixed",
+                      "condition": "Wenn die Echtheitsbewertung trägt",
+                      "source_ids": [
+                        "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                      ]
+                    },
+                    {
+                      "title": "3. Schutzreaktion",
+                      "text": "Betreiber und Behörden können Schutz und Kontrolle an kritischer Infrastruktur verstärken.",
+                      "status": "impact_risk",
+                      "relation": "impact_path",
+                      "direction": "negative",
+                      "condition": "Wenn weitere Vorfälle befürchtet werden",
+                      "source_ids": [
+                        "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                        "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                      ]
+                    },
+                    {
+                      "title": "4. Systemfolge",
+                      "text": "Mehr Sicherheitsaufwand kann Resilienz stärken, bindet aber zugleich Ressourcen.",
+                      "status": "scenario",
+                      "relation": "impact_path",
+                      "direction": "mixed",
+                      "condition": "Bei anhaltender Bedrohungswahrnehmung oder weiteren Taten",
+                      "source_ids": [
+                        "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                        "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "system",
+                "title": "System: Kritische Energieinfrastruktur reagiert auf Informations- und Sicherheitsdruck",
+                "paragraphs": [
+                  "Die eigentliche Systemfrage liegt nicht im Bekennerschreiben selbst, sondern in der Kopplung zwischen Sabotageverdacht, Sicherheitsarchitektur und öffentlicher Lageeinschätzung. Kritische Energieinfrastruktur ist auf Ausfallsicherheit und schnelle Reaktion angewiesen. Sobald Ermittler eine Täterschaft für plausibel halten, verschiebt sich der Fokus von der Schadensaufnahme zu Prävention, Fahndung und Schutz weiterer Anlagen.",
+                  "Daraus entsteht ein Wirkpfad mit Rückkopplung: Je glaubwürdiger eine Sabotagespur wirkt, desto eher werden Überwachung, Bewachung und Lageabgleich verstärkt. Das kann helfen, weitere Schäden zu begrenzen. Gleichzeitig kann es Personal, Mittel und Aufmerksamkeit aus anderen Schutzbereichen abziehen. Diese Verlagerung ist keine bloße Reichweite, sondern eine tatsächliche Steuerungsfolge, wenn sie umgesetzt wird."
+                ],
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d",
+                  "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+                ]
+              },
+              {
+                "id": "mpd",
+                "title": "Mensch, Planet, Demokratie: unterschiedliche Betroffenheiten",
+                "paragraphs": [
+                  "Für Menschen ist der naheliegendste Effekt die Versorgungssicherheit. Stromsabotage an Umspannwerken und Stromleitungen kann bei Wiederholung oder Ausweitung zu konkreten Risiken für Haushalte, Betriebe und sensible Einrichtungen führen. In der gelieferten Quelle ist kein Stromausfall in größerem Ausmaß belegt; daher bleibt die unmittelbare Wirkung offen, der Schutzbedarf aber plausibel.",
+                  "Für den Planeten ergibt sich aus der Quelle kein direkter Umweltpfad. Mittelbar kann die Debatte über Stromversorgung und fossile Energien zwar angestoßen werden, doch das ist hier nur als berichtete Kommunikationslage sichtbar, nicht als belegt eingetretener Klima- oder Umweltwirkungspfad. Für die Demokratie ist relevant, dass kritische Infrastruktur ein Kernbereich staatlicher Schutzverantwortung ist. Die öffentliche Information über laufende Fahndungen kann Vertrauen in Ermittlungsfähigkeit stützen, solange sie sauber zwischen Befund und Vermutung trennt."
+                ],
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                ],
+                "visual": {
+                  "type": "cascade",
+                  "caption": "Wirkpfad in Alltagssprache",
+                  "items": [
+                    {
+                      "title": "Energieversorgung",
+                      "text": "Sabotageverdacht lenkt Schutz auf Anlagen und Netzbetreiber.",
+                      "status": "analytical_inference",
+                      "relation": "impact_path",
+                      "direction": "positive",
+                      "condition": "Wenn Schutzmaßnahmen gezielt ausgebaut werden",
+                      "source_ids": [
+                        "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                        "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                      ]
+                    },
+                    {
+                      "title": "Menschen",
+                      "text": "Mehr Schutz kann Ausfallrisiken für Haushalte und Betriebe senken, bindet aber Ressourcen.",
+                      "status": "analytical_inference",
+                      "relation": "impact_path",
+                      "direction": "mixed",
+                      "condition": "Bei tatsächlich erhöhtem Schutzniveau",
+                      "source_ids": [
+                        "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                      ]
+                    },
+                    {
+                      "title": "Demokratie",
+                      "text": "Saubere, nachvollziehbare Information unterstützt Vertrauen in Ermittlungen und staatlichen Schutz.",
+                      "status": "scenario",
+                      "relation": "impact_path",
+                      "direction": "positive",
+                      "condition": "Wenn Vorläufigkeit und Beleglage klar benannt werden",
+                      "source_ids": [
+                        "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "wirkungsordnungen",
+                "title": "Wirkungsordnungen: von der Einordnung zur Kaskade",
+                "paragraphs": [
+                  "Auf der ersten Ordnung steht die unmittelbare Zustandsänderung: Die Polizei stuft Bekennerschreiben als authentisch ein und sucht weiter nach einer Person. Auf der zweiten Ordnung verschiebt sich die Arbeitslogik bei Ermittlern und Betreibern. Es werden Lagebilder, Schutzkonzepte und Prioritäten angepasst. Auf der dritten Ordnung kann das, wenn es anhält oder sich bestätigt, zu dauerhaften Sicherheitsroutinen, mehr Resilienzanforderungen und womöglich zu einem Lock-in in strengere Schutzregime führen.",
+                  "Das ist keine automatische Eskalation, sondern ein bedingter Pfad. Nichtkompensation spielt hier nur indirekt eine Rolle: Zusätzlicher Schutz kann Schäden verhindern, ersetzt aber nicht die zugrunde liegende Verwundbarkeit der Infrastruktur. Reverse Merit Order wäre nur dann relevant, wenn Schutzkapazitäten aus guten Gründen zuerst dort konzentriert werden, wo das Schadenspotenzial am höchsten ist. Die Quelle liefert dafür Anhaltspunkte, aber keinen vollständigen Steuerungsplan."
+                ],
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d"
+                ],
+                "visual": {
+                  "type": "cascade",
+                  "caption": "Wirkpfad in Alltagssprache",
+                  "items": [
+                    {
+                      "title": "1. Erste Ordnung",
+                      "text": "Die Polizei hält die Schreiben für echt und fahndet weiter.",
+                      "status": "fact",
+                      "relation": "impact_path",
+                      "direction": "open",
+                      "condition": "Berichtete Lage, keine unabhängige Bestätigung in den gelieferten Quellen",
+                      "source_ids": [
+                        "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                      ]
+                    },
+                    {
+                      "title": "2. Zweite Ordnung",
+                      "text": "Behörden und Betreiber prüfen Schutz, Einsatz und Prioritäten neu.",
+                      "status": "analytical_inference",
+                      "relation": "impact_path",
+                      "direction": "mixed",
+                      "condition": "Wenn die Bedrohung als belastbar gilt",
+                      "source_ids": [
+                        "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                        "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                      ]
+                    },
+                    {
+                      "title": "3. Dritte Ordnung",
+                      "text": "Dauerhafterer Schutzaufwand kann zu mehr Resilienz, aber auch zu Lock-ins führen.",
+                      "status": "scenario",
+                      "relation": "impact_path",
+                      "direction": "mixed",
+                      "condition": "Nur bei wiederholten oder bestätigten Vorfällen",
+                      "source_ids": [
+                        "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "resilienz",
+                "title": "Resilienz: Schutz stärkt, kostet aber auch",
+                "paragraphs": [
+                  "Die naheliegende positive Gegenwirkung ist nicht abstrakt „mehr Sicherheit“, sondern gezielte Resilienzarbeit: bessere Kontrolle an Umspannwerken, klarere Alarmwege, belastbare Lagebilder und schneller Austausch zwischen Polizei und Betreibern. Das kann Schäden reduzieren, falls es tatsächlich zu weiteren Angriffen kommt. Zugleich ist das eine ressourcenintensive Antwort. Wer mehr abschirmt, muss mehr Personal, Geld und Aufmerksamkeit binden.",
+                  "Genau hier liegt der Unterschied zwischen Wirkung und Wunschbild. Eine Schutzmaßnahme ist noch kein Wirksamkeitsnachweis. Erst wenn sie im konkreten Wirkpfad Eintrittswahrscheinlichkeit oder Schadenshöhe senkt, wird aus Potenzial eine Wirkung. Die vorliegenden Quellen reichen dafür nur bedingt aus. Sie belegen vor allem den Anlass, nicht die tatsächliche Wirksamkeit bereits umgesetzter Gegenmaßnahmen."
+                ],
+                "source_ids": [
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d",
+                  "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+                ]
+              },
+              {
+                "id": "unsicherheit",
+                "title": "Unsicherheit: Was offen bleibt, ist analytisch wichtig",
+                "paragraphs": [
+                  "Offen bleibt vor allem die unabhängige Bestätigung der Täterschaft. Die Quellenlage besteht aus journalistischen Berichten; es gibt in den gelieferten Daten keine Primärquelle, kein offizielles Ermittler-Statement im Wortlaut und keine belastbare Messung von Folgewirkungen. Deshalb darf die Analyse nur einen plausiblen Wirkpfad beschreiben, keine harte Kausalität behaupten.",
+                  "Offen ist auch, ob aus der Meldung ein breiter Diskurseffekt entsteht oder lediglich ein kurzer Nachrichtenimpuls. Kommunikative Wirkung ist nicht identisch mit Ereigniswirkung. Dass Medien über authentisch gehaltene Schreiben berichten, beweist weder zusätzliche Sabotage noch einen langfristigen Lock-in. Die belastbare Grenze lautet deshalb: hohe Relevanz, aber nur bedingt gesicherte Wirkungsbelege."
+                ],
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                  "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+                ]
+              },
+              {
+                "id": "beobachtung",
+                "title": "Beobachtung: Woran sich die Lage prüfen lässt",
+                "paragraphs": [
+                  "Für die weitere Einordnung zählen drei Beobachtungspunkte. Erstens: Bestätigen Ermittler die Authentizität der Schreiben und die Zuordnung zu einer Person? Zweitens: Werden weitere Tatorte, weitere Schreiben oder konkrete Sicherungsmaßnahmen öffentlich benannt? Drittens: Verändert sich der operative Schutz von Stromanlagen, also Bewachung, Zugangskontrolle oder Koordination mit Betreibern?",
+                  "Diese Punkte entscheiden darüber, ob aus der Meldung nur eine verdichtete Fahndungslage wird oder ein dauerhafter Resilienzimpuls. Auch hier gilt: Keine vorschnelle Schlussfolgerung. Erst wenn Zustandsänderungen sichtbar werden, ist eine wirkungsökonomische Zurechnung gerechtfertigt. Ohne diese Beobachtungen bleibt der Fall vor allem ein ernstes, aber noch eng umrissenes Sicherheitsereignis."
+                ],
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41"
+                ]
+              },
+              {
+                "id": "synthese",
+                "title": "Synthese: Der Zusatznutzen liegt in der systemischen Lesart",
+                "paragraphs": [
+                  "Mein Befund ist deshalb zweistufig. Erstens: Die Meldung berichtet eine für die Ermittlungen wichtige Authentizitätsbewertung und eine weiterlaufende Fahndung. Zweitens: Genau diese Bewertung kann die Schutzlogik kritischer Energieinfrastruktur verschieben. Der zusätzliche systemische Zusammenhang liegt in der Kopplung von Fahndung, Objektschutz, öffentlicher Risikowahrnehmung und möglicher Ressourcenverlagerung. Das ist mehr als eine bloße Ereignisnotiz, aber noch keine nachgewiesene Strukturveränderung.",
+                  "Für die Wirkungökonomie ist die zentrale Grenze klar: Reichweite ist nicht Wirkung, und eine glaubwürdige Bedrohung ist noch kein Wirkungsnachweis. Trotzdem ist der Fall relevant, weil er zeigt, wie schnell ein einzelner Sicherheitsbericht mehrere Ebenen berühren kann: Menschen über Versorgungsschutz, Demokratie über belastbare Information und das System über Resilienz und Priorisierung. Ob daraus ein Lock-in in härtere Schutzregime entsteht, bleibt offen; plausibel ist vorerst nur der verstärkte Sicherheits- und Fahndungsdruck."
+                ],
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                ]
+              }
+            ],
+            "claim_ledger": [
+              {
+                "claim": "Polizeibehörden halten die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch.",
+                "type": "fact",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Nur als journalistisch berichtete Einschätzung in den gelieferten Quellen enthalten; keine Primärquelle im Paket.",
+                "date": "2026-09-04"
+              },
+              {
+                "claim": "Die Meldung nennt Jänschwalde und Bergheim bei Köln als Tatorte und berichtet von einer laufenden Fahndung.",
+                "type": "fact",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Tatzuordnung und Fahndungsstand bleiben berichtsgebunden.",
+                "date": "2026-09-04"
+              },
+              {
+                "claim": "Nach ARD-Informationen liegen der Polizei in Nordrhein-Westfalen und Brandenburg inzwischen zwei Bekennerschreiben derselben Person vor.",
+                "type": "fact",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ],
+                "evidence_level": "medium",
+                "data_status": "attributed",
+                "uncertainty": "Die Doppelzuschreibung ist nur indirekt berichtet.",
+                "date": "2026-09-04"
+              },
+              {
+                "claim": "Eine Authentizitätszuschreibung kann die Ermittlungs- und Schutzlogik an kritischer Energieinfrastruktur verändern.",
+                "type": "analytical_inference",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Plausibler Wirkpfad, aber keine direkt belegte Umsetzung in den gelieferten Quellen.",
+                "date": "2026-09-04"
+              },
+              {
+                "claim": "Mehr Schutz und Fahndung können einerseits Resilienz stärken, andererseits Ressourcen binden und Aufmerksamkeit verlagern.",
+                "type": "impact_risk",
+                "source_ids": [
+                  "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                  "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Der Ressourceneffekt ist plausibel, aber in der Quelle nicht gemessen.",
+                "date": "2026-09-04"
+              },
+              {
+                "claim": "Für den Planeten ergibt sich aus der Quelle kein direkter Umwelt- oder Klimawirkpfad.",
+                "type": "observation",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Mittelbare Energiedebatten sind möglich, aber nicht als Wirkung belegt.",
+                "date": "2026-09-04"
+              },
+              {
+                "claim": "Die zentrale Unsicherheit ist die fehlende unabhängige Bestätigung der Täterschaft und der Folgewirkungen.",
+                "type": "fact",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e"
+                ],
+                "evidence_level": "high",
+                "data_status": "open",
+                "uncertainty": "Nur journalistische Darstellung, keine Primärbestätigung im Paket.",
+                "date": "2026-09-04"
+              },
+              {
+                "claim": "Die Meldung kann die Risikowahrnehmung für kritische Infrastruktur erhöhen.",
+                "type": "impact_potential",
+                "source_ids": [
+                  "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                  "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Kommunikatives Potenzial, keine gemessene Wahrnehmungsänderung.",
+                "date": "2026-09-04"
+              }
+            ],
+            "source_snapshot": [
+              {
+                "source_id": "26baa54624a6c8a107a4d27e952b64db030292f23e12b9f503aa5e7a49e2ccb4",
+                "registry_source_id": "rbb24-nachrichten",
+                "publisher_id": "rbb",
+                "publisher": "rbb24",
+                "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+                "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                "published_at": "2026-09-04T10:06:18.000Z",
+                "primary_source": false
+              },
+              {
+                "source_id": "303d4818cb488a5232e3ece13187b5d7b48987f55522d27bf4aa2a9b11c7be41",
+                "registry_source_id": "wdr-nachrichten",
+                "publisher_id": "wdr",
+                "publisher": "WDR",
+                "title": "Strom-Sabotage: Polizei fahndet nach Tatverdächtigem",
+                "url": "https://www1.wdr.de/nrw/sabotage-umspannwerke-ermittlungen-100.html",
+                "published_at": "2026-09-07T19:40:30.000Z",
+                "primary_source": false
+              },
+              {
+                "source_id": "da00618b3c514ca57fb42d35e4b84d79a067b6bd037251db24ee756b6c1ebe16",
+                "registry_source_id": "dlf-nachrichten",
+                "publisher_id": "deutschlandfunk",
+                "publisher": "Deutschlandfunk",
+                "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - Fahndung läuft",
+                "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-fahndung-laeuft-100.html",
+                "published_at": "2026-09-04T16:23:25.000Z",
+                "primary_source": false
+              },
+              {
+                "source_id": "edfadfac11534fa5631107f5b79ffa1e14da9df02b8096d2446d0bc2e47cf29b",
+                "registry_source_id": "dlf-nachrichten",
+                "publisher_id": "deutschlandfunk",
+                "publisher": "Deutschlandfunk",
+                "title": "Anschläge auf Umspannwerke - Polizei hält Bekennerschreiben für authentisch - bundesweite Fahndung läuft",
+                "url": "https://www.deutschlandfunk.de/polizei-haelt-bekennerschreiben-fuer-authentisch-bundesweite-fahndung-laeuft-100.html",
+                "published_at": "2026-09-04T16:14:15.000Z",
+                "primary_source": false
+              },
+              {
+                "source_id": "722979bcba59ba9148fe6f8a35003b20d7dbdeb2f8a948a0d72bb937460e94ba",
+                "registry_source_id": "tagesspiegel-home",
+                "publisher_id": "tagesspiegel",
+                "publisher": "Der Tagesspiegel",
+                "title": "Stromversorgung: Reul: Polizei fahndet weiter nach Sabotage-Verdächtigem",
+                "url": "https://www.tagesspiegel.de/berlin/dpa-stromversorgung-16020217.html",
+                "published_at": "2026-09-04T15:35:08.000Z",
+                "primary_source": false
+              },
+              {
+                "source_id": "6ae43049aec82d3ac725db24bb23dee28a3c1084a939f4f1aac87a8549cd4f1d",
+                "registry_source_id": "stern-schlagzeilen",
+                "publisher_id": "stern",
+                "publisher": "stern",
+                "title": "Anschlag auf Stromleitungen: Stromnetz-Sabotage: Polizei wertet Bekennerschreiben aus",
+                "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlag-auf-stromleitungen--stromnetz-sabotage--polizei-wertet-bekennerschreiben-aus-38206690.html",
+                "published_at": "2026-09-04T06:44:56.000Z",
+                "primary_source": false
+              },
+              {
+                "source_id": "825f8abd9d36cd70b195d8fd74c8628fdfe954abb6e20e6fba50b6991fc6c73e",
+                "registry_source_id": "zdfheute-nachrichten",
+                "publisher_id": "zdfheute",
+                "publisher": "ZDFheute",
+                "title": "Brandenburg: Polizei prüft Bekennerschreiben",
+                "url": "https://www.zdfheute.de/politik/deutschland/brandenburg-bekennerschreiben-sprengvorrichtung-stromnetz-umspannwerk-jaenschwalde-100.html",
+                "published_at": "2026-09-03T17:36:00.000Z",
+                "primary_source": false
+              }
+            ],
+            "subject_dimensions": {
+              "human": {
+                "relevance": "hoch",
+                "rationale": "Betroffen sind Versorgungssicherheit, Schutz von Haushalten und Betrieben sowie der Einsatz von Polizei und Betreibern.",
+                "implementation_status": "open",
+                "likelihood": "plausible",
+                "direction": "mixed",
+                "magnitude": "medium",
+                "evidence": "plausible_path"
+              },
+              "planet": {
+                "relevance": "gering",
+                "rationale": "Die Quelle beschreibt keinen direkten Umwelt- oder Klimawirkpfad; nur indirekte Energiedebatten sind angedeutet.",
+                "implementation_status": "open",
+                "likelihood": "open",
+                "direction": "open",
+                "magnitude": "open",
+                "evidence": "open"
+              },
+              "democracy": {
+                "relevance": "mittel",
+                "rationale": "Belastbare Information über kritische Infrastruktur und laufende Fahndung ist für Vertrauen in staatlichen Schutz relevant.",
+                "implementation_status": "open",
+                "likelihood": "plausible",
+                "direction": "positive",
+                "magnitude": "low",
+                "evidence": "plausible_path"
+              }
+            },
+            "assessment_context": "open",
+            "assessment_condition": "Die bewerteten Pfade gelten nur, wenn die berichtete Echtheitszuschreibung trägt und Schutz- oder Fahndungsmaßnahmen tatsächlich folgen.",
+            "author_perspective": {
+              "paragraphs": [
+                "Ich halte die Meldung vor allem deshalb für relevant, weil sie einen Sicherheitsvorfall in eine systemische Lage verschiebt. Aus meiner Sicht liegt der Mehrwert nicht im Spektakel des Bekennerschreibens, sondern in der Frage, wie schnell kritische Infrastruktur, Polizei und Öffentlichkeit auf eine glaubwürdige Bedrohung reagieren. Ich gewichte dabei die Vorläufigkeit hoch: Es gibt einen klaren Bericht, aber keine unabhängige Bestätigung der Täterschaft in den gelieferten Quellen. Deshalb lese ich den Fall nicht als fertige Großlage, sondern als ernstes Beispiel für einen möglichen Wirkpfad von der Einzeltat zur Schutzreaktion. Genau diese Trennung ist mir wichtig."
+              ],
+              "claim_indices": [
+                0,
+                3,
+                5
+              ],
+              "origin": "generated_from_analysis"
+            },
+            "executive_finding": "Die Meldung verändert vor allem die Lagewahrnehmung: Aus einem Sabotageverdacht wird eine personell zugespitzte Fahndungslage. Das kann Schutz und Ermittlungen bei kritischer Energieinfrastruktur verschieben und Ressourcen binden. Für die Betroffenen sind vor allem Netzbetreiber, Polizei und mittelbar Stromkundinnen und -kunden relevant. Ob daraus eine dauerhafte Strukturänderung folgt, bleibt offen; dafür fehlt in den gelieferten Quellen noch unabhängige Bestätigung und jede Messung realer Folgewirkungen.",
+            "editorial_rules_version": "2.0"
           }
         }
       ]
@@ -22246,13 +23145,16 @@
     "wt-f7d7115a53ff2c2f": {
       "fingerprint": "cf22aee815f863e2dec9876615978023926918d3d329514c2ae18730f54bccf8",
       "method_version": "1.0",
-      "attempts": 5,
-      "last_attempt_at": "2026-09-07T20:43:17.028Z",
-      "next_attempt_at": "2026-09-08T00:43:17.028Z",
+      "attempts": 6,
+      "last_attempt_at": "2026-09-08T00:52:14.401Z",
+      "next_attempt_at": "2026-09-08T08:52:14.401Z",
       "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_IMPACT_OPEN",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_IMPACT_OPEN,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-cf03acddb911d861": {
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
@@ -22270,9 +23172,9 @@
     "wt-1c2c187d0b858b7c": {
       "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
       "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-08T00:37:12.999Z",
-      "next_attempt_at": "2026-09-08T00:52:12.999Z",
+      "attempts": 2,
+      "last_attempt_at": "2026-09-08T00:52:14.401Z",
+      "next_attempt_at": "2026-09-08T01:22:14.401Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -22283,9 +23185,12 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T00:37:12.999Z",
-      "next_attempt_at": "2026-09-08T00:52:12.999Z",
+      "last_attempt_at": "2026-09-08T00:52:14.401Z",
+      "next_attempt_at": "2026-09-08T01:07:14.401Z",
       "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
       "reason": "AI_BATCH_PENDING"
@@ -22293,14 +23198,13 @@
     "wt-f03755f6f6b8c3b7": {
       "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-08T00:08:28.499Z",
-      "next_attempt_at": "2026-09-08T00:38:28.499Z",
+      "attempts": 3,
+      "last_attempt_at": "2026-09-08T00:52:14.401Z",
+      "next_attempt_at": "2026-09-08T01:52:14.401Z",
       "quality_errors": [
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
