@@ -1,8 +1,1585 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T12:36:46.426Z",
-  "updated_at": "2026-09-08T13:06:42.772Z",
+  "public_updated_at": "2026-09-08T13:22:17.950Z",
+  "updated_at": "2026-09-08T13:22:17.950Z",
   "stories": [
+    {
+      "story_id": "wt-d736cdd717d4f421",
+      "slug": "as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict-d4f421",
+      "title": "As Houthis attack Saudi Arabia, is Iran war escalating into regional conflict?",
+      "first_seen": "2026-09-08T13:02:50.000Z",
+      "last_updated": "2026-09-08T13:24:23.481Z",
+      "published_at": "2026-09-08T13:24:23.481Z",
+      "updated_at": "2026-09-08T13:24:23.481Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+          "title": "As Houthis attack Saudi Arabia, is Iran war escalating into regional conflict?",
+          "summary": "Saudi Arabia on Tuesday threatened to hit back after a wave of missiles from Yemen's Houthis set oil facilities ablaze and wounded dozens, the Iran-backed rebels' heaviest attack in years. It comes after a four-year truce collapsed in July, months into the Middle East war between the United States and Iran. France 24's Rochelle Ferguson Bouyahi provides analysis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:02:50.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "35f105521ccfa3779d8208be6bb827f383bebfbcee7274e5de534431924c5f21",
+          "source_item_id": "091ceab8f75a9d935fdf486e6a352877fe4df5a78a16ed821e796eb4bbd57b58",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T13:02:50.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d736cdd717d4f421-v1-claim-1",
+          "story_id": "wt-d736cdd717d4f421",
+          "claim": "Saudi-Arabien hat nach einer Welle von Raketen aus dem Jemen Vergeltung angekündigt.",
+          "status": "single_source_claim",
+          "source_id": "france24-en",
+          "evidence": [
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+              "excerpt_hash": "0c64d91aa0a63a04d9d5",
+              "checked_at": "2026-09-08T13:24:23.481Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:24:23.481Z"
+        },
+        {
+          "claim_id": "wt-d736cdd717d4f421-v1-claim-2",
+          "story_id": "wt-d736cdd717d4f421",
+          "claim": "Die Angriffe der Huthi setzten Öl-Anlagen in Brand und verletzten Dutzende Menschen.",
+          "status": "single_source_claim",
+          "source_id": "france24-en",
+          "evidence": [
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+              "excerpt_hash": "0c64d91aa0a63a04d9d5",
+              "checked_at": "2026-09-08T13:24:23.481Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:24:23.481Z"
+        },
+        {
+          "claim_id": "wt-d736cdd717d4f421-v1-claim-3",
+          "story_id": "wt-d736cdd717d4f421",
+          "claim": "Der Angriff wird als schwerster Huthi-Angriff seit Jahren beschrieben und fällt in eine Phase, in der eine vierjährige Waffenruhe im Juli zerbrochen ist.",
+          "status": "single_source_claim",
+          "source_id": "france24-en",
+          "evidence": [
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+              "excerpt_hash": "0c64d91aa0a63a04d9d5",
+              "checked_at": "2026-09-08T13:24:23.481Z"
+            },
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+              "excerpt_hash": "7ee85667462420073ebd",
+              "checked_at": "2026-09-08T13:24:23.481Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:24:23.481Z"
+        }
+      ],
+      "event_id": "event-4b8748f48a3c4b3ac216",
+      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
+      "event_detected_at": "2026-09-08T13:22:17.950Z",
+      "verification_started_at": "2026-09-08T13:24:05.395Z",
+      "publish_ready_at": "2026-09-08T13:24:23.481Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "d4b8c47f1b5a6ae4b9e8838edd34c8da0189c7f592bf1dd36369dd436d41ddf2",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "fb7b9d6173911406859d1ecdc5a6255a4d42f6fce2bb57ce1204f40d22218f95",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T13:24:23.481Z",
+        "sources": []
+      },
+      "source_summary": "Saudi-Arabien hat laut der Quelle am Dienstag mit Gegenangriffen gedroht, nachdem eine Raketenwelle aus dem Jemen Öl-Anlagen in Brand gesetzt und Dutzende Menschen verletzt hatte. Die Angriffe werden als schwerster Einsatz der Huthi-Rebellen seit Jahren beschrieben.\n\nDie Darstellung ordnet das Geschehen in den Konfliktkontext zwischen dem Iran, den Huthi und Saudi-Arabien ein. Zugleich verweist die Quelle darauf, dass eine vierjährige Waffenruhe im Juli zusammengebrochen sei und die Lage damit in eine neue Eskalationsphase gerate.",
+      "analysis": {
+        "story_id": "wt-d736cdd717d4f421",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Saudi-Arabien droht nach Huthi-Raketen mit Vergeltung. Die Meldung beschreibt damit eine akute Verschärfung des Konflikts.",
+        "detail_summary": "Die Quelle berichtet über einen erneuten militärischen Schlagabtausch: Raketen aus dem Jemen haben demnach in Saudi-Arabien Öl-Anlagen getroffen, mehrere Menschen wurden verletzt und Riad kündigte Gegenmaßnahmen an. Das ist relevant, weil ein Angriff auf Energieinfrastruktur sofort wirtschaftliche und sicherheitspolitische Folgen haben kann. Der Wirkpfad reicht von Sachschäden und Verletzten über mögliche Gegenangriffe bis zu weiteren Spannungen im regionalen Konflikt. Für Mensch und Wirtschaft ist das zunächst ein Risiko, für die regionale Sicherheitsordnung ein möglicher Eskalationsschritt. Die Evidenz bleibt aber vorläufig, weil hier nur eine journalistische Quelle vorliegt und Kontext, Verantwortlichkeit sowie das genaue Ausmaß offen bleiben.",
+        "why_relevant": "Ein Angriff auf Öl-Anlagen und die angedrohte Antwort können Sicherheitslage, Energieinfrastruktur und regionale Konfliktdynamik unmittelbar verändern.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Verletzte und drohende Gegenschläge betreffen unmittelbar die Sicherheit von Menschen und können weitere zivile Schäden auslösen."
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Öl-Anlagen in Brand setzen kann lokale Umwelt- und Emissionsfolgen haben; das konkrete Ausmaß bleibt offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Die Eskalation betrifft staatliche Entscheidungsräume, aber demokratische Korrekturfähigkeit ist aus der Quelle nicht beurteilbar."
+        },
+        "importance": "hoch",
+        "impact_potential": "Der Angriff kann zu weiteren militärischen Reaktionen, höheren Sicherheitskosten und Störungen bei Energieinfrastruktur führen.",
+        "impact_risks": [
+          "Weitere Vergeltungsschläge und Eskalation des regionalen Konflikts",
+          "Zusätzliche Schäden an Energieanlagen und Versorgungsrisiken",
+          "Mehr Verletzte oder zivile Folgeschäden"
+        ],
+        "mechanisms": [
+          "Militärischer Angriff auf kritische Infrastruktur",
+          "Vergeltungsankündigung als Signal für Gegenreaktionen",
+          "Mögliche Ausweitung des Konflikts entlang bestehender Fronten"
+        ],
+        "first_order": [
+          "Beschädigte Öl-Anlagen und Verletzte",
+          "Unmittelbare Alarmierung und Gegenangriffsankündigung"
+        ],
+        "second_order": [
+          "Höhere Sicherheits- und Reparaturkosten",
+          "Verstärkte Militärpräsenz und Spannungen"
+        ],
+        "third_order": [
+          "Anhaltende Eskalation im regionalen Konflikt",
+          "Mögliche Auswirkungen auf Energie- und Sicherheitsmärkte"
+        ],
+        "systemic_relevance": "Die Meldung berührt kritische Energieinfrastruktur und die Stabilität eines bereits angespannten regionalen Konflikts.",
+        "transformation_potential": "Keine Transformationswirkung erkennbar; es geht um eine akute Lageverschärfung mit möglicher Eskalationsdynamik.",
+        "resilience": "Resilienz hängt hier von Schutz kritischer Infrastruktur, Deeskalationskanälen und der Fähigkeit zu begrenzter Gegenreaktion ab.",
+        "side_effects": [
+          "Verunsicherung in der Region",
+          "Mögliche Belastung für Versorgung und Transport"
+        ],
+        "uncertainties": [
+          "Die unabhängige Bestätigung des Angriffs ist in der gelieferten Lage nicht vorhanden.",
+          "Unklar bleiben genaue Ziele, Schadenshöhe und die Urheberschaft über die Zuschreibung hinaus."
+        ],
+        "evidence_level": "low",
+        "attribution": "France 24 berichtet den Angriff und die Vergeltungsdrohung in seiner Analyse; die Quelle ist journalistisch, nicht amtlich.",
+        "watch_next": [
+          "Ob weitere Angriffe oder offizielle Bestätigungen folgen",
+          "Ob Schäden an Öl-Anlagen präzisiert werden",
+          "Ob Saudi-Arabien tatsächlich militärisch reagiert"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 3, SDG 7, SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue Angriffs- und Vergeltungsinformation mit unmittelbarer Relevanz für Sicherheit und Energieinfrastruktur; trotz nur einer Quelle journalistisch belastbar als vorläufige Erstmeldung."
+        },
+        "visuals": {
+          "affected_groups": [
+            "verbraucherinnen",
+            "beschaeftigte",
+            "staat",
+            "europa"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T13:22:17.950Z",
+        "media_trigger_fingerprint": "3f90b1ee78295add97384c044bc719adb232ce12070647747027247bdc80726f",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "threatened"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "3f90b1ee78295add97384c044bc719adb232ce12070647747027247bdc80726f",
+          "content_fingerprint": "fd0a51001cbf2e966649e939f0847000500fcc78d4b0a27c9c9bead29cb3755d",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T13:24:23.481Z",
+          "content_hash": "fb7b9d6173911406859d1ecdc5a6255a4d42f6fce2bb57ce1204f40d22218f95",
+          "source_summary": "Saudi-Arabien hat laut der Quelle am Dienstag mit Gegenangriffen gedroht, nachdem eine Raketenwelle aus dem Jemen Öl-Anlagen in Brand gesetzt und Dutzende Menschen verletzt hatte. Die Angriffe werden als schwerster Einsatz der Huthi-Rebellen seit Jahren beschrieben.\n\nDie Darstellung ordnet das Geschehen in den Konfliktkontext zwischen dem Iran, den Huthi und Saudi-Arabien ein. Zugleich verweist die Quelle darauf, dass eine vierjährige Waffenruhe im Juli zusammengebrochen sei und die Lage damit in eine neue Eskalationsphase gerate.",
+          "analysis": {
+            "story_id": "wt-d736cdd717d4f421",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Saudi-Arabien droht nach Huthi-Raketen mit Vergeltung. Die Meldung beschreibt damit eine akute Verschärfung des Konflikts.",
+            "detail_summary": "Die Quelle berichtet über einen erneuten militärischen Schlagabtausch: Raketen aus dem Jemen haben demnach in Saudi-Arabien Öl-Anlagen getroffen, mehrere Menschen wurden verletzt und Riad kündigte Gegenmaßnahmen an. Das ist relevant, weil ein Angriff auf Energieinfrastruktur sofort wirtschaftliche und sicherheitspolitische Folgen haben kann. Der Wirkpfad reicht von Sachschäden und Verletzten über mögliche Gegenangriffe bis zu weiteren Spannungen im regionalen Konflikt. Für Mensch und Wirtschaft ist das zunächst ein Risiko, für die regionale Sicherheitsordnung ein möglicher Eskalationsschritt. Die Evidenz bleibt aber vorläufig, weil hier nur eine journalistische Quelle vorliegt und Kontext, Verantwortlichkeit sowie das genaue Ausmaß offen bleiben.",
+            "why_relevant": "Ein Angriff auf Öl-Anlagen und die angedrohte Antwort können Sicherheitslage, Energieinfrastruktur und regionale Konfliktdynamik unmittelbar verändern.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "rationale": "Verletzte und drohende Gegenschläge betreffen unmittelbar die Sicherheit von Menschen und können weitere zivile Schäden auslösen."
+            },
+            "planet": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "rationale": "Öl-Anlagen in Brand setzen kann lokale Umwelt- und Emissionsfolgen haben; das konkrete Ausmaß bleibt offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "rationale": "Die Eskalation betrifft staatliche Entscheidungsräume, aber demokratische Korrekturfähigkeit ist aus der Quelle nicht beurteilbar."
+            },
+            "importance": "hoch",
+            "impact_potential": "Der Angriff kann zu weiteren militärischen Reaktionen, höheren Sicherheitskosten und Störungen bei Energieinfrastruktur führen.",
+            "impact_risks": [
+              "Weitere Vergeltungsschläge und Eskalation des regionalen Konflikts",
+              "Zusätzliche Schäden an Energieanlagen und Versorgungsrisiken",
+              "Mehr Verletzte oder zivile Folgeschäden"
+            ],
+            "mechanisms": [
+              "Militärischer Angriff auf kritische Infrastruktur",
+              "Vergeltungsankündigung als Signal für Gegenreaktionen",
+              "Mögliche Ausweitung des Konflikts entlang bestehender Fronten"
+            ],
+            "first_order": [
+              "Beschädigte Öl-Anlagen und Verletzte",
+              "Unmittelbare Alarmierung und Gegenangriffsankündigung"
+            ],
+            "second_order": [
+              "Höhere Sicherheits- und Reparaturkosten",
+              "Verstärkte Militärpräsenz und Spannungen"
+            ],
+            "third_order": [
+              "Anhaltende Eskalation im regionalen Konflikt",
+              "Mögliche Auswirkungen auf Energie- und Sicherheitsmärkte"
+            ],
+            "systemic_relevance": "Die Meldung berührt kritische Energieinfrastruktur und die Stabilität eines bereits angespannten regionalen Konflikts.",
+            "transformation_potential": "Keine Transformationswirkung erkennbar; es geht um eine akute Lageverschärfung mit möglicher Eskalationsdynamik.",
+            "resilience": "Resilienz hängt hier von Schutz kritischer Infrastruktur, Deeskalationskanälen und der Fähigkeit zu begrenzter Gegenreaktion ab.",
+            "side_effects": [
+              "Verunsicherung in der Region",
+              "Mögliche Belastung für Versorgung und Transport"
+            ],
+            "uncertainties": [
+              "Die unabhängige Bestätigung des Angriffs ist in der gelieferten Lage nicht vorhanden.",
+              "Unklar bleiben genaue Ziele, Schadenshöhe und die Urheberschaft über die Zuschreibung hinaus."
+            ],
+            "evidence_level": "low",
+            "attribution": "France 24 berichtet den Angriff und die Vergeltungsdrohung in seiner Analyse; die Quelle ist journalistisch, nicht amtlich.",
+            "watch_next": [
+              "Ob weitere Angriffe oder offizielle Bestätigungen folgen",
+              "Ob Schäden an Öl-Anlagen präzisiert werden",
+              "Ob Saudi-Arabien tatsächlich militärisch reagiert"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 3, SDG 7, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Angriffs- und Vergeltungsinformation mit unmittelbarer Relevanz für Sicherheit und Energieinfrastruktur; trotz nur einer Quelle journalistisch belastbar als vorläufige Erstmeldung."
+            },
+            "visuals": {
+              "affected_groups": [
+                "verbraucherinnen",
+                "beschaeftigte",
+                "staat",
+                "europa"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T13:22:17.950Z",
+            "media_trigger_fingerprint": "3f90b1ee78295add97384c044bc719adb232ce12070647747027247bdc80726f",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "threatened"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "3f90b1ee78295add97384c044bc719adb232ce12070647747027247bdc80726f",
+              "content_fingerprint": "fd0a51001cbf2e966649e939f0847000500fcc78d4b0a27c9c9bead29cb3755d",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-d736cdd717d4f421-v1-claim-1",
+              "story_id": "wt-d736cdd717d4f421",
+              "claim": "Saudi-Arabien hat nach einer Welle von Raketen aus dem Jemen Vergeltung angekündigt.",
+              "status": "single_source_claim",
+              "source_id": "france24-en",
+              "evidence": [
+                {
+                  "source_id": "france24-en",
+                  "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+                  "excerpt_hash": "0c64d91aa0a63a04d9d5",
+                  "checked_at": "2026-09-08T13:24:23.481Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:24:23.481Z"
+            },
+            {
+              "claim_id": "wt-d736cdd717d4f421-v1-claim-2",
+              "story_id": "wt-d736cdd717d4f421",
+              "claim": "Die Angriffe der Huthi setzten Öl-Anlagen in Brand und verletzten Dutzende Menschen.",
+              "status": "single_source_claim",
+              "source_id": "france24-en",
+              "evidence": [
+                {
+                  "source_id": "france24-en",
+                  "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+                  "excerpt_hash": "0c64d91aa0a63a04d9d5",
+                  "checked_at": "2026-09-08T13:24:23.481Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:24:23.481Z"
+            },
+            {
+              "claim_id": "wt-d736cdd717d4f421-v1-claim-3",
+              "story_id": "wt-d736cdd717d4f421",
+              "claim": "Der Angriff wird als schwerster Huthi-Angriff seit Jahren beschrieben und fällt in eine Phase, in der eine vierjährige Waffenruhe im Juli zerbrochen ist.",
+              "status": "single_source_claim",
+              "source_id": "france24-en",
+              "evidence": [
+                {
+                  "source_id": "france24-en",
+                  "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+                  "excerpt_hash": "0c64d91aa0a63a04d9d5",
+                  "checked_at": "2026-09-08T13:24:23.481Z"
+                },
+                {
+                  "source_id": "france24-en",
+                  "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+                  "excerpt_hash": "7ee85667462420073ebd",
+                  "checked_at": "2026-09-08T13:24:23.481Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:24:23.481Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "france24-en",
+              "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
+              "content_hash": "35f105521ccfa3779d8208be6bb827f383bebfbcee7274e5de534431924c5f21"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T13:24:23.481Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T13:24:23.481Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T13:40:35.863Z"
+      }
+    },
+    {
+      "story_id": "wt-af8402cd7a45cc01",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d1f1726f35b2652fa259c2530d277f2ee5a37456b5f35270f81834cde13d47ab",
+        "first_failed_at": "2026-09-08T13:22:17.950Z",
+        "failed_at": "2026-09-08T13:22:17.950Z",
+        "retry_after": "2026-09-08T13:37:17.950Z",
+        "retry_count": 1
+      },
+      "slug": "it-sicherheit-berlin-plant-nach-hackerangriff-anlaufstelle-fur-burger-45cc01",
+      "title": "IT-Sicherheit: Berlin plant nach Hackerangriff Anlaufstelle für Bürger",
+      "first_seen": "2026-09-08T13:07:52.000Z",
+      "last_updated": "2026-09-08T13:08:53.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/it-sicherheit--berlin-plant-nach-hackerangriff-anlaufstelle-fuer-buerger-38222150.html",
+          "title": "IT-Sicherheit: Berlin plant nach Hackerangriff Anlaufstelle für Bürger",
+          "summary": "Nach dem massiven Hackerangriff in Berlin sucht der Senat nach Lösungen, um verunsicherten Menschen zu helfen. Das ist geplant.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:07:52.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8d05d18f0a5eef3ce36e28f7f49c88d0999609892f9fdc219e2064ad34ec75e2",
+          "source_item_id": "58649f58154ee03368a1335d505be45ef8213353069734bfb24bf7d885debb3d",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T13:07:52.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/dpa-it-sicherheit-16030853.html",
+          "title": "IT-Sicherheit: Berlin plant nach Hackerangriff Anlaufstelle für Bürger",
+          "summary": "Nach dem massiven Hackerangriff in Berlin sucht der Senat nach Lösungen, um verunsicherten Menschen zu helfen. Das ist geplant.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:08:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a069b83d041dce3651cffda7be38d3599f80a5b65b2c148a0723dff6539931d2",
+          "source_item_id": "55b9d9bd8c73d935693084f53a9f6d1a8aebd6f54c636dff66f5f9b3607f5dd5",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T13:08:53.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-af8402cd7a45cc01-claim-01",
+          "story_id": "wt-af8402cd7a45cc01",
+          "claim": "IT-Sicherheit: Berlin plant nach Hackerangriff Anlaufstelle für Bürger: Nach dem massiven Hackerangriff in Berlin sucht der Senat nach Lösungen, um verunsicherten Menschen zu helfen. Das ist geplant.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        },
+        {
+          "claim_id": "wt-af8402cd7a45cc01-claim-02",
+          "story_id": "wt-af8402cd7a45cc01",
+          "claim": "IT-Sicherheit: Berlin plant nach Hackerangriff Anlaufstelle für Bürger: Nach dem massiven Hackerangriff in Berlin sucht der Senat nach Lösungen, um verunsicherten Menschen zu helfen. Das ist geplant.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        }
+      ],
+      "content_hash": "bbd6ca76689dc6e45babf59b324c309fde70de6c8563fb25f6f97a4e68e0c769",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T13:37:17.950Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T13:22:17.950Z",
+      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
+      "event_detected_at": "2026-09-08T13:22:17.950Z",
+      "event_id": "event-03a924fc0133c1e97257",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.415833333333333,
+        "detection_delay_minutes": 13.415833333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "d3f34c818cd81a53edc996403a9f1a4296cc6c078b1d12743804584720a776e4",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:22:17.950Z",
+      "rejection": {
+        "at": "2026-09-08T13:22:17.950Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-b84af952fb761238",
+      "slug": "sturzflut-in-nepal-berge-waren-vor-gletscherabbruch-aussergewohnlich-warm-761238",
+      "title": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm",
+      "first_seen": "2026-09-08T13:06:33.000Z",
+      "last_updated": "2026-09-08T13:06:33.000Z",
+      "topic": [
+        "Klima",
+        "Digitalisierung",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/sturzflut-in-nepal--berge-waren-vor-gletscherabbruch-aussergewoehnlich-warm-38222138.html",
+          "title": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm",
+          "summary": "Vor dem verheerenden Gletscherabbruch in Nepal und der darauffolgenden tödlichen Sturzflut war es auf dem betroffenen Himalaya-Gletscher nach Berechnungen von Klimaforschern außergewöhnlich warm. Zwischen dem 21. und 26. August lag die Durchschnittstemperatur auf dem Gletscher auf 5200 Metern Höhe bei etwa fünf Grad Celsius, wie der US-Forscher Robert Rohde anhand meteorologischer Daten errechnet hat. Seit Beginn der Aufzeichnungen vor mehr als 55 Jahren hatte die Temperatur dort in diesem Zeitraum noch nie über vier Grad Celsius gelegen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:06:33.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "929c10e21db8d227f92776180c773d79fe2cab1c15e862864a1032d6a8581c51",
+          "source_item_id": "5adfeccffee910396ff4769159dc6049999468d19b8fb01f926f5d94625c633c",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T13:06:33.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b84af952fb761238-claim-01",
+          "story_id": "wt-b84af952fb761238",
+          "claim": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm: Vor dem verheerenden Gletscherabbruch in Nepal und der darauffolgenden tödlichen Sturzflut war es auf dem betroffenen Himalaya-Gletscher nach Berechnungen von Klimaforschern außergewöhnlich warm. Zwischen dem 21. und 26. August lag die Durchschnittstemperatur auf dem Gletscher auf 5200 Metern Höhe bei etwa fünf Grad Celsius, wie der US-Forscher Robert Rohde anhand meteorologischer Daten errechnet hat. Seit Beginn der Aufzeichnungen vor mehr als 55 Jahren hatte die Temperatur dort in diesem Zeitraum noch nie über vier Grad Celsius gelegen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        }
+      ],
+      "content_hash": "b05800c449bd8a512a5a6f6ee762cd7476012ccaba182bf8cf990e46bfcb6689",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T13:22:17.950Z",
+      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
+      "event_detected_at": "2026-09-08T13:22:17.950Z",
+      "event_id": "event-eb2f1fe8aaf73d379b23",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima",
+          "Digitalisierung",
+          "Geopolitik"
+        ],
+        "dimensions": [
+          "Planet",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.749166666666667,
+        "detection_delay_minutes": 15.749166666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-c1cb9274dede2bb1",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c1543c6cd13aa5278ab013570b3e5345a00f624e8ab58a7a947f9efdfafbb7b7",
+        "first_failed_at": "2026-09-08T13:22:17.950Z",
+        "failed_at": "2026-09-08T13:22:17.950Z",
+        "retry_after": "2026-09-08T13:37:17.950Z",
+        "retry_count": 1
+      },
+      "slug": "canada-s-counter-tariffs-take-effect-as-trade-war-with-us-heats-up-de2bb1",
+      "title": "Canada's counter-tariffs take effect as trade war with US heats up",
+      "first_seen": "2026-09-08T13:04:27.000Z",
+      "last_updated": "2026-09-08T13:04:27.000Z",
+      "topic": [
+        "Arbeit",
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260908-canada-s-counter-tariffs-take-effect-as-trade-war-with-us-heats-up",
+          "title": "Canada's counter-tariffs take effect as trade war with US heats up",
+          "summary": "Canada's retaliatory tariffs on billions of dollars in US products took effect Tuesday, as a trade war between the North American neighbors heats up. On Monday, Trump had threatened to block sales of Canada's Bombardier Aviation in the United States, unless the Quebec-based plane maker moves manufacturing to the US.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:04:27.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "c86fb405251749d1519c55ca17c2fbff388c73cb87fbb8011499f21c1fb30a5f",
+          "source_item_id": "31f183391a0a1b40a2cba83d830fd1e712d1aad83028668bb2eb92385534ce56",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T13:04:27.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c1cb9274dede2bb1-claim-01",
+          "story_id": "wt-c1cb9274dede2bb1",
+          "claim": "Canada's counter-tariffs take effect as trade war with US heats up: Canada's retaliatory tariffs on billions of dollars in US products took effect Tuesday, as a trade war between the North American neighbors heats up. On Monday, Trump had threatened to block sales of Canada's Bombardier Aviation in the United States, unless the Quebec-based plane maker moves manufacturing to the US.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        }
+      ],
+      "content_hash": "25b5b9750dee8f3488f5c672e4eeb2f740bdc08d6e702ccc73b5463236e4e6c5",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T13:37:17.950Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T13:22:17.950Z",
+      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
+      "event_detected_at": "2026-09-08T13:22:17.950Z",
+      "event_id": "event-376f0f97f0f03d1a4f36",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Geopolitik",
+          "Wirtschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.849166666666665,
+        "detection_delay_minutes": 17.849166666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "43be1242fa3f195d9a8a8e32d97e3281dd9928dabc7a19877899263e1cf9d04c",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:22:17.950Z",
+      "rejection": {
+        "at": "2026-09-08T13:22:17.950Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-0830efcfbd8319be",
+      "slug": "aktionstag-knapp-480-schulen-trainieren-krisenverhalten-am-warntag-8319be",
+      "title": "Aktionstag: Knapp 480 Schulen trainieren Krisenverhalten am Warntag",
+      "first_seen": "2026-09-08T13:01:26.000Z",
+      "last_updated": "2026-09-08T13:01:26.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/aktionstag--knapp-480-schulen-trainieren-krisenverhalten-am-warntag-38222112.html",
+          "title": "Aktionstag: Knapp 480 Schulen trainieren Krisenverhalten am Warntag",
+          "summary": "Mehr als jede zweite Schule im Land macht beim Warntag mit. Was Schülerinnen und Schüler dabei über Krisen und Notfälle lernen sollen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:01:26.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c420982928484656da9e76b4e0c8b4876b04e641514d55fd6b41369b4357ef79",
+          "source_item_id": "13a8c749dc8c702e3b64d31a2104893a2aab803a5912b15f56ae1b470b6a14d0",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T13:01:26.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0830efcfbd8319be-claim-01",
+          "story_id": "wt-0830efcfbd8319be",
+          "claim": "Aktionstag: Knapp 480 Schulen trainieren Krisenverhalten am Warntag: Mehr als jede zweite Schule im Land macht beim Warntag mit. Was Schülerinnen und Schüler dabei über Krisen und Notfälle lernen sollen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        }
+      ],
+      "content_hash": "5cc66e45ac9ad1fbde6b047a56c626c49d20df8a8b942630463cb05fe5c281d2",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T13:22:17.950Z",
+      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
+      "event_detected_at": "2026-09-08T13:22:17.950Z",
+      "event_id": "event-593368060a8d32dff295",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.865833333333335,
+        "detection_delay_minutes": 20.865833333333335,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "c807aa77bc304910fde27cdceec5d69ac82f00f77f1b0e9da052f8d831e2a0a0",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-fcf6e1632cd04ab6",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d1bd24ce0e75e526cdf8b711b68fe5dc9701e4bf7166c715b8f513cbedb8bb35",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
+      "slug": "ukraine-krieg-nach-us-gesprachen-kiew-meldet-neue-russische-angriffe-d04ab6",
+      "title": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe",
+      "first_seen": "2026-09-08T08:50:49.000Z",
+      "last_updated": "2026-09-08T12:58:28.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16029648.html",
+          "title": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe",
+          "summary": "Kaum sind Donald Trumps Vermittler aus Kiew abgereist, nimmt Russland die Hauptstadt der Ukraine wieder unter Feuer. Aus einer russischen Region werden derweil neue ukrainische Luftangriffe gemeldet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:50:49.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "ae542e77f963d15e3d741b1742dd728bf2613b470e15b09cc0612a37ec3b814f",
+          "source_item_id": "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:50:49.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--nach-us-gespraechen--kiew-meldet-neue-russische-angriffe-38220240.html",
+          "title": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe",
+          "summary": "Kaum sind Donald Trumps Vermittler aus Kiew abgereist, nimmt Russland die Hauptstadt der Ukraine wieder unter Feuer. Aus einer russischen Region werden derweil neue ukrainische Luftangriffe gemeldet.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:58:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "fa8015d6d56c4e1c28d1f30508a7040ebdeebb65143407aa1c78036d0ad2b79b",
+          "source_item_id": "89f1048b7fe2399af6f62f1469457eac125d734be23bd72dc4c8db21e8df81e3",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:58:28.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-fcf6e1632cd04ab6-claim-01",
+          "story_id": "wt-fcf6e1632cd04ab6",
+          "claim": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe: Kaum sind Donald Trumps Vermittler aus Kiew abgereist, nimmt Russland die Hauptstadt der Ukraine wieder unter Feuer. Aus einer russischen Region werden derweil neue ukrainische Luftangriffe gemeldet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        },
+        {
+          "claim_id": "wt-fcf6e1632cd04ab6-claim-02",
+          "story_id": "wt-fcf6e1632cd04ab6",
+          "claim": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe: Kaum sind Donald Trumps Vermittler aus Kiew abgereist, nimmt Russland die Hauptstadt der Ukraine wieder unter Feuer. Aus einer russischen Region werden derweil neue ukrainische Luftangriffe gemeldet.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        }
+      ],
+      "content_hash": "a33f3c8d9b301d5048a14211125bec8973e7d9f649fc5fc2f172a390a30e733d",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T13:22:17.950Z",
+      "event_first_seen_at": "2026-09-08T10:07:26.127Z",
+      "event_detected_at": "2026-09-08T10:07:26.127Z",
+      "event_id": "event-f6c9467feff2212f044b",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 23.8325,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 194.86371666666668,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "8770cc73b4212234c3c1cd7ae62e61b1733876e59395091b7b50de157282b088",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-3c41ec414080ed7d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "3252282491258f7a430be3b5dbe5550ac0e3ec349a4e2c4da95a9701c641db14",
+        "first_failed_at": "2026-09-08T13:22:17.950Z",
+        "failed_at": "2026-09-08T13:22:17.950Z",
+        "retry_after": "2026-09-08T13:37:17.950Z",
+        "retry_count": 1
+      },
+      "slug": "medienbericht-netanjahu-soll-warnung-vor-hamas-angriff-auf-israel-2023-ignoriert-haben-80ed7d",
+      "title": "Medienbericht: Netanjahu soll Warnung vor Hamas-Angriff auf Israel 2023 ignoriert haben",
+      "first_seen": "2026-09-08T12:57:00.000Z",
+      "last_updated": "2026-09-08T12:57:00.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/israel--netanjahu-ignorierte-laut-bericht-warnung-vor-hamas-angriff-38221830.html",
+          "title": "Medienbericht: Netanjahu soll Warnung vor Hamas-Angriff auf Israel 2023 ignoriert haben",
+          "summary": "Israels Ministerpräsident Benjamin Netanjahu soll vor dem Angriff der Hamas 2023 gewarnt worden sein – und nichts getan haben. Doch sein Büro dementiert den Zeitungsbericht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:57:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "9d44d9f82e416a8be25c11bd752af7d02e1227747ccc2a47915d180b27719662",
+          "source_item_id": "f3c9442ca03e6c6a8e3c58f792a029e56bfde29d1a0c17157c5111cad6271773",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:57:00.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3c41ec414080ed7d-claim-01",
+          "story_id": "wt-3c41ec414080ed7d",
+          "claim": "Medienbericht: Netanjahu soll Warnung vor Hamas-Angriff auf Israel 2023 ignoriert haben: Israels Ministerpräsident Benjamin Netanjahu soll vor dem Angriff der Hamas 2023 gewarnt worden sein – und nichts getan haben. Doch sein Büro dementiert den Zeitungsbericht.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        }
+      ],
+      "content_hash": "0152e1e70acc3f7908b31ff2a42266c51e93bcf299a36ea4d965d11a134a8585",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T13:37:17.950Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T13:22:17.950Z",
+      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
+      "event_detected_at": "2026-09-08T13:22:17.950Z",
+      "event_id": "event-3b15b768aa47e5afad34",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 25.299166666666668,
+        "detection_delay_minutes": 25.299166666666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "90f7cea5d7f384e3d668ac4c317099435cf1cc12ee8a3112082b9a8f92dd140e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:22:17.950Z",
+      "rejection": {
+        "at": "2026-09-08T13:22:17.950Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-cc35fe3c9022933c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "2939539594419da0675e66ca37224c1c14afd252c3624f2a5eea0e880bbd24cd",
+        "first_failed_at": "2026-09-08T13:22:17.950Z",
+        "failed_at": "2026-09-08T13:22:17.950Z",
+        "retry_after": "2026-09-08T13:37:17.950Z",
+        "retry_count": 1
+      },
+      "slug": "lebenswichtige-versorger-spd-fordert-spezialisteneinheit-zum-schutz-der-infrastruktur-22933c",
+      "title": "Lebenswichtige Versorger: SPD fordert Spezialisteneinheit zum Schutz der Infrastruktur",
+      "first_seen": "2026-09-08T12:55:28.000Z",
+      "last_updated": "2026-09-08T12:55:28.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/lebenswichtige-versorger--spd-fordert-spezialisteneinheit-zum-schutz-der-infrastruktur-38222048.html",
+          "title": "Lebenswichtige Versorger: SPD fordert Spezialisteneinheit zum Schutz der Infrastruktur",
+          "summary": "Sabotage am Stromnetz, Sorgen bei der Brandbekämpfung: Warum NRW aus Sicht der SPD mehr Expertise und Schlagkraft braucht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:55:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4d0d69ccb92dd25c534d8c6bac3b1d3a37e16dcef2596b0cae32da9a85292cbd",
+          "source_item_id": "d25e8dd0a5723f8c7653a561b10d7f693a96954e77822f8a691a4a1e9b2b7741",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:55:28.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-cc35fe3c9022933c-claim-01",
+          "story_id": "wt-cc35fe3c9022933c",
+          "claim": "Lebenswichtige Versorger: SPD fordert Spezialisteneinheit zum Schutz der Infrastruktur: Sabotage am Stromnetz, Sorgen bei der Brandbekämpfung: Warum NRW aus Sicht der SPD mehr Expertise und Schlagkraft braucht.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        }
+      ],
+      "content_hash": "5017014249efd98a7c135e88c5e1ab0b629234535d3577b686b198fe3cdb9a4e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T13:37:17.950Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T13:22:17.950Z",
+      "event_first_seen_at": "2026-09-08T13:22:17.950Z",
+      "event_detected_at": "2026-09-08T13:22:17.950Z",
+      "event_id": "event-8fb7efdda6a31bc3622f",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 26.8325,
+        "detection_delay_minutes": 26.8325,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "c9ddfadf5b2f0f0c82df054ffa53f8d4b8d4e6dcd5c6615bba4ca8d6b440656f",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:22:17.950Z",
+      "rejection": {
+        "at": "2026-09-08T13:22:17.950Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-a5d40d2440740c71",
       "ai_retry": {
@@ -576,7 +2153,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "c9fd51acd8d314bb3072da80745d865b8df6eb69930fb16f95d5e7d70b238877",
@@ -589,7 +2166,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T12:51:54.078Z",
       "event_detected_at": "2026-09-08T12:51:54.078Z",
       "event_id": "event-46cfb4b4d4e57dd5fd44",
@@ -624,20 +2201,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 27.6462,
+        "source_age_minutes": 43.2325,
         "detection_delay_minutes": 12.834633333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14.811566666666666,
+        "queue_age_minutes": 30.397866666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "1cdba53d1b35dcd778671cee8ecca334fa28761df68f03b2208e9668e394997c",
         "issue_codes": [],
         "warning_codes": []
@@ -2348,7 +3925,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:39:33.942Z"
+        "retry_after": "2026-09-08T13:40:41.440Z"
       }
     },
     {
@@ -3131,10 +4708,10 @@
       "story_id": "wt-e01e1e77e702edc3",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "25ef456736370d06edb4eaecbe2bb24ab30f0aeada693e2f705cf59963d8c199",
-        "first_failed_at": "2026-09-08T12:51:54.078Z",
-        "failed_at": "2026-09-08T12:51:54.078Z",
-        "retry_after": "2026-09-08T13:06:54.078Z",
+        "fingerprint": "0c6d24dc68be22f3dc87f0f12fc8e76c55f4242992751f7b04da68c995f6a496",
+        "first_failed_at": "2026-09-08T13:22:17.950Z",
+        "failed_at": "2026-09-08T13:22:17.950Z",
+        "retry_after": "2026-09-08T13:37:17.950Z",
         "retry_count": 1
       },
       "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
@@ -3152,7 +4729,7 @@
           "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
           "summary": "Ende der Fahndung nach Daniel V.: Die Polizei hat den Mann festgenommen, der für Sabotage am Stromnetz verantwortlich sein soll.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T12:35:12.000Z",
+          "published_at": "2026-09-08T12:57:50.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
@@ -3168,8 +4745,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T12:35:12.000Z",
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "source_published_at": "2026-09-08T12:57:50.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3198,22 +4775,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "601e16a0142d442f5f07a91a864cae07670d8ad5995737142d5a30483b474cc2",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_SUMMARY_SENTENCE_COUNT"
+        "AI_SUMMARY_SENTENCE_COUNT",
+        "AI_DETAIL_SUMMARY_LENGTH"
       ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-08T13:06:54.078Z",
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-08T13:37:17.950Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T10:51:42.562Z",
       "event_detected_at": "2026-09-08T10:51:42.562Z",
       "event_id": "event-1c240bac9c8b267f5a27",
@@ -3246,20 +4824,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 16.7013,
+        "source_age_minutes": 24.465833333333332,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 120.19193333333334,
+        "queue_age_minutes": 150.5898,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 95,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "f3b717ff3eaec8205e4661b931ce09f9b2d59aa5a5b06cd5658fc2b87b97a329",
         "issue_codes": [],
         "warning_codes": []
@@ -3299,7 +4877,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T12:12:00.000Z",
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -3328,7 +4906,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "a2dd6deb1e637f49b1950c7b04ca5656be003fdf7e24e5a555c96d4997953ff5",
@@ -3341,7 +4919,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T12:22:00.863Z",
       "event_detected_at": "2026-09-08T12:22:00.863Z",
       "event_id": "event-138f4d09f7c64d57aa21",
@@ -3374,20 +4952,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 54.71286666666666,
+        "source_age_minutes": 70.29916666666666,
         "detection_delay_minutes": 10.014383333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.698483333333336,
+        "queue_age_minutes": 60.28478333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 89,
+        "news_freshness_score": 85,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
         "issue_codes": [],
         "warning_codes": []
@@ -4137,7 +5715,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:56:57.000Z",
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4166,7 +5744,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "a3b0375c65de5bb7a50e922830a361014127503c38b6d1d2d4bef53afcf436b3",
@@ -4179,7 +5757,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-644b31466d3283669859",
@@ -4216,20 +5794,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 69.76286666666667,
+        "source_age_minutes": 85.34916666666666,
         "detection_delay_minutes": 9.82905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.933816666666665,
+        "queue_age_minutes": 75.52011666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 85,
+        "news_freshness_score": 82,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "cf2cc9049d053b254a3b332d318e237bce7b4f2d3c38b9e57ec7e9b72b3971cb",
         "issue_codes": [],
         "warning_codes": []
@@ -5378,7 +6956,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "fc48136262064742b7c95efb045ac35e2b0d0ab1f581d6abfb85f296e907c9c9",
@@ -5391,7 +6969,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-079e18fede24e8c4eb7b",
@@ -5427,20 +7005,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 92.5962,
+        "source_age_minutes": 108.1825,
         "detection_delay_minutes": 32.66238333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.933816666666665,
+        "queue_age_minutes": 75.52011666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
+        "news_freshness_score": 77,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "08286f2bd1d57a51fb58e950f40036cfd1385d5ad2fd5083ecb3e6be78ee53b8",
         "issue_codes": [],
         "warning_codes": []
@@ -5509,7 +7087,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
@@ -5522,7 +7100,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T12:36:46.426Z",
       "event_detected_at": "2026-09-08T12:36:46.426Z",
       "event_id": "event-112dbf80aa5019468e8a",
@@ -5557,20 +7135,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 95.71286666666667,
+        "source_age_minutes": 111.29916666666666,
         "detection_delay_minutes": 65.77376666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.9391,
+        "queue_age_minutes": 45.5254,
         "target_publication_minutes": 120,
-        "news_freshness_score": 80,
+        "news_freshness_score": 77,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
@@ -7204,6 +8782,180 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T13:22:55.109Z"
+      },
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "4b526c00ff9eadc54234906150354366f267f1b05b6749e7c08a17429104c544",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T19:22:17.950Z",
+        "sources": [
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/politik/dpa-angriffe-auf-energieversorgung-16029379.html",
+            "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei nimmt 48-Jährigen fest",
+            "summary": "Tagelang hat die Polizei nach einem Mann gefahndet, der das Stromnetz in Deutschland sabotiert haben soll. Bei seiner Festnahme wird klar: Er hatte weitere Sprengmittel bei sich.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T07:55:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "efde000c99402903136ec2fd0917b4d27906f80856dafd39a05d22e384764ab1",
+            "source_item_id": "1a2102d99635a5e602b49154d027290f174d90f4f01f81a305f4fa64751b94c2",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T07:55:01.000Z",
+            "ingested_at": "2026-09-08T13:22:17.950Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/angriffe-auf-energieversorgung--sabotage-am-stromnetz--polizei-nimmt-verdaechtigen-fest-38219776.html",
+            "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei nimmt Verdächtigen fest",
+            "summary": "Mit selbstgebauten Raketen soll ein Mann immer wieder die Energieversorgung in Deutschland angegriffen haben. Nun hat die Polizei den verdächtigen 48-Jährigen gefasst.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T10:39:06.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "86c7b1ac6345e582274ffde808efb8b1bee651aec30f060708c2373d68b8d213",
+            "source_item_id": "159b3a3a95799017a0164f3dce4761e6bab0668610ac01c3d53116eb4aba38fa",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T10:39:06.000Z",
+            "ingested_at": "2026-09-08T10:51:42.562Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/politik/deutschland/strom-sabotage-polizei-nimmt-verdaechtigen-fest-100.html",
+            "title": "Strom-Sabotage: Polizei nimmt Verdächtigen fest",
+            "summary": "Die Sabotage-Angriffe auf das Stromnetz in mehreren Bundesländern sorgten seit Tagen für Aufsehen. Jetzt nahm die Polizei einen 48-jährigen Verdächtigen fest.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T10:28:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "da406803c03b4694383640c248373f37ddec14cd4967c56912e7f6d9ae39b7a3",
+            "source_item_id": "7514bfc4fcf1c87d88e31b185f525074512569eddb4e37b4246246244e29758c",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T10:28:25.000Z",
+            "ingested_at": "2026-09-08T11:07:04.983Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/angriffe-auf-energieversorgung--sabotage-am-stromnetz--polizei-findet-bekennerschreiben-38219776.html",
+            "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
+            "summary": "Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein weiteres Bekennerschreiben.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T10:15:26.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "080101929a342211054dbbca33f28709d33bd947d11fea253f5c1ae1a6b23f9d",
+            "source_item_id": "24ea8baba04fb05f25b87b1e6d57aadd642f58643fd52a5e11e575ee7b5a6209",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T10:15:26.000Z",
+            "ingested_at": "2026-09-08T10:26:26.801Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/politik/deutschland/angriffe-auf-energieversorgung--sabotage-am-stromnetz--polizei-nimmt-48-jaehrigen-fest-38219776.html",
+            "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei nimmt 48-Jährigen fest",
+            "summary": "Tagelang hat die Polizei nach einem Mann gefahndet, der das Stromnetz in Deutschland sabotiert haben soll. Bei seiner Festnahme wird klar: Er hatte weitere Sprengmittel bei sich.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T12:57:31.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "e042533ae971999c1dd378c8cbd262ee7ffc40e71f1ecd15ad3743bdcddf743a",
+            "source_item_id": "4d2cc5946dedd98dfa47724861742e603d934d73dda37c40165ea645e8abc3d3",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T12:57:31.000Z",
+            "ingested_at": "2026-09-08T13:22:17.950Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ]
       }
     },
     {
@@ -7826,7 +9578,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "6a9068d1ebec6f01b3bc6b49547420e25734d61e781e50aa4ca0c5f43aa48445",
           "issue_codes": [],
           "warning_codes": []
@@ -8242,6 +9994,52 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T13:10:10.520Z"
+      },
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "8763b3b3519a67124ba637bdd437f50f8cd13f234c8c4a6b73ce10ac62e533bf",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T19:22:17.950Z",
+        "sources": [
+          {
+            "source_id": "tagesschau-access",
+            "publisher": "tagesschau / ARD",
+            "url": "https://www.tagesschau.de/inland/innenpolitik/liveblog-nach-sachsen-anhalt-wahl-100.html",
+            "title": "++ BSW will auch mit AfD Gespräche führen ++",
+            "summary": "Für das BSW in Sachsen-Anhalt gibt es laut Fraktionschef Schulze \"keine Brandmauer\" - es will auch mit der AfD über eine mögliche Zusammenarbeit sprechen. Die AfD hatte angekündig…",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T13:15:01.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "96a1e1028442fde6d89a9055c876bcc9a6e711be37f6e9b00b866001e66cc3e0",
+            "source_item_id": "8f11d427200126ba238cf5cd7f13e81d10b9ce76fcd4c44d9786fcc42e011cfc",
+            "publisher_id": "tagesschau",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T13:15:01.000Z",
+            "ingested_at": "2026-09-08T13:22:17.950Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesschau",
+              "basis": "publisher_resolved_from_registered_target_url",
+              "independence_established": false,
+              "collection_source_id": "swr-aktuell"
+            },
+            "collection_source_id": "swr-aktuell",
+            "collection_publisher_id": "swr"
+          }
+        ],
+        "reviewed_by": "local_relevance_filter"
       }
     },
     {
@@ -10494,10 +12292,10 @@
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "c3b04c900b62ddad597c63a1466ef5ede10c993b827efe251a922045f1a95448",
-        "first_failed_at": "2026-09-08T13:06:42.772Z",
-        "failed_at": "2026-09-08T13:06:42.772Z",
-        "retry_after": "2026-09-08T13:21:42.772Z",
+        "fingerprint": "59913038337b61f1528af1c42239dbd9bed06655d97c5ebea5d3aa47a48ae190",
+        "first_failed_at": "2026-09-08T13:22:17.950Z",
+        "failed_at": "2026-09-08T13:22:17.950Z",
+        "retry_after": "2026-09-08T13:37:17.950Z",
         "retry_count": 1
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
@@ -10532,7 +12330,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -10548,7 +12346,7 @@
           "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
           "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T12:44:09.000Z",
+          "published_at": "2026-09-08T13:01:56.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -10564,8 +12362,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T12:44:09.000Z",
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "source_published_at": "2026-09-08T13:01:56.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -10598,7 +12396,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:30:01.000Z",
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -10630,7 +12428,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -10650,7 +12448,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-03",
@@ -10671,23 +12469,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "ac67e299a9207a92e280898652b451f93b6fd0967cdcafe058ac7b0bda0d789d",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED",
-        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
       ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-08T13:21:42.772Z",
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-08T13:37:17.950Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -10720,20 +12517,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 22.562866666666668,
+        "source_age_minutes": 20.365833333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 89.49716666666667,
+        "queue_age_minutes": 105.08346666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 96,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "c436fb700fc6246017dcdb803f26a8941cea9438bc13f28b91e6cddc6e351ac1",
         "issue_codes": [],
         "warning_codes": []
@@ -13576,7 +15373,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:39:44.741Z"
+        "retry_after": "2026-09-08T13:40:51.722Z"
       }
     },
     {
@@ -14106,7 +15903,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:39:39.561Z"
+        "retry_after": "2026-09-08T13:40:46.366Z"
       }
     },
     {
@@ -15611,216 +17408,6 @@
       }
     },
     {
-      "story_id": "wt-55396a7301aa0e36",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "71004d126d8c4a1ca91d1914361b1ce041ab08af2e346495b9cc56409ef879d4",
-        "first_failed_at": "2026-09-08T10:20:48.403Z",
-        "failed_at": "2026-09-08T10:20:48.403Z",
-        "retry_after": "2026-09-08T10:35:48.403Z",
-        "retry_count": 1
-      },
-      "slug": "nahostkonflikt-berichte-london-sanktioniert-siedlungen-im-westjordanland-aa0e36",
-      "title": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland",
-      "first_seen": "2026-09-08T07:51:01.000Z",
-      "last_updated": "2026-09-08T09:54:47.000Z",
-      "topic": [
-        "Arbeit",
-        "Geopolitik",
-        "Demokratie",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-nahostkonflikt-16029366.html",
-          "title": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland",
-          "summary": "Die britische Labour-Regierung unter Premier Andy Burnham schlägt laut Medien einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T07:51:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "856d664720231c81e8dabe07f488282d6781950fc3ae2d5ab1ab6cb7c8a3a711",
-          "source_item_id": "cae612173c183c528be6b1ae4c32916169cbd7d758e70e2c0a80487e4cfcf608",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T07:51:01.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/nahostkonflikt--berichte--london-sanktioniert-siedlungen-im-westjordanland-38219736.html",
-          "title": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland",
-          "summary": "Die britische Labour-Regierung unter Premier Andy Burnham schlägt laut Medien einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T09:54:47.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "3a66e4faefc32edf03cc9a23ce4fe68ca329a2b0826cd6d3d10580fbf86a0fe3",
-          "source_item_id": "2a283df73366c30a56962b7824ff106c14b192778c8c3c6c01501294b8738f58",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T09:54:47.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-55396a7301aa0e36-claim-01",
-          "story_id": "wt-55396a7301aa0e36",
-          "claim": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland: Die britische Labour-Regierung unter Premier Andy Burnham schlägt laut Medien einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
-        },
-        {
-          "claim_id": "wt-55396a7301aa0e36-claim-02",
-          "story_id": "wt-55396a7301aa0e36",
-          "claim": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland: Die britische Labour-Regierung unter Premier Andy Burnham schlägt laut Medien einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
-        }
-      ],
-      "content_hash": "314cff7ddee007005f91030a27a6c1dc35fb80a6d4353c503f39e427ba4fe2db",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T10:35:48.403Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
-      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
-      "event_detected_at": "2026-09-08T08:06:49.615Z",
-      "event_id": "event-986b65b56d8c9beac934",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 36,
-        "public_relevance": "mittel",
-        "topics": [
-          "Arbeit",
-          "Geopolitik",
-          "Demokratie",
-          "Politik"
-        ],
-        "dimensions": [
-          "Mensch",
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 26.023383333333335,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 133.9798,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
-        "fingerprint": "f55b7486e5e23ebbfb5d8db3942cd88c50653656f4bc7720dd2ac2e5e18355c9",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T10:20:48.403Z",
-      "rejection": {
-        "at": "2026-09-08T10:20:48.403Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
       "story_id": "wt-f95054aec8b1d506",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -16984,154 +18571,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-fcf6e1632cd04ab6",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "d1bd24ce0e75e526cdf8b711b68fe5dc9701e4bf7166c715b8f513cbedb8bb35",
-        "first_failed_at": "2026-09-08T11:51:56.994Z",
-        "failed_at": "2026-09-08T11:51:56.994Z",
-        "retry_after": "2026-09-08T12:06:56.994Z",
-        "retry_count": 1
-      },
-      "slug": "ukraine-krieg-nach-us-gesprachen-kiew-meldet-neue-russische-angriffe-d04ab6",
-      "title": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe",
-      "first_seen": "2026-09-08T08:50:49.000Z",
-      "last_updated": "2026-09-08T08:50:49.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16029648.html",
-          "title": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe",
-          "summary": "Kaum sind Donald Trumps Vermittler aus Kiew abgereist, nimmt Russland die Hauptstadt der Ukraine wieder unter Feuer. Aus einer russischen Region werden derweil neue ukrainische Luftangriffe gemeldet.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T08:50:49.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "ae542e77f963d15e3d741b1742dd728bf2613b470e15b09cc0612a37ec3b814f",
-          "source_item_id": "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T08:50:49.000Z",
-          "ingested_at": "2026-09-08T11:07:04.983Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-fcf6e1632cd04ab6-claim-01",
-          "story_id": "wt-fcf6e1632cd04ab6",
-          "claim": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe: Kaum sind Donald Trumps Vermittler aus Kiew abgereist, nimmt Russland die Hauptstadt der Ukraine wieder unter Feuer. Aus einer russischen Region werden derweil neue ukrainische Luftangriffe gemeldet.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:51:56.994Z"
-        }
-      ],
-      "content_hash": "605d736f4e364e1d63d9a13db174570f8d6acf0ea93d2ad6de60df44c5e0feb9",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T12:06:56.994Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T11:51:56.994Z",
-      "event_first_seen_at": "2026-09-08T10:07:26.127Z",
-      "event_detected_at": "2026-09-08T10:07:26.127Z",
-      "event_id": "event-f6c9467feff2212f044b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 181.13323333333332,
-        "detection_delay_minutes": 76.61878333333334,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 104.51445,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 62,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T11:51:56.994Z",
-        "fingerprint": "2f24caa604c770e4181acef0efb0da59f981a32d0760c5986f621e6e417902f4",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T11:51:56.994Z",
-      "rejection": {
-        "at": "2026-09-08T11:51:56.994Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -20323,6 +21762,204 @@
       }
     },
     {
+      "story_id": "wt-55396a7301aa0e36",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "71004d126d8c4a1ca91d1914361b1ce041ab08af2e346495b9cc56409ef879d4",
+        "first_failed_at": "2026-09-08T10:20:48.403Z",
+        "failed_at": "2026-09-08T10:20:48.403Z",
+        "retry_after": "2026-09-08T10:35:48.403Z",
+        "retry_count": 1
+      },
+      "slug": "nahostkonflikt-berichte-london-sanktioniert-siedlungen-im-westjordanland-aa0e36",
+      "title": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland",
+      "first_seen": "2026-09-08T07:51:01.000Z",
+      "last_updated": "2026-09-08T07:51:01.000Z",
+      "topic": [
+        "Arbeit",
+        "Geopolitik",
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-nahostkonflikt-16029366.html",
+          "title": "Nahostkonflikt: London sanktioniert Siedlungen im Westjordanland",
+          "summary": "Die britische Labour-Regierung unter Premier Andy Burnham schlägt einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:51:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6fe9264d1b740b4f98d5a44257a97b22efd851071b40f3e921c418c7d4f611b5",
+          "source_item_id": "cae612173c183c528be6b1ae4c32916169cbd7d758e70e2c0a80487e4cfcf608",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:51:01.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/nahostkonflikt--berichte--london-sanktioniert-siedlungen-im-westjordanland-38219736.html",
+          "title": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland",
+          "summary": "Die britische Labour-Regierung unter Premier Andy Burnham schlägt laut Medien einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T09:54:47.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "3a66e4faefc32edf03cc9a23ce4fe68ca329a2b0826cd6d3d10580fbf86a0fe3",
+          "source_item_id": "2a283df73366c30a56962b7824ff106c14b192778c8c3c6c01501294b8738f58",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T09:54:47.000Z",
+          "ingested_at": "2026-09-08T10:07:26.127Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-55396a7301aa0e36-claim-01",
+          "story_id": "wt-55396a7301aa0e36",
+          "claim": "Nahostkonflikt: London sanktioniert Siedlungen im Westjordanland: Die britische Labour-Regierung unter Premier Andy Burnham schlägt einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        },
+        {
+          "claim_id": "wt-55396a7301aa0e36-claim-02",
+          "story_id": "wt-55396a7301aa0e36",
+          "claim": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland: Die britische Labour-Regierung unter Premier Andy Burnham schlägt laut Medien einen härteren Kurs gegenüber Israels Siedlungspolitik ein. Aus Israel und den USA kommt bereits scharfe Kritik.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T13:22:17.950Z"
+        }
+      ],
+      "content_hash": "ee7ebaf66a285f52b1ad3e59336287168b9e951839ef90de7848c8707d193190",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T13:22:17.950Z",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "event_id": "event-986b65b56d8c9beac934",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Geopolitik",
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 207.51583333333335,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 315.47225,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 57,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:22:17.950Z",
+        "fingerprint": "f2a56cd9684c86d8635eb23d82951cef52fc88b2b8f6eeaa44a031de40e5b598",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
       "story_id": "wt-62f87cee54b3aaa5",
       "slug": "verjahrte-ordnungsgelder-fuhren-zu-einnahmeausfallen-b3aaa5",
       "title": "Verjährte Ordnungsgelder führen zu Einnahmeausfällen",
@@ -20356,7 +21993,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -20385,7 +22022,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -20400,7 +22037,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -20441,7 +22078,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 179.27741666666665,
+        "queue_age_minutes": 194.86371666666668,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -20450,7 +22087,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -20491,7 +22128,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -20520,7 +22157,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -20535,7 +22172,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -20575,7 +22212,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 179.27741666666665,
+        "queue_age_minutes": 194.86371666666668,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -20584,7 +22221,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -21868,7 +23505,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -22717,7 +24354,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -23423,7 +25060,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -25556,7 +27193,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -29326,7 +30963,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -33049,7 +34686,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
             "summary": "Kurz nach der Abreise von US-Unterhändlern hat Russland die ukrainische Hauptstadt Kiew erneut mit ballistischen Raketen angegriffen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T12:44:09.000Z",
+            "published_at": "2026-09-08T13:01:56.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -33065,8 +34702,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T12:44:09.000Z",
-            "ingested_at": "2026-09-08T12:51:54.078Z",
+            "source_published_at": "2026-09-08T13:01:56.000Z",
+            "ingested_at": "2026-09-08T13:22:17.950Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -33087,7 +34724,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -35819,7 +37456,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -38792,7 +40429,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -39542,7 +41179,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -40705,7 +42342,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -41130,9 +42767,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T19:06:42.772Z",
+        "expires_at": "2026-09-08T19:22:17.950Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -44598,7 +46235,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -45855,7 +47492,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -46416,7 +48053,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -47925,7 +49562,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -49131,7 +50768,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -50257,7 +51894,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T12:51:54.078Z",
+            "ingested_at": "2026-09-08T13:22:17.950Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -50278,7 +51915,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -50798,7 +52435,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -51517,7 +53154,7 @@
             "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
             "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T12:44:09.000Z",
+            "published_at": "2026-09-08T13:01:56.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -51533,8 +53170,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T12:44:09.000Z",
-            "ingested_at": "2026-09-08T12:51:54.078Z",
+            "source_published_at": "2026-09-08T13:01:56.000Z",
+            "ingested_at": "2026-09-08T13:22:17.950Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -51555,7 +53192,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -54012,7 +55649,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -55510,7 +57147,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -56585,7 +58222,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -58115,9 +59752,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T19:06:42.772Z",
+        "expires_at": "2026-09-08T19:22:17.950Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -62793,7 +64430,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -67330,7 +68967,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -73414,7 +75051,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T15:31:00.000Z",
-            "ingested_at": "2026-09-08T12:51:54.078Z",
+            "ingested_at": "2026-09-08T13:22:17.950Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -73435,7 +75072,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -81999,7 +83636,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -84734,7 +86371,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -87094,7 +88731,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -87835,7 +89472,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -99879,7 +101516,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -99940,7 +101577,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -99960,7 +101597,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:06:42.772Z"
+          "checked_at": "2026-09-08T13:22:17.950Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -99976,7 +101613,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T13:06:42.772Z",
+      "updated_at": "2026-09-08T13:22:17.950Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -100016,7 +101653,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1679.8234833333333,
+        "queue_age_minutes": 1695.4097833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -100025,7 +101662,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:06:42.772Z",
+        "checked_at": "2026-09-08T13:22:17.950Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -119292,7 +120929,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -120287,7 +121924,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -120988,7 +122625,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -121742,7 +123379,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T12:51:54.078Z",
+            "ingested_at": "2026-09-08T13:22:17.950Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -121763,7 +123400,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -122426,7 +124063,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -127161,7 +128798,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
           "issue_codes": [],
           "warning_codes": []
@@ -130532,7 +132169,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -156419,7 +158056,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -200773,7 +202410,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:06:42.772Z",
+          "checked_at": "2026-09-08T13:22:17.950Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
