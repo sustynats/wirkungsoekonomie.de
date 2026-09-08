@@ -1,7 +1,333 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T19:21:40.603Z",
+  "updated_at": "2026-09-08T19:36:47.361Z",
   "stories": [
+    {
+      "story_id": "wt-366b1fbfa120e44f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "sabotage-am-stromnetz-polizei-nimmt-verdachtigen-bei-aachen-fest-20e44f",
+      "title": "Sabotage am Stromnetz: Polizei nimmt Verdächtigen bei Aachen fest",
+      "source_summary": "Die Polizei hat nach mehreren Sabotageakten am Stromnetz einen 48-Jährigen im Raum Aachen festgenommen. Nach den Berichten war er in der Nähe des Kraftwerks Weisweiler auffällig geworden; er soll Sprengmittel dabeigehabt haben, und Ermittler fanden in der Umgebung weitere Sprengladungen sowie mögliche Abschussvorrichtungen. Die Quellen nennen Vorgänge in Brandenburg, Nordrhein-Westfalen und Sachsen.\n\nIn mindestens zwei Fällen sollen die Aktionen Kurzschlüsse ausgelöst haben; in Bergheim seien mehrere Blöcke eines Kraftwerks für einige Tage ausgefallen. Die Ermittler halten Bekennerbriefe für authentisch und ordnen sie dem Verdächtigen zu. Darin wird der Kampf gegen fossile Energien als Motiv genannt; die vollständige Zuordnung und der gesamte Tatumfang bleiben offen.",
+      "summary": "Die Polizei hat einen Verdächtigen im Zusammenhang mit Sabotage am Stromnetz festgenommen. Offen bleiben Tatumfang, Zuordnung der Bekennerbriefe und mögliche weitere Vorrichtungen.",
+      "detail_summary": "Der Kern ist belegt: Ein 48-Jähriger wurde im Umfeld des Kraftwerks Weisweiler festgenommen, und die Ermittler verknüpfen ihn mit mehreren Sabotageakten an Stromnetz und Umspannwerken. Relevanz entsteht durch die mögliche Störung kritischer Energieinfrastruktur, die schon jetzt einzelne Anlagen lahmgelegt haben soll. Der Wirkpfad verläuft über beschädigte Leitungen oder Kurzschlüsse zu Ausfällen, Reparaturbedarf und höherem Sicherungsaufwand. Eine belastbare Folgewirkung auf Versorgungssicherheit oder Marktpreise ist in den Quellen noch nicht quantifiziert. Offen bleiben die endgültige Tatzuordnung, die Zahl weiterer Vorrichtungen und die Frage, ob die Bekennerbriefe den gesamten Kontext erklären. Die Evidenz reicht für eine laufende, aber noch nicht abgeschlossene Lagebewertung.",
+      "why_relevant": "Die Meldung betrifft kritische Energieinfrastruktur und damit eine mögliche Störung von Versorgung, Sicherheit und Resilienz. Das ist materiell relevant, auch weil bereits Kurzschlüsse und kurzfristige Ausfälle genannt werden.",
+      "topic": [
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Beschädigungen an Stromnetz und Kraftwerksnähe können Versorgung unterbrechen, Reparaturen erzwingen und Sicherheitsaufwand erhöhen. Der bisher belegte Kern zeigt bereits eingetretene Störungen, die Richtung ist daher negativ.",
+          "positive_path": {
+            "mechanism": "Festnahme und Ermittlungen können weitere Taten erschweren und den Schutz kritischer Infrastruktur vorübergehend stärken.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Erfolgreiche Sabotage an Leitungen oder Umspannwerken kann Kurzschlüsse, Ausfälle und Folgekosten für Betreiber und Versorger auslösen.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Bezug zu fossilen Energien ist als Motiv genannt, aber die Quellen zeigen vor allem Eingriffe in Energieinfrastruktur. Kurzfristig stehen Störungen und Sicherheitsaufwand im Vordergrund, nicht ein belegter Klimaeffekt.",
+          "positive_path": {
+            "mechanism": "Wenn Ermittlungen weitere Schäden verhindern, sinken materielle Folgeschäden an Infrastruktur und Ersatzaufwand.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Sabotage an Strom- und Umspannwerken kann Anlagen beschädigen, Reparaturbedarf und Materialeinsatz erhöhen und damit Ressourcen binden.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Meldung berührt staatliche Schutzfähigkeit, Strafverfolgung und das Vertrauen in die Sicherung kritischer Infrastruktur. Ein demokratischer Effekt ist nicht direkt belegt, aber die Sicherheitsdimension ist klar materiell.",
+          "positive_path": {
+            "mechanism": "Ermittlungen und Festnahme zeigen Handlungsfähigkeit von Polizei und Justiz gegenüber Angriffen auf öffentliche Infrastruktur.",
+            "source_ids": [
+              "rbb24-nachrichten",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wiederholte Sabotage an kritischer Infrastruktur kann Unsicherheit, Schutzdruck und politischen Konflikt über Sicherheitsmaßnahmen verstärken.",
+            "source_ids": [
+              "rbb24-nachrichten",
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "high",
+        "reason": "Die Überschrift und die Begleittexte verbinden Festnahme, Sabotage und Klimaextremismus; das erhöht Deutungsdruck und Frame-Risiko.",
+        "factual_core": "Die Polizei hat einen 48-Jährigen im Umfeld des Kraftwerks Weisweiler festgenommen; die Ermittlungen zu Sabotageakten laufen weiter.",
+        "epistemic_status": {
+          "confirmed": [
+            "Festnahme im Umfeld des Kraftwerks Weisweiler",
+            "Ermittlungen zu Sabotageakten am Stromnetz"
+          ],
+          "actor_claims": [
+            "Motiv soll Kampf gegen fossile Energien gewesen sein",
+            "weitere Anschläge seien möglich"
+          ],
+          "open": [
+            "vollständige Täterzuordnung",
+            "endgültige Bewertung der Bekennerbriefe",
+            "tatsächlicher Gesamtumfang der Schäden"
+          ]
+        },
+        "attribution": {
+          "frame_source": "Deutschlandfunk",
+          "speaker": "Bundesinnenminister Dobrindt",
+          "original_term": "Klimaextremismus",
+          "usage_type": "direct_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Klimaextremismus",
+          "origin_in_story": "Deutschlandfunk",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Klimaextremismus",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Die Sabotage wird als Teil eines extremistischen Sicherheitsproblems gerahmt.",
+          "implied_cause": "Radikalisierung im Umfeld des Klimakonflikts.",
+          "implied_responsibility": "Der festgenommene Verdächtige bzw. ein entsprechendes Milieu.",
+          "implied_threat": "Weitere Anschläge auf Strom- und Energieinfrastruktur.",
+          "implied_solution_space": "Strafverfolgung, Gefahrenabwehr und Schutz kritischer Infrastruktur.",
+          "material_omissions": [
+            "Ungeklärte Zuordnung der Bekennerbriefe",
+            "offene Fragen zum Gesamtumfang der Taten"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Politische Einordnung ist präsent, aber nicht als amtlich gesicherte Tatmotivation bestätigt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Sicherheitsdebatte über kritische Infrastruktur und Klimakonflikt",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "mittel",
+          "trust_effect_potential": "mittel",
+          "discourse_effect_potential": "Die wiederholte Verbindung von Sabotage und Klimaextremismus kann das Sicherheitsnarrativ verstärken und die Deutung verengen."
+        },
+        "impact_path": {
+          "first_order": "Festnahme und Berichterstattung über Sabotagefälle",
+          "second_order": "Einordnung als Sicherheits- und Extremismusproblem",
+          "third_order": "verschärfte Debatte über Schutz, Prävention und politische Verantwortung"
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Festnahme genannte Sabotageakte genanntes Motiv in Bekennerbriefen",
+          "what_is_inferred": "Die Überschrift kann das Sicherheitsnarrativ verstärken",
+          "what_is_open": "Keine experimentelle oder Längsschnitt-Evidenz zur Medienwirkung Motiv und Gesamtumfang sind nicht gerichtlich geklärt",
+          "facts": [
+            "Festnahme",
+            "genannte Sabotageakte",
+            "genanntes Motiv in Bekennerbriefen"
+          ],
+          "observations": [
+            "Mehrere Medien berichten über dieselbe Festnahme und ähnliche Tatvorwürfe"
+          ],
+          "inferences": [
+            "Die Überschrift kann das Sicherheitsnarrativ verstärken"
+          ],
+          "impact_potentials": [
+            "höhere Aufmerksamkeit für Infrastruktur-Schutz"
+          ],
+          "impact_risks": [
+            "Überschätzung noch offener Motiv- und Täterfragen"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Keine experimentelle oder Längsschnitt-Evidenz zur Medienwirkung",
+            "Motiv und Gesamtumfang sind nicht gerichtlich geklärt"
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Ein 48-Jähriger ist nach Angaben der Polizei im Umfeld des Kraftwerks Weisweiler festgenommen worden. Die Berichte verbinden ihn mit mehreren Sabotageakten am Stromnetz, teils mit Sprengmitteln und Kurzschlüssen. Das ist relevant, weil kritische Energieinfrastruktur betroffen ist und schon Ausfälle oder Sicherungsaufwand entstehen können. Offen bleibt aber, wie weit die Tatserie reicht, ob die Bekennerbriefe alles erklären und wie groß der Schaden am Ende wirklich ist. Die Medien setzen zusätzlich einen starken Sicherheits- und Klimabezug, der die Debatte über weitere Anschläge und staatlichen Schutz prägen kann.",
+        "editorial_assessment": "Ein 48-Jähriger ist nach Angaben der Polizei im Umfeld des Kraftwerks Weisweiler festgenommen worden. Die Berichte verbinden ihn mit mehreren Sabotageakten am Stromnetz, teils mit Sprengmitteln und Kurzschlüssen. Das ist relevant, weil kritische Energieinfrastruktur betroffen ist und schon Ausfälle oder Sicherungsaufwand entstehen können. Offen bleibt aber, wie weit die Tatserie reicht, ob die Bekennerbriefe alles erklären und wie groß der Schaden am Ende wirklich ist. Die Medien setzen zusätzlich einen starken Sicherheits- und Klimabezug, der die Debatte über weitere Anschläge und staatlichen Schutz prägen kann.",
+        "fact_first_alternative": "Festnahme bei Weisweiler und Sabotagevorwürfe stehen fest; Motiv, Gesamtumfang und rechtliche Bewertung bleiben offen; die Formulierung ‚Klimaextremismus‘ stammt aus der Vermittlung, nicht als gesicherter Tatbestand.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": true,
+        "self_frame_check": {
+          "problem_detected": true,
+          "problems": [
+            "begrifflich zugespitzte Sicherheitsrahmung",
+            "prominente Motivzuschreibung vor Klärung"
+          ],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Polizei nimmt Verdächtigen nach Sabotage am Stromnetz fest",
+          "recommended_summary": "Die Polizei hat einen 48-Jährigen im Zusammenhang mit Sabotage am Stromnetz festgenommen. Ermittlungen zu Umfang, Motiven und weiteren Vorrichtungen laufen weiter.",
+          "recommended_meta_description": "Festnahme nach Sabotage am Stromnetz: Die Polizei prüft weitere Vorrichtungen, Schäden und die Zuordnung von Bekennerbriefen."
+        },
+        "source_comparison": {
+          "sufficient_basis": true,
+          "finding": "Zwei journalistische Berichte stützen die Festnahme und den Sabotagekontext; Details zu Sprengmitteln, Vorrichtungen und Motiv werden ähnlich, aber nicht vollständig gleich berichtet."
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T19:36:47.361Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T10:51:00.000Z",
+      "last_updated": "2026-09-08T19:39:29.198Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-84b9ef22ea8e644dad56",
+      "case_file": null,
+      "source_published_at": "2026-09-08T11:02:11.000Z",
+      "published_at": "2026-09-08T11:23:45.815Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ermittlungen weitere Beteiligte oder weitere Tatorte bestätigen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Polizei oder Staatsanwaltschaft nennt neue gesicherte Tatorte, Personen oder Anklagepunkte.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-be1431b8beabbf18",
+          "announced_at": "2026-09-08T11:02:11.000Z",
+          "follow_up_date": "2026-09-15T11:23:45.815Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfung, ob weitere, bislang unentdeckte Abschussvorrichtungen im Umfeld gefunden werden.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Anzahl neu gefundener Vorrichtungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a37b40593b57fb55",
+          "announced_at": "2026-09-08T14:30:20.000Z",
+          "follow_up_date": "2026-09-15T19:39:29.198Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Klärung, ob die Bekennerbriefe und der festgenommene Verdächtige strafrechtlich und sachlich vollständig zusammengehören.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Ermittlungsstand zur Zuordnung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-9f8c8b320e821bfa",
+          "announced_at": "2026-09-08T11:02:11.000Z",
+          "follow_up_date": "2026-09-15T19:39:29.198Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Klärung des Ausmaßes der betroffenen Energieanlagen und der tatsächlichen Ausfälle.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Zahl betroffener Anlagen und Dauer der Störungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3c99e9a288c50d33",
+          "announced_at": "2026-09-08T14:30:20.000Z",
+          "follow_up_date": "2026-09-15T19:39:29.198Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/strom-sabotage-polizei-festnahme-stromnetz-brandenburg-fahndung.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:30:20.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/strom-sabotage-polizei-nimmt-verdaechtigen-fest-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:02:11.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-0db70d5b5b973623",
       "title_image": {
@@ -3145,263 +3471,6 @@
           "url": "https://www.wiwo.de/politik/konjunktur/insolvenzen-firmeninsolvenzen-sinken-im-august-aber-mehr-betroffene/100252914.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T10:55:46.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-366b1fbfa120e44f",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "sabotage-am-stromnetz-polizei-nimmt-verdachtigen-bei-aachen-fest-20e44f",
-      "title": "Sabotage am Stromnetz: Polizei nimmt Verdächtigen bei Aachen fest",
-      "source_summary": "Die Polizei hat nach mehreren Sabotage-Angriffen auf das deutsche Stromnetz einen 48-jährigen Verdächtigen festgenommen. Nach den Berichten wurde er in der Nähe des Kraftwerks Weisweiler bei Aachen aufgegriffen; zuvor war bundesweit nach ihm gefahndet worden. Als Tatvorwurf werden unter anderem Versuche genannt, mit selbstgebauten Raketen oder Vorrichtungen Kurzschlüsse an Hochspannungsleitungen auszulösen.\n\nIn den Quellen ist außerdem von Bekennerbriefen die Rede, die die Ermittler dem Verdächtigen zuordnen und als authentisch werten. Die Staatsanwaltschaft ermittelt wegen des Verdachts der Herbeiführung einer Sprengstoffexplosion und der Störung öffentlicher Betriebe. Offen bleibt nach den Quellen vor allem, wie die Taten genau zusammenhängen und ob weitere Tatbeteiligte eine Rolle spielten.",
-      "summary": "Die Polizei hat einen 48-Jährigen im Zusammenhang mit Sabotage am Stromnetz festgenommen. Die Ermittlungen zu Ablauf, Motiven und möglichem Umfang laufen weiter.",
-      "detail_summary": "Kern der Meldung ist die Festnahme eines 48-jährigen Verdächtigen bei Aachen nach einer Serie von Angriffen auf das Stromnetz. Die Berichte nennen Taten in mehreren Bundesländern, dazu Bekennerbriefe und laufende Ermittlungen der Staatsanwaltschaft. Für die Wirkung ist vor allem relevant, dass ein möglicher Akteur aus dem Zugriff der Ermittler genommen wurde und die Infrastrukturangriffe damit vorerst unterbrochen oder aufgeklärt werden können. Ein materieller Folgepfad liegt in der Sicherheit kritischer Energieanlagen, möglichen Anpassungen von Schutzmaßnahmen und dem Risiko weiterer Ermittlungs- und Präventionsschritte. Die Evidenz reicht für eine belastbare Erstmeldung, aber noch nicht für eine abschließende Einordnung der Hintergründe, der genauen Tatkette oder möglicher weiterer Beteiligter.",
-      "why_relevant": "Die Festnahme betrifft kritische Energieinfrastruktur, mögliche Sicherheitsfolgen und die Aufklärung einer Serie von Angriffen in mehreren Bundesländern.",
-      "topic": [
-        "Energie"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Die Festnahme kann die Lage an betroffenen Anlagen beruhigen, zeigt aber zugleich ein erhebliches Sicherheitsrisiko für Beschäftigte, Einsatzkräfte und Anwohner im Umfeld kritischer Infrastruktur."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "tendency": "risiko",
-          "rationale": "Die Angriffe richten sich gegen Energieinfrastruktur und können Versorgung, Netzstabilität und den Übergang in emissionsärmere Energieerzeugung indirekt belasten."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "risiko",
-          "rationale": "Der Fall berührt staatliche Schutz- und Ermittlungsfähigkeit bei Angriffen auf kritische Infrastruktur; zur politischen Einordnung bleiben Motive und Reichweite aber teilweise offen."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "staat",
-          "unternehmen",
-          "beschaeftigte",
-          "kommunen"
-        ]
-      },
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "high",
-        "reason": "Die Berichte benutzen zugeschriebene Motive und politisch aufgeladene Begriffe im Umfeld einer laufenden Fahndungs- und Ermittlungsstory.",
-        "factual_core": "Festnahme eines 48-jährigen Verdächtigen nach Sabotage-Angriffen auf das Stromnetz; laufende Ermittlungen zu mehreren Tatorten und Bekennerbriefen.",
-        "epistemic_status": {
-          "confirmed": [
-            "Festnahme bei Aachen",
-            "laufende Ermittlungen wegen Sabotagevorwürfen"
-          ],
-          "actor_claims": [
-            "Bekennerbriefe werden dem Verdächtigen zugeordnet und als authentisch bewertet",
-            "ein Minister spricht von Klimaextremismus"
-          ],
-          "open": [
-            "genaue Motivlage",
-            "vollständiger Tatzusammenhang",
-            "mögliche weitere Beteiligte"
-          ]
-        },
-        "attribution": {
-          "frame_source": "Quelle",
-          "speaker": "Bundesinnenminister bzw. Ermittlungsbehörden",
-          "original_term": "Klimaterrorismus",
-          "usage_type": "indirect_quote",
-          "placement": [
-            "headline"
-          ],
-          "attribution_quality": "clear_but_prominent"
-        },
-        "speaker_statement": {
-          "present": false,
-          "speaker": "offen",
-          "statement": "",
-          "status": "open"
-        },
-        "framing": {
-          "detected": true,
-          "term": "Klimaterrorismus",
-          "origin_in_story": "Quelle",
-          "media_usage": "body",
-          "attribution_quality": "unklare Attribution",
-          "factual_status": "offen",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "frame_analysis": {
-          "frame_detected": true,
-          "frame_term": "Klimaterrorismus",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "problem_definition": "Der Fall wird als Angriff auf kritische Infrastruktur und als politisch motivierte Sabotage gerahmt.",
-          "implied_cause": "Kampf gegen fossile Energien beziehungsweise Klimaextremismus nach Quellenangaben.",
-          "implied_responsibility": "Dem Verdächtigen wird die Tatserie zugeschrieben; die politische Deutung verstärkt die Zuschreibung.",
-          "implied_threat": "Gefährdung von Stromnetz und öffentlicher Sicherheit.",
-          "implied_solution_space": "Ermittlungen, Festnahme, Schutz kritischer Infrastruktur.",
-          "material_omissions": [
-            "Die Quellen klären die endgültige Motiv- und Täterschaft nicht abschließend."
-          ]
-        },
-        "political_context": {
-          "relevant": false,
-          "classification": "",
-          "evidence_based": false,
-          "evidence": [],
-          "uncertainty": "Die politische Einordnung ist ein zugeschriebener Kommunikationsrahmen, nicht der geklärte Tatbestand."
-        },
-        "resonance": {
-          "resonance_space": "",
-          "resonance_risk": "",
-          "normalization_potential": "",
-          "repetition_effect": "",
-          "trust_effect": "",
-          "polarization_potential": "",
-          "discourse_effect": ""
-        },
-        "discourse_effect": {
-          "impact_status": "potential",
-          "resonance_space": "Kritische Infrastruktur, Klimaaktivismus, innere Sicherheit",
-          "normalization_potential": "medium",
-          "repetition_risk": "medium",
-          "polarization_potential": "hoch",
-          "trust_effect_potential": "mittel",
-          "discourse_effect_potential": "Die Wortwahl kann die Wahrnehmung von Bedrohung und politischer Motivation verstärken, ohne die Beweislage selbst zu erweitern."
-        },
-        "impact_path": {
-          "first_order": "Festnahme und Berichterstattung über Tatvorwurf",
-          "second_order": "stärkere Assoziation mit politisch motivierter Sabotage",
-          "third_order": "mögliche Zuspitzung von Sicherheits- und Klimadiskursen"
-        },
-        "evidence": {
-          "status": "medium",
-          "level": "medium",
-          "what_is_known": "Festnahme Bekennerbriefe Ministerzitat",
-          "what_is_inferred": "Die Wortwahl erhöht das Potenzial für eine polarisierte öffentliche Debatte.",
-          "what_is_open": "Keine belastbare Publikums- oder Verhaltensmessung in den Quellen keine unabhängige Prüfung der politischen Zuschreibungen",
-          "facts": [
-            "Festnahme",
-            "Bekennerbriefe",
-            "Ministerzitat"
-          ],
-          "observations": [
-            "Die beiden Berichte verwenden eine zugeschriebene Motivdeutung und eine zugespitzte Täterbeschreibung."
-          ],
-          "inferences": [
-            "Die Wortwahl erhöht das Potenzial für eine polarisierte öffentliche Debatte."
-          ],
-          "impact_potentials": [
-            "höhere Aufmerksamkeit für Schutz kritischer Infrastruktur",
-            "stärkere Politisierung des Falls"
-          ],
-          "impact_risks": [
-            "Vorverurteilende Lesart",
-            "Überdehnung der Motivzuschreibung"
-          ],
-          "observed_impacts": [],
-          "limitations": [
-            "Keine belastbare Publikums- oder Verhaltensmessung in den Quellen",
-            "keine unabhängige Prüfung der politischen Zuschreibungen"
-          ]
-        },
-        "observed_impact": {
-          "present": false,
-          "description": null,
-          "evidence": []
-        },
-        "public_explanation": "Die Nachricht ist vor allem wegen der Festnahme und der Sabotagevorwürfe gegen eine kritische Infrastruktur relevant. Die Berichte nennen einen 48-Jährigen, mehrere Tatorte und Bekennerbriefe; zugleich bleiben Motiv und genauer Tatzusammenhang teilweise offen. Für die Wirkung zählt hier nicht die Reichweite der Meldung, sondern der mögliche Einfluss auf Ermittlungen und auf den Schutz von Stromanlagen. Die politische Sprache in den Berichten kann den Fall zusätzlich zuspitzen. Ob die zugeschriebenen Motive stimmen, ist mit den vorliegenden Belegen noch nicht endgültig geklärt.",
-        "editorial_assessment": "Die Nachricht ist vor allem wegen der Festnahme und der Sabotagevorwürfe gegen eine kritische Infrastruktur relevant. Die Berichte nennen einen 48-Jährigen, mehrere Tatorte und Bekennerbriefe; zugleich bleiben Motiv und genauer Tatzusammenhang teilweise offen. Für die Wirkung zählt hier nicht die Reichweite der Meldung, sondern der mögliche Einfluss auf Ermittlungen und auf den Schutz von Stromanlagen. Die politische Sprache in den Berichten kann den Fall zusätzlich zuspitzen. Ob die zugeschriebenen Motive stimmen, ist mit den vorliegenden Belegen noch nicht endgültig geklärt.",
-        "fact_first_alternative": "Sachverhalt: Festnahme nach Sabotagevorwürfen am Stromnetz. Wissensstatus: laufende Ermittlungen, Motive teils offen. Attribution: Berichte schreiben Aussagen von Polizei und Innenminister zu. Frame: politisch aufgeladene Bedrohungsdeutung.",
-        "fact_first_reframe": {
-          "title": "",
-          "source_summary": "",
-          "summary": "",
-          "detail_summary": ""
-        },
-        "self_frame_warning": false,
-        "self_frame_check": {
-          "problem_detected": false,
-          "problems": [],
-          "frame_repetition_count": 0,
-          "rewrite_required": false,
-          "recommended_title": "Festnahme nach Sabotage am Stromnetz",
-          "recommended_summary": "Die Polizei hat einen 48-jährigen Verdächtigen bei Aachen festgenommen. Die Ermittlungen zu mehreren Angriffen auf das Stromnetz laufen weiter.",
-          "recommended_meta_description": "Festnahme nach Sabotagevorwürfen am Stromnetz: Was die Berichte gesichert nennen und was offen bleibt."
-        },
-        "source_comparison": {
-          "sufficient_basis": true,
-          "finding": "Zwei unabhängige journalistische Berichte tragen die Festnahme und den laufenden Ermittlungsstand übereinstimmend."
-        }
-      },
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T11:22:01.370Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T10:51:00.000Z",
-      "last_updated": "2026-09-08T11:23:45.815Z",
-      "version": 1,
-      "news_status": "confirmed",
-      "event_id": "event-84b9ef22ea8e644dad56",
-      "case_file": null,
-      "source_published_at": "2026-09-08T10:51:00.000Z",
-      "published_at": "2026-09-08T11:23:45.815Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "rbb24-nachrichten"
-          ],
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Ermittlungen weitere Beteiligte oder weitere Tatorte bestätigen.",
-          "source_id": "dlf-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Polizei oder Staatsanwaltschaft nennt neue gesicherte Tatorte, Personen oder Anklagepunkte.",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-be1431b8beabbf18",
-          "announced_at": "2026-09-08T11:02:11.000Z",
-          "follow_up_date": "2026-09-15T11:23:45.815Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/strom-sabotage-polizei-festnahme-stromnetz-brandenburg-fahndung.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T10:51:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/strom-sabotage-polizei-nimmt-verdaechtigen-fest-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:02:11.000Z",
           "primary_source": false
         }
       ]
