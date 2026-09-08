@@ -1,7 +1,460 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T18:37:17.573Z",
+  "updated_at": "2026-09-08T19:21:40.603Z",
   "stories": [
+    {
+      "story_id": "wt-0db70d5b5b973623",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-da7f78205888ecc1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-f5943b6f808ee6db-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-bd9e1810bc8823a0-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "wirtschaft-experten-gehen-von-weiter-steigenden-olpreisen-aus-973623",
+      "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
+      "source_summary": "Experten erwarten weiter steigende Ölpreise. Als Grund nennt der Bericht die angespannte Lage in der Straße von Hormus, wo der Schiffsverkehr nach gegenseitigen Angriffen der USA und des Iran auf Tanker auf den niedrigsten Stand seit Mai zurückgegangen sei. Der Bericht nennt für Brent zuletzt rund 98 Dollar je Barrel und verweist auf die Einschätzung von Goldman Sachs, der Preis könne bis auf 120 Dollar steigen.\n\nZusätzlich heißt es, die Kraftstoffpreise seien auch in Deutschland unverändert hoch. Der ADAC habe in der vergangenen Woche gemeldet, der Preis für Benzin der Sorte E10 sei infolge des Irankriegs auf einen Höchststand gestiegen. Offen bleibt, wie lange die Lage anhält und ob die Preisprognose eintritt.",
+      "summary": "Ölpreise stehen laut Bericht vor weiterem Anstieg. Genannt werden die Lage in der Straße von Hormus, ein Brent-Preis von rund 98 Dollar und eine Prognose bis 120 Dollar.",
+      "detail_summary": "Die Meldung beschreibt einen angespannten Ölmarkt mit möglichem Preisanstieg. Als Auslöser nennt sie die Lage in der Straße von Hormus und verweist auf sinkenden Schiffsverkehr dort. Für die Einordnung wichtig ist vor allem die Verbindung aus Marktstörung, Preisniveau und Prognose: Brent lag zuletzt bei rund 98 Dollar je Barrel, Goldman Sachs sieht bis zu 120 Dollar als möglich. Für Verbraucher kann das höhere Kraftstoffpreise stützen oder verlängern, in der Meldung wird Deutschland als bereits hochpreisig beschrieben. Ob sich daraus ein dauerhafter Effekt auf Inflation oder Kaufkraft ergibt, bleibt offen; dafür fehlen hier belastbare Folgedaten.",
+      "why_relevant": "Der Bericht verbindet eine geopolitische Störung mit einem bereits laufenden Öl- und Kraftstoffpreisanstieg. Das kann Preise, Kosten und Kaufkraft spürbar beeinflussen, auch wenn der Eintritt hier noch nicht gemessen ist.",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Höhere Öl- und Kraftstoffpreise belasten Haushalte und Unternehmen über Energie-, Transport- und Lebenshaltungskosten. Die Meldung nennt bereits hohe Preise in Deutschland und einen möglichen weiteren Anstieg.",
+          "positive_path": {
+            "mechanism": "Falls sich die Lage in der Straße von Hormus entspannt, könnten Öl- und Kraftstoffpreise wieder sinken oder stabiler werden.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleibt der Schiffsverkehr gestört, kann das Angebot an Öl knapper bleiben und Preise sowie Folgekosten weiter erhöhen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein teurerer und angespannter Ölmarkt kann kurzfristig keine direkte Entlastung für Klima- und Ressourcenverbrauch bringen; die Meldung beschreibt aber nur Preis- und Marktfolgen, keine Emissionseffekte.",
+          "positive_path": {
+            "mechanism": "Ein dauerhafter Preisdruck könnte Energieeinsparung und geringeren Kraftstoffverbrauch anreizen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Steigende oder hohe Ölpreise können fossile Nutzung verteuern, aber auch zu Ausweichbewegungen ohne klare Klimawirkung führen; hier ist der Pfad offen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein direkter Wirkpfad auf demokratische Verfahren, Rechte oder Korrekturfähigkeit belegt. Allenfalls kann Preisdruck politische Debatten verschärfen, das ist hier aber nicht belastbar gezeigt.",
+          "positive_path": {
+            "mechanism": "Kein belastbar belegter positiver Pfad in dieser Meldung.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kein belastbar belegter negativer Pfad in dieser Meldung.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T19:21:40.603Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T20:26:58.000Z",
+      "last_updated": "2026-09-08T19:24:46.642Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-8081495831f3625dc003",
+      "case_file": null,
+      "source_published_at": "2026-09-07T20:26:58.000Z",
+      "published_at": "2026-09-07T20:40:02.383Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob sich die Lage in der Straße von Hormus entspannt oder weiter verschärft.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Schiffsverkehr, Ölpreis Brent, Tankerbewegungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4fb2cc88d03c4ce4",
+          "announced_at": "2026-09-07T20:26:58.000Z",
+          "follow_up_date": "2026-09-15T19:24:46.642Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Ölpreis die genannte Marke von 120 Dollar erreicht oder darunter bleibt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Brent-Preis je Barrel",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5b074035fb1693f0",
+          "announced_at": "2026-09-07T20:26:58.000Z",
+          "follow_up_date": "2026-09-15T19:24:46.642Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob und wie lange die Kraftstoffpreise in Deutschland hoch bleiben.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Benzinpreis E10",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a62d1f7bbe5f61e9",
+          "announced_at": "2026-09-07T20:26:58.000Z",
+          "follow_up_date": "2026-09-15T19:24:46.642Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/experten-gehen-von-weiter-steigenden-oelpreisen-aus-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-07T20:26:58.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/experten-gehen-von-weiter-steigenden-oelpreisen-aus-108.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T17:07:35.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-fba5823fb7d08999",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "gesetzentwurf-der-bundesregierung-zur-einkommensteuer-viel-versprochen-kaum-entlastet-d08999",
+      "title": "Gesetzentwurf der Bundesregierung zur Einkommensteuer: Viel versprochen, kaum entlastet",
+      "source_summary": "Der Bericht beschreibt einen vom Kabinett gebilligten Gesetzentwurf zur Einkommensteuer. Nach Darstellung des Artikels soll er über zwei Jahre rund zehn Milliarden Euro Steuerreduzierung bringen, mit Schwerpunkt auf Familien mit kleinen und mittleren Einkommen. Genannt werden höhere Freibeträge, ein höheres Kindergeld und ein höherer Arbeitnehmer-Pauschbetrag für 2027 und 2028.\n\nGleichzeitig nennt der Artikel Gegenfinanzierungen: weniger Handwerkerbonus, höhere Pauschalsteuer für Mini-Jobs sowie eine frühere Belastung hoher Einkommen und eine neue Superreichensteuer. Der Text ordnet das als eher moderate Weiterentwicklung ein und verweist darauf, dass die effektive Entlastung wegen der Gegenfinanzierung kleiner ausfallen dürfte. Offen bleibt, wie der Entwurf im weiteren Verfahren verändert wird.",
+      "summary": "Der Entwurf verschiebt Steuerlasten teilweise neu und entlastet nicht nur. Für die Wirkung zählen deshalb Verteilung und Nettoeffekt, nicht das genannte Brutto-Volumen.",
+      "detail_summary": "Der Bericht schildert einen Kabinettsentwurf zur Einkommensteuer mit mehreren Stellschrauben: höhere Freibeträge, höheres Kindergeld, höherer Arbeitnehmer-Pauschbetrag und zugleich Kürzungen bei Handwerkerbonus und Mini-Job-Besteuerung. Materiell relevant ist das, weil damit nachgelagerte Steuerzahlungen, Arbeitskosten und Verteilungseffekte für verschiedene Gruppen verändert werden. Der Wirkpfad reicht von Haushalten mit Kindern über Arbeitgeber bis zu hohen Einkommen. Möglich ist eine spürbare, aber durch Gegenfinanzierung begrenzte Nettoentlastung. Die Evidenz bleibt aber journalistisch vermittelt; die endgültige Fassung und die tatsächliche Verteilungswirkung sind noch offen.",
+      "why_relevant": "Der Entwurf verändert Steuerregeln, Gegenfinanzierung und Verteilung für mehrere Gruppen. Damit sind Nettoeffekt, Belastungsverschiebung und mögliche Markt- und Beschäftigungseffekte materiell relevant.",
+      "topic": [
+        "Europa",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Für Haushalte mit kleinen und mittleren Einkommen spricht der Entwurf eher für Entlastung; für Mini-Job-Arbeitgeber und Nutzer des Handwerkerbonus eher für Mehrbelastung. Der Nettoeffekt hängt von der endgültigen Fassung ab.",
+          "positive_path": {
+            "mechanism": "Höhere Freibeträge, höheres Kindergeld und ein größerer Arbeitnehmer-Pauschbetrag senken die Steuerlast für begünstigte Haushalte.",
+            "source_ids": [
+              "lto-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kürzerer Handwerkerbonus und höhere Pauschalsteuer für Mini-Jobs erhöhen Kosten an anderer Stelle und mindern die Nettowirkung.",
+            "source_ids": [
+              "lto-news"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung gibt es keinen belastbaren direkten Wirkpfad auf Umweltzustände, Emissionen oder Ressourcenverbrauch. Allenfalls indirekte Effekte über Arbeits- und Konsumstrukturen bleiben offen.",
+          "positive_path": {
+            "mechanism": "Kein direkt belegter Umweltpfad in der Meldung.",
+            "source_ids": [
+              "lto-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kein direkt belegter Umweltpfad in der Meldung.",
+            "source_ids": [
+              "lto-news"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Der Vorgang ist parlamentarisch und budgetpolitisch relevant, weil er Verteilung und Steuerregeln berührt. Ein gesicherter Effekt auf demokratische Korrekturfähigkeit oder Beteiligung ist aus der Meldung aber nicht belegbar.",
+          "positive_path": {
+            "mechanism": "Offene Gesetzgebung mit späteren Beratungen kann Anpassungen und öffentliche Kontrolle über die Verteilungswirkung ermöglichen.",
+            "source_ids": [
+              "lto-news"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn die Nettoeffekte unklar bleiben, kann die Debatte die tatsächliche Umverteilung schwerer nachvollziehbar machen.",
+            "source_ids": [
+              "lto-news"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen",
+          "beschaeftigte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T19:21:40.603Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T08:39:22.000Z",
+      "last_updated": "2026-09-08T19:24:34.081Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-55fed03b91340e3261dc",
+      "case_file": null,
+      "source_published_at": "2026-09-08T08:39:22.000Z",
+      "published_at": "2026-09-08T10:11:55.980Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "lto-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Das Kabinett befasst sich mit dem vorgelegten Entwurf weiter und der Bundestag berät anschließend darüber.",
+          "source_id": "lto-news",
+          "expected_by": null,
+          "measurable_indicator": "Kabinetts- und Parlamentsbeschlüsse zum Einkommensteuerentwurf",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-800702ae6d10ea06",
+          "announced_at": "2026-09-08T08:39:22.000Z",
+          "follow_up_date": "2026-09-15T10:11:55.980Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die angekündigten Änderungen greifen stufenweise in den Jahren 2027 und 2028.",
+          "source_id": "lto-news",
+          "expected_by": null,
+          "measurable_indicator": "Belegte Beschlüsse oder Inkrafttreten der Stufen 2027 und 2028",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-02eb13cf7bf55f98",
+          "announced_at": "2026-09-08T08:39:22.000Z",
+          "follow_up_date": "2026-09-15T10:11:55.980Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Gesetzentwurf im parlamentarischen Verfahren unverändert bleibt oder geändert wird.",
+          "source_id": "lto-news",
+          "expected_by": null,
+          "measurable_indicator": "Änderungen an Freibeträgen, Kindergeld, Pauschbetrag oder Gegenfinanzierung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4fdbadd19915b506",
+          "announced_at": "2026-09-08T08:39:22.000Z",
+          "follow_up_date": "2026-09-15T19:24:34.081Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Welche Netto-Entlastung sich nach offizieller Berechnung für typische Haushalte ergibt.",
+          "source_id": "lto-news",
+          "expected_by": null,
+          "measurable_indicator": "Bezifferte Entlastung für Modellhaushalte",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-573609a6a35225ac",
+          "announced_at": "2026-09-08T08:39:22.000Z",
+          "follow_up_date": "2026-09-15T19:24:34.081Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Legal Tribune Online",
+          "url": "https://www.lto.de/recht/hintergruende/h/gesetzentwurf-bundesregierung-einkommensteuer-handwerkerbonus-progression?r=rss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:39:22.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-5e7e68982c2cae31",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "bildung-nach-pisa-studie-debatte-uber-mehr-forderung-von-kindern-und-schulern-2cae31",
+      "title": "Bildung - Nach Pisa-Studie: Debatte über mehr Förderung von Kindern und Schülern",
+      "source_summary": "Nach dem schwachen Abschneiden deutscher Schüler in der jüngsten Pisa-Studie wird über Konsequenzen für Förderung und Schule diskutiert. In dem Bericht werden mehrere Reaktionen genannt: ein geplantes Programm an Grundschulen zur gezielten Förderung in den ersten beiden Klassen, das im Herbst 2027 starten soll, Forderungen nach Rücknahme geplanter Bundes-Kita-Kürzungen sowie der Vorschlag für ein verpflichtendes letztes Kita- oder Vorschuljahr.\n\nDer Beitrag nennt außerdem Kritik, die Schule solle nicht als Reparaturbetrieb für gesellschaftliche Probleme dienen, und verweist auf Nachschulungsbedarf bei Auszubildenden durch Unternehmen. Offen bleibt, ob aus den Forderungen bereits konkrete Beschlüsse oder neue Finanzierungen folgen.",
+      "summary": "Nach der Pisa-Studie läuft eine Debatte über mehr Förderung in Kita und Schule. Konkrete Maßnahmen werden genannt, aber noch nicht als beschlossen belegt.",
+      "detail_summary": "Die Meldung beschreibt eine politische und fachliche Reaktion auf schlechte Pisa-Ergebnisse: mehr Förderung, mögliche Änderungen bei Kitas und ein Programm für Grundschulen ab Herbst 2027. Das ist als Zustandsinformation relevant, weil sich daraus später Regeln, Mittel oder Zuständigkeiten ändern könnten. Ein direkter Wirkungseintritt ist damit noch nicht belegt. Der mögliche Pfad reicht von früherer Förderung zu besseren Lernbedingungen; als Gegenpfad stehen unklare Finanzierung, Verzögerungen oder Kürzungen. Die Evidenz bleibt auf einen journalistischen Bericht gestützt, deshalb sind Umfang und Verbindlichkeit der angekündigten Schritte offen.",
+      "why_relevant": "Bildungspolitische Reaktionen auf schlechte Pisa-Ergebnisse können Förderlogik, Finanzierung und Zuständigkeiten beeinflussen und damit viele Kinder und Schulen betreffen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Mehr frühe Förderung kann Lernbedingungen verbessern, wenn sie finanziert, umgesetzt und an die betroffenen Schulen gebracht wird; ein direkter Effekt ist hier aber noch nicht belegt.",
+          "positive_path": {
+            "mechanism": "Gezielte Förderung in den ersten Schuljahren kann Lernrückstände früher adressieren und dadurch Kompetenzentwicklung stabilisieren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne belastbare Finanzierung oder bei Kürzungen im Kita-Bereich kann Unterstützung ausbleiben oder sich verzögern, sodass Belastungen bestehen bleiben.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein belastbarer Wirkpfad zu Umwelt- oder Klimazuständen beschrieben.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Bildungsförderung kann mittelfristig Teilhabe und demokratische Kompetenz stützen; zugleich sind Verteilungsfragen und die demokratische Korrekturfähigkeit von Bildungsentscheidungen offen.",
+          "positive_path": {
+            "mechanism": "Bessere Grundförderung kann Bildungsungleichheit mindern und Teilhabechancen für spätere politische Mitwirkung erhöhen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn Maßnahmen selektiv, spät oder ohne Gegenfinanzierung kommen, können Ungleichheiten und Konflikte über Prioritäten bestehen bleiben.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T19:21:40.603Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T18:58:01.000Z",
+      "last_updated": "2026-09-08T19:23:06.958Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-dc29896f008b229c67ff",
+      "case_file": null,
+      "source_published_at": "2026-09-08T18:58:01.000Z",
+      "published_at": "2026-09-08T19:23:06.958Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob Bund, Länder oder Verbände konkrete Beschlüsse, Finanzierungen oder Zeitpläne nachlegen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "konkrete Beschlüsse oder Haushaltsansätze",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bec88c83d773bf98",
+          "announced_at": "2026-09-08T18:58:01.000Z",
+          "follow_up_date": "2026-09-15T19:23:06.958Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/nach-pisa-studie-debatte-ueber-mehr-foerderung-von-kindern-und-schuelern-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T18:58:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-3707b0d66087698b",
       "title_image": {
@@ -3044,104 +3497,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-08T09:18:00.000Z",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-fba5823fb7d08999",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "gesetzentwurf-der-bundesregierung-zur-einkommensteuer-viel-versprochen-kaum-entlastet-d08999",
-      "title": "Gesetzentwurf der Bundesregierung zur Einkommensteuer: Viel versprochen, kaum entlastet",
-      "source_summary": "Die Quelle beschreibt einen vom Bundeskabinett gebilligten Gesetzentwurf zur Einkommensteuer. Nach ihrer Darstellung soll das Gesamtvolumen der Entlastung rund zehn Milliarden Euro betragen und vor allem Familien mit kleinen und mittleren Einkommen zugutekommen. Genannt werden unter anderem höhere Freibeträge, ein höheres Kindergeld, ein höherer Arbeitnehmer-Pauschbetrag sowie eine Ausweitung steuerfreier Zuschläge für Sonntags- und Feiertagsarbeit.\n\nGleichzeitig weist der Bericht auf Gegenfinanzierungen hin: der Handwerkerbonus soll sinken, die Pauschalsteuer für Mini-Jobs steigen und sehr hohe Einkommen stärker belastet werden. Die Quelle nennt außerdem Kritik aus der Bundesregierung und von Verbänden und ordnet die Reform als eher kleinteilig ein. Offen bleibt in dieser Erstmeldung, wie der Entwurf das weitere Verfahren durchläuft und in welcher Form er am Ende unverändert bleibt.",
-      "summary": "Der Gesetzentwurf verspricht Entlastung, verschiebt aber zugleich Lasten an anderer Stelle. Ob daraus am Ende ein deutlich spürbarer Wechsel entsteht, bleibt im weiteren Verfahren offen.",
-      "detail_summary": "Der berichtete Kern ist ein vom Kabinett gebilligter Gesetzentwurf zur Einkommensteuer mit rund zehn Milliarden Euro Entlastungsvolumen. Die Quelle nennt zugleich mehrere Gegenfinanzierungen, darunter Kürzungen beim Handwerkerbonus, eine höhere Pauschalsteuer für Mini-Jobs und höhere Steuersätze für sehr hohe Einkommen. Für Menschen mit kleinen und mittleren Einkommen kann das je nach Ausgestaltung zu geringeren Abzügen oder höheren Nettoeffekten führen; für Arbeitgeber von Mini-Jobs und Nutzer des Handwerkerbonus kann sich die Kostenlage verschieben. Materiell relevant ist das vor allem wegen der Breite möglicher Betroffenheit und der Verteilungswirkung zwischen Haushalten, Unternehmen und sehr hohen Einkommen. Die spätere Wirkung bleibt offen, weil der Text einen Entwurf beschreibt und keine Umsetzung oder Wirkung belegt. Die Evidenz stützt damit eine belastbare Erstmeldung, aber noch keine Aussage über eingetretene Wirkung.",
-      "why_relevant": "Der Entwurf verändert Steuerregeln, Verteilungswirkungen und Anreize für mehrere Gruppen zugleich. Das ist für Haushalte, Beschäftigungskosten und die fiskalische Belastung materiell relevant.",
-      "topic": [
-        "Europa",
-        "Politik"
-      ],
-      "status": "Entwurf",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Für Haushalte mit kleinen und mittleren Einkommen gibt es ein Entlastungspotenzial, zugleich können Kürzungen beim Handwerkerbonus und höhere Mini-Job-Abgaben gegenläufig wirken."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Aus den Quellen ergibt sich kein direkter Umwelt- oder Klimapfad. Allenfalls indirekte Verhaltensänderungen wären denkbar, bleiben aber unbelegt."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "rationale": "Steuerpolitik betrifft Verteilung, Akzeptanz und Korrekturfähigkeit staatlicher Regeln. Die Quelle zeigt zugleich Kritik und laufende politische Aushandlung."
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T10:07:26.127Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T08:39:22.000Z",
-      "last_updated": "2026-09-08T10:11:55.980Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-55fed03b91340e3261dc",
-      "case_file": null,
-      "source_published_at": "2026-09-08T08:39:22.000Z",
-      "published_at": "2026-09-08T10:11:55.980Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "lto-news"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Das Kabinett befasst sich mit dem vorgelegten Entwurf weiter und der Bundestag berät anschließend darüber.",
-          "source_id": "lto-news",
-          "expected_by": null,
-          "measurable_indicator": "Kabinetts- und Parlamentsbeschlüsse zum Einkommensteuerentwurf",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-800702ae6d10ea06",
-          "announced_at": "2026-09-08T08:39:22.000Z",
-          "follow_up_date": "2026-09-15T10:11:55.980Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Die angekündigten Änderungen greifen stufenweise in den Jahren 2027 und 2028.",
-          "source_id": "lto-news",
-          "expected_by": null,
-          "measurable_indicator": "Belegte Beschlüsse oder Inkrafttreten der Stufen 2027 und 2028",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-02eb13cf7bf55f98",
-          "announced_at": "2026-09-08T08:39:22.000Z",
-          "follow_up_date": "2026-09-15T10:11:55.980Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Legal Tribune Online",
-          "url": "https://www.lto.de/recht/hintergruende/h/gesetzentwurf-bundesregierung-einkommensteuer-handwerkerbonus-progression?r=rss",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T08:39:22.000Z",
-          "primary_source": false
         }
       ]
     },
@@ -7048,97 +7403,6 @@
           "url": "https://www.france24.com/en/africa/20260907-tunisians-tell-story-their-summer-shortages",
           "source_type": "media_rss",
           "published_at": "2026-09-07T18:50:16.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-0db70d5b5b973623",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-da7f78205888ecc1-og.png",
-          "width": 1200,
-          "height": 630
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-f5943b6f808ee6db-wide.png",
-          "width": 1200,
-          "height": 675
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0db70d5b5b973623-bd9e1810bc8823a0-square.png",
-          "width": 1080,
-          "height": 1080
-        }
-      },
-      "slug": "wirtschaft-experten-gehen-von-weiter-steigenden-olpreisen-aus-973623",
-      "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
-      "source_summary": "Der Beitrag meldet Erwartungen von Experten, dass die Ölpreise weiter steigen könnten. Als Hauptgrund nennt die Sendung die angespannte Lage in der Straße von Hormus. Dort sei der Schiffsverkehr nach gegenseitigen Angriffen der USA und des Iran auf Tanker auf den niedrigsten Stand seit Mai zurückgegangen.\n\nIm Beitrag werden aktuelle Marktwerte genannt: Brent koste rund 98 Dollar je Barrel, Goldman Sachs halte bis zu 120 Dollar für möglich. Zugleich wird auf anhaltend hohe Kraftstoffpreise in Deutschland verwiesen. Der ADAC habe in der vergangenen Woche für E10 einen Höchststand im Zusammenhang mit dem Irankrieg gemeldet.",
-      "summary": "Die Meldung beschreibt einen Ölmarkt, der unter Spannungen in der Straße von Hormus steht. Genannt werden aktuelle Preise, eine Prognose und hohe Kraftstoffpreise in Deutschland.",
-      "detail_summary": "Die Quelle berichtet von weiter steigenden Ölpreis-Erwartungen und verbindet sie mit der angespannten Lage in der Straße von Hormus. Genannt werden ein niedrigerer Schiffsverkehr, ein Brent-Preis von rund 98 Dollar und eine Einschätzung von Goldman Sachs bis 120 Dollar. Für die Einordnung ist das relevant, weil Ölpreise über Energie-, Transport- und Kraftstoffkosten in viele Bereiche wirken können. Ein möglicher Wirkpfad ist daher: höhere Rohölpreise → teurere Kraftstoffe und Transporte → Belastung für Verbraucher und Unternehmen. Wie stark und wie lange das greift, bleibt offen, weil hier nur eine journalistische Darstellung und keine eigene Marktbeobachtung vorliegt. Die zentrale Evidenz ist damit belastbar als Erstmeldung, aber nicht als abschließende Analyse der tatsächlichen Preiswirkung.",
-      "why_relevant": "Ölpreisbewegungen können breit auf Energie-, Transport- und Verbraucherpreise wirken und damit mehrere Sektoren gleichzeitig betreffen.",
-      "topic": [
-        "Wirtschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "risiko",
-          "rationale": "Steigende Öl- und Kraftstoffpreise können Haushalte und Unternehmen kurzfristig über höhere Kosten belasten; die Breite der Betroffenen ist groß, die konkrete Höhe bleibt offen."
-        },
-        "planet": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "rationale": "Höhere Preise können den Verbrauch fossiler Energie nicht direkt senken, aber die Quelle beschreibt nur Markt- und Versorgungslage; ein Umwelt-Effekt ist daraus nicht unmittelbar belegbar."
-        },
-        "democracy": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Ein direkter demokratischer Effekt ist aus der Quelle nicht belegt; denkbar sind nur indirekte Folgen über Preis- und Verteilungskonflikte."
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "haushalte",
-          "unternehmen",
-          "verbraucherinnen",
-          "staat"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-07T20:36:52.379Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-07T20:26:58.000Z",
-      "last_updated": "2026-09-07T20:40:02.383Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-8081495831f3625dc003",
-      "case_file": null,
-      "source_published_at": "2026-09-07T20:26:58.000Z",
-      "published_at": "2026-09-07T20:40:02.383Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/experten-gehen-von-weiter-steigenden-oelpreisen-aus-102.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T20:26:58.000Z",
           "primary_source": false
         }
       ]
