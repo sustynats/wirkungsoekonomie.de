@@ -12,6 +12,7 @@ on:
       - "tests/ops/hosting-migration-policy.test.mjs"
       - "scripts/ops/check-hosting-env-parity.mjs"
       - "tests/ops/hosting-env-parity.test.mjs"
+      - "tests/ops/vercel-release-admission.test.mjs"
       - "ops/vercel-project-baseline.json"
       - "ops/vercel-build-ledger.jsonl"
       - "scripts/ops/reserve-vercel-build-slot.mjs"
@@ -32,4 +33,4 @@ jobs:
         with:
           node-version: 22
       - run: npm run check:hosting-cost
-      - run: node --test tests/ops/hosting-migration-policy.test.mjs tests/ops/hosting-env-parity.test.mjs
+      - run: node --test tests/ops/hosting-migration-policy.test.mjs tests/ops/hosting-env-parity.test.mjs tests/ops/vercel-release-admission.test.mjs

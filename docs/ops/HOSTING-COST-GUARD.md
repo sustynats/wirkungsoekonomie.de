@@ -69,7 +69,7 @@ Release-Autorisierung und Kostenpruefung wie jeder andere RC.
 - `npm run check:hosting-cost:vercel` gleicht bei bestehender Vercel-Anmeldung alle tatsaechlichen Projekteinstellungen mit `ops/vercel-project-baseline.json` ab.
 - Das Live-Gate prueft ausserdem, ob der aktuelle Tarif das 0-EUR-Ziel erreicht. Ein noch laufender Pro-Bestand bleibt bis zum gesicherten Umzug aktiv, wird aber nicht mehr als erfuelltes Kostenziel ausgegeben. Aktuelle Observability-Entitlements und `observabilityBase` zaehlen ebenfalls; das Fehlen des historischen Felds `observabilityPlus` beweist keine Deaktivierung.
 - Die Team-/Projekt-API dieser Pruefung belegt keinen vollstaendigen anbieterseitigen Spend-Management-Schutz. Dieser Umfang wird ausdruecklich als nicht verifiziert ausgewiesen. Rechnungsbetrag, gemessener Verbrauch und Spend-Management-Anzeige nicht ungeprueft gleichsetzen. Private Rechnungshistorie und Kontoauszuege gehoeren nicht in das oeffentliche Repository.
-- `npm run check:vercel-release-budget` liest den tatsaechlichen Teamverbrauch aus Vercel. Im bereits ueberzogenen Zeitraum blockiert es weitere Builds; nach dem Periodenreset gibt es nur innerhalb der reservierten Verbrauchsgrenzen frei.
+- `npm run check:vercel-release-budget` prueft zuerst Tarif und Richtlinie und danach den tatsaechlichen Teamverbrauch. Ein Periodenreset hebt die 0-EUR-Zielpruefung nicht auf. Erst bei erfuellter Tarif-/Richtlinienpruefung koennen die reservierten Verbrauchsgrenzen einen Build zulassen.
 - Jede Reaktivierung automatischer Vercel-Deployments oder einer groesseren Buildmaschine ist ein Gate-FAIL.
 
 ## Verbleibende Laufzeitdienste
