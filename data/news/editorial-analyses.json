@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T15:41:47.562Z",
+  "updated_at": "2026-09-08T17:27:21.241Z",
   "candidates": [
     {
       "story_id": "wt-84ac3f26c7762712",
@@ -642,7 +642,7 @@
         "reasons": []
       },
       "fingerprint": "0ea71472a448a07bb78d90dd83f286f6029c3828610e97f86e67dc315f4aa93f",
-      "status": "ready_for_research",
+      "status": "published",
       "analysis_id": "woek-analysis-17508db58ecc"
     },
     {
@@ -8851,267 +8851,679 @@
       },
       "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
       "method_version": "1.0",
-      "source_fingerprint": "bece0de0467f9ec9824b0ae47475c565fa1771d782ec154e3dc65e2e52c28a3c",
-      "candidate_score": 73,
+      "source_fingerprint": "0ea71472a448a07bb78d90dd83f286f6029c3828610e97f86e67dc315f4aa93f",
+      "candidate_score": 74,
       "analysis_gain_score": 48,
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
+        "independent_origin_count": 3,
+        "primary_source_count": 1,
         "cited_claim_count": 2,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
       "published_at": "2026-09-06T07:19:34.655Z",
-      "updated_at": "2026-09-06T07:19:34.655Z",
-      "version": 1,
-      "editorial_question": "Was bedeutet der Bericht über wachsende hybride Risiken für Unternehmen systemisch - jenseits der Schlagzeile?",
+      "updated_at": "2026-09-08T17:27:21.241Z",
+      "version": 2,
+      "editorial_question": "Was bedeutet der Bericht über wachsende hybride Bedrohungen für Unternehmen systemisch – und was bleibt bei der Evidenz offen?",
       "analysis_type": "case_analysis",
-      "title": "Wachsende hybride Risiken für Unternehmen: Was der Bericht über Resilienz und Versorgungssicherheit zeigt",
-      "subtitle": "Cyberangriffe, Desinformation, Spionage und Sabotage werden als Bedrohungsbündel beschrieben; die Datengrundlage bleibt im Auszug offen.",
-      "teaser": "Der Bericht verweist auf wachsende Risiken für Unternehmen und mögliche Folgen für Strom und Wasser. Systemisch interessant ist weniger die Reichweite als der Wirkpfad in Resilienz, Schutzaufwand und Informationsintegrität.",
-      "seo_description": "Hybride Risiken für Unternehmen: Der Bericht zeigt mögliche Folgen für Resilienz, Versorgung und Informationsintegrität - mit offener Datengrundlage.",
-      "additional_value": "Der Zusatznutzen liegt in der Trennung von Meldung, Risikobeschreibung und tatsächlicher Wirkung: Der Text macht sichtbar, dass die Aussage vor allem ein Wirkungspotenzial beschreibt, noch keine belegte Veränderung. So wird erkennbar, wo Unternehmen, kritische Versorgung und demokratische Informationsräume tatsächlich berührt sein könnten und wo die Evidenz im Material endet.",
-      "research_summary": "Vorliegend sind zwei journalistische Berichte mit gleichem Kernbefund: Wirtschaftsforscher sehen wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage; genannt werden mögliche Folgen für Strom- und Wasserversorgung. Eine unabhängige Primärquelle, Methodik oder eine belastbare Datengrundlage zur Aussage „jedes fünfte Unternehmen“ liegen im Material nicht vor. Deshalb bleibt die Analyse bewusst eng an der Meldung und ordnet vor allem das systemische Wirkungspotenzial, nicht eine beobachtete Wirkung, ein.",
+      "title": "Wachsende Risiken für Unternehmen: Bericht nennt Cyberangriffe, Spionage und Sabotage",
+      "subtitle": "Der zusätzliche systemische Zusammenhang liegt nicht nur in einzelnen Attacken, sondern in möglichen Kaskaden auf Versorgung, Schutzaufwand und Vertrauen.",
+      "teaser": "Ein Bericht spricht von hybriden Bedrohungen für jedes fünfte Unternehmen. Entscheidend ist aber nicht die Schlagzahl der Warnung, sondern der Wirkpfad: Wo Störungen entstehen, wer sie trägt und wie sich Schutzkosten, Resilienz und Versorgungssicherheit verschieben.",
+      "seo_description": "Bericht über hybride Risiken für Unternehmen: Cyberangriffe, Spionage und Sabotage, mögliche Folgen für Strom und Wasser, offene Evidenzfragen.",
+      "additional_value": "Der Beitrag trennt Meldung, Wirkmechanismus und Einordnung. Er zeigt, warum hybride Risiken nicht bei IT-Sicherheit enden, sondern über Versorgungsketten, Schutzaufwand und Informationsintegrität in ein größeres System wirken können.",
+      "research_summary": "Belegt ist ein journalistischer Bericht des Tagesspiegels, der von wachsenden Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage spricht und mögliche Folgen für Strom- und Wasserversorgung nennt. Eine zweite journalistische Quelle der WirtschaftsWoche spiegelt die Meldung. Als institutionelle Quelle liegt ein Bundestags-Hinweis zu Cyberangriffen auf Unternehmen vor, jedoch ohne Beleg der konkreten Fünftel-Quote. Methodisch offen bleiben Datengrundlage, Zeitraum, Branchenzuschnitt und die Frage, ob aus der beschriebenen Bedrohung bereits messbare Wirkungen entstanden sind. Die Analyse bleibt daher bei plausiblen Wirkpfaden und markiert alles Weitere als offen.",
       "sections": [
         {
           "id": "lage",
-          "title": "Lage: Eine Sicherheitsmeldung mit breitem Schadenshorizont",
+          "title": "Die Lage: Ein Bericht, eine Zahl, mehrere Risikofelder",
           "paragraphs": [
-            "Der gesicherte Kern der Meldung ist schlicht: In zwei journalistischen Berichten heißt es, Wirtschaftsforscher sähen wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage. Als mögliche betroffene Bereiche werden ausdrücklich die Versorgung mit Strom und Wasser genannt. Das ist ein materialer Hinweis auf Verwundbarkeit, aber noch kein Nachweis eines bereits eingetretenen Schadens in der Breite.",
-            "Für die Einordnung ist wichtig, was nicht vorliegt: Im Material fehlen Methodik, Zeitraum, Stichprobe und unabhängige Bestätigung der Zahl „jedes fünfte Unternehmen“. Damit bleibt offen, ob der Satz eine robuste Lagebeschreibung, eine zugespitzte Teilwahrnehmung oder eine aus einem engeren Datensatz abgeleitete Aussage ist. Für die Wirkungsökonomie ist das der Unterschied zwischen gemessenem Zustand und bloßem Wirkungspotenzial."
-          ]
+            "Ein Unternehmen kann einen Cyberangriff zunächst als IT-Problem erleben. Kritischer wird es, wenn dieselbe Störung Zahlungswege, Lieferketten oder sogar Strom- und Wasserversorgung trifft. Genau diese Verbindung zieht der Bericht auf, der von hybriden Bedrohungen spricht und als Felder Cyberangriffe, Desinformation, Spionage und Sabotage nennt. Zusätzlich steht dort die Aussage, jedes fünfte Unternehmen spüre solche Bedrohungen.",
+            "Für die Einordnung ist wichtig: Belegt ist hier vor allem der journalistische Bericht selbst. Die konkrete Quote bleibt im vorliegenden Material ohne Methodik, ohne Originalstudie und ohne unabhängige Detailprüfung. Der Bundestag verweist zwar ebenfalls auf Cyberangriffe auf Unternehmen, bestätigt damit aber nicht die Fünftel-Angabe. Der Sachstand ist also: Das Risiko wird sichtbar gemacht, die Reichweite bleibt offen."
+          ],
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620",
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Ein Bericht rückt hybride Bedrohungen für Unternehmen in den Vordergrund.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Gilt als Medienereignis und Themenrahmen; noch keine Aussage über tatsächliche Schadenslage.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Unternehmen und Betreiber prüfen Schutz, IT und Abläufe enger.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die Bedrohung als relevant bewertet wird, steigen Prüf- und Sicherungsaufwand.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Bei Störungen können Kosten, Verfügbarkeit und Vertrauen leiden, etwa bei Strom oder Wasser.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur wenn Angriffe, Sabotage oder Desinformation tatsächlich in Versorgung oder Betriebsabläufe eingreifen.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "system",
-          "title": "Systemischer Zusammenhang: Warum diese Meldung mehr ist als ein Unternehmensrisiko",
+          "title": "Der zusätzliche systemische Zusammenhang: Vom Einzelfall zur Kaskade",
           "paragraphs": [
-            "Systemisch relevant wird die Meldung, weil sie mehrere Ebenen verbindet: digitale Sicherheit, physische Infrastruktur, Unternehmensabläufe und öffentliche Daseinsvorsorge. Wenn Strom- oder Wasserversorgung gestört werden, betrifft das nicht nur einzelne Firmen, sondern auch Lieferketten, Produktionsprozesse und die Funktionsfähigkeit ganzer Regionen. Der Bericht benennt diese Knotenpunkte zumindest indirekt.",
-            "Der zusätzliche systemische Nutzen dieser Analyse liegt deshalb darin, den Risikoblock nicht als Einzelfall, sondern als Kopplung mehrerer verwundbarer Systeme zu lesen. Hybride Bedrohungen wirken nicht nur über einen Kanal, sondern können Informationsräume, technische Systeme und organisatorische Entscheidungen zugleich unter Druck setzen. Das ist noch keine beobachtete Kaskade, aber ein plausibler Wirkpfad mit erhöhter Komplexität."
-          ]
+            "Der Mehrwert der Meldung liegt nicht in der Zahl allein, sondern im Systembild. Ein Angriff auf ein Unternehmen bleibt selten isoliert, wenn er Lieferbeziehungen, Energieversorgung oder Informationskanäle berührt. Dann entsteht eine Kaskade: Erst läuft ein Prozess schief, dann muss Schutz nachgezogen werden, dann verschieben sich Zuständigkeiten und Prioritäten.",
+            "Für die Wirkungsökonomie ist das ein klassischer Fall von Wirkungsordnung 1 bis 3. Ordnung 1 ist die unmittelbare Störung oder der zusätzliche Schutzaufwand. Ordnung 2 ist die Anpassung von Sicherheitsroutinen, Prüfprozessen und Resilienzkonzepten. Ordnung 3 wäre eine breitere Standardisierung von Sicherheitsanforderungen oder ein dauerhafter Druck auf Infrastruktur- und Krisenvorsorge. Ob diese höheren Ordnungen eintreten, ist hier offen; der Pfad ist nur plausibel, nicht belegt."
+          ],
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Hybride Bedrohungen erhöhen die Aufmerksamkeit in Unternehmen.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Die Berichterstattung setzt den Themenrahmen; noch kein Wirkungsnachweis.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Mehr Aufmerksamkeit führt zu mehr Prüfungen, Absicherung und Kontrolle.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die Akteure die Lage als relevant für ihren Betrieb lesen.",
+                "source_ids": [
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Bei realen Angriffen können Prozesse stocken und Versorgungsketten empfindlicher werden.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur bei tatsächlichem Durchgriff auf Betrieb oder Infrastruktur.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Dauerhafte Sicherheitsanforderungen können sich in Standards und Investitionen verfestigen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Nur wenn sich die Lage bestätigt und politisch oder branchenseitig reagiert wird.",
+                "source_ids": [
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "mpd",
-          "title": "Mensch, Planet, Demokratie: Welche Perspektiven im Material berührt werden",
+          "title": "Mensch, Planet, Demokratie: unterschiedliche Betroffenheit, ungleiche Evidenz",
           "paragraphs": [
-            "In der Mensch-Perspektive liegt der naheliegende Bezug bei Arbeitsfähigkeit, Versorgungssicherheit und Schutzaufwand. Wenn Unternehmen sich stärker gegen Cyberangriffe, Desinformation, Spionage und Sabotage absichern müssen, verändert das Ressourcenverteilung und Handlungsdruck. Das betrifft Beschäftigte, Kund:innen und indirekt auch die Versorgung der Bevölkerung. Eine konkrete Betroffenheit ist im Material jedoch nicht belegt; sichtbar ist zunächst nur das Risiko- und Anpassungsfeld.",
-            "In der Demokratie-Perspektive ist vor allem Desinformation relevant. Der Bericht nennt sie als Teil des Risikobündels. Daraus folgt kein Nachweis eines demokratischen Schadens, aber ein Bezug zur Informationsintegrität, also zur Frage, ob öffentliche Kommunikation und Vertrauen in belastbare Informationen unter Druck geraten. In der Planet-Perspektive bleibt der direkte Bezug schwach; sichtbar ist allenfalls die indirekte Möglichkeit, dass Störungen von Energie- und Wasserinfrastruktur auch ökologische Folgekosten oder ineffiziente Ersatzmaßnahmen auslösen könnten. Das Material trägt dafür aber keine konkrete Evidenz."
-          ]
+            "Für Menschen ist der Bezug am unmittelbarsten dort, wo Versorgung ausfällt oder unsicher wird. Wenn Strom oder Wasser betroffen sind, geht es nicht mehr nur um Unternehmenswerte, sondern um Alltag, Sicherheit und Erreichbarkeit von Hilfe. Das ist im Material als möglicher Pfad genannt, aber nicht als eingetretener Schaden belegt.",
+            "Für die Demokratie ist Desinformation besonders relevant, weil sie Informationsräume verunsichern kann. Auch hier gilt: Die Quelle nennt das Feld, nicht die konkrete demokratische Wirkung. Für den Planeten ist der direkte Bezug schwach. Allenfalls indirekt können Störungen in Infrastruktur oder zusätzliche technische Sicherungsmaßnahmen Ressourcenverbrauch und Emissionen beeinflussen. Das bleibt im Material offen und wäre ohne weitere Daten spekulativ."
+          ],
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Desinformation und Sabotage werden als Risikofelder genannt.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Nur als thematische Benennung im Bericht.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Wenn Informationskanäle gestört sind, sinkt die Verlässlichkeit von Entscheidungen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur bei tatsächlicher Verbreitung oder Wirkung von Desinformation.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Bei Infrastrukturstörungen steigen Unsicherheit und Belastung für Betroffene.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur wenn Strom, Wasser oder ähnliche Systeme wirklich betroffen sind.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "wirkungsordnungen",
-          "title": "Wirkungsordnungen: Was beobachtet ist, was nur als Potenzial vorliegt",
+          "title": "Wirkungsordnungen: Was direkt ist, was nachläuft, was offen bleibt",
           "paragraphs": [
-            "Erste Ordnung ist hier die unmittelbare Reaktion: Unternehmen nehmen Risiken wahr und erhöhen womöglich Schutz- oder Prüfaufwand. Zweite Ordnung wäre eine Anpassung von Sicherheitsarchitekturen, Meldewegen und Resilienzkonzepten. Dritte Ordnung könnte eine Standardisierung oder Verstetigung von Sicherheitsanforderungen sein, wenn die Lage als dauerhaft problematisch gilt. Diese Ordnungen beschreiben Wirkpfade, keine bereits eingetretenen Wirkungen.",
-            "Eine beobachtete Wirkung lässt sich im Material nicht belegen. Es gibt keine Aussage darüber, dass Unternehmen bereits tatsächlich ihre Schutzarchitektur verändert haben, dass Strom- oder Wasserversorgung konkret beeinträchtigt wurde oder dass Desinformation nachweislich eine Reaktionsfähigkeit geschwächt hat. Darum bleibt die Analyse bei Wirkungspotenzial und Wirkungsrisiko."
-          ]
+            "Direkt sichtbar ist vor allem die kommunikative Ebene: Der Bericht lenkt Aufmerksamkeit auf hybride Bedrohungen. Das ist keine wirkungslose Nebensache, aber auch keine materielle Zustandsveränderung. Die mögliche Ordnung-1-Wirkung wäre höherer Prüf- und Sicherungsaufwand in Unternehmen. Ordnung 2 wäre eine Anpassung von Sicherheitsarchitektur, Meldewegen und Krisenplänen. Ordnung 3 wäre ein dauerhafter Lock-in in strengere Sicherheitsnormen oder neue Prioritäten für kritische Infrastruktur.",
+            "Diese Stufen sollten nicht vermischt werden. Reichweite des Berichts ist nicht Wirkung auf die Realität. Ebenso wenig ist ein Bedrohungsrahmen schon ein Schaden. Der Bericht macht ein Risiko sichtbar; ob daraus bereits Störungen, Kosten oder Ausfälle folgen, ist im Material nicht belegt. Genau diese Trennung ist entscheidend, wenn man nicht bloß die Dramatik der Überschrift, sondern die Systemlogik beurteilen will."
+          ],
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Der Bericht macht das Thema sichtbar.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Kommunikative Sichtbarkeit, keine materielle Wirkung.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Sichtbarkeit kann Sicherheitsprüfungen und Vorsorge anstoßen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Wenn Unternehmen die Meldung als relevant bewerten.",
+                "source_ids": [
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Bei realen Angriffen entstehen Kosten, Störungen und möglicher Vertrauensverlust.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur bei eingetretenen Störungen oder Angriffserfolgen.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Daraus können neue Standards und dauerhafte Schutzroutinen folgen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Nur bei bestätigter Breite des Problems und anschließender Reaktion.",
+                "source_ids": [
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              }
+            ]
+          }
         },
         {
-          "id": "externalitaeten",
-          "title": "Externe Kosten und Schutzaufwand: Wo die Lasten landen können",
+          "id": "resilienz",
+          "title": "Resilienz: Schutzplanken sind keine Gegenwirkung",
           "paragraphs": [
-            "Wenn Bedrohungen zunehmen, verschiebt sich Aufwand nach außen und innen: mehr IT-Sicherung, mehr physische Sicherung, mehr Abstimmung mit Infrastruktur- und Sicherheitsakteuren. Das sind mögliche externe Kosten in Form von zusätzlichem Ressourcenverbrauch, der nicht im ursprünglichen Geschäftsprozess entsteht, sondern durch das Risiko selbst. Solche Kosten sind für die Wirkungsökonomie relevant, weil sie nicht bloß betriebliche Nebensache sind, sondern Teil des realen Wirkpfads.",
-            "Ob daraus eine positive Netto-Wirkung entsteht, ist offen. Mehr Schutz kann Resilienz erhöhen, zugleich aber Kosten und Komplexität steigern. Für die Bewertung zählt deshalb nicht die bloße Existenz von Schutzmaßnahmen, sondern ob sie tatsächlich Störungen verhindern, Schäden mindern oder Vertrauen stabilisieren. Das Material zeigt nur den Anlass für Schutzaufwand, nicht seinen Erfolg."
-          ]
-        },
-        {
-          "id": "verteilung",
-          "title": "Verteilung: Wer trägt die Risiken, wer den Aufwand?",
-          "paragraphs": [
-            "Verteilungsfragen sind in diesem Fall zentral. Große Unternehmen können Schutzmaßnahmen oft besser finanzieren als kleine und mittlere Betriebe; zugleich können gerade kleinere Akteure bei Angriffen oder Desinformation schneller überfordert sein. Das Material nennt jedoch keine Branchen, Größenklassen oder Betroffenheitsprofile. Deshalb lässt sich keine belastbare Aussage darüber treffen, wer besonders betroffen ist.",
-            "Trotzdem ist die Verteilungslogik analytisch wichtig: Wenn Sicherheitskosten steigen, werden sie meist entlang von Lieferketten und Preisen weitergegeben oder intern auf Personal und Investitionen umgelegt. Die Meldung berührt damit indirekt auch die Frage, ob Resilienz als Gemeingut organisiert ist oder ob einzelne Akteure die Last stärker tragen. Beides ist im Material angelegt, aber nicht empirisch ausbuchstabiert."
-          ]
-        },
-        {
-          "id": "frame_diskurs",
-          "title": "Frame und Diskurs: Sicherheitsrahmen ja, Wirkungsnachweis nein",
-          "paragraphs": [
-            "Die Formulierung „hybride Bedrohung“ setzt einen klaren Sicherheitsrahmen. Sie bündelt mehrere Gefahrenarten in einem alarmierten Deutungsmuster. Das ist journalistisch zulässig, kann aber die Wahrnehmung verdichten. Wichtig ist deshalb die Trennung zwischen sprachlicher Rahmung und tatsächlicher Wirkungsfeststellung: Dass ein Begriff stark klingt, ist kein Beweis für eingetretene Schäden.",
-            "Beide vorliegenden Berichte stützen sich erkennbar auf denselben Kern. Das erhöht die Wiederholung im Diskurs, aber nicht die Evidenzbreite. Für den öffentlichen Resonanzraum bedeutet das: Der Begriff kann sich schnell verfestigen, ohne dass die methodische Grundlage transparent wird. Gerade deshalb ist es sachlich geboten, die Aussage als Bericht über Risiken zu lesen und nicht als bereits gesicherten Wirkungsnachweis."
-          ]
-        },
-        {
-          "id": "szenarien",
-          "title": "Szenarien: Was sich aus dem Befund ableiten lässt - und was nicht",
-          "paragraphs": [
-            "Wenn die beschriebenen Risiken verbreiteter sind als im Auszug erkennbar, könnten Unternehmen dauerhaft mehr in Schutzarchitektur investieren, Notfallprozesse anpassen und die Zusammenarbeit mit Infrastruktur- und Sicherheitsbehörden verstärken. Das wäre eine Transformationswirkung in Richtung mehr Resilienz. Es ist aber nur ein Szenario, kein Befund aus dem Material.",
-            "Ein anderes Szenario ist eine Diskrepanz zwischen wahrgenommenem und tatsächlich gemessenem Risiko. Dann würde der Diskurs stärker wachsen als die Lage selbst. Auch das wäre relevant, weil Wahrnehmung Handlungen auslöst. Doch ohne methodische Angaben lässt sich nicht entscheiden, welches Szenario näherliegt. Die Analyse bleibt daher offen und vorsichtig."
-          ]
+            "Der Bericht erwähnt, dass es beim Thema Schutzmaßnahmen deutlich werde. Das ist wichtig, weil Schutzplanken Eintrittswahrscheinlichkeiten begrenzen können. Aber Schutz ist keine positive Gegenwirkung im eigentlichen Sinn. Eine Firewall, ein Notfallplan oder eine Meldekette schafft nicht automatisch Nutzen nach außen; sie begrenzt vor allem Schäden und Eintritt. In der Wirkungslogik zählt das als Risikobegrenzung, nicht als kompensierende Wirkung.",
+            "Für Resilienz ist der Unterschied entscheidend. Wenn Strom- oder Wassersysteme verwundbar sind, dann ist schon die Vorsorge Teil der Systemleistung. Doch solange keine konkrete Schwäche, kein Ausfall und keine belastbare Zahl über Betroffene vorliegt, bleibt die Aussage begrenzt: Es gibt ein plausibles Resilienzthema, aber noch keinen harten Nachweis eines Schadensausmaßes."
+          ],
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Schutzmaßnahmen werden als wichtig markiert.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Der Bericht verweist auf Schutz, ohne konkrete Maßnahme zu benennen.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Mehr Schutz kann Eintritt und Ausmaß von Schäden begrenzen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Nur wenn die Maßnahmen passend, finanziert und umgesetzt sind.",
+                "source_ids": [
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Ohne echte Umsetzung bleibt der Schutz ein Versprechen.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Nur programmatisch genannt, aber nicht überprüft.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "unsicherheit",
-          "title": "Unsicherheit: Die zentrale Grenze liegt bei Methodik und Zurechnung",
+          "title": "Unsicherheit: Was wir wissen und was nicht",
           "paragraphs": [
-            "Die größte Unsicherheit betrifft die Aussage „jedes fünfte Unternehmen“. Im Material fehlt die Primärquelle, und damit fehlt der Blick auf Erhebungsdesign, Zeitraum und Definition der hybriden Bedrohung. Zudem stammen die beiden vorliegenden Berichte inhaltlich aus demselben Nachrichtenkern; unabhängige Bestätigung ist nicht sichtbar. Das senkt die Beweiskraft für harte Schlussfolgerungen.",
-            "Auch die Zurechnung muss deshalb eng bleiben. Aus der Meldung folgt nicht, dass bestimmte Schäden eingetreten sind, und auch nicht, dass die beschriebenen Risiken bereits in einem klaren, quantifizierbaren Ausmaß Wirkungen entfaltet haben. Zulässig ist nur: Es liegt ein berichtetes Risikopotenzial vor, das auf Resilienz, Schutzaufwand und Informationsintegrität zielt. Mehr trägt das Material nicht."
-          ]
+            "Gesichert ist nur der Kern des Berichts: hybride Bedrohungen werden als wachsende Risiken beschrieben, und Strom wie Wasser werden als mögliche betroffene Bereiche genannt. Nicht gesichert sind hier Methodik, Stichprobe, Zeitraum, Branchenbezug und die Frage, wie genau die Fünftel-Angabe zustande kommt. Auch eine unabhängige Bestätigung der konkreten Quote fehlt im Material.",
+            "Diese Grenzen sind nicht bloß formale Vorsicht. Sie entscheiden darüber, wie stark man den Befund auf Wirtschaft, Infrastruktur oder Demokratie beziehen darf. Ohne diese Angaben bleibt die Einordnung bei einem plausiblen Risiko, nicht bei einer gemessenen Wirkung. Das ist methodisch sauberer als eine schnelle Alarmdiagnose und zugleich schärfer als eine bloße Relativierung."
+          ],
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Die Meldung nennt eine hohe Betroffenheit.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Die Quote ist im Material nicht methodisch belegt.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Ohne Originaldaten bleibt die Reichweite offen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Fehlende Daten begrenzen die Zurechnung.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Die Bewertung bleibt daher vorläufig.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Bis eine belastbare Datengrundlage vorliegt.",
+                "source_ids": [
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "beobachtung",
-          "title": "Beobachtungspunkte: Woran sich die Lage künftig prüfen lässt",
+          "title": "Beobachtungspunkte: Woran man die Lage später sauber prüft",
           "paragraphs": [
-            "Entscheidend wären jetzt belastbare Angaben zur Datengrundlage: Welche Unternehmen wurden befragt, wie wurde „hybride Bedrohung“ operationalisiert, und handelt es sich um Wahrnehmung, Vorfallserfahrung oder beides? Erst solche Details würden eine Beurteilung der Reichweite ermöglichen. Ohne sie bleibt die Meldung zwar relevant, aber methodisch unterbestimmt.",
-            "Ebenso wichtig wären unabhängige Folgeberichte zu tatsächlichen Störungen bei Strom, Wasser oder betrieblichen Abläufen. Erst dann ließe sich zwischen Risikoerwartung und beobachteter Wirkung sauber trennen. Für eine Wirkungsanalyse ist diese Unterscheidung zentral, weil Reichweite, Alarmierung und tatsächliche Zustandsveränderung eben nicht dasselbe sind."
-          ]
+            "Wenn die Lage belastbarer werden soll, braucht es mehr als Schlagzeilen. Nötig wären die Originalstudie, die verwendete Definition von „hybrider Bedrohung“, der Erhebungszeitraum und die Branchenverteilung. Ebenso wichtig wären Hinweise darauf, ob es tatsächliche Ausfälle, erhöhte Kosten oder nur eine stärkere Wahrnehmung des Risikos gibt.",
+            "Für die Redaktion heißt das: Die nächste belastbare Beobachtung wäre nicht bloß eine weitere Meldung, sondern eine zweite, methodisch sichtbare Quelle. Erst dann lässt sich prüfen, ob aus dem beschriebenen Bedrohungsraum eine reale Zustandsveränderung in Unternehmen oder Infrastruktur geworden ist. Bis dahin sollte man von Wirkpotenzial sprechen, nicht von eingetretener Wirkung."
+          ],
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Die Lage wird über einen Medienbericht sichtbar.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Noch keine vollständige Datengrundlage.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Eine zweite Quelle könnte die Reichweite bestätigen oder begrenzen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Nur wenn sie Methodik und Zeitraum offenlegt.",
+                "source_ids": [
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Erst dann lässt sich Wirkung von bloßer Alarmwirkung trennen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn Daten und tatsächliche Folgen zusammenkommen.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "synthese",
-          "title": "Synthese: Ein plausibler Resilienzhinweis mit offener Evidenzlage",
+          "title": "Synthese: Die eigentliche Nachricht ist der Wirkpfad, nicht die Überschrift",
           "paragraphs": [
-            "Die Meldung ist systemisch interessant, weil sie eine Sicherheitsfrage aus der Unternehmenswelt in die Nähe kritischer Versorgung und demokratischer Informationsräume rückt. Das macht sie relevant für Resilienz, Transformation und Verteilung. Der Mehrwert der Wirkungsökonomie besteht hier darin, die Nachricht nicht nur als Alarmmeldung, sondern als Hinweis auf mögliche Kopplungen von digitalem, physischem und organisatorischem Risiko zu lesen.",
-            "Gleichzeitig ist die Evidenz im Material zu schmal für ein hartes Urteil. Belegt ist ein berichtetes Risikopotenzial, nicht eine beobachtete Wirkung. Die sauberste Lesart lautet daher: Der Bericht zeigt einen möglichen Wirkpfad von hybriden Bedrohungen zu mehr Schutzaufwand und potenziellen Störungen in Versorgung und Vertrauen. Ob und wie stark dieser Pfad بالفعل trägt, bleibt offen und muss mit besseren Daten geprüft werden."
-          ]
+            "Die Meldung erzählt nicht nur von Risiken, sondern von möglicher Systemverflechtung. Wenn hybride Angriffe Unternehmen treffen und dabei Strom, Wasser oder Informationsräume berühren, dann geht es um mehr als einzelne Sicherheitsvorfälle. Dann berührt das Thema Resilienz, Versorgung und Vertrauen zugleich. Genau darin liegt der zusätzliche systemische Zusammenhang.",
+            "Meine Einordnung ist deshalb zweigeteilt: Ich halte den Hinweis auf hybride Risiken für relevant und systemisch ernst zu nehmen. Zugleich bleibt die konkrete Zahl im Material zu schwach belegt, um daraus eine harte Lagebeschreibung abzuleiten. Der saubere Schluss lautet daher: plausibler Bedrohungsraum, offene Reichweite, klarer Bedarf an besserer Datengrundlage."
+          ],
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620",
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Ein Bericht rahmt hybride Bedrohungen als wachsendes Risiko.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Kommunikative Sichtbarkeit, noch keine belegte Wirkung.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Unternehmen reagieren mit mehr Schutz, Prüfung und Vorsorge.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die Meldung als relevant für den Betrieb gelesen wird.",
+                "source_ids": [
+                  "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Bei realen Angriffen können Versorgung und Vertrauen leiden.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur bei tatsächlichen Störungen oder Ausfällen.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+                ]
+              },
+              {
+                "title": "Schritt 4",
+                "text": "Ohne Datengrundlage bleibt die Reichweite offen.",
+                "status": "scenario",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Bis Originaldaten und Vergleichswerte vorliegen.",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ]
+              }
+            ]
+          }
         }
       ],
       "claim_ledger": [
         {
-          "claim": "In zwei journalistischen Berichten heißt es, Wirtschaftsforscher sähen wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage.",
+          "claim": "Der Tagesspiegel berichtet über wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage.",
           "type": "fact",
           "source_ids": [
-            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
-            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
-          ],
-          "evidence_level": "medium",
-          "data_status": "confirmed",
-          "uncertainty": "Zwei journalistische Berichte über denselben Nachrichtenkern; keine Primärquelle im Material.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "Die Berichte nennen mögliche Folgen für die Versorgung mit Strom und Wasser.",
-          "type": "fact",
-          "source_ids": [
-            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
-            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
           ],
           "evidence_level": "high",
           "data_status": "confirmed",
-          "uncertainty": "Die Nennung steht im journalistischen Material; konkrete Vorfälle sind nicht belegt.",
+          "uncertainty": "Die Meldung selbst ist belegt; ihre Datengrundlage bleibt im Auszug offen.",
           "date": "2026-09-05"
         },
         {
-          "claim": "Die Aussage „jedes fünfte Unternehmen“ ist im Material nicht methodisch abgesichert.",
+          "claim": "Wirtschaftsforscher sehen wachsende Risiken etwa für die Versorgung mit Strom und Wasser.",
+          "type": "fact",
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Es fehlt im Material die Originalstudie oder Methodik.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Die Quote 'jedes fünfte Unternehmen' ist im vorliegenden Material nicht methodisch belegt.",
           "type": "observation",
           "source_ids": [
             "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
             "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
           ],
-          "evidence_level": "high",
-          "data_status": "confirmed",
-          "uncertainty": "Es fehlen Stichprobe, Zeitraum, Operationalisierung und Primärquelle.",
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Mangels Originaldaten bleibt offen, wie die Zahl erhoben wurde.",
           "date": "2026-09-05"
         },
         {
-          "claim": "Hybride Bedrohungen verbinden digitale und analoge Angriffsformen und können mehrere Systeme zugleich unter Druck setzen.",
-          "type": "woek_definition",
-          "source_ids": [],
-          "evidence_level": "open",
-          "data_status": "open",
-          "uncertainty": "Methodische Einordnung nach WÖK, nicht als Tatsachenbehauptung aus der Quelle.",
-          "date": null
-        },
-        {
-          "claim": "Die Meldung beschreibt ein Wirkungspotenzial für höhere Schutzkosten, Anpassungen von Sicherheitsarchitekturen und mögliche Störungen von Versorgungsketten.",
-          "type": "impact_potential",
+          "claim": "Hybride Bedrohungen können über Unternehmen hinaus Versorgungsketten und Infrastruktur berühren.",
+          "type": "analytical_inference",
           "source_ids": [
             "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
-            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
           ],
           "evidence_level": "medium",
           "data_status": "inferred",
-          "uncertainty": "Diese Wirkpfade sind plausibel, aber im Material nicht als eingetretene Folgen belegt.",
+          "uncertainty": "Der Pfad ist plausibel, aber im Material nicht als eingetretene Wirkung belegt.",
           "date": "2026-09-05"
         },
         {
-          "claim": "Im Material ist keine beobachtete Wirkung belegt, etwa keine konkrete Störung von Strom- oder Wasserversorgung.",
+          "claim": "Die Meldung erzeugt vor allem kommunikatives Wirkungspotenzial und keine belegte materielle Wirkung.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Eine tatsächliche Folge in Unternehmen oder Politik ist im Material nicht nachgewiesen.",
+          "date": "2026-09-05"
+        },
+        {
+          "claim": "Schutzmaßnahmen begrenzen Eintritt und Ausmaß von Schäden, sind aber keine positive Gegenwirkung.",
+          "type": "woek_definition",
+          "source_ids": [],
+          "evidence_level": "high",
+          "data_status": "open",
+          "uncertainty": "Methodische Einordnung nach WOeK, nicht als Nachrichtentatsache.",
+          "date": null
+        },
+        {
+          "claim": "Es liegt noch keine beobachtete Wirkung auf Unternehmen oder Politik vor.",
           "type": "observed_impact",
           "source_ids": [
             "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
             "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
           ],
-          "evidence_level": "high",
+          "evidence_level": "medium",
           "data_status": "confirmed",
-          "uncertainty": "Der vorliegende Auszug nennt nur Risiken und mögliche Folgen, keine eingetretenen Zustandsänderungen.",
-          "date": "2026-09-05"
+          "uncertainty": "Das Material liefert keine belastbare Zustandsveränderung, nur einen Bericht und eine institutionelle Kurzmeldung.",
+          "date": "2026-09-08"
         },
         {
-          "claim": "Der Begriff „hybride Bedrohung“ setzt einen Sicherheitsrahmen und kann den öffentlichen Resonanzraum in Richtung Alarmierung verschieben.",
-          "type": "analytical_inference",
+          "claim": "Eine stärkere Standardisierung von Sicherheitsanforderungen wäre nur ein mögliches drittes Wirkungsniveau, nicht belegt.",
+          "type": "impact_potential",
           "source_ids": [
-            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
-            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
           ],
-          "evidence_level": "medium",
-          "data_status": "inferred",
-          "uncertainty": "Das ist eine diskursanalytische Einordnung; sie beschreibt ein mögliches Framing, keine eingetretene Wirkung.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "Für Mensch, Planet und Demokratie ist die Meldung unterschiedlich relevant: Mensch vor allem über Versorgungssicherheit und Schutzaufwand, Demokratie vor allem über Informationsintegrität, Planet nur indirekt.",
-          "type": "analytical_inference",
-          "source_ids": [
-            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
-            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
-          ],
-          "evidence_level": "medium",
-          "data_status": "inferred",
-          "uncertainty": "Die Perspektivenordnung ist analytisch; direkte Umweltfolgen sind im Material nicht belegt.",
-          "date": "2026-09-05"
-        },
-        {
-          "claim": "Es lässt sich keine positive Netto-Wirkung im engeren Sinn behaupten, weil nur Risiken und mögliche Schutzreaktionen beschrieben werden.",
-          "type": "normative_assessment",
-          "source_ids": [
-            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
-            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
-          ],
-          "evidence_level": "medium",
-          "data_status": "inferred",
-          "uncertainty": "Bewertung basiert auf unvollständiger Evidenz und bleibt vorläufig.",
-          "date": "2026-09-05"
+          "evidence_level": "low",
+          "data_status": "scenario",
+          "uncertainty": "Dafür fehlt im Material ein angekündigter oder untersuchter politischer oder branchenseitiger Schritt.",
+          "date": null
         }
       ],
       "counter_evidence": [
         {
-          "finding": "Beide vorliegenden Berichte tragen denselben Kern und ersetzen keine unabhängige Zweitquelle; damit steigt nicht die Evidenzbreite, sondern vor allem die Wiederholung.",
+          "finding": "Die vorliegenden Quellen bestätigen die Fünfte-Quote nicht unabhängig und liefern keine Methodik.",
           "source_ids": [
             "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
             "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
           ],
-          "effect_on_assessment": "Begrenzt die Sicherheit der Zurechnung und macht ein hartes Lageurteil unmöglich."
+          "effect_on_assessment": "Begrenzt die Stärke der Lageaussage; die Reichweite bleibt offen."
         },
         {
-          "finding": "Im Material fehlen Methodik, Zeitraum, Stichprobe und Primärquelle zur Aussage „jedes fünfte Unternehmen“.",
+          "finding": "Der Bundestags-Hinweis nennt Cyberangriffe auf Unternehmen, bestätigt aber nicht die im Bericht genannte Betroffenheitsquote.",
           "source_ids": [
-            "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
-            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
           ],
-          "effect_on_assessment": "Reduziert die Beweiskraft für Reichweite und Verallgemeinerung erheblich."
+          "effect_on_assessment": "Stützt das Thema, nicht aber die konkrete Quantifizierung."
         },
         {
-          "finding": "Es wird keine konkrete Störung von Strom oder Wasser berichtet, sondern nur ein mögliches Risiko bzw. eine mögliche Betroffenheit.",
+          "finding": "Im Material fehlt ein belastbarer Nachweis für bereits eingetretene materielle Schäden oder politische Folgewirkungen.",
           "source_ids": [
             "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
-            "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
           ],
-          "effect_on_assessment": "Schließt eine behauptete beobachtete Wirkung aus und hält die Analyse im Bereich des Potenzials."
+          "effect_on_assessment": "Spricht gegen eine Formulierung als beobachtete Wirkung; es bleibt beim Wirkpotenzial."
         }
       ],
+      "editorial_rules_version": "2.0",
+      "executive_finding": "Der Bericht macht hybride Bedrohungen für Unternehmen sichtbar, vor allem durch Cyberangriffe, Desinformation, Spionage und Sabotage. Systemisch wichtig ist der mögliche Durchgriff auf Strom, Wasser und andere Knoten der Versorgung. Dann entstehen nicht nur einzelne Störungen, sondern Folgekosten, Schutzaufwand und Unsicherheit. Die entscheidende Bedingung bleibt jedoch offen: Die genannte Fünftel-Quote ist im Material nicht methodisch belegt, darum ist die Reichweite vorläufig und die Wirkung noch nicht als eingetreten nachweisbar.",
+      "subject_dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Mögliche Folgen reichen bis zu Versorgungsausfällen, Schutzaufwand und Belastungen für Arbeits- und Alltagssicherheit.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "negative",
+          "magnitude": "medium",
+          "evidence": "plausible_path"
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Kein direkter Umweltbezug belegt; nur indirekte Effekte über Infrastrukturstörungen oder zusätzliche Sicherungsmaßnahmen denkbar.",
+          "implementation_status": "open",
+          "likelihood": "open",
+          "direction": "open",
+          "magnitude": "open",
+          "evidence": "open"
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Desinformation berührt Informationsintegrität; konkrete demokratische Wirkungen sind im Material aber nicht belegt.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "negative",
+          "magnitude": "low",
+          "evidence": "plausible_path"
+        }
+      },
+      "assessment_context": "potential",
+      "assessment_condition": "Die Bewertung gilt nur, solange es um den im Material beschriebenen Bedrohungsraum ohne belastbare Originaldaten, ohne bestätigte Ausfälle und ohne gemessene Folgewirkungen geht.",
+      "author_perspective": {
+        "paragraphs": [
+          "Ich halte den Befund für wichtig, weil er ein reales Systemproblem sichtbar macht: Unternehmen sind nicht nur digitale Einzelakteure, sondern Teil von Versorgung, Infrastruktur und Informationsräumen. Aus meiner Sicht liegt der Mehrwert der Meldung nicht in der alarmierenden Zahl, sondern im Wirkpfad, der sich dahinter öffnen kann. Genau deshalb nehme ich die Warnung ernst.",
+          "Gleichzeitig würde ich die Reichweite der Aussage nicht überziehen. Die vorliegenden Quellen tragen die Fünftel-Quote nicht sauber. Deshalb bleibt für mich der richtige journalistische Schluss: Das Thema ist relevant und systemisch anschlussfähig, aber die Evidenz für die konkrete Größe des Problems ist noch zu schwach. Ich gewichte also den Risiko- und Resilienzbefund höher als die Zahl, nicht umgekehrt."
+        ],
+        "claim_indices": [
+          0,
+          2,
+          3
+        ],
+        "origin": "generated_from_analysis"
+      },
+      "positive_path_checks": [
+        {
+          "measure": "Unternehmen prüfen Schutzmaßnahmen, Meldewege und Resilienzkonzepte systematischer",
+          "source_ids": [
+            "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+          ],
+          "mechanism": "Wenn die Bedrohung als relevant wahrgenommen wird, steigt der Anreiz, Sicherheitslücken zu schließen und Abläufe robuster zu machen."
+        }
+      ],
+      "counter_evidence_search": {
+        "checked": true,
+        "result": "Gefunden wurden keine unabhängige Bestätigung der Fünftel-Quote und keine belastbaren Belege für bereits eingetretene Folgewirkungen; die institutionelle Bundestags-Meldung stützt nur das Thema Cyberangriffe, nicht die konkrete Zahl."
+      },
+      "editorial_quality": {
+        "false_balance_checked": true,
+        "concrete_positive_paths_only": true,
+        "likelihood_direction_separated": true,
+        "safeguards_as_limits": true,
+        "evidence_bound_judgment": true,
+        "reader_takeaway_clear": true,
+        "concrete_language_checked": true,
+        "visuals_explain_mechanism": true,
+        "author_perspective_separated": true
+      },
       "what_changes_the_assessment": [
-        "Eine Primärquelle oder Originalstudie mit Methodik, Stichprobe und Definition der hybriden Bedrohung.",
-        "Unabhängige Bestätigung der Kennzahl „jedes fünfte Unternehmen“ durch eine zweite belastbare Quelle.",
-        "Berichte über tatsächlich eingetretene Störungen bei Strom-, Wasser- oder Lieferketteninfrastruktur.",
-        "Empirische Hinweise darauf, dass Unternehmen ihre Schutzarchitektur bereits messbar verändert haben."
+        "Originalstudie oder Primärdaten zur Fünftel-Angabe",
+        "Weitere unabhängige Quelle mit gleicher Zahl und Methodik",
+        "Konkrete Belege für Störungen bei Strom-, Wasser- oder Unternehmensabläufen",
+        "Hinweise auf tatsächliche politische oder regulatorische Reaktion",
+        "Branchen- oder Regionaldaten, die die Reichweite der Risiken genauer zeigen"
       ],
       "self_frame_check": {
         "passed": true,
         "issues": [],
-        "recommended_title": "Wachsende hybride Risiken für Unternehmen: Was der Bericht über Resilienz und Versorgungssicherheit zeigt",
-        "recommended_summary": "Der Bericht beschreibt Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage. Die Analyse trennt das berichtete Potenzial von belegter Wirkung.",
-        "recommended_meta_description": "Hybride Risiken für Unternehmen: Der Bericht zeigt mögliche Folgen für Resilienz, Versorgung und Informationsintegrität - mit offener Datengrundlage."
+        "recommended_title": "Wachsende Risiken für Unternehmen: Bericht nennt Cyberangriffe, Spionage und Sabotage",
+        "recommended_summary": "Bericht zu hybriden Risiken für Unternehmen nennt Cyberangriffe, Desinformation, Spionage und Sabotage sowie mögliche Folgen für Strom und Wasser.",
+        "recommended_meta_description": "Bericht über hybride Risiken für Unternehmen: Cyberangriffe, Desinformation, Spionage und Sabotage, mögliche Folgen für Versorgung und offene Evidenzfragen."
       },
-      "reading_time_minutes": 6,
+      "reading_time_minutes": 7,
       "source_snapshot": [
         {
           "source_id": "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
@@ -9132,6 +9544,16 @@
           "url": "https://www.wiwo.de/politik/deutschland/wachsende-risiken-jedes-fuenfte-unternehmen-spuert-hybride-bedrohung/100252230.html",
           "published_at": "2026-09-05T08:21:00.000Z",
           "primary_source": false
+        },
+        {
+          "source_id": "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa",
+          "registry_source_id": "bundestag-hib",
+          "publisher_id": "bundestag",
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "title": "Cyberangriffe auf Unternehmen in Deutschland thematisiert",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210976",
+          "published_at": "2026-09-08T15:12:00.000Z",
+          "primary_source": true
         }
       ],
       "versions": [
@@ -9249,6 +9671,331 @@
               "date": "2026-09-05"
             }
           ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-08T17:27:21.241Z",
+          "source_fingerprint": "0ea71472a448a07bb78d90dd83f286f6029c3828610e97f86e67dc315f4aa93f",
+          "title": "Wachsende Risiken für Unternehmen: Bericht nennt Cyberangriffe, Spionage und Sabotage",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Der Tagesspiegel berichtet über wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage.",
+              "type": "fact",
+              "source_ids": [
+                "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Meldung selbst ist belegt; ihre Datengrundlage bleibt im Auszug offen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Wirtschaftsforscher sehen wachsende Risiken etwa für die Versorgung mit Strom und Wasser.",
+              "type": "fact",
+              "source_ids": [
+                "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Es fehlt im Material die Originalstudie oder Methodik.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Quote 'jedes fünfte Unternehmen' ist im vorliegenden Material nicht methodisch belegt.",
+              "type": "observation",
+              "source_ids": [
+                "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Mangels Originaldaten bleibt offen, wie die Zahl erhoben wurde.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Hybride Bedrohungen können über Unternehmen hinaus Versorgungsketten und Infrastruktur berühren.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Der Pfad ist plausibel, aber im Material nicht als eingetretene Wirkung belegt.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Die Meldung erzeugt vor allem kommunikatives Wirkungspotenzial und keine belegte materielle Wirkung.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Eine tatsächliche Folge in Unternehmen oder Politik ist im Material nicht nachgewiesen.",
+              "date": "2026-09-05"
+            },
+            {
+              "claim": "Schutzmaßnahmen begrenzen Eintritt und Ausmaß von Schäden, sind aber keine positive Gegenwirkung.",
+              "type": "woek_definition",
+              "source_ids": [],
+              "evidence_level": "high",
+              "data_status": "open",
+              "uncertainty": "Methodische Einordnung nach WOeK, nicht als Nachrichtentatsache.",
+              "date": null
+            },
+            {
+              "claim": "Es liegt noch keine beobachtete Wirkung auf Unternehmen oder Politik vor.",
+              "type": "observed_impact",
+              "source_ids": [
+                "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Das Material liefert keine belastbare Zustandsveränderung, nur einen Bericht und eine institutionelle Kurzmeldung.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Eine stärkere Standardisierung von Sicherheitsanforderungen wäre nur ein mögliches drittes Wirkungsniveau, nicht belegt.",
+              "type": "impact_potential",
+              "source_ids": [
+                "742e544ea5736b1723260d287f73bd1ab580c066a0a2b1d068b9a7dc1751dbfa"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Dafür fehlt im Material ein angekündigter oder untersuchter politischer oder branchenseitiger Schritt.",
+              "date": null
+            }
+          ],
+          "previous_content": {
+            "title": "Wachsende hybride Risiken für Unternehmen: Was der Bericht über Resilienz und Versorgungssicherheit zeigt",
+            "subtitle": "Cyberangriffe, Desinformation, Spionage und Sabotage werden als Bedrohungsbündel beschrieben; die Datengrundlage bleibt im Auszug offen.",
+            "teaser": "Der Bericht verweist auf wachsende Risiken für Unternehmen und mögliche Folgen für Strom und Wasser. Systemisch interessant ist weniger die Reichweite als der Wirkpfad in Resilienz, Schutzaufwand und Informationsintegrität.",
+            "seo_description": "Hybride Risiken für Unternehmen: Der Bericht zeigt mögliche Folgen für Resilienz, Versorgung und Informationsintegrität - mit offener Datengrundlage.",
+            "sections": [
+              {
+                "id": "lage",
+                "title": "Lage: Eine Sicherheitsmeldung mit breitem Schadenshorizont",
+                "paragraphs": [
+                  "Der gesicherte Kern der Meldung ist schlicht: In zwei journalistischen Berichten heißt es, Wirtschaftsforscher sähen wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage. Als mögliche betroffene Bereiche werden ausdrücklich die Versorgung mit Strom und Wasser genannt. Das ist ein materialer Hinweis auf Verwundbarkeit, aber noch kein Nachweis eines bereits eingetretenen Schadens in der Breite.",
+                  "Für die Einordnung ist wichtig, was nicht vorliegt: Im Material fehlen Methodik, Zeitraum, Stichprobe und unabhängige Bestätigung der Zahl „jedes fünfte Unternehmen“. Damit bleibt offen, ob der Satz eine robuste Lagebeschreibung, eine zugespitzte Teilwahrnehmung oder eine aus einem engeren Datensatz abgeleitete Aussage ist. Für die Wirkungsökonomie ist das der Unterschied zwischen gemessenem Zustand und bloßem Wirkungspotenzial."
+                ]
+              },
+              {
+                "id": "system",
+                "title": "Systemischer Zusammenhang: Warum diese Meldung mehr ist als ein Unternehmensrisiko",
+                "paragraphs": [
+                  "Systemisch relevant wird die Meldung, weil sie mehrere Ebenen verbindet: digitale Sicherheit, physische Infrastruktur, Unternehmensabläufe und öffentliche Daseinsvorsorge. Wenn Strom- oder Wasserversorgung gestört werden, betrifft das nicht nur einzelne Firmen, sondern auch Lieferketten, Produktionsprozesse und die Funktionsfähigkeit ganzer Regionen. Der Bericht benennt diese Knotenpunkte zumindest indirekt.",
+                  "Der zusätzliche systemische Nutzen dieser Analyse liegt deshalb darin, den Risikoblock nicht als Einzelfall, sondern als Kopplung mehrerer verwundbarer Systeme zu lesen. Hybride Bedrohungen wirken nicht nur über einen Kanal, sondern können Informationsräume, technische Systeme und organisatorische Entscheidungen zugleich unter Druck setzen. Das ist noch keine beobachtete Kaskade, aber ein plausibler Wirkpfad mit erhöhter Komplexität."
+                ]
+              },
+              {
+                "id": "mpd",
+                "title": "Mensch, Planet, Demokratie: Welche Perspektiven im Material berührt werden",
+                "paragraphs": [
+                  "In der Mensch-Perspektive liegt der naheliegende Bezug bei Arbeitsfähigkeit, Versorgungssicherheit und Schutzaufwand. Wenn Unternehmen sich stärker gegen Cyberangriffe, Desinformation, Spionage und Sabotage absichern müssen, verändert das Ressourcenverteilung und Handlungsdruck. Das betrifft Beschäftigte, Kund:innen und indirekt auch die Versorgung der Bevölkerung. Eine konkrete Betroffenheit ist im Material jedoch nicht belegt; sichtbar ist zunächst nur das Risiko- und Anpassungsfeld.",
+                  "In der Demokratie-Perspektive ist vor allem Desinformation relevant. Der Bericht nennt sie als Teil des Risikobündels. Daraus folgt kein Nachweis eines demokratischen Schadens, aber ein Bezug zur Informationsintegrität, also zur Frage, ob öffentliche Kommunikation und Vertrauen in belastbare Informationen unter Druck geraten. In der Planet-Perspektive bleibt der direkte Bezug schwach; sichtbar ist allenfalls die indirekte Möglichkeit, dass Störungen von Energie- und Wasserinfrastruktur auch ökologische Folgekosten oder ineffiziente Ersatzmaßnahmen auslösen könnten. Das Material trägt dafür aber keine konkrete Evidenz."
+                ]
+              },
+              {
+                "id": "wirkungsordnungen",
+                "title": "Wirkungsordnungen: Was beobachtet ist, was nur als Potenzial vorliegt",
+                "paragraphs": [
+                  "Erste Ordnung ist hier die unmittelbare Reaktion: Unternehmen nehmen Risiken wahr und erhöhen womöglich Schutz- oder Prüfaufwand. Zweite Ordnung wäre eine Anpassung von Sicherheitsarchitekturen, Meldewegen und Resilienzkonzepten. Dritte Ordnung könnte eine Standardisierung oder Verstetigung von Sicherheitsanforderungen sein, wenn die Lage als dauerhaft problematisch gilt. Diese Ordnungen beschreiben Wirkpfade, keine bereits eingetretenen Wirkungen.",
+                  "Eine beobachtete Wirkung lässt sich im Material nicht belegen. Es gibt keine Aussage darüber, dass Unternehmen bereits tatsächlich ihre Schutzarchitektur verändert haben, dass Strom- oder Wasserversorgung konkret beeinträchtigt wurde oder dass Desinformation nachweislich eine Reaktionsfähigkeit geschwächt hat. Darum bleibt die Analyse bei Wirkungspotenzial und Wirkungsrisiko."
+                ]
+              },
+              {
+                "id": "externalitaeten",
+                "title": "Externe Kosten und Schutzaufwand: Wo die Lasten landen können",
+                "paragraphs": [
+                  "Wenn Bedrohungen zunehmen, verschiebt sich Aufwand nach außen und innen: mehr IT-Sicherung, mehr physische Sicherung, mehr Abstimmung mit Infrastruktur- und Sicherheitsakteuren. Das sind mögliche externe Kosten in Form von zusätzlichem Ressourcenverbrauch, der nicht im ursprünglichen Geschäftsprozess entsteht, sondern durch das Risiko selbst. Solche Kosten sind für die Wirkungsökonomie relevant, weil sie nicht bloß betriebliche Nebensache sind, sondern Teil des realen Wirkpfads.",
+                  "Ob daraus eine positive Netto-Wirkung entsteht, ist offen. Mehr Schutz kann Resilienz erhöhen, zugleich aber Kosten und Komplexität steigern. Für die Bewertung zählt deshalb nicht die bloße Existenz von Schutzmaßnahmen, sondern ob sie tatsächlich Störungen verhindern, Schäden mindern oder Vertrauen stabilisieren. Das Material zeigt nur den Anlass für Schutzaufwand, nicht seinen Erfolg."
+                ]
+              },
+              {
+                "id": "verteilung",
+                "title": "Verteilung: Wer trägt die Risiken, wer den Aufwand?",
+                "paragraphs": [
+                  "Verteilungsfragen sind in diesem Fall zentral. Große Unternehmen können Schutzmaßnahmen oft besser finanzieren als kleine und mittlere Betriebe; zugleich können gerade kleinere Akteure bei Angriffen oder Desinformation schneller überfordert sein. Das Material nennt jedoch keine Branchen, Größenklassen oder Betroffenheitsprofile. Deshalb lässt sich keine belastbare Aussage darüber treffen, wer besonders betroffen ist.",
+                  "Trotzdem ist die Verteilungslogik analytisch wichtig: Wenn Sicherheitskosten steigen, werden sie meist entlang von Lieferketten und Preisen weitergegeben oder intern auf Personal und Investitionen umgelegt. Die Meldung berührt damit indirekt auch die Frage, ob Resilienz als Gemeingut organisiert ist oder ob einzelne Akteure die Last stärker tragen. Beides ist im Material angelegt, aber nicht empirisch ausbuchstabiert."
+                ]
+              },
+              {
+                "id": "frame_diskurs",
+                "title": "Frame und Diskurs: Sicherheitsrahmen ja, Wirkungsnachweis nein",
+                "paragraphs": [
+                  "Die Formulierung „hybride Bedrohung“ setzt einen klaren Sicherheitsrahmen. Sie bündelt mehrere Gefahrenarten in einem alarmierten Deutungsmuster. Das ist journalistisch zulässig, kann aber die Wahrnehmung verdichten. Wichtig ist deshalb die Trennung zwischen sprachlicher Rahmung und tatsächlicher Wirkungsfeststellung: Dass ein Begriff stark klingt, ist kein Beweis für eingetretene Schäden.",
+                  "Beide vorliegenden Berichte stützen sich erkennbar auf denselben Kern. Das erhöht die Wiederholung im Diskurs, aber nicht die Evidenzbreite. Für den öffentlichen Resonanzraum bedeutet das: Der Begriff kann sich schnell verfestigen, ohne dass die methodische Grundlage transparent wird. Gerade deshalb ist es sachlich geboten, die Aussage als Bericht über Risiken zu lesen und nicht als bereits gesicherten Wirkungsnachweis."
+                ]
+              },
+              {
+                "id": "szenarien",
+                "title": "Szenarien: Was sich aus dem Befund ableiten lässt - und was nicht",
+                "paragraphs": [
+                  "Wenn die beschriebenen Risiken verbreiteter sind als im Auszug erkennbar, könnten Unternehmen dauerhaft mehr in Schutzarchitektur investieren, Notfallprozesse anpassen und die Zusammenarbeit mit Infrastruktur- und Sicherheitsbehörden verstärken. Das wäre eine Transformationswirkung in Richtung mehr Resilienz. Es ist aber nur ein Szenario, kein Befund aus dem Material.",
+                  "Ein anderes Szenario ist eine Diskrepanz zwischen wahrgenommenem und tatsächlich gemessenem Risiko. Dann würde der Diskurs stärker wachsen als die Lage selbst. Auch das wäre relevant, weil Wahrnehmung Handlungen auslöst. Doch ohne methodische Angaben lässt sich nicht entscheiden, welches Szenario näherliegt. Die Analyse bleibt daher offen und vorsichtig."
+                ]
+              },
+              {
+                "id": "unsicherheit",
+                "title": "Unsicherheit: Die zentrale Grenze liegt bei Methodik und Zurechnung",
+                "paragraphs": [
+                  "Die größte Unsicherheit betrifft die Aussage „jedes fünfte Unternehmen“. Im Material fehlt die Primärquelle, und damit fehlt der Blick auf Erhebungsdesign, Zeitraum und Definition der hybriden Bedrohung. Zudem stammen die beiden vorliegenden Berichte inhaltlich aus demselben Nachrichtenkern; unabhängige Bestätigung ist nicht sichtbar. Das senkt die Beweiskraft für harte Schlussfolgerungen.",
+                  "Auch die Zurechnung muss deshalb eng bleiben. Aus der Meldung folgt nicht, dass bestimmte Schäden eingetreten sind, und auch nicht, dass die beschriebenen Risiken bereits in einem klaren, quantifizierbaren Ausmaß Wirkungen entfaltet haben. Zulässig ist nur: Es liegt ein berichtetes Risikopotenzial vor, das auf Resilienz, Schutzaufwand und Informationsintegrität zielt. Mehr trägt das Material nicht."
+                ]
+              },
+              {
+                "id": "beobachtung",
+                "title": "Beobachtungspunkte: Woran sich die Lage künftig prüfen lässt",
+                "paragraphs": [
+                  "Entscheidend wären jetzt belastbare Angaben zur Datengrundlage: Welche Unternehmen wurden befragt, wie wurde „hybride Bedrohung“ operationalisiert, und handelt es sich um Wahrnehmung, Vorfallserfahrung oder beides? Erst solche Details würden eine Beurteilung der Reichweite ermöglichen. Ohne sie bleibt die Meldung zwar relevant, aber methodisch unterbestimmt.",
+                  "Ebenso wichtig wären unabhängige Folgeberichte zu tatsächlichen Störungen bei Strom, Wasser oder betrieblichen Abläufen. Erst dann ließe sich zwischen Risikoerwartung und beobachteter Wirkung sauber trennen. Für eine Wirkungsanalyse ist diese Unterscheidung zentral, weil Reichweite, Alarmierung und tatsächliche Zustandsveränderung eben nicht dasselbe sind."
+                ]
+              },
+              {
+                "id": "synthese",
+                "title": "Synthese: Ein plausibler Resilienzhinweis mit offener Evidenzlage",
+                "paragraphs": [
+                  "Die Meldung ist systemisch interessant, weil sie eine Sicherheitsfrage aus der Unternehmenswelt in die Nähe kritischer Versorgung und demokratischer Informationsräume rückt. Das macht sie relevant für Resilienz, Transformation und Verteilung. Der Mehrwert der Wirkungsökonomie besteht hier darin, die Nachricht nicht nur als Alarmmeldung, sondern als Hinweis auf mögliche Kopplungen von digitalem, physischem und organisatorischem Risiko zu lesen.",
+                  "Gleichzeitig ist die Evidenz im Material zu schmal für ein hartes Urteil. Belegt ist ein berichtetes Risikopotenzial, nicht eine beobachtete Wirkung. Die sauberste Lesart lautet daher: Der Bericht zeigt einen möglichen Wirkpfad von hybriden Bedrohungen zu mehr Schutzaufwand und potenziellen Störungen in Versorgung und Vertrauen. Ob und wie stark dieser Pfad بالفعل trägt, bleibt offen und muss mit besseren Daten geprüft werden."
+                ]
+              }
+            ],
+            "claim_ledger": [
+              {
+                "claim": "In zwei journalistischen Berichten heißt es, Wirtschaftsforscher sähen wachsende Risiken durch Cyberangriffe, Desinformation, Spionage und Sabotage.",
+                "type": "fact",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ],
+                "evidence_level": "medium",
+                "data_status": "confirmed",
+                "uncertainty": "Zwei journalistische Berichte über denselben Nachrichtenkern; keine Primärquelle im Material.",
+                "date": "2026-09-05"
+              },
+              {
+                "claim": "Die Berichte nennen mögliche Folgen für die Versorgung mit Strom und Wasser.",
+                "type": "fact",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Die Nennung steht im journalistischen Material; konkrete Vorfälle sind nicht belegt.",
+                "date": "2026-09-05"
+              },
+              {
+                "claim": "Die Aussage „jedes fünfte Unternehmen“ ist im Material nicht methodisch abgesichert.",
+                "type": "observation",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Es fehlen Stichprobe, Zeitraum, Operationalisierung und Primärquelle.",
+                "date": "2026-09-05"
+              },
+              {
+                "claim": "Hybride Bedrohungen verbinden digitale und analoge Angriffsformen und können mehrere Systeme zugleich unter Druck setzen.",
+                "type": "woek_definition",
+                "source_ids": [],
+                "evidence_level": "open",
+                "data_status": "open",
+                "uncertainty": "Methodische Einordnung nach WÖK, nicht als Tatsachenbehauptung aus der Quelle.",
+                "date": null
+              },
+              {
+                "claim": "Die Meldung beschreibt ein Wirkungspotenzial für höhere Schutzkosten, Anpassungen von Sicherheitsarchitekturen und mögliche Störungen von Versorgungsketten.",
+                "type": "impact_potential",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Diese Wirkpfade sind plausibel, aber im Material nicht als eingetretene Folgen belegt.",
+                "date": "2026-09-05"
+              },
+              {
+                "claim": "Im Material ist keine beobachtete Wirkung belegt, etwa keine konkrete Störung von Strom- oder Wasserversorgung.",
+                "type": "observed_impact",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Der vorliegende Auszug nennt nur Risiken und mögliche Folgen, keine eingetretenen Zustandsänderungen.",
+                "date": "2026-09-05"
+              },
+              {
+                "claim": "Der Begriff „hybride Bedrohung“ setzt einen Sicherheitsrahmen und kann den öffentlichen Resonanzraum in Richtung Alarmierung verschieben.",
+                "type": "analytical_inference",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Das ist eine diskursanalytische Einordnung; sie beschreibt ein mögliches Framing, keine eingetretene Wirkung.",
+                "date": "2026-09-05"
+              },
+              {
+                "claim": "Für Mensch, Planet und Demokratie ist die Meldung unterschiedlich relevant: Mensch vor allem über Versorgungssicherheit und Schutzaufwand, Demokratie vor allem über Informationsintegrität, Planet nur indirekt.",
+                "type": "analytical_inference",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Die Perspektivenordnung ist analytisch; direkte Umweltfolgen sind im Material nicht belegt.",
+                "date": "2026-09-05"
+              },
+              {
+                "claim": "Es lässt sich keine positive Netto-Wirkung im engeren Sinn behaupten, weil nur Risiken und mögliche Schutzreaktionen beschrieben werden.",
+                "type": "normative_assessment",
+                "source_ids": [
+                  "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                  "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Bewertung basiert auf unvollständiger Evidenz und bleibt vorläufig.",
+                "date": "2026-09-05"
+              }
+            ],
+            "source_snapshot": [
+              {
+                "source_id": "55321a20a4cc1c80c3d07ca7f332ace6d8fa769552f5c25ad6f1b1be18a761d9",
+                "registry_source_id": "tagesspiegel-home",
+                "publisher_id": "tagesspiegel",
+                "publisher": "Der Tagesspiegel",
+                "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+                "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wachsende-risiken-16020659.html",
+                "published_at": "2026-09-05T03:02:35.000Z",
+                "primary_source": false
+              },
+              {
+                "source_id": "3cc67c90e9eb89a09d030070d1efdfd2d9264c42f0b6e7ac31de61e81e27a620",
+                "registry_source_id": "wiwo-schlagzeilen",
+                "publisher_id": "wirtschaftswoche",
+                "publisher": "WirtschaftsWoche",
+                "title": "Wachsende Risiken: Jedes fünfte Unternehmen spürt hybride Bedrohung",
+                "url": "https://www.wiwo.de/politik/deutschland/wachsende-risiken-jedes-fuenfte-unternehmen-spuert-hybride-bedrohung/100252230.html",
+                "published_at": "2026-09-05T08:21:00.000Z",
+                "primary_source": false
+              }
+            ]
+          }
         }
       ]
     },
@@ -26785,26 +27532,14 @@
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
       "attempts": 9,
-      "last_attempt_at": "2026-09-08T17:11:49.039Z",
-      "next_attempt_at": "2026-09-08T17:26:49.039Z",
+      "last_attempt_at": "2026-09-08T17:27:21.241Z",
+      "next_attempt_at": "2026-09-08T17:42:21.241Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
       "reason": "BATCH_RETRY_LIMIT"
-    },
-    "wt-f7d7115a53ff2c2f": {
-      "fingerprint": "0ea71472a448a07bb78d90dd83f286f6029c3828610e97f86e67dc315f4aa93f",
-      "method_version": "1.0",
-      "attempts": 3,
-      "last_attempt_at": "2026-09-08T16:26:48.958Z",
-      "next_attempt_at": "2026-09-08T17:26:48.958Z",
-      "quality_errors": [
-        "EDITORIAL_ARTICLE_LENGTH",
-        "EDITORIAL_SELF_FRAME_FAILED"
-      ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-cf03acddb911d861": {
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
@@ -26834,8 +27569,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T17:11:49.039Z",
-      "next_attempt_at": "2026-09-08T17:26:49.039Z",
+      "last_attempt_at": "2026-09-08T17:27:21.241Z",
+      "next_attempt_at": "2026-09-08T17:42:21.241Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"

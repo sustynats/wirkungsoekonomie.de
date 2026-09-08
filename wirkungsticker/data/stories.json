@@ -1,7 +1,144 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T17:06:38.176Z",
+  "updated_at": "2026-09-08T17:27:21.241Z",
   "stories": [
+    {
+      "story_id": "wt-c5b69762f7366b61",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "bundeshaushalt-fur-2027-kritik-an-klingbeils-klima-sparplanen-366b61",
+      "title": "Bundeshaushalt für 2027: Kritik an Klingbeils Klima-Sparplänen",
+      "source_summary": "Die taz berichtet über Kritik an den Klima-Sparplänen der Bundesregierung im Haushaltsentwurf 2027. Nach der Darstellung von Susanne Schwarz stellte Bundesfinanzminister Lars Klingbeil am Dienstag den Entwurf und die Finanzplanung bis 2030 vor; besonders umstritten ist, dass 2,7 Milliarden Euro aus dem Klima- und Transformationsfonds in den normalen Haushalt verschoben werden sollen.\n\nGrünen-Politikerin Claudia Müller, ein Bündnis aus 13 Verbänden sowie weitere Organisationen kritisieren die Umschichtung. Die taz nennt außerdem eine 7,8 Milliarden Euro große Lücke im Fonds und verweist auf einen auf 9,47 Milliarden Euro sinkenden Entwicklungsetat.",
+      "summary": "Die Bundesregierung plant laut taz im Haushaltsentwurf 2027 eine Verschiebung von 2,7 Milliarden Euro aus dem Klima- und Transformationsfonds. Das ist fiskalisch relevant, weil damit Mittel zwischen Klimapolitik, normalem Haushalt und Entwicklungsetat neu verteilt werden.",
+      "detail_summary": "Der Bericht beschreibt einen konkreten Budgetkonflikt: Mittel aus dem Klima- und Transformationsfonds sollen nach Darstellung der taz teilweise in den normalen Haushalt wandern, zugleich steht der Entwicklungsetat unter Druck. Das ist materiell relevant, weil solche Verschiebungen die Finanzierung von Klimaprogrammen, Entlastungen und internationaler Klimafinanzierung verändern können. Der mögliche Wirkpfad läuft über geringere verfügbare Mittel, andere Prioritäten und damit über veränderte Investitions- und Förderspielräume. Offen bleibt, wie der Bundestag den Entwurf am Ende verändert und welche Folgen die Umschichtung tatsächlich hat. Die Evidenz stammt bislang aus einem journalistischen Bericht; die Zahlen und Bewertungen sollten mit Haushaltsunterlagen oder weiteren unabhängigen Quellen abgeglichen werden.",
+      "why_relevant": "Der Bericht betrifft die Verteilung von Milliarden im Bundeshaushalt und damit Klima-, Entwicklungs- und Investitionsspielräume.",
+      "topic": [
+        "Klima",
+        "Finanzen"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Umschichtung kann Klimaprogramme schwächen, während Teile des Geldes laut Bericht auch klimafreundlichen Zwecken dienen sollen. Die Richtung hängt davon ab, welche Ausgaben am Ende tatsächlich gekürzt oder umgewidmet werden.",
+          "positive_path": {
+            "mechanism": "Wenn Mittel im normalen Haushalt weiter für klimafreundliche Zwecke eingesetzt werden, kann die Finanzierung einzelner Maßnahmen stabil bleiben.",
+            "source_ids": [
+              "taz-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine Verschiebung aus dem Klima- und Transformationsfonds kann die Zweckbindung schwächen und Investitionen in Klimaprogramme oder Förderungen mindern.",
+            "source_ids": [
+              "taz-aktuell"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Weniger oder anders gebundene Klimamittel können die Umsetzung von Klimaschutz- und Anpassungsmaßnahmen bremsen. Ob und wie stark das eintritt, bleibt offen.",
+          "positive_path": {
+            "mechanism": "Falls die Umschichtung nur formal erfolgt und klimabezogene Ausgaben erhalten bleiben, sinkt das unmittelbare Risiko für Klimaziele.",
+            "source_ids": [
+              "taz-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Weniger Mittel im Fonds können Investitionen in Klimaprogramme und damit den Schutz vor Erderwärmung schwächen.",
+            "source_ids": [
+              "taz-aktuell"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Der Vorgang betrifft Haushaltsprioritäten und politische Kontrolle, aber der Bericht zeigt noch keine demokratische Verfahrensstörung. Die parlamentarische Auseinandersetzung ist Teil des normalen Haushaltsprozesses.",
+          "positive_path": {
+            "mechanism": "Offene Debatte und Kritik von Opposition und Verbänden können die Korrekturfähigkeit im Haushaltsverfahren stärken.",
+            "source_ids": [
+              "taz-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn große Umschichtungen ohne klare Begründung erfolgen, kann das Vertrauen in die Nachvollziehbarkeit der Finanzpolitik sinken.",
+            "source_ids": [
+              "taz-aktuell"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T17:22:13.828Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T16:06:00.000Z",
+      "last_updated": "2026-09-08T17:24:32.887Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-0fb7d8011cb7a88df7ca",
+      "case_file": null,
+      "source_published_at": "2026-09-08T16:06:00.000Z",
+      "published_at": "2026-09-08T17:24:32.887Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob der Haushaltsentwurf 2027 im parlamentarischen Verfahren geändert wird.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Änderungen bei KTF- und Entwicklungsetat im weiteren Verfahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cc300e271c0c226f",
+          "announced_at": "2026-09-08T16:06:00.000Z",
+          "follow_up_date": "2026-09-15T17:24:32.887Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfen, ob es eine belastbare Gegenrechnung oder offizielle Erläuterung zur 2,7-Milliarden-Umschichtung gibt.",
+          "source_id": "taz-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Stellungnahme oder Haushaltsunterlage zur Mittelverwendung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8a17db84455667e6",
+          "announced_at": "2026-09-08T16:06:00.000Z",
+          "follow_up_date": "2026-09-15T17:24:32.887Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "taz",
+          "url": "https://taz.de/Bundeshaushalt-fuer-2027/!6211410",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T16:06:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-ed33c0962c4a697d",
       "title_image": {
@@ -8810,10 +8947,10 @@
       "editorial_analysis": {
         "analysis_id": "woek-analysis-17508db58ecc",
         "slug": "wachsende-hybride-risiken-fur-unternehmen-was-der-bericht-uber-resilienz-und-verso-17508d",
-        "title": "Wachsende hybride Risiken für Unternehmen: Was der Bericht über Resilienz und Versorgungssicherheit zeigt",
-        "teaser": "Der Bericht verweist auf wachsende Risiken für Unternehmen und mögliche Folgen für Strom und Wasser. Systemisch interessant ist weniger die Reichweite als der Wirkpfad in Resilienz, Schutzaufwand und Informationsintegrität.",
+        "title": "Wachsende Risiken für Unternehmen: Bericht nennt Cyberangriffe, Spionage und Sabotage",
+        "teaser": "Ein Bericht spricht von hybriden Bedrohungen für jedes fünfte Unternehmen. Entscheidend ist aber nicht die Schlagzahl der Warnung, sondern der Wirkpfad: Wo Störungen entstehen, wer sie trägt und wie sich Schutzkosten, Resilienz und Versorgungssicherheit verschieben.",
         "published_at": "2026-09-06T07:19:34.655Z",
-        "updated_at": "2026-09-06T07:19:34.655Z"
+        "updated_at": "2026-09-08T17:27:21.241Z"
       },
       "first_seen": "2026-09-05T03:02:35.000Z",
       "last_updated": "2026-09-07T15:55:15.989Z",
@@ -19813,6 +19950,17 @@
   ],
   "editorial_analyses": [
     {
+      "analysis_id": "woek-analysis-17508db58ecc",
+      "story_id": "wt-f7d7115a53ff2c2f",
+      "slug": "wachsende-hybride-risiken-fur-unternehmen-was-der-bericht-uber-resilienz-und-verso-17508d",
+      "title": "Wachsende Risiken für Unternehmen: Bericht nennt Cyberangriffe, Spionage und Sabotage",
+      "subtitle": "Der zusätzliche systemische Zusammenhang liegt nicht nur in einzelnen Attacken, sondern in möglichen Kaskaden auf Versorgung, Schutzaufwand und Vertrauen.",
+      "teaser": "Ein Bericht spricht von hybriden Bedrohungen für jedes fünfte Unternehmen. Entscheidend ist aber nicht die Schlagzahl der Warnung, sondern der Wirkpfad: Wo Störungen entstehen, wer sie trägt und wie sich Schutzkosten, Resilienz und Versorgungssicherheit verschieben.",
+      "published_at": "2026-09-06T07:19:34.655Z",
+      "updated_at": "2026-09-08T17:27:21.241Z",
+      "reading_time_minutes": 7
+    },
+    {
       "analysis_id": "woek-analysis-58daf5723737",
       "story_id": "wt-de413d33343f350b",
       "slug": "kiew-wieder-unter-beschuss-was-die-neue-angriffswelle-systemisch-auslost-58daf5",
@@ -19986,17 +20134,6 @@
       "teaser": "In Ostsachsen hat die Polizei zwölf Sprengsätze an Stromtrassen gefunden. Für Versorgungssicherheit und Staatsschutz ist das relevant, eine konkrete Netzstörung ist aber nicht belegt.",
       "published_at": "2026-09-05T14:23:20.689Z",
       "updated_at": "2026-09-06T08:06:40.303Z",
-      "reading_time_minutes": 6
-    },
-    {
-      "analysis_id": "woek-analysis-17508db58ecc",
-      "story_id": "wt-f7d7115a53ff2c2f",
-      "slug": "wachsende-hybride-risiken-fur-unternehmen-was-der-bericht-uber-resilienz-und-verso-17508d",
-      "title": "Wachsende hybride Risiken für Unternehmen: Was der Bericht über Resilienz und Versorgungssicherheit zeigt",
-      "subtitle": "Cyberangriffe, Desinformation, Spionage und Sabotage werden als Bedrohungsbündel beschrieben; die Datengrundlage bleibt im Auszug offen.",
-      "teaser": "Der Bericht verweist auf wachsende Risiken für Unternehmen und mögliche Folgen für Strom und Wasser. Systemisch interessant ist weniger die Reichweite als der Wirkpfad in Resilienz, Schutzaufwand und Informationsintegrität.",
-      "published_at": "2026-09-06T07:19:34.655Z",
-      "updated_at": "2026-09-06T07:19:34.655Z",
       "reading_time_minutes": 6
     },
     {
