@@ -1,8 +1,643 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T12:22:00.863Z",
-  "updated_at": "2026-09-08T12:22:00.863Z",
+  "public_updated_at": "2026-09-08T12:36:46.426Z",
+  "updated_at": "2026-09-08T12:36:46.426Z",
   "stories": [
+    {
+      "story_id": "wt-688b36d040bfbf87",
+      "slug": "afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87",
+      "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
+      "first_seen": "2026-09-08T11:57:24.000Z",
+      "last_updated": "2026-09-08T12:38:27.704Z",
+      "published_at": "2026-09-08T12:38:27.704Z",
+      "updated_at": "2026-09-08T12:38:27.704Z",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+          "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
+          "summary": "Auf dem Land erreicht die AfD 50,4 Prozent, bei Männern 50 Prozent. Die Datenanalyse zeigt, wie Alter, Geschlecht und Wohnort das Wahlergebnis prägen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:57:24.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "c89bfb7700717b7f5905d7059de36eafc9520f3498ad222cb2f898b85e061f47",
+          "source_item_id": "433c1f729ec1ce614ba93ce373ec3a3c1d45617c4c14666b1ebc141408d9c7d6",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T11:57:24.000Z",
+          "ingested_at": "2026-09-08T12:22:00.863Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-688b36d040bfbf87-v1-claim-1",
+          "story_id": "wt-688b36d040bfbf87",
+          "claim": "Eine MDR-Datenanalyse zur Landtagswahl in Sachsen-Anhalt zeigt, dass die AfD auf dem Land 50,4 Prozent erreicht.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "excerpt_hash": "8bbd80f02e32e128eab6",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "excerpt_hash": "34a43a63e3f459c46040",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "excerpt_hash": "f648c4762c5710bb9320",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T12:38:27.704Z"
+        },
+        {
+          "claim_id": "wt-688b36d040bfbf87-v1-claim-2",
+          "story_id": "wt-688b36d040bfbf87",
+          "claim": "Die Analyse sagt, dass die AfD in Landgemeinden die meisten neuen Stimmen hinzugewinnt.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "excerpt_hash": "34a43a63e3f459c46040",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "excerpt_hash": "f648c4762c5710bb9320",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T12:38:27.704Z"
+        },
+        {
+          "claim_id": "wt-688b36d040bfbf87-v1-claim-3",
+          "story_id": "wt-688b36d040bfbf87",
+          "claim": "Laut derselben Analyse sind die Grünen in Magdeburg und Halle mit 18,4 Prozent zweitstärkste Kraft.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "excerpt_hash": "f648c4762c5710bb9320",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T12:38:27.704Z"
+        },
+        {
+          "claim_id": "wt-688b36d040bfbf87-v1-claim-4",
+          "story_id": "wt-688b36d040bfbf87",
+          "claim": "Die Auswertung ordnet auch Alter, Geschlecht und Wohnort als prägende Faktoren für das Wahlergebnis ein.",
+          "status": "single_source_claim",
+          "source_id": "mdr-nachrichten",
+          "evidence": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "excerpt_hash": "8bbd80f02e32e128eab6",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "excerpt_hash": "e54c07c6d3e810212ff1",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T12:38:27.704Z"
+        }
+      ],
+      "event_id": "event-c1db53eddd471e49ec6b",
+      "event_first_seen_at": "2026-09-08T12:06:46.743Z",
+      "event_detected_at": "2026-09-08T12:06:46.743Z",
+      "verification_started_at": "2026-09-08T12:38:13.760Z",
+      "publish_ready_at": "2026-09-08T12:38:27.704Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:36:46.426Z",
+        "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "f97881c07c196e6d214befb919c7e1cae16329ee7a5391eb6f117157af36bbaa",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T12:38:27.704Z",
+        "sources": [
+          {
+            "source_id": "mdr-nachrichten",
+            "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+            "content_hash": "c89bfb7700717b7f5905d7059de36eafc9520f3498ad222cb2f898b85e061f47",
+            "excerpt_hash": "2d97888b0661451b42c5f54dfa3aef6525b0a1e767a3b68b8fe692a163012be2",
+            "number_locale": "de",
+            "numbers": [
+              "596352",
+              "50.4",
+              "2026",
+              "9",
+              "36",
+              "106",
+              "57",
+              "4051",
+              "1",
+              "100",
+              "102",
+              "698000",
+              "30",
+              "4583",
+              "51",
+              "698",
+              "9.2026",
+              "7",
+              "0",
+              "18.4",
+              "2024",
+              "2021",
+              "31.3",
+              "6.1",
+              "26.3",
+              "16.2"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Der MDR veröffentlicht eine Datenanalyse zur Landtagswahl in Sachsen-Anhalt und fragt, wer die AfD gewählt hat. Im Abstract heißt es, die Partei erreiche auf dem Land 50,4 Prozent und komme bei Männern auf 50 Prozent.\n\nDer begleitende Text beschreibt, dass die AfD ländliche Regionen dominiert, in Landgemeinden die meisten neuen Stimmen gewinnt und dass Alter, Geschlecht und Wohnort das Ergebnis mit prägen. Außerdem wird genannt, dass die Grünen in Magdeburg und Halle mit 18,4 Prozent zweitstärkste Kraft sind.",
+      "analysis": {
+        "story_id": "wt-688b36d040bfbf87",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Die MDR-Datenanalyse beschreibt ein klares Stadt-Land- und Altersmuster bei der AfD-Wahl in Sachsen-Anhalt. Sie liefert neue Zustandsinformationen zum Wählerprofil, aber noch keinen eigenständigen Kausalbeweis.",
+        "detail_summary": "Die Quelle ist eine Datenanalyse des MDR zur Landtagswahl in Sachsen-Anhalt. Sie nennt 50,4 Prozent für die AfD auf dem Land, 50 Prozent bei Männern und 18,4 Prozent für die Grünen in Magdeburg und Halle. Das ist relevant, weil es das Wahlergebnis nicht nur als Gesamtsumme, sondern als verteiltes Muster nach Wohnort, Geschlecht und Alter sichtbar macht. Der mögliche Wirkpfad liegt vor allem in veränderten politischen Anreizen und Entscheidungsgrundlagen für Parteien, die ihre Ansprache, Themenwahl und regionale Strategie daran ausrichten können. Eine eingetretene Wirkung auf spätere Entscheidungen ist aus dieser Einzelquelle noch nicht belegt; hier liegt zunächst ein beschreibender Befund vor. Die Evidenz bleibt auf eine journalistische Datenanalyse begrenzt, daher sind Ursache, Tiefe der Verschiebung und Übertragbarkeit offen.",
+        "why_relevant": "Die Analyse zeigt ein relevantes Wahlmuster mit möglicher Bedeutung für Parteienstrategien und die politische Repräsentation in Sachsen-Anhalt.",
+        "status": "erste Daten",
+        "analysis_type": "monitoring",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "rationale": "Der Befund betrifft ein Landtagswahlergebnis und beschreibt, welche Gruppen besonders stark mit der AfD korrelieren. Für Menschen ist das politisch relevant, aber die Quelle belegt noch keine konkrete Folge für Lebenslagen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle behandelt keine direkten Umwelt- oder Klimawirkungen. Ein Bezug wäre nur indirekt über spätere Politikänderungen denkbar und ist hier nicht belegt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Das Muster betrifft Wahlverhalten, politische Repräsentation und mögliche strategische Reaktionen der Parteien. Das kann demokratische Korrekturen erleichtern oder polarisierende Lagerbildungen verstärken; beides ist hier nur als Potenzial sichtbar."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Daten können die strategische Ausrichtung von Parteien, Kampagnen und regionaler Ansprache beeinflussen, weil sie Unterschiede nach Wohnort, Geschlecht und Alter sichtbar machen.",
+        "impact_risks": [
+          "Die starke regionale und soziodemografische Zuspitzung kann politische Polarisierung verstärken.",
+          "Die Daten können verkürzte Deutungen fördern, wenn aus Korrelationen vorschnell Ursachen abgeleitet werden."
+        ],
+        "mechanisms": [
+          "Die Analyse verändert Informationsgrundlagen für Parteien und Medien.",
+          "Sie macht Verteilungsmuster im Wahlverhalten sichtbar.",
+          "Das kann die Auswahl von Themen, Zielgruppen und Regionen beeinflussen."
+        ],
+        "first_order": [
+          "Wählerprofile werden nach Wohnort, Geschlecht und Alter sichtbarer."
+        ],
+        "second_order": [
+          "Parteien können ihre Ansprache und regionale Strategie an diese Muster anpassen."
+        ],
+        "third_order": [
+          "Längerfristig können sich Rekrutierung, Kampagnenlogik und Repräsentationsmuster im Landtag verschieben."
+        ],
+        "systemic_relevance": "Der Befund ist systemrelevant für die demokratische Meinungsbildung, weil er zeigt, wie stark Wahlpräferenzen sozial und räumlich verteilt sind.",
+        "transformation_potential": "Die Daten können eine Neubewertung politischer Kommunikations- und Mobilisierungsstrategien auslösen, ohne selbst schon eine Veränderung zu bewirken.",
+        "resilience": "Die Transparenz solcher Analysen kann die demokratische Korrekturfähigkeit stärken, wenn Akteure ihre Strategien daran überprüfen. Zugleich bleibt die Widerstandskraft gegen Fehldeutungen begrenzt, solange nur eine journalistische Datenanalyse vorliegt.",
+        "side_effects": [
+          "Mögliche Überbetonung einzelner Gruppenmuster.",
+          "Risiko einer vereinfachenden Lagererzähkung."
+        ],
+        "uncertainties": [
+          "Die Quelle bleibt eine journalistische Datenanalyse und nennt keine vollständige Methodik im hier gelieferten Ausschnitt.",
+          "Ursachen für das Wahlmuster bleiben offen.",
+          "Die Reichweite der Aussage über das ganze Land ist im Detail nicht unabhängig geprüft."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Quelle: MDR. Sprecher ist im gelieferten Ausschnitt nicht als Person ausgewiesen; die Formulierungen stammen aus der redaktionellen Datenanalyse und dem Abstract, nicht als direktes Zitat eines Akteurs.",
+        "watch_next": [
+          "Ob der MDR oder andere Quellen die Datenanalyse methodisch genauer ausführen.",
+          "Ob Parteien ihre regionale oder soziodemografische Ansprache daran erkennbar ändern."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "distribution",
+            "democratic_correctability"
+          ],
+          "exceptional_factor": "distribution",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung liefert neue Zustandsinformation zum Wahlverhalten nach Region und Gruppe. Sie ist materiell, weil sie politische Repräsentation und strategische Entscheidungsgrundlagen betrifft. Die Evidenz ist für eine kurze Erstmeldung tragfähig, bleibt aber journalistisch vermittelt."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "AfD auf dem Land",
+              "value": "50,4",
+              "unit": "Prozent",
+              "context": "Anteil laut Datenanalyse auf dem Land",
+              "claim_id": "wt-688b36d040bfbf87-claim-01"
+            },
+            {
+              "label": "AfD bei Männern",
+              "value": "50",
+              "unit": "Prozent",
+              "context": "Anteil laut Abstract bei Männern",
+              "claim_id": "wt-688b36d040bfbf87-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "beschaeftigte",
+            "kommunen",
+            "staat",
+            "europa"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T12:36:46.426Z",
+        "media_trigger_fingerprint": "e9e2f286c5a55a7d0c0fe74e82c2edde77f5a886b5f6d510e3b5c748d556b570",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "e9e2f286c5a55a7d0c0fe74e82c2edde77f5a886b5f6d510e3b5c748d556b570",
+          "content_fingerprint": "28c9864c381d34f073028d043e1774bf3f44f59a3a3ae771fc76ef6a196a836e",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T12:38:27.704Z",
+          "content_hash": "f97881c07c196e6d214befb919c7e1cae16329ee7a5391eb6f117157af36bbaa",
+          "source_summary": "Der MDR veröffentlicht eine Datenanalyse zur Landtagswahl in Sachsen-Anhalt und fragt, wer die AfD gewählt hat. Im Abstract heißt es, die Partei erreiche auf dem Land 50,4 Prozent und komme bei Männern auf 50 Prozent.\n\nDer begleitende Text beschreibt, dass die AfD ländliche Regionen dominiert, in Landgemeinden die meisten neuen Stimmen gewinnt und dass Alter, Geschlecht und Wohnort das Ergebnis mit prägen. Außerdem wird genannt, dass die Grünen in Magdeburg und Halle mit 18,4 Prozent zweitstärkste Kraft sind.",
+          "analysis": {
+            "story_id": "wt-688b36d040bfbf87",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Die MDR-Datenanalyse beschreibt ein klares Stadt-Land- und Altersmuster bei der AfD-Wahl in Sachsen-Anhalt. Sie liefert neue Zustandsinformationen zum Wählerprofil, aber noch keinen eigenständigen Kausalbeweis.",
+            "detail_summary": "Die Quelle ist eine Datenanalyse des MDR zur Landtagswahl in Sachsen-Anhalt. Sie nennt 50,4 Prozent für die AfD auf dem Land, 50 Prozent bei Männern und 18,4 Prozent für die Grünen in Magdeburg und Halle. Das ist relevant, weil es das Wahlergebnis nicht nur als Gesamtsumme, sondern als verteiltes Muster nach Wohnort, Geschlecht und Alter sichtbar macht. Der mögliche Wirkpfad liegt vor allem in veränderten politischen Anreizen und Entscheidungsgrundlagen für Parteien, die ihre Ansprache, Themenwahl und regionale Strategie daran ausrichten können. Eine eingetretene Wirkung auf spätere Entscheidungen ist aus dieser Einzelquelle noch nicht belegt; hier liegt zunächst ein beschreibender Befund vor. Die Evidenz bleibt auf eine journalistische Datenanalyse begrenzt, daher sind Ursache, Tiefe der Verschiebung und Übertragbarkeit offen.",
+            "why_relevant": "Die Analyse zeigt ein relevantes Wahlmuster mit möglicher Bedeutung für Parteienstrategien und die politische Repräsentation in Sachsen-Anhalt.",
+            "status": "erste Daten",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "offen",
+              "rationale": "Der Befund betrifft ein Landtagswahlergebnis und beschreibt, welche Gruppen besonders stark mit der AfD korrelieren. Für Menschen ist das politisch relevant, aber die Quelle belegt noch keine konkrete Folge für Lebenslagen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Die Quelle behandelt keine direkten Umwelt- oder Klimawirkungen. Ein Bezug wäre nur indirekt über spätere Politikänderungen denkbar und ist hier nicht belegt."
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Das Muster betrifft Wahlverhalten, politische Repräsentation und mögliche strategische Reaktionen der Parteien. Das kann demokratische Korrekturen erleichtern oder polarisierende Lagerbildungen verstärken; beides ist hier nur als Potenzial sichtbar."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Daten können die strategische Ausrichtung von Parteien, Kampagnen und regionaler Ansprache beeinflussen, weil sie Unterschiede nach Wohnort, Geschlecht und Alter sichtbar machen.",
+            "impact_risks": [
+              "Die starke regionale und soziodemografische Zuspitzung kann politische Polarisierung verstärken.",
+              "Die Daten können verkürzte Deutungen fördern, wenn aus Korrelationen vorschnell Ursachen abgeleitet werden."
+            ],
+            "mechanisms": [
+              "Die Analyse verändert Informationsgrundlagen für Parteien und Medien.",
+              "Sie macht Verteilungsmuster im Wahlverhalten sichtbar.",
+              "Das kann die Auswahl von Themen, Zielgruppen und Regionen beeinflussen."
+            ],
+            "first_order": [
+              "Wählerprofile werden nach Wohnort, Geschlecht und Alter sichtbarer."
+            ],
+            "second_order": [
+              "Parteien können ihre Ansprache und regionale Strategie an diese Muster anpassen."
+            ],
+            "third_order": [
+              "Längerfristig können sich Rekrutierung, Kampagnenlogik und Repräsentationsmuster im Landtag verschieben."
+            ],
+            "systemic_relevance": "Der Befund ist systemrelevant für die demokratische Meinungsbildung, weil er zeigt, wie stark Wahlpräferenzen sozial und räumlich verteilt sind.",
+            "transformation_potential": "Die Daten können eine Neubewertung politischer Kommunikations- und Mobilisierungsstrategien auslösen, ohne selbst schon eine Veränderung zu bewirken.",
+            "resilience": "Die Transparenz solcher Analysen kann die demokratische Korrekturfähigkeit stärken, wenn Akteure ihre Strategien daran überprüfen. Zugleich bleibt die Widerstandskraft gegen Fehldeutungen begrenzt, solange nur eine journalistische Datenanalyse vorliegt.",
+            "side_effects": [
+              "Mögliche Überbetonung einzelner Gruppenmuster.",
+              "Risiko einer vereinfachenden Lagererzähkung."
+            ],
+            "uncertainties": [
+              "Die Quelle bleibt eine journalistische Datenanalyse und nennt keine vollständige Methodik im hier gelieferten Ausschnitt.",
+              "Ursachen für das Wahlmuster bleiben offen.",
+              "Die Reichweite der Aussage über das ganze Land ist im Detail nicht unabhängig geprüft."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Quelle: MDR. Sprecher ist im gelieferten Ausschnitt nicht als Person ausgewiesen; die Formulierungen stammen aus der redaktionellen Datenanalyse und dem Abstract, nicht als direktes Zitat eines Akteurs.",
+            "watch_next": [
+              "Ob der MDR oder andere Quellen die Datenanalyse methodisch genauer ausführen.",
+              "Ob Parteien ihre regionale oder soziodemografische Ansprache daran erkennbar ändern."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "distribution",
+                "democratic_correctability"
+              ],
+              "exceptional_factor": "distribution",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung liefert neue Zustandsinformation zum Wahlverhalten nach Region und Gruppe. Sie ist materiell, weil sie politische Repräsentation und strategische Entscheidungsgrundlagen betrifft. Die Evidenz ist für eine kurze Erstmeldung tragfähig, bleibt aber journalistisch vermittelt."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "AfD auf dem Land",
+                  "value": "50,4",
+                  "unit": "Prozent",
+                  "context": "Anteil laut Datenanalyse auf dem Land",
+                  "claim_id": "wt-688b36d040bfbf87-claim-01"
+                },
+                {
+                  "label": "AfD bei Männern",
+                  "value": "50",
+                  "unit": "Prozent",
+                  "context": "Anteil laut Abstract bei Männern",
+                  "claim_id": "wt-688b36d040bfbf87-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "beschaeftigte",
+                "kommunen",
+                "staat",
+                "europa"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T12:36:46.426Z",
+            "media_trigger_fingerprint": "e9e2f286c5a55a7d0c0fe74e82c2edde77f5a886b5f6d510e3b5c748d556b570",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "e9e2f286c5a55a7d0c0fe74e82c2edde77f5a886b5f6d510e3b5c748d556b570",
+              "content_fingerprint": "28c9864c381d34f073028d043e1774bf3f44f59a3a3ae771fc76ef6a196a836e",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-688b36d040bfbf87-v1-claim-1",
+              "story_id": "wt-688b36d040bfbf87",
+              "claim": "Eine MDR-Datenanalyse zur Landtagswahl in Sachsen-Anhalt zeigt, dass die AfD auf dem Land 50,4 Prozent erreicht.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                  "excerpt_hash": "8bbd80f02e32e128eab6",
+                  "checked_at": "2026-09-08T12:38:27.704Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                  "excerpt_hash": "34a43a63e3f459c46040",
+                  "checked_at": "2026-09-08T12:38:27.704Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                  "excerpt_hash": "f648c4762c5710bb9320",
+                  "checked_at": "2026-09-08T12:38:27.704Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            },
+            {
+              "claim_id": "wt-688b36d040bfbf87-v1-claim-2",
+              "story_id": "wt-688b36d040bfbf87",
+              "claim": "Die Analyse sagt, dass die AfD in Landgemeinden die meisten neuen Stimmen hinzugewinnt.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                  "excerpt_hash": "34a43a63e3f459c46040",
+                  "checked_at": "2026-09-08T12:38:27.704Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                  "excerpt_hash": "f648c4762c5710bb9320",
+                  "checked_at": "2026-09-08T12:38:27.704Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            },
+            {
+              "claim_id": "wt-688b36d040bfbf87-v1-claim-3",
+              "story_id": "wt-688b36d040bfbf87",
+              "claim": "Laut derselben Analyse sind die Grünen in Magdeburg und Halle mit 18,4 Prozent zweitstärkste Kraft.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                  "excerpt_hash": "f648c4762c5710bb9320",
+                  "checked_at": "2026-09-08T12:38:27.704Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            },
+            {
+              "claim_id": "wt-688b36d040bfbf87-v1-claim-4",
+              "story_id": "wt-688b36d040bfbf87",
+              "claim": "Die Auswertung ordnet auch Alter, Geschlecht und Wohnort als prägende Faktoren für das Wahlergebnis ein.",
+              "status": "single_source_claim",
+              "source_id": "mdr-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                  "excerpt_hash": "8bbd80f02e32e128eab6",
+                  "checked_at": "2026-09-08T12:38:27.704Z"
+                },
+                {
+                  "source_id": "mdr-nachrichten",
+                  "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                  "excerpt_hash": "e54c07c6d3e810212ff1",
+                  "checked_at": "2026-09-08T12:38:27.704Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T12:38:27.704Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+              "content_hash": "c89bfb7700717b7f5905d7059de36eafc9520f3498ad222cb2f898b85e061f47"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T12:38:27.704Z",
+            "sources": [
+              {
+                "source_id": "mdr-nachrichten",
+                "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+                "content_hash": "c89bfb7700717b7f5905d7059de36eafc9520f3498ad222cb2f898b85e061f47",
+                "excerpt_hash": "2d97888b0661451b42c5f54dfa3aef6525b0a1e767a3b68b8fe692a163012be2",
+                "number_locale": "de",
+                "numbers": [
+                  "596352",
+                  "50.4",
+                  "2026",
+                  "9",
+                  "36",
+                  "106",
+                  "57",
+                  "4051",
+                  "1",
+                  "100",
+                  "102",
+                  "698000",
+                  "30",
+                  "4583",
+                  "51",
+                  "698",
+                  "9.2026",
+                  "7",
+                  "0",
+                  "18.4",
+                  "2024",
+                  "2021",
+                  "31.3",
+                  "6.1",
+                  "26.3",
+                  "16.2"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T12:38:27.704Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T12:55:22.039Z"
+      }
+    },
     {
       "story_id": "wt-268817aa0a8ccf86",
       "slug": "menschenrechtsgericht-lehnt-familiennachzug-fur-13-kinder-aus-drei-ehen-ab-8ccf86",
@@ -478,10 +1113,10 @@
       "story_id": "wt-376571064350b0b0",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "657307b6a64f921ceae097a23ea3ae5ea3aa4fe01def9444f4019e227f535585",
-        "first_failed_at": "2026-09-08T12:06:46.743Z",
-        "failed_at": "2026-09-08T12:06:46.743Z",
-        "retry_after": "2026-09-08T12:21:46.743Z",
+        "fingerprint": "ead72a1a14657dd8c66167cada244d88a31b9beb175bbbdb5a86782cfbe9b2a8",
+        "first_failed_at": "2026-09-08T12:36:46.426Z",
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T12:51:46.426Z",
         "retry_count": 1
       },
       "slug": "kritische-infrastruktur-land-will-energienetze-und-hafen-besser-schutzen-50b0b0",
@@ -579,7 +1214,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         },
         {
           "claim_id": "wt-376571064350b0b0-claim-02",
@@ -599,20 +1234,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "4e9cc51e8fe6ad70fabc651a0d80dafebacae6045e43ac81c5b2d4e8f11986e0",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T12:51:46.426Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-331b581464e820c98f8a",
@@ -648,27 +1283,47 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 5.48105,
+        "source_age_minutes": 20.240433333333332,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 60,
-        "news_freshness_score": 98,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "d960f1b780d83370e604ab0de3909759ef565451e01dc1275e5fdaaf4d07a4a7",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T12:36:46.426Z",
+      "rejection": {
+        "at": "2026-09-08T12:36:46.426Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
       "story_id": "wt-979056dc14111103",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "758f8dbc68f8607b02ba1bdc785a458fa4d745729463ad6ef1d5eb2fe545e842",
+        "first_failed_at": "2026-09-08T12:36:46.426Z",
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T12:51:46.426Z",
+        "retry_count": 1
+      },
       "slug": "energiepreise-haushalte-konnten-mit-flexiblem-stromverbrauch-geld-sparen-111103",
       "title": "Energiepreise: Haushalte könnten mit flexiblem Stromverbrauch Geld sparen",
       "first_seen": "2026-09-08T12:12:40.000Z",
@@ -766,7 +1421,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         },
         {
           "claim_id": "wt-979056dc14111103-claim-02",
@@ -786,20 +1441,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "18ff7f895e8425c584ea57922a8881e3518700655f23bf9ba8ee1295cd3a1d3b",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T12:51:46.426Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:22:00.863Z",
       "event_detected_at": "2026-09-08T12:22:00.863Z",
       "event_id": "event-f4d136cc918b0ee6e359",
@@ -837,33 +1492,45 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.297716666666666,
+        "source_age_minutes": 23.0571,
         "detection_delay_minutes": 8.297716666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.759383333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "eecc27621589aa4279896b67598fcea01cbaef6356c54f6947e8a55325df498a",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T12:36:46.426Z",
+      "rejection": {
+        "at": "2026-09-08T12:36:46.426Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
       "story_id": "wt-e01e1e77e702edc3",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "afe4bec7362b59182abe117bf944a518e936a5eeb760afe56e6c5073b4d3254e",
-        "first_failed_at": "2026-09-08T11:51:56.994Z",
-        "failed_at": "2026-09-08T11:51:56.994Z",
-        "retry_after": "2026-09-08T12:06:56.994Z",
+        "fingerprint": "65cfb43fe9b9faffa5bea6cdbe1d49dbe2198eeb5453a9b62f220961cafa7624",
+        "first_failed_at": "2026-09-08T12:36:46.426Z",
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T12:51:46.426Z",
         "retry_count": 1
       },
       "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
@@ -927,20 +1594,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "601e16a0142d442f5f07a91a864cae07670d8ad5995737142d5a30483b474cc2",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_SUMMARY_SENTENCE_COUNT"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T12:51:46.426Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T10:51:42.562Z",
       "event_detected_at": "2026-09-08T10:51:42.562Z",
       "event_id": "event-1c240bac9c8b267f5a27",
@@ -973,20 +1642,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9.28105,
+        "source_age_minutes": 24.040433333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 90.30501666666666,
+        "queue_age_minutes": 105.0644,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "f3b717ff3eaec8205e4661b931ce09f9b2d59aa5a5b06cd5658fc2b87b97a329",
         "issue_codes": [],
         "warning_codes": []
@@ -1055,7 +1724,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "8fd910f1dcadab670e980a1f64f0ff32f6dcc5da5838f7e98e47e65f90f93d3a",
@@ -1068,7 +1737,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:22:00.863Z",
       "event_detected_at": "2026-09-08T12:22:00.863Z",
       "event_id": "event-138f4d09f7c64d57aa21",
@@ -1101,20 +1770,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 10.014383333333333,
+        "source_age_minutes": 24.773766666666667,
         "detection_delay_minutes": 10.014383333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.759383333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "127d0255e503d7bca7490fd96230a18b5276eb876cf618a834fe80236c1715a2",
         "issue_codes": [],
         "warning_codes": []
@@ -1278,10 +1947,10 @@
       "story_id": "wt-7d3df5b2934b92f7",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "c047333f201e6f1efd893dc4cebce8c856b7cd5b16b2b4e77649947f5b6e7f6f",
-        "first_failed_at": "2026-09-08T10:20:48.403Z",
-        "failed_at": "2026-09-08T10:20:48.403Z",
-        "retry_after": "2026-09-08T10:35:48.403Z",
+        "fingerprint": "b067c4289d2251fcc735152d47c3d604c73e772adf1bdbced77a3ab40c54af73",
+        "first_failed_at": "2026-09-08T12:36:46.426Z",
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T12:51:46.426Z",
         "retry_count": 1
       },
       "slug": "markenrecht-eugh-starkt-ikea-gegen-rechte-partei-aus-belgien-4b92f7",
@@ -1378,7 +2047,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         },
         {
           "claim_id": "wt-7d3df5b2934b92f7-claim-02",
@@ -1398,20 +2067,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "29b1618238793619f26a0f6a503767dbbba47f8a447f94d6578cc4ddc731e32c",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T12:51:46.426Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-79cc6e82b6140bb5a4c7",
@@ -1446,33 +2115,45 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 18.097716666666667,
+        "source_age_minutes": 32.8571,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 134.57893333333334,
+        "queue_age_minutes": 149.33831666666666,
         "target_publication_minutes": 60,
-        "news_freshness_score": 92,
+        "news_freshness_score": 86,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "39983d3957347a2442e877697aa15fe3945c1ee69ee29cb4dff81c68e66842aa",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T12:36:46.426Z",
+      "rejection": {
+        "at": "2026-09-08T12:36:46.426Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
       "story_id": "wt-f2c9ac6049d9d30f",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "daa2889e9f19b170ed239204d137629f211cd6e85b8d70b9316fdb87525debc6",
-        "first_failed_at": "2026-09-08T12:06:46.743Z",
-        "failed_at": "2026-09-08T12:06:46.743Z",
-        "retry_after": "2026-09-08T12:21:46.743Z",
+        "fingerprint": "784526b84eec9bc71b3d2697a65b41c7885c268e919adfd7b61894b4f5676789",
+        "first_failed_at": "2026-09-08T12:36:46.426Z",
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T12:51:46.426Z",
         "retry_count": 1
       },
       "slug": "angriffe-auf-energieversorgung-stromnetz-sabotage-schuster-warnt-vor-motiv-spekulationen-d9d30f",
@@ -1569,7 +2250,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         },
         {
           "claim_id": "wt-f2c9ac6049d9d30f-claim-02",
@@ -1589,20 +2270,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "c340dd864abc8e3d21a81c081bb8da4b074217b4ac33291ea68d6710006aea4e",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T12:51:46.426Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-1260cbbf814a922ad95e",
@@ -1637,27 +2318,47 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 17.08105,
+        "source_age_minutes": 31.840433333333333,
         "detection_delay_minutes": 1.8457166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 60,
-        "news_freshness_score": 93,
+        "news_freshness_score": 87,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "368c9fb01541ea4b15750dc2edcdb7d9ec6848c146a2296702d9fde8b0be165d",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T12:36:46.426Z",
+      "rejection": {
+        "at": "2026-09-08T12:36:46.426Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
       "story_id": "wt-bd410136bb400bcb",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "878acf6eed1c31cfffe9814f0a93e3f67cf17af8c86492317273276642f39cb1",
+        "first_failed_at": "2026-09-08T12:36:46.426Z",
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T12:51:46.426Z",
+        "retry_count": 1
+      },
       "slug": "israel-regierungschef-netanjahu-wegen-berichts-uber-warnung-vor-angriff-vom-7-oktober-20-400bcb",
       "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
       "first_seen": "2026-09-08T12:02:16.000Z",
@@ -1719,20 +2420,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "81943d9e2f52b2bba5dd4f691454f85a5ab05e4d17d6e45de690072dc2a8363a",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_DETAIL_SUMMARY_LENGTH"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T12:51:46.426Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-4115d1c8b7b41d981c8c",
@@ -1765,163 +2468,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 12.93105,
+        "source_age_minutes": 27.690433333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "1c016ce296b8780776bdf90957fe93ed37a616025f87cbd995a7b06d9dd069b4",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-688b36d040bfbf87",
-      "slug": "afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87",
-      "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
-      "first_seen": "2026-09-08T11:57:24.000Z",
-      "last_updated": "2026-09-08T11:57:24.000Z",
-      "topic": [
-        "Digitalisierung",
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
-          "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
-          "summary": "Auf dem Land erreicht die AfD 50,4 Prozent, bei Männern 50 Prozent. Die Datenanalyse zeigt, wie Alter, Geschlecht und Wohnort das Wahlergebnis prägen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:57:24.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "c89bfb7700717b7f5905d7059de36eafc9520f3498ad222cb2f898b85e061f47",
-          "source_item_id": "433c1f729ec1ce614ba93ce373ec3a3c1d45617c4c14666b1ebc141408d9c7d6",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T11:57:24.000Z",
-          "ingested_at": "2026-09-08T12:22:00.863Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-688b36d040bfbf87-claim-01",
-          "story_id": "wt-688b36d040bfbf87",
-          "claim": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat: Auf dem Land erreicht die AfD 50,4 Prozent, bei Männern 50 Prozent. Die Datenanalyse zeigt, wie Alter, Geschlecht und Wohnort das Wahlergebnis prägen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
-        }
-      ],
-      "content_hash": "f97881c07c196e6d214befb919c7e1cae16329ee7a5391eb6f117157af36bbaa",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
-      "event_first_seen_at": "2026-09-08T12:06:46.743Z",
-      "event_detected_at": "2026-09-08T12:06:46.743Z",
-      "event_id": "event-c1db53eddd471e49ec6b",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": true,
-          "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Digitalisierung",
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 24.614383333333333,
-        "detection_delay_minutes": 9.37905,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 95,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
-        "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -1991,7 +2552,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "a3b0375c65de5bb7a50e922830a361014127503c38b6d1d2d4bef53afcf436b3",
@@ -2004,7 +2565,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-644b31466d3283669859",
@@ -2041,20 +2602,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 25.064383333333332,
+        "source_age_minutes": 39.823766666666664,
         "detection_delay_minutes": 9.82905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "cf2cc9049d053b254a3b332d318e237bce7b4f2d3c38b9e57ec7e9b72b3971cb",
         "issue_codes": [],
         "warning_codes": []
@@ -2472,7 +3033,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:08:23.920Z"
+        "retry_after": "2026-09-08T12:55:38.202Z"
       }
     },
     {
@@ -2572,7 +3133,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         },
         {
           "claim_id": "wt-16ff0e7d55e0c550-claim-02",
@@ -2592,7 +3153,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "6a8be95865c0d33d9364575bb176fb897f27a142d301d91d2206e738a48373e5",
@@ -2605,7 +3166,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-c2fe2f5102a6d6486b36",
@@ -2642,20 +3203,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 29.514383333333335,
+        "source_age_minutes": 44.27376666666667,
         "detection_delay_minutes": 14.27905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "606c44eeb89d974e91beba2d65d72019068b816935c034844c355a8cf1b6b89c",
         "issue_codes": [],
         "warning_codes": []
@@ -2663,6 +3224,14 @@
     },
     {
       "story_id": "wt-5fd47b5f8258a43e",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ba67e603cb7e184a1a51af829f456aaa7277b22b3ea22ce23ee0bec54492da33",
+        "first_failed_at": "2026-09-08T12:36:46.426Z",
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T12:51:46.426Z",
+        "retry_count": 1
+      },
       "slug": "politologin-ursula-munch-uber-sachsen-anhalt-und-den-kanzler-das-wahlergebnis-ist-ein-tr-58a43e",
       "title": "Politologin Ursula Münch über Sachsen-Anhalt und den Kanzler: „Das Wahlergebnis ist ein Tritt in den Allerwertesten jedes Amtsträgers“",
       "first_seen": "2026-09-08T11:47:56.000Z",
@@ -2724,20 +3293,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "e9123b34fc3c6f622298aa1f183a8189d107027bde8e09cf18025ac319263086",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T12:51:46.426Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-6bb10c2f566db83d662b",
@@ -2782,23 +3351,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 34.08105,
+        "source_age_minutes": 48.84043333333333,
         "detection_delay_minutes": 18.845716666666668,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "44a9274fe247a74345888f68254b5dbc01eb39823b714a5b7ff676794b1588a7",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T12:36:46.426Z",
+      "rejection": {
+        "at": "2026-09-08T12:36:46.426Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -2864,7 +3445,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "ff5b47feb153227b4c77a174ea3e7bfc839e65fb271613e4b1bf28f02e37ace9",
@@ -2877,7 +3458,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-b5a73afa4741305aea5b",
@@ -2910,20 +3491,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 35.014383333333335,
+        "source_age_minutes": 49.77376666666667,
         "detection_delay_minutes": 19.77905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 93,
+        "news_freshness_score": 90,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "e5f52b3f41a5cd90e88625bb20b4e47f04828f1f42537a5b5ec76d09d0aa726a",
         "issue_codes": [],
         "warning_codes": []
@@ -2992,7 +3573,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "09f6dfd4cd94d0d6dc6adff4ebe002a75b2ba9580a0546232d28c3da3990f4c9",
@@ -3005,7 +3586,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-679148114cd26e0dee49",
@@ -3040,20 +3621,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 44.014383333333335,
+        "source_age_minutes": 58.77376666666667,
         "detection_delay_minutes": 28.77905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 88,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "754e932ca7e36482704b55b2932fe7e32e7390d70d70291e260f35e0115f79eb",
         "issue_codes": [],
         "warning_codes": []
@@ -3123,7 +3704,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "fc48136262064742b7c95efb045ac35e2b0d0ab1f581d6abfb85f296e907c9c9",
@@ -3136,7 +3717,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-079e18fede24e8c4eb7b",
@@ -3172,21 +3753,151 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 47.89771666666667,
+        "source_age_minutes": 62.6571,
         "detection_delay_minutes": 32.66238333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.235333333333333,
+        "queue_age_minutes": 29.994716666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 87,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "08286f2bd1d57a51fb58e950f40036cfd1385d5ad2fd5083ecb3e6be78ee53b8",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-0dea1227dc22264e",
+      "slug": "ermittler-fassen-48-jahrigen-nach-sabotage-an-kraftwerken-22264e",
+      "title": "Ermittler fassen 48-Jährigen nach Sabotage an Kraftwerken",
+      "first_seen": "2026-09-08T11:31:00.000Z",
+      "last_updated": "2026-09-08T11:31:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "heise-wirtschaft",
+          "publisher": "heise online - Wirtschaft",
+          "url": "https://www.heise.de/news/Sabotage-am-Stromnetz-Polizei-nimmt-Verdaechtigen-fest-11445348.html?wt_mc=rss.red.ho.beitrag.atom.beitrag.beitrag",
+          "title": "Ermittler fassen 48-Jährigen nach Sabotage an Kraftwerken",
+          "summary": "Mit selbstgebauten Raketen soll ein Mann immer wieder die Energieversorgung in Deutschland angegriffen haben. Nun hat die Polizei den Verdächtigen gefasst.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:31:00.000Z",
+          "primary_source": false,
+          "source_priority": 78,
+          "source_topic": "Wirtschaft",
+          "content_hash": "c6c35c257ac233ae623f29936b4ec65006463cadaad66acdcf5509e21433221f",
+          "source_item_id": "2f8b5bdda070f14e4173826e96c0b3625a5c4d4811bf96bfb281b8aa8c5b96e5",
+          "publisher_id": "heise",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T11:31:00.000Z",
+          "ingested_at": "2026-09-08T12:36:46.426Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0dea1227dc22264e-claim-01",
+          "story_id": "wt-0dea1227dc22264e",
+          "claim": "Ermittler fassen 48-Jährigen nach Sabotage an Kraftwerken: Mit selbstgebauten Raketen soll ein Mann immer wieder die Energieversorgung in Deutschland angegriffen haben. Nun hat die Polizei den Verdächtigen gefasst.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "heise-wirtschaft",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:heise",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T12:36:46.426Z"
+        }
+      ],
+      "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-08T12:36:46.426Z",
+      "event_first_seen_at": "2026-09-08T12:36:46.426Z",
+      "event_detected_at": "2026-09-08T12:36:46.426Z",
+      "event_id": "event-112dbf80aa5019468e8a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 65.77376666666666,
+        "detection_delay_minutes": 65.77376666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 86,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T12:36:46.426Z",
+        "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -8021,10 +8732,10 @@
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "2d79faa3b58208f35c503b3082fbb58aef9d1b6097475860978c12bde2155251",
-        "first_failed_at": "2026-09-08T11:37:12.942Z",
-        "failed_at": "2026-09-08T11:37:12.942Z",
-        "retry_after": "2026-09-08T11:52:12.942Z",
+        "fingerprint": "4e1921f33a7b1240c67524a9f5d5727fc17a626654756dc947e5e9ed1952e715",
+        "first_failed_at": "2026-09-08T12:36:46.426Z",
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T12:51:46.426Z",
         "retry_count": 1
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
@@ -8157,7 +8868,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -8177,7 +8888,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-03",
@@ -8198,20 +8909,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "ac67e299a9207a92e280898652b451f93b6fd0967cdcafe058ac7b0bda0d789d",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T12:51:46.426Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -8244,20 +8957,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 12.93105,
+        "source_age_minutes": 27.690433333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.79868333333334,
+        "queue_age_minutes": 59.55806666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "c436fb700fc6246017dcdb803f26a8941cea9438bc13f28b91e6cddc6e351ac1",
         "issue_codes": [],
         "warning_codes": []
@@ -8338,7 +9051,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "705c706245dde445fa6cc348522a087d7881391fa5e57eca0944f65b9babc14c",
@@ -8351,7 +9064,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T11:07:04.983Z",
       "event_detected_at": "2026-09-08T11:07:04.983Z",
       "event_id": "event-915bb4f3f4b8a5b3a9ea",
@@ -8384,20 +9097,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 92.06438333333334,
+        "source_age_minutes": 106.82376666666667,
         "detection_delay_minutes": 17.13305,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 74.93133333333333,
+        "queue_age_minutes": 89.69071666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
+        "news_freshness_score": 78,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "c7ae3907216fed9c56d43da776c0bdbc4b68e47ca36e4e42409a88e85cc6698f",
         "issue_codes": [],
         "warning_codes": []
@@ -8409,9 +9122,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "d32dddf7903dc2853d4b4673a0a46f951280a24abc99c3a3b378d3ec1d301f72",
         "first_failed_at": "2026-09-08T11:22:01.370Z",
-        "failed_at": "2026-09-08T11:37:12.942Z",
-        "retry_after": "2026-09-08T12:07:12.942Z",
-        "retry_count": 2
+        "failed_at": "2026-09-08T12:36:46.426Z",
+        "retry_after": "2026-09-08T13:36:46.426Z",
+        "retry_count": 3
       },
       "slug": "furacker-steuerliche-entlastung-fur-vereine-dringend-geboten-bayern-fordert-verdoppelung-da225e",
       "title": "FÜRACKER: STEUERLICHE ENTLASTUNG FÜR VEREINE DRINGEND GEBOTEN - Bayern fordert: Verdoppelung Freibeträge auf 10.000 Euro // Verdoppelung Besteuerungsgrenze auf 100.000 Euro // „Einfachsteuererklärung“ für kleinere Vereine",
@@ -8450,7 +9163,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T10:48:29.000Z",
-          "ingested_at": "2026-09-08T11:22:01.370Z",
+          "ingested_at": "2026-09-08T12:36:46.426Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -8479,20 +9192,24 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "d61b57c4eb7c8477990a5d3745f7376dc0742f06f194f41f866c538f4fdb913f",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 2,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH",
+        "MEDIA_SELF_FRAME_UNSAFE:title",
+        "MEDIA_SELF_FRAME_UNSAFE:source_summary"
+      ],
+      "quality_retry_count": 3,
+      "quality_retry_after": "2026-09-08T13:36:46.426Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T11:22:01.370Z",
       "event_detected_at": "2026-09-08T11:22:01.370Z",
       "event_id": "event-11e4bcf6bd775b283b63",
@@ -8535,20 +9252,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 93.53105,
+        "source_age_minutes": 108.29043333333334,
         "detection_delay_minutes": 33.5395,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.99155,
+        "queue_age_minutes": 74.75093333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 81,
+        "news_freshness_score": 77,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "a850ac3e70afe5741af18b89a9d62c65269a2962b43ad4d06eda7521b6b9cc5f",
         "issue_codes": [],
         "warning_codes": []
@@ -9591,7 +10308,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T11:56:17.893Z"
+        "retry_after": "2026-09-08T12:55:33.305Z"
       }
     },
     {
@@ -15546,7 +16263,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T11:56:13.093Z"
+        "retry_after": "2026-09-08T12:55:28.462Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -18043,7 +18760,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -18058,7 +18775,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -18099,7 +18816,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 134.57893333333334,
+        "queue_age_minutes": 149.33831666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -18108,7 +18825,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -18178,7 +18895,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -18193,7 +18910,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -18233,7 +18950,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 134.57893333333334,
+        "queue_age_minutes": 149.33831666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -18242,7 +18959,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -19526,7 +20243,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -20375,7 +21092,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -21081,7 +21798,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -23214,7 +23931,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -26984,7 +27701,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -30745,7 +31462,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -31470,7 +32187,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -32645,7 +33362,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "7058d23c9246612a31343345ae582873e03ef1dcd138d22c83c048f96c4900e7",
           "issue_codes": [],
           "warning_codes": []
@@ -33587,7 +34304,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -36560,7 +37277,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -37310,7 +38027,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -38473,7 +39190,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -38898,9 +39615,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T18:22:00.863Z",
+        "expires_at": "2026-09-08T18:36:46.426Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -39056,7 +39773,7 @@
       "verification_started_at": "2026-09-07T23:37:33.439Z",
       "publish_ready_at": "2026-09-07T23:37:51.869Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -39454,61 +40171,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "28bd1f91410077612d7c3ba3008c1b94e0ad142c7b41d218b7217be7d1d3e646",
-        "sources": [
-          {
-            "source_id": "france24-en",
-            "publisher": "France 24",
-            "url": "https://www.france24.com/en/health/20260907-second-hand-smoke-1-7-million-deaths",
-            "title": "Nearly 1.7 million deaths linked to second-hand smoke in 2023, study finds",
-            "summary": "More than 2.7 billion people worldwide, including 767 million children, were exposed to second-hand smoke in 2023, contributing to nearly 1.7 million deaths, a Lancet study said on Tuesday. Researchers found second-hand smoke remained a major global health risk, with no safe level of exposure.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T22:53:34.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Geopolitik",
-            "content_hash": "c3a5be9f4e0bb48f09de2938f60a802cfcaa344bd83282318befd3410ebc0417",
-            "source_item_id": "b01700629b7a4f63829f685e4172869e40196f769f477714b22259b567275b82",
-            "publisher_id": "france24",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "en",
-            "geography": [
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T22:53:34.000Z",
-            "ingested_at": "2026-09-08T12:22:00.863Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:france24",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
-          "fingerprint": "b6eac9ae04448a841c4dd4b15ba5312652100dd079ff9f977e47c18e0d1ecd2c",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-4b5d0962d323432a",
@@ -42420,7 +43083,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -43677,7 +44340,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -44238,7 +44901,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -45747,7 +46410,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -46953,7 +47616,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -48100,7 +48763,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -48620,7 +49283,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -49377,7 +50040,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -51834,7 +52497,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -53332,7 +53995,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -54407,7 +55070,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -55937,9 +56600,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T18:22:00.863Z",
+        "expires_at": "2026-09-08T18:36:46.426Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -60615,7 +61278,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -65312,7 +65975,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -71417,7 +72080,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -79981,7 +80644,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -80733,7 +81396,7 @@
       "verification_started_at": "2026-09-07T14:39:32.255Z",
       "publish_ready_at": "2026-09-07T14:39:47.688Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -81152,10 +81815,13 @@
         "generated_at": "2026-09-07T14:40:28.943Z",
         "status": "generated"
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "061f556d40566ad1f927543a8231afd18a8fc21b3c3899af92884b28436eaecf",
+      "deepening_checks": 3,
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "985726aa1e069df18d48308a0e6702ab737430723d4bf9d49e6f9b7d82047686",
+        "checked_at": "2026-09-08T12:36:46.426Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T18:36:46.426Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -81221,23 +81887,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
-          "fingerprint": "7a2c72da8e35ded18fff805a544609c7dc335a6f3cb4475cdbf05265d0956a32",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       }
     },
     {
@@ -82729,7 +83379,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -85089,7 +85739,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -85830,7 +86480,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -97935,7 +98585,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -97955,7 +98605,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:22:00.863Z"
+          "checked_at": "2026-09-08T12:36:46.426Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -97971,7 +98621,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:22:00.863Z",
+      "updated_at": "2026-09-08T12:36:46.426Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -98011,7 +98661,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1635.125,
+        "queue_age_minutes": 1649.8843833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -98020,7 +98670,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:22:00.863Z",
+        "checked_at": "2026-09-08T12:36:46.426Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -117287,7 +117937,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -118282,7 +118932,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -118983,7 +119633,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -119758,7 +120408,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -120421,7 +121071,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -124532,7 +125182,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "3a48062f9f17240bc2032436aad30d6f1ece4f3bfb6aa68a85a440c21ebcb6c1",
           "issue_codes": [],
           "warning_codes": []
@@ -125834,7 +126484,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
           "issue_codes": [],
           "warning_codes": []
@@ -129205,7 +129855,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -155092,7 +155742,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -199446,7 +200096,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:22:00.863Z",
+          "checked_at": "2026-09-08T12:36:46.426Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

@@ -1,7 +1,98 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T12:22:00.863Z",
+  "updated_at": "2026-09-08T12:36:46.426Z",
   "stories": [
+    {
+      "story_id": "wt-688b36d040bfbf87",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87",
+      "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
+      "source_summary": "Der MDR veröffentlicht eine Datenanalyse zur Landtagswahl in Sachsen-Anhalt und fragt, wer die AfD gewählt hat. Im Abstract heißt es, die Partei erreiche auf dem Land 50,4 Prozent und komme bei Männern auf 50 Prozent.\n\nDer begleitende Text beschreibt, dass die AfD ländliche Regionen dominiert, in Landgemeinden die meisten neuen Stimmen gewinnt und dass Alter, Geschlecht und Wohnort das Ergebnis mit prägen. Außerdem wird genannt, dass die Grünen in Magdeburg und Halle mit 18,4 Prozent zweitstärkste Kraft sind.",
+      "summary": "Die MDR-Datenanalyse beschreibt ein klares Stadt-Land- und Altersmuster bei der AfD-Wahl in Sachsen-Anhalt. Sie liefert neue Zustandsinformationen zum Wählerprofil, aber noch keinen eigenständigen Kausalbeweis.",
+      "detail_summary": "Die Quelle ist eine Datenanalyse des MDR zur Landtagswahl in Sachsen-Anhalt. Sie nennt 50,4 Prozent für die AfD auf dem Land, 50 Prozent bei Männern und 18,4 Prozent für die Grünen in Magdeburg und Halle. Das ist relevant, weil es das Wahlergebnis nicht nur als Gesamtsumme, sondern als verteiltes Muster nach Wohnort, Geschlecht und Alter sichtbar macht. Der mögliche Wirkpfad liegt vor allem in veränderten politischen Anreizen und Entscheidungsgrundlagen für Parteien, die ihre Ansprache, Themenwahl und regionale Strategie daran ausrichten können. Eine eingetretene Wirkung auf spätere Entscheidungen ist aus dieser Einzelquelle noch nicht belegt; hier liegt zunächst ein beschreibender Befund vor. Die Evidenz bleibt auf eine journalistische Datenanalyse begrenzt, daher sind Ursache, Tiefe der Verschiebung und Übertragbarkeit offen.",
+      "why_relevant": "Die Analyse zeigt ein relevantes Wahlmuster mit möglicher Bedeutung für Parteienstrategien und die politische Repräsentation in Sachsen-Anhalt.",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "monitoring",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "rationale": "Der Befund betrifft ein Landtagswahlergebnis und beschreibt, welche Gruppen besonders stark mit der AfD korrelieren. Für Menschen ist das politisch relevant, aber die Quelle belegt noch keine konkrete Folge für Lebenslagen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle behandelt keine direkten Umwelt- oder Klimawirkungen. Ein Bezug wäre nur indirekt über spätere Politikänderungen denkbar und ist hier nicht belegt."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Das Muster betrifft Wahlverhalten, politische Repräsentation und mögliche strategische Reaktionen der Parteien. Das kann demokratische Korrekturen erleichtern oder polarisierende Lagerbildungen verstärken; beides ist hier nur als Potenzial sichtbar."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "AfD auf dem Land",
+            "value": "50,4",
+            "unit": "Prozent",
+            "context": "Anteil laut Datenanalyse auf dem Land",
+            "claim_id": "wt-688b36d040bfbf87-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "beschaeftigte",
+          "kommunen",
+          "staat",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T12:36:46.426Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T11:57:24.000Z",
+      "last_updated": "2026-09-08T12:38:27.704Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-c1db53eddd471e49ec6b",
+      "case_file": null,
+      "source_published_at": "2026-09-08T11:57:24.000Z",
+      "published_at": "2026-09-08T12:38:27.704Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:57:24.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-268817aa0a8ccf86",
       "title_image": {
