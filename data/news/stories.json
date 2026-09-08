@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T12:36:46.426Z",
-  "updated_at": "2026-09-08T12:51:54.078Z",
+  "updated_at": "2026-09-08T13:06:42.772Z",
   "stories": [
     {
       "story_id": "wt-a5d40d2440740c71",
@@ -360,6 +360,14 @@
     },
     {
       "story_id": "wt-6656a8eecd6e4c74",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "c99f25f7fa051e399c1da55789ceecd768c81ad87292cd490f7d32531731f3b5",
+        "first_failed_at": "2026-09-08T13:06:42.772Z",
+        "failed_at": "2026-09-08T13:06:42.772Z",
+        "retry_after": "2026-09-08T13:21:42.772Z",
+        "retry_count": 1
+      },
       "slug": "schneider-klimawandel-zeigt-zuvor-nie-erlebte-konsequenzen-6e4c74",
       "title": "Schneider: Klimawandel zeigt zuvor nie erlebte Konsequenzen",
       "first_seen": "2026-09-08T12:43:11.000Z",
@@ -423,20 +431,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "a9d3c93e8fc55c4a536df477797ad5e3ff0e29472b3910568c320205dcd17859",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T13:21:42.772Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:51:54.078Z",
       "event_detected_at": "2026-09-08T12:51:54.078Z",
       "event_id": "event-6909bf67e0d0f3a88ff4",
@@ -474,23 +482,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.717966666666667,
+        "source_age_minutes": 23.529533333333333,
         "detection_delay_minutes": 8.717966666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.811566666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "0fc0245e0810357f04702835ccb17d1ee584ec7417dc4a8e7f0e2f01aa12ff64",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:06:42.772Z",
+      "rejection": {
+        "at": "2026-09-08T13:06:42.772Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -556,7 +576,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "c9fd51acd8d314bb3072da80745d865b8df6eb69930fb16f95d5e7d70b238877",
@@ -569,7 +589,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:51:54.078Z",
       "event_detected_at": "2026-09-08T12:51:54.078Z",
       "event_id": "event-46cfb4b4d4e57dd5fd44",
@@ -604,20 +624,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 12.834633333333333,
+        "source_age_minutes": 27.6462,
         "detection_delay_minutes": 12.834633333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.811566666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "1cdba53d1b35dcd778671cee8ecca334fa28761df68f03b2208e9668e394997c",
         "issue_codes": [],
         "warning_codes": []
@@ -3308,7 +3328,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "a2dd6deb1e637f49b1950c7b04ca5656be003fdf7e24e5a555c96d4997953ff5",
@@ -3321,7 +3341,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:22:00.863Z",
       "event_detected_at": "2026-09-08T12:22:00.863Z",
       "event_id": "event-138f4d09f7c64d57aa21",
@@ -3354,20 +3374,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 39.9013,
+        "source_age_minutes": 54.71286666666666,
         "detection_delay_minutes": 10.014383333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.886916666666668,
+        "queue_age_minutes": 44.698483333333336,
         "target_publication_minutes": 120,
-        "news_freshness_score": 92,
+        "news_freshness_score": 89,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
         "issue_codes": [],
         "warning_codes": []
@@ -4146,7 +4166,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "a3b0375c65de5bb7a50e922830a361014127503c38b6d1d2d4bef53afcf436b3",
@@ -4159,7 +4179,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-644b31466d3283669859",
@@ -4196,20 +4216,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 54.9513,
+        "source_age_minutes": 69.76286666666667,
         "detection_delay_minutes": 9.82905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.12225,
+        "queue_age_minutes": 59.933816666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 89,
+        "news_freshness_score": 85,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "cf2cc9049d053b254a3b332d318e237bce7b4f2d3c38b9e57ec7e9b72b3971cb",
         "issue_codes": [],
         "warning_codes": []
@@ -4632,6 +4652,14 @@
     },
     {
       "story_id": "wt-16ff0e7d55e0c550",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e250ebf2c1688fe36770b9e71406cb5d2ed81f60e758ad17282b7f1bf8f85a02",
+        "first_failed_at": "2026-09-08T13:06:42.772Z",
+        "failed_at": "2026-09-08T13:06:42.772Z",
+        "retry_after": "2026-09-08T13:21:42.772Z",
+        "retry_count": 1
+      },
       "slug": "was-schuler-konnen-neuer-pisa-schock-was-hilft-fur-bessere-bildung-e0c550",
       "title": "Was Schüler können: Neuer Pisa-Schock – Was hilft für bessere Bildung?",
       "first_seen": "2026-09-08T11:52:30.000Z",
@@ -4727,7 +4755,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         },
         {
           "claim_id": "wt-16ff0e7d55e0c550-claim-02",
@@ -4747,20 +4775,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "6a8be95865c0d33d9364575bb176fb897f27a142d301d91d2206e738a48373e5",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T13:21:42.772Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-c2fe2f5102a6d6486b36",
@@ -4797,23 +4825,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 59.4013,
+        "source_age_minutes": 74.21286666666667,
         "detection_delay_minutes": 14.27905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.12225,
+        "queue_age_minutes": 59.933816666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 88,
+        "news_freshness_score": 85,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "606c44eeb89d974e91beba2d65d72019068b816935c034844c355a8cf1b6b89c",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:06:42.772Z",
+      "rejection": {
+        "at": "2026-09-08T13:06:42.772Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -4978,6 +5018,14 @@
     },
     {
       "story_id": "wt-7411a775f0ac2025",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "7f83acf67a75f447da6d923d03c26530cc121337409249366c0b0f33e838a8e4",
+        "first_failed_at": "2026-09-08T13:06:42.772Z",
+        "failed_at": "2026-09-08T13:06:42.772Z",
+        "retry_after": "2026-09-08T13:21:42.772Z",
+        "retry_count": 1
+      },
       "slug": "roter-stern-belgrad-fans-huldigen-dem-kriegsverbrecher-ratko-mladic-ac2025",
       "title": "Roter Stern Belgrad: Fans huldigen dem Kriegsverbrecher Ratko Mladic",
       "first_seen": "2026-09-08T11:47:00.000Z",
@@ -5039,20 +5087,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "ff5b47feb153227b4c77a174ea3e7bfc839e65fb271613e4b1bf28f02e37ace9",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T13:21:42.772Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-b5a73afa4741305aea5b",
@@ -5085,27 +5133,47 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 64.9013,
+        "source_age_minutes": 79.71286666666667,
         "detection_delay_minutes": 19.77905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.12225,
+        "queue_age_minutes": 59.933816666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 86,
+        "news_freshness_score": 83,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "e5f52b3f41a5cd90e88625bb20b4e47f04828f1f42537a5b5ec76d09d0aa726a",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:06:42.772Z",
+      "rejection": {
+        "at": "2026-09-08T13:06:42.772Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
       "story_id": "wt-fff1bb682bcb19d7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "9a28a071de244699206efb6e214fcf5bace390574818c0046e6de0fd0d49ab4d",
+        "first_failed_at": "2026-09-08T13:06:42.772Z",
+        "failed_at": "2026-09-08T13:06:42.772Z",
+        "retry_after": "2026-09-08T13:21:42.772Z",
+        "retry_count": 1
+      },
       "slug": "israelisches-gericht-weist-eilantrag-gegen-siedlungsprojekt-e1-im-westjordanland-zuruck-cb19d7",
       "title": "Israelisches Gericht weist Eilantrag gegen Siedlungsprojekt E1 im Westjordanland zurück",
       "first_seen": "2026-09-08T11:38:00.000Z",
@@ -5167,20 +5235,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "09f6dfd4cd94d0d6dc6adff4ebe002a75b2ba9580a0546232d28c3da3990f4c9",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T13:21:42.772Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-679148114cd26e0dee49",
@@ -5215,23 +5283,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 73.9013,
+        "source_age_minutes": 88.71286666666667,
         "detection_delay_minutes": 28.77905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.12225,
+        "queue_age_minutes": 59.933816666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 85,
+        "news_freshness_score": 82,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "754e932ca7e36482704b55b2932fe7e32e7390d70d70291e260f35e0115f79eb",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:06:42.772Z",
+      "rejection": {
+        "at": "2026-09-08T13:06:42.772Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -5298,7 +5378,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "fc48136262064742b7c95efb045ac35e2b0d0ab1f581d6abfb85f296e907c9c9",
@@ -5311,7 +5391,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-079e18fede24e8c4eb7b",
@@ -5347,20 +5427,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 77.78463333333333,
+        "source_age_minutes": 92.5962,
         "detection_delay_minutes": 32.66238333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.12225,
+        "queue_age_minutes": 59.933816666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 84,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "08286f2bd1d57a51fb58e950f40036cfd1385d5ad2fd5083ecb3e6be78ee53b8",
         "issue_codes": [],
         "warning_codes": []
@@ -5429,7 +5509,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
@@ -5442,7 +5522,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T12:36:46.426Z",
       "event_detected_at": "2026-09-08T12:36:46.426Z",
       "event_id": "event-112dbf80aa5019468e8a",
@@ -5477,20 +5557,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 80.9013,
+        "source_age_minutes": 95.71286666666667,
         "detection_delay_minutes": 65.77376666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.127533333333334,
+        "queue_age_minutes": 29.9391,
         "target_publication_minutes": 120,
-        "news_freshness_score": 83,
+        "news_freshness_score": 80,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
@@ -7123,7 +7203,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:23:56.568Z"
+        "retry_after": "2026-09-08T13:22:55.109Z"
       }
     },
     {
@@ -7662,7 +7742,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:23:51.174Z"
+        "retry_after": "2026-09-08T13:22:50.636Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T12:51:54.078Z",
@@ -7746,7 +7826,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "6a9068d1ebec6f01b3bc6b49547420e25734d61e781e50aa4ca0c5f43aa48445",
           "issue_codes": [],
           "warning_codes": []
@@ -10414,10 +10494,10 @@
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "4e1921f33a7b1240c67524a9f5d5727fc17a626654756dc947e5e9ed1952e715",
-        "first_failed_at": "2026-09-08T12:36:46.426Z",
-        "failed_at": "2026-09-08T12:36:46.426Z",
-        "retry_after": "2026-09-08T12:51:46.426Z",
+        "fingerprint": "c3b04c900b62ddad597c63a1466ef5ede10c993b827efe251a922045f1a95448",
+        "first_failed_at": "2026-09-08T13:06:42.772Z",
+        "failed_at": "2026-09-08T13:06:42.772Z",
+        "retry_after": "2026-09-08T13:21:42.772Z",
         "retry_count": 1
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
@@ -10550,7 +10630,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -10570,7 +10650,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-03",
@@ -10591,20 +10671,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "ac67e299a9207a92e280898652b451f93b6fd0967cdcafe058ac7b0bda0d789d",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 2,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "MEDIA_IMPACT_REQUIRED",
+        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+      ],
+      "quality_retry_count": 3,
+      "quality_retry_after": "2026-09-08T13:21:42.772Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -10637,20 +10720,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 7.7513,
+        "source_age_minutes": 22.562866666666668,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 74.6856,
+        "queue_age_minutes": 89.49716666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 95,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "c436fb700fc6246017dcdb803f26a8941cea9438bc13f28b91e6cddc6e351ac1",
         "issue_codes": [],
         "warning_codes": []
@@ -10662,9 +10745,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "b80fb300796b46f20121fa953de08777031a1a399c37fd3a82b41c6e898c373d",
         "first_failed_at": "2026-09-08T11:51:56.994Z",
-        "failed_at": "2026-09-08T11:51:56.994Z",
-        "retry_after": "2026-09-08T12:06:56.994Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T13:06:42.772Z",
+        "retry_after": "2026-09-08T13:36:42.772Z",
+        "retry_count": 2
       },
       "slug": "stromnetz-sabotage-mutmasslicher-tater-festgenommen-98c717",
       "title": "Stromnetz-Sabotage: Mutmaßlicher Täter festgenommen",
@@ -10731,20 +10814,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "705c706245dde445fa6cc348522a087d7881391fa5e57eca0944f65b9babc14c",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T13:36:42.772Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T11:07:04.983Z",
       "event_detected_at": "2026-09-08T11:07:04.983Z",
       "event_id": "event-915bb4f3f4b8a5b3a9ea",
@@ -10777,23 +10860,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 121.9513,
+        "source_age_minutes": 136.76286666666667,
         "detection_delay_minutes": 17.13305,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 104.81825,
+        "queue_age_minutes": 119.62981666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 75,
+        "news_freshness_score": 72,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "c7ae3907216fed9c56d43da776c0bdbc4b68e47ca36e4e42409a88e85cc6698f",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:06:42.772Z",
+      "rejection": {
+        "at": "2026-09-08T13:06:42.772Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -14698,7 +14793,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:24:03.071Z"
+        "retry_after": "2026-09-08T13:22:59.817Z"
       }
     },
     {
@@ -20290,7 +20385,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -20305,7 +20400,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -20346,7 +20441,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 164.46585,
+        "queue_age_minutes": 179.27741666666665,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -20355,7 +20450,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -20425,7 +20520,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -20440,7 +20535,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -20480,7 +20575,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 164.46585,
+        "queue_age_minutes": 179.27741666666665,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -20489,7 +20584,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -21773,7 +21868,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -22622,7 +22717,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -23328,7 +23423,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -25461,7 +25556,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -29231,7 +29326,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -32992,7 +33087,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -33144,7 +33239,7 @@
       "verification_started_at": "2026-09-08T04:23:02.445Z",
       "publish_ready_at": "2026-09-08T04:23:17.816Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -33627,50 +33722,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "2b3ea72d4261dc0de213a14949a1acffe816600ecf7b1de27e767cb4dc92e02d",
-        "checked_at": "2026-09-08T05:07:06.629Z",
+        "fingerprint": "810bf6d1c289a78dd8fcb6b97a0a77c7b3d7c37c5c2c2189bb85add831cf4b4d",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:07:06.629Z",
-        "sources": [
-          {
-            "source_id": "ndr-info",
-            "publisher": "NDR",
-            "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
-            "title": "Wohngeld: SPD und Grüne in Hamburg fordern Rücknahme von Kürzungen",
-            "summary": "Das Bundeskabinett hatte im Juli eine Reform des Wohngeldes beschlossen. Hamburgs SPD und Grüne wollen die Pläne kippen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T04:02:02.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "f773a9fdcacc734495db7e43cd09be050f0adf9f341ebd3e318f3e44a0917940",
-            "source_item_id": "4477e571e05f4711d24a1ccb85c0e3c8639d3e6926f8138ffb5334f6434650fd",
-            "publisher_id": "ndr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Norddeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T04:02:02.000Z",
-            "ingested_at": "2026-09-08T04:22:04.039Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:ndr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "28b488f6b6294f30a1e2592d3263c314c647b8ce295d0027225ed2e34e0a9a34",
+        "expires_at": "2026-09-08T19:06:42.772Z",
         "sources": [
           {
             "source_id": "ndr-info",
@@ -33705,24 +33760,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
-          "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-b5ef8ee6ed8bd17a",
@@ -35779,7 +35819,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -38752,7 +38792,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -39502,7 +39542,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -40665,7 +40705,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -41090,9 +41130,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T18:51:54.078Z",
+        "expires_at": "2026-09-08T19:06:42.772Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -44558,7 +44598,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -45815,7 +45855,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -46376,7 +46416,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -47885,7 +47925,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -49091,7 +49131,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -50238,7 +50278,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -50758,7 +50798,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -51515,7 +51555,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -53972,7 +54012,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -55470,7 +55510,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -56545,7 +56585,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -58075,9 +58115,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T18:51:54.078Z",
+        "expires_at": "2026-09-08T19:06:42.772Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -62753,7 +62793,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -67290,7 +67330,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -73395,7 +73435,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -81959,7 +81999,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -84694,7 +84734,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -87054,7 +87094,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -87795,7 +87835,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -99900,7 +99940,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -99920,7 +99960,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
+          "checked_at": "2026-09-08T13:06:42.772Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -99936,7 +99976,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
+      "updated_at": "2026-09-08T13:06:42.772Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -99976,7 +100016,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1665.0119166666666,
+        "queue_age_minutes": 1679.8234833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -99985,7 +100025,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -119252,7 +119292,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -120247,7 +120287,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -120948,7 +120988,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -121723,7 +121763,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -122386,7 +122426,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -123886,7 +123926,7 @@
       "verification_started_at": "2026-09-06T19:22:50.087Z",
       "publish_ready_at": "2026-09-06T19:23:17.212Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -125161,10 +125201,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "266bb3574d9c872f59917b7e6ca08b08d49d909d7fff6fc05e12ecb4fc88ec10",
-        "checked_at": "2026-09-08T05:07:06.629Z",
+        "fingerprint": "ece48c6980b90fa29246c228266e3ab0d082ed77a5b3414f0988ddca7c32a831",
+        "checked_at": "2026-09-08T13:06:42.772Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:07:06.629Z",
+        "expires_at": "2026-09-08T19:06:42.772Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -125824,685 +125864,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "f811642342a8fb2f3949fab120ec9cbf024c825eed34a7609dc1cb5b9d82d333",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-moskau-kiew,ukraine-news-06-09-2026-100.html",
-            "title": "Ukraine-News: US-Vermittler Witkoff und Kushner in Kiew empfangen",
-            "summary": "Nach Gesprächen in Moskau über die Beendigung des Ukraine-Krieges sind die US-Sondergesandten Witkoff und Kushner in Kiew eingetroffen. Es ist ihr erster Besuch in der ukrainischen Hauptstadt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T11:05:30.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "424dbd5070971105161045cf7613a29930ba6acb14a1a3e0fc00ef53032a4b9e",
-            "source_item_id": "91c3c9e4efd1201d15ae21a5de9b39845b9be9134aecec19ffc8aac425e60f2f",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T11:05:30.000Z",
-            "ingested_at": "2026-09-06T11:51:43.074Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/russland-krieg-kushner-witkoff-kiew-lawrow-drohnen-anschuldigung-,ukraine-news-06-09-2026-100.html",
-            "title": "Ukraine-News: US-Vermittler in Kiew – auch Gespräche mit Europäern",
-            "summary": "Erst waren die US-Sondergesandten Witkoff und Kushner in Moskau, jetzt sind sie in Kiew. Am Verhandlungstisch sitzen auch Sicherheitsberater aus Großbritannien, Frankreich und Deutschland.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T15:55:24.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "3bb00b5a57e128f376342a238737d2293cc31bfa858cb8a0d230ed49f9d8974a",
-            "source_item_id": "af75b6323e78549a2abcaa2a01049a838569ff8727ae93504700c98cf302b7cb",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T15:55:24.000Z",
-            "ingested_at": "2026-09-06T19:21:31.261Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-gesandte-werden-nach-gespraechen-im-kreml-in-kiew-erwartet-100.html",
-            "title": "Ukraine-Krieg - US-Gesandte werden nach Gesprächen im Kreml in Kiew erwartet",
-            "summary": "Die US-Unterhändler Witkoff und Kushner werden heute zu einem Treffen mit dem ukrainischen Präsidenten Präsident Selenskyj in Kiew erwartet. Russland hat angekündigt, die Luftangriffe auf die ukrainische Hauptstadt für drei Tage einzustellen. Gestern hatten die US-Gesandten in Moskau mit dem russischen Präsidenten Putin gesprochen.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T08:45:20.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "0c62fd1262be41262586474bd1654083562adfb27c12da24e4bb5a9cba174074",
-            "source_item_id": "db68e92aa10501f406324d88e302d7387d1aeb41f5f4928bad4d01e7cc24800b",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T08:45:20.000Z",
-            "ingested_at": "2026-09-06T09:06:22.155Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-gesandte-in-kiew-eingetroffen-100.html",
-            "title": "Ukraine-Krieg - US-Gesandte in Kiew eingetroffen",
-            "summary": "Die US-Unterhändler Witkoff und Kushner sind zu einem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew eingetroffen. Dabei sollen neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert werden. Selenskyj erklärte, sein Land wolle den Krieg mit Russland beenden. Dafür seien aber umfassende Sicherheitsgarantien nötig.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T12:30:49.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "1f0f4ce79a8fc1bde60fdd5de126c899583beaa99eebdb955fe97b2225545da1",
-            "source_item_id": "bca2c955b228fac40e30e565c9a4d04a0b3cf538db8fb06c8ff0df97364fe1be",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T12:30:49.000Z",
-            "ingested_at": "2026-09-06T12:38:11.963Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/us-gesandte-witkoff-und-kushner-per-zug-in-kiew-eingetroffen-38212840.html",
-            "title": "US-Gesandte Witkoff und Kushner per Zug in Kiew eingetroffen",
-            "summary": "Die US-Gesandten Steve Witkoff und Jared Kushner sind am Sonntag zu Gesprächen über ein Ende des Ukraine-Kriegs in Kiew eingetroffen. Die beiden Gesandten von US-Präsident Donald Trump kamen per Zug aus Polen in der ukrainischen Hauptstadt an, wie ein AFP-Fotograf berichtete. Witkoff und Kushner waren zuvor in Moskau, wo sie mit dem russischen Präsidenten Wladimir Putin gesprochen hatten.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T10:38:33.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "f683691c38a70bc08ccf8bf96c213907993945466a4eb4f7335f810eb300832b",
-            "source_item_id": "dae71c9c90bd0f60524643e0b031a88431feb09b9589394a12a9ad844c0d0e2f",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T10:38:33.000Z",
-            "ingested_at": "2026-09-06T10:51:35.145Z",
-            "agency_origin": "afp",
-            "agency_origin_confidence": "high",
-            "provenance": {
-              "origin": "agency:afp",
-              "basis": "agency_attribution_in_available_text",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-witkoff-und-kushner-erstmals-in-kiew-38212846.html",
-            "title": "Ukraine-Krieg: US-Vermittler Witkoff und Kushner in Kiew eingetroffen",
-            "summary": "Die US-Unterhändler Witkoff und Kushner sind nach mehreren Besuchen in Russland während des Ukraine-Krieges erstmals in die Ukraine gereist. Bringt das die Wende im Krieg?",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T12:14:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "86cf5a092bcbde7bd284a74728a811f8a949ee6a349239ad69280633260f0664",
-            "source_item_id": "e17478f1e86383511abba23544897c635238900d971f836b41f10949cdcedfe1",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T12:14:00.000Z",
-            "ingested_at": "2026-09-06T12:38:11.963Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesschau-access",
-            "publisher": "tagesschau / ARD",
-            "url": "https://www.tagesschau.de/ausland/europa/ukraine-angriffe-vermittlungsversuch-100.html",
-            "title": "US-Gesandte in Kiew eingetroffen: Neuer Anlauf für Friedensgespräche",
-            "summary": "Nach ihrem Treffen mit Kremlchef Putin in Moskau sind die US-Sondergesandten Kushner und Witkoff in Kiew eingetroffen, um mit Präsident Selenskyj zu reden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T06:53:40.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "e89cc40be98abdbdafcc725251a3d142820bd439e36db19478d483cf038cb290",
-            "source_item_id": "1ec910d22017fae8cd13bf62dce8d08cda37f6e3e2e1593f731ed6704f167b69",
-            "publisher_id": "tagesschau",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T06:53:40.000Z",
-            "ingested_at": "2026-09-06T19:21:31.261Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesschau",
-              "basis": "publisher_resolved_from_registered_target_url",
-              "independence_established": false,
-              "collection_source_id": "ndr-info"
-            },
-            "collection_source_id": "ndr-info",
-            "collection_publisher_id": "ndr"
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--selenskyj--us-vermittler-kommen-am-sonntag-nach-kiew-38210128.html",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:21:16.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "fad414743fc7f542f294bd6e01f4d2a5401f4eba011504f2a69bd1a66e9cc294",
-            "source_item_id": "d6143d05ba4905d8aecef5ffaeb22a47cf95169cf69c0b535ba0c291b6e78bea",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:21:16.000Z",
-            "ingested_at": "2026-09-04T17:39:54.371Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16020347.html",
-            "title": "Ukraine-Krieg: Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an, die bislang nur in Moskau waren.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "6f7721ac917f48386fa94f669c7bb8955347f7fdd1585732ea9a41cc678dd75b",
-            "source_item_id": "6db9e0976787f46728a65f15f21dac8ca9117205182c720c066a96c773f95436",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:22:14.000Z",
-            "ingested_at": "2026-09-05T05:21:05.955Z",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/politik/ausland/ukraine-krieg--us-vermittler-kommen-am-sonntag-erstmals-nach-kiew-38210128.html",
-            "title": "Ukraine-Krieg: US-Vermittler kommen am Sonntag erstmals nach Kiew",
-            "summary": "Zuletzt lagen Verhandlungen für ein Ende des Ukraine-Kriegs unter US-Vermittlung auf Eis. Nun kündigt Präsident Selenskyj in Kiew einen Besuch der US-Vermittler an.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T17:46:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "c08f772a0fb007fb38012b33a83d3766b91569f49d5399e675d9c16c612c38fb",
-            "source_item_id": "ebaf4806f92bab0c18a242907a451892e056ee73285e87d4f0487a48f6622d14",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T17:46:00.000Z",
-            "ingested_at": "2026-09-04T18:06:22.511Z",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-102.html",
-            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-04T20:13:08.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ae53b01803d6b29024c2a6a60f8746de7f8a7a14bb6ade687578fb6ef0dc568c",
-            "source_item_id": "2ead6af62ae1a84294a5a0a86a1e358f28cd207cc92dfbd911553a17f041b5e5",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-04T20:13:08.000Z",
-            "ingested_at": "2026-09-04T20:36:32.644Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/selenskyj-us-vermittler-kommen-am-sonntag-nach-kiew-106.html",
-            "title": "Ukraine-Krieg - Selenskyj: US-Vermittler kommen am Sonntag nach Kiew",
-            "summary": "Die US-Vermittler Witkoff und Kushner werden nach den Worten des ukrainischen Präsidenten Selenskyj am Sonntag in Kiew erwartet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-05T11:18:53.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "7a7f9a1bdaea2412f799dd9ad08b8440ee47057859b3cb170b2ca789a4373bcc",
-            "source_item_id": "ff6707f449681d33429d1219db3abb7da00828462c575d4c4cefb96b3a2dc7b7",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-05T11:18:53.000Z",
-            "ingested_at": "2026-09-05T11:31:43.777Z",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "publisher": "ZDFheute",
-            "url": "https://www.zdfheute.de/politik/ausland/us-vermittler-putin-moskau-kiew-ukraine-krieg-russland-100.html",
-            "title": "US-Vermittler: \"Beide Parteien müssen Kompromisse eingehen\"",
-            "summary": "Die US-Vermittler Kushner und Witkoff haben nach Moskau auch in Kiew Gespräche geführt. Nach einem Treffen mit Ukraines Präsidenten forderten sie Zugeständnisse von beiden Seiten.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T15:18:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "ea2bb4afd74c6d2d621ad887991f9ab218554927a69bf98581a9dbea9546dac5",
-            "source_item_id": "9ad001726f59c5ef3ff4bc395560f9438257b4d897d29a3ba3b09a9738ec9a58",
-            "publisher_id": "zdfheute",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T15:18:00.000Z",
-            "ingested_at": "2026-09-06T19:21:31.261Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:zdfheute",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesschau-access",
-            "publisher": "tagesschau / ARD",
-            "url": "https://www.tagesschau.de/ausland/europa/ukraine-russland-usa-verhandlungen-102.html",
-            "title": "Witkoff und Kushner erstmals in Kiew erwartet",
-            "summary": "In Moskau hatten sie sich mit Kremlchef Putin getroffen und mit ihm über ein Ende des Ukraine-Kriegs verhandelt. Nun kommen die US-Gesandten Witkoff und Kushner nach Kiew - auf ei…",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T03:15:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "8cfaaa864e14c5d17952e1a7016f37f46876ec6f8f3e75ba9ae99e92837e6617",
-            "source_item_id": "a3d74c05d2e65b2bce41a169eeb0ea68452733a4312efa79e87eb5c083eacb9e",
-            "publisher_id": "tagesschau",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T03:15:04.000Z",
-            "ingested_at": "2026-09-06T05:41:03.427Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesschau",
-              "basis": "publisher_resolved_from_registered_target_url",
-              "independence_established": false,
-              "collection_source_id": "swr-aktuell"
-            },
-            "collection_source_id": "swr-aktuell",
-            "collection_publisher_id": "swr"
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/ukraine-krieg--us-unterhaendler-witkoff-und-kushner-erstmals-in-kiew-38212818.html",
-            "title": "Ukraine-Krieg: US-Unterhändler Witkoff und Kushner erstmals in Kiew",
-            "summary": "Im Ringen um ein Ende des Ukraine-Kriegs sind die US-Unterhändler Steve Witkoff und Jared Kushner erstmals in Kiew eingetroffen. Das berichteten mehrere Kiewer Medien; die Nachrichtenagentur Unian zeigte ein Video der Ankunft der beiden Männer in der ukrainischen Hauptstadt mit dem Zug. Video der Ankunft (Ukr.)",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T10:33:04.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "71203ece550f0c66e9b3ac45f69ca1b14352aac97b24d653b2cc04911216520a",
-            "source_item_id": "1d3e1d8b7ff7feef140430d18a007d3135f9394f54818d974f9cb76ef4a3126e",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T10:33:04.000Z",
-            "ingested_at": "2026-09-06T10:51:35.145Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/dpa-diplomatie-16022706.html",
-            "title": "Diplomatie: US-Vermittler Witkoff und Kushner erstmals in Kiew",
-            "summary": "Mehrfach waren die US-Unterhändler bereits in Russland, nun haben sie die Ukraine besucht. Präsident Selenskyj empfängt sie vor historischer Kulisse und verweist auf die lange Geschichte des Landes.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T10:50:59.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "43c3120732f0f701f1294a41114c29276f807202071502a6d4ce775a2a39dda9",
-            "source_item_id": "faa3b6b7c93c425b48481114e869b48653581cfef6f97233431fbc69a74d2457",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T10:50:59.000Z",
-            "ingested_at": "2026-09-06T16:21:31.903Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/us-sondergesandte-erste-gespraechsrunde-in-kiew-ermutigend-100.html",
-            "title": "Beratungen über Ende des Ukraine-Kriegs - US-Sondergesandte: Erste Gesprächsrunde in Kiew ermutigend",
-            "summary": "Nach ihrem Treffen mit dem ukrainischen Präsidenten Selenskyj in Kiew haben die US-Sondergesandten Witkoff und Kushner von einer ermutigenden Diskussion gesprochen. Es seien neue US-Vorschläge für eine Beendigung des Ukraine-Krieges erörtert worden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T17:47:51.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "4a609a5f4b616f91222c1346d83ec94a346284e66efd0463dcd23d3049584610",
-            "source_item_id": "da2fbf4d8fbb9bbd45007fffbf83ef8a0eae4c3ce09a7e359a5d3354366214f3",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T17:47:51.000Z",
-            "ingested_at": "2026-09-06T17:52:07.787Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/politik/ausland/vermittlungsmission-us-unterhaendler-fuer-gespraeche-ueber-ukraine-krieg-in-moskau/100252262.html",
-            "title": "Vermittlungsmission: US-Vermittler Witkoff und Kushner sind erstmals in Kiew",
-            "summary": "Mehrfach waren sie für Gespräche in Moskau, nun sind sie erstmals für ihre Vermittlungsbemühungen in Kiew: Bringt der Besuch der US-Unterhändler ein Ende des Ukraine-Kriegs näher?",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T12:54:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "34d27677f3106de53e168aa32be3907eeffc52e2fb610d58e1eb969e3f17424f",
-            "source_item_id": "35c7f5deaf176621dfffdaf9ccf2e8718c6d35261bc4353e9671ba83337339c5",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T12:54:00.000Z",
-            "ingested_at": "2026-09-06T17:52:07.787Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "spiegel-schlagzeilen",
-            "publisher": "DER SPIEGEL",
-            "url": "https://www.spiegel.de/ausland/ukraine-krieg-us-vermittler-steve-witkoff-und-jared-kushner-erstmals-in-kyjiw-a-47f102dc-83e4-47f8-ab5b-0a4f5e8650fb",
-            "title": "Ukraine-Krieg: US-Vermittler Steve Witkoff und Jared Kushner erstmals in Kyjiw",
-            "summary": "Die Friedensgespräche gehen weiter: Nach ihrem Treffen mit Putin sind Jared Kushner und Steve Witkoff in die Ukraine gereist. Dort treffen die US-Unterhändler sich mit Präsident Wolodymyr Selenskyj.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T12:39:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "9d0b13e6f83fb116885639ffbe3b011c2302f1f63046a455264ebf47d2a658ba",
-            "source_item_id": "5fd25b2fa600ee33ce5ef51bbd1c98a4616111ee4a2615c994cca3c3507bec3a",
-            "publisher_id": "spiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T12:39:00.000Z",
-            "ingested_at": "2026-09-06T16:21:31.903Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:spiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/dpa-ukraine-krieg-16027936.html",
-            "title": "Ukraine-Krieg: US-Unterhändler Witkoff und Kushner erstmals in Kiew",
-            "summary": "US-Unterhändler Witkoff und Kushner erstmals in Kiew",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T14:10:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "8e4cc96266b0d86bc3549c3306cc0590effea01c6667c7c6e261f42597664d51",
-            "source_item_id": "5b8b8d6e12697b5514116c97e2736e47e32eeac531b31d1143385ded5f84fc56",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T14:10:14.000Z",
-            "ingested_at": "2026-09-07T23:02:05.417Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
-          "fingerprint": "3a48062f9f17240bc2032436aad30d6f1ece4f3bfb6aa68a85a440c21ebcb6c1",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-1c66dbdb6d9accb4",
@@ -127799,7 +127161,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
           "issue_codes": [],
           "warning_codes": []
@@ -131170,7 +130532,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -157057,7 +156419,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -201411,7 +200773,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T12:51:54.078Z",
+          "checked_at": "2026-09-08T13:06:42.772Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
