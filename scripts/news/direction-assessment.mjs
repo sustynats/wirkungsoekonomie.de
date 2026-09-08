@@ -15,6 +15,31 @@ export const NEWS_DIMENSION_SCHEMA = {
 const tendencies = new Set(['chance', 'risiko', 'gemischt', 'offen']);
 const bases = new Set(['assessed', 'unclear', 'no_path']);
 const substantive = value => typeof value === 'string' && value.trim().length >= 20;
+const valueShape = value => value === undefined ? 'missing' : value === null ? 'null' : Array.isArray(value) ? 'array' : typeof value;
+// Shape-only production diagnostics: never retain model text, source IDs or
+// arbitrary object keys. A failed proof remains failed; this does not repair it.
+export function directionInputDiagnostics(analysis, sources = []) {
+  const sourceIds = new Set(sources.map(source => source.source_id));
+  const pathShape = path => ({
+    shape: valueShape(path),
+    literal_null: typeof path === 'string' && path.trim().toLowerCase() === 'null',
+    mechanism_shape: valueShape(path?.mechanism),
+    mechanism_chars: typeof path?.mechanism === 'string' ? path.mechanism.trim().length : null,
+    source_ids_shape: valueShape(path?.source_ids),
+    source_ids_count: Array.isArray(path?.source_ids) ? path.source_ids.length : null,
+    known_source_ids_count: Array.isArray(path?.source_ids) ? path.source_ids.filter(id => sourceIds.has(id)).length : null,
+  });
+  return Object.fromEntries(['human','planet','democracy'].map(key => {
+    const item = analysis?.[key];
+    return [key, {
+      shape: valueShape(item),
+      tendency: tendencies.has(item?.tendency) ? item.tendency : null,
+      direction_basis: bases.has(item?.direction_basis) ? item.direction_basis : null,
+      positive_path: pathShape(item?.positive_path),
+      negative_path: pathShape(item?.negative_path),
+    }];
+  }));
+}
 export function hasMixedPaths(item) {
   const paths = [item?.positive_path, item?.negative_path];
   return paths.every(path => substantive(path?.mechanism) && Array.isArray(path.source_ids)

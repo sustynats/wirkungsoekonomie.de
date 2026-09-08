@@ -1,10 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { directionAssessmentErrors, dimensionAssessment, DIRECTION_ASSESSMENT_VERSION, DIRECTION_SEPARATION_RULE } from '../../scripts/news/direction-assessment.mjs';
+import { directionAssessmentErrors, directionInputDiagnostics, dimensionAssessment, DIRECTION_ASSESSMENT_VERSION, DIRECTION_SEPARATION_RULE } from '../../scripts/news/direction-assessment.mjs';
 import { renderDimensionMeters, renderImpactPath, sanitizeVisuals } from '../../scripts/news/visuals.mjs';
 import { buildAnalysisPrompt, validateAnalysis } from '../../scripts/news/lib.mjs';
-import { shouldRetryQualityGate } from '../../scripts/news/run.mjs';
+import { analysisValidationDiagnostics, shouldRetryQualityGate } from '../../scripts/news/run.mjs';
 import { editorialJudgmentErrors } from '../../scripts/news/editorial-judgment.mjs';
 import { analysisReaderCopy } from '../../scripts/news/reader-copy.mjs';
 
@@ -12,6 +12,24 @@ const sources = [{source_id:'source-999'}];
 const fixture = () => ({direction_assessment_version:DIRECTION_ASSESSMENT_VERSION,
   ...Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',tendency:'risiko',direction_basis:'assessed',rationale:'Fällt die spezialisierte Beratung weg, sinkt die erreichbare Hilfe. Eintritt und Ausmaß sind offen.'}]))});
 const mixed = () => ({positive_path:{mechanism:'Zusätzliche Beratung erleichtert den Zugang zu Hilfe.',source_ids:['source-999']},negative_path:{mechanism:'Gleichzeitiger Mittelentzug verkürzt die Öffnungszeiten.',source_ids:['source-999']}});
+
+test('direction diagnostics retain only shape and counts, never provider text or source IDs',()=>{
+  const a=fixture();
+  for (const [path,shape] of [[undefined,'missing'],[null,'null'],['null','string'],[{},'object'],[[],'array'],[false,'boolean']]) {
+    a.human.positive_path=path;
+    const before=JSON.stringify(a),d=directionInputDiagnostics(a,sources).human.positive_path;
+    assert.equal(d.shape,shape);assert.equal(d.literal_null,path==='null');
+    assert.equal(JSON.stringify(a),before);
+  }
+  a.human.positive_path={mechanism:'PRIVATE UNTRUSTED MODEL TEXT',source_ids:['source-999','PRIVATE UNKNOWN SOURCE'],PRIVATE_KEY:'PRIVATE VALUE'};
+  const d=analysisValidationDiagnostics(a,'',{sources}).direction_input;
+  assert.equal(d.human.positive_path.mechanism_chars,'PRIVATE UNTRUSTED MODEL TEXT'.length);
+  assert.equal(d.human.positive_path.source_ids_count,2);
+  assert.equal(d.human.positive_path.known_source_ids_count,1);
+  assert.doesNotMatch(JSON.stringify(d),/PRIVATE|UNTRUSTED|source-999/);
+  assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'));
+  assert.doesNotThrow(()=>directionInputDiagnostics(null));
+});
 
 test('missing, explicit uncertainty, missing pathway and unsupported balance are distinct visible states',()=>{
   const a=fixture();delete a.human.tendency;a.planet.tendency='offen';a.planet.direction_basis='no_path';a.democracy.tendency='offen';a.democracy.direction_basis='unclear';
