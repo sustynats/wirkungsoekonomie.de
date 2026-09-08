@@ -2,32 +2,74 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T01:37:06.031Z",
-  "scanned_stories": 138,
-  "scanned_subjects": 120,
-  "editorial_candidates": 22,
-  "ready_for_research": 6,
+  "started_at": "2026-09-08T01:52:42.101Z",
+  "scanned_stories": 139,
+  "scanned_subjects": 121,
+  "editorial_candidates": 23,
+  "ready_for_research": 7,
   "research_pending": 6,
-  "retry_deferred": 4,
-  "editorial_research_sources_discovered": 25,
-  "selected": 2,
-  "editorial_research_started": 1,
-  "editorial_analyses_published": 0,
+  "retry_deferred": 3,
+  "editorial_research_sources_discovered": 31,
+  "selected": 4,
+  "editorial_research_started": 4,
+  "editorial_analyses_published": 1,
   "editorial_analyses_updated": 0,
-  "research_calls": 1,
-  "research_tokens": 10508,
-  "analysis_tokens": 10000,
-  "estimated_cost_usd": 0.052881,
-  "quality_retries": 0,
+  "research_calls": 4,
+  "research_tokens": 26216,
+  "analysis_tokens": 27954,
+  "estimated_cost_usd": 0.140617,
+  "quality_retries": 2,
   "publication_deferred": true,
   "failed": [
     {
-      "story_id": "wt-1c2c187d0b858b7c",
-      "reason": "AI_PROVIDER_OUTPUT_INVALID",
-      "next_attempt_at": "2026-09-08T02:37:06.031Z"
+      "story_id": "wt-f03755f6f6b8c3b7",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-08T03:52:42.101Z"
     }
   ],
   "candidates": [
+    {
+      "story_id": "wt-8802c617d5bb3e85",
+      "story_slug": "ukraine-krieg-russland-setzt-angriffe-auf-kiew-nach-dreitagiger-pause-fort-bb3e85",
+      "story_title": "Ukraine-Krieg - Russland setzt Angriffe auf Kiew nach dreitägiger Pause fort",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "6268c1bfa224bdd09f3817521001cfd1a7cfbb345ef91dc1832f3b72ff3ea28f",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-7b385f58748f3d32",
       "story_slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
@@ -971,14 +1013,15 @@
     }
   ],
   "batch": {
-    "submitted": 0,
+    "submitted": 1,
     "pending": 0,
     "completed": 0,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
+    "timing_reconciled": 0,
     "attention_required": []
   },
-  "batch_deferred": 1,
-  "completed_at": "2026-09-08T01:38:14.056Z"
+  "batch_deferred": 2,
+  "completed_at": "2026-09-08T01:55:35.789Z"
 }
