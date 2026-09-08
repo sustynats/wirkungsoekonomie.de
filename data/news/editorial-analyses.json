@@ -1,8 +1,53 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T11:08:38.096Z",
+  "updated_at": "2026-09-08T11:29:36.270Z",
   "candidates": [
+    {
+      "story_id": "wt-db0e00874c2fe321",
+      "story_slug": "insolvenzen-firmeninsolvenzen-sinken-im-august-aber-mehr-betroffene-2fe321",
+      "story_title": "Insolvenzen: Firmeninsolvenzen sinken im August – aber mehr Betroffene",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 4,
+        "mpd_relevance": 7,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 6,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 2,
+        "primary_source_expected": false,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "bff7982d4b9bd35b25b74855cf076ee66786b94a7b8906a67f312c964ac5f4e1",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-4c0a09f9ce090af7",
       "story_slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
@@ -25881,8 +25926,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T11:08:38.096Z",
-      "next_attempt_at": "2026-09-08T11:23:38.096Z",
+      "last_attempt_at": "2026-09-08T11:29:36.270Z",
+      "next_attempt_at": "2026-09-08T11:44:36.270Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
