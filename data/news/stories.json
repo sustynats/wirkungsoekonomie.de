@@ -1,8 +1,635 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T02:37:05.212Z",
-  "updated_at": "2026-09-08T04:06:45.170Z",
+  "public_updated_at": "2026-09-08T04:22:04.039Z",
+  "updated_at": "2026-09-08T04:22:04.039Z",
   "stories": [
+    {
+      "story_id": "wt-e1047174e6d92607",
+      "slug": "wohngeld-spd-und-grune-in-hamburg-fordern-rucknahme-von-kurzungen-d92607",
+      "title": "Wohngeld: SPD und Grüne in Hamburg fordern Rücknahme von Kürzungen",
+      "first_seen": "2026-09-08T04:02:02.000Z",
+      "last_updated": "2026-09-08T04:23:17.816Z",
+      "published_at": "2026-09-08T04:23:17.816Z",
+      "updated_at": "2026-09-08T04:23:17.816Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+          "title": "Wohngeld: SPD und Grüne in Hamburg fordern Rücknahme von Kürzungen",
+          "summary": "Das Bundeskabinett hatte im Juli eine Reform des Wohngeldes beschlossen. Hamburgs SPD und Grüne wollen die Pläne kippen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:02:02.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "f773a9fdcacc734495db7e43cd09be050f0adf9f341ebd3e318f3e44a0917940",
+          "source_item_id": "4477e571e05f4711d24a1ccb85c0e3c8639d3e6926f8138ffb5334f6434650fd",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:02:02.000Z",
+          "ingested_at": "2026-09-08T04:22:04.039Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e1047174e6d92607-v1-claim-1",
+          "story_id": "wt-e1047174e6d92607",
+          "claim": "Das Bundeskabinett hat im Juli eine Reform des Wohngeldes beschlossen, die die Ausgaben senken soll.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+              "excerpt_hash": "92c5c21072d1ff5adb6c",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            },
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+              "excerpt_hash": "ec7619f6f70cd459aa7f",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:23:17.816Z"
+        },
+        {
+          "claim_id": "wt-e1047174e6d92607-v1-claim-2",
+          "story_id": "wt-e1047174e6d92607",
+          "claim": "Die Reform sieht unter anderem vor, den Heizkostenzuschuss zu halbieren und das Wohngeld nicht mehr zu erhöhen.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+              "excerpt_hash": "ec7619f6f70cd459aa7f",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:23:17.816Z"
+        },
+        {
+          "claim_id": "wt-e1047174e6d92607-v1-claim-3",
+          "story_id": "wt-e1047174e6d92607",
+          "claim": "Hamburgs SPD und die Grünen wollen den Senat per Antrag auffordern, über den Bundesrat den Gesetzentwurf zu ändern.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+              "excerpt_hash": "4cb245d657be348be4bf",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:23:17.816Z"
+        },
+        {
+          "claim_id": "wt-e1047174e6d92607-v1-claim-4",
+          "story_id": "wt-e1047174e6d92607",
+          "claim": "Der Deutsche Mieterbund schätzt, dass rund 9.000 Hamburger Haushalte durch die Reform ihren Anspruch ganz verlieren könnten.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+              "excerpt_hash": "c79240bc81b883dbc4aa",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:23:17.816Z"
+        },
+        {
+          "claim_id": "wt-e1047174e6d92607-v1-claim-5",
+          "story_id": "wt-e1047174e6d92607",
+          "claim": "In Hamburg beziehen derzeit knapp 27.000 Haushalte Wohngeld, im Schnitt 318 Euro im Monat.",
+          "status": "single_source_claim",
+          "source_id": "ndr-info",
+          "evidence": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+              "excerpt_hash": "f63d672b5f971c4f9d9d",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T04:23:17.816Z"
+        }
+      ],
+      "event_id": "event-2b9558d7c2107f9df2f9",
+      "event_first_seen_at": "2026-09-08T04:22:04.039Z",
+      "event_detected_at": "2026-09-08T04:22:04.039Z",
+      "verification_started_at": "2026-09-08T04:23:02.445Z",
+      "publish_ready_at": "2026-09-08T04:23:17.816Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T04:22:04.039Z",
+        "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "28b488f6b6294f30a1e2592d3263c314c647b8ce295d0027225ed2e34e0a9a34",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T04:23:17.816Z",
+        "sources": [
+          {
+            "source_id": "ndr-info",
+            "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+            "content_hash": "f773a9fdcacc734495db7e43cd09be050f0adf9f341ebd3e318f3e44a0917940",
+            "excerpt_hash": "311d0695b69742d363c58139b55e5c5ec5b22b75045fd64cf0ebafb404253f0e",
+            "number_locale": "de",
+            "numbers": [
+              "1",
+              "595937",
+              "9000",
+              "2026",
+              "9",
+              "2",
+              "18448323",
+              "4999",
+              "156",
+              "90.3",
+              "1041",
+              "0",
+              "3464",
+              "4333",
+              "120",
+              "51000",
+              "3463778",
+              "903",
+              "1.5",
+              "2028",
+              "41",
+              "27000",
+              "318",
+              "21",
+              "8.09",
+              "6"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Das Stück berichtet über einen Konflikt in Hamburg um die geplante Wohngeldreform des Bundes. Nach Angaben des Beitrags hatte das Bundeskabinett die Reform im Juli beschlossen, um Ausgaben zu senken. Genannt werden als Elemente unter anderem eine Halbierung des Heizkostenzuschusses und ein Ausbleiben künftiger Erhöhungen beim Wohngeld.\n\nHamburgs SPD und Grüne wollen den Senat per Antrag auffordern, den Gesetzentwurf über den Bundesrat ändern zu lassen. Der Beitrag nennt außerdem Einschätzungen des Deutschen Mieterbundes zu möglichen Folgen für Hamburger Haushalte sowie aktuelle Zahlen zum Bezug von Wohngeld in der Stadt.",
+      "analysis": {
+        "story_id": "wt-e1047174e6d92607",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Hamburgs SPD und Grüne stellen sich gegen die geplante Wohngeldreform des Bundes. Im Raum stehen Kürzungen beim Heizkostenzuschuss und mögliche Folgen für tausende Haushalte.",
+        "detail_summary": "Der Beitrag beschreibt eine konkrete bundespolitische Maßnahme mit direkter Verteilungwirkung für Wohngeldbeziehende. Die Hamburger Koalition aus SPD und Grünen will die Reform über den Bundesrat ändern lassen, also nicht nur kommentieren, sondern in ein laufendes Gesetzgebungsverfahren eingreifen. Materiell relevant ist das vor allem wegen der Zahl der betroffenen Haushalte, der Höhe der Leistung und der möglichen Kürzung einzelner Bestandteile. Der Wirkpfad führt von der Regelung zu veränderten Transferleistungen und damit zu höheren oder niedrigeren Wohnkostenanteilen für einzelne Haushalte. Offen bleibt, ob und in welcher Form der Bundesrat tatsächlich Änderungen durchsetzt; ebenso fehlt in der Meldung eine unabhängige Bestätigung der Betroffenenzahl. Deshalb bleibt die Einordnung vorläufig, aber relevant.",
+        "why_relevant": "Die Meldung betrifft eine bundesweite Transferregelung mit möglicher Wirkung auf Wohnkosten, Haushaltsbudgets und die Verteilung öffentlicher Mittel. Gleichzeitig zeigt sie einen konkreten politischen Konflikt um Korrekturmöglichkeiten im Bundesrat.",
+        "status": "beschlossen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Wohngeld und Heizkostenzuschuss betreffen direkt Haushalte mit knappen Budgets. Eine Kürzung kann die verfügbare Kaufkraft verringern und Wohnkostenbelastungen erhöhen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein unmittelbarer Umwelt- oder Klimawirkpfad ist in der Quelle nicht belegt. Allenfalls könnten veränderte Wohnkosten indirekt Heiz- oder Umzugsentscheidungen beeinflussen, das bleibt offen."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Der Streit zeigt einen materiellen Konflikt zwischen Bundesentscheidung und Länderinitiative über den Bundesrat. Das berührt demokratische Korrekturfähigkeit und die Verteilung von Entscheidungsmacht."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Reform kann die Höhe und Reichweite staatlicher Wohnkostenzuschüsse verändern und damit Budgets betroffener Haushalte spürbar verschieben.",
+        "impact_risks": [
+          "Weniger Transferleistung kann die Wohnkostenbelastung einzelner Haushalte erhöhen.",
+          "Ein Anspruchsverlust kann bei Betroffenen zu kurzfristigen Finanzierungslücken führen.",
+          "Politisch kann der Konflikt den Spielraum für Korrekturen im Bundesrat verkleinern oder verzögern."
+        ],
+        "mechanisms": [
+          "Änderung von Zuschusshöhe und Anspruchsvoraussetzungen verändert verfügbare Haushaltseinkommen.",
+          "Länderinitiative über den Bundesrat kann den finalen Regelungstext noch beeinflussen."
+        ],
+        "first_order": [
+          "Kürzung des Heizkostenzuschusses oder fehlende Erhöhungen senken direkt die Leistung einzelner Haushalte.",
+          "Hamburg versucht, den Gesetzentwurf über den Bundesrat zu ändern."
+        ],
+        "second_order": [
+          "Betroffene Haushalte müssen einen höheren Anteil ihres Einkommens für Wohnen aufbringen.",
+          "Ein geänderter Entwurf könnte die Verteilungswirkung der Reform abmildern oder verschieben."
+        ],
+        "third_order": [
+          "Dauerhaft niedrigere Transferleistungen können die Armuts- und Wohnkostenbelastung bestimmter Gruppen erhöhen.",
+          "Der Konflikt kann als Beispiel für föderale Korrekturmechanismen bei Bundesgesetzen wirken."
+        ],
+        "systemic_relevance": "Die Entscheidung betrifft einen bundesweiten Sozialtransfer und damit einen Bereich mit unmittelbarer Wirkung auf Haushalte, Kommunen und die soziale Absicherung.",
+        "transformation_potential": "Hoch ist das Transformationspotenzial nur begrenzt; eher verändert die Reform die Ausgestaltung eines bestehenden Transfersystems als dessen Grundlogik.",
+        "resilience": "Die Länderbeteiligung über den Bundesrat ist ein Korrekturkanal, der die demokratische Anpassungsfähigkeit erhöhen kann. Ob er greift, ist offen.",
+        "side_effects": [
+          "Mögliche Mehrbelastung für Haushalte mit knappen Budgets.",
+          "Politische Konflikte zwischen Landes- und Bundesebene."
+        ],
+        "uncertainties": [
+          "Die Meldung ist sekundär und verweist auf die Reform nur zusammenfassend.",
+          "Die tatsächliche Rechtsentwicklung im Bundesrat bleibt offen.",
+          "Die Zahl der potenziell Betroffenen ist eine Einschätzung des Mieterbundes, nicht amtlich belegt."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Quelle: NDR; die Reform und die politischen Forderungen werden berichtet, nicht selbst amtlich belegt. Die Betroffenenzahl wird dem Deutschen Mieterbund zugeschrieben.",
+        "watch_next": [
+          "Wie der Bundesrat mit dem Gesetzentwurf umgeht.",
+          "Ob Hamburg seinen Antrag in der Bürgerschaft einbringt und unterstützt.",
+          "Ob die im Bericht genannten Kürzungen im weiteren Verfahren verändert werden."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030: SDG 1, SDG 10, SDG 11, soweit Wohnkosten und soziale Absicherung betroffen sind."
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "distribution",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Es gibt eine neue politische Reaktion auf eine bereits beschlossene Reform mit möglicher Wirkung auf zahlreiche Haushalte. Die Meldung ist vorläufig, aber materiell, weil sie Transferhöhe, Anspruchsrechte und föderale Korrektur betrifft."
+        },
+        "visuals": {
+          "affected_groups": [
+            "haushalte",
+            "kommunen",
+            "staat"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T04:22:04.039Z",
+        "media_trigger_fingerprint": "f41acae5808432bd1b222978fb1e00a21631dac33b5464c8fcc546af33a9df4f",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "f41acae5808432bd1b222978fb1e00a21631dac33b5464c8fcc546af33a9df4f",
+          "content_fingerprint": "543c4e50c8cfdf90ef6f4331aa0b82a5f645cbd375362f9d65b185a2f92c8a2a",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T04:23:17.816Z",
+          "content_hash": "28b488f6b6294f30a1e2592d3263c314c647b8ce295d0027225ed2e34e0a9a34",
+          "source_summary": "Das Stück berichtet über einen Konflikt in Hamburg um die geplante Wohngeldreform des Bundes. Nach Angaben des Beitrags hatte das Bundeskabinett die Reform im Juli beschlossen, um Ausgaben zu senken. Genannt werden als Elemente unter anderem eine Halbierung des Heizkostenzuschusses und ein Ausbleiben künftiger Erhöhungen beim Wohngeld.\n\nHamburgs SPD und Grüne wollen den Senat per Antrag auffordern, den Gesetzentwurf über den Bundesrat ändern zu lassen. Der Beitrag nennt außerdem Einschätzungen des Deutschen Mieterbundes zu möglichen Folgen für Hamburger Haushalte sowie aktuelle Zahlen zum Bezug von Wohngeld in der Stadt.",
+          "analysis": {
+            "story_id": "wt-e1047174e6d92607",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Hamburgs SPD und Grüne stellen sich gegen die geplante Wohngeldreform des Bundes. Im Raum stehen Kürzungen beim Heizkostenzuschuss und mögliche Folgen für tausende Haushalte.",
+            "detail_summary": "Der Beitrag beschreibt eine konkrete bundespolitische Maßnahme mit direkter Verteilungwirkung für Wohngeldbeziehende. Die Hamburger Koalition aus SPD und Grünen will die Reform über den Bundesrat ändern lassen, also nicht nur kommentieren, sondern in ein laufendes Gesetzgebungsverfahren eingreifen. Materiell relevant ist das vor allem wegen der Zahl der betroffenen Haushalte, der Höhe der Leistung und der möglichen Kürzung einzelner Bestandteile. Der Wirkpfad führt von der Regelung zu veränderten Transferleistungen und damit zu höheren oder niedrigeren Wohnkostenanteilen für einzelne Haushalte. Offen bleibt, ob und in welcher Form der Bundesrat tatsächlich Änderungen durchsetzt; ebenso fehlt in der Meldung eine unabhängige Bestätigung der Betroffenenzahl. Deshalb bleibt die Einordnung vorläufig, aber relevant.",
+            "why_relevant": "Die Meldung betrifft eine bundesweite Transferregelung mit möglicher Wirkung auf Wohnkosten, Haushaltsbudgets und die Verteilung öffentlicher Mittel. Gleichzeitig zeigt sie einen konkreten politischen Konflikt um Korrekturmöglichkeiten im Bundesrat.",
+            "status": "beschlossen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "rationale": "Wohngeld und Heizkostenzuschuss betreffen direkt Haushalte mit knappen Budgets. Eine Kürzung kann die verfügbare Kaufkraft verringern und Wohnkostenbelastungen erhöhen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Ein unmittelbarer Umwelt- oder Klimawirkpfad ist in der Quelle nicht belegt. Allenfalls könnten veränderte Wohnkosten indirekt Heiz- oder Umzugsentscheidungen beeinflussen, das bleibt offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Der Streit zeigt einen materiellen Konflikt zwischen Bundesentscheidung und Länderinitiative über den Bundesrat. Das berührt demokratische Korrekturfähigkeit und die Verteilung von Entscheidungsmacht."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Reform kann die Höhe und Reichweite staatlicher Wohnkostenzuschüsse verändern und damit Budgets betroffener Haushalte spürbar verschieben.",
+            "impact_risks": [
+              "Weniger Transferleistung kann die Wohnkostenbelastung einzelner Haushalte erhöhen.",
+              "Ein Anspruchsverlust kann bei Betroffenen zu kurzfristigen Finanzierungslücken führen.",
+              "Politisch kann der Konflikt den Spielraum für Korrekturen im Bundesrat verkleinern oder verzögern."
+            ],
+            "mechanisms": [
+              "Änderung von Zuschusshöhe und Anspruchsvoraussetzungen verändert verfügbare Haushaltseinkommen.",
+              "Länderinitiative über den Bundesrat kann den finalen Regelungstext noch beeinflussen."
+            ],
+            "first_order": [
+              "Kürzung des Heizkostenzuschusses oder fehlende Erhöhungen senken direkt die Leistung einzelner Haushalte.",
+              "Hamburg versucht, den Gesetzentwurf über den Bundesrat zu ändern."
+            ],
+            "second_order": [
+              "Betroffene Haushalte müssen einen höheren Anteil ihres Einkommens für Wohnen aufbringen.",
+              "Ein geänderter Entwurf könnte die Verteilungswirkung der Reform abmildern oder verschieben."
+            ],
+            "third_order": [
+              "Dauerhaft niedrigere Transferleistungen können die Armuts- und Wohnkostenbelastung bestimmter Gruppen erhöhen.",
+              "Der Konflikt kann als Beispiel für föderale Korrekturmechanismen bei Bundesgesetzen wirken."
+            ],
+            "systemic_relevance": "Die Entscheidung betrifft einen bundesweiten Sozialtransfer und damit einen Bereich mit unmittelbarer Wirkung auf Haushalte, Kommunen und die soziale Absicherung.",
+            "transformation_potential": "Hoch ist das Transformationspotenzial nur begrenzt; eher verändert die Reform die Ausgestaltung eines bestehenden Transfersystems als dessen Grundlogik.",
+            "resilience": "Die Länderbeteiligung über den Bundesrat ist ein Korrekturkanal, der die demokratische Anpassungsfähigkeit erhöhen kann. Ob er greift, ist offen.",
+            "side_effects": [
+              "Mögliche Mehrbelastung für Haushalte mit knappen Budgets.",
+              "Politische Konflikte zwischen Landes- und Bundesebene."
+            ],
+            "uncertainties": [
+              "Die Meldung ist sekundär und verweist auf die Reform nur zusammenfassend.",
+              "Die tatsächliche Rechtsentwicklung im Bundesrat bleibt offen.",
+              "Die Zahl der potenziell Betroffenen ist eine Einschätzung des Mieterbundes, nicht amtlich belegt."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Quelle: NDR; die Reform und die politischen Forderungen werden berichtet, nicht selbst amtlich belegt. Die Betroffenenzahl wird dem Deutschen Mieterbund zugeschrieben.",
+            "watch_next": [
+              "Wie der Bundesrat mit dem Gesetzentwurf umgeht.",
+              "Ob Hamburg seinen Antrag in der Bürgerschaft einbringt und unterstützt.",
+              "Ob die im Bericht genannten Kürzungen im weiteren Verfahren verändert werden."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030: SDG 1, SDG 10, SDG 11, soweit Wohnkosten und soziale Absicherung betroffen sind."
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "distribution",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Es gibt eine neue politische Reaktion auf eine bereits beschlossene Reform mit möglicher Wirkung auf zahlreiche Haushalte. Die Meldung ist vorläufig, aber materiell, weil sie Transferhöhe, Anspruchsrechte und föderale Korrektur betrifft."
+            },
+            "visuals": {
+              "affected_groups": [
+                "haushalte",
+                "kommunen",
+                "staat"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T04:22:04.039Z",
+            "media_trigger_fingerprint": "f41acae5808432bd1b222978fb1e00a21631dac33b5464c8fcc546af33a9df4f",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "f41acae5808432bd1b222978fb1e00a21631dac33b5464c8fcc546af33a9df4f",
+              "content_fingerprint": "543c4e50c8cfdf90ef6f4331aa0b82a5f645cbd375362f9d65b185a2f92c8a2a",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-e1047174e6d92607-v1-claim-1",
+              "story_id": "wt-e1047174e6d92607",
+              "claim": "Das Bundeskabinett hat im Juli eine Reform des Wohngeldes beschlossen, die die Ausgaben senken soll.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+                  "excerpt_hash": "92c5c21072d1ff5adb6c",
+                  "checked_at": "2026-09-08T04:23:17.816Z"
+                },
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+                  "excerpt_hash": "ec7619f6f70cd459aa7f",
+                  "checked_at": "2026-09-08T04:23:17.816Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            },
+            {
+              "claim_id": "wt-e1047174e6d92607-v1-claim-2",
+              "story_id": "wt-e1047174e6d92607",
+              "claim": "Die Reform sieht unter anderem vor, den Heizkostenzuschuss zu halbieren und das Wohngeld nicht mehr zu erhöhen.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+                  "excerpt_hash": "ec7619f6f70cd459aa7f",
+                  "checked_at": "2026-09-08T04:23:17.816Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            },
+            {
+              "claim_id": "wt-e1047174e6d92607-v1-claim-3",
+              "story_id": "wt-e1047174e6d92607",
+              "claim": "Hamburgs SPD und die Grünen wollen den Senat per Antrag auffordern, über den Bundesrat den Gesetzentwurf zu ändern.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+                  "excerpt_hash": "4cb245d657be348be4bf",
+                  "checked_at": "2026-09-08T04:23:17.816Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            },
+            {
+              "claim_id": "wt-e1047174e6d92607-v1-claim-4",
+              "story_id": "wt-e1047174e6d92607",
+              "claim": "Der Deutsche Mieterbund schätzt, dass rund 9.000 Hamburger Haushalte durch die Reform ihren Anspruch ganz verlieren könnten.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+                  "excerpt_hash": "c79240bc81b883dbc4aa",
+                  "checked_at": "2026-09-08T04:23:17.816Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            },
+            {
+              "claim_id": "wt-e1047174e6d92607-v1-claim-5",
+              "story_id": "wt-e1047174e6d92607",
+              "claim": "In Hamburg beziehen derzeit knapp 27.000 Haushalte Wohngeld, im Schnitt 318 Euro im Monat.",
+              "status": "single_source_claim",
+              "source_id": "ndr-info",
+              "evidence": [
+                {
+                  "source_id": "ndr-info",
+                  "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+                  "excerpt_hash": "f63d672b5f971c4f9d9d",
+                  "checked_at": "2026-09-08T04:23:17.816Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T04:23:17.816Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "ndr-info",
+              "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+              "content_hash": "f773a9fdcacc734495db7e43cd09be050f0adf9f341ebd3e318f3e44a0917940"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T04:23:17.816Z",
+            "sources": [
+              {
+                "source_id": "ndr-info",
+                "url": "https://www.ndr.de/nachrichten/hamburg/wohngeld-spd-und-gruene-in-hamburg-fordern-ruecknahme-von-kuerzungen,wohngeld-156.html",
+                "content_hash": "f773a9fdcacc734495db7e43cd09be050f0adf9f341ebd3e318f3e44a0917940",
+                "excerpt_hash": "311d0695b69742d363c58139b55e5c5ec5b22b75045fd64cf0ebafb404253f0e",
+                "number_locale": "de",
+                "numbers": [
+                  "1",
+                  "595937",
+                  "9000",
+                  "2026",
+                  "9",
+                  "2",
+                  "18448323",
+                  "4999",
+                  "156",
+                  "90.3",
+                  "1041",
+                  "0",
+                  "3464",
+                  "4333",
+                  "120",
+                  "51000",
+                  "3463778",
+                  "903",
+                  "1.5",
+                  "2028",
+                  "41",
+                  "27000",
+                  "318",
+                  "21",
+                  "8.09",
+                  "6"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T04:23:17.816Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e1047174e6d92607-9581b0b062ae47ca-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "9581b0b062ae47ca9b06bed81073600baec9e9a7d00aa8523dda8cba1981dbda"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e1047174e6d92607-f20d163c07ee23e3-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "f20d163c07ee23e332a836dbeb7ab0abc6a949edb406bd58a1c823727115dcad"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e1047174e6d92607-a077d3588f02e3e2-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "a077d3588f02e3e2a29f2d92117d630243a4368aaf3ecf015eeaa659ae50e8bd"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-e1047174e6d92607-0f93afcfdb16a131-source.png",
+          "sha256": "0f93afcfdb16a131d9cd001d99a785566ee7a6694787d85bff47cdedabaf3992",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-08T04:23:18.978Z"
+        },
+        "fingerprint": "1df42a3f6c2cede6c8cf4d591659d659496c99db0c0190a324b878d9fb08ed9e",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T04:24:11.160Z",
+        "status": "generated"
+      }
+    },
     {
       "story_id": "wt-dbc644779e2aac60",
       "ai_retry": {
@@ -67025,7 +67652,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T04:06:45.170Z",
+          "ingested_at": "2026-09-08T04:22:04.039Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -67086,7 +67713,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:06:45.170Z"
+          "checked_at": "2026-09-08T04:22:04.039Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -67106,7 +67733,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:06:45.170Z"
+          "checked_at": "2026-09-08T04:22:04.039Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -67122,7 +67749,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T04:06:45.170Z",
+      "updated_at": "2026-09-08T04:22:04.039Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -67162,7 +67789,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1139.86345,
+        "queue_age_minutes": 1155.1779333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -67171,7 +67798,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T04:06:45.170Z",
+        "checked_at": "2026-09-08T04:22:04.039Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -124654,7 +125281,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T04:06:45.170Z",
+          "checked_at": "2026-09-08T04:22:04.039Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -169008,7 +169635,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T04:06:45.170Z",
+          "checked_at": "2026-09-08T04:22:04.039Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
