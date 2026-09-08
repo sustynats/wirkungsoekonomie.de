@@ -1,7 +1,392 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T08:40:07.484Z",
+  "updated_at": "2026-09-08T10:07:26.127Z",
   "stories": [
+    {
+      "story_id": "wt-fba5823fb7d08999",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "gesetzentwurf-der-bundesregierung-zur-einkommensteuer-viel-versprochen-kaum-entlastet-d08999",
+      "title": "Gesetzentwurf der Bundesregierung zur Einkommensteuer: Viel versprochen, kaum entlastet",
+      "source_summary": "Die Quelle beschreibt einen vom Bundeskabinett gebilligten Gesetzentwurf zur Einkommensteuer. Nach ihrer Darstellung soll das Gesamtvolumen der Entlastung rund zehn Milliarden Euro betragen und vor allem Familien mit kleinen und mittleren Einkommen zugutekommen. Genannt werden unter anderem höhere Freibeträge, ein höheres Kindergeld, ein höherer Arbeitnehmer-Pauschbetrag sowie eine Ausweitung steuerfreier Zuschläge für Sonntags- und Feiertagsarbeit.\n\nGleichzeitig weist der Bericht auf Gegenfinanzierungen hin: der Handwerkerbonus soll sinken, die Pauschalsteuer für Mini-Jobs steigen und sehr hohe Einkommen stärker belastet werden. Die Quelle nennt außerdem Kritik aus der Bundesregierung und von Verbänden und ordnet die Reform als eher kleinteilig ein. Offen bleibt in dieser Erstmeldung, wie der Entwurf das weitere Verfahren durchläuft und in welcher Form er am Ende unverändert bleibt.",
+      "summary": "Der Gesetzentwurf verspricht Entlastung, verschiebt aber zugleich Lasten an anderer Stelle. Ob daraus am Ende ein deutlich spürbarer Wechsel entsteht, bleibt im weiteren Verfahren offen.",
+      "detail_summary": "Der berichtete Kern ist ein vom Kabinett gebilligter Gesetzentwurf zur Einkommensteuer mit rund zehn Milliarden Euro Entlastungsvolumen. Die Quelle nennt zugleich mehrere Gegenfinanzierungen, darunter Kürzungen beim Handwerkerbonus, eine höhere Pauschalsteuer für Mini-Jobs und höhere Steuersätze für sehr hohe Einkommen. Für Menschen mit kleinen und mittleren Einkommen kann das je nach Ausgestaltung zu geringeren Abzügen oder höheren Nettoeffekten führen; für Arbeitgeber von Mini-Jobs und Nutzer des Handwerkerbonus kann sich die Kostenlage verschieben. Materiell relevant ist das vor allem wegen der Breite möglicher Betroffenheit und der Verteilungswirkung zwischen Haushalten, Unternehmen und sehr hohen Einkommen. Die spätere Wirkung bleibt offen, weil der Text einen Entwurf beschreibt und keine Umsetzung oder Wirkung belegt. Die Evidenz stützt damit eine belastbare Erstmeldung, aber noch keine Aussage über eingetretene Wirkung.",
+      "why_relevant": "Der Entwurf verändert Steuerregeln, Verteilungswirkungen und Anreize für mehrere Gruppen zugleich. Das ist für Haushalte, Beschäftigungskosten und die fiskalische Belastung materiell relevant.",
+      "topic": [
+        "Europa",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Für Haushalte mit kleinen und mittleren Einkommen gibt es ein Entlastungspotenzial, zugleich können Kürzungen beim Handwerkerbonus und höhere Mini-Job-Abgaben gegenläufig wirken."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus den Quellen ergibt sich kein direkter Umwelt- oder Klimapfad. Allenfalls indirekte Verhaltensänderungen wären denkbar, bleiben aber unbelegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Steuerpolitik betrifft Verteilung, Akzeptanz und Korrekturfähigkeit staatlicher Regeln. Die Quelle zeigt zugleich Kritik und laufende politische Aushandlung."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T10:07:26.127Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T08:39:22.000Z",
+      "last_updated": "2026-09-08T10:11:55.980Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-55fed03b91340e3261dc",
+      "case_file": null,
+      "source_published_at": "2026-09-08T08:39:22.000Z",
+      "published_at": "2026-09-08T10:11:55.980Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "lto-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Das Kabinett befasst sich mit dem vorgelegten Entwurf weiter und der Bundestag berät anschließend darüber.",
+          "source_id": "lto-news",
+          "expected_by": null,
+          "measurable_indicator": "Kabinetts- und Parlamentsbeschlüsse zum Einkommensteuerentwurf",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-800702ae6d10ea06",
+          "announced_at": "2026-09-08T08:39:22.000Z",
+          "follow_up_date": "2026-09-15T10:11:55.980Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die angekündigten Änderungen greifen stufenweise in den Jahren 2027 und 2028.",
+          "source_id": "lto-news",
+          "expected_by": null,
+          "measurable_indicator": "Belegte Beschlüsse oder Inkrafttreten der Stufen 2027 und 2028",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-02eb13cf7bf55f98",
+          "announced_at": "2026-09-08T08:39:22.000Z",
+          "follow_up_date": "2026-09-15T10:11:55.980Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Legal Tribune Online",
+          "url": "https://www.lto.de/recht/hintergruende/h/gesetzentwurf-bundesregierung-einkommensteuer-handwerkerbonus-progression?r=rss",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:39:22.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-fa4eab307af67bd3",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "truly-terrifying-afd-election-win-sparks-protests-across-germany-f67bd3",
+      "title": "‘Truly terrifying’: AfD election win sparks protests across Germany",
+      "source_summary": "Die Quelle berichtet über Proteste nach dem Wahlsieg der AfD in Sachsen-Anhalt. Laut Bericht gingen am Montag in Deutschland Menschen auf die Straße und riefen zu einer gemeinsamen Front gegen die rechtspopuläre Partei auf. Ein Teil der Protestierenden fordert demnach auch ein Verbot der AfD. Andere Stimmen führen den Erfolg der Partei auf ein Versagen der etablierten politischen Parteien zurück.\n\nDie Darstellung verbindet damit das Wahlergebnis mit unmittelbaren Reaktionen im öffentlichen Raum. Unklar bleibt, wie groß die Proteste waren, wo sie stattfanden und ob es weitere belegte Reaktionen aus Politik oder Zivilgesellschaft gab.",
+      "summary": "Der AfD-Wahlsieg in Sachsen-Anhalt löste laut Bericht Proteste in Deutschland aus. Die Quelle nennt auch Forderungen nach einem Parteiverbot und Kritik an den etablierten Parteien.",
+      "detail_summary": "Der Bericht beschreibt eine unmittelbare politische Reaktion auf den AfD-Wahlsieg in Sachsen-Anhalt: Proteste in Deutschland und Forderungen nach einer gemeinsamen Front gegen die Partei. Das ist für die demokratische Lage relevant, weil sich hier nicht nur eine Wahlentscheidung zeigt, sondern auch ihre öffentliche Gegenreaktion. Der mögliche Wirkpfad reicht von Wahlresultat über Mobilisierung bis zu neuem Druck auf Parteien und Verbände, sich klarer zu positionieren. Als Folge können sich Debatten, Bündnisse und strategische Entscheidungen im Parteiensystem verschieben. Die Evidenz bleibt vorläufig, weil die Quelle nur einen journalistischen Bericht liefert und genaue Reichweite, Ort und Umfang der Proteste offen sind.",
+      "why_relevant": "Die Meldung zeigt eine unmittelbare Reaktion auf ein relevantes Wahlergebnis und damit eine mögliche Verschiebung im demokratischen Konflikt- und Mobilisierungsraum.",
+      "topic": [
+        "Demokratie"
+      ],
+      "status": "beschlossen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Die Proteste zeigen Mobilisierung gegen die AfD und zugleich eine Zuspitzung des politischen Konflikts nach der Wahl."
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "rationale": "Die Quelle enthält keinen belastbaren Umwelt- oder Klimabezug."
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Ein Wahlsieg und die darauf folgende Protestdynamik betreffen Parteienwettbewerb, Legitimitätsdebatten und demokratische Korrekturfähigkeit."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "beschaeftigte",
+          "kommunen",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T10:07:26.127Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T09:50:23.000Z",
+      "last_updated": "2026-09-08T10:11:15.620Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-c6f77dfad5193ec44327",
+      "case_file": null,
+      "source_published_at": "2026-09-08T09:50:23.000Z",
+      "published_at": "2026-09-08T10:11:15.620Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260908-truly-terrifying-afd-election-win-sparks-protests-across-germany",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T09:50:23.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a271a35a2b58f666",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "bund-fordert-beethoven-jubilaum-mit-2-3-millionen-euro-staatsminister-weimer-2027-wird-b-58f666",
+      "title": "Bund fördert Beethoven-Jubiläum mit 2,3 Millionen Euro – Staatsminister Weimer: „2027 wird Beethoven-Jahr!“",
+      "source_summary": "Die Bundesregierung meldet eine Förderung für das Beethoven-Jubiläum in Höhe von 2,3 Millionen Euro. Nach der Mitteilung unterstützt der Bund das Programm des Beethoven-Hauses Bonn zum Gedenkjahr mit rund 900.000 Euro und fördert auch weitere Projekte rund um das Beethoven-Jahr 2027.\n\nAls Anlass nennt die Mitteilung den 200. Todestag Ludwig van Beethovens im Jahr 2027. Zugleich hat Kulturstaatsminister Wolfram Weimer die Sonderausstellung „Beethoven by Warhol“ im Beethoven-Haus Bonn als Schirmherr eröffnet. In der Ausstellung werden Warhols Beethoven-Arbeiten sowie weitere Werke gezeigt; einige davon sollen erstmals öffentlich präsentiert werden.",
+      "summary": "Der Bund gibt für das Beethoven-Jubiläum 2,3 Millionen Euro. Die Mitteilung verbindet die Förderung mit einer Ausstellung und dem Blick auf das Beethoven-Jahr 2027.",
+      "detail_summary": "Nach Angaben der Bundesregierung fördert der Bund das Beethoven-Jubiläum mit 2,3 Millionen Euro. Ein Teil davon fließt an das Beethoven-Haus Bonn, dazu kommen weitere vom Bund geförderte Projekte rund um 2027. Die Mitteilung nennt als Anlass den 200. Todestag Ludwig van Beethovens und verweist auf die eröffnete Sonderausstellung „Beethoven by Warhol“. Sachlich neu ist damit eine konkrete Finanzzusage für Kulturprogramme mit festem Zeithorizont. Die Relevanz liegt vor allem in der Zustandsänderung bei öffentlicher Kulturfinanzierung und Programmplanung, nicht in einer schon eingetretenen Wirkung. Offen bleibt, welche Projekte außer dem Beethoven-Haus und dem Beethovenfest Bonn konkret folgen und wie groß ihr Reichweite- oder Struktur-Effekt am Ende ausfällt.",
+      "why_relevant": "Die Meldung enthält eine konkrete Bundesförderung mit beziffertem Umfang und einen klaren Bezug auf das Beethoven-Jahr 2027. Das ist neue Zustandsinformation zu öffentlicher Kulturfinanzierung und Programmplanung.",
+      "topic": [
+        "Europa",
+        "Demokratie"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "rationale": "Die Förderung verändert die finanzielle Ausstattung kultureller Angebote und kann Zugänge zu Veranstaltungen und Inhalten erweitern."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle nennt keine direkten Umwelt- oder Klimawirkungen."
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "chance",
+          "rationale": "Öffentliche Kulturförderung betrifft staatliche Mittelverwendung und kulturelle Teilhabe, aber kein direktes demokratisches Verfahren."
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Bundesförderung",
+            "value": "2,3",
+            "unit": "Millionen Euro",
+            "context": "Gesamtsumme für das Beethoven-Jubiläum",
+            "claim_id": "wt-a271a35a2b58f666-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "kinder_jugend",
+          "verbraucherinnen",
+          "kommunen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T10:07:26.127Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T08:45:00.000Z",
+      "last_updated": "2026-09-08T10:10:48.995Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-b4d3ac72ac2823597706",
+      "case_file": null,
+      "source_published_at": "2026-09-08T08:45:00.000Z",
+      "published_at": "2026-09-08T10:10:48.995Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundesregierung-presse"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wann die angekündigten weiteren vom Bund geförderten Projekte zum Beethoven-Gedenkjahr umgesetzt werden.",
+          "source_id": "bundesregierung-presse",
+          "expected_by": null,
+          "measurable_indicator": "Weitere Förderbescheide, Projektstarts oder veröffentlichte Programmteile.",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4a455147dd0fe136",
+          "announced_at": "2026-09-08T08:45:00.000Z",
+          "follow_up_date": "2026-09-15T10:10:48.995Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Pressemitteilungen der Bundesregierung",
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/bund-foerdert-beethoven-jubilaeum-mit-2-3-millionen-euro-staatsminister-weimer-2027-wird-beethoven-jahr--2451688",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T08:45:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-cd1680b82662577d",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "alkoholsteuer-soll-um-20-prozent-angehoben-werden-62577d",
+      "title": "Alkoholsteuer soll um 20 Prozent angehoben werden",
+      "source_summary": "Die Bundestagsmeldung beschreibt einen von der Bundesregierung eingebrachten Entwurf für ein Haushaltsbegleitgesetz. Kernpunkt ist die geplante Erhöhung der Alkoholsteuer um 20 Prozent; auch Schaumwein-, Zwischenerzeugnis- und Alkopopsteuer sollen um jeweils 20 Prozent steigen. Die Redaktion nennt dazu erwartete Mehreinnahmen von 380 Millionen Euro im kommenden Jahr, 455 Millionen Euro für 2028 und rund 2,2 Milliarden Euro von 2027 bis 2031.\n\nAußerdem enthält der Entwurf Änderungen im Klima- und Transformationsfondsgesetz, bei der Schuldenrückzahlung eines Bundeswehr-Sondervermögens, beim Sofortzuschlag im Kinderzuschlag und beim Bundeszuschuss zur Rentenversicherung. Die Meldung bleibt auf den Gesetzentwurf und die darin genannten Finanzwirkungen begrenzt.",
+      "summary": "Die Bundesregierung legt einen Gesetzentwurf vor, der die Alkoholsteuer und weitere Verbrauchsteuern um 20 Prozent anheben soll. Zugleich werden Haushaltswirkungen und mehrere weitere Budgetmaßnahmen genannt.",
+      "detail_summary": "Der Kern der Meldung ist ein neuer Gesetzentwurf mit klar bezifferten Steuer- und Haushaltsänderungen. Die Alkoholsteuer sowie mehrere verwandte Steuern sollen um 20 Prozent steigen; die Bundesregierung nennt dafür konkrete Mehreinnahmen und weitere Einspar- und Umschichtungswirkungen. Das ist materiell relevant, weil es Preise, staatliche Einnahmen und Budgetspielräume berührt und damit mehrere Bereiche gleichzeitig verändert. Ein möglicher Wirkpfad läuft über höhere Steuerlasten und veränderte Anreize im Konsum sowie über die Umverteilung von Einnahmen im Bundeshaushalt. Ob und wie stark sich daraus tatsächlich Verhaltens- oder Verteilungswirkungen ergeben, bleibt aus dieser Meldung offen, weil sie nur den Entwurf und die erwarteten Finanzwirkungen belegt.",
+      "why_relevant": "Der Entwurf ändert Steuersätze und Haushaltsströme und kann damit Preise, Staatseinnahmen und Verteilung im Bundeshaushalt spürbar verschieben.",
+      "topic": [
+        "Finanzen",
+        "Politik"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Höhere Verbrauchsteuern können Preise und Kaufentscheidungen verändern; zugleich nennt die Quelle auch Entlastungs- und Konsolidierungseffekte für den Staatshaushalt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Umweltbezug ist in der Quelle nur indirekt über den Klima- und Transformationsfonds angelegt; konkrete ökologische Folgen werden nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Es geht um einen Regierungsentwurf mit haushaltspolitischen Folgen; das betrifft parlamentarische Entscheidung und öffentliche Budgetkontrolle, ohne dass schon eine endgültige Regelung vorliegt."
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "verbraucherinnen",
+          "unternehmen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T10:07:26.127Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T07:44:00.000Z",
+      "last_updated": "2026-09-08T10:10:29.508Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-08595b0b82571b42d895",
+      "case_file": null,
+      "source_published_at": "2026-09-08T07:44:00.000Z",
+      "published_at": "2026-09-08T10:10:29.508Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-hib"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Der Bundestag berät oder beschließt den Gesetzentwurf weiter.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Nächste parlamentarische Schritte oder Beschlusslage zum Haushaltsbegleitgesetz",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0a1251ef22884b9b",
+          "announced_at": "2026-09-08T07:44:00.000Z",
+          "follow_up_date": "2026-09-15T10:10:29.508Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die angekündigten Mehreinnahmen werden im Haushaltsvollzug ausgewiesen.",
+          "source_id": "bundestag-hib",
+          "expected_by": null,
+          "measurable_indicator": "Ausgewiesene Einnahmen aus Alkohol-, Schaumwein-, Zwischen- und Alkopopsteuer",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-4f64bf3002d8a266",
+          "announced_at": "2026-09-08T07:44:00.000Z",
+          "follow_up_date": "2026-09-15T10:10:29.508Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Heute im Bundestag",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210796",
+          "source_type": "official_rss",
+          "published_at": "2026-09-08T07:44:00.000Z",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-26f87ea8d0b41af4",
       "title_image": {
