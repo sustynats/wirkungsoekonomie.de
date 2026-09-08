@@ -4,12 +4,20 @@ export const isBatchCostRun = run => run.ai?.processing_mode === 'batch';
 export const isEditorialCostRun = run => String(run.run_id).startsWith('editorial-');
 export const isImmediateNewsCostRun = run => !isBatchCostRun(run) && !isEditorialCostRun(run);
 
+// A free local refusal may precede the actual Batch admission by a day or a
+// month. Preserve started_at as journal history; use only an attested cost clock.
+export function usageCostStartedAt(run) {
+  if (isBatchCostRun(run) && ['provider_created_at', 'local_reservation_created_at'].includes(run.cost_started_at_basis)
+    && typeof run.cost_started_at === 'string' && Number.isFinite(Date.parse(run.cost_started_at))) return run.cost_started_at;
+  return run.started_at;
+}
+
 export function operatingCostSummary(usage, startedAt, fx, now) {
   const start = Date.parse(startedAt);
   const end = Date.parse(now);
   if (!Number.isFinite(start) || !Number.isFinite(end) || start > end) return null;
   const runs = [...new Map((usage?.runs || []).map(run => [run.run_id || `${run.started_at}:${run.berlin_slot}`, run])).values()]
-    .filter(run => Date.parse(run.started_at) >= start && Date.parse(run.started_at) <= end);
+    .filter(run => Date.parse(usageCostStartedAt(run)) >= start && Date.parse(usageCostStartedAt(run)) <= end);
   const fxAge = end - Date.parse(fx?.rate_date);
   const validFx = Number.isFinite(fxAge) && fxAge >= 0 && fxAge <= 7 * 86400000
     && Number.isFinite(fx?.rate_usd_per_eur) && fx.rate_usd_per_eur >= 0.5 && fx.rate_usd_per_eur <= 2;

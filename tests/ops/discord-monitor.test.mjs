@@ -37,6 +37,19 @@ test('Berlin daily boundary honors winter, summer and DST transitions', () => {
   assert.equal(berlinParts('2026-03-29T06:00:00Z').hour, 8);
   assert.equal(berlinParts('2026-10-25T07:00:00Z').hour, 8);
 });
+test('daily Batch costs use admission after a free refusal and preserve the old journal date', () => {
+  const d = fixture();
+  d.usage.runs = [{ run_id: 'media-backfill-batch-later', started_at: '2026-09-03T20:00:00Z',
+    cost_started_at: '2026-09-03T23:30:00Z', cost_started_at_basis: 'provider_created_at',
+    ai: { requests: 1, processing_mode: 'batch', estimated_cost_usd: .006, token_source: 'batch_provider_usage' } },
+  { run_id: 'news-yesterday', started_at: '2026-09-03T20:00:00Z', ai: { requests: 1, estimated_cost_usd: .03 } }];
+  const before = structuredClone(d);
+  const summary = summarizeNews(d, now);
+  assert.equal(summary.usdToday, .006);
+  assert.equal(summary.usdYesterday, .03);
+  assert.equal(summary.usdMonth, .036);
+  assert.deepEqual(d, before);
+});
 test('daily delivery queues once, not before eight, and retries via durable outbox', () => {
   const summary = summarizeNews(fixture(), now);
   let s = advanceState(null, healthy, summary, '2026-09-04T05:59:00Z');

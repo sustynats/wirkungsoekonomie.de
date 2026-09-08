@@ -44,11 +44,29 @@ function deferred(code, key) { return Object.assign(new Error(code), { batchDefe
 export function createNewsBatchClient({ state, usage, save, apiUrl, authToken, now, fetchImpl = fetch, canSubmit = () => true }) {
   state.batch_jobs ||= {};
   const jobs = state.batch_jobs;
-  const report = { submitted: 0, pending: 0, completed: 0, failed: 0, applied: 0, polling_errors: 0 };
+  const report = { submitted: 0, pending: 0, completed: 0, failed: 0, applied: 0, polling_errors: 0, timing_reconciled: 0 };
   const url = new URL(apiUrl || 'https://130.162.217.58.sslip.io/api/news-analysis');
   url.pathname = '/api/news-analysis/batches'; url.search = ''; url.hash = '';
   const persist = () => save(state, usage);
   const usageId = job => `${job.kind === 'editorial_background' ? 'editorial' : 'media-backfill'}-batch-${job.key}`;
+  const validTime = value => typeof value === 'string' && Number.isFinite(Date.parse(value)) && Date.parse(value) <= Date.parse(now);
+  const sameJob = (job, remote) => remote && remote.key === job.key && remote.fingerprint === job.fingerprint
+    && remote.story_id === job.story_id && remote.kind === job.kind && remote.processing_mode === 'batch';
+  function accountTime(row, at, basis, active = false) {
+    if (!validTime(at)) return false;
+    const previous = row.cost_started_at || row.started_at;
+    const clearCompletion = active && row.completed_at != null;
+    const changed = row.cost_started_at !== at || row.cost_started_at_basis !== basis || clearCompletion;
+    if (previous !== at || clearCompletion) {
+      (row.batch_timing_history ||= []).push({ recorded_at: now, reason: 'batch_cost_clock_reconciliation',
+        started_at: row.started_at, cost_started_at: previous, cost_started_at_basis: row.cost_started_at_basis || 'legacy_started_at',
+        completed_at: row.completed_at ?? null, batch_status: row.batch_status ?? null,
+        requests: row.ai?.requests ?? null, estimated_cost_usd: row.ai?.estimated_cost_usd ?? null });
+    }
+    row.cost_started_at = at; row.cost_started_at_basis = basis;
+    if (clearCompletion) row.completed_at = null;
+    return changed;
+  }
   function account(job, remote) {
     const rows = usage.runs ||= [];
     let row = rows.find(entry => entry.run_id === usageId(job));
@@ -69,13 +87,20 @@ export function createNewsBatchClient({ state, usage, save, apiUrl, authToken, n
       else if (remote.estimated_cost_usd === 0 && remote.status === 'failed') cost = 0;
       if (cost !== remote.estimated_cost_usd) throw new Error('BATCH_BILLING_MISMATCH');
     }
+    // Transport metadata, never model text, supplies the paid job's clock.
+    // Before acknowledgement retain a conservative local reservation timestamp.
+    if (remote && !remote.not_submitted && validTime(remote.created_at)) {
+      accountTime(row, remote.created_at, 'provider_created_at', !terminal.has(remote.status));
+    } else if (!remote || row.cost_started_at_basis !== 'provider_created_at') {
+      accountTime(row, job.created_at, 'local_reservation_created_at', !terminal.has(remote?.status));
+    }
     const old = row.ai.estimated_cost_usd;
     row.ai = { requests: remote?.not_submitted ? 0 : 1, provider: 'Oracle WOeK-KI API', model: 'gpt-5.4-mini', processing_mode: 'batch',
       input_tokens: known ? remote.usage?.input_tokens || 0 : 0, output_tokens: known ? remote.usage?.output_tokens || 0 : 0,
       estimated_cost_usd: cost, token_source: known ? 'batch_provider_usage' : 'batch_reserved_pending', batch_key: job.key };
     row.batch_status = remote?.status || 'submission_unknown';
     if (known && old !== undefined && old !== cost) row.billing_reconciliation = { previous_reserved_usd: old, reconciled_at: now, billed_usd: cost };
-    if (terminal.has(remote?.status)) row.completed_at = now;
+    if (terminal.has(remote?.status) && !row.completed_at) row.completed_at = now;
   }
   async function request(path, input) {
     if (!authToken) throw Object.assign(new Error('BATCH_AUTH_MISSING'), { requestAttempts: 0, providerNotCalled: true });
@@ -89,7 +114,7 @@ export function createNewsBatchClient({ state, usage, save, apiUrl, authToken, n
     return payload.jobs || payload.job;
   }
   function accept(job, remote) {
-    if (!remote || remote.key !== job.key || remote.fingerprint !== job.fingerprint || remote.story_id !== job.story_id || remote.kind !== job.kind || remote.processing_mode !== 'batch') throw new Error('BATCH_RESULT_IDENTITY_MISMATCH');
+    if (!sameJob(job, remote)) throw new Error('BATCH_RESULT_IDENTITY_MISMATCH');
     account(job, remote);
     Object.assign(job, { status: remote.status, billing_status: remote.billing_status, next_poll_at: new Date(Date.parse(now) + 15 * 60000).toISOString(), checked_at: now, error: remote.error || null });
     persist();
@@ -100,7 +125,19 @@ export function createNewsBatchClient({ state, usage, save, apiUrl, authToken, n
     try {
       const recovered = await request('');
       for (const remote of Array.isArray(recovered) ? recovered : []) {
-        if (jobs[remote.key] || !/^[a-f0-9]{64}$/.test(remote.key || '') || !/^[a-f0-9]{64}$/.test(remote.fingerprint || '') || !/^[a-f0-9]{64}$/.test(remote.prompt_hash || '') || !activeKinds.has(remote.kind) || !Number.isFinite(Date.parse(remote.created_at)) || !Number.isInteger(remote.attempt) || remote.attempt < 0 || remote.attempt > 2) continue;
+        if (!remote || !/^[a-f0-9]{64}$/.test(remote.key || '') || !/^[a-f0-9]{64}$/.test(remote.fingerprint || '') || !/^[a-f0-9]{64}$/.test(remote.prompt_hash || '') || !activeKinds.has(remote.kind) || !validTime(remote.created_at) || !Number.isInteger(remote.attempt) || remote.attempt < 0 || remote.attempt > 2) continue;
+        const existing = jobs[remote.key];
+        if (existing) {
+          // Also repair already settled/applied legacy rows, using the metadata
+          // list we fetch anyway. Never reapply an answer or rewrite its bill.
+          const row = (usage.runs || []).find(entry => entry.run_id === usageId(existing));
+          if (sameJob(existing, remote) && remote.prompt_hash === existing.prompt_hash && remote.attempt === existing.attempt
+            && row?.ai?.processing_mode === 'batch' && row.ai.batch_key === existing.key && row.ai.requests > 0
+            && accountTime(row, remote.created_at, 'provider_created_at', !terminal.has(existing.status) && !terminal.has(remote.status))) {
+            report.timing_reconciled += 1; persist();
+          }
+          continue;
+        }
         const job = jobs[remote.key] = { key: remote.key, kind: remote.kind, story_id: remote.story_id, fingerprint: remote.fingerprint, prompt_hash: remote.prompt_hash, attempt: remote.attempt, created_at: remote.created_at, recovered_at: now };
         accept(job, remote);
         // Poll recovered active jobs now, not one scheduler interval later.

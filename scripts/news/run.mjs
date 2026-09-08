@@ -37,7 +37,7 @@ import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigge
 import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
 import { bumpCandidateFunnel, bumpSourceFunnel, createSourceFunnel, finalizeSourceFunnel } from "./source-funnel.mjs";
 import { isolatedSourceThrottleWithRecentCoverage, sourceCoverageDegraded } from "./check-run-health.mjs";
-import { operatingCostSummary } from "./operating-cost.mjs";
+import { operatingCostSummary, usageCostStartedAt } from "./operating-cost.mjs";
 import { regionalCoverage } from "./regional-coverage.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
@@ -646,7 +646,7 @@ export function aiRequestsInWindow(usage, now, windowMinutes = 60) {
   const cutoff = nowMs - Math.max(1, Number(windowMinutes || 60)) * 60 * 1000;
   return (usage.runs || [])
     .filter((run) => {
-      const startedAt = Date.parse(run.started_at || 0);
+      const startedAt = Date.parse(usageCostStartedAt(run) || 0);
       return Number.isFinite(startedAt) && startedAt > cutoff && startedAt <= nowMs;
     })
     .reduce((sum, run) => {
@@ -734,10 +734,11 @@ export function aiDeferralReason(candidate, stage, remainingCalls) {
 
 export function retainUsageHistory(runs, now) {
   const month = String(now).slice(0, 7);
+  const current = run => String(run.started_at).startsWith(month) || String(usageCostStartedAt(run)).startsWith(month);
   // Frequent headless runs must not erase this month's spend after 400 runs.
   return [
-    ...runs.filter((run) => !String(run.started_at).startsWith(month)).slice(-400),
-    ...runs.filter((run) => String(run.started_at).startsWith(month)),
+    ...runs.filter((run) => !current(run)).slice(-400),
+    ...runs.filter(current),
   ];
 }
 

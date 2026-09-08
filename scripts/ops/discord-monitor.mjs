@@ -5,7 +5,7 @@ import { createHash } from 'node:crypto';
 import { buildCaseFiles } from '../news/case-files.mjs';
 import { reportOperationallyHealthy, sourceCoverageDegraded } from '../news/check-run-health.mjs';
 import { summarizeSourceFunnel } from '../news/source-funnel.mjs';
-import { operatingCostSummary, isImmediateNewsCostRun } from '../news/operating-cost.mjs';
+import { operatingCostSummary, isImmediateNewsCostRun, usageCostStartedAt } from '../news/operating-cost.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const MINUTE = 60_000;
@@ -54,7 +54,7 @@ export function summarizeNews({ report, usage, stories, liveFeed }, now) {
   const today = berlinParts(now).date;
   const yesterday = new Date(Date.parse(`${today}T12:00:00Z`) - 86_400_000).toISOString().slice(0, 10);
   const rows = uniqueRuns(usage);
-  const period = prefix => rows.filter(r => r.started_at && berlinParts(r.started_at).date.startsWith(prefix));
+  const period = prefix => rows.filter(r => Number.isFinite(Date.parse(usageCostStartedAt(r))) && berlinParts(usageCostStartedAt(r)).date.startsWith(prefix));
   const costs = list => list.reduce((sum, r) => sum + (Number.isFinite(r.ai?.estimated_cost_usd) ? r.ai.estimated_cost_usd : 0), 0);
   const published = (date) => stories.filter(s => s.published_at && berlinParts(s.published_at).date === date).length;
   const todayRuns = period(today);

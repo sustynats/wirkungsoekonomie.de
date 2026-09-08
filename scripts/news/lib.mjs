@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { usageCostStartedAt } from "./operating-cost.mjs";
 import { numberTokens, sourceNumberTokens, persistedNumericEvidence } from "./numeric-evidence.mjs";
 import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
 import { politicalDevelopmentFor, materialDevelopmentReview } from "./political-development.mjs";
@@ -1260,7 +1261,7 @@ export function estimateUsage(promptChars, answerChars, model = "gpt-5.5", rates
 
 export function monthlyUsage(usage, isoMonth) {
   return (usage.runs || [])
-    .filter((run) => String(run.started_at || "").startsWith(isoMonth))
+    .filter((run) => String(usageCostStartedAt(run) || "").startsWith(isoMonth))
     .reduce((sum, run) => sum + Number(run.ai?.estimated_cost_usd || 0), 0);
 }
 
