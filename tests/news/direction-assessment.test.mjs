@@ -1,17 +1,73 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { directionAssessmentErrors, directionInputDiagnostics, dimensionAssessment, DIRECTION_ASSESSMENT_VERSION, DIRECTION_SEPARATION_RULE } from '../../scripts/news/direction-assessment.mjs';
+import { directionAssessmentErrors, directionInputDiagnostics, dimensionAssessment, normalizeEmptyDirectionPaths, DIRECTION_ASSESSMENT_VERSION, DIRECTION_SEPARATION_RULE } from '../../scripts/news/direction-assessment.mjs';
 import { renderDimensionMeters, renderImpactPath, sanitizeVisuals } from '../../scripts/news/visuals.mjs';
 import { buildAnalysisPrompt, validateAnalysis } from '../../scripts/news/lib.mjs';
 import { analysisValidationDiagnostics, shouldRetryQualityGate } from '../../scripts/news/run.mjs';
 import { editorialJudgmentErrors } from '../../scripts/news/editorial-judgment.mjs';
 import { analysisReaderCopy } from '../../scripts/news/reader-copy.mjs';
+import { resolveEvidenceReferences, sourceEvidenceSegments } from '../../scripts/news/newsroom.mjs';
 
 const sources = [{source_id:'source-999'}];
 const fixture = () => ({direction_assessment_version:DIRECTION_ASSESSMENT_VERSION,
   ...Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',tendency:'risiko',direction_basis:'assessed',rationale:'Fällt die spezialisierte Beratung weg, sinkt die erreichbare Hilfe. Eintritt und Ausmaß sind offen.'}]))});
 const mixed = () => ({positive_path:{mechanism:'Zusätzliche Beratung erleichtert den Zugang zu Hilfe.',source_ids:['source-999']},negative_path:{mechanism:'Gleichzeitiger Mittelentzug verkürzt die Öffnungszeiten.',source_ids:['source-999']}});
+
+test('exact empty optional path objects normalize to null without changing the judgment',()=>{
+  const a=fixture();a.human.tendency='chance';a.planet.tendency='offen';a.planet.direction_basis='no_path';
+  for(const key of ['human','planet','democracy'])Object.assign(a[key],{positive_path:{mechanism:'',source_ids:[]},negative_path:{mechanism:'  ',source_ids:[]}});
+  const original=directionInputDiagnostics(a,sources),rationales=Object.values(a).filter(x=>x?.rationale).map(x=>x.rationale);
+  assert.equal(normalizeEmptyDirectionPaths(a).length,6);
+  assert.deepEqual(normalizeEmptyDirectionPaths(a),[], 'idempotent');
+  assert.deepEqual(directionAssessmentErrors(a,sources,{requireCurrent:true}),[]);
+  assert.deepEqual(Object.values(a).filter(x=>x?.rationale).map(x=>x.rationale),rationales);
+  assert.equal(original.planet.positive_path.mechanism_chars,0);
+  assert.equal(analysisValidationDiagnostics(a,'',{sources},undefined,original).direction_input.planet.positive_path.shape,'object');
+});
+
+test('empty-path normalization never deletes incomplete evidence, content, extra fields or mixed requirements',()=>{
+  for(const path of [{mechanism:'',source_ids:['unknown']},{mechanism:'Noch offen',source_ids:[]},{mechanism:'',source_ids:[],extra:'content'},{mechanism:null,source_ids:[]},{mechanism:'',source_ids:null},{},'null',[],{mechanism:'string',source_ids:['string']}]) {
+    const a=fixture();a.human.positive_path=path;const before=JSON.stringify(a);
+    assert.deepEqual(normalizeEmptyDirectionPaths(a),[]);assert.equal(JSON.stringify(a),before);
+    assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'));
+  }
+  const a=fixture();a.human.tendency='gemischt';a.human.positive_path={mechanism:'',source_ids:[]};a.human.negative_path={mechanism:'',source_ids:[]};
+  assert.deepEqual(normalizeEmptyDirectionPaths(a),[]);
+  assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_MIXED_PATHS_REQUIRED:human'));
+  delete a.direction_assessment_version;a.human.tendency='risiko';assert.deepEqual(normalizeEmptyDirectionPaths(a),[], 'no historical migration');
+});
+
+const referenceStory=()=>({sources:[{source_id:'source-999',url:'https://example.org/one',title:'Die Beratung soll zusätzliche Öffnungszeiten erhalten.',summary:'Der Bericht beschreibt weitere geplante Veränderungen.'},{source_id:'source-other',url:'https://example.org/two',title:'Die Förderung einer anderen Beratungsstelle soll entfallen.'}]});
+
+test('path evidence aliases resolve only through the actual supplied story catalog',()=>{
+  const a=fixture();a.human.tendency='gemischt';Object.assign(a.human,mixed());
+  a.human.positive_path.source_ids=['e0_0','e0_1','source-999'];a.human.negative_path.source_ids=['e1_0'];
+  const story=referenceStory(),before=structuredClone(story),diagnostics={};
+  const mechanisms=[a.human.positive_path.mechanism,a.human.negative_path.mechanism];
+  resolveEvidenceReferences(a,story,['e0_0','e0_1','e1_0'],diagnostics);
+  assert.deepEqual(a.human.positive_path.source_ids,['source-999'], 'multiple passages are still one source');
+  assert.deepEqual(a.human.negative_path.source_ids,['source-other']);
+  assert.deepEqual([a.human.positive_path.mechanism,a.human.negative_path.mechanism],mechanisms);
+  assert.deepEqual(directionAssessmentErrors(a,story.sources,{requireCurrent:true}),[]);
+  assert.deepEqual(diagnostics,{supplied_evidence_refs:3,unknown_refs:0,resolved_refs:3,resolved_paths:2});
+  assert.deepEqual(story,before);const after=JSON.stringify(a);resolveEvidenceReferences(a,story,['e0_0']);assert.equal(JSON.stringify(a),after);
+});
+
+test('unknown, unsent, foreign and malformed path references remain rejected without guessing',()=>{
+  const story=referenceStory();
+  const hashId=sourceEvidenceSegments(story.sources[0])[0].evidence_id;
+  for(const refs of [['e0_1'],[hashId],['e9_0'],['e0_0','unknown'],['0'],[0],[null],[{evidence_id:'e0_0'}],['https://example.org/one']]) {
+    const a=fixture();a.human.tendency='gemischt';Object.assign(a.human,mixed());a.human.positive_path.source_ids=refs;
+    const before=JSON.stringify(a.human.positive_path),d={};
+    resolveEvidenceReferences(a,story,['e0_0','e9_0'],d);
+    assert.equal(JSON.stringify(a.human.positive_path),before,'no partial reference repair');
+    assert.ok(directionAssessmentErrors(a,story.sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'));
+    assert.ok(d.unknown_refs>0);assert.equal(d.resolved_refs,0);
+  }
+  const a=fixture();a.human.positive_path={mechanism:'',source_ids:['e0_0']};resolveEvidenceReferences(a,story,['e0_0']);
+  assert.ok(directionAssessmentErrors(a,story.sources).includes('AI_DIRECTION_PATH_SOURCE_INVALID:human'),'resolving a reference does not supply a missing mechanism');
+});
 
 test('direction diagnostics retain only shape and counts, never provider text or source IDs',()=>{
   const a=fixture();
