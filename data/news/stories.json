@@ -1,8 +1,510 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T02:37:05.212Z",
-  "updated_at": "2026-09-08T03:06:36.030Z",
+  "updated_at": "2026-09-08T03:22:02.400Z",
   "stories": [
+    {
+      "story_id": "wt-7d63335e9280ea4e",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "3e810f88cac10883c68f5d1413fc5a2fd854dba738b0b3dd0ca6f7a60dfbbb32",
+        "first_failed_at": "2026-09-08T03:22:02.400Z",
+        "failed_at": "2026-09-08T03:22:02.400Z",
+        "retry_after": "2026-09-08T03:37:02.400Z",
+        "retry_count": 1
+      },
+      "slug": "fast-obdachlos-jetzt-lokfuhrer-renes-weg-ins-leben-80ea4e",
+      "title": "Fast obdachlos, jetzt Lokführer: Renés Weg ins Leben",
+      "first_seen": "2026-09-08T03:02:00.000Z",
+      "last_updated": "2026-09-08T03:02:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "wdr-nachrichten",
+          "publisher": "WDR",
+          "url": "https://www1.wdr.de/nrw/bielefeld/obdachlos-hilfsangebote-bahn-lokfuehrer-100.html",
+          "title": "Fast obdachlos, jetzt Lokführer: Renés Weg ins Leben",
+          "summary": "Mit Anfang 40 droht René Breuers die Obdachlosigkeit. Dank Unterstützung und Willenskraft kriegt er die Kurve und wird Lokführer.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T03:02:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "50c63a1bd70f2a5d4a8b0dd2260e94d3cc8ba14fbcded574c566685e1ef8d291",
+          "source_item_id": "fb9da6fc4ff329736ee31b95d591b5f5864a4d4e15f86970f984e5c591f67c6c",
+          "publisher_id": "wdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Nordrhein-Westfalen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T03:02:00.000Z",
+          "ingested_at": "2026-09-08T03:22:02.400Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7d63335e9280ea4e-claim-01",
+          "story_id": "wt-7d63335e9280ea4e",
+          "claim": "Fast obdachlos, jetzt Lokführer: Renés Weg ins Leben: Mit Anfang 40 droht René Breuers die Obdachlosigkeit. Dank Unterstützung und Willenskraft kriegt er die Kurve und wird Lokführer.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T03:22:02.400Z"
+        }
+      ],
+      "content_hash": "4538873e5eb8b18c9294b65a9ac17c9d92bfe0e4f3d9c3de10ed8ed8dc4e4da5",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T03:37:02.400Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T03:22:02.400Z",
+      "event_first_seen_at": "2026-09-08T03:22:02.400Z",
+      "event_detected_at": "2026-09-08T03:22:02.400Z",
+      "event_id": "event-07defb767e038183b565",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.04,
+        "detection_delay_minutes": 20.04,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T03:22:02.400Z",
+        "fingerprint": "f90cf15b40073ea4efad11ee13f591455a9b282cb18fd2f23c136b2b20216d83",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T03:22:02.400Z",
+      "rejection": {
+        "at": "2026-09-08T03:22:02.400Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-3832ac28950296cb",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "fc2c4a4f18ef3e54b305f839ed8845efa0be4c05c9355952ca5858372794033c",
+        "first_failed_at": "2026-09-08T03:22:02.400Z",
+        "failed_at": "2026-09-08T03:22:02.400Z",
+        "retry_after": "2026-09-08T03:37:02.400Z",
+        "retry_count": 1
+      },
+      "slug": "was-schuler-konnen-pisa-studie-was-ist-das-0296cb",
+      "title": "Was Schüler können: Pisa-Studie: Was ist das?",
+      "first_seen": "2026-09-08T03:00:06.000Z",
+      "last_updated": "2026-09-08T03:01:43.000Z",
+      "topic": [
+        "Gesellschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/deutschland/was-schueler-koennen--pisa-studie--was-ist-das--38218244.html",
+          "title": "Was Schüler können: Pisa-Studie: Was ist das?",
+          "summary": "Die internationale Bildungsvergleichsstudie der OECD testet regelmäßig Kenntnisse in Lesen, Mathematik und Naturwissenschaften. Die allererste Ausgabe aus dem Jahr 2000 ist vielen im Gedächtnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T03:00:06.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "00ffd4d588c51b5bdc3e32521f7fbcb4a4a730f9175b3fdc72e9e795dfdbf968",
+          "source_item_id": "9a59c414dbff74c0781c54b478b78bcbd04adc6f4e7bd2f640f06015966d27a9",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T03:00:06.000Z",
+          "ingested_at": "2026-09-08T03:22:02.400Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-was-schuler-konnen-16028830.html",
+          "title": "Was Schüler können: Pisa-Studie: Was ist das?",
+          "summary": "Die internationale Bildungsvergleichsstudie der OECD testet regelmäßig Kenntnisse in Lesen, Mathematik und Naturwissenschaften. Die allererste Ausgabe aus dem Jahr 2000 ist vielen im Gedächtnis.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T03:01:43.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6302e5c86d13a6f21c734fe2dc9388b545de6a665c2221d9097711abc8c29ad2",
+          "source_item_id": "5f6734f02d52ca58e44c6653f5ce5a89b0cfd15a6efe95a3342681c27d4c5e95",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T03:01:43.000Z",
+          "ingested_at": "2026-09-08T03:22:02.400Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3832ac28950296cb-claim-01",
+          "story_id": "wt-3832ac28950296cb",
+          "claim": "Was Schüler können: Pisa-Studie: Was ist das?: Die internationale Bildungsvergleichsstudie der OECD testet regelmäßig Kenntnisse in Lesen, Mathematik und Naturwissenschaften. Die allererste Ausgabe aus dem Jahr 2000 ist vielen im Gedächtnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T03:22:02.400Z"
+        },
+        {
+          "claim_id": "wt-3832ac28950296cb-claim-02",
+          "story_id": "wt-3832ac28950296cb",
+          "claim": "Was Schüler können: Pisa-Studie: Was ist das?: Die internationale Bildungsvergleichsstudie der OECD testet regelmäßig Kenntnisse in Lesen, Mathematik und Naturwissenschaften. Die allererste Ausgabe aus dem Jahr 2000 ist vielen im Gedächtnis.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T03:22:02.400Z"
+        }
+      ],
+      "content_hash": "939929fd629a8bfbc713afe71b2a42438137882b26a1e05cf702098644b8eac6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T03:37:02.400Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T03:22:02.400Z",
+      "event_first_seen_at": "2026-09-08T03:22:02.400Z",
+      "event_detected_at": "2026-09-08T03:22:02.400Z",
+      "event_id": "event-35841f914f8557698d29",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft",
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 20.323333333333334,
+        "detection_delay_minutes": 20.323333333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T03:22:02.400Z",
+        "fingerprint": "dc6225db53cbc7b76c91deba0a2f5238528efedf124a753f49f4dad05ccd168e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T03:22:02.400Z",
+      "rejection": {
+        "at": "2026-09-08T03:22:02.400Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-36d4c60b2d978034",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "0803726fa0816791d29a5e7532a85a7f664883bbf642963810c0631a95b5834f",
+        "first_failed_at": "2026-09-08T03:22:02.400Z",
+        "failed_at": "2026-09-08T03:22:02.400Z",
+        "retry_after": "2026-09-08T03:37:02.400Z",
+        "retry_count": 1
+      },
+      "slug": "krieg-in-der-ukraine-explosionen-in-kyjiw-russland-beendet-feuerpause-978034",
+      "title": "Krieg in der Ukraine: Explosionen in Kyjiw – Russland beendet Feuerpause",
+      "first_seen": "2026-09-08T03:01:00.000Z",
+      "last_updated": "2026-09-08T03:01:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/panorama/russland-greift-ukraine-erneut-an---explosionen-in-kyjiw-38218240.html",
+          "title": "Krieg in der Ukraine: Explosionen in Kyjiw – Russland beendet Feuerpause",
+          "summary": "Kaum sind US-Präsident Trumps Unterhändler aus Kyjiw abgereist, feuert Russland wieder auf die Hauptstadt der Ukraine. Die Folgen der nächtlichen Angriffswelle sind noch unklar.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T03:01:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "ceef0f692cdc25c6f4ffeea60b10ef4075285aa4f8bf50cb11d10f0f9a1a33a1",
+          "source_item_id": "21fe28ff35e43eb19fd0f9d8c2fd847050d1095922dfa243e959bf2f5b21c154",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T03:01:00.000Z",
+          "ingested_at": "2026-09-08T03:22:02.400Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-36d4c60b2d978034-claim-01",
+          "story_id": "wt-36d4c60b2d978034",
+          "claim": "Krieg in der Ukraine: Explosionen in Kyjiw – Russland beendet Feuerpause: Kaum sind US-Präsident Trumps Unterhändler aus Kyjiw abgereist, feuert Russland wieder auf die Hauptstadt der Ukraine. Die Folgen der nächtlichen Angriffswelle sind noch unklar.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T03:22:02.400Z"
+        }
+      ],
+      "content_hash": "1409d06176f759bf18b9e90061ceb173f0eb795935f96560e24476e2fe483204",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T03:37:02.400Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T03:22:02.400Z",
+      "event_first_seen_at": "2026-09-08T03:22:02.400Z",
+      "event_detected_at": "2026-09-08T03:22:02.400Z",
+      "event_id": "event-9a5e200559883709ba60",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.04,
+        "detection_delay_minutes": 21.04,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T03:22:02.400Z",
+        "fingerprint": "38a6bcfb1a713ecfe3965e2c85a67f38c60669a7330311a507dc29a35212e11e",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T03:22:02.400Z",
+      "rejection": {
+        "at": "2026-09-08T03:22:02.400Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-6fc066364494ba73",
       "slug": "ukraine-news-ukrainischer-generalstaatsanwalt-tritt-nach-korruptionsvorwurfen-zuruck-94ba73",
@@ -66373,7 +66875,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T02:52:12.365Z",
+          "ingested_at": "2026-09-08T03:22:02.400Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -66434,7 +66936,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T03:06:36.030Z"
+          "checked_at": "2026-09-08T03:22:02.400Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -66454,7 +66956,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T03:06:36.030Z"
+          "checked_at": "2026-09-08T03:22:02.400Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -66470,7 +66972,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T03:06:36.030Z",
+      "updated_at": "2026-09-08T03:22:02.400Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -66510,7 +67012,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1079.7111166666666,
+        "queue_age_minutes": 1095.1506166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -66519,7 +67021,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T03:06:36.030Z",
+        "checked_at": "2026-09-08T03:22:02.400Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -124002,7 +124504,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T03:06:36.030Z",
+          "checked_at": "2026-09-08T03:22:02.400Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -168356,7 +168858,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T03:06:36.030Z",
+          "checked_at": "2026-09-08T03:22:02.400Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

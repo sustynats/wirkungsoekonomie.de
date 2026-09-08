@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T02:38:19.458Z",
+  "updated_at": "2026-09-08T03:23:29.516Z",
   "candidates": [
     {
       "story_id": "wt-6fc066364494ba73",
@@ -85,7 +85,7 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "fe28f54c22f9a5b57cd37d4d218bb05595b82b70e6d4ae5de7f191a34f36c475",
+      "fingerprint": "78002b1d39e5b195d6a13a3b08a9f5b28b9075f1cc6fb1df969a2b489dd9ee8f",
       "status": "ready_for_research",
       "analysis_id": "woek-analysis-3988abd77b8d"
     },
@@ -24165,8 +24165,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T03:06:49.788Z",
-      "next_attempt_at": "2026-09-08T03:21:49.788Z",
+      "last_attempt_at": "2026-09-08T03:23:29.516Z",
+      "next_attempt_at": "2026-09-08T03:38:29.516Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -24188,18 +24188,16 @@
       "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-8802c617d5bb3e85": {
-      "fingerprint": "fe28f54c22f9a5b57cd37d4d218bb05595b82b70e6d4ae5de7f191a34f36c475",
+      "fingerprint": "78002b1d39e5b195d6a13a3b08a9f5b28b9075f1cc6fb1df969a2b489dd9ee8f",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-08T02:38:19.458Z",
-      "next_attempt_at": "2026-09-08T03:08:19.458Z",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-08T03:23:29.516Z",
+      "next_attempt_at": "2026-09-08T03:38:29.516Z",
       "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "AI_PROVIDER_OUTPUT_INVALID"
     }
   }
 }
