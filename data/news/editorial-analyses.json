@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T13:41:12.275Z",
+  "updated_at": "2026-09-08T14:11:43.546Z",
   "candidates": [
     {
       "story_id": "wt-84ac3f26c7762712",
@@ -175,8 +175,8 @@
         "reasons": []
       },
       "fingerprint": "5216043ade26f5f0909c11d727151a9d8700c107006dbff7b6cc08b4f53fa1c5",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-58daf5723737"
     },
     {
       "story_id": "wt-6fc066364494ba73",
@@ -25914,6 +25914,870 @@
           ]
         }
       ]
+    },
+    {
+      "analysis_id": "woek-analysis-58daf5723737",
+      "story_id": "wt-de413d33343f350b",
+      "related_story_ids": [
+        "wt-de413d33343f350b",
+        "wt-8802c617d5bb3e85"
+      ],
+      "related_case_id": null,
+      "slug": "kiew-wieder-unter-beschuss-was-die-neue-angriffswelle-systemisch-auslost-58daf5",
+      "status": "published",
+      "author": {
+        "name": "Natalie Weber",
+        "role": "Methodik & redaktionelle Verantwortung",
+        "image": "/assets/img/people/natalie-weber-woek-analyse.jpg"
+      },
+      "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
+      "method_version": "1.0",
+      "source_fingerprint": "5216043ade26f5f0909c11d727151a9d8700c107006dbff7b6cc08b4f53fa1c5",
+      "candidate_score": 75,
+      "analysis_gain_score": 51,
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 5,
+        "primary_source_count": 0,
+        "cited_claim_count": 8,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "published_at": "2026-09-08T14:11:43.546Z",
+      "updated_at": "2026-09-08T14:11:43.546Z",
+      "version": 1,
+      "editorial_question": "Was bedeutet die Wiederaufnahme der Angriffe auf Kiew nach einer dreitägigen Pause systemisch für Schutz, Versorgung und politische Handlungsfähigkeit – jenseits des unmittelbaren Frontgeschehens?",
+      "analysis_type": "case_analysis",
+      "title": "Kiew wieder unter Beschuss: Was die neue Angriffswelle systemisch auslöst",
+      "subtitle": "Die Meldung zeigt nicht nur neue Zerstörung, sondern auch eine Rückkopplung zwischen Gewalt, Schutzbedarf und staatlicher Belastung.",
+      "teaser": "Nach drei Tagen Pause trifft Kiew wieder ein Angriff. Das ist mehr als eine Einzelmeldung: Es verschiebt Schutzbedarf, bindet Rettungskräfte und kann Eskalationsmuster verstärken.",
+      "seo_description": "Kiew steht nach neuen Angriffen wieder unter Beschuss. Die Analyse zeigt Folgen für Schutz, Versorgung, Eskalation und staatliche Resilienz.",
+      "additional_value": "Der Beitrag trennt die bloße Nachrichtenlage von der systemischen Wirkung: Er zeigt, wie ein erneuter Angriff auf die Hauptstadt zugleich Menschen, Infrastruktur und politische Steuerungsfähigkeit belastet. Er benennt die Rückkopplung zwischen Angriff, Schutzreaktion und möglicher Gegeneskalation, ohne mehr zu behaupten als die Quellen tragen.",
+      "research_summary": "Die Quellenlage ist eng, aber konsistent: Mehrere journalistische Berichte melden, dass Russland die Angriffe auf Kiew nach einer dreitägigen Pause wieder aufgenommen hat. Genannt werden Drohnen- und Raketenangriffe, beschädigte Wohngebäude, Lagerhallen und eine Schule sowie mindestens zwei Tote und sieben Verletzte. Zusätzlich wird auf ukrainische Drohnenangriffe auf Saratow verwiesen. Ein direkter unabhängiger Primärbeleg liegt in dem Material nicht vor; deshalb bleibt die Analyse quellengebunden und markiert die Unsicherheit offen.",
+      "sections": [
+        {
+          "id": "lage",
+          "title": "Lage: Ein Angriff, der nicht nur Gebäude trifft",
+          "paragraphs": [
+            "Konkreter Ausgangspunkt ist schlicht: Kiew wurde nach einer dreitägigen Pause wieder angegriffen. Die Meldungen nennen Drohnen und ballistische Raketen. Genannt werden beschädigte Wohngebäude, Lagerhallen und eine Schule. Außerdem ist von mindestens zwei Toten und sieben Verletzten die Rede. Das ist zunächst keine abstrakte Lagebeschreibung, sondern eine unmittelbare Zustandsänderung: Menschen werden verletzt oder getötet, Räume werden beschädigt, Schutzbedarf steigt.",
+            "Für die Einordnung ist wichtig, dass diese Meldung nicht nur auf ein Gefecht zeigt, sondern auf eine Veränderung im Alltag der Stadt. Wenn Wohnhäuser und öffentliche Einrichtungen betroffen sind, verschiebt sich der Fokus von Kontrolle auf Notfallbewältigung. Das ist in der Wirkungsökonomie keine Reichweitenfrage, sondern eine tatsächliche Belastung von Schutz- und Versorgungsfunktionen."
+          ],
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Angriff",
+                "text": "Kiew wird wieder mit Drohnen und Raketen getroffen.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Die Meldung trifft zu und die Angriffe erreichen bewohnte oder sensible Bereiche.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schaden",
+                "text": "Wohngebäude, Lagerhallen und eine Schule werden beschädigt; Menschen werden getötet oder verletzt.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Die berichteten Schadens- und Opferangaben sind zutreffend.",
+                "source_ids": [
+                  "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638",
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+                ]
+              },
+              {
+                "title": "Schutzreaktion",
+                "text": "Rettung, Luftschutz und Verwaltung müssen sofort auf Notbetrieb umstellen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn Schäden und Warnungen in der Stadt gleichzeitig auftreten.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Rückkopplung",
+                "text": "Gegenschläge und weitere Angriffe werden wahrscheinlicher, wenn beide Seiten die Eskalation fortsetzen.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Dieser Pfad bleibt nur plausibel, nicht belegt; im Text werden zugleich Angriffe auf Saratow genannt.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                  "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "system",
+          "title": "System: Warum die Hauptstadt besonders verwundbar ist",
+          "paragraphs": [
+            "Kiew ist nicht irgendein Ort. Eine Hauptstadt bündelt Verwaltung, Versorgung, Symbolik und politische Koordination. Wenn sie angegriffen wird, trifft das nicht nur einzelne Häuser, sondern einen Knotenpunkt des Staates. Genau deshalb hat die Meldung systemische Relevanz: Sie zeigt eine Störung in einem Zentrum, das weit über die lokale Ebene hinaus wirkt.",
+            "Der zusätzliche Zusammenhang liegt in der Verbindung von physischer Zerstörung und Steuerungsdruck. Jede beschädigte Schule, jede geräumte Straße, jedes verletzte Team bindet Personal und Zeit. Das sind nicht automatisch langfristige Strukturbrüche. Aber sie können in Summe die kurzfristige Resilienz senken, also die Fähigkeit, Störungen schnell aufzufangen."
+          ],
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Zentrum betroffen",
+                "text": "Die Hauptstadt wird erneut angegriffen.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "negative",
+                "condition": "Kiew bleibt Verwaltungs- und Versorgungsknoten.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+                ]
+              },
+              {
+                "title": "Belastung steigt",
+                "text": "Rettung, Schutzräume und Verwaltung müssen parallel reagieren.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn mehrere Schadensorte gleichzeitig gemeldet werden.",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Resilienz sinkt",
+                "text": "Weniger Kapazität bleibt für Vorsorge, Reparatur und Regelbetrieb.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Bei wiederholten Angriffen in kurzer Folge.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                  "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "mpd",
+          "title": "Mensch, Planet, Demokratie: Was sich hier tatsächlich verschiebt",
+          "paragraphs": [
+            "Für den Menschen ist die Richtung klar negativ: Tote, Verletzte, Angst, Räumung, Verlust von Wohnung oder Arbeitsplatznähe. Das ist die unmittelbarste und am besten belegte Wirkung. Für den Planeten lässt sich aus dem Material kein belastbarer eigener Effekt ableiten; denkbar wären nur indirekte Spuren über zerstörte Infrastruktur oder zusätzliche Einsätze, aber das bleibt offen. Für die Demokratie ist der Befund mittel bis hoch relevant, weil Angriffe auf die Hauptstadt die staatliche Handlungsfähigkeit, die Sicherheit von Zivilpersonen und die Funktionsfähigkeit öffentlicher Institutionen unter Druck setzen.",
+            "Wichtig ist die Trennung zwischen Ereignis und Kommunikationswirkung. Dass der Angriff politisch gedeutet wird, ist eine Folge der Berichterstattung und des Kriegsverlaufs, aber noch keine zusätzliche materielle Wirkung. Materiell belegt ist: Es gibt neue Schäden und Opfer. Daraus folgt ein erhöhter Schutz- und Reaktionsbedarf. Mehr darf man hier nicht sicher behaupten."
+          ],
+          "source_ids": [
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638",
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Menschen",
+                "text": "Verletzte, Tote und akute Schutzbedürftigkeit entstehen.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn die berichteten Opferzahlen zutreffen.",
+                "source_ids": [
+                  "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+                ]
+              },
+              {
+                "title": "Demokratie",
+                "text": "Verwaltung und öffentliche Ordnung werden unter Krisendruck gesetzt.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Weil die Hauptstadt ein politischer Knotenpunkt ist.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+                ]
+              },
+              {
+                "title": "Planet",
+                "text": "Keine belastbare eigene Umweltwirkung ist in der Quelle belegt.",
+                "status": "analytical_inference",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Der Text nennt dazu keine ausreichenden Angaben.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "wirkungsordnungen",
+          "title": "Wirkungsordnungen 1 bis 3: vom Einschlag zur Rückkopplung",
+          "paragraphs": [
+            "Wirkungsordnung 1 ist hier die direkte Zerstörung. Das ist die sichtbarste Ebene: Beschädigte Gebäude, verletzte Menschen, getroffene Infrastruktur. Ordnung 2 ist die Reaktion darauf: Evakuierung, Rettung, medizinische Versorgung, Reparatur, Luftschutz. Ordnung 3 ist die systemische Rückkopplung: Wiederholte Angriffe können die Bereitschaft erhöhen, Ressourcen in den Krisenmodus zu verlagern, was wiederum andere Aufgaben verdrängt. Diese dritte Ebene ist plausibel, aber im Material nicht voll ausbuchstabiert.",
+            "Im selben Text wird außerdem auf ukrainische Drohnenangriffe auf Saratow verwiesen. Das ist kein Beweis für eine automatische Eskalationsspirale, aber ein Hinweis auf eine mögliche wechselseitige Verstärkung. Hier muss man sauber bleiben: Eine Kaskade ist nicht schon deshalb belegt, weil zwei Seiten gleichzeitig handeln. Belegt ist nur, dass beide Seiten Angriffe melden und dass im Bericht ein zeitlicher Zusammenhang mit US-Vermittlern erwähnt wird."
+          ],
+          "source_ids": [
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638",
+            "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd",
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "1. Ordnung",
+                "text": "Der Angriff beschädigt Häuser, Schule und Lagerhallen.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Die gemeldeten Schäden sind zutreffend.",
+                "source_ids": [
+                  "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+                ]
+              },
+              {
+                "title": "2. Ordnung",
+                "text": "Rettung und Versorgung werden auf Notbetrieb gestellt.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn mehrere Orte betroffen sind und Schutzräume genutzt werden.",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "3. Ordnung",
+                "text": "Wiederholte Angriffe können die städtische und staatliche Resilienz schwächen und Gegenschläge wahrscheinlicher machen.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur als plausibler Pfad; die Quelle belegt keine Kausalität.",
+                "source_ids": [
+                  "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd",
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "resilienz",
+          "title": "Resilienz: Schutz kann den Schaden begrenzen, nicht den Angriff aufheben",
+          "paragraphs": [
+            "Die Meldung enthält auch einen wichtigen Gegenpunkt: Die Militärverwaltung rief offenbar dazu auf, Schutzräume aufzusuchen. Das ist keine positive Gegenwirkung im Sinn von Entwarnung, sondern eine Schutzplanke. Sie begrenzt Risiken, wenn sie rechtzeitig greift. Genau darin liegt die Resilienzfrage: Wie schnell können Menschen geschützt, Verletzte versorgt und Schäden repariert werden?",
+            "Ob diese Schutzmechanismen ausreichen, ist offen. Das Material zeigt nur, dass sie aktiviert wurden. Es zeigt nicht, wie viele Menschen erreicht wurden oder wie gut die Versorgung im Einzelnen funktionierte. Deshalb wäre jede Behauptung über erfolgreiche Abwehr hier zu stark. Offen ist offen, nicht neutral."
+          ],
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Warnung",
+                "text": "Die Verwaltung ruft dazu auf, Schutzräume aufzusuchen.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "mixed",
+                "condition": "Die Warnung erreicht die Menschen rechtzeitig.",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Schutz",
+                "text": "Menschen können unmittelbare Gefährdung reduzieren.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Nur wenn Schutzräume erreichbar und nutzbar sind.",
+                "source_ids": [
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Grenze",
+                "text": "Die Warnung ersetzt keinen funktionierenden Luftschutz und keine Schadensvermeidung.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Schutzplanken begrenzen Folgen, sie heben den Angriff nicht auf.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "unsicherheit",
+          "title": "Unsicherheit: Was die Quelle sagt und was sie offenlässt",
+          "paragraphs": [
+            "Die Evidenz ist brauchbar, aber eng. Die Berichte stammen aus journalistischen Quellen; ein unabhängiger Primärbeleg liegt im gelieferten Material nicht vor. Gesichert ist damit vor allem die berichtete Lage, nicht jede Detailzuschreibung. Das betrifft besonders die genaue Schadenshöhe, die taktische Lage und die Frage, wie weit die parallel gemeldeten Angriffe auf Saratow in derselben Dynamik stehen.",
+            "Für die Analyse folgt daraus eine klare Grenze: Der Befund einer erneuten Belastung Kiews ist stark. Der Befund einer ausgeprägten Eskalationsspirale ist nur plausibel, nicht bewiesen. Wenn neue, belastbare Angaben zu Schäden, Reaktionen oder Verhandlungen vorliegen, kann sich die Bewertung verschieben."
+          ],
+          "source_ids": [
+            "d0acedaf5ac83e6a8760512b40a6a6ef49a5115ad813b242b883cd81b3045416",
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+            "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Berichtete Lage",
+                "text": "Mehrere Nachrichten melden dieselben Kernpunkte.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Die Meldungen sind konsistent, aber nicht primär belegt.",
+                "source_ids": [
+                  "d0acedaf5ac83e6a8760512b40a6a6ef49a5115ad813b242b883cd81b3045416",
+                  "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+                ]
+              },
+              {
+                "title": "Bewertung",
+                "text": "Die unmittelbaren Opfer und Schäden sind gut belegbar; die Langfristergebnisse bleiben offen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Zeitverzug und Folgewirkungen sind in der Quelle nicht ausgereizt.",
+                "source_ids": [
+                  "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+                ]
+              },
+              {
+                "title": "Schluss",
+                "text": "Je nach weiterer Bestätigung kann die Eskalationsbewertung steigen oder begrenzt bleiben.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Abhängig von weiteren Meldungen und unabhängiger Bestätigung.",
+                "source_ids": [
+                  "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "beobachtung",
+          "title": "Beobachtungspunkte: Woran sich die Lage weiter messen lässt",
+          "paragraphs": [
+            "Wirklich wichtig sind jetzt nicht Schlagworte, sondern überprüfbare nächste Signale: Werden Opferzahlen bestätigt oder ergänzt? Bleiben Schäden auf einzelne Bezirke begrenzt oder weiten sie sich aus? Kommt es zu weiteren Angriffen auf Kiew oder zu neuen ukrainischen Gegenangriffen? Und zeigen sich sichtbare Belastungen für Rettung, Energie, Verkehr oder Verwaltung?",
+            "Diese Punkte sind entscheidend, weil sie den Unterschied zwischen einer einzelnen Angriffsnacht und einem belastenden Muster markieren. Erst wenn solche Folgeangaben vorliegen, lässt sich die Frage nach Wirkungsordnung 2 und 3 sicherer beantworten."
+          ],
+          "source_ids": [
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638",
+            "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Nächste Prüfung",
+                "text": "Werden Opferzahlen und Schäden bestätigt oder erweitert?",
+                "status": "scenario",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Neue Meldungen können die Einordnung ändern.",
+                "source_ids": [
+                  "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+                ]
+              },
+              {
+                "title": "Systemsignal",
+                "text": "Weitere Angriffe würden das Muster und den Belastungsdruck verdichten.",
+                "status": "impact_risk",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Nur wenn weitere belastbare Ereignisse hinzukommen.",
+                "source_ids": [
+                  "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+                ]
+              },
+              {
+                "title": "Bewertung",
+                "text": "Dann würde die Analyse von Einzeleffekt zu Kaskade kippen.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Derzeit noch nicht sicher belegt.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "synthese",
+          "title": "Synthese: Der zusätzliche systemische Zusammenhang",
+          "paragraphs": [
+            "Die eigentliche Zusatzinformation dieser Meldung ist nicht nur, dass es wieder Angriffe gab. Der systemische Zusammenhang ist: Ein erneuter Schlag auf die Hauptstadt erzeugt sofortige menschliche Schäden und gleichzeitig einen Managementschock für Schutz, Rettung und Verwaltung. Genau diese Kopplung macht den Vorgang mehr als eine bloße Frontnotiz. Er verschiebt Zustände im zivilen Raum, und zwar auf mehreren Ebenen zugleich.",
+            "Mein Befund in Alltagssprache: Kiew wird nicht nur getroffen, es muss sich auch sofort neu organisieren. Das kostet Kraft, Zeit und Sicherheit. Ob daraus eine dauerhafte Verschlechterung oder eine kurzfristige Belastung wird, hängt von der Häufigkeit weiterer Angriffe, der Wirksamkeit des Schutzes und der Belastbarkeit der städtischen und staatlichen Strukturen ab. Alles darüber hinaus bleibt offen."
+          ],
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638",
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Einschlag",
+                "text": "Die Stadt wird erneut angegriffen.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Berichte stimmen.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+                ]
+              },
+              {
+                "title": "Alltagsschock",
+                "text": "Menschen, Häuser und öffentliche Abläufe geraten unter Druck.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Bei bestätigten Schäden und Opfern.",
+                "source_ids": [
+                  "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+                ]
+              },
+              {
+                "title": "Systemeffekt",
+                "text": "Resilienz, Schutz und politische Steuerung werden kurzfristig stärker beansprucht.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Ob daraus eine längere Schwächung wird, ist offen.",
+                "source_ids": [
+                  "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                  "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "claim_ledger": [
+        {
+          "claim": "Russland hat nach einer dreitägigen Pause die Angriffe auf Kiew in der Nacht wieder aufgenommen.",
+          "type": "fact",
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "high",
+          "data_status": "confirmed",
+          "uncertainty": "Die Aussage ist in mehreren journalistischen Quellen konsistent, aber im Material nicht primär belegt.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Bei den Angriffen wurden Wohngebäude, Lagerhallen und eine Schule beschädigt.",
+          "type": "observed_impact",
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Die Meldung berichtet die Schäden; unabhängige Detailprüfung liegt im Material nicht vor.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Für Kiew werden mindestens zwei Tote und sieben Verletzte genannt.",
+          "type": "observed_impact",
+          "source_ids": [
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638",
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+          ],
+          "evidence_level": "high",
+          "data_status": "attributed",
+          "uncertainty": "Die Zahl stammt aus der Meldung; das Material enthält keine unabhängige Bestätigung.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Der Angriff auf Kiew verschiebt den Schutzbedarf der Stadt sofort auf Rettung, Luftschutz und Notbetrieb.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Plausibler Wirkpfad, aber die genaue Belastung der Dienste ist nicht beziffert.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Kiew ist als Hauptstadt ein politischer und administrativer Knotenpunkt, daher haben Angriffe dort systemische Folgen über den lokalen Schaden hinaus.",
+          "type": "analytical_inference",
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Systemrelevanz folgt aus der Rolle der Hauptstadt; das Ausmaß der Folge ist offen.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Die parallel gemeldeten ukrainischen Angriffe auf Saratow zeigen einen möglichen wechselseitigen Eskalationspfad, belegen ihn aber nicht abschließend.",
+          "type": "impact_risk",
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+          ],
+          "evidence_level": "low",
+          "data_status": "scenario",
+          "uncertainty": "Die Quelle nennt Gegenangriffe, aber keine belastbare Kausalzuschreibung zur Eskalation.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Die Militärverwaltung rief zum Aufsuchen von Schutzräumen auf.",
+          "type": "fact",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "evidence_level": "medium",
+          "data_status": "confirmed",
+          "uncertainty": "Im Material ist die Aufforderung erwähnt, aber nicht ihr Wirkungsgrad.",
+          "date": "2026-09-08"
+        },
+        {
+          "claim": "Die laufende Lage ist eher ein Risikosignal als ein Transformationsereignis.",
+          "type": "normative_assessment",
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+          ],
+          "evidence_level": "medium",
+          "data_status": "inferred",
+          "uncertainty": "Die Quelle belegt akute Belastung, aber keinen strukturellen Wandel.",
+          "date": "2026-09-08"
+        }
+      ],
+      "counter_evidence": [
+        {
+          "finding": "Das Material enthält keine unabhängige Primärquelle und keine belastbare Detailprüfung der Schadens- und Opferzahlen.",
+          "source_ids": [
+            "d0acedaf5ac83e6a8760512b40a6a6ef49a5115ad813b242b883cd81b3045416",
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "effect_on_assessment": "Die Stärke der Zurechnung bleibt begrenzt; der Befund ist berichtet, aber nicht in allen Details abgesichert."
+        },
+        {
+          "finding": "Die Meldung nennt zwar ukrainische Angriffe auf Saratow, aber keine gesicherte Kausalität für eine Eskalationsspirale.",
+          "source_ids": [
+            "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+            "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+          ],
+          "effect_on_assessment": "Der Rückkopplungspfad bleibt plausibel, aber offen; er darf nicht als erwiesen formuliert werden."
+        }
+      ],
+      "editorial_rules_version": "2.0",
+      "executive_finding": "Die Meldung zeigt mehr als neue Schäden: Ein Angriff auf Kiew belastet Menschen sofort und zieht Schutz, Rettung und Verwaltung in einen Krisenmodus. Genau darin liegt der systemische Zusatznutzen dieser Analyse. Die wichtigste Bedingung ist die Wiederholung solcher Angriffe; erst dann kann aus dem Einzeleffekt ein belastbarer Rückkopplungspfad werden. Die Quellen belegen den akuten Schaden gut, eine dauerhafte Eskalationsspirale aber noch nicht.",
+      "subject_dimensions": {
+        "human": {
+          "relevance": "sehr hoch",
+          "rationale": "Tote, Verletzte, beschädigte Wohngebäude und der notwendige Schutzraum-Aufruf betreffen Menschen unmittelbar.",
+          "implementation_status": "implemented",
+          "likelihood": "observed",
+          "direction": "negative",
+          "magnitude": "high",
+          "evidence": "established"
+        },
+        "planet": {
+          "relevance": "gering",
+          "rationale": "Im Material ist keine direkte Umwelt- oder Klimawirkung belegt; mögliche indirekte Spuren bleiben offen.",
+          "implementation_status": "open",
+          "likelihood": "open",
+          "direction": "open",
+          "magnitude": "open",
+          "evidence": "open"
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "rationale": "Angriffe auf die Hauptstadt treffen Verwaltung, öffentliche Ordnung und die Fähigkeit des Staates, Schutz zu organisieren.",
+          "implementation_status": "implemented",
+          "likelihood": "plausible",
+          "direction": "negative",
+          "magnitude": "medium",
+          "evidence": "plausible_path"
+        }
+      },
+      "assessment_context": "observed",
+      "assessment_condition": "Die Bewertung gilt unter der Bedingung, dass die in den Meldungen beschriebenen Angriffe, Schäden und Opfer zutreffen; der Eskalationspfad bleibt ohne weitere Belege offen.",
+      "author_perspective": {
+        "paragraphs": [
+          "Ich halte die Lage für systemisch schwerer, als es eine reine Schlagzeile über einen erneuten Angriff vermuten lässt. Nicht nur die Gewalt selbst zählt, sondern die Folgearbeit danach: Menschen müssen geschützt, Verletzte versorgt, Gebäude gesichert und Abläufe neu sortiert werden. Genau da liegt für mich die eigentliche Belastung.",
+          "Aus meiner Sicht ist wichtig, die Evidenz sauber zu trennen. Die akuten Schäden sind gut genug belegt, der größere Rückkopplungseffekt ist bislang nur plausibel. Ich würde deshalb klar negativ gewichten, aber ohne mehr zu behaupten, als die Quellen tragen."
+        ],
+        "claim_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "origin": "generated_from_analysis"
+      },
+      "positive_path_checks": [
+        {
+          "measure": "Aufruf und Nutzung von Schutzräumen durch die Militärverwaltung",
+          "source_ids": [
+            "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+          ],
+          "mechanism": "Wenn Warnungen rechtzeitig ankommen und Schutzräume erreichbar sind, sinkt das unmittelbare Verletzungsrisiko trotz fortgesetzter Bedrohung."
+        }
+      ],
+      "counter_evidence_search": {
+        "checked": true,
+        "result": "Gefunden wurden keine unabhängigen Gegenbelege zur grundsätzlichen Meldung der Wiederaufnahme der Angriffe; begrenzend wirkt aber die fehlende Primärquelle und die offen bleibende Kausalität für eine Eskalationsspirale."
+      },
+      "editorial_quality": {
+        "false_balance_checked": true,
+        "concrete_positive_paths_only": true,
+        "likelihood_direction_separated": true,
+        "safeguards_as_limits": true,
+        "evidence_bound_judgment": true,
+        "reader_takeaway_clear": true,
+        "concrete_language_checked": true,
+        "visuals_explain_mechanism": true,
+        "author_perspective_separated": true
+      },
+      "what_changes_the_assessment": [
+        "Bestätigte oder korrigierte Opfer- und Schadenszahlen",
+        "Belastbare Angaben zu weiteren Angriffen oder einer Fortsetzung der Pause",
+        "Unabhängige Hinweise auf die tatsächliche Belastung von Rettung, Versorgung und Verwaltung",
+        "Konkrete Aussagen der Beteiligten oder Primärquellen zur Ursache der Pause und zu ihrer Beendigung"
+      ],
+      "self_frame_check": {
+        "passed": true,
+        "issues": [],
+        "recommended_title": "Kiew wieder unter Beschuss: Was die neue Angriffswelle systemisch auslöst",
+        "recommended_summary": "Neue Angriffe auf Kiew bedeuten nicht nur Zerstörung, sondern auch Druck auf Schutz, Versorgung und staatliche Handlungsfähigkeit.",
+        "recommended_meta_description": "Kiew steht nach neuen Angriffen wieder unter Beschuss. Die Analyse zeigt Folgen für Schutz, Versorgung, Eskalation und Resilienz."
+      },
+      "reading_time_minutes": 6,
+      "source_snapshot": [
+        {
+          "source_id": "d0acedaf5ac83e6a8760512b40a6a6ef49a5115ad813b242b883cd81b3045416",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
+          "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-feuerpause-wieder-auf-ukrainischer-drohnenangriff-100.html",
+          "published_at": "2026-09-08T04:39:24.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - Russland setzt Angriffe auf Kiew nach dreitägiger Pause fort",
+          "url": "https://www.deutschlandfunk.de/russland-setzt-angriffe-auf-kiew-nach-dreitaegiger-pause-fort-100.html",
+          "published_at": "2026-09-08T01:38:07.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+          "registry_source_id": "dlf-nachrichten",
+          "publisher_id": "deutschlandfunk",
+          "publisher": "Deutschlandfunk",
+          "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Pause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
+          "url": "https://www.deutschlandfunk.de/russland-nimmt-angriffe-auf-kiew-nach-dreitaegiger-pause-wieder-auf-ukrainischer-drohnenangriff-auf--100.html",
+          "published_at": "2026-09-08T02:43:14.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "a2753b6d3991444addf6443a6848e2b03629cba8123440d996d3caa7dda42d15",
+          "registry_source_id": "taz-aktuell",
+          "publisher_id": "taz",
+          "publisher": "taz",
+          "title": "+++ Nachrichten im Ukrainekrieg +++: Russland nimmt Angriffe auf Kyjiw wieder auf",
+          "url": "https://taz.de/-Nachrichten-im-Ukraine-Krieg-/!6211311",
+          "published_at": "2026-09-08T06:45:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "cdadc631f6cafc8b080ae64962740e5b356be228dc6b81aa3dc92a182ba9735d",
+          "registry_source_id": "zdfheute-nachrichten",
+          "publisher_id": "zdfheute",
+          "publisher": "ZDFheute",
+          "title": "Russland setzt Angriffe nach Feuerpause fort - Tote in Kiew",
+          "url": "https://www.zdfheute.de/politik/ausland/russland-angriffe-kiew-ukraine-krieg-100.html",
+          "published_at": "2026-09-08T07:16:00.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Russland nimmt Angriffe auf Kiew wieder auf - Behörden melden zwei Todesopfer",
+          "url": "https://www.stern.de/news/russland-nimmt-angriffe-auf-kiew-wieder-auf---behoerden-melden-zwei-todesopfer-38218638.html",
+          "published_at": "2026-09-08T05:05:22.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd",
+          "registry_source_id": "tagesspiegel-home",
+          "publisher_id": "tagesspiegel",
+          "publisher": "Der Tagesspiegel",
+          "title": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-ukraine-krieg-16029648.html",
+          "published_at": "2026-09-08T08:50:49.000Z",
+          "primary_source": false
+        },
+        {
+          "source_id": "89f1048b7fe2399af6f62f1469457eac125d734be23bd72dc4c8db21e8df81e3",
+          "registry_source_id": "stern-schlagzeilen",
+          "publisher_id": "stern",
+          "publisher": "stern",
+          "title": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe",
+          "url": "https://www.stern.de/politik/ausland/ukraine-krieg--nach-us-gespraechen--kiew-meldet-neue-russische-angriffe-38220240.html",
+          "published_at": "2026-09-08T12:58:28.000Z",
+          "primary_source": false
+        }
+      ],
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T14:11:43.546Z",
+          "source_fingerprint": "5216043ade26f5f0909c11d727151a9d8700c107006dbff7b6cc08b4f53fa1c5",
+          "title": "Kiew wieder unter Beschuss: Was die neue Angriffswelle systemisch auslöst",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Russland hat nach einer dreitägigen Pause die Angriffe auf Kiew in der Nacht wieder aufgenommen.",
+              "type": "fact",
+              "source_ids": [
+                "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Die Aussage ist in mehreren journalistischen Quellen konsistent, aber im Material nicht primär belegt.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Bei den Angriffen wurden Wohngebäude, Lagerhallen und eine Schule beschädigt.",
+              "type": "observed_impact",
+              "source_ids": [
+                "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Die Meldung berichtet die Schäden; unabhängige Detailprüfung liegt im Material nicht vor.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Für Kiew werden mindestens zwei Tote und sieben Verletzte genannt.",
+              "type": "observed_impact",
+              "source_ids": [
+                "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638",
+                "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+              ],
+              "evidence_level": "high",
+              "data_status": "attributed",
+              "uncertainty": "Die Zahl stammt aus der Meldung; das Material enthält keine unabhängige Bestätigung.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Der Angriff auf Kiew verschiebt den Schutzbedarf der Stadt sofort auf Rettung, Luftschutz und Notbetrieb.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Plausibler Wirkpfad, aber die genaue Belastung der Dienste ist nicht beziffert.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Kiew ist als Hauptstadt ein politischer und administrativer Knotenpunkt, daher haben Angriffe dort systemische Folgen über den lokalen Schaden hinaus.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Systemrelevanz folgt aus der Rolle der Hauptstadt; das Ausmaß der Folge ist offen.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Die parallel gemeldeten ukrainischen Angriffe auf Saratow zeigen einen möglichen wechselseitigen Eskalationspfad, belegen ihn aber nicht abschließend.",
+              "type": "impact_risk",
+              "source_ids": [
+                "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                "0670440015c40240bc6d3187b1a2f836731a7eebabe6cd607ac31c741ebe01cd"
+              ],
+              "evidence_level": "low",
+              "data_status": "scenario",
+              "uncertainty": "Die Quelle nennt Gegenangriffe, aber keine belastbare Kausalzuschreibung zur Eskalation.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Die Militärverwaltung rief zum Aufsuchen von Schutzräumen auf.",
+              "type": "fact",
+              "source_ids": [
+                "5e30021cf1b3c176ee2ba86358755aa85e90961c21e6b2db0a1b25e2cbc86485"
+              ],
+              "evidence_level": "medium",
+              "data_status": "confirmed",
+              "uncertainty": "Im Material ist die Aufforderung erwähnt, aber nicht ihr Wirkungsgrad.",
+              "date": "2026-09-08"
+            },
+            {
+              "claim": "Die laufende Lage ist eher ein Risikosignal als ein Transformationsereignis.",
+              "type": "normative_assessment",
+              "source_ids": [
+                "84a1268e4b40aa68678c17a1bbfb326fa2efb647bb7b6fc59d98f4d033a7b319",
+                "d39a909a01251dd856c8aaabf97d395833908327b6c8237eff23c156623b1638"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Die Quelle belegt akute Belastung, aber keinen strukturellen Wandel.",
+              "date": "2026-09-08"
+            }
+          ]
+        }
+      ]
     }
   ],
   "retry_state": {
@@ -25970,8 +26834,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T13:41:12.275Z",
-      "next_attempt_at": "2026-09-08T13:56:12.275Z",
+      "last_attempt_at": "2026-09-08T14:11:43.546Z",
+      "next_attempt_at": "2026-09-08T14:26:43.546Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -26000,19 +26864,6 @@
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
       "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
-    },
-    "wt-de413d33343f350b": {
-      "fingerprint": "5216043ade26f5f0909c11d727151a9d8700c107006dbff7b6cc08b4f53fa1c5",
-      "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-08T13:41:12.275Z",
-      "next_attempt_at": "2026-09-08T14:11:12.275Z",
-      "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_SELF_FRAME_FAILED"
-      ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }

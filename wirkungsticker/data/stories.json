@@ -1,7 +1,81 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T13:41:12.275Z",
+  "updated_at": "2026-09-08T14:11:43.546Z",
   "stories": [
+    {
+      "story_id": "wt-cb6944882f826542",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "nach-hackerangriff-auf-verwaltung-berliner-bezirk-gibt-widerstand-gegen-us-software-auf-826542",
+      "title": "Nach Hackerangriff auf Verwaltung: Berliner Bezirk gibt Widerstand gegen US-Software auf",
+      "source_summary": "Der Bericht meldet eine Änderung im Umgang mit einem vom Senat eingekauften Spezialprogramm nach dem Hackerangriff auf die Verwaltung. Laut Titel und Abstract hatten die Bezirke Lichtenberg und Steglitz-Zehlendorf sich am Montag geweigert, das Programm zu nutzen. Nun löse sich die Blockade zumindest teilweise auf.\n\nMehr Details nennt die gelieferte Quelle nicht. Offen bleibt, welche Bezirke genau umschwenken, wie weit die Nutzung des Programms bereits beschlossen oder umgesetzt ist und welche Folgen das für die Verwaltungsarbeit hat.",
+      "summary": "Zwei Berliner Bezirke hatten sich zunächst gegen ein vom Senat gekauftes Spezialprogramm gestellt. Laut dem Bericht lockert sich dieser Widerstand nun teilweise.",
+      "detail_summary": "Der gelieferte Bericht beschreibt eine konkrete Änderung im Verwaltungsumgang nach dem Hackerangriff: Zwei Bezirke hatten sich zunächst geweigert, ein vom Senat eingekauftes Spezialprogramm zu nutzen, und diese Blockade scheint sich nun teilweise zu lösen. Das ist eine neue Zustandsinformation, weil sie auf einen Kurswechsel im Umgang mit der IT-Lösung hinweist. Relevanz entsteht vor allem für Verwaltungsabläufe, Beschaffung und die Frage, wie schnell Bezirke nach einem Angriff wieder arbeitsfähig werden. Ein möglicher Wirkpfad reicht von der Software-Nutzung über die Wiederherstellung von Prozessen bis zu Folgewirkungen für Bearbeitungszeiten und interne Koordination. Die Evidenz bleibt aber begrenzt, weil nur eine journalistische Quelle mit kurzem Abstract vorliegt und der konkrete Umfang des Umschwungs offen bleibt.",
+      "why_relevant": "Die Meldung betrifft einen sichtbaren Kurswechsel im Umgang mit Verwaltungssoftware nach einem Cyberangriff und damit eine materielle Änderung im Behördenbetrieb.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Für Beschäftigte und Verwaltungsnutzende kann die teilweise Aufhebung der Blockade Arbeitsabläufe stabilisieren, zugleich bleibt offen, ob die Umstellung kurzfristig Reibungen erzeugt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Bezug zu Umwelt, Ressourcen oder Emissionen ist in der Quelle nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Die Verwaltung der Hauptstadt ist betroffen; der Umgang mit digitaler Infrastruktur berührt die Funktionsfähigkeit staatlicher Prozesse und damit die demokratische Korrekturfähigkeit."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T14:06:56.372Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T14:03:44.000Z",
+      "last_updated": "2026-09-08T14:08:56.482Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-c0ac99c035a08525adc5",
+      "case_file": null,
+      "source_published_at": "2026-09-08T14:03:44.000Z",
+      "published_at": "2026-09-08T14:08:56.482Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/nach-hackerangriff-auf-verwaltung-berliner-bezirk-gibt-widerstand-gegen-us-software-auf-16030903.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:03:44.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-002ef3a7bb1a5ae1",
       "title_image": {
@@ -3123,7 +3197,14 @@
       "media_impact": null,
       "media_analysis_version": "2.1",
       "media_checked_at": "2026-09-08T04:52:08.677Z",
-      "editorial_analysis": null,
+      "editorial_analysis": {
+        "analysis_id": "woek-analysis-58daf5723737",
+        "slug": "kiew-wieder-unter-beschuss-was-die-neue-angriffswelle-systemisch-auslost-58daf5",
+        "title": "Kiew wieder unter Beschuss: Was die neue Angriffswelle systemisch auslöst",
+        "teaser": "Nach drei Tagen Pause trifft Kiew wieder ein Angriff. Das ist mehr als eine Einzelmeldung: Es verschiebt Schutzbedarf, bindet Rettungskräfte und kann Eskalationsmuster verstärken.",
+        "published_at": "2026-09-08T14:11:43.546Z",
+        "updated_at": "2026-09-08T14:11:43.546Z"
+      },
       "first_seen": "2026-09-08T04:39:24.000Z",
       "last_updated": "2026-09-08T04:53:23.148Z",
       "version": 1,
@@ -19052,6 +19133,17 @@
     }
   ],
   "editorial_analyses": [
+    {
+      "analysis_id": "woek-analysis-58daf5723737",
+      "story_id": "wt-de413d33343f350b",
+      "slug": "kiew-wieder-unter-beschuss-was-die-neue-angriffswelle-systemisch-auslost-58daf5",
+      "title": "Kiew wieder unter Beschuss: Was die neue Angriffswelle systemisch auslöst",
+      "subtitle": "Die Meldung zeigt nicht nur neue Zerstörung, sondern auch eine Rückkopplung zwischen Gewalt, Schutzbedarf und staatlicher Belastung.",
+      "teaser": "Nach drei Tagen Pause trifft Kiew wieder ein Angriff. Das ist mehr als eine Einzelmeldung: Es verschiebt Schutzbedarf, bindet Rettungskräfte und kann Eskalationsmuster verstärken.",
+      "published_at": "2026-09-08T14:11:43.546Z",
+      "updated_at": "2026-09-08T14:11:43.546Z",
+      "reading_time_minutes": 6
+    },
     {
       "analysis_id": "woek-analysis-852ebdd0a0aa",
       "story_id": "wt-b5e0a39f46388642",
