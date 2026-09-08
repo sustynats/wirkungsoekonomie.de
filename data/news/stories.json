@@ -1,8 +1,1171 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T07:36:44.231Z",
-  "updated_at": "2026-09-08T07:51:43.705Z",
+  "updated_at": "2026-09-08T08:06:49.615Z",
   "stories": [
+    {
+      "story_id": "wt-4c0a09f9ce090af7",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "de081befa1fd185d21edf7f4e1f8f36488af43132ec3ee73301aacfea13467e0",
+        "first_failed_at": "2026-09-08T08:06:49.615Z",
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:21:49.615Z",
+        "retry_count": 1
+      },
+      "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
+      "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
+      "first_seen": "2026-09-08T08:00:21.000Z",
+      "last_updated": "2026-09-08T08:00:21.000Z",
+      "topic": [
+        "Wirtschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+          "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
+          "summary": "Deutsche Schüler haben bei der neuen PISA-Bildungsstudie so schlecht wie noch nie abgeschnitten. Das teilte die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mit. Demnach gingen die Leistungen der 15-Jährigen in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen erneut zurück.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:00:21.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
+          "source_item_id": "e67863f4c746d2c833223bc449d40c51c28ea8a8ca7108674626a64b3442aeb6",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:00:21.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+          "title": "Pisa-Studie: Deutschland so schlecht wie nie",
+          "summary": "Die deutschen Ergebnisse der Pisa-Studie 2025 zeigen einen Tiefststand. Ob Naturwissenschaften, Lesen oder Mathe: Deutschland erreicht nur das Durchschnittsniveau der OECD-Staaten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:30:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
+          "source_item_id": "06e0f52a9ec646f0a6f87302d0117eb5e8534c952d7538e4980e5fcc7bcca52e",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:30:00.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-claim-01",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie: Deutsche Schüler haben bei der neuen PISA-Bildungsstudie so schlecht wie noch nie abgeschnitten. Das teilte die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mit. Demnach gingen die Leistungen der 15-Jährigen in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen erneut zurück.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        },
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-claim-02",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "Pisa-Studie: Deutschland so schlecht wie nie: Die deutschen Ergebnisse der Pisa-Studie 2025 zeigen einen Tiefststand. Ob Naturwissenschaften, Lesen oder Mathe: Deutschland erreicht nur das Durchschnittsniveau der OECD-Staaten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        }
+      ],
+      "content_hash": "3185eadd4789690d6ce9371f4e4ec240b3cd26df3fecd239f6565afcaf171e51",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
+        "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T08:06:49.615Z",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "event_id": "event-3f8d4c75c0276c438696",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft",
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 6.476916666666667,
+        "detection_delay_minutes": 6.476916666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "4fe85b1a64b11381ad6791cc019ac375405bd080b387e661dbf963aefe1de78b",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-aa2ebf665fdf173d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "6b344e5989f918b304d7dbd0e4ab629b6831821e2185569593553f3807f93da5",
+        "first_failed_at": "2026-09-08T08:06:49.615Z",
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:21:49.615Z",
+        "retry_count": 1
+      },
+      "slug": "angriffe-auf-energieversorgung-sabotage-am-stromnetz-polizei-findet-bekennerschreiben-df173d",
+      "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
+      "first_seen": "2026-09-08T07:55:01.000Z",
+      "last_updated": "2026-09-08T07:55:01.000Z",
+      "topic": [
+        "Energie",
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/politik/dpa-angriffe-auf-energieversorgung-16029379.html",
+          "title": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben",
+          "summary": "Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein Schreiben, in dem sich jemand zur Tat bekennt.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:55:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "5fb63a6ce9f31f38d532b14d5f24e48dfd3caa06019c6c3f2c8bcf2e2648719e",
+          "source_item_id": "1a2102d99635a5e602b49154d027290f174d90f4f01f81a305f4fa64751b94c2",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:55:01.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-aa2ebf665fdf173d-claim-01",
+          "story_id": "wt-aa2ebf665fdf173d",
+          "claim": "Angriffe auf Energieversorgung: Sabotage am Stromnetz: Polizei findet Bekennerschreiben: Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein Schreiben, in dem sich jemand zur Tat bekennt.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        }
+      ],
+      "content_hash": "da47c6e7ef3b8a9749520054be5e61cc93d55c13607b58d379a895431ac6412b",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:06:49.615Z",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "event_id": "event-403434e66c7b7c17b1ad",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 52,
+        "public_relevance": "hoch",
+        "topics": [
+          "Energie",
+          "Arbeit"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 11.81025,
+        "detection_delay_minutes": 11.81025,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 60,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "d0b4d9a54b60a57afaa5793977a02d37cd23f29b6dda9ce8ce59302b7bc0f23f",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:06:49.615Z",
+      "rejection": {
+        "at": "2026-09-08T08:06:49.615Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-7347f5c56c1fbeed",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "4a02a808b684640eb166bced8b6ae7593ba0ee58f6740d4d13ac651fa20c405a",
+        "first_failed_at": "2026-09-08T08:06:49.615Z",
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:21:49.615Z",
+        "retry_count": 1
+      },
+      "slug": "iran-krieg-und-nahost-konflikt-alle-nachrichten-im-liveblog-1fbeed",
+      "title": "Iran-Krieg und Nahost-Konflikt: Alle Nachrichten im Liveblog",
+      "first_seen": "2026-09-03T21:58:00.000Z",
+      "last_updated": "2026-09-08T07:54:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/iran-israel-usa-angriff-liveblog-100.html",
+          "title": "Iran-Krieg und Nahost-Konflikt: Alle Nachrichten im Liveblog",
+          "summary": "Im Iran-Krieg laufen diplomatische Bemühungen weiter, doch die Sicherheitslage bleibt angespannt. Alle Entwicklungen aus Nahost im Liveblog.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:54:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "a9e7e01f8d91aee9cd51f8d143b57e1fa4a3e32513d02f37ab1fbebbf42c9837",
+          "source_item_id": "3fa591916af7bc0cbd089a00c970836dfbc068b806f9cad9f92860ea504af5e9",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:54:00.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-7347f5c56c1fbeed-claim-01",
+          "story_id": "wt-7347f5c56c1fbeed",
+          "claim": "Iran-Krieg und Nahost-Konflikt: Alle Nachrichten im Liveblog: Im Iran-Krieg laufen diplomatische Bemühungen weiter, doch die Sicherheitslage bleibt angespannt. Alle Entwicklungen aus Nahost im Liveblog.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        }
+      ],
+      "content_hash": "c16205f803b02787d86b6c36303d3907bba7c55cee6749fe2bc8a352e2170857",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:06:49.615Z",
+      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
+      "event_detected_at": "2026-09-03T22:21:17.010Z",
+      "event_id": "event-99beea978d32cc6017ee",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 12.826916666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 6345.543416666666,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "0ec5f3a3667d68762b59e0d543261be48cd5f1dc79fc727831d1a687cca2bc70",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:06:49.615Z",
+      "rejection": {
+        "at": "2026-09-08T08:06:49.615Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-1ac4977eb643291c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "24df8ba2826bbe15bddc1dbfadabdf553ac5221eb8a5d411c8a664f9274b036a",
+        "first_failed_at": "2026-09-08T08:06:49.615Z",
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:21:49.615Z",
+        "retry_count": 1
+      },
+      "slug": "pisa-ergebnisse-so-schlecht-wie-nie-so-konnte-eine-bessere-forderung-aussehen-43291c",
+      "title": "PISA-Ergebnisse so schlecht wie nie: So könnte eine bessere Förderung aussehen",
+      "first_seen": "2026-09-08T07:51:44.000Z",
+      "last_updated": "2026-09-08T07:51:44.000Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "swr-aktuell",
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell-radio/pisa-ergebnisse-bessere-foerderung-100.html",
+          "title": "PISA-Ergebnisse so schlecht wie nie: So könnte eine bessere Förderung aussehen",
+          "summary": "Gisela Schmalz, Philosophin und Wirtschaftswissenschaftlerin über Chancen, wie unser Schul- und Bildungssystem besser werden könnte.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:51:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "34dfd3e70ea4872487685f4ad19d19961f1a879bb87b1e8a327fef6f5d682ebb",
+          "source_item_id": "6707ded24db1029accc1e782316d7fcc746fb95a01f7c57b5819bf41109a1590",
+          "publisher_id": "swr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Südwestdeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:51:44.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-1ac4977eb643291c-claim-01",
+          "story_id": "wt-1ac4977eb643291c",
+          "claim": "PISA-Ergebnisse so schlecht wie nie: So könnte eine bessere Förderung aussehen: Gisela Schmalz, Philosophin und Wirtschaftswissenschaftlerin über Chancen, wie unser Schul- und Bildungssystem besser werden könnte.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "swr-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:swr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        }
+      ],
+      "content_hash": "755c3bdd697ae0d307eb13b14ac6fec100124241fbf2264967bcae9abf27ca08",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:06:49.615Z",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "event_id": "event-05c7bdf3fa124f9d55f3",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.093583333333333,
+        "detection_delay_minutes": 15.093583333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "db52b4c1f0c42671f4991992178f22d06a84c67146dfb98d437d8b282741c28c",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:06:49.615Z",
+      "rejection": {
+        "at": "2026-09-08T08:06:49.615Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-55396a7301aa0e36",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "91d2ea1f2558bcd032ecbbf2c84e45b178faab1826be7d6edba904ed772fbaca",
+        "first_failed_at": "2026-09-08T08:06:49.615Z",
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:21:49.615Z",
+        "retry_count": 1
+      },
+      "slug": "nahostkonflikt-berichte-london-sanktioniert-siedlungen-im-westjordanland-aa0e36",
+      "title": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland",
+      "first_seen": "2026-09-08T07:51:01.000Z",
+      "last_updated": "2026-09-08T07:51:01.000Z",
+      "topic": [
+        "Arbeit",
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-nahostkonflikt-16029366.html",
+          "title": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland",
+          "summary": "Die britische Labour-Regierung unter Premier Andy Burnham will einen härteren Kurs im Umgang mit Israels Siedlungspolitik einschlagen. Das dürfte heftige Reaktionen aus Israel und den USA auslösen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:51:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "c9356b564df3c985ee6fa88b08c1fc0d0fe560a13a907dd6edda4d108c468b77",
+          "source_item_id": "cae612173c183c528be6b1ae4c32916169cbd7d758e70e2c0a80487e4cfcf608",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:51:01.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-55396a7301aa0e36-claim-01",
+          "story_id": "wt-55396a7301aa0e36",
+          "claim": "Nahostkonflikt: Berichte: London sanktioniert Siedlungen im Westjordanland: Die britische Labour-Regierung unter Premier Andy Burnham will einen härteren Kurs im Umgang mit Israels Siedlungspolitik einschlagen. Das dürfte heftige Reaktionen aus Israel und den USA auslösen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        }
+      ],
+      "content_hash": "c59bbb8cef122795120ae27d0f06ba39fef87c42ee620a9d6ef58e5f6cbcbdb6",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:06:49.615Z",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "event_id": "event-986b65b56d8c9beac934",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Arbeit",
+          "Geopolitik",
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.81025,
+        "detection_delay_minutes": 15.81025,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "fd08f6af99f438d313fffcc2a54a1299cdddd3f7ed199ccd67519a7bab532836",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:06:49.615Z",
+      "rejection": {
+        "at": "2026-09-08T08:06:49.615Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-550f98293aec9698",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "79ad0d802c867f02476ad3b9a5360f0a8fa5e3994dcb1c57a36e137e246b641a",
+        "first_failed_at": "2026-09-08T08:06:49.615Z",
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:21:49.615Z",
+        "retry_count": 1
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
+      "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+      "first_seen": "2026-09-08T05:19:28.000Z",
+      "last_updated": "2026-09-08T07:45:32.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
+          "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+          "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:03:31.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "2ba7bde655a0ab79ce0650fa975572cca8ec5830ca31592b7fe17cb484eba973",
+          "source_item_id": "d7d59be7dcb9c4682fff5fe96d7177a7e6a524e211703d13ffadd27a32dda9c3",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:03:31.000Z",
+          "ingested_at": "2026-09-08T07:06:51.663Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-162,wahl-560.html",
+          "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+          "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:45:32.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "e9f19fc758699ec9e6a40156eca14ba00ec453d76fb7ac9c7f4782070e622896",
+          "source_item_id": "1dbdc37b9607a66df42eb2625f93ae67190df53f2ff760755d84d13da4a51968",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:45:32.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-550f98293aec9698-claim-01",
+          "story_id": "wt-550f98293aec9698",
+          "claim": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen: Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        },
+        {
+          "claim_id": "wt-550f98293aec9698-claim-02",
+          "story_id": "wt-550f98293aec9698",
+          "claim": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen: Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        }
+      ],
+      "content_hash": "5a7c334d93db70be99298b73e4d062395ecceaf773a58069b63cef3f84cf5abe",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "MEDIA_IMPACT_REQUIRED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T08:06:49.615Z",
+      "event_first_seen_at": "2026-09-08T05:22:10.164Z",
+      "event_detected_at": "2026-09-08T05:22:10.164Z",
+      "event_id": "event-d98ccda8e5e813b1598c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            },
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-162,wahl-560.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.293583333333334,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 164.65751666666668,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "6868670c22aae26632c5375ce71597dbeeb1a0b57fe978f30d3d38ea048f62f6",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-3ea43980851bf4d8",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e0a77950d8c0b4ab6a46b77fd9b3041e2d9ca96dc948a096d0a9fb8077e2c475",
+        "first_failed_at": "2026-09-08T08:06:49.615Z",
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:21:49.615Z",
+        "retry_count": 1
+      },
+      "slug": "die-hohle-der-lowen-nach-ein-paar-monaten-war-ich-kurz-davor-alles-hinzuschmeissen-1bf4d8",
+      "title": "Die Höhle der Löwen: „Nach ein paar Monaten war ich kurz davor, alles hinzuschmeißen“",
+      "first_seen": "2026-09-08T07:43:00.000Z",
+      "last_updated": "2026-09-08T07:43:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/erfolg/gruender/die-hoehle-der-loewen-2026-so-ging-es-fuer-das-start-up-sauberdropz-weiter/100252667.html",
+          "title": "Die Höhle der Löwen: „Nach ein paar Monaten war ich kurz davor, alles hinzuschmeißen“",
+          "summary": "Gleich vier Investoren wollten bei Sauberdropz einsteigen. Hat sich das österreichische Start-up für den richtigen Partner entschieden?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:43:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "49b31a8e251ac6603aa97d20cf6a5b2da2a6da1081f2e8618ec800e3d511d889",
+          "source_item_id": "a84dc9af5952cdbac870f00ca11104e12da6ed8bb19d609d124f66874be5cad5",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:43:00.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3ea43980851bf4d8-claim-01",
+          "story_id": "wt-3ea43980851bf4d8",
+          "claim": "Die Höhle der Löwen: „Nach ein paar Monaten war ich kurz davor, alles hinzuschmeißen“: Gleich vier Investoren wollten bei Sauberdropz einsteigen. Hat sich das österreichische Start-up für den richtigen Partner entschieden?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "wiwo-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        }
+      ],
+      "content_hash": "3b9a391538d1889f47b4cc9c2319b80e6bd23a69d5f21ec3a856bffaee01c63d",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T08:06:49.615Z",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "event_id": "event-fcd048ec137731262b84",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 23.826916666666666,
+        "detection_delay_minutes": 23.826916666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "8314358bc43c7d40d238fe904112a24294dccb092d7e82e17d70ffde4ee6b5ed",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:06:49.615Z",
+      "rejection": {
+        "at": "2026-09-08T08:06:49.615Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-3832ac28950296cb",
       "slug": "was-schuler-konnen-pisa-studie-was-ist-das-0296cb",
@@ -2293,6 +3456,147 @@
       }
     },
     {
+      "story_id": "wt-54efb3c831e7223d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "9c347052b2ef6bf105ca9682991b33db03a6a2d08eefccc70b046e388288f760",
+        "first_failed_at": "2026-09-08T08:06:49.615Z",
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:21:49.615Z",
+        "retry_count": 1
+      },
+      "slug": "pisa-studie-deutschland-schneidet-schlechter-ab-als-je-zuvor-e7223d",
+      "title": "Pisa-Studie: Deutschland schneidet schlechter ab als je zuvor",
+      "first_seen": "2026-09-08T07:37:20.000Z",
+      "last_updated": "2026-09-08T07:37:20.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/pisa-studie--deutschland-schneidet-schlechter-ab-als-je-zuvor-38219582.html",
+          "title": "Pisa-Studie: Deutschland schneidet schlechter ab als je zuvor",
+          "summary": "Deutschlands Schülerinnen und Schüler rutschen im internationalen Vergleich immer weiter ab: Die Ergebnisse von 15-Jährigen in Mathematik, Lesekompetenz und Naturwissenschaften waren „die niedrigsten, die je gemessen wurden“, wie es in der am Dienstag von der OECD in Paris veröffentlichten Pisa-Studie heißt. Mit diesem Ergebnis rangiert Deutschland in allen drei Bereichen nahe am Durchschnitt aller rund 90 getesteten Länder. An der Spitze des internationalen Bildungsvergleichs liegen erneut Singapur und vier chinesische Regionen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:37:20.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "832cdf4dac20d073bcf1ff0c80ef614013736e023d0819705307e06a900b74f0",
+          "source_item_id": "b31856d04a8e0b98b14e3ec91b1e63ba188589e95d8c9a7dfd4a7dc298243048",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:37:20.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-54efb3c831e7223d-claim-01",
+          "story_id": "wt-54efb3c831e7223d",
+          "claim": "Pisa-Studie: Deutschland schneidet schlechter ab als je zuvor: Deutschlands Schülerinnen und Schüler rutschen im internationalen Vergleich immer weiter ab: Die Ergebnisse von 15-Jährigen in Mathematik, Lesekompetenz und Naturwissenschaften waren „die niedrigsten, die je gemessen wurden“, wie es in der am Dienstag von der OECD in Paris veröffentlichten Pisa-Studie heißt. Mit diesem Ergebnis rangiert Deutschland in allen drei Bereichen nahe am Durchschnitt aller rund 90 getesteten Länder. An der Spitze des internationalen Bildungsvergleichs liegen erneut Singapur und vier chinesische Regionen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T08:06:49.615Z"
+        }
+      ],
+      "content_hash": "33d2bdc05cb74848c5629b088d7a7440c92f2849bf7085efbc7ac187dee43f2f",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T08:21:49.615Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T08:06:49.615Z",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "event_id": "event-924ebfb4570fdaceb59e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [
+          "Mensch",
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 29.493583333333333,
+        "detection_delay_minutes": 29.493583333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "5af4fd7908faee1f122f808cef91c76b5cef2b564afe7a5e3defd7ae7c0f3ef2",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
       "story_id": "wt-fec94c5cf2ede512",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -2829,7 +4133,7 @@
           "title": "Haushaltswoche - Mehr als 200 Milliarden Euro Neuverschuldung in 2027 geplant - Grüne kritisieren Umwidmung von KTF-Geldern",
           "summary": "Im Deutschen Bundestag in Berlin beginnt heute die Haushaltswoche. Finanzminister Klingbeil bringt den Etatentwurf für das kommende Jahr ein. Der SPD-Vorsitzende plant mit Ausgaben von rund 555 Milliarden Euro, sechs Prozent mehr als in diesem Jahr. Allein im Kernhaushalt sollen dafür Schulden von mehr als 118 Milliarden Euro gemacht werden.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T07:33:34.000Z",
+          "published_at": "2026-09-08T08:00:21.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -2845,8 +4149,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T07:33:34.000Z",
-          "ingested_at": "2026-09-08T07:36:44.231Z",
+          "source_published_at": "2026-09-08T08:00:21.000Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -2875,22 +4179,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T07:36:44.231Z"
+          "checked_at": "2026-09-08T08:06:49.615Z"
         }
       ],
       "content_hash": "3b0636fe506336292d9ed718ee2ec4f4858191409ef07bdd5b70b5f0a503ab84",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T07:51:44.231Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T07:36:44.231Z",
+      "updated_at": "2026-09-08T08:06:49.615Z",
       "event_first_seen_at": "2026-09-08T07:06:51.663Z",
       "event_detected_at": "2026-09-08T07:06:51.663Z",
       "event_id": "event-51b974a0c225d8faff13",
@@ -2925,11 +4227,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3.170516666666667,
+        "source_age_minutes": 6.476916666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.876133333333332,
+        "queue_age_minutes": 59.96586666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": 99,
         "freshness_warning": null
@@ -2938,7 +4240,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T07:36:44.231Z",
+        "checked_at": "2026-09-08T08:06:49.615Z",
         "fingerprint": "9ff90a12374cff4ec28c98a452e7fe71b32c84d0b84d13068a08a18efdc88b9b",
         "issue_codes": [],
         "warning_codes": []
@@ -4337,7 +5639,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T06:34:16.000Z",
-          "ingested_at": "2026-09-08T07:36:44.231Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4366,22 +5668,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T07:36:44.231Z"
+          "checked_at": "2026-09-08T08:06:49.615Z"
         }
       ],
       "content_hash": "d798451b3c0709f7331c7f34efc8cb4d42d9afb210d7c0c58449a635d2a5da33",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_SOURCE_SUMMARY_LENGTH"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T07:51:44.231Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T07:36:44.231Z",
+      "updated_at": "2026-09-08T08:06:49.615Z",
       "event_first_seen_at": "2026-09-08T07:06:51.663Z",
       "event_detected_at": "2026-09-08T07:06:51.663Z",
       "event_id": "event-3e4858203e070ff16770",
@@ -4414,20 +5714,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 62.47051666666667,
+        "source_age_minutes": 92.56025,
         "detection_delay_minutes": 32.59438333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.876133333333332,
+        "queue_age_minutes": 59.96586666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 87,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T07:36:44.231Z",
+        "checked_at": "2026-09-08T08:06:49.615Z",
         "fingerprint": "a2c1340f11b0695900fb1cde535b3625cee5e178f54ccbafaa3eed8cae5bf1d1",
         "issue_codes": [],
         "warning_codes": []
@@ -4582,166 +5882,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-550f98293aec9698",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "1bd4f1d944a25bd86cd1ad07c40b14bb8a55b20cce49bc745e0cc34f8b1aa213",
-        "first_failed_at": "2026-09-08T07:06:51.663Z",
-        "failed_at": "2026-09-08T07:06:51.663Z",
-        "retry_after": "2026-09-08T07:21:51.663Z",
-        "retry_count": 1
-      },
-      "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
-      "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
-      "first_seen": "2026-09-08T05:19:28.000Z",
-      "last_updated": "2026-09-08T06:26:38.000Z",
-      "topic": [
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "mdr-nachrichten",
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
-          "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
-          "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T07:03:31.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "2ba7bde655a0ab79ce0650fa975572cca8ec5830ca31592b7fe17cb484eba973",
-          "source_item_id": "d7d59be7dcb9c4682fff5fe96d7177a7e6a524e211703d13ffadd27a32dda9c3",
-          "publisher_id": "mdr",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Mitteldeutschland"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T07:03:31.000Z",
-          "ingested_at": "2026-09-08T07:06:51.663Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-550f98293aec9698-claim-01",
-          "story_id": "wt-550f98293aec9698",
-          "claim": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen: Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist derzeit nicht in Sicht. Die neuen Entwicklungen im Liveticker.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "mdr-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:mdr",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T07:06:51.663Z"
-        }
-      ],
-      "content_hash": "49c981094cf76588ca2e7fb9438b28093eb2c3ef3efaf70239d21e7b43ebbda7",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T07:21:51.663Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T07:06:51.663Z",
-      "event_first_seen_at": "2026-09-08T05:22:10.164Z",
-      "event_detected_at": "2026-09-08T05:22:10.164Z",
-      "event_id": "event-d98ccda8e5e813b1598c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": true,
-          "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "mdr-nachrichten",
-              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 3.3443833333333335,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 104.69165,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T07:06:51.663Z",
-        "fingerprint": "937da7a14b51cfe47d8743875a95df84a883b14eddcec3e87780d4e0c7658bf2",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T07:06:51.663Z",
-      "rejection": {
-        "at": "2026-09-08T07:06:51.663Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -13033,9 +14173,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "dbca7656d23ce1538ca11191e19bb5758041156271939c89554375ef77e7088b",
         "first_failed_at": "2026-09-08T02:37:05.212Z",
-        "failed_at": "2026-09-08T04:52:08.677Z",
-        "retry_after": "2026-09-08T07:52:08.677Z",
-        "retry_count": 4
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T14:06:49.615Z",
+        "retry_count": 5
       },
       "slug": "trump-threatens-to-ban-canadian-bombardier-jets-from-us-market-9f7cb8",
       "title": "Trump threatens to ban Canadian Bombardier jets from US market",
@@ -13069,7 +14209,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T02:24:03.000Z",
-          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -13098,22 +14238,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:52:08.677Z"
+          "checked_at": "2026-09-08T08:06:49.615Z"
         }
       ],
       "content_hash": "7879599c705efdbaa420e315bfc0887532c964284429feaed3d7fe76b9c45861",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 4,
-      "quality_retry_after": "2026-09-08T07:52:08.677Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-08T14:06:49.615Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T04:52:08.677Z",
+      "updated_at": "2026-09-08T08:06:49.615Z",
       "event_first_seen_at": "2026-09-08T02:37:05.212Z",
       "event_detected_at": "2026-09-08T02:37:05.212Z",
       "event_id": "event-ac7d1761c4986673813b",
@@ -13147,23 +14285,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 148.09461666666667,
+        "source_age_minutes": 342.7769166666667,
         "detection_delay_minutes": 13.036866666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 135.05775,
+        "queue_age_minutes": 329.74005,
         "target_publication_minutes": 120,
-        "news_freshness_score": 69,
+        "news_freshness_score": 29,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T04:52:08.677Z",
+        "checked_at": "2026-09-08T08:06:49.615Z",
         "fingerprint": "2a45ea8ed00c8d468ff8003805e6595a4b823ef36186a386eb513307499cc627",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T08:06:49.615Z",
+      "rejection": {
+        "at": "2026-09-08T08:06:49.615Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -18976,23 +20126,23 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "ac0c3f0bd0c47d6922962f12f2fabfe0aa2aa7efee3c5baea29e8540b5644495",
-        "checked_at": "2026-09-08T07:51:43.705Z",
+        "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
+        "checked_at": "2026-09-08T08:06:49.615Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T13:51:43.705Z",
+        "expires_at": "2026-09-08T14:06:49.615Z",
         "sources": [
           {
             "source_id": "france24-en",
             "publisher": "France 24",
             "url": "https://www.france24.com/en/france/20260907-strike-closes-eiffel-tower-paris-exclusion-female-staff-hindu-group-visit-baps",
-            "title": "Eiffel Tower workers go on strike after female staff 'sidelined' for Hindu group's visit",
-            "summary": "The Eiffel Tower was forced to close on Monday after staff went on strike to protest the \"sidelining\" and \"replacement\" of female employees during a recent visit by a Hindu delegation. The Paris landmark's operator said the group had requested that the private visit be organised in such a way as to limit \"interactions with women\".",
+            "title": "Eiffel Tower reopens after Hindu group apologises for 'sidelining' female staff",
+            "summary": "The Eiffel Tower reopened Tuesday after staff walked out over the removal of women colleagues during a visit by a Hindu religious group that later apologised. The iconic Paris monument was forced to close on Monday after staff went on strike to protest the \"sidelining\" of female employees during a recent visit by a Hindu delegation.",
             "source_type": "media_rss",
             "published_at": "2026-09-07T17:08:13.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Geopolitik",
-            "content_hash": "ed5e2f65c3a8b897a77c408966c0585a16520566a6a15cfee5ca486fed574cb7",
+            "content_hash": "aaff2fc5bd200c4bcd2a5763863da63cb10d41d79ce6760e8fd8300b191cce5b",
             "source_item_id": "16156cd0f988d7ae0705b2a9b523fd9858e8fe15c7dcb338638da0ea6686f2d6",
             "publisher_id": "france24",
             "publisher_kind": "public_broadcasting",
@@ -19004,7 +20154,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T17:08:13.000Z",
-            "ingested_at": "2026-09-08T07:36:44.231Z",
+            "ingested_at": "2026-09-08T08:06:49.615Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19013,7 +20163,8 @@
               "independence_established": false
             }
           }
-        ]
+        ],
+        "reviewed_by": "local_relevance_filter"
       },
       "deepening_checks": 1
     },
@@ -26611,13 +27762,13 @@
           "publisher": "France 24",
           "url": "https://www.france24.com/en/tv-shows/business/20260907-volkswagen-s-osnabr%C3%BCck-plant-to-switch-from-cars-to-defence",
           "title": "Volkswagen's Osnabrück plant to switch from cars to defence",
-          "summary": "Crisis-hit Volkswagen has struck a preliminary deal to sell its Osnabrück plant in Lower Saxony to the state government and Israeli investor Aurelius Capital. From mid 2027, the iconic factory is expected to start producing equipment for Rafael Advanced Defence Systems, the company behind the Iron Dome missile defence system. But first, a look at the state of the German economy following far-right AfD's historic election win in Saxony-Anhalt.",
+          "summary": "Crisis-hit Volkswagen has struck a preliminary deal to sell its Osnabrück plant in Lower Saxony to the state government and Israeli investor Aurelius Capital. From mid-2027, the iconic factory is expected to start producing equipment for Rafael Advanced Defence Systems, the company behind the Iron Dome missile defence system. But first, we take a look at the state of the German economy following the far-right AfD's historic election win in Saxony-Anhalt.",
           "source_type": "media_rss",
           "published_at": "2026-09-07T20:52:55.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Geopolitik",
-          "content_hash": "668826e8869a8e26c3767d4946c2689083db227e67c441b71d9d6d98f0df9863",
+          "content_hash": "3e57d86002e67da49fdc910cb64d5eeb48de4136f6bd3371ab1cf7840b2b25bb",
           "source_item_id": "42da25b815a62496db0930aea40d7b917df5d79dfd816dc3b961d131d4e3e772",
           "publisher_id": "france24",
           "publisher_kind": "public_broadcasting",
@@ -26629,7 +27780,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-07T20:52:55.000Z",
-          "ingested_at": "2026-09-07T21:52:05.137Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -26643,7 +27794,7 @@
         {
           "claim_id": "wt-2d8e98904082a279-claim-01",
           "story_id": "wt-2d8e98904082a279",
-          "claim": "Volkswagen's Osnabrück plant to switch from cars to defence: Crisis-hit Volkswagen has struck a preliminary deal to sell its Osnabrück plant in Lower Saxony to the state government and Israeli investor Aurelius Capital. From mid 2027, the iconic factory is expected to start producing equipment for Rafael Advanced Defence Systems, the company behind the Iron Dome missile defence system. But first, a look at the state of the German economy following far-right AfD's historic election win in Saxony-Anhalt.",
+          "claim": "Volkswagen's Osnabrück plant to switch from cars to defence: Crisis-hit Volkswagen has struck a preliminary deal to sell its Osnabrück plant in Lower Saxony to the state government and Israeli investor Aurelius Capital. From mid-2027, the iconic factory is expected to start producing equipment for Rafael Advanced Defence Systems, the company behind the Iron Dome missile defence system. But first, we take a look at the state of the German economy following the far-right AfD's historic election win in Saxony-Anhalt.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "france24-en",
           "source_function": "journalistic_report",
@@ -26658,20 +27809,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-07T21:52:05.137Z"
+          "checked_at": "2026-09-08T08:06:49.615Z"
         }
       ],
-      "content_hash": "e2bad8f3d1ed9990716d7154ce21169aa245d764702c99f123b5339348b07a17",
+      "content_hash": "ffd345649e8c7341055bd39f3b4734156e6350a959d0ac833a7af3932f6b89de",
       "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-07T22:07:05.137Z",
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
       "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-07T21:52:05.137Z",
+      "updated_at": "2026-09-08T08:06:49.615Z",
       "event_first_seen_at": "2026-09-07T21:22:08.446Z",
       "event_detected_at": "2026-09-07T21:22:08.446Z",
       "event_id": "event-3743bb8c52dbbcd6cbae",
@@ -26708,35 +27859,23 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 59.16895,
+        "source_age_minutes": 673.91025,
         "detection_delay_minutes": 29.2241,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.94485,
+        "queue_age_minutes": 644.68615,
         "target_publication_minutes": 120,
-        "news_freshness_score": 88,
-        "freshness_warning": null
+        "news_freshness_score": 0,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-07T21:52:05.137Z",
-        "fingerprint": "1d907b2828a8b3a72f29fefbec8a718dde64911f80775bde37c23493aa80a550",
+        "checked_at": "2026-09-08T08:06:49.615Z",
+        "fingerprint": "d802c6131d0802593fad2b535cdba7b2a8e5ee4a2e8c02aa69925bd68fc3ddcf",
         "issue_codes": [],
         "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-07T21:52:05.137Z",
-      "rejection": {
-        "at": "2026-09-07T21:52:05.137Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
       }
     },
     {
@@ -35020,9 +36159,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T07:51:43.705Z",
+        "checked_at": "2026-09-08T08:06:49.615Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T13:51:43.705Z",
+        "expires_at": "2026-09-08T14:06:49.615Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -76502,7 +77641,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T07:36:44.231Z",
+          "ingested_at": "2026-09-08T08:06:49.615Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -76563,7 +77702,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T07:51:43.705Z"
+          "checked_at": "2026-09-08T08:06:49.615Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -76583,7 +77722,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T07:51:43.705Z"
+          "checked_at": "2026-09-08T08:06:49.615Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -76599,7 +77738,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T07:51:43.705Z",
+      "updated_at": "2026-09-08T08:06:49.615Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -76639,7 +77778,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1364.8390333333334,
+        "queue_age_minutes": 1379.9375333333332,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -76648,7 +77787,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T07:51:43.705Z",
+        "checked_at": "2026-09-08T08:06:49.615Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -97451,10 +98590,10 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+          "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T08:06:43.705Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-08T08:36:49.615Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -97462,7 +98601,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T07:51:43.705Z",
+          "checked_at": "2026-09-08T08:06:49.615Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -97472,9 +98611,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "ab1d0f1922c91148fba8604710aeaa9e87f6412e8c8e9fd292418267a75b35d7",
         "first_failed_at": "2026-09-08T07:51:43.705Z",
-        "failed_at": "2026-09-08T07:51:43.705Z",
-        "retry_after": "2026-09-08T08:06:43.705Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T08:06:49.615Z",
+        "retry_after": "2026-09-08T08:36:49.615Z",
+        "retry_count": 2
       }
     },
     {
@@ -132481,7 +133620,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T07:51:43.705Z",
+          "checked_at": "2026-09-08T08:06:49.615Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -176835,7 +177974,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T07:51:43.705Z",
+          "checked_at": "2026-09-08T08:06:49.615Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -236845,129 +237984,6 @@
       "rejected_at": "2026-09-04T03:21:31.830Z",
       "rejection": {
         "at": "2026-09-04T03:21:31.830Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-7347f5c56c1fbeed",
-      "slug": "iran-krieg-und-nahost-konflikt-alle-nachrichten-im-liveblog-1fbeed",
-      "title": "Iran-Krieg und Nahost-Konflikt: Alle Nachrichten im Liveblog",
-      "first_seen": "2026-09-03T21:58:00.000Z",
-      "last_updated": "2026-09-03T21:58:00.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/ausland/iran-israel-usa-angriff-liveblog-100.html",
-          "title": "Iran-Krieg und Nahost-Konflikt: Alle Nachrichten im Liveblog",
-          "summary": "Erstmals seit Wochen hat es in der Nacht zu Montag wieder gegenseitige Angriffe zwischen USA und Iran gegeben. Alle Entwicklungen aus Nahost im Liveblog.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-03T21:58:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "3f68fe6160e327135dbe5a03d0ebaa621fffb352952ea8578297c1e515357c8b",
-          "source_item_id": "3fa591916af7bc0cbd089a00c970836dfbc068b806f9cad9f92860ea504af5e9",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-03T21:58:00.000Z",
-          "ingested_at": "2026-09-04T01:51:32.529Z",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-7347f5c56c1fbeed-claim-01",
-          "story_id": "wt-7347f5c56c1fbeed",
-          "claim": "Iran-Krieg und Nahost-Konflikt: Alle Nachrichten im Liveblog: Erstmals seit Wochen hat es in der Nacht zu Montag wieder gegenseitige Angriffe zwischen USA und Iran gegeben. Alle Entwicklungen aus Nahost im Liveblog.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "zdfheute-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-04T02:06:22.151Z"
-        }
-      ],
-      "content_hash": "753507398d64cb72b20741b97a3d29b2d2eaac90fffdeba929db2fc850ee8c61",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-04T02:06:22.151Z",
-      "event_first_seen_at": "2026-09-03T22:21:17.010Z",
-      "event_detected_at": "2026-09-03T22:21:17.010Z",
-      "event_id": "event-99beea978d32cc6017ee",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 248.36918333333332,
-        "detection_delay_minutes": 23.2835,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 225.08568333333332,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 48,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-04T02:06:22.151Z",
-      "rejection": {
-        "at": "2026-09-04T02:06:22.151Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
