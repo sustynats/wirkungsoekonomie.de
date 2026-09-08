@@ -1,8 +1,158 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T02:37:05.212Z",
-  "updated_at": "2026-09-08T03:51:50.885Z",
+  "updated_at": "2026-09-08T04:06:45.170Z",
   "stories": [
+    {
+      "story_id": "wt-dbc644779e2aac60",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "07593bb510a11fe2a6cda398d6d7130953acb2c13c05a9f5bb2e1604801e0ed1",
+        "first_failed_at": "2026-09-08T04:06:45.170Z",
+        "failed_at": "2026-09-08T04:06:45.170Z",
+        "retry_after": "2026-09-08T04:21:45.170Z",
+        "retry_count": 1
+      },
+      "slug": "energieversorgung-verband-komplett-leere-gasspeicher-im-februar-sind-moglich-2aac60",
+      "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
+      "first_seen": "2026-09-08T04:01:14.000Z",
+      "last_updated": "2026-09-08T04:01:14.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-energieversorgung-16028927.html",
+          "title": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich",
+          "summary": "Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T04:01:14.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "adcca1f66687dc9b2d0bf73fd8ae68aa820f317837f944b4e166610c6d4a0283",
+          "source_item_id": "5a0b503e8d641bc809c318d01e8bcdf3152569ca56c8718d5d177bf3921191a5",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T04:01:14.000Z",
+          "ingested_at": "2026-09-08T04:06:45.170Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-dbc644779e2aac60-claim-01",
+          "story_id": "wt-dbc644779e2aac60",
+          "claim": "Energieversorgung: Verband: Komplett leere Gasspeicher im Februar sind möglich: Der Herbst steht vor der Tür, die Heizsaison beginnt bald. Wird das Gas reichen für den Winter? Die Gasspeicher sind mäßig gefüllt. Doch es gibt ja noch andere Bezugsquellen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T04:06:45.170Z"
+        }
+      ],
+      "content_hash": "0d3129b7b7f6f050b986c2a1b1ae8be0e740922930757dbae3cb78b8fdcb96e3",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T04:21:45.170Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T04:06:45.170Z",
+      "event_first_seen_at": "2026-09-08T04:06:45.170Z",
+      "event_detected_at": "2026-09-08T04:06:45.170Z",
+      "event_id": "event-9282548dfd75495b433a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 5.5195,
+        "detection_delay_minutes": 5.5195,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T04:06:45.170Z",
+        "fingerprint": "92edb005e438b2462064249d925d378c4102a18972cd9376a88a1d0062f80d57",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T04:06:45.170Z",
+      "rejection": {
+        "at": "2026-09-08T04:06:45.170Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-7d63335e9280ea4e",
       "ai_retry": {
@@ -66875,7 +67025,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T03:37:09.836Z",
+          "ingested_at": "2026-09-08T04:06:45.170Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -66936,7 +67086,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T03:51:50.885Z"
+          "checked_at": "2026-09-08T04:06:45.170Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -66956,7 +67106,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T03:51:50.885Z"
+          "checked_at": "2026-09-08T04:06:45.170Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -66972,7 +67122,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T03:51:50.885Z",
+      "updated_at": "2026-09-08T04:06:45.170Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -67012,7 +67162,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1124.9587,
+        "queue_age_minutes": 1139.86345,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -67021,7 +67171,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T03:51:50.885Z",
+        "checked_at": "2026-09-08T04:06:45.170Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -124504,7 +124654,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T03:51:50.885Z",
+          "checked_at": "2026-09-08T04:06:45.170Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -168858,7 +169008,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T03:51:50.885Z",
+          "checked_at": "2026-09-08T04:06:45.170Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
