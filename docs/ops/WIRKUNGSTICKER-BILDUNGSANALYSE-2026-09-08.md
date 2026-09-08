@@ -46,3 +46,26 @@ Offen bleiben konkrete Gesetzes- und Lehrplanaenderungen, die Ausgestaltung des 
 ## Betriebsschutz
 
 Die waehrend der Recherche eingegangenen automatischen Nachrichtencommits werden vor dem Release integriert. Kein Ueberschreiben des Nachrichtenbestands, der Nutzungskosten, der Quellenregistry oder laufender Jobs. Oeffentliche HTML-, Feed- und Suchdateien entstehen ausschliesslich aus den bestehenden Generatoren. Globale Footer-Normalisierung bleibt Teil des bestehenden Artefaktbuilds und ist keine eigenstaendige inhaltliche Aenderung dieses Auftrags.
+
+## Nachtrag: Version 2, professionelle Lehrkompetenz
+
+Die Angaben oben dokumentieren die Erstveroeffentlichung. Der beauftragte Nachtrag vom 8. September ergaenzt den bestehenden Beitrag, ohne die Erstfassung still zu ersetzen.
+
+- Neuer Abschnitt direkt nach den Bildungszielen: Fachwissen, Fachdidaktik und paedagogisch-psychologisches Wissen; ausdruecklich illustriertes Bruchrechenbeispiel, kein Studienfall. Kognitive und methodische Kompetenzen werden als Bestandteil fachlicher Bildung erklaert.
+- KMK-Standards, Beschlussfassung 07.10.2022: Kompetenzen 1-3 auf S. 7-8 sowie 7-8 auf S. 12-13 am PDF geprueft. Die aktuelle offizielle Uebersicht verlinkt weiterhin diese Fassung und beschreibt fuer 2026 eine Fortschreibung, nicht deren bereits beschlossene Ersatzfassung.
+- Baumert et al. (2010), DOI `10.3102/0002831209345157`: Original-Abstract beim Verlag und bibliografischer Nachweis des Max-Planck-Instituts geprueft; institutseigener Forschungsbericht bestaetigt den Befund. Einjaehriger Laengsschnitt im Mathematikunterricht deutscher zehnter Klassen. Kein Eltern-/Schulunterrichtsvergleich und kein Kausalbeweis fuer formale Abschluesse allein.
+- Abschnitt IV.26 des Programms: gleiche Qualitaetsstandards, halbjaehrliche zentrale Pruefungen und Rueckkehr bei Rueckstaenden bleiben erhalten. Nicht ausgefuehrte Qualifikation, Begleitung, laufende Diagnose und soziale Lerngelegenheiten werden nicht als ausdruecklich ausgeschlossene Angebote dargestellt.
+- Acht Tabellenzeilen, sieben offene Monitoringpunkte. Qualifikation der Unterrichtenden, Qualitaet/Breite des Lernprozesses und nachgewiesene Schuelerkompetenzen werden getrennt geprueft.
+- Wiederholungen gestrafft: rund 1.830 Woerter, neun Minuten berechnete Lesezeit. Die persoenliche Einordnung umfasst weiterhin 250-350 Woerter und lehnt eine unveraenderte Gleichstellung bei nachweislich systematisch unterschrittenen Anforderungen klar ab. Keine pauschale Abwertung heutiger Zeugnisse oder Jugendlicher.
+- Bestehender Publisher schreibt Version 2 mit vollstaendigem `previous_content`, identischer Analyse-ID, Route und Erstveroeffentlichungszeit. Vergleich gegen den vorherigen Datensatz bestaetigt unveraenderte weitere Analysen, Kandidaten und Retry-Queues.
+
+### Quellen- und Technikpruefung des Nachtrags
+
+- 20 Quellen insgesamt: 19 antworten bei der erneuten direkten Linkpruefung mit HTTP 200. Der DOI fuehrt zur korrekten SAGE-Publikation, deren direkter automatisierter HEAD-Abruf mit 403 beantwortet wird; der oeffentliche Original-Abstract war ueber die Verlagsindexierung zugaenglich. Kein Volltextzugriff behauptet, keine Sperre umgangen und keine neue automatische Quelle aktiviert.
+- Monatsgenaue Zeitschriftenangaben werden jetzt als `März 2010` ausgegeben, nicht mit einem erfundenen ersten Monatstag. `month_only` verlangt einen gueltigen Jahres-/Monatswert; Tagesdaten und undatierte Quellen bleiben kompatibel.
+- Zehn beitragsspezifische Tests bestehen: neue Quellen und Abschnittsreihenfolge, Forschungsscope, Hausunterrichtskontrollen, Meinung, Monatsdatum, Versionsarchivierung, Tabellenvalidierung und mobile Semantik. Vollstaendige Nachrichten-/Monitoring- und Umfragetests, Typecheck, Syntaxpruefung der geaenderten Module und Lint bestanden; weiterhin 25 bestehende Language-Audit-Hinweise.
+- Vollstaendiger Pages-Artefaktbuild bestanden: 0 defekte interne Links, Publikations-/Methodenpruefungen, Datenschutz (19.407 Textdateien), Groessengate (830,0 MB). Keine Hosting-, Budget- oder Workflow-Aenderung.
+- Browserpruefung am fertigen Artefakt: 1440, 390 und 320 Pixel; neuer Abschnitt einschliesslich Bruchzeichen, neue Tabellenzeile, persoenliche Einordnung und Versionshinweis. Bei 320 Pixeln 288 Pixel Tabellenzeile und 286 Pixel Zeilenkopf, kein horizontaler Ueberlauf. Keine Browserfehler oder defekten internen Anker. Uebersicht -> Analyse -> Ursprung -> Analyse-Verweis geprueft.
+- Automatische Nachrichtencommits bis `3feb7aaaa2` vor dem Push integriert. Das Produktionsartefakt wird anschliessend von der bestehenden seriellen GitHub-Pages-Pipeline aus dem gepushten Commit gebaut und geprueft. Die globale lokale Build-Normalisierung ist separat wiederherstellbar gesichert, nicht als unbeteiligte Website-Aenderung eingecheckt.
+
+Der angesprochene TTS-Kurzfassungs-Pilot ist eine getrennte Produktueberlegung und nicht Teil dieses Releases. Es wurden weder Audiojobs noch zusaetzliche kostenpflichtige Modellaufrufe gestartet.
