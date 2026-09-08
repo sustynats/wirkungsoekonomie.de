@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T10:26:26.801Z",
-  "updated_at": "2026-09-08T10:26:26.801Z",
+  "public_updated_at": "2026-09-08T10:36:46.558Z",
+  "updated_at": "2026-09-08T10:36:46.558Z",
   "stories": [
     {
       "story_id": "wt-a507ffe4779c1fd4",
@@ -3509,6 +3509,718 @@
     },
     {
       "story_id": "wt-4c0a09f9ce090af7",
+      "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
+      "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
+      "first_seen": "2026-09-08T08:00:21.000Z",
+      "last_updated": "2026-09-08T08:23:27.568Z",
+      "published_at": "2026-09-08T08:23:27.568Z",
+      "updated_at": "2026-09-08T08:23:27.568Z",
+      "topic": [
+        "Wirtschaft",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+          "title": "Schule - Deutschland in neuer Pisa-Studie so schlecht wie nie",
+          "summary": "Deutsche Schüler haben bei der neuen PISA-Bildungsstudie so schlecht wie noch nie abgeschnitten. Das teilte die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mit. Demnach gingen die Leistungen der 15-Jährigen in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen erneut zurück.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T08:00:21.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
+          "source_item_id": "e67863f4c746d2c833223bc449d40c51c28ea8a8ca7108674626a64b3442aeb6",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T08:00:21.000Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+          "title": "Pisa-Studie: Deutschland so schlecht wie nie",
+          "summary": "Die deutschen Ergebnisse der Pisa-Studie 2025 zeigen einen Tiefststand. Ob Naturwissenschaften, Lesen oder Mathe: Deutschland erreicht nur das Durchschnittsniveau der OECD-Staaten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T07:30:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
+          "source_item_id": "06e0f52a9ec646f0a6f87302d0117eb5e8534c952d7538e4980e5fcc7bcca52e",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T07:30:00.000Z",
+          "ingested_at": "2026-09-08T08:22:13.205Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-1",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "Die neue Pisa-Studie meldet für Deutschland den schlechtesten Stand seit Beginn der Erhebungen.",
+          "status": "confirmed_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "excerpt_hash": "8d65be250f0a54268f03",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "97bd6e9306fe35feb255",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "efa5d210f14d66d55600",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:23:27.568Z"
+        },
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-2",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "Die Leistungen der 15-Jährigen sind in Mathematik, Lesen und Naturwissenschaften erneut gesunken.",
+          "status": "confirmed_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "excerpt_hash": "57a234e5601581e531c3",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "excerpt_hash": "cfb6e1e2923774a36242",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "3a84194a3725faa2e428",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:23:27.568Z"
+        },
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-3",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "An der Untersuchung nahmen weltweit mehr als 760.000 Schüler aus 91 Staaten und Regionen teil; in Deutschland waren es rund 6.700 Schüler an etwa 250 Schulen.",
+          "status": "confirmed_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "excerpt_hash": "2128618d6e5518d91318",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "aafa19b1277a3cff5043",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:23:27.568Z"
+        },
+        {
+          "claim_id": "wt-4c0a09f9ce090af7-v1-claim-4",
+          "story_id": "wt-4c0a09f9ce090af7",
+          "claim": "In Deutschland erreichen rund ein Fünftel der Jugendlichen in allen drei Bereichen keine ausreichende Basiskompetenz; in Lesen und Mathe verfehlt etwa ein Drittel die Mindeststandards, in den Naturwissenschaften etwa ein Viertel.",
+          "status": "single_source_claim",
+          "source_id": "zdfheute-nachrichten",
+          "evidence": [
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "a7094e66e8f0b4bcc146",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "excerpt_hash": "30e9ebb3108a6777948c",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T08:23:27.568Z"
+        }
+      ],
+      "event_id": "event-3f8d4c75c0276c438696",
+      "event_first_seen_at": "2026-09-08T08:06:49.615Z",
+      "event_detected_at": "2026-09-08T08:06:49.615Z",
+      "verification_started_at": "2026-09-08T08:23:12.536Z",
+      "publish_ready_at": "2026-09-08T08:23:27.568Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ],
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T08:22:13.205Z",
+        "fingerprint": "4fe85b1a64b11381ad6791cc019ac375405bd080b387e661dbf963aefe1de78b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "3185eadd4789690d6ce9371f4e4ec240b3cd26df3fecd239f6565afcaf171e51",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T08:23:27.568Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+            "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
+            "excerpt_hash": "40d2e352b31b3c69d824d75edeeff9e2b18c62ef2132bcc38d45f8156c10074a",
+            "number_locale": "de",
+            "numbers": [
+              "2000",
+              "760000",
+              "91",
+              "6700",
+              "250",
+              "8.09",
+              "2026"
+            ]
+          },
+          {
+            "source_id": "zdfheute-nachrichten",
+            "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+            "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
+            "excerpt_hash": "91696e96065f1dbb02d6b12ed3c553169016be47c6f74a8eb200f89635f970b8",
+            "number_locale": "de",
+            "numbers": [
+              "8.09",
+              "2026",
+              "9",
+              "30",
+              "2025",
+              "0",
+              "34",
+              "15",
+              "760000",
+              "91",
+              "6700",
+              "250",
+              "486",
+              "19",
+              "465",
+              "464",
+              "2",
+              "4",
+              "5",
+              "6",
+              "48",
+              "2015",
+              "500",
+              "20",
+              "13",
+              "25"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Deutschland ist in der neuen Pisa-Studie nach Angaben zweier Berichte so schlecht wie nie zuvor. Beide Texte verweisen auf die OECD als Urheberin der Studie und beschreiben einen erneuten Rückgang der Leistungen von 15-Jährigen in Mathematik, Lesen und Naturwissenschaften.\n\nDie Berichte nennen außerdem die Größenordnung der Untersuchung: weltweit nahmen mehr als 760.000 Schüler aus 91 Staaten und Regionen teil, in Deutschland rund 6.700 Schüler an etwa 250 Schulen. ZDFheute ergänzt konkrete Werte und ordnet ein, dass ein Teil der Jugendlichen die Basiskompetenzen nicht erreicht.",
+      "analysis": {
+        "story_id": "wt-4c0a09f9ce090af7",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Deutschland verzeichnet in der neuen Pisa-Studie einen historischen Tiefstand. Die Untersuchung erfasst große Schülerzahlen weltweit und in Deutschland.",
+        "detail_summary": "Die Quellen berichten übereinstimmend, dass Deutschland in der neuen Pisa-Studie den schwächsten Stand seit Beginn der Erhebungen erreicht hat. Genannt werden sinkende Leistungen in Mathematik, Lesen und Naturwissenschaften sowie eine große Stichprobe mit rund 6.700 Schülern in Deutschland. Für die Einordnung ist das relevant, weil Bildungsleistungen langfristig auf Chancen, Fachkräfteangebot und soziale Teilhabe wirken können. Der mögliche Wirkpfad verläuft über Kompetenzverluste zu späteren Bildungs- und Arbeitsmarkteffekten. Gleichzeitig bleibt offen, welche Ursachen die Studie genau benennt und wie stark einzelne Politikfelder betroffen sind. Die Evidenz stützt die aktuelle Zustandsbeschreibung, nicht aber schon eine gesicherte Wirkung einzelner Maßnahmen.",
+        "why_relevant": "Die Meldung betrifft die Bildungsleistung eines großen Jahrgangs und damit ein zentrales Zukunfts- und Verteilungsthema mit möglichen Folgen für Arbeitsmarkt, Teilhabe und staatliche Steuerung.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Sinkende Kompetenzwerte bei vielen Jugendlichen können künftige Bildungs- und Teilhabechancen verschlechtern. Der Befund ist groß genug, um soziale Folgekosten plausibel zu machen, aber die Ursachen bleiben offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Die Quelle behandelt keinen direkten Umwelt- oder Klimawirkpfad. Ein indirekter Bezug über künftige Qualifikation ist möglich, aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Bildungsniveau und Basiskompetenzen beeinflussen die demokratische Korrekturfähigkeit, weil Verständlichkeit, Urteilskraft und Informationsverarbeitung davon abhängen. Ein konkreter demokratischer Effekt ist aus der Quelle noch nicht nachgewiesen."
+        },
+        "importance": "hoch",
+        "impact_potential": "Das Thema kann über geringere Kompetenzen bei vielen Jugendlichen spätere Bildungswege, Produktivität und soziale Mobilität beeinflussen.",
+        "impact_risks": [
+          "Schwächere Basiskompetenzen können Übergänge in Ausbildung und Beruf erschweren.",
+          "Ungleichheiten können sich verfestigen, wenn leistungsschwächere Gruppen stärker zurückfallen."
+        ],
+        "mechanisms": [
+          "Kompetenzrückgang in Kernfächern verringert spätere Lernfähigkeit und Abschlusschancen.",
+          "Große Zahl betroffener Schüler erhöht das Systemrisiko für Ausbildung und Arbeitsmarkt."
+        ],
+        "first_order": [
+          "Niedrigere Testergebnisse zeigen eine verschlechterte Kompetenzlage bei 15-Jährigen."
+        ],
+        "second_order": [
+          "Schlechtere Basiskompetenzen können Bildungswege, Ausbildungsreife und spätere Erwerbschancen belasten."
+        ],
+        "third_order": [
+          "Langfristig kann das die soziale Mobilität und die Anpassungsfähigkeit des Arbeitsmarkts schwächen."
+        ],
+        "systemic_relevance": "Die Studie betrifft ein großes, landesweites Bildungssystem und damit einen Bereich mit hohen Rückkopplungen auf Wirtschaft und gesellschaftliche Teilhabe.",
+        "transformation_potential": "Ein belastbarer Reformdruck kann entstehen, wenn Ergebnisse in Lehrpläne, Förderung und Schulpolitik übersetzt werden; die Quelle belegt diese Reaktion aber noch nicht.",
+        "resilience": "Resilienz hängt hier davon ab, ob Schulen und Systeme Basiskompetenzen schnell stabilisieren können. Aus der Meldung ergibt sich eher ein Belastungssignal als ein Beleg für robuste Gegensteuerung.",
+        "side_effects": [
+          "Mehr Förderbedarf an Schulen und mögliche Belastung für Lehrkräfte.",
+          "Mögliche Verschärfung bestehender Bildungsungleichheiten."
+        ],
+        "uncertainties": [
+          "Ursachen der Verschlechterung bleiben in der Meldung offen.",
+          "Aus der Studie folgt noch keine belegte Wirkung einer bestimmten Reform."
+        ],
+        "evidence_level": "hoch für den beschriebenen Befund, mittel für die Einordnung",
+        "attribution": "Die Verschlechterung wird der OECD beziehungsweise der Pisa-Studie zugeschrieben; konkrete Interpretation und Alarmton stammen teils aus der Berichterstattung.",
+        "watch_next": [
+          "Ob Bildungsministerien oder Länder auf die Ergebnisse mit konkreten Maßnahmen reagieren.",
+          "Ob die Originalstudie oder amtliche Stellen die Zahlen und Teilbefunde weiter präzisieren."
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 4",
+          "Agenda 2030/SDG 10",
+          "Agenda 2030/SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung bringt einen neuen, landesweit relevanten Zustandsbefund zur Bildungsleistung mit breiter Betroffenheit und langfristiger Relevanz. Zwei unabhängige Berichte tragen den Kern, auch wenn die Originalstudie hier nicht direkt vorliegt."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T08:22:13.205Z",
+        "media_trigger_fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "alarmierend"
+          ],
+          "source_count": 2,
+          "comparable_source_count": 2,
+          "fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
+          "content_fingerprint": "1cb7a5a0836643169985bee2e6f8339d6fb91c2cb643af40c3e2b7080336765e",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T08:23:27.568Z",
+          "content_hash": "3185eadd4789690d6ce9371f4e4ec240b3cd26df3fecd239f6565afcaf171e51",
+          "source_summary": "Deutschland ist in der neuen Pisa-Studie nach Angaben zweier Berichte so schlecht wie nie zuvor. Beide Texte verweisen auf die OECD als Urheberin der Studie und beschreiben einen erneuten Rückgang der Leistungen von 15-Jährigen in Mathematik, Lesen und Naturwissenschaften.\n\nDie Berichte nennen außerdem die Größenordnung der Untersuchung: weltweit nahmen mehr als 760.000 Schüler aus 91 Staaten und Regionen teil, in Deutschland rund 6.700 Schüler an etwa 250 Schulen. ZDFheute ergänzt konkrete Werte und ordnet ein, dass ein Teil der Jugendlichen die Basiskompetenzen nicht erreicht.",
+          "analysis": {
+            "story_id": "wt-4c0a09f9ce090af7",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Deutschland verzeichnet in der neuen Pisa-Studie einen historischen Tiefstand. Die Untersuchung erfasst große Schülerzahlen weltweit und in Deutschland.",
+            "detail_summary": "Die Quellen berichten übereinstimmend, dass Deutschland in der neuen Pisa-Studie den schwächsten Stand seit Beginn der Erhebungen erreicht hat. Genannt werden sinkende Leistungen in Mathematik, Lesen und Naturwissenschaften sowie eine große Stichprobe mit rund 6.700 Schülern in Deutschland. Für die Einordnung ist das relevant, weil Bildungsleistungen langfristig auf Chancen, Fachkräfteangebot und soziale Teilhabe wirken können. Der mögliche Wirkpfad verläuft über Kompetenzverluste zu späteren Bildungs- und Arbeitsmarkteffekten. Gleichzeitig bleibt offen, welche Ursachen die Studie genau benennt und wie stark einzelne Politikfelder betroffen sind. Die Evidenz stützt die aktuelle Zustandsbeschreibung, nicht aber schon eine gesicherte Wirkung einzelner Maßnahmen.",
+            "why_relevant": "Die Meldung betrifft die Bildungsleistung eines großen Jahrgangs und damit ein zentrales Zukunfts- und Verteilungsthema mit möglichen Folgen für Arbeitsmarkt, Teilhabe und staatliche Steuerung.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "rationale": "Sinkende Kompetenzwerte bei vielen Jugendlichen können künftige Bildungs- und Teilhabechancen verschlechtern. Der Befund ist groß genug, um soziale Folgekosten plausibel zu machen, aber die Ursachen bleiben offen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Die Quelle behandelt keinen direkten Umwelt- oder Klimawirkpfad. Ein indirekter Bezug über künftige Qualifikation ist möglich, aber nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "rationale": "Bildungsniveau und Basiskompetenzen beeinflussen die demokratische Korrekturfähigkeit, weil Verständlichkeit, Urteilskraft und Informationsverarbeitung davon abhängen. Ein konkreter demokratischer Effekt ist aus der Quelle noch nicht nachgewiesen."
+            },
+            "importance": "hoch",
+            "impact_potential": "Das Thema kann über geringere Kompetenzen bei vielen Jugendlichen spätere Bildungswege, Produktivität und soziale Mobilität beeinflussen.",
+            "impact_risks": [
+              "Schwächere Basiskompetenzen können Übergänge in Ausbildung und Beruf erschweren.",
+              "Ungleichheiten können sich verfestigen, wenn leistungsschwächere Gruppen stärker zurückfallen."
+            ],
+            "mechanisms": [
+              "Kompetenzrückgang in Kernfächern verringert spätere Lernfähigkeit und Abschlusschancen.",
+              "Große Zahl betroffener Schüler erhöht das Systemrisiko für Ausbildung und Arbeitsmarkt."
+            ],
+            "first_order": [
+              "Niedrigere Testergebnisse zeigen eine verschlechterte Kompetenzlage bei 15-Jährigen."
+            ],
+            "second_order": [
+              "Schlechtere Basiskompetenzen können Bildungswege, Ausbildungsreife und spätere Erwerbschancen belasten."
+            ],
+            "third_order": [
+              "Langfristig kann das die soziale Mobilität und die Anpassungsfähigkeit des Arbeitsmarkts schwächen."
+            ],
+            "systemic_relevance": "Die Studie betrifft ein großes, landesweites Bildungssystem und damit einen Bereich mit hohen Rückkopplungen auf Wirtschaft und gesellschaftliche Teilhabe.",
+            "transformation_potential": "Ein belastbarer Reformdruck kann entstehen, wenn Ergebnisse in Lehrpläne, Förderung und Schulpolitik übersetzt werden; die Quelle belegt diese Reaktion aber noch nicht.",
+            "resilience": "Resilienz hängt hier davon ab, ob Schulen und Systeme Basiskompetenzen schnell stabilisieren können. Aus der Meldung ergibt sich eher ein Belastungssignal als ein Beleg für robuste Gegensteuerung.",
+            "side_effects": [
+              "Mehr Förderbedarf an Schulen und mögliche Belastung für Lehrkräfte.",
+              "Mögliche Verschärfung bestehender Bildungsungleichheiten."
+            ],
+            "uncertainties": [
+              "Ursachen der Verschlechterung bleiben in der Meldung offen.",
+              "Aus der Studie folgt noch keine belegte Wirkung einer bestimmten Reform."
+            ],
+            "evidence_level": "hoch für den beschriebenen Befund, mittel für die Einordnung",
+            "attribution": "Die Verschlechterung wird der OECD beziehungsweise der Pisa-Studie zugeschrieben; konkrete Interpretation und Alarmton stammen teils aus der Berichterstattung.",
+            "watch_next": [
+              "Ob Bildungsministerien oder Länder auf die Ergebnisse mit konkreten Maßnahmen reagieren.",
+              "Ob die Originalstudie oder amtliche Stellen die Zahlen und Teilbefunde weiter präzisieren."
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 4",
+              "Agenda 2030/SDG 10",
+              "Agenda 2030/SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung bringt einen neuen, landesweit relevanten Zustandsbefund zur Bildungsleistung mit breiter Betroffenheit und langfristiger Relevanz. Zwei unabhängige Berichte tragen den Kern, auch wenn die Originalstudie hier nicht direkt vorliegt."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T08:22:13.205Z",
+            "media_trigger_fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "alarmierend"
+              ],
+              "source_count": 2,
+              "comparable_source_count": 2,
+              "fingerprint": "e3ca5d239c35b926cca023447235997eda5992b0d89ac9acbeb954aad80ddec0",
+              "content_fingerprint": "1cb7a5a0836643169985bee2e6f8339d6fb91c2cb643af40c3e2b7080336765e",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-1",
+              "story_id": "wt-4c0a09f9ce090af7",
+              "claim": "Die neue Pisa-Studie meldet für Deutschland den schlechtesten Stand seit Beginn der Erhebungen.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                  "excerpt_hash": "8d65be250f0a54268f03",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "97bd6e9306fe35feb255",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "efa5d210f14d66d55600",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-2",
+              "story_id": "wt-4c0a09f9ce090af7",
+              "claim": "Die Leistungen der 15-Jährigen sind in Mathematik, Lesen und Naturwissenschaften erneut gesunken.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                  "excerpt_hash": "57a234e5601581e531c3",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                  "excerpt_hash": "cfb6e1e2923774a36242",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "3a84194a3725faa2e428",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-3",
+              "story_id": "wt-4c0a09f9ce090af7",
+              "claim": "An der Untersuchung nahmen weltweit mehr als 760.000 Schüler aus 91 Staaten und Regionen teil; in Deutschland waren es rund 6.700 Schüler an etwa 250 Schulen.",
+              "status": "confirmed_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                  "excerpt_hash": "2128618d6e5518d91318",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "aafa19b1277a3cff5043",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            },
+            {
+              "claim_id": "wt-4c0a09f9ce090af7-v1-claim-4",
+              "story_id": "wt-4c0a09f9ce090af7",
+              "claim": "In Deutschland erreichen rund ein Fünftel der Jugendlichen in allen drei Bereichen keine ausreichende Basiskompetenz; in Lesen und Mathe verfehlt etwa ein Drittel die Mindeststandards, in den Naturwissenschaften etwa ein Viertel.",
+              "status": "single_source_claim",
+              "source_id": "zdfheute-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "a7094e66e8f0b4bcc146",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                },
+                {
+                  "source_id": "zdfheute-nachrichten",
+                  "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                  "excerpt_hash": "30e9ebb3108a6777948c",
+                  "checked_at": "2026-09-08T08:23:27.568Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T08:23:27.568Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+              "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c"
+            },
+            {
+              "source_id": "zdfheute-nachrichten",
+              "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+              "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T08:23:27.568Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+                "content_hash": "26900a20a89d60859283ffad57cab99c40196d44c0d6795c238e637824f8103c",
+                "excerpt_hash": "40d2e352b31b3c69d824d75edeeff9e2b18c62ef2132bcc38d45f8156c10074a",
+                "number_locale": "de",
+                "numbers": [
+                  "2000",
+                  "760000",
+                  "91",
+                  "6700",
+                  "250",
+                  "8.09",
+                  "2026"
+                ]
+              },
+              {
+                "source_id": "zdfheute-nachrichten",
+                "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+                "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
+                "excerpt_hash": "91696e96065f1dbb02d6b12ed3c553169016be47c6f74a8eb200f89635f970b8",
+                "number_locale": "de",
+                "numbers": [
+                  "8.09",
+                  "2026",
+                  "9",
+                  "30",
+                  "2025",
+                  "0",
+                  "34",
+                  "15",
+                  "760000",
+                  "91",
+                  "6700",
+                  "250",
+                  "486",
+                  "19",
+                  "465",
+                  "464",
+                  "2",
+                  "4",
+                  "5",
+                  "6",
+                  "48",
+                  "2015",
+                  "500",
+                  "20",
+                  "13",
+                  "25"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T08:23:27.568Z",
+          "source_count": 2
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "editorial",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-e6cc1adc0bfe5cc8-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "e6cc1adc0bfe5cc8c8c1200befd65e84655fcf6b9ef276b686b6823bca1258c5"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-918ce848229759fb-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "918ce848229759fb6fb3574563a7c675499f57c9c59fd1b5a07b87b4f94a2ef2"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c1f3f12f2823a5e2-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "c1f3f12f2823a5e25c2f48f157864492364dbb4d0dcc46424582a8a86a9991c4"
+        },
+        "source_visual": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-4c0a09f9ce090af7-c59e090bf31d3a2a-source.png",
+          "sha256": "c59e090bf31d3a2ac54b507dd10e808671553abc822e480defa70dcaa32925b8",
+          "width": 2752,
+          "height": 1536,
+          "mime": "image/png",
+          "provider": "higgsfield",
+          "model": "nano_banana_pro",
+          "prompt_version": "woek-editorial-4-contextual",
+          "generated_at": "2026-09-08T08:23:59.855Z"
+        },
+        "fingerprint": "8482a389068daa902c21e6c8b994d063777001de3867586582891689654248ff",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T08:25:23.551Z",
+        "status": "generated"
+      },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "981d3250837636f351aff6f49b5e7081da4e4bf834fbba61a6e94f4ac0841026",
@@ -3517,8 +4229,6 @@
         "retry_after": "2026-09-08T10:50:48.403Z",
         "retry_count": 2
       },
-      "slug": "schule-deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-090af7",
-      "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie",
       "queue_source_repartitions": [
         {
           "version": 1,
@@ -3564,190 +4274,118 @@
           ]
         }
       ],
-      "first_seen": "2026-09-08T08:33:20.000Z",
-      "last_updated": "2026-09-08T10:04:29.000Z",
-      "topic": [
-        "Wirtschaft",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
-          "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie",
-          "summary": "In der neuen PISA-Bildungsstudie schneiden Schülerinnen und Schüler in Deutschland so schlecht ab wie nie zuvor. Wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mitteilte, gingen die Leistungen der 15-Jährigen hierzulande in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen weiter zurück. Auch international wurden neue Tiefstwerte erreicht.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T08:33:20.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "85362fd46fd3b2eeaf2e194ef2e9b16c84dbab99cd39c44f0247972c83986d45",
-          "source_item_id": "e67863f4c746d2c833223bc449d40c51c28ea8a8ca7108674626a64b3442aeb6",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T08:33:20.000Z",
-          "ingested_at": "2026-09-08T08:37:27.504Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "zdfheute-nachrichten",
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
-          "title": "Pisa-Studie: Deutschland so schlecht wie nie",
-          "summary": "Die deutschen Ergebnisse der Pisa-Studie 2025 zeigen einen Tiefststand. Ob Naturwissenschaften, Lesen oder Mathe: Deutschland erreicht nur das Durchschnittsniveau der OECD-Staaten.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T07:30:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
-          "source_item_id": "06e0f52a9ec646f0a6f87302d0117eb5e8534c952d7538e4980e5fcc7bcca52e",
-          "publisher_id": "zdfheute",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T07:30:00.000Z",
-          "ingested_at": "2026-09-08T10:07:26.127Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-4c0a09f9ce090af7-claim-01",
-          "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie: In der neuen PISA-Bildungsstudie schneiden Schülerinnen und Schüler in Deutschland so schlecht ab wie nie zuvor. Wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mitteilte, gingen die Leistungen der 15-Jährigen hierzulande in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen weiter zurück. Auch international wurden neue Tiefstwerte erreicht.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
+      "pending_update": {
+        "detected_at": "2026-09-08T08:37:27.504Z",
+        "content_hash": "7fa8894f7eb486e63fcc9406a54c494820a29ac125418e30e3ba278cd1a589fb",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "publisher": "Deutschlandfunk",
+            "url": "https://www.deutschlandfunk.de/deutschland-in-neuer-pisa-studie-so-schlecht-wie-nie-100.html",
+            "title": "Schule - Deutschland in neuer PISA-Studie so schlecht wie nie",
+            "summary": "In der neuen PISA-Bildungsstudie schneiden Schülerinnen und Schüler in Deutschland so schlecht ab wie nie zuvor. Wie die Organisation für wirtschaftliche Zusammenarbeit und Entwicklung mitteilte, gingen die Leistungen der 15-Jährigen hierzulande in den Teilbereichen Mathematik, Lesen und Naturwissenschaften gegenüber den vorherigen Erhebungen weiter zurück. Auch international wurden neue Tiefstwerte erreicht.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T08:33:20.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "85362fd46fd3b2eeaf2e194ef2e9b16c84dbab99cd39c44f0247972c83986d45",
+            "source_item_id": "e67863f4c746d2c833223bc449d40c51c28ea8a8ca7108674626a64b3442aeb6",
+            "publisher_id": "deutschlandfunk",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T08:33:20.000Z",
+            "ingested_at": "2026-09-08T08:37:27.504Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:deutschlandfunk",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
-        },
-        {
-          "claim_id": "wt-4c0a09f9ce090af7-claim-02",
-          "story_id": "wt-4c0a09f9ce090af7",
-          "claim": "Pisa-Studie: Deutschland so schlecht wie nie: Die deutschen Ergebnisse der Pisa-Studie 2025 zeigen einen Tiefststand. Ob Naturwissenschaften, Lesen oder Mathe: Deutschland erreicht nur das Durchschnittsniveau der OECD-Staaten.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "zdfheute-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:zdfheute",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T10:20:48.403Z"
+          {
+            "source_id": "zdfheute-nachrichten",
+            "publisher": "ZDFheute",
+            "url": "https://www.zdfheute.de/wissen/pisa-studie-2025-ergebnisse-deutschland-tiefstand-ranking-100.html",
+            "title": "Pisa-Studie: Deutschland so schlecht wie nie",
+            "summary": "Die deutschen Ergebnisse der Pisa-Studie 2025 zeigen einen Tiefststand. Ob Naturwissenschaften, Lesen oder Mathe: Deutschland erreicht nur das Durchschnittsniveau der OECD-Staaten.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T07:30:00.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "04b9eee37035be212f7ba07d46f904a850d3803a16baa79f2bf5a27b9bf5cbcb",
+            "source_item_id": "06e0f52a9ec646f0a6f87302d0117eb5e8534c952d7538e4980e5fcc7bcca52e",
+            "publisher_id": "zdfheute",
+            "publisher_kind": "public_broadcasting",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T07:30:00.000Z",
+            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:zdfheute",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "MEDIA_PUBLIC_EXPLANATION_LENGTH",
+          "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+        ],
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-08T10:50:48.403Z",
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T10:20:48.403Z",
+          "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
+          "issue_codes": [],
+          "warning_codes": []
         }
-      ],
-      "content_hash": "7fa8894f7eb486e63fcc9406a54c494820a29ac125418e30e3ba278cd1a589fb",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-08T10:50:48.403Z",
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-08T10:20:48.403Z",
-      "event_first_seen_at": "2026-09-08T08:37:27.504Z",
-      "event_detected_at": "2026-09-08T08:37:27.504Z",
-      "event_id": "event-c4b5ca1a2fb30541bcc7",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 46,
-        "public_relevance": "mittel",
-        "topics": [
-          "Wirtschaft",
-          "Politik"
-        ],
-        "dimensions": [
-          "Mensch",
-          "Planet"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
       },
-      "freshness": {
-        "source_age_minutes": 107.47338333333333,
-        "detection_delay_minutes": 4.125066666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 103.34831666666666,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 78,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T10:20:48.403Z",
-        "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
-        "issue_codes": [],
-        "warning_codes": []
-      }
+      "publication_recovery_history": [
+        {
+          "version": 1,
+          "at": "2026-09-08T10:36:46.558Z",
+          "reason": "PUBLISHED_RECORD_REPLACED_AFTER_REJECTED_CLUSTER_MATCH",
+          "restored_from": {
+            "commit": "54dc6a6ea419e031bc6439937a47830392613216",
+            "path": "data/news/stories.json",
+            "story_id": "wt-4c0a09f9ce090af7",
+            "sha256": "ac75b195ce4e83a10a700035173ce99185e4e2d78256999fff30e72326806dc7"
+          },
+          "preserved_attempt": {
+            "commit": "db483a4774edf346270574419e88e5cdd57a5b7b",
+            "path": "data/news/stories.json",
+            "story_id": "wt-4c0a09f9ce090af7",
+            "sha256": "5d5e104be6378f8467408d98a5e05fe27ee6cc56530d0423917c12a335902eb2"
+          },
+          "original_published_at": "2026-09-08T08:23:27.568Z",
+          "counts_as_publication": false
+        }
+      ]
     },
     {
       "story_id": "wt-60da9d2ff19083c7",

@@ -57,3 +57,27 @@ gesichert. Eine Wiederherstellung muss den inzwischen aktuellen Bot-Stand
 berücksichtigen, den zurückgestellten Updateversuch samt Fehlern erhalten und
 darf keine abweichende neue geprüfte Fassung überschreiben. Kostenjournale bleiben
 unverändert; eine technische Wiederherstellung zählt nicht als Erstveröffentlichung.
+
+## Wiederherstellung nach dem regulären Mittagslauf
+
+Die erfolgreichen Bot-Läufe `34213591762` und `34213704478` enthielten zuletzt
+auf Stand `db483a4774edf346270574419e88e5cdd57a5b7b` weiterhin nur den
+unveröffentlichten Pisa-Entwurf. Der zweite Lauf hatte den Updateversuch erneut
+zurückgestellt und eine ergänzte Quelle durch die reguläre Quellenzuordnung
+separiert. Es gab keine neue Freigabe. Wiederhergestellt wurden sämtliche Felder der
+ursprünglich geprüften Version 1 unverändert: Artikeltext, Analyse, Quellenstand,
+Versionsverlauf, Integritätsprüfung und Veröffentlichungsdatum.
+
+Der aktuelle Entwurf bleibt mit seinem aktuellen Quellenstand, Inhaltsfingerprint,
+Qualitätsfehlern und Retry-Zustand als `pending_update` erhalten. Die dokumentierte
+Quellentrennung bleibt zusätzlich in `queue_source_repartitions` erhalten. Sein
+vollständiger vorheriger Datensatz ist über den genannten Commit und einen
+SHA-256-Fingerprint im internen `publication_recovery_history` nachvollziehbar.
+Eine neue Freigabe für dessen Inhalt wurde damit nicht erteilt.
+
+Die Wiederherstellung änderte keine andere Story, kein Kostenjournal und keine
+Publikationszählung. Nur die technische Revision der öffentlichen Sammlung wird
+erneuert, damit bereits geöffnete Apps die zurückgekehrte Meldung erkennen.
+Das ursprüngliche Artikeldatum bleibt erhalten; es wird kein aktuelles
+inhaltliches Update vorgetäuscht. Der interne Reparaturvermerk wird nicht in den
+Lesertext oder den öffentlichen Story-Datensatz übernommen.
