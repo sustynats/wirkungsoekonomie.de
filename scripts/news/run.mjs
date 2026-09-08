@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { directionInputDiagnostics } from "./direction-assessment.mjs";
 import {
   budgetStage,
   buildAnalysisPrompt,
@@ -490,6 +491,7 @@ export function mediaInputDiagnostics(value) {
 export function analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, story = {}, mediaInput) {
   if (!analysis) return null;
   return {
+    direction_input: directionInputDiagnostics(analysis, story.sources || []),
     publication_depth: analysis.publication_depth || null,
     publication_decision_type: typeof analysis.publication_recommendation,
     publication_decision_value: ['string','boolean','number'].includes(typeof analysis.publication_recommendation)
