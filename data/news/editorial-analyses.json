@@ -26797,13 +26797,14 @@
     "wt-f7d7115a53ff2c2f": {
       "fingerprint": "0ea71472a448a07bb78d90dd83f286f6029c3828610e97f86e67dc315f4aa93f",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-08T15:52:28.416Z",
-      "next_attempt_at": "2026-09-08T16:22:28.416Z",
+      "attempts": 3,
+      "last_attempt_at": "2026-09-08T16:26:48.958Z",
+      "next_attempt_at": "2026-09-08T17:26:48.958Z",
       "quality_errors": [
+        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-cf03acddb911d861": {
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
