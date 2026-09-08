@@ -95,6 +95,16 @@ function formatDate(value, options = {}) {
   }).format(new Date(value));
 }
 
+export function formatEditorialSourceDate(source) {
+  if (!source.published_at) return "Publikationsdatum nicht angegeben";
+  // Journal issues may state a month, not an exact publication day.
+  if (source.document_date_status === "month_only") {
+    if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(source.published_at)) return "Publikationsdatum nicht angegeben";
+    return new Intl.DateTimeFormat("de-DE", { timeZone: "UTC", month: "long", year: "numeric" }).format(new Date(`${source.published_at}-01T00:00:00Z`));
+  }
+  return formatDate(source.published_at, { dateOnly: true });
+}
+
 function firstSourceDate(story) {
   const timestamps = (story.sources || [])
     .filter(source => !["legal_context", "election_calendar", "background"].includes(source.source_role))
@@ -688,7 +698,7 @@ export function editorialAnalysisPage(analysis, story, { nextItem = null } = {})
   const heroSections = renderedSections.filter(item => item.section.placement === "hero").map(item => item.html).join("");
   const sections = renderedSections.filter(item => !item.section.placement).map(item => item.html).join("");
   const contents = renderEditorialContents(analysis);
-  const sourceList = (analysis.source_snapshot || []).map((source) => `<li><a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><span>${escapeHtml({ context: "Institutioneller Kontext / eigener Vorschlag", journalistic_context: "Journalistischer Bericht / attribuierte Angabe", counter_source: "Gegenposition oder kritischer Prüfbericht", research: "Fachlicher Forschungsstand", reference_framework: "Ziel- und Referenzrahmen" }[source.source_function] || (source.primary_source ? "Primärquelle / Selbstauskunft" : "Journalistische oder fachliche Kontextquelle"))} · ${source.editorial_review ? "Dokumentstand " : ""}${source.published_at ? escapeHtml(formatDate(source.published_at, { dateOnly: true })) : "Publikationsdatum nicht angegeben"}${source.editorial_review ? ` · geprüft ${escapeHtml(source.editorial_review.checked_at.slice(0, 10))}` : ""}${source.precise_location ? ` · ${escapeHtml(source.precise_location)}` : ""}</span></li>`).join("");
+  const sourceList = (analysis.source_snapshot || []).map((source) => `<li><a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><span>${escapeHtml({ context: "Institutioneller Kontext / eigener Vorschlag", journalistic_context: "Journalistischer Bericht / attribuierte Angabe", counter_source: "Gegenposition oder kritischer Prüfbericht", research: "Fachlicher Forschungsstand", reference_framework: "Ziel- und Referenzrahmen" }[source.source_function] || (source.primary_source ? "Primärquelle / Selbstauskunft" : "Journalistische oder fachliche Kontextquelle"))} · ${source.editorial_review ? "Dokumentstand " : ""}${escapeHtml(formatEditorialSourceDate(source))}${source.editorial_review ? ` · geprüft ${escapeHtml(source.editorial_review.checked_at.slice(0, 10))}` : ""}${source.precise_location ? ` · ${escapeHtml(source.precise_location)}` : ""}</span></li>`).join("");
   const ledger = (analysis.claim_ledger || []).map((claim) => {
     const linkedSources = (claim.source_ids || []).map((sourceId) => sourcesById.get(sourceId)).filter(Boolean);
     return `<li><div><strong>${escapeHtml(CLAIM_TYPE_LABELS[claim.type] || "Einordnung")}</strong><p>${escapeHtml(claim.claim)}</p></div><p class="news-method-note">Evidenz: ${escapeHtml({ high: "hoch", medium: "mittel", low: "gering", open: "offen" }[claim.evidence_level] || "offen")}${linkedSources.length ? ` · ${linkedSources.map((source) => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}</a>`).join(" · ")}` : ""}${claim.uncertainty ? ` · Grenze: ${escapeHtml(claim.uncertainty)}` : ""}</p></li>`;

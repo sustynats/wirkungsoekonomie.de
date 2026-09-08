@@ -76,6 +76,7 @@ export function editorialResearchSourceErrors(source, storyId) {
     || !Number.isFinite(Date.parse(review.checked_at)) || !review.relevance_note || !review.limitations
     || review.content_hash !== crypto.createHash("sha256").update(String(source.summary || "")).digest("hex")) errors.push("RESEARCH_REVIEW_OPEN");
   const dateExplicitlyOpen = source.published_at === null && source.document_date_status === "not_stated";
+  if (source.document_date_status === "month_only" && !/^\d{4}-(0[1-9]|1[0-2])$/.test(source.published_at || "")) errors.push("RESEARCH_DATE_INVALID");
   if (!dateExplicitlyOpen && (!Number.isFinite(Date.parse(source.published_at)) || Date.parse(source.published_at) > Date.parse(review?.checked_at))) errors.push("RESEARCH_DATE_INVALID");
   return errors;
 }
