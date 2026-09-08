@@ -1,8 +1,146 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T14:28:53.099Z",
-  "updated_at": "2026-09-08T14:28:53.099Z",
+  "updated_at": "2026-09-08T14:52:22.706Z",
   "stories": [
+    {
+      "story_id": "wt-79b8ee139854e82b",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "9432f22398166fd5ff115f3fd480a23cf27b63ba547284122f169256267f0632",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
+        "retry_count": 1
+      },
+      "slug": "hackerangriff-in-berlin-anlaufstelle-fur-burger-und-firmen-geplant-54e82b",
+      "title": "Hackerangriff in Berlin: Anlaufstelle für Bürger und Firmen geplant",
+      "first_seen": "2026-09-08T14:37:42.000Z",
+      "last_updated": "2026-09-08T14:37:42.000Z",
+      "topic": [
+        "Digitalisierung"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-hacker-angriff-anlaufstelle-betroffene-buerger-daten-senat.html",
+          "title": "Hackerangriff in Berlin: Anlaufstelle für Bürger und Firmen geplant",
+          "summary": "Nach dem massiven Cyberangriff auf das Berliner Landesnetz geriet der Senat in die Kritik: Er reagiere zu zögerlich. Nun kündigte der Senat an, eine Anlaufstelle für Betroffene einrichten zu wollen - demnächst.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:37:42.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9e167615f0f5a6fdce0c275317f265ed64ab90f1002c0767f658b5d6a981227a",
+          "source_item_id": "270ddf0035c247a7d48d75cd4ee3beec9e30344f283b396f454cd7f672d8b085",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:37:42.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-79b8ee139854e82b-claim-01",
+          "story_id": "wt-79b8ee139854e82b",
+          "claim": "Hackerangriff in Berlin: Anlaufstelle für Bürger und Firmen geplant: Nach dem massiven Cyberangriff auf das Berliner Landesnetz geriet der Senat in die Kritik: Er reagiere zu zögerlich. Nun kündigte der Senat an, eine Anlaufstelle für Betroffene einrichten zu wollen - demnächst.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "rbb24-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        }
+      ],
+      "content_hash": "bf36d0e52a041563fd6ea4080293b7349719faa53e6e2da44ae2c04b203bc8a7",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "MEDIA_IMPACT_REQUIRED"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T14:52:22.706Z",
+      "event_first_seen_at": "2026-09-08T14:52:22.706Z",
+      "event_detected_at": "2026-09-08T14:52:22.706Z",
+      "event_id": "event-b4bdb0e02259462f4622",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.678433333333333,
+        "detection_delay_minutes": 14.678433333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:52:22.706Z",
+        "fingerprint": "8dc1fc67b4d6b2ce603c3c5a8305a9c0bb659e39149c405430a72181bf44e900",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-42e4a2ecd40874e2",
       "slug": "fairsquare-erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-0874e2",
@@ -592,6 +730,452 @@
       }
     },
     {
+      "story_id": "wt-be3891a57ba98b06",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "da94036a9e0528d5d58d33cbe5165c5b49414761f95b2e438c6bf012037c3cc6",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
+        "retry_count": 1
+      },
+      "slug": "was-steckt-hinter-der-sabotage-welle-in-deutschland-a98b06",
+      "title": "Was steckt hinter der Sabotage-Welle in Deutschland?",
+      "first_seen": "2026-09-08T14:30:00.000Z",
+      "last_updated": "2026-09-08T14:30:00.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/deutschland/strom-sabotage-hybride-angriffe-russland-100.html",
+          "title": "Was steckt hinter der Sabotage-Welle in Deutschland?",
+          "summary": "Deutschland erlebt eine Welle an Sabotage-Angriffen: Anschläge auf Stromnetze, Bahnstrecken oder Flughäfen. Die Urheber sind verschieden - und doch beeinflussen sich die Taten.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:30:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "006734faa9109f6ba9931a3a23c63030ea8e2c10a24311dbcbeadfa950ef4477",
+          "source_item_id": "081d2256d78b234c411a9cf6bbf1f8ccfd6ce6a6807891e4ac430b7ca52b0751",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:30:00.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-be3891a57ba98b06-claim-01",
+          "story_id": "wt-be3891a57ba98b06",
+          "claim": "Was steckt hinter der Sabotage-Welle in Deutschland?: Deutschland erlebt eine Welle an Sabotage-Angriffen: Anschläge auf Stromnetze, Bahnstrecken oder Flughäfen. Die Urheber sind verschieden - und doch beeinflussen sich die Taten.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        }
+      ],
+      "content_hash": "b49b69458308535ba1892242f6cd096e12fb55a9dbdf4e9af779f77be7de9a54",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T14:52:22.706Z",
+      "event_first_seen_at": "2026-09-08T14:52:22.706Z",
+      "event_detected_at": "2026-09-08T14:52:22.706Z",
+      "event_id": "event-fd8f89c6ceba58f6c283",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.378433333333334,
+        "detection_delay_minutes": 22.378433333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:52:22.706Z",
+        "fingerprint": "df6c90a295f76074a10e97e4e8d6239f41a94c8ad4ebd5c91f09d0429da8a182",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:52:22.706Z",
+      "rejection": {
+        "at": "2026-09-08T14:52:22.706Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-f68e09689f78dea6",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "404695a495c1889f0e13eb46fc56ae690cb08a1015dd6426125206375e9064f0",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
+        "retry_count": 1
+      },
+      "slug": "in-allen-bereichen-abgerutscht-potsdam-kommt-nicht-voran-beim-smart-city-ranking-78dea6",
+      "title": "In allen Bereichen abgerutscht: Potsdam kommt nicht voran beim Smart-City-Ranking",
+      "first_seen": "2026-09-08T14:29:40.000Z",
+      "last_updated": "2026-09-08T14:29:40.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/potsdam/landeshauptstadt/in-allen-bereichen-abgerutscht-potsdam-kommt-nicht-voran-beim-smart-city-ranking-16029652.html",
+          "title": "In allen Bereichen abgerutscht: Potsdam kommt nicht voran beim Smart-City-Ranking",
+          "summary": "IT-Sicherheit, Ladesäulen oder Online-Termine: Potsdam hat Nachholbedarf bei der digitalen Transformation. Aber das Ranking des Bitkom-Verbandes zeigt auch Stärken.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:29:40.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "5a172a2b5721528c6c57f155021e0a62d6740bc69a97e9b11a19b7c2d2cbbe1e",
+          "source_item_id": "64fd5e7a0629490ce8b38ef7d1285cee7ac5662f0800222420a56bf5ad4db541",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:29:40.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f68e09689f78dea6-claim-01",
+          "story_id": "wt-f68e09689f78dea6",
+          "claim": "In allen Bereichen abgerutscht: Potsdam kommt nicht voran beim Smart-City-Ranking: IT-Sicherheit, Ladesäulen oder Online-Termine: Potsdam hat Nachholbedarf bei der digitalen Transformation. Aber das Ranking des Bitkom-Verbandes zeigt auch Stärken.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        }
+      ],
+      "content_hash": "9df3ef9827617c0ad6fa3653f36a9706a11889deba765dd314efaf49350b54d9",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T14:52:22.706Z",
+      "event_first_seen_at": "2026-09-08T14:52:22.706Z",
+      "event_detected_at": "2026-09-08T14:52:22.706Z",
+      "event_id": "event-bbcb4cbd064251a434e2",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung",
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.711766666666666,
+        "detection_delay_minutes": 22.711766666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:52:22.706Z",
+        "fingerprint": "c39f225891d09f2e00239269b18fda6a23208eee1ab6a766e55a2a48f1025f23",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:52:22.706Z",
+      "rejection": {
+        "at": "2026-09-08T14:52:22.706Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-b863e148fd2bcf58",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "6712c9c3bda3ec5feb5428906a734c862378242dd94be6f8c5a0e2ab9ad5a36b",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
+        "retry_count": 1
+      },
+      "slug": "sabotageversuche-an-stromnetz-48-jahriger-verdachtiger-in-nordrhein-westfalen-gefasst-2bcf58",
+      "title": "Sabotageversuche an Stromnetz: 48-jähriger Verdächtiger in Nordrhein-Westfalen gefasst",
+      "first_seen": "2026-09-08T14:28:17.000Z",
+      "last_updated": "2026-09-08T14:28:17.000Z",
+      "topic": [
+        "Energie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/sabotageversuche-an-stromnetz--48-jaehriger-verdaechtiger-in-nordrhein-westfalen-gefasst-38221274.html",
+          "title": "Sabotageversuche an Stromnetz: 48-jähriger Verdächtiger in Nordrhein-Westfalen gefasst",
+          "summary": "Nach den Anschlägen auf Umspannwerke und Sabotageversuchen an der Stromversorgung in mehreren Bundesländern ist der gesuchte Tatverdächtige festgenommen worden. Der 48-Jährige wurde am Dienstag nahe dem Kraftwerk Weisweiler in Nordrhein-Westfalen gefasst, wie die Polizei in Köln und die Staatsanwaltschaft im brandenburgischen Cottbus mitteilten. Der 48-Jährige steht im Verdacht, für mehrere Sabotageversuche auf die Stromversorgung in Brandenburg, Nordrhein-Westfalen und Sachsen verantwortlich zu sein.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:28:17.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "85be3c89a68ea6ecdb0209e88acf17299069ed4bd8b954b45785c595aa9d6b74",
+          "source_item_id": "481046fa26cea34f86d18dafb70fea4fcc1aec05a650970c4aa7aa89667879a3",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:28:17.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b863e148fd2bcf58-claim-01",
+          "story_id": "wt-b863e148fd2bcf58",
+          "claim": "Sabotageversuche an Stromnetz: 48-jähriger Verdächtiger in Nordrhein-Westfalen gefasst: Nach den Anschlägen auf Umspannwerke und Sabotageversuchen an der Stromversorgung in mehreren Bundesländern ist der gesuchte Tatverdächtige festgenommen worden. Der 48-Jährige wurde am Dienstag nahe dem Kraftwerk Weisweiler in Nordrhein-Westfalen gefasst, wie die Polizei in Köln und die Staatsanwaltschaft im brandenburgischen Cottbus mitteilten. Der 48-Jährige steht im Verdacht, für mehrere Sabotageversuche auf die Stromversorgung in Brandenburg, Nordrhein-Westfalen und Sachsen verantwortlich zu sein.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        }
+      ],
+      "content_hash": "8acad314a0fefdf5f63a64a3ff3d9b50df42ccc408b5d01119308ef77a44f475",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T14:52:22.706Z",
+      "event_first_seen_at": "2026-09-08T14:52:22.706Z",
+      "event_detected_at": "2026-09-08T14:52:22.706Z",
+      "event_id": "event-989a2d5210cf521ac9bc",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.0951,
+        "detection_delay_minutes": 24.0951,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:52:22.706Z",
+        "fingerprint": "3ec09512deb92ed8fdf0f56645b290e06586c80fc44dc47a48885372b92954f0",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:52:22.706Z",
+      "rejection": {
+        "at": "2026-09-08T14:52:22.706Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
       "story_id": "wt-8067a51cde64ef05",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -742,13 +1326,161 @@
       }
     },
     {
+      "story_id": "wt-02e9df1f53b64b53",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "fb6c57ee3cc3999413ee551a2d90373b37b64c09ad6a0bfa1e2d30cd083fe8bf",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
+        "retry_count": 1
+      },
+      "slug": "kriminalitat-nach-angriff-auf-reinigungskrafte-mann-in-psychiatrie-b64b53",
+      "title": "Kriminalität: Nach Angriff auf Reinigungskräfte - Mann in Psychiatrie",
+      "first_seen": "2026-09-08T14:23:57.000Z",
+      "last_updated": "2026-09-08T14:23:57.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/kriminalitaet--nach-angriff-auf-reinigungskraefte---mann-in-psychiatrie-38222604.html",
+          "title": "Kriminalität: Nach Angriff auf Reinigungskräfte - Mann in Psychiatrie",
+          "summary": "Gewalttat in Schleswig-Holstein: Mit einem machetenartigen Schwert attackierte ein Mann Reinigungskräfte. Ein psychischer Ausnahmezustand wird weiter geprüft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:23:57.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "6831a2a44e4e0f1f32b3135c670b7b8d6db67fd7978cc9e77917b97611a66a88",
+          "source_item_id": "ad917e2db3f6fcc8ffb7d2d917de711d8d5a5b4e0b173c3ec89ba94ff83fc8cc",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:23:57.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-02e9df1f53b64b53-claim-01",
+          "story_id": "wt-02e9df1f53b64b53",
+          "claim": "Kriminalität: Nach Angriff auf Reinigungskräfte - Mann in Psychiatrie: Gewalttat in Schleswig-Holstein: Mit einem machetenartigen Schwert attackierte ein Mann Reinigungskräfte. Ein psychischer Ausnahmezustand wird weiter geprüft.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        }
+      ],
+      "content_hash": "c3b9f078ec0276baf67dc77496d38cd127056495cea2e1cdece6efa12b11eed4",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T14:52:22.706Z",
+      "event_first_seen_at": "2026-09-08T14:52:22.706Z",
+      "event_detected_at": "2026-09-08T14:52:22.706Z",
+      "event_id": "event-6ec4d8616bb8482117e1",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 28.428433333333334,
+        "detection_delay_minutes": 28.428433333333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:52:22.706Z",
+        "fingerprint": "6e41e9b08e648d2d7f2814bae3806bce3bf8334b4e6e42b401aadb790f548866",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:52:22.706Z",
+      "rejection": {
+        "at": "2026-09-08T14:52:22.706Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
       "story_id": "wt-6222b0ef3b2ae801",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "883748211369b62d10c5569fdfd96aaa1524329f52b53daaae58b37b56915a90",
-        "first_failed_at": "2026-09-08T14:28:53.099Z",
-        "failed_at": "2026-09-08T14:28:53.099Z",
-        "retry_after": "2026-09-08T14:43:53.099Z",
+        "fingerprint": "7ebdc32c96b5c0f2d7f261c7438f41784335f7d1044b927151561ccc517f16be",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
         "retry_count": 1
       },
       "slug": "newsblog-zur-landtagswahl-in-sachsen-anhalt-wachsender-zuspruch-fur-bsw-vorschlag-zu-una-2ae801",
@@ -766,7 +1498,7 @@
           "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Wachsender Zuspruch für BSW-Vorschlag zu unabhängigem Ministerpräsidenten",
           "summary": "+++ Nach der SPD haben sich auch die Grünen in Sachsen-Anhalt offen gezeigt für den Vorschlag des BSW zu einem überparteilichen Ministerpräsidenten.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T14:22:00.000Z",
+          "published_at": "2026-09-08T14:47:23.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -782,8 +1514,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T14:22:00.000Z",
-          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "source_published_at": "2026-09-08T14:47:23.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -812,7 +1544,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "e5fca94823cc375c4cc02316a316b768fc3ca06aea9fbc8b250325e774439d60",
@@ -820,15 +1552,15 @@
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
         "AI_DIRECTION_MIXED_PATHS_REQUIRED:democracy",
-        "MEDIA_IMPACT_REQUIRED"
+        "AI_UNSUPPORTED_NUMBER:100"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T14:43:53.099Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T14:28:53.099Z",
       "event_detected_at": "2026-09-08T14:28:53.099Z",
       "event_id": "event-554c6def31137222cd39",
@@ -871,11 +1603,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 6.8849833333333335,
-        "detection_delay_minutes": 6.8849833333333335,
+        "source_age_minutes": 4.9951,
+        "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 23.49345,
         "target_publication_minutes": 120,
         "news_freshness_score": 99,
         "freshness_warning": null
@@ -884,7 +1616,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "e7587f2cc06df4cac7045809794906c00232f2e13e2e548f57b9ec2510a2dc75",
         "issue_codes": [],
         "warning_codes": []
@@ -1225,7 +1957,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T14:12:50.000Z",
-          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1254,7 +1986,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "887a45a6391316195b8bbae22ac81b7b17f2c56a5df572542f0ae897adefa16d",
@@ -1267,7 +1999,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T14:28:53.099Z",
       "event_detected_at": "2026-09-08T14:28:53.099Z",
       "event_id": "event-7a644acddb58aade4ca6",
@@ -1302,20 +2034,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 16.05165,
+        "source_age_minutes": 39.5451,
         "detection_delay_minutes": 16.05165,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 23.49345,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "51b7f50c8bf76a8fa9ce29cf3768786deb4f378a4e39166984584534a94a5423",
         "issue_codes": [],
         "warning_codes": []
@@ -1355,7 +2087,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T14:11:18.000Z",
-          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1384,7 +2116,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "a9de2ea60a1f84ee9a4bdffcb51a2bc21716764f5592bdba0fd47d0a1a60515c",
@@ -1397,7 +2129,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T14:28:53.099Z",
       "event_detected_at": "2026-09-08T14:28:53.099Z",
       "event_id": "event-a4098ac460e111f186e6",
@@ -1433,20 +2165,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 17.584983333333334,
+        "source_age_minutes": 41.07843333333334,
         "detection_delay_minutes": 17.584983333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 23.49345,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "0e10e7d8f6d517857dd0b360c2b83795f8a2cab77b89daac3f945f5637f1d65a",
         "issue_codes": [],
         "warning_codes": []
@@ -1454,6 +2186,14 @@
     },
     {
       "story_id": "wt-5e580dc14277ed8c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ab6a5f1ed1ea65f90ce4b8e88eda0415dec4882544397d600380ca797d5ae6d2",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
+        "retry_count": 1
+      },
       "slug": "nicaragua-im-gaza-prozess-deutschland-verstosst-gegen-das-volkerrecht-77ed8c",
       "title": "Nicaragua im Gaza-Prozess. Deutschland verstößt gegen das Völkerrecht",
       "first_seen": "2026-09-08T14:10:36.000Z",
@@ -1515,20 +2255,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "f7cc57e77a2280a1b4a23cd28cdf052f7cb178f1f93347a04cbb185a0ee4cea0",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T14:28:53.099Z",
       "event_detected_at": "2026-09-08T14:28:53.099Z",
       "event_id": "event-d8afcf2bd71e385c3840",
@@ -1561,23 +2301,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 18.284983333333333,
+        "source_age_minutes": 41.77843333333333,
         "detection_delay_minutes": 18.284983333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 23.49345,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 91,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "1a91123cb6dcce85e3ebad744f11841f14bf22bbdf330b23fe8008e24ea1a4c0",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T14:52:22.706Z",
+      "rejection": {
+        "at": "2026-09-08T14:52:22.706Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -2136,6 +2888,61 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T14:26:20.188Z"
+      },
+      "pending_update": {
+        "detected_at": "2026-09-08T14:52:22.706Z",
+        "content_hash": "46851bebaca3b1f196b14d7795508b16e955f2af90d037eb819c6c68e2c4931c",
+        "sources": [
+          {
+            "source_id": "tagesspiegel-home",
+            "publisher": "Der Tagesspiegel",
+            "url": "https://www.tagesspiegel.de/berlin/nach-hackerangriff-auf-verwaltung-berliner-bezirk-gibt-widerstand-gegen-us-software-auf-16030903.html",
+            "title": "Nach Hackerangriff auf Verwaltung: Forensik-Software läuft weiter nicht in allen Berliner Bezirken",
+            "summary": "Lichtenberg und Steglitz-Zehlendorf hatten sich am Montag geweigert, das vom Senat eingekaufte Spezialprogramm zu nutzen. In Teilen löst sich die Blockade.",
+            "source_type": "media_rss",
+            "published_at": "2026-09-08T14:03:44.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Politik",
+            "content_hash": "f37734d674776bd69701eb3b9d2609f86867e4d8099546dc12f95f052017d029",
+            "source_item_id": "189a1dbc8f9c2bfb9623d7b51d3e1377e70145f195b0ebd4ae03cdd67d9fdd4e",
+            "publisher_id": "tagesspiegel",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "Berlin"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-08T14:03:44.000Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:tagesspiegel",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "consolidation": false,
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.0",
+          "checked_at": "2026-09-08T14:52:22.706Z",
+          "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
+          "issue_codes": [],
+          "warning_codes": []
+        }
       }
     },
     {
@@ -3441,7 +4248,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:55:49.553Z"
+        "retry_after": "2026-09-08T15:12:30.579Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -3471,7 +4278,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T12:12:00.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -3492,7 +4299,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -4160,7 +4967,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:55:43.383Z"
+        "retry_after": "2026-09-08T15:12:25.316Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -4190,7 +4997,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:18:16.000Z",
-            "ingested_at": "2026-09-08T13:36:53.016Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -4211,7 +5018,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
           "issue_codes": [],
           "warning_codes": []
@@ -4222,10 +5029,10 @@
       "story_id": "wt-7aa33715fe94acdb",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "7e511172a4a760fced75b8ed62447ef8ea82ef7f8bac32d1e917cafa2bb42ba8",
-        "first_failed_at": "2026-09-08T14:06:56.372Z",
-        "failed_at": "2026-09-08T14:06:56.372Z",
-        "retry_after": "2026-09-08T14:21:56.372Z",
+        "fingerprint": "0f2eea14e09a8c63dc0a39176445145f7e6f6b0d973371ad155072bba246267b",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
         "retry_count": 1
       },
       "slug": "it-sicherheit-wegner-drangt-nach-cyberangriff-auf-mehr-sicherheit-94acdb",
@@ -4274,14 +5081,14 @@
           "source_id": "tagesspiegel-home",
           "publisher": "Der Tagesspiegel",
           "url": "https://www.tagesspiegel.de/berlin/dpa-it-sicherheit-16030982.html",
-          "title": "IT-Sicherheit: Wegner drängt nach Cyberangriff auf mehr Sicherheit",
-          "summary": "Nach dem Cyberangriff auf die Berliner Verwaltung spricht sich der Regierende Bürgermeister für schnelle Maßnahmen für mehr IT-Sicherheit aus.",
+          "title": "IT-Sicherheit: Berlin will IT-Sicherheit nach Hackerangriff verstärken",
+          "summary": "Nach dem Cyberangriff setzt der Berliner Senat auf Verbesserungen bei der IT-Sicherheit. Für Betroffene des Datenklaus soll es eine Anlaufstelle geben. Wie ist der Stand der Aufarbeitung?",
           "source_type": "media_rss",
           "published_at": "2026-09-08T13:32:36.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
-          "content_hash": "10721a19add3975e5b7d8985d91d0c42519347aa6b6423530c02e4bc029bcf45",
+          "content_hash": "33b944aab3338293d51bd748da463cad9186b83cea39db3de75e0ead95c22a66",
           "source_item_id": "9e7386870d5de7a88644acdedd741810ae60637f490b6d16a38dbf9e6afb810c",
           "publisher_id": "tagesspiegel",
           "publisher_kind": "journalism",
@@ -4294,7 +5101,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T13:32:36.000Z",
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -4323,12 +5130,12 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         },
         {
           "claim_id": "wt-7aa33715fe94acdb-claim-02",
           "story_id": "wt-7aa33715fe94acdb",
-          "claim": "IT-Sicherheit: Wegner drängt nach Cyberangriff auf mehr Sicherheit: Nach dem Cyberangriff auf die Berliner Verwaltung spricht sich der Regierende Bürgermeister für schnelle Maßnahmen für mehr IT-Sicherheit aus.",
+          "claim": "IT-Sicherheit: Berlin will IT-Sicherheit nach Hackerangriff verstärken: Nach dem Cyberangriff setzt der Berliner Senat auf Verbesserungen bei der IT-Sicherheit. Für Betroffene des Datenklaus soll es eine Anlaufstelle geben. Wie ist der Stand der Aufarbeitung?",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "tagesspiegel-home",
           "source_function": "journalistic_report",
@@ -4343,20 +5150,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:06:56.372Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
-      "content_hash": "d158c2256d2283e288e7efe969d2ef68da31e6fa383a0e93c5e001994711e24b",
+      "content_hash": "b2d35364ea19358ada7524bac70b1f804fde9240160a49dcde0e3e806efe5391",
       "published": false,
       "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
         "AI_PUBLICATION_NOT_RECOMMENDED",
         "AI_DUPLICATE_WITHOUT_UPDATE"
       ],
-      "quality_retry_after": "2026-09-08T14:21:56.372Z",
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
       "fresh": true,
       "versions": [],
-      "updated_at": "2026-09-08T14:06:56.372Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T13:51:47.903Z",
       "event_detected_at": "2026-09-08T13:51:47.903Z",
       "event_id": "event-ddfd68bd96ba6b7af67c",
@@ -4373,14 +5180,16 @@
           "Digitalisierung",
           "Geopolitik"
         ],
-        "dimensions": [],
+        "dimensions": [
+          "Demokratie"
+        ],
         "status": "laufende Entwicklung",
         "analysis_type": "ex_ante",
         "news_value_signals": [],
         "context_formats": [],
         "context_only": false,
         "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
         ],
         "materiality_factors": [
           "Zahl und Art möglicher Wirkungsempfänger",
@@ -4390,29 +5199,29 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 34.339533333333335,
+        "source_age_minutes": 79.77843333333334,
         "detection_delay_minutes": 19.198383333333332,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.14115,
+        "queue_age_minutes": 60.58005,
         "target_publication_minutes": 60,
-        "news_freshness_score": 86,
-        "freshness_warning": null
+        "news_freshness_score": 67,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:06:56.372Z",
-        "fingerprint": "9389f998cf47d6fbb406ed28527664329a218d38b46fe2270bc9330a8fd89a1a",
+        "checked_at": "2026-09-08T14:52:22.706Z",
+        "fingerprint": "81a9f83e52dc6d3c3271d0a8f6def1d1c2c47b257e2737ec71bcd81d89179d75",
         "issue_codes": [],
         "warning_codes": []
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T14:06:56.372Z",
+      "rejected_at": "2026-09-08T14:52:22.706Z",
       "rejection": {
-        "at": "2026-09-08T14:06:56.372Z",
+        "at": "2026-09-08T14:52:22.706Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
@@ -5489,7 +6298,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:02:50.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -5510,7 +6319,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "d4b8c47f1b5a6ae4b9e8838edd34c8da0189c7f592bf1dd36369dd436d41ddf2",
           "issue_codes": [],
           "warning_codes": []
@@ -5753,7 +6562,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T13:19:00.000Z",
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5786,7 +6595,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:07:00.000Z",
-          "ingested_at": "2026-09-08T14:06:56.372Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -5815,7 +6624,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:21:47.735Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         },
         {
           "claim_id": "wt-89cc270ef6bc139d-claim-02",
@@ -5835,22 +6644,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:21:47.735Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "6d3f2fd3bd78738a7ffd7700a7bdcc4823786483d0c21534e51897e734d47f69",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T14:36:47.735Z",
+      "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:21:47.735Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T13:51:47.903Z",
       "event_detected_at": "2026-09-08T13:51:47.903Z",
       "event_id": "event-626e50ed9dab5a3077bc",
@@ -5883,20 +6690,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 62.79558333333333,
+        "source_age_minutes": 93.37843333333333,
         "detection_delay_minutes": 32.798383333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 29.9972,
+        "queue_age_minutes": 60.58005,
         "target_publication_minutes": 120,
-        "news_freshness_score": 87,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:21:47.735Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "509bb5f5b357175f84ec6fda0c4b4ee0efb41e8e3e31fd630addb2780cc6ff87",
         "issue_codes": [],
         "warning_codes": []
@@ -6176,7 +6983,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "b05800c449bd8a512a5a6f6ee762cd7476012ccaba182bf8cf990e46bfcb6689",
@@ -6189,7 +6996,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T13:22:17.950Z",
       "event_detected_at": "2026-09-08T13:22:17.950Z",
       "event_id": "event-eb2f1fe8aaf73d379b23",
@@ -6227,20 +7034,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 82.33498333333333,
+        "source_age_minutes": 105.82843333333334,
         "detection_delay_minutes": 15.749166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 66.58581666666667,
+        "queue_age_minutes": 90.07926666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 83,
+        "news_freshness_score": 78,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
         "issue_codes": [],
         "warning_codes": []
@@ -8368,7 +9175,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T11:57:24.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -8389,7 +9196,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -9517,7 +10324,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "63f046175e324d9aac3dc62cf0f0e86b6ea7a260faeb7c3aa7053bcca7dcdfdf",
           "issue_codes": [],
           "warning_codes": []
@@ -11625,7 +12432,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
           "issue_codes": [],
           "warning_codes": []
@@ -12511,7 +13318,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
@@ -12524,7 +13331,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T12:36:46.426Z",
       "event_detected_at": "2026-09-08T12:36:46.426Z",
       "event_id": "event-112dbf80aa5019468e8a",
@@ -12559,20 +13366,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 177.88498333333334,
+        "source_age_minutes": 201.37843333333333,
         "detection_delay_minutes": 65.77376666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 112.11121666666666,
+        "queue_age_minutes": 135.60466666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 63,
-        "freshness_warning": null
+        "news_freshness_score": 58,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
@@ -14409,7 +15216,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T07:55:01.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14562,7 +15369,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "41883468f1df8e94adc5896f7810e5edfdd1396b96807d8bccc9b25d2e316287",
           "issue_codes": [],
           "warning_codes": []
@@ -15189,7 +15996,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "96f5f46101b5d15024d64f70b62c6b87ec43c3b405b72a76ef61e85afd3f579e",
           "issue_codes": [],
           "warning_codes": []
@@ -15608,10 +16415,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "1dba2b38d45fe8b5b2ca32ff56e793346e5ee3cb5606c42d0d020796edea8544",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "fingerprint": "a327a8a54db86cba89d3b1e08cfaca7456185aec3521fd52ee616671ff35ac79",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T20:28:53.099Z",
+        "expires_at": "2026-09-08T20:52:22.706Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -15620,7 +16427,7 @@
             "title": "++ BSW will auch mit AfD Gespräche führen ++",
             "summary": "Für das BSW in Sachsen-Anhalt gibt es laut Fraktionschef Schulze \"keine Brandmauer\" - es will auch mit der AfD über eine mögliche Zusammenarbeit sprechen. Die AfD hatte angekündig…",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T13:30:03.000Z",
+            "published_at": "2026-09-08T14:45:02.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -15636,8 +16443,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T13:30:03.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "source_published_at": "2026-09-08T14:45:02.000Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -16092,7 +16899,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T10:55:46.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -16113,7 +16920,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -17105,7 +17912,7 @@
             "title": "Sabotage am Stromnetz: Polizei nimmt Verdächtigen bei Aachen fest",
             "summary": "Mit selbstgebauten Raketen soll ein Mann immer wieder die Energieversorgung in Deutschland angegriffen haben - auch in Brandenburg. Nun hat die Polizei den verdächtigen 48-Jährigen gefasst.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T13:55:46.000Z",
+            "published_at": "2026-09-08T14:30:20.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -17121,8 +17928,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T13:55:46.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "source_published_at": "2026-09-08T14:30:20.000Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17176,7 +17983,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "aa36a5175a51620ce9b1dd20ae621a54427266dfa6f82d73155af11892f0c358",
           "issue_codes": [],
           "warning_codes": []
@@ -18040,357 +18847,6 @@
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
-      }
-    },
-    {
-      "story_id": "wt-4409a2f6e240d133",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "f6f30d268092bdacada218f1284322c43e04f28efc12ee2cb14420846c09a872",
-        "first_failed_at": "2026-09-08T14:28:53.099Z",
-        "failed_at": "2026-09-08T14:28:53.099Z",
-        "retry_after": "2026-09-08T14:43:53.099Z",
-        "retry_count": 1
-      },
-      "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
-      "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-      "queue_source_repartitions": [
-        {
-          "version": 1,
-          "at": "2026-09-08T14:21:47.735Z",
-          "retained_urls": [
-            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T10:28:28.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T10:28:28.000Z",
-              "ingested_at": "2026-09-08T14:06:56.372Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        }
-      ],
-      "first_seen": "2026-09-08T11:06:00.000Z",
-      "last_updated": "2026-09-08T11:06:00.000Z",
-      "topic": [
-        "Energie",
-        "Geopolitik",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "manager-magazin-news",
-          "publisher": "manager magazin",
-          "url": "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
-          "title": "Amprion, 50Hertz und Co.: Anschläge auf Umspannwerke, Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Nach einer Reihe von Sabotage-Angriffen auf das deutsche Stromnetz hat die Polizei einen Tatverdächtigen festgenommen. Der Mann sei der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:06:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "bcd6d6381d2460aeb0acb36dececaa7a0e8d7abf00bcb232bad9f1861dc42812",
-          "source_item_id": "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
-          "publisher_id": "manager-magazin",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T14:28:53.099Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:manager-magazin",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T14:22:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-          "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T14:22:00.000Z",
-          "ingested_at": "2026-09-08T14:28:53.099Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "tagesschau-access",
-          "publisher": "tagesschau / ARD",
-          "url": "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html",
-          "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Die Polizei hat in der Nähe eines Kraftwerks bei Aachen den mutmaßlichen Strom-Saboteur gefasst. Der 48-Jährige soll bundesweit Anschläge auf das Stromnetz verübt haben. Die Bunde…",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:30:01.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "e6c1f9b026160233f0d57dda61689eafa55b719d9dd02d3e21849b7a03b4a6f8",
-          "source_item_id": "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
-          "publisher_id": "tagesschau",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T11:30:01.000Z",
-          "ingested_at": "2026-09-08T13:22:17.950Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "collection_source_id": "swr-aktuell",
-          "collection_publisher_id": "swr"
-        },
-        {
-          "source_id": "tagesspiegel-home",
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
-          "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
-          "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T10:28:28.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
-          "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
-          "publisher_id": "tagesspiegel",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "Berlin"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T10:28:28.000Z",
-          "ingested_at": "2026-09-08T14:28:53.099Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-01",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Amprion, 50Hertz und Co.: Anschläge auf Umspannwerke, Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach einer Reihe von Sabotage-Angriffen auf das deutsche Stromnetz hat die Polizei einen Tatverdächtigen festgenommen. Der Mann sei der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "manager-magazin-news",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:manager-magazin",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-02",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-03",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Polizei nimmt mutmaßlichen Strom-Saboteur fest: Die Polizei hat in der Nähe eines Kraftwerks bei Aachen den mutmaßlichen Strom-Saboteur gefasst. Der 48-Jährige soll bundesweit Anschläge auf das Stromnetz verübt haben. Die Bunde…",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesschau-access",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesschau",
-            "basis": "publisher_resolved_from_registered_target_url",
-            "independence_established": false,
-            "collection_source_id": "swr-aktuell"
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-04",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest: Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "tagesspiegel-home",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:tagesspiegel",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
-        }
-      ],
-      "content_hash": "2963c9ea1cdc5bb83d5344ad1478a2f00e3012f114919cf39bbe468f67143942",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_IMPACT_REQUIRED"
-      ],
-      "quality_retry_count": 6,
-      "quality_retry_after": "2026-09-08T14:43:53.099Z",
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
-      "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
-      "event_first_seen_at": "2026-09-08T11:37:12.942Z",
-      "event_detected_at": "2026-09-08T11:37:12.942Z",
-      "event_id": "event-287abbb0f0d92c8cb59c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie",
-          "Geopolitik",
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 6.8849833333333335,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 171.66928333333334,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
-        "fingerprint": "57c4c357826ddcf17cf35786e5783317689b836f21fb144db6f4630bed72ead5",
-        "issue_codes": [],
-        "warning_codes": []
       }
     },
     {
@@ -19765,7 +20221,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T09:18:00.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19786,11 +20242,407 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
           "issue_codes": [],
           "warning_codes": []
         }
+      }
+    },
+    {
+      "story_id": "wt-4409a2f6e240d133",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "3c67bad63a738895e36d45cfa11bbbe74940bcca68d1785605e1c5ed8f5a4f9f",
+        "first_failed_at": "2026-09-08T14:52:22.706Z",
+        "failed_at": "2026-09-08T14:52:22.706Z",
+        "retry_after": "2026-09-08T15:07:22.706Z",
+        "retry_count": 1
+      },
+      "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
+      "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-08T14:21:47.735Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T14:06:56.372Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T14:52:22.706Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+              "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+              "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T10:28:28.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+              "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T10:28:28.000Z",
+              "ingested_at": "2026-09-08T14:28:53.099Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
+      "first_seen": "2026-09-08T11:06:00.000Z",
+      "last_updated": "2026-09-08T10:28:28.000Z",
+      "topic": [
+        "Energie",
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "manager-magazin-news",
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+          "title": "Amprion, 50Hertz und Co.: Anschläge auf Umspannwerke, Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Nach einer Reihe von Sabotage-Angriffen auf das deutsche Stromnetz hat die Polizei einen Tatverdächtigen festgenommen. Der Mann sei der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:06:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "bcd6d6381d2460aeb0acb36dececaa7a0e8d7abf00bcb232bad9f1861dc42812",
+          "source_item_id": "945c25b3b43c4ac9687ed74946e71c9d1f0ca1b73559d99ba03316a02ce6596e",
+          "publisher_id": "manager-magazin",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T11:06:00.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T14:47:23.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+          "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T14:47:23.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html",
+          "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Die Polizei hat in der Nähe eines Kraftwerks bei Aachen den mutmaßlichen Strom-Saboteur gefasst. Der 48-Jährige soll bundesweit Anschläge auf das Stromnetz verübt haben. Die Bunde…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:30:01.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "e6c1f9b026160233f0d57dda61689eafa55b719d9dd02d3e21849b7a03b4a6f8",
+          "source_item_id": "063b29e9886bae08f8c3b6ae8403418ca4b76d0a647d60a5ccedb2552abac227",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T11:30:01.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/gesellschaft/dpa-minister-spricht-von-fehlgeleitetem-einzeltater-polizei-nimmt-mutmasslichen-stromnetz-saboteur-fest-16030013.html",
+          "title": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest",
+          "summary": "Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T10:28:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "46485c2a35175b331c00954a70616e1f79f3a033fee55e80515f683f741000f2",
+          "source_item_id": "d8d6c79199d0bc614054b71575c8a9a111a0e9c30a46fe1ecbb9bfd2e2b354ff",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T10:28:28.000Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-01",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Amprion, 50Hertz und Co.: Anschläge auf Umspannwerke, Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach einer Reihe von Sabotage-Angriffen auf das deutsche Stromnetz hat die Polizei einen Tatverdächtigen festgenommen. Der Mann sei der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "manager-magazin-news",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:manager-magazin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        },
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-02",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        },
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-03",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Polizei nimmt mutmaßlichen Strom-Saboteur fest: Die Polizei hat in der Nähe eines Kraftwerks bei Aachen den mutmaßlichen Strom-Saboteur gefasst. Der 48-Jährige soll bundesweit Anschläge auf das Stromnetz verübt haben. Die Bunde…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        },
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-04",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Minister spricht von „fehlgeleitetem Einzeltäter“: Polizei nimmt mutmaßlichen Stromnetz-Saboteur fest: Daniel V. fiel der Polizei in der Nähe des Kraftwerks Weisweiler bei Aachen auf. Nach ihm war tagelang gefahndet worden. Brandenburgs Innenminister sieht vorerst keine Hinweise auf Mittäter.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T14:52:22.706Z"
+        }
+      ],
+      "content_hash": "2963c9ea1cdc5bb83d5344ad1478a2f00e3012f114919cf39bbe468f67143942",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_SUMMARY_SENTENCE_COUNT",
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "quality_retry_count": 7,
+      "quality_retry_after": "2026-09-08T15:07:22.706Z",
+      "reassessment": false,
+      "fresh": false,
+      "pending_reason": "QUALITY_GATE_FAILED",
+      "versions": [],
+      "updated_at": "2026-09-08T14:52:22.706Z",
+      "event_first_seen_at": "2026-09-08T11:37:12.942Z",
+      "event_detected_at": "2026-09-08T11:37:12.942Z",
+      "event_id": "event-287abbb0f0d92c8cb59c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Geopolitik",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 4.9951,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 195.16273333333334,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T14:52:22.706Z",
+        "fingerprint": "57c4c357826ddcf17cf35786e5783317689b836f21fb144db6f4630bed72ead5",
+        "issue_codes": [],
+        "warning_codes": []
       }
     },
     {
@@ -20834,7 +21686,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T13:55:54.364Z"
+        "retry_after": "2026-09-08T15:12:35.983Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:06:56.372Z",
@@ -20863,7 +21715,7 @@
             "research_lane": "blindspot",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T08:39:22.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20884,7 +21736,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "4c3017054cc3cb3b35afc4b945e8378f8031d694648e6d9d28e443d23d85aebb",
           "issue_codes": [],
           "warning_codes": []
@@ -21366,7 +22218,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T09:50:23.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21387,7 +22239,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "205041d2192cf688c27c75b8f7f545b8c4beba211ebffe3aaa3e8bcc272551f5",
           "issue_codes": [],
           "warning_codes": []
@@ -21950,7 +22802,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T08:45:00.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -21971,7 +22823,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "cc072f3eacc31d1e9994dcaa53b6184b0b77527fa2bdf770f01aad2115f6149d",
           "issue_codes": [],
           "warning_codes": []
@@ -22712,7 +23564,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "868ad5265d175cfb161266ef637639c076040c24552ca93728b755dfa7d9702e",
           "issue_codes": [],
           "warning_codes": []
@@ -25547,7 +26399,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "2c652abed92d331a1f98be3450e9c5db1900766730ca5696da85d249e9d161d8",
           "issue_codes": [],
           "warning_codes": []
@@ -27338,7 +28190,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T07:30:00.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -27359,7 +28211,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "723f1de1cc2ace50fe3cb4ebf77ce3b44a61a98ad66c6e3c85cde9c36f834247",
           "issue_codes": [],
           "warning_codes": []
@@ -28265,7 +29117,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -28294,7 +29146,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -28309,7 +29161,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -28350,7 +29202,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 261.4495333333333,
+        "queue_age_minutes": 284.94298333333336,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28359,7 +29211,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -28400,7 +29252,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -28429,7 +29281,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -28444,7 +29296,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -28484,7 +29336,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 261.4495333333333,
+        "queue_age_minutes": 284.94298333333336,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -28493,7 +29345,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -29777,7 +30629,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -30626,7 +31478,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -31332,7 +32184,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -33465,7 +34317,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -37235,7 +38087,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -40958,7 +41810,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
             "summary": "Kurz nach der Abreise von US-Unterhändlern hat Russland die ukrainische Hauptstadt Kiew erneut mit ballistischen Raketen angegriffen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T14:22:00.000Z",
+            "published_at": "2026-09-08T14:47:23.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -40974,8 +41826,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T14:22:00.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "source_published_at": "2026-09-08T14:47:23.000Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -40996,7 +41848,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -41721,7 +42573,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -42875,7 +43727,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T13:45:03.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -42896,7 +43748,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "e6e91a616aae9777f03f38b9bf8d8eeeb51e28412c5ab2d462caa196320ef7a8",
           "issue_codes": [],
           "warning_codes": []
@@ -43838,7 +44690,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -46811,7 +47663,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -47561,7 +48413,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -47794,7 +48646,7 @@
       "verification_started_at": "2026-09-07T23:38:58.564Z",
       "publish_ready_at": "2026-09-07T23:39:13.185Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-08T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -48569,82 +49421,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "50bd828e9a16dbb401e0640a9c748b2b968c2368e309364f821426a039928a08",
-        "checked_at": "2026-09-08T05:22:10.164Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:22:10.164Z",
-        "sources": [
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/politik/deutschland/arbeitsmarkt-fachkraeftemangel-koennte-bis-2029-auf-723.000-steigen/100252475.html",
-            "title": "Arbeitsmarkt: Fachkräftemangel könnte bis 2029 auf 723.000 steigen",
-            "summary": "Die Zahl der Arbeitslosen ist zuletzt gestiegen. Zugleich fehlen in Deutschland vielerorts Fachkräfte. In drei Jahren dürften es einer Untersuchung zufolge noch weit mehr sein.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T05:13:03.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "cbe32416d9119c59366a3921937027cd9c4b0e094357ed5224512e60134f4a06",
-            "source_item_id": "7e21447d3fc624056635b5d06862c43059c6488e11d0cbb2c0cf5aace5b44034",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T05:13:03.000Z",
-            "ingested_at": "2026-09-07T08:37:06.801Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "zdfheute-nachrichten",
-            "publisher": "ZDFheute",
-            "url": "https://www.zdfheute.de/wirtschaft/studie-fachkraeftemangel-berufe-100.html",
-            "title": "Fachkräftemangel könnte sich bis 2029 verdoppeln",
-            "summary": "Der Fachkräftemangel droht für Firmen zum immer größeren Problem zu werden. Laut einer IW-Studie könnten bald 723.000 Mitarbeiter fehlen. Welche Berufe das besonders betrifft.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T10:12:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "f34fa77b0b30031d5a2ec5438d060987c7ca0eb82c8037a6f22669f7f1c40c87",
-            "source_item_id": "0660976e4f58270c8feb92d6580fa9fd0b2e39098f53430dca3f770b313b6e6f",
-            "publisher_id": "zdfheute",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T10:12:00.000Z",
-            "ingested_at": "2026-09-08T05:22:10.164Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:zdfheute",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "1e35e4c2c361abc5134938c2a027bd50bcae99d7e956e0f906ae8940bc76a9eb",
+        "expires_at": "2026-09-08T20:52:22.706Z",
         "sources": [
           {
             "source_id": "wiwo-schlagzeilen",
@@ -48712,24 +49491,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
-          "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-61bb6c2918c26f16",
@@ -49149,9 +49913,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T20:28:53.099Z",
+        "expires_at": "2026-09-08T20:52:22.706Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -52617,7 +53381,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -53874,7 +54638,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -54435,7 +55199,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -55944,7 +56708,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -57150,7 +57914,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -58276,7 +59040,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -58297,7 +59061,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -58817,7 +59581,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -59536,7 +60300,7 @@
             "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
             "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T14:22:00.000Z",
+            "published_at": "2026-09-08T14:47:23.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -59552,8 +60316,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T14:22:00.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "source_published_at": "2026-09-08T14:47:23.000Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -59574,7 +60338,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -62031,7 +62795,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -62206,7 +62970,7 @@
       "verification_started_at": "2026-09-07T18:54:41.209Z",
       "publish_ready_at": "2026-09-07T18:55:00.130Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-08T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -63439,10 +64203,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "bbecad2a935d66f8319e42aae53fbaeac8283e26465e78cb76fdd3d6c7905507",
-        "checked_at": "2026-09-08T05:22:10.164Z",
+        "fingerprint": "fe5acfcc458471f3b37a99f85c93ef27048a84f8b64987e1ba0107e2773acd70",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:22:10.164Z",
+        "expires_at": "2026-09-08T20:52:22.706Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -63479,62 +64243,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "86d6cde95af25600235abf1fc46173fba96b269e699d1497546419e553aa67e1",
-        "sources": [
-          {
-            "source_id": "mdr-nachrichten",
-            "publisher": "MDR",
-            "url": "https://www.mdr.de/nachrichten/sachsen/chemnitz/news-haft-klinik-evakuierung,explosion-polizei-102.html",
-            "title": "Explosion in Chemnitzer Wohnhaus: Tatverdächtiger kommt in Haftklinik",
-            "summary": "Nach der Explosion in einem Mehrfamilienhaus in Chemnitz ist der mutmaßliche Verursacher in einem Haftklinikum untergebracht worden. Die Kripo ermittelt weiter.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T16:40:27.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "24b7806c875ed999a22635dc07137c5a3f86e2ee4108fcc302dd7efbf96de4e0",
-            "source_item_id": "06ed95a507d59a42327dd5a2e903b725ef7fbb05bd28572a0312b68036571bce",
-            "publisher_id": "mdr",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Mitteldeutschland"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T16:40:27.000Z",
-            "ingested_at": "2026-09-07T18:52:11.443Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:mdr",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
-          "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-ab8e484fc06cc08f",
@@ -64167,7 +64876,7 @@
       "verification_started_at": "2026-09-07T18:37:49.197Z",
       "publish_ready_at": "2026-09-07T18:38:06.030Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-08T18:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -64514,10 +65223,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "aaf213b956348dd003cb2908f5807482a87d14461ae8f5c3b72a26a630861f29",
-        "checked_at": "2026-09-08T05:22:10.164Z",
+        "fingerprint": "d06fdc8f362fc6a5f6c1266058357f873d9a310b5c4946bfb3a358b2b2c64edc",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:22:10.164Z",
+        "expires_at": "2026-09-08T20:52:22.706Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -64554,62 +65263,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "238fdc27afca6b53d3f4d672050540c010c5ff707f856129a54947b1afe1b155",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/bayern/handgranatenexplosion--nach-explosion-in-augsburg-noch-kein-verdaechtiger-ermittelt-38214916.html",
-            "title": "Handgranatenexplosion: Nach Explosion in Augsburg noch kein Verdächtiger ermittelt",
-            "summary": "Das LKA bestätigt: Bei der Explosion in Augsburg wurde eine Handgranate eingesetzt. Noch gibt es keinen Tatverdächtigen – die Hintergründe bleiben weiter unklar.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T08:30:59.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "40a7a3433419526c3e7387f89857ac018dd503cbd436c46fd50fedd543b185a5",
-            "source_item_id": "0460c4f3ad53cf7daaf6f0b63bf4b35cd4b9a76c03953999148f62da9cd55c19",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T08:30:59.000Z",
-            "ingested_at": "2026-09-07T08:37:06.801Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
-          "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-49f028aa3748119b",
@@ -66134,9 +66788,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T20:28:53.099Z",
+        "expires_at": "2026-09-08T20:52:22.706Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -70812,7 +71466,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -75349,7 +76003,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -81454,7 +82108,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -90018,7 +90672,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -92753,7 +93407,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -95113,7 +95767,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -95854,7 +96508,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -107750,7 +108404,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T14:28:53.099Z",
+          "ingested_at": "2026-09-08T14:52:22.706Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -107811,7 +108465,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -107831,7 +108485,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T14:28:53.099Z"
+          "checked_at": "2026-09-08T14:52:22.706Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -107847,7 +108501,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T14:28:53.099Z",
+      "updated_at": "2026-09-08T14:52:22.706Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -107887,7 +108541,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1761.9956,
+        "queue_age_minutes": 1785.48905,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -107896,7 +108550,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T14:28:53.099Z",
+        "checked_at": "2026-09-08T14:52:22.706Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -128163,7 +128817,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -128864,7 +129518,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -129618,7 +130272,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-08T14:28:53.099Z",
+            "ingested_at": "2026-09-08T14:52:22.706Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -129639,7 +130293,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -130302,7 +130956,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -138185,7 +138839,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -164072,7 +164726,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -208426,7 +209080,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T14:28:53.099Z",
+          "checked_at": "2026-09-08T14:52:22.706Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
