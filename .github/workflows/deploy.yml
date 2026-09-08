@@ -19,6 +19,11 @@ on:
         required: false
         default: false
         type: boolean
+      ticker_commit:
+        description: Exact successfully pushed commit for a ticker-only release (empty uses the triggering commit)
+        required: false
+        default: ""
+        type: string
 
 permissions:
   contents: read
@@ -37,9 +42,33 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       ticker_only: ${{ steps.release-mode.outputs.ticker_only }}
+      release_commit: ${{ steps.release-source.outputs.commit }}
     steps:
+      - name: Validate requested ticker commit
+        env:
+          TICKER_COMMIT: ${{ inputs.ticker_commit }}
+          TICKER_ONLY: ${{ inputs.ticker_only }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -n "$TICKER_COMMIT" ]]; then
+            [[ "$GITHUB_EVENT_NAME" == "workflow_dispatch" && "$TICKER_ONLY" == "true" && "$TICKER_COMMIT" =~ ^[0-9a-f]{40}$ ]] || { echo "An exact commit override is only allowed for a ticker-only dispatch." >&2; exit 1; }
+          fi
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ticker_commit || github.sha }}
+      - name: Verify and record release commit
+        id: release-source
+        env:
+          EXPECTED_COMMIT: ${{ inputs.ticker_commit || github.sha }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          RELEASE_COMMIT="$(git rev-parse HEAD)"
+          [[ "$RELEASE_COMMIT" =~ ^[0-9a-f]{40}$ && "$RELEASE_COMMIT" == "$EXPECTED_COMMIT" ]] || { echo "Checkout does not match the requested release commit." >&2; exit 1; }
+          echo "commit=$RELEASE_COMMIT" >> "$GITHUB_OUTPUT"
+          printf '### Verified release source\n\nSource commit: `%s`\n\nTrigger commit: `%s`\n' "$RELEASE_COMMIT" "$GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"
       - name: Select release path
         id: release-mode
         env:
@@ -333,6 +362,15 @@ jobs:
     steps:
       - name: Checkout committed ticker
         uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.build.outputs.release_commit }}
+      - name: Verify notification source
+        env:
+          RELEASE_COMMIT: ${{ needs.build.outputs.release_commit }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_COMMIT" =~ ^[0-9a-f]{40}$ && "$(git rev-parse HEAD)" == "$RELEASE_COMMIT" ]] || { echo "Notification checkout does not match the deployed release source." >&2; exit 1; }
       - name: Notify subscribed Wirkungsticker apps
         env:
           WOEK_NEWS_PUSH_ADMIN_TOKEN: ${{ secrets.WOEK_NEWS_PUSH_ADMIN_TOKEN }}
