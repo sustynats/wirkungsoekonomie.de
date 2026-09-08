@@ -24165,8 +24165,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T05:54:32.815Z",
-      "next_attempt_at": "2026-09-08T06:09:32.815Z",
+      "last_attempt_at": "2026-09-08T06:25:28.716Z",
+      "next_attempt_at": "2026-09-08T06:40:28.716Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -24200,14 +24200,15 @@
     "wt-de413d33343f350b": {
       "fingerprint": "11f50deb25a1b01e51b0ef684201e4cc6dcb708111c8fd7f40f7dad9adc97845",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-08T05:54:32.815Z",
-      "next_attempt_at": "2026-09-08T06:24:32.815Z",
+      "attempts": 3,
+      "last_attempt_at": "2026-09-08T06:25:28.716Z",
+      "next_attempt_at": "2026-09-08T07:25:28.716Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_IMPACT_VISUAL_REQUIRED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_IMPACT_VISUAL_REQUIRED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
