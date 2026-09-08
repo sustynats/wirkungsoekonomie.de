@@ -1,8 +1,985 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T21:36:51.819Z",
-  "updated_at": "2026-09-08T23:24:22.430Z",
+  "public_updated_at": "2026-09-08T23:53:58.173Z",
+  "updated_at": "2026-09-08T23:53:58.173Z",
   "stories": [
+    {
+      "story_id": "wt-a0703aa9051cf40d",
+      "slug": "krieg-funf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-1cf40d",
+      "title": "Krieg - Fünf Todesoper bei neuen russischen Luftangriffen auf Kiew",
+      "first_seen": "2026-09-08T23:40:28.000Z",
+      "last_updated": "2026-09-08T23:55:11.058Z",
+      "published_at": "2026-09-08T23:55:11.058Z",
+      "updated_at": "2026-09-08T23:55:11.058Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+          "title": "Krieg - Fünf Todesoper bei neuen russischen Luftangriffen auf Kiew",
+          "summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T23:40:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "32b010b81662f74109242e8a944b7ddfeccba516abedea339ecbe67f0d6bd8d3",
+          "source_item_id": "0af897f65e66b03a41018d13dba1f75d075de005db168a122b76c1602b5cd914",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T23:40:28.000Z",
+          "ingested_at": "2026-09-08T23:53:58.173Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a0703aa9051cf40d-v1-claim-1",
+          "story_id": "wt-a0703aa9051cf40d",
+          "claim": "Bei neuen russischen Luftangriffen auf Kiew sind nach Behördenangaben fünf Menschen getötet worden.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+              "excerpt_hash": "a1c4d37c36dede366fce",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T23:55:11.058Z"
+        },
+        {
+          "claim_id": "wt-a0703aa9051cf40d-v1-claim-2",
+          "story_id": "wt-a0703aa9051cf40d",
+          "claim": "In den Berichten ist zudem von 35 Verletzten die Rede.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+              "excerpt_hash": "d1c2a051b0619000c4a2",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T23:55:11.058Z"
+        },
+        {
+          "claim_id": "wt-a0703aa9051cf40d-v1-claim-3",
+          "story_id": "wt-a0703aa9051cf40d",
+          "claim": "Demnach wurden 14 Hochhäuser von Raketen oder Drohnen getroffen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+              "excerpt_hash": "d1c2a051b0619000c4a2",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T23:55:11.058Z"
+        },
+        {
+          "claim_id": "wt-a0703aa9051cf40d-v1-claim-4",
+          "story_id": "wt-a0703aa9051cf40d",
+          "claim": "In Sumy gab es bei einer Drohnenattacke auf einen Zug zehn Verletzte.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+              "excerpt_hash": "d1c2a051b0619000c4a2",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T23:55:11.058Z"
+        },
+        {
+          "claim_id": "wt-a0703aa9051cf40d-v1-claim-5",
+          "story_id": "wt-a0703aa9051cf40d",
+          "claim": "DTEK berichtete nach einem russischen Angriff vom Komplettausfall eines Wärmekraftwerks, nannte aber keinen Ort.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+              "excerpt_hash": "d831358088c08bafbb86",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T23:55:11.058Z"
+        }
+      ],
+      "event_id": "event-708788e668b1b1cab317",
+      "event_first_seen_at": "2026-09-08T23:53:58.173Z",
+      "event_detected_at": "2026-09-08T23:53:58.173Z",
+      "verification_started_at": "2026-09-08T23:54:57.557Z",
+      "publish_ready_at": "2026-09-08T23:55:11.058Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T23:53:58.173Z",
+        "fingerprint": "f991a83f7d5fc3eaa6ea7d3a2249479bd512f74d866008fe422557334029f3d9",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob weitere Behördenangaben zu Toten, Verletzten und Schäden vorliegen.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "neue bestätigte Opfer- oder Schadenszahlen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d087efd2b63c83a8",
+          "announced_at": "2026-09-08T23:40:28.000Z",
+          "follow_up_date": "2026-09-15T23:55:11.058Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es Angaben zu genauen Orten, betroffenen Gebäuden oder zur Lage in Sumy gibt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "präzisierte Orts- und Schadenszuordnung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-d28485a4496d4c16",
+          "announced_at": "2026-09-08T23:40:28.000Z",
+          "follow_up_date": "2026-09-15T23:55:11.058Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "2a35cf633a2c85bb9eaef7db87fb1bb85267d763323a4f66bc2760da026cd033",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T23:55:11.058Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+            "content_hash": "32b010b81662f74109242e8a944b7ddfeccba516abedea339ecbe67f0d6bd8d3",
+            "excerpt_hash": "77e9d3d922dc53ae9ea147f6332e22da5682cd5b0e14f671dbe512eae4804253",
+            "number_locale": "de",
+            "numbers": [
+              "35",
+              "14",
+              "9.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden. In den vorliegenden Angaben ist außerdem von 35 Verletzten die Rede. Demnach wurden 14 Hochhäuser von Raketen oder Drohnen getroffen.\n\nEin weiteres Angriffsziel war laut Bericht die Stadt Sumy im Osten der Ukraine. Dort gab es bei einer Drohnenattacke auf einen Zug zehn Verletzte. Der staatliche ukrainische Stromversorger DTEK meldete zudem den Komplettausfall eines Wärmekraftwerks nach einem russischen Angriff, nannte aber keinen Ort.",
+      "analysis": {
+        "story_id": "wt-a0703aa9051cf40d",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Russische Luftangriffe auf Kiew haben nach Behördenangaben fünf Tote und 35 Verletzte verursacht. Zusätzlich wurden 14 Hochhäuser getroffen; in Sumy gab es bei einem Angriff auf einen Zug zehn Verletzte.",
+        "detail_summary": "Der Bericht meldet neue russische Luftangriffe auf Kiew mit fünf Toten und 35 Verletzten. Genannt werden auch 14 getroffene Hochhäuser sowie ein weiterer Angriff auf einen Zug in Sumy mit zehn Verletzten. Zusätzlich berichtet DTEK von einem Komplettausfall eines Wärmekraftwerks, ohne Ortsangabe. Für die Einordnung bleibt offen, wie viele Schäden bereits unabhängig bestätigt sind und ob weitere Folgen folgen. Materiell relevant ist der Befund wegen der Zahl der Betroffenen, der Schäden an Wohngebäuden und möglicher Folgen für Infrastruktur und Versorgung; die Evidenz bleibt hier aber auf eine journalistische Meldung mit Behördenbezug begrenzt.",
+        "why_relevant": "Neue tödliche Luftangriffe mit mehreren Betroffenen und Schäden an Wohn- und Infrastruktur sind materiell relevant für Schutz, Versorgung und Kriegsverlauf.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "monitoring",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Tote, Verletzte und Schäden an Wohngebäuden verschlechtern unmittelbar Schutz, Gesundheit und Alltagsstabilität der Betroffenen.",
+          "positive_path": {
+            "mechanism": "Einordnung und schnelle Hilfe können Such-, Rettungs- und Versorgungsmaßnahmen auslösen und Schäden begrenzen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Weitere Angriffe erhöhen Verletzungen, Todesrisiko, Vertreibung und Belastung für Notfall- und Gesundheitsstrukturen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Der Bericht nennt einen Komplettausfall eines Wärmekraftwerks und damit ein mögliches Risiko für Energieversorgung und Emissionen bei Wiederaufbau.",
+          "positive_path": {
+            "mechanism": "Schnelle Reparatur kann Ausfälle begrenzen und Versorgung stabilisieren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Angriffe auf Energieanlagen können Versorgungslücken, Zusatzemissionen und Folgeschäden an Netzen verstärken.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Der Angriff auf zivile Ziele und Infrastruktur kann staatliche Handlungsfähigkeit, Schutzversprechen und öffentliche Sicherheit unter Druck setzen.",
+          "positive_path": {
+            "mechanism": "Dokumentation und Berichterstattung können Aufklärung und Rechenschaft unterstützen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Fortgesetzte Angriffe schwächen Sicherheitsgefühl, Verwaltungskapazität und demokratische Korrekturfähigkeit im Kriegskontext.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "importance": "hoch",
+        "impact_potential": "Der Befund kann kurzfristig zusätzliche Rettungs-, Reparatur- und Schutzmaßnahmen auslösen und die Lage in Kiew und Sumy verschärfen. Er hat zugleich Potenzial für weitere Versorgungsausfälle und politische Reaktionen.",
+        "impact_risks": [
+          "Weitere Opfer und Verletzungen",
+          "Folgeschäden an Wohnraum und Energieversorgung",
+          "Verstärkung von Flucht- und Sicherheitsdruck"
+        ],
+        "mechanisms": [
+          "Luftangriffe verursachen direkte körperliche Schäden und Gebäudeverluste.",
+          "Treffer auf Infrastruktur können Strom- und Wärmelieferungen unterbrechen.",
+          "Berichte über Opfer können Alarm- und Schutzmaßnahmen beschleunigen."
+        ],
+        "first_order": [
+          "Tote, Verletzte und zerstörte oder beschädigte Gebäude",
+          "Ausfall eines Wärmekraftwerks",
+          "Akute Rettungs- und Versorgungsmaßnahmen"
+        ],
+        "second_order": [
+          "Belastung von Kliniken, Notdiensten und kommunaler Infrastruktur",
+          "Mögliche Einschränkungen bei Strom, Wärme und Alltagsversorgung",
+          "Erhöhter Schutz- und Evakuierungsbedarf"
+        ],
+        "third_order": [
+          "Längere Reparatur- und Wiederaufbaukosten",
+          "Anhaltende Unsicherheit für Zivilbevölkerung",
+          "Mögliche Verschärfung von Kriegsfolgen für regionale Stabilität"
+        ],
+        "systemic_relevance": "Die Meldung berührt zugleich zivile Sicherheit, Wohnraum, Energieversorgung und die Belastbarkeit kommunaler und staatlicher Notfallstrukturen. Wegen der Zahl der Betroffenen und der möglichen Kaskaden ist die Systemrelevanz erhöht, auch wenn die Evidenz zunächst nur aus einer journalistischen Meldung stammt.",
+        "transformation_potential": "Kein Transformationsimpuls im positiven Sinn, sondern ein möglicher weiterer Abbau von Schutz- und Versorgungsstrukturen durch Kriegseinwirkung.",
+        "resilience": "Resilienz hängt hier vor allem von funktionierenden Rettungsdiensten, intakter Energieinfrastruktur und belastbarer ziviler Koordination ab. Die Meldung zeigt, dass diese Puffer bereits unter Druck stehen.",
+        "side_effects": [
+          "Mehr Belastung für Rettung und Gesundheitswesen",
+          "Mögliche Unterbrechungen bei Wärme und Strom",
+          "Psychische Belastung und Unsicherheit im Umfeld der Angriffe"
+        ],
+        "uncertainties": [
+          "Die Angaben beruhen auf einer einzelnen journalistischen Quelle mit Behördenbezug.",
+          "Der genaue Ort des Kraftwerksausfalls ist nicht genannt.",
+          "Unklar bleibt, ob weitere bestätigte Opfer- oder Schadenszahlen folgen."
+        ],
+        "evidence_level": "low to medium",
+        "attribution": "Deutschlandfunk berichtet unter Berufung auf Behördenangaben über Tote und Verletzte; DTEK wird als Quelle für den Kraftwerksausfall genannt. Die Formulierungen sind indirekte Wiedergaben in der Meldung, keine eigenständige Vor-Ort-Bestätigung.",
+        "watch_next": [
+          "Weitere Behördenangaben zu Opfern und Schäden",
+          "Meldungen zu Reparaturen oder Stromausfällen",
+          "Bestätigungen zu den Angriffsorten in Kiew und Sumy"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "cascades",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neue Todes- und Verletztenzahlen sowie Schäden an Wohn- und Energieinfrastruktur sind materiell und aktuell; der Bericht bringt eine neue Lageinformation, nicht nur Wiederholung."
+        },
+        "visuals": {
+          "key_figures": [
+            {
+              "label": "Tote in Kiew",
+              "value": "fünf",
+              "unit": "Menschen",
+              "context": "Nach Behördenangaben bei den Angriffen in Kiew",
+              "claim_id": "wt-a0703aa9051cf40d-claim-01"
+            }
+          ],
+          "affected_groups": [
+            "kinder_jugend",
+            "aeltere",
+            "kommunen",
+            "staat"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T23:53:58.173Z",
+        "media_trigger_fingerprint": "7263169076a785b796e055a4d360aeb1103c84eca133bca2ce4b2566ed77773a",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "7263169076a785b796e055a4d360aeb1103c84eca133bca2ce4b2566ed77773a",
+          "content_fingerprint": "8fae137328c6f66ec440b12ba01d005a8a8afe6a72802251cb551d79145ea515",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T23:55:11.058Z",
+          "content_hash": "2a35cf633a2c85bb9eaef7db87fb1bb85267d763323a4f66bc2760da026cd033",
+          "source_summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden. In den vorliegenden Angaben ist außerdem von 35 Verletzten die Rede. Demnach wurden 14 Hochhäuser von Raketen oder Drohnen getroffen.\n\nEin weiteres Angriffsziel war laut Bericht die Stadt Sumy im Osten der Ukraine. Dort gab es bei einer Drohnenattacke auf einen Zug zehn Verletzte. Der staatliche ukrainische Stromversorger DTEK meldete zudem den Komplettausfall eines Wärmekraftwerks nach einem russischen Angriff, nannte aber keinen Ort.",
+          "analysis": {
+            "story_id": "wt-a0703aa9051cf40d",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Russische Luftangriffe auf Kiew haben nach Behördenangaben fünf Tote und 35 Verletzte verursacht. Zusätzlich wurden 14 Hochhäuser getroffen; in Sumy gab es bei einem Angriff auf einen Zug zehn Verletzte.",
+            "detail_summary": "Der Bericht meldet neue russische Luftangriffe auf Kiew mit fünf Toten und 35 Verletzten. Genannt werden auch 14 getroffene Hochhäuser sowie ein weiterer Angriff auf einen Zug in Sumy mit zehn Verletzten. Zusätzlich berichtet DTEK von einem Komplettausfall eines Wärmekraftwerks, ohne Ortsangabe. Für die Einordnung bleibt offen, wie viele Schäden bereits unabhängig bestätigt sind und ob weitere Folgen folgen. Materiell relevant ist der Befund wegen der Zahl der Betroffenen, der Schäden an Wohngebäuden und möglicher Folgen für Infrastruktur und Versorgung; die Evidenz bleibt hier aber auf eine journalistische Meldung mit Behördenbezug begrenzt.",
+            "why_relevant": "Neue tödliche Luftangriffe mit mehreren Betroffenen und Schäden an Wohn- und Infrastruktur sind materiell relevant für Schutz, Versorgung und Kriegsverlauf.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "monitoring",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Tote, Verletzte und Schäden an Wohngebäuden verschlechtern unmittelbar Schutz, Gesundheit und Alltagsstabilität der Betroffenen.",
+              "positive_path": {
+                "mechanism": "Einordnung und schnelle Hilfe können Such-, Rettungs- und Versorgungsmaßnahmen auslösen und Schäden begrenzen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Weitere Angriffe erhöhen Verletzungen, Todesrisiko, Vertreibung und Belastung für Notfall- und Gesundheitsstrukturen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Der Bericht nennt einen Komplettausfall eines Wärmekraftwerks und damit ein mögliches Risiko für Energieversorgung und Emissionen bei Wiederaufbau.",
+              "positive_path": {
+                "mechanism": "Schnelle Reparatur kann Ausfälle begrenzen und Versorgung stabilisieren.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Angriffe auf Energieanlagen können Versorgungslücken, Zusatzemissionen und Folgeschäden an Netzen verstärken.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "direction_basis": "assessed",
+              "rationale": "Der Angriff auf zivile Ziele und Infrastruktur kann staatliche Handlungsfähigkeit, Schutzversprechen und öffentliche Sicherheit unter Druck setzen.",
+              "positive_path": {
+                "mechanism": "Dokumentation und Berichterstattung können Aufklärung und Rechenschaft unterstützen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Fortgesetzte Angriffe schwächen Sicherheitsgefühl, Verwaltungskapazität und demokratische Korrekturfähigkeit im Kriegskontext.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "importance": "hoch",
+            "impact_potential": "Der Befund kann kurzfristig zusätzliche Rettungs-, Reparatur- und Schutzmaßnahmen auslösen und die Lage in Kiew und Sumy verschärfen. Er hat zugleich Potenzial für weitere Versorgungsausfälle und politische Reaktionen.",
+            "impact_risks": [
+              "Weitere Opfer und Verletzungen",
+              "Folgeschäden an Wohnraum und Energieversorgung",
+              "Verstärkung von Flucht- und Sicherheitsdruck"
+            ],
+            "mechanisms": [
+              "Luftangriffe verursachen direkte körperliche Schäden und Gebäudeverluste.",
+              "Treffer auf Infrastruktur können Strom- und Wärmelieferungen unterbrechen.",
+              "Berichte über Opfer können Alarm- und Schutzmaßnahmen beschleunigen."
+            ],
+            "first_order": [
+              "Tote, Verletzte und zerstörte oder beschädigte Gebäude",
+              "Ausfall eines Wärmekraftwerks",
+              "Akute Rettungs- und Versorgungsmaßnahmen"
+            ],
+            "second_order": [
+              "Belastung von Kliniken, Notdiensten und kommunaler Infrastruktur",
+              "Mögliche Einschränkungen bei Strom, Wärme und Alltagsversorgung",
+              "Erhöhter Schutz- und Evakuierungsbedarf"
+            ],
+            "third_order": [
+              "Längere Reparatur- und Wiederaufbaukosten",
+              "Anhaltende Unsicherheit für Zivilbevölkerung",
+              "Mögliche Verschärfung von Kriegsfolgen für regionale Stabilität"
+            ],
+            "systemic_relevance": "Die Meldung berührt zugleich zivile Sicherheit, Wohnraum, Energieversorgung und die Belastbarkeit kommunaler und staatlicher Notfallstrukturen. Wegen der Zahl der Betroffenen und der möglichen Kaskaden ist die Systemrelevanz erhöht, auch wenn die Evidenz zunächst nur aus einer journalistischen Meldung stammt.",
+            "transformation_potential": "Kein Transformationsimpuls im positiven Sinn, sondern ein möglicher weiterer Abbau von Schutz- und Versorgungsstrukturen durch Kriegseinwirkung.",
+            "resilience": "Resilienz hängt hier vor allem von funktionierenden Rettungsdiensten, intakter Energieinfrastruktur und belastbarer ziviler Koordination ab. Die Meldung zeigt, dass diese Puffer bereits unter Druck stehen.",
+            "side_effects": [
+              "Mehr Belastung für Rettung und Gesundheitswesen",
+              "Mögliche Unterbrechungen bei Wärme und Strom",
+              "Psychische Belastung und Unsicherheit im Umfeld der Angriffe"
+            ],
+            "uncertainties": [
+              "Die Angaben beruhen auf einer einzelnen journalistischen Quelle mit Behördenbezug.",
+              "Der genaue Ort des Kraftwerksausfalls ist nicht genannt.",
+              "Unklar bleibt, ob weitere bestätigte Opfer- oder Schadenszahlen folgen."
+            ],
+            "evidence_level": "low to medium",
+            "attribution": "Deutschlandfunk berichtet unter Berufung auf Behördenangaben über Tote und Verletzte; DTEK wird als Quelle für den Kraftwerksausfall genannt. Die Formulierungen sind indirekte Wiedergaben in der Meldung, keine eigenständige Vor-Ort-Bestätigung.",
+            "watch_next": [
+              "Weitere Behördenangaben zu Opfern und Schäden",
+              "Meldungen zu Reparaturen oder Stromausfällen",
+              "Bestätigungen zu den Angriffsorten in Kiew und Sumy"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "cascades",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue Todes- und Verletztenzahlen sowie Schäden an Wohn- und Energieinfrastruktur sind materiell und aktuell; der Bericht bringt eine neue Lageinformation, nicht nur Wiederholung."
+            },
+            "visuals": {
+              "key_figures": [
+                {
+                  "label": "Tote in Kiew",
+                  "value": "fünf",
+                  "unit": "Menschen",
+                  "context": "Nach Behördenangaben bei den Angriffen in Kiew",
+                  "claim_id": "wt-a0703aa9051cf40d-claim-01"
+                }
+              ],
+              "affected_groups": [
+                "kinder_jugend",
+                "aeltere",
+                "kommunen",
+                "staat"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T23:53:58.173Z",
+            "media_trigger_fingerprint": "7263169076a785b796e055a4d360aeb1103c84eca133bca2ce4b2566ed77773a",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "7263169076a785b796e055a4d360aeb1103c84eca133bca2ce4b2566ed77773a",
+              "content_fingerprint": "8fae137328c6f66ec440b12ba01d005a8a8afe6a72802251cb551d79145ea515",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-a0703aa9051cf40d-v1-claim-1",
+              "story_id": "wt-a0703aa9051cf40d",
+              "claim": "Bei neuen russischen Luftangriffen auf Kiew sind nach Behördenangaben fünf Menschen getötet worden.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+                  "excerpt_hash": "a1c4d37c36dede366fce",
+                  "checked_at": "2026-09-08T23:55:11.058Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            },
+            {
+              "claim_id": "wt-a0703aa9051cf40d-v1-claim-2",
+              "story_id": "wt-a0703aa9051cf40d",
+              "claim": "In den Berichten ist zudem von 35 Verletzten die Rede.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+                  "excerpt_hash": "d1c2a051b0619000c4a2",
+                  "checked_at": "2026-09-08T23:55:11.058Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            },
+            {
+              "claim_id": "wt-a0703aa9051cf40d-v1-claim-3",
+              "story_id": "wt-a0703aa9051cf40d",
+              "claim": "Demnach wurden 14 Hochhäuser von Raketen oder Drohnen getroffen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+                  "excerpt_hash": "d1c2a051b0619000c4a2",
+                  "checked_at": "2026-09-08T23:55:11.058Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            },
+            {
+              "claim_id": "wt-a0703aa9051cf40d-v1-claim-4",
+              "story_id": "wt-a0703aa9051cf40d",
+              "claim": "In Sumy gab es bei einer Drohnenattacke auf einen Zug zehn Verletzte.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+                  "excerpt_hash": "d1c2a051b0619000c4a2",
+                  "checked_at": "2026-09-08T23:55:11.058Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            },
+            {
+              "claim_id": "wt-a0703aa9051cf40d-v1-claim-5",
+              "story_id": "wt-a0703aa9051cf40d",
+              "claim": "DTEK berichtete nach einem russischen Angriff vom Komplettausfall eines Wärmekraftwerks, nannte aber keinen Ort.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+                  "excerpt_hash": "d831358088c08bafbb86",
+                  "checked_at": "2026-09-08T23:55:11.058Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T23:55:11.058Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+              "content_hash": "32b010b81662f74109242e8a944b7ddfeccba516abedea339ecbe67f0d6bd8d3"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T23:55:11.058Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/fuenf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-100.html",
+                "content_hash": "32b010b81662f74109242e8a944b7ddfeccba516abedea339ecbe67f0d6bd8d3",
+                "excerpt_hash": "77e9d3d922dc53ae9ea147f6332e22da5682cd5b0e14f671dbe512eae4804253",
+                "number_locale": "de",
+                "numbers": [
+                  "35",
+                  "14",
+                  "9.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T23:55:11.058Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-09T00:10:17.864Z"
+      }
+    },
+    {
+      "story_id": "wt-ea79941818ef23fd",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "ac1fcff6501d0d60589e28c35be67b97e22dc7c7c0748421ed293d56697d2a00",
+        "first_failed_at": "2026-09-08T23:53:58.173Z",
+        "failed_at": "2026-09-08T23:53:58.173Z",
+        "retry_after": "2026-09-09T00:08:58.173Z",
+        "retry_count": 1
+      },
+      "slug": "ukraine-krieg-johann-wadephul-drangt-wolodymyr-selenskyj-zu-mehr-deutschen-waffen-kaufen-ef23fd",
+      "title": "Ukraine-Krieg: Johann Wadephul drängt Wolodymyr Selenskyj zu mehr deutschen Waffen-Käufen",
+      "first_seen": "2026-09-08T23:44:00.000Z",
+      "last_updated": "2026-09-08T23:44:00.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/ukraine-krieg-johann-wadephul-draengt-wolodymyr-selenskyj-zu-mehr-deutschen-waffen-kaeufen-a-f4a41a22-5426-4695-8300-78125e3c2eba",
+          "title": "Ukraine-Krieg: Johann Wadephul drängt Wolodymyr Selenskyj zu mehr deutschen Waffen-Käufen",
+          "summary": "Deutschland sei mittlerweile der stärkste Unterstützer der Ukraine, sagt Johann Wadephul – davon müsse auch die hiesige Verteidigungsindustrie profitieren. Gleichzeitig sendet der Bundesaußenminister scharfe Worte an Moskau.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T23:44:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d7c7ca063fbfdc1f510db7f14d09ff5f182cf21741c70c6862aaf77bd5ffdd02",
+          "source_item_id": "7af9dc0be4808f7e55b7bd7c123cced6bb04dbfbd4fc87de723db8891b04697c",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T23:44:00.000Z",
+          "ingested_at": "2026-09-08T23:53:58.173Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-ea79941818ef23fd-claim-01",
+          "story_id": "wt-ea79941818ef23fd",
+          "claim": "Ukraine-Krieg: Johann Wadephul drängt Wolodymyr Selenskyj zu mehr deutschen Waffen-Käufen: Deutschland sei mittlerweile der stärkste Unterstützer der Ukraine, sagt Johann Wadephul – davon müsse auch die hiesige Verteidigungsindustrie profitieren. Gleichzeitig sendet der Bundesaußenminister scharfe Worte an Moskau.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T23:53:58.173Z"
+        }
+      ],
+      "content_hash": "f932c0c057782fd3e486008df75b2cede1cef5f9c36178af0d3bd296fd990c5b",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T00:08:58.173Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T23:53:58.173Z",
+      "event_first_seen_at": "2026-09-08T23:53:58.173Z",
+      "event_detected_at": "2026-09-08T23:53:58.173Z",
+      "event_id": "event-00bd71317c5a9b19fe3e",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.96955,
+        "detection_delay_minutes": 9.96955,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T23:53:58.173Z",
+        "fingerprint": "5cd27869332b357e918f69deb243e881c78ab5cfe328e13d8a1c0e8d6b4f6847",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T23:53:58.173Z",
+      "rejection": {
+        "at": "2026-09-08T23:53:58.173Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-28fc4e29cd7fedcc",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "738e093ebcfb2a08ebf58edd2bf3889a59d05126dd3985d51ab6810a61209ef2",
+        "first_failed_at": "2026-09-08T23:53:58.173Z",
+        "failed_at": "2026-09-08T23:53:58.173Z",
+        "retry_after": "2026-09-09T00:08:58.173Z",
+        "retry_count": 1
+      },
+      "slug": "iran-krieg-us-militar-funf-iranische-oltanker-angegriffen-revolutionsgarden-melden-gegen-7fedcc",
+      "title": "Iran-Krieg - US-Militär: Fünf iranische Öltanker angegriffen - Revolutionsgarden melden Gegenangriffe auf US-Basen",
+      "first_seen": "2026-09-08T23:40:28.000Z",
+      "last_updated": "2026-09-08T23:40:28.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/us-militaer-fuenf-iranische-oeltanker-angegriffen-revolutionsgarden-melden-gegenangriffe-auf-us-base-100.html",
+          "title": "Iran-Krieg - US-Militär: Fünf iranische Öltanker angegriffen - Revolutionsgarden melden Gegenangriffe auf US-Basen",
+          "summary": "Die USA haben erneut iranische Öltanker angegriffen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T23:40:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "fe1dccbd6bce4169adf68087438cd6717e980ee6b85f8b1a9f01897512b882fd",
+          "source_item_id": "65198d79fa93c8e68e748fdf3fa02f1272637875870df83063332d88c7431eb7",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T23:40:28.000Z",
+          "ingested_at": "2026-09-08T23:53:58.173Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-28fc4e29cd7fedcc-claim-01",
+          "story_id": "wt-28fc4e29cd7fedcc",
+          "claim": "Iran-Krieg - US-Militär: Fünf iranische Öltanker angegriffen - Revolutionsgarden melden Gegenangriffe auf US-Basen: Die USA haben erneut iranische Öltanker angegriffen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T23:53:58.173Z"
+        }
+      ],
+      "content_hash": "12b05425308143e16f2944654b6980376f905665cbead4f029ed91883b22ef5b",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-09T00:08:58.173Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T23:53:58.173Z",
+      "event_first_seen_at": "2026-09-08T23:53:58.173Z",
+      "event_detected_at": "2026-09-08T23:53:58.173Z",
+      "event_id": "event-340711162030c6a49bba",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 13.502883333333333,
+        "detection_delay_minutes": 13.502883333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T23:53:58.173Z",
+        "fingerprint": "416c1d024220178a25934afd8790b2ab87885ec2d503c8e0b086b6cf8b33e4b8",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T23:53:58.173Z",
+      "rejection": {
+        "at": "2026-09-08T23:53:58.173Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-74fc3eeaa714d5fb",
       "ai_retry": {
@@ -308,11 +1285,11 @@
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "dbad54db3defd0e7f90906427033ca6903dce4e97d0dca73c7082f2454b69d7c",
-        "first_failed_at": "2026-09-08T22:52:15.096Z",
-        "failed_at": "2026-09-08T23:24:22.430Z",
-        "retry_after": "2026-09-08T23:54:22.430Z",
-        "retry_count": 2
+        "fingerprint": "3b1c000928ab7c575f4aac43ffdb1d12353faeaace06ca8317d9a8632a995353",
+        "first_failed_at": "2026-09-08T23:53:58.173Z",
+        "failed_at": "2026-09-08T23:53:58.173Z",
+        "retry_after": "2026-09-09T00:08:58.173Z",
+        "retry_count": 1
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
       "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
@@ -1454,6 +2431,49 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T23:53:58.173Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-102.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T22:43:08.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "9d1bc10432933339d28b554485ac950820913c50b1904997ae22c723b260ecd9",
+              "source_item_id": "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T22:43:08.000Z",
+              "ingested_at": "2026-09-08T23:24:22.430Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-08T11:06:00.000Z",
@@ -1486,7 +2506,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T23:24:22.430Z",
+          "ingested_at": "2026-09-08T23:53:58.173Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1538,7 +2558,7 @@
           "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
           "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
           "source_type": "media_rss",
-          "published_at": "2026-09-08T22:43:08.000Z",
+          "published_at": "2026-09-08T23:40:28.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -1554,8 +2574,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-08T22:43:08.000Z",
-          "ingested_at": "2026-09-08T23:24:22.430Z",
+          "source_published_at": "2026-09-08T23:40:28.000Z",
+          "ingested_at": "2026-09-08T23:53:58.173Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1584,7 +2604,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:24:22.430Z"
+          "checked_at": "2026-09-08T23:53:58.173Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -1605,7 +2625,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:24:22.430Z"
+          "checked_at": "2026-09-08T23:53:58.173Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-03",
@@ -1625,22 +2645,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:24:22.430Z"
+          "checked_at": "2026-09-08T23:53:58.173Z"
         }
       ],
       "content_hash": "6f33d5c08ece2591a797ad70ffe06a0b0e4cb33b87bbfeedc2384c762f4b8da5",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        "AI_DIRECTION_BASIS_INVALID:planet",
+        "MEDIA_IMPACT_REQUIRED"
       ],
-      "quality_retry_count": 2,
-      "quality_retry_after": "2026-09-08T23:54:22.430Z",
+      "quality_retry_count": 3,
+      "quality_retry_after": "2026-09-09T00:08:58.173Z",
       "reassessment": false,
-      "fresh": true,
+      "fresh": false,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T23:24:22.430Z",
+      "updated_at": "2026-09-08T23:53:58.173Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -1673,20 +2694,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 41.2405,
+        "source_age_minutes": 13.502883333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 707.1581333333334,
+        "queue_age_minutes": 736.75385,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 97,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T23:24:22.430Z",
+        "checked_at": "2026-09-08T23:53:58.173Z",
         "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
         "issue_codes": [],
         "warning_codes": []
@@ -13038,7 +14059,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:54:41.230Z"
+        "retry_after": "2026-09-09T00:10:32.115Z"
       }
     },
     {
@@ -36787,7 +37808,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:54:35.626Z"
+        "retry_after": "2026-09-09T00:10:27.548Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -43646,7 +44667,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:54:30.251Z"
+        "retry_after": "2026-09-09T00:10:22.697Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -51008,7 +52029,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T23:24:22.430Z",
+          "ingested_at": "2026-09-08T23:53:58.173Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -51037,7 +52058,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:24:22.430Z"
+          "checked_at": "2026-09-08T23:53:58.173Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -51052,7 +52073,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T23:24:22.430Z",
+      "updated_at": "2026-09-08T23:53:58.173Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -51093,7 +52114,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 796.9383833333334,
+        "queue_age_minutes": 826.5341,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -51102,7 +52123,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T23:24:22.430Z",
+        "checked_at": "2026-09-08T23:53:58.173Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -51143,7 +52164,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T23:24:22.430Z",
+          "ingested_at": "2026-09-08T23:53:58.173Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -51172,7 +52193,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:24:22.430Z"
+          "checked_at": "2026-09-08T23:53:58.173Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -51187,7 +52208,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T23:24:22.430Z",
+      "updated_at": "2026-09-08T23:53:58.173Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -51227,7 +52248,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 796.9383833333334,
+        "queue_age_minutes": 826.5341,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -51236,7 +52257,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T23:24:22.430Z",
+        "checked_at": "2026-09-08T23:53:58.173Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -70835,9 +71856,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T23:24:22.430Z",
+        "checked_at": "2026-09-08T23:53:58.173Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T05:24:22.430Z",
+        "expires_at": "2026-09-09T05:53:58.173Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -86253,9 +87274,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-08T23:24:22.430Z",
+        "checked_at": "2026-09-08T23:53:58.173Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T05:24:22.430Z",
+        "expires_at": "2026-09-09T05:53:58.173Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -126722,7 +127743,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T23:24:22.430Z",
+          "ingested_at": "2026-09-08T23:53:58.173Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -126783,7 +127804,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:24:22.430Z"
+          "checked_at": "2026-09-08T23:53:58.173Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -126803,7 +127824,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:24:22.430Z"
+          "checked_at": "2026-09-08T23:53:58.173Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -126819,7 +127840,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T23:24:22.430Z",
+      "updated_at": "2026-09-08T23:53:58.173Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -126859,7 +127880,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2297.48445,
+        "queue_age_minutes": 2327.0801666666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -126868,7 +127889,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T23:24:22.430Z",
+        "checked_at": "2026-09-08T23:53:58.173Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -182551,7 +183572,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T23:24:22.430Z",
+          "checked_at": "2026-09-08T23:53:58.173Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -226945,7 +227966,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T23:24:22.430Z",
+          "checked_at": "2026-09-08T23:53:58.173Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
