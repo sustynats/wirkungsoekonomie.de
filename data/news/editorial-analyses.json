@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T10:53:22.688Z",
+  "updated_at": "2026-09-08T11:08:38.096Z",
   "candidates": [
     {
       "story_id": "wt-4c0a09f9ce090af7",
@@ -853,7 +853,7 @@
         "reasons": []
       },
       "fingerprint": "b3ccdb4bdc5adee6b0d6f75de828e40403e2b8523b27bc4f4722fef60686ebcb",
-      "status": "ready_for_research",
+      "status": "published",
       "analysis_id": "woek-analysis-852ebdd0a0aa"
     },
     {
@@ -6632,251 +6632,585 @@
       },
       "transparency_note": "Nach der von Natalie Weber entwickelten Methodik der Wirkungsökonomie",
       "method_version": "1.0",
-      "source_fingerprint": "031e49918d0d6a49b8108f9f992be324d092a20c1f2c8f06e6b6b4d265653c07",
+      "source_fingerprint": "b3ccdb4bdc5adee6b0d6f75de828e40403e2b8523b27bc4f4722fef60686ebcb",
       "candidate_score": 84,
       "analysis_gain_score": 60,
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
         "independent_origin_count": 2,
-        "primary_source_count": 3,
+        "primary_source_count": 4,
         "cited_claim_count": 2,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
       "published_at": "2026-09-05T21:07:03.109Z",
-      "updated_at": "2026-09-05T21:07:03.109Z",
-      "version": 1,
-      "editorial_question": "Was bedeutet die von der EU-Kommission gemeldete Brandfläche von fast 700.000 Hektar in diesem Sommer für Belastung, Resilienz und Prioritäten in der EU - und was lässt sich daraus noch nicht ableiten?",
-      "analysis_type": "system_analysis",
-      "title": "Fast 700.000 Hektar Brandfläche: Was die EU-Waldbrandsaison 2026 über Belastung und Resilienz zeigt",
-      "subtitle": "Die Kommission meldet eine außergewöhnlich große verbrannte Fläche. Der zusätzliche Erkenntniswert liegt weniger in der Zahl selbst als in ihrem systemischen Wirkpfad.",
-      "teaser": "Die EU-Kommission spricht von fast 700.000 Hektar verbrannter Fläche in diesem Sommer. Das zeigt vor allem, wie stark Brandereignisse Schutz, Anpassung und Krisenfähigkeit unter Druck setzen können.",
-      "seo_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt - was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt.",
-      "additional_value": "Der zusätzliche Wert dieser Analyse liegt darin, die gemeldete Brandfläche nicht als bloße Schlagzeile zu behandeln, sondern als Hinweis auf einen möglichen Belastungszustand des Systems aus Bevölkerungsschutz, Umwelt, Infrastruktur und öffentlicher Steuerung. Die Meldung ist ein Zustandsindikator, aber kein Wirkungsnachweis für Ursachen, Langfristtrends oder politische Wirksamkeit. Genau diese Trennung macht sichtbar, wo die Zahl belastbar ist und wo nicht.",
-      "research_summary": "Im vorliegenden Material liegt als maßgebliche Quelle die Rede der Kommissarin Lahbib im Europäischen Parlament vor. Darin heißt es, in diesem Sommer seien in der EU bereits fast 700.000 Hektar verbrannt, mehr als der Jahresdurchschnitt der vergangenen zwei Jahrzehnte. Ergänzend liegen zwei weitere institutionelle Quellen vor, die jedoch keine zusätzlichen Angaben zur Waldbrandsaison enthalten. Der Kernbefund ist damit eng begrenzt: Es gibt eine amtliche Behauptung über eine große verbrannte Fläche und eine vergleichende Einordnung durch die Kommission. Nicht belegt sind im Material die genaue Methodik, die räumliche und zeitliche Abgrenzung, die Ursachen der Brände, regionale Verteilung, Folgeschäden oder eine längerfristige Veränderung des Brandgeschehens. Die Analyse bleibt deshalb strikt bei der Zustandsbeschreibung und dem systemischen Zusammenhang, ohne aus der Zahl eine weitergehende Kausalität abzuleiten.",
+      "updated_at": "2026-09-08T11:08:38.096Z",
+      "version": 2,
+      "editorial_question": "Was bedeutet die von der EU-Kommission gemeldete Brandfläche von fast 700.000 Hektar für Schutz, Anpassung und politische Prioritäten in der EU?",
+      "analysis_type": "case_analysis",
+      "title": "Fast 700.000 Hektar verbrannt: Was die EU-Waldbrandsaison für Schutz und Politik bedeutet",
+      "subtitle": "Die Kommission meldet eine ungewöhnlich große Brandfläche. Daraus folgt noch keine Kausalkette, aber ein klarer Belastungsdruck auf Einsatz, Gesundheit und Anpassung.",
+      "teaser": "Fast 700.000 Hektar verbrannt: Die EU-Kommission meldet eine außergewöhnlich große Waldbrandfläche. Entscheidend ist jetzt, welche Systeme unter Druck geraten.",
+      "seo_description": "EU meldet fast 700.000 Hektar verbrannte Fläche: Analyse der Folgen für Katastrophenschutz, Gesundheit, Natur und Anpassungspolitik.",
+      "additional_value": "Der Beitrag trennt Meldung, Wirkpfad und Einordnung. Er erklärt, warum die Zahl nicht nur eine Statistik ist, sondern ein Hinweis auf Belastung in mehreren gekoppelten Systemen: Katastrophenschutz, Gesundheit, Umwelt, Haushalte und politische Prioritäten.",
+      "research_summary": "Gesichert ist im Material nur die institutionelle Mitteilung der Kommission, wonach in diesem Sommer in der EU fast 700.000 Hektar verbrannt sind und dies mehr sei als der Jahresdurchschnitt der vergangenen zwei Jahrzehnte. Die Quelle nennt keine Methodik, keine räumliche Aufschlüsselung und keine Ursachen. Daraus folgt ein belastbarer Befund zur Größenordnung, aber kein Nachweis für langfristige Trendwende oder für einzelne Folgeschäden. Analytisch spricht die Zahl für erhöhten Druck auf Einsatzkräfte, Prävention, Wiederherstellung und Anpassung. Offene Punkte bleiben Messmethode, regionale Verteilung, Zeitverzug der Schäden und die Frage, ob sich daraus bereits strukturelle Wirkungsordnungen ableiten lassen.",
       "sections": [
         {
           "id": "lage",
-          "title": "Lage: Eine große Zahl, aber noch keine vollständige Lagebeschreibung",
+          "title": "Die Lage: eine große Fläche, aber noch keine vollständige Erklärung",
           "paragraphs": [
-            "Die Kommission meldet, dass in diesem Sommer in der EU fast 700.000 Hektar verbrannt sind. Sie sagt zugleich, diese Fläche liege über dem jährlichen Durchschnitt der vergangenen zwei Jahrzehnte. Das ist zunächst eine amtliche Größenangabe und eine relative Einordnung. Mehr nicht. Die Zahl markiert also einen auffälligen Zustand, aber sie erklärt ihn noch nicht.",
-            "Für die Einordnung ist wichtig: Eine große Brandfläche bedeutet nicht automatisch schon eine eindeutig nachgewiesene Trendwende, ebenso wenig wie sie allein eine bestimmte politische Ursache belegt. Im Material fehlen die Angaben, die für eine streng kausale Bewertung nötig wären: Methodik, räumliche Verteilung, Brandursachen, Zeitraumgrenzen und Folgen. Die Lage ist damit ernst, aber analytisch nur teilweise ausgeleuchtet."
-          ]
+            "Ein Satz reicht, um das Problem sichtbar zu machen: Fast 700.000 Hektar sind in diesem Sommer in der EU bereits verbrannt. Die Kommission ordnet das als mehr Fläche ein als der Jahresdurchschnitt der vergangenen zwei Jahrzehnte. Das ist ein klarer Größenordnungssprung, aber im gelieferten Material bleibt offen, wie die Zahl genau gemessen wurde, welche Länder besonders betroffen sind und über welchen exakten Zeitraum sie läuft.",
+            "Für die Analyse ist deshalb wichtig, zuerst die Grenze zu ziehen: Die Meldung belegt eine außergewöhnlich hohe Brandfläche. Sie belegt noch nicht, welche Brandursachen dominieren, welche Schäden schon dauerhaft sind oder wie stark einzelne Mitgliedstaaten belastet wurden. Gerade diese Trennung schützt vor Überdeutung."
+          ],
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Eine große Fläche ist bereits verbrannt.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Die Kommissionsangabe ist korrekt und bezieht sich auf den genannten Sommer.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Einsatz, Prävention und Wiederaufbau geraten unter Druck.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn Brandflächen in kurzer Zeit stark wachsen, steigt der Arbeits- und Koordinationsbedarf.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Folgen können sich auf Gesundheit, Natur und öffentliche Haushalte ausweiten.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn Rauch, Schäden an Infrastruktur und Wiederherstellungskosten hinzukommen.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "system",
-          "title": "Systemischer Zusatznutzen: Warum die Zahl über den Feuerherd hinausweist",
+          "title": "Das System: Wetter, Einsatz, Wiederaufbau und Politik hängen zusammen",
           "paragraphs": [
-            "Der zusätzliche Erkenntniswert liegt darin, dass Brandflächen dieser Größenordnung mehrere Systeme gleichzeitig unter Druck setzen können. Betroffen sind nicht nur Wälder und Böden, sondern auch Einsatzkräfte, Gesundheitsvorsorge, Wiederaufbau, kommunale Haushalte und langfristig die Anpassungsfähigkeit ganzer Regionen. Das ist keine behauptete eingetretene Wirkung, sondern der systemische Wirkpfad, den die Meldung sichtbar macht.",
-            "In der Wirkungsökonomie ist das wichtig, weil Reichweite und Wirkung nicht dasselbe sind. Eine hohe betroffene Fläche beschreibt zunächst den Umfang der Störung. Wirkung entsteht erst dort, wo sich Zustände tatsächlich verändern: etwa bei Ökosystemen, bei Schutzkapazitäten oder bei öffentlichen Kosten. Das Material belegt den Störungsumfang, nicht die Folgekette im Einzelnen."
-          ]
+            "Die zusätzliche Systemfrage lautet nicht nur: Wie groß ist die verbrannte Fläche? Sondern: Welche gekoppelten Systeme reagieren darauf? Bei Waldbränden greifen mindestens vier Ebenen ineinander. Erstens der unmittelbare Schutz von Menschen und Siedlungen. Zweitens die Einsatz- und Infrastrukturkapazität. Drittens Natur- und Bodensysteme, die nach einem Brand Zeit zur Regeneration brauchen. Viertens die politische Ebene, die nach solchen Saisons über Vorsorge, Finanzierung und Zuständigkeiten neu nachdenkt.",
+            "Der Wirkmechanismus ist einfach und wichtig: Je größer und häufiger die Brandflächen, desto stärker verschiebt sich Aufmerksamkeit von Reaktion zu Vorsorge. Das ist noch keine positive Wirkung an sich. Es ist zunächst ein Belastungssignal. Ob daraus bessere Politik entsteht, hängt von Ressourcen, Tempo und Prioritätensetzung ab."
+          ],
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Mehr verbrannte Fläche erhöht den akuten Einsatzbedarf.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn die Brandfläche in kurzer Zeit groß wird.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Einsatzkräfte, Logistik und Verwaltungen werden stärker gebunden.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn mehrere Brände parallel auftreten oder Nachsorge nötig wird.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Das erhöht den Druck auf Vorsorge, Waldmanagement und Krisenresilienz.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn Politik und Verwaltung auf die Belastung reagieren.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "mpd",
-          "title": "Mensch, Planet, Demokratie: drei Perspektiven auf denselben Befund",
+          "title": "Mensch, Planet, Demokratie: drei Perspektiven auf dieselbe Zahl",
           "paragraphs": [
-            "Aus der Perspektive des Menschen ist die Meldung relevant, weil große Waldbrandflächen Schutz- und Einsatzstrukturen beanspruchen und damit mittelbar auch Gesundheits- und Sicherheitsfragen berühren können. Das ist im Material nicht als konkrete Belastung einzelner Bevölkerungen belegt, aber als plausibler Wirkpfad erkennbar. Für die Analyse heißt das: Belastungspotenzial ja, beobachtete Wirkung noch nein.",
-            "Aus der Perspektive des Planeten ist der Befund unmittelbarer: Verbrannte Wälder, Böden und Lebensräume stehen direkt für materielle Verluste im Naturhaushalt. Für die Demokratie ist der Zusammenhang indirekter, aber real: Krisenlagen verlangen transparente Information, koordinierte öffentliche Reaktion und belastbare Prioritätensetzung. Die Quelle selbst enthält keine politische Entscheidung, aber sie markiert eine Lage, in der staatliche Koordination an Bedeutung gewinnt."
-          ]
+            "Für Menschen heißt die Zahl vor allem Belastungspotenzial: mehr Gefahr für Gesundheit, Schutzbedarf für Anwohnerinnen und Anwohner, mehr Druck auf Einsatz- und Hilfssysteme. Das ist im Material nicht als eingetretener Schaden belegt, aber als plausibler Pfad sichtbar. Bei Kindern, älteren Menschen und anderen verletzlichen Gruppen ist die Frage der erreichbaren Hilfe besonders relevant, sobald Rauch, Hitze und Evakuierung dazukommen.",
+            "Für den Planeten ist die Richtung direkter: Brandflächen greifen in Wälder, Böden und Biodiversität ein. Für die Demokratie ist die Wirkung indirekter, aber wichtig. Große Schadenslagen testen, ob öffentliche Systeme schnell, nachvollziehbar und wirksam reagieren. Die Zahl ist deshalb auch ein Stresstest für staatliche Leistungsfähigkeit, nicht nur für Umweltpolitik."
+          ],
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Brandflächen belasten Menschen direkt und indirekt.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn Rauch, Hitze oder Evakuierungen betroffen sind.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Wälder, Böden und Lebensräume verlieren Schutz und Regenerationszeit.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn die Brände großflächig oder wiederholt auftreten.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Öffentliche Institutionen müssen zeigen, dass sie Krisen tragen können.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die Belastung politische Prioritäten und Zuständigkeiten verschiebt.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "wirkungsordnungen",
-          "title": "Wirkungsordnungen: Was sicher ist, was wahrscheinlich ist, was offen bleibt",
+          "title": "Wirkungsordnungen: vom Brand zur politischen Rückkopplung",
           "paragraphs": [
-            "Die erste Wirkungsordnung ist die direkte Zustandsänderung: verbrannte Fläche, verlorene Vegetation, beschädigter Naturraum. Diese Ebene ist durch die Meldung selbst angesprochen, auch wenn die methodischen Details fehlen. Die zweite Ordnung betrifft den Druck auf Einsatz- und Schutzsysteme. Hier liegt ein Wirkungspotenzial vor, aber kein Beweis im engeren Sinn, weil die Quelle keine Einsatzdaten, Kosten oder Ausfallfolgen liefert.",
-            "Die dritte Ordnung betrifft mögliche Anpassungs- und Priorisierungsfolgen. Wenn solche Brandlagen wiederholt auftreten, können Vorsorge, Waldmanagement und Katastrophenschutz stärker gewichtet werden. Das ist eine analytische Inferenz, keine beobachtete Veränderung. Für eine harte Zurechnung müsste man weitere Quellen zu Entscheidungen, Budgets oder institutionellen Anpassungen prüfen."
-          ]
-        },
-        {
-          "id": "verteilung",
-          "title": "Verteilung: Wer die Last trägt, ist im Material nicht aufgelöst",
-          "paragraphs": [
-            "Die Meldung benennt eine EU-weite Fläche, aber keine regionale oder soziale Verteilung. Damit bleibt offen, ob einzelne Mitgliedstaaten oder Bevölkerungsgruppen besonders stark betroffen sind. Gerade diese Verteilung wäre wichtig, um Belastung und Resilienz genauer zu bewerten. Eine EU-Gesamtzahl kann das Ausmaß signalisieren, aber nicht die ungleiche Betroffenheit ersetzen.",
-            "Für die Wirkungsanalyse ist das ein zentraler blinder Fleck. Ohne regionale Differenzierung lassen sich weder Priorisierungen noch Ausgleichsbedarfe seriös bestimmen. Eine Zahl von fast 700.000 Hektar kann daher als Warnsignal gelten, aber nicht als vollständige Grundlage für Verteilungsurteile oder für die Bewertung einzelner Politikinstrumente."
-          ]
-        },
-        {
-          "id": "externalitaeten",
-          "title": "Externalitäten und Folgekosten: naheliegend, aber nicht belegt",
-          "paragraphs": [
-            "Großbrände erzeugen typischerweise Folgelasten, etwa für Wiederherstellung, öffentliche Infrastruktur oder Gesundheitsvorsorge. Im vorliegenden Material werden solche Kosten jedoch nicht beziffert. Deshalb wäre es falsch, aus der Brandfläche direkt eine konkrete Budgetwirkung oder einen bestimmten gesamtwirtschaftlichen Schaden abzuleiten. Das wäre eine Überschreitung der Evidenz.",
-            "Gleichzeitig macht die Meldung sichtbar, warum externe Kosten in dieser Debatte relevant sind: Die Schäden bleiben selten auf den Ort des Brandes beschränkt. Gerade darin liegt der systemische Zusatznutzen der Analyse: Sie trennt den belegten Zustandswechsel von den nur plausiblen, aber noch offenen Folgelasten."
-          ]
+            "In der ersten Ordnung liegt der direkte Schaden: verbrannte Fläche. In der zweiten Ordnung kommen Folgekosten dazu: Einsatz, Wiederaufbau, Schutz von Siedlungen, mögliche gesundheitliche Belastungen. In der dritten Ordnung kann sich die politische Steuerung verändern, etwa wenn Vorsorge, Waldmanagement oder Anpassung höher priorisiert werden. Diese Kaskade ist plausibel, aber sie ist nicht automatisch eingetreten. Sie braucht belastbare politische Reaktion, Geld und Zeit.",
+            "Wichtig ist auch die Rückkopplung: Schlechtere Vorsorge kann in der nächsten Saison zu mehr Schaden führen. Bessere Vorsorge kann den Wirkpfad dämpfen. Das ist kein Selbstläufer. Es ist eine Steuerungsfrage. Gerade deshalb sollte man nicht nur die Schadenszahl berichten, sondern die Fähigkeit der Systeme prüfen, aus ihr zu lernen."
+          ],
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Die Brandfläche ist groß.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Die Kommissionsangabe gilt für den genannten Sommer.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Mehr Fläche bedeutet mehr unmittelbare und nachlaufende Arbeit.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn die Brände in mehreren Regionen auftreten.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Das kann Prioritäten in Prävention und Anpassung verschieben.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn Politik und Verwaltung die Lage als strukturelles Risiko lesen.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "resilienz",
-          "title": "Resilienz: Belastung sichtbar, Widerstandskraft nicht gemessen",
+          "title": "Resilienz: entscheidend ist, ob Schutzsysteme mitwachsen",
           "paragraphs": [
-            "Die Zahl spricht dafür, dass das System in diesem Sommer stark beansprucht wurde. Ob es auch resilient reagiert hat, ist damit noch nicht belegt. Resilienz wäre erst dann nachweisbar, wenn man etwa schnelle Eindämmung, geringe Sekundärschäden oder erfolgreiche Wiederherstellung dokumentieren könnte. Davon steht im Material nichts.",
-            "Trotzdem ist der Resilienzbezug journalistisch sinnvoll, weil die Meldung eine Schwelle markiert, an der Vorsorge und Reaktionsfähigkeit auf die Probe gestellt werden. Die Quelle belegt also eine Belastung, nicht die Leistungsfähigkeit des Systems unter Belastung. Das ist analytisch ein wichtiger Unterschied."
-          ]
-        },
-        {
-          "id": "szenarien",
-          "title": "Szenarien: Was die Zahl auslösen könnte und was sie nicht beweist",
-          "paragraphs": [
-            "Wenn sich die Lage über mehrere Jahre ähnlich darstellt, könnte das Investitionen in Prävention, Waldmanagement und Katastrophenschutz begünstigen. Das ist ein mögliches Szenario, kein Befund. Ebenso möglich ist, dass die Zahl vor allem eine besonders schwere Saison beschreibt, ohne dass sich daraus automatisch eine dauerhafte neue Lage ergibt. Beides bleibt im Material offen.",
-            "Die Meldung allein belegt also weder einen dauerhaften Trend noch eine Wirksamkeit von Gegenmaßnahmen. Sie ist ein Gegenwartsindikator mit offenem Zukunftspfad. Für die Analyse heißt das: wachsam lesen, aber nicht überdehnen."
-          ]
+            "Resilienz heißt hier nicht Unverwundbarkeit. Gemeint ist die Fähigkeit, Schäden zu begrenzen, Hilfe erreichbar zu halten und sich nach einem Ereignis zu erholen. Die Meldung zeigt vor allem eines: Belastung. Ob die EU-Systeme widerstandsfähig genug sind, lässt sich aus dem vorliegenden Material nicht entscheiden. Dafür fehlen Angaben zu regionaler Betroffenheit, Einsatzdauer, medizinischen Folgen und Wiederaufbaugeschwindigkeit.",
+            "Trotzdem ist die Richtung klar genug, um wachsam zu sein. Wenn Brandflächen in einem Sommer so stark wachsen, steigt die Wahrscheinlichkeit, dass bestehende Schutzkonzepte an Grenzen stoßen. Das ist keine Behauptung über ein Versagen. Es ist ein Prüfauftrag an Katastrophenschutz, Forstpolitik und Anpassungsplanung."
+          ],
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Ein starkes Brandjahr belastet vorhandene Schutzsysteme.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn Ressourcen knapp und Ereignisse gleichzeitig auftreten.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Schutz, Hilfe und Wiederaufbau müssen schneller koordiniert werden.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn mehrere Ebenen gleichzeitig reagieren müssen.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Resilienz steigt nur, wenn aus dem Ereignis konkrete Vorsorge folgt.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Wenn die Erkenntnis in Personal, Technik und Planung übersetzt wird.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "unsicherheit",
-          "title": "Unsicherheit: Die offene Methodik begrenzt die Aussagekraft",
+          "title": "Unsicherheit: Was die Quelle nicht sagt, ist für die Bewertung entscheidend",
           "paragraphs": [
-            "Die größte Unsicherheit betrifft die Mess- und Abgrenzungsfrage. Der Auszug liefert keine Methodik, keine Vergleichsreihe im Detail und keine Erklärung, wie die Fläche erfasst wurde. Auch die Frage, ob die Brandzahl bestimmte Länder, Vegetationsarten oder Zeiträume überproportional betrifft, bleibt unbeantwortet.",
-            "Hinzu kommt: Die im Paket enthaltenen weiteren Quellen sind institutionell, aber thematisch nicht ergänzend zur Waldbrandsaison. Es gibt also keine zweite, unabhängige Quellenbasis, die den konkreten Befund hier zusätzlich absichert oder präzisiert. Das mindert nicht die Relevanz der Meldung, aber es begrenzt die Stärke der Zurechnung."
-          ]
+            "Die Quelle liefert eine starke Zahl, aber wenig Kontext. Es fehlen im Auszug die Methodik der Flächenerfassung, die räumliche Verteilung, die Brandursachen und die Frage, ob der Vergleich mit dem Durchschnitt auf exakt dieselbe Messlogik gestützt ist. Ohne diese Angaben bleibt offen, wie robust die Einordnung im Detail ist.",
+            "Das schwächt nicht den Befund der Größenordnung, aber es begrenzt die Zurechnung. Deshalb ist der richtige Schluss nicht: alles ist unklar. Der richtige Schluss ist: Die Belastung ist real und groß, der genaue systemische Pfad bleibt teilweise offen. Genau diese Ehrlichkeit verhindert, dass eine Meldung überdehnt wird."
+          ],
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Die Zahl signalisiert hohe Belastung.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "mixed",
+                "condition": "Der gemeldete Befund ist korrekt.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Die genaue Ursache und Verteilung bleiben offen.",
+                "status": "fact",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Der vorliegende Auszug nennt dazu keine Details.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Darum bleibt die politische Folgerung vorläufig.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "open",
+                "condition": "Ohne Methodik und regionale Aufschlüsselung ist keine starke Zurechnung möglich.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "beobachtung",
-          "title": "Beobachtungspunkte: Was als Nächstes geklärt werden müsste",
+          "title": "Beobachtungspunkte: Woran sich die Lage in den nächsten Wochen prüfen lässt",
           "paragraphs": [
-            "Für eine belastbarere Bewertung wären vor allem drei Dinge nötig: erstens die exakte Methodik der Flächenmessung, zweitens regionale und zeitliche Aufschlüsselung, drittens Informationen zu Folgen für Gesundheit, Infrastruktur, Ökosysteme und öffentliche Ausgaben. Erst diese Daten würden aus dem Lageindikator eine robustere Wirkungsanalyse machen.",
-            "Ebenso wichtig wären Vergleichsdaten aus früheren Jahren und mögliche Gegenbefunde, etwa ob andere Regionen in derselben Saison entlastet waren oder ob Präventionsmaßnahmen lokal gewirkt haben. Ohne diese Ergänzungen bleibt die Analyse bewusst vorsichtig. Sie sagt: große Belastung ist belegt, größere Wirkungsketten sind möglich, aber nicht nachgewiesen."
-          ]
+            "Entscheidend wäre nun, ob die Kommission oder andere belastbare Stellen die Brandflächen nach Ländern, Zeiträumen und Messmethode aufschlüsseln. Ebenso wichtig wären Angaben zu Verletzten, Evakuierungen, Infrastrukturverlusten und Nachsorge. Erst damit lässt sich aus einer großen Zahl eine belastbare Wirkungsanalyse machen.",
+            "Bis dahin bleibt die sachgerechte Haltung: Der Befund ist groß genug, um Vorsorge und Anpassung ernst zu nehmen. Er ist aber noch nicht groß genug dokumentiert, um jede politische Schlussfolgerung sicher zu machen. Zwischen Alarmismus und Verharmlosung liegt hier die nüchterne Prüfung."
+          ],
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Weitere Daten würden die Lage präziser machen.",
+                "status": "scenario",
+                "relation": "scope",
+                "direction": "open",
+                "condition": "Wenn Methodik, Ort und Folgen offengelegt werden.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Dann lassen sich Schäden und Prioritäten besser zuordnen.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn die Zusatzdaten belastbar sind.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Erst dann wird aus der Zahl eine robuste Steuerungsgrundlage.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "positive",
+                "condition": "Wenn Politik und Verwaltung darauf aufbauen.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              }
+            ]
+          }
         },
         {
           "id": "synthese",
-          "title": "Synthese: Ein Warnsignal für Belastung, kein Beweis für Ursache oder Erfolg",
+          "title": "Synthese: Die Zahl ist kein Endpunkt, sondern ein Stresstest",
           "paragraphs": [
-            "Die Meldung der Kommission ist systemisch wichtig, weil sie eine außergewöhnlich große verbrannte Fläche als amtlichen Befund sichtbar macht. Der zusätzliche Nutzen einer WÖK-Analyse besteht darin, die Zahl als Zustandsänderung zu lesen und zugleich ihre Grenzen zu markieren. Der Befund weist auf Belastung hin, nicht auf eine bereits bewiesene längerfristige Verschlechterung der Lage.",
-            "In der Verbindung von Mensch, Planet und Demokratie ergibt sich ein klares Bild: Brandflächen dieser Größenordnung können Schutzsysteme, Naturhaushalte und öffentliche Koordination zugleich beanspruchen. Aber die Quelle belegt weder Folgen im Detail noch politische Wirksamkeit. Genau diese Trennung schützt vor Überinterpretation. Die Zahl ist relevant, weil sie Handlungsdruck andeutet; sie ist noch kein vollständiger Wirkungsnachweis."
-          ]
+            "Mein Fazit aus der Wirkungsökonomie ist klar: Die gemeldeten fast 700.000 Hektar sind nicht nur eine große Zahl, sondern ein Stresstest für mehrere Systeme gleichzeitig. Direkt betroffen sind Schutz, Einsatz und Wiederaufbau. Indirekt berührt die Lage Gesundheit, Natur und politische Prioritätensetzung. Die wichtigste Bedingung bleibt aber offen: Ob aus der Belastung bessere Vorsorge entsteht oder nur ein weiterer belasteter Sommer wird.",
+            "Gerade deshalb sollte man die Meldung nicht als bloße Katastrophenstatistik lesen. Sie zeigt, wie schnell sich ein Umweltproblem in ein Verwaltungs-, Verteilungs- und Resilienzproblem verwandelt. Genau darin liegt der zusätzliche systemische Zusammenhang."
+          ],
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "visual": {
+            "type": "cascade",
+            "caption": "Wirkpfad in Alltagssprache",
+            "items": [
+              {
+                "title": "Schritt 1",
+                "text": "Eine große Brandfläche ist gemeldet.",
+                "status": "fact",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Die Kommissionsangabe ist belastbar.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 2",
+                "text": "Mehrere Schutz- und Verwaltungssysteme geraten gleichzeitig unter Druck.",
+                "status": "analytical_inference",
+                "relation": "impact_path",
+                "direction": "negative",
+                "condition": "Wenn die Lage tatsächlich europaweit gestreut und anhaltend ist.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              },
+              {
+                "title": "Schritt 3",
+                "text": "Ob daraus bessere Anpassung entsteht, hängt von konkreter politischer Reaktion ab.",
+                "status": "scenario",
+                "relation": "impact_path",
+                "direction": "mixed",
+                "condition": "Wenn Prioritäten, Mittel und Zuständigkeiten angepasst werden.",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ]
+              }
+            ]
+          }
         }
       ],
       "claim_ledger": [
         {
-          "claim": "Die Europäische Kommission veröffentlicht am 1. September 2026 eine Rede von Kommissarin Lahbib zur Waldbrandsaison 2026.",
+          "claim": "Die Europäische Kommission teilt mit, dass in diesem Sommer in der EU fast 700.000 Hektar verbrannt sind.",
           "type": "fact",
           "source_ids": [
             "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
           ],
           "evidence_level": "high",
           "data_status": "confirmed",
-          "uncertainty": "Die Quelle ist eine institutionelle Rede der Kommission; der genaue redaktionelle Kontext ist im Material nicht weiter erläutert.",
+          "uncertainty": "Im Auszug fehlen Methodik, räumliche Abgrenzung und detaillierter Zeitraum.",
           "date": "2026-09-01"
         },
         {
-          "claim": "Die Kommission meldet, dass in diesem Sommer in der EU bereits fast 700.000 Hektar verbrannt sind.",
+          "claim": "Die Kommission ordnet diese Fläche als größer ein als den Jahresdurchschnitt der vergangenen zwei Jahrzehnte.",
           "type": "fact",
           "source_ids": [
             "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
           ],
           "evidence_level": "high",
           "data_status": "confirmed",
-          "uncertainty": "Die Quelle nennt die Zahl, aber im Auszug fehlen Methodik, Abgrenzung und weiterführende Details.",
+          "uncertainty": "Der Vergleich wird im vorliegenden Material nur behauptet, nicht methodisch erläutert.",
           "date": "2026-09-01"
         },
         {
-          "claim": "Die Kommission ordnet diese Fläche als mehr Land ein als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte.",
-          "type": "fact",
-          "source_ids": [
-            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
-          ],
-          "evidence_level": "high",
-          "data_status": "confirmed",
-          "uncertainty": "Im Material ist nicht erklärt, wie der Durchschnitt berechnet wurde.",
-          "date": "2026-09-01"
-        },
-        {
-          "claim": "Wirkung ist in der WÖK die tatsächliche Zustandsveränderung, nicht bloß Reichweite, Potenzial oder Bericht.",
-          "type": "woek_definition",
-          "source_ids": [],
-          "evidence_level": "high",
-          "data_status": "confirmed",
-          "uncertainty": "Methodische Definition aus dem Auftrag.",
-          "date": null
-        },
-        {
-          "claim": "Die gemeldete Brandfläche ist ein Zustandsindikator, aber noch kein Beleg für Ursachen, Folgekosten oder langfristige Trendwende.",
+          "claim": "Die Meldung deutet auf erhöhten Druck auf Einsatz, Prävention und Wiederaufbau hin.",
           "type": "analytical_inference",
           "source_ids": [
             "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
           ],
           "evidence_level": "medium",
           "data_status": "inferred",
-          "uncertainty": "Die Schlussfolgerung stützt sich auf das Fehlen methodischer und zeitlicher Details im Material.",
+          "uncertainty": "Plausibler Wirkpfad, aber nicht direkt im Material belegt.",
           "date": "2026-09-01"
         },
         {
-          "claim": "Großflächige Brände können Schutz- und Einsatzsysteme, Naturhaushalte und öffentliche Haushalte unter Druck setzen.",
-          "type": "impact_potential",
+          "claim": "Die große Brandfläche kann Gesundheit, Natur und öffentliche Haushalte belasten.",
+          "type": "impact_risk",
           "source_ids": [
             "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
           ],
           "evidence_level": "medium",
           "data_status": "inferred",
-          "uncertainty": "Im Material selbst werden diese Folgen nicht beziffert; es handelt sich um einen systemischen Wirkpfad, nicht um einen belegten Einzelfolgenachweis.",
+          "uncertainty": "Folgen sind im Auszug nicht konkret belegt; sie ergeben sich nur als plausibler Pfad aus der Größenordnung.",
           "date": "2026-09-01"
         },
         {
-          "claim": "Im vorliegenden Material ist keine beobachtete Folgewirkung wie Gesundheitsbelastung, Budgeteffekt oder politische Entscheidung belegt.",
-          "type": "observed_impact",
-          "source_ids": [
-            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
-            "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
-            "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
-          ],
-          "evidence_level": "high",
-          "data_status": "confirmed",
-          "uncertainty": "Die gelieferten Quellen enthalten keine solche Folgeinformation.",
-          "date": "2026-09-01"
-        },
-        {
-          "claim": "Die zwei weiteren im Paket enthaltenen Quellen liefern keine zusätzlichen Angaben zur Waldbrandsaison 2026.",
-          "type": "observation",
-          "source_ids": [
-            "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
-            "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
-          ],
-          "evidence_level": "high",
-          "data_status": "confirmed",
-          "uncertainty": "Die Titel und Abstracts sind thematisch nicht auf Waldbrände bezogen.",
-          "date": "2026-09-02"
-        },
-        {
-          "claim": "Aus der gemeldeten Brandfläche kann man eine mögliche Mehrbelastung für Mensch, Planet und öffentliche Steuerung ableiten, aber keine gesicherte Kausalität für längerfristige politische oder ökonomische Folgen.",
+          "claim": "Aus der Meldung lässt sich noch keine belastbare Aussage über langfristige Trendwenden oder Ursachen ableiten.",
           "type": "analytical_inference",
           "source_ids": [
             "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
           ],
-          "evidence_level": "medium",
+          "evidence_level": "high",
           "data_status": "inferred",
-          "uncertainty": "Die Quelle zeigt eine große Brandfläche, aber keine Folgekette.",
+          "uncertainty": "Die Quelle nennt dazu keine Methodik und keine Ursachen.",
           "date": "2026-09-01"
         }
       ],
       "counter_evidence": [
         {
-          "finding": "Das Paket enthält keine zweite unabhängige Quelle mit konkreten Waldbranddaten oder Methodik; die weiteren Dokumente sind themenfremd.",
-          "source_ids": [
-            "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
-            "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
-          ],
-          "effect_on_assessment": "Senkt die Belegbreite für eine robuste Einordnung; die Kommissionsangabe bleibt aber als amtlicher Einzelbefund bestehen."
-        },
-        {
-          "finding": "Im Auszug fehlen Angaben zur Messmethode, zeitlichen Abgrenzung und regionalen Verteilung der verbrannten Fläche.",
+          "finding": "Der gelieferte Auszug enthält keine Methodik zur Flächenerfassung, keine regionale Aufschlüsselung und keine Ursachenanalyse.",
           "source_ids": [
             "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
           ],
-          "effect_on_assessment": "Begrenzt die Stärke von Trend-, Ursache- und Wirkungszuordnungen erheblich."
+          "effect_on_assessment": "Begrenzt die Zurechnung; erlaubt nur eine vorsichtige systemische Analyse, aber keinen starken Trend- oder Ursachenbefund."
+        },
+        {
+          "finding": "Im Material ist keine tatsächliche Folgewirkung wie Verletztenzahl, Evakuierung oder Infrastrukturverlust belegt.",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "effect_on_assessment": "Schränkt Aussagen zu beobachteter Wirkung ein; Folgen bleiben als plausibler Pfad offen."
         }
       ],
+      "editorial_rules_version": "2.0",
+      "executive_finding": "Die Kommission meldet für diesen Sommer fast 700.000 verbrannte Hektar in der EU. Das ist nicht nur eine große Zahl, sondern ein Belastungssignal für mehrere gekoppelte Systeme zugleich: Einsatzkräfte, Prävention, Wiederaufbau, Natur und politische Steuerung. Sicher belegt ist die Größenordnung; offen bleiben Methodik, regionale Verteilung und konkrete Folgeschäden. Der wichtigste Punkt ist deshalb nicht Alarm, sondern Prüfung: Ob aus dieser Belastung mehr Vorsorge und bessere Resilienz entstehen, hängt von den nächsten politischen Entscheidungen ab.",
+      "subject_dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "rationale": "Große Brandflächen können Schutzbedarf, Einsatzlast und Belastungen für betroffene Menschen deutlich erhöhen.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "negative",
+          "magnitude": "high",
+          "evidence": "plausible_path"
+        },
+        "planet": {
+          "relevance": "hoch",
+          "rationale": "Verbrannte Wälder und Böden betreffen Ökosysteme direkt und können Regeneration erschweren.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "negative",
+          "magnitude": "high",
+          "evidence": "plausible_path"
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "rationale": "Die Lage testet die Fähigkeit öffentlicher Institutionen, Risiken sichtbar zu machen und darauf zu reagieren.",
+          "implementation_status": "open",
+          "likelihood": "plausible",
+          "direction": "mixed",
+          "magnitude": "medium",
+          "evidence": "plausible_path"
+        }
+      },
+      "assessment_context": "open",
+      "assessment_condition": "Die Bewertung gilt, solange nur die gemeldete Brandfläche und der Vergleich mit dem Durchschnitt vorliegen, ohne zusätzliche Methodik, Regionaldaten oder Schadensdaten.",
+      "author_perspective": {
+        "paragraphs": [
+          "Ich halte die Meldung für politisch und gesellschaftlich ernst, gerade weil sie nicht mit großen Worten, sondern mit einer harten Zahl kommt. Aus meiner Sicht ist der entscheidende Punkt nicht, ob man daraus sofort eine langfristige Diagnose ableiten kann. Das geht mit dem vorliegenden Material nicht. Entscheidend ist vielmehr, dass eine so große Brandfläche mehrere Systeme gleichzeitig belastet: Schutz, Natur, Verwaltung und Anpassung. Ich gewichte deshalb die Vorsorgefrage hoch. Wenn solche Sommer nicht nur Ausnahme bleiben, sondern zur wiederkehrenden Prüfung werden, muss Politik schneller, präziser und transparenter reagieren. Das ist keine moralische Forderung, sondern eine nüchterne Schlussfolgerung aus der Größenordnung der Belastung."
+        ],
+        "claim_indices": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "origin": "generated_from_analysis"
+      },
+      "positive_path_checks": [
+        {
+          "measure": "Frühzeitige, datenklare Aufschlüsselung der Brandlage nach Region und Zeitraum",
+          "source_ids": [
+            "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+          ],
+          "mechanism": "Mehr Transparenz verbessert Lagebild, Priorisierung und Einsatzkoordination und kann dadurch Folgeschäden senken."
+        }
+      ],
+      "counter_evidence_search": {
+        "checked": true,
+        "result": "Im gelieferten Material wurde kein belegter Gegenbefund zur gemeldeten Brandfläche gefunden. Gefunden wurden aber klare Grenzen: keine Methodik, keine regionale Aufschlüsselung, keine Ursachen- oder Schadensdaten. Deshalb bleibt die Bewertung vorsichtig und auf Belastungsdruck statt auf harte Folgezurechnung beschränkt."
+      },
+      "editorial_quality": {
+        "false_balance_checked": true,
+        "concrete_positive_paths_only": true,
+        "likelihood_direction_separated": true,
+        "safeguards_as_limits": true,
+        "evidence_bound_judgment": true,
+        "reader_takeaway_clear": true,
+        "concrete_language_checked": true,
+        "visuals_explain_mechanism": true,
+        "author_perspective_separated": true
+      },
       "what_changes_the_assessment": [
-        "Eine zweite belastbare Quelle mit eigener Methodik zur verbrannten Fläche würde die Evidenz stärken.",
-        "Angaben zur regionalen Verteilung könnten Verteilungs- und Resilienzfragen präzisieren.",
-        "Daten zu Folgen für Gesundheit, Infrastruktur, Ökosysteme oder öffentliche Ausgaben würden aus dem Lageindikator eine Wirkungsanalyse machen.",
-        "Vergleichsdaten mehrerer Jahre würden zeigen, ob es sich um eine Ausnahmesaison oder einen Trend handelt."
+        "Eine offizielle Aufschlüsselung nach Ländern, Zeitraum und Messmethode würde die Belastbarkeit deutlich erhöhen.",
+        "Angaben zu Verletzten, Evakuierungen, Infrastruktur- und Umweltschäden würden aus Potenzial eine beobachtete Wirkung machen.",
+        "Vergleichsdaten aus denselben Messreihen würden die Einordnung gegenüber dem Durchschnitt absichern."
       ],
       "self_frame_check": {
         "passed": true,
         "issues": [],
-        "recommended_title": "Fast 700.000 Hektar Brandfläche: Was die EU-Waldbrandsaison 2026 über Belastung und Resilienz zeigt",
-        "recommended_summary": "Die EU-Kommission meldet fast 700.000 Hektar verbrannte Fläche. Die Zahl zeigt vor allem Belastung, aber noch keinen Beweis für Ursachen, Folgen oder langfristige Trends.",
-        "recommended_meta_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt - was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt."
+        "recommended_title": "Fast 700.000 Hektar verbrannt: Was die EU-Waldbrandsaison für Schutz und Politik bedeutet",
+        "recommended_summary": "Die EU-Kommission meldet fast 700.000 verbrannte Hektar. Die Zahl ist ein Belastungssignal für Einsatz, Gesundheit, Natur und politische Prioritäten.",
+        "recommended_meta_description": "EU meldet fast 700.000 Hektar verbrannte Fläche: Analyse der Folgen für Katastrophenschutz, Gesundheit, Natur und Anpassungspolitik."
       },
       "reading_time_minutes": 6,
       "source_snapshot": [
@@ -6898,6 +7232,16 @@
           "title": "Meeting of 22-23 July 2026",
           "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html",
           "published_at": "2026-08-27T11:30:00.000Z",
+          "primary_source": true
+        },
+        {
+          "source_id": "bd91a37911c0ab0075d75f17d5e485d6027b9a51292522538b98a33ae16413a8",
+          "registry_source_id": "eu-kommission-presse",
+          "publisher_id": "eu-kommission-presse",
+          "publisher": "Europäische Kommission - Press Corner",
+          "title": "Tägliche Nachrichten 08 / 09 / 2026",
+          "url": "https://ec.europa.eu/commission/presscorner/detail/de/mex_26_1813",
+          "published_at": "2026-09-08T09:36:54.000Z",
           "primary_source": true
         },
         {
@@ -7021,6 +7365,301 @@
               "date": "2026-09-01"
             }
           ]
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-08T11:08:38.096Z",
+          "source_fingerprint": "b3ccdb4bdc5adee6b0d6f75de828e40403e2b8523b27bc4f4722fef60686ebcb",
+          "title": "Fast 700.000 Hektar verbrannt: Was die EU-Waldbrandsaison für Schutz und Politik bedeutet",
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "claim_ledger": [
+            {
+              "claim": "Die Europäische Kommission teilt mit, dass in diesem Sommer in der EU fast 700.000 Hektar verbrannt sind.",
+              "type": "fact",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Im Auszug fehlen Methodik, räumliche Abgrenzung und detaillierter Zeitraum.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Die Kommission ordnet diese Fläche als größer ein als den Jahresdurchschnitt der vergangenen zwei Jahrzehnte.",
+              "type": "fact",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "high",
+              "data_status": "confirmed",
+              "uncertainty": "Der Vergleich wird im vorliegenden Material nur behauptet, nicht methodisch erläutert.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Die Meldung deutet auf erhöhten Druck auf Einsatz, Prävention und Wiederaufbau hin.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Plausibler Wirkpfad, aber nicht direkt im Material belegt.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Die große Brandfläche kann Gesundheit, Natur und öffentliche Haushalte belasten.",
+              "type": "impact_risk",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "medium",
+              "data_status": "inferred",
+              "uncertainty": "Folgen sind im Auszug nicht konkret belegt; sie ergeben sich nur als plausibler Pfad aus der Größenordnung.",
+              "date": "2026-09-01"
+            },
+            {
+              "claim": "Aus der Meldung lässt sich noch keine belastbare Aussage über langfristige Trendwenden oder Ursachen ableiten.",
+              "type": "analytical_inference",
+              "source_ids": [
+                "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+              ],
+              "evidence_level": "high",
+              "data_status": "inferred",
+              "uncertainty": "Die Quelle nennt dazu keine Methodik und keine Ursachen.",
+              "date": "2026-09-01"
+            }
+          ],
+          "previous_content": {
+            "title": "Fast 700.000 Hektar Brandfläche: Was die EU-Waldbrandsaison 2026 über Belastung und Resilienz zeigt",
+            "subtitle": "Die Kommission meldet eine außergewöhnlich große verbrannte Fläche. Der zusätzliche Erkenntniswert liegt weniger in der Zahl selbst als in ihrem systemischen Wirkpfad.",
+            "teaser": "Die EU-Kommission spricht von fast 700.000 Hektar verbrannter Fläche in diesem Sommer. Das zeigt vor allem, wie stark Brandereignisse Schutz, Anpassung und Krisenfähigkeit unter Druck setzen können.",
+            "seo_description": "EU-Waldbrandsaison 2026: Fast 700.000 Hektar verbrannt - was die Zahl über Belastung, Resilienz und EU-Prioritäten aussagt.",
+            "sections": [
+              {
+                "id": "lage",
+                "title": "Lage: Eine große Zahl, aber noch keine vollständige Lagebeschreibung",
+                "paragraphs": [
+                  "Die Kommission meldet, dass in diesem Sommer in der EU fast 700.000 Hektar verbrannt sind. Sie sagt zugleich, diese Fläche liege über dem jährlichen Durchschnitt der vergangenen zwei Jahrzehnte. Das ist zunächst eine amtliche Größenangabe und eine relative Einordnung. Mehr nicht. Die Zahl markiert also einen auffälligen Zustand, aber sie erklärt ihn noch nicht.",
+                  "Für die Einordnung ist wichtig: Eine große Brandfläche bedeutet nicht automatisch schon eine eindeutig nachgewiesene Trendwende, ebenso wenig wie sie allein eine bestimmte politische Ursache belegt. Im Material fehlen die Angaben, die für eine streng kausale Bewertung nötig wären: Methodik, räumliche Verteilung, Brandursachen, Zeitraumgrenzen und Folgen. Die Lage ist damit ernst, aber analytisch nur teilweise ausgeleuchtet."
+                ]
+              },
+              {
+                "id": "system",
+                "title": "Systemischer Zusatznutzen: Warum die Zahl über den Feuerherd hinausweist",
+                "paragraphs": [
+                  "Der zusätzliche Erkenntniswert liegt darin, dass Brandflächen dieser Größenordnung mehrere Systeme gleichzeitig unter Druck setzen können. Betroffen sind nicht nur Wälder und Böden, sondern auch Einsatzkräfte, Gesundheitsvorsorge, Wiederaufbau, kommunale Haushalte und langfristig die Anpassungsfähigkeit ganzer Regionen. Das ist keine behauptete eingetretene Wirkung, sondern der systemische Wirkpfad, den die Meldung sichtbar macht.",
+                  "In der Wirkungsökonomie ist das wichtig, weil Reichweite und Wirkung nicht dasselbe sind. Eine hohe betroffene Fläche beschreibt zunächst den Umfang der Störung. Wirkung entsteht erst dort, wo sich Zustände tatsächlich verändern: etwa bei Ökosystemen, bei Schutzkapazitäten oder bei öffentlichen Kosten. Das Material belegt den Störungsumfang, nicht die Folgekette im Einzelnen."
+                ]
+              },
+              {
+                "id": "mpd",
+                "title": "Mensch, Planet, Demokratie: drei Perspektiven auf denselben Befund",
+                "paragraphs": [
+                  "Aus der Perspektive des Menschen ist die Meldung relevant, weil große Waldbrandflächen Schutz- und Einsatzstrukturen beanspruchen und damit mittelbar auch Gesundheits- und Sicherheitsfragen berühren können. Das ist im Material nicht als konkrete Belastung einzelner Bevölkerungen belegt, aber als plausibler Wirkpfad erkennbar. Für die Analyse heißt das: Belastungspotenzial ja, beobachtete Wirkung noch nein.",
+                  "Aus der Perspektive des Planeten ist der Befund unmittelbarer: Verbrannte Wälder, Böden und Lebensräume stehen direkt für materielle Verluste im Naturhaushalt. Für die Demokratie ist der Zusammenhang indirekter, aber real: Krisenlagen verlangen transparente Information, koordinierte öffentliche Reaktion und belastbare Prioritätensetzung. Die Quelle selbst enthält keine politische Entscheidung, aber sie markiert eine Lage, in der staatliche Koordination an Bedeutung gewinnt."
+                ]
+              },
+              {
+                "id": "wirkungsordnungen",
+                "title": "Wirkungsordnungen: Was sicher ist, was wahrscheinlich ist, was offen bleibt",
+                "paragraphs": [
+                  "Die erste Wirkungsordnung ist die direkte Zustandsänderung: verbrannte Fläche, verlorene Vegetation, beschädigter Naturraum. Diese Ebene ist durch die Meldung selbst angesprochen, auch wenn die methodischen Details fehlen. Die zweite Ordnung betrifft den Druck auf Einsatz- und Schutzsysteme. Hier liegt ein Wirkungspotenzial vor, aber kein Beweis im engeren Sinn, weil die Quelle keine Einsatzdaten, Kosten oder Ausfallfolgen liefert.",
+                  "Die dritte Ordnung betrifft mögliche Anpassungs- und Priorisierungsfolgen. Wenn solche Brandlagen wiederholt auftreten, können Vorsorge, Waldmanagement und Katastrophenschutz stärker gewichtet werden. Das ist eine analytische Inferenz, keine beobachtete Veränderung. Für eine harte Zurechnung müsste man weitere Quellen zu Entscheidungen, Budgets oder institutionellen Anpassungen prüfen."
+                ]
+              },
+              {
+                "id": "verteilung",
+                "title": "Verteilung: Wer die Last trägt, ist im Material nicht aufgelöst",
+                "paragraphs": [
+                  "Die Meldung benennt eine EU-weite Fläche, aber keine regionale oder soziale Verteilung. Damit bleibt offen, ob einzelne Mitgliedstaaten oder Bevölkerungsgruppen besonders stark betroffen sind. Gerade diese Verteilung wäre wichtig, um Belastung und Resilienz genauer zu bewerten. Eine EU-Gesamtzahl kann das Ausmaß signalisieren, aber nicht die ungleiche Betroffenheit ersetzen.",
+                  "Für die Wirkungsanalyse ist das ein zentraler blinder Fleck. Ohne regionale Differenzierung lassen sich weder Priorisierungen noch Ausgleichsbedarfe seriös bestimmen. Eine Zahl von fast 700.000 Hektar kann daher als Warnsignal gelten, aber nicht als vollständige Grundlage für Verteilungsurteile oder für die Bewertung einzelner Politikinstrumente."
+                ]
+              },
+              {
+                "id": "externalitaeten",
+                "title": "Externalitäten und Folgekosten: naheliegend, aber nicht belegt",
+                "paragraphs": [
+                  "Großbrände erzeugen typischerweise Folgelasten, etwa für Wiederherstellung, öffentliche Infrastruktur oder Gesundheitsvorsorge. Im vorliegenden Material werden solche Kosten jedoch nicht beziffert. Deshalb wäre es falsch, aus der Brandfläche direkt eine konkrete Budgetwirkung oder einen bestimmten gesamtwirtschaftlichen Schaden abzuleiten. Das wäre eine Überschreitung der Evidenz.",
+                  "Gleichzeitig macht die Meldung sichtbar, warum externe Kosten in dieser Debatte relevant sind: Die Schäden bleiben selten auf den Ort des Brandes beschränkt. Gerade darin liegt der systemische Zusatznutzen der Analyse: Sie trennt den belegten Zustandswechsel von den nur plausiblen, aber noch offenen Folgelasten."
+                ]
+              },
+              {
+                "id": "resilienz",
+                "title": "Resilienz: Belastung sichtbar, Widerstandskraft nicht gemessen",
+                "paragraphs": [
+                  "Die Zahl spricht dafür, dass das System in diesem Sommer stark beansprucht wurde. Ob es auch resilient reagiert hat, ist damit noch nicht belegt. Resilienz wäre erst dann nachweisbar, wenn man etwa schnelle Eindämmung, geringe Sekundärschäden oder erfolgreiche Wiederherstellung dokumentieren könnte. Davon steht im Material nichts.",
+                  "Trotzdem ist der Resilienzbezug journalistisch sinnvoll, weil die Meldung eine Schwelle markiert, an der Vorsorge und Reaktionsfähigkeit auf die Probe gestellt werden. Die Quelle belegt also eine Belastung, nicht die Leistungsfähigkeit des Systems unter Belastung. Das ist analytisch ein wichtiger Unterschied."
+                ]
+              },
+              {
+                "id": "szenarien",
+                "title": "Szenarien: Was die Zahl auslösen könnte und was sie nicht beweist",
+                "paragraphs": [
+                  "Wenn sich die Lage über mehrere Jahre ähnlich darstellt, könnte das Investitionen in Prävention, Waldmanagement und Katastrophenschutz begünstigen. Das ist ein mögliches Szenario, kein Befund. Ebenso möglich ist, dass die Zahl vor allem eine besonders schwere Saison beschreibt, ohne dass sich daraus automatisch eine dauerhafte neue Lage ergibt. Beides bleibt im Material offen.",
+                  "Die Meldung allein belegt also weder einen dauerhaften Trend noch eine Wirksamkeit von Gegenmaßnahmen. Sie ist ein Gegenwartsindikator mit offenem Zukunftspfad. Für die Analyse heißt das: wachsam lesen, aber nicht überdehnen."
+                ]
+              },
+              {
+                "id": "unsicherheit",
+                "title": "Unsicherheit: Die offene Methodik begrenzt die Aussagekraft",
+                "paragraphs": [
+                  "Die größte Unsicherheit betrifft die Mess- und Abgrenzungsfrage. Der Auszug liefert keine Methodik, keine Vergleichsreihe im Detail und keine Erklärung, wie die Fläche erfasst wurde. Auch die Frage, ob die Brandzahl bestimmte Länder, Vegetationsarten oder Zeiträume überproportional betrifft, bleibt unbeantwortet.",
+                  "Hinzu kommt: Die im Paket enthaltenen weiteren Quellen sind institutionell, aber thematisch nicht ergänzend zur Waldbrandsaison. Es gibt also keine zweite, unabhängige Quellenbasis, die den konkreten Befund hier zusätzlich absichert oder präzisiert. Das mindert nicht die Relevanz der Meldung, aber es begrenzt die Stärke der Zurechnung."
+                ]
+              },
+              {
+                "id": "beobachtung",
+                "title": "Beobachtungspunkte: Was als Nächstes geklärt werden müsste",
+                "paragraphs": [
+                  "Für eine belastbarere Bewertung wären vor allem drei Dinge nötig: erstens die exakte Methodik der Flächenmessung, zweitens regionale und zeitliche Aufschlüsselung, drittens Informationen zu Folgen für Gesundheit, Infrastruktur, Ökosysteme und öffentliche Ausgaben. Erst diese Daten würden aus dem Lageindikator eine robustere Wirkungsanalyse machen.",
+                  "Ebenso wichtig wären Vergleichsdaten aus früheren Jahren und mögliche Gegenbefunde, etwa ob andere Regionen in derselben Saison entlastet waren oder ob Präventionsmaßnahmen lokal gewirkt haben. Ohne diese Ergänzungen bleibt die Analyse bewusst vorsichtig. Sie sagt: große Belastung ist belegt, größere Wirkungsketten sind möglich, aber nicht nachgewiesen."
+                ]
+              },
+              {
+                "id": "synthese",
+                "title": "Synthese: Ein Warnsignal für Belastung, kein Beweis für Ursache oder Erfolg",
+                "paragraphs": [
+                  "Die Meldung der Kommission ist systemisch wichtig, weil sie eine außergewöhnlich große verbrannte Fläche als amtlichen Befund sichtbar macht. Der zusätzliche Nutzen einer WÖK-Analyse besteht darin, die Zahl als Zustandsänderung zu lesen und zugleich ihre Grenzen zu markieren. Der Befund weist auf Belastung hin, nicht auf eine bereits bewiesene längerfristige Verschlechterung der Lage.",
+                  "In der Verbindung von Mensch, Planet und Demokratie ergibt sich ein klares Bild: Brandflächen dieser Größenordnung können Schutzsysteme, Naturhaushalte und öffentliche Koordination zugleich beanspruchen. Aber die Quelle belegt weder Folgen im Detail noch politische Wirksamkeit. Genau diese Trennung schützt vor Überinterpretation. Die Zahl ist relevant, weil sie Handlungsdruck andeutet; sie ist noch kein vollständiger Wirkungsnachweis."
+                ]
+              }
+            ],
+            "claim_ledger": [
+              {
+                "claim": "Die Europäische Kommission veröffentlicht am 1. September 2026 eine Rede von Kommissarin Lahbib zur Waldbrandsaison 2026.",
+                "type": "fact",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Die Quelle ist eine institutionelle Rede der Kommission; der genaue redaktionelle Kontext ist im Material nicht weiter erläutert.",
+                "date": "2026-09-01"
+              },
+              {
+                "claim": "Die Kommission meldet, dass in diesem Sommer in der EU bereits fast 700.000 Hektar verbrannt sind.",
+                "type": "fact",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Die Quelle nennt die Zahl, aber im Auszug fehlen Methodik, Abgrenzung und weiterführende Details.",
+                "date": "2026-09-01"
+              },
+              {
+                "claim": "Die Kommission ordnet diese Fläche als mehr Land ein als der jährliche Durchschnitt der vergangenen zwei Jahrzehnte.",
+                "type": "fact",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Im Material ist nicht erklärt, wie der Durchschnitt berechnet wurde.",
+                "date": "2026-09-01"
+              },
+              {
+                "claim": "Wirkung ist in der WÖK die tatsächliche Zustandsveränderung, nicht bloß Reichweite, Potenzial oder Bericht.",
+                "type": "woek_definition",
+                "source_ids": [],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Methodische Definition aus dem Auftrag.",
+                "date": null
+              },
+              {
+                "claim": "Die gemeldete Brandfläche ist ein Zustandsindikator, aber noch kein Beleg für Ursachen, Folgekosten oder langfristige Trendwende.",
+                "type": "analytical_inference",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Die Schlussfolgerung stützt sich auf das Fehlen methodischer und zeitlicher Details im Material.",
+                "date": "2026-09-01"
+              },
+              {
+                "claim": "Großflächige Brände können Schutz- und Einsatzsysteme, Naturhaushalte und öffentliche Haushalte unter Druck setzen.",
+                "type": "impact_potential",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Im Material selbst werden diese Folgen nicht beziffert; es handelt sich um einen systemischen Wirkpfad, nicht um einen belegten Einzelfolgenachweis.",
+                "date": "2026-09-01"
+              },
+              {
+                "claim": "Im vorliegenden Material ist keine beobachtete Folgewirkung wie Gesundheitsbelastung, Budgeteffekt oder politische Entscheidung belegt.",
+                "type": "observed_impact",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
+                  "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+                  "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Die gelieferten Quellen enthalten keine solche Folgeinformation.",
+                "date": "2026-09-01"
+              },
+              {
+                "claim": "Die zwei weiteren im Paket enthaltenen Quellen liefern keine zusätzlichen Angaben zur Waldbrandsaison 2026.",
+                "type": "observation",
+                "source_ids": [
+                  "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+                  "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6"
+                ],
+                "evidence_level": "high",
+                "data_status": "confirmed",
+                "uncertainty": "Die Titel und Abstracts sind thematisch nicht auf Waldbrände bezogen.",
+                "date": "2026-09-02"
+              },
+              {
+                "claim": "Aus der gemeldeten Brandfläche kann man eine mögliche Mehrbelastung für Mensch, Planet und öffentliche Steuerung ableiten, aber keine gesicherte Kausalität für längerfristige politische oder ökonomische Folgen.",
+                "type": "analytical_inference",
+                "source_ids": [
+                  "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3"
+                ],
+                "evidence_level": "medium",
+                "data_status": "inferred",
+                "uncertainty": "Die Quelle zeigt eine große Brandfläche, aber keine Folgekette.",
+                "date": "2026-09-01"
+              }
+            ],
+            "source_snapshot": [
+              {
+                "source_id": "d5113c7632b5834c5db17c0e3dd9062cb8987742048879d7f08acdbd4fbe0db3",
+                "registry_source_id": "eu-kommission-presse",
+                "publisher_id": "eu-kommission-presse",
+                "publisher": "Europäische Kommission - Press Corner",
+                "title": "Speech by Commissioner Lahbib at the European Parliament on the 2026 Wildfire Season",
+                "url": "https://ec.europa.eu/commission/presscorner/detail/en/speech_26_1788",
+                "published_at": "2026-09-01T16:09:08.000Z",
+                "primary_source": true
+              },
+              {
+                "source_id": "cce7f5f1acb0787f61154a0d0a60faf69d8d42c04a107c2087edad779c4259ff",
+                "registry_source_id": "ezb-presse",
+                "publisher_id": "ezb-presse",
+                "publisher": "Europäische Zentralbank",
+                "title": "Meeting of 22-23 July 2026",
+                "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg260827~f06c21fd54.en.html",
+                "published_at": "2026-08-27T11:30:00.000Z",
+                "primary_source": true
+              },
+              {
+                "source_id": "4162f559095a022818db432a6236805bc6dc018753c13541446b1cf8cf4bf4e6",
+                "registry_source_id": "eu-kommission-presse",
+                "publisher_id": "eu-kommission-presse",
+                "publisher": "Europäische Kommission - Press Corner",
+                "title": "Tägliche Nachrichten 02 / 09 / 2026",
+                "url": "https://ec.europa.eu/commission/presscorner/detail/de/mex_26_1789",
+                "published_at": "2026-09-02T07:22:18.000Z",
+                "primary_source": true
+              }
+            ]
+          }
         }
       ]
     },
@@ -25242,8 +25881,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T10:53:22.688Z",
-      "next_attempt_at": "2026-09-08T11:08:22.688Z",
+      "last_attempt_at": "2026-09-08T11:08:38.096Z",
+      "next_attempt_at": "2026-09-08T11:23:38.096Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -25276,28 +25915,15 @@
     "wt-de413d33343f350b": {
       "fingerprint": "5ea356c73c587ffd17ac555f965fdf3fa95795addba48aa4876dfd842af02cc3",
       "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-08T10:29:32.164Z",
-      "next_attempt_at": "2026-09-08T10:59:32.164Z",
+      "attempts": 3,
+      "last_attempt_at": "2026-09-08T11:08:38.096Z",
+      "next_attempt_at": "2026-09-08T12:08:38.096Z",
       "quality_errors": [
-        "EDITORIAL_TEASER_LENGTH",
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
-      ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_TEASER_LENGTH,EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
-    },
-    "wt-b5e0a39f46388642": {
-      "fingerprint": "b3ccdb4bdc5adee6b0d6f75de828e40403e2b8523b27bc4f4722fef60686ebcb",
-      "method_version": "1.0",
-      "attempts": 2,
-      "last_attempt_at": "2026-09-08T10:29:32.164Z",
-      "next_attempt_at": "2026-09-08T10:59:32.164Z",
-      "quality_errors": [
-        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
