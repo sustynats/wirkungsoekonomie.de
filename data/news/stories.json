@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T20:21:54.035Z",
-  "updated_at": "2026-09-08T20:36:57.130Z",
+  "updated_at": "2026-09-08T20:51:52.093Z",
   "stories": [
     {
       "story_id": "wt-e820bef62dd96612",
@@ -6015,6 +6015,49 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-08T20:51:52.093Z",
+          "retained_urls": [
+            "https://www.manager-magazin.de/unternehmen/energie/polizei-nimmt-mutmasslichen-strom-saboteur-fest-a-7afac07b-533e-4bef-acc7-fe1200846008",
+            "https://www.tagesschau.de/inland/festnahme-strom-saboteur-100.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "dlf-nachrichten",
+              "publisher": "Deutschlandfunk",
+              "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
+              "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+              "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T19:27:25.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
+              "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
+              "publisher_id": "deutschlandfunk",
+              "publisher_kind": "public_broadcasting",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "international"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T19:27:25.000Z",
+              "ingested_at": "2026-09-08T20:36:57.130Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:deutschlandfunk",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-08T11:06:00.000Z",
@@ -6091,39 +6134,6 @@
           },
           "collection_source_id": "swr-aktuell",
           "collection_publisher_id": "swr"
-        },
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-100.html",
-          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
-          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T19:27:25.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "726cec0f183018a6e594cf28004905b9e194ebaf9182431fd57f4343bb69f7aa",
-          "source_item_id": "3605690b55c5c25d5d8a7b84cc1abeac983b3e27d8bfcaa7053782bc6cfbf05c",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T19:27:25.000Z",
-          "ingested_at": "2026-09-08T20:36:57.130Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
         }
       ],
       "claims": [
@@ -6145,7 +6155,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:36:57.130Z"
+          "checked_at": "2026-09-08T20:51:52.093Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -6166,41 +6176,18 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:36:57.130Z"
-        },
-        {
-          "claim_id": "wt-4409a2f6e240d133-claim-03",
-          "story_id": "wt-4409a2f6e240d133",
-          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:36:57.130Z"
+          "checked_at": "2026-09-08T20:51:52.093Z"
         }
       ],
-      "content_hash": "8be4a3a6fdf34f22f2d124abde2ed1bfe6de5b1c86f50c765c03f298c5d23ac4",
+      "content_hash": "c8ce372d04f82ecc364b86c165a7874db7627cd12928239fff886f2afaba9f54",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH",
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 11,
       "quality_retry_after": "2026-09-08T21:36:57.130Z",
       "reassessment": false,
       "fresh": false,
-      "pending_reason": "QUALITY_GATE_FAILED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
       "updated_at": "2026-09-08T20:36:57.130Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
@@ -11624,7 +11611,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "2f85c23ddcd850003559d4df0551295fa6a18908b5eb4a9ecd9209ef43c15c4a",
           "issue_codes": [],
           "warning_codes": []
@@ -12697,7 +12684,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -13563,7 +13550,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -15151,7 +15138,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T18:56:58.161Z"
+        "retry_after": "2026-09-08T21:07:37.433Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -16735,7 +16722,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T18:56:53.141Z"
+        "retry_after": "2026-09-08T21:07:28.821Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -25189,7 +25176,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T18:57:02.598Z"
+        "retry_after": "2026-09-08T21:07:43.290Z"
       },
       "pending_update": {
         "detected_at": "2026-09-08T14:52:22.706Z",
@@ -25240,7 +25227,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "04fad27b4d3289772b2e99292c31ee46e8833ec80b2213996da8da259f0bd90f",
           "issue_codes": [],
           "warning_codes": []
@@ -26601,7 +26588,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -40751,7 +40738,7 @@
       "verification_started_at": "2026-09-08T10:28:37.227Z",
       "publish_ready_at": "2026-09-08T10:28:51.345Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -41201,9 +41188,12 @@
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-08T20:54:30.251Z"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T14:06:56.372Z",
-        "content_hash": "a00300db27964238a0d06db22daaee217c77e1afeb8282eec1def20105fdf889",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "bfff825d5f5218f70ea091d11257421c499ff4f13d987d24ee482a43f16259ba",
+        "checked_at": "2026-09-08T20:51:52.093Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-09T02:51:52.093Z",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -41237,24 +41227,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
-          "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-96126ab003c2ba16",
@@ -48601,7 +48576,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:36:57.130Z"
+          "checked_at": "2026-09-08T20:51:52.093Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -48616,7 +48591,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T20:36:57.130Z",
+      "updated_at": "2026-09-08T20:51:52.093Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -48657,7 +48632,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 629.5167166666666,
+        "queue_age_minutes": 644.4327666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -48666,7 +48641,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T20:36:57.130Z",
+        "checked_at": "2026-09-08T20:51:52.093Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -48736,7 +48711,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:36:57.130Z"
+          "checked_at": "2026-09-08T20:51:52.093Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -48751,7 +48726,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T20:36:57.130Z",
+      "updated_at": "2026-09-08T20:51:52.093Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -48791,7 +48766,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 629.5167166666666,
+        "queue_age_minutes": 644.4327666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -48800,7 +48775,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T20:36:57.130Z",
+        "checked_at": "2026-09-08T20:51:52.093Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -50232,7 +50207,7 @@
       "verification_started_at": "2026-09-08T07:39:29.047Z",
       "publish_ready_at": "2026-09-08T07:39:41.053Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -50847,9 +50822,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "583bd8e43e7af59e698f7433ff9c5c3ae9dd39cf2052673fe0cd332a2e48c492",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "b36d881fa0e776334f705b960b42eb23b41f7572b0507455c0c18828df634a71",
+        "checked_at": "2026-09-08T20:51:52.093Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-09T02:51:52.093Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -50917,24 +50895,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
-          "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-54efb3c831e7223d",
@@ -53062,7 +53025,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -60630,7 +60593,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "23f60f41c7e50322a66d673ffbc4f4fa77d3d18dc42146d6ae3e57aa6991c72f",
           "issue_codes": [],
           "warning_codes": []
@@ -63362,7 +63325,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -66335,7 +66298,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -66497,7 +66460,7 @@
       "verification_started_at": "2026-09-07T23:39:15.690Z",
       "publish_ready_at": "2026-09-07T23:39:37.569Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -66929,83 +66892,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "4a5186bf3e10d5105495284c90dc3847e1b2a3e64dd88a1ef47993bd9ac66c23",
-        "checked_at": "2026-09-08T06:37:33.655Z",
+        "fingerprint": "b61c338dfe228d114c8dc20708392dfa127499fa61bb3d38a2dceac07db20f0e",
+        "checked_at": "2026-09-08T20:51:52.093Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T12:37:33.655Z",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-100.html",
-            "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
-            "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T16:32:01.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "917d84824c59c9d27d77c8d027e73cd2d7878a2d2cf6c1b4bb289e64bbf0dcc2",
-            "source_item_id": "8522505814dfd134c1de6ce927fdf1d00172880a51c260f1ff3d2bf36d7d858c",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T16:32:01.000Z",
-            "ingested_at": "2026-09-07T16:52:04.572Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/polizei-ruft-bevoelkerung-auf-verdaechtige-beobachtungen-zu-melden-110.html",
-            "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
-            "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T06:34:15.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "e7d497f33cee23ff5a93ff5a215f8b00ed43d06ab6c87eb03e1f45f29dc51d30",
-            "source_item_id": "4881fd87297a327785a9cb7c3ba857feb803fc21180cc896da2ee63e91fa1d2c",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T06:34:15.000Z",
-            "ingested_at": "2026-09-08T06:37:33.655Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "e5230658e38a9b3ccaa9d12b9035dab933736b521e96b99f4d3b95aa8f763331",
+        "expires_at": "2026-09-09T02:51:52.093Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -67073,24 +66963,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
-          "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-cd001726db438d2d",
@@ -68585,9 +68460,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T20:36:57.130Z",
+        "checked_at": "2026-09-08T20:51:52.093Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T02:36:57.130Z",
+        "expires_at": "2026-09-09T02:51:52.093Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -72053,7 +71928,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -72387,7 +72262,7 @@
       "verification_started_at": "2026-09-07T22:08:17.836Z",
       "publish_ready_at": "2026-09-07T22:08:26.896Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T10:00:00.000Z",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -72890,215 +72765,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "df03a5c6dc2c23891f87310a14efcf5567bddb5d8045e3cfbd9622e97c58cfe7",
-        "checked_at": "2026-09-08T06:52:08.981Z",
+        "fingerprint": "657be3f61c7fe623e9f97a38a120c618157f6df7356c90221c665964e2c0005c",
+        "checked_at": "2026-09-08T20:51:52.093Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T12:52:08.981Z",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--21-sprengsaetze-an-stromleitungen-entdeckt-und-entschaerft-38215186.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T09:21:15.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "fef3fe488ba51128bf53e8481a8779514970f3a25937895da5cb5b0960e4e633",
-            "source_item_id": "b07eaa1d3520625fa16435a915e810cb9c32a3ba5a278a91d3aef5686a5a6a8b",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T09:21:15.000Z",
-            "ingested_at": "2026-09-07T09:36:56.459Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16026020.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T09:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "2768dde59345a2103e05cc0db5e61234abf2a34d73e85bbc24940947363f70ec",
-            "source_item_id": "48be06491d2ddcbced89013cc54ca30fb3bd7b884b3d90a7fc20e46735606152",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T09:22:14.000Z",
-            "ingested_at": "2026-09-07T09:36:56.459Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-anschlage-auf-stromleitungen-16026020.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze in Sachsen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T09:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "865c0dff526357e2156706bc4b9b6e85f9f421612c857532a947f826d8e218c0",
-            "source_item_id": "0b9acfc150020fff2f140d46103c9e4347f164e1949eccd83fefb209026dd591",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T09:22:14.000Z",
-            "ingested_at": "2026-09-07T10:21:55.886Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-anschlage-auf-stromleitungenneun-weitere-sprengsatze-in-sachsen-entdeckt-und-entscharft-16026020.html",
-            "title": "Anschläge auf Stromleitungen: Neun weitere Sprengsätze in Sachsen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T09:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "0894397670439ef605d397f8d534f236fb972111ab535b1611bb97dd583a8959",
-            "source_item_id": "51b5e6cacae86b5a7f05ed96c87ef28517228e7a65f969823d96f065e6e48827",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T09:22:14.000Z",
-            "ingested_at": "2026-09-07T12:51:36.383Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-21-sprengsaetze-an-stromleitungen-entdeckt-und-entschaerft/100252553.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T10:52:31.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "3799727fff504263a9dcf36e6f14d1accc5bbf550d1ae94a32fe56c04e688c61",
-            "source_item_id": "9dee1ab53b694cd815c0b4f2c832f8e278a4d5d0428201ec22be8cc73616892e",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T10:52:31.000Z",
-            "ingested_at": "2026-09-07T11:06:42.503Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-21-sprengsaetze-in-sachsen-entdeckt/100252553.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T11:06:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "dbefb6550005f0937d31e31530b470adfa1bf926bb082dad49f8202d51a94582",
-            "source_item_id": "b7b337736022a15ca6b1a50cca56585097a20df0410136b4276915794ce75f33",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T11:06:00.000Z",
-            "ingested_at": "2026-09-07T14:37:01.659Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ]
-      },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T10:07:26.127Z",
-        "content_hash": "55b3eedd957cd0388b644ffbb1ff482a66884a9b6d69f087b1c317846144cb02",
+        "expires_at": "2026-09-09T02:51:52.093Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -73298,24 +72968,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": true,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
-          "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-f28df6ca278ec0c7",
@@ -76410,7 +76065,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -80425,7 +80080,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -84418,9 +84073,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-08T20:36:57.130Z",
+        "checked_at": "2026-09-08T20:51:52.093Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T02:36:57.130Z",
+        "expires_at": "2026-09-09T02:51:52.093Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -89096,7 +88751,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -93633,7 +93288,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -108247,7 +107902,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -125204,7 +124859,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:36:57.130Z"
+          "checked_at": "2026-09-08T20:51:52.093Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -125224,7 +124879,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T20:36:57.130Z"
+          "checked_at": "2026-09-08T20:51:52.093Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -125240,7 +124895,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T20:36:57.130Z",
+      "updated_at": "2026-09-08T20:51:52.093Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -125280,7 +124935,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2130.0627833333333,
+        "queue_age_minutes": 2144.978833333333,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -125289,7 +124944,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T20:36:57.130Z",
+        "checked_at": "2026-09-08T20:51:52.093Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -145497,7 +145152,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -146198,7 +145853,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -146973,7 +146628,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -181159,7 +180814,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -225553,7 +225208,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T20:36:57.130Z",
+          "checked_at": "2026-09-08T20:51:52.093Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
