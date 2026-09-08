@@ -207,6 +207,23 @@ test("stored numeric evidence survives transient article removal but not a chang
   assert.deepEqual(persistedNumericEvidence(s), []);
 });
 
+test("mixed-language source numbers support German prose without accepting wrong magnitudes or URL dates", () => {
+  const s = candidate(), a = validAnalysis();
+  s.sources[0].language = 'en';
+  s.sources[0].title = 'Floods kill 1,300 people.';
+  s.sources[0].summary = 'Authorities report 900 missing workers and 2.330 percent.';
+  s.sources[0].url = 'https://example.org/2026/09/07/floods';
+  a.why_relevant = 'Die Quelle berichtet von 1300 Todesfällen und 900 Vermissten.';
+  a.source_summary += ' Die Quelle nennt 1300 Tote und 2,33 Prozent.';
+  const numericErrors = () => validateAnalysis(a,s).filter(e => /^AI_(?:SOURCE_SUMMARY_)?UNSUPPORTED_NUMBER:/.test(e));
+  assert.deepEqual(numericErrors(),[]);
+  a.why_relevant = 'Die Quelle nennt 1,3 Todesfälle und 2330 Prozent.';
+  assert.ok(numericErrors().includes('AI_UNSUPPORTED_NUMBER:1.3'));
+  assert.ok(numericErrors().includes('AI_UNSUPPORTED_NUMBER:2330'));
+  a.source_summary += ' Am 7. September 2026.';
+  assert.ok(numericErrors().includes('AI_SOURCE_SUMMARY_UNSUPPORTED_NUMBER:2026'), 'metadata URL is still not a content excerpt');
+});
+
 test("internal IDs and method versions are not treated as reader-facing numeric claims", () => {
   const a = validAnalysis();
   a.method_version = '2.1'; a.provider_model = 'gpt-5.4-mini';

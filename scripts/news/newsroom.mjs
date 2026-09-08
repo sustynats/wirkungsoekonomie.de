@@ -1,5 +1,5 @@
 import { createHash } from "node:crypto";
-import { numberTokens } from "./numeric-evidence.mjs";
+import { numberTokens, evidenceNumberTokens } from "./numeric-evidence.mjs";
 import { sourceAccess } from "./access-policy.mjs";
 
 const hash = (value) => createHash("sha256").update(String(value)).digest("hex").slice(0, 20);
@@ -241,7 +241,7 @@ export function validateNewsroomAnalysis(analysis, story) {
       if (source) cited.push(source);
     }
     const groups = evidenceGroups(cited);
-    const proofNumbers = numberTokens(claim.evidence.map((proof) => proof.excerpt || "").join(" \n"));
+    const proofNumbers = evidenceNumberTokens(claim.evidence, story.sources);
     for (const number of numberTokens(claim.claim)) if (!proofNumbers.has(number)) errors.push("CLAIM_NUMBER_NOT_IN_EVIDENCE");
     if (claim.status === "confirmed_claim" && groups.possible_independent_origins < 2) errors.push("CLAIM_INDEPENDENCE_NOT_ESTABLISHED");
     if (claim.status === "primary_source_claim" && !cited.some((source) => source.primary_source)) errors.push("CLAIM_PRIMARY_SOURCE_MISSING");

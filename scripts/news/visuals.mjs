@@ -126,7 +126,7 @@ function escapeHtml(value = "") {
     .replace(/'/g, "&#039;");
 }
 
-import { numberTokens } from "./numeric-evidence.mjs";
+import { numberTokens, sourceNumberTokens } from "./numeric-evidence.mjs";
 export { numberTokens } from "./numeric-evidence.mjs";
 
 function cleanText(value, maxLength) {
@@ -229,7 +229,11 @@ export function sanitizeVisuals(input, story = {}) {
 
   const sourceText = storySourceText(story);
   const lowerSource = sourceText.toLowerCase();
-  const allowed = numberTokens(sourceText);
+  const allowed = new Set([
+    ...(story.sources || []).flatMap(source => [...sourceNumberTokens(source, ['title', 'summary'])]),
+    ...numberTokens((story.claims || []).map(claim => claim.claim || '').join(' ')),
+    ...numberTokens(story.source_summary || ''),
+  ]);
   const claimIds = new Set((story.claims || []).map((claim) => claim.claim_id));
   const output = {};
 
