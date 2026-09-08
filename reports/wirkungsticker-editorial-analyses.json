@@ -2,31 +2,25 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T01:52:42.101Z",
+  "started_at": "2026-09-08T02:06:57.953Z",
   "scanned_stories": 139,
   "scanned_subjects": 121,
   "editorial_candidates": 23,
-  "ready_for_research": 7,
+  "ready_for_research": 6,
   "research_pending": 6,
-  "retry_deferred": 3,
+  "retry_deferred": 6,
   "editorial_research_sources_discovered": 31,
-  "selected": 4,
-  "editorial_research_started": 4,
-  "editorial_analyses_published": 1,
+  "selected": 0,
+  "editorial_research_started": 0,
+  "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 4,
-  "research_tokens": 26216,
-  "analysis_tokens": 27954,
-  "estimated_cost_usd": 0.140617,
-  "quality_retries": 2,
-  "publication_deferred": true,
-  "failed": [
-    {
-      "story_id": "wt-f03755f6f6b8c3b7",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T03:52:42.101Z"
-    }
-  ],
+  "research_calls": 0,
+  "research_tokens": 0,
+  "analysis_tokens": 0,
+  "estimated_cost_usd": 0,
+  "quality_retries": 0,
+  "publication_deferred": false,
+  "failed": [],
   "candidates": [
     {
       "story_id": "wt-8802c617d5bb3e85",
@@ -67,8 +61,8 @@
         "reasons": []
       },
       "fingerprint": "6268c1bfa224bdd09f3817521001cfd1a7cfbb345ef91dc1832f3b72ff3ea28f",
-      "status": "ready_for_research",
-      "analysis_id": null
+      "status": "published",
+      "analysis_id": "woek-analysis-3988abd77b8d"
     },
     {
       "story_id": "wt-7b385f58748f3d32",
@@ -1013,15 +1007,13 @@
     }
   ],
   "batch": {
-    "submitted": 1,
-    "pending": 0,
+    "submitted": 0,
+    "pending": 1,
     "completed": 0,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
     "timing_reconciled": 0,
     "attention_required": []
-  },
-  "batch_deferred": 2,
-  "completed_at": "2026-09-08T01:55:35.789Z"
+  }
 }
