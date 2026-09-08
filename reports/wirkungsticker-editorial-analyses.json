@@ -2,32 +2,74 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T00:22:40.737Z",
+  "started_at": "2026-09-08T00:37:12.999Z",
   "scanned_stories": 138,
   "scanned_subjects": 120,
   "editorial_candidates": 22,
-  "ready_for_research": 6,
+  "ready_for_research": 7,
   "research_pending": 6,
-  "retry_deferred": 5,
-  "editorial_research_sources_discovered": 22,
-  "selected": 1,
-  "editorial_research_started": 2,
+  "retry_deferred": 4,
+  "editorial_research_sources_discovered": 25,
+  "selected": 3,
+  "editorial_research_started": 5,
   "editorial_analyses_published": 0,
-  "editorial_analyses_updated": 0,
-  "research_calls": 2,
-  "research_tokens": 19632,
-  "analysis_tokens": 15004,
-  "estimated_cost_usd": 0.082242,
-  "quality_retries": 1,
-  "publication_deferred": false,
+  "editorial_analyses_updated": 1,
+  "research_calls": 4,
+  "research_tokens": 40418,
+  "analysis_tokens": 27389,
+  "estimated_cost_usd": 0.149244,
+  "quality_retries": 3,
+  "publication_deferred": true,
   "failed": [
     {
       "story_id": "wt-1c2c187d0b858b7c",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_POSITIVE_PATH_UNGROUNDED,SYSTEMIC_VISUAL_SOURCE_REQUIRED",
-      "next_attempt_at": "2026-09-08T02:22:40.737Z"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-08T00:52:12.999Z"
     }
   ],
   "candidates": [
+    {
+      "story_id": "wt-7b385f58748f3d32",
+      "story_slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
+      "story_title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+      "editorial_analysis_score": 76,
+      "analysis_gain": 52,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 9,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 4,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 6,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "93379a94be74cad99051049d5d3bb535add7d8a9b7afaba14847f81d2689ad1e",
+      "status": "ready_for_research",
+      "analysis_id": "woek-analysis-dab9cdd59202"
+    },
     {
       "story_id": "wt-f03755f6f6b8c3b7",
       "story_slug": "sabotageversuche-polizei-ruft-bevolkerung-auf-verdachtige-beobachtungen-zu-melden-b8c3b7",
@@ -158,8 +200,8 @@
       "story_id": "wt-1c2c187d0b858b7c",
       "story_slug": "anschlage-auf-stromleitungen-21-sprengsatze-an-stromleitungen-entdeckt-und-entscharft-858b7c",
       "story_title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-      "editorial_analysis_score": 76,
-      "analysis_gain": 52,
+      "editorial_analysis_score": 80,
+      "analysis_gain": 60,
       "factors": {
         "systemic_relevance": 16,
         "impact_potential": 0,
@@ -174,7 +216,7 @@
         "MPD_interdependence": 2,
         "distribution_relevance": 6,
         "discourse_relevance": 0,
-        "case_depth": 0,
+        "case_depth": 4,
         "evidence_quality": 8
       },
       "factor_status": {
@@ -185,14 +227,14 @@
       "evidence_gate": {
         "passed": true,
         "source_integrity": "verified",
-        "independent_origin_count": 5,
+        "independent_origin_count": 6,
         "primary_source_count": 0,
-        "cited_claim_count": 10,
+        "cited_claim_count": 13,
         "primary_source_expected": false,
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "1fb3d62e28487277e32caff82efe2522cea1c8dd8c40697b1be02c774c4c3013",
+      "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -581,48 +623,6 @@
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
-      "story_id": "wt-7b385f58748f3d32",
-      "story_slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
-      "story_title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
-      "editorial_analysis_score": 75,
-      "analysis_gain": 52,
-      "factors": {
-        "systemic_relevance": 16,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 9,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 0,
-        "MPD_interdependence": 2,
-        "distribution_relevance": 3,
-        "discourse_relevance": 4,
-        "case_depth": 0,
-        "evidence_quality": 7
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": true,
-        "source_integrity": "verified",
-        "independent_origin_count": 3,
-        "primary_source_count": 0,
-        "cited_claim_count": 6,
-        "primary_source_expected": false,
-        "primary_source_satisfied": true,
-        "reasons": []
-      },
-      "fingerprint": "ebe8e41ad43800b9eaca75298cf32bdebbc510b1d807d1eed3ce629f080df79f",
-      "status": "published",
-      "analysis_id": "woek-analysis-dab9cdd59202"
-    },
-    {
       "story_id": "wt-f2edeab46d126d83",
       "story_slug": "hackergruppe-veroffentlicht-daten-nach-angriff-auf-berliner-landesnetz-126d83",
       "story_title": "Hackergruppe veröffentlicht Daten nach Angriff auf Berliner Landesnetz",
@@ -971,13 +971,14 @@
     }
   ],
   "batch": {
-    "submitted": 0,
-    "pending": 2,
-    "completed": 0,
+    "submitted": 1,
+    "pending": 0,
+    "completed": 1,
     "failed": 0,
     "applied": 0,
     "polling_errors": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-08T00:23:53.477Z"
+  "batch_deferred": 1,
+  "completed_at": "2026-09-08T00:41:22.820Z"
 }

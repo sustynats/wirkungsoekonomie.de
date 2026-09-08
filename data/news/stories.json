@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T00:06:52.179Z",
-  "updated_at": "2026-09-08T00:22:05.326Z",
+  "public_updated_at": "2026-09-08T00:37:01.383Z",
+  "updated_at": "2026-09-08T00:37:01.383Z",
   "stories": [
     {
       "story_id": "wt-12227eeecd48c0b9",
@@ -62998,7 +62998,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T00:22:05.326Z"
+          "checked_at": "2026-09-08T00:36:42.247Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -63018,7 +63018,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T00:22:05.326Z"
+          "checked_at": "2026-09-08T00:36:42.247Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -63034,7 +63034,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T00:22:05.326Z",
+      "updated_at": "2026-09-08T00:36:42.247Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -63074,7 +63074,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 915.1993833333333,
+        "queue_age_minutes": 929.8147333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -63083,7 +63083,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T00:22:05.326Z",
+        "checked_at": "2026-09-08T00:36:42.247Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -69792,6 +69792,156 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-12fee2a0545ed965",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "6f63120792651ded20a61114be4d39ac414c2288c6842be90d70008e509f9d17",
+        "first_failed_at": "2026-09-08T00:36:42.247Z",
+        "failed_at": "2026-09-08T00:36:42.247Z",
+        "retry_after": "2026-09-08T00:51:42.247Z",
+        "retry_count": 1
+      },
+      "slug": "instandgesetzter-sportbootanleger-in-tegel-feierlich-eroffnet-5ed965",
+      "title": "Instandgesetzter Sportbootanleger in Tegel feierlich eröffnet",
+      "first_seen": "2026-09-06T22:00:00.000Z",
+      "last_updated": "2026-09-06T22:00:00.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "berlin-presseportal",
+          "publisher": "Presseportal des Landes Berlin",
+          "url": "https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1711233.php",
+          "title": "Instandgesetzter Sportbootanleger in Tegel feierlich eröffnet",
+          "summary": "",
+          "source_type": "html_index",
+          "published_at": "2026-09-06T22:00:00.000Z",
+          "primary_source": true,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "80bbeaedef5af4c11b54c6bcf3fedee3fbc6ded25536e04d0606b2f556369bb4",
+          "source_item_id": "2db730ea1ae38428bc9540db19a232205f4a60659c7bfb3cd8ab87d8e8c2511d",
+          "publisher_id": "land-berlin",
+          "publisher_kind": "institution",
+          "source_role": "official_statement",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T22:00:00.000Z",
+          "ingested_at": "2026-09-08T00:36:42.247Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:land-berlin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-12fee2a0545ed965-claim-01",
+          "story_id": "wt-12fee2a0545ed965",
+          "claim": "Instandgesetzter Sportbootanleger in Tegel feierlich eröffnet",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "berlin-presseportal",
+          "source_function": "official_statement",
+          "status": "primary_source_claim",
+          "provenance": {
+            "origin": "publisher:land-berlin",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Primärquelle",
+          "data_status": "nur Titel und Metadaten",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Feed enthält keinen Kurztext.",
+          "checked_at": "2026-09-08T00:36:42.247Z"
+        }
+      ],
+      "content_hash": "c8515bfebd07bee0bffbfdc72121f47ece218ab76b562faeff0e768cc5c8f80a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T00:51:42.247Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T00:36:42.247Z",
+      "event_first_seen_at": "2026-09-08T00:36:42.247Z",
+      "event_detected_at": "2026-09-08T00:36:42.247Z",
+      "event_id": "event-450f67b838fc5ca3f66a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "implementation"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 1596.7041166666668,
+        "detection_delay_minutes": 1596.7041166666668,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 0,
+        "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T00:36:42.247Z",
+        "fingerprint": "e97a124f92b1cc012b877e0b5e0a22f52d1e5f8d2220cd1224ade32c678a8d5c",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T00:36:42.247Z",
+      "rejection": {
+        "at": "2026-09-08T00:36:42.247Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -120416,7 +120566,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T00:22:05.326Z",
+          "checked_at": "2026-09-08T00:36:42.247Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -153010,11 +153160,11 @@
     {
       "story_id": "wt-7b385f58748f3d32",
       "slug": "ard-informationen-polizeibehorden-halten-bekennerschreiben-fur-authentisch-8f3d32",
-      "title": "ARD-Informationen: Polizeibehörden halten Bekennerschreiben für authentisch",
+      "title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
       "first_seen": "2026-09-04T10:06:18.000Z",
-      "last_updated": "2026-09-05T09:18:31.212Z",
+      "last_updated": "2026-09-08T00:37:01.383Z",
       "published_at": "2026-09-04T10:09:13.371Z",
-      "updated_at": "2026-09-05T09:18:31.212Z",
+      "updated_at": "2026-09-08T00:37:01.383Z",
       "topic": [
         "Energie"
       ],
@@ -153184,7 +153334,7 @@
       "listed": true,
       "analysis_status": "veröffentlicht",
       "relevance_filter_version": "4.0",
-      "current_version": 2,
+      "current_version": 3,
       "source_summary": "Die rbb24-Meldung berichtet unter Berufung auf ARD-Informationen, dass Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten. Nach dem Bericht bekennt sich darin ein mutmaßlicher Alleintäter zu Anschlägen in Jänschwalde und in Bergheim bei Köln, und die Fahndung läuft weiter.\n\nZudem heißt es, der Polizei in Nordrhein-Westfalen und Brandenburg lägen inzwischen zwei Bekennerschreiben derselben Person vor. Die Schreiben seien handschriftlich verfasst, mit Namen unterzeichnet und enthielten nach ARD-Terrorismusexperte Michael Götschenberg Täterwissen. Der Bericht nennt außerdem Hinweise, wonach die Person mit einem alten Bundeswehrfahrzeug unterwegs sei und offenbar weitere Tatorte anfahre.",
       "analysis": {
         "story_id": "wt-7b385f58748f3d32",
@@ -153273,21 +153423,48 @@
         "media_impact": {
           "relevant": true,
           "relevance_level": "medium",
-          "reason": "Die Meldung verbindet einen laufenden Sabotagefall mit einer personalisierten Täterzuschreibung und der Authentizitätsbewertung von Bekennerschreiben; das kann die öffentliche Bedrohungswahrnehmung und die Einordnung kritischer Infrastruktur beeinflussen.",
-          "factual_core": "Polizeibehörden halten laut der gemeldeten ARD-Informationen Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch; die Fahndung läuft weiter.",
+          "reason": "Die Meldung verknüpft einen laufenden Sabotageverdacht mit der Einordnung als authentische Bekennerschreiben und mit möglicher Täterschaft. Das kann Ermittlungsdruck, Schutzmaßnahmen und öffentliche Risikowahrnehmung beeinflussen.",
+          "factual_core": "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten und die Fahndung weiterläuft. Genannt werden Jänschwalde und Bergheim bei Köln als Tatorte.",
+          "epistemic_status": {
+            "confirmed": [
+              "Die Meldung berichtet von authentisch gehaltenen Bekennerschreiben zu Sabotageakten auf die Stromversorgung.",
+              "Die Fahndung läuft laut Bericht weiter.",
+              "Genannt werden Jänschwalde und Bergheim bei Köln als Tatorte."
+            ],
+            "actor_claims": [
+              "Die Schreiben bekennen sich laut Bericht zu den Anschlägen.",
+              "Die Person soll mit einem alten Bundeswehrfahrzeug unterwegs sein und weitere Tatorte anfahren.",
+              "Die Schreiben enthielten Täterwissen und seien handschriftlich mit Namen unterzeichnet."
+            ],
+            "open": [
+              "Ob die Zuschreibung zu einer einzelnen Person belastbar bestätigt ist.",
+              "Ob die in den Schreiben behaupteten Angaben tatsächlich zutreffen.",
+              "Ob aus der Meldung bereits breitere Systemeffekte folgen."
+            ]
+          },
+          "attribution": {
+            "frame_source": "rbb24 / ARD-Informationen",
+            "speaker": "Polizeibehörden nach ARD-Informationen; im Bericht zudem ARD-Terrorismusexperte Michael Götschenberg",
+            "original_term": "Bekennerschreiben für authentisch",
+            "usage_type": "indirect_quote",
+            "placement": [
+              "headline"
+            ],
+            "attribution_quality": "clear_but_prominent"
+          },
           "speaker_statement": {
-            "present": true,
-            "speaker": "Polizeibehörden / ARD-Informationen",
-            "statement": "Die Bekennerschreiben werden für authentisch gehalten; die Person soll sich zu den Anschlägen in Jänschwalde und Bergheim bei Köln bekannt haben.",
-            "status": "claim"
+            "present": false,
+            "speaker": "offen",
+            "statement": "",
+            "status": "open"
           },
           "framing": {
             "detected": true,
-            "term": "ARD-Informationen / Bekennerschreiben / mutmaßlicher Alleintäter",
-            "origin_in_story": "Medium",
+            "term": "Bekennerschreiben für authentisch",
+            "origin_in_story": "rbb24 / ARD-Informationen",
             "media_usage": "headline",
-            "attribution_quality": "grundsätzlich attribuiert",
-            "factual_status": "Aussage eines Akteurs",
+            "attribution_quality": "unklare Attribution",
+            "factual_status": "offen",
             "frame_type": [
               "Bedrohung"
             ],
@@ -153295,42 +153472,141 @@
             "political_history": "",
             "political_history_evidence": []
           },
+          "frame_analysis": {
+            "frame_detected": true,
+            "frame_term": "Bekennerschreiben für authentisch",
+            "frame_type": [
+              "Bedrohung"
+            ],
+            "problem_definition": "Nicht nur Sabotage als Sachverhalt, sondern eine mögliche personalisierte Bedrohungslage mit laufender Fahndung.",
+            "implied_cause": "Der Bericht legt nahe, dass die Schreiben von derselben Person stammen und echte Täterkenntnis enthalten.",
+            "implied_responsibility": "Vorläufig wird die Verantwortung einer mutmaßlichen Einzelperson zugeschrieben; das bleibt aber eine berichtete Einordnung, kein endgültiger Befund.",
+            "implied_threat": "Mögliche weitere Sabotageakte, erhöhte Gefahr für kritische Infrastruktur und zusätzlicher Schutzbedarf.",
+            "implied_solution_space": "Fahndung, Prüfung der Echtheit, Schutz kritischer Infrastruktur und Anpassung von Sicherungskonzepten.",
+            "material_omissions": [
+              "Keine unabhängige Bestätigung der Täterschaft in der vorliegenden Quelle.",
+              "Keine belastbaren Angaben zu Motiv, Umfang oder tatsächlicher Reichweite möglicher Folgegefahren."
+            ]
+          },
+          "political_context": {
+            "relevant": false,
+            "classification": "",
+            "evidence_based": false,
+            "evidence": [],
+            "uncertainty": "Die Formulierung kann politisch aufgeladen wirken, ohne dass daraus in der vorliegenden Quelle ein politischer Ursprung oder eine politische Urheberschaft belegt wäre."
+          },
           "resonance": {
-            "resonance_space": "Thema kritische Infrastruktur, Sabotage, Fahndung und Sicherheitslage",
-            "resonance_risk": "Der Eindruck erhöhter Gefährdung kann sich verstärken, auch wenn die Authentizität und Täterzuschreibung nur berichtete Einschätzungen sind.",
-            "normalization_potential": "Wiederholte Rahmung als akute Bedrohung kann den Ausnahmecharakter subjektiv normalisieren.",
-            "repetition_effect": "Wiederholung ähnlicher Meldungen kann ein Illusory-Truth-Risiko erzeugen, ohne zusätzliche Belege zu liefern.",
-            "trust_effect": "Die enge Kopplung von Authentizitätsbehauptung und Ermittlungsstand kann Vertrauen in die Ermittlungsinformation stützen, aber bei fehlender unabhängiger Bestätigung auch Vorläufigkeit sichtbar machen.",
-            "polarization_potential": "Begrenztes Potenzial, die Debatte entlang von Sicherheits-, Infrastruktur- und Zuständigkeitsfragen zu zuspitzen.",
-            "discourse_effect": "Verschiebt die Diskussion von der Sachbeschädigung hin zu personalisierter Fahndung und Schutz kritischer Infrastruktur."
+            "resonance_space": "",
+            "resonance_risk": "",
+            "normalization_potential": "",
+            "repetition_effect": "",
+            "trust_effect": "",
+            "polarization_potential": "",
+            "discourse_effect": ""
+          },
+          "discourse_effect": {
+            "impact_status": "potential",
+            "resonance_space": "Kritische Infrastruktur, Fahndung, Sicherheit, Sabotage, mögliche Bedrohungslage",
+            "normalization_potential": "low",
+            "repetition_risk": "low",
+            "polarization_potential": "low",
+            "trust_effect_potential": "Die Hervorhebung der Authentizität kann Vertrauen in die Ermittlungsinformation stärken, aber bei Vorläufigkeit auch Vorbehalte gegenüber der Zuschreibung erzeugen.",
+            "discourse_effect_potential": "Die Meldung kann die Wahrnehmung einer personalisierten Gefahr verstärken und Aufmerksamkeit auf Schutz von Strominfrastruktur lenken. Das ist eine Kommunikationswirkung, keine belegte Ereignisfolge."
           },
           "impact_path": {
-            "first_order": "Die Meldung erhöht die Aufmerksamkeit für die laufende Fahndung und die Einordnung der Schreiben.",
-            "second_order": "Netzbetreiber, Behörden und Öffentlichkeit können ihre Risikowahrnehmung und Schutzprioritäten anpassen.",
-            "third_order": "Längerfristig kann die Berichterstattung die kommunikative Einordnung von Sabotage gegen Infrastruktur als Sicherheits- und Resilienzthema verstetigen."
+            "first_order": "Die berichtete Authentizitätsbewertung und die laufende Fahndung verändern die Wahrnehmung der Lage sofort: von einer anonymen Sabotagespur hin zu einer möglichen Täterspur.",
+            "second_order": "Das kann Ermittlungen, Objektschutz und Risikoabschätzung bei Netzbetreibern und Behörden anstoßen oder verstärken. Betroffen sind vor allem Polizei, Betreiber kritischer Infrastruktur und mittelbar Nutzerinnen und Nutzer des Stromnetzes.",
+            "third_order": "Nur bedingt plausibel, aber offen: Wiederholte Berichte über solche Schreiben können den Diskurs über Sabotageschutz, Resilienz und Priorisierung kritischer Infrastruktur prägen. Eine Verlagerung oder ein Lock-in in härtere Sicherungslogiken ist möglich, aber in der Quelle nicht belegt."
           },
           "evidence": {
             "status": "medium",
-            "what_is_known": "Aus der Quelle ist bekannt, dass die Polizei die Bekennerschreiben für authentisch hält und die Fahndung läuft; außerdem werden Jänschwalde und Bergheim bei Köln als Tatorte genannt.",
-            "what_is_inferred": "Dass die Berichterstattung eine Bedrohungslage und einen personalisierten Ermittlungsrahmen hervorhebt.",
-            "what_is_open": "Ob die Zuschreibung eines mutmaßlichen Alleintäters und die geschilderten Details unabhängig bestätigt sind, bleibt in den gelieferten Quellen offen."
+            "level": "medium",
+            "what_is_known": "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben für authentisch halten. Die Meldung nennt Sabotageakte auf die Stromversorgung in Jänschwalde und Bergheim bei Köln. Die Fahndung läuft laut Bericht weiter.",
+            "what_is_inferred": "Die Berichterstattung kann die Risikowahrnehmung für kritische Infrastruktur erhöhen. Die Zuschreibung an eine einzelne Person bleibt vorläufig. Mögliche Folgen liegen eher in Ermittlungs- und Schutzmaßnahmen als in unmittelbar belegten Systemfolgen.",
+            "what_is_open": "Nur eine gelieferte journalistische Quelle. Keine experimentelle, repräsentative oder längsschnittliche Evidenz zur Kommunikationswirkung. Keine unabhängige Bestätigung der berichteten Täterschaft in den gelieferten Quellen.",
+            "facts": [
+              "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben für authentisch halten.",
+              "Die Meldung nennt Sabotageakte auf die Stromversorgung in Jänschwalde und Bergheim bei Köln.",
+              "Die Fahndung läuft laut Bericht weiter."
+            ],
+            "observations": [
+              "Die Quelle ist eine journalistische Meldung unter Berufung auf ARD-Informationen.",
+              "Es gibt in der gelieferten Datenlage nur eine journalistische Darstellung, keine zweite unabhängige Bestätigung.",
+              "Der Bericht nennt zusätzliche Details wie handschriftliche Form, Namensunterzeichnung und angebliches Täterwissen."
+            ],
+            "inferences": [
+              "Die Berichterstattung kann die Risikowahrnehmung für kritische Infrastruktur erhöhen.",
+              "Die Zuschreibung an eine einzelne Person bleibt vorläufig.",
+              "Mögliche Folgen liegen eher in Ermittlungs- und Schutzmaßnahmen als in unmittelbar belegten Systemfolgen."
+            ],
+            "impact_potentials": [
+              "Mehr Sicherung an betroffenen oder vergleichbaren Anlagen.",
+              "Stärkere Aufmerksamkeit für Sabotageschutz kritischer Infrastruktur.",
+              "Kommunikative Verstärkung einer Bedrohungswahrnehmung."
+            ],
+            "impact_risks": [
+              "Überinterpretation der Täterschaft vor belastbarer Bestätigung.",
+              "Verallgemeinerung von Einzelfall auf andere Anlagen oder Gruppen.",
+              "Verstärkung von Unsicherheit ohne neue Sachinformation."
+            ],
+            "observed_impacts": [],
+            "limitations": [
+              "Nur eine gelieferte journalistische Quelle.",
+              "Keine experimentelle, repräsentative oder längsschnittliche Evidenz zur Kommunikationswirkung.",
+              "Keine unabhängige Bestätigung der berichteten Täterschaft in den gelieferten Quellen."
+            ]
           },
-          "editorial_assessment": "Die Formulierung verknüpft Ermittlungsstand und Authentizitätsbewertung eng mit dem Bedrohungsrahmen; sachlich präziser wäre eine klarere Trennung von bestätigtem Sachverhalt und berichteter Polizeieinschätzung.",
+          "observed_impact": {
+            "present": false,
+            "description": null,
+            "evidence": []
+          },
+          "public_explanation": "Die Meldung sagt erst einmal etwas Konkretes: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für echt, und die Fahndung läuft weiter. Erst danach folgt die Einordnung: Der Bericht schiebt den Fall in Richtung einer möglichen Täterspur und nennt Jänschwalde und Bergheim bei Köln als Tatorte. Das ist wichtig für Leserinnen und Leser, weil sich dadurch die Wahrnehmung von einem unklaren Vorfall zu einer möglichen Bedrohung kritischer Infrastruktur verschieben kann. Daraus folgt aber noch keine belegte Gesamtwirkung. Sicher belegt ist nur, was die Quelle berichtet. Offen bleibt, ob die Zuschreibung stimmt, ob weitere Taten folgen und ob sich daraus mehr als eine kommunikative Risikowahrnehmung ergibt. Die Meldung kann also Aufmerksamkeit auf Schutz und Fahndung lenken, beweist aber noch keine weitergehende Wirkung.",
+          "editorial_assessment": "Die Meldung sagt erst einmal etwas Konkretes: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für echt, und die Fahndung läuft weiter. Erst danach folgt die Einordnung: Der Bericht schiebt den Fall in Richtung einer möglichen Täterspur und nennt Jänschwalde und Bergheim bei Köln als Tatorte. Das ist wichtig für Leserinnen und Leser, weil sich dadurch die Wahrnehmung von einem unklaren Vorfall zu einer möglichen Bedrohung kritischer Infrastruktur verschieben kann. Daraus folgt aber noch keine belegte Gesamtwirkung. Sicher belegt ist nur, was die Quelle berichtet. Offen bleibt, ob die Zuschreibung stimmt, ob weitere Taten folgen und ob sich daraus mehr als eine kommunikative Risikowahrnehmung ergibt. Die Meldung kann also Aufmerksamkeit auf Schutz und Fahndung lenken, beweist aber noch keine weitergehende Wirkung.",
+          "fact_first_alternative": "Die Meldung berichtet zuerst den Sachverhalt: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch und die Fahndung läuft. Wissensstatus: Das ist eine journalistische Darstellung unter Berufung auf ARD-Informationen; die Täterschaft bleibt vorläufig. Attribution: Der Bericht schreibt die Einschätzung Polizeibehörden zu und nennt ARD-Terrorismusexperte Michael Götschenberg als weitere Quelle im Text. Frame: Die Formulierung rahmt den Fall als mögliche ",
           "fact_first_reframe": {
-            "title": "Polizei prüft Bekennerschreiben zu Sabotage an Stromversorgung",
-            "source_summary": "Die Polizei hält nach einem Bericht Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Fahndung nach einer mutmaßlich beteiligten Person läuft weiter.",
-            "summary": "Laut rbb24 hält die Polizei Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Fahndung läuft weiter; Jänschwalde und Bergheim bei Köln werden als Tatorte genannt.",
-            "detail_summary": "Nach der vorliegenden Meldung stufen Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung als authentisch ein. Der Bericht ordnet sie einer noch gesuchten Person zu und nennt Jänschwalde sowie Bergheim bei Köln als Tatorte. Für die Berichterstattung wichtig ist die Trennung zwischen dem berichteten Ermittlungsstand und einer darüber hinausgehenden Deutung als Bedrohungslage. Die Quelle nennt zudem weitere Hinweise aus dem laufenden Ermittlungszusammenhang, deren unabhängige Bestätigung in den gelieferten Quellen nicht vorliegt."
+            "title": "",
+            "source_summary": "",
+            "summary": "",
+            "detail_summary": ""
           },
-          "self_frame_warning": false,
+          "self_frame_warning": true,
+          "self_frame_check": {
+            "problem_detected": true,
+            "problems": [
+              "Unsicherer Frame-Einstieg in title"
+            ],
+            "frame_repetition_count": 1,
+            "rewrite_required": true,
+            "recommended_title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+            "recommended_summary": "Die Meldung berichtet über authentisch gehaltene Bekennerschreiben zu Sabotageakten auf die Stromversorgung. Die Fahndung läuft weiter; die Täterschaft bleibt vorläufig.",
+            "recommended_meta_description": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Meldung nennt Jänschwalde und Bergheim bei Köln als Tatorte und eine laufende Fahndung."
+          },
           "source_comparison": {
             "sufficient_basis": false,
             "finding": ""
           }
         },
-        "media_analysis_version": "1.0",
-        "media_checked_at": "2026-09-05T09:18:31.212Z",
-        "media_trigger_fingerprint": "48067e6f5ddbb081062ddf4cd74a908c6918db9b189edfa9d19581067cf02258"
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T00:37:01.383Z",
+        "media_trigger_fingerprint": "48067e6f5ddbb081062ddf4cd74a908c6918db9b189edfa9d19581067cf02258",
+        "media_trigger": {
+          "relevant": true,
+          "level": "medium",
+          "score": 4,
+          "reasons": [
+            "politically_loaded_label"
+          ],
+          "matched_terms": [
+            "ard-terrorismusexperte"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "48067e6f5ddbb081062ddf4cd74a908c6918db9b189edfa9d19581067cf02258",
+          "content_fingerprint": "b385a366bebc1b947ac0d0659ad0c077e15c0e30dab682b3faa005539136949b",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
       },
       "versions": [
         {
@@ -153817,6 +154093,407 @@
               "content_hash": "92642347aa207b1a489eda4c1750bafe4035391b0eb9dd7222c337d747eb06db"
             }
           ]
+        },
+        {
+          "version": 3,
+          "analyzed_at": "2026-09-08T00:37:01.383Z",
+          "content_hash": "e9a4f51401aea2c89fef4902519e5697aae1098be75d9b8418a2338535b3e10d",
+          "source_summary": "Die rbb24-Meldung berichtet unter Berufung auf ARD-Informationen, dass Polizeibehörden Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten. Nach dem Bericht bekennt sich darin ein mutmaßlicher Alleintäter zu Anschlägen in Jänschwalde und in Bergheim bei Köln, und die Fahndung läuft weiter.\n\nZudem heißt es, der Polizei in Nordrhein-Westfalen und Brandenburg lägen inzwischen zwei Bekennerschreiben derselben Person vor. Die Schreiben seien handschriftlich verfasst, mit Namen unterzeichnet und enthielten nach ARD-Terrorismusexperte Michael Götschenberg Täterwissen. Der Bericht nennt außerdem Hinweise, wonach die Person mit einem alten Bundeswehrfahrzeug unterwegs sei und offenbar weitere Tatorte anfahre.",
+          "analysis": {
+            "story_id": "wt-7b385f58748f3d32",
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Polizeibehörden halten Bekennerschreiben zu den Sabotageakten auf die Stromversorgung laut ARD für authentisch. Der Bericht nennt außerdem einen mutmaßlichen Alleintäter und laufende Fahndung.",
+            "detail_summary": "Gesichert nach der vorliegenden Meldung ist vor allem, dass die Polizei die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch hält. Der Bericht ordnet die Schreiben einem mutmaßlichen Alleintäter zu, nennt Jänschwalde und Bergheim bei Köln als Tatorte und sagt, die Fahndung laufe weiter. Für die Einordnung ist das relevant, weil sich damit die Informationslage von einer bloßen Sachbeschädigungs- oder Sabotagespur hin zu einer personalisierten Ermittlungs- und Bedrohungslage verschiebt. Der Wirkpfad liegt vor allem in veränderten Ermittlungsprioritäten, Schutzmaßnahmen an kritischer Infrastruktur und möglicher öffentlicher Risikowahrnehmung. Mögliche Folgen sind zusätzliche Sicherung, weitere Fahndungsmaßnahmen und eine belastendere Lage für Netzbetreiber; ob daraus breitere Systemeffekte entstehen, bleibt offen. Tragfähige unabhängige Bestätigung liegt in den gelieferten Quellen nicht vor, daher bleibt die Zuschreibung vorläufig.",
+            "why_relevant": "Die Meldung verändert die Lagebewertung zu Sabotage an kritischer Energieinfrastruktur, weil sie Authentizität, mögliche Täterschaft und laufende Fahndung zusammenführt.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "rationale": "Betroffen sind potenziell Sicherheit, Versorgungsschutz und Ermittlungsressourcen; die Lage kann Schutzmaßnahmen und öffentliche Wahrnehmung verändern."
+            },
+            "planet": {
+              "relevance": "gering",
+              "rationale": "Ein unmittelbarer Umwelt- oder Klimawirkpfad wird in der Quelle nicht belastbar beschrieben."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "rationale": "Die Meldung berührt den Schutz kritischer Infrastruktur und die Informationslage der Öffentlichkeit, ohne dass bereits eine politische Entscheidung vorliegt."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Authentizitätszuschreibung kann Ermittlungen bündeln, Schutzvorkehrungen an Strominfrastruktur verstärken und das Risiko weiterer Vorfälle neu bewerten lassen.",
+            "impact_risks": [
+              "Mehr Aufwand für Schutz und Fahndung",
+              "Mögliche Verunsicherung über die Sicherheit kritischer Infrastruktur",
+              "Fehlzuschreibungen bleiben möglich, solange der Bericht nicht unabhängig bestätigt ist"
+            ],
+            "mechanisms": [
+              "Authentische Bekennerschreiben verändern die Ermittlungsgrundlage",
+              "Hinweise auf Täterwissen erhöhen die Plausibilität einer gezielten Sabotagespur",
+              "Die Zuordnung zu mehreren Tatorten kann Schutzmaßnahmen an mehreren Standorten auslösen"
+            ],
+            "first_order": [
+              "Intensivere polizeiliche Fahndung",
+              "Prüfung der Echtheit und des Inhalts der Schreiben",
+              "Mögliche Verstärkung von Schutzmaßnahmen an Stromanlagen"
+            ],
+            "second_order": [
+              "Veränderte Risikobewertung bei Netzbetreibern",
+              "Mehr Aufmerksamkeit für Sabotageschutz kritischer Infrastruktur",
+              "Potenzielle Anpassungen von Einsatz- und Sicherungskonzepten"
+            ],
+            "third_order": [
+              "Mögliche längerfristige Aufrüstung von Schutz- und Überwachungsstrukturen",
+              "Mehr Resilienzanforderungen an Energieinfrastruktur",
+              "Eventuell strengere Präventions- und Koordinationsroutinen zwischen Behörden und Betreibern"
+            ],
+            "systemic_relevance": "Kritische Energieinfrastruktur ist systemrelevant; Hinweise auf koordinierte Sabotage können über den Einzelfall hinaus Schutzstandards und Lagebilder beeinflussen.",
+            "transformation_potential": "Begrenzt bis mittel: Die Meldung kann operative Sicherheitspraktiken und Risikobewertungen verschieben, beschreibt aber noch keine strukturelle Regeländerung.",
+            "resilience": "Kurzfristig eher belastet, falls zusätzliche Vorfälle oder Schutzaufwand eintreten; mittelfristig kann die Lage zu mehr Resilienzmaßnahmen führen.",
+            "side_effects": [
+              "Mehr Ermittlungs- und Sicherungsaufwand",
+              "Mögliche öffentliche Verunsicherung",
+              "Potenzielle Verlagerung von Ressourcen auf Schutz kritischer Infrastruktur"
+            ],
+            "uncertainties": [
+              "Die Echtheit und Belastbarkeit der Bekennerschreiben sind nur über den Bericht vermittelt",
+              "Die Täterzuschreibung bleibt vorläufig",
+              "Ausmaß möglicher Folgewirkungen an den betroffenen Standorten ist offen"
+            ],
+            "evidence_level": "attributed_single_source",
+            "attribution": "Die zentrale Information stammt aus einer rbb24-Meldung mit ARD-Informationen; unabhängige Bestätigung ist in den gelieferten Quellen nicht enthalten.",
+            "watch_next": [
+              "Ob Polizei oder Ermittler die Authentizität der Schreiben weiter bestätigen",
+              "Ob weitere Tatorte oder Beweismittel benannt werden",
+              "Ob sich die Fahndung zu einer Festnahme oder offiziellen Anklage verdichtet"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, SDG 9, SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Die Meldung liefert eine neue, für die Lagebewertung materielle Information zur Authentizität der Bekennerschreiben und zur Tätersuche an kritischer Infrastruktur."
+            },
+            "publication_recommendation": true,
+            "visuals": null,
+            "media_impact": {
+              "relevant": true,
+              "relevance_level": "medium",
+              "reason": "Die Meldung verknüpft einen laufenden Sabotageverdacht mit der Einordnung als authentische Bekennerschreiben und mit möglicher Täterschaft. Das kann Ermittlungsdruck, Schutzmaßnahmen und öffentliche Risikowahrnehmung beeinflussen.",
+              "factual_core": "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch halten und die Fahndung weiterläuft. Genannt werden Jänschwalde und Bergheim bei Köln als Tatorte.",
+              "epistemic_status": {
+                "confirmed": [
+                  "Die Meldung berichtet von authentisch gehaltenen Bekennerschreiben zu Sabotageakten auf die Stromversorgung.",
+                  "Die Fahndung läuft laut Bericht weiter.",
+                  "Genannt werden Jänschwalde und Bergheim bei Köln als Tatorte."
+                ],
+                "actor_claims": [
+                  "Die Schreiben bekennen sich laut Bericht zu den Anschlägen.",
+                  "Die Person soll mit einem alten Bundeswehrfahrzeug unterwegs sein und weitere Tatorte anfahren.",
+                  "Die Schreiben enthielten Täterwissen und seien handschriftlich mit Namen unterzeichnet."
+                ],
+                "open": [
+                  "Ob die Zuschreibung zu einer einzelnen Person belastbar bestätigt ist.",
+                  "Ob die in den Schreiben behaupteten Angaben tatsächlich zutreffen.",
+                  "Ob aus der Meldung bereits breitere Systemeffekte folgen."
+                ]
+              },
+              "attribution": {
+                "frame_source": "rbb24 / ARD-Informationen",
+                "speaker": "Polizeibehörden nach ARD-Informationen; im Bericht zudem ARD-Terrorismusexperte Michael Götschenberg",
+                "original_term": "Bekennerschreiben für authentisch",
+                "usage_type": "indirect_quote",
+                "placement": [
+                  "headline"
+                ],
+                "attribution_quality": "clear_but_prominent"
+              },
+              "speaker_statement": {
+                "present": false,
+                "speaker": "offen",
+                "statement": "",
+                "status": "open"
+              },
+              "framing": {
+                "detected": true,
+                "term": "Bekennerschreiben für authentisch",
+                "origin_in_story": "rbb24 / ARD-Informationen",
+                "media_usage": "headline",
+                "attribution_quality": "unklare Attribution",
+                "factual_status": "offen",
+                "frame_type": [
+                  "Bedrohung"
+                ],
+                "political_history_relevant": false,
+                "political_history": "",
+                "political_history_evidence": []
+              },
+              "frame_analysis": {
+                "frame_detected": true,
+                "frame_term": "Bekennerschreiben für authentisch",
+                "frame_type": [
+                  "Bedrohung"
+                ],
+                "problem_definition": "Nicht nur Sabotage als Sachverhalt, sondern eine mögliche personalisierte Bedrohungslage mit laufender Fahndung.",
+                "implied_cause": "Der Bericht legt nahe, dass die Schreiben von derselben Person stammen und echte Täterkenntnis enthalten.",
+                "implied_responsibility": "Vorläufig wird die Verantwortung einer mutmaßlichen Einzelperson zugeschrieben; das bleibt aber eine berichtete Einordnung, kein endgültiger Befund.",
+                "implied_threat": "Mögliche weitere Sabotageakte, erhöhte Gefahr für kritische Infrastruktur und zusätzlicher Schutzbedarf.",
+                "implied_solution_space": "Fahndung, Prüfung der Echtheit, Schutz kritischer Infrastruktur und Anpassung von Sicherungskonzepten.",
+                "material_omissions": [
+                  "Keine unabhängige Bestätigung der Täterschaft in der vorliegenden Quelle.",
+                  "Keine belastbaren Angaben zu Motiv, Umfang oder tatsächlicher Reichweite möglicher Folgegefahren."
+                ]
+              },
+              "political_context": {
+                "relevant": false,
+                "classification": "",
+                "evidence_based": false,
+                "evidence": [],
+                "uncertainty": "Die Formulierung kann politisch aufgeladen wirken, ohne dass daraus in der vorliegenden Quelle ein politischer Ursprung oder eine politische Urheberschaft belegt wäre."
+              },
+              "resonance": {
+                "resonance_space": "",
+                "resonance_risk": "",
+                "normalization_potential": "",
+                "repetition_effect": "",
+                "trust_effect": "",
+                "polarization_potential": "",
+                "discourse_effect": ""
+              },
+              "discourse_effect": {
+                "impact_status": "potential",
+                "resonance_space": "Kritische Infrastruktur, Fahndung, Sicherheit, Sabotage, mögliche Bedrohungslage",
+                "normalization_potential": "low",
+                "repetition_risk": "low",
+                "polarization_potential": "low",
+                "trust_effect_potential": "Die Hervorhebung der Authentizität kann Vertrauen in die Ermittlungsinformation stärken, aber bei Vorläufigkeit auch Vorbehalte gegenüber der Zuschreibung erzeugen.",
+                "discourse_effect_potential": "Die Meldung kann die Wahrnehmung einer personalisierten Gefahr verstärken und Aufmerksamkeit auf Schutz von Strominfrastruktur lenken. Das ist eine Kommunikationswirkung, keine belegte Ereignisfolge."
+              },
+              "impact_path": {
+                "first_order": "Die berichtete Authentizitätsbewertung und die laufende Fahndung verändern die Wahrnehmung der Lage sofort: von einer anonymen Sabotagespur hin zu einer möglichen Täterspur.",
+                "second_order": "Das kann Ermittlungen, Objektschutz und Risikoabschätzung bei Netzbetreibern und Behörden anstoßen oder verstärken. Betroffen sind vor allem Polizei, Betreiber kritischer Infrastruktur und mittelbar Nutzerinnen und Nutzer des Stromnetzes.",
+                "third_order": "Nur bedingt plausibel, aber offen: Wiederholte Berichte über solche Schreiben können den Diskurs über Sabotageschutz, Resilienz und Priorisierung kritischer Infrastruktur prägen. Eine Verlagerung oder ein Lock-in in härtere Sicherungslogiken ist möglich, aber in der Quelle nicht belegt."
+              },
+              "evidence": {
+                "status": "medium",
+                "level": "medium",
+                "what_is_known": "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben für authentisch halten. Die Meldung nennt Sabotageakte auf die Stromversorgung in Jänschwalde und Bergheim bei Köln. Die Fahndung läuft laut Bericht weiter.",
+                "what_is_inferred": "Die Berichterstattung kann die Risikowahrnehmung für kritische Infrastruktur erhöhen. Die Zuschreibung an eine einzelne Person bleibt vorläufig. Mögliche Folgen liegen eher in Ermittlungs- und Schutzmaßnahmen als in unmittelbar belegten Systemfolgen.",
+                "what_is_open": "Nur eine gelieferte journalistische Quelle. Keine experimentelle, repräsentative oder längsschnittliche Evidenz zur Kommunikationswirkung. Keine unabhängige Bestätigung der berichteten Täterschaft in den gelieferten Quellen.",
+                "facts": [
+                  "Die Meldung berichtet, dass Polizeibehörden die Bekennerschreiben für authentisch halten.",
+                  "Die Meldung nennt Sabotageakte auf die Stromversorgung in Jänschwalde und Bergheim bei Köln.",
+                  "Die Fahndung läuft laut Bericht weiter."
+                ],
+                "observations": [
+                  "Die Quelle ist eine journalistische Meldung unter Berufung auf ARD-Informationen.",
+                  "Es gibt in der gelieferten Datenlage nur eine journalistische Darstellung, keine zweite unabhängige Bestätigung.",
+                  "Der Bericht nennt zusätzliche Details wie handschriftliche Form, Namensunterzeichnung und angebliches Täterwissen."
+                ],
+                "inferences": [
+                  "Die Berichterstattung kann die Risikowahrnehmung für kritische Infrastruktur erhöhen.",
+                  "Die Zuschreibung an eine einzelne Person bleibt vorläufig.",
+                  "Mögliche Folgen liegen eher in Ermittlungs- und Schutzmaßnahmen als in unmittelbar belegten Systemfolgen."
+                ],
+                "impact_potentials": [
+                  "Mehr Sicherung an betroffenen oder vergleichbaren Anlagen.",
+                  "Stärkere Aufmerksamkeit für Sabotageschutz kritischer Infrastruktur.",
+                  "Kommunikative Verstärkung einer Bedrohungswahrnehmung."
+                ],
+                "impact_risks": [
+                  "Überinterpretation der Täterschaft vor belastbarer Bestätigung.",
+                  "Verallgemeinerung von Einzelfall auf andere Anlagen oder Gruppen.",
+                  "Verstärkung von Unsicherheit ohne neue Sachinformation."
+                ],
+                "observed_impacts": [],
+                "limitations": [
+                  "Nur eine gelieferte journalistische Quelle.",
+                  "Keine experimentelle, repräsentative oder längsschnittliche Evidenz zur Kommunikationswirkung.",
+                  "Keine unabhängige Bestätigung der berichteten Täterschaft in den gelieferten Quellen."
+                ]
+              },
+              "observed_impact": {
+                "present": false,
+                "description": null,
+                "evidence": []
+              },
+              "public_explanation": "Die Meldung sagt erst einmal etwas Konkretes: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für echt, und die Fahndung läuft weiter. Erst danach folgt die Einordnung: Der Bericht schiebt den Fall in Richtung einer möglichen Täterspur und nennt Jänschwalde und Bergheim bei Köln als Tatorte. Das ist wichtig für Leserinnen und Leser, weil sich dadurch die Wahrnehmung von einem unklaren Vorfall zu einer möglichen Bedrohung kritischer Infrastruktur verschieben kann. Daraus folgt aber noch keine belegte Gesamtwirkung. Sicher belegt ist nur, was die Quelle berichtet. Offen bleibt, ob die Zuschreibung stimmt, ob weitere Taten folgen und ob sich daraus mehr als eine kommunikative Risikowahrnehmung ergibt. Die Meldung kann also Aufmerksamkeit auf Schutz und Fahndung lenken, beweist aber noch keine weitergehende Wirkung.",
+              "editorial_assessment": "Die Meldung sagt erst einmal etwas Konkretes: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für echt, und die Fahndung läuft weiter. Erst danach folgt die Einordnung: Der Bericht schiebt den Fall in Richtung einer möglichen Täterspur und nennt Jänschwalde und Bergheim bei Köln als Tatorte. Das ist wichtig für Leserinnen und Leser, weil sich dadurch die Wahrnehmung von einem unklaren Vorfall zu einer möglichen Bedrohung kritischer Infrastruktur verschieben kann. Daraus folgt aber noch keine belegte Gesamtwirkung. Sicher belegt ist nur, was die Quelle berichtet. Offen bleibt, ob die Zuschreibung stimmt, ob weitere Taten folgen und ob sich daraus mehr als eine kommunikative Risikowahrnehmung ergibt. Die Meldung kann also Aufmerksamkeit auf Schutz und Fahndung lenken, beweist aber noch keine weitergehende Wirkung.",
+              "fact_first_alternative": "Die Meldung berichtet zuerst den Sachverhalt: Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch und die Fahndung läuft. Wissensstatus: Das ist eine journalistische Darstellung unter Berufung auf ARD-Informationen; die Täterschaft bleibt vorläufig. Attribution: Der Bericht schreibt die Einschätzung Polizeibehörden zu und nennt ARD-Terrorismusexperte Michael Götschenberg als weitere Quelle im Text. Frame: Die Formulierung rahmt den Fall als mögliche ",
+              "fact_first_reframe": {
+                "title": "",
+                "source_summary": "",
+                "summary": "",
+                "detail_summary": ""
+              },
+              "self_frame_warning": true,
+              "self_frame_check": {
+                "problem_detected": true,
+                "problems": [
+                  "Unsicherer Frame-Einstieg in title"
+                ],
+                "frame_repetition_count": 1,
+                "rewrite_required": true,
+                "recommended_title": "Polizei hält Bekennerschreiben zu Strom-Sabotage für echt",
+                "recommended_summary": "Die Meldung berichtet über authentisch gehaltene Bekennerschreiben zu Sabotageakten auf die Stromversorgung. Die Fahndung läuft weiter; die Täterschaft bleibt vorläufig.",
+                "recommended_meta_description": "Polizeibehörden halten Bekennerschreiben zu Sabotageakten auf die Stromversorgung für authentisch. Die Meldung nennt Jänschwalde und Bergheim bei Köln als Tatorte und eine laufende Fahndung."
+              },
+              "source_comparison": {
+                "sufficient_basis": false,
+                "finding": ""
+              }
+            },
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T00:37:01.383Z",
+            "media_trigger_fingerprint": "48067e6f5ddbb081062ddf4cd74a908c6918db9b189edfa9d19581067cf02258",
+            "media_trigger": {
+              "relevant": true,
+              "level": "medium",
+              "score": 4,
+              "reasons": [
+                "politically_loaded_label"
+              ],
+              "matched_terms": [
+                "ard-terrorismusexperte"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "48067e6f5ddbb081062ddf4cd74a908c6918db9b189edfa9d19581067cf02258",
+              "content_fingerprint": "b385a366bebc1b947ac0d0659ad0c077e15c0e30dab682b3faa005539136949b",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "media_impact_backfill",
+          "batch_key": "753e6c68fd78692d1ffc8fc8b3e1faa78cc0b7f152880446a96dbca9aea2e44e",
+          "processing_mode": "batch",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-7b385f58748f3d32-v1-claim-1",
+              "story_id": "wt-7b385f58748f3d32",
+              "claim": "Nach ARD-Informationen halten Polizeibehörden die Bekennerschreiben zu den Sabotageakten auf die Stromversorgung für authentisch.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "66167fc058b669c0a736",
+                  "checked_at": "2026-09-04T10:09:13.371Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:09:13.371Z"
+            },
+            {
+              "claim_id": "wt-7b385f58748f3d32-v1-claim-2",
+              "story_id": "wt-7b385f58748f3d32",
+              "claim": "In den Schreiben bekennt sich laut Bericht ein mutmaßlicher Alleintäter zu den Anschlägen in Jänschwalde und in Bergheim bei Köln.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "66167fc058b669c0a736",
+                  "checked_at": "2026-09-04T10:09:13.371Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:09:13.371Z"
+            },
+            {
+              "claim_id": "wt-7b385f58748f3d32-v1-claim-3",
+              "story_id": "wt-7b385f58748f3d32",
+              "claim": "Die Fahndung nach der Person läuft weiter.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "66167fc058b669c0a736",
+                  "checked_at": "2026-09-04T10:09:13.371Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:09:13.371Z"
+            },
+            {
+              "claim_id": "wt-7b385f58748f3d32-v1-claim-4",
+              "story_id": "wt-7b385f58748f3d32",
+              "claim": "Nach ARD-Informationen liegen der Polizei in Nordrhein-Westfalen und Brandenburg inzwischen zwei Bekennerschreiben derselben Person vor.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "3d8727a43c6a278bfdea",
+                  "checked_at": "2026-09-04T10:09:13.371Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:09:13.371Z"
+            },
+            {
+              "claim_id": "wt-7b385f58748f3d32-v1-claim-5",
+              "story_id": "wt-7b385f58748f3d32",
+              "claim": "Die Schreiben seien handschriftlich verfasst und mit Namen unterzeichnet; sie enthielten Täterwissen und kritisierten die Stromversorgung aus fossilen Brennstoffen.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "9cf2d0e4bddea6a3268e",
+                  "checked_at": "2026-09-04T10:09:13.371Z"
+                },
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "5e63a00e6f7e94509972",
+                  "checked_at": "2026-09-04T10:09:13.371Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:09:13.371Z"
+            },
+            {
+              "claim_id": "wt-7b385f58748f3d32-v1-claim-6",
+              "story_id": "wt-7b385f58748f3d32",
+              "claim": "Laut Bericht soll die Person mit einem alten Bundeswehrfahrzeug unterwegs sein und offenbar verschiedene Tatorte abfahren.",
+              "status": "single_source_claim",
+              "source_id": "rbb24-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "rbb24-nachrichten",
+                  "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+                  "excerpt_hash": "98da42ee6b792b62b34f",
+                  "checked_at": "2026-09-04T10:09:13.371Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-04T10:09:13.371Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "rbb24-nachrichten",
+              "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-polizei-sabotage-stromnetz-jaenschwalde-stromversorgung.html",
+              "content_hash": "92642347aa207b1a489eda4c1750bafe4035391b0eb9dd7222c337d747eb06db"
+            }
+          ]
         }
       ],
       "publication_history": [
@@ -153828,6 +154505,12 @@
         {
           "version": 2,
           "published_at": "2026-09-05T09:18:31.212Z",
+          "source_count": 1,
+          "change": "media_impact_added"
+        },
+        {
+          "version": 3,
+          "published_at": "2026-09-08T00:37:01.383Z",
           "source_count": 1,
           "change": "media_impact_added"
         }
@@ -165665,7 +166348,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T00:22:05.326Z",
+          "checked_at": "2026-09-08T00:36:42.247Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
