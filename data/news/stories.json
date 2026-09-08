@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T06:37:33.655Z",
-  "updated_at": "2026-09-08T06:37:33.655Z",
+  "updated_at": "2026-09-08T06:52:08.981Z",
   "stories": [
     {
       "story_id": "wt-05ffa4fef8bee914",
@@ -13443,7 +13443,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -15650,7 +15650,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
           "issue_codes": [],
           "warning_codes": []
@@ -18574,7 +18574,7 @@
       "verification_started_at": "2026-09-07T22:08:38.677Z",
       "publish_ready_at": "2026-09-07T22:08:50.510Z",
       "news_status": "updated",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -19639,9 +19639,12 @@
         "generated_at": "2026-09-07T22:09:32.588Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "ef1f7fb549efb35efde15215998e9a9b2973abdd8bf3fe7275aab67c6b31fc0f",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "a24299724c054734319d0ea6412af019495136a32a497ff756dae6628e6142b5",
+        "checked_at": "2026-09-08T06:52:08.981Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T12:52:08.981Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -19676,24 +19679,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
-          "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-1c2c187d0b858b7c",
@@ -20022,7 +20010,7 @@
       "verification_started_at": "2026-09-07T22:08:17.836Z",
       "publish_ready_at": "2026-09-07T22:08:26.896Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -20523,9 +20511,12 @@
         "generated_at": "2026-09-07T22:09:25.778Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "7b44169d9e8a587f1daa18009d946fd49397df120a49d5b5c67f25efe8542d35",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "df03a5c6dc2c23891f87310a14efcf5567bddb5d8045e3cfbd9622e97c58cfe7",
+        "checked_at": "2026-09-08T06:52:08.981Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T12:52:08.981Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -20725,24 +20716,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
-          "fingerprint": "1db019db3e38cbd7a31297d78ff78c013fe66f289bde97e6059e3c3af70bc478",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-f28df6ca278ec0c7",
@@ -23369,7 +23345,7 @@
       "verification_started_at": "2026-09-07T20:55:32.935Z",
       "publish_ready_at": "2026-09-07T20:55:44.100Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -23721,9 +23697,12 @@
         "generated_at": "2026-09-07T20:56:01.994Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "6376938c2945d1a1c9dedd74f18d68157f77c19f6bd927f924034a5fab48f329",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "b8629a29ca2619ef531b0be1fb2a52cea3e6e4046a6cc1800afc278769c666dc",
+        "checked_at": "2026-09-08T06:52:08.981Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T12:52:08.981Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -23757,24 +23736,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
-          "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-de155b0d0e02b95f",
@@ -28377,7 +28341,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -32370,9 +32334,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T06:37:33.655Z",
+        "checked_at": "2026-09-08T06:52:08.981Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T12:37:33.655Z",
+        "expires_at": "2026-09-08T12:52:08.981Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -36449,7 +36413,7 @@
       "verification_started_at": "2026-09-07T17:38:17.551Z",
       "publish_ready_at": "2026-09-07T17:38:31.461Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -36893,9 +36857,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "7e514af21c32bb7d7f74aa8a36db8695c6e4fe06bc8b8e3baa4e4effc7ece246",
-        "checked_at": "2026-09-08T00:06:52.179Z",
+        "checked_at": "2026-09-08T06:52:08.981Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T06:06:52.179Z",
+        "expires_at": "2026-09-08T12:52:08.981Z",
         "sources": [
           {
             "source_id": "tagesspiegel-home",
@@ -36965,95 +36929,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "ac793f0bdfa7dc4a5b03568ec3715972967de301fb1850dfad547b886d2f1d18",
-        "sources": [
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/internationales/zur-abschreckung-gegen-migranten-finnland-errichtet-200-kilometer-langen-zaun-an-grenze-zu-russland-16028568.html",
-            "title": "Zur Abschreckung gegen Migranten: Finnland errichtet 200 Kilometer langen Zaun an Grenze zu Russland",
-            "summary": "Die Anlage soll Migranten vom Grenzübertritt in das skandinavische Nachbarland abhalten. Helsinki sieht die Menschen als Teil der hybriden Kriegsführung Moskaus.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T17:30:38.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "1b8e88e8849a654327d06ab20c8b2e122a4f25f2607653e6797262323b4a40ae",
-            "source_item_id": "e7bf26bdbc5c90cb52394b92d6e01d6e2a718eaf12ca6c801ac7d3a4fd3909df",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T17:30:38.000Z",
-            "ingested_at": "2026-09-07T23:52:11.826Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/news/finnland-errichtet-200-kilometer-langen-zaun-an-grenze-zu-russland-38217442.html",
-            "title": "Finnland errichtet 200 Kilometer langen Zaun an Grenze zu Russland",
-            "summary": "Zur Abschreckung von illegalen Migranten aus Russland hat Finnland einen 200 Kilometer langen Zaun an der gemeinsamen Grenze errichtet. Dieser sei Bestandteil der Grenzsicherung und solle neben einer Überwachung auch dabei helfen, „Menschen bei Bedarf vom finnischen Hoheitsgebiet fernzuhalten“, sagte Innenministerin Mari Rantanen am Montag bei einer Veranstaltung nahe des Grenzübergangs Nuijamaa im Südosten des Landes. Der Stacheldrahtzaun ist 4,5 Meter hoch und mit Kameras und Sensoren ausgestattet.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T16:33:07.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "78e1b95411a30fe06d9e7ec4da9bef4461ea702a8084461f142177defbb06d20",
-            "source_item_id": "a89bf5541818cc2214b5553750c34a83f603ae99011821dd59e85fcb1a7da077",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T16:33:07.000Z",
-            "ingested_at": "2026-09-07T17:36:34.946Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
-          "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-77214e70d8c76277",
@@ -41745,7 +41621,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -55880,7 +55756,7 @@
       "verification_started_at": "2026-09-07T14:51:48.306Z",
       "publish_ready_at": "2026-09-07T14:52:04.848Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -56270,9 +56146,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "f4b96b990a6a514ea813e3977ced5441c76c8376fe8d002434d6597f46858b17",
-        "checked_at": "2026-09-08T00:06:52.179Z",
+        "checked_at": "2026-09-08T06:52:08.981Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T06:06:52.179Z",
+        "expires_at": "2026-09-08T12:52:08.981Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -56309,62 +56185,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "5c15bc8893187251a454ac66b6366778dfb988f3204c48ed742c711d6de5e7d7",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/deutschland-verteidigt-waffenexporte-nach-israel-vor-internationalem-gerichtshof-100.html",
-            "title": "Den Haag - Deutschland verteidigt Waffenexporte nach Israel vor Internationalem Gerichtshof",
-            "summary": "Vor dem Internationalen Gerichtshof hat Deutschland seine Rüstungsexporte nach Israel als vereinbar mit internationalem Recht verteidigt.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T21:33:15.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "baa374b78ad84602574e971b3ad44da258759f23eaa6896dee9e96830386adf3",
-            "source_item_id": "a0bae5bbc57650d7e11b336f4358e2237f67817d4d573673d9275b1e3c84622c",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T21:33:15.000Z",
-            "ingested_at": "2026-09-07T21:52:05.137Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
-          "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-87774fb852f90a20",
@@ -74259,7 +74080,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:37:33.655Z"
+          "checked_at": "2026-09-08T06:52:08.981Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -74279,7 +74100,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T06:37:33.655Z"
+          "checked_at": "2026-09-08T06:52:08.981Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -74295,7 +74116,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T06:37:33.655Z",
+      "updated_at": "2026-09-08T06:52:08.981Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -74335,7 +74156,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1290.6715333333334,
+        "queue_age_minutes": 1305.2603,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -74344,7 +74165,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T06:37:33.655Z",
+        "checked_at": "2026-09-08T06:52:08.981Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -93999,7 +93820,7 @@
       "verification_started_at": "2026-09-06T20:22:33.564Z",
       "publish_ready_at": "2026-09-06T20:22:49.164Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -94396,10 +94217,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "7f3ae92975f718634ce42e5d9b561e7e1bf65057f808b7ef7f1bc78114b377f3",
-        "checked_at": "2026-09-07T20:54:05.943Z",
+        "fingerprint": "852472d0c08d7e565b4319a2d217dad793f78f4b8b6a1533d72f7a3dc328d6bb",
+        "checked_at": "2026-09-08T06:52:08.981Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T02:54:05.943Z",
+        "expires_at": "2026-09-08T12:52:08.981Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -94469,95 +94290,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "11b9baae392db857004dec718ef7d5b83b8878d6773046d4338d3a4245386532",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-100.html",
-            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
-            "summary": "Wegen versuchter Sabotage-Angriffe auf das deutsche Stromnetz hat die Polizei mit einem Großaufgebot am Hambacher Forst bei Kerpen westlich von Köln nach dem Tatverdächtigen gesucht - ohne Erfolg. Es seien keine Hinweise gefunden worden. Die generelle Fahndung nach dem Täter gehe aber weiter, teilte die Polizei mit.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-06T20:15:54.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "c3eb294d00d22a521af8890c6afee6069cec7ef81d67aeaba88b8eda3e531296",
-            "source_item_id": "6f1e22209de752074c2f7c32480ea7e8351dcbd471700c0a9478f84937c7b39e",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-06T20:15:54.000Z",
-            "ingested_at": "2026-09-06T20:21:36.327Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/grosseinsatz-am-hambacher-forst-in-nordrhein-westfalen-endet-erfolglos-102.html",
-            "title": "Sabotage an Stromleitungen - Großeinsatz am Hambacher Forst in Nordrhein-Westfalen endet erfolglos",
-            "summary": "Wegen versuchter Sabotage-Angriffe auf das deutsche Stromnetz hat die Polizei mit einem Großaufgebot am Hambacher Forst bei Kerpen westlich von Köln nach dem Tatverdächtigen gesucht - ohne Erfolg. Es seien keine Hinweise gefunden worden. Die generelle Fahndung nach dem Täter gehe aber weiter, teilte die Polizei mit.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T06:31:50.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "918823902893b8a98930597831d840e250b8dec70ba4fce1a1072552f374dbea",
-            "source_item_id": "e63bd171bb664677c06391a555440cf1ea486da2d425c0d0471e49335b6d69f7",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T06:31:50.000Z",
-            "ingested_at": "2026-09-07T06:36:51.010Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
-          "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "publication_decision_review": {
@@ -95245,7 +94978,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -96020,7 +95753,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -124391,7 +124124,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -130421,7 +130154,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -174775,7 +174508,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T06:37:33.655Z",
+          "checked_at": "2026-09-08T06:52:08.981Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
