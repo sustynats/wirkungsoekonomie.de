@@ -2,32 +2,74 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T20:08:32.518Z",
-  "scanned_stories": 176,
+  "started_at": "2026-09-08T20:25:43.134Z",
+  "scanned_stories": 177,
   "scanned_subjects": 155,
-  "editorial_candidates": 28,
-  "ready_for_research": 7,
+  "editorial_candidates": 29,
+  "ready_for_research": 8,
   "research_pending": 10,
-  "retry_deferred": 6,
-  "editorial_research_sources_discovered": 42,
-  "selected": 1,
+  "retry_deferred": 5,
+  "editorial_research_sources_discovered": 47,
+  "selected": 3,
   "editorial_research_started": 2,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
   "research_calls": 2,
-  "research_tokens": 17033,
-  "analysis_tokens": 14238,
-  "estimated_cost_usd": 0.074426,
+  "research_tokens": 15002,
+  "analysis_tokens": 12368,
+  "estimated_cost_usd": 0.065698,
   "quality_retries": 1,
-  "publication_deferred": false,
+  "publication_deferred": true,
   "failed": [
     {
-      "story_id": "wt-de413d33343f350b",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-09T00:08:32.518Z"
+      "story_id": "wt-e820bef62dd96612",
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_SELF_FRAME_FAILED",
+      "next_attempt_at": "2026-09-08T20:40:43.134Z"
     }
   ],
   "candidates": [
+    {
+      "story_id": "wt-e820bef62dd96612",
+      "story_slug": "angriff-mit-stichwaffe-in-ahrensburg-tatverdachtiger-festgenommen-d96612",
+      "story_title": "Angriff mit Stichwaffe in Ahrensburg: Tatverdächtiger festgenommen",
+      "editorial_analysis_score": 68,
+      "analysis_gain": 51,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 8,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 0,
+        "MPD_interdependence": 2,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 6,
+        "primary_source_expected": false,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
+      "status": "ready_for_research",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-366b1fbfa120e44f",
       "story_slug": "sabotage-am-stromnetz-polizei-nimmt-verdachtigen-bei-aachen-fest-20e44f",
@@ -1241,5 +1283,6 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-08T20:10:13.509Z"
+  "batch_deferred": 2,
+  "completed_at": "2026-09-08T20:27:27.049Z"
 }
