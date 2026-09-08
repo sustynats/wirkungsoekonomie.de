@@ -53,6 +53,23 @@ test('new contract is present with visuals disabled and is enforced in the produ
   assert.match(fs.readFileSync('scripts/news/run.mjs','utf8'),/validateAnalysis\(analysis, analysisCandidate, \{ requireDirectionAssessment: true \}\)/);
 });
 
+for (const includeVisuals of [true, false]) test(`the actual output template includes both mixed paths (visuals=${includeVisuals})`,()=>{
+  const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}],{includeVisuals});
+  const schema=JSON.parse(prompt.split('\n').find(line=>line.startsWith('{"analyses":'))).analyses[0];
+  for (const key of ['human','planet','democracy']) {
+    assert.deepEqual(schema[key].positive_path,{mechanism:'string',source_ids:['string']});
+    assert.deepEqual(schema[key].negative_path,{mechanism:'string',source_ids:['string']});
+  }
+  assert.match(prompt,/sonst beide null/);
+  const analysis=fixture();
+  for (const key of ['human','planet','democracy']) {
+    analysis[key]={...schema[key],relevance:'hoch',tendency:'gemischt',direction_basis:'assessed',rationale:fixture()[key].rationale,...mixed()};
+  }
+  assert.deepEqual(directionAssessmentErrors(analysis,sources,{requireCurrent:true}),[]);
+  for (const key of ['human','planet','democracy']) Object.assign(analysis[key],{tendency:'risiko',positive_path:null,negative_path:null});
+  assert.deepEqual(directionAssessmentErrors(analysis,sources,{requireCurrent:true}),[], 'no invented counterpaths required for a negative judgment');
+});
+
 test('source IDs are evidence metadata, not unsupported numeric reader claims',()=>{
   const a=fixture();a.human.tendency='gemischt';Object.assign(a.human,mixed());
   assert.ok(!JSON.stringify(analysisReaderCopy(a)).includes('source-999'));

@@ -1,7 +1,17 @@
 // Display fallbacks are not analytical verdicts. Never rewrite old judgments.
 export const DIRECTION_ASSESSMENT_VERSION = '1.0';
 export const DIRECTION_SEPARATION_RULE = 'Eintritt/Ausmaß/Evidenz/Richtung trennen: bedingter Schutzverlust kann klar negativ sein, ohne schon eingetreten/gemessen zu sein. Schutzplanken sind keine Gegenwirkung. Keine False Balance: gemischt braucht konkrete positive UND negative Pfade, nicht bloß Unsicherheit, Streit oder formales Recht. Keine Richtung aus Partei/Thema/Relevanz ableiten. Ereignis, Reaktion und Politik getrennt bilanzieren; materielle Systemkopplungen prüfen, Kontext nicht erfinden.';
-export const NEWS_DIRECTION_RULE = `${DIRECTION_SEPARATION_RULE} Maßnahme und Gegenmaßnahme getrennte Wirkpfade, kein Mittelwert; Gegenmaßnahme nicht bereits als wirksamen Ausgleich darstellen. MPD tendency: chance=positives Potenzial, risiko=negatives Risiko, gemischt=gegenläufig, offen=unklar. direction_basis: assessed für begründete Richtung; unclear oder no_path (kein belastbarer Pfad in dieser Meldung) nur mit tendency=offen. rationale: konkrete Folge/Bedingung. Gemischt braucht je positive_path und negative_path:{mechanism,source_ids}; gelieferte Quellen-IDs belegen den Ausgangspunkt, nicht die Kausalität. Keine zusätzlichen Quellenaufrufe.`;
+export const NEWS_DIRECTION_RULE = `${DIRECTION_SEPARATION_RULE} Maßnahme und Gegenmaßnahme getrennte Wirkpfade, kein Mittelwert; Gegenmaßnahme nicht bereits als wirksamen Ausgleich darstellen. MPD tendency: chance=positives Potenzial, risiko=negatives Risiko, gemischt=gegenläufig, offen=unklar. direction_basis: assessed für begründete Richtung; unclear oder no_path (kein belastbarer Pfad in dieser Meldung) nur mit tendency=offen. rationale: konkrete Folge/Bedingung. Gemischt braucht je positive_path und negative_path:{mechanism,source_ids}, sonst beide null. rationale/mechanism mindestens 20 Zeichen. Gelieferte Quellen-IDs belegen den Ausgangspunkt, nicht die Kausalität. Keine zusätzlichen Quellenaufrufe.`;
+// Keep the actual model-facing template aligned with the validation contract.
+// Path objects are conditional, not a request to invent a positive counterpath.
+export const NEWS_DIMENSION_SCHEMA = {
+  relevance: 'gering|mittel|hoch|sehr hoch|offen',
+  tendency: 'chance|risiko|gemischt|offen',
+  direction_basis: 'assessed|unclear|no_path',
+  rationale: 'string',
+  positive_path: { mechanism: 'string', source_ids: ['string'] },
+  negative_path: { mechanism: 'string', source_ids: ['string'] },
+};
 const tendencies = new Set(['chance', 'risiko', 'gemischt', 'offen']);
 const bases = new Set(['assessed', 'unclear', 'no_path']);
 const substantive = value => typeof value === 'string' && value.trim().length >= 20;
