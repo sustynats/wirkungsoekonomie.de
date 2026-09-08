@@ -286,13 +286,34 @@ export function promptEvidenceSegments(source, sourceIndex) {
   return sourceEvidenceSegments(source).map(({ excerpt }, index) => ({ evidence_id: `e${sourceIndex}_${index}`, excerpt }));
 }
 
-export function resolveEvidenceReferences(analysis, story, suppliedIds = []) {
+export function resolveEvidenceReferences(analysis, story, suppliedIds = [], directionDiagnostics = {}) {
   const supplied = new Set(suppliedIds);
   const catalog = new Map(story.sources.flatMap((source, sourceIndex) => sourceEvidenceSegments(source).flatMap(({ evidence_id, excerpt }, index) => {
     const proof = { source_id: source.source_id, url: source.url, excerpt };
     const shortId = `e${sourceIndex}_${index}`;
     return [[evidence_id, proof], ...(supplied.has(shortId) ? [[shortId, proof]] : [])];
   })));
+  const sourceIds = new Set(story.sources.map(source => source.source_id));
+  Object.assign(directionDiagnostics, { supplied_evidence_refs: 0, unknown_refs: 0, resolved_refs: 0, resolved_paths: 0 });
+  for (const dimension of ['human', 'planet', 'democracy']) {
+    for (const key of ['positive_path', 'negative_path']) {
+      const path = analysis?.[dimension]?.[key];
+      if (!Array.isArray(path?.source_ids)) continue;
+      const refs = path.source_ids;
+      // A proof ID is an alias only when it was actually sent in this request
+      // and resolves to a source in this exact story. Never guess from a prefix,
+      // another story, an unsent segment, or a provider-supplied catalog.
+      const isEvidenceRef = id => !sourceIds.has(id) && supplied.has(id) && catalog.has(id);
+      const knownEvidence = refs.filter(isEvidenceRef).length;
+      const unknown = refs.filter(id => !sourceIds.has(id) && !isEvidenceRef(id)).length;
+      directionDiagnostics.supplied_evidence_refs += knownEvidence;
+      directionDiagnostics.unknown_refs += unknown;
+      if (unknown || !knownEvidence) continue;
+      path.source_ids = [...new Set(refs.map(id => sourceIds.has(id) ? id : catalog.get(id).source_id))];
+      directionDiagnostics.resolved_refs += knownEvidence;
+      directionDiagnostics.resolved_paths += 1;
+    }
+  }
   for (const claim of analysis?.event_claims || []) {
     if (!Array.isArray(claim.evidence)) continue;
     claim.evidence = claim.evidence.map((proof) => proof && Object.keys(proof).every((key) => key === "evidence_id") && catalog.has(proof.evidence_id) ? { ...catalog.get(proof.evidence_id) } : proof);

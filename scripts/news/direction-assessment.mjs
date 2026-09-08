@@ -16,6 +16,26 @@ const tendencies = new Set(['chance', 'risiko', 'gemischt', 'offen']);
 const bases = new Set(['assessed', 'unclear', 'no_path']);
 const substantive = value => typeof value === 'string' && value.trim().length >= 20;
 const valueShape = value => value === undefined ? 'missing' : value === null ? 'null' : Array.isArray(value) ? 'array' : typeof value;
+// Some providers fill the object template with empty fields instead of null.
+// Only this exact empty representation of a non-required path is equivalent.
+// Never discard a mechanism, a reference, extra data, or a required mixed path.
+export function normalizeEmptyDirectionPaths(analysis) {
+  const normalized = [];
+  if (analysis?.direction_assessment_version !== DIRECTION_ASSESSMENT_VERSION) return normalized;
+  for (const dimension of ['human', 'planet', 'democracy']) {
+    const item = analysis[dimension];
+    if (!['chance', 'risiko', 'offen'].includes(item?.tendency)) continue;
+    for (const key of ['positive_path', 'negative_path']) {
+      const path = item[key];
+      if (!path || typeof path !== 'object' || Array.isArray(path)
+        || Object.keys(path).length !== 2 || typeof path.mechanism !== 'string'
+        || path.mechanism.trim() || !Array.isArray(path.source_ids) || path.source_ids.length) continue;
+      item[key] = null;
+      normalized.push(`${dimension}.${key}`);
+    }
+  }
+  return normalized;
+}
 // Shape-only production diagnostics: never retain model text, source IDs or
 // arbitrary object keys. A failed proof remains failed; this does not repair it.
 export function directionInputDiagnostics(analysis, sources = []) {
