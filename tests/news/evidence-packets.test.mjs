@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { compactEvidenceSegments, expandEvidenceSegments, serializeEvidencePackets, reviewFingerprint, reviewCheckpoint, canReuseReview, articleSourceOrder } from '../../scripts/news/evidence-packets.mjs';
 import { runWirkungsticker, recoverAmbiguousPublicationDecisions, normalizeEditorialDecision, normalizeAnalysisParagraphs, refreshUnpublishedDraftTitle, retryCoolingDown } from '../../scripts/news/run.mjs';
-import { validateAnalysis } from '../../scripts/news/lib.mjs';
+import { validateAnalysis, clusterItems } from '../../scripts/news/lib.mjs';
 import { buildAnalysisPrompt } from '../../scripts/news/lib.mjs';
 import { evaluateRunHealth } from '../../scripts/news/check-run-health.mjs';
 
@@ -12,6 +12,33 @@ const item = { source_id: 'test', publisher_id: 'test', publisher: 'Test', url: 
 const candidate = () => ({ story_id: 'wt-test', title: item.title, sources: [{...item}], claims: [], existing_story: { current_version: 2 }, related_ticker_history: [{story_id:'related', title:'Anderes Ereignis', summary:'Unveränderte Einordnung', source_urls:['https://example.org/b']}] });
 const options = (story, overrides = {}) => ({ dryRun: true, now, registry: { schema_version: '1.0', sources: [source], policy: {} }, state: { source_status: {}, seen_items: {}, pending_story_ids: [], relevance_filter_version: '4.0' }, storyStore: { stories: [story] }, usage: { runs: [] }, newsroom: { source_items: {}, events: {}, event_sources: [], discovery_candidates: [] }, budgetFx: { rate_date: '2026-09-04', rate_usd_per_eur: 1.16 }, fetchFeedImpl: async () => ({ not_modified: true, final_url: source.feed_url }), fetchArticleImpl: async () => { throw new Error('No paid or live network in tests'); }, aiBatchDelayImpl: async () => {}, ...overrides });
 const storedStory = () => ({ story_id: 'wt-test', slug: 'klimagesetz', title: item.title, published: true, listed: true, first_seen: now, last_updated: now, published_at: now, current_version: 2, versions: [{version:2,analysis:{summary:'Bestehender Artikel'}}], analysis: { summary:'Bestehender Artikel' }, sources: [{...item}], pending_update: { sources:[{...item}], detected_at: now, reason:'AI_BUDGET_OR_BATCH_LIMIT' } });
+
+test('a fresh study update with malformed AI output preserves the published record and history', async () => {
+  const title = 'Bund beschließt Bildungsgesetz nach neuer Vergleichsstudie';
+  const original = { ...item, title, summary: 'Ergebnisse in Mathematik begründen neue Regeln für Schulen.' };
+  const previous = { ...storedStory(), story_id: clusterItems([original], [], now)[0].story_id,
+    title, sources: [original], source_summary: original.summary };
+  delete previous.pending_update;
+  const before = structuredClone(previous);
+  let captured, calls = 0;
+  const rss = `<rss><channel><item><title>${title}</title><link>${item.url}</link><description>Erste Daten in Deutschland begründen neue Regeln für Bildung und Schulen.</description><pubDate>Fri, 04 Sep 2026 12:00:00 GMT</pubDate></item></channel></rss>`;
+  const report = await runWirkungsticker(options(previous, {
+    fetchFeedImpl: async () => ({ body: rss, final_url: source.feed_url }),
+    callAiImpl: async candidates => {
+      calls++;
+      assert.equal(candidates[0].existing_story.published, true);
+      throw new Error('AI_MALFORMED_JSON');
+    },
+    captureState: value => captured = value,
+  }));
+  assert.equal(calls, 1);
+  assert.equal(report.published_stories, 0);
+  assert.equal(report.updated_stories, 0);
+  assert.equal(captured.storyStore.stories.length, 1);
+  const saved = captured.storyStore.stories[0];
+  for (const key of ['story_id', 'slug', 'published', 'published_at', 'current_version', 'versions', 'title', 'source_summary', 'analysis']) assert.deepEqual(saved[key], before[key], key);
+  assert.equal(saved.pending_update.reason, 'AI_OUTPUT_INVALID');
+});
 
 test('packet references round-trip all exact passages, including contradictory statements', () => {
   const shared = 'Diese lange Passage ist in zwei Artikeln wortgleich enthalten und belegt keine unabhängige Bestätigung.';

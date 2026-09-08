@@ -1,11 +1,49 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import fs from "node:fs";
 import { normalizePublicPunctuation } from "../../scripts/quality/public-punctuation.mjs";
 import { renderStoryVisual, renderEditorialClaimMap } from "../../scripts/news/story-visual.mjs";
 import { publicTitleImage } from "../../scripts/news/title-image/pipeline.mjs";
 import { editorialEvidenceGate, editorialAnalysisAssessment } from "../../scripts/news/editorial-analysis.mjs";
 import { storyCard, storyPage } from "../../scripts/news/build.mjs";
+
+// Rendering contracts must not depend on the order or image state of live news.
+// These allowlisted URLs are synthetic fixtures; the renderer never fetches them.
+const FIXTURE_ASSET = "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-0000000000000001-0000000000000002";
+function titleImageFixture(mode) {
+  return {
+    mode,
+    wide: { url: `${FIXTURE_ASSET}-wide.png` },
+    ...(mode === "editorial" ? { source_visual: { url: `${FIXTURE_ASSET}-source.png` } } : {}),
+  };
+}
+function visualStoryFixture(title_image) {
+  return {
+    story_id: "wt-0000000000000001",
+    slug: "release-safety-fixture",
+    title: "Eine geprüfte Nachricht mit einer verständlichen Wirkungskarte",
+    source_summary: "Eine Behörde hat einen Bericht veröffentlicht. Welche weiteren Folgen entstehen, bleibt offen.",
+    topic: ["Politik"],
+    published: true,
+    current_version: 1,
+    first_seen: "2026-09-07T09:00:00Z",
+    published_at: "2026-09-07T09:15:00Z",
+    last_updated: "2026-09-07T09:15:00Z",
+    sources: [{ source_id: "fixture", publisher: "Testquelle", title: "Bericht", url: "https://example.org/bericht", published_at: "2026-09-07T09:00:00Z", primary_source: true }],
+    claims: [],
+    versions: [],
+    analysis: {
+      summary: "Die Behörde hat einen Bericht veröffentlicht; weitere Folgen sind noch nicht belegt.",
+      why_relevant: "Der Bericht betrifft öffentliche Entscheidungen.",
+      importance: "hoch",
+      status: "laufende Entwicklung",
+      analysis_type: "monitoring",
+      human: { relevance: "hoch", tendency: "risiko", rationale: "Mögliche Belastungen bleiben zu prüfen." },
+      planet: { relevance: "offen", tendency: "offen", rationale: "Ein Umweltwirkpfad ist offen." },
+      democracy: { relevance: "mittel", tendency: "offen", rationale: "Weitere Folgen sind offen." },
+    },
+    title_image,
+  };
+}
 
 test("Sprachnormalisierung verändert weder ausführbaren Code noch HTML-Skripte oder URLs", () => {
   const dash = String.fromCharCode(0x2014);
@@ -44,19 +82,21 @@ test("Publikation und Wichtigkeit werden nicht als beobachtete Wirkung oder Risi
 });
 
 test("Wirkungskarte und Symbolbild verwenden einen echten, einmaligen Titel und eine Kennzeichnung", () => {
-  const stories = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories;
   for (const mode of ["impact_card", "editorial"]) {
-    const story = stories.find(story => story.title_image?.mode === mode && (mode !== "editorial" || story.title_image.source_visual));
-    assert.ok(story, mode);
+    const story = visualStoryFixture(titleImageFixture(mode));
     const before = JSON.stringify(story);
     const image = publicTitleImage(story.title_image);
+    assert.ok(image?.wide, "gültiges Rasterbild als Testvoraussetzung");
     const html = renderStoryVisual(story, { detail: true, sourceLabel: "Quelle" });
     assert.equal((html.match(/<h1 /g) || []).length, 1);
     assert.equal((html.match(/<figcaption /g) || []).length, 1);
     assert.match(html, /Relevanz für/);
     assert.match(html, /Darstellung, kein Beleg/);
     assert.ok(!html.includes(story.title_image.wide.url), "kein zweites bereits beschriftetes Rasterbild");
-    if (mode === "editorial") assert.ok(html.includes(image.background.url));
+    if (mode === "editorial") {
+      assert.ok(image.background, "gültiges Symbolbild als Testvoraussetzung");
+      assert.ok(html.includes(image.background.url));
+    }
     assert.equal(JSON.stringify(story), before);
     const card = renderStoryVisual(story, { href: "./story/" });
     assert.match(card, /<h2 /);
@@ -65,9 +105,9 @@ test("Wirkungskarte und Symbolbild verwenden einen echten, einmaligen Titel und 
 });
 
 test("Symbolbild-Hintergründe lassen keine fremden Hosts oder Schema-Injection zu", () => {
-  const source = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories.find(s => s.title_image?.mode === "editorial");
   for (const url of ["javascript:alert(1)", "https://example.org/source.png", "https://github.com/other/repo/releases/download/source.png"]) {
-    const image = publicTitleImage({ ...source.title_image, source_visual: { url } });
+    const image = publicTitleImage({ ...titleImageFixture("editorial"), source_visual: { url } });
+    assert.ok(image?.wide, "Rasterbild bleibt gültig, nur der fremde Hintergrund wird verworfen");
     assert.equal(image.background, undefined);
   }
 });
@@ -75,11 +115,12 @@ test("Symbolbild-Hintergründe lassen keine fremden Hosts oder Schema-Injection 
 for (const [name, title_image] of [
   ["fehlenden Bildmetadaten", undefined],
   ["wartender Bildverarbeitung", { retry_after: "2026-09-07T10:00:00Z" }],
+  ["Wirkungskarten ohne Rasterbilder", { mode: "impact_card" }],
+  ["Wirkungskarten mit ausschließlich OpenGraph-Fallback", { mode: "impact_card", source_visual: null, og: { url: "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png" }, status: "fallback", fallback_reason: "TITLE_IMAGE_UNAVAILABLE" }],
   ["ungültigen Bildverweisen", { mode: "editorial", wide: { url: "https://untrusted.example/image.png" }, source_visual: { url: "javascript:alert(1)" } }],
 ]) {
   test(`Einheitliche Wirkungskarte bei ${name}, ohne Bildaufruf oder Textänderung`, () => {
-    const source = JSON.parse(fs.readFileSync(new URL("../../data/news/stories.json", import.meta.url))).stories.find(s => s.slug.includes("91d490"));
-    const story = { ...structuredClone(source), title_image };
+    const story = visualStoryFixture(title_image);
     const before = JSON.stringify(story);
     const card = storyCard(story, 1);
     assert.match(card, /news-card--visual/);
@@ -91,6 +132,7 @@ for (const [name, title_image] of [
     const detail = storyPage(story);
     assert.equal((detail.match(/<h1\b/g) || []).length, 1);
     assert.match(detail, /<h1 class="news-story-visual__headline">/);
+    assert.doesNotMatch(detail, /news-story-visual__background|untrusted\.example|javascript:/);
     assert.equal(JSON.stringify(story), before);
   });
 }
