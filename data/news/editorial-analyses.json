@@ -24165,8 +24165,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T07:41:48.796Z",
-      "next_attempt_at": "2026-09-08T07:56:48.796Z",
+      "last_attempt_at": "2026-09-08T08:09:19.099Z",
+      "next_attempt_at": "2026-09-08T08:24:19.099Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -24176,14 +24176,13 @@
     "wt-f03755f6f6b8c3b7": {
       "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
       "method_version": "1.0",
-      "attempts": 5,
-      "last_attempt_at": "2026-09-08T04:07:37.623Z",
-      "next_attempt_at": "2026-09-08T08:07:37.623Z",
+      "attempts": 6,
+      "last_attempt_at": "2026-09-08T08:09:19.099Z",
+      "next_attempt_at": "2026-09-08T16:09:19.099Z",
       "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_ARTICLE_LENGTH"
+        "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-8802c617d5bb3e85": {
       "fingerprint": "78002b1d39e5b195d6a13a3b08a9f5b28b9075f1cc6fb1df969a2b489dd9ee8f",
@@ -24200,14 +24199,15 @@
     "wt-de413d33343f350b": {
       "fingerprint": "3a1aa42e5fce23a1c7ec3e3c11e9eec28a73ddc47cc8150a995b2b2556fd35c0",
       "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-08T07:41:48.796Z",
-      "next_attempt_at": "2026-09-08T07:56:48.796Z",
+      "attempts": 2,
+      "last_attempt_at": "2026-09-08T08:09:19.099Z",
+      "next_attempt_at": "2026-09-08T08:39:19.099Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
     }
   }
 }
