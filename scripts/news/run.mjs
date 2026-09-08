@@ -477,7 +477,16 @@ export function normalizeAnalysisParagraphs(analysis) {
   return analysis;
 }
 
-export function analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, story = {}) {
+// Capture only shape and a strict boolean before normalization. No model text,
+// source text or arbitrary object keys enter this diagnostic snapshot.
+export function mediaInputDiagnostics(value) {
+  return {
+    shape: value === undefined ? 'missing' : value === null ? 'null' : Array.isArray(value) ? 'array' : typeof value,
+    relevant: value && typeof value.relevant === 'boolean' ? value.relevant : null,
+  };
+}
+
+export function analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, story = {}, mediaInput) {
   if (!analysis) return null;
   return {
     publication_depth: analysis.publication_depth || null,
@@ -486,6 +495,10 @@ export function analysisValidationDiagnostics(analysis, mediaExplanationBeforeSa
       ? String(analysis.publication_recommendation).slice(0,60) : null,
     media_public_explanation_words: String(analysis.media_impact?.public_explanation || '').trim().split(/\s+/).filter(Boolean).length,
     media_public_explanation_paragraphs: String(analysis.media_impact?.public_explanation || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
+    ...(mediaInput === undefined ? {} : {
+      media_input_shape: mediaInput.shape,
+      media_input_relevant: mediaInput.relevant,
+    }),
     ...(mediaExplanationBeforeSanitizing === undefined ? {} : {
       media_public_explanation_input_words: String(mediaExplanationBeforeSanitizing || '').trim().split(/\s+/).filter(Boolean).length,
       media_public_explanation_input_paragraphs: String(mediaExplanationBeforeSanitizing || '').split(/\n\s*\n/).filter(s=>s.trim()).length,
@@ -1310,6 +1323,7 @@ export async function runWirkungsticker(options = {}) {
         const analyses = new Map(aiResult.analyses.map((analysis) => [analysis.story_id, analysis]));
         for (const candidate of batch) {
           const analysis = analyses.get(candidate.story_id);
+          const mediaInputBeforeSanitizing = mediaInputDiagnostics(analysis?.media_impact);
           const mediaExplanationBeforeSanitizing = analysis?.media_impact?.public_explanation || analysis?.media_impact?.editorial_assessment || '';
           if (analysis) normalizeEditorialDecision(analysis);
           if (analysis) normalizeAnalysisParagraphs(analysis);
@@ -1334,7 +1348,7 @@ export async function runWirkungsticker(options = {}) {
             nextPublished = publishedRecord(analysisCandidate, analysis, aiResult, options.now ? now : new Date().toISOString());
             errors.push(...validateAnalysis({ source_summary: nextPublished.source_summary, ...nextPublished.analysis }, nextPublished, { validateSourceSummaryNumbers: false, persisted: true }));
           }
-          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, candidate) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
+          newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id, decision: errors.length ? "held_or_rejected" : "publish", publication_recommendation: typeof analysis?.publication_recommendation === "boolean" ? analysis.publication_recommendation : null, rejection_code: analysis?.rejection?.code || null, errors, diagnostics: errors.length ? analysisValidationDiagnostics(analysis, mediaExplanationBeforeSanitizing, candidate, mediaInputBeforeSanitizing) : null, rationale: analysis?.rejection?.reason || analysis?.publication_gate?.rationale || null });
           if (errors.length) {
             const noUpdate = errors.includes("AI_DUPLICATE_WITHOUT_UPDATE")
               && errors.every(error => ["AI_PUBLICATION_NOT_RECOMMENDED", "AI_DUPLICATE_WITHOUT_UPDATE"].includes(error));
