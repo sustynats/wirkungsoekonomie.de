@@ -1,8 +1,423 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T11:22:01.370Z",
-  "updated_at": "2026-09-08T11:37:12.942Z",
+  "public_updated_at": "2026-09-08T11:51:56.994Z",
+  "updated_at": "2026-09-08T11:51:56.994Z",
   "stories": [
+    {
+      "story_id": "wt-8f5486795966d842",
+      "slug": "anschlage-auf-stromleitungen-polizei-nimmt-verdachtigen-fest-66d842",
+      "title": "Anschläge auf Stromleitungen: Polizei nimmt Verdächtigen fest",
+      "first_seen": "2026-09-08T10:47:00.000Z",
+      "last_updated": "2026-09-08T11:53:02.995Z",
+      "published_at": "2026-09-08T11:53:02.995Z",
+      "updated_at": "2026-09-08T11:53:02.995Z",
+      "topic": [
+        "Energie",
+        "Arbeit"
+      ],
+      "sources": [
+        {
+          "source_id": "wiwo-schlagzeilen",
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-polizei-nimmt-verdaechtigen-fest/100252553.html",
+          "title": "Anschläge auf Stromleitungen: Polizei nimmt Verdächtigen fest",
+          "summary": "Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige wurde nun bei Aachen gefasst.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T10:47:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Wirtschaft",
+          "content_hash": "12fe1f776509fcbf22e7ab16ced4c08ee013671c5481eff5af0b0fd3f31387bd",
+          "source_item_id": "38ef13d6f2624f539bc3e4c9461f088911401debac3c1be60d7279ad7ea0d1b4",
+          "publisher_id": "wirtschaftswoche",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T10:47:00.000Z",
+          "ingested_at": "2026-09-08T11:37:12.942Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:wirtschaftswoche",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-8f5486795966d842-v1-claim-1",
+          "story_id": "wt-8f5486795966d842",
+          "claim": "Die Polizei hat einen Verdächtigen im Zusammenhang mit der Sabotage-Serie an Hochspannungsleitungen festgenommen.",
+          "status": "single_source_claim",
+          "source_id": "wiwo-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-polizei-nimmt-verdaechtigen-fest/100252553.html",
+              "excerpt_hash": "60d5700c5410517000e9",
+              "checked_at": "2026-09-08T11:53:02.995Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T11:53:02.995Z"
+        },
+        {
+          "claim_id": "wt-8f5486795966d842-v1-claim-2",
+          "story_id": "wt-8f5486795966d842",
+          "claim": "Die Festnahme erfolgte bei Aachen.",
+          "status": "single_source_claim",
+          "source_id": "wiwo-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-polizei-nimmt-verdaechtigen-fest/100252553.html",
+              "excerpt_hash": "60d5700c5410517000e9",
+              "checked_at": "2026-09-08T11:53:02.995Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T11:53:02.995Z"
+        }
+      ],
+      "event_id": "event-5e9701a7be78b5e48648",
+      "event_first_seen_at": "2026-09-08T10:51:42.562Z",
+      "event_detected_at": "2026-09-08T10:51:42.562Z",
+      "verification_started_at": "2026-09-08T11:52:52.547Z",
+      "publish_ready_at": "2026-09-08T11:53:02.995Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T11:51:56.994Z",
+        "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Festnahme mit weiteren Tatorten oder einem größeren Sabotagezusammenhang verbunden ist.",
+          "source_id": "wiwo-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Neue Polizeiangaben oder belastbare Berichte zu weiteren Zuordnungen oder Tatorten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cb74c6af9f8c8cab",
+          "announced_at": "2026-09-08T10:47:00.000Z",
+          "follow_up_date": "2026-09-15T11:53:02.995Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "6e0d37da3f258298b04cb6e703ee754933864d81da4d543c2c044cdd13bf53ad",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T11:53:02.995Z",
+        "sources": []
+      },
+      "source_summary": "Die WirtschaftsWoche meldet, dass die Polizei einen Verdächtigen im Zusammenhang mit einer Sabotage-Serie an Hochspannungsleitungen festgenommen habe. Nach der Darstellung der Quelle wurde der Mann bei Aachen gefasst.\n\nDie Meldung bleibt knapp und verweist auf den laufenden Ermittlungsstand. Zum Ablauf, zu einem Motiv, zu möglichen Folgen für die Stromversorgung oder zu weiteren Tatorten enthält die Quelle in dem gelieferten Ausschnitt keine Details.",
+      "analysis": {
+        "story_id": "wt-8f5486795966d842",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Die Polizei hat nach einer Meldung einen Verdächtigen im Zusammenhang mit Sabotage an Hochspannungsleitungen festgenommen. Der Stand ist vorläufig, weitere Einzelheiten fehlen noch.",
+        "detail_summary": "Kern der Meldung ist die Festnahme eines Verdächtigen im Umfeld einer Sabotage-Serie an Hochspannungsleitungen. Der Ort der Festnahme wird mit Aachen genannt. Das ist für sich genommen eine neue Zustandsinformation im laufenden Ermittlungsverfahren, weil damit eine konkrete polizeiliche Maßnahme und eine räumliche Zuordnung vorliegen. Materiell ist der Vorgang vor allem wegen möglicher Folgen für die Energieversorgung relevant. Offen bleibt aber, ob die Festnahme den Umfang der Serie, Täterzusammenhänge oder Risiken für weitere Anlagen tatsächlich klärt. Die Evidenz trägt hier nur eine vorläufige Erstmeldung aus einer journalistischen Quelle; unabhängige Bestätigung und Details zu Motiv, Ablauf und Schäden fehlen im gelieferten Material.",
+        "why_relevant": "Die Meldung betrifft eine mögliche Sabotage an kritischer Infrastruktur und eine polizeiliche Festnahme. Das ist für Versorgungssicherheit, Ermittlungen und öffentliche Risikowahrnehmung relevant.",
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind mögliche Ausfälle oder Gefährdungen der Stromversorgung sowie der Schutz von Beschäftigten und Einsatzkräften; zugleich ist der konkrete Schaden noch offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus dem gelieferten Material ergibt sich kein direkter Umweltpfad; mögliche Folgewirkungen bleiben unbestimmt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und die demokratische Korrekturfähigkeit, weil sie Vertrauen in Versorgung und Sicherheit belasten können."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Festnahme kann Ermittlungen beschleunigen und damit den Schutz kritischer Infrastruktur stärken, falls der Zusammenhang belastbar bestätigt wird.",
+        "impact_risks": [
+          "Weitere Störungen oder Folgetaten an Stromanlagen bleiben möglich, solange Ablauf und Umfang ungeklärt sind.",
+          "Die öffentliche Unsicherheit kann hoch bleiben, wenn die Ermittlungen keine schnellen Klärungen liefern."
+        ],
+        "mechanisms": [
+          "Polizeiliche Festnahme kann Beweise sichern und weitere Taten erschweren.",
+          "Ermittlungsfortschritte können Schutzmaßnahmen an gefährdeten Anlagen auslösen."
+        ],
+        "first_order": [
+          "Veränderte Ermittlungs- und Fahndungslage durch die Festnahme."
+        ],
+        "second_order": [
+          "Mögliche Anpassung von Schutzmaßnahmen an Leitungen und Anlagen."
+        ],
+        "third_order": [
+          "Falls sich ein Serienzusammenhang bestätigt, könnte das in Behörden und Betreibern zu dauerhaft höherer Sicherheitspriorität führen."
+        ],
+        "systemic_relevance": "Kritische Strominfrastruktur ist systemrelevant, weil Störungen breite Folgewirkungen auf Versorgung, Wirtschaft und öffentliche Sicherheit haben können.",
+        "transformation_potential": "Noch kein Transformationsbefund; allenfalls ein möglicher Anstoß für strengere Schutz- und Ermittlungsroutinen.",
+        "resilience": "Resilienz hängt hier davon ab, ob Betreiber und Behörden Tatmuster schnell erkennen und Infrastruktur gezielt sichern können.",
+        "side_effects": [
+          "Mehr Polizeieinsatz und Sicherungsaufwand.",
+          "Mögliche Verlagerung von Risiken auf andere Anlagen, falls der Schutz nur punktuell verstärkt wird."
+        ],
+        "uncertainties": [
+          "Ob der Festgenommene tatsächlich für die Sabotage-Serie verantwortlich ist.",
+          "Wie viele Anlagen betroffen sind und welche Schäden entstanden.",
+          "Ob es weitere Tatorte oder Nachahmungseffekte gibt."
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Quelle: WirtschaftsWoche; Sprecher und Originalzitat sind im gelieferten Ausschnitt nicht ausgewiesen, die Meldung ist als journalistische Kurzmeldung formuliert.",
+        "watch_next": [
+          "Polizeiliche Bestätigung des Sachzusammenhangs.",
+          "Angaben zu weiteren Tatorten oder zu Schäden an der Stromversorgung.",
+          "Mögliche Anklage oder richterliche Entscheidung."
+        ],
+        "reference_frameworks": [
+          "SDG 7",
+          "SDG 9",
+          "SDG 16"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "systemic_relevance"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung enthält eine neue, materielle Zustandsinformation zu einer Festnahme im Umfeld mutmaßlicher Sabotage an kritischer Infrastruktur. Die Quelle ist jedoch nur eine journalistische Einzelquelle, daher bleibt die Meldung vorläufig."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T11:51:56.994Z",
+        "media_trigger_fingerprint": "7379e64347562f9c2bfc289fb04125e3f67db44b1a48e2fd551b823731bfb915",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "7379e64347562f9c2bfc289fb04125e3f67db44b1a48e2fd551b823731bfb915",
+          "content_fingerprint": "c4a6309c26c71b3efe0ec5f7485dc5fdd7e4922b1f391a9e511b802cb9303922",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T11:53:02.995Z",
+          "content_hash": "6e0d37da3f258298b04cb6e703ee754933864d81da4d543c2c044cdd13bf53ad",
+          "source_summary": "Die WirtschaftsWoche meldet, dass die Polizei einen Verdächtigen im Zusammenhang mit einer Sabotage-Serie an Hochspannungsleitungen festgenommen habe. Nach der Darstellung der Quelle wurde der Mann bei Aachen gefasst.\n\nDie Meldung bleibt knapp und verweist auf den laufenden Ermittlungsstand. Zum Ablauf, zu einem Motiv, zu möglichen Folgen für die Stromversorgung oder zu weiteren Tatorten enthält die Quelle in dem gelieferten Ausschnitt keine Details.",
+          "analysis": {
+            "story_id": "wt-8f5486795966d842",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Die Polizei hat nach einer Meldung einen Verdächtigen im Zusammenhang mit Sabotage an Hochspannungsleitungen festgenommen. Der Stand ist vorläufig, weitere Einzelheiten fehlen noch.",
+            "detail_summary": "Kern der Meldung ist die Festnahme eines Verdächtigen im Umfeld einer Sabotage-Serie an Hochspannungsleitungen. Der Ort der Festnahme wird mit Aachen genannt. Das ist für sich genommen eine neue Zustandsinformation im laufenden Ermittlungsverfahren, weil damit eine konkrete polizeiliche Maßnahme und eine räumliche Zuordnung vorliegen. Materiell ist der Vorgang vor allem wegen möglicher Folgen für die Energieversorgung relevant. Offen bleibt aber, ob die Festnahme den Umfang der Serie, Täterzusammenhänge oder Risiken für weitere Anlagen tatsächlich klärt. Die Evidenz trägt hier nur eine vorläufige Erstmeldung aus einer journalistischen Quelle; unabhängige Bestätigung und Details zu Motiv, Ablauf und Schäden fehlen im gelieferten Material.",
+            "why_relevant": "Die Meldung betrifft eine mögliche Sabotage an kritischer Infrastruktur und eine polizeiliche Festnahme. Das ist für Versorgungssicherheit, Ermittlungen und öffentliche Risikowahrnehmung relevant.",
+            "status": "laufende Entwicklung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Betroffen sind mögliche Ausfälle oder Gefährdungen der Stromversorgung sowie der Schutz von Beschäftigten und Einsatzkräften; zugleich ist der konkrete Schaden noch offen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Aus dem gelieferten Material ergibt sich kein direkter Umweltpfad; mögliche Folgewirkungen bleiben unbestimmt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "risiko",
+              "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und die demokratische Korrekturfähigkeit, weil sie Vertrauen in Versorgung und Sicherheit belasten können."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Festnahme kann Ermittlungen beschleunigen und damit den Schutz kritischer Infrastruktur stärken, falls der Zusammenhang belastbar bestätigt wird.",
+            "impact_risks": [
+              "Weitere Störungen oder Folgetaten an Stromanlagen bleiben möglich, solange Ablauf und Umfang ungeklärt sind.",
+              "Die öffentliche Unsicherheit kann hoch bleiben, wenn die Ermittlungen keine schnellen Klärungen liefern."
+            ],
+            "mechanisms": [
+              "Polizeiliche Festnahme kann Beweise sichern und weitere Taten erschweren.",
+              "Ermittlungsfortschritte können Schutzmaßnahmen an gefährdeten Anlagen auslösen."
+            ],
+            "first_order": [
+              "Veränderte Ermittlungs- und Fahndungslage durch die Festnahme."
+            ],
+            "second_order": [
+              "Mögliche Anpassung von Schutzmaßnahmen an Leitungen und Anlagen."
+            ],
+            "third_order": [
+              "Falls sich ein Serienzusammenhang bestätigt, könnte das in Behörden und Betreibern zu dauerhaft höherer Sicherheitspriorität führen."
+            ],
+            "systemic_relevance": "Kritische Strominfrastruktur ist systemrelevant, weil Störungen breite Folgewirkungen auf Versorgung, Wirtschaft und öffentliche Sicherheit haben können.",
+            "transformation_potential": "Noch kein Transformationsbefund; allenfalls ein möglicher Anstoß für strengere Schutz- und Ermittlungsroutinen.",
+            "resilience": "Resilienz hängt hier davon ab, ob Betreiber und Behörden Tatmuster schnell erkennen und Infrastruktur gezielt sichern können.",
+            "side_effects": [
+              "Mehr Polizeieinsatz und Sicherungsaufwand.",
+              "Mögliche Verlagerung von Risiken auf andere Anlagen, falls der Schutz nur punktuell verstärkt wird."
+            ],
+            "uncertainties": [
+              "Ob der Festgenommene tatsächlich für die Sabotage-Serie verantwortlich ist.",
+              "Wie viele Anlagen betroffen sind und welche Schäden entstanden.",
+              "Ob es weitere Tatorte oder Nachahmungseffekte gibt."
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Quelle: WirtschaftsWoche; Sprecher und Originalzitat sind im gelieferten Ausschnitt nicht ausgewiesen, die Meldung ist als journalistische Kurzmeldung formuliert.",
+            "watch_next": [
+              "Polizeiliche Bestätigung des Sachzusammenhangs.",
+              "Angaben zu weiteren Tatorten oder zu Schäden an der Stromversorgung.",
+              "Mögliche Anklage oder richterliche Entscheidung."
+            ],
+            "reference_frameworks": [
+              "SDG 7",
+              "SDG 9",
+              "SDG 16"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "systemic_relevance"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung enthält eine neue, materielle Zustandsinformation zu einer Festnahme im Umfeld mutmaßlicher Sabotage an kritischer Infrastruktur. Die Quelle ist jedoch nur eine journalistische Einzelquelle, daher bleibt die Meldung vorläufig."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T11:51:56.994Z",
+            "media_trigger_fingerprint": "7379e64347562f9c2bfc289fb04125e3f67db44b1a48e2fd551b823731bfb915",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "7379e64347562f9c2bfc289fb04125e3f67db44b1a48e2fd551b823731bfb915",
+              "content_fingerprint": "c4a6309c26c71b3efe0ec5f7485dc5fdd7e4922b1f391a9e511b802cb9303922",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-8f5486795966d842-v1-claim-1",
+              "story_id": "wt-8f5486795966d842",
+              "claim": "Die Polizei hat einen Verdächtigen im Zusammenhang mit der Sabotage-Serie an Hochspannungsleitungen festgenommen.",
+              "status": "single_source_claim",
+              "source_id": "wiwo-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "wiwo-schlagzeilen",
+                  "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-polizei-nimmt-verdaechtigen-fest/100252553.html",
+                  "excerpt_hash": "60d5700c5410517000e9",
+                  "checked_at": "2026-09-08T11:53:02.995Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T11:53:02.995Z"
+            },
+            {
+              "claim_id": "wt-8f5486795966d842-v1-claim-2",
+              "story_id": "wt-8f5486795966d842",
+              "claim": "Die Festnahme erfolgte bei Aachen.",
+              "status": "single_source_claim",
+              "source_id": "wiwo-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "wiwo-schlagzeilen",
+                  "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-polizei-nimmt-verdaechtigen-fest/100252553.html",
+                  "excerpt_hash": "60d5700c5410517000e9",
+                  "checked_at": "2026-09-08T11:53:02.995Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T11:53:02.995Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "wiwo-schlagzeilen",
+              "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-polizei-nimmt-verdaechtigen-fest/100252553.html",
+              "content_hash": "12fe1f776509fcbf22e7ab16ced4c08ee013671c5481eff5af0b0fd3f31387bd"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T11:53:02.995Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T11:53:02.995Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T12:08:23.920Z"
+      }
+    },
     {
       "story_id": "wt-4bb11878f87d3484",
       "ai_retry": {
@@ -2570,7 +2985,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T11:43:17.604Z"
+        "retry_after": "2026-09-08T12:08:37.909Z"
       }
     },
     {
@@ -2982,7 +3397,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T11:43:11.111Z"
+        "retry_after": "2026-09-08T12:08:33.009Z"
       }
     },
     {
@@ -3957,7 +4372,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T11:42:11.182Z"
+        "retry_after": "2026-09-08T12:08:28.308Z"
       }
     },
     {
@@ -4116,6 +4531,14 @@
     },
     {
       "story_id": "wt-4d83d9ae17e2b87a",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "31d32809049c06e5e120840f5d8cfdebeed5580dc53075adcc068af60050be86",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
       "slug": "in-polen-testen-wladimir-putins-truppen-jetzt-den-hybriden-krieg-e2b87a",
       "title": "In Polen testen Wladimir Putins Truppen jetzt den hybriden Krieg",
       "first_seen": "2026-09-08T11:20:00.000Z",
@@ -4177,20 +4600,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "e779ca3a0c4bd8e02df40c2bd20529f90b3ac11cabd6da14e244245bd7c58ab7",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T12:06:56.994Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-8469a30e4de1303661b3",
@@ -4223,23 +4646,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 17.2157,
+        "source_age_minutes": 31.9499,
         "detection_delay_minutes": 17.2157,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.7342,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "177b2bab8cb58c8daeedd984a87e6f01e7168ff938f4dfd5d0c4a82c91c77aa7",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T11:51:56.994Z",
+      "rejection": {
+        "at": "2026-09-08T11:51:56.994Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -5049,6 +5484,14 @@
     },
     {
       "story_id": "wt-bdc70deaf498c717",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "b80fb300796b46f20121fa953de08777031a1a399c37fd3a82b41c6e898c373d",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
       "slug": "stromnetz-sabotage-mutmasslicher-tater-festgenommen-98c717",
       "title": "Stromnetz-Sabotage: Mutmaßlicher Täter festgenommen",
       "first_seen": "2026-09-08T10:49:57.000Z",
@@ -5114,20 +5557,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "705c706245dde445fa6cc348522a087d7881391fa5e57eca0944f65b9babc14c",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T12:06:56.994Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T11:07:04.983Z",
       "event_detected_at": "2026-09-08T11:07:04.983Z",
       "event_id": "event-915bb4f3f4b8a5b3a9ea",
@@ -5160,20 +5605,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 47.2657,
+        "source_age_minutes": 61.9999,
         "detection_delay_minutes": 17.13305,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 30.13265,
+        "queue_age_minutes": 44.86685,
         "target_publication_minutes": 120,
-        "news_freshness_score": 90,
+        "news_freshness_score": 87,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "c7ae3907216fed9c56d43da776c0bdbc4b68e47ca36e4e42409a88e85cc6698f",
         "issue_codes": [],
         "warning_codes": []
@@ -5334,137 +5779,15 @@
       }
     },
     {
-      "story_id": "wt-8f5486795966d842",
-      "slug": "anschlage-auf-stromleitungen-polizei-nimmt-verdachtigen-fest-66d842",
-      "title": "Anschläge auf Stromleitungen: Polizei nimmt Verdächtigen fest",
-      "first_seen": "2026-09-08T10:47:00.000Z",
-      "last_updated": "2026-09-08T10:47:00.000Z",
-      "topic": [
-        "Energie",
-        "Arbeit"
-      ],
-      "sources": [
-        {
-          "source_id": "wiwo-schlagzeilen",
-          "publisher": "WirtschaftsWoche",
-          "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-polizei-nimmt-verdaechtigen-fest/100252553.html",
-          "title": "Anschläge auf Stromleitungen: Polizei nimmt Verdächtigen fest",
-          "summary": "Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige wurde nun bei Aachen gefasst.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T10:47:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Wirtschaft",
-          "content_hash": "12fe1f776509fcbf22e7ab16ced4c08ee013671c5481eff5af0b0fd3f31387bd",
-          "source_item_id": "38ef13d6f2624f539bc3e4c9461f088911401debac3c1be60d7279ad7ea0d1b4",
-          "publisher_id": "wirtschaftswoche",
-          "publisher_kind": "specialist_journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T10:47:00.000Z",
-          "ingested_at": "2026-09-08T11:37:12.942Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-8f5486795966d842-claim-01",
-          "story_id": "wt-8f5486795966d842",
-          "claim": "Anschläge auf Stromleitungen: Polizei nimmt Verdächtigen fest: Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige wurde nun bei Aachen gefasst.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "wiwo-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:wirtschaftswoche",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
-        }
-      ],
-      "content_hash": "6e0d37da3f258298b04cb6e703ee754933864d81da4d543c2c044cdd13bf53ad",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
-      "event_first_seen_at": "2026-09-08T10:51:42.562Z",
-      "event_detected_at": "2026-09-08T10:51:42.562Z",
-      "event_id": "event-5e9701a7be78b5e48648",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Energie",
-          "Arbeit"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 50.2157,
-        "detection_delay_minutes": 4.709366666666667,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 45.50633333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 90,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
-        "fingerprint": "4b4b3df904936496f2b6d502116c592c295af990ef1a415a7ae76296258da4d6",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
       "story_id": "wt-74acd00e0f14be4d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "4924bbf7940d7c4b315ec3288fcec77813b4c1dd92a28867815f3e4c009fe9a2",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
       "slug": "krieg-selenskyj-sieht-gesprachspotenzial-kreml-spricht-von-nahem-sieg-14be4d",
       "title": "Krieg - Selenskyj sieht Gesprächspotenzial, Kreml spricht von \"nahem Sieg\"",
       "first_seen": "2026-09-08T10:44:32.000Z",
@@ -5526,20 +5849,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "68eef04bb20f08a15da1edf6ff7cd80fc70098233ad74869fb33362c2a287ec6",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T12:06:56.994Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T10:51:42.562Z",
       "event_detected_at": "2026-09-08T10:51:42.562Z",
       "event_id": "event-f0917976ec1df3cdb57b",
@@ -5572,27 +5895,47 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 25.299033333333334,
+        "source_age_minutes": 40.033233333333335,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.50633333333333,
+        "queue_age_minutes": 60.24053333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "45c022743a06ee222beeed29f52442a1ab5c5a41961b1c1e0eb101469c567e43",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T11:51:56.994Z",
+      "rejection": {
+        "at": "2026-09-08T11:51:56.994Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
       "story_id": "wt-e01e1e77e702edc3",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "afe4bec7362b59182abe117bf944a518e936a5eeb760afe56e6c5073b4d3254e",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
       "slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
       "title": "Mutmaßlicher Strom-Saboteur Daniel V. festgenommen",
       "first_seen": "2026-09-08T10:41:31.000Z",
@@ -5654,20 +5997,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "85a04e25f35fe173ffef4bd2a17669481826ae292730295dc5e773a634de2ca5",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "AI_SUMMARY_SENTENCE_COUNT"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T12:06:56.994Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T10:51:42.562Z",
       "event_detected_at": "2026-09-08T10:51:42.562Z",
       "event_id": "event-1c240bac9c8b267f5a27",
@@ -5700,20 +6045,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 37.44903333333333,
+        "source_age_minutes": 52.183233333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.50633333333333,
+        "queue_age_minutes": 60.24053333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 92,
+        "news_freshness_score": 89,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "29af39498e453a31ba7f63af9fe28f738cc5e3a474b0f705b4e64a9b5a646dc0",
         "issue_codes": [],
         "warning_codes": []
@@ -6613,6 +6958,14 @@
     },
     {
       "story_id": "wt-96126ab003c2ba16",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "13de3dbe12de803a846dca7a3396d9ddb61dff152afa3b99273c6af3ce45e1a0",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
       "slug": "irans-vizeprasident-erklart-internetsperren-fur-gescheitert-c2ba16",
       "title": "Irans Vizepräsident erklärt Internetsperren für gescheitert",
       "first_seen": "2026-09-08T10:23:00.000Z",
@@ -6677,20 +7030,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "90e823bd326ec2520003407f04b864f0ead0bde0ca6b7eeb288bf71b7a201682",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T12:06:56.994Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T11:22:01.370Z",
       "event_detected_at": "2026-09-08T11:22:01.370Z",
       "event_id": "event-66c0b283883714cd6394",
@@ -6725,23 +7078,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 74.2157,
+        "source_age_minutes": 88.9499,
         "detection_delay_minutes": 59.02283333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.192866666666667,
+        "queue_age_minutes": 29.927066666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 85,
+        "news_freshness_score": 81,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "3cff496ca97e51a9a56484e832fa493bd1b82205662cc88ef28aa05b404370d6",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T11:51:56.994Z",
+      "rejection": {
+        "at": "2026-09-08T11:51:56.994Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -11484,6 +11849,14 @@
     },
     {
       "story_id": "wt-007241b38edb94bc",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "0767da2981d44fe9195a5400d90a64282d6b28ecdab3e8caffe4cf8a012d01a6",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
       "slug": "kein-peace-bei-pisa-neue-bildung-braucht-das-land-db94bc",
       "title": "Kein Peace bei Pisa: Neue Bildung braucht das Land",
       "first_seen": "2026-09-08T09:04:56.000Z",
@@ -11545,20 +11918,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "8f995d10c1726a40b0903002e9fb2741ac61c08b6c6fbe56f886b52ddcf4b8e1",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T12:06:56.994Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-91186fd734fe84ded1b4",
@@ -11593,23 +11966,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 152.28236666666666,
+        "source_age_minutes": 167.01656666666668,
         "detection_delay_minutes": 62.502116666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 89.78025,
+        "queue_age_minutes": 104.51445,
         "target_publication_minutes": 120,
-        "news_freshness_score": 68,
+        "news_freshness_score": 65,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "b84f558ebac0c4b61f73fc9b8337058583a4639388ee219ea7a136d8f103c98d",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T11:51:56.994Z",
+      "rejection": {
+        "at": "2026-09-08T11:51:56.994Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -11764,6 +12149,14 @@
     },
     {
       "story_id": "wt-fcf6e1632cd04ab6",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "d1bd24ce0e75e526cdf8b711b68fe5dc9701e4bf7166c715b8f513cbedb8bb35",
+        "first_failed_at": "2026-09-08T11:51:56.994Z",
+        "failed_at": "2026-09-08T11:51:56.994Z",
+        "retry_after": "2026-09-08T12:06:56.994Z",
+        "retry_count": 1
+      },
       "slug": "ukraine-krieg-nach-us-gesprachen-kiew-meldet-neue-russische-angriffe-d04ab6",
       "title": "Ukraine-Krieg: Nach US-Gesprächen: Kiew meldet neue russische Angriffe",
       "first_seen": "2026-09-08T08:50:49.000Z",
@@ -11825,20 +12218,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "605d736f4e364e1d63d9a13db174570f8d6acf0ea93d2ad6de60df44c5e0feb9",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T12:06:56.994Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-f6c9467feff2212f044b",
@@ -11871,23 +12264,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 166.39903333333334,
+        "source_age_minutes": 181.13323333333332,
         "detection_delay_minutes": 76.61878333333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 89.78025,
+        "queue_age_minutes": 104.51445,
         "target_publication_minutes": 120,
-        "news_freshness_score": 65,
+        "news_freshness_score": 62,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "2f24caa604c770e4181acef0efb0da59f981a32d0760c5986f621e6e417902f4",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T11:51:56.994Z",
+      "rejection": {
+        "at": "2026-09-08T11:51:56.994Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -15140,7 +15545,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -15155,7 +15560,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -15196,7 +15601,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 89.78025,
+        "queue_age_minutes": 104.51445,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": null
@@ -15205,7 +15610,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -15275,7 +15680,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -15290,7 +15695,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -15330,7 +15735,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 89.78025,
+        "queue_age_minutes": 104.51445,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": null
@@ -15339,7 +15744,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -16623,7 +17028,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -17472,7 +17877,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -18178,7 +18583,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -20311,7 +20716,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -24081,7 +24486,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -27842,7 +28247,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -28567,7 +28972,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "59930a71fed9ea12b5124b39cbefffedf194de10239bd80ff39f71a739e82cd1",
           "issue_codes": [],
           "warning_codes": []
@@ -29742,7 +30147,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "7058d23c9246612a31343345ae582873e03ef1dcd138d22c83c048f96c4900e7",
           "issue_codes": [],
           "warning_codes": []
@@ -30684,7 +31089,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -33657,7 +34062,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -34407,7 +34812,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -35570,7 +35975,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -35995,9 +36400,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T17:37:12.942Z",
+        "expires_at": "2026-09-08T17:51:56.994Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -36600,7 +37005,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "b6eac9ae04448a841c4dd4b15ba5312652100dd079ff9f977e47c18e0d1ecd2c",
           "issue_codes": [],
           "warning_codes": []
@@ -39517,7 +39922,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -40774,7 +41179,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -41335,7 +41740,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -42844,7 +43249,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -44050,7 +44455,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -45197,7 +45602,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -45717,7 +46122,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -46474,7 +46879,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -48931,7 +49336,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -50429,7 +50834,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -51504,7 +51909,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -53034,9 +53439,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T17:37:12.942Z",
+        "expires_at": "2026-09-08T17:51:56.994Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -57712,7 +58117,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -62409,7 +62814,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -68514,7 +68919,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -77078,7 +77483,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -78330,7 +78735,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "7a2c72da8e35ded18fff805a544609c7dc335a6f3cb4475cdbf05265d0956a32",
           "issue_codes": [],
           "warning_codes": []
@@ -79826,7 +80231,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -82186,7 +82591,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -82927,7 +83332,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -95032,7 +95437,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -95052,7 +95457,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T11:37:12.942Z"
+          "checked_at": "2026-09-08T11:51:56.994Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -95068,7 +95473,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T11:37:12.942Z",
+      "updated_at": "2026-09-08T11:51:56.994Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -95108,7 +95513,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1590.3263166666666,
+        "queue_age_minutes": 1605.0605166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -95117,7 +95522,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T11:37:12.942Z",
+        "checked_at": "2026-09-08T11:51:56.994Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -114384,7 +114789,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -115379,7 +115784,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -116080,7 +116485,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -116855,7 +117260,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -117518,7 +117923,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -121629,7 +122034,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "3a48062f9f17240bc2032436aad30d6f1ece4f3bfb6aa68a85a440c21ebcb6c1",
           "issue_codes": [],
           "warning_codes": []
@@ -122931,7 +123336,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
           "issue_codes": [],
           "warning_codes": []
@@ -126302,7 +126707,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -152189,7 +152594,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -196543,7 +196948,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T11:37:12.942Z",
+          "checked_at": "2026-09-08T11:51:56.994Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

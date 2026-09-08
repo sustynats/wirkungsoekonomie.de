@@ -1,7 +1,94 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T11:29:36.270Z",
+  "updated_at": "2026-09-08T11:51:56.994Z",
   "stories": [
+    {
+      "story_id": "wt-8f5486795966d842",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "anschlage-auf-stromleitungen-polizei-nimmt-verdachtigen-fest-66d842",
+      "title": "Anschläge auf Stromleitungen: Polizei nimmt Verdächtigen fest",
+      "source_summary": "Die WirtschaftsWoche meldet, dass die Polizei einen Verdächtigen im Zusammenhang mit einer Sabotage-Serie an Hochspannungsleitungen festgenommen habe. Nach der Darstellung der Quelle wurde der Mann bei Aachen gefasst.\n\nDie Meldung bleibt knapp und verweist auf den laufenden Ermittlungsstand. Zum Ablauf, zu einem Motiv, zu möglichen Folgen für die Stromversorgung oder zu weiteren Tatorten enthält die Quelle in dem gelieferten Ausschnitt keine Details.",
+      "summary": "Die Polizei hat nach einer Meldung einen Verdächtigen im Zusammenhang mit Sabotage an Hochspannungsleitungen festgenommen. Der Stand ist vorläufig, weitere Einzelheiten fehlen noch.",
+      "detail_summary": "Kern der Meldung ist die Festnahme eines Verdächtigen im Umfeld einer Sabotage-Serie an Hochspannungsleitungen. Der Ort der Festnahme wird mit Aachen genannt. Das ist für sich genommen eine neue Zustandsinformation im laufenden Ermittlungsverfahren, weil damit eine konkrete polizeiliche Maßnahme und eine räumliche Zuordnung vorliegen. Materiell ist der Vorgang vor allem wegen möglicher Folgen für die Energieversorgung relevant. Offen bleibt aber, ob die Festnahme den Umfang der Serie, Täterzusammenhänge oder Risiken für weitere Anlagen tatsächlich klärt. Die Evidenz trägt hier nur eine vorläufige Erstmeldung aus einer journalistischen Quelle; unabhängige Bestätigung und Details zu Motiv, Ablauf und Schäden fehlen im gelieferten Material.",
+      "why_relevant": "Die Meldung betrifft eine mögliche Sabotage an kritischer Infrastruktur und eine polizeiliche Festnahme. Das ist für Versorgungssicherheit, Ermittlungen und öffentliche Risikowahrnehmung relevant.",
+      "topic": [
+        "Energie",
+        "Arbeit"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Betroffen sind mögliche Ausfälle oder Gefährdungen der Stromversorgung sowie der Schutz von Beschäftigten und Einsatzkräften; zugleich ist der konkrete Schaden noch offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus dem gelieferten Material ergibt sich kein direkter Umweltpfad; mögliche Folgewirkungen bleiben unbestimmt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "rationale": "Angriffe auf kritische Infrastruktur berühren staatliche Schutzfähigkeit und die demokratische Korrekturfähigkeit, weil sie Vertrauen in Versorgung und Sicherheit belasten können."
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T11:51:56.994Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T10:47:00.000Z",
+      "last_updated": "2026-09-08T11:53:02.995Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-5e9701a7be78b5e48648",
+      "case_file": null,
+      "source_published_at": "2026-09-08T10:47:00.000Z",
+      "published_at": "2026-09-08T11:53:02.995Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Festnahme mit weiteren Tatorten oder einem größeren Sabotagezusammenhang verbunden ist.",
+          "source_id": "wiwo-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Neue Polizeiangaben oder belastbare Berichte zu weiteren Zuordnungen oder Tatorten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cb74c6af9f8c8cab",
+          "announced_at": "2026-09-08T10:47:00.000Z",
+          "follow_up_date": "2026-09-15T11:53:02.995Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-polizei-nimmt-verdaechtigen-fest/100252553.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T10:47:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-aa2ebf665fdf173d",
       "title_image": {
