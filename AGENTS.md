@@ -15,7 +15,11 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 
 ## Hosting- und Kostenschutz
 
-- Das verbindliche Bruttobudget fuer Vercel betraegt hoechstens 25 EUR pro Monat. Eine Erhoehung braucht eine ausdrueckliche Entscheidung der Projektinhaberin.
+- Vercel ist keine Standardplattform, sondern ausschliesslich die letzte, technisch zwingende und unumgaengliche Ausnahme. Bestehendes Hosting oder bequemere Umsetzung allein begruenden keine Notwendigkeit.
+- Vor neuem oder erweitertem Vercel-Einsatz sind vorhandene GitHub-/Oracle-/OCI-Loesungen auf Eignung, Kosten und Kapazitaet zu pruefen. Builds und Tests laufen lokal oder in GitHub Actions; Hintergrunddienste und persistente Daten bevorzugt auf der vorhandenen Oracle-/OCI-Infrastruktur. Technische Unvermeidbarkeit muss konkret dokumentiert sein.
+- Ziel sind 0 EUR Vercel-Kosten. Der kostenlose Tarif hat bei nachgewiesener technischer Unvermeidbarkeit Vorrang, sofern Nutzungsbedingungen und Limits passen. Kein automatischer Tarifwechsel, keine Tarifumgehung und keine kostenpflichtige Erweiterung. Neue kostenpflichtige Ausnahmen brauchen ausdrueckliche Freigabe.
+- Das verbindliche Bruttobudget fuer Vercel betraegt hoechstens 25 EUR pro Monat ueber alle Projekte zusammen. Dies ist eine absolute Obergrenze, kein Zielbudget und keine pauschale Ausgabenerlaubnis. Eine Erhoehung braucht eine ausdrueckliche Entscheidung der Projektinhaberin.
+- Bestehende produktive Dienste nicht allein wegen dieser Regel abschalten oder ungeprueft migrieren. Migrationen sind backup-first, mit gepruefter Wiederherstellung, Funktionsgleichheit, Zugriffspruefung, Kapazitaetsnachweis und Rueckfallplan. Kein Tarif-Downgrade vor geprueften Abhaengigkeiten und Kontingenten. Betriebsunterlagen, Rechnungen, Zugangswerte und Nutzerdaten bleiben privat.
 - Automatische Vercel-Deployments aus Git-Pushes und Pull Requests bleiben deaktiviert. Vercel-Production wird nur manuell aus einem geprueften, commitgebundenen Release-Artefakt aktualisiert.
 - Oeffentliche grosse Dateien und unveraenderliche Publikationsartefakte gehoeren in GitHub Releases. Vercel ist weder primaerer Artefaktspeicher noch kanonischer Datenbestand.
 - Private Nutzerdaten werden nicht neu in Vercel-Speicher geschrieben. Der Zielbestand liegt in Oracle/OCI; bestehende Altsysteme werden nur backup-first und ohne stillen Datenverlust migriert.
