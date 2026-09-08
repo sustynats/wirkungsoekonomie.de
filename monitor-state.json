@@ -8,8 +8,17 @@
     "queue": {
       "firstSeen": "2026-09-07T20:50:46.225Z",
       "active": true
+    },
+    "run": {
+      "firstSeen": "2026-09-08T00:20:55.915Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "f3097948457b971562f006d4",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Letzter Lauf meldet einen Betriebsfehler oder einen ungültigen Zeitstempel.\nSeit: 2026-09-08T00:20:55.915Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-09-07"
 }
