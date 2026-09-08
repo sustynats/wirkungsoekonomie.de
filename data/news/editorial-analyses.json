@@ -1,8 +1,52 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T13:26:00.108Z",
+  "updated_at": "2026-09-08T13:41:12.275Z",
   "candidates": [
+    {
+      "story_id": "wt-84ac3f26c7762712",
+      "story_slug": "milliarden-lucke-im-klimafonds-762712",
+      "story_title": "Milliarden-Lücke im Klimafonds",
+      "editorial_analysis_score": 86,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 9,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 5
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 2,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "caff2f1749f1c3a3d67256cb866b617bea4b053b01b29473f7b524a7a3a95346",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-db0e00874c2fe321",
       "story_slug": "insolvenzen-firmeninsolvenzen-sinken-im-august-aber-mehr-betroffene-2fe321",
@@ -25926,8 +25970,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-08T13:26:00.108Z",
-      "next_attempt_at": "2026-09-08T13:41:00.108Z",
+      "last_attempt_at": "2026-09-08T13:41:12.275Z",
+      "next_attempt_at": "2026-09-08T13:56:12.275Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -25960,16 +26004,15 @@
     "wt-de413d33343f350b": {
       "fingerprint": "5216043ade26f5f0909c11d727151a9d8700c107006dbff7b6cc08b4f53fa1c5",
       "method_version": "1.0",
-      "attempts": 1,
-      "last_attempt_at": "2026-09-08T13:26:00.108Z",
-      "next_attempt_at": "2026-09-08T13:41:00.108Z",
+      "attempts": 2,
+      "last_attempt_at": "2026-09-08T13:41:12.275Z",
+      "next_attempt_at": "2026-09-08T14:11:12.275Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_POSITIVE_PATH_UNGROUNDED"
+        "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_POSITIVE_PATH_UNGROUNDED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }

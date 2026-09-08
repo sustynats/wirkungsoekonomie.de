@@ -1,8 +1,1210 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T13:22:17.950Z",
-  "updated_at": "2026-09-08T13:22:17.950Z",
+  "public_updated_at": "2026-09-08T13:36:53.016Z",
+  "updated_at": "2026-09-08T13:36:53.016Z",
   "stories": [
+    {
+      "story_id": "wt-002ef3a7bb1a5ae1",
+      "slug": "besetztes-westjordanland-die-siedlungen-kommen-die-sanktionen-aber-auch-1a5ae1",
+      "title": "Besetztes Westjordanland: Die Siedlungen kommen, die Sanktionen aber auch",
+      "first_seen": "2026-09-08T12:12:00.000Z",
+      "last_updated": "2026-09-08T13:38:38.411Z",
+      "published_at": "2026-09-08T13:38:38.411Z",
+      "updated_at": "2026-09-08T13:38:38.411Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+          "title": "Besetztes Westjordanland: Die Siedlungen kommen, die Sanktionen aber auch",
+          "summary": "Ein israelisches Gericht weist einen Eilantrag gegen das Siedlungsprojekt E1 zurück. Großbritannien will neue Sanktionen gegen Produkte aus Siedlungen verhängen. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:12:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "d08273923917eb79e5e10efe7104295622858e57eed605966fea4824780c6371",
+          "source_item_id": "3074e8767dbbfdeea5a25da390af7f3e625047767b5a88a0914e0dc8f5773b30",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:12:00.000Z",
+          "ingested_at": "2026-09-08T13:22:17.950Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-002ef3a7bb1a5ae1-v1-claim-1",
+          "story_id": "wt-002ef3a7bb1a5ae1",
+          "claim": "Ein israelisches Gericht hat einen Eilantrag gegen das Siedlungsprojekt E1 im Westjordanland zurückgewiesen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+              "excerpt_hash": "243cd90d645cf41c60d0",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+              "excerpt_hash": "c813b718e76cebd08899",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:38:38.411Z"
+        },
+        {
+          "claim_id": "wt-002ef3a7bb1a5ae1-v1-claim-2",
+          "story_id": "wt-002ef3a7bb1a5ae1",
+          "claim": "Großbritannien will Berichten zufolge Sanktionen gegen Waren aus illegalen israelischen Siedlungen im Westjordanland verhängen.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+              "excerpt_hash": "243cd90d645cf41c60d0",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+              "excerpt_hash": "e65d2a3b4d4bbaab3006",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+              "excerpt_hash": "2e24a77c6e2f5b9b6e28",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:38:38.411Z"
+        },
+        {
+          "claim_id": "wt-002ef3a7bb1a5ae1-v1-claim-3",
+          "story_id": "wt-002ef3a7bb1a5ae1",
+          "claim": "Mehrere Menschenrechtsorganisationen wollten mit dem Eilantrag erreichen, dass die Ausschreibung für mehr als 1200 Wohneinheiten des E1-Projekts ausgesetzt wird.",
+          "status": "single_source_claim",
+          "source_id": "taz-aktuell",
+          "evidence": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+              "excerpt_hash": "c813b718e76cebd08899",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            },
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+              "excerpt_hash": "75b8d73d52c694c5d451",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:38:38.411Z"
+        }
+      ],
+      "event_id": "event-138f4d09f7c64d57aa21",
+      "event_first_seen_at": "2026-09-08T12:22:00.863Z",
+      "event_detected_at": "2026-09-08T12:22:00.863Z",
+      "verification_started_at": "2026-09-08T13:38:15.754Z",
+      "publish_ready_at": "2026-09-08T13:38:38.411Z",
+      "news_status": "preliminary",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "taz-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:36:53.016Z",
+        "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "a2dd6deb1e637f49b1950c7b04ca5656be003fdf7e24e5a555c96d4997953ff5",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T13:38:38.411Z",
+        "sources": [
+          {
+            "source_id": "taz-aktuell",
+            "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+            "content_hash": "d08273923917eb79e5e10efe7104295622858e57eed605966fea4824780c6371",
+            "excerpt_hash": "7d85cf10518c48bf6e748baf4de9ef7d8180003fee829b650ecef178a1d97e64",
+            "number_locale": "de",
+            "numbers": [
+              "8724405",
+              "6211485",
+              "8.9",
+              "2026",
+              "14",
+              "12",
+              "1200",
+              "1967",
+              "500000",
+              "27",
+              "2"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Die Quelle berichtet über zwei eng verbundene Entwicklungen im besetzten Westjordanland. Zum einen hat die israelische Justiz am Dienstag einen Eilantrag gegen das umstrittene Siedlungsprojekt E1 zurückgewiesen. Mit dem Antrag wollten mehrere Menschenrechtsorganisationen erreichen, dass eine Ausschreibung für mehr als 1200 Wohneinheiten östlich von Jerusalem ausgesetzt wird. Das Projekt war laut Bericht im vergangenen Jahr genehmigt worden.\\n\\nZum anderen will Großbritannien Berichten zufolge Sanktionen gegen Waren aus illegalen israelischen Siedlungen im Westjordanland verhängen.\n\nAußenminister Ed Miliband soll die Maßnahmen im Unterhaus verkünden. Laut der Quelle begründet London den Schritt mit der Absicht, die Möglichkeit einer Zweistaatenlösung offen zu halten. Israel und der US-Botschafter kritisieren das Vorhaben.",
+      "analysis": {
+        "story_id": "wt-002ef3a7bb1a5ae1",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "initial",
+        "summary": "Ein israelisches Gericht hat den Stopp des E1-Siedlungsprojekts vorerst nicht angeordnet. Zugleich plant Großbritannien Sanktionen gegen Waren aus Siedlungen.",
+        "detail_summary": "Die Meldung verbindet eine juristische Entscheidung in Israel mit einem angekündigten handelspolitischen Schritt Großbritanniens. Zentral ist, dass das E1-Projekt trotz des Eilantrags weiterlaufen kann und dass London neue Sanktionen gegen Siedlungswaren vorbereiten will. Das ist relevant, weil es den Status eines umstrittenen Bauvorhabens und die außenwirtschaftliche Behandlung von Siedlungsprodukten zugleich berührt. Der mögliche Wirkpfad reicht von Regeln für Handel und Bauvorhaben bis zu politischen Reaktionen im Nahost-Konflikt. Mögliche Folgen sind zusätzliche Spannungen zwischen den beteiligten Staaten und neue Impulse in der Debatte um eine Zweistaatenlösung. Offen bleibt, wie weit die britischen Maßnahmen tatsächlich gehen und ob sie später umgesetzt oder noch verändert werden.",
+        "why_relevant": "Die Meldung verbindet eine Gerichtsentscheidung und angekündigte Sanktionen mit möglichen Folgen für Handel, Siedlungsbau und diplomatische Beziehungen. Das ist eine neue Zustandsinformation mit politischer und wirtschaftlicher Tragweite.",
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Mögliche Folgen für Schutz, Rechte und politische Spannungen sind sichtbar, aber die konkrete Umsetzung bleibt offen."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Aus der Quelle ergibt sich kein unmittelbarer Umwelt- oder Klimawirkpfad."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Die Entscheidung betrifft Rechtsweg, Regierungsentscheidung und internationale Reaktionen; die demokratische Korrekturfähigkeit bleibt aber offen."
+        },
+        "importance": "mittel",
+        "impact_potential": "Die Kombination aus Gerichtsbeschluss und möglicher Handelssanktion kann die Anreize für Siedlungsbau und den diplomatischen Druck im Konfliktfeld verändern.",
+        "impact_risks": [
+          "Verstärkte politische Spannungen zwischen Großbritannien, Israel und weiteren Akteuren",
+          "Mögliche Verhärtung der Fronten im Streit um Siedlungen und Zweistaatenlösung"
+        ],
+        "mechanisms": [
+          "Gerichtliche Zurückweisung eines Eilantrags hält das Bauvorhaben rechtlich zunächst offen",
+          "Angekündigte Sanktionen können Handelsströme und politische Kosten für Siedlungsprodukte verändern"
+        ],
+        "first_order": [
+          "E1-Projekt bleibt vorerst nicht per Eilantrag gestoppt",
+          "Großbritannien kündigt Sanktionen gegen Waren aus Siedlungen an"
+        ],
+        "second_order": [
+          "Politischer Druck auf die israelische Regierung steigt",
+          "Betroffene Waren könnten im Handel schlechter gestellt werden"
+        ],
+        "third_order": [
+          "Debatten über Siedlungspolitik und Zweistaatenlösung können sich verschärfen",
+          "Außenpolitische Beziehungen in der Region könnten sich weiter belasten"
+        ],
+        "systemic_relevance": "Der Fall verbindet Justiz, Siedlungspolitik und Handelspolitik in einem Konfliktfeld mit regionaler und internationaler Ausstrahlung.",
+        "transformation_potential": "Falls die britischen Sanktionen umgesetzt werden, könnte sich die Behandlung von Produkten aus Siedlungen im Außenhandel ändern.",
+        "resilience": "Die rechtliche und diplomatische Auseinandersetzung zeigt offene Korrekturmöglichkeiten, aber auch begrenzte unmittelbare Steuerbarkeit.",
+        "side_effects": [
+          "Mögliche Gegenreaktionen aus Israel",
+          "Mehr Druck auf europäische Staaten, die Siedlungspolitik einheitlicher zu bewerten"
+        ],
+        "uncertainties": [
+          "Ob die britischen Sanktionen tatsächlich beschlossen und in welchem Umfang sie umgesetzt werden",
+          "Ob das E1-Projekt trotz des juristischen Schritts tatsächlich weiter vorangetrieben wird"
+        ],
+        "evidence_level": "medium",
+        "attribution": "Die Angaben zum Gerichtsbeschluss und zu den britischen Plänen stammen aus der Berichterstattung der Quelle; die Sanktionen werden ausdrücklich als Berichten zufolge geplant dargestellt.",
+        "watch_next": [
+          "Formulierung und Umfang der britischen Maßnahmen",
+          "Mögliche Reaktionen der israelischen Regierung",
+          "Weitere rechtliche Schritte gegen das E1-Projekt"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG: 16, 17"
+        ],
+        "publication_gate": {
+          "news_value": "new_evidence",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Neuer Gerichtsschritt und angekündigte Sanktionen verändern den Status des Konfliktfelds und haben potenzielle Folgen für Handel und Diplomatie."
+        },
+        "visuals": {
+          "affected_groups": [
+            "unternehmen",
+            "staat",
+            "europa"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T13:36:53.016Z",
+        "media_trigger_fingerprint": "cb263e4cb1b4c9156fd9a928be21cec18efaf95c8e75569d21552d505239b941",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "cb263e4cb1b4c9156fd9a928be21cec18efaf95c8e75569d21552d505239b941",
+          "content_fingerprint": "bcde6396429e035ff3d83d45cd746d96fe5bd0d490d2fa5cb4e8f5825d42c0cd",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T13:38:38.411Z",
+          "content_hash": "a2dd6deb1e637f49b1950c7b04ca5656be003fdf7e24e5a555c96d4997953ff5",
+          "source_summary": "Die Quelle berichtet über zwei eng verbundene Entwicklungen im besetzten Westjordanland. Zum einen hat die israelische Justiz am Dienstag einen Eilantrag gegen das umstrittene Siedlungsprojekt E1 zurückgewiesen. Mit dem Antrag wollten mehrere Menschenrechtsorganisationen erreichen, dass eine Ausschreibung für mehr als 1200 Wohneinheiten östlich von Jerusalem ausgesetzt wird. Das Projekt war laut Bericht im vergangenen Jahr genehmigt worden.\\n\\nZum anderen will Großbritannien Berichten zufolge Sanktionen gegen Waren aus illegalen israelischen Siedlungen im Westjordanland verhängen.\n\nAußenminister Ed Miliband soll die Maßnahmen im Unterhaus verkünden. Laut der Quelle begründet London den Schritt mit der Absicht, die Möglichkeit einer Zweistaatenlösung offen zu halten. Israel und der US-Botschafter kritisieren das Vorhaben.",
+          "analysis": {
+            "story_id": "wt-002ef3a7bb1a5ae1",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "initial",
+            "summary": "Ein israelisches Gericht hat den Stopp des E1-Siedlungsprojekts vorerst nicht angeordnet. Zugleich plant Großbritannien Sanktionen gegen Waren aus Siedlungen.",
+            "detail_summary": "Die Meldung verbindet eine juristische Entscheidung in Israel mit einem angekündigten handelspolitischen Schritt Großbritanniens. Zentral ist, dass das E1-Projekt trotz des Eilantrags weiterlaufen kann und dass London neue Sanktionen gegen Siedlungswaren vorbereiten will. Das ist relevant, weil es den Status eines umstrittenen Bauvorhabens und die außenwirtschaftliche Behandlung von Siedlungsprodukten zugleich berührt. Der mögliche Wirkpfad reicht von Regeln für Handel und Bauvorhaben bis zu politischen Reaktionen im Nahost-Konflikt. Mögliche Folgen sind zusätzliche Spannungen zwischen den beteiligten Staaten und neue Impulse in der Debatte um eine Zweistaatenlösung. Offen bleibt, wie weit die britischen Maßnahmen tatsächlich gehen und ob sie später umgesetzt oder noch verändert werden.",
+            "why_relevant": "Die Meldung verbindet eine Gerichtsentscheidung und angekündigte Sanktionen mit möglichen Folgen für Handel, Siedlungsbau und diplomatische Beziehungen. Das ist eine neue Zustandsinformation mit politischer und wirtschaftlicher Tragweite.",
+            "status": "angekündigt",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Mögliche Folgen für Schutz, Rechte und politische Spannungen sind sichtbar, aber die konkrete Umsetzung bleibt offen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Aus der Quelle ergibt sich kein unmittelbarer Umwelt- oder Klimawirkpfad."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Die Entscheidung betrifft Rechtsweg, Regierungsentscheidung und internationale Reaktionen; die demokratische Korrekturfähigkeit bleibt aber offen."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Kombination aus Gerichtsbeschluss und möglicher Handelssanktion kann die Anreize für Siedlungsbau und den diplomatischen Druck im Konfliktfeld verändern.",
+            "impact_risks": [
+              "Verstärkte politische Spannungen zwischen Großbritannien, Israel und weiteren Akteuren",
+              "Mögliche Verhärtung der Fronten im Streit um Siedlungen und Zweistaatenlösung"
+            ],
+            "mechanisms": [
+              "Gerichtliche Zurückweisung eines Eilantrags hält das Bauvorhaben rechtlich zunächst offen",
+              "Angekündigte Sanktionen können Handelsströme und politische Kosten für Siedlungsprodukte verändern"
+            ],
+            "first_order": [
+              "E1-Projekt bleibt vorerst nicht per Eilantrag gestoppt",
+              "Großbritannien kündigt Sanktionen gegen Waren aus Siedlungen an"
+            ],
+            "second_order": [
+              "Politischer Druck auf die israelische Regierung steigt",
+              "Betroffene Waren könnten im Handel schlechter gestellt werden"
+            ],
+            "third_order": [
+              "Debatten über Siedlungspolitik und Zweistaatenlösung können sich verschärfen",
+              "Außenpolitische Beziehungen in der Region könnten sich weiter belasten"
+            ],
+            "systemic_relevance": "Der Fall verbindet Justiz, Siedlungspolitik und Handelspolitik in einem Konfliktfeld mit regionaler und internationaler Ausstrahlung.",
+            "transformation_potential": "Falls die britischen Sanktionen umgesetzt werden, könnte sich die Behandlung von Produkten aus Siedlungen im Außenhandel ändern.",
+            "resilience": "Die rechtliche und diplomatische Auseinandersetzung zeigt offene Korrekturmöglichkeiten, aber auch begrenzte unmittelbare Steuerbarkeit.",
+            "side_effects": [
+              "Mögliche Gegenreaktionen aus Israel",
+              "Mehr Druck auf europäische Staaten, die Siedlungspolitik einheitlicher zu bewerten"
+            ],
+            "uncertainties": [
+              "Ob die britischen Sanktionen tatsächlich beschlossen und in welchem Umfang sie umgesetzt werden",
+              "Ob das E1-Projekt trotz des juristischen Schritts tatsächlich weiter vorangetrieben wird"
+            ],
+            "evidence_level": "medium",
+            "attribution": "Die Angaben zum Gerichtsbeschluss und zu den britischen Plänen stammen aus der Berichterstattung der Quelle; die Sanktionen werden ausdrücklich als Berichten zufolge geplant dargestellt.",
+            "watch_next": [
+              "Formulierung und Umfang der britischen Maßnahmen",
+              "Mögliche Reaktionen der israelischen Regierung",
+              "Weitere rechtliche Schritte gegen das E1-Projekt"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG: 16, 17"
+            ],
+            "publication_gate": {
+              "news_value": "new_evidence",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neuer Gerichtsschritt und angekündigte Sanktionen verändern den Status des Konfliktfelds und haben potenzielle Folgen für Handel und Diplomatie."
+            },
+            "visuals": {
+              "affected_groups": [
+                "unternehmen",
+                "staat",
+                "europa"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T13:36:53.016Z",
+            "media_trigger_fingerprint": "cb263e4cb1b4c9156fd9a928be21cec18efaf95c8e75569d21552d505239b941",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "cb263e4cb1b4c9156fd9a928be21cec18efaf95c8e75569d21552d505239b941",
+              "content_fingerprint": "bcde6396429e035ff3d83d45cd746d96fe5bd0d490d2fa5cb4e8f5825d42c0cd",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-002ef3a7bb1a5ae1-v1-claim-1",
+              "story_id": "wt-002ef3a7bb1a5ae1",
+              "claim": "Ein israelisches Gericht hat einen Eilantrag gegen das Siedlungsprojekt E1 im Westjordanland zurückgewiesen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+                  "excerpt_hash": "243cd90d645cf41c60d0",
+                  "checked_at": "2026-09-08T13:38:38.411Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+                  "excerpt_hash": "c813b718e76cebd08899",
+                  "checked_at": "2026-09-08T13:38:38.411Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            },
+            {
+              "claim_id": "wt-002ef3a7bb1a5ae1-v1-claim-2",
+              "story_id": "wt-002ef3a7bb1a5ae1",
+              "claim": "Großbritannien will Berichten zufolge Sanktionen gegen Waren aus illegalen israelischen Siedlungen im Westjordanland verhängen.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+                  "excerpt_hash": "243cd90d645cf41c60d0",
+                  "checked_at": "2026-09-08T13:38:38.411Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+                  "excerpt_hash": "e65d2a3b4d4bbaab3006",
+                  "checked_at": "2026-09-08T13:38:38.411Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+                  "excerpt_hash": "2e24a77c6e2f5b9b6e28",
+                  "checked_at": "2026-09-08T13:38:38.411Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            },
+            {
+              "claim_id": "wt-002ef3a7bb1a5ae1-v1-claim-3",
+              "story_id": "wt-002ef3a7bb1a5ae1",
+              "claim": "Mehrere Menschenrechtsorganisationen wollten mit dem Eilantrag erreichen, dass die Ausschreibung für mehr als 1200 Wohneinheiten des E1-Projekts ausgesetzt wird.",
+              "status": "single_source_claim",
+              "source_id": "taz-aktuell",
+              "evidence": [
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+                  "excerpt_hash": "c813b718e76cebd08899",
+                  "checked_at": "2026-09-08T13:38:38.411Z"
+                },
+                {
+                  "source_id": "taz-aktuell",
+                  "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+                  "excerpt_hash": "75b8d73d52c694c5d451",
+                  "checked_at": "2026-09-08T13:38:38.411Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:38:38.411Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "taz-aktuell",
+              "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+              "content_hash": "d08273923917eb79e5e10efe7104295622858e57eed605966fea4824780c6371"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T13:38:38.411Z",
+            "sources": [
+              {
+                "source_id": "taz-aktuell",
+                "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
+                "content_hash": "d08273923917eb79e5e10efe7104295622858e57eed605966fea4824780c6371",
+                "excerpt_hash": "7d85cf10518c48bf6e748baf4de9ef7d8180003fee829b650ecef178a1d97e64",
+                "number_locale": "de",
+                "numbers": [
+                  "8724405",
+                  "6211485",
+                  "8.9",
+                  "2026",
+                  "14",
+                  "12",
+                  "1200",
+                  "1967",
+                  "500000",
+                  "27",
+                  "2"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T13:38:38.411Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T13:55:49.553Z"
+      }
+    },
+    {
+      "story_id": "wt-84ac3f26c7762712",
+      "slug": "milliarden-lucke-im-klimafonds-762712",
+      "title": "Milliarden-Lücke im Klimafonds",
+      "first_seen": "2026-09-08T13:18:16.000Z",
+      "last_updated": "2026-09-08T13:37:46.383Z",
+      "published_at": "2026-09-08T13:37:46.383Z",
+      "updated_at": "2026-09-08T13:37:46.383Z",
+      "topic": [
+        "Klima",
+        "Energie",
+        "Soziales"
+      ],
+      "sources": [
+        {
+          "source_id": "klimareporter-news",
+          "publisher": "Klimareporter°",
+          "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+          "title": "Milliarden-Lücke im Klimafonds",
+          "summary": "Verbände und Fachleute dringen auf Korrekturen beim Klima- und Transformationsfonds und beklagen zudem eine soziale Schieflage. Investitionen, die Energiekosten dauerhaft senken können, dürften nicht beschnitten werden.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T13:18:16.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Klima",
+          "content_hash": "8ae8b66b1382a2cb40465498a0fcbd136a6da11d2d0db5aadacb1957b51f529f",
+          "source_item_id": "e444b33ca85e3cf68c2548cc15b270815eb79e4b617dadca60c6e8d3363827e2",
+          "publisher_id": "klimareporter",
+          "publisher_kind": "specialist_journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T13:18:16.000Z",
+          "ingested_at": "2026-09-08T13:36:53.016Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:klimareporter",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-84ac3f26c7762712-v1-claim-1",
+          "story_id": "wt-84ac3f26c7762712",
+          "claim": "Im Klima- und Transformationsfonds zeichnet sich für 2027 nach Darstellung von Fachleuten und Verbänden eine Lücke von 7,8 Milliarden Euro ab.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "6da37d7d849e1f019310",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "e1fff9bc9aa0089e7575",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "b6239da11e766f71567d",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:37:46.383Z"
+        },
+        {
+          "claim_id": "wt-84ac3f26c7762712-v1-claim-2",
+          "story_id": "wt-84ac3f26c7762712",
+          "claim": "Ein Bündnis aus 13 Umwelt-, Sozial-, Jugend-, Gewerkschafts- und Entwicklungsorganisationen fordert vor den Haushaltsberatungen Korrekturen am Fonds und lehnt eine Umschichtung von 2,7 Milliarden Euro aus dem CO2-Emissionshandel in den Bundeshaushalt ab.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "fe689390ceb08a096532",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "591955d163e8807152b5",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "b12dfae0f2464c61c1f3",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:37:46.383Z"
+        },
+        {
+          "claim_id": "wt-84ac3f26c7762712-v1-claim-3",
+          "story_id": "wt-84ac3f26c7762712",
+          "claim": "Nach der Analyse steigt der soziale Anteil der Fondsprogramme zwar auf 5,9 Milliarden Euro, bleibt aber mit rund 15 Prozent nahezu unverändert; zugleich sollen Programme ohne besonderen sozialen Fokus auf mehr als 70 Prozent der Ausgaben wachsen.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "4e54ebf2ecbe9f6d27d2",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "4510631c0581e78ad36c",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "855962f4b201f528dd16",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:37:46.383Z"
+        },
+        {
+          "claim_id": "wt-84ac3f26c7762712-v1-claim-4",
+          "story_id": "wt-84ac3f26c7762712",
+          "claim": "Die Kritik richtet sich auch gegen geplante Kürzungen bei Wärmepumpen, energetischen Gebäudesanierungen und der BEG ab 2028 sowie gegen eine globale Minderausgabe, bei der noch offen bleibt, wo später gekürzt wird.",
+          "status": "single_source_claim",
+          "source_id": "klimareporter-news",
+          "evidence": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "97c2fd6741cea85f2432",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "8d418767d7f4f11ed9ab",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "excerpt_hash": "1fa6333ca4310a6ac7b1",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T13:37:46.383Z"
+        }
+      ],
+      "event_id": "event-75770a032fc7482a1af1",
+      "event_first_seen_at": "2026-09-08T13:36:53.016Z",
+      "event_detected_at": "2026-09-08T13:36:53.016Z",
+      "verification_started_at": "2026-09-08T13:37:23.093Z",
+      "publish_ready_at": "2026-09-08T13:37:46.383Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-08T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "klimareporter-news"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T13:36:53.016Z",
+        "fingerprint": "c59a0a55d490614add5884e934619707fa8248010ff7b6737e729d894867d4f9",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "959778f31977ed3fd59589bf0575ecc22d971cb8b0fe43c43a9931d17516d91e",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T13:37:46.383Z",
+        "sources": [
+          {
+            "source_id": "klimareporter-news",
+            "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+            "content_hash": "8ae8b66b1382a2cb40465498a0fcbd136a6da11d2d0db5aadacb1957b51f529f",
+            "excerpt_hash": "878037c54b65891c67e9801a6d96576ad49c5925da027fd4939a38e35f0c88ac",
+            "number_locale": "de",
+            "numbers": [
+              "8.09",
+              "2026",
+              "2027",
+              "40",
+              "13",
+              "2.7",
+              "2",
+              "7.8",
+              "5.3",
+              "5.9",
+              "15",
+              "2028",
+              "2.5",
+              "70",
+              "80",
+              "50",
+              "45",
+              "78",
+              "57",
+              "150"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Der Bericht schildert Kritik von Verbänden und Fachleuten am Klima- und Transformationsfonds für den Haushalt 2027. Im Mittelpunkt steht die Einschätzung, dass der Fonds seinen ursprünglichen Zweck, den Umbau zur klimaneutralen Wirtschaft zu finanzieren, zunehmend verfehle.\n\nGenannt werden eine Lücke von 7,8 Milliarden Euro zwischen Einnahmen und Programmausgaben, die geplante Umschichtung von 2,7 Milliarden Euro aus dem CO2-Emissionshandel in den Bundeshaushalt und eine globale Minderausgabe. Ein Bündnis aus 13 Organisationen fordert Korrekturen und will Kürzungen bei Wärmepumpen, Gebäudesanierungen und sozialer Infrastruktur vermeiden.",
+      "analysis": {
+        "story_id": "wt-84ac3f26c7762712",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Es geht um eine umstrittene Verschiebung von Mitteln im Klimafonds für 2027. Offen bleibt, wo genau später gekürzt wird und wie stark die Folgen ausfallen.",
+        "detail_summary": "Der Bericht beschreibt eine politische und finanzielle Neuordnung im Klima- und Transformationsfonds für 2027. Im Kern stehen eine genannte Lücke von 7,8 Milliarden Euro, die Umschichtung von 2,7 Milliarden Euro aus dem CO2-Emissionshandel und die Gefahr von Kürzungen bei Investitionen in Wärme, Sanierung und soziale Infrastruktur. Materiell relevant ist das, weil dadurch Förderströme für Haushalte, öffentliche Einrichtungen und Unternehmen verschoben werden können. Der Wirkpfad verläuft über veränderte Mittelvergabe, weniger Investitionen in Effizienz und womöglich höhere laufende Kosten statt dauerhafter Entlastung. Ob daraus tatsächlich konkrete Kürzungen folgen, bleibt offen, weil der spätere Zuschnitt der Einsparungen noch nicht benannt ist. Die Evidenzlage stützt die Erstmeldung als berichtete und durch ein Thinktank-Papier gestützte Entwicklung, nicht als abschließend geklärtes Ergebnis.",
+        "why_relevant": "Die Meldung betrifft die Verteilung mehrerer Milliarden Euro und mögliche Änderungen bei Klimaschutz-, Sanierungs- und Entlastungsprogrammen. Das kann Investitionen, Kosten und die Ausrichtung des Fonds spürbar verschieben.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Mögliche Kürzungen bei Heizungstausch, Sanierung und sozialer Infrastruktur können Haushalte und soziale Einrichtungen direkt betreffen; zugleich können Entlastungen bei Energiekosten verschoben werden."
+        },
+        "planet": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "rationale": "Wenn Mittel von Investitionen in Effizienz, Sanierung und klimafreundliche Produktion abgezogen werden, schwächt das den Pfad zu Emissionsminderung und Resilienz. Der Bericht nennt aber noch keine eingetretene Wirkung."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Der Streit betrifft die Priorisierung öffentlicher Mittel und die parlamentarischen Haushaltsberatungen. Demokratische Korrekturfähigkeit bleibt offen, weil die endgültige Mittelverteilung noch nicht feststeht."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Umschichtung von Milliarden im KTF kann Förderprioritäten, Investitionsanreize und die Finanzierung sozialer und klimabezogener Programme verschieben.",
+        "impact_risks": [
+          "Kürzungen bei langfristig entlastenden Investitionen",
+          "Verlagerung zu laufenden Kosten statt Strukturumbau",
+          "schwächere Finanzierung sozial ausgerichteter Klimaprogramme"
+        ],
+        "mechanisms": [
+          "Haushaltsumschichtung verändert verfügbare Mittel",
+          "globale Minderausgabe verschiebt spätere Kürzungen in offene Bereiche",
+          "mehr Mittel für Entlastung kann Investitionen verdrängen"
+        ],
+        "first_order": [
+          "Weniger oder andere Fördermittel im KTF",
+          "höhere Unsicherheit für betroffene Programme",
+          "politischer Konflikt über Fondszweck"
+        ],
+        "second_order": [
+          "geringere Investitionen in Sanierung und Effizienz",
+          "veränderte Kostenverteilung zwischen Haushalten, Staat und Industrie",
+          "mögliche Verschiebung von Klimaschutz zu kurzfristiger Entlastung"
+        ],
+        "third_order": [
+          "schwächerer Transformationspfad",
+          "längere Abhängigkeit von fossilen Energieträgern möglich",
+          "veränderte Prioritätensetzung im öffentlichen Investitionsmix"
+        ],
+        "systemic_relevance": "Der Fonds ist ein zentrales Finanzierungsinstrument für Klimapolitik; eine größere Umschichtung kann mehrere Förderbereiche zugleich betreffen und Rückkopplungen auf Preise, Investitionen und soziale Abfederung auslösen.",
+        "transformation_potential": "Bei Erhalt der Investitionslinien könnte der Fonds Strukturumbau und Energieeinsparung stützen; bei Kürzungen sinkt dieses Potenzial.",
+        "resilience": "Resilienz steigt nur, wenn Mittel in dauerhafte Entlastung, Sanierung und Anpassung fließen; die Quelle nennt zugleich ein Risiko durch Verschiebung in laufende Kostenzuschüsse.",
+        "side_effects": [
+          "mögliche Benachteiligung noch nicht fest gebundener Programme",
+          "höhere Konkurrenz zwischen Klimaschutz, Industrieentlastung und Sozialprogrammen",
+          "offene Verteilung späterer Kürzungen"
+        ],
+        "uncertainties": [
+          "Der konkrete spätere Kürzungsort bleibt offen",
+          "die endgültige Haushaltsentscheidung fehlt noch",
+          "die behauptete Lücke beruht hier auf einer Thinktank-Analyse"
+        ],
+        "evidence_level": "mittel",
+        "attribution": "Quelle: Klimareporter°, Bericht von Joachim Wille; eigene Aussagen von Verbänden und Fachleuten sowie Verweis auf eine Analyse von Zukunft Klimasozial, nicht unabhängig verifiziert.",
+        "watch_next": [
+          "Welche Programme im Bundestag tatsächlich gekürzt werden",
+          "ob die 7,8-Milliarden-Lücke im weiteren Verfahren bestätigt wird",
+          "ob die BEG und Sanierungsförderung ab 2028 tatsächlich sinken"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 7, 10, 11, 13"
+        ],
+        "publication_gate": {
+          "news_value": "material_update",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Die Meldung berichtet über eine neue, finanziell große Haushaltsverschiebung mit möglicher Breitenwirkung auf Klimaschutz-, Sozial- und Investitionsprogramme. Sie ist nicht bloß Meinung, sondern eine konkrete Entwicklung mit offenem Folgepfad."
+        },
+        "visuals": {
+          "affected_groups": [
+            "haushalte",
+            "unternehmen",
+            "kommunen",
+            "staat"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T13:36:53.016Z",
+        "media_trigger_fingerprint": "a73d2df43626a41da5209efcd790fc327c28766dd38c39444a53d282bdee2d25",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 3,
+          "reasons": [
+            "threat_or_fear_frame"
+          ],
+          "matched_terms": [
+            "gefahr"
+          ],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "a73d2df43626a41da5209efcd790fc327c28766dd38c39444a53d282bdee2d25",
+          "content_fingerprint": "7b6ca2aa12f11f7e85bdd4bc5c4e1ca49e414baaa0673e2fbb02b405c514512e",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T13:37:46.383Z",
+          "content_hash": "959778f31977ed3fd59589bf0575ecc22d971cb8b0fe43c43a9931d17516d91e",
+          "source_summary": "Der Bericht schildert Kritik von Verbänden und Fachleuten am Klima- und Transformationsfonds für den Haushalt 2027. Im Mittelpunkt steht die Einschätzung, dass der Fonds seinen ursprünglichen Zweck, den Umbau zur klimaneutralen Wirtschaft zu finanzieren, zunehmend verfehle.\n\nGenannt werden eine Lücke von 7,8 Milliarden Euro zwischen Einnahmen und Programmausgaben, die geplante Umschichtung von 2,7 Milliarden Euro aus dem CO2-Emissionshandel in den Bundeshaushalt und eine globale Minderausgabe. Ein Bündnis aus 13 Organisationen fordert Korrekturen und will Kürzungen bei Wärmepumpen, Gebäudesanierungen und sozialer Infrastruktur vermeiden.",
+          "analysis": {
+            "story_id": "wt-84ac3f26c7762712",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Es geht um eine umstrittene Verschiebung von Mitteln im Klimafonds für 2027. Offen bleibt, wo genau später gekürzt wird und wie stark die Folgen ausfallen.",
+            "detail_summary": "Der Bericht beschreibt eine politische und finanzielle Neuordnung im Klima- und Transformationsfonds für 2027. Im Kern stehen eine genannte Lücke von 7,8 Milliarden Euro, die Umschichtung von 2,7 Milliarden Euro aus dem CO2-Emissionshandel und die Gefahr von Kürzungen bei Investitionen in Wärme, Sanierung und soziale Infrastruktur. Materiell relevant ist das, weil dadurch Förderströme für Haushalte, öffentliche Einrichtungen und Unternehmen verschoben werden können. Der Wirkpfad verläuft über veränderte Mittelvergabe, weniger Investitionen in Effizienz und womöglich höhere laufende Kosten statt dauerhafter Entlastung. Ob daraus tatsächlich konkrete Kürzungen folgen, bleibt offen, weil der spätere Zuschnitt der Einsparungen noch nicht benannt ist. Die Evidenzlage stützt die Erstmeldung als berichtete und durch ein Thinktank-Papier gestützte Entwicklung, nicht als abschließend geklärtes Ergebnis.",
+            "why_relevant": "Die Meldung betrifft die Verteilung mehrerer Milliarden Euro und mögliche Änderungen bei Klimaschutz-, Sanierungs- und Entlastungsprogrammen. Das kann Investitionen, Kosten und die Ausrichtung des Fonds spürbar verschieben.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Mögliche Kürzungen bei Heizungstausch, Sanierung und sozialer Infrastruktur können Haushalte und soziale Einrichtungen direkt betreffen; zugleich können Entlastungen bei Energiekosten verschoben werden."
+            },
+            "planet": {
+              "relevance": "hoch",
+              "tendency": "risiko",
+              "rationale": "Wenn Mittel von Investitionen in Effizienz, Sanierung und klimafreundliche Produktion abgezogen werden, schwächt das den Pfad zu Emissionsminderung und Resilienz. Der Bericht nennt aber noch keine eingetretene Wirkung."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Der Streit betrifft die Priorisierung öffentlicher Mittel und die parlamentarischen Haushaltsberatungen. Demokratische Korrekturfähigkeit bleibt offen, weil die endgültige Mittelverteilung noch nicht feststeht."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Umschichtung von Milliarden im KTF kann Förderprioritäten, Investitionsanreize und die Finanzierung sozialer und klimabezogener Programme verschieben.",
+            "impact_risks": [
+              "Kürzungen bei langfristig entlastenden Investitionen",
+              "Verlagerung zu laufenden Kosten statt Strukturumbau",
+              "schwächere Finanzierung sozial ausgerichteter Klimaprogramme"
+            ],
+            "mechanisms": [
+              "Haushaltsumschichtung verändert verfügbare Mittel",
+              "globale Minderausgabe verschiebt spätere Kürzungen in offene Bereiche",
+              "mehr Mittel für Entlastung kann Investitionen verdrängen"
+            ],
+            "first_order": [
+              "Weniger oder andere Fördermittel im KTF",
+              "höhere Unsicherheit für betroffene Programme",
+              "politischer Konflikt über Fondszweck"
+            ],
+            "second_order": [
+              "geringere Investitionen in Sanierung und Effizienz",
+              "veränderte Kostenverteilung zwischen Haushalten, Staat und Industrie",
+              "mögliche Verschiebung von Klimaschutz zu kurzfristiger Entlastung"
+            ],
+            "third_order": [
+              "schwächerer Transformationspfad",
+              "längere Abhängigkeit von fossilen Energieträgern möglich",
+              "veränderte Prioritätensetzung im öffentlichen Investitionsmix"
+            ],
+            "systemic_relevance": "Der Fonds ist ein zentrales Finanzierungsinstrument für Klimapolitik; eine größere Umschichtung kann mehrere Förderbereiche zugleich betreffen und Rückkopplungen auf Preise, Investitionen und soziale Abfederung auslösen.",
+            "transformation_potential": "Bei Erhalt der Investitionslinien könnte der Fonds Strukturumbau und Energieeinsparung stützen; bei Kürzungen sinkt dieses Potenzial.",
+            "resilience": "Resilienz steigt nur, wenn Mittel in dauerhafte Entlastung, Sanierung und Anpassung fließen; die Quelle nennt zugleich ein Risiko durch Verschiebung in laufende Kostenzuschüsse.",
+            "side_effects": [
+              "mögliche Benachteiligung noch nicht fest gebundener Programme",
+              "höhere Konkurrenz zwischen Klimaschutz, Industrieentlastung und Sozialprogrammen",
+              "offene Verteilung späterer Kürzungen"
+            ],
+            "uncertainties": [
+              "Der konkrete spätere Kürzungsort bleibt offen",
+              "die endgültige Haushaltsentscheidung fehlt noch",
+              "die behauptete Lücke beruht hier auf einer Thinktank-Analyse"
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Quelle: Klimareporter°, Bericht von Joachim Wille; eigene Aussagen von Verbänden und Fachleuten sowie Verweis auf eine Analyse von Zukunft Klimasozial, nicht unabhängig verifiziert.",
+            "watch_next": [
+              "Welche Programme im Bundestag tatsächlich gekürzt werden",
+              "ob die 7,8-Milliarden-Lücke im weiteren Verfahren bestätigt wird",
+              "ob die BEG und Sanierungsförderung ab 2028 tatsächlich sinken"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 7, 10, 11, 13"
+            ],
+            "publication_gate": {
+              "news_value": "material_update",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Die Meldung berichtet über eine neue, finanziell große Haushaltsverschiebung mit möglicher Breitenwirkung auf Klimaschutz-, Sozial- und Investitionsprogramme. Sie ist nicht bloß Meinung, sondern eine konkrete Entwicklung mit offenem Folgepfad."
+            },
+            "visuals": {
+              "affected_groups": [
+                "haushalte",
+                "unternehmen",
+                "kommunen",
+                "staat"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T13:36:53.016Z",
+            "media_trigger_fingerprint": "a73d2df43626a41da5209efcd790fc327c28766dd38c39444a53d282bdee2d25",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 3,
+              "reasons": [
+                "threat_or_fear_frame"
+              ],
+              "matched_terms": [
+                "gefahr"
+              ],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "a73d2df43626a41da5209efcd790fc327c28766dd38c39444a53d282bdee2d25",
+              "content_fingerprint": "7b6ca2aa12f11f7e85bdd4bc5c4e1ca49e414baaa0673e2fbb02b405c514512e",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-84ac3f26c7762712-v1-claim-1",
+              "story_id": "wt-84ac3f26c7762712",
+              "claim": "Im Klima- und Transformationsfonds zeichnet sich für 2027 nach Darstellung von Fachleuten und Verbänden eine Lücke von 7,8 Milliarden Euro ab.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "6da37d7d849e1f019310",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "e1fff9bc9aa0089e7575",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "b6239da11e766f71567d",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "claim_id": "wt-84ac3f26c7762712-v1-claim-2",
+              "story_id": "wt-84ac3f26c7762712",
+              "claim": "Ein Bündnis aus 13 Umwelt-, Sozial-, Jugend-, Gewerkschafts- und Entwicklungsorganisationen fordert vor den Haushaltsberatungen Korrekturen am Fonds und lehnt eine Umschichtung von 2,7 Milliarden Euro aus dem CO2-Emissionshandel in den Bundeshaushalt ab.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "fe689390ceb08a096532",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "591955d163e8807152b5",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "b12dfae0f2464c61c1f3",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "claim_id": "wt-84ac3f26c7762712-v1-claim-3",
+              "story_id": "wt-84ac3f26c7762712",
+              "claim": "Nach der Analyse steigt der soziale Anteil der Fondsprogramme zwar auf 5,9 Milliarden Euro, bleibt aber mit rund 15 Prozent nahezu unverändert; zugleich sollen Programme ohne besonderen sozialen Fokus auf mehr als 70 Prozent der Ausgaben wachsen.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "4e54ebf2ecbe9f6d27d2",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "4510631c0581e78ad36c",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "855962f4b201f528dd16",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            },
+            {
+              "claim_id": "wt-84ac3f26c7762712-v1-claim-4",
+              "story_id": "wt-84ac3f26c7762712",
+              "claim": "Die Kritik richtet sich auch gegen geplante Kürzungen bei Wärmepumpen, energetischen Gebäudesanierungen und der BEG ab 2028 sowie gegen eine globale Minderausgabe, bei der noch offen bleibt, wo später gekürzt wird.",
+              "status": "single_source_claim",
+              "source_id": "klimareporter-news",
+              "evidence": [
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "97c2fd6741cea85f2432",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "8d418767d7f4f11ed9ab",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                },
+                {
+                  "source_id": "klimareporter-news",
+                  "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                  "excerpt_hash": "1fa6333ca4310a6ac7b1",
+                  "checked_at": "2026-09-08T13:37:46.383Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T13:37:46.383Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "klimareporter-news",
+              "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+              "content_hash": "8ae8b66b1382a2cb40465498a0fcbd136a6da11d2d0db5aadacb1957b51f529f"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T13:37:46.383Z",
+            "sources": [
+              {
+                "source_id": "klimareporter-news",
+                "url": "https://klimareporter.de/finanzen-wirtschaft/milliarden-luecke-im-klimafonds",
+                "content_hash": "8ae8b66b1382a2cb40465498a0fcbd136a6da11d2d0db5aadacb1957b51f529f",
+                "excerpt_hash": "878037c54b65891c67e9801a6d96576ad49c5925da027fd4939a38e35f0c88ac",
+                "number_locale": "de",
+                "numbers": [
+                  "8.09",
+                  "2026",
+                  "2027",
+                  "40",
+                  "13",
+                  "2.7",
+                  "2",
+                  "7.8",
+                  "5.3",
+                  "5.9",
+                  "15",
+                  "2028",
+                  "2.5",
+                  "70",
+                  "80",
+                  "50",
+                  "45",
+                  "78",
+                  "57",
+                  "150"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T13:37:46.383Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T13:55:43.383Z"
+      }
+    },
     {
       "story_id": "wt-d736cdd717d4f421",
       "slug": "as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict-d4f421",
@@ -679,6 +1881,14 @@
     },
     {
       "story_id": "wt-b84af952fb761238",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "3bb326069bd581eea38816eb7cedef424cc37ad3bc2358a42ebe0f1fc6d984d7",
+        "first_failed_at": "2026-09-08T13:36:53.016Z",
+        "failed_at": "2026-09-08T13:36:53.016Z",
+        "retry_after": "2026-09-08T13:51:53.016Z",
+        "retry_count": 1
+      },
       "slug": "sturzflut-in-nepal-berge-waren-vor-gletscherabbruch-aussergewohnlich-warm-761238",
       "title": "Sturzflut in Nepal: Berge waren vor Gletscherabbruch außergewöhnlich warm",
       "first_seen": "2026-09-08T13:06:33.000Z",
@@ -742,20 +1952,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "b05800c449bd8a512a5a6f6ee762cd7476012ccaba182bf8cf990e46bfcb6689",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
+      "quality_errors": [
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
+      ],
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T13:51:53.016Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T13:22:17.950Z",
       "event_detected_at": "2026-09-08T13:22:17.950Z",
       "event_id": "event-eb2f1fe8aaf73d379b23",
@@ -793,20 +2005,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 15.749166666666667,
+        "source_age_minutes": 30.3336,
         "detection_delay_minutes": 15.749166666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.584433333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
         "issue_codes": [],
         "warning_codes": []
@@ -965,6 +2177,14 @@
     },
     {
       "story_id": "wt-0830efcfbd8319be",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "b769b204eb518e2a40a304abb44748cc5d0963764e214518c35f3fc864dc951d",
+        "first_failed_at": "2026-09-08T13:36:53.016Z",
+        "failed_at": "2026-09-08T13:36:53.016Z",
+        "retry_after": "2026-09-08T13:51:53.016Z",
+        "retry_count": 1
+      },
       "slug": "aktionstag-knapp-480-schulen-trainieren-krisenverhalten-am-warntag-8319be",
       "title": "Aktionstag: Knapp 480 Schulen trainieren Krisenverhalten am Warntag",
       "first_seen": "2026-09-08T13:01:26.000Z",
@@ -1026,20 +2246,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "5cc66e45ac9ad1fbde6b047a56c626c49d20df8a8b942630463cb05fe5c281d2",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T13:51:53.016Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T13:22:17.950Z",
       "event_detected_at": "2026-09-08T13:22:17.950Z",
       "event_id": "event-593368060a8d32dff295",
@@ -1072,33 +2292,45 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 20.865833333333335,
+        "source_age_minutes": 35.450266666666664,
         "detection_delay_minutes": 20.865833333333335,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 14.584433333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "c807aa77bc304910fde27cdceec5d69ac82f00f77f1b0e9da052f8d831e2a0a0",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:36:53.016Z",
+      "rejection": {
+        "at": "2026-09-08T13:36:53.016Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
       "story_id": "wt-fcf6e1632cd04ab6",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "d1bd24ce0e75e526cdf8b711b68fe5dc9701e4bf7166c715b8f513cbedb8bb35",
-        "first_failed_at": "2026-09-08T11:51:56.994Z",
-        "failed_at": "2026-09-08T11:51:56.994Z",
-        "retry_after": "2026-09-08T12:06:56.994Z",
+        "fingerprint": "e319d3f80d7de5a958d5bd9ee1c3e5e7d75515625af7d2c8dc6371ec306475f9",
+        "first_failed_at": "2026-09-08T13:36:53.016Z",
+        "failed_at": "2026-09-08T13:36:53.016Z",
+        "retry_after": "2026-09-08T13:51:53.016Z",
         "retry_count": 1
       },
       "slug": "ukraine-krieg-nach-us-gesprachen-kiew-meldet-neue-russische-angriffe-d04ab6",
@@ -1195,7 +2427,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         },
         {
           "claim_id": "wt-fcf6e1632cd04ab6-claim-02",
@@ -1215,20 +2447,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "a33f3c8d9b301d5048a14211125bec8973e7d9f649fc5fc2f172a390a30e733d",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T13:51:53.016Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-f6c9467feff2212f044b",
@@ -1261,23 +2493,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 23.8325,
+        "source_age_minutes": 38.41693333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 194.86371666666668,
+        "queue_age_minutes": 209.44815,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "8770cc73b4212234c3c1cd7ae62e61b1733876e59395091b7b50de157282b088",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:36:53.016Z",
+      "rejection": {
+        "at": "2026-09-08T13:36:53.016Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -2092,6 +3336,14 @@
     },
     {
       "story_id": "wt-b3330ab6a013565c",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e7e575a52cfccc9a3f7a38869860f0749ceae8958e8fdecc6ffee4107148d565",
+        "first_failed_at": "2026-09-08T13:36:53.016Z",
+        "failed_at": "2026-09-08T13:36:53.016Z",
+        "retry_after": "2026-09-08T13:51:53.016Z",
+        "retry_count": 1
+      },
       "slug": "bildungsvergleich-stenke-nennt-pisa-ergebnisse-nicht-zufriedenstellend-13565c",
       "title": "Bildungsvergleich: Stenke nennt Pisa-Ergebnisse „nicht zufriedenstellend“",
       "first_seen": "2026-09-08T12:39:04.000Z",
@@ -2153,20 +3405,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "c9fd51acd8d314bb3072da80745d865b8df6eb69930fb16f95d5e7d70b238877",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T13:51:53.016Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T12:51:54.078Z",
       "event_detected_at": "2026-09-08T12:51:54.078Z",
       "event_id": "event-46cfb4b4d4e57dd5fd44",
@@ -2201,23 +3453,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 43.2325,
+        "source_age_minutes": 57.81693333333333,
         "detection_delay_minutes": 12.834633333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 30.397866666666665,
+        "queue_age_minutes": 44.9823,
         "target_publication_minutes": 120,
-        "news_freshness_score": 91,
+        "news_freshness_score": 88,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "1cdba53d1b35dcd778671cee8ecca334fa28761df68f03b2208e9668e394997c",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:36:53.016Z",
+      "rejection": {
+        "at": "2026-09-08T13:36:53.016Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -2852,7 +4116,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:55:22.039Z"
+        "retry_after": "2026-09-08T13:55:58.962Z"
       }
     },
     {
@@ -4844,134 +6108,6 @@
       }
     },
     {
-      "story_id": "wt-002ef3a7bb1a5ae1",
-      "slug": "besetztes-westjordanland-die-siedlungen-kommen-die-sanktionen-aber-auch-1a5ae1",
-      "title": "Besetztes Westjordanland: Die Siedlungen kommen, die Sanktionen aber auch",
-      "first_seen": "2026-09-08T12:12:00.000Z",
-      "last_updated": "2026-09-08T12:12:00.000Z",
-      "topic": [
-        "Geopolitik"
-      ],
-      "sources": [
-        {
-          "source_id": "taz-aktuell",
-          "publisher": "taz",
-          "url": "https://taz.de/Besetztes-Westjordanland/!6211485",
-          "title": "Besetztes Westjordanland: Die Siedlungen kommen, die Sanktionen aber auch",
-          "summary": "Ein israelisches Gericht weist einen Eilantrag gegen das Siedlungsprojekt E1 zurück. Großbritannien will neue Sanktionen gegen Produkte aus Siedlungen verhängen. mehr...",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T12:12:00.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "d08273923917eb79e5e10efe7104295622858e57eed605966fea4824780c6371",
-          "source_item_id": "3074e8767dbbfdeea5a25da390af7f3e625047767b5a88a0914e0dc8f5773b30",
-          "publisher_id": "taz",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T12:12:00.000Z",
-          "ingested_at": "2026-09-08T13:22:17.950Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-002ef3a7bb1a5ae1-claim-01",
-          "story_id": "wt-002ef3a7bb1a5ae1",
-          "claim": "Besetztes Westjordanland: Die Siedlungen kommen, die Sanktionen aber auch: Ein israelisches Gericht weist einen Eilantrag gegen das Siedlungsprojekt E1 zurück. Großbritannien will neue Sanktionen gegen Produkte aus Siedlungen verhängen. mehr...",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "taz-aktuell",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:taz",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
-        }
-      ],
-      "content_hash": "a2dd6deb1e637f49b1950c7b04ca5656be003fdf7e24e5a555c96d4997953ff5",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
-      "event_first_seen_at": "2026-09-08T12:22:00.863Z",
-      "event_detected_at": "2026-09-08T12:22:00.863Z",
-      "event_id": "event-138f4d09f7c64d57aa21",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik"
-        ],
-        "dimensions": [],
-        "status": "angekündigt",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 70.29916666666666,
-        "detection_delay_minutes": 10.014383333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 60.28478333333333,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 85,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
-        "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
       "story_id": "wt-b2c5f374ae30cf66",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -5681,6 +6817,14 @@
     },
     {
       "story_id": "wt-71089199a6f64802",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "64affba37c9b1548ef9c1a643e75902517418d04089f44c83dc0d214e65533e6",
+        "first_failed_at": "2026-09-08T13:36:53.016Z",
+        "failed_at": "2026-09-08T13:36:53.016Z",
+        "retry_after": "2026-09-08T13:51:53.016Z",
+        "retry_count": 1
+      },
       "slug": "vor-der-landtagswahl-wirtschaftsfakten-zu-mv-f64802",
       "title": "Vor der Landtagswahl: Wirtschaftsfakten zu MV",
       "first_seen": "2026-09-08T11:56:57.000Z",
@@ -5744,20 +6888,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "a3b0375c65de5bb7a50e922830a361014127503c38b6d1d2d4bef53afcf436b3",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T13:51:53.016Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-644b31466d3283669859",
@@ -5794,23 +6938,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 85.34916666666666,
+        "source_age_minutes": 99.9336,
         "detection_delay_minutes": 9.82905,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 75.52011666666667,
+        "queue_age_minutes": 90.10455,
         "target_publication_minutes": 120,
-        "news_freshness_score": 82,
+        "news_freshness_score": 79,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "cf2cc9049d053b254a3b332d318e237bce7b4f2d3c38b9e57ec7e9b72b3971cb",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:36:53.016Z",
+      "rejection": {
+        "at": "2026-09-08T13:36:53.016Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
       }
     },
     {
@@ -6894,6 +8050,14 @@
     },
     {
       "story_id": "wt-1f886f3fdec5b82a",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "fd368116654ec757c2d10e77ad35649fe0537e2cc4f68217557e3b0ed75d554a",
+        "first_failed_at": "2026-09-08T13:36:53.016Z",
+        "failed_at": "2026-09-08T13:36:53.016Z",
+        "retry_after": "2026-09-08T13:51:53.016Z",
+        "retry_count": 1
+      },
       "slug": "vorstoss-geplant-mv-im-bundesrat-fur-mehr-kinderschutz-c5b82a",
       "title": "Vorstoß geplant: MV im Bundesrat für mehr Kinderschutz",
       "first_seen": "2026-09-08T11:34:07.000Z",
@@ -6956,20 +8120,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "fc48136262064742b7c95efb045ac35e2b0d0ab1f581d6abfb85f296e907c9c9",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T13:51:53.016Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-079e18fede24e8c4eb7b",
@@ -7005,23 +8169,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 108.1825,
+        "source_age_minutes": 122.76693333333333,
         "detection_delay_minutes": 32.66238333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 75.52011666666667,
+        "queue_age_minutes": 90.10455,
         "target_publication_minutes": 120,
-        "news_freshness_score": 77,
+        "news_freshness_score": 74,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "08286f2bd1d57a51fb58e950f40036cfd1385d5ad2fd5083ecb3e6be78ee53b8",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:36:53.016Z",
+      "rejection": {
+        "at": "2026-09-08T13:36:53.016Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -7087,7 +8263,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "aef282258b2a810e788b2ed1d12c86a91d0bd5d37ec9477fda5b8ed295b459af",
@@ -7100,7 +8276,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T12:36:46.426Z",
       "event_detected_at": "2026-09-08T12:36:46.426Z",
       "event_id": "event-112dbf80aa5019468e8a",
@@ -7135,20 +8311,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 111.29916666666666,
+        "source_age_minutes": 125.8836,
         "detection_delay_minutes": 65.77376666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.5254,
+        "queue_age_minutes": 60.109833333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 77,
+        "news_freshness_score": 74,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "f510255bd65bbc370dcaf7fdc107ef907e7942411c3f01a23bd8f301d02eaeed",
         "issue_codes": [],
         "warning_codes": []
@@ -9578,7 +10754,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "6a9068d1ebec6f01b3bc6b49547420e25734d61e781e50aa4ca0c5f43aa48445",
           "issue_codes": [],
           "warning_codes": []
@@ -12694,9 +13870,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "d32dddf7903dc2853d4b4673a0a46f951280a24abc99c3a3b378d3ec1d301f72",
         "first_failed_at": "2026-09-08T11:22:01.370Z",
-        "failed_at": "2026-09-08T12:36:46.426Z",
-        "retry_after": "2026-09-08T13:36:46.426Z",
-        "retry_count": 3
+        "failed_at": "2026-09-08T13:36:53.016Z",
+        "retry_after": "2026-09-08T16:36:53.016Z",
+        "retry_count": 4
       },
       "slug": "furacker-steuerliche-entlastung-fur-vereine-dringend-geboten-bayern-fordert-verdoppelung-da225e",
       "title": "FÜRACKER: STEUERLICHE ENTLASTUNG FÜR VEREINE DRINGEND GEBOTEN - Bayern fordert: Verdoppelung Freibeträge auf 10.000 Euro // Verdoppelung Besteuerungsgrenze auf 100.000 Euro // „Einfachsteuererklärung“ für kleinere Vereine",
@@ -12735,7 +13911,7 @@
           "research_lane": "blindspot",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T10:48:29.000Z",
-          "ingested_at": "2026-09-08T12:36:46.426Z",
+          "ingested_at": "2026-09-08T13:36:53.016Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -12764,24 +13940,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:36:46.426Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "d61b57c4eb7c8477990a5d3745f7376dc0742f06f194f41f866c538f4fdb913f",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH",
-        "MEDIA_SELF_FRAME_UNSAFE:title",
-        "MEDIA_SELF_FRAME_UNSAFE:source_summary"
+        "MEDIA_IMPACT_REQUIRED",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 3,
-      "quality_retry_after": "2026-09-08T13:36:46.426Z",
+      "quality_retry_count": 4,
+      "quality_retry_after": "2026-09-08T16:36:53.016Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T12:36:46.426Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T11:22:01.370Z",
       "event_detected_at": "2026-09-08T11:22:01.370Z",
       "event_id": "event-11e4bcf6bd775b283b63",
@@ -12824,20 +13999,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 108.29043333333334,
+        "source_age_minutes": 168.40026666666665,
         "detection_delay_minutes": 33.5395,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 74.75093333333334,
+        "queue_age_minutes": 134.86076666666668,
         "target_publication_minutes": 120,
-        "news_freshness_score": 77,
-        "freshness_warning": null
+        "news_freshness_score": 65,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T12:36:46.426Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "a850ac3e70afe5741af18b89a9d62c65269a2962b43ad4d06eda7521b6b9cc5f",
         "issue_codes": [],
         "warning_codes": []
@@ -14924,7 +16099,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:39:49.938Z"
+        "retry_after": "2026-09-08T13:55:54.364Z"
       }
     },
     {
@@ -19327,7 +20502,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T12:55:28.462Z"
+        "retry_after": "2026-09-08T13:56:03.643Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -21765,10 +22940,10 @@
       "story_id": "wt-55396a7301aa0e36",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "71004d126d8c4a1ca91d1914361b1ce041ab08af2e346495b9cc56409ef879d4",
-        "first_failed_at": "2026-09-08T10:20:48.403Z",
-        "failed_at": "2026-09-08T10:20:48.403Z",
-        "retry_after": "2026-09-08T10:35:48.403Z",
+        "fingerprint": "37a9cc9e13e49c182de2d1ba1593847117ad0c3bc825d6cd036b8231e6ade307",
+        "first_failed_at": "2026-09-08T13:36:53.016Z",
+        "failed_at": "2026-09-08T13:36:53.016Z",
+        "retry_after": "2026-09-08T13:51:53.016Z",
         "retry_count": 1
       },
       "slug": "nahostkonflikt-berichte-london-sanktioniert-siedlungen-im-westjordanland-aa0e36",
@@ -21868,7 +23043,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         },
         {
           "claim_id": "wt-55396a7301aa0e36-claim-02",
@@ -21888,20 +23063,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "ee7ebaf66a285f52b1ad3e59336287168b9e951839ef90de7848c8707d193190",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T13:51:53.016Z",
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T08:06:49.615Z",
       "event_detected_at": "2026-09-08T08:06:49.615Z",
       "event_id": "event-986b65b56d8c9beac934",
@@ -21940,23 +23115,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 207.51583333333335,
+        "source_age_minutes": 222.10026666666667,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 315.47225,
+        "queue_age_minutes": 330.05668333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 57,
+        "news_freshness_score": 54,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "f2a56cd9684c86d8635eb23d82951cef52fc88b2b8f6eeaa44a031de40e5b598",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T13:36:53.016Z",
+      "rejection": {
+        "at": "2026-09-08T13:36:53.016Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -22022,7 +23209,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -22037,7 +23224,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -22078,7 +23265,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 194.86371666666668,
+        "queue_age_minutes": 209.44815,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -22087,7 +23274,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -22157,7 +23344,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -22172,7 +23359,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -22212,7 +23399,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 194.86371666666668,
+        "queue_age_minutes": 209.44815,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -22221,7 +23408,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -23505,7 +24692,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "c917155b70dbe7284983b0439457a9db8938bd74ef0ba8dd72b026278008bec8",
           "issue_codes": [],
           "warning_codes": []
@@ -24354,7 +25541,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -25060,7 +26247,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "251f1f36442733af1fc0a3ae06e080c4023188f3788bd2bcd1be509de3cf1cd7",
           "issue_codes": [],
           "warning_codes": []
@@ -27193,7 +28380,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -30963,7 +32150,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "3ac2928fcf4e6367c12b921d3a87e40b48a2df37825e0bdff728b62fe8bdbd19",
           "issue_codes": [],
           "warning_codes": []
@@ -34724,7 +35911,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "48a32e333af7f93403203e733f76abc8452525436530c090f1f972d9990ad3e5",
           "issue_codes": [],
           "warning_codes": []
@@ -37456,7 +38643,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -40429,7 +41616,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -41179,7 +42366,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -42342,7 +43529,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
           "issue_codes": [],
           "warning_codes": []
@@ -42767,9 +43954,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T19:22:17.950Z",
+        "expires_at": "2026-09-08T19:36:53.016Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -46235,7 +47422,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -47492,7 +48679,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
           "issue_codes": [],
           "warning_codes": []
@@ -48053,7 +49240,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -49562,7 +50749,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -50768,7 +51955,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -51915,7 +53102,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -52435,7 +53622,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -53192,7 +54379,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -55649,7 +56836,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -57147,7 +58334,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
           "issue_codes": [],
           "warning_codes": []
@@ -58222,7 +59409,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
           "issue_codes": [],
           "warning_codes": []
@@ -59752,9 +60939,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "2380710877a7757030d3208ab5cfb8616d6c95347f433e1bd0454802d9e448c0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T19:22:17.950Z",
+        "expires_at": "2026-09-08T19:36:53.016Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -64430,7 +65617,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -68967,7 +70154,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -75072,7 +76259,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -83636,7 +84823,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -86371,7 +87558,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -88731,7 +89918,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -89472,7 +90659,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -101577,7 +102764,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -101597,7 +102784,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T13:22:17.950Z"
+          "checked_at": "2026-09-08T13:36:53.016Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -101613,7 +102800,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T13:22:17.950Z",
+      "updated_at": "2026-09-08T13:36:53.016Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -101653,7 +102840,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1695.4097833333333,
+        "queue_age_minutes": 1709.9942166666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -101662,7 +102849,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T13:22:17.950Z",
+        "checked_at": "2026-09-08T13:36:53.016Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -120929,7 +122116,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
           "issue_codes": [],
           "warning_codes": []
@@ -121924,7 +123111,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -122625,7 +123812,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -123400,7 +124587,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -124063,7 +125250,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -128798,7 +129985,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "c09d5fe3be1ff67cf51cf77c7614ecd5e7caaffac7563c83f9cd69df714abd6a",
           "issue_codes": [],
           "warning_codes": []
@@ -132169,7 +133356,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -158056,7 +159243,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -202410,7 +203597,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T13:22:17.950Z",
+          "checked_at": "2026-09-08T13:36:53.016Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
