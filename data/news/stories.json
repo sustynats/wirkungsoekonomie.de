@@ -1,17 +1,318 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T21:36:51.819Z",
-  "updated_at": "2026-09-08T23:07:02.158Z",
+  "updated_at": "2026-09-08T23:24:22.430Z",
   "stories": [
+    {
+      "story_id": "wt-74fc3eeaa714d5fb",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "a8db93c2ba361858d75518442f7bd21dba01294365046667bd9393f206423115",
+        "first_failed_at": "2026-09-08T23:24:22.430Z",
+        "failed_at": "2026-09-08T23:24:22.430Z",
+        "retry_after": "2026-09-08T23:39:22.430Z",
+        "retry_count": 1
+      },
+      "slug": "middle-east-live-us-destroys-five-iranian-oil-tankers-as-iran-threatens-kuwait-and-bahra-14d5fb",
+      "title": "Middle East live: US destroys five Iranian oil tankers as Iran threatens Kuwait and Bahrain",
+      "first_seen": "2026-09-08T23:07:34.000Z",
+      "last_updated": "2026-09-08T23:07:34.000Z",
+      "topic": [
+        "Geopolitik"
+      ],
+      "sources": [
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260908-middle-east-live-us-destroys-five-iranian-oil-tankers-as-iran-threatens-kuwait-and-bahrain",
+          "title": "Middle East live: US destroys five Iranian oil tankers as Iran threatens Kuwait and Bahrain",
+          "summary": "US forces destroyed five Iranian oil carriers on Tuesday after Tehran launched ballistic missiles at an American warship twice in recent days. Iran also launched strikes on US targets in Jordan, and threatened attacks on oil tankers off Kuwait and Bahrain. Follow our liveblog for the latest updates.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T23:07:34.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "15f954c55bfbb08c20b8f3e6f367da4930cd37171161937f73c375e1c1f62ba6",
+          "source_item_id": "06fb925ebc761ea8b3a749cfb83e465988f509f9344dd75a38f61654a2d00a57",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T23:07:34.000Z",
+          "ingested_at": "2026-09-08T23:24:22.430Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-74fc3eeaa714d5fb-claim-01",
+          "story_id": "wt-74fc3eeaa714d5fb",
+          "claim": "Middle East live: US destroys five Iranian oil tankers as Iran threatens Kuwait and Bahrain: US forces destroyed five Iranian oil carriers on Tuesday after Tehran launched ballistic missiles at an American warship twice in recent days. Iran also launched strikes on US targets in Jordan, and threatened attacks on oil tankers off Kuwait and Bahrain. Follow our liveblog for the latest updates.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T23:24:22.430Z"
+        }
+      ],
+      "content_hash": "1eae7334aee07fa45333f861ec41626161d28e496cb7cb165ff051a5d2fd9502",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T23:39:22.430Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T23:24:22.430Z",
+      "event_first_seen_at": "2026-09-08T23:24:22.430Z",
+      "event_detected_at": "2026-09-08T23:24:22.430Z",
+      "event_id": "event-7f7b89efd945b0b338e4",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 16.807166666666667,
+        "detection_delay_minutes": 16.807166666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T23:24:22.430Z",
+        "fingerprint": "c6cfc8d3d47df3b3283d2b6e13e9d302906ecf6b6fc39c9cf5e0b4e7dc1e14a6",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T23:24:22.430Z",
+      "rejection": {
+        "at": "2026-09-08T23:24:22.430Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-d76364ffffb296ea",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "f216a62f2fb4ef499d0191bcdaf9210583a3f1d15b1c5a7a6728c52202c96d4a",
+        "first_failed_at": "2026-09-08T23:24:22.430Z",
+        "failed_at": "2026-09-08T23:24:22.430Z",
+        "retry_after": "2026-09-08T23:39:22.430Z",
+        "retry_count": 1
+      },
+      "slug": "reformen-rehlinger-will-eigenanteil-fur-pflegeheim-platz-deckeln-b296ea",
+      "title": "Reformen: Rehlinger will Eigenanteil für Pflegeheim-Platz deckeln",
+      "first_seen": "2026-09-08T23:00:04.000Z",
+      "last_updated": "2026-09-08T23:00:04.000Z",
+      "topic": [
+        "Soziales",
+        "Gesundheit",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/rheinland-pfalz-saarland/reformen--rehlinger-will-eigenanteil-fuer-pflegeheim-platz-deckeln-38224196.html",
+          "title": "Reformen: Rehlinger will Eigenanteil für Pflegeheim-Platz deckeln",
+          "summary": "Das sei ein Schritt, mit dem man offensiv für ein Reform-Gesamtpaket werben könne, sagt die saarländische Ministerpräsidentin und nennt auch einen konkreten Betrag.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T23:00:04.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "366a8e64366f67a5bf1fb1ad970541b3e35d3fdd9ca257a9922c5f4e16179c59",
+          "source_item_id": "9ff8f869c1f2e83d4920ba97ecdd2c330cfad988ecf7d301b0d1f1d318e8aa36",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T23:00:04.000Z",
+          "ingested_at": "2026-09-08T23:24:22.430Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-d76364ffffb296ea-claim-01",
+          "story_id": "wt-d76364ffffb296ea",
+          "claim": "Reformen: Rehlinger will Eigenanteil für Pflegeheim-Platz deckeln: Das sei ein Schritt, mit dem man offensiv für ein Reform-Gesamtpaket werben könne, sagt die saarländische Ministerpräsidentin und nennt auch einen konkreten Betrag.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T23:24:22.430Z"
+        }
+      ],
+      "content_hash": "7c6f6760231c2e99b9b6e9e1c6e18cfead8c6e3cd68f8b50ae97cb0709943362",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T23:39:22.430Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T23:24:22.430Z",
+      "event_first_seen_at": "2026-09-08T23:24:22.430Z",
+      "event_detected_at": "2026-09-08T23:24:22.430Z",
+      "event_id": "event-bc0f3ba0087c6d5043bd",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Gesundheit",
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 24.307166666666667,
+        "detection_delay_minutes": 24.307166666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T23:24:22.430Z",
+        "fingerprint": "b7a477e1fb90cbded5fc98b2c14f6aff778235a16146b58a996bc443049559d9",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T23:24:22.430Z",
+      "rejection": {
+        "at": "2026-09-08T23:24:22.430Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
         "fingerprint": "dbad54db3defd0e7f90906427033ca6903dce4e97d0dca73c7082f2454b69d7c",
         "first_failed_at": "2026-09-08T22:52:15.096Z",
-        "failed_at": "2026-09-08T22:52:15.096Z",
-        "retry_after": "2026-09-08T23:07:15.096Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T23:24:22.430Z",
+        "retry_after": "2026-09-08T23:54:22.430Z",
+        "retry_count": 2
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
       "title": "Polizei nimmt mutmaßlichen Strom-Saboteur fest",
@@ -1185,7 +1486,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "ingested_at": "2026-09-08T23:24:22.430Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1229,6 +1530,39 @@
           },
           "collection_source_id": "swr-aktuell",
           "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-102.html",
+          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:43:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9d1bc10432933339d28b554485ac950820913c50b1904997ae22c723b260ecd9",
+          "source_item_id": "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:43:08.000Z",
+          "ingested_at": "2026-09-08T23:24:22.430Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
@@ -1250,7 +1584,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:07:02.158Z"
+          "checked_at": "2026-09-08T23:24:22.430Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -1271,20 +1605,42 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:07:02.158Z"
+          "checked_at": "2026-09-08T23:24:22.430Z"
+        },
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-03",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T23:24:22.430Z"
         }
       ],
-      "content_hash": "c8ce372d04f82ecc364b86c165a7874db7627cd12928239fff886f2afaba9f54",
+      "content_hash": "6f33d5c08ece2591a797ad70ffe06a0b0e4cb33b87bbfeedc2384c762f4b8da5",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T23:07:15.096Z",
+      "quality_errors": [
+        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+      ],
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T23:54:22.430Z",
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T22:52:15.096Z",
+      "updated_at": "2026-09-08T23:24:22.430Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -1317,20 +1673,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 9.118266666666667,
+        "source_age_minutes": 41.2405,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 675.0359,
+        "queue_age_minutes": 707.1581333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 91,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T22:52:15.096Z",
+        "checked_at": "2026-09-08T23:24:22.430Z",
         "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
         "issue_codes": [],
         "warning_codes": []
@@ -20404,7 +20760,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:40:33.038Z"
+        "retry_after": "2026-09-08T23:41:04.829Z"
       },
       "deepening_checks": 1
     },
@@ -21748,7 +22104,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:40:28.323Z"
+        "retry_after": "2026-09-08T23:41:00.594Z"
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -48193,7 +48549,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:40:23.559Z"
+        "retry_after": "2026-09-08T23:40:56.015Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -50652,7 +51008,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "ingested_at": "2026-09-08T23:24:22.430Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -50681,7 +51037,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:07:02.158Z"
+          "checked_at": "2026-09-08T23:24:22.430Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -50696,7 +51052,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T23:07:02.158Z",
+      "updated_at": "2026-09-08T23:24:22.430Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -50737,7 +51093,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 779.6005166666666,
+        "queue_age_minutes": 796.9383833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -50746,7 +51102,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T23:07:02.158Z",
+        "checked_at": "2026-09-08T23:24:22.430Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -50787,7 +51143,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "ingested_at": "2026-09-08T23:24:22.430Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -50816,7 +51172,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:07:02.158Z"
+          "checked_at": "2026-09-08T23:24:22.430Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -50831,7 +51187,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T23:07:02.158Z",
+      "updated_at": "2026-09-08T23:24:22.430Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -50871,7 +51227,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 779.6005166666666,
+        "queue_age_minutes": 796.9383833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -50880,7 +51236,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T23:07:02.158Z",
+        "checked_at": "2026-09-08T23:24:22.430Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -70479,9 +70835,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T23:07:02.158Z",
+        "checked_at": "2026-09-08T23:24:22.430Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T05:07:02.158Z",
+        "expires_at": "2026-09-09T05:24:22.430Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -85897,9 +86253,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-08T23:07:02.158Z",
+        "checked_at": "2026-09-08T23:24:22.430Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T05:07:02.158Z",
+        "expires_at": "2026-09-09T05:24:22.430Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -126366,7 +126722,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "ingested_at": "2026-09-08T23:24:22.430Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -126427,7 +126783,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:07:02.158Z"
+          "checked_at": "2026-09-08T23:24:22.430Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -126447,7 +126803,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T23:07:02.158Z"
+          "checked_at": "2026-09-08T23:24:22.430Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -126463,7 +126819,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T23:07:02.158Z",
+      "updated_at": "2026-09-08T23:24:22.430Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -126503,7 +126859,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2280.146583333333,
+        "queue_age_minutes": 2297.48445,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -126512,7 +126868,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T23:07:02.158Z",
+        "checked_at": "2026-09-08T23:24:22.430Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -182195,7 +182551,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T23:07:02.158Z",
+          "checked_at": "2026-09-08T23:24:22.430Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -226589,7 +226945,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T23:07:02.158Z",
+          "checked_at": "2026-09-08T23:24:22.430Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
