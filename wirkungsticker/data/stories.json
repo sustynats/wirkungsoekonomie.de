@@ -1,7 +1,415 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-08T15:41:47.562Z",
+  "updated_at": "2026-09-08T16:56:05.979Z",
   "stories": [
+    {
+      "story_id": "wt-d2fe68062d8518b6",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "welt-bericht-details-zur-geplanten-steuer-reform-bei-kryptowerten-wie-dem-bitcoin-werden-8518b6",
+      "title": "\"Welt\"-Bericht - Details zur geplanten Steuer-Reform bei Kryptowerten wie dem Bitcoin werden bekannt",
+      "source_summary": "Im Bundesfinanzministerium werden die Pläne für eine Reform der Besteuerung von Gewinnen beim Handel mit Kryptowährungen nach einem Bericht der Zeitung „Die Welt“ konkreter. Der Bericht verweist auf einen Referentenentwurf und beschreibt eine mögliche Änderung bei Bitcoin, Ether und anderen Kryptowerten.\n\nDemnach sollen Gewinne künftig unabhängig von der Haltedauer steuerpflichtig sein, allerdings nur für Kryptowährungen, die nach dem 31. Dezember 2026 angeschafft werden. Für bereits zuvor erworbene Kryptowerte sollen die bisherigen Regeln gelten. Bislang sind Gewinne nach zwölf Monaten in der Regel steuerfrei; künftig soll dann die Abgeltungsteuer greifen.",
+      "summary": "Die Steuerregeln für Kryptogewinne könnten sich ändern. Laut einem Bericht wird im Finanzministerium an einem Entwurf gearbeitet, der die bisherige Einjahresfrist für neue Käufe abschaffen würde.",
+      "detail_summary": "Der Bericht beschreibt eine mögliche Reform der Besteuerung von Kryptogewinnen: Für neu gekaufte Werte nach dem 31. Dezember 2026 sollen Gewinne unabhängig von der Haltedauer steuerpflichtig werden. Das ist für Anleger, Handel und die Attraktivität von Krypto-Investments materiell relevant, weil sich der steuerliche Anreizrahmen ändern würde. Der Wirkpfad läuft über veränderte Nettorenditen und damit über Kauf-, Halte- und Verkaufsentscheidungen. Die mögliche Folge ist eine Verschiebung von Kapitalflüssen und eine andere Marktattraktivität für bestimmte Kryptowerte. Die Evidenz bleibt vorläufig, weil bislang nur ein journalistischer Bericht mit Verweis auf einen Referentenentwurf vorliegt und offizielle Bestätigung oder weitere unabhängige Belege fehlen.",
+      "why_relevant": "Die geplante Änderung würde für neue Krypto-Käufe die Steuerlogik ändern und damit Anreize, Haltedauer und Kapitalflüsse beeinflussen. Betroffen wären private und professionelle Anleger sowie der Kryptomarkt.",
+      "topic": [
+        "Finanzen",
+        "Wirtschaft",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Höhere Steuerpflicht kann Renditen senken und das Halten oder Kaufen unattraktiver machen. Zugleich schafft klarere Besteuerung für neue Käufe mehr Rechtssicherheit.",
+          "positive_path": {
+            "mechanism": "Klare, einheitliche Steuerregeln können Planbarkeit für Anleger erhöhen und spätere Rechtsunsicherheit verringern.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die Abschaffung der Haltedauer-Freistellung für neue Käufe kann Nettoerträge senken und Investitionsanreize reduzieren.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein belastbarer direkter Umweltpfad. Mögliche Klima- oder Energieeffekte von Kryptoaktivitäten werden nicht belegt.",
+          "positive_path": {
+            "mechanism": "Nicht belegt; aus der Meldung kein direkter Wirkpfad ableitbar.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Nicht belegt; aus der Meldung kein direkter Wirkpfad ableitbar.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung betrifft Steuerrecht, nicht direkt demokratische Verfahren oder Beteiligungsrechte. Ein institutioneller Wirkpfad ist nicht belegt.",
+          "positive_path": {
+            "mechanism": "Nicht belegt; aus der Meldung kein direkter demokratischer Wirkpfad ableitbar.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Nicht belegt; aus der Meldung kein direkter demokratischer Wirkpfad ableitbar.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T16:51:42.054Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T16:05:11.000Z",
+      "last_updated": "2026-09-08T16:53:28.483Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-e2a700c984102b85c7b8",
+      "case_file": null,
+      "source_published_at": "2026-09-08T16:12:07.000Z",
+      "published_at": "2026-09-08T16:53:28.483Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob das Finanzministerium einen Referentenentwurf oder eine offizielle Mitteilung veröffentlicht.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "offizielle Veröffentlichung oder Aktenstand der Reform",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-475ca02c5150564d",
+          "announced_at": "2026-09-08T16:12:07.000Z",
+          "follow_up_date": "2026-09-15T16:53:28.483Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/details-zur-geplanten-steuer-reform-bei-kryptowerten-wie-dem-bitcoin-werden-bekannt-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T16:12:07.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-6222b0ef3b2ae801",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "newsblog-zur-landtagswahl-in-sachsen-anhalt-wachsender-zuspruch-fur-bsw-vorschlag-zu-una-2ae801",
+      "title": "Newsblog zur Landtagswahl in Sachsen-Anhalt - Wachsender Zuspruch für BSW-Vorschlag zu unabhängigem Ministerpräsidenten",
+      "source_summary": "Nach der Landtagswahl in Sachsen-Anhalt gewinnt der Vorschlag des BSW für einen überparteilichen oder unabhängigen Ministerpräsidenten an Zustimmung. Laut Deutschlandfunk haben sich nach der SPD auch die Grünen offen für diese Idee gezeigt; die Grünen-Spitzenkandidatin nennt sie ungewöhnlich, will aber nicht, dass ihre Partei daran scheitert.\n\nZugleich beschreibt der Bericht als Ausgangslage eine unsichere Regierungsbildung: Die AfD ist stärkste Kraft, braucht aber für eine Mehrheit einen Partner, während Schulze zunächst geschäftsführend im Amt bleibt. Offen bleibt, ob aus den Sondierungen eine tragfähige Mehrheit oder ein konkreter Kandidat entsteht.",
+      "summary": "Der Bericht zeigt neue Bewegung nach der Wahl: Ein BSW-Vorschlag bekommt mehr offene Zustimmung. Das kann die Mehrheitsbildung im Landtag beeinflussen, der genaue Wirkpfad bleibt aber offen.",
+      "detail_summary": "Im Zentrum steht ein politischer Vorstoß nach der Landtagswahl in Sachsen-Anhalt: Ein unabhängiger oder überparteilicher Ministerpräsident soll eine Blockade in der Regierungsbildung lösen. Neu ist laut Bericht, dass sich nach der SPD auch die Grünen dafür offen zeigen. Materiell relevant ist das, weil es die Mehrheitsoptionen im Landtag und damit die Regierungsbildung verändern kann. Ob daraus tatsächlich eine tragfähige Wahl oder nur ein Sondierungssignal wird, ist offen. Die Evidenz stützt bislang nur den berichteten Zuspruch aus einer journalistischen Quelle; eine unabhängige Bestätigung des Verhandlungsstands liegt hier nicht vor.",
+      "why_relevant": "Die Meldung betrifft die Regierungsbildung in Sachsen-Anhalt und damit eine konkrete Änderung möglicher Mehrheiten, Zuständigkeiten und Kursentscheidungen im Landtag.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Mehr offene Unterstützung kann eine Blockade der Regierungsbildung lösen, kann aber ebenso neue Konflikte oder eine nur symbolische Debatte auslösen.",
+          "positive_path": {
+            "mechanism": "Mehr Zustimmung zu einem unabhängigen Ministerpräsidenten erhöht die Chance auf eine tragfähige Mehrheit und damit auf handlungsfähige Landesregierung.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Der Vorschlag kann Mehrheiten spalten, die Bildung einer Regierung verzögern oder eine instabile wechselnde Mehrheiten-Logik verstärken.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung fehlt ein belastbarer Sachverhalt zu Umwelt-, Klima- oder Ressourceneffekten.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Meldung betrifft demokratische Mehrheitsbildung, Koalitionsoptionen und die Wahl eines Regierungschefs; das kann Korrekturfähigkeit stärken oder durch instabile Konstruktionen schwächen.",
+          "positive_path": {
+            "mechanism": "Ein überparteilicher Kandidat könnte eine blockierte Mehrheitsbildung auflösen und damit die institutionelle Handlungsfähigkeit sichern.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wechselnde Mehrheiten mit Einbindung der AfD können die demokratische Abgrenzung verkomplizieren und Konflikte über Legitimität verstärken.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "kommunen",
+          "europa"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Der Bericht bündelt eine aktuelle, politisch sensible Mehrheitsfrage und enthält zugeschriebene Aussagen zu AfD, SPD, Grünen und BSW.",
+        "factual_core": "Nach der Wahl wird ein überparteilicher Ministerpräsident als Lösung für die Regierungsbildung diskutiert; die Grünen zeigen sich offen dafür.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der Bericht beschreibt offene Zustimmung der Grünen nach der SPD."
+          ],
+          "actor_claims": [
+            "Die Grünen wollen nach Darstellung des Berichts nicht an einer Lösung scheitern.",
+            "Das BSW plädiert für einen unabhängigen Ministerpräsidenten."
+          ],
+          "open": [
+            "Ob daraus ein konkreter Kandidat oder eine Mehrheit entsteht"
+          ]
+        },
+        "attribution": {
+          "frame_source": "Deutschlandfunk",
+          "speaker": "Grüne, SPD, BSW",
+          "original_term": "überparteilicher Ministerpräsident",
+          "usage_type": "paraphrase",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "überparteilicher Ministerpräsident",
+          "origin_in_story": "Deutschlandfunk",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "überparteilicher Ministerpräsident",
+          "frame_type": [],
+          "problem_definition": "Die Regierungsbildung gilt als blockiert oder unsicher.",
+          "implied_cause": "Uneindeutige Mehrheitsverhältnisse nach der Wahl.",
+          "implied_responsibility": "Die Parteien sollen eine handlungsfähige Lösung finden.",
+          "implied_threat": "Ohne Einigung droht eine Pattsituation oder instabile Regierung.",
+          "implied_solution_space": "Ein unabhängiger, parteiübergreifend tragfähiger Ministerpräsident.",
+          "material_omissions": [
+            "Keine unabhängige Prüfung, ob eine Mehrheit realistisch ist",
+            "Keine Darstellung möglicher Gegenkandidaturen"
+          ]
+        },
+        "political_context": {
+          "relevant": true,
+          "classification": "Landesregierung und Mehrheitsbildung nach Wahl",
+          "evidence_based": true,
+          "evidence": [
+            {
+              "source": "dlf-nachrichten",
+              "claim_supported": "Mehrheitsbildung und Regierungsbildung in Sachsen-Anhalt"
+            }
+          ],
+          "uncertainty": "Offen bleibt, ob und wie sich die offene Zustimmung in ein Verfahren übersetzt."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Berichte über Blockaden und ungewöhnliche Mehrheitsmodelle können die Debatte über Regierungsalternativen verstärken.",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "Mittel, weil die Rolle der AfD mitverhandelt wird.",
+          "trust_effect_potential": "Kann Vertrauen stärken, wenn eine tragfähige Lösung entsteht; kann es schwächen, wenn nur taktisch geredet wird.",
+          "discourse_effect_potential": "Der Begriff kann die Idee eines parteiübergreifenden Auswegs aus der Blockade verankern."
+        },
+        "impact_path": {
+          "first_order": "Öffentliche Wahrnehmung einer offenen Mehrheitsoption",
+          "second_order": "Parteien justieren Verhandlungspositionen",
+          "third_order": "Mögliche Verschiebung der Regierungsbildungsnormen"
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "Es gibt einen berichteten Zuspruch für einen unabhängigen Ministerpräsidenten.",
+          "what_is_inferred": "Der Vorstoß kann die Mehrheitsbildung erleichtern oder die Debatte über Alternativmodelle prägen.",
+          "what_is_open": "Nur eine journalistische Quelle im Datensatz Kein Nachweis einer بالفعل erzielten Mehrheit oder Wahl",
+          "facts": [
+            "Es gibt einen berichteten Zuspruch für einen unabhängigen Ministerpräsidenten."
+          ],
+          "observations": [
+            "Die Grünen werden als offen beschrieben; die SPD hatte bereits zuvor nichts grundsätzlich ausgeschlossen."
+          ],
+          "inferences": [
+            "Der Vorstoß kann die Mehrheitsbildung erleichtern oder die Debatte über Alternativmodelle prägen."
+          ],
+          "impact_potentials": [
+            "Mehr Flexibilität in Verhandlungen"
+          ],
+          "impact_risks": [
+            "Normalisierung instabiler oder indirekter Mehrheiten"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle im Datensatz",
+            "Kein Nachweis einer بالفعل erzielten Mehrheit oder Wahl"
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Der Bericht ist relevant, weil er nicht nur eine Meinung, sondern eine mögliche Verschiebung in der Mehrheitsbildung beschreibt. Konkret geht es um die Frage, ob nach der Wahl ein unabhängiger Ministerpräsident helfen kann, eine Blockade zu lösen. Zugeschrieben werden vor allem Offenheit bei Grünen und SPD sowie der Vorstoß des BSW. Das ist noch kein Beweis für eine neue Regierung, aber ein Hinweis auf veränderte Verhandlungen. Sicher ist bislang nur der berichtete Zuspruch; offen bleibt, ob daraus eine Mehrheit, ein Kandidat oder eine Wahl entsteht.",
+        "editorial_assessment": "Der Bericht ist relevant, weil er nicht nur eine Meinung, sondern eine mögliche Verschiebung in der Mehrheitsbildung beschreibt. Konkret geht es um die Frage, ob nach der Wahl ein unabhängiger Ministerpräsident helfen kann, eine Blockade zu lösen. Zugeschrieben werden vor allem Offenheit bei Grünen und SPD sowie der Vorstoß des BSW. Das ist noch kein Beweis für eine neue Regierung, aber ein Hinweis auf veränderte Verhandlungen. Sicher ist bislang nur der berichtete Zuspruch; offen bleibt, ob daraus eine Mehrheit, ein Kandidat oder eine Wahl entsteht.",
+        "fact_first_alternative": "Sachlich: Nach der Wahl wächst laut Bericht die Offenheit für einen unabhängigen Ministerpräsidenten. Wissensstatus: journalistisch berichtet, nicht unabhängig bestätigt. Attribution: Deutschlandfunk verweist auf SPD, Grüne und BSW. Frame: Lösungsrahmen für eine blockierte Regierungsbildung.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 1,
+          "rewrite_required": false,
+          "recommended_title": "Sachsen-Anhalt: Mehr Offenheit für unabhängigen Ministerpräsidenten",
+          "recommended_summary": "Nach der Wahl zeigt sich laut Bericht auch bei den Grünen Offenheit für einen unabhängigen Ministerpräsidenten. Das könnte die Regierungsbildung beeinflussen, ist aber noch keine Mehrheit.",
+          "recommended_meta_description": "Nach der Landtagswahl in Sachsen-Anhalt wächst laut Bericht der Zuspruch für einen unabhängigen Ministerpräsidenten. Offen bleibt, ob daraus eine tragfähige Mehrheit wird."
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-08T16:56:05.979Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T14:22:00.000Z",
+      "last_updated": "2026-09-08T16:52:26.670Z",
+      "version": 2,
+      "news_status": "developing",
+      "event_id": "event-554c6def31137222cd39",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:24:30.000Z",
+      "published_at": "2026-09-08T16:52:26.670Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob es in Sachsen-Anhalt eine formelle Verständigung auf einen unabhängigen Ministerpräsidenten gibt.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "öffentliche Zustimmung oder Absage der Fraktionen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-73a4dbd790587c6c",
+          "announced_at": "2026-09-08T15:24:30.000Z",
+          "follow_up_date": "2026-09-15T16:52:26.670Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob und wann ein neuer Ministerpräsident im Landtag gewählt wird.",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Termin der Wahl im Landtag",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c6efb33b6d07166f",
+          "announced_at": "2026-09-08T15:24:30.000Z",
+          "follow_up_date": "2026-09-15T16:52:26.670Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/wachsender-zuspruch-fuer-bsw-vorschlag-zu-unabhaengigem-ministerpraesidenten-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:24:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-42e4a2ecd40874e2",
       "title_image": {
