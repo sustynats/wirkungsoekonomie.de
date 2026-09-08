@@ -1,8 +1,1250 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-08T04:52:08.677Z",
-  "updated_at": "2026-09-08T05:07:06.629Z",
+  "public_updated_at": "2026-09-08T05:22:10.164Z",
+  "updated_at": "2026-09-08T05:22:10.164Z",
   "stories": [
+    {
+      "story_id": "wt-3705bea838c05b93",
+      "slug": "wirtschaft-kanadische-gegenzolle-auf-us-importe-treten-in-kraft-c05b93",
+      "title": "Wirtschaft - Kanadische Gegenzölle auf US-Importe treten in Kraft",
+      "first_seen": "2026-09-07T22:41:30.000Z",
+      "last_updated": "2026-09-08T05:25:07.405Z",
+      "published_at": "2026-09-07T23:03:29.075Z",
+      "updated_at": "2026-09-08T05:25:07.405Z",
+      "topic": [
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+          "title": "Wirtschaft - Kanadische Gegenzölle auf US-Importe treten in Kraft",
+          "summary": "Im Zollstreit mit den USA treten heute die kanadischen Gegenzölle in Kraft.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T05:19:17.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766",
+          "source_item_id": "1262320604683e582e3d5275da0c3f497a043bb3b198706289a72ee7dd1ba111",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T05:19:17.000Z",
+          "ingested_at": "2026-09-08T05:22:10.164Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3705bea838c05b93-v2-claim-1",
+          "story_id": "wt-3705bea838c05b93",
+          "claim": "Kanada hat heute Gegenzölle gegen US-Importe in Kraft gesetzt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+              "excerpt_hash": "aa9ead0f5a14f38a8c50",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T05:25:07.405Z"
+        },
+        {
+          "claim_id": "wt-3705bea838c05b93-v2-claim-2",
+          "story_id": "wt-3705bea838c05b93",
+          "claim": "Nach Angaben des kanadischen Finanzministeriums sollen Zölle von bis zu 50 Prozent auf Importe aus den USA erhoben werden.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+              "excerpt_hash": "4306042b66b48c022ad1",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T05:25:07.405Z"
+        },
+        {
+          "claim_id": "wt-3705bea838c05b93-v2-claim-3",
+          "story_id": "wt-3705bea838c05b93",
+          "claim": "Betroffen sind Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+              "excerpt_hash": "4306042b66b48c022ad1",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T05:25:07.405Z"
+        },
+        {
+          "claim_id": "wt-3705bea838c05b93-v2-claim-4",
+          "story_id": "wt-3705bea838c05b93",
+          "claim": "Die Handelsgespräche zwischen den USA und Kanada waren zuletzt gescheitert, und die USA hatten bereits im August Zölle auf kanadische Waren verhängt.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+              "excerpt_hash": "c890bc5d5669afc45e09",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T05:25:07.405Z"
+        },
+        {
+          "claim_id": "wt-3705bea838c05b93-v2-claim-5",
+          "story_id": "wt-3705bea838c05b93",
+          "claim": "US-Präsident Trump droht dem Flugzeugbauer Bombardier, dessen Produkte künftig nicht mehr auf dem amerikanischen Markt zu verkaufen.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+              "excerpt_hash": "a4811aaab721da4d808f",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T05:25:07.405Z"
+        }
+      ],
+      "event_id": "event-107131005f4992182fca",
+      "event_first_seen_at": "2026-09-07T23:02:05.417Z",
+      "event_detected_at": "2026-09-07T23:02:05.417Z",
+      "verification_started_at": "2026-09-08T05:24:52.195Z",
+      "publish_ready_at": "2026-09-08T05:25:07.405Z",
+      "news_status": "preliminary",
+      "deepening_due_at": null,
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "fingerprint": "31cf03c7ecf72817a52e78215243c6ff01395e135b42e700fd53277f4bb4521c",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [],
+      "content_hash": "21bb1d09ce4389b78ecc0fd230f48b986dfc14fa0bd037d0ada73e13c4dcb693",
+      "published": true,
+      "title_image": {
+        "mode": "impact_card",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-9cca9f59a33de873-og.png",
+          "width": 1200,
+          "height": 630,
+          "sha256": "9cca9f59a33de87324c60a4c550d944a3105bce5536a5dc2ba1d8408e5edb6d8"
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-9b12ede9f40e8efb-wide.png",
+          "width": 1200,
+          "height": 675,
+          "sha256": "9b12ede9f40e8efb24a5e8a1ae6d8c301692ef4b1f2559776f3db9e3651e5f5b"
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-ab9d4ed7209ddf90-square.png",
+          "width": 1080,
+          "height": 1080,
+          "sha256": "ab9d4ed7209ddf900b225be607d03b0b361e377efbef8b3b3d6f12c50001269f"
+        },
+        "source_visual": null,
+        "fingerprint": "1f3bbe186d74607dc8a9e35118d3ede81cb9930b997fa033707b22f7e6f6c141",
+        "template_version": "woek-title-3-glass",
+        "prompt_version": "woek-editorial-4-contextual",
+        "generated_at": "2026-09-08T05:25:38.234Z",
+        "status": "generated"
+      },
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 2,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 2,
+        "checked_at": "2026-09-08T05:25:07.405Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+            "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766",
+            "excerpt_hash": "6c9cca7ede793e1022e6b14230374b41ad4d50c360664bfffa693a972bd0379f",
+            "number_locale": "de",
+            "numbers": [
+              "50",
+              "8.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Im Zollstreit mit den USA treten nach Angaben der Nachricht heute kanadische Gegenzölle in Kraft. Ein Bericht nennt als betroffene Waren unter anderem Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte. Das kanadische Finanzministerium soll Zölle von bis zu 50 Prozent auf Importe aus den USA vorsehen.\n\nDer Bericht ordnet das in gescheiterte Handelsgespräche zwischen beiden Staaten ein und verweist darauf, dass die USA bereits im August Zölle auf kanadische Waren verhängt hatten. Außerdem wird eine Äußerung von US-Präsident Trump über den Flugzeugbauer Bombardier wiedergegeben. Offen bleibt in der Quelle, wie groß die tatsächlichen Preis- und Mengeneffekte ausfallen und ob weitere Maßnahmen folgen.",
+      "analysis": {
+        "story_id": "wt-3705bea838c05b93",
+        "publication_recommendation": true,
+        "news_status": "preliminary",
+        "publication_depth": "deepened",
+        "summary": "Kanada hat Gegenzölle gegen US-Importe in Kraft gesetzt. Betroffen sind mehrere Warengruppen, darunter Stahl, Aluminium und Elektronik.",
+        "detail_summary": "Die Quelle meldet als neue Zustandsinformation, dass kanadische Gegenzölle im Streit mit den USA heute wirksam werden. Genannt werden Zölle von bis zu 50 Prozent auf mehrere Importgruppen, darunter Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte. Das ist materiell relevant, weil es Preise, Handelsströme und die Belastung betroffener Unternehmen in mehreren Sektoren verändern kann. Der Wirkpfad führt über höhere Grenzkosten zu möglichen Anpassungen bei Einkauf, Produktion und Absatz, mit möglichen Folgewirkungen für Beschäftigte und Verbraucherinnen und Verbraucher. Die Evidenz ist aber nur ein journalistischer Bericht; Umfang, Durchsetzung und tatsächliche Marktreaktionen bleiben offen.",
+        "why_relevant": "Die Meldung beschreibt eine neu wirksame handelspolitische Maßnahme mit potenziell breiter Wirkung auf mehrere Warengruppen und transatlantische Handelsströme.",
+        "status": "in Kraft",
+        "analysis_type": "monitoring",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "rationale": "Höhere Zölle können Preise, Verfügbarkeit und Kosten in mehreren betroffenen Branchen verändern. Für Beschäftigte und Verbraucherinnen sind je nach Weitergabe der Kosten spürbare Belastungen möglich, positive Effekte sind in der Quelle nicht belegt."
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht genannt. Mögliche Verlagerungen bei Produktion und Transport sind denkbar, aber nicht belegt."
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "rationale": "Die Maßnahme ist Teil eines bilateralen Handelskonflikts und betrifft politische Steuerung über Handel. Demokratische Korrekturfähigkeit bleibt offen, weil die Quelle keine Reaktion von Parlamenten oder Gerichten beschreibt."
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Gegenzölle können Kosten in Lieferketten erhöhen, Preise verschieben und Gegenreaktionen im Handel auslösen.",
+        "impact_risks": [
+          "Belastung für importierende Unternehmen und nachgelagerte Branchen",
+          "Preisdruck für Verbraucherinnen und Verbraucher",
+          "Eskalation des Handelsstreits mit weiteren Gegenschritten"
+        ],
+        "mechanisms": [
+          "Zoll erhöht Einfuhrkosten",
+          "Unternehmen geben Kosten teilweise weiter oder passen Beschaffung an",
+          "Gegenzölle und US-Reaktionen können den Handel weiter verengen"
+        ],
+        "first_order": [
+          "Höhere Kosten für betroffene US-Importe nach Kanada"
+        ],
+        "second_order": [
+          "Anpassungen von Preisen, Einkauf und Lieferketten in betroffenen Branchen"
+        ],
+        "third_order": [
+          "Mögliche Verfestigung des Handelskonflikts und weitere politische Gegenmaßnahmen"
+        ],
+        "systemic_relevance": "Mehrere Warengruppen sind betroffen, darunter Industriegüter und Konsumgüter. Das kann Kaskaden in Lieferketten und im bilateralen Handel auslösen.",
+        "transformation_potential": "Die Maßnahme kann Anreize für Umstellung von Beschaffung, Produktion oder Marktzugang verändern, aber die Richtung und Stärke bleiben offen.",
+        "resilience": "Kurzfristig steigt die Belastung für betroffene Handelsbeziehungen; mittelfristig können Unternehmen ausweichen oder umsteuern. Ob das System dadurch widerstandsfähiger wird, lässt sich aus der Quelle nicht ableiten.",
+        "side_effects": [
+          "Mögliche Kostenverlagerung auf Verbraucherpreise",
+          "Mögliche Rückgänge einzelner Import- oder Absatzmengen",
+          "Mögliche politische Eskalation"
+        ],
+        "uncertainties": [
+          "Die tatsächliche Höhe und Durchsetzung der Zölle ist in der Quelle nur grob beschrieben",
+          "Preise, Mengen und Beschäftigungseffekte sind offen",
+          "Weitere Reaktionen der USA bleiben unklar"
+        ],
+        "evidence_level": "medium",
+        "attribution": "Quelle: Deutschlandfunk. Der Text berichtet, dass das kanadische Finanzministerium die Zölle vorsieht und dass US-Präsident Trump sich zu Bombardier äußert. Die Quelle ist journalistisch und nicht selbst die amtliche Verordnung.",
+        "watch_next": [
+          "Ob Kanada die angekündigten Zollraten und Produktgruppen wie beschrieben umsetzt",
+          "Ob die USA mit weiteren Zöllen oder anderen Handelsmaßnahmen reagieren",
+          "Ob Preis- und Mengenreaktionen in den betroffenen Branchen sichtbar werden"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG 8, SDG 9, SDG 12, SDG 17"
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "material_update",
+          "rationale": "Die Meldung enthält gegenüber dem bisherigen Zwischenstand neue, materiell relevante Details zur Höhe, Breite und Wirksamkeit der Gegenzölle. Das Ereignis ist nicht bloß wiederholt, sondern jetzt als in Kraft getreten konkretisiert."
+        },
+        "visuals": {
+          "affected_groups": [
+            "unternehmen",
+            "verbraucherinnen",
+            "beschaeftigte",
+            "staat"
+          ]
+        },
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T05:22:10.164Z",
+        "media_trigger_fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
+          "content_fingerprint": "dc96a47b8a49334e4794a30f4363feeeec12a7b04a33e2fa81fc81d7514a39d0",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-07T23:03:29.075Z",
+          "content_hash": "21bb1d09ce4389b78ecc0fd230f48b986dfc14fa0bd037d0ada73e13c4dcb693",
+          "source_summary": "Im Zollstreit zwischen den USA und Kanada treten nach Darstellung des Deutschlandfunks heute kanadische Gegenzölle in Kraft. Genannt wird, dass das kanadische Finanzministerium Zölle von bis zu 50 Prozent auf Teile der Importe aus den USA vorsieht. Als betroffene Waren werden Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte aufgezählt.\n\nDer Bericht ordnet den Schritt in eine zugespitzte Handelssituation ein: Die Gespräche zwischen beiden Ländern seien zuletzt gescheitert, die USA hätten bereits im August Zölle auf kanadische Waren verhängt. Außerdem wird berichtet, dass US-Präsident Trump gegen den Flugzeugbauer Bombardier Stimmung mache und dessen Produkte nicht mehr auf dem amerikanischen Markt sehen wolle.",
+          "analysis": {
+            "story_id": "wt-3705bea838c05b93",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Kanada setzt Gegenzölle gegen US-Importe in Kraft. Betroffen sind mehrere Warengruppen, darunter Stahl, Aluminium und Elektronik.",
+            "detail_summary": "Der Kern der Meldung ist ein handelspolitischer Schritt: Kanada lässt Gegenzölle auf US-Importe wirksam werden. Der Bericht nennt als Größenordnung Zölle von bis zu 50 Prozent und mehrere betroffene Produktgruppen. Für die Einordnung zählt das, weil sich damit Kosten, Handelsströme und mögliche Gegenreaktionen im bilateralen Handel verändern können. Der Wirkpfad verläuft über höhere Importpreise, mögliche Ausweichreaktionen von Unternehmen und Druck auf weitere Verhandlungen. Offen bleibt, wie breit die Regel im Detail greift und welche Gegenmaßnahmen folgen. Die Evidenzlage ist für eine kurze Erstmeldung brauchbar, bleibt aber auf eine journalistische Quelle begrenzt.",
+            "why_relevant": "Der Schritt verändert handelspolitische Rahmenbedingungen zwischen zwei großen Volkswirtschaften und kann Preise, Lieferketten und Gegenmaßnahmen beeinflussen.",
+            "status": "laufende Umsetzung",
+            "analysis_type": "ex_ante",
+            "human": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Höhere Zölle können Preise und Verfügbarkeit betroffener Güter verändern; zugleich sind mögliche Gegenreaktionen und Belastungen für Beschäftigte und Verbraucher offen."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "gemischt",
+              "rationale": "Ein direkter Umweltpfad ist nicht belegt; mögliche Verlagerungen von Produktion und Transport wären nur mittelbar und derzeit offen."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Der Streit berührt die handelspolitische Steuerung zwischen Staaten und kann Korrekturfähigkeit, Verhandlungsmacht und Konfliktdynamik beeinflussen."
+            },
+            "importance": "mittel",
+            "impact_potential": "Die Gegenzölle können Importkosten erhöhen, Handelsströme verschieben und weiteren Druck auf Gespräche zwischen den USA und Kanada aufbauen.",
+            "impact_risks": [
+              "Belastung für importierende Unternehmen und nachgelagerte Branchen",
+              "Preisdruck für Verbraucherinnen und Verbraucher bei betroffenen Waren",
+              "Eskalation des Handelskonflikts durch Gegenmaßnahmen"
+            ],
+            "mechanisms": [
+              "Zölle verteuern Importe unmittelbar",
+              "Unternehmen suchen alternative Lieferketten oder Produzenten",
+              "Politischer Druck wächst, wenn betroffene Branchen Kosten melden"
+            ],
+            "first_order": [
+              "Importpreise für betroffene US-Waren steigen",
+              "Kanadische Unternehmen und Händler tragen höhere Beschaffungskosten",
+              "Betroffene Produkte werden im Markt teurer oder knapper"
+            ],
+            "second_order": [
+              "Firmen passen Einkaufs- und Produktionsentscheidungen an",
+              "US- und kanadische Verhandler geraten unter neuen Druck",
+              "Einzelne Branchen können ihre Lieferketten verlagern"
+            ],
+            "third_order": [
+              "Handelsbeziehungen verfestigen sich in einen längeren Konflikt",
+              "Mögliche Präzedenzwirkung für weitere Schutz- oder Vergeltungszölle",
+              "Langfristig können Investitionsentscheidungen in beide Richtungen verschoben werden"
+            ],
+            "systemic_relevance": "Der Vorgang betrifft die handelspolitische Ordnung zwischen zwei eng verflochtenen Märkten und kann über Preise, Lieferketten und Verhandlungsmacht in mehrere Branchen ausstrahlen.",
+            "transformation_potential": "Niedrig bis mittel: Der Schritt kann kurzfristig Anreize in Handel und Beschaffung ändern, aber die grundlegenden Handelsstrukturen nur begrenzt und nur bei Fortsetzung des Konflikts verschieben.",
+            "resilience": "Die Wirkung ist teilweise reversibel, wenn Zölle später zurückgenommen oder verhandelt werden; gleichzeitig können sich Lieferketten und Geschäftsmodelle verfestigen.",
+            "side_effects": [
+              "Ausweichreaktionen in Beschaffung und Produktion",
+              "Mehr administrative Belastung für Unternehmen",
+              "Mögliche Mehrkosten entlang der Lieferkette"
+            ],
+            "uncertainties": [
+              "Der genaue Umfang der zollpflichtigen Waren ist in der vorliegenden Quelle nur teilweise beschrieben",
+              "Offen bleibt, wie stark Preise und Mengen tatsächlich reagieren",
+              "Weitere Reaktionen der USA sind in der Quelle nur angedeutet"
+            ],
+            "evidence_level": "mittel",
+            "attribution": "Die Nachricht wird dem Deutschlandfunk zugeschrieben; zentrale Regelungsangaben stammen nach Darstellung des Berichts aus dem kanadischen Finanzministerium.",
+            "watch_next": [
+              "Ob Kanada die Zollregel vollständig umsetzt und für welche Produktlisten sie gilt",
+              "Ob die USA darauf mit weiteren Maßnahmen reagieren",
+              "Ob Verhandlungen zwischen beiden Seiten wieder aufgenommen werden"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, SDG 9, SDG 17"
+            ],
+            "publication_gate": {
+              "news_value": "implementation",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Neue, zeitgebundene Umsetzung einer handelspolitischen Maßnahme mit mehreren betroffenen Produktgruppen und möglicher Breitenwirkung auf Preise und Lieferketten."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-07T23:02:05.417Z",
+            "media_trigger_fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
+              "content_fingerprint": "dc96a47b8a49334e4794a30f4363feeeec12a7b04a33e2fa81fc81d7514a39d0",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-3705bea838c05b93-v1-claim-1",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "Kanadas Gegenzölle auf US-Importe treten heute in Kraft.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "aa9ead0f5a14f38a8c50",
+                  "checked_at": "2026-09-07T23:03:29.075Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T23:03:29.075Z"
+            },
+            {
+              "claim_id": "wt-3705bea838c05b93-v1-claim-2",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "Nach Angaben des kanadischen Finanzministeriums sollen Zölle von bis zu 50 Prozent auf Teile der Importe aus den USA erhoben werden.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "4306042b66b48c022ad1",
+                  "checked_at": "2026-09-07T23:03:29.075Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T23:03:29.075Z"
+            },
+            {
+              "claim_id": "wt-3705bea838c05b93-v1-claim-3",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "Betroffen sind unter anderem Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "4306042b66b48c022ad1",
+                  "checked_at": "2026-09-07T23:03:29.075Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T23:03:29.075Z"
+            },
+            {
+              "claim_id": "wt-3705bea838c05b93-v1-claim-4",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "Die Handelsgespräche zwischen den USA und Kanada waren zuletzt gescheitert, während die USA bereits im August Zölle auf kanadische Waren verhängt hatten.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "c890bc5d5669afc45e09",
+                  "checked_at": "2026-09-07T23:03:29.075Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-07T23:03:29.075Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+              "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-07T23:03:29.075Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766",
+                "excerpt_hash": "6c9cca7ede793e1022e6b14230374b41ad4d50c360664bfffa693a972bd0379f",
+                "numbers": [
+                  "50",
+                  "8.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "version": 2,
+          "analyzed_at": "2026-09-08T05:25:07.405Z",
+          "content_hash": "21bb1d09ce4389b78ecc0fd230f48b986dfc14fa0bd037d0ada73e13c4dcb693",
+          "source_summary": "Im Zollstreit mit den USA treten nach Angaben der Nachricht heute kanadische Gegenzölle in Kraft. Ein Bericht nennt als betroffene Waren unter anderem Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte. Das kanadische Finanzministerium soll Zölle von bis zu 50 Prozent auf Importe aus den USA vorsehen.\n\nDer Bericht ordnet das in gescheiterte Handelsgespräche zwischen beiden Staaten ein und verweist darauf, dass die USA bereits im August Zölle auf kanadische Waren verhängt hatten. Außerdem wird eine Äußerung von US-Präsident Trump über den Flugzeugbauer Bombardier wiedergegeben. Offen bleibt in der Quelle, wie groß die tatsächlichen Preis- und Mengeneffekte ausfallen und ob weitere Maßnahmen folgen.",
+          "analysis": {
+            "story_id": "wt-3705bea838c05b93",
+            "publication_recommendation": true,
+            "news_status": "preliminary",
+            "publication_depth": "deepened",
+            "summary": "Kanada hat Gegenzölle gegen US-Importe in Kraft gesetzt. Betroffen sind mehrere Warengruppen, darunter Stahl, Aluminium und Elektronik.",
+            "detail_summary": "Die Quelle meldet als neue Zustandsinformation, dass kanadische Gegenzölle im Streit mit den USA heute wirksam werden. Genannt werden Zölle von bis zu 50 Prozent auf mehrere Importgruppen, darunter Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte. Das ist materiell relevant, weil es Preise, Handelsströme und die Belastung betroffener Unternehmen in mehreren Sektoren verändern kann. Der Wirkpfad führt über höhere Grenzkosten zu möglichen Anpassungen bei Einkauf, Produktion und Absatz, mit möglichen Folgewirkungen für Beschäftigte und Verbraucherinnen und Verbraucher. Die Evidenz ist aber nur ein journalistischer Bericht; Umfang, Durchsetzung und tatsächliche Marktreaktionen bleiben offen.",
+            "why_relevant": "Die Meldung beschreibt eine neu wirksame handelspolitische Maßnahme mit potenziell breiter Wirkung auf mehrere Warengruppen und transatlantische Handelsströme.",
+            "status": "in Kraft",
+            "analysis_type": "monitoring",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "gemischt",
+              "rationale": "Höhere Zölle können Preise, Verfügbarkeit und Kosten in mehreren betroffenen Branchen verändern. Für Beschäftigte und Verbraucherinnen sind je nach Weitergabe der Kosten spürbare Belastungen möglich, positive Effekte sind in der Quelle nicht belegt."
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "rationale": "Ein direkter Umweltbezug wird in der Quelle nicht genannt. Mögliche Verlagerungen bei Produktion und Transport sind denkbar, aber nicht belegt."
+            },
+            "democracy": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "rationale": "Die Maßnahme ist Teil eines bilateralen Handelskonflikts und betrifft politische Steuerung über Handel. Demokratische Korrekturfähigkeit bleibt offen, weil die Quelle keine Reaktion von Parlamenten oder Gerichten beschreibt."
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Gegenzölle können Kosten in Lieferketten erhöhen, Preise verschieben und Gegenreaktionen im Handel auslösen.",
+            "impact_risks": [
+              "Belastung für importierende Unternehmen und nachgelagerte Branchen",
+              "Preisdruck für Verbraucherinnen und Verbraucher",
+              "Eskalation des Handelsstreits mit weiteren Gegenschritten"
+            ],
+            "mechanisms": [
+              "Zoll erhöht Einfuhrkosten",
+              "Unternehmen geben Kosten teilweise weiter oder passen Beschaffung an",
+              "Gegenzölle und US-Reaktionen können den Handel weiter verengen"
+            ],
+            "first_order": [
+              "Höhere Kosten für betroffene US-Importe nach Kanada"
+            ],
+            "second_order": [
+              "Anpassungen von Preisen, Einkauf und Lieferketten in betroffenen Branchen"
+            ],
+            "third_order": [
+              "Mögliche Verfestigung des Handelskonflikts und weitere politische Gegenmaßnahmen"
+            ],
+            "systemic_relevance": "Mehrere Warengruppen sind betroffen, darunter Industriegüter und Konsumgüter. Das kann Kaskaden in Lieferketten und im bilateralen Handel auslösen.",
+            "transformation_potential": "Die Maßnahme kann Anreize für Umstellung von Beschaffung, Produktion oder Marktzugang verändern, aber die Richtung und Stärke bleiben offen.",
+            "resilience": "Kurzfristig steigt die Belastung für betroffene Handelsbeziehungen; mittelfristig können Unternehmen ausweichen oder umsteuern. Ob das System dadurch widerstandsfähiger wird, lässt sich aus der Quelle nicht ableiten.",
+            "side_effects": [
+              "Mögliche Kostenverlagerung auf Verbraucherpreise",
+              "Mögliche Rückgänge einzelner Import- oder Absatzmengen",
+              "Mögliche politische Eskalation"
+            ],
+            "uncertainties": [
+              "Die tatsächliche Höhe und Durchsetzung der Zölle ist in der Quelle nur grob beschrieben",
+              "Preise, Mengen und Beschäftigungseffekte sind offen",
+              "Weitere Reaktionen der USA bleiben unklar"
+            ],
+            "evidence_level": "medium",
+            "attribution": "Quelle: Deutschlandfunk. Der Text berichtet, dass das kanadische Finanzministerium die Zölle vorsieht und dass US-Präsident Trump sich zu Bombardier äußert. Die Quelle ist journalistisch und nicht selbst die amtliche Verordnung.",
+            "watch_next": [
+              "Ob Kanada die angekündigten Zollraten und Produktgruppen wie beschrieben umsetzt",
+              "Ob die USA mit weiteren Zöllen oder anderen Handelsmaßnahmen reagieren",
+              "Ob Preis- und Mengenreaktionen in den betroffenen Branchen sichtbar werden"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG 8, SDG 9, SDG 12, SDG 17"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "material_update",
+              "rationale": "Die Meldung enthält gegenüber dem bisherigen Zwischenstand neue, materiell relevante Details zur Höhe, Breite und Wirksamkeit der Gegenzölle. Das Ereignis ist nicht bloß wiederholt, sondern jetzt als in Kraft getreten konkretisiert."
+            },
+            "visuals": {
+              "affected_groups": [
+                "unternehmen",
+                "verbraucherinnen",
+                "beschaeftigte",
+                "staat"
+              ]
+            },
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T05:22:10.164Z",
+            "media_trigger_fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
+              "content_fingerprint": "dc96a47b8a49334e4794a30f4363feeeec12a7b04a33e2fa81fc81d7514a39d0",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-3705bea838c05b93-v2-claim-1",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "Kanada hat heute Gegenzölle gegen US-Importe in Kraft gesetzt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "aa9ead0f5a14f38a8c50",
+                  "checked_at": "2026-09-08T05:25:07.405Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            },
+            {
+              "claim_id": "wt-3705bea838c05b93-v2-claim-2",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "Nach Angaben des kanadischen Finanzministeriums sollen Zölle von bis zu 50 Prozent auf Importe aus den USA erhoben werden.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "4306042b66b48c022ad1",
+                  "checked_at": "2026-09-08T05:25:07.405Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            },
+            {
+              "claim_id": "wt-3705bea838c05b93-v2-claim-3",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "Betroffen sind Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "4306042b66b48c022ad1",
+                  "checked_at": "2026-09-08T05:25:07.405Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            },
+            {
+              "claim_id": "wt-3705bea838c05b93-v2-claim-4",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "Die Handelsgespräche zwischen den USA und Kanada waren zuletzt gescheitert, und die USA hatten bereits im August Zölle auf kanadische Waren verhängt.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "c890bc5d5669afc45e09",
+                  "checked_at": "2026-09-08T05:25:07.405Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            },
+            {
+              "claim_id": "wt-3705bea838c05b93-v2-claim-5",
+              "story_id": "wt-3705bea838c05b93",
+              "claim": "US-Präsident Trump droht dem Flugzeugbauer Bombardier, dessen Produkte künftig nicht mehr auf dem amerikanischen Markt zu verkaufen.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                  "excerpt_hash": "a4811aaab721da4d808f",
+                  "checked_at": "2026-09-08T05:25:07.405Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T05:25:07.405Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+              "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 2,
+            "checked_at": "2026-09-08T05:25:07.405Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
+                "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766",
+                "excerpt_hash": "6c9cca7ede793e1022e6b14230374b41ad4d50c360664bfffa693a972bd0379f",
+                "number_locale": "de",
+                "numbers": [
+                  "50",
+                  "8.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-07T23:03:29.075Z",
+          "source_count": 1
+        },
+        {
+          "version": 2,
+          "published_at": "2026-09-08T05:25:07.405Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": []
+    },
+    {
+      "story_id": "wt-550f98293aec9698",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "956e8ce5622a2cf01215139d3ac8541271b35b707ce920dda5a779a9dfbbfb02",
+        "first_failed_at": "2026-09-08T05:22:10.164Z",
+        "failed_at": "2026-09-08T05:22:10.164Z",
+        "retry_after": "2026-09-08T05:37:10.164Z",
+        "retry_count": 1
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
+      "title": "Wahlergebnis Sachsen-Anhalt: Bundesweit große Sorge nach der Wahl",
+      "first_seen": "2026-09-08T05:19:28.000Z",
+      "last_updated": "2026-09-08T05:19:28.000Z",
+      "topic": [
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
+          "title": "Wahlergebnis Sachsen-Anhalt: Bundesweit große Sorge nach der Wahl",
+          "summary": "Zwei Tage nach der Landtagswahl wird weiter über die Ergebnisse gesprochen. Die Wahl in Sachsen-Anhalt führt bundesweit zu Sorge. Die neuen Entwicklungen im Liveticker.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T05:19:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "4de280e565635f0bb00f73df52122a8f14734430148ea931d72a10d7f6e55e77",
+          "source_item_id": "d7d59be7dcb9c4682fff5fe96d7177a7e6a524e211703d13ffadd27a32dda9c3",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T05:19:28.000Z",
+          "ingested_at": "2026-09-08T05:22:10.164Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-550f98293aec9698-claim-01",
+          "story_id": "wt-550f98293aec9698",
+          "claim": "Wahlergebnis Sachsen-Anhalt: Bundesweit große Sorge nach der Wahl: Zwei Tage nach der Landtagswahl wird weiter über die Ergebnisse gesprochen. Die Wahl in Sachsen-Anhalt führt bundesweit zu Sorge. Die neuen Entwicklungen im Liveticker.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T05:22:10.164Z"
+        }
+      ],
+      "content_hash": "4a82635cb1e58bfd556928fa6a23a48f2f227f2d94f7e1983306809e1845db13",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T05:37:10.164Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T05:22:10.164Z",
+      "event_first_seen_at": "2026-09-08T05:22:10.164Z",
+      "event_detected_at": "2026-09-08T05:22:10.164Z",
+      "event_id": "event-d98ccda8e5e813b1598c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-160,wahl-560.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 44,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 2.702733333333333,
+        "detection_delay_minutes": 2.702733333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "fingerprint": "10e9300ea4aeb07804d5a3d006359c81b43ccde088126617de14a081110cdba1",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T05:22:10.164Z",
+      "rejection": {
+        "at": "2026-09-08T05:22:10.164Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-386ff3ee7410d1bd",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "79635ec789153ecb38e2c65969acc0b96cdc07fcb0ae261e304eb169b078a453",
+        "first_failed_at": "2026-09-08T05:22:10.164Z",
+        "failed_at": "2026-09-08T05:22:10.164Z",
+        "retry_after": "2026-09-08T05:37:10.164Z",
+        "retry_count": 1
+      },
+      "slug": "hilfsbedurftigkeit-bundesweiter-tag-der-pflegenden-angehorigen-sozialverband-kritisiert--10d1bd",
+      "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
+      "first_seen": "2026-09-07T22:12:58.000Z",
+      "last_updated": "2026-09-08T05:19:17.000Z",
+      "topic": [
+        "Soziales",
+        "Gesundheit",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/bundesweiter-tag-der-pflegenden-angehoerigen-sozialverband-kritisiert-mangelnde-unterstuetzung-100.html",
+          "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
+          "summary": "Der Sozialverband Deutschland fordert mehr Unterstützung für die Millionen Menschen, die Angehörige zu Hause pflegen. Wer eine solche Verantwortung übernehme, dürfe dadurch nicht finanziell ins Abseits geraten, sagte die SoVD-Vorstandsvorsitzende Engelmeier.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T05:19:17.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "297a30c1380dc74efd42e3036dfb2af75ad3c2358478a426d27f3360b950d900",
+          "source_item_id": "5799aa0514c706ef49e4b364556d437cbc4104c6f91dd46f2087c5112134c602",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T05:19:17.000Z",
+          "ingested_at": "2026-09-08T05:22:10.164Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-386ff3ee7410d1bd-claim-01",
+          "story_id": "wt-386ff3ee7410d1bd",
+          "claim": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung: Der Sozialverband Deutschland fordert mehr Unterstützung für die Millionen Menschen, die Angehörige zu Hause pflegen. Wer eine solche Verantwortung übernehme, dürfe dadurch nicht finanziell ins Abseits geraten, sagte die SoVD-Vorstandsvorsitzende Engelmeier.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T05:22:10.164Z"
+        }
+      ],
+      "content_hash": "9a9bd0fb9445b90a45546a79f3705682ce776a4e02e98bbacb48b3a2e93b1c9e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T05:37:10.164Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T05:22:10.164Z",
+      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
+      "event_detected_at": "2026-09-07T22:37:09.924Z",
+      "event_id": "event-2919e8d889b258235eda",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Gesundheit",
+          "Finanzen"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 2.886066666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 405.004,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 99,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "fingerprint": "67c05250db7308eeb13f9973804c4ce4029373fb2468d5c16d2a35306eccae23",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T05:22:10.164Z",
+      "rejection": {
+        "at": "2026-09-08T05:22:10.164Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-bbf3a9b05611f2ee",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "e61adf7bac4356031ceea6fa07bdb5eb5aa3697ca30c1bec3dbf4ea8b2c759b8",
+        "first_failed_at": "2026-09-08T05:22:10.164Z",
+        "failed_at": "2026-09-08T05:22:10.164Z",
+        "retry_after": "2026-09-08T05:37:10.164Z",
+        "retry_count": 1
+      },
+      "slug": "investitionen-im-verkehrssektor-zu-wenig-geld-fur-schiene-und-klimaschutz-11f2ee",
+      "title": "Investitionen im Verkehrssektor: Zu wenig Geld für Schiene und Klimaschutz",
+      "first_seen": "2026-09-08T05:08:00.000Z",
+      "last_updated": "2026-09-08T05:08:00.000Z",
+      "topic": [
+        "Klima",
+        "Finanzen",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "taz-aktuell",
+          "publisher": "taz",
+          "url": "https://taz.de/Investitionen-im-Verkehrssektor/!6210777",
+          "title": "Investitionen im Verkehrssektor: Zu wenig Geld für Schiene und Klimaschutz",
+          "summary": "Der Bundestag verhandelt über den Haushalt, am Dienstag geht es um den Verkehrsetat. Und der wurde an den falschen Stellen gekürzt, sagen Verbände. mehr...",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T05:08:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "198992634b75fbeb3556cba9860ce700f1d3ec71334dd93d81c57451848bab2b",
+          "source_item_id": "9d8082955794a726ef281cfeeb66c2837d49c769c44840c86c33b63d3bb45755",
+          "publisher_id": "taz",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T05:08:00.000Z",
+          "ingested_at": "2026-09-08T05:22:10.164Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-bbf3a9b05611f2ee-claim-01",
+          "story_id": "wt-bbf3a9b05611f2ee",
+          "claim": "Investitionen im Verkehrssektor: Zu wenig Geld für Schiene und Klimaschutz: Der Bundestag verhandelt über den Haushalt, am Dienstag geht es um den Verkehrsetat. Und der wurde an den falschen Stellen gekürzt, sagen Verbände. mehr...",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "taz-aktuell",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:taz",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T05:22:10.164Z"
+        }
+      ],
+      "content_hash": "a0f659aa8610775763c63111a41195d85a3588e253803c1c945136dbb7f5cd0a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T05:37:10.164Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T05:22:10.164Z",
+      "event_first_seen_at": "2026-09-08T05:22:10.164Z",
+      "event_detected_at": "2026-09-08T05:22:10.164Z",
+      "event_id": "event-5f2fa2d5b1ee1d8686fa",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Klima",
+          "Finanzen",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.1694,
+        "detection_delay_minutes": 14.1694,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "fingerprint": "0e8ecc5310174134705790b3eb4bd8cd55895384c8bf1ced7b2bdc478293d015",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T05:22:10.164Z",
+      "rejection": {
+        "at": "2026-09-08T05:22:10.164Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
     {
       "story_id": "wt-de413d33343f350b",
       "slug": "ukraine-krieg-russland-nimmt-angriffe-auf-kiew-nach-dreitagiger-feuerpause-wieder-auf-uk-3f350b",
@@ -598,7 +1840,7 @@
             "title": "Ukraine-Krieg - Russland nimmt Angriffe auf Kiew nach dreitägiger Feuerpause wieder auf - Ukrainischer Drohnenangriff auf Saratow",
             "summary": "Nach einer dreitägigen Pause hat Russland die Luftangriffe auf die ukrainische Hauptstadt Kiew in der Nacht wieder aufgenommen.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T04:39:24.000Z",
+            "published_at": "2026-09-08T05:19:17.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -614,8 +1856,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T04:39:24.000Z",
-            "ingested_at": "2026-09-08T04:52:08.677Z",
+            "source_published_at": "2026-09-08T05:19:17.000Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -636,7 +1878,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "a5503f398bda5c186754718a19c67e1bc7a98cf6f4e8d07a2cd0cdf955f0adc2",
           "issue_codes": [],
           "warning_codes": []
@@ -896,158 +2138,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-386ff3ee7410d1bd",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "a226ea301c8a2a956ae09aecb9e973f2507622c653c2354a51ad520d0a06fba3",
-        "first_failed_at": "2026-09-08T04:52:08.677Z",
-        "failed_at": "2026-09-08T04:52:08.677Z",
-        "retry_after": "2026-09-08T05:07:08.677Z",
-        "retry_count": 1
-      },
-      "slug": "hilfsbedurftigkeit-bundesweiter-tag-der-pflegenden-angehorigen-sozialverband-kritisiert--10d1bd",
-      "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
-      "first_seen": "2026-09-07T22:12:58.000Z",
-      "last_updated": "2026-09-08T04:39:24.000Z",
-      "topic": [
-        "Soziales",
-        "Gesundheit"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/bundesweiter-tag-der-pflegenden-angehoerigen-sozialverband-kritisiert-mangelnde-unterstuetzung-100.html",
-          "title": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung",
-          "summary": "Der Sozialverband Deutschland fordert mehr Unterstützung für die Millionen Menschen, die Angehörige zu Hause pflegen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T04:39:24.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "403badf6f4705c165cfb1d5f6738cf2fe59463074fd3d256a9e488acedfa41e9",
-          "source_item_id": "5799aa0514c706ef49e4b364556d437cbc4104c6f91dd46f2087c5112134c602",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T04:39:24.000Z",
-          "ingested_at": "2026-09-08T04:52:08.677Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-386ff3ee7410d1bd-claim-01",
-          "story_id": "wt-386ff3ee7410d1bd",
-          "claim": "Hilfsbedürftigkeit - Bundesweiter Tag der pflegenden Angehörigen: Sozialverband kritisiert mangelnde Unterstützung: Der Sozialverband Deutschland fordert mehr Unterstützung für die Millionen Menschen, die Angehörige zu Hause pflegen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T04:52:08.677Z"
-        }
-      ],
-      "content_hash": "62a8609ace3dae574aba0e0cd1a0cb9320838a57eadae4dbc9d373235020d285",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-08T05:07:08.677Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T04:52:08.677Z",
-      "event_first_seen_at": "2026-09-07T22:37:09.924Z",
-      "event_detected_at": "2026-09-07T22:37:09.924Z",
-      "event_id": "event-2919e8d889b258235eda",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 46,
-        "public_relevance": "mittel",
-        "topics": [
-          "Soziales",
-          "Gesundheit"
-        ],
-        "dimensions": [
-          "Mensch"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 12.744616666666667,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 374.9792166666667,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 97,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T04:52:08.677Z",
-        "fingerprint": "432a677f304a811fa89689a1244b261a7633c91e06531d3e825755110a8d86d6",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T04:52:08.677Z",
-      "rejection": {
-        "at": "2026-09-08T04:52:08.677Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
       }
     },
@@ -2375,7 +3465,7 @@
       "verification_started_at": "2026-09-08T02:37:29.597Z",
       "publish_ready_at": "2026-09-08T02:37:41.297Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -2849,9 +3939,12 @@
         "generated_at": "2026-09-08T02:38:10.544Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "cd9a1358404fd99dd334642c1954fdfe047b600b99e18677eb318b362a1f4287",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "0e1b18c0b24430973dd912cfaceaad5bafcd8799dec6aaddec09aaaa1736d1d5",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T11:22:10.164Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -2860,7 +3953,7 @@
             "title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
             "summary": "Der ukrainische Generalstaatsanwalt Ruslan Krawtschenko hat nach Korruptionsvorwürfen seinen Rücktritt eingereicht. Bei einem Drohnenangriff auf Saratow wurden derweil mehrere Menschen verletzt.",
             "source_type": "media_rss",
-            "published_at": "2026-09-08T02:33:38.000Z",
+            "published_at": "2026-09-08T02:47:20.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Gesellschaft",
@@ -2876,8 +3969,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-08T02:33:38.000Z",
-            "ingested_at": "2026-09-08T02:37:05.212Z",
+            "source_published_at": "2026-09-08T02:47:20.000Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -2886,24 +3979,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
-          "fingerprint": "7058d23c9246612a31343345ae582873e03ef1dcd138d22c83c048f96c4900e7",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-6343ca92be9f7cb8",
@@ -3787,7 +4865,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -6717,7 +7795,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -7353,7 +8431,7 @@
             "title": "Sabotageversuche - Polizei ruft Bevölkerung auf, verdächtige Beobachtungen zu melden",
             "summary": "Nach einer Serie von Sabotage-Versuchen auf das Stromnetz hat die Polizei die Bevölkerung aufgerufen, verdächtige Beobachtungen zu melden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-07T23:27:18.000Z",
+            "published_at": "2026-09-08T05:19:17.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -7369,8 +8447,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-07T23:27:18.000Z",
-            "ingested_at": "2026-09-07T23:37:00.002Z",
+            "source_published_at": "2026-09-08T05:19:17.000Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -7391,7 +8469,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "66dd04e0eb82dee80e6c492ad6d22ff0b6c0172e5870afc885334452d58ac93a",
           "issue_codes": [],
           "warning_codes": []
@@ -7624,7 +8702,7 @@
       "verification_started_at": "2026-09-07T23:38:58.564Z",
       "publish_ready_at": "2026-09-07T23:39:13.185Z",
       "news_status": "preliminary",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -8396,9 +9474,12 @@
         }
       ],
       "retirement_history": [],
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "1e35e4c2c361abc5134938c2a027bd50bcae99d7e956e0f906ae8940bc76a9eb",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "50bd828e9a16dbb401e0640a9c748b2b968c2368e309364f821426a039928a08",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T11:22:10.164Z",
         "sources": [
           {
             "source_id": "wiwo-schlagzeilen",
@@ -8457,7 +9538,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T10:12:00.000Z",
-            "ingested_at": "2026-09-07T23:37:00.002Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -8466,24 +9547,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
-          "fingerprint": "ad8c2665b20a8357b4833c1853ba03a6fa85b453543d0458d95519dc90b525ee",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-61bb6c2918c26f16",
@@ -8927,7 +9993,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T17:08:13.000Z",
-            "ingested_at": "2026-09-07T23:37:00.002Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -8948,7 +10014,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "c37f87898ba760942ddadfb4b1d79f99f0fe230dc492bd9e151327cb4562dcb0",
           "issue_codes": [],
           "warning_codes": []
@@ -10064,7 +11130,7 @@
             "title": "Ukraine-Krieg - Atomkraftwerk Saporischschja ist wieder an externe Stromleitung angeschlossen",
             "summary": "Das ukrainische Atomkraftwerk Saporischschja wird wieder von einer externen Stromleitung versorgt.",
             "source_type": "media_rss",
-            "published_at": "2026-09-07T22:41:30.000Z",
+            "published_at": "2026-09-08T05:19:17.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -10080,8 +11146,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-07T22:41:30.000Z",
-            "ingested_at": "2026-09-07T23:02:05.417Z",
+            "source_published_at": "2026-09-08T05:19:17.000Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -10102,7 +11168,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "6e6cd9d593491fd443aefec8f1662ebcd00cd966341a4e0dbf195256267c2713",
           "issue_codes": [],
           "warning_codes": []
@@ -11960,7 +13026,7 @@
             "title": "Serbien - Kriegsverbrecher Mladić in Belgrad beigesetzt",
             "summary": "In Serbien ist der bosnisch-serbische Kriegsverbrecher Mladić mit militärischen Ehren beigesetzt worden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-07T22:41:30.000Z",
+            "published_at": "2026-09-08T05:19:17.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -11976,8 +13042,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-07T22:41:30.000Z",
-            "ingested_at": "2026-09-07T23:02:05.417Z",
+            "source_published_at": "2026-09-08T05:19:17.000Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11998,594 +13064,8 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "fc885724fc124334eef0358e5e49b807abfef8eb639967e97308e36085f73394",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
-    },
-    {
-      "story_id": "wt-3705bea838c05b93",
-      "slug": "wirtschaft-kanadische-gegenzolle-auf-us-importe-treten-in-kraft-c05b93",
-      "title": "Wirtschaft - Kanadische Gegenzölle auf US-Importe treten in Kraft",
-      "first_seen": "2026-09-07T22:41:30.000Z",
-      "last_updated": "2026-09-07T23:03:29.075Z",
-      "published_at": "2026-09-07T23:03:29.075Z",
-      "updated_at": "2026-09-07T23:03:29.075Z",
-      "topic": [
-        "Wirtschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-          "title": "Wirtschaft - Kanadische Gegenzölle auf US-Importe treten in Kraft",
-          "summary": "Im Zollstreit mit den USA treten heute die kanadischen Gegenzölle in Kraft.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-07T22:41:30.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766",
-          "source_item_id": "1262320604683e582e3d5275da0c3f497a043bb3b198706289a72ee7dd1ba111",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-07T22:41:30.000Z",
-          "ingested_at": "2026-09-07T23:02:05.417Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-3705bea838c05b93-v1-claim-1",
-          "story_id": "wt-3705bea838c05b93",
-          "claim": "Kanadas Gegenzölle auf US-Importe treten heute in Kraft.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-              "excerpt_hash": "aa9ead0f5a14f38a8c50",
-              "checked_at": "2026-09-07T23:03:29.075Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T23:03:29.075Z"
-        },
-        {
-          "claim_id": "wt-3705bea838c05b93-v1-claim-2",
-          "story_id": "wt-3705bea838c05b93",
-          "claim": "Nach Angaben des kanadischen Finanzministeriums sollen Zölle von bis zu 50 Prozent auf Teile der Importe aus den USA erhoben werden.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-              "excerpt_hash": "4306042b66b48c022ad1",
-              "checked_at": "2026-09-07T23:03:29.075Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T23:03:29.075Z"
-        },
-        {
-          "claim_id": "wt-3705bea838c05b93-v1-claim-3",
-          "story_id": "wt-3705bea838c05b93",
-          "claim": "Betroffen sind unter anderem Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-              "excerpt_hash": "4306042b66b48c022ad1",
-              "checked_at": "2026-09-07T23:03:29.075Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T23:03:29.075Z"
-        },
-        {
-          "claim_id": "wt-3705bea838c05b93-v1-claim-4",
-          "story_id": "wt-3705bea838c05b93",
-          "claim": "Die Handelsgespräche zwischen den USA und Kanada waren zuletzt gescheitert, während die USA bereits im August Zölle auf kanadische Waren verhängt hatten.",
-          "status": "single_source_claim",
-          "source_id": "dlf-nachrichten",
-          "evidence": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-              "excerpt_hash": "c890bc5d5669afc45e09",
-              "checked_at": "2026-09-07T23:03:29.075Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-07T23:03:29.075Z"
-        }
-      ],
-      "event_id": "event-107131005f4992182fca",
-      "event_first_seen_at": "2026-09-07T23:02:05.417Z",
-      "event_detected_at": "2026-09-07T23:02:05.417Z",
-      "verification_started_at": "2026-09-07T23:03:18.873Z",
-      "publish_ready_at": "2026-09-07T23:03:29.075Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "dlf-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-07T23:02:05.417Z",
-        "fingerprint": "31cf03c7ecf72817a52e78215243c6ff01395e135b42e700fd53277f4bb4521c",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "followups": [],
-      "content_hash": "21bb1d09ce4389b78ecc0fd230f48b986dfc14fa0bd037d0ada73e13c4dcb693",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "numeric_evidence": {
-        "version": 1,
-        "analysis_version": 1,
-        "checked_at": "2026-09-07T23:03:29.075Z",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-            "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766",
-            "excerpt_hash": "6c9cca7ede793e1022e6b14230374b41ad4d50c360664bfffa693a972bd0379f",
-            "numbers": [
-              "50",
-              "8.09",
-              "2026"
-            ]
-          }
-        ]
-      },
-      "source_summary": "Im Zollstreit zwischen den USA und Kanada treten nach Darstellung des Deutschlandfunks heute kanadische Gegenzölle in Kraft. Genannt wird, dass das kanadische Finanzministerium Zölle von bis zu 50 Prozent auf Teile der Importe aus den USA vorsieht. Als betroffene Waren werden Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte aufgezählt.\n\nDer Bericht ordnet den Schritt in eine zugespitzte Handelssituation ein: Die Gespräche zwischen beiden Ländern seien zuletzt gescheitert, die USA hätten bereits im August Zölle auf kanadische Waren verhängt. Außerdem wird berichtet, dass US-Präsident Trump gegen den Flugzeugbauer Bombardier Stimmung mache und dessen Produkte nicht mehr auf dem amerikanischen Markt sehen wolle.",
-      "analysis": {
-        "story_id": "wt-3705bea838c05b93",
-        "publication_recommendation": true,
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Kanada setzt Gegenzölle gegen US-Importe in Kraft. Betroffen sind mehrere Warengruppen, darunter Stahl, Aluminium und Elektronik.",
-        "detail_summary": "Der Kern der Meldung ist ein handelspolitischer Schritt: Kanada lässt Gegenzölle auf US-Importe wirksam werden. Der Bericht nennt als Größenordnung Zölle von bis zu 50 Prozent und mehrere betroffene Produktgruppen. Für die Einordnung zählt das, weil sich damit Kosten, Handelsströme und mögliche Gegenreaktionen im bilateralen Handel verändern können. Der Wirkpfad verläuft über höhere Importpreise, mögliche Ausweichreaktionen von Unternehmen und Druck auf weitere Verhandlungen. Offen bleibt, wie breit die Regel im Detail greift und welche Gegenmaßnahmen folgen. Die Evidenzlage ist für eine kurze Erstmeldung brauchbar, bleibt aber auf eine journalistische Quelle begrenzt.",
-        "why_relevant": "Der Schritt verändert handelspolitische Rahmenbedingungen zwischen zwei großen Volkswirtschaften und kann Preise, Lieferketten und Gegenmaßnahmen beeinflussen.",
-        "status": "laufende Umsetzung",
-        "analysis_type": "ex_ante",
-        "human": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "rationale": "Höhere Zölle können Preise und Verfügbarkeit betroffener Güter verändern; zugleich sind mögliche Gegenreaktionen und Belastungen für Beschäftigte und Verbraucher offen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "gemischt",
-          "rationale": "Ein direkter Umweltpfad ist nicht belegt; mögliche Verlagerungen von Produktion und Transport wären nur mittelbar und derzeit offen."
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "rationale": "Der Streit berührt die handelspolitische Steuerung zwischen Staaten und kann Korrekturfähigkeit, Verhandlungsmacht und Konfliktdynamik beeinflussen."
-        },
-        "importance": "mittel",
-        "impact_potential": "Die Gegenzölle können Importkosten erhöhen, Handelsströme verschieben und weiteren Druck auf Gespräche zwischen den USA und Kanada aufbauen.",
-        "impact_risks": [
-          "Belastung für importierende Unternehmen und nachgelagerte Branchen",
-          "Preisdruck für Verbraucherinnen und Verbraucher bei betroffenen Waren",
-          "Eskalation des Handelskonflikts durch Gegenmaßnahmen"
-        ],
-        "mechanisms": [
-          "Zölle verteuern Importe unmittelbar",
-          "Unternehmen suchen alternative Lieferketten oder Produzenten",
-          "Politischer Druck wächst, wenn betroffene Branchen Kosten melden"
-        ],
-        "first_order": [
-          "Importpreise für betroffene US-Waren steigen",
-          "Kanadische Unternehmen und Händler tragen höhere Beschaffungskosten",
-          "Betroffene Produkte werden im Markt teurer oder knapper"
-        ],
-        "second_order": [
-          "Firmen passen Einkaufs- und Produktionsentscheidungen an",
-          "US- und kanadische Verhandler geraten unter neuen Druck",
-          "Einzelne Branchen können ihre Lieferketten verlagern"
-        ],
-        "third_order": [
-          "Handelsbeziehungen verfestigen sich in einen längeren Konflikt",
-          "Mögliche Präzedenzwirkung für weitere Schutz- oder Vergeltungszölle",
-          "Langfristig können Investitionsentscheidungen in beide Richtungen verschoben werden"
-        ],
-        "systemic_relevance": "Der Vorgang betrifft die handelspolitische Ordnung zwischen zwei eng verflochtenen Märkten und kann über Preise, Lieferketten und Verhandlungsmacht in mehrere Branchen ausstrahlen.",
-        "transformation_potential": "Niedrig bis mittel: Der Schritt kann kurzfristig Anreize in Handel und Beschaffung ändern, aber die grundlegenden Handelsstrukturen nur begrenzt und nur bei Fortsetzung des Konflikts verschieben.",
-        "resilience": "Die Wirkung ist teilweise reversibel, wenn Zölle später zurückgenommen oder verhandelt werden; gleichzeitig können sich Lieferketten und Geschäftsmodelle verfestigen.",
-        "side_effects": [
-          "Ausweichreaktionen in Beschaffung und Produktion",
-          "Mehr administrative Belastung für Unternehmen",
-          "Mögliche Mehrkosten entlang der Lieferkette"
-        ],
-        "uncertainties": [
-          "Der genaue Umfang der zollpflichtigen Waren ist in der vorliegenden Quelle nur teilweise beschrieben",
-          "Offen bleibt, wie stark Preise und Mengen tatsächlich reagieren",
-          "Weitere Reaktionen der USA sind in der Quelle nur angedeutet"
-        ],
-        "evidence_level": "mittel",
-        "attribution": "Die Nachricht wird dem Deutschlandfunk zugeschrieben; zentrale Regelungsangaben stammen nach Darstellung des Berichts aus dem kanadischen Finanzministerium.",
-        "watch_next": [
-          "Ob Kanada die Zollregel vollständig umsetzt und für welche Produktlisten sie gilt",
-          "Ob die USA darauf mit weiteren Maßnahmen reagieren",
-          "Ob Verhandlungen zwischen beiden Seiten wieder aufgenommen werden"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG 8, SDG 9, SDG 17"
-        ],
-        "publication_gate": {
-          "news_value": "implementation",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "systemic_relevance",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Neue, zeitgebundene Umsetzung einer handelspolitischen Maßnahme mit mehreren betroffenen Produktgruppen und möglicher Breitenwirkung auf Preise und Lieferketten."
-        },
-        "visuals": null,
-        "media_impact": null,
-        "media_analysis_version": "2.1",
-        "media_checked_at": "2026-09-07T23:02:05.417Z",
-        "media_trigger_fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
-        "media_trigger": {
-          "relevant": false,
-          "level": "low",
-          "score": 0,
-          "reasons": [],
-          "matched_terms": [],
-          "source_count": 1,
-          "comparable_source_count": 1,
-          "fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
-          "content_fingerprint": "dc96a47b8a49334e4794a30f4363feeeec12a7b04a33e2fa81fc81d7514a39d0",
-          "basis": "controlled_source_text",
-          "version": "2.1"
-        }
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-07T23:03:29.075Z",
-          "content_hash": "21bb1d09ce4389b78ecc0fd230f48b986dfc14fa0bd037d0ada73e13c4dcb693",
-          "source_summary": "Im Zollstreit zwischen den USA und Kanada treten nach Darstellung des Deutschlandfunks heute kanadische Gegenzölle in Kraft. Genannt wird, dass das kanadische Finanzministerium Zölle von bis zu 50 Prozent auf Teile der Importe aus den USA vorsieht. Als betroffene Waren werden Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte aufgezählt.\n\nDer Bericht ordnet den Schritt in eine zugespitzte Handelssituation ein: Die Gespräche zwischen beiden Ländern seien zuletzt gescheitert, die USA hätten bereits im August Zölle auf kanadische Waren verhängt. Außerdem wird berichtet, dass US-Präsident Trump gegen den Flugzeugbauer Bombardier Stimmung mache und dessen Produkte nicht mehr auf dem amerikanischen Markt sehen wolle.",
-          "analysis": {
-            "story_id": "wt-3705bea838c05b93",
-            "publication_recommendation": true,
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Kanada setzt Gegenzölle gegen US-Importe in Kraft. Betroffen sind mehrere Warengruppen, darunter Stahl, Aluminium und Elektronik.",
-            "detail_summary": "Der Kern der Meldung ist ein handelspolitischer Schritt: Kanada lässt Gegenzölle auf US-Importe wirksam werden. Der Bericht nennt als Größenordnung Zölle von bis zu 50 Prozent und mehrere betroffene Produktgruppen. Für die Einordnung zählt das, weil sich damit Kosten, Handelsströme und mögliche Gegenreaktionen im bilateralen Handel verändern können. Der Wirkpfad verläuft über höhere Importpreise, mögliche Ausweichreaktionen von Unternehmen und Druck auf weitere Verhandlungen. Offen bleibt, wie breit die Regel im Detail greift und welche Gegenmaßnahmen folgen. Die Evidenzlage ist für eine kurze Erstmeldung brauchbar, bleibt aber auf eine journalistische Quelle begrenzt.",
-            "why_relevant": "Der Schritt verändert handelspolitische Rahmenbedingungen zwischen zwei großen Volkswirtschaften und kann Preise, Lieferketten und Gegenmaßnahmen beeinflussen.",
-            "status": "laufende Umsetzung",
-            "analysis_type": "ex_ante",
-            "human": {
-              "relevance": "mittel",
-              "tendency": "gemischt",
-              "rationale": "Höhere Zölle können Preise und Verfügbarkeit betroffener Güter verändern; zugleich sind mögliche Gegenreaktionen und Belastungen für Beschäftigte und Verbraucher offen."
-            },
-            "planet": {
-              "relevance": "gering",
-              "tendency": "gemischt",
-              "rationale": "Ein direkter Umweltpfad ist nicht belegt; mögliche Verlagerungen von Produktion und Transport wären nur mittelbar und derzeit offen."
-            },
-            "democracy": {
-              "relevance": "mittel",
-              "tendency": "gemischt",
-              "rationale": "Der Streit berührt die handelspolitische Steuerung zwischen Staaten und kann Korrekturfähigkeit, Verhandlungsmacht und Konfliktdynamik beeinflussen."
-            },
-            "importance": "mittel",
-            "impact_potential": "Die Gegenzölle können Importkosten erhöhen, Handelsströme verschieben und weiteren Druck auf Gespräche zwischen den USA und Kanada aufbauen.",
-            "impact_risks": [
-              "Belastung für importierende Unternehmen und nachgelagerte Branchen",
-              "Preisdruck für Verbraucherinnen und Verbraucher bei betroffenen Waren",
-              "Eskalation des Handelskonflikts durch Gegenmaßnahmen"
-            ],
-            "mechanisms": [
-              "Zölle verteuern Importe unmittelbar",
-              "Unternehmen suchen alternative Lieferketten oder Produzenten",
-              "Politischer Druck wächst, wenn betroffene Branchen Kosten melden"
-            ],
-            "first_order": [
-              "Importpreise für betroffene US-Waren steigen",
-              "Kanadische Unternehmen und Händler tragen höhere Beschaffungskosten",
-              "Betroffene Produkte werden im Markt teurer oder knapper"
-            ],
-            "second_order": [
-              "Firmen passen Einkaufs- und Produktionsentscheidungen an",
-              "US- und kanadische Verhandler geraten unter neuen Druck",
-              "Einzelne Branchen können ihre Lieferketten verlagern"
-            ],
-            "third_order": [
-              "Handelsbeziehungen verfestigen sich in einen längeren Konflikt",
-              "Mögliche Präzedenzwirkung für weitere Schutz- oder Vergeltungszölle",
-              "Langfristig können Investitionsentscheidungen in beide Richtungen verschoben werden"
-            ],
-            "systemic_relevance": "Der Vorgang betrifft die handelspolitische Ordnung zwischen zwei eng verflochtenen Märkten und kann über Preise, Lieferketten und Verhandlungsmacht in mehrere Branchen ausstrahlen.",
-            "transformation_potential": "Niedrig bis mittel: Der Schritt kann kurzfristig Anreize in Handel und Beschaffung ändern, aber die grundlegenden Handelsstrukturen nur begrenzt und nur bei Fortsetzung des Konflikts verschieben.",
-            "resilience": "Die Wirkung ist teilweise reversibel, wenn Zölle später zurückgenommen oder verhandelt werden; gleichzeitig können sich Lieferketten und Geschäftsmodelle verfestigen.",
-            "side_effects": [
-              "Ausweichreaktionen in Beschaffung und Produktion",
-              "Mehr administrative Belastung für Unternehmen",
-              "Mögliche Mehrkosten entlang der Lieferkette"
-            ],
-            "uncertainties": [
-              "Der genaue Umfang der zollpflichtigen Waren ist in der vorliegenden Quelle nur teilweise beschrieben",
-              "Offen bleibt, wie stark Preise und Mengen tatsächlich reagieren",
-              "Weitere Reaktionen der USA sind in der Quelle nur angedeutet"
-            ],
-            "evidence_level": "mittel",
-            "attribution": "Die Nachricht wird dem Deutschlandfunk zugeschrieben; zentrale Regelungsangaben stammen nach Darstellung des Berichts aus dem kanadischen Finanzministerium.",
-            "watch_next": [
-              "Ob Kanada die Zollregel vollständig umsetzt und für welche Produktlisten sie gilt",
-              "Ob die USA darauf mit weiteren Maßnahmen reagieren",
-              "Ob Verhandlungen zwischen beiden Seiten wieder aufgenommen werden"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG 8, SDG 9, SDG 17"
-            ],
-            "publication_gate": {
-              "news_value": "implementation",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "systemic_relevance",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Neue, zeitgebundene Umsetzung einer handelspolitischen Maßnahme mit mehreren betroffenen Produktgruppen und möglicher Breitenwirkung auf Preise und Lieferketten."
-            },
-            "visuals": null,
-            "media_impact": null,
-            "media_analysis_version": "2.1",
-            "media_checked_at": "2026-09-07T23:02:05.417Z",
-            "media_trigger_fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
-            "media_trigger": {
-              "relevant": false,
-              "level": "low",
-              "score": 0,
-              "reasons": [],
-              "matched_terms": [],
-              "source_count": 1,
-              "comparable_source_count": 1,
-              "fingerprint": "dbbcdf10420d8fdb76859378eaef6abe5fea9b7b4418490c282ed6460029bfc5",
-              "content_fingerprint": "dc96a47b8a49334e4794a30f4363feeeec12a7b04a33e2fa81fc81d7514a39d0",
-              "basis": "controlled_source_text",
-              "version": "2.1"
-            }
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-3705bea838c05b93-v1-claim-1",
-              "story_id": "wt-3705bea838c05b93",
-              "claim": "Kanadas Gegenzölle auf US-Importe treten heute in Kraft.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-                  "excerpt_hash": "aa9ead0f5a14f38a8c50",
-                  "checked_at": "2026-09-07T23:03:29.075Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T23:03:29.075Z"
-            },
-            {
-              "claim_id": "wt-3705bea838c05b93-v1-claim-2",
-              "story_id": "wt-3705bea838c05b93",
-              "claim": "Nach Angaben des kanadischen Finanzministeriums sollen Zölle von bis zu 50 Prozent auf Teile der Importe aus den USA erhoben werden.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-                  "excerpt_hash": "4306042b66b48c022ad1",
-                  "checked_at": "2026-09-07T23:03:29.075Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T23:03:29.075Z"
-            },
-            {
-              "claim_id": "wt-3705bea838c05b93-v1-claim-3",
-              "story_id": "wt-3705bea838c05b93",
-              "claim": "Betroffen sind unter anderem Stahl, Aluminium, Haushaltsgeräte, landwirtschaftliche Maschinen und Elektronikprodukte.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-                  "excerpt_hash": "4306042b66b48c022ad1",
-                  "checked_at": "2026-09-07T23:03:29.075Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T23:03:29.075Z"
-            },
-            {
-              "claim_id": "wt-3705bea838c05b93-v1-claim-4",
-              "story_id": "wt-3705bea838c05b93",
-              "claim": "Die Handelsgespräche zwischen den USA und Kanada waren zuletzt gescheitert, während die USA bereits im August Zölle auf kanadische Waren verhängt hatten.",
-              "status": "single_source_claim",
-              "source_id": "dlf-nachrichten",
-              "evidence": [
-                {
-                  "source_id": "dlf-nachrichten",
-                  "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-                  "excerpt_hash": "c890bc5d5669afc45e09",
-                  "checked_at": "2026-09-07T23:03:29.075Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-07T23:03:29.075Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-              "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766"
-            }
-          ],
-          "numeric_evidence": {
-            "version": 1,
-            "analysis_version": 1,
-            "checked_at": "2026-09-07T23:03:29.075Z",
-            "sources": [
-              {
-                "source_id": "dlf-nachrichten",
-                "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-                "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766",
-                "excerpt_hash": "6c9cca7ede793e1022e6b14230374b41ad4d50c360664bfffa693a972bd0379f",
-                "numbers": [
-                  "50",
-                  "8.09",
-                  "2026"
-                ]
-              }
-            ]
-          }
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-07T23:03:29.075Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "og": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-69e4c5764a09f98f-og.png",
-          "width": 1200,
-          "height": 630,
-          "sha256": "69e4c5764a09f98f68d15bd99cb23ee029de519829218eb67a89a4acacf93c18"
-        },
-        "wide": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-ead54f05e86bbf35-wide.png",
-          "width": 1200,
-          "height": 675,
-          "sha256": "ead54f05e86bbf3553acb8870772af2473a17fd76b347d2a8a27f51fa80a1499"
-        },
-        "square": {
-          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09/wt-3705bea838c05b93-4ff0150c2e48cff1-square.png",
-          "width": 1080,
-          "height": 1080,
-          "sha256": "4ff0150c2e48cff15cd915d108c32add37e96db128195ebd0694eac783ca6885"
-        },
-        "source_visual": null,
-        "fingerprint": "7b9d05dbcfe035530b3b6e1fd4fb68e52f567795dd0319562a38255c54959ba9",
-        "template_version": "woek-title-3-glass",
-        "prompt_version": "woek-editorial-4-contextual",
-        "generated_at": "2026-09-07T23:04:48.698Z",
-        "status": "generated"
-      },
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "069ddc4fc48d97fd1424e09a87bec84ffd68316bb908755f35712e549714be79",
-        "first_failed_at": "2026-09-08T05:07:06.629Z",
-        "failed_at": "2026-09-08T05:07:06.629Z",
-        "retry_after": "2026-09-08T05:22:06.629Z",
-        "retry_count": 1
-      },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "21bb1d09ce4389b78ecc0fd230f48b986dfc14fa0bd037d0ada73e13c4dcb693",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/kanadische-gegenzoelle-auf-us-importe-treten-in-kraft-100.html",
-            "title": "Wirtschaft - Kanadische Gegenzölle auf US-Importe treten in Kraft",
-            "summary": "Im Zollstreit mit den USA treten heute die kanadischen Gegenzölle in Kraft.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T22:41:30.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "338b8aa91bf6cbd345949a78efcb3ff7b75d8393172d31ae77ce652e478b1766",
-            "source_item_id": "1262320604683e582e3d5275da0c3f497a043bb3b198706289a72ee7dd1ba111",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T22:41:30.000Z",
-            "ingested_at": "2026-09-07T23:02:05.417Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T05:22:06.629Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
-          "fingerprint": "31cf03c7ecf72817a52e78215243c6ff01395e135b42e700fd53277f4bb4521c",
           "issue_codes": [],
           "warning_codes": []
         }
@@ -14532,7 +15012,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T09:34:25.000Z",
-            "ingested_at": "2026-09-07T22:07:11.915Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -14553,7 +15033,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -15602,7 +16082,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "1db019db3e38cbd7a31297d78ff78c013fe66f289bde97e6059e3c3af70bc478",
           "issue_codes": [],
           "warning_codes": []
@@ -16120,7 +16600,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "b7f5639f7f80c881c0087114addf29e12ef58aa45d1e85b86dc126949c876b1a",
           "issue_codes": [],
           "warning_codes": []
@@ -17491,7 +17971,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T13:18:00.000Z",
-            "ingested_at": "2026-09-07T21:52:05.137Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -17512,7 +17992,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "32f1b71372689c5a76f43df9c61c7c3cf0e3d329473ffc9581aa734d0ea48ca7",
           "issue_codes": [],
           "warning_codes": []
@@ -18635,7 +19115,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -19718,7 +20198,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T19:00:00.000Z",
-            "ingested_at": "2026-09-07T20:36:52.379Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19739,7 +20219,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "a0b157a54aff36a283c77abad2b88e1f562a4e60b00ff860d864c5b29be9650b",
           "issue_codes": [],
           "warning_codes": []
@@ -20196,7 +20676,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T18:50:16.000Z",
-            "ingested_at": "2026-09-07T20:36:52.379Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20217,7 +20697,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "32109f3a33725b49b0363dc8f36ca1347de2021c527ee3c82bdd5589cf377e00",
           "issue_codes": [],
           "warning_codes": []
@@ -20935,7 +21415,7 @@
             "title": "Wirtschaft - Experten gehen von weiter steigenden Ölpreisen aus",
             "summary": "Experten gehen davon aus, dass die Ölpreise noch weiter steigen könnten.",
             "source_type": "media_rss",
-            "published_at": "2026-09-07T22:41:30.000Z",
+            "published_at": "2026-09-08T05:19:17.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -20951,8 +21431,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-07T22:41:30.000Z",
-            "ingested_at": "2026-09-07T23:02:05.417Z",
+            "source_published_at": "2026-09-08T05:19:17.000Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -20973,7 +21453,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "5ba7fa6aef1554ebcd20c32b027f2180e34370ffac999c0a1d4a9ca09276f831",
           "issue_codes": [],
           "warning_codes": []
@@ -22049,7 +22529,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T12:37:32.000Z",
-            "ingested_at": "2026-09-07T20:36:52.379Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -22059,10 +22539,12 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "CLAIM_INDEPENDENCE_NOT_ESTABLISHED"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-08T05:37:10.164Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -22070,11 +22552,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "471d8904d36e4cf7fbeb3ac1f379b0b29e16e02b57e317121bb9cc83cab5f6e2",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "76c3ab3907fd9d9c8866e43c0abf73cb2248f825f97af33e86ca12dd95f5cc01",
+        "first_failed_at": "2026-09-08T05:22:10.164Z",
+        "failed_at": "2026-09-08T05:22:10.164Z",
+        "retry_after": "2026-09-08T05:37:10.164Z",
+        "retry_count": 1
       }
     },
     {
@@ -24451,7 +24941,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -24626,7 +25116,7 @@
       "verification_started_at": "2026-09-07T18:54:41.209Z",
       "publish_ready_at": "2026-09-07T18:55:00.130Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -25857,9 +26347,12 @@
         "generated_at": "2026-09-07T18:55:29.757Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "86d6cde95af25600235abf1fc46173fba96b269e699d1497546419e553aa67e1",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "bbecad2a935d66f8319e42aae53fbaeac8283e26465e78cb76fdd3d6c7905507",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T11:22:10.164Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -25894,24 +26387,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
-          "fingerprint": "6946ebc5cc02b09dc682704a67909c12ef1c04f453aa7ed286818444c1198ef5",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-ab8e484fc06cc08f",
@@ -26544,7 +27022,7 @@
       "verification_started_at": "2026-09-07T18:37:49.197Z",
       "publish_ready_at": "2026-09-07T18:38:06.030Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -26889,9 +27367,12 @@
         "generated_at": "2026-09-07T18:38:37.223Z",
         "status": "generated"
       },
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "238fdc27afca6b53d3f4d672050540c010c5ff707f856129a54947b1afe1b155",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "aaf213b956348dd003cb2908f5807482a87d14461ae8f5c3b72a26a630861f29",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T11:22:10.164Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -26926,24 +27407,9 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
-          "fingerprint": "e11dbf50cdde256df07c3e49526de6258694e533aa3f89c199f0ab0db26afa0e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-49f028aa3748119b",
@@ -28468,9 +28934,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "56aefc13041c4f21a4a32f968131904ed07451290a81ed335548a63143a198e7",
-        "checked_at": "2026-09-08T05:07:06.629Z",
+        "checked_at": "2026-09-08T05:22:10.164Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-08T11:07:06.629Z",
+        "expires_at": "2026-09-08T11:22:10.164Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -33146,7 +33612,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "ebf362cc3b48bc248356e6ed31528b587e30421b23da0f19e37874b2f3f3334e",
           "issue_codes": [],
           "warning_codes": []
@@ -37843,7 +38309,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "2122a0987aa84e7058dfab934966642b53ebbcdc8959acff1200bb21324b2071",
           "issue_codes": [],
           "warning_codes": []
@@ -43927,7 +44393,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07T15:31:00.000Z",
-            "ingested_at": "2026-09-07T20:36:52.379Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -43948,7 +44414,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "c7065d7bddfc0a5fe2532fb3036eef21198f90d847b8d8a3fd55a9bafd5ce4d5",
           "issue_codes": [],
           "warning_codes": []
@@ -52720,7 +53186,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "61cdede7ffd98c0c07d77617f87997ea660b678592c246e8ec610d8015d670af",
           "issue_codes": [],
           "warning_codes": []
@@ -55382,7 +55848,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "ae4d196b63c679cd4fe3f7a1d23645a8fce015189688af85238bcee1829c8cc9",
           "issue_codes": [],
           "warning_codes": []
@@ -57890,7 +58356,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "a9aa7ff9d90fce923b4ca7a0cb4b2df108ee98aa9e344e28a1a2fde2862f55c5",
           "issue_codes": [],
           "warning_codes": []
@@ -58631,7 +59097,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "38f551b173e6ff751a938ff64594bc39c845e403d11fc183f262040a6f1c9fd1",
           "issue_codes": [],
           "warning_codes": []
@@ -70757,7 +71223,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T04:52:08.677Z",
+          "ingested_at": "2026-09-08T05:22:10.164Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -70818,7 +71284,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:07:06.629Z"
+          "checked_at": "2026-09-08T05:22:10.164Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -70838,7 +71304,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T05:07:06.629Z"
+          "checked_at": "2026-09-08T05:22:10.164Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -70854,7 +71320,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T05:07:06.629Z",
+      "updated_at": "2026-09-08T05:22:10.164Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -70894,7 +71360,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1200.2211,
+        "queue_age_minutes": 1215.2800166666666,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -70903,7 +71369,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T05:07:06.629Z",
+        "checked_at": "2026-09-08T05:22:10.164Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -89926,7 +90392,7 @@
       "verification_started_at": "2026-09-06T20:52:49.908Z",
       "publish_ready_at": "2026-09-06T20:53:01.243Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-08T05:00:00.000Z",
+      "deepening_due_at": "2026-09-08T10:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -90386,10 +90852,13 @@
         "retry_after": "2026-09-08T05:22:06.629Z",
         "retry_count": 1
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-08T05:07:06.629Z",
-        "content_hash": "5b7ac4e67eb150f87da4b9b014f21d0cf1c562e4c176c0dc52d5b68dad822134",
+      "deepening_checks": 2,
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "a9de57e35c7bb0e0c0b04e4f19dc91f70be8364aee43da274a9925de0d48d54a",
+        "checked_at": "2026-09-08T05:22:10.164Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-08T11:22:10.164Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -90424,26 +90893,7 @@
               "independence_established": false
             }
           }
-        ],
-        "reason": "QUALITY_GATE_FAILED",
-        "quality_errors": [
-          "AI_SOURCE_SUMMARY_LENGTH",
-          "AI_SOURCE_SUMMARY_PARAGRAPHS"
-        ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T05:22:06.629Z",
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
-          "fingerprint": "3bf37c73de8629126205c3a0cf8c95988ab5c19031b54b072aeb44fb6c3e8bf7",
-          "issue_codes": [],
-          "warning_codes": []
-        }
+        ]
       }
     },
     {
@@ -91434,7 +91884,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "48836379f4b07dba5c66121198a1883ff80f6a01fae584a314085abae77c25c4",
           "issue_codes": [],
           "warning_codes": []
@@ -92127,7 +92577,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "64c8e15d8fb33485b879fbd18212e87a9b7ae39b006dc98f9dd234422ce38cde",
           "issue_codes": [],
           "warning_codes": []
@@ -92881,7 +93331,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-01T06:00:00.000Z",
-            "ingested_at": "2026-09-07T23:37:00.002Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -92902,7 +93352,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "e394a7df3aa606de73764440d5ae2bc735924e87085772e03d1bf1c26cbcd861",
           "issue_codes": [],
           "warning_codes": []
@@ -93557,7 +94007,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "e5c7529cbc9a791de7ad4873a8fc37ef0ea0596b833ccff9611bff93e238a010",
           "issue_codes": [],
           "warning_codes": []
@@ -101440,7 +101890,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "0091c1049ad41b59aba5790b4938d9132468dfea339746e89df819d52a2a88e4",
           "issue_codes": [],
           "warning_codes": []
@@ -123245,9 +123695,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "f81b4c612e76ea68b1c7bc676a43efea41bc588d731f1c35836a6970e23f09b5",
         "first_failed_at": "2026-09-08T05:07:06.629Z",
-        "failed_at": "2026-09-08T05:07:06.629Z",
-        "retry_after": "2026-09-08T05:22:06.629Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T05:22:10.164Z",
+        "retry_after": "2026-09-08T05:52:10.164Z",
+        "retry_count": 2
       },
       "pending_update": {
         "detected_at": "2026-09-08T05:07:06.629Z",
@@ -123276,7 +123726,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-08-31T12:00:00.000Z",
-            "ingested_at": "2026-09-07T18:22:09.938Z",
+            "ingested_at": "2026-09-08T05:22:10.164Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -123288,11 +123738,10 @@
         ],
         "reason": "QUALITY_GATE_FAILED",
         "quality_errors": [
-          "AI_SUMMARY_SENTENCE_COUNT",
           "AI_SOURCE_SUMMARY_LENGTH"
         ],
-        "quality_retry_count": 1,
-        "quality_retry_after": "2026-09-08T05:22:06.629Z",
+        "quality_retry_count": 2,
+        "quality_retry_after": "2026-09-08T05:52:10.164Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -123300,7 +123749,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "241b02e7e0fc7b7f00f7cb033d11e7e27659661c7e62c33bee16d295f0e7341f",
           "issue_codes": [],
           "warning_codes": []
@@ -129330,7 +129779,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -173684,7 +174133,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T05:07:06.629Z",
+          "checked_at": "2026-09-08T05:22:10.164Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

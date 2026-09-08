@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-08T05:09:39.798Z",
+  "started_at": "2026-09-08T05:25:44.347Z",
   "scanned_stories": 142,
   "scanned_subjects": 123,
   "editorial_candidates": 24,
@@ -15,16 +15,16 @@
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
   "research_calls": 2,
-  "research_tokens": 16664,
-  "analysis_tokens": 14616,
-  "estimated_cost_usd": 0.075159,
+  "research_tokens": 16758,
+  "analysis_tokens": 14550,
+  "estimated_cost_usd": 0.076834,
   "quality_retries": 1,
   "publication_deferred": true,
   "failed": [
     {
       "story_id": "wt-de413d33343f350b",
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED",
-      "next_attempt_at": "2026-09-08T05:39:39.798Z"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+      "next_attempt_at": "2026-09-08T05:40:44.347Z"
     }
   ],
   "candidates": [
@@ -66,7 +66,7 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "4c534a5b7bf2a721d79973a2792dfa08b34cc2d81929c8c48dfd7dbcf989e987",
+      "fingerprint": "11f50deb25a1b01e51b0ef684201e4cc6dcb708111c8fd7f40f7dad9adc97845",
       "status": "ready_for_research",
       "analysis_id": null
     },
@@ -1067,5 +1067,5 @@
     "attention_required": []
   },
   "batch_deferred": 1,
-  "completed_at": "2026-09-08T05:11:04.728Z"
+  "completed_at": "2026-09-08T05:27:31.946Z"
 }
