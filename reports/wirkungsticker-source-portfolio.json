@@ -22,9 +22,9 @@
     "coverage_good": 27,
     "coverage_partial": 12,
     "coverage_critical_gap": 1,
-    "performance_items_seen": 127535,
+    "performance_items_seen": 127778,
     "regional_states_configured": 15,
-    "regional_states_healthy": 15,
+    "regional_states_healthy": 14,
     "regional_journalistic_states": 13,
     "regional_missing_states": [
       "DE-SL"
@@ -460,15 +460,17 @@
     }
   ],
   "regional_coverage": {
-    "checked_at": "2026-09-07T23:52:11.826Z",
+    "checked_at": "2026-09-08T00:06:52.179Z",
     "required_states": 16,
     "configured_states": 15,
-    "healthy_states": 15,
+    "healthy_states": 14,
     "journalistic_states": 13,
     "missing_states": [
       "DE-SL"
     ],
-    "degraded_states": [],
+    "degraded_states": [
+      "DE-HB"
+    ],
     "awaiting_first_run": [],
     "review_required": true,
     "rows": [
@@ -514,7 +516,7 @@
             "trial_mode": true,
             "status": "active",
             "content_warning": null,
-            "last_success": "2026-09-07T23:02:05.417Z",
+            "last_success": "2026-09-08T00:06:52.179Z",
             "latest_item": "2026-09-07T13:02:31.000Z",
             "last_error": null,
             "governance_hold_until": null,
@@ -585,7 +587,7 @@
       {
         "code": "DE-HB",
         "name": "Bremen",
-        "status": "monitored",
+        "status": "degraded",
         "configured": true,
         "journalistic_source_configured": false,
         "journalistic_source_healthy": false,
@@ -596,14 +598,14 @@
             "name": "Bremen - Pressestelle des Senats",
             "scope": "official_statements",
             "trial_mode": true,
-            "status": "active",
+            "status": "disturbed",
             "content_warning": null,
             "last_success": "2026-09-07T23:02:05.417Z",
             "latest_item": "2026-09-07T00:00:00.000Z",
-            "last_error": null,
+            "last_error": "fetch failed",
             "governance_hold_until": null,
             "interval_minutes": 60,
-            "error_rate": 0
+            "error_rate": 0.031
           }
         ],
         "inactive_candidates": []
@@ -1869,7 +1871,7 @@
         "items_published": 0,
         "items_story_updates": 0,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 54,
+        "items_source_integrity_failed": 55,
         "items_corrected_later": 0,
         "ai_input_tokens": 0,
         "ai_output_tokens": 0,
@@ -2281,9 +2283,9 @@
       ],
       "source_utility_score": 50.7,
       "metrics": {
-        "items_seen": 1240,
+        "items_seen": 1280,
         "items_local_rejected": 3,
-        "items_duplicate": 54,
+        "items_duplicate": 58,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 1,
@@ -2308,7 +2310,7 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 50,
+      "source_utility_score": 49.1,
       "metrics": {
         "items_seen": 620,
         "items_local_rejected": 0,
@@ -2324,7 +2326,7 @@
         "ai_input_tokens": 0,
         "ai_output_tokens": 0,
         "estimated_ai_cost": 0,
-        "fetch_failures": 0,
+        "fetch_failures": 1,
         "parse_failures": 0
       }
     },
@@ -2474,9 +2476,9 @@
       ],
       "source_utility_score": 45.5,
       "metrics": {
-        "items_seen": 1380,
+        "items_seen": 1410,
         "items_local_rejected": 10,
-        "items_duplicate": 600,
+        "items_duplicate": 620,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -2645,15 +2647,15 @@
         "items_duplicate": 1324,
         "items_existing_story": 224,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 207,
+        "items_full_analyzed": 209,
         "items_published": 13,
         "items_story_updates": 6,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 103,
+        "items_source_integrity_failed": 104,
         "items_corrected_later": 0,
-        "ai_input_tokens": 1037404,
-        "ai_output_tokens": 80183,
-        "estimated_ai_cost": 0.691955,
+        "ai_input_tokens": 1049290,
+        "ai_output_tokens": 80436,
+        "estimated_ai_cost": 0.696047,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2672,15 +2674,15 @@
         "items_duplicate": 5734,
         "items_existing_story": 141,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 134,
+        "items_full_analyzed": 135,
         "items_published": 9,
         "items_story_updates": 3,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 39,
         "items_corrected_later": 0,
-        "ai_input_tokens": 523880,
-        "ai_output_tokens": 42181,
-        "estimated_ai_cost": 0.368464,
+        "ai_input_tokens": 527594,
+        "ai_output_tokens": 42246,
+        "estimated_ai_cost": 0.369555,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -2833,9 +2835,9 @@
       ],
       "source_utility_score": 47,
       "metrics": {
-        "items_seen": 300,
+        "items_seen": 312,
         "items_local_rejected": 0,
-        "items_duplicate": 75,
+        "items_duplicate": 78,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -3139,11 +3141,11 @@
       "review_reasons": [
         "no_unique_publication_in_30_days"
       ],
-      "source_utility_score": 60.9,
+      "source_utility_score": 60.8,
       "metrics": {
-        "items_seen": 920,
+        "items_seen": 940,
         "items_local_rejected": 14,
-        "items_duplicate": 403,
+        "items_duplicate": 419,
         "items_existing_story": 7,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 8,
@@ -3227,15 +3229,15 @@
         "items_duplicate": 1813,
         "items_existing_story": 30,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 37,
+        "items_full_analyzed": 38,
         "items_published": 3,
         "items_story_updates": 1,
         "items_primary_source_found": 0,
         "items_source_integrity_failed": 37,
         "items_corrected_later": 0,
-        "ai_input_tokens": 299448,
-        "ai_output_tokens": 54570,
-        "estimated_ai_cost": 0.357612,
+        "ai_input_tokens": 308603,
+        "ai_output_tokens": 54698,
+        "estimated_ai_cost": 0.365054,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -3254,15 +3256,15 @@
         "items_duplicate": 5531,
         "items_existing_story": 27,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 47,
+        "items_full_analyzed": 48,
         "items_published": 2,
-        "items_story_updates": 0,
+        "items_story_updates": 1,
         "items_primary_source_found": 0,
-        "items_source_integrity_failed": 55,
+        "items_source_integrity_failed": 56,
         "items_corrected_later": 0,
-        "ai_input_tokens": 383164,
-        "ai_output_tokens": 74492,
-        "estimated_ai_cost": 0.485946,
+        "ai_input_tokens": 392624,
+        "ai_output_tokens": 76840,
+        "estimated_ai_cost": 0.499633,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -3392,9 +3394,9 @@
       ],
       "source_utility_score": 91.9,
       "metrics": {
-        "items_seen": 506,
+        "items_seen": 517,
         "items_local_rejected": 2,
-        "items_duplicate": 476,
+        "items_duplicate": 486,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 3,
@@ -3421,9 +3423,9 @@
       ],
       "source_utility_score": 45,
       "metrics": {
-        "items_seen": 460,
+        "items_seen": 470,
         "items_local_rejected": 0,
-        "items_duplicate": 230,
+        "items_duplicate": 235,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -3482,15 +3484,15 @@
         "items_duplicate": 3398,
         "items_existing_story": 97,
         "items_short_ai_checked": 0,
-        "items_full_analyzed": 127,
+        "items_full_analyzed": 128,
         "items_published": 17,
         "items_story_updates": 6,
         "items_primary_source_found": 6,
-        "items_source_integrity_failed": 97,
+        "items_source_integrity_failed": 98,
         "items_corrected_later": 0,
-        "ai_input_tokens": 649339,
-        "ai_output_tokens": 73559,
-        "estimated_ai_cost": 0.551384,
+        "ai_input_tokens": 656777,
+        "ai_output_tokens": 73710,
+        "estimated_ai_cost": 0.553668,
         "fetch_failures": 0,
         "parse_failures": 0
       }
@@ -3535,9 +3537,9 @@
       ],
       "source_utility_score": 46.9,
       "metrics": {
-        "items_seen": 2760,
+        "items_seen": 2820,
         "items_local_rejected": 2,
-        "items_duplicate": 841,
+        "items_duplicate": 860,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 0,
@@ -3564,9 +3566,9 @@
       ],
       "source_utility_score": 48.5,
       "metrics": {
-        "items_seen": 2760,
+        "items_seen": 2820,
         "items_local_rejected": 3,
-        "items_duplicate": 685,
+        "items_duplicate": 701,
         "items_existing_story": 0,
         "items_short_ai_checked": 0,
         "items_full_analyzed": 1,
