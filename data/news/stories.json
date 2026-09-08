@@ -1,522 +1,16 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T21:36:51.819Z",
-  "updated_at": "2026-09-08T22:36:50.333Z",
+  "updated_at": "2026-09-08T22:52:15.096Z",
   "stories": [
-    {
-      "story_id": "wt-5a2fe52ebad137c3",
-      "slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
-      "title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
-      "first_seen": "2026-09-08T21:23:47.000Z",
-      "last_updated": "2026-09-08T21:37:44.215Z",
-      "published_at": "2026-09-08T21:37:44.215Z",
-      "updated_at": "2026-09-08T21:37:44.215Z",
-      "topic": [
-        "Finanzen"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-          "title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
-          "summary": "Die umstrittene US-Einwanderungsbehörde ICE darf keinen Zugriff auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten. Das Berufungsgericht für den Hauptstadtbezirk Washington erklärte eine Vereinbarung von ICE mit der Steuerbehörde IRS aus dem vergangenen Jahr am Dienstag für rechtswidrig. Das Gericht bestätigte ein erstinstanzliches Urteil, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T21:23:47.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "e7a0f388a72ef499e1b0b291f686e9bc7fc5c43f793e3031a2fcf3bc51372057",
-          "source_item_id": "4990840bd85bf415dd2eafa0f71a68b53f228c64e3e12d2a483434916be4822b",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T21:23:47.000Z",
-          "ingested_at": "2026-09-08T21:36:51.819Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-5a2fe52ebad137c3-v1-claim-1",
-          "story_id": "wt-5a2fe52ebad137c3",
-          "claim": "Ein US-Berufungsgericht hat laut der vorliegenden Quelle eine Vereinbarung zwischen ICE und IRS aus dem vergangenen Jahr für rechtswidrig erklärt.",
-          "status": "single_source_claim",
-          "source_id": "stern-schlagzeilen",
-          "evidence": [
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-              "excerpt_hash": "402e3a6c8bcc90e6b845",
-              "checked_at": "2026-09-08T21:37:44.215Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-08T21:37:44.215Z"
-        },
-        {
-          "claim_id": "wt-5a2fe52ebad137c3-v1-claim-2",
-          "story_id": "wt-5a2fe52ebad137c3",
-          "claim": "Die Weitergabe vertraulicher Steuerzahlerdaten von Migranten ohne Aufenthaltstitel soll damit gestoppt sein.",
-          "status": "single_source_claim",
-          "source_id": "stern-schlagzeilen",
-          "evidence": [
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-              "excerpt_hash": "402e3a6c8bcc90e6b845",
-              "checked_at": "2026-09-08T21:37:44.215Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-08T21:37:44.215Z"
-        },
-        {
-          "claim_id": "wt-5a2fe52ebad137c3-v1-claim-3",
-          "story_id": "wt-5a2fe52ebad137c3",
-          "claim": "Das Gericht bestätigte laut Quelle ein erstinstanzliches Urteil, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte.",
-          "status": "single_source_claim",
-          "source_id": "stern-schlagzeilen",
-          "evidence": [
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-              "excerpt_hash": "67a177b16095cd1bf043",
-              "checked_at": "2026-09-08T21:37:44.215Z"
-            }
-          ],
-          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-          "checked_at": "2026-09-08T21:37:44.215Z"
-        }
-      ],
-      "event_id": "event-0413e758b0b10f40c221",
-      "event_first_seen_at": "2026-09-08T21:36:51.819Z",
-      "event_detected_at": "2026-09-08T21:36:51.819Z",
-      "verification_started_at": "2026-09-08T21:37:26.631Z",
-      "publish_ready_at": "2026-09-08T21:37:44.215Z",
-      "news_status": "developing",
-      "deepening_due_at": "2026-09-09T05:00:00.000Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T21:36:51.819Z",
-        "fingerprint": "25d3c53ed201aece967d7033344bfd1ac328395888f5a501a8fce29f3d3c381a",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "followups": [
-        {
-          "claim": "Prüfung der Originalentscheidung und ihres genauen Tenors",
-          "source_id": "stern-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Originalurteil oder amtliche Mitteilung liegt vor",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-0da65aa92968c031",
-          "announced_at": "2026-09-08T21:23:47.000Z",
-          "follow_up_date": "2026-09-15T21:37:44.215Z",
-          "status": "scheduled"
-        }
-      ],
-      "content_hash": "c986ceb235ec2a84b59cbf2a4097c7101712263e5acec64175c9dea9754a9256",
-      "published": true,
-      "listed": true,
-      "analysis_status": "veröffentlicht",
-      "relevance_filter_version": "4.0",
-      "current_version": 1,
-      "numeric_evidence": {
-        "version": 1,
-        "analysis_version": 1,
-        "checked_at": "2026-09-08T21:37:44.215Z",
-        "sources": []
-      },
-      "source_summary": "Ein US-Berufungsgericht in Washington hat laut der vorliegenden Quelle eine Vereinbarung zwischen der Einwanderungsbehörde ICE und der Steuerbehörde IRS aus dem vergangenen Jahr für rechtswidrig erklärt. Damit soll ICE keinen Zugriff auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten.\n\nDie Quelle berichtet zudem, dass ein erstinstanzliches Urteil bestätigt wurde, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte. Offen bleibt hier, wie der Volltext des Urteils genau begründet ist und ob weitere Verfahrensschritte folgen.",
-      "analysis": {
-        "story_id": "wt-5a2fe52ebad137c3",
-        "publication_recommendation": true,
-        "news_status": "developing",
-        "publication_depth": "initial",
-        "summary": "Ein US-Berufungsgericht hat laut Quelle die Weitergabe sensibler Steuerdaten an ICE gestoppt. Der Fall ist für Datenschutz, Migrationsverwaltung und staatliche Zugriffsbefugnisse materiell relevant.",
-        "detail_summary": "Die Meldung beschreibt eine gerichtliche Entscheidung mit unmittelbarer Zustandsänderung: Eine zuvor bestehende oder geplante Datenweitergabe zwischen IRS und ICE soll vorerst unzulässig sein. Das ist für Betroffene, Behördenpraxis und Datenschutz relevant, weil der Zugriff auf sensible Steuerdaten begrenzt wird. Ein möglicher Wirkpfad betrifft den Schutz personenbezogener Daten und die behördliche Nutzung solcher Daten in der Migrationsdurchsetzung. Eine mögliche Folge ist eine stärkere rechtliche Hürde für ähnliche Datennutzungen; die Breite und Dauer bleiben aber offen. Belastbar ist hier nur der berichtete Kern aus einer journalistischen Quelle, nicht der Volltext des Urteils.",
-        "why_relevant": "Die Meldung betrifft eine rechtlich bindende Entscheidung mit Folgen für Datenschutz, Verwaltungspraxis und den staatlichen Zugriff auf sensible Daten.",
-        "status": "offen",
-        "analysis_type": "ex_ante",
-        "direction_assessment_version": "1.0",
-        "human": {
-          "relevance": "hoch",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Wenn die Weitergabe tatsächlich untersagt bleibt, stärkt das den Schutz persönlicher Daten und begrenzt behördliche Zugriffsmöglichkeiten. Der Wirkpfad ist direkt, aber die praktische Reichweite bleibt ohne Volltext offen.",
-          "positive_path": {
-            "mechanism": "Begrenzter Zugriff auf sensible Steuerdaten reduziert das Risiko unzulässiger Nutzung gegen Betroffene.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ein enger gerichtlicher Eingriff kann Behördenabstimmung erschweren und künftige Prüf- oder Vollzugswege verlangsamen.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Aus der Meldung ergibt sich kein belastbarer Umwelt- oder Klimawirkpfad.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Die Entscheidung betrifft rechtsstaatliche Kontrolle staatlicher Datenverwendung und damit die demokratische Korrekturfähigkeit von Behördenhandeln. Der Effekt ist institutionell, nicht personenbezogen.",
-          "positive_path": {
-            "mechanism": "Gerichtliche Begrenzung behördlicher Datenzugriffe stärkt Kontrolle und Bindung an Recht.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ein konflikthafter Streit um Datenzugriffe kann das Vertrauen in Behördenpraxis weiter belasten, wenn Regeln unklar bleiben.",
-            "source_ids": [
-              "stern-schlagzeilen"
-            ]
-          }
-        },
-        "importance": "hoch",
-        "impact_potential": "Die Entscheidung kann die Nutzung sensibler Steuerdaten für Migrationszwecke rechtlich begrenzen und damit Verwaltungspraxis, Datenschutz und gerichtliche Kontrolle beeinflussen.",
-        "impact_risks": [
-          "Rechtliche Unsicherheit für künftige Datenabkommen",
-          "Verlangsamte behördliche Abläufe bei Datenprüfung und Vollzug"
-        ],
-        "mechanisms": [
-          "gerichtliche Untersagung staatlicher Datenweitergabe",
-          "Begrenzung behördlicher Zugriffsbefugnisse",
-          "Stärkung rechtlicher Kontrolle"
-        ],
-        "first_order": [
-          "Stopp oder Begrenzung der Datenweitergabe zwischen IRS und ICE"
-        ],
-        "second_order": [
-          "Anpassung von Verwaltungsabkommen und internen Prüfprozessen"
-        ],
-        "third_order": [
-          "Präzedenzwirkung für ähnliche Datenzugriffe in anderen Verfahren"
-        ],
-        "systemic_relevance": "Der Fall berührt das Verhältnis von Datenschutz, Verwaltungskooperation und gerichtlicher Kontrolle staatlicher Eingriffe. Dadurch kann er über den Einzelfall hinaus Standards für sensible Datennutzung beeinflussen.",
-        "transformation_potential": "Mittel: Nicht die Politik insgesamt, aber ein Teilbereich staatlicher Datenpraxis kann durch gerichtliche Grenzen dauerhaft verändert werden.",
-        "resilience": "Stärker, wenn klare rechtliche Grenzen die Fehlverwendung sensibler Daten verhindern; schwächer, wenn unklare Regeln neue Streitfälle erzeugen.",
-        "side_effects": [
-          "Mehr rechtliche Prüfpflichten",
-          "Mögliche Verzögerungen bei behördlicher Zusammenarbeit"
-        ],
-        "uncertainties": [
-          "Der Urteilstext liegt hier nicht vor",
-          "Umfang und Dauer der Sperre bleiben offen",
-          "Folgeverfahren sind nicht beschrieben"
-        ],
-        "evidence_level": "low",
-        "attribution": "Quelle: stern; Sprecher: nicht genannt; Originalformulierung in indirekter Wiedergabe; Platzierung im Titel und Abstract; Attribution klar als Bericht, nicht als Originaldokument.",
-        "watch_next": [
-          "Originalurteil oder amtliche Mitteilung",
-          "Mögliche Berufung oder weitere Verfahrensschritte",
-          "Reaktion von ICE und IRS"
-        ],
-        "reference_frameworks": [
-          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
-        ],
-        "publication_gate": {
-          "news_value": "binding_decision",
-          "materiality_factors": [
-            "affected_scope",
-            "duration"
-          ],
-          "exceptional_factor": "democratic_correctability",
-          "evidence_basis": "attributed_single_source",
-          "duplicate_status": "new_story",
-          "rationale": "Eine gerichtliche Untersagung mit Bezug auf 1,28 Millionen Menschen ist neu und materiell; die Evidenz stammt jedoch nur aus einer journalistischen Quelle, daher vorsichtig formulieren."
-        },
-        "visuals": null,
-        "media_impact": null,
-        "media_analysis_version": "2.1",
-        "media_checked_at": "2026-09-08T21:36:51.819Z",
-        "media_trigger_fingerprint": "9123f911ca4a3271eda903f9d31ae86692915186a9aa7b3218fc7c414aac3622",
-        "media_trigger": {
-          "relevant": false,
-          "level": "low",
-          "score": 0,
-          "reasons": [],
-          "matched_terms": [],
-          "source_count": 1,
-          "comparable_source_count": 1,
-          "fingerprint": "9123f911ca4a3271eda903f9d31ae86692915186a9aa7b3218fc7c414aac3622",
-          "content_fingerprint": "47c5c8b4d8a6bcd830b73fabb84c1b95df57727bb26cb5d61696514205e31a26",
-          "basis": "feed_metadata",
-          "version": "2.1"
-        }
-      },
-      "versions": [
-        {
-          "version": 1,
-          "analyzed_at": "2026-09-08T21:37:44.215Z",
-          "content_hash": "c986ceb235ec2a84b59cbf2a4097c7101712263e5acec64175c9dea9754a9256",
-          "source_summary": "Ein US-Berufungsgericht in Washington hat laut der vorliegenden Quelle eine Vereinbarung zwischen der Einwanderungsbehörde ICE und der Steuerbehörde IRS aus dem vergangenen Jahr für rechtswidrig erklärt. Damit soll ICE keinen Zugriff auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten.\n\nDie Quelle berichtet zudem, dass ein erstinstanzliches Urteil bestätigt wurde, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte. Offen bleibt hier, wie der Volltext des Urteils genau begründet ist und ob weitere Verfahrensschritte folgen.",
-          "analysis": {
-            "story_id": "wt-5a2fe52ebad137c3",
-            "publication_recommendation": true,
-            "news_status": "developing",
-            "publication_depth": "initial",
-            "summary": "Ein US-Berufungsgericht hat laut Quelle die Weitergabe sensibler Steuerdaten an ICE gestoppt. Der Fall ist für Datenschutz, Migrationsverwaltung und staatliche Zugriffsbefugnisse materiell relevant.",
-            "detail_summary": "Die Meldung beschreibt eine gerichtliche Entscheidung mit unmittelbarer Zustandsänderung: Eine zuvor bestehende oder geplante Datenweitergabe zwischen IRS und ICE soll vorerst unzulässig sein. Das ist für Betroffene, Behördenpraxis und Datenschutz relevant, weil der Zugriff auf sensible Steuerdaten begrenzt wird. Ein möglicher Wirkpfad betrifft den Schutz personenbezogener Daten und die behördliche Nutzung solcher Daten in der Migrationsdurchsetzung. Eine mögliche Folge ist eine stärkere rechtliche Hürde für ähnliche Datennutzungen; die Breite und Dauer bleiben aber offen. Belastbar ist hier nur der berichtete Kern aus einer journalistischen Quelle, nicht der Volltext des Urteils.",
-            "why_relevant": "Die Meldung betrifft eine rechtlich bindende Entscheidung mit Folgen für Datenschutz, Verwaltungspraxis und den staatlichen Zugriff auf sensible Daten.",
-            "status": "offen",
-            "analysis_type": "ex_ante",
-            "direction_assessment_version": "1.0",
-            "human": {
-              "relevance": "hoch",
-              "tendency": "chance",
-              "direction_basis": "assessed",
-              "rationale": "Wenn die Weitergabe tatsächlich untersagt bleibt, stärkt das den Schutz persönlicher Daten und begrenzt behördliche Zugriffsmöglichkeiten. Der Wirkpfad ist direkt, aber die praktische Reichweite bleibt ohne Volltext offen.",
-              "positive_path": {
-                "mechanism": "Begrenzter Zugriff auf sensible Steuerdaten reduziert das Risiko unzulässiger Nutzung gegen Betroffene.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "negative_path": {
-                "mechanism": "Ein enger gerichtlicher Eingriff kann Behördenabstimmung erschweren und künftige Prüf- oder Vollzugswege verlangsamen.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              }
-            },
-            "planet": {
-              "relevance": "gering",
-              "tendency": "offen",
-              "direction_basis": "no_path",
-              "rationale": "Aus der Meldung ergibt sich kein belastbarer Umwelt- oder Klimawirkpfad.",
-              "positive_path": null,
-              "negative_path": null
-            },
-            "democracy": {
-              "relevance": "hoch",
-              "tendency": "chance",
-              "direction_basis": "assessed",
-              "rationale": "Die Entscheidung betrifft rechtsstaatliche Kontrolle staatlicher Datenverwendung und damit die demokratische Korrekturfähigkeit von Behördenhandeln. Der Effekt ist institutionell, nicht personenbezogen.",
-              "positive_path": {
-                "mechanism": "Gerichtliche Begrenzung behördlicher Datenzugriffe stärkt Kontrolle und Bindung an Recht.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              },
-              "negative_path": {
-                "mechanism": "Ein konflikthafter Streit um Datenzugriffe kann das Vertrauen in Behördenpraxis weiter belasten, wenn Regeln unklar bleiben.",
-                "source_ids": [
-                  "stern-schlagzeilen"
-                ]
-              }
-            },
-            "importance": "hoch",
-            "impact_potential": "Die Entscheidung kann die Nutzung sensibler Steuerdaten für Migrationszwecke rechtlich begrenzen und damit Verwaltungspraxis, Datenschutz und gerichtliche Kontrolle beeinflussen.",
-            "impact_risks": [
-              "Rechtliche Unsicherheit für künftige Datenabkommen",
-              "Verlangsamte behördliche Abläufe bei Datenprüfung und Vollzug"
-            ],
-            "mechanisms": [
-              "gerichtliche Untersagung staatlicher Datenweitergabe",
-              "Begrenzung behördlicher Zugriffsbefugnisse",
-              "Stärkung rechtlicher Kontrolle"
-            ],
-            "first_order": [
-              "Stopp oder Begrenzung der Datenweitergabe zwischen IRS und ICE"
-            ],
-            "second_order": [
-              "Anpassung von Verwaltungsabkommen und internen Prüfprozessen"
-            ],
-            "third_order": [
-              "Präzedenzwirkung für ähnliche Datenzugriffe in anderen Verfahren"
-            ],
-            "systemic_relevance": "Der Fall berührt das Verhältnis von Datenschutz, Verwaltungskooperation und gerichtlicher Kontrolle staatlicher Eingriffe. Dadurch kann er über den Einzelfall hinaus Standards für sensible Datennutzung beeinflussen.",
-            "transformation_potential": "Mittel: Nicht die Politik insgesamt, aber ein Teilbereich staatlicher Datenpraxis kann durch gerichtliche Grenzen dauerhaft verändert werden.",
-            "resilience": "Stärker, wenn klare rechtliche Grenzen die Fehlverwendung sensibler Daten verhindern; schwächer, wenn unklare Regeln neue Streitfälle erzeugen.",
-            "side_effects": [
-              "Mehr rechtliche Prüfpflichten",
-              "Mögliche Verzögerungen bei behördlicher Zusammenarbeit"
-            ],
-            "uncertainties": [
-              "Der Urteilstext liegt hier nicht vor",
-              "Umfang und Dauer der Sperre bleiben offen",
-              "Folgeverfahren sind nicht beschrieben"
-            ],
-            "evidence_level": "low",
-            "attribution": "Quelle: stern; Sprecher: nicht genannt; Originalformulierung in indirekter Wiedergabe; Platzierung im Titel und Abstract; Attribution klar als Bericht, nicht als Originaldokument.",
-            "watch_next": [
-              "Originalurteil oder amtliche Mitteilung",
-              "Mögliche Berufung oder weitere Verfahrensschritte",
-              "Reaktion von ICE und IRS"
-            ],
-            "reference_frameworks": [
-              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
-            ],
-            "publication_gate": {
-              "news_value": "binding_decision",
-              "materiality_factors": [
-                "affected_scope",
-                "duration"
-              ],
-              "exceptional_factor": "democratic_correctability",
-              "evidence_basis": "attributed_single_source",
-              "duplicate_status": "new_story",
-              "rationale": "Eine gerichtliche Untersagung mit Bezug auf 1,28 Millionen Menschen ist neu und materiell; die Evidenz stammt jedoch nur aus einer journalistischen Quelle, daher vorsichtig formulieren."
-            },
-            "visuals": null,
-            "media_impact": null,
-            "media_analysis_version": "2.1",
-            "media_checked_at": "2026-09-08T21:36:51.819Z",
-            "media_trigger_fingerprint": "9123f911ca4a3271eda903f9d31ae86692915186a9aa7b3218fc7c414aac3622",
-            "media_trigger": {
-              "relevant": false,
-              "level": "low",
-              "score": 0,
-              "reasons": [],
-              "matched_terms": [],
-              "source_count": 1,
-              "comparable_source_count": 1,
-              "fingerprint": "9123f911ca4a3271eda903f9d31ae86692915186a9aa7b3218fc7c414aac3622",
-              "content_fingerprint": "47c5c8b4d8a6bcd830b73fabb84c1b95df57727bb26cb5d61696514205e31a26",
-              "basis": "feed_metadata",
-              "version": "2.1"
-            }
-          },
-          "provider": "Oracle WOeK-KI API",
-          "model": "gpt-5.4-mini",
-          "mode": "newsroom-oracle-llm",
-          "method_sources": [],
-          "claims": [
-            {
-              "claim_id": "wt-5a2fe52ebad137c3-v1-claim-1",
-              "story_id": "wt-5a2fe52ebad137c3",
-              "claim": "Ein US-Berufungsgericht hat laut der vorliegenden Quelle eine Vereinbarung zwischen ICE und IRS aus dem vergangenen Jahr für rechtswidrig erklärt.",
-              "status": "single_source_claim",
-              "source_id": "stern-schlagzeilen",
-              "evidence": [
-                {
-                  "source_id": "stern-schlagzeilen",
-                  "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-                  "excerpt_hash": "402e3a6c8bcc90e6b845",
-                  "checked_at": "2026-09-08T21:37:44.215Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-08T21:37:44.215Z"
-            },
-            {
-              "claim_id": "wt-5a2fe52ebad137c3-v1-claim-2",
-              "story_id": "wt-5a2fe52ebad137c3",
-              "claim": "Die Weitergabe vertraulicher Steuerzahlerdaten von Migranten ohne Aufenthaltstitel soll damit gestoppt sein.",
-              "status": "single_source_claim",
-              "source_id": "stern-schlagzeilen",
-              "evidence": [
-                {
-                  "source_id": "stern-schlagzeilen",
-                  "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-                  "excerpt_hash": "402e3a6c8bcc90e6b845",
-                  "checked_at": "2026-09-08T21:37:44.215Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-08T21:37:44.215Z"
-            },
-            {
-              "claim_id": "wt-5a2fe52ebad137c3-v1-claim-3",
-              "story_id": "wt-5a2fe52ebad137c3",
-              "claim": "Das Gericht bestätigte laut Quelle ein erstinstanzliches Urteil, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte.",
-              "status": "single_source_claim",
-              "source_id": "stern-schlagzeilen",
-              "evidence": [
-                {
-                  "source_id": "stern-schlagzeilen",
-                  "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-                  "excerpt_hash": "67a177b16095cd1bf043",
-                  "checked_at": "2026-09-08T21:37:44.215Z"
-                }
-              ],
-              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
-              "checked_at": "2026-09-08T21:37:44.215Z"
-            }
-          ],
-          "source_versions": [
-            {
-              "source_id": "stern-schlagzeilen",
-              "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
-              "content_hash": "e7a0f388a72ef499e1b0b291f686e9bc7fc5c43f793e3031a2fcf3bc51372057"
-            }
-          ],
-          "numeric_evidence": {
-            "version": 1,
-            "analysis_version": 1,
-            "checked_at": "2026-09-08T21:37:44.215Z",
-            "sources": []
-          }
-        }
-      ],
-      "publication_history": [
-        {
-          "version": 1,
-          "published_at": "2026-09-08T21:37:44.215Z",
-          "source_count": 1
-        }
-      ],
-      "retirement_history": [],
-      "title_image": {
-        "mode": "impact_card",
-        "source_visual": null,
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630,
-          "layout": "landscape",
-          "label": "OpenGraph, LinkedIn, X (1,91:1)"
-        },
-        "status": "fallback",
-        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T21:54:28.447Z"
-      }
-    },
     {
       "story_id": "wt-4409a2f6e240d133",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "7d5d907f4c7bd889a7e620fb3f02c5803549ba17b36b517caaf713fdabdee62f",
-        "first_failed_at": "2026-09-08T22:36:50.333Z",
-        "failed_at": "2026-09-08T22:36:50.333Z",
-        "retry_after": "2026-09-08T22:51:50.333Z",
+        "fingerprint": "dbad54db3defd0e7f90906427033ca6903dce4e97d0dca73c7082f2454b69d7c",
+        "first_failed_at": "2026-09-08T22:52:15.096Z",
+        "failed_at": "2026-09-08T22:52:15.096Z",
+        "retry_after": "2026-09-08T23:07:15.096Z",
         "retry_count": 1
       },
       "slug": "polizei-nimmt-mutmasslichen-strom-saboteur-fest-40d133",
@@ -1619,7 +1113,7 @@
         }
       ],
       "first_seen": "2026-09-08T11:06:00.000Z",
-      "last_updated": "2026-09-08T21:24:10.000Z",
+      "last_updated": "2026-09-08T22:43:08.000Z",
       "topic": [
         "Energie"
       ],
@@ -1648,7 +1142,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:06:00.000Z",
-          "ingested_at": "2026-09-08T21:52:27.208Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1692,6 +1186,39 @@
           },
           "collection_source_id": "swr-aktuell",
           "collection_publisher_id": "swr"
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/polizei-nimmt-mutmasslichen-strom-saboteur-fest-102.html",
+          "title": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest",
+          "summary": "Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:43:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9d1bc10432933339d28b554485ac950820913c50b1904997ae22c723b260ecd9",
+          "source_item_id": "b0923c438c21362f84ec2fcc203c9494f5ac5f16cf92096765867a5d7a7b3000",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:43:08.000Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
         }
       ],
       "claims": [
@@ -1713,7 +1240,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T22:36:50.333Z"
+          "checked_at": "2026-09-08T22:52:15.096Z"
         },
         {
           "claim_id": "wt-4409a2f6e240d133-claim-02",
@@ -1734,20 +1261,44 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T22:36:50.333Z"
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        },
+        {
+          "claim_id": "wt-4409a2f6e240d133-claim-03",
+          "story_id": "wt-4409a2f6e240d133",
+          "claim": "Angriffe auf Umspannwerke - Polizei nimmt mutmaßlichen Strom-Saboteur fest: Nach mehreren Sabotage-Attacken auf das deutsche Stromnetz hat die Polizei den Tatverdächtigen festgenommen. Der 48-Jährige aus Gevelsberg sei den Einsatzkräften in der Nähe des Kraftwerks Weisweiler bei Aachen aufgefallen, teilten Polizei und Staatsanwaltschaft mit.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
         }
       ],
-      "content_hash": "c8ce372d04f82ecc364b86c165a7874db7627cd12928239fff886f2afaba9f54",
+      "content_hash": "6f33d5c08ece2591a797ad70ffe06a0b0e4cb33b87bbfeedc2384c762f4b8da5",
       "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
+        "AI_SOURCE_SUMMARY_LENGTH",
+        "AI_SOURCE_SUMMARY_PARAGRAPHS",
+        "MEDIA_IMPACT_REQUIRED"
       ],
-      "quality_retry_after": "2026-09-08T22:51:50.333Z",
-      "fresh": false,
+      "quality_retry_count": 1,
+      "quality_retry_after": "2026-09-08T23:07:15.096Z",
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T22:36:50.333Z",
+      "updated_at": "2026-09-08T22:52:15.096Z",
       "event_first_seen_at": "2026-09-08T11:37:12.942Z",
       "event_detected_at": "2026-09-08T11:37:12.942Z",
       "event_id": "event-287abbb0f0d92c8cb59c",
@@ -1780,35 +1331,1376 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 666.8222166666667,
-        "detection_delay_minutes": 7.199033333333333,
+        "source_age_minutes": 9.118266666666667,
+        "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 659.6231833333334,
+        "queue_age_minutes": 675.0359,
         "target_publication_minutes": 120,
-        "news_freshness_score": 0,
+        "news_freshness_score": 98,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T22:36:50.333Z",
-        "fingerprint": "6f205d01811642ab7970abef6ebcee403c8c50183757ad22fdabc5c173d5793d",
+        "checked_at": "2026-09-08T22:52:15.096Z",
+        "fingerprint": "9a2ff324815be8589ad4f9b9c2da92337f61a5e3de8df33873410d7d1bb2b1f0",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-6992cb443a458644",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "bd592ad3456f77fa084b96152b5730119de75125db9685bda74d740ad7768f76",
+        "first_failed_at": "2026-09-08T22:52:15.096Z",
+        "failed_at": "2026-09-08T22:52:15.096Z",
+        "retry_after": "2026-09-08T23:07:15.096Z",
+        "retry_count": 1
+      },
+      "slug": "nach-landtagswahl-merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-b-458644",
+      "title": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie",
+      "first_seen": "2026-09-08T17:01:55.000Z",
+      "last_updated": "2026-09-08T22:43:08.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-brandmauer-strategie-100.html",
+          "title": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie",
+          "summary": "Die ehemalige Bundeskanzlerin Merkel hat sich bestürzt über das starke Abschneiden der AfD bei der Landtagswahl in Sachsen-Anhalt geäußert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T17:01:55.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "df76b5d8dccdbe0091008c5968295f68bb1d13c5ac0188cf108ae180433cfd7b",
+          "source_item_id": "ce55327da4f7c437c10fff3fb218fa6a4c7b5a65317b37c147b8406baedfb3f8",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T17:01:55.000Z",
+          "ingested_at": "2026-09-08T17:06:38.176Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-brandmauer-strategie-104.html",
+          "title": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie",
+          "summary": "Die ehemalige Bundeskanzlerin Merkel hat sich bestürzt über das starke Abschneiden der AfD bei der Landtagswahl in Sachsen-Anhalt geäußert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:43:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "62609a58abbcbce73bfa1237e61668d8de21a86263c57a39caae36437a33a308",
+          "source_item_id": "4e142d109110a1e50fa501a5ef446eaa813bb3dce833d4ef9e930947772a9544",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:43:08.000Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-brandmauer-strategie-106.html",
+          "title": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie",
+          "summary": "Die ehemalige Bundeskanzlerin Merkel hat sich bestürzt über das starke Abschneiden der AfD bei der Landtagswahl in Sachsen-Anhalt geäußert.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:43:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "61736b1dbfd6d588349c8b36aa20d97309b336d3577a9e1fa77e8ff74e00c550",
+          "source_item_id": "8326b2f2bf09ce9c3a1c31b4dbe2627c9abf48457835caf8928d4976c471ec35",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:43:08.000Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-6992cb443a458644-claim-01",
+          "story_id": "wt-6992cb443a458644",
+          "claim": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie: Die ehemalige Bundeskanzlerin Merkel hat sich bestürzt über das starke Abschneiden der AfD bei der Landtagswahl in Sachsen-Anhalt geäußert.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        },
+        {
+          "claim_id": "wt-6992cb443a458644-claim-02",
+          "story_id": "wt-6992cb443a458644",
+          "claim": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie: Die ehemalige Bundeskanzlerin Merkel hat sich bestürzt über das starke Abschneiden der AfD bei der Landtagswahl in Sachsen-Anhalt geäußert.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        },
+        {
+          "claim_id": "wt-6992cb443a458644-claim-03",
+          "story_id": "wt-6992cb443a458644",
+          "claim": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie: Die ehemalige Bundeskanzlerin Merkel hat sich bestürzt über das starke Abschneiden der AfD bei der Landtagswahl in Sachsen-Anhalt geäußert.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        }
+      ],
+      "content_hash": "af4ce053fd10fb96908b2450faba8abe2ad60f5736798a5c31308583c370f38a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-08T23:07:15.096Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T22:52:15.096Z",
+      "event_first_seen_at": "2026-09-08T17:06:38.176Z",
+      "event_detected_at": "2026-09-08T17:06:38.176Z",
+      "event_id": "event-aabbaadf8b159ef63e87",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-brandmauer-strategie-100.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-brandmauer-strategie-104.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-brandmauer-strategie-106.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.118266666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 345.61533333333335,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T22:52:15.096Z",
+        "fingerprint": "c344e4de445154d830e55e4463df33f83458812192d8f4f88b02670e9f87666c",
         "issue_codes": [],
         "warning_codes": []
       },
       "listed": false,
       "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T22:36:50.333Z",
+      "rejected_at": "2026-09-08T22:52:15.096Z",
       "rejection": {
-        "at": "2026-09-08T22:36:50.333Z",
+        "at": "2026-09-08T22:52:15.096Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-bd410136bb400bcb",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "2204ae9b871c2bf0874c633658144fab58f5bdd3fbc5830357dca8bcb69ec681",
+        "first_failed_at": "2026-09-08T22:52:15.096Z",
+        "failed_at": "2026-09-08T22:52:15.096Z",
+        "retry_after": "2026-09-08T23:07:15.096Z",
+        "retry_count": 1
+      },
+      "slug": "israel-regierungschef-netanjahu-wegen-berichts-uber-warnung-vor-angriff-vom-7-oktober-20-400bcb",
+      "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
+      "first_seen": "2026-09-08T12:02:16.000Z",
+      "last_updated": "2026-09-08T22:43:08.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/regierungschef-netanjahu-wegen-berichts-ueber-warnung-vor-angriff-vom-7-oktober-2023-unter-druck-102.html",
+          "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
+          "summary": "Der israelische Regierungschef Netanjahu steht wegen eines Berichts unter Druck, wonach er vor dem Hamas-Angriff vom 7. Oktober 2023 gewarnt worden sein soll.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:44:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "756314132c616ea11b17727708e7601edb8c522db78643cbc0f2194031b7e4d2",
+          "source_item_id": "0c4f9fff5f0fa65fc79be07f2eea703b7ebefd51d597aa8261661a53a68cbfa1",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T12:44:09.000Z",
+          "ingested_at": "2026-09-08T12:51:54.078Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/regierungschef-netanjahu-wegen-berichts-ueber-warnung-vor-angriff-vom-7-oktober-2023-unter-druck-114.html",
+          "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
+          "summary": "Das Büro von Israels Ministerpräsident Netanjahu hat einen Pressebericht als falsch bezeichnet, wonach der Regierungschef vor dem Angriff vom 7. Oktober 2023 gewarnt worden sei.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:43:08.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "04168faede1653801c158d03c620f93d5f0bbf5692b73137c803fed863453e1a",
+          "source_item_id": "b6632efc5c685f5f18eb8863cab8473ee2275e3f713533e975bb8d0a12f51e94",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:43:08.000Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-bd410136bb400bcb-claim-01",
+          "story_id": "wt-bd410136bb400bcb",
+          "claim": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck: Der israelische Regierungschef Netanjahu steht wegen eines Berichts unter Druck, wonach er vor dem Hamas-Angriff vom 7. Oktober 2023 gewarnt worden sein soll.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        },
+        {
+          "claim_id": "wt-bd410136bb400bcb-claim-02",
+          "story_id": "wt-bd410136bb400bcb",
+          "claim": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck: Das Büro von Israels Ministerpräsident Netanjahu hat einen Pressebericht als falsch bezeichnet, wonach der Regierungschef vor dem Angriff vom 7. Oktober 2023 gewarnt worden sei.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        }
+      ],
+      "content_hash": "85593120817f3e8afddac206fc8077b1f6f1b40ed876da33a8d7955891bb1b9b",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T23:07:15.096Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T22:52:15.096Z",
+      "event_first_seen_at": "2026-09-08T12:06:46.743Z",
+      "event_detected_at": "2026-09-08T12:06:46.743Z",
+      "event_id": "event-4115d1c8b7b41d981c8c",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 40,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 9.118266666666667,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 645.47255,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T22:52:15.096Z",
+        "fingerprint": "45c2851bcc300cf57d9b950a2c23089af611cfe17ab35e80327753e5ab806d36",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T22:52:15.096Z",
+      "rejection": {
+        "at": "2026-09-08T22:52:15.096Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-0456ad2a9c0ad09d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "b9f18ea69e019a4cffce6c6d230c9cb988fb7950fdaa6c82ed5fcdbc926bee69",
+        "first_failed_at": "2026-09-08T22:52:15.096Z",
+        "failed_at": "2026-09-08T22:52:15.096Z",
+        "retry_after": "2026-09-08T23:07:15.096Z",
+        "retry_count": 1
+      },
+      "slug": "iran-krieg-iranische-medien-melden-raketenangriffe-auf-jordanien-0ad09d",
+      "title": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien",
+      "first_seen": "2026-09-08T22:29:15.000Z",
+      "last_updated": "2026-09-08T22:30:29.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--iranische-medien-melden-raketenangriffe-auf-jordanien-38224158.html",
+          "title": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien",
+          "summary": "Das US-Militär hat erneut iranische Tanker angegriffen. Nun holt Teheran offenbar zu Gegenschlägen gegen US-Militärstützpunkte in der Region aus.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:29:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "935491ffdc1de7eaba7ba06ee0d477b7fb4cbcfcef08c604c4a62d9178d2800f",
+          "source_item_id": "9322bc4d74431bec7da39d1da73716b9db891403c63581705c7cc8802866a553",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:29:15.000Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+          "title": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien",
+          "summary": "Das US-Militär hat erneut iranische Tanker angegriffen. Nun holt Teheran offenbar zu Gegenschlägen gegen US-Militärstützpunkte in der Region aus.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:30:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "33ce051127c4c7d1657631bfbfb881fe3825f0c162fb63c150461df32e9895a0",
+          "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:30:29.000Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0456ad2a9c0ad09d-claim-01",
+          "story_id": "wt-0456ad2a9c0ad09d",
+          "claim": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien: Das US-Militär hat erneut iranische Tanker angegriffen. Nun holt Teheran offenbar zu Gegenschlägen gegen US-Militärstützpunkte in der Region aus.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        },
+        {
+          "claim_id": "wt-0456ad2a9c0ad09d-claim-02",
+          "story_id": "wt-0456ad2a9c0ad09d",
+          "claim": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien: Das US-Militär hat erneut iranische Tanker angegriffen. Nun holt Teheran offenbar zu Gegenschlägen gegen US-Militärstützpunkte in der Region aus.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        }
+      ],
+      "content_hash": "35f7ee0941ae5715987b2db517c8916aea91f0df5396ebe446ef06beb77940cc",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
+      ],
+      "quality_retry_after": "2026-09-08T23:07:15.096Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T22:52:15.096Z",
+      "event_first_seen_at": "2026-09-08T22:52:15.096Z",
+      "event_detected_at": "2026-09-08T22:52:15.096Z",
+      "event_id": "event-9e394f4254cfd55e6370",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 21.768266666666666,
+        "detection_delay_minutes": 21.768266666666666,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T22:52:15.096Z",
+        "fingerprint": "51b12731c1138c182dc8d041b95ae254d0a6e365c7898d4c23f36f2e65c33a0b",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T22:52:15.096Z",
+      "rejection": {
+        "at": "2026-09-08T22:52:15.096Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-49a833fc7e85d6e9",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "f77cd4814191459ec304fd73930b682fbadce1e667e79a660c780b8d9bf8f504",
+        "first_failed_at": "2026-09-08T22:52:15.096Z",
+        "failed_at": "2026-09-08T22:52:15.096Z",
+        "retry_after": "2026-09-08T23:07:15.096Z",
+        "retry_count": 1
+      },
+      "slug": "donald-trump-usa-gericht-untersagt-ice-zugriff-auf-steuerdaten-von-migranten-ohne-aufent-85d6e9",
+      "title": "Donald Trump - USA: Gericht untersagt ICE Zugriff auf Steuerdaten von Migranten ohne Aufenthaltstitel",
+      "first_seen": "2026-09-08T22:23:00.000Z",
+      "last_updated": "2026-09-08T22:23:00.000Z",
+      "topic": [
+        "Digitalisierung",
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/donald-trump-usa-gericht-untersagt-ice-zugriff-auf-steuerdaten-von-migranten-ohne-aufenthaltstitel-a-fa96d636-bb46-4256-8d4c-bae17ddcf2f9",
+          "title": "Donald Trump - USA: Gericht untersagt ICE Zugriff auf Steuerdaten von Migranten ohne Aufenthaltstitel",
+          "summary": "Die US-Steuerbehörde IRS verfügt über vertrauliche Daten von Hunderttausenden Menschen ohne gültige Aufenthaltstitel – und reichte sie teils an die Einwanderungsbehörde ICE weiter. Nun entschied ein Gericht: Das ist rechtswidrig.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:23:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4a1eeb2867e8fc8b151971566d9e082a4ee21b524164d774b84a5609610e47f5",
+          "source_item_id": "94961c0149951a65e48eaa120519d03d02dbda4d3e4eb5d3a3ab9eae8cacf915",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:23:00.000Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-49a833fc7e85d6e9-claim-01",
+          "story_id": "wt-49a833fc7e85d6e9",
+          "claim": "Donald Trump - USA: Gericht untersagt ICE Zugriff auf Steuerdaten von Migranten ohne Aufenthaltstitel: Die US-Steuerbehörde IRS verfügt über vertrauliche Daten von Hunderttausenden Menschen ohne gültige Aufenthaltstitel – und reichte sie teils an die Einwanderungsbehörde ICE weiter. Nun entschied ein Gericht: Das ist rechtswidrig.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-08T22:52:15.096Z"
+        }
+      ],
+      "content_hash": "567578ccb27342cde7ce4a24ea6ca44e3c55138773c9213ac6ad3392647d6e59",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-08T23:07:15.096Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-08T22:52:15.096Z",
+      "event_first_seen_at": "2026-09-08T22:52:15.096Z",
+      "event_detected_at": "2026-09-08T22:52:15.096Z",
+      "event_id": "event-4b1cc3a1e76949f6af61",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 46,
+        "public_relevance": "mittel",
+        "topics": [
+          "Digitalisierung",
+          "Finanzen"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "binding_decision"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung finanzieller Anreize und Kapitalflüsse",
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 29.2516,
+        "detection_delay_minutes": 29.2516,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 94,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T22:52:15.096Z",
+        "fingerprint": "6e0c79a327f4c7ab6cb8c1992805bf250494626f81d86f16ce076246ef65b6a9",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-08T22:52:15.096Z",
+      "rejection": {
+        "at": "2026-09-08T22:52:15.096Z",
         "filter_version": "4.0",
         "reason_code": "FILTER_NOT_MATERIAL",
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
         ]
+      }
+    },
+    {
+      "story_id": "wt-5a2fe52ebad137c3",
+      "slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
+      "title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
+      "first_seen": "2026-09-08T21:23:47.000Z",
+      "last_updated": "2026-09-08T21:37:44.215Z",
+      "published_at": "2026-09-08T21:37:44.215Z",
+      "updated_at": "2026-09-08T21:37:44.215Z",
+      "topic": [
+        "Finanzen"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+          "title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
+          "summary": "Die umstrittene US-Einwanderungsbehörde ICE darf keinen Zugriff auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten. Das Berufungsgericht für den Hauptstadtbezirk Washington erklärte eine Vereinbarung von ICE mit der Steuerbehörde IRS aus dem vergangenen Jahr am Dienstag für rechtswidrig. Das Gericht bestätigte ein erstinstanzliches Urteil, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T21:23:47.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "e7a0f388a72ef499e1b0b291f686e9bc7fc5c43f793e3031a2fcf3bc51372057",
+          "source_item_id": "4990840bd85bf415dd2eafa0f71a68b53f228c64e3e12d2a483434916be4822b",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T21:23:47.000Z",
+          "ingested_at": "2026-09-08T21:36:51.819Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-5a2fe52ebad137c3-v1-claim-1",
+          "story_id": "wt-5a2fe52ebad137c3",
+          "claim": "Ein US-Berufungsgericht hat laut der vorliegenden Quelle eine Vereinbarung zwischen ICE und IRS aus dem vergangenen Jahr für rechtswidrig erklärt.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+              "excerpt_hash": "402e3a6c8bcc90e6b845",
+              "checked_at": "2026-09-08T21:37:44.215Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T21:37:44.215Z"
+        },
+        {
+          "claim_id": "wt-5a2fe52ebad137c3-v1-claim-2",
+          "story_id": "wt-5a2fe52ebad137c3",
+          "claim": "Die Weitergabe vertraulicher Steuerzahlerdaten von Migranten ohne Aufenthaltstitel soll damit gestoppt sein.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+              "excerpt_hash": "402e3a6c8bcc90e6b845",
+              "checked_at": "2026-09-08T21:37:44.215Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T21:37:44.215Z"
+        },
+        {
+          "claim_id": "wt-5a2fe52ebad137c3-v1-claim-3",
+          "story_id": "wt-5a2fe52ebad137c3",
+          "claim": "Das Gericht bestätigte laut Quelle ein erstinstanzliches Urteil, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+              "excerpt_hash": "67a177b16095cd1bf043",
+              "checked_at": "2026-09-08T21:37:44.215Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-08T21:37:44.215Z"
+        }
+      ],
+      "event_id": "event-0413e758b0b10f40c221",
+      "event_first_seen_at": "2026-09-08T21:36:51.819Z",
+      "event_detected_at": "2026-09-08T21:36:51.819Z",
+      "verification_started_at": "2026-09-08T21:37:26.631Z",
+      "publish_ready_at": "2026-09-08T21:37:44.215Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-08T21:36:51.819Z",
+        "fingerprint": "25d3c53ed201aece967d7033344bfd1ac328395888f5a501a8fce29f3d3c381a",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfung der Originalentscheidung und ihres genauen Tenors",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Originalurteil oder amtliche Mitteilung liegt vor",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0da65aa92968c031",
+          "announced_at": "2026-09-08T21:23:47.000Z",
+          "follow_up_date": "2026-09-15T21:37:44.215Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "c986ceb235ec2a84b59cbf2a4097c7101712263e5acec64175c9dea9754a9256",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-08T21:37:44.215Z",
+        "sources": []
+      },
+      "source_summary": "Ein US-Berufungsgericht in Washington hat laut der vorliegenden Quelle eine Vereinbarung zwischen der Einwanderungsbehörde ICE und der Steuerbehörde IRS aus dem vergangenen Jahr für rechtswidrig erklärt. Damit soll ICE keinen Zugriff auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten.\n\nDie Quelle berichtet zudem, dass ein erstinstanzliches Urteil bestätigt wurde, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte. Offen bleibt hier, wie der Volltext des Urteils genau begründet ist und ob weitere Verfahrensschritte folgen.",
+      "analysis": {
+        "story_id": "wt-5a2fe52ebad137c3",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Ein US-Berufungsgericht hat laut Quelle die Weitergabe sensibler Steuerdaten an ICE gestoppt. Der Fall ist für Datenschutz, Migrationsverwaltung und staatliche Zugriffsbefugnisse materiell relevant.",
+        "detail_summary": "Die Meldung beschreibt eine gerichtliche Entscheidung mit unmittelbarer Zustandsänderung: Eine zuvor bestehende oder geplante Datenweitergabe zwischen IRS und ICE soll vorerst unzulässig sein. Das ist für Betroffene, Behördenpraxis und Datenschutz relevant, weil der Zugriff auf sensible Steuerdaten begrenzt wird. Ein möglicher Wirkpfad betrifft den Schutz personenbezogener Daten und die behördliche Nutzung solcher Daten in der Migrationsdurchsetzung. Eine mögliche Folge ist eine stärkere rechtliche Hürde für ähnliche Datennutzungen; die Breite und Dauer bleiben aber offen. Belastbar ist hier nur der berichtete Kern aus einer journalistischen Quelle, nicht der Volltext des Urteils.",
+        "why_relevant": "Die Meldung betrifft eine rechtlich bindende Entscheidung mit Folgen für Datenschutz, Verwaltungspraxis und den staatlichen Zugriff auf sensible Daten.",
+        "status": "offen",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn die Weitergabe tatsächlich untersagt bleibt, stärkt das den Schutz persönlicher Daten und begrenzt behördliche Zugriffsmöglichkeiten. Der Wirkpfad ist direkt, aber die praktische Reichweite bleibt ohne Volltext offen.",
+          "positive_path": {
+            "mechanism": "Begrenzter Zugriff auf sensible Steuerdaten reduziert das Risiko unzulässiger Nutzung gegen Betroffene.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein enger gerichtlicher Eingriff kann Behördenabstimmung erschweren und künftige Prüf- oder Vollzugswege verlangsamen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Meldung ergibt sich kein belastbarer Umwelt- oder Klimawirkpfad.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Entscheidung betrifft rechtsstaatliche Kontrolle staatlicher Datenverwendung und damit die demokratische Korrekturfähigkeit von Behördenhandeln. Der Effekt ist institutionell, nicht personenbezogen.",
+          "positive_path": {
+            "mechanism": "Gerichtliche Begrenzung behördlicher Datenzugriffe stärkt Kontrolle und Bindung an Recht.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein konflikthafter Streit um Datenzugriffe kann das Vertrauen in Behördenpraxis weiter belasten, wenn Regeln unklar bleiben.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "importance": "hoch",
+        "impact_potential": "Die Entscheidung kann die Nutzung sensibler Steuerdaten für Migrationszwecke rechtlich begrenzen und damit Verwaltungspraxis, Datenschutz und gerichtliche Kontrolle beeinflussen.",
+        "impact_risks": [
+          "Rechtliche Unsicherheit für künftige Datenabkommen",
+          "Verlangsamte behördliche Abläufe bei Datenprüfung und Vollzug"
+        ],
+        "mechanisms": [
+          "gerichtliche Untersagung staatlicher Datenweitergabe",
+          "Begrenzung behördlicher Zugriffsbefugnisse",
+          "Stärkung rechtlicher Kontrolle"
+        ],
+        "first_order": [
+          "Stopp oder Begrenzung der Datenweitergabe zwischen IRS und ICE"
+        ],
+        "second_order": [
+          "Anpassung von Verwaltungsabkommen und internen Prüfprozessen"
+        ],
+        "third_order": [
+          "Präzedenzwirkung für ähnliche Datenzugriffe in anderen Verfahren"
+        ],
+        "systemic_relevance": "Der Fall berührt das Verhältnis von Datenschutz, Verwaltungskooperation und gerichtlicher Kontrolle staatlicher Eingriffe. Dadurch kann er über den Einzelfall hinaus Standards für sensible Datennutzung beeinflussen.",
+        "transformation_potential": "Mittel: Nicht die Politik insgesamt, aber ein Teilbereich staatlicher Datenpraxis kann durch gerichtliche Grenzen dauerhaft verändert werden.",
+        "resilience": "Stärker, wenn klare rechtliche Grenzen die Fehlverwendung sensibler Daten verhindern; schwächer, wenn unklare Regeln neue Streitfälle erzeugen.",
+        "side_effects": [
+          "Mehr rechtliche Prüfpflichten",
+          "Mögliche Verzögerungen bei behördlicher Zusammenarbeit"
+        ],
+        "uncertainties": [
+          "Der Urteilstext liegt hier nicht vor",
+          "Umfang und Dauer der Sperre bleiben offen",
+          "Folgeverfahren sind nicht beschrieben"
+        ],
+        "evidence_level": "low",
+        "attribution": "Quelle: stern; Sprecher: nicht genannt; Originalformulierung in indirekter Wiedergabe; Platzierung im Titel und Abstract; Attribution klar als Bericht, nicht als Originaldokument.",
+        "watch_next": [
+          "Originalurteil oder amtliche Mitteilung",
+          "Mögliche Berufung oder weitere Verfahrensschritte",
+          "Reaktion von ICE und IRS"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "binding_decision",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "democratic_correctability",
+          "evidence_basis": "attributed_single_source",
+          "duplicate_status": "new_story",
+          "rationale": "Eine gerichtliche Untersagung mit Bezug auf 1,28 Millionen Menschen ist neu und materiell; die Evidenz stammt jedoch nur aus einer journalistischen Quelle, daher vorsichtig formulieren."
+        },
+        "visuals": null,
+        "media_impact": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-08T21:36:51.819Z",
+        "media_trigger_fingerprint": "9123f911ca4a3271eda903f9d31ae86692915186a9aa7b3218fc7c414aac3622",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 1,
+          "comparable_source_count": 1,
+          "fingerprint": "9123f911ca4a3271eda903f9d31ae86692915186a9aa7b3218fc7c414aac3622",
+          "content_fingerprint": "47c5c8b4d8a6bcd830b73fabb84c1b95df57727bb26cb5d61696514205e31a26",
+          "basis": "feed_metadata",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-08T21:37:44.215Z",
+          "content_hash": "c986ceb235ec2a84b59cbf2a4097c7101712263e5acec64175c9dea9754a9256",
+          "source_summary": "Ein US-Berufungsgericht in Washington hat laut der vorliegenden Quelle eine Vereinbarung zwischen der Einwanderungsbehörde ICE und der Steuerbehörde IRS aus dem vergangenen Jahr für rechtswidrig erklärt. Damit soll ICE keinen Zugriff auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten.\n\nDie Quelle berichtet zudem, dass ein erstinstanzliches Urteil bestätigt wurde, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte. Offen bleibt hier, wie der Volltext des Urteils genau begründet ist und ob weitere Verfahrensschritte folgen.",
+          "analysis": {
+            "story_id": "wt-5a2fe52ebad137c3",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Ein US-Berufungsgericht hat laut Quelle die Weitergabe sensibler Steuerdaten an ICE gestoppt. Der Fall ist für Datenschutz, Migrationsverwaltung und staatliche Zugriffsbefugnisse materiell relevant.",
+            "detail_summary": "Die Meldung beschreibt eine gerichtliche Entscheidung mit unmittelbarer Zustandsänderung: Eine zuvor bestehende oder geplante Datenweitergabe zwischen IRS und ICE soll vorerst unzulässig sein. Das ist für Betroffene, Behördenpraxis und Datenschutz relevant, weil der Zugriff auf sensible Steuerdaten begrenzt wird. Ein möglicher Wirkpfad betrifft den Schutz personenbezogener Daten und die behördliche Nutzung solcher Daten in der Migrationsdurchsetzung. Eine mögliche Folge ist eine stärkere rechtliche Hürde für ähnliche Datennutzungen; die Breite und Dauer bleiben aber offen. Belastbar ist hier nur der berichtete Kern aus einer journalistischen Quelle, nicht der Volltext des Urteils.",
+            "why_relevant": "Die Meldung betrifft eine rechtlich bindende Entscheidung mit Folgen für Datenschutz, Verwaltungspraxis und den staatlichen Zugriff auf sensible Daten.",
+            "status": "offen",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "hoch",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Wenn die Weitergabe tatsächlich untersagt bleibt, stärkt das den Schutz persönlicher Daten und begrenzt behördliche Zugriffsmöglichkeiten. Der Wirkpfad ist direkt, aber die praktische Reichweite bleibt ohne Volltext offen.",
+              "positive_path": {
+                "mechanism": "Begrenzter Zugriff auf sensible Steuerdaten reduziert das Risiko unzulässiger Nutzung gegen Betroffene.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Ein enger gerichtlicher Eingriff kann Behördenabstimmung erschweren und künftige Prüf- oder Vollzugswege verlangsamen.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "Aus der Meldung ergibt sich kein belastbarer Umwelt- oder Klimawirkpfad.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Die Entscheidung betrifft rechtsstaatliche Kontrolle staatlicher Datenverwendung und damit die demokratische Korrekturfähigkeit von Behördenhandeln. Der Effekt ist institutionell, nicht personenbezogen.",
+              "positive_path": {
+                "mechanism": "Gerichtliche Begrenzung behördlicher Datenzugriffe stärkt Kontrolle und Bindung an Recht.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Ein konflikthafter Streit um Datenzugriffe kann das Vertrauen in Behördenpraxis weiter belasten, wenn Regeln unklar bleiben.",
+                "source_ids": [
+                  "stern-schlagzeilen"
+                ]
+              }
+            },
+            "importance": "hoch",
+            "impact_potential": "Die Entscheidung kann die Nutzung sensibler Steuerdaten für Migrationszwecke rechtlich begrenzen und damit Verwaltungspraxis, Datenschutz und gerichtliche Kontrolle beeinflussen.",
+            "impact_risks": [
+              "Rechtliche Unsicherheit für künftige Datenabkommen",
+              "Verlangsamte behördliche Abläufe bei Datenprüfung und Vollzug"
+            ],
+            "mechanisms": [
+              "gerichtliche Untersagung staatlicher Datenweitergabe",
+              "Begrenzung behördlicher Zugriffsbefugnisse",
+              "Stärkung rechtlicher Kontrolle"
+            ],
+            "first_order": [
+              "Stopp oder Begrenzung der Datenweitergabe zwischen IRS und ICE"
+            ],
+            "second_order": [
+              "Anpassung von Verwaltungsabkommen und internen Prüfprozessen"
+            ],
+            "third_order": [
+              "Präzedenzwirkung für ähnliche Datenzugriffe in anderen Verfahren"
+            ],
+            "systemic_relevance": "Der Fall berührt das Verhältnis von Datenschutz, Verwaltungskooperation und gerichtlicher Kontrolle staatlicher Eingriffe. Dadurch kann er über den Einzelfall hinaus Standards für sensible Datennutzung beeinflussen.",
+            "transformation_potential": "Mittel: Nicht die Politik insgesamt, aber ein Teilbereich staatlicher Datenpraxis kann durch gerichtliche Grenzen dauerhaft verändert werden.",
+            "resilience": "Stärker, wenn klare rechtliche Grenzen die Fehlverwendung sensibler Daten verhindern; schwächer, wenn unklare Regeln neue Streitfälle erzeugen.",
+            "side_effects": [
+              "Mehr rechtliche Prüfpflichten",
+              "Mögliche Verzögerungen bei behördlicher Zusammenarbeit"
+            ],
+            "uncertainties": [
+              "Der Urteilstext liegt hier nicht vor",
+              "Umfang und Dauer der Sperre bleiben offen",
+              "Folgeverfahren sind nicht beschrieben"
+            ],
+            "evidence_level": "low",
+            "attribution": "Quelle: stern; Sprecher: nicht genannt; Originalformulierung in indirekter Wiedergabe; Platzierung im Titel und Abstract; Attribution klar als Bericht, nicht als Originaldokument.",
+            "watch_next": [
+              "Originalurteil oder amtliche Mitteilung",
+              "Mögliche Berufung oder weitere Verfahrensschritte",
+              "Reaktion von ICE und IRS"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "binding_decision",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "democratic_correctability",
+              "evidence_basis": "attributed_single_source",
+              "duplicate_status": "new_story",
+              "rationale": "Eine gerichtliche Untersagung mit Bezug auf 1,28 Millionen Menschen ist neu und materiell; die Evidenz stammt jedoch nur aus einer journalistischen Quelle, daher vorsichtig formulieren."
+            },
+            "visuals": null,
+            "media_impact": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-08T21:36:51.819Z",
+            "media_trigger_fingerprint": "9123f911ca4a3271eda903f9d31ae86692915186a9aa7b3218fc7c414aac3622",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 1,
+              "comparable_source_count": 1,
+              "fingerprint": "9123f911ca4a3271eda903f9d31ae86692915186a9aa7b3218fc7c414aac3622",
+              "content_fingerprint": "47c5c8b4d8a6bcd830b73fabb84c1b95df57727bb26cb5d61696514205e31a26",
+              "basis": "feed_metadata",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-5a2fe52ebad137c3-v1-claim-1",
+              "story_id": "wt-5a2fe52ebad137c3",
+              "claim": "Ein US-Berufungsgericht hat laut der vorliegenden Quelle eine Vereinbarung zwischen ICE und IRS aus dem vergangenen Jahr für rechtswidrig erklärt.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+                  "excerpt_hash": "402e3a6c8bcc90e6b845",
+                  "checked_at": "2026-09-08T21:37:44.215Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T21:37:44.215Z"
+            },
+            {
+              "claim_id": "wt-5a2fe52ebad137c3-v1-claim-2",
+              "story_id": "wt-5a2fe52ebad137c3",
+              "claim": "Die Weitergabe vertraulicher Steuerzahlerdaten von Migranten ohne Aufenthaltstitel soll damit gestoppt sein.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+                  "excerpt_hash": "402e3a6c8bcc90e6b845",
+                  "checked_at": "2026-09-08T21:37:44.215Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T21:37:44.215Z"
+            },
+            {
+              "claim_id": "wt-5a2fe52ebad137c3-v1-claim-3",
+              "story_id": "wt-5a2fe52ebad137c3",
+              "claim": "Das Gericht bestätigte laut Quelle ein erstinstanzliches Urteil, das die Weitergabe der Angaben von 1,28 Millionen Menschen vorerst gestoppt hatte.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+                  "excerpt_hash": "67a177b16095cd1bf043",
+                  "checked_at": "2026-09-08T21:37:44.215Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-08T21:37:44.215Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-38224068.html",
+              "content_hash": "e7a0f388a72ef499e1b0b291f686e9bc7fc5c43f793e3031a2fcf3bc51372057"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-08T21:37:44.215Z",
+            "sources": []
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-08T21:37:44.215Z",
+          "source_count": 1
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-08T21:54:28.447Z"
       }
     },
     {
@@ -18953,168 +19845,6 @@
       }
     },
     {
-      "story_id": "wt-6992cb443a458644",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "248d971a635f3e99e4509df0ae1d066c49aef611bd88eee9c708661406f3f2af",
-        "first_failed_at": "2026-09-08T17:06:38.176Z",
-        "failed_at": "2026-09-08T17:06:38.176Z",
-        "retry_after": "2026-09-08T17:21:38.176Z",
-        "retry_count": 1
-      },
-      "slug": "nach-landtagswahl-merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-b-458644",
-      "title": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie",
-      "first_seen": "2026-09-08T17:01:55.000Z",
-      "last_updated": "2026-09-08T17:01:55.000Z",
-      "topic": [
-        "Demokratie",
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-brandmauer-strategie-100.html",
-          "title": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie",
-          "summary": "Die ehemalige Bundeskanzlerin Merkel hat sich bestürzt über das starke Abschneiden der AfD bei der Landtagswahl in Sachsen-Anhalt geäußert.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T17:01:55.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "df76b5d8dccdbe0091008c5968295f68bb1d13c5ac0188cf108ae180433cfd7b",
-          "source_item_id": "ce55327da4f7c437c10fff3fb218fa6a4c7b5a65317b37c147b8406baedfb3f8",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T17:01:55.000Z",
-          "ingested_at": "2026-09-08T17:06:38.176Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-6992cb443a458644-claim-01",
-          "story_id": "wt-6992cb443a458644",
-          "claim": "Nach Landtagswahl - Merkel: Wahlergebnis in Sachsen-Anhalt \"einfach schockierend\" - Kritik an Brandmauer-Strategie: Die ehemalige Bundeskanzlerin Merkel hat sich bestürzt über das starke Abschneiden der AfD bei der Landtagswahl in Sachsen-Anhalt geäußert.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T17:06:38.176Z"
-        }
-      ],
-      "content_hash": "f6e1fa2203b8bfa8aeaa6337801ff1f5e30ef7eee6a0a73b6952b21a2dec6334",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_DUPLICATE_WITHOUT_UPDATE"
-      ],
-      "quality_retry_after": "2026-09-08T17:21:38.176Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T17:06:38.176Z",
-      "event_first_seen_at": "2026-09-08T17:06:38.176Z",
-      "event_detected_at": "2026-09-08T17:06:38.176Z",
-      "event_id": "event-aabbaadf8b159ef63e87",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": true,
-          "time_sensitive": false,
-          "findings": [
-            {
-              "source_id": "dlf-nachrichten",
-              "url": "https://www.deutschlandfunk.de/merkel-wahlergebnis-in-sachsen-anhalt-einfach-schockierend-kritik-an-brandmauer-strategie-100.html",
-              "signals": [
-                "election_result"
-              ],
-              "time_sensitive": false,
-              "basis": "local_review_signal_not_verified_fact"
-            }
-          ]
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Demokratie",
-          "Politik"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 4.7196,
-        "detection_delay_minutes": 4.7196,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 99,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T17:06:38.176Z",
-        "fingerprint": "7055308cfc144f7337346d25a42cad2b26380f1e7140c86c2cc45a64776ed0ec",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T17:06:38.176Z",
-      "rejection": {
-        "at": "2026-09-08T17:06:38.176Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
       "story_id": "wt-d2fe68062d8518b6",
       "slug": "welt-bericht-details-zur-geplanten-steuer-reform-bei-kryptowerten-wie-dem-bitcoin-werden-8518b6",
       "title": "\"Welt\"-Bericht - Details zur geplanten Steuer-Reform bei Kryptowerten wie dem Bitcoin werden bekannt",
@@ -28138,7 +28868,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:23:13.063Z"
+        "retry_after": "2026-09-08T23:08:57.163Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -28845,7 +29575,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:10:40.106Z"
+        "retry_after": "2026-09-08T23:08:52.204Z"
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -32640,7 +33370,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T20:23:17.755Z"
+        "retry_after": "2026-09-08T23:09:02.526Z"
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -35143,154 +35873,6 @@
         "quality_errors": [
           "AI_PUBLICATION_NOT_RECOMMENDED",
           "AI_DUPLICATE_WITHOUT_UPDATE"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-bd410136bb400bcb",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "55088e59f1f09eac4c4242b1450c0fc6c7f24588bebc5761ada1152b986ac72a",
-        "first_failed_at": "2026-09-08T12:51:54.078Z",
-        "failed_at": "2026-09-08T12:51:54.078Z",
-        "retry_after": "2026-09-08T13:06:54.078Z",
-        "retry_count": 1
-      },
-      "slug": "israel-regierungschef-netanjahu-wegen-berichts-uber-warnung-vor-angriff-vom-7-oktober-20-400bcb",
-      "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
-      "first_seen": "2026-09-08T12:02:16.000Z",
-      "last_updated": "2026-09-08T12:02:16.000Z",
-      "topic": [
-        "Politik"
-      ],
-      "sources": [
-        {
-          "source_id": "dlf-nachrichten",
-          "publisher": "Deutschlandfunk",
-          "url": "https://www.deutschlandfunk.de/regierungschef-netanjahu-wegen-berichts-ueber-warnung-vor-angriff-vom-7-oktober-2023-unter-druck-102.html",
-          "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
-          "summary": "Der israelische Regierungschef Netanjahu steht wegen eines Berichts unter Druck, wonach er vor dem Hamas-Angriff vom 7. Oktober 2023 gewarnt worden sein soll.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T12:44:09.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Politik",
-          "content_hash": "756314132c616ea11b17727708e7601edb8c522db78643cbc0f2194031b7e4d2",
-          "source_item_id": "0c4f9fff5f0fa65fc79be07f2eea703b7ebefd51d597aa8261661a53a68cbfa1",
-          "publisher_id": "deutschlandfunk",
-          "publisher_kind": "public_broadcasting",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T12:44:09.000Z",
-          "ingested_at": "2026-09-08T12:51:54.078Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-bd410136bb400bcb-claim-01",
-          "story_id": "wt-bd410136bb400bcb",
-          "claim": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck: Der israelische Regierungschef Netanjahu steht wegen eines Berichts unter Druck, wonach er vor dem Hamas-Angriff vom 7. Oktober 2023 gewarnt worden sein soll.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "dlf-nachrichten",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:deutschlandfunk",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T12:51:54.078Z"
-        }
-      ],
-      "content_hash": "81943d9e2f52b2bba5dd4f691454f85a5ab05e4d17d6e45de690072dc2a8363a",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-08T13:06:54.078Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-08T12:51:54.078Z",
-      "event_first_seen_at": "2026-09-08T12:06:46.743Z",
-      "event_detected_at": "2026-09-08T12:06:46.743Z",
-      "event_id": "event-4115d1c8b7b41d981c8c",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 40,
-        "public_relevance": "mittel",
-        "topics": [
-          "Politik"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 7.7513,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 45.12225,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 98,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-08T12:51:54.078Z",
-        "fingerprint": "1c016ce296b8780776bdf90957fe93ed37a616025f87cbd995a7b06d9dd069b4",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-08T12:51:54.078Z",
-      "rejection": {
-        "at": "2026-09-08T12:51:54.078Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
         ]
       }
     },
@@ -50081,7 +50663,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T22:22:18.055Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -50110,7 +50692,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T22:36:50.333Z"
+          "checked_at": "2026-09-08T22:52:15.096Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -50125,7 +50707,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T22:36:50.333Z",
+      "updated_at": "2026-09-08T22:52:15.096Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -50166,7 +50748,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 749.4034333333333,
+        "queue_age_minutes": 764.81615,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -50175,7 +50757,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T22:36:50.333Z",
+        "checked_at": "2026-09-08T22:52:15.096Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -50216,7 +50798,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T22:22:18.055Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -50245,7 +50827,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T22:36:50.333Z"
+          "checked_at": "2026-09-08T22:52:15.096Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -50260,7 +50842,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T22:36:50.333Z",
+      "updated_at": "2026-09-08T22:52:15.096Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -50300,7 +50882,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 749.4034333333333,
+        "queue_age_minutes": 764.81615,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -50309,7 +50891,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T22:36:50.333Z",
+        "checked_at": "2026-09-08T22:52:15.096Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -69906,9 +70488,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-08T22:36:50.333Z",
+        "checked_at": "2026-09-08T22:52:15.096Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T04:36:50.333Z",
+        "expires_at": "2026-09-09T04:52:15.096Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -85324,9 +85906,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-08T22:36:50.333Z",
+        "checked_at": "2026-09-08T22:52:15.096Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T04:36:50.333Z",
+        "expires_at": "2026-09-09T04:52:15.096Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -125793,7 +126375,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T22:22:18.055Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -125854,7 +126436,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T22:36:50.333Z"
+          "checked_at": "2026-09-08T22:52:15.096Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -125874,7 +126456,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T22:36:50.333Z"
+          "checked_at": "2026-09-08T22:52:15.096Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -125890,7 +126472,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T22:36:50.333Z",
+      "updated_at": "2026-09-08T22:52:15.096Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -125930,7 +126512,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2249.9495,
+        "queue_age_minutes": 2265.362216666667,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -125939,7 +126521,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T22:36:50.333Z",
+        "checked_at": "2026-09-08T22:52:15.096Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -181679,7 +182261,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T22:36:50.333Z",
+          "checked_at": "2026-09-08T22:52:15.096Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -226073,7 +226655,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T22:36:50.333Z",
+          "checked_at": "2026-09-08T22:52:15.096Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
