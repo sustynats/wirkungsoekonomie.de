@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-08T15:26:56.650Z",
+  "updated_at": "2026-09-08T15:41:47.562Z",
   "candidates": [
     {
       "story_id": "wt-84ac3f26c7762712",
@@ -174,8 +174,8 @@
         "primary_source_satisfied": true,
         "reasons": []
       },
-      "fingerprint": "5216043ade26f5f0909c11d727151a9d8700c107006dbff7b6cc08b4f53fa1c5",
-      "status": "published",
+      "fingerprint": "13c0196dc69c9e71bc6f7ec72a20464d820b7ce7d0dcfc8fc8a1d0e9672a26b0",
+      "status": "ready_for_research",
       "analysis_id": "woek-analysis-58daf5723737"
     },
     {
@@ -26865,6 +26865,19 @@
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
       "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+    },
+    "wt-de413d33343f350b": {
+      "fingerprint": "13c0196dc69c9e71bc6f7ec72a20464d820b7ce7d0dcfc8fc8a1d0e9672a26b0",
+      "method_version": "1.0",
+      "attempts": 1,
+      "last_attempt_at": "2026-09-08T15:41:47.562Z",
+      "next_attempt_at": "2026-09-08T15:56:47.562Z",
+      "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_SELF_FRAME_FAILED"
+      ],
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     }
   }
 }
