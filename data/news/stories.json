@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-08T02:37:05.212Z",
-  "updated_at": "2026-09-08T02:37:05.212Z",
+  "updated_at": "2026-09-08T02:52:12.365Z",
   "stories": [
     {
       "story_id": "wt-6fc066364494ba73",
@@ -636,9 +636,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "dbca7656d23ce1538ca11191e19bb5758041156271939c89554375ef77e7088b",
         "first_failed_at": "2026-09-08T02:37:05.212Z",
-        "failed_at": "2026-09-08T02:37:05.212Z",
-        "retry_after": "2026-09-08T02:52:05.212Z",
-        "retry_count": 1
+        "failed_at": "2026-09-08T02:52:12.365Z",
+        "retry_after": "2026-09-08T03:22:12.365Z",
+        "retry_count": 2
       },
       "slug": "trump-threatens-to-ban-canadian-bombardier-jets-from-us-market-9f7cb8",
       "title": "Trump threatens to ban Canadian Bombardier jets from US market",
@@ -672,7 +672,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T02:24:03.000Z",
-          "ingested_at": "2026-09-08T02:37:05.212Z",
+          "ingested_at": "2026-09-08T02:52:12.365Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -701,22 +701,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T02:37:05.212Z"
+          "checked_at": "2026-09-08T02:52:12.365Z"
         }
       ],
       "content_hash": "7879599c705efdbaa420e315bfc0887532c964284429feaed3d7fe76b9c45861",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        "MEDIA_IMPACT_REQUIRED"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-08T02:52:05.212Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-08T03:22:12.365Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-08T02:37:05.212Z",
+      "updated_at": "2026-09-08T02:52:12.365Z",
       "event_first_seen_at": "2026-09-08T02:37:05.212Z",
       "event_detected_at": "2026-09-08T02:37:05.212Z",
       "event_id": "event-ac7d1761c4986673813b",
@@ -750,20 +750,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 13.036866666666667,
+        "source_age_minutes": 28.156083333333335,
         "detection_delay_minutes": 13.036866666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 0,
+        "queue_age_minutes": 15.119216666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-08T02:37:05.212Z",
+        "checked_at": "2026-09-08T02:52:12.365Z",
         "fingerprint": "2a45ea8ed00c8d468ff8003805e6595a4b823ef36186a386eb513307499cc627",
         "issue_codes": [],
         "warning_codes": []
@@ -66373,7 +66373,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": null,
-          "ingested_at": "2026-09-08T02:37:05.212Z",
+          "ingested_at": "2026-09-08T02:52:12.365Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -66434,7 +66434,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T02:37:05.212Z"
+          "checked_at": "2026-09-08T02:52:12.365Z"
         },
         {
           "claim_id": "wt-07f3870f32ae8662-claim-02",
@@ -66454,7 +66454,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-08T02:37:05.212Z"
+          "checked_at": "2026-09-08T02:52:12.365Z"
         }
       ],
       "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
@@ -66470,7 +66470,7 @@
       "fresh": true,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-08T02:37:05.212Z",
+      "updated_at": "2026-09-08T02:52:12.365Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -66510,7 +66510,7 @@
         "detection_delay_minutes": null,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1050.1974833333334,
+        "queue_age_minutes": 1065.3167,
         "target_publication_minutes": 120,
         "news_freshness_score": null,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -66519,7 +66519,7 @@
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-08T02:37:05.212Z",
+        "checked_at": "2026-09-08T02:52:12.365Z",
         "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
         "issue_codes": [
           "SOURCE_PUBLICATION_DATE_INVALID"
@@ -124002,7 +124002,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T02:37:05.212Z",
+          "checked_at": "2026-09-08T02:52:12.365Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -168356,7 +168356,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-08T02:37:05.212Z",
+          "checked_at": "2026-09-08T02:52:12.365Z",
           "fingerprint": "bf6ac623dbc46f8831f029a522e2111a3b2db2b8410c21e1cb40699f8cea82c8",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
