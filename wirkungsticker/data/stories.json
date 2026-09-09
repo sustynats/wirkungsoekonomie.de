@@ -1,7 +1,134 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T07:06:43.209Z",
+  "updated_at": "2026-09-09T07:21:53.878Z",
   "stories": [
+    {
+      "story_id": "wt-50b7642f201d604e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "spd-vize-schweitzer-spricht-sich-fur-expertenregierung-in-sachsen-anhalt-aus-1d604e",
+      "title": "SPD-Vize Schweitzer spricht sich für Expertenregierung in Sachsen-Anhalt aus",
+      "source_summary": "SPD-Vizebundeschef Alexander Schweitzer spricht sich laut stern für eine Expertenregierung in Sachsen-Anhalt aus. Er wird mit dem Satz zitiert, das Wahlergebnis habe „schockiert“, dürfe aber nicht zu „Schockstarre“ führen. Nach seiner Darstellung könnte eine von allen anderen Fraktionen getragene Expertenregierung das Szenario eines AfD-Ministerpräsidenten noch abwenden.\n\nOffen bleibt, ob es dafür بالفعل Gespräche, Mehrheiten oder eine konkrete Formulierung gibt. Die Meldung ist eine politische Position nach der Wahl, keine bestätigte Entscheidung.",
+      "summary": "Schweitzer wirbt für eine Expertenregierung in Sachsen-Anhalt. Das ist politisch relevant, weil es um mögliche Regierungsbildung nach der Wahl geht.",
+      "detail_summary": "Die Meldung beschreibt eine neue politische Position nach der Wahl in Sachsen-Anhalt: SPD-Vize Alexander Schweitzer plädiert für eine Expertenregierung. Das ist für die Regierungsbildung materiell relevant, weil damit ein möglicher Weg zu einer anderen Mehrheits- oder Übergangslösung benannt wird. Ein unmittelbarer Effekt ist damit noch nicht belegt; sichtbar ist zunächst nur ein öffentlicher Vorstoß. Mögliche Folge wäre, dass andere Fraktionen auf das Modell reagieren oder Gespräche darüber beginnen. Offen bleibt, ob daraus tatsächlich eine tragfähige Mehrheit oder ein Verfahren entsteht. Die Evidenz stützt hier vor allem die zitierte Aussage, nicht den späteren politischen Ausgang.",
+      "why_relevant": "Die Aussage betrifft die mögliche Regierungsbildung in Sachsen-Anhalt nach der Wahl und damit einen demokratisch materiellen Prozess.",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Meldung enthält einen politischen Vorstoß, aber noch keinen belegten Regierungswechsel oder eine konkrete Mehrheitsbildung. Der spätere Effekt hängt davon ab, ob andere Fraktionen das Modell aufgreifen.",
+          "positive_path": {
+            "mechanism": "Ein parteiübergreifend getragenes Expertenmodell könnte eine handlungsfähige Übergangslösung eröffnen und Koalitionsblockaden mindern.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Der Vorstoß kann die Lagerbildung verschärfen, ohne eine tragfähige Mehrheit zu schaffen, und damit die Regierungsbildung weiter verzögern.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung behandelt ausschließlich Regierungsbildung und Wahlreaktionen. Ein belastbarer Umwelt- oder Klimapfad ist darin nicht erkennbar.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Vorstoß kann demokratische Korrekturfähigkeit stärken, wenn er eine handlungsfähige Übergangslösung ermöglicht. Er kann aber auch Polarisierung und Blockaden vertiefen, falls keine Mehrheit entsteht.",
+          "positive_path": {
+            "mechanism": "Ein breiter getragener Übergang könnte Regierungsfähigkeit sichern und eine institutionelle Reaktion auf das Wahlergebnis ermöglichen.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne Zustimmung anderer Fraktionen bleibt der Vorschlag folgenlos und kann die Konfrontation über die Regierungsbildung verstärken.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T07:21:53.878Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T07:02:03.000Z",
+      "last_updated": "2026-09-09T07:24:05.227Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-b51bde7e61bd873a3eb7",
+      "case_file": null,
+      "source_published_at": "2026-09-09T07:02:03.000Z",
+      "published_at": "2026-09-09T07:24:05.227Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob sich andere Fraktionen offen für eine Expertenregierung zeigen",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Öffentliche Zustimmung, Ablehnung oder Gespräche anderer Fraktionen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c387f9ce830a748d",
+          "announced_at": "2026-09-09T07:02:03.000Z",
+          "follow_up_date": "2026-09-16T07:24:05.227Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es nach der Wahl konkrete Sondierungen oder ein Regierungsmodell gibt",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Benannte Verhandlungen, Einladungen oder offizielle Positionen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bafec051662ab7e7",
+          "announced_at": "2026-09-09T07:02:03.000Z",
+          "follow_up_date": "2026-09-16T07:24:05.227Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/spd-vize-schweitzer-spricht-sich-fuer-expertenregierung-in-sachsen-anhalt-aus-38225506.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T07:02:03.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-483945dfcc2a8794",
       "title_image": {
