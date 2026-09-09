@@ -52,7 +52,7 @@ export function prepareEditorialReview(packet, story, previous = null, now = new
     self_frame_check: { passed: true, issues: [], recommended_title: analysis.title, recommended_summary: analysis.teaser, recommended_meta_description: analysis.seo_description },
     versions: [...(previous?.versions || []), { version, analyzed_at: now, source_fingerprint: assessment.fingerprint, title: analysis.title, change_note: packet.revision_note || (version === 1 ? "Erstveröffentlichung: Ex-ante-Szenario mit datierter Quellenprüfung, Machtkarte und Beobachtungspunkten." : "Quellengebundene Fortschreibung der Analyse."), provider: null, model: null, claim_ledger: analysis.claim_ledger, ...(previous ? { previous_content: editorialContentSnapshot(previous) } : {}) }],
   };
-  const readingText = [...record.sections.flatMap(section => [...section.paragraphs, ...(section.visual?.items || []).map(item => `${item.title} ${item.text} ${item.condition || ""}`)]), record.direction_finding, record.executive_finding || "", ...(record.author_perspective?.paragraphs || [])].join(" ");
+  const readingText = [...record.sections.flatMap(section => [...section.paragraphs, ...(section.visual?.items || []).map(item => item.cells ? item.cells.join(" ") : `${item.title} ${item.text} ${item.condition || ""}`)]), record.direction_finding, record.executive_finding || "", ...(record.author_perspective?.paragraphs || [])].join(" ");
   record.reading_time_minutes = Math.ceil(readingText.split(/\s+/).filter(Boolean).length / 210);
   const errors = editorialAnalysisValidationErrors(record, story, { candidate: true, evidence_gate: evidenceGate });
   if (errors.length) throw new Error(`REVIEW_QUALITY_HOLD:${errors.join(",")}`);

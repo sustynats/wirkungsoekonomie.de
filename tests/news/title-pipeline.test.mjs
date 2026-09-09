@@ -202,6 +202,29 @@ test("download validates host, redirects, size and binary format", async () => {
 function worker(t, overrides={}) {
   return createTitleImagePipeline({root:temp(t),generate:async()=>asset(),raster:async(_svg,{width,height})=>({png:png(width,height)}),publish:async()=>({}),...overrides});
 }
+test("pipeline persists actual continuation URLs for all variants and the original", async t => {
+  let publications = 0;
+  const prepare = worker(t, { now: () => "2026-09-09T12:00:00Z", publish: async files => {
+    publications++;
+    return Object.fromEntries(files.map(file => [path.basename(file), `https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-${publications + 1}/${path.basename(file)}`]));
+  } });
+  const { title_image: result } = await prepare(STORY);
+  assert.equal(result.mode, "editorial");
+  assert.equal(publications, 2);
+  for (const key of ["og", "wide", "square", "source_visual"]) assert.match(result[key].url, /-part-3\//);
+  assert.equal(publicTitleImage(result).background.url, result.source_visual.url);
+});
+test("failed variant publication retains the already durable original in its continuation archive", async t => {
+  let publications = 0;
+  const prepare = worker(t, { now: () => "2026-09-09T12:00:00Z", publish: async files => {
+    if (++publications > 1) throw imageError("IMAGE_UPLOAD_FAILED");
+    return Object.fromEntries(files.map(file => [path.basename(file), `https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/${path.basename(file)}`]));
+  } });
+  const { title_image: result } = await prepare(STORY);
+  assert.equal(result.status, "fallback");
+  assert.match(result.source_visual.url, /-part-2\//);
+  assert.match(result.source_visual.sha256, /^[a-f0-9]{64}$/);
+});
 test("pipeline creates OG, wide and square, labels editorial, and reuses complete titles", async(t)=>{
   let generations=0,renders=0;
   const prepare=worker(t,{generate:async()=>{generations++;return asset();},raster:async(_svg,{width,height})=>{renders++;return {png:png(width,height)};}});
