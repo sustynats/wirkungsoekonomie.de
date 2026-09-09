@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {stripAiTrackingParameters} from "../lib/public-editorial-cleanup.mjs";
+import {isFrozenPublicationSource} from "../lib/public-typography.mjs";
 
 const root = process.cwd();
 const checkOnly = process.argv.includes("--check");
@@ -29,6 +30,7 @@ function walk(directory) {
       return walk(path.join(directory, entry.name));
     }
     if (!entry.isFile() || !eligibleExtensions.has(path.extname(entry.name).toLowerCase())) return [];
+    if (isFrozenPublicationSource(path.relative(root, path.join(directory, entry.name)))) return [];
     return [path.join(directory, entry.name)];
   });
 }

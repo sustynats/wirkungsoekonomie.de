@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { assertAutomatable } from "./manual-policy.mjs";
 import { usageCostStartedAt } from "./operating-cost.mjs";
 import { numberTokens, sourceNumberTokens, persistedNumericEvidence } from "./numeric-evidence.mjs";
 import { analysisReaderCopy, hasEditorialResidue, READER_COPY_RULE } from "./reader-copy.mjs";
@@ -844,6 +845,7 @@ export function fitAnalysisInput(input, budget) {
 }
 
 export function analysisInputFor(stories) {
+  stories.forEach(story => { assertAutomatable(story); assertAutomatable(story.existing_story); });
   return stories.map((story) => ({
     story_id: story.story_id,
     review_mode: story.deepening_due ? "deepen_existing_initial_report" : story.reassessment ? "historical_relevance_reassessment" : "new_or_updated_story",
@@ -1031,6 +1033,7 @@ function aiRetryDelayMs(response, attempt) {
 }
 
 export async function callWoekAi(stories, options = {}) {
+  stories.forEach(story => { assertAutomatable(story); assertAutomatable(story.existing_story); });
   const apiUrl = options.apiUrl || "https://130.162.217.58.sslip.io/api/woek-ai";
   const prompt = options.prompt || buildAnalysisPrompt(stories);
   const attempts = Math.max(1, Math.min(3, Number(options.attempts || 3)));

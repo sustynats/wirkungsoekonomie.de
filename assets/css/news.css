@@ -2330,6 +2330,45 @@ html.news-pull-enabled body { overscroll-behavior-y: auto; }
 .news-editorial-card .text-link { color: #d9eee7; }
 .news-editorial-card__byline { display: flex; gap: .8rem; align-items: center; margin-top: 1.2rem; }
 .news-editorial-card__byline img { width: 4.5rem; height: 4.5rem; min-width: 4.5rem; flex: 0 0 4.5rem; aspect-ratio: 1; border-radius: 50%; object-fit: cover; object-position: 50% 32%; border: 2px solid rgb(255 255 255 / 70%); }
+
+/* Manual manuscripts reuse the opinion layout; only their book block is new. */
+.news-editorial-article--book .news-editorial-layout { max-width: 66rem; }
+.news-editorial-article--book .news-editorial-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(9rem, 15rem); gap: clamp(1.5rem, 4vw, 4rem); align-items: center; }
+.news-book-hero-cover { max-width: 15rem; }
+.news-book-hero-cover .text-link { color: #f1eee6; }
+.news-editorial-card__book { width: 10rem; align-self: center; }
+.news-editorial-card[data-news-format="book_and_impact"] { grid-template-columns: minmax(0, 1fr) auto; }
+.news-editorial-card[data-news-format="book_and_impact"] .news-editorial-card__actions { grid-column: 1 / -1; max-width: none; }
+.news-editorial-card[data-news-format="book_and_impact"] .news-editorial-card__byline img { height: auto; aspect-ratio: 1320 / 1759; border-radius: .5rem; object-fit: contain; }
+.news-editorial-article--book .news-editorial-byline img { width: 7rem; height: auto; aspect-ratio: 1320 / 1759; border-radius: .5rem; object-fit: contain; }
+.news-editorial-article--book .news-editorial-article__section { max-width: 100%; margin-block: 2.5rem; }
+.news-editorial-article--book .news-editorial-article__section > p { max-width: 70ch; line-height: 1.8; }
+.news-editorial-article--book .news-editorial-article__section h2 { line-height: 1.18; }
+.news-editorial-article--book .news-editorial-article__section h3 { margin-top: 1.7rem; }
+.news-book-spoiler { margin: 1.5rem 0 0; padding: .8rem 1rem; border-left: 3px solid #e4b647; background: rgb(255 255 255 / 7%); }
+.news-book-spoiler p { margin: 0; }
+.news-book-metadata { display: grid; grid-template-columns: minmax(8rem, 13rem) minmax(0, 1fr); gap: clamp(1.2rem, 4vw, 2.5rem); padding: clamp(1rem, 3vw, 2rem); border: 1px solid var(--wt-line); border-radius: 1rem; background: #fffdf8; align-items: start; }
+.news-book-cover { margin: 0; }
+.news-book-cover img { display: block; width: 100%; height: auto; object-fit: contain; box-shadow: 0 .4rem 1.2rem rgb(0 0 0 / 14%); }
+.news-book-cover figcaption { margin-top: .75rem; font-size: .8rem; line-height: 1.5; }
+.news-manual-table { max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; border: 1px solid var(--wt-line); border-radius: .75rem; }
+.news-manual-table table { min-width: 40rem; width: 100%; border-collapse: collapse; }
+.news-manual-table th, .news-manual-table td { padding: .9rem; vertical-align: top; text-align: left; border-bottom: 1px solid var(--wt-line); line-height: 1.55; }
+.news-manual-table th { background: #e9f0eb; }
+.news-manual-table:focus-visible { outline: 3px solid #347c63; outline-offset: 3px; }
+.news-editorial-article--book .news-author-perspective { padding: clamp(1rem, 3vw, 2rem); border-left: 4px solid #ab7d24; background: #f3efdf; border-radius: .6rem; }
+.news-editorial-article--book .news-editorial-article__section a { overflow-wrap: anywhere; }
+@media (max-width: 540px) {
+  .news-book-metadata { grid-template-columns: minmax(0, 1fr); }
+  .news-book-cover { max-width: 11rem; }
+  .news-editorial-article--book .news-editorial-byline img { width: 5rem; height: auto; }
+}
+@media (max-width: 760px) {
+  .news-editorial-article--book .news-editorial-hero,
+  .news-editorial-card[data-news-format="book_and_impact"] { grid-template-columns: minmax(0, 1fr); }
+  .news-book-hero-cover { width: 9rem; }
+  .news-editorial-card__book { width: 8rem; }
+}
 .news-editorial-card__byline span { display: grid; gap: .18rem; min-width: 0; overflow-wrap: anywhere; }
 .news-editorial-card__byline small { color: rgb(255 255 255 / 72%); max-width: 48rem; }
 .news-editorial-card__actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .65rem; max-width: 22rem; }

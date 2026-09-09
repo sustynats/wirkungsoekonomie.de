@@ -2,6 +2,7 @@ import fs from "node:fs";
 import { backgroundBatchEligibility, batchStoryFingerprint, batchWorkPriority, createNewsBatchClient, BATCH_RESERVATION_USD } from './batch.mjs';
 import { editorialContentSnapshot } from "./editorial-judgment.mjs";
 import { commissionedReviewState, isCommissionedAnalysis } from "./systemic-analysis.mjs";
+import { isManualEditorial } from "./manual-policy.mjs";
 import { applyEditorialRepair, buildEditorialRepairPrompt, editorialQualityExhausted, editorialResearchFingerprint, isEditorialQualityFailure, EDITORIAL_ECONOMY_VERSION } from './editorial-economy.mjs';
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -189,7 +190,7 @@ export async function runEditorialAnalyses({
   const usage = read(usageFile, { runs: [] });
   const store = read(analysesFile, { schema_version: "1.0", method_version: EDITORIAL_ANALYSIS_VERSION, updated_at: null, candidates: [], analyses: [] });
   store.retry_state ||= {};
-  const activeStories = (storyStore.stories || []).filter((story) => story.published && story.listed !== false && story.analysis);
+  const activeStories = (storyStore.stories || []).filter((story) => !isManualEditorial(story) && !isManualEditorial(existingForStory(store, story.story_id)) && story.published && story.listed !== false && story.analysis);
   if (requestedStoryIds.some(id => !activeStories.some(story => story.story_id === id))) throw new Error('EDITORIAL_REQUEST_ORIGIN_NOT_PUBLISHED');
   store.editorial_requests ||= {};
   for (const id of new Set(requestedStoryIds)) store.editorial_requests[id] = {
