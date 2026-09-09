@@ -1,7 +1,154 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T06:37:16.460Z",
+  "updated_at": "2026-09-09T06:51:40.537Z",
   "stories": [
+    {
+      "story_id": "wt-74fc3eeaa714d5fb",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "middle-east-live-us-destroys-five-iranian-oil-tankers-as-iran-threatens-kuwait-and-bahra-14d5fb",
+      "title": "Middle East live: Tehran targets US base in Jordan after Washington destroys five Iranian tankers",
+      "source_summary": "France 24 meldet in einem Liveblog, die iranischen Revolutionsgarden hätten am Mittwoch ballistische Raketen auf eine von US-Streitkräften genutzte Basis in Jordanien abgefeuert. Außerdem sei von Angriffen auf zehn Schiffe und von Drohungen gegen Tanker vor Kuwait und Bahrain die Rede.\n\nAls Begründung wird eine Reaktion auf die Zerstörung von fünf iranischen Öltankern durch US-Kräfte am Dienstag genannt. Unklar bleibt im gelieferten Material, was davon unabhängig bestätigt ist und welche Folgen der gemeldete Angriff bereits hatte.",
+      "summary": "Meldung über einen gemeldeten Raketenangriff der iranischen Revolutionsgarden auf eine von US-Streitkräften genutzte Basis in Jordanien. Dazu kommen Drohungen gegen Tanker vor Kuwait und Bahrain nach der Zerstörung iranischer Öltanker durch US-Kräfte.",
+      "detail_summary": "Der Bericht beschreibt eine akute Zuspitzung im Konflikt zwischen Iran und den USA sowie ihren regionalen Bezugspunkten. Materiell relevant ist vor allem die direkte Gewaltandrohung gegen eine militärisch genutzte Basis und gegen Schifffahrt im Golfraum. Der mögliche Wirkpfad reicht von weiterer militärischer Eskalation über Störungen im Seehandel bis zu zusätzlichen Sicherheitsmaßnahmen. Ob der gemeldete Angriff, Schäden oder eine reale Gefährdung bereits eingetreten sind, bleibt im gelieferten Material offen. Die Evidenz stammt nur aus einem journalistischen Liveblog; unabhängige Bestätigung fehlt hier.",
+      "why_relevant": "Die Meldung betrifft unmittelbare militärische Eskalation und mögliche Risiken für regionale Sicherheit und Schifffahrt.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein gemeldeter Raketenangriff und Drohungen gegen Tanker können die Sicherheit von Menschen und Transportwegen verschlechtern, falls sie bestätigt werden oder zu Gegenangriffen führen.",
+          "positive_path": {
+            "mechanism": "Eine rasche Deeskalation oder bestätigte Abwehr ohne Folgeschäden könnte weitere Gewalt verhindern.",
+            "source_ids": [
+              "france24-en"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bestätigte Angriffe oder Vergeltungsschritte können Verletzungen, Tote und zusätzliche Evakuierungs- oder Schutzmaßnahmen auslösen.",
+            "source_ids": [
+              "france24-en"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Für die Umwelt ist vor allem das Risiko für Öltransporte und damit verbundene Leckagen oder Betriebsstörungen relevant, wenn die Drohungen in Handlungen übergehen.",
+          "positive_path": {
+            "mechanism": "Ausbleibende Angriffe auf Tanker würden das Risiko für maritime Umweltfolgen begrenzen.",
+            "source_ids": [
+              "france24-en"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Angriffe auf Tanker oder Seewege können Schäden, Leckagen und zusätzliche Emissionen durch Umleitungen verursachen.",
+            "source_ids": [
+              "france24-en"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Meldung kann politische Entscheidungsräume verengen, weil Eskalation Sicherheits- und Krisenpolitik dominiert und parlamentarische Kontrolle im Krisenmodus erschwert werden kann.",
+          "positive_path": {
+            "mechanism": "Transparente Aufklärung und öffentliche Bestätigung können die demokratische Korrekturfähigkeit stärken.",
+            "source_ids": [
+              "france24-en"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Militärische Eskalation und Alarmkommunikation können Ausnahmeentscheidungen und weniger offene Debatte begünstigen.",
+            "source_ids": [
+              "france24-en"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T06:51:40.537Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T23:07:34.000Z",
+      "last_updated": "2026-09-09T06:52:07.311Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-7f7b89efd945b0b338e4",
+      "case_file": null,
+      "source_published_at": "2026-09-08T23:07:34.000Z",
+      "published_at": "2026-09-09T06:52:07.311Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob Jordanien, die USA oder weitere Stellen den Angriff und die Folgen bestätigen",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung, Korrektur oder Widerspruch durch weitere belastbare Quellen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-43aed50590c3bd88",
+          "announced_at": "2026-09-08T23:07:34.000Z",
+          "follow_up_date": "2026-09-16T06:52:07.311Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es Opfer, Schäden oder Gegenmaßnahmen nach dem gemeldeten Raketenangriff gibt",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Angaben zu Verletzten, Toten, Sachschäden oder weiteren militärischen Schritten",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-f3fb1c71885d3cbe",
+          "announced_at": "2026-09-08T23:07:34.000Z",
+          "follow_up_date": "2026-09-16T06:52:07.311Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Drohung gegen Tanker vor Kuwait und Bahrain zu einer messbaren Änderung der Schifffahrt führt",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Routenänderungen, Ausfälle, Versicherungsaufschläge oder Sicherheitswarnungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-70bfd98af0a93de5",
+          "announced_at": "2026-09-08T23:07:34.000Z",
+          "follow_up_date": "2026-09-16T06:52:07.311Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/middle-east/20260908-middle-east-live-us-destroys-five-iranian-oil-tankers-as-iran-threatens-kuwait-and-bahrain",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T23:07:34.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-491857684cc65a88",
       "title_image": {
