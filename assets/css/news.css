@@ -270,6 +270,8 @@
 .wt-tendency__qualifier { font-weight: 550; }
 .wt-tendency--offen { border-style: dashed; background: #edf0f2; color: #425460; }
 .wt-dims__legend { margin: .65rem 0 0; color: var(--wt-muted); font-size: .8rem; line-height: 1.5; }
+.wt-dims__reference { margin: 0 0 .85rem; font-size: .82rem; line-height: 1.5; overflow-wrap: anywhere; }
+.news-story-visual .wt-dims__reference { color: #d0dbe2; font-size: .75rem; }
 .wt-dim__assessment-note { margin: .3rem 0 0; font-size: .78rem; line-height: 1.45; color: var(--wt-muted); }
 .wt-dim__paths { margin: .5rem 0 0; font-size: .85rem; }
 .wt-dim__paths dt { font-weight: 700; }
