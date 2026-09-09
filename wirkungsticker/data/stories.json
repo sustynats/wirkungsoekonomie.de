@@ -1,7 +1,123 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T08:52:20.295Z",
+  "updated_at": "2026-09-09T09:06:56.077Z",
   "stories": [
+    {
+      "story_id": "wt-5d9f4bf00c16b314",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "grune-fordern-faires-gewerbemietrecht-16b314",
+      "title": "Grüne fordern \"faires\" Gewerbemietrecht",
+      "source_summary": "Die Grünen fordern in einem Antrag, die Bundesregierung solle einen Gesetzentwurf für ein „faires“ Gewerbemietrecht vorlegen. Der Antrag nennt unter anderem einen Anspruch auf Zustimmung zur Vertragsübertragung bei gewerblichen Mietverhältnissen, sofern Vermieterinteressen gewahrt bleiben, sowie einen möglichen Schadensersatz bei ungerechtfertigter Ablehnung. Außerdem schlagen die Abgeordneten ein „gewerbliches Pendant zum Milieuschutz“, kommunale Vorkaufsrechte für gefährdete Gewerbeimmobilien, ein Leerstandsregister und die Prüfung steuerlicher Maßnahmen gegen spekulativen Leerstand vor.\n\nAls Begründung verweisen sie auf verdrängte inhabergeführte Geschäfte, Handwerksbetriebe, kleine Unternehmen und gemeinnützige Einrichtungen sowie auf mögliche Versorgungslücken und längere Wartezeiten. Der Text enthält politische Forderungen und Folgenannahmen; ein beschlossener Rechtswechsel ist daraus nicht ersichtlich.",
+      "summary": "Ein Antrag der Grünen fordert neue Regeln für Gewerbemieten und mehr Schutz für betroffene Betriebe. Das ist politisch relevant, aber noch kein beschlossener Eingriff.",
+      "detail_summary": "Der vorliegende Befund ist ein parlamentarischer Antrag, also eine politische Vorstufe. Inhaltlich geht es um mehr Schutz im Gewerbemietrecht, etwa bei Vertragsübertragungen, Leerstand und kommunalen Eingriffen. Materiell relevant ist das, weil solche Regeln Mietverhältnisse, Standortentscheidungen und damit lokale Versorgungsstrukturen verändern können. Ein direkter Effekt ist aber noch nicht eingetreten; dafür müsste erst ein Regierungsentwurf folgen und anschließend ein Gesetz beschlossen und umgesetzt werden. Die Beleglage ist tragfähig für die Forderungen und die eigene Problembeschreibung der Antragsteller, nicht für die späteren Wirkungen. Deshalb bleibt die Wirkungsanalyse hier ex ante und vorsichtig.",
+      "why_relevant": "Der Antrag zielt auf Regeln für Gewerbemieten, Leerstand und lokale Infrastruktur. Das kann Mietverhältnisse, Standortstabilität und die Versorgung in Quartieren verändern.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn solche Regeln kommen, können sie Verdrängung bremsen und die Stabilität von Betrieben und Angeboten in Quartieren stärken.",
+          "positive_path": {
+            "mechanism": "Mehr Schutz vor Verdrängung und klarere Übertragungsregeln können Betriebsaufgaben und Versorgungslücken mindern.",
+            "source_ids": [
+              "bundestag-umwelt"
+            ]
+          },
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den gelieferten Quellen gibt es keinen belastbaren Pfad zu direkten Umweltwirkungen. Der Bezug auf fossiles Heizen bleibt ein Teilaspekt des Antrags.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Der Antrag bringt ein konkretes Reformthema in das parlamentarische Verfahren und kann die öffentliche und politische Prüfung von Gewerbemietregeln anstoßen.",
+          "positive_path": {
+            "mechanism": "Mehr parlamentarische Befassung mit Marktregeln und Datenlage kann die demokratische Korrekturfähigkeit verbessern.",
+            "source_ids": [
+              "bundestag-umwelt"
+            ]
+          },
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T09:06:56.077Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T07:56:00.000Z",
+      "last_updated": "2026-09-09T09:08:03.958Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-525a0a8d6a077b82b631",
+      "case_file": null,
+      "source_published_at": "2026-09-09T00:00:00.000Z",
+      "published_at": "2026-09-09T09:08:03.958Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-umwelt"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Bundesregierung einen Gesetzentwurf vorlegt.",
+          "source_id": "bundestag-umwelt",
+          "expected_by": null,
+          "measurable_indicator": "Regierungsentwurf ja oder nein",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-01288dc8f39e7e71",
+          "announced_at": "2026-09-09",
+          "follow_up_date": "2026-09-16T09:08:03.958Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Bundestag den Antrag weiterberät oder beschließt.",
+          "source_id": "bundestag-umwelt",
+          "expected_by": null,
+          "measurable_indicator": "Verfahrensschritt des Antrags",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c7498afcb83d126c",
+          "announced_at": "2026-09-09",
+          "follow_up_date": "2026-09-16T09:08:03.958Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Umwelt und Klimaschutz",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1211026",
+          "source_type": "official_rss",
+          "published_at": "2026-09-09",
+          "primary_source": true
+        }
+      ]
+    },
     {
       "story_id": "wt-4da4b09830c09b15",
       "title_image": {
