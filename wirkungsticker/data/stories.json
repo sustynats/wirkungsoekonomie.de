@@ -1,7 +1,390 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T13:22:48.629Z",
+  "updated_at": "2026-09-09T13:36:49.895Z",
   "stories": [
+    {
+      "story_id": "wt-491857684cc65a88",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-491857684cc65a88-7ab3b45482956ea1-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-491857684cc65a88-4b2a0163bcd72966-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-491857684cc65a88-e03fa51f27f9c172-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "iran-krieg-usa-zerstoren-iranische-tanker-teheran-feuert-raketen-ab-c65a88",
+      "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+      "source_summary": "Mehrere berichtete Texte beschreiben neue gegenseitige Angriffe zwischen den USA und Iran. Nach den Angaben des US-Militärs sollen fünf iranische Öltanker zerstört worden sein, darunter Schiffe im Golf von Oman und nahe der Insel Charg. Irans Staatsmedien sprechen von US-Angriffen auf mindestens drei Tanker und von Raketen auf US-Ziele in Jordanien. Jordanien meldet demnach das Abfangen von 18 ballistischen Raketen, US-Personal soll nicht verletzt worden sein. Offen bleibt, wie viele Details unabhängig bestätigt sind und wie groß die Schäden tatsächlich sind.\n\nDie Lage wirkt weiter offen und dynamisch; die Berichte nennen Vergeltung auf beiden Seiten und verweisen auf die Straße von Hormus als Spannungsraum.",
+      "summary": "Neue Angaben deuten auf weitere wechselseitige Angriffe zwischen USA und Iran hin. Die Folgen sind materiell relevant, weil sie Schifffahrt, Militär und regionale Sicherheit berühren, die Bestätigung einzelner Details bleibt aber offen.",
+      "detail_summary": "Der Kern ist eine erneute Eskalation zwischen USA und Iran mit Angriffen auf Tanker und Raketenbeschuss auf Ziele in Jordanien. Materiell relevant ist das für Schifffahrt, Sicherheit in der Straße von Hormus und das Risiko weiterer militärischer Gegenschläge. Ein möglicher Wirkpfad läuft über beschädigte Handelsrouten, höhere Versicherungs- und Sicherheitskosten und zusätzliche militärische Reaktionen. Eine positive Wirkung ist aus der Meldung nicht ableitbar; sichtbar ist vor allem ein Eskalations- und Störungsrisiko. Die Evidenz bleibt begrenzt, weil die Angaben überwiegend aus journalistischen Berichten und zugeschriebenen Behörden- oder Staatsmedienangaben stammen.",
+      "why_relevant": "Die Meldung beschreibt einen erneuten militärischen Schlagabtausch mit möglicher Wirkung auf Sicherheit, Handel und regionale Stabilität.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Raketenangriffe, Tankerzerstörungen und Vergeltungsdrohungen erhöhen das Risiko weiterer Gewalt und Störungen für Menschen und Infrastruktur.",
+          "positive_path": {
+            "mechanism": "Mögliche Deeskalation durch Abwehr, Rückzug oder diplomatische Kanäle könnte weitere Angriffe begrenzen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Vergeltungsschleifen können weitere Angriffe, Verletzungen, Verkehrsrisiken und Versorgungsstörungen auslösen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Berichte betreffen Öltanker und die Straße von Hormus; das birgt Störungsrisiken für maritime Umwelt und mögliche Schadstofffolgen.",
+          "positive_path": {
+            "mechanism": "Wenn Angriffe ausbleiben, sinkt das Risiko von Havarien und Ölverschmutzungen auf See.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Beschädigte oder versenkte Tanker können Ölverluste, maritime Schäden und zusätzliche Transportemissionen verursachen.",
+            "source_ids": [
+              "zdfheute-nachrichten",
+              "spiegel-schlagzeilen"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die militärische Eskalation erhöht den Druck auf staatliche Entscheidungsprozesse und kann Öffentlichkeit und Parlament nur begrenzt in Ruhe korrigieren lassen.",
+          "positive_path": {
+            "mechanism": "Offene Kommunikation über Lage und Folgen kann politische Kontrolle und Einordnung verbessern.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kriegslogik und Gegenschläge können Transparenz verdrängen und politische Korrekturen erschweren.",
+            "source_ids": [
+              "tagesspiegel-home",
+              "spiegel-schlagzeilen"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T13:36:49.895Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T22:30:29.000Z",
+      "last_updated": "2026-09-09T13:39:47.214Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-535ab9d27abe1bcdee32",
+      "case_file": null,
+      "source_published_at": "2026-09-08T22:30:29.000Z",
+      "published_at": "2026-09-09T06:40:10.664Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "tagesspiegel-home",
+            "stern-schlagzeilen",
+            "zdfheute-nachrichten"
+          ],
+          [
+            "spiegel-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "zdfheute-nachrichten"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Prüfung, ob es unabhängige Primär- oder Amtsbelege zu den zerstörten Tankern gibt.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigte Herkunft und Zahl der betroffenen Schiffe",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-323b78e253199ee7",
+          "announced_at": "2026-09-09T03:28:00.000Z",
+          "follow_up_date": "2026-09-16T06:40:10.664Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Prüfung, ob die Gegenschläge weitere Schäden, Verletzte oder neue militärische Reaktionen auslösen.",
+          "source_id": "spiegel-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Neue Opfer-, Schadens- oder Reaktionsmeldungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-06e8ef7e6dd0d50e",
+          "announced_at": "2026-09-09T02:29:00.000Z",
+          "follow_up_date": "2026-09-16T06:40:10.664Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die zerstörten Tanker, Raketenangriffe und mögliche Schäden unabhängig bestätigt werden",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Bestätigung oder Abweichung der Angaben",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-33e603435c85ec3a",
+          "announced_at": "2026-09-09T03:28:00.000Z",
+          "follow_up_date": "2026-09-16T13:39:47.214Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es Verletzte, Tote oder größere Sachschäden gibt",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Offizielle Angaben zu Opfern und Schäden",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-dde04bfbf4c958bf",
+          "announced_at": "2026-09-09T03:28:00.000Z",
+          "follow_up_date": "2026-09-16T13:39:47.214Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob sich die Lage in der Straße von Hormus und in Jordanien weiter verschärft",
+          "source_id": "spiegel-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Weitere Angriffe, Sperrungen oder militärische Reaktionen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-18222ce24d159485",
+          "announced_at": "2026-09-09T02:29:00.000Z",
+          "follow_up_date": "2026-09-16T13:39:47.214Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:30:29.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:23:56.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T03:28:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T02:29:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4f69ab66eaceb97a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4f69ab66eaceb97a-514b3c947be733c3-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4f69ab66eaceb97a-aec2611a14777963-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-4f69ab66eaceb97a-2234107f78565d61-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "ukraine-news-wadephul-ruft-ukraine-zum-waffenkauf-in-deutschland-auf-ceb97a",
+      "title": "Ukraine-News: Wadephul ruft Ukraine zum Waffenkauf in Deutschland auf",
+      "source_summary": "Der MDR meldet, Bundesaußenminister Wadephul habe Kiew dazu aufgerufen, mehr Waffen bei deutschen Unternehmen zu bestellen. In derselben Meldung weist Wadephul den Vorwurf seines russischen Amtskollegen Lawrow zurück, Deutschland wolle einen Krieg gegen Russland.\n\nDie Quelle nennt keine konkreten Aufträge, Vertragsabschlüsse oder weiteren Schritte. Der Text ist als Liveblog-Eintrag veröffentlicht und verweist auf Audio; belastbare Folgewirkungen sind daraus noch nicht belegt.",
+      "summary": "Wadephul wirbt laut MDR dafür, dass die Ukraine mehr Waffen in Deutschland bestellt. Konkrete Aufträge oder Folgen sind noch nicht belegt.",
+      "detail_summary": "Die Meldung ist neu genug für eine kurze Erstpublikation: Sie enthält einen klar attribuierten Appell von Wadephul an Kiew, mehr Waffen bei deutschen Firmen zu bestellen. Materiell relevant ist das vor allem, weil ein solcher Kaufaufruf auf Rüstungsaufträge, Lieferketten und die politische Unterstützung für die Ukraine zielt. Ein eingetretener Effekt ist daraus aber noch nicht belegbar. Offen bleibt, ob es überhaupt konkrete Bestellungen, Zusagen oder Reaktionen von Unternehmen und Regierung gibt. Die Evidenz bleibt zunächst auf eine journalistische Einzelquelle beschränkt.",
+      "why_relevant": "Die Meldung betrifft mögliche Rüstungsbestellungen, also einen potenziell materiellen Wirkpfad mit Folgen für Beschaffung, Industrie und politische Unterstützung der Ukraine.",
+      "topic": [
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Ein Appell zu zusätzlichen Waffenbestellungen kann, wenn er aufgegriffen wird, Aufträge und Lieferbeziehungen auslösen. Aus der Meldung selbst ergibt sich noch kein eingetretener Effekt.",
+          "positive_path": {
+            "mechanism": "Mehr Bestellungen könnten Beschaffung, Produktion und Lieferungen anstoßen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne Folgeaufträge bleibt der Appell folgenlos und erzeugt nur kommunikative Resonanz.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung ist kein belastbarer Umwelt- oder Klimapfad beschrieben.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Text berührt öffentliche Rüstungs- und Außenpolitik sowie den Umgang mit dem Kriegsvorwurf. Das kann Debatten beeinflussen, belegt aber noch keine strukturelle Wirkung.",
+          "positive_path": {
+            "mechanism": "Transparente öffentliche Positionierung kann den Streit über Unterstützung und Zuständigkeiten klären.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die Formulierung kann politische Polarisierung über Waffenhilfe und Kriegszuschreibungen verstärken.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T13:36:49.895Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T05:12:56.000Z",
+      "last_updated": "2026-09-09T13:38:05.890Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-0715eaf691bd1dd6adc9",
+      "case_file": null,
+      "source_published_at": "2026-09-09T11:55:43.000Z",
+      "published_at": "2026-09-09T05:39:53.959Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ukraine in der Folge zusätzliche Bestellungen bei deutschen Rüstungsunternehmen platziert.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue bestätigte Aufträge oder offizielle Bestellungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b855cd5fb6e16f27",
+          "announced_at": "2026-09-09T05:12:56.000Z",
+          "follow_up_date": "2026-09-16T05:39:53.959Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es auf ukrainischer, deutscher oder russischer Seite weitere belastbare Reaktionen auf die Äußerung gibt.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Zitierbare Stellungnahmen mit klarer Zuschreibung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-346f3809f3710fcb",
+          "announced_at": "2026-09-09T05:12:56.000Z",
+          "follow_up_date": "2026-09-16T05:39:53.959Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob ukrainische Stellen konkrete Bestellungen bei deutschen Firmen ankündigen oder auslösen",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "genannte Aufträge, Zusagen oder Vertragsmeldungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-2e7ba5752cfcfe6f",
+          "announced_at": "2026-09-09T11:55:43.000Z",
+          "follow_up_date": "2026-09-16T13:38:05.890Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob deutsche Rüstungsunternehmen oder die Bundesregierung auf den Appell reagieren",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "öffentliche Reaktion oder belastbare Folgemeldung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-7b763208fa6fa4a5",
+          "announced_at": "2026-09-09T11:55:43.000Z",
+          "follow_up_date": "2026-09-16T13:38:05.890Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-wadephul-kiew-deutsche-waffen-ruestungsindustrie-lawrow-kriegsvorwurf,ukraine-news-09-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:55:43.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-ed407d0353f699da",
       "title_image": {
@@ -1840,12 +2223,25 @@
     {
       "story_id": "wt-7e2c82a0ae7a9962",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7e2c82a0ae7a9962-c7e33a79b248a296-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7e2c82a0ae7a9962-1a627fd6460e78fd-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7e2c82a0ae7a9962-574c2f5ea0604c8e-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-7e2c82a0ae7a9962-1ed141737b5d2714-source.png"
         }
       },
       "slug": "schulbegleitung-und-co-zahl-der-eingliederungshilfen-fur-junge-menschen-mit-seelischer-b-7a9962",
@@ -1993,9 +2389,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6a90771161f2b4bb-0afc628447f9603e-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6a90771161f2b4bb-a39cea8858a21601-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6a90771161f2b4bb-4628950fc3d38513-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "naher-osten-kriegsereignisse-treiben-roholpreis-wieder-uber-100-dollar-f2b4bb",
@@ -2076,9 +2482,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6f98ab401c2bcf13-95fef953ec7c82c1-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6f98ab401c2bcf13-ea6be9b5861d43f3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6f98ab401c2bcf13-917cd9feb1deebec-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "porsche-se-aktionar-klagt-gegen-millionenvergutung-fur-ex-finanzchef-meschke-2bcf13",
@@ -3685,189 +4101,6 @@
       ]
     },
     {
-      "story_id": "wt-491857684cc65a88",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "iran-krieg-usa-zerstoren-iranische-tanker-teheran-feuert-raketen-ab-c65a88",
-      "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
-      "source_summary": "Mehrere Nachrichtenmedien berichten übereinstimmend von einer neuen Eskalation zwischen den USA und dem Iran. Nach den Berichten hat das US-Militär eigenen Angaben zufolge fünf iranische Öltanker zerstört.\n\nIm Gegenzug sei von iranischer Seite auf US-Ziele mit Raketen reagiert worden; Jordanien meldete, 18 ballistische Raketen seien abgefangen worden, zwei weitere seien in unbewohnten Gebieten niedergegangen. Offen bleibt, wie unabhängig die zugrunde liegenden Meldungen voneinander sind und ob es Primärbelege außerhalb der berichtenden Medien gibt.",
-      "summary": "Mehrere Medien melden neue gegenseitige Angriffe zwischen USA und Iran. Die Angaben zu zerstörten Tankern und abgefangenen Raketen sind noch quellengebunden, aber nicht unabhängig als Primärfakt bestätigt.",
-      "detail_summary": "Der Kern ist eine neue Eskalationsmeldung: US-Stellen sollen fünf iranische Öltanker zerstört haben, danach sollen iranische Kräfte mit Raketen reagiert haben. Jordanien meldete 18 abgefangene ballistische Raketen und zwei Einschläge in unbewohnten Gebieten. Materiell relevant ist das wegen möglicher Folgen für Schifffahrt, regionale Sicherheit und Ölmarkt-Stabilität. Ein belastbarer Wirkpfad ist die Verschärfung des militärischen Gegenschlags mit Risiken für Handel, Preise und weitere Vergeltung. Die Evidenz bleibt aber journalistisch vermittelt; unabhängige Primärbestätigung fehlt in den gelieferten Quellen.",
-      "why_relevant": "Die Meldung beschreibt eine neue, militärisch und wirtschaftlich folgenschwere Zuspitzung im Iran-USA-Konflikt mit möglicher Wirkung auf Schifffahrt, Energiepreise und regionale Sicherheit.",
-      "topic": [
-        "Geopolitik"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "risiko",
-          "direction_basis": "assessed",
-          "rationale": "Wenn Gegenschläge und Gegenschläge weitergehen, steigen Sicherheitsrisiken für Besatzungen, Schifffahrt und zivile Infrastruktur; die Lage bleibt offen, die Richtung ist aber klar konflikthaft.",
-          "positive_path": {
-            "mechanism": "Eine begrenzte Abschreckung könnte weitere unmittelbare Angriffe bremsen und kurzfristig Eskalation begrenzen.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Vergeltungsangriffe können neue militärische Reaktionen, Störungen der Seewege und weitere Schäden auslösen.",
-            "source_ids": [
-              "zdfheute-nachrichten",
-              "spiegel-schlagzeilen"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "mittel",
-          "tendency": "risiko",
-          "direction_basis": "assessed",
-          "rationale": "Für die Umwelt ist vor allem das Risiko von Zwischenfällen, Lecks oder Störungen in der ölintensiven Seeroute relevant; eingetretene Umweltschäden sind hier aber nicht belegt.",
-          "positive_path": {
-            "mechanism": "Ein schneller Waffenstillstand könnte Transport- und Unfallrisiken in der Region senken.",
-            "source_ids": [
-              "zdfheute-nachrichten",
-              "spiegel-schlagzeilen"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Militärische Angriffe auf Tanker erhöhen das Risiko von Ölverlusten, Bränden und maritimen Störungen.",
-            "source_ids": [
-              "zdfheute-nachrichten",
-              "spiegel-schlagzeilen"
-            ]
-          }
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "risiko",
-          "direction_basis": "assessed",
-          "rationale": "Direkte demokratische Folgen sind in den Quellen nicht belegt; relevant ist vor allem die Belastung öffentlicher Kontrolle durch Kriegslage, Informationsunsicherheit und mögliche Ausnahmeentscheidungen.",
-          "positive_path": {
-            "mechanism": "Mehr Transparenz über Angriffe und Gegenangriffe kann parlamentarische und öffentliche Kontrolle stärken.",
-            "source_ids": [
-              "zdfheute-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Kriegseskalation kann Entscheidungsräume verengen und sachliche Kontrolle durch Sicherheitslogik überlagern.",
-            "source_ids": [
-              "zdfheute-nachrichten",
-              "spiegel-schlagzeilen"
-            ]
-          }
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T06:37:16.460Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T22:30:29.000Z",
-      "last_updated": "2026-09-09T06:40:10.664Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-535ab9d27abe1bcdee32",
-      "case_file": null,
-      "source_published_at": "2026-09-08T22:30:29.000Z",
-      "published_at": "2026-09-09T06:40:10.664Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "tagesspiegel-home",
-            "stern-schlagzeilen",
-            "zdfheute-nachrichten"
-          ],
-          [
-            "spiegel-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "stern-schlagzeilen",
-              "tagesspiegel-home"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          },
-          {
-            "source_ids": [
-              "tagesspiegel-home",
-              "zdfheute-nachrichten"
-            ],
-            "reason": "shared_wording_possible_syndication",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Prüfung, ob es unabhängige Primär- oder Amtsbelege zu den zerstörten Tankern gibt.",
-          "source_id": "zdfheute-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Bestätigte Herkunft und Zahl der betroffenen Schiffe",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-323b78e253199ee7",
-          "announced_at": "2026-09-09T03:28:00.000Z",
-          "follow_up_date": "2026-09-16T06:40:10.664Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Prüfung, ob die Gegenschläge weitere Schäden, Verletzte oder neue militärische Reaktionen auslösen.",
-          "source_id": "spiegel-schlagzeilen",
-          "expected_by": null,
-          "measurable_indicator": "Neue Opfer-, Schadens- oder Reaktionsmeldungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-06e8ef7e6dd0d50e",
-          "announced_at": "2026-09-09T02:29:00.000Z",
-          "follow_up_date": "2026-09-16T06:40:10.664Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "Der Tagesspiegel",
-          "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T22:30:29.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T05:23:56.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "ZDFheute",
-          "url": "https://www.zdfheute.de/politik/ausland/usa-iran-angriffe-strasse-von-hormus-oeltanker-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T03:28:00.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "DER SPIEGEL",
-          "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T02:29:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-5a2fe52ebad137c3",
       "title_image": {
         "mode": "impact_card",
@@ -4137,113 +4370,6 @@
           "source_type": "official_rss",
           "published_at": "2026-09-07",
           "primary_source": true
-        }
-      ]
-    },
-    {
-      "story_id": "wt-4f69ab66eaceb97a",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "ukraine-news-wadephul-ruft-ukraine-zum-waffenkauf-in-deutschland-auf-ceb97a",
-      "title": "Ukraine-News: Wadephul ruft Ukraine zum Waffenkauf in Deutschland auf",
-      "source_summary": "Der MDR berichtet, Bundesaußenminister Wadephul habe Kiew aufgerufen, mehr Waffen bei deutschen Unternehmen zu bestellen. Der Text nennt außerdem, dass Wadephul den Vorwurf seines russischen Amtskollegen Lawrow zurückgewiesen habe, Deutschland wolle einen Krieg gegen Russland. Laut Bericht sagte Wadephul zudem, er habe das Thema bei seinem jüngsten Besuch in Kiew mit Präsident Selenskyj besprochen.\n\nOffen bleibt, ob daraus bereits konkrete Bestellungen, Zusagen oder weitere politische Schritte folgen. Die Quelle ist ein einzelner journalistischer Bericht; ein unabhängiger Zweitbeleg liegt in den gelieferten Daten nicht vor.",
-      "summary": "Wadephul wirbt laut MDR für mehr ukrainische Waffenbestellungen in Deutschland. Konkrete Aufträge oder Folgeschritte sind noch nicht belegt.",
-      "detail_summary": "Der berichtete Kern ist klar: Wadephul soll die Ukraine aufgefordert haben, mehr Waffen bei deutschen Unternehmen zu bestellen. Zusätzlich nennt der Text seine Zurückweisung von Lawrows Kriegsvorwurf gegen Deutschland und verweist auf ein Gespräch mit Selenskyj in Kiew. Materiell relevant ist das, weil solche Aussagen auf mögliche Beschaffung, Auftragslage und damit auf industrielle und sicherheitspolitische Beziehungen zielen. Ein Wirkpfad wäre erst dann belastbar, wenn aus der Aufforderung tatsächliche Bestellungen, Vertragsabschlüsse oder andere Folgeentscheidungen werden. Dafür gibt es in den gelieferten Quellen noch keinen unabhängigen Nachweis. Deshalb bleibt die Einordnung vorläufig und die mögliche Wirkung nur als Potenzial beschrieben.",
-      "why_relevant": "Die Meldung betrifft mögliche Rüstungsbestellungen, also eine mögliche Änderung von Beschaffungs- und Industriebeziehungen zwischen Ukraine und Deutschland.",
-      "topic": [
-        "Geopolitik",
-        "Wirtschaft"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Die Meldung beschreibt einen Appell, aber noch keine belegte Veränderung bei Schutz, Versorgung oder Belastung von Menschen.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Aus der Quelle ergibt sich kein tragfähiger Pfad zu Umwelt- oder Klimawirkungen.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Die Aussage berührt öffentliche außenpolitische Kommunikation, aber noch keine belegte Änderung von Verfahren, Kontrolle oder Rechten.",
-          "positive_path": null,
-          "negative_path": null
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T05:36:49.788Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T05:12:56.000Z",
-      "last_updated": "2026-09-09T05:39:53.959Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-0715eaf691bd1dd6adc9",
-      "case_file": null,
-      "source_published_at": "2026-09-09T05:12:56.000Z",
-      "published_at": "2026-09-09T05:39:53.959Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die Ukraine in der Folge zusätzliche Bestellungen bei deutschen Rüstungsunternehmen platziert.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Neue bestätigte Aufträge oder offizielle Bestellungen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-b855cd5fb6e16f27",
-          "announced_at": "2026-09-09T05:12:56.000Z",
-          "follow_up_date": "2026-09-16T05:39:53.959Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Ob es auf ukrainischer, deutscher oder russischer Seite weitere belastbare Reaktionen auf die Äußerung gibt.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Zitierbare Stellungnahmen mit klarer Zuschreibung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-346f3809f3710fcb",
-          "announced_at": "2026-09-09T05:12:56.000Z",
-          "follow_up_date": "2026-09-16T05:39:53.959Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-wadephul-kiew-deutsche-waffen-ruestungsindustrie-lawrow-kriegsvorwurf,ukraine-news-09-09-2026-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T05:12:56.000Z",
-          "primary_source": false
         }
       ]
     },
