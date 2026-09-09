@@ -11,6 +11,7 @@ import { runEditorialAnalyses } from "../../scripts/news/run-editorial-analyses.
 import { enrichEditorialResearchSubjects } from "../../scripts/news/run-editorial-analyses.mjs";
 import { editorialAnalysisPage, storyPage } from "../../scripts/news/build.mjs";
 import { EDITORIAL_QUALITY_KEYS } from "../../scripts/news/editorial-judgment.mjs";
+import { applyEditorialRepair, editorialResearchFingerprint } from '../../scripts/news/editorial-economy.mjs';
 
 function source(id, publisher, primary = false) {
   return { source_id: id, source_item_id: `${id}-item`, publisher_id: id, publisher, url: `https://${id}.example.org/article`, title: `Quellenbericht ${publisher}`, summary: `Der Bericht dokumentiert den Sachverhalt und nennt überprüfbare Angaben zu Infrastruktur, Kosten, Zuständigkeiten und offenen Fragen.`, published_at: "2026-09-05T08:00:00Z", primary_source: primary, provenance: { origin: `publisher:${id}` } };
@@ -85,6 +86,121 @@ function validEditorial(story) {
   };
 }
 
+function economyFixture(t, stories = [highStory('economy')]) {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-editorial-economy-'));
+  t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+  fs.mkdirSync(path.join(root, 'data/news'), { recursive: true });
+  const save = (name, data) => fs.writeFileSync(path.join(root, 'data/news', `${name}.json`), JSON.stringify(data));
+  const load = name => JSON.parse(fs.readFileSync(path.join(root, 'data/news', `${name}.json`)));
+  save('stories', { stories });
+  save('state', { budget_fx: { rate_usd_per_eur: 1.1, rate_date: '2026-09-05' } });
+  return { root, stories, save, load, registry: registryFor(stories), execute: true, build: () => {} };
+}
+
+test('a short metadata repair replaces only named fields, then passes the full publication gate', async t => {
+  const f = economyFixture(t);
+  const expected = sanitizeEditorialAnalysis(validEditorial(f.stories[0]), f.stories[0]);
+  let calls = 0;
+  const result = await runEditorialAnalyses({ ...f, now: '2026-09-05T10:00:00Z', callAiImpl: async ([story], options) => {
+    calls++;
+    assert.equal(options.attempts, 1, 'transport retries are not hidden paid repeats');
+    if (calls === 1) return { analyses: [{ story_id: story.story_id, editorial_analysis: { ...validEditorial(story), seo_description: 'Too short' } }], reported_usage: { input_tokens: 500, output_tokens: 2500 }, model: 'gpt-5.4-mini' };
+    assert.match(options.prompt, /GEZIELTE KORREKTUR/);
+    assert.match(options.prompt, /editorial_analysis_patch/);
+    assert.doesNotMatch(options.prompt, /vollständig neu/);
+    return { analyses: [{ story_id: story.story_id, editorial_analysis_patch: { seo_description: expected.seo_description } }], reported_usage: { input_tokens: 1200, output_tokens: 50 }, model: 'gpt-5.4-mini' };
+  } });
+  assert.equal(result.editorial_analyses_published, 1);
+  assert.equal(result.full_generations, 1);
+  assert.equal(result.targeted_repairs, 1);
+  const record = f.load('editorial-analyses').analyses[0];
+  for (const key of ['sections', 'claim_ledger', 'author_perspective', 'subject_dimensions']) assert.deepEqual(record[key], expected[key], key);
+  assert.deepEqual(editorialAnalysisValidationErrors(record, f.stories[0]), []);
+  const draft = { ...expected, seo_description: 'Too short' };
+  assert.throws(() => applyEditorialRepair(draft, { seo_description: expected.seo_description, sections: [] }, ['EDITORIAL_SEO_LENGTH'], f.stories[0]), /REPAIR_SCOPE_INVALID/);
+  const badTitle = applyEditorialRepair(expected, { title: 'Vor Veröffentlichung noch prüfen. Ein langer Titel für Leserinnen' }, ['EDITORIAL_TITLE_LENGTH'], f.stories[0]);
+  assert.ok(editorialAnalysisValidationErrors(badTitle, f.stories[0]).includes('EDITORIAL_PUBLIC_EDITORIAL_RESIDUE'));
+});
+
+test('unchanged research survives render/date revisions; new evidence still triggers work', async t => {
+  const f = economyFixture(t);
+  let calls = 0;
+  const callAiImpl = async ([story]) => { calls++; return { analyses: [{ story_id: story.story_id, editorial_analysis: validEditorial(story) }], model: 'gpt-5.4-mini', reported_usage: { input_tokens: 100, output_tokens: 100 } }; };
+  await runEditorialAnalyses({ ...f, now: '2026-09-05T10:00:00Z', callAiImpl });
+  const before = editorialResearchFingerprint(f.stories[0]);
+  f.stories[0].current_version++;
+  f.stories[0].last_updated = '2026-09-05T10:01:00Z';
+  assert.equal(editorialResearchFingerprint(f.stories[0]), before);
+  f.save('stories', { stories: f.stories });
+  const unchanged = await runEditorialAnalyses({ ...f, now: '2026-09-05T10:05:00Z', callAiImpl });
+  assert.equal(calls, 1); assert.equal(unchanged.unchanged_research_skipped, 1);
+  // Keep the old feed hash and version: a corrected claim is still new input.
+  f.stories[0].claims[0].claim += ' Ein neuer geprüfter Befund verändert den Ausgangspunkt.';
+  f.save('stories', { stories: f.stories });
+  await runEditorialAnalyses({ ...f, now: '2026-09-05T10:10:00Z', callAiImpl });
+  assert.equal(calls, 2);
+  assert.equal(f.load('editorial-analyses').analyses[0].version, 2);
+});
+
+test('background waits for Batch, but an owner request is durable, prioritized and never bypasses evidence', async t => {
+  const f = economyFixture(t, [highStory('alpha'), highStory('beta')]);
+  const opts = { ...f, backgroundOnly: true, batchEnabled: false, limit: 1 };
+  const waiting = await runEditorialAnalyses({ ...opts, now: '2026-09-05T10:00:00Z', callAiImpl: () => assert.fail('No expensive automatic fallback') });
+  assert.equal(waiting.background_waiting, 2);
+  const id = f.stories[1].story_id;
+  const refused = await runEditorialAnalyses({ ...opts, requestedStoryIds: [id], now: '2026-09-05T10:01:00Z', callAiImpl: async ([story]) => {
+    assert.equal(story.story_id, id);
+    throw Object.assign(new Error('AI_BUDGET_EXHAUSTED'), { providerNotCalled: true, requestAttempts: 1 });
+  } });
+  assert.equal(refused.estimated_cost_usd, 0);
+  assert.equal(f.load('editorial-analyses').editorial_requests[id].status, 'queued');
+  const completed = await runEditorialAnalyses({ ...opts, now: '2026-09-05T10:17:00Z', callAiImpl: async ([story]) => {
+    assert.equal(story.story_id, id);
+    return { analyses: [{ story_id: id, editorial_analysis: validEditorial(story) }], reported_usage: { input_tokens: 100, output_tokens: 100 }, model: 'gpt-5.4-mini' };
+  } });
+  assert.equal(completed.editorial_analyses_published, 1);
+  assert.equal(f.load('editorial-analyses').editorial_requests[id].status, 'published');
+  const first = f.stories[0]; first.sources = first.sources.slice(0, 1);
+  f.save('stories', { stories: f.stories });
+  const held = await runEditorialAnalyses({ ...opts, requestedStoryIds: [first.story_id], now: '2026-09-05T10:18:00Z', callAiImpl: () => assert.fail('Owner request cannot invent evidence') });
+  assert.equal(held.requested[0].status, 'research_pending');
+  await assert.rejects(runEditorialAnalyses({ ...opts, requestedStoryIds: ['wt-unknown'] }), /ORIGIN_NOT_PUBLISHED/);
+});
+
+test('unchanged quality failures stop paid loops, remain visible, and accept a new explicit request', async t => {
+  const f = economyFixture(t);
+  let calls = 0;
+  const callAiImpl = async ([story]) => {
+    calls++;
+    const draft = validEditorial(story); draft.claim_ledger[0].source_ids = [];
+    return { analyses: [{ story_id: story.story_id, editorial_analysis: draft }], reported_usage: { input_tokens: 100, output_tokens: 100 }, model: 'gpt-5.4-mini' };
+  };
+  const opts = { ...f, callAiImpl };
+  await runEditorialAnalyses({ ...opts, now: '2026-09-05T10:00:00Z' });
+  await runEditorialAnalyses({ ...opts, now: '2026-09-05T10:16:00Z' });
+  assert.equal(calls, 4);
+  const held = await runEditorialAnalyses({ ...opts, now: '2026-09-05T11:00:00Z' });
+  assert.equal(calls, 4); assert.equal(held.quality_held, 1);
+  assert.equal(held.candidates[0].status, 'quality_hold');
+  assert.equal(f.load('stories').stories[0].published, true, 'origin remains live');
+  await runEditorialAnalyses({ ...opts, requestedStoryIds: [f.stories[0].story_id], now: '2026-09-05T11:01:00Z' });
+  assert.equal(calls, 6);
+  assert.equal(f.load('editorial-analyses').retry_state[f.stories[0].story_id].quality_cycles, 1);
+});
+
+test('paid malformed provider output is bounded too, without deleting its costs', async t => {
+  const f = economyFixture(t);
+  let calls = 0;
+  const callAiImpl = async () => { calls++; throw Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'), {
+    requestAttempts: 1, billingEvidence: { model: 'gpt-5.4-mini', reported_usage: { input_tokens: 1000, output_tokens: 500 } },
+  }); };
+  for (const now of ['2026-09-05T10:00:00Z', '2026-09-05T10:16:00Z', '2026-09-05T11:00:00Z']) await runEditorialAnalyses({ ...f, now, callAiImpl });
+  assert.equal(calls, 2);
+  assert.equal(f.load('editorial-analyses').candidates[0].status, 'quality_hold');
+  assert.equal(f.load('usage').runs.length, 2);
+  assert.ok(f.load('usage').runs.every(run => run.ai.estimated_cost_usd > 0));
+});
+
 test('Batch editorial results use the existing quality gate, publish once, and do not require a new budget reservation', async t => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-editorial-batch-'));
   t.after(() => fs.rmSync(root, { recursive: true, force: true }));
@@ -98,7 +214,7 @@ test('Batch editorial results use the existing quality gate, publish once, and d
     if (ready) Object.assign(remote, { status: 'completed', billing_status: 'settled', model: 'gpt-5.4-mini', usage: { input_tokens: 1000, output_tokens: 1000 }, estimated_cost_usd: .002625, answer: JSON.stringify({ analyses: [{ story_id: stories[0].story_id, editorial_analysis: validEditorial(stories[0]) }] }) });
     return Response.json({ ok: true, job: remote });
   };
-  const opts = { root, registry: registryFor(stories), execute: true, batchEnabled: true, batchFetchImpl: fetchImpl, authToken: 'test-only', callAiImpl: () => assert.fail('Background must not call sync provider'), build: () => {} };
+  const opts = { root, registry: registryFor(stories), execute: true, backgroundOnly: true, batchEnabled: true, batchFetchImpl: fetchImpl, authToken: 'test-only', callAiImpl: () => assert.fail('Background must not call sync provider'), build: () => {} };
   const pending = await runEditorialAnalyses({ ...opts, now: '2026-09-07T12:00:00Z' });
   assert.equal(pending.batch_deferred, 1); assert.equal(pending.failed.length, 0); assert.equal(pending.editorial_analyses_published, 0);
   // Test paid retrieval even with missing FX: this must not re-submit or deadlock.
