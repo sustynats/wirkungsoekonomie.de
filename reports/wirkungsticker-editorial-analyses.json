@@ -2,14 +2,14 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T12:12:40.277Z",
-  "scanned_stories": 204,
-  "scanned_subjects": 180,
+  "started_at": "2026-09-09T12:28:17.785Z",
+  "scanned_stories": 205,
+  "scanned_subjects": 181,
   "editorial_candidates": 32,
   "ready_for_research": 9,
   "research_pending": 11,
   "retry_deferred": 5,
-  "editorial_research_sources_discovered": 48,
+  "editorial_research_sources_discovered": 49,
   "selected": 1,
   "editorial_research_started": 1,
   "editorial_analyses_published": 0,
@@ -423,7 +423,7 @@
       "story_id": "wt-6fc066364494ba73",
       "story_slug": "ukraine-news-ukrainischer-generalstaatsanwalt-tritt-nach-korruptionsvorwurfen-zuruck-94ba73",
       "story_title": "Ukraine-News: Ukrainischer Generalstaatsanwalt tritt nach Korruptionsvorwürfen zurück",
-      "editorial_analysis_score": 73,
+      "editorial_analysis_score": 74,
       "analysis_gain": 53,
       "factors": {
         "systemic_relevance": 16,
@@ -440,7 +440,7 @@
         "distribution_relevance": 0,
         "discourse_relevance": 0,
         "case_depth": 0,
-        "evidence_quality": 7
+        "evidence_quality": 8
       },
       "factor_status": {
         "impact_potential": "open",
@@ -450,7 +450,7 @@
       "evidence_gate": {
         "passed": false,
         "source_integrity": "verified",
-        "independent_origin_count": 3,
+        "independent_origin_count": 4,
         "primary_source_count": 0,
         "cited_claim_count": 4,
         "primary_source_expected": true,
@@ -459,7 +459,7 @@
           "primary_source_missing"
         ]
       },
-      "fingerprint": "5bb7d32b750cef0f6e1a26dc912b0b8479d4aaff49f436af09496646a4841659",
+      "fingerprint": "29c47e326c59d83af349e96af5653755d026c0869e9079f25dfddaeb388a214c",
       "status": "research_pending",
       "analysis_id": null
     },
@@ -1416,5 +1416,5 @@
     "attention_required": []
   },
   "batch_deferred": 1,
-  "completed_at": "2026-09-09T12:13:17.595Z"
+  "completed_at": "2026-09-09T12:28:56.370Z"
 }

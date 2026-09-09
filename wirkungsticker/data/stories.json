@@ -1,7 +1,302 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T12:06:53.892Z",
+  "updated_at": "2026-09-09T12:22:02.228Z",
   "stories": [
+    {
+      "story_id": "wt-3e258fc08f00f85e",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e",
+      "title": "74-Jähriger nach Messerangriff in Freiburg gestorben",
+      "source_summary": "In Freiburg hat es am Dienstagabend einen Messerangriff gegeben. Ein 74-jähriger Mann ist gestorben; laut Polizeisprecher traf die Polizei vor einem kirchlichen Gemeindezentrum im Stadtteil Rieselfeld ein. Ein Zeuge alarmierte gegen 21:20 Uhr die Polizei. Der Mann war nach Angaben des Berichts bereits tot, als die Einsatzkräfte eintrafen.\n\nEin 30 Jahre alter Tatverdächtiger wurde vorläufig festgenommen. Zu Motiv und weiteren Hintergründen nennt die Quelle keine gesicherten Angaben. Die Polizei sieht laut Bericht keine Hinweise auf religiöse Beweggründe. Ob der Mann das Opfer kannte und ob ein Zusammenhang mit einem Messerangriff vom Sonntag besteht, ist noch offen und wird geprüft.",
+      "summary": "Nach einem Messerangriff in Freiburg ist ein 74-Jähriger gestorben, ein 30 Jahre alter Tatverdächtiger wurde festgenommen. Motiv, Beziehung zwischen den Beteiligten und ein möglicher Zusammenhang mit einem früheren Angriff sind noch offen.",
+      "detail_summary": "Der berichtete Kern ist klar: In Freiburg kam es am Dienstagabend zu einem Messerangriff, bei dem ein 74-jähriger Mann starb. Die Polizei nahm einen 30 Jahre alten Tatverdächtigen vorläufig fest. Offen bleiben Motiv, persönliche Beziehung und die Frage, ob die Tat mit einem weiteren Messerangriff vom Sonntag zusammenhängt. Für die Einordnung ist das materiell relevant, weil sich damit Sicherheitslage, Ermittlungsstand und mögliche Anschlussfragen ändern können. Eine Wirkungsanalyse bleibt vorläufig: Der Eingriff betrifft zuerst Schutz, Vertrauen und öffentliche Sicherheit, aber die Ursache ist noch nicht belastbar geklärt. Die Evidenz stützt den Sachverhalt, nicht die Motive oder eine weitergehende Zurechnung.",
+      "why_relevant": "Der Fall betrifft eine tödliche Gewalttat, laufende Ermittlungen und offene Fragen zu möglichem Zusammenhang mit einem zweiten Angriff in derselben Stadt.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_post",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein tödlicher Messerangriff verschlechtert Schutz und Sicherheitsgefühl unmittelbar; die Festnahme klärt den Schutzverlust noch nicht auf.",
+          "positive_path": {
+            "mechanism": "Vorläufige Festnahme kann weitere akute Gefährdung begrenzen, wenn der Tatverdächtige an weiteren Taten gehindert wird.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die Tat selbst verursacht einen irreversiblen Verlust von Leben und erhöht das Risiko für Unsicherheit und Verunsicherung im Umfeld.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus den gelieferten Quellen ergibt sich kein belastbarer Pfad zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keine belastbaren Hinweise auf demokratische Entscheidungs-, Informations- oder Kontrollwirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "aeltere",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T12:22:02.228Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T05:49:51.000Z",
+      "last_updated": "2026-09-09T12:25:29.220Z",
+      "version": 2,
+      "news_status": "updated",
+      "event_id": "event-9e97cadd2022081e86bf",
+      "case_file": null,
+      "source_published_at": "2026-09-09T09:02:32.000Z",
+      "published_at": "2026-09-09T05:54:07.467Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ],
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "stern-schlagzeilen"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Polizeiaussagen zu Tathergang, Motiv und möglichem Zusammenhang der Vorfälle prüfen",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "amtlich bestätigte Angaben zu Ablauf und Zuordnung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8b16b6c9ceed09ac",
+          "announced_at": "2026-09-09T05:49:51.000Z",
+          "follow_up_date": "2026-09-16T05:54:07.467Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Die Polizei klärt, ob es einen Zusammenhang zwischen beiden Messerangriffen gibt.",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "amtliche Bestätigung oder Verneinung eines Zusammenhangs",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c9f09cdbbb8a6f9f",
+          "announced_at": "2026-09-09T09:02:32.000Z",
+          "follow_up_date": "2026-09-16T12:25:29.220Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/freiburg/mann-nach-messerangriff-in-freiburg-gestorben-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:02:32.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/tat-vor-gemeindezentrum--74-jaehriger-stirbt-nach-messerangriff-in-freiburg-38224426.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T09:50:59.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/toedlicher-messerangriff--messerangriffe-in-freiburg---polizei-vermutet-selben-taeter-38224426.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T12:14:04.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-dc674d56860c0346",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "iran-attacks-us-base-after-american-strikes-on-tankers-0c0346",
+      "title": "Iran attacks US base after American strikes on tankers",
+      "source_summary": "Iran habe laut France 24 früh am Mittwoch ballistische Raketen auf eine von US-Streitkräften genutzte Basis in Jordanien abgefeuert. Die Meldung ordnet den Angriff als Reaktion auf US-Schläge gegen iranische Öltanker im Golf von Oman und nahe der Insel Kharg vor Irans Küste ein.\n\nDie US-Seite habe erklärt, fünf iranische Tanker seien zerstört worden. Weitere Details zu Schäden, Opfern oder einer unabhängigen Bestätigung des Angriffs nennt die gelieferte Quelle nicht.",
+      "summary": "Iran meldet nach einer France-24-Meldung einen Raketenangriff auf eine US-Basis in Jordanien. Der Auslöser soll der US-Schlag gegen iranische Tanker gewesen sein; die Angaben bleiben vorerst einseitig belegt.",
+      "detail_summary": "Die vorliegende Meldung beschreibt einen militärischen Gegenschlag: Iran habe ballistische Raketen auf eine US-Basis in Jordanien gefeuert und dies als Antwort auf US-Angriffe auf iranische Tanker dargestellt. Gleichzeitig zitiert die Quelle die US-Seite mit der Angabe, fünf iranische Tanker seien zerstört worden. Damit ist der Kern des Ereignisses neu und politisch sowie sicherheitlich relevant, weil daraus eine mögliche Eskalation im Golfraum entsteht. Für die Wirkung zählt vor allem der Pfad von Angriff zu Gegenreaktion zu weiterer militärischer Zuspitzung. Offen bleibt aber, ob die Angriffe unabhängig bestätigt sind und welche Schäden oder Folgen konkret eingetreten sind. Die Einordnung bleibt deshalb vorläufig und quellengebunden.",
+      "why_relevant": "Die Meldung beschreibt eine potenzielle militärische Eskalation zwischen Iran und den USA mit möglicher Bedeutung für regionale Sicherheit, Schifffahrt und weitere Gegenreaktionen.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein Raketenangriff auf eine US-Basis kann die Zahl betroffener Menschen, Verletzungsrisiken und die Wahrscheinlichkeit weiterer militärischer Antworten erhöhen.",
+          "positive_path": {
+            "mechanism": "Eine klarere Abschreckungs- oder Verhandlungslage könnte bei ausbleibender Eskalation das unmittelbare Gewaltpotenzial senken.",
+            "source_ids": [
+              "france24-en"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Vergeltungsschläge oder Fehlkalkulationen können den Konflikt ausweiten und das Risiko für Zivilisten und Militär erhöhen.",
+            "source_ids": [
+              "france24-en"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Meldung betrifft zunächst Sicherheit und Konfliktrisiken; über mögliche Folgen für Schifffahrt, Energieinfrastruktur und Umwelt liegen noch keine belastbaren Angaben vor.",
+          "positive_path": {
+            "mechanism": "Falls der Vorfall zu deeskalierenden Gesprächen führt, könnten Folgeschäden an Infrastruktur und Transportwegen ausbleiben.",
+            "source_ids": [
+              "france24-en"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine Ausweitung von Angriffen im Golfraum kann Tankerverkehr, Energieflüsse und damit verbundene Umwelt- und Unfallrisiken erhöhen.",
+            "source_ids": [
+              "france24-en"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Militärische Eskalation verschiebt politische Entscheidungen in Richtung Sicherheitslogik und kann öffentliche Kontrolle über schnelle Reaktionen erschweren.",
+          "positive_path": {
+            "mechanism": "Transparente Aufklärung und parlamentarische Kontrolle könnten den Druck zu begrenzten Antworten erhöhen.",
+            "source_ids": [
+              "france24-en"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kriegsrhetorik und schnelle Gegenmaßnahmen können die demokratische Korrekturfähigkeit im Krisenmodus schwächen.",
+            "source_ids": [
+              "france24-en"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T12:22:02.228Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T11:43:46.000Z",
+      "last_updated": "2026-09-09T12:25:00.415Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-b841d94e9b5189582c60",
+      "case_file": null,
+      "source_published_at": "2026-09-09T11:43:46.000Z",
+      "published_at": "2026-09-09T12:25:00.415Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "france24-en"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die US-Angaben zu fünf zerstörten iranischen Tankern durch weitere Quellen bestätigt werden.",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung oder Widerspruch der Tankerzahl durch weitere belastbare Quellen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-85125cd8d603b7bc",
+          "announced_at": "2026-09-09T11:43:46.000Z",
+          "follow_up_date": "2026-09-16T12:25:00.415Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es eine unabhängige Bestätigung des Raketenangriffs auf die US-Basis in Jordanien gibt.",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Meldungen oder amtliche Bestätigung des Angriffs",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-8bc93af461554937",
+          "announced_at": "2026-09-09T11:43:46.000Z",
+          "follow_up_date": "2026-09-16T12:25:00.415Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es Angaben zu Schäden, Opfern oder einer Gegenreaktion der USA gibt.",
+          "source_id": "france24-en",
+          "expected_by": null,
+          "measurable_indicator": "Belastbare Angaben zu Schaden, Verletzten, Toten oder Vergeltung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b4b6f36e416bb62e",
+          "announced_at": "2026-09-09T11:43:46.000Z",
+          "follow_up_date": "2026-09-16T12:25:00.415Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/video/20260909-iran-attacks-us-base-after-american-strikes-on-tankers",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:43:46.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-ae5023f974deba91",
       "title_image": {
@@ -3295,121 +3590,6 @@
           "url": "https://www.spiegel.de/ausland/usa-beschiessen-iranische-tanker-teheran-feuert-raketen-auf-jordanien-a-dd0e1f5e-44ef-4dbb-a865-df846edc3f9e",
           "source_type": "media_rss",
           "published_at": "2026-09-09T02:29:00.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-3e258fc08f00f85e",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "74-jahriger-nach-messerangriff-in-freiburg-gestorben-00f85e",
-      "title": "74-Jähriger nach Messerangriff in Freiburg gestorben",
-      "source_summary": "In Freiburg hat es am Dienstagabend einen Messerangriff gegeben. Nach Angaben einer Meldung ist ein 74-jähriger Mann gestorben, ein Tatverdächtiger wurde festgenommen.\n\nEin weiteres Medium berichtet ebenfalls über den Tod eines 74-Jährigen nach einem Messerangriff und ergänzt, die Polizei habe einen mutmaßlichen Täter festgenommen. Der genaue Tathergang, ein mögliches Motiv und ein Zusammenhang mit weiteren Vorfällen in Freiburg bleiben offen.",
-      "summary": "Ein 74-jähriger Mann ist nach einem Messerangriff in Freiburg gestorben. Die Polizei hat einen Tatverdächtigen festgenommen.",
-      "detail_summary": "Der Kern ist gesichert genug für eine Erstmeldung: Ein 74-jähriger Mann ist nach einem Messerangriff in Freiburg gestorben, und ein Tatverdächtiger wurde festgenommen. Offen bleibt, was genau passiert ist und ob ein zweiter gemeldeter Angriff in Freiburg damit zusammenhängt. Materiell relevant ist das Ereignis wegen des tödlichen Verlaufs, der unmittelbaren Sicherheitslage und möglicher Folgen für das Sicherheitsgefühl im Umfeld. Ein belastbarer Wirkpfad zur öffentlichen Debatte oder zu Regeln lässt sich aus den vorliegenden Quellen noch nicht ableiten. Die Evidenz bleibt auf journalistische Meldungen beschränkt; amtliche Details oder weitere Bestätigungen fehlen hier noch.",
-      "why_relevant": "Tödliche Gewalt ist ein schwerer Einschnitt für Betroffene und Sicherheitslage; die Festnahme macht den Fall zudem aktuell und folgenrelevant.",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "status": "laufende Entwicklung",
-      "analysis_type": "ex_ante",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "risiko",
-          "direction_basis": "assessed",
-          "rationale": "Ein tödlicher Messerangriff verschlechtert unmittelbar Schutz und Sicherheit für die direkt Betroffenen; weitere soziale Folgen sind möglich, aber noch offen.",
-          "positive_path": {
-            "mechanism": "Eine schnelle Festnahme kann akute Gefährdung im Umfeld senken und Ermittlungen ermöglichen.",
-            "source_ids": [
-              "swr-aktuell"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Gewalt mit Todesfolge erhöht das Risiko für weitere Verunsicherung, Traumatisierung und Schutzbedarf im Umfeld.",
-            "source_ids": [
-              "swr-aktuell"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Aus den Quellen ergibt sich kein belastbarer Umwelt- oder Klimapfad.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Die Meldung betrifft Strafverfolgung, aber keine demokratischen Verfahren oder Regeln.",
-          "positive_path": null,
-          "negative_path": null
-        }
-      },
-      "visuals": null,
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T05:52:18.628Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T05:49:51.000Z",
-      "last_updated": "2026-09-09T05:54:07.467Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-9e97cadd2022081e86bf",
-      "case_file": null,
-      "source_published_at": "2026-09-09T04:54:57.000Z",
-      "published_at": "2026-09-09T05:54:07.467Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "swr-aktuell"
-          ],
-          [
-            "stern-schlagzeilen"
-          ]
-        ],
-        "possible_independent_origins": 2,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Polizeiaussagen zu Tathergang, Motiv und möglichem Zusammenhang der Vorfälle prüfen",
-          "source_id": "swr-aktuell",
-          "expected_by": null,
-          "measurable_indicator": "amtlich bestätigte Angaben zu Ablauf und Zuordnung",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-8b16b6c9ceed09ac",
-          "announced_at": "2026-09-09T05:49:51.000Z",
-          "follow_up_date": "2026-09-16T05:54:07.467Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "SWR Aktuell",
-          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/freiburg/mann-nach-messerangriff-in-freiburg-gestorben-100.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T05:49:51.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/tat-vor-gemeindezentrum--74-jaehriger-stirbt-nach-messerangriff-in-freiburg-38224426.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T04:54:57.000Z",
           "primary_source": false
         }
       ]
