@@ -1,7 +1,377 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T07:37:26.176Z",
+  "updated_at": "2026-09-09T08:06:50.537Z",
   "stories": [
+    {
+      "story_id": "wt-688b36d040bfbf87",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87",
+      "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
+      "source_summary": "Die MDR-Datenanalyse zur Landtagswahl in Sachsen-Anhalt beschreibt ein klares Stadt-Land- und Altersmuster bei der AfD-Wahl. Nach dem Text läge die AfD in ländlichen Regionen bei 50,4 Prozent und bei Männern bei 50 Prozent. In Städten, vor allem in Magdeburg und Halle, werden die Grünen mit 18,4 Prozent als zweitstärkste Kraft genannt.\n\nDer Ausschnitt nennt außerdem, dass Seniorinnen und Senioren die AfD bremsen und autoritäre politische Einstellungen die Wahl beeinflussten. Im gelieferten Material bleibt offen, welche Methodik genau verwendet wurde und wie belastbar die landesweite Übertragung ist.",
+      "summary": "Die MDR-Analyse zeigt starke Unterschiede zwischen Stadt und Land bei der AfD-Wahl in Sachsen-Anhalt. Die Aussage ist relevant für die Einordnung von Wählergruppen, ersetzt aber noch keinen eigenen Kausalbeleg.",
+      "detail_summary": "Der gelieferte MDR-Ausschnitt rekonstruiert ein Wählerprofil zur Landtagswahl in Sachsen-Anhalt. Genannt werden 50,4 Prozent für die AfD in ländlichen Regionen, 50 Prozent bei Männern und 18,4 Prozent für die Grünen in Magdeburg und Halle. Die Einordnung kann für Parteistrategien, die Ansprache von Zielgruppen und die demokratische Selbstbeobachtung wichtig sein. Ein direkter Wirkpfad wäre: Daten über Wählergruppen verändern die Informationsgrundlage für Kampagnen und Nachfragen in der politischen Kommunikation. Als Wirkung ist das noch nicht belegt; sichtbar ist zunächst nur die Beschreibung von Mustern. Die Evidenz bleibt begrenzt, weil im gelieferten Material nur ein journalistischer Datenausschnitt vorliegt und die Methodik nicht vollständig offengelegt ist.",
+      "why_relevant": "Die Analyse liefert neue Zustandsinformation zum Wahlverhalten nach Wohnort, Geschlecht und Alter. Das ist für Parteien, Medien und die demokratische Einordnung des Wahlergebnisses materiell relevant.",
+      "topic": [
+        "Digitalisierung",
+        "Demokratie"
+      ],
+      "status": "erste Daten",
+      "analysis_type": "ex_post",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Meldung beschreibt Wahlmuster und kann die politische Ansprache verändern. Ein belastbarer Pfad zu konkreten sozialen Folgen ist im Ausschnitt aber nicht belegt.",
+          "positive_path": {
+            "mechanism": "Bessere Kenntnis von Wählergruppen kann Kampagnen, Ansprache und strategische Korrekturen in Parteien und Öffentlichkeit verändern.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Die zugespitzte Darstellung einzelner Gruppen kann stereotype Deutungen und Polarisierung im Wahlgespräch verstärken.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Im gelieferten Material gibt es keinen belastbaren Bezug zu Umwelt-, Klima- oder Ressourcenzuständen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Daten können die demokratische Selbstbeobachtung verbessern, weil sie Unterschiede nach Alter, Geschlecht und Wohnort sichtbar machen. Das stärkt zunächst die Informationsgrundlage, nicht schon das Ergebnis selbst.",
+          "positive_path": {
+            "mechanism": "Transparente Wahlmuster können öffentliche Debatten, Parteiarbeit und Korrekturen an Ansprache oder Repräsentation anstoßen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn die Muster nur zugespitzt auf Gruppen reduziert werden, kann das die Polarisierung und pauschale Zuschreibungen im Diskurs fördern.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T08:06:50.537Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T11:57:24.000Z",
+      "last_updated": "2026-09-09T08:08:08.422Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-c1db53eddd471e49ec6b",
+      "case_file": null,
+      "source_published_at": "2026-09-08T11:57:24.000Z",
+      "published_at": "2026-09-08T12:38:27.704Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob die MDR-Analyse eine Methodik, Vergleichswerte oder regionale Detailzahlen nachreicht.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "veröffentlichte Methodik oder zusätzliche Detailzahlen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-a75aa5f0eaa9c1d4",
+          "announced_at": "2026-09-08T11:57:24.000Z",
+          "follow_up_date": "2026-09-16T08:08:08.422Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T11:57:24.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-bbe37953fcbe9af5",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
+      "title": "Wahlergebnis Sachsen-Anhalt: AfD verschickt Einladung zu Gesprächen an CDU",
+      "source_summary": "Die MDR meldet zwei Tage nach der Wahl in Sachsen-Anhalt eine neue Entwicklung bei den Gesprächen über die künftige politische Lage im Landtag. Nach Angaben des Senders will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen; zugleich liege MDR eine Einladung an die CDU vor.\n\nDas Ergebnis solcher Gespräche ist offen. Weitere belastbare Angaben zu Annahme, Ablauf oder Folgen nennt die vorliegende Quelle nicht.",
+      "summary": "Die AfD will nach der Wahl Gespräche mit der CDU anstoßen; MDR sagt, ein Einladungsschreiben liege vor. Ob daraus tatsächlich Sondierungen oder Vereinbarungen werden, ist offen.",
+      "detail_summary": "Die Meldung zeigt eine neue, konkrete Kontaktaufnahme nach der Wahl: Die AfD will nach Angaben des MDR die CDU zu Gesprächen einladen, und dem Sender liegt dafür ein Schreiben vor. Das ist für die Regierungsbildung relevant, weil solche Sondierungen den Startpunkt für Koalitions- oder Minderheitsoptionen markieren können. Materiell ist das vor allem dann, wenn sich daraus veränderte Mehrheiten, feste Absprachen oder eine neue Verhandlungslage im Landtag ergeben. Eine Wirkung ist hier noch nicht eingetreten; sichtbar ist zunächst nur ein politischer Schritt mit offenem Ausgang. Die Evidenz bleibt vorläufig, weil nur eine journalistische Quelle vorliegt und das tatsächliche Zustandekommen der Gespräche noch unklar ist.",
+      "why_relevant": "Der Bericht beschreibt einen konkreten Schritt nach der Wahl, der die Verhandlungslage im Landtag verändern kann.",
+      "topic": [
+        "Demokratie",
+        "Politik",
+        "Gesellschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Es liegt nur ein Einladungsschritt vor. Ob Gespräche stattfinden und politische Folgen entstehen, ist noch offen.",
+          "positive_path": {
+            "mechanism": "Gespräche könnten Verhandlungen über Mehrheiten oder Arbeitsabsprachen eröffnen und damit die Handlungsfähigkeit im Landtag verändern.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleibt die Einladung ohne Annahme oder Ergebnis, entsteht keine materielle Veränderung der Regierungs- oder Oppositionslogik.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung gibt es keinen belastbaren Umwelt- oder Klimapfad.",
+          "positive_path": {
+            "mechanism": "Kein belegter Wirkpfad im Quellenmaterial.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kein belegter Wirkpfad im Quellenmaterial.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Parteigeführte Gespräche können die parlamentarische Arbeitsfähigkeit stärken, aber auch Normalisierung und Priorisierung verschieben. Die Richtung hängt davon ab, ob daraus transparente, tragfähige Verhandlungen werden.",
+          "positive_path": {
+            "mechanism": "Sondierungen können Konflikte ordnen, Optionen klären und Entscheidungsfähigkeit im Landtag erhöhen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine Einladung kann auch symbolisch auf eine Annäherung wirken und die politische Abgrenzung verwischen, ohne dass schon belastbare Vereinbarungen vorliegen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T08:06:50.537Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T19:52:01.000Z",
+      "last_updated": "2026-09-09T08:07:40.351Z",
+      "version": 2,
+      "news_status": "preliminary",
+      "event_id": "event-9b0d6a04db8967aed972",
+      "case_file": {
+        "case_id": "case-c3b7412b8f0f9d",
+        "member_count": 11,
+        "publisher_count": 13,
+        "members": [
+          {
+            "story_id": "wt-bbe37953fcbe9af5",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD verschickt Einladung zu Gesprächen an CDU",
+            "summary": "Die AfD will nach der Wahl Gespräche mit der CDU anstoßen; MDR sagt, ein Einladungsschreiben liege vor. Ob daraus tatsächlich Sondierungen oder Vereinbarungen werden, ist offen.",
+            "updated_at": "2026-09-09T08:07:40.351Z",
+            "published_at": "2026-09-08T20:23:17.271Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-f81a621f2a1d2142",
+            "slug": "wahlergebnis-sachsen-anhalt-sepp-muller-will-neuer-cdu-landesvorstand-werden-1d2142",
+            "title": "Wahlergebnis Sachsen-Anhalt: Sepp Müller will neuer CDU-Landesvorstand werden",
+            "summary": "MDR meldet eine offene Führungsfrage in der CDU Sachsen-Anhalt und die Kandidatur von Sepp Müller für den Landesvorsitz. Das ist für die Partei und die Regierungsbildung relevant, die Wirkung bleibt aber vorläufig.",
+            "updated_at": "2026-09-09T07:08:46.443Z",
+            "published_at": "2026-09-09T07:08:46.443Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-ed33c0962c4a697d",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+            "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
+            "updated_at": "2026-09-08T17:10:25.881Z",
+            "published_at": "2026-09-07T13:43:48.649Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-550f98293aec9698",
+            "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+            "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
+            "updated_at": "2026-09-08T11:24:45.444Z",
+            "published_at": "2026-09-08T11:24:45.444Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-255776ddd744e745",
+            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
+            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
+            "updated_at": "2026-09-08T05:54:13.168Z",
+            "published_at": "2026-09-07T20:39:39.302Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-ce34d0b6e55327b5",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
+            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
+            "updated_at": "2026-09-07T18:23:55.805Z",
+            "published_at": "2026-09-07T18:23:55.805Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-67096fe077900925",
+            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
+            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
+            "updated_at": "2026-09-07T13:43:27.050Z",
+            "published_at": "2026-09-07T13:43:27.050Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-e10c23f5e37ed39e",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
+            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
+            "updated_at": "2026-09-06T20:53:01.243Z",
+            "published_at": "2026-09-06T20:53:01.243Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-12f9c680daba4f09",
+            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
+            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
+            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
+            "updated_at": "2026-09-06T20:07:20.597Z",
+            "published_at": "2026-09-06T20:07:20.597Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ebecf5b3f91d490",
+            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
+            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+            "updated_at": "2026-09-05T23:19:18.605Z",
+            "published_at": "2026-09-05T22:07:32.381Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-06476c6e980f5f47",
+            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-05T12:01:00.915Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-08T19:52:01.000Z",
+      "published_at": "2026-09-08T20:23:17.271Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die CDU die Einladung annimmt oder ablehnt",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "öffentliche Reaktion der CDU",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-36271b128ad8deee",
+          "announced_at": "2026-09-08T19:52:01.000Z",
+          "follow_up_date": "2026-09-15T20:23:17.271Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Welche weiteren Parteien Gespräche mit der AfD führen",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "namentlich bestätigte Gesprächsteilnahmen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-80f124732f2f98b9",
+          "announced_at": "2026-09-08T19:52:01.000Z",
+          "follow_up_date": "2026-09-15T20:23:17.271Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-166,wahl-560.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T19:52:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-bc529033a872d25e",
       "title_image": {
@@ -705,261 +1075,6 @@
           "url": "https://www.swr.de/swraktuell-radio/haushaltswoche-bundestag-geld-sinnvoll-100.html",
           "source_type": "media_rss",
           "published_at": "2026-09-09T06:44:10.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-f81a621f2a1d2142",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "wahlergebnis-sachsen-anhalt-sepp-muller-will-neuer-cdu-landesvorstand-werden-1d2142",
-      "title": "Wahlergebnis Sachsen-Anhalt: Sepp Müller will neuer CDU-Landesvorstand werden",
-      "source_summary": "Drei Tage nach der Landtagswahl in Sachsen-Anhalt läuft die Regierungsbildung weiter. MDR berichtet im Liveticker, dass zugleich die Nachfolge von Sven Schulze als CDU-Landeschef gesucht wird.\n\nIn einem zweiten MDR-Beitrag heißt es, Sepp Müller wolle CDU-Landeschef in Sachsen-Anhalt werden. Der Beitrag beschreibt die Kandidatur als Versuch von Erneuerung und einer klaren Abgrenzung zu AfD und Linken. Offen bleibt, wie die innerparteiliche Entscheidung ausgeht und ob daraus bereits ein verbindlicher Kurswechsel folgt.",
-      "summary": "MDR meldet eine offene Führungsfrage in der CDU Sachsen-Anhalt und die Kandidatur von Sepp Müller für den Landesvorsitz. Das ist für die Partei und die Regierungsbildung relevant, die Wirkung bleibt aber vorläufig.",
-      "detail_summary": "Der konkrete Befund ist einfach: Nach der Landtagswahl ist die Koalitionssuche in Sachsen-Anhalt weiter offen, und zugleich wird in der CDU die Nachfolge von Sven Schulze als Landeschef gesucht. MDR berichtet dazu, dass Sepp Müller für den Landesvorsitz kandidieren will. Materiell neu ist daran die sichtbare Führungs- und Kursfrage in der Landespartei. Das kann die innerparteiliche Machtverteilung, die Koalitionsfähigkeit und die spätere Regierungsbildung beeinflussen. Eine eingetretene Wirkung ist daraus noch nicht ableitbar; es bleibt eine angekündigte Entwicklung mit offenem Ausgang und nur einem belastbaren Quellenstrang.",
-      "why_relevant": "Die Meldung betrifft eine offene Führungsfrage in der größten Regierungspartei des Landes und damit einen möglichen Einfluss auf Koalitionsbildung und Kurs der Landespolitik.",
-      "topic": [
-        "Demokratie",
-        "Politik",
-        "Gesellschaft"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Die Kandidatur kann die parteiinterne Ordnung und die Koalitionsfähigkeit stabilisieren, wenn sie Akzeptanz schafft; sie kann aber auch neue Konflikte über Kurs und Personal auslösen.",
-          "positive_path": {
-            "mechanism": "Ein neuer Landeschef kann die CDU organisatorisch ordnen und die Bildung einer Regierungsmehrheit erleichtern.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ein umstrittener Führungswechsel kann interne Spannungen verstärken und Verhandlungen mit anderen Parteien erschweren.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimapfad.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Die Führungsfrage betrifft die demokratische Korrekturfähigkeit der Landespartei und mittelbar die Bildung einer handlungsfähigen Regierung.",
-          "positive_path": {
-            "mechanism": "Ein geordneter Führungswechsel kann innerparteiliche Verantwortung klären und Regierungsbildung ermöglichen.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ein konfliktbeladener Wechsel kann die Verständigung zwischen Parteien verzögern und die Regierungsbildung belasten.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "kommunen",
-          "staat",
-          "beschaeftigte"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T07:06:43.209Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-09T04:00:03.000Z",
-      "last_updated": "2026-09-09T07:08:46.443Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-7bb9ce28f9a9713882c5",
-      "case_file": {
-        "case_id": "case-c3b7412b8f0f9d",
-        "member_count": 11,
-        "publisher_count": 13,
-        "members": [
-          {
-            "story_id": "wt-f81a621f2a1d2142",
-            "slug": "wahlergebnis-sachsen-anhalt-sepp-muller-will-neuer-cdu-landesvorstand-werden-1d2142",
-            "title": "Wahlergebnis Sachsen-Anhalt: Sepp Müller will neuer CDU-Landesvorstand werden",
-            "summary": "MDR meldet eine offene Führungsfrage in der CDU Sachsen-Anhalt und die Kandidatur von Sepp Müller für den Landesvorsitz. Das ist für die Partei und die Regierungsbildung relevant, die Wirkung bleibt aber vorläufig.",
-            "updated_at": "2026-09-09T07:08:46.443Z",
-            "published_at": "2026-09-09T07:08:46.443Z",
-            "kind": "Weitere Entwicklung",
-            "current": true
-          },
-          {
-            "story_id": "wt-bbe37953fcbe9af5",
-            "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD verschickt Einladung zu Gesprächen an CDU",
-            "summary": "Die AfD hat nach dem Wahlabend Einladungen zu Gesprächen verschickt; laut MDR liegt ein Schreiben an die CDU vor. Ein Ergebnis der Gespräche ist noch offen.",
-            "updated_at": "2026-09-08T20:23:17.271Z",
-            "published_at": "2026-09-08T20:23:17.271Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-ed33c0962c4a697d",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
-            "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
-            "updated_at": "2026-09-08T17:10:25.881Z",
-            "published_at": "2026-09-07T13:43:48.649Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-550f98293aec9698",
-            "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
-            "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
-            "updated_at": "2026-09-08T11:24:45.444Z",
-            "published_at": "2026-09-08T11:24:45.444Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-255776ddd744e745",
-            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
-            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
-            "updated_at": "2026-09-08T05:54:13.168Z",
-            "published_at": "2026-09-07T20:39:39.302Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-ce34d0b6e55327b5",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
-            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
-            "updated_at": "2026-09-07T18:23:55.805Z",
-            "published_at": "2026-09-07T18:23:55.805Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-67096fe077900925",
-            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
-            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
-            "updated_at": "2026-09-07T13:43:27.050Z",
-            "published_at": "2026-09-07T13:43:27.050Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-e10c23f5e37ed39e",
-            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
-            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
-            "updated_at": "2026-09-06T20:53:01.243Z",
-            "published_at": "2026-09-06T20:53:01.243Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-12f9c680daba4f09",
-            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
-            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
-            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
-            "updated_at": "2026-09-06T20:07:20.597Z",
-            "published_at": "2026-09-06T20:07:20.597Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ebecf5b3f91d490",
-            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
-            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
-            "updated_at": "2026-09-05T23:19:18.605Z",
-            "published_at": "2026-09-05T22:07:32.381Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-06476c6e980f5f47",
-            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
-            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
-            "updated_at": "2026-09-05T12:28:41.779Z",
-            "published_at": "2026-09-05T12:01:00.915Z",
-            "kind": "Kontext oder Einordnung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-08T20:33:01.000Z",
-      "published_at": "2026-09-09T07:08:46.443Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": [
-          {
-            "source_ids": [
-              "mdr-nachrichten",
-              "mdr-nachrichten"
-            ],
-            "reason": "same_publisher",
-            "document_pairs": 1
-          }
-        ]
-      },
-      "followups": [
-        {
-          "claim": "Ob Sepp Müller tatsächlich zum CDU-Landeschef gewählt wird.",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "Beschluss oder Wahl zum Landesvorsitz",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-de3ae7ad411a06fb",
-          "announced_at": "2026-09-09T06:42:55.000Z",
-          "follow_up_date": "2026-09-16T07:08:46.443Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-168,wahl-560.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T06:42:55.000Z",
-          "primary_source": false
-        },
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/kandidatur-landesvorsitzender-cdu-100,sepp-mueller-158.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T20:33:01.000Z",
           "primary_source": false
         }
       ]
@@ -5791,97 +5906,6 @@
           "url": "https://www.france24.com/en/video/20260908-as-houthis-attack-saudi-arabia-is-iran-war-escalating-into-regional-conflict",
           "source_type": "media_rss",
           "published_at": "2026-09-08T13:02:50.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-688b36d040bfbf87",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "afd-wahler-in-sachsen-anhalt-wer-die-partei-gewahlt-hat-bfbf87",
-      "title": "AfD-Wähler in Sachsen-Anhalt: Wer die Partei gewählt hat",
-      "source_summary": "Der MDR veröffentlicht eine Datenanalyse zur Landtagswahl in Sachsen-Anhalt und fragt, wer die AfD gewählt hat. Im Abstract heißt es, die Partei erreiche auf dem Land 50,4 Prozent und komme bei Männern auf 50 Prozent.\n\nDer begleitende Text beschreibt, dass die AfD ländliche Regionen dominiert, in Landgemeinden die meisten neuen Stimmen gewinnt und dass Alter, Geschlecht und Wohnort das Ergebnis mit prägen. Außerdem wird genannt, dass die Grünen in Magdeburg und Halle mit 18,4 Prozent zweitstärkste Kraft sind.",
-      "summary": "Die MDR-Datenanalyse beschreibt ein klares Stadt-Land- und Altersmuster bei der AfD-Wahl in Sachsen-Anhalt. Sie liefert neue Zustandsinformationen zum Wählerprofil, aber noch keinen eigenständigen Kausalbeweis.",
-      "detail_summary": "Die Quelle ist eine Datenanalyse des MDR zur Landtagswahl in Sachsen-Anhalt. Sie nennt 50,4 Prozent für die AfD auf dem Land, 50 Prozent bei Männern und 18,4 Prozent für die Grünen in Magdeburg und Halle. Das ist relevant, weil es das Wahlergebnis nicht nur als Gesamtsumme, sondern als verteiltes Muster nach Wohnort, Geschlecht und Alter sichtbar macht. Der mögliche Wirkpfad liegt vor allem in veränderten politischen Anreizen und Entscheidungsgrundlagen für Parteien, die ihre Ansprache, Themenwahl und regionale Strategie daran ausrichten können. Eine eingetretene Wirkung auf spätere Entscheidungen ist aus dieser Einzelquelle noch nicht belegt; hier liegt zunächst ein beschreibender Befund vor. Die Evidenz bleibt auf eine journalistische Datenanalyse begrenzt, daher sind Ursache, Tiefe der Verschiebung und Übertragbarkeit offen.",
-      "why_relevant": "Die Analyse zeigt ein relevantes Wahlmuster mit möglicher Bedeutung für Parteienstrategien und die politische Repräsentation in Sachsen-Anhalt.",
-      "topic": [
-        "Digitalisierung",
-        "Demokratie"
-      ],
-      "status": "erste Daten",
-      "analysis_type": "monitoring",
-      "importance": "hoch",
-      "dimensions": {
-        "human": {
-          "relevance": "hoch",
-          "tendency": "offen",
-          "rationale": "Der Befund betrifft ein Landtagswahlergebnis und beschreibt, welche Gruppen besonders stark mit der AfD korrelieren. Für Menschen ist das politisch relevant, aber die Quelle belegt noch keine konkrete Folge für Lebenslagen."
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "rationale": "Die Quelle behandelt keine direkten Umwelt- oder Klimawirkungen. Ein Bezug wäre nur indirekt über spätere Politikänderungen denkbar und ist hier nicht belegt."
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "rationale": "Das Muster betrifft Wahlverhalten, politische Repräsentation und mögliche strategische Reaktionen der Parteien. Das kann demokratische Korrekturen erleichtern oder polarisierende Lagerbildungen verstärken; beides ist hier nur als Potenzial sichtbar."
-        }
-      },
-      "visuals": {
-        "key_figures": [
-          {
-            "label": "AfD auf dem Land",
-            "value": "50,4",
-            "unit": "Prozent",
-            "context": "Anteil laut Datenanalyse auf dem Land",
-            "claim_id": "wt-688b36d040bfbf87-v1-claim-1"
-          }
-        ],
-        "affected_groups": [
-          "beschaeftigte",
-          "kommunen",
-          "staat",
-          "europa"
-        ]
-      },
-      "media_impact": null,
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T12:36:46.426Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T11:57:24.000Z",
-      "last_updated": "2026-09-08T12:38:27.704Z",
-      "version": 1,
-      "news_status": "preliminary",
-      "event_id": "event-c1db53eddd471e49ec6b",
-      "case_file": null,
-      "source_published_at": "2026-09-08T11:57:24.000Z",
-      "published_at": "2026-09-08T12:38:27.704Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/afd-waehler-land-alter-geschlecht-102,mdr-data-106.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T11:57:24.000Z",
           "primary_source": false
         }
       ]
