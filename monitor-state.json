@@ -9,11 +9,16 @@
       "firstSeen": "2026-09-07T20:50:46.225Z",
       "active": true
     },
-    "run": {
-      "firstSeen": "2026-09-08T22:35:40.801Z",
-      "active": true
+    "budget": {
+      "firstSeen": "2026-09-09T00:50:35.445Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "27eaab8ebe695af0ba29a633",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-09-09T00:50:35.445Z"
+    }
+  ],
   "dailyDate": "2026-09-08"
 }
