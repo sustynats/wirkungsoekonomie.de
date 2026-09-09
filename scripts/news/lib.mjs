@@ -387,7 +387,9 @@ export function extractArticleText(html, maxLength = 7000) {
   return text.slice(0, maxLength).replace(/\s+\S*$/, "").trim();
 }
 
-export async function fetchArticleExcerpt(item, source, policy = {}, fetchImpl = fetch) {
+// Shared, bounded access boundary. The returned document is transient: callers
+// retain only the permitted excerpt or verified metadata, never the full HTML.
+export async function fetchPublicArticle(item, source, policy = {}, fetchImpl = fetch) {
   const access = sourceAccess(source, "article");
   if (!access.allowed) throw new Error(access.reason);
   const allowedHosts = new Set([
@@ -423,14 +425,19 @@ export async function fetchArticleExcerpt(item, source, policy = {}, fetchImpl =
     if (contentType && !/\b(?:text\/html|application\/xhtml\+xml|text\/plain)\b/i.test(contentType)) throw new Error("ARTICLE_CONTENT_TYPE_INVALID");
     const body = await readLimitedBody(response, Number(policy.max_article_bytes || 2000000));
     assertPublicArticle(body);
-    const excerpt = extractArticleText(body, Number(policy.max_article_excerpt_chars || 7000));
-    if (excerpt.length < 120) throw new Error("ARTICLE_TEXT_TOO_SHORT");
-    return { excerpt, final_url: current };
+    return { body, final_url: current };
     } finally {
       clearTimeout(timer);
     }
   }
   throw new Error("ARTICLE_REDIRECT_LIMIT");
+}
+
+export async function fetchArticleExcerpt(item, source, policy = {}, fetchImpl = fetch) {
+  const { body, final_url } = await fetchPublicArticle(item, source, policy, fetchImpl);
+  const excerpt = extractArticleText(body, Number(policy.max_article_excerpt_chars || 7000));
+  if (excerpt.length < 120) throw new Error("ARTICLE_TEXT_TOO_SHORT");
+  return { excerpt, final_url };
 }
 
 export function titleTokens(title) {
