@@ -56817,9 +56817,9 @@
     "9f285d12e0cf3a644c61ddf606228c9b8bcf38f23e69901acbd42bd3c3538bda": {
       "source_id": "spiegel-schlagzeilen",
       "url": "https://www.spiegel.de/wirtschaft/kanada-und-usa-im-handelskrieg-ottawa-laesst-sich-nicht-einschuechtern-a-2c8682ed-c9bd-41c8-bdb8-f1b17576b428",
-      "content_hash": "296b676dd61147b47fbe8a2dc82857d7d4d4668684c87bc6b9f05e44aebd1ab1",
+      "content_hash": "8ea8f9a7b901a6c5d9ca06cebaa02f17b415ddecb5f9114dd736e5b646da1351",
       "published_at": "2026-09-09T12:14:00.000Z",
-      "last_seen": "2026-09-09T23:19:54.515Z"
+      "last_seen": "2026-09-09T23:31:17.709Z"
     },
     "ca8fc3fed2face59405d462621ea399d964715cb51d1125370481341b6548862": {
       "source_id": "dlf-nachrichten",
@@ -62004,9 +62004,9 @@
     "ee8463e4ed3a7bb69bdb1c27d654db78fcf177388262ed1a0e0714fe3e037c45": {
       "source_id": "spiegel-schlagzeilen",
       "url": "https://www.spiegel.de/netzwelt/gadgets/iphone-duo-apple-stellt-faltbares-smartphone-vor-a-9a514568-ec6e-479b-a96c-a45ff891ac80",
-      "content_hash": "17ac02542f1d90d974bb59dc1d2e4262f8bac08a603627273488f5491b8acef5",
+      "content_hash": "4d6740a888396af92c4ad0fec2e2a018d516cf031b2161239ed43cdddcc1907d",
       "published_at": "2026-09-09T18:40:00.000Z",
-      "last_seen": "2026-09-09T23:19:54.515Z"
+      "last_seen": "2026-09-09T23:31:17.709Z"
     },
     "87590ae3ef88e0c80573c0aeb6ada5b754d7565dda9b96ad9f16a3900175fdf8": {
       "source_id": "france24-en",
@@ -62088,9 +62088,9 @@
     "28d96a6d9f780253656e10410eb760fd4ba65b97faec7d1cc31d0a4c262ebc35": {
       "source_id": "spiegel-schlagzeilen",
       "url": "https://www.spiegel.de/politik/generaldebatte-im-bundestag-wir-sind-hier-nicht-auf-dem-fussballplatz-a-170fa77d-8785-4959-a3c0-eda0dca10508",
-      "content_hash": "dca60885a8f4a16f9ea5a73f0c6ab2a1d842f37eef694dc4cb4feeda26dc7c3c",
+      "content_hash": "e9b8cb9b2adceff267c022ca36dd8df2f68216569b30d0ea3455ccfb24ae83b3",
       "published_at": "2026-09-09T18:50:00.000Z",
-      "last_seen": "2026-09-09T23:19:54.515Z"
+      "last_seen": "2026-09-09T23:31:17.709Z"
     },
     "a510f494700a35ff2a2777426097c4c1e1d0cb54b45fd096e7d2aa3da2c602ba": {
       "source_id": "spiegel-schlagzeilen",
@@ -63612,6 +63612,7 @@
     "wt-768f48fef314ee17",
     "wt-d62a52527174a1ca",
     "wt-17c75be3d3a4bb8e",
+    "wt-3bc0d21b0899d8f4",
     "wt-6574973fa0559ef2",
     "wt-54216700f6a13d52",
     "wt-cfbf36a55d6c66e7",
@@ -63761,7 +63762,7 @@
     "wt-990631d7dc3586cb"
   ],
   "relevance_filter_version": "2026-09-09.1",
-  "last_attempted_run": "2026-09-09T23:19:54.515Z",
+  "last_attempted_run": "2026-09-09T23:31:17.709Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1652,
@@ -64537,20 +64538,20 @@
   },
   "discovery_status": {
     "bundestag-plenary-agenda": {
-      "last_attempt": "2026-09-09T22:23:09.375Z",
+      "last_attempt": "2026-09-09T23:31:17.709Z",
       "source_id": "bundestag-hib",
       "url": "https://www.bundestag.de/static/appdata/includes/rss/aktuellethemen.rss",
-      "last_success": "2026-09-09T22:23:09.375Z",
+      "last_success": "2026-09-09T23:31:17.709Z",
       "items": 7,
       "last_error": null,
       "etag": null,
       "last_modified": null
     },
     "spiegel-major-news-index": {
-      "last_attempt": "2026-09-09T22:23:09.375Z",
+      "last_attempt": "2026-09-09T23:31:17.709Z",
       "source_id": "spiegel-schlagzeilen",
       "url": "https://www.spiegel.de/sitemaps/news-de.xml",
-      "last_success": "2026-09-09T22:23:09.375Z",
+      "last_success": "2026-09-09T23:31:17.709Z",
       "items": 120,
       "last_error": null,
       "etag": null,
@@ -64588,7 +64589,7 @@
       "schedule_precision": "not_established",
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T22:23:09.375Z"
+      "checked_at": "2026-09-09T23:31:17.709Z"
     },
     {
       "id": "agenda-97836ba399f42ba72df0",
@@ -64600,7 +64601,7 @@
       "schedule_precision": "not_established",
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T22:23:09.375Z"
+      "checked_at": "2026-09-09T23:31:17.709Z"
     },
     {
       "id": "agenda-611b00528bd7de7fe086",
@@ -64984,7 +64985,7 @@
       "schedule_precision": "not_established",
       "status": "watch_for_material_development",
       "note": "Agenda hint, not proof that an event occurred or an expected product was released.",
-      "checked_at": "2026-09-09T23:19:54.515Z"
+      "checked_at": "2026-09-09T23:31:17.709Z"
     },
     {
       "id": "agenda-205cddad0df17a860e00",
