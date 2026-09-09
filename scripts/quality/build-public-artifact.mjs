@@ -910,6 +910,10 @@ removeNonCanonicalSitemapEntries();
 // Deshalb braucht das fertige Artefakt einen zweiten, abschließenden Durchlauf.
 normalizePublicArtifactLinksAndText();
 prunePublicArtifact();
+// Small raster previews are first-party web assets, built on the existing
+// GitHub Pages runner. No provider, paid service or workstation is required.
+const { buildArticleShareImages } = await import("../news/share-image.mjs");
+await buildArticleShareImages(artifactDir);
 validateNoCorruptedHtmlAttributes();
 validateNoTemplatePlaceholders();
 validateMainworkFulltextArtifact();

@@ -33,3 +33,35 @@ Die neue Bild-URL vermeidet einen veralteten Cache desselben Bildnamens.
 Bereits veröffentlichte Posts können Plattform-Caches behalten. Das Löschen
 fremder Caches oder das Ändern alter Social-Media-Beiträge ist nicht Teil des
 Website-Deployments; eine sichtbare Aktualisierung lässt sich dort nicht erzwingen.
+
+## Ergänzung vom 9. September 2026: Wirkungsticker
+
+Nachrichten und eigenständige Beiträge unter `/wirkungsticker/analyse/`
+erhalten jetzt eine eigene, aus den öffentlichen Seitenmetadaten abgeleitete
+Linkkarte. Sie zeigt den aktuellen Titel, die Rubrik und bei Autorenbeiträgen
+die Autorin. Die Analyse übernimmt nicht die Karte ihrer Ursprungsmeldung.
+Inhaltsbilder und bereits veröffentlichte Illustrationen bleiben unverändert.
+Die kleine Vorschau ist eine Titelkarte, keine verkürzte MPD-Bewertung.
+
+`scripts/news/share-image.mjs` verwendet vorhandene Markenfarben, Schriftmaße,
+eingebettete Fonts und Line-Icons. Eine Änderung an Titel oder Rubrik ergibt
+eine neue Bildadresse. Routinezeitstempel allein erzeugen keine neue Grafik.
+OpenGraph, Twitter und JSON-LD nennen dasselbe absolute HTTPS-JPEG
+(1200 x 630 Pixel, geprüft unter 5 MB). Die Metadaten stehen im HTML-Kopf;
+Crawler müssen dafür kein JavaScript ausführen und keine Anmeldung verwenden.
+
+Die JPEGs werden als kleine Website-Assets im vorhandenen Pages-Artefakt
+erzeugt, nicht als neue persistente Nutzerdaten oder große Publikationsdownloads.
+`build-public-artifact.mjs` führt dies sowohl bei regulären als auch bei
+Ticker-Releases aus. Der isolierte Chrome-Rasterizer verarbeitet maximal
+40 Karten je Browserinstanz, ohne externe Downloads, KI-API oder Vercel.
+Gültige vorhandene JPEGs werden bei wiederholtem Aufruf wiederverwendet.
+Vor Deployment werden Dateiformat, Maße, Größe und Metadatenzuordnung geprüft.
+
+Ein manueller Test kann die HTML-Metadaten und das öffentlich abrufbare JPEG
+prüfen. Eine tatsächliche Plattformvorschau ist davon zu unterscheiden:
+LinkedIn entscheidet über Anzeige und Cache. Für alte Links kann der
+[LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/) einen neuen
+Abruf anstoßen; bereits angelegte Posts werden dadurch nicht garantiert geändert.
+Die technische Auslegung folgt den
+[LinkedIn-Vorgaben](https://www.linkedin.com/help/linkedin/answer/a521928/making-your-website-shareable-on-linkedin?lang=en).

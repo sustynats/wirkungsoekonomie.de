@@ -18,10 +18,11 @@ import { relatedStories } from "./living-files.mjs";
 import { formatReferenceFramework } from "./reference-frameworks.mjs";
 import { buildCaseFiles } from "./case-files.mjs";
 import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs";
+import { articleShareCard } from "./share-image.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260909-direction-reference1";
+const PUBLIC_RELEASE = "20260909-correction-sharing1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -348,6 +349,12 @@ function mixedCards(stories, analyses, storiesById) {
 
 function pageShell({ title, description, canonical, base, body, jsonLd, feedLinks = true, extraScript = "", robots = "", titleImage = null, publicUpdatedAt = "", ogType = "website" }) {
   const { header, footer } = renderLayout(base);
+  // The shared card describes this page, never a parent story or a stale raster
+  // overlay. The existing on-page illustrations remain unchanged.
+  const shareCard = articleShareCard(jsonLd);
+  const imageUrl = shareCard?.url || (titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/brand/wirkungsoekonomie-share-v2.png`);
+  const imageAlt = shareCard?.alt || "Wirkungsökonomie - Mensch, Planet und Demokratie";
+  if (shareCard) { jsonLd = { ...jsonLd, image: imageUrl }; ogType = "article"; }
   return `<!doctype html>
 <html lang="de">
 <head>
@@ -364,12 +371,17 @@ function pageShell({ title, description, canonical, base, body, jsonLd, feedLink
   <meta property="og:title" content="${escapeHtml(title)}">
   <meta property="og:description" content="${escapeHtml(description)}">
   <meta property="og:url" content="${escapeHtml(canonical)}">
-  <meta property="og:image" content="${escapeHtml(titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png`)}">
+  <meta property="og:image" content="${escapeHtml(imageUrl)}">
+  <meta property="og:image:secure_url" content="${escapeHtml(imageUrl)}">
+  <meta property="og:image:type" content="${shareCard?.type || "image/png"}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="${escapeHtml(titleImage ? `${title} – ${titleImage.label}` : "Wirkungsökonomie")}">
+  <meta property="og:image:alt" content="${escapeHtml(imageAlt)}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="${escapeHtml(titleImage?.og?.url?.startsWith("https://") ? titleImage.og.url : `${SITE}/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png`)}">
+  <meta name="twitter:title" content="${escapeHtml(title)}">
+  <meta name="twitter:description" content="${escapeHtml(description)}">
+  <meta name="twitter:image" content="${escapeHtml(imageUrl)}">
+  <meta name="twitter:image:alt" content="${escapeHtml(imageAlt)}">
   <meta name="theme-color" content="#f7f1e8">
   <meta name="application-name" content="Wirkungsticker">
   <meta name="mobile-web-app-capable" content="yes">
@@ -624,7 +636,7 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
   <section class="hero news-hero news-hero--story"><div class="hero-copy">${renderUpdateBanner(story, { detail: true, caseFile })}<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a><span aria-hidden="true">/</span><a href="../">Wirkungsticker</a></nav><p class="hero-kicker news-hero__kicker">${renderIcon(topicIcon(story.topic))}<span>${escapeHtml((story.topic || []).join(" · "))}</span></p>${renderStoryVisual(story, { detail: true, loading: "eager", sourceLabel: `${primary?.publisher || ""} · Ausgangsmeldung ${formatDate(firstSourceDate(story), { dateOnly: true })}` })}<div class="news-hero__meta">${renderStatusChip(a.status)}${renderAnalysisTypeChip(a.analysis_type, { note: false })}<span>Ausgangsmeldung vom ${escapeHtml(formatDate(firstSourceDate(story), { dateOnly: true }))}</span><span>WÖk-Einordnung: ${escapeHtml(formatDate(story.last_updated))} · Version ${escapeHtml(story.current_version)}</span></div><div class="hero-actions news-hero__actions">${returnLink}${primary ? `<a class="btn btn-primary news-hero__source" href="${escapeHtml(primary.url)}" target="_blank" rel="noopener noreferrer">${renderIcon("extern")}<span>${primary.primary_source ? "Primärquelle" : "Quellbericht"} öffnen: ${escapeHtml(primary.publisher)}</span></a>` : ""}${shareControl(story, "top")}${readerRefreshControl()}</div></div></section>
 
   ${renderNewsStatusNotice(story)}
-  ${(story.corrections || []).map((correction) => `<aside class="notice" role="note"><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}:</strong> ${escapeHtml(correction.note)}</aside>`).join("")}
+  ${(story.corrections || []).map((correction) => `<aside class="notice news-correction" role="note"><p><strong>Korrektur vom ${escapeHtml(formatDate(correction.at, { dateOnly: true }))}</strong></p><p>${escapeHtml(correction.note)}</p></aside>`).join("")}
   <nav class="wt-subnav" aria-label="Abschnitte dieser Wirkungsakte"><div class="wt-subnav__inner"><a href="#nachricht">Nachricht</a><a href="#faktencheck">Belege</a><a href="#folgencheck">Folgen</a><a href="#bedeutung">Vertiefung</a></div></nav>
   <section class="section"><div class="news-story-layout"><div class="news-story-main">
     <article class="news-story-section news-source-summary" data-news-source-summary id="nachricht"><p class="hero-kicker">${renderIcon("meldung")}<span>Nachricht</span></p><h2>Worum geht es?</h2><div class="news-source-summary__copy">${sourceSummaryParagraphs(story.source_summary)}</div>${renderKeyFigures(visuals, story)}${renderChart(visuals)}${renderTimeline(visuals)}<div class="news-source-summary__links">${sourceSummaryLinks}</div></article>
