@@ -1,7 +1,595 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T00:27:01.896Z",
+  "updated_at": "2026-09-09T05:36:49.788Z",
   "stories": [
+    {
+      "story_id": "wt-07f3870f32ae8662",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "keine-staatlichen-vorrate-kritischer-rohstoffe-ae8662",
+      "title": "Keine staatlichen Vorräte kritischer Rohstoffe",
+      "source_summary": "Die Bundesregierung hat nach eigener Antwort auf eine Kleine Anfrage mitgeteilt, dass es in Deutschland derzeit keine staatlichen, halbstaatlichen oder im staatlichen Auftrag gehaltenen Vorräte kritischer oder strategischer Rohstoffe gibt. Zugleich verweist sie auf Arbeiten der Europäischen Kommission zu einer koordinierten Bevorratung und darauf, dass das Bundeswirtschaftsministerium dort eine Arbeitsgruppe zum Thema „Demand and Production“ leitet. Der aktuelle Stand dieser Arbeiten sei nicht öffentlich.\n\nAußerdem prüfe die Bundesregierung ergebnisoffen, ob sich die Lagerhaltung durch Unternehmen unterstützen lasse. Der Rohstofffonds sichere und diversifiziere die Versorgung bislang vor allem über Beteiligungen an Rohstoffprojekten, nicht über unmittelbare Bevorratung.",
+      "summary": "Deutschland hat laut Bundesregierung derzeit keine staatlichen Rohstoffvorräte. Parallel laufen EU-Arbeiten zu koordinierter Bevorratung und möglicher Unternehmenslagerung weiter.",
+      "detail_summary": "Die Meldung beschreibt vor allem einen amtlich bestätigten Ist-Zustand: Deutschland verfügt derzeit über keine staatlichen, halbstaatlichen oder im staatlichen Auftrag gehaltenen Vorräte kritischer oder strategischer Rohstoffe. Das ist für die Rohstoff- und Industriepolitik relevant, weil es die vorhandenen Puffer im Krisenfall begrenzt. Ein direkter Wirkpfad liegt in der Versorgungssicherheit, etwa wenn Lieferketten unter Druck geraten oder einzelne Rohstoffe knapp werden. Zugleich nennt die Bundesregierung laufende EU-Arbeiten zur koordinierten Bevorratung und eine ergebnisoffene Prüfung, ob Unternehmen bei Lagerhaltung unterstützt werden können. Die mögliche Folge wäre eine veränderte Vorrats- und Risikostruktur, falls daraus konkrete Instrumente entstehen. Unklar bleibt, welche Rohstoffe, Mengen, Zuständigkeiten oder Zeitpläne am Ende tatsächlich beschlossen werden.",
+      "why_relevant": "Die Aussage betrifft die staatliche Vorsorge für kritische Rohstoffe und damit eine zentrale Vorfrage für Industrie, Versorgungssicherheit und Krisenresilienz.",
+      "topic": [
+        "Energie",
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Keine staatlichen Vorräte mindern Puffer im Ernstfall, mögliche Unternehmenslagerung oder EU-Koordination könnte den Schutz später aber verbessern.",
+          "positive_path": {
+            "mechanism": "Koordinierte Bevorratung und bessere Unternehmenslagerung können Versorgungslücken in Engpasslagen verkleinern.",
+            "source_ids": [
+              "bundestag-wirtschaft"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ohne staatliche Vorräte fehlt ein direkter Puffer gegen Lieferausfälle und Preisschocks bei kritischen Rohstoffen.",
+            "source_ids": [
+              "bundestag-wirtschaft"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In der Meldung fehlt ein belastbarer Pfad zu Umwelt- oder Emissionsfolgen; es geht um Rohstoffbevorratung und Versorgungssicherheit.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Antwort ist politisch relevant, zeigt aber in dieser Meldung keinen direkten Wirkpfad auf demokratische Korrekturfähigkeit oder Teilhabe.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "unternehmen",
+          "staat",
+          "europa"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T05:36:49.788Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-07T08:38:00.000Z",
+      "last_updated": "2026-09-09T05:40:12.793Z",
+      "version": 1,
+      "news_status": "confirmed",
+      "event_id": "event-b3b6b7dbecf642772b22",
+      "case_file": null,
+      "source_published_at": "2026-09-07T00:00:00.000Z",
+      "published_at": "2026-09-09T05:40:12.793Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "bundestag-wirtschaft"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form die europäische Stockpiling-Initiative zu konkreten Rohstoffen, Mengen oder Zuständigkeiten führt.",
+          "source_id": "bundestag-wirtschaft",
+          "expected_by": null,
+          "measurable_indicator": "konkrete Beschlüsse oder Veröffentlichungen zur koordinierten Bevorratung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-5ec32968d6ade792",
+          "announced_at": "2026-09-07",
+          "follow_up_date": "2026-09-16T05:40:12.793Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "Deutscher Bundestag - Wirtschaft und Energie",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210692",
+          "source_type": "official_rss",
+          "published_at": "2026-09-07",
+          "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4f69ab66eaceb97a",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "ukraine-news-wadephul-ruft-ukraine-zum-waffenkauf-in-deutschland-auf-ceb97a",
+      "title": "Ukraine-News: Wadephul ruft Ukraine zum Waffenkauf in Deutschland auf",
+      "source_summary": "Der MDR berichtet, Bundesaußenminister Wadephul habe Kiew aufgerufen, mehr Waffen bei deutschen Unternehmen zu bestellen. Der Text nennt außerdem, dass Wadephul den Vorwurf seines russischen Amtskollegen Lawrow zurückgewiesen habe, Deutschland wolle einen Krieg gegen Russland. Laut Bericht sagte Wadephul zudem, er habe das Thema bei seinem jüngsten Besuch in Kiew mit Präsident Selenskyj besprochen.\n\nOffen bleibt, ob daraus bereits konkrete Bestellungen, Zusagen oder weitere politische Schritte folgen. Die Quelle ist ein einzelner journalistischer Bericht; ein unabhängiger Zweitbeleg liegt in den gelieferten Daten nicht vor.",
+      "summary": "Wadephul wirbt laut MDR für mehr ukrainische Waffenbestellungen in Deutschland. Konkrete Aufträge oder Folgeschritte sind noch nicht belegt.",
+      "detail_summary": "Der berichtete Kern ist klar: Wadephul soll die Ukraine aufgefordert haben, mehr Waffen bei deutschen Unternehmen zu bestellen. Zusätzlich nennt der Text seine Zurückweisung von Lawrows Kriegsvorwurf gegen Deutschland und verweist auf ein Gespräch mit Selenskyj in Kiew. Materiell relevant ist das, weil solche Aussagen auf mögliche Beschaffung, Auftragslage und damit auf industrielle und sicherheitspolitische Beziehungen zielen. Ein Wirkpfad wäre erst dann belastbar, wenn aus der Aufforderung tatsächliche Bestellungen, Vertragsabschlüsse oder andere Folgeentscheidungen werden. Dafür gibt es in den gelieferten Quellen noch keinen unabhängigen Nachweis. Deshalb bleibt die Einordnung vorläufig und die mögliche Wirkung nur als Potenzial beschrieben.",
+      "why_relevant": "Die Meldung betrifft mögliche Rüstungsbestellungen, also eine mögliche Änderung von Beschaffungs- und Industriebeziehungen zwischen Ukraine und Deutschland.",
+      "topic": [
+        "Geopolitik",
+        "Wirtschaft"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung beschreibt einen Appell, aber noch keine belegte Veränderung bei Schutz, Versorgung oder Belastung von Menschen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus der Quelle ergibt sich kein tragfähiger Pfad zu Umwelt- oder Klimawirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Aussage berührt öffentliche außenpolitische Kommunikation, aber noch keine belegte Änderung von Verfahren, Kontrolle oder Rechten.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T05:36:49.788Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T05:12:56.000Z",
+      "last_updated": "2026-09-09T05:39:53.959Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-0715eaf691bd1dd6adc9",
+      "case_file": null,
+      "source_published_at": "2026-09-09T05:12:56.000Z",
+      "published_at": "2026-09-09T05:39:53.959Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Ukraine in der Folge zusätzliche Bestellungen bei deutschen Rüstungsunternehmen platziert.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Neue bestätigte Aufträge oder offizielle Bestellungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b855cd5fb6e16f27",
+          "announced_at": "2026-09-09T05:12:56.000Z",
+          "follow_up_date": "2026-09-16T05:39:53.959Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob es auf ukrainischer, deutscher oder russischer Seite weitere belastbare Reaktionen auf die Äußerung gibt.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Zitierbare Stellungnahmen mit klarer Zuschreibung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-346f3809f3710fcb",
+          "announced_at": "2026-09-09T05:12:56.000Z",
+          "follow_up_date": "2026-09-16T05:39:53.959Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/welt/osteuropa/politik/krieg-russland-wadephul-kiew-deutsche-waffen-ruestungsindustrie-lawrow-kriegsvorwurf,ukraine-news-09-09-2026-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:12:56.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-2b96d173b1f78fb7",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "ausspahen-unter-strafe-hessen-will-kritische-infrastruktur-besser-schutzen-f78fb7",
+      "title": "Ausspähen unter Strafe: Hessen will kritische Infrastruktur besser schützen",
+      "source_summary": "Hessens Justizminister Christian Heinz will den strafrechtlichen Schutz kritischer Infrastruktur ausweiten. Nach einem Bericht der hessenschau soll er im Bundesrat eine Initiative einbringen, die bereits unbefugtes Eindringen, Ausspähen oder das Überfliegen sensibler Anlagen unter Strafe stellt.\n\nAls Beispiele nennt der Bericht Umspannwerke, Flughäfen und Rechenzentren. Heinz begründet den Vorstoß damit, dass der Schutz dieser Anlagen früher ansetzen müsse. Offen bleibt, ob er im Bundesrat eine Mehrheit findet; die Initiative soll in den kommenden Wochen vorgestellt werden.",
+      "summary": "Hessen will kritische Infrastruktur strafrechtlich früher schützen. Der Vorstoß könnte den Umgang mit Ausspähen und Drohnenüberflügen verändern.",
+      "detail_summary": "Der Bericht beschreibt eine angekündigte Bundesratsinitiative aus Hessen: Der Justizminister will den strafrechtlichen Schutz kritischer Infrastruktur ausweiten. Betroffen wären nach der Meldung unter anderem Umspannwerke, Flughäfen und Rechenzentren. Materiell relevant ist das, weil sich Zuständigkeiten und Sanktionsrahmen für den Schutz solcher Anlagen ändern könnten. Ein direkter Wirkungsnachweis liegt noch nicht vor; aktuell ist es ein Vorstoß mit offenem Ausgang im Bundesrat. Die Evidenz trägt den angekündigten Gesetzesweg, nicht die spätere Wirksamkeit oder politische Mehrheitsbildung.",
+      "why_relevant": "Die Meldung beschreibt einen möglichen Eingriff in den Schutz kritischer Infrastruktur. Das kann Regeln, Ermittlungsbefugnisse und Prävention für mehrere systemrelevante Bereiche verändern.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn frühere Strafbarkeit tatsächlich Ermittlungen und Abschreckung auslöst, kann der Schutz sensibler Anlagen steigen. Die Wirkung hängt aber von Mehrheiten, Rechtsausgestaltung und Vollzug ab.",
+          "positive_path": {
+            "mechanism": "Frühere Strafbarkeit kann unerlaubtes Ausspähen und Betreten schneller sanktionierbar machen und so Schutzlücken verringern.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Schärfere Strafnormen können ohne klare Abgrenzung oder Vollzug wenig ändern und Ermittlungsaufwand erhöhen.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Für Energie- und Infrastrukturstandorte kann ein besserer Schutz Störungen und Folgeschäden mindern. Ein konkreter Umwelt- oder Klimaeffekt ist aus der Meldung aber nicht belegbar.",
+          "positive_path": {
+            "mechanism": "Besser geschützte Anlagen können Ausfälle und daraus folgende Störungen von Versorgungssystemen reduzieren.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Mehr Überwachung und Sicherung können zusätzlichen Ressourcenverbrauch und Eingriffe an Standorten nach sich ziehen.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Initiative ist ein normaler politischer Gesetzesvorschlag und damit Teil demokratischer Verfahren. Zugleich verschiebt sie mögliche Eingriffe in Strafrecht und Freiheitsräume, was saubere Abgrenzungen erfordert.",
+          "positive_path": {
+            "mechanism": "Parlamentarische Beratung kann Schutzregeln transparent klären und Zuständigkeiten öffentlich entscheiden.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine weite Strafnorm kann Freiheitsräume beim Zugang zu Infrastruktur berühren, wenn sie unklar formuliert ist.",
+            "source_ids": [
+              "hr-hessenschau"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T05:36:49.788Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T04:07:30.000Z",
+      "last_updated": "2026-09-09T05:39:10.303Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-ed11fc5c1b0bee60fa65",
+      "case_file": null,
+      "source_published_at": "2026-09-09T04:07:30.000Z",
+      "published_at": "2026-09-09T05:39:10.303Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "hr-hessenschau"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Prüfen, ob Hessen den Gesetzentwurf tatsächlich in den Bundesrat eingebracht hat und wie die Länder entschieden haben.",
+          "source_id": "hr-hessenschau",
+          "expected_by": null,
+          "measurable_indicator": "Einbringung und Abstimmung im Bundesrat",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-541e1deab5b352e5",
+          "announced_at": "2026-09-09T04:07:30.000Z",
+          "follow_up_date": "2026-09-16T05:39:10.303Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/ausspaehen-unter-strafe-hessen-will-kritische-infrastruktur-besser-schuetzen-v1,kritische-infrakstruktur-strafe-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:07:30.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-4219ebd958b73c3c",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "zucker-sussstoff-und-co-was-verbraucher-wissen-sollten-b73c3c",
+      "title": "Zucker, Süßstoff und Co.: Was Verbraucher wissen sollten",
+      "source_summary": "Ein ZDFheute-Text fasst gesundheitliche und ernährungsbezogene Einordnungen zu Zucker, Süßstoffen und Zuckeraustauschstoffen zusammen. Er nennt als aktuellen politischen Punkt, dass Finanzminister Klingbeil eine Zuckersteuer auf Light-Produkte ausschließt und damit auf Kritik an einer möglichen Ausweitung reagiert.\n\nZudem verweist der Text auf strengere Nutri-Score-Kriterien seit Jahresbeginn und auf die DGE-Empfehlung von höchstens 50 Gramm freiem Zucker pro Tag für gesunde Erwachsene. Eine Zahl aus dem Text lautet: 2024 wurden in Deutschland 7,7 Milliarden Liter zuckerhaltige Getränke hergestellt.",
+      "summary": "Der Text bündelt Gesundheitswissen zu Zucker, Süßstoffen und einer möglichen Zuckersteuer. Neu ist vor allem die politische Klarstellung zu Light-Produkten; die materielle Folge läge erst in späteren Steuer- oder Produktentscheidungen.",
+      "detail_summary": "Sachlich relevant ist hier die politische Aussage, dass es keine Zuckersteuer auf Light-Produkte geben soll. Das kann für Hersteller, Handel und Verbraucher die Preis- und Sortimentsentwicklung beeinflussen, falls daraus eine verbindliche Regel wird. Für Mensch und Gesundheit bleibt der Wirkpfad indirekt: weniger oder anders besteuerte süße Getränke könnten den Konsum verschieben. Für Demokratie ist vor allem die Klarheit über den Kurs der Finanzpolitik relevant, nicht schon eine Wirkung an sich. Offen bleibt, ob und in welcher Form überhaupt ein belastbarer Gesetzes- oder Verordnungsschritt folgt. Die Quelle ist journalistisch und bündelt mehrere Einordnungen; der Verfahrensstand ist deshalb nur vorläufig belegbar.",
+      "why_relevant": "Die Meldung enthält eine konkrete politische Klarstellung zu einer möglichen Zuckersteuer und berührt damit Verbraucherpreise, Produktgestaltung und Gesundheitspolitik.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Eine mögliche Steuer auf gezuckerte Getränke kann den Zuckerkonsum senken und damit Gesundheitsrisiken mindern. Die Ausnahme für Light-Produkte kann zugleich Lenkungswirkung begrenzen oder die Auswahl verschieben.",
+          "positive_path": {
+            "mechanism": "Teurere gezuckerte Getränke können den Kauf senken und so die Zuckeraufnahme reduzieren.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Eine enge Ausgestaltung ohne Light-Produkte kann Ausweichreaktionen, geringe Lenkung oder Verlagerungen in andere Süßwaren begünstigen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den gelieferten Quellen gibt es keinen belastbaren Pfad zu Umwelt- oder Klimawirkungen. Die Meldung betrifft vor allem Ernährungs- und Produktpolitik.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Klarstellung zu einer umstrittenen Abgabe schafft mehr Transparenz über den politischen Kurs. Das stärkt die Nachvollziehbarkeit staatlicher Steuerung, ohne schon einen demokratischen Effekt zu belegen.",
+          "positive_path": {
+            "mechanism": "Ein klar benannter Verzicht auf eine Steuer für Light-Produkte macht politische Prioritäten und Grenzen für Öffentlichkeit und Parlament besser prüfbar.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Bleibt die Regelung unpräzise oder wechselhaft, kann das den Eindruck inkonsistenter Steuerpolitik verstärken.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T05:36:49.788Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T04:07:00.000Z",
+      "last_updated": "2026-09-09T05:38:36.886Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-5e84f075a7d1472bb438",
+      "case_file": null,
+      "source_published_at": "2026-09-09T04:07:00.000Z",
+      "published_at": "2026-09-09T05:38:36.886Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wann eine Zuckersteuer oder eine andere Abgabe tatsächlich im Regierungsverfahren landet.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "amtlicher Verfahrensstand oder Kabinettsbeschluss",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-dc442defc03dcf51",
+          "announced_at": "2026-09-09T04:07:00.000Z",
+          "follow_up_date": "2026-09-16T05:38:36.886Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/ratgeber/zucker-suessstoff-zuckeraustauschstoffe-koerper-wirkung-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:07:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-bd410136bb400bcb",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "israel-regierungschef-netanjahu-wegen-berichts-uber-warnung-vor-angriff-vom-7-oktober-20-400bcb",
+      "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
+      "source_summary": "Deutschlandfunk meldet, Israels Regierungschef Benjamin Netanjahu stehe wegen eines Berichts unter Druck. Danach soll der Präsident der Vereinigten Arabischen Emirate, Al-Nahjan, Netanjahu anderthalb Wochen vor dem Hamas-Angriff vom 7. Oktober 2023 vor einem größeren Einsatz gewarnt haben.\n\nNetanjahus Büro weist die Darstellung als falsch zurück und bestreitet ein Gespräch im genannten Zeitraum. Die israelische Opposition kritisiert den Ministerpräsidenten scharf; ein früherer Regierungschef und ein Ex-Generalstabschef werfen ihm vor, Warnungen ignoriert zu haben. Unklar bleibt, wie belastbar die zugrunde liegende Berichtsgrundlage außerhalb der Meldung selbst ist.",
+      "summary": "Deutschlandfunk meldet neuen Druck auf Netanjahu wegen eines Berichts über eine Warnung vor dem Hamas-Angriff. Netanjahus Büro weist die Darstellung zurück, die politische Debatte läuft weiter.",
+      "detail_summary": "Die Meldung beschreibt keinen abgeschlossenen Vorgang, sondern einen politisch aufgeladenen Bericht mit sofortiger Gegenreaktion. Im Kern steht die Behauptung, der Präsident der Vereinigten Arabischen Emirate habe Netanjahu anderthalb Wochen vor dem 7. Oktober 2023 vor einem größeren Hamas-Einsatz gewarnt. Netanjahus Büro dementiert das und bestreitet ein solches Gespräch im genannten Zeitraum. Die Opposition nutzt den Bericht für neue Angriffe auf den Regierungschef. Materiell relevant ist das vor allem für die politische Verantwortung, die Vertrauenslage und die laufende israelische Debatte. Eine weitergehende Einordnung bleibt begrenzt, weil aus den gelieferten Quellen nur die journalistische Darstellung und das Dementi belegt sind.",
+      "why_relevant": "Die Meldung betrifft die politische Verantwortung des Regierungschefs in einer offenen Debatte über Warnungen vor dem Hamas-Angriff und kann dadurch Entscheidungsgrundlagen, Vertrauen und Oppositionsdruck verändern.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung verändert die Informationslage und den politischen Druck, aber sie belegt noch keine eingetretene materielle Folge für Menschen oder Versorgung.",
+          "positive_path": {
+            "mechanism": "Mehr öffentliche Information über mögliche Vorwarnungen kann parlamentarische und mediale Kontrolle stärken.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Das Dementi und die Eskalation der Schuldfrage können Vertrauen weiter schwächen und politische Handlungsfähigkeit belasten.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den gelieferten Quellen ist kein unmittelbarer Umwelt- oder Klimawirkpfad belegt.",
+          "positive_path": {
+            "mechanism": "Kein belastbarer Pfad in den Quellen erkennbar.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Kein belastbarer Pfad in den Quellen erkennbar.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Meldung betrifft Regierungsverantwortung, öffentliche Kontrolle und das Vertrauen in politische Aufklärung. Zugleich bleibt die Beleglage auf eine journalistische Darstellung und ein Dementi begrenzt.",
+          "positive_path": {
+            "mechanism": "Mehr Transparenz über mögliche Warnungen kann Rechenschaft und demokratische Kontrolle stärken.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein ungeklärter Vorwurf gegen die Regierung kann Polarisierung, Misstrauen und Wahlkampfkonflikte verschärfen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T05:36:49.788Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T12:02:16.000Z",
+      "last_updated": "2026-09-09T05:37:58.367Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-4115d1c8b7b41d981c8c",
+      "case_file": null,
+      "source_published_at": "2026-09-08T12:44:09.000Z",
+      "published_at": "2026-09-09T05:37:58.367Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "dlf-nachrichten",
+              "dlf-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [],
+      "sources": [
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/regierungschef-netanjahu-wegen-berichts-ueber-warnung-vor-angriff-vom-7-oktober-2023-unter-druck-102.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T12:44:09.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/regierungschef-netanjahu-wegen-berichts-ueber-warnung-vor-angriff-vom-7-oktober-2023-unter-druck-114.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T05:09:43.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-e01e1e77e702edc3",
       "title_image": {
