@@ -1,8 +1,1008 @@
 {
   "schema_version": "1.1",
-  "public_updated_at": "2026-09-09T11:12:49.530Z",
-  "updated_at": "2026-09-09T11:12:49.530Z",
+  "public_updated_at": "2026-09-09T11:37:19.505Z",
+  "updated_at": "2026-09-09T11:37:19.505Z",
   "stories": [
+    {
+      "story_id": "wt-a098a78411837ab4",
+      "slug": "vorgehen-gegen-airbnb-und-co-brussel-schlagt-regeln-fur-stadte-vor-837ab4",
+      "title": "Vorgehen gegen Airbnb und Co.: Brüssel schlägt Regeln für Städte vor",
+      "first_seen": "2026-09-09T10:51:18.000Z",
+      "last_updated": "2026-09-09T11:40:05.122Z",
+      "published_at": "2026-09-09T11:40:05.122Z",
+      "updated_at": "2026-09-09T11:40:05.122Z",
+      "topic": [
+        "Soziales",
+        "Digitalisierung",
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
+          "title": "Vorgehen gegen Airbnb und Co.: Brüssel schlägt Regeln für Städte vor",
+          "summary": "Städte in der EU sollen einheitliche Regeln bekommen, wann sie gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können. Die EU-Kommission in Brüssel schlug am Mittwoch eine Reihe von Bedingungen vor, etwa ein direkter Zusammenhang mit steigenden Mieten. Die EU-Regeln sollen Verbote und Einschränkungen solcher Ferienwohnungen rechtssicherer machen, weil Anbieter häufig dagegen klagen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T10:51:18.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "70caf4233d39f6e08361b0f0afde6339be9600646323ea2c09a7e353e7a61f81",
+          "source_item_id": "31a39a637d22249aee105fb20e20b9cd6f903dc942b130b9d2899a1b65b92ab3",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T10:51:18.000Z",
+          "ingested_at": "2026-09-09T11:07:22.757Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-nachrichten",
+          "publisher": "Deutschlandfunk",
+          "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+          "title": "Brüssel - Vorgehen gegen Airbnb und Co.: EU-Kommission schlägt Regeln für Städte vor",
+          "summary": "Für Städte in der Europäischen Union soll es einheitliche Regeln geben, wie sie gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:35:21.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "bb3f479d9b92fa96c00e0b720eb4f8db396b222b92f5999ab46e890cd0e39148",
+          "source_item_id": "e19c016105a9cd3efef8c4b82b07b2f4586d924b51ce0692cb5b1f68e8fce82e",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:35:21.000Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-a098a78411837ab4-v1-claim-1",
+          "story_id": "wt-a098a78411837ab4",
+          "claim": "Die EU-Kommission schlägt einheitliche Regeln vor, damit Städte in der EU gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können, wenn bestimmte Bedingungen erfüllt sind.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
+              "excerpt_hash": "b1d6e68556e448ce46f9",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+              "excerpt_hash": "011854c90151b02092d8",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+              "excerpt_hash": "6d060db9858c1fa565ed",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+              "excerpt_hash": "e2f0b42b0cd790cdeb84",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:40:05.122Z"
+        },
+        {
+          "claim_id": "wt-a098a78411837ab4-v1-claim-2",
+          "story_id": "wt-a098a78411837ab4",
+          "claim": "Ein direkter Zusammenhang mit steigenden Mieten soll eine der Bedingungen sein, die Kommunen nachweisen müssen.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
+              "excerpt_hash": "b1d6e68556e448ce46f9",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+              "excerpt_hash": "e2f0b42b0cd790cdeb84",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:40:05.122Z"
+        },
+        {
+          "claim_id": "wt-a098a78411837ab4-v1-claim-3",
+          "story_id": "wt-a098a78411837ab4",
+          "claim": "Die neuen Regeln sollen Verbote und Einschränkungen rechtssicherer machen, weil Anbieter häufig dagegen klagen.",
+          "status": "single_source_claim",
+          "source_id": "stern-schlagzeilen",
+          "evidence": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
+              "excerpt_hash": "90484cc9235b3eed291d",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+              "excerpt_hash": "525e170c6609b61bb8a4",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:40:05.122Z"
+        },
+        {
+          "claim_id": "wt-a098a78411837ab4-v1-claim-4",
+          "story_id": "wt-a098a78411837ab4",
+          "claim": "Die Regeln richten sich an kommerzielle Anbieter, nicht an Menschen, die ihre eigene Wohnung gelegentlich vermieten, wenn sie selbst nicht anwesend sind.",
+          "status": "single_source_claim",
+          "source_id": "dlf-nachrichten",
+          "evidence": [
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+              "excerpt_hash": "8f55492dddc72c5168a1",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            }
+          ],
+          "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+          "checked_at": "2026-09-09T11:40:05.122Z"
+        }
+      ],
+      "event_id": "event-a7e16e7a3cfe6fdf93c4",
+      "event_first_seen_at": "2026-09-09T11:07:22.757Z",
+      "event_detected_at": "2026-09-09T11:07:22.757Z",
+      "verification_started_at": "2026-09-09T11:39:48.022Z",
+      "publish_ready_at": "2026-09-09T11:40:05.122Z",
+      "news_status": "developing",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ],
+          [
+            "dlf-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T11:37:19.505Z",
+        "fingerprint": "db4edd9204b55c88f80b1647933f984c907e7b0d317db7719617a1d40e43aaa3",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und in welcher Form die EU-Regeln beschlossen werden",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Beschluss, Änderung oder Rücknahme des Kommissionsvorschlags",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-744b0092488ff7c9",
+          "announced_at": "2026-09-09T10:51:18.000Z",
+          "follow_up_date": "2026-09-16T11:40:05.122Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Welche konkreten Nachweispflichten und Schwellenwerte für Städte am Ende gelten",
+          "source_id": "dlf-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Wortlaut der Bedingungen im finalen Regeltext",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0ddee4af9e209464",
+          "announced_at": "2026-09-09T11:35:21.000Z",
+          "follow_up_date": "2026-09-16T11:40:05.122Z",
+          "status": "scheduled"
+        }
+      ],
+      "content_hash": "f32a1ea041955a396bbdfb726f7459ec223bb9bea63f9bbada5672a7252131d6",
+      "published": true,
+      "listed": true,
+      "analysis_status": "veröffentlicht",
+      "relevance_filter_version": "4.0",
+      "current_version": 1,
+      "numeric_evidence": {
+        "version": 1,
+        "analysis_version": 1,
+        "checked_at": "2026-09-09T11:40:05.122Z",
+        "sources": [
+          {
+            "source_id": "dlf-nachrichten",
+            "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+            "content_hash": "bb3f479d9b92fa96c00e0b720eb4f8db396b222b92f5999ab46e890cd0e39148",
+            "excerpt_hash": "2785021bf4a1036066d0708288493a4694c530ea5980c523c64aa258fc960137",
+            "number_locale": "de",
+            "numbers": [
+              "9.09",
+              "2026"
+            ]
+          }
+        ]
+      },
+      "source_summary": "Die EU-Kommission in Brüssel schlägt Regeln vor, mit denen Städte in der Europäischen Union einheitlicher gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können. Nach den Berichten soll ein direkter Zusammenhang mit steigenden Mieten eine Bedingung sein, die Kommunen nachweisen müssen. Die neuen Regeln sollen Verbote und Einschränkungen rechtssicherer machen, weil Anbieter häufig dagegen klagen.\n\nLaut Deutschlandfunk richten sich die Vorschläge an kommerzielle Anbieter, nicht an Menschen, die ihre eigene Wohnung gelegentlich vermieten, wenn sie selbst nicht anwesend sind. Genannt werden außerdem Städte wie Barcelona und Lissabon, die bereits Beschränkungen eingeführt haben. Offen bleibt, wie der Vorschlag im weiteren EU-Verfahren verändert oder beschlossen wird.",
+      "analysis": {
+        "story_id": "wt-a098a78411837ab4",
+        "publication_recommendation": true,
+        "news_status": "developing",
+        "publication_depth": "initial",
+        "summary": "Brüssel legt einen Entwurf für einheitlichere Regeln gegen Kurzzeitvermietungen vor. Materiell relevant ist das, weil sich damit der Handlungsspielraum von Städten und die Rechtssicherheit im Wohnungsmarkt ändern können.",
+        "detail_summary": "Die Kommission will Städten offenbar klarere Bedingungen geben, unter denen sie Kurzzeitvermietungen begrenzen dürfen. Das ist vor allem für den Wohnungsmarkt wichtig, weil lokale Regeln für Angebot, Mieten und Rechtsstreitigkeiten Folgen haben können. Ein Wirkpfad führt über strengere kommunale Eingriffe zu weniger Ferienwohnungen in angespannten Vierteln. Eine mögliche Folge wäre mehr Schutz für reguläre Mietangebote, zugleich aber auch ein Konflikt mit kommerziellen Anbietern. Offen bleibt, wie streng die endgültigen Regeln sind und ob sie später tatsächlich den Markt verändern. Die Evidenz stammt nur aus zwei journalistischen Berichten über den Vorschlag; der spätere Rechtstext liegt hier nicht vor.",
+        "why_relevant": "Der Vorschlag kann Städte im Umgang mit Kurzzeitvermietungen rechtlich stärken und damit Wohnungsmarktregeln verändern. Für Demokratie zählt vor allem die kommunale Steuerungsfähigkeit; für Mensch und Planet sind die Folgen in dieser Meldung noch offen.",
+        "status": "Entwurf",
+        "analysis_type": "ex_ante",
+        "direction_assessment_version": "1.0",
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Mehr Regulierung kann Wohnungssuchende entlasten, zugleich aber kommerzielle Vermietung und touristische Nutzung einschränken. Die Netto-Richtung hängt vom finalen Regeltext und der lokalen Umsetzung ab.",
+          "positive_path": {
+            "mechanism": "Strengere kommunale Regeln können das Angebot regulärer Mietwohnungen schützen, wenn Kurzzeitvermietung in angespannten Vierteln begrenzt wird.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Höhere Hürden für Anbieter können Einnahmen senken und bei unklaren Kriterien neue Rechtsstreitigkeiten auslösen.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "In den Quellen fehlt ein belastbarer Pfad zu Umwelt- oder Klimawirkungen. Ein möglicher indirekter Effekt über Reise- oder Nutzungsänderungen wird hier nicht belegt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn Städte rechtssicherer handeln können, steigt ihre demokratische Korrekturfähigkeit im lokalen Wohnungsmarkt. Der Effekt hängt aber davon ab, ob der Vorschlag am Ende klare und praktikable Zuständigkeiten schafft.",
+          "positive_path": {
+            "mechanism": "Einheitlichere EU-Regeln können kommunale Eingriffe rechtlich absichern und damit lokale Entscheidungen besser durchsetzbar machen.",
+            "source_ids": [
+              "stern-schlagzeilen",
+              "dlf-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Zu hohe Nachweishürden oder unklare Kriterien können Städte trotz formaler Regeln wieder in Streit über Zuständigkeiten und Klagerisiken bringen.",
+            "source_ids": [
+              "dlf-nachrichten"
+            ]
+          }
+        },
+        "importance": "mittel",
+        "impact_potential": "Der Entwurf kann die Regulierung von Kurzzeitvermietungen in mehreren Städten rechtlich neu ordnen und damit Wohnungsmarkt und kommunale Steuerung beeinflussen.",
+        "impact_risks": [
+          "Unklare Nachweispflichten könnten neue Verfahren und Verzögerungen auslösen.",
+          "Strengere Regeln könnten Einnahmen kommerzieller Anbieter mindern.",
+          "Die Wirkung bleibt lokal unterschiedlich und ist vom finalen Rechtstext abhängig."
+        ],
+        "mechanisms": [
+          "Rechtssichere kommunale Eingriffe",
+          "Nachweispflichten bei angespanntem Wohnungsmarkt",
+          "Begrenzung kommerzieller Kurzzeitvermietung"
+        ],
+        "first_order": [
+          "Städte erhalten oder verlieren je nach Ausgestaltung mehr Handlungsspielraum.",
+          "Anbieter müssen sich auf neue Bedingungen einstellen."
+        ],
+        "second_order": [
+          "Angebot und Nutzung von Ferienwohnungen können sich in betroffenen Vierteln verschieben.",
+          "Rechtsstreitigkeiten können zu Verzögerungen oder Präzisierungen führen."
+        ],
+        "third_order": [
+          "Kommunale Wohnungspolitik könnte europaweit einheitlicher werden.",
+          "Der Markt für Kurzzeitvermietungen könnte stärker reguliert und weniger flexibel werden."
+        ],
+        "systemic_relevance": "Die Meldung berührt die Schnittstelle von EU-Recht, kommunaler Wohnungsmarktsteuerung und privaten Plattformmärkten. Systemrelevant ist vor allem die Frage, ob lokale Behörden Regeln wirksam und rechtssicher durchsetzen können.",
+        "transformation_potential": "Mittel: Der Entwurf könnte die Balance zwischen Plattformökonomie und öffentlicher Wohnungssteuerung verschieben.",
+        "resilience": "Mehr Rechtssicherheit kann lokale Steuerung stärken; unklare Kriterien würden die Resilienz schwächen.",
+        "side_effects": [
+          "Mögliche Verlagerung von Vermietung in andere Segmente",
+          "Mehr Klagen oder Verwaltungsaufwand",
+          "Unterschiedliche Umsetzung zwischen Städten"
+        ],
+        "uncertainties": [
+          "Der endgültige Wortlaut liegt nicht vor.",
+          "Die wirtschaftliche und soziale Wirkung bleibt lokal sehr unterschiedlich.",
+          "Die Quellen nennen keine belastbaren Zahlen zu Betroffenen oder Effekten."
+        ],
+        "evidence_level": "mittel: zwei journalistische Berichte über denselben Vorschlag, aber kein Originaldokument.",
+        "attribution": "stern und Deutschlandfunk berichten über einen Vorschlag der EU-Kommission in Brüssel; beide geben den Inhalt paraphrasiert wieder, nicht als Originaltext des Regelwerks.",
+        "watch_next": [
+          "Entsteht ein verbindlicher Kommissionsentwurf oder später ein Beschluss?",
+          "Welche Nachweiskriterien gelten im finalen Text?",
+          "Wie reagieren betroffene Städte und Anbieter?"
+        ],
+        "reference_frameworks": [
+          "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+        ],
+        "publication_gate": {
+          "news_value": "substantive_commitment",
+          "materiality_factors": [
+            "affected_scope",
+            "duration"
+          ],
+          "exceptional_factor": "systemic_relevance",
+          "evidence_basis": "independent_reports",
+          "duplicate_status": "new_story",
+          "rationale": "Neuer EU-Regelungsvorschlag mit möglicher Wirkung auf kommunale Zuständigkeiten, Wohnungsmarkt und Klagerisiken; kein bloßer Routinebericht."
+        },
+        "media_impact": null,
+        "visuals": null,
+        "media_analysis_version": "2.1",
+        "media_checked_at": "2026-09-09T11:37:19.505Z",
+        "media_trigger_fingerprint": "cc12dd111739f144e69c432374dc6e6914c30cefbc1ec31a3a8d2036293ce3c2",
+        "media_trigger": {
+          "relevant": false,
+          "level": "low",
+          "score": 0,
+          "reasons": [],
+          "matched_terms": [],
+          "source_count": 2,
+          "comparable_source_count": 2,
+          "fingerprint": "cc12dd111739f144e69c432374dc6e6914c30cefbc1ec31a3a8d2036293ce3c2",
+          "content_fingerprint": "474af1e0f15ead5ee038ea228201b4fb0ff8492cfccd3ee420beb6db4b92fe1e",
+          "basis": "controlled_source_text",
+          "version": "2.1"
+        }
+      },
+      "versions": [
+        {
+          "version": 1,
+          "analyzed_at": "2026-09-09T11:40:05.122Z",
+          "content_hash": "f32a1ea041955a396bbdfb726f7459ec223bb9bea63f9bbada5672a7252131d6",
+          "source_summary": "Die EU-Kommission in Brüssel schlägt Regeln vor, mit denen Städte in der Europäischen Union einheitlicher gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können. Nach den Berichten soll ein direkter Zusammenhang mit steigenden Mieten eine Bedingung sein, die Kommunen nachweisen müssen. Die neuen Regeln sollen Verbote und Einschränkungen rechtssicherer machen, weil Anbieter häufig dagegen klagen.\n\nLaut Deutschlandfunk richten sich die Vorschläge an kommerzielle Anbieter, nicht an Menschen, die ihre eigene Wohnung gelegentlich vermieten, wenn sie selbst nicht anwesend sind. Genannt werden außerdem Städte wie Barcelona und Lissabon, die bereits Beschränkungen eingeführt haben. Offen bleibt, wie der Vorschlag im weiteren EU-Verfahren verändert oder beschlossen wird.",
+          "analysis": {
+            "story_id": "wt-a098a78411837ab4",
+            "publication_recommendation": true,
+            "news_status": "developing",
+            "publication_depth": "initial",
+            "summary": "Brüssel legt einen Entwurf für einheitlichere Regeln gegen Kurzzeitvermietungen vor. Materiell relevant ist das, weil sich damit der Handlungsspielraum von Städten und die Rechtssicherheit im Wohnungsmarkt ändern können.",
+            "detail_summary": "Die Kommission will Städten offenbar klarere Bedingungen geben, unter denen sie Kurzzeitvermietungen begrenzen dürfen. Das ist vor allem für den Wohnungsmarkt wichtig, weil lokale Regeln für Angebot, Mieten und Rechtsstreitigkeiten Folgen haben können. Ein Wirkpfad führt über strengere kommunale Eingriffe zu weniger Ferienwohnungen in angespannten Vierteln. Eine mögliche Folge wäre mehr Schutz für reguläre Mietangebote, zugleich aber auch ein Konflikt mit kommerziellen Anbietern. Offen bleibt, wie streng die endgültigen Regeln sind und ob sie später tatsächlich den Markt verändern. Die Evidenz stammt nur aus zwei journalistischen Berichten über den Vorschlag; der spätere Rechtstext liegt hier nicht vor.",
+            "why_relevant": "Der Vorschlag kann Städte im Umgang mit Kurzzeitvermietungen rechtlich stärken und damit Wohnungsmarktregeln verändern. Für Demokratie zählt vor allem die kommunale Steuerungsfähigkeit; für Mensch und Planet sind die Folgen in dieser Meldung noch offen.",
+            "status": "Entwurf",
+            "analysis_type": "ex_ante",
+            "direction_assessment_version": "1.0",
+            "human": {
+              "relevance": "mittel",
+              "tendency": "gemischt",
+              "direction_basis": "assessed",
+              "rationale": "Mehr Regulierung kann Wohnungssuchende entlasten, zugleich aber kommerzielle Vermietung und touristische Nutzung einschränken. Die Netto-Richtung hängt vom finalen Regeltext und der lokalen Umsetzung ab.",
+              "positive_path": {
+                "mechanism": "Strengere kommunale Regeln können das Angebot regulärer Mietwohnungen schützen, wenn Kurzzeitvermietung in angespannten Vierteln begrenzt wird.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "dlf-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Höhere Hürden für Anbieter können Einnahmen senken und bei unklaren Kriterien neue Rechtsstreitigkeiten auslösen.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "planet": {
+              "relevance": "gering",
+              "tendency": "offen",
+              "direction_basis": "no_path",
+              "rationale": "In den Quellen fehlt ein belastbarer Pfad zu Umwelt- oder Klimawirkungen. Ein möglicher indirekter Effekt über Reise- oder Nutzungsänderungen wird hier nicht belegt.",
+              "positive_path": null,
+              "negative_path": null
+            },
+            "democracy": {
+              "relevance": "hoch",
+              "tendency": "chance",
+              "direction_basis": "assessed",
+              "rationale": "Wenn Städte rechtssicherer handeln können, steigt ihre demokratische Korrekturfähigkeit im lokalen Wohnungsmarkt. Der Effekt hängt aber davon ab, ob der Vorschlag am Ende klare und praktikable Zuständigkeiten schafft.",
+              "positive_path": {
+                "mechanism": "Einheitlichere EU-Regeln können kommunale Eingriffe rechtlich absichern und damit lokale Entscheidungen besser durchsetzbar machen.",
+                "source_ids": [
+                  "stern-schlagzeilen",
+                  "dlf-nachrichten"
+                ]
+              },
+              "negative_path": {
+                "mechanism": "Zu hohe Nachweishürden oder unklare Kriterien können Städte trotz formaler Regeln wieder in Streit über Zuständigkeiten und Klagerisiken bringen.",
+                "source_ids": [
+                  "dlf-nachrichten"
+                ]
+              }
+            },
+            "importance": "mittel",
+            "impact_potential": "Der Entwurf kann die Regulierung von Kurzzeitvermietungen in mehreren Städten rechtlich neu ordnen und damit Wohnungsmarkt und kommunale Steuerung beeinflussen.",
+            "impact_risks": [
+              "Unklare Nachweispflichten könnten neue Verfahren und Verzögerungen auslösen.",
+              "Strengere Regeln könnten Einnahmen kommerzieller Anbieter mindern.",
+              "Die Wirkung bleibt lokal unterschiedlich und ist vom finalen Rechtstext abhängig."
+            ],
+            "mechanisms": [
+              "Rechtssichere kommunale Eingriffe",
+              "Nachweispflichten bei angespanntem Wohnungsmarkt",
+              "Begrenzung kommerzieller Kurzzeitvermietung"
+            ],
+            "first_order": [
+              "Städte erhalten oder verlieren je nach Ausgestaltung mehr Handlungsspielraum.",
+              "Anbieter müssen sich auf neue Bedingungen einstellen."
+            ],
+            "second_order": [
+              "Angebot und Nutzung von Ferienwohnungen können sich in betroffenen Vierteln verschieben.",
+              "Rechtsstreitigkeiten können zu Verzögerungen oder Präzisierungen führen."
+            ],
+            "third_order": [
+              "Kommunale Wohnungspolitik könnte europaweit einheitlicher werden.",
+              "Der Markt für Kurzzeitvermietungen könnte stärker reguliert und weniger flexibel werden."
+            ],
+            "systemic_relevance": "Die Meldung berührt die Schnittstelle von EU-Recht, kommunaler Wohnungsmarktsteuerung und privaten Plattformmärkten. Systemrelevant ist vor allem die Frage, ob lokale Behörden Regeln wirksam und rechtssicher durchsetzen können.",
+            "transformation_potential": "Mittel: Der Entwurf könnte die Balance zwischen Plattformökonomie und öffentlicher Wohnungssteuerung verschieben.",
+            "resilience": "Mehr Rechtssicherheit kann lokale Steuerung stärken; unklare Kriterien würden die Resilienz schwächen.",
+            "side_effects": [
+              "Mögliche Verlagerung von Vermietung in andere Segmente",
+              "Mehr Klagen oder Verwaltungsaufwand",
+              "Unterschiedliche Umsetzung zwischen Städten"
+            ],
+            "uncertainties": [
+              "Der endgültige Wortlaut liegt nicht vor.",
+              "Die wirtschaftliche und soziale Wirkung bleibt lokal sehr unterschiedlich.",
+              "Die Quellen nennen keine belastbaren Zahlen zu Betroffenen oder Effekten."
+            ],
+            "evidence_level": "mittel: zwei journalistische Berichte über denselben Vorschlag, aber kein Originaldokument.",
+            "attribution": "stern und Deutschlandfunk berichten über einen Vorschlag der EU-Kommission in Brüssel; beide geben den Inhalt paraphrasiert wieder, nicht als Originaltext des Regelwerks.",
+            "watch_next": [
+              "Entsteht ein verbindlicher Kommissionsentwurf oder später ein Beschluss?",
+              "Welche Nachweiskriterien gelten im finalen Text?",
+              "Wie reagieren betroffene Städte und Anbieter?"
+            ],
+            "reference_frameworks": [
+              "Agenda 2030/SDG, DNS, objektspezifisch: nur soweit anwendbar"
+            ],
+            "publication_gate": {
+              "news_value": "substantive_commitment",
+              "materiality_factors": [
+                "affected_scope",
+                "duration"
+              ],
+              "exceptional_factor": "systemic_relevance",
+              "evidence_basis": "independent_reports",
+              "duplicate_status": "new_story",
+              "rationale": "Neuer EU-Regelungsvorschlag mit möglicher Wirkung auf kommunale Zuständigkeiten, Wohnungsmarkt und Klagerisiken; kein bloßer Routinebericht."
+            },
+            "media_impact": null,
+            "visuals": null,
+            "media_analysis_version": "2.1",
+            "media_checked_at": "2026-09-09T11:37:19.505Z",
+            "media_trigger_fingerprint": "cc12dd111739f144e69c432374dc6e6914c30cefbc1ec31a3a8d2036293ce3c2",
+            "media_trigger": {
+              "relevant": false,
+              "level": "low",
+              "score": 0,
+              "reasons": [],
+              "matched_terms": [],
+              "source_count": 2,
+              "comparable_source_count": 2,
+              "fingerprint": "cc12dd111739f144e69c432374dc6e6914c30cefbc1ec31a3a8d2036293ce3c2",
+              "content_fingerprint": "474af1e0f15ead5ee038ea228201b4fb0ff8492cfccd3ee420beb6db4b92fe1e",
+              "basis": "controlled_source_text",
+              "version": "2.1"
+            }
+          },
+          "provider": "Oracle WOeK-KI API",
+          "model": "gpt-5.4-mini",
+          "mode": "newsroom-oracle-llm",
+          "method_sources": [],
+          "claims": [
+            {
+              "claim_id": "wt-a098a78411837ab4-v1-claim-1",
+              "story_id": "wt-a098a78411837ab4",
+              "claim": "Die EU-Kommission schlägt einheitliche Regeln vor, damit Städte in der EU gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können, wenn bestimmte Bedingungen erfüllt sind.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
+                  "excerpt_hash": "b1d6e68556e448ce46f9",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+                  "excerpt_hash": "011854c90151b02092d8",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+                  "excerpt_hash": "6d060db9858c1fa565ed",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+                  "excerpt_hash": "e2f0b42b0cd790cdeb84",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            },
+            {
+              "claim_id": "wt-a098a78411837ab4-v1-claim-2",
+              "story_id": "wt-a098a78411837ab4",
+              "claim": "Ein direkter Zusammenhang mit steigenden Mieten soll eine der Bedingungen sein, die Kommunen nachweisen müssen.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
+                  "excerpt_hash": "b1d6e68556e448ce46f9",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+                  "excerpt_hash": "e2f0b42b0cd790cdeb84",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            },
+            {
+              "claim_id": "wt-a098a78411837ab4-v1-claim-3",
+              "story_id": "wt-a098a78411837ab4",
+              "claim": "Die neuen Regeln sollen Verbote und Einschränkungen rechtssicherer machen, weil Anbieter häufig dagegen klagen.",
+              "status": "single_source_claim",
+              "source_id": "stern-schlagzeilen",
+              "evidence": [
+                {
+                  "source_id": "stern-schlagzeilen",
+                  "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
+                  "excerpt_hash": "90484cc9235b3eed291d",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                },
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+                  "excerpt_hash": "525e170c6609b61bb8a4",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            },
+            {
+              "claim_id": "wt-a098a78411837ab4-v1-claim-4",
+              "story_id": "wt-a098a78411837ab4",
+              "claim": "Die Regeln richten sich an kommerzielle Anbieter, nicht an Menschen, die ihre eigene Wohnung gelegentlich vermieten, wenn sie selbst nicht anwesend sind.",
+              "status": "single_source_claim",
+              "source_id": "dlf-nachrichten",
+              "evidence": [
+                {
+                  "source_id": "dlf-nachrichten",
+                  "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+                  "excerpt_hash": "8f55492dddc72c5168a1",
+                  "checked_at": "2026-09-09T11:40:05.122Z"
+                }
+              ],
+              "verification_method": "AI claim review with deterministic source-excerpt and dependency checks; not independent real-world proof",
+              "checked_at": "2026-09-09T11:40:05.122Z"
+            }
+          ],
+          "source_versions": [
+            {
+              "source_id": "stern-schlagzeilen",
+              "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
+              "content_hash": "70caf4233d39f6e08361b0f0afde6339be9600646323ea2c09a7e353e7a61f81"
+            },
+            {
+              "source_id": "dlf-nachrichten",
+              "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+              "content_hash": "bb3f479d9b92fa96c00e0b720eb4f8db396b222b92f5999ab46e890cd0e39148"
+            }
+          ],
+          "numeric_evidence": {
+            "version": 1,
+            "analysis_version": 1,
+            "checked_at": "2026-09-09T11:40:05.122Z",
+            "sources": [
+              {
+                "source_id": "dlf-nachrichten",
+                "url": "https://www.deutschlandfunk.de/vorgehen-gegen-airbnb-und-co-eu-kommission-schlaegt-regeln-fuer-staedte-vor-100.html",
+                "content_hash": "bb3f479d9b92fa96c00e0b720eb4f8db396b222b92f5999ab46e890cd0e39148",
+                "excerpt_hash": "2785021bf4a1036066d0708288493a4694c530ea5980c523c64aa258fc960137",
+                "number_locale": "de",
+                "numbers": [
+                  "9.09",
+                  "2026"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "publication_history": [
+        {
+          "version": 1,
+          "published_at": "2026-09-09T11:40:05.122Z",
+          "source_count": 2
+        }
+      ],
+      "retirement_history": [],
+      "title_image": {
+        "mode": "impact_card",
+        "source_visual": null,
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630,
+          "layout": "landscape",
+          "label": "OpenGraph, LinkedIn, X (1,91:1)"
+        },
+        "status": "fallback",
+        "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
+        "retry_after": "2026-09-09T11:56:05.394Z"
+      }
+    },
+    {
+      "story_id": "wt-4bf192564b7d504d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "0a0657c2783d013e8f76f69f7c2c28f8dfa3ca2cf1862bf749b95e92cab3a448",
+        "first_failed_at": "2026-09-09T11:37:19.505Z",
+        "failed_at": "2026-09-09T11:37:19.505Z",
+        "retry_after": "2026-09-09T11:52:19.505Z",
+        "retry_count": 1
+      },
+      "slug": "olpreis-steigt-erstmals-seit-juli-uber-100-dollar-7d504d",
+      "title": "Ölpreis steigt erstmals seit Juli über 100 Dollar",
+      "first_seen": "2026-09-09T11:30:03.000Z",
+      "last_updated": "2026-09-09T11:30:03.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesschau-access",
+          "publisher": "tagesschau / ARD",
+          "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-oel-brent-100.html",
+          "title": "Ölpreis steigt erstmals seit Juli über 100 Dollar",
+          "summary": "Der Ölpreis ist am Morgen wegen der weiteren militärischen Eskalation am Persischen Golf auf mehr als 100 Dollar pro Barrel gestiegen. Grund ist die Sorge vor Lieferunterbrechunge…",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:30:03.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "34b5a9dd80d3c4259629e357ceafcda924121ad10ed0c1e38dd0a30e315ae565",
+          "source_item_id": "fc6aeb4c6b682d9dd3ede7b2fb078cea2a01aad2b70d0b221e032a14f0b8c381",
+          "publisher_id": "tagesschau",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:30:03.000Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "collection_source_id": "swr-aktuell",
+          "collection_publisher_id": "swr"
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4bf192564b7d504d-claim-01",
+          "story_id": "wt-4bf192564b7d504d",
+          "claim": "Ölpreis steigt erstmals seit Juli über 100 Dollar: Der Ölpreis ist am Morgen wegen der weiteren militärischen Eskalation am Persischen Golf auf mehr als 100 Dollar pro Barrel gestiegen. Grund ist die Sorge vor Lieferunterbrechunge…",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesschau-access",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesschau",
+            "basis": "publisher_resolved_from_registered_target_url",
+            "independence_established": false,
+            "collection_source_id": "swr-aktuell"
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T11:37:19.505Z"
+        }
+      ],
+      "content_hash": "7eed8a6486b7199300623cf5135e5d5b9298426117b75a8c52ee6769bc40271a",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_DUPLICATE_WITHOUT_UPDATE"
+      ],
+      "quality_retry_after": "2026-09-09T11:52:19.505Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T11:37:19.505Z",
+      "event_first_seen_at": "2026-09-09T11:37:19.505Z",
+      "event_detected_at": "2026-09-09T11:37:19.505Z",
+      "event_id": "event-38dda442aced02ec5829",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 7.275083333333333,
+        "detection_delay_minutes": 7.275083333333333,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T11:37:19.505Z",
+        "fingerprint": "465dc528b10683db11fbf406b771ee935d8b04c0c7b371c9f1d43bcfad421570",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T11:37:19.505Z",
+      "rejection": {
+        "at": "2026-09-09T11:37:19.505Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_DUPLICATE_WITHOUT_UPDATE"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-e3908899d731c0e2",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "3998ce78e3e8da57f6faee7d54c5af06caca20be9d8ab323eb8733a59e4b1e86",
+        "first_failed_at": "2026-09-09T11:37:19.505Z",
+        "failed_at": "2026-09-09T11:37:19.505Z",
+        "retry_after": "2026-09-09T11:52:19.505Z",
+        "retry_count": 1
+      },
+      "slug": "rentenreform-schnieder-fur-nachjustieren-bei-rentenreform-31c0e2",
+      "title": "Rentenreform: Schnieder für Nachjustieren bei Rentenreform",
+      "first_seen": "2026-09-09T11:19:44.000Z",
+      "last_updated": "2026-09-09T11:19:44.000Z",
+      "topic": [
+        "Soziales",
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/rheinland-pfalz-saarland/rentenreform--schnieder-fuer-nachjustieren-bei-rentenreform-38227574.html",
+          "title": "Rentenreform: Schnieder für Nachjustieren bei Rentenreform",
+          "summary": "Der rheinland-pfälzische Ministerpräsident und CDU-Landeschef Schnieder hat sich nach dem Wahldebakel seiner Partei in Sachsen-Anhalt für Kompromisse bei den Reformen ausgesprochen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:19:44.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "58373e491caeff5bc52dd983b75ac5a5bc2bed0e263710a00461bf560bfed52c",
+          "source_item_id": "3f370959fae535639db4bf1d29bbf09e695f8329572b27e78d068292164b31c3",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:19:44.000Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e3908899d731c0e2-claim-01",
+          "story_id": "wt-e3908899d731c0e2",
+          "claim": "Rentenreform: Schnieder für Nachjustieren bei Rentenreform: Der rheinland-pfälzische Ministerpräsident und CDU-Landeschef Schnieder hat sich nach dem Wahldebakel seiner Partei in Sachsen-Anhalt für Kompromisse bei den Reformen ausgesprochen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T11:37:19.505Z"
+        }
+      ],
+      "content_hash": "397bb33af33c6c7ea414c6a11e57ee49d08000b27cfbd0484879f7cffb8a67c4",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-09T11:52:19.505Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T11:37:19.505Z",
+      "event_first_seen_at": "2026-09-09T11:37:19.505Z",
+      "event_detected_at": "2026-09-09T11:37:19.505Z",
+      "event_id": "event-ae5b4e661634ddc9fe67",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Soziales",
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 17.59175,
+        "detection_delay_minutes": 17.59175,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 96,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T11:37:19.505Z",
+        "fingerprint": "e5900d94b5eed19793feb77252319b23d86459aa1e39ca2d78f4c14c2b0c2305",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T11:37:19.505Z",
+      "rejection": {
+        "at": "2026-09-09T11:37:19.505Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
     {
       "story_id": "wt-33931768eeae3386",
       "slug": "eug-bestatigt-ubernahmeverbot-booking-com-darf-sich-fluge-plattform-etraveli-nicht-einve-ae3386",
@@ -647,6 +1647,306 @@
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-09T11:32:38.194Z"
+      }
+    },
+    {
+      "story_id": "wt-b5466496d7b2f521",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "99174910c1d43084553eaf8a1dbf147cf38e035b53eef5916415318b3f964800",
+        "first_failed_at": "2026-09-09T11:37:19.505Z",
+        "failed_at": "2026-09-09T11:37:19.505Z",
+        "retry_after": "2026-09-09T11:52:19.505Z",
+        "retry_count": 1
+      },
+      "slug": "hochwasser-katastrophenschutzubung-in-sudbrandenburger-landkreisen-b2f521",
+      "title": "Hochwasser: Katastrophenschutzübung in Südbrandenburger Landkreisen",
+      "first_seen": "2026-09-09T11:14:58.000Z",
+      "last_updated": "2026-09-09T11:14:58.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "rbb24-nachrichten",
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2026/09/brandenburg-uebung-hochwasser-elbe-elster-oberspreewald-lausitz.html",
+          "title": "Hochwasser: Katastrophenschutzübung in Südbrandenburger Landkreisen",
+          "summary": "",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:14:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "4e67457fa475e26f4c58312fbf93868e93f32061cd446766ff5b678c430c2e8d",
+          "source_item_id": "acaa3060f66cdcdacd9da4c9ceee21ce08314ea5c8a09ad38c46627316a79408",
+          "publisher_id": "rbb",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin-Brandenburg"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:14:58.000Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-b5466496d7b2f521-claim-01",
+          "story_id": "wt-b5466496d7b2f521",
+          "claim": "Hochwasser: Katastrophenschutzübung in Südbrandenburger Landkreisen",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "rbb24-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:rbb",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "nur Titel und Metadaten",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Feed enthält keinen Kurztext.",
+          "checked_at": "2026-09-09T11:37:19.505Z"
+        }
+      ],
+      "content_hash": "bb63a99e7cf32b5c5c58c93a6ea1639c930df7edc962c3921f8ba9b02bbec3af",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-09T11:52:19.505Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T11:37:19.505Z",
+      "event_first_seen_at": "2026-09-09T11:37:19.505Z",
+      "event_detected_at": "2026-09-09T11:37:19.505Z",
+      "event_id": "event-6a7d3c51ab8852b466ce",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.358416666666667,
+        "detection_delay_minutes": 22.358416666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T11:37:19.505Z",
+        "fingerprint": "6352efd459318bd5fab5a11e783c72eeedc505c118eff6cd8453bf1f9b40e253",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T11:37:19.505Z",
+      "rejection": {
+        "at": "2026-09-09T11:37:19.505Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
+      }
+    },
+    {
+      "story_id": "wt-c456132ae9684c06",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "fb1e0b69dad71567a71e06fb32c038426d65f1e3a2179ba51896a3929cacad5a",
+        "first_failed_at": "2026-09-09T11:37:19.505Z",
+        "failed_at": "2026-09-09T11:37:19.505Z",
+        "retry_after": "2026-09-09T11:52:19.505Z",
+        "retry_count": 1
+      },
+      "slug": "energieversorgung-in-brandenburg-wirtschaftsministerin-klement-hat-keine-hinweise-auf-ga-684c06",
+      "title": "Energieversorgung in Brandenburg: Wirtschaftsministerin Klement hat keine Hinweise auf Gasknappheit im Winter",
+      "first_seen": "2026-09-09T11:14:28.000Z",
+      "last_updated": "2026-09-09T11:14:28.000Z",
+      "topic": [
+        "Energie",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/potsdam/brandenburg/energieversorgung-in-brandenburg-wirtschaftsministerin-klement-hat-keine-hinweise-auf-gasknappheit-im-winter-16033415.html",
+          "title": "Energieversorgung in Brandenburg: Wirtschaftsministerin Klement hat keine Hinweise auf Gasknappheit im Winter",
+          "summary": "Der Gasverbrauch ging in Brandenburg zurück. Aber nicht nur deshalb ist Wirtschaftsministerin Martina Klement (CSU) gelassen, was die Versorgung angeht.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:14:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "9d040ce4b8a24bb826d02aea60c0364b515fe68aec04ad040d538692c742662c",
+          "source_item_id": "a3075d2c1425a7dd96cdc7e7b89616500887be477e29ec11ed669e9a005965bd",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T11:14:28.000Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-c456132ae9684c06-claim-01",
+          "story_id": "wt-c456132ae9684c06",
+          "claim": "Energieversorgung in Brandenburg: Wirtschaftsministerin Klement hat keine Hinweise auf Gasknappheit im Winter: Der Gasverbrauch ging in Brandenburg zurück. Aber nicht nur deshalb ist Wirtschaftsministerin Martina Klement (CSU) gelassen, was die Versorgung angeht.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T11:37:19.505Z"
+        }
+      ],
+      "content_hash": "0430241058b3f2228fe6d2830e97ebb35d6bd781ae6789c24d6d189f9d08231e",
+      "published": false,
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
+      "quality_errors": [
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_MATERIALITY_TOO_LOW"
+      ],
+      "quality_retry_after": "2026-09-09T11:52:19.505Z",
+      "fresh": true,
+      "versions": [],
+      "updated_at": "2026-09-09T11:37:19.505Z",
+      "event_first_seen_at": "2026-09-09T11:37:19.505Z",
+      "event_detected_at": "2026-09-09T11:37:19.505Z",
+      "event_id": "event-8deaa686534fcd57f9ac",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.858416666666667,
+        "detection_delay_minutes": 22.858416666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T11:37:19.505Z",
+        "fingerprint": "83d4f7668906f589c58c2ee776477de4aefbdf6b0fdf56d9e18ceb7ada03e4fa",
+        "issue_codes": [],
+        "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T11:37:19.505Z",
+      "rejection": {
+        "at": "2026-09-09T11:37:19.505Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_MATERIALITY_TOO_LOW"
+        ]
       }
     },
     {
@@ -1410,10 +2710,10 @@
       "story_id": "wt-15665d71bdf5b2ab",
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
-        "fingerprint": "94b1a124ce952460a9ba11dffcc4b956dd58abdd9500426b7cd72cd99d80a70e",
-        "first_failed_at": "2026-09-09T11:12:49.530Z",
-        "failed_at": "2026-09-09T11:12:49.530Z",
-        "retry_after": "2026-09-09T11:27:49.530Z",
+        "fingerprint": "3e6a02bf99e6a09d383b7be64e82a945b07512c7133832f4c6d643327b9e3559",
+        "first_failed_at": "2026-09-09T11:37:19.505Z",
+        "failed_at": "2026-09-09T11:37:19.505Z",
+        "retry_after": "2026-09-09T11:52:19.505Z",
         "retry_count": 1
       },
       "slug": "statistik-zahl-der-berufspendler-bundesweit-gestiegen-munchen-hat-die-meisten-pendler-f5b2ab",
@@ -1431,7 +2731,7 @@
           "title": "Statistik - Zahl der Berufspendler bundesweit gestiegen - München hat die meisten Pendler",
           "summary": "Die Zahl der Menschen, die zur Arbeit pendeln, ist bundesweit gestiegen.",
           "source_type": "media_rss",
-          "published_at": "2026-09-09T11:04:41.000Z",
+          "published_at": "2026-09-09T11:35:21.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -1447,8 +2747,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T11:04:41.000Z",
-          "ingested_at": "2026-09-09T11:07:22.757Z",
+          "source_published_at": "2026-09-09T11:35:21.000Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1477,23 +2777,23 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         }
       ],
       "content_hash": "1b585c479d3487577f19e53b9c8e7a5d03cbf6fccf5e5940adea9237d09e0c48",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "CLAIM_NUMBER_NOT_IN_EVIDENCE",
-        "AI_EXCESSIVE_SOURCE_SUMMARY_COPY"
+        "AI_SUMMARY_SENTENCE_COUNT",
+        "CLAIM_NUMBER_NOT_IN_EVIDENCE"
       ],
-      "quality_retry_count": 1,
-      "quality_retry_after": "2026-09-09T11:27:49.530Z",
+      "quality_retry_count": 2,
+      "quality_retry_after": "2026-09-09T11:52:19.505Z",
       "reassessment": false,
       "fresh": true,
       "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T11:12:49.530Z",
+      "updated_at": "2026-09-09T11:37:19.505Z",
       "event_first_seen_at": "2026-09-09T11:07:22.757Z",
       "event_detected_at": "2026-09-09T11:07:22.757Z",
       "event_id": "event-9d1a0cdf02447284e44d",
@@ -1528,20 +2828,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 8.142166666666666,
-        "detection_delay_minutes": 2.69595,
+        "source_age_minutes": 1.9750833333333333,
+        "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 5.4462166666666665,
+        "queue_age_minutes": 29.9458,
         "target_publication_minutes": 120,
-        "news_freshness_score": 98,
+        "news_freshness_score": 100,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T11:12:49.530Z",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "fingerprint": "95071ead4a28bce6ce4cde4d88f04d30ff9ef15b0ea50183251fc99d001c0418",
         "issue_codes": [],
         "warning_codes": []
@@ -1681,160 +2981,6 @@
         "version": "1.0",
         "checked_at": "2026-09-09T11:12:49.530Z",
         "fingerprint": "1f658a15da2e900d512fb9f232a1e9f7206c3b6ab406eefcdb356452ae552e94",
-        "issue_codes": [],
-        "warning_codes": []
-      },
-      "listed": false,
-      "relevance_filter_version": "4.0",
-      "rejected_at": "2026-09-09T11:12:49.530Z",
-      "rejection": {
-        "at": "2026-09-09T11:12:49.530Z",
-        "filter_version": "4.0",
-        "reason_code": "FILTER_NOT_MATERIAL",
-        "quality_errors": [
-          "AI_PUBLICATION_NOT_RECOMMENDED",
-          "AI_EVIDENCE_INSUFFICIENT"
-        ]
-      }
-    },
-    {
-      "story_id": "wt-a098a78411837ab4",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "ff886b9541612fa08f3796f6a6c930433f292713f5940fc74dbc738fb81539bb",
-        "first_failed_at": "2026-09-09T11:12:49.530Z",
-        "failed_at": "2026-09-09T11:12:49.530Z",
-        "retry_after": "2026-09-09T11:27:49.530Z",
-        "retry_count": 1
-      },
-      "slug": "vorgehen-gegen-airbnb-und-co-brussel-schlagt-regeln-fur-stadte-vor-837ab4",
-      "title": "Vorgehen gegen Airbnb und Co.: Brüssel schlägt Regeln für Städte vor",
-      "first_seen": "2026-09-09T10:51:18.000Z",
-      "last_updated": "2026-09-09T10:51:18.000Z",
-      "topic": [
-        "Soziales",
-        "Digitalisierung",
-        "Europa"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/news/vorgehen-gegen-airbnb-und-co---bruessel-schlaegt-regeln-fuer-staedte-vor-38227334.html",
-          "title": "Vorgehen gegen Airbnb und Co.: Brüssel schlägt Regeln für Städte vor",
-          "summary": "Städte in der EU sollen einheitliche Regeln bekommen, wann sie gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können. Die EU-Kommission in Brüssel schlug am Mittwoch eine Reihe von Bedingungen vor, etwa ein direkter Zusammenhang mit steigenden Mieten. Die EU-Regeln sollen Verbote und Einschränkungen solcher Ferienwohnungen rechtssicherer machen, weil Anbieter häufig dagegen klagen.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T10:51:18.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "70caf4233d39f6e08361b0f0afde6339be9600646323ea2c09a7e353e7a61f81",
-          "source_item_id": "31a39a637d22249aee105fb20e20b9cd6f903dc942b130b9d2899a1b65b92ab3",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T10:51:18.000Z",
-          "ingested_at": "2026-09-09T11:07:22.757Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-a098a78411837ab4-claim-01",
-          "story_id": "wt-a098a78411837ab4",
-          "claim": "Vorgehen gegen Airbnb und Co.: Brüssel schlägt Regeln für Städte vor: Städte in der EU sollen einheitliche Regeln bekommen, wann sie gegen Kurzzeitvermietungen über Plattformen wie Airbnb vorgehen können. Die EU-Kommission in Brüssel schlug am Mittwoch eine Reihe von Bedingungen vor, etwa ein direkter Zusammenhang mit steigenden Mieten. Die EU-Regeln sollen Verbote und Einschränkungen solcher Ferienwohnungen rechtssicherer machen, weil Anbieter häufig dagegen klagen.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
-        }
-      ],
-      "content_hash": "07b65e5b3f92ce47aaab37897b49e9fc8c3d6734f662cff074b7d524b8b076b4",
-      "published": false,
-      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
-      "quality_errors": [
-        "AI_PUBLICATION_NOT_RECOMMENDED",
-        "AI_EVIDENCE_INSUFFICIENT"
-      ],
-      "quality_retry_after": "2026-09-09T11:27:49.530Z",
-      "fresh": true,
-      "versions": [],
-      "updated_at": "2026-09-09T11:12:49.530Z",
-      "event_first_seen_at": "2026-09-09T11:07:22.757Z",
-      "event_detected_at": "2026-09-09T11:07:22.757Z",
-      "event_id": "event-a7e16e7a3cfe6fdf93c4",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 30,
-        "public_relevance": "mittel",
-        "topics": [
-          "Soziales",
-          "Digitalisierung",
-          "Europa"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 21.5255,
-        "detection_delay_minutes": 16.079283333333333,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 5.4462166666666665,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 96,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T11:12:49.530Z",
-        "fingerprint": "303b1b47817ed6c3f4d627f2378d70e24b58b41bf2264627503e94bcf0f16de9",
         "issue_codes": [],
         "warning_codes": []
       },
@@ -10629,7 +11775,7 @@
             "title": "Naher Osten - Kriegsereignisse treiben Rohölpreis wieder über 100 Dollar",
             "summary": "Die neuerlichen amerikanischen Angriffe auf iranische Tanker und die Reaktion der Revolutionsgarden haben die Rohölpreise wieder in die Höhe getrieben.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T11:04:41.000Z",
+            "published_at": "2026-09-09T11:35:21.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -10645,8 +11791,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T11:04:41.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "source_published_at": "2026-09-09T11:35:21.000Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -10667,7 +11813,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "c51a6a6c268becc634c0d939bbed9e1b5c50bab5d2fbfe096ef20a8988cbdf22",
           "issue_codes": [],
           "warning_codes": []
@@ -11161,7 +12307,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:13:00.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -11182,7 +12328,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "694f1e59b077b9f8c608a3538526072926dbea4a48e8bb4ab446a73ab6fbc375",
           "issue_codes": [],
           "warning_codes": []
@@ -14304,7 +15450,7 @@
       "verification_started_at": "2026-09-09T08:55:24.189Z",
       "publish_ready_at": "2026-09-09T08:55:33.598Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -14665,9 +15811,12 @@
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
         "retry_after": "2026-09-09T09:13:03.972Z"
       },
-      "pending_update": {
-        "detected_at": "2026-09-09T10:07:31.404Z",
-        "content_hash": "3d2a3635ad72e6224b3cc404652d67f5b90ae69b2055730d11ee8011880aad49",
+      "review_checkpoint": {
+        "version": "evidence-packet-3",
+        "fingerprint": "750b79ab631475b3218cb6d25129174411c7d779bfa035ddada5b76ea9cc29b3",
+        "checked_at": "2026-09-09T11:37:19.505Z",
+        "outcome": "no_material_update",
+        "expires_at": "2026-09-09T17:37:19.505Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -14701,25 +15850,43 @@
               "basis": "publisher_only_origin_unverified",
               "independence_established": false
             }
+          },
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/news/klage-scheitert-vor-eu-gericht--booking-darf-etraveli-nicht-uebernehmen-38225950.html",
+            "title": "Klage scheitert vor EU-Gericht: Booking darf eTraveli nicht übernehmen",
+            "summary": "Rückschlag für Booking.com: Der Reiseanbieter darf das Flugportal eTraveli einem neuen Urteil zufolge nicht übernehmen. Eine Klage gegen das Verbot scheiterte am Mittwoch vor dem Gericht der Europäischen Union in Luxemburg. Booking prüft nun, gegen das Urteil vorzugehen. (Az. T-1139/23)",
+            "source_type": "media_rss",
+            "published_at": "2026-09-09T11:14:25.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "0f5d334c6c3230599fa0809eb36a66191b5034936262249b909e98e979b8ab05",
+            "source_item_id": "28be050182d3c5612dd45c14bb4b0b34739aa8196d0e4699fc02f2ca35f6cd4a",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-09-09T11:14:25.000Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
           }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
-          "fingerprint": "b07c1044c13139f953828ef099425d856ace52e0393162d5248f56719049fe3e",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+        ]
+      },
+      "deepening_checks": 1
     },
     {
       "story_id": "wt-ead9be0d3e2045c4",
@@ -17043,7 +18210,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "afde05b174a8171b1ec8e6d65c90b2b3a0a0a4e13b7661d883f914389956ec45",
           "issue_codes": [],
           "warning_codes": []
@@ -18282,7 +19449,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "0c59257b7f229b4525f991d215e40acd4338a0901f548bea4671dd037f615fad",
           "issue_codes": [],
           "warning_codes": []
@@ -19662,7 +20829,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -19683,7 +20850,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "bb7a5588e7ab778e0e72e6f4cccdcb1d0ae39518fdb20485129fbf53d745c3ef",
           "issue_codes": [],
           "warning_codes": []
@@ -22223,7 +23390,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T06:44:10.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -22244,7 +23411,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "2d967ebef56891fb5b7db628ee84539aed5971c3f41eea66bf2a66e035ade3f0",
           "issue_codes": [],
           "warning_codes": []
@@ -23213,7 +24380,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T20:33:01.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -23234,7 +24401,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "43e263c3b728aa4d6c1579552f106ce9474e539d6af84087dbe9dfe0b503165a",
           "issue_codes": [],
           "warning_codes": []
@@ -24065,7 +25232,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T23:07:34.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -24098,7 +25265,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T09:11:21.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -24119,7 +25286,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "00745e32348705095e7193eb7f51b7e60e4211b36349f0379d5c458470069acb",
           "issue_codes": [],
           "warning_codes": []
@@ -25452,7 +26619,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T03:28:00.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -25506,7 +26673,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "40edeffc10f76ac729263cf26d9219be8ce046bcc15081437c14b3359b0fdfae",
           "issue_codes": [],
           "warning_codes": []
@@ -27840,7 +29007,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T08:11:17.605Z"
+        "retry_after": "2026-09-09T11:56:23.272Z"
       },
       "pending_update": {
         "detected_at": "2026-09-09T10:07:31.404Z",
@@ -27876,7 +29043,7 @@
             "research_lane": "primary",
             "requires_corroboration": false,
             "source_published_at": "2026-09-07",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -27897,7 +29064,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
           "issue_codes": [],
           "warning_codes": []
@@ -28471,7 +29638,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T08:11:11.833Z"
+        "retry_after": "2026-09-09T11:56:18.368Z"
       },
       "pending_update": {
         "detected_at": "2026-09-09T10:07:31.404Z",
@@ -28501,7 +29668,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T10:54:46.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -28522,7 +29689,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "89936e0172dca057489613122967481af6ae3d49f32909881997e0b915328fd0",
           "issue_codes": [],
           "warning_codes": []
@@ -29232,7 +30399,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T07:57:22.572Z"
+        "retry_after": "2026-09-09T11:56:11.976Z"
       },
       "pending_update": {
         "detected_at": "2026-09-09T10:07:31.404Z",
@@ -29283,7 +30450,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "771af662c62e40f4e1dcbe83067df293cf64e8291cb7bc5e37aa95a5ae296855",
           "issue_codes": [],
           "warning_codes": []
@@ -29983,7 +31150,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-09T04:07:00.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -29993,10 +31160,13 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
+        "reason": "QUALITY_GATE_FAILED",
+        "quality_errors": [
+          "AI_SOURCE_SUMMARY_LENGTH",
+          "AI_SOURCE_SUMMARY_PARAGRAPHS"
+        ],
+        "quality_retry_count": 1,
+        "quality_retry_after": "2026-09-09T11:52:19.505Z",
         "reassessment": false,
         "fresh": false,
         "consolidation": false,
@@ -30004,11 +31174,19 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "5bf0079782476452cd4b50422972aafc1839912b11c42105b8258dcb924a055a",
           "issue_codes": [],
           "warning_codes": []
         }
+      },
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "93289dabd9e23d96c22a703c2cb6d6c6093b6c840b90ba615d79357d5b18db19",
+        "first_failed_at": "2026-09-09T11:37:19.505Z",
+        "failed_at": "2026-09-09T11:37:19.505Z",
+        "retry_after": "2026-09-09T11:52:19.505Z",
+        "retry_count": 1
       }
     },
     {
@@ -31453,9 +32631,9 @@
         "version": "2026-09-06-throughput-3",
         "fingerprint": "3f5fc4aea95676acc1df4dc5c03a64c28ff2a1d745bd478df34e9775b875aa2c",
         "first_failed_at": "2026-09-09T05:52:18.628Z",
-        "failed_at": "2026-09-09T08:22:03.686Z",
-        "retry_after": "2026-09-09T11:22:03.686Z",
-        "retry_count": 4
+        "failed_at": "2026-09-09T11:37:19.505Z",
+        "retry_after": "2026-09-09T17:37:19.505Z",
+        "retry_count": 5
       },
       "slug": "ein-sommer-des-standigen-wartens-6f2bd2",
       "title": "Ein Sommer des ständigen Wartens",
@@ -31518,22 +32696,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T08:22:03.686Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         }
       ],
       "content_hash": "98b6faebaef4daca9a90f0a6d3f1ce30557151be6187ae81cb6b32a90c002b46",
       "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "analysis_status": "nach Relevanzprüfung nicht veröffentlicht",
       "quality_errors": [
-        "MEDIA_PUBLIC_EXPLANATION_LENGTH"
+        "AI_PUBLICATION_NOT_RECOMMENDED",
+        "AI_EVIDENCE_INSUFFICIENT"
       ],
-      "quality_retry_count": 4,
-      "quality_retry_after": "2026-09-09T11:22:03.686Z",
-      "reassessment": false,
+      "quality_retry_after": "2026-09-09T17:37:19.505Z",
       "fresh": true,
-      "pending_reason": "QUALITY_GATE_FAILED",
       "versions": [],
-      "updated_at": "2026-09-09T08:22:03.686Z",
+      "updated_at": "2026-09-09T11:37:19.505Z",
       "event_first_seen_at": "2026-09-09T04:52:17.802Z",
       "event_detected_at": "2026-09-09T04:52:17.802Z",
       "event_id": "event-d776312b7e675220ef37",
@@ -31566,23 +32742,35 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 221.06143333333333,
+        "source_age_minutes": 416.32508333333334,
         "detection_delay_minutes": 11.2967,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 209.76473333333334,
+        "queue_age_minutes": 405.02838333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 54,
+        "news_freshness_score": 13,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T08:22:03.686Z",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "fingerprint": "e8c9dda8ed9bb28111f50f126d90d3d8eeb042c8e52bc8e0ed00da37e78db0c9",
         "issue_codes": [],
         "warning_codes": []
+      },
+      "listed": false,
+      "relevance_filter_version": "4.0",
+      "rejected_at": "2026-09-09T11:37:19.505Z",
+      "rejection": {
+        "at": "2026-09-09T11:37:19.505Z",
+        "filter_version": "4.0",
+        "reason_code": "FILTER_NOT_MATERIAL",
+        "quality_errors": [
+          "AI_PUBLICATION_NOT_RECOMMENDED",
+          "AI_EVIDENCE_INSUFFICIENT"
+        ]
       }
     },
     {
@@ -37717,7 +38905,7 @@
             "title": "Krieg - Fünf Todesopfer bei neuen russischen Luftangriffen auf Kiew",
             "summary": "Bei neuen russischen Luftangriffen auf die ukrainische Hauptstadt Kiew sind nach Behördenangaben fünf Menschen getötet worden.",
             "source_type": "media_rss",
-            "published_at": "2026-09-09T11:04:41.000Z",
+            "published_at": "2026-09-09T11:35:21.000Z",
             "primary_source": false,
             "source_priority": 0,
             "source_topic": "Politik",
@@ -37733,8 +38921,8 @@
             ],
             "research_lane": "media",
             "requires_corroboration": false,
-            "source_published_at": "2026-09-09T11:04:41.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "source_published_at": "2026-09-09T11:35:21.000Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -37755,7 +38943,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "3037a1d42e9e581af7193dffb83c5d5dedad0e73b1af2289d4607930fd0d5b62",
           "issue_codes": [],
           "warning_codes": []
@@ -41407,7 +42595,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T15:52:01.000Z",
-            "ingested_at": "2026-09-09T11:07:22.757Z",
+            "ingested_at": "2026-09-09T11:37:19.505Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -41428,7 +42616,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "1efa3fa74f2770221ef9efac103a0a38be0f98820ad08782bc080d18496d51db",
           "issue_codes": [],
           "warning_codes": []
@@ -46052,7 +47240,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "fada684c913b1511f4b664c4800c3b5ed71f9a95565753e62994fc4d1b7d2c3a",
           "issue_codes": [],
           "warning_codes": []
@@ -47152,7 +48340,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "53f93df4d1e534788f614f7964cd327043bdce46694f9d12100257749b54cc1b",
           "issue_codes": [],
           "warning_codes": []
@@ -47791,7 +48979,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "b5908b5166c1b877fe5d36ce3afae9282b196a739ecc80313dd7c28c0d1f1bca",
           "issue_codes": [],
           "warning_codes": []
@@ -49064,7 +50252,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "3fd8816464984e1e316e6731d9b0fb110f056e15c651860f9e0768e5e55414e9",
           "issue_codes": [],
           "warning_codes": []
@@ -49972,7 +51160,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "e56222f792fde2c1e277725ecbc17672d4aaefcb1de80907c0c330ab83d93df8",
           "issue_codes": [],
           "warning_codes": []
@@ -53495,7 +54683,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "46b06f5129ab11dcdcbcead79a419746c9745bf047a31c3da192fa34a025dc76",
           "issue_codes": [],
           "warning_codes": []
@@ -58146,7 +59334,7 @@
       "verification_started_at": "2026-09-08T14:30:40.120Z",
       "publish_ready_at": "2026-09-08T14:30:51.368Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-09T10:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -58579,9 +59767,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "67026924ba94d50b8f38011bfbc33d8b15134dca34a56a12468b07df6e9206e1",
-        "checked_at": "2026-09-09T08:06:50.537Z",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T14:06:50.537Z",
+        "expires_at": "2026-09-09T17:37:19.505Z",
         "sources": [
           {
             "source_id": "dlf-nachrichten",
@@ -58618,62 +59806,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-09T10:07:31.404Z",
-        "content_hash": "b8faccce73a48645c899a33dc1d9e71615fb244a1568f610f81f82ea28acde04",
-        "sources": [
-          {
-            "source_id": "dlf-nachrichten",
-            "publisher": "Deutschlandfunk",
-            "url": "https://www.deutschlandfunk.de/erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-102.html",
-            "title": "FairSquare - Erneute Beschwerde bei Ethikkomission gegen FIFA-Chef Infantino",
-            "summary": "Im Machtkampf beim Fußball-Weltverband FIFA erhöht auch die Menschenrechtsorganisation FairSquare den Druck auf Präsident Gianni Infantino. Die Organisation hat eine erneute Beschwerde gegen den Schweizer bei der FIFA-Ethikkommission eingereicht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T19:27:25.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "45b52bb546364995adef993f68d3dc587a44257a5b5322b8b21d2b9c581e3f2d",
-            "source_item_id": "2de8cc5c5317264dbe214b14f85ec6c217deee02da1662dacff933e79a911944",
-            "publisher_id": "deutschlandfunk",
-            "publisher_kind": "public_broadcasting",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T19:27:25.000Z",
-            "ingested_at": "2026-09-08T19:52:12.815Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:deutschlandfunk",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
-          "fingerprint": "484ee63d9db550c1e2294eb912677a21bde29d3e9b9613f1457cb2ac44270032",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-be3891a57ba98b06",
@@ -62167,7 +63300,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "377ad74f0814268b2cf82c648e014592167800d62ed6f4815674d8d7fe6e8433",
           "issue_codes": [],
           "warning_codes": []
@@ -71937,7 +73070,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "0e824208ac91cd615c6da0a4f44ebe8e9f89278fea217f54750b619c806b7163",
           "issue_codes": [],
           "warning_codes": []
@@ -72357,9 +73490,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "9e1c10e0230a132d2d571c9d5ef13f3ca584b10c2bdf91e881a0b9da1e9af753",
-        "checked_at": "2026-09-09T11:12:49.530Z",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:12:49.530Z",
+        "expires_at": "2026-09-09T17:37:19.505Z",
         "sources": [
           {
             "source_id": "tagesschau-access",
@@ -73136,7 +74269,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "aee2728c313d5bbd32082a613ae379886c53c1839aca55b1314e40cec484d370",
           "issue_codes": [],
           "warning_codes": []
@@ -74897,7 +76030,7 @@
       "verification_started_at": "2026-09-08T10:28:37.227Z",
       "publish_ready_at": "2026-09-08T10:28:51.345Z",
       "news_status": "confirmed",
-      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "deepening_due_at": "2026-09-09T14:00:00.000Z",
       "evidence_groups": {
         "groups": [
           [
@@ -75349,10 +76482,10 @@
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
-        "fingerprint": "bfff825d5f5218f70ea091d11257421c499ff4f13d987d24ee482a43f16259ba",
-        "checked_at": "2026-09-08T20:51:52.093Z",
+        "fingerprint": "6f41da6420bc21a9068faecea797da18a658bf5ea91d693d6f904657a8443702",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T02:51:52.093Z",
+        "expires_at": "2026-09-09T17:37:19.505Z",
         "sources": [
           {
             "source_id": "bundestag-hib",
@@ -75388,61 +76521,7 @@
           }
         ]
       },
-      "deepening_checks": 1,
-      "pending_update": {
-        "detected_at": "2026-09-09T05:06:53.221Z",
-        "content_hash": "a00300db27964238a0d06db22daaee217c77e1afeb8282eec1def20105fdf889",
-        "sources": [
-          {
-            "source_id": "bundestag-hib",
-            "publisher": "Deutscher Bundestag - Heute im Bundestag",
-            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1210874",
-            "title": "Grüne fordern Reformen in der psychiatrischen Versorgung",
-            "summary": "Gesundheit/Antrag Die Grünen-Fraktion fordert in einem Antrag Reformen in der psychiatrischen Versorgung mit einem Ausbau ambulanter Behandlungsmöglichkeiten.",
-            "source_type": "official_rss",
-            "published_at": "2026-09-08T09:18:00.000Z",
-            "primary_source": true,
-            "source_priority": 96,
-            "source_topic": "Politik",
-            "content_hash": "88ca30a2176b3b33841fe932ef3f31e09d1593e4aa0aa99bec0ca09064165961",
-            "source_item_id": "d20735a78cbea9ecf35f9346540accd39183853e91fc77b751b90d1ce8bf886c",
-            "publisher_id": "bundestag",
-            "publisher_kind": "institution",
-            "source_role": "institutional_statement",
-            "language": "de",
-            "geography": [
-              "DE"
-            ],
-            "research_lane": "primary",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T09:18:00.000Z",
-            "ingested_at": "2026-09-08T14:52:22.706Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:bundestag",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
-          "fingerprint": "97ce860ae4e192c5fdd29a15c6394752833560c5087216c218cf76e2d714ad15",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 2
     },
     {
       "story_id": "wt-96126ab003c2ba16",
@@ -96405,7 +97484,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "1465bd6d2340b42d6f020ac9f79f7ddc1231ea9a43b7e7757fe410ddd2eae683",
           "issue_codes": [],
           "warning_codes": []
@@ -99386,7 +100465,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "48df1a09de0713645f2d603a590db7362aa4010366a6fedffbd16be03bc89594",
           "issue_codes": [],
           "warning_codes": []
@@ -101548,9 +102627,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T11:12:49.530Z",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:12:49.530Z",
+        "expires_at": "2026-09-09T17:37:19.505Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -105016,7 +106095,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "0cf835a5f68f38308ae29be8f45d5373fefecf38933aee3f8dfdbb5f1a756874",
           "issue_codes": [],
           "warning_codes": []
@@ -105350,7 +106429,7 @@
       "verification_started_at": "2026-09-07T22:08:17.836Z",
       "publish_ready_at": "2026-09-07T22:08:26.896Z",
       "news_status": "developing",
-      "deepening_due_at": "2026-09-09T05:00:00.000Z",
+      "deepening_due_at": null,
       "evidence_groups": {
         "groups": [
           [
@@ -105854,9 +106933,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "657be3f61c7fe623e9f97a38a120c618157f6df7356c90221c665964e2c0005c",
-        "checked_at": "2026-09-08T20:51:52.093Z",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T02:51:52.093Z",
+        "expires_at": "2026-09-09T17:37:19.505Z",
         "sources": [
           {
             "source_id": "stern-schlagzeilen",
@@ -106058,227 +107137,7 @@
           }
         ]
       },
-      "deepening_checks": 2,
-      "pending_update": {
-        "detected_at": "2026-09-09T05:06:53.221Z",
-        "content_hash": "55b3eedd957cd0388b644ffbb1ff482a66884a9b6d69f087b1c317846144cb02",
-        "sources": [
-          {
-            "source_id": "stern-schlagzeilen",
-            "publisher": "stern",
-            "url": "https://www.stern.de/gesellschaft/regional/berlin-brandenburg/anschlaege-auf-stromleitungen--21-sprengsaetze-an-stromleitungen-entdeckt-und-entschaerft-38215186.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T09:21:15.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Gesellschaft",
-            "content_hash": "fef3fe488ba51128bf53e8481a8779514970f3a25937895da5cb5b0960e4e633",
-            "source_item_id": "b07eaa1d3520625fa16435a915e810cb9c32a3ba5a278a91d3aef5686a5a6a8b",
-            "publisher_id": "stern",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T09:21:15.000Z",
-            "ingested_at": "2026-09-07T09:36:56.459Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:stern",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/berlin/dpa-anschlage-auf-stromleitungen-16026020.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T09:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "2768dde59345a2103e05cc0db5e61234abf2a34d73e85bbc24940947363f70ec",
-            "source_item_id": "48be06491d2ddcbced89013cc54ca30fb3bd7b884b3d90a7fc20e46735606152",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T09:22:14.000Z",
-            "ingested_at": "2026-09-07T09:36:56.459Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-anschlage-auf-stromleitungen-16026020.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze in Sachsen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T09:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "865c0dff526357e2156706bc4b9b6e85f9f421612c857532a947f826d8e218c0",
-            "source_item_id": "0b9acfc150020fff2f140d46103c9e4347f164e1949eccd83fefb209026dd591",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T09:22:14.000Z",
-            "ingested_at": "2026-09-07T10:21:55.886Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "tagesspiegel-home",
-            "publisher": "Der Tagesspiegel",
-            "url": "https://www.tagesspiegel.de/politik/dpa-anschlage-auf-stromleitungenneun-weitere-sprengsatze-in-sachsen-entdeckt-und-entscharft-16026020.html",
-            "title": "Anschläge auf Stromleitungen: Neun weitere Sprengsätze in Sachsen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T09:22:14.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Politik",
-            "content_hash": "0894397670439ef605d397f8d534f236fb972111ab535b1611bb97dd583a8959",
-            "source_item_id": "51b5e6cacae86b5a7f05ed96c87ef28517228e7a65f969823d96f065e6e48827",
-            "publisher_id": "tagesspiegel",
-            "publisher_kind": "journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "Berlin"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T09:22:14.000Z",
-            "ingested_at": "2026-09-07T12:51:36.383Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:tagesspiegel",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-21-sprengsaetze-an-stromleitungen-entdeckt-und-entschaerft/100252553.html",
-            "title": "Anschläge auf Stromleitungen: 21 Sprengsätze an Stromleitungen entdeckt und entschärft",
-            "summary": "Mehr als 21 Sprengsätze wurden an Hochspannungsleitungen in Sachsen entdeckt – die Polizei bittet um Hinweise. Ein 48-Jähriger wird wegen Sabotage am Stromnetz gesucht.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-07T10:52:31.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "3799727fff504263a9dcf36e6f14d1accc5bbf550d1ae94a32fe56c04e688c61",
-            "source_item_id": "9dee1ab53b694cd815c0b4f2c832f8e278a4d5d0428201ec22be8cc73616892e",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-07T10:52:31.000Z",
-            "ingested_at": "2026-09-07T11:06:42.503Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          },
-          {
-            "source_id": "wiwo-schlagzeilen",
-            "publisher": "WirtschaftsWoche",
-            "url": "https://www.wiwo.de/unternehmen/energie/anschlaege-auf-stromleitungen-21-sprengsaetze-in-sachsen-entdeckt/100252553.html",
-            "title": "Anschläge auf Stromleitungen: Polizei findet weitere Sprengsätze und Bekennerschreiben",
-            "summary": "Die Sabotage-Serie an Hochspannungsleitungen beschäftigt die Polizei. Der Tatverdächtige konnte bislang nicht gefunden werden – dafür aber ein Bekennerschreiben.",
-            "source_type": "media_rss",
-            "published_at": "2026-09-08T08:45:00.000Z",
-            "primary_source": false,
-            "source_priority": 0,
-            "source_topic": "Wirtschaft",
-            "content_hash": "2862546a9bfbab4d48df9550eac129548e45ef8ed273df6b7617ce4ef7b2e442",
-            "source_item_id": "b7b337736022a15ca6b1a50cca56585097a20df0410136b4276915794ce75f33",
-            "publisher_id": "wirtschaftswoche",
-            "publisher_kind": "specialist_journalism",
-            "source_role": "journalistic_report",
-            "language": "de",
-            "geography": [
-              "DE",
-              "international"
-            ],
-            "research_lane": "media",
-            "requires_corroboration": false,
-            "source_published_at": "2026-09-08T08:45:00.000Z",
-            "ingested_at": "2026-09-08T10:07:26.127Z",
-            "agency_origin": "unknown",
-            "agency_origin_confidence": "unknown",
-            "provenance": {
-              "origin": "publisher:wirtschaftswoche",
-              "basis": "publisher_only_origin_unverified",
-              "independence_established": false
-            }
-          }
-        ],
-        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
-        "quality_errors": [],
-        "quality_retry_count": 0,
-        "quality_retry_after": null,
-        "reassessment": false,
-        "fresh": false,
-        "consolidation": false,
-        "source_integrity": {
-          "status": "verified",
-          "publication_status": "eligible",
-          "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
-          "fingerprint": "4c111c9d08a65b529e2ebb333ff9d40336656c0351cd11ad8fc5235d3e901564",
-          "issue_codes": [],
-          "warning_codes": []
-        }
-      }
+      "deepening_checks": 3
     },
     {
       "story_id": "wt-f28df6ca278ec0c7",
@@ -109375,7 +110234,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "4390b4f201ef538d060bc1f911b1cecca12d93fece508aebb0caa59b3a184f7e",
           "issue_codes": [],
           "warning_codes": []
@@ -113390,7 +114249,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "bf13a7f374d10f85b461fb9296e2f38f6a9447be2de24368ffbdee24003f0460",
           "issue_codes": [],
           "warning_codes": []
@@ -117383,9 +118242,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "560d363cdd017c4a692ca02b042420aa4aaa09b4dc45a423ff2633b3dfc29599",
-        "checked_at": "2026-09-09T11:12:49.530Z",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T17:12:49.530Z",
+        "expires_at": "2026-09-09T17:37:19.505Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -212956,7 +213815,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -257350,7 +258209,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T11:12:49.530Z",
+          "checked_at": "2026-09-09T11:37:19.505Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -294011,6 +294870,56 @@
               }
             }
           ]
+        },
+        {
+          "version": 1,
+          "at": "2026-09-09T11:37:19.505Z",
+          "retained_urls": [
+            "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+            "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+            "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+            "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+            "https://www.ndr.de/nachrichten/info/das-erbe-nach-9-11-deutschland-nach-anschlaegen-in-usa,pearl-harburg-100.html",
+            "https://www.ardmediathek.de/video/Y3JpZDovL25kci5kZS9wcm9wbGFuXzE5NjM4Nzc1M19nYW56ZVNlbmR1bmc",
+            "https://www.stern.de/panorama/donald-trump-luegt-darueber--dass-er-an-9-11-gerettet-wurde-38224984.html",
+            "https://www.zdfheute.de/politik/ausland/9-11-world-trade-center-trump-usa-verschwoerungstheorien-100.html",
+            "https://www.stern.de/politik/ausland/11--september-2001-in-notrufen---die-frischluft-ist-bald-zu-ende--30702522.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+              "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+              "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-04T11:02:58.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+              "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-04T11:02:58.000Z",
+              "ingested_at": "2026-09-09T07:21:53.878Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
         }
       ],
       "first_seen": "2026-09-09T04:00:00.000Z",
@@ -294046,7 +294955,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T04:00:00.000Z",
-          "ingested_at": "2026-09-09T11:07:22.757Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -294078,7 +294987,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T01:44:22.000Z",
-          "ingested_at": "2026-09-09T11:07:22.757Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -294111,7 +295020,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T18:04:29.000Z",
-          "ingested_at": "2026-09-09T11:07:22.757Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -294176,7 +295085,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T05:15:11.000Z",
-          "ingested_at": "2026-09-09T11:07:22.757Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -294209,7 +295118,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T11:49:17.000Z",
-          "ingested_at": "2026-09-09T11:07:22.757Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -294275,7 +295184,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T08:35:00.000Z",
-          "ingested_at": "2026-09-09T11:07:22.757Z",
+          "ingested_at": "2026-09-09T11:37:19.505Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -294370,7 +295279,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-02",
@@ -294390,7 +295299,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-03",
@@ -294410,7 +295319,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-04",
@@ -294430,7 +295339,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-05",
@@ -294450,7 +295359,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-06",
@@ -294470,7 +295379,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-07",
@@ -294490,7 +295399,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-08",
@@ -294510,7 +295419,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-09",
@@ -294530,7 +295439,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         },
         {
           "claim_id": "wt-990631d7dc3586cb-claim-10",
@@ -294550,7 +295459,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T11:12:49.530Z"
+          "checked_at": "2026-09-09T11:37:19.505Z"
         }
       ],
       "content_hash": "7eb44acec98cad35384374718777d4f12f2d767ad447112c7f02b0e824eea3ba",
@@ -294565,7 +295474,7 @@
       "fresh": false,
       "pending_reason": "SOURCE_INTEGRITY_OPEN",
       "versions": [],
-      "updated_at": "2026-09-09T11:12:49.530Z",
+      "updated_at": "2026-09-09T11:37:19.505Z",
       "event_first_seen_at": "2026-09-09T04:22:21.997Z",
       "event_detected_at": "2026-09-09T04:22:21.997Z",
       "event_id": "event-4282989facaefbf32544",
@@ -294603,20 +295512,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 56.8255,
+        "source_age_minutes": 81.32508333333334,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 410.45888333333335,
+        "queue_age_minutes": 434.95846666666665,
         "target_publication_minutes": 120,
-        "news_freshness_score": 88,
+        "news_freshness_score": 83,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "open",
         "publication_status": "hold",
         "version": "1.0",
-        "checked_at": "2026-09-09T11:12:49.530Z",
+        "checked_at": "2026-09-09T11:37:19.505Z",
         "fingerprint": "f293c0bd597ca4870580846289ff10e218b8d87420fe13caaa770a4a65763a83",
         "issue_codes": [
           "SOURCE_PUBLISHER_URL_MISMATCH"
