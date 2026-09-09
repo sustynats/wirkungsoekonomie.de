@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-09T08:52:20.295Z",
+  "last_successful_run": "2026-09-09T09:06:56.077Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -54930,8 +54930,8 @@
     }
   },
   "pending_story_ids": [
+    "wt-990631d7dc3586cb",
     "wt-6a90771161f2b4bb",
-    "wt-5d9f4bf00c16b314",
     "wt-a476c80927696c20",
     "wt-37084d67c3ea1520",
     "wt-bcac83440a73a81d",
@@ -54940,12 +54940,9 @@
     "wt-3e258fc08f00f85e",
     "wt-4aea16c2546f2bd2",
     "wt-4409a2f6e240d133",
-    "wt-a0703aa9051cf40d",
-    "wt-dc2a1dc727ed2b66",
     "wt-3707b0d66087698b",
     "wt-b84af952fb761238",
     "wt-29efb90c51d5b3f7",
-    "wt-0fb6fe60049ce82c",
     "wt-6222b0ef3b2ae801",
     "wt-cb6944882f826542",
     "wt-002ef3a7bb1a5ae1",
@@ -54957,7 +54954,6 @@
     "wt-3832ac28950296cb",
     "wt-46e6bd810843b8fe",
     "wt-05ffa4fef8bee914",
-    "wt-78b8df2827ab4527",
     "wt-de413d33343f350b",
     "wt-8802c617d5bb3e85",
     "wt-12227eeecd48c0b9",
@@ -54968,11 +54964,10 @@
     "wt-ad9bd6cd53ef7715",
     "wt-3de38f5a311ccd32",
     "wt-86ea1ddfd89beabf",
-    "wt-a5874ae28ed5533f",
-    "wt-990631d7dc3586cb"
+    "wt-a5874ae28ed5533f"
   ],
   "relevance_filter_version": "4.0",
-  "last_attempted_run": "2026-09-09T08:52:20.295Z",
+  "last_attempted_run": "2026-09-09T09:06:56.077Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1614,
@@ -55544,11 +55539,13 @@
     },
     "44fff534fd971dd1752f59b5ca8771d82f0c52d6f6f8be269bd584e73816f652": {
       "version": "bundestag-hib-date-v1",
-      "status": "open",
+      "parser_revision": 2,
+      "status": "verified",
       "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1211026",
       "fingerprint": "04597a1cbfc5b552dfc7d7b565ea20ab07b7e703cbc416947b5c72a6cc8db451",
-      "checked_at": "2026-09-09T08:22:03.686Z",
-      "retry_after": "2026-09-09T09:22:03.686Z"
+      "checked_at": "2026-09-09T09:06:56.077Z",
+      "published_at": "2026-09-09",
+      "published_precision": "day"
     },
     "6dd357baac0200f9d25b227df2eeabd83de0b18ddfb9ed942d68eb70e6db70c4": {
       "version": "bundestag-hib-date-v1",
