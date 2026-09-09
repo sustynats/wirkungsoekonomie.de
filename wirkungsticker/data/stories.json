@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T19:04:06.352Z",
+  "updated_at": "2026-09-09T19:18:03.789Z",
   "stories": [
     {
       "story_id": "wt-63cb95e544d260ce",
@@ -76,7 +76,7 @@
       },
       "media_impact": null,
       "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-09T19:02:51.906Z",
+      "media_checked_at": "2026-09-09T19:18:03.789Z",
       "editorial_analysis": {
         "analysis_id": "woek-analysis-7db837acf47c",
         "slug": "generaldebatte-deutschland-braucht-mehr-als-einen-gewonnenen-schlagabtausch",
@@ -86,13 +86,13 @@
         "updated_at": "2026-09-09T19:04:06.352Z"
       },
       "first_seen": "2026-09-09T06:55:00.000Z",
-      "last_updated": "2026-09-09T19:02:51.906Z",
+      "last_updated": "2026-09-09T19:18:03.789Z",
       "version": 1,
       "news_status": "developing",
       "event_id": "event-fb15832cf9ba10b84c83",
       "case_file": null,
       "source_published_at": "2026-09-09T00:00:00.000Z",
-      "published_at": "2026-09-09T19:02:51.906Z",
+      "published_at": "2026-09-09T19:18:03.789Z",
       "evidence_groups": {
         "groups": [
           [
@@ -118,7 +118,7 @@
           "expected_by_evidence_hash": null,
           "followup_id": "followup-c65bc589299d970b",
           "announced_at": "2026-09-09T07:00:00.000Z",
-          "follow_up_date": "2026-09-16T19:02:51.906Z",
+          "follow_up_date": "2026-09-16T19:18:03.789Z",
           "status": "scheduled"
         }
       ],
@@ -143,6 +143,182 @@
           "source_type": "official_rss",
           "published_at": "2026-09-09",
           "primary_source": true
+        }
+      ]
+    },
+    {
+      "story_id": "wt-c46eaf3fa3e1d9ce",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-29bf4b29029ac0a3-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-095a5340f6bd5fa5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-c46eaf3fa3e1d9ce-d8e963e1b49eb81b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt-swr-meldet-zwei-festnahmen-e1d9ce",
+      "title": "Autobahn in die Schweiz wegen Polizei-Einsatzes gesperrt - SWR meldet zwei Festnahmen",
+      "source_summary": "In Baden-Württemberg ist die Autobahn A861 in die Schweiz am Mittwoch wegen eines polizeilichen Einsatzes vollständig gesperrt worden. Laut der vorliegenden Meldung war die Strecke in beiden Fahrtrichtungen nicht befahrbar. Als Begründung wird ein polizeilicher Einsatz genannt; weitere Details sind in der Quelle nicht belegt.\n\nDie Meldung verweist außerdem auf eine weitere Information des SWR: Danach sollen zwei Männer festgenommen worden sein. Ob ein Sprengstoffverdacht bestätigt wurde, wie lange die Sperrung dauerte und wie der Einsatz endete, bleibt in der gelieferten Quelle offen.",
+      "summary": "Die A861 in die Schweiz war am Mittwoch wegen eines Polizeieinsatzes gesperrt. Nach SWR-Informationen gab es zwei Festnahmen; weitere Details bleiben offen.",
+      "detail_summary": "Die Meldung beschreibt eine akute Störung auf einer grenzüberschreitenden Verkehrsverbindung. Belegt sind die Vollsperrung der A861 in beide Richtungen und zwei Festnahmen nach SWR-Informationen. Offen bleibt, was den Einsatz ausgelöst hat und ob ein Sprengstoffverdacht bestätigt wurde. Für die Einordnung reicht die Quelle nur als erster, noch nicht abgesicherter Zwischenstand. Relevanz entsteht vor allem durch die unmittelbare Unterbrechung von Verkehr und möglicher Sicherheitsbezug. Ein Wirkungsschluss über Folgen, Dauer oder Verantwortung ist mit der gelieferten Evidenz noch nicht belastbar.",
+      "why_relevant": "Die Meldung betrifft eine grenzüberschreitende Autobahn, akute Verkehrsstörung und einen möglichen Sicherheitsvorfall. Das ist materiell wegen Reichweite, unmittelbarer Unterbrechung und offenem Gefahrenbezug.",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Sperrung unterbricht kurzfristig Mobilität, Zugang und Planung für Verkehrsteilnehmende. Ein möglicher Sicherheitsvorfall erhöht das Risiko für Verzögerungen, Umleitungen und Belastungen für Einsatzkräfte. Die konkrete Ursache bleibt offen.",
+          "positive_path": {
+            "mechanism": "Falls der Einsatz eine Gefahr schnell begrenzt, kann die Sperrung Menschen vor unmittelbarem Schaden schützen und den Verkehrsraum sichern.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Die Vollsperrung stoppt den Verkehrsfluss, verzögert Reisen und kann Pendelnde, Reisende und Einsatzkräfte belasten.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Zur Umweltwirkung gibt es in der Quelle keine belastbaren Angaben. Allenfalls können Umleitungen kurzzeitig Emissionen verändern, aber das bleibt unbelegt.",
+          "positive_path": {
+            "mechanism": "Keine belastbare positive Umweltwirkung aus der Quelle ableitbar.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Umleitungen und Staus können lokal zusätzlichen Kraftstoffverbrauch und Emissionen auslösen, falls sie eintreten.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keinen hinreichend belegten Bezug zu demokratischen Verfahren oder institutionellen Entscheidungen. Ein Sicherheits- und Verkehrsereignis allein begründet noch keine demokratische Wirkung.",
+          "positive_path": {
+            "mechanism": "Kein belastbarer demokratischer Wirkungspfad aus der Quelle belegbar.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Ein möglicher Sicherheitsvorfall kann zwar öffentliche Aufmerksamkeit binden, aber eine demokratische Zustandsänderung ist hier nicht belegt.",
+            "source_ids": [
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "unternehmen",
+          "beschaeftigte",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T18:49:47.382Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T18:25:40.000Z",
+      "last_updated": "2026-09-09T18:57:09.160Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-7a13c31e7ec6e441b385",
+      "case_file": null,
+      "source_published_at": "2026-09-09T18:25:40.000Z",
+      "published_at": "2026-09-09T18:57:09.160Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob die Sperrung aufgehoben wurde, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Status der Sperrung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-107195cd3fdea325",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob der Sprengstoffverdacht bestätigt wurde, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung oder Entkräftung des Verdachts",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-905d4641626b36ef",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Festnahmen Bestand haben, ist offen.",
+          "source_id": "stern-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Bestätigung der Festnahmen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-037cb5a6ff0cfe6d",
+          "announced_at": "2026-09-09T18:25:40.000Z",
+          "follow_up_date": "2026-09-16T18:57:09.160Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/news/autobahn-in-die-schweiz-wegen-polizei-einsatzes-gesperrt---swr-meldet-zwei-festnahmen-38229310.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T18:25:40.000Z",
+          "primary_source": false
         }
       ]
     },
@@ -7388,9 +7564,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0703aa9051cf40d-093673101187167c-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0703aa9051cf40d-f003ec44a52e6329-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0703aa9051cf40d-e645766a0f1b5970-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "krieg-funf-todesoper-bei-neuen-russischen-luftangriffen-auf-kiew-1cf40d",
@@ -9039,12 +9225,25 @@
     {
       "story_id": "wt-d2fe68062d8518b6",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d2fe68062d8518b6-905cfe6e7c7179c5-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d2fe68062d8518b6-97d50bc1a299704d-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d2fe68062d8518b6-bc0de012183efaf7-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-d2fe68062d8518b6-fbb4a3b0464f5019-source.png"
         }
       },
       "slug": "welt-bericht-details-zur-geplanten-steuer-reform-bei-kryptowerten-wie-dem-bitcoin-werden-8518b6",
@@ -9169,9 +9368,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6222b0ef3b2ae801-14b1ad68722b09cd-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6222b0ef3b2ae801-ed2a3f977f719447-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-6222b0ef3b2ae801-a3586fc0d19ce773-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "newsblog-zur-landtagswahl-in-sachsen-anhalt-wachsender-zuspruch-fur-bsw-vorschlag-zu-una-2ae801",

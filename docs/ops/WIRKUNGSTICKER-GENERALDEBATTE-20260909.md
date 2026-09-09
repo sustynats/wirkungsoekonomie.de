@@ -33,3 +33,9 @@ Lokale Abnahme vor Zusammenführung mit dem laufenden Ticker:
 - Browserprüfung Desktop 1440 px, Mobil 390 px und 320 px: keine Browserfehler, kein horizontaler Seitenüberlauf, runde Autorinnenabbildung; Tabellen, Kaskaden und Meinungsteil visuell geprüft. Alle sechs Navigationsgruppen führen zu vorhandenen Ankern. Übersicht → Analyse → Ursprungsnachricht und Rückverlinkung geprüft. Linkvorschau visuell geprüft.
 
 Publikation über den bestehenden seriellen GitHub-Pages-Prozess. Kein Vercel-Build, keine Tarifänderung und kein Eingriff in den laufenden Nachrichtenbetrieb. Die allgemeine MPD-Bewertungsgegenstand-Diagnose bleibt ein gesonderter offener Auftrag und wird durch diesen Beitrag nicht als global behoben ausgewiesen.
+
+## Abgleich mit der Abendausgabe
+
+Vor dem Push wurde `def24048273a3a159ae62fc13bd9404e5340d317` aus dem laufenden Ticker übernommen. Dessen zusätzliche Meldungen, Kosten- und Queue-Daten bleiben erhalten. Der Generaldebatten-Entwurf war weiter unveröffentlicht; geändert hatten sich Abruf-/Retry-Metadaten, der Zeitstempel des bereits geprüften Deutschlandfunk-Textes und ein nicht als Beleg verwendeter Spiegel-Indexeintrag. Der unveränderte Bundestagsbeleg und die drei redaktionell geprüften Quellen bleiben die Publikationsbasis. Der Entwurfs-Review ist nach diesem Vergleich an den neuen Eingangs-Hash gebunden und durchläuft erneut dieselben Gates. Kein pauschales Auflösen kanonischer Konflikte zugunsten älterer Daten.
+
+Nach Zusammenführung: erneut 760/760 Tests erfolgreich, Quellenintegrität 216/216 aktive Veröffentlichungen ohne Hold, Nachrichten-/Such-/Taxonomie-Build und Nachrichtenvalidierung erfolgreich. Alle 1.108 Queue-Datensätze des aktuellen Workers bleiben erhalten; nur der beauftragte Generaldebatten-Entwurf wird redaktionell zur Veröffentlichung überführt. Usage-, State- und Newsroom-Dateien sind bytegleich zum Worker-Stand.
