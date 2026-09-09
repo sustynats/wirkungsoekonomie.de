@@ -1,7 +1,152 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T20:47:21.772Z",
+  "updated_at": "2026-09-09T21:16:17.320Z",
   "stories": [
+    {
+      "story_id": "wt-022ed1263eac1645",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-022ed1263eac1645-bde6806a1b62be11-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-022ed1263eac1645-3cc164a5274117c7-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-022ed1263eac1645-2e74daca931dfcb5-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "droge-mussen-antrag-zum-afd-verbot-einbringen-ac1645",
+      "title": "Dröge: \"Müssen Antrag zum AfD-Verbot einbringen\"",
+      "source_summary": "In der Generaldebatte im Bundestag fordert die Grünen-Politikerin Dröge laut ZDFheute, einen Antrag zum AfD-Verbot einzubringen. Die Quelle ordnet das als Äußerung im laufenden Schlagabtausch ein; ein Beschluss oder ein formales Verfahren ist daraus nicht belegt.\n\nZusätzlich wird Dröge mit dem Satz zitiert, es müsse dringend gehandelt werden, und mit dem Hinweis auf eine Strategie „gegen die Wut“. Offene Punkte bleiben der genaue politische Anschluss, der Verfahrensstand und die Frage, ob daraus ein konkreter Antrag wird.",
+      "summary": "Dröge fordert in der Generaldebatte einen Antrag zum AfD-Verbot. Belegt ist zunächst nur die politische Forderung, nicht ein Verfahren oder Beschluss.",
+      "detail_summary": "Die Meldung dokumentiert eine politische Zuspitzung in der Generaldebatte des Bundestags. Dröge wird mit der Forderung zitiert, einen Antrag zum AfD-Verbot einzubringen. Das ist ein Nachrichtenkern über eine öffentliche Position, nicht über eine bereits getroffene Entscheidung.\n\nFür die Relevanz spricht der Bezug zur parlamentarischen Debatte und zur Verfassungsschutz- und Demokratiefrage. Der mögliche Wirkpfad liegt in der weiteren politischen Mobilisierung, der Fraktionsdisziplin und möglichen Folgeschritten im Verfahren. Eine eingetretene Wirkung ist nicht belegt. Offen bleiben der konkrete Antrag, eine Mehrheitslage und jede rechtliche Prüfung.",
+      "why_relevant": "Öffentliche Forderung in der Bundestagsdebatte mit möglichem parlamentarischem Folgewirkpfad; noch kein Beschluss, aber ein klarer politischer Anlass.",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Aussage kann politische Klärung und institutionelle Prüfung anstoßen, sie kann aber zugleich Polarisierung und Konflikt verstärken. Für Mensch betrifft das vor allem Sicherheit, Schutz vor Gewalt und gesellschaftliche Spannungen; eingetretene Folgen sind nicht belegt.",
+          "positive_path": {
+            "mechanism": "Ein öffentlicher Prüf- und Antragsimpuls kann eine formale Auseinandersetzung über Schutz von Betroffenen und verfassungsrechtliche Grenzen auslösen.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Die zugespitzte Verbotsforderung kann Fronten verhärten und Konflikte im politischen Raum verstärken, ohne dass daraus schon ein Schutzgewinn folgt.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Im gelieferten Material fehlt ein belastbarer Bezug zu Umwelt-, Klima- oder Ressourceneffekten. Ein Wirkpfad auf den Planeten ist hier nicht erkennbar.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Forderung berührt demokratische Korrekturfähigkeit, Rechtsstaatlichkeit und politische Auseinandersetzung. Ob sie eher stärkt oder spaltet, hängt vom weiteren Verfahren, der Begründung und der öffentlichen Aufnahme ab.",
+          "positive_path": {
+            "mechanism": "Ein Antrag kann parlamentarische Prüfung, Rechenschaft und eine formalisierte demokratische Klärung über Grenzen politischer Betätigung fördern.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Die Verbotsforderung kann als Eskalation im Parteienstreit wirken und die politische Polarisierung verstärken, wenn sie ohne tragfähige Mehrheits- und Rechtsgrundlage bleibt.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T21:16:17.320Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T08:55:00.000Z",
+      "last_updated": "2026-09-09T21:23:57.794Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-60c562f015b846c64528",
+      "case_file": null,
+      "source_published_at": "2026-09-09T08:55:00.000Z",
+      "published_at": "2026-09-09T21:23:57.794Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob und wann tatsächlich ein Antrag zum AfD-Verbot eingebracht wird.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "eingebrachter Antrag, Datum, zuständiges Gremium",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b95e5296c8a866db",
+          "announced_at": "2026-09-09T08:55:00.000Z",
+          "follow_up_date": "2026-09-16T21:23:57.794Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob weitere Fraktions- oder Koalitionsstimmen die Forderung aufgreifen.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "öffentlich bestätigte Anschlussreaktionen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-c669b6b9607a649f",
+          "announced_at": "2026-09-09T08:55:00.000Z",
+          "follow_up_date": "2026-09-16T21:23:57.794Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/video/zdfheute-live/droege-generaldebatte-bundestag-rede-video-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T08:55:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-6000b2fabc397176",
       "title_image": {
