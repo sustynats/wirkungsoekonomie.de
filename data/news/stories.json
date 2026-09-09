@@ -1,8 +1,146 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-09T00:22:10.289Z",
-  "updated_at": "2026-09-09T01:52:17.987Z",
+  "updated_at": "2026-09-09T02:06:52.907Z",
   "stories": [
+    {
+      "story_id": "wt-3fa285ab78162ca3",
+      "slug": "keine-staatlichen-vorrate-kritischer-rohstoffe-162ca3",
+      "title": "Keine staatlichen Vorräte kritischer Rohstoffe",
+      "first_seen": "2026-09-09T02:06:52.907Z",
+      "last_updated": "2026-09-09T02:06:52.907Z",
+      "topic": [
+        "Energie",
+        "Wirtschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "bundestag-wirtschaft",
+          "publisher": "Deutscher Bundestag - Wirtschaft und Energie",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1206216",
+          "title": "Keine staatlichen Vorräte kritischer Rohstoffe",
+          "summary": "Wirtschaft und Energie/Antwort Deutschland hält derzeit keine staatlichen oder im staatlichen Auftrag gehaltenen Vorräte kritischer oder strategischer Rohstoffe. Das antwortet die Bundesregierung auf AfD-Anfrage.",
+          "source_type": "official_rss",
+          "published_at": "2026-08-27",
+          "published_precision": "day",
+          "publication_date_evidence": {
+            "version": "bundestag-hib-date-v1",
+            "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1206216",
+            "checked_at": "2026-09-09T02:06:52.907Z",
+            "fingerprint": "e3116f8dabd0f3171d19bd68b8636fa081097037756d16d7589082ccd486bc21"
+          },
+          "primary_source": true,
+          "source_priority": 90,
+          "source_topic": "Wirtschaft",
+          "content_hash": "727c8b89adf17c660cc054adff79e6cdfe9ef0d707fca90730e6528b99a903f5",
+          "source_item_id": "c8013aa075b444c2a895a463041ead373cf9006b5594db4e5394e45c49f96798",
+          "publisher_id": "bundestag",
+          "publisher_kind": "institution",
+          "source_role": "institutional_statement",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "primary",
+          "requires_corroboration": false,
+          "source_published_at": "2026-08-27",
+          "ingested_at": "2026-09-07T13:35:44.462Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-3fa285ab78162ca3-claim-01",
+          "story_id": "wt-3fa285ab78162ca3",
+          "claim": "Keine staatlichen Vorräte kritischer Rohstoffe: Wirtschaft und Energie/Antwort Deutschland hält derzeit keine staatlichen oder im staatlichen Auftrag gehaltenen Vorräte kritischer oder strategischer Rohstoffe. Das antwortet die Bundesregierung auf AfD-Anfrage.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "bundestag-wirtschaft",
+          "source_function": "institutional_statement",
+          "status": "primary_source_claim",
+          "provenance": {
+            "origin": "publisher:bundestag",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Primärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T02:06:52.907Z"
+        }
+      ],
+      "content_hash": "cf2c6260cc1af0ef6a77a31df170f5e1ee3a9b21ed5bb89b00bcf56cd7dc9481",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": false,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T02:06:52.907Z",
+      "event_first_seen_at": "2026-09-09T02:06:52.907Z",
+      "event_detected_at": "2026-09-09T02:06:52.907Z",
+      "event_id": "event-3760409fe5600a297535",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Wirtschaft"
+        ],
+        "dimensions": [
+          "Planet"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 18846.881783333334,
+        "detection_delay_minutes": 18846.881783333334,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 0,
+        "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T02:06:52.907Z",
+        "fingerprint": "8fb680e5dd2b36ec144395ca479e0e4bc8cfbc65af74d3e3b0aa01895d2ce630",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-58497842d8da5fbe",
       "slug": "drei-tote-bei-zusammenstoss-todliche-kollision-urteil-in-mordprozess-erwartet-da5fbe",
@@ -66,7 +204,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         }
       ],
       "content_hash": "02e94e77815c194c5e2c9923351cf6b2ca8387b73ea932cbcbebcdca4dcf9246",
@@ -81,7 +219,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T01:52:17.987Z",
+      "updated_at": "2026-09-09T02:06:52.907Z",
       "event_first_seen_at": "2026-09-09T01:37:14.597Z",
       "event_detected_at": "2026-09-09T01:37:14.597Z",
       "event_id": "event-4d1eb4d3fb782ee51faf",
@@ -116,20 +254,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 22.183116666666667,
+        "source_age_minutes": 36.765116666666664,
         "detection_delay_minutes": 7.126616666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 15.0565,
+        "queue_age_minutes": 29.6385,
         "target_publication_minutes": 120,
-        "news_freshness_score": 95,
+        "news_freshness_score": 92,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "fingerprint": "e12ede479bf7e6dc14aca69b54d667270bcefd357cea0081b8e6b88a4c3013f6",
         "issue_codes": [],
         "warning_codes": []
@@ -239,7 +377,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         },
         {
           "claim_id": "wt-bd410136bb400bcb-claim-02",
@@ -259,7 +397,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         }
       ],
       "content_hash": "713d4dd384536a34f7a94bc2a5bacfa4398148b4a7e329db349f6dcbe216a647",
@@ -274,7 +412,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T01:52:17.987Z",
+      "updated_at": "2026-09-09T02:06:52.907Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-4115d1c8b7b41d981c8c",
@@ -307,20 +445,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 15.899783333333334,
+        "source_age_minutes": 30.481783333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 825.5207333333333,
+        "queue_age_minutes": 840.1027333333334,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "fingerprint": "ce11a485ad27cd1902db1ce24ee7886675fdaf06e180aadf219a94f9f8ba4360",
         "issue_codes": [],
         "warning_codes": []
@@ -389,7 +527,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         }
       ],
       "content_hash": "527c871387449f4f9cce81e9f1a58f4ec152c5e41836339f61621bf09564eca5",
@@ -404,7 +542,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T01:52:17.987Z",
+      "updated_at": "2026-09-09T02:06:52.907Z",
       "event_first_seen_at": "2026-09-09T01:07:03.528Z",
       "event_detected_at": "2026-09-09T01:07:03.528Z",
       "event_id": "event-56a34318e130bae30a62",
@@ -437,20 +575,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 15.899783333333334,
+        "source_age_minutes": 30.481783333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 45.24098333333333,
+        "queue_age_minutes": 59.82298333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 97,
+        "news_freshness_score": 94,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "fingerprint": "7461826c90d1f6f4def5430f6e8667d48c52e99546387bfba2b4988c8776b310",
         "issue_codes": [],
         "warning_codes": []
@@ -606,7 +744,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         },
         {
           "claim_id": "wt-0456ad2a9c0ad09d-claim-02",
@@ -626,7 +764,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         }
       ],
       "content_hash": "41b69903821861d0ff53a72cde44f1c2386d31b99525f56f359959801a7a1a45",
@@ -641,7 +779,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T01:52:17.987Z",
+      "updated_at": "2026-09-09T02:06:52.907Z",
       "event_first_seen_at": "2026-09-08T22:52:15.096Z",
       "event_detected_at": "2026-09-08T22:52:15.096Z",
       "event_id": "event-9e394f4254cfd55e6370",
@@ -677,20 +815,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 82.66645,
+        "source_age_minutes": 97.24845,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 180.04818333333333,
+        "queue_age_minutes": 194.63018333333332,
         "target_publication_minutes": 120,
-        "news_freshness_score": 83,
+        "news_freshness_score": 80,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "fingerprint": "50be7be2727a2f6da3d6157eb987cc35e4f98e3ec81ffe583e93dbba9896c564",
         "issue_codes": [],
         "warning_codes": []
@@ -5955,7 +6093,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         },
         {
           "claim_id": "wt-491857684cc65a88-claim-02",
@@ -5975,7 +6113,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         }
       ],
       "content_hash": "2d9cb211dfb8e58912859dcc9186cb3c699d8153f329158d2b2984382462dcc7",
@@ -5990,7 +6128,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T01:52:17.987Z",
+      "updated_at": "2026-09-09T02:06:52.907Z",
       "event_first_seen_at": "2026-09-09T00:51:49.494Z",
       "event_detected_at": "2026-09-09T00:51:49.494Z",
       "event_id": "event-535ab9d27abe1bcdee32",
@@ -6023,20 +6161,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 82.66645,
+        "source_age_minutes": 97.24845,
         "detection_delay_minutes": 22.191566666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 60.47488333333333,
+        "queue_age_minutes": 75.05688333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 83,
+        "news_freshness_score": 80,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "fingerprint": "008e3b6608e6be26364777fdd0c94d40fab8a9034d625d62e4a2c04a17b0abf0",
         "issue_codes": [],
         "warning_codes": []
@@ -31998,7 +32136,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T23:08:57.163Z"
+        "retry_after": "2026-09-09T02:22:18.750Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -32705,7 +32843,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T23:08:52.204Z"
+        "retry_after": "2026-09-09T02:22:14.381Z"
       },
       "ai_retry": {
         "version": "2026-09-06-throughput-3",
@@ -47224,7 +47362,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-08T22:52:17.984Z"
+        "retry_after": "2026-09-09T02:22:09.599Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -53830,7 +53968,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
@@ -53845,7 +53983,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T01:52:17.987Z",
+      "updated_at": "2026-09-09T02:06:52.907Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -53882,11 +54020,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1552.2997833333334,
+        "source_age_minutes": 1566.8817833333333,
         "detection_delay_minutes": 607.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 944.8643333333333,
+        "queue_age_minutes": 959.4463333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -53895,7 +54033,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [],
         "warning_codes": []
@@ -53970,7 +54108,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -53985,7 +54123,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T01:52:17.987Z",
+      "updated_at": "2026-09-09T02:06:52.907Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -54021,11 +54159,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1552.2997833333334,
+        "source_age_minutes": 1566.8817833333333,
         "detection_delay_minutes": 607.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 944.8643333333333,
+        "queue_age_minutes": 959.4463333333333,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -54034,7 +54172,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [],
         "warning_codes": []
@@ -73630,9 +73768,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T07:52:17.987Z",
+        "expires_at": "2026-09-09T08:06:52.907Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -89048,9 +89186,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-09T01:52:17.987Z",
+        "checked_at": "2026-09-09T02:06:52.907Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T07:52:17.987Z",
+        "expires_at": "2026-09-09T08:06:52.907Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -129487,6 +129625,49 @@
       "story_id": "wt-07f3870f32ae8662",
       "slug": "keine-staatlichen-vorrate-kritischer-rohstoffe-ae8662",
       "title": "Keine staatlichen Vorräte kritischer Rohstoffe",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-09T02:06:52.907Z",
+          "retained_urls": [
+            "https://www.bundestag.de/presse/hib/kurzmeldungen-1210692"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "bundestag-wirtschaft",
+              "publisher": "Deutscher Bundestag - Wirtschaft und Energie",
+              "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1206216",
+              "title": "Keine staatlichen Vorräte kritischer Rohstoffe",
+              "summary": "Wirtschaft und Energie/Antwort Deutschland hält derzeit keine staatlichen oder im staatlichen Auftrag gehaltenen Vorräte kritischer oder strategischer Rohstoffe. Das antwortet die Bundesregierung auf AfD-Anfrage.",
+              "source_type": "official_rss",
+              "published_at": null,
+              "primary_source": true,
+              "source_priority": 90,
+              "source_topic": "Wirtschaft",
+              "content_hash": "727c8b89adf17c660cc054adff79e6cdfe9ef0d707fca90730e6528b99a903f5",
+              "source_item_id": "c8013aa075b444c2a895a463041ead373cf9006b5594db4e5394e45c49f96798",
+              "publisher_id": "bundestag",
+              "publisher_kind": "institution",
+              "source_role": "institutional_statement",
+              "language": "de",
+              "geography": [
+                "DE"
+              ],
+              "research_lane": "primary",
+              "requires_corroboration": false,
+              "source_published_at": null,
+              "ingested_at": "2026-09-07T13:35:44.462Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:bundestag",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
       "first_seen": "2026-09-07T08:38:00.000Z",
       "last_updated": "2026-09-07T08:38:00.000Z",
       "topic": [
@@ -129532,38 +129713,6 @@
             "checked_at": "2026-09-09T01:52:17.987Z",
             "fingerprint": "e339101151c559e0ceff21243ea1589ced2738990cb68e2f100a9f8c3f1b0a2f"
           }
-        },
-        {
-          "source_id": "bundestag-wirtschaft",
-          "publisher": "Deutscher Bundestag - Wirtschaft und Energie",
-          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1206216",
-          "title": "Keine staatlichen Vorräte kritischer Rohstoffe",
-          "summary": "Wirtschaft und Energie/Antwort Deutschland hält derzeit keine staatlichen oder im staatlichen Auftrag gehaltenen Vorräte kritischer oder strategischer Rohstoffe. Das antwortet die Bundesregierung auf AfD-Anfrage.",
-          "source_type": "official_rss",
-          "published_at": null,
-          "primary_source": true,
-          "source_priority": 90,
-          "source_topic": "Wirtschaft",
-          "content_hash": "727c8b89adf17c660cc054adff79e6cdfe9ef0d707fca90730e6528b99a903f5",
-          "source_item_id": "c8013aa075b444c2a895a463041ead373cf9006b5594db4e5394e45c49f96798",
-          "publisher_id": "bundestag",
-          "publisher_kind": "institution",
-          "source_role": "institutional_statement",
-          "language": "de",
-          "geography": [
-            "DE"
-          ],
-          "research_lane": "primary",
-          "requires_corroboration": false,
-          "source_published_at": null,
-          "ingested_at": "2026-09-07T13:35:44.462Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:bundestag",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
         }
       ],
       "claims": [
@@ -129585,42 +129734,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
-        },
-        {
-          "claim_id": "wt-07f3870f32ae8662-claim-02",
-          "story_id": "wt-07f3870f32ae8662",
-          "claim": "Keine staatlichen Vorräte kritischer Rohstoffe: Wirtschaft und Energie/Antwort Deutschland hält derzeit keine staatlichen oder im staatlichen Auftrag gehaltenen Vorräte kritischer oder strategischer Rohstoffe. Das antwortet die Bundesregierung auf AfD-Anfrage.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "bundestag-wirtschaft",
-          "source_function": "institutional_statement",
-          "status": "primary_source_claim",
-          "provenance": {
-            "origin": "publisher:bundestag",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Primärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T01:52:17.987Z"
+          "checked_at": "2026-09-09T02:06:52.907Z"
         }
       ],
-      "content_hash": "b5e8e02b232c6e471be40daa3da60430d892190f7de2ba572455248a6d7c80a5",
+      "content_hash": "5e965bbef425b12832f3fc9122bf71422f670cef79d00dbad3ab788f94c450ed",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
       "quality_errors": [
-        "SOURCE_PUBLICATION_DATE_INVALID"
+        "AI_BUDGET_EXHAUSTED"
       ],
       "quality_retry_count": 0,
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "SOURCE_INTEGRITY_OPEN",
+      "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T01:52:17.987Z",
+      "updated_at": "2026-09-09T02:06:52.907Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -129656,24 +129785,22 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 2992.2997833333334,
+        "source_age_minutes": 3006.8817833333333,
         "detection_delay_minutes": 546.8893833333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2445.4104,
+        "queue_age_minutes": 2459.9924,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
-        "status": "open",
-        "publication_status": "hold",
+        "status": "verified",
+        "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T01:52:17.987Z",
-        "fingerprint": "a74ab4cc0c06f01e755ad0dba9a2966e3383ace8fbd9f9c680f1decc2031b09c",
-        "issue_codes": [
-          "SOURCE_PUBLICATION_DATE_INVALID"
-        ],
+        "checked_at": "2026-09-09T02:06:52.907Z",
+        "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
+        "issue_codes": [],
         "warning_codes": []
       }
     },
@@ -185352,7 +185479,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T01:52:17.987Z",
+          "checked_at": "2026-09-09T02:06:52.907Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -229746,7 +229873,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T01:52:17.987Z",
+          "checked_at": "2026-09-09T02:06:52.907Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"

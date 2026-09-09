@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-09T01:52:17.987Z",
+  "last_successful_run": "2026-09-09T02:06:52.907Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -51929,10 +51929,11 @@
     "wt-07f3870f32ae8662",
     "wt-3de38f5a311ccd32",
     "wt-86ea1ddfd89beabf",
-    "wt-a5874ae28ed5533f"
+    "wt-a5874ae28ed5533f",
+    "wt-3fa285ab78162ca3"
   ],
   "relevance_filter_version": "4.0",
-  "last_attempted_run": "2026-09-09T01:52:17.987Z",
+  "last_attempted_run": "2026-09-09T02:06:52.907Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1614,
@@ -52216,6 +52217,15 @@
       "fingerprint": "e339101151c559e0ceff21243ea1589ced2738990cb68e2f100a9f8c3f1b0a2f",
       "checked_at": "2026-09-09T01:52:17.987Z",
       "published_at": "2026-09-07",
+      "published_precision": "day"
+    },
+    "c8013aa075b444c2a895a463041ead373cf9006b5594db4e5394e45c49f96798": {
+      "version": "bundestag-hib-date-v1",
+      "status": "verified",
+      "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1206216",
+      "fingerprint": "e3116f8dabd0f3171d19bd68b8636fa081097037756d16d7589082ccd486bc21",
+      "checked_at": "2026-09-09T02:06:52.907Z",
+      "published_at": "2026-08-27",
       "published_precision": "day"
     }
   }
