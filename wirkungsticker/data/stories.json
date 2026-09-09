@@ -1,7 +1,319 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T15:59:40.828Z",
+  "updated_at": "2026-09-09T16:09:58.471Z",
   "stories": [
+    {
+      "story_id": "wt-50924fbe12d4ad5f",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50924fbe12d4ad5f-7ebd09364cbe4836-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50924fbe12d4ad5f-f49e1d941045ab52-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50924fbe12d4ad5f-d5449da56787ae1c-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50924fbe12d4ad5f-66d41f9b16f6f0bf-source.png"
+        }
+      },
+      "slug": "fliegerbombe-in-hamburg-bahrenfeld-evakuierung-lauft-zugverkehr-ruht-d4ad5f",
+      "title": "Fliegerbombe in Hamburg-Bahrenfeld: Evakuierung läuft, Zugverkehr ruht",
+      "source_summary": "In Hamburg-Bahrenfeld ist nach Angaben des NDR bei Bauarbeiten eine 500 Pfund schwere englische Fliegerbombe gefunden worden. Laut Bericht liegt der Blindgänger direkt am Bahnhof Diebsteich an der Schleswiger Straße; Feuerwehr und Kampfmittelräumdienst bereiten die Entschärfung vor.\n\nDer Bereich wird geräumt. Genannt werden ein Sperrradius von 400 Metern, mehrere Betriebe und Wohnhäuser im Räumungsbereich sowie ein Warnradius von 1.000 Metern. Betroffen ist auch der Bahnverkehr: S2, S3 und S5 fahren nicht zwischen Altona beziehungsweise Holstenstraße und Eidelstedt, Regionalzüge fallen aus, auch Fernverkehr ist unterbrochen. Wie lange die Entschärfung dauert, ist noch unklar.",
+      "summary": "In Hamburg-Bahrenfeld läuft nach einem Bombenfund eine Evakuierung, zugleich ist der Zugverkehr beeinträchtigt. Das ist als laufende Entwicklung relevant, weil Infrastruktur, Erreichbarkeit und der Schutz von Anwohnenden unmittelbar betroffen sind.",
+      "detail_summary": "Die Meldung beschreibt einen akuten Sicherheits- und Infrastrukturvorfall: Bei Bauarbeiten wurde in Hamburg-Bahrenfeld eine 500 Pfund schwere Fliegerbombe gefunden, der Bereich wird geräumt und der Bahnverkehr ist unterbrochen. Der Fall ist materiell relevant, weil mehrere Betriebe, Wohnhäuser und verschiedene Zugverbindungen betroffen sind. Der Wirkpfad führt über die Räumung und Sperrung zu einer kurzfristigen Zustandsänderung bei Mobilität, Erreichbarkeit und Nutzung des Umfelds. Mögliche Folge sind weitere Ausfälle, Umleitungen und Verzögerungen bis zur Entschärfung. Die Evidenzlage bleibt vorläufig, weil der Bericht nur eine journalistische Quelle nutzt und der zeitliche Ausgang der Entschärfung offen ist.",
+      "why_relevant": "Akute Evakuierung und Unterbrechung von S-, Regional- und Fernverkehr betreffen Sicherheit, Mobilität und mehrere Nutzergruppen zugleich.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Die Räumung und die Unterbrechung des Bahnverkehrs verschlechtern kurzfristig Sicherheit, Zugänglichkeit und Alltagsmobilität für Anwohnende, Beschäftigte und Reisende im betroffenen Bereich.",
+          "positive_path": null,
+          "negative_path": {
+            "mechanism": "Evakuierung, Sperrbereich und Zugausfälle unterbrechen Nutzung und Erreichbarkeit, bis die Bombe entschärft ist.",
+            "source_ids": [
+              "ndr-info"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Aus den Quellen ergibt sich keine belastbare Aussage zu Umwelt- oder Klimawirkungen über den Fund- und Einsatzort hinaus.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Meldung enthält keine Hinweise auf demokratische Entscheidungs-, Beteiligungs- oder Kontrollwirkungen.",
+          "positive_path": null,
+          "negative_path": null
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T16:09:58.471Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T15:57:37.000Z",
+      "last_updated": "2026-09-09T16:14:20.968Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-363b05fb538f1b5d4238",
+      "case_file": null,
+      "source_published_at": "2026-09-09T15:57:37.000Z",
+      "published_at": "2026-09-09T16:14:20.968Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Wann die Entschärfung abgeschlossen ist, bleibt offen.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "Meldung über Abschluss oder Fortgang der Entschärfung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-840591c9331a661d",
+          "announced_at": "2026-09-09T15:57:37.000Z",
+          "follow_up_date": "2026-09-16T16:14:20.968Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/hamburg/fliegerbombe-in-bahrenfeld-evakuierung-laeuft-zugverkehr-unterbrochen,blindgaenger-142.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:57:37.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-a0494b6e523f45ca",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0494b6e523f45ca-5eeb2112fd480c6f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0494b6e523f45ca-60ca463f843cfbb4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0494b6e523f45ca-8b29312e31853b88-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a0494b6e523f45ca-7bf5bf01ee3fcae3-source.png"
+        }
+      },
+      "slug": "eu-kommission-weniger-china-mehr-europa-eu-regelt-offentliche-auftrage-3f45ca",
+      "title": "EU-Kommission: Weniger China, mehr Europa – EU regelt öffentliche Aufträge",
+      "source_summary": "Die drei vorliegenden Meldungen berichten übereinstimmend, dass die EU-Kommission öffentliche Aufträge stärker auf Produkte aus der EU ausrichten will. Als Anlass nennen sie den Hinweis, die EU verliere im Handel mit China mehr als eine Milliarde Euro pro Tag. Die Texte nennen den Schritt als wirtschaftspolitischen Vorstoß, liefern aber in diesem Ausschnitt keinen vollständigen Rechtsakt, keine Einzelregel und keinen Inkrafttretenszeitpunkt.\n\nOffen bleibt auch, ob es sich bereits um einen förmlichen Vorschlag, eine Mitteilung oder nur um eine politische Ankündigung handelt. Die Quellen stammen aus drei journalistischen Fassungen mit gleichem Wortlautkern; eine unabhängige Primärquelle ist in den gelieferten Daten nicht enthalten.",
+      "summary": "Die EU-Kommission will öffentliche Aufträge offenbar stärker zugunsten von EU-Produkten ausrichten. Die Berichte nennen als Begründung den Handelsverlust mit China von mehr als einer Milliarde Euro pro Tag.",
+      "detail_summary": "Der Sachverhalt ist ein EU-politischer Vorstoß mit möglicher Wirkung auf Vergaberegeln und Beschaffungsströme. Das ist materiell relevant, weil öffentliche Aufträge Nachfrage, Standortentscheidungen und Wettbewerbsbedingungen beeinflussen können. Der Wirkpfad wäre ex ante: Regeländerung oder politischer Druck kann Anreize zugunsten europäischer Anbieter verschieben. Eine konkrete eingetretene Wirkung ist hier noch nicht belegt; es liegen nur journalistische Berichte vor, zudem ohne Primärquelle im Datensatz. Für die Einordnung bleibt offen, wie weit der Vorschlag reicht und ob daraus bereits ein formales Verfahren folgt.",
+      "why_relevant": "Mögliche Änderung von Vergabeanreizen und Beschaffungsströmen mit Folgen für Unternehmen, Staaten und den Binnenmarkt.",
+      "topic": [
+        "Europa",
+        "Wirtschaft"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Wenn öffentliche Aufträge stärker an EU-Produkte gebunden werden, verschiebt das die Nachfrage und kann Lieferketten, Investitionen und Standortentscheidungen beeinflussen. Das ist für Unternehmen, Beschäftigte und öffentliche Haushalte materiell relevant.",
+          "positive_path": {
+            "mechanism": "Stärkere Berücksichtigung von EU-Produkten in öffentlichen Aufträgen kann Nachfrage innerhalb der EU bündeln und damit Produktions- und Investitionsanreize verschieben.",
+            "source_ids": [
+              "wiwo-schlagzeilen",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Eine stärkere EU-Bevorzugung kann Wettbewerb verengen, Preise erhöhen oder Handelskonflikte verschärfen, wenn Drittanbieter ausgeschlossen werden.",
+            "source_ids": [
+              "wiwo-schlagzeilen",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Im gelieferten Material gibt es keinen direkten Umweltbezug. Mögliche indirekte Effekte über kürzere Lieferketten oder andere Beschaffung bleiben offen und sind nicht belegt.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Vergaberegeln betreffen staatliche Steuerung und die demokratische Ausgestaltung von Marktregeln. Zugleich kann eine politisch motivierte Bevorzugung bestimmter Herkunftsgruppen die Offenheit des Wettbewerbs begrenzen.",
+          "positive_path": {
+            "mechanism": "Ein klarer, parlamentarisch oder kommissarisch legitimierter Regelrahmen kann die öffentliche Beschaffung transparenter und politisch nachvollziehbarer machen.",
+            "source_ids": [
+              "wiwo-schlagzeilen",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Wenn der Rahmen den Zugang für Anbieter aus Drittstaaten verengt, kann das die Wettbewerbsvielfalt und die Korrekturfähigkeit des Marktes schwächen.",
+            "source_ids": [
+              "wiwo-schlagzeilen",
+              "tagesspiegel-home",
+              "stern-schlagzeilen"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": null,
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T16:09:58.471Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T13:15:00.000Z",
+      "last_updated": "2026-09-09T16:13:24.889Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-610f6ffb0dd73aa7c41a",
+      "case_file": null,
+      "source_published_at": "2026-09-09T11:59:47.000Z",
+      "published_at": "2026-09-09T16:13:24.889Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "wiwo-schlagzeilen",
+            "tagesspiegel-home",
+            "stern-schlagzeilen"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "tagesspiegel-home",
+              "wiwo-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "wiwo-schlagzeilen"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          },
+          {
+            "source_ids": [
+              "stern-schlagzeilen",
+              "tagesspiegel-home"
+            ],
+            "reason": "shared_wording_possible_syndication",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Welche konkreten Vergaberegeln die Kommission vorlegt und ob es ein formales Gesetzesverfahren gibt.",
+          "source_id": "wiwo-schlagzeilen",
+          "expected_by": null,
+          "measurable_indicator": "Vorlage von Entwurf, Mitteilung oder Legislativvorschlag",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-77e14b94e22c82a8",
+          "announced_at": "2026-09-09T13:15:00.000Z",
+          "follow_up_date": "2026-09-16T16:13:24.889Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob die Kommission die genannte Milliarde Euro pro Tag mit eigenen Daten belegt und auf welchen Zeitraum sie sich bezieht.",
+          "source_id": "tagesspiegel-home",
+          "expected_by": null,
+          "measurable_indicator": "amtliche Datenbasis zur Handelszahl",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-583ed899c8cd6c6c",
+          "announced_at": "2026-09-09T11:59:47.000Z",
+          "follow_up_date": "2026-09-16T16:13:24.889Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "WirtschaftsWoche",
+          "url": "https://www.wiwo.de/politik/europa/eu-kommission-weniger-china-mehr-europa-eu-regelt-oeffentliche-auftraege/100253268.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:15:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/wirtschaft/dpa-wirtschaftspolitik-16034645.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T11:59:47.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "stern",
+          "url": "https://www.stern.de/wirtschaft/news/wirtschaftspolitik--weniger-china--mehr-europa---eu-regelt-oeffentliche-auftraege-38227792.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T16:05:05.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-dc2a1dc727ed2b66",
       "title_image": {
@@ -4663,9 +4975,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50b7642f201d604e-3799545d4aabfec5-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50b7642f201d604e-001634b109db5f25-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-50b7642f201d604e-8d7dfeffbb572203-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "spd-vize-schweitzer-spricht-sich-fur-expertenregierung-in-sachsen-anhalt-aus-1d604e",
@@ -8708,12 +9030,25 @@
     {
       "story_id": "wt-268817aa0a8ccf86",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-268817aa0a8ccf86-5106ac6739081dd8-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-268817aa0a8ccf86-be15b351c32ab59a-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-268817aa0a8ccf86-79696a0208162905-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-268817aa0a8ccf86-cbf53b327d025ad0-source.png"
         }
       },
       "slug": "menschenrechtsgericht-lehnt-familiennachzug-fur-13-kinder-aus-drei-ehen-ab-8ccf86",
@@ -9442,9 +9777,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a271a35a2b58f666-9f3a23a2bd7010df-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a271a35a2b58f666-e00c37ffee6cec9f-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-a271a35a2b58f666-718b576947e501eb-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "bund-fordert-beethoven-jubilaum-mit-2-3-millionen-euro-staatsminister-weimer-2027-wird-b-58f666",
