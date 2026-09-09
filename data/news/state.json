@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_successful_run": "2026-09-09T22:23:09.375Z",
+  "last_successful_run": "2026-09-09T22:37:52.526Z",
   "seen_items": {
     "d5c218ac012ab07c2f2e362c7539186093484829ad32ae0051843a33c8dcaec1": {
       "source_id": "bundesregierung-presse",
@@ -63676,7 +63676,6 @@
     "wt-6a90771161f2b4bb",
     "wt-6f98ab401c2bcf13",
     "wt-5640ff3e4191a49a",
-    "wt-3bb169b629ab743f",
     "wt-bbe37953fcbe9af5",
     "wt-37084d67c3ea1520",
     "wt-b94c07381de56d66",
@@ -63706,7 +63705,6 @@
     "wt-dcc529535914de3a",
     "wt-b84af952fb761238",
     "wt-c5899067c9178fc2",
-    "wt-7cdd809f77c5f7a1",
     "wt-0fb6fe60049ce82c",
     "wt-f4c81e2b349970ac",
     "wt-6222b0ef3b2ae801",
@@ -63739,7 +63737,7 @@
     "wt-990631d7dc3586cb"
   ],
   "relevance_filter_version": "2026-09-09.1",
-  "last_attempted_run": "2026-09-09T22:23:09.375Z",
+  "last_attempted_run": "2026-09-09T22:37:52.526Z",
   "budget_fx": {
     "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
     "rate_usd_per_eur": 1.1652,
@@ -64115,11 +64113,11 @@
       "fingerprint": "4716d2b493d65af13a222dad3046a4377c1bdfae0fafff5168e225b27f2e09f0",
       "prompt_hash": "983f38d444b9119e472004783100d47d0c93cae4012575662a67e76ba04e3469",
       "attempt": 0,
-      "created_at": "2026-09-09T22:16:55.504Z",
+      "created_at": "2026-09-09T22:40:36.915Z",
       "status": "not_submitted",
       "billing_status": "settled",
-      "next_poll_at": "2026-09-09T22:31:55.504Z",
-      "checked_at": "2026-09-09T22:16:55.504Z",
+      "next_poll_at": "2026-09-09T22:55:36.915Z",
+      "checked_at": "2026-09-09T22:40:36.915Z",
       "error": null
     },
     "39f05bc1f9f413cbcd623e8e97c2f6b602e0a159c2ba66152d835f6e23e645d4": {
@@ -64134,6 +64132,20 @@
       "billing_status": "settled",
       "next_poll_at": "2026-09-09T22:31:55.504Z",
       "checked_at": "2026-09-09T22:16:55.504Z",
+      "error": null
+    },
+    "a86980caa6592a0d595570cb09073f5843a0e8b6add9cc97e433f3707f44ca51": {
+      "key": "a86980caa6592a0d595570cb09073f5843a0e8b6add9cc97e433f3707f44ca51",
+      "kind": "editorial_background",
+      "story_id": "wt-b5e0a39f46388642",
+      "fingerprint": "42a868dd742bf76663d4df0f80f75daf7c268984f6a3cf9167afd024c078faaa",
+      "prompt_hash": "812d9f56b88361a3400a816df7fd6551369e4b443498359bf99a6f19cf1aedee",
+      "attempt": 0,
+      "created_at": "2026-09-09T22:40:36.915Z",
+      "status": "not_submitted",
+      "billing_status": "settled",
+      "next_poll_at": "2026-09-09T22:55:36.915Z",
+      "checked_at": "2026-09-09T22:40:36.915Z",
       "error": null
     }
   },

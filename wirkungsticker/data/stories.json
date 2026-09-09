@@ -1,7 +1,170 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T22:16:55.504Z",
+  "updated_at": "2026-09-09T22:37:52.526Z",
   "stories": [
+    {
+      "story_id": "wt-3bb169b629ab743f",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3bb169b629ab743f-783ea5bd350e6872-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3bb169b629ab743f-d062187cbacf84f3-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-3bb169b629ab743f-d10ca3c02cfbc9a0-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "iran-krieg-angriffe-treiben-olpreis-auf-100-dollar-ab743f",
+      "title": "Iran-Krieg: Angriffe treiben Ölpreis auf 100 Dollar",
+      "source_summary": "Die Quelle meldet, dass der Brent-Preis am Mittwoch wieder über 100 US-Dollar je Barrel gestiegen ist. Als Hintergrund nennt sie neue gegenseitige Angriffe von USA und Iran in der Straße von Hormus sowie die Zerstörung von fünf iranischen Rohöltankern und einen versenkten Tanker.\n\nDie Darstellung verweist außerdem auf die Bedeutung der Straße von Hormus für den Öltransport und sagt, ein höherer Rohölpreis mache Tanken, Heizen und insgesamt viele Preise tendenziell teurer. Offen bleibt, wie breit und wie lange der Effekt anhält und welche Details unabhängig bestätigt sind.",
+      "summary": "Öl ist wieder über 100 Dollar je Barrel gestiegen. Die Quelle verbindet das mit neuen Angriffen im Iran-USA-Konflikt rund um die Straße von Hormus.",
+      "detail_summary": "Die Meldung beschreibt einen Marktimpuls mit möglicher Breitenwirkung über Energiepreise. Sachlich belegt ist der Preissprung bei Brent; die Ursache bleibt in dieser Quelle als Konfliktgeschehen rund um Tanker und Straße von Hormus gefasst. Für die Einordnung reicht das als Erstbericht, nicht als abgeschlossene Wirkungsanalyse. Für Mensch und Wirtschaft ist der Wirkpfad plausibel über teureren Kraftstoff, Heizen und allgemeine Kosten. Die Evidenz bleibt vorläufig, weil nur eine journalistische Quelle vorliegt.",
+      "why_relevant": "Materiell relevant wegen möglicher Preisweitergabe bei Energie, Heizen und breiteren Kosten.",
+      "topic": [
+        "Geopolitik"
+      ],
+      "status": "offen",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Ein höherer Rohölpreis kann Haushalte und Betriebe über Kraftstoff-, Heiz- und Transportkosten belasten. Die Quelle nennt diese Weitergabe selbst als tendenziellen Effekt, aber nicht als bereits gemessene Folge.",
+          "positive_path": {
+            "mechanism": "Wenn der Ölpreis sinkt oder stabil bleibt, verringert sich der Kostendruck auf Tanken, Heizen und Logistik im Vergleich zum Sprung über 100 Dollar.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Bleibt der Rohölpreis erhöht oder steigt weiter, nimmt der Kostendruck für Haushalte und Unternehmen zu.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Quelle behandelt vor allem Preis- und Transportfolgen. Ein direkter Umwelt- oder Klimawirkpfad ist daraus nicht belastbar ableitbar.",
+          "positive_path": {
+            "mechanism": "Keine tragfähige positive Umweltwirkung aus der Meldung belegt.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Ein dauerhaft hoher Ölpreis kann fossile Nutzung nicht direkt belegen, höchstens indirekt beeinflussen; die Quelle weist das nicht nach.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Die Meldung enthält keine belastbare Information zu demokratischen Verfahren, Kontrolle oder Rechenschaft. Politische Folgen bleiben offen.",
+          "positive_path": {
+            "mechanism": "Keine belegte demokratische Verbesserung aus der Meldung.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Eine Eskalation im Konflikt kann politische Spannungen erhöhen, doch die demokratische Wirkung bleibt hier unbestimmt.",
+            "source_ids": [
+              "zdfheute-nachrichten"
+            ],
+            "effect_type": "procedural_possibility",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "haushalte",
+          "unternehmen"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T22:37:52.526Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T08:08:00.000Z",
+      "last_updated": "2026-09-09T22:40:12.506Z",
+      "version": 1,
+      "news_status": "preliminary",
+      "event_id": "event-97aebd4b7d0bac856b1a",
+      "case_file": null,
+      "source_published_at": "2026-09-09T08:08:00.000Z",
+      "published_at": "2026-09-09T22:40:12.506Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "zdfheute-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Preis über 100 US-Dollar je Barrel blieb oder nur kurz darüber lag.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Brent-Preis pro Barrel",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-b654c344d34e4eb6",
+          "announced_at": "2026-09-09T08:08:00.000Z",
+          "follow_up_date": "2026-09-16T22:40:12.506Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob andere belastbare Quellen die Angriffe und die Preisbewegung bestätigen.",
+          "source_id": "zdfheute-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Unabhängige Bestätigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-24014bf9202a6933",
+          "announced_at": "2026-09-09T08:08:00.000Z",
+          "follow_up_date": "2026-09-16T22:40:12.506Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/wirtschaft/iran-krieg-oelpreis-dollar-strasse-von-hormus-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T08:08:00.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-b3b0168d8241bab3",
       "title_image": {
