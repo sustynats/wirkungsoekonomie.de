@@ -8,12 +8,13 @@
     "queue": {
       "firstSeen": "2026-09-07T20:50:46.225Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-09-09T16:51:15.844Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "de303d5844a2fb5d02e18cc6",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-09-09T18:20:58.557Z"
+    }
+  ],
   "dailyDate": "2026-09-09"
 }
