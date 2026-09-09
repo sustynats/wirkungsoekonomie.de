@@ -2,15 +2,15 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T19:13:16.736Z",
-  "scanned_stories": 215,
-  "scanned_subjects": 190,
-  "editorial_candidates": 33,
+  "started_at": "2026-09-09T19:52:22.316Z",
+  "scanned_stories": 217,
+  "scanned_subjects": 192,
+  "editorial_candidates": 34,
   "ready_for_research": 11,
-  "research_pending": 12,
+  "research_pending": 13,
   "retry_deferred": 4,
   "editorial_research_sources_discovered": 54,
-  "selected": 0,
+  "selected": 1,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
@@ -24,13 +24,62 @@
   "full_generations": 0,
   "targeted_repairs": 0,
   "batch_results_reviewed": 0,
-  "background_waiting": 7,
+  "background_waiting": 6,
   "quality_held": 4,
   "unchanged_research_skipped": 11,
   "requested": [],
-  "publication_deferred": false,
+  "publication_deferred": true,
   "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-63cb95e544d260ce",
+      "story_slug": "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce",
+      "story_title": "Generaldebatte zum Haushalt 2027: Merz verteidigt Reformkurs, Opposition kritisiert Prioritäten",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 64,
+      "factors": {
+        "systemic_relevance": 11,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 0,
+        "macro_relevance": 6,
+        "MPD_interdependence": 8,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 8,
+        "primary_source_count": 2,
+        "cited_claim_count": 3,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "79fdaa6ce2f010e2460fedae5b6302ab8ed9e57ecdb97108e471802abbe5322a",
+      "status": "research_pending",
+      "review": {
+        "status": "research_pending",
+        "automatic_short_form_rewrite": false,
+        "reason": "commissioned_analysis_new_origin_material",
+        "story_id": "wt-63cb95e544d260ce",
+        "analysis_id": "woek-analysis-7db837acf47c"
+      },
+      "analysis_id": "woek-analysis-7db837acf47c"
+    },
     {
       "story_id": "wt-026d11d680622587",
       "story_slug": "bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587",
@@ -1449,7 +1498,7 @@
     }
   ],
   "batch": {
-    "submitted": 0,
+    "submitted": 1,
     "pending": 0,
     "completed": 0,
     "failed": 0,
@@ -1458,5 +1507,6 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "completed_at": "2026-09-09T19:14:49.167Z"
+  "batch_deferred": 1,
+  "completed_at": "2026-09-09T19:53:56.866Z"
 }

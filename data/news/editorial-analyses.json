@@ -1,8 +1,57 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-09T19:04:06.352Z",
+  "updated_at": "2026-09-09T19:52:22.316Z",
   "candidates": [
+    {
+      "story_id": "wt-63cb95e544d260ce",
+      "story_slug": "so-lauft-die-generaldebatte-im-bundestag-merz-gegen-weidel-d260ce",
+      "story_title": "Generaldebatte zum Haushalt 2027: Merz verteidigt Reformkurs, Opposition kritisiert Prioritäten",
+      "editorial_analysis_score": 77,
+      "analysis_gain": 64,
+      "factors": {
+        "systemic_relevance": 11,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 0,
+        "macro_relevance": 6,
+        "MPD_interdependence": 8,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": true,
+        "source_integrity": "verified",
+        "independent_origin_count": 8,
+        "primary_source_count": 2,
+        "cited_claim_count": 3,
+        "primary_source_expected": true,
+        "primary_source_satisfied": true,
+        "reasons": []
+      },
+      "fingerprint": "79fdaa6ce2f010e2460fedae5b6302ab8ed9e57ecdb97108e471802abbe5322a",
+      "status": "research_pending",
+      "review": {
+        "status": "research_pending",
+        "automatic_short_form_rewrite": false,
+        "reason": "commissioned_analysis_new_origin_material",
+        "story_id": "wt-63cb95e544d260ce",
+        "analysis_id": "woek-analysis-7db837acf47c"
+      },
+      "analysis_id": "woek-analysis-7db837acf47c"
+    },
     {
       "story_id": "wt-026d11d680622587",
       "story_slug": "bundestag-neuer-sportstaatsminister-rauhe-will-olympia-nach-deutschland-holen-afd-kritis-622587",
@@ -34605,18 +34654,16 @@
       "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-366b1fbfa120e44f": {
-      "fingerprint": "e5095f24671851661bf26839bac0d41344db6d69b03da9d1c566829dc05b102f",
+      "fingerprint": "646e57265ef9d91effe3156b7596482215484833cf1ebaeb842893539a96f6eb",
+      "research_fingerprint": "ac00f5c65b849a16fc2a546dc98bfbdadc1b38c8844bd0e56aa34def6e788e47",
       "method_version": "1.0",
-      "attempts": 6,
-      "last_attempt_at": "2026-09-09T05:44:55.187Z",
-      "next_attempt_at": "2026-09-09T13:44:55.187Z",
-      "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_ARTICLE_LENGTH",
-        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
-        "EDITORIAL_SELF_FRAME_FAILED"
-      ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+      "quality_cycles": 0,
+      "request_id": null,
+      "attempts": 0,
+      "last_attempt_at": "2026-09-09T19:52:22.316Z",
+      "next_attempt_at": "2026-09-09T20:07:22.316Z",
+      "quality_errors": [],
+      "reason": "AI_BATCH_PENDING"
     },
     "wt-e820bef62dd96612": {
       "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
