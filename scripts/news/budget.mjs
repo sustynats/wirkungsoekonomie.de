@@ -1,6 +1,10 @@
 export const NEWS_AI_BUDGET_EUR = 25;
-// Explicit approval on 7 September; no extension into another budget month.
+// Dated approvals; past runs retain the authorization in force at that time.
 export const NEWS_AI_BUDGET_EXCEPTION = Object.freeze({ from: '2026-09-07T13:27:00.000Z', until: '2026-10-01T00:00:00.000Z', authorized_eur: 50 });
+export const NEWS_AI_BUDGET_SEPTEMBER_EXTENSION = Object.freeze({ from: '2026-09-09T04:57:00.000Z', until: '2026-10-01T00:00:00.000Z', authorized_eur: 75 });
+// The September 9 grant is a shared API ceiling, not another EUR 75 pot.
+// Oracle must independently enforce that aggregate ceiling across all features.
+const NEWS_AI_BUDGET_APPROVALS = Object.freeze([NEWS_AI_BUDGET_SEPTEMBER_EXTENSION, NEWS_AI_BUDGET_EXCEPTION]);
 export const NEWS_REQUEST_RESERVATION_USD = 0.25;
 const ECB_FX_URL = "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml";
 
@@ -26,8 +30,8 @@ export function newsBudget(fx, now, authorizedEur) {
   // User authorization is a ceiling, not a spending target. Retain 19% tax
   // reserve and 10% FX/estimation reserve. Never silently increase authorization.
   const at = Date.parse(now);
-  const ceiling = at >= Date.parse(NEWS_AI_BUDGET_EXCEPTION.from) && at < Date.parse(NEWS_AI_BUDGET_EXCEPTION.until)
-    ? NEWS_AI_BUDGET_EXCEPTION.authorized_eur : NEWS_AI_BUDGET_EUR;
+  const approval = NEWS_AI_BUDGET_APPROVALS.find(grant => at >= Date.parse(grant.from) && at < Date.parse(grant.until));
+  const ceiling = approval?.authorized_eur ?? NEWS_AI_BUDGET_EUR;
   const euroLimit = Math.min(ceiling, Math.max(0, Number(authorizedEur === undefined ? ceiling : authorizedEur) || 0));
   const dollars = fresh ? Math.floor(euroLimit / 1.19 * 0.9 * Math.min(1, fx.rate_usd_per_eur) * 100) / 100 : 0;
   return { authorized_eur: euroLimit, technical_limit_usd: dollars, tax_reserve_factor: 1.19, fx_reserve_factor: 0.9, fx: fx || null, status: fresh ? "ok" : "FX_UNAVAILABLE_AI_HELD" };
