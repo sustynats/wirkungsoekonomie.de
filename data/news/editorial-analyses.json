@@ -1,8 +1,97 @@
 {
   "schema_version": "1.0",
   "method_version": "1.0",
-  "updated_at": "2026-09-09T00:27:01.896Z",
+  "updated_at": "2026-09-09T10:42:32.275Z",
   "candidates": [
+    {
+      "story_id": "wt-84ac3f26c7762712",
+      "story_slug": "milliarden-lucke-im-klimafonds-762712",
+      "story_title": "Milliarden-Lücke im Klimafonds",
+      "editorial_analysis_score": 81,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 5,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "d4aed5625f353eb5fec67a54dc50ee5871ae9c3aec5321a99af8eb4f6e731666",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-5a2fe52ebad137c3",
+      "story_slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
+      "story_title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 59,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 4,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "a72c354fddf71dbc0ecc0c180f5c67a4809a3417ac92d123e2375e790ad88047",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-e01e1e77e702edc3",
       "story_slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
@@ -169,50 +258,6 @@
       },
       "fingerprint": "e5095f24671851661bf26839bac0d41344db6d69b03da9d1c566829dc05b102f",
       "status": "ready_for_research",
-      "analysis_id": null
-    },
-    {
-      "story_id": "wt-84ac3f26c7762712",
-      "story_slug": "milliarden-lucke-im-klimafonds-762712",
-      "story_title": "Milliarden-Lücke im Klimafonds",
-      "editorial_analysis_score": 86,
-      "analysis_gain": 60,
-      "factors": {
-        "systemic_relevance": 14,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 9,
-        "MPD_interdependence": 6,
-        "distribution_relevance": 8,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": false,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 4,
-        "primary_source_expected": true,
-        "primary_source_satisfied": false,
-        "reasons": [
-          "primary_source_missing"
-        ]
-      },
-      "fingerprint": "caff2f1749f1c3a3d67256cb866b617bea4b053b01b29473f7b524a7a3a95346",
-      "status": "research_pending",
       "analysis_id": null
     },
     {
@@ -726,7 +771,7 @@
         "reasons": []
       },
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": "woek-analysis-219f434ceb61"
     },
     {
@@ -981,7 +1026,7 @@
         "reasons": []
       },
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
@@ -1152,7 +1197,7 @@
         "reasons": []
       },
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": null
     },
     {
@@ -31376,8 +31421,8 @@
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
       "method_version": "1.0",
       "attempts": 9,
-      "last_attempt_at": "2026-09-09T01:08:08.189Z",
-      "next_attempt_at": "2026-09-09T01:23:08.189Z",
+      "last_attempt_at": "2026-09-09T06:03:44.280Z",
+      "next_attempt_at": "2026-09-09T06:18:44.280Z",
       "quality_errors": [
         "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
         "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
@@ -31387,14 +31432,17 @@
     },
     "wt-cf03acddb911d861": {
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
+      "research_fingerprint": "12e3c3036bb2c647e635d01939e5f800a40e5ee7c39a83828d17a905f9a23139",
       "method_version": "1.0",
+      "quality_cycles": 0,
+      "request_id": null,
       "attempts": 7,
-      "last_attempt_at": "2026-09-09T00:38:55.552Z",
-      "next_attempt_at": "2026-09-09T00:53:55.552Z",
+      "last_attempt_at": "2026-09-09T07:12:22.857Z",
+      "next_attempt_at": "2026-09-09T07:27:22.857Z",
       "quality_errors": [
-        "EDITORIAL_SEO_LENGTH"
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED"
       ],
-      "reason": "AI_BUDGET_EXHAUSTED"
+      "reason": "BATCH_RETRY_LIMIT"
     },
     "wt-1c2c187d0b858b7c": {
       "fingerprint": "045570fb2ba7f213e6e005e3b04558f9c2175bbb4b0ec60987446cbb2b4bcc9d",
@@ -31412,8 +31460,8 @@
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
       "method_version": "1.0",
       "attempts": 0,
-      "last_attempt_at": "2026-09-09T01:08:08.189Z",
-      "next_attempt_at": "2026-09-09T01:23:08.189Z",
+      "last_attempt_at": "2026-09-09T06:03:44.280Z",
+      "next_attempt_at": "2026-09-09T06:18:44.280Z",
       "quality_errors": [
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
@@ -31423,15 +31471,13 @@
     "wt-f03755f6f6b8c3b7": {
       "fingerprint": "ff99a7fe570d24cd0d511b62ee12eec4c137e78e18f3a11f0f9239c581fb99e8",
       "method_version": "1.0",
-      "attempts": 7,
-      "last_attempt_at": "2026-09-08T16:12:34.977Z",
-      "next_attempt_at": "2026-09-09T04:12:34.977Z",
+      "attempts": 8,
+      "last_attempt_at": "2026-09-09T05:44:55.187Z",
+      "next_attempt_at": "2026-09-09T17:44:55.187Z",
       "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
-        "EDITORIAL_ARTICLE_LENGTH",
-        "EDITORIAL_SELF_FRAME_FAILED"
+        "EDITORIAL_ARTICLE_LENGTH"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_ARTICLE_LENGTH"
     },
     "wt-8802c617d5bb3e85": {
       "fingerprint": "78002b1d39e5b195d6a13a3b08a9f5b28b9075f1cc6fb1df969a2b489dd9ee8f",
@@ -31460,34 +31506,44 @@
     "wt-366b1fbfa120e44f": {
       "fingerprint": "e5095f24671851661bf26839bac0d41344db6d69b03da9d1c566829dc05b102f",
       "method_version": "1.0",
-      "attempts": 5,
-      "last_attempt_at": "2026-09-08T23:55:40.421Z",
-      "next_attempt_at": "2026-09-09T03:55:40.421Z",
+      "attempts": 6,
+      "last_attempt_at": "2026-09-09T05:44:55.187Z",
+      "next_attempt_at": "2026-09-09T13:44:55.187Z",
       "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
         "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
         "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "EDITORIAL_QUALITY:EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-e820bef62dd96612": {
       "fingerprint": "55c01a53ce4e370eae11a3736ee05383f6c4c6e67e77e2ffa44c87d2ead7b09d",
       "method_version": "1.0",
-      "attempts": 4,
-      "last_attempt_at": "2026-09-09T01:18:13.227Z",
-      "next_attempt_at": "2026-09-09T01:33:13.227Z",
+      "attempts": 5,
+      "last_attempt_at": "2026-09-09T05:44:55.187Z",
+      "next_attempt_at": "2026-09-09T09:44:55.187Z",
       "quality_errors": [
-        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG"
+        "EDITORIAL_SECTION_MISSING_UNSICHERHEIT",
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH",
+        "EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED",
+        "EDITORIAL_SELF_FRAME_FAILED"
       ],
-      "reason": "AI_BUDGET_EXHAUSTED"
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_UNSICHERHEIT,EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH,EDITORIAL_OBSERVED_JUDGMENT_UNSUPPORTED,EDITORIAL_SELF_FRAME_FAILED"
     },
     "wt-e01e1e77e702edc3": {
       "fingerprint": "a752701ac2c4d543850ad7d2b8fdffcfb48818ccd622bf1856a3051797b1ea90",
       "method_version": "1.0",
-      "attempts": 0,
-      "last_attempt_at": "2026-09-09T01:08:08.189Z",
-      "next_attempt_at": "2026-09-09T01:23:08.189Z",
-      "quality_errors": [],
-      "reason": "AI_BUDGET_EXHAUSTED"
+      "attempts": 2,
+      "last_attempt_at": "2026-09-09T06:03:44.280Z",
+      "next_attempt_at": "2026-09-09T06:33:44.280Z",
+      "quality_errors": [
+        "EDITORIAL_SECTION_MISSING_BEOBACHTUNG",
+        "EDITORIAL_ARTICLE_LENGTH"
+      ],
+      "reason": "EDITORIAL_QUALITY:EDITORIAL_SECTION_MISSING_BEOBACHTUNG,EDITORIAL_ARTICLE_LENGTH"
     }
-  }
+  },
+  "editorial_requests": {}
 }

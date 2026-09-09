@@ -100,6 +100,11 @@ export function registryErrors(registry) {
       || new Set(source.federal_states).size !== source.federal_states.length)) errors.push(`SOURCE_FEDERAL_STATES_INVALID:${source.source_id}`);
     if (!SOURCE_GOVERNANCE_ROLES.includes(source.role)) errors.push(`SOURCE_GOVERNANCE_ROLE_INVALID:${source.source_id}`);
     if (source.enabled && source.role !== "A") errors.push(`SOURCE_ACTIVE_ROLE_INVALID:${source.source_id}`);
+    if (source.publication_date_adapter && (source.publication_date_adapter !== 'bundestag-hib-date-v1'
+      || source.publisher_id !== 'bundestag' || source.primary_source !== true
+      || safeHost(source.url) !== 'bundestag.de' || source.source_type !== 'official_rss')) {
+      errors.push(`SOURCE_PUBLICATION_DATE_ADAPTER_INVALID:${source.source_id}`);
+    }
     if (source.enabled) {
       if (!source.feed_url) errors.push(`SOURCE_FEED_MISSING:${source.source_id}`);
       else if (feeds.has(source.feed_url)) errors.push(`SOURCE_FEED_DUPLICATE:${source.source_id}`);

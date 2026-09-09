@@ -41,6 +41,7 @@
     },
     {
       "source_id": "bundestag-hib",
+      "publication_date_adapter": "bundestag-hib-date-v1",
       "name": "Deutscher Bundestag - Heute im Bundestag",
       "url": "https://www.bundestag.de/presse/hib/",
       "feed_url": "https://www.bundestag.de/static/appdata/includes/rss/hib.rss",
@@ -54,6 +55,7 @@
     },
     {
       "source_id": "bundestag-umwelt",
+      "publication_date_adapter": "bundestag-hib-date-v1",
       "name": "Deutscher Bundestag - Umwelt und Klimaschutz",
       "url": "https://www.bundestag.de/ausschuesse/a16_umwelt",
       "feed_url": "https://www.bundestag.de/static/appdata/includes/rss/umwelt.rss",
@@ -67,6 +69,7 @@
     },
     {
       "source_id": "bundestag-wirtschaft",
+      "publication_date_adapter": "bundestag-hib-date-v1",
       "name": "Deutscher Bundestag - Wirtschaft und Energie",
       "url": "https://www.bundestag.de/ausschuesse/a09_wirtschaft",
       "feed_url": "https://www.bundestag.de/static/appdata/includes/rss/wirtschaft.rss",

@@ -39,6 +39,10 @@ on:
         description: "Kontrollierter Erstbackfill; alle weiteren Kandidaten bleiben automatisch in der Queue"
         type: boolean
         default: false
+      editorial_requested_story_ids:
+        description: "Ausdrücklicher Auftrag: veröffentlichte Story-IDs, kommasepariert; priorisiert, Quellen-/Qualitäts- und Budgetgates bleiben aktiv"
+        type: string
+        default: ""
 
 permissions:
   actions: write
@@ -160,10 +164,12 @@ jobs:
           WOEK_NEWS_BATCH_ENABLED: ${{ vars.WOEK_NEWS_BATCH_ENABLED || 'false' }}
           EDITORIAL_ANALYSIS_LIMIT: ${{ inputs.editorial_analysis_limit || 6 }}
           EDITORIAL_ANALYSIS_BOOTSTRAP: ${{ inputs.editorial_analysis_bootstrap || false }}
+          EDITORIAL_REQUESTED_STORY_IDS: ${{ inputs.editorial_requested_story_ids }}
         run: |
           set +e
-          args=(--execute --limit="$EDITORIAL_ANALYSIS_LIMIT")
+          args=(--execute --background-only --limit="$EDITORIAL_ANALYSIS_LIMIT")
           if [ "$EDITORIAL_ANALYSIS_BOOTSTRAP" = "true" ]; then args+=(--bootstrap); fi
+          if [ -n "$EDITORIAL_REQUESTED_STORY_IDS" ]; then args+=(--request="$EDITORIAL_REQUESTED_STORY_IDS"); fi
           npm run news:editorial-analyses -- "${args[@]}"
           status=$?
           node -e 'const fs=require("node:fs"); const p="reports/wirkungsticker-editorial-analyses.json"; const r=fs.existsSync(p)?require("./"+p):{}; fs.appendFileSync(process.env.GITHUB_OUTPUT,"public_changed="+Boolean((r.editorial_analyses_published||0)+(r.editorial_analyses_updated||0))+"\n"); fs.appendFileSync(process.env.GITHUB_OUTPUT,"failed="+Boolean(r.failed?.length)+"\n");'

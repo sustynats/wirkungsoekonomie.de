@@ -2,32 +2,124 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T01:18:13.227Z",
-  "scanned_stories": 181,
-  "scanned_subjects": 159,
-  "editorial_candidates": 31,
+  "started_at": "2026-09-09T11:18:07.059Z",
+  "scanned_stories": 203,
+  "scanned_subjects": 178,
+  "editorial_candidates": 32,
   "ready_for_research": 9,
-  "research_pending": 10,
-  "retry_deferred": 7,
-  "editorial_research_sources_discovered": 47,
-  "selected": 2,
+  "research_pending": 11,
+  "retry_deferred": 5,
+  "editorial_research_sources_discovered": 48,
+  "selected": 0,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 1,
+  "research_calls": 0,
   "research_tokens": 0,
   "analysis_tokens": 0,
   "estimated_cost_usd": 0,
   "quality_retries": 0,
+  "economy_version": "1.0",
+  "background_only": true,
+  "full_generations": 0,
+  "targeted_repairs": 0,
+  "batch_results_reviewed": 0,
+  "background_waiting": 4,
+  "quality_held": 3,
+  "unchanged_research_skipped": 13,
+  "requested": [],
   "publication_deferred": false,
-  "failed": [
-    {
-      "story_id": "wt-e820bef62dd96612",
-      "reason": "AI_BUDGET_EXHAUSTED",
-      "next_attempt_at": "2026-09-09T01:33:13.227Z"
-    }
-  ],
+  "failed": [],
   "candidates": [
+    {
+      "story_id": "wt-84ac3f26c7762712",
+      "story_slug": "milliarden-lucke-im-klimafonds-762712",
+      "story_title": "Milliarden-Lücke im Klimafonds",
+      "editorial_analysis_score": 81,
+      "analysis_gain": 60,
+      "factors": {
+        "systemic_relevance": 14,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 8,
+        "resilience_relevance": 8,
+        "macro_relevance": 6,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 8,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 3
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 1,
+        "primary_source_count": 0,
+        "cited_claim_count": 5,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "fewer_than_two_source_origins",
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "d4aed5625f353eb5fec67a54dc50ee5871ae9c3aec5321a99af8eb4f6e731666",
+      "status": "research_pending",
+      "analysis_id": null
+    },
+    {
+      "story_id": "wt-5a2fe52ebad137c3",
+      "story_slug": "us-gericht-stoppt-weitergabe-von-migranten-steuerdaten-an-ice-d137c3",
+      "story_title": "US-Gericht stoppt Weitergabe von Migranten-Steuerdaten an ICE",
+      "editorial_analysis_score": 72,
+      "analysis_gain": 59,
+      "factors": {
+        "systemic_relevance": 16,
+        "impact_potential": 0,
+        "impact_risk": 0,
+        "editorial_priority": 8,
+        "mpd_relevance": 10,
+        "observed_impact": 0,
+        "third_order_relevance": 10,
+        "transformation_relevance": 0,
+        "resilience_relevance": 8,
+        "macro_relevance": 3,
+        "MPD_interdependence": 6,
+        "distribution_relevance": 3,
+        "discourse_relevance": 0,
+        "case_depth": 0,
+        "evidence_quality": 8
+      },
+      "factor_status": {
+        "impact_potential": "open",
+        "impact_risk": "open",
+        "observed_impact": "not_established"
+      },
+      "evidence_gate": {
+        "passed": false,
+        "source_integrity": "verified",
+        "independent_origin_count": 4,
+        "primary_source_count": 0,
+        "cited_claim_count": 4,
+        "primary_source_expected": true,
+        "primary_source_satisfied": false,
+        "reasons": [
+          "primary_source_missing"
+        ]
+      },
+      "fingerprint": "a72c354fddf71dbc0ecc0c180f5c67a4809a3417ac92d123e2375e790ad88047",
+      "status": "research_pending",
+      "analysis_id": null
+    },
     {
       "story_id": "wt-e01e1e77e702edc3",
       "story_slug": "mutmasslicher-strom-saboteur-daniel-v-festgenommen-02edc3",
@@ -194,50 +286,6 @@
       },
       "fingerprint": "e5095f24671851661bf26839bac0d41344db6d69b03da9d1c566829dc05b102f",
       "status": "ready_for_research",
-      "analysis_id": null
-    },
-    {
-      "story_id": "wt-84ac3f26c7762712",
-      "story_slug": "milliarden-lucke-im-klimafonds-762712",
-      "story_title": "Milliarden-Lücke im Klimafonds",
-      "editorial_analysis_score": 86,
-      "analysis_gain": 60,
-      "factors": {
-        "systemic_relevance": 14,
-        "impact_potential": 0,
-        "impact_risk": 0,
-        "editorial_priority": 8,
-        "mpd_relevance": 10,
-        "observed_impact": 0,
-        "third_order_relevance": 10,
-        "transformation_relevance": 8,
-        "resilience_relevance": 8,
-        "macro_relevance": 9,
-        "MPD_interdependence": 6,
-        "distribution_relevance": 8,
-        "discourse_relevance": 0,
-        "case_depth": 0,
-        "evidence_quality": 5
-      },
-      "factor_status": {
-        "impact_potential": "open",
-        "impact_risk": "open",
-        "observed_impact": "not_established"
-      },
-      "evidence_gate": {
-        "passed": false,
-        "source_integrity": "verified",
-        "independent_origin_count": 2,
-        "primary_source_count": 0,
-        "cited_claim_count": 4,
-        "primary_source_expected": true,
-        "primary_source_satisfied": false,
-        "reasons": [
-          "primary_source_missing"
-        ]
-      },
-      "fingerprint": "caff2f1749f1c3a3d67256cb866b617bea4b053b01b29473f7b524a7a3a95346",
-      "status": "research_pending",
       "analysis_id": null
     },
     {
@@ -751,7 +799,7 @@
         "reasons": []
       },
       "fingerprint": "08d448f08f13394941e996b9e703740d3916b112119994e4b69f99fe069b9680",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": "woek-analysis-219f434ceb61"
     },
     {
@@ -1006,7 +1054,7 @@
         "reasons": []
       },
       "fingerprint": "3031bdbc2b26f28be8820df22c322a833a7f75e8bd57366cf4751be6200c44b4",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": "woek-analysis-1b3323ad407f"
     },
     {
@@ -1177,7 +1225,7 @@
         "reasons": []
       },
       "fingerprint": "4b256264125a1295f6188f73f8891a2359eb991d6c6315bd560ac00e91a4ebdb",
-      "status": "ready_for_research",
+      "status": "quality_hold",
       "analysis_id": null
     },
     {
@@ -1367,7 +1415,5 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
-  "budget_blocked": true,
-  "budget_block_scope": "shared",
-  "completed_at": "2026-09-09T01:18:42.235Z"
+  "completed_at": "2026-09-09T11:18:39.949Z"
 }

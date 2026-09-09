@@ -2,7 +2,20 @@
 
 Stand: 7. September 2026. Kein Ersatz für die unmittelbare Nachrichtenverarbeitung.
 
+Nachtrag 9. September: Die datierte Budgetfreigabe wurde innerhalb eines
+gemeinsamen API-Gesamtlimits auf 75 EUR brutto fuer September erweitert.
+Die frueheren Zahlen unten dokumentieren den damaligen Stand, nicht einen
+zusaetzlichen Budgettopf. Monatsbindung und Rueckfall sind im
+[September-Budgetnachtrag](WIRKUNGSTICKER-SEPTEMBER-BUDGET-2026-09-09.md) beschrieben.
+
 ## Routing
+
+Nachtrag 9. September: Der planmäßige Editorial-Schritt verwendet jetzt
+`--background-only`. Zeitunkritische Vertiefungen warten bis zur bestehenden
+Batch-Eignung; es gibt keinen stillen teureren Synchron-Fallback. Aktuelle
+Nachrichten und Updates bleiben davon unabhängig. Explizite Aufträge und
+zeitkritische Vertiefungen behalten den direkten Weg. Einzelheiten, Grenzen und
+Prüfnachweise: [Sparbetrieb ohne Nachrichtensperre](WIRKUNGSTICKER-ECONOMY-2026-09-09.md).
 
 - `media_backfill`: fehlender, lokal ausgelöster Frame-/Mediencheck einer bereits veröffentlichten Wirkungsakte.
 - `editorial_background`: eigenständige, recherchereife Vertiefung nach unverändertem Relevanz-, Analysegewinn-, Quellenintegritäts- und Evidenzgate.

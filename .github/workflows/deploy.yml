@@ -105,6 +105,7 @@ jobs:
       - name: Verify #253 state sustainability architecture
         if: steps.release-mode.outputs.ticker_only != 'true'
         run: |
+          bash scripts/ops/prepare-release-history.sh
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
           python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
           python tools/finalize_state_sustainability_matrix.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
