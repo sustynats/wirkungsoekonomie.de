@@ -14,17 +14,22 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..")
 // A reviewed media-only addendum must not rebuild claims, scores or event IDs.
 // The source fingerprint prevents applying a review to changed material.
 export function prepareReviewedMediaImpact(review, registry, stories, now) {
+  const phaseOnly = review.review_type === 'analysis_phase';
   if (!review.review_basis || !review.research_checked_at || !review.correction_note) throw new Error("EDITORIAL_REVIEW_PROVENANCE_REQUIRED");
   const existing = stories.find(story => story.story_id === review.story_id);
   if (!existing?.published || !existing.analysis) throw new Error("EDITORIAL_MEDIA_STORY_REQUIRED");
   const reviewId = sha256(JSON.stringify(review));
   if (existing.versions?.some(version => version.review_id === reviewId)) return { errors: [], record: existing, unchanged: true };
   if (review.expected_content_hash !== existing.content_hash) throw new Error("EDITORIAL_MEDIA_SOURCE_CHANGED");
+  if (phaseOnly && (review.expected_analysis_hash !== sha256(JSON.stringify(existing.analysis)) || !['ex_ante', 'monitoring'].includes(review.analysis_type))) throw new Error('EDITORIAL_PHASE_REVIEW_INVALID');
   const record = structuredClone(existing);
   const report = {};
-  record.analysis.media_impact = structuredClone(review.media_impact);
-  sanitizeAnalysisMediaImpact(record.analysis, record, report, now);
-  record.analysis.media_trigger = mediaTriggerRecord(record.analysis.media_trigger, record);
+  if (phaseOnly) record.analysis.analysis_type = review.analysis_type;
+  else {
+    record.analysis.media_impact = structuredClone(review.media_impact);
+    sanitizeAnalysisMediaImpact(record.analysis, record, report, now);
+    record.analysis.media_trigger = mediaTriggerRecord(record.analysis.media_trigger, record);
+  }
   const integrity = sourceIntegrityForStory(record, registry, stories, now);
   const errors = [...integrity.issues.map(issue => issue.code), ...validateAnalysis({ source_summary: record.source_summary, ...record.analysis }, record, { validateSourceSummaryNumbers: false, persisted: true })];
   if (errors.length) return { errors, candidate: { ...record, source_integrity: integrity } };
@@ -36,20 +41,27 @@ export function prepareReviewedMediaImpact(review, registry, stories, now) {
     title: record.title, previous_title: existing.title, source_summary: record.source_summary,
     analysis: structuredClone(record.analysis), claims: structuredClone(record.claims),
     source_versions: record.sources.map(source => ({ source_id: source.source_id, url: source.url, content_hash: source.content_hash })),
-    provider: "editorial_review", model: "source_bound_review", mode: "media_impact_editorial_review",
+    provider: "editorial_review", model: "source_bound_review", mode: phaseOnly ? 'analysis_phase_editorial_review' : "media_impact_editorial_review",
     review_id: reviewId, review_basis: review.review_basis, research_checked_at: review.research_checked_at,
     method_sources: review.method_sources || [], self_frame_rewrites: report.self_frame_rewrites || 0,
   }];
   record.corrections = [...(existing.corrections || []), { at: now, note: review.correction_note }];
-  record.publication_history = [...(existing.publication_history || []), { version: record.current_version, published_at: now, source_count: record.sources.length, change: "media_impact_added" }];
+  record.publication_history = [...(existing.publication_history || []), { version: record.current_version, published_at: now, source_count: record.sources.length, change: phaseOnly ? 'analysis_phase_corrected' : "media_impact_added" }];
   return { errors: [], record, unchanged: false };
 }
 
 export function prepareReviewedStory(review, registry, stories, now) {
-  if (review.review_type === "media_impact") return prepareReviewedMediaImpact(review, registry, stories, now);
-  if (!review.review_basis || !review.research_checked_at || !review.event_key) throw new Error("EDITORIAL_REVIEW_PROVENANCE_REQUIRED");
-  const id = `wt-${sha256(review.event_key).slice(0, 16)}`;
+  if (['media_impact', 'analysis_phase'].includes(review.review_type)) return prepareReviewedMediaImpact(review, registry, stories, now);
+  const correction = review.review_type === 'story_correction';
+  if (!review.review_basis || !review.research_checked_at || (!correction && !review.event_key)) throw new Error("EDITORIAL_REVIEW_PROVENANCE_REQUIRED");
+  const id = correction ? review.story_id : `wt-${sha256(review.event_key).slice(0, 16)}`;
   const existing = stories.find(story => story.story_id === id);
+  const reviewId = sha256(JSON.stringify(review));
+  if (correction) {
+    if (!existing?.published || !review.correction_note) throw new Error('EDITORIAL_CORRECTION_STORY_REQUIRED');
+    if (existing.versions?.some(version => version.review_id === reviewId)) return { errors: [], record: existing, unchanged: true };
+    if (existing.content_hash !== review.expected_content_hash || sha256(JSON.stringify(existing.analysis)) !== review.expected_analysis_hash) throw new Error('EDITORIAL_CORRECTION_INPUT_CHANGED');
+  }
   const sources = review.sources.map(input => {
     const registered = registry.sources.find(source => source.source_id === input.source_id);
     if (!registered || registered.role === "F") throw new Error("EDITORIAL_SOURCE_NOT_ALLOWED");
@@ -67,9 +79,10 @@ export function prepareReviewedStory(review, registry, stories, now) {
   // not the provisional discovery ledger whose IDs disappear on publication.
   if (analysis.visuals) analysis.visuals = sanitizeVisuals(analysis.visuals, { ...candidate, analysis,
     claims: analysis.event_claims ? persistClaimEvidence(analysis, candidate, now) : candidate.claims }).visuals;
-  const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate)];
+  const errors = [...candidate.source_integrity.issues.map(issue => issue.code), ...validateAnalysis(analysis, candidate, { requireDirectionAssessment: correction })];
   if (errors.length) return { errors, candidate };
   const record = publishedRecord(candidate, analysis, { provider: "editorial_review", model: "source_bound_review", mode: "editorial_review", method_sources: review.method_sources }, now);
+  if (correction) record.versions.at(-1).review_id = reviewId;
   record.editorial_review = { research_checked_at: review.research_checked_at, basis: review.review_basis, original_event_date: review.original_event_date, exclusions: review.exclusions || [] };
   if (review.correction_note && existing && existing.content_hash !== candidate.content_hash) {
     if (typeof review.correction_note !== "string" || review.correction_note.length > 1500) throw new Error("EDITORIAL_CORRECTION_NOTE_INVALID");
@@ -93,6 +106,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
       if (index < 0) store.stories.push(result.record);
       else store.stories[index] = result.record;
       store.updated_at = now;
+      store.public_updated_at = now;
       fs.writeFileSync(`${file}.tmp`, `${JSON.stringify(store, null, 2)}\n`);
       fs.renameSync(`${file}.tmp`, file);
     }

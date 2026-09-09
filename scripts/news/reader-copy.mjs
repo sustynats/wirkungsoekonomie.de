@@ -32,7 +32,7 @@ export function analysisReaderCopy(analysis = {}) {
   const keys = ["source_summary", "summary", "detail_summary", "why_relevant", "impact_potential", "systemic_relevance", "transformation_potential", "resilience", "attribution", "human", "planet", "democracy", "impact_risks", "mechanisms", "first_order", "second_order", "third_order", "side_effects", "uncertainties", "watch_next", "reference_frameworks", "visuals"];
   const media = analysis.media_impact || {};
   const mediaKeys = ["factual_core", "public_explanation", "editorial_assessment", "fact_first_alternative", "fact_first_reframe", "speaker_statement", "frame_analysis", "framing", "resonance", "discourse_effect", "impact_path", "evidence", "observed_impact", "political_context", "source_comparison"];
-  return [keys.map(key => ['human', 'planet', 'democracy'].includes(key)
+  return [[analysis.assessment_frame?.subject, analysis.assessment_frame?.baseline, analysis.observed_outcome?.change], keys.map(key => ['human', 'planet', 'democracy'].includes(key)
     ? [analysis[key]?.rationale, analysis[key]?.positive_path?.mechanism, analysis[key]?.negative_path?.mechanism]
     : analysis[key]), media.relevant ? mediaKeys.map(key => media[key]) : [],
     media.self_frame_check?.recommended_title, media.self_frame_check?.recommended_summary, media.self_frame_check?.recommended_meta_description,

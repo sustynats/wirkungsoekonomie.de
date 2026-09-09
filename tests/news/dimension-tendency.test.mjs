@@ -62,7 +62,8 @@ test('new prompts always include base tendencies, even when optional visuals are
   for (const includeVisuals of [true,false]) {
     const prompt=buildAnalysisPrompt([{story_id:'wt-test',title:'Eine neue Entscheidung',sources:[],claims:[]}],{includeVisuals});
     assert.ok(prompt.includes(DIMENSION_TENDENCY_RULE));
-    assert.equal((prompt.match(/"tendency":/g)||[]).length,3);
+    assert.equal((prompt.match(/"tendency":/g)||[]).length,1, 'one shared MPD schema avoids three paid copies');
+    assert.equal((prompt.match(/"\$ref":"#\/\$defs\/mpd"/g)||[]).length,3);
     if(!includeVisuals) assert.ok(prompt.includes('"visuals":null'));
   }
 });

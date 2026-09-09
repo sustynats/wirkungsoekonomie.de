@@ -21,7 +21,7 @@ import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs"
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260909-security-analysis1";
+const PUBLIC_RELEASE = "20260909-direction-reference1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -437,11 +437,12 @@ function indexPage(stories, updatedAt, { totalStories = stories.length, caseCoun
     <details><summary>Relevanz und Wissensstand richtig lesen</summary><dl class="news-reading-guide__legend">
       <div><dt>hoch / mittel / gering</dt><dd>Relevanz, nicht gut oder schlecht.</dd></div>
       <div><dt>Wirkungspotenzial / Wirkungsrisiko</dt><dd>Mögliche Folge, noch keine eingetretene Wirkung.</dd></div>
+      <div><dt>Beschlossen, aber noch nicht eingetreten?</dt><dd>Ein Beschluss kann bereits ein klar negatives Wirkungsrisiko oder positives Potenzial haben. Der Ticker ordnet plausible Folgen früh ein. Ob, wann und wie stark sie eintreten, wird davon getrennt geprüft.</dd></div>
       <div><dt>Beobachtete Wirkung</dt><dd>Festgestellte Zustandsveränderung mit entsprechender Evidenz.</dd></div>
       <div><dt>Noch nicht eingeordnet</dt><dd>Für diese Dimension fehlt eine Richtungsbewertung. Kein neutrales Urteil.</dd></div>
       <div><dt>Kein belastbarer Wirkpfad</dt><dd>Die Belege dieser Meldung tragen keinen konkreten Bezug zu dieser Dimension. Keine Entwarnung für das gesamte Thema.</dd></div>
       <div><dt>Wirkungsrichtung unklar</dt><dd>Die Richtung ist nicht hinreichend bestimmbar. Ein unsicherer Eintritt oder ein offenes Ausmaß allein macht einen begründeten negativen Wirkpfad nicht neutral.</dd></div>
-      <div><dt>Gegenläufige Wirkpfade</dt><dd>Konkrete positive und negative Folgen werden getrennt begründet, nicht gegeneinander aufgerechnet. Ohne diese Grundlage gibt es keine belastbare Gesamtbilanz.</dd></div>
+      <div><dt>Gegenläufige Wirkpfade</dt><dd>Konkrete positive und negative Folgen brauchen denselben Vergleichszustand und werden nicht verrechnet. Weniger Schaden gegenüber einem schlechteren Entwurf ist noch keine Verbesserung gegenüber dem Ausgangszustand. Ohne getrennte Begründung gibt es keine belastbare Gesamtbilanz.</dd></div>
     </dl></details>
   </section>
   <aside class="news-install-promo" data-news-install-promo data-search-exclude hidden aria-labelledby="news-install-promo-title">
@@ -602,10 +603,11 @@ export function storyPage(story, { newerStory = null, nextStory = null, allStori
     : /^(fakt|gesichert|belegt)\b/i.test(factStatement) ? factStatement : `Gesichert ist: ${factStatement}`;
   const primarySourceCount = story.sources.filter((source) => source.primary_source).length;
   const primarySourceNames = [...new Set(story.sources.filter((source) => source.primary_source).map((source) => source.publisher))].join(", ");
-  const primary = story.sources.find((source) => source.primary_source && !["legal_context", "election_calendar"].includes(source.source_role)) || story.sources[0];
+  const eventSources = story.sources.filter(source => !["legal_context", "election_calendar", "background"].includes(source.source_role));
+  const primary = eventSources.find(source => source.primary_source) || eventSources[0] || story.sources[0];
   const visuals = sanitizeVisuals(a.visuals, story).visuals;
-  const originalSources = [...story.sources]
-    .filter((source) => source === primary || (source.primary_source && !["legal_context", "election_calendar"].includes(source.source_role)))
+  const originalSources = eventSources
+    .filter(source => source === primary || source.primary_source)
     .sort((left, right) => Date.parse(right.published_at || 0) - Date.parse(left.published_at || 0));
   const sourceSummaryLinks = originalSources.map((source, index) => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${index === 0 ? "Originalquelle ansehen" : `Weitere Originalquelle bei ${escapeHtml(source.publisher)}`}</span>${renderIcon("extern")}</a>`).join("");
   const sources = story.sources.map((source) => `<li class="news-source"><span class="news-source__avatar${source.primary_source ? "" : " news-source__avatar--secondary"}" aria-hidden="true">${escapeHtml(publisherInitials(source.publisher))}</span><a href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</span>${renderIcon("extern")}</a><div class="news-source-meta"><span class="news-badge${source.primary_source ? "" : " news-badge--update"}">${source.primary_source ? "Primärbeleg / Selbstauskunft" : "Journalistischer Bericht / Kontext"}</span><span>${escapeHtml(source.date_status === "undated_reference" ? `Ohne Veröffentlichungsdatum · geprüft ${formatDate(source.retrieved_at, { dateOnly: true })}` : formatDate(source.published_at, { dateOnly: true }))}</span>${source.publisher_id ? `<a class="text-link" href="../quellen/${escapeHtml(source.publisher_id)}/">Quellenprofil</a>` : ""}</div></li>`).join("");

@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { directionAssessmentErrors, directionInputDiagnostics, dimensionAssessment, normalizeEmptyDirectionPaths, DIRECTION_ASSESSMENT_VERSION, DIRECTION_SEPARATION_RULE } from '../../scripts/news/direction-assessment.mjs';
+import { directionAssessmentErrors, directionInputDiagnostics, dimensionAssessment, normalizeEmptyDirectionPaths, DIRECTION_ASSESSMENT_VERSION, DIRECTION_SEPARATION_RULE, DIRECTION_REFERENCE_RULE, NEWS_DIMENSION_SCHEMA } from '../../scripts/news/direction-assessment.mjs';
 import { renderDimensionMeters, renderImpactPath, sanitizeVisuals } from '../../scripts/news/visuals.mjs';
 import { buildAnalysisPrompt, validateAnalysis } from '../../scripts/news/lib.mjs';
 import { analysisValidationDiagnostics, shouldRetryQualityGate } from '../../scripts/news/run.mjs';
@@ -10,12 +10,14 @@ import { analysisReaderCopy } from '../../scripts/news/reader-copy.mjs';
 import { resolveEvidenceReferences, sourceEvidenceSegments } from '../../scripts/news/newsroom.mjs';
 
 const sources = [{source_id:'source-999'}];
+const path = mechanism => ({mechanism,source_ids:['source-999'],effect_type:'independent_change',reference:'assessment_baseline'});
 const fixture = () => ({direction_assessment_version:DIRECTION_ASSESSMENT_VERSION,
-  ...Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',tendency:'risiko',direction_basis:'assessed',rationale:'Fällt die spezialisierte Beratung weg, sinkt die erreichbare Hilfe. Eintritt und Ausmaß sind offen.'}]))});
-const mixed = () => ({positive_path:{mechanism:'Zusätzliche Beratung erleichtert den Zugang zu Hilfe.',source_ids:['source-999']},negative_path:{mechanism:'Gleichzeitiger Mittelentzug verkürzt die Öffnungszeiten.',source_ids:['source-999']}});
+  assessment_frame:{subject:'Änderung der erreichbaren Beratungsangebote.',baseline:'Fortführung der bisherigen Beratungsangebote ohne den Eingriff.'},
+  ...Object.fromEntries(['human','planet','democracy'].map(key=>[key,{relevance:'hoch',tendency:'risiko',direction_basis:'assessed',rationale:'Fällt die spezialisierte Beratung weg, sinkt die erreichbare Hilfe. Eintritt und Ausmaß sind offen.',positive_path:null,negative_path:path('Mittelentzug verkürzt die Öffnungszeiten der Beratungsstelle.')}]))});
+const mixed = () => ({positive_path:path('Zusätzliche Beratung erleichtert den Zugang zu Hilfe.'),negative_path:path('Gleichzeitiger Mittelentzug verkürzt die Öffnungszeiten.')});
 
 test('exact empty optional path objects normalize to null without changing the judgment',()=>{
-  const a=fixture();a.human.tendency='chance';a.planet.tendency='offen';a.planet.direction_basis='no_path';
+  const a=fixture();for(const key of ['human','planet','democracy'])Object.assign(a[key],{tendency:'offen',direction_basis:'no_path'});
   for(const key of ['human','planet','democracy'])Object.assign(a[key],{positive_path:{mechanism:'',source_ids:[]},negative_path:{mechanism:'  ',source_ids:[]}});
   const original=directionInputDiagnostics(a,sources),rationales=Object.values(a).filter(x=>x?.rationale).map(x=>x.rationale);
   assert.equal(normalizeEmptyDirectionPaths(a).length,6);
@@ -122,32 +124,79 @@ test('unimplemented negative risk stays negative; uncertainty is not a positive 
 
 test('new contract is present with visuals disabled and is enforced in the production worker',()=>{
   const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}],{includeVisuals:false});
-  assert.ok(prompt.includes(DIRECTION_SEPARATION_RULE));assert.ok(prompt.includes('"direction_assessment_version":"1.0"'));
+  assert.ok(prompt.includes(DIRECTION_SEPARATION_RULE));assert.ok(prompt.includes(`"direction_assessment_version":"${DIRECTION_ASSESSMENT_VERSION}"`));
+  assert.ok(prompt.includes(DIRECTION_REFERENCE_RULE));
   assert.ok(prompt.includes('"visuals":null'));assert.ok(prompt.length<39000);
   assert.match(fs.readFileSync('scripts/news/run.mjs','utf8'),/validateAnalysis\(analysis, analysisCandidate, \{ requireDirectionAssessment: true \}\)/);
 });
 
 for (const includeVisuals of [true, false]) test(`the actual output template includes both mixed paths (visuals=${includeVisuals})`,()=>{
   const prompt=buildAnalysisPrompt([{story_id:'test',title:'Test',claims:[],sources:[]}],{includeVisuals});
-  const schema=JSON.parse(prompt.split('\n').find(line=>line.startsWith('{"analyses":'))).analyses[0];
+  const template=JSON.parse(prompt.split('\n').find(line=>line.startsWith('{"analyses":')));
+  const schema=template.analyses[0];
   for (const key of ['human','planet','democracy']) {
-    assert.deepEqual(schema[key].positive_path,{mechanism:'string',source_ids:['string']});
-    assert.deepEqual(schema[key].negative_path,{mechanism:'string',source_ids:['string']});
+    assert.equal(schema[key].$ref,'#/$defs/mpd');
+    schema[key]=structuredClone(template.$defs.mpd);
+    assert.deepEqual(schema[key].positive_path,NEWS_DIMENSION_SCHEMA.positive_path);
+    assert.deepEqual(schema[key].negative_path,NEWS_DIMENSION_SCHEMA.negative_path);
   }
-  assert.match(prompt,/sonst beide null/);
+  assert.match(prompt,/unbenötigte Pfade null/);
   const analysis=fixture();
   for (const key of ['human','planet','democracy']) {
     analysis[key]={...schema[key],relevance:'hoch',tendency:'gemischt',direction_basis:'assessed',rationale:fixture()[key].rationale,...mixed()};
   }
   assert.deepEqual(directionAssessmentErrors(analysis,sources,{requireCurrent:true}),[]);
-  for (const key of ['human','planet','democracy']) Object.assign(analysis[key],{tendency:'risiko',positive_path:null,negative_path:null});
+  for (const key of ['human','planet','democracy']) Object.assign(analysis[key],{tendency:'risiko',positive_path:null,negative_path:fixture()[key].negative_path});
   assert.deepEqual(directionAssessmentErrors(analysis,sources,{requireCurrent:true}),[], 'no invented counterpaths required for a negative judgment');
+});
+
+test('mixed findings require independent changes against the same baseline, not offsets or missing benefits',()=>{
+  for(const [key,value] of [['effect_type','mitigation_only'],['effect_type','unrealized_benefit'],['effect_type','procedural_possibility'],['reference','other_baseline']]) {
+    const a=fixture();a.planet.tendency='gemischt';Object.assign(a.planet,mixed());
+    a.planet.positive_path[key]=value;
+    const before=JSON.stringify(a);
+    assert.ok(directionAssessmentErrors(a,sources,{requireCurrent:true}).includes('AI_DIRECTION_MIXED_PATHS_REQUIRED:planet'));
+    assert.equal(dimensionAssessment(a,'planet').status,'unresolved_balance');
+    assert.equal(JSON.stringify(a),before,'never silently replace the verdict');
+  }
+  const a=fixture();a.planet.tendency='gemischt';Object.assign(a.planet,mixed());
+  a.planet.negative_path.effect_type='unrealized_benefit';
+  assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:planet:negative_path'));
+  a.democracy.tendency='chance';a.democracy.positive_path={...mixed().positive_path,effect_type:'procedural_possibility'};
+  assert.ok(directionAssessmentErrors(a,sources).includes('AI_DIRECTION_INDEPENDENT_PATH_REQUIRED:democracy:positive_path'));
+});
+
+test('reference is visible on compact and detailed meters, escaped, and required only in the new contract',()=>{
+  const a=fixture();
+  for(const compact of [true,false]) {
+    const html=renderDimensionMeters(a,{compact});
+    assert.match(html,/Bewertet:/);assert.ok(html.includes(a.assessment_frame.subject));
+    assert.match(html,/Verglichen mit:/);assert.ok(html.includes(a.assessment_frame.baseline));
+  }
+  a.assessment_frame.subject='<script>Do not execute this text</script>';
+  assert.doesNotMatch(renderDimensionMeters(a),/<script>/);
+  delete a.assessment_frame;
+  assert.ok(directionAssessmentErrors(a,sources,{requireCurrent:true}).includes('AI_DIRECTION_REFERENCE_REQUIRED'));
+  a.direction_assessment_version='1.0';
+  assert.deepEqual(directionAssessmentErrors(a,sources),[],'historical data are not blocked or rewritten');
+  assert.ok(directionAssessmentErrors(a,sources,{requireCurrent:true}).includes('AI_DIRECTION_ASSESSMENT_REQUIRED'));
 });
 
 test('source IDs are evidence metadata, not unsupported numeric reader claims',()=>{
   const a=fixture();a.human.tendency='gemischt';Object.assign(a.human,mixed());
   assert.ok(!JSON.stringify(analysisReaderCopy(a)).includes('source-999'));
   assert.ok(JSON.stringify(analysisReaderCopy(a)).includes(a.human.positive_path.mechanism));
+});
+
+test('adoption still permits ex-ante risk; retrospective outcome requires a separately sourced change',()=>{
+  const a=fixture();a.status='beschlossen';a.analysis_type='ex_ante';
+  assert.deepEqual(directionAssessmentErrors(a,sources,{requireCurrent:true}),[]);
+  a.analysis_type='ex_post';
+  assert.ok(directionAssessmentErrors(a,sources,{requireCurrent:true}).includes('AI_OBSERVED_OUTCOME_REQUIRED'));
+  a.observed_outcome={change:'Die tatsächlich erreichten Beratungsstunden sind gesunken.',source_ids:['source-999'],attribution:'open'};
+  assert.deepEqual(directionAssessmentErrors(a,sources,{requireCurrent:true}),[], 'observation need not pretend proven causality');
+  a.observed_outcome.source_ids=['unknown'];
+  assert.ok(directionAssessmentErrors(a,sources,{requireCurrent:true}).includes('AI_OBSERVED_OUTCOME_REQUIRED'));
 });
 
 test('full validation rejects malformed fresh direction without invalidating historical publications',()=>{
