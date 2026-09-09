@@ -96,6 +96,14 @@ Für den Vollrelease wird zusätzlich die fehlende Vergleichsreferenz des
 Historien-Gates begrenzt nachgeladen, ohne den exakten Release-Commit zu ändern
 oder das Gate zu überspringen. Keine unbeschränkte Historien-/Binärdateiladung.
 
+Die erste Vollrelease-Prüfung mit dieser Korrektur bestand das Historien-Gate
+und sämtliche 31 fachlichen Architekturprüfungen. Danach stoppte die Prüfung
+korrekt an einem veralteten eingecheckten Seiteninventar: inzwischen waren
+weitere Nachrichten und Quellen hinzugekommen. Die JSON-/Markdown-Auditmatrix
+wird deshalb mit den vorhandenen drei Auditgeneratoren für den aktuellen
+Release-Stand erneuert und nochmals geprüft. Der deterministische Vergleich
+bleibt erhalten; ein grüner Nachrichten-Schnellrelease ersetzt dieses Gate nicht.
+
 Regressionen prüfen gezielte Korrektur und Scope-Injection, vollständige
 Nachvalidierung, unveränderte/neue Evidenz, dauerhafte Aufträge, Priorität,
 Quellen- und Budget-Holds, begrenzte Qualitätswiederholung, bezahlte

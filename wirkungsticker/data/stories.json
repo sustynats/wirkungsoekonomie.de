@@ -1,7 +1,557 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T06:51:40.537Z",
+  "updated_at": "2026-09-09T07:06:43.209Z",
   "stories": [
+    {
+      "story_id": "wt-483945dfcc2a8794",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "bundeshaushalt-wird-das-geld-auch-sinnvoll-ausgegeben-2a8794",
+      "title": "Bundeshaushalt: Wird das Geld auch sinnvoll ausgegeben?",
+      "source_summary": "Die SWR-Aktuell-Meldung berichtet über den neuen Haushaltsentwurf der Bundesregierung. Für das nächste Jahr sind 555 Milliarden Euro Ausgaben vorgesehen; laut Bericht sind davon ein Fünftel neue Schulden, mit den Sondervermögen für Infrastruktur und Verteidigung sogar ein Drittel. Finanzminister Lars Klingbeil stellte den Entwurf im Bundestag vor.\n\nIm Zentrum des Beitrags steht die Einordnung des Finanzwissenschaftlers Hans-Peter Burghof von der Universität Hohenheim. Er sagt, nicht einzelne Posten müssten pauschal infrage gestellt werden, sondern es gehe darum, ob Geld sinnvoll ausgegeben werde. Als Beispiele nennt er Entwicklungshilfe und manche Klimaschutz-Ausgaben; bei Verteidigung hält er neue Schulden für gerechtfertigt, wenn das Geld wirksamer eingesetzt wird.",
+      "summary": "Es geht um den neuen Haushaltsentwurf mit 555 Milliarden Euro. Der Beitrag verbindet die Zahlen mit der Frage, ob die Mittel effizient eingesetzt werden.",
+      "detail_summary": "Der Beitrag macht eine neue Haushaltsgröße öffentlich: Für das nächste Jahr sind 555 Milliarden Euro Ausgaben vorgesehen, dazu kommt neue Verschuldung. Damit ist der Text materialisch relevant, weil er einen konkreten Finanzrahmen und die Art der Finanzierung beschreibt. Burghof setzt den Akzent nicht auf einzelne Posten, sondern auf die Frage, ob Ausgaben tatsächlich Wirkung entfalten. Daraus ergibt sich ein Wirkpfad über Priorisierung, Effizienz und Verteilung von Haushaltsmitteln. Mögliche Folgen sind Verschiebungen zwischen Politikfeldern wie Entwicklungshilfe, Klimaschutz und Verteidigung. Wie stark das auf Menschen, Staat oder öffentliche Leistungen wirkt, bleibt in der Meldung offen; sie enthält eine Bewertung und keine belastbare Wirkungsmessung.",
+      "why_relevant": "Der Beitrag zeigt einen neuen Haushaltsentwurf mit großer fiskalischer Reichweite und eine zugeschriebene Priorisierungsdebatte über staatliche Mittelverwendung.",
+      "topic": [
+        "Soziales",
+        "Finanzen"
+      ],
+      "status": "Entwurf",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Der Haushaltsentwurf kann Verteilung, Umfang und Zielgenauigkeit staatlicher Ausgaben verändern. Ob das für Menschen netto positiv oder negativ wirkt, hängt von späteren Prioritäten und der Effizienz der Umsetzung ab.",
+          "positive_path": {
+            "mechanism": "Wenn Mittel stärker in wirksame Leistungen fließen, können öffentliche Angebote und finanzielle Nachhaltigkeit steigen.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn Schulden und Ausgaben ohne ausreichende Wirkung priorisiert werden, steigt die Belastung künftiger Haushalte ohne entsprechenden Nutzen.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Klimaschutz-Ausgaben werden ausdrücklich als Prüfpunkt genannt. Die Wirkung hängt davon ab, ob Mittel in wirksame Maßnahmen oder in wenig effiziente Programme fließen.",
+          "positive_path": {
+            "mechanism": "Wirksam eingesetzte Klimaausgaben können Emissionen oder Anpassungsdefizite mindern.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Unwirksame oder teure Maßnahmen binden Mittel, ohne den Umweltzustand spürbar zu verbessern.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          }
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Die Debatte über Sinn und Effizienz der Ausgaben kann die öffentliche Kontrolle von Haushaltsentscheidungen stärken. Das ist aber zunächst ein Diskussions- und kein Wirkungsnachweis.",
+          "positive_path": {
+            "mechanism": "Öffentliche Prüfung von Prioritäten kann die demokratische Korrekturfähigkeit von Haushaltsentscheidungen erhöhen.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Wenn die Debatte nur als Schlagwortstreit geführt wird, kann sie Entscheidungen eher vernebeln als kontrollierbar machen.",
+            "source_ids": [
+              "swr-aktuell"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "staat",
+          "unternehmen",
+          "haushalte"
+        ]
+      },
+      "media_impact": {
+        "relevant": true,
+        "relevance_level": "medium",
+        "reason": "Die Überschrift und die zugeschriebene Bedrohungs-/Generalisierungslogik rahmen die Haushaltsdebatte als Frage sinnvoller Mittelverwendung.",
+        "factual_core": "Berichtet wird über den neuen Haushaltsentwurf mit 555 Milliarden Euro und über Burghofs Kritik an der Effizienz einzelner Ausgaben.",
+        "epistemic_status": {
+          "confirmed": [
+            "Der Haushaltsentwurf soll 555 Milliarden Euro umfassen",
+            "Burghof fordert Fokus auf sinnvolle Ausgaben"
+          ],
+          "actor_claims": [
+            "Burghof hält Reformen bei Alterssicherung und Rente für geboten",
+            "Burghof nennt Entwicklungshilfe und Klimaschutz als prüfungswürdig"
+          ],
+          "open": [
+            "Wie der Bundestag den Entwurf verändert"
+          ]
+        },
+        "attribution": {
+          "frame_source": "SWR Aktuell",
+          "speaker": "Hans-Peter Burghof",
+          "original_term": "Bedrohung",
+          "usage_type": "direct_quote",
+          "placement": [
+            "headline"
+          ],
+          "attribution_quality": "clear_but_prominent"
+        },
+        "speaker_statement": {
+          "present": false,
+          "speaker": "offen",
+          "statement": "",
+          "status": "open"
+        },
+        "framing": {
+          "detected": true,
+          "term": "Bedrohung",
+          "origin_in_story": "SWR Aktuell",
+          "media_usage": "body",
+          "attribution_quality": "unklare Attribution",
+          "factual_status": "offen",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "political_history_relevant": false,
+          "political_history": "",
+          "political_history_evidence": []
+        },
+        "frame_analysis": {
+          "frame_detected": true,
+          "frame_term": "Bedrohung",
+          "frame_type": [
+            "Bedrohung"
+          ],
+          "problem_definition": "Hohe Staatsausgaben und Neuverschuldung werden als Anlass für Wirkungsprüfung dargestellt.",
+          "implied_cause": "Zu viel Geld kann ohne ausreichende Wirkung ausgegeben werden.",
+          "implied_responsibility": "Haushaltspolitik und Priorisierung der Bundesregierung",
+          "implied_threat": "Belastung künftiger Generationen und ineffiziente Mittelbindung",
+          "implied_solution_space": "Sinnvolle, wirksamere Ausgaben und Effizienzprüfung",
+          "material_omissions": [
+            "Keine Wirkungsdaten zu einzelnen Ausgabenposten",
+            "Keine Gegenposition mit eigener Evidenz im Beitrag"
+          ]
+        },
+        "political_context": {
+          "relevant": false,
+          "classification": "",
+          "evidence_based": false,
+          "evidence": [],
+          "uncertainty": "Der Beitrag ist politisch anschlussfähig, bleibt aber primär eine haushalts- und wirkungsbezogene Einordnung."
+        },
+        "resonance": {
+          "resonance_space": "",
+          "resonance_risk": "",
+          "normalization_potential": "",
+          "repetition_effect": "",
+          "trust_effect": "",
+          "polarization_potential": "",
+          "discourse_effect": ""
+        },
+        "discourse_effect": {
+          "impact_status": "potential",
+          "resonance_space": "Haushalts- und Prioritätsdebatte über staatliche Ausgaben",
+          "normalization_potential": "medium",
+          "repetition_risk": "medium",
+          "polarization_potential": "mittel",
+          "trust_effect_potential": "mittel",
+          "discourse_effect_potential": "Der Beitrag kann Wirkungsorientierung im Haushaltsstreit stärken, aber auch vereinfachende Gegenüberstellungen von 'sinnvoll' und 'verschwendet' begünstigen."
+        },
+        "impact_path": {
+          "first_order": "Haushaltsfragen werden als Effizienzfrage gerahmt",
+          "second_order": "Einzelne Ausgabenbereiche geraten stärker unter Rechtfertigungsdruck",
+          "third_order": "Wirkungsorientierung kann zu dauerhafterem Prüfstandard werden"
+        },
+        "evidence": {
+          "status": "medium",
+          "level": "medium",
+          "what_is_known": "555 Milliarden Euro geplanter Ausgaben Ein Fünftel neue Schulden Ein Drittel inklusive Sondervermögen aus Schulden",
+          "what_is_inferred": "Der Beitrag kann eine Wirkungsdebatte verstärken",
+          "what_is_open": "Nur eine journalistische Quelle Keine Messung tatsächlicher Publikumswirkung",
+          "facts": [
+            "555 Milliarden Euro geplanter Ausgaben",
+            "Ein Fünftel neue Schulden",
+            "Ein Drittel inklusive Sondervermögen aus Schulden"
+          ],
+          "observations": [
+            "Burghof verlangt Fokus auf sinnvolle Ausgaben",
+            "Burghof nennt Entwicklungshilfe, Klimaschutz und Verteidigung"
+          ],
+          "inferences": [
+            "Der Beitrag kann eine Wirkungsdebatte verstärken"
+          ],
+          "impact_potentials": [
+            "Mehr Aufmerksamkeit für Effizienzfragen im Haushalt"
+          ],
+          "impact_risks": [
+            "Pauschalisierung komplexer Ausgabenentscheidungen"
+          ],
+          "observed_impacts": [],
+          "limitations": [
+            "Nur eine journalistische Quelle",
+            "Keine Messung tatsächlicher Publikumswirkung"
+          ]
+        },
+        "observed_impact": {
+          "present": false,
+          "description": null,
+          "evidence": []
+        },
+        "public_explanation": "Die Meldung stellt einen neuen Bundeshaushalt vor und verbindet ihn mit der Frage, ob das Geld wirklich sinnvoll ausgegeben wird. Genannt werden 555 Milliarden Euro Ausgaben, dazu neue Schulden und Sondervermögen. Der Finanzwissenschaftler Burghof sagt, es gehe nicht darum, jeden Posten pauschal infrage zu stellen, sondern um die Wirkung der Mittel. Das ist für die Debatte wichtig, weil es Prioritäten sichtbar macht. Eine echte Wirkung auf Menschen, Klima oder Demokratie ist damit aber noch nicht belegt; dafür bräuchte es konkrete Entscheidungen und spätere Daten.",
+        "editorial_assessment": "Die Meldung stellt einen neuen Bundeshaushalt vor und verbindet ihn mit der Frage, ob das Geld wirklich sinnvoll ausgegeben wird. Genannt werden 555 Milliarden Euro Ausgaben, dazu neue Schulden und Sondervermögen. Der Finanzwissenschaftler Burghof sagt, es gehe nicht darum, jeden Posten pauschal infrage zu stellen, sondern um die Wirkung der Mittel. Das ist für die Debatte wichtig, weil es Prioritäten sichtbar macht. Eine echte Wirkung auf Menschen, Klima oder Demokratie ist damit aber noch nicht belegt; dafür bräuchte es konkrete Entscheidungen und spätere Daten.",
+        "fact_first_alternative": "Sachlich: Neuer Bundeshaushalt mit 555 Milliarden Euro und Debatte über wirksame Ausgaben. Wissensstand: Bericht und Interview, keine Wirkungsbilanz. Attribution: Burghof plädiert für Effizienzprüfung. Frame: die Überschrift setzt die Mittelverwendung als Bedrohungs- und Prüfproblem.",
+        "fact_first_reframe": {
+          "title": "",
+          "source_summary": "",
+          "summary": "",
+          "detail_summary": ""
+        },
+        "self_frame_warning": false,
+        "self_frame_check": {
+          "problem_detected": false,
+          "problems": [],
+          "frame_repetition_count": 0,
+          "rewrite_required": false,
+          "recommended_title": "Bundeshaushalt: Neue Zahlen und Streit um wirksame Ausgaben",
+          "recommended_summary": "Der neue Haushaltsentwurf umfasst 555 Milliarden Euro und hohe Schuldenanteile. Im Beitrag steht die Frage im Vordergrund, ob die Mittel sinnvoll eingesetzt werden.",
+          "recommended_meta_description": "Neuer Bundeshaushalt, neue Schulden, alte Frage: Werden die Mittel wirksam ausgegeben?"
+        },
+        "source_comparison": {
+          "sufficient_basis": false,
+          "finding": ""
+        }
+      },
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T07:06:43.209Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T06:44:10.000Z",
+      "last_updated": "2026-09-09T07:09:20.670Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-7a05db8d188a251e28b5",
+      "case_file": null,
+      "source_published_at": "2026-09-09T06:44:10.000Z",
+      "published_at": "2026-09-09T07:09:20.670Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "swr-aktuell"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Haushaltsentwurf im weiteren Verfahren verändert wird",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Änderungen an Volumen, Neuverschuldung oder Ausgabenposten im weiteren Verfahren",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-45aff19bd98e1850",
+          "announced_at": "2026-09-09T06:44:10.000Z",
+          "follow_up_date": "2026-09-16T07:09:20.670Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob und wie die Bundesregierung einzelne Ausgabenbereiche priorisiert",
+          "source_id": "swr-aktuell",
+          "expected_by": null,
+          "measurable_indicator": "Beschlüsse zu Entwicklungshilfe, Klimaschutz oder Verteidigung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-239bffbd41d28832",
+          "announced_at": "2026-09-09T06:44:10.000Z",
+          "follow_up_date": "2026-09-16T07:09:20.670Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell-radio/haushaltswoche-bundestag-geld-sinnvoll-100.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T06:44:10.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f81a621f2a1d2142",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "width": 1200,
+          "height": 630
+        }
+      },
+      "slug": "wahlergebnis-sachsen-anhalt-sepp-muller-will-neuer-cdu-landesvorstand-werden-1d2142",
+      "title": "Wahlergebnis Sachsen-Anhalt: Sepp Müller will neuer CDU-Landesvorstand werden",
+      "source_summary": "Drei Tage nach der Landtagswahl in Sachsen-Anhalt läuft die Regierungsbildung weiter. MDR berichtet im Liveticker, dass zugleich die Nachfolge von Sven Schulze als CDU-Landeschef gesucht wird.\n\nIn einem zweiten MDR-Beitrag heißt es, Sepp Müller wolle CDU-Landeschef in Sachsen-Anhalt werden. Der Beitrag beschreibt die Kandidatur als Versuch von Erneuerung und einer klaren Abgrenzung zu AfD und Linken. Offen bleibt, wie die innerparteiliche Entscheidung ausgeht und ob daraus bereits ein verbindlicher Kurswechsel folgt.",
+      "summary": "MDR meldet eine offene Führungsfrage in der CDU Sachsen-Anhalt und die Kandidatur von Sepp Müller für den Landesvorsitz. Das ist für die Partei und die Regierungsbildung relevant, die Wirkung bleibt aber vorläufig.",
+      "detail_summary": "Der konkrete Befund ist einfach: Nach der Landtagswahl ist die Koalitionssuche in Sachsen-Anhalt weiter offen, und zugleich wird in der CDU die Nachfolge von Sven Schulze als Landeschef gesucht. MDR berichtet dazu, dass Sepp Müller für den Landesvorsitz kandidieren will. Materiell neu ist daran die sichtbare Führungs- und Kursfrage in der Landespartei. Das kann die innerparteiliche Machtverteilung, die Koalitionsfähigkeit und die spätere Regierungsbildung beeinflussen. Eine eingetretene Wirkung ist daraus noch nicht ableitbar; es bleibt eine angekündigte Entwicklung mit offenem Ausgang und nur einem belastbaren Quellenstrang.",
+      "why_relevant": "Die Meldung betrifft eine offene Führungsfrage in der größten Regierungspartei des Landes und damit einen möglichen Einfluss auf Koalitionsbildung und Kurs der Landespolitik.",
+      "topic": [
+        "Demokratie",
+        "Politik",
+        "Gesellschaft"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "mittel",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Kandidatur kann die parteiinterne Ordnung und die Koalitionsfähigkeit stabilisieren, wenn sie Akzeptanz schafft; sie kann aber auch neue Konflikte über Kurs und Personal auslösen.",
+          "positive_path": {
+            "mechanism": "Ein neuer Landeschef kann die CDU organisatorisch ordnen und die Bildung einer Regierungsmehrheit erleichtern.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein umstrittener Führungswechsel kann interne Spannungen verstärken und Verhandlungen mit anderen Parteien erschweren.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        },
+        "planet": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "no_path",
+          "rationale": "Aus den Quellen ergibt sich kein belastbarer direkter Umwelt- oder Klimapfad.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "hoch",
+          "tendency": "gemischt",
+          "direction_basis": "assessed",
+          "rationale": "Die Führungsfrage betrifft die demokratische Korrekturfähigkeit der Landespartei und mittelbar die Bildung einer handlungsfähigen Regierung.",
+          "positive_path": {
+            "mechanism": "Ein geordneter Führungswechsel kann innerparteiliche Verantwortung klären und Regierungsbildung ermöglichen.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          },
+          "negative_path": {
+            "mechanism": "Ein konfliktbeladener Wechsel kann die Verständigung zwischen Parteien verzögern und die Regierungsbildung belasten.",
+            "source_ids": [
+              "mdr-nachrichten"
+            ]
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kommunen",
+          "staat",
+          "beschaeftigte"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T07:06:43.209Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T04:00:03.000Z",
+      "last_updated": "2026-09-09T07:08:46.443Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-7bb9ce28f9a9713882c5",
+      "case_file": {
+        "case_id": "case-c3b7412b8f0f9d",
+        "member_count": 11,
+        "publisher_count": 13,
+        "members": [
+          {
+            "story_id": "wt-f81a621f2a1d2142",
+            "slug": "wahlergebnis-sachsen-anhalt-sepp-muller-will-neuer-cdu-landesvorstand-werden-1d2142",
+            "title": "Wahlergebnis Sachsen-Anhalt: Sepp Müller will neuer CDU-Landesvorstand werden",
+            "summary": "MDR meldet eine offene Führungsfrage in der CDU Sachsen-Anhalt und die Kandidatur von Sepp Müller für den Landesvorsitz. Das ist für die Partei und die Regierungsbildung relevant, die Wirkung bleibt aber vorläufig.",
+            "updated_at": "2026-09-09T07:08:46.443Z",
+            "published_at": "2026-09-09T07:08:46.443Z",
+            "kind": "Weitere Entwicklung",
+            "current": true
+          },
+          {
+            "story_id": "wt-bbe37953fcbe9af5",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD verschickt Einladung zu Gesprächen an CDU",
+            "summary": "Die AfD hat nach dem Wahlabend Einladungen zu Gesprächen verschickt; laut MDR liegt ein Schreiben an die CDU vor. Ein Ergebnis der Gespräche ist noch offen.",
+            "updated_at": "2026-09-08T20:23:17.271Z",
+            "published_at": "2026-09-08T20:23:17.271Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-ed33c0962c4a697d",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
+            "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
+            "updated_at": "2026-09-08T17:10:25.881Z",
+            "published_at": "2026-09-07T13:43:48.649Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-550f98293aec9698",
+            "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
+            "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
+            "updated_at": "2026-09-08T11:24:45.444Z",
+            "published_at": "2026-09-08T11:24:45.444Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-255776ddd744e745",
+            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
+            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
+            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
+            "updated_at": "2026-09-08T05:54:13.168Z",
+            "published_at": "2026-09-07T20:39:39.302Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-ce34d0b6e55327b5",
+            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
+            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
+            "updated_at": "2026-09-07T18:23:55.805Z",
+            "published_at": "2026-09-07T18:23:55.805Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-67096fe077900925",
+            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
+            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
+            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
+            "updated_at": "2026-09-07T13:43:27.050Z",
+            "published_at": "2026-09-07T13:43:27.050Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-e10c23f5e37ed39e",
+            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
+            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
+            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
+            "updated_at": "2026-09-06T20:53:01.243Z",
+            "published_at": "2026-09-06T20:53:01.243Z",
+            "kind": "Weitere Entwicklung",
+            "current": false
+          },
+          {
+            "story_id": "wt-12f9c680daba4f09",
+            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
+            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
+            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
+            "updated_at": "2026-09-06T20:07:20.597Z",
+            "published_at": "2026-09-06T20:07:20.597Z",
+            "kind": "Angekündigte Maßnahme",
+            "current": false
+          },
+          {
+            "story_id": "wt-7ebecf5b3f91d490",
+            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
+            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
+            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
+            "updated_at": "2026-09-05T23:19:18.605Z",
+            "published_at": "2026-09-05T22:07:32.381Z",
+            "kind": "Neues Ereignis",
+            "current": false
+          },
+          {
+            "story_id": "wt-06476c6e980f5f47",
+            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
+            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
+            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
+            "updated_at": "2026-09-05T12:28:41.779Z",
+            "published_at": "2026-09-05T12:01:00.915Z",
+            "kind": "Kontext oder Einordnung",
+            "current": false
+          }
+        ]
+      },
+      "source_published_at": "2026-09-08T20:33:01.000Z",
+      "published_at": "2026-09-09T07:08:46.443Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "mdr-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": [
+          {
+            "source_ids": [
+              "mdr-nachrichten",
+              "mdr-nachrichten"
+            ],
+            "reason": "same_publisher",
+            "document_pairs": 1
+          }
+        ]
+      },
+      "followups": [
+        {
+          "claim": "Ob Sepp Müller tatsächlich zum CDU-Landeschef gewählt wird.",
+          "source_id": "mdr-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "Beschluss oder Wahl zum Landesvorsitz",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-de3ae7ad411a06fb",
+          "announced_at": "2026-09-09T06:42:55.000Z",
+          "follow_up_date": "2026-09-16T07:08:46.443Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-168,wahl-560.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T06:42:55.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/kandidatur-landesvorsitzender-cdu-100,sepp-mueller-158.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T20:33:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-74fc3eeaa714d5fb",
       "title_image": {
@@ -2202,410 +2752,6 @@
           "url": "https://www.ndr.de/nachrichten/schleswig-holstein/angriff-mit-stichwaffe-in-ahrensburg-tatverdaechtiger-festgenommen,gewalttat-124.html",
           "source_type": "media_rss",
           "published_at": "2026-09-08T06:55:02.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
-      "story_id": "wt-bbe37953fcbe9af5",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
-      "title": "Wahlergebnis Sachsen-Anhalt: AfD verschickt Einladung zu Gesprächen an CDU",
-      "source_summary": "Nach der Landtagswahl in Sachsen-Anhalt meldet der MDR, die AfD habe erste Einladungen zu Gesprächen über die politische Zukunft des Landes verschickt. Nach MDR-Angaben liegt der Redaktion ein Schreiben an die CDU vor.\n\nDer Text ist als Liveblog angelegt und beschreibt die laufenden Entwicklungen nach der Wahl; ein konkretes Ergebnis der Gespräche wird darin noch nicht genannt. Offen bleibt damit, ob und wie die angeschriebenen Parteien reagieren.",
-      "summary": "Die AfD hat nach dem Wahlabend Einladungen zu Gesprächen verschickt; laut MDR liegt ein Schreiben an die CDU vor. Ein Ergebnis der Gespräche ist noch offen.",
-      "detail_summary": "Der Kern ist eine neue politische Entwicklung nach der Landtagswahl in Sachsen-Anhalt: Die AfD sucht laut MDR das Gespräch mit der CDU und weiteren künftig im Landtag vertretenen Parteien. Das ist relevant, weil es um die Anbahnung möglicher Mehrheiten, Sondierungen und damit um den weiteren Regierungsbildungsprozess geht. Der Wirkpfad führt von der Einladung über mögliche Gespräche zu Koalitionsoptionen, Abgrenzungen oder Blockaden im Parlament. Eine materielle Folge kann erst entstehen, wenn daraus konkrete Bündnisse, Ausschlüsse oder Verfahrensentscheidungen werden. Die Evidenz ist vorläufig: Vorliegt hier nur ein einzelner MDR-Bericht mit einem angeblich exklusiven Schreiben; die Reaktionen der Angeschriebenen bleiben offen.",
-      "why_relevant": "Die Meldung betrifft unmittelbar die politische Anschlussfähigkeit nach einer Landtagswahl und damit demokratische Willensbildung, Mehrheitsbildung und mögliche Regierungsoptionen.",
-      "topic": [
-        "Demokratie",
-        "Politik"
-      ],
-      "status": "offen",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Es ist eine Einladung zu Gesprächen belegt, aber noch keine belastbare Zustandsänderung im Regierungsprozess oder bei Rechten/Lasten der Bevölkerung.",
-          "positive_path": {
-            "mechanism": "Gespräche können Sondierungen und damit geordnete Mehrheitsbildung oder Klärung von Koalitionsoptionen auslösen.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Die Einladung kann Polarisierung, Abgrenzung und Blockaden im Parlament verstärken, wenn sie Gespräche nicht eröffnet.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "Aus der Meldung ergibt sich kein direkter Umwelt- oder Klimapfad.",
-          "positive_path": {
-            "mechanism": "Kein belastbarer Umweltpfad in der Meldung erkennbar.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Kein belastbarer Umweltpfad in der Meldung erkennbar.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        },
-        "democracy": {
-          "relevance": "hoch",
-          "tendency": "gemischt",
-          "direction_basis": "assessed",
-          "rationale": "Die Einladung betrifft die Regierungs- und Mehrheitsbildung nach der Wahl. Das kann Verhandlungskanäle öffnen, zugleich aber auch Konfliktlinien und Abgrenzung im Parlament verschärfen.",
-          "positive_path": {
-            "mechanism": "Sondierungen können Entscheidungsfähigkeit und formale Klärung von Mehrheiten verbessern.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Die Einladung kann den Konflikt um Zusammenarbeit mit der AfD verschärfen und die parlamentarische Zusammenarbeit belasten.",
-            "source_ids": [
-              "mdr-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "kommunen",
-          "staat",
-          "unternehmen"
-        ]
-      },
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "medium",
-        "reason": "Die Meldung bündelt ein politisch aufgeladenes Wahl-Nachwahl-Thema und kann als Signal für Sondierungen und Abgrenzungen gelesen werden.",
-        "factual_core": "Die AfD hat laut MDR Einladungen zu Gesprächen über die politische Zukunft Sachsen-Anhalts verschickt; ein Schreiben an die CDU liegt der Redaktion vor.",
-        "epistemic_status": {
-          "confirmed": [
-            "MDR berichtet über verschickte Einladungen und ein Schreiben an die CDU."
-          ],
-          "actor_claims": [
-            "Die AfD habe erste Einladungen zu Gesprächen verschickt."
-          ],
-          "open": [
-            "Ob und wann die CDU oder andere Parteien reagieren"
-          ]
-        },
-        "attribution": {
-          "frame_source": "MDR",
-          "speaker": "AfD laut MDR",
-          "original_term": "rechtsextremistisch",
-          "usage_type": "indirect_quote",
-          "placement": [
-            "headline"
-          ],
-          "attribution_quality": "clear_but_prominent"
-        },
-        "speaker_statement": {
-          "present": false,
-          "speaker": "offen",
-          "statement": "",
-          "status": "open"
-        },
-        "framing": {
-          "detected": true,
-          "term": "rechtsextremistisch",
-          "origin_in_story": "MDR",
-          "media_usage": "body",
-          "attribution_quality": "unklare Attribution",
-          "factual_status": "offen",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "frame_analysis": {
-          "frame_detected": true,
-          "frame_term": "rechtsextremistisch",
-          "frame_type": [
-            "Bedrohung"
-          ],
-          "problem_definition": "Die Überschrift rahmt die politische Entwicklung als konflikthaft und sicherheitsnah.",
-          "implied_cause": "Die AfD als Akteur wird mit einem stark wertenden politischen Label eingeführt.",
-          "implied_responsibility": "Die Partei wird kommunikativ als Auslöser des Konfliktrahmens gesetzt.",
-          "implied_threat": "Mögliche Gefahr oder Zuspitzung im politischen Umgang miteinander.",
-          "implied_solution_space": "Abgrenzung, Prüfung von Gesprächen, formale politische Reaktionen.",
-          "material_omissions": [
-            "Konkrete Reaktionen der CDU und anderer Parteien",
-            "Ob das Schreiben tatsächlich zu Gesprächen führt"
-          ]
-        },
-        "political_context": {
-          "relevant": true,
-          "classification": "Landtagswahl und Regierungsbildung",
-          "evidence_based": true,
-          "evidence": [
-            {
-              "source": "mdr-nachrichten",
-              "claim_supported": "Die Meldung betrifft Gespräche über die politische Zukunft Sachsen-Anhalts nach der Wahl."
-            }
-          ],
-          "uncertainty": "Die tatsächlichen Folgen für Koalitionen oder Mehrheiten sind noch offen."
-        },
-        "resonance": {
-          "resonance_space": "",
-          "resonance_risk": "",
-          "normalization_potential": "",
-          "repetition_effect": "",
-          "trust_effect": "",
-          "polarization_potential": "",
-          "discourse_effect": ""
-        },
-        "discourse_effect": {
-          "impact_status": "potential",
-          "resonance_space": "Hohe Aufmerksamkeit für Koalitionsfragen, Abgrenzung zur AfD und politische Stabilität nach der Wahl.",
-          "normalization_potential": "low",
-          "repetition_risk": "medium",
-          "polarization_potential": "mittel bis hoch",
-          "trust_effect_potential": "offen",
-          "discourse_effect_potential": "Kann Verhandlungsdruck oder Abgrenzung verstärken, ohne selbst schon eine Entscheidung zu sein."
-        },
-        "impact_path": {
-          "first_order": "Einladung zu Gesprächen und mediale Verbreitung",
-          "second_order": "öffentliche Reaktionen, Abgrenzung oder Verhandlungsbereitschaft",
-          "third_order": "Einfluss auf den Rahmen der Regierungsbildung und parlamentarischen Zusammenarbeit"
-        },
-        "evidence": {
-          "status": "low",
-          "level": "low",
-          "what_is_known": "MDR meldet verschickte Einladungen zu Gesprächen. Ein Schreiben an die CDU soll der Redaktion vorliegen.",
-          "what_is_inferred": "Daraus kann ein Gesprächsprozess oder eine klare Ablehnung entstehen.",
-          "what_is_open": "Nur eine journalistische Quelle im Datensatz Kein bestätigtes Ergebnis der Gespräche",
-          "facts": [
-            "MDR meldet verschickte Einladungen zu Gesprächen.",
-            "Ein Schreiben an die CDU soll der Redaktion vorliegen."
-          ],
-          "observations": [
-            "Die Meldung ist ein Liveblog-Eintrag nach der Wahl."
-          ],
-          "inferences": [
-            "Daraus kann ein Gesprächsprozess oder eine klare Ablehnung entstehen."
-          ],
-          "impact_potentials": [
-            "Mehr Transparenz über Mehrheitsoptionen",
-            "Frühzeitige Klärung politischer Positionen"
-          ],
-          "impact_risks": [
-            "Zusätzliche Polarisierung",
-            "Blockadeeffekte bei der Regierungsbildung"
-          ],
-          "observed_impacts": [],
-          "limitations": [
-            "Nur eine journalistische Quelle im Datensatz",
-            "Kein bestätigtes Ergebnis der Gespräche"
-          ]
-        },
-        "observed_impact": {
-          "present": false,
-          "description": null,
-          "evidence": []
-        },
-        "public_explanation": "Die Meldung sagt erst einmal nur: Die AfD hat nach der Wahl Gespräche angeboten, und der MDR hat dazu ein Schreiben an die CDU gesehen. Das ist politisch wichtig, weil solche Einladungen der Startpunkt für Sondierungen, Absprachen oder auch klare Absagen sein können. Noch ist aber nicht belegt, dass daraus schon etwas Konkretes geworden ist. Deshalb geht es hier um ein mögliches Wirkpotenzial im politischen Verfahren, nicht um eine بالفعل eingetretene Wirkung. Die Zuschreibung ist journalistisch vermittelt und nur in diesem Rahmen belastbar.",
-        "editorial_assessment": "Die Meldung sagt erst einmal nur: Die AfD hat nach der Wahl Gespräche angeboten, und der MDR hat dazu ein Schreiben an die CDU gesehen. Das ist politisch wichtig, weil solche Einladungen der Startpunkt für Sondierungen, Absprachen oder auch klare Absagen sein können. Noch ist aber nicht belegt, dass daraus schon etwas Konkretes geworden ist. Deshalb geht es hier um ein mögliches Wirkpotenzial im politischen Verfahren, nicht um eine بالفعل eingetretene Wirkung. Die Zuschreibung ist journalistisch vermittelt und nur in diesem Rahmen belastbar.",
-        "fact_first_alternative": "Sachlich: Nach der Wahl verschickt die AfD Einladungen zu Gesprächen; laut MDR liegt ein Schreiben an die CDU vor. Wissensstand: ein journalistisch berichteter Vorabstand. Attribution: MDR berichtet über ein vorliegendes AfD-Schreiben. Frame: politisch aufgeladene Darstellung mit Konfliktpotenzial.",
-        "fact_first_reframe": {
-          "title": "",
-          "source_summary": "",
-          "summary": "",
-          "detail_summary": ""
-        },
-        "self_frame_warning": false,
-        "self_frame_check": {
-          "problem_detected": false,
-          "problems": [],
-          "frame_repetition_count": 0,
-          "rewrite_required": false,
-          "recommended_title": "AfD verschickt Einladung zu Gesprächen an CDU",
-          "recommended_summary": "Die AfD hat nach der Wahl Gespräche angeboten; laut MDR liegt ein Schreiben an die CDU vor. Ein Ergebnis ist noch offen.",
-          "recommended_meta_description": "Nach der Sachsen-Anhalt-Wahl verschickt die AfD Gesprächeinladungen an die CDU; der MDR berichtet über ein vorliegendes Schreiben."
-        },
-        "source_comparison": {
-          "sufficient_basis": false,
-          "finding": ""
-        }
-      },
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T20:21:54.035Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T19:52:01.000Z",
-      "last_updated": "2026-09-08T20:23:17.271Z",
-      "version": 1,
-      "news_status": "developing",
-      "event_id": "event-9b0d6a04db8967aed972",
-      "case_file": {
-        "case_id": "case-c3b7412b8f0f9d",
-        "member_count": 10,
-        "publisher_count": 13,
-        "members": [
-          {
-            "story_id": "wt-bbe37953fcbe9af5",
-            "slug": "wahlergebnis-sachsen-anhalt-afd-verschickt-einladung-zu-gesprachen-an-cdu-be9af5",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD verschickt Einladung zu Gesprächen an CDU",
-            "summary": "Die AfD hat nach dem Wahlabend Einladungen zu Gesprächen verschickt; laut MDR liegt ein Schreiben an die CDU vor. Ein Ergebnis der Gespräche ist noch offen.",
-            "updated_at": "2026-09-08T20:23:17.271Z",
-            "published_at": "2026-09-08T20:23:17.271Z",
-            "kind": "Weitere Entwicklung",
-            "current": true
-          },
-          {
-            "story_id": "wt-ed33c0962c4a697d",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-sieht-afd-am-zug-und-sich-in-der-opposition-4a697d",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht AfD am Zug – und sich in der Opposition",
-            "summary": "Vorläufiges Wahlergebnis, politische Reaktion und ein organisatorischer Folgeschritt stehen nebeneinander. Materiell neu ist vor allem der vorgeschlagene Eingriff in den MPK-Vorsitzplan; die weiteren Folgen bleiben offen.",
-            "updated_at": "2026-09-08T17:10:25.881Z",
-            "published_at": "2026-09-07T13:43:48.649Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-550f98293aec9698",
-            "slug": "wahlergebnis-sachsen-anhalt-bundesweit-grosse-sorge-nach-der-wahl-ec9698",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD will zu Gesprächen über Koalition einladen",
-            "summary": "Die AfD will nach dem Wahlabend alle im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Koalition ist laut Quelle derzeit nicht in Sicht.",
-            "updated_at": "2026-09-08T11:24:45.444Z",
-            "published_at": "2026-09-08T11:24:45.444Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-255776ddd744e745",
-            "slug": "landtagswahl-in-sachsen-anhalt-schulze-kundigt-nach-cdu-wahlpleite-konsequenzen-an-44e745",
-            "title": "Landtagswahl in Sachsen-Anhalt: Schulze kündigt nach CDU-Wahlpleite Konsequenzen an",
-            "summary": "Die CDU in Sachsen-Anhalt steht nach der Wahlniederlage vor einer neuen Führungsfrage. Eine Entscheidung über den künftigen Landesvorsitz ist noch offen.",
-            "updated_at": "2026-09-08T05:54:13.168Z",
-            "published_at": "2026-09-07T20:39:39.302Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-ce34d0b6e55327b5",
-            "slug": "wahlergebnis-sachsen-anhalt-cdu-landesvorstand-stellt-amter-zur-verfugung-5327b5",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU-Landesvorstand stellt Ämter zur Verfügung",
-            "summary": "Die CDU in Sachsen-Anhalt zieht nach der Wahlniederlage personelle Konsequenzen. Über die neue Parteiführung soll im November entschieden werden.",
-            "updated_at": "2026-09-07T18:23:55.805Z",
-            "published_at": "2026-09-07T18:23:55.805Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-67096fe077900925",
-            "slug": "wahlergebnis-sachsen-anhalt-aktuelle-entwicklungen-im-liveticker-900925",
-            "title": "Wahlergebnis Sachsen-Anhalt: CDU sieht für sich keinen Regierungsauftrag mehr",
-            "summary": "Der MDR meldet ein vorläufiges Wahlergebnis und eine politische Reaktion der CDU. Zusätzlich nennt der Bericht Sitz- und Frauenanteile für den neuen Landtag.",
-            "updated_at": "2026-09-07T13:43:27.050Z",
-            "published_at": "2026-09-07T13:43:27.050Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-e10c23f5e37ed39e",
-            "slug": "wahlergebnis-sachsen-anhalt-afd-laut-hochrechnung-mit-rekordwert-cdu-sturzt-ab-7ed39e",
-            "title": "Wahlergebnis Sachsen-Anhalt: AfD laut Hochrechnung mit Rekordwert – CDU stürzt ab",
-            "summary": "Die AfD liegt laut MDR-Hochrechnung bei der Landtagswahl in Sachsen-Anhalt vorn. Die CDU fällt demnach deutlich zurück.",
-            "updated_at": "2026-09-06T20:53:01.243Z",
-            "published_at": "2026-09-06T20:53:01.243Z",
-            "kind": "Weitere Entwicklung",
-            "current": false
-          },
-          {
-            "story_id": "wt-12f9c680daba4f09",
-            "slug": "wahlergebnis-sachsen-anhalt-alle-wahlkreise-im-uberblick-ba4f09",
-            "title": "Wahlergebnis Sachsen-Anhalt: Alle Wahlkreise im Überblick",
-            "summary": "Sachsen-Anhalt hat einen neuen Landtag gewählt, das Ergebnis ist aber noch vorläufig. Der MDR verweist auf Wahlkreis-, Regional- und Sitzgrafiken sowie auf die spätere Feststellung durch den Landeswahlausschuss.",
-            "updated_at": "2026-09-06T20:07:20.597Z",
-            "published_at": "2026-09-06T20:07:20.597Z",
-            "kind": "Angekündigte Maßnahme",
-            "current": false
-          },
-          {
-            "story_id": "wt-7ebecf5b3f91d490",
-            "slug": "vor-sachsen-anhalt-wahl-siegmund-lasst-kandidatur-bei-knapper-mehrheit-offen-91d490",
-            "title": "Sachsen-Anhalt-Wahl: Unterschiedliche Berichte zu Siegmunds Kandidatur bei knapper Mehrheit",
-            "summary": "Vor der Sachsen-Anhalt-Wahl schreibt n-tv Siegmund Regierungsbereitschaft auch bei knapper Mehrheit zu. Ein späterer BILD-Artikel verweist dagegen auf seine frühere Antwort; Artikelzeit und Aussagezeit sind zu unterscheiden.",
-            "updated_at": "2026-09-05T23:19:18.605Z",
-            "published_at": "2026-09-05T22:07:32.381Z",
-            "kind": "Neues Ereignis",
-            "current": false
-          },
-          {
-            "story_id": "wt-06476c6e980f5f47",
-            "slug": "vor-wahl-in-sachsen-anhalt-cdu-kandidat-keine-koalition-mit-links-oder-afd-0f5f47",
-            "title": "Vor Wahl in Sachsen-Anhalt: CDU-Kandidat: „Keine Koalition mit Links oder AfD“",
-            "summary": "Kurz vor der Landtagswahl in Sachsen-Anhalt sind Wahlkampf, Demonstrationen und Polizeieinsatz die prägenden Themen. Mehrere Berichte erwarten zugleich ein starkes AfD-Ergebnis.",
-            "updated_at": "2026-09-05T12:28:41.779Z",
-            "published_at": "2026-09-05T12:01:00.915Z",
-            "kind": "Kontext oder Einordnung",
-            "current": false
-          }
-        ]
-      },
-      "source_published_at": "2026-09-08T19:52:01.000Z",
-      "published_at": "2026-09-08T20:23:17.271Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "mdr-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [
-        {
-          "claim": "Ob die CDU die Einladung annimmt oder ablehnt",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "öffentliche Reaktion der CDU",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-36271b128ad8deee",
-          "announced_at": "2026-09-08T19:52:01.000Z",
-          "follow_up_date": "2026-09-15T20:23:17.271Z",
-          "status": "scheduled"
-        },
-        {
-          "claim": "Welche weiteren Parteien Gespräche mit der AfD führen",
-          "source_id": "mdr-nachrichten",
-          "expected_by": null,
-          "measurable_indicator": "namentlich bestätigte Gesprächsteilnahmen",
-          "expected_by_evidence_hash": null,
-          "followup_id": "followup-80f124732f2f98b9",
-          "announced_at": "2026-09-08T19:52:01.000Z",
-          "follow_up_date": "2026-09-15T20:23:17.271Z",
-          "status": "scheduled"
-        }
-      ],
-      "sources": [
-        {
-          "publisher": "MDR",
-          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-166,wahl-560.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T19:52:01.000Z",
           "primary_source": false
         }
       ]
