@@ -2,29 +2,29 @@
   "schema_version": "1.0",
   "execute": true,
   "bootstrap": false,
-  "started_at": "2026-09-09T04:37:31.653Z",
+  "started_at": "2026-09-09T04:53:43.935Z",
   "scanned_stories": 181,
   "scanned_subjects": 159,
   "editorial_candidates": 31,
   "ready_for_research": 9,
   "research_pending": 10,
-  "retry_deferred": 5,
+  "retry_deferred": 2,
   "editorial_research_sources_discovered": 47,
-  "selected": 4,
+  "selected": 6,
   "editorial_research_started": 0,
   "editorial_analyses_published": 0,
   "editorial_analyses_updated": 0,
-  "research_calls": 0,
+  "research_calls": 1,
   "research_tokens": 0,
   "analysis_tokens": 0,
   "estimated_cost_usd": 0,
   "quality_retries": 0,
-  "publication_deferred": false,
+  "publication_deferred": true,
   "failed": [
     {
-      "story_id": "wt-f03755f6f6b8c3b7",
+      "story_id": "wt-366b1fbfa120e44f",
       "reason": "AI_BUDGET_EXHAUSTED",
-      "next_attempt_at": "2026-09-09T04:52:31.653Z"
+      "next_attempt_at": "2026-09-09T05:08:43.935Z"
     }
   ],
   "candidates": [
@@ -1367,7 +1367,8 @@
     "timing_reconciled": 0,
     "attention_required": []
   },
+  "batch_deferred": 2,
   "budget_blocked": true,
   "budget_block_scope": "shared",
-  "completed_at": "2026-09-09T04:37:59.988Z"
+  "completed_at": "2026-09-09T04:54:13.495Z"
 }
