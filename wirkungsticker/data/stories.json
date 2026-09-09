@@ -1,7 +1,357 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-09-09T15:48:55.143Z",
+  "updated_at": "2026-09-09T15:59:40.828Z",
   "stories": [
+    {
+      "story_id": "wt-dc2a1dc727ed2b66",
+      "title_image": {
+        "mode": "impact_card",
+        "label": "Wirkungskarte · WÖk-Einordnung",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dc2a1dc727ed2b66-2baa970019a61612-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dc2a1dc727ed2b66-41e02bc499753bb5-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-dc2a1dc727ed2b66-5254e9211767bb1b-square.png",
+          "width": 1080,
+          "height": 1080
+        }
+      },
+      "slug": "berliner-gesetze-werden-jugendcheck-unterzogen-ed2b66",
+      "title": "Berliner Gesetze werden \"Jugendcheck\" unterzogen",
+      "source_summary": "Berlin will alle Gesetze und politischen Vorhaben künftig einem Jugendcheck unterziehen. Nach Angaben von Bildungssenatorin Katharina Günther-Wünsch sollen Vorhaben systematisch darauf geprüft werden, welche Auswirkungen sie auf Kinder, Jugendliche und junge Erwachsene haben. Die Senatorin sagt, die Perspektive junger Menschen werde dadurch frühzeitig im Gesetzgebungsverfahren berücksichtigt und generationengerechte Politik gestärkt.\n\nZum Programm gehört auch eine Jugendwohnagentur für junge Menschen, die nach Pflegefamilien oder Heimen eine Wohnung suchen. Außerdem tritt Berlin der Initiative „Kinderfreundliche Kommunen“ bei und will die UN-Kinderrechtskonvention als verbindlichen Maßstab verankern. Offen bleibt, wie verbindlich das Vorhaben rechtlich wird und wie die Kontrolle konkret aussieht.",
+      "summary": "Berlin kündigt an, Gesetze und Vorhaben künftig mit einem Jugendcheck zu prüfen. Das verändert zunächst den Prüfrahmen im Verfahren, nicht belegt sind aber schon messbare Folgen für einzelne Entscheidungen.",
+      "detail_summary": "Berlin kündigt einen Jugendcheck für alle Gesetze und politischen Vorhaben an. Der Kern ist ein neuer Prüfmaßstab im Verfahren: Vorhaben sollen systematisch auf Folgen für Kinder, Jugendliche und junge Erwachsene angesehen werden. Materiell relevant ist das, weil sich damit Regeln, Abwägungen und mögliche Zielkonflikte im Entscheidungsprozess ändern können. Ein möglicher Wirkpfad läuft über frühere Berücksichtigung der jungen Zielgruppe zu veränderten Verwaltungs- und Gesetzesentscheidungen. Ob daraus tatsächlich andere Ergebnisse entstehen, bleibt offen. Die Quelle nennt keine Verfahrensordnung, keine Bindungswirkung und keine Messdaten zu Folgen; deshalb ist die Evidenz für ex-post-Wirkungen noch zu schwach.",
+      "why_relevant": "Die Ankündigung verändert den Prüfrahmen für Berliner Gesetze und Vorhaben und kann damit Entscheidungen für Kinder und Jugendliche beeinflussen.",
+      "topic": [
+        "Politik"
+      ],
+      "status": "angekündigt",
+      "analysis_type": "ex_ante",
+      "importance": "mittel",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Der Jugendcheck kann frühe Berücksichtigung von Kinder- und Jugendbelangen in Verfahren stärken und so die Chance auf passendere Entscheidungen erhöhen, wenn er verbindlich und wirksam umgesetzt wird.",
+          "positive_path": {
+            "mechanism": "Frühere Prüfung von Folgen für junge Menschen kann Abwägungen in Gesetzgebung und Vorhaben verändern.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Bleibt der Jugendcheck unverbindlich oder formal, kann er zusätzliche Prüfung ohne spürbare Entscheidungsänderung erzeugen.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "offen",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Aus den Quellen ergibt sich kein direkter Bezug zu Umwelt-, Klima- oder Ressourcenzuständen.",
+          "positive_path": null,
+          "negative_path": null
+        },
+        "democracy": {
+          "relevance": "mittel",
+          "tendency": "chance",
+          "direction_basis": "assessed",
+          "rationale": "Ein transparenter Jugendcheck kann demokratische Korrekturfähigkeit stärken, wenn junge Zielgruppen systematisch im Verfahren berücksichtigt werden und die Regeln öffentlich nachvollziehbar sind.",
+          "positive_path": {
+            "mechanism": "Mehr strukturierte Folgenprüfung kann die Berücksichtigung bisher schwächer vertretener Interessen verbessern.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Ohne klare Verbindlichkeit kann der Jugendcheck eher kommunikativ wirken als die Entscheidungsmacht tatsächlich zu verändern.",
+            "source_ids": [
+              "rbb24-nachrichten"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "affected_groups": [
+          "kinder_jugend",
+          "kommunen",
+          "staat"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T15:59:40.828Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-08T15:52:01.000Z",
+      "last_updated": "2026-09-09T16:03:06.224Z",
+      "version": 3,
+      "news_status": "preliminary",
+      "event_id": "event-5ba297268ddffd901500",
+      "case_file": null,
+      "source_published_at": "2026-09-08T15:52:01.000Z",
+      "published_at": "2026-09-08T19:55:13.089Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "rbb24-nachrichten"
+          ]
+        ],
+        "possible_independent_origins": 1,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Jugendcheck rechtlich verbindlich oder nur politisch angekündigt wird, bleibt zu klären.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "rechtliche Form und Verbindlichkeit der Regelung",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-bcdb322630059ca3",
+          "announced_at": "2026-09-08T15:52:01.000Z",
+          "follow_up_date": "2026-09-16T16:03:06.224Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Offen ist, wie der Jugendcheck konkret umgesetzt und kontrolliert wird.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "veröffentlichte Verfahrensregeln, Zuständigkeiten und Kontrolle",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-fb3f8a7e63d5c838",
+          "announced_at": "2026-09-08T15:52:01.000Z",
+          "follow_up_date": "2026-09-16T16:03:06.224Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Zu prüfen bleibt, ob sich daraus messbare Änderungen an Entscheidungen ergeben.",
+          "source_id": "rbb24-nachrichten",
+          "expected_by": null,
+          "measurable_indicator": "nachweisbare Änderung von Gesetzes- oder Vorhabenentscheidungen",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-cfea49538c2feb1b",
+          "announced_at": "2026-09-08T15:52:01.000Z",
+          "follow_up_date": "2026-09-16T16:03:06.224Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "rbb24",
+          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-jugendcheck-gesetze-generationsgerechtere-politik.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T15:52:01.000Z",
+          "primary_source": false
+        }
+      ]
+    },
+    {
+      "story_id": "wt-f6c8def394d52291",
+      "title_image": {
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
+        "og": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f6c8def394d52291-d5dab2467699070f-og.png",
+          "width": 1200,
+          "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f6c8def394d52291-160e66fe1cb791d4-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f6c8def394d52291-93747494c033356e-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-f6c8def394d52291-b3a3ca95cd3a02c4-source.png"
+        }
+      },
+      "slug": "borse-dax-im-minus-beiersdorf-aktie-im-blick-wall-street-unter-druck-olpreise-ziehen-wei-d52291",
+      "title": "Börse: Dax im Minus, Beiersdorf-Aktie im Blick, Wall Street unter Druck, Ölpreise ziehen weiter an",
+      "source_summary": "Der Bericht von manager magazin beschreibt schwächere Aktienmärkte: Der Dax baut seine Verluste aus und liegt zeitweise fast 500 Punkte im Minus. Auch an der Wall Street geben die Kurse nach; im Börsenoberhaus steht kaum noch ein Wert im Plus.\n\nDer NDR meldet zugleich einen Ölpreis von über 100 Dollar am Morgen. Als Grund nennt der Sender die weitere militärische Eskalation am Persischen Golf und die Sorge vor Lieferunterbrechungen aus dem Nahen Osten. Der gemeinsame Befund ist eine gleichzeitige Belastung von Energie- und Aktienmärkten; offene Fragen bleiben Ausmaß, Dauer und Kausalzusammenhang über den Morgen hinaus.",
+      "summary": "Öl über 100 Dollar, Aktien schwächer: Der Befund zeigt einen gleichzeitigen Preisschub bei Energie und Druck auf Leitindizes. Wie lange und wie breit das anhält, bleibt offen.",
+      "detail_summary": "Die beiden Berichte zeigen am selben Morgen zwei zusammenhängende Marktbewegungen: Der Ölpreis steigt über 100 Dollar, während der Dax seine Verluste ausbaut und die Wall Street schwächer tendiert. Als Anlass nennt der NDR die militärische Eskalation am Persischen Golf und die Sorge vor Lieferunterbrechungen aus dem Nahen Osten. Der manager-magazin-Bericht beschreibt die Folgen an den Aktienmärkten, nicht die Ursache. Für die Einordnung ist wichtig: Hier wird keine eingetretene Realwirtschaftsfolge belegt, sondern zunächst eine Marktreaktion auf ein geopolitisches Risiko. Ein möglicher Wirkpfad läuft über teurere Energie, höhere Kosten und sinkende Risikobereitschaft an den Börsen. Wie stark, wie lang und wie breit diese Entwicklung trägt, bleibt in den Quellen offen.",
+      "why_relevant": "Die Meldung verbindet einen neuen Ölpreisschock mit unmittelbaren Marktreaktionen an Dax und Wall Street. Das ist materiell, weil Energiepreise, Finanzierungskosten und Börsenstimmung reale Folgewirkungen auf Unternehmen, Haushalte und Märkte haben können.",
+      "topic": [
+        "Politik",
+        "Energie"
+      ],
+      "status": "laufende Entwicklung",
+      "analysis_type": "ex_ante",
+      "importance": "hoch",
+      "dimensions": {
+        "human": {
+          "relevance": "hoch",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Teureres Rohöl kann Kosten, Inflationserwartungen und Finanzmarktvolatilität erhöhen; die Berichte zeigen bereits fallende Aktienkurse und einen Ölpreisanstieg.",
+          "positive_path": {
+            "mechanism": "Wenn die Lage sich rasch beruhigt, könnten Lieferängste nachlassen und Preise sowie Kurse stabilisieren.",
+            "source_ids": [
+              "ndr-info",
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Bei anhaltender Eskalation können Lieferunterbrechungen, höhere Energiepreise und weitere Kursverluste folgen.",
+            "source_ids": [
+              "ndr-info",
+              "manager-magazin-news"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "planet": {
+          "relevance": "mittel",
+          "tendency": "risiko",
+          "direction_basis": "assessed",
+          "rationale": "Höhere Ölpreise können den Verbrauch fossiler Energie bremsen, zugleich aber die Abhängigkeit von Öl als Preissignal und Versorgungsthema sichtbar machen; ökologische Entlastung ist nicht belegt.",
+          "positive_path": {
+            "mechanism": "Ein dauerhaft teureres Öl kann Anreize für sparsameren Verbrauch und Alternativen stärken.",
+            "source_ids": [
+              "ndr-info"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Wenn Märkte auf Knappheitsangst reagieren, kann der Druck auf fossile Beschaffung und kurzfristige Ausweichpfade steigen.",
+            "source_ids": [
+              "ndr-info"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        },
+        "democracy": {
+          "relevance": "gering",
+          "tendency": "offen",
+          "direction_basis": "unclear",
+          "rationale": "Die Quellen zeigen Markt- und Preisdruck, aber keinen direkten demokratischen Effekt. Politische Debatten über Energie- und Sicherheitspolitik sind möglich, jedoch nicht belegt.",
+          "positive_path": {
+            "mechanism": "Öffentlicher Druck kann die Prüfung von Energieversorgung und Krisenresilienz anstoßen.",
+            "source_ids": [
+              "ndr-info"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          },
+          "negative_path": {
+            "mechanism": "Anhaltende Krisenlage kann Entscheidungsdruck erhöhen und politische Prioritäten verengen.",
+            "source_ids": [
+              "ndr-info"
+            ],
+            "effect_type": "independent_change",
+            "reference": "assessment_baseline"
+          }
+        }
+      },
+      "visuals": {
+        "key_figures": [
+          {
+            "label": "Dax-Verlust in der Spitze",
+            "value": "fast 500",
+            "unit": "Punkte",
+            "context": "Vom manager-magazin beschriebener Höchstverlust des Dax",
+            "claim_id": "wt-f6c8def394d52291-v1-claim-1"
+          }
+        ],
+        "affected_groups": [
+          "unternehmen",
+          "verbraucherinnen",
+          "investoren"
+        ]
+      },
+      "media_impact": null,
+      "media_analysis_version": "2.1",
+      "media_checked_at": "2026-09-09T15:59:40.828Z",
+      "editorial_analysis": null,
+      "first_seen": "2026-09-09T06:56:00.000Z",
+      "last_updated": "2026-09-09T16:02:49.376Z",
+      "version": 1,
+      "news_status": "developing",
+      "event_id": "event-ba7496e9ab1ed3c3095f",
+      "case_file": null,
+      "source_published_at": "2026-09-09T13:53:33.000Z",
+      "published_at": "2026-09-09T16:02:49.376Z",
+      "evidence_groups": {
+        "groups": [
+          [
+            "manager-magazin-news"
+          ],
+          [
+            "ndr-info"
+          ]
+        ],
+        "possible_independent_origins": 2,
+        "independence_is_verified": false,
+        "dependencies": []
+      },
+      "followups": [
+        {
+          "claim": "Ob der Ölpreis im Tagesverlauf weiter über 100 Dollar bleibt oder wieder darunter fällt.",
+          "source_id": "ndr-info",
+          "expected_by": null,
+          "measurable_indicator": "notierter Ölpreis im Tagesverlauf",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-3082d786d96ff7ae",
+          "announced_at": "2026-09-09T13:53:33.000Z",
+          "follow_up_date": "2026-09-16T16:02:49.376Z",
+          "status": "scheduled"
+        },
+        {
+          "claim": "Ob sich die Verluste im Dax und an der Wall Street bis zum Handelsschluss vergrößern oder verringern.",
+          "source_id": "manager-magazin-news",
+          "expected_by": null,
+          "measurable_indicator": "Stand der Leitindizes zum Handelsschluss",
+          "expected_by_evidence_hash": null,
+          "followup_id": "followup-0aad10e764157c85",
+          "announced_at": "2026-09-09T15:11:00.000Z",
+          "follow_up_date": "2026-09-16T16:02:49.376Z",
+          "status": "scheduled"
+        }
+      ],
+      "sources": [
+        {
+          "publisher": "manager magazin",
+          "url": "https://www.manager-magazin.de/finanzen/boerse/boerse-dax-im-minus-beiersdorf-aktie-im-blick-wall-street-unter-druck-oelpreise-ziehen-weiter-an-a-96974463-c6d8-446a-b350-3649808ac481",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T15:11:00.000Z",
+          "primary_source": false
+        },
+        {
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/nachrichten/info/wirtschaft-oelpreis-steigt-auf-ueber-100-dollar,audio-3467118.html",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T13:53:33.000Z",
+          "primary_source": false
+        }
+      ]
+    },
     {
       "story_id": "wt-5d9f4bf00c16b314",
       "title_image": {
@@ -2447,12 +2797,25 @@
     {
       "story_id": "wt-84ac3f26c7762712",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-84ac3f26c7762712-82e7c021d5a8b70b-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-84ac3f26c7762712-c9a6ab18df9e22fe-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-84ac3f26c7762712-0df74111efad70d8-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-84ac3f26c7762712-7877dbf367074c4e-source.png"
         }
       },
       "slug": "milliarden-lucke-im-klimafonds-762712",
@@ -4424,12 +4787,25 @@
     {
       "story_id": "wt-483945dfcc2a8794",
       "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
+        "mode": "editorial",
+        "label": "KI-generiertes Symbolbild",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-483945dfcc2a8794-771020b0de10aa72-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-483945dfcc2a8794-d67021eb7223a41b-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-483945dfcc2a8794-f2273b2394088f16-square.png",
+          "width": 1080,
+          "height": 1080
+        },
+        "background": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-483945dfcc2a8794-c022faae5a9e2885-source.png"
         }
       },
       "slug": "bundeshaushalt-wird-das-geld-auch-sinnvoll-ausgegeben-2a8794",
@@ -6210,260 +6586,6 @@
       ]
     },
     {
-      "story_id": "wt-dc2a1dc727ed2b66",
-      "title_image": {
-        "mode": "impact_card",
-        "label": "Wirkungskarte · WÖk-Einordnung",
-        "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
-          "width": 1200,
-          "height": 630
-        }
-      },
-      "slug": "berliner-gesetze-werden-jugendcheck-unterzogen-ed2b66",
-      "title": "Berliner Gesetze werden \"Jugendcheck\" unterzogen",
-      "source_summary": "Berlin will nach Angaben der Bildungssenatorin alle Gesetze und politischen Vorhaben künftig einem „Jugendcheck“ unterziehen. Dabei sollen die Auswirkungen auf Kinder, Jugendliche und junge Erwachsene systematisch geprüft werden; die Perspektive junger Menschen solle frühzeitig im Gesetzgebungsverfahren berücksichtigt werden. Als Teil des Vorhabens nannte Günther-Wünsch auch eine Jugendwohnagentur, die jungen Menschen bei der Wohnungssuche helfen soll, wenn sie Pflegefamilien oder Heime verlassen.\n\nAußerdem kündigte sie den Beitritt Berlins zur Initiative „Kinderfreundliche Kommunen“ an und verband das mit dem Anspruch, die UN-Kinderrechtskonvention als Maßstab in allen Senatsverwaltungen zu verankern. Offen bleibt, wie verbindlich und in welchem Zeitplan die Prüfungen und Begleitmaßnahmen tatsächlich umgesetzt werden.",
-      "summary": "Berlin kündigt an, Gesetze und Vorhaben künftig auf ihre Folgen für junge Menschen prüfen zu lassen. Das ist relevant, weil sich damit Regeln und Prüfmaßstäbe im Verfahren ändern können.",
-      "detail_summary": "Der berichtete Kern ist eine Berliner Ankündigung: Künftig sollen alle Gesetze und politischen Vorhaben einem Jugendcheck unterzogen werden. Das ist materiell relevant, weil sich dadurch ein zusätzlicher Prüfschritt im Gesetzgebungsverfahren und damit ein möglicher Einfluss auf Inhalte, Prioritäten und Begründungen ergeben kann. Die Richtung ist vorerst offen: Ein Jugendcheck kann Schutz- und Beteiligungswirkungen stärken, er kann aber auch ohne verbindliche Folgen nur symbolisch bleiben. Belastbar belegt ist bislang vor allem die Ankündigung der Senatorin; Umsetzung, Verbindlichkeit und praktische Reichweite bleiben offen. Für die Einordnung ist deshalb entscheidend, ob der Check später tatsächlich in Verfahren, Ressourcenzuteilung oder Entscheidungen eingreift.",
-      "why_relevant": "Die Ankündigung verändert den Prüf- und Entscheidungsrahmen für Berliner Gesetze und Vorhaben mit möglicher Wirkung auf Kinder, Jugendliche und junge Erwachsene.",
-      "topic": [
-        "Politik"
-      ],
-      "status": "angekündigt",
-      "analysis_type": "ex_ante",
-      "importance": "mittel",
-      "dimensions": {
-        "human": {
-          "relevance": "mittel",
-          "tendency": "offen",
-          "direction_basis": "unclear",
-          "rationale": "Die Meldung beschreibt zunächst nur einen angekündigten Prüfmechanismus. Ob daraus mehr Schutz, mehr Beteiligung oder nur ein zusätzlicher Verfahrensschritt folgt, ist noch nicht belegt.",
-          "positive_path": {
-            "mechanism": "Ein Jugendcheck kann Vorhaben früher auf Folgen für junge Menschen prüfen und so schädliche Regelungen abmildern oder bessere Beteiligung fördern.",
-            "source_ids": [
-              "rbb24-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Bleibt der Check unverbindlich oder rein formal, entsteht vor allem zusätzlicher Aufwand ohne messbare Verbesserung für junge Menschen.",
-            "source_ids": [
-              "rbb24-nachrichten"
-            ]
-          }
-        },
-        "planet": {
-          "relevance": "gering",
-          "tendency": "offen",
-          "direction_basis": "no_path",
-          "rationale": "In der Meldung ist kein belastbarer Umwelt- oder Klimapfad beschrieben.",
-          "positive_path": null,
-          "negative_path": null
-        },
-        "democracy": {
-          "relevance": "mittel",
-          "tendency": "chance",
-          "direction_basis": "assessed",
-          "rationale": "Ein früher Jugendcheck kann Beteiligung und Korrekturfähigkeit im Verfahren stärken, wenn er ernsthaft angewendet und dokumentiert wird.",
-          "positive_path": {
-            "mechanism": "Mehr systematische Prüfung und die Berücksichtigung junger Perspektiven können politische Entscheidungen nachvollziehbarer und anschlussfähiger machen.",
-            "source_ids": [
-              "rbb24-nachrichten"
-            ]
-          },
-          "negative_path": {
-            "mechanism": "Ohne Verbindlichkeit oder Transparenz kann der Begriff vor allem kommunikativ wirken, ohne demokratische Korrektur tatsächlich zu verbessern.",
-            "source_ids": [
-              "rbb24-nachrichten"
-            ]
-          }
-        }
-      },
-      "visuals": {
-        "affected_groups": [
-          "kinder_jugend",
-          "kommunen"
-        ]
-      },
-      "media_impact": {
-        "relevant": true,
-        "relevance_level": "medium",
-        "reason": "Die prominente Formulierung „Jugendcheck“ plus die zugeschriebene Senatorinnenaussage schaffen einen klaren politischen Trigger.",
-        "factual_core": "Berlin soll künftig alle Gesetze und politischen Vorhaben einem Jugendcheck unterziehen; die Perspektive junger Menschen soll früh berücksichtigt werden.",
-        "epistemic_status": {
-          "confirmed": [
-            "Im Bericht wird eine künftige Prüfung aller Gesetze und politischen Vorhaben angekündigt.",
-            "Die Wirkung auf Kinder, Jugendliche und junge Erwachsene ist als Ziel der Prüfung benannt."
-          ],
-          "actor_claims": [
-            "Katharina Günther-Wünsch stellt das Vorhaben nach der Senatssitzung vor."
-          ],
-          "open": [
-            "Ob und wann der Jugendcheck verbindlich umgesetzt wird."
-          ]
-        },
-        "attribution": {
-          "frame_source": "rbb24",
-          "speaker": "Katharina Günther-Wünsch",
-          "original_term": "Jugendcheck",
-          "usage_type": "indirect_quote",
-          "placement": [
-            "headline"
-          ],
-          "attribution_quality": "clear_but_prominent"
-        },
-        "speaker_statement": {
-          "present": false,
-          "speaker": "offen",
-          "statement": "",
-          "status": "open"
-        },
-        "framing": {
-          "detected": true,
-          "term": "Jugendcheck",
-          "origin_in_story": "rbb24",
-          "media_usage": "headline",
-          "attribution_quality": "unklare Attribution",
-          "factual_status": "offen",
-          "frame_type": [],
-          "political_history_relevant": false,
-          "political_history": "",
-          "political_history_evidence": []
-        },
-        "frame_analysis": {
-          "frame_detected": true,
-          "frame_term": "Jugendcheck",
-          "frame_type": [],
-          "problem_definition": "Politische Vorhaben sollen stärker auf Folgen für junge Menschen geprüft werden.",
-          "implied_cause": "Zu geringe frühzeitige Berücksichtigung jugendlicher Perspektiven im Verfahren.",
-          "implied_responsibility": "Senat und zuständige Verwaltungen als Träger der Prüfung.",
-          "implied_threat": "Ohne Prüfung könnten Folgen für junge Menschen zu spät sichtbar werden.",
-          "implied_solution_space": "Frühe systematische Prüfung im Gesetzgebungsverfahren.",
-          "material_omissions": [
-            "Keine Details zur Rechtsgrundlage oder Verbindlichkeit.",
-            "Keine unabhängige Bewertung der erwartbaren Wirkung."
-          ]
-        },
-        "political_context": {
-          "relevant": false,
-          "classification": "",
-          "evidence_based": false,
-          "evidence": [],
-          "uncertainty": "Die politische Einordnung bleibt auf die Ankündigung beschränkt; keine weitergehende Konfliktlage belegt."
-        },
-        "resonance": {
-          "resonance_space": "",
-          "resonance_risk": "",
-          "normalization_potential": "",
-          "repetition_effect": "",
-          "trust_effect": "",
-          "polarization_potential": "",
-          "discourse_effect": ""
-        },
-        "discourse_effect": {
-          "impact_status": "potential",
-          "resonance_space": "Jugendpolitik, Generationengerechtigkeit, Verwaltungsmodernisierung",
-          "normalization_potential": "medium",
-          "repetition_risk": "low",
-          "polarization_potential": "gering",
-          "trust_effect_potential": "offen",
-          "discourse_effect_potential": "Der Begriff kann Erwartungen an generationengerechte Politik bündeln, ohne selbst einen Wirkungsnachweis zu liefern."
-        },
-        "impact_path": {
-          "first_order": "Ankündigung eines neuen Prüfverfahrens für Berliner Vorhaben.",
-          "second_order": "Mögliche stärkere Berücksichtigung jugendbezogener Folgen in Vorlagen und Abwägungen.",
-          "third_order": "Bei dauerhafter Anwendung könnte sich die Verwaltungspraxis gegenüber jungen Menschen institutionell verschieben."
-        },
-        "evidence": {
-          "status": "low",
-          "level": "low",
-          "what_is_known": "Es gibt eine journalistisch berichtete Ankündigung aus Berlin. Die Prüfung soll sich auf Kinder, Jugendliche und junge Erwachsene beziehen.",
-          "what_is_inferred": "Der Jugendcheck könnte Entscheidungsprozesse beeinflussen, falls er verbindlich wird.",
-          "what_is_open": "Keine unabhängige Zweitquelle im gelieferten Material. Keine Detailinformationen zu Verfahren, Sanktionen oder Zeitplan.",
-          "facts": [
-            "Es gibt eine journalistisch berichtete Ankündigung aus Berlin.",
-            "Die Prüfung soll sich auf Kinder, Jugendliche und junge Erwachsene beziehen."
-          ],
-          "observations": [
-            "Nur eine journalistische Quelle ist im Datensatz enthalten.",
-            "Die Quelle nennt keine beschlossene Rechtsnorm."
-          ],
-          "inferences": [
-            "Der Jugendcheck könnte Entscheidungsprozesse beeinflussen, falls er verbindlich wird."
-          ],
-          "impact_potentials": [
-            "Bessere frühzeitige Berücksichtigung jugendbezogener Folgen."
-          ],
-          "impact_risks": [
-            "Symbolpolitik ohne praktische Änderung."
-          ],
-          "observed_impacts": [],
-          "limitations": [
-            "Keine unabhängige Zweitquelle im gelieferten Material.",
-            "Keine Detailinformationen zu Verfahren, Sanktionen oder Zeitplan."
-          ]
-        },
-        "observed_impact": {
-          "present": false,
-          "description": null,
-          "evidence": []
-        },
-        "public_explanation": "Berlin kündigt an, künftige Gesetze und Vorhaben auf ihre Folgen für junge Menschen zu prüfen. Das ist mehr als nur ein Schlagwort: Wenn der Jugendcheck verbindlich wird, kann er Entscheidungen im Senat und in den Verwaltungen verändern. Ob das am Ende wirklich zu besseren Regeln führt, ist aber offen. Im vorliegenden Bericht steckt vor allem eine politische Ankündigung; belastbare Daten zur Umsetzung oder zu Ergebnissen gibt es noch nicht. Deshalb lässt sich die Richtung nur als mögliches Potenzial beschreiben, nicht als بالفعل eingetretene Wirkung.",
-        "editorial_assessment": "Berlin kündigt an, künftige Gesetze und Vorhaben auf ihre Folgen für junge Menschen zu prüfen. Das ist mehr als nur ein Schlagwort: Wenn der Jugendcheck verbindlich wird, kann er Entscheidungen im Senat und in den Verwaltungen verändern. Ob das am Ende wirklich zu besseren Regeln führt, ist aber offen. Im vorliegenden Bericht steckt vor allem eine politische Ankündigung; belastbare Daten zur Umsetzung oder zu Ergebnissen gibt es noch nicht. Deshalb lässt sich die Richtung nur als mögliches Potenzial beschreiben, nicht als بالفعل eingetretene Wirkung.",
-        "fact_first_alternative": "Berlin kündigt einen Jugendcheck für Gesetze und Vorhaben an. Der Bericht nennt dies als politische Ankündigung; eine tatsächliche Wirkung ist noch nicht belegt.",
-        "fact_first_reframe": {
-          "title": "",
-          "source_summary": "",
-          "summary": "",
-          "detail_summary": ""
-        },
-        "self_frame_warning": false,
-        "self_frame_check": {
-          "problem_detected": false,
-          "problems": [],
-          "frame_repetition_count": 4,
-          "rewrite_required": false,
-          "recommended_title": "Berlin kündigt Jugendcheck für Gesetze an",
-          "recommended_summary": "Berlin will künftige Gesetze und Vorhaben auf Folgen für junge Menschen prüfen lassen.",
-          "recommended_meta_description": "Berlin kündigt einen Jugendcheck für Gesetze und Vorhaben an. Ob der Schritt verbindlich wird, bleibt offen."
-        },
-        "source_comparison": {
-          "sufficient_basis": false,
-          "finding": ""
-        }
-      },
-      "media_analysis_version": "2.1",
-      "media_checked_at": "2026-09-08T19:55:48.672Z",
-      "editorial_analysis": null,
-      "first_seen": "2026-09-08T15:52:01.000Z",
-      "last_updated": "2026-09-08T19:55:13.089Z",
-      "version": 2,
-      "news_status": "developing",
-      "event_id": "event-5ba297268ddffd901500",
-      "case_file": null,
-      "source_published_at": "2026-09-08T15:52:01.000Z",
-      "published_at": "2026-09-08T19:55:13.089Z",
-      "evidence_groups": {
-        "groups": [
-          [
-            "rbb24-nachrichten"
-          ]
-        ],
-        "possible_independent_origins": 1,
-        "independence_is_verified": false,
-        "dependencies": []
-      },
-      "followups": [],
-      "sources": [
-        {
-          "publisher": "rbb24",
-          "url": "https://www.rbb24.de/politik/beitrag/2026/09/berlin-jugendcheck-gesetze-generationsgerechtere-politik.html",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T15:52:01.000Z",
-          "primary_source": false
-        }
-      ]
-    },
-    {
       "story_id": "wt-366b1fbfa120e44f",
       "title_image": {
         "mode": "editorial",
@@ -8232,9 +8354,19 @@
         "mode": "impact_card",
         "label": "Wirkungskarte · WÖk-Einordnung",
         "og": {
-          "url": "/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-42e4a2ecd40874e2-d5294090433d9003-og.png",
           "width": 1200,
           "height": 630
+        },
+        "wide": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-42e4a2ecd40874e2-6de2110b5424fafb-wide.png",
+          "width": 1200,
+          "height": 675
+        },
+        "square": {
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-09-part-2/wt-42e4a2ecd40874e2-aa1cef168d340583-square.png",
+          "width": 1080,
+          "height": 1080
         }
       },
       "slug": "fairsquare-erneute-beschwerde-bei-ethikkomission-gegen-fifa-chef-infantino-0874e2",
