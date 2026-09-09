@@ -1,8 +1,1344 @@
 {
   "schema_version": "1.1",
   "public_updated_at": "2026-09-09T00:22:10.289Z",
-  "updated_at": "2026-09-09T04:06:36.417Z",
+  "updated_at": "2026-09-09T04:22:21.997Z",
   "stories": [
+    {
+      "story_id": "wt-e44e7089ecc92978",
+      "slug": "attacke-vor-gemeindezentrum-messerangriff-in-freiburg-opfer-lebensgefahrlich-verletzt-c92978",
+      "title": "Attacke vor Gemeindezentrum: Messerangriff in Freiburg: Opfer lebensgefährlich verletzt",
+      "first_seen": "2026-09-09T02:05:09.000Z",
+      "last_updated": "2026-09-09T04:11:53.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/attacke-vor-gemeindezentrum--messerangriff-in-freiburg--opfer-lebensgefaehrlich-verletzt-38224426.html",
+          "title": "Attacke vor Gemeindezentrum: Messerangriff in Freiburg: Opfer lebensgefährlich verletzt",
+          "summary": "Nach der zweiten Messerattacke in Freiburg binnen weniger Tage nimmt die Polizei einen mutmaßlichen Täter fest. Steckt er auch hinter dem Angriff vom Wochenende?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T02:05:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "39f9ff9c49be162c329c4ba6f371871886d4aaf0a668f834c51cbb2fb39fb03d",
+          "source_item_id": "38b92947f0085b5aeb7945c9e00e25e902ee6172c05564313ada4e301dc84ba7",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T02:05:09.000Z",
+          "ingested_at": "2026-09-09T02:22:22.812Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/tat-vor-gemeindezentrum--74-jaehriger-stirbt-nach-messerangriff-in-freiburg-38224426.html",
+          "title": "Tat vor Gemeindezentrum: 74-Jähriger stirbt nach Messerangriff in Freiburg",
+          "summary": "Nach dem zweiten Messerangriff in Freiburg binnen weniger Tage nimmt die Polizei einen mutmaßlichen Täter fest. Steckt er auch hinter dem Angriff vom Wochenende?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:11:53.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "352d9875d6f314bb39d3f895f366b16fb8556ce32d9a96ecdb00b1d389bcc967",
+          "source_item_id": "8ab46d762c1ea5b9293095d673554e1e610da30e46e854dc7f6009d542f28896",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T04:11:53.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-e44e7089ecc92978-claim-01",
+          "story_id": "wt-e44e7089ecc92978",
+          "claim": "Attacke vor Gemeindezentrum: Messerangriff in Freiburg: Opfer lebensgefährlich verletzt: Nach der zweiten Messerattacke in Freiburg binnen weniger Tage nimmt die Polizei einen mutmaßlichen Täter fest. Steckt er auch hinter dem Angriff vom Wochenende?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        },
+        {
+          "claim_id": "wt-e44e7089ecc92978-claim-02",
+          "story_id": "wt-e44e7089ecc92978",
+          "claim": "Tat vor Gemeindezentrum: 74-Jähriger stirbt nach Messerangriff in Freiburg: Nach dem zweiten Messerangriff in Freiburg binnen weniger Tage nimmt die Polizei einen mutmaßlichen Täter fest. Steckt er auch hinter dem Angriff vom Wochenende?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "4e8c39a9b35382b55b8b87b1b281af672f726ea1765bd762725c653baf870682",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-09T02:22:22.812Z",
+      "event_detected_at": "2026-09-09T02:22:22.812Z",
+      "event_id": "event-ac55a510fc7432e60b39",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 10.483283333333333,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 119.98641666666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 98,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "4982c9e2d1ce05d1068daccc3c14ffe9e1c038d175260278e33965425b109e92",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-2b96d173b1f78fb7",
+      "slug": "ausspahen-unter-strafe-hessen-will-kritische-infrastruktur-besser-schutzen-f78fb7",
+      "title": "Ausspähen unter Strafe: Hessen will kritische Infrastruktur besser schützen",
+      "first_seen": "2026-09-09T04:07:30.000Z",
+      "last_updated": "2026-09-09T04:07:30.000Z",
+      "topic": [
+        "Gesellschaft"
+      ],
+      "sources": [
+        {
+          "source_id": "hr-hessenschau",
+          "publisher": "hessenschau",
+          "url": "https://www.hessenschau.de/politik/ausspaehen-unter-strafe-hessen-will-kritische-infrastruktur-besser-schuetzen-v1,kritische-infrakstruktur-strafe-100.html",
+          "title": "Ausspähen unter Strafe: Hessen will kritische Infrastruktur besser schützen",
+          "summary": "Hessens Justizminister Heinz will den strafrechtlichen Schutz kritischer Infrastruktur ausweiten. Künftig könnte bereits das unbefugte Eindringen, Ausspähen oder Überfliegen sensibler Anlagen unter Strafe stehen.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:07:30.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "1deb7544773edbf0f79f7828e623bd3dc861d5422e0f9855829b5d5286412b77",
+          "source_item_id": "51333b7c0ba7780916f85eb599f416070fad6f2f909aad863264ceee207ece13",
+          "publisher_id": "hr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Hessen"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T04:07:30.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2b96d173b1f78fb7-claim-01",
+          "story_id": "wt-2b96d173b1f78fb7",
+          "claim": "Ausspähen unter Strafe: Hessen will kritische Infrastruktur besser schützen: Hessens Justizminister Heinz will den strafrechtlichen Schutz kritischer Infrastruktur ausweiten. Künftig könnte bereits das unbefugte Eindringen, Ausspähen oder Überfliegen sensibler Anlagen unter Strafe stehen.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "hr-hessenschau",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:hr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "32e0bfee38b20e888eb99a6dcf41e489062b4e3d492102832329eedacce25e2f",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_BUDGET_EXHAUSTED"
+      ],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
+      "event_detected_at": "2026-09-09T04:22:21.997Z",
+      "event_id": "event-ed11fc5c1b0bee60fa65",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Gesellschaft"
+        ],
+        "dimensions": [],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Infrastruktur oder Versorgungskapazität"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 14.866616666666667,
+        "detection_delay_minutes": 14.866616666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "771af662c62e40f4e1dcbe83067df293cf64e8291cb7bc5e37aa95a5ae296855",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-4219ebd958b73c3c",
+      "slug": "zucker-sussstoff-und-co-was-verbraucher-wissen-sollten-b73c3c",
+      "title": "Zucker, Süßstoff und Co.: Was Verbraucher wissen sollten",
+      "first_seen": "2026-09-09T04:07:00.000Z",
+      "last_updated": "2026-09-09T04:07:00.000Z",
+      "topic": [
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "zdfheute-nachrichten",
+          "publisher": "ZDFheute",
+          "url": "https://www.zdfheute.de/ratgeber/zucker-suessstoff-zuckeraustauschstoffe-koerper-wirkung-100.html",
+          "title": "Zucker, Süßstoff und Co.: Was Verbraucher wissen sollten",
+          "summary": "Zu viel Zucker erhöht das Krankheitsrisiko. Welche Vorteile Süßstoffe und Co. haben können, wie sich Süßes im Alltag reduzieren lässt und was eine Zuckersteuer bewirken könnte.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:07:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "d3d57936233c92089ee9495e6cdaf66d806e6827a4dddf269db7565a2b43704d",
+          "source_item_id": "b703b50e493d0eeff4f26c024dc902bf7058cdb845f43892ac4a4cb200caeec4",
+          "publisher_id": "zdfheute",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T04:07:00.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-4219ebd958b73c3c-claim-01",
+          "story_id": "wt-4219ebd958b73c3c",
+          "claim": "Zucker, Süßstoff und Co.: Was Verbraucher wissen sollten: Zu viel Zucker erhöht das Krankheitsrisiko. Welche Vorteile Süßstoffe und Co. haben können, wie sich Süßes im Alltag reduzieren lässt und was eine Zuckersteuer bewirken könnte.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "zdfheute-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:zdfheute",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "cc3dd1fab4d77b6a8d9e631cbbfa9bf9a49984c0d1c19287204b9670b1817c40",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_BUDGET_EXHAUSTED"
+      ],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
+      "event_detected_at": "2026-09-09T04:22:21.997Z",
+      "event_id": "event-5e84f075a7d1472bb438",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 38,
+        "public_relevance": "mittel",
+        "topics": [
+          "Politik"
+        ],
+        "dimensions": [
+          "Mensch"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 15.366616666666667,
+        "detection_delay_minutes": 15.366616666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 97,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "5bf0079782476452cd4b50422972aafc1839912b11c42105b8258dcb924a055a",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-2e050585c89e5353",
+      "slug": "energieversorgung-nordstream-wieder-anschalten-bringt-das-was-9e5353",
+      "title": "Energieversorgung: Nordstream wieder anschalten: Bringt das was?",
+      "first_seen": "2026-09-09T04:00:09.000Z",
+      "last_updated": "2026-09-09T04:00:09.000Z",
+      "topic": [
+        "Energie",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/gesellschaft/regional/mecklenburg-vorpommern/energieversorgung--nordstream-wieder-anschalten--bringt-das-was--38224812.html",
+          "title": "Energieversorgung: Nordstream wieder anschalten: Bringt das was?",
+          "summary": "Mit der Forderung nach der Wiederinbetriebnahme von Nord Stream lassen sich im Wahlkampf in Mecklenburg-Vorpommern schnell Sympathien sammeln. Dabei hat die Landesregierung wenig Einfluss darauf.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:00:09.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "6d40daee21051a98e6a1c6edf07aa9c610f006d2552e810a810bcd0d867109e2",
+          "source_item_id": "68bc709cafd39d995fa936e7c1631d57a2ebafdb3b2fd259a4c1c5506d3cab4e",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T04:00:09.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-2e050585c89e5353-claim-01",
+          "story_id": "wt-2e050585c89e5353",
+          "claim": "Energieversorgung: Nordstream wieder anschalten: Bringt das was?: Mit der Forderung nach der Wiederinbetriebnahme von Nord Stream lassen sich im Wahlkampf in Mecklenburg-Vorpommern schnell Sympathien sammeln. Dabei hat die Landesregierung wenig Einfluss darauf.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "d4684610cd246aa2587a74d7791c16a67d0b6e84d66993f44371d9b297c5a1ab",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
+      "event_detected_at": "2026-09-09T04:22:21.997Z",
+      "event_id": "event-2d19c50a93681915bd8a",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 30,
+        "public_relevance": "mittel",
+        "topics": [
+          "Energie",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Planet",
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.216616666666667,
+        "detection_delay_minutes": 22.216616666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "77afb06bdfb159c080a7d24080a795577294a67760b4e7a1456c1b49dba0aa7f",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-f81a621f2a1d2142",
+      "slug": "wahlergebnis-sachsen-anhalt-sepp-muller-will-neuer-cdu-landesvorstand-werden-1d2142",
+      "title": "Wahlergebnis Sachsen-Anhalt: Sepp Müller will neuer CDU-Landesvorstand werden",
+      "first_seen": "2026-09-09T04:00:03.000Z",
+      "last_updated": "2026-09-09T04:00:03.000Z",
+      "topic": [
+        "Demokratie",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-168,wahl-560.html",
+          "title": "Wahlergebnis Sachsen-Anhalt: Sepp Müller will neuer CDU-Landesvorstand werden",
+          "summary": "Drei Tage nach der Landtagswahl geht die Suche nach einer Regierungskoalition weiter. Auch die Nachfolge von Sven Schulze (CDU) als Landesvorsitzender seiner Partei wird gesucht. Die neuen Entwicklungen im Liveticker.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:00:03.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "6445e71e1a58a87b0c477f3d47fe77db8d0c77bb686426bab76ad1e91ff1a1ab",
+          "source_item_id": "b134195d4ea459c89e86760813c6b1f778fcc3b424f64a64c4ee5c3b25c422d1",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T04:00:03.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-f81a621f2a1d2142-claim-01",
+          "story_id": "wt-f81a621f2a1d2142",
+          "claim": "Wahlergebnis Sachsen-Anhalt: Sepp Müller will neuer CDU-Landesvorstand werden: Drei Tage nach der Landtagswahl geht die Suche nach einer Regierungskoalition weiter. Auch die Nachfolge von Sven Schulze (CDU) als Landesvorsitzender seiner Partei wird gesucht. Die neuen Entwicklungen im Liveticker.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "8c74ed9193472e4cbf328f758938d0f6af8566af8454b42c104097a5357c2e48",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
+      "event_detected_at": "2026-09-09T04:22:21.997Z",
+      "event_id": "event-7bb9ce28f9a9713882c5",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-168,wahl-560.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 34,
+        "public_relevance": "mittel",
+        "topics": [
+          "Demokratie",
+          "Politik"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.31661666666667,
+        "detection_delay_minutes": 22.31661666666667,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "887ddfeadb51377ff446ebce9a20ff47d820465917ce564aa0c27ff02f5ad26f",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-990631d7dc3586cb",
+      "slug": "nach-9-11-wie-sich-die-stimmung-gegenuber-den-usa-drehte-3586cb",
+      "title": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte",
+      "first_seen": "2026-09-09T04:00:00.000Z",
+      "last_updated": "2026-09-09T04:00:00.000Z",
+      "topic": [
+        "Geopolitik",
+        "Politik"
+      ],
+      "sources": [
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/geschichte/chronologie/nach-9-11-wie-sich-die-stimmung-gegenueber-usa-drehte,susan-elbow-102.html",
+          "title": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte",
+          "summary": "Nach dem Terror vom 11. September 2001 ist das Mitgefühl zunächst groß. Die damalige US-Generalkonsulin in Hamburg schildert die Wochen danach - bis zum Irak-Krieg 2003.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:00:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "800f01977ce7d01ecc1e53657cb0a0473b9ef3c34555d6a7b1f1a166323d1b14",
+          "source_item_id": "578591e53f8bdfc12e502e2687bd6af908447c42ed583a2a261422222db6d63d",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T04:00:00.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "france24-en",
+          "publisher": "France 24",
+          "url": "https://www.france24.com/en/americas/20260909-key-post-9-11-air-toxicity-information-was-kept-secret-for-25-years",
+          "title": "Key post-9/11 air toxicity information was kept secret for 25 years",
+          "summary": "New York Mayor Zohran Mamdani released tens of thousands of previously undisclosed documents on Tuesday detailing what city officials knew about toxic air after the September 11 attacks, as the 25th anniversary approaches and thousands continue to suffer from related illnesses.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T01:44:22.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Geopolitik",
+          "content_hash": "8c2d259f05dd0776263f8d68798e84bbaf433699efc562218cf484a219e833a2",
+          "source_item_id": "591bfaa53874afebc1ebb32f0bfef524399b10aefa2d70f693162df8fc4bb396",
+          "publisher_id": "france24",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "en",
+          "geography": [
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T01:44:22.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "tagesspiegel-home",
+          "publisher": "Der Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/kultur/ich-dachte-das-ist-das-ende-der-welt-art-spiegelman-uber-seine-todesangst-am-11-september-2001-16016762.html",
+          "title": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“",
+          "summary": "Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-04T11:02:58.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "2b53bef3d17eece06e6146e1b13650788e67de349391cb575b1613a37978214c",
+          "source_item_id": "ec89cf6e5a7f4b476342c3c70ee65ae2c3226a8687939a10619ce927ec289076",
+          "publisher_id": "tagesspiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Berlin"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-04T11:02:58.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "ndr-info",
+          "publisher": "NDR",
+          "url": "https://www.ndr.de/fernsehen/sendungen/hamburg_journal/9-11-ehemalige-us-generalkonsulin-susan-elbow-erinnert-sich,hamj-14394.html",
+          "title": "9/11: Ehemalige US-Generalkonsulin Susan Elbow erinnert sich",
+          "summary": "Susan Elbow war damals seit knapp drei Wochen neue US-Generalkonsulin in Hamburg. Wie blickt sie heute auf das Geschehen?",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T18:04:29.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "6372e2e187692a9add106a84a70646406bb6dab998e2664ad27d9c4a5686d0d5",
+          "source_item_id": "f13186c3501abfedf74cb8933daf4d4e8aa79b879f5d0935b9ce1f7b202ce93b",
+          "publisher_id": "ndr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Norddeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T18:04:29.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "dlf-gesellschaft",
+          "publisher": "Deutschlandfunk - Gesellschaft",
+          "url": "https://www.deutschlandfunk.de/trost-und-untroestlichkeit-wie-das-hadern-mit-der-welt-die-oberhand-gewann-102.html",
+          "title": "Nach 9/11 - Wie das Hadern mit der Welt die Oberhand gewann",
+          "summary": "Nach den Terroranschlägen vom 11. September 2001 in den USA schien jedes Weltvertrauen naiv zu sein. Trost war kaum möglich, vielmehr bildete sich eine Kultur der Untröstlichkeit. Und eine der Unversöhnlichkeit. Konersmann, Ralf",
+          "source_type": "media_rss",
+          "published_at": "2026-09-06T07:30:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Soziales",
+          "content_hash": "a6c362a441737b53b83c5ab7e9b13e423cf1be107c9c1bcb80c85ce1b57008ed",
+          "source_item_id": "290a99a5bef1697da938de12dd6a3650b786bc8cb0dea81889936dee38c834d8",
+          "publisher_id": "deutschlandfunk",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE"
+          ],
+          "research_lane": "blindspot",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-06T07:30:00.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-01",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "Nach 9/11: Wie sich die Stimmung gegenüber den USA drehte: Nach dem Terror vom 11. September 2001 ist das Mitgefühl zunächst groß. Die damalige US-Generalkonsulin in Hamburg schildert die Wochen danach - bis zum Irak-Krieg 2003.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        },
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-02",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "Key post-9/11 air toxicity information was kept secret for 25 years: New York Mayor Zohran Mamdani released tens of thousands of previously undisclosed documents on Tuesday detailing what city officials knew about toxic air after the September 11 attacks, as the 25th anniversary approaches and thousands continue to suffer from related illnesses.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "france24-en",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:france24",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        },
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-03",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "Art Spiegelman über „9/11“ und die politischen Folgen: „Ich dachte, das ist das Ende der Welt“: Der „Maus“-Zeichner erlebte die Anschläge vor 25 Jahren hautnah. Sein Comic „Im Schatten keiner Türme“ erzählt davon. 2002 traf ihn der Tagesspiegel zum Interview. Das veröffentlichen wir zum Jahrestag erneut.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "tagesspiegel-home",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:tagesspiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        },
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-04",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "9/11: Ehemalige US-Generalkonsulin Susan Elbow erinnert sich: Susan Elbow war damals seit knapp drei Wochen neue US-Generalkonsulin in Hamburg. Wie blickt sie heute auf das Geschehen?",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "ndr-info",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:ndr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        },
+        {
+          "claim_id": "wt-990631d7dc3586cb-claim-05",
+          "story_id": "wt-990631d7dc3586cb",
+          "claim": "Nach 9/11 - Wie das Hadern mit der Welt die Oberhand gewann: Nach den Terroranschlägen vom 11. September 2001 in den USA schien jedes Weltvertrauen naiv zu sein. Trost war kaum möglich, vielmehr bildete sich eine Kultur der Untröstlichkeit. Und eine der Unversöhnlichkeit. Konersmann, Ralf",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "dlf-gesellschaft",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:deutschlandfunk",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "ca987cdba146ffe0a29a7038dad4420d582fd6ac6e9d2c3031839d65bc2e33da",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
+      "event_detected_at": "2026-09-09T04:22:21.997Z",
+      "event_id": "event-4282989facaefbf32544",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Politik"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [
+          "interview_or_speech"
+        ],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.366616666666665,
+        "detection_delay_minutes": 22.366616666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "980108dace481d6e66395ee3fb6512de0a145178c297496b67eec719b9c72e18",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-9d9777bb23a37b35",
+      "slug": "wahlergebnis-sachsen-anhalt-das-war-der-zweite-tag-nach-der-landtagswahl-in-sachsen-anha-a37b35",
+      "title": "Wahlergebnis Sachsen-Anhalt: Das war der zweite Tag nach der Landtagswahl in Sachsen-Anhalt",
+      "first_seen": "2026-09-09T04:00:00.000Z",
+      "last_updated": "2026-09-09T04:00:00.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "mdr-nachrichten",
+          "publisher": "MDR",
+          "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-166,wahl-598.html",
+          "title": "Wahlergebnis Sachsen-Anhalt: Das war der zweite Tag nach der Landtagswahl in Sachsen-Anhalt",
+          "summary": "Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Einladung an die CDU liegt MDR SACHSEN-ANHALT exklusiv vor. Die neuen Entwicklungen im Liveticker.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T04:00:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "0d2029b797b303bc13b81c03b3685f207948e8d4a8c7c89e1757a9d366b82002",
+          "source_item_id": "52ce2608ee43b653768ff72c1bb2f9c6c70777305a6442c1a3cfee877ef54b00",
+          "publisher_id": "mdr",
+          "publisher_kind": "public_broadcasting",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "Mitteldeutschland"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T04:00:00.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-9d9777bb23a37b35-claim-01",
+          "story_id": "wt-9d9777bb23a37b35",
+          "claim": "Wahlergebnis Sachsen-Anhalt: Das war der zweite Tag nach der Landtagswahl in Sachsen-Anhalt: Zwei Tage nach der Wahl will die AfD heute alle künftig im Landtag vertretenen Parteien zu Sondierungen einladen. Eine Einladung an die CDU liegt MDR SACHSEN-ANHALT exklusiv vor. Die neuen Entwicklungen im Liveticker.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "mdr-nachrichten",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:mdr",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "2baa7cc3e236fd3f16947b53431a1ca9619e1632249f568fc2552186a530cbd3",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_BUDGET_EXHAUSTED"
+      ],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
+      "event_detected_at": "2026-09-09T04:22:21.997Z",
+      "event_id": "event-ca713466675ecc457f42",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": true,
+          "time_sensitive": false,
+          "findings": [
+            {
+              "source_id": "mdr-nachrichten",
+              "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/ticker-news-166,wahl-598.html",
+              "signals": [
+                "election_result"
+              ],
+              "time_sensitive": false,
+              "basis": "local_review_signal_not_verified_fact"
+            }
+          ]
+        },
+        "internal_relevance_score": 42,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "angekündigt",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 22.366616666666665,
+        "detection_delay_minutes": 22.366616666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 95,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "25ecbb829af2992c2b302de2814c32b6c66f2bff5b0da98199bc869d885f4f8f",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-8149ca9b8138453b",
+      "slug": "isar-aerospace-erster-europaischer-tragerraketenstart-in-den-orbit-gelingt-38453b",
+      "title": "Isar Aerospace: Erster europäischer Trägerraketenstart in den Orbit gelingt",
+      "first_seen": "2026-09-09T03:49:00.000Z",
+      "last_updated": "2026-09-09T03:49:00.000Z",
+      "topic": [
+        "Europa"
+      ],
+      "sources": [
+        {
+          "source_id": "spiegel-schlagzeilen",
+          "publisher": "DER SPIEGEL",
+          "url": "https://www.spiegel.de/politik/deutschland/isar-aerospace-erster-europaeischer-traegerraketenstart-in-den-orbit-gelingt-a-43d4e86c-d254-4df1-863f-80a06882feef",
+          "title": "Isar Aerospace: Erster europäischer Trägerraketenstart in den Orbit gelingt",
+          "summary": "Im AfD-Erdrutschsieg ging eine Sensation unter: Eine Münchner Firma hat in Norwegen erfolgreich Europas erste Trägerrakete in den Orbit gestartet. Ein ökonomischer Urknall.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T03:49:00.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Politik",
+          "content_hash": "3376b3797de0a15dbf31b12e278b3560b133884f24ba81acdf5a722d019cc8e8",
+          "source_item_id": "38a930b8395171153efabe8330f47eadf0f4eaf56c883107ac6cdac322f94a55",
+          "publisher_id": "spiegel",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T03:49:00.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-8149ca9b8138453b-claim-01",
+          "story_id": "wt-8149ca9b8138453b",
+          "claim": "Isar Aerospace: Erster europäischer Trägerraketenstart in den Orbit gelingt: Im AfD-Erdrutschsieg ging eine Sensation unter: Eine Münchner Firma hat in Norwegen erfolgreich Europas erste Trägerrakete in den Orbit gestartet. Ein ökonomischer Urknall.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "spiegel-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:spiegel",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "0b420464451c849897964ede4ccc30f5c03ffb97b5d2d7a325d960c62e7bfc9d",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [
+        "AI_BUDGET_EXHAUSTED"
+      ],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_BLOCKED",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-09T04:22:21.997Z",
+      "event_detected_at": "2026-09-09T04:22:21.997Z",
+      "event_id": "event-b1e29f2845cd7b6256a7",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 36,
+        "public_relevance": "mittel",
+        "topics": [
+          "Europa"
+        ],
+        "dimensions": [],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [
+          "implementation"
+        ],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 33.366616666666665,
+        "detection_delay_minutes": 33.366616666666665,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 0,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 93,
+        "freshness_warning": null
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "582f621054a01990c471951153bbcbdf8984836b4fba134bf2816c08fdee8d90",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
     {
       "story_id": "wt-9d64746f245d7850",
       "slug": "ukraine-news-wadephul-weist-lawrows-kriegsvorwurf-zuruck-5d7850",
@@ -37,7 +1373,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T03:46:45.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -66,22 +1402,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "bbbc51d20ba0d759496aafa77b98d5f4a4014987024695b18ec096b12b8c7edb",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_BUDGET_EXHAUSTED"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 0,
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_BLOCKED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T03:52:20.452Z",
       "event_detected_at": "2026-09-09T03:52:20.452Z",
       "event_id": "event-d160fee75b709db860d1",
@@ -114,20 +1448,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 19.85695,
+        "source_age_minutes": 35.616616666666665,
         "detection_delay_minutes": 5.590866666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 14.266083333333333,
+        "queue_age_minutes": 30.02575,
         "target_publication_minutes": 120,
-        "news_freshness_score": 96,
+        "news_freshness_score": 93,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "e6e8e3f4f343b8665ddb1f7ffa75f0c1005ce681adecb024c698f56019076d21",
         "issue_codes": [],
         "warning_codes": []
@@ -167,7 +1501,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T22:30:29.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -181,13 +1515,13 @@
           "publisher": "stern",
           "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
           "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
-          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
           "source_type": "media_rss",
-          "published_at": "2026-09-09T00:29:38.000Z",
+          "published_at": "2026-09-09T03:04:28.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Gesellschaft",
-          "content_hash": "8abaf5753dba4361d8ca46c13ddf4584aff86d61b7427a27d270c154e96d92a4",
+          "content_hash": "8b383bc6f7b6280c12cc67e4817996b71d8b53f3e15e950091d531c240f7aebc",
           "source_item_id": "c9f4e9b1082a1a9136064980e47e1a6be6d460e156b9c989b01660757ba164db",
           "publisher_id": "stern",
           "publisher_kind": "journalism",
@@ -199,8 +1533,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T00:29:38.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "source_published_at": "2026-09-09T03:04:28.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -233,7 +1567,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T03:28:00.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -262,12 +1596,12 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         },
         {
           "claim_id": "wt-491857684cc65a88-claim-02",
           "story_id": "wt-491857684cc65a88",
-          "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+          "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
           "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
           "source_id": "stern-schlagzeilen",
           "source_function": "journalistic_report",
@@ -282,7 +1616,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         },
         {
           "claim_id": "wt-491857684cc65a88-claim-03",
@@ -302,22 +1636,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
-      "content_hash": "abbae066fb3411f4f8a8a1629d9ff41213773cc35a4b198c019209509d6722d8",
+      "content_hash": "81325daf6d891963fcfb412455c2c86d65192df96987b433c34a08f1531e1501",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_BUDGET_EXHAUSTED"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 0,
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_BLOCKED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T00:51:49.494Z",
       "event_detected_at": "2026-09-09T00:51:49.494Z",
       "event_id": "event-535ab9d27abe1bcdee32",
@@ -350,21 +1682,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 38.60695,
+        "source_age_minutes": 54.366616666666665,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 194.78205,
+        "queue_age_minutes": 210.54171666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 92,
+        "news_freshness_score": 89,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
-        "fingerprint": "ff7f35328eff9cf2bc7b7d8f79bb1c91351a273527e2d3707693f6d599b3ecc3",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "dcc8d88dc95b6793f26a805bf8d9992cf9d7c159012d659779a2582141444630",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -403,7 +1735,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T03:15:06.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -436,22 +1768,20 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "d0510ff547a135ecbbd24f74a84bc276935a8dbb7855610159240570607f2908",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_BUDGET_EXHAUSTED"
-      ],
+      "quality_errors": [],
       "quality_retry_count": 0,
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_BLOCKED",
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T03:22:22.700Z",
       "event_detected_at": "2026-09-09T03:22:22.700Z",
       "event_id": "event-5c5ac6f89b7886552074",
@@ -484,20 +1814,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 51.50695,
+        "source_age_minutes": 67.26661666666666,
         "detection_delay_minutes": 7.278333333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.22861666666667,
+        "queue_age_minutes": 59.988283333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 89,
+        "news_freshness_score": 86,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "67c89e78c307237eef95ce3fbd44b6f9ba5384aac8f7bc9860fba9334b1f90e2",
         "issue_codes": [],
         "warning_codes": []
@@ -538,7 +1868,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T03:15:04.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -571,7 +1901,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "d21f26f17845a9cf8bf4ff181faebc6a60b57b215cb5fbb8530a928c5ba69666",
@@ -584,7 +1914,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T03:22:22.700Z",
       "event_detected_at": "2026-09-09T03:22:22.700Z",
       "event_id": "event-4435b13059f7369beda5",
@@ -618,20 +1948,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 51.540283333333335,
+        "source_age_minutes": 67.29995,
         "detection_delay_minutes": 7.3116666666666665,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 44.22861666666667,
+        "queue_age_minutes": 59.988283333333335,
         "target_publication_minutes": 120,
-        "news_freshness_score": 89,
+        "news_freshness_score": 86,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "c8460936195310ce1dceaf7624e9f0e3f1cc80436684d51ed0c7eb66ba6813e6",
         "issue_codes": [],
         "warning_codes": []
@@ -671,7 +2001,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T03:04:29.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -700,7 +2030,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "a352fb4b5be5b22106386e7feadfc438ffae61b33a9b677c8ef1bee6b3365507",
@@ -713,7 +2043,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T03:07:16.094Z",
       "event_detected_at": "2026-09-09T03:07:16.094Z",
       "event_id": "event-e9fe3ffbbb0bb4b2ca80",
@@ -746,21 +2076,259 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 62.12361666666666,
+        "source_age_minutes": 77.88328333333334,
         "detection_delay_minutes": 2.7849,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 59.33871666666667,
+        "queue_age_minutes": 75.09838333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 87,
+        "news_freshness_score": 84,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "9a6d785f320937696a98ff3cbbb0fa813a460a33a428d4bef6a1434f25317c48",
+        "issue_codes": [],
+        "warning_codes": []
+      }
+    },
+    {
+      "story_id": "wt-0456ad2a9c0ad09d",
+      "ai_retry": {
+        "version": "2026-09-06-throughput-3",
+        "fingerprint": "b9f18ea69e019a4cffce6c6d230c9cb988fb7950fdaa6c82ed5fcdbc926bee69",
+        "first_failed_at": "2026-09-08T22:52:15.096Z",
+        "failed_at": "2026-09-08T22:52:15.096Z",
+        "retry_after": "2026-09-08T23:07:15.096Z",
+        "retry_count": 1
+      },
+      "slug": "iran-krieg-iranische-medien-melden-raketenangriffe-auf-jordanien-0ad09d",
+      "title": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien",
+      "queue_source_repartitions": [
+        {
+          "version": 1,
+          "at": "2026-09-09T00:51:49.494Z",
+          "retained_urls": [
+            "https://www.stern.de/politik/ausland/iran-krieg--iranische-medien-melden-raketenangriffe-auf-jordanien-38224158.html",
+            "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html"
+          ],
+          "detached_sources": [
+            {
+              "source_id": "tagesspiegel-home",
+              "publisher": "Der Tagesspiegel",
+              "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
+              "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+              "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
+              "source_type": "media_rss",
+              "published_at": "2026-09-08T22:30:29.000Z",
+              "primary_source": false,
+              "source_priority": 0,
+              "source_topic": "Politik",
+              "content_hash": "7d900d0021f3231477773c754911fdd2ab467d56ff7e3ff0ceca8e986a51ad6c",
+              "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
+              "publisher_id": "tagesspiegel",
+              "publisher_kind": "journalism",
+              "source_role": "journalistic_report",
+              "language": "de",
+              "geography": [
+                "DE",
+                "Berlin"
+              ],
+              "research_lane": "media",
+              "requires_corroboration": false,
+              "source_published_at": "2026-09-08T22:30:29.000Z",
+              "ingested_at": "2026-09-09T00:37:30.333Z",
+              "agency_origin": "unknown",
+              "agency_origin_confidence": "unknown",
+              "provenance": {
+                "origin": "publisher:tagesspiegel",
+                "basis": "publisher_only_origin_unverified",
+                "independence_established": false
+              }
+            }
+          ]
+        }
+      ],
+      "first_seen": "2026-09-08T22:29:15.000Z",
+      "last_updated": "2026-09-09T03:04:28.000Z",
+      "topic": [
+        "Geopolitik",
+        "Demokratie"
+      ],
+      "sources": [
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--iranische-medien-melden-raketenangriffe-auf-jordanien-38224158.html",
+          "title": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien",
+          "summary": "Das US-Militär hat erneut iranische Tanker angegriffen. Nun holt Teheran offenbar zu Gegenschlägen gegen US-Militärstützpunkte in der Region aus.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-08T22:29:15.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "935491ffdc1de7eaba7ba06ee0d477b7fb4cbcfcef08c604c4a62d9178d2800f",
+          "source_item_id": "9322bc4d74431bec7da39d1da73716b9db891403c63581705c7cc8802866a553",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-08T22:29:15.000Z",
+          "ingested_at": "2026-09-08T22:52:15.096Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        },
+        {
+          "source_id": "stern-schlagzeilen",
+          "publisher": "stern",
+          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
+          "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
+          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
+          "source_type": "media_rss",
+          "published_at": "2026-09-09T03:04:28.000Z",
+          "primary_source": false,
+          "source_priority": 0,
+          "source_topic": "Gesellschaft",
+          "content_hash": "8b383bc6f7b6280c12cc67e4817996b71d8b53f3e15e950091d531c240f7aebc",
+          "source_item_id": "c9f4e9b1082a1a9136064980e47e1a6be6d460e156b9c989b01660757ba164db",
+          "publisher_id": "stern",
+          "publisher_kind": "journalism",
+          "source_role": "journalistic_report",
+          "language": "de",
+          "geography": [
+            "DE",
+            "international"
+          ],
+          "research_lane": "media",
+          "requires_corroboration": false,
+          "source_published_at": "2026-09-09T03:04:28.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
+          "agency_origin": "unknown",
+          "agency_origin_confidence": "unknown",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          }
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "wt-0456ad2a9c0ad09d-claim-01",
+          "story_id": "wt-0456ad2a9c0ad09d",
+          "claim": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien: Das US-Militär hat erneut iranische Tanker angegriffen. Nun holt Teheran offenbar zu Gegenschlägen gegen US-Militärstützpunkte in der Region aus.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        },
+        {
+          "claim_id": "wt-0456ad2a9c0ad09d-claim-02",
+          "story_id": "wt-0456ad2a9c0ad09d",
+          "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Teherans Reaktion erfolgt umgehend. Beide Seiten sprechen von Vergeltung. Ein Experte warnt vor einer unkontrollierbaren Eskalationsspirale.",
+          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+          "source_id": "stern-schlagzeilen",
+          "source_function": "journalistic_report",
+          "status": "single_source_claim",
+          "provenance": {
+            "origin": "publisher:stern",
+            "basis": "publisher_only_origin_unverified",
+            "independence_established": false
+          },
+          "evidence_level": "Sekundärquelle",
+          "data_status": "Feed-Kurztext vorhanden",
+          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+          "reference_framework": [],
+          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+          "checked_at": "2026-09-09T04:22:21.997Z"
+        }
+      ],
+      "content_hash": "7bedbded743ad36235457f3b4a72276e85dc6976fdbde558b9937cd7f0bd3891",
+      "published": false,
+      "analysis_status": "automatische Veröffentlichung zurückgestellt",
+      "quality_errors": [],
+      "quality_retry_count": 0,
+      "quality_retry_after": null,
+      "reassessment": false,
+      "fresh": true,
+      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "versions": [],
+      "updated_at": "2026-09-09T04:22:21.997Z",
+      "event_first_seen_at": "2026-09-08T22:52:15.096Z",
+      "event_detected_at": "2026-09-08T22:52:15.096Z",
+      "event_id": "event-9e394f4254cfd55e6370",
+      "preanalysis": {
+        "filter_version": "4.0",
+        "material_development_review": {
+          "required": false,
+          "time_sensitive": false,
+          "findings": []
+        },
+        "internal_relevance_score": 32,
+        "public_relevance": "mittel",
+        "topics": [
+          "Geopolitik",
+          "Demokratie"
+        ],
+        "dimensions": [
+          "Demokratie"
+        ],
+        "status": "laufende Entwicklung",
+        "analysis_type": "ex_ante",
+        "news_value_signals": [],
+        "context_formats": [],
+        "context_only": false,
+        "mechanism_hints": [
+          "Veränderung von Informations- und Entscheidungsgrundlagen"
+        ],
+        "materiality_factors": [
+          "Zahl und Art möglicher Wirkungsempfänger",
+          "Intensität, Dauer und Reversibilität",
+          "Systemrelevanz und mögliche Kaskaden",
+          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+        ]
+      },
+      "freshness": {
+        "source_age_minutes": 77.89995,
+        "detection_delay_minutes": 0,
+        "verification_delay_minutes": null,
+        "publication_delay_minutes": null,
+        "queue_age_minutes": 330.1150166666667,
+        "target_publication_minutes": 120,
+        "news_freshness_score": 84,
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
+      },
+      "source_integrity": {
+        "status": "verified",
+        "publication_status": "eligible",
+        "version": "1.0",
+        "checked_at": "2026-09-09T04:22:21.997Z",
+        "fingerprint": "f0cc211e624240055f83c2374e834258eecaf4ca3ea2e23739c3e608b1df5304",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -799,7 +2367,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-09T02:29:00.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -828,7 +2396,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "edb9c872bee6b225f24f5deb7553e176e149653733629d8c41c1a1b46bb76828",
@@ -841,7 +2409,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T02:52:08.955Z",
       "event_detected_at": "2026-09-09T02:52:08.955Z",
       "event_id": "event-a2113d14fb03db277521",
@@ -874,20 +2442,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 97.60695,
+        "source_age_minutes": 113.36661666666667,
         "detection_delay_minutes": 23.14925,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 74.4577,
+        "queue_age_minutes": 90.21736666666666,
         "target_publication_minutes": 120,
-        "news_freshness_score": 80,
+        "news_freshness_score": 76,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "8326d1c2f5e0a4eab4e8157d7b5db901b4b2e15c922f8603408a73f33241f949",
         "issue_codes": [],
         "warning_codes": []
@@ -957,7 +2525,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "a944cdcb42fc306e64e1b1eee060982f1b9b4f32784d5f655d28bc7762540f12",
@@ -970,7 +2538,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-6bb6b30dd1972e93ecfd",
@@ -1004,20 +2572,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 116.77361666666667,
+        "source_age_minutes": 132.53328333333334,
         "detection_delay_minutes": 12.546866666666666,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 104.22675,
+        "queue_age_minutes": 119.98641666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 76,
+        "news_freshness_score": 72,
         "freshness_warning": null
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "d756946e4c9905594d3f5bbbbcfce32bbbfed9beb4184b8ad4028ddaae76f4ae",
         "issue_codes": [],
         "warning_codes": []
@@ -1093,7 +2661,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "cf2c6260cc1af0ef6a77a31df170f5e1ee3a9b21ed5bb89b00bcf56cd7dc9481",
@@ -1106,7 +2674,7 @@
       "fresh": false,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T02:06:52.907Z",
       "event_detected_at": "2026-09-09T02:06:52.907Z",
       "event_id": "event-3760409fe5600a297535",
@@ -1142,151 +2710,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 18966.60695,
+        "source_age_minutes": 18982.366616666666,
         "detection_delay_minutes": 18846.881783333334,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 119.72516666666667,
+        "queue_age_minutes": 135.48483333333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
-        "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
+        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "8fb680e5dd2b36ec144395ca479e0e4bc8cfbc65af74d3e3b0aa01895d2ce630",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-e44e7089ecc92978",
-      "slug": "attacke-vor-gemeindezentrum-messerangriff-in-freiburg-opfer-lebensgefahrlich-verletzt-c92978",
-      "title": "Attacke vor Gemeindezentrum: Messerangriff in Freiburg: Opfer lebensgefährlich verletzt",
-      "first_seen": "2026-09-09T02:05:09.000Z",
-      "last_updated": "2026-09-09T02:05:09.000Z",
-      "topic": [
-        "Gesellschaft"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/attacke-vor-gemeindezentrum--messerangriff-in-freiburg--opfer-lebensgefaehrlich-verletzt-38224426.html",
-          "title": "Attacke vor Gemeindezentrum: Messerangriff in Freiburg: Opfer lebensgefährlich verletzt",
-          "summary": "Nach der zweiten Messerattacke in Freiburg binnen weniger Tage nimmt die Polizei einen mutmaßlichen Täter fest. Steckt er auch hinter dem Angriff vom Wochenende?",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T02:05:09.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "39f9ff9c49be162c329c4ba6f371871886d4aaf0a668f834c51cbb2fb39fb03d",
-          "source_item_id": "38b92947f0085b5aeb7945c9e00e25e902ee6172c05564313ada4e301dc84ba7",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T02:05:09.000Z",
-          "ingested_at": "2026-09-09T02:22:22.812Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-e44e7089ecc92978-claim-01",
-          "story_id": "wt-e44e7089ecc92978",
-          "claim": "Attacke vor Gemeindezentrum: Messerangriff in Freiburg: Opfer lebensgefährlich verletzt: Nach der zweiten Messerattacke in Freiburg binnen weniger Tage nimmt die Polizei einen mutmaßlichen Täter fest. Steckt er auch hinter dem Angriff vom Wochenende?",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
-        }
-      ],
-      "content_hash": "f74d12a209673c0544853d0213569b00d47eaa5d60d8f86b47826cccdc25300b",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [
-        "AI_BUDGET_EXHAUSTED"
-      ],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_BLOCKED",
-      "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
-      "event_first_seen_at": "2026-09-09T02:22:22.812Z",
-      "event_detected_at": "2026-09-09T02:22:22.812Z",
-      "event_id": "event-ac55a510fc7432e60b39",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 34,
-        "public_relevance": "mittel",
-        "topics": [
-          "Gesellschaft"
-        ],
-        "dimensions": [],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 121.45695,
-        "detection_delay_minutes": 17.2302,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 104.22675,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 75,
-        "freshness_warning": null
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
-        "fingerprint": "9fd9d366f8159f40b1d568950ffc5567e89549a3ab244641bf920f1390aeed04",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -1354,7 +2792,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "02e94e77815c194c5e2c9923351cf6b2ca8387b73ea932cbcbebcdca4dcf9246",
@@ -1369,7 +2807,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T01:37:14.597Z",
       "event_detected_at": "2026-09-09T01:37:14.597Z",
       "event_id": "event-4d1eb4d3fb782ee51faf",
@@ -1404,20 +2842,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 156.49028333333334,
+        "source_age_minutes": 172.24995,
         "detection_delay_minutes": 7.126616666666667,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 149.36366666666666,
+        "queue_age_minutes": 165.12333333333333,
         "target_publication_minutes": 120,
-        "news_freshness_score": 67,
+        "news_freshness_score": 64,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "e12ede479bf7e6dc14aca69b54d667270bcefd357cea0081b8e6b88a4c3013f6",
         "issue_codes": [],
         "warning_codes": []
@@ -1481,7 +2919,7 @@
           "title": "Israel - Regierungschef Netanjahu wegen Berichts über Warnung vor Angriff vom 7. Oktober 2023 unter Druck",
           "summary": "Israels Ministerpräsident Netanjahu hat Angaben dementiert, wonach er vor dem Angriff der Hamas vom 7. Oktober 2023 gewarnt wurde.",
           "source_type": "media_rss",
-          "published_at": "2026-09-09T03:37:16.000Z",
+          "published_at": "2026-09-09T04:16:02.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -1497,8 +2935,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T03:37:16.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "source_published_at": "2026-09-09T04:16:02.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1527,7 +2965,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         },
         {
           "claim_id": "wt-bd410136bb400bcb-claim-02",
@@ -1547,7 +2985,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "713d4dd384536a34f7a94bc2a5bacfa4398148b4a7e329db349f6dcbe216a647",
@@ -1562,7 +3000,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-08T12:06:46.743Z",
       "event_detected_at": "2026-09-08T12:06:46.743Z",
       "event_id": "event-4115d1c8b7b41d981c8c",
@@ -1595,20 +3033,20 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 29.340283333333332,
+        "source_age_minutes": 6.333283333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 959.8279,
+        "queue_age_minutes": 975.5875666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 99,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "ce11a485ad27cd1902db1ce24ee7886675fdaf06e180aadf219a94f9f8ba4360",
         "issue_codes": [],
         "warning_codes": []
@@ -1631,7 +3069,7 @@
           "title": "USA - Gericht stoppt Weitergabe von Migranten-Steuerdaten an Einwanderungsbehörde CE",
           "summary": "Die umstrittene US-Einwanderungsbehörde ICE darf keinen Zugriff mehr auf vertrauliche Steuerzahlerdaten von Migranten ohne Aufenthaltstitel erhalten.",
           "source_type": "media_rss",
-          "published_at": "2026-09-09T03:37:16.000Z",
+          "published_at": "2026-09-09T04:16:02.000Z",
           "primary_source": false,
           "source_priority": 0,
           "source_topic": "Politik",
@@ -1647,8 +3085,8 @@
           ],
           "research_lane": "media",
           "requires_corroboration": false,
-          "source_published_at": "2026-09-09T03:37:16.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "source_published_at": "2026-09-09T04:16:02.000Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -1677,7 +3115,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "527c871387449f4f9cce81e9f1a58f4ec152c5e41836339f61621bf09564eca5",
@@ -1690,7 +3128,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T01:07:03.528Z",
       "event_detected_at": "2026-09-09T01:07:03.528Z",
       "event_id": "event-56a34318e130bae30a62",
@@ -1723,259 +3161,21 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 29.340283333333332,
+        "source_age_minutes": 6.333283333333333,
         "detection_delay_minutes": 0,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 179.54815,
+        "queue_age_minutes": 195.30781666666667,
         "target_publication_minutes": 120,
-        "news_freshness_score": 94,
+        "news_freshness_score": 99,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
       },
       "source_integrity": {
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "7461826c90d1f6f4def5430f6e8667d48c52e99546387bfba2b4988c8776b310",
-        "issue_codes": [],
-        "warning_codes": []
-      }
-    },
-    {
-      "story_id": "wt-0456ad2a9c0ad09d",
-      "ai_retry": {
-        "version": "2026-09-06-throughput-3",
-        "fingerprint": "b9f18ea69e019a4cffce6c6d230c9cb988fb7950fdaa6c82ed5fcdbc926bee69",
-        "first_failed_at": "2026-09-08T22:52:15.096Z",
-        "failed_at": "2026-09-08T22:52:15.096Z",
-        "retry_after": "2026-09-08T23:07:15.096Z",
-        "retry_count": 1
-      },
-      "slug": "iran-krieg-iranische-medien-melden-raketenangriffe-auf-jordanien-0ad09d",
-      "title": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien",
-      "queue_source_repartitions": [
-        {
-          "version": 1,
-          "at": "2026-09-09T00:51:49.494Z",
-          "retained_urls": [
-            "https://www.stern.de/politik/ausland/iran-krieg--iranische-medien-melden-raketenangriffe-auf-jordanien-38224158.html",
-            "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html"
-          ],
-          "detached_sources": [
-            {
-              "source_id": "tagesspiegel-home",
-              "publisher": "Der Tagesspiegel",
-              "url": "https://www.tagesspiegel.de/internationales/dpa-iran-krieg-16032295.html",
-              "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
-              "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-              "source_type": "media_rss",
-              "published_at": "2026-09-08T22:30:29.000Z",
-              "primary_source": false,
-              "source_priority": 0,
-              "source_topic": "Politik",
-              "content_hash": "7d900d0021f3231477773c754911fdd2ab467d56ff7e3ff0ceca8e986a51ad6c",
-              "source_item_id": "e7322df280e3c082ea37fdcd625778091779e66d9192f416e537ef48ac3cd500",
-              "publisher_id": "tagesspiegel",
-              "publisher_kind": "journalism",
-              "source_role": "journalistic_report",
-              "language": "de",
-              "geography": [
-                "DE",
-                "Berlin"
-              ],
-              "research_lane": "media",
-              "requires_corroboration": false,
-              "source_published_at": "2026-09-08T22:30:29.000Z",
-              "ingested_at": "2026-09-09T00:37:30.333Z",
-              "agency_origin": "unknown",
-              "agency_origin_confidence": "unknown",
-              "provenance": {
-                "origin": "publisher:tagesspiegel",
-                "basis": "publisher_only_origin_unverified",
-                "independence_established": false
-              }
-            }
-          ]
-        }
-      ],
-      "first_seen": "2026-09-08T22:29:15.000Z",
-      "last_updated": "2026-09-09T00:29:38.000Z",
-      "topic": [
-        "Geopolitik",
-        "Demokratie"
-      ],
-      "sources": [
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/iran-krieg--iranische-medien-melden-raketenangriffe-auf-jordanien-38224158.html",
-          "title": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien",
-          "summary": "Das US-Militär hat erneut iranische Tanker angegriffen. Nun holt Teheran offenbar zu Gegenschlägen gegen US-Militärstützpunkte in der Region aus.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-08T22:29:15.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "935491ffdc1de7eaba7ba06ee0d477b7fb4cbcfcef08c604c4a62d9178d2800f",
-          "source_item_id": "9322bc4d74431bec7da39d1da73716b9db891403c63581705c7cc8802866a553",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-08T22:29:15.000Z",
-          "ingested_at": "2026-09-08T22:52:15.096Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        },
-        {
-          "source_id": "stern-schlagzeilen",
-          "publisher": "stern",
-          "url": "https://www.stern.de/politik/ausland/iran-krieg--usa--zerstoeren--iranische-tanker---teheran-feuert-raketen-ab-38224158.html",
-          "title": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab",
-          "summary": "Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-          "source_type": "media_rss",
-          "published_at": "2026-09-09T00:29:38.000Z",
-          "primary_source": false,
-          "source_priority": 0,
-          "source_topic": "Gesellschaft",
-          "content_hash": "8abaf5753dba4361d8ca46c13ddf4584aff86d61b7427a27d270c154e96d92a4",
-          "source_item_id": "c9f4e9b1082a1a9136064980e47e1a6be6d460e156b9c989b01660757ba164db",
-          "publisher_id": "stern",
-          "publisher_kind": "journalism",
-          "source_role": "journalistic_report",
-          "language": "de",
-          "geography": [
-            "DE",
-            "international"
-          ],
-          "research_lane": "media",
-          "requires_corroboration": false,
-          "source_published_at": "2026-09-09T00:29:38.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
-          "agency_origin": "unknown",
-          "agency_origin_confidence": "unknown",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          }
-        }
-      ],
-      "claims": [
-        {
-          "claim_id": "wt-0456ad2a9c0ad09d-claim-01",
-          "story_id": "wt-0456ad2a9c0ad09d",
-          "claim": "Iran-Krieg: Iranische Medien melden Raketenangriffe auf Jordanien: Das US-Militär hat erneut iranische Tanker angegriffen. Nun holt Teheran offenbar zu Gegenschlägen gegen US-Militärstützpunkte in der Region aus.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
-        },
-        {
-          "claim_id": "wt-0456ad2a9c0ad09d-claim-02",
-          "story_id": "wt-0456ad2a9c0ad09d",
-          "claim": "Iran-Krieg: USA „zerstören“ iranische Tanker - Teheran feuert Raketen ab: Wieder nimmt das US-Militär iranische Tanker ins Visier. Die Reaktion des Irans lässt nicht lange auf sich warten. Beide Seiten sprechen von Vergeltung.",
-          "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
-          "source_id": "stern-schlagzeilen",
-          "source_function": "journalistic_report",
-          "status": "single_source_claim",
-          "provenance": {
-            "origin": "publisher:stern",
-            "basis": "publisher_only_origin_unverified",
-            "independence_established": false
-          },
-          "evidence_level": "Sekundärquelle",
-          "data_status": "Feed-Kurztext vorhanden",
-          "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
-          "reference_framework": [],
-          "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
-        }
-      ],
-      "content_hash": "41b69903821861d0ff53a72cde44f1c2386d31b99525f56f359959801a7a1a45",
-      "published": false,
-      "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
-      "quality_retry_count": 0,
-      "quality_retry_after": null,
-      "reassessment": false,
-      "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
-      "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
-      "event_first_seen_at": "2026-09-08T22:52:15.096Z",
-      "event_detected_at": "2026-09-08T22:52:15.096Z",
-      "event_id": "event-9e394f4254cfd55e6370",
-      "preanalysis": {
-        "filter_version": "4.0",
-        "material_development_review": {
-          "required": false,
-          "time_sensitive": false,
-          "findings": []
-        },
-        "internal_relevance_score": 32,
-        "public_relevance": "mittel",
-        "topics": [
-          "Geopolitik",
-          "Demokratie"
-        ],
-        "dimensions": [
-          "Demokratie"
-        ],
-        "status": "laufende Entwicklung",
-        "analysis_type": "ex_ante",
-        "news_value_signals": [],
-        "context_formats": [],
-        "context_only": false,
-        "mechanism_hints": [
-          "Veränderung von Informations- und Entscheidungsgrundlagen"
-        ],
-        "materiality_factors": [
-          "Zahl und Art möglicher Wirkungsempfänger",
-          "Intensität, Dauer und Reversibilität",
-          "Systemrelevanz und mögliche Kaskaden",
-          "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
-        ]
-      },
-      "freshness": {
-        "source_age_minutes": 216.97361666666666,
-        "detection_delay_minutes": 0,
-        "verification_delay_minutes": null,
-        "publication_delay_minutes": null,
-        "queue_age_minutes": 314.35535,
-        "target_publication_minutes": 120,
-        "news_freshness_score": 55,
-        "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
-      },
-      "source_integrity": {
-        "status": "verified",
-        "publication_status": "eligible",
-        "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
-        "fingerprint": "50be7be2727a2f6da3d6157eb987cc35e4f98e3ec81ffe583e93dbba9896c564",
         "issue_codes": [],
         "warning_codes": []
       }
@@ -15274,7 +16474,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T01:32:54.353Z"
+        "retry_after": "2026-09-09T04:38:45.291Z"
       },
       "listed": true,
       "analysis_status": "veröffentlicht",
@@ -16785,7 +17985,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T01:22:57.936Z"
+        "retry_after": "2026-09-09T04:38:40.296Z"
       }
     },
     {
@@ -20404,7 +21604,7 @@
         },
         "status": "fallback",
         "fallback_reason": "TITLE_IMAGE_UNAVAILABLE",
-        "retry_after": "2026-09-09T01:32:58.787Z"
+        "retry_after": "2026-09-09T04:38:50.396Z"
       },
       "review_checkpoint": {
         "version": "evidence-packet-3",
@@ -28972,7 +30172,7 @@
           "research_lane": "media",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08T14:37:42.000Z",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -29001,7 +30201,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "bf36d0e52a041563fd6ea4080293b7349719faa53e6e2da44ae2c04b203bc8a7",
@@ -29014,7 +30214,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-08T14:52:22.706Z",
       "event_detected_at": "2026-09-08T14:52:22.706Z",
       "event_id": "event-b4bdb0e02259462f4622",
@@ -29047,11 +30247,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 808.90695,
+        "source_age_minutes": 824.6666166666666,
         "detection_delay_minutes": 14.678433333333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 794.2285166666667,
+        "queue_age_minutes": 809.9881833333334,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -29060,7 +30260,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "8dc1fc67b4d6b2ce603c3c5a8305a9c0bb659e39149c405430a72181bf44e900",
         "issue_codes": [],
         "warning_codes": []
@@ -43428,7 +44628,7 @@
             "research_lane": "media",
             "requires_corroboration": false,
             "source_published_at": "2026-09-08T11:07:00.000Z",
-            "ingested_at": "2026-09-08T21:52:27.208Z",
+            "ingested_at": "2026-09-09T04:22:21.997Z",
             "agency_origin": "unknown",
             "agency_origin_confidence": "unknown",
             "provenance": {
@@ -43537,10 +44737,8 @@
             }
           }
         ],
-        "reason": "AI_BUDGET_BLOCKED",
-        "quality_errors": [
-          "AI_BUDGET_EXHAUSTED"
-        ],
+        "reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "quality_errors": [],
         "quality_retry_count": 5,
         "quality_retry_after": null,
         "reassessment": false,
@@ -43550,7 +44748,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:06:36.417Z",
+          "checked_at": "2026-09-09T04:22:21.997Z",
           "fingerprint": "65bf05d682b1601675c0983a98a31ea1ae357e821796ed87f6a825c844f41862",
           "issue_codes": [],
           "warning_codes": []
@@ -54888,7 +56086,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -54924,20 +56122,22 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "e6a92d8b9c75bd051aa6fd91a2dbca11067e3c9359783d4719e279cb5a0ffea1",
       "published": false,
       "analysis_status": "automatische Veröffentlichung zurückgestellt",
-      "quality_errors": [],
+      "quality_errors": [
+        "AI_BUDGET_EXHAUSTED"
+      ],
       "quality_retry_count": 0,
       "quality_retry_after": null,
       "reassessment": false,
       "fresh": true,
-      "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+      "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-4559857265594c84a49e",
@@ -54974,11 +56174,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1686.60695,
+        "source_age_minutes": 1702.3666166666667,
         "detection_delay_minutes": 607.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1079.1715,
+        "queue_age_minutes": 1094.9311666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -54987,7 +56187,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "b56ca8afb7d4cd513dc66d13f8f7eada2833455b8c43b6c9d896d89f02fdc031",
         "issue_codes": [],
         "warning_codes": []
@@ -55026,7 +56226,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -55062,7 +56262,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "02b254af45772a3a77d179956d08e50c5f459216f842f62825a09443d3f8f5b0",
@@ -55075,7 +56275,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-08T10:07:26.127Z",
       "event_detected_at": "2026-09-08T10:07:26.127Z",
       "event_id": "event-c1430c90195dafac9f69",
@@ -55111,11 +56311,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1686.60695,
+        "source_age_minutes": 1702.3666166666667,
         "detection_delay_minutes": 607.43545,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 1079.1715,
+        "queue_age_minutes": 1094.9311666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -55124,7 +56324,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "e831257ae063c3405443bf62fd84debab4b674add73b9a74c7ec602eba4a84f3",
         "issue_codes": [],
         "warning_codes": []
@@ -59372,7 +60572,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:06:36.417Z",
+          "checked_at": "2026-09-09T04:22:21.997Z",
           "fingerprint": "ccebfb90c83bb2d55ca4464d28afda32c2366a12a9a2784a9d0371809298cc06",
           "issue_codes": [],
           "warning_codes": []
@@ -66948,7 +68148,7 @@
           "status": "verified",
           "publication_status": "eligible",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:06:36.417Z",
+          "checked_at": "2026-09-09T04:22:21.997Z",
           "fingerprint": "23f60f41c7e50322a66d673ffbc4f4fa77d3d18dc42146d6ae3e57aa6991c72f",
           "issue_codes": [],
           "warning_codes": []
@@ -72601,7 +73801,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-08",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -72630,7 +73830,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "5fdaa17f0750c1257e40d9a2de0c9bbcabee23271c5da956c713e7b5c7d92de6",
@@ -72643,7 +73843,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-09T02:22:22.812Z",
       "event_detected_at": "2026-09-09T02:22:22.812Z",
       "event_id": "event-9c0ee812d27e4634c540",
@@ -72684,11 +73884,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 1686.60695,
+        "source_age_minutes": 1702.3666166666667,
         "detection_delay_minutes": 1582.3802,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 104.22675,
+        "queue_age_minutes": 119.98641666666667,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "OLDER_SOURCE_RECHECK_REQUIRED"
@@ -72697,7 +73897,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "62b1bcd93cb96018b47dea8bf4beaacafc77c54dc90316f3ee3b26841d15c0c6",
         "issue_codes": [],
         "warning_codes": []
@@ -74858,9 +76058,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "b5df24eb8aa7415fea5ad2f300a7e48ebf8133a95313ba4fd0c1f6d1e45297d9",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T10:06:36.417Z",
+        "expires_at": "2026-09-09T10:22:21.997Z",
         "sources": [
           {
             "source_id": "france24-en",
@@ -90276,9 +91476,9 @@
       "review_checkpoint": {
         "version": "evidence-packet-3",
         "fingerprint": "61dd35c8e2e4f05a2b64bdc95313fd7c05533e5088e8d7050ab841b17a574a74",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "outcome": "no_material_update",
-        "expires_at": "2026-09-09T10:06:36.417Z",
+        "expires_at": "2026-09-09T10:22:21.997Z",
         "sources": [
           {
             "source_id": "mdr-nachrichten",
@@ -130788,7 +131988,7 @@
           "research_lane": "primary",
           "requires_corroboration": false,
           "source_published_at": "2026-09-07",
-          "ingested_at": "2026-09-09T03:52:20.452Z",
+          "ingested_at": "2026-09-09T04:22:21.997Z",
           "agency_origin": "unknown",
           "agency_origin_confidence": "unknown",
           "provenance": {
@@ -130824,7 +132024,7 @@
           "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
           "reference_framework": [],
           "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
-          "checked_at": "2026-09-09T04:06:36.417Z"
+          "checked_at": "2026-09-09T04:22:21.997Z"
         }
       ],
       "content_hash": "5e965bbef425b12832f3fc9122bf71422f670cef79d00dbad3ab788f94c450ed",
@@ -130839,7 +132039,7 @@
       "fresh": true,
       "pending_reason": "AI_BUDGET_BLOCKED",
       "versions": [],
-      "updated_at": "2026-09-09T04:06:36.417Z",
+      "updated_at": "2026-09-09T04:22:21.997Z",
       "event_first_seen_at": "2026-09-07T09:06:53.363Z",
       "event_detected_at": "2026-09-07T09:06:53.363Z",
       "event_id": "event-b3b6b7dbecf642772b22",
@@ -130875,11 +132075,11 @@
         ]
       },
       "freshness": {
-        "source_age_minutes": 3126.60695,
+        "source_age_minutes": 3142.3666166666667,
         "detection_delay_minutes": 546.8893833333333,
         "verification_delay_minutes": null,
         "publication_delay_minutes": null,
-        "queue_age_minutes": 2579.7175666666667,
+        "queue_age_minutes": 2595.4772333333335,
         "target_publication_minutes": 120,
         "news_freshness_score": 0,
         "freshness_warning": "PUBLICATION_TARGET_EXCEEDED"
@@ -130888,7 +132088,7 @@
         "status": "verified",
         "publication_status": "eligible",
         "version": "1.0",
-        "checked_at": "2026-09-09T04:06:36.417Z",
+        "checked_at": "2026-09-09T04:22:21.997Z",
         "fingerprint": "fd023c485e0b3ed33b65d77ed5513973bc866b82062ccb744777b35c0783a309",
         "issue_codes": [],
         "warning_codes": []
@@ -186569,7 +187769,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:06:36.417Z",
+          "checked_at": "2026-09-09T04:22:21.997Z",
           "fingerprint": "06efbdeaf1c36858c170f3a39f114e0cdc6d15be574b5906ff52685b8898deb9",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
@@ -230963,7 +232163,7 @@
           "status": "open",
           "publication_status": "hold",
           "version": "1.0",
-          "checked_at": "2026-09-09T04:06:36.417Z",
+          "checked_at": "2026-09-09T04:22:21.997Z",
           "fingerprint": "5b84cf893dcbd27f4938595fab61845286be62d97423f291b209d0b11358b238",
           "issue_codes": [
             "SOURCE_SEMANTIC_FIT_OPEN"
