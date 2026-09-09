@@ -8,7 +8,16 @@ export const isCommissionedAnalysis = analysis => (analysis?.analysis_variant ==
 const escape = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[char]));
 const STATES = { open: "Offen", announced: "Angekündigt", introduced: "Eingebracht", adopted: "Beschlossen", implemented: "Umgesetzt", measured: "Wirkung gemessen" };
 const STATUS = { fact: "Belegt", program_statement: "Programmaussage", analytical_inference: "Plausibler Wirkpfad", scenario: "Bedingtes Szenario", impact_risk: "Bedingtes Risiko" };
-const TYPES = new Set(["cards", "cascade", "timeline", "references", "network", "power", "federal", "comparison", "feedback", "evidence_table"]);
+const TYPES = new Set(["cards", "cascade", "timeline", "references", "network", "power", "federal", "comparison", "feedback", "evidence_table", "reference_table"]);
+
+function validReferenceTable(visual) {
+  return Array.isArray(visual.columns) && visual.columns.length >= 2 && visual.columns.length <= 4
+    && visual.columns.every(label => typeof label === "string" && label.trim() && label.length <= 100)
+    && Array.isArray(visual.items) && visual.items.length > 0 && visual.items.length <= 12
+    && visual.items.every(item => Array.isArray(item?.cells) && item.cells.length === visual.columns.length
+      && item.cells.every(cell => typeof cell === "string" && cell.trim() && cell.length <= 1200)
+      && (item.source_ids === undefined || Array.isArray(item.source_ids)));
+}
 
 function validEvidenceTable(visual) {
   return Array.isArray(visual.columns) && visual.columns.length === 4
@@ -34,7 +43,14 @@ export function editorialVisualErrors(analysis) {
   const errors = [];
   const ids = new Set((analysis.source_snapshot || []).map(source => source.source_id));
   const sections = new Set((analysis.sections || []).map(section => section.id));
+  if (analysis.related_analysis_slugs !== undefined && (!Array.isArray(analysis.related_analysis_slugs)
+    || analysis.related_analysis_slugs.length > 8 || analysis.related_analysis_slugs.some(slug => typeof slug !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) || slug === analysis.slug))) errors.push("EDITORIAL_ANALYSIS_RELATION_INVALID");
   for (const section of analysis.sections || []) {
+    const validIndex = index => Number.isInteger(index) && index >= 0 && index < (section.paragraphs?.length || 0);
+    if (section.callout_indices !== undefined && (!Array.isArray(section.callout_indices) || section.callout_indices.some(index => !validIndex(index)))) errors.push("EDITORIAL_CALLOUT_INDEX_INVALID");
+    if (section.paragraph_refs !== undefined && (!Array.isArray(section.paragraph_refs)
+      || new Set(section.paragraph_refs.map(ref => ref?.index)).size !== section.paragraph_refs.length
+      || section.paragraph_refs.some(ref => !validIndex(ref?.index) || !Array.isArray(ref?.source_ids) || !ref.source_ids.length || ref.source_ids.some(id => !ids.has(id))))) errors.push("EDITORIAL_PARAGRAPH_REFERENCE_INVALID");
     for (const link of section.links || []) {
       if (!link.label || !/^\/(?!\/)[a-z0-9/_-]+(?:\.html)?(?:#[a-z0-9_-]+)?$/.test(link.href || "")) errors.push("EDITORIAL_RELATED_LINK_INVALID");
     }
@@ -44,6 +60,11 @@ export function editorialVisualErrors(analysis) {
     if (!visual) continue;
     if (!TYPES.has(visual.type) || !visual.caption || !visual.items?.length) errors.push("SYSTEMIC_VISUAL_INVALID");
     if (["network", "power", "federal"].includes(visual.type) && !visual.hub) errors.push("SYSTEMIC_VISUAL_HUB_REQUIRED");
+    if (visual.type === "reference_table") {
+      if (!validReferenceTable(visual)) errors.push("EDITORIAL_REFERENCE_TABLE_INVALID");
+      else if (visual.items.some(item => (item.source_ids || []).some(id => !ids.has(id)))) errors.push("SYSTEMIC_VISUAL_SOURCE_UNKNOWN");
+      continue;
+    }
     if (visual.type === "evidence_table" && !validEvidenceTable(visual)) {
       errors.push("EDITORIAL_EVIDENCE_TABLE_INVALID");
       continue;
@@ -103,6 +124,15 @@ export function commissionedReviewState(analysis, story) {
 
 export function renderSystemicVisual(visual, sources) {
   if (!visual || !TYPES.has(visual.type)) return "";
+  if (visual.type === "reference_table") {
+    if (!validReferenceTable(visual)) return "";
+    const rows = visual.items.map(item => `<tr role="row">${item.cells.map((cell, index) => {
+      const tag = index === 0 ? "th" : "td";
+      const refs = index === item.cells.length - 1 ? (item.source_ids || []).map(id => sources.get(id)).filter(Boolean) : [];
+      return `<${tag} ${index === 0 ? 'scope="row" role="rowheader"' : 'role="cell"'}><span class="news-evidence-table__label" aria-hidden="true">${escape(visual.columns[index])}</span>${escape(cell)}${refs.length ? `<p class="news-method-note">${refs.map(source => `<a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.publisher)}</a>`).join(" · ")}</p>` : ""}</${tag}>`;
+    }).join("")}</tr>`).join("");
+    return `<figure class="news-systemic-visual news-systemic-visual--reference-table"><table class="news-evidence-table news-reference-table" role="table"><caption>${escape(visual.caption)}</caption><thead role="rowgroup"><tr role="row">${visual.columns.map(label => `<th scope="col" role="columnheader">${escape(label)}</th>`).join("")}</tr></thead><tbody role="rowgroup">${rows}</tbody></table></figure>`;
+  }
   if (visual.type === "evidence_table") {
     if (!validEvidenceTable(visual)) return "";
     const mobileLabel = index => `<span class="news-evidence-table__label" aria-hidden="true">${escape(visual.columns[index])}</span>`;

@@ -1,6 +1,7 @@
 import { renderStoryVisual, renderEditorialClaimMap } from "./story-visual.mjs";
 import { EDITORIAL_TRANSPARENCY_NOTE, editorialLabel, isEditorialCommentary, isCommissionedAnalysis, renderSystemicVisual, renderSystemicDimensions, renderSystemicMonitoring, renderSectionAnchor, renderEditorialContents } from "./systemic-analysis.mjs";
 import { renderEditorialFinding, renderAuthorPerspective, renderEditorialBalance } from "./editorial-judgment.mjs";
+import { relatedEditorialAnalyses, renderRelatedEditorialAnalyses, renderEditorialParagraphs } from "./editorial-presentation.mjs";
 import fs from "node:fs";
 import { publicTitleImage } from "./title-image/pipeline.mjs";
 import path from "node:path";
@@ -20,7 +21,7 @@ import { storyUpdateNotice, storyUpdateDetails } from "./publication-update.mjs"
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const SITE = "https://wirkungsoekonomie.de";
-const PUBLIC_RELEASE = "20260908-education1";
+const PUBLIC_RELEASE = "20260909-security-analysis1";
 const STORIES_FILE = path.join(ROOT, "data/news/stories.json");
 const EDITORIAL_ANALYSES_FILE = path.join(ROOT, "data/news/editorial-analyses.json");
 const TICKER_DIR = path.join(ROOT, "wirkungsticker");
@@ -312,9 +313,11 @@ function editorialCard(analysis, story, index) {
   const href = `./analyse/${analysis.slug}/`;
   const topic = (story?.topic || []).join(" ").toLowerCase();
   const searchText = [analysis.title, analysis.subtitle, analysis.teaser, analysis.analysis_type, ...(story?.topic || [])].join(" ").toLowerCase();
-  return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}" data-news-card data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="mensch planet demokratie" data-high-impact="true" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(analysis.updated_at)}">
+  const titleImage = publicTitleImage(analysis.title_image);
+  const preview = titleImage?.wide ? `<a class="news-editorial-card__preview" href="${escapeHtml(href)}" aria-hidden="true" tabindex="-1"><img src="${escapeHtml(titleImage.wide.url)}" width="1200" height="675" alt="" loading="lazy" decoding="async"></a>` : "";
+  return `<article class="news-editorial-card${index === 0 ? " news-editorial-card--lead" : ""}${preview ? " news-editorial-card--illustrated" : ""}" data-news-card data-news-editorial-analysis data-news-story-id="analysis-${escapeHtml(analysis.analysis_id)}" data-news-href="${escapeHtml(href)}" data-topic="${escapeHtml(topic)}" data-dimensions="mensch planet demokratie" data-high-impact="true" data-news-search="${escapeHtml(searchText)}" data-news-updated-at="${escapeHtml(analysis.updated_at)}">
   <div class="news-editorial-card__content"><p class="hero-kicker">${escapeHtml(editorialLabel(analysis))}</p><h2><a href="${escapeHtml(href)}">${escapeHtml(analysis.title)}</a></h2><p class="news-editorial-card__subtitle">${escapeHtml(analysis.subtitle)}</p><p>${escapeHtml(analysis.teaser)}</p><p class="news-editorial-card__origin">Entstanden aus: <a class="text-link" href="./${escapeHtml(story?.slug || "")}/">${escapeHtml(story?.title || "Wirkungsticker-Story")}</a></p><div class="news-editorial-card__byline"><img src="../assets/img/people/natalie-weber-woek-analyse.jpg" alt="Natalie Weber" width="72" height="72" loading="lazy" decoding="async"><span><strong>Natalie Weber</strong><small><a class="text-link" href="../methodik/">${escapeHtml(analysis.transparency_note)}</a></small><small>${escapeHtml(`${analysis.reading_time_minutes || 8} Min. · veröffentlicht ${formatDate(analysis.published_at, { dateOnly: true })}`)}</small></span></div></div>
-  <div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">Analyse lesen${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
+  ${preview}<div class="news-editorial-card__actions"><a class="btn btn-primary" href="${escapeHtml(href)}">Analyse lesen${renderIcon("pfeil")}</a>${editorialSaveControl(analysis)}${editorialShareControl(analysis)}</div>
 </article>`;
 }
 
@@ -670,7 +673,9 @@ const CLAIM_TYPE_LABELS = {
   program_statement: "Programmaussage", scenario: "Szenario",
 };
 
-export function editorialAnalysisPage(analysis, story, { nextItem = null } = {}) {
+export function editorialAnalysisPage(analysis, story, { nextItem = null, relatedAnalyses = [] } = {}) {
+  const titleImage = publicTitleImage(analysis.title_image);
+  if (titleImage) titleImage.label = "Wirkungskarte · Meinung & Analyse";
   const sourcesById = new Map((analysis.source_snapshot || []).map((source) => [source.source_id, source]));
   const storyAnalysis = story.analysis || {};
   const storyVisuals = sanitizeVisuals(storyAnalysis.visuals, story).visuals;
@@ -691,12 +696,12 @@ export function editorialAnalysisPage(analysis, story, { nextItem = null } = {})
   const renderedSections = (analysis.sections || []).map((section) => {
     const refs = (section.source_ids || []).map(id => sourcesById.get(id)).filter(Boolean);
     const citations = refs.length ? `<p class="news-method-note">Quellen und Bezugsrahmen: ${refs.map(source => `<a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}</a>`).join(" · ")}</p>` : "";
-    const html = `<section class="news-editorial-article__section" id="${escapeHtml(section.id)}">${section.kicker ? `<p class="hero-kicker">${escapeHtml(section.kicker)}</p>` : ""}<h2>${section.icon ? renderIcon(section.icon) : ""}${escapeHtml(section.title)}</h2>${renderSectionAnchor(section)}${section.paragraphs.map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`).join("")}${renderSystemicVisual(section.visual, sourcesById)}${section.id === "mpd" ? (analysis.editorial_rules_version ? renderEditorialBalance(analysis) : renderSystemicDimensions(analysis)) : ""}${citations}${(section.links || []).map(link => `<p><a class="text-link" href="${escapeHtml(link.href)}">${escapeHtml(link.label)}${renderIcon("pfeil")}</a></p>`).join("")}${section.id === "system" && !isCommissionedAnalysis(analysis) ? claimMap : ""}</section>`;
+    const html = `<section class="news-editorial-article__section" id="${escapeHtml(section.id)}">${section.kicker ? `<p class="hero-kicker">${escapeHtml(section.kicker)}</p>` : ""}<h2>${section.icon ? renderIcon(section.icon) : ""}${escapeHtml(section.title)}</h2>${renderSectionAnchor(section)}${renderEditorialParagraphs(section, sourcesById)}${renderSystemicVisual(section.visual, sourcesById)}${section.id === "mpd" ? (analysis.editorial_rules_version ? renderEditorialBalance(analysis) : renderSystemicDimensions(analysis)) : ""}${citations}${(section.links || []).map(link => `<p><a class="text-link" href="${escapeHtml(link.href)}">${escapeHtml(link.label)}${renderIcon("pfeil")}</a></p>`).join("")}${section.id === "system" && !isCommissionedAnalysis(analysis) ? claimMap : ""}</section>`;
     return { section, html };
   });
   const leadSections = renderedSections.filter(item => item.section.placement === "lead").map(item => item.html).join("");
   const heroSections = renderedSections.filter(item => item.section.placement === "hero").map(item => item.html).join("");
-  const sections = renderedSections.filter(item => !item.section.placement).map(item => item.html).join("");
+  const sections = renderedSections.filter(item => !item.section.placement).map(item => item.html).join("") + renderRelatedEditorialAnalyses(relatedAnalyses);
   const contents = renderEditorialContents(analysis);
   const sourceList = (analysis.source_snapshot || []).map((source) => `<li><a class="text-link" href="${escapeHtml(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(source.publisher)}: ${escapeHtml(source.title)}</a><span>${escapeHtml({ context: "Institutioneller Kontext / eigener Vorschlag", journalistic_context: "Journalistischer Bericht / attribuierte Angabe", counter_source: "Gegenposition oder kritischer Prüfbericht", research: "Fachlicher Forschungsstand", reference_framework: "Ziel- und Referenzrahmen" }[source.source_function] || (source.primary_source ? "Primärquelle / Selbstauskunft" : "Journalistische oder fachliche Kontextquelle"))} · ${source.editorial_review ? "Dokumentstand " : ""}${escapeHtml(formatEditorialSourceDate(source))}${source.editorial_review ? ` · geprüft ${escapeHtml(source.editorial_review.checked_at.slice(0, 10))}` : ""}${source.precise_location ? ` · ${escapeHtml(source.precise_location)}` : ""}</span></li>`).join("");
   const ledger = (analysis.claim_ledger || []).map((claim) => {
@@ -717,7 +722,7 @@ export function editorialAnalysisPage(analysis, story, { nextItem = null } = {})
   </article>
 </main>`;
   return pageShell({
-    title: analysis.title, description: analysis.seo_description.replace(/WÖ[kK]-(?:Sonderanalyse|Analyse)(?: \/ Kommentar)?/g, "Meinung & Analyse"), canonical, base: "../../../", body, ogType: "article",
+    title: analysis.title, description: analysis.seo_description.replace(/WÖ[kK]-(?:Sonderanalyse|Analyse)(?: \/ Kommentar)?/g, "Meinung & Analyse"), canonical, base: "../../../", body, ogType: "article", titleImage,
     jsonLd: {
       "@context": "https://schema.org", "@type": "Article", "@id": `${canonical}#article`, url: canonical,
       headline: analysis.title, alternativeHeadline: analysis.subtitle, description: analysis.seo_description.replace(/WÖ[kK]-(?:Sonderanalyse|Analyse)(?: \/ Kommentar)?/g, "Meinung & Analyse"),
@@ -725,6 +730,7 @@ export function editorialAnalysisPage(analysis, story, { nextItem = null } = {})
       author: { "@type": "Person", name: "Natalie Weber", url: `${SITE}/ueber-mich.html` },
       publisher: { "@type": "Organization", name: "Wirkungsökonomie", url: SITE },
       isBasedOn: storyUrl, citation: (analysis.source_snapshot || []).map((source) => source.url),
+      ...(titleImage?.og?.url ? { image: titleImage.og.url } : {}),
       articleSection: editorialLabel(analysis), wordCount: (analysis.sections || []).flatMap((section) => section.paragraphs || []).join(" ").split(/\s+/).filter(Boolean).length,
     },
     extraScript: '<script src="../../../assets/js/news-share.js?v=20260904-actions1"></script>',
@@ -895,7 +901,7 @@ export function buildNewsSite() {
   }
   for (const analysis of editorialAnalyses) {
     const nextItem = readerNeighbor({ type: "analysis", value: analysis }, 1, true);
-    write(path.join(TICKER_DIR, "analyse", analysis.slug, "index.html"), editorialAnalysisPage(analysis, storiesById.get(analysis.story_id), { nextItem }));
+    write(path.join(TICKER_DIR, "analyse", analysis.slug, "index.html"), editorialAnalysisPage(analysis, storiesById.get(analysis.story_id), { nextItem, relatedAnalyses: relatedEditorialAnalyses(analysis, editorialAnalyses) }));
   }
   for (const story of retiredStories) write(path.join(TICKER_DIR, story.slug, "index.html"), retiredStoryPage(story));
   const feedItems = combinedFeedItems(stories, editorialAnalyses);

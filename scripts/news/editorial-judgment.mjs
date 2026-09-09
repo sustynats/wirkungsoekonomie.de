@@ -31,7 +31,7 @@ const clean = (value, max = 1200) => String(value ?? "").replace(/<[^>]*>/g, " "
 const list = value => Array.isArray(value) ? value : [];
 
 export function editorialContentSnapshot(analysis) {
-  const keys = ["title", "subtitle", "teaser", "seo_description", "analysis_variant", "editorial_genre", "lead_statement", "sections", "claim_ledger", "source_snapshot", "monitoring", "subject_dimensions", "direction_finding", "assessment_context", "assessment_condition", "author_perspective", "executive_finding", "navigation_groups", "editorial_rules_version"];
+  const keys = ["title", "subtitle", "teaser", "seo_description", "analysis_variant", "editorial_genre", "lead_statement", "sections", "claim_ledger", "source_snapshot", "monitoring", "subject_dimensions", "direction_finding", "assessment_context", "assessment_condition", "author_perspective", "executive_finding", "navigation_groups", "editorial_rules_version", "related_analysis_slugs", "title_image"];
   return structuredClone(Object.fromEntries(keys.filter(key => analysis[key] !== undefined).map(key => [key, analysis[key]])));
 }
 

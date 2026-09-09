@@ -75,6 +75,7 @@ export const SAFE_AREAS = {
 // das neutrale Meldungs-Icon. Die Beschriftung übernimmt den gelieferten Text.
 export const CATEGORY_ICONS = {
   ...TOPIC_ICONS,
+  "Meinung & Analyse": "diskurs",
   Gesellschaft: "soziales", Infrastruktur: "kommunen", Technologie: "digitalisierung", Ressourcen: "klima",
   Sicherheit: "geopolitik", Verkehr: "kommunen", Mobilität: "kommunen", Wohnen: "haushalte", Steuern: "finanzen",
   Haushalt: "finanzen", Umwelt: "klima", Verwaltung: "politik", Recht: "demokratie", Kultur: "bildung",
@@ -260,11 +261,11 @@ function chip(text, iconName, iconColor, x, y, u) {
 
 const DIMENSION_COLORS = { human: PALETTE.dimHuman, planet: PALETTE.dimPlanet, democracy: PALETTE.dimDemocracy };
 
-function impactPanel(u, { x, y, width, height, dimensions, status, analysisType, horizontal = false, overlay = false }) {
+function impactPanel(u, { x, y, width, height, dimensions, riskDirections, status, analysisType, horizontal = false, overlay = false }) {
   const pad = 26 * u;
   const parts = [];
   parts.push(`<rect data-impact-panel="true" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${width.toFixed(1)}" height="${height.toFixed(1)}" rx="${(18 * u).toFixed(1)}" fill="${overlay ? PALETTE.navyDeep : PALETTE.white}" fill-opacity="${overlay ? "0.62" : "0.07"}" stroke="${PALETTE.white}" stroke-opacity="0.16"/>`);
-  parts.push(textLine("WIRKUNG AUF", x + pad, y + pad + 11 * u, "sans-700", 12.5 * u, PALETTE.gold, { letterSpacing: 2 * u }));
+  parts.push(textLine(riskDirections ? "RELEVANZ & RISIKO" : "WIRKUNG AUF", x + pad, y + pad + 11 * u, "sans-700", 12.5 * u, PALETTE.gold, { letterSpacing: 2 * u }));
   const rowsTop = y + pad + 34 * u;
   const keys = Object.keys(DIMENSIONS);
   const innerWidth = width - pad * 2;
@@ -282,8 +283,12 @@ function impactPanel(u, { x, y, width, height, dimensions, status, analysisType,
     parts.push(textLine(meta.label, rx + 32 * u, ry + 17 * u, "sans-600", 20 * u, PALETTE.white));
     parts.push(textLine(levelText, rx + columnWidth, ry + 17 * u, "sans-500", 15 * u, PALETTE.textMuted, { anchor: "end" }));
     parts.push(meter(rx, ry + 36 * u, columnWidth, 13 * u, level, color, u));
+    if (riskDirections?.[key]) {
+      const risk = riskDirections[key];
+      parts.push(textLine(risk === "negative" ? "Negatives Risikopotenzial" : "Risikorichtung offen", rx, ry + 70 * u, "sans-600", 14 * u, risk === "negative" ? "#FFD0B8" : PALETTE.textMuted));
+    }
   });
-  const chipsY = horizontal ? rowsTop + 74 * u : rowsTop + keys.length * rowHeight - 12 * u;
+  const chipsY = horizontal ? rowsTop + (riskDirections ? 100 : 74) * u : rowsTop + keys.length * rowHeight - 12 * u;
   let chipX = x + pad;
   const onTrack = STATUS_TRACK.includes(status);
   if (status) {
@@ -351,7 +356,7 @@ function renderLandscape(input, W, H, u, P, mode) {
     const panelBottom = footerBaseline - 40 * u;
     const hasDimensions = input.dimensions && Object.values(input.dimensions).some((value) => levelOf(value) !== null);
     if (hasDimensions || input.status) {
-      parts.push(impactPanel(u, { x: panelX, y: panelTop, width: panelWidth, height: panelBottom - panelTop, dimensions: input.dimensions || {}, status: input.status, analysisType: input.analysisType, overlay: mode === "editorial" }));
+      parts.push(impactPanel(u, { x: panelX, y: panelTop, width: panelWidth, height: panelBottom - panelTop, dimensions: input.dimensions || {}, riskDirections: input.riskDirections, status: input.status, analysisType: input.analysisType, overlay: mode === "editorial" }));
     } else if (mode === "impact_card") {
       warnings.push("IMPACT_DATA_MISSING");
       parts.push(watermark(u, categoryIcon(input.category), panelX + panelWidth * 0.2, panelTop + (panelBottom - panelTop - panelWidth * 0.6) / 2, panelWidth * 0.6));
@@ -392,9 +397,9 @@ function renderSquare(input, W, H, u, P, mode) {
     const hasDimensions = input.dimensions && Object.values(input.dimensions).some((value) => levelOf(value) !== null);
     if (hasDimensions || input.status) {
       // Kompaktes Panel, mittig im freien Raum zwischen Branding und Textblock.
-      const panelHeight = Math.min(gapBottom - gapTop, 196 * u);
+      const panelHeight = Math.min(gapBottom - gapTop, (input.riskDirections ? 222 : 196) * u);
       const panelTop = gapTop + Math.max(0, (gapBottom - gapTop - panelHeight) / 2);
-      parts.push(impactPanel(u, { x: P, y: panelTop, width: W - P * 2, height: panelHeight, dimensions: input.dimensions || {}, status: input.status, analysisType: input.analysisType, horizontal: true, overlay: mode === "editorial" }));
+      parts.push(impactPanel(u, { x: P, y: panelTop, width: W - P * 2, height: panelHeight, dimensions: input.dimensions || {}, riskDirections: input.riskDirections, status: input.status, analysisType: input.analysisType, horizontal: true, overlay: mode === "editorial" }));
     } else if (mode === "impact_card") {
       warnings.push("IMPACT_DATA_MISSING");
       const size = Math.min(gapBottom - gapTop, 260 * u);
@@ -437,6 +442,8 @@ export function normalizeInput(input = {}) {
     source: input.source ? String(input.source).trim() : null,
     date: formatDate(input.date),
     dimensions,
+    riskDirections: input.riskDirections && typeof input.riskDirections === "object"
+      ? Object.fromEntries(Object.keys(DIMENSIONS).map(key => [key, input.riskDirections[key] === "negative" ? "negative" : "open"])) : null,
     status: input.status ? String(input.status).trim() : null,
     analysisType: input.analysisType || input.analysis_type || null,
     label: label ? String(label) : null,
